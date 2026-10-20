@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Jun 22 22:39:38 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W26
+URL: https://huggingface.co/papers/week/2026-W26
+Found 10 papers in weekly view
+Fetching likes for: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Fetching likes for: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Fetching likes for: GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents
+Fetching likes for: Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models
+Fetching likes for: SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG
+Fetching likes for: MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval
+Fetching likes for: BrainG3N: A Dual-Purpose Tokenizer for Controllable 3D Brain MRI Generation
+Fetching likes for: WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents
+Fetching likes for: GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning
+Fetching likes for: SpatialAvatar-0: High-Quality 4D Head Avatar with Multi-Stage Reconstruction
+Selected top 10 papers by likes:
+1. PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models (50 likes)
+2. MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision (14 likes)
+3. GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents (13 likes)
+4. Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models (9 likes)
+5. SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG (8 likes)
+6. MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval (8 likes)
+7. BrainG3N: A Dual-Purpose Tokenizer for Controllable 3D Brain MRI Generation (7 likes)
+8. WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents (3 likes)
+9. GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning (3 likes)
+10. SpatialAvatar-0: High-Quality 4D Head Avatar with Multi-Stage Reconstruction (3 likes)
+Found abstract: Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding t...
+Processed paper: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Found abstract: Personalized presentation generation requires more than conditioning on a current prompt or template...
+Processed paper: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Found abstract: Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for ...
+Processed paper: GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents
+Found abstract: While reasoning on autoregressive (AR) models is often performed by chain-of-thought reasoning and r...
+Processed paper: Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models
+Found abstract: Retrieval-augmented generation (RAG) systems must balance retrieval granularity with contextual cohe...
+Processed paper: SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG
+Found abstract: Retrieval-augmented generation (RAG) systems depend critically on how documents are chunked and sear...
+Processed paper: MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval
+Found abstract: Three-dimensional (3D) brain MRI is central to clinical neurology and neuro-oncology, where generati...
+Processed paper: BrainG3N: A Dual-Purpose Tokenizer for Controllable 3D Brain MRI Generation
+Found abstract: To assist humans over extended periods in real homes, embodied agents must remember user routines, w...
+Processed paper: WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents
+Found abstract: Generalist vision-language-action systems need object-centric 3D evidence and reusable manipulation ...
+Processed paper: GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning
+Found abstract: High-quality 4D head avatars from one or a few source portraits are central to telepresence, AR/VR, ...
+Processed paper: SpatialAvatar-0: High-Quality 4D Head Avatar with Multi-Stage Reconstruction
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: BrainG3N: A Dual-Purpose Tokenizer for Controllable 3D Brain MRI Generation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SpatialAvatar-0: High-Quality 4D Head Avatar with Multi-Stage Reconstruction
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W26.json...
+
+Updating Notion database...
+Creating new paper: PerceptionDLM: 병렬 영역 인식을 위한 다중모달 확산 언어 모델
+Creating new paper: MemSlides: 사용자 지향 프레젠테이션 슬라이드 생성을 위한 계층적 메모리 주도 에이전트 프레임워크
+Creating new paper: GateMem: 멀티-프린시펄 공유-메모리 에이전트의 메모리 거버넌스 평가
+Creating new paper: 다중 턴 반사 마스킹이 마스크 확산 모델에서 추론을 유발한다
+Creating new paper: 주의력 안내형 트리 검색과 점진적 임베딩을 활용한 장문 문서용 SproutRAG
+Creating new paper: MCompassRAG: 문단 수준 검색을 위한 주제 메타데이터로서의 의미적 나침반
+Creating new paper: BrainG3N: 조절 가능한 3차원 뇌 MRI 생성을 위한 이중용도 토크나이저
+Creating new paper: WorldLines: 벤치마킹과 장기 기억을 갖는 몸을 가진 에이전트 모델링
+Creating new paper: 일반적인 VLA-2: 기하학적인 재구성과 제어된 메모리를 위한 로봇 계획
+Creating new paper: 공간 아바타-0: 고품질 4D 머리 아바타와 다단계 재구성
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 22 22:41:21 UTC 2026 ===
+

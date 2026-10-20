@@ -1,0 +1,331 @@
+[
+  {
+    "title": "NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos",
+    "abstract": "In this paper, we propose NeoVerse, a versatile 4D world model that is capable of 4D reconstruction, novel-trajectory video generation, and rich downstream applications. We first identify a common limitation of scalability in current 4D world modeling methods, caused either by expensive and specialized multi-view 4D data or by cumbersome training pre-processing. In contrast, our NeoVerse is built upon a core philosophy that makes the full pipeline scalable to diverse in-the-wild monocular videos. Specifically, NeoVerse features pose-free feed-forward 4D reconstruction, online monocular degradation pattern simulation, and other well-aligned techniques. These designs empower NeoVerse with versatility and generalization to various domains. Meanwhile, NeoVerse achieves state-of-the-art performance in standard reconstruction and generation benchmarks. Our project page is available at https://neoverse-4d.github.io",
+    "authors": [
+      "Yuxue Yang",
+      "Lue Fan",
+      "Ziqi Shi",
+      "Junran Peng",
+      "Feng Wang",
+      "Zhaoxiang Zhang"
+    ],
+    "likes": 106,
+    "published_date": "Jan 1",
+    "url": "https://huggingface.co/papers/2601.00393",
+    "date_collected": "2026-01-10T07:08:46.856691+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "NeoVerse: in-the-wild 단일 카메라 비디오로 4D 세계 모델 강화",
+      "abstract": "본 논문에서는 4D 재구성, 신기한 궤적 비디오 생성 및 다양한 하류 응용 기능을 갖춘 다재다능한 4D 세계 모델인 NeoVerse를 제안한다. 기존 4D 세계 모델링 방법의 확장성의 공통 한계를 파악하고, 이를 극복하기 위해 NeoVerse는 완전한 파이프라인을 다양한 in-the-wild 단일 카메라 비디오로 확장 가능하게 만드는 핵심 철학에 기반하여 구축되었다. NeoVerse는 자세가 필요 없는 선형적인 4D 재구성, 온라인 단일 카메라 격하 패턴 시뮬레이션 및 기타 잘 맞는 기술로 구성되어 있다. 이러한 설계는 NeoVerse에 다재다능성과 각종 도메인에 대한 일반화 능력을 부여한다. 동시에, NeoVerse는 표준 재구성 및 생성 평가에서 최첨단 성능을 달성했다. 프로젝트 페이지: https://neoverse-4d.github.io"
+    },
+    "summary": "1. NeoVerse는 in-the-wild 단일 카메라 비디오로 확장 가능한 4D 세계 모델로, 다양한 응용 분야에 적용 가능하며 탁월한 성능을 보여준다.\n2. 이 모델은 특징적인 용어 사용을 최소화하고, 다양한 도메인에서의 다재다능성과 규칙성을 갖춘 설계 기법을 채택한다.\n3. NeoVerse는 표준적인 재구성 및 생성 평가에서 최신 성능을 기록하며, 프로젝트 페이지를 통해 자세한 정보를 제공한다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization",
+    "abstract": "Existing Large Language Model (LLM) agent frameworks face two significant challenges: high configuration costs and static capabilities. Building a high-quality agent often requires extensive manual effort in tool integration and prompt engineering, while deployed agents struggle to adapt to dynamic environments without expensive fine-tuning. To address these issues, we propose Youtu-Agent, a modular framework designed for the automated generation and continuous evolution of LLM agents. Youtu-Agent features a structured configuration system that decouples execution environments, toolkits, and context management, enabling flexible reuse and automated synthesis. We introduce two generation paradigms: a Workflow mode for standard tasks and a Meta-Agent mode for complex, non-standard requirements, capable of automatically generating tool code, prompts, and configurations. Furthermore, Youtu-Agent establishes a hybrid policy optimization system: (1) an Agent Practice module that enables agents to accumulate experience and improve performance through in-context optimization without parameter updates; and (2) an Agent RL module that integrates with distributed training frameworks to enable scalable and stable reinforcement learning of any Youtu-Agents in an end-to-end, large-scale manner. Experiments demonstrate that Youtu-Agent achieves state-of-the-art performance on WebWalkerQA (71.47\\%) and GAIA (72.8\\%) using open-weight models. Our automated generation pipeline achieves over 81\\% tool synthesis success rate, while the Practice module improves performance on AIME 2024/2025 by +2.7\\% and +5.4\\% respectively. Moreover, our Agent RL training achieves 40\\% speedup with steady performance improvement on 7B LLMs, enhancing coding/reasoning and searching capabilities respectively up to 35\\% and 21\\% on Maths and general/multi-hop QA benchmarks.",
+    "authors": [
+      "Yuchen Shi",
+      "Yuzheng Cai",
+      "Siqi Cai",
+      "Zihan Xu",
+      "Lichao Chen",
+      "Yulei Qin",
+      "Zhijian Zhou",
+      "Xiang Fei",
+      "Chaofan Qiu",
+      "Xiaoyu Tan",
+      "Gang Li",
+      "Zongyi Li",
+      "Haojia Lin",
+      "Guocan Cai",
+      "Yong Mao",
+      "Yunsheng Wu",
+      "Ke Li",
+      "Xing Sun"
+    ],
+    "likes": 104,
+    "published_date": "Dec 31, 2025",
+    "url": "https://huggingface.co/papers/2512.24615",
+    "date_collected": "2026-01-10T07:08:46.858382+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "Youtu-Agent: 자동 생성과 하이브리드 정책 최적화로 에이전트 생산성 확장",
+      "abstract": "기존 대형 언어 모델 (LLM) 에이전트 프레임워크는 두 가지 주요 도전 과제를 안고 있습니다: 높은 구성 비용과 정적 기능성. 높은 품질의 에이전트를 구축하려면 종종 도구 통합과 빠른 엔지니어링에 대한 방대한 수동 노력이 필요하며, 배포된 에이전트들은 비싼 파라미터 조정 없이 동적 환경에 적응하기 어렵습니다. 이러한 문제를 해결하기 위해, 우리는 Youtu-Agent를 제안합니다. 이는 자동 생성과 지속적 진화를 위해 설계된 모듈식 프레임워크로, LLM 에이전트들을 위한 것입니다. Youtu-Agent는 실행 환경, 툴킷, 및 컨텍스트 관리를 분리하여 유연한 재사용과 자동 합성을 가능하게 하는 구조화된 구성 시스템을 특징으로 합니다."
+    },
+    "summary": "1. Youtu-Agent는 높은 품질의 에이전트를 자동으로 생성하고 지속적으로 발전시키기 위한 모듈식 프레임워크로, 높은 구성 비용과 정적 기능성 등의 문제를 해결합니다.\n2. 두 가지 생성 패러다임을 소개하는데, 표준 작업에는 Workflow 모드를 사용하고, 복잡한 비표준 요구 사항에는 Meta-Agent 모드를 사용하여 툴 코드, 프롬프트, 그리고 구성을 자동으로 생성합니다.\n3. Youtu-Agent는 하이브리드 정책 최적화 시스템을 도입하여 Agent Practice 모듈을 통해 에이전트들이 경험을 축적하고 성능을 높일 수 있도록 하며, 분산 훈련 프레임워크와 통합된 Agent RL 모듈을 제공하여 확장 가능하고 안정적인 강화 학습을 지원합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization",
+    "abstract": "As language models become increasingly capable, users expect them to provide not only accurate responses but also behaviors aligned with diverse human preferences across a variety of scenarios. To achieve this, Reinforcement learning (RL) pipelines have begun incorporating multiple rewards, each capturing a distinct preference, to guide models toward these desired behaviors. However, recent work has defaulted to apply Group Relative Policy Optimization (GRPO) under multi-reward setting without examining its suitability. In this paper, we demonstrate that directly applying GRPO to normalize distinct rollout reward combinations causes them to collapse into identical advantage values, reducing the resolution of the training signal and resulting in suboptimal convergence and, in some cases, early training failure. We then introduce Group reward-Decoupled Normalization Policy Optimization (GDPO), a new policy optimization method to resolve these issues by decoupling the normalization of individual rewards, more faithfully preserving their relative differences and enabling more accurate multi-reward optimization, along with substantially improved training stability. We compare GDPO with GRPO across three tasks: tool calling, math reasoning, and coding reasoning, evaluating both correctness metrics (accuracy, bug ratio) and constraint adherence metrics (format, length). Across all settings, GDPO consistently outperforms GRPO, demonstrating its effectiveness and generalizability for multi-reward reinforcement learning optimization.",
+    "authors": [
+      "Shih-Yang Liu",
+      "Xin Dong",
+      "Ximing Lu",
+      "Shizhe Diao",
+      "Peter Belcak",
+      "Mingjie Liu",
+      "Min-Hung Chen",
+      "Hongxu Yin",
+      "Yu-Chiang Frank Wang",
+      "Kwang-Ting Cheng",
+      "Yejin Choi",
+      "Jan Kautz",
+      "Pavlo Molchanov"
+    ],
+    "likes": 93,
+    "published_date": "Jan 8",
+    "url": "https://huggingface.co/papers/2601.05242",
+    "date_collected": "2026-01-10T07:08:46.859858+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "다중 보상 강화 학습 최적화를 위한 그룹 보상-분리된 정규화 정책 최적화(GDPO)",
+      "abstract": "언어 모델이 점점 능력이 높아지면, 사용자들은 정확한 응답뿐만 아니라 다양한 인간적 선호에 부합하는 행동도 기대합니다. 이를 이루기 위해, 다양한 인간적 선호를 반영한 여러 보상을 포착하여 모델을 원하는 행동으로 이끄는 강화 학습(RL) 파이프라인이 시작되었습니다. 그러나 최근 연구에서는 그룹 상대적 정책 최적화(GRPO)를 다중 보상 설정에서 바로 적용하지만, 그 적합성을 검토하지 않았습니다. 본 논문에서는 각기 다른 보상 조합을 정규화하는 GRPO 적용이 이들을 동일한 이점 값으로 수렴하게 만들어 훈련 신호의 해상도를 낮추고 최적 수렴을 저해하고 때로는 초기 훈련 실패로 이어지는 것을 보여줍니다. 그런 다음, 그룹 보상-분리된 정규화 정책 최적화(GDPO)를 소개합니다. 이는 개별 보상의 정규화를 분리함으로써 이러한 문제를 해결하여, 각 보상의 상대적 차이를 더 정확히 보존하고 보다 정확한 다중 보상 최적화를 가능하게 하며 매우 개선된 훈련 안정성을 제공합니다. 우리는 도구 호출, 수리 추론, 코딩 추론 세 가지 과제에서 GDPO를 GRPO와 비교하며 올바름 평가 척도(정확성, 버그 비율)와 제약 준수 평가 척도(형식, 길이)를 평가합니다. 모든 설정에서 GDPO가 일관되게 GRPO를 능가하여, 그 효과성과 일반화 가능성을 입증합니다."
+    },
+    "summary": "1. GDPO는 각 보상의 정규화를 분리하여 다중 보상 강화 학습 최적화를 향상시키고 훈련 안정성을 크게 향상시킵니다.\n2. GDPO는 GRPO에 비해 도구 호출, 수리 추론, 코딩 추론과 같은 과제에서 일관되게 더 우수한 결과를 보여줍니다.\n3. GDPO는 다중 보상 강화 학습 최적화에 있어서 효과적이며 일반화가 가능함을 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields",
+    "abstract": "Existing depth estimation methods are fundamentally limited to predicting depth on discrete image grids. Such representations restrict their scalability to arbitrary output resolutions and hinder the geometric detail recovery. This paper introduces InfiniDepth, which represents depth as neural implicit fields. Through a simple yet effective local implicit decoder, we can query depth at continuous 2D coordinates, enabling arbitrary-resolution and fine-grained depth estimation. To better assess our method's capabilities, we curate a high-quality 4K synthetic benchmark from five different games, spanning diverse scenes with rich geometric and appearance details. Extensive experiments demonstrate that InfiniDepth achieves state-of-the-art performance on both synthetic and real-world benchmarks across relative and metric depth estimation tasks, particularly excelling in fine-detail regions. It also benefits the task of novel view synthesis under large viewpoint shifts, producing high-quality results with fewer holes and artifacts.",
+    "authors": [
+      "Hao Yu",
+      "Haotong Lin",
+      "Jiawei Wang",
+      "Jiaxin Li",
+      "Yida Wang",
+      "Xueyang Zhang",
+      "Yue Wang",
+      "Xiaowei Zhou",
+      "Ruizhen Hu",
+      "Sida Peng"
+    ],
+    "likes": 89,
+    "published_date": "Jan 6",
+    "url": "https://huggingface.co/papers/2601.03252",
+    "date_collected": "2026-01-10T07:08:46.861206+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "InfiniDepth: 임의 해상도 및 세밀한 깊이 추정에 대한 신경망 임시 필드를 활용한 방법",
+      "abstract": "기존의 깊이 추정 방법은 이산 이미지 그리드에서 깊이를 예측하는 데에 근본적으로 한계가 있습니다. 이러한 표현은 임의의 출력 해상도로의 확장성을 제한하고 기하학적 세부 사항의 복구를 방해합니다. 본 논문에서는 InfiniDepth를 소개하는데, 이는 깊이를 신경망 임시 필드로 표현합니다. 간단하면서 효과적인 지역적 임시 디코더를 통해 연속적인 2D 좌표에서 깊이를 조회할 수 있어 임의 해상도 및 세밀한 깊이 추정이 가능해집니다. 우리의 방법의 성능을 보다 잘 평가하기 위해, 다양한 장면을 포함하는 다섯 가지 다른 게임에서 4K 합성 벤치마크를 만들어냅니다. 다양한 기하학적 및 외관 세부 정보를 제공합니다. 풍부한 풍경을 펼친다. 광범위한 실험 결과 InfiniDepth가 상대적 및 측정 깊이 추정 작업에서 합성과 실제 세계 벤치마크에서 최첨단 성능을 달성함을 보여줍니다. 특히 세부 영역에서 뛰어난 성과를 거두었습니다. 또한, 큰 시점 변화 아래에서의 새로운 뷰 합성 작업에 도움이 되어 적은 구멍과 아티팩트를 가진 고품질 결과를 생산합니다."
+    },
+    "summary": "1. InfiniDepth는 신경망을 사용하여 임의 해상도 및 세밀한 깊이 추정을 가능케 하는 방법으로, 4K 합성 벤치마크를 통해 다양한 장면에서 합성과 실제 세계 벤치마크에서 우수한 성능을 보임.\n2. 이 방법은 상대적 및 측정 깊이 추정 작업에서 최신 기술을 구현하며, 세부 영역에서 특히 뛰어난 결과를 얻음.\n3. 또한 InfiniDepth는 큰 시점 변화에서의 새로운 뷰 합성 작업에도 도움이 되어 고품질 결과물을 제공하며, 구멍과 아티팩트를 줄이는 데 기여함.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Entropy-Adaptive Fine-Tuning: Resolving Confident Conflicts to Mitigate Forgetting",
+    "abstract": "Supervised Fine-Tuning (SFT) is the standard paradigm for domain adaptation, yet it frequently incurs the cost of catastrophic forgetting. In sharp contrast, on-policy Reinforcement Learning (RL) effectively preserves general capabilities. We investigate this discrepancy and identify a fundamental distributional gap: while RL aligns with the model's internal belief, SFT forces the model to fit external supervision. This mismatch often manifests as \"Confident Conflicts\" tokens characterized by low probability but low entropy. In these instances, the model is highly confident in its own prediction but is forced to learn a divergent ground truth, triggering destructive gradient updates. To address this, we propose Entropy-Adaptive Fine-Tuning (EAFT). Unlike methods relying solely on prediction probability, EAFT utilizes token-level entropy as a gating mechanism to distinguish between epistemic uncertainty and knowledge conflict. This allows the model to learn from uncertain samples while suppressing gradients on conflicting data. Extensive experiments on Qwen and GLM series (ranging from 4B to 32B parameters) across mathematical, medical, and agentic domains confirm our hypothesis. EAFT consistently matches the downstream performance of standard SFT while significantly mitigating the degradation of general capabilities.",
+    "authors": [
+      "Muxi Diao",
+      "Lele Yang",
+      "Wuxuan Gong",
+      "Yutong Zhang",
+      "Zhonghao Yan",
+      "Yufei Han",
+      "Kongming Liang",
+      "Weiran Xu",
+      "Zhanyu Ma"
+    ],
+    "likes": 84,
+    "published_date": "Jan 5",
+    "url": "https://huggingface.co/papers/2601.02151",
+    "date_collected": "2026-01-10T07:08:46.862519+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "엔트로피 적응적 파인 튜닝: 자신감 충돌 해소를 통한 잊혀짐 완화",
+      "abstract": "지도된 파인 튜닝(Supervised Fine-Tuning, SFT)은 도메인 적응의 표준 패러다임이지만 종종 치명적인 잊혀짐 비용을 발생시킵니다. 이와는 대조적으로 온-폴리시 강화학습(On-policy Reinforcement Learning, RL)은 일반적 능력을 효과적으로 보존합니다. 우리는 이 불일치를 조사하고 기본적인 분포적 갭을 확인합니다: RL은 모델의 내부적 신념과 일치하나, SFT는 모델에 외부 감독을 맞추게 합니다."
+    },
+    "summary": "1. 지도된 파인 튜닝(SFT)은 일반적 능력을 유지하는 데 어려움이 있고, 온-폴리시 강화학습(RL)은 효과적으로 보존합니다.\n2. 모델은 자신의 예측에 대해 믿음이 굉장히 강한 반면, 상반된 진실을 학습해야 할 때 문제가 발생합니다.\n3. 엔트로피-적응적 파인 튜닝(EAFT)은 불확실성과 지식 충돌을 구분하고, 일반적 능력의 저하를 크게 완화하면서 표준 SFT의 결과를 일관되게 맞춥니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "LTX-2: Efficient Joint Audio-Visual Foundation Model",
+    "abstract": "Recent text-to-video diffusion models can generate compelling video sequences, yet they remain silent -- missing the semantic, emotional, and atmospheric cues that audio provides. We introduce LTX-2, an open-source foundational model capable of generating high-quality, temporally synchronized audiovisual content in a unified manner. LTX-2 consists of an asymmetric dual-stream transformer with a 14B-parameter video stream and a 5B-parameter audio stream, coupled through bidirectional audio-video cross-attention layers with temporal positional embeddings and cross-modality AdaLN for shared timestep conditioning. This architecture enables efficient training and inference of a unified audiovisual model while allocating more capacity for video generation than audio generation. We employ a multilingual text encoder for broader prompt understanding and introduce a modality-aware classifier-free guidance (modality-CFG) mechanism for improved audiovisual alignment and controllability. Beyond generating speech, LTX-2 produces rich, coherent audio tracks that follow the characters, environment, style, and emotion of each scene -- complete with natural background and foley elements. In our evaluations, the model achieves state-of-the-art audiovisual quality and prompt adherence among open-source systems, while delivering results comparable to proprietary models at a fraction of their computational cost and inference time. All model weights and code are publicly released.",
+    "authors": [
+      "Yoav HaCohen",
+      "Benny Brazowski",
+      "Nisan Chiprut",
+      "Yaki Bitterman",
+      "Andrew Kvochko",
+      "Avishai Berkowitz",
+      "Daniel Shalem",
+      "Daphna Lifschitz",
+      "Dudu Moshe",
+      "Eitan Porat",
+      "Eitan Richardson",
+      "Guy Shiran",
+      "Itay Chachy",
+      "Jonathan Chetboun",
+      "Michael Finkelson",
+      "Michael Kupchick",
+      "Nir Zabari",
+      "Nitzan Guetta",
+      "Noa Kotler",
+      "Ofir Bibi",
+      "Ori Gordon",
+      "Poriya Panet"
+    ],
+    "likes": 78,
+    "published_date": "Jan 6",
+    "url": "https://huggingface.co/papers/2601.03233",
+    "date_collected": "2026-01-10T07:08:46.864279+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "효율적인 결합형 음향-시각 기초 모델 LTX-2",
+      "abstract": "최근 텍스트에서 비디오로 확산되는 모델은 매력적인 비디오 시퀀스를 생성할 수 있지만, 음향이 제공하는 의미적, 감정적, 분위기적 단서가 부족합니다. 본 연구에서는 고품질, 시간적으로 동기화된 음향-시각 콘텐츠를 통합적으로 생성할 수 있는 오픈소스 기초 모델인 LTX-2를 제안합니다."
+    },
+    "summary": "1. LTX-2는 비디오 생성에 더 많은 용량을 할당하면서도 음향 생성을 잘 수행하는 효율적인 양방향 오디오-비디오 교차 주의 계층을 통해 시간적 위치 임베딩과 교모달리티 AdaLN으로 결합된 비대칭 이중 스트림 트랜스포머로 구성되어 있습니다.\n2. 다국어 텍스트 인코더를 사용하여 더 넓은 프롬프트 이해를 실현하며, 모달리티 인식 분류자 없는 안내 (modality-CFG) 메커니즘을 도입하여 음향-시각 정렬과 가용성이 향상됩니다.\n3. LTX-2는 음성을 생성하는 것을 넘어 캐릭터, 환경, 스타일 및 각 장면의 감정을 따르는 풍부하고 일관된 오디오 트랙을 생성하며 천연 배경과 풀리 요소를 갖추고 있습니다.",
+    "categories": [
+      "Multimodal",
+      "Audio"
+    ]
+  },
+  {
+    "title": "K-EXAONE Technical Report",
+    "abstract": "This technical report presents K-EXAONE, a large-scale multilingual language model developed by LG AI Research. K-EXAONE is built on a Mixture-of-Experts architecture with 236B total parameters, activating 23B parameters during inference. It supports a 256K-token context window and covers six languages: Korean, English, Spanish, German, Japanese, and Vietnamese. We evaluate K-EXAONE on a comprehensive benchmark suite spanning reasoning, agentic, general, Korean, and multilingual abilities. Across these evaluations, K-EXAONE demonstrates performance comparable to open-weight models of similar size. K-EXAONE, designed to advance AI for a better life, is positioned as a powerful proprietary AI foundation model for a wide range of industrial and research applications.",
+    "authors": [
+      "Eunbi Choi",
+      "Kibong Choi",
+      "Seokhee Hong",
+      "Junwon Hwang",
+      "Hyojin Jeon",
+      "Hyunjik Jo",
+      "Joonkee Kim",
+      "Seonghwan Kim",
+      "Soyeon Kim",
+      "Sunkyoung Kim",
+      "Yireun Kim",
+      "Yongil Kim",
+      "Haeju Lee",
+      "Jinsik Lee",
+      "Kyungmin Lee",
+      "Sangha Park",
+      "Heuiyeen Yeen",
+      "Hwan Chang",
+      "Stanley Jungkyu Choi",
+      "Yejin Choi",
+      "Jiwon Ham",
+      "Kijeong Jeon"
+    ],
+    "likes": 76,
+    "published_date": "Jan 5",
+    "url": "https://huggingface.co/papers/2601.01739",
+    "date_collected": "2026-01-10T07:08:46.866141+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "K-EXAONE 기술 보고서",
+      "abstract": "본 기술 보고서는 LG AI Research가 개발한 대규모 다국어 언어 모델인 K-EXAONE을 소개합니다. K-EXAONE은 Expert 혼합 구조를 기반으로 하여 총 236B의 파라미터를 보유하며 추론 시 23B의 파라미터가 활성화됩니다. 이 모델은 256K 토큰 문맥 윈도우를 지원하며 한국어, 영어, 스페인어, 독일어, 일본어, 베트남어를 포함한 여섯 가지 언어를 다룹니다. K-EXAONE은 추론, 대리문제, 일반 문제, 한국어, 다국어 능력을 검증하는 포괄적인 기준 모음에서 평가되었으며, 이러한 평가에서 기존과 유사한 크기의 오픈 웨이트 모델에 버금가는 성능을 보여줍니다. AI를 발전시켜 미래를 위한 향상된 인공지능을 설계한 K-EXAONE은 다양한 산업 및 연구 응용에 활용 가능한 강력한 전용 AI 기반 모델로 위치하고 있습니다."
+    },
+    "summary": "1. LG AI Research가 개발한 K-EXAONE은 Expert 혼합 구조를 기반으로 236B의 파라미터를 사용하며, 여섯 가지 언어를 다루는 다국어 언어 모델입니다.\n2. K-EXAONE은 추론, 대리문제, 일반 문제, 한국어, 다국어 능력을 검증하는 기준 모음에서 뛰어난 성능을 보여 AI 분야에 적합한 전용 모델로 설계되었습니다.\n3. 이 모델은 오픈 웨이트 모델과 유사한 성능을 발휘하며, 산업 및 연구 분야에서 다양하게 활용될 것으로 기대됩니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits",
+    "abstract": "Large language models (LLMs) generate fluent and complex outputs but often fail to recognize their own mistakes and hallucinations. Existing approaches typically rely on external judges, multi-sample consistency, or text-based self-critique, which incur additional compute or correlate weakly with true correctness. We ask: can LLMs predict their own failures by inspecting internal states during inference? We introduce Gnosis, a lightweight self-awareness mechanism that enables frozen LLMs to perform intrinsic self-verification by decoding signals from hidden states and attention patterns. Gnosis passively observes internal traces, compresses them into fixed-budget descriptors, and predicts correctness with negligible inference cost, adding only ~5M parameters and operating independently of sequence length. Across math reasoning, open-domain question answering, and academic knowledge benchmarks, and over frozen backbones ranging from 1.7B to 20B parameters, Gnosis consistently outperforms strong internal baselines and large external judges in both accuracy and calibration. Moreover, it generalizes zero-shot to partial generations, enabling early detection of failing trajectories and compute-aware control. These results show that reliable correctness cues are intrinsic to generation process and can be extracted efficiently without external supervision.",
+    "authors": [
+      "Amirhosein Ghasemabadi",
+      "Di Niu"
+    ],
+    "likes": 68,
+    "published_date": "Dec 23, 2025",
+    "url": "https://huggingface.co/papers/2512.20578",
+    "date_collected": "2026-01-10T07:08:46.867164+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "LLM이 자신의 실패를 예측할 수 있을까? 내부 회로를 통한 자가인식",
+      "abstract": "대규모 언어 모델(LLMs)은 유창하고 복잡한 출력을 생성하지만 종종 자신의 실수와 환각을 인식하지 못합니다. 기존 방법은 주로 외부 심판, 다중 샘플 일관성 또는 텍스트 기반 자가비평에 의존하며, 이는 추가 계산을 필요로 하거나 실제 정확도와 약하게 상관됩니다. 우리는 질문합니다: LLMs가 추론 중에 내부 상태를 검사하여 자신의 실패를 예측할 수 있을까요? 저희는 숨겨진 상태와 주의 패턴에서 신호를 디코딩함으로써 LLMs가 내재적으로 자가검증을 수행할 수 있게 하는 경량 자가인식 메커니즘인 '노시스(Gnosis)'를 소개합니다. 노시스는 내부 흔적을 수동으로 관찰하고 이를 고정된 예산 설명자로 압축하여 정확도를 무시할 정도로 예측하며, 시퀀스 길이와 독립적으로 작동하는 약 5백만 개의 매개변수만 추가합니다. 수학 추론, 오픈 도메인 질문 응답, 학문적 지식 벤치마크에서, 1.7B에서 20B 매개변수로 구성된 고정된 백본에 걸쳐, 노시스는 일관되게 강력한 내부 기준선과 큰 외부 심판보다 정확도와 교정에서 우월성을 보입니다. 게다가, 이는 제로샷에서 부분 생성으로 일반화되어 실패하는 트라젝토리와 계산 인식 통제의 초기 검출을 가능케 합니다. 이러한 결과는 신뢰할 수 있는 정확도 신호가 생성 프로세스 내재적이며 외부 감독 없이 효율적으로 추출될 수 있음을 보여줍니다."
+    },
+    "summary": "1. LLMs는 자가검증을 통해 내재적으로 자신의 실패를 예측할 수 있음을 보여주는 경량 메커니즘인 '노시스(Gnosis)'를 소개함.\n2. 노시스는 내부 상태와 주의 패턴을 검사하여 정확도를 예측하며, 외부 심판보다 정확성과 교정성에서 우월함을 보임.\n3. 이러한 방법은 제로샷에서 부분 생성까지 일반화되어 실패하는 경로를 초기에 감지하고, 계산 인식 통제를 가능케 함.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Evolving Programmatic Skill Networks",
+    "abstract": "We study continual skill acquisition in open-ended embodied environments where an agent must construct, refine, and reuse an expanding library of executable skills. We introduce the Programmatic Skill Network (PSN), a framework in which skills are executable symbolic programs forming a compositional network that evolves through experience. PSN defines three core mechanisms instantiated via large language models: (1)REFLECT for structured fault localization over skill compositions, (2) progressive optimization with maturity-aware update gating that stabilizes reliable skills while maintaining plasticity for uncertain ones, and (3) canonical structural refactoring under rollback validation that maintains network compactness. We further show that PSN's learning dynamics exhibit structural parallels to neural network training. Experiments on MineDojo and Crafter demonstrate robust skill reuse, rapid adaptation, and strong generalization across open-ended task distributions.\\footnote{We plan to open-source the code.",
+    "authors": [
+      "Haochen Shi",
+      "Xingdi Yuan",
+      "Bang Liu"
+    ],
+    "likes": 66,
+    "published_date": "Jan 7",
+    "url": "https://huggingface.co/papers/2601.03509",
+    "date_collected": "2026-01-10T07:08:46.868248+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "진화하는 프로그램적 기술 네트워크",
+      "abstract": "우리는 에이전트가 실행 가능한 기술들의 확장 라이브러리를 구축, 개선 및 재사용해야 하는 개방형 신체적 환경에서 지속적인 기술 습득을 연구합니다. 우리는 프로그램적 기술 네트워크(PSN)를 소개합니다. PSN은 시행 가능한 상징적 프로그램으로 구성된 합성 네트워크를 형성하는 프레임워크로, 이는 경험을 통해 진화합니다. PSN은 큰 언어 모델을 통해 구현된 세 가지 핵심 메커니즘을 정의합니다: (1) 기술 조합에 대한 구조화된 결함 지역화를 위한 REFLECT, (2) 성숙도 인식 업데이트 게이팅을 통한 점진적 최적화로 신뢰할 수 있는 기술을 안정화시키는 동시에 불확실한 기술에 대한 융통성을 유지, 그리고 (3) 네트워크의 조합을 유지하는 롤백 유효성 검사를 통한 정규 구조 재편. 우리는 또한 PSN의 학습 역학이 신경망 훈련과 구조적으로 유사함을 보여줍니다. MineDojo와 Crafter 실험에서는 강인한 기술 재사용, 신속한 적응 및 개방형 작업 분포에 걸쳐 강한 일반화를 시연합니다."
+    },
+    "summary": "1. 프로그램적 기술 네트워크(PSN)는 실행 가능한 프로그램 형태의 기술로 구성된 합성 네트워크로, 경험을 통해 진화하며 구조적인 결함 지역화, 점진적 최적화, 구조적인 재편을 지원합니다.\n2. PSN의 학습 역학은 신경망 훈련과 유사하며, MineDojo와 Crafter에서의 실험은 강한 일반화와 기술 재사용을 보여줍니다.\n3. 이 연구에서는 개방형 작업 분포를 통해 PSN이 빠른 적응성과 강인한 성능을 보이는 것을 입증하였으며, 코드를 공개할 예정이라고 밝혔습니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation",
+    "abstract": "We present NextFlow, a unified decoder-only autoregressive transformer trained on 6 trillion interleaved text-image discrete tokens. By leveraging a unified vision representation within a unified autoregressive architecture, NextFlow natively activates multimodal understanding and generation capabilities, unlocking abilities of image editing, interleaved content and video generation. Motivated by the distinct nature of modalities - where text is strictly sequential and images are inherently hierarchical - we retain next-token prediction for text but adopt next-scale prediction for visual generation. This departs from traditional raster-scan methods, enabling the generation of 1024x1024 images in just 5 seconds - orders of magnitude faster than comparable AR models. We address the instabilities of multi-scale generation through a robust training recipe. Furthermore, we introduce a prefix-tuning strategy for reinforcement learning. Experiments demonstrate that NextFlow achieves state-of-the-art performance among unified models and rivals specialized diffusion baselines in visual quality.",
+    "authors": [
+      "Huichao Zhang",
+      "Liao Qu",
+      "Yiheng Liu",
+      "Hang Chen",
+      "Yangyang Song",
+      "Yongsheng Dong",
+      "Shikun Sun",
+      "Xian Li",
+      "Xu Wang",
+      "Yi Jiang",
+      "Hu Ye",
+      "Bo Chen",
+      "Yiming Gao",
+      "Peng Liu",
+      "Akide Liu",
+      "Zhipeng Yang",
+      "Qili Deng",
+      "Linjie Xing",
+      "Jiyang Liu",
+      "Zhao Wang",
+      "Yang Zhou",
+      "Mingcong Liu"
+    ],
+    "likes": 56,
+    "published_date": "Jan 5",
+    "url": "https://huggingface.co/papers/2601.02204",
+    "date_collected": "2026-01-10T07:08:46.870077+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "다음 플로우: 통합 순차 모델링이 다중 모달 이해와 생성을 활성화",
+      "abstract": "저희는 6조 개의 교차된 텍스트-이미지 이산 토큰으로 훈련된 통합 디코더 전용 자기회귀 트랜스포머인 NextFlow를 제시합니다. 통합 비전 표현을 활용한 통합 자기회귀 아키텍처로, NextFlow는 기본적으로 다중 모달 이해와 생성 기능을 활성화시켜, 이미지 편집, 교차된 콘텐츠 및 비디오 생성 능력이 해금됩니다. 텍스트가 엄격히 순차적이고 이미지가 본질적으로 계층적인 특성을 갖는 모달리티의 특징에 동기부여를 받아, 텍스트에 대한 다음 토큰 예측을 유지하면서 시각적 생성에 대해 다음 스케일 예측을 채택합니다. 이는 기존의 래스터-스캔 방법과 다르며, 5초 만에 1024x1024 이미지 생성이 가능하며 이는 비교 가능한 AR 모델보다 훨씬 빠릅니다. 저희는 다단계 생성의 불안정성을 해결하기 위한 견고한 훈련 방법론을 다루며, 추가적으로 강화학습을 위한 접두어 튜닝 전략을 소개합니다. 실험 결과, NextFlow가 통합 모델 중 최고 수준의 성능을 달성하고 시각적 품질에서 전문적 확산 기준과 견줄만한 결과를 보여줍니다."
+    },
+    "summary": "1. NextFlow는 6조 개의 텍스트-이미지 토큰을 활용한 통합 모델로, 다중 모달 이해와 생성 능력을 활성화시키며, 빠른 속도로 고해상도 이미지를 생성할 수 있습니다.\n2. 텍스트에는 다음 토큰 예측을 유지하고 시각적 생성에는 다음 스케일 예측을 채택하여 전통적인 방법에서 벗어나고, 다단계 생성의 안정성 문제를 해결하기 위한 훈련 방법론을 사용합니다.\n3. 강화학습을 위한 접두어 튜닝 전략을 도입하며, 실험 결과에서 다른 통합 모델 및 시각적 품질에 있어 전문적 확산 기준과 경쟁력 있는 결과를 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  }
+]

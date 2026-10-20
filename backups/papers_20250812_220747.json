@@ -1,0 +1,288 @@
+[
+  {
+    "title": "GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models",
+    "abstract": "We present GLM-4.5, an open-source Mixture-of-Experts (MoE) large language\nmodel with 355B total parameters and 32B activated parameters, featuring a\nhybrid reasoning method that supports both thinking and direct response modes.\nThrough multi-stage training on 23T tokens and comprehensive post-training with\nexpert model iteration and reinforcement learning, GLM-4.5 achieves strong\nperformance across agentic, reasoning, and coding (ARC) tasks, scoring 70.1% on\nTAU-Bench, 91.0% on AIME 24, and 64.2% on SWE-bench Verified. With much fewer\nparameters than several competitors, GLM-4.5 ranks 3rd overall among all\nevaluated models and 2nd on agentic benchmarks. We release both GLM-4.5 (355B\nparameters) and a compact version, GLM-4.5-Air (106B parameters), to advance\nresearch in reasoning and agentic AI systems. Code, models, and more\ninformation are available at https://github.com/zai-org/GLM-4.5.",
+    "authors": [
+      "GLM-4. 5 Team",
+      "Aohan Zeng",
+      "Xin Lv",
+      "Qinkai Zheng",
+      "Zhenyu Hou",
+      "Bin Chen",
+      "Chengxing Xie",
+      "Cunxiang Wang",
+      "Da Yin",
+      "Hao Zeng",
+      "Jiajie Zhang",
+      "Kedong Wang",
+      "Lucen Zhong",
+      "Mingdao Liu",
+      "Rui Lu",
+      "Shulin Cao",
+      "Xiaohan Zhang",
+      "Xuancheng Huang",
+      "Yao Wei",
+      "Yean Cheng",
+      "Yifan An",
+      "Yilin Niu"
+    ],
+    "likes": 71,
+    "published_date": "Aug 8",
+    "url": "https://huggingface.co/papers/2508.06471",
+    "date_collected": "2025-08-12T07:07:49.735086+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "GLM-4.5: 에이전틱, 추론 및 코딩 (ARC) Foundation 모델",
+      "abstract": "GLM-4.5는 총 355B의 파라미터와 32B의 활성화된 파라미터를 갖춘 오픈소스 Mixture-of-Experts (MoE) 대형 언어 모델로, 두 가지 모드를 지원하는 혼합 추론 방법을 특징으로 합니다. 23조 토큰에 대한 다단계 훈련과 전문가 모델 반복 및 강화 학습에 따른 포스트 트레이닝을 통해, GLM-4.5는 에이전틱, 추론 및 코딩 (ARC) 작업에서 강력한 성과를 달성하며, TAU-Bench에서 70.1%, AIME 24에서 91.0%, SWE-bench Verified에서 64.2%의 점수를 기록합니다. GLM-4.5는 몇 안 되는 경쟁 모델보다 적은 파라미터로 평가된 모든 모델 중 전반적으로 3위, 에이전틱 벤치마크에서 2위를 기록합니다. 우리는 추론 및 에이전틱 AI 시스템 연구를 진보시키기 위해 GLM-4.5 (355B 파라미터)와 소형 버전인 GLM-4.5-Air (106B 파라미터)를 공개합니다. 코드, 모델 및 자세한 정보는 https://github.com/zai-org/GLM-4.5에서 확인할 수 있습니다."
+    },
+    "summary": "1. GLM-4.5는 대형 언어 모델로, 에이전틱, 추론 및 코딩 작업에서 뛰어난 성과를 보이며, 혼합 추론 방법을 사용하여 다양한 모드를 지원합니다.\n2. 다단계 훈련과 전문가 모델 반복, 강화 학습을 통해 GLM-4.5는 적은 파라미터로 많은 경쟁 모델보다 우수한 결과를 달성하였습니다.\n3. GLM-4.5는 에이전틱 벤치마크에서 뛰어나며, GLM-4.5와 그 소형 버전인 GLM-4.5-Air를 공개함으로써 추론 및 에이전틱 AI 시스템 연구를 진전시키고자 합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Voost: A Unified and Scalable Diffusion Transformer for Bidirectional\n  Virtual Try-On and Try-Off",
+    "abstract": "Virtual try-on aims to synthesize a realistic image of a person wearing a\ntarget garment, but accurately modeling garment-body correspondence remains a\npersistent challenge, especially under pose and appearance variation. In this\npaper, we propose Voost - a unified and scalable framework that jointly learns\nvirtual try-on and try-off with a single diffusion transformer. By modeling\nboth tasks jointly, Voost enables each garment-person pair to supervise both\ndirections and supports flexible conditioning over generation direction and\ngarment category, enhancing garment-body relational reasoning without\ntask-specific networks, auxiliary losses, or additional labels. In addition, we\nintroduce two inference-time techniques: attention temperature scaling for\nrobustness to resolution or mask variation, and self-corrective sampling that\nleverages bidirectional consistency between tasks. Extensive experiments\ndemonstrate that Voost achieves state-of-the-art results on both try-on and\ntry-off benchmarks, consistently outperforming strong baselines in alignment\naccuracy, visual fidelity, and generalization.",
+    "authors": [
+      "Seungyong Lee",
+      "Jeong-gi Kwak"
+    ],
+    "likes": 33,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2508.04825",
+    "date_collected": "2025-08-12T07:07:49.736182+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "Voost: 통합 및 확장 가능한 이중 확산 트랜스포머를 통한 양방향 가상 착용 및 탈의",
+      "abstract": "가상 착용은 대상 의상을 입은 사람의 현실적인 이미지를 합성하는 것을 목표로 하지만 의상-신체 대응을 정확히 모델링하는 것은 자세와 외형 변화 하에 특히 어려운 과제입니다. 본 논문에서는 한 개의 확산 트랜스포머로 가상 착용 및 탈의를 함께 학습하는 통합 및 확장 가능한 프레임워크인 Voost를 제안합니다. 이중 작업을 모델링함으로써 Voost는 각 의상-인물 쌍이 양방향으로 감독할 수 있게 하며 생성 방향과 의상 카테고리에 유연하게 조건을 부여함으로써 작업별 네트워크, 보조 손실 또는 추가적 레이블 없이 의상-신체 관계 추론을 강화합니다. 게다가 해상도나 마스크 변화에 대한 강건성을 위한 주의 온도 스케일링 및 작업 간 이중 일관성을 활용한 자기 보정 샘플링 두 가지 추론 시간 기법을 소개합니다. 광범위한 실험 결과 Voost가 시험 및 탈의 벤치마크에서 최첨단 결과를 달성하며 정렬 정확도, 시각적 충실성 및 일반화 측면에서 강력한 베이스라인을 일관되게 능가하는 것을 보여줍니다."
+    },
+    "summary": "1. Voost는 가상 착용 및 탈의를 동시에 학습하는 확산 트랜스포머를 이용한 통합 및 확장 가능한 프레임워크로, 의상-인물 쌍이 양방향으로 감독받을 수 있고, 유연한 조건 설정을 통해 의상-신체 관계 추론을 강화합니다.\n2. Voost는 주의 온도 스케일링 및 자기 보정 샘플링과 같은 추론 시간 기법을 도입하여 해상도나 마스크 변화에 강건하며 작업 간 일관성을 활용합니다.\n3. 지속적인 실험으로 Voost가 최첨단 정렬 정확도, 시각적 충실성 및 일반화 능력을 갖춘 결과를 보여주며 강력한 베이스라인을 능가함을 입증합니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "InfiGUI-G1: Advancing GUI Grounding with Adaptive Exploration Policy\n  Optimization",
+    "abstract": "The emergence of Multimodal Large Language Models (MLLMs) has propelled the\ndevelopment of autonomous agents that operate on Graphical User Interfaces\n(GUIs) using pure visual input. A fundamental challenge is robustly grounding\nnatural language instructions. This requires a precise spatial alignment, which\naccurately locates the coordinates of each element, and, more critically, a\ncorrect semantic alignment, which matches the instructions to the functionally\nappropriate UI element. Although Reinforcement Learning with Verifiable Rewards\n(RLVR) has proven to be effective at improving spatial alignment for these\nMLLMs, we find that inefficient exploration bottlenecks semantic alignment,\nwhich prevent models from learning difficult semantic associations. To address\nthis exploration problem, we present Adaptive Exploration Policy Optimization\n(AEPO), a new policy optimization framework. AEPO employs a multi-answer\ngeneration strategy to enforce broader exploration, which is then guided by a\ntheoretically grounded Adaptive Exploration Reward (AER) function derived from\nfirst principles of efficiency eta=U/C. Our AEPO-trained models, InfiGUI-G1-3B\nand InfiGUI-G1-7B, establish new state-of-the-art results across multiple\nchallenging GUI grounding benchmarks, achieving significant relative\nimprovements of up to 9.0% against the naive RLVR baseline on benchmarks\ndesigned to test generalization and semantic understanding. Resources are\navailable at https://github.com/InfiXAI/InfiGUI-G1.",
+    "authors": [
+      "Yuhang Liu",
+      "Zeyu Liu",
+      "Shuanghe Zhu",
+      "Pengxiang Li",
+      "Congkai Xie",
+      "Jiasheng Wang",
+      "Xueyu Hu",
+      "Xiaotian Han",
+      "Jianbo Yuan",
+      "Xinyao Wang",
+      "Shengyu Zhang",
+      "Hongxia Yang",
+      "Fei Wu"
+    ],
+    "likes": 17,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2508.05731",
+    "date_collected": "2025-08-12T07:07:49.737738+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "InfiGUI-G1: 적응적 탐험 정책 최적화를 통한 GUI Grounding 발전",
+      "abstract": "다중 모달 대규모 언어 모델(Multimodal Large Language Models, MLLMs)의 등장으로 순수한 시각 입력을 사용하여 그래픽 사용자 인터페이스(GUIs)에서 작동하는 자율 에이전트의 개발이 진전되었습니다. 자연어 지침을 견고하게 매핑하는 것은 기본적인 도전입니다. 이는 각 요소의 좌표를 정확히 찾아내야 하며, 더 중요한 것은 명령을 기능적으로 적합한 UI 요소에 일치시켜야 하는 정확한 의미적 정렬이 필요합니다. 지연 가능한 보상을 가진 강화 학습(Reinforcement Learning with Verifiable Rewards, RLVR)이 이러한 MLLMs의 공간적 정렬 개선에 효과적임이 입증되었습니다. 그러나 우리는 비효율적인 탐사가 의미적 정렬을 제한하여 모델이 어려운 의미적 연결을 학습하는 것을 방해한다는 사실을 발견했습니다. 이 탐사 문제를 해결하기 위해 우리는 Adaptive Exploration Policy Optimization (AEPO), 새로운 정책 최적화 프레임워크를 제안합니다. AEPO는 넓은 탐사를 강제하기 위해 다답 생성 전략을 적용하고, 효율성 원칙에서 유도된 이론적으로 근거 있는 적응적 탐사 보상(AER) 함수에 의해 안내받는다. AEPO로 훈련된 InfiGUI-G1-3B와 InfiGUI-G1-7B 모델은 다수의 어려운 GUI Grounding 벤치마크에서 새로운 최첨단 결과를 수립하며, 일반화와 의미 이해를 테스트하는 벤치마크에서 순진한 RLVR 기준에 비해 최대 9.0%까지 상당한 상대적 향상을 이룩했습니다. 자료는 https://github.com/InfiXAI/InfiGUI-G1에서 제공됩니다."
+    },
+    "summary": "1. 다중 모달 대규모 언어 모델(Multimodal Large Language Models, MLLMs)을 사용한 자동 에이전트 개발을 위한 GUI Grounding의 도전: 자연어 지침을 견고하게 지원함에 있어 공간적 정렬과 의미적 정렬이 필수적이며, Adaptive Exploration Policy Optimization(AEPO) 등의 기술이 이러한 어려움을 극복하는 데 효과적임을 입증함.\n2. Adaptive Exploration Policy Optimization(AEPO)를 통한 새로운 탐사 정책 최적화 프레임워크 소개: 넓은 탐사를 강조하는 다답 생성 전략을 활용하고, 효율성 원칙에 기반한 적응적 탐사 보상(AER) 함수가 모델 학습을 지원함.\n3. InfiGUI-G1-3B와 InfiGUI-G1-7B 모델의 성능: 다양한 어려운 GUI Grounding 벤치마크에서 새로운 최첨단 결과를 이뤄내며, 일반화와 의미 이해를 테스트하는 벤치마크에서 상대적으로 높은 성능을 보임.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Memp: Exploring Agent Procedural Memory",
+    "abstract": "Large Language Models (LLMs) based agents excel at diverse tasks, yet they\nsuffer from brittle procedural memory that is manually engineered or entangled\nin static parameters. In this work, we investigate strategies to endow agents\nwith a learnable, updatable, and lifelong procedural memory. We propose Memp\nthat distills past agent trajectories into both fine-grained, step-by-step\ninstructions and higher-level, script-like abstractions, and explore the impact\nof different strategies for Build, Retrieval, and Update of procedural memory.\nCoupled with a dynamic regimen that continuously updates, corrects, and\ndeprecates its contents, this repository evolves in lockstep with new\nexperience. Empirical evaluation on TravelPlanner and ALFWorld shows that as\nthe memory repository is refined, agents achieve steadily higher success rates\nand greater efficiency on analogous tasks. Moreover, procedural memory built\nfrom a stronger model retains its value: migrating the procedural memory to a\nweaker model yields substantial performance gains.",
+    "authors": [
+      "Runnan Fang",
+      "Yuan Liang",
+      "Xiaobin Wang",
+      "Jialong Wu",
+      "Shuofei Qiao",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Huajun Chen",
+      "Ningyu Zhang"
+    ],
+    "likes": 16,
+    "published_date": "Aug 8",
+    "url": "https://huggingface.co/papers/2508.06433",
+    "date_collected": "2025-08-12T07:07:49.739107+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "에이전트 절차 메모리 탐구",
+      "abstract": "대형 언어 모델(LLMs) 기반 에이전트는 다양한 작업에서 뛰어나지만, 수동으로 설계된 또는 정적 매개변수에 엮인 부서 프로시저 메모리로 인해 취약합니다. 본 연구에서는 에이전트에 학습 가능하고 업데이트 가능하며 수명이 계속되는 프로시저 메모리를 부여하는 전략을 조사합니다. 우리는 과거의 에이전트 궤적을 세밀하게 단계별 지침과 높은 수준의 스크립트 형태의 추상화로 증류하는 Memp를 제안하고 프로시저 메모리의 생성, 검색, 및 업데이트에 대한 다양한 전략의 영향을 탐구합니다. 지속적으로 업데이트, 수정, 및 폐기하는 동적 규정과 결합된 이 저장소는 새로운 경험과 함께 변화합니다. TravelPlanner와 ALFWorld에서의 경험적 평가 결과, 메모리 저장소가 정제됨에 따라 에이전트는 유사한 작업에서 점차 더 높은 성공률과 효율성을 달성합니다. 더욱이 강력한 모델에서 구축된 프로시저 메모리는 가치를 유지하며, 이를 보다 약한 모델로 이전시키면 상당한 성능 향상이 있습니다."
+    },
+    "summary": "1. 대형 언어 모델을 기반으로 한 에이전트는 다양한 작업에서 우수한 성과를 보이지만, 수동으로 만들어진 취약한 프로시저 메모리로 인해 한계가 있습니다.\n2. Memp는 학습 가능하고 업데이트 가능하며 수명이 계속되는 프로시저 메모리를 제안하며, 이를 통해 에이전트의 성능을 향상시킬 수 있음을 실험을 통해 입증합니다.\n3. 에이전트의 프로시저 메모리가 강력한 모델에서 생성된 경우, 이를 약한 모델로 이전시켜 성능을 대폭 향상시킬 수 있다는 결과가 나타났습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Pruning the Unsurprising: Efficient Code Reasoning via First-Token\n  Surprisal",
+    "abstract": "Recently, Large Reasoning Models (LRMs) have demonstrated remarkable\ncapabilities in code reasoning by scaling up the length of Chain-of-Thought\n(CoT). However, excessively long reasoning traces introduce substantial\nchallenges in terms of training cost, inference latency, and deployment\nfeasibility. While various CoT compression approaches have emerged to address\nthis challenge, they face inherent trade-offs: token-level methods often\ndisrupt syntactic and logical coherence, while step-level methods based on\nperplexity fail to reliably capture the logically critical reasoning steps. In\nthis paper, we propose ASAP (Anchor-guided, Surprisal-based Pruning), a novel\ncoarse-to-fine framework for CoT compression. ASAP first performs anchor-guided\npruning to preserve the core reasoning structure, which efficiently reduces the\nsearch space for subsequent processing. It then enables a logic-aware pruning\nby selecting logically essential reasoning steps based on a novel first-token\nsurprisal metric. Finally, ASAP teaches models to autonomously generate and\nleverage these concise CoTs at inference time, enabling efficient reasoning in\ncoding tasks. Experiments show that ASAP achieves state-of-the-art accuracy\nacross multiple code generation benchmarks while substantially reducing\ntraining and inference costs. On the challenging LiveCodeBench v4_v5 benchmark,\nour approach reduces token generation by 23.5% and inference latency by 43.5%\ncompared to the strongest baseline, while achieving a competitive accuracy of\n36.19% in Pass@1. Our results highlight a promising direction for building\npowerful and efficient LRMs.",
+    "authors": [
+      "Wenhao Zeng",
+      "Yaoning Wang",
+      "Chao Hu",
+      "Yuling Shi",
+      "Chengcheng Wan",
+      "Hongyu Zhang",
+      "Xiaodong Gu"
+    ],
+    "likes": 12,
+    "published_date": "Aug 8",
+    "url": "https://huggingface.co/papers/2508.05988",
+    "date_collected": "2025-08-12T07:07:49.740440+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "효율적인 코드 추론을 위한 놀라움을 제거하는 가지치기",
+      "abstract": "최근에는 대규모 추론 모델(LRMs)이 Chain-of-Thought(CoT)의 길이를 확장함으로써 코드 추론에서 놀라운 능력을 보여주었습니다. 그러나 지나치게 긴 추론 흔적은 훈련 비용, 추론 지연 및 배포 가능성 측면에서 상당한 도전을 제기합니다. 본 논문에서는 CoT 압축을 위한 새로운 아이디어인 ASAP(Anchor-guided, Surprisal-based Pruning)를 제안합니다."
+    },
+    "summary": "1. 코드 추론에서 효율적인 추론을 위해 새로운 가지치기 방법인 ASAP이 제안되었습니다.\n2. ASAP은 핵심 추론 구조를 보존하고 논리적으로 필수적인 추론 단계를 선택하는 데 중점을 둡니다.\n3. ASAP을 활용하면 효율적인 코드 추론이 가능하며, 실험 결과는 뛰어난 성능을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Hidden Dynamics of Massive Activations in Transformer Training",
+    "abstract": "Massive activations are scalar values in transformer hidden states that\nachieve values orders of magnitude larger than typical activations and have\nbeen shown to be critical for model functionality. While prior work has\ncharacterized these phenomena in fully trained models, the temporal dynamics of\ntheir emergence during training remain poorly understood. We present the first\ncomprehensive analysis of massive activation development throughout transformer\ntraining, using the Pythia model family as our testbed. Through systematic\nanalysis of various model sizes across multiple training checkpoints, we\ndemonstrate that massive activation emergence follows predictable mathematical\npatterns that can be accurately modeled using an exponentially-modulated\nlogarithmic function with five key parameters. We develop a machine learning\nframework to predict these mathematical parameters from architectural\nspecifications alone, achieving high accuracy for steady-state behavior and\nmoderate accuracy for emergence timing and magnitude. These findings enable\narchitects to predict and potentially control key aspects of massive activation\nemergence through design choices, with significant implications for model\nstability, training cycle length, interpretability, and optimization. Our\nfindings demonstrate that the emergence of massive activations is governed by\nmodel design and can be anticipated, and potentially controlled, before\ntraining begins.",
+    "authors": [
+      "Jorge Gallego-Feliciano",
+      "S. Aaron McClendon",
+      "Juan Morinelli",
+      "Stavros Zervoudakis",
+      "Antonios Saravanos"
+    ],
+    "likes": 9,
+    "published_date": "Aug 5",
+    "url": "https://huggingface.co/papers/2508.03616",
+    "date_collected": "2025-08-12T07:07:49.741609+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "트랜스포머 학습에서 대규모 활성화의 숨겨진 역학",
+      "abstract": "대규모 활성화는 트랜스포머 은닉 상태의 스칼라 값으로, 전형적인 활성화보다 훨씬 큰 값을 가지며 모델 기능에 중요한 역할을 한다. 이전 연구는 이러한 현상을 완전히 훈련된 모델에서 설명해왔지만, 학습 중 이러한 현상이 나타나는 시간적 역학은 잘 이해되지 않았다. 본 연구는 Pythia 모델 패밀리를 테스트베드로 사용하여 트랜스포머 학습 과정에서 대규모 활성화 발전에 대한 첫 포괄적 분석을 제시한다. 여러 모델 크기를 다양한 학습 체크포인트에서 체계적으로 분석하여, 대규모 활성화 발생이 예측 가능한 수학적 패턴을 따른다는 것을 입증하고, 지수적으로 변조된 로그 함수를 사용해 다섯 가지 주요 매개변수를 사용해 정확하게 모델링할 수 있다고 보여준다. 우리는 이러한 수학적 매개변수를 건축 사양만으로 예측하는 머신러닝 프레임워크를 개발하여, 안정적인 상태 행동에 대해 높은 정확도와 발생 시기 및 크기에 대해 중간 정확도를 달성한다. 이러한 발견은 설계 선택을 통해 대규모 활성화 발생의 주요 측면을 예측하고 잠재적으로 제어할 수 있도록 하여, 모델 안정성, 학습 주기 길이, 해석 가능성, 최적화에 중대한 영향을 미친다. 이러한 연구 결과는 대규모 활성화의 발생이 모델 설계에 의해 조절되며 학습 전에 예견할 수 있음을 입증한다."
+    },
+    "summary": "1. 트랜스포머 학습 중 대규모 활성화 발생 시간적 역학을 첫 번째로 체계적으로 분석하였고, 예측 가능한 수학적 패턴을 제시함.\n2. 건축 사양만으로 수학적 매개변수를 예측하는 머신러닝 프레임워크 개발로 안정적 상태 행동에 대해 높은 정확도 달성.\n3. 대규모 활성화 발생을 예측하고 제어함으로써 모델 안정성, 해석 가능성 등에 영향을 미치는 설계 선택의 중요성을 강조함.",
+    "categories": [
+      "LLM",
+      "Machine Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing",
+    "abstract": "Neural Radiance Fields (NeRF) and Gaussian Splatting (GS) have recently\ntransformed 3D scene representation and rendering. NeRF achieves high-fidelity\nnovel view synthesis by learning volumetric representations through neural\nnetworks, but its implicit encoding makes editing and physical interaction\nchallenging. In contrast, GS represents scenes as explicit collections of\nGaussian primitives, enabling real-time rendering, faster training, and more\nintuitive manipulation. This explicit structure has made GS particularly\nwell-suited for interactive editing and integration with physics-based\nsimulation. In this paper, we introduce GENIE (Gaussian Encoding for Neural\nRadiance Fields Interactive Editing), a hybrid model that combines the\nphotorealistic rendering quality of NeRF with the editable and structured\nrepresentation of GS. Instead of using spherical harmonics for appearance\nmodeling, we assign each Gaussian a trainable feature embedding. These\nembeddings are used to condition a NeRF network based on the k nearest\nGaussians to each query point. To make this conditioning efficient, we\nintroduce Ray-Traced Gaussian Proximity Search (RT-GPS), a fast nearest\nGaussian search based on a modified ray-tracing pipeline. We also integrate a\nmulti-resolution hash grid to initialize and update Gaussian features.\nTogether, these components enable real-time, locality-aware editing: as\nGaussian primitives are repositioned or modified, their interpolated influence\nis immediately reflected in the rendered output. By combining the strengths of\nimplicit and explicit representations, GENIE supports intuitive scene\nmanipulation, dynamic interaction, and compatibility with physical simulation,\nbridging the gap between geometry-based editing and neural rendering. The code\ncan be found under (https://github.com/MikolajZielinski/genie)",
+    "authors": [
+      "Mikołaj Zieliński",
+      "Krzysztof Byrski",
+      "Tomasz Szczepanik",
+      "Przemysław Spurek"
+    ],
+    "likes": 6,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2508.02831",
+    "date_collected": "2025-08-12T07:07:49.742745+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "GENIE: 가우시안 인코딩을 활용한 신경 방사도 영역 대화식 편집",
+      "abstract": "신경 방사도 영역(NeRF)과 가우시안 스플래팅(GS)은 최근 3D 장면 표현과 렌더링을 변화시켰다. NeRF는 신경망을 통해 체적 표현을 학습하여 고품질의 새로운 시각 합성을 달성하지만, 암묵적 인코딩으로 편집과 물리적 상호작용이 어렵다. 반면, GS는 가우시안 기본체의 명시적 컬렉션으로 장면을 표현함으로써 실시간 렌더링, 더 빠른 학습 및 직관적인 조작을 가능케 한다. 본 연구에서 우리는 GENIE(Gaussian Encoding for Neural Radiance Fields Interactive Editing)를 소개한다. 이는 NeRF의 사실적인 렌더링 품질을 GS의 편집 가능하고 구조화된 표현과 결합한 하이브리드 모델이다. 외형 모델링을 위해 구면 조화함수 대신 각 가우시안에 훈련 가능한 특성 임베딩을 할당한다. 이러한 임베딩은 각 쿼리 포인트에 대한 k개의 가장 근사한 가우시안을 기반으로 NeRF 네트워크를 조건부로 만든다."
+    },
+    "summary": "1. NeRF와 GS의 강점을 결합한 GENIE 모델 소개\n2. 구 형태의 가우시안 기본체를 이용한 실시간, 지역적 편집 가능\n3. 가우시안 인접성 검색을 기반으로 하는 레이 트레이싱 기법 도입",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Adapting Vision-Language Models Without Labels: A Comprehensive Survey",
+    "abstract": "Vision-Language Models (VLMs) have demonstrated remarkable generalization\ncapabilities across a wide range of tasks. However, their performance often\nremains suboptimal when directly applied to specific downstream scenarios\nwithout task-specific adaptation. To enhance their utility while preserving\ndata efficiency, recent research has increasingly focused on unsupervised\nadaptation methods that do not rely on labeled data. Despite the growing\ninterest in this area, there remains a lack of a unified, task-oriented survey\ndedicated to unsupervised VLM adaptation. To bridge this gap, we present a\ncomprehensive and structured overview of the field. We propose a taxonomy based\non the availability and nature of unlabeled visual data, categorizing existing\napproaches into four key paradigms: Data-Free Transfer (no data), Unsupervised\nDomain Transfer (abundant data), Episodic Test-Time Adaptation (batch data),\nand Online Test-Time Adaptation (streaming data). Within this framework, we\nanalyze core methodologies and adaptation strategies associated with each\nparadigm, aiming to establish a systematic understanding of the field.\nAdditionally, we review representative benchmarks across diverse applications\nand highlight open challenges and promising directions for future research. An\nactively maintained repository of relevant literature is available at\nhttps://github.com/tim-learn/Awesome-LabelFree-VLMs.",
+    "authors": [
+      "Hao Dong",
+      "Lijun Sheng",
+      "Jian Liang",
+      "Ran He",
+      "Eleni Chatzi",
+      "Olga Fink"
+    ],
+    "likes": 5,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2508.05547",
+    "date_collected": "2025-08-12T07:07:49.743966+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "레이블 없는 비전-언어 모델 적응: 포괄적인 조사",
+      "abstract": "비전-언어 모델(VLMs)은 광범위한 작업들에서 높은 일반화 능력을 나타냈지만, 특정 하위 시나리오에 직접 적용할 때 종종 최적의 성능을 보이지 못하는 경우가 있습니다. 최근 연구에서는 레이블된 데이터에 의존하지 않는 비지도 적응 방법에 점점 더 초점을 맞추어 데이터 효율성을 유지하면서 이용성을 향상시키고 있습니다. 이 분야에 대한 통합된 작업 지향적 조사가 부족한 상황에서 우리는 이러한 간극을 메우기 위해 이 분야에 대해 포괄적이고 체계적인 개요를 제시합니다. 비지도 VLM 적응에 전념한 임무 지향적 조사에 기반한 분류 체계를 제안합니다. 이미 존재하는 접근 방식을 레이블 없는 시각 데이터의 가용성과 성격을 기준으로 네 가지 주요 패러다임(Data-Free Transfer, Unsupervised Domain Transfer, Episodic Test-Time Adaptation, Online Test-Time Adaptation)으로 분류합니다. 이 구조 내에서 각 패러다임과 관련된 핵심 방법론과 적응 전략을 분석하여 해당 분야에 대한 체계적 이해를 확립하려고 노력합니다. 또한 다양한 응용 프로그램에 걸쳐 대표적인 벤치마크를 검토하고 미래 연구를 위한 오픈 도전 과제 및 유망한 방향을 강조합니다. 관련 문헌의 활발하게 유지되는 저장소는 https://github.com/tim-learn/Awesome-LabelFree-VLMs에서 확인할 수 있습니다."
+    },
+    "summary": "1. 레이블 없는 비전-언어 모델 적응의 중요성과 최근 연구 동향.\n2. 비지도 적응 방법의 분류체계 및 핵심 패러다임.\n3. 미래 연구를 위한 오픈 도전 과제와 유망한 연구 방향.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "MELLA: Bridging Linguistic Capability and Cultural Groundedness for\n  Low-Resource Language MLLMs",
+    "abstract": "Multimodal Large Language Models (MLLMs) have shown remarkable performance in\nhigh-resource languages. However, their effectiveness diminishes significantly\nin the contexts of low-resource languages. Current multilingual enhancement\nmethods are often limited to text modality or rely solely on machine\ntranslation. While such approaches help models acquire basic linguistic\ncapabilities and produce \"thin descriptions\", they neglect the importance of\nmultimodal informativeness and cultural groundedness, both of which are crucial\nfor serving low-resource language users effectively. To bridge this gap, in\nthis study, we identify two significant objectives for a truly effective MLLM\nin low-resource language settings, namely 1) linguistic capability and 2)\ncultural groundedness, placing special emphasis on cultural awareness. To\nachieve these dual objectives, we propose a dual-source strategy that guides\nthe collection of data tailored to each goal, sourcing native web alt-text for\nculture and MLLM-generated captions for linguistics. As a concrete\nimplementation, we introduce MELLA, a multimodal, multilingual dataset.\nExperiment results show that after fine-tuning on MELLA, there is a general\nperformance improvement for the eight languages on various MLLM backbones, with\nmodels producing \"thick descriptions\". We verify that the performance gains are\nfrom both cultural knowledge enhancement and linguistic capability enhancement.\nOur dataset can be found at https://opendatalab.com/applyMultilingualCorpus.",
+    "authors": [
+      "Yufei Gao",
+      "Jiaying Fei",
+      "Nuo Chen",
+      "Ruirui Chen",
+      "Guohang Yan",
+      "Yunshi Lan",
+      "Botian Shi"
+    ],
+    "likes": 4,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2508.05502",
+    "date_collected": "2025-08-12T07:07:49.745212+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "MELLA: 낮은 자원 언어 MLLM을 위한 언어 능력과 문화적 기반 연결",
+      "abstract": "다중 모달 대형 언어 모델(MLLMs)은 높은 자원 언어에서 높은 성능을 보여주었습니다. 그러나 이러한 효과는 낮은 자원 언어 상황에서는 크게 감소합니다. 현재의 다국어 강화 방법은 텍스트 모달에만 제한되거나 기계 번역에만 의존하는 경우가 많습니다. 우리는 낮은 자원 언어 사용자를 효과적으로 지원하기 위해 다중 모달 정보 전달과 문화적 근거성의 중요성을 무시하기 쉬운 \"얇은 설명\"을 생산해내는 모델에 대한 중요한 부분입니다. 이 간극을 메우기 위해 본 연구에서 우리는 낮은 자원 언어 환경에서 실제로 효과적인 MLLM을 위한 두 가지 중요 목표를 식별합니다. 이는 1) 언어 능력과 2) 문화적 근거성으로, 문화적 인식에 특별한 강조를 두고 있습니다. 이 중요한 목표를 달성하기 위해 각 목표에 맞춘 데이터 수집을 안내하는 이중 소스 전략을 제안합니다. 이를 위해 문화에 대한 네이티브 웹 대체 텍스트를 출처로, 언어학캡션은 MLLM이 생성합니다. 구체적인 구현으로, 우리는 MELLA라는 다중 모달, 다국어 데이터세트를 소개합니다. 실험 결과는 MELLA에서 세밀 조정한 후 여러 MLLM 백본에 대해 여덟 가지 언어의 모델이 \"두꺼운 설명\"을 생산하며 전반적인 성능이 향상됨을 보여줍니다. 우리는 성능 향상이 문화 지식 향상과 언어 능력 향상 모두에서 나오는 것임을 검증합니다. 우리의 데이터세트는 https://opendatalab.com/applyMultilingualCorpus에서 찾을 수 있습니다."
+    },
+    "summary": "1. 낮은 자원 언어에서 효과적인 MLLM을 위해 언어 능력과 문화적 근거성이 중요하며, 이를 위해 새로운 이중 소스 전략을 제안하고 MELLA 데이터셋을 소개했습니다.\n2. MELLA를 통해 다양한 MLLM 백본을 사용한 여덟 가지 언어에 대한 모델의 전반적인 성능이 향상되었으며, \"두꺼운 설명\"을 생산함을 확인하였습니다.\n3. 성능 향상은 문화 지식과 언어 능력의 향상이 결합된 결과라는 것을 실험 결과로 확인하였습니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MeshLLM: Empowering Large Language Models to Progressively Understand\n  and Generate 3D Mesh",
+    "abstract": "We present MeshLLM, a novel framework that leverages large language models\n(LLMs) to understand and generate text-serialized 3D meshes. Our approach\naddresses key limitations in existing methods, including the limited dataset\nscale when catering to LLMs' token length and the loss of 3D structural\ninformation during mesh serialization. We introduce a Primitive-Mesh\ndecomposition strategy, which divides 3D meshes into structurally meaningful\nsubunits. This enables the creation of a large-scale dataset with 1500k+\nsamples, almost 50 times larger than previous methods, which aligns better with\nthe LLM scaling law principles. Furthermore, we propose inferring face\nconnectivity from vertices and local mesh assembly training strategies,\nsignificantly enhancing the LLMs' ability to capture mesh topology and spatial\nstructures. Experiments show that MeshLLM outperforms the state-of-the-art\nLLaMA-Mesh in both mesh generation quality and shape understanding,\nhighlighting its great potential in processing text-serialized 3D meshes.",
+    "authors": [
+      "Shuangkang Fang",
+      "I-Chao Shen",
+      "Yufeng Wang",
+      "Yi-Hsuan Tsai",
+      "Yi Yang",
+      "Shuchang Zhou",
+      "Wenrui Ding",
+      "Takeo Igarashi",
+      "Ming-Hsuan Yang"
+    ],
+    "likes": 3,
+    "published_date": "Aug 2",
+    "url": "https://huggingface.co/papers/2508.01242",
+    "date_collected": "2025-08-12T07:07:49.746558+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "MeshLLM: 대규모 언어 모델을 발전적으로 이해하고 3D 메시 생성 능력을 갖추다",
+      "abstract": "우리는 MeshLLM을 제시합니다. 이는 대규모 언어 모델(LLM)을 활용하여 텍스트 기반의 3D 메시를 이해하고 생성하는 혁신적인 프레임워크입니다. 우리의 방법은 기존 방법들의 주요 제한 사항들을 다루며, LLM의 토큰 길이에 맞춘 제한된 데이터셋 규모와 메시 직렬화 과정에서 발생하는 3D 구조 정보의 손실 문제를 해결합니다. 3D 메시를 구조적으로 의미 있는 하위 단위로 분해하는 Primitive-Mesh 분해 전략을 소개합니다. 이는 이전 방법들보다 거의 50배 큰 1500k 이상의 샘플을 포함하는 대규모 데이터셋을 생성할 수 있게 하며, LLM의 확장 법칙 원리와 더 일치합니다. 또한, 우리는 정점으로부터 면 연결성을 추론하고 지역 메시 조립 학습 전략을 제안하여, LLM이 메시의 위상과 공간 구조를 적절히 포착할 수 있는 능력을 크게 향상시킵니다. 실험 결과에서 MeshLLM은 최신 기술인 LLaMA-Mesh보다 메시 생성 품질과 형태 이해 측면에서 우수함을 보여주며, 텍스트 기반의 3D 메시 처리에 큰 잠재력을 갖고 있음을 확인합니다."
+    },
+    "summary": "1. MeshLLM은 대규모 언어 모델을 활용하여 텍스트 기반의 3D 메시를 생성하는 새로운 프레임워크이다.\n2. 이 프레임워크는 3D 메시를 구조적으로 의미 있는 하위 단위로 분해하여 대규모 데이터셋을 구축하며, LLM의 확장 법칙에 더 적합하게 만든다.\n3. 또한, MeshLLM은 면 연결성 추론과 지역 메시 조립 학습 전략을 통해 LLM의 메시 위상과 구조를 향상시켜 최신 기술인 LLaMA-Mesh보다 우수한 성능을 보여준다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

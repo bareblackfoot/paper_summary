@@ -1,0 +1,129 @@
+=== Paper Collection Started at Mon Mar  9 01:40:15 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W11
+URL: https://huggingface.co/papers/week/2026-W11
+Found 10 papers in weekly view
+Fetching likes for: Utonia: Toward One Encoder for All Point Clouds
+Fetching likes for: Heterogeneous Agent Collaborative Reinforcement Learning
+Fetching likes for: Helios: Real Real-Time Long Video Generation Model
+Fetching likes for: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Fetching likes for: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Fetching likes for: dLLM: Simple Diffusion Language Modeling
+Fetching likes for: T2S-Bench & Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning
+Fetching likes for: MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier
+Fetching likes for: UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?
+Fetching likes for: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Selected top 10 papers by likes:
+1. Utonia: Toward One Encoder for All Point Clouds (148 likes)
+2. Heterogeneous Agent Collaborative Reinforcement Learning (146 likes)
+3. Helios: Real Real-Time Long Video Generation Model (136 likes)
+4. OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens (133 likes)
+5. From Scale to Speed: Adaptive Test-Time Scaling for Image Editing (130 likes)
+6. dLLM: Simple Diffusion Language Modeling (121 likes)
+7. T2S-Bench & Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning (109 likes)
+8. MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier (83 likes)
+9. UniG2U-Bench: Do Unified Models Advance Multimodal Understanding? (79 likes)
+10. CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation (79 likes)
+Found abstract: We dream of a future where point clouds from all domains can come together to shape a single model t...
+Processed paper: Utonia: Toward One Encoder for All Point Clouds
+Found abstract: We introduce Heterogeneous Agent Collaborative Reinforcement Learning (HACRL), a new learning paradi...
+Processed paper: Heterogeneous Agent Collaborative Reinforcement Learning
+Found abstract: We introduce Helios, the first 14B video generation model that runs at 19.5 FPS on a single NVIDIA H...
+Processed paper: Helios: Real Real-Time Long Video Generation Model
+Found abstract: OmniLottie is a versatile framework that generates high quality vector animations from multi-modal i...
+Processed paper: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Found abstract: Image Chain-of-Thought (Image-CoT) is a test-time scaling paradigm that improves image generation by...
+Processed paper: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Found abstract: Although diffusion language models (DLMs) are evolving quickly, many recent models converge on a set...
+Processed paper: dLLM: Simple Diffusion Language Modeling
+Found abstract: Think about how human handles complex reading tasks: marking key points, inferring their relationshi...
+Processed paper: T2S-Bench & Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning
+Found abstract: While large language models (LLMs) show promise in scientific discovery, existing research focuses o...
+Processed paper: MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier
+Found abstract: Unified multimodal models have recently demonstrated strong generative capabilities, yet whether and...
+Processed paper: UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?
+Found abstract: GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task...
+Processed paper: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Utonia: Toward One Encoder for All Point Clouds
+Paper already exists, checking if translation is complete...
+Update likes: 148  ->  148
+Update date_collected: 2026-03-09T10:40:24.332748+09:00  ->  2026-03-09T07:09:14.797266+09:00
+
+Processing paper 2/10
+Title: Heterogeneous Agent Collaborative Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 146  ->  146
+Update date_collected: 2026-03-09T10:40:24.334148+09:00  ->  2026-03-09T07:09:14.798664+09:00
+
+Processing paper 3/10
+Title: Helios: Real Real-Time Long Video Generation Model
+Paper already exists, checking if translation is complete...
+Update likes: 136  ->  136
+Update date_collected: 2026-03-09T10:40:24.335336+09:00  ->  2026-03-09T07:09:14.799862+09:00
+
+Processing paper 4/10
+Title: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Paper already exists, checking if translation is complete...
+Update likes: 133  ->  134
+Update date_collected: 2026-03-09T10:40:24.336590+09:00  ->  2026-03-09T07:09:14.801124+09:00
+
+Processing paper 5/10
+Title: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Paper already exists, checking if translation is complete...
+Update likes: 130  ->  130
+Update date_collected: 2026-03-09T10:40:24.338047+09:00  ->  2026-03-09T07:09:14.802560+09:00
+
+Processing paper 6/10
+Title: dLLM: Simple Diffusion Language Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 121  ->  121
+Update date_collected: 2026-03-09T10:40:24.339172+09:00  ->  2026-03-09T07:09:14.803667+09:00
+
+Processing paper 7/10
+Title: T2S-Bench & Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 109  ->  109
+Update date_collected: 2026-03-09T10:40:24.340667+09:00  ->  2026-03-09T07:09:14.805184+09:00
+
+Processing paper 8/10
+Title: MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier
+Paper already exists, checking if translation is complete...
+Update likes: 83  ->  82
+Update date_collected: 2026-03-09T10:40:24.341699+09:00  ->  2026-03-09T07:09:14.806203+09:00
+
+Processing paper 9/10
+Title: UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?
+Paper already exists, checking if translation is complete...
+Update likes: 79  ->  79
+Update date_collected: 2026-03-09T10:40:24.343197+09:00  ->  2026-03-09T07:09:14.807706+09:00
+
+Processing paper 10/10
+Title: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Paper already exists, checking if translation is complete...
+Update likes: 79  ->  79
+Update date_collected: 2026-03-09T10:40:24.344795+09:00  ->  2026-03-09T07:09:14.809301+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W11.json...
+
+Updating Notion database...
+Paper already exists with same likes count: Utonia: 모든 포인트 클라우드를 위한 하나의 인코더로
+Paper already exists with same likes count: 이종 에이전트 협력 강화학습
+Paper already exists with same likes count: 헬리오스: 실시간 장거리 비디오 생성 모델
+Updating paper: OmniLottie: 매개변수화된 Lottie 토큰을 통해 벡터 애니메이션 생성하기 (likes: 134 -> 133)
+Paper already exists with same likes count: 스케일에서 속도로: 이미지 편집을 위한 적응형 테스트 타임 스케일링
+Paper already exists with same likes count: dLLM: 간단한 확산 언어 모델링
+Paper already exists with same likes count: T2S-Bench & Structure-of-Thought: 벤치마킹과 포괄적인 텍스트 구조 추론을 위한 텍스트-구조 변환 벤치마킹과 프롬프팅
+Updating paper: 복잡성 장벽을 깨고 과학적 발견을 위한 처리 가능한 트레이닝을 해제하는 MOOSE-Star (likes: 82 -> 83)
+Paper already exists with same likes count: 통합 모델이 다중모달 이해를 진전시키는가? - UniG2U-Bench
+Paper already exists with same likes count: CUDA 에이전트: 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Mar  9 01:41:01 UTC 2026 ===
+

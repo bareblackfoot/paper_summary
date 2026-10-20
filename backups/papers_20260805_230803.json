@@ -1,0 +1,270 @@
+[
+  {
+    "title": "SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks",
+    "abstract": "Speech and audio generation is often needed in animation dubbing, audio drama, movies, advertising, games, podcasts, and short-video production. In these scenarios, creators may need to design voices without reference recordings, control speaker styles with natural language, support acoustic scenes with environments and audio effects, and later reuse the designed voices. Therefore, it is important to support multi-speaker speech and audio generation for both instruct and zero-shot tasks. The instruct task requires a caption of the environment, speaker styles, and fine-grained content, while the zero-shot task uses reference audio together with the same fine-grained content. We address these tasks from both the data and model sides. First, we propose SwanData-Caption, which cleans raw speech and audio data, adds targeted synthetic coverage, and annotates diverse and accurate multi-level captions. Then, we propose SwanTale, a multi-speaker expressive speech and audio generation model that supports both zero-shot and instruct tasks. We introduce SwanVAE to support high-quality multi-audio-modality generation. Then, we adopt reward-conditioned quality control and Engram conditioning, along with Unified MoE for multi-task and multi-audio-modality modeling. In addition, we use curriculum learning and GRPO post-training to let the model progressively learn and strengthen its capabilities. Experimental results show that SwanTale leads on multiple key zero-shot and instruct metrics, achieves the best expressiveness scores in both tasks, and supports complex instruct generation involving multi-speaker speech and audio. Demos can be found at https://swanaigc.github.io/\\#swantale.",
+    "authors": [
+      "Yu Zhang",
+      "Ruiqi Li",
+      "Changhao Pan",
+      "Ke Lei",
+      "Xiang Yin",
+      "Cheng Yang"
+    ],
+    "likes": 140,
+    "published_date": "Aug 3",
+    "url": "https://huggingface.co/papers/2608.02023",
+    "date_collected": "2026-08-05T08:09:52.735203+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "SwanTale: 통합된 다화자 음성 및 오디오 생성을 위한 지시 및 제로샷 작업",
+      "abstract": "애니메이션 더빙, 오디오 드라마, 영화, 광고, 게임, 팟캐스트, 그리고 짧은 비디오 제작에서는 종종 음성 및 오디오 생성이 필요합니다. 이러한 상황에서 창작자들은 참조 녹음 없이 목소리를 디자인하거나, 자연어로 화자 스타일을 제어하거나, 환경과 오디오 효과로 음향 장면을 지원하고, 나중에 디자인한 목소리를 재사용해야 할 수 있습니다. 따라서 지시 및 제로샷 작업을 위한 다화자 음성 및 오디오 생성을 지원하는 것이 중요합니다. 지시 작업은 환경 캡션, 화자 스타일 및 세부 콘텐츠를 요구하며, 제로샷 작업은 같은 세부 콘텐츠와 함께 참조 오디오를 사용합니다. 우리는 데이터 측면과 모델 측면에서 이러한 작업에 대응합니다. 우선 우리는 SwanData-Caption을 제안합니다. 이는 원시 음성과 오디오 데이터를 정리하고 대상 합성 커버리지를 추가하며, 다양하고 정확한 다수준 캡션을 주석으로 추가합니다. 그런 다음 우리는 다화자 표현적인 음성 및 오디오 생성 모델인 SwanTale을 제안합니다. 우리는 고품질의 다음 영상 데이터 생성을 지원하기 위해 SwanVAE를 도입합니다. 그런 다음 우리는 보상 조건화 품질 제어와 Engram 조건화를 채택하고, 다화자 및 다영상 데이터 모델링을 위한 통합 MoE를 사용합니다. 또한, 모델이 점진적으로 배우고 능력을 강화할 수 있도록 커리큘럼 학습과 GRPO 사후 훈련을 사용합니다. 실험 결과는 SwanTale이 여러 주요 제로샷 및 지시 메트릭에서 우위를 차지하며, 두 작업 모두에서 최고의 표현 점수를 달성하며, 다화자 음성 및 오디오를 포함하는 복잡한 지시 생성을 지원함을 보여줍니다. 데모는 https://swanaigc.github.io/\\#swantale에서 확인할 수 있습니다."
+    },
+    "summary": "1. 창작자들이 참조 녹음 없이 음성 및 오디오를 디자인하고 제어하는 등의 작업을 위해 다화자 음성 및 오디오 생성이 중요합니다.\n2. 우리는 SwanData-Caption으로 데이터를 정리하고 다양하고 정확한 캡션을 추가하여 다화자 음성 및 오디오 생성을 지원합니다.\n3. SwanTale은 다화자 표현적인 음성 및 오디오 생성 모델로, 고품질의 데이터 생성을 지원하며 지시 및 제로샷 작업에 우수한 성능을 보입니다.",
+    "categories": [
+      "Audio",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+    "abstract": "Large language model (LLM) agents increasingly undertake long-horizon tasks that require sustained reasoning, tool use, and revision across many interdependent steps. However, existing agent harnesses maintain task execution, task state, and completion assessment within a growing context, making the state difficult to track and allowing incorrect self-assessments to propagate into later decisions. We reformulate long-horizon execution as a task-state management problem and propose LongHorizon-Harness, which maintains the task state explicitly outside execution and updates it only with facts independently verified from the environment. Its Manage-Execute-Audit(MEA) loop uses a manager to maintain the task state and determine the next subtask, a fresh-context executor to perform it, and a read-only auditor to verify the resulting environment state before the next round. A lightweight AgentAdapter supports interchangeable model and harness backends without modifying their native agent loops. LongHorizon-Harness improves Qwen~3.7-Plus from 51.8% to 80.7% on WeaveBench, from 69.7% to 77.2% on Terminal-Bench~2.1, and from 2.8% to 8.3% on OSWorld~2.0. It also raises Claude Opus~4.7 from 20.0% to 34.3% on an OSWorld2.0 subset, demonstrating consistent gains across models, harnesses, and interaction domains.",
+    "authors": [
+      "Ziyu Ma",
+      "Hailang Huang",
+      "Shun Zou",
+      "Yong Wang",
+      "Shidong Yang",
+      "Yiming Hu",
+      "Fei Wei",
+      "XiangXiang Chu"
+    ],
+    "likes": 126,
+    "published_date": "Aug 3",
+    "url": "https://huggingface.co/papers/2608.01964",
+    "date_collected": "2026-08-05T08:09:52.736732+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "Real-World 작업용 장기 고려 에이전트 발전을 위한 LongHorizon-Harness",
+      "abstract": "대규모 언어 모델(Large Language Model, LLM) 에이전트들은 점진적 추론, 도구 사용 그리고 다수의 의존적 단계에서의 개선을 요구하는 장기 고려 작업을 더 맡게 되고 있다. 그러나 기존의 에이전트 하네스들은 작업 수행, 작업 상태, 그리고 완료 평가를 점차 증가하는 문맥 내에서 유지함으로써 상태를 추적하기 어렵게 하고 잘못된 자가 평가가 후속 결정에 전이되게 허용한다. 우리는 장기 고려 수행을 작업 상태 관리 문제로 재구성하고 작업 상태를 명시적으로 실행 외부에 유지하고 이를 환경에서 독립적으로 검증된 사실들로만 업데이트하는 LongHorizon-Harness를 제안한다. 그것의 Manage-Execute-Audit(MEA) 루프는 작업 상태를 유지하고 다음 서브 작업을 결정하며, 이를 수행할 새로운 문맥 실행자와 다음 라운드 이전에 발생한 환경 상태를 확인할 읽기 전용 감사원으로 구성된다. 가벼운 AgentAdapter는 기존 에이전트 루프를 수정하지 않고 모델과 하네스 백엔드를 서로 교체할 수 있도록 지원한다. LongHorizon-Harness는 WeaveBench에서 Qwen를 51.8%에서 80.7%로, Terminal-Bench 2.1에서 69.7%에서 77.2%로, 그리고 OSWorld 2.0에서 2.8%에서 8.3%로 개선시켰다. 또한 OSWorld2.0 하위 예제에서 Claude Opus 4.7을 20.0%에서 34.3%로 향상시켜 모델, 하네스 및 상호작용 도메인 전반에서 일관된 이득을 입증한다."
+    },
+    "summary": "1. 기존 에이전트의 한계를 극복하기 위해 LongHorizon-Harness가 장기 고려 작업을 작업 상태 관리 문제로 정의하며, MEA 루프를 통해 작업 상태유지, 서브 작업 결정, 환경 상태 확인을 수행한다.\n2. 새로운 실행자, 감사원을 활용하여 LongHorizon-Harness는 WeaveBench, Terminal-Bench, OSWorld 등에서 기존 모델 대비 높은 성능 향상을 보여준다.\n3. AgentAdapter의 도입으로 LongHorizon-Harness는 기존 모델과 하네스를 교체 가능하게 하여 다양한 환경에서 일관된 성능 개선을 이끈다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Mental World Modeling",
+    "abstract": "World models enable a predictive substrate for planning and action, yet existing formulations merely answer a physical question: what/where it is, and how will it evolve. Human behavior, however, is driven by hidden mental state (what a person believes, wants, intends, feels, and considers socially permissible), so a model that tracks the physical scene but not what each agent knows and believes about it predicts the wrong action for the right-looking scene. We formulate Mental World Modeling (MWM), a generic theoretical framework that makes mental variables core components of a world model rather than posthoc rationales: MWM aintains a coupled physical-mental world state, renders a target-specific partial observation, and simulates how candidate actions jointly update both components. We instantiate the framework in MENTIS, a training-free and fully inspectable baseline that decomposes the process into state parsing, target-observation generation, action decomposition, coupled physical and mental transition, and branch-level value evaluation. On a manually constructed, quality-controlled dataset of situated decision scenarios spanning text, image, and sounding-video stories, experiments with 8 modern LLM-based world models demonstrate that explicitly modeling the mental state is essential for predicting human decisions. Deeper analyses further expose the bottlenecks of current mental world modeling. We expect MWM as a next stage of world modeling, from simulating physical scenes to simulating the minds that act in them.",
+    "authors": [
+      "Hao Fei",
+      "Yiran Zhao"
+    ],
+    "likes": 93,
+    "published_date": "Jul 29",
+    "url": "https://huggingface.co/papers/2607.27201",
+    "date_collected": "2026-08-05T08:09:52.738132+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "정신적 세계 모델링",
+      "abstract": "세계 모델은 계획과 행동을 위한 예측적 기반을 제공하지만, 기존의 개념은 단순히 물리적인 질문에 대답합니다: 무엇이/어디에 있는지, 어떻게 진화할 것인가. 그러나 인간 행동은 숨겨진 정신적 상태에 의해 주도되며, 각 주체가 그에 대해 무엇을 믿고 의도하며 느끼는지, 사회적으로 허용되는 것으로 간주하는 등의 내재적인 상태에 의해 영향을 받습니다. 그래서 물리적 상황을 추적하는 모델은 각 주체가 그에 대해 알고 믿는 것을 고려하지 않으면 올바르게 보이는 상황에 대해 잘못된 행동을 예측합니다. 우리는 정신 세계 모델링(MWM)을 수립합니다. 이는 정신 변수들을 세계 모델의 핵심 구성 요소로 만들어 사후적 합리화가 아닌 이론적인 프레임워크입니다: MWM은 결합된 물리적-정신적 세계 상태를 유지하고, 목표별 부분적 관찰을 제공하며, 후보 행동이 어떻게 두 구성 요소를 동시에 업데이트하는지 시뮬레이션합니다. 우리는 MENTIS에서 이 프레임워크를 구현했으며, 이는 훈련이 필요없고 완전히 검사 가능한 기준선으로, 상태 구문 분석, 목표 관찰 생성, 행동 분해, 결합된 물리적 및 정신적 전이, 그리고 가치 평가 레벨의 분해로 과정을 세분화합니다. 텍스트, 이미지, 소리-비디오 스토리를 포함하는 양질의 데이터세트에서 8가지 최신 LLM 기반의 세계 모델과의 실험은 정신적 상태를 명시적으로 모델링하는 것이 인간의 결정을 예측하는 데 필수적임을 보여줍니다. 더 깊은 분석은 현재 정신적 세계 모델링의 병목 현상을 더욱 드러냅니다. 우리는 MWM을 세계 모델링의 다음 단계로 예상하며, 물리적인 장면을 모방하는 것에서 그 안에서 행동하는 마음을 모방하는 단계로 나아갈 것입니다."
+    },
+    "summary": "1. 인간의 행동은 물리적 상황을 추적하는 것뿐 아니라 각 주체의 정신적 상태를 고려하는 정신 세계 모델링이 필수적입니다.\n2. MWM은 물리적-정신적 세계 상태를 유지하고, 특정 목표에 대한 부분적 관찰을 제공하며, 후보 행동이 두 구성 요소를 동시에 업데이트하는 방식을 시뮬레이션합니다.\n3. 실험 결과는 정신적 상태를 명시적으로 모델링하는 것이 인간 결정을 예측하는 데 필수적이며, 현재 모델링의 병목 현상을 밝혀내었습니다.",
+    "categories": [
+      "LLM",
+      "다른 방면"
+    ]
+  },
+  {
+    "title": "From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-oriented large language models (LLMs) by enabling large-scale optimization. However, its applicability remains largely limited to domains such as mathematics and coding, where correctness can be deterministically verified. Open-ended tasks instead often rely on human preferences, reward models, or LLM-based judges, introducing evaluation bias, judge capability bottlenecks, and additional inference costs.Drawing on the principle of self-supervised learning, which constructs pretext tasks to derive supervision from the data itself, we propose Reinforcement Learning with Self-Verifiable Rewards (RLSVR), a task-transformation-based training paradigm for extending RLVR to open-ended tasks. RLSVR transforms open-ended tasks into verifiable proxy environments whose internal rules and interaction outcomes automatically generate reward signals. We instantiate RLSVR with SpyRL, a multi-agent self-play environment inspired by Who Is the Spy?. Agents receive asymmetric information, complete the same target task, and vote to identify a designated spy. Because the spy identity is predetermined, voting outcomes provide fully verifiable rewards, while successful identification remains closely related to output quality. Experiments on text summarization, creative writing, and mathematical reasoning show that SpyRL outperforms existing self-improvement methods on non-verifiable tasks and yields consistent gains on verifiable reasoning tasks. These results demonstrate that task transformation can extend scalable RLVR-based self-improvement beyond inherently verifiable domains. Models and code have been released at https://github.com/wangqinsi1/SpyRL.",
+    "authors": [
+      "Qinsi Wang",
+      "Jing Shi",
+      "Huazheng Wang",
+      "Kun Wan",
+      "Yiran Wu",
+      "Bo Liu",
+      "Qingyun Wu",
+      "Hai Helen Li",
+      "Yiran Chen",
+      "Handong Zhao",
+      "Wentian Zhao"
+    ],
+    "likes": 89,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2607.23802",
+    "date_collected": "2026-08-05T08:09:52.739803+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "RLVR에서 RLSVR로: 과제 변환이 열린 마음의 LLM 자가 향상을 유도합니다",
+      "abstract": "확인 가능 보상(Verifiable Rewards)을 활용한 강화 학습(RLVR)은 최근 대규모 언어모델(Large Language Models, LLMs)의 추론 지향적 진전을 이끌며 대규모 최적화를 가능케 했습니다. 그러나 이것의 적용 가능성은 주로 수학 및 코딩과 같이 결정적으로 확인 가능한 분야로 크게 제한됩니다. 그 대신 열린 과제들은 종종 인간의 선호도, 보상 모델, 또는 LLM 기반 심사자에 의존하여 평가 편향, 심사자 능력 병목 현상, 추가적 추론 비용을 도입합니다. 자가 지도 학습의 원칙을 차용하여, 우리는 데이터 자체로부터 지도를 유도하기 위해 선행 과제를 구축하는 자가 확인 보상을 갖는 강화 학습(RLSVR)을 제안합니다. RLSVR은 열린 과제를 확인 가능한 대리 환경으로 변환하여 내부 규칙과 상호 작용 결과가 보상 신호를 자동으로 생성하도록 합니다. 우리는 SpyRL과 함께 RLSVR을 구체화했습니다. 이는 Who Is the Spy?에서 영감을 받은 다중 에이전트 자가 대결 환경입니다. 에이전트들은 비대칭 정보를 받고 동일한 목표 과제를 완수하고 지정된 스파이를 식별하기 위해 투표합니다. 스파이 신원이 미리 결정되므로 투표 결과는 완전히 확인 가능한 보상을 제공하며, 성공적인 식별은 출력 품질과 밀접하게 관련됩니다. 텍스트 요약, 창의적 글쓰기, 수학적 추론에 대한 실험 결과는 SpyRL이 확인 불가능한 과제에서 기존 자가 향상 방법을 능가하며 확인 가능한 추론 과제에서 일관된 향상을 제공함을 보여줍니다. 이러한 결과는 과제 변환이 본래 확인 가능한 도메인을 넘어 확장 가능한 RLVR 기반의 자가 향상을 가능케 할 수 있음을 보여줍니다. 모델과 코드는 https://github.com/wangqinsi1/SpyRL에서 공개되었습니다."
+    },
+    "summary": "1. 확인 가능한 보상을 활용한 강화 학습(RLVR)의 한계를 극복하기 위해 자가 확인 가능 보상(RLSVR)을 제안하였습니다.\n2. RLSVR은 열린 과제를 확인 가능한 대리 환경으로 변환하여 자가 지도 학습 원리에 기반한 교육 방법론을 소개합니다.\n3. SpyRL을 통해 실시한 실험 결과는 현재의 자가 향상 방법보다 확인 불가능한 과제에서 우수한 성과를 보이고, 확인 가능한 추론 작업에서 일관된 향상을 나타냅니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens",
+    "abstract": "We present N_0-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Building on current vision-based backbones, we propose a training recipe for tactile integration consisting of visuo-tactile pre-training, staged tactile-pathway integration, and advantage-conditioned offline policy improvement. During pre-training, the policy learns broad contact priors from NeoData, our large-scale visuo-tactile robot dataset; to our knowledge, N_0-VTLA is the first VTLA model pretrained on tactile data at scale. During post-training, we augment the policy with a predictive tactile pathway that distills the contact patterns learned at scale into the fine motion adjustments required by downstream tactile-centric manipulation. For offline policy improvement, we introduce ALTER, an advantage-conditioned offline reinforcement learning method that converts relative progress and trajectory-event comparisons into binary advantage labels for policy training on a fixed deployment corpus, further improving task-specific learning on contact-rich skills such as deformable object manipulation. Across contact-rich benchmarks, N_0-VTLA outperforms strong baselines by wide margins: it wins all nine real-robot NeoReal tasks and reaches 63.8% mean success on a twenty-task simulation suite, against 44.0% for the strongest baseline. N_0-VTLA policies trained with ALTER reach 75-95% success on three long-horizon real-robot tasks. These results lay a foundation for versatile tactile-driven manipulation policies.",
+    "authors": [
+      "NeoteAI Team",
+      "Fudan TEAI Team"
+    ],
+    "likes": 56,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2607.23782",
+    "date_collected": "2026-08-05T08:09:52.741227+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "N_0-VTLA: 잠재적 촉각 토큰을 활용한 비전-촉각-언어-동작 모델의 확장",
+      "abstract": "본 논문에서는 촉각 지각과 촉각 피드백 제어를 통해 미세한 접촉 풍부한 조작이 가능한 비전-촉각-언어-동작(VTLA) 기반 모델인 N_0-VTLA를 제안합니다. 우리는 현재의 비전 기반 백본에 기반하여, 시각-촉각 사전 훈련, 단계적 촉각 경로 통합, 이점 조건화 오프라인 정책 개선으로 구성된 촉각 통합을 위한 훈련 방법을 제안합니다. N_0-VTLA은 촉각 데이터를 대규모로 사전 훈련하는 첫 번째 VTLA 모델로 알려져 있습니다. ALTER를 도입하여 오프라인 정책 개선을 수행하여, 전체적으로 엄청난 우위를 가지고 강한 기준선을 능가하는 성능을 보입니다."
+    },
+    "summary": "1. N_0-VTLA는 촉각 지각 데이터를 활용한 첫 번째 VTLA 모델로, 촉각 중심의 조작에 필요한 미세한 움직임 조절에 대한 넓은 접촉 사전을 학습합니다.\n2. 오프라인 정책 개선을 위해 ALTER를 도입하여 상대적 진전과 경로 이벤트 비교를 바이너리 이점 레이블로 변환하여 정책 훈련을 통해 고정 배치 언어 자료에서 작업별 학습을 추가로 향상시킵니다.\n3. N_0-VTLA는 강한 기준선을 크게 능가하여 모든 구라이 영진과 같은 9가지 실제 로봇 태스크를 이기고 시뮬레이션 수트에서 20가지의 태스크 중 63.8%의 평균 성공률을 보입니다. ALTER로 훈련된 N_0-VTLA 정책은 3가지 장기간의 실제 로봇 태스크에서 75-95%의 성공률을 달성합니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DAPD: Dual-Anchored Policy Distillation",
+    "abstract": "On-policy (self) distillation (OPSD) is increasingly adopted for language-model post-training. It strengthens the teacher with privileged information but can induce a privilege illusion: the student learns privilege-dependent behavior it cannot reproduce from its inference-time context, yet behaves as if the training-time privileged information remained available, ultimately degrading performance. In this paper, we identify information asymmetry between the privileged teacher and the student at inference as the root cause of this failure in OPSD. To resolve this asymmetry, we propose Dual-Anchored Policy Distillation (DAPD), a unified framework with two levels of anchoring. Dual-Path Anchoring (DPA) introduces a self-conditioned bridge and aligns reference and rollout behavior along two matched-information paths, preventing privilege-dependent behavior from being transferred to the inference-time student. Dual-Source Anchoring (DSA) applies these paths in both reference-to-rollout and rollout-to-reference directions, reducing reliance on privileged reference guidance while preserving correctness supervision. Extensive experiments show that DAPD significantly alleviates privilege illusion, outperforming OPSD on Qwen3-4B by +2.00 points on average across tasks. Notably, its gains persist across scales, reaching +2.69 at 4B and +2.78 at 32B.",
+    "authors": [
+      "Jianyu Wu",
+      "Yizhou Wang",
+      "Encheng Su",
+      "Chen Tang",
+      "Shixiang Tang"
+    ],
+    "likes": 54,
+    "published_date": "Aug 3",
+    "url": "https://huggingface.co/papers/2608.01735",
+    "date_collected": "2026-08-05T08:09:52.742655+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "이중 앵커 정책 증류(Dual-Anchored Policy Distillation)",
+      "abstract": "행동 정책 증류는 언어 모델 사후 훈련에 점점 더 많이 활용되고 있습니다. 그러나 특정 지식을 강화하는 것은 학습자에게 특권적 정보를 제공하지만, 이로 인해 특권층 허상을 유도할 수 있습니다. 이 논문에서는 특권 정책 증류의 실패의 근본적인 원인으로 추론 시 특권적 선생님과 학생 간의 정보 비대칭을 확인합니다. 우리는 이러한 비대칭을 해결하기 위해 이중 앵커 정책 증류(DAPD)를 제안합니다. DAPD는 이중 앵커를 사용하는 통합된 프레임워크로, 두 가지 수준의 앵커를 포함합니다."
+    },
+    "summary": "1. 특권적 정보의 비대칭 문제 해결을 위해 이중 앵커 정책 증류(DAPD) 프레임워크를 소개합니다.\n2. 이중 경로 앵커링(Dual-Path Anchoring)은 정보를 일치시키고 특권존속 행동을 방지합니다.\n3. 이중 소스 앵커링(Dual-Source Anchoring)은 특권적인 참조 안내에 대한 의존성을 줄이면서 정확도를 유지합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Progressive Agent Skill Generation via Reinforcement Learning",
+    "abstract": "Existing skill generation methods largely rely on heuristics or pipeline-style consolidation, which must be specially designed for different evidence sources. In contrast, learning-based approaches offer a more unified way to model skill generation across heterogeneous sources. However, learning-based skill generation remains challenging because skills lack a natural supervision signal based on relevance or correctness; their value can largely be determined only by whether they improve the behavior of the agent on downstream tasks. To address this challenge, we propose Skill-α, a reinforcement learning method for progressively generating high-quality agent skills. Specifically, we formulate skill generation as a sequential editing process that decomposes skill construction into individually evaluable edits, and introduce a novel rollback reward that evaluates each edit by comparing downstream execution under the original and edited skills on an anchored query. Extensive experiments show that Skill-α generates more effective skills than methods based on heuristics or pipelines in both document-to-skill and experience-to-skill settings. Under the main GPT-4o worker, Skill-α improves average downstream success rates over the strongest skill-generation baseline by 3.3 points on CL-Bench and 6.7 points on tau2-bench. Further ablations validate the importance of rollback reward and progressive generation.",
+    "authors": [
+      "Junhao Shen",
+      "Zhanqiu Zhang",
+      "Yiwen Guo",
+      "Hong Cheng"
+    ],
+    "likes": 49,
+    "published_date": "Aug 3",
+    "url": "https://huggingface.co/papers/2608.01678",
+    "date_collected": "2026-08-05T08:09:52.744080+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "점진적 강화 학습을 통한 에이전트 기술 생성",
+      "abstract": "기존의 기술 생성 방법은 주로 휴리스틱이나 파이프라인 형식의 통합에 의존하는데, 이는 서로 다른 증거 원천에 특별히 설계되어야 합니다. 반면, 학습 기반 접근 방식은 이질적 인증에 걸쳐 기술 생성을 모델링하는 보다 통합된 방법을 제공합니다. 그러나 학습 기반 기술 생성은 여전히 어려운데, 기술은 관련성이나 정확성에 기반한 자연적인 지도 신호를 갖지 않기 때문입니다. 기술의 가치는 대부분 에이전트의 행동을 개선하는지에 따라 결정됩니다. 우리는 이러한 도전에 대응하기 위해 높은 품질의 에이전트 기술을 점진적으로 생성하기 위한 강화 학습 방법인 Skill-α를 제안합니다. 특히, Skill-α는 기술 생성을 개별적으로 평가할 수 있는 편집 프로세스로 구성하고, 각 편집을 고정된 쿼리에서 원본과 수정된 기술의 하향 실행을 비교함으로써 각 편집을 평가하는 새로운 롤백 보상을 소개합니다. 다양한 실험 결과 Skill-α가 문서-기술 및 경험-기술 설정에서 휴리스틱이나 파이프라인을 기반으로한 방법보다 더 효과적인 기술을 생성하는 것을 보여줍니다. 기본 GPT-4o 작업자에서 Skill-α는 CL-Bench에서 가장 강력한 기술 생성 기준보다 평균 하향 성공률을 3.3 포인트, tau2-bench에서 6.7 포인트 향상시킵니다. 추가적인 실험 결과는 롤백 보상과 점진적 생성의 중요성을 검증합니다."
+    },
+    "summary": "1. Skill-α는 강화 학습 방법을 사용하여 높은 품질의 에이전트 기술을 점진적으로 생성하는데, 효과적인 롤백 보상 및 순차적 편집 프로세스를 도입합니다.\n2. 실험 결과에 따르면 Skill-α는 다른 기술 생성 방법에 비해 문서-기술 및 경험-기술 설정에서 더 효과적인 기술을 생성함을 입증합니다.\n3. Skill-α는 GPT-4o 기준에서 강력한 기술 생성 기준보다 평균 하향 성공률을 향상시키는데, 롤백 보상 및 점진적 생성의 중요성 또한 검증됩니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Weak-to-Strong On-Policy Distillation",
+    "abstract": "On-policy distillation (OPD), which aligns a student with the teacher's token-level distribution on the student's own rollouts, is an effective paradigm for transferring capabilities across LLMs. Prevailing approaches assume a teacher at least as capable as the student: they either distill a larger model into a smaller one, which fails at the frontier where no larger teacher exists, or consolidate multiple domain experts trained from a shared base, which requires costly training at the student's scale. We introduce Weak-to-Strong On-Policy Distillation (W2S-OPD), a simple yet effective OPD framework that improves the strong student by distilling from multiple weak models. W2S-OPD constructs a proxy teacher in logit space from a contrast pair of a positive and a negative model, both smaller than the student and cheap to obtain. Their logit difference isolates the capability direction, which is added to the student's own base model, yielding a proxy teacher that couples this direction while staying distributionally adjacent to the student. The student then distills it by minimizing the per-token reverse KL on its own rollouts. We instantiate the contrast pair as i) a post-RL expert against its pre-RL initialization, isolating the skill RL instills, ii) a larger against a smaller base model, isolating the capability from scale, and iii) a small base model with correct versus wrong hints, isolating the instance-level direction toward the solution. Across four math and three code benchmarks, W2S-OPD outperforms OPD, enables the student to surpass the domain teacher, and keeps improving the student even when every supervision source is weaker. Analysis shows different contrasts yield distinct signals: the post-RL and hint contrasts emphasize reasoning frameworks, while the scale contrast emphasizes the solving procedure. Our code will be available at https://github.com/Yu-Fangxu/W2S-OPD.",
+    "authors": [
+      "Fangxu Yu",
+      "Zinan Lin",
+      "Xiaodong Liu",
+      "Weijia Xu",
+      "Michael Xu",
+      "Tianyi Zhou",
+      "Jianfeng Gao"
+    ],
+    "likes": 49,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2607.26246",
+    "date_collected": "2026-08-05T08:09:52.745675+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "약한 강한 온-폴리시 증류",
+      "abstract": "온-폴리시 증류(OPD)는 학생을 스스로의 롤아웃에서 선생님의 토큰 수준 분포와 일치시키는 효과적인 패러다임으로, LLMs 간 능력을 전이하는 데 효과적입니다. 기존 접근 방식은 적어도 학생만큼 능숙한 선생님을 가정합니다: 그들은 대부분 큰 모델을 작은 모델로 증류하거나, 학생의 규모에서 비싼 훈련이 필요한 여러 도메인 전문가를 공유 기반에서 학습합니다. 저희는 약한 모델로부터 강한 학생을 개선하는 간단하면서 효과적인 OPD 프레임워크인 약한 강한 온-폴리시 증류(W2S-OPD)를 소개합니다. W2S-OPD는 긍정적 및 부정적 모델의 대조 쌍에서 로짓 공간에서 대리 선생님을 만들고, 이것을 학생 자신의 기본 모델에 추가하여 능력 방향을 분리하고, 학생과 분포적으로 인접한 상태를 유지하면서 이 방향을 결합시킵니다. 그런 다음 학생은 자체 롤아웃에서 토큰별 역 KL을 최소화하여 이를 증류합니다. 우리는 W2S-OPD를 네 가지 수학 및 세 가지 코드 벤치마크에서 사용하여, OPD보다 우수한 성능을 보이는 것을 확인하고, 학생이 도메인 선생님을 능가하게 하며, 모든 지도원이 더 약할 때도 학생을 계속 개선합니다. 분석 결과, 다양한 대조가 다른 신호를 내는 것을 보여줍니다: 후처리 RL과 힌트 대조는 추론 프레임워크를 강조하고, 규모 대조는 해결 절차를 강조합니다. 우리 코드는 https://github.com/Yu-Fangxu/W2S-OPD에서 제공될 예정입니다."
+    },
+    "summary": "1. 약한 모델에서 강한 학생을 개선하는 간단하면서 효과적인 OPD 프레임워크인 약한 강한 온-폴리시 증류(W2S-OPD)를 소개함.\n2. W2S-OPD는 긍정적 및 부정적 모델의 대조 쌍을 활용하여 로짓 공간에서 대리 선생님을 구축하고, 학생에게 분배적으로 가깝게 방향을 전달하여 학생을 개선.\n3. 네 가지 수학과 세 가지 코드 벤치마크에서 W2S-OPD가 OPD를 능가하며, 모든 지도원이 더 약한 경우에도 학생을 계속 발전시킴.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Meshy T2: Fast Native Mesh Generation with Flow Matching",
+    "abstract": "Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token sequence and decode it autoregressively, which is slow at inference and sensitive to error accumulation, making them impractical for interactive asset creation. We present Meshy T2, a fast native mesh generation framework built on flow matching. At its core is a vertex-set mesh VAE that encodes a mesh into one continuous latent token per vertex and decodes vertices, edge connectivity, and face winding order in a single pass, preserving high-precision geometry and artist-authored topology without vertex quantization or welding. Generation proceeds as a coarse-to-fine cascade of two flow-matching models: an image-conditioned voxel flow first sketches the overall shape as a coarse occupancy scaffold, and a mesh flow then populates the scaffold with per-vertex latent tokens, conditioned on the image, the scaffold, and a requested vertex budget. This design delivers three practical capabilities: interactive generation speed through parallel flow-based synthesis; effective face-count control through the requested vertex budget; and native support for multi-part assets, whose components emerge directly from the generated connectivity. In our experiments, Meshy T2 achieves state-of-the-art geometric fidelity and completes end-to-end image-to-mesh generation within a median of 6 seconds, over an order of magnitude faster than autoregressive baselines. Code and weights will be available at https://github.com/meshy-dev/meshy-t2.",
+    "authors": [
+      "Jiale Xu",
+      "Rendong Liang",
+      "Yuhao Long",
+      "Siyuan Shen",
+      "Zangyueyang Xian",
+      "Zeyi Xu",
+      "Yuanming Hu"
+    ],
+    "likes": 47,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2607.28675",
+    "date_collected": "2026-08-05T08:09:52.747239+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "Meshy T2: 플로우 매칭을 이용한 빠른 원시 매쉬 생성",
+      "abstract": "다각형 메쉬는 현대 3D 파이프라인의 표준 표면 표현이며, 고품질의 메쉬를 아티스트 스타일의 토폴로지로 생성하는 것은 영화, 게임 및 대화형 3D 응용프로그램에 대하여 필수적입니다. Meshy T2를 제안하는데, 이는 플로우 매칭을 기반으로 한 빠른 원시 메쉬 생성 프레임워크입니다. 중심에는 하나의 연속 잠재 토큰으로 메쉬를 인코딩하는 버텍스 세트 메쉬 VAE가 있으며, 이는 한 번의 통과로 정확한 지오메트리와 아티스트가 작성한 토폴로지를 보존합니다."
+    },
+    "summary": "1. Meshy T2는 플로우 매칭을 활용하여 빠르게 메쉬를 생성하며, 복잡한 형태와 토폴로지를 보존함.\n2. 이미지 및 메쉬 플로우를 이용하여 상호작용 가능한 속도로 메쉬를 생성하고, 얼마나 많은 버텍스를 요청하는지에 따라 효과적으로 면 수를 제어함.\n3. Meshy T2는 최신의 기하학적 정확도를 달성하며, 이미지에서 메쉬까지의 생성을 평균 6초 안에 완료함.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+    "abstract": "Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a privileged-view teacher. Yet its next-token corrections are source-mixed, combining visual signals with linguistic priors and teacher-specific effects. The key challenge is to estimate which corrections are supported by visual evidence, not merely where or how strongly to distill. We introduce Visual Attribution Distillation (VAD), a counterfactual target-reconstruction algorithm that estimates the visually attributable part of a teacher correction. At each student-generated prefix, VAD evaluates the same fixed teacher with the relevant evidence present and removed. The corresponding change in centered log-probabilities defines ut, a signed proxy for the visual evidence direction that estimates how revealing the evidence supports or refutes candidate tokens. VAD projects the original correction onto this proxy to obtain an intervention-aligned component and a proxy-unexplained residual, then reconstructs a student-anchored target from the former. During training, this reconstructed target supplies the primary supervision signal, while the privileged teacher contributes a weak regularizer. Across six fine-grained visual benchmarks at 4B and 9B scales, VAD outperforms direct privileged-view distillation and visual-advantage weighting. Token- level and controlled-target analyses show that the proxy-aligned component is enriched in task-relevant visual corrections and yields stronger target shifts, especially when evidence refutes a mistaken answer. These results support counterfactual target reconstruction as an effective alternative to source-mixed supervision.",
+    "authors": [
+      "Kangning Zhang",
+      "Yixing Li",
+      "Shuai Shao",
+      "Qingyao Li",
+      "Zhengxi Lu",
+      "Zhiyuan Yao",
+      "Jianghao Lin",
+      "Wenxiang Jiao",
+      "Yuan Lu",
+      "Weiwen Liu",
+      "Weinan Zhang",
+      "Yong Yu"
+    ],
+    "likes": 43,
+    "published_date": "Jul 30",
+    "url": "https://huggingface.co/papers/2607.28590",
+    "date_collected": "2026-08-05T08:09:52.748929+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "다중모달 온-폴리시 증류에서 대상 재구성을 위한 시각적 증거의 소속성 추정",
+      "abstract": "다중모달 온-폴리시 증류(OPD)는 특권된 시점을 통해 학생 생성 경로를 감독하여 세세한 시각적 지식을 전달한다. 그러나 다음 토큰 수정은 시각적 신호를 언어적 우선순위와 특정 선생님 효과와 혼합한다. 주요 도전 과제는 어떤 수정이 시각적 증거로 지지되는지 추정하는 것이며, 단지 어디서 또는 얼마나 강하게 증류할지가 아니다. 시각적 소속성 증류(VAD)를 소개함으로써, 선생님 수정의 시각적 속성 가능 부분을 추정하는 대조적 대상 재구성 알고리즘을 제안한다."
+    },
+    "summary": "1. 다중모달 온-폴리시 증류에서 시각적 증거의 소속성을 추정하는 VAD 알고리즘 도입\n2. VAD는 학생 생성 접두사마다 관련 증거의 존재 유무에 따라 동일한 고정된 선생님을 평가하여 시각적 증거 방향을 추정\n3. VAD를 통해 재구성된 대상이 주된 감독 신호를 제공하고, 특권을 가진 선생님은 약한 정규화기 역할을 함",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

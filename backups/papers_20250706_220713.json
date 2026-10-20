@@ -1,0 +1,324 @@
+[
+  {
+    "title": "GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable\n  Reinforcement Learning",
+    "abstract": "We present GLM-4.1V-Thinking, a vision-language model (VLM) designed to\nadvance general-purpose multimodal reasoning. In this report, we share our key\nfindings in the development of the reasoning-centric training framework. We\nfirst develop a capable vision foundation model with significant potential\nthrough large-scale pre-training, which arguably sets the upper bound for the\nfinal performance. Reinforcement Learning with Curriculum Sampling (RLCS) then\nunlocks the full potential of the model, leading to comprehensive capability\nenhancement across a diverse range of tasks, including STEM problem solving,\nvideo understanding, content recognition, coding, grounding, GUI-based agents,\nand long document understanding, among others. To facilitate research in this\nfield, we open-source GLM-4.1V-9B-Thinking, which achieves state-of-the-art\nperformance among models of comparable size. In a comprehensive evaluation\nacross 28 public benchmarks, our model outperforms Qwen2.5-VL-7B on nearly all\ntasks and achieves comparable or even superior performance on 18 benchmarks\nrelative to the significantly larger Qwen2.5-VL-72B. Notably,\nGLM-4.1V-9B-Thinking also demonstrates competitive or superior performance\ncompared to closed-source models such as GPT-4o on challenging tasks including\nlong document understanding and STEM reasoning, further underscoring its strong\ncapabilities. Code, models and more information are released at\nhttps://github.com/THUDM/GLM-4.1V-Thinking.",
+    "authors": [
+      "Wenyi Hong",
+      "Wenmeng Yu",
+      "Xiaotao Gu",
+      "Guo Wang",
+      "Guobing Gan",
+      "Haomiao Tang",
+      "Jiale Cheng",
+      "Ji Qi",
+      "Junhui Ji",
+      "Lihang Pan",
+      "Shuaiqi Duan",
+      "Weihan Wang",
+      "Yan Wang",
+      "Yean Cheng",
+      "Zehai He",
+      "Zhe Su",
+      "Zhen Yang",
+      "Ziyang Pan",
+      "Aohan Zeng",
+      "Baoxu Wang",
+      "Boyan Shi",
+      "Changyu Pang"
+    ],
+    "likes": 165,
+    "published_date": "Jul 1",
+    "url": "https://huggingface.co/papers/2507.01006",
+    "date_collected": "2025-07-06T07:06:59.977956+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "다양한 다중 모달 추론을 위한 확장 가능한 강화 학습과 함께하는 GLM-4.1V-Thinking",
+      "abstract": "GLM-4.1V-Thinking은 일반 목적의 다중 모달 추론을 발전시키기 위해 설계된 비전-언어 모델(VLM)입니다. 본 보고서에서는 추론 중심의 훈련 프레임워크 개발 과정에서의 주요 결과를 공유합니다."
+    },
+    "summary": "1. 대규모 사전 훈련을 통해 상당한 잠재력을 갖춘 비전 기반 모델을 개발하고, 강화 학습 및 커리큘럼 샘플링을 통해 모델의 가능성을 최대화하여 다양한 작업들에서 종합적인 성능 향상을 이룩합니다.\n2. GLM-4.1V-9B-Thinking은 유사한 크기의 모델들 중 최첨단 성능을 달성하며, 28개의 공개 벤치마크를 통해 Qwen2.5-VL-7B보다 대부분의 작업에서 우수한 결과를 보입니다.\n3. 본 연구는 문서 이해 및 STEM 추론과 같은 어려운 작업에서도 GPT-4o와 유사하거나 우수한 성능을 보여 다중 모달 추론 분야에서 강력한 능력을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Kwai Keye-VL Technical Report",
+    "abstract": "While Multimodal Large Language Models (MLLMs) demonstrate remarkable\ncapabilities on static images, they often fall short in comprehending dynamic,\ninformation-dense short-form videos, a dominant medium in today's digital\nlandscape. To bridge this gap, we introduce Kwai Keye-VL, an\n8-billion-parameter multimodal foundation model engineered for leading-edge\nperformance in short-video understanding while maintaining robust\ngeneral-purpose vision-language abilities. The development of Keye-VL rests on\ntwo core pillars: a massive, high-quality dataset exceeding 600 billion tokens\nwith a strong emphasis on video, and an innovative training recipe. This recipe\nfeatures a four-stage pre-training process for solid vision-language alignment,\nfollowed by a meticulous two-phase post-training process. The first\npost-training stage enhances foundational capabilities like instruction\nfollowing, while the second phase focuses on stimulating advanced reasoning. In\nthis second phase, a key innovation is our five-mode ``cold-start'' data\nmixture, which includes ``thinking'', ``non-thinking'', ``auto-think'', ``think\nwith image'', and high-quality video data. This mixture teaches the model to\ndecide when and how to reason. Subsequent reinforcement learning (RL) and\nalignment steps further enhance these reasoning capabilities and correct\nabnormal model behaviors, such as repetitive outputs. To validate our approach,\nwe conduct extensive evaluations, showing that Keye-VL achieves\nstate-of-the-art results on public video benchmarks and remains highly\ncompetitive on general image-based tasks (Figure 1). Furthermore, we develop\nand release the KC-MMBench, a new benchmark tailored for real-world\nshort-video scenarios, where Keye-VL shows a significant advantage.",
+    "authors": [
+      "Kwai Keye Team",
+      "Biao Yang",
+      "Bin Wen",
+      "Changyi Liu",
+      "Chenglong Chu",
+      "Chengru Song",
+      "Chongling Rao",
+      "Chuan Yi",
+      "Da Li",
+      "Dunju Zang",
+      "Fan Yang",
+      "Guorui Zhou",
+      "Hao Peng",
+      "Haojie Ding",
+      "Jiaming Huang",
+      "Jiangxia Cao",
+      "Jiankang Chen",
+      "Jingyun Hua",
+      "Jin Ouyang",
+      "Kaibing Chen",
+      "Kaiyu Jiang",
+      "Kaiyu Tang"
+    ],
+    "likes": 108,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01949",
+    "date_collected": "2025-07-06T07:06:59.979914+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "Kwai Keye-VL 기술 보고서",
+      "abstract": "다중 모달 대형 언어 모델(MLLMs)은 정적 이미지에서 놀라운 성능을 보이지만, 현재의 디지턀 랜드스케이프에서 주요한 매체인 동적이고 정보 밀집형 단편 영상을 이해하는 데 한계가 있습니다. 이러한 간극을 메우기 위해, 저희는 Kwai Keye-VL을 소개합니다. 이는 80억 개 파라미터의 다중 모달 기초 모델로, 우수한 단편 영상 이해 성능을 발휘하면서도 견고한 일반적인 비전-언어 능력을 유지합니다."
+    },
+    "summary": "1. Kwai Keye-VL은 동적이고 정보 밀집한 단편 영상을 이해하는 데 뛰어난 성능을 발휘하는 80억 개 파라미터의 다중 모달 기초 모델이며, 이는 6000억 토큰을 넘는 대규모 고품질 데이터셋과 혁신적인 훈련 레시피에 기반합니다.\n2. 훈련 레시피에는 시각-언어 정렬을 위한 4단계의 사전 훈련 과정이 포함되어 있고, 이어서 기초 기능 강화를 위한 첫 번째 사후 훈련 단계와 고급 추론을 위한 두 번째 단계가 있습니다. 특히, 두 번째 단계에서는 \"추론\", \"비추론\", \"자동 추론\", \"이미지와 함께 추론\", 고품질 비디오 데이터를 포함하는 5가지 모드의 \"콜드 스타트\" 데이터 혼합이 중요한 혁신입니다.\n3. Keye-VL은 공개 비디오 벤치마크에서 최고 수준의 결과를 달성하며 일반 이미지 기반 작업에서도 경쟁력을 유지합니다. 또한, 우리는 실제 단편 영상 시나리오에 적합한 새로운 벤치마크 KC-MMBench를 개발하고 공개했으며, Keye-VL은 큰 장점을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "LongAnimation: Long Animation Generation with Dynamic Global-Local\n  Memory",
+    "abstract": "Animation colorization is a crucial part of real animation industry\nproduction. Long animation colorization has high labor costs. Therefore,\nautomated long animation colorization based on the video generation model has\nsignificant research value. Existing studies are limited to short-term\ncolorization. These studies adopt a local paradigm, fusing overlapping features\nto achieve smooth transitions between local segments. However, the local\nparadigm neglects global information, failing to maintain long-term color\nconsistency. In this study, we argue that ideal long-term color consistency can\nbe achieved through a dynamic global-local paradigm, i.e., dynamically\nextracting global color-consistent features relevant to the current generation.\nSpecifically, we propose LongAnimation, a novel framework, which mainly\nincludes a SketchDiT, a Dynamic Global-Local Memory (DGLM), and a Color\nConsistency Reward. The SketchDiT captures hybrid reference features to support\nthe DGLM module. The DGLM module employs a long video understanding model to\ndynamically compress global historical features and adaptively fuse them with\nthe current generation features. To refine the color consistency, we introduce\na Color Consistency Reward. During inference, we propose a color consistency\nfusion to smooth the video segment transition. Extensive experiments on both\nshort-term (14 frames) and long-term (average 500 frames) animations show the\neffectiveness of LongAnimation in maintaining short-term and long-term color\nconsistency for open-domain animation colorization task. The code can be found\nat https://cn-makers.github.io/long_animation_web/.",
+    "authors": [
+      "Nan Chen",
+      "Mengqi Huang",
+      "Yihao Meng",
+      "Zhendong Mao"
+    ],
+    "likes": 67,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01945",
+    "date_collected": "2025-07-06T07:06:59.981017+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "다이내믹 글로벌-로컬 메모리를 활용한 롱 애니메이션 생성(LongAnimation: Long Animation Generation with Dynamic Global-Local Memory)",
+      "abstract": "애니메이션 컬러화는 실제 애니메이션 산업 제작의 중요 부분이다. 긴 애니메이션 컬러화는 높은 노동 비용을 요구한다. 따라서 비디오 생성 모델을 기반으로 하는 자동화된 긴 애니메이션 컬러화는 중요한 연구 가치가 있다. 기존 연구들은 단기 컬러화에 제한되어 있다. 이러한 연구들은 지역적 패러다임을 채택하여 중첩된 특징을 융합하여 지역 세그먼트 간의 부드러운 전환을 달성한다. 그러나 지역적 패러다임은 글로벌 정보를 무시하여 장기적인 색상 일관성을 유지하지 못한다. 본 연구에서는 이상적인 장기적인 색상 일관성은 현재 생성과 관련이 있는 글로벌 색상 일관 특징을 동적으로 추출하는 다이내믹 글로벌-로컬 패러다임을 통해 달성할 수 있다고 주장한다. 구체적으로, 우리는 SketchDiT, Dynamic Global-Local Memory (DGLM), Color Consistency Reward를 주로 포함하는 새로운 LongAnimation 프레임워크를 제안한다. SketchDiT는 DGLM 모듈을 지원하기 위해 혼합 참조 기능을 캡처한다. DGLM 모듈은 긴 비디오 이해 모델을 채택하여 글로벌 역사적 특징을 동적으로 압축하고 현재 생성 특징과 적응적으로 융합한다. 색상 일관성을 개선하기 위해 Color Consistency Reward를 도입한다. 추론 중에는 비디오 세그먼트 전환을 부드럽게 하는 색상 일관성 융합을 제안한다. 짧은 기간(14프레임)과 장기(평균 500프레임) 애니메이션 두 가지에 대한 방대한 실험은 LongAnimation이 오픈 도메인 애니메이션 컬러화 작업의 단기와 장기 색상 일관성을 유지하는 데 효과적임을 보여준다. 코드는 https://cn-makers.github.io/long_animation_web/에서 확인할 수 있다."
+    },
+    "summary": "1. 기존 연구들이 지역적 정보에만 의존하여 장기적인 색상 일관성을 유지하지 못하는 문제를 해결하기 위해 LongAnimation 프레임워크를 제안하였다.\n2. LongAnimation은 다이내믹 글로벌-로컬 메모리를 활용하여 현재 생성과 관련된 글로벌 색상 일관 특징을 동적으로 추출하여 색상 일관성을 개선한다.\n3. 실험 결과는 LongAnimation이 단기와 장기 애니메이션에서 색상 일관성을 효과적으로 유지하는 데 성공했음을 입증하며, 이는 오픈 도메인 애니메이션 컬러화 작업에 중요한 기여를 한다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "WebSailor: Navigating Super-human Reasoning for Web Agent",
+    "abstract": "Transcending human cognitive limitations represents a critical frontier in\nLLM training. Proprietary agentic systems like DeepResearch have demonstrated\nsuperhuman capabilities on extremely complex information-seeking benchmarks\nsuch as BrowseComp, a feat previously unattainable. We posit that their success\nhinges on a sophisticated reasoning pattern absent in open-source models: the\nability to systematically reduce extreme uncertainty when navigating vast\ninformation landscapes. Based on this insight, we introduce WebSailor, a\ncomplete post-training methodology designed to instill this crucial capability.\nOur approach involves generating novel, high-uncertainty tasks through\nstructured sampling and information obfuscation, RFT cold start, and an\nefficient agentic RL training algorithm, Duplicating Sampling Policy\nOptimization (DUPO). With this integrated pipeline, WebSailor significantly\noutperforms all opensource agents in complex information-seeking tasks,\nmatching proprietary agents' performance and closing the capability gap.",
+    "authors": [
+      "Kuan Li",
+      "Zhongwang Zhang",
+      "Huifeng Yin",
+      "Liwen Zhang",
+      "Litu Ou",
+      "Jialong Wu",
+      "Wenbiao Yin",
+      "Baixuan Li",
+      "Zhengwei Tao",
+      "Xinyu Wang",
+      "Weizhou Shen",
+      "Junkai Zhang",
+      "Dingchu Zhang",
+      "Xixi Wu",
+      "Yong Jiang",
+      "Ming Yan",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "likes": 62,
+    "published_date": "Jul 3",
+    "url": "https://huggingface.co/papers/2507.02592",
+    "date_collected": "2025-07-06T07:06:59.982747+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "웹 에이전트를 위한 초인적 추론 탐색: WebSailor",
+      "abstract": "인간의 인지적 한계를 넘어서는 것은 LLM(대규모 언어 모델) 훈련에서 중요한 최전선을 대표한다. DeepResearch와 같은 전용 에이전트 시스템은 BrowseComp와 같은 매우 복잡한 정보 탐색 벤치마크에서 초인적인 능력을 보여주어 이전에는 불가능했던 성취를 이루었다. 이들의 성공은 오픈 소스 모델에 없는 정교한 추론 패턴에 달려있음을 주장한다: 방대한 정보 영역을 탐색할 때 극단적 불확실성을 체계적으로 줄일 수 있는 능력. 이 통찰력을 바탕으로 이 중요한 능력을 심어주기 위한 완전한 후 훈련 방법론인 WebSailor를 소개한다. 저희의 접근 방식은 새로운 고불확실성 작업을 생성하기 위해 구조화된 샘플링과 정보 난해화, RFT 콜드 스타트, 효율적인 에이전트 강화학습 훈련 알고리즘인 'Duplicating Sampling Policy Optimization (DUPO)'을 포함한다. 이 통합된 파이프라인을 통해 WebSailor는 복잡한 정보탐색 작업에서 오픈 소스 에이전트들을 크게 앞선 성과를 보여주며, 전용 에이전트의 성능에 필적하여 능력 차이를 좁힌다."
+    },
+    "summary": "1. LLM 훈련에서 초인적 추론 능력이 중요한데, WebSailor는 오픈 소스 모델에서 부재한 정교한 추론 패턴을 도입하여 극단적 불확실성을 줄이는 능력을 훈련시키는 방법론이다.\n2. WebSailor의 접근 방식은 새로운 고불확실성 작업 생성, 구조화된 샘플링 및 정보 난해화, RFT 콜드 스타트, 그리고 'DUPO'라는 강화학습 알고리즘을 활용하여 나타난다.\n3. WebSailor는 복잡한 정보 탐색 작업에서 오픈 소스 에이전트들을 앞선 성과로 이끄는데, 이를 통해 전용 에이전트의 성능과 능력 갭을 줄이는 것에 성공한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing",
+    "abstract": "We present BlenderFusion, a generative visual compositing framework that\nsynthesizes new scenes by recomposing objects, camera, and background. It\nfollows a layering-editing-compositing pipeline: (i) segmenting and converting\nvisual inputs into editable 3D entities (layering), (ii) editing them in\nBlender with 3D-grounded control (editing), and (iii) fusing them into a\ncoherent scene using a generative compositor (compositing). Our generative\ncompositor extends a pre-trained diffusion model to process both the original\n(source) and edited (target) scenes in parallel. It is fine-tuned on video\nframes with two key training strategies: (i) source masking, enabling flexible\nmodifications like background replacement; (ii) simulated object jittering,\nfacilitating disentangled control over objects and camera. BlenderFusion\nsignificantly outperforms prior methods in complex compositional scene editing\ntasks.",
+    "authors": [
+      "Jiacheng Chen",
+      "Ramin Mehran",
+      "Xuhui Jia",
+      "Saining Xie",
+      "Sanghyun Woo"
+    ],
+    "likes": 58,
+    "published_date": "Jun 20",
+    "url": "https://huggingface.co/papers/2506.17450",
+    "date_collected": "2025-07-06T07:06:59.983866+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "BlenderFusion: 3D-기반 시각 편집 및 생성적 합성",
+      "abstract": "본 연구에서는 객체, 카메라, 배경을 재구성하여 새로운 장면을 합성하는 생성적 시각 합성 프레임워크인 BlenderFusion을 제안합니다. 이는 레이어링-편집-합성 파이프라인을 따릅니다. 시각적 입력을 편집 가능한 3D 엔티티로 분할하고 변환하는 과정(레이어링), Blender에서 3D-기반 제어로 편집하는 과정(편집), 생성적 컴포지터를 사용하여 일관된 장면으로 퓨징하는 과정(합성). 저희의 생성적 컴포지터는 사전 훈련된 확산 모델을 확장하여 원본(소스) 및 편집된(타겟) 장면을 병렬로 처리합니다. 두 가지 주요 훈련 전략인 소스 마스킹(배경 교체와 같은 유연한 수정 가능)과 시뮬레이션 객체 지터링(객체 및 카메라에 대한 분리된 제어 용이화)을 사용하여 비디오 프레임으로 미세 조정됩니다. BlenderFusion은 복합적인 합성 장면 편집 작업에서 이전 방법들을 현격히 능가합니다."
+    },
+    "summary": "1. BlenderFusion은 시각적 입력을 3D 개체로 분할하고 Blender에서 3D-기반 제어로 편집한 후, 생성적 컴포지터를 사용하여 장면을 합성함.\n2. 연구에서는 사전 훈련된 확산 모델을 확장하여 소스와 편집된 장면을 동시에 처리하며, 소스 마스킹과 시뮬레이션 객체 지터링을 이용한 훈련 전략을 채택함.\n3. BlenderFusion은 복잡한 합성적 장면 편집 작업에서 이전 방법들보다 우수한 성능을 보임.",
+    "categories": [
+      "Computer Vision",
+      "Generative Modeling"
+    ]
+  },
+  {
+    "title": "Ovis-U1 Technical Report",
+    "abstract": "In this report, we introduce Ovis-U1, a 3-billion-parameter unified model\nthat integrates multimodal understanding, text-to-image generation, and image\nediting capabilities. Building on the foundation of the Ovis series, Ovis-U1\nincorporates a diffusion-based visual decoder paired with a bidirectional token\nrefiner, enabling image generation tasks comparable to leading models like\nGPT-4o. Unlike some previous models that use a frozen MLLM for generation\ntasks, Ovis-U1 utilizes a new unified training approach starting from a\nlanguage model. Compared to training solely on understanding or generation\ntasks, unified training yields better performance, demonstrating the\nenhancement achieved by integrating these two tasks. Ovis-U1 achieves a score\nof 69.6 on the OpenCompass Multi-modal Academic Benchmark, surpassing recent\nstate-of-the-art models such as Ristretto-3B and SAIL-VL-1.5-2B. In\ntext-to-image generation, it excels with scores of 83.72 and 0.89 on the\nDPG-Bench and GenEval benchmarks, respectively. For image editing, it achieves\n4.00 and 6.42 on the ImgEdit-Bench and GEdit-Bench-EN, respectively. As the\ninitial version of the Ovis unified model series, Ovis-U1 pushes the boundaries\nof multimodal understanding, generation, and editing.",
+    "authors": [
+      "Guo-Hua Wang",
+      "Shanshan Zhao",
+      "Xinjie Zhang",
+      "Liangfu Cao",
+      "Pengxin Zhan",
+      "Lunhao Duan",
+      "Shiyin Lu",
+      "Minghao Fu",
+      "Xiaohao Chen",
+      "Jianshan Zhao",
+      "Yang Li",
+      "Qing-Guo Chen"
+    ],
+    "likes": 57,
+    "published_date": "Jun 29",
+    "url": "https://huggingface.co/papers/2506.23044",
+    "date_collected": "2025-07-06T07:06:59.985313+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "Ovis-U1 기술 보고서",
+      "abstract": "본 보고서에서는 멀티모달 이해, 텍스트-이미지 생성, 이미지 편집 기능을 통합한 30억 개 파라미터의 Ovis-U1을 소개합니다. Ovis 시리즈의 기반 위에 구축된 Ovis-U1은 확산 기반 시각 디코더와 양방향 토큰 리파이너를 결합하여 GPT-4o와 유사한 이미지 생성 작업을 수행합니다. 일부 이전 모델이 생성 작업에 동결된 MLLM을 사용하는 것과 달리, Ovis-U1은 언어 모델을 기반으로 시작하는 새로운 통합 훈련 방식을 활용합니다. 이에 통합 훈련은 이해 또는 생성 작업만을 훈련하는 것보다 더 나은 성능을 냅니다. Ovis-U1은 OpenCompass 멀티모달 학술 벤치마크에서 69.6의 점수를 기록하여 Ristretto-3B 및 SAIL-VL-1.5-2B와 같은 최근 최첨단 모델을 앞섭니다."
+    },
+    "summary": "1. Ovis-U1은 멀티모달 이해, 생성 및 편집에서 성능을 끌어올리며 GPT-4o와 비교 가능한 이미지 생성 작업을 수행합니다.\n2. Ovis-U1은 언어 모델을 기반으로 한 통합 훈련을 통해 이해 및 생성 작업을 통합하는데 성공하였고 좋은 성능을 보입니다.\n3. Ovis-U1은 다양한 벤치마크에서 우수한 점수를 기록하여 다양한 작업들에 강점을 보이며, 멀티모달 이해, 생성 및 편집 영역에서 진보된 모델입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Does Math Reasoning Improve General LLM Capabilities? Understanding\n  Transferability of LLM Reasoning",
+    "abstract": "Math reasoning has become the poster child of progress in large language\nmodels (LLMs), with new models rapidly surpassing human-level performance on\nbenchmarks like MATH and AIME. But as math leaderboards improve week by week,\nit is worth asking: do these gains reflect broader problem-solving ability or\njust narrow overfitting? To answer this question, we evaluate over 20\nopen-weight reasoning-tuned models across a broad suite of tasks, including\nmath, scientific QA, agent planning, coding, and standard\ninstruction-following. We surprisingly find that most models that succeed in\nmath fail to transfer their gains to other domains. To rigorously study this\nphenomenon, we conduct controlled experiments on Qwen3-14B models using\nmath-only data but different tuning methods. We find that reinforcement\nlearning (RL)-tuned models generalize well across domains, while supervised\nfine-tuning (SFT)-tuned models often forget general capabilities. Latent-space\nrepresentation and token-space distribution shift analyses reveal that SFT\ninduces substantial representation and output drift, while RL preserves\ngeneral-domain structure. Our results suggest a need to rethink standard\npost-training recipes, particularly the reliance on SFT-distilled data for\nadvancing reasoning models.",
+    "authors": [
+      "Maggie Huan",
+      "Yuetai Li",
+      "Tuney Zheng",
+      "Xiaoyu Xu",
+      "Seungone Kim",
+      "Minxin Du",
+      "Radha Poovendran",
+      "Graham Neubig",
+      "Xiang Yue"
+    ],
+    "likes": 50,
+    "published_date": "Jul 1",
+    "url": "https://huggingface.co/papers/2507.00432",
+    "date_collected": "2025-07-06T07:06:59.986607+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "수학 추론이 일반 LLM 능력을 향상하는가? LLM 추론의 전이 가능성 이해하기",
+      "abstract": "수학 추론은 대형 언어 모델(Large Language Models, LLMs)의 발전의 상징이 되었는데, 새로운 모델들은 MATH나 AIME와 같은 벤치마크에서 인간 수준의 성능을 빠르게 능가하고 있다. 그러나 주간별로 수학 리더보드가 개선됨에 따라, 이러한 향상은 보다 폭넓은 문제 해결 능력을 반영하는 것인지 아니면 좁은 과적합에 그치는 것인지 의문이다. 이러한 질문에 대답하기 위해, 수학, 과학적 질문 응답, 에이전트 계획, 코딩, 표준 지시사항 따르기 등 다양한 태스크를 포함하는 20개 이상의 오픈 가중치 추론 튜닝 모델을 평가한다. 우리는 놀랍게도, 수학에서 성공한 대부분의 모델이 이익을 다른 도메인으로 전이시키지 못하는 것을 발견했다. 이 현상을 철저히 연구하기 위해, 수학 전용 데이터를 사용하되 서로 다른 튜닝 방법을 사용하는 Qwen3-14B 모델에 대해 통제된 실험을 실시한다. 이러한 실험에서, 강화 학습(Reinforcement Learning, RL) 튜닝 모델이 도메인 간에 잘 일반화되는 반면, 지도 학습 세부 튜닝(Supervised Fine-Tuning, SFT) 모델은 종종 일반 능력을 잊어버린다. 잠재 공간 표현 및 토큰 공간 분포 변화 분석을 통해, SFT는 상당한 표현 및 출력 변화를 초래하는 반면 RL은 일반 도메인 구조를 보존하는 것으로 나타난다. 우리의 결과는 특히 추론 모델 발전을 위해 SFT-증류 데이터에 의존하는 표준 사후 훈련 레시피를 재고해야 한다는 필요성을 제안한다."
+    },
+    "summary": "1. 수학에서 성공한 대부분의 LLM 모델은 다른 도메인으로의 이익 이전에 실패한다.\n2. 강화 학습 튜닝 모델은 다른 도메인에서 일반화가 잘되는 반면, 지도 학습 세부 튜닝 모델은 종종 일반 능력을 잊어버린다.\n3. 토큰 공간 분포 분석을 통해, 지도 학습 세부 튜닝은 표현 및 출력 변화를 일으키지만, 강화 학습은 일반 도메인 구조를 보존하는 것으로 나타난다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with\n  TriMap Video Diffusion",
+    "abstract": "Recovering 3D structures with open-vocabulary scene understanding from 2D\nimages is a fundamental but daunting task. Recent developments have achieved\nthis by performing per-scene optimization with embedded language information.\nHowever, they heavily rely on the calibrated dense-view reconstruction\nparadigm, thereby suffering from severe rendering artifacts and implausible\nsemantic synthesis when limited views are available. In this paper, we\nintroduce a novel generative framework, coined LangScene-X, to unify and\ngenerate 3D consistent multi-modality information for reconstruction and\nunderstanding. Powered by the generative capability of creating more consistent\nnovel observations, we can build generalizable 3D language-embedded scenes from\nonly sparse views. Specifically, we first train a TriMap video diffusion model\nthat can generate appearance (RGBs), geometry (normals), and semantics\n(segmentation maps) from sparse inputs through progressive knowledge\nintegration. Furthermore, we propose a Language Quantized Compressor (LQC),\ntrained on large-scale image datasets, to efficiently encode language\nembeddings, enabling cross-scene generalization without per-scene retraining.\nFinally, we reconstruct the language surface fields by aligning language\ninformation onto the surface of 3D scenes, enabling open-ended language\nqueries. Extensive experiments on real-world data demonstrate the superiority\nof our LangScene-X over state-of-the-art methods in terms of quality and\ngeneralizability. Project Page: https://liuff19.github.io/LangScene-X.",
+    "authors": [
+      "Fangfu Liu",
+      "Hao Li",
+      "Jiawei Chi",
+      "Hanyang Wang",
+      "Minghui Yang",
+      "Fudong Wang",
+      "Yueqi Duan"
+    ],
+    "likes": 47,
+    "published_date": "Jul 3",
+    "url": "https://huggingface.co/papers/2507.02813",
+    "date_collected": "2025-07-06T07:06:59.987815+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "LangScene-X: TriMap 비디오 확산을 통해 일반화 가능한 3D 언어-포함 장면 재구성",
+      "abstract": "2D 이미지로부터 개방 어휘의 장면 이해를 통해 3D 구조를 복구하는 것은 기본적이지만 어려운 작업입니다. 최근 연구들은 임베디드 언어 정보를 활용하여 장면별 최적화를 수행함으로써 이를 달성했습니다. 그러나 이러한 방법들은 보통 밀도 뷰 재구성 패러다임에 의존하고 있어 제한된 뷰만 사용 가능할 때 심한 렌더링 아티팩트와 그럴듯하지 않은 의미 합성으로 고통받습니다. 이 논문에서는 재구성과 이해를 위해 3D 일관성 있는 다중 모달리티 정보를 통합 및 생성하는 소명적인 프레임워크인 LangScene-X를 소개합니다. 상세한 실험 결과는 우리의 LangScene-X가 품질과 일반화 성능 측면에서 최신 기술들을 압도한다고 입증합니다. 프로젝트 페이지: https://liuff19.github.io/LangScene-X."
+    },
+    "summary": "1. LangScene-X는 TriMap 비디오 확산 모델을 통해 3D 언어-포함 장면을 일반화할 수 있게 해주는데, 희소한 입력으로부터 모습, 기하학, 의미 정보를 생성함.\n2. Language Quantized Compressor (LQC)는 대규모 이미지 데이터셋으로 교육된 언어 내장을 효율적으로 부호화하여 장면 간 재훈련 없이 교차 장면 일반화를 가능케 함.\n3. LangScene-X는 언어 정보를 3D 장면 표면에 정렬하여 개방적인 언어 쿼리를 가능하게 하는 언어 표면 필드를 재구성함.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Depth Anything at Any Condition",
+    "abstract": "We present Depth Anything at Any Condition (DepthAnything-AC), a foundation\nmonocular depth estimation (MDE) model capable of handling diverse\nenvironmental conditions. Previous foundation MDE models achieve impressive\nperformance across general scenes but not perform well in complex open-world\nenvironments that involve challenging conditions, such as illumination\nvariations, adverse weather, and sensor-induced distortions. To overcome the\nchallenges of data scarcity and the inability of generating high-quality\npseudo-labels from corrupted images, we propose an unsupervised consistency\nregularization finetuning paradigm that requires only a relatively small amount\nof unlabeled data. Furthermore, we propose the Spatial Distance Constraint to\nexplicitly enforce the model to learn patch-level relative relationships,\nresulting in clearer semantic boundaries and more accurate details.\nExperimental results demonstrate the zero-shot capabilities of DepthAnything-AC\nacross diverse benchmarks, including real-world adverse weather benchmarks,\nsynthetic corruption benchmarks, and general benchmarks.\n  Project Page: https://ghost233lism.github.io/depthanything-AC-page\n  Code: https://github.com/HVision-NKU/DepthAnythingAC",
+    "authors": [
+      "Boyuan Sun",
+      "Modi Jin",
+      "Bowen Yin",
+      "Qibin Hou"
+    ],
+    "likes": 42,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01634",
+    "date_collected": "2025-07-06T07:06:59.988885+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "어떤 조건에서도 깊이를 예측하는 방법",
+      "abstract": "본 연구에서는 다양한 환경 조건에서 활용할 수 있는 단안 깊이 예측(DepthAnything-AC) 모델을 제안합니다. 이 모델은 조명 변화, 악천후, 센서로 인한 왜곡 등 복잡한 환경 조건에서도 우수한 성능을 발휘합니다. 본 연구에서는 손상된 이미지로부터 높은 품질의 의사 라벨을 생성할 수 없는 데이터 부족 문제와 새로운 미지도 학습 기법을 제안하여 이러한 도전에 대처합니다. 또한, 패치 수준의 상대적 관계를 명확히 학습하도록 모델을 명시적으로 강화하는 공간 거리 제약을 제안하여 의미 있는 경계와 정확한 디테일을 보여줍니다."
+    },
+    "summary": "1. 다양한 환경 조건에서 좋은 성능을 발휘하는 단안 깊이 예측(DepthAnything-AC) 모델을 제안합니다.\n2. 데이터 부족 문제와 높은 품질의 의사 라벨 생성 어려움을 해결하기 위해 미지도 학습 기법을 도입합니다.\n3. 공간 거리 제약을 통해 모델이 패치 수준의 관계를 명확히 학습하게 하여 결과물의 정확도를 향상시킵니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SciArena: An Open Evaluation Platform for Foundation Models in\n  Scientific Literature Tasks",
+    "abstract": "We present SciArena, an open and collaborative platform for evaluating\nfoundation models on scientific literature tasks. Unlike traditional benchmarks\nfor scientific literature understanding and synthesis, SciArena engages the\nresearch community directly, following the Chatbot Arena evaluation approach of\ncommunity voting on model comparisons. By leveraging collective intelligence,\nSciArena offers a community-driven evaluation of model performance on\nopen-ended scientific tasks that demand literature-grounded, long-form\nresponses. The platform currently supports 23 open-source and proprietary\nfoundation models and has collected over 13,000 votes from trusted researchers\nacross diverse scientific domains. We analyze the data collected so far and\nconfirm that the submitted questions are diverse, aligned with real-world\nliterature needs, and that participating researchers demonstrate strong\nself-consistency and inter-annotator agreement in their evaluations. We discuss\nthe results and insights based on the model ranking leaderboard. To further\npromote research in building model-based automated evaluation systems for\nliterature tasks, we release SciArena-Eval, a meta-evaluation benchmark based\non our collected preference data. The benchmark measures the accuracy of models\nin judging answer quality by comparing their pairwise assessments with human\nvotes. Our experiments highlight the benchmark's challenges and emphasize the\nneed for more reliable automated evaluation methods.",
+    "authors": [
+      "Yilun Zhao",
+      "Kaiyan Zhang",
+      "Tiansheng Hu",
+      "Sihong Wu",
+      "Ronan Le Bras",
+      "Taira Anderson",
+      "Jonathan Bragg",
+      "Joseph Chee Chang",
+      "Jesse Dodge",
+      "Matt Latzke",
+      "Yixin Liu",
+      "Charles McGrady",
+      "Xiangru Tang",
+      "Zihang Wang",
+      "Chen Zhao",
+      "Hannaneh Hajishirzi",
+      "Doug Downey",
+      "Arman Cohan"
+    ],
+    "likes": 39,
+    "published_date": "Jul 1",
+    "url": "https://huggingface.co/papers/2507.01001",
+    "date_collected": "2025-07-06T07:06:59.990531+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "SciArena: 과학문헌 작업을 위한 기초 모델 평가를 위한 개방형 플랫폼",
+      "abstract": "SciArena은 과학문헌 작업에 대한 기초 모델을 평가하기 위한 개방적이고 협업적인 플랫폼을 제안합니다. SciArena은 학술 문헌 이해와 종합을 위한 전통적인 평가대비, 연구 커뮤니티를 직접 참여시키며, Chatbot Arena 평가 방법을 따른 모델 비교에 대한 커뮤니티 투표가 이루어집니다."
+    },
+    "summary": "1. SciArena은 학술 문헌 작업에 대한 23가지의 기초 모델을 지원하며, 연구 커뮤니티로부터 1만 3천 개 이상의 투표를 수집하여 모델 성능을 평가합니다.\n2. SciArena-Eval을 발표하여, 획득한 선호 데이터를 기반으로 모델의 정확도를 측정하는 메타평가 기준을 제시하며 실험 결과가 평가 기준의 어려움을 강조함과 함께 자동화 평가 방법에 대한 신뢰성 확보의 필요성을 강조합니다.\n3. 연구 결과 및 모델 랭킹 1위 표를 기반으로 결과 및 통찰을 논의합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

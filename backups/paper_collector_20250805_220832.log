@@ -1,0 +1,135 @@
+=== Paper Collection Started at Mon Aug  4 22:08:17 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W32
+URL: https://huggingface.co/papers/week/2025-W32
+Found 10 papers in weekly view
+Fetching likes for: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Fetching likes for: PixNerd: Pixel Neural Field Diffusion
+Fetching likes for: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Fetching likes for: 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding
+Fetching likes for: SWE-Exp: Experience-Driven Software Issue Resolution
+Fetching likes for: Multimodal Referring Segmentation: A Survey
+Fetching likes for: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution
+Fetching likes for: SpA2V: Harnessing Spatial Auditory Cues for Audio-driven Spatially-aware
+  Video Generation
+Fetching likes for: Learning an Efficient Multi-Turn Dialogue Evaluator from Multiple Judges
+Fetching likes for: MCIF: Multimodal Crosslingual Instruction-Following Benchmark from
+  Scientific Talks
+Selected top 10 papers by likes:
+1. Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models (35 likes)
+2. PixNerd: Pixel Neural Field Diffusion (31 likes)
+3. Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training (14 likes)
+4. 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding (6 likes)
+5. SWE-Exp: Experience-Driven Software Issue Resolution (6 likes)
+6. Multimodal Referring Segmentation: A Survey (5 likes)
+7. SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution (4 likes)
+8. SpA2V: Harnessing Spatial Auditory Cues for Audio-driven Spatially-aware
+  Video Generation (3 likes)
+9. Learning an Efficient Multi-Turn Dialogue Evaluator from Multiple Judges (3 likes)
+10. MCIF: Multimodal Crosslingual Instruction-Following Benchmark from
+  Scientific Talks (3 likes)
+Found abstract: Diffusion Large Language Models (DLLMs) are emerging as a powerful
+alternative to the dominant Autor...
+Processed paper: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Found abstract: The current success of diffusion transformers heavily depends on the
+compressed latent space shaped ...
+Processed paper: PixNerd: Pixel Neural Field Diffusion
+Found abstract: General AI Agents are increasingly recognized as foundational frameworks for
+the next generation of ...
+Processed paper: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Found abstract: Large vision-language models (VLMs) have made significant strides in 2D
+visual understanding tasks, ...
+Processed paper: 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding
+Found abstract: Recent advances in large language model (LLM) agents have shown remarkable
+progress in software issu...
+Processed paper: SWE-Exp: Experience-Driven Software Issue Resolution
+Found abstract: Multimodal referring segmentation aims to segment target objects in visual
+scenes, such as images, v...
+Processed paper: Multimodal Referring Segmentation: A Survey
+Found abstract: Issue resolution has made remarkable progress thanks to the advanced
+reasoning capabilities of large...
+Processed paper: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution
+Found abstract: Audio-driven video generation aims to synthesize realistic videos that align
+with input audio record...
+Processed paper: SpA2V: Harnessing Spatial Auditory Cues for Audio-driven Spatially-aware
+  Video Generation
+Found abstract: Evaluating the conversational abilities of large language models (LLMs)
+remains a challenging task. ...
+Processed paper: Learning an Efficient Multi-Turn Dialogue Evaluator from Multiple Judges
+Found abstract: Recent advances in large language models have catalyzed the development of
+multimodal LLMs (MLLMs) t...
+Processed paper: MCIF: Multimodal Crosslingual Instruction-Following Benchmark from
+  Scientific Talks
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: PixNerd: Pixel Neural Field Diffusion
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: SWE-Exp: Experience-Driven Software Issue Resolution
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Multimodal Referring Segmentation: A Survey
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: SpA2V: Harnessing Spatial Auditory Cues for Audio-driven Spatially-aware
+  Video Generation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Learning an Efficient Multi-Turn Dialogue Evaluator from Multiple Judges
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: MCIF: Multimodal Crosslingual Instruction-Following Benchmark from
+  Scientific Talks
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W32.json...
+
+Updating Notion database...
+Creating new paper: 고정이 넘어, 변수 길이 디노이징을 통한 확산 대형 언어 모델
+Creating new paper: 픽셀 신경장 필드 확산
+Creating new paper: 인지적 커널-프로: 심층 연구 에이전트 및 에이전트 기반 모델 훈련을 위한 프레임워크
+Creating new paper: 3D-R1: 통합된 장면 이해를 위한 3D VLMs의 추론 강화
+Creating new paper: SWE-Exp: 경험 중심 소프트웨어 이슈 해결
+Creating new paper: 다중 모달 참조 세분화: 조사
+Creating new paper: 소프트웨어 문제 해결을 위한 경쟁적 다중 에이전트 토론: SWE-Debate
+Creating new paper: 공간 청각 단서 활용을 통한 오디오 주도 공간 인식 비디오 생성
+Creating new paper: 여러 심사자로부터 효율적인 다중 턴 대화평가기 학습
+Creating new paper: 과학적 발표로부터 시작된 다국어 다중 모달 인스트럭션 따르기 벤치마크인 MCIF
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Aug  4 22:10:06 UTC 2025 ===
+

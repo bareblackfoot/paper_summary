@@ -1,0 +1,115 @@
+=== Paper Collection Started at Tue Mar 24 22:13:51 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W13
+URL: https://huggingface.co/papers/week/2026-W13
+Found 10 papers in weekly view
+Fetching likes for: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Fetching likes for: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Fetching likes for: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Fetching likes for: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Fetching likes for: LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning
+Fetching likes for: Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs
+Fetching likes for: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Fetching likes for: VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding
+Fetching likes for: TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation
+Fetching likes for: SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning
+Selected top 10 papers by likes:
+1. Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models (107 likes)
+2. HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning (100 likes)
+3. Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models (92 likes)
+4. Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model (88 likes)
+5. LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning (62 likes)
+6. Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs (54 likes)
+7. OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis (49 likes)
+8. VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding (45 likes)
+9. TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation (43 likes)
+10. SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning (38 likes)
+Found abstract: Video--based world models have emerged along two dominant paradigms: video generation and 3D reconst...
+Processed paper: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Found abstract: VLMs show strong multimodal capabilities, but they still struggle with fine-grained vision-language ...
+Processed paper: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Found abstract: Distilled autoregressive (AR) video models enable efficient streaming generation but frequently misa...
+Processed paper: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Found abstract: We present daVinci-MagiHuman, an open-source audio-video generative foundation model for human-centr...
+Processed paper: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Found abstract: We introduce LongCat-Flash-Prover, a flagship 560-billion-parameter open-source Mixture-of- Experts ...
+Processed paper: LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning
+Found abstract: Vision-language models (VLMs) typically process images at a native high-resolution, forcing a trade-...
+Processed paper: Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs
+Found abstract: Training deep research agents requires long-horizon trajectories that interleave search, evidence ag...
+Processed paper: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Found abstract: Long video understanding remains challenging for multimodal large language models (MLLMs) due to lim...
+Processed paper: VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding
+Found abstract: Vision-language models (VLMs) have shown promise in earth observation (EO), yet they struggle with t...
+Processed paper: TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation
+Found abstract: Despite the remarkable success of large-scale pre-trained image representation models (i.e., vision ...
+Processed paper: SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 100  ->  94
+Update date_collected: 2026-03-25T07:14:01.088656+09:00  ->  2026-03-24T07:14:05.022679+09:00
+
+Processing paper 3/10
+Title: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Paper already exists, checking if translation is complete...
+Update likes: 92  ->  83
+Update date_collected: 2026-03-25T07:14:01.090278+09:00  ->  2026-03-24T07:14:05.024394+09:00
+
+Processing paper 4/10
+Title: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  42
+Update date_collected: 2026-03-25T07:14:01.101408+09:00  ->  2026-03-24T07:14:05.025966+09:00
+
+Processing paper 10/10
+Title: SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W13.json...
+
+Updating Notion database...
+Creating new paper: 옴니-월드벤치: 세계 모델링을 위한 종합적 상호작용 중심 평가를 향하여
+Updating paper: HopChain: 일반화 가능한 비전-언어 추론을 위한 다중 점프 데이터 합성 (likes: 94 -> 100)
+Updating paper: 아스트롤라브: 정제된 자기회귀 비디오 모델을 위한 전진 과정 강화학습 (likes: 83 -> 92)
+Creating new paper: 단순함으로 속도 낮추다: 빠른 오디오-비디오 생성 기반 모델을 위한 단일 스트림 아키텍처
+Creating new paper: LongCat-Flash-Prover: 에이전트 툴 통합 강화학습을 통한 네이티브 형식적 추론의 발전
+Creating new paper: 중요한 곳을 보세요: 효율적인 VLMs를 위한 고해상도 자르기 검색
+Creating new paper: 오픈리서처: 장기간 깊은 연구 궤적 합성을 위한 완전히 오픈 파이프라인
+Creating new paper: 비디오탐정: 장 영상 이해를 위한 내외부 쿼리 및 내재적 연관성을 통한 단서 추적
+Updating paper: TerraScope: 지구 관측을 위한 픽셀 기반 시각적 추론 (likes: 42 -> 43)
+Creating new paper: 공간부스트: 언어로 이끄는 추론을 통한 시각적 표현 강화
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Mar 24 22:16:40 UTC 2026 ===
+

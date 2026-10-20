@@ -1,0 +1,121 @@
+=== Paper Collection Started at Fri May 22 22:28:47 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W21
+URL: https://huggingface.co/papers/week/2026-W21
+Found 10 papers in weekly view
+Fetching likes for: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Fetching likes for: Code as Agent Harness
+Fetching likes for: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Fetching likes for: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
+Fetching likes for: Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?
+Fetching likes for: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining
+Fetching likes for: PhysBrain 1.0 Technical Report
+Fetching likes for: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
+Fetching likes for: Mega-ASR: Towards In-the-wild^2 Speech Recognition via Scaling up Real-world Acoustic Simulation
+Fetching likes for: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Selected top 10 papers by likes:
+1. CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence (261 likes)
+2. Code as Agent Harness (194 likes)
+3. Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information (186 likes)
+4. TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation (162 likes)
+5. Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality? (151 likes)
+6. Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining (142 likes)
+7. PhysBrain 1.0 Technical Report (139 likes)
+8. DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards (124 likes)
+9. Mega-ASR: Towards In-the-wild^2 Speech Recognition via Scaling up Real-world Acoustic Simulation (124 likes)
+10. SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution (122 likes)
+Found abstract: Multimodal Large Language Models (MLLMs) have significantly advanced document understanding, yet cur...
+Processed paper: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Found abstract: Recent large language models (LLMs) have demonstrated strong capabilities in understanding and gener...
+Processed paper: Code as Agent Harness
+Found abstract: On-policy self-distillation, where a student is pulled toward a copy of itself conditioned on privil...
+Processed paper: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Found abstract: Public transit route planning traditionally depends on structured map infrastructure and complex rou...
+Processed paper: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
+Found abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed in human-facing roles where perso...
+Processed paper: Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?
+Found abstract: Recent advances in multimodal large language models have driven growing interest in graphical user i...
+Processed paper: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining
+Found abstract: Vision-language-action models have advanced rapidly, but robot trajectories alone provide limited co...
+Processed paper: PhysBrain 1.0 Technical Report
+Found abstract: Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improvi...
+Processed paper: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
+Found abstract: Despite rapid advances in automatic speech recognition (ASR) and large audio-language models, robust...
+Processed paper: Mega-ASR: Towards In-the-wild^2 Speech Recognition via Scaling up Real-world Acoustic Simulation
+Found abstract: Long-horizon LLM agents leave traces that could become reusable experience, but raw trajectories are...
+Processed paper: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 261  ->  261
+Update date_collected: 2026-05-23T07:28:58.103483+09:00  ->  2026-05-22T07:35:43.705624+09:00
+
+Processing paper 2/10
+Title: Code as Agent Harness
+Paper already exists, checking if translation is complete...
+Update likes: 194  ->  186
+Update date_collected: 2026-05-23T07:28:58.105915+09:00  ->  2026-05-22T07:35:43.708728+09:00
+
+Processing paper 3/10
+Title: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Paper already exists, checking if translation is complete...
+Update likes: 186  ->  118
+Update date_collected: 2026-05-23T07:28:58.107740+09:00  ->  2026-05-22T07:35:43.715862+09:00
+
+Processing paper 4/10
+Title: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: PhysBrain 1.0 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 139  ->  138
+Update date_collected: 2026-05-23T07:28:58.115351+09:00  ->  2026-05-22T07:35:43.711359+09:00
+
+Processing paper 8/10
+Title: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Mega-ASR: Towards In-the-wild^2 Speech Recognition via Scaling up Real-world Acoustic Simulation
+Paper already exists, checking if translation is complete...
+Update likes: 124  ->  109
+Update date_collected: 2026-05-23T07:28:58.118772+09:00  ->  2026-05-22T07:35:43.720665+09:00
+
+Processing paper 10/10
+Title: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Paper already exists, checking if translation is complete...
+Update likes: 122  ->  120
+Update date_collected: 2026-05-23T07:28:58.120470+09:00  ->  2026-05-22T07:35:43.713550+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W21.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 신뢰할 수 있는 문서 지능을 위한 근거 소속성 벤치마킹
+Updating paper: 코드를 에이전트 하네스로 (likes: 186 -> 194)
+Updating paper: 'Anti-Self-Distillation을 통한 추론 강화학습을 위한 점별 상호 정보량 분석' (likes: 118 -> 186)
+Creating new paper: TransitLM: 지도 없는 대중교통 경로 생성을 위한 대규모 데이터셋과 평가
+Creating new paper: 편견 없는 인식: MLLM이 인격의 초안을 넘어설 수 있을까?
+Creating new paper: 비디오2GUI: 일반화된 GUI 에이전트 사전학습을 위한 대규모 상호작용 궤적 합성
+Updating paper: PhysBrain 1.0 기술 보고서 (likes: 138 -> 139)
+Creating new paper: DelTA: 강화 학습을 위한 식별적 토큰 크레딧 할당
+Updating paper: 야외 환경에서의 음성 인식을 위한 Mega-ASR: 실제 환경 음향 시뮬레이션 확장을 통한 접근 (likes: 109 -> 124)
+Updating paper: SkillsVote: 에이전트 스킬의 수집부터 권장, 진화까지의 라이프사이클 지도 (likes: 120 -> 122)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri May 22 22:30:38 UTC 2026 ===
+

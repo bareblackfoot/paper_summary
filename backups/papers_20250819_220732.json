@@ -1,0 +1,313 @@
+[
+  {
+    "title": "SSRL: Self-Search Reinforcement Learning",
+    "abstract": "We investigate the potential of large language models (LLMs) to serve as\nefficient simulators for agentic search tasks in reinforcement learning (RL),\nthereby reducing dependence on costly interactions with external search\nengines. To this end, we first quantify the intrinsic search capability of LLMs\nvia structured prompting and repeated sampling, which we term Self-Search. Our\nresults reveal that LLMs exhibit strong scaling behavior with respect to the\ninference budget, achieving high pass@k on question-answering benchmarks,\nincluding the challenging BrowseComp task. Building on these observations, we\nintroduce Self-Search RL (SSRL), which enhances LLMs' Self-Search capability\nthrough format-based and rule-based rewards. SSRL enables models to iteratively\nrefine their knowledge utilization internally, without requiring access to\nexternal tools. Empirical evaluations demonstrate that SSRL-trained policy\nmodels provide a cost-effective and stable environment for search-driven RL\ntraining, reducing reliance on external search engines and facilitating robust\nsim-to-real transfer. We draw the following conclusions: 1) LLMs possess world\nknowledge that can be effectively elicited to achieve high performance; 2) SSRL\ndemonstrates the potential of leveraging internal knowledge to reduce\nhallucination; 3) SSRL-trained models integrate seamlessly with external search\nengines without additional effort. Our findings highlight the potential of LLMs\nto support more scalable RL agent training.",
+    "authors": [
+      "Yuchen Fan",
+      "Kaiyan Zhang",
+      "Heng Zhou",
+      "Yuxin Zuo",
+      "Yanxu Chen",
+      "Yu Fu",
+      "Xinwei Long",
+      "Xuekai Zhu",
+      "Che Jiang",
+      "Yuchen Zhang",
+      "Li Kang",
+      "Gang Chen",
+      "Cheng Huang",
+      "Zhizhou He",
+      "Bingning Wang",
+      "Lei Bai",
+      "Ning Ding",
+      "Bowen Zhou"
+    ],
+    "likes": 56,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10874",
+    "date_collected": "2025-08-19T07:07:45.544009+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "SSRL: Self-Search Reinforcement Learning",
+      "abstract": "우리는 대규모 언어 모델(LLMs)이 보상 학습(RL)에서 에이전트 검색 작업의 효율적인 시뮬레이터로 작용할 잠재력을 탐구하여 외부 검색 엔진과의 비용이 많이 드는 상호작용에 대한 의존도를 줄일 수 있는지 조사합니다. 이를 위해, 우리는 LLMs의 고유한 탐색 능력을 구조화된 프롬프팅과 반복 샘플링을 통해 측정하여 Self-Search로 명명합니다. 결과는, LLMs가 추론 예산에 대해 강력한 스케일링 행동을 나타내며, 질의 응답 벤치마크에서 뛰어난 성과를 보이는 것을 보여줍니다. 이러한 관찰을 기반으로, 우리는 포맷 기반 및 규칙 기반 보상을 통해 LLMs의 Self-Search 능력을 강화하는 Self-Search RL(SSRL)을 소개합니다. SSRL은 모델이 외부 도구에 액세스하지 않고 내부적으로 지식 활용을 반복적으로 개선할 수 있게 합니다. 실험평가 결과는, SSRL로 훈련된 정책 모델이 검색 주도형 RL 훈련을 위한 비용 효율적이고 안정적인 환경을 제공하여 외부 검색 엔진에 대한 의존도를 줄이고 견고한 시뮬레이션-실제 전이를 용이하게 합니다. 우리는 다음 결론을 도출합니다: 1) LLMs는 뛰어난 성능을 달성하기 위해 효과적으로 추출할 수 있는 세계 지식을 보유하고 있습니다. 2) SSRL은 내부 지식을 활용하여 환각을 줄이는 잠재력을 보여줍니다. 3) SSRL로 훈련된 모델은 추가적인 노력없이 외부 검색 엔진과 원활하게 통합됩니다. 우리의 연구 결과는 LLMs가 더 확장 가능한 RL 에이전트 훈련을 지원할 잠재력을 강조합니다."
+    },
+    "summary": "1. LLMs는 고유한 자연어 모델로써 높은 성능을 달성하기 위해 활용될 수 있으며, Self-Search RL(SSRL)은 내부 지식을 활용하여 환각을 줄이고 외부 검색 엔진과 효율적으로 통합될 수 있음을 입증합니다.\n2. SSRL은 LLMs의 세계 지식을 효과적으로 추출하여 안정적이고 비용 효과적인 검색 주도형 RL 훈련을 가능하게 합니다.\n3. SSRL로 훈련된 모델은 외부 검색 엔진에 대한 의존도를 줄이고 견고한 시뮬레이션-실제 전이를 용이하게 하면서도 높은 성능을 발휘합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Thyme: Think Beyond Images",
+    "abstract": "Following OpenAI's introduction of the ``thinking with images'' concept,\nrecent efforts have explored stimulating the use of visual information in the\nreasoning process to enhance model performance in perception and reasoning\ntasks. However, to the best of our knowledge, no open-source work currently\noffers a feature set as rich as proprietary models (O3), which can perform\ndiverse image manipulations and simultaneously enhance logical reasoning\ncapabilities through code. In this paper, we make a preliminary attempt in this\ndirection by introducing Thyme (Think Beyond Images), a novel paradigm for\nenabling MLLMs to transcend existing ``think with images'' approaches by\nautonomously generating and executing diverse image processing and\ncomputational operations via executable code. This approach not only\nfacilitates a rich, on-the-fly set of image manipulations (e.g., cropping,\nrotation, contrast enhancement) but also allows for mathematical computations,\nall while maintaining high autonomy in deciding when and how to apply these\noperations. We activate this capability through a two-stage training strategy:\nan initial SFT on a curated dataset of 500K samples to teach code generation,\nfollowed by a RL phase to refine decision-making. For the RL stage, we manually\ncollect and design high-resolution question-answer pairs to increase the\nlearning difficulty, and we propose GRPO-ATS (Group Relative Policy\nOptimization with Adaptive Temperature Sampling), an algorithm that applies\ndistinct temperatures to text and code generation to balance reasoning\nexploration with code execution precision. We conduct extensive experimental\nanalysis and ablation studies. Comprehensive evaluations on nearly 20\nbenchmarks show that Thyme yields significant and consistent performance gains,\nparticularly in challenging high-resolution perception and complex reasoning\ntasks.",
+    "authors": [
+      "Yi-Fan Zhang",
+      "Xingyu Lu",
+      "Shukang Yin",
+      "Chaoyou Fu",
+      "Wei Chen",
+      "Xiao Hu",
+      "Bin Wen",
+      "Kaiyu Jiang",
+      "Changyi Liu",
+      "Tianke Zhang",
+      "Haonan Fan",
+      "Kaibing Chen",
+      "Jiankang Chen",
+      "Haojie Ding",
+      "Kaiyu Tang",
+      "Zhang Zhang",
+      "Liang Wang",
+      "Fan Yang",
+      "Tingting Gao",
+      "Guorui Zhou"
+    ],
+    "likes": 55,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11630",
+    "date_collected": "2025-08-19T07:07:45.545913+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "이미지 너머로 생각하라: Thyme (Think Beyond Images)",
+      "abstract": "OpenAI가 소개한 \"이미지로 생각하기\" 개념을 따르면서 최근 노력들은 시각 정보의 사용을 활성화하여 모델 성능을 향상시키기 위해 이성적 추론 작업에서 모델 성능을 향상시키는데 노력해왔다. 그러나 우리의 지식으로는 아직도 다양한 이미지 조작과 동시에 코드를 통해 논리적 추론 능력을 강화하는 독점적 모델들만큼 풍부한 기능 세트를 제공하는 오픈 소스 작업이 없다. 본 논문에서는 Thyme (Think Beyond Images)라는 새로운 패러다임을 소개하여, MLLM이 \"이미지로 생각하기\" 접근법을 넘어서게 하여 실행 가능한 코드를 통해 다양한 이미지 처리 및 계산 작업을 자동으로 생성하고 실행하도록 하는 초기 시도를 한다. 이 접근 방식은 이미지 조작의 풍부하고 즉석 사용(크롭, 회전, 대비 향상 등)과 더불어 수학적 계산을 가능케 하고, 이러한 작업을 언제 어떻게 적용할지에 대한 높은 자율성을 유지한다. 이 능력을 활성화하려면 두 단계의 훈련 전략을 사용한다: 50만 개의 샘플로 편집된 데이터셋 위에서 코드 생성을 가르치기 위한 초기 SFT, 그리고 의사결정을 정제하기 위한 강화학습(RL) 단계. RL 단계에서는 학습 난이도를 높이기 위해 고해상도 질의응답 쌍을 수집하고 디자인하며, 추론 탐사와 코드 실행 정밀도를 균형있게 향상시키기 위해 텍스트와 코드 생성에 서로 다른 온도를 적용하는 GRPO-ATS(Group Relative Policy Optimization with Adaptive Temperature Sampling) 알고리즘을 제안한다. 또한 포괄적인 실험 분석과 제거 연구를 실시한다. 거의 20개의 벤치마크에 대해 실시한 포괄적인 평가에서, Thyme은 특히 고해상도 perception과 복잡한 추론 작업에서 상당하고 일관된 성능 향상을 제공한다."
+    },
+    "summary": "1. Thyme는 \"이미지로 생각하기\" 접근법을 넘어서 실행 가능한 코드를 통해 다양한 이미지 처리와 계산 작업을 자동으로 생성하고 실행하여 높은 자율성을 유지한다.\n2. 두 단계의 훈련 전략을 통해 초기 SFT로 코드 생성을 가르치고 RL로 의사결정을 정제함으로써 Thyme은 고해상도 perception과 복잡한 추론 작업에서 상당하고 일관된 성능 향상을 이룬다.\n3. GRPO-ATS 알고리즘을 활용하여 Thyme은 텍스트와 코드 생성에 서로 다른 온도를 적용하여 추론 탐사와 코드 실행 정밀도를 균형있게 개선한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DINOv3",
+    "abstract": "Self-supervised learning holds the promise of eliminating the need for manual\ndata annotation, enabling models to scale effortlessly to massive datasets and\nlarger architectures. By not being tailored to specific tasks or domains, this\ntraining paradigm has the potential to learn visual representations from\ndiverse sources, ranging from natural to aerial images -- using a single\nalgorithm. This technical report introduces DINOv3, a major milestone toward\nrealizing this vision by leveraging simple yet effective strategies. First, we\nleverage the benefit of scaling both dataset and model size by careful data\npreparation, design, and optimization. Second, we introduce a new method called\nGram anchoring, which effectively addresses the known yet unsolved issue of\ndense feature maps degrading during long training schedules. Finally, we apply\npost-hoc strategies that further enhance our models' flexibility with respect\nto resolution, model size, and alignment with text. As a result, we present a\nversatile vision foundation model that outperforms the specialized state of the\nart across a broad range of settings, without fine-tuning. DINOv3 produces\nhigh-quality dense features that achieve outstanding performance on various\nvision tasks, significantly surpassing previous self- and weakly-supervised\nfoundation models. We also share the DINOv3 suite of vision models, designed to\nadvance the state of the art on a wide spectrum of tasks and data by providing\nscalable solutions for diverse resource constraints and deployment scenarios.",
+    "authors": [
+      "Oriane Siméoni",
+      "Huy V. Vo",
+      "Maximilian Seitzer",
+      "Federico Baldassarre",
+      "Maxime Oquab",
+      "Cijo Jose",
+      "Vasil Khalidov",
+      "Marc Szafraniec",
+      "Seungeun Yi",
+      "Michaël Ramamonjisoa",
+      "Francisco Massa",
+      "Daniel Haziza",
+      "Luca Wehrstedt",
+      "Jianyuan Wang",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Leonel Sentana",
+      "Claire Roberts",
+      "Andrea Vedaldi",
+      "Jamie Tolan",
+      "John Brandt",
+      "Camille Couprie"
+    ],
+    "likes": 45,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2508.10104",
+    "date_collected": "2025-08-19T07:07:45.547845+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "DINOv3",
+      "abstract": "자가 지도학습은 수작업 데이터 주석이 필요 없어지는 가능성을 갖고 있어 모델이 대규모 데이터셋과 큰 아키텍처로 쉽게 확장될 수 있게 합니다. 특정 작업이나 도메인에 맞추어지지 않아 다양한 소스(자연 이미지부터 공중 이미지까지)로부터 시각적 표현을 학습하는 잠재력이 있는 이 훈련 패러다임은 단일 알고리즘을 사용합니다. 본 기술 보고서에서는 DINOv3를 소개하며 이러한 비전을 실현하기 위해 간단하면서도 효과적인 전략을 활용합니다. 먼저 데이터 준비, 설계 및 최적화에 주의를 기울여 데이터셋과 모델 크기를 함께 확장하는 이점을 이용합니다. 둘째로, 긴 학습 일정 동안 밀도 높은 피쳐 맵이 저하되는 알려진 문제를 효과적으로 해결하는 'Gram anchoring'이라는 새로운 방법을 소개합니다. 마지막으로, 후반 전략을 적용하여 모델의 해상도, 모델 크기 및 텍스트와의 정렬에 대한 유연성을 더욱 향상시킵니다. 결과적으로, 튜닝 없이 다양한 환경에서 특화된 최신 기술 성능을 능가하는 다목적 비전 기반 모델을 제시합니다. DINOv3는 다양한 비전 작업에서 우수한 성능을 달성하는 고품질 밀도 피쳐를 생성하여 이전의 자가 및 약 자가 지도 기반 모델을 크게 능가합니다. 또한, 다양한 리소스 제약과 배포 시나리오에 확장 가능한 솔루션을 제공함으로써 다양한 작업 및 데이터에 대한 최신 기술 발전을 위해 설계된 DINOv3 비전 모델 스위트를 공유합니다."
+    },
+    "summary": "1. 자가 지도학습은 수작업 데이터 주석이 필요 없는 빠른 확장을 가능케하며, DINOv3는 간단하고 효과적인 전략을 활용하여 다목적 비전 기반 모델을 제시합니다.\n2. 'Gram anchoring' 방법을 통해 밀도 높은 피쳐 맵의 문제를 효과적으로 해결하고, 후반 전략을 적용하여 모델의 유연성을 향상시킵니다.\n3. DINOv3는 다양한 비전 작업에서 우수한 성능을 보이며, 자가 및 약 자가 지도 기반 모델을 능가하며 최신 기술을 발전시키기 위한 솔루션을 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Self-supervised Learning"
+    ]
+  },
+  {
+    "title": "BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale\n  Pretraining",
+    "abstract": "Recent advances in large language model (LLM) pretraining have shown that\nsimply scaling data quantity eventually leads to diminishing returns, hitting a\ndata wall. In response, the use of synthetic data for pretraining has emerged\nas a promising paradigm for pushing the frontier of performance. Despite this,\nthe factors affecting synthetic data quality remain poorly understood. In this\nwork, we introduce BeyondWeb, a synthetic data generation framework that\nproduces high-quality synthetic data for pretraining. BeyondWeb significantly\nextends the capabilities of traditional web-scale datasets, outperforming\nstate-of-the-art synthetic pretraining datasets such as Cosmopedia and\nNemotron-CC's high-quality synthetic subset (Nemotron-Synth) by up to 5.1\npercentage points (pp) and 2.6pp, respectively, when averaged across a suite of\n14 benchmark evaluations. It delivers up to 7.7x faster training than open web\ndata and 2.7x faster than Nemotron-Synth. Remarkably, a 3B model trained for\n180B tokens on BeyondWeb outperforms an 8B model trained for the same token\nbudget on Cosmopedia. We also present several insights from BeyondWeb on\nsynthetic data for pretraining: what drives its benefits, which data to\nrephrase and how, and the impact of model size and family on data quality.\nOverall, our work shows that there's no silver bullet for generating\nhigh-quality synthetic pretraining data. The best outcomes require jointly\noptimizing many factors, a challenging task that requires rigorous science and\npractical expertise. Naive approaches can yield modest improvements,\npotentially at great cost, while well-executed methods can yield transformative\nimprovements, as exemplified by BeyondWeb.",
+    "authors": [
+      "Pratyush Maini",
+      "Vineeth Dorna",
+      "Parth Doshi",
+      "Aldo Carranza",
+      "Fan Pan",
+      "Jack Urbanek",
+      "Paul Burstein",
+      "Alex Fang",
+      "Alvin Deng",
+      "Amro Abbas",
+      "Brett Larsen",
+      "Cody Blakeney",
+      "Charvi Bannur",
+      "Christina Baek",
+      "Darren Teh",
+      "David Schwab",
+      "Haakon Mongstad",
+      "Haoli Yin",
+      "Josh Wills",
+      "Kaleigh Mentzer",
+      "Luke Merrick",
+      "Ricardo Monti"
+    ],
+    "likes": 29,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10975",
+    "date_collected": "2025-08-19T07:07:45.549760+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "BeyondWeb: Trillion-규모 사전 훈련을 위한 합성 데이터 확장에 대한 교훈",
+      "abstract": "대형 언어 모델(Large Language Model, LLM) 사전 훈련의 최근 발전은 단순히 데이터 양을 늘리는 것이 결국 수익이 줄어들게 만들어 데이터 벽에 부딪힘을 보여줍니다. 이에 대응하여 사전 훈련을 위한 합성 데이터의 사용이 성능의 전횡을 민망히 나아가는 유망한 패러다임으로 떠오르고 있습니다. 그럼에도 불구하고, 합성 데이터 품질에 영향을 미치는 요소는 여전히 잘 이해되지 않고 있습니다. 본 연구에서는 사전 훈련을 위한 고품질 합성 데이터를 생성하는 BeyondWeb이라는 합성 데이터 생성 프레임워크를 소개합니다."
+    },
+    "summary": "1. BeyondWeb은 기존의 웹 규모 데이터셋의 기능을 크게 확장하여, 14개의 평가 벤치마크를 통해 평균적으로 Cosmopedia 및 Nemotron-CC의 고품질 합성 서브셋(Nemotron-Synth)을 최대 5.1 포인트 및 2.6포인트 개선합니다.\n2. BeyondWeb은 오픈 웹 데이터보다 최대 7.7배, Nemotron-Synth보다 최대 2.7배 빠른 훈련을 제공합니다.\n3. BeyondWeb에서 180B 토큰에 대한 3B 모델의 훈련은 Cosmopedia에서 동일한 토큰 예산으로 훈련된 8B 모델을 능가합니다.",
+    "categories": [
+      "LLM",
+      "합성 데이터"
+    ]
+  },
+  {
+    "title": "PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical\n  Register Indexing",
+    "abstract": "Paper search is an important activity for researchers, typically involving\nusing a query with description of a topic to find relevant papers. As research\ndeepens, paper search requirements may become more flexible, sometimes\ninvolving specific details such as module configuration rather than being\nlimited to coarse-grained topics. However, previous paper search systems are\nunable to meet these flexible-grained requirements, as these systems mainly\ncollect paper abstracts to construct index of corpus, which lack detailed\ninformation to support retrieval by finer-grained queries. In this work, we\npropose PaperRegister, consisted of offline hierarchical indexing and online\nadaptive retrieval, transforming traditional abstract-based index into\nhierarchical index tree for paper search, thereby supporting queries at\nflexible granularity. Experiments on paper search tasks across a range of\ngranularity demonstrate that PaperRegister achieves the state-of-the-art\nperformance, and particularly excels in fine-grained scenarios, highlighting\nthe good potential as an effective solution for flexible-grained paper search\nin real-world applications. Code for this work is in\nhttps://github.com/Li-Z-Q/PaperRegister.",
+    "authors": [
+      "Zhuoqun Li",
+      "Xuanang Chen",
+      "Hongyu Lin",
+      "Yaojie Lu",
+      "Xianpei Han",
+      "Le Sun"
+    ],
+    "likes": 18,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.11116",
+    "date_collected": "2025-08-19T07:07:45.550934+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "PaperRegister: 계층 등록 색인을 통한 유연한 미세한 논문 검색 강화",
+      "abstract": "논문 검색은 연구자들에게 중요한 활동으로, 보통 특정 주제에 대한 설명을 포함한 쿼리를 사용하여 관련 논문을 찾는 것을 포함합니다. 그러나 그러한 유연한 요구 사항을 충족시키지 못하는 이전 논문 검색 시스템이 있습니다. 이 연구에서 우리는 PaperRegister를 제안합니다. PaperRegister는 오프라인 계층적 색인화와 온라인 적응형 검색으로 구성되어 전통적인 논문 초록 기반 인덱스를 계층적 색인 트리로 변환하여 유연한 미세한 논문 검색을 지원합니다."
+    },
+    "summary": "1. PaperRegister는 기존 논문 검색 시스템의 한계를 극복하기 위해 계층적 색인 트리를 활용하여 유연한 미세한 논문 검색을 제공합니다.\n2. 실험 결과에 따르면 PaperRegister는 다양한 미세한 정밀도에서 뛰어난 성능을 보이며, 특히 미세한 시나리오에서 우수한 성과를 거뒀습니다.\n3. 이 연구는 실제 응용 프로그램에서 유연한 미세한 논문 검색에 대한 효과적인 솔루션으로서의 잠재력을 강조하고 있습니다.",
+    "categories": [
+      "Other"
+    ]
+  },
+  {
+    "title": "XQuant: Breaking the Memory Wall for LLM Inference with KV Cache\n  Rematerialization",
+    "abstract": "Although LLM inference has emerged as a critical workload for many downstream\napplications, efficiently inferring LLMs is challenging due to the substantial\nmemory footprint and bandwidth requirements. In parallel, compute capabilities\nhave steadily outpaced both memory capacity and bandwidth over the last few\ndecades, a trend that remains evident in modern GPU hardware and exacerbates\nthe challenge of LLM inference. As such, new algorithms are emerging that trade\nincreased computation for reduced memory operations. To that end, we present\nXQuant, which takes advantage of this trend, enabling an order-of-magnitude\nreduction in memory consumption through low-bit quantization with substantial\naccuracy benefits relative to state-of-the-art KV cache quantization methods.\nWe accomplish this by quantizing and caching the layer input activations X,\ninstead of using standard KV caching, and then rematerializing the Keys and\nValues on-the-fly during inference. This results in an immediate 2times\nmemory savings compared to KV caching. By applying XQuant, we achieve up to\nsim 7.7times memory savings with <0.1 perplexity degradation compared to\nthe FP16 baseline. Furthermore, our approach leverages the fact that X values\nare similar across layers. Building on this observation, we introduce\nXQuant-CL, which exploits the cross-layer similarity in the X embeddings for\nextreme compression. Across different models, XQuant-CL attains up to\n10times memory savings relative to the FP16 baseline with only 0.01\nperplexity degradation, and 12.5times memory savings with only 0.1\nperplexity degradation. XQuant exploits the rapidly increasing compute\ncapabilities of hardware platforms to eliminate the memory bottleneck, while\nsurpassing state-of-the-art KV cache quantization methods and achieving\nnear-FP16 accuracy across a wide range of models.",
+    "authors": [
+      "Aditya Tomar",
+      "Coleman Hooper",
+      "Minjae Lee",
+      "Haocheng Xi",
+      "Rishabh Tiwari",
+      "Wonjun Kang",
+      "Luca Manolache",
+      "Michael W. Mahoney",
+      "Kurt Keutzer",
+      "Amir Gholami"
+    ],
+    "likes": 14,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10395",
+    "date_collected": "2025-08-19T07:07:45.552325+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "XQuant: LLM 추론을 위한 KV 캐시 Rematerialization으로 메모리 벽 극복",
+      "abstract": "LLM 추론은 많은 하향 애플리케이션에 대한 중요한 작업으로 부상했지만, 적지 않은 메모리 풋프린트와 대역폭 필요로 인해 효율적인 추론이 어렵습니다. XQuant는 기존의 KV 캐시 양자화 방법에 비해 상당한 정확성 이점을 제공하는 저비트 양자화를 통해 메모리 소비를 10배 이상 줄이는 방식으로 이러한 도전에 대처합니다."
+    },
+    "summary": "1. XQuant는 계층 입력 활성화 X를 양자화 및 캐싱하여 표준 KV 캐싱 대신 사용하고, 추론 중에 Keys 및 Values를 실시간으로 재생성하여 KV 캐싱보다 2배 이상의 메모리 절약을 실현합니다.\n2. XQuant를 적용하면 FP16 기준에서 7.7배까지 메모리 절약과 0.1 perplexity 저하 이내의 정확도 성능을 달성합니다.\n3. XQuant-CL은 X embedding의 계층 간 유사성을 활용하여 FP16 기준 대비 최대 10배의 메모리 절약과 0.01 perplexity 저하, 그리고 최대 12.5배의 메모리 절약과 0.1 perplexity 저하를 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "TexVerse: A Universe of 3D Objects with High-Resolution Textures",
+    "abstract": "We introduce TexVerse, a large-scale 3D dataset featuring high-resolution\ntextures. While recent advances in large-scale 3D datasets have enhanced\nhigh-resolution geometry generation, creating high-resolution textures\nend-to-end remains underexplored due to the lack of suitable datasets. TexVerse\nfills this gap with a curated collection of over 858K unique high-resolution 3D\nmodels sourced from Sketchfab, including more than 158K models with physically\nbased rendering (PBR) materials. Each model encompasses all of its\nhigh-resolution variants, bringing the total to 1.6M 3D instances. TexVerse\nalso includes specialized subsets: TexVerse-Skeleton, with 69K rigged models,\nand TexVerse-Animation, with 54K animated models, both preserving original\nskeleton and animation data uploaded by the user. We also provide detailed\nmodel annotations describing overall characteristics, structural components,\nand intricate features. TexVerse offers a high-quality data resource with\nwide-ranging potential applications in texture synthesis, PBR material\ndevelopment, animation, and various 3D vision and graphics tasks.",
+    "authors": [
+      "Yibo Zhang",
+      "Li Zhang",
+      "Rui Ma",
+      "Nan Cao"
+    ],
+    "likes": 8,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10868",
+    "date_collected": "2025-08-19T07:07:45.553411+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "TexVerse: 고해상도 텍스처를 갖는 3D 객체의 우주",
+      "abstract": "TexVerse는 고해상도 텍스처를 특징으로 하는 대규모 3D 데이터셋을 소개합니다. 최근 대규모 3D 데이터셋의 발전은 고해상도 지오메트리 생성을 향상시켰지만, 고해상도 텍스처를 end-to-end로 작성하는 것은 적절한 데이터셋의 부족으로 인해 미처 탐구되지 않았습니다. TexVerse는 Sketchfab에서 수집된 85만 8천 개 이상의 고유한 고해상도 3D 모델을 소개하며, 이 중 15만 8천 개 이상의 모델은 물리 기반 렌더링 (PBR) 소재를 갖추고 있습니다. 각 모델은 모든 고해상도 변형을 포함하며, 총 160만개의 3D 인스턴스를 제공합니다. 또한 TexVerse에는 전문화된 하위 데이터셋도 포함되어 있습니다: 6만 9천 개의 rigged 모델을 갖춘 TexVerse-Skeleton과 5만 4천 개의 애니메이션 모델을 갖춘 TexVerse-Animation이 있으며, 둘 다 사용자가 업로드한 원본 스켈레톤과 애니메이션 데이터를 보존합니다. 또한 전체적인 특징, 구조 구성요소 및 복잡한 특징을 설명하는 자세한 모델 주석도 제공합니다. TexVerse는 텍스처 합성, PBR 소재 개발, 애니메이션, 다양한 3D 비전 및 그래픽 작업 등에 광범위하게 활용 가능한 고품질 데이터 자원을 제공합니다."
+    },
+    "summary": "1. TexVerse는 고해상도 텍스처를 갖는 3D  객체들의 대규모 데이터셋으로, 텍스처 합성, PBR 소재 개발, 애니메이션, 3D 비전 및 그래픽 작업 등 다양한 분야에 활용될 수 있다.\n2. TexVerse는 Sketchfab에서 소스된 85만 8천 개 이상의 고유한 고해상도 3D 모델을 포함하며, 160만 개의 3D 인스턴스를 제공한다.\n3. TexVerse에는 TexVerse-Skeleton(6만 9천 개)과 TexVerse-Animation(5만 4천 개)과 같은 전문 하위 데이터셋도 포함되어 있어, 사용자가 업로드한 스켈레톤 및 애니메이션 데이터를 보존한다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image\n  Translation",
+    "abstract": "We introduce StyleMM, a novel framework that can construct a stylized 3D\nMorphable Model (3DMM) based on user-defined text descriptions specifying a\ntarget style. Building upon a pre-trained mesh deformation network and a\ntexture generator for original 3DMM-based realistic human faces, our approach\nfine-tunes these models using stylized facial images generated via text-guided\nimage-to-image (i2i) translation with a diffusion model, which serve as\nstylization targets for the rendered mesh. To prevent undesired changes in\nidentity, facial alignment, or expressions during i2i translation, we introduce\na stylization method that explicitly preserves the facial attributes of the\nsource image. By maintaining these critical attributes during image\nstylization, the proposed approach ensures consistent 3D style transfer across\nthe 3DMM parameter space through image-based training. Once trained, StyleMM\nenables feed-forward generation of stylized face meshes with explicit control\nover shape, expression, and texture parameters, producing meshes with\nconsistent vertex connectivity and animatability. Quantitative and qualitative\nevaluations demonstrate that our approach outperforms state-of-the-art methods\nin terms of identity-level facial diversity and stylization capability. The\ncode and videos are available at\n[kwanyun.github.io/stylemm_page](kwanyun.github.io/stylemm_page).",
+    "authors": [
+      "Seungmi Lee",
+      "Kwan Yun",
+      "Junyong Noh"
+    ],
+    "likes": 7,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11203",
+    "date_collected": "2025-08-19T07:07:45.554446+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "스타일MM: 텍스트 주도 정렬 이미지 번역을 통한 스타일화된 3D 변형 가능한 얼굴 모델",
+      "abstract": "본 연구에서는 사용자가 목표 스타일을 지정하는 텍스트 설명을 기반으로 스타일화된 3D 변형 가능한 모델(3DMM)을 구축할 수 있는 혁신적인 프레임워크인 스타일MM을 제안합니다. 미세조정된 메쉬 변형 네트워크와 원본 3DMM 기반 실제 인간 얼굴을 위한 텍스처 생성기를 기반으로, 본 방법은 확산 모델을 사용한 텍스트로 구동되는 이미지 대 이미지(i2i) 번역을 통해 생성된 스타일화된 얼굴 이미지를 사용하여 이러한 모델을 미세조정하며, 이는 렌더링된 메쉬를 위한 스타일화된 대상으로 작용합니다. i2i 번역 과정에서 정체성, 얼굴 정렬 또는 표현 변화를 방지하기 위해, 본 연구는 원본 이미지의 얼굴 속성을 명시적으로 보존하는 스타일화 방법을 제안합니다. 이미지 스타일화 과정에서 이러한 중요한 속성을 유지함으로써, 제안된 방법은 이미지 기반 교육을 통해 3DMM 매개 변수 공간 전체에 걸쳐 일관된 3D 스타일 변환을 보장합니다. 훈련을 마치면 StyleMM은 형태, 표현 및 질감 매개 변수를 명시적으로 제어하여 스타일화된 얼굴 메쉬의 전방향 생성을 가능케 하며, 일관된 정점 연결성과 애니메이션성을 갖춘 메쉬를 생산합니다. 양적 및 질적 평가 결과, 본 방법이 정체성 수준의 얼굴 다양성과 스타일화 능력에서 최신 기술을 능가한다는 것을 입증합니다. 코드 및 비디오는 [kwanyun.github.io/stylemm_page](kwanyun.github.io/stylemm_page)에서 확인할 수 있습니다."
+    },
+    "summary": "1. 사용자의 스타일 설명을 기반으로 3DMM 모델을 구축하는 스타일MM 프레임워크를 소개하며, 이미지 대 이미지 번역을 통해 스타일화된 얼굴 이미지로 미세조정하여 일관된 3D 스타일 전환을 달성합니다.\n2. 제안된 방법은 얼굴 속성을 유지하면서 스타일화를 진행하여 3DMM 매개 변수 공간 전체에서 일관성 있게 스타일 전달하는 것을 목표로 합니다.\n3. StyleMM은 형태, 표현 및 질감 매개 변수를 제어하며 일관된 메쉬 생성을 가능케하여, 얼굴 다양성과 스타일화 능력에서 우수성을 보입니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for\n  Audio-Driven Portrait Animation",
+    "abstract": "Recent advances in audio-driven portrait animation have demonstrated\nimpressive capabilities. However, existing methods struggle to align with\nfine-grained human preferences across multiple dimensions, such as motion\nnaturalness, lip-sync accuracy, and visual quality. This is due to the\ndifficulty of optimizing among competing preference objectives, which often\nconflict with one another, and the scarcity of large-scale, high-quality\ndatasets with multidimensional preference annotations. To address these, we\nfirst introduce Talking-Critic, a multimodal reward model that learns\nhuman-aligned reward functions to quantify how well generated videos satisfy\nmultidimensional expectations. Leveraging this model, we curate Talking-NSQ, a\nlarge-scale multidimensional human preference dataset containing 410K\npreference pairs. Finally, we propose Timestep-Layer adaptive multi-expert\nPreference Optimization (TLPO), a novel framework for aligning diffusion-based\nportrait animation models with fine-grained, multidimensional preferences. TLPO\ndecouples preferences into specialized expert modules, which are then fused\nacross timesteps and network layers, enabling comprehensive, fine-grained\nenhancement across all dimensions without mutual interference. Experiments\ndemonstrate that Talking-Critic significantly outperforms existing methods in\naligning with human preference ratings. Meanwhile, TLPO achieves substantial\nimprovements over baseline models in lip-sync accuracy, motion naturalness, and\nvisual quality, exhibiting superior performance in both qualitative and\nquantitative evaluations. Ours project page:\nhttps://fantasy-amap.github.io/fantasy-talking2/",
+    "authors": [
+      "MengChao Wang",
+      "Qiang Wang",
+      "Fan Jiang",
+      "Mu Xu"
+    ],
+    "likes": 6,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11255",
+    "date_collected": "2025-08-19T07:07:45.555517+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "FantasyTalking2: Timestep-Layer Adaptive Preference Optimization을 위한 Audio-Driven Portrait Animation",
+      "abstract": "최근 오디오 주도 초상화 애니메이션의 발전은 인상적인 능력을 보여주었습니다. 그러나 기존 방법론들은 움직임 자연성, 입 모양 동기화 정확성, 시각적 품질과 같은 다양한 차원에서 세밀한 인간 선호도와 일치하기 어려웠습니다. 다루기 어려운 선호도 목표들 사이에서 최적화하는 난제와 서로 충돌하는 이러한 목표들, 그리고 다차원 선호도 주석이 담긴 대규모하고 고퀄리티 데이터셋이 부족한 점이 원인입니다. 이를 해결하기 위해, 먼저 인간 정렬된 보상 함수를 학습하여 생성된 비디오가 다차원 기대치를 얼마나 충족시키는지를 양적화하는 멀티모달 보상 모델인 Talking-Critic을 소개합니다. 이 모델을 활용하여 410,000개의 선호도 쌍을 포함한 대규모 다차원 인간 선호도 데이터셋인 Talking-NSQ를 선별합니다. 마지막으로, Timestep-Layer 적응형 다중 전문가 선호도 최적화(TLPO)라는 새로운 프레임워크를 제안하여 확산 기반 초상화 모델이 세밀하고 다차원 선호도와 일치하도록합니다. TLPO는 선호도를 전문가 모듈로 분리하고, 이를 통해 시간 단계와 네트워크 레이어를 통합시킴으로써 서로 간섭 없이 모든 차원에서 포괄적이고 세밀한 향상을 가능하게 합니다. 실험 결과, Talking-Critic은 인간 선호도 평가와 더 잘 일치시키는 데 기존 방법을 크게 능가합니다. 한편, TLPO는 입 모양 동기화 정확성, 움직임 자연성, 시각적 품질에서 기본 모델들에 비해 상당한 개선을 달성하며, 질적 및 양적 평가에서 우수한 성능을 보여줍니다. 프로젝트 페이지: https://fantasy-amap.github.io/fantasy-talking2/"
+    },
+    "summary": "1. 인간 선호도를 다차원적으로 충족시키기 위해 Talking-Critic 보상 모델과 Talking-NSQ 데이터셋을 도입했으며, TLPO 프레임워크를 통해 선호도를 세밀하게 조정함.\n2. Talking-Critic은 기존 방법을 크게 능가하여 인간 선호도 평가를 향상시킵니다.\n3. TLPO는 입 모양 동기화 정확성, 움직임 자연성, 시각적 품질에서 상당한 향상을 이끌어내어 기본 모델들보다 우수한 성능을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Audio"
+    ]
+  },
+  {
+    "title": "X-Node: Self-Explanation is All We Need",
+    "abstract": "Graph neural networks (GNNs) have achieved state-of-the-art results in\ncomputer vision and medical image classification tasks by capturing structural\ndependencies across data instances. However, their decision-making remains\nlargely opaque, limiting their trustworthiness in high-stakes clinical\napplications where interpretability is essential. Existing explainability\ntechniques for GNNs are typically post-hoc and global, offering limited insight\ninto individual node decisions or local reasoning. We introduce X-Node, a\nself-explaining GNN framework in which each node generates its own explanation\nas part of the prediction process. For every node, we construct a structured\ncontext vector encoding interpretable cues such as degree, centrality,\nclustering, feature saliency, and label agreement within its local topology. A\nlightweight Reasoner module maps this context into a compact explanation\nvector, which serves three purposes: (1) reconstructing the node's latent\nembedding via a decoder to enforce faithfulness, (2) generating a natural\nlanguage explanation using a pre-trained LLM (e.g., Grok or Gemini), and (3)\nguiding the GNN itself via a \"text-injection\" mechanism that feeds explanations\nback into the message-passing pipeline. We evaluate X-Node on two graph\ndatasets derived from MedMNIST and MorphoMNIST, integrating it with GCN, GAT,\nand GIN backbones. Our results show that X-Node maintains competitive\nclassification accuracy while producing faithful, per-node explanations.\nRepository: https://github.com/basiralab/X-Node.",
+    "authors": [
+      "Prajit Sengupta",
+      "Islem Rekik"
+    ],
+    "likes": 5,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10461",
+    "date_collected": "2025-08-19T07:07:45.556570+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "X-Node: 설명은 우리가 필요로 하는 모든 것",
+      "abstract": "그래프 신경망(GNNs)은 데이터 간 구조적 의존성을 포착하여 컴퓨터 비전 및 의료 이미지 분류 과제에서 최첨단 결과를 달성했습니다. 그러나 GNN의 의사 결정은 주로 불투명하여 해석 가능성이 필수적인 중요한 임상 응용 분야에서 신뢰성이 제한됩니다. 우리는 X-Node를 소개합니다. 이는 각 노드가 예측 과정의 일부로 자체 설명을 생성하는 자가 설명하는 GNN 프레임워크입니다."
+    },
+    "summary": "1. X-Node는 각 노드가 자체 설명을 생성하여 신뢰성 있는 그래프 신경망 모델을 구축하며, 이는 클리니컬 응용 분야에서 중요한 역할을 합니다.\n2. 구조적 맥락 벡터를 활용하여 각 노드의 지역적 이해 가능한 신호를 인코딩하고, 가벼운 Reasoner 모듈을 통해 각 설명을 압축된 형태로 변환하여 효과적인 설명을 제공합니다.\n3. X-Node는 MedMNIST와 MorphoMNIST에서 GCN, GAT, GIN 백본과 통합된 두 개의 그래프 데이터셋에 대한 실험 결과를 통해 분류 정확도를 유지하면서 각 노드에 대한 신뢰성 있는 설명을 생성함을 입증합니다.",
+    "categories": [
+      "Computer Vision",
+      "LLM"
+    ]
+  }
+]

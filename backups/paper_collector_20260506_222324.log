@@ -1,0 +1,123 @@
+=== Paper Collection Started at Tue May  5 22:26:47 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W19
+URL: https://huggingface.co/papers/week/2026-W19
+Found 10 papers in weekly view
+Fetching likes for: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Fetching likes for: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Fetching likes for: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Fetching likes for: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Fetching likes for: Map2World: Segment Map Conditioned Text to 3D World Generation
+Fetching likes for: Let ViT Speak: Generative Language-Image Pre-training
+Fetching likes for: From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills
+Fetching likes for: Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions
+Fetching likes for: Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance
+Fetching likes for: Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs
+Selected top 10 papers by likes:
+1. MolmoAct2: Action Reasoning Models for Real-world Deployment (160 likes)
+2. From Context to Skills: Can Language Models Learn from Context Skillfully? (120 likes)
+3. UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors (74 likes)
+4. Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction (31 likes)
+5. Map2World: Segment Map Conditioned Text to 3D World Generation (21 likes)
+6. Let ViT Speak: Generative Language-Image Pre-training (16 likes)
+7. From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills (15 likes)
+8. Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions (14 likes)
+9. Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance (13 likes)
+10. Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs (12 likes)
+Found abstract: Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but to...
+Processed paper: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Found abstract: Many real-world tasks require language models (LMs) to reason over complex contexts that exceed thei...
+Processed paper: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Found abstract: Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimoda...
+Processed paper: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Found abstract: Agentic web search increasingly faces two distinct demands: deep reasoning over a single target, and...
+Processed paper: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Found abstract: 3D world generation is essential for applications such as immersive content creation or autonomous d...
+Processed paper: Map2World: Segment Map Conditioned Text to 3D World Generation
+Found abstract: In this paper, we present Generative Language-Image Pre-training (GenLIP), a minimalist generative p...
+Processed paper: Let ViT Speak: Generative Language-Image Pre-training
+Found abstract: LLM agents increasingly rely on reusable skills, capability packages that combine instructions, cont...
+Processed paper: From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills
+Found abstract: Text-based 2D image editing models have recently reached an impressive level of maturity, motivating...
+Processed paper: Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions
+Found abstract: Large Language Model (LLM) Red-Teaming, which proactively identifies vulnerabilities of LLMs, is an ...
+Processed paper: Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance
+Found abstract: While autoregressive Large Vision-Language Models (LVLMs) demonstrate remarkable proficiency in mult...
+Processed paper: Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  67
+Update date_collected: 2026-05-06T07:26:54.850414+09:00  ->  2026-05-05T07:27:41.090533+09:00
+
+Processing paper 4/10
+Title: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Paper already exists, checking if translation is complete...
+Update likes: 31  ->  25
+Update date_collected: 2026-05-06T07:26:54.852081+09:00  ->  2026-05-05T07:27:41.092311+09:00
+
+Processing paper 5/10
+Title: Map2World: Segment Map Conditioned Text to 3D World Generation
+Paper already exists, checking if translation is complete...
+Update likes: 21  ->  13
+Update date_collected: 2026-05-06T07:26:54.853579+09:00  ->  2026-05-05T07:27:41.093826+09:00
+
+Processing paper 6/10
+Title: Let ViT Speak: Generative Language-Image Pre-training
+Paper already exists, checking if translation is complete...
+Update likes: 16  ->  9
+Update date_collected: 2026-05-06T07:26:54.855342+09:00  ->  2026-05-05T07:27:41.100916+09:00
+
+Processing paper 7/10
+Title: From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills
+Paper already exists, checking if translation is complete...
+Update likes: 15  ->  10
+Update date_collected: 2026-05-06T07:26:54.856754+09:00  ->  2026-05-05T07:27:41.096903+09:00
+
+Processing paper 8/10
+Title: Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions
+Paper already exists, checking if translation is complete...
+Update likes: 14  ->  13
+Update date_collected: 2026-05-06T07:26:54.858265+09:00  ->  2026-05-05T07:27:41.095399+09:00
+
+Processing paper 9/10
+Title: Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance
+Paper already exists, checking if translation is complete...
+Update likes: 13  ->  9
+Update date_collected: 2026-05-06T07:26:54.859698+09:00  ->  2026-05-05T07:27:41.102441+09:00
+
+Processing paper 10/10
+Title: Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W19.json...
+
+Updating Notion database...
+Creating new paper: 실제 선발을 위한 액션 추론 모델 MolmoAct2
+Creating new paper: 문맥으로부터 기술까지: 언어 모델이 문맥에서 기술을 잘 배울 수 있을까?
+Updating paper: 유니비디엑스: 확산 사전을 통한 다목적 비디오 생성을 위한 통합된 다중 모달 프레임워크 (likes: 67 -> 74)
+Updating paper: Web2BigTable: 인터넷 규모 정보 검색 및 추출을 위한 이중 멀티 에이전트 LLM 시스템 (likes: 25 -> 31)
+Updating paper: Map2World: 세그먼트 맵에 의존하는 텍스트를 3D 세계 생성 (likes: 13 -> 21)
+Updating paper: ViT가 말하다: 생성언어-이미지 사전학습 (likes: 9 -> 16)
+Updating paper: 기술 텍스트부터 기술 구조로: 에이전트 스킬을 위한 스케줄링-구조적-논리적 표현 (likes: 10 -> 15)
+Updating paper: Prox-E: 원시 기반 추상화를 통한 세밀한 3D 모양 편집 (likes: 13 -> 14)
+Updating paper: 안정적인-GFlowNet: 대조적 궤적 균형을 통한 다양하고 견고한 LLM Red-Teaming으로 (likes: 9 -> 13)
+Creating new paper: LVLMs에서 깊은 생성을 위한 지속적 시각 기억: 지각 지원
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue May  5 22:28:45 UTC 2026 ===
+

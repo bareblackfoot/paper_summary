@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Nov 24 22:07:36 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W48
+URL: https://huggingface.co/papers/week/2025-W48
+Found 10 papers in weekly view
+Fetching likes for: OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe
+Fetching likes for: Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story
+Fetching likes for: GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization
+Fetching likes for: SAM 3: Segment Anything with Concepts
+Fetching likes for: O-Mem: Omni Memory System for Personalized, Long Horizon, Self-Evolving Agents
+Fetching likes for: RynnVLA-002: A Unified Vision-Language-Action and World Model
+Fetching likes for: Parrot: Persuasion and Agreement Robustness Rating of Output Truth -- A Sycophancy Robustness Benchmark for LLMs
+Fetching likes for: Loomis Painter: Reconstructing the Painting Process
+Fetching likes for: WorldGen: From Text to Traversable and Interactive 3D Worlds
+Fetching likes for: VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models
+Selected top 10 papers by likes:
+1. OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe (74 likes)
+2. Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story (66 likes)
+3. GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization (59 likes)
+4. SAM 3: Segment Anything with Concepts (48 likes)
+5. O-Mem: Omni Memory System for Personalized, Long Horizon, Self-Evolving Agents (18 likes)
+6. RynnVLA-002: A Unified Vision-Language-Action and World Model (14 likes)
+7. Parrot: Persuasion and Agreement Robustness Rating of Output Truth -- A Sycophancy Robustness Benchmark for LLMs (14 likes)
+8. Loomis Painter: Reconstructing the Painting Process (12 likes)
+9. WorldGen: From Text to Traversable and Interactive 3D Worlds (12 likes)
+10. VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models (10 likes)
+Found abstract: Recent advancements in large reasoning models have fueled growing interest in extending such capabil...
+Processed paper: OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe
+Found abstract: Intrinsic dimension (ID) is an important tool in modern LLM analysis, informing studies of training ...
+Processed paper: Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story
+Found abstract: Current research on agentic visual reasoning enables deep multimodal understanding but primarily foc...
+Processed paper: GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization
+Found abstract: We present Segment Anything Model (SAM) 3, a unified model that detects, segments, and tracks object...
+Processed paper: SAM 3: Segment Anything with Concepts
+Found abstract: Recent advancements in LLM-powered agents have demonstrated significant potential in generating huma...
+Processed paper: O-Mem: Omni Memory System for Personalized, Long Horizon, Self-Evolving Agents
+Found abstract: We introduce RynnVLA-002, a unified Vision-Language-Action (VLA) and world model. The world model le...
+Processed paper: RynnVLA-002: A Unified Vision-Language-Action and World Model
+Found abstract: This study presents PARROT (Persuasion and Agreement Robustness Rating of Output Truth), a robustnes...
+Processed paper: Parrot: Persuasion and Agreement Robustness Rating of Output Truth -- A Sycophancy Robustness Benchmark for LLMs
+Found abstract: Step-by-step painting tutorials are vital for learning artistic techniques, but existing video resou...
+Processed paper: Loomis Painter: Reconstructing the Painting Process
+Found abstract: We introduce WorldGen, a system that enables the automatic creation of large-scale, interactive 3D w...
+Processed paper: WorldGen: From Text to Traversable and Interactive 3D Worlds
+Found abstract: Despite the remarkable success of Vision-Language Models (VLMs), their performance on a range of com...
+Processed paper: VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: SAM 3: Segment Anything with Concepts
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: O-Mem: Omni Memory System for Personalized, Long Horizon, Self-Evolving Agents
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: RynnVLA-002: A Unified Vision-Language-Action and World Model
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Parrot: Persuasion and Agreement Robustness Rating of Output Truth -- A Sycophancy Robustness Benchmark for LLMs
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Loomis Painter: Reconstructing the Painting Process
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: WorldGen: From Text to Traversable and Interactive 3D Worlds
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W48.json...
+
+Updating Notion database...
+Creating new paper: OpenMMReasoner: 오픈 및 일반적 레시피로 다변량 추론의 선두를 확장하다
+Creating new paper: 텍스트의 본질적 차원 해독: 학술 초록부터 창작 이야기까지
+Creating new paper: GeoVista: 지역화를 위한 웹 보조 에이전트 시각 추론
+Creating new paper: SAM 3: 개념으로 무엇이든 세분화
+Creating new paper: O-Mem: 개인화, 장기적 시야, 자기진화 에이전트를 위한 옴니 메모리 시스템
+Creating new paper: 통합된 Vision-Language-Action 및 세계 모델인 RynnVLA-002
+Creating new paper: 패럿: 출력 진실의 설득과 합의 강인성 평가 -- LLM을 위한 아부성 강인성 벤치마크
+Creating new paper: 루미스 화가: 그림 과정 재구성
+Creating new paper: 텍스트로부터 탐험 가능하고 상호작용적인 3D 세계로의 WorldGen
+Creating new paper: VisMem: 잠재 시각 메모리가 시각-언어 모델의 잠재력을 발휘합니다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Nov 24 22:09:35 UTC 2025 ===
+

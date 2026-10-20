@@ -1,0 +1,349 @@
+[
+  {
+    "title": "OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling",
+    "abstract": "The field of 4D world modeling - aiming to jointly capture spatial geometry\nand temporal dynamics - has witnessed remarkable progress in recent years,\ndriven by advances in large-scale generative models and multimodal learning.\nHowever, the development of truly general 4D world models remains fundamentally\nconstrained by the availability of high-quality data. Existing datasets and\nbenchmarks often lack the dynamic complexity, multi-domain diversity, and\nspatial-temporal annotations required to support key tasks such as 4D geometric\nreconstruction, future prediction, and camera-control video generation. To\naddress this gap, we introduce OmniWorld, a large-scale, multi-domain,\nmulti-modal dataset specifically designed for 4D world modeling. OmniWorld\nconsists of a newly collected OmniWorld-Game dataset and several curated public\ndatasets spanning diverse domains. Compared with existing synthetic datasets,\nOmniWorld-Game provides richer modality coverage, larger scale, and more\nrealistic dynamic interactions. Based on this dataset, we establish a\nchallenging benchmark that exposes the limitations of current state-of-the-art\n(SOTA) approaches in modeling complex 4D environments. Moreover, fine-tuning\nexisting SOTA methods on OmniWorld leads to significant performance gains\nacross 4D reconstruction and video generation tasks, strongly validating\nOmniWorld as a powerful resource for training and evaluation. We envision\nOmniWorld as a catalyst for accelerating the development of general-purpose 4D\nworld models, ultimately advancing machines' holistic understanding of the\nphysical world.",
+    "authors": [
+      "Yang Zhou",
+      "Yifan Wang",
+      "Jianjun Zhou",
+      "Wenzheng Chang",
+      "Haoyu Guo",
+      "Zizun Li",
+      "Kaijing Ma",
+      "Xinyue Li",
+      "Yating Wang",
+      "Haoyi Zhu",
+      "Mingyu Liu",
+      "Dingning Liu",
+      "Jiange Yang",
+      "Zhoujie Fu",
+      "Junyi Chen",
+      "Chunhua Shen",
+      "Jiangmiao Pang",
+      "Kaipeng Zhang",
+      "Tong He"
+    ],
+    "likes": 86,
+    "published_date": "Sep 15",
+    "url": "https://huggingface.co/papers/2509.12201",
+    "date_collected": "2025-09-18T07:07:34.515169+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "옴니월드: 4D 세계 모델링을 위한 멀티 도메인 및 멀티 모달 데이터셋",
+      "abstract": "공간 지오메트리와 시간 역동성을 함께 포착하는 4D 세계 모델링 분야는 큰 규모의 생성 모델 및 멀티모달 학습의 발전으로 최근 몇 년간 놀라운 진전을 만들어냈다. 그러나 실제로 일반적인 4D 세계 모델의 개발은 고품질 데이터의 제공에 근본적으로 제약을 받는다. 기존 데이터셋과 벤치마크는 종종 4D 기하학적 재구성, 미래 예측 및 카메라 제어 비디오 생성과 같은 주요 작업을 지원하는 데 필요한 동적 복잡성, 멀티 도메인 다양성 및 공간-시간 주석이 부족하다. 이러한 공백을 해소하기 위해 4D 세계 모델링을 위해 특별히 설계된 대규모, 멀티 도메인, 멀티 모달 데이터셋인 OmniWorld를 소개한다."
+    },
+    "summary": "1. 최근 4D 세계 모델링 분야는 대규모 생성 모델과 멀티모달 학습의 발전으로 발전했으나 일반적인 4D 세계 모델의 개발은 데이터 부족으로 어려움을 겪고 있음.\n2. OmniWorld는 멀티 도메인, 멀티 모달 데이터셋으로, 4D 세계 모델링을 위해 동적 복잡성과 현실적 상호작용을 포함하고 있으며, SOTA 방법의 성능 향상을 보여줌.\n3. OmniWorld는 4D 환경 모델링 및 비디오 생성 작업에서 기존 SOTA 방법의 성능을 대폭 향상시켜 일반적인 4D 세계 모델 개발을 가속화시키는 강력한 자원으로 작용.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "WebWeaver: Structuring Web-Scale Evidence with Dynamic Outlines for\n  Open-Ended Deep Research",
+    "abstract": "This paper tackles open-ended deep research (OEDR), a complex challenge where\nAI agents must synthesize vast web-scale information into insightful reports.\nCurrent approaches are plagued by dual-fold limitations: static research\npipelines that decouple planning from evidence acquisition and one-shot\ngeneration paradigms that easily suffer from long-context failure issues like\n\"loss in the middle\" and hallucinations. To address these challenges, we\nintroduce WebWeaver, a novel dual-agent framework that emulates the human\nresearch process. The planner operates in a dynamic cycle, iteratively\ninterleaving evidence acquisition with outline optimization to produce a\ncomprehensive, source-grounded outline linking to a memory bank of evidence.\nThe writer then executes a hierarchical retrieval and writing process,\ncomposing the report section by section. By performing targeted retrieval of\nonly the necessary evidence from the memory bank for each part, it effectively\nmitigates long-context issues. Our framework establishes a new state-of-the-art\nacross major OEDR benchmarks, including DeepResearch Bench, DeepConsult, and\nDeepResearchGym. These results validate our human-centric, iterative\nmethodology, demonstrating that adaptive planning and focused synthesis are\ncrucial for producing high-quality, reliable, and well-structured reports.",
+    "authors": [
+      "Zijian Li",
+      "Xin Guan",
+      "Bo Zhang",
+      "Shen Huang",
+      "Houquan Zhou",
+      "Shaopeng Lai",
+      "Ming Yan",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jun Zhang",
+      "Jingren Zhou"
+    ],
+    "likes": 74,
+    "published_date": "Sep 16",
+    "url": "https://huggingface.co/papers/2509.13312",
+    "date_collected": "2025-09-18T07:07:34.516739+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "웹웨이버: 개방형 심층 연구를 위한 동적 개요로 웹 규모의 증거물 구조화",
+      "abstract": "본 논문은 인공지능 에이전트가 방대한 웹 규모 정보를 통찰력 있는 보고서로 합성해야 하는 복잡한 개방형 심층 연구(OEDR)에 대처합니다. 현재의 방식은 계획과 증거 획득을 분리하는 정적 연구 파이프라인과 중요한 증거가 사라지는 \"중간 손실\"과 환각과 같은 장기적 맥락 문제로 쉽게 실패하는 한 번 생성 패러다임으로 가로막힙니다."
+    },
+    "summary": "1. WebWeaver는 인간의 연구 과정을 모방하는 새로운 이중 에이전트 프레임워크로, 동적 주기에서 계획자는 증거 획득과 개요 최적화를 번갈아 가며 수행하여 전체적이고 소스에 기반한 메모리 은행에 연결되는 개요를 생성합니다.\n2. 작가는 계층적 검색 및 작성 과정을 통해 보고서를 단락별로 작성하며, 각 부분에 필요한 증거만을 메모리 은행에서 대상적으로 검색함으로써 장기적 맥락 문제를 효과적으로 완화합니다.\n3. 우리의 프레임워크는 DeepResearch Bench, DeepConsult, DeepResearchGym을 포함한 주요 OEDR 벤치마크 전반에 새로운 최고 수준을 세우는, 적응적 계획과 집중된 종합이 고품질, 신뢰성 있고 잘 구조화된 보고서를 작성하는 데 중요함을 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Scaling Agents via Continual Pre-training",
+    "abstract": "Large language models (LLMs) have evolved into agentic systems capable of\nautonomous tool use and multi-step reasoning for complex problem-solving.\nHowever, post-training approaches building upon general-purpose foundation\nmodels consistently underperform in agentic tasks, particularly in open-source\nimplementations. We identify the root cause: the absence of robust agentic\nfoundation models forces models during post-training to simultaneously learn\ndiverse agentic behaviors while aligning them to expert demonstrations, thereby\ncreating fundamental optimization tensions. To this end, we are the first to\npropose incorporating Agentic Continual Pre-training (Agentic CPT) into the\ndeep research agents training pipeline to build powerful agentic foundational\nmodels. Based on this approach, we develop a deep research agent model named\nAgentFounder. We evaluate our AgentFounder-30B on 10 benchmarks and achieve\nstate-of-the-art performance while retains strong tool-use ability, notably\n39.9% on BrowseComp-en, 43.3% on BrowseComp-zh, and 31.5% Pass@1 on HLE.",
+    "authors": [
+      "Liangcai Su",
+      "Zhen Zhang",
+      "Guangyu Li",
+      "Zhuo Chen",
+      "Chenxi Wang",
+      "Maojia Song",
+      "Xinyu Wang",
+      "Kuan Li",
+      "Jialong Wu",
+      "Xuanzhong Chen",
+      "Zile Qiao",
+      "Zhongwang Zhang",
+      "Huifeng Yin",
+      "Shihao Cai",
+      "Runnan Fang",
+      "Zhengwei Tao",
+      "Wenbiao Yin",
+      "Chenxiong Qian",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "likes": 61,
+    "published_date": "Sep 16",
+    "url": "https://huggingface.co/papers/2509.13310",
+    "date_collected": "2025-09-18T07:07:34.518708+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "지속적 사전 학습을 통한 에이전트 확장",
+      "abstract": "대형 언어 모델(LLMs)은 자율적인 도구 사용과 복잡한 문제 해결을 위한 다단계 추론을 수행할 수 있는 행동시스템으로 진화했습니다. 그러나 일반적인 기초 모델을 기반으로 하는 사후 학습 방법은 에이전트 작업에서 일관되게 성과가 낮은데, 특히 오픈 소스 구현에서 그렇습니다. 우리는 이러한 원인을 식별하였습니다: 견고한 행동 기초 모델의 부재로 인해 사후 학습 중 모델은 전문가 데모에 맞추어 다양한 행동을 학습하면서 기본적인 최적화 긴장을 일으킵니다. 이에 우리는 처음으로 에이전트 지속적 사전 학습(Agentic CPT)을 깊은 연구 에이전트 학습 파이프라인에 통합하여 강력한 에이전트 기초 모델을 구축하기로 제안합니다. 이 접근 방식을 기반으로 AgentFounder라는 깊은 연구 에이전트 모델을 개발합니다. AgentFounder-30B를 10가지 벤치마크에서 평가하고, BrowseComp-en에서 특히 39.9%, BrowseComp-zh에서 43.3%, HLE에서 Pass@1로 31.5%의 독자 도구 사용 능력을 유지하면서 최고 수준의 성과를 달성합니다."
+    },
+    "summary": "1. 대형 언어 모델은 자율적인 도구 사용과 복잡한 문제 해결을 위한 동작 시스템으로 발전했으며, 에이전트 작업에서 성과가 낮은 것으로 나타났습니다.\n2. 견고한 행동 기초 모델의 부재로 인해 모델은 후속 학습 중에 여러 행동을 동시에 학습하고 전문가 데모에 맞추어 이를 조정해야 하므로, 기본적인 최적화 긴장을 유발합니다.\n3. 에이전트 지속적 사전 학습(Agentic CPT)을 근간으로 삼아 강력한 에이전트 기초 모델을 구축하고, AgentFounder-30B로 여러 벤치마크에서 독보적인 성과를 달성하였습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic\n  Data and Scalable Reinforcement Learning",
+    "abstract": "Transcending human cognitive limitations represents a critical frontier in\nLLM training. Proprietary agentic systems like DeepResearch have demonstrated\nsuperhuman capabilities on extremely complex information-seeking benchmarks\nsuch as BrowseComp, a feat previously unattainable. We posit that their success\nhinges on a sophisticated reasoning pattern absent in open-source models: the\nability to systematically reduce extreme uncertainty when navigating vast\ninformation landscapes. Based on this insight, we introduce WebSailor, a\ncomplete post-training methodology designed to instill this crucial capability.\nOur approach involves generating novel, high-uncertainty tasks through\nstructured sampling and information obfuscation, RFT cold start, and an\nefficient agentic RL training algorithm, Duplicating Sampling Policy\nOptimization (DUPO). With this integrated pipeline, WebSailor significantly\noutperforms all open-source agents in complex information-seeking tasks,\nmatching proprietary agents' performance and closing the capability gap.",
+    "authors": [
+      "Kuan Li",
+      "Zhongwang Zhang",
+      "Huifeng Yin",
+      "Rui Ye",
+      "Yida Zhao",
+      "Liwen Zhang",
+      "Litu Ou",
+      "Dingchu Zhang",
+      "Xixi Wu",
+      "Jialong Wu",
+      "Xinyu Wang",
+      "Zile Qiao",
+      "Zhen Zhang",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "likes": 52,
+    "published_date": "Sep 16",
+    "url": "https://huggingface.co/papers/2509.13305",
+    "date_collected": "2025-09-18T07:07:34.520426+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "웹세일러-V2: 합성 데이터와 확장 가능한 강화학습을 통해 사유재간과 비공개 에이전트 간의 균열을 극복하다",
+      "abstract": "인간의 인지 제약을 극복하는 것은 LLM 훈련의 중요한 쟁점을 나타냅니다. DeepResearch와 같은 사유 에이전트 시스템들은 BrowseComp와 같이 극도로 복잡한 정보 탐색 벤치마크에서 초인적 능력을 나타내며 이전에 이루어지지 않았던 성과를 거둡니다. 우리는 그들의 성공이 오픈소스 모델에 결여된 복잡한 추론 패턴에 달려있다고 주장합니다: 방대한 정보 현장을 탐색할 때 극심한 불확실성을 체계적으로 줄일 수 있는 능력. 이 통찰력을 기반으로 웹세일러라는 개념을 소개합니다. 이는 이 중요한 능력을 심어주기 위해 설계된 완전한 사후 훈련 방법론입니다. 저희의 접근 방식은 새로운 고불확실성 작업을 생성하기 위해 구조화된 샘플링과 정보 혼돈, RFT 초기화, 그리고 효율적인 강화학습 알고리즘인 '중복 샘플링 정책 최적화' (DUPO)를 포함하고 있습니다. 이 통합 파이프라인을 통해 웹세일러는 복잡한 정보 탐색 작업에서 모든 오픈소스 에이전트들을 크게 능가하며, 사유 에이전트의 성능에 필적하며 능력 격차를 줄입니다."
+    },
+    "summary": "1. 인간의 한계를 초월하는 LLM 훈련의 중요성과 사유 에이전트의 고성능 능력에 대한 연구\n2. 오픈소스 모델과 사유 에이전트들 간의 능력 차이를 줄이기 위한 웹세일러의 개발\n3. DUPO와 같은 효율적인 강화학습 알고리즘이 포함된 웹세일러의 성능 향상 결과",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Towards General Agentic Intelligence via Environment Scaling",
+    "abstract": "Advanced agentic intelligence is a prerequisite for deploying Large Language\nModels in practical, real-world applications. Diverse real-world APIs demand\nprecise, robust function-calling intelligence, which needs agents to develop\nthese capabilities through interaction in varied environments. The breadth of\nfunction-calling competence is closely tied to the diversity of environments in\nwhich agents are trained. In this work, we scale up environments as a step\ntowards advancing general agentic intelligence. This gives rise to two central\nchallenges: (i) how to scale environments in a principled manner, and (ii) how\nto effectively train agentic capabilities from experiences derived through\ninteractions with these environments. To address these, we design a scalable\nframework that automatically constructs heterogeneous environments that are\nfully simulated, systematically broadening the space of function-calling\nscenarios. We further adapt a two-phase agent fine-tuning strategy: first\nendowing agents with fundamental agentic capabilities, then specializing them\nfor domain-specific contexts. Extensive experiments on agentic benchmarks,\ntau-bench, tau2-Bench, and ACEBench, demonstrate that our trained model,\nAgentScaler, significantly enhances the function-calling capability of models.",
+    "authors": [
+      "Runnan Fang",
+      "Shihao Cai",
+      "Baixuan Li",
+      "Jialong Wu",
+      "Guangyu Li",
+      "Wenbiao Yin",
+      "Xinyu Wang",
+      "Xiaobin Wang",
+      "Liangcai Su",
+      "Zhen Zhang",
+      "Shibin Wu",
+      "Zhengwei Tao",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "likes": 49,
+    "published_date": "Sep 16",
+    "url": "https://huggingface.co/papers/2509.13311",
+    "date_collected": "2025-09-18T07:07:34.522085+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "일반적인 적응적 지능 방향에서 환경 확장을 통해",
+      "abstract": "실제 세계 응용에서 대형 언어 모델을 적용하기 위해서는 고급 적인 지능이 필요합니다. 다양한 실제 API들은 정확하고 견고한 함수 호출 지능을 요구하는데, 이는 에이전트들이 다양한 환경에서 상호작용을 통해 이러한 능력을 발전시켜야 함을 의미합니다. 함수 호출 역량의 폭은 에이전트가 훈련을 받는 환경의 다양성과 깊게 연관이 있습니다. 본 연구에서는 일반적인 적응적 지능을 발전시키기 위해 환경을 확장하는 한 걸음을 나아갑니다. 이는 두 가지 중심적인 과제를 제기합니다: (i) 원칙에 따라 환경을 확장하는 방법과 (ii) 이러한 환경과의 상호작용을 통해 얻은 경험으로 적응적 능력을 효과적으로 훈련하는 방법에 대한 과제입니다. 이를 해결하기 위해, 우리는 체계적으로 다양한 함수 호출 시나리오 영역을 넓히는 완전히 시뮬레이션된 이종 환경을 자동으로 구축하는 확장 가능한 프레임워크를 설계했습니다. 또한, 두 단계 에이전트 세밀 조정 전략을 적응했습니다: 먼저 에이전트에 기본적인 적응적 능력을 부여한 후, 도메인 특정 맥락에 특화시키는 것입니다. 에이전트 벤치마크, tau-bench, tau2-Bench 및 ACEBench에서의 광범위한 실험은 우리의 훈련된 모델인 AgentScaler가 모델의 함수 호출 능력을 현격히 향상시킨다는 것을 입증합니다."
+    },
+    "summary": "1. 실제 세계에서의 다양한 상황에 대응하기 위해 에이전트의 환경을 확장하는 과정이 중요하다.\n2. 환경의 다양성은 에이전트의 함수 호출 능력과 밀접하게 관련되어 있다.\n3. 자동으로 다양한 환경을 구축하는 확장 가능한 프레임워크와 두 단계적인 에이전트 세밀 조정 전략을 적용하여 에이전트의 능력을 향상시킨다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "WebResearcher: Unleashing unbounded reasoning capability in Long-Horizon\n  Agents",
+    "abstract": "Recent advances in deep-research systems have demonstrated the potential for\nAI agents to autonomously discover and synthesize knowledge from external\nsources. In this paper, we introduce WebResearcher, a novel framework for\nbuilding such agents through two key components: (1) WebResearcher, an\niterative deep-research paradigm that reformulates deep research as a Markov\nDecision Process, where agents periodically consolidate findings into evolving\nreports while maintaining focused workspaces, overcoming the context\nsuffocation and noise contamination that plague existing mono-contextual\napproaches; and (2) WebFrontier, a scalable data synthesis engine that\ngenerates high-quality training data through tool-augmented complexity\nescalation, enabling systematic creation of research tasks that bridge the gap\nbetween passive knowledge recall and active knowledge construction. Notably, we\nfind that the training data from our paradigm significantly enhances tool-use\ncapabilities even for traditional mono-contextual methods. Furthermore, our\nparadigm naturally scales through parallel thinking, enabling concurrent\nmulti-agent exploration for more comprehensive conclusions. Extensive\nexperiments across 6 challenging benchmarks demonstrate that WebResearcher\nachieves state-of-the-art performance, even surpassing frontier proprietary\nsystems.",
+    "authors": [
+      "Zile Qiao",
+      "Guoxin Chen",
+      "Xuanzhong Chen",
+      "Donglei Yu",
+      "Wenbiao Yin",
+      "Xinyu Wang",
+      "Zhen Zhang",
+      "Baixuan Li",
+      "Huifeng Yin",
+      "Kuan Li",
+      "Rui Min",
+      "Minpeng Liao",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "likes": 47,
+    "published_date": "Sep 16",
+    "url": "https://huggingface.co/papers/2509.13309",
+    "date_collected": "2025-09-18T07:07:34.523759+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "웹리서처: 긴 시야 범위에 무한한 추론 능력을 발휘하는 에이전트들",
+      "abstract": "최근 심층 연구 시스템의 발전으로, AI 에이전트가 외부 소스로부터 지식을 자율적으로 발견하고 종합하는 잠재력이 입증되었습니다. 본 논문에서는 웹리서처(WebResearcher)라는 새로운 프레임워크를 소개합니다. 이는 두 가지 핵심 구성 요소를 통해 해당 에이전트들을 구축하는 것이 목적입니다: (1) 웹리서처, 마르코프 결정 과정으로 심층 연구를 재구성하는 반복적인 심층 연구 패러다임으로, 에이전트들이 주기적으로 발견한 내용을 계속 발전하는 보고서로 통합하면서 집중된 작업 공간을 유지함으로써, 존재하는 단일 문맥적 접근법을 피해 컨텐츠 제약과 노이즈 오염을 극복합니다; (2) 웹프론티어, 확장 가능한 데이터 종합 엔진으로, 도구 보완을 통해 고도의 훈련 데이터를 생성하여, 수동 지식 회상과 능동적 지식 구축 사이의 간극을 메우는 연구 과제의 체제적 창조를 가능하게 합니다. 특히, 우리의 패러다임에서의 훈련 데이터가 전통적인 단일 문맥적 방법에 대해서도 도구 사용 능력을 크게 향상시키는 것을 발견합니다. 뿐만 아니라, 병렬적 사고를 통해 자연스럽게 확장되어 병행적 다중 에이전트 탐색을 가능하게 함으로써 더 포괄적인 결론을 도출할 수 있습니다. 6개의 어려운 벤치마크에서의 방대한 실험에서 웹리서처가 최첨단 성능을 달성하며, 최첨단 프로플리어 시스템들을 뛰어넘는 것을 확인했습니다."
+    },
+    "summary": "1. 심층 연구 시스템에 대한 웹리서처 프레임워크 소개\n2. 문맥 압박과 노이즈 오염을 극복하는 심층 연구 패러다임\n3. 훈련 데이터 생성을 통한 도구 사용 능력 향상과 병렬적 다중 에이전트 탐색",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "ReSum: Unlocking Long-Horizon Search Intelligence via Context\n  Summarization",
+    "abstract": "Large Language Model (LLM)-based web agents demonstrate strong performance on\nknowledge-intensive tasks but are hindered by context window limitations in\nparadigms like ReAct. Complex queries involving multiple entities, intertwined\nrelationships, and high uncertainty demand extensive search cycles that rapidly\nexhaust context budgets before reaching complete solutions. To overcome this\nchallenge, we introduce ReSum, a novel paradigm that enables indefinite\nexploration through periodic context summarization. ReSum converts growing\ninteraction histories into compact reasoning states, maintaining awareness of\nprior discoveries while bypassing context constraints. For paradigm adaptation,\nwe propose ReSum-GRPO, integrating GRPO with segmented trajectory training and\nadvantage broadcasting to familiarize agents with summary-conditioned\nreasoning. Extensive experiments on web agents of varying scales across three\nbenchmarks demonstrate that ReSum delivers an average absolute improvement of\n4.5\\% over ReAct, with further gains of up to 8.2\\% following ReSum-GRPO\ntraining. Notably, with only 1K training samples, our WebResummer-30B (a\nReSum-GRPO-trained version of WebSailor-30B) achieves 33.3\\% Pass@1 on\nBrowseComp-zh and 18.3\\% on BrowseComp-en, surpassing existing open-source web\nagents.",
+    "authors": [
+      "Xixi Wu",
+      "Kuan Li",
+      "Yida Zhao",
+      "Liwen Zhang",
+      "Litu Ou",
+      "Huifeng Yin",
+      "Zhongwang Zhang",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Minhao Cheng",
+      "Shuai Wang",
+      "Hong Cheng",
+      "Jingren Zhou"
+    ],
+    "likes": 43,
+    "published_date": "Sep 16",
+    "url": "https://huggingface.co/papers/2509.13313",
+    "date_collected": "2025-09-18T07:07:34.525324+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "ReSum: 컨텍스트 요약을 통한 장기 탐색 지능 해제",
+      "abstract": "대규모 언어 모델(Large Language Model, LLM) 기반 웹 에이전트들은 지식 밀집적 작업에서 뛰어난 성능을 보이지만 ReAct와 같은 패러다임에서의 컨텍스트 창 한계로 제약을 받습니다. 여러 entity, 뒤얽힌 관계, 높은 불확실성이 얽힌 복잡한 쿼리는 완전한 해결 방안에 도달하기 전에 맥락 예산을 곧바로 소진시킵니다. 이 도전을 극복하기 위해, 저희는 ReSum을 소개합니다. 이 새로운 패러다임은 주기적인 컨텍스트 요약을 통해 무기한 탐색을 가능하게 합니다."
+    },
+    "summary": "1. ReSum은 컨텍스트 한계를 우회하면서 상시 요약을 통해 상호작용 기록을 간결한 추론 상태로 전환시킴으로써 이전 발견을 유지합니다.\n2. ReSum-GRPO는 GRPO를 세분화된 경로 교육과 이익 브로드캐스팅과 통합하여 요약-조건 추론에 대한 에이전트의 이해를 높입니다.\n3. 다양한 벤치마크를 통해 수행된 실험에서 ReSum은 ReAct보다 평균적으로 4.5%의 절대 향상을 보이며, ReSum-GRPO 교육 이후 최대 8.2%의 추가적 이득을 제공함을 확인했습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning",
+    "abstract": "Graphical User Interface (GUI) agents have demonstrated remarkable progress\nin automating complex user interface interactions through reinforcement\nlearning. However, current approaches face a fundamental dilemma: offline RL\nenables stable training on pre-collected trajectories, but struggles with\nmulti-step task execution for lack of trajectory-level reward signals; online\nRL captures these signals through environment interaction, but suffers from\nsparse rewards and prohibitive deployment costs. To address it, we present\nSemi-online Reinforcement Learning, a novel paradigm that simulates online RL\non offline trajectories. During each rollout process, we preserve the original\nmodel output within the multi-turn dialogue, where a Patch Module adaptively\nrecovers the divergence between rollout and expert trajectories. To capture\nlong-term training signals, Semi-online RL introduces discounted future returns\ninto the reward computation and optimizes the policy with weighted step-level\nand episode-level advantages. We further introduce Semi-Online Performance\n(SOP), a metric that aligns better with true online performance, serving as a\npractical and effective proxy for real-world evaluation. Experiments show that\nours Semi-online RL achieves SOTA performance among 7B models across four\ndynamic benchmarks, with significant gains over the base model (e.g., +12.0% on\nAndroidWorld, +23.8% on AITW), demonstrating significant progress in bridging\nthe gap between offline training efficiency and online multi-turn reasoning.\nThe code is available at https://github.com/X-PLUG/MobileAgent/tree/main/UI-S1.",
+    "authors": [
+      "Zhengxi Lu",
+      "Jiabo Ye",
+      "Fei Tang",
+      "Yongliang Shen",
+      "Haiyang Xu",
+      "Ziwei Zheng",
+      "Weiming Lu",
+      "Ming Yan",
+      "Fei Huang",
+      "Jun Xiao",
+      "Yueting Zhuang"
+    ],
+    "likes": 40,
+    "published_date": "Sep 15",
+    "url": "https://huggingface.co/papers/2509.11543",
+    "date_collected": "2025-09-18T07:07:34.526764+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "UI-S1: 준온라인 강화학습을 통한 GUI 자동화 발전",
+      "abstract": "그래픽 사용자 인터페이스(GUI) 에이전트들은 강화 학습을 통해 복잡한 사용자 인터페이스 상호작용을 자동화하는 데 놀라운 진전을 보였습니다. 그러나 현재의 접근법은 기본적인 딜레마에 직면해 있습니다. 오프라인 강화학습은 사전 수집된 궤적에서 안정적인 훈련을 가능케하지만 다단계 작업 수행에 어려움을 겪는데, 그 이유는 궤적 수준의 보상 신호가 부족하기 때문입니다. 온라인 강화학습은 이러한 신호를 환경 상호작용을 통해 캡처하지만 드문 보상과 나가도 높은 비용으로 고통받습니다. 이 문제를 해결하기 위해 저희는 준온라인 강화학습을 제시합니다. 이는 오프라인 궤적에서 온라인 강화학습을 시뮬레이트하는 새로운 패러다임입니다. 각 rollout 과정에서 Patch Module을 통해 롤 아웃과 전문가 궤적 간의 차이를 적응적으로 복원합니다. 장기적인 훈련 신호를 캡처하기 위해 준온라인 강화학습은 할인된 미래 보상을 보상 계산에 도입하고 가중치 부여된 단계 및 에피소드 수준 장점으로 정책을 최적화합니다. 저희는 진정한 온라인 성능과 더 잘 일치하는 측정 지표인 Semi-Online Performance(SOP)를 소개하여 실제 평가에 유용하고 효과적인 대리자 역할을 합니다. 실험 결과, 저희의 준온라인 강화학습은 7B 모델 중에서 네 가지 동적 벤치마크에서 강화학습의 최첨단 성능을 달성하며(예: AndroidWorld에서 +12.0%, AITW에서 +23.8% 증가), 오프라인 훈련 효율과 온라인 다단계 추론 사이의 간격을 줄이는 중요한 진전을 나타냅니다. 코드는 https://github.com/X-PLUG/MobileAgent/tree/main/UI-S1 에서 확인할 수 있습니다."
+    },
+    "summary": "1. UI-S1은 GUI 자동화에서 오프라인 훈련 효율과 온라인 다단계 추론 간의 간극을 줄이는 준온라인 강화학습 기법을 소개합니다.\n2. 새로운 Semi-Online Performance(SOP) 지표가 진정한 온라인 성능을 더 잘 반영하여, 효과적인 실제 성능 대리자로 작용합니다.\n3. 실험 결과, UI-S1은 네 가지 동적 벤치마크에서 7B 모델 중 최상의 성능을 보여주며, AndroidWorld에서 +12.0%, AITW에서 +23.8%의 성능 향상을 달성했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "InternScenes: A Large-scale Simulatable Indoor Scene Dataset with\n  Realistic Layouts",
+    "abstract": "The advancement of Embodied AI heavily relies on large-scale, simulatable 3D\nscene datasets characterized by scene diversity and realistic layouts. However,\nexisting datasets typically suffer from limitations in data scale or diversity,\nsanitized layouts lacking small items, and severe object collisions. To address\nthese shortcomings, we introduce InternScenes, a novel large-scale\nsimulatable indoor scene dataset comprising approximately 40,000 diverse scenes\nby integrating three disparate scene sources, real-world scans, procedurally\ngenerated scenes, and designer-created scenes, including 1.96M 3D objects and\ncovering 15 common scene types and 288 object classes. We particularly preserve\nmassive small items in the scenes, resulting in realistic and complex layouts\nwith an average of 41.5 objects per region. Our comprehensive data processing\npipeline ensures simulatability by creating real-to-sim replicas for real-world\nscans, enhances interactivity by incorporating interactive objects into these\nscenes, and resolves object collisions by physical simulations. We demonstrate\nthe value of InternScenes with two benchmark applications: scene layout\ngeneration and point-goal navigation. Both show the new challenges posed by the\ncomplex and realistic layouts. More importantly, InternScenes paves the way for\nscaling up the model training for both tasks, making the generation and\nnavigation in such complex scenes possible. We commit to open-sourcing the\ndata, models, and benchmarks to benefit the whole community.",
+    "authors": [
+      "Weipeng Zhong",
+      "Peizhou Cao",
+      "Yichen Jin",
+      "Li Luo",
+      "Wenzhe Cai",
+      "Jingli Lin",
+      "Hanqing Wang",
+      "Zhaoyang Lyu",
+      "Tai Wang",
+      "Bo Dai",
+      "Xudong Xu",
+      "Jiangmiao Pang"
+    ],
+    "likes": 28,
+    "published_date": "Sep 13",
+    "url": "https://huggingface.co/papers/2509.10813",
+    "date_collected": "2025-09-18T07:07:34.528251+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "InternScenes: 현실적인 레이아웃을 갖춘 대규모 시뮬레이션 가능한 실내 장면 데이터셋",
+      "abstract": "태체된 AI(Embodied AI)의 발전은 장면 다양성과 현실적인 레이아웃으로 특징 지어진 대규모 시뮬레이션 가능한 3D 장면 데이터셋에 심종한. 그러나 기존의 데이터셋은 일반적으로 데이터 규모나 다양성에 제한을 받거나 소규모 항목이 부족한 정돈된 레이아웃, 심한 물체 충돌과 같은 제약 사항이 있습니다. 이러한 한계를 해결하기 위해 InternScenes를 도입하는데, 이는 대략 40,000개의 다양한 장면으로 이루어진 새로운 대규모 실내 장면 데이터셋이며, 실제 스캔 데이터, 절차적으로 생성된 장면 및 디자이너가 만든 장면이라는 세 가지 다른 출처의 장면을 통합하여 만들어졌으며, 15가지 일반적인 장면 유형과 288가지 물체 클래스를 포함하고 있습니다. 우리는 특히 장면 내 작은 항목들을 완전히 보존하여 장면당 평균 41.5개의 물체가 포함된 현실적이고 복잡한 레이아웃을 얻었습니다. 우리의 종합적인 데이터 처리 파이프라인은 실제 스캔의 실세계와 시뮬레이션된 복제본을 만들어 시뮬레이션 가능성을 보장하고, 대화형 물체들을 이러한 장면에 통합함으로써 상호 작용성을 높이고 물체 충돌을 물리학 시뮬레이션으로 해결합니다. InternScenes의 가치를 두 가지 벤치마크 응용 프로그램인 장면 레이아웃 생성 및 지점-목표 네비게이션을 통해 보여 주었습니다. 두 가지 모두 복잡하고 현실적인 레이아웃이 초래하는 새로운 도전을 보여줍니다. 더 중요한 것은 InternScenes가 두 작업 모두의 모델 트레이닝을 확장하여 이러한 복잡한 장면에서의 생성 및 네비게이션을 가능하게 하는 길을 열어두었다는 것입니다. 우리는 데이터, 모델 및 벤치마크를 공개하여 전체 커뮤니티에 혜택을 주기로 했습니다."
+    },
+    "summary": "1. InternScenes는 실내 장면 데이터셋으로, 다양한 장면과 1.96백만 개의 3D 물체, 15가지 장면 유형, 288가지 물체 클래스를 포함하여 현실적이고 복잡한 레이아웃을 제공합니다.\n2. 데이터 처리 과정은 실세계 스캔의 시뮬레이션 가능성, 대화형 물체의 삽입, 물리학 시뮬레이션을 통해 물체 충돌 문제를 해결하며 시뮬레이션 가능성과 상호 작용성을 보장합니다.\n3. InternScenes는 장면 레이아웃 생성 및 지점-목표 네비게이션을 위한 두 가지 벤치마크 응용 프로그램을 통해 복잡하고 현실적인 레이아웃이 제기하는 새로운 도전을 보여주며 이러한 복잡한 장면에서의 모델 트레이닝을 확장함으로써 생성과 네비게이션을 가능케 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Illusion of Diminishing Returns: Measuring Long Horizon Execution in\n  LLMs",
+    "abstract": "Does continued scaling of large language models (LLMs) yield diminishing\nreturns? Real-world value often stems from the length of task an agent can\ncomplete. We start this work by observing the simple but counterintuitive fact\nthat marginal gains in single-step accuracy can compound into exponential\nimprovements in the length of a task a model can successfully complete. Then,\nwe argue that failures of LLMs when simple tasks are made longer arise from\nmistakes in execution, rather than an inability to reason. We propose isolating\nexecution capability, by explicitly providing the knowledge and plan needed to\nsolve a long-horizon task. We find that larger models can correctly execute\nsignificantly more turns even when small models have 100\\% single-turn\naccuracy. We observe that the per-step accuracy of models degrades as the\nnumber of steps increases. This is not just due to long-context limitations --\ncuriously, we observe a self-conditioning effect -- models become more likely\nto make mistakes when the context contains their errors from prior turns.\nSelf-conditioning does not reduce by just scaling the model size. In contrast,\nrecent thinking models do not self-condition, and can also execute much longer\ntasks in a single turn. We conclude by benchmarking frontier thinking models on\nthe length of task they can execute in a single turn. Overall, by focusing on\nthe ability to execute, we hope to reconcile debates on how LLMs can solve\ncomplex reasoning problems yet fail at simple tasks when made longer, and\nhighlight the massive benefits of scaling model size and sequential test-time\ncompute for long-horizon tasks.",
+    "authors": [
+      "Akshit Sinha",
+      "Arvindh Arun",
+      "Shashwat Goel",
+      "Steffen Staab",
+      "Jonas Geiping"
+    ],
+    "likes": 27,
+    "published_date": "Sep 11",
+    "url": "https://huggingface.co/papers/2509.09677",
+    "date_collected": "2025-09-18T07:07:34.529408+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "감소 수익의 환상: LLM에서의 장기 실행 측정",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)의 계속된 확장이 감소하는 가치를 가져오는가? 실제 가치는 주어진 작업을 완료하는 데 걸리는 시간에서 나타납니다. 본 연구는 단일 단계 정확도의 경계적 이익이 모델이 성공적으로 완료할 수 있는 작업의 길이에 기하급수적인 개선으로 이어질 수 있다는 간단하지만 직관에 반하는 사실을 관찰함으로 시작합니다. 그리고 한 번의 단순한 작업이 길어질 때 LLMs의 실패가 이해 능력 부족이 아닌 실행 중의 오류에서 비롯되는 것을 주장합니다."
+    },
+    "summary": "1. 단일 단계 정확도의 증가가 작업의 길이에 지수적인 개선으로 이어질 수 있다.\n2. LLMs의 실패는 실행 중의 오류에서 비롯되는데, 실제로 문제 해결을 위한 지식과 계획을 제공함으로써 실행 능력을 고립시킬 수 있다.\n3. 모델의 단계별 정확도는 단계 수가 증가할수록 저하되는데, 모델은 자신의 이전 단계에서의 오류를 포함하는 문맥을 가질 때 실수 가능성이 더 높아지는 자체 조건화 효과를 관찰할 수 있다.",
+    "categories": [
+      "LLM"
+    ]
+  }
+]

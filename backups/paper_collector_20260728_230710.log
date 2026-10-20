@@ -1,0 +1,117 @@
+=== Paper Collection Started at Mon Jul 27 23:11:32 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W31
+URL: https://huggingface.co/papers/week/2026-W31
+Found 10 papers in weekly view
+Fetching likes for: DataPrep-Bench: Benchmarking LLMs as Training Data Preparators
+Fetching likes for: Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
+Fetching likes for: Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning
+Fetching likes for: Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems
+Fetching likes for: Interactive Training 2: Auditable Control Plane for Live Model Training
+Fetching likes for: Scaling Native Multimodal Pre-Training From Scratch
+Fetching likes for: Three-Body Scattering for Generative Modeling
+Fetching likes for: LAMAR: An Open Language-Aware Multilingual Alignment Reranker
+Fetching likes for: O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning
+Fetching likes for: Multi-Head Latent Control: A Unified Interface for LLM Agent Decision Making
+Selected top 10 papers by likes:
+1. DataPrep-Bench: Benchmarking LLMs as Training Data Preparators (38 likes)
+2. Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills (30 likes)
+3. Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning (22 likes)
+4. Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems (16 likes)
+5. Interactive Training 2: Auditable Control Plane for Live Model Training (15 likes)
+6. Scaling Native Multimodal Pre-Training From Scratch (13 likes)
+7. Three-Body Scattering for Generative Modeling (10 likes)
+8. LAMAR: An Open Language-Aware Multilingual Alignment Reranker (8 likes)
+9. O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning (8 likes)
+10. Multi-Head Latent Control: A Unified Interface for LLM Agent Decision Making (6 likes)
+Found abstract: The quality of training data fundamentally determines the capabilities of large language models (LLM...
+Processed paper: DataPrep-Bench: Benchmarking LLMs as Training Data Preparators
+Found abstract: LLM training is shifting from manual design and annotation to interaction-driven self-evolution. How...
+Processed paper: Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
+Found abstract: Agentic reinforcement learning research is constant algorithm modification, new estimators, new pipe...
+Processed paper: Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning
+Found abstract: Production AI agents' failures are less often due to an inability to reason well and more often beca...
+Processed paper: Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems
+Found abstract: Experiment trackers show how training is progressing, but changing a live run still usually requires...
+Processed paper: Interactive Training 2: Auditable Control Plane for Live Model Training
+Found abstract: Although large language models (LLMs) exhibit remarkable reasoning capabilities, their reliance on t...
+Processed paper: Scaling Native Multimodal Pre-Training From Scratch
+Found abstract: Modern generative models typically rely on an adversarial critic, a prescribed noise-to-data path, o...
+Processed paper: Three-Body Scattering for Generative Modeling
+Found abstract: In multilingual retrieval augmented generation, a retriever can retrieve relevant documents written ...
+Processed paper: LAMAR: An Open Language-Aware Multilingual Alignment Reranker
+Found abstract: Industrial Video Anomaly Detection (IVAD) aims to identify anomalous objects and events in an indust...
+Processed paper: O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning
+Found abstract: Large language models are increasingly deployed as agents, but reliable agentic behavior requires mo...
+Processed paper: Multi-Head Latent Control: A Unified Interface for LLM Agent Decision Making
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: DataPrep-Bench: Benchmarking LLMs as Training Data Preparators
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
+Paper already exists, checking if translation is complete...
+Update likes: 30  ->  6
+Update date_collected: 2026-07-28T08:11:39.757441+09:00  ->  2026-07-27T13:39:48.762282+09:00
+
+Processing paper 3/10
+Title: Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 22  ->  8
+Update date_collected: 2026-07-28T08:11:39.760600+09:00  ->  2026-07-27T13:39:48.758720+09:00
+
+Processing paper 4/10
+Title: Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Interactive Training 2: Auditable Control Plane for Live Model Training
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Scaling Native Multimodal Pre-Training From Scratch
+Paper already exists, checking if translation is complete...
+Update likes: 13  ->  5
+Update date_collected: 2026-07-28T08:11:39.769416+09:00  ->  2026-07-27T13:39:48.765581+09:00
+
+Processing paper 7/10
+Title: Three-Body Scattering for Generative Modeling
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: LAMAR: An Open Language-Aware Multilingual Alignment Reranker
+Paper already exists, checking if translation is complete...
+Update likes: 8  ->  1
+Update date_collected: 2026-07-28T08:11:39.775312+09:00  ->  2026-07-27T13:39:48.778027+09:00
+
+Processing paper 9/10
+Title: O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Multi-Head Latent Control: A Unified Interface for LLM Agent Decision Making
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W31.json...
+
+Updating Notion database...
+Creating new paper: DataPrep-Bench: LLM 학습 데이터 준비자로서의 벤치마킹
+Updating paper: 스킬 셀프 플레이: 공동 진화 스킬로 LLM 능력의 전방위 개척 (likes: 6 -> 30)
+Updating paper: Molt: 에이전틱 강화 학습을 위한 확장 가능한 PyTorch 네이티브 트레이닝 프레임워크 (likes: 8 -> 22)
+Creating new paper: 에이전트 컨텍스트 관리: 라이프사이클 및 아키텍처 문제로 다루어 에이전트 메모리와 비용 해결하기
+Creating new paper: 상호작용형 트레이닝 2: 실시간 모델 훈련을 위한 감사 가능한 제어 플레인
+Updating paper: 처음부터 규모별 로컬 다중모달 사전훈련 확장 (likes: 5 -> 13)
+Creating new paper: 생성 모델링을 위한 세 몸질 산란
+Updating paper: LAMAR: 오픈 언어인식 다국어 정렬 재랭커 (likes: 1 -> 8)
+Creating new paper: 오브젝트 중심 추적과 추론을 통한 산업용 비디오 이상 감지 (O-VAD)
+Creating new paper: 다중 헤드 잠재 제어: LLM 에이전트 의사 결정을 위한 통합 인터페이스
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul 27 23:13:00 UTC 2026 ===
+

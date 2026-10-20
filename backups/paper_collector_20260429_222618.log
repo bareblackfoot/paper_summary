@@ -1,0 +1,115 @@
+=== Paper Collection Started at Tue Apr 28 22:26:33 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W18
+URL: https://huggingface.co/papers/week/2026-W18
+Found 10 papers in weekly view
+Fetching likes for: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+Fetching likes for: From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company
+Fetching likes for: World-R1: Reinforcing 3D Constraints for Text-to-Video Generation
+Fetching likes for: ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning
+Fetching likes for: Video Analysis and Generation via a Semantic Progress Function
+Fetching likes for: Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms
+Fetching likes for: Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation
+Fetching likes for: DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction
+Fetching likes for: ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents
+Fetching likes for: SketchVLM: Vision language models can annotate images to explain thoughts and guide users
+Selected top 10 papers by likes:
+1. Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond (201 likes)
+2. From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company (97 likes)
+3. World-R1: Reinforcing 3D Constraints for Text-to-Video Generation (95 likes)
+4. ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning (54 likes)
+5. Video Analysis and Generation via a Semantic Progress Function (53 likes)
+6. Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms (42 likes)
+7. Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation (39 likes)
+8. DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction (27 likes)
+9. ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents (25 likes)
+10. SketchVLM: Vision language models can annotate images to explain thoughts and guide users (22 likes)
+Found abstract: As AI systems move from generating text to accomplishing goals through sustained interaction, the ab...
+Processed paper: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+Found abstract: Individual agent capabilities have advanced rapidly through modular skills and tool integrations, ye...
+Processed paper: From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company
+Found abstract: Recent video foundation models demonstrate impressive visual synthesis but frequently suffer from ge...
+Processed paper: World-R1: Reinforcing 3D Constraints for Text-to-Video Generation
+Found abstract: Current evaluations of spatial intelligence can be systematically invalid under modern vision-langua...
+Processed paper: ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning
+Found abstract: Transformations produced by image and video generation models often evolve in a highly non-linear ma...
+Processed paper: Video Analysis and Generation via a Semantic Progress Function
+Found abstract: Vision-Language-Action (VLA) models are emerging as a unified substrate for embodied intelligence. T...
+Processed paper: Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms
+Found abstract: Unified multimodal models typically rely on pretrained vision encoders and use separate visual repre...
+Processed paper: Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation
+Found abstract: Neural representations (NRs), such as neural fields and 3D Gaussians, effectively model volumetric d...
+Processed paper: DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction
+Found abstract: Language-model agents are increasingly used as persistent coworkers that assist users across multipl...
+Processed paper: ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents
+Found abstract: When answering questions about images, humans naturally point, label, and draw to explain their reas...
+Processed paper: SketchVLM: Vision language models can annotate images to explain thoughts and guide users
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+Paper already exists, checking if translation is complete...
+Update likes: 201  ->  151
+Update date_collected: 2026-04-29T07:26:42.866518+09:00  ->  2026-04-28T07:24:01.135467+09:00
+
+Processing paper 2/10
+Title: From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: World-R1: Reinforcing 3D Constraints for Text-to-Video Generation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Video Analysis and Generation via a Semantic Progress Function
+Paper already exists, checking if translation is complete...
+Update likes: 53  ->  36
+Update date_collected: 2026-04-29T07:26:42.873630+09:00  ->  2026-04-28T07:24:01.137060+09:00
+
+Processing paper 6/10
+Title: Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction
+Paper already exists, checking if translation is complete...
+Update likes: 27  ->  26
+Update date_collected: 2026-04-29T07:26:42.879234+09:00  ->  2026-04-28T07:24:01.138626+09:00
+
+Processing paper 9/10
+Title: ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SketchVLM: Vision language models can annotate images to explain thoughts and guide users
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W18.json...
+
+Updating Notion database...
+Updating paper: 의지 있는 세계 모델링: 기초, 능력, 법칙, 그리고 그 너머 (likes: 151 -> 201)
+Creating new paper: 스킬에서 재능으로: 혼재된 에이전트를 현실 세상 기업으로 구성하기
+Creating new paper: 3D 제약을 강화하는 World-R1: 텍스트에서 비디오 생성
+Creating new paper: VLM 3D 추론의 정확한 평가를 위한 시각적 공간 지능 평가 재구성 (Vision-Language Model, VLM)
+Updating paper: 시맨틱 진행 함수를 통한 비디오 분석과 생성 (likes: 36 -> 53)
+Creating new paper: 비전-언어-행동 안전: 위협, 도전, 평가, 및 메커니즘
+Creating new paper: Tuna-2: 픽셀 임베딩이 시각 인코더를 능가하여 멀티모달 이해와 생성을 이끌어냅니다
+Updating paper: 희박-뷰 3D 단층촬영 재구축을 위한 확산 증진 신경 표현 최적화(DiffNR) (likes: 26 -> 27)
+Creating new paper: ClawMark: 다중 턴, 다중 날짜, 다중 모달리티 동료 에이전트를 위한 리빙-월드 벤치마크
+Creating new paper: SketchVLM: 이미지를 설명하고 사고를 안내하는 비전 언어 모델
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Apr 28 22:28:23 UTC 2026 ===
+

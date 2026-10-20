@@ -1,0 +1,299 @@
+[
+  {
+    "title": "Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights",
+    "abstract": "Modern Parameter-Efficient Fine-Tuning (PEFT) methods such as low-rank\nadaptation (LoRA) reduce the cost of customizing large language models (LLMs),\nyet still require a separate optimization run for every downstream dataset. We\nintroduce Drag-and-Drop LLMs (\\textit{DnD)}, a prompt-conditioned\nparameter generator that eliminates per-task training by mapping a handful of\nunlabeled task prompts directly to LoRA weight updates. A lightweight text\nencoder distills each prompt batch into condition embeddings, which are then\ntransformed by a cascaded hyper-convolutional decoder into the full set of LoRA\nmatrices. Once trained in a diverse collection of prompt-checkpoint pairs, DnD\nproduces task-specific parameters in seconds, yielding i) up to\n12,000times lower overhead than full fine-tuning, ii) average gains\nup to 30\\% in performance over the strongest training LoRAs on unseen\ncommon-sense reasoning, math, coding, and multimodal benchmarks, and iii)\nrobust cross-domain generalization despite never seeing the target data or\nlabels. Our results demonstrate that prompt-conditioned parameter generation is\na viable alternative to gradient-based adaptation for rapidly specializing\nLLMs. Our project is available at\nhttps://jerryliang24.github.io/DnD{https://jerryliang24.github.io/DnD}.",
+    "authors": [
+      "Zhiyuan Liang",
+      "Dongwen Tang",
+      "Yuhao Zhou",
+      "Xuanlei Zhao",
+      "Mingjia Shi",
+      "Wangbo Zhao",
+      "Zekai Li",
+      "Peihao Wang",
+      "Konstantin Schürholt",
+      "Damian Borth",
+      "Michael M. Bronstein",
+      "Yang You",
+      "Zhangyang Wang",
+      "Kai Wang"
+    ],
+    "likes": 75,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16406",
+    "date_collected": "2025-06-24T07:08:03.507310+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "드래그 앤 드롭 LLMs: 제로 샷 프롬프트-투-웨이츠",
+      "abstract": "현대 파라미터 효율적인 파인튜닝(PEFT) 방법인 로우랭크 적응(LoRA)은 대형 언어 모델(LLMs) 맞춤화 비용을 줄이지만 여전히 각 하류 데이터셋에 대해 별도의 최적화 실행이 필요합니다. 저희는 프롬프트-조건 매개변수 생성기인 드래그 앤 드롭 LLMs(DnD)를 소개합니다. 이는 몇 가지 미출시된 작업 프롬프트를 직접 LoRA 가중치 업데이트로 매핑하여 작업당 훈련을 제거합니다. 가벼운 텍스트 인코더는 각 프롬프트 배치를 조건 임베딩으로 축소하고, 이후 이를 연속적 하이퍼-컨볼루션 디코더에 의해 전체 LoRA 행렬로 변환합니다. DnD는 다양한 프롬프트-체크포인트 쌍의 모임에서 훈련된 후 몇 초 안에 작업별 매개변수를 생성하며, i) 전체 파인튜닝 대비 최대 12,000배의 비용 절감, ii) 강력한 훈련 LoRA에 비해 견지 않은 상식 추론, 수학, 코딩, 다중모달 벤치마크에서 평균 최대 30% 성능 향상, iii) 대상 데이터나 라벨을 본 적이 없어도 강건한 교차 도메인 일반화를 제공합니다. 저희 결과는 빠르게 특화하는데 그래디언트 기반 적응 대안인 프롬프트-조건 매개변수 생성이 타당함을 보여줍니다."
+    },
+    "summary": "1. 드래그 앤 드롭 LLMs(DnD)는 로우랭크 적응 방법인 LoRA 가중치 업데이트로 작업별 훈련을 제거하고, 빠르게 작업별 매개변수를 생성하여 비용을 대폭 절감합니다.\n2. DnD는 강력한 LoRA 훈련에 비해 상식 추론, 수학, 코딩, 다중모달 벤치마크에서 최대 30%의 성능 향상을 제공하며, 대상 데이터나 라벨을 본 적이 없어도 교차 도메인 일반화를 효과적으로 수행합니다.\n3. 이 연구 결과는 그래디언트 기반 적응의 대안으로 프롬프트-조건 매개변수 생성이 LLMs를 특화시키는데 효과적임을 입증합니다.",
+    "categories": [
+      "LLM",
+      "NLP"
+    ]
+  },
+  {
+    "title": "Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal\n  Document Understanding",
+    "abstract": "Retrieval-Augmented Generation (RAG) systems have revolutionized information\nretrieval and question answering, but traditional text-based chunking methods\nstruggle with complex document structures, multi-page tables, embedded figures,\nand contextual dependencies across page boundaries. We present a novel\nmultimodal document chunking approach that leverages Large Multimodal Models\n(LMMs) to process PDF documents in batches while maintaining semantic coherence\nand structural integrity. Our method processes documents in configurable page\nbatches with cross-batch context preservation, enabling accurate handling of\ntables spanning multiple pages, embedded visual elements, and procedural\ncontent. We evaluate our approach on a curated dataset of PDF documents with\nmanually crafted queries, demonstrating improvements in chunk quality and\ndownstream RAG performance. Our vision-guided approach achieves better accuracy\ncompared to traditional vanilla RAG systems, with qualitative analysis showing\nsuperior preservation of document structure and semantic coherence.",
+    "authors": [
+      "Vishesh Tripathi",
+      "Tanmay Odapally",
+      "Indraneel Das",
+      "Uday Allu",
+      "Biddwan Ahmed"
+    ],
+    "likes": 53,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16035",
+    "date_collected": "2025-06-24T07:08:03.508496+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "비전 안내 청킹이 필요한 전부: 다중 모달 문서 이해 기능을 강화하는 RAG",
+      "abstract": "검색-증강 생성 (RAG) 시스템은 정보 검색과 질문 응답을 혁신적으로 바꿨지만, 복잡한 문서 구조, 다중 페이지 표, 포함된 그림, 그리고 페이지 경계를 넘나드는 문맥적 의존성과 호환되지 않는 전통적인 텍스트 기반 청킹 방법들이 어려움을 겪고 있습니다. 우리는 대형 다중 모달 모델(LMMs)을 활용한 신규 다중 모달 문서 청킹 접근 방식을 제안하여 PDF 문서를 일괄 처리하면서 의미론적 일관성과 구조적 통합을 유지합니다. 우리의 방법은 교차 배치 문맥 보존을 가능케 하여 구성 가능한 페이지 배치에서 문서를 처리하여 여러 페이지에 걸친 표, 포함된 시각적 요소, 절차적 내용을 정확히 처리할 수 있습니다. 우리는 수동으로 작성된 쿼리를 사용한 PDF 문서의 선별된 데이터셋에서 접근 방식을 평가하여 청킹 품질과 하류 RAG 성능의 향상을 보여줍니다. 우리의 비전 안내 접근 방식은 전통적인 보통 RAG 시스템에 비해 더 나은 정확도를 달성하며, 질적 분석을 통해 문서 구조와 의미론적 일관성의 탁월한 보존을 입증합니다."
+    },
+    "summary": "1. RAG 시스템의 문서 이해 기능 향상을 위해 LMMs를 활용한 새로운 다중 모달 문서 청킹 방식을 제안함.\n2. 쿼리가 수동으로 작성된 PDF 문서 데이터셋에서 우리의 방법을 평가하여 청킹 품질과 RAG 성능 개선을 입증함.\n3. 비전 안내 접근 방식은 전통적인 RAG 시스템에 비해 더 나은 정확도를 달성하고 문서 구조와 의미론적 일관성을 효율적으로 보존함.",
+    "categories": [
+      "Multimodal",
+      "NLP",
+      "Vision"
+    ]
+  },
+  {
+    "title": "PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and\n  Quantized Attention in Visual Generation Models",
+    "abstract": "In visual generation, the quadratic complexity of attention mechanisms\nresults in high memory and computational costs, especially for longer token\nsequences required in high-resolution image or multi-frame video generation. To\naddress this, prior research has explored techniques such as sparsification and\nquantization. However, these techniques face significant challenges under low\ndensity and reduced bitwidths. Through systematic analysis, we identify that\nthe core difficulty stems from the dispersed and irregular characteristics of\nvisual attention patterns. Therefore, instead of introducing specialized\nsparsification and quantization design to accommodate such patterns, we propose\nan alternative strategy: *reorganizing* the attention pattern to alleviate the\nchallenges. Inspired by the local aggregation nature of visual feature\nextraction, we design a novel **Pattern-Aware token ReOrdering (PARO)**\ntechnique, which unifies the diverse attention patterns into a\nhardware-friendly block-wise pattern. This unification substantially simplifies\nand enhances both sparsification and quantization. We evaluate the\nperformance-efficiency trade-offs of various design choices and finalize a\nmethodology tailored for the unified pattern. Our approach, **PAROAttention**,\nachieves video and image generation with lossless metrics, and nearly identical\nresults from full-precision (FP) baselines, while operating at notably lower\ndensity (~20%-30%) and bitwidth (**INT8/INT4**), achieving a **1.9x** to\n**2.7x** end-to-end latency speedup.",
+    "authors": [
+      "Tianchen Zhao",
+      "Ke Hong",
+      "Xinhao Yang",
+      "Xuefeng Xiao",
+      "Huixia Li",
+      "Feng Ling",
+      "Ruiqi Xie",
+      "Siqi Chen",
+      "Hongyu Zhu",
+      "Yichong Zhang",
+      "Yu Wang"
+    ],
+    "likes": 43,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16054",
+    "date_collected": "2025-06-24T07:08:03.509934+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "효율적인 희박 및 양자화 주의를 위한 패턴 인식 기반 재배치 모델",
+      "abstract": "시각 생성에서, 주요 메커니즘의 이차 복잡성은 고해상도 이미지 또는 다중 프레임 비디오 생성에 필요한 긴 토큰 시퀀스에 대해 높은 메모리 및 계산 비용으로 이어집니다. 이를 해결하기 위해, 이전 연구에서는 희소화(sparsification)와 양자화(quantization) 기술을 탐구해왔습니다. 그러나 이러한 기술은 낮은 밀도와 축소된 비트폭에서 중요한 도전에 직면합니다. 체계적인 분석을 통해 우리는 시각 주의 패턴의 분산되고 불규칙한 특성이 핵심 어려움임을 확인합니다. 이에 우리는 이러한 패턴을 수용하기 위해 특별한 희소화와 양자화 설계를 도입하는 대신, 도전을 완화하기 위해 주의 패턴을 재조정하는 대안 전략을 제안합니다. 시각적 특징 추출의 지역 집계 특성에서 영감을 받아, 우리는 다양한 주의 패턴을 하드웨어 친화적인 블록 방식 패턴으로 통합하는 혁신적인 \"패턴 인식 토큰 재배치 (PARO)\" 기술을 설계했습니다. 이 통합은 희소화와 양자화를 크게 단순화하고 강화합니다. 우리는 다양한 설계 선택의 성능-효율성의 상충관계를 평가하고 통합된 패턴에 특화된 방법론을 확정했습니다. 우리의 \"PAROAttention\" 접근법은 손실 메트릭으로 비디오 및 이미지 생성을 달성하며, 극히 낮은 밀도 (~20%-30%)와 비트폭(INT8/INT4)에서 작동하면서 거의 정밀 베이스라인과 동일한 결과를 달성하며 **1.9배**에서 **2.7배**의 종단-종단 지연 시간 가속도를 달성합니다."
+    },
+    "summary": "1. 시각 생성에서 발생하는 높은 메모리 및 계산 비용을 완화하기 위해 주의 패턴을 재배치하는 \"PAROAttention\" 모델이 제안되었습니다.\n2. \"PAROAttention\" 모델은 시각적 주의 패턴을 하드웨어 친화적인 블록 방식으로 통합하여 희소화와 양자화를 단순화하고 강화합니다.\n3. 이 모델은 손실 메트릭을 갖는 비디오 및 이미지 생성을 가능하게 하며, 낮은 밀도와 비트폭에서 빠른 작동을 보장하여 정밀 베이스라인과 비슷한 결과를 달성합니다.",
+    "categories": [
+      "Computer Vision",
+      "Optimization",
+      "AI (인공지능)"
+    ]
+  },
+  {
+    "title": "VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement\n  Learning",
+    "abstract": "Coordinating multiple embodied agents in dynamic environments remains a core\nchallenge in artificial intelligence, requiring both perception-driven\nreasoning and scalable cooperation strategies. While recent works have\nleveraged large language models (LLMs) for multi-agent planning, a few have\nbegun to explore vision-language models (VLMs) for visual reasoning. However,\nthese VLM-based approaches remain limited in their support for diverse\nembodiment types. In this work, we introduce VIKI-Bench, the first hierarchical\nbenchmark tailored for embodied multi-agent cooperation, featuring three\nstructured levels: agent activation, task planning, and trajectory perception.\nVIKI-Bench includes diverse robot embodiments, multi-view visual observations,\nand structured supervision signals to evaluate reasoning grounded in visual\ninputs. To demonstrate the utility of VIKI-Bench, we propose VIKI-R, a\ntwo-stage framework that fine-tunes a pretrained vision-language model (VLM)\nusing Chain-of-Thought annotated demonstrations, followed by reinforcement\nlearning under multi-level reward signals. Our extensive experiments show that\nVIKI-R significantly outperforms baselines method across all task levels.\nFurthermore, we show that reinforcement learning enables the emergence of\ncompositional cooperation patterns among heterogeneous agents. Together,\nVIKI-Bench and VIKI-R offer a unified testbed and method for advancing\nmulti-agent, visual-driven cooperation in embodied AI systems.",
+    "authors": [
+      "Li Kang",
+      "Xiufeng Song",
+      "Heng Zhou",
+      "Yiran Qin",
+      "Jie Yang",
+      "Xiaohong Liu",
+      "Philip Torr",
+      "Lei Bai",
+      "Zhenfei Yin"
+    ],
+    "likes": 29,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2506.09049",
+    "date_collected": "2025-06-24T07:08:03.511288+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "VIKI-R: 강화 학습을 통한 신체화된 다중 에이전트 협력 조정",
+      "abstract": "동적 환경에서 다수의 신체화된 에이전트를 조정하는 것은 인공지능의 핵심 과제로, 지각 주도 추론과 확장 가능한 협력 전략이 필요합니다. 최근 연구들은 대형 언어 모델(Large Language Models, LLMs)을 활용하여 다중 에이전트 계획을 진행해왔지만, 시각-언어 모델(Vision-Language Models, VLMs)을 시각 추론에 활용한 연구는 드물었습니다. 그러나 이러한 VLM 기반 접근법은 다양한 신체화 유형을 지원하는 데 한계가 있습니다. 본 연구에서는 신체화된 다중 에이전트 협력을 위해 개선된 첫 번째 계층적 벤치마크인 VIKI-Bench를 소개합니다. VIKI-Bench는 에이전트 활성화, 작업 계획, 경로 인식 세 가지 구조화된 수준을 가지며, 다양한 로봇 신체, 다중 시야 시각 관측, 구조화된 지도 신호 등을 제공하여 시각 입력에 기반한 추론을 평가합니다. VIKI-Bench의 유효성을 입증하기 위해 VIKI-R을 제안합니다. VIKI-R은 사전 훈련된 시각-언어 모델(VLM)을 Chain-of-Thought 주석이 달린 데모를 통해 세밀하게 조정한 후, 다단계 보상 신호 하에서 강화 학습을 진행하는 이차적 프레임워크입니다. 광범위한 실험에서, VIKI-R이 모든 작업 수준에서 기존 방법을 크게 능가함을 보여줍니다. 또한, 강화 학습을 통해 이질적 인공체 간 복합적인 협력 패턴이 나타남을 보여줍니다. VIKI-Bench와 VIKI-R은 신체화된 AI 시스템에서 다중 에이전트를 위한 시각 중심 협력을 진보시키기 위한 통합된 테스트베드와 방법을 제공합니다."
+    },
+    "summary": "1. VIKI-Bench는 다양한 로봇 신체와 시각 관측에 기반한 다중 에이전트 협력을 위한 첫 번째 계층적 벤치마크이다.\n2. VIKI-R은 사전 훈련된 시각-언어 모델을 세밀하게 조정하고, 다단계 보상 신호 하에서 강화 학습을 수행하여 체계적인 협력 패턴을 발전시킨다.\n3. 실험 결과는 VIKI-R이 모든 작업 수준에서 다른 방법을 능가하며, 강화 학습이 이질적인 에이전트 간의 복합적 협력 패턴을 가능케 한다는 것을 보여준다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation with\n  Hybrid History Condition",
+    "abstract": "Recent advances in diffusion-based and controllable video generation have\nenabled high-quality and temporally coherent video synthesis, laying the\ngroundwork for immersive interactive gaming experiences. However, current\nmethods face limitations in dynamics, generality, long-term consistency, and\nefficiency, which limit the ability to create various gameplay videos. To\naddress these gaps, we introduce Hunyuan-GameCraft, a novel framework for\nhigh-dynamic interactive video generation in game environments. To achieve\nfine-grained action control, we unify standard keyboard and mouse inputs into a\nshared camera representation space, facilitating smooth interpolation between\nvarious camera and movement operations. Then we propose a hybrid\nhistory-conditioned training strategy that extends video sequences\nautoregressively while preserving game scene information. Additionally, to\nenhance inference efficiency and playability, we achieve model distillation to\nreduce computational overhead while maintaining consistency across long\ntemporal sequences, making it suitable for real-time deployment in complex\ninteractive environments. The model is trained on a large-scale dataset\ncomprising over one million gameplay recordings across over 100 AAA games,\nensuring broad coverage and diversity, then fine-tuned on a carefully annotated\nsynthetic dataset to enhance precision and control. The curated game scene data\nsignificantly improves the visual fidelity, realism and action controllability.\nExtensive experiments demonstrate that Hunyuan-GameCraft significantly\noutperforms existing models, advancing the realism and playability of\ninteractive game video generation.",
+    "authors": [
+      "Jiaqi Li",
+      "Junshu Tang",
+      "Zhiyong Xu",
+      "Longhuang Wu",
+      "Yuan Zhou",
+      "Shuai Shao",
+      "Tianbao Yu",
+      "Zhiguo Cao",
+      "Qinglin Lu"
+    ],
+    "likes": 23,
+    "published_date": "Jun 20",
+    "url": "https://huggingface.co/papers/2506.17201",
+    "date_collected": "2025-06-24T07:08:03.512631+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "헌유안-게임크래프트: 하이다이내믹 상호작용형 게임 동영상 생성과 혼합 히스토리 조건",
+      "abstract": "최근 확산 기반 및 제어 가능한 동영상 생성의 발전으로 높은 품질과 시간적 일관성을 가진 동영상 합성이 가능해졌으며, 이는 몰입형 상호작용형 게임 경험을 위한 기반을 다졌다. 그러나 현재의 방법은 동적성, 일반성, 장기일관성, 효율성과 같은 한계에 직면하여 다양한 게임 플레이 동영상을 만들어내는 능력을 제한하고 있다. 이러한 공백을 해결하기 위해 헌유안-게임크래프트라는 고유한 고다이내믹 상호작용형 비디오 생성 프레임워크를 제안한다. 섬세한 작업 제어를 달성하기 위해 표준 키보드 및 마우스 입력을 공유된 카메라 표현 공간으로 통합하여 다양한 카메라 및 이동 작업 간의 부드러운 보간을 용이하게 한다. 그런 다음 비디오 시퀀스를 확장하면서 게임 장면 정보를 보존하는 하이브리드 히스토리 조건 훈련 전략을 제안하였다. 또한 추론 효율성과 플레이어의 플레이 가능성을 향상시키기 위해 모델 증류를 실현하여 계산부하를 줄이면서 장기 시퀀스 전체에서 일관성을 유지하여 복잡한 상호작용 환경에서 실시간 배포에 적합하게 만들었다. 이 모델은 100여 개의 AAA 게임을 넘어가는 100만 건 이상의 게임 플레이 녹화물을 포함한 대규모 데이터셋으로 훈련되어 다양성과 광범위한 보호를 확보한 뒤, 정밀도와 제어성을 향상시키기 위해 신중하게 주석이 달린 합성 데이터셋에서 파인튠을 실시한다. 선별된 게임 장면 데이터는 시각적 충실성, 현실감 및 작업 제어 가능성을 크게 향상시킨다. 포괄적인 실험 결과는 헌유안-게임크래프트가 기존 모델들을 획기적으로 능가함을 보여주며, 상호작용형 게임 비디오 생성의 현실성과 플레이어 경험을 진전시킨다."
+    },
+    "summary": "1. 헌유안-게임크래프트는 고다이내믹 상호작용형 비디오 생성을 위한 혼합 히스토리 조건 프레임워크를 제안한다.\n2. 표준 키보드와 마우스 입력을 통합하여 부드러운 작업 제어를 달성하며, 게임 시네마틱을 자연스럽게 확장한다.\n3. 대규모 데이터셋과 모델 증류, 파인튜닝을 통해 현실성과 제어성을 향상시킨 헌유안-게임크래프트는 상호작용형 게임 비디오 생성에서 기존 모델을 획기적으로 능가한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Optimization"
+    ]
+  },
+  {
+    "title": "Optimizing Multilingual Text-To-Speech with Accents & Emotions",
+    "abstract": "State-of-the-art text-to-speech (TTS) systems realize high naturalness in\nmonolingual environments, synthesizing speech with correct multilingual accents\n(especially for Indic languages) and context-relevant emotions still poses\ndifficulty owing to cultural nuance discrepancies in current frameworks. This\npaper introduces a new TTS architecture integrating accent along with\npreserving transliteration with multi-scale emotion modelling, in particularly\ntuned for Hindi and Indian English accent. Our approach extends the Parler-TTS\nmodel by integrating A language-specific phoneme alignment hybrid\nencoder-decoder architecture, and culture-sensitive emotion embedding layers\ntrained on native speaker corpora, as well as incorporating a dynamic accent\ncode switching with residual vector quantization. Quantitative tests\ndemonstrate 23.7% improvement in accent accuracy (Word Error Rate reduction\nfrom 15.4% to 11.8%) and 85.3% emotion recognition accuracy from native\nlisteners, surpassing METTS and VECL-TTS baselines. The novelty of the system\nis that it can mix code in real time - generating statements such as \"Namaste,\nlet's talk about <Hindi phrase>\" with uninterrupted accent shifts while\npreserving emotional consistency. Subjective evaluation with 200 users reported\na mean opinion score (MOS) of 4.2/5 for cultural correctness, much better than\nexisting multilingual systems (p<0.01). This research makes cross-lingual\nsynthesis more feasible by showcasing scalable accent-emotion disentanglement,\nwith direct application in South Asian EdTech and accessibility software.",
+    "authors": [
+      "Pranav Pawar",
+      "Akshansh Dwivedi",
+      "Jenish Boricha",
+      "Himanshu Gohil",
+      "Aditya Dubey"
+    ],
+    "likes": 21,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16310",
+    "date_collected": "2025-06-24T07:08:03.513788+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "다국어 텍스트 음성 합성 최적화: 액센트와 감정",
+      "abstract": "최신 텍스트 음성 (TTS) 시스템은 단일 언어 환경에서 자연스러운 발화를 실현하지만, 올바른 다국어 액센트(특히 인디어어) 및 문맥 관련 감정을 합성하는 것은 현재 프레임워크의 문화적 미묘성 차이로 어려움을 겪고 있다. 본 논문에서는 힌디어 및 인도 영어 액센트를 특히 조율한 멀티-스케일 감정 모델링을 보존하는 액센트를 통합한 새로운 TTS 아키텍처를 소개한다. 저자들은 Parler-TTS 모델을 확장하여 언어별 음소 정렬 하이브리드 인코더-디코더 아키텍처, 원어민 음성자료를 기반으로 훈련된 문화적으로 민감한 감정 임베딩 레이어를 통합하고, 잔여 벡터 양자화를 활용한 동적 액센트 코드 전환을 포함시켰다. 양적 테스트 결과, 액센트 정확도가 23.7% 향상되었고(단어 오류율 15.4%에서 11.8%로 감소), 원어민 청취자로부터 85.3%의 감정 인식 정확도를 달성하여 METTS 및 VECL-TTS 기준선을 능가했다. 이 시스템의 독창성은 감정 일관성을 유지하면서 '남마스테, <힌디어 문구>에 대해 이야기해 봅시다'와 같은 문장을 생성하면서 중단되지 않는 액센트 변화를 실시간으로 혼합할 수 있다는 점이다. 200명의 사용자를 대상으로 한 주관적 평가에서 문화적 정확성에 대한 평균 의견 점수(MOS)는 4.2로, 기존 다국어 시스템보다 훨씬 우수하다(p<0.01). 이 연구는 확장 가능한 액센트-감정 이질성을 보여주며, 남아시아 EdTech 및 접근성 소프트웨어에 직접 적용할 수 있는 교차언어 합성을 더 실현 가능하게 한다."
+    },
+    "summary": "1. 새로운 TTS 아키텍처는 힌디어와 인도 영어 액센트에 맞춘 멀티-스케일 감정 모델링을 통해 액센트와 감정을 효율적으로 처리하며, 액센트 정확도와 감정 인식 정확도 측면에서 METTS 및 VECL-TTS를 능가한다.\n2. 시스템은 실시간으로 액센트를 변환하면서 감정 일관성을 유지하며, 문화적 정확성 측면에서 기존 다국어 시스템보다 우수성을 나타내며, 사용자 평가에서 높은 평가를 받았다.\n3. 이 연구는 교차언어 합성의 취약한 부분인 액센트와 감정을 효율적으로 다루어, 남아시아 EdTech 및 접근성 소프트웨어 분야에 적용 가능한 기술적인 진전을 제시한다.",
+    "categories": [
+      "NLP",
+      "Multimodal",
+      "Education"
+    ]
+  },
+  {
+    "title": "DreamCube: 3D Panorama Generation via Multi-plane Synchronization",
+    "abstract": "3D panorama synthesis is a promising yet challenging task that demands\nhigh-quality and diverse visual appearance and geometry of the generated\nomnidirectional content. Existing methods leverage rich image priors from\npre-trained 2D foundation models to circumvent the scarcity of 3D panoramic\ndata, but the incompatibility between 3D panoramas and 2D single views limits\ntheir effectiveness. In this work, we demonstrate that by applying multi-plane\nsynchronization to the operators from 2D foundation models, their capabilities\ncan be seamlessly extended to the omnidirectional domain. Based on this design,\nwe further introduce DreamCube, a multi-plane RGB-D diffusion model for 3D\npanorama generation, which maximizes the reuse of 2D foundation model priors to\nachieve diverse appearances and accurate geometry while maintaining multi-view\nconsistency. Extensive experiments demonstrate the effectiveness of our\napproach in panoramic image generation, panoramic depth estimation, and 3D\nscene generation.",
+    "authors": [
+      "Yukun Huang",
+      "Yanning Zhou",
+      "Jianan Wang",
+      "Kaiyi Huang",
+      "Xihui Liu"
+    ],
+    "likes": 15,
+    "published_date": "Jun 20",
+    "url": "https://huggingface.co/papers/2506.17206",
+    "date_collected": "2025-06-24T07:08:03.514943+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "드림큐브: 다중 평면 동기화를 통한 3D 파노라마 생성",
+      "abstract": "3D 파노라마 합성은 고품질과 다양한 시각적 외형, 그리고 생성된 전방향 콘텐츠의 지오메트리를 요구하는 유망하면서도 도전적인 과제입니다. 기존 방법은 3D 파노라마 데이터의 부족을 회피하기 위해 사전 훈련된 2D 기본 모델로부터 풍부한 이미지 사전 지식을 활용하지만, 3D 파노라마와 2D 단일 뷰 간의 호환성 문제로 인해 그 효과가 제한됩니다. 본 논문에서는 2D 기본 모델의 연산자에 다중 평면 동기화를 적용함으로써 이들 능력을 원 모든 방향 도메인으로 매끄럽게 확장할 수 있다는 것을 입증하고 있습니다. 이러한 설계를 기반으로, 우리는 3D 파노라마 생성을 위한 다중 평면 RGB-D 확산 모델인 드림큐브를 소개하며, 2D 기본 모델 사전을 최대한 재활용하여 다양한 외형과 정확한 지오메트리를 달성하면서도 다중 뷰 일관성을 유지합니다. 광범위한 실험을 통해 우리의 접근 방식이 파노라마 이미지 생성, 파노라마 깊이 추정 및 3D 장면 생성에서 효과적임을 입증합니다."
+    },
+    "summary": "1. 3D 파노라마 생성에 있어 2D 기본 모델의 다중 평면 동기화가 적용된 드림큐브 모델은 다양한 외형과 정확한 지오메트리를 달성함.\n2. 다중 평면 동기화를 통해 이루어지는 3D 파노라마 생성 방법은 2D와 3D 데이터 간 호환성 문제를 극복하여 다양한 효과적인 결과를 도출함.\n3. 실험 결과는 드림큐브 모델이 파노라마 이미지 생성, 파노라마 깊이 추정, 그리고 3D 장면 생성 등 다양한 작업에서 효과적임을 보여줌.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate\n  Details",
+    "abstract": "In this report, we present Hunyuan3D 2.5, a robust suite of 3D diffusion\nmodels aimed at generating high-fidelity and detailed textured 3D assets.\nHunyuan3D 2.5 follows two-stages pipeline of its previous version Hunyuan3D\n2.0, while demonstrating substantial advancements in both shape and texture\ngeneration. In terms of shape generation, we introduce a new shape foundation\nmodel -- LATTICE, which is trained with scaled high-quality datasets,\nmodel-size, and compute. Our largest model reaches 10B parameters and generates\nsharp and detailed 3D shape with precise image-3D following while keeping mesh\nsurface clean and smooth, significantly closing the gap between generated and\nhandcrafted 3D shapes. In terms of texture generation, it is upgraded with\nphyiscal-based rendering (PBR) via a novel multi-view architecture extended\nfrom Hunyuan3D 2.0 Paint model. Our extensive evaluation shows that Hunyuan3D\n2.5 significantly outperforms previous methods in both shape and end-to-end\ntexture generation.",
+    "authors": [
+      "Zeqiang Lai",
+      "Yunfei Zhao",
+      "Haolin Liu",
+      "Zibo Zhao",
+      "Qingxiang Lin",
+      "Huiwen Shi",
+      "Xianghui Yang",
+      "Mingxin Yang",
+      "Shuhui Yang",
+      "Yifei Feng",
+      "Sheng Zhang",
+      "Xin Huang",
+      "Di Luo",
+      "Fan Yang",
+      "Fang Yang",
+      "Lifu Wang",
+      "Sicong Liu",
+      "Yixuan Tang",
+      "Yulin Cai",
+      "Zebin He",
+      "Tian Liu",
+      "Yuhong Liu"
+    ],
+    "likes": 12,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16504",
+    "date_collected": "2025-06-24T07:08:03.516869+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "Hunyuan3D 2.5: 최고 상세 3D 에셋 생성을 향한 고화질 3D 모델 생성",
+      "abstract": "본 보고서에서는 고화질 및 상세한 텍스처 3D 에셋을 생성하는 강력한 3D 확산 모델인 Hunyuan3D 2.5를 제시합니다. Hunyuan3D 2.5는 이전 버전인 Hunyuan3D 2.0의 두 단계 파이프라인을 따르면서 모양과 텍스처 생성 모두에서 상당한 발전을 보입니다."
+    },
+    "summary": "1. Hunyuan3D 2.5는 새로운 모양 기초 모델인 LATTICE를 도입하여 10B 매개변수를 보유하며 고화질 데이터셋, 모델 크기 및 연산으로 훈련되어 선명하고 상세한 3D 모양을 생성합니다.\n2. 텍스처 생성 측면에서, Hunyuan3D 2.5는 Hunyuan3D 2.0 Paint 모델에서 확장된 혁신적인 다중 시점 아키텍처를 통해 물리 기반 렌더링(PBR)을 강화했으며 다양한 평가에서 이전 방법보다 우수한 성능을 보입니다.\n3. 연구는 이전 방법을 능가하는 형태와 종단간 텍스처 생성에서 Hunyuan3D 2.5의 우수성을 입증합니다.",
+    "categories": [
+      "Computer Vision",
+      "Optimization",
+      "Graphics"
+    ]
+  },
+  {
+    "title": "Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual\n  Tokens",
+    "abstract": "Vision-language models (VLMs) excel at multimodal understanding, yet their\ntext-only decoding forces them to verbalize visual reasoning, limiting\nperformance on tasks that demand visual imagination. Recent attempts train VLMs\nto render explicit images, but the heavy image-generation pre-training often\nhinders the reasoning ability. Inspired by the way humans reason with mental\nimagery-the internal construction and manipulation of visual cues-we\ninvestigate whether VLMs can reason through interleaved multimodal trajectories\nwithout producing explicit images. To this end, we present a Machine Mental\nImagery framework, dubbed as Mirage, which augments VLM decoding with latent\nvisual tokens alongside ordinary text. Concretely, whenever the model chooses\nto ``think visually'', it recasts its hidden states as next tokens, thereby\ncontinuing a multimodal trajectory without generating pixel-level images. Begin\nby supervising the latent tokens through distillation from ground-truth image\nembeddings, we then switch to text-only supervision to make the latent\ntrajectory align tightly with the task objective. A subsequent reinforcement\nlearning stage further enhances the multimodal reasoning capability.\nExperiments on diverse benchmarks demonstrate that Mirage unlocks stronger\nmultimodal reasoning without explicit image generation.",
+    "authors": [
+      "Zeyuan Yang",
+      "Xueyang Yu",
+      "Delin Chen",
+      "Maohao Shen",
+      "Chuang Gan"
+    ],
+    "likes": 10,
+    "published_date": "Jun 20",
+    "url": "https://huggingface.co/papers/2506.17218",
+    "date_collected": "2025-06-24T07:08:03.518041+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "기계적 시각 상상: 잠재 시각 토큰으로 다중 모달 추론 강화",
+      "abstract": "비전-언어 모델(Vision-language models, VLMs)은 다중 모달 이해에서 뛰어나지만 텍스트만 디코딩하는 한계로 시각 상상을 강제로 언어화해 성능을 제한한다. 본 논문에서는 'Mirage'라고 명명된 기계적 시각 상상 프레임워크를 제시하여 VLM 디코딩에 잠재 시각 토큰을 추가하여 다중 모달 추론 능력을 강화하는 것을 탐구한다."
+    },
+    "summary": "1. 최근 시도는 VLM이 명시적 이미지를 생성하도록 훈련시키지만, 무거운 이미지 생성 사전 훈련은 추론 능력을 제한할 수 있다.\n2. Mirage는 숨겨진 상태를 다음 토큰으로 변환함으로써 모델이 '시각적으로 사색(visual thinking)'을 선택할 때 픽셀 수준 이미지를 생성하지 않으면서 다중 모달 경로를 계속할 수 있게 한다.\n3. 다양한 벤치마크 실험에서 Mirage는 명시적 이미지 생성 없이 강한 다중 모달 추론을 가능하게 한다는 것을 입증한다.",
+    "categories": [
+      "Vision",
+      "Multimodal",
+      "NLP"
+    ]
+  },
+  {
+    "title": "InfiniPot-V: Memory-Constrained KV Cache Compression for Streaming Video\n  Understanding",
+    "abstract": "Modern multimodal large language models (MLLMs) can reason over hour-long\nvideo, yet their key-value (KV) cache grows linearly with time--quickly\nexceeding the fixed memory of phones, AR glasses, and edge robots. Prior\ncompression schemes either assume the whole video and user query are available\noffline or must first build the full cache, so memory still scales with stream\nlength. InfiniPot-V is the first training-free, query-agnostic framework that\nenforces a hard, length-independent memory cap for streaming video\nunderstanding. During video encoding it monitors the cache and, once a user-set\nthreshold is reached, runs a lightweight compression pass that (i) removes\ntemporally redundant tokens via Temporal-axis Redundancy (TaR) metric and (ii)\nkeeps semantically significant tokens via Value-Norm (VaN) ranking. Across four\nopen-source MLLMs and four long-video and two streaming-video benchmarks,\nInfiniPot-V cuts peak GPU memory by up to 94%, sustains real-time generation,\nand matches or surpasses full-cache accuracy--even in multi-turn dialogues. By\ndissolving the KV cache bottleneck without retraining or query knowledge,\nInfiniPot-V closes the gap for on-device streaming video assistants.",
+    "authors": [
+      "Minsoo Kim",
+      "Kyuhong Shim",
+      "Jungwook Choi",
+      "Simyung Chang"
+    ],
+    "likes": 8,
+    "published_date": "Jun 18",
+    "url": "https://huggingface.co/papers/2506.15745",
+    "date_collected": "2025-06-24T07:08:03.519163+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "메모리 제약 KV 캐시 압축 기법 InfiniPot-V: 스트리밍 비디오 이해를 위한",
+      "abstract": "현대적인 다중 모달 대형 언어 모델(Multimodal Large Language Models, MLLMs)은 수십 시간짜리 비디오에 대한 추론을 할 수 있지만, 그들의 key-value (KV) 캐시는 시간에 비례하여 급격하게 증가하며 결국 폰, AR 글래스, 엣지 로봇 등의 고정된 메모리를 초과하게 된다. InfiniPot-V는 스트리밍 비디오 이해를 위한 최초의 훈련 없이 쿼리에 중립적인 프레임워크로, 길이와 관련없는 메모리 한도를 강제하는 기술이다. 비디오 인코딩 중에 캐시를 모니터링하고 사용자 설정 임계값에 도달하면 가볍고 압축적인 과정을 실행하여 임시 중복 토큰을 제거하고 의미론적으로 중요한 토큰을 유지하는 방식으로 동작한다."
+    },
+    "summary": "1. InfiniPot-V는 스트리밍 비디오의 메모리 제한을 두어 실시간 생성과 전체 캐시 정확도를 유지하면서 최대 94%까지 GPU 메모리를 절약한다.\n2. InfiniPot-V는 사용자 쿼리 지식이나 재훈련 없이 KV 캐시 병목 현상을 해소하며 장치 내 스트리밍 비디오 어시스턴트에 대한 간극을 좁힌다.\n3. 이 프레임워크는 Temporal-axis Redundancy (TaR) 측정과 Value-Norm (VaN) 랭킹을 통해 임시 중복 토큰을 제거하고 의미론적으로 중요한 토큰을 유지하여 작동한다.",
+    "categories": [
+      "Multimodal",
+      "NLP",
+      "Computer Vision"
+    ]
+  }
+]

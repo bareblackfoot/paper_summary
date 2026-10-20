@@ -1,0 +1,326 @@
+[
+  {
+    "title": "Qwen-Image Technical Report",
+    "abstract": "We present Qwen-Image, an image generation foundation model in the Qwen\nseries that achieves significant advances in complex text rendering and precise\nimage editing. To address the challenges of complex text rendering, we design a\ncomprehensive data pipeline that includes large-scale data collection,\nfiltering, annotation, synthesis, and balancing. Moreover, we adopt a\nprogressive training strategy that starts with non-text-to-text rendering,\nevolves from simple to complex textual inputs, and gradually scales up to\nparagraph-level descriptions. This curriculum learning approach substantially\nenhances the model's native text rendering capabilities. As a result,\nQwen-Image not only performs exceptionally well in alphabetic languages such as\nEnglish, but also achieves remarkable progress on more challenging logographic\nlanguages like Chinese. To enhance image editing consistency, we introduce an\nimproved multi-task training paradigm that incorporates not only traditional\ntext-to-image (T2I) and text-image-to-image (TI2I) tasks but also\nimage-to-image (I2I) reconstruction, effectively aligning the latent\nrepresentations between Qwen2.5-VL and MMDiT. Furthermore, we separately feed\nthe original image into Qwen2.5-VL and the VAE encoder to obtain semantic and\nreconstructive representations, respectively. This dual-encoding mechanism\nenables the editing module to strike a balance between preserving semantic\nconsistency and maintaining visual fidelity. Qwen-Image achieves\nstate-of-the-art performance, demonstrating its strong capabilities in both\nimage generation and editing across multiple benchmarks.",
+    "authors": [
+      "Chenfei Wu",
+      "Jiahao Li",
+      "Jingren Zhou",
+      "Junyang Lin",
+      "Kaiyuan Gao",
+      "Kun Yan",
+      "Sheng-ming Yin",
+      "Shuai Bai",
+      "Xiao Xu",
+      "Yilei Chen",
+      "Yuxiang Chen",
+      "Zecheng Tang",
+      "Zekai Zhang",
+      "Zhengyi Wang",
+      "An Yang",
+      "Bowen Yu",
+      "Chen Cheng",
+      "Dayiheng Liu",
+      "Deqing Li",
+      "Hang Zhang",
+      "Hao Meng",
+      "Hu Wei"
+    ],
+    "likes": 128,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2508.02324",
+    "date_collected": "2025-08-07T07:08:32.492641+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "Qwen-Image 기술 보고서",
+      "abstract": "Qwen 시리즈의 이미지 생성 기반 모델인 Qwen-Image를 제안하며, 복잡한 텍스트 렌더링과 정밀한 이미지 편집에서 큰 진전을 이루었습니다. 본 연구에서는 대규모 데이터 수집, 필터링, 주석 달기, 합성 및 균형화를 포함하는 포괄적인 데이터 파이프라인을 설계하여 복잡한 텍스트 렌더링의 어려움에 대처했습니다."
+    },
+    "summary": "1. Qwen-Image는 복잡한 텍스트 렌더링에 대한 도전에 대응하기 위해 진보된 학습 전략과 커리큘럼 학습 방식을 도입하여 모델의 텍스트 렌더링 능력을 혁신적으로 향상시켰습니다.\n2. 이미지 편집 일관성을 강화하기 위해 기존의 텍스트-이미지 및 이미지-이미지 재구성 작업에 이미지-이미지 재구성을 포함하는 개선된 다중 작업 학습 패러다임을 소개하였으며, 이를 통해 Qwen-Image는 다중 벤치마크에서 우수한 성능을 발휘합니다.\n3. Qwen-Image는 이미지 생성 및 편집 분야에서 최첨단 성능을 달성하며, 알파벳 언어뿐만 아니라 중국어와 같은 로고그래픽 언어에서도 현저한 진전을 이룹니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent\n  Foundation Models Training",
+    "abstract": "General AI Agents are increasingly recognized as foundational frameworks for\nthe next generation of artificial intelligence, enabling complex reasoning, web\ninteraction, coding, and autonomous research capabilities. However, current\nagent systems are either closed-source or heavily reliant on a variety of paid\nAPIs and proprietary tools, limiting accessibility and reproducibility for the\nresearch community. In this work, we present Cognitive Kernel-Pro, a\nfully open-source and (to the maximum extent) free multi-module agent framework\ndesigned to democratize the development and evaluation of advanced AI agents.\nWithin Cognitive Kernel-Pro, we systematically investigate the curation of\nhigh-quality training data for Agent Foundation Models, focusing on the\nconstruction of queries, trajectories, and verifiable answers across four key\ndomains: web, file, code, and general reasoning. Furthermore, we explore novel\nstrategies for agent test-time reflection and voting to enhance agent\nrobustness and performance. We evaluate Cognitive Kernel-Pro on GAIA, achieving\nstate-of-the-art results among open-source and free agents. Notably, our\n8B-parameter open-source model surpasses previous leading systems such as\nWebDancer and WebSailor, establishing a new performance standard for\naccessible, high-capability AI agents. Code is available at\nhttps://github.com/Tencent/CognitiveKernel-Pro",
+    "authors": [
+      "Tianqing Fang",
+      "Zhisong Zhang",
+      "Xiaoyang Wang",
+      "Rui Wang",
+      "Can Qin",
+      "Yuxuan Wan",
+      "Jun-Yu Ma",
+      "Ce Zhang",
+      "Jiaqi Chen",
+      "Xiyun Li",
+      "Hongming Zhang",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "likes": 71,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00414",
+    "date_collected": "2025-08-07T07:08:32.494159+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "인지적 커널-프로: 심층 연구 에이전트 및 에이전트 기반 모델 훈련을 위한 프레임워크",
+      "abstract": "일반 인공 지능 에이전트들은 복잡한 추론, 웹 상호작용, 코딩 및 자율적인 연구 능력을 가능케 함으로써, 다음 세대 인공 지능을 위한 기초적인 프레임워크로 점점 더 인식받고 있습니다. 그러나 현재의 에이전트 시스템은 일반적으로 소스가 공개되지 않거나 여러 유료 API 및 독점적인 도구에 강하게 의존하므로, 연구 공동체에 대한 접근성과 재현성이 제한되어 있습니다. 본 연구에서는 인지적 커널-프로를 제시하며, 이는 완전히 공개되고 (최대한) 무료인 다중 모듈 에이전트 프레임워크로, 고급 인공 지능 에이전트의 개발과 평가를 대중화하기 위해 설계되었습니다. 인지적 커널-프로 내에서는 에이전트 기반 모델의 고품질 훈련 데이터 구성을 체계적으로 조사하며, 웹, 파일, 코드 및 일반 추론 네 가지 주요 영역에서의 질문, 경로 및 검증 가능한 답변의 구축에 초점을 맞춥니다. 더불어, 에이전트 테스트시간 반성과 투표에 대한 혁신적인 전략을 탐구하여 에이전트의 견고성과 성능을 향상시킵니다. 우리는 GAIA에서 인지적 커널-프로를 평가하여, 오픈소스 및 무료 에이전트 중 최고 수준의 결과를 달성하였습니다. 특히, 우리의 80억 파라미터 공개 모델은 WebDancer 및 WebSailor와 같은 이전 선도 시스템을 넘어선 새로운 성능 기준을 세우며, 접근성과 고능력의 AI 에이전트를 위한 새로운 모델을 제시합니다. 코드는 https://github.com/Tencent/CognitiveKernel-Pro에서 제공됩니다."
+    },
+    "summary": "1. 인공지능에 기초를 둔 다양한 분야의 고급 에이전트 개발과 평가를 대중화하기 위한 인지적 커널-프로 프레임워크 소개\n2. 웹, 파일, 코드, 일반 추론 네 가지 주요 영역에서 훈련 데이터를 체계적으로 조사하며, 에이전트의 성능을 향상시키는 새로운 전략 탐구\n3. 오픈소스 및 무료 에이전트 중 최고 성능 달성 및 이전 선도 시스템을 능가하는 80억 파라미터 모델 개발 및 성과 확인",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed\n  Inference",
+    "abstract": "We present Seed Diffusion Preview, a large-scale language model based on\ndiscrete-state diffusion, offering remarkably fast inference speed. Thanks to\nnon-sequential, parallel generation, discrete diffusion models provide a\nnotable speedup to mitigate the inherent latency of token-by-token decoding, as\ndemonstrated recently (e.g., Mercury Coder, Gemini Diffusion). Seed Diffusion\nPreview achieves an inference speed of 2,146 token/s over H20 GPUs while\nmaintaining competitive performance across a sweep of standard code evaluation\nbenchmarks, significantly faster than contemporary Mercury and Gemini\nDiffusion, establishing new state of the art on the speed-quality Pareto\nfrontier for code models.",
+    "authors": [
+      "Yuxuan Song",
+      "Zheng Zhang",
+      "Cheng Luo",
+      "Pengyang Gao",
+      "Fan Xia",
+      "Hao Luo",
+      "Zheng Li",
+      "Yuehang Yang",
+      "Hongli Yu",
+      "Xingwei Qu",
+      "Yuwei Fu",
+      "Jing Su",
+      "Ge Zhang",
+      "Wenhao Huang",
+      "Mingxuan Wang",
+      "Lin Yan",
+      "Xiaoying Jia",
+      "Jingjing Liu",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Yonghui Wu",
+      "Hao Zhou"
+    ],
+    "likes": 61,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2508.02193",
+    "date_collected": "2025-08-07T07:08:32.496022+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "씨드 디퓨전: 고속 추론을 지원하는 대규모 디퓨전 언어 모델",
+      "abstract": "이 연구는 이산 상태 디퓨전을 기반으로 한 대규모 언어 모델인 씨드 디퓨전 프리뷰를 소개하며, 매우 빠른 추론 속도를 제공한다. 비순차적이고 병렬 생성으로 인해 이산 디퓨전 모델은 토큰 단위 디코딩의 내재적 지연을 완화하기 위한 주목할만한 속도 향상을 제공한다. 최근에 시연된 Mercury Coder, Gemini Diffusion과 같이 표준 코드 평가 벤치마크를 횡단하는 효율적인 성능을 유지하면서, H20 GPU에서 초당 2,146 토큰의 추론 속도를 달성한다. 현대적인 Mercury 및 Gemini 디퓨전보다 훨씬 빨리, 코드 모델의 속도-품질 Pareto 경계에서 새로운 최첨단을 구축한다."
+    },
+    "summary": "1. 씨드 디퓨전 프리뷰는 빠른 추론 속도를 제공하며, 표준 코드 평가 벤치마크에서 경쟁력 있는 성능을 유지한다.\n2. 이산 상태 디퓨전 모델은 토큰 단위 디코딩의 내재적 지연을 완화하기 위한 속도 향상을 제공한다.\n3. 씨드 디퓨전은 Mercury와 Gemini 디퓨전에 비해 높은 속도-품질 성능을 보여주며, 코드 모델의 최첨단을 정립한다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Beyond Fixed: Variable-Length Denoising for Diffusion Large Language\n  Models",
+    "abstract": "Diffusion Large Language Models (DLLMs) are emerging as a powerful\nalternative to the dominant Autoregressive Large Language Models, offering\nefficient parallel generation and capable global context modeling. However, the\npractical application of DLLMs is hindered by a critical architectural\nconstraint: the need for a statically predefined generation length. This static\nlength allocation leads to a problematic trade-off: insufficient lengths\ncripple performance on complex tasks, while excessive lengths incur significant\ncomputational overhead and sometimes result in performance degradation. While\nthe inference framework is rigid, we observe that the model itself possesses\ninternal signals that correlate with the optimal response length for a given\ntask. To bridge this gap, we leverage these latent signals and introduce\nDAEDAL, a novel training-free denoising strategy that enables Dynamic Adaptive\nLength Expansion for Diffusion Large Language Models. DAEDAL operates in two\nphases: 1) Before the denoising process, DAEDAL starts from a short initial\nlength and iteratively expands it to a coarse task-appropriate length, guided\nby a sequence completion metric. 2) During the denoising process, DAEDAL\ndynamically intervenes by pinpointing and expanding insufficient generation\nregions through mask token insertion, ensuring the final output is fully\ndeveloped. Extensive experiments on DLLMs demonstrate that DAEDAL achieves\nperformance comparable, and in some cases superior, to meticulously tuned\nfixed-length baselines, while simultaneously enhancing computational efficiency\nby achieving a higher effective token ratio. By resolving the static length\nconstraint, DAEDAL unlocks new potential for DLLMs, bridging a critical gap\nwith their Autoregressive counterparts and paving the way for more efficient\nand capable generation.",
+    "authors": [
+      "Jinsong Li",
+      "Xiaoyi Dong",
+      "Yuhang Zang",
+      "Yuhang Cao",
+      "Jiaqi Wang",
+      "Dahua Lin"
+    ],
+    "likes": 53,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00819",
+    "date_collected": "2025-08-07T07:08:32.497195+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "고정이 넘어, 변수 길이 디노이징을 통한 확산 대형 언어 모델",
+      "abstract": "확산 대형 언어 모델(DLLM)은 지배적인 자기회귀 대형 언어 모델에 대안으로 강력하게 부각되며 효율적인 병렬 생성과 뛰어난 전역 문맥 모델링을 제공합니다. 그러나 DLLM의 실용적 응용은 중요한 아키텍처 제약으로 방해받고 있습니다: 정적으로 미리 정의된 생성 길이의 필요성. 이 정적 길이 할당은 문제가 있는 트레이드오프로 이어집니다: 충분하지 않은 길이는 복잡한 작업에서 성능을 약화시키며, 과도한 길이는 상당한 계산 비용을 초래하고 때로는 성능 저하로 이어집니다. 추론 프레임워크가 엄격하더라도, 모델 자체에는 특정 작업에 대한 최적 반응 길이와 관련된 내부 신호가 존재한다는 것을 관찰합니다. 이 간극을 메우기 위해 우리는 이러한 잠재 신호를 활용하고, DAEDAL이라는 훈련이 필요 없는 새로운 디노이징 전략을 소개하여, 확산 대형 언어 모델을 위한 동적 적응적 길이 확장을 가능하게 합니다."
+    },
+    "summary": "1. 고정된 생성 길이의 문제를 해결하기 위해 DAEDAL이라는 새로운 디노이징 전략을 소개함.\n2. DAEDAL은 초기 길이를 확장하고 생성 영역을 동적으로 보완하여 DLLM의 성능을 향상시킴.\n3. 실험 결과 DAEDAL이 성능을 향상시키면서 더 효율적이고 능력 있는 생성을 가능케 함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic\n  Association and Long Story Comprehension",
+    "abstract": "Retrieval-augmented generation (RAG) over long documents typically involves\nsplitting the text into smaller chunks, which serve as the basic units for\nretrieval. However, due to dependencies across the original document,\ncontextual information is often essential for accurately interpreting each\nchunk. To address this, prior work has explored encoding longer context windows\nto produce embeddings for longer chunks. Despite these efforts, gains in\nretrieval and downstream tasks remain limited. This is because (1) longer\nchunks strain the capacity of embedding models due to the increased amount of\ninformation they must encode, and (2) many real-world applications still\nrequire returning localized evidence due to constraints on model or human\nbandwidth.\n  We propose an alternative approach to this challenge by representing short\nchunks in a way that is conditioned on a broader context window to enhance\nretrieval performance -- i.e., situating a chunk's meaning within its context.\nWe further show that existing embedding models are not well-equipped to encode\nsuch situated context effectively, and thus introduce a new training paradigm\nand develop the situated embedding models (SitEmb). To evaluate our method, we\ncurate a book-plot retrieval dataset specifically designed to assess situated\nretrieval capabilities. On this benchmark, our SitEmb-v1 model based on BGE-M3\nsubstantially outperforms state-of-the-art embedding models, including several\nwith up to 7-8B parameters, with only 1B parameters. Our 8B SitEmb-v1.5 model\nfurther improves performance by over 10% and shows strong results across\ndifferent languages and several downstream applications.",
+    "authors": [
+      "Junjie Wu",
+      "Jiangnan Li",
+      "Yuqing Li",
+      "Lemao Liu",
+      "Liyan Xu",
+      "Jiwei Li",
+      "Dit-Yan Yeung",
+      "Jie Zhou",
+      "Mo Yu"
+    ],
+    "likes": 46,
+    "published_date": "Aug 3",
+    "url": "https://huggingface.co/papers/2508.01959",
+    "date_collected": "2025-08-07T07:08:32.498501+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "SitEmb-v1.5: 의미 연관 및 장편 이해를 위한 개선된 컨텍스트 인식 밀집 검색",
+      "abstract": "장문 문서에 대한 검색 증강 생성(Retrieval-augmented generation, RAG)은 일반적으로 텍스트를 작은 조각으로 나누어 검색을 위한 기본 단위로 사용합니다. 그러나 원본 문서 간 의존성으로 인해 각 조각을 정확하게 해석하기 위해서는 문맥 정보가 중요합니다. 이에 대한 대안으로 더 긴 문맥 창을 인코딩하여 더 긴 조각에 대한 임베딩을 생성하는 이전 연구가 있습니다. 하지만 이러한 노력에도 불구하고 검색 및 하위 작업에서의 이득이 제한되어 있습니다."
+    },
+    "summary": "1. 긴 문서를 위한 검색 증강 생성에서 문맥 정보의 중요성을 강조하며, 짧은 조각을 더 넓은 문맥 창에 의존하도록 표현함.\n2. 기존의 임베딩 모델이 이러한 문맥을 효과적으로 인코딩하는 데 부족함을 보여주고, 새로운 훈련 패러다임을 소개하여 SitEmb(Situated Embedding) 모델을 개발함.\n3. SitEmb-v1 모델은 10억 개의 파라미터로 70-80억 개 파라미터의 여러 최첨단 임베딩 모델을 능가하는 반면, SitEmb-v1.5 모델은 성능을 10% 이상 개선하며 여러 언어 및 하위 응용 프로그램에서 강력한 결과를 보임.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "PixNerd: Pixel Neural Field Diffusion",
+    "abstract": "The current success of diffusion transformers heavily depends on the\ncompressed latent space shaped by the pre-trained variational autoencoder(VAE).\nHowever, this two-stage training paradigm inevitably introduces accumulated\nerrors and decoding artifacts. To address the aforementioned problems,\nresearchers return to pixel space at the cost of complicated cascade pipelines\nand increased token complexity. In contrast to their efforts, we propose to\nmodel the patch-wise decoding with neural field and present a single-scale,\nsingle-stage, efficient, end-to-end solution, coined as pixel neural field\ndiffusion~(PixelNerd). Thanks to the efficient neural field representation in\nPixNerd, we directly achieved 2.15 FID on ImageNet 256times256 and 2.84 FID\non ImageNet 512times512 without any complex cascade pipeline or VAE. We also\nextend our PixNerd framework to text-to-image applications. Our PixNerd-XXL/16\nachieved a competitive 0.73 overall score on the GenEval benchmark and 80.9\noverall score on the DPG benchmark.",
+    "authors": [
+      "Shuai Wang",
+      "Ziteng Gao",
+      "Chenhui Zhu",
+      "Weilin Huang",
+      "Limin Wang"
+    ],
+    "likes": 45,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2507.23268",
+    "date_collected": "2025-08-07T07:08:32.499631+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "픽셀 신경장 필드 확산",
+      "abstract": "현재 확산 트랜스포머의 성공은 사전 훈련된 변이형 오토인코더(VAE)에 의해 형성된 압축된 잠재 공간에 크게 의존합니다. 그러나 이러한 2단계 훈련 패러다임은 누적된 오류와 디코딩 아티팩트를 불가피하게 도입합니다. 위 문제를 해결하기 위해, 연구자들은 복잡한 연쇄 파이프라인과 토큰 복잡성 증가를 감수하고 픽셀 공간으로 되돌아갑니다. 그들의 노력과는 대조적으로, 우리는 패치별 디코딩을 신경장을 통해 모델링하고 효율적이고 단일 단계로 이루어진 엔드-투-엔드 솔루션인 \"픽셀 신경장 확산\"(PixelNerd)을 제안합니다. PixNerd 내에서 효율적인 신경장 표현 덕분에, ImageNet 256x256에서 2.15 FID 및 ImageNet 512x512에서 2.84 FID를 복잡한 연쇄 파이프라인이나 VAE 없이 직접 달성했습니다. 또한 우리는 PixNerd 프레임워크를 텍스트-이미지 응용 프로그램으로 확장했습니다. 우리의 PixNerd-XXL/16은 GenEval 벤치마크에서 경쟁력있는 0.73 전체 점수와 DPG 벤치마크에서 80.9 전체 점수를 달성했습니다."
+    },
+    "summary": "1. 확산 트랜스포머의 한계를 극복하기 위해 \"픽셀 신경장 확산\"이라는 단일 단계로 이루어진 효율적인 엔드-투-엔드 솔루션을 제안함.\n2. PixNerd는 복잡한 연쇄 파이프라인이나 VAE 없이 ImageNet에서 우수한 성과를 보이며, 텍스트-이미지 응용 프로그램으로도 확장 가능함.\n3. PixNerd-XXL/16은 GenEval 및 DPG 벤치마크에서 뛰어난 전체 점수를 기록함.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding\n  and Generation",
+    "abstract": "We introduce Skywork UniPic, a 1.5 billion-parameter autoregressive model\nthat unifies image understanding, text-to-image generation, and image editing\nwithin a single architecture-eliminating the need for task-specific adapters or\ninter-module connectors-and demonstrate that compact multimodal systems can\nachieve state-of-the-art performance on commodity hardware. Skywork UniPic\nachieves a GenEval score of 0.86, surpassing most existing unified models; sets\na new DPG-Bench complex-generation record of 85.5; attains 5.83 on\nGEditBench-EN and 3.49 on ImgEdit-Bench for image editing; and generates 1024 x\n1024 images with under 15 GB of GPU memory (e.g., RTX 4090). (1) a decoupled\nencoding strategy that leverages a masked autoregressive encoder for synthesis\nand a SigLIP2 encoder for understanding, all feeding a shared autoregressive\ndecoder; (2) a progressive, resolution-aware training schedule scaling from 256\nx 256 to 1024 x 1024 while dynamically unfreezing parameters to balance\ncapacity and stability; and (3) meticulously curated, 100 million-scale\ndatasets augmented with task-specific reward models to refine generation and\nediting objectives. By demonstrating that high-fidelity multimodal integration\nneed not incur prohibitive resource demands, Skywork UniPic establishes a\npractical paradigm for deployable, high-fidelity multimodal AI. Code and\nweights are publicly available at\nhttps://huggingface.co/Skywork/Skywork-UniPic-1.5B.",
+    "authors": [
+      "Peiyu Wang",
+      "Yi Peng",
+      "Yimeng Gan",
+      "Liang Hu",
+      "Tianyidan Xie",
+      "Xiaokun Wang",
+      "Yichen Wei",
+      "Chuanxin Tang",
+      "Bo Zhu",
+      "Changshi Li",
+      "Hongyang Wei",
+      "Eric Li",
+      "Xuchen Song",
+      "Yang Liu",
+      "Yahui Zhou"
+    ],
+    "likes": 42,
+    "published_date": "Aug 5",
+    "url": "https://huggingface.co/papers/2508.03320",
+    "date_collected": "2025-08-07T07:08:32.501202+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "스카이워크 유니픽: 시각 이해와 생성을 위한 통일된 자기회귀 모델",
+      "abstract": "저희는 15억 개의 파라미터를 갖는 스카이워크 유니픽을 소개합니다. 해당 모델은 이미지 이해, 텍스트에서 이미지 생성, 이미지 편집을 통합한 구조를 가지며, 태스크별 어댑터나 모듈 간 커넥터의 필요성을 없애며, 소형 다중모달 시스템이 상용 하드웨어에서 최첨단 성능을 달성할 수 있음을 입증합니다. 스카이워크 유니픽은 GenEval 점수 0.86을 달성하여 대부분의 기존 통합 모델보다 높은 성능을 보여주고, 85.5의 DPG-Bench 복잡 생성 기록을 세우며, 이미지 편집에 관해서는 GEditBench-EN에서 5.83, ImgEdit-Bench에서 3.49를 달성하며, RTX 4090과 같은 GPU 메모리 15GB 미만으로 1024 x 1024 이미지를 생성합니다."
+    },
+    "summary": "1. 스카이워크 유니픽은 이미지 생성, 이해를 위한 자기회귀 인코더와 공유 자기회귀 디코더를 활용한 인코딩 전략을 가지고 있습니다.\n2. 256 x 256에서 1024 x 1024까지 점진적이고 해상도에 민감한 훈련 일정을 통해 안정성과 용량을 균형 있게 유지하며 파라미터를 동적으로 해제합니다.\n3. 고급 다중모달 통합이 자원 부담을 초래하지 않을 수 있다는 것을 보여줌으로써 스카이워크 유니픽은 실용적인, 고품질 다중모달 인공지능 패러다임을 수립합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "CellForge: Agentic Design of Virtual Cell Models",
+    "abstract": "Virtual cell modeling represents an emerging frontier at the intersection of\nartificial intelligence and biology, aiming to predict quantities such as\nresponses to diverse perturbations quantitatively. However, autonomously\nbuilding computational models for virtual cells is challenging due to the\ncomplexity of biological systems, the heterogeneity of data modalities, and the\nneed for domain-specific expertise across multiple disciplines. Here, we\nintroduce CellForge, an agentic system that leverages a multi-agent framework\nthat transforms presented biological datasets and research objectives directly\ninto optimized computational models for virtual cells. More specifically, given\nonly raw single-cell multi-omics data and task descriptions as input, CellForge\noutputs both an optimized model architecture and executable code for training\nvirtual cell models and inference. The framework integrates three core modules:\nTask Analysis for presented dataset characterization and relevant literature\nretrieval, Method Design, where specialized agents collaboratively develop\noptimized modeling strategies, and Experiment Execution for automated\ngeneration of code. The agents in the Design module are separated into experts\nwith differing perspectives and a central moderator, and have to\ncollaboratively exchange solutions until they achieve a reasonable consensus.\nWe demonstrate CellForge's capabilities in single-cell perturbation prediction,\nusing six diverse datasets that encompass gene knockouts, drug treatments, and\ncytokine stimulations across multiple modalities. CellForge consistently\noutperforms task-specific state-of-the-art methods. Overall, CellForge\ndemonstrates how iterative interaction between LLM agents with differing\nperspectives provides better solutions than directly addressing a modeling\nchallenge. Our code is publicly available at\nhttps://github.com/gersteinlab/CellForge.",
+    "authors": [
+      "Xiangru Tang",
+      "Zhuoyun Yu",
+      "Jiapeng Chen",
+      "Yan Cui",
+      "Daniel Shao",
+      "Weixu Wang",
+      "Fang Wu",
+      "Yuchen Zhuang",
+      "Wenqi Shi",
+      "Zhi Huang",
+      "Arman Cohan",
+      "Xihong Lin",
+      "Fabian Theis",
+      "Smita Krishnaswamy",
+      "Mark Gerstein"
+    ],
+    "likes": 34,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2508.02276",
+    "date_collected": "2025-08-07T07:08:32.502752+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "CellForge: Virtual Cell Models의 에이전틱 디자인",
+      "abstract": "가상 세포 모델링은 인공지능과 생물학의 교차점에서 떠오르는 새로운 분야로, 다양한 충격에 대한 응답과 같은 양을 양적으로 예측하는 것을 목표로 합니다. 그러나 가상 세포를 위한 자동적인 계산 모델을 구축하는 것은 생물학 시스템의 복잡성, 데이터 모달리티의 다양성, 그리고 여러 학문 영역에서 도메인 전문 지식의 필요로 인해 어렵습니다. 본 논문에서는 다양한 생물학적 데이터셋과 연구 목표를 최적화된 계산 모델로 직접 변환하는 멀티 에이전트 프레임워크를 활용하는 CellForge를 소개합니다. 단일 세포의 멀티-오믹스 데이터와 작업 설명만을 입력으로 제공하면 CellForge는 최적화된 모델 구조와 가상 세포 모델 학습 및 추론을 위한 실행 가능한 코드를 출력합니다. 이 프레임워크는 세 가지 핵심 모듈을 통합합니다: 제시된 데이터셋의 특성화 및 관련 문헌 검색을 위한 태스크 분석, 특화된 에이전트들이 협력하여 최적화된 모델링 전략을 개발하는 메소드 디자인, 그리고 코드 자동 생성을 위한 실험 실행. 디자인 모듈의 에이전트들은 서로 다른 관점을 가진 전문가들과 중앙 조정자로 구분되며, 이해당께 합리적인 합의점을 도출할 때까지 솔루션을 협력적으로 교환해야 합니다. 우리는 유전자 무작위화, 약물 처리, 사이토카인 자극 등을 포함하는 여러 모달리티에서의 육종 데이터를 사용하여 CellForge의 성능을 입증합니다. CellForge는 일관되게 특정 작업에 대한 최신 방법보다 우수한 성과를 보여줍니다. 총론적으로, CellForge는 서로 다른 관점을 가진 LLM 에이전트 간의 반복적 상호작용이 모델링 과제에 직접 대응하는 것보다 더 나은 해결책을 제공함을 보여줍니다. 우리의 코드는 https://github.com/gersteinlab/CellForge에서 공개적으로 이용 가능합니다."
+    },
+    "summary": "1. CellForge는 가상 세포 모델을 위한 최적화된 계산 모델을 자동으로 구축하는 멀티 에이전트 시스템으로, 생물학적 데이터셋과 연구 목표를 사용하여 최적화된 모델 아키텍처와 실행 가능한 코드를 제공합니다.\n2. CellForge는 태스크 분석, 메소드 디자인, 실험 실행의 세 가지 핵심 모듈을 통합하여, 전문가들이 협력하여 최적화된 모델링 전략을 개발하고 코드를 자동 생성합니다.\n3. CellForge는 유전자 무작위화, 약물 처리, 사이토카인 자극 등 다양한 데이터를 활용하여 가상 세포의 단일 세포 변조 예측 능력을 입증하며, 기존 방법보다 우수한 성과를 보입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation",
+    "abstract": "Controllable ultra-long video generation is a fundamental yet challenging\ntask. Although existing methods are effective for short clips, they struggle to\nscale due to issues such as temporal inconsistency and visual degradation. In\nthis paper, we initially investigate and identify three key factors: separate\nnoise initialization, independent control signal normalization, and the\nlimitations of single-modality guidance. To address these issues, we propose\nLongVie, an end-to-end autoregressive framework for controllable long video\ngeneration. LongVie introduces two core designs to ensure temporal consistency:\n1) a unified noise initialization strategy that maintains consistent generation\nacross clips, and 2) global control signal normalization that enforces\nalignment in the control space throughout the entire video. To mitigate visual\ndegradation, LongVie employs 3) a multi-modal control framework that integrates\nboth dense (e.g., depth maps) and sparse (e.g., keypoints) control signals,\ncomplemented by 4) a degradation-aware training strategy that adaptively\nbalances modality contributions over time to preserve visual quality. We also\nintroduce LongVGenBench, a comprehensive benchmark consisting of 100\nhigh-resolution videos spanning diverse real-world and synthetic environments,\neach lasting over one minute. Extensive experiments show that LongVie achieves\nstate-of-the-art performance in long-range controllability, consistency, and\nquality.",
+    "authors": [
+      "Jianxiong Gao",
+      "Zhaoxi Chen",
+      "Xian Liu",
+      "Jianfeng Feng",
+      "Chenyang Si",
+      "Yanwei Fu",
+      "Yu Qiao",
+      "Ziwei Liu"
+    ],
+    "likes": 32,
+    "published_date": "Aug 5",
+    "url": "https://huggingface.co/papers/2508.03694",
+    "date_collected": "2025-08-07T07:08:32.503995+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "LongVie: 다중 모달 가이드 제어 가능한 초장 비디오 생성",
+      "abstract": "제어 가능한 초장 비디오 생성은 기본이면서도 어려운 작업입니다. 본 논문에서는 단일 모달 가이드의 한계, 별도의 잡음 초기화, 독립적인 제어 신호 정규화 등을 확인하고, 이 문제들을 해결하기 위해 LongVie라는 종단 강화형 프레임워크를 제안합니다. LongVie는 일관성 있는 세대를 보장하기 위한 통합된 잡음 초기화 전략과 제어 공간에서 일관성을 강제하는 전역 제어 신호 정규화, 그리고 시각적 저하를 완화하기 위한 다중 모달 제어 프레임워크를 도입합니다. 여러 실험을 거친 결과, LongVie는 장거리 제어성, 일관성, 품질 측면에서 최고 수준의 성과를 달성합니다."
+    },
+    "summary": "1. LongVie는 별도의 잡음 초기화, 독립적인 제어 신호 정규화, 다중 모달 제어 프레임워크를 도입하여 시각적 일관성과 품질을 유지하며 긴 비디오를 생성합니다.\n2. LongVie의 핵심 디자인으로는 일관성 있는 세대를 보장하기 위한 통합된 잡음 초기화 전략과 제어 신호의 정렬을 강제하는 전역 제어 신호 정규화가 있습니다.\n3. LongVie는 시각적 저하를 완화하기 위해 모달리티 기여를 균형있게 조절하는 훈련 전략을 사용하며, 이는 장거리 제어성, 일관성, 품질에서 우수한 성과를 보입니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Beyond the Trade-off: Self-Supervised Reinforcement Learning for\n  Reasoning Models' Instruction Following",
+    "abstract": "Reasoning models excel in complex problem solving but exhibit a concerning\ntrade off between reasoning capabilities and instruction following abilities.\nExisting approaches for improving instruction following rely on stronger\nexternal models, creating methodological bottlenecks and practical limitations\nincluding increased costs and accessibility constraints. We propose a\nself-supervised RL framework that leverages reasoning models' own internal\nsignals to improve instruction following capabilities without external\nsupervision. Extensive experiments demonstrate that our framework significantly\nimproves instruction following capabilities while maintaining reasoning\nperformance, offering a scalable and cost-effective approach to enhance\ninstruction following in reasoning models. The data and code are publicly\navailable at https://github.com/Rainier-rq/verl-if.",
+    "authors": [
+      "Qingyu Ren",
+      "Qianyu He",
+      "Bowei Zhang",
+      "Jie Zeng",
+      "Jiaqing Liang",
+      "Yanghua Xiao",
+      "Weikang Zhou",
+      "Zeye Sun",
+      "Fei Yu"
+    ],
+    "likes": 31,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2508.02150",
+    "date_collected": "2025-08-07T07:08:32.505293+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "트레이드오프를 넘어: 이해 모델의 지시 따르기를 위한 자가지도 강화학습",
+      "abstract": "이해 모델은 복잡한 문제 해결에서 뛰어나지만 이해 능력과 지시 따르기 능력 사이의 우려스러운 트레이드오프가 있다. 이해 모델의 지시 따르기 능력을 향상시키기 위한 기존 방법은 외부 모델에 의존하며, 이는 방법론적 병목 현상과 증가된 비용 및 접근 제약 등의 실제적 한계를 초래한다. 우리는 자가지도 강화학습 프레임워크를 제안하여, 외부 감독 없이 이해 모델 자체의 내부 신호를 활용하여 지시 따르기 능력을 향상시킨다. 포괄적인 실험을 통해 우리의 프레임워크가 지시 따르기 능력을 크게 향상시키면서 이해 성능을 유지하며, 이해 모델의 지시 따르기를 향상시키는 확장 가능하고 비용 효율적인 방법을 제공함을 입증하였다. 데이터와 코드는 https://github.com/Rainier-rq/verl-if 에 공개되어 있다."
+    },
+    "summary": "1. 이해 모델은 복잡한 문제 해결에서 우수하지만, 지시 따르기 능력과의 트레이드오프가 있다.\n2. 외부 모델에 의존하지 않고 자가지도 강화학습을 활용하여 이해 모델의 지시 따르기 능력을 향상시킬 수 있다.\n3. 실험 결과, 이해 모델의 지시 따르기 능력을 획기적으로 향상시키는 비용 효율적인 방법을 제공함을 입증하였다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  }
+]

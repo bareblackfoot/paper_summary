@@ -1,0 +1,91 @@
+=== Paper Collection Started at Mon Jul 27 04:39:41 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W31
+URL: https://huggingface.co/papers/week/2026-W31
+Found 8 papers in weekly view
+Fetching likes for: Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning
+Fetching likes for: Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
+Fetching likes for: Scaling Native Multimodal Pre-Training From Scratch
+Fetching likes for: IDEAgent: Agentic Quality-Diversity Search for Research Idea Generation
+Fetching likes for: SceneActBench: Can Agents Act on the 3D Scenes They See?
+Fetching likes for: Closing the Loop: Training-Free Revisit Consistency for Autoregressive Generative Rendering
+Fetching likes for: LAMAR: An Open Language-Aware Multilingual Alignment Reranker
+Fetching likes for: VisCo: Leveraging Large Language Models as Intrinsic Encoders for Visual Token Compression
+Selected top 10 papers by likes:
+1. Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning (8 likes)
+2. Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills (6 likes)
+3. Scaling Native Multimodal Pre-Training From Scratch (5 likes)
+4. IDEAgent: Agentic Quality-Diversity Search for Research Idea Generation (3 likes)
+5. SceneActBench: Can Agents Act on the 3D Scenes They See? (3 likes)
+6. Closing the Loop: Training-Free Revisit Consistency for Autoregressive Generative Rendering (2 likes)
+7. LAMAR: An Open Language-Aware Multilingual Alignment Reranker (1 likes)
+8. VisCo: Leveraging Large Language Models as Intrinsic Encoders for Visual Token Compression (1 likes)
+Found abstract: Agentic reinforcement learning research is constant algorithm modification, new estimators, new pipe...
+Processed paper: Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning
+Found abstract: LLM training is shifting from manual design and annotation to interaction-driven self-evolution. How...
+Processed paper: Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
+Found abstract: Although large language models (LLMs) exhibit remarkable reasoning capabilities, their reliance on t...
+Processed paper: Scaling Native Multimodal Pre-Training From Scratch
+Found abstract: Large Language Models (LLMs) have significantly automated the process of scientific discovery over t...
+Processed paper: IDEAgent: Agentic Quality-Diversity Search for Research Idea Generation
+Found abstract: Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only descr...
+Processed paper: SceneActBench: Can Agents Act on the 3D Scenes They See?
+Found abstract: Recent conditional video generation models have shown promising potentials to transform 3D engine re...
+Processed paper: Closing the Loop: Training-Free Revisit Consistency for Autoregressive Generative Rendering
+Found abstract: In multilingual retrieval augmented generation, a retriever can retrieve relevant documents written ...
+Processed paper: LAMAR: An Open Language-Aware Multilingual Alignment Reranker
+Found abstract: Vision-language models (VLMs) process large numbers of visual tokens, resulting in substantial infer...
+Processed paper: VisCo: Leveraging Large Language Models as Intrinsic Encoders for Visual Token Compression
+Collected top 8 papers. Starting summary generation...
+
+Processing paper 1/8
+Title: Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 2/8
+Title: Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
+Generating Korean translation and summary...
+
+Processing paper 3/8
+Title: Scaling Native Multimodal Pre-Training From Scratch
+Generating Korean translation and summary...
+
+Processing paper 4/8
+Title: IDEAgent: Agentic Quality-Diversity Search for Research Idea Generation
+Generating Korean translation and summary...
+
+Processing paper 5/8
+Title: SceneActBench: Can Agents Act on the 3D Scenes They See?
+Generating Korean translation and summary...
+
+Processing paper 6/8
+Title: Closing the Loop: Training-Free Revisit Consistency for Autoregressive Generative Rendering
+Generating Korean translation and summary...
+
+Processing paper 7/8
+Title: LAMAR: An Open Language-Aware Multilingual Alignment Reranker
+Generating Korean translation and summary...
+
+Processing paper 8/8
+Title: VisCo: Leveraging Large Language Models as Intrinsic Encoders for Visual Token Compression
+Generating Korean translation and summary...
+
+Processed 8 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W31.json...
+
+Updating Notion database...
+Creating new paper: Molt: 에이전틱 강화 학습을 위한 확장 가능한 PyTorch 네이티브 트레이닝 프레임워크
+Creating new paper: 스킬 셀프 플레이: 공동 진화 스킬로 LLM 능력의 전방위 개척
+Creating new paper: 처음부터 규모별 로컬 다중모달 사전훈련 확장
+Creating new paper: IDEAgent: 연구 아이디어 생성을 위한 자발적 품질-다양성 검색
+Creating new paper: SceneActBench: 그들이 본 3D 장면에서 행동할 수 있을까?
+Creating new paper: 루프 폐쇄: 훈련 필요없는 재방문 일관성을 위한 자기 회귀적 생성 렌더링
+Creating new paper: LAMAR: 오픈 언어인식 다국어 정렬 재랭커
+Creating new paper: VisCo: 시각 토큰 압축을 위한 내재 인코더로서 대용량 언어 모델 활용
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul 27 04:41:02 UTC 2026 ===
+

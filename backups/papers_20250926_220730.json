@@ -1,0 +1,352 @@
+[
+  {
+    "title": "Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR",
+    "abstract": "Arabic document OCR remains a challenging task due to the language's cursive\nscript, diverse fonts, diacritics, and right-to-left orientation. While modern\nMultimodal Large Language Models (MLLMs) have advanced document understanding\nfor high-resource languages, their performance on Arabic remains limited. In\nthis work, we introduce Baseer, a vision-language model fine- tuned\nspecifically for Arabic document OCR. Leveraging a large-scale dataset\ncombining synthetic and real-world documents, Baseer is trained using a\ndecoder-only fine-tuning strategy to adapt a pre-trained MLLM while preserving\ngeneral visual features. We also present Misraj-DocOCR, a high-quality,\nexpert-verified benchmark designed for rigorous evaluation of Arabic OCR\nsystems. Our experiments show that Baseer significantly outperforms existing\nopen-source and commercial solutions, achieving a WER of 0.25 and establishing\na new state-of-the-art in the domain of Arabic document OCR. Our results\nhighlight the benefits of domain-specific adaptation of general-purpose MLLMs\nand establish a strong baseline for high-accuracy OCR on morphologically rich\nlanguages like Arabic.",
+    "authors": [
+      "Khalil Hennara",
+      "Muhammad Hreden",
+      "Mohamed Motasim Hamed",
+      "Ahmad Bastati",
+      "Zeina Aldallal",
+      "Sara Chrouf",
+      "Safwan AlModhayan"
+    ],
+    "likes": 106,
+    "published_date": "Sep 17",
+    "url": "https://huggingface.co/papers/2509.18174",
+    "date_collected": "2025-09-26T07:06:46.728706+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "Baseer: 아랍어 문서를 Markdown OCR로 변환하기 위한 Vision-Language 모델",
+      "abstract": "아랍어 문서 OCR은 쓰기체 스크립트, 다양한 글꼴, 각 치 및 우측에서 좌측 방향으로의 특성으로 인해 여전히 어려운 과제입니다. 최신 다중모달 대형 언어 모델(MLLMs)은 고자원 언어에 대한 문서 이해를 발전시켰지만, 아랍어에 대한 성능은 제한적입니다. 본 연구에서는 아랍어 문서 OCR용으로 특별히 세밀 조정된 Vision-Language 모델인 Baseer를 소개합니다. 합성 및 실제 문서를 결합한 대규모 데이터셋을 활용하여, Baseer는 사전 훈련된 MLLM을 적응시키기 위해 디코더만을 튜닝하는 전략을 사용하면서 일반적인 시각적 특성을 보존합니다. 또한, 엄격한 아랍어 OCR 시스템 평가를 위해 설계된 고품질 전문적 검증 벤치마크인 Misraj-DocOCR을 제시합니다. 실험 결과, Baseer가 기존 오픈소스 및 상용 솔루션을 크게 능가하여 0.25의 WER을 달성하고 아랍어 문서 OCR 분야에서 새로운 최고 성능을 센세잡니다. 결과는 일반 목적 MLLM의 도메인 특정 적응의 이점을 강조하며, 아랍어와 같이 형태론적으로 풍부한 언어에 대한 고정확도 OCR에 강력한 기준을 제시합니다."
+    },
+    "summary": "1. Baseer는 아랍어 문서 OCR용으로 특별히 조정된 Vision-Language 모델로, 사전 훈련된 MLLM을 적응시키는 디코더만 튜닝 전략을 활용합니다.\n2. Misraj-DocOCR은 고품질의 전문가 검증 벤치마크로, Baseer는 이를 사용해 기존 솔루션을 크게 능가하며 아랍어 문서 OCR 분야에서 새로운 최고 성능을 기록했습니다.\n3. 실험 결과는 일반 목적 MLLM의 도메인 특정 조정의 중요성을 강조하며, 아랍어와 같이 형태론적으로 풍부한 언어에 대한 고정확도 OCR에 강력한 기준을 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM"
+    ]
+  },
+  {
+    "title": "RPG: A Repository Planning Graph for Unified and Scalable Codebase\n  Generation",
+    "abstract": "Large language models excel at function- and file-level code generation, yet\ngenerating complete repositories from scratch remains a fundamental challenge.\nThis process demands coherent and reliable planning across proposal- and\nimplementation-level stages, while natural language, due to its ambiguity and\nverbosity, is ill-suited for faithfully representing complex software\nstructures. To address this, we introduce the Repository Planning Graph (RPG),\na persistent representation that unifies proposal- and implementation-level\nplanning by encoding capabilities, file structures, data flows, and functions\nin one graph. RPG replaces ambiguous natural language with an explicit\nblueprint, enabling long-horizon planning and scalable repository generation.\nBuilding on RPG, we develop ZeroRepo, a graph-driven framework for repository\ngeneration from scratch. It operates in three stages: proposal-level planning\nand implementation-level refinement to construct the graph, followed by\ngraph-guided code generation with test validation. To evaluate this setting, we\nconstruct RepoCraft, a benchmark of six real-world projects with 1,052 tasks.\nOn RepoCraft, ZeroRepo produces repositories averaging nearly 36K LOC, roughly\n3.9times the strongest baseline (Claude Code) and about 64times other\nbaselines. It attains 81.5% functional coverage and a 69.7% pass rate,\nexceeding Claude Code by 27.3 and 35.8 percentage points, respectively. Further\nanalysis shows that RPG models complex dependencies, enables progressively more\nsophisticated planning through near-linear scaling, and enhances LLM\nunderstanding of repositories, thereby accelerating agent localization.",
+    "authors": [
+      "Jane Luo",
+      "Xin Zhang",
+      "Steven Liu",
+      "Jie Wu",
+      "Yiming Huang",
+      "Yangyu Huang",
+      "Chengyu Yin",
+      "Ying Xin",
+      "Jianfeng Liu",
+      "Yuefeng Zhan",
+      "Hao Sun",
+      "Qi Chen",
+      "Scarlett Li",
+      "Mao Yang"
+    ],
+    "likes": 104,
+    "published_date": "Sep 19",
+    "url": "https://huggingface.co/papers/2509.16198",
+    "date_collected": "2025-09-26T07:06:46.730166+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "RPG: 통합 및 확장 가능한 코드베이스 생성을 위한 저장소 계획 그래프",
+      "abstract": "대규모 언어 모델은 기능 및 파일 수준의 코드 생성에서 뛰어나지만, 처음부터 완전한 저장소를 생성하는 것은 여전히 기본적인 도전 과제입니다. 이 프로세스는 제안 및 구현 수준 단계에서 일관된 신뢰성 있는 계획을 요구하며, 복잡한 소프트웨어 구조를 정확하게 표현하는 데는 자연어가 적합하지 않습니다. 이를 해결하기 위해 우리는 저장소 계획 그래프(RPG)를 도입합니다. RPG는 능력, 파일 구조, 데이터 흐름 및 함수를 하나의 그래프에 인코딩하여 제안 및 구현 수준의 계획을 통합합니다. RPG는 모호한 자연어를 명시적인 청사진으로 대체함으로써 장기 계획과 확장 가능한 저장소 생성을 가능하게 합니다. RPG를 기반으로 우리는 ZeroRepo를 개발했습니다. ZeroRepo는 제안 수준의 계획 및 구현 수준의 수정을 통해 그래프를 구성하고, 테스트 유효성 검증을 진행한 후 코드 생성을 그래프로 안내합니다. 이 설정을 평가하기 위해 1,052개의 작업이 있는 6개의 실제 프로젝트로 이루어진 RepoCraft를 구성했습니다. RepoCraft에서 ZeroRepo는 거의 평균 36,000줄의 LOC를 생성하며, Claude Code의 강력한 베이스라인의 약 3.9배에 달하며 다른 베이스라인의 약 64배에 달합니다. 그것은 81.5%의 기능적 커버리지와 69.7%의 통과율을 달성하여 Claude Code보다 각각 27.3 및 35.8 백분율 포인트를 능가합니다. 추가 분석 결과, RPG는 복잡한 의존성을 모델링하며 거의 선형적인 스케일링을 통해 점진적으로 더 정교한 계획을 가능케하며, 저장소의 LLM 이해를 향상시킴으로써 에이전트 위치 지정을 가속화합니다."
+    },
+    "summary": "1. RPG는 제안 및 구현 수준의 계획을 통합하여 저장소 생성을 가능케하는 저장소 계획 그래프이다.\n2. ZeroRepo는 그래프 기반 프레임워크로, 실제 프로젝트에서 강력한 저장소 생성 능력을 보여준다.\n3. ZeroRepo는 기능적 커버리지 및 통과율을 향상시키며, RPG는 저장소의 복잡한 의존성을 모델링하여 에이전트 위치 지정을 가속화한다.",
+    "categories": [
+      "LLM",
+      "기타"
+    ]
+  },
+  {
+    "title": "Qwen3-Omni Technical Report",
+    "abstract": "We present Qwen3-Omni, a single multimodal model that, for the first time,\nmaintains state-of-the-art performance across text, image, audio, and video\nwithout any degradation relative to single-modal counterparts. Qwen3-Omni\nmatches the performance of same-sized single-modal models within the Qwen\nseries and excels particularly on audio tasks. Across 36 audio and audio-visual\nbenchmarks, Qwen3-Omni achieves open-source SOTA on 32 benchmarks and overall\nSOTA on 22, outperforming strong closed-source models such as Gemini-2.5-Pro,\nSeed-ASR, and GPT-4o-Transcribe. Qwen3-Omni adopts a Thinker-Talker MoE\narchitecture that unifies perception and generation across text, images, audio,\nand video, yielding fluent text and natural real-time speech. It supports text\ninteraction in 119 languages, speech understanding in 19 languages, and speech\ngeneration in 10 languages. To reduce first-packet latency in streaming\nsynthesis, Talker autoregressively predicts discrete speech codecs using a\nmulti-codebook scheme. Leveraging the representational capacity of these\ncodebooks, we replace computationally intensive block-wise diffusion with a\nlightweight causal ConvNet, enabling streaming from the first codec frame. In\ncold-start settings, Qwen3-Omni achieves a theoretical end-to-end first-packet\nlatency of 234 ms. To further strengthen multimodal reasoning, we introduce a\nThinking model that explicitly reasons over inputs from any modality. Since the\nresearch community currently lacks a general-purpose audio captioning model, we\nfine-tuned Qwen3-Omni-30B-A3B to obtain Qwen3-Omni-30B-A3B-Captioner, which\nproduces detailed, low-hallucination captions for arbitrary audio inputs.\nQwen3-Omni-30B-A3B, Qwen3-Omni-30B-A3B-Thinking, and\nQwen3-Omni-30B-A3B-Captioner are publicly released under the Apache 2.0\nlicense.",
+    "authors": [
+      "Jin Xu",
+      "Zhifang Guo",
+      "Hangrui Hu",
+      "Yunfei Chu",
+      "Xiong Wang",
+      "Jinzheng He",
+      "Yuxuan Wang",
+      "Xian Shi",
+      "Ting He",
+      "Xinfa Zhu",
+      "Yuanjun Lv",
+      "Yongqi Wang",
+      "Dake Guo",
+      "He Wang",
+      "Linhan Ma",
+      "Pei Zhang",
+      "Xinyu Zhang",
+      "Hongkun Hao",
+      "Zishan Guo",
+      "Baosong Yang",
+      "Bin Zhang",
+      "Ziyang Ma"
+    ],
+    "likes": 97,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.17765",
+    "date_collected": "2025-09-26T07:06:46.731882+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "Qwen3-Omni 기술 보고서",
+      "abstract": "Qwen3-Omni는 텍스트, 이미지, 오디오, 비디오 영역에서 최신 기술 수준을 유지하면서 다중 모달 모델로, 단일 모달 모델과 동등한 성능을 보입니다. Qwen3-Omni는 Qwen 시리즈 내 동일 크기의 단일 모달 모델과 비슷한 성능을 보이며 특히 오디오 작업에서 뛰어납니다. 36개의 오디오 및 오디오-비주얼 벤치마크에서 Qwen3-Omni는 32개의 벤치마크에서 오픈 소스 최신 기술을 달성하며 전체적으로 22개의 벤치마크에서 최신 기술을 선보였습니다."
+    },
+    "summary": "1. Qwen3-Omni는 다중 모달 모델로 다양한 언어의 텍스트 상호작용, 음성 이해, 음성 생성을 지원하며, 스트리밍 합성의 초반 패킷 대기 시간을 줄이고, 234ms의 이론적인 대기 시간을 달성합니다.\n2. Thinking 모델을 통해 모든 모달리티 입력에 대해 명시적으로 추론하는 다중 모달 추론을 강화합니다.\n3. Qwen3-Omni-30B-A3B-Captioner는 임의의 오디오 입력에 대한 자세하고 혼신이 적은 자막을 생성하는 다목적 오디오 캡션 모델로 세 가지 모델은 Apache 2.0 라이선스로 공개되었습니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "LIMI: Less is More for Agency",
+    "abstract": "We define Agency as the emergent capacity of AI systems to function as\nautonomous agents actively discovering problems, formulating hypotheses, and\nexecuting solutions through self-directed engagement with environments and\ntools. This fundamental capability marks the dawn of the Age of AI Agency,\ndriven by a critical industry shift: the urgent need for AI systems that don't\njust think, but work. While current AI excels at reasoning and generating\nresponses, industries demand autonomous agents that can execute tasks, operate\ntools, and drive real-world outcomes. As agentic intelligence becomes the\ndefining characteristic separating cognitive systems from productive workers,\nefficiently cultivating machine autonomy becomes paramount. Current approaches\nassume that more data yields better agency, following traditional scaling laws\nfrom language modeling. We fundamentally challenge this paradigm. LIMI (Less Is\nMore for Intelligent Agency) demonstrates that agency follows radically\ndifferent development principles. Through strategic focus on collaborative\nsoftware development and scientific research workflows, we show that\nsophisticated agentic intelligence can emerge from minimal but strategically\ncurated demonstrations of autonomous behavior. Using only 78 carefully designed\ntraining samples, LIMI achieves 73.5% on comprehensive agency benchmarks,\ndramatically outperforming state-of-the-art models: Kimi-K2-Instruct (24.1%),\nDeepSeek-V3.1 (11.9%), Qwen3-235B-A22B-Instruct (27.5%), and GLM-4.5 (45.1%).\nMost strikingly, LIMI demonstrates 53.7% improvement over models trained on\n10,000 samples-achieving superior agentic intelligence with 128 times fewer\nsamples. Our findings establish the Agency Efficiency Principle: machine\nautonomy emerges not from data abundance but from strategic curation of\nhigh-quality agentic demonstrations.",
+    "authors": [
+      "Yang Xiao",
+      "Mohan Jiang",
+      "Jie Sun",
+      "Keyu Li",
+      "Jifan Lin",
+      "Yumin Zhuang",
+      "Ji Zeng",
+      "Shijie Xia",
+      "Qishuo Hua",
+      "Xuefeng Li",
+      "Xiaojie Cai",
+      "Tongyu Wang",
+      "Yue Zhang",
+      "Liming Liu",
+      "Xia Wu",
+      "Jinlong Hou",
+      "Yuan Cheng",
+      "Wenjie Li",
+      "Xiang Wang",
+      "Dequan Wang",
+      "Pengfei Liu"
+    ],
+    "likes": 84,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.17567",
+    "date_collected": "2025-09-26T07:06:46.733508+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "LIMI: 에이전시를 위한 적은 양이 더 많다",
+      "abstract": "우리는 에이전시를 AI 시스템의 촉발된 능력으로 정의하는데, 이 능력은 환경과 도구와의 자율적인 상호작용을 통해 문제를 발견하고 가설을 세우며 해결책을 실행하는 것이다. 이 기본 능력은 AI 에이전시 시대의 개막을 나타내며, AI 시스템이 단순히 생각하는 것이 아니라 작동해야 하는 절박한 산업적 전환에 의해 주도된다."
+    },
+    "summary": "1. AI 에이전트가 문제를 발견하고 해결책을 실행하는 능력이 중요해지고 있다.\n2. LIMI는 적은 양의 훈련 자료로도 높은 수준의 에이전트 지능을 달성하는 것을 보여준다.\n3. 높은 품질의 에이전트의 적절한 증명으로 기계 자율성이 발전하는 것이 중요하다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion\n  Transformer Models",
+    "abstract": "Recent advances in video insertion based on diffusion models are impressive.\nHowever, existing methods rely on complex control signals but struggle with\nsubject consistency, limiting their practical applicability. In this paper, we\nfocus on the task of Mask-free Video Insertion and aim to resolve three key\nchallenges: data scarcity, subject-scene equilibrium, and insertion\nharmonization. To address the data scarcity, we propose a new data pipeline\nInsertPipe, constructing diverse cross-pair data automatically. Building upon\nour data pipeline, we develop OmniInsert, a novel unified framework for\nmask-free video insertion from both single and multiple subject references.\nSpecifically, to maintain subject-scene equilibrium, we introduce a simple yet\neffective Condition-Specific Feature Injection mechanism to distinctly inject\nmulti-source conditions and propose a novel Progressive Training strategy that\nenables the model to balance feature injection from subjects and source video.\nMeanwhile, we design the Subject-Focused Loss to improve the detailed\nappearance of the subjects. To further enhance insertion harmonization, we\npropose an Insertive Preference Optimization methodology to optimize the model\nby simulating human preferences, and incorporate a Context-Aware Rephraser\nmodule during reference to seamlessly integrate the subject into the original\nscenes. To address the lack of a benchmark for the field, we introduce\nInsertBench, a comprehensive benchmark comprising diverse scenes with\nmeticulously selected subjects. Evaluation on InsertBench indicates OmniInsert\noutperforms state-of-the-art closed-source commercial solutions. The code will\nbe released.",
+    "authors": [
+      "Jinshu Chen",
+      "Xinghui Li",
+      "Xu Bai",
+      "Tianxiang Ma",
+      "Pengze Zhang",
+      "Zhuowei Chen",
+      "Gen Li",
+      "Lijie Liu",
+      "Songtao Zhao",
+      "Bingchuan Li",
+      "Qian He"
+    ],
+    "likes": 59,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.17627",
+    "date_collected": "2025-09-26T07:06:46.734774+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "옴니인서트: 확산을 통한 임의의 참조 비디오 삽입을 위한 마스크 없는 모델",
+      "abstract": "최근 확산 모델을 기반으로 한 비디오 삽입 기술의 발전은 인상적이다. 그러나 기존 방법은 복잡한 제어 신호에 의존하면서 주체의 일관성에 어려움을 겪어 실용성에 제약이 따른다. 이 논문에서는 마스크 없는 비디오 삽입 작업에 초점을 맞추어 데이터 희귀성, 주체-장면 균형, 삽입 조화라는 세 가지 주요 과제를 해결하고자 한다."
+    },
+    "summary": "1. 데이터 부족 문제를 해결하기 위해 다양한 교차 쌍 데이터를 자동으로 생성하는 새로운 데이터 파이프라인 InsertPipe를 제안한다.\n2. 주체-장면 균형을 유지하기 위해 Condition-Specific Feature Injection 메커니즘을 도입하여 단일 및 다중 주체 참조로부터 마스크 없이 비디오를 삽입하는 혁신적인 통합 프레임워크 OmniInsert를 개발한다.\n3. 삽입 조화를 더 강화하기 위해 사람의 선호도를 시뮬레이션하여 모델을 최적화하는 'Insertive Preference Optimization' 방법론과 참조 중에 주체를 원래 장면에 매끄럽게 통합하기 위한 'Context-Aware Rephraser' 모듈을 제안한다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Reinforcement Learning on Pre-Training Data",
+    "abstract": "The growing disparity between the exponential scaling of computational\nresources and the finite growth of high-quality text data now constrains\nconventional scaling approaches for large language models (LLMs). To address\nthis challenge, we introduce Reinforcement Learning on Pre-Training data\n(RLPT), a new training-time scaling paradigm for optimizing LLMs. In contrast\nto prior approaches that scale training primarily through supervised learning,\nRLPT enables the policy to autonomously explore meaningful trajectories to\nlearn from pre-training data and improve its capability through reinforcement\nlearning (RL). While existing RL strategies such as reinforcement learning from\nhuman feedback (RLHF) and reinforcement learning with verifiable rewards (RLVR)\nrely on human annotation for reward construction, RLPT eliminates this\ndependency by deriving reward signals directly from pre-training data.\nSpecifically, it adopts a next-segment reasoning objective, rewarding the\npolicy for accurately predicting subsequent text segments conditioned on the\npreceding context. This formulation allows RL to be scaled on pre-training\ndata, encouraging the exploration of richer trajectories across broader\ncontexts and thereby fostering more generalizable reasoning skills. Extensive\nexperiments on both general-domain and mathematical reasoning benchmarks across\nmultiple models validate the effectiveness of RLPT. For example, when applied\nto Qwen3-4B-Base, RLPT yields absolute improvements of 3.0, 5.1, 8.1,\n6.0, 6.6, and 5.3 on MMLU, MMLU-Pro, GPQA-Diamond, KOR-Bench, AIME24, and\nAIME25, respectively. The results further demonstrate favorable scaling\nbehavior, suggesting strong potential for continued gains with more compute. In\naddition, RLPT provides a solid foundation, extending the reasoning boundaries\nof LLMs and enhancing RLVR performance.",
+    "authors": [
+      "Siheng Li",
+      "Kejiao Li",
+      "Zenan Xu",
+      "Guanhua Huang",
+      "Evander Yang",
+      "Kun Li",
+      "Haoyuan Wu",
+      "Jiajia Wu",
+      "Zihao Zheng",
+      "Chenchen Zhang",
+      "Kun Shi",
+      "Kyrierl Deng",
+      "Qi Yi",
+      "Ruibin Xiong",
+      "Tingqiang Xu",
+      "Yuhao Jiang",
+      "Jianfeng Yan",
+      "Yuyuan Zeng",
+      "Guanghui Xu",
+      "Jinbao Xue",
+      "Zhijiang Xu",
+      "Zheng Fang"
+    ],
+    "likes": 53,
+    "published_date": "Sep 23",
+    "url": "https://huggingface.co/papers/2509.19249",
+    "date_collected": "2025-09-26T07:06:46.736501+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "사전 훈련 데이터에서의 강화학습",
+      "abstract": "컴퓨팅 자원의 지수적 확장과 고품질 텍스트 데이터의 유한 증가 사이의 격차가 커지면서 대규모 언어 모델(Large Language Models, LLMs)에 대한 전통적인 확장 방법이 제약을 받게 되었습니다. 이 문제를 해결하기 위해 우리는 사전 훈련 데이터에서의 강화학습(Reinforcement Learning on Pre-Training data, RLPT)이라는 새로운 LLM 최적화를 위한 훈련 시간 확장 패러다임을 소개합니다. 이전 방법들이 주로 지도 학습을 통해 훈련을 확장하는 데 비해 RLPT는 정책이 사전 훈련 데이터로부터 학습하고 강화학습(Reinforcement Learning, RL)을 통해 능력을 향상시키기 위해 의미 있는 경로를 자율적으로 탐구할 수 있도록 합니다.기존의 강화학습 전략인 인간 피드백으로부터의 강화학습(Reinforcement Learning from Human Feedback, RLHF) 및 확인 가능한 보상으로의 강화학습(Reinforcement Learning with Verifiable Rewards, RLVR)는 보상 구성을 위해 인간 주석에 의존하는 반면 RLPT는 이 종속성을 사전 훈련 데이터로부터 보상 신호를 직접 유도하여 없앱니다. 구체적으로, RLPT는 이전 문맥에 의존하여 후속 텍스트 세그먼트를 정확하게 예측하는 능력에 대한 보상을 부여하는 다음 세그먼트 추론 목표를 채택합니다. 이러한 정식화는 강화학습이 사전 훈련 데이터에 확장되도록 하여 보다 일반화된 추론 능력을 촉진하는 더 넓은 문맥에서 보다 풍부한 경로를 탐색하도록 유도합니다. 일반적 도메인 및 수학적 추론 벤치마크에서 여러 모델에 대한 방대한 실험은 RLPT의 효과를 검증합니다. 예를 들어, Qwen3-4B-Base에 적용할 때, RLPT는 MMLU, MMLU-Pro, GPQA-Diamond, KOR-Bench, AIME24 및 AIME25에서 각각 3.0, 5.1, 8.1, 6.0, 6.6 및 5.3의 절대 향상을 제공합니다. 결과는 높은 스케일링 효과를 더 보여주며, 계속된 컴퓨팅 자원 투입으로 더 큰 이익이 기대됩니다. 더불어, RLPT는 LLM의 추론 경계를 확장하고 RLVR 성능을 향상시키는 견실한 기반을 제공합니다."
+    },
+    "summary": "1. 사전 훈련 데이터에서 강화학습인 RLPT는 LLM 최적화를 위한 새로운 훈련시간 확장 패러다임으로, 지도 학습이 아닌 강화학습을 통해 능력을 향상시킵니다.\n2. RLPT는 사전 훈련 데이터로부터 보상 신호를 유도하여 보다 일반화된 추론 능력을 갖춘 다양한 문맥을 탐색하도록 유도합니다.\n3. RLPT는 다양한 벤치마크 실험에서 뛰어난 효능을 입증하며 높은 스케일링 효과를 보여주며, 더 많은 컴퓨팅 자원 투입 시 지속적인 이익을 제공합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid\n  Vision Tokenizer",
+    "abstract": "Unified multimodal Large Language Models (LLMs) that can both understand and\ngenerate visual content hold immense potential. However, existing open-source\nmodels often suffer from a performance trade-off between these capabilities. We\npresent Manzano, a simple and scalable unified framework that substantially\nreduces this tension by coupling a hybrid image tokenizer with a well-curated\ntraining recipe. A single shared vision encoder feeds two lightweight adapters\nthat produce continuous embeddings for image-to-text understanding and discrete\ntokens for text-to-image generation within a common semantic space. A unified\nautoregressive LLM predicts high-level semantics in the form of text and image\ntokens, with an auxiliary diffusion decoder subsequently translating the image\ntokens into pixels. The architecture, together with a unified training recipe\nover understanding and generation data, enables scalable joint learning of both\ncapabilities. Manzano achieves state-of-the-art results among unified models,\nand is competitive with specialist models, particularly on text-rich\nevaluation. Our studies show minimal task conflicts and consistent gains from\nscaling model size, validating our design choice of a hybrid tokenizer.",
+    "authors": [
+      "Yanghao Li",
+      "Rui Qian",
+      "Bowen Pan",
+      "Haotian Zhang",
+      "Haoshuo Huang",
+      "Bowen Zhang",
+      "Jialing Tong",
+      "Haoxuan You",
+      "Xianzhi Du",
+      "Zhe Gan",
+      "Hyunjik Kim",
+      "Chao Jia",
+      "Zhenbang Wang",
+      "Yinfei Yang",
+      "Mingfei Gao",
+      "Zi-Yi Dou",
+      "Wenze Hu",
+      "Chang Gao",
+      "Dongxu Li",
+      "Philipp Dufter",
+      "Zirui Wang",
+      "Guoli Yin"
+    ],
+    "likes": 48,
+    "published_date": "Sep 19",
+    "url": "https://huggingface.co/papers/2509.16197",
+    "date_collected": "2025-09-26T07:06:46.738190+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "간단하고 확장 가능한 통합된 다중 모달 모델 MANZANO: 하이브리드 비전 토크나이저",
+      "abstract": "시각적 콘텐츠를 이해하고 생성할 수 있는 통합된 다중 모달 대형 언어 모델(LLM)은 엄청난 잠재력을 지니고 있습니다. 그러나 기존 오픈 소스 모델은 종종 이러한 능력 사이의 성능 트레이드오프 문제를 겪습니다. 본 논문에서는 하이브리드 이미지 토크나이저와 정교한 훈련 방법을 결합한 간단하고 확장 가능한 Manzano를 제안합니다. 하나의 공유 비전 인코더가 두 개의 가벼운 어댑터에 공급됩니다. 이는 이미지에서 텍스트로의 이해와 텍스트에서 이미지로의 생성을 위해 공통의 의미 공간 내에서 연속적 임베딩과 이산 토큰을 생성합니다. 통합된 자기 회귀형 LLM은 텍스트와 이미지 토큰 형식의 고수준 의미를 예측하며, 여기에 보조 확산 디코더가 이미지 토큰을 픽셀로 번역합니다. 이 아키텍처는 이해와 생성 데이터에 걸쳐 통합 훈련 레시피와 함께 확장 가능하게 두 능력을 공동으로 학습할 수 있게 합니다. Manzano는 통합된 모델 중 최고 성능을 달성하며, 특히 텍스트 풍부한 평가에서 전문 모델과 경쟁력을 갖습니다. 연구는 모델 크기 확장에서 최소한의 작업 충돌과 지속적 이익을 보여주며, 하이브리드 토크나이저의 설계 선택을 검증합니다."
+    },
+    "summary": "1. Manzano는 이미지와 텍스트 생성 간의 성능 트레이드오프 문제를 해결하기 위해 하이브리드 토크나이저와 통합된 훈련 레시피를 결합한 간단하고 확장 가능한 통합 모델이다.\n2. 공유 비전 인코더가 이미지 토크나이저에 입력되어 연속적 임베딩과 이산 토큰을 생성하며, 텍스트 생성을 위해 통합된 LLM이 고수준 의미를 예측하고 이미지 토큰을 픽셀로 번역한다.\n3. Manzano는 텍스트 풍부한 평가에서 특히 뛰어나며, 모델 크기 확장에 따른 작업 충돌의 최소화와 지속적 이득을 보여 향후 연구적 접근을 제시한다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Do You Need Proprioceptive States in Visuomotor Policies?",
+    "abstract": "Imitation-learning-based visuomotor policies have been widely used in robot\nmanipulation, where both visual observations and proprioceptive states are\ntypically adopted together for precise control. However, in this study, we find\nthat this common practice makes the policy overly reliant on the proprioceptive\nstate input, which causes overfitting to the training trajectories and results\nin poor spatial generalization. On the contrary, we propose the State-free\nPolicy, removing the proprioceptive state input and predicting actions only\nconditioned on visual observations. The State-free Policy is built in the\nrelative end-effector action space, and should ensure the full task-relevant\nvisual observations, here provided by dual wide-angle wrist cameras. Empirical\nresults demonstrate that the State-free policy achieves significantly stronger\nspatial generalization than the state-based policy: in real-world tasks such as\npick-and-place, challenging shirt-folding, and complex whole-body manipulation,\nspanning multiple robot embodiments, the average success rate improves from 0\\%\nto 85\\% in height generalization and from 6\\% to 64\\% in horizontal\ngeneralization. Furthermore, they also show advantages in data efficiency and\ncross-embodiment adaptation, enhancing their practicality for real-world\ndeployment.",
+    "authors": [
+      "Juntu Zhao",
+      "Wenbo Lu",
+      "Di Zhang",
+      "Yufeng Liu",
+      "Yushen Liang",
+      "Tianluo Zhang",
+      "Yifeng Cao",
+      "Junyuan Xie",
+      "Yingdong Hu",
+      "Shengjie Wang",
+      "Junliang Guo",
+      "Dequan Wang",
+      "Yang Gao"
+    ],
+    "likes": 47,
+    "published_date": "Sep 23",
+    "url": "https://huggingface.co/papers/2509.18644",
+    "date_collected": "2025-09-26T07:06:46.739517+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "시각운동 정책에서 자기감각 상태가 필요한가?",
+      "abstract": "로봇 조작에서 흔히 사용되는 모방 학습 기반 시각운동 정책은 일반적으로 시각적 관측과 자기감각 상태를 모두 정교한 제어를 위해 함께 채택한다. 그러나 본 연구에서는 이러한 일반적인 방식이 정책을 자기감각 상태 입력에 지나치게 의존하게 만들어 훈련 궤적에 과대적합되어 안 좋은 공간 일반화 결과를 초래한다는 것을 발견했다. 반면, 저희는 자기감각 상태를 제거하고 시각 관측에만 의존하여 작업을 예측하는 State-free Policy를 제안하였다. State-free Policy는 상대 종단효과자 동작 공간에 구축되어 있으며, 이는 듀얼 와이드앵글 손목 카메라로 제공되는 완전한 작업 관련 시각 관측을 보장해야 한다. 실험 결과는 State-free Policy가 실제 세계 작업에서 강력한 공간 일반화를 달성한다는 것을 입증한다: 픽 앤 플레이스, 어려운 셔츠 접기 및 복잡한 전신 조작과 같은 다양한 로봇 몸체를 포함하는 과업에서, 높이 일반화에서 평균 성공률이 0%에서 85%로, 수평 일반화에서 6%에서 64%로 향상되었다. 더불어, 이는 데이터 효율성과 교환 몸체 적응에서도 이점을 보여 실제 세계 배치를 강화한다."
+    },
+    "summary": "1. 자기감각 상태 없이 시각 관측에만 의존하는 State-free 정책은 공간 일반화 측면에서 상당히 강력한 성과를 보였다.\n2. State-free 정책은 픽 앤 플레이스, 셔츠 접기, 전신 조작과 같은 다양한 작업에서 뛰어난 성공률 향상을 보여주며, 데이터 효율성과 교환 몸체 적응도 우수하다.\n3. State-free 정책의 시각 관측에 중점을 두는 접근 방식은 실제로 로봇 조작에서 높은 일반화 능력을 제공하는 것으로 나타났다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Latent Zoning Network: A Unified Principle for Generative Modeling,\n  Representation Learning, and Classification",
+    "abstract": "Generative modeling, representation learning, and classification are three\ncore problems in machine learning (ML), yet their state-of-the-art (SoTA)\nsolutions remain largely disjoint. In this paper, we ask: Can a unified\nprinciple address all three? Such unification could simplify ML pipelines and\nfoster greater synergy across tasks. We introduce Latent Zoning Network (LZN)\nas a step toward this goal. At its core, LZN creates a shared Gaussian latent\nspace that encodes information across all tasks. Each data type (e.g., images,\ntext, labels) is equipped with an encoder that maps samples to disjoint latent\nzones, and a decoder that maps latents back to data. ML tasks are expressed as\ncompositions of these encoders and decoders: for example, label-conditional\nimage generation uses a label encoder and image decoder; image embedding uses\nan image encoder; classification uses an image encoder and label decoder. We\ndemonstrate the promise of LZN in three increasingly complex scenarios: (1) LZN\ncan enhance existing models (image generation): When combined with the SoTA\nRectified Flow model, LZN improves FID on CIFAR10 from 2.76 to 2.59-without\nmodifying the training objective. (2) LZN can solve tasks independently\n(representation learning): LZN can implement unsupervised representation\nlearning without auxiliary loss functions, outperforming the seminal MoCo and\nSimCLR methods by 9.3% and 0.2%, respectively, on downstream linear\nclassification on ImageNet. (3) LZN can solve multiple tasks simultaneously\n(joint generation and classification): With image and label encoders/decoders,\nLZN performs both tasks jointly by design, improving FID and achieving SoTA\nclassification accuracy on CIFAR10. The code and trained models are available\nat https://github.com/microsoft/latent-zoning-networks. The project website is\nat https://zinanlin.me/blogs/latent_zoning_networks.html.",
+    "authors": [
+      "Zinan Lin",
+      "Enshu Liu",
+      "Xuefei Ning",
+      "Junyi Zhu",
+      "Wenyu Wang",
+      "Sergey Yekhanin"
+    ],
+    "likes": 45,
+    "published_date": "Sep 19",
+    "url": "https://huggingface.co/papers/2509.15591",
+    "date_collected": "2025-09-26T07:06:46.740606+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "숨겨진 분류 네트워크: 생성 모델링, 표현 학습, 그리고 분류를 위한 통일된 원리",
+      "abstract": "생성 모델링, 표현 학습, 그리고 분류는 기계 학습(ML)의 세 가지 핵심 문제로, 그러나 그들의 최신 기술 해결책은 대부분 격리되어 있다. 본 논문에서는 이렇게 묻습니다: 통일된 원리가 이 모든 것을 다룰 수 있을까? 이러한 통합은 ML 파이프라인을 간소화하고 작업 간의 더 큰 상호 작용을 촉진할 수 있다. 본 연구에서는 이 목표를 향해 한 발자국인 숨겨진 분류 네트워크(LZN)를 소개한다. LZN의 핵심은 모든 작업에 걸쳐 정보를 인코딩하는 공유 가우시안 잠재 공간을 생성한다."
+    },
+    "summary": "1. LZN은 이미지 생성에서 Rectified Flow 모델과 결합되어 CIFAR10의 FID를 2.76에서 2.59로 개선시켜 최적화된 훈련 목적을 수정하지 않고도 성과를 향상시킬 수 있다.\n2. LZN은 보조 손실 함수 없이 비지도 학습 표현 학습을 구현할 수 있어 MoCo 및 SimCLR 방법을 ImageNet의 하류 선형 분류에서 각각 9.3% 및 0.2% 능가한다.\n3. 이미지와 라벨 인코더/디코더로, LZN은 수행하도록 설계된 두 작업을 동시에 수행하여 CIFAR10에서 FID를 개선하고 최신 분류 정확도를 달성한다.",
+    "categories": [
+      "Multimodal",
+      "Representation Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Video models are zero-shot learners and reasoners",
+    "abstract": "The remarkable zero-shot capabilities of Large Language Models (LLMs) have\npropelled natural language processing from task-specific models to unified,\ngeneralist foundation models. This transformation emerged from simple\nprimitives: large, generative models trained on web-scale data. Curiously, the\nsame primitives apply to today's generative video models. Could video models be\non a trajectory towards general-purpose vision understanding, much like LLMs\ndeveloped general-purpose language understanding? We demonstrate that Veo 3 can\nsolve a broad variety of tasks it wasn't explicitly trained for: segmenting\nobjects, detecting edges, editing images, understanding physical properties,\nrecognizing object affordances, simulating tool use, and more. These abilities\nto perceive, model, and manipulate the visual world enable early forms of\nvisual reasoning like maze and symmetry solving. Veo's emergent zero-shot\ncapabilities indicate that video models are on a path to becoming unified,\ngeneralist vision foundation models.",
+    "authors": [
+      "Thaddäus Wiedemer",
+      "Yuxuan Li",
+      "Paul Vicol",
+      "Shixiang Shane Gu",
+      "Nick Matarese",
+      "Kevin Swersky",
+      "Been Kim",
+      "Priyank Jaini",
+      "Robert Geirhos"
+    ],
+    "likes": 41,
+    "published_date": "Sep 24",
+    "url": "https://huggingface.co/papers/2509.20328",
+    "date_collected": "2025-09-26T07:06:46.741795+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "비디오 모델은 제로샷 학습자 및 추론자",
+      "abstract": "대형 언어 모델 (LLM)의 놀라운 제로샷 능력은 과업별 모델에서 통합된, 일반적인 기초 모델로 자연어 처리를 추진했습니다. 이 변화는 대규모, 생성 모델이 웹 규모 데이터로 훈련된 단순한 원시 요소에서 나왔습니다. 신기하게도, 동일한 원시 요소가 오늘날의 생성 비디오 모델에도 적용됩니다. 비디오 모델이 LLM이 개발된 것처럼 일반적인 용도의 시야 이해로 나아갈 수 있을까요? Veo 3가 명시적으로 훈련받지 않은 다양한 작업을 해결할 수 있는 능력을 보여줍니다: 객체 분할, 가장자리 감지, 이미지 편집, 물리적 특성 이해, 객체 기능 인식, 도구 사용 시뮬레이션 등. 시각적 세계를 인식하고 모델링하며 조작하는 이러한 능력은 미로 및 대칭 해결과 같은 초기의 시각적 추론을 가능케 합니다. Veo의 발생식 제로샷 능력은 비디오 모델이 통합된, 일반적인 시야 기초 모델로 발전 중임을 나타냅니다."
+    },
+    "summary": "1. 대형 언어 모델과 유사하게, 비디오 모델인 Veo 3은 명시적으로 훈련받지 않은 다양한 작업들을 해결할 수 있는 능력을 갖추고 있다.\n2. Veo 3의 시각적 인식, 모델링, 조작 능력은 미로나 대칭 해결과 같은 시각적 추론을 달성하는 데 도움이 된다.\n3. 비디오 모델인 Veo는 발생적인 제로샷 기능을 보여주며, 일반적인 시야 기초 모델로 발전하고 있는 것으로 나타난다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

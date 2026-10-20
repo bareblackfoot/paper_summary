@@ -1,0 +1,129 @@
+=== Paper Collection Started at Sun Feb  1 22:09:07 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W06
+URL: https://huggingface.co/papers/week/2026-W06
+Found 10 papers in weekly view
+Fetching likes for: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Fetching likes for: LongCat-Flash-Thinking-2601 Technical Report
+Fetching likes for: Idea2Story: An Automated Pipeline for Transforming Research Concepts into Complete Scientific Narratives
+Fetching likes for: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Fetching likes for: AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security
+Fetching likes for: Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation
+Fetching likes for: Everything in Its Place: Benchmarking Spatial Intelligence of Text-to-Image Models
+Fetching likes for: Advancing Open-source World Models
+Fetching likes for: Scaling Embeddings Outperforms Scaling Experts in Language Models
+Fetching likes for: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Selected top 10 papers by likes:
+1. Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs (181 likes)
+2. LongCat-Flash-Thinking-2601 Technical Report (170 likes)
+3. Idea2Story: An Automated Pipeline for Transforming Research Concepts into Complete Scientific Narratives (145 likes)
+4. daVinci-Dev: Agent-native Mid-training for Software Engineering (123 likes)
+5. AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security (120 likes)
+6. Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation (115 likes)
+7. Everything in Its Place: Benchmarking Spatial Intelligence of Text-to-Image Models (104 likes)
+8. Advancing Open-source World Models (99 likes)
+9. Scaling Embeddings Outperforms Scaling Experts in Language Models (91 likes)
+10. SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents (87 likes)
+Found abstract: Data preparation aims to denoise raw datasets, uncover cross-dataset relationships, and extract valu...
+Processed paper: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Found abstract: We introduce LongCat-Flash-Thinking-2601, a 560-billion-parameter open-source Mixture-of-Experts (Mo...
+Processed paper: LongCat-Flash-Thinking-2601 Technical Report
+Found abstract: Autonomous scientific discovery with large language model (LLM)-based agents has recently made subst...
+Processed paper: Idea2Story: An Automated Pipeline for Transforming Research Concepts into Complete Scientific Narratives
+Found abstract: Recently, the frontier of Large Language Model (LLM) capabilities has shifted from single-turn code ...
+Processed paper: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Found abstract: The rise of AI agents introduces complex safety and security challenges arising from autonomous tool...
+Processed paper: AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) offers a robust mechanism for enhancing mathem...
+Processed paper: Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation
+Found abstract: Text-to-image (T2I) models have achieved remarkable success in generating high-fidelity images, but ...
+Processed paper: Everything in Its Place: Benchmarking Spatial Intelligence of Text-to-Image Models
+Found abstract: We present LingBot-World, an open-sourced world simulator stemming from video generation. Positioned...
+Processed paper: Advancing Open-source World Models
+Found abstract: While Mixture-of-Experts (MoE) architectures have become the standard for sparsity scaling in large ...
+Processed paper: Scaling Embeddings Outperforms Scaling Experts in Language Models
+Found abstract: LLM agents have demonstrated remarkable capabilities in software development, but their performance ...
+Processed paper: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 181  ->  180
+Update date_collected: 2026-02-02T07:09:15.770439+09:00  ->  2026-02-01T07:08:36.508183+09:00
+
+Processing paper 2/10
+Title: LongCat-Flash-Thinking-2601 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 170  ->  167
+Update date_collected: 2026-02-02T07:09:15.772353+09:00  ->  2026-02-01T07:08:36.510094+09:00
+
+Processing paper 3/10
+Title: Idea2Story: An Automated Pipeline for Transforming Research Concepts into Complete Scientific Narratives
+Paper already exists, checking if translation is complete...
+Update likes: 145  ->  134
+Update date_collected: 2026-02-02T07:09:15.774131+09:00  ->  2026-02-01T07:08:36.511855+09:00
+
+Processing paper 4/10
+Title: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Paper already exists, checking if translation is complete...
+Update likes: 123  ->  122
+Update date_collected: 2026-02-02T07:09:15.775757+09:00  ->  2026-02-01T07:08:36.513469+09:00
+
+Processing paper 5/10
+Title: AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security
+Paper already exists, checking if translation is complete...
+Update likes: 120  ->  120
+Update date_collected: 2026-02-02T07:09:15.777637+09:00  ->  2026-02-01T07:08:36.515363+09:00
+
+Processing paper 6/10
+Title: Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation
+Paper already exists, checking if translation is complete...
+Update likes: 115  ->  112
+Update date_collected: 2026-02-02T07:09:15.778842+09:00  ->  2026-02-01T07:08:36.516578+09:00
+
+Processing paper 7/10
+Title: Everything in Its Place: Benchmarking Spatial Intelligence of Text-to-Image Models
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  103
+Update date_collected: 2026-02-02T07:09:15.780054+09:00  ->  2026-02-01T07:08:36.517799+09:00
+
+Processing paper 8/10
+Title: Advancing Open-source World Models
+Paper already exists, checking if translation is complete...
+Update likes: 99  ->  92
+Update date_collected: 2026-02-02T07:09:15.781899+09:00  ->  2026-02-01T07:08:36.519649+09:00
+
+Processing paper 9/10
+Title: Scaling Embeddings Outperforms Scaling Experts in Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 91  ->  86
+Update date_collected: 2026-02-02T07:09:15.783529+09:00  ->  2026-02-01T07:08:36.521292+09:00
+
+Processing paper 10/10
+Title: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  86
+Update date_collected: 2026-02-02T07:09:15.784882+09:00  ->  2026-02-01T07:08:36.522643+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W06.json...
+
+Updating Notion database...
+Updating paper: LLM이 정리 작업을 할 수 있을까? LLM을 활용한 응용준비 데이터 처리 조사 (likes: 180 -> 181)
+Updating paper: LongCat-Flash-Thinking-2601 기술 보고서 (likes: 167 -> 170)
+Updating paper: 아이디어를 이야기로: 연구 개념을 완전한 과학적 서술로 변환하는 자동화 파이프라인 (likes: 134 -> 145)
+Updating paper: daVinci-Dev: 소프트웨어 공학을 위한 에이전트 기반 중간 학습 (likes: 122 -> 123)
+Paper already exists with same likes count: AI 에이전트 안전 및 보안을 위한 진단 가드레일 프레임워크: AgentDoG
+Updating paper: 어렵게, 더 나아가기: 어려움 인식형 GRPO와 다면적 문제 재포장을 통한 수학적 추론 촉진 (likes: 112 -> 115)
+Updating paper: 모든 것이 제자리에: 텍스트-이미지 모델의 공간 지능 벤치마킹 (likes: 103 -> 104)
+Updating paper: 오픈소스 월드 모델의 발전 (likes: 92 -> 99)
+Updating paper: 언어 모델에서 'Scaling Embeddings'이 'Scaling Experts'보다 우수성을 발휘 (likes: 86 -> 91)
+Updating paper: SWE-Pruner: 코딩 에이전트용 자기 적응식 컨텍스트 가지치기 (likes: 86 -> 87)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Feb  1 22:11:01 UTC 2026 ===
+

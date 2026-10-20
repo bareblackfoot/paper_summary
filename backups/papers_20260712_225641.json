@@ -1,0 +1,322 @@
+[
+  {
+    "title": "The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning",
+    "abstract": "Reinforcement learning (RL) has gained growing attention in large language model (LLM) post-training, yet RL training remains fragile and can suffer from instability or collapse. One vital cause is training-inference mismatch: LLM adopts separate inference and training engines for generation efficiency and training precision, which in practice exhibits inconsistent probabilities for the same trajectories on training and inference sides, even with synchronized model parameters. This naturally induces a special type of off-policyness ever existing and poisoning the training. Prior works have made various efforts in addressing the off-policyness to stabilize the training policies under the mismatch. In this paper, we point out the objective misalignment neglected by existing works that an effective update to the policy in the training engine not necessarily ensures the improvement of the inference policy, i.e., the one used in deployment. To this end, we propose a new policy optimization objective for LLM RL, named Monotonic Inference Policy Improvement (MIPI). Following this principle, we introduce Monotonic Inference Policy Update (MIPU), a two-step LLM RL framework that constructs sampler-referenced candidate updates and selectively accepts synchronized candidates using an inference-side gap proxy. Experiments conducted on two model scales under high mismatch show that MIPU improves average reasoning performance and training stability.",
+    "authors": [
+      "Jing Liang",
+      "Hongyao Tang",
+      "Yi Ma",
+      "Yancheng He",
+      "Weixun Wang",
+      "Xiaoyang Li",
+      "Ju Huang",
+      "Wenbo Su",
+      "Jinyi Liu",
+      "Yan Zheng",
+      "Jianye Hao",
+      "Bo Zheng"
+    ],
+    "likes": 161,
+    "published_date": "Jun 28",
+    "url": "https://huggingface.co/papers/2606.29526",
+    "date_collected": "2026-07-12T07:56:45.993776+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Vidu S1: A Real-Time Interactive Video Generation Model",
+    "abstract": "We introduce Vidu S1, a real-time interactive video generation model supporting voice control of digital characters. Users can control video generation content at any moment through voice instructions. Vidu S1 supports infinite-length real-time video generation without blurring, drift, or visual distortion. Built with TurboDiffusion and TurboServe, Vidu S1 outputs 540p real-time videos at up to 42 FPS on regular consumer GPUs. Users can upload custom images of real people, anime, and pets, and choose different voice tones for personalized experiences. Experiments show that Vidu S1 achieves the best performance across all test metrics while fully meeting real-time inference requirements. A playable online demo is available at https://vidu.com/vidu-stream.",
+    "authors": [
+      "Jintao Zhang",
+      "Kai Jiang",
+      "Jintao Chen",
+      "Xu Wang",
+      "Yang Luo",
+      "Yuji Wang",
+      "Dechuang Chen",
+      "Jungang Li",
+      "Chengyang Ye",
+      "Marco Chen",
+      "Hongzhou Zhu",
+      "Min Zhao",
+      "Yuxuan Jiang",
+      "Zhengkun Huang",
+      "Chendong Xiang",
+      "Kaiwen Zheng",
+      "Haoxu Wang",
+      "Xiaohang Wang",
+      "Qi Jia",
+      "Xin Chen",
+      "Yimin Chen",
+      "Youhe Jiang"
+    ],
+    "likes": 116,
+    "published_date": "Jul 3",
+    "url": "https://huggingface.co/papers/2607.03118",
+    "date_collected": "2026-07-12T07:56:45.997067+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+    "abstract": "Robotic manipulation in the open world requires not only recognizing what a scene looks like, but also anticipating how its 3D structure moves under interaction. We argue that synchronized RGB, depth, and optical flow, namely RGB-DF, provide a physically grounded representation that captures the underlying 4D dynamics of a scene. Compared to 2D pixel videos, this multi-modal synergy aligns visual appearance with geometric structure and temporal motion, creating a representation space significantly closer to the low-level end-effector actions demanded by robotic systems, thereby narrowing the gap between world prediction and policy learning. Building on this insight, we introduce RynnWorld-4D, a generative model that co-produces future RGB frames, depth maps, and optical flow from a single RGB-D image and a language instruction within one unified diffusion process. This 4D world model features a tri-branch architecture that integrates cross-modal attention with frame-wise 3D RoPE, ensuring that appearance, geometry, and motion evolve consistently. To supply training data at scale, we curate Rynn4DDataset 1.0, a massive dataset of over 254.4 million frames across egocentric human and robotic manipulation videos with high-quality pseudo-labels for depth and optical flow. We further propose RynnWorld-4D-Policy, an inverse dynamics head that consumes the internal 4D representations of RynnWorld-4D in a single forward pass, bypassing expensive multi-step denoising, to output robot actions in a closed-loop manner. Experiments show that RynnWorld-4D produces temporally and spatially coherent 4D predictions, and that RynnWorld-4D-Policy achieves state-of-the-art performance on real-world dexterous bimanual manipulation tasks, particularly excelling in tasks demanding spatial precision and temporal coordination.",
+    "authors": [
+      "Haoyu Zhao",
+      "Xingyue Zhao",
+      "Siteng Huang",
+      "Xin Li",
+      "Deli Zhao",
+      "Zhongyu Li"
+    ],
+    "likes": 89,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2607.06559",
+    "date_collected": "2026-07-12T07:56:45.999467+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+    "abstract": "Structure-property relationships are foundational to biology, chemistry and materials science, where function, reactivity and physical response emerge from spatial, chemical and periodic organization. Mechanistically explaining these relationships requires interpreting structural evidence through scientific principles and physical constraints, from stereochemistry and bonding to symmetry, energetics and periodic order. However, applying artificial intelligence to this process presents a joint challenge of representation and reasoning: models must preserve domain-native structural information while showing how specific evidence supports predictions under these constraints. Here we introduce SciReasoner, a multimodal scientific foundation model for native structural reasoning across proteins, small molecules and inorganic crystals. SciReasoner discretizes coordinates, topologies and periodic connectivities into a unified structure-aware vocabulary, treating structural tokens as addressable evidence units during reasoning. In homology-controlled Gene Ontology prediction, SciReasoner improves Cellular Component annotation for low-homology and orphan-like proteins, increasing F_{max} from 0.42 to 0.55. In chemistry, it raises single-step retrosynthesis accuracy from 0.63 to 0.72 while generating fragment-level disconnection and precursor-verification traces. In materials science, its representations separate elemental and compound phases and resolve high- and low-band-gap regimes. Across 86 benchmarks, SciReasoner achieves state-of-the-art performance on 67 tasks. Double-blind expert evaluation rates its reasoning traces as preferred or at least comparable to those of a frontier large language model in 98% of cases. By making structure an inspectable substrate for reasoning under scientific constraints, SciReasoner connects accurate prediction with interpretable scientific inference.",
+    "authors": [
+      "Chen Tang",
+      "Yizhou Wang",
+      "Jianyu Wu",
+      "Lintao Wang",
+      "Shixiang Tang",
+      "Pengze Li",
+      "Encheng Su",
+      "Jun Yao",
+      "Jiabei Xiao",
+      "Yuqi Shi",
+      "Jielan Li",
+      "Hongxia Hao",
+      "Zhangyang Gao",
+      "Fang Wu",
+      "Ben Fei",
+      "Xiangyu Yue",
+      "Pan Tan",
+      "Bozitao Zhong",
+      "Jinouwen Zhang",
+      "Aoran Wang",
+      "Yan Lu",
+      "Jiaheng Liu"
+    ],
+    "likes": 83,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2607.07708",
+    "date_collected": "2026-07-12T07:56:46.002672+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "AlayaWorld: Long-Horizon and Playable Video World Generation",
+    "abstract": "Game worlds have traditionally been built through labor-intensive production pipelines, making them costly to develop, difficult to customization, and expensive to modify after deployment. Recent advances in video world models offer a fundamentally different paradigm. Rather than explicitly authoring every component of a virtual environment, these models autoregressively synthesize future observations conditioned on the current world state and user interactions, enabling playable worlds to be generated online. Trained on both gameplay recordings and real-world videos, they can capture diverse visual appearances and physical dynamics, opening new opportunities for interactive applications beyond gaming, including embodied intelligence. In this paper, we present AlayaWorld, a full-stack open-source framework for building interactive generative worlds. AlayaWorld enables open-ended real-time interaction, allowing users to freely navigate and perform diverse actions such as combat, spell casting, and monster summoning. The framework unifies the complete development-from data preparation model architecture, model training, inference acceleration, and deployment-within a modular and extensible architecture. Alongside the framework, we release reproducible pipelines, reference implementations, evaluation tools, and comprehensive documentation, establishing a practical foundation for future research and real-time applications of generative world models.",
+    "authors": [
+      "AlayaWorld Team",
+      "Kaipeng Zhang",
+      "Chuanhao Li",
+      "Yifan Zhan",
+      "Yongtao Ge",
+      "Yuanyang Yin",
+      "Jiaming Tan",
+      "Kang He",
+      "Liaoyuan Fan",
+      "Ruicong Liu",
+      "Xiaojie Xu",
+      "Xuangeng Chu",
+      "Zhen Li",
+      "Zhengyuan Lin",
+      "Zhixiang Wang",
+      "Zian Meng",
+      "Zihui Gao"
+    ],
+    "likes": 83,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2607.06291",
+    "date_collected": "2026-07-12T07:56:46.005662+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation",
+    "abstract": "Scaling robot learning requires massive, diverse trajectory data, yet collection is currently bottlenecked by physical teleoperation, where every demonstration binds operator time to specific hardware and workspaces. We introduce digital teleoperation, a paradigm that decouples data collection from physical constraints by replacing the real robot with a generative world model. In this framework, an operator's hand-pose stream drives a robot-centric generative world model to synthesize high-fidelity egocentric videos from a single reference image. The recorded pose stream serves as an embodiment-agnostic action label transferable to any target robot via standard retargeting, yielding complete state-action trajectories for imitation learning independent of physical hardware. We instantiate this paradigm in RynnWorld-Teleop, a system that integrates depth-aware skeletal conditioning, progressive human-to-robot training on a video Diffusion Transformer, and streaming autoregressive distillation. This pipeline compresses the generative process into a single-pass inference, enabling 40+ FPS, real-time interactive generation on a single H100 GPU. Policies trained exclusively on RynnWorld-Teleop-generated data achieve effective zero-shot Sim2Real transfer across dexterous and diverse bimanual tasks. Moreover, augmenting real-world datasets with our digitally teleoperated data consistently improves success rates, demonstrating that RynnWorld-Teleop serves as a high-fidelity, scalable data engine for the next generation of robotic agents.",
+    "authors": [
+      "Haoyu Zhao",
+      "Xingyue Zhao",
+      "Hangyu Li",
+      "Biao Gong",
+      "Kehan Li",
+      "Siteng Huang",
+      "Xin Li",
+      "Deli Zhao",
+      "Zhongyu Li"
+    ],
+    "likes": 76,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2607.06558",
+    "date_collected": "2026-07-12T07:56:46.008253+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "OmniOpt: Taxonomy, Geometry, and Benchmarking of Modern Optimizers",
+    "abstract": "Optimizer selection for large-scale model training has become a system-level design decision constrained jointly by compute, memory, tuning budget, and task diversity, yet the landscape of over one hundred methods remains fragmented. We therefore present OmniOpt, a unified survey and benchmark cookbook of optimizers for the research community. OmniOpt rests on four coupled components. First, we treat every optimizer update as a structured transformation through a five-stage meta-pipeline, and show that most methods engage only one or two of these stages. Second, we use norm-constrained linear minimization oracles (LMOs) to unify different optimizers. Third, these two views ground a dual-dimension taxonomy, one dimension assigning each method to a mechanism family and the other recording the measurable training objectives it aims to improve. Fourth, and at the core of this paper, we instantiate the full taxonomy in a unified cross-domain benchmark spanning representative optimizers, model scales, and training regimes from language model pretraining to image classification, systematically analyzing each method family across multiple effect objectives and laying out their trade-offs. OmniOpt thus supplies the research community with an operational coordinate system for selecting optimizers under explicit mechanism and objective assumptions, and charts a direction for the future development of the optimizer community.",
+    "authors": [
+      "Siyuan Li",
+      "Jiabao Pan",
+      "Yumou Liu",
+      "Zhuoli Ouyang",
+      "Xin Jin",
+      "Xinglong Xu",
+      "Jingxuan Wei",
+      "Shengye Pang",
+      "Jintao Che",
+      "Xuanhe Zhou",
+      "Conghui He",
+      "Cheng Tan"
+    ],
+    "likes": 74,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2607.04033",
+    "date_collected": "2026-07-12T07:56:46.010952+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "UI-MOPD: Multi-Platform On-Policy Distillation for Continual GUI Agent Learning",
+    "abstract": "Recent advances in multimodal foundation models and agent systems have driven GUI agents from single-platform task execution toward cross-platform interaction. However, building multi-platform GUI agents remains challenging. On one hand, high-quality and executable cross-platform interaction trajectories are still scarce, and existing data often suffer from limited platform coverage. On the other hand, different platforms exhibit distinct interaction conventions, making joint or continual training prone to behavioral pattern mixing, platform-specific capability degradation, and catastrophic forgetting. To address these challenges, we construct Uni-GUI, a high-quality cross-platform GUI interaction dataset, and propose UI-MOPD, the first method that incorporates multi-teacher on-policy distillation into continual learning for GUI agents. UI-MOPD dynamically selects a platform-specific teacher according to the current environment and transfers platform-specific behavioral priors to a shared policy through platform-conditioned distillation, enabling adaptation to new platforms while preserving capabilities on existing ones. Experiments on OSWorld and MobileWorld show that UI-MOPD achieves task success rates of 38.2% and 12.0%, respectively, demonstrating its effectiveness in balancing cross-platform capability retention and new-platform adaptation.\n  Project page: https://elispectre.github.io/UI-MOPD/.",
+    "authors": [
+      "Niu Lian",
+      "Alan Chen",
+      "Zhehao Yu",
+      "Chengzhen Duan",
+      "Fazhan Liu",
+      "Hui Liu",
+      "Pei Fu",
+      "Jian Luan",
+      "Yaowei Wang",
+      "Shu-Tao Xia",
+      "Jinpeng Wang"
+    ],
+    "likes": 68,
+    "published_date": "Jul 5",
+    "url": "https://huggingface.co/papers/2607.04425",
+    "date_collected": "2026-07-12T07:56:46.013646+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling",
+    "abstract": "Scaling modern large language models (LLMs) to long contexts is limited by the quadratic computation cost, and poor length extrapolation of dense attention. Chunk-wise sparse attention offers a promising alternative, but all existing methods fall short of full attention because of their inaccurate chunk selection. We propose Hierarchical Landmark Sparse (HiLS) Attention, a chunk-wise sparse attention mechanism that learns chunk selection end-to-end under the language-modeling (LM) loss. HiLS factorizes attention hierarchically: each query performs attention independently with each retrieved chunk to extract chunk-specific information, and the resulting outputs are fused according to chunk retrieval scores. By incorporating retrieval scores into the forward attention computation, HiLS optimizes them directly with the LM loss, enabling end-to-end retrieval learning and native sparse training. Experimental results show that HiLS-Attention achieves performance comparable to, and in some cases better than, full attention at in-domain context lengths. Meanwhile, HiLS-Attention extrapolates more than 64times the training context length with 90% retrieval accuracy, far beyond full attention. Moreover, existing full-attention models can be converted to HiLS-Attention with lightweight continued pretraining, preserving in-domain performance while acquiring ultra-long-context extrapolation. Together with its sparse KV access and computation, HiLS-Attention breaks the usual efficiency-performance trade-off, enabling long-context LLMs that are both more efficient and more effective on general long-context tasks than their full-attention counterparts.",
+    "authors": [
+      "Xiang Hu",
+      "Xinyu Wei",
+      "Hao Gu",
+      "Minshen Zhang",
+      "Tian Liang",
+      "Huayang Li",
+      "Lei Zhu",
+      "Yan Wang",
+      "Sirui Han",
+      "Yushi Bai",
+      "Kewei Tu",
+      "Haitao Mi",
+      "Leo Liang"
+    ],
+    "likes": 62,
+    "published_date": "Jul 3",
+    "url": "https://huggingface.co/papers/2607.02980",
+    "date_collected": "2026-07-12T07:56:46.016426+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "PixWorld: Unifying 3D Scene Generation and Reconstruction in Pixel Space",
+    "abstract": "3D reconstruction and generation are commonly tackled by separate paradigms: pixel-based regression for reconstruction, and latent diffusion for generation. Recent works attempt to unify them in latent space, but with notable drawbacks: the diffusion objective is defined on latent features rather than the underlying 3D representation, and both branches suffer from information loss introduced by latent encoding, while requiring a pretrained Variational Autoencoder (VAE) or Representation Autoencoder (RAE). In this paper, we reformulate these two tasks under a unified pixel-space diffusion paradigm and introduce PixWorld, a single model that jointly addresses 3D reconstruction and generation. By supervising diffusion directly on rendered images, PixWorld removes the above limitations and aligns optimization with 3D scene fidelity. Beyond photometric and perceptual supervision that operates at the 2D image level and lacks 3D geometric awareness, we further introduce a geometry perception loss that aligns rendered views with their ground truth in the geometry-aware feature space of a pretrained 3D foundation model, providing 3D structural supervision. PixWorld consistently outperforms prior latent-space generation methods and matches state-of-the-art reconstruction methods, demonstrating the superiority of a unified pixel-space approach.",
+    "authors": [
+      "Sensen Gao",
+      "Zhaoqing Wang",
+      "Qihang Cao",
+      "Dongdong Yu",
+      "Changhu Wang",
+      "Jia-Wang Bian"
+    ],
+    "likes": 61,
+    "published_date": "Jul 6",
+    "url": "https://huggingface.co/papers/2607.05373",
+    "date_collected": "2026-07-12T07:56:46.018814+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  }
+]

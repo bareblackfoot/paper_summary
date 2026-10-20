@@ -1,0 +1,125 @@
+=== Paper Collection Started at Mon Jul 20 23:05:48 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W30
+URL: https://huggingface.co/papers/week/2026-W30
+Found 10 papers in weekly view
+Fetching likes for: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Fetching likes for: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Fetching likes for: Loop the Loopies!
+Fetching likes for: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Fetching likes for: xHC: Expanded Hyper-Connections
+Fetching likes for: Cura 1T: Specialized Model for Agentic Healthcare
+Fetching likes for: On-Policy Delta Distillation
+Fetching likes for: RecGPT-V3 Technical Report
+Fetching likes for: From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality
+Fetching likes for: Understanding Reasoning from Pretraining to Post-Training
+Selected top 10 papers by likes:
+1. RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources (113 likes)
+2. RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM (111 likes)
+3. Loop the Loopies! (54 likes)
+4. Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories (54 likes)
+5. xHC: Expanded Hyper-Connections (46 likes)
+6. Cura 1T: Specialized Model for Agentic Healthcare (43 likes)
+7. On-Policy Delta Distillation (27 likes)
+8. RecGPT-V3 Technical Report (25 likes)
+9. From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality (24 likes)
+10. Understanding Reasoning from Pretraining to Post-Training (18 likes)
+Found abstract: Skills are a useful abstraction for software agents, turning human and agent experience into reusabl...
+Processed paper: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Found abstract: Graph retrieval-augmented generation (GraphRAG) enhances large language models with structured knowl...
+Processed paper: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Found abstract: We present Loopie, the most powerful looped Transformer to date. The Loopie series consists of two M...
+Processed paper: Loop the Loopies!
+Found abstract: We present Xiaomi-Robotics-1, a foundational vision-language-action (VLA) model capable of (1) follo...
+Processed paper: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Found abstract: Hyper-Connections (HC) expand the residual stream of Transformers into N parallel streams, providing...
+Processed paper: xHC: Expanded Hyper-Connections
+Found abstract: Healthcare spans high-stakes communication, expert reasoning, and workflow execution, yet specialize...
+Processed paper: Cura 1T: Specialized Model for Agentic Healthcare
+Found abstract: On-policy distillation is an alternative post-training method in reinforcement learning that allevia...
+Processed paper: On-Policy Delta Distillation
+Found abstract: Large language models (LLMs) are transforming recommender systems from matching co-occurrence patter...
+Processed paper: RecGPT-V3 Technical Report
+Found abstract: Code review helps maintain software quality before code integration, but it also imposes a substanti...
+Processed paper: From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality
+Found abstract: Reinforcement learning (RL) has become central to improving large language models (LLMs) on complex ...
+Processed paper: Understanding Reasoning from Pretraining to Post-Training
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Loop the Loopies!
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  10
+Update date_collected: 2026-07-21T08:05:56.917268+09:00  ->  2026-07-20T13:38:49.054643+09:00
+
+Processing paper 4/10
+Title: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  20
+Update date_collected: 2026-07-21T08:05:56.921357+09:00  ->  2026-07-20T13:38:49.046417+09:00
+
+Processing paper 5/10
+Title: xHC: Expanded Hyper-Connections
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  26
+Update date_collected: 2026-07-21T08:05:56.924891+09:00  ->  2026-07-20T13:38:49.044015+09:00
+
+Processing paper 6/10
+Title: Cura 1T: Specialized Model for Agentic Healthcare
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  15
+Update date_collected: 2026-07-21T08:05:56.927911+09:00  ->  2026-07-20T13:38:49.050188+09:00
+
+Processing paper 7/10
+Title: On-Policy Delta Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 27  ->  14
+Update date_collected: 2026-07-21T08:05:56.930732+09:00  ->  2026-07-20T13:38:49.053244+09:00
+
+Processing paper 8/10
+Title: RecGPT-V3 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 25  ->  19
+Update date_collected: 2026-07-21T08:05:56.934725+09:00  ->  2026-07-20T13:38:49.048570+09:00
+
+Processing paper 9/10
+Title: From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality
+Paper already exists, checking if translation is complete...
+Update likes: 24  ->  15
+Update date_collected: 2026-07-21T08:05:56.937724+09:00  ->  2026-07-20T13:38:49.051771+09:00
+
+Processing paper 10/10
+Title: Understanding Reasoning from Pretraining to Post-Training
+Paper already exists, checking if translation is complete...
+Update likes: 18  ->  7
+Update date_collected: 2026-07-21T08:05:56.940981+09:00  ->  2026-07-20T13:38:49.056342+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W30.json...
+
+Updating Notion database...
+Creating new paper: RESOURCE2SKILL: 인간이 만든 다중 모달 자원으로부터 실행 가능한 에이전트 스킬 추출
+Creating new paper: RAGU: 소형 도메인 적응 LLM을 갖춘 다단계 GraphRAG 엔진
+Updating paper: 루프 더 루피! (likes: 10 -> 54)
+Updating paper: Xiaomi-Robotics-1: 실세계 궤적 100,000시간 이상을 활용한 비전-언어-행동 모델의 확장 (likes: 20 -> 54)
+Updating paper: 확장된 하이퍼 커넥션(xHC) (likes: 26 -> 46)
+Updating paper: 양립 건강 관리를 위한 특화된 모델 Cura 1T (likes: 15 -> 43)
+Updating paper: 정책 기반 델타 증류 (likes: 14 -> 27)
+Updating paper: RecGPT-V3 기술 보고서 (likes: 19 -> 25)
+Updating paper: 인간 중심에서 주체적 코드 리뷰로: 서로 다른 세대의 생성 AI 기술이 리뷰 품질에 미치는 영향 (likes: 15 -> 24)
+Updating paper: 사전훈련부터 사후훈련까지 추론 이해하기 (likes: 7 -> 18)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul 20 23:07:19 UTC 2026 ===
+

@@ -1,0 +1,173 @@
+=== Paper Collection Started at Thu Jul 17 22:08:12 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W29
+URL: https://huggingface.co/papers/week/2025-W29
+Found 10 papers in weekly view
+Fetching likes for: Test-Time Scaling with Reflective Generative Model
+Fetching likes for: Reasoning or Memorization? Unreliable Results of Reinforcement Learning
+  Due to Data Contamination
+Fetching likes for: Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning
+Fetching likes for: NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models
+Fetching likes for: Vision Foundation Models as Effective Visual Tokenizers for
+  Autoregressive Image Generation
+Fetching likes for: CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering
+Fetching likes for: Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning
+  Systems in LLMs
+Fetching likes for: Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive
+  Token-Level Computation
+Fetching likes for: Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities
+Fetching likes for: SpeakerVid-5M: A Large-Scale High-Quality Dataset for Audio-Visual
+  Dyadic Interactive Human Generation
+Selected top 10 papers by likes:
+1. Test-Time Scaling with Reflective Generative Model (84 likes)
+2. Reasoning or Memorization? Unreliable Results of Reinforcement Learning
+  Due to Data Contamination (66 likes)
+3. Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning (66 likes)
+4. NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models (61 likes)
+5. Vision Foundation Models as Effective Visual Tokenizers for
+  Autoregressive Image Generation (54 likes)
+6. CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering (49 likes)
+7. Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning
+  Systems in LLMs (47 likes)
+8. Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive
+  Token-Level Computation (46 likes)
+9. Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities (45 likes)
+10. SpeakerVid-5M: A Large-Scale High-Quality Dataset for Audio-Visual
+  Dyadic Interactive Human Generation (44 likes)
+Found abstract: We introduce our first reflective generative model MetaStone-S1, which
+obtains OpenAI o3's performan...
+Processed paper: Test-Time Scaling with Reflective Generative Model
+Found abstract: The reasoning capabilities of large language models (LLMs) have been a
+longstanding focus of researc...
+Processed paper: Reasoning or Memorization? Unreliable Results of Reinforcement Learning
+  Due to Data Contamination
+Found abstract: The remarkable reasoning capability of large language models (LLMs) stems
+from cognitive behaviors t...
+Processed paper: Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning
+Found abstract: We introduce NeuralOS, a neural framework that simulates graphical user
+interfaces (GUIs) of operati...
+Processed paper: NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models
+Found abstract: Leveraging the powerful representations of pre-trained vision foundation
+models -- traditionally use...
+Processed paper: Vision Foundation Models as Effective Visual Tokenizers for
+  Autoregressive Image Generation
+Found abstract: This paper proposes a neural rendering approach that represents a scene as
+"compressed light-field t...
+Processed paper: CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering
+Found abstract: Retrieval-Augmented Generation (RAG) lifts the factuality of Large Language
+Models (LLMs) by injecti...
+Processed paper: Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning
+  Systems in LLMs
+Found abstract: Scaling language models unlocks impressive capabilities, but the accompanying
+computational and memo...
+Processed paper: Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive
+  Token-Level Computation
+Found abstract: In this report, we introduce the Gemini 2.X model family: Gemini 2.5 Pro and
+Gemini 2.5 Flash, as we...
+Processed paper: Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities
+Found abstract: The rapid development of large-scale models has catalyzed significant
+breakthroughs in the digital h...
+Processed paper: SpeakerVid-5M: A Large-Scale High-Quality Dataset for Audio-Visual
+  Dyadic Interactive Human Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Test-Time Scaling with Reflective Generative Model
+Paper already exists, checking if translation is complete...
+Update likes: 84  ->  84
+Update date_collected: 2025-07-18T07:08:20.564537+09:00  ->  2025-07-17T07:08:09.175029+09:00
+
+Processing paper 2/10
+Title: Reasoning or Memorization? Unreliable Results of Reinforcement Learning
+  Due to Data Contamination
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  62
+Update date_collected: 2025-07-18T07:08:20.566037+09:00  ->  2025-07-17T07:08:09.178238+09:00
+
+Processing paper 3/10
+Title: Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  66
+Update date_collected: 2025-07-18T07:08:20.567773+09:00  ->  2025-07-17T07:08:09.176789+09:00
+
+Processing paper 4/10
+Title: NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  58
+Update date_collected: 2025-07-18T07:08:20.568928+09:00  ->  2025-07-17T07:08:09.179367+09:00
+
+Processing paper 5/10
+Title: Vision Foundation Models as Effective Visual Tokenizers for
+  Autoregressive Image Generation
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  54
+Update date_collected: 2025-07-18T07:08:20.570209+09:00  ->  2025-07-17T07:08:09.180611+09:00
+
+Processing paper 6/10
+Title: CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  48
+Update date_collected: 2025-07-18T07:08:20.571352+09:00  ->  2025-07-17T07:08:09.181737+09:00
+
+Processing paper 7/10
+Title: Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning
+  Systems in LLMs
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive
+  Token-Level Computation
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  42
+Update date_collected: 2025-07-18T07:08:20.574569+09:00  ->  2025-07-17T07:08:09.186454+09:00
+
+Processing paper 9/10
+Title: Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  44
+Update date_collected: 2025-07-18T07:08:20.576415+09:00  ->  2025-07-17T07:08:09.184993+09:00
+
+Processing paper 10/10
+Title: SpeakerVid-5M: A Large-Scale High-Quality Dataset for Audio-Visual
+  Dyadic Interactive Human Generation
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  44
+Update date_collected: 2025-07-18T07:08:20.577744+09:00  ->  2025-07-17T07:08:09.183150+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W29.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 반사적 생성 모델을 활용한 테스트 시간 스케일링
+Updating paper: 추론 또는 기억? 데이터 오염으로 인한 강화 학습의 불안정한 결과 (likes: 62 -> 66)
+Paper already exists with same likes count: 오픈 비전 리스너: 시각 추론을 위한 언어적 인지 행동 전이
+Updating paper: NeuralOS: 신경 생성 모델을 통한 운영 체제 시뮬레이션을 향하여 (likes: 58 -> 61)
+Paper already exists with same likes count: 시각 기반 모델을 활용한 자기회귀 이미지 생성을 위한 효과적인 시각 토크나이저들
+Updating paper: CLiFT: Compute-Efficient 및 Adaptive를 위한 압축적 광필드 토큰 Neural 렌더링 (likes: 48 -> 49)
+Creating new paper: 깊은 추론을 통한 에이전틱 RAG로 나아가기: LLM에서 RAG-추론 시스템 조사
+Updating paper: 동적 재귀 깊이 학습을 통한 적응형 토큰 수준 계산의 Mixture-of-Recursions (likes: 42 -> 46)
+Updating paper: Gemini 2.5: 선도를 밀어나가는 고급 추론, 다중 모달, 장거리 문맥, 그리고 차세대 에이전틱 능력 (likes: 44 -> 45)
+Paper already exists with same likes count: SpeakerVid-5M: 음향-시각 이중 상호작용 가상인간 생성을 위한 대규모 고품질 데이터셋
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jul 17 22:09:32 UTC 2025 ===
+

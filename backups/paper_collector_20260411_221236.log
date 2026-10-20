@@ -1,0 +1,123 @@
+=== Paper Collection Started at Fri Apr 10 22:17:31 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W15
+URL: https://huggingface.co/papers/week/2026-W15
+Found 10 papers in weekly view
+Fetching likes for: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Fetching likes for: Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding
+Fetching likes for: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Fetching likes for: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Fetching likes for: Adam's Law: Textual Frequency Law on Large Language Models
+Fetching likes for: Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model Capability
+Fetching likes for: Self-Distilled RLVR
+Fetching likes for: SkillClaw: Let Skills Evolve Collectively with Agentic Evolver
+Fetching likes for: HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents
+Fetching likes for: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Selected top 10 papers by likes:
+1. GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning (311 likes)
+2. Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding (222 likes)
+3. InCoder-32B-Thinking: Industrial Code World Model for Thinking (222 likes)
+4. OpenWorldLib: A Unified Codebase and Definition of Advanced World Models (195 likes)
+5. Adam's Law: Textual Frequency Law on Large Language Models (164 likes)
+6. Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model Capability (152 likes)
+7. Self-Distilled RLVR (152 likes)
+8. SkillClaw: Let Skills Evolve Collectively with Agentic Evolver (143 likes)
+9. HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents (126 likes)
+10. MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale (110 likes)
+Found abstract: Competitive programming remains one of the last few human strongholds in coding against AI. The best...
+Processed paper: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Found abstract: With the rapid advancement of video understanding, existing benchmarks are becoming increasingly sat...
+Processed paper: Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding
+Found abstract: Industrial software development across chip design, GPU optimization, and embedded systems lacks exp...
+Processed paper: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Found abstract: World models have garnered significant attention as a promising research direction in artificial int...
+Processed paper: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Found abstract: While textual frequency has been validated as relevant to human cognition in reading speed, its rela...
+Processed paper: Adam's Law: Textual Frequency Law on Large Language Models
+Found abstract: A prevailing narrative in LLM post-training holds that supervised finetuning (SFT) memorizes while r...
+Processed paper: Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model Capability
+Found abstract: On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This parad...
+Processed paper: Self-Distilled RLVR
+Found abstract: Large language model (LLM) agents such as OpenClaw rely on reusable skills to perform complex tasks,...
+Processed paper: SkillClaw: Let Skills Evolve Collectively with Agentic Evolver
+Found abstract: We introduce HY-Embodied-0.5, a family of foundation models specifically designed for real-world emb...
+Processed paper: HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents
+Found abstract: Current document parsing methods compete primarily on model architecture innovation, while systemati...
+Processed paper: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 311  ->  147
+Update date_collected: 2026-04-11T07:17:42.920828+09:00  ->  2026-04-10T07:20:08.068323+09:00
+
+Processing paper 2/10
+Title: Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding
+Paper already exists, checking if translation is complete...
+Update likes: 222  ->  217
+Update date_collected: 2026-04-11T07:17:42.922944+09:00  ->  2026-04-10T07:20:08.060736+09:00
+
+Processing paper 3/10
+Title: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Paper already exists, checking if translation is complete...
+Update likes: 222  ->  155
+Update date_collected: 2026-04-11T07:17:42.925250+09:00  ->  2026-04-10T07:20:08.066797+09:00
+
+Processing paper 4/10
+Title: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Paper already exists, checking if translation is complete...
+Update likes: 195  ->  171
+Update date_collected: 2026-04-11T07:17:42.927583+09:00  ->  2026-04-10T07:20:08.062991+09:00
+
+Processing paper 5/10
+Title: Adam's Law: Textual Frequency Law on Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 164  ->  161
+Update date_collected: 2026-04-11T07:17:42.929167+09:00  ->  2026-04-10T07:20:08.064545+09:00
+
+Processing paper 6/10
+Title: Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model Capability
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Self-Distilled RLVR
+Paper already exists, checking if translation is complete...
+Update likes: 152  ->  145
+Update date_collected: 2026-04-11T07:17:42.932472+09:00  ->  2026-04-10T07:20:08.069976+09:00
+
+Processing paper 8/10
+Title: SkillClaw: Let Skills Evolve Collectively with Agentic Evolver
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Paper already exists, checking if translation is complete...
+Update likes: 110  ->  103
+Update date_collected: 2026-04-11T07:17:42.938441+09:00  ->  2026-04-10T07:20:08.072262+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W15.json...
+
+Updating Notion database...
+Updating paper: GrandCode: 경쟁 프로그래밍에서 에이전틱 강화 학습을 통해 그랜드마스터 수준 달성 (likes: 147 -> 311)
+Updating paper: 비디오 이해의 다음 단계를 향한 Video-MME-v2 벤치마크 (likes: 217 -> 222)
+Updating paper: 산업 코드 세계 모델을 위한 인코더-32B-사고력 (likes: 155 -> 222)
+Updating paper: OpenWorldLib: 고급 세계 모델의 통합된 코드베이스와 정의 (likes: 171 -> 195)
+Updating paper: 아담의 법칙: 대형언어모델에서의 텍스트 빈도 법칙 (likes: 161 -> 164)
+Creating new paper: 추론 SFT에서 일반화 재고: 최적화, 데이터, 및 모델 능력에 관한 조건부 분석
+Updating paper: 자기 생성 강화학습 기반의 Self-Distilled RLVR (likes: 145 -> 152)
+Creating new paper: SkillClaw: 스킬이 에이전틱 에볼버와 함께 진화하는 방법
+Creating new paper: 현실 세계 에이전트를 위한 실체화된 기반 모델 HY-Embodied-0.5
+Updating paper: 데이터 중심 문서 구문 분석의 한계를 넓히는 MinerU2.5-Pro (likes: 103 -> 110)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Apr 10 22:19:21 UTC 2026 ===
+

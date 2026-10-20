@@ -1,0 +1,123 @@
+=== Paper Collection Started at Wed Feb 18 22:15:04 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W08
+URL: https://huggingface.co/papers/week/2026-W08
+Found 10 papers in weekly view
+Fetching likes for: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Fetching likes for: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Fetching likes for: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Fetching likes for: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Fetching likes for: Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?
+Fetching likes for: Experiential Reinforcement Learning
+Fetching likes for: OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence
+Fetching likes for: DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories
+Fetching likes for: SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks
+Fetching likes for: GLM-5: from Vibe Coding to Agentic Engineering
+Selected top 10 papers by likes:
+1. Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs (211 likes)
+2. SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise (137 likes)
+3. MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs (57 likes)
+4. Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception (56 likes)
+5. Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (51 likes)
+6. Experiential Reinforcement Learning (47 likes)
+7. OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence (45 likes)
+8. DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories (43 likes)
+9. SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (35 likes)
+10. GLM-5: from Vibe Coding to Agentic Engineering (29 likes)
+Found abstract: The diversity of post-training data is critical for effective downstream performance in large langua...
+Processed paper: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Found abstract: Spoken query retrieval is an important interaction mode in modern information retrieval. However, ex...
+Processed paper: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Found abstract: We present MedXIAOHE, a medical vision-language foundation model designed to advance general-purpose...
+Processed paper: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Found abstract: Multimodal Large Language Models (MLLMs) excel at broad visual understanding but still struggle with...
+Processed paper: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Found abstract: Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by deco...
+Processed paper: Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?
+Found abstract: Reinforcement learning has become the central approach for language models (LMs) to learn from envir...
+Processed paper: Experiential Reinforcement Learning
+Found abstract: Hypothesis. Artificial general intelligence is, at its core, a compression problem. Effective compre...
+Processed paper: OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence
+Found abstract: Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-im...
+Processed paper: DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories
+Found abstract: Agent Skills are structured packages of procedural knowledge that augment LLM agents at inference ti...
+Processed paper: SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks
+Found abstract: We present GLM-5, a next-generation foundation model designed to transition the paradigm of vibe cod...
+Processed paper: GLM-5: from Vibe Coding to Agentic Engineering
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 211  ->  207
+Update date_collected: 2026-02-19T07:15:12.408444+09:00  ->  2026-02-18T07:13:07.453619+09:00
+
+Processing paper 2/10
+Title: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Paper already exists, checking if translation is complete...
+Update likes: 137  ->  135
+Update date_collected: 2026-02-19T07:15:12.409669+09:00  ->  2026-02-18T07:13:07.454764+09:00
+
+Processing paper 3/10
+Title: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  56
+Update date_collected: 2026-02-19T07:15:12.411458+09:00  ->  2026-02-18T07:13:07.456385+09:00
+
+Processing paper 4/10
+Title: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Paper already exists, checking if translation is complete...
+Update likes: 56  ->  54
+Update date_collected: 2026-02-19T07:15:12.412905+09:00  ->  2026-02-18T07:13:07.457699+09:00
+
+Processing paper 5/10
+Title: Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Experiential Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  25
+Update date_collected: 2026-02-19T07:15:12.415262+09:00  ->  2026-02-18T07:13:07.461504+09:00
+
+Processing paper 7/10
+Title: OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  42
+Update date_collected: 2026-02-19T07:15:12.416977+09:00  ->  2026-02-18T07:13:07.459282+09:00
+
+Processing paper 8/10
+Title: DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  25
+Update date_collected: 2026-02-19T07:15:12.418487+09:00  ->  2026-02-18T07:13:07.462862+09:00
+
+Processing paper 9/10
+Title: SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: GLM-5: from Vibe Coding to Agentic Engineering
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W08.json...
+
+Updating Notion database...
+Updating paper: 적은 양이 충분하다: LLM의 특징 공간에서 다양한 데이터 합성하기 (likes: 207 -> 211)
+Updating paper: 음향 잡음 하에서의 말로 된 질의 검색에 대한 강인성 평가 벤치마크인 SQuTR (likes: 135 -> 137)
+Updating paper: MedXIAOHE: 의료용 MLLM 구축을 위한 포괄적인 레시피 (likes: 56 -> 57)
+Updating paper: 줌 없이 줌: 세세한 다중모달 지각을 위한 영역-이미지 증류 (likes: 54 -> 56)
+Creating new paper: Sparse Autoencoders의 타당성 검사: SAE가 무작위 기준선을 이기는가?
+Updating paper: 경험주의 강화 학습 (likes: 25 -> 47)
+Updating paper: 원비전-인코더: 코덱-일치 희박성, 다중모달 지능을 위한 기초 원리 (likes: 42 -> 45)
+Updating paper: 딥이미지서치: 시각적 이력에서의 맥락인식 이미지 검색을 위한 멀티모달 에이전트 벤치마킹 (likes: 25 -> 43)
+Creating new paper: Agent Skills의 다양한 작업에서의 성능 측정벤치마킹
+Creating new paper: GLM-5: 바이브 코딩에서 에이전틱 엔지니어링으로
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Feb 18 22:17:08 UTC 2026 ===
+

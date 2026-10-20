@@ -1,0 +1,157 @@
+=== Paper Collection Started at Wed Aug  6 22:08:24 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W32
+URL: https://huggingface.co/papers/week/2025-W32
+Found 10 papers in weekly view
+Fetching likes for: Qwen-Image Technical Report
+Fetching likes for: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Fetching likes for: Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference
+Fetching likes for: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Fetching likes for: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Fetching likes for: PixNerd: Pixel Neural Field Diffusion
+Fetching likes for: Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation
+Fetching likes for: CellForge: Agentic Design of Virtual Cell Models
+Fetching likes for: LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation
+Fetching likes for: Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following
+Selected top 10 papers by likes:
+1. Qwen-Image Technical Report (128 likes)
+2. Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training (71 likes)
+3. Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference (61 likes)
+4. Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models (53 likes)
+5. SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension (46 likes)
+6. PixNerd: Pixel Neural Field Diffusion (45 likes)
+7. Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation (42 likes)
+8. CellForge: Agentic Design of Virtual Cell Models (34 likes)
+9. LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation (32 likes)
+10. Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following (31 likes)
+Found abstract: We present Qwen-Image, an image generation foundation model in the Qwen
+series that achieves signifi...
+Processed paper: Qwen-Image Technical Report
+Found abstract: General AI Agents are increasingly recognized as foundational frameworks for
+the next generation of ...
+Processed paper: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Found abstract: We present Seed Diffusion Preview, a large-scale language model based on
+discrete-state diffusion, o...
+Processed paper: Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference
+Found abstract: Diffusion Large Language Models (DLLMs) are emerging as a powerful
+alternative to the dominant Autor...
+Processed paper: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Found abstract: Retrieval-augmented generation (RAG) over long documents typically involves
+splitting the text into ...
+Processed paper: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Found abstract: The current success of diffusion transformers heavily depends on the
+compressed latent space shaped ...
+Processed paper: PixNerd: Pixel Neural Field Diffusion
+Found abstract: We introduce Skywork UniPic, a 1.5 billion-parameter autoregressive model
+that unifies image underst...
+Processed paper: Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation
+Found abstract: Virtual cell modeling represents an emerging frontier at the intersection of
+artificial intelligence...
+Processed paper: CellForge: Agentic Design of Virtual Cell Models
+Found abstract: Controllable ultra-long video generation is a fundamental yet challenging
+task. Although existing me...
+Processed paper: LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation
+Found abstract: Reasoning models excel in complex problem solving but exhibit a concerning
+trade off between reasoni...
+Processed paper: Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Qwen-Image Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 128  ->  79
+Update date_collected: 2025-08-07T07:08:32.492641+09:00  ->  2025-08-06T07:08:42.093570+09:00
+
+Processing paper 2/10
+Title: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  57
+Update date_collected: 2025-08-07T07:08:32.494159+09:00  ->  2025-08-06T07:08:42.095163+09:00
+
+Processing paper 3/10
+Title: Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 53  ->  50
+Update date_collected: 2025-08-07T07:08:32.497195+09:00  ->  2025-08-06T07:08:42.096405+09:00
+
+Processing paper 5/10
+Title: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  37
+Update date_collected: 2025-08-07T07:08:32.498501+09:00  ->  2025-08-06T07:08:42.098923+09:00
+
+Processing paper 6/10
+Title: PixNerd: Pixel Neural Field Diffusion
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  39
+Update date_collected: 2025-08-07T07:08:32.499631+09:00  ->  2025-08-06T07:08:42.097591+09:00
+
+Processing paper 7/10
+Title: Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: CellForge: Agentic Design of Virtual Cell Models
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  27
+Update date_collected: 2025-08-07T07:08:32.502752+09:00  ->  2025-08-06T07:08:42.100559+09:00
+
+Processing paper 9/10
+Title: LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following
+Paper already exists, checking if translation is complete...
+Update likes: 31  ->  20
+Update date_collected: 2025-08-07T07:08:32.505293+09:00  ->  2025-08-06T07:08:42.103602+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W32.json...
+
+Updating Notion database...
+Updating paper: Qwen-Image 기술 보고서 (likes: 79 -> 128)
+Updating paper: 인지적 커널-프로: 심층 연구 에이전트 및 에이전트 기반 모델 훈련을 위한 프레임워크 (likes: 57 -> 71)
+Creating new paper: 씨드 디퓨전: 고속 추론을 지원하는 대규모 디퓨전 언어 모델
+Updating paper: 고정이 넘어, 변수 길이 디노이징을 통한 확산 대형 언어 모델 (likes: 50 -> 53)
+Updating paper: SitEmb-v1.5: 의미 연관 및 장편 이해를 위한 개선된 컨텍스트 인식 밀집 검색 (likes: 37 -> 46)
+Updating paper: 픽셀 신경장 필드 확산 (likes: 39 -> 45)
+Creating new paper: 스카이워크 유니픽: 시각 이해와 생성을 위한 통일된 자기회귀 모델
+Updating paper: CellForge: Virtual Cell Models의 에이전틱 디자인 (likes: 27 -> 34)
+Creating new paper: LongVie: 다중 모달 가이드 제어 가능한 초장 비디오 생성
+Updating paper: 트레이드오프를 넘어: 이해 모델의 지시 따르기를 위한 자가지도 강화학습 (likes: 20 -> 31)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Aug  6 22:10:24 UTC 2025 ===
+

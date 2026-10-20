@@ -1,0 +1,286 @@
+[
+  {
+    "title": "From Scale to Speed: Adaptive Test-Time Scaling for Image Editing",
+    "abstract": "Image Chain-of-Thought (Image-CoT) is a test-time scaling paradigm that improves image generation by extending inference time. Most Image-CoT methods focus on text-to-image (T2I) generation. Unlike T2I generation, image editing is goal-directed: the solution space is constrained by the source image and instruction. This mismatch causes three challenges when applying Image-CoT to editing: inefficient resource allocation with fixed sampling budgets, unreliable early-stage verification using general MLLM scores, and redundant edited results from large-scale sampling. To address this, we propose ADaptive Edit-CoT (ADE-CoT), an on-demand test-time scaling framework to enhance editing efficiency and performance. It incorporates three key strategies: (1) a difficulty-aware resource allocation that assigns dynamic budgets based on estimated edit difficulty; (2) edit-specific verification in early pruning that uses region localization and caption consistency to select promising candidates; and (3) depth-first opportunistic stopping, guided by an instance-specific verifier, that terminates when intent-aligned results are found. Extensive experiments on three SOTA editing models (Step1X-Edit, BAGEL, FLUX.1 Kontext) across three benchmarks show that ADE-CoT achieves superior performance-efficiency trade-offs. With comparable sampling budgets, ADE-CoT obtains better performance with more than 2x speedup over Best-of-N.",
+    "authors": [
+      "Xiangyan Qu",
+      "Zhenlong Yuan",
+      "Jing Tang",
+      "Rui Chen",
+      "Datao Tang",
+      "Meng Yu",
+      "Lei Sun",
+      "Yancheng Bai",
+      "Xiangxiang Chu",
+      "Gaopeng Gou",
+      "Gang Xiong",
+      "Yujun Cai"
+    ],
+    "likes": 112,
+    "published_date": "Feb 24",
+    "url": "https://huggingface.co/papers/2603.00141",
+    "date_collected": "2026-03-04T07:12:12.212902+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "스케일에서 속도로: 이미지 편집을 위한 적응형 테스트 타임 스케일링",
+      "abstract": "이미지 체인-오브-사고 (Image-CoT)는 추론 시간을 확장하여 이미지 생성을 개선하는 테스트 타임 스케일링 패러다임입니다. 대부분의 Image-CoT 방법은 텍스트-이미지(T2I) 생성에 초점을 맞춥니다. T2I 생성과 달리 이미지 편집은 목표 지향적이며, 소스 이미지와 명령에 의해 해결 공간이 제약됩니다. 이러한 불일치로 인해 Image-CoT를 편집에 적용할 때 세 가지 도전 과제가 발생합니다: 고정된 샘플링 예산으로 인한 비효율적인 자원 할당, 일반 MLLM 점수를 사용한 신뢰할 수 없는 초기 단계 검증, 그리고 대규모 샘플링으로 인한 중복된 편집 결과. 이를 해결하기 위해 우리는 ADE-CoT(ADaptive Edit-CoT)를 제안합니다. 이는 편집 효율성과 성능을 향상시키기 위한 온디맨드 테스트 타임 스케일링 프레임워크입니다. ADE-CoT은 세 가지 주요 전략을 통합합니다: (1) 추정된 편집 난이도에 기반한 동적 예산 할당을 하는 난이도 인식 자원 할당; (2) 지역화 및 캡션 일관성을 사용한 초기 가지치기에서의 편집별 검증; 그리고 (3) 인스턴스별 검증기에 의해 안내되는 깊이 우선 기회 중단으로, 의도에 부합하는 결과가 발견되면 종료됩니다. 세 개의 SOTA 편집 모델 (Step1X-Edit, BAGEL, FLUX.1 Kontext)에 대한 광범위한 실험 결과는 ADE-CoT이 우수한 성능-효율 균형을 달성함을 보여줍니다. 비교 가능한 샘플링 예산으로, ADE-CoT은 Best-of-N 대비 2배 이상 속도 향상을 달성합니다."
+    },
+    "summary": "1. ADE-CoT는 편집 효율성과 성능을 향상시키기 위한 동적 예산 할당, 초기 단계 검증, 중복된 결과 방지를 위한 전략을 통합한 온디맨드 테스트 타임 스케일링 프레임워크이다.\n2. 실험 결과는 ADE-CoT이 세 SOTA 편집 모델에서 우수한 성능-효율 균형을 보여주며, 비교 가능한 샘플링 예산으로 최적의 결과를 달성한다.\n3. ADE-CoT은 편집 과정에서 발생하는 문제점을 해결함으로써 이미지 편집 분야에서 혁신적인 성과를 보여주고 있다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens",
+    "abstract": "OmniLottie is a versatile framework that generates high quality vector animations from multi-modal instructions. For flexible motion and visual content control, we focus on Lottie, a light weight JSON formatting for both shapes and animation behaviors representation. However, the raw Lottie JSON files contain extensive invariant structural metadata and formatting tokens, posing significant challenges for learning vector animation generation. Therefore, we introduce a well designed Lottie tokenizer that transforms JSON files into structured sequences of commands and parameters representing shapes, animation functions and control parameters. Such tokenizer enables us to build OmniLottie upon pretrained vision language models to follow multi-modal interleaved instructions and generate high quality vector animations. To further advance research in vector animation generation, we curate MMLottie-2M, a large scale dataset of professionally designed vector animations paired with textual and visual annotations. With extensive experiments, we validate that OmniLottie can produce vivid and semantically aligned vector animations that adhere closely to multi modal human instructions.",
+    "authors": [
+      "Yiying Yang",
+      "Wei Cheng",
+      "Sijin Chen",
+      "Honghao Fu",
+      "Xianfang Zeng",
+      "Yujun Cai",
+      "Gang Yu",
+      "Xingjun Ma"
+    ],
+    "likes": 105,
+    "published_date": "Mar 2",
+    "url": "https://huggingface.co/papers/2603.02138",
+    "date_collected": "2026-03-04T07:12:12.214270+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "OmniLottie: 매개변수화된 Lottie 토큰을 통해 벡터 애니메이션 생성하기",
+      "abstract": "OmniLottie는 다중 모달 명령에서 고품질의 벡터 애니메이션을 생성하는 다재다능한 프레임워크입니다. 유연한 모션과 시각적 콘텐츠 제어를 위해 모양과 애니메이션 동작을 위한 경량 JSON 형식인 Lottie에 초점을 맞췄습니다. 그러나 원시 Lottie JSON 파일에는 방대한 변하지 않는 구조적 메타데이터와 포매팅 토큰이 포함되어 있어 벡터 애니메이션 생성에 상당한 어려움을 제기합니다. 따라서 우리는 JSON 파일을 명령과 파라미터의 구조화된 시퀀스로 변환하는 잘 설계된 Lottie 토크나이저를 소개합니다."
+    },
+    "summary": "1. OmniLottie는 Lottie 토큰화를 통해 벡터 애니메이션 생성을 위한 구조화된 명령 및 파라미터 시퀀스를 만들어 냅니다.\n2. MMLottie-2M 데이터 세트를 사용하여 Multi-modal 인터리브된 지침을 따르고 고품질의 벡터 애니메이션을 생성하는데 활용됩니다.\n3. OmniLottie는 다양한 실험을 통해 다중 모달 인간 지침에 밀접하게 부합하는 생생하고 의미론적으로 일치하는 벡터 애니메이션을 생성할 수 있는 것을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "dLLM: Simple Diffusion Language Modeling",
+    "abstract": "Although diffusion language models (DLMs) are evolving quickly, many recent models converge on a set of shared components. These components, however, are distributed across ad-hoc research codebases or lack transparent implementations, making them difficult to reproduce or extend. As the field accelerates, there is a clear need for a unified framework that standardizes these common components while remaining flexible enough to support new methods and architectures.\n  To address this gap, we introduce dLLM, an open-source framework that unifies the core components of diffusion language modeling -- training, inference, and evaluation -- and makes them easy to customize for new designs. With dLLM, users can reproduce, finetune, deploy, and evaluate open-source large DLMs such as LLaDA and Dream through a standardized pipeline. The framework also provides minimal, reproducible recipes for building small DLMs from scratch with accessible compute, including converting any BERT-style encoder or autoregressive LM into a DLM. We also release the checkpoints of these small DLMs to make DLMs more accessible and accelerate future research.",
+    "authors": [
+      "Zhanhui Zhou",
+      "Lingjie Chen",
+      "Hanghang Tong",
+      "Dawn Song"
+    ],
+    "likes": 102,
+    "published_date": "Feb 26",
+    "url": "https://huggingface.co/papers/2602.22661",
+    "date_collected": "2026-03-04T07:12:12.215433+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "dLLM: 간단한 확산 언어 모델링",
+      "abstract": "확산 언어 모델링(DLMs)은 빠르게 발전하고 있지만, 최근 많은 모델들은 일련의 공통 구성 요소에 수렴한다. 하지만 이러한 구성 요소들은 ad-hoc 연구 코드베이스에 분산되어 있거나 투명한 실행을 위한 구현이 부족하여 재현하거나 확장하기 어려워진다. 분야가 가속화되면, 이러한 공통 구성 요소를 표준화하고 새로운 방법과 아키텍처를 지원할 수 있는 유연한 통합 프레임워크가 명백히 필요하다."
+    },
+    "summary": "1. dLLM은 확산 언어 모델링의 핵심 구성 요소를 통합하고 사용자 정의가 쉬운 오픈 소스 프레임워크이다.\n2. 사용자는 dLLM을 사용하여 오픈 소스 대규모 DLMs를 재현, 세밀 조정, 배포 및 평가할 수 있으며, BERT-style 인코더나 자기 회귀적 LM을 DLM으로 변환하는 최소한의 레시피를 제공받을 수 있다.\n3. 작은 DLMs의 체크포인트를 공개하여 DLMs의 접근성을 높이고 향후 연구를 가속화하는 한편, 유연성과 표준화를 동시에 유지한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+    "abstract": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting.",
+    "authors": [
+      "Weinan Dai",
+      "Hanlin Wu",
+      "Qiying Yu",
+      "Huan-ang Gao",
+      "Jiahao Li",
+      "Chengquan Jiang",
+      "Weiqiang Lou",
+      "Yufan Song",
+      "Hongli Yu",
+      "Jiaze Chen",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Jingjing Liu",
+      "Mingxuan Wang",
+      "Xin Liu",
+      "Hao Zhou"
+    ],
+    "likes": 58,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24286",
+    "date_collected": "2026-03-04T07:12:12.217111+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "CUDA 에이전트: 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습",
+      "abstract": "GPU 커널 최적화는 현대 딥러닝에서 기본적이지만 심층적인 하드웨어 전문 지식이 필요한 고도로 전문화된 작업이다. 대체로 프로그래밍에서 강력한 성능을 보이더라도 대규모 언어 모델은 torch.compile과 같은 컴파일러 기반 시스템에 비해 CUDA 커널 생성에서 경쟁력을 갖지 못한다. 기존의 CUDA 코드 생성 접근법은 학습이 필요 없는 정제를 의존하거나 고정된 다중 실행-피드백 루프 내에서 모델을 세밀하게 조정하지만, 이러한 패러다임은 모델의 본질적인 CUDA 최적화 능력을 근본적으로 개선하지 못해 성능 향상이 한계에 머무른다. 본 연구는 대규모 에이전트 강화학습 시스템인 CUDA 에이전트를 제시한다. 이 시스템은 확장 가능한 데이터 합성 파이프라인, 신뢰할 수 있는 보상 신호를 제공하기 위한 스킬 증진형 CUDA 개발 환경, 안정적인 훈련을 위한 강화학습 알고리즘 기술을 통해 CUDA 커널 전문 지식을 발전시킨다. CUDA 에이전트는 KernelBench에서 최상의 결과를 달성하여 KernelBench Level-1, Level-2 및 Level-3 분할에서 torch.compile보다 각각 100%, 100% 및 92% 빠른 속도를 제공하며, Claude Opus 4.5 및 Gemini 3 Pro와 같은 최강의 프로프리토리 모델을 가장 어려운 Level-3 설정에서 약 40% 능가한다."
+    },
+    "summary": "1. 현대 딥러닝에서 중요한 GPU 커널 최적화를 위해 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습인 CUDA 에이전트가 소개됨.\n2. CUDA 에이전트는 데이터 합성 파이프라인, CUDA 개발 환경, 강화학습 알고리즘 등을 통해 신뢰할 수 있는 보상 신호를 사용하여 CUDA 커널 전문 지식을 개발함.\n3. CUDA 에이전트는 KernelBench에서 torch.compile보다 빠른 속도를 제공하며, 다른 상용 모델보다 뛰어난 결과를 보임.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Enhancing Spatial Understanding in Image Generation via Reward Modeling",
+    "abstract": "Recent progress in text-to-image generation has greatly advanced visual fidelity and creativity, but it has also imposed higher demands on prompt complexity-particularly in encoding intricate spatial relationships. In such cases, achieving satisfactory results often requires multiple sampling attempts. To address this challenge, we introduce a novel method that strengthens the spatial understanding of current image generation models. We first construct the SpatialReward-Dataset with over 80k preference pairs. Building on this dataset, we build SpatialScore, a reward model designed to evaluate the accuracy of spatial relationships in text-to-image generation, achieving performance that even surpasses leading proprietary models on spatial evaluation. We further demonstrate that this reward model effectively enables online reinforcement learning for the complex spatial generation. Extensive experiments across multiple benchmarks show that our specialized reward model yields significant and consistent gains in spatial understanding for image generation.",
+    "authors": [
+      "Zhenyu Tang",
+      "Chaoran Feng",
+      "Yufan Deng",
+      "Jie Wu",
+      "Xiaojie Li",
+      "Rui Wang",
+      "Yunpeng Chen",
+      "Daquan Zhou"
+    ],
+    "likes": 44,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24233",
+    "date_collected": "2026-03-04T07:12:12.218437+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "이미지 생성에서 보상 모델링을 통한 공간 이해 강화",
+      "abstract": "최근 텍스트-이미지 생성 분야의 발전으로 시각적인 현실성과 창의성이 크게 진전되었지만, 복잡한 공간 관계를 인코딩하는데 더 높은 요구가 생겼습니다. 이런 경우 성공적인 결과를 얻기 위해서는 종종 여러 번의 샘플링 시도가 필요합니다. 이러한 도전을 해결하기 위해, 현재의 이미지 생성 모델의 공간 이해력을 강화하는 새로운 방법을 제안합니다. 먼저 80,000개가 넘는 선호도 쌍을 가진 SpatialReward-Dataset을 만들었습니다. 이 데이터셋을 기반으로, 텍스트-이미지 생성의 공간 관계의 정확성을 평가하는 보상 모델인 SpatialScore를 구축하여, 공간 평가에서 선행하는 비공개 모델을 뛰어넘는 성과를 얻었습니다. 더 나아가 이 보상 모델이 복잡한 공간 생성을 위한 온라인 강화 학습을 효과적으로 가능케 한다는 것을 입증했습니다. 다양한 벤치마크 실험을 통해 우리의 특수화된 보상 모델이 이미지 생성에서 공간 이해력을 상당히 향상시키는 유의하고 일관된 성과를 낸다는 것을 보여주었습니다."
+    },
+    "summary": "1. 복잡한 공간 관계에 대한 이미지 생성에서의 공간 이해력을 강화하기 위해 SpatialReward-Dataset을 활용한 보상 모델을 도입하였다.\n2. SpatialScore 보상 모델은 텍스트-이미지 생성에서 공간 관계의 정확성을 평가하여 성과를 높였고, 온라인 강화 학습을 가능케 했다.\n3. 실험 결과, 특수화된 보상 모델이 이미지 생성에서 공간 이해력을 증진시킬 뿐만 아니라, 다양한 벤치마크에서 일관된 성과를 보였다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale",
+    "abstract": "Software engineering agents (SWE) are improving rapidly, with recent gains largely driven by reinforcement learning (RL). However, RL training is constrained by the scarcity of large-scale task collections with reproducible execution environments and reliable test suites. Although a growing number of benchmarks have emerged, datasets suitable for training remain limited in scale and diversity or often target a limited set of high-resource language ecosystems. We introduce SWE-rebench V2, a language-agnostic automated pipeline for harvesting executable real-world SWE tasks and constructing RL training environments at scale. The pipeline synthesizes repository-specific installation and test procedures via an interactive setup agent, and filters unsound instances using an ensemble of LLM judges, validated against human-verified SWE-bench annotations. Using this pipeline, we construct a dataset of 32,000+ tasks spanning 20 languages and 3,600+ repositories, with pre-built images for reproducible execution. To further scale training data, we additionally release 120,000+ tasks with installation instructions, fail-to-pass tests and rich metadata, where the problem statement is generated based on the original pull request description. We validate the collected instances through a diagnostic study that covers a subset of tasks in five programming languages across seven popular models, and provide instance-level metadata that flags common confounders such as overly restrictive tests and underspecified descriptions. We release the datasets, the collection and execution code, and associated artifacts to enable large-scale training of SWE agents across diverse languages and repositories.",
+    "authors": [
+      "Ibragim Badertdinov",
+      "Maksim Nekrashevich",
+      "Anton Shevtsov",
+      "Alexander Golubev"
+    ],
+    "likes": 43,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.23866",
+    "date_collected": "2026-03-04T07:12:12.219600+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "SWE-rebench V2: 규모에 맞게 구축된 언어에 중립적인 SWE 작업 모음",
+      "abstract": "소프트웨어 공학 에이전트(SWE)는 최근 강화 학습(Reinforcement Learning, RL)에 의해 주도되며 빠르게 발전하고 있습니다. 그러나 RL 훈련은 실행 환경을 재현할 수 있는 대규모 작업 모음과 신뢰할 수 있는 테스트 스위트의 부족으로 제약을 받습니다. 우리는 언어에 중립적인 SWE-rebench V2를 소개합니다. 이것은 실행 가능한 실제 SWE 작업을 자동으로 수집하고 규모에 맞게 RL 훈련 환경을 구축하는 파이프라인입니다."
+    },
+    "summary": "1. SWE-rebench V2는 대규모의 실행 가능한 소프트웨어 공학(SWE) 작업을 수집하여 RL 훈련 환경을 구축하는 자동화된 파이프라인이다.\n2. 이를 통해 20가지 언어와 3,600개 이상의 저장소에 걸쳐 32,000개 이상의 작업 데이터셋이 만들어졌으며, 재현 가능한 실행을 위한 미리 구축된 이미지를 제공한다.\n3. 추가로, 실패하는 테스트와 풍부한 메타데이터를 포함한 120,000개 이상의 작업뿐만 아니라 오리지널 pull request 설명을 바탕으로 문제 설명을 생성한 데이터셋도 제공된다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "RubricBench: Aligning Model-Generated Rubrics with Human Standards",
+    "abstract": "As Large Language Model (LLM) alignment evolves from simple completions to complex, highly sophisticated generation, Reward Models are increasingly shifting toward rubric-guided evaluation to mitigate surface-level biases. However, the community lacks a unified benchmark to assess this evaluation paradigm, as existing benchmarks lack both the discriminative complexity and the ground-truth rubric annotations required for rigorous analysis. To bridge this gap, we introduce RubricBench, a curated benchmark with 1,147 pairwise comparisons specifically designed to assess the reliability of rubric-based evaluation. Our construction employs a multi-dimensional filtration pipeline to target hard samples featuring nuanced input complexity and misleading surface bias, augmenting each with expert-annotated, atomic rubrics derived strictly from instructions. Comprehensive experiments reveal a substantial capability gap between human-annotated and model-generated rubrics, indicating that even state-of-the-art models struggle to autonomously specify valid evaluation criteria, lagging considerably behind human-guided performance.",
+    "authors": [
+      "Qiyuan Zhang",
+      "Junyi Zhou",
+      "Yufei Wang",
+      "Fuyuan Lyu",
+      "Yidong Ming",
+      "Can Xu",
+      "Qingfeng Sun",
+      "Kai Zheng",
+      "Peng Kang",
+      "Xue Liu",
+      "Chen Ma"
+    ],
+    "likes": 42,
+    "published_date": "Mar 2",
+    "url": "https://huggingface.co/papers/2603.01562",
+    "date_collected": "2026-03-04T07:12:12.221044+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "RubricBench: 모델 생성 루브릭을 인간 기준과 일치시키다",
+      "abstract": "대형 언어 모델 (Large Language Model, LLM)의 정렬이 단순한 완성에서 복잡하고 매우 정교한 생성으로 진화함에 따라 보상 모델은 표면적 편향을 완화하기 위해 루브릭 안내평가로 점차 이동하고 있습니다. 그러나 기존의 벤치마크는 식별력 있는 복잡성과 철저한 분석을 위해 필요한 실제 루브릭 주석 모두를 갖춘 없어, 이 평가 패러다임을 평가할 통합된 벤치마크가 학계에 부족합니다. 이러한 공백을 메우기 위해 RubricBench를 소개합니다. 이는 루브릭 기반 평가의 신뢰성을 평가하기 위해 구축된 1,147 개의 쌍 비교를 포함하는 선별된 벤치마크입니다. 우리의 구축은 다중 차원의 필터링 파이프라인을 활용하여 각각에 엄격한 지침에서 유래된 전문 주석화 루브릭을 보완함으로써, 세밀한 입력 복잡성과 잘못된 표면 편향을 갖춘 어려운 샘플을 대상으로 합니다. 포괄적인 실험 결과는 인간 주석과 모델 생성 루브릭 사이의 상당한 능력 차이를 보여주며, 최첨단 모델조차 자율적으로 유효한 평가 기준을 지정하는 데 어려움을 겪어 인간 지도 성능에 크게 뒤떨어진다는 것을 나타냅니다."
+    },
+    "summary": "1. 대형 언어 모델 (LLM)의 정렬이 복잡한 생성으로 진화하며, 보상 모델은 표면적 편향을 완화하기 위해 루브릭 안내평가로 이동하고 있다.\n2. RubricBench는 인간 주석과 모델 생성 루브릭 간의 상당한 능력 차이를 보여주며, 최첨단 모델조차 유효한 평가 기준을 지정하는 데 뒤쳐진다.\n3. 이 연구는 루브릭 기반 평가를 평가하기 위한 통합된 벤치마크의 부재를 채우기 위해 RubricBench를 소개하며, 1,147 쌍의 비교로 신뢰성을 평가한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "OpenAutoNLU: Open Source AutoML Library for NLU",
+    "abstract": "OpenAutoNLU is an open-source automated machine learning library for natural language understanding (NLU) tasks, covering both text classification and named entity recognition (NER). Unlike existing solutions, we introduce data-aware training regime selection that requires no manual configuration from the user. The library also provides integrated data quality diagnostics, configurable out-of-distribution (OOD) detection, and large language model (LLM) features, all within a minimal lowcode API. The demo app is accessible here https://openautonlu.dev.",
+    "authors": [
+      "Grigory Arshinov",
+      "Aleksandr Boriskin",
+      "Sergey Senichev",
+      "Ayaz Zaripov",
+      "Daria Galimzianova",
+      "Daniil Karpov",
+      "Leonid Sanochkin"
+    ],
+    "likes": 40,
+    "published_date": "Mar 2",
+    "url": "https://huggingface.co/papers/2603.01824",
+    "date_collected": "2026-03-04T07:12:12.222303+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "오픈오토NLU: NLU를 위한 오픈 소스 AutoML 라이브러리",
+      "abstract": "OpenAutoNLU는 텍스트 분류와 개체명 인식(NER) 작업을 모두 다루는 자연어 이해(NLU)를 위한 오픈 소스 자동화 머신러닝 라이브러리입니다. 사용자로부터 수동 구성이 필요 없는 데이터 인식 훈련 규칙 선택을 도입하여 기존 솔루션과는 다릅니다. 또한 통합된 데이터 품질 진단, 구성 가능한 이상 분포(ODD) 탐지, 그리고 대형 언어 모델(LLM) 기능을 제공하며, 최소한의 로우코드 API 내에 모든 기능이 포함되어 있습니다. 데모 앱은 여기에서 확인할 수 있습니다: https://openautonlu.dev."
+    },
+    "summary": "1. 오픈소스 AutoML 라이브러리인 OpenAutoNLU는 NLU 작업을 위한 데이터 인식 훈련 규칙 선택, 데이터 품질 진단 및 이상 분포 탐지와 같은 기능을 제공합니다.\n2. 사용자의 수동 구성을 요구하지 않는 OpenAutoNLU는 텍스트 분류와 NER 작업에 적합하며, 대형 언어 모델(LLM) 기능도 갖추고 있습니다.\n3. 최소한의 코드로 다양한 기능을 활용할 수 있는 OpenAutoNLU는 다양한 자연어 이해 작업을 지원하며, 데모 앱을 통해 쉽게 접근할 수 있습니다.",
+    "categories": [
+      "LLM",
+      "NLU",
+      "Other"
+    ]
+  },
+  {
+    "title": "Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets",
+    "abstract": "The reliability of multilingual Large Language Model (LLM) evaluation is currently compromised by the inconsistent quality of translated benchmarks. Existing resources often suffer from semantic drift and context loss, which can lead to misleading performance metrics. In this work, we present a fully automated framework designed to address these challenges by enabling scalable, high-quality translation of datasets and benchmarks. We demonstrate that adapting test-time compute scaling strategies, specifically Universal Self-Improvement (USI) and our proposed multi-round ranking method, T-RANK, allows for significantly higher quality outputs compared to traditional pipelines. Our framework ensures that benchmarks preserve their original task structure and linguistic nuances during localization. We apply this approach to translate popular benchmarks and datasets into eight Eastern and Southern European languages (Ukrainian, Bulgarian, Slovak, Romanian, Lithuanian, Estonian, Turkish, Greek). Evaluations using both reference-based metrics and LLM-as-a-judge show that our translations surpass existing resources, resulting in more accurate downstream model assessment. We release both the framework and the improved benchmarks to facilitate robust and reproducible multilingual AI development.",
+    "authors": [
+      "Hanna Yukhymenko",
+      "Anton Alexandrov",
+      "Martin Vechev"
+    ],
+    "likes": 38,
+    "published_date": "Feb 25",
+    "url": "https://huggingface.co/papers/2602.22207",
+    "date_collected": "2026-03-04T07:12:12.223403+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "번역에서의 회복: 벤치마크와 데이터셋의 자동 번역을 위한 효율적인 파이프라인",
+      "abstract": "현재 다국어 대규모 언어 모델 (LLM) 평가의 신뢰성은 번역된 벤치마크의 일관성 없는 품질로 인해 저해되고 있습니다. 기존 자원들은 종종 의미 이탈과 문맥 손실을 겪어 잘못된 성능 측정으로 이어질 수 있습니다. 본 연구에서는 이러한 과제에 대응하기 위해 설계된 완전 자동화된 프레임워크를 제시합니다. 이 프레임워크는 확장 가능하고 고품질의 데이터셋과 벤치마크 번역을 가능하게 합니다. 우리는 테스트 시점의 계산 스케일링 전략을 조정하여 Universal Self-Improvement (USI) 및 우리가 제안하는 T-RANK 다중 랭킹 방법을 사용하면 기존 파이프라인에 비해 훨씬 더 높은 품질의 출력을 얻을 수 있음을 입증합니다. 우리의 프레임워크는 벤치마크가 로컬라이징하는 동안 원래의 작업 구조와 언어적 뉘앙스를 보존하도록 보장합니다. 이 접근법을 적용하여 인기 있는 벤치마크와 데이터셋을 우크라이나어, 불가리어, 슬로바키아어, 루마니아어, 리투아니아어, 에스토니아어, 터키어, 그리스어 등 8가지 동유럽 및 남부 유럽어로 번역합니다. 참조 기반 메트릭 및 LLM을 평가자로 사용한 검증 결과, 우리의 번역이 기존 자원을 능가하여 더 정확한 하위 모델 평가를 제공함이 입증됩니다. 우리는 이 프레임워크와 개선된 벤치마크를 공개하여 견고하고 재현 가능한 다국어 인공지능(AI) 개발을 촉진합니다."
+    },
+    "summary": "1. 다국어 대규모 언어 모델(Large Language Model, LLM) 평가의 신뢰성 향상을 위해 벤치마크와 데이터셋 자동 번역을 위한 완전 자동화된 프레임워크를 제시.\n2. Universal Self-Improvement (USI) 및 T-RANK 다중 랭킹 방법을 적용하여 기존 파이프라인에 비해 고품질 번역을 실현하고 벤치마크의 구조와 뉘앙스 보존.\n3. 8가지 동유럽 및 남부 유럽어로의 번역을 통해 기존 자원을 능가하는 정확한 하위 모델 평가를 제공하여 다국어 AI 개발을 지원.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "MMR-Life: Piecing Together Real-life Scenes for Multimodal Multi-image Reasoning",
+    "abstract": "Recent progress in the reasoning capabilities of multimodal large language models (MLLMs) has empowered them to address more complex tasks such as scientific analysis and mathematical reasoning. Despite their promise, MLLMs' reasoning abilities across different scenarios in real life remain largely unexplored and lack standardized benchmarks for evaluation. To address this gap, we introduce MMR-Life, a comprehensive benchmark designed to evaluate the diverse multimodal multi-image reasoning capabilities of MLLMs across real-life scenarios. MMR-Life consists of 2,646 multiple-choice questions based on 19,108 images primarily sourced from real-world contexts, comprehensively covering seven reasoning types: abductive, analogical, causal, deductive, inductive, spatial, and temporal. Unlike existing reasoning benchmarks, MMR-Life does not rely on domain-specific expertise but instead requires models to integrate information across multiple images and apply diverse reasoning abilities. The evaluation of 37 advanced models highlights the substantial challenge posed by MMR-Life. Even top models like GPT-5 achieve only 58% accuracy and display considerable variance in performance across reasoning types. Moreover, we analyze the reasoning paradigms of existing MLLMs, exploring how factors such as thinking length, reasoning method, and reasoning type affect their performance. In summary, MMR-Life establishes a comprehensive foundation for evaluating, analyzing, and improving the next generation of multimodal reasoning systems.",
+    "authors": [
+      "Jiachun Li",
+      "Shaoping Huang",
+      "Zhuoran Jin",
+      "Chenlong Zhang",
+      "Pengfei Cao",
+      "Yubo Chen",
+      "Kang Liu",
+      "Jun Zhao"
+    ],
+    "likes": 36,
+    "published_date": "Mar 2",
+    "url": "https://huggingface.co/papers/2603.02024",
+    "date_collected": "2026-03-04T07:12:12.224724+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "현실 세계 장면을 위한 다중 이미지 다중 모달 Reasoning에 대한 MMR-Life",
+      "abstract": "다모달 대규모 언어모델(Multimodal Large Language Models, MLLMs)의 추론 능력이 최근 강화되면서 과학적 분석 및 수학적 추론과 같은 보다 복잡한 작업에 대처할 수 있게 되었습니다. 그러나 MLLMs의 다양한 현실 시나리오에서의 추론 능력은 아직 탐구되지 않았으며, 평가를 위한 표준화된 벤치마크가 부족합니다. 이러한 공백을 해소하기 위해 현실세계 장면에 걸쳐 다중 모달 다중 이미지 Reasoning 능력을 평가하기 위한 포괄적인 벤치마크인 MMR-Life를 소개합니다."
+    },
+    "summary": "1. MMR-Life는 현실세계에서 7가지 추론 유형(abductive, analogical, causal, deductive, inductive, spatial, temporal)을 포괄적으로 다루며, 2,646개의 다중선택 문항과 19,108개의 이미지로 구성되어 있습니다.\n2. 다른 벤치마크와 달리 MMR-Life는 도메인 전문 지식에 의존하지 않고 모델이 여러 이미지 간 정보를 통합하고 다양한 추론 능력을 적용해야 합니다.\n3. GPT-5와 같은 최고 모델조차도 58%의 정확도에 불과하며, 다양한 추론 유형에 대한 성능의 상당한 차이를 나타냅니다. 또한, 기존 MLLMs의 추론 패러다임을 분석하여 생각 길이, 추론 방법, 추론 유형과 같은 요소가 성능에 어떻게 영향을 미치는지 탐구합니다.",
+    "categories": [
+      "Multimodal"
+    ]
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "title": "Beyond Fixed: Variable-Length Denoising for Diffusion Large Language\n  Models",
+    "abstract": "Diffusion Large Language Models (DLLMs) are emerging as a powerful\nalternative to the dominant Autoregressive Large Language Models, offering\nefficient parallel generation and capable global context modeling. However, the\npractical application of DLLMs is hindered by a critical architectural\nconstraint: the need for a statically predefined generation length. This static\nlength allocation leads to a problematic trade-off: insufficient lengths\ncripple performance on complex tasks, while excessive lengths incur significant\ncomputational overhead and sometimes result in performance degradation. While\nthe inference framework is rigid, we observe that the model itself possesses\ninternal signals that correlate with the optimal response length for a given\ntask. To bridge this gap, we leverage these latent signals and introduce\nDAEDAL, a novel training-free denoising strategy that enables Dynamic Adaptive\nLength Expansion for Diffusion Large Language Models. DAEDAL operates in two\nphases: 1) Before the denoising process, DAEDAL starts from a short initial\nlength and iteratively expands it to a coarse task-appropriate length, guided\nby a sequence completion metric. 2) During the denoising process, DAEDAL\ndynamically intervenes by pinpointing and expanding insufficient generation\nregions through mask token insertion, ensuring the final output is fully\ndeveloped. Extensive experiments on DLLMs demonstrate that DAEDAL achieves\nperformance comparable, and in some cases superior, to meticulously tuned\nfixed-length baselines, while simultaneously enhancing computational efficiency\nby achieving a higher effective token ratio. By resolving the static length\nconstraint, DAEDAL unlocks new potential for DLLMs, bridging a critical gap\nwith their Autoregressive counterparts and paving the way for more efficient\nand capable generation.",
+    "authors": [
+      "Jinsong Li",
+      "Xiaoyi Dong",
+      "Yuhang Zang",
+      "Yuhang Cao",
+      "Jiaqi Wang",
+      "Dahua Lin"
+    ],
+    "likes": 35,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00819",
+    "date_collected": "2025-08-05T07:08:25.170463+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "고정이 넘어, 변수 길이 디노이징을 통한 확산 대형 언어 모델",
+      "abstract": "확산 대형 언어 모델(DLLM)은 지배적인 자기회귀 대형 언어 모델에 대안으로 강력하게 부각되며 효율적인 병렬 생성과 뛰어난 전역 문맥 모델링을 제공합니다. 그러나 DLLM의 실용적 응용은 중요한 아키텍처 제약으로 방해받고 있습니다: 정적으로 미리 정의된 생성 길이의 필요성. 이 정적 길이 할당은 문제가 있는 트레이드오프로 이어집니다: 충분하지 않은 길이는 복잡한 작업에서 성능을 약화시키며, 과도한 길이는 상당한 계산 비용을 초래하고 때로는 성능 저하로 이어집니다. 추론 프레임워크가 엄격하더라도, 모델 자체에는 특정 작업에 대한 최적 반응 길이와 관련된 내부 신호가 존재한다는 것을 관찰합니다. 이 간극을 메우기 위해 우리는 이러한 잠재 신호를 활용하고, DAEDAL이라는 훈련이 필요 없는 새로운 디노이징 전략을 소개하여, 확산 대형 언어 모델을 위한 동적 적응적 길이 확장을 가능하게 합니다."
+    },
+    "summary": "1. 고정된 생성 길이의 문제를 해결하기 위해 DAEDAL이라는 새로운 디노이징 전략을 소개함.\n2. DAEDAL은 초기 길이를 확장하고 생성 영역을 동적으로 보완하여 DLLM의 성능을 향상시킴.\n3. 실험 결과 DAEDAL이 성능을 향상시키면서 더 효율적이고 능력 있는 생성을 가능케 함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "PixNerd: Pixel Neural Field Diffusion",
+    "abstract": "The current success of diffusion transformers heavily depends on the\ncompressed latent space shaped by the pre-trained variational autoencoder(VAE).\nHowever, this two-stage training paradigm inevitably introduces accumulated\nerrors and decoding artifacts. To address the aforementioned problems,\nresearchers return to pixel space at the cost of complicated cascade pipelines\nand increased token complexity. In contrast to their efforts, we propose to\nmodel the patch-wise decoding with neural field and present a single-scale,\nsingle-stage, efficient, end-to-end solution, coined as pixel neural field\ndiffusion~(PixelNerd). Thanks to the efficient neural field representation in\nPixNerd, we directly achieved 2.15 FID on ImageNet 256times256 and 2.84 FID\non ImageNet 512times512 without any complex cascade pipeline or VAE. We also\nextend our PixNerd framework to text-to-image applications. Our PixNerd-XXL/16\nachieved a competitive 0.73 overall score on the GenEval benchmark and 80.9\noverall score on the DPG benchmark.",
+    "authors": [
+      "Shuai Wang",
+      "Ziteng Gao",
+      "Chenhui Zhu",
+      "Weilin Huang",
+      "Limin Wang"
+    ],
+    "likes": 31,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2507.23268",
+    "date_collected": "2025-08-05T07:08:25.171673+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "픽셀 신경장 필드 확산",
+      "abstract": "현재 확산 트랜스포머의 성공은 사전 훈련된 변이형 오토인코더(VAE)에 의해 형성된 압축된 잠재 공간에 크게 의존합니다. 그러나 이러한 2단계 훈련 패러다임은 누적된 오류와 디코딩 아티팩트를 불가피하게 도입합니다. 위 문제를 해결하기 위해, 연구자들은 복잡한 연쇄 파이프라인과 토큰 복잡성 증가를 감수하고 픽셀 공간으로 되돌아갑니다. 그들의 노력과는 대조적으로, 우리는 패치별 디코딩을 신경장을 통해 모델링하고 효율적이고 단일 단계로 이루어진 엔드-투-엔드 솔루션인 \"픽셀 신경장 확산\"(PixelNerd)을 제안합니다. PixNerd 내에서 효율적인 신경장 표현 덕분에, ImageNet 256x256에서 2.15 FID 및 ImageNet 512x512에서 2.84 FID를 복잡한 연쇄 파이프라인이나 VAE 없이 직접 달성했습니다. 또한 우리는 PixNerd 프레임워크를 텍스트-이미지 응용 프로그램으로 확장했습니다. 우리의 PixNerd-XXL/16은 GenEval 벤치마크에서 경쟁력있는 0.73 전체 점수와 DPG 벤치마크에서 80.9 전체 점수를 달성했습니다."
+    },
+    "summary": "1. 확산 트랜스포머의 한계를 극복하기 위해 \"픽셀 신경장 확산\"이라는 단일 단계로 이루어진 효율적인 엔드-투-엔드 솔루션을 제안함.\n2. PixNerd는 복잡한 연쇄 파이프라인이나 VAE 없이 ImageNet에서 우수한 성과를 보이며, 텍스트-이미지 응용 프로그램으로도 확장 가능함.\n3. PixNerd-XXL/16은 GenEval 및 DPG 벤치마크에서 뛰어난 전체 점수를 기록함.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent\n  Foundation Models Training",
+    "abstract": "General AI Agents are increasingly recognized as foundational frameworks for\nthe next generation of artificial intelligence, enabling complex reasoning, web\ninteraction, coding, and autonomous research capabilities. However, current\nagent systems are either closed-source or heavily reliant on a variety of paid\nAPIs and proprietary tools, limiting accessibility and reproducibility for the\nresearch community. In this work, we present Cognitive Kernel-Pro, a\nfully open-source and (to the maximum extent) free multi-module agent framework\ndesigned to democratize the development and evaluation of advanced AI agents.\nWithin Cognitive Kernel-Pro, we systematically investigate the curation of\nhigh-quality training data for Agent Foundation Models, focusing on the\nconstruction of queries, trajectories, and verifiable answers across four key\ndomains: web, file, code, and general reasoning. Furthermore, we explore novel\nstrategies for agent test-time reflection and voting to enhance agent\nrobustness and performance. We evaluate Cognitive Kernel-Pro on GAIA, achieving\nstate-of-the-art results among open-source and free agents. Notably, our\n8B-parameter open-source model surpasses previous leading systems such as\nWebDancer and WebSailor, establishing a new performance standard for\naccessible, high-capability AI agents. Code is available at\nhttps://github.com/Tencent/CognitiveKernel-Pro",
+    "authors": [
+      "Tianqing Fang",
+      "Zhisong Zhang",
+      "Xiaoyang Wang",
+      "Rui Wang",
+      "Can Qin",
+      "Yuxuan Wan",
+      "Jun-Yu Ma",
+      "Ce Zhang",
+      "Jiaqi Chen",
+      "Xiyun Li",
+      "Hongming Zhang",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "likes": 14,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00414",
+    "date_collected": "2025-08-05T07:08:25.173201+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "인지적 커널-프로: 심층 연구 에이전트 및 에이전트 기반 모델 훈련을 위한 프레임워크",
+      "abstract": "일반 인공 지능 에이전트들은 복잡한 추론, 웹 상호작용, 코딩 및 자율적인 연구 능력을 가능케 함으로써, 다음 세대 인공 지능을 위한 기초적인 프레임워크로 점점 더 인식받고 있습니다. 그러나 현재의 에이전트 시스템은 일반적으로 소스가 공개되지 않거나 여러 유료 API 및 독점적인 도구에 강하게 의존하므로, 연구 공동체에 대한 접근성과 재현성이 제한되어 있습니다. 본 연구에서는 인지적 커널-프로를 제시하며, 이는 완전히 공개되고 (최대한) 무료인 다중 모듈 에이전트 프레임워크로, 고급 인공 지능 에이전트의 개발과 평가를 대중화하기 위해 설계되었습니다. 인지적 커널-프로 내에서는 에이전트 기반 모델의 고품질 훈련 데이터 구성을 체계적으로 조사하며, 웹, 파일, 코드 및 일반 추론 네 가지 주요 영역에서의 질문, 경로 및 검증 가능한 답변의 구축에 초점을 맞춥니다. 더불어, 에이전트 테스트시간 반성과 투표에 대한 혁신적인 전략을 탐구하여 에이전트의 견고성과 성능을 향상시킵니다. 우리는 GAIA에서 인지적 커널-프로를 평가하여, 오픈소스 및 무료 에이전트 중 최고 수준의 결과를 달성하였습니다. 특히, 우리의 80억 파라미터 공개 모델은 WebDancer 및 WebSailor와 같은 이전 선도 시스템을 넘어선 새로운 성능 기준을 세우며, 접근성과 고능력의 AI 에이전트를 위한 새로운 모델을 제시합니다. 코드는 https://github.com/Tencent/CognitiveKernel-Pro에서 제공됩니다."
+    },
+    "summary": "1. 인공지능에 기초를 둔 다양한 분야의 고급 에이전트 개발과 평가를 대중화하기 위한 인지적 커널-프로 프레임워크 소개\n2. 웹, 파일, 코드, 일반 추론 네 가지 주요 영역에서 훈련 데이터를 체계적으로 조사하며, 에이전트의 성능을 향상시키는 새로운 전략 탐구\n3. 오픈소스 및 무료 에이전트 중 최고 성능 달성 및 이전 선도 시스템을 능가하는 80억 파라미터 모델 개발 및 성과 확인",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding",
+    "abstract": "Large vision-language models (VLMs) have made significant strides in 2D\nvisual understanding tasks, sparking interest in extending these capabilities\nto 3D scene understanding. However, current 3D VLMs often struggle with robust\nreasoning and generalization due to limitations in high-quality spatial data\nand the static nature of viewpoint assumptions. To address these challenges, we\npropose 3D-R1, a foundation model that enhances the reasoning capabilities of\n3D VLMs. Specifically, we first construct a high-quality synthetic dataset with\nCoT, named Scene-30K, leveraging existing 3D-VL datasets and a data engine\nbased on Gemini 2.5 Pro. It serves as cold-start initialization data for 3D-R1.\nMoreover, we leverage RLHF policy such as GRPO in the reinforcement learning\ntraining process to enhance reasoning capabilities and introduce three reward\nfunctions: a perception reward, a semantic similarity reward and a format\nreward to maintain detection accuracy and answer semantic precision.\nFurthermore, we introduce a dynamic view selection strategy that adaptively\nchooses the most informative perspectives for 3D scene understanding. Extensive\nexperiments demonstrate that 3D-R1 delivers an average improvement of 10%\nacross various 3D scene benchmarks, highlighting its effectiveness in enhancing\nreasoning and generalization in 3D scene understanding. Code:\nhttps://github.com/AIGeeksGroup/3D-R1. Website:\nhttps://aigeeksgroup.github.io/3D-R1.",
+    "authors": [
+      "Ting Huang",
+      "Zeyu Zhang",
+      "Hao Tang"
+    ],
+    "likes": 6,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2507.23478",
+    "date_collected": "2025-08-05T07:08:25.174287+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "3D-R1: 통합된 장면 이해를 위한 3D VLMs의 추론 강화",
+      "abstract": "대형 비전-언어 모델(VLMs)은 2D 시각 이해 작업에서 큰 발전을 이루었으며, 이러한 능력을 3D 장면 이해로 확장하고자 하는 관심이 증폭되었습니다. 그러나 현재 3D VLMs는 고품질의 공간 데이터 제한과 시점 가정의 정적 성격으로 인해 강인한 추론력과 일반화에 어려움을 겪고 있습니다. 이러한 도전에 대응하기 위해 우리는 3D VLMs의 추론 능력을 향상시키는 기반 모델인 3D-R1을 제안합니다."
+    },
+    "summary": "1. 3D-R1은 3D VLMs의 추론 능력을 향상시키기 위해 고품질 합성 데이터셋인 Scene-30K를 구축하고, 학습 초기화 데이터로 활용합니다.\n2. RLHF 정책(GRPO와 같은)을 활용하여 추론 능력을 향상시키는 강화 학습 과정을 거치며, 지각 보상, 의미 유사성 보상, 형식 보상 세 가지 보상 함수를 도입하여 감지 정확도를 유지하고 의미론적 정밀성을 담보합니다.\n3. 또한 3D 장면 이해를 위해 가장 정보 있는 시각을 적응적으로 선택하는 동적 뷰 선택 전략을 도입함으로써 3D-R1은 추론력과 일반화를 향상시키는 효과를 입증하였습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SWE-Exp: Experience-Driven Software Issue Resolution",
+    "abstract": "Recent advances in large language model (LLM) agents have shown remarkable\nprogress in software issue resolution, leveraging advanced techniques such as\nmulti-agent collaboration and Monte Carlo Tree Search (MCTS). However, current\nagents act as memoryless explorers - treating each problem separately without\nretaining or reusing knowledge from previous repair experiences. This leads to\nredundant exploration of failed trajectories and missed chances to adapt\nsuccessful issue resolution methods to similar problems. To address this\nproblem, we introduce SWE-Exp, an experience - enhanced approach that distills\nconcise and actionable experience from prior agent trajectories, enabling\ncontinuous learning across issues. Our method introduces a multi-faceted\nexperience bank that captures both successful and failed repair attempts.\nSpecifically, it extracts reusable issue resolution knowledge at different\nlevels - from high-level problem comprehension to specific code changes.\nExperiments show that SWE-Exp achieves state-of-the-art resolution rate (41.6%\nPass@1) on SWE-bench-Verified under open-source agent frameworks. Our approach\nestablishes a new paradigm in which automated software engineering agents\nsystematically accumulate and leverage repair expertise, fundamentally shifting\nfrom trial-and-error exploration to strategic, experience-driven issue\nresolution.",
+    "authors": [
+      "Silin Chen",
+      "Shaoxin Lin",
+      "Xiaodong Gu",
+      "Yuling Shi",
+      "Heng Lian",
+      "Longfei Yun",
+      "Dong Chen",
+      "Weiguo Sun",
+      "Lin Cao",
+      "Qianxiang Wang"
+    ],
+    "likes": 6,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2507.23361",
+    "date_collected": "2025-08-05T07:08:25.175676+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "SWE-Exp: 경험 중심 소프트웨어 이슈 해결",
+      "abstract": "최근 대규모 언어 모델(LLM) 에이전트의 발전은 멀티 에이전트 협력 및 Monte Carlo Tree Search (MCTS)와 같은 고급 기술을 활용해 소프트웨어 이슈 해결에서 현저한 진전을 보여주었습니다. 그러나 현재의 에이전트는 각 문제를 별개로 처리하며 이전 수리 경험의 지식을 유지하거나 재활용하지 않는 메모리리스 탐험자 역할을 합니다. 이로 인해 실패한 경로의 중복 탐색 및 비슷한 문제에 성공적인 이슈 해결 방법을 적응시키는 기회를 놓치는 문제가 발생합니다. 이를 해결하기 위해 우리는 SWE-Exp를 소개합니다. 이는 이전 에이전트 경로에서 간결하고 실행 가능한 경험을 추출하여 이슈 간 계속적인 학습을 가능하게 합니다. 우리의 방법은 성공적이거나 실패한 수리 시도를 모두 포착하는 다면적 경험 은행을 소개합니다. 특히 이는 고수준 문제 이해부터 구체적인 코드 변경까지 재사용 가능한 이슈 해결 지식을 추출합니다. 실험 결과, SWE-Exp가 오픈 소스 에이전트 프레임워크에서 SWE-bench-Verified의 최첨단 해결률 (41.6% Pass@1)을 달성했습니다. 우리의 방법은 자동 소프트웨어 공학 에이전트가 수리 전문성을 체계적으로 축적하고 활용하는 새로운 패러다임을 수립하며 시행착오 탐색에서 전략적 경험 중심 이슈 해결로 근본적으로 전환됩니다."
+    },
+    "summary": "1. LLM 에이전트의 이슈 해결은 과거 경험에서 지식을 활용하지 못하는 문제가 있었으며, SWE-Exp 방법은 경험을 통해 지속적인 학습을 가능하게 합니다.\n2. 실패한 및 성공적인 수리 시도를 포착하는 다면적 경험 은행을 활용함으로써 SWE-Exp는 뛰어난 해결률을 보여줍니다.\n3. SWE-Exp는 소프트웨어 이슈 해결을 전략적 경험 중심으로 전환시키며, 자동 소프트웨어 공학 에이전트의 수리 전문성을 증진합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Multimodal Referring Segmentation: A Survey",
+    "abstract": "Multimodal referring segmentation aims to segment target objects in visual\nscenes, such as images, videos, and 3D scenes, based on referring expressions\nin text or audio format. This task plays a crucial role in practical\napplications requiring accurate object perception based on user instructions.\nOver the past decade, it has gained significant attention in the multimodal\ncommunity, driven by advances in convolutional neural networks, transformers,\nand large language models, all of which have substantially improved multimodal\nperception capabilities. This paper provides a comprehensive survey of\nmultimodal referring segmentation. We begin by introducing this field's\nbackground, including problem definitions and commonly used datasets. Next, we\nsummarize a unified meta architecture for referring segmentation and review\nrepresentative methods across three primary visual scenes, including images,\nvideos, and 3D scenes. We further discuss Generalized Referring Expression\n(GREx) methods to address the challenges of real-world complexity, along with\nrelated tasks and practical applications. Extensive performance comparisons on\nstandard benchmarks are also provided. We continually track related works at\nhttps://github.com/henghuiding/Awesome-Multimodal-Referring-Segmentation.",
+    "authors": [
+      "Henghui Ding",
+      "Song Tang",
+      "Shuting He",
+      "Chang Liu",
+      "Zuxuan Wu",
+      "Yu-Gang Jiang"
+    ],
+    "likes": 5,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00265",
+    "date_collected": "2025-08-05T07:08:25.176861+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "다중 모달 참조 세분화: 조사",
+      "abstract": "다중 모달 참조 세분화는 텍스트나 오디오 형식의 참조 표현을 기반으로 이미지, 비디오, 3D 씬과 같은 시각적 장면에서 대상 객체를 세분화하는 것을 목표로 합니다. 이 작업은 사용자 지시에 기반한 정확한 객체 지각을 필요로 하는 실용적인 응용 프로그램에서 핵심적인 역할을 합니다. 지난 10년 동안 합성곱 신경망, 트랜스포머, 그리고 대형 언어 모델의 발전에 이끌리며, 다중 모달 커뮤니티에서 상당한 관심을 얻었으며, 다중 모달 지각 능력을 실질적으로 향상시켰습니다. 본 논문은 다중 모달 참조 세분화에 대한 포괄적인 조사를 제공합니다. 우리는 이 분야의 배경을 소개하며, 문제 정의와 일반적으로 사용되는 데이터셋을 설명합니다. 이어서 참조 세분화에 대한 통합 메타 아키텍처를 요약하고 이미지, 비디오, 3D 씬을 포함한 세 가지 주요 시각적 장면에서 대표적인 방법들을 검토합니다. 우리는 또한 실제 세계의 복잡성에 대응하기 위한 일반화된 참조 표현 (GREx) 방법들과 관련 작업 및 실용적인 응용 프로그램들에 대해 논의합니다. 표준 벤치마크에서의 방대한 성능 비교도 제공됩니다. 관련 작업은 https://github.com/henghuiding/Awesome-Multimodal-Referring-Segmentation에서 지속적으로 업데이트됩니다."
+    },
+    "summary": "1. 다중 모달 참조 세분화는 텍스트나 오디오 참조를 기반으로 시각적 장면에서 대상 객체를 정확하게 분할하는 작업으로, 실용적인 응용 프로그램에서 중요한 역할을 합니다.\n2. 논문은 참조 세분화를 위한 통합 메타 아키텍처를 제시하고, 이미지, 비디오, 3D 씬에 걸쳐 대표적인 방법들을 검토합니다.\n3. 본 연구에서는 일반화된 참조 표현(GREx) 방법과 실제 세계적 복잡성에 대응하는데 활용되는 다양한 작업 및 응용 프로그램을 논의하며, 표준 벤치마크에서의 성능 비교를 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution",
+    "abstract": "Issue resolution has made remarkable progress thanks to the advanced\nreasoning capabilities of large language models (LLMs). Recently, agent-based\nframeworks such as SWE-agent have further advanced this progress by enabling\nautonomous, tool-using agents to tackle complex software engineering tasks.\nWhile existing agent-based issue resolution approaches are primarily based on\nagents' independent explorations, they often get stuck in local solutions and\nfail to identify issue patterns that span across different parts of the\ncodebase. To address this limitation, we propose SWE-Debate, a competitive\nmulti-agent debate framework that encourages diverse reasoning paths and\nachieves more consolidated issue localization. SWE-Debate first creates\nmultiple fault propagation traces as localization proposals by traversing a\ncode dependency graph. Then, it organizes a three-round debate among\nspecialized agents, each embodying distinct reasoning perspectives along the\nfault propagation trace. This structured competition enables agents to\ncollaboratively converge on a consolidated fix plan. Finally, this consolidated\nfix plan is integrated into an MCTS-based code modification agent for patch\ngeneration. Experiments on the SWE-bench benchmark show that SWE-Debate\nachieves new state-of-the-art results in open-source agent frameworks and\noutperforms baselines by a large margin.",
+    "authors": [
+      "Han Li",
+      "Yuling Shi",
+      "Shaoxin Lin",
+      "Xiaodong Gu",
+      "Heng Lian",
+      "Xin Wang",
+      "Yantao Jia",
+      "Tao Huang",
+      "Qianxiang Wang"
+    ],
+    "likes": 4,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2507.23348",
+    "date_collected": "2025-08-05T07:08:25.178188+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "소프트웨어 문제 해결을 위한 경쟁적 다중 에이전트 토론: SWE-Debate",
+      "abstract": "최근 대형 언어 모델 (LLMs)의 고급 추론 능력 덕분에 문제 해결이 상당한 진전을 이루었습니다. 최근 SWE-agent와 같은 에이전트 기반 프레임워크는 자율적인 도구 사용 에이전트가 복잡한 소프트웨어 공학 작업에 참여할 수 있도록함으로써 이러한 진전을 더욱 개선했습니다. 기존의 에이전트 기반 문제 해결 방법은 대부분 에이전트의 독립적 탐색을 기반으로 하지만 종종 지역 솔루션에 갇혀 다양한 코드베이스 부분에 걸쳐있는 문제 패턴을 식별하지 못하는 한계가 있습니다. 이 한계를 해결하기 위해, 우리는 SWE-Debate를 제안합니다. SWE-Debate는 다양한 추론 경로를 장려하고 더 통합된 문제 지역화를 달성하는 경쟁적 다중 에이전트 토론 프레임워크입니다."
+    },
+    "summary": "1. SWE-Debate는 다중 에이전트 간의 경쟁적 토론을 통해 다양한 추론 경로를 장려하고 더 효과적인 문제 지역화를 달성합니다.\n2. 이 프레임워크는 코드 의존성 그래프를 탐색하여 여러 결함 전파 추적을 생성하고 전문적인 에이전트 간 세 라운드 토론을 조직합니다.\n3. SWE-Debate는 오픈 소스 에이전트 프레임워크에서 새로운 최고 성능을 달성하고 기존 베이스라인을 큰 폭으로 능가하는 것을 실험을 통해 입증했습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "SpA2V: Harnessing Spatial Auditory Cues for Audio-driven Spatially-aware\n  Video Generation",
+    "abstract": "Audio-driven video generation aims to synthesize realistic videos that align\nwith input audio recordings, akin to the human ability to visualize scenes from\nauditory input. However, existing approaches predominantly focus on exploring\nsemantic information, such as the classes of sounding sources present in the\naudio, limiting their ability to generate videos with accurate content and\nspatial composition. In contrast, we humans can not only naturally identify the\nsemantic categories of sounding sources but also determine their deeply encoded\nspatial attributes, including locations and movement directions. This useful\ninformation can be elucidated by considering specific spatial indicators\nderived from the inherent physical properties of sound, such as loudness or\nfrequency. As prior methods largely ignore this factor, we present SpA2V, the\nfirst framework explicitly exploits these spatial auditory cues from audios to\ngenerate videos with high semantic and spatial correspondence. SpA2V decomposes\nthe generation process into two stages: 1) Audio-guided Video Planning: We\nmeticulously adapt a state-of-the-art MLLM for a novel task of harnessing\nspatial and semantic cues from input audio to construct Video Scene Layouts\n(VSLs). This serves as an intermediate representation to bridge the gap between\nthe audio and video modalities. 2) Layout-grounded Video Generation: We develop\nan efficient and effective approach to seamlessly integrate VSLs as conditional\nguidance into pre-trained diffusion models, enabling VSL-grounded video\ngeneration in a training-free manner. Extensive experiments demonstrate that\nSpA2V excels in generating realistic videos with semantic and spatial alignment\nto the input audios.",
+    "authors": [
+      "Kien T. Pham",
+      "Yingqing He",
+      "Yazhou Xing",
+      "Qifeng Chen",
+      "Long Chen"
+    ],
+    "likes": 3,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00782",
+    "date_collected": "2025-08-05T07:08:25.179309+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "공간 청각 단서 활용을 통한 오디오 주도 공간 인식 비디오 생성",
+      "abstract": "오디오 주도 비디오 생성은 인간의 장면 시각화 능력과 유사하게 입력 오디오 녹음과 일치하는 현실적인 비디오를 합성하는 것을 목표로 합니다. 그러나 기존 방법은 주로 오디오에 포함된 음원 클래스 같은 의미 정보를 탐구하며, 이로 인해 정확한 콘텐츠와 공간 구성을 갖춘 비디오를 생성하는 능력이 제한됩니다. 이에 대조적으로 우리는 음향 소스의 의미 범주를 자연스럽게 식별할 뿐 아니라, 위치와 이동 방향과 같은 심층적으로 인코딩된 공간 속성을 결정하는 데에도 우리 자신이 공간 속성을 자연스럽게 식별할 수 있습니다. 이 유용한 정보는 음향의 내재적 물리적 특성인 음량이나 주파수와 같은 특정한 공간 지표를 고려함으로써 명확하게 밝혀낼 수 있습니다. 과거 방법은 이러한 요소를 주로 무시했기에 우리는 SpA2V를 제시합니다. 이는 오디오로부터 파생된 공간 청각 단서를 명시적으로 활용하여 입력 오디오에 대한 시맨틱 및 공간 일치성을 갖춘 비디오를 생성합니다. SpA2V는 생성 과정을 1) 오디오 안내 비디오 계획 2) 레이아웃 중심 비디오 생성 두 단계로 나눕니다."
+    },
+    "summary": "1. 오디오로부터 공간 및 의미적 단서를 활용하여 비디오 장면 레이아웃을 구축하는 SpA2V 프레임워크 소개\n2. 미리 훈련된 확산 모델에 VSL을 조건부 가이드로 통합하여 VSL 중심 비디오 생성 가능하게 하는 효과적인 접근 방식 소개\n3. 실험 결과, SpA2V가 입력 오디오와 시맨틱 및 공간적으로 일치하는 현실적인 비디오를 생성하는 데 뛰어남을 입증",
+    "categories": [
+      "Audio",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Learning an Efficient Multi-Turn Dialogue Evaluator from Multiple Judges",
+    "abstract": "Evaluating the conversational abilities of large language models (LLMs)\nremains a challenging task. Current mainstream approaches primarily rely on the\n``LLM-as-a-judge\" paradigm, where an LLM is prompted to serve as an evaluator\nto assess dialogue quality. However, such methods often suffer from various\nbiases, which undermine the reliability and consistency of the evaluation\nresults. To mitigate these biases, recent methods employ multiple LLMs as\njudges and aggregate their judgments to select the optimal assessment. Although\neffective, this multi-judge approach incurs significant computational overhead\nduring inference. In this paper, we propose an efficient multi-turn dialogue\nevaluator that captures the collective wisdom of multiple LLM judges by\naggregating their preference knowledge into a single model. Our approach\npreserves the advantages of diverse multi-judge feedback while drastically\nreducing the evaluation cost, enabling fast and flexible dialogue quality\nassessment. Extensive experiments on seven single rating and pairwise\ncomparison dialogue evaluation benchmarks demonstrate that our method\noutperforms existing baselines across diverse scenarios, showcasing its\nefficiency and robustness.",
+    "authors": [
+      "Yuqi Tang",
+      "Kehua Feng",
+      "Yunfeng Wang",
+      "Zhiwen Chen",
+      "Chengfei Lv",
+      "Gang Yu",
+      "Qiang Zhang",
+      "Keyan Ding"
+    ],
+    "likes": 3,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00454",
+    "date_collected": "2025-08-05T07:08:25.180584+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "여러 심사자로부터 효율적인 다중 턴 대화평가기 학습",
+      "abstract": "대형 언어 모델의 대화 능력을 평가하는 것은 여전히 어려운 과제입니다. 현재의 주요 접근법은 주로 \"LLM을 심사자로 사용\"하는 패러다임에 의존하며, LLM을 심사자로 이용하여 대화 품질을 평가합니다. 그러나 이러한 방법은 종종 다양한 편향을 겪어 심사 결과의 신뢰성과 일관성을 저해합니다. 이러한 편향을 완화하기 위해 최근의 방법은 여러 LLM을 심사자로 사용하고 그들의 판단을 집계하여 최적의 평가를 선택합니다. 이 다중 심사자 접근법은 효과적이지만 추론 중에 상당한 계산 부담을 초래합니다. 본 논문에서는 여러 LLM 심사자들의 집단적 지식을 한 모델로 집계함으로써 효율적인 다중 턴 대화평가기를 제안합니다. 우리의 방식은 다양한 다중 심사자 피드백의 장점을 유지하면서 평가 비용을 대폭 줄여, 빠르고 유연한 대화 품질 평가를 가능하게 합니다. 일곱 가지의 단일 등급 및 쌍대 비교 대화평가 벤치마크에서의 방대한 실험들은 우리의 방법이 다양한 시나리오에서 기존 베이스라인을 능가하여 효율성과 견고성을 보여줌을 입증하고 있습니다."
+    },
+    "summary": "1. 현재의 대화평가에서 발생하는 편향을 줄이기 위해, 여러 LLM 심사자의 의견을 모아 최적의 평가를 수행하는 효율적인 다중 턴 대화평가기를 제안함.\n2. 제안된 방법은 다중 LLM 심사자들의 집단적인 피드백을 한 모델로 집계하여 다양한 대화 품질을 빠르고 유연하게 평가할 수 있게 함.\n3. 실험 결과, 본 논문의 방법이 다양한 시나리오에서 기존 기준을 능가하여 효율성과 견고성을 입증함.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "MCIF: Multimodal Crosslingual Instruction-Following Benchmark from\n  Scientific Talks",
+    "abstract": "Recent advances in large language models have catalyzed the development of\nmultimodal LLMs (MLLMs) that integrate text, speech, and vision within unified\nframeworks. As MLLMs evolve from narrow, monolingual, task-specific systems to\ngeneral-purpose instruction-following models, a key frontier lies in evaluating\ntheir multilingual and multimodal capabilities over both long and short\ncontexts. However, existing benchmarks fall short in evaluating these\ndimensions jointly: they are often limited to English, mostly focus on one\nsingle modality at a time, rely on short-form contexts, or lack human\nannotations -- hindering comprehensive assessment of model performance across\nlanguages, modalities, and task complexity. To address these gaps, we introduce\nMCIF (Multimodal Crosslingual Instruction Following), the first multilingual\nhuman-annotated benchmark based on scientific talks that is designed to\nevaluate instruction-following in crosslingual, multimodal settings over both\nshort- and long-form inputs. MCIF spans three core modalities -- speech,\nvision, and text -- and four diverse languages (English, German, Italian, and\nChinese), enabling a comprehensive evaluation of MLLMs' abilities to interpret\ninstructions across languages and combine them with multimodal contextual\ninformation. MCIF is released under a CC-BY 4.0 license to encourage open\nresearch and progress in MLLMs development.",
+    "authors": [
+      "Sara Papi",
+      "Maike Züfle",
+      "Marco Gaido",
+      "Beatrice Savoldi",
+      "Danni Liu",
+      "Ioannis Douros",
+      "Luisa Bentivogli",
+      "Jan Niehues"
+    ],
+    "likes": 3,
+    "published_date": "Jul 25",
+    "url": "https://huggingface.co/papers/2507.19634",
+    "date_collected": "2025-08-05T07:08:25.181847+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "과학적 발표로부터 시작된 다국어 다중 모달 인스트럭션 따르기 벤치마크인 MCIF",
+      "abstract": "대형 언어 모델의 최근 발전은 텍스트, 음성 및 비전을 통합한 다중 모달 LLMs(MLLMs)의 발전을 촉진했습니다. MLLMs가 특정 작업에 한정된 단일 언어 체계에서 일반적인 인스트럭션 따르기 모델로 진화함에 따라, 그 중요한 전선은 다중 언어 및 다중 모달 능력을 장기 및 단기 문맥에서 모두 평가하는 것에 있습니다. 기존의 벤치마크는 이러한 차원을 함께 평가하는 데 제한 사항이 있습니다. 그들은 주로 영어로 제한되어 있고, 대부분 한 번에 하나의 모달리티에 초점을 맞추며, 짧은 형식의 문맥에 의존하거나 인간 주석이 부족하여 언어, 모달리티 및 작업 복잡성에 걸쳐 모델 성능에 대한 포괄적인 평가를 방해합니다. 이러한 공백을 해소하기 위해, 우리는 MCIF(다중 언어 다모달 인스트럭션 따르기)를 소개합니다. 이는 과학적인 발표를 기반으로 한 최초의 다양한 언어(영어, 독일어, 이탈리아어, 중국어)에서 인스트럭션 따르기를 평가하기 위해 설계된 다국어 인간 주석 벤치마크입니다. MCIF는 음성, 비전, 텍스트 세 가지 주요 모달리티를 아우르며 MLLMs가 언어 간 지침을 해석하고 그것들을 다중 모달 문맥 정보와 결합하는 능력을 포괄적으로 평가합니다. MCIF는 MLLMs 개발에 대한 오픈 리서치와 진전을 촉진하기 위해 CC-BY 4.0 라이선스 하에 공개됩니다."
+    },
+    "summary": "1. 최근의 대형 언어 모델 발전으로 다중 모달 LLMs 발전이 가속화되었으며, MLLMs는 텍스트, 음성 및 비전을 통합한 통합 프레임워크 내에서 작동합니다.\n2. 기존 벤치마크는 다국어 및 다모달 능력을 종합적으로 평가하는 데 한계가 있으며, 이에 대응하기 위해 MCIF는 과학적 발표를 기반으로 설계된 최초의 다국어 다모달 인스트럭션 따르기 벤치마크로 각국어의 다양한 언어를 아우르고 있습니다.\n3. MCIF는 음성, 비전, 텍스트의 세 가지 주요 모달리티를 통해 MLLMs의 지침 해석 능력을 종합적으로 평가하며, 공개적인 연구와 발전을 촉진하기 위해 CC-BY 4.0 라이선스를 통해 공개되었습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

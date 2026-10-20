@@ -1,0 +1,153 @@
+=== Paper Collection Started at Tue Sep 23 22:07:36 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W39
+URL: https://huggingface.co/papers/week/2025-W39
+Found 10 papers in weekly view
+Fetching likes for: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Fetching likes for: LIMI: Less is More for Agency
+Fetching likes for: MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer
+Fetching likes for: Qwen3-Omni Technical Report
+Fetching likes for: OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models
+Fetching likes for: Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification
+Fetching likes for: OnePiece: Bringing Context Engineering and Reasoning to Industrial
+  Cascade Ranking System
+Fetching likes for: TempSamp-R1: Effective Temporal Sampling with Reinforcement Fine-Tuning
+  for Video LLMs
+Fetching likes for: SPATIALGEN: Layout-guided 3D Indoor Scene Generation
+Fetching likes for: BaseReward: A Strong Baseline for Multimodal Reward Model
+Selected top 10 papers by likes:
+1. RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation (98 likes)
+2. LIMI: Less is More for Agency (61 likes)
+3. MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer (46 likes)
+4. Qwen3-Omni Technical Report (45 likes)
+5. OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models (44 likes)
+6. Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification (42 likes)
+7. OnePiece: Bringing Context Engineering and Reasoning to Industrial
+  Cascade Ranking System (27 likes)
+8. TempSamp-R1: Effective Temporal Sampling with Reinforcement Fine-Tuning
+  for Video LLMs (25 likes)
+9. SPATIALGEN: Layout-guided 3D Indoor Scene Generation (20 likes)
+10. BaseReward: A Strong Baseline for Multimodal Reward Model (17 likes)
+Found abstract: Large language models excel at function- and file-level code generation, yet
+generating complete rep...
+Processed paper: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Found abstract: We define Agency as the emergent capacity of AI systems to function as
+autonomous agents actively di...
+Processed paper: LIMI: Less is More for Agency
+Found abstract: Unified multimodal Large Language Models (LLMs) that can both understand and
+generate visual content...
+Processed paper: MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer
+Found abstract: We present Qwen3-Omni, a single multimodal model that, for the first time,
+maintains state-of-the-ar...
+Processed paper: Qwen3-Omni Technical Report
+Found abstract: Recent advances in video insertion based on diffusion models are impressive.
+However, existing metho...
+Processed paper: OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models
+Found abstract: Generative modeling, representation learning, and classification are three
+core problems in machine ...
+Processed paper: Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification
+Found abstract: Despite the growing interest in replicating the scaled success of large
+language models (LLMs) in in...
+Processed paper: OnePiece: Bringing Context Engineering and Reasoning to Industrial
+  Cascade Ranking System
+Found abstract: This paper introduces TempSamp-R1, a new reinforcement fine-tuning framework
+designed to improve the...
+Processed paper: TempSamp-R1: Effective Temporal Sampling with Reinforcement Fine-Tuning
+  for Video LLMs
+Found abstract: Creating high-fidelity 3D models of indoor environments is essential for
+applications in design, vir...
+Processed paper: SPATIALGEN: Layout-guided 3D Indoor Scene Generation
+Found abstract: The rapid advancement of Multimodal Large Language Models (MLLMs) has made
+aligning them with human ...
+Processed paper: BaseReward: A Strong Baseline for Multimodal Reward Model
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Paper already exists, checking if translation is complete...
+Update likes: 98  ->  87
+Update date_collected: 2025-09-24T07:07:45.734114+09:00  ->  2025-09-23T07:07:56.677154+09:00
+
+Processing paper 2/10
+Title: LIMI: Less is More for Agency
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  36
+Update date_collected: 2025-09-24T07:07:45.737731+09:00  ->  2025-09-23T07:07:56.679021+09:00
+
+Processing paper 4/10
+Title: Qwen3-Omni Technical Report
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  27
+Update date_collected: 2025-09-24T07:07:45.742117+09:00  ->  2025-09-23T07:07:56.680236+09:00
+
+Processing paper 7/10
+Title: OnePiece: Bringing Context Engineering and Reasoning to Industrial
+  Cascade Ranking System
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: TempSamp-R1: Effective Temporal Sampling with Reinforcement Fine-Tuning
+  for Video LLMs
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: SPATIALGEN: Layout-guided 3D Indoor Scene Generation
+Paper already exists, checking if translation is complete...
+Update likes: 20  ->  14
+Update date_collected: 2025-09-24T07:07:45.746185+09:00  ->  2025-09-23T07:07:56.683095+09:00
+
+Processing paper 10/10
+Title: BaseReward: A Strong Baseline for Multimodal Reward Model
+Paper already exists, checking if translation is complete...
+Update likes: 17  ->  17
+Update date_collected: 2025-09-24T07:07:45.747712+09:00  ->  2025-09-23T07:07:56.681793+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W39.json...
+
+Updating Notion database...
+Updating paper: RPG: 통합 및 확장 가능한 코드베이스 생성을 위한 저장소 계획 그래프 (likes: 87 -> 98)
+Creating new paper: LIMI: 에이전시를 위한 적은 양이 더 많다
+Updating paper: 간단하고 확장 가능한 통합된 다중 모달 모델 MANZANO: 하이브리드 비전 토크나이저 (likes: 36 -> 46)
+Creating new paper: Qwen3-Omni 기술 보고서
+Creating new paper: 옴니인서트: 확산을 통한 임의의 참조 비디오 삽입을 위한 마스크 없는 모델
+Updating paper: 숨겨진 분류 네트워크: 생성 모델링, 표현 학습, 그리고 분류를 위한 통일된 원리 (likes: 27 -> 42)
+Creating new paper: OnePiece: 산업적인 카스케이드 랭킹 시스템에 맥락 공학과 추론을 가져오다
+Creating new paper: 효율적인 시간적 샘플링을 위한 보강 학습 기반 TempSamp-R1: 비디오 LLMs를 위한
+Updating paper: 공간지도를 활용한 3D 실내 공간 생성 (likes: 14 -> 20)
+Paper already exists with same likes count: BaseReward: 다중모달 보상 모델을 위한 강력한 기준선
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Sep 23 22:09:37 UTC 2025 ===
+

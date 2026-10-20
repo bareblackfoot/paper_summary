@@ -1,0 +1,326 @@
+[
+  {
+    "title": "Watching, Reasoning, and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning",
+    "abstract": "In real-world video question answering scenarios, videos often provide only localized visual cues, while verifiable answers are distributed across the open web; models therefore need to jointly perform cross-frame clue extraction, iterative retrieval, and multi-hop reasoning-based verification. To bridge this gap, we construct the first video deep research benchmark, VideoDR. VideoDR centers on video-conditioned open-domain video question answering, requiring cross-frame visual anchor extraction, interactive web retrieval, and multi-hop reasoning over joint video-web evidence; through rigorous human annotation and quality control, we obtain high-quality video deep research samples spanning six semantic domains. We evaluate multiple closed-source and open-source multimodal large language models under both the Workflow and Agentic paradigms, and the results show that Agentic is not consistently superior to Workflow: its gains depend on a model's ability to maintain the initial video anchors over long retrieval chains. Further analysis indicates that goal drift and long-horizon consistency are the core bottlenecks. In sum, VideoDR provides a systematic benchmark for studying video agents in open-web settings and reveals the key challenges for next-generation video deep research agents.",
+    "authors": [
+      "Chengwen Liu",
+      "Xiaomin Yu",
+      "Zhuoyue Chang",
+      "Zhe Huang",
+      "Shuo Zhang",
+      "Heng Lian",
+      "Kunyi Wang",
+      "Rui Xu",
+      "Sen Hu",
+      "Jianheng Hou",
+      "Hao Peng",
+      "Chengwei Qin",
+      "Xiaobin Hu",
+      "Hong Peng",
+      "Ronghao Chen",
+      "Huacan Wang"
+    ],
+    "likes": 170,
+    "published_date": "Jan 11",
+    "url": "https://huggingface.co/papers/2601.06943",
+    "date_collected": "2026-01-14T07:08:55.887351+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "시청, 추론, 및 탐색: 오픈 웹에서의 적극적 비디오 추론을 위한 비디오 깊은 연구 벤치마크",
+      "abstract": "현실 세계 비디오 질문 응답 시나리오에서 비디오들은 종종 지역화된 시각적 단서만을 제공하며, 검증 가능한 답변들은 오픈 웹 전체에 분산되어 있습니다; 따라서 모델들은 교차 프레임 단서 추출, 반복적 검색, 그리고 다중 점프 추론 기반 검증을 함께 수행해야 합니다. 이 간극을 줄이기 위해, 우리는 첫 번째 비디오 깊은 연구 벤치마크인 VideoDR을 구축했습니다. VideoDR은 비디오에 조건을 둔 오픈 도메인 비디오 질문 응답을 중심으로 하며, 교차 프레임 시각적 앵커 추출, 상호작용적 웹 검색, 그리고 공동 비디오-웹 증거 위에서 다중 점프 추론을 요구합니다; 엄격한 인간 주석과 품질 통제를 통해, 여섯 가지 의미 영역을 아우르는 고품질 비디오 깊은 연구 샘플을 획득합니다. 우리는 Workflow와 Agentic 패러다임 모두에 걸쳐 여러 닫힌 소스와 오픈 소스 다중 모달 대형언어 모델들을 평가하고, 결과는 Agentic이 항상 Workflow보다 뛰어나지는 않음을 보여줍니다: 그 이익은 모델이 초기 비디오 앵커들을 장거리 검색 체인을 통해 유지하는 능력에 달려 있습니다. 추가 분석은 목표 변화와 장기 일관성이 핵심 병목 현상임을 나타냅니다. 요약하면, VideoDR은 오픈 웹 환경에서 비디오 에이전트를 연구하기 위한 체계적인 벤치마크를 제공하며, 차세대 비디오 깊은 연구 에이전트를 위한 주요 과제들을 밝힙니다."
+    },
+    "summary": "1. VideoDR은 오픈 웹에서의 비디오에이전트 연구를 위해 만들어진 첫 비디오 깊은 연구 벤치마크이다.\n2. Workflow와 Agentic 패러다임 모두에서 다양한 다중 모달 대형언어 모델을 평가한 결과, Agentic이 항상 Workflow보다 우월하다는 것이 아니라는 결과를 보여준다.\n3. VideoDR은 다음 세대 비디오 깊은 연구 에이전트를 위한 주요 과제로 목표 이탈과 장기적 일관성을 지목한다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "BabyVision: Visual Reasoning Beyond Language",
+    "abstract": "While humans develop core visual skills long before acquiring language, contemporary Multimodal LLMs (MLLMs) still rely heavily on linguistic priors to compensate for their fragile visual understanding. We uncovered a crucial fact: state-of-the-art MLLMs consistently fail on basic visual tasks that humans, even 3-year-olds, can solve effortlessly. To systematically investigate this gap, we introduce BabyVision, a benchmark designed to assess core visual abilities independent of linguistic knowledge for MLLMs. BabyVision spans a wide range of tasks, with 388 items divided into 22 subclasses across four key categories. Empirical results and human evaluation reveal that leading MLLMs perform significantly below human baselines. Gemini3-Pro-Preview scores 49.7, lagging behind 6-year-old humans and falling well behind the average adult score of 94.1. These results show despite excelling in knowledge-heavy evaluations, current MLLMs still lack fundamental visual primitives. Progress in BabyVision represents a step toward human-level visual perception and reasoning capabilities. We also explore solving visual reasoning with generation models by proposing BabyVision-Gen and automatic evaluation toolkit. Our code and benchmark data are released at https://github.com/UniPat-AI/BabyVision for reproduction.",
+    "authors": [
+      "Liang Chen",
+      "Weichu Xie",
+      "Yiyan Liang",
+      "Hongfeng He",
+      "Hans Zhao",
+      "Zhibo Yang",
+      "Zhiqi Huang",
+      "Haoning Wu",
+      "Haoyu Lu",
+      "Y. charles",
+      "Yiping Bao",
+      "Yuantao Fan",
+      "Guopeng Li",
+      "Haiyang Shen",
+      "Xuanzhong Chen",
+      "Wendong Xu",
+      "Shuzheng Si",
+      "Zefan Cai",
+      "Wenhao Chai",
+      "Ziqi Huang",
+      "Fangfu Liu",
+      "Tianyu Liu"
+    ],
+    "likes": 145,
+    "published_date": "Jan 10",
+    "url": "https://huggingface.co/papers/2601.06521",
+    "date_collected": "2026-01-14T07:08:55.889046+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "언어를 넘어선 시각 추론: 베이비비전",
+      "abstract": "인간은 언어를 습득하기 훨씬 전에 기본적인 시각 기술을 발전시키지만, 현대 다중모달 언어 모델(MLLMs)은 여전히 시각 이해력이 부족한 점을 보상하기 위해 언어 우선순위에 크게 의존합니다. 우리는 MLLMs가 심각한 시각적 작업에서 계속 실패하는 사실을 발견했습니다. 이는 3세의 아이들조차 쉽게 해결할 수 있는 기본 시각 작업에서도 그렇습니다. 이 간극을 체계적으로 조사하기 위해 우리는 베이비비전을 소개합니다. 이 벤치마크는 MLLMs의 언어 지식과 독립적으로 핵심 시각 능력을 평가하기 위해 설계되었습니다. 베이비비전은 22개 하위 클래스로 구분된 388개 세부 작업으로 구성된 폭넓은 범위의 작업을 다룹니다. 경험적 결과와 인간 평가 결과는 선도적인 MLLMs가 인간 기준에 크게 못 미치는 것을 보여줍니다."
+    },
+    "summary": "1. 현재의 다중모달 언어 모델은 언어적인 힌트에 크게 의존하면서도, 아이들조차 쉽게 수행하는 기본적인 시각 작업에서 실패하는 경향이 있다.\n2. 베이비비전 벤치마크를 통해 주요 선도적 모델은 인간의 성능을 상당히 밑도는 결과를 보이며, 시각적 기본 원시를 부족하게 이해하고 있다는 것을 반영한다.\n3. 베이비비전을 통한 진전은 인간 수준의 시각 지각과 추론 능력에 한 걸음 더 다가가는 것을 의미한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Thinking with Map: Reinforced Parallel Map-Augmented Agent for Geolocalization",
+    "abstract": "The image geolocalization task aims to predict the location where an image was taken anywhere on Earth using visual clues. Existing large vision-language model (LVLM) approaches leverage world knowledge, chain-of-thought reasoning, and agentic capabilities, but overlook a common strategy used by humans -- using maps. In this work, we first equip the model Thinking with Map ability and formulate it as an agent-in-the-map loop. We develop a two-stage optimization scheme for it, including agentic reinforcement learning (RL) followed by parallel test-time scaling (TTS). The RL strengthens the agentic capability of model to improve sampling efficiency, and the parallel TTS enables the model to explore multiple candidate paths before making the final prediction, which is crucial for geolocalization. To evaluate our method on up-to-date and in-the-wild images, we further present MAPBench, a comprehensive geolocalization training and evaluation benchmark composed entirely of real-world images. Experimental results show that our method outperforms existing open- and closed-source models on most metrics, specifically improving Acc@500m from 8.0\\% to 22.1\\% compared to Gemini-3-Pro with Google Search/Map grounded mode.",
+    "authors": [
+      "Yuxiang Ji",
+      "Yong Wang",
+      "Ziyu Ma",
+      "Yiming Hu",
+      "Hailang Huang",
+      "Xuecai Hu",
+      "Guanhua Chen",
+      "Liaoni Wu",
+      "Xiangxiang Chu"
+    ],
+    "likes": 145,
+    "published_date": "Jan 8",
+    "url": "https://huggingface.co/papers/2601.05432",
+    "date_collected": "2026-01-14T07:08:55.890242+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "지도와 함께 생각하기: 지리위치파악을 위한 강화된 병렬 지도 보강 에이전트",
+      "abstract": "이미지 지리위치파악 작업은 시각적 단서를 사용하여 지구상의 어디에서든 이미지가 촬영된 위치를 예측하는 것을 목표로 합니다. 기존의 대규모 비전-언어 모델(LVLM) 접근 방식은 세상의 지식, 사고 체인, 에이전트 능력을 활용하지만 인간들이 사용하는 일반적인 전략 중 하나인 지도 사용을 무시합니다. 본 연구에서는 우선 모델에 '지도와 함께 생각하기' 능력을 부여하고 이를 에이전트-지도 루프로 구성합니다. 우리는 이를 위해 에이전트 강화 학습(RL) 및 병렬 테스트 시간 스케일링(TTS)을 포함한 두 단계 최적화 체계를 개발했습니다."
+    },
+    "summary": "1. 기존의 대규모 비전-언어 모델 접근 방식과 달리, 본 연구는 지리위치파악 과정에서 지도 활용의 중요성을 강조하고, 에이전트-지도 루프로 구성된 두 단계 최적화 체계를 개발했습니다.\n2. 에이전트 강화 학습은 모델의 에이전트 능력을 강화하여 샘플링 효율성을 향상시키고, 병렬 TTS는 최종 예측을 내리기 전에 모델이 여러 후보 경로를 탐색할 수 있도록 하여 지리위치파악에 중요합니다.\n3. 최근 및 실제 이미지로 모델을 평가하기 위해 MAPBench를 제안하며 실험 결과는 우리 방법이 Gemini-3-Pro와 비교하여 Acc@500m을 8.0%에서 22.1%로 향상시킴을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MMFormalizer: Multimodal Autoformalization in the Wild",
+    "abstract": "Autoformalization, which translates natural language mathematics into formal statements to enable machine reasoning, faces fundamental challenges in the wild due to the multimodal nature of the physical world, where physics requires inferring hidden constraints (e.g., mass or energy) from visual elements. To address this, we propose MMFormalizer, which extends autoformalization beyond text by integrating adaptive grounding with entities from real-world mathematical and physical domains. MMFormalizer recursively constructs formal propositions from perceptually grounded primitives through recursive grounding and axiom composition, with adaptive recursive termination ensuring that every abstraction is supported by visual evidence and anchored in dimensional or axiomatic grounding. We evaluate MMFormalizer on a new benchmark, PhyX-AF, comprising 115 curated samples from MathVerse, PhyX, Synthetic Geometry, and Analytic Geometry, covering diverse multimodal autoformalization tasks. Results show that frontier models such as GPT-5 and Gemini-3-Pro achieve the highest compile and semantic accuracy, with GPT-5 excelling in physical reasoning, while geometry remains the most challenging domain. Overall, MMFormalizer provides a scalable framework for unified multimodal autoformalization, bridging perception and formal reasoning. To the best of our knowledge, this is the first multimodal autoformalization method capable of handling classical mechanics (derived from the Hamiltonian), as well as relativity, quantum mechanics, and thermodynamics. More details are available on our project page: MMFormalizer.github.io",
+    "authors": [
+      "Jing Xiong",
+      "Qi Han",
+      "Yunta Hsieh",
+      "Hui Shen",
+      "Huajian Xin",
+      "Chaofan Tao",
+      "Chenyang Zhao",
+      "Hengyuan Zhang",
+      "Taiqiang Wu",
+      "Zhen Zhang",
+      "Haochen Wang",
+      "Zhongwei Wan",
+      "Lingpeng Kong",
+      "Ngai Wong"
+    ],
+    "likes": 97,
+    "published_date": "Jan 6",
+    "url": "https://huggingface.co/papers/2601.03017",
+    "date_collected": "2026-01-14T07:08:55.891603+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "MMFormalizer: 야생에서의 다중모달 자동 정형화",
+      "abstract": "자연어 수학을 형식적인 명제로 변환하여 기계 추론을 가능케 하는 자동 정형화는, 물리학이 시각 요소로부터 숨겨진 제약(예: 질량 또는 에너지)을 추론하는 것을 필요로 하는 물리적 세계의 다중모달성으로 인해 야생에서 근본적인 도전을 맞이합니다. 이를 해결하기 위해 우리는 MMFormalizer를 제안하는데, 이는 실제 수학적 및 물리적 도메인의 엔티티들을 적응적으로 그라운딩하여 텍스트 이상의 자동 정형화를 확장합니다. MMFormalizer는 반복적으로 눈으로 본 원시 요소로부터 형식적 명제를 재귀적 그라운딩과 공리 합성을 통해 구성하며, 적응적 재귀 종료는 모든 추상화가 시각적 증거에 의해 지지되고 차원적 또는 공리적 그라운딩에 고정된 것을 보장합니다. MathVerse, PhyX, Synthetic Geometry 및 Analytic Geometry에서 선별된 샘플 115개로 이루어진 새로운 벤치마크인 PhyX-AF를 통해 MMFormalizer를 평가합니다. 결과는 GPT-5 및 Gemini-3-Pro와 같은 최신 모델이 가장 높은 컴파일 및 의미적 정확도를 달성하는데, GPT-5는 물리적 추론에서 뛰어나며, 기하학이 여전히 가장 어려운 도메인임을 보여줍니다. 전반적으로, MMFormalizer는 지각과 형식적 추론을 이어주는 확장 가능한 다중모달 자동 정형화 프레임워크를 제공합니다. 우리의 지식으로는, 이는 카멜턴식(Hamiltonian)에서 파생된 고전역학 뿐만 아니라 상대성이론, 양자역학 및 열역학을 다룰 수 있는 최초의 다중모달 자동 정형화 방법입니다. 프로젝트 페이지 MMFormalizer.github.io에서 자세한 내용을 확인할 수 있습니다."
+    },
+    "summary": "1. 자동 정형화를 다중모달 환경에서 처리하기 위해 MMFormalizer가 제안된다.\n2. MMFormalizer는 시각 증거에 기반한 형식적 명제를 재귀적으로 생성함으로써 다중모달 자동 정형화를 실현한다.\n3. Geeteepee-5(GPT-5)와 Gemini-3-Pro 등의 모델이 높은 정확도를 보이며, 물리적 추론에서 특히 뛰어나다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "PaCoRe: Learning to Scale Test-Time Compute with Parallel Coordinated Reasoning",
+    "abstract": "We introduce Parallel Coordinated Reasoning (PaCoRe), a training-and-inference framework designed to overcome a central limitation of contemporary language models: their inability to scale test-time compute (TTC) far beyond sequential reasoning under a fixed context window. PaCoRe departs from the traditional sequential paradigm by driving TTC through massive parallel exploration coordinated via a message-passing architecture in multiple rounds. Each round launches many parallel reasoning trajectories, compacts their findings into context-bounded messages, and synthesizes these messages to guide the next round and ultimately produce the final answer. Trained end-to-end with large-scale, outcome-based reinforcement learning, the model masters the synthesis abilities required by PaCoRe and scales to multi-million-token effective TTC without exceeding context limits. The approach yields strong improvements across diverse domains, and notably pushes reasoning beyond frontier systems in mathematics: an 8B model reaches 94.5% on HMMT 2025, surpassing GPT-5's 93.2% by scaling effective TTC to roughly two million tokens. We open-source model checkpoints, training data, and the full inference pipeline to accelerate follow-up work.",
+    "authors": [
+      "Jingcheng Hu",
+      "Yinmin Zhang",
+      "Shijie Shang",
+      "Xiaobo Yang",
+      "Yue Peng",
+      "Zhewei Huang",
+      "Hebin Zhou",
+      "Xin Wu",
+      "Jie Cheng",
+      "Fanqi Wan",
+      "Xiangwen Kong",
+      "Chengyuan Yao",
+      "Kaiwen Yan",
+      "Ailin Huang",
+      "Hongyu Zhou",
+      "Qi Han",
+      "Zheng Ge",
+      "Daxin Jiang",
+      "Xiangyu Zhang",
+      "Heung-Yeung Shum"
+    ],
+    "likes": 61,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.05593",
+    "date_collected": "2026-01-14T07:08:55.893219+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "스케일 테스트 시간 컴퓨팅 확장을 배우는 PaCoRe: 병렬 조정 추론",
+      "abstract": "우리는 현대 언어 모델의 중심적인 한계인 시퀀셜 추론 아래의 테스트 시간 컴퓨팅(TTC) 확장 능력 부재를 극복하기 위해 설계된 PaCoRe(병렬 조정 추론)를 소개합니다. PaCoRe는 많은 병렬 추론 궤도를 시작시킨 다음 그들의 발견물을 컨텍스트에 제한된 메시지로 압축하고, 이러한 메시지들을 합성하여 다음 라운드를 이끄는 것과 최종적으로 최종 답변을 생성하는 방식으로 TTC를 주도하는 메시지 통과 아키텍처를 통해 협조적으로 조정된 대규모 병렬 탐색을 통해 시퀀셜 패러다임에서 벗어납니다. 대규모 결과 중심 강화 학습으로 단단히 끝까지 교육되어 PaCoRe가 요구하는 합성 능력을 마스터하고, 컨텍스트 제한을 초과하지 않는 다중 백만 토큰의 유효한 TTC로 확장됩니다. 이 방식은 다양한 분야에서 강력한 개선을 이루어내며 특히 수학 분야의 선도 시스템을 넘어서는 추론을 이룬다: 8B 모델은 HMMT 2025에서 GPT-5의 93.2%를 거의 200만 토큰에 유효한 TTC로 스케일링하여 94.5%에 도달합니다. 이어지는 작업을 가속화하기 위해 모델 체크포인트, 훈련 데이터 및 전체 추론 파이프라인을 오픈 소스로 제공합니다."
+    },
+    "summary": "1. PaCoRe는 병렬 조정 추론을 통해 현재 언어 모델의 한계인 테스트 시간 컴퓨팅(TTC) 스케일을 극복함.\n2. 대규모 결과 중심 강화 학습을 통해 훈련된 PaCoRe 모델은 다양한 분야에서 강력한 성능 향상을 보임.\n3. PaCoRe는 수학 분야를 포함한 여러 분야에서 원시적 시스템을 넘어서는 추론 능력을 보임.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "CaricatureGS: Exaggerating 3D Gaussian Splatting Faces With Gaussian Curvature",
+    "abstract": "A photorealistic and controllable 3D caricaturization framework for faces is introduced. We start with an intrinsic Gaussian curvature-based surface exaggeration technique, which, when coupled with texture, tends to produce over-smoothed renders. To address this, we resort to 3D Gaussian Splatting (3DGS), which has recently been shown to produce realistic free-viewpoint avatars. Given a multiview sequence, we extract a FLAME mesh, solve a curvature-weighted Poisson equation, and obtain its exaggerated form. However, directly deforming the Gaussians yields poor results, necessitating the synthesis of pseudo-ground-truth caricature images by warping each frame to its exaggerated 2D representation using local affine transformations. We then devise a training scheme that alternates real and synthesized supervision, enabling a single Gaussian collection to represent both natural and exaggerated avatars. This scheme improves fidelity, supports local edits, and allows continuous control over the intensity of the caricature. In order to achieve real-time deformations, an efficient interpolation between the original and exaggerated surfaces is introduced. We further analyze and show that it has a bounded deviation from closed-form solutions. In both quantitative and qualitative evaluations, our results outperform prior work, delivering photorealistic, geometry-controlled caricature avatars.",
+    "authors": [
+      "Eldad Matmon",
+      "Amit Bracha",
+      "Noam Rotstein",
+      "Ron Kimmel"
+    ],
+    "likes": 49,
+    "published_date": "Jan 6",
+    "url": "https://huggingface.co/papers/2601.03319",
+    "date_collected": "2026-01-14T07:08:55.894237+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "카리커처GS: 가우시안 곡률을 강조한 3D 가우시안 스플래팅 얼굴 핥기",
+      "abstract": "안면을 위한 사실적이고 조절 가능한 3D 카리커처화 프레임워크가 소개됩니다. 우리는 텍스처와 결합된 내재 가우시안 곡률 기반 표면 과장 기술로 시작하는데, 이 기술은 종종 과도하게 부드러운 렌더를 만들어냅니다. 이를 해결하기 위해 최근 실제 뷰포인트 아바타를 생성하는 데 성공한 3D 가우시안 스플래팅 (3DGS)을 활용합니다. 다시말해, 이를 이용해 실시간 변형을 달성하기 위해 원래 모양과 과장된 표면 사이의 효율적인 보간 방법을 소개합니다. 또한 우리는 분석하여 이것이 폐쇄형 해들의 제한된 편차를 가지고 있음을 보여줍니다. 양적 및 질적 평가에서 우리의 결과는 이전 연구를 능가하여, 사실적이고 기하학을 제어 가능한 카리커처 아바타를 제공합니다."
+    },
+    "summary": "1. 얼굴의 가우시안 곡률을 기반으로 내재 표면을 과장하는 기술을 사용하여 3D 카리커처화 프레임워크를 제안합니다.\n2. 3D 가우시안 스플래팅 기술을 적용하여 실제적인 자유 시점 아바타를 생성하고, 원래 모양과 과장된 표면 사이의 효율적인 보간법을 도입합니다.\n3. 교육 계획을 통해 자연스럽고 과장된 아바타를 동시에 표현하는 단일 가우시안 컬렉션을 활용하여 성능을 향상시키고 지속적으로 카리커처의 강도를 조절할 수 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Molecular Structure of Thought: Mapping the Topology of Long Chain-of-Thought Reasoning",
+    "abstract": "Large language models (LLMs) often fail to learn effective long chain-of-thought (Long CoT) reasoning from human or non-Long-CoT LLMs imitation. To understand this, we propose that effective and learnable Long CoT trajectories feature stable molecular-like structures in unified view, which are formed by three interaction types: Deep-Reasoning (covalent-like), Self-Reflection (hydrogen-bond-like), and Self-Exploration (van der Waals-like). Analysis of distilled trajectories reveals these structures emerge from Long CoT fine-tuning, not keyword imitation. We introduce Effective Semantic Isomers and show that only bonds promoting fast entropy convergence support stable Long CoT learning, while structural competition impairs training. Drawing on these findings, we present Mole-Syn, a distribution-transfer-graph method that guides synthesis of effective Long CoT structures, boosting performance and RL stability across benchmarks.",
+    "authors": [
+      "Qiguang Chen",
+      "Yantao Du",
+      "Ziniu Li",
+      "Jinhao Liu",
+      "Songyao Duan",
+      "Jiarui Guo",
+      "Minghao Liu",
+      "Jiaheng Liu",
+      "Tong Yang",
+      "Ge Zhang",
+      "Libo Qin",
+      "Wanxiang Che",
+      "Wenhao Huang"
+    ],
+    "likes": 45,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.06002",
+    "date_collected": "2026-01-14T07:08:55.895571+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "사고의 분자 구조: 긴 사고 사슬의 위상 매핑",
+      "abstract": "대규모 언어 모델(LLMs)은 종래의 인간이나 비-긴 사고 LLMs 모방으로 충분한 긴 사고 사슬(Long CoT) 추론을 효과적으로 학습하는 데 실패하는 경우가 많다. 이를 이해하기 위해, 효과적이고 학습 가능한 긴 사고(Long CoT) 궤적은 통일된 관점에서 안정한 분자 구조와 비슷하게 형성되며, 이는 Deep-Reasoning(공유결합 형태), Self-Reflection(수소결합 형태), Self-Exploration(반 데르 발스 결합 형태) 세 가지 상호작용 유형에 의해 형성된다. 정제된 궤적의 분석 결과, 이러한 구조들은 Long CoT 미세 조정에서 나타나며, 키워드 모방이 아니라. 효과적인 의미 이성질체(Effective Semantic Isomers)를 제시하고, 빠른 엔트로피 수렴을 촉진하는 결합만이 안정적인 Long CoT 학습을 지원하는 반면, 구조적 경쟁은 훈련을 저해한다는 것을 보여준다. 이러한 결과를 바탕으로 성능과 강화학습 안정성을 향상시키기 위해 효과적인 Long CoT 구조의 합성을 이끄는 분배-전이-그래프 방법(Mole-Syn)을 제안한다."
+    },
+    "summary": "1. 대규모 언어 모델은 긴 사고 사슬 추론을 효과적으로 학습하는 데 어려움을 겪는데, 이는 키워드 대신 Long CoT 미세 조정에서 나타나는 안정한 분자 구조로 설명될 수 있다.\n2. 빠른 엔트로피 수렴을 촉진하는 결합만이 안정적인 Long CoT 학습을 지원하고, 구조적 경쟁은 훈련을 방해하는 것으로 나타났다.\n3. Mole-Syn 방법은 효과적인 Long CoT 구조의 합성을 안내함으로써 성능과 강화학습 안정성을 향상시키는데 기여한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards",
+    "abstract": "Reinforcement learning (RL) has emerged as a critical technique for enhancing LLM-based deep search agents. However, existing approaches primarily rely on binary outcome rewards, which fail to capture the comprehensiveness and factuality of agents' reasoning process, and often lead to undesirable behaviors such as shortcut exploitation and hallucinations. To address these limitations, we propose Citation-aware Rubric Rewards (CaRR), a fine-grained reward framework for deep search agents that emphasizes reasoning comprehensiveness, factual grounding, and evidence connectivity. CaRR decomposes complex questions into verifiable single-hop rubrics and requires agents to satisfy these rubrics by explicitly identifying hidden entities, supporting them with correct citations, and constructing complete evidence chains that link to the predicted answer. We further introduce Citation-aware Group Relative Policy Optimization (C-GRPO), which combines CaRR and outcome rewards for training robust deep search agents. Experiments show that C-GRPO consistently outperforms standard outcome-based RL baselines across multiple deep search benchmarks. Our analysis also validates that C-GRPO effectively discourages shortcut exploitation, promotes comprehensive, evidence-grounded reasoning, and exhibits strong generalization to open-ended deep research tasks. Our code and data are available at https://github.com/THUDM/CaRR.",
+    "authors": [
+      "Jiajie Zhang",
+      "Xin Lv",
+      "Ling Feng",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "likes": 37,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.06021",
+    "date_collected": "2026-01-14T07:08:55.896624+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "증거 연결하기: 인용 정보 인식을 통한 강건한 강화 학습을 위한 깊은 탐색 에이전트 (Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards)",
+      "abstract": "강화 학습(RL)은 LLM 기반 깊은 탐색 에이전트의 향상에 중요한 기법으로 부상했다. 그러나 기존 방법은 주로 이분류 결과 보상에 의존하는데, 이는 에이전트의 추론 과정의 포괄성과 사실성을 잡아내지 못하며, 종종 바람직하지 않은 행동인 지름길 악용과 환각으로 이어진다. 이러한 한계를 해결하기 위해, 우리는 Citation-aware Rubric Rewards (CaRR)를 제안한다. 이는 이유의 포괄성, 사실 근거, 증거 연결성을 강조하는 깊은 탐색 에이전트를 위한 세밀한 보상 프레임워크이다. CaRR은 복잡한 질문을 검증 가능한 단일 점프 루브릭으로 분해하고, 에이전트가 이 루브릭을 충족하는 것을 요구함으로써 숨겨진 개체를 명시적으로 식별하고, 올바른 인용을 통해 이를 지원하고, 예측된 답변에 연결되는 완전한 증거 체인을 구축하도록 한다. 우리는 또한 Citation-aware Group Relative Policy Optimization (C-GRPO)을 소개하는데, 이는 CaRR과 결과 보상을 결합하여 강건한 깊은 탐색 에이전트를 훈련시킨다. 실험 결과, C-GRPO는 다수의 깊은 탐색 벤치마크에서 표준 결과 기반 RL 기준선을 일관되게 능가하는 것으로 나타났다. 우리의 분석은 또한 C-GRPO가 지름길 악용을 효과적으로 억제하고, 포괄적이고 증거 기반 추론을 촉진하며, 개방형 깊은 연구 작업에 대해 강한 일반화를 나타낸다는 것을 검증했다. 우리의 코드와 데이터는 https://github.com/THUDM/CaRR 에서 제공된다."
+    },
+    "summary": "1. 기존 강화 학습의 한계를 보완하기 위해 Citation-aware Rubric Rewards (CaRR)를 도입하여 깊은 탐색 에이전트의 훈련에 성공적으로 적용하였다.\n2. Citation-aware Group Relative Policy Optimization (C-GRPO)은 CaRR과 결과 보상을 결합하여 강건한 깊은 탐색 에이전트의 훈련을 위한 효과적인 방법임을 입증하였다.\n3. 실험 결과는 C-GRPO가 지름길 악용을 억제하고 포괄적이며 증거 기반의 추론을 장려하며, 개방형 깊은 연구 작업에 강한 적용성을 보여주는 것을 확인했다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis",
+    "abstract": "Large language models (LLMs) are expected to be trained to act as agents in various real-world environments, but this process relies on rich and varied tool-interaction sandboxes. However, access to real systems is often restricted; LLM-simulated environments are prone to hallucinations and inconsistencies; and manually built sandboxes are hard to scale. In this paper, we propose EnvScaler, an automated framework for scalable tool-interaction environments via programmatic synthesis. EnvScaler comprises two components. First, SkelBuilder constructs diverse environment skeletons through topic mining, logic modeling, and quality evaluation. Then, ScenGenerator generates multiple task scenarios and rule-based trajectory validation functions for each environment. With EnvScaler, we synthesize 191 environments and about 7K scenarios, and apply them to Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) for Qwen3 series models. Results on three benchmarks show that EnvScaler significantly improves LLMs' ability to solve tasks in complex environments involving multi-turn, multi-tool interactions. We release our code and data at https://github.com/RUC-NLPIR/EnvScaler.",
+    "authors": [
+      "Xiaoshuai Song",
+      "Haofei Chang",
+      "Guanting Dong",
+      "Yutao Zhu",
+      "Zhicheng Dou",
+      "Ji-Rong Wen"
+    ],
+    "likes": 32,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.05808",
+    "date_collected": "2026-01-14T07:08:55.897679+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "EnvScaler: 프로그램적 합성을 통한 LLM 에이전트를 위한 상호작용 환경 확장 도구",
+      "abstract": "대규모 언어 모델(LLMs)은 다양한 실제 환경에서 에이전트로 작동하기 위해 훈련되어야 하지만, 이 과정은 다양하고 풍부한 도구-상호작용 모래상 환경에 의존합니다. 본 논문에서는 환경 확장자(EnvScaler)를 제안하며, 프로그램적 합성을 통해 확장 가능한 도구-상호작용 환경을 자동화하는 프레임워크를 소개합니다."
+    },
+    "summary": "1. EnvScaler는 다양한 환경 뼈대를 구축하고 여러 작업 시나리오를 생성하여 LLM이 복잡한 환경에서 작업을 수행하는 능력을 크게 향상시킵니다.\n2. SkelBuilder는 주제 마이닝, 논리 모델링 및 품질 평가를 통해 다양한 환경 뼈대를 구축합니다.\n3. ScenGenerator는 각 환경에 대해 여러 작업 시나리오와 규칙 기반의 궤적 유효성 검사 함수를 생성합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "X-Coder: Advancing Competitive Programming with Fully Synthetic Tasks, Solutions, and Tests",
+    "abstract": "Competitive programming presents great challenges for Code LLMs due to its intensive reasoning demands and high logical complexity. However, current Code LLMs still rely heavily on real-world data, which limits their scalability. In this paper, we explore a fully synthetic approach: training Code LLMs with entirely generated tasks, solutions, and test cases, to empower code reasoning models without relying on real-world data. To support this, we leverage feature-based synthesis to propose a novel data synthesis pipeline called SynthSmith. SynthSmith shows strong potential in producing diverse and challenging tasks, along with verified solutions and tests, supporting both supervised fine-tuning and reinforcement learning. Based on the proposed synthetic SFT and RL datasets, we introduce the X-Coder model series, which achieves a notable pass rate of 62.9 avg@8 on LiveCodeBench v5 and 55.8 on v6, outperforming DeepCoder-14B-Preview and AReal-boba2-14B despite having only 7B parameters. In-depth analysis reveals that scaling laws hold on our synthetic dataset, and we explore which dimensions are more effective to scale. We further provide insights into code-centric reinforcement learning and highlight the key factors that shape performance through detailed ablations and analysis. Our findings demonstrate that scaling high-quality synthetic data and adopting staged training can greatly advance code reasoning, while mitigating reliance on real-world coding data.",
+    "authors": [
+      "Jie Wu",
+      "Haoling Li",
+      "Xin Zhang",
+      "Jiani Guo",
+      "Jane Luo",
+      "Steven Liu",
+      "Yangyu Huang",
+      "Ruihang Chu",
+      "Scarlett Li",
+      "Yujiu Yang"
+    ],
+    "likes": 30,
+    "published_date": "Jan 11",
+    "url": "https://huggingface.co/papers/2601.06953",
+    "date_collected": "2026-01-14T07:08:55.898881+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "경쟁 프로그래밍 발전을 위한 X-Coder: 완전히 합성된 과제, 솔루션 및 테스트",
+      "abstract": "경쟁 프로그래밍은 고도의 추론 요구와 높은 논리 복잡성으로 Code LLMs에게 큰 도전을 제공합니다. 그러나 현재의 Code LLMs는 여전히 현실 세계 데이터에 크게 의존하고 있어 확장성이 제한됩니다. 본 논문에서는 완전히 합성된 방식을 탐색하여 코드 이해 모델을 현실 세계 데이터에 의존하지 않고 강화하기 위해 완전히 생성된 과제, 솔루션 및 테스트로 Code LLMs를 훈련시키는 방법에 대해 연구합니다. 이를 위해 SynthSmith라는 새로운 데이터 합성 파이프라인을 제안하기 위해 기능 기반 합성을 활용합니다. SynthSmith는 확증된 솔루션 및 테스트를 포함하는 다양하고 도전적인 과제를 생성하는 데 강력한 잠재력을 보여주며 지도형 미세 조정 및 강화 학습을 모두 지원합니다. 제안된 합성 SFT와 RL 데이터 세트를 기반으로 X-Coder 모델 시리즈를 소개하며, LiveCodeBench v5에서 62.9 avg@8의 주목할만한 통과율과 v6에서 55.8의 성과를 달성하여 7B 파라미터만 가지고 있음에도 DeepCoder-14B-Preview와 AReal-boba2-14B를 능가합니다. 실증 분석에서는 우리의 합성 데이터셋에서 스케일링 법칙이 성립하며 어떤 차원이 보다 효과적인지 탐구합니다. 또한 코드 중심 강화 학습에 대한 통찰력을 제공하고 세부적인 제거 및 분석을 통해 성능을 결정하는 주요 요인을 강조합니다. 우리의 연구 결과는 고품질 합성 데이터의 확장 및 단계별 훈련 채택이 실제 코딩 데이터에 대한 의존을 줄이면서 코드 이해를 크게 발전시키는 데 중요하다는 것을 보여줍니다."
+    },
+    "summary": "1. 경쟁 프로그래밍의 도전을 극복하기 위해 완전히 합성된 과제, 솔루션 및 테스트로 Code LLMs를 훈련시키는 방법을 연구합니다.\n2. SynthSmith를 활용한 새로운 데이터 합성 파이프라인은 다양하고 도전적인 과제를 생성하며, 지도형 미세 조정과 강화 학습을 지원합니다.\n3. X-Coder 모델 시리즈는 실제 경쟁 환경에서 7B 파라미터만으로 기존 모델들을 능가하는 결과를 보여주며, 합성 데이터에 대한 스케일링 법칙을 분석하고 강화 학습의 성능 결정 요인을 밝힙니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

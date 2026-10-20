@@ -1,0 +1,271 @@
+[
+  {
+    "title": "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning\n  Attention",
+    "abstract": "We introduce MiniMax-M1, the world's first open-weight, large-scale\nhybrid-attention reasoning model. MiniMax-M1 is powered by a hybrid\nMixture-of-Experts (MoE) architecture combined with a lightning attention\nmechanism. The model is developed based on our previous MiniMax-Text-01 model,\nwhich contains a total of 456 billion parameters with 45.9 billion parameters\nactivated per token. The M1 model natively supports a context length of 1\nmillion tokens, 8x the context size of DeepSeek R1. Furthermore, the lightning\nattention mechanism in MiniMax-M1 enables efficient scaling of test-time\ncompute. These properties make M1 particularly suitable for complex tasks that\nrequire processing long inputs and thinking extensively. MiniMax-M1 is trained\nusing large-scale reinforcement learning (RL) on diverse problems including\nsandbox-based, real-world software engineering environments. In addition to\nM1's inherent efficiency advantage for RL training, we propose CISPO, a novel\nRL algorithm to further enhance RL efficiency. CISPO clips importance sampling\nweights rather than token updates, outperforming other competitive RL variants.\nCombining hybrid-attention and CISPO enables MiniMax-M1's full RL training on\n512 H800 GPUs to complete in only three weeks, with a rental cost of just\n$534,700. We release two versions of MiniMax-M1 models with 40K and 80K\nthinking budgets respectively, where the 40K model represents an intermediate\nphase of the 80K training. Experiments on standard benchmarks show that our\nmodels are comparable or superior to strong open-weight models such as the\noriginal DeepSeek-R1 and Qwen3-235B, with particular strengths in complex\nsoftware engineering, tool utilization, and long-context tasks. We publicly\nrelease MiniMax-M1 at https://github.com/MiniMax-AI/MiniMax-M1.",
+    "authors": [
+      "MiniMax",
+      "Aili Chen",
+      "Aonian Li",
+      "Bangwei Gong",
+      "Binyang Jiang",
+      "Bo Fei",
+      "Bo Yang",
+      "Boji Shan",
+      "Changqing Yu",
+      "Chao Wang",
+      "Cheng Zhu",
+      "Chengjun Xiao",
+      "Chengyu Du",
+      "Chi Zhang",
+      "Chu Qiao",
+      "Chunhao Zhang",
+      "Chunhui Du",
+      "Congchao Guo",
+      "Da Chen",
+      "Deming Ding",
+      "Dianjun Sun",
+      "Dong Li"
+    ],
+    "likes": 116,
+    "published_date": "Jun 16",
+    "url": "https://huggingface.co/papers/2506.13585",
+    "date_collected": "2025-06-17T13:50:41.823750+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "라이트닝 어텐션으로 효율적인 테스트 시간 연산 확장하는 MiniMax-M1",
+      "abstract": "우리는 세계 최초의 오픈 가중치 대규모 하이브리드 어텐션 추론 모델 MiniMax-M1을 소개합니다. MiniMax-M1은 라이트닝 어텐션 메커니즘과 결합된 하이브리드 전문가 집합(MoE) 아키텍처로 구동됩니다. M1 모델은 이전 MiniMax-Text-01 모델을 기반으로 개발되었으며 총 4560억 개의 매개변수를 보유하며 토큰 당 459억 개의 매개변수가 활성화됩니다. 또한, MiniMax-M1의 라이트닝 어텐션 메커니즘은 테스트 시간 연산의 효율적인 확장을 가능케 합니다. 이러한 특징으로 M1은 긴 입력 처리와 광범위한 사고가 필요한 복잡한 작업에 특히 적합합니다. MiniMax-M1은 대규모 RL(강화 학습)을 다양한 문제에 대해 스케일링하여 훈련했습니다."
+    },
+    "summary": "1. MiniMax-M1은 하이브리드 어텐션과 CISPO를 결합하여 대규모 강화 학습을 빠르게 수행하며, 긴 입력 처리와 깊은 사고를 필요로 하는 복잡한 작업에 적합합니다.\n2. CISPO는 다른 강화 학습 변형을 능가하며, MiniMax-M1의 훈련을 효율적으로 완료합니다. 단 3주 동안 512개의 H800 GPU에서 534,700달러의 비용으로 훈련이 가능합니다.\n3. MiniMax-M1은 DeepSeek-R1 및 Qwen3-235B와 비교하여 복잡한 소프트웨어 엔지니어링, 도구 활용 및 긴 컨텍스트 작업에서 우수한 성능을 보이며, 표준 벤치마크 실험에서 강력한 오픈 가중치 모델과 유사하거나 우수함을 입증합니다."
+  },
+  {
+    "title": "Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback",
+    "abstract": "Recent studies have shown LLMs possess some ability to improve their\nresponses when given external feedback. However, it remains unclear how\neffectively and thoroughly these models can incorporate extrinsic feedback. In\nan ideal scenario, if LLMs receive near-perfect and complete feedback, we would\nexpect them to fully integrate the feedback and change their incorrect answers\nto correct ones. In this paper, we systematically investigate LLMs' ability to\nincorporate feedback by designing a controlled experimental environment. For\neach problem, a solver model attempts a solution, then a feedback generator\nwith access to near-complete ground-truth answers produces targeted feedback,\nafter which the solver tries again. We evaluate this pipeline across a diverse\nrange of tasks, including math reasoning, knowledge reasoning, scientific\nreasoning, and general multi-domain evaluations with state-of-the-art language\nmodels including Claude 3.7 (with and without extended thinking). Surprisingly,\neven under these near-ideal conditions, solver models consistently show\nresistance to feedback, a limitation that we term FEEDBACK FRICTION. To\nmitigate this limitation, we experiment with sampling-based strategies like\nprogressive temperature increases and explicit rejection of previously\nattempted incorrect answers, which yield improvements but still fail to help\nmodels achieve target performance. We also perform a rigorous exploration of\npotential causes of FEEDBACK FRICTION, ruling out factors such as model\noverconfidence and data familiarity. We hope that highlighting this issue in\nLLMs and ruling out several apparent causes will help future research in\nself-improvement.",
+    "authors": [
+      "Dongwei Jiang",
+      "Alvin Zhang",
+      "Andrew Wang",
+      "Nicholas Andrews",
+      "Daniel Khashabi"
+    ],
+    "likes": 39,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11930",
+    "date_collected": "2025-06-17T13:50:42.535886+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "피드백 마찰: LLMs가 외부 피드백을 완전히 흡수하는 데 어려움을 겪다",
+      "abstract": "최근 연구에서 LLMs는 외부 피드백을 받을 때 답변을 개선하는 능력을 가지고 있음이 밝혀졌다. 그러나 이러한 모델이 외부 피드백을 효과적으로 어떻게 완전하게 흡수할 수 있는지는 여전히 불분명하다. 본 논문에서는 LLMs가 피드백을 흡수하는 능력을 체계적으로 조사하고자 하며, 이를 위해 실험적 환경을 설계한다."
+    },
+    "summary": "1. 최근 연구에 따르면 LLMs는 외부 피드백을 통해 자신의 답변을 개선할 수 있지만, '피드백 마찰'이라는 제약으로 완전한 개선이 어렵다.\n2. 실험 결과, LLMs가 외부 피드백을 받아도 잘못된 답을 올바른 것으로 바꾸는 데 저항을 보이며, 이를 해소하기 위한 다양한 전략이 실패하는 것으로 나타났다.\n3. 연구는 LLMs의 피드백 처리 능력의 문제를 명확히 하고, 모델의 성능 향상을 위한 향후 연구에 도움이 될 것으로 기대된다."
+  },
+  {
+    "title": "Effective Red-Teaming of Policy-Adherent Agents",
+    "abstract": "Task-oriented LLM-based agents are increasingly used in domains with strict\npolicies, such as refund eligibility or cancellation rules. The challenge lies\nin ensuring that the agent consistently adheres to these rules and policies,\nappropriately refusing any request that would violate them, while still\nmaintaining a helpful and natural interaction. This calls for the development\nof tailored design and evaluation methodologies to ensure agent resilience\nagainst malicious user behavior. We propose a novel threat model that focuses\non adversarial users aiming to exploit policy-adherent agents for personal\nbenefit. To address this, we present CRAFT, a multi-agent red-teaming system\nthat leverages policy-aware persuasive strategies to undermine a\npolicy-adherent agent in a customer-service scenario, outperforming\nconventional jailbreak methods such as DAN prompts, emotional manipulation, and\ncoercive. Building upon the existing tau-bench benchmark, we introduce\ntau-break, a complementary benchmark designed to rigorously assess the agent's\nrobustness against manipulative user behavior. Finally, we evaluate several\nstraightforward yet effective defense strategies. While these measures provide\nsome protection, they fall short, highlighting the need for stronger,\nresearch-driven safeguards to protect policy-adherent agents from adversarial\nattacks",
+    "authors": [
+      "Itay Nakash",
+      "George Kour",
+      "Koren Lazar",
+      "Matan Vetzler",
+      "Guy Uziel",
+      "Ateret Anaby-Tavor"
+    ],
+    "likes": 33,
+    "published_date": "Jun 11",
+    "url": "https://huggingface.co/papers/2506.09600",
+    "date_collected": "2025-06-17T13:50:52.959114+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "정책 따르는 에이전트들의 효과적인 레드팀 구성",
+      "abstract": "엄격한 정책이 적용되는 환불 자격 또는 취소 규칙과 같은 도메인에서 과업 중심의 LLM 기반 에이전트들이 점점 더 많이 사용되고 있습니다. 도전 과제는 이러한 규칙과 정책을 일관되게 준수하고, 그러한 정책을 위반할 요청을 거부하면서도 도움이 되고 자연스러운 상호작용을 유지하는 것에 있습니다. 이는 악의적 사용자 행위에 대비하여 에이전트의 탄력성을 보장하기 위해 맞춤형 설계 및 평가 방법론의 개발을 요구합니다. 우리는 정책 따르는 에이전트를 개인적 이익을 위해 악용하려는 적대적 사용자에 초점을 맞춘 새로운 위협 모델을 제안합니다. 이에 대응하여 우리는 고객 서비스 시나리오에서 정책을 인식하는 설득 전략을 활용하는 CRAFT를 제시합니다. 이는 DAN 프롬프트, 감정 조작 및 강제력과 같은 전통적인 탈옥 방법을 능가합니다. 기존 tau-bench 벤치마크를 기반으로 하여, 조작적 사용자 행위에 대한 에이전트의 견고성을 철저하게 평가하기 위하여 tau-break라는 보완적인 벤치마크를 소개합니다. 마지막으로, 여러 간단하면서도 효과적인 방어 전략을 평가합니다. 이러한 조치들은 일부 보호를 제공하지만 부족하며, 정책 따르는 에이전트를 적대적 공격으로부터 보호하기 위해 더 강력한 연구 기반 보안장치의 필요성을 강조합니다."
+    },
+    "summary": "1. 정책을 준수하고 도움적인 상호작용을 유지하는 과제에 효과적으로 대처하기 위한 CRAFT 제안\n2. 악의적 사용자들이 정책 따르는 에이전트를 악용하는 위협 모델 도입\n3. Manipulative 사용자 행위에 대한 에이전트의 견고성을 평가하기 위한 tau-break 벤치마크 도입 및 강력한 방어 전략 필요성 강조"
+  },
+  {
+    "title": "Aligned Novel View Image and Geometry Synthesis via Cross-modal\n  Attention Instillation",
+    "abstract": "We introduce a diffusion-based framework that performs aligned novel view\nimage and geometry generation via a warping-and-inpainting methodology. Unlike\nprior methods that require dense posed images or pose-embedded generative\nmodels limited to in-domain views, our method leverages off-the-shelf geometry\npredictors to predict partial geometries viewed from reference images, and\nformulates novel-view synthesis as an inpainting task for both image and\ngeometry. To ensure accurate alignment between generated images and geometry,\nwe propose cross-modal attention distillation, where attention maps from the\nimage diffusion branch are injected into a parallel geometry diffusion branch\nduring both training and inference. This multi-task approach achieves\nsynergistic effects, facilitating geometrically robust image synthesis as well\nas well-defined geometry prediction. We further introduce proximity-based mesh\nconditioning to integrate depth and normal cues, interpolating between point\ncloud and filtering erroneously predicted geometry from influencing the\ngeneration process. Empirically, our method achieves high-fidelity\nextrapolative view synthesis on both image and geometry across a range of\nunseen scenes, delivers competitive reconstruction quality under interpolation\nsettings, and produces geometrically aligned colored point clouds for\ncomprehensive 3D completion. Project page is available at\nhttps://cvlab-kaist.github.io/MoAI.",
+    "authors": [
+      "Min-Seop Kwak",
+      "Junho Kim",
+      "Sangdoo Yun",
+      "Dongyoon Han",
+      "Taekyoung Kim",
+      "Seungryong Kim",
+      "Jin-Hwa Kim"
+    ],
+    "likes": 29,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11924",
+    "date_collected": "2025-06-17T13:50:52.966640+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "교차 모달 주의 주입을 통한 정렬된 신규 뷰 이미지 및 기하학 합성",
+      "abstract": "우리는 왜곡 및 보충 방법론을 통해 정렬된 신규 뷰 이미지 및 기하학 생성을 수행하는 확산 기반 프레임워크를 소개합니다. 기존 방법과 달리 밀도 있는 포즈 이미지나 도메인 내 뷰에 한정된 포즈 임베디드 생성 모델이 필요한 대신, 우리의 방법은 오프더셀프 기하학 예측기를 활용하여 참조 이미지에서 본 부분 기하학을 예측하고 이미지와 기하학 모두를 보충 작업으로 새로운 뷰 합성을 공식화합니다. 생성된 이미지 및 기하학 간 정확한 정렬을 보장하기 위해 우리는 교차 모달 주의 주입을 제안합니다. 여기서 이미지 확산 분기의 주의 맵이 훈련 및 추론 중에 병렬 기하확산 분기로 주입됩니다. 이 다중 작업 접근 방식은 기하적으로 견고한 이미지 합성과 명확하게 정의된 기하학 예측을 가능하게 하며, 깊이 및 법선 정보를 통합한 근접 기반의 메쉬 조건부를 소개합니다."
+    },
+    "summary": "1. 새로운 뷰 이미지 및 기하학을 생성하기 위해 왜곡 및 보충 방법론을 사용하는 확산 기반 프레임워크를 도입하였다.\n2. 교차 모달 주의 주입을 통해 이미지와 기하학 간 정렬을 보장하며, 다중 작업 접근 방식을 사용하여 기하적으로 견고한 이미지 합성과 명확하게 정의된 기하학 예측을 달성하였다.\n3. 경험적으로, 우리의 방법은 다양한 보지에서 높은 충실도의 추론적 뷰 합성을 이끌어내고, 보간 설정에서 경쟁력 있는 재구성 품질을 제공하며, 3D 완성을 위해 기하학적으로 정렬된 컬러 포인트 클라우드를 생성한다."
+  },
+  {
+    "title": "The Diffusion Duality",
+    "abstract": "Uniform-state discrete diffusion models hold the promise of fast text\ngeneration due to their inherent ability to self-correct. However, they are\ntypically outperformed by autoregressive models and masked diffusion models. In\nthis work, we narrow this performance gap by leveraging a key insight:\nUniform-state diffusion processes naturally emerge from an underlying Gaussian\ndiffusion. Our method, Duo, transfers powerful techniques from Gaussian\ndiffusion to improve both training and sampling. First, we introduce a\ncurriculum learning strategy guided by the Gaussian process, doubling training\nspeed by reducing variance. Models trained with curriculum learning surpass\nautoregressive models in zero-shot perplexity on 3 of 7 benchmarks. Second, we\npresent Discrete Consistency Distillation, which adapts consistency\ndistillation from the continuous to the discrete setting. This algorithm\nunlocks few-step generation in diffusion language models by accelerating\nsampling by two orders of magnitude. We provide the code and model checkpoints\non the project page: http://s-sahoo.github.io/duo",
+    "authors": [
+      "Subham Sekhar Sahoo",
+      "Justin Deschenaux",
+      "Aaron Gokaslan",
+      "Guanghan Wang",
+      "Justin Chiu",
+      "Volodymyr Kuleshov"
+    ],
+    "likes": 28,
+    "published_date": "Jun 12",
+    "url": "https://huggingface.co/papers/2506.10892",
+    "date_collected": "2025-06-17T13:50:52.973576+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "확산 이중성",
+      "abstract": "균일 상태 이산 확산 모델은 자가 수정 능력으로 빠른 텍스트 생성을 약속하지만, 자동 회귀 모델과 가려진(diffusion) 모델에 밀려 성능면에서 획일하다. 본 연구에서는 핵심 통찰을 활용하여 이러한 성능 차이를 줄입니다. 균일 상태 확산 과정은 근본적으로 기저 가우시안 확산에서 자연스럽게 나타났습니다. 우리의 방법인 Duo는 가우시안 확산에서 강력한 기술을 전이하여 훈련 및 샘플링을 모두 개선했습니다. 먼저, 가우시안 프로세스에 따라 지도된 커리큘럼 학습 전략을 소개하여 분산을 줄여 훈련 속도를 두 배로 높였습니다. 이 방법으로 훈련된 모델은 7개 벤치마크 중 3개에서 영제로 퍼플렉서티(perplexity)에서 자동 회귀 모델을 능가했습니다. 그리고 둘째로, 우리는 이산적인 일관성 증류를 제시하여 연속적에서 이산적으로 일관성 증류를 적용했습니다. 이 알고리즘은 샘플링을 두 단계 가속화시켜 확산 언어 모델에서 소수 단계 생성을 해금했습니다. 프로젝트 페이지에서 코드 및 모델 체크포인트를 제공합니다: http://s-sahoo.github.io/duo"
+    },
+    "summary": "1. 커리큘럼 학습 전략을 활용하여 훈련 속도를 높임으로써 자동 회귀 모델을 퍼플렉서티에서 능가했습니다.\n2. 이산적인 일관성 증류를 통해 확산 언어 모델에서 소수 단계 생성을 가능하게 하여 샘플링 속도를 상당히 향상시켰습니다.\n3. 가우시안 확산 기술을 활용하여 모델의 훈련 및 샘플링을 개선하여 성능 차이를 줄였습니다."
+  },
+  {
+    "title": "ViCrit: A Verifiable Reinforcement Learning Proxy Task for Visual\n  Perception in VLMs",
+    "abstract": "Reinforcement learning (RL) has shown great effectiveness for fine-tuning\nlarge language models (LLMs) using tasks that are challenging yet easily\nverifiable, such as math reasoning or code generation. However, extending this\nsuccess to visual perception in vision-language models (VLMs) has been impeded\nby the scarcity of vision-centric tasks that are simultaneously challenging and\nunambiguously verifiable. To this end, we introduce ViCrit (Visual Caption\nHallucination Critic), an RL proxy task that trains VLMs to localize a subtle,\nsynthetic visual hallucination injected into paragraphs of human-written image\ncaptions. Starting from a 200-word captions, we inject a single, subtle visual\ndescription error-altering a few words on objects, attributes, counts, or\nspatial relations-and task the model to pinpoint the corrupted span given the\nimage and the modified caption. This formulation preserves the full perceptual\ndifficulty while providing a binary, exact-match reward that is easy to compute\nand unambiguous. Models trained with the ViCrit Task exhibit substantial gains\nacross a variety of VL benchmarks. Crucially, the improvements transfer beyond\nnatural-image training data to abstract image reasoning and visual math,\nshowing promises of learning to perceive rather than barely memorizing seen\nobjects. To facilitate evaluation, we further introduce ViCrit-Bench, a\ncategory-balanced diagnostic benchmark that systematically probes perception\nerrors across diverse image domains and error types. Together, our results\ndemonstrate that fine-grained hallucination criticism is an effective and\ngeneralizable objective for enhancing visual perception in VLMs.",
+    "authors": [
+      "Xiyao Wang",
+      "Zhengyuan Yang",
+      "Chao Feng",
+      "Yongyuan Liang",
+      "Yuhang Zhou",
+      "Xiaoyu Liu",
+      "Ziyi Zang",
+      "Ming Li",
+      "Chung-Ching Lin",
+      "Kevin Lin",
+      "Linjie Li",
+      "Furong Huang",
+      "Lijuan Wang"
+    ],
+    "likes": 16,
+    "published_date": "Jun 11",
+    "url": "https://huggingface.co/papers/2506.10128",
+    "date_collected": "2025-06-17T13:50:52.982547+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "ViCrit: 시각 언어 모델에서 시각 지각을 위한 검증 가능한 강화학습 프록시 작업",
+      "abstract": "강화학습(RL)은 수학적 추론이나 코드 생성과 같이 도전적이면서도 쉽게 검증 가능한 작업을 사용하여 대규모 언어 모델(LLMs)을 세부 조정하는 데 효과적임이 입증되었습니다. 그러나 시각-언어 모델(VLMs)에서 시각 지각으로 이러한 성공을 확장하는 것은 동시에 도전적이면서도 명확하게 검증 가능한 시각 중심 작업의 부족으로 인해 방해되었습니다. 이를 해결하기 위해 저희는 ViCrit(시각 캡션 환각 비평가)를 소개합니다. 이 프록시 작업은 사람이 쓴 이미지 캡션의 단락에 주입된 미묘한 합성적 시각 환각을 로컬라이즈하는 데 VLMs를 훈련합니다."
+    },
+    "summary": "1. ViCrit는 시각 지각을 향상시키기 위한 강화 학습 프록시 작업으로, 모델을 특정 시각적 기술적 오류를 찾도록 유도합니다.\n2. 시각 중심 작업의 부족을 극복하기 위해 도입된 ViCrit Task는 다양한 VL 벤치마크에서 상당한 성과를 보여주며, 시각적 수학 및 추상 이미지 추론으로의 성과 전이를 보입니다.\n3. ViCrit-Bench는 다양한 이미지 도메인과 오류 유형에서 지각 오류를 체계적으로 조사하는 카테고리 균형 맞춤 진단적 벤치마크로, 시각 지각을 향상시키는 유효하고 일반화 가능한 목표로 입증됩니다."
+  },
+  {
+    "title": "Scientists' First Exam: Probing Cognitive Abilities of MLLM via\n  Perception, Understanding, and Reasoning",
+    "abstract": "Scientific discoveries increasingly rely on complex multimodal reasoning\nbased on information-intensive scientific data and domain-specific expertise.\nEmpowered by expert-level scientific benchmarks, scientific Multimodal Large\nLanguage Models (MLLMs) hold the potential to significantly enhance this\ndiscovery process in realistic workflows. However, current scientific\nbenchmarks mostly focus on evaluating the knowledge understanding capabilities\nof MLLMs, leading to an inadequate assessment of their perception and reasoning\nabilities. To address this gap, we present the Scientists' First Exam (SFE)\nbenchmark, designed to evaluate the scientific cognitive capacities of MLLMs\nthrough three interconnected levels: scientific signal perception, scientific\nattribute understanding, scientific comparative reasoning. Specifically, SFE\ncomprises 830 expert-verified VQA pairs across three question types, spanning\n66 multimodal tasks across five high-value disciplines. Extensive experiments\nreveal that current state-of-the-art GPT-o3 and InternVL-3 achieve only 34.08%\nand 26.52% on SFE, highlighting significant room for MLLMs to improve in\nscientific realms. We hope the insights obtained in SFE will facilitate further\ndevelopments in AI-enhanced scientific discoveries.",
+    "authors": [
+      "Yuhao Zhou",
+      "Yiheng Wang",
+      "Xuming He",
+      "Ruoyao Xiao",
+      "Zhiwei Li",
+      "Qiantai Feng",
+      "Zijie Guo",
+      "Yuejin Yang",
+      "Hao Wu",
+      "Wenxuan Huang",
+      "Jiaqi Wei",
+      "Dan Si",
+      "Xiuqi Yao",
+      "Jia Bu",
+      "Haiwen Huang",
+      "Tianfan Fu",
+      "Shixiang Tang",
+      "Ben Fei",
+      "Dongzhan Zhou",
+      "Fenghua Ling",
+      "Yan Lu",
+      "Siqi Sun"
+    ],
+    "likes": 14,
+    "published_date": "Jun 12",
+    "url": "https://huggingface.co/papers/2506.10521",
+    "date_collected": "2025-06-17T13:50:52.993843+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "과학자들의 첫 번째 시험: 지각, 이해, 추론을 통해 MLLM의 인지 능력 탐구",
+      "abstract": "과학적 발견은 점점 복잡한 다중모달 추론에 의존하며 정보밀도가 높은 과학적 데이터와 도메인 특화 전문성에 기반합니다. 고수준 과학적 기준을 활용한 과학적 다중모달 대형 언어 모델(MLLM)은 현실적인 작업흐름에서 이 발견 프로세스를 크게 향상시킬 수 있는 잠재력을 갖고 있습니다. 그러나 현재의 과학적 기준은 주로 MLLM의 지식 이해 능력을 평가하고 있어 지각 및 추론 능력에 대한 부적절한 평가로 이어집니다. 이것을 해결하기 위해, 우리는 과학자들의 첫 번째 시험(SFE) 기준을 제시합니다. 이 기준은 MLLM의 과학적 인지 능력을 과학적 신호 지각, 과학적 속성 이해, 과학적 비교 추론 세 가지 수준을 통해 평가하도록 설계되었습니다."
+    },
+    "summary": "1. MLLM의 지각, 이해, 추론 능력을 평가하는 Scientists' First Exam(SFE) 기준이 소개됨.\n2. SFE에는 830개의 전문가 확인 VQA 쌍이 포함되어 있으며, 현재 최첨단인 GPT-o3 및 InternVL-3은 SFE에서 각각 34.08% 및 26.52%의 성능을 보임.\n3. SFE에서 얻은 통찰이 AI로 강화된 과학적 발견 분야의 추가 발전을 촉진할 것으로 기대됨."
+  },
+  {
+    "title": "Discrete Diffusion in Large Language and Multimodal Models: A Survey",
+    "abstract": "In this work, we provide a systematic survey of Discrete Diffusion Language\nModels (dLLMs) and Discrete Diffusion Multimodal Language Models (dMLLMs).\nUnlike autoregressive (AR) models, dLLMs and dMLLMs adopt a multi-token,\nparallel decoding paradigm using full attention and a denoising-based\ngeneration strategy. This paradigm naturally enables parallel generation,\nfine-grained output controllability, and dynamic, response-aware perception.\nThese capabilities are previously difficult to achieve with AR models.\nRecently, a growing number of industrial-scale proprietary d(M)LLMs, as well as\na large number of open-source academic d(M)LLMs, have demonstrated performance\ncomparable to their autoregressive counterparts, while achieving up to 10x\nacceleration in inference speed.\n  The advancement of discrete diffusion LLMs and MLLMs has been largely driven\nby progress in two domains. The first is the development of autoregressive LLMs\nand MLLMs, which has accumulated vast amounts of data, benchmarks, and\nfoundational infrastructure for training and inference. The second contributing\ndomain is the evolution of the mathematical models underlying discrete\ndiffusion. Together, these advancements have catalyzed a surge in dLLMs and\ndMLLMs research in early 2025.\n  In this work, we present a comprehensive overview of the research in the dLLM\nand dMLLM domains. We trace the historical development of dLLMs and dMLLMs,\nformalize the underlying mathematical frameworks, and categorize representative\nmodels. We further analyze key techniques for training and inference, and\nsummarize emerging applications across language, vision-language, and\nbiological domains. We conclude by discussing future directions for research\nand deployment.\n  Paper collection: https://github.com/LiQiiiii/DLLM-Survey",
+    "authors": [
+      "Runpeng Yu",
+      "Qi Li",
+      "Xinchao Wang"
+    ],
+    "likes": 12,
+    "published_date": "Jun 16",
+    "url": "https://huggingface.co/papers/2506.13759",
+    "date_collected": "2025-06-17T13:50:53.000132+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "대규모 언어 및 멀티모달 모델에서의 이산 확산: 조사",
+      "abstract": "본 논문에서는 이산 확산 언어 모델 (Discrete Diffusion Language Models, dLLMs) 및 이산 확산 멀티모달 언어 모델 (Discrete Diffusion Multimodal Language Models, dMLLMs)에 대한 체계적인 조사를 제공합니다. 이 두 모델은 자기 회귀 모델과는 달리 멀티 토큰, 병렬 디코딩 패러다임을 채택하며 전체 주의(attention) 및 소음 제거 기반 생성 전략을 사용합니다. 이 기법은 병렬 생성, 미세한 출력 가능성 제어 및 동적응답 인식을 자연스럽게 가능케 하였습니다."
+    },
+    "summary": "1. 이산 확산 언어 모델 (dLLMs)과 멀티모달 언어 모델 (dMLLMs)은 자기 회귀 모델과는 달리 병렬 디코딩을 통해 빠르고 정교한 출력 조절이 가능하며 동적 응답 인식을 제공하며 추론 속도를 최대 10배까지 향상시킬 수 있음.\n2. 연구의 발전은 자가 회귀형 LLMs 및 MLLMs의 발전이 쌓아 올린 방대한 양의 데이터, 평가 및 훈련 기반을 통해 이루어지며, 이산 확산의 수학적 모델 발전도 이에 기여함.\n3. 본 연구는 dLLM 및 dMLLM 영역의 연구와 함께 해당 분야의 변화를 역사적으로 살펴보고 수학적 프레임워크를 형식화하며 대표적인 모델을 분류함. 훈련과 추론을 위한 주요 기법을 분석하며 언어, 시각-언어 및 생물학 영역에서의 신흥 응용 프로그램을 요약함."
+  },
+  {
+    "title": "Wait, We Don't Need to \"Wait\"! Removing Thinking Tokens Improves\n  Reasoning Efficiency",
+    "abstract": "Recent advances in large reasoning models have enabled complex, step-by-step\nreasoning but often introduce significant overthinking, resulting in verbose\nand redundant outputs that hinder efficiency. In this study, we examine whether\nexplicit self-reflection, signaled by tokens such as \"Wait\" and \"Hmm\", is\nnecessary for advanced reasoning. We propose NoWait, a simple yet effective\napproach that disables explicit self-reflection by suppressing these tokens\nduring inference. Extensive experiments on ten benchmarks across textual,\nvisual, and video reasoning tasks show that NoWait reduces chain-of-thought\ntrajectory length by up to 27%-51% in five R1-style model series, without\ncompromising model utility. NoWait thus offers a plug-and-play solution for\nefficient and utility-preserving multimodal reasoning.",
+    "authors": [
+      "Chenlong Wang",
+      "Yuanning Feng",
+      "Dongping Chen",
+      "Zhaoyang Chu",
+      "Ranjay Krishna",
+      "Tianyi Zhou"
+    ],
+    "likes": 12,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2506.08343",
+    "date_collected": "2025-06-17T13:50:53.007394+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "기다릴 필요 없어요! 사고 토큰 제거가 추론 효율성 향상",
+      "abstract": "최근 대규모 추론 모델의 발전은 복잡한 단계별 추론을 가능케 했지만 종종 지나치게 과유불급한 것으로, 효율성을 해치는 장황하고 중복된 결과를 가져옵니다. 본 연구에서는 \"기다려\"나 \"음...\"과 같은 토큰에 의한 명시적 자기반성이 고급 추론에 필요한지 검토합니다. 저희는 NoWait이라는 명시적 자기반성을 차단하고 추론 과정에서 이러한 토큰을 억제하는 간단하면서도 효과적인 방법을 제안합니다. 텍스트, 시각, 비디오 추론 과업을 포함한 열 가지 벤치마크에서의 방대한 실험 결과는 NoWait이 R1-스타일 모델 시리즈 다섯 개에서 사고의 흔적 궤적 길이를 최대 27%-51% 감소시키는 것을 보여주었으며, 모델의 유틸리티에 손상을 주지 않습니다. NoWait은 효율적이고 유틸리티를 보존하는 다중모달 추론을 위한 플러그 앤 플레이 솔루션을 제공합니다."
+    },
+    "summary": "1. 복잡한 추론 모델의 장점을 유지하면서 효율성을 높이기 위해 명시적 자기반성을 제거하는 NoWait 방법을 소개하고 실험 결과로 효과를 입증했습니다.\n2. NoWait은 텍스트, 시각, 비디오 추론과제에서 사용된 벤치마크에서 사고의 흔적 궤적 길이를 27%-51%까지 줄이는 효과를 보여주었습니다.\n3. 이 연구는 NoWait이 모델의 성능을 희생하지 않으면서도 효율적이고 유용한 다중모달 추론을 가능하게 하는 플러그 앤 플레이 솔루션이라는 결론을 얻었습니다."
+  },
+  {
+    "title": "LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive\n  Programming?",
+    "abstract": "Recent reports claim that large language models (LLMs) now outperform elite\nhumans in competitive programming. Drawing on knowledge from a group of\nmedalists in international algorithmic contests, we revisit this claim,\nexamining how LLMs differ from human experts and where limitations still\nremain. We introduce LiveCodeBench Pro, a benchmark composed of problems from\nCodeforces, ICPC, and IOI that are continuously updated to reduce the\nlikelihood of data contamination. A team of Olympiad medalists annotates every\nproblem for algorithmic categories and conducts a line-by-line analysis of\nfailed model-generated submissions. Using this new data and benchmark, we find\nthat frontier models still have significant limitations: without external\ntools, the best model achieves only 53% pass@1 on medium-difficulty problems\nand 0% on hard problems, domains where expert humans still excel. We also find\nthat LLMs succeed at implementation-heavy problems but struggle with nuanced\nalgorithmic reasoning and complex case analysis, often generating confidently\nincorrect justifications. High performance appears largely driven by\nimplementation precision and tool augmentation, not superior reasoning.\nLiveCodeBench Pro thus highlights the significant gap to human grandmaster\nlevels, while offering fine-grained diagnostics to steer future improvements in\ncode-centric LLM reasoning.",
+    "authors": [
+      "Zihan Zheng",
+      "Zerui Cheng",
+      "Zeyu Shen",
+      "Shang Zhou",
+      "Kaiyuan Liu",
+      "Hansen He",
+      "Dongruixuan Li",
+      "Stanley Wei",
+      "Hangyi Hao",
+      "Jianzhu Yao",
+      "Peiyao Sheng",
+      "Zixuan Wang",
+      "Wenhao Chai",
+      "Aleksandra Korolova",
+      "Peter Henderson",
+      "Sanjeev Arora",
+      "Pramod Viswanath",
+      "Jingbo Shang",
+      "Saining Xie"
+    ],
+    "likes": 11,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11928",
+    "date_collected": "2025-06-17T13:50:53.017396+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "LiveCodeBench Pro: 올림피아드 메달리스트들은 경쟁 프로그래밍에서 LLMs를 어떻게 판단하는가?",
+      "abstract": "최근 보고서에 따르면 대형 언어 모델(Large Language Models, LLMs)이 현재 경쟁 프로그래밍에서 정상급 인간을 제치고 있다고 주장됩니다. 국제 알고리즘 대회 메달리스트 그룹의 지식을 바탕으로, 우리는 LLMs가 어떻게 인간 전문가들과 다르며 어디에서 제한이 여전히 존재하는지를 재검토합니다. 우리는 Codeforces, ICPC, IOI의 문제로 구성된 LiveCodeBench Pro를 소개합니다. 데이터 오염 가능성을 줄이기 위해 지속적으로 업데이트되는 이 벤치마크에서 올림피아드 메달리스트 팀이 알고리즘 범주에 대해 각 문제를 주석을 달고, 실패한 모델 생성 제출물의 행별 분석을 실시합니다. 이 새로운 데이터와 벤치마크를 사용하여, 우리는 현재의 최첨단 모델이 중간 난이도 문제에서만 53%의 pass@1을 달성하고 어려운 문제에서는 0%에 그친다는 것을 알게 됩니다. 이는 전문가 인간이 여전히 뛰어난 영역입니다. 또한 LLMs가 구현 중심 문제에서 성공하는 반면, 세심한 알고리즘적 추론과 복잡한 사례 분석에 어려움을 겪는 것을 발견하며, 종종 자신있게 잘못된 근거를 제시합니다. 높은 성능은 주로 구현 정밀도와 도구 보강에 의해 이루어지며, 우수한 추론이 아닙니다. LiveCodeBench Pro는 인간 그랜드마스터 수준까지의 상당한 간극을 강조하면서, 코드 중심 LLM 추론의 미래 개선을 이끌어내는 정밀한 진단을 제시합니다."
+    },
+    "summary": "1. 최신 보고서에 따르면 대형 언어 모델인 LLMs가 경쟁 프로그래밍에서 인간을 능가하고 있지만, 올림피아드 메달리스트들의 연구를 통해 그것이 어떻게 인간 전문가들과 다른지, 아직도 존재하는 한계는 어디에 있는지 재조명하고 있다.\n2. LiveCodeBench Pro는 Codeforces, ICPC, IOI의 문제로 구성된 벤치마크로, 올림피아드 메달리스트들이 알고리즘 범주를 주석 달고 모델 생성 제출물의 행별 분석을 실시하며, 최첨단 모델이 왜 여전히 한계를 가지고 있는지 밝혀냈다.\n3. LLMs는 구현이 많이 필요한 문제에서 성공하지만, 세밀한 알고리즘적 이유와 복잡한 케이스 분석에 어려움을 겪고 있으며, 높은 성능은 주로 구현 정밀도와 도구 보강에 의해 이루어지고 있음을 발견했다."
+  }
+]

@@ -1,0 +1,334 @@
+[
+  {
+    "title": "Sharing is Caring: Efficient LM Post-Training with Collective RL\n  Experience Sharing",
+    "abstract": "Post-training language models (LMs) with reinforcement learning (RL) can\nenhance their complex reasoning capabilities without supervised fine-tuning, as\ndemonstrated by DeepSeek-R1-Zero. However, effectively utilizing RL for LMs\nrequires significant parallelization to scale-up inference, which introduces\nnon-trivial technical challenges (e.g. latency, memory, and reliability)\nalongside ever-growing financial costs. We present Swarm sAmpling Policy\nOptimization (SAPO), a fully decentralized and asynchronous RL post-training\nalgorithm. SAPO is designed for decentralized networks of heterogenous compute\nnodes, where each node manages its own policy model(s) while \"sharing\" rollouts\nwith others in the network; no explicit assumptions about latency, model\nhomogeneity, or hardware are required and nodes can operate in silo if desired.\nAs a result, the algorithm avoids common bottlenecks in scaling RL\npost-training while also allowing (and even encouraging) new possibilities. By\nsampling rollouts \"shared\" across the network, it enables \"Aha moments\" to\npropagate, thereby bootstrapping the learning process. In this paper we show\nSAPO achieved cumulative reward gains of up to 94% in controlled experiments.\nWe also share insights from tests on a network with thousands of nodes\ncontributed by Gensyn community members running the algorithm on diverse\nhardware and models during an open-source demo.",
+    "authors": [
+      "Jeffrey Amico",
+      "Gabriel Passamani Andrade",
+      "John Donaghy",
+      "Ben Fielding",
+      "Tristin Forbus",
+      "Harry Grieve",
+      "Semih Kara",
+      "Jari Kolehmainen",
+      "Yihua Lou",
+      "Christopher Nies",
+      "Edward Phillip Flores Nuño",
+      "Diogo Ortega",
+      "Shikhar Rastogi",
+      "Austin Virts",
+      "Matthew J. Wright"
+    ],
+    "likes": 435,
+    "published_date": "Sep 10",
+    "url": "https://huggingface.co/papers/2509.08721",
+    "date_collected": "2025-09-13T07:07:32.126730+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "공유함은 사랑함의 첫걸음: 집단 강화 학습 경험 공유를 통한 효율적인 LM 사후 훈련",
+      "abstract": "강화 학습(Reinforcement Learning)을 이용해 언어 모델(Language Models)을 사후 훈련할 경우, DeepSeek-R1-Zero가 보여준 것처럼 지도적인 세밀 조정 없이도 복잡한 추론 능력을 향상시킬 수 있습니다. 그러나 LM에 효과적으로 강화 학습을 이용하기 위해서는 추론을 확장하기 위한 상당한 병렬화가 필요하며, 이는 점점 커지는 비용 외에도 지연 시간, 메모리, 신뢰성 등의 비교적 중요한 기술적 도전을 동반합니다. 본 논문에서는 완전하게 분산화되고 비동기적인 RL 사후 훈련 알고리즘인 \"Swarm sAmpling Policy Optimization (SAPO)\"을 제안합니다."
+    },
+    "summary": "1. SAPO는 분산 컴퓨팅 노드 네트워크를 위해 설계된 RL 사후 훈련 알고리즘으로, 각 노드가 자체 정책 모델을 관리하면서 네트워크의 다른 노드와 '공유' 롤아웃을 합니다.\n2. 본 알고리즘은 RL 사후 훈련의 공통 병목 현상을 피하면서도 새로운 가능성을 열어주며 네트워크 전체에서 공유된 롤아웃을 통해 '아하 순간'을 전파시켜 학습 과정을 촉진합니다.\n3. 실험 결과, SAPO는 제어된 실험에서 최대 누적 보상 상승률이 94%에 이르렀으며, Gensyn 커뮤니티 구성원들이 다양한 하드웨어 및 모델에서 알고리즘을 실행하는 오픈소스 데모 중 수천 개의 노드 네트워크 실험을 공유하고 결과를 제시합니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Why Language Models Hallucinate",
+    "abstract": "Like students facing hard exam questions, large language models sometimes\nguess when uncertain, producing plausible yet incorrect statements instead of\nadmitting uncertainty. Such \"hallucinations\" persist even in state-of-the-art\nsystems and undermine trust. We argue that language models hallucinate because\nthe training and evaluation procedures reward guessing over acknowledging\nuncertainty, and we analyze the statistical causes of hallucinations in the\nmodern training pipeline. Hallucinations need not be mysterious -- they\noriginate simply as errors in binary classification. If incorrect statements\ncannot be distinguished from facts, then hallucinations in pretrained language\nmodels will arise through natural statistical pressures. We then argue that\nhallucinations persist due to the way most evaluations are graded -- language\nmodels are optimized to be good test-takers, and guessing when uncertain\nimproves test performance. This \"epidemic\" of penalizing uncertain responses\ncan only be addressed through a socio-technical mitigation: modifying the\nscoring of existing benchmarks that are misaligned but dominate leaderboards,\nrather than introducing additional hallucination evaluations. This change may\nsteer the field toward more trustworthy AI systems.",
+    "authors": [
+      "Adam Tauman Kalai",
+      "Ofir Nachum",
+      "Santosh S. Vempala",
+      "Edwin Zhang"
+    ],
+    "likes": 153,
+    "published_date": "Sep 4",
+    "url": "https://huggingface.co/papers/2509.04664",
+    "date_collected": "2025-09-13T07:07:32.127842+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "왜 언어 모델은 환각하는가",
+      "abstract": "어려운 시험 문제를 만난 학생처럼 대형 언어 모델은 때때로 불확실할 때 추측하여 불확실성을 인정하는 대신 그럴듯하지만 잘못된 문장을 생성합니다. 이러한 \"환각\"은 최첨단 시스템에서도 계속되고 신뢰를 저해합니다. 우리는 언어 모델이 환각하는 이유는 훈련 및 평가 절차가 불확실성을 인정하는 대신 추측을 보상하기 때문이라고 주장하며 현대 훈련 파이프라인에서 환각의 통계적 원인을 분석합니다."
+    },
+    "summary": "1. 대형 언어 모델은 불확실할 때 추측함으로써 환각을 일으키는데, 이는 훈련 및 평가 절차가 불확실성을 인정하는 대신 추측을 장려하기 때문입니다.\n2. 환각은 이진 분류 오류로 단순히 발생하는데, 이를 구별할 수 없다면 사전 훈련된 언어 모델의 환각은 자연적인 통계적 압력으로 발생합니다.\n3. 평가 과정에서 불확실할 때 추측하는 것이 테스트 성능을 향상시키기 때문에 언어 모델들이 환각을 계속하는데, 이러한 불확실 응답을 처벌하는 것은 사회 기술적 완화만이 해결책이 될 수 있습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Reverse-Engineered Reasoning for Open-Ended Generation",
+    "abstract": "While the ``deep reasoning'' paradigm has spurred significant advances in\nverifiable domains like mathematics, its application to open-ended, creative\ngeneration remains a critical challenge. The two dominant methods for\ninstilling reasoning -- reinforcement learning (RL) and instruction\ndistillation -- falter in this area; RL struggles with the absence of clear\nreward signals and high-quality reward models, while distillation is\nprohibitively expensive and capped by the teacher model's capabilities. To\novercome these limitations, we introduce REverse-Engineered Reasoning (REER), a\nnew paradigm that fundamentally shifts the approach. Instead of building a\nreasoning process ``forwards'' through trial-and-error or imitation, REER works\n``backwards'' from known-good solutions to computationally discover the latent,\nstep-by-step deep reasoning process that could have produced them. Using this\nscalable, gradient-free approach, we curate and open-source DeepWriting-20K, a\nlarge-scale dataset of 20,000 deep reasoning trajectories for open-ended tasks.\nOur model, DeepWriter-8B, trained on this data, not only surpasses strong\nopen-source baselines but also achieves performance competitive with, and at\ntimes superior to, leading proprietary models like GPT-4o and Claude 3.5.",
+    "authors": [
+      "Haozhe Wang",
+      "Haoran Que",
+      "Qixin Xu",
+      "Minghao Liu",
+      "Wangchunshu Zhou",
+      "Jiazhan Feng",
+      "Wanjun Zhong",
+      "Wei Ye",
+      "Tong Yang",
+      "Wenhao Huang",
+      "Ge Zhang",
+      "Fangzhen Lin"
+    ],
+    "likes": 136,
+    "published_date": "Sep 7",
+    "url": "https://huggingface.co/papers/2509.06160",
+    "date_collected": "2025-09-13T07:07:32.129267+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "역공학화된 추론을 통한 개방형 생성",
+      "abstract": "\"깊은 추론(deep reasoning)\" 패러다임은 수학과 같은 검증 가능한 영역에서 중요한 발전을 이끌어내었지만, 이를 개방형, 창의적 생성에 적용하는 것은 여전히 중요한 도전과제입니다. 추론을 부여하는 두 가지 주요 방법인 강화 학습(Reinforcement Learning, RL)과 지도 축축(instruction distillation)은 이 영역에서 실패합니다. RL은 명확한 보상 신호와 고품질 보상 모델의 부재로 고민하며, 축축은 지도 모델의 능력으로 제한되어 있어 경제적이지 못합니다. 이러한 한계를 극복하기 위해, 우리는 역공학화된 추론(REER)을 소개합니다. REER은 추론 과정을 '앞으로' 시행착오나 모방을 통해 구축하는 대신, 알려진 좋은 해법으로부터 후행적으로 작동하며 잠재적인, 단계적인 깊은 추론 과정을 발견하기 위해 노력합니다. 이 확장 가능하고 그레디언트-프리 접근법을 사용하여, 우리는 개방형 작업을 위한 20,000개의 깊은 추론 궤적으로 구성된 대형 데이터세트인 DeepWriting-20K를 선별 및 오픈 소스로 제공합니다. 이 데이터를 기반으로 훈련된 우리 모델인 DeepWriter-8B는 강력한 오픈 소스 기준을 뛰어넘을 뿐만 아니라, GPT-4o 및 Claude 3.5와 같은 주요 소유 모델과 경쟁력 있는 성능을 달성합니다."
+    },
+    "summary": "1. 강화 학습과 지도 축축의 한계를 극복하기 위해 역공학화된 추론(REER)을 도입하여 개방형 생성 작업을 위한 깊은 추론 모델을 제시함.\n2. 20,000개의 깊은 추론 궤적으로 이루어진 대규모 데이터세트를 활용하여 모델인 DeepWriter-8B를 훈련시키고, 강력한 오픈 소스 기준을 뛰어넘는 성능을 달성함.\n3. 역공학화된 추론을 통해 알려진 좋은 해법으로부터 깊은 추론 과정을 발견하고, 최신 소유 모델들과 경쟁력 있는 결과를 얻을 수 있음.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "A Survey of Reinforcement Learning for Large Reasoning Models",
+    "abstract": "In this paper, we survey recent advances in Reinforcement Learning (RL) for\nreasoning with Large Language Models (LLMs). RL has achieved remarkable success\nin advancing the frontier of LLM capabilities, particularly in addressing\ncomplex logical tasks such as mathematics and coding. As a result, RL has\nemerged as a foundational methodology for transforming LLMs into LRMs. With the\nrapid progress of the field, further scaling of RL for LRMs now faces\nfoundational challenges not only in computational resources but also in\nalgorithm design, training data, and infrastructure. To this end, it is timely\nto revisit the development of this domain, reassess its trajectory, and explore\nstrategies to enhance the scalability of RL toward Artificial SuperIntelligence\n(ASI). In particular, we examine research applying RL to LLMs and LRMs for\nreasoning abilities, especially since the release of DeepSeek-R1, including\nfoundational components, core problems, training resources, and downstream\napplications, to identify future opportunities and directions for this rapidly\nevolving area. We hope this review will promote future research on RL for\nbroader reasoning models. Github:\nhttps://github.com/TsinghuaC3I/Awesome-RL-for-LRMs",
+    "authors": [
+      "Kaiyan Zhang",
+      "Yuxin Zuo",
+      "Bingxiang He",
+      "Youbang Sun",
+      "Runze Liu",
+      "Che Jiang",
+      "Yuchen Fan",
+      "Kai Tian",
+      "Guoli Jia",
+      "Pengfei Li",
+      "Yu Fu",
+      "Xingtai Lv",
+      "Yuchen Zhang",
+      "Sihang Zeng",
+      "Shang Qu",
+      "Haozhan Li",
+      "Shijie Wang",
+      "Yuru Wang",
+      "Xinwei Long",
+      "Fangfu Liu",
+      "Xiang Xu",
+      "Jiaze Ma"
+    ],
+    "likes": 123,
+    "published_date": "Sep 10",
+    "url": "https://huggingface.co/papers/2509.08827",
+    "date_collected": "2025-09-13T07:07:32.131125+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "대규모 추론 모델을 위한 강화학습 조사",
+      "abstract": "본 논문에서는 대규모 언어 모델(LLM)과 함께 추론하는 강화학습(RL)의 최근 발전을 조사합니다. RL은 수학 및 코딩과 같은 복잡한 논리적 작업을 다루는 데 탁월한 성과를 거두었습니다. 이에 따라 RL은 LLM을 LRMs로 변환하는 데 중요한 방법론으로 부상했습니다. 분야의 신속한 발전으로 RL을 LRMs에 대해 확장하는 것은 이제 컴퓨팅 자원 뿐만 아니라 알고리즘 설계, 교육 데이터, 인프라에서도 근본적인 도전에 직면하고 있습니다. 이를 위해 이 도메인의 발전을 재방문하고 그 궤적을 재평가하며, 인공 초지능(ASI)으로 향한 RL의 확장성을 향상시키는 전략을 탐색해야 할 시기입니다. 우리는 특히 DeepSeek-R1 공개 이후 독창적인 RL을 θLMs 및 LRMs에 적용하는 연구를 검토합니다. 이를 통해 미래의 기회와 방향을 파악하고 이 분야의 발전 가능성을 식별하고자 합니다. 본 리뷰가 포괄적인 추론 모델에 대한 RL 연구를 촉진할 것으로 기대합니다. Github:"
+    },
+    "summary": "1. 강화학습이 대규모 언어 모델의 논리 작업을 개선하는 데 중요한 역할을 하며, LRMs로의 전환에 필수적인 방법론으로 부상했습니다.\n2. RL의 확장은 컴퓨팅 자원 뿐만 아니라 알고리즘 설계, 교육 데이터, 인프라 등에서도 근본적인 도전에 직면하고 있어 추가적인 연구가 필요합니다.\n3. DeepSeek-R1 공개 이후, RL을 θLMs 및 LRMs에 적용하는 연구를 통해 미래의 발전 가능성과 분야의 방향을 탐색하고 다양한 추론 모델에 대한 연구를 촉진할 것으로 기대됩니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action\n  Model",
+    "abstract": "Vision-Language-Action (VLA) models typically bridge the gap between\nperceptual and action spaces by pre-training a large-scale Vision-Language\nModel (VLM) on robotic data. While this approach greatly enhances performance,\nit also incurs significant training costs. In this paper, we investigate how to\neffectively bridge vision-language (VL) representations to action (A). We\nintroduce VLA-Adapter, a novel paradigm designed to reduce the reliance of VLA\nmodels on large-scale VLMs and extensive pre-training. To this end, we first\nsystematically analyze the effectiveness of various VL conditions and present\nkey findings on which conditions are essential for bridging perception and\naction spaces. Based on these insights, we propose a lightweight Policy module\nwith Bridge Attention, which autonomously injects the optimal condition into\nthe action space. In this way, our method achieves high performance using only\na 0.5B-parameter backbone, without any robotic data pre-training. Extensive\nexperiments on both simulated and real-world robotic benchmarks demonstrate\nthat VLA-Adapter not only achieves state-of-the-art level performance, but also\noffers the fast inference speed reported to date. Furthermore, thanks to the\nproposed advanced bridging paradigm, VLA-Adapter enables the training of a\npowerful VLA model in just 8 hours on a single consumer-grade GPU, greatly\nlowering the barrier to deploying the VLA model. Project page:\nhttps://vla-adapter.github.io/.",
+    "authors": [
+      "Yihao Wang",
+      "Pengxiang Ding",
+      "Lingxiao Li",
+      "Can Cui",
+      "Zirui Ge",
+      "Xinyang Tong",
+      "Wenxuan Song",
+      "Han Zhao",
+      "Wei Zhao",
+      "Pengxu Hou",
+      "Siteng Huang",
+      "Yifan Tang",
+      "Wenhui Wang",
+      "Ru Zhang",
+      "Jianyi Liu",
+      "Donglin Wang"
+    ],
+    "likes": 107,
+    "published_date": "Sep 11",
+    "url": "https://huggingface.co/papers/2509.09372",
+    "date_collected": "2025-09-13T07:07:32.132739+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "VLA-Adapter: 작은 규모의 Vision-Language-Action 모델을 위한 효과적인 패러다임",
+      "abstract": "Vision-Language-Action (VLA) 모델은 일반적으로 로봇 데이터에서 대규모 Vision-Language 모델 (VLM)을 사전 훈련하여 지각 및 행동 공간 사이의 간극을 줄입니다. 이 방법은 성능을 크게 향상시키지만 상당한 훈련 비용을 발생시킵니다. 본 논문에서는 Vision-Language (VL) 표현을 행동 (A)에 효과적으로 연결하는 방법을 조사합니다. 우리는 VLA-Adapter를 소개하는데, 이는 VLA 모델이 대규모 VLM 및 방대한 사전 훈련에 의존도를 줄이기 위해 고안된 혁신적인 패러다임입니다."
+    },
+    "summary": "1. VLA-Adapter는 VL 조건의 효과를 체계적으로 분석하여 인식 및 행동 공간 간의 연결에 필수적인 조건을 제시합니다.\n2. Bridge Attention을 갖춘 가벼운 Policy 모듈을 제안하여 0.5B-파라미터 백본만을 사용하고 로봇 데이터 사전 훈련 없이 높은 성능을 달성합니다.\n3. 실험 결과는 VLA-Adapter가 최첨단 수준의 성능을 달성하며 지금까지 보고된 가장 빠른 추론 속도를 제공함을 보여줍니다.",
+    "categories": [
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "HuMo: Human-Centric Video Generation via Collaborative Multi-Modal\n  Conditioning",
+    "abstract": "Human-Centric Video Generation (HCVG) methods seek to synthesize human videos\nfrom multimodal inputs, including text, image, and audio. Existing methods\nstruggle to effectively coordinate these heterogeneous modalities due to two\nchallenges: the scarcity of training data with paired triplet conditions and\nthe difficulty of collaborating the sub-tasks of subject preservation and\naudio-visual sync with multimodal inputs. In this work, we present HuMo, a\nunified HCVG framework for collaborative multimodal control. For the first\nchallenge, we construct a high-quality dataset with diverse and paired text,\nreference images, and audio. For the second challenge, we propose a two-stage\nprogressive multimodal training paradigm with task-specific strategies. For the\nsubject preservation task, to maintain the prompt following and visual\ngeneration abilities of the foundation model, we adopt the minimal-invasive\nimage injection strategy. For the audio-visual sync task, besides the commonly\nadopted audio cross-attention layer, we propose a focus-by-predicting strategy\nthat implicitly guides the model to associate audio with facial regions. For\njoint learning of controllabilities across multimodal inputs, building on\npreviously acquired capabilities, we progressively incorporate the audio-visual\nsync task. During inference, for flexible and fine-grained multimodal control,\nwe design a time-adaptive Classifier-Free Guidance strategy that dynamically\nadjusts guidance weights across denoising steps. Extensive experimental results\ndemonstrate that HuMo surpasses specialized state-of-the-art methods in\nsub-tasks, establishing a unified framework for collaborative\nmultimodal-conditioned HCVG. Project Page:\nhttps://phantom-video.github.io/HuMo.",
+    "authors": [
+      "Liyang Chen",
+      "Tianxiang Ma",
+      "Jiawei Liu",
+      "Bingchuan Li",
+      "Zhuowei Chen",
+      "Lijie Liu",
+      "Xu He",
+      "Gen Li",
+      "Qian He",
+      "Zhiyong Wu"
+    ],
+    "likes": 85,
+    "published_date": "Sep 10",
+    "url": "https://huggingface.co/papers/2509.08519",
+    "date_collected": "2025-09-13T07:07:32.134098+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "인간 중심 비디오 생성을 위한 협력적 다중 모달 조건부(HuMo)",
+      "abstract": "인간 중심 비디오 생성(Human-Centric Video Generation, HCVG) 방법은 텍스트, 이미지, 오디오 등 다중 입력을 통해 인간 비디오를 합성하려고 합니다. 기존 방법은 짝을 이룬 삼중 조건으로 받은 훈련 데이터 부족과 주체 보존 및 오디오-비주얼 동기화를 다중 모달 입력과 협력적으로 조정하기 어려운 두 가지 어려움이 있습니다. 본 연구에서 우리는 협력적 다중 모달 제어를 위한 통합된 HCVG 프레임워크인 HuMo를 제안합니다."
+    },
+    "summary": "1. HuMo는 다양하고 짝을 이룬 텍스트, 참조 이미지 및 오디오 데이터셋을 활용해 협력적 다중 모달 제어를 위한 고품질 프레임워크를 제시합니다.\n2. 주체 보존 작업에는 최소 침범적 이미지 주입 전략을 채택하고, 오디오-비주얼 동기화 작업에는 오디오 교차 주의층과 얼굴 영역과 오디오를 암시적으로 연결시키는 예측 기반 전략을 제안합니다.\n3. HuMo는 연속적인 다중 모달 학습 패러다임과 유연하고 세밀한 다중 모달 제어를 위한 Classifier-Free Guidance 전략을 통해 다른 특화된 최신 방법보다 뛰어난 성과를 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Parallel-R1: Towards Parallel Thinking via Reinforcement Learning",
+    "abstract": "Parallel thinking has emerged as a novel approach for enhancing the reasoning\ncapabilities of large language models (LLMs) by exploring multiple reasoning\npaths concurrently. However, activating such capabilities through training\nremains challenging, as existing methods predominantly rely on supervised\nfine-tuning (SFT) over synthetic data, which encourages teacher-forced\nimitation rather than exploration and generalization. Different from them, we\npropose Parallel-R1, the first reinforcement learning (RL) framework\nthat enables parallel thinking behaviors for complex real-world reasoning\ntasks. Our framework employs a progressive curriculum that explicitly addresses\nthe cold-start problem in training parallel thinking with RL. We first use SFT\non prompt-generated trajectories from easier tasks to instill the parallel\nthinking ability, then transition to RL to explore and generalize this skill on\nharder problems. Experiments on various math benchmarks, including MATH, AMC23,\nand AIME, show that Parallel-R1 successfully instills parallel thinking,\nleading to 8.4% accuracy improvements over the sequential thinking model\ntrained directly on challenging tasks with RL. Further analysis reveals a clear\nshift in the model's thinking behavior: at an early stage, it uses parallel\nthinking as an exploration strategy, while in a later stage, it uses the same\ncapability for multi-perspective verification. Most significantly, we validate\nparallel thinking as a mid-training exploration scaffold, where this\ntemporary exploratory phase unlocks a higher performance ceiling after RL,\nyielding a 42.9% improvement over the baseline on AIME25. Our model, data, and\ncode will be open-source at https://github.com/zhengkid/Parallel-R1.",
+    "authors": [
+      "Tong Zheng",
+      "Hongming Zhang",
+      "Wenhao Yu",
+      "Xiaoyang Wang",
+      "Xinyu Yang",
+      "Runpeng Dai",
+      "Rui Liu",
+      "Huiwen Bao",
+      "Chengsong Huang",
+      "Heng Huang",
+      "Dong Yu"
+    ],
+    "likes": 85,
+    "published_date": "Sep 9",
+    "url": "https://huggingface.co/papers/2509.07980",
+    "date_collected": "2025-09-13T07:07:32.135480+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "병렬-R1: 강화 학습을 통한 병렬 사고로의 진화",
+      "abstract": "병렬 사고는 여러 추론 경로를 동시에 탐색함으로써 대규모 언어 모델의 추론 능력을 향상시키는 새로운 접근법으로 등장했습니다. 그러나 이러한 능력을 교육을 통해 활성화하는 것은 여전히 어려운데, 기존 방법들은 주로 합성 데이터에 대한 지도 미세 조정(SFT)에 의존하여 선생 강제 모방을 장려하고 탐구와 일반화를 향상시키지 않습니다. 이와는 달리, 우리는 병렬-R1을 제안합니다. 이는 복잡한 실제 세계 추론 작업을 위해 병렬 사고 행동을 가능하도록 하는 첫 번째 강화 학습(RL) 프레임워크입니다. 우리의 프레임워크는 RL을 사용하여 병렬 사고 교육에서 출발 문제를 명시적으로 다루는 진도 계획을 채택합니다. 우리는 먼저 쉬운 작업의 프롬프트 생성 궤적에 SFT를 사용하여 병렬 사고 능력을 가르쳐, 그런 다음 RL로 전환하여 이 기술을 어려운 문제에 대해 탐구하고 일반화합니다. MATH, AMC23, AIME를 포함한 다양한 수학 벤치마크에서의 실험에서 병렬-R1이 병렬 사고 능력을 성공적으로 전파하여 병렬 사고 모델보다 더 어려운 작업에 직접 학습된 순차적 사고 모델보다 8.4% 정확도 향상을 이끌어 냅니다. 추가 분석 결과, 모델의 사고 행동에는 명확한 변화가 나타납니다: 초기 단계에서는 병렬 사고를 탐사 전략으로 사용하며, 후기 단계에서는 동일한 능력을 다중 관점 검증에 사용합니다. 가장 중요한 것은 병렬 사고를 중간 교육 탐사 견고물로 검증하는데, 이 임시 탐사 단계는 RL 이후 더 높은 성능 천장을 개방하고 AIME25에서 기준선 대비 42.9% 개선을 초래합니다. 우리의 모델, 데이터 및 코드는 https://github.com/zhengkid/Parallel-R1 에서 오픈소스로 공개될 예정입니다."
+    },
+    "summary": "1. 병렬-R1은 강화 학습을 활용하여 병렬 사고 능력을 어려운 실제 추론 작업에 적용하는 프레임워크이다.\n2. 병렬-R1은 진도 계획을 통해 병렬 사고 능력을 지속적으로 향상시키며, 초반에는 탐구 전략으로 사용되고 후반에는 다중 관점 검증에 활용된다.\n3. 병렬 사고를 중간 교육 탐사 견고물로 검증한 결과, 임시 탐사 단계를 거친 후의 모델은 더 높은 성능을 발휘하여 기준 모델 대비 42.9%의 개선을 달성한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents",
+    "abstract": "The paradigm of Large Language Models (LLMs) has increasingly shifted toward\nagentic applications, where web browsing capabilities are fundamental for\nretrieving information from diverse online sources. However, existing\nopen-source web agents either demonstrate limited information-seeking abilities\non complex tasks or lack transparent implementations. In this work, we identify\nthat the key challenge lies in the scarcity of challenging data for information\nseeking. To address this limitation, we introduce WebExplorer: a systematic\ndata generation approach using model-based exploration and iterative,\nlong-to-short query evolution. This method creates challenging query-answer\npairs that require multi-step reasoning and complex web navigation. By\nleveraging our curated high-quality dataset, we successfully develop advanced\nweb agent WebExplorer-8B through supervised fine-tuning followed by\nreinforcement learning. Our model supports 128K context length and up to 100\ntool calling turns, enabling long-horizon problem solving. Across diverse\ninformation-seeking benchmarks, WebExplorer-8B achieves the state-of-the-art\nperformance at its scale. Notably, as an 8B-sized model, WebExplorer-8B is able\nto effectively search over an average of 16 turns after RL training, achieving\nhigher accuracy than WebSailor-72B on BrowseComp-en/zh and attaining the best\nperformance among models up to 100B parameters on WebWalkerQA and FRAMES.\nBeyond these information-seeking tasks, our model also achieves strong\ngeneralization on the HLE benchmark even though it is only trained on\nknowledge-intensive QA data. These results highlight our approach as a\npractical path toward long-horizon web agents.",
+    "authors": [
+      "Junteng Liu",
+      "Yunji Li",
+      "Chi Zhang",
+      "Jingyang Li",
+      "Aili Chen",
+      "Ke Ji",
+      "Weiyu Cheng",
+      "Zijia Wu",
+      "Chengyu Du",
+      "Qidi Xu",
+      "Jiayuan Song",
+      "Zhengmao Zhu",
+      "Wenhu Chen",
+      "Pengyu Zhao",
+      "Junxian He"
+    ],
+    "likes": 72,
+    "published_date": "Sep 8",
+    "url": "https://huggingface.co/papers/2509.06501",
+    "date_collected": "2025-09-13T07:07:32.137032+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "웹탐험가: 장기간 웹 에이전트 훈련을 위한 탐사 및 발전",
+      "abstract": "대형 언어 모델 (LLMs) 패러다임은 점점 더 웹 브라우징 능력이 필수인 에이전트 애플리케이션 쪽으로 이동해왔습니다. 그러나 기존의 오픈소스 웹 에이전트들은 복잡한 작업에서 정보를 검색하는 기능이 제한되어 있거나 투명한 구현이 부족합니다. 본 연구에서는 정보 탐색을 위한 도전적인 데이터의 부족이 주요 과제인 것을 확인했습니다. 이 한계를 해결하기 위해, 우리는 모델 기반의 탐사와 반복적인 장단 쿼리 발전을 이용하는 체계적 데이터 생성 방법인 WebExplorer를 제안합니다."
+    },
+    "summary": "1. WebExplorer는 모델 기반 탐사와 장단 쿼리 발전을 통해 도전적인 쿼리-답변 쌍을 생성하여 고급 웹 에이전트를 성공적으로 개발합니다.\n2. WebExplorer-8B는 감독된 파인튜닝과 강화학습을 거쳐 128K 콘텍스트 길이와 최대 100회의 도구 호출 턴을 지원하여 장기간 문제 해결 능력을 갖춥니다.\n3. WebExplorer-8B는 다양한 정보 탐색 벤치마크에서 최고 수준의 성능을 보이며, HLE 벤치마크에서 강력한 일반화 능력을 보입니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Web Explorer"
+    ]
+  },
+  {
+    "title": "Visual Representation Alignment for Multimodal Large Language Models",
+    "abstract": "Multimodal large language models (MLLMs) trained with visual instruction\ntuning have achieved strong performance across diverse tasks, yet they remain\nlimited in vision-centric tasks such as object counting or spatial reasoning.\nWe attribute this gap to the prevailing text-only supervision paradigm, which\nprovides only indirect guidance for the visual pathway and often leads MLLMs to\ndiscard fine-grained visual details during training. In this paper, we present\nVIsual Representation ALignment (VIRAL), a simple yet effective regularization\nstrategy that aligns the internal visual representations of MLLMs with those of\npre-trained vision foundation models (VFMs). By explicitly enforcing this\nalignment, VIRAL enables the model not only to retain critical visual details\nfrom the input vision encoder but also to complement additional visual\nknowledge from VFMs, thereby enhancing its ability to reason over complex\nvisual inputs. Our experiments demonstrate consistent improvements across all\ntasks on widely adopted multimodal benchmarks. Furthermore, we conduct\ncomprehensive ablation studies to validate the key design choices underlying\nour framework. We believe this simple finding opens up an important direction\nfor the effective integration of visual information in training MLLMs.",
+    "authors": [
+      "Heeji Yoon",
+      "Jaewoo Jung",
+      "Junwan Kim",
+      "Hyungyu Choi",
+      "Heeseong Shin",
+      "Sangbeom Lim",
+      "Honggyu An",
+      "Chaehyun Kim",
+      "Jisang Han",
+      "Donghyun Kim",
+      "Chanho Eom",
+      "Sunghwan Hong",
+      "Seungryong Kim"
+    ],
+    "likes": 65,
+    "published_date": "Sep 9",
+    "url": "https://huggingface.co/papers/2509.07979",
+    "date_collected": "2025-09-13T07:07:32.138484+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "멀티모달 대형 언어 모델을 위한 시각적 표현 정렬",
+      "abstract": "시각 지도 학습을 통해 훈련된 멀티모달 대형 언어 모델(MLLMs)은 다양한 작업에서 강력한 성능을 보여주었지만, 물체 세기나 공간 추론과 같은 시각 중심 작업에서는 여전히 한계가 있습니다. 우리는 이러한 간극을 텍스트 기반 지도 패러다임으로 비추어, 이는 모델이 훈련 중 세부적인 시각적 세부사항을 버리도록 유도하며 시각 경로에 대한 간접적인 가이드만을 제공한다고 판단합니다. 본 논문에서는 비주얼 표현 정렬(VIRAL)이라는 간단하면서 효과적인 정규화 전략을 제안합니다. VIRAL은 MLLMs의 내부 시각적 표현을 사전 훈련된 비전 기반 모델(VFMs)의 표현과 일치시킴으로써 모델이 입력 비전 인코더로부터 중요한 시각적 세부사항을 유지하고 더 나아가 VFMs로부터 추가적인 시각적 지식을 보완하여 복잡한 시각 입력에 대한 추론 능력을 강화할 수 있습니다."
+    },
+    "summary": "1. 멀티모달 대형 언어 모델(MLLMs)의 시각적 능력 향상을 위해 비주얼 표현 정렬(VIRAL) 전략을 소개함.\n2. VIRAL은 MLLMs의 내부 시각적 표현을 사전 훈련된 비전 기반 모델(VFMs)과 일치시키며 입력 비전 정보의 세부사항을 유지하고 시각적 지식 보완.\n3. 실험을 통해 VIRAL이 다양한 멀티모달 벤치마크 작업에서 일관된 개선을 보여주며, 핵심 설계 선택의 유효성을 검증하는 소거 연구를 실시함.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "RewardDance: Reward Scaling in Visual Generation",
+    "abstract": "Reward Models (RMs) are critical for improving generation models via\nReinforcement Learning (RL), yet the RM scaling paradigm in visual generation\nremains largely unexplored. It primarily due to fundamental limitations in\nexisting approaches: CLIP-based RMs suffer from architectural and input\nmodality constraints, while prevalent Bradley-Terry losses are fundamentally\nmisaligned with the next-token prediction mechanism of Vision-Language Models\n(VLMs), hindering effective scaling. More critically, the RLHF optimization\nprocess is plagued by Reward Hacking issue, where models exploit flaws in the\nreward signal without improving true quality. To address these challenges, we\nintroduce RewardDance, a scalable reward modeling framework that overcomes\nthese barriers through a novel generative reward paradigm. By reformulating the\nreward score as the model's probability of predicting a \"yes\" token, indicating\nthat the generated image outperforms a reference image according to specific\ncriteria, RewardDance intrinsically aligns reward objectives with VLM\narchitectures. This alignment unlocks scaling across two dimensions: (1) Model\nScaling: Systematic scaling of RMs up to 26 billion parameters; (2) Context\nScaling: Integration of task-specific instructions, reference examples, and\nchain-of-thought (CoT) reasoning. Extensive experiments demonstrate that\nRewardDance significantly surpasses state-of-the-art methods in text-to-image,\ntext-to-video, and image-to-video generation. Crucially, we resolve the\npersistent challenge of \"reward hacking\": Our large-scale RMs exhibit and\nmaintain high reward variance during RL fine-tuning, proving their resistance\nto hacking and ability to produce diverse, high-quality outputs. It greatly\nrelieves the mode collapse problem that plagues smaller models.",
+    "authors": [
+      "Jie Wu",
+      "Yu Gao",
+      "Zilyu Ye",
+      "Ming Li",
+      "Liang Li",
+      "Hanzhong Guo",
+      "Jie Liu",
+      "Zeyue Xue",
+      "Xiaoxia Hou",
+      "Wei Liu",
+      "Yan Zeng",
+      "Weilin Huang"
+    ],
+    "likes": 57,
+    "published_date": "Sep 10",
+    "url": "https://huggingface.co/papers/2509.08826",
+    "date_collected": "2025-09-13T07:07:32.139882+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "리워드댄스: 시각 생성에서의 보상 스케일링",
+      "abstract": "보상 모델(Reward Models, RMs)은 강화 학습(Reinforcement Learning, RL)을 통해 생성 모델을 개선하는 데 중요하지만, 시각적 생성에서의 RM 스케일링 패러다임은 여전히 탐구되지 않은 상태입니다. 기존 접근 방식의 근본적인 제한 때문에 발생하는 것이 주된 이유입니다: CLIP 기반 RMs는 구조적 및 입력 양식 제약으로 고통을 받는 반면, 흔히 사용되는 Bradley-Terry 손실 함수는 시각-언어 모델(Vision-Language Models, VLMs)의 다음 토큰 예측 메커니즘과 근본적으로 맞지 않아 효율적인 스케일링이 어렵습니다. 더 중요한 것은 RLHF 최적화 과정이 리워드 해킹 문제로 시달린다는 점인데, 이는 모델이 보상 신호의 결함을 악용하면서 진짜 품질을 개선하지 않는 문제를 가지고 있습니다. 이러한 도전에 대처하기 위해, 리워드댄스(RewardDance)를 소개합니다. 이것은 새로운 생성적 보상 패러다임을 통해 이러한 장벽을 극복하는 확장 가능한 보상 모델링 프레임워크입니다. 보상 점수를 모델이 \"예\" 토큰을 예측하는 확률로 재정의함으로써, 생성된 이미지가 특정 기준에 따라 참조 이미지를 능가한다는 것을 나타낸다면, 리워드댄스는 내재적으로 VLM 아키텍처와 보상 목표를 정렬시킵니다. 이러한 정렬은 두 가지 차원에서 스케일링을 가능케 합니다: (1) 모델 스케일링: RM의 체계적인 스케일링으로 260억 개의 파라미터까지 확장; (2) 컨텍스트 스케일링: 과제별 지침, 참조 예제 및 체인 오브 쓰트(Chain-of-Thought, CoT) 추론의 통합. 광범위한 실험 결과, 리워드댄스가 텍스트-이미지, 텍스트-비디오 및 이미지-비디오 생성 분야에서 최첨단 방법을 크게 능가함을 입증합니다. 또한 우리는 \"리워드 해킹\"이라는 지속적인 문제를 해결합니다: 대규모 RM은 RL 세부 조정 중에 높은 보상 분산을 나타내며 유지함으로써 해킹에 대한 저항력을 입증하고 다양하고 높은 품질의 출력물을 생성할 수 있습니다. 이는 작은 모델을 괴롭히는 모드 붕괴 문제를 크게 완화시킵니다."
+    },
+    "summary": "1. 리워드댄스는 시각적 생성에서의 보상 모델링을 향상시키기 위한 새로운 프레임워크로, 모델의 확장과 컨텍스트 스케일링을 가능케 함.\n2. 이 연구는 기존 방법의 한계를 극복하고, 리워드 신호의 악용 없이 다양하고 고품질의 출력물을 생성하는 데 성공함.\n3. 실험 결과는 리워드댄스가 텍스트-이미지, 텍스트-비디오, 이미지-비디오 생성 분야에서 우수한 성능을 보여주며, 모드 붕괴 문제를 효과적으로 해결함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  }
+]

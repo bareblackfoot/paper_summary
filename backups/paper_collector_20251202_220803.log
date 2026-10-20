@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Dec  1 22:07:27 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W49
+URL: https://huggingface.co/papers/week/2025-W49
+Found 10 papers in weekly view
+Fetching likes for: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Fetching likes for: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+Fetching likes for: AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement
+Fetching likes for: Vision Bridge Transformer at Scale
+Fetching likes for: Architecture Decoupling Is Not All You Need For Unified Multimodal Model
+Fetching likes for: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Fetching likes for: DiP: Taming Diffusion Models in Pixel Space
+Fetching likes for: DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action
+Fetching likes for: Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models
+Fetching likes for: Adversarial Flow Models
+Selected top 10 papers by likes:
+1. Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer (71 likes)
+2. REASONEDIT: Towards Reasoning-Enhanced Image Editing Models (38 likes)
+3. AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement (32 likes)
+4. Vision Bridge Transformer at Scale (31 likes)
+5. Architecture Decoupling Is Not All You Need For Unified Multimodal Model (23 likes)
+6. DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning (18 likes)
+7. DiP: Taming Diffusion Models in Pixel Space (18 likes)
+8. DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action (16 likes)
+9. Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models (14 likes)
+10. Adversarial Flow Models (14 likes)
+Found abstract: The landscape of high-performance image generation models is currently dominated by proprietary syst...
+Processed paper: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Found abstract: Recent advances in image editing models have shown remarkable progress. A common architectural desig...
+Processed paper: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+Found abstract: Recently, multi-person video generation has started to gain prominence. While a few preliminary work...
+Processed paper: AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement
+Found abstract: We introduce Vision Bridge Transformer (ViBT), a large-scale instantiation of Brownian Bridge Models...
+Processed paper: Vision Bridge Transformer at Scale
+Found abstract: Unified multimodal models for image generation and understanding represent a significant step toward...
+Processed paper: Architecture Decoupling Is Not All You Need For Unified Multimodal Model
+Found abstract: Large language models have made significant progress in mathematical reasoning, which serves as an i...
+Processed paper: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Found abstract: Diffusion models face a fundamental trade-off between generation quality and computational efficienc...
+Processed paper: DiP: Taming Diffusion Models in Pixel Space
+Found abstract: To build a generalizable Vision-Language-Action (VLA) model with strong reasoning ability, a common ...
+Processed paper: DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action
+Found abstract: This work explores the challenge of building ``Machines that Can Remember'', framing long-term memor...
+Processed paper: Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models
+Found abstract: We present adversarial flow models, a class of generative models that unifies adversarial models and...
+Processed paper: Adversarial Flow Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Vision Bridge Transformer at Scale
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Architecture Decoupling Is Not All You Need For Unified Multimodal Model
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: DiP: Taming Diffusion Models in Pixel Space
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Adversarial Flow Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W49.json...
+
+Updating Notion database...
+Creating new paper: Z-Image: 단일 스트림 확산 트랜스포머를 활용한 효율적인 이미지 생성 기반 모델
+Creating new paper: REASONEDIT: 이성 증진 이미지 편집 모델을 향하여
+Creating new paper: AnyTalker: 상호작용 정제 기능을 갖춘 다수의 사람들이 대화하는 비디오 생성의 확장
+Creating new paper: 대규모 비전 브릿지 트랜스포머
+Creating new paper: 통합된 다중 모달 모델에 있어서 아키텍처의 격리는 모든 것이 아니다
+Creating new paper: 딥시크수학-V2: 자기 검증 수학 추론을 향하여
+Creating new paper: DiP: 픽셀 공간에서 확산 모델 다루기
+Creating new paper: DualVLA: 추론과 행동의 부분적 분리를 통해 일반화 가능한 신체화 에이전트 구축
+Creating new paper: 모든 토큰이 중요합니다: 대형 언어 모델에서 16M 초장기 맥락의 일반화
+Creating new paper: 적대적 플로우 모델
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Dec  1 22:09:42 UTC 2025 ===
+

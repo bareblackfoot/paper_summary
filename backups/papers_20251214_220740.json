@@ -1,0 +1,316 @@
+[
+  {
+    "title": "Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance",
+    "abstract": "We present Wan-Move, a simple and scalable framework that brings motion control to video generative models. Existing motion-controllable methods typically suffer from coarse control granularity and limited scalability, leaving their outputs insufficient for practical use. We narrow this gap by achieving precise and high-quality motion control. Our core idea is to directly make the original condition features motion-aware for guiding video synthesis. To this end, we first represent object motions with dense point trajectories, allowing fine-grained control over the scene. We then project these trajectories into latent space and propagate the first frame's features along each trajectory, producing an aligned spatiotemporal feature map that tells how each scene element should move. This feature map serves as the updated latent condition, which is naturally integrated into the off-the-shelf image-to-video model, e.g., Wan-I2V-14B, as motion guidance without any architecture change. It removes the need for auxiliary motion encoders and makes fine-tuning base models easily scalable. Through scaled training, Wan-Move generates 5-second, 480p videos whose motion controllability rivals Kling 1.5 Pro's commercial Motion Brush, as indicated by user studies. To support comprehensive evaluation, we further design MoveBench, a rigorously curated benchmark featuring diverse content categories and hybrid-verified annotations. It is distinguished by larger data volume, longer video durations, and high-quality motion annotations. Extensive experiments on MoveBench and the public dataset consistently show Wan-Move's superior motion quality. Code, models, and benchmark data are made publicly available.",
+    "authors": [
+      "Ruihang Chu",
+      "Yefei He",
+      "Zhekai Chen",
+      "Shiwei Zhang",
+      "Xiaogang Xu",
+      "Bin Xia",
+      "Dingdong Wang",
+      "Hongwei Yi",
+      "Xihui Liu",
+      "Hengshuang Zhao",
+      "Yu Liu",
+      "Yingya Zhang",
+      "Yujiu Yang"
+    ],
+    "likes": 119,
+    "published_date": "Dec 9",
+    "url": "https://huggingface.co/papers/2512.08765",
+    "date_collected": "2025-12-14T07:07:48.004553+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "원-무브: 잠재 경로 안내를 통한 움직임 제어형 비디오 생성",
+      "abstract": "우리는 원-무브를 제시합니다. 이는 움직임 제어를 비디오 생성 모델에 제공하는 간단하고 확장 가능한 프레임워크입니다. 기존의 움직임 제어 방법은 일반적으로 게시된 제어 세분성과 제한된 확장성으로 인해 실용적인 사용에 미흡한 결과를 보입니다. 우리는 정확하고 고품질의 움직임 제어를 달성하여 이 간극을 좁힙니다. 우리의 핵심 아이디어는 비디오 합성을 안내하기 위해 원래 조건 특성을 바로 움직임 인식으로 만드는 것입니다..."
+    },
+    "summary": "1. Wan-Move는 비디오 생성 시 움직임 제어가 가능한 간단하고 확장 가능한 프레임워크를 제시합니다.\n2. 물체 움직임을 밀도 있는 점 궤적으로 표현하고 이를 잠재 공간으로 변환하여 공간적-시간적 특성 지도를 생성함으로써 세밀한 제어를 가능하게 합니다.\n3. MoveBench와 공개 데이터셋을 통한 방대한 실험을 통해 Wan-Move가 우수한 움직임 품질을 보여주고 있음을 입증합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform",
+    "abstract": "Neural rendering, particularly 3D Gaussian Splatting (3DGS), has evolved rapidly and become a key component for building world models. However, existing viewer solutions remain fragmented, heavy, or constrained by legacy pipelines, resulting in high deployment friction and limited support for dynamic content and generative models. In this work, we present Visionary, an open, web-native platform for real-time various Gaussian Splatting and meshes rendering. Built on an efficient WebGPU renderer with per-frame ONNX inference, Visionary enables dynamic neural processing while maintaining a lightweight, \"click-to-run\" browser experience. It introduces a standardized Gaussian Generator contract, which not only supports standard 3DGS rendering but also allows plug-and-play algorithms to generate or update Gaussians each frame. Such inference also enables us to apply feedforward generative post-processing. The platform further offers a plug in three.js library with a concise TypeScript API for seamless integration into existing web applications. Experiments show that, under identical 3DGS assets, Visionary achieves superior rendering efficiency compared to current Web viewers due to GPU-based primitive sorting. It already supports multiple variants, including MLP-based 3DGS, 4DGS, neural avatars, and style transformation or enhancement networks. By unifying inference and rendering directly in the browser, Visionary significantly lowers the barrier to reproduction, comparison, and deployment of 3DGS-family methods, serving as a unified World Model Carrier for both reconstructive and generative paradigms.",
+    "authors": [
+      "Yuning Gong",
+      "Yifei Liu",
+      "Yifan Zhan",
+      "Muyao Niu",
+      "Xueying Li",
+      "Yuanjun Liao",
+      "Jiaming Chen",
+      "Yuanyuan Gao",
+      "Jiaqi Chen",
+      "Minming Chen",
+      "Li Zhou",
+      "Yuning Zhang",
+      "Wei Wang",
+      "Xiaoqing Hou",
+      "Huaxi Huang",
+      "Shixiang Tang",
+      "Le Ma",
+      "Dingwen Zhang",
+      "Xue Yang",
+      "Junchi Yan",
+      "Yanchi Zhang",
+      "Yinqiang Zheng"
+    ],
+    "likes": 71,
+    "published_date": "Dec 9",
+    "url": "https://huggingface.co/papers/2512.08478",
+    "date_collected": "2025-12-14T07:07:48.006406+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "미래지향적: 웹GPU 기술을 기반으로 한 가우시안 스플래팅 플랫폼에 구축된 세계 모델 플랫폼",
+      "abstract": "신경 렌더링, 특히 3D 가우시안 스플래팅(3DGS),은 빠르게 발전하여 세계 모델 구축의 핵심 구성 요소가 되었습니다. 그러나 기존의 뷰어 솔루션은 단편적이거나 무겁거나 기존의 파이프라인에 제약을 받아 배포 어려움 및 동적 콘텐츠 및 생성 모델에 대한 제한적인 지원을 가져오고 있습니다. 본 연구에서는 실시간 다양한 가우시안 스플래팅 및 meshes 렌더링을 위한 오픈 웹네이티브 플랫폼인 '미래지향적'을 제안합니다. 효율적인 WebGPU 렌더러를 기반으로 구축된 Visionary는 프레임 당 ONNX 추론을 통해 동적 신경 처리를 가능하게 하면서 가벼운 \"클릭해서 실행\" 브라우저 경험을 유지합니다. 표준화된 Gaussian Generator 계약을 소개하여 표준 3DGS 렌더링을 지원하는데 그치지 않고 플러그 앤 플레이 알고리즘을 통해 각 프레임마다 가우시안을 생성하거나 업데이트할 수 있습니다. 이러한 추론은 feedforward 생성 후처리를 적용하는 것도 가능하게 합니다. 플랫폼은 세밀한 TypeScript API를 통해 기존 웹 애플리케이션에 심플하게 통합할 수 있는 three.js 라이브러리를 제공합니다. 실험 결과, 동일한 3DGS 에셋 하에서 Visionary는 GPU 기반의 원시 정렬로 인해 현재의 웹 뷰어보다 우수한 렌더링 효율을 달성합니다. 이미 MLP 기반 3DGS, 4DGS, 신경 아바타, 스타일 변환 또는 향상 네트워크를 비롯한 여러 변형을 지원하고 있습니다. 브라우저에서 추론 및 렌더링을 통합함으로써 '미래지향적'은 3DGS 계열 방법의 재현, 비교 및 배포 장벽을 크게 낮추어 재구성 및 생성 패러다임에 대한 통합된 세계 모델 플랫폼 역할을 합니다."
+    },
+    "summary": "1. '미래지향적'은 WebGPU를 기반으로 한 가우시안 스플래팅과 meshes 렌더링을 위한 웹네이티브 플랫폼으로, 가벼운 브라우저 환경에서 동적 신경 처리를 지원하며 표준화된 Gaussian Generator 계약을 도입하여 다양한 알고리즘을 쉽게 적용할 수 있습니다.\n2. 실험 결과에 따르면, '미래지향적'은 GPU 기반의 원시 정렬로 인해 기존 웹 뷰어보다 뛰어난 렌더링 효율을 얻으며 MLP 기반 3DGS, 신경 아바타 등 다양한 변형을 지원합니다.\n3. '미래지향적'은 브라우저에서 추론과 렌더링을 통합하여 3DGS 계열 방법의 재현, 비교, 및 배포 장벽을 낮추어 세계 모델을 재구성 및 생성하는데 획기적 역할을 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning",
+    "abstract": "We introduce Native Parallel Reasoner (NPR), a teacher-free framework that enables Large Language Models (LLMs) to self-evolve genuine parallel reasoning capabilities. NPR transforms the model from sequential emulation to native parallel cognition through three key innovations: 1) a self-distilled progressive training paradigm that transitions from ``cold-start'' format discovery to strict topological constraints without external supervision; 2) a novel Parallel-Aware Policy Optimization (PAPO) algorithm that optimizes branching policies directly within the execution graph, allowing the model to learn adaptive decomposition via trial and error; and 3) a robust NPR Engine that refactors memory management and flow control of SGLang to enable stable, large-scale parallel RL training. Across eight reasoning benchmarks, NPR trained on Qwen3-4B achieves performance gains of up to 24.5% and inference speedups up to 4.6x. Unlike prior baselines that often fall back to autoregressive decoding, NPR demonstrates 100% genuine parallel execution, establishing a new standard for self-evolving, efficient, and scalable agentic reasoning.",
+    "authors": [
+      "Tong Wu",
+      "Yang Liu",
+      "Jun Bai",
+      "Zixia Jia",
+      "Shuyi Zhang",
+      "Ziyong Lin",
+      "Yanting Wang",
+      "Song-Chun Zhu",
+      "Zilong Zheng"
+    ],
+    "likes": 71,
+    "published_date": "Dec 8",
+    "url": "https://huggingface.co/papers/2512.07461",
+    "date_collected": "2025-12-14T07:07:48.007713+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "본능적 병렬 추론자: 자가 증류 강화 학습을 통한 병렬 추론 (Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning)",
+      "abstract": "우리는 Native Parallel Reasoner (NPR)라는 선생님 없는 프레임워크를 소개합니다. 이는 대형 언어 모델(Large Language Models, LLMs)이 진정한 병렬 추론 능력을 자기 발전시킬 수 있게 합니다. NPR은 세 가지 주요 혁신을 통해 모델을 순차적 에뮬레이션에서 원래의 병렬 인식으로 변환합니다: 1) 외부 지도 없이 '스트릭트' 형식 발견으로 전환하는 자가 증류 점진적 훈련 패러다임; 2) 실행 그래프 내에서 분기 정책을 직접 최적화하는 새로운 병렬 인식 정책 최적화(PAPO) 알고리즘을 도입하여 모델이 시행착오를 통해 적응적 분해를 학습할 수 있게 함; 그리고 3) 안정적이고 대규모 병렬 강화 학습을 위해 SGLang의 메모리 관리 및 흐름 제어를 재구성하는 강력한 NPR 엔진. NPR은 Qwen3-4B에서 훈련된 결과로 8가지 추론 벤치마크에서 최대 24.5%의 성능 향상과 최대 4.6배의 추론 가속을 달성했습니다. 이전 기준이 종종 자기회귀 디코딩으로 되돌아가는 반면, NPR은 100% 진정한 병렬 실행을 보여주며 자가 발전, 효율적이고 확장 가능한 에이전트식 추론을 위한 새로운 표준을 세우고 있습니다."
+    },
+    "summary": "1. NPR은 자가 발전하는 진정한 병렬 추론 능력을 갖춘 LLMs를 위한 선생님 없는 프레임워크이다.\n2. PAPO 알고리즘을 통해 모델은 분기 정책을 최적화하여 시행착오를 통해 적응적 분해를 학습한다.\n3. NPR은 안정적이고 대규모 병렬 RL 훈련을 위한 NPR 엔진을 특징으로 하며, 성능 향상과 추론 속도 향상을 달성했다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground",
+    "abstract": "We introduce T-pro 2.0, an open-weight Russian LLM for hybrid reasoning and efficient inference. The model supports direct answering and reasoning-trace generation, using a Cyrillic-dense tokenizer and an adapted EAGLE speculative-decoding pipeline to reduce latency. To enable reproducible and extensible research, we release the model weights, the T-Wix 500k instruction corpus, the T-Math reasoning benchmark, and the EAGLE weights on Hugging Face. These resources allow users to study Russian-language reasoning and to extend or adapt both the model and the inference pipeline. A public web demo exposes reasoning and non-reasoning modes and illustrates the speedups achieved by our inference stack across domains. T-pro 2.0 thus serves as an accessible open system for building and evaluating efficient, practical Russian LLM applications.",
+    "authors": [
+      "Dmitrii Stoianov",
+      "Danil Taranets",
+      "Olga Tsymboi",
+      "Ramil Latypov",
+      "Almaz Dautov",
+      "Vladislav Kruglikov",
+      "Nikita Surkov",
+      "German Abramov",
+      "Pavel Gein",
+      "Dmitry Abulkhanov",
+      "Mikhail Gashkov",
+      "Viktor Zelenkovskiy",
+      "Artem Batalov",
+      "Aleksandr Medvedev",
+      "Anatolii Potapov"
+    ],
+    "likes": 66,
+    "published_date": "Dec 11",
+    "url": "https://huggingface.co/papers/2512.10430",
+    "date_collected": "2025-12-14T07:07:48.009222+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "T-pro 2.0: 효율적인 러시아어 하이브리드 추론 모델 및 플레이그라운드",
+      "abstract": "우리는 T-pro 2.0을 소개합니다, 하이브리드 추론과 효율적 추론을 위한 오픈 가중치 러시아어 LLM입니다. 이 모델은 직접 응답 및 추론 트레이스 생성을 지원하며, 시리릴 문자 밀집 토크나이저와 지연 시간을 줄이기 위한 적응된 EAGLE 추론-디코딩 파이프라인을 사용합니다. 재현 가능하고 확장 가능한 연구를 위해 모델 가중치, T-Wix 500k 지시어 말뭉치, T-Math 추론 벤치마크, 그리고 Hugging Face에서 EAGLE 가중치를 공개합니다. 이러한 자원들을 통해 사용자는 러시아어 추론을 연구하고 모델 및 추론 파이프라인을 확장하거나 적응할 수 있습니다. 공개 웹 데모는 추론과 비추론 모드를 노출하며, 우리의 추론 스택이 다양한 분야에서 얻은 가속화를 보여줍니다. 따라서 T-pro 2.0은 효율적이고 실용적인 러시아어 LLM 애플리케이션을 구축하고 평가하기 위한 접근 가능한 오픈 시스템으로 작용합니다."
+    },
+    "summary": "1. T-pro 2.0은 러시아어 하이브리드 추론 모델로, 직접적인 응답과 추론 트레이스 생성을 지원하며, 지연 시간을 줄이기 위해 특정 토크나이저와 추론 파이프라인을 사용합니다.\n2. 연구의 재현과 확장을 위해 모델 가중치, 지시어 말뭉치, 추론 벤치마크, 그리고 EAGLE 가중치를 Hugging Face에서 공개하며, 이는 사용자들이 모델과 추론 파이프라인을 연구하고 확장, 적응할 수 있게 합니다.\n3. 공개 웹 데모를 통해 얻은 속도 향상 뿐만 아니라, T-pro 2.0은 다양한 분야에서 추론 스택을 통해 이루어지는 가속화를 보여주며, 효율적이고 실용적인 러시아어 LLM 응용 프로그램을 구축하고 평가하는데 도움이 됩니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows",
+    "abstract": "Recent advances in large multi-modal generative models have demonstrated impressive capabilities in multi-modal generation, including image and video generation. These models are typically built upon multi-step frameworks like diffusion and flow matching, which inherently limits their inference efficiency (requiring 40-100 Number of Function Evaluations (NFEs)). While various few-step methods aim to accelerate the inference, existing solutions have clear limitations. Prominent distillation-based methods, such as progressive and consistency distillation, either require an iterative distillation procedure or show significant degradation at very few steps (< 4-NFE). Meanwhile, integrating adversarial training into distillation (e.g., DMD/DMD2 and SANA-Sprint) to enhance performance introduces training instability, added complexity, and high GPU memory overhead due to the auxiliary trained models. To this end, we propose TwinFlow, a simple yet effective framework for training 1-step generative models that bypasses the need of fixed pretrained teacher models and avoids standard adversarial networks during training, making it ideal for building large-scale, efficient models. On text-to-image tasks, our method achieves a GenEval score of 0.83 in 1-NFE, outperforming strong baselines like SANA-Sprint (a GAN loss-based framework) and RCGM (a consistency-based framework). Notably, we demonstrate the scalability of TwinFlow by full-parameter training on Qwen-Image-20B and transform it into an efficient few-step generator. With just 1-NFE, our approach matches the performance of the original 100-NFE model on both the GenEval and DPG-Bench benchmarks, reducing computational cost by 100times with minor quality degradation. Project page is available at https://zhenglin-cheng.com/twinflow.",
+    "authors": [
+      "Zhenglin Cheng",
+      "Peng Sun",
+      "Jianguo Li",
+      "Tao Lin"
+    ],
+    "likes": 66,
+    "published_date": "Dec 3",
+    "url": "https://huggingface.co/papers/2512.05150",
+    "date_collected": "2025-12-14T07:07:48.010312+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "TwinFlow: 자가 적대적 플로우를 활용한 대규모 모델에서의 일단계 생성 실현",
+      "abstract": "대규모 다중 모달 생성 모델의 최근 발전은 이미지 및 비디오 생성과 같은 다중 모달 생성 분야에서 놀라운 능력을 보여주었습니다. 본 논문에서는 기존의 몇 단계 프레임워크로 진행되는 이러한 모델들의 추론 효율성이 제약되어 있음을 지적하고, 새로운 프레임워크 TwinFlow를 제안하여 1단계 생성 모델의 효율적인 훈련을 가능하게 합니다."
+    },
+    "summary": "1. 대규모 다중 모달 생성 모델의 효율적인 훈련을 위해 TwinFlow라는 심플하면서 효율적인 프레임워크를 제안함.\n2. 기존의 몇 단계 방법론의 한계를 극복하며, 고성능의 1단계 생성 모델이 구축 가능함을 증명함.\n3. 텍스트를 이미지로 생성하는 작업에서 강력한 결과를 보여주며, 계산 비용을 현저히 줄이면서 품질 저하를 최소화함.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation",
+    "abstract": "The growing adoption of XR devices has fueled strong demand for high-quality stereo video, yet its production remains costly and artifact-prone. To address this challenge, we present StereoWorld, an end-to-end framework that repurposes a pretrained video generator for high-fidelity monocular-to-stereo video generation. Our framework jointly conditions the model on the monocular video input while explicitly supervising the generation with a geometry-aware regularization to ensure 3D structural fidelity. A spatio-temporal tiling scheme is further integrated to enable efficient, high-resolution synthesis. To enable large-scale training and evaluation, we curate a high-definition stereo video dataset containing over 11M frames aligned to natural human interpupillary distance (IPD). Extensive experiments demonstrate that StereoWorld substantially outperforms prior methods, generating stereo videos with superior visual fidelity and geometric consistency. The project webpage is available at https://ke-xing.github.io/StereoWorld/.",
+    "authors": [
+      "Ke Xing",
+      "Longfei Li",
+      "Yuyang Yin",
+      "Hanwen Liang",
+      "Guixun Luo",
+      "Chen Fang",
+      "Jue Wang",
+      "Konstantinos N. Plataniotis",
+      "Xiaojie Jin",
+      "Yao Zhao",
+      "Yunchao Wei"
+    ],
+    "likes": 63,
+    "published_date": "Dec 10",
+    "url": "https://huggingface.co/papers/2512.09363",
+    "date_collected": "2025-12-14T07:07:48.011669+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "스테레오월드: 지오메트리 인식 단안-스테레오 비디오 생성",
+      "abstract": "XR 기기의 증가로 고품질 스테레오 비디오에 대한 강한 수요가 증가했지만, 그 제작은 비용이 많이 들고 결함이 많이 발생합니다. 이러한 도전에 대처하기 위해, 우리는 스테레오월드를 제안합니다. 이는 사전 훈련된 비디오 생성기를 활용하여 고품질 단안-스테레오 비디오 생성을 위한 종단간 프레임워크입니다. 우리의 프레임워크는 모노클러 비디오 입력뿐만 아니라 지오메트리 인식 규제에 의도적으로 지도하여 3D 구조적 충실성을 보장합니다. 시공간 타일링 스키마가 더 추가되어 효율적이고 고해상도 합성이 가능해집니다. 대규모 훈련과 평가를 위해 자연인 간의 눈사이 거리에 정렬된 11백만 프레임 이상을 포함하는 고화질 스테레오 비디오 데이터셋을 만들었습니다. 광범위한 실험 결과, 스테레오월드가 이전 방법들보다 훨씬 뛰어나며 시각적 충실성과 기하학적 일관성이 우수한 스테레오 비디오를 생성한다는 것을 입증합니다. 프로젝트 웹페이지는 https://ke-xing.github.io/StereoWorld/에서 확인할 수 있습니다."
+    },
+    "summary": "1. XR 기기의 증가로 스테레오 비디오에 대한 수요가 늘어나고 있으나, 고품질 스테레오 비디오 제작은 여전히 고가이며 결함이 많이 발생하고 있습니다.\n2. 스테레오월드는 미리 훈련된 비디오 생성기를 활용하여 고품질 스테레오 비디오를 생성하기 위한 종단간 프레임워크로, 모노클러 비디오 입력을 기반으로 3D 구조적 충실성을 지키도록 설계되었습니다.\n3. 실험 결과, 스테레오월드는 이전 방법들에 비해 시각적 충실성과 기하학적 일관성이 뛰어난 스테레오 비디오를 생성함을 입증하며, 높은 해상도의 효율적 합성을 가능하게 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs",
+    "abstract": "Rotary Position Embeddings (RoPE) have become a standard for encoding sequence order in Large Language Models (LLMs) by applying rotations to query and key vectors in the complex plane. Standard implementations, however, utilize only the real component of the complex-valued dot product for attention score calculation. This simplification discards the imaginary component, which contains valuable phase information, leading to a potential loss of relational details crucial for modeling long-context dependencies. In this paper, we propose an extension that re-incorporates this discarded imaginary component. Our method leverages the full complex-valued representation to create a dual-component attention score. We theoretically and empirically demonstrate that this approach enhances the modeling of long-context dependencies by preserving more positional information. Furthermore, evaluations on a suite of long-context language modeling benchmarks show that our method consistently improves performance over the standard RoPE, with the benefits becoming more significant as context length increases. The code is available at https://github.com/OpenMOSS/rope_pp.",
+    "authors": [
+      "Xiaoran Liu",
+      "Yuerong Song",
+      "Zhigeng Liu",
+      "Zengfeng Huang",
+      "Qipeng Guo",
+      "Zhaoxiang Liu",
+      "Shiguo Lian",
+      "Ziwei He",
+      "Xipeng Qiu"
+    ],
+    "likes": 53,
+    "published_date": "Dec 8",
+    "url": "https://huggingface.co/papers/2512.07525",
+    "date_collected": "2025-12-14T07:07:48.012931+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "실제를 넘어선다: 장문맥 대언어모델을 위한 회전 위치 임베딩의 허구 확장",
+      "abstract": "회전 위치 임베딩(Rotary Position Embeddings, RoPE)은 복소평면 내에서 쿼리 및 키 벡터에 회전을 적용하여 순서를 인코딩하는데  Large Language Models (LLMs)에서 표준으로 채택되었습니다. 그러나 기존 방법은 복소값 점곱의 실수 성분만을 이용하여 어텐션 점수를 계산합니다. 본 논문에서는 이론적, 경험적으로 허구 성분을 재포함하여 장문맥 의존성을 모델링하는 방법을 제안하였습니다. 우리의 방법은 쿼리 및 키 간 전체 복소값 표현을 활용하여 이중 성분 어텐션 점수를 생성합니다. 실험 결과, 본 방법이 장문맥 의존성을 더욱 향상시킴을 이론과 경험을 통해 입증하였습니다."
+    },
+    "summary": "1. RoPE의 허구 성분을 활용한 어텐션 점수 적용으로 장문맥 의존성 모델링 향상.\n2. 복소값 표현을 이용한 새로운 방법론이 장문맥 언어모델 벤치마크에서 성능 향상을 보임.\n3. 기존 RoPE 대비 우수한 성능을 나타내며, 문맥 길이가 증가할수록 그 효과가 더 큼.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality",
+    "abstract": "Video face swapping is crucial in film and entertainment production, where achieving high fidelity and temporal consistency over long and complex video sequences remains a significant challenge. Inspired by recent advances in reference-guided image editing, we explore whether rich visual attributes from source videos can be similarly leveraged to enhance both fidelity and temporal coherence in video face swapping. Building on this insight, this work presents LivingSwap, the first video reference guided face swapping model. Our approach employs keyframes as conditioning signals to inject the target identity, enabling flexible and controllable editing. By combining keyframe conditioning with video reference guidance, the model performs temporal stitching to ensure stable identity preservation and high-fidelity reconstruction across long video sequences. To address the scarcity of data for reference-guided training, we construct a paired face-swapping dataset, Face2Face, and further reverse the data pairs to ensure reliable ground-truth supervision. Extensive experiments demonstrate that our method achieves state-of-the-art results, seamlessly integrating the target identity with the source video's expressions, lighting, and motion, while significantly reducing manual effort in production workflows. Project webpage: https://aim-uofa.github.io/LivingSwap",
+    "authors": [
+      "Zekai Luo",
+      "Zongze Du",
+      "Zhouhang Zhu",
+      "Hao Zhong",
+      "Muzhi Zhu",
+      "Wen Wang",
+      "Yuling Xi",
+      "Chenchen Jing",
+      "Hao Chen",
+      "Chunhua Shen"
+    ],
+    "likes": 45,
+    "published_date": "Dec 8",
+    "url": "https://huggingface.co/papers/2512.07951",
+    "date_collected": "2025-12-14T07:07:48.014251+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "소스 비디오 현실감 보존: 시네마틱 퀄리티를 위한 고품질 얼굴 스왑",
+      "abstract": "비디오 얼굴 스왑은 영화와 엔터테인먼트 제작에서 중요한데, 복잡한 장면이 포함된 장비디오 시퀀스에서 고품질과 시간적 일관성을 유지하는 것은 여전히 중요한 과제입니다. 최근의 참조 안내 이미지 편집 기술 발전에 영감받아, 소스 비디오로부터 풍부한 시각적 속성이 비디오 얼굴 스왑의 품질과 시간적 일관성을 향상시키는 데 활용될 수 있는지 탐구합니다. 이 연구는 LivingSwap을 제안하며, 비디오 참조안내에 기반한 얼굴 스왑 모델입니다. 이 방법은 대상 신원을 주입하도록 키 프레임을 사용하여 편리하고 조작 가능한 편집을 가능케 합니다. 키 프레임 조건부와 비디오 참조 안내를 결합하여 모델이 안정적인 신원 보존 및 장비디오 시퀀스 전체에서 고품질 재구성을 보장하기 위한 시간적 스티칭을 수행합니다. 참조 안내 학습용 데이터의 희소성을 해결하기 위해, Face2Face라는 짝 얼굴 스왑 데이터셋을 구축하고 데이터 쌍을 반전하여 신뢰할 수 있는 그라운드 트루스 감독을 보장합니다. 다양한 실험 결과는 우리의 방법이 최첨단 결과를 달성하며, 대상 신원을 소스 비디오의 표정, 조명 및 동작과 통합함으로써 제작 워크플로우에서의 수동 프로세스를 크게 줄였음을 보여줍니다. 프로젝트 웹페이지: https://aim-uofa.github.io/LivingSwap"
+    },
+    "summary": "1. LivingSwap은 비디오 참조 안내에 기반한 첫 얼굴 스왑 모델로, 키 프레임을 활용하여 대상 신원을 주입하여 편집 가능하고 안정적인 신원 보존과 고품질 재구성을 제공합니다.\n2. Face2Face 데이터셋을 구축하여 신뢰할 수 있는 학습을 실현하고, 실험 결과는 우수한 성과를 보여주며 대상 신원을 소스 비디오와 통합합니다.\n3. LivingSwap은 제작 과정에서의 수동 프로세스를 크게 줄여줌으로써 대상 신원을 소스 비디오와 자연스럽게 통합하여 영화와 엔터테인먼트 제작 과정을 향상시킵니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory",
+    "abstract": "Storytelling in real-world videos often unfolds through multiple shots -- discontinuous yet semantically connected clips that together convey a coherent narrative. However, existing multi-shot video generation (MSV) methods struggle to effectively model long-range cross-shot context, as they rely on limited temporal windows or single keyframe conditioning, leading to degraded performance under complex narratives. In this work, we propose OneStory, enabling global yet compact cross-shot context modeling for consistent and scalable narrative generation. OneStory reformulates MSV as a next-shot generation task, enabling autoregressive shot synthesis while leveraging pretrained image-to-video (I2V) models for strong visual conditioning. We introduce two key modules: a Frame Selection module that constructs a semantically-relevant global memory based on informative frames from prior shots, and an Adaptive Conditioner that performs importance-guided patchification to generate compact context for direct conditioning. We further curate a high-quality multi-shot dataset with referential captions to mirror real-world storytelling patterns, and design effective training strategies under the next-shot paradigm. Finetuned from a pretrained I2V model on our curated 60K dataset, OneStory achieves state-of-the-art narrative coherence across diverse and complex scenes in both text- and image-conditioned settings, enabling controllable and immersive long-form video storytelling.",
+    "authors": [
+      "Zhaochong An",
+      "Menglin Jia",
+      "Haonan Qiu",
+      "Zijian Zhou",
+      "Xiaoke Huang",
+      "Zhiheng Liu",
+      "Weiming Ren",
+      "Kumara Kahatapitiya",
+      "Ding Liu",
+      "Sen He",
+      "Chenyang Zhang",
+      "Tao Xiang",
+      "Fanny Yang",
+      "Serge Belongie",
+      "Tian Xie"
+    ],
+    "likes": 42,
+    "published_date": "Dec 8",
+    "url": "https://huggingface.co/papers/2512.07802",
+    "date_collected": "2025-12-14T07:07:48.015802+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "일문일답식 메모리를 이용한 일관된 다중 샷 비디오 생성",
+      "abstract": "현실 세계 비디오에서의 스토리텔링은 종종 여러 샷을 통해 전개됩니다. 연속하지 않지만 의미적으로 연결된 클립들이 함께 일관된 이야기를 전달합니다. 그러나 기존의 다중 샷 비디오 생성 방법은 장거리 교차 샷 컨텍스트를 효과적으로 모델링하기 어렵습니다. 이는 제한된 시간 창 또는 단일 키프레임 조건에 의존하여 복잡한 이야기에서 성능이 하락합니다. 본 연구에서는 OneStory를 제안하여, 강인하고 확장 가능한 이야기 생성을 위해 전역적이면서 간결한 교차 샷 컨텍스트 모델링을 가능하게 합니다."
+    },
+    "summary": "1. OneStory는 다중 샷 비디오 생성을 다음 샷 생성 과제로 재구성하여, 사전 훈련된 이미지-비디오 모델을 활용하여 강력한 시각적 조건부를 제공합니다.\n2. Frame Selection 모듈은 이전 샷에서 정보가 풍부한 프레임을 기반으로 의미 있는 전역 메모리를 구성하며, Adaptive Conditioner는 중요성에 따라 가이드된 패치화를 수행하여 직접 조건부에 조밀한 컨텍스트를 생성합니다.\n3. OneStory는 고품질의 다중 샷 데이터셋을 사용하여, 다양하고 복잡한 장면에서 텍스트 및 이미지에 대한 상태-of-the-art 이야기 일관성을 달성하며, 제어 가능하고 몰입적인 장편 비디오 스토리텔링을 가능하게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Unified Video Editing with Temporal Reasoner",
+    "abstract": "Existing video editing methods face a critical trade-off: expert models offer precision but rely on task-specific priors like masks, hindering unification; conversely, unified temporal in-context learning models are mask-free but lack explicit spatial cues, leading to weak instruction-to-region mapping and imprecise localization. To resolve this conflict, we propose VideoCoF, a novel Chain-of-Frames approach inspired by Chain-of-Thought reasoning. VideoCoF enforces a ``see, reason, then edit\" procedure by compelling the video diffusion model to first predict reasoning tokens (edit-region latents) before generating the target video tokens. This explicit reasoning step removes the need for user-provided masks while achieving precise instruction-to-region alignment and fine-grained video editing. Furthermore, we introduce a RoPE alignment strategy that leverages these reasoning tokens to ensure motion alignment and enable length extrapolation beyond the training duration. We demonstrate that with a minimal data cost of only 50k video pairs, VideoCoF achieves state-of-the-art performance on VideoCoF-Bench, validating the efficiency and effectiveness of our approach. Our code, weight, data are available at https://github.com/knightyxp/VideoCoF.",
+    "authors": [
+      "Xiangpeng Yang",
+      "Ji Xie",
+      "Yiyuan Yang",
+      "Yan Huang",
+      "Min Xu",
+      "Qiang Wu"
+    ],
+    "likes": 42,
+    "published_date": "Dec 8",
+    "url": "https://huggingface.co/papers/2512.07469",
+    "date_collected": "2025-12-14T07:07:48.016958+09:00",
+    "week": "2025-W50",
+    "translation": {
+      "title": "시간적 추론기를 활용한 통합 비디오 편집",
+      "abstract": "기존 비디오 편집 방법은 전문가 모델이 정확성을 제공하지만 마스크와 같은 작업 특정 선행 조건에 의존하여 통합이 어렵다는 문제에 직면한다. 이에 우리는 Chain-of-Thought 추론에서 영감을 받은 새로운 Chain-of-Frames 접근 방식인 VideoCoF를 제안한다. VideoCoF는 비디오 확산 모델이 먼저 추론 토큰 (편집 영역 잠재 변수)을 예측한 후 대상 비디오 토큰을 생성함으로써 \"보고, 추론한 뒤 편집\" 절차를 강제한다. 이 명시적 추론 단계는 사용자 제공 마스크의 필요성을 제거하면서 정확한 지역 매핑과 정교한 비디오 편집을 달성한다. 더불어, 우리는 RoPE 정렬 전략을 소개하여 이러한 추론 토큰을 활용하여 움직임 정렬을 보장하고 훈련 기간을 초과한 길이 추정을 가능하게 한다. 본 연구에서는 50k 비디오 쌍의 최소 데이터 비용으로 VideoCoF가 VideoCoF-Bench에서 최고 수준의 성능을 달성함으로써 접근 방식의 효율성과 효과성을 검증한다. 코드, 가중치, 데이터는 https://github.com/knightyxp/VideoCoF에서 제공된다."
+    },
+    "summary": "1. 전문가 모델의 정확성과 마스크 없이 통합된 편집을 가능케 하는 VideoCoF가 소개되었다.\n2. VideoCoF는 추론 토큰을 먼저 예측하여 사용자 제공 마스크를 필요로 하지 않고 정확한 편집을 실현한다.\n3. RoPE 정렬 전략을 도입하여 움직임 정렬과 훈련 길이를 초과한 추정을 가능케 하는 VideoCoF의 효율성이 입증되었다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  }
+]

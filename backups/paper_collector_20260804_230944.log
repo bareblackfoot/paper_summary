@@ -1,0 +1,121 @@
+=== Paper Collection Started at Mon Aug  3 23:10:24 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W32
+URL: https://huggingface.co/papers/week/2026-W32
+Found 10 papers in weekly view
+Fetching likes for: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Fetching likes for: Mental World Modeling
+Fetching likes for: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Fetching likes for: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Fetching likes for: AISPA: User-Centric System Prompt Auditing for Large Language Model Applications
+Fetching likes for: N_0-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation
+Fetching likes for: Scaling Properties of Text Conditioning in Visual Generation
+Fetching likes for: SAF-OPD: Stable Advantage Fusion for On-Policy Distillation
+Fetching likes for: QQWorld: Quantile-Quantile Matching for World Model Regularization
+Fetching likes for: Fewer Clarifications, Better Code: Benchmarking Cross-Session Personalized Ambiguity Adaptation in Coding Assistants
+Selected top 10 papers by likes:
+1. From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement (71 likes)
+2. Mental World Modeling (52 likes)
+3. N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens (49 likes)
+4. Meshy T2: Fast Native Mesh Generation with Flow Matching (41 likes)
+5. AISPA: User-Centric System Prompt Auditing for Large Language Model Applications (30 likes)
+6. N_0-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation (27 likes)
+7. Scaling Properties of Text Conditioning in Visual Generation (23 likes)
+8. SAF-OPD: Stable Advantage Fusion for On-Policy Distillation (23 likes)
+9. QQWorld: Quantile-Quantile Matching for World Model Regularization (23 likes)
+10. Fewer Clarifications, Better Code: Benchmarking Cross-Session Personalized Ambiguity Adaptation in Coding Assistants (19 likes)
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-orient...
+Processed paper: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Found abstract: World models enable a predictive substrate for planning and action, yet existing formulations merely...
+Processed paper: Mental World Modeling
+Found abstract: We present N_0-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-gr...
+Processed paper: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Found abstract: Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high...
+Processed paper: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Found abstract: System prompts are instructions configured by developers to govern the behaviors of foundation model...
+Processed paper: AISPA: User-Centric System Prompt Auditing for Large Language Model Applications
+Found abstract: We present N_0-TWAM, a tactile-native world-action model for contact-rich manipulation that predicts...
+Processed paper: N_0-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation
+Found abstract: We study empirical scaling properties for text conditioning in visual generation. Such properties ha...
+Processed paper: Scaling Properties of Text Conditioning in Visual Generation
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) broadcasts a single response-level reward to e...
+Processed paper: SAF-OPD: Stable Advantage Fusion for On-Policy Distillation
+Found abstract: Latent world models enable efficient planning by predicting future states in a compact representatio...
+Processed paper: QQWorld: Quantile-Quantile Matching for World Model Regularization
+Found abstract: AI-assisted coding increasingly translates informal user intent into executable software, yet coding...
+Processed paper: Fewer Clarifications, Better Code: Benchmarking Cross-Session Personalized Ambiguity Adaptation in Coding Assistants
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  18
+Update date_collected: 2026-08-04T08:10:32.265290+09:00  ->  2026-08-03T13:34:02.151618+09:00
+
+Processing paper 2/10
+Title: Mental World Modeling
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  9
+Update date_collected: 2026-08-04T08:10:32.269589+09:00  ->  2026-08-03T13:34:02.161082+09:00
+
+Processing paper 4/10
+Title: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Paper already exists, checking if translation is complete...
+Update likes: 41  ->  7
+Update date_collected: 2026-08-04T08:10:32.271922+09:00  ->  2026-08-03T13:34:02.164129+09:00
+
+Processing paper 5/10
+Title: AISPA: User-Centric System Prompt Auditing for Large Language Model Applications
+Paper already exists, checking if translation is complete...
+Update likes: 30  ->  16
+Update date_collected: 2026-08-04T08:10:32.274910+09:00  ->  2026-08-03T13:34:02.155595+09:00
+
+Processing paper 6/10
+Title: N_0-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Scaling Properties of Text Conditioning in Visual Generation
+Paper already exists, checking if translation is complete...
+Update likes: 23  ->  5
+Update date_collected: 2026-08-04T08:10:32.278892+09:00  ->  2026-08-03T13:34:02.166762+09:00
+
+Processing paper 8/10
+Title: SAF-OPD: Stable Advantage Fusion for On-Policy Distillation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: QQWorld: Quantile-Quantile Matching for World Model Regularization
+Paper already exists, checking if translation is complete...
+Update likes: 23  ->  11
+Update date_collected: 2026-08-04T08:10:32.283084+09:00  ->  2026-08-03T13:34:02.158163+09:00
+
+Processing paper 10/10
+Title: Fewer Clarifications, Better Code: Benchmarking Cross-Session Personalized Ambiguity Adaptation in Coding Assistants
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W32.json...
+
+Updating Notion database...
+Updating paper: RLVR에서 RLSVR로: 과제 변환이 열린 마음의 LLM 자가 향상을 유도합니다 (likes: 18 -> 71)
+Creating new paper: 정신적 세계 모델링
+Updating paper: N_0-VTLA: 잠재적 촉각 토큰을 활용한 비전-촉각-언어-동작 모델의 확장 (likes: 9 -> 49)
+Updating paper: Meshy T2: 플로우 매칭을 이용한 빠른 원시 매쉬 생성 (likes: 7 -> 41)
+Updating paper: 대형 언어 모델 응용 프로그램을 위한 사용자 중심 시스템 프롬프트 감사(AISPA) (likes: 16 -> 30)
+Creating new paper: N_0-TWAM: 접촉 기반 조작을 위한 첨감 기반 세계-동작 모델 확장
+Updating paper: 시각 생성에서의 텍스트 조건화의 스케일링 속성 (likes: 5 -> 23)
+Creating new paper: 안정적 이점 퓨전을 위한 온-폴리시 증류 (Stable Advantage Fusion for On-Policy Distillation)
+Updating paper: QQWorld: 세계 모델 정규화를 위한 분위수-분위수 매칭 (likes: 11 -> 23)
+Creating new paper: 더 적은 명확화, 더 좋은 코드: 코딩 어시스턴트에서의 세션 간 맞춤형 모호성 적응력 평가
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Aug  3 23:11:51 UTC 2026 ===
+

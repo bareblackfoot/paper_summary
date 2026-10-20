@@ -1,0 +1,123 @@
+=== Paper Collection Started at Wed Aug 19 22:31:05 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W34
+URL: https://huggingface.co/papers/week/2026-W34
+Found 10 papers in weekly view
+Fetching likes for: StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling
+Fetching likes for: Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination
+Fetching likes for: Self-Supervised Visual On-Policy Distillation
+Fetching likes for: Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization
+Fetching likes for: Demystifying Agent Skills: Why They Work-Until They Don't
+Fetching likes for: HarnessEval-W: Agentifying the Evaluation of Visual Worlds
+Fetching likes for: Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements
+Fetching likes for: Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search
+Fetching likes for: FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution
+Fetching likes for: VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?
+Selected top 10 papers by likes:
+1. StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling (355 likes)
+2. Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination (270 likes)
+3. Self-Supervised Visual On-Policy Distillation (161 likes)
+4. Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization (142 likes)
+5. Demystifying Agent Skills: Why They Work-Until They Don't (121 likes)
+6. HarnessEval-W: Agentifying the Evaluation of Visual Worlds (116 likes)
+7. Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements (91 likes)
+8. Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search (58 likes)
+9. FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution (57 likes)
+10. VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End? (53 likes)
+Found abstract: Long-horizon agents can fail even when their underlying models can solve the constituent steps. They...
+Processed paper: StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling
+Found abstract: Recent video generators can fabricate realistic depictions of wars, disasters, public emergencies, a...
+Processed paper: Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination
+Found abstract: Visual on-policy distillation relies heavily on an informative teacher-student asymmetry, through ei...
+Processed paper: Self-Supervised Visual On-Policy Distillation
+Found abstract: Reinforcement learning (RL) with group-relative advantages has become the de facto standard for post...
+Processed paper: Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization
+Found abstract: Skills have emerged as a practical and effective approach for enhancing LLM agents at inference time...
+Processed paper: Demystifying Agent Skills: Why They Work-Until They Don't
+Found abstract: A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the rea...
+Processed paper: HarnessEval-W: Agentifying the Evaluation of Visual Worlds
+Found abstract: Reinforcement Learning (RL) has been promising in single-turn LLM fine-tuning. However, long-horizon...
+Processed paper: Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements
+Found abstract: Scientific discovery often involves optimising expensive-to-evaluate objectives over vast, structure...
+Processed paper: Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search
+Found abstract: Frontier open-weight models are increasingly available, but serving them still largely assumes datac...
+Processed paper: FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution
+Found abstract: Constructing an interactive 3D open world from a user query is important. However, existing methods ...
+Processed paper: VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling
+Paper already exists, checking if translation is complete...
+Update likes: 355  ->  90
+Update date_collected: 2026-08-20T07:31:14.106276+09:00  ->  2026-08-19T07:30:37.431169+09:00
+
+Processing paper 2/10
+Title: Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination
+Paper already exists, checking if translation is complete...
+Update likes: 270  ->  267
+Update date_collected: 2026-08-20T07:31:14.109895+09:00  ->  2026-08-19T07:30:37.423006+09:00
+
+Processing paper 3/10
+Title: Self-Supervised Visual On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 161  ->  158
+Update date_collected: 2026-08-20T07:31:14.112165+09:00  ->  2026-08-19T07:30:37.425579+09:00
+
+Processing paper 4/10
+Title: Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 142  ->  44
+Update date_collected: 2026-08-20T07:31:14.114537+09:00  ->  2026-08-19T07:30:37.441684+09:00
+
+Processing paper 5/10
+Title: Demystifying Agent Skills: Why They Work-Until They Don't
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: HarnessEval-W: Agentifying the Evaluation of Visual Worlds
+Paper already exists, checking if translation is complete...
+Update likes: 116  ->  110
+Update date_collected: 2026-08-20T07:31:14.119704+09:00  ->  2026-08-19T07:30:37.428968+09:00
+
+Processing paper 7/10
+Title: Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  49
+Update date_collected: 2026-08-20T07:31:14.124230+09:00  ->  2026-08-19T07:30:37.436333+09:00
+
+Processing paper 9/10
+Title: FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?
+Paper already exists, checking if translation is complete...
+Update likes: 53  ->  51
+Update date_collected: 2026-08-20T07:31:14.128813+09:00  ->  2026-08-19T07:30:37.433590+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W34.json...
+
+Updating Notion database...
+Updating paper: StateM: Terminal-Bench 2.1에서 \$15의 비용으로 95.3%의 정확도 도달 (likes: 90 -> 355)
+Updating paper: 실제 위기 사건에서 AI 생성 비디오 공격으로부터 어떻게 방어할까요? 탐지기, 생성기 및 사회적 전파의 체계적 평가 (likes: 267 -> 270)
+Updating paper: 자기 감독 비주장적 시각적 온-폴리시 디스틸레이션 (likes: 158 -> 161)
+Updating paper: 익히키디안 학습보다 남은 것을 배우라: 다중보상 정책 최적화를 위한 포화 인식 어드밴티지 가중치 재조정 (likes: 44 -> 142)
+Creating new paper: 에이전트 스킬 해부: 왜 그들은 작동하는가 - 그들이 작동하지 않을 때까지
+Updating paper: 시각 세계의 평가를 에이전트화하는 HarnessEval-W (likes: 110 -> 116)
+Creating new paper: 에이전틱 ESOpt: 최소 GPU 요구사항으로 장기간 LLM 에이전트 세밀 조정
+Updating paper: 대규모 발견 모델: 경험적으로 기반을 둔 모델 기반 오픈엔드 검색 (likes: 49 -> 58)
+Creating new paper: FreeToken: 효율적인 엣지 네이티브 MoE 서빙 시스템과 대역폭 적응 실행
+Updating paper: 멜로월딩: 다중모달 에이전트가 끝에서 끝으로 3D 오픈 월드를 구축할 수 있을까? (likes: 51 -> 53)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Aug 19 22:32:23 UTC 2026 ===
+

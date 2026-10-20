@@ -1,0 +1,28 @@
+=== Paper Collection Started at Mon Jun 29 01:50:14 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W27
+URL: https://huggingface.co/papers/week/2026-W27
+Found 1 papers in weekly view
+Fetching likes for: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Selected top 10 papers by likes:
+1. PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation (0 likes)
+Found abstract: Video generation models have emerged as a promising paradigm for embodied world simulation. However,...
+Processed paper: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Collected top 1 papers. Starting summary generation...
+
+Processing paper 1/1
+Title: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Generating Korean translation and summary...
+
+Processed 1 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W27.json...
+
+Updating Notion database...
+Creating new paper: 로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 29 01:50:27 UTC 2026 ===
+

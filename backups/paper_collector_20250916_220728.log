@@ -1,0 +1,135 @@
+=== Paper Collection Started at Mon Sep 15 22:07:32 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W38
+URL: https://huggingface.co/papers/week/2025-W38
+Found 10 papers in weekly view
+Fetching likes for: IntrEx: A Dataset for Modeling Engagement in Educational Conversations
+Fetching likes for: InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis
+Fetching likes for: The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs
+Fetching likes for: X-Part: high fidelity and structure coherent shape decomposition
+Fetching likes for: HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering
+Fetching likes for: VStyle: A Benchmark for Voice Style Adaptation with Spoken Instructions
+Fetching likes for: Virtual Agent Economies
+Fetching likes for: FLOWER: Democratizing Generalist Robot Policies with Efficient
+  Vision-Language-Action Flow Policies
+Fetching likes for: Inpainting-Guided Policy Optimization for Diffusion Large Language
+  Models
+Fetching likes for: QuantAgent: Price-Driven Multi-Agent LLMs for High-Frequency Trading
+Selected top 10 papers by likes:
+1. IntrEx: A Dataset for Modeling Engagement in Educational Conversations (21 likes)
+2. InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis (18 likes)
+3. The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs (18 likes)
+4. X-Part: high fidelity and structure coherent shape decomposition (17 likes)
+5. HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering (13 likes)
+6. VStyle: A Benchmark for Voice Style Adaptation with Spoken Instructions (9 likes)
+7. Virtual Agent Economies (8 likes)
+8. FLOWER: Democratizing Generalist Robot Policies with Efficient
+  Vision-Language-Action Flow Policies (7 likes)
+9. Inpainting-Guided Policy Optimization for Diffusion Large Language
+  Models (6 likes)
+10. QuantAgent: Price-Driven Multi-Agent LLMs for High-Frequency Trading (4 likes)
+Found abstract: Engagement and motivation are crucial for second-language acquisition, yet
+maintaining learner inter...
+Processed paper: IntrEx: A Dataset for Modeling Engagement in Educational Conversations
+Found abstract: Arbitrary resolution image generation provides a consistent visual experience
+across devices, having...
+Processed paper: InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis
+Found abstract: Does continued scaling of large language models (LLMs) yield diminishing
+returns? Real-world value o...
+Processed paper: The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs
+Found abstract: Generating 3D shapes at part level is pivotal for downstream applications
+such as mesh retopology, U...
+Processed paper: X-Part: high fidelity and structure coherent shape decomposition
+Found abstract: The Retrieval-Augmented Generation (RAG) approach enhances question-answering
+systems and dialogue g...
+Processed paper: HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering
+Found abstract: Spoken language models (SLMs) have emerged as a unified paradigm for speech
+understanding and genera...
+Processed paper: VStyle: A Benchmark for Voice Style Adaptation with Spoken Instructions
+Found abstract: The rapid adoption of autonomous AI agents is giving rise to a new economic
+layer where agents trans...
+Processed paper: Virtual Agent Economies
+Found abstract: Developing efficient Vision-Language-Action (VLA) policies is crucial for
+practical robotics deploym...
+Processed paper: FLOWER: Democratizing Generalist Robot Policies with Efficient
+  Vision-Language-Action Flow Policies
+Found abstract: Masked diffusion large language models (dLLMs) are emerging as promising
+alternatives to autoregress...
+Processed paper: Inpainting-Guided Policy Optimization for Diffusion Large Language
+  Models
+Found abstract: Recent advances in Large Language Models (LLMs) have demonstrated impressive
+capabilities in financi...
+Processed paper: QuantAgent: Price-Driven Multi-Agent LLMs for High-Frequency Trading
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: IntrEx: A Dataset for Modeling Engagement in Educational Conversations
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: X-Part: high fidelity and structure coherent shape decomposition
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: VStyle: A Benchmark for Voice Style Adaptation with Spoken Instructions
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Virtual Agent Economies
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: FLOWER: Democratizing Generalist Robot Policies with Efficient
+  Vision-Language-Action Flow Policies
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Inpainting-Guided Policy Optimization for Diffusion Large Language
+  Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: QuantAgent: Price-Driven Multi-Agent LLMs for High-Frequency Trading
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W38.json...
+
+Updating Notion database...
+Creating new paper: 교육 대화에서 참여 모델링을 위한 데이터셋 IntrEx
+Creating new paper: 해상도 무관한 확장 가능한 이미지 합성을 위한 InfGen 패러다임
+Creating new paper: 감소 수익의 환상: LLM에서의 장기 실행 측정
+Creating new paper: X-Part: 고운 형태 분해를 위한 높은 정밀도와 구조 일관성
+Creating new paper: HANRAG: 휴리스틱 정확도 노이즈에 강한 검색 증가 생성을 위한
+Creating new paper: VStyle: 발화 지침에 대한 음성 스타일 적응을 위한 벤치마크
+Creating new paper: 가상 에이전트 경제학
+Creating new paper: FLOWER: 효율적인 시각-언어-행동 흐름 정책으로 일반적인 로봇 정책 민주화
+Creating new paper: 인페인팅-인도된 정책 최적화를 위한 확산 대형 언어 모델
+Creating new paper: 고빈도 거래를 위한 가격 중심 다중 에이전트 LLMs: QuantAgent
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Sep 15 22:09:45 UTC 2025 ===
+

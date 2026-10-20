@@ -1,0 +1,341 @@
+[
+  {
+    "title": "A Theoretical Study on Bridging Internal Probability and\n  Self-Consistency for LLM Reasoning",
+    "abstract": "Test-time scaling seeks to improve the reasoning performance of large\nlanguage models (LLMs) by adding computational resources. A prevalent approach\nwithin the field is sampling-based test-time scaling methods, which enhance\nreasoning by generating multiple reasoning paths for a given input during\ninference. However, despite its practical success, the theoretical foundations\nremain underexplored. In this paper, we provide the first theoretical framework\nfor analyzing sampling-based test-time scaling methods, grounded in the\nperspective of confidence estimation. Based on the framework, we analyze two\ndominant paradigms: self-consistency and perplexity, and reveal key\nlimitations: self-consistency suffers from high estimation error while\nperplexity exhibits substantial modeling error and possible degradation of the\nestimation error convergence. To address these limitations, we introduce RPC, a\nhybrid method that leverages our theoretical insights through two key\ncomponents: Perplexity Consistency and Reasoning Pruning. Perplexity\nConsistency combines the strengths of self-consistency and perplexity, boosting\nthe convergence rate of estimation error from linear to exponential while\npreserving model error. Reasoning Pruning prevents degradation by eliminating\nlow-probability reasoning paths. Both theoretical analysis and empirical\nresults across seven benchmark datasets demonstrate that RPC has a strong\npotential for reducing reasoning error. Notably, RPC achieves reasoning\nperformance comparable to self-consistency while not only enhancing confidence\nreliability but also reducing sampling costs by 50%. The code and resources are\navailable at https://wnjxyk.github.io/RPC.",
+    "authors": [
+      "Zhi Zhou",
+      "Yuhao Tan",
+      "Zenan Li",
+      "Yuan Yao",
+      "Lan-Zhe Guo",
+      "Yu-Feng Li",
+      "Xiaoxing Ma"
+    ],
+    "likes": 134,
+    "published_date": "Oct 17",
+    "url": "https://huggingface.co/papers/2510.15444",
+    "date_collected": "2025-10-25T07:08:02.139595+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "내부 확률과 자기 일관성을 이어주는 LLM 추론에 관한 이론적 연구",
+      "abstract": "테스트 시간 스케일링은 대규모 언어 모델 (LLMs)의 추론 성능을 향상시키기 위해 컴퓨팅 자원을 추가하는 것을 목표로 합니다. 이 분야에서 빈번히 사용되는 방법 중 하나는 샘플링 기반 테스트 시간 스케일링 방법으로, 추론 중에 특정 입력에 대해 여러 추론 경로를 생성하여 추론을 강화합니다. 그러나 실용적인 성공에도 불구하고, 그 이론적 기초는 미개척된 상태입니다. 본 논문에서는 확신 추정 관점에서 베이스가 되는 샘플링 기반 테스트 시간 스케일링 방법을 분석하는 첫 번째 이론적 프레임워크를 제공합니다. 해당 프레임워크를 기반으로, 우리는 자기 일관성과 헷갈림 두 가지 우세한 패러다임을 분석하고, 자기 일관성은 추정 오차가 높은 반면에, 헷갈림은 상당한 모델링 오차와 추정 오차 수렴의 가능성이 존재함을 밝힙니다. 이러한 한계를 극복하기 위해, 우리는 RPC라는 두 가지 주요 구성 요소를 통해 이론적 통찰력을 활용하는 하이브리드 방법을 소개합니다. 헷갈림 일관성은 자기 일관성과 헷갈림의 장점을 결합하여 추정 오차의 수렴 속도를 선형에서 지수적으로 향상시키면서도 모델 오류를 보존합니다. 추론 마감은 낮은 확률의 추론 경로를 제거함으로써 저하를 방지합니다. 일곱 가지 벤치마크 데이터셋에서 이론적 분석과 경험적 결과 모두 RPC가 추론 오차를 줄이는 강력한 잠재력을 보여줍니다. 특히, RPC는 자기 일관성에 준하는 추론 성능을 보이면서도, 자신감 신뢰성을 향상시키고 샘플링 비용을 50% 줄이는 장점을 가지고 있습니다. 코드 및 자원은 https://wnjxyk.github.io/RPC에서 사용 가능합니다."
+    },
+    "summary": "1. 대규모 언어 모델 추론 성능을 개선하기 위해 샘플링 기반 테스트 시간 스케일링 방법에 대한 이론적 프레임워크 개발.\n2. 이론적 관점에서 자기 일관성과 헷갈림을 분석하고, 그 중 자기 일관성의 추정 오차와 헷갈림의 모델링 오차를 해결하기 위한 RPC 방법 소개.\n3. RPC는 추론 오류를 줄이는데 강한 잠재력을 보여주며, 자기 일관성과 비교 가능한 추론 성능을 유지하면서 샘플링 비용을 절반으로 줄이는 효과를 가짐.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "Efficient Long-context Language Model Training by Core Attention\n  Disaggregation",
+    "abstract": "We present core attention disaggregation (CAD), a technique that improves\nlong-context large language model training by decoupling the core attention\ncomputation, softmax(QK^T)V, from the rest of the model and executing it on a\nseparate pool of devices. In existing systems, core attention is colocated with\nother layers; at long context lengths, its quadratic compute growth compared to\nthe near-linear growth of other components causes load imbalance and stragglers\nacross data and pipeline parallel groups. CAD is enabled by two observations.\nFirst, core attention is stateless: it has no trainable parameters and only\nminimal transient data, so balancing reduces to scheduling compute-bound tasks.\nSecond, it is composable: modern attention kernels retain high efficiency when\nprocessing fused batches of token-level shards with arbitrary lengths. CAD\npartitions core attention into token-level tasks and dispatches them to\ndedicated attention servers, which dynamically rebatch tasks to equalize\ncompute without sacrificing kernel efficiency. We implement CAD in a system\ncalled DistCA, which uses a ping-pong execution scheme to fully overlap\ncommunication with computation and in-place execution on attention servers to\nreduce memory use. On 512 H200 GPUs and context lengths up to 512k tokens,\nDistCA improves end-to-end training throughput by up to 1.35x, eliminates data\nand pipeline parallel stragglers, and achieves near-perfect compute and memory\nbalance.",
+    "authors": [
+      "Yonghao Zhuang",
+      "Junda Chen",
+      "Bo Pang",
+      "Yi Gu",
+      "Yibo Zhu",
+      "Yimin Jiang",
+      "Ion Stoica",
+      "Eric Xing",
+      "Hao Zhang"
+    ],
+    "likes": 100,
+    "published_date": "Oct 20",
+    "url": "https://huggingface.co/papers/2510.18121",
+    "date_collected": "2025-10-25T07:08:02.140996+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "핵심 어텐션 분해를 통한 효율적인 장거리 문맥 언어 모델 훈련",
+      "abstract": "본 연구에서는 핵심 어텐션 분해 (CAD) 기술을 제시하여, 핵심 어텐션 연산, softmax(QK^T)V,를 나머지 모델과 분리하고 별도의 장치 풀에서 실행함으로써 장거리 문맥 대규모 언어 모델 훈련을 개선합니다. CAD를 구현하여 512 H200 GPUs에서 최대 512k 토큰 문맥 길이까지 엔드 투 엔드 훈련 처리량을 최대 1.35배 향상시키고 데이터 및 파이프라인 병렬 지연을 제거하며 거의 완벽한 연산 및 메모리 균형을 달성합니다."
+    },
+    "summary": "1. 핵심 어텐션 분해(CAD) 기술은 핵심 어텐션 계산을 모델의 나머지 부분과 분리시켜 처리하고, 별도의 디바이스 풀에서 실행하여 장거리 문맥 대규모 언어 모델 훈련을 개선합니다.\n2. CAD는 핵심 어텐션을 토큰 수준 작업으로 분할하고, 이를 전용 어텐션 서버로 전송하여 연산량을 균형있게 유지하고 커널 효율성을 희생하지 않습니다.\n3. DistCA 시스템을 통해 CAD를 구현하며, 커뮤니케이션과 계산을 완전히 겹쳐 실행하고 어텐션 서버에서 메모리 사용을 줄이는 방식으로 엔드 투 엔드 훈련 처리량을 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "LightMem: Lightweight and Efficient Memory-Augmented Generation",
+    "abstract": "Despite their remarkable capabilities, Large Language Models (LLMs) struggle\nto effectively leverage historical interaction information in dynamic and\ncomplex environments. Memory systems enable LLMs to move beyond stateless\ninteractions by introducing persistent information storage, retrieval, and\nutilization mechanisms. However, existing memory systems often introduce\nsubstantial time and computational overhead. To this end, we introduce a new\nmemory system called LightMem, which strikes a balance between the performance\nand efficiency of memory systems. Inspired by the Atkinson-Shiffrin model of\nhuman memory, LightMem organizes memory into three complementary stages. First,\ncognition-inspired sensory memory rapidly filters irrelevant information\nthrough lightweight compression and groups information according to their\ntopics. Next, topic-aware short-term memory consolidates these topic-based\ngroups, organizing and summarizing content for more structured access. Finally,\nlong-term memory with sleep-time update employs an offline procedure that\ndecouples consolidation from online inference. Experiments on LongMemEval with\nGPT and Qwen backbones show that LightMem outperforms strong baselines in\naccuracy (up to 10.9% gains) while reducing token usage by up to 117x, API\ncalls by up to 159x, and runtime by over 12x. The code is available at\nhttps://github.com/zjunlp/LightMem.",
+    "authors": [
+      "Jizhan Fang",
+      "Xinle Deng",
+      "Haoming Xu",
+      "Ziyan Jiang",
+      "Yuqi Tang",
+      "Ziwen Xu",
+      "Shumin Deng",
+      "Yunzhi Yao",
+      "Mengru Wang",
+      "Shuofei Qiao",
+      "Huajun Chen",
+      "Ningyu Zhang"
+    ],
+    "likes": 99,
+    "published_date": "Oct 21",
+    "url": "https://huggingface.co/papers/2510.18866",
+    "date_collected": "2025-10-25T07:08:02.142601+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "경량화 및 효율적인 메모리 보강 생성 (Memory-Augmented Generation)",
+      "abstract": "뛰어난 능력을 갖춘 대형 언어 모델 (Large Language Models, LLMs)들은 동적이고 복잡한 환경에서 과거 상호작용 정보를 효과적으로 활용하는 데 어려움을 겪습니다. 메모리 시스템은 영속적인 정보 저장, 검색 및 활용 메커니즘을 도입함으로써 LLMs가 상태 없는 상호작용을 벗어나게 합니다. 그러나 기존의 메모리 시스템들은 종종 상당한 시간과 계산 오버헤드를 도입합니다. 이에 우리는 성능과 효율성 사이의 균형을 맞추는 새로운 메모리 시스템인 LightMem을 소개합니다. 인간의 기억에 대한 Atkinson-Shiffrin 모델에서 영감을 받은 LightMem은 메모리를 세 가지 보조 단계로 구성합니다. 첫째, 인지적으로 영감을 받은 감각 메모리는 가벼운 압축을 통해 관련 없는 정보를 신속하게 걸러내고 주제에 따라 정보를 그룹화합니다. 그 다음, 주제 인식 단기 메모리는 이러한 주제별 그룹을 합치며 더 구조화된 접근을 위해 내용을 구성하고 요약합니다. 마지막으로 수면 시간 업데이트가 있는 장기 메모리는 오프라인 절차를 사용하여 정제 작업을 온라인 추론에서 분리합니다. GPT와 Qwen 백본에 대한 LongMemEval 실험 결과 LightMem은 정확도에서 강력한 기준을 능가하며 (최대 10.9%의 향상) 토큰 사용을 최대 117배, API 호출을 최대 159배, 런타임을 12배 이상 줄입니다. 코드는 https://github.com/zjunlp/LightMem에서 확인할 수 있습니다."
+    },
+    "summary": "1. LightMem은 인간의 기억 모델을 바탕으로 메모리를 세 가지 단계로 구성하여, 대형 언어 모델의 성능 향상과 효율성을 동시에 달성합니다.\n2. 실험 결과, LightMem은 강력한 기준을 능가하면서 토큰 사용량을 대폭 감소시키고, API 호출과 런타임을 현저히 줄입니다.\n3. LightMem은 주제별 정보 그룹화와 구조화된 접근을 통해 메모리를 효율적으로 관리하고 이를 통해 온라인 추론과 오프라인 절차를 조화롭게 조합합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Every Attention Matters: An Efficient Hybrid Architecture for\n  Long-Context Reasoning",
+    "abstract": "In this technical report, we present the Ring-linear model series,\nspecifically including Ring-mini-linear-2.0 and Ring-flash-linear-2.0.\nRing-mini-linear-2.0 comprises 16B parameters and 957M activations, while\nRing-flash-linear-2.0 contains 104B parameters and 6.1B activations. Both\nmodels adopt a hybrid architecture that effectively integrates linear attention\nand softmax attention, significantly reducing I/O and computational overhead in\nlong-context inference scenarios. Compared to a 32 billion parameter dense\nmodel, this series reduces inference cost to 1/10, and compared to the original\nRing series, the cost is also reduced by over 50%. Furthermore, through\nsystematic exploration of the ratio between different attention mechanisms in\nthe hybrid architecture, we have identified the currently optimal model\nstructure. Additionally, by leveraging our self-developed high-performance FP8\noperator library-linghe, overall training efficiency has been improved by 50%.\nBenefiting from the high alignment between the training and inference engine\noperators, the models can undergo long-term, stable, and highly efficient\noptimization during the reinforcement learning phase, consistently maintaining\nSOTA performance across multiple challenging complex reasoning benchmarks.",
+    "authors": [
+      "Ling Team",
+      "Bin Han",
+      "Caizhi Tang",
+      "Chen Liang",
+      "Donghao Zhang",
+      "Fan Yuan",
+      "Feng Zhu",
+      "Jie Gao",
+      "Jingyu Hu",
+      "Longfei Li",
+      "Meng Li",
+      "Mingyang Zhang",
+      "Peijie Jiang",
+      "Peng Jiao",
+      "Qian Zhao",
+      "Qingyuan Yang",
+      "Wenbo Shen",
+      "Xinxing Yang",
+      "Yalin Zhang",
+      "Yankun Ren",
+      "Yao Zhao",
+      "Yibo Cao"
+    ],
+    "likes": 90,
+    "published_date": "Oct 22",
+    "url": "https://huggingface.co/papers/2510.19338",
+    "date_collected": "2025-10-25T07:08:02.144512+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "모든 주의력이 중요합니다: 장기 맥락 추론을 위한 효율적인 하이브리드 아키텍처",
+      "abstract": "본 기술 보고서에서는 Ring-linear 모델 시리즈를 소개하며, 특히 Ring-mini-linear-2.0 및 Ring-flash-linear-2.0을 다룹니다. Ring-mini-linear-2.0은 16B 매개변수와 957M 활성화를 포함하고 있으며, Ring-flash-linear-2.0은 104B 매개변수와 6.1B 활성화를 포함합니다. 이 두 모델은 선형 주의와 소프트맥스 주의를 효과적으로 통합하는 하이브리드 아키텍처를 채택하여, 장기 맥락 추론 시에 입력/출력 및 계산 오버헤드를 크게 줄입니다. 이 시리즈는 320억 매개변수 밀집 모델에 비해 추론 비용을 1/10로 줄이며, 원래의 Ring 시리즈에 비해 비용을 50% 이상으로 줄입니다. 또한, 하이브리드 아키텍처에서 다른 주의 메커니즘 간 비율을 체계적으로 탐색함으로써 최적의 모델 구조를 찾아냈습니다. 또한, 고성능 FP8 연산자 라이브러리인 linghe를 활용하여 전반적인 훈련 효율을 50% 향상시켰습니다."
+    },
+    "summary": "1. Ring-linear 모델 시리즈는 선형 주의와 소프트맥스 주의를 효과적으로 통합한 하이브리드 아키텍처를 사용하여 장기 맥락 추론 시의 비용을 크게 절감했습니다.\n2. 하이브리드 아키텍처에서 주의 메커니즘 비율을 조절하여 최적의 모델 구조를 발견하였으며, self-developed 고성능 FP8 연산자 라이브러리를 활용하여 훈련 효율도 향상시켰습니다.\n3. 훈련 및 추론 엔진 연산자 간의 높은 일치로, 모델은 강화 학습 단계에서 장기간 안정적이고 효율적인 최적화를 수행하며, 다중 복잡한 추론 벤치마크에서 지속적으로 SOTA 성능을 유지합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via\n  Balanced Policy Optimization with Adaptive Clipping",
+    "abstract": "Reinforcement learning (RL) has recently become the core paradigm for\naligning and strengthening large language models (LLMs). Yet, applying RL in\noff-policy settings--where stale data from past policies are used for\ntraining--improves sample efficiency, but remains challenging: policy entropy\ndeclines sharply, optimization often becomes unstable and may even collapse.\nThrough theoretical and empirical analysis, we identify two key insights: (i)\nan imbalance in optimization, where negative-advantage samples dominate the\npolicy gradient, suppressing useful behaviors and risking gradient explosions;\nand (ii) the derived Entropy-Clip Rule, which reveals that the fixed clipping\nmechanism in PPO-like objectives systematically blocks entropy-increasing\nupdates, thereby driving the policy toward over-exploitation at the expense of\nexploration. Building on these insights, we propose BAlanced Policy\nOptimization with Adaptive Clipping (BAPO), a simple yet effective method that\ndynamically adjusts clipping bounds to adaptively re-balance positive and\nnegative contributions, preserve entropy, and stabilize RL optimization. Across\ndiverse off-policy scenarios--including sample replay and partial rollout--BAPO\nachieves fast, stable, and data-efficient training. On AIME 2024 and AIME 2025\nbenchmarks, our 7B BAPO model surpasses open-source counterparts such as\nSkyWork-OR1-7B, while our 32B BAPO model not only achieves state-of-the-art\nresults among models of the same scale but also outperforms leading proprietary\nsystems like o3-mini and Gemini-2.5-Flash-Thinking.",
+    "authors": [
+      "Zhiheng Xi",
+      "Xin Guo",
+      "Yang Nan",
+      "Enyu Zhou",
+      "Junrui Shen",
+      "Wenxiang Chen",
+      "Jiaqi Liu",
+      "Jixuan Huang",
+      "Zhihao Zhang",
+      "Honglin Guo",
+      "Xun Deng",
+      "Zhikai Lei",
+      "Miao Zheng",
+      "Guoteng Wang",
+      "Shuo Zhang",
+      "Peng Sun",
+      "Rui Zheng",
+      "Hang Yan",
+      "Tao Gui",
+      "Qi Zhang",
+      "Xuanjing Huang"
+    ],
+    "likes": 77,
+    "published_date": "Oct 21",
+    "url": "https://huggingface.co/papers/2510.18927",
+    "date_collected": "2025-10-25T07:08:02.146372+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "BAPO: 균형 잡힌 정책 최적화를 통한 LLM을 위한 오프-폴리시 강화 학습 안정화",
+      "abstract": "강화 학습(RL)은 최근 대형 언어 모델(LLMs)을 맞추고 강화시키기 위한 핵심 패러다임이 되었습니다. 그러나 과거 정책에서 낡은 데이터를 사용하는 오프-폴리시 설정에서 RL을 적용하는 것은 샘플 효율성을 향상시키지만, 정책 엔트로피가 급격히 감소하며 최적화는 종종 불안정해지고 심지어 붕괴할 수 있습니다. 우리는 이론적 및 경험적 분석을 통해 두 가지 주요 통찰을 발견했습니다: (i) 최적화의 불균형, 즉 부정-이득 샘플이 정책 그래디언트를 지배하여 유용한 행동을 억압하고 그래디언트 폭발을 위험에 빠뜨릴 수 있음; (ii) 도출된 엔트로피-클립 규칙, PPO와 같은 목적 함수에서 고정된 클리핑 메커니즘이 엔트로피를 증가시키는 업데이트를 체계적으로 차단하여 탐험 대가로 정책을 너무 과도하게 탐지하게 만든다는 것을 보여 줍니다. 이러한 통찰을 바탕으로 우리는 BAlanced Policy Optimization with Adaptive Clipping (BAPO)를 제안합니다. 이 방법은 클리핑 바운드를 동적으로 조정하여 긍정적 및 부정적 기여를 조절하고 엔트로피를 유지하며 RL 최적화를 안정화하는 간단하고 효과적인 방법입니다. 샘플 재생과 부분 롤아웃을 포함한 다양한 오프-폴리시 시나리오에서 BAPO는 빠르고 안정적이며 데이터 효율적인 교육을 달성합니다. AIME 2024 및 AIME 2025 벤치마크에서 BAPO의 7B 모델은 SkyWork-OR1-7B와 같은 오픈 소스 대비 우수한 성과를 보이며, 32B BAPO 모델은 동일 규모 모델 중 최고 성능을 달성할 뿐만 아니라 o3-mini 및 Gemini-2.5-Flash-Thinking과 같은 주요사들 시스템을 앞섭니다."
+    },
+    "summary": "1. BAPO는 부정적인 이점 샘플이 유용한 행동을 억제하는 문제를 해결하고, 엔트로피를 유지하여 강화 학습 최적화를 안정화하는 방법입니다.\n2. BAPO는 클리핑 바운드를 조정하여 긍정적 기여와 부정적 기여를 균형 있게 조절하며, 다양한 오프-폴리시 시나리오에서 안정적이고 빠르고 데이터 효율적인 교육을 달성합니다.\n3. BAPO 모델은 AIME 2024 및 AIME 2025 벤치마크에서 우수한 성과를 보이며, 동일 규모의 모델 중 최고 수준을 달성하며, 주요사들의 시스템을 능가합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "World-in-World: World Models in a Closed-Loop World",
+    "abstract": "Generative world models (WMs) can now simulate worlds with striking visual\nrealism, which naturally raises the question of whether they can endow embodied\nagents with predictive perception for decision making. Progress on this\nquestion has been limited by fragmented evaluation: most existing benchmarks\nadopt open-loop protocols that emphasize visual quality in isolation, leaving\nthe core issue of embodied utility unresolved, i.e., do WMs actually help\nagents succeed at embodied tasks? To address this gap, we introduce\nWorld-in-World, the first open platform that benchmarks WMs in a closed-loop\nworld that mirrors real agent-environment interactions. World-in-World provides\na unified online planning strategy and a standardized action API, enabling\nheterogeneous WMs for decision making. We curate four closed-loop environments\nthat rigorously evaluate diverse WMs, prioritize task success as the primary\nmetric, and move beyond the common focus on visual quality; we also present the\nfirst data scaling law for world models in embodied settings. Our study\nuncovers three surprises: (1) visual quality alone does not guarantee task\nsuccess, controllability matters more; (2) scaling post-training with\naction-observation data is more effective than upgrading the pretrained video\ngenerators; and (3) allocating more inference-time compute allows WMs to\nsubstantially improve closed-loop performance.",
+    "authors": [
+      "Jiahan Zhang",
+      "Muqing Jiang",
+      "Nanru Dai",
+      "Taiming Lu",
+      "Arda Uzunoglu",
+      "Shunchi Zhang",
+      "Yana Wei",
+      "Jiahao Wang",
+      "Vishal M. Patel",
+      "Paul Pu Liang",
+      "Daniel Khashabi",
+      "Cheng Peng",
+      "Rama Chellappa",
+      "Tianmin Shu",
+      "Alan Yuille",
+      "Yilun Du",
+      "Jieneng Chen"
+    ],
+    "likes": 77,
+    "published_date": "Oct 20",
+    "url": "https://huggingface.co/papers/2510.18135",
+    "date_collected": "2025-10-25T07:08:02.148046+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "세계 속의 세계: 폐쇄적 루프 환경에서의 세계 모델",
+      "abstract": "생성적 세계 모델(World Models, WMs)은 현재 놀라운 시각적 현실감을 갖춘 세계를 시뮬레이션할 수 있으며, 이로인해 이들이 신체적 에이전트에게 예측적 지각을 제공하여 의사 결정을 할 수 있는지에 대한 의문이 자연스럽게 제기됩니다."
+    },
+    "summary": "1. 현재까지의 세계 모델 평가는 시각적 품질에 중점을 둔 오픈 루프 프로토콜을 사용하여 신체적 유용성 문제를 해결하지 못했습니다.\n2. 세계 속의 세계는 첫 번째로 신체적 에이전트-환경 상호작용을 반영하는 폐쇄적 세계에서 WM을 평가하는 플랫폼으로, 작업 성공을 주요 측정 항목으로 설정합니다.\n3. 연구에서 세 가지의 놀라운 발견을 하였는데, 시각적 품질만으로는 작업 성공을 보장하지 않으며, 조절 가능성이 더 중요하다는 것이 하나의 결과입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DeepAnalyze: Agentic Large Language Models for Autonomous Data Science",
+    "abstract": "Autonomous data science, from raw data sources to analyst-grade deep research\nreports, has been a long-standing challenge, and is now becoming feasible with\nthe emergence of powerful large language models (LLMs). Recent workflow-based\ndata agents have shown promising results on specific data tasks but remain\nfundamentally limited in achieving fully autonomous data science due to their\nreliance on predefined workflows. In this paper, we introduce DeepAnalyze-8B,\nthe first agentic LLM designed for autonomous data science, capable of\nautomatically completing the end-toend pipeline from data sources to\nanalyst-grade deep research reports. To tackle high-complexity data science\ntasks, we propose a curriculum-based agentic training paradigm that emulates\nthe learning trajectory of human data scientists, enabling LLMs to\nprogressively acquire and integrate multiple capabilities in real-world\nenvironments. We also introduce a data-grounded trajectory synthesis framework\nthat constructs high-quality training data. Through agentic training,\nDeepAnalyze learns to perform a broad spectrum of data tasks, ranging from data\nquestion answering and specialized analytical tasks to open-ended data\nresearch. Experiments demonstrate that, with only 8B parameters, DeepAnalyze\noutperforms previous workflow-based agents built on most advanced proprietary\nLLMs. The model, code, and training data of DeepAnalyze are open-sourced,\npaving the way toward autonomous data science.",
+    "authors": [
+      "Shaolei Zhang",
+      "Ju Fan",
+      "Meihao Fan",
+      "Guoliang Li",
+      "Xiaoyong Du"
+    ],
+    "likes": 74,
+    "published_date": "Oct 19",
+    "url": "https://huggingface.co/papers/2510.16872",
+    "date_collected": "2025-10-25T07:08:02.149226+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "DeepAnalyze: 자율 데이터 과학을 위한 에이전트형 대규모 언어 모델",
+      "abstract": "원시 데이터 소스부터 분석가 수준의 심층 연구 보고서까지의 자율 데이터 과학은 오래전부터의 난제였으며, 강력한 대규모 언어 모델 (LLMs)의 등장으로 현실 가능성을 갖게 되었습니다. 최근의 워크플로우 기반 데이터 에이전트는 특정 데이터 작업에서 유망한 결과를 보여주었지만, 사전 정의된 워크플로에 의존하기 때문에 완전히 자율적인 데이터 과학을 달성하는 데 기본적으로 한계가 있습니다. 본 논문에서는 자율 데이터 과학을 위해 설계된 최초의 에이전트형 LLM인 DeepAnalyze-8B를 소개합니다. 이 모델은 데이터 소스부터 분석가 수준의 심층 연구 보고서까지 자동으로 완성할 수 있습니다. 고복잡도 데이터 과학 작업에 대처하기 위해 우리는 인간 데이터 과학자의 학습 궤적을 흉내 내는 커리큘럼 기반의 에이전트 훈련 패러다임을 제안하여 LLM이 현실 환경에서 여러 능력을 점진적으로 습득하고 통합할 수 있도록 합니다. 우리는 또한 고품질 훈련 데이터를 구축하는 데이터 기반 궤적 통합 프레임워크를 소개합니다. 에이전트 훈련을 통해 DeepAnalyze는 데이터 질문에 답하고 특수한 분석 작업부터 개방형 데이터 연구에 이르는 다양한 데이터 작업을 수행하는 방법을 배웁니다. 실험 결과, 8B 매개변수만으로 DeepAnalyze가 가장 최첨단의 전용 LLM에 기반을 둔 이전 워크플로우 기반 에이전트들을 능가하는 것을 입증했습니다. DeepAnalyze의 모델, 코드 및 훈련 데이터는 오픈 소스로 공개되었으며, 자율 데이터 과학의 길을 열어갈 것입니다."
+    },
+    "summary": "1. DeepAnalyze-8B는 자율 데이터 과학을 위한 최초의 에이전트형 대규모 언어 모델로서 커리큘럼 기반의 훈련 패러다임을 사용해 현실 환경에서 여러 능력을 점진적으로 습득하고 통합함.\n2. 고품질 훈련 데이터를 구축하는 데이터 기반 궤적 통합 프레임워크를 도입하며, 다양한 데이터 작업을 수행할 수 있도록 함.\n3. 8B 매개변수만으로 이전 워크플로우 에이전트들을 능가하는 DeepAnalyze는 모델, 코드, 훈련 데이터를 오픈 소스로 제공하여 자율 데이터 과학의 발전을 이끔.",
+    "categories": [
+      "LLM",
+      "자율 데이터 과학",
+      "기계 학습"
+    ]
+  },
+  {
+    "title": "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding\n  LLM",
+    "abstract": "Advancing machine intelligence requires developing the ability to perceive\nacross multiple modalities, much as humans sense the world. We introduce\nOmniVinci, an initiative to build a strong, open-source, omni-modal LLM. We\ncarefully study the design choices across model architecture and data curation.\nFor model architecture, we present three key innovations: (i) OmniAlignNet for\nstrengthening alignment between vision and audio embeddings in a shared\nomni-modal latent space; (ii) Temporal Embedding Grouping for capturing\nrelative temporal alignment between vision and audio signals; and (iii)\nConstrained Rotary Time Embedding for encoding absolute temporal information in\nomni-modal embeddings. We introduce a curation and synthesis pipeline that\ngenerates 24M single-modal and omni-modal conversations. We find that\nmodalities reinforce one another in both perception and reasoning. Our model,\nOmniVinci, outperforms Qwen2.5-Omni with +19.05 on DailyOmni (cross-modal\nunderstanding), +1.7 on MMAR (audio), and +3.9 on Video-MME (vision), while\nusing just 0.2T training tokens - a 6 times reduction compared to\nQwen2.5-Omni's 1.2T. We finally demonstrate omni-modal advantages in downstream\napplications spanning robotics, medical AI, and smart factory.",
+    "authors": [
+      "Hanrong Ye",
+      "Chao-Han Huck Yang",
+      "Arushi Goel",
+      "Wei Huang",
+      "Ligeng Zhu",
+      "Yuanhang Su",
+      "Sean Lin",
+      "An-Chieh Cheng",
+      "Zhen Wan",
+      "Jinchuan Tian",
+      "Yuming Lou",
+      "Dong Yang",
+      "Zhijian Liu",
+      "Yukang Chen",
+      "Ambrish Dantrey",
+      "Ehsan Jahangiri",
+      "Sreyan Ghosh",
+      "Daguang Xu",
+      "Ehsan Hosseini-Asl",
+      "Danial Mohseni Taheri",
+      "Vidya Murali",
+      "Sifei Liu"
+    ],
+    "likes": 69,
+    "published_date": "Oct 17",
+    "url": "https://huggingface.co/papers/2510.15870",
+    "date_collected": "2025-10-25T07:08:02.151157+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "옴니빈치: 옴니-모달 이해를 위한 아키텍처와 데이터 강화",
+      "abstract": "기계 지능 발전을 위해 인간이 세계를 인식하는 것과 같이 다중 모달에서 인식하는 능력을 개발해야 합니다. 옴니빈치는 강력하고 오픈소스인 옴니-모달 LLM을 구축하기 위한 프로젝트로, 모델 아키텍처와 데이터 큐레이션에 대한 설계 선택 사항을 주의 깊게 검토합니다."
+    },
+    "summary": "1. 옴니빈치는 옴니-모달 잠재 공간에서 시각과 음성의 정렬을 강화하는 OmniAlignNet, 시각과 음성 신호 간 상대적 시간 정렬을 캡처하는 Temporal Embedding Grouping, 절대적 시간 정보를 인코딩하는 Constrained Rotary Time Embedding 세 가지 주요 혁신을 제안합니다.\n2. 24M개의 단일 모달 및 옴니-모달 대화를 생성하는 큐레이션 및 합성 파이프라인을 도입하였으며, 모달들이 인식과 추론 모두에서 서로를 강화함을 발견했습니다.\n3. 옴니빈치 모델은 Qwen2.5-Omni 대비 DailyOmni(다중 모달 이해)에서 +19.05, MMAR(음성)에서 +1.7, Video-MME(시각)에서 +3.9 향상되었으며, 0.2T 훈련 토큰만 사용하여 Qwen2.5-Omni의 1.2T 대비 6배 감소했습니다. 로봇 공학, 의료 AI, 스마트 공장 등 다양한 분야에서 옴니-모달 이점을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image\n  Generation",
+    "abstract": "Recent progress in text-to-image (T2I) generation underscores the importance\nof reliable benchmarks in evaluating how accurately generated images reflect\nthe semantics of their textual prompt. However, (1) existing benchmarks lack\nthe diversity of prompt scenarios and multilingual support, both essential for\nreal-world applicability; (2) they offer only coarse evaluations across primary\ndimensions, covering a narrow range of sub-dimensions, and fall short in\nfine-grained sub-dimension assessment. To address these limitations, we\nintroduce UniGenBench++, a unified semantic assessment benchmark for T2I\ngeneration. Specifically, it comprises 600 prompts organized hierarchically to\nensure both coverage and efficiency: (1) spans across diverse real-world\nscenarios, i.e., 5 main prompt themes and 20 subthemes; (2) comprehensively\nprobes T2I models' semantic consistency over 10 primary and 27 sub evaluation\ncriteria, with each prompt assessing multiple testpoints. To rigorously assess\nmodel robustness to variations in language and prompt length, we provide both\nEnglish and Chinese versions of each prompt in short and long forms. Leveraging\nthe general world knowledge and fine-grained image understanding capabilities\nof a closed-source Multi-modal Large Language Model (MLLM), i.e.,\nGemini-2.5-Pro, an effective pipeline is developed for reliable benchmark\nconstruction and streamlined model assessment. Moreover, to further facilitate\ncommunity use, we train a robust evaluation model that enables offline\nassessment of T2I model outputs. Through comprehensive benchmarking of both\nopen- and closed-sourced T2I models, we systematically reveal their strengths\nand weaknesses across various aspects.",
+    "authors": [
+      "Yibin Wang",
+      "Zhimin Li",
+      "Yuhang Zang",
+      "Jiazi Bu",
+      "Yujie Zhou",
+      "Yi Xin",
+      "Junjun He",
+      "Chunyu Wang",
+      "Qinglin Lu",
+      "Cheng Jin",
+      "Jiaqi Wang"
+    ],
+    "likes": 63,
+    "published_date": "Oct 21",
+    "url": "https://huggingface.co/papers/2510.18701",
+    "date_collected": "2025-10-25T07:08:02.152558+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "UniGenBench++: 텍스트에서 이미지로의 통일된 의미 평가 벤치마크",
+      "abstract": "최근 텍스트에서 이미지로의 생성(T2I) 분야에서의 발전은 생성된 이미지가 텍스트의 의미를 얼마나 정확하게 반영하는지를 평가하는 신뢰할만한 벤치마크의 중요성을 강조합니다. 그러나 기존의 벤치마크는 다양한 상황과 다국어 지원이 필수적인 현실 성격을 반영하지 못하며, 주요 차원을 가로지르며 미시적 차원의 평가 부족으로 성능 제한이 있습니다. 이러한 한계를 극복하기 위해 우리는 T2I 생성을 위한 통일된 의미 평가 벤치마크인 UniGenBench++를 제안합니다. 구체적으로, 600개의 프롬프트가 계층적으로 구성되어 다양성과 효율성을 보장합니다: 다양한 현실 시나리오를 포괄하는 5가지 주요 프롬프트 주제와 20개의 부주제; 각 프롬프트가 여러 테스트포인트를 평가하는 10가지 주 평가 기준과 27개의 세부 평가 기준에 걸쳐 T2I 모델의 의미 일관성을 철저하게 탐구합니다. 언어 및 프롬프트 길이 변이에 대한 모델 견고성을 엄격하게 평가하기 위해 모든 프롬프트의 영어 및 중국어 버전을 각각 짧은 형태와 긴 형태로 제공합니다. ‘Gemini-2.5-Pro’라는 특허 소프트웨어인 멀티모달 대형 언어 모델(MLLM)의 일반적인 세계 지식과 세밀한 이미지 이해 능력을 활용하여 신뢰할 만한 벤치마크 구성 및 간소화된 모델 평가를 위한 효과적인 파이프라인을 개발합니다. 게다가, 커뮤니티 이용을 더욱 용이하게 하기 위해 오프라인에서 T2I 모델 출력을 평가할 수 있는 견고한 평가 모델을 학습합니다. 공개 및 특허 소프트웨어로 된 T2I 모델의 포괄적인 벤치마킹을 통해 다양한 측면에서 그들의 강점과 약점을 체계적으로 밝힙니다."
+    },
+    "summary": "1. UniGenBench++는 T2I 생성에 대한 통일된 의미 평가 벤치마크로, 다양한 현실 시나리오와 평가 기준을 포괄하여 모델의 의미 일관성을 철저히 평가합니다.\n2. 영어와 중국어로 제공되는 다양한 프롬프트를 통해 언어 및 프롬프트 길이 변이에 대한 모델의 견고성을 엄격하게 검증합니다.\n3. Gemnini-2.5-Pro를 활용한 벤치마크 구성과 모델 평가 파이프라인의 효과적인 개발로 모델의 강점과 약점을 체계적으로 평가합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "PICABench: How Far Are We from Physically Realistic Image Editing?",
+    "abstract": "Image editing has achieved remarkable progress recently. Modern editing\nmodels could already follow complex instructions to manipulate the original\ncontent. However, beyond completing the editing instructions, the accompanying\nphysical effects are the key to the generation realism. For example, removing\nan object should also remove its shadow, reflections, and interactions with\nnearby objects. Unfortunately, existing models and benchmarks mainly focus on\ninstruction completion but overlook these physical effects. So, at this moment,\nhow far are we from physically realistic image editing? To answer this, we\nintroduce PICABench, which systematically evaluates physical realism across\neight sub-dimension (spanning optics, mechanics, and state transitions) for\nmost of the common editing operations (add, remove, attribute change, etc). We\nfurther propose the PICAEval, a reliable evaluation protocol that uses\nVLM-as-a-judge with per-case, region-level human annotations and questions.\nBeyond benchmarking, we also explore effective solutions by learning physics\nfrom videos and construct a training dataset PICA-100K. After evaluating most\nof the mainstream models, we observe that physical realism remains a\nchallenging problem with large rooms to explore. We hope that our benchmark and\nproposed solutions can serve as a foundation for future work moving from naive\ncontent editing toward physically consistent realism.",
+    "authors": [
+      "Yuandong Pu",
+      "Le Zhuo",
+      "Songhao Han",
+      "Jinbo Xing",
+      "Kaiwen Zhu",
+      "Shuo Cao",
+      "Bin Fu",
+      "Si Liu",
+      "Hongsheng Li",
+      "Yu Qiao",
+      "Wenlong Zhang",
+      "Xi Chen",
+      "Yihao Liu"
+    ],
+    "likes": 58,
+    "published_date": "Oct 20",
+    "url": "https://huggingface.co/papers/2510.17681",
+    "date_collected": "2025-10-25T07:08:02.154105+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "PICABench: 물리적으로 현실적인 이미지 편집은 얼마나 멀리 왔는가?",
+      "abstract": "이미지 편집은 최근에 놀라운 발전을 이룩했습니다. 현대적인 편집 모델은 복잡한 지침을 따르며 원본 콘텐츠를 조작할 수 있었습니다. 그러나 편집 지침을 완수하는 것을 넘어서, 동반되는 물리적 효과가 생성 현실감의 핵심입니다. 예를 들어, 객체를 제거하면 그 그림자, 반사 및 인근 객체와의 상호 작용도 제거되어야 합니다. 불행히도, 기존 모델과 벤치마크는 주로 지침 완수에 초점을 맞추고 이러한 물리적 효과를 간과합니다. 그래서 현재, 우리는 얼마나 물리적으로 현실적인 이미지 편집으로부터 멀리 떨어져 있는가요? 이를 답하기 위해 우리는 광학, 기계 및 상태 전이를 포함하는 여덟 가지 하위 차원에서 일반적인 편집 작업에 대해 물리적 현실성을 체계적으로 평가하는 PICABench를 소개합니다. 또한, VLM을 심사원으로 사용하는 신뢰할 수 있는 PICAEval 평가 프로토콜을 제안합니다. 벤치마킹을 넘어서, 우리는 비디오로부터 물리학을 학습하는 효과적인 해결책을 탐구하고 PICA-100K라는 교육 데이터셋을 구축합니다. 대부분의 주류 모델을 평가한 후, 물리적 현실성은 여전히 탐험할 큰 여지가 있는 어려운 문제로 남아 있음을 관찰합니다. 우리의 벤치마크와 제안된 솔루션이 단순한 콘텐츠 편집에서부터 물리적으로 일관된 현실감을 담은 미래 작업의 기초로 기대됩니다."
+    },
+    "summary": "1. 이미지 편집의 발전은 지시 완수뿐 아니라 물리적 효과도 중요하며, PICABench는 물리적 현실성을 평가하고 적절한 솔루션을 제안함.\n2. PICAEval은 VLM을 심사원으로 활용하며, PICA-100K 교육 데이터셋을 활용하여 효과적인 해결책을 탐구함.\n3. 대부분의 모델을 평가한 결과, 이미지 편집에서 물리적 현실성은 아직 해결하기 어려운 문제이며, 미래 연구의 기반으로 활용될 수 있음.",
+    "categories": [
+      "Computer Vision"
+    ]
+  }
+]

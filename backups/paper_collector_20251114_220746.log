@@ -1,0 +1,144 @@
+=== Paper Collection Started at Thu Nov 13 22:08:26 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W46
+URL: https://huggingface.co/papers/week/2025-W46
+Found 10 papers in weekly view
+Fetching likes for: Grounding Computer Use Agents on Human Demonstrations
+Fetching likes for: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Fetching likes for: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Fetching likes for: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Fetching likes for: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Fetching likes for: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Fetching likes for: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Fetching likes for: Visual Spatial Tuning
+Fetching likes for: MADD: Multi-Agent Drug Discovery Orchestra
+Fetching likes for: Adaptive Multi-Agent Response Refinement in Conversational Systems
+Selected top 10 papers by likes:
+1. Grounding Computer Use Agents on Human Demonstrations (87 likes)
+2. Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds (84 likes)
+3. HaluMem: Evaluating Hallucinations in Memory Systems of Agents (83 likes)
+4. Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B (77 likes)
+5. IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction (66 likes)
+6. DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation (47 likes)
+7. Too Good to be Bad: On the Failure of LLMs to Role-Play Villains (47 likes)
+8. Visual Spatial Tuning (46 likes)
+9. MADD: Multi-Agent Drug Discovery Orchestra (45 likes)
+10. Adaptive Multi-Agent Response Refinement in Conversational Systems (38 likes)
+Found abstract: Building reliable computer-use agents requires grounding: accurately
+connecting natural language ins...
+Processed paper: Grounding Computer Use Agents on Human Demonstrations
+Found abstract: We introduce Lumine, the first open recipe for developing generalist agents capable of completing ho...
+Processed paper: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Found abstract: Memory systems are key components that enable AI systems such as LLMs and AI
+agents to achieve long-...
+Processed paper: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Found abstract: Challenging the prevailing consensus that small models inherently lack robust
+reasoning, this report...
+Processed paper: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Found abstract: Recent advances in deep-research agents have shown promise for autonomous
+knowledge construction thr...
+Processed paper: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Found abstract: Recent reasoning-first models (e.g., OpenAI o1, DeepSeek R1) have spurred a
+resurgence of interest i...
+Processed paper: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Found abstract: Large Language Models (LLMs) are increasingly tasked with creative
+generation, including the simulat...
+Processed paper: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Found abstract: Capturing spatial relationships from visual inputs is a cornerstone of
+human-like general intelligen...
+Processed paper: Visual Spatial Tuning
+Found abstract: Hit identification is a central challenge in early drug discovery, traditionally requiring substanti...
+Processed paper: MADD: Multi-Agent Drug Discovery Orchestra
+Found abstract: Large Language Models (LLMs) have demonstrated remarkable success in conversational systems by gener...
+Processed paper: Adaptive Multi-Agent Response Refinement in Conversational Systems
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Grounding Computer Use Agents on Human Demonstrations
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  72
+Update date_collected: 2025-11-14T07:08:35.130735+09:00  ->  2025-11-13T07:08:13.498581+09:00
+
+Processing paper 2/10
+Title: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Paper already exists, checking if translation is complete...
+Update likes: 83  ->  81
+Update date_collected: 2025-11-14T07:08:35.133653+09:00  ->  2025-11-13T07:08:13.496890+09:00
+
+Processing paper 4/10
+Title: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Paper already exists, checking if translation is complete...
+Update likes: 77  ->  57
+Update date_collected: 2025-11-14T07:08:35.134987+09:00  ->  2025-11-13T07:08:13.501568+09:00
+
+Processing paper 5/10
+Title: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  63
+Update date_collected: 2025-11-14T07:08:35.136574+09:00  ->  2025-11-13T07:08:13.500223+09:00
+
+Processing paper 6/10
+Title: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  42
+Update date_collected: 2025-11-14T07:08:35.137773+09:00  ->  2025-11-13T07:08:13.505630+09:00
+
+Processing paper 7/10
+Title: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  46
+Update date_collected: 2025-11-14T07:08:35.139195+09:00  ->  2025-11-13T07:08:13.502982+09:00
+
+Processing paper 8/10
+Title: Visual Spatial Tuning
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  45
+Update date_collected: 2025-11-14T07:08:35.140643+09:00  ->  2025-11-13T07:08:13.504443+09:00
+
+Processing paper 9/10
+Title: MADD: Multi-Agent Drug Discovery Orchestra
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Adaptive Multi-Agent Response Refinement in Conversational Systems
+Paper already exists, checking if translation is complete...
+Update likes: 38  ->  31
+Update date_collected: 2025-11-14T07:08:35.143569+09:00  ->  2025-11-13T07:08:13.507960+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W46.json...
+
+Updating Notion database...
+Updating paper: 인간 데모에 기반한 컴퓨터 사용 에이전트의 연결 (likes: 72 -> 87)
+Creating new paper: 3D 오픈 월드에서 일반적 에이전트 구축을 위한 Lumine: 오픈 레시피
+Updating paper: HaluMem: 에이전트의 기억 시스템에서 환각 평가 (likes: 81 -> 83)
+Updating paper: 작은 모델, 큰 논리: 다양성 주도 최적화는 VibeThinker-1.5B에서 대규모 모델 추론 능력을 촉구한다 (likes: 57 -> 77)
+Updating paper: IterResearch: Markovian State를 통한 장기 고려 에이전트 재고 (likes: 63 -> 66)
+Updating paper: 경쟁적 코드 생성에서 확인 가능한 보상을 갖춘 강화 학습을 위한 데이터 정리 최상의 방법 (RLVR) (likes: 42 -> 47)
+Updating paper: 너무나 선하다가 나쁠 수밖에 없는: LLM들이 악당 역할하기 위해서 실패하는 이유 (likes: 46 -> 47)
+Updating paper: 시각적 공간 튜닝 (likes: 45 -> 46)
+Creating new paper: 다중 에이전트 약물 발견 오케스트라 (MADD: Multi-Agent Drug Discovery Orchestra)
+Updating paper: 대화 시스템에서 적응형 다중 에이전트 응답 정제 (likes: 31 -> 38)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Nov 13 22:11:10 UTC 2025 ===
+

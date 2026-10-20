@@ -1,0 +1,353 @@
+[
+  {
+    "title": "DINOv3",
+    "abstract": "Self-supervised learning holds the promise of eliminating the need for manual\ndata annotation, enabling models to scale effortlessly to massive datasets and\nlarger architectures. By not being tailored to specific tasks or domains, this\ntraining paradigm has the potential to learn visual representations from\ndiverse sources, ranging from natural to aerial images -- using a single\nalgorithm. This technical report introduces DINOv3, a major milestone toward\nrealizing this vision by leveraging simple yet effective strategies. First, we\nleverage the benefit of scaling both dataset and model size by careful data\npreparation, design, and optimization. Second, we introduce a new method called\nGram anchoring, which effectively addresses the known yet unsolved issue of\ndense feature maps degrading during long training schedules. Finally, we apply\npost-hoc strategies that further enhance our models' flexibility with respect\nto resolution, model size, and alignment with text. As a result, we present a\nversatile vision foundation model that outperforms the specialized state of the\nart across a broad range of settings, without fine-tuning. DINOv3 produces\nhigh-quality dense features that achieve outstanding performance on various\nvision tasks, significantly surpassing previous self- and weakly-supervised\nfoundation models. We also share the DINOv3 suite of vision models, designed to\nadvance the state of the art on a wide spectrum of tasks and data by providing\nscalable solutions for diverse resource constraints and deployment scenarios.",
+    "authors": [
+      "Oriane Siméoni",
+      "Huy V. Vo",
+      "Maximilian Seitzer",
+      "Federico Baldassarre",
+      "Maxime Oquab",
+      "Cijo Jose",
+      "Vasil Khalidov",
+      "Marc Szafraniec",
+      "Seungeun Yi",
+      "Michaël Ramamonjisoa",
+      "Francisco Massa",
+      "Daniel Haziza",
+      "Luca Wehrstedt",
+      "Jianyuan Wang",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Leonel Sentana",
+      "Claire Roberts",
+      "Andrea Vedaldi",
+      "Jamie Tolan",
+      "John Brandt",
+      "Camille Couprie"
+    ],
+    "likes": 103,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2508.10104",
+    "date_collected": "2025-08-20T07:07:41.216213+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "DINOv3",
+      "abstract": "자가 지도학습은 수작업 데이터 주석이 필요 없어지는 가능성을 갖고 있어 모델이 대규모 데이터셋과 큰 아키텍처로 쉽게 확장될 수 있게 합니다. 특정 작업이나 도메인에 맞추어지지 않아 다양한 소스(자연 이미지부터 공중 이미지까지)로부터 시각적 표현을 학습하는 잠재력이 있는 이 훈련 패러다임은 단일 알고리즘을 사용합니다. 본 기술 보고서에서는 DINOv3를 소개하며 이러한 비전을 실현하기 위해 간단하면서도 효과적인 전략을 활용합니다. 먼저 데이터 준비, 설계 및 최적화에 주의를 기울여 데이터셋과 모델 크기를 함께 확장하는 이점을 이용합니다. 둘째로, 긴 학습 일정 동안 밀도 높은 피쳐 맵이 저하되는 알려진 문제를 효과적으로 해결하는 'Gram anchoring'이라는 새로운 방법을 소개합니다. 마지막으로, 후반 전략을 적용하여 모델의 해상도, 모델 크기 및 텍스트와의 정렬에 대한 유연성을 더욱 향상시킵니다. 결과적으로, 튜닝 없이 다양한 환경에서 특화된 최신 기술 성능을 능가하는 다목적 비전 기반 모델을 제시합니다. DINOv3는 다양한 비전 작업에서 우수한 성능을 달성하는 고품질 밀도 피쳐를 생성하여 이전의 자가 및 약 자가 지도 기반 모델을 크게 능가합니다. 또한, 다양한 리소스 제약과 배포 시나리오에 확장 가능한 솔루션을 제공함으로써 다양한 작업 및 데이터에 대한 최신 기술 발전을 위해 설계된 DINOv3 비전 모델 스위트를 공유합니다."
+    },
+    "summary": "1. 자가 지도학습은 수작업 데이터 주석이 필요 없는 빠른 확장을 가능케하며, DINOv3는 간단하고 효과적인 전략을 활용하여 다목적 비전 기반 모델을 제시합니다.\n2. 'Gram anchoring' 방법을 통해 밀도 높은 피쳐 맵의 문제를 효과적으로 해결하고, 후반 전략을 적용하여 모델의 유연성을 향상시킵니다.\n3. DINOv3는 다양한 비전 작업에서 우수한 성능을 보이며, 자가 및 약 자가 지도 기반 모델을 능가하며 최신 기술을 발전시키기 위한 솔루션을 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Self-supervised Learning"
+    ]
+  },
+  {
+    "title": "Ovis2.5 Technical Report",
+    "abstract": "We present Ovis2.5, a successor to Ovis2 designed for native-resolution\nvisual perception and strong multimodal reasoning. Ovis2.5 integrates a\nnative-resolution vision transformer that processes images at their native,\nvariable resolutions, avoiding the degradation from fixed-resolution tiling and\npreserving both fine detail and global layout -- crucial for visually dense\ncontent like complex charts. To strengthen reasoning, we train the model to\nmove beyond linear chain-of-thought and perform reflection -- including\nself-checking and revision. This advanced capability is exposed as an optional\n\"thinking mode\" at inference time, allowing users to trade latency for enhanced\naccuracy on difficult inputs. The model is trained via a comprehensive\nfive-phase curriculum that progressively builds its skills. The process begins\nwith foundational visual and multimodal pretraining, advances through\nlarge-scale instruction tuning, and culminates in alignment and reasoning\nenhancement using DPO and GRPO. To scale these upgrades efficiently, we employ\nmultimodal data packing and hybrid parallelism, yielding a significant\nend-to-end speedup. We release two open-source models: Ovis2.5-9B and\nOvis2.5-2B. The latter continues the \"small model, big performance\" philosophy\nof Ovis2, making it ideal for resource-constrained, on-device scenarios. On the\nOpenCompass multimodal leaderboard, Ovis2.5-9B averages 78.3, marking a\nsubstantial improvement over its predecessor, Ovis2-8B, and achieving\nstate-of-the-art results among open-source MLLMs in the sub-40B parameter\nrange; Ovis2.5-2B scores 73.9, establishing SOTA for its size. Beyond aggregate\nscores, Ovis2.5 achieves leading results on STEM benchmarks, exhibits strong\ncapabilities on grounding and video tasks, and achieves open-source SOTA at its\nscale for complex chart analysis.",
+    "authors": [
+      "Shiyin Lu",
+      "Yang Li",
+      "Yu Xia",
+      "Yuwei Hu",
+      "Shanshan Zhao",
+      "Yanqing Ma",
+      "Zhichao Wei",
+      "Yinglun Li",
+      "Lunhao Duan",
+      "Jianshan Zhao",
+      "Yuxuan Han",
+      "Haijun Li",
+      "Wanying Chen",
+      "Junke Tang",
+      "Chengkun Hou",
+      "Zhixing Du",
+      "Tianli Zhou",
+      "Wenjie Zhang",
+      "Huping Ding",
+      "Jiahe Li",
+      "Wen Li",
+      "Gui Hu"
+    ],
+    "likes": 74,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11737",
+    "date_collected": "2025-08-20T07:07:41.218113+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "Ovis2.5 기술 보고서",
+      "abstract": "Ovis2의 후속작인 Ovis2.5를 소개합니다. Ovis2.5는 원본 해상도의 시각 지각과 강력한 다중 모달 추론을 위해 설계되었습니다. Ovis2.5는 원본 변수 해상도에서 이미지를 처리하는 네이티브 해상도 비전 트랜스포머를 통합하여 고정 해상도 분할로 인한 품질 저하를 피하고 세부 정보와 전체 레이아웃을 보존합니다. 추론 시 선택적으로 \"사고 모드\"로 논리 추론을 강화하여 어려운 입력에 더 높은 정확도를 제공할 수 있습니다."
+    },
+    "summary": "1. Ovis2.5는 시각 트랜스포머와 다중 모달 추론을 통합하여 원본 해상도 이미지 처리 및 강력한 추론 능력을 갖췄다.\n2. 모델은 선형적 사고를 벗어나 자기 확인 및 수정을 포함한 추론 능력을 향상시켰으며, 추론 시 \"사고 모드\"를 선택할 수 있는 선택지를 제공한다.\n3. Ovis2.5는 다양한 단계의 교육 과정을 거쳐 능력을 쌓아가며, 대규모 가르침 튜닝을 통해 정렬과 추론 능력을 향상시켰다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SSRL: Self-Search Reinforcement Learning",
+    "abstract": "We investigate the potential of large language models (LLMs) to serve as\nefficient simulators for agentic search tasks in reinforcement learning (RL),\nthereby reducing dependence on costly interactions with external search\nengines. To this end, we first quantify the intrinsic search capability of LLMs\nvia structured prompting and repeated sampling, which we term Self-Search. Our\nresults reveal that LLMs exhibit strong scaling behavior with respect to the\ninference budget, achieving high pass@k on question-answering benchmarks,\nincluding the challenging BrowseComp task. Building on these observations, we\nintroduce Self-Search RL (SSRL), which enhances LLMs' Self-Search capability\nthrough format-based and rule-based rewards. SSRL enables models to iteratively\nrefine their knowledge utilization internally, without requiring access to\nexternal tools. Empirical evaluations demonstrate that SSRL-trained policy\nmodels provide a cost-effective and stable environment for search-driven RL\ntraining, reducing reliance on external search engines and facilitating robust\nsim-to-real transfer. We draw the following conclusions: 1) LLMs possess world\nknowledge that can be effectively elicited to achieve high performance; 2) SSRL\ndemonstrates the potential of leveraging internal knowledge to reduce\nhallucination; 3) SSRL-trained models integrate seamlessly with external search\nengines without additional effort. Our findings highlight the potential of LLMs\nto support more scalable RL agent training.",
+    "authors": [
+      "Yuchen Fan",
+      "Kaiyan Zhang",
+      "Heng Zhou",
+      "Yuxin Zuo",
+      "Yanxu Chen",
+      "Yu Fu",
+      "Xinwei Long",
+      "Xuekai Zhu",
+      "Che Jiang",
+      "Yuchen Zhang",
+      "Li Kang",
+      "Gang Chen",
+      "Cheng Huang",
+      "Zhizhou He",
+      "Bingning Wang",
+      "Lei Bai",
+      "Ning Ding",
+      "Bowen Zhou"
+    ],
+    "likes": 74,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10874",
+    "date_collected": "2025-08-20T07:07:41.219825+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "SSRL: Self-Search Reinforcement Learning",
+      "abstract": "우리는 대규모 언어 모델(LLMs)이 보상 학습(RL)에서 에이전트 검색 작업의 효율적인 시뮬레이터로 작용할 잠재력을 탐구하여 외부 검색 엔진과의 비용이 많이 드는 상호작용에 대한 의존도를 줄일 수 있는지 조사합니다. 이를 위해, 우리는 LLMs의 고유한 탐색 능력을 구조화된 프롬프팅과 반복 샘플링을 통해 측정하여 Self-Search로 명명합니다. 결과는, LLMs가 추론 예산에 대해 강력한 스케일링 행동을 나타내며, 질의 응답 벤치마크에서 뛰어난 성과를 보이는 것을 보여줍니다. 이러한 관찰을 기반으로, 우리는 포맷 기반 및 규칙 기반 보상을 통해 LLMs의 Self-Search 능력을 강화하는 Self-Search RL(SSRL)을 소개합니다. SSRL은 모델이 외부 도구에 액세스하지 않고 내부적으로 지식 활용을 반복적으로 개선할 수 있게 합니다. 실험평가 결과는, SSRL로 훈련된 정책 모델이 검색 주도형 RL 훈련을 위한 비용 효율적이고 안정적인 환경을 제공하여 외부 검색 엔진에 대한 의존도를 줄이고 견고한 시뮬레이션-실제 전이를 용이하게 합니다. 우리는 다음 결론을 도출합니다: 1) LLMs는 뛰어난 성능을 달성하기 위해 효과적으로 추출할 수 있는 세계 지식을 보유하고 있습니다. 2) SSRL은 내부 지식을 활용하여 환각을 줄이는 잠재력을 보여줍니다. 3) SSRL로 훈련된 모델은 추가적인 노력없이 외부 검색 엔진과 원활하게 통합됩니다. 우리의 연구 결과는 LLMs가 더 확장 가능한 RL 에이전트 훈련을 지원할 잠재력을 강조합니다."
+    },
+    "summary": "1. LLMs는 고유한 자연어 모델로써 높은 성능을 달성하기 위해 활용될 수 있으며, Self-Search RL(SSRL)은 내부 지식을 활용하여 환각을 줄이고 외부 검색 엔진과 효율적으로 통합될 수 있음을 입증합니다.\n2. SSRL은 LLMs의 세계 지식을 효과적으로 추출하여 안정적이고 비용 효과적인 검색 주도형 RL 훈련을 가능하게 합니다.\n3. SSRL로 훈련된 모델은 외부 검색 엔진에 대한 의존도를 줄이고 견고한 시뮬레이션-실제 전이를 용이하게 하면서도 높은 성능을 발휘합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Thyme: Think Beyond Images",
+    "abstract": "Following OpenAI's introduction of the ``thinking with images'' concept,\nrecent efforts have explored stimulating the use of visual information in the\nreasoning process to enhance model performance in perception and reasoning\ntasks. However, to the best of our knowledge, no open-source work currently\noffers a feature set as rich as proprietary models (O3), which can perform\ndiverse image manipulations and simultaneously enhance logical reasoning\ncapabilities through code. In this paper, we make a preliminary attempt in this\ndirection by introducing Thyme (Think Beyond Images), a novel paradigm for\nenabling MLLMs to transcend existing ``think with images'' approaches by\nautonomously generating and executing diverse image processing and\ncomputational operations via executable code. This approach not only\nfacilitates a rich, on-the-fly set of image manipulations (e.g., cropping,\nrotation, contrast enhancement) but also allows for mathematical computations,\nall while maintaining high autonomy in deciding when and how to apply these\noperations. We activate this capability through a two-stage training strategy:\nan initial SFT on a curated dataset of 500K samples to teach code generation,\nfollowed by a RL phase to refine decision-making. For the RL stage, we manually\ncollect and design high-resolution question-answer pairs to increase the\nlearning difficulty, and we propose GRPO-ATS (Group Relative Policy\nOptimization with Adaptive Temperature Sampling), an algorithm that applies\ndistinct temperatures to text and code generation to balance reasoning\nexploration with code execution precision. We conduct extensive experimental\nanalysis and ablation studies. Comprehensive evaluations on nearly 20\nbenchmarks show that Thyme yields significant and consistent performance gains,\nparticularly in challenging high-resolution perception and complex reasoning\ntasks.",
+    "authors": [
+      "Yi-Fan Zhang",
+      "Xingyu Lu",
+      "Shukang Yin",
+      "Chaoyou Fu",
+      "Wei Chen",
+      "Xiao Hu",
+      "Bin Wen",
+      "Kaiyu Jiang",
+      "Changyi Liu",
+      "Tianke Zhang",
+      "Haonan Fan",
+      "Kaibing Chen",
+      "Jiankang Chen",
+      "Haojie Ding",
+      "Kaiyu Tang",
+      "Zhang Zhang",
+      "Liang Wang",
+      "Fan Yang",
+      "Tingting Gao",
+      "Guorui Zhou"
+    ],
+    "likes": 66,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11630",
+    "date_collected": "2025-08-20T07:07:41.221631+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "이미지 너머로 생각하라: Thyme (Think Beyond Images)",
+      "abstract": "OpenAI가 소개한 \"이미지로 생각하기\" 개념을 따르면서 최근 노력들은 시각 정보의 사용을 활성화하여 모델 성능을 향상시키기 위해 이성적 추론 작업에서 모델 성능을 향상시키는데 노력해왔다. 그러나 우리의 지식으로는 아직도 다양한 이미지 조작과 동시에 코드를 통해 논리적 추론 능력을 강화하는 독점적 모델들만큼 풍부한 기능 세트를 제공하는 오픈 소스 작업이 없다. 본 논문에서는 Thyme (Think Beyond Images)라는 새로운 패러다임을 소개하여, MLLM이 \"이미지로 생각하기\" 접근법을 넘어서게 하여 실행 가능한 코드를 통해 다양한 이미지 처리 및 계산 작업을 자동으로 생성하고 실행하도록 하는 초기 시도를 한다. 이 접근 방식은 이미지 조작의 풍부하고 즉석 사용(크롭, 회전, 대비 향상 등)과 더불어 수학적 계산을 가능케 하고, 이러한 작업을 언제 어떻게 적용할지에 대한 높은 자율성을 유지한다. 이 능력을 활성화하려면 두 단계의 훈련 전략을 사용한다: 50만 개의 샘플로 편집된 데이터셋 위에서 코드 생성을 가르치기 위한 초기 SFT, 그리고 의사결정을 정제하기 위한 강화학습(RL) 단계. RL 단계에서는 학습 난이도를 높이기 위해 고해상도 질의응답 쌍을 수집하고 디자인하며, 추론 탐사와 코드 실행 정밀도를 균형있게 향상시키기 위해 텍스트와 코드 생성에 서로 다른 온도를 적용하는 GRPO-ATS(Group Relative Policy Optimization with Adaptive Temperature Sampling) 알고리즘을 제안한다. 또한 포괄적인 실험 분석과 제거 연구를 실시한다. 거의 20개의 벤치마크에 대해 실시한 포괄적인 평가에서, Thyme은 특히 고해상도 perception과 복잡한 추론 작업에서 상당하고 일관된 성능 향상을 제공한다."
+    },
+    "summary": "1. Thyme는 \"이미지로 생각하기\" 접근법을 넘어서 실행 가능한 코드를 통해 다양한 이미지 처리와 계산 작업을 자동으로 생성하고 실행하여 높은 자율성을 유지한다.\n2. 두 단계의 훈련 전략을 통해 초기 SFT로 코드 생성을 가르치고 RL로 의사결정을 정제함으로써 Thyme은 고해상도 perception과 복잡한 추론 작업에서 상당하고 일관된 성능 향상을 이룬다.\n3. GRPO-ATS 알고리즘을 활용하여 Thyme은 텍스트와 코드 생성에 서로 다른 온도를 적용하여 추론 탐사와 코드 실행 정밀도를 균형있게 개선한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale\n  Pretraining",
+    "abstract": "Recent advances in large language model (LLM) pretraining have shown that\nsimply scaling data quantity eventually leads to diminishing returns, hitting a\ndata wall. In response, the use of synthetic data for pretraining has emerged\nas a promising paradigm for pushing the frontier of performance. Despite this,\nthe factors affecting synthetic data quality remain poorly understood. In this\nwork, we introduce BeyondWeb, a synthetic data generation framework that\nproduces high-quality synthetic data for pretraining. BeyondWeb significantly\nextends the capabilities of traditional web-scale datasets, outperforming\nstate-of-the-art synthetic pretraining datasets such as Cosmopedia and\nNemotron-CC's high-quality synthetic subset (Nemotron-Synth) by up to 5.1\npercentage points (pp) and 2.6pp, respectively, when averaged across a suite of\n14 benchmark evaluations. It delivers up to 7.7x faster training than open web\ndata and 2.7x faster than Nemotron-Synth. Remarkably, a 3B model trained for\n180B tokens on BeyondWeb outperforms an 8B model trained for the same token\nbudget on Cosmopedia. We also present several insights from BeyondWeb on\nsynthetic data for pretraining: what drives its benefits, which data to\nrephrase and how, and the impact of model size and family on data quality.\nOverall, our work shows that there's no silver bullet for generating\nhigh-quality synthetic pretraining data. The best outcomes require jointly\noptimizing many factors, a challenging task that requires rigorous science and\npractical expertise. Naive approaches can yield modest improvements,\npotentially at great cost, while well-executed methods can yield transformative\nimprovements, as exemplified by BeyondWeb.",
+    "authors": [
+      "Pratyush Maini",
+      "Vineeth Dorna",
+      "Parth Doshi",
+      "Aldo Carranza",
+      "Fan Pan",
+      "Jack Urbanek",
+      "Paul Burstein",
+      "Alex Fang",
+      "Alvin Deng",
+      "Amro Abbas",
+      "Brett Larsen",
+      "Cody Blakeney",
+      "Charvi Bannur",
+      "Christina Baek",
+      "Darren Teh",
+      "David Schwab",
+      "Haakon Mongstad",
+      "Haoli Yin",
+      "Josh Wills",
+      "Kaleigh Mentzer",
+      "Luke Merrick",
+      "Ricardo Monti"
+    ],
+    "likes": 47,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10975",
+    "date_collected": "2025-08-20T07:07:41.223511+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "BeyondWeb: Trillion-규모 사전 훈련을 위한 합성 데이터 확장에 대한 교훈",
+      "abstract": "대형 언어 모델(Large Language Model, LLM) 사전 훈련의 최근 발전은 단순히 데이터 양을 늘리는 것이 결국 수익이 줄어들게 만들어 데이터 벽에 부딪힘을 보여줍니다. 이에 대응하여 사전 훈련을 위한 합성 데이터의 사용이 성능의 전횡을 민망히 나아가는 유망한 패러다임으로 떠오르고 있습니다. 그럼에도 불구하고, 합성 데이터 품질에 영향을 미치는 요소는 여전히 잘 이해되지 않고 있습니다. 본 연구에서는 사전 훈련을 위한 고품질 합성 데이터를 생성하는 BeyondWeb이라는 합성 데이터 생성 프레임워크를 소개합니다."
+    },
+    "summary": "1. BeyondWeb은 기존의 웹 규모 데이터셋의 기능을 크게 확장하여, 14개의 평가 벤치마크를 통해 평균적으로 Cosmopedia 및 Nemotron-CC의 고품질 합성 서브셋(Nemotron-Synth)을 최대 5.1 포인트 및 2.6포인트 개선합니다.\n2. BeyondWeb은 오픈 웹 데이터보다 최대 7.7배, Nemotron-Synth보다 최대 2.7배 빠른 훈련을 제공합니다.\n3. BeyondWeb에서 180B 토큰에 대한 3B 모델의 훈련은 Cosmopedia에서 동일한 토큰 예산으로 훈련된 8B 모델을 능가합니다.",
+    "categories": [
+      "LLM",
+      "합성 데이터"
+    ]
+  },
+  {
+    "title": "ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long\n  Narrative Reasoning",
+    "abstract": "Narrative comprehension on long stories and novels has been a challenging\ndomain attributed to their intricate plotlines and entangled, often evolving\nrelations among characters and entities. Given the LLM's diminished reasoning\nover extended context and high computational cost, retrieval-based approaches\nremain a pivotal role in practice. However, traditional RAG methods can fall\nshort due to their stateless, single-step retrieval process, which often\noverlooks the dynamic nature of capturing interconnected relations within\nlong-range context. In this work, we propose ComoRAG, holding the principle\nthat narrative reasoning is not a one-shot process, but a dynamic, evolving\ninterplay between new evidence acquisition and past knowledge consolidation,\nanalogous to human cognition when reasoning with memory-related signals in the\nbrain. Specifically, when encountering a reasoning impasse, ComoRAG undergoes\niterative reasoning cycles while interacting with a dynamic memory workspace.\nIn each cycle, it generates probing queries to devise new exploratory paths,\nthen integrates the retrieved evidence of new aspects into a global memory\npool, thereby supporting the emergence of a coherent context for the query\nresolution. Across four challenging long-context narrative benchmarks (200K+\ntokens), ComoRAG outperforms strong RAG baselines with consistent relative\ngains up to 11% compared to the strongest baseline. Further analysis reveals\nthat ComoRAG is particularly advantageous for complex queries requiring global\ncomprehension, offering a principled, cognitively motivated paradigm for\nretrieval-based long context comprehension towards stateful reasoning. Our code\nis publicly released at https://github.com/EternityJune25/ComoRAG",
+    "authors": [
+      "Juyuan Wang",
+      "Rongchen Zhao",
+      "Wei Wei",
+      "Yufeng Wang",
+      "Mo Yu",
+      "Jie Zhou",
+      "Jin Xu",
+      "Liyan Xu"
+    ],
+    "likes": 46,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10419",
+    "date_collected": "2025-08-20T07:07:41.224820+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "ComoRAG: 상태 기반 장기 이야기 추론을 위한 인지 영감을 받은 기억 조직화 RAG",
+      "abstract": "긴 이야기와 소설의 서사 이해는 복잡한 줄거리와 캐릭터 및 개체 사이의 복잡하고 종종 변화하는 관계로 인해 어려운 도메인으로 여겨져왔습니다. LLM의 장거리 문맥에 대한 추론 능력이 감소되고 높은 계산 비용으로 인해 검색 기반 접근법이 실무에서 중요한 역할을 한다. 그러나 전통적인 RAG 방법은 상태 없는 단일 단계 검색 프로세스로 인해 종종 긴 범위 문맥 내에서 상호 연결된 관계를 포착할 때 동적 성격을 간과하기 쉽습니다. 본 연구에서 우리는 ComoRAG를 제안하는데, 서사 추론이 단일 단계가 아니라 새로운 증거 획득과 과거 지식 정리 사이의 동적이며 진화하는 상호 작용이며, 뇌에서 기억 관련 신호로 추론할 때 인간의 인지와 유사하다는 원칙입니다. ComoRAG는 추론이 막힐 때마다 동적 메모리 작업 공간과 상호 작용하면서 반복적인 추론 주기를 거칩니다. 각 주기에서는 새로운 탐사 경로를 개발하기 위해 탐사 쿼리를 생성한 다음 새로운 측면의 검색된 증거를 전역 메모리 풀에 통합하여 질문 해결을 위한 일관된 문맥의 발생을 지원합니다. 4개의 어려운 장기적인 문맥 서사 벤치마크(200K 이상 토큰)를 통해 ComoRAG는 가장 강력한 RAG 기준에 비해 일관된 상대적 향상으로 11%까지 성과를 높였습니다. 추가적인 분석 결과, ComoRAG는 글로벌 이해력을 요구하는 복잡한 질문에 특히 유리하며, 상태적 추론을 향한 검색 기반 장기 문맥 이해를 위한 원칙적이고 인지적 동기가 된다. 저희의 코드는 https://github.com/EternityJune25/ComoRAG에서 공개되어 있습니다."
+    },
+    "summary": "1. ComoRAG는 인간의 뇌가 기억과 관련된 신호로 추론할 때 인지적이고 진화하는 특성을 반영하여 상태 기반의 장기적인 이야기 이해를 위한 새로운 접근 방식을 제안합니다.\n2. ComoRAG는 상태 업데이트가 가능한 동적 메모리 작업 공간과 상호 작용하여, 반복적으로 새로운 증거를 통합하고 탐사 경로를 개발함으로써 긴 범위 문맥에서의 추론 성능을 개선합니다.\n3. 4개의 어려운 장기적인 문맥 서사 벤치마크를 통해 ComoRAG는 강력한 RAG 기준에 비해 최대 11%의 상대적인 개선을 보이며, 글로벌 이해력을 필요로 하는 복잡한 질문에 특히 유리함이 확인되었습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Narrative Comprehension"
+    ]
+  },
+  {
+    "title": "4DNeX: Feed-Forward 4D Generative Modeling Made Easy",
+    "abstract": "We present 4DNeX, the first feed-forward framework for generating 4D (i.e.,\ndynamic 3D) scene representations from a single image. In contrast to existing\nmethods that rely on computationally intensive optimization or require\nmulti-frame video inputs, 4DNeX enables efficient, end-to-end image-to-4D\ngeneration by fine-tuning a pretrained video diffusion model. Specifically, 1)\nto alleviate the scarcity of 4D data, we construct 4DNeX-10M, a large-scale\ndataset with high-quality 4D annotations generated using advanced\nreconstruction approaches. 2) we introduce a unified 6D video representation\nthat jointly models RGB and XYZ sequences, facilitating structured learning of\nboth appearance and geometry. 3) we propose a set of simple yet effective\nadaptation strategies to repurpose pretrained video diffusion models for 4D\nmodeling. 4DNeX produces high-quality dynamic point clouds that enable\nnovel-view video synthesis. Extensive experiments demonstrate that 4DNeX\noutperforms existing 4D generation methods in efficiency and generalizability,\noffering a scalable solution for image-to-4D modeling and laying the foundation\nfor generative 4D world models that simulate dynamic scene evolution.",
+    "authors": [
+      "Zhaoxi Chen",
+      "Tianqi Liu",
+      "Long Zhuo",
+      "Jiawei Ren",
+      "Zeng Tao",
+      "He Zhu",
+      "Fangzhou Hong",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "likes": 43,
+    "published_date": "Aug 18",
+    "url": "https://huggingface.co/papers/2508.13154",
+    "date_collected": "2025-08-20T07:07:41.226176+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "4DNeX: Feed-Forward 4D 생성 모델링이 쉬워졌습니다",
+      "abstract": "본 연구에서는 한 장의 이미지로부터 4D(동적 3D) 장면 표현을 생성하는 첫 번째 피드 포워드 프레임워크 4DNeX를 제안합니다. 기존 방법들과는 달리 계산 집중적인 최적화나 다중 프레임 비디오 입력이 요구되지 않고, 사전 학습된 비디오 확산 모델을 세세하게 조정하여 효율적인 엔드 투 엔드 이미지-4D 생성을 가능하게 합니다. 특히, 1) 4D 데이터 부족을 완화하기 위해 첨단 재구성 방법을 사용하여 고품질 4D 주석을 생성한 대규모 데이터셋 4DNeX-10M을 구축합니다. 2) RGB 및 XYZ 시퀀스를 공동으로 모델링하는 통합 6D 비디오 표현을 도입하여 모습과 기하학의 구조화된 학습을 촉진합니다. 3) 사전 학습된 비디오 확산 모델을 4D 모델링에 재활용하기 위한 일련의 간단하면서 효과적인 적응 전략을 제안합니다. 4DNeX는 새로운 시각 동영상 합성을 가능케 하는 고품질 동적 포인트 클라우드를 생성합니다. 방대한 실험을 통해 4DNeX가 효율성과 일반성에서 기존 4D 생성 방법들을 능가하며, 이미지-4D 모델링에 확장 가능한 솔루션을 제공하고 동적 장면 진화를 시뮬레이션하는 생성적 4D 세계 모델링의 기초를 마련합니다."
+    },
+    "summary": "1. 4DNeX는 사전 학습된 비디오 확산 모델을 세세하게 조정하여 효율적인 4D 모델 생성을 가능케 합니다.\n2. 4DNeX-10M 데이터셋을 통해 4D 데이터 부족 문제를 해결하고, RGB 및 XYZ 시퀀스를 공동으로 모델링하여 모습과 기하학을 통합적으로 학습합니다.\n3. 간단하면서 효과적인 적응 전략을 활용하여 4DNeX가 기존 4D 생성 방법보다 우수한 효율성과 일반성을 보입니다.",
+    "categories": [
+      "Computer Vision",
+      "Generative Modeling"
+    ]
+  },
+  {
+    "title": "Next Visual Granularity Generation",
+    "abstract": "We propose a novel approach to image generation by decomposing an image into\na structured sequence, where each element in the sequence shares the same\nspatial resolution but differs in the number of unique tokens used, capturing\ndifferent level of visual granularity. Image generation is carried out through\nour newly introduced Next Visual Granularity (NVG) generation framework, which\ngenerates a visual granularity sequence beginning from an empty image and\nprogressively refines it, from global layout to fine details, in a structured\nmanner. This iterative process encodes a hierarchical, layered representation\nthat offers fine-grained control over the generation process across multiple\ngranularity levels. We train a series of NVG models for class-conditional image\ngeneration on the ImageNet dataset and observe clear scaling behavior. Compared\nto the VAR series, NVG consistently outperforms it in terms of FID scores (3.30\n-> 3.03, 2.57 ->2.44, 2.09 -> 2.06). We also conduct extensive analysis to\nshowcase the capability and potential of the NVG framework. Our code and models\nwill be released.",
+    "authors": [
+      "Yikai Wang",
+      "Zhouxia Wang",
+      "Zhonghua Wu",
+      "Qingyi Tao",
+      "Kang Liao",
+      "Chen Change Loy"
+    ],
+    "likes": 38,
+    "published_date": "Aug 18",
+    "url": "https://huggingface.co/papers/2508.12811",
+    "date_collected": "2025-08-20T07:07:41.227332+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "다음 시각적 세분화 생성",
+      "abstract": "우리는 이미지를 구조화된 순차적으로 분해하여, 각 순서의 원소는 같은 공간 해상도를 가지지만 사용된 고유 토큰의 수에 따라 달라져 시각적 세분화의 다양한 수준을 포착하는 혁신적인 접근법을 제안합니다. 이미지 생성은 저희가 새롭게 소개한 다음 시각적 세분화 (NVG) 생성 프레임워크를 통해 이루어지며, 이는 빈 이미지부터 시작하여 구조화된 방식으로 전역 레이아웃부터 세부 사항까지 점진적으로 정제되는 시각적 세분화 순서를 생성합니다. 이 반복적인 과정은 생성 과정을 다중 세분화 수준 전체에 걸쳐 세밀하게 조절할 수 있는 계층적, 층별 표현을 인코딩합니다. 우리는 ImageNet 데이터셋에서 클래스 조건부 이미지 생성을 위해 일련의 NVG 모델을 훈련시키고 명확한 스케일링 행동을 관찰합니다. VAR 시리즈와 비교하여 FID 점수 측면에서 NVG가 일관되게 우수한 성과를 보임을 확인합니다 (3.30 -> 3.03, 2.57 -> 2.44, 2.09 -> 2.06). 또한, NVG 프레임워크의 능력과 잠재력을 소개하기 위해 포괄적인 분석을 수행합니다. 저희의 코드와 모델은 공개될 예정입니다."
+    },
+    "summary": "1. 이미지를 단계별로 세분화하여 세밀한 제어를 가능하게 하는 다음 시각적 세분화 생성 방법을 제안합니다.\n2. ImageNet 데이터셋에서 클래스 조건부 이미지 생성을 위해 NVG 모델을 훈련시키고 분석한 결과, NVG는 VAR 시리즈보다 우수한 성능을 보입니다.\n3. NVG 프레임워크의 잠재능력을 증명하기 위해 포괄적인 분석을 수행하고, 코드와 모델은 공개될 예정입니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Speed Always Wins: A Survey on Efficient Architectures for Large\n  Language Models",
+    "abstract": "Large Language Models (LLMs) have delivered impressive results in language\nunderstanding, generation, reasoning, and pushes the ability boundary of\nmultimodal models. Transformer models, as the foundation of modern LLMs, offer\na strong baseline with excellent scaling properties. However, the traditional\ntransformer architecture requires substantial computations and poses\nsignificant obstacles for large-scale training and practical deployment. In\nthis survey, we offer a systematic examination of innovative LLM architectures\nthat address the inherent limitations of transformers and boost the efficiency.\nStarting from language modeling, this survey covers the background and\ntechnical details of linear and sparse sequence modeling methods, efficient\nfull attention variants, sparse mixture-of-experts, hybrid model architectures\nincorporating the above techniques, and emerging diffusion LLMs. Additionally,\nwe discuss applications of these techniques to other modalities and consider\ntheir wider implications for developing scalable, resource-aware foundation\nmodels. By grouping recent studies into the above category, this survey\npresents a blueprint of modern efficient LLM architectures, and we hope this\ncould help motivate future research toward more efficient, versatile AI\nsystems.",
+    "authors": [
+      "Weigao Sun",
+      "Jiaxi Hu",
+      "Yucheng Zhou",
+      "Jusen Du",
+      "Disen Lan",
+      "Kexin Wang",
+      "Tong Zhu",
+      "Xiaoye Qu",
+      "Yu Zhang",
+      "Xiaoyu Mo",
+      "Daizong Liu",
+      "Yuxuan Liang",
+      "Wenliang Chen",
+      "Guoqi Li",
+      "Yu Cheng"
+    ],
+    "likes": 33,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2508.09834",
+    "date_collected": "2025-08-20T07:07:41.228855+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "속도가 항상 이기는 법: 대규모 언어 모델을 위한 효율적인 아키텍처에 관한 조사",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)은 언어 이해, 생성, 추론에서 놀라운 결과를 냈으며, 멀티모달 모델의 능력 경계를 넓혀왔다. 현대 LLM의 기반이 되는 트랜스포머 모델은 우수한 확장성 특성을 갖춘 강력한 기준을 제공한다. 그러나 전통적인 트랜스포머 아키텍처는 상당한 계산을 필요로 하며 대규모 훈련과 실제 적용에 심각한 장애요소로 작용한다. 본 조사에서는 트랜스포머의 본질적 한계를 해결하고 효율성을 향상시키는 혁신적인 LLM 아키텍처를 체계적으로 검토한다. 언어 모델링부터 시작해 선형 및 희소 시퀀스 모델링 방법, 효율적인 전체 주의력 변형, 희소 전문가 모델, 위 기술들을 통합한 하이브리드 모델 아키텍처, 그리고 신흥 확산 LLM까지의 배경과 기술 세부사항을 다룬다. 또한 이러한 기술들의 다른 모달리티에 대한 응용을 논의하고, 확장 가능하고 자원 인식적인 기본 모델을 개발하는 데의 광범위한 함의를 고려한다. 최근 연구들을 상기 범주로 묶어 이 조사는 최신 효율적인 LLM 아키텍처의 청사진을 제시하며, 앞으로 더 효율적이고 다재다능한 AI 시스템으로의 연구를 촉진할 수 있기를 희망한다."
+    },
+    "summary": "1. 트랜스포머의 한계를 극복하고 효율성을 향상시키는 혁신적인 LLM 아키텍처에 관한 체계적 검토\n2. 선형 및 희소 시퀀스 모델링, 효율적인 전체 주의력 변형, 희소 전문가 모델을 포함한 다양한 기술 소개\n3. 다른 모달리티에 응용하는 방법과 확장 가능한 기반 모델 개발을 위한 관련 연구의 중요성 강조",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "When Punctuation Matters: A Large-Scale Comparison of Prompt Robustness\n  Methods for LLMs",
+    "abstract": "Large Language Models (LLMs) are highly sensitive to subtle, non-semantic\nvariations in prompt phrasing and formatting. In this work, we present the\nfirst systematic evaluation of 5 methods for improving prompt robustness within\na unified experimental framework. We benchmark these techniques on 8 models\nfrom Llama, Qwen and Gemma families across 52 tasks from Natural Instructions\ndataset. Our evaluation covers robustness methods from both fine-tuned and\nin-context learning paradigms, and tests their generalization against multiple\ntypes of distribution shifts. Finally, we extend our analysis to GPT-4.1 and\nDeepSeek V3 to assess frontier models' current robustness to format\nperturbations. Our findings offer actionable insights into the relative\neffectiveness of these robustness methods, enabling practitioners to make\ninformed decisions when aiming for stable and reliable LLM performance in\nreal-world applications. Code:\nhttps://github.com/AIRI-Institute/when-punctuation-matters.",
+    "authors": [
+      "Mikhail Seleznyov",
+      "Mikhail Chaichuk",
+      "Gleb Ershov",
+      "Alexander Panchenko",
+      "Elena Tutubalina",
+      "Oleg Somov"
+    ],
+    "likes": 31,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11383",
+    "date_collected": "2025-08-20T07:07:41.230032+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "문장부호의 중요성: LLM을 위한 대규모 프롬프트 강건성 비교 연구",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)은 프롬프트 구문과 형식의 미묘한 차이에 매우 민감합니다. 본 연구에서는 프롬프트 강건성을 향상시키는 5가지 방법을 통합적 실험 프레임워크에서 첫 번째로 체계적으로 평가합니다. Llama, Qwen, Gemma 가족의 8개 모델과 Natural Instructions 데이터셋의 52가지 작업을 대상으로 이러한 기법들을 평가합니다. 그리고 fine-tuned와 in-context 학습 패러다임에서 나온 강건성 방법을 모든 종류의 분포 이동에 대해 실험하며, GPT-4.1과 DeepSeek V3까지 분석을 확장하여 최신 모델의 형식 변조에 대한 현재 강건성을 평가합니다. 이 연구 결과는 이러한 강건성 방법들의 상대적 효과에 대한 실질적인 통찰을 제공하여 현실 세계 응용 프로그램에서 안정적이고 신뢰할 수 있는 LLM 성능을 추구하는 실무자들이 정보 기반 결정을 내릴 수 있도록 돕습니다."
+    },
+    "summary": "1. LLMs는 프롬프트의 미묘한 차이에 매우 민감하며, 본 연구는 5가지 방법을 평가하여 프롬프트 강건성을 향상시키는 방법을 제시합니다.\n2. 실험은 Llama, Qwen, Gemma 가족의 8개 모델과 Natural Instructions 데이터셋의 52가지 작업을 대상으로 이뤄지며, 다양한 분포 이동에 대한 일반화 성능을 검증합니다.\n3. GPT-4.1과 DeepSeek V3를 포함한 최신 모델의 형식 변조에 대한 강건성을 평가하여, 실무자들이 안정적이고 신뢰할 수 있는 LLM 성능 향상을 위한 결정을 내리도록 돕는 결과를 제시합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+=== Paper Collection Started at Mon Apr  6 22:16:15 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W15
+URL: https://huggingface.co/papers/week/2026-W15
+Found 10 papers in weekly view
+Fetching likes for: Self-Distilled RLVR
+Fetching likes for: A Simple Baseline for Streaming Video Understanding
+Fetching likes for: Token Warping Helps MLLMs Look from Nearby Viewpoints
+Fetching likes for: Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?
+Fetching likes for: Test-Time Scaling Makes Overtraining Compute-Optimal
+Fetching likes for: Communicating about Space: Language-Mediated Spatial Integration Across Partial Views
+Fetching likes for: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Fetching likes for: AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks
+Fetching likes for: Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression
+Fetching likes for: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents
+Selected top 10 papers by likes:
+1. Self-Distilled RLVR (79 likes)
+2. A Simple Baseline for Streaming Video Understanding (53 likes)
+3. Token Warping Helps MLLMs Look from Nearby Viewpoints (21 likes)
+4. Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence? (20 likes)
+5. Test-Time Scaling Makes Overtraining Compute-Optimal (14 likes)
+6. Communicating about Space: Language-Mediated Spatial Integration Across Partial Views (12 likes)
+7. InCoder-32B-Thinking: Industrial Code World Model for Thinking (5 likes)
+8. AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks (4 likes)
+9. Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression (3 likes)
+10. AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents (2 likes)
+Found abstract: On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This parad...
+Processed paper: Self-Distilled RLVR
+Found abstract: Recent streaming video understanding methods increasingly rely on complex memory mechanisms to handl...
+Processed paper: A Simple Baseline for Streaming Video Understanding
+Found abstract: Can warping tokens, rather than pixels, help multimodal large language models (MLLMs) understand how...
+Processed paper: Token Warping Helps MLLMs Look from Nearby Viewpoints
+Found abstract: Multimodal Large Language Models (MLLMs) are evolving from passive observers into active agents, sol...
+Processed paper: Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?
+Found abstract: Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model si...
+Processed paper: Test-Time Scaling Makes Overtraining Compute-Optimal
+Found abstract: Humans build shared spatial understanding by communicating partial, viewpoint-dependent observations...
+Processed paper: Communicating about Space: Language-Mediated Spatial Integration Across Partial Views
+Found abstract: Industrial software development across chip design, GPU optimization, and embedded systems lacks exp...
+Processed paper: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Found abstract: With the rise of personalized, persistent LLM agent frameworks such as OpenClaw, human-centered agen...
+Processed paper: AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks
+Found abstract: The deployment of Large Language Models is constrained by the memory and bandwidth demands of static...
+Processed paper: Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression
+Found abstract: Computer-use agents extend language models from text generation to persistent action over tools, fil...
+Processed paper: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Self-Distilled RLVR
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: A Simple Baseline for Streaming Video Understanding
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Token Warping Helps MLLMs Look from Nearby Viewpoints
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Test-Time Scaling Makes Overtraining Compute-Optimal
+Generating Korean translation and summary...
+Translation failed, retrying... (attempt 1/3)
+
+Processing paper 6/10
+Title: Communicating about Space: Language-Mediated Spatial Integration Across Partial Views
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Paper already exists, checking if translation is complete...
+Update likes: 5  ->  0
+Update date_collected: 2026-04-07T07:16:23.429608+09:00  ->  2026-04-06T10:41:26.848267+09:00
+
+Processing paper 8/10
+Title: AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W15.json...
+
+Updating Notion database...
+Creating new paper: 자기 생성 강화학습 기반의 Self-Distilled RLVR
+Creating new paper: 스트리밍 비디오 이해를 위한 간단한 베이스라인
+Creating new paper: 토큰 와핑이 MLLM이 가까운 시각에서 바라보는 능력을 향상시킬까?
+Creating new paper: MLLM과 가능성: Agentic 능력이 멀티모달 인지에 주는 영향은 무엇인가?
+Creating new paper: 테스트 시간 스케일링은 오버트레이닝을 계산적으로 최적화합니다
+Creating new paper: 공간에 대한 의사소통: 부분적 시야를 통한 언어 중재된 공간 통합
+Updating paper: 산업 코드 세계 모델을 위한 인코더-32B-사고력 (likes: 0 -> 5)
+Creating new paper: AgentSocialBench: 인간 중심 에이전트 소셜 네트워크에서의 개인 정보 보안 위험 평가
+Creating new paper: Swift-SVD: 저위계 LLM 압축에서 이론적 최적성이 실용적 효율성을 만나다
+Creating new paper: AgentHazard: 컴퓨터 사용 에이전트에서 해로운 행동을 평가하기 위한 벤치마크
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Apr  6 22:18:43 UTC 2026 ===
+

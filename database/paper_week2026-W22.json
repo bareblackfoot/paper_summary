@@ -1,0 +1,330 @@
+[
+  {
+    "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
+    "abstract": "World models for interactive video generation have largely focused on single-agent settings, where future observations are generated from a single control signal. However, many generated environments require multi-agent interaction: multiple players, robots, or embodied agents act simultaneously within a shared space. Scaling world models to such settings requires a principled multi-agent design: agents should remain independently controllable, permutation-symmetric, and support efficient inference while maintaining consistency across time and perspectives. In this paper, we present our generative multi-agent world model for interactive simulation. It introduces Simplex Rotary Agent Encoding, a parameter-free extension of 3D RoPE that represents agents as vertices of a regular simplex in rotary angle space. This gives each agent a distinct phase while making all agents permutation-equivalent, enabling scalable agent identity without learned per-slot identities or a fixed agent ordering. To avoid dense all-to-all attention across agents, we further propose Sparse Hub Attention, where learnable hub tokens mediate token interaction across agents, reducing cross-agent attention cost from quadratic to linear in the number of agents. For real-time rollout, we distill a full-context diffusion teacher into a causal student that generates temporal blocks sequentially with KV caching, enabling action-responsive generation at 24 FPS. Experiments in multiplayer virtual environments show that our model improves video fidelity, action controllability, and inter-agent consistency over slot-based and dense-attention baselines, while generalizing from two to four players without additional training.",
+    "authors": [
+      "Fangfu Liu",
+      "Kai He",
+      "Tianchang Shen",
+      "Tianshi Cao",
+      "Sanja Fidler",
+      "Yueqi Duan",
+      "Jun Gao",
+      "Igor Gilitschenski",
+      "Zian Wang",
+      "Xuanchi Ren"
+    ],
+    "likes": 283,
+    "published_date": "May 27",
+    "url": "https://huggingface.co/papers/2605.28816",
+    "date_collected": "2026-05-30T07:36:34.931933+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "게임마-월드: 두 명 이상의 플레이어를 위한 생성적 다중 에이전트 월드 모델링",
+      "abstract": "상호작용 비디오 생성을 위한 월드 모델은 주로 미래 관찰이 단일 제어 신호로부터 생성되는 단일 에이전트 설정에 집중해왔습니다. 하지만 많은 생성된 환경은 다중 에이전트 상호작용을 필요로 합니다: 여러 플레이어, 로봇 또는 실제 존재하는 에이전트들이 공유 공간 내에서 동시에 행동합니다. 이러한 설정으로 월드 모델을 확장하려면 원칙에 따라 다중 에이전트 디자인이 필요합니다: 에이전트는 독립적으로 제어 가능해야 하며 순열 대칭적이어야 하며 효율적인 추론을 지원하면서 시간과 관점을 유지하는 것이 중요합니다. 본 논문에서는 상호작용 시뮬레이션을 위한 생성적 다중 에이전트 월드 모델을 제시합니다. 이는 Simplex Rotary Agent Encoding을 도입하며, 3D RoPE의 파라미터 없는 확장으로 에이전트들을 회전 각도 공간의 정규 단순체의 정점으로 나타냅니다. 이를 통해 각 에이전트는 고유한 위상을 갖게 되면서 모든 에이전트가 순열 등가성을 갖추어 학습된 슬롯 식별이나 고정된 에이전트 순서를 필요로 하지 않는 확장 가능한 에이전트 신원을 제공합니다."
+    },
+    "summary": "1. 다중 플레이어 상호작용을 위한 생성적 다중 에이전트 월드 모델 소개\n2. Simplex Rotary Agent Encoding을 통한 에이전트 고유성과 확장성 제안\n3. Sparse Hub Attention을 활용하여 에이전트 간의 상호작용 비용 절감",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+    "abstract": "Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, none of which behaves like a deep-learning optimizer for the skill, and none of which reliably improves over its starting point under feedback. We argue the skill should instead be trained as the external state of a frozen agent, with the same discipline that makes weight-space optimization reproducible. SkillOpt is, to our knowledge, the first systematic controllable text-space optimizer for agent skills: a separate optimizer model turns scored rollouts into bounded add/delete/replace edits on a single skill document, and an edit is accepted only when it strictly improves a held-out validation score. A textual learning-rate budget, rejected-edit buffer, and epoch-wise slow/meta update make skill training stable while adding zero inference-time model calls at deployment. Across six benchmarks, seven target models, and three execution harnesses (direct chat, Codex, Claude Code), SkillOpt is best or tied on all 52 evaluated (model, benchmark, harness) cells and beats every per-cell competitor among human, one-shot LLM, Trace2Skill, TextGrad, GEPA, and EvoSkill skills. On GPT-5.5 it lifts the average no-skill accuracy by +23.5 points in direct chat, by +24.8 inside the Codex agentic loop, and by +19.1 inside Claude Code. Transfer experiments further show that optimized skill artifacts retain value when moved across model scales, between Codex and Claude Code execution environments, and to a nearby math benchmark without further optimization.",
+    "authors": [
+      "Yifan Yang",
+      "Ziyang Gong",
+      "Weiquan Huang",
+      "Qihao Yang",
+      "Ziwei Zhou",
+      "Zisu Huang",
+      "Yan Li",
+      "Xuemei Gao",
+      "Qi Dai",
+      "Bei Liu",
+      "Kai Qiu",
+      "Yuqing Yang",
+      "Dongdong Chen",
+      "Xue Yang",
+      "Chong Luo"
+    ],
+    "likes": 201,
+    "published_date": "May 22",
+    "url": "https://huggingface.co/papers/2605.23904",
+    "date_collected": "2026-05-30T07:36:34.934782+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "SkillOpt: 진화 중인 에이전트 스킬을 위한 실행 전략",
+      "abstract": "현재의 에이전트 스킬은 수동으로 제작되거나 일회성으로 생성되거나 느슨하게 제어된 자체 수정을 통해 진화되는데, 이는 스킬에 대한 딥 러닝 최적화기와 같이 작동하지 않으며, 피드백에 따라 시작점을 신뢰할 수 있는 방식으로 개선하지 못합니다. 본 논문은 스킬을 외부 상태로 냉동된 에이전트의 훈련으로 대체해야 하며, 이는 가중치 공간 최적화를 재현 가능하게 하는 훈련 기술을 갖춰야 합니다. SkillOpt는 우리의 알고 있는 바로는 에이전트 스킬에 대한 첫 번째 체계적이고 조절 가능한 텍스트 공간 최적화기로, 별도의 최적화 모델이 점수 매겨진 롤아웃을 단일 스킬 문서에 대한 추가/삭제/대체 편집으로 변환시키며, 편집은 보류된 검증 점수를 엄격히 개선할 때에만 수용됩니다. 텍스트 학습 속도 예산, 거부된 편집 버퍼 및 에폭별로 느린/메타 업데이트는 스킬 훈련을 안정적으로 만들며, 배포 시에 제로 추론 시간 모델 호출을 추가합니다. 6개 벤치마크, 7개 대상 모델 및 3개 실행 도구(Direct Chat, Codex, Claude Code) 전반에서 SkillOpt는 모든 52개 cell에서 최고이거나 타이를 차지하며, 인간, 일회성 LLM, Trace2Skill, TextGrad, GEPA, EvoSkill 스킬 중에서 모든 cell 별 경쟁 상대를 이겨냅니다. GPT-5.5에서는 Direct Chat에서 평균 스킬 미평가 정확도를 +23.5 점, Codex 안에서 +24.8 점, Claude Code 안에서 +19.1 점 향상시킵니다. 이적 실험은 최적화된 스킬 아티팩트가 모델 스케일 간, Codex와 Claude Code 실행 환경 간, 그리고 더 나은 최적화 없이 인접한 수학 벤치마크로 이동할 때 가치를 유지함을 보여줍니다."
+    },
+    "summary": "1. 에이전트 스킬을 최적화하기 위한 새로운 텍스트 공간 최적화기인 SkillOpt를 제안하며, 외부 상태로 훈련된 냉동 에이전트를 활용하여 자체 진화하는 스킬을 유지보수 가능하고 안정적으로 수행합니다.\n2. SkillOpt는 validation score를 엄격히 향상시키는 편집만 수용하며, 최적화된 스킬 아티팩트는 모델 스케일 간 이동 시 가치를 유지합니다.\n3. 실험 결과에서 SkillOpt는 여러 벤치마크와 실행 도구에서 인간 및 다른 스킬 최적화 모델들을 이기고, 스킬 미평가 정확도를 상당히 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning",
+    "abstract": "Reinforcement Learning has become a standard paradigm for aligning Large Language Models with human intent and task requirements. While Group Relative Policy Optimization offers an efficient, value-model-free alternative to Proximal Policy Optimization, adapting it to real-world multi-reward settings remains challenging. Standard scalarization practices, such as Reward Combination and Advantage Combination, suffer from significant drawbacks: Reward Combination frequently generates advantages with excessively large squared magnitudes that lead to training instability, while Advantage Combination relies on static hyperparameters and ignores cross-objective correlations. To address these limitations, we propose Dynamic Variance-adaptive Advantage Optimization (DVAO), which dynamically adjusts combination weights based on the empirical reward variance of each objective within a rollout group, effectively up-weighting objectives with a stronger learning signal while suppressing noisy ones. We mathematically prove that DVAO maintains bounded advantage magnitudes for stable training and introduces a self-adaptive cross-objective regularization mechanism. Extensive experiments on mathematical reasoning and tool-use benchmarks using Qwen3 and Qwen2.5 models demonstrate that DVAO significantly outperforms baseline methods, achieving a superior multi-objective Pareto frontier and robust training stability.",
+    "authors": [
+      "Guochao Jiang",
+      "Jingyi Song",
+      "Guofeng Quan",
+      "Chuzhan Hao",
+      "Guohua Liu",
+      "Yuewei Zhang"
+    ],
+    "likes": 130,
+    "published_date": "May 25",
+    "url": "https://huggingface.co/papers/2605.25604",
+    "date_collected": "2026-05-30T07:36:34.937108+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "다이내믹 분산 적응형 어드밴티지 최적화를 이용한 다중 보상 강화학습 (DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning)",
+      "abstract": "강화학습은 대형 언어 모델을 인간의 의도 및 작업 요구에 맞추는 표준적인 패러다임이 되었습니다. 그룹 상대 정책 최적화는 Proximal 정책 최적화에 비해 효율적이면서도 값 모델이 필요 없는 대안을 제공하지만, 이를 현실 세계의 다중 보상 설정에 적응하기는 여전히 어려웠습니다. 표준 스칼라화 방법인 보상 결합 및 어드밴티지 결합은 심각한 단점을 가지고 있습니다. 보상 결합은 종종 훈련 불안정으로 이어지는 지나치게 큰 제곱 크기의 어드밴티지를 생성하는 반면, 어드밴티지 결합은 정적 하이퍼파라미터에 의존하고 상호 목적 간 상관 관계를 무시합니다. 이러한 한계를 해결하기 위해 우리는 Dynamic Variance-adaptive Advantage Optimization (DVAO)을 제안합니다. 이는 각 롤아웃 그룹 내 각 목적의 경험적 보상 분산을 기반으로 결합 가중치를 동적으로 조정하여 더 강한 학습 신호를 가진 목적을 강조하면서 노이즈가 많은 목적을 억제합니다. 우리는 DVAO가 안정적인 훈련을 위해 제한된 어드밴티지 크기를 유지하고 자기 적응적인 상호 목적 정규화 메커니즘을 도입한다는 것을 수학적으로 증명합니다. Qwen3 및 Qwen2.5 모델을 사용한 수학적 추론 및 도구 사용 벤치마크에 대한 광범위한 실험은 DVAO가 기존 방법을 크게 능가하여 우수한 다중 목적 파레토 전선을 달성하고 견고한 훈련 안정성을 보여준다."
+    },
+    "summary": "1. 표준 스칼라화 방법의 한계를 해결하기 위해 Dynamic Variance-adaptive Advantage Optimization (DVAO)를 제안하였으며, 이는 각 목적의 보상 분산에 기초하여 가중치를 동적으로 조정하여 안정적이고 효율적인 훈련을 가능하게 한다.\n2. DVAO는 수학적 추론 및 도구 사용 벤치마크에서 기존 방법을 크게 능가하며, 우수한 다중 목적 파레토 전선 및 견고한 훈련 안정성을 달성한다.\n3. 실험 결과는 DVAO가 다중 보상 강화학습에서 우수한 성능을 보여주며, 실제 환경에서의 적응이 어려웠던 문제를 효과적으로 해결할 수 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding",
+    "abstract": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded largely independently. This token-by-token decoding mismatches the coupled structure of box geometry and creates a practical inference bottleneck due to strictly sequential generation. We introduce LocateAnything, a unified generative grounding and detection framework based on Parallel Box Decoding (PBD). By decoding geometric elements such as bounding boxes and points as atomic units in a single step, LocateAnything preserves intra-box geometric coherence and unlocks substantial parallelism. We show that PBD improves both decoding throughput and localization accuracy. We further develop a scalable data engine and curate LocateAnything-Data, a large-scale dataset with more than 138 million training samples, substantially increasing data diversity for high-precision localization. Extensive evaluations show that LocateAnything advances the speed-accuracy frontier, achieving significantly higher decoding throughput while improving high-IoU localization quality across diverse benchmarks. The results highlight the complementary benefits of Parallel Box Decoding and large-scale training data in enabling efficient and precise unified visual grounding and detection.",
+    "authors": [
+      "Shihao Wang",
+      "Shilong Liu",
+      "Yuanguo Kuang",
+      "Xinyu Wei",
+      "Yangzhou Liu",
+      "Zhiqi Li",
+      "Yunze Man",
+      "Guo Chen",
+      "Andrew Tao",
+      "Guilin Liu",
+      "Jan Kautz",
+      "Lei Zhang",
+      "Zhiding Yu"
+    ],
+    "likes": 117,
+    "published_date": "May 26",
+    "url": "https://huggingface.co/papers/2605.27365",
+    "date_collected": "2026-05-30T07:36:34.939863+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "LocateAnything: 빠르고 고품질의 시각-언어 접지를 위한 병렬 상자 디코딩",
+      "abstract": "시각-언어 모델(Vision-language models, VLMs)은 일반적으로 시각적 접지와 감지를 좌표 토큰 생성 문제로 제기하며, 각 2D 상자를 복수의 1D 토큰으로 직렬화하여 학습 및 해독을 대부분 독립적으로 수행합니다. 이 토큰 단위 해독은 상자 기하구조의 결합 구조와 불일치하며, 엄격한 순차적 생성으로 인한 실용적 추론 병목현상을 초래합니다. 우리는 병렬 상자 디코딩(Parallel Box Decoding, PBD)에 기반한 통합 생성 접지 및 감지 프레임워크인 LocateAnything를 소개합니다. LocateAnything는 바운딩 박스와 포인트와 같은 기하 요소들을 단일 단계에서 원자 단위로 해독함으로써, 상자 내 기하학적 일관성을 유지하고 상당한 병렬성을 끌어내게 됩니다. 우리는 PBD가 해독 처리량과 위치 정확도를 모두 향상시키는 것을 보여줍니다. 또한 확장 가능한 데이터 엔진을 개발하고 138백만개 이상의 훈련 샘플을 포함한 대규모 데이터셋 LocateAnything-Data를 구축하여, 고정밀 위치 지정을 위한 데이터 다양성을 상당히 증가시킵니다. 광범위한 평가 결과, LocateAnything가 속도-정확도 경계를 발전시키며, 다양한 벤치마크에서 높은 해상도 IoU 위치 품질을 향상시키는 것을 보여줍니다. 결과는 병렬 상자 디코딩과 대규모 훈련 데이터의 보완적 이점이 효율적이고 정확한 통합 시각 접지 및 감지를 가능하게 하는 것을 강조합니다."
+    },
+    "summary": "1. LocateAnything는 병렬 상자 디코딩에 기반하여 시각적 접지와 감지를 위한 효율적이고 정확한 프레임워크를 제시합니다.\n2. 병렬 상자 디코딩을 통해 처리량과 위치 정확도가 향상되며, 대규모 학습 데이터셋을 통해 고정밀 위치 지정을 실현합니다.\n3. LocateAnything는 속도와 정확도를 모두 향상시키면서 효율적이고 정확한 시각 접지 및 감지를 가능케 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Rethinking Cross-Layer Information Routing in Diffusion Transformers",
+    "abstract": "Diffusion Transformers (DiTs) have become a de facto backbone of modern visual generation, and nearly every major axis of their design -- tokenization, attention, conditioning, objectives, and latent autoencoders -- has been extensively revisited. The residual stream that governs how information accumulates across layers, however, has been directly inherited from the original Transformer. In this paper, we present a systematic empirical analysis of cross-layer information flow in DiTs, jointly along depth and denoising timestep, and identify three concrete symptoms of traditional residual addition, namely monotonic forward magnitude inflation, sharp backward gradient decay, and pronounced block-wise redundancy. Motivated by this diagnosis, we propose Diffusion-Adaptive Routing (DAR), a drop-in residual replacement that performs learnable, timestep-adaptive, and non-incremental aggregation over the history of sublayer outputs. Moreover, the proposed DAR is compatible with many modern Transformer enhancement methods, such as REPA. On ImageNet 256times256, DAR improves SiT-XL/2 by 2.11 FID (7.56 vs.\\ 9.67) and matches the baseline's converged quality with 8.75times fewer training iterations. Stacked on top of REPA, it yields a 2times training acceleration in the early stage, suggesting cross-layer information routing as an underexplored design axis in diffusion modeling, one that operates orthogonally to existing representation-alignment objectives. Beyond pretraining, DAR can also be applied during the fine-tuning stage of large-scale T2I models and preserves high-frequency details during Distribution Matching Distillation.",
+    "authors": [
+      "Chao Xu",
+      "Maohua Li",
+      "Qirui Li",
+      "Yixuan Xu",
+      "Yanke Zhou",
+      "Yunhe Li",
+      "Cuifeng Shen",
+      "Hanlin Tang",
+      "Kan Liu",
+      "Tao Lan",
+      "Lin Qu",
+      "Shao-Qun Zhang"
+    ],
+    "likes": 104,
+    "published_date": "May 20",
+    "url": "https://huggingface.co/papers/2605.20708",
+    "date_collected": "2026-05-30T07:36:34.942546+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "확산 트랜스포머에서의 교차 계층 정보 라우팅 다시 생각하기",
+      "abstract": "확산 트랜스포머(Diffusion Transformers, DiTs)는 현대 시각적 생성의 핵심 구조가 되어 왔으며, 그 설계의 거의 모든 주요 부분인 토큰화, 어텐션, 적응, 목적 및 잠재 오토인코더는 깊이 다시 검토되었습니다. 그러나 정보가 계층을 통해 어떻게 축적되는지를 조절하는 잔여 스트림은 원래의 트랜스포머로부터 직접 상속되었습니다. 본 논문에서는 DiTs에서 교차 계층 정보 흐름을 심층 및 노이즈 제거 타임스텝을 통해 공동으로 분석하고, 전통적인 잔여 추가의 세 가지 구체적인 증상, 즉 단조롭게 전진하는 크기 팽창, 선명하게 감소하는 역방향 기울기, 그리고 뚜렷한 블록 단위 중복을 확인했습니다. 이 진단을 받아들여, 우리는 Diffusion-Adaptive Routing (DAR)을 제안합니다. 이는 이전 서브레이어 출력의 히스토리에 걸쳐 학습 가능한, 시간대 적응형 및 비증분적인 집합을 수행하는 잔여 대체물입니다. 더욱이, 제안된 DAR은 REPA와 같은 여러 현대 트랜스포머 향상 방법과 호환됩니다. ImageNet 256x256에서 DAR은 SiT-XL/2를 2.11 FID점 개선하며(7.56 대 9.67), 교육 반복 회수를 8.75배 줄이면서 베이스라인 수렴 품질과 일치시킵니다. REPA 위에 적용하면 초기 단계에서 2배 더 빠른 교육을 제공하며, 이는 확산 모델링에서 과소개발된 설계 축 중 하나로 선형적으로 작동하는 교차 계층 정보 라우팅을 제안합니다. 사전 교육 이상으로, DAR은 대규모 T2I 모델의 세밀한 조정 단계에서도 적용할 수 있으며 분배 일치 증류 중에 고주파수 세부 정보를 보존합니다."
+    },
+    "summary": "1. 확산 트랜스포머에서의 교차 계층 정보 라우팅 문제에 대한 시스템적 분석을 통해, 전통적인 잔여 추가 방식의 세 가지 구체적인 문제를 도출하고, 이에 기반한 Diffusion-Adaptive Routing (DAR)을 제안합니다.\n2. DAR은 경험적 분석 결과를 바탕으로 잔여 대체물로, 시간대 적응형 집합을 수행하여 기존 설계 방식에 비하여 성능 향상을 이루어내며, REPA와 호환됨을 입증합니다.\n3. DAR은 ImageNet에서 더 빠른 교육 속도와 성능 향상을 보여주면서, 확산 모델링에서의 교차 계층 정보 라우팅의 중요성을 강조하고, 고주파수 세부 정보 보존에도 효과적입니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models",
+    "abstract": "We introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in several cases surpassing, state-of-the-art models with more than 6B parameters across various benchmarks, while requiring significantly less training compute. For example, Lens requires only about 19.3% of the training compute used by Z-Image. The training efficiency of Lens stems from two key strategies beyond its compact model size. First, we maximize data information density per training batch by (i) training on Lens-800M, a dataset of 800M densely captioned image-text pairs whose captions are generated by GPT-4.1 and contain approximately 109 words on average, providing richer semantic supervision than conventional short captions, and (ii) constructing each batch from images with multiple resolutions and diverse aspect ratios, thereby enlarging the effective visual coverage of each optimization step. Second, we improve convergence speed through careful architectural choices, including adopting a semantic VAE that provides better latent representations and employing a strong language encoder that accelerates optimization while enabling multilingual generalization from English-only training data. After pre-training, we apply RL with taxonomy-driven prompts (Lens-RL-8K) and structured reward rubrics to suppress artifacts and improve visual quality, a reasoner module with training-free system prompt search to better align user requests with the model, and distillation-based acceleration for 4-step inference. Through efficient training and systematic optimization, Lens generalizes to arbitrary aspect ratios from 1:2 to 2:1 and resolutions up to 1440^2, and supports prompts in several commonly used languages. Thanks to its compact size, Lens generates a 1024^2 image in 3.15 seconds on a single NVIDIA H100 GPU, while its distilled turbo version performs 4-step generation in 0.84 seconds.",
+    "authors": [
+      "Dong Chen",
+      "Fangyun Wei",
+      "Ziyu Wan",
+      "Dongdong Chen",
+      "Jiawei Zhang",
+      "Jinjing Zhao",
+      "Sirui Zhang",
+      "Yang Yue",
+      "Zhiyang Liang",
+      "Baining Guo",
+      "Chong Luo",
+      "Jianmin Bao",
+      "Ji Li",
+      "Lei Shi",
+      "Qinhong Yang",
+      "Xiuyu Wu",
+      "Xuelu Feng",
+      "Yan Lu",
+      "Yanchen Dong",
+      "Yitong Wang",
+      "Yunuo Chen"
+    ],
+    "likes": 103,
+    "published_date": "May 20",
+    "url": "https://huggingface.co/papers/2605.21573",
+    "date_collected": "2026-05-30T07:36:34.945668+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "렌즈: 핵심 텍스트-이미지 모델의 효율적인 훈련 방식 재고",
+      "abstract": "Lens는 3.8B-파라미터 T2I 모델로, 다양한 벤치마크에서 6B-파라미터를 가진 최신 모델과 경쟁력 있는 성능을 보여주며, Z-Image보다 약 19.3%만의 훈련 계산량으로 훈련이 가능합니다. Lens의 훈련 효율성은 model 크기 외에도 두 가지 주요 전략에서 비롯됩니다."
+    },
+    "summary": "1. Lens는 적은 파라미터로 높은 성능을 발휘하며, 데이터 정보 밀도를 최적화한 훈련 배치와 수렴 속도 향상을 통해 효율적인 훈련을 실현합니다.\n2. Lens-800M 데이터셋에서의 훈련과 각 배치의 다양한 해상도 및 종횡비 이미지를 활용하여 시각적 정보를 효율적으로 다룹니다.\n3. RL을 적용한 후, 다양한 언어로의 프롬프트 지원과 이미지 생성 가속화를 통해 Lens는 빠르고 효율적인 모델로 발전합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+    "abstract": "Interactive world models are advancing rapidly, yet existing benchmarks cover only part of the required competencies, leaving no unified standard for systematic evaluation. To fill this gap, we introduce WBench, a comprehensive multi-turn benchmark for interactive world model evaluation along five dimensions, namely video quality, setting adherence, interaction adherence, consistency, and physics compliance. WBench contains 289 test cases and 1,058 interaction turns, where each case specifies a world setting and a multi-turn interaction sequence, covering diverse scenes, styles, subjects, and both first- and third-person perspectives, together with four interaction types, including navigation, subject action, event editing, and perspective switching. For navigation, WBench unifies text, 6-DoF pose, and discrete-action control, enabling evaluation of models with different native input interfaces. Evaluation uses 22 automatic sub-metrics that combine specialist vision models with large multimodal models, and all metrics are validated against human judgments. Across 20 state-of-the-art models, we find that no single model performs strongly across all dimensions. We provide detailed diagnostic insights into the characteristic strengths, weaknesses, and open challenges of each model. Code and data are available at https://github.com/meituan-longcat/WBench.",
+    "authors": [
+      "Kaining Ying",
+      "Hengrui Hu",
+      "Siyu Ren",
+      "Jiamu Li",
+      "Fengjiao Chen",
+      "Ziwen Wang",
+      "Xuezhi Cao",
+      "Xunliang Cai",
+      "Henghui Ding"
+    ],
+    "likes": 97,
+    "published_date": "May 25",
+    "url": "https://huggingface.co/papers/2605.25874",
+    "date_collected": "2026-05-30T07:36:34.948172+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "WBench: 상호작용형 비디오 세계 모델 평가를 위한 포괄적인 다중 턴 벤치마크",
+      "abstract": "상호작용형 세계 모델은 빠르게 발전하고 있지만, 기존 벤치마크는 필요한 능력의 일부만을 다루어 체계적인 평가를 위한 표준이 없어요. 이 간극을 메우기 위해, 우리는 WBench를 소개합니다. 이는 비디오 품질, 설정 준수, 상호작용 준수, 일관성, 물리학 준수 다섯 가지 차원을 따라 상호작용형 세계 모델 평가를 위한 포괄적인 다중 턴 벤치마크입니다."
+    },
+    "summary": "1. WBench는 비디오 품질, 상호작용 준수, 일관성 등 5가지 차원을 고려해, 다양한 상황, 행동, 장면에 대해 모델을 평가하는 포괄적인 벤치마크입니다.\n2. 벤치마크는 총 289개의 테스트케이스와 1,058개의 상호작용 턴을 포함하며, 네 가지 상호작용 유형을 통해 다양한 모델을 평가합니다.\n3. 20가지 최신 모델에 대한 평가 결과, 모든 차원에서 탁월한 성과를 보이는 단일 모델이 없으며, 각 모델의 특징적인 강점, 약점, 그리고 도전 과제에 대한 자세한 진단을 제공합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security",
+    "abstract": "Modern open-world agents such as OpenClaw exhibit powerful cross-environment execution capabilities yet introduce broad new safety risk sources. Meanwhile, advanced frontier AI models drastically lower attack barriers, rendering current agent alignment frameworks inadequate for real-world deployment. To tackle these emerging threats, we propose a lightweight and scalable agent safety alignment framework. Specifically, we update the agent safety taxonomy to accommodate emergent risks from Codex and OpenClaw execution scenarios. We further build a taxonomy-guided data engine with influence-function purification to train lightweight AgentDoG 1.5 variants (0.8B, 2B, 4B, and 8B parameters) using only around 1k samples, achieving comparable performance with leading closed-source models (e.g., GPT-5.4). Based on AgentDoG 1.5, we construct a highly efficient agentic safety SFT and RL training environment, which reduces deployment overhead in Docker-level environments by two orders of magnitude. Finally, we deploy AgentDoG 1.5 as a training-free online guardrail for real-time safety moderation. Extensive experimental results indicate that AgentDoG 1.5 achieves state-of-the-art performance in diverse and complex interactive agentic scenarios. All models and datasets are openly released.",
+    "authors": [
+      "Dongrui Liu",
+      "Yu Li",
+      "Zhonghao Yang",
+      "Peng Wang",
+      "Guanxu Chen",
+      "Yuejin Xie",
+      "Qinghua Mao",
+      "Wanying Qu",
+      "Yanxu Zhu",
+      "Tianyi Zhou",
+      "Leitao Yuan",
+      "Zhijie Zheng",
+      "Qihao Lin",
+      "Yimin Wang",
+      "Haoyu Luo",
+      "Shuai Shao",
+      "Chen Qian",
+      "Qingyu Liu",
+      "Ling Tang",
+      "Ruiyang Qin",
+      "Qihan Ren",
+      "Junxiao Yang"
+    ],
+    "likes": 81,
+    "published_date": "May 28",
+    "url": "https://huggingface.co/papers/2605.29801",
+    "date_collected": "2026-05-30T07:36:34.951416+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "에이전트 안전과 보안을 위한 경량 및 확장 가능한 정렬 프레임워크인 AgentDoG 1.5",
+      "abstract": "현재의 오픈 월드 에이전트인 OpenClaw와 같은 현대적인 에이전트들은 강력한 크로스-환경 실행 능력을 보여주지만 넓은 새로운 안전 위험 요인을 도입합니다. 한편, 첨단화된 최전선 AI 모델은 현재의 에이전트 정렬 프레임워크가 실제 세계 배치에 불충분하게 만들어 공격 장벽을 크게 낮춥니다. 이러한 신생 위협을 해결하기 위해 경량 및 확장 가능한 에이전트 안전 정렬 프레임워크를 제안합니다. 구체적으로 우리는 Codex 및 OpenClaw 실행 시나리오로 인한 신생 위험을 수용하기 위해 에이전트 안전 분류법을 업데이트합니다. 또한 영향 함수 정제를 통해 가벼운 AgentDoG 1.5 변형(0.8B, 2B, 4B 및 8B 파라미터)을 훈련시키기 위한 분류학 가이드 데이터 엔진을 구축합니다. 약 1,000개의 샘플만 사용하여 선두의 폐쇄된 모델(예: GPT-5.4)과 비교 가능한 성능을 달성합니다. AgentDoG 1.5를 기반으로 우리는 Docker 수준 환경에서 배치 오버헤드를 두 개의 수준으로 줄이는 매우 효율적인 에이전트 안전 SFT 및 RL 훈련 환경을 구축합니다. 마지막으로, 우리는 AgentDoG 1.5를 실시간 안전 규범을 위한 훈련 없는 온라인 가드레일로 배치합니다. 광범위한 실험 결과는 AgentDoG 1.5가 다양하고 복잡한 상호 작용 에이전트 시나리오에서 최첨단 성능을 달성한다는 것을 보여줍니다. 모든 모델과 데이터셋은 공개적으로 공개됩니다."
+    },
+    "summary": "1. 최첨단 AI 모델의 새로운 위협에 대응하기 위해 AgentDoG 1.5는 경량이면서 확장 가능한 에이전트 안전 정렬 프레임워크를 제안합니다.\n2. AgentDoG 1.5는 Codex와 OpenClaw 실행 시나리오로 인한 신생 위험을 고려한 에이전트 안전 분류체계를 갖추고 있습니다.\n3. 1,000개의 샘플만을 사용하여 AgentDoG 1.5는 선도적인 폐쇄 소스 모델과 비교 가능한 성능을 달성하며, 다양하고 복잡한 상호 작용 에이전트 시나리오에서 최첨단 성능을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "ProRL: Effective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient Estimation",
+    "abstract": "Proactive Recommender Systems (PRSs) aim to guide user preference shift toward target items by generating paths of intermediate recommendations. Reinforcement learning (RL) provides a principled framework for optimizing such sequential decision tasks, as path rewards can naturally capture both short-term acceptance and long-term guidance effectiveness. However, naively applying policy gradients to PRS results in deficient gradient estimation. We identify two deficiencies: (1) path-level rewards decompose into step-level rewards with positive mean, creating a length-dependent bias that causes gradients to favor path extension over meaningful exploration; (2) weighting each step by the entire path-level reward ignores the decomposition structure, leading to high gradient variance. To rectify these two deficiencies, we propose an effective RL framework ProRL with two novel mechanisms for proactive recommendation. First, Stepwise Reward Centering subtracts expected rewards to neutralize length-dependent bias, ensuring that path extension yields zero expected gradient signal. Second, Position-Specific Advantage Estimation leverages the reward decomposition structure to compute step-dependent baselines, reducing gradient variance. Together, these mechanisms yield policy gradients that precisely target path quality. Our experiments on three real-world datasets demonstrate that ProRL significantly outperforms state-of-the-art PRSs. Our code is available at https://github.com/hongruhou89/ProRL.",
+    "authors": [
+      "Hongru Hou",
+      "Tiehua Mei",
+      "Denghui Geng",
+      "Jinhui Huang",
+      "Ao Xu",
+      "Hengrui Chen",
+      "Jiaqing Liang",
+      "Deqing Yang"
+    ],
+    "likes": 78,
+    "published_date": "May 27",
+    "url": "https://huggingface.co/papers/2605.28293",
+    "date_collected": "2026-05-30T07:36:34.953965+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "ProRL: 효과적인 보상 강화학습을 통한 적극적 추천",
+      "abstract": "적극적 추천 시스템(PRSs)은 중간 추천 경로를 생성하여 사용자의 선호도를 목표 항목으로 이동시키려고 합니다. 강화학습(RL)은 이러한 순차적 의사결정 과제를 최적화하는 데 원칙적인 프레임워크를 제공하며, 경로 보상은 단기 수용과 장기적인 지도 효과를 자연스럽게 포착할 수 있습니다. 그러나 PRS에 정책 그라디언트를 단순히 적용하면 부족한 그라디언트 추정이 발생합니다."
+    },
+    "summary": "1. ProRL은 보상 강화 학습으로 적극적 추천을 위한 두 가지 개선된 메커니즘을 제안합니다.\n2. Stepwise Reward Centering은 경로의 길이에 의존하는 편향을 극복하는 데 도움이 되며, Position-Specific Advantage Estimation은 그라디언트 분산을 줄이는 데 기여합니다.\n3. ProRL은 실제 데이터셋 실험에서 최신 PRS보다 효과적으로 수행됨을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Macaron-A2UI: A Model for Generative UI in Personal Agents",
+    "abstract": "As personal agents evolve to handle complex, user-centric tasks, static plain-text chat is rapidly becoming a bottleneck. Generative UI emerges as the necessary new interface layer, dynamically synthesizing the right controls, options, and state from the interaction context in real time. We present Macaron-A2UI, a model for Generative UI in personal agents. Our goal is to move beyond text-only interaction by enabling agents to generate natural language together with lightweight, executable UI actions for information collection, preference refinement, confirmation, and multi-goal organization. We build a large-scale Generative UI corpus from heterogeneous dialogue sources, introduce A2UI-Bench for controlled evaluation, and train 30B, 235B and 754B models with parameter-efficient LoRA-based supervised fine-tuning followed by reward-driven reinforcement learning. The best Macaron-A2UI model reaches 75.6 overall on A2UI-Bench without explicit schema hints, surpassing the strongest full-schema frontier baseline. We release the models, benchmark, and evaluation protocol to support future work on Generative UI for personal agents.",
+    "authors": [
+      "Fancy Kong",
+      "Congjie Zheng",
+      "Murphy Zhuang",
+      "Rio Yang",
+      "Sueky Zhang",
+      "Hao Fu",
+      "Gene Jin",
+      "Song Cao",
+      "Kaijie Chen",
+      "Andrew Chen",
+      "Pony Ma"
+    ],
+    "likes": 77,
+    "published_date": "May 24",
+    "url": "https://huggingface.co/papers/2605.24830",
+    "date_collected": "2026-05-30T07:36:34.956576+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "개인 에이전트에서 생성 UI 모델인 Macaron-A2UI",
+      "abstract": "개인 에이전트가 복잡한 사용자 중심 작업을 처리하려고할 때 정적 평범한 텍스트 채팅은 신속히 병목 현상이 되고 있습니다. 생성 UI는 상호작용 맥락에서 적절한 제어 요소, 옵션 및 상태를 실시간으로 동적으로 합성하는 필수적인 새로운 인터페이스 계층으로 등장합니다. 본 논문에서는 개인 에이전트에서 생성 UI를 위한 모델인 Macaron-A2UI를 제안합니다. 우리의 목표는 에이전트가 정보 수집, 선호도 정제, 확인 및 다중 목표 조직을 위해 자연어를 생성하고 경량 실행 가능한 UI 동작을 함께 생성함으로써 텍스트 전용 상호작용을 벗어나는 것입니다. 우리는 다양한 대화 소스에서 대규모 생성 UI 말뭉치를 구축하고, 제어된 평가를 위한 A2UI-Bench를 소개하며, LoRA 기반의 매개변수 효율적인 지도 학습에 이어 보상 중심 강화 학습을 수행하여 30B, 235B 및 754B 모델을 훈련시킵니다. 최고의 Macaron-A2UI 모델은 명시적인 스키마 힌트 없이 A2UI-Bench에서 전체 스키마 최첨단 기준을 뛰어넘는 75.6의 성능을 달성합니다. 우리는 미래에 대한 지원을 위해 생성 UI에 대한 추가 연구를 지원하기 위해 모델, 벤치마크 및 평가 프로토콜을 공개합니다."
+    },
+    "summary": "1. Macaron-A2UI 모델은 개인 에이전트에서 지원하는 생성 UI로, 자연어 생성과 경량 실행 가능한 UI 동작을 결합하여 다양한 작업을 수행합니다.\n2. 연구는 대화 소스에서 대규모 생성 UI 말뭉치를 활용하고, LoRA와 강화 학습을 이용하여 모델을 향상시켰습니다.\n3. 최고의 Macaron-A2UI 모델은 75.6의 정확도로 최강의 스키마 기준을 넘어서며, 모델과 평가 프로토콜을 공개하여 향후 생성 UI 연구에 지원을 제공합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  }
+]

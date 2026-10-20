@@ -1,0 +1,127 @@
+=== Paper Collection Started at Thu Mar 26 22:11:44 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W13
+URL: https://huggingface.co/papers/week/2026-W13
+Found 10 papers in weekly view
+Fetching likes for: MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding
+Fetching likes for: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Fetching likes for: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Fetching likes for: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Fetching likes for: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Fetching likes for: Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs
+Fetching likes for: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Fetching likes for: WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG
+Fetching likes for: LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning
+Fetching likes for: CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents
+Selected top 10 papers by likes:
+1. MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding (120 likes)
+2. Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models (118 likes)
+3. Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model (106 likes)
+4. HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning (102 likes)
+5. Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models (97 likes)
+6. Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs (80 likes)
+7. OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis (79 likes)
+8. WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG (77 likes)
+9. LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning (69 likes)
+10. CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents (68 likes)
+Found abstract: Optical character recognition (OCR) has evolved from line-level transcription to structured document...
+Processed paper: MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding
+Found abstract: Video--based world models have emerged along two dominant paradigms: video generation and 3D reconst...
+Processed paper: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Found abstract: We present daVinci-MagiHuman, an open-source audio-video generative foundation model for human-centr...
+Processed paper: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Found abstract: VLMs show strong multimodal capabilities, but they still struggle with fine-grained vision-language ...
+Processed paper: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Found abstract: Distilled autoregressive (AR) video models enable efficient streaming generation but frequently misa...
+Processed paper: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Found abstract: Vision-language models (VLMs) typically process images at a native high-resolution, forcing a trade-...
+Processed paper: Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs
+Found abstract: Training deep research agents requires long-horizon trajectories that interleave search, evidence ag...
+Processed paper: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Found abstract: Dynamical systems theory and reinforcement learning view world evolution as latent-state dynamics dr...
+Processed paper: WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG
+Found abstract: We introduce LongCat-Flash-Prover, a flagship 560-billion-parameter open-source Mixture-of- Experts ...
+Processed paper: LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning
+Found abstract: Computer-use agents (CUAs) hold great promise for automating complex desktop workflows, yet progress...
+Processed paper: CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 120  ->  110
+Update date_collected: 2026-03-27T07:11:53.390853+09:00  ->  2026-03-26T07:17:33.511042+09:00
+
+Processing paper 2/10
+Title: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Paper already exists, checking if translation is complete...
+Update likes: 118  ->  115
+Update date_collected: 2026-03-27T07:11:53.392979+09:00  ->  2026-03-26T07:17:33.509580+09:00
+
+Processing paper 3/10
+Title: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 106  ->  100
+Update date_collected: 2026-03-27T07:11:53.395429+09:00  ->  2026-03-26T07:17:33.515087+09:00
+
+Processing paper 4/10
+Title: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  101
+Update date_collected: 2026-03-27T07:11:53.397249+09:00  ->  2026-03-26T07:17:33.512773+09:00
+
+Processing paper 5/10
+Title: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Paper already exists, checking if translation is complete...
+Update likes: 97  ->  93
+Update date_collected: 2026-03-27T07:11:53.398843+09:00  ->  2026-03-26T07:17:33.516672+09:00
+
+Processing paper 6/10
+Title: Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs
+Paper already exists, checking if translation is complete...
+Update likes: 80  ->  73
+Update date_collected: 2026-03-27T07:11:53.400513+09:00  ->  2026-03-26T07:17:33.518235+09:00
+
+Processing paper 7/10
+Title: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Paper already exists, checking if translation is complete...
+Update likes: 79  ->  69
+Update date_collected: 2026-03-27T07:11:53.402275+09:00  ->  2026-03-26T07:17:33.519883+09:00
+
+Processing paper 8/10
+Title: WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG
+Paper already exists, checking if translation is complete...
+Update likes: 77  ->  66
+Update date_collected: 2026-03-27T07:11:53.403911+09:00  ->  2026-03-26T07:17:33.521445+09:00
+
+Processing paper 9/10
+Title: LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  65
+Update date_collected: 2026-03-27T07:11:53.406356+09:00  ->  2026-03-26T07:17:33.523769+09:00
+
+Processing paper 10/10
+Title: CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W13.json...
+
+Updating Notion database...
+Updating paper: MinerU-Diffusion: 확산 복호화를 통한 문서 OCR의 역방향 렌더링으로의 재고 (likes: 110 -> 120)
+Updating paper: 옴니-월드벤치: 세계 모델링을 위한 종합적 상호작용 중심 평가를 향하여 (likes: 115 -> 118)
+Updating paper: 단순함으로 속도 낮추다: 빠른 오디오-비디오 생성 기반 모델을 위한 단일 스트림 아키텍처 (likes: 100 -> 106)
+Updating paper: HopChain: 일반화 가능한 비전-언어 추론을 위한 다중 점프 데이터 합성 (likes: 101 -> 102)
+Updating paper: 아스트롤라브: 정제된 자기회귀 비디오 모델을 위한 전진 과정 강화학습 (likes: 93 -> 97)
+Updating paper: 중요한 곳을 보세요: 효율적인 VLMs를 위한 고해상도 자르기 검색 (likes: 73 -> 80)
+Updating paper: 오픈리서처: 장기간 깊은 연구 궤적 합성을 위한 완전히 오픈 파이프라인 (likes: 69 -> 79)
+Updating paper: WildWorld: 액션 및 명시적 상태를 향한 ARPG 생성을 위한 다이내믹 월드 모델링 대규모 데이터셋 (likes: 66 -> 77)
+Updating paper: LongCat-Flash-Prover: 에이전트 툴 통합 강화학습을 통한 네이티브 형식적 추론의 발전 (likes: 65 -> 69)
+Creating new paper: CUA-Suite: 컴퓨터 사용 에이전트를 위한 대규모 인간 주석 비디오 데모
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Mar 26 22:13:48 UTC 2026 ===
+

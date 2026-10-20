@@ -1,0 +1,129 @@
+=== Paper Collection Started at Sun Feb 22 22:09:43 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W09
+URL: https://huggingface.co/papers/week/2026-W09
+Found 10 papers in weekly view
+Fetching likes for: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Fetching likes for: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Fetching likes for: GLM-5: from Vibe Coding to Agentic Engineering
+Fetching likes for: Experiential Reinforcement Learning
+Fetching likes for: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Fetching likes for: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Fetching likes for: Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?
+Fetching likes for: DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories
+Fetching likes for: SLA2: Sparse-Linear Attention with Learnable Routing and QAT
+Fetching likes for: SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks
+Selected top 10 papers by likes:
+1. Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs (221 likes)
+2. SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise (140 likes)
+3. GLM-5: from Vibe Coding to Agentic Engineering (75 likes)
+4. Experiential Reinforcement Learning (63 likes)
+5. MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs (58 likes)
+6. Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception (58 likes)
+7. Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (54 likes)
+8. DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories (51 likes)
+9. SLA2: Sparse-Linear Attention with Learnable Routing and QAT (49 likes)
+10. SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (48 likes)
+Found abstract: The diversity of post-training data is critical for effective downstream performance in large langua...
+Processed paper: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Found abstract: Spoken query retrieval is an important interaction mode in modern information retrieval. However, ex...
+Processed paper: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Found abstract: We present GLM-5, a next-generation foundation model designed to transition the paradigm of vibe cod...
+Processed paper: GLM-5: from Vibe Coding to Agentic Engineering
+Found abstract: Reinforcement learning has become the central approach for language models (LMs) to learn from envir...
+Processed paper: Experiential Reinforcement Learning
+Found abstract: We present MedXIAOHE, a medical vision-language foundation model designed to advance general-purpose...
+Processed paper: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Found abstract: Multimodal Large Language Models (MLLMs) excel at broad visual understanding but still struggle with...
+Processed paper: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Found abstract: Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by deco...
+Processed paper: Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?
+Found abstract: Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-im...
+Processed paper: DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories
+Found abstract: Sparse-Linear Attention (SLA) combines sparse and linear attention to accelerate diffusion models an...
+Processed paper: SLA2: Sparse-Linear Attention with Learnable Routing and QAT
+Found abstract: Agent Skills are structured packages of procedural knowledge that augment LLM agents at inference ti...
+Processed paper: SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 221  ->  219
+Update date_collected: 2026-02-23T07:09:52.392106+09:00  ->  2026-02-22T07:09:27.098178+09:00
+
+Processing paper 2/10
+Title: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Paper already exists, checking if translation is complete...
+Update likes: 140  ->  140
+Update date_collected: 2026-02-23T07:09:52.393355+09:00  ->  2026-02-22T07:09:27.099366+09:00
+
+Processing paper 3/10
+Title: GLM-5: from Vibe Coding to Agentic Engineering
+Paper already exists, checking if translation is complete...
+Update likes: 75  ->  71
+Update date_collected: 2026-02-23T07:09:52.395166+09:00  ->  2026-02-22T07:09:27.101033+09:00
+
+Processing paper 4/10
+Title: Experiential Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  61
+Update date_collected: 2026-02-23T07:09:52.396342+09:00  ->  2026-02-22T07:09:27.102121+09:00
+
+Processing paper 5/10
+Title: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  58
+Update date_collected: 2026-02-23T07:09:52.398118+09:00  ->  2026-02-22T07:09:27.103732+09:00
+
+Processing paper 6/10
+Title: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  58
+Update date_collected: 2026-02-23T07:09:52.399559+09:00  ->  2026-02-22T07:09:27.105035+09:00
+
+Processing paper 7/10
+Title: Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  55
+Update date_collected: 2026-02-23T07:09:52.400717+09:00  ->  2026-02-22T07:09:27.106077+09:00
+
+Processing paper 8/10
+Title: DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories
+Paper already exists, checking if translation is complete...
+Update likes: 51  ->  49
+Update date_collected: 2026-02-23T07:09:52.402214+09:00  ->  2026-02-22T07:09:27.108633+09:00
+
+Processing paper 9/10
+Title: SLA2: Sparse-Linear Attention with Learnable Routing and QAT
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  49
+Update date_collected: 2026-02-23T07:09:52.403526+09:00  ->  2026-02-22T07:09:27.107284+09:00
+
+Processing paper 10/10
+Title: SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  48
+Update date_collected: 2026-02-23T07:09:52.405548+09:00  ->  2026-02-22T07:09:27.110272+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W09.json...
+
+Updating Notion database...
+Updating paper: 적은 양이 충분하다: LLM의 특징 공간에서 다양한 데이터 합성하기 (likes: 219 -> 221)
+Paper already exists with same likes count: 음향 잡음 하에서의 말로 된 질의 검색에 대한 강인성 평가 벤치마크인 SQuTR
+Updating paper: GLM-5: 바이브 코딩에서 에이전틱 엔지니어링으로 (likes: 71 -> 75)
+Updating paper: 경험주의 강화 학습 (likes: 61 -> 63)
+Paper already exists with same likes count: MedXIAOHE: 의료용 MLLM 구축을 위한 포괄적인 레시피
+Paper already exists with same likes count: 줌 없이 줌: 세세한 다중모달 지각을 위한 영역-이미지 증류
+Updating paper: Sparse Autoencoders의 타당성 검사: SAE가 무작위 기준선을 이기는가? (likes: 55 -> 54)
+Updating paper: 딥이미지서치: 시각적 이력에서의 맥락인식 이미지 검색을 위한 멀티모달 에이전트 벤치마킹 (likes: 49 -> 51)
+Paper already exists with same likes count: SLA2: 희소-선형 주의 러팅과 QAT와 함께
+Paper already exists with same likes count: Agent Skills의 다양한 작업에서의 성능 측정벤치마킹
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Feb 22 22:11:14 UTC 2026 ===
+

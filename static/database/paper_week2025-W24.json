@@ -1,0 +1,278 @@
+[
+  {
+    "title": "Reinforcement Pre-Training",
+    "abstract": "In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling\nparadigm for large language models and reinforcement learning (RL).\nSpecifically, we reframe next-token prediction as a reasoning task trained\nusing RL, where it receives verifiable rewards for correctly predicting the\nnext token for a given context. RPT offers a scalable method to leverage vast\namounts of text data for general-purpose RL, rather than relying on\ndomain-specific annotated answers. By incentivizing the capability of\nnext-token reasoning, RPT significantly improves the language modeling accuracy\nof predicting the next tokens. Moreover, RPT provides a strong pre-trained\nfoundation for further reinforcement fine-tuning. The scaling curves show that\nincreased training compute consistently improves the next-token prediction\naccuracy. The results position RPT as an effective and promising scaling\nparadigm to advance language model pre-training.",
+    "authors": [
+      "Qingxiu Dong",
+      "Li Dong",
+      "Yao Tang",
+      "Tianzhu Ye",
+      "Yutao Sun",
+      "Zhifang Sui",
+      "Furu Wei"
+    ],
+    "likes": 194,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2506.08007",
+    "date_collected": "2025-06-11T10:48:22.379708",
+    "week": "2025-W24",
+    "translation": {
+      "title": "강화 사전 훈련",
+      "abstract": "본 연구에서는 대규모 언어 모델과 강화 학습을 위한 새로운 확장 패러다임으로 강화 사전 훈련(RPT)을 소개합니다. 구체적으로, 다음 토큰 예측을 추론 작업으로 재구성하여 RL을 사용하여 훈련된다. RPT는 도메인별 주석된 정답에 의존하지 않고 대량의 텍스트 데이터를 활용하는 확장 가능한 방법을 제공한다. RPT는 다음 토큰 추론 능력을 장려함으로써 언어 모델링 정확도를 크게 향상시키며, 추가적인 강화 미세 조정을 위한 강력한 사전 훈련 기반을 제공한다. 확장 곡선은 훈련 컴퓨트를 증가시킴에 따라 다음 토큰 예측 정확도가 지속적으로 향상되는 것을 보여준다. 결과는 RPT를 언어 모델 사전 훈련을 발전시키기 위한 효과적이고 유망한 확장 패러다임으로 위치시킨다."
+    },
+    "summary": "1. 강화 사전 훈련(RPT)은 대규모 언어 모델을 위한 새로운 확장 패러다임으로, 다음 토큰 추론 능력을 강화하여 언어 모델링 정확도를 향상시키는 방법을 제시한다.\n2. RPT는 도메인별 주석된 답변에 의존하지 않고 대량의 텍스트 데이터를 기반으로 일반적인 강화 학습에 활용 가능한 확장 가능한 방법을 제공한다.\n3. 실험 결과는 RPT가 언어 모델의 사전 훈련을 진전시키기 위한 효과적이고 유망한 확장 패러다임으로서의 위치를 강조하며, 훈련 컴퓨팅 파워의 증가가 다음 토큰 예측 정확도를 일관되게 향상시킨다."
+  },
+  {
+    "title": "Will It Still Be True Tomorrow? Multilingual Evergreen Question\n  Classification to Improve Trustworthy QA",
+    "abstract": "Large Language Models (LLMs) often hallucinate in question answering (QA)\ntasks. A key yet underexplored factor contributing to this is the temporality\nof questions -- whether they are evergreen (answers remain stable over time) or\nmutable (answers change). In this work, we introduce EverGreenQA, the first\nmultilingual QA dataset with evergreen labels, supporting both evaluation and\ntraining. Using EverGreenQA, we benchmark 12 modern LLMs to assess whether they\nencode question temporality explicitly (via verbalized judgments) or implicitly\n(via uncertainty signals). We also train EG-E5, a lightweight multilingual\nclassifier that achieves SoTA performance on this task. Finally, we demonstrate\nthe practical utility of evergreen classification across three applications:\nimproving self-knowledge estimation, filtering QA datasets, and explaining\nGPT-4o retrieval behavior.",
+    "authors": [
+      "Sergey Pletenev",
+      "Maria Marina",
+      "Nikolay Ivanov",
+      "Daria Galimzianova",
+      "Nikita Krayko",
+      "Mikhail Salnikov",
+      "Vasily Konovalov",
+      "Alexander Panchenko",
+      "Viktor Moskvoretskii"
+    ],
+    "likes": 122,
+    "published_date": "May 27",
+    "url": "https://huggingface.co/papers/2505.21115",
+    "date_collected": "2025-06-11T10:48:22.380995",
+    "week": "2025-W24",
+    "translation": {
+      "title": "내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류",
+      "abstract": "대형 언어 모델 (Large Language Models, LLMs)은 종종 질문 응답 (QA) 작업에서 환각을 일으킵니다. 이에 기여하는 주요하고 아직 탐구되지 않은 요인 중 하나는 질문의 시간적 특성입니다. 질문이 일종인지 (시간이 지나도 답변이 안정적인지) 또는 가변적인지 (답변이 변경되는지) 여부입니다. 본 연구에서는 첫 번째로 시간적 특성 라벨을 갖춘 최초의 다중언어 QA 데이터셋인 EverGreenQA를 소개합니다. EverGreenQA를 사용하여 12가지 최신 LLMs를 평가하여 질문의 시간적 특성을 명시적으로 (언어적 판단을 통해) 또는 암시적으로 (불확실성 신호를 통해) 부호화하는지 확인합니다. 또한 이 작업에 대한 SoTA(Sate-of-The-Art) 성능을 달성하는 경량 다중언어 분류기인 EG-E5를 훈련합니다. 마지막으로, 우리는 불시적 분류의 실용성을 증명하기 위해 자기-지식 추정 개선, QA 데이터셋 필터링, 그리고 GPT-4o 회수 동작 설명과 같은 세 가지 응용 분야에 걸쳐 실험합니다."
+    },
+    "summary": "1. EverGreenQA는 질문의 시간적 특성을 반영한 첫 번째 다중언어 QA 데이터셋으로, LLMs의 성능을 평가하고 EG-E5와 같은 경량 분류기를 훈련하는데 활용합니다.\n2. 시간적 특성에 근거한 분류는 자기-지식 추정 개선, QA 데이터셋 필터링 및 GPT-4o 회수 동작 설명과 같은 다양한 응용 분야에서 유용하게 활용될 수 있음을 보여줍니다.\n3. 다양한 목적을 위해 시간적 특성을 고려한 QA는 LLMs의 성능을 향상시키고, 미래의 질문 응답 엔진에 적용될 수 있는 새로운 가능성을 제시합니다."
+  },
+  {
+    "title": "Lingshu: A Generalist Foundation Model for Unified Multimodal Medical\n  Understanding and Reasoning",
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated impressive\ncapabilities in understanding common visual elements, largely due to their\nlarge-scale datasets and advanced training strategies. However, their\neffectiveness in medical applications remains limited due to the inherent\ndiscrepancies between data and tasks in medical scenarios and those in the\ngeneral domain. Concretely, existing medical MLLMs face the following critical\nlimitations: (1) limited coverage of medical knowledge beyond imaging, (2)\nheightened susceptibility to hallucinations due to suboptimal data curation\nprocesses, (3) lack of reasoning capabilities tailored for complex medical\nscenarios. To address these challenges, we first propose a comprehensive data\ncuration procedure that (1) efficiently acquires rich medical knowledge data\nnot only from medical imaging but also from extensive medical texts and\ngeneral-domain data; and (2) synthesizes accurate medical captions, visual\nquestion answering (VQA), and reasoning samples. As a result, we build a\nmultimodal dataset enriched with extensive medical knowledge. Building on the\ncurated data, we introduce our medical-specialized MLLM: Lingshu. Lingshu\nundergoes multi-stage training to embed medical expertise and enhance its\ntask-solving capabilities progressively. Besides, we preliminarily explore the\npotential of applying reinforcement learning with verifiable rewards paradigm\nto enhance Lingshu's medical reasoning ability. Additionally, we develop\nMedEvalKit, a unified evaluation framework that consolidates leading multimodal\nand textual medical benchmarks for standardized, fair, and efficient model\nassessment. We evaluate the performance of Lingshu on three fundamental medical\ntasks, multimodal QA, text-based QA, and medical report generation. The results\nshow that Lingshu consistently outperforms the existing open-source multimodal\nmodels on most tasks ...",
+    "authors": [
+      "LASA Team",
+      "Weiwen Xu",
+      "Hou Pong Chan",
+      "Long Li",
+      "Mahani Aljunied",
+      "Ruifeng Yuan",
+      "Jianyu Wang",
+      "Chenghao Xiao",
+      "Guizhen Chen",
+      "Chaoqun Liu",
+      "Zhaodonghui Li",
+      "Yu Sun",
+      "Junao Shen",
+      "Chaojun Wang",
+      "Jie Tan",
+      "Deli Zhao",
+      "Tingyang Xu",
+      "Hao Zhang",
+      "Yu Rong"
+    ],
+    "likes": 99,
+    "published_date": "Jun 8",
+    "url": "https://huggingface.co/papers/2506.07044",
+    "date_collected": "2025-06-11T10:48:22.382713",
+    "week": "2025-W24",
+    "translation": {
+      "title": "통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu",
+      "abstract": "다중 모달 대형 언어 모델(MLLMs)은 대규모 데이터셋과 선진한 훈련 전략으로 일반적인 시각 요소를 잘 이해하는 능력을 보여주었습니다. 그러나 의료 응용 분야에서의 효과는 의료 시나리오와 일반 도메인 간 데이터 및 작업의 본성적인 불일치로 인해 제한되어 있습니다."
+    },
+    "summary": "1. 의료 지식을 이미지뿐만 아니라 풍부한 의료 텍스트와 일반 도메인 데이터에서 효과적으로 확보하고 정확한 의료 캡션, 시각 질문 응답(VQA), 추론 샘플을 합성하여 다양한 의료 지식이 풍부한 다중 모달 데이터셋을 구축하였습니다.\n2. Lingshu는 의료 전문화된 MLLM으로, 의료 전문성을 내재시키고 과업 해결 능력을 점진적으로 향상시키기 위해 다단계 훈련을 거칩니다.\n3. MedEvalKit는 다양한 의료 벤치마크를 통합하여 표준화되고 공정하며 효율적인 모델 평가를 위한 통합 평가 프레임워크를 개발하였으며, Lingshu의 성능을 다중 모달 QA, 텍스트 기반 QA, 의료 보고서 생성 세 가지 기본 의료 작업에서 비교평가하였습니다."
+  },
+  {
+    "title": "Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models",
+    "abstract": "Large language models (LLMs) excel at reasoning, yet post-training remains\ncritical for aligning their behavior with task goals. Existing reinforcement\nlearning (RL) methods often depend on costly human annotations or external\nreward models. We propose Reinforcement Learning via Self-Confidence (RLSC),\nwhich uses the model's own confidence as reward signals-eliminating the need\nfor labels, preference models, or reward engineering. Applied to\nQwen2.5-Math-7B with only 16 samples per question and 10 or 20 training steps,\nRLSC improves accuracy by +13.4% on AIME2024, +21.2% on MATH500, +21.7% on\nMinerva Math, +20.8% on Olympiadbench, and +9.7% on AMC23. RLSC provides a\nsimple, scalable post-training method for inference models, requiring only a\nsmall number of samples and unlabelled supervision.",
+    "authors": [
+      "Pengyi Li",
+      "Matvey Skripkin",
+      "Alexander Zubrey",
+      "Andrey Kuznetsov",
+      "Ivan Oseledets"
+    ],
+    "likes": 93,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2506.06395",
+    "date_collected": "2025-06-12T22:07:58.711356",
+    "week": "2025-W24",
+    "translation": {
+      "title": "자신감이 전부다: 언어 모델의 소수 학습 후 강화학습 세밀 조정",
+      "abstract": "대형 언어 모델(Large language models, LLMs)은 추론에서 뛰어나지만, 사후 학습은 그들의 행동을 작업 목표와 일치시키는 데 중요합니다. 기존 강화학습(Reinforcement learning, RL) 방법은 종종 비용이 많이 드는 인간 주석이나 외부 보상 모델에 의존합니다. 저희는 자신의 모델이 가진 자신감을 보상 신호로 활용하는 Reinforcement Learning via Self-Confidence (RLSC)를 제안합니다. 이는 라벨, 선호 모델 또는 보상 설계가 필요 없어지게 합니다. 한 질문 당 16개의 샘플과 10 또는 20개의 교육 단계만으로 Qwen2.5-Math-7B에 적용한 결과, RLSC는 AIME2024에서 정확도를 +13.4%, MATH500에서 +21.2%, Minerva Math에서 +21.7%, Olympiadbench에서 +20.8%, AMC23에서 +9.7% 향상시켰습니다. RLSC는 소수의 샘플과 라벨이 없는 지도만으로 추론 모델을 위한 간단하고 확장 가능한 사후 학습 방법을 제공합니다."
+    },
+    "summary": "1. 기존 언어 모델의 사후 학습을 위해 인간 주석이나 외부 보상 모델에 의존하는 강화학습 방법의 한계를 극복하기 위해 자신의 모델이 가진 자신감을 보상 신호로 활용하는 RLSC 방법을 제안.\n2. RLSC를 이용한 실험 결과, 소수의 샘플과 라벨이 없는 지도만으로 Qwen2.5-Math-7B에서 상당한 정확도 향상을 이룩함(+13.4% - +21.7%).\n3. RLSC는 추론 모델을 위한 간단하고 확장 가능한 사후 학습 방법으로, 비용이 적고 라벨 없는 지도만으로도 효과를 발휘함."
+  },
+  {
+    "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices",
+    "abstract": "This paper introduces MiniCPM4, a highly efficient large language model (LLM)\ndesigned explicitly for end-side devices. We achieve this efficiency through\nsystematic innovation in four key dimensions: model architecture, training\ndata, training algorithms, and inference systems. Specifically, in terms of\nmodel architecture, we propose InfLLM v2, a trainable sparse attention\nmechanism that accelerates both prefilling and decoding phases for long-context\nprocessing. Regarding training data, we propose UltraClean, an efficient and\naccurate pre-training data filtering and generation strategy, and UltraChat v2,\na comprehensive supervised fine-tuning dataset. These datasets enable\nsatisfactory model performance to be achieved using just 8 trillion training\ntokens. Regarding training algorithms, we propose ModelTunnel v2 for efficient\npre-training strategy search, and improve existing post-training methods by\nintroducing chunk-wise rollout for load-balanced reinforcement learning and\ndata-efficient tenary LLM, BitCPM. Regarding inference systems, we propose\nCPM.cu that integrates sparse attention, model quantization, and speculative\nsampling to achieve efficient prefilling and decoding. To meet diverse\non-device requirements, MiniCPM4 is available in two versions, with 0.5B and 8B\nparameters, respectively. Sufficient evaluation results show that MiniCPM4\noutperforms open-source models of similar size across multiple benchmarks,\nhighlighting both its efficiency and effectiveness. Notably, MiniCPM4-8B\ndemonstrates significant speed improvements over Qwen3-8B when processing long\nsequences. Through further adaptation, MiniCPM4 successfully powers diverse\napplications, including trustworthy survey generation and tool use with model\ncontext protocol, clearly showcasing its broad usability.",
+    "authors": [
+      "MiniCPM Team",
+      "Chaojun Xiao",
+      "Yuxuan Li",
+      "Xu Han",
+      "Yuzhuo Bai",
+      "Jie Cai",
+      "Haotian Chen",
+      "Wentong Chen",
+      "Xin Cong",
+      "Ganqu Cui",
+      "Ning Ding",
+      "Shengdan Fan",
+      "Yewei Fang",
+      "Zixuan Fu",
+      "Wenyu Guan",
+      "Yitong Guan",
+      "Junshao Guo",
+      "Yufeng Han",
+      "Bingxiang He",
+      "Yuxiang Huang",
+      "Cunliang Kong",
+      "Qiuzuo Li"
+    ],
+    "likes": 73,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2506.07900",
+    "date_collected": "2025-06-11T10:48:22.384587",
+    "week": "2025-W24",
+    "translation": {
+      "title": "미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델",
+      "abstract": "본 논문은 에지 장치를 위해 명시적으로 설계된 매우 효율적인 대형 언어 모델인 미니CPM4를 소개합니다. 우리는 모델 구조, 훈련 데이터, 훈련 알고리즘, 추론 시스템 네 가지 핵심 차원에서 체계적인 혁신을 통해 이 효율성을 달성했습니다."
+    },
+    "summary": "1. 미니CPM4는 모델 구조, 훈련 데이터, 훈련 알고리즘, 추론 시스템의 네 가지 핵심 차원에서 혁신을 통해 에지 장치를 위한 매우 효율적인 대형 언어 모델을 제안한다.\n2. UltraClean과 UltraChat v2를 통한 데이터 필터링 및 생성 전략, ModelTunnel v2를 사용한 효율적인 사전 훈련 전략 탐색, 그리고 CPM.cu를 활용한 효율적인 선행 및 디코딩을 통해 모델의 성능이 향상되었다.\n3. MiniCPM4는 다양한 응용 프로그램을 지원하며, 오픈 소스 모델을 능가하는 놀라운 효과성을 보여주며 특히 MiniCPM4-8B는 긴 시퀀스 처리 시 Qwen3-8B보다 상당한 속도 향상을 보인다."
+  },
+  {
+    "title": "Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety\n  Assurance",
+    "abstract": "Existing safety assurance research has primarily focused on training-phase\nalignment to instill safe behaviors into LLMs. However, recent studies have\nexposed these methods' susceptibility to diverse jailbreak attacks.\nConcurrently, inference scaling has significantly advanced LLM reasoning\ncapabilities but remains unexplored in the context of safety assurance.\nAddressing this gap, our work pioneers inference scaling for robust and\neffective LLM safety against emerging threats. We reveal that conventional\ninference scaling techniques, despite their success in reasoning tasks, perform\npoorly in safety contexts, even falling short of basic approaches like\nBest-of-N Sampling. We attribute this inefficiency to a newly identified\nchallenge, the exploration--efficiency dilemma, arising from the high\ncomputational overhead associated with frequent process reward model (PRM)\nevaluations. To overcome this dilemma, we propose SAFFRON, a novel inference\nscaling paradigm tailored explicitly for safety assurance. Central to our\napproach is the introduction of a multifurcation reward model (MRM) that\nsignificantly reduces the required number of reward model evaluations. To\noperationalize this paradigm, we further propose: (i) a partial supervision\ntraining objective for MRM, (ii) a conservative exploration constraint to\nprevent out-of-distribution explorations, and (iii) a Trie-based key--value\ncaching strategy that facilitates cache sharing across sequences during tree\nsearch. Extensive experiments validate the effectiveness of our method.\nAdditionally, we publicly release our trained multifurcation reward model\n(Saffron-1) and the accompanying token-level safety reward dataset (Safety4M)\nto accelerate future research in LLM safety. Our code, model, and data are\npublicly available at https://github.com/q-rz/saffron , and our project\nhomepage is at https://q-rz.github.io/p/saffron .",
+    "authors": [
+      "Ruizhong Qiu",
+      "Gaotang Li",
+      "Tianxin Wei",
+      "Jingrui He",
+      "Hanghang Tong"
+    ],
+    "likes": 69,
+    "published_date": "Jun 6",
+    "url": "https://huggingface.co/papers/2506.06444",
+    "date_collected": "2025-06-11T10:48:22.385707",
+    "week": "2025-W24",
+    "translation": {
+      "title": "LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구",
+      "abstract": "기존의 안전성 보증 연구는 대부분 안전한 행동을 언어·지식 모형 기계(LLMs)에 채택하는 것에 초점을 맞추어왔다. 그러나 최근 연구에서는 이러한 방법들이 다양한 탈옥 공격에 취약하다는 문제점이 드러났다. 동시에, 추론 확장은 LLM의 추론 능력을 크게 향상시켰지만 안전성 보증 관련 연구에서는 여전히 탐구되지 않은 영역이다. 우리의 연구는 이러한 공백을 채우고, 신규 위협에 대해 견고하고 효과적인 LLM 안전성 추론 확장을 선도한다."
+    },
+    "summary": "1. 기존의 추론 확장 기술은 안전 상황에서의 성능이 미흡하여 새로운 안전 보증 패러다임 SAFFRON이 제안되었다.\n2. 이를 위해 다중 분기 보상 모형(MRM)을 도입하여 필요한 보상 모형 평가 횟수를 현저히 줄였으며, 트리 기반 검색 과정에서 일련의 키-값 캐싱 전략을 용이하게 하는 제안도 포함되었다.\n3. 광범위한 실험 결과가 우리의 방법이 효과적임을 입증하며, 훈련된 MRM인 Saffron-1과 토큰 수준 안전 보상 데이터 집합(Safety4M)을 공개하여 LLM 안전성에 대한 미래 연구를 가속화하고자 한다."
+  },
+  {
+    "title": "Geopolitical biases in LLMs: what are the \"good\" and the \"bad\" countries\n  according to contemporary language models",
+    "abstract": "This paper evaluates geopolitical biases in LLMs with respect to various\ncountries though an analysis of their interpretation of historical events with\nconflicting national perspectives (USA, UK, USSR, and China). We introduce a\nnovel dataset with neutral event descriptions and contrasting viewpoints from\ndifferent countries. Our findings show significant geopolitical biases, with\nmodels favoring specific national narratives. Additionally, simple debiasing\nprompts had a limited effect in reducing these biases. Experiments with\nmanipulated participant labels reveal models' sensitivity to attribution,\nsometimes amplifying biases or recognizing inconsistencies, especially with\nswapped labels. This work highlights national narrative biases in LLMs,\nchallenges the effectiveness of simple debiasing methods, and offers a\nframework and dataset for future geopolitical bias research.",
+    "authors": [
+      "Mikhail Salnikov",
+      "Dmitrii Korzh",
+      "Ivan Lazichny",
+      "Elvir Karimov",
+      "Artyom Iudin",
+      "Ivan Oseledets",
+      "Oleg Y. Rogov",
+      "Alexander Panchenko",
+      "Natalia Loukachevitch",
+      "Elena Tutubalina"
+    ],
+    "likes": 62,
+    "published_date": "Jun 7",
+    "url": "https://huggingface.co/papers/2506.06751",
+    "date_collected": "2025-06-11T10:48:22.387038",
+    "week": "2025-W24",
+    "translation": {
+      "title": "LLMs에서의 지정학적 편향: 현대 언어 모델에서 \"좋은\" 나라와 \"나쁜\" 나라는 무엇인가",
+      "abstract": "본 논문은 LLMs에서 다양한 국가에 대한 지정학적 편향을 분석하여 미국, 영국, 소련 및 중국의 역사적 사건 해석을 통해 이를 평가합니다. 우리는 중립적 사건 설명과 다른 국가들의 대립적 시각을 제시하는 혁신적인 데이터셋을 소개합니다. 우리의 결과는 특정 국가적 서술 우선을 보여주며, 간단한 편향 제거 프롬프트가 이러한 편향을 줄이는 데 제한적인 영향을 미쳤음을 보여줍니다. 또한, 가짜 참여자 레이블로 실험한 결과는 모델이 소속을 민감하게 감지하며, 때로는 편향을 강화하거나 일관성을 인식하는 것을 보여줍니다, 특히 레이블을 교체할 때. 본 연구는 LLMs 내의 국가적 서술 편향을 강조하며, 간단한 편향 제거 방법의 효과를 도전하며, 미래의 지정학적 편향 연구를 위한 프레임워크와 데이터셋을 제안합니다."
+    },
+    "summary": "1. LLMs에서 국가적 서술 편향을 발견하고, 간단한 편향 제거 방법의 한계를 밝힘.\n2. 모델의 민감성으로 인해 편향이 강화되거나 모순을 인정하는 실험 결과를 제시.\n3. 미래 지정학적 편향 연구를 위한 프레임워크와 데이터셋을 제공함으로써 중요성을 강조."
+  },
+  {
+    "title": "ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical\n  Reasoning",
+    "abstract": "Though reasoning-based large language models (LLMs) have excelled in\nmathematics and programming, their capabilities in knowledge-intensive medical\nquestion answering remain underexplored. To address this, we introduce\nReasonMed, the largest medical reasoning dataset, comprising 370k high-quality\nexamples distilled from 1.7 million initial reasoning paths generated by\nvarious LLMs. ReasonMed is constructed through a multi-agent\nverification and refinement process, where we design an Error Refiner\nto enhance the reasoning paths by identifying and correcting error-prone steps\nflagged by a verifier. Leveraging ReasonMed, we systematically investigate best\npractices for training medical reasoning models and find that combining\ndetailed Chain-of-Thought (CoT) reasoning with concise answer summaries yields\nthe most effective fine-tuning strategy. Based on this strategy, we train\nReasonMed-7B, which sets a new benchmark for sub-10B models, outperforming the\nprior best by 4.17\\% and even exceeding LLaMA3.1-70B on PubMedQA by 4.60\\%.",
+    "authors": [
+      "Yu Sun",
+      "Xingyu Qian",
+      "Weiwen Xu",
+      "Hao Zhang",
+      "Chenghao Xiao",
+      "Long Li",
+      "Yu Rong",
+      "Wenbing Huang",
+      "Qifeng Bai",
+      "Tingyang Xu"
+    ],
+    "likes": 60,
+    "published_date": "Jun 11",
+    "url": "https://huggingface.co/papers/2506.09513",
+    "date_collected": "2025-06-13T22:07:35.289566",
+    "week": "2025-W24",
+    "translation": {
+      "title": "의료 추론 발전을 위한 37만 개 에이전트 생성 데이터셋 ReasonMed",
+      "abstract": "추론 기반 대형 언어 모델(LLMs)은 수학과 프로그래밍에서 뛰어나지만, 의료 지식을 활용한 질의응답에서의 성능은 여전히 미비하다. 이를 해결하기 위해, 다양한 LLMs에 의해 생성된 170만 개 초기 추론 경로 중 37만 개의 고품질 예시를 추출하여 구성된 ReasonMed라는 최대 규모의 의료 추론 데이터셋을 소개한다. ReasonMed는 다중 에이전트 검증 및 수정 과정을 거쳐 구축되었는데, 이 과정에서 오류 식별자로서의 '에러 리파이너'를 설계하여 검증기가 식별한 오류 내용을 수정해 추론 경로를 향상시킨다. ReasonMed를 활용하여 의료 추론 모델을 훈련하는 데 가장 효과적인 세부 사고 체인과 간결한 답변 요약을 결합하는 방법을 체계적으로 연구한 결과, 새로운 미세 조정 전략에서 우수한 성과를 보이는 ReasonMed-7B 모델을 훈련시켰다. 이 모델은 이전 최고 모델보다 4.17\\% 우수한 결과를 달성하며 PubMedQA의 LLaMA3.1-70B를 4.60\\% 초월한다."
+    },
+    "summary": "1. 추론 기반 대형 언어 모델은 의료 분야에서의 성능을 향상시키기 위해 ReasonMed 데이터셋을 소개하며, 이는 반복적인 검증 및 수정 과정을 통해 고품질 예시를 추출한 결과이다.\n2. ReasonMed를 활용하여 의료 추론 모델을 훈련하는 과정에서 세부 사고 체인과 간결한 요약을 결합하는 것이 가장 효율적인 미세 조정 전략임을 발견했으며, 이에 기초하여 새로운 모델 ReasonMed-7B를 개발했다.\n3. ReasonMed-7B 모델은 10B 미만 모델에서 새로운 기준을 설정하며, 선행 최고 모델을 4.17\\% 능가하고 PubMedQA의 LLaMA3.1-70B 모델을 4.60\\% 초과하는 성과를 보여주고 있다."
+  },
+  {
+    "title": "Seedance 1.0: Exploring the Boundaries of Video Generation Models",
+    "abstract": "Notable breakthroughs in diffusion modeling have propelled rapid improvements\nin video generation, yet current foundational model still face critical\nchallenges in simultaneously balancing prompt following, motion plausibility,\nand visual quality. In this report, we introduce Seedance 1.0, a\nhigh-performance and inference-efficient video foundation generation model that\nintegrates several core technical improvements: (i) multi-source data curation\naugmented with precision and meaningful video captioning, enabling\ncomprehensive learning across diverse scenarios; (ii) an efficient architecture\ndesign with proposed training paradigm, which allows for natively supporting\nmulti-shot generation and jointly learning of both text-to-video and\nimage-to-video tasks. (iii) carefully-optimized post-training approaches\nleveraging fine-grained supervised fine-tuning, and video-specific RLHF with\nmulti-dimensional reward mechanisms for comprehensive performance improvements;\n(iv) excellent model acceleration achieving ~10x inference speedup through\nmulti-stage distillation strategies and system-level optimizations. Seedance\n1.0 can generate a 5-second video at 1080p resolution only with 41.4 seconds\n(NVIDIA-L20). Compared to state-of-the-art video generation models, Seedance\n1.0 stands out with high-quality and fast video generation having superior\nspatiotemporal fluidity with structural stability, precise instruction\nadherence in complex multi-subject contexts, native multi-shot narrative\ncoherence with consistent subject representation.",
+    "authors": [
+      "Yu Gao",
+      "Haoyuan Guo",
+      "Tuyen Hoang",
+      "Weilin Huang",
+      "Lu Jiang",
+      "Fangyuan Kong",
+      "Huixia Li",
+      "Jiashi Li",
+      "Liang Li",
+      "Xiaojie Li",
+      "Xunsong Li",
+      "Yifu Li",
+      "Shanchuan Lin",
+      "Zhijie Lin",
+      "Jiawei Liu",
+      "Shu Liu",
+      "Xiaonan Nie",
+      "Zhiwu Qing",
+      "Yuxi Ren",
+      "Li Sun",
+      "Zhi Tian",
+      "Rui Wang"
+    ],
+    "likes": 59,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2506.09113",
+    "date_collected": "2025-06-12T22:07:58.715684",
+    "week": "2025-W24",
+    "translation": {
+      "title": "Seedance 1.0: 비디오 생성 모델의 경계 탐색",
+      "abstract": "확산 모델링의 주목할만한 성과로 비디오 생성이 급속히 발전해왔지만, 현재의 기본 모델은 사용자 명령 따르기, 움직임 현실성, 시각적 품질을 동시에 균형 있게 유지하는데 중요한 문제에 직면하고 있습니다. 본 보고서에서는 여러 핵심 기술 개선을 통합한 성능 우수하고 추론 효율적인 비디오 기초 생성 모델인 Seedance 1.0을 소개합니다."
+    },
+    "summary": "1. Seedance 1.0은 다양한 시나리오의 포괄적인 학습을 가능케 하는 정밀하고 의미 있는 비디오 캡션을 통한 다중 소스 데이터 정리 및 효율적인 아키텍처 디자인을 특징으로 합니다.\n2. 이 모델은 다중 샷 생성을 원활하게 지원하며 텍스트에서 비디오, 이미지에서 비디오 작업을 동시에 학습하는 제안된 교육 패러다임을 갖추고 있습니다.\n3. Seedance 1.0은 고해상도 5초 비디오를 41.4초 만에 생성하는 빠른 추론 속도와 우수한 화질을 제공하며, 다양한 주제 표현에서 구조적 안정성과 지시에 따른 일관성을 보여주는 탁월한 성능을 자랑합니다."
+  },
+  {
+    "title": "PartCrafter: Structured 3D Mesh Generation via Compositional Latent\n  Diffusion Transformers",
+    "abstract": "We introduce PartCrafter, the first structured 3D generative model that\njointly synthesizes multiple semantically meaningful and geometrically distinct\n3D meshes from a single RGB image. Unlike existing methods that either produce\nmonolithic 3D shapes or follow two-stage pipelines, i.e., first segmenting an\nimage and then reconstructing each segment, PartCrafter adopts a unified,\ncompositional generation architecture that does not rely on pre-segmented\ninputs. Conditioned on a single image, it simultaneously denoises multiple 3D\nparts, enabling end-to-end part-aware generation of both individual objects and\ncomplex multi-object scenes. PartCrafter builds upon a pretrained 3D mesh\ndiffusion transformer (DiT) trained on whole objects, inheriting the pretrained\nweights, encoder, and decoder, and introduces two key innovations: (1) A\ncompositional latent space, where each 3D part is represented by a set of\ndisentangled latent tokens; (2) A hierarchical attention mechanism that enables\nstructured information flow both within individual parts and across all parts,\nensuring global coherence while preserving part-level detail during generation.\nTo support part-level supervision, we curate a new dataset by mining part-level\nannotations from large-scale 3D object datasets. Experiments show that\nPartCrafter outperforms existing approaches in generating decomposable 3D\nmeshes, including parts that are not directly visible in input images,\ndemonstrating the strength of part-aware generative priors for 3D understanding\nand synthesis. Code and training data will be released.",
+    "authors": [
+      "Yuchen Lin",
+      "Chenguo Lin",
+      "Panwang Pan",
+      "Honglei Yan",
+      "Yiqiang Feng",
+      "Yadong Mu",
+      "Katerina Fragkiadaki"
+    ],
+    "likes": 55,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2506.05573",
+    "date_collected": "2025-06-12T22:07:58.716875",
+    "week": "2025-W24",
+    "translation": {
+      "title": "PartCrafter: 구성적 잠재 확산 변형기를 통한 구조화된 3D 메쉬 생성",
+      "abstract": "PartCrafter는 단일 RGB 이미지로부터 여러 의미론적으로 유의미하고 기하학적으로 구분된 3D 메쉬를 함께 생성하는 첫 구조화된 3D 생성 모델을 소개합니다. PartCrafter는 이미지를 세분화하고 각 세그먼트를 재구성하는 2단계 파이프라인을 따르거나 단일한 3D 모양을 생성하는 기존 방법과 달리 사전 세분화된 입력에 의존하지 않는 통합적 구성 생성 아키텍처를 채택합니다. 이는 단일 이미지에 조건을 두고 여러 3D 파트를 동시에 소음 제거하여 개별 객체 및 복잡한 다중 객체 장면의 고려한 모양 생성을 가능케 합니다."
+    },
+    "summary": "1. PartCrafter는 단일 이미지를 기반으로 여러 의미 있는 3D 메쉬를 동시에 생성하는 구조화된 3D 생성 모델이다.\n2. 미리 학습된 3D 메쉬 확산 변형기를 기반으로, 구성적 잠재 공간과 계층적 주의 메커니즘을 도입하여 개별 파트 내부 및 전체 파트 간에 구조적 정보 전달을 보장하면서 생성 시 전역 일관성을 유지한다.\n3. 새로운 데이터셋을 구축하고 실험 결과에서 PartCrafter가 다른 방법보다 우수한 성과를 보여주며, 3D 이해와 합성을 위한 파트 인식 생성 사전지식의 강점을 입증한다."
+  }
+]

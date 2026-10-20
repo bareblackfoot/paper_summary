@@ -1,0 +1,125 @@
+=== Paper Collection Started at Sat May 30 22:27:23 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W23
+URL: https://huggingface.co/papers/week/2026-W23
+Found 10 papers in weekly view
+Fetching likes for: Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players
+Fetching likes for: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Fetching likes for: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Fetching likes for: LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding
+Fetching likes for: AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security
+Fetching likes for: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Fetching likes for: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Fetching likes for: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Fetching likes for: Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments
+Fetching likes for: Agent Explorative Policy Optimization for Multimodal Agentic Reasoning
+Selected top 10 papers by likes:
+1. Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players (356 likes)
+2. SkillOpt: Executive Strategy for Self-Evolving Agent Skills (204 likes)
+3. DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning (131 likes)
+4. LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding (124 likes)
+5. AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security (107 likes)
+6. Rethinking Cross-Layer Information Routing in Diffusion Transformers (107 likes)
+7. Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models (104 likes)
+8. WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation (98 likes)
+9. Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments (92 likes)
+10. Agent Explorative Policy Optimization for Multimodal Agentic Reasoning (78 likes)
+Found abstract: World models for interactive video generation have largely focused on single-agent settings, where f...
+Processed paper: Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players
+Found abstract: Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-...
+Processed paper: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Found abstract: Reinforcement Learning has become a standard paradigm for aligning Large Language Models with human ...
+Processed paper: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Found abstract: Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-toke...
+Processed paper: LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding
+Found abstract: Modern open-world agents such as OpenClaw exhibit powerful cross-environment execution capabilities ...
+Processed paper: AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security
+Found abstract: Diffusion Transformers (DiTs) have become a de facto backbone of modern visual generation, and nearl...
+Processed paper: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Found abstract: We introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in sev...
+Processed paper: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Found abstract: Interactive world models are advancing rapidly, yet existing benchmarks cover only part of the requi...
+Processed paper: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Found abstract: Embodied intelligence is often studied through specialized models for individual tasks such as manip...
+Processed paper: Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments
+Found abstract: Vision-language models with extended reasoning succeed on complex problems, but many real-world prob...
+Processed paper: Agent Explorative Policy Optimization for Multimodal Agentic Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players
+Paper already exists, checking if translation is complete...
+Update likes: 356  ->  283
+Update date_collected: 2026-05-31T07:27:33.238719+09:00  ->  2026-05-30T07:36:34.931933+09:00
+
+Processing paper 2/10
+Title: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Paper already exists, checking if translation is complete...
+Update likes: 204  ->  201
+Update date_collected: 2026-05-31T07:27:33.240938+09:00  ->  2026-05-30T07:36:34.934782+09:00
+
+Processing paper 3/10
+Title: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 131  ->  130
+Update date_collected: 2026-05-31T07:27:33.242693+09:00  ->  2026-05-30T07:36:34.937108+09:00
+
+Processing paper 4/10
+Title: LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 124  ->  117
+Update date_collected: 2026-05-31T07:27:33.244761+09:00  ->  2026-05-30T07:36:34.939863+09:00
+
+Processing paper 5/10
+Title: AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security
+Paper already exists, checking if translation is complete...
+Update likes: 107  ->  81
+Update date_collected: 2026-05-31T07:27:33.247252+09:00  ->  2026-05-30T07:36:34.951416+09:00
+
+Processing paper 6/10
+Title: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Paper already exists, checking if translation is complete...
+Update likes: 107  ->  104
+Update date_collected: 2026-05-31T07:27:33.249296+09:00  ->  2026-05-30T07:36:34.942546+09:00
+
+Processing paper 7/10
+Title: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  103
+Update date_collected: 2026-05-31T07:27:33.251689+09:00  ->  2026-05-30T07:36:34.945668+09:00
+
+Processing paper 8/10
+Title: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Paper already exists, checking if translation is complete...
+Update likes: 98  ->  97
+Update date_collected: 2026-05-31T07:27:33.253596+09:00  ->  2026-05-30T07:36:34.948172+09:00
+
+Processing paper 9/10
+Title: Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Agent Explorative Policy Optimization for Multimodal Agentic Reasoning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W23.json...
+
+Updating Notion database...
+Updating paper: 게임마-월드: 두 명 이상의 플레이어를 위한 생성적 다중 에이전트 월드 모델링 (likes: 283 -> 356)
+Updating paper: SkillOpt: 진화 중인 에이전트 스킬을 위한 실행 전략 (likes: 201 -> 204)
+Updating paper: 다이내믹 분산 적응형 어드밴티지 최적화를 이용한 다중 보상 강화학습 (DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning) (likes: 130 -> 131)
+Updating paper: LocateAnything: 빠르고 고품질의 시각-언어 접지를 위한 병렬 상자 디코딩 (likes: 117 -> 124)
+Updating paper: 에이전트 안전과 보안을 위한 경량 및 확장 가능한 정렬 프레임워크인 AgentDoG 1.5 (likes: 81 -> 107)
+Updating paper: 확산 트랜스포머에서의 교차 계층 정보 라우팅 다시 생각하기 (likes: 104 -> 107)
+Updating paper: 렌즈: 핵심 텍스트-이미지 모델의 효율적인 훈련 방식 재고 (likes: 103 -> 104)
+Updating paper: WBench: 상호작용형 비디오 세계 모델 평가를 위한 포괄적인 다중 턴 벤치마크 (likes: 97 -> 98)
+Creating new paper: Qwen-VLA: 태스크, 환경 및 로봇 신체 간의 통합된 비전-언어-행동 모델링
+Creating new paper: 다중 모달 에이전트 추론을 위한 에이전트 탐사 정책 최적화
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat May 30 22:28:57 UTC 2026 ===
+

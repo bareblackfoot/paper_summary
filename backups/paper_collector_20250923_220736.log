@@ -1,0 +1,139 @@
+=== Paper Collection Started at Mon Sep 22 22:07:48 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W39
+URL: https://huggingface.co/papers/week/2025-W39
+Found 10 papers in weekly view
+Fetching likes for: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Fetching likes for: MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer
+Fetching likes for: Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification
+Fetching likes for: BaseReward: A Strong Baseline for Multimodal Reward Model
+Fetching likes for: SPATIALGEN: Layout-guided 3D Indoor Scene Generation
+Fetching likes for: Lynx: Towards High-Fidelity Personalized Video Generation
+Fetching likes for: A Vision-Language-Action-Critic Model for Robotic Real-World
+  Reinforcement Learning
+Fetching likes for: BTL-UI: Blink-Think-Link Reasoning Model for GUI Agent
+Fetching likes for: RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes
+Fetching likes for: Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in
+  Instruction-Guided Expressive Text-To-Speech Systems
+Selected top 10 papers by likes:
+1. RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation (87 likes)
+2. MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer (36 likes)
+3. Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification (27 likes)
+4. BaseReward: A Strong Baseline for Multimodal Reward Model (17 likes)
+5. SPATIALGEN: Layout-guided 3D Indoor Scene Generation (14 likes)
+6. Lynx: Towards High-Fidelity Personalized Video Generation (9 likes)
+7. A Vision-Language-Action-Critic Model for Robotic Real-World
+  Reinforcement Learning (7 likes)
+8. BTL-UI: Blink-Think-Link Reasoning Model for GUI Agent (6 likes)
+9. RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes (3 likes)
+10. Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in
+  Instruction-Guided Expressive Text-To-Speech Systems (2 likes)
+Found abstract: Large language models excel at function- and file-level code generation, yet
+generating complete rep...
+Processed paper: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Found abstract: Unified multimodal Large Language Models (LLMs) that can both understand and
+generate visual content...
+Processed paper: MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer
+Found abstract: Generative modeling, representation learning, and classification are three
+core problems in machine ...
+Processed paper: Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification
+Found abstract: The rapid advancement of Multimodal Large Language Models (MLLMs) has made
+aligning them with human ...
+Processed paper: BaseReward: A Strong Baseline for Multimodal Reward Model
+Found abstract: Creating high-fidelity 3D models of indoor environments is essential for
+applications in design, vir...
+Processed paper: SPATIALGEN: Layout-guided 3D Indoor Scene Generation
+Found abstract: We present Lynx, a high-fidelity model for personalized video synthesis from
+a single input image. B...
+Processed paper: Lynx: Towards High-Fidelity Personalized Video Generation
+Found abstract: Robotic real-world reinforcement learning (RL) with vision-language-action
+(VLA) models is bottlenec...
+Processed paper: A Vision-Language-Action-Critic Model for Robotic Real-World
+  Reinforcement Learning
+Found abstract: In the field of AI-driven human-GUI interaction automation, while rapid
+advances in multimodal large...
+Processed paper: BTL-UI: Blink-Think-Link Reasoning Model for GUI Agent
+Found abstract: Although COLMAP has long remained the predominant method for camera parameter
+optimization in static...
+Processed paper: RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes
+Found abstract: Instruction-guided text-to-speech (ITTS) enables users to control speech
+generation through natural ...
+Processed paper: Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in
+  Instruction-Guided Expressive Text-To-Speech Systems
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid
+  Vision Tokenizer
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Latent Zoning Network: A Unified Principle for Generative Modeling,
+  Representation Learning, and Classification
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: BaseReward: A Strong Baseline for Multimodal Reward Model
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: SPATIALGEN: Layout-guided 3D Indoor Scene Generation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Lynx: Towards High-Fidelity Personalized Video Generation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: A Vision-Language-Action-Critic Model for Robotic Real-World
+  Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: BTL-UI: Blink-Think-Link Reasoning Model for GUI Agent
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in
+  Instruction-Guided Expressive Text-To-Speech Systems
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W39.json...
+
+Updating Notion database...
+Creating new paper: RPG: 통합 및 확장 가능한 코드베이스 생성을 위한 저장소 계획 그래프
+Creating new paper: 간단하고 확장 가능한 통합된 다중 모달 모델 MANZANO: 하이브리드 비전 토크나이저
+Creating new paper: 숨겨진 분류 네트워크: 생성 모델링, 표현 학습, 그리고 분류를 위한 통일된 원리
+Creating new paper: BaseReward: 다중모달 보상 모델을 위한 강력한 기준선
+Creating new paper: 공간지도를 활용한 3D 실내 공간 생성
+Creating new paper: 린크스: 고품질 맞춤형 비디오 생성을 향하여
+Creating new paper: 로봇의 현실 세계 강화 학습을 위한 비전-언어-행동-비평자 모델
+Creating new paper: BTL-UI: GUI 에이전트를 위한 Blink-Think-Link 추론 모델
+Creating new paper: 동적 장면에서 RGB만을 이용한 카메라 파라미터 최적화
+Creating new paper: 내가 무슨 뜻인지 들리나요? 지시-지각 갭을 정량화한 지시-지각 중심 표현적 텍스트 음성합성 시스템
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Sep 22 22:09:44 UTC 2025 ===
+

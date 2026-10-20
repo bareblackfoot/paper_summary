@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Dec  9 22:08:29 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W50
+URL: https://huggingface.co/papers/week/2025-W50
+Found 10 papers in weekly view
+Fetching likes for: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Fetching likes for: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Fetching likes for: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Fetching likes for: EditThinker: Unlocking Iterative Reasoning for Any Image Editor
+Fetching likes for: Unified Video Editing with Temporal Reasoner
+Fetching likes for: From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks
+Fetching likes for: Voxify3D: Pixel Art Meets Volumetric Rendering
+Fetching likes for: Scaling Zero-Shot Reference-to-Video Generation
+Fetching likes for: DoVer: Intervention-Driven Auto Debugging for LLM Multi-Agent Systems
+Fetching likes for: EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture
+Selected top 10 papers by likes:
+1. TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows (57 likes)
+2. Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning (49 likes)
+3. Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs (41 likes)
+4. EditThinker: Unlocking Iterative Reasoning for Any Image Editor (34 likes)
+5. Unified Video Editing with Temporal Reasoner (29 likes)
+6. From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks (27 likes)
+7. Voxify3D: Pixel Art Meets Volumetric Rendering (26 likes)
+8. Scaling Zero-Shot Reference-to-Video Generation (24 likes)
+9. DoVer: Intervention-Driven Auto Debugging for LLM Multi-Agent Systems (24 likes)
+10. EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture (24 likes)
+Found abstract: Recent advances in large multi-modal generative models have demonstrated impressive capabilities in ...
+Processed paper: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Found abstract: We introduce Native Parallel Reasoner (NPR), a teacher-free framework that enables Large Language Mo...
+Processed paper: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Found abstract: Rotary Position Embeddings (RoPE) have become a standard for encoding sequence order in Large Langua...
+Processed paper: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Found abstract: Instruction-based image editing has emerged as a prominent research area, which, benefiting from ima...
+Processed paper: EditThinker: Unlocking Iterative Reasoning for Any Image Editor
+Found abstract: Existing video editing methods face a critical trade-off: expert models offer precision but rely on ...
+Processed paper: Unified Video Editing with Temporal Reasoner
+Found abstract: Reinforcement learning has emerged as a paradigm for post-training large language models, boosting t...
+Processed paper: From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks
+Found abstract: Voxel art is a distinctive stylization widely used in games and digital media, yet automated generat...
+Processed paper: Voxify3D: Pixel Art Meets Volumetric Rendering
+Found abstract: Reference-to-video (R2V) generation aims to synthesize videos that align with a text prompt while pr...
+Processed paper: Scaling Zero-Shot Reference-to-Video Generation
+Found abstract: Large language model (LLM)-based multi-agent systems are challenging to debug because failures often...
+Processed paper: DoVer: Intervention-Driven Auto Debugging for LLM Multi-Agent Systems
+Found abstract: We propose EMMA, an efficient and unified architecture for multimodal understanding, generation and ...
+Processed paper: EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  44
+Update date_collected: 2025-12-10T07:08:38.254741+09:00  ->  2025-12-09T07:08:20.595689+09:00
+
+Processing paper 2/10
+Title: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: EditThinker: Unlocking Iterative Reasoning for Any Image Editor
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  31
+Update date_collected: 2025-12-10T07:08:38.259081+09:00  ->  2025-12-09T07:08:20.597369+09:00
+
+Processing paper 5/10
+Title: Unified Video Editing with Temporal Reasoner
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 27  ->  24
+Update date_collected: 2025-12-10T07:08:38.261860+09:00  ->  2025-12-09T07:08:20.598900+09:00
+
+Processing paper 7/10
+Title: Voxify3D: Pixel Art Meets Volumetric Rendering
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Scaling Zero-Shot Reference-to-Video Generation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: DoVer: Intervention-Driven Auto Debugging for LLM Multi-Agent Systems
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture
+Paper already exists, checking if translation is complete...
+Update likes: 24  ->  21
+Update date_collected: 2025-12-10T07:08:38.267340+09:00  ->  2025-12-09T07:08:20.600089+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W50.json...
+
+Updating Notion database...
+Updating paper: TwinFlow: 자가 적대적 플로우를 활용한 대규모 모델에서의 일단계 생성 실현 (likes: 44 -> 57)
+Creating new paper: 본능적 병렬 추론자: 자가 증류 강화 학습을 통한 병렬 추론 (Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning)
+Creating new paper: 실제를 넘어선다: 장문맥 대언어모델을 위한 회전 위치 임베딩의 허구 확장
+Updating paper: EditThinker: 어떤 이미지 편집기에도 반복 추론을 해제하다 (likes: 31 -> 34)
+Creating new paper: 시간적 추론기를 활용한 통합 비디오 편집
+Updating paper: 모방에서 식별로: 교차 도메인 추론 작업 강화를 위한 일반화된 커리큘럼 이점 메커니즘에 대한 연구 (likes: 24 -> 27)
+Creating new paper: Voxify3D: 픽셀 아트가 체적 렌더링과 만나다
+Creating new paper: Zero-Shot 참조-비디오 생성의 확장
+Creating new paper: DoVer: LLM Multi-Agent 시스템을 위한 개입주도 자동 디버깅
+Updating paper: EMMA: 통합 구조를 활용한 효율적인 다중 모달 이해, 생성 및 편집 (likes: 21 -> 24)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Dec  9 22:10:35 UTC 2025 ===
+

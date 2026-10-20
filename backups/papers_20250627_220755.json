@@ -1,0 +1,313 @@
+[
+  {
+    "title": "Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights",
+    "abstract": "Modern Parameter-Efficient Fine-Tuning (PEFT) methods such as low-rank\nadaptation (LoRA) reduce the cost of customizing large language models (LLMs),\nyet still require a separate optimization run for every downstream dataset. We\nintroduce Drag-and-Drop LLMs (\\textit{DnD)}, a prompt-conditioned\nparameter generator that eliminates per-task training by mapping a handful of\nunlabeled task prompts directly to LoRA weight updates. A lightweight text\nencoder distills each prompt batch into condition embeddings, which are then\ntransformed by a cascaded hyper-convolutional decoder into the full set of LoRA\nmatrices. Once trained in a diverse collection of prompt-checkpoint pairs, DnD\nproduces task-specific parameters in seconds, yielding i) up to\n12,000times lower overhead than full fine-tuning, ii) average gains\nup to 30\\% in performance over the strongest training LoRAs on unseen\ncommon-sense reasoning, math, coding, and multimodal benchmarks, and iii)\nrobust cross-domain generalization despite never seeing the target data or\nlabels. Our results demonstrate that prompt-conditioned parameter generation is\na viable alternative to gradient-based adaptation for rapidly specializing\nLLMs. Our project is available at\nhttps://jerryliang24.github.io/DnD{https://jerryliang24.github.io/DnD}.",
+    "authors": [
+      "Zhiyuan Liang",
+      "Dongwen Tang",
+      "Yuhao Zhou",
+      "Xuanlei Zhao",
+      "Mingjia Shi",
+      "Wangbo Zhao",
+      "Zekai Li",
+      "Peihao Wang",
+      "Konstantin Schürholt",
+      "Damian Borth",
+      "Michael M. Bronstein",
+      "Yang You",
+      "Zhangyang Wang",
+      "Kai Wang"
+    ],
+    "likes": 103,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16406",
+    "date_collected": "2025-06-27T07:08:00.116841+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "드래그 앤 드롭 LLMs: 제로 샷 프롬프트-투-웨이츠",
+      "abstract": "현대 파라미터 효율적인 파인튜닝(PEFT) 방법인 로우랭크 적응(LoRA)은 대형 언어 모델(LLMs) 맞춤화 비용을 줄이지만 여전히 각 하류 데이터셋에 대해 별도의 최적화 실행이 필요합니다. 저희는 프롬프트-조건 매개변수 생성기인 드래그 앤 드롭 LLMs(DnD)를 소개합니다. 이는 몇 가지 미출시된 작업 프롬프트를 직접 LoRA 가중치 업데이트로 매핑하여 작업당 훈련을 제거합니다. 가벼운 텍스트 인코더는 각 프롬프트 배치를 조건 임베딩으로 축소하고, 이후 이를 연속적 하이퍼-컨볼루션 디코더에 의해 전체 LoRA 행렬로 변환합니다. DnD는 다양한 프롬프트-체크포인트 쌍의 모임에서 훈련된 후 몇 초 안에 작업별 매개변수를 생성하며, i) 전체 파인튜닝 대비 최대 12,000배의 비용 절감, ii) 강력한 훈련 LoRA에 비해 견지 않은 상식 추론, 수학, 코딩, 다중모달 벤치마크에서 평균 최대 30% 성능 향상, iii) 대상 데이터나 라벨을 본 적이 없어도 강건한 교차 도메인 일반화를 제공합니다. 저희 결과는 빠르게 특화하는데 그래디언트 기반 적응 대안인 프롬프트-조건 매개변수 생성이 타당함을 보여줍니다."
+    },
+    "summary": "1. 드래그 앤 드롭 LLMs(DnD)는 로우랭크 적응 방법인 LoRA 가중치 업데이트로 작업별 훈련을 제거하고, 빠르게 작업별 매개변수를 생성하여 비용을 대폭 절감합니다.\n2. DnD는 강력한 LoRA 훈련에 비해 상식 추론, 수학, 코딩, 다중모달 벤치마크에서 최대 30%의 성능 향상을 제공하며, 대상 데이터나 라벨을 본 적이 없어도 교차 도메인 일반화를 효과적으로 수행합니다.\n3. 이 연구 결과는 그래디언트 기반 적응의 대안으로 프롬프트-조건 매개변수 생성이 LLMs를 특화시키는데 효과적임을 입증합니다.",
+    "categories": [
+      "LLM",
+      "NLP"
+    ]
+  },
+  {
+    "title": "Light of Normals: Unified Feature Representation for Universal\n  Photometric Stereo",
+    "abstract": "Universal photometric stereo (PS) aims to recover high-quality surface\nnormals from objects under arbitrary lighting conditions without relying on\nspecific illumination models. Despite recent advances such as SDM-UniPS and Uni\nMS-PS, two fundamental challenges persist: 1) the deep coupling between varying\nillumination and surface normal features, where ambiguity in observed intensity\nmakes it difficult to determine whether brightness variations stem from\nlighting changes or surface orientation; and 2) the preservation of\nhigh-frequency geometric details in complex surfaces, where intricate\ngeometries create self-shadowing, inter-reflections, and subtle normal\nvariations that conventional feature processing operations struggle to capture\naccurately.",
+    "authors": [
+      "Hong Li",
+      "Houyuan Chen",
+      "Chongjie Ye",
+      "Zhaoxi Chen",
+      "Bohan Li",
+      "Shaocong Xu",
+      "Xianda Guo",
+      "Xuhui Liu",
+      "Yikai Wang",
+      "Baochang Zhang",
+      "Satoshi Ikehata",
+      "Boxin Shi",
+      "Anyi Rao",
+      "Hao Zhao"
+    ],
+    "likes": 80,
+    "published_date": "Jun 23",
+    "url": "https://huggingface.co/papers/2506.18882",
+    "date_collected": "2025-06-27T07:08:00.118427+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "표면 법선의 빛: 범용 광도 스테레오를 위한 통합적인 특징 표현",
+      "abstract": "범용 광도 스테레오(PS)는 특정 조명 모델에 의존하지 않고 임의의 조명 조건에서 물체의 높은 품질의 표면 법선을 복원하는 것을 목표로 합니다. 최근의 SDM-UniPS와 Uni MS-PS와 같은 발전에도 불구하고, 두 가지 기본적인 과제가 존재합니다: 1) 조명과 표면 법선 특징 사이의 깊은 결합, 관찰된 강도의 모호성으로 인해 밝기 변화가 조명 변화에서 비롯된 것인지 표면 방향에서 온 것인지 판단하기 어렵고; 2) 복잡한 표면에서 고주파 기하학적 세부 정보를 보존하는 것, 복잡한 기하학이 자체 그림자, 상호 반사 및 세밀한 법선 변화를 만들어 기존의 특징 처리 작업이 정확하게 캡처하기 어려운 상황입니다."
+    },
+    "summary": "1. 범용 광도 스테레오는 임의의 조명 조건에서 물체의 표면 법선을 복원하기 위한 기술이며, 밝기 변화를 통해 조명 변화와 표면 방향의 관련성을 파악하는 것이 어렵습니다.\n  \n2. 복잡한 표면에서 고주파 기하학적 세부 정보를 보존하는 것은 전통적인 특징 처리 작업이 정확히 캡처하기 어려운 도전입니다.\n  \n3. SDM-UniPS 및 Uni MS-PS와 같은 최근 발전에도 불구하고, 범용 광도 스테레오 기술은 어려운 셀프-섀도잉, 상호 반사 및 세밀한 법선 변화를 처리하는 데 어려움을 겪고 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal\n  Document Understanding",
+    "abstract": "Retrieval-Augmented Generation (RAG) systems have revolutionized information\nretrieval and question answering, but traditional text-based chunking methods\nstruggle with complex document structures, multi-page tables, embedded figures,\nand contextual dependencies across page boundaries. We present a novel\nmultimodal document chunking approach that leverages Large Multimodal Models\n(LMMs) to process PDF documents in batches while maintaining semantic coherence\nand structural integrity. Our method processes documents in configurable page\nbatches with cross-batch context preservation, enabling accurate handling of\ntables spanning multiple pages, embedded visual elements, and procedural\ncontent. We evaluate our approach on a curated dataset of PDF documents with\nmanually crafted queries, demonstrating improvements in chunk quality and\ndownstream RAG performance. Our vision-guided approach achieves better accuracy\ncompared to traditional vanilla RAG systems, with qualitative analysis showing\nsuperior preservation of document structure and semantic coherence.",
+    "authors": [
+      "Vishesh Tripathi",
+      "Tanmay Odapally",
+      "Indraneel Das",
+      "Uday Allu",
+      "Biddwan Ahmed"
+    ],
+    "likes": 77,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16035",
+    "date_collected": "2025-06-27T07:08:00.119552+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "비전 안내 청킹이 필요한 전부: 다중 모달 문서 이해 기능을 강화하는 RAG",
+      "abstract": "검색-증강 생성 (RAG) 시스템은 정보 검색과 질문 응답을 혁신적으로 바꿨지만, 복잡한 문서 구조, 다중 페이지 표, 포함된 그림, 그리고 페이지 경계를 넘나드는 문맥적 의존성과 호환되지 않는 전통적인 텍스트 기반 청킹 방법들이 어려움을 겪고 있습니다. 우리는 대형 다중 모달 모델(LMMs)을 활용한 신규 다중 모달 문서 청킹 접근 방식을 제안하여 PDF 문서를 일괄 처리하면서 의미론적 일관성과 구조적 통합을 유지합니다. 우리의 방법은 교차 배치 문맥 보존을 가능케 하여 구성 가능한 페이지 배치에서 문서를 처리하여 여러 페이지에 걸친 표, 포함된 시각적 요소, 절차적 내용을 정확히 처리할 수 있습니다. 우리는 수동으로 작성된 쿼리를 사용한 PDF 문서의 선별된 데이터셋에서 접근 방식을 평가하여 청킹 품질과 하류 RAG 성능의 향상을 보여줍니다. 우리의 비전 안내 접근 방식은 전통적인 보통 RAG 시스템에 비해 더 나은 정확도를 달성하며, 질적 분석을 통해 문서 구조와 의미론적 일관성의 탁월한 보존을 입증합니다."
+    },
+    "summary": "1. RAG 시스템의 문서 이해 기능 향상을 위해 LMMs를 활용한 새로운 다중 모달 문서 청킹 방식을 제안함.\n2. 쿼리가 수동으로 작성된 PDF 문서 데이터셋에서 우리의 방법을 평가하여 청킹 품질과 RAG 성능 개선을 입증함.\n3. 비전 안내 접근 방식은 전통적인 RAG 시스템에 비해 더 나은 정확도를 달성하고 문서 구조와 의미론적 일관성을 효율적으로 보존함.",
+    "categories": [
+      "Multimodal",
+      "NLP",
+      "Vision"
+    ]
+  },
+  {
+    "title": "OmniGen2: Exploration to Advanced Multimodal Generation",
+    "abstract": "In this work, we introduce OmniGen2, a versatile and open-source generative\nmodel designed to provide a unified solution for diverse generation tasks,\nincluding text-to-image, image editing, and in-context generation. Unlike\nOmniGen v1, OmniGen2 features two distinct decoding pathways for text and image\nmodalities, utilizing unshared parameters and a decoupled image tokenizer. This\ndesign enables OmniGen2 to build upon existing multimodal understanding models\nwithout the need to re-adapt VAE inputs, thereby preserving the original text\ngeneration capabilities. To facilitate the training of OmniGen2, we developed\ncomprehensive data construction pipelines, encompassing image editing and\nin-context generation data. Additionally, we introduce a reflection mechanism\ntailored for image generation tasks and curate a dedicated reflection dataset\nbased on OmniGen2. Despite its relatively modest parameter size, OmniGen2\nachieves competitive results on multiple task benchmarks, including\ntext-to-image and image editing. To further evaluate in-context generation,\nalso referred to as subject-driven tasks, we introduce a new benchmark named\nOmniContext. OmniGen2 achieves state-of-the-art performance among open-source\nmodels in terms of consistency. We will release our models, training code,\ndatasets, and data construction pipeline to support future research in this\nfield. Project Page: https://vectorspacelab.github.io/OmniGen2; GitHub Link:\nhttps://github.com/VectorSpaceLab/OmniGen2",
+    "authors": [
+      "Chenyuan Wu",
+      "Pengfei Zheng",
+      "Ruiran Yan",
+      "Shitao Xiao",
+      "Xin Luo",
+      "Yueze Wang",
+      "Wanli Li",
+      "Xiyan Jiang",
+      "Yexin Liu",
+      "Junjie Zhou",
+      "Ze Liu",
+      "Ziyi Xia",
+      "Chaofan Li",
+      "Haoge Deng",
+      "Jiahao Wang",
+      "Kun Luo",
+      "Bo Zhang",
+      "Defu Lian",
+      "Xinlong Wang",
+      "Zhongyuan Wang",
+      "Tiejun Huang",
+      "Zheng Liu"
+    ],
+    "likes": 65,
+    "published_date": "Jun 23",
+    "url": "https://huggingface.co/papers/2506.18871",
+    "date_collected": "2025-06-27T07:08:00.121390+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "OmniGen2: 고급 멀티모달 생성을 위한 탐색",
+      "abstract": "본 연구에서는 다양한 생성 작업을 위한 통합 솔루션을 제공하기 위해 설계된 다재다능하고 오픈 소스 생성 모델인 OmniGen2를 소개합니다. 텍스트-이미지, 이미지 편집, 문맥 생성을 포함하는 다양한 생성 과제에 대한 통합적인 솔루션을 제공하기 위한 두 개의 디코딩 경로를 갖춘 OmniGen2는 기존의 멀티모달 이해 모델을 기반으로 하여 텍스트 생성 능력을 보존하는 기능을 제공합니다."
+    },
+    "summary": "1. OmniGen2는 텍스트와 이미지 모드에 대해 서로 다른 디코딩 경로를 사용하며, 기존 VAE 입력을 다시 적응할 필요 없이 원본 텍스트 생성 능력을 보존하는 기능을 갖추고 있습니다.\n2. OmniGen2는 이미지 편집 및 문맥 생성 데이터를 포함한 포괄적인 데이터 구축 파이프라인을 개발했으며, 이미지 생성 작업을 위한 reflection 메커니즘과 전용 reflection 데이터셋을 소개하였습니다.\n3. OmniGen2는 텍스트에서 이미지로, 이미지 편집까지 다양한 작업에서 경쟁력 있는 결과를 달성하며, 새로운 벤치마크 OmniContext에서 뛰어난 성능을 보입니다.",
+    "categories": [
+      "Multimodal",
+      "NLP"
+    ]
+  },
+  {
+    "title": "PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and\n  Quantized Attention in Visual Generation Models",
+    "abstract": "In visual generation, the quadratic complexity of attention mechanisms\nresults in high memory and computational costs, especially for longer token\nsequences required in high-resolution image or multi-frame video generation. To\naddress this, prior research has explored techniques such as sparsification and\nquantization. However, these techniques face significant challenges under low\ndensity and reduced bitwidths. Through systematic analysis, we identify that\nthe core difficulty stems from the dispersed and irregular characteristics of\nvisual attention patterns. Therefore, instead of introducing specialized\nsparsification and quantization design to accommodate such patterns, we propose\nan alternative strategy: *reorganizing* the attention pattern to alleviate the\nchallenges. Inspired by the local aggregation nature of visual feature\nextraction, we design a novel **Pattern-Aware token ReOrdering (PARO)**\ntechnique, which unifies the diverse attention patterns into a\nhardware-friendly block-wise pattern. This unification substantially simplifies\nand enhances both sparsification and quantization. We evaluate the\nperformance-efficiency trade-offs of various design choices and finalize a\nmethodology tailored for the unified pattern. Our approach, **PAROAttention**,\nachieves video and image generation with lossless metrics, and nearly identical\nresults from full-precision (FP) baselines, while operating at notably lower\ndensity (~20%-30%) and bitwidth (**INT8/INT4**), achieving a **1.9x** to\n**2.7x** end-to-end latency speedup.",
+    "authors": [
+      "Tianchen Zhao",
+      "Ke Hong",
+      "Xinhao Yang",
+      "Xuefeng Xiao",
+      "Huixia Li",
+      "Feng Ling",
+      "Ruiqi Xie",
+      "Siqi Chen",
+      "Hongyu Zhu",
+      "Yichong Zhang",
+      "Yu Wang"
+    ],
+    "likes": 55,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2506.16054",
+    "date_collected": "2025-06-27T07:08:00.122809+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "효율적인 희박 및 양자화 주의를 위한 패턴 인식 기반 재배치 모델",
+      "abstract": "시각 생성에서, 주요 메커니즘의 이차 복잡성은 고해상도 이미지 또는 다중 프레임 비디오 생성에 필요한 긴 토큰 시퀀스에 대해 높은 메모리 및 계산 비용으로 이어집니다. 이를 해결하기 위해, 이전 연구에서는 희소화(sparsification)와 양자화(quantization) 기술을 탐구해왔습니다. 그러나 이러한 기술은 낮은 밀도와 축소된 비트폭에서 중요한 도전에 직면합니다. 체계적인 분석을 통해 우리는 시각 주의 패턴의 분산되고 불규칙한 특성이 핵심 어려움임을 확인합니다. 이에 우리는 이러한 패턴을 수용하기 위해 특별한 희소화와 양자화 설계를 도입하는 대신, 도전을 완화하기 위해 주의 패턴을 재조정하는 대안 전략을 제안합니다. 시각적 특징 추출의 지역 집계 특성에서 영감을 받아, 우리는 다양한 주의 패턴을 하드웨어 친화적인 블록 방식 패턴으로 통합하는 혁신적인 \"패턴 인식 토큰 재배치 (PARO)\" 기술을 설계했습니다. 이 통합은 희소화와 양자화를 크게 단순화하고 강화합니다. 우리는 다양한 설계 선택의 성능-효율성의 상충관계를 평가하고 통합된 패턴에 특화된 방법론을 확정했습니다. 우리의 \"PAROAttention\" 접근법은 손실 메트릭으로 비디오 및 이미지 생성을 달성하며, 극히 낮은 밀도 (~20%-30%)와 비트폭(INT8/INT4)에서 작동하면서 거의 정밀 베이스라인과 동일한 결과를 달성하며 **1.9배**에서 **2.7배**의 종단-종단 지연 시간 가속도를 달성합니다."
+    },
+    "summary": "1. 시각 생성에서 발생하는 높은 메모리 및 계산 비용을 완화하기 위해 주의 패턴을 재배치하는 \"PAROAttention\" 모델이 제안되었습니다.\n2. \"PAROAttention\" 모델은 시각적 주의 패턴을 하드웨어 친화적인 블록 방식으로 통합하여 희소화와 양자화를 단순화하고 강화합니다.\n3. 이 모델은 손실 메트릭을 갖는 비디오 및 이미지 생성을 가능하게 하며, 낮은 밀도와 비트폭에서 빠른 작동을 보장하여 정밀 베이스라인과 비슷한 결과를 달성합니다.",
+    "categories": [
+      "Computer Vision",
+      "Optimization",
+      "AI (인공지능)"
+    ]
+  },
+  {
+    "title": "ShareGPT-4o-Image: Aligning Multimodal Models with GPT-4o-Level Image\n  Generation",
+    "abstract": "Recent advances in multimodal generative models have unlocked photorealistic,\ninstruction-aligned image generation, yet leading systems like GPT-4o-Image\nremain proprietary and inaccessible. To democratize these capabilities, we\npresent ShareGPT-4o-Image, the first dataset comprising 45K text-to-image and\n46K text-and-image-to-image data, all synthesized using GPT-4o's image\ngeneration capabilities for distilling its advanced image generation abilities.\nLeveraging this dataset, we develop Janus-4o, a multimodal large language model\ncapable of both text-to-image and text-and-image-to-image generation. Janus-4o\nnot only significantly improves text-to-image generation over its predecessor,\nJanus-Pro, but also newly supports text-and-image-to-image generation. Notably,\nit achieves impressive performance in text-and-image-to-image generation from\nscratch, using only 91K synthetic samples and 6 hours of training on an 8\nA800-GPU machine. We hope the release of ShareGPT-4o-Image and Janus-4o will\nfoster open research in photorealistic, instruction-aligned image generation.",
+    "authors": [
+      "Junying Chen",
+      "Zhenyang Cai",
+      "Pengcheng Chen",
+      "Shunian Chen",
+      "Ke Ji",
+      "Xidong Wang",
+      "Yunjin Yang",
+      "Benyou Wang"
+    ],
+    "likes": 53,
+    "published_date": "Jun 22",
+    "url": "https://huggingface.co/papers/2506.18095",
+    "date_collected": "2025-06-27T07:08:00.124077+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "다중 모달 모델을 GPT-4o 수준의 이미지 생성과 조율하는 ShareGPT-4o-Image",
+      "abstract": "최근 다중 모달 생성 모델의 발전으로 사실적인 이미지 생성이 가능해졌지만, GPT-4o-Image와 같은 선도적인 시스템은 사유적이고 접근하기 어렵다. 이 능력을 더 많은 사람들에게 알리기 위해, 우리는 GPT-4o의 이미지 생성 능력을 요약하기 위해 45,000개의 텍스트-이미지 및 46,000개의 텍스트-이미지 데이터를 포함한 첫 번째 데이터셋인 ShareGPT-4o-Image를 제시한다. 이 데이터셋을 활용하여, 우리는 텍스트-이미지 및 텍스트-이미지-이미지 생성이 가능한 다중 모달 대형 언어 모델인 Janus-4o를 개발한다. Janus-4o는 자신의 이전 버전 Janus-Pro보다 텍스트-이미지 생성을 크게 개선할 뿐만 아니라 텍스트-이미지-이미지 생성도 지원한다. 특히, 91,000개의 합성 샘플과 8 A800-GPU 기계에서 6시간의 교육만으로 천재적인 성능의 텍스트-이미지-이미지 생성을 이룬다. ShareGPT-4o-Image와 Janus-4o의 공개를 통해 사실적이고 조율된 이미지 생성에 대한 연구를 촉진할 것으로 기대한다."
+    },
+    "summary": "1. ShareGPT-4o-Image는 GPT-4o의 이미지 생성 능력을 담은 데이터셋으로, Janus-4o와 같은 다중 모달 대형 언어 모델을 발전시킴.\n2. Janus-4o는 텍스트-이미지 생성에 탁월한 성과를 보이며, 텍스트-이미지-이미지 생성을 지원하며 합성 샘플과 짧은 교육 시간으로 높은 성능을 달성함.\n3. ShareGPT-4o-Image와 Janus-4o의 발표가 사실적이고 조율된 이미지 생성에 대한 공개 연구를 촉진할 것으로 기대됨.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo\n  Retouching Agent",
+    "abstract": "Photo retouching has become integral to contemporary visual storytelling,\nenabling users to capture aesthetics and express creativity. While professional\ntools such as Adobe Lightroom offer powerful capabilities, they demand\nsubstantial expertise and manual effort. In contrast, existing AI-based\nsolutions provide automation but often suffer from limited adjustability and\npoor generalization, failing to meet diverse and personalized editing needs. To\nbridge this gap, we introduce JarvisArt, a multi-modal large language model\n(MLLM)-driven agent that understands user intent, mimics the reasoning process\nof professional artists, and intelligently coordinates over 200 retouching\ntools within Lightroom. JarvisArt undergoes a two-stage training process: an\ninitial Chain-of-Thought supervised fine-tuning to establish basic reasoning\nand tool-use skills, followed by Group Relative Policy Optimization for\nRetouching (GRPO-R) to further enhance its decision-making and tool\nproficiency. We also propose the Agent-to-Lightroom Protocol to facilitate\nseamless integration with Lightroom. To evaluate performance, we develop\nMMArt-Bench, a novel benchmark constructed from real-world user edits.\nJarvisArt demonstrates user-friendly interaction, superior generalization, and\nfine-grained control over both global and local adjustments, paving a new\navenue for intelligent photo retouching. Notably, it outperforms GPT-4o with a\n60% improvement in average pixel-level metrics on MMArt-Bench for content\nfidelity, while maintaining comparable instruction-following capabilities.\nProject Page: https://jarvisart.vercel.app/.",
+    "authors": [
+      "Yunlong Lin",
+      "Zixu Lin",
+      "Kunjie Lin",
+      "Jinbin Bai",
+      "Panwang Pan",
+      "Chenxin Li",
+      "Haoyu Chen",
+      "Zhongdao Wang",
+      "Xinghao Ding",
+      "Wenbo Li",
+      "Shuicheng Yan"
+    ],
+    "likes": 53,
+    "published_date": "Jun 21",
+    "url": "https://huggingface.co/papers/2506.17612",
+    "date_collected": "2025-06-27T07:08:00.125896+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "자비스아트: 지능적인 사진 보정 에이전트를 통해 인간의 예술적 창의력 해방하기",
+      "abstract": "사진 보정은 현대적 시각적 스토리텔링에 중요한 요소로 자리 잡았으며 사용자들이 미학을 담아 창의성을 표현할 수 있도록 합니다. Adobe Lightroom과 같은 프로페셔널한 도구들은 강력한 기능을 제공하지만 상당한 숙련과 수동 노력을 요구합니다. 기존의 AI 솔루션들은 자동화를 제공하지만 종종 제한된 조정 능력과 풍부한 일반화를 잃어 다양하고 개인화된 편집 요구를 충족시키지 못합니다. 이 간극을 좁히기 위해, 사용자 의도를 이해하고 전문 예술가의 추론 과정을 흉내내며 Lightroom 내에서 200여 가지 이상의 보정 도구를 지능적으로 조정하는 멀티모달 대규모 언어 모델(MLLM)을 활용한 자비스아트를 소개합니다. 자비스아트는 사용자의 기본적인 추론 및 도구 사용 기술을 확립하기 위한 초기 Chain-of-Thought 감독된 미세 조정을 거친 후, 결정력과 도구 숙련도를 더 향상시키기 위한 Retouching을 위한 Group Relative Policy Optimization (GRPO-R)를 진행합니다. 또한 자비스아트를 Lightroom과의 원활한 통합을 위한 에이전트-투-라이트룸 프로토콜을 제안합니다. 성능 평가를 위해 실제 사용자 편집으로 구성된 새로운 기준인 MMArt-Bench를 개발했습니다. 자비스아트는 사용자 친화적 상호작용, 우수한 일반화 능력, 그리고 전역적 및 지역적 조절에 대한 세밀한 통제를 보여줌으로써 지능적인 사진 보정을 위한 새로운 길을 열어갑니다. 특히, 컨텐츠 충실도에 대한 MMArt-Bench의 평균 픽셀 수준 지표에서 GPT-4o를 60% 개선하여 일치 지시 능력은 유지하면서 우수한 성과를 거두었습니다."
+    },
+    "summary": "1. 자비스아트는 멀티모달 대규모 언어 모델(MLLM)을 활용하여 사용자의 의도를 이해하고 전문 예술가의 추론 과정을 모방하여 지능적으로 보정 도구를 조정합니다.\n2. 자비스아트는 Chain-of-Thought 감독된 미세 조정과 Retouching을 위한 Group Relative Policy Optimization (GRPO-R) 두 단계의 교육 과정을 거쳐 사용자에게 우수한 일반화 능력과 편집 조절 기능을 제공합니다.\n3. MMArt-Bench를 통한 성능 평가에서 자비스아트는 사용자 친화적 상호작용과 GPT-4o 대비 60% 향상된 평균 픽셀 수준 지표를 보여주며, 지능적인 사진 보정을 위한 새로운 가능성을 제시합니다.",
+    "categories": [
+      "MLLM (대규모 언어 모델)",
+      "Vision (컴퓨터 비전)"
+    ]
+  },
+  {
+    "title": "Matrix-Game: Interactive World Foundation Model",
+    "abstract": "We introduce Matrix-Game, an interactive world foundation model for\ncontrollable game world generation. Matrix-Game is trained using a two-stage\npipeline that first performs large-scale unlabeled pretraining for environment\nunderstanding, followed by action-labeled training for interactive video\ngeneration. To support this, we curate Matrix-Game-MC, a comprehensive\nMinecraft dataset comprising over 2,700 hours of unlabeled gameplay video clips\nand over 1,000 hours of high-quality labeled clips with fine-grained keyboard\nand mouse action annotations. Our model adopts a controllable image-to-world\ngeneration paradigm, conditioned on a reference image, motion context, and user\nactions. With over 17 billion parameters, Matrix-Game enables precise control\nover character actions and camera movements, while maintaining high visual\nquality and temporal coherence. To evaluate performance, we develop GameWorld\nScore, a unified benchmark measuring visual quality, temporal quality, action\ncontrollability, and physical rule understanding for Minecraft world\ngeneration. Extensive experiments show that Matrix-Game consistently\noutperforms prior open-source Minecraft world models (including Oasis and\nMineWorld) across all metrics, with particularly strong gains in\ncontrollability and physical consistency. Double-blind human evaluations\nfurther confirm the superiority of Matrix-Game, highlighting its ability to\ngenerate perceptually realistic and precisely controllable videos across\ndiverse game scenarios. To facilitate future research on interactive\nimage-to-world generation, we will open-source the Matrix-Game model weights\nand the GameWorld Score benchmark at https://github.com/SkyworkAI/Matrix-Game.",
+    "authors": [
+      "Yifan Zhang",
+      "Chunli Peng",
+      "Boyang Wang",
+      "Puyi Wang",
+      "Qingcheng Zhu",
+      "Fei Kang",
+      "Biao Jiang",
+      "Zedong Gao",
+      "Eric Li",
+      "Yang Liu",
+      "Yahui Zhou"
+    ],
+    "likes": 51,
+    "published_date": "Jun 23",
+    "url": "https://huggingface.co/papers/2506.18701",
+    "date_collected": "2025-06-27T07:08:00.127336+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "상호작용하는 세계 기초 모델: Matrix-Game",
+      "abstract": "Matrix-Game은 조절 가능한 게임 세계 생성을 위한 상호작용하는 세계 기초 모델로, 대규모 미타깃 데이터 사전 훈련을 거친 후 상호작용 비디오 생성을 위한 행동 레이블 데이터로 학습됩니다. Matrix-Game은 명확한 캐릭터 행동 및 카메라 이동 제어를 제공하며 시각적 품질과 시간적 일관성을 유지합니다."
+    },
+    "summary": "1. Matrix-Game은 대규모 Minecraft 데이터셋을 활용하여, 시각적 품질, 시간적 품질, 행동 제어성, 물리적 규칙 이해를 측정하는 통합된 평가 지표인 GameWorld Score를 개발했으며, 여러 실험에서 이전 Minecraft 모델(Oasis, MineWorld 등)을 능가하는 결과를 보여줍니다.\n2. 모델은 순간 이미지, 움직임 맥락, 사용자 행동에 의해 조건화되는 조절 가능한 이미지-세계 생성 패러다임을 채택하여, 다양한 게임 시나리오에서 현실적이고 정확하게 조절 가능한 비디오 생성 능력을 강조합니다.\n3. Matrix-Game은 17억 개의 파라미터로 구성되어 있으며, 미래 연구를 위해 해당 모델 가중치와 GameWorld Score 벤치마크를 공개할 계획입니다.",
+    "categories": [
+      "강화학습",
+      "컴퓨터 비전"
+    ]
+  },
+  {
+    "title": "AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion\n  Models",
+    "abstract": "We present AnimaX, a feed-forward 3D animation framework that bridges the\nmotion priors of video diffusion models with the controllable structure of\nskeleton-based animation. Traditional motion synthesis methods are either\nrestricted to fixed skeletal topologies or require costly optimization in\nhigh-dimensional deformation spaces. In contrast, AnimaX effectively transfers\nvideo-based motion knowledge to the 3D domain, supporting diverse articulated\nmeshes with arbitrary skeletons. Our method represents 3D motion as multi-view,\nmulti-frame 2D pose maps, and enables joint video-pose diffusion conditioned on\ntemplate renderings and a textual motion prompt. We introduce shared positional\nencodings and modality-aware embeddings to ensure spatial-temporal alignment\nbetween video and pose sequences, effectively transferring video priors to\nmotion generation task. The resulting multi-view pose sequences are\ntriangulated into 3D joint positions and converted into mesh animation via\ninverse kinematics. Trained on a newly curated dataset of 160,000 rigged\nsequences, AnimaX achieves state-of-the-art results on VBench in\ngeneralization, motion fidelity, and efficiency, offering a scalable solution\nfor category-agnostic 3D animation. Project page:\nhttps://anima-x.github.io/{https://anima-x.github.io/}.",
+    "authors": [
+      "Zehuan Huang",
+      "Haoran Feng",
+      "Yangtian Sun",
+      "Yuanchen Guo",
+      "Yanpei Cao",
+      "Lu Sheng"
+    ],
+    "likes": 49,
+    "published_date": "Jun 24",
+    "url": "https://huggingface.co/papers/2506.19851",
+    "date_collected": "2025-06-27T07:08:00.128556+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "AnimaX: 3D에서 관절 비디오-자세 확산 모델로 무생물을 움직이게 하기",
+      "abstract": "AnimaX는 비디오 확산 모델의 동작 선행 지식을 관절 기반 애니메이션의 제어 가능한 구조와 연결하는 3D 애니메이션 프레임워크입니다. 우리의 방법은 다양한 관절 망을 지원하면서도 비디오 기반 동작 지식을 효과적으로 3D 영역으로 전달하는데 성공하였습니다."
+    },
+    "summary": "1. AnimaX는 고정된 골격 체계에 제한된 전통적인 동작 합성 방법과 달리, 비용이 많이 드는 최적화를 요구하지 않으면서도 비디오 기반 동작 지식을 3D 도메인으로 효과적으로 전달합니다.\n2. 우리의 방법은 3D 동작을 다양한 관절 망과 임의의 골격으로 표현하는데, 이를 위해 멀티뷰, 멀티프레임 2D 자세 맵을 사용합니다.\n3. AnimaX는 새롭게 구성된 160,000개의 리깅된 시퀀스 데이터셋에서 훈련되었으며, 일반화, 동작 충실도 및 효율성 면에서 VBench에서 최첨단 결과를 달성하며 범주에 구애받지 않는 3D 애니메이션에 확장 가능한 솔루션을 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement\n  Learning",
+    "abstract": "Ultra-long generation by large language models (LLMs) is a widely demanded\nscenario, yet it remains a significant challenge due to their maximum\ngeneration length limit and overall quality degradation as sequence length\nincreases. Previous approaches, exemplified by LongWriter, typically rely on\n''teaching'', which involves supervised fine-tuning (SFT) on synthetic\nlong-form outputs. However, this strategy heavily depends on synthetic SFT\ndata, which is difficult and costly to construct, often lacks coherence and\nconsistency, and tends to be overly artificial and structurally monotonous. In\nthis work, we propose an incentivization-based approach that, starting entirely\nfrom scratch and without relying on any annotated or synthetic data, leverages\nreinforcement learning (RL) to foster the emergence of ultra-long, high-quality\ntext generation capabilities in LLMs. We perform RL training starting from a\nbase model, similar to R1-Zero, guiding it to engage in reasoning that\nfacilitates planning and refinement during the writing process. To support\nthis, we employ specialized reward models that steer the LLM towards improved\nlength control, writing quality, and structural formatting. Experimental\nevaluations show that our LongWriter-Zero model, trained from Qwen2.5-32B,\nconsistently outperforms traditional SFT methods on long-form writing tasks,\nachieving state-of-the-art results across all metrics on WritingBench and\nArena-Write, and even surpassing 100B+ models such as DeepSeek R1 and\nQwen3-235B. We open-source our data and model checkpoints under\nhttps://huggingface.co/THU-KEG/LongWriter-Zero-32B",
+    "authors": [
+      "Yuhao Wu",
+      "Yushi Bai",
+      "Zhiqiang Hu",
+      "Roy Ka-Wei Lee",
+      "Juanzi Li"
+    ],
+    "likes": 47,
+    "published_date": "Jun 23",
+    "url": "https://huggingface.co/papers/2506.18841",
+    "date_collected": "2025-06-27T07:08:00.129709+09:00",
+    "week": "2025-W26",
+    "translation": {
+      "title": "LongWriter-Zero: 강화 학습을 통한 초정밀 장문 텍스트 생성 마스터링",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)에 의한 초장문 생성은 많이 요구되지만, 시퀀스 길이가 증가함에 따라 생성 길이 제한과 전반적인 품질 저하로 인해 상당한 어려움이 남아 있습니다. 본 연구에서는 주석이나 합성 데이터에 의존하지 않고 처음부터 시작하여 강화 학습을 활용해 LLMs에서 초장문이며 높은 품질의 텍스트 생성 능력이 발현되도록 하는 고밀도화 기반 접근법을 제안합니다. LongWriter-Zero 모델은 WritingBench와 Arena-Write에서 모든 메트릭에서 최고 성능을 달성하며 DeepSeek R1과 Qwen3-235B와 같은 100B+ 모델을 능가했습니다."
+    },
+    "summary": "1. LongWriter-Zero는 강화 학습을 이용하여 주석이나 합성 데이터에 의존하지 않고 초장문이며 높은 품질의 텍스트 생성 능력을 갖추게 합니다.\n2. 이 모델은 WritingBench와 Arena-Write에서 다양한 메트릭에서 최고 수준의 결과를 보여주며, 기존의 SFT 방법을 능가합니다.\n3. LongWriter-Zero는 Qwen2.5-32B에서 훈련되었으며, 데이터와 모델 체크포인트는 오픈소스로 공개되어 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM (대규모 언어 모델)"
+    ]
+  }
+]

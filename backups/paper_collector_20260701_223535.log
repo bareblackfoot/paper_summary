@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Jun 30 22:33:33 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W27
+URL: https://huggingface.co/papers/week/2026-W27
+Found 10 papers in weekly view
+Fetching likes for: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Fetching likes for: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Fetching likes for: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Fetching likes for: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Fetching likes for: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Fetching likes for: TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents
+Fetching likes for: ReFreeKV: Towards Threshold-Free KV Cache Compression
+Fetching likes for: Qwen-Image-2.0-RL Technical Report
+Fetching likes for: Beyond IID: How General Are Tabular Foundation Models, Really?
+Fetching likes for: Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots
+Selected top 10 papers by likes:
+1. Agentic Abstention: Do Agents Know When to Stop Instead of Act? (120 likes)
+2. LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing (70 likes)
+3. Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent (67 likes)
+4. Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs (52 likes)
+5. PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation (45 likes)
+6. TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents (44 likes)
+7. ReFreeKV: Towards Threshold-Free KV Cache Compression (43 likes)
+8. Qwen-Image-2.0-RL Technical Report (42 likes)
+9. Beyond IID: How General Are Tabular Foundation Models, Really? (36 likes)
+10. Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots (35 likes)
+Found abstract: LLM agents are expected to act over multiple turns, using search, browsing interfaces, and terminal ...
+Processed paper: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Found abstract: Streaming video editing has made rapid progress, yet practical deployment is still limited by two co...
+Processed paper: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Found abstract: We introduce Agents-A1, a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level...
+Processed paper: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Found abstract: We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprisin...
+Processed paper: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Found abstract: Video generation models have emerged as a promising paradigm for embodied world simulation. However,...
+Processed paper: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Found abstract: As large language models and harness frameworks continue to advance, agents operating in terminals a...
+Processed paper: TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents
+Found abstract: To reduce memory consumption during LLM inference, a handful of methods have been proposed for KV ca...
+Processed paper: ReFreeKV: Towards Threshold-Free KV Cache Compression
+Found abstract: We present Qwen-Image-2.0-RL, a post-training pipeline that applies reinforcement learning from huma...
+Processed paper: Qwen-Image-2.0-RL Technical Report
+Found abstract: Foundation models for predictive machine learning on tabular data have recently gained significant t...
+Processed paper: Beyond IID: How General Are Tabular Foundation Models, Really?
+Found abstract: We study whether we can learn novel manipulation skills from human actions to a bi-manual robot with...
+Processed paper: Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  36
+Update date_collected: 2026-07-01T07:33:41.634027+09:00  ->  2026-06-30T07:29:40.698067+09:00
+
+Processing paper 5/10
+Title: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  39
+Update date_collected: 2026-07-01T07:33:41.636840+09:00  ->  2026-06-30T07:29:40.695795+09:00
+
+Processing paper 6/10
+Title: TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: ReFreeKV: Towards Threshold-Free KV Cache Compression
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Qwen-Image-2.0-RL Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  27
+Update date_collected: 2026-07-01T07:33:41.645207+09:00  ->  2026-06-30T07:29:40.703995+09:00
+
+Processing paper 9/10
+Title: Beyond IID: How General Are Tabular Foundation Models, Really?
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots
+Paper already exists, checking if translation is complete...
+Update likes: 35  ->  32
+Update date_collected: 2026-07-01T07:33:41.650276+09:00  ->  2026-06-30T07:29:40.700880+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W27.json...
+
+Updating Notion database...
+Creating new paper: 의도적 절제: 에이전트들은 행동을 멈출 때를 알까?
+Creating new paper: 실시간 확산 기반 스트리밍 비디오 편집을 향하여
+Creating new paper: 파라미터를 확장하지 않고 수평을 넓히다: 35B 에이전트로 조 야 니언 파라미터 성능 달성
+Updating paper: 숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리 (likes: 36 -> 52)
+Updating paper: 로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing (likes: 39 -> 45)
+Creating new paper: 일반 목적 터미널 사용 에이전트를 위한 벤치마크: TUA-Bench
+Creating new paper: 임계값 없는 KV 캐시 압축을 향하여: ReFreeKV
+Updating paper: Qwen-Image-2.0-RL 기술 보고서 (likes: 27 -> 42)
+Creating new paper: IID 너머: 탭러 데이터 기반 모델의 일반성은 정말로 얼마나 일반적인가?
+Updating paper: 인간으로부터 로봇으로의 조작 기술 전이를 위한 다리 역할로서의 번역 (likes: 32 -> 35)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jun 30 22:35:10 UTC 2026 ===
+

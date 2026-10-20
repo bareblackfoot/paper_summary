@@ -1,0 +1,348 @@
+[
+  {
+    "title": "RPG: A Repository Planning Graph for Unified and Scalable Codebase\n  Generation",
+    "abstract": "Large language models excel at function- and file-level code generation, yet\ngenerating complete repositories from scratch remains a fundamental challenge.\nThis process demands coherent and reliable planning across proposal- and\nimplementation-level stages, while natural language, due to its ambiguity and\nverbosity, is ill-suited for faithfully representing complex software\nstructures. To address this, we introduce the Repository Planning Graph (RPG),\na persistent representation that unifies proposal- and implementation-level\nplanning by encoding capabilities, file structures, data flows, and functions\nin one graph. RPG replaces ambiguous natural language with an explicit\nblueprint, enabling long-horizon planning and scalable repository generation.\nBuilding on RPG, we develop ZeroRepo, a graph-driven framework for repository\ngeneration from scratch. It operates in three stages: proposal-level planning\nand implementation-level refinement to construct the graph, followed by\ngraph-guided code generation with test validation. To evaluate this setting, we\nconstruct RepoCraft, a benchmark of six real-world projects with 1,052 tasks.\nOn RepoCraft, ZeroRepo produces repositories averaging nearly 36K LOC, roughly\n3.9times the strongest baseline (Claude Code) and about 64times other\nbaselines. It attains 81.5% functional coverage and a 69.7% pass rate,\nexceeding Claude Code by 27.3 and 35.8 percentage points, respectively. Further\nanalysis shows that RPG models complex dependencies, enables progressively more\nsophisticated planning through near-linear scaling, and enhances LLM\nunderstanding of repositories, thereby accelerating agent localization.",
+    "authors": [
+      "Jane Luo",
+      "Xin Zhang",
+      "Steven Liu",
+      "Jie Wu",
+      "Yiming Huang",
+      "Yangyu Huang",
+      "Chengyu Yin",
+      "Ying Xin",
+      "Jianfeng Liu",
+      "Yuefeng Zhan",
+      "Hao Sun",
+      "Qi Chen",
+      "Scarlett Li",
+      "Mao Yang"
+    ],
+    "likes": 98,
+    "published_date": "Sep 19",
+    "url": "https://huggingface.co/papers/2509.16198",
+    "date_collected": "2025-09-24T07:07:45.734114+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "RPG: 통합 및 확장 가능한 코드베이스 생성을 위한 저장소 계획 그래프",
+      "abstract": "대규모 언어 모델은 기능 및 파일 수준의 코드 생성에서 뛰어나지만, 처음부터 완전한 저장소를 생성하는 것은 여전히 기본적인 도전 과제입니다. 이 프로세스는 제안 및 구현 수준 단계에서 일관된 신뢰성 있는 계획을 요구하며, 복잡한 소프트웨어 구조를 정확하게 표현하는 데는 자연어가 적합하지 않습니다. 이를 해결하기 위해 우리는 저장소 계획 그래프(RPG)를 도입합니다. RPG는 능력, 파일 구조, 데이터 흐름 및 함수를 하나의 그래프에 인코딩하여 제안 및 구현 수준의 계획을 통합합니다. RPG는 모호한 자연어를 명시적인 청사진으로 대체함으로써 장기 계획과 확장 가능한 저장소 생성을 가능하게 합니다. RPG를 기반으로 우리는 ZeroRepo를 개발했습니다. ZeroRepo는 제안 수준의 계획 및 구현 수준의 수정을 통해 그래프를 구성하고, 테스트 유효성 검증을 진행한 후 코드 생성을 그래프로 안내합니다. 이 설정을 평가하기 위해 1,052개의 작업이 있는 6개의 실제 프로젝트로 이루어진 RepoCraft를 구성했습니다. RepoCraft에서 ZeroRepo는 거의 평균 36,000줄의 LOC를 생성하며, Claude Code의 강력한 베이스라인의 약 3.9배에 달하며 다른 베이스라인의 약 64배에 달합니다. 그것은 81.5%의 기능적 커버리지와 69.7%의 통과율을 달성하여 Claude Code보다 각각 27.3 및 35.8 백분율 포인트를 능가합니다. 추가 분석 결과, RPG는 복잡한 의존성을 모델링하며 거의 선형적인 스케일링을 통해 점진적으로 더 정교한 계획을 가능케하며, 저장소의 LLM 이해를 향상시킴으로써 에이전트 위치 지정을 가속화합니다."
+    },
+    "summary": "1. RPG는 제안 및 구현 수준의 계획을 통합하여 저장소 생성을 가능케하는 저장소 계획 그래프이다.\n2. ZeroRepo는 그래프 기반 프레임워크로, 실제 프로젝트에서 강력한 저장소 생성 능력을 보여준다.\n3. ZeroRepo는 기능적 커버리지 및 통과율을 향상시키며, RPG는 저장소의 복잡한 의존성을 모델링하여 에이전트 위치 지정을 가속화한다.",
+    "categories": [
+      "LLM",
+      "기타"
+    ]
+  },
+  {
+    "title": "LIMI: Less is More for Agency",
+    "abstract": "We define Agency as the emergent capacity of AI systems to function as\nautonomous agents actively discovering problems, formulating hypotheses, and\nexecuting solutions through self-directed engagement with environments and\ntools. This fundamental capability marks the dawn of the Age of AI Agency,\ndriven by a critical industry shift: the urgent need for AI systems that don't\njust think, but work. While current AI excels at reasoning and generating\nresponses, industries demand autonomous agents that can execute tasks, operate\ntools, and drive real-world outcomes. As agentic intelligence becomes the\ndefining characteristic separating cognitive systems from productive workers,\nefficiently cultivating machine autonomy becomes paramount. Current approaches\nassume that more data yields better agency, following traditional scaling laws\nfrom language modeling. We fundamentally challenge this paradigm. LIMI (Less Is\nMore for Intelligent Agency) demonstrates that agency follows radically\ndifferent development principles. Through strategic focus on collaborative\nsoftware development and scientific research workflows, we show that\nsophisticated agentic intelligence can emerge from minimal but strategically\ncurated demonstrations of autonomous behavior. Using only 78 carefully designed\ntraining samples, LIMI achieves 73.5% on comprehensive agency benchmarks,\ndramatically outperforming state-of-the-art models: Kimi-K2-Instruct (24.1%),\nDeepSeek-V3.1 (11.9%), Qwen3-235B-A22B-Instruct (27.5%), and GLM-4.5 (45.1%).\nMost strikingly, LIMI demonstrates 53.7% improvement over models trained on\n10,000 samples-achieving superior agentic intelligence with 128 times fewer\nsamples. Our findings establish the Agency Efficiency Principle: machine\nautonomy emerges not from data abundance but from strategic curation of\nhigh-quality agentic demonstrations.",
+    "authors": [
+      "Yang Xiao",
+      "Mohan Jiang",
+      "Jie Sun",
+      "Keyu Li",
+      "Jifan Lin",
+      "Yumin Zhuang",
+      "Ji Zeng",
+      "Shijie Xia",
+      "Qishuo Hua",
+      "Xuefeng Li",
+      "Xiaojie Cai",
+      "Tongyu Wang",
+      "Yue Zhang",
+      "Liming Liu",
+      "Xia Wu",
+      "Jinlong Hou",
+      "Yuan Cheng",
+      "Wenjie Li",
+      "Xiang Wang",
+      "Dequan Wang",
+      "Pengfei Liu"
+    ],
+    "likes": 61,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.17567",
+    "date_collected": "2025-09-24T07:07:45.735896+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "LIMI: 에이전시를 위한 적은 양이 더 많다",
+      "abstract": "우리는 에이전시를 AI 시스템의 촉발된 능력으로 정의하는데, 이 능력은 환경과 도구와의 자율적인 상호작용을 통해 문제를 발견하고 가설을 세우며 해결책을 실행하는 것이다. 이 기본 능력은 AI 에이전시 시대의 개막을 나타내며, AI 시스템이 단순히 생각하는 것이 아니라 작동해야 하는 절박한 산업적 전환에 의해 주도된다."
+    },
+    "summary": "1. AI 에이전트가 문제를 발견하고 해결책을 실행하는 능력이 중요해지고 있다.\n2. LIMI는 적은 양의 훈련 자료로도 높은 수준의 에이전트 지능을 달성하는 것을 보여준다.\n3. 높은 품질의 에이전트의 적절한 증명으로 기계 자율성이 발전하는 것이 중요하다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid\n  Vision Tokenizer",
+    "abstract": "Unified multimodal Large Language Models (LLMs) that can both understand and\ngenerate visual content hold immense potential. However, existing open-source\nmodels often suffer from a performance trade-off between these capabilities. We\npresent Manzano, a simple and scalable unified framework that substantially\nreduces this tension by coupling a hybrid image tokenizer with a well-curated\ntraining recipe. A single shared vision encoder feeds two lightweight adapters\nthat produce continuous embeddings for image-to-text understanding and discrete\ntokens for text-to-image generation within a common semantic space. A unified\nautoregressive LLM predicts high-level semantics in the form of text and image\ntokens, with an auxiliary diffusion decoder subsequently translating the image\ntokens into pixels. The architecture, together with a unified training recipe\nover understanding and generation data, enables scalable joint learning of both\ncapabilities. Manzano achieves state-of-the-art results among unified models,\nand is competitive with specialist models, particularly on text-rich\nevaluation. Our studies show minimal task conflicts and consistent gains from\nscaling model size, validating our design choice of a hybrid tokenizer.",
+    "authors": [
+      "Yanghao Li",
+      "Rui Qian",
+      "Bowen Pan",
+      "Haotian Zhang",
+      "Haoshuo Huang",
+      "Bowen Zhang",
+      "Jialing Tong",
+      "Haoxuan You",
+      "Xianzhi Du",
+      "Zhe Gan",
+      "Hyunjik Kim",
+      "Chao Jia",
+      "Zhenbang Wang",
+      "Yinfei Yang",
+      "Mingfei Gao",
+      "Zi-Yi Dou",
+      "Wenze Hu",
+      "Chang Gao",
+      "Dongxu Li",
+      "Philipp Dufter",
+      "Zirui Wang",
+      "Guoli Yin"
+    ],
+    "likes": 46,
+    "published_date": "Sep 19",
+    "url": "https://huggingface.co/papers/2509.16197",
+    "date_collected": "2025-09-24T07:07:45.737731+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "간단하고 확장 가능한 통합된 다중 모달 모델 MANZANO: 하이브리드 비전 토크나이저",
+      "abstract": "시각적 콘텐츠를 이해하고 생성할 수 있는 통합된 다중 모달 대형 언어 모델(LLM)은 엄청난 잠재력을 지니고 있습니다. 그러나 기존 오픈 소스 모델은 종종 이러한 능력 사이의 성능 트레이드오프 문제를 겪습니다. 본 논문에서는 하이브리드 이미지 토크나이저와 정교한 훈련 방법을 결합한 간단하고 확장 가능한 Manzano를 제안합니다. 하나의 공유 비전 인코더가 두 개의 가벼운 어댑터에 공급됩니다. 이는 이미지에서 텍스트로의 이해와 텍스트에서 이미지로의 생성을 위해 공통의 의미 공간 내에서 연속적 임베딩과 이산 토큰을 생성합니다. 통합된 자기 회귀형 LLM은 텍스트와 이미지 토큰 형식의 고수준 의미를 예측하며, 여기에 보조 확산 디코더가 이미지 토큰을 픽셀로 번역합니다. 이 아키텍처는 이해와 생성 데이터에 걸쳐 통합 훈련 레시피와 함께 확장 가능하게 두 능력을 공동으로 학습할 수 있게 합니다. Manzano는 통합된 모델 중 최고 성능을 달성하며, 특히 텍스트 풍부한 평가에서 전문 모델과 경쟁력을 갖습니다. 연구는 모델 크기 확장에서 최소한의 작업 충돌과 지속적 이익을 보여주며, 하이브리드 토크나이저의 설계 선택을 검증합니다."
+    },
+    "summary": "1. Manzano는 이미지와 텍스트 생성 간의 성능 트레이드오프 문제를 해결하기 위해 하이브리드 토크나이저와 통합된 훈련 레시피를 결합한 간단하고 확장 가능한 통합 모델이다.\n2. 공유 비전 인코더가 이미지 토크나이저에 입력되어 연속적 임베딩과 이산 토큰을 생성하며, 텍스트 생성을 위해 통합된 LLM이 고수준 의미를 예측하고 이미지 토큰을 픽셀로 번역한다.\n3. Manzano는 텍스트 풍부한 평가에서 특히 뛰어나며, 모델 크기 확장에 따른 작업 충돌의 최소화와 지속적 이득을 보여 향후 연구적 접근을 제시한다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Qwen3-Omni Technical Report",
+    "abstract": "We present Qwen3-Omni, a single multimodal model that, for the first time,\nmaintains state-of-the-art performance across text, image, audio, and video\nwithout any degradation relative to single-modal counterparts. Qwen3-Omni\nmatches the performance of same-sized single-modal models within the Qwen\nseries and excels particularly on audio tasks. Across 36 audio and audio-visual\nbenchmarks, Qwen3-Omni achieves open-source SOTA on 32 benchmarks and overall\nSOTA on 22, outperforming strong closed-source models such as Gemini-2.5-Pro,\nSeed-ASR, and GPT-4o-Transcribe. Qwen3-Omni adopts a Thinker-Talker MoE\narchitecture that unifies perception and generation across text, images, audio,\nand video, yielding fluent text and natural real-time speech. It supports text\ninteraction in 119 languages, speech understanding in 19 languages, and speech\ngeneration in 10 languages. To reduce first-packet latency in streaming\nsynthesis, Talker autoregressively predicts discrete speech codecs using a\nmulti-codebook scheme. Leveraging the representational capacity of these\ncodebooks, we replace computationally intensive block-wise diffusion with a\nlightweight causal ConvNet, enabling streaming from the first codec frame. In\ncold-start settings, Qwen3-Omni achieves a theoretical end-to-end first-packet\nlatency of 234 ms. To further strengthen multimodal reasoning, we introduce a\nThinking model that explicitly reasons over inputs from any modality. Since the\nresearch community currently lacks a general-purpose audio captioning model, we\nfine-tuned Qwen3-Omni-30B-A3B to obtain Qwen3-Omni-30B-A3B-Captioner, which\nproduces detailed, low-hallucination captions for arbitrary audio inputs.\nQwen3-Omni-30B-A3B, Qwen3-Omni-30B-A3B-Thinking, and\nQwen3-Omni-30B-A3B-Captioner are publicly released under the Apache 2.0\nlicense.",
+    "authors": [
+      "Jin Xu",
+      "Zhifang Guo",
+      "Hangrui Hu",
+      "Yunfei Chu",
+      "Xiong Wang",
+      "Jinzheng He",
+      "Yuxuan Wang",
+      "Xian Shi",
+      "Ting He",
+      "Xinfa Zhu",
+      "Yuanjun Lv",
+      "Yongqi Wang",
+      "Dake Guo",
+      "He Wang",
+      "Linhan Ma",
+      "Pei Zhang",
+      "Xinyu Zhang",
+      "Hongkun Hao",
+      "Zishan Guo",
+      "Baosong Yang",
+      "Bin Zhang",
+      "Ziyang Ma"
+    ],
+    "likes": 45,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.17765",
+    "date_collected": "2025-09-24T07:07:45.739584+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "Qwen3-Omni 기술 보고서",
+      "abstract": "Qwen3-Omni는 텍스트, 이미지, 오디오, 비디오 영역에서 최신 기술 수준을 유지하면서 다중 모달 모델로, 단일 모달 모델과 동등한 성능을 보입니다. Qwen3-Omni는 Qwen 시리즈 내 동일 크기의 단일 모달 모델과 비슷한 성능을 보이며 특히 오디오 작업에서 뛰어납니다. 36개의 오디오 및 오디오-비주얼 벤치마크에서 Qwen3-Omni는 32개의 벤치마크에서 오픈 소스 최신 기술을 달성하며 전체적으로 22개의 벤치마크에서 최신 기술을 선보였습니다."
+    },
+    "summary": "1. Qwen3-Omni는 다중 모달 모델로 다양한 언어의 텍스트 상호작용, 음성 이해, 음성 생성을 지원하며, 스트리밍 합성의 초반 패킷 대기 시간을 줄이고, 234ms의 이론적인 대기 시간을 달성합니다.\n2. Thinking 모델을 통해 모든 모달리티 입력에 대해 명시적으로 추론하는 다중 모달 추론을 강화합니다.\n3. Qwen3-Omni-30B-A3B-Captioner는 임의의 오디오 입력에 대한 자세하고 혼신이 적은 자막을 생성하는 다목적 오디오 캡션 모델로 세 가지 모델은 Apache 2.0 라이선스로 공개되었습니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion\n  Transformer Models",
+    "abstract": "Recent advances in video insertion based on diffusion models are impressive.\nHowever, existing methods rely on complex control signals but struggle with\nsubject consistency, limiting their practical applicability. In this paper, we\nfocus on the task of Mask-free Video Insertion and aim to resolve three key\nchallenges: data scarcity, subject-scene equilibrium, and insertion\nharmonization. To address the data scarcity, we propose a new data pipeline\nInsertPipe, constructing diverse cross-pair data automatically. Building upon\nour data pipeline, we develop OmniInsert, a novel unified framework for\nmask-free video insertion from both single and multiple subject references.\nSpecifically, to maintain subject-scene equilibrium, we introduce a simple yet\neffective Condition-Specific Feature Injection mechanism to distinctly inject\nmulti-source conditions and propose a novel Progressive Training strategy that\nenables the model to balance feature injection from subjects and source video.\nMeanwhile, we design the Subject-Focused Loss to improve the detailed\nappearance of the subjects. To further enhance insertion harmonization, we\npropose an Insertive Preference Optimization methodology to optimize the model\nby simulating human preferences, and incorporate a Context-Aware Rephraser\nmodule during reference to seamlessly integrate the subject into the original\nscenes. To address the lack of a benchmark for the field, we introduce\nInsertBench, a comprehensive benchmark comprising diverse scenes with\nmeticulously selected subjects. Evaluation on InsertBench indicates OmniInsert\noutperforms state-of-the-art closed-source commercial solutions. The code will\nbe released.",
+    "authors": [
+      "Jinshu Chen",
+      "Xinghui Li",
+      "Xu Bai",
+      "Tianxiang Ma",
+      "Pengze Zhang",
+      "Zhuowei Chen",
+      "Gen Li",
+      "Lijie Liu",
+      "Songtao Zhao",
+      "Bingchuan Li",
+      "Qian He"
+    ],
+    "likes": 44,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.17627",
+    "date_collected": "2025-09-24T07:07:45.740952+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "옴니인서트: 확산을 통한 임의의 참조 비디오 삽입을 위한 마스크 없는 모델",
+      "abstract": "최근 확산 모델을 기반으로 한 비디오 삽입 기술의 발전은 인상적이다. 그러나 기존 방법은 복잡한 제어 신호에 의존하면서 주체의 일관성에 어려움을 겪어 실용성에 제약이 따른다. 이 논문에서는 마스크 없는 비디오 삽입 작업에 초점을 맞추어 데이터 희귀성, 주체-장면 균형, 삽입 조화라는 세 가지 주요 과제를 해결하고자 한다."
+    },
+    "summary": "1. 데이터 부족 문제를 해결하기 위해 다양한 교차 쌍 데이터를 자동으로 생성하는 새로운 데이터 파이프라인 InsertPipe를 제안한다.\n2. 주체-장면 균형을 유지하기 위해 Condition-Specific Feature Injection 메커니즘을 도입하여 단일 및 다중 주체 참조로부터 마스크 없이 비디오를 삽입하는 혁신적인 통합 프레임워크 OmniInsert를 개발한다.\n3. 삽입 조화를 더 강화하기 위해 사람의 선호도를 시뮬레이션하여 모델을 최적화하는 'Insertive Preference Optimization' 방법론과 참조 중에 주체를 원래 장면에 매끄럽게 통합하기 위한 'Context-Aware Rephraser' 모듈을 제안한다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Latent Zoning Network: A Unified Principle for Generative Modeling,\n  Representation Learning, and Classification",
+    "abstract": "Generative modeling, representation learning, and classification are three\ncore problems in machine learning (ML), yet their state-of-the-art (SoTA)\nsolutions remain largely disjoint. In this paper, we ask: Can a unified\nprinciple address all three? Such unification could simplify ML pipelines and\nfoster greater synergy across tasks. We introduce Latent Zoning Network (LZN)\nas a step toward this goal. At its core, LZN creates a shared Gaussian latent\nspace that encodes information across all tasks. Each data type (e.g., images,\ntext, labels) is equipped with an encoder that maps samples to disjoint latent\nzones, and a decoder that maps latents back to data. ML tasks are expressed as\ncompositions of these encoders and decoders: for example, label-conditional\nimage generation uses a label encoder and image decoder; image embedding uses\nan image encoder; classification uses an image encoder and label decoder. We\ndemonstrate the promise of LZN in three increasingly complex scenarios: (1) LZN\ncan enhance existing models (image generation): When combined with the SoTA\nRectified Flow model, LZN improves FID on CIFAR10 from 2.76 to 2.59-without\nmodifying the training objective. (2) LZN can solve tasks independently\n(representation learning): LZN can implement unsupervised representation\nlearning without auxiliary loss functions, outperforming the seminal MoCo and\nSimCLR methods by 9.3% and 0.2%, respectively, on downstream linear\nclassification on ImageNet. (3) LZN can solve multiple tasks simultaneously\n(joint generation and classification): With image and label encoders/decoders,\nLZN performs both tasks jointly by design, improving FID and achieving SoTA\nclassification accuracy on CIFAR10. The code and trained models are available\nat https://github.com/microsoft/latent-zoning-networks. The project website is\nat https://zinanlin.me/blogs/latent_zoning_networks.html.",
+    "authors": [
+      "Zinan Lin",
+      "Enshu Liu",
+      "Xuefei Ning",
+      "Junyi Zhu",
+      "Wenyu Wang",
+      "Sergey Yekhanin"
+    ],
+    "likes": 42,
+    "published_date": "Sep 19",
+    "url": "https://huggingface.co/papers/2509.15591",
+    "date_collected": "2025-09-24T07:07:45.742117+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "숨겨진 분류 네트워크: 생성 모델링, 표현 학습, 그리고 분류를 위한 통일된 원리",
+      "abstract": "생성 모델링, 표현 학습, 그리고 분류는 기계 학습(ML)의 세 가지 핵심 문제로, 그러나 그들의 최신 기술 해결책은 대부분 격리되어 있다. 본 논문에서는 이렇게 묻습니다: 통일된 원리가 이 모든 것을 다룰 수 있을까? 이러한 통합은 ML 파이프라인을 간소화하고 작업 간의 더 큰 상호 작용을 촉진할 수 있다. 본 연구에서는 이 목표를 향해 한 발자국인 숨겨진 분류 네트워크(LZN)를 소개한다. LZN의 핵심은 모든 작업에 걸쳐 정보를 인코딩하는 공유 가우시안 잠재 공간을 생성한다."
+    },
+    "summary": "1. LZN은 이미지 생성에서 Rectified Flow 모델과 결합되어 CIFAR10의 FID를 2.76에서 2.59로 개선시켜 최적화된 훈련 목적을 수정하지 않고도 성과를 향상시킬 수 있다.\n2. LZN은 보조 손실 함수 없이 비지도 학습 표현 학습을 구현할 수 있어 MoCo 및 SimCLR 방법을 ImageNet의 하류 선형 분류에서 각각 9.3% 및 0.2% 능가한다.\n3. 이미지와 라벨 인코더/디코더로, LZN은 수행하도록 설계된 두 작업을 동시에 수행하여 CIFAR10에서 FID를 개선하고 최신 분류 정확도를 달성한다.",
+    "categories": [
+      "Multimodal",
+      "Representation Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "OnePiece: Bringing Context Engineering and Reasoning to Industrial\n  Cascade Ranking System",
+    "abstract": "Despite the growing interest in replicating the scaled success of large\nlanguage models (LLMs) in industrial search and recommender systems, most\nexisting industrial efforts remain limited to transplanting Transformer\narchitectures, which bring only incremental improvements over strong Deep\nLearning Recommendation Models (DLRMs). From a first principle perspective, the\nbreakthroughs of LLMs stem not only from their architectures but also from two\ncomplementary mechanisms: context engineering, which enriches raw input queries\nwith contextual cues to better elicit model capabilities, and multi-step\nreasoning, which iteratively refines model outputs through intermediate\nreasoning paths. However, these two mechanisms and their potential to unlock\nsubstantial improvements remain largely underexplored in industrial ranking\nsystems.\n  In this paper, we propose OnePiece, a unified framework that seamlessly\nintegrates LLM-style context engineering and reasoning into both retrieval and\nranking models of industrial cascaded pipelines. OnePiece is built on a pure\nTransformer backbone and further introduces three key innovations: (1)\nstructured context engineering, which augments interaction history with\npreference and scenario signals and unifies them into a structured tokenized\ninput sequence for both retrieval and ranking; (2) block-wise latent reasoning,\nwhich equips the model with multi-step refinement of representations and scales\nreasoning bandwidth via block size; (3) progressive multi-task training, which\nleverages user feedback chains to effectively supervise reasoning steps during\ntraining. OnePiece has been deployed in the main personalized search scenario\nof Shopee and achieves consistent online gains across different key business\nmetrics, including over +2% GMV/UU and a +2.90% increase in advertising\nrevenue.",
+    "authors": [
+      "Sunhao Dai",
+      "Jiakai Tang",
+      "Jiahua Wu",
+      "Kun Wang",
+      "Yuxuan Zhu",
+      "Bingjun Chen",
+      "Bangyang Hong",
+      "Yu Zhao",
+      "Cong Fu",
+      "Kangle Wu",
+      "Yabo Ni",
+      "Anxiang Zeng",
+      "Wenjie Wang",
+      "Xu Chen",
+      "Jun Xu",
+      "See-Kiong Ng"
+    ],
+    "likes": 27,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.18091",
+    "date_collected": "2025-09-24T07:07:45.743682+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "OnePiece: 산업적인 카스케이드 랭킹 시스템에 맥락 공학과 추론을 가져오다",
+      "abstract": "대형 언어 모델(LLM)의 성공을 산업 검색 및 추천 시스템에 복제하는 데 관심이 증가하고 있지만, 대부분의 산업 노력은 Transformer 아키텍처를 이식하는 데 그친다. 이로써 강력한 심층 학습 추천 모델(DLRM)에 대해 점진적인 향상만을 이룩할 뿐이다. LLM의 획기적인 발전은 아키텍처뿐만 아니라 두 가지 보완적 메커니즘에서 비롯되는데, 그것은 맥락 공학과 다단계 추론이다. 이 두 가지 메커니즘과 그들이 산업 랭킹 시스템에서 어떤 향상을 불러올 수 있는지는 대부분 미탐색 상태이다. 본 논문에서는 OnePiece라는 통합된 프레임워크를 제안하는데, 이는 LLM 스타일의 맥락 공학과 추론을 산업 카스케이드 파이프라인의 검색 및 랭킹 모델에 무결하게 통합한다. OnePiece는 순수 Transformer 주력으로 구축되며 3가지 주요한 혁신을 소개하는데, (1) 구조화된 맥락 공학, (2) 블록 단위 잠재 추론, (3) 점진적 다중 작업 훈련이 그 중 하나이다. 현재 Shopee의 메인 개인화 검색 시나리오에 배포되었으며 다양한 주요 비즈니스 지표에서 일관된 온라인 이익을 달성하였다."
+    },
+    "summary": "1. 본 연구에서는 산업적인 랭킹 시스템에 LLM 스타일의 맥락 공학과 추론을 통합하는 OnePiece 프레임워크를 제안한다.\n2. OnePiece는 구조화된 맥락 공학, 블록 단위 잠재 추론, 그리고 점진적 다중 작업 훈련이라는 세 가지 핵심 혁신을 도입하여 검색 및 랭킹 모델을 향상시켰다.\n3. Shopee의 개인화 검색 시나리오에 적용된 OnePiece는 GMV/UU가 +2% 이상, 광고 수익이 +2.90% 증가하는 등 다양한 비즈니스 메트릭에서 일관된 온라인 향상을 이룩했다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "TempSamp-R1: Effective Temporal Sampling with Reinforcement Fine-Tuning\n  for Video LLMs",
+    "abstract": "This paper introduces TempSamp-R1, a new reinforcement fine-tuning framework\ndesigned to improve the effectiveness of adapting multimodal large language\nmodels (MLLMs) to video temporal grounding tasks. We reveal that existing\nreinforcement learning methods, such as Group Relative Policy Optimization\n(GRPO), rely on on-policy sampling for policy updates. However, in tasks with\nlarge temporal search spaces, this strategy becomes both inefficient and\nlimited in performance, as it often fails to identify temporally accurate\nsolutions. To address this limitation, TempSamp-R1 leverages ground-truth\nannotations as off-policy supervision to provide temporally precise guidance,\neffectively compensating for the sparsity and misalignment in on-policy\nsolutions. To further stabilize training and reduce variance in reward-based\nupdates, TempSamp-R1 provides a non-linear soft advantage computation method\nthat dynamically reshapes the reward feedback via an asymmetric transformation.\nBy employing a hybrid Chain-of-Thought (CoT) training paradigm, TempSamp-R1\noptimizes a single unified model to support both CoT and non-CoT inference\nmodes, enabling efficient handling of queries with varying reasoning\ncomplexity. Experimental results demonstrate that TempSamp-R1 outperforms\nGRPO-based baselines, establishing new state-of-the-art performance on\nbenchmark datasets: Charades-STA (R1@0.7: 52.9%, +2.7%), ActivityNet Captions\n(R1@0.5: 56.0%, +5.3%), and QVHighlights (mAP: 30.0%, +3.0%). Moreover,\nTempSamp-R1 shows robust few-shot generalization capabilities under limited\ndata. Code: https://github.com/HVision-NKU/TempSamp-R1",
+    "authors": [
+      "Yunheng Li",
+      "Jing Cheng",
+      "Shaoyong Jia",
+      "Hangyi Kuang",
+      "Shaohui Jiao",
+      "Qibin Hou",
+      "Ming-Ming Cheng"
+    ],
+    "likes": 25,
+    "published_date": "Sep 22",
+    "url": "https://huggingface.co/papers/2509.18056",
+    "date_collected": "2025-09-24T07:07:45.744882+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "효율적인 시간적 샘플링을 위한 보강 학습 기반 TempSamp-R1: 비디오 LLMs를 위한",
+      "abstract": "본 논문은 비디오 시간 기준 작업에 대한 다중 모달 대형 언어 모델 (MLLMs)을 적응시키는 효과를 향상시키기 위해 설계된 새로운 보강 학습 보완 프레임워크 TempSamp-R1을 소개합니다. 우리는 Group Relative Policy Optimization (GRPO)과 같은 기존의 보강 학습 방법이 정책 업데이트를 위해 온-폴리시 샘플링에 의존한다는 것을 밝힙니다. 그러나 큰 시간적 탐색 공간을 갖는 작업에서 이 전략은 종종 정확한 시간적 해법을 식별하지 못하여 효율적이지 않고 성능이 제한된다는 한계가 있습니다. 이 한계를 해결하기 위해 TempSamp-R1은 오프-폴리시 감독으로 실제 어노테이션을 활용하여 시간적으로 정확한 지침을 제공하고, 온-폴리시 해법의 희소성과 불일치를 효과적으로 보상합니다. 보상 기반 업데이트의 분산을 줄이고 훈련을 안정화하기 위해 TempSamp-R1은 비선형 소프트 어드밴티지 계산 방법을 제공하여 보상 피드백을 비대칭 변환을 통해 동적으로 재형성합니다. Chain-of-Thought (CoT) 훈련 패러다임을 활용하여, TempSamp-R1은 CoT 및 비-CoT 추론 모드를 모두 지원하는 하나의 통합 모델을 최적화함으로써, 다양한 추론 복잡성을 갖는 쿼리를 효율적으로 처리할 수 있습니다. 실험 결과는 TempSamp-R1이 GRPO 기반 베이스라인을 능가하며, Charades-STA (R1@0.7: 52.9%, +2.7%), ActivityNet Captions (R1@0.5: 56.0%, +5.3%), 그리고 QVHighlights (mAP: 30.0%, +3.0%)와 같은 벤치마크 데이터셋에서 새로운 최고 성능을 확립한다는 것을 입증합니다. 더 나아가, TempSamp-R1은 제한된 데이터에서 강력한 소수 샷 일반화 능력을 보여줍니다."
+    },
+    "summary": "1. TempSamp-R1은 비디오 LLMs를 위한 새로운 보강 학습 프레임워크로, 오픈-폴리시 감독을 활용하여 시간적 정확도를 개선하고, 보상 피드백의 분산을 줄이는 비선형 소프트 어드밴티지 계산 방법을 제공함.\n2. 실증 결과는 TempSamp-R1이 GRPO 기반 베이스라인을 능가하며, Charades-STA, ActivityNet Captions, QVHighlights와 같은 데이터셋에서 새로운 최고 성능을 달성한다는 것을 보여줌.\n3. TempSamp-R1은 한 개 통합 모델을 최적화하여 CoT 및 비-CoT 추론 모드를 모두 지원하여 쿼리 처리의 효율성을 향상시킴.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "SPATIALGEN: Layout-guided 3D Indoor Scene Generation",
+    "abstract": "Creating high-fidelity 3D models of indoor environments is essential for\napplications in design, virtual reality, and robotics. However, manual 3D\nmodeling remains time-consuming and labor-intensive. While recent advances in\ngenerative AI have enabled automated scene synthesis, existing methods often\nface challenges in balancing visual quality, diversity, semantic consistency,\nand user control. A major bottleneck is the lack of a large-scale, high-quality\ndataset tailored to this task. To address this gap, we introduce a\ncomprehensive synthetic dataset, featuring 12,328 structured annotated scenes\nwith 57,440 rooms, and 4.7M photorealistic 2D renderings. Leveraging this\ndataset, we present SpatialGen, a novel multi-view multi-modal diffusion model\nthat generates realistic and semantically consistent 3D indoor scenes. Given a\n3D layout and a reference image (derived from a text prompt), our model\nsynthesizes appearance (color image), geometry (scene coordinate map), and\nsemantic (semantic segmentation map) from arbitrary viewpoints, while\npreserving spatial consistency across modalities. SpatialGen consistently\ngenerates superior results to previous methods in our experiments. We are\nopen-sourcing our data and models to empower the community and advance the\nfield of indoor scene understanding and generation.",
+    "authors": [
+      "Chuan Fang",
+      "Heng Li",
+      "Yixun Liang",
+      "Jia Zheng",
+      "Yongsen Mao",
+      "Yuan Liu",
+      "Rui Tang",
+      "Zihan Zhou",
+      "Ping Tan"
+    ],
+    "likes": 20,
+    "published_date": "Sep 18",
+    "url": "https://huggingface.co/papers/2509.14981",
+    "date_collected": "2025-09-24T07:07:45.746185+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "공간지도를 활용한 3D 실내 공간 생성",
+      "abstract": "고품질의 3D 실내 환경 모델링은 디자인, 가상 현실, 로봇공학 등의 응용 프로그램에 필수적입니다. 그러나 수동 3D 모델링은 여전히 시간이 많이 소요되고 노동 집약적입니다. 최근 생성 모델 인공지능의 발전에도 불구하고, 기존 방법은 시각적 품질, 다양성, 의미 일관성 및 사용자 제어를 균형있게 유지하는 데 어려움을 겪고 있습니다. 본 논문에서는 이러한 과제에 특화된 대규모 고품질 데이터셋을 소개하고, 이를 활용하여 실제적이고 의미론적으로 일관된 3D 실내 공간을 생성하는 새로운 다중 뷰, 다중 모달 확산 모델(SpatialGen)을 제안합니다."
+    },
+    "summary": "1. 고품질 3D 모델링을 자동화하기 위해 SpatialGen이라는 다중 뷰, 다중 모달 모델을 통해 새로운 3D 실내 공간을 생성하며, 시각적 품질과 의미 일관성을 균형 있게 유지합니다.\n2. 12,328개의 구조화된 주석이 달린 실내 공간과 57,440개의 방, 4.7백만개의 사실적인 2D 렌더링을 갖는 종합적인 합성 데이터셋을 활용하여, 이 모델은 임의의 시점에서 출발 지점과 참조 이미지를 제공받아 출현(컬러 이미지), 기하학(씬 좌표 맵), 의미론적(의미 분할 맵) 정보를 생성합니다.\n3. SpatialGen은 실험에서 이전 방법들에 비해 뛰어난 결과를 일관되게 생성하며, 데이터 및 모델을 무료로 제공하여 커뮤니티의 발전과 실내 공간의 이해 및 생성 분야를 발전시킵니다.",
+    "categories": [
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "BaseReward: A Strong Baseline for Multimodal Reward Model",
+    "abstract": "The rapid advancement of Multimodal Large Language Models (MLLMs) has made\naligning them with human preferences a critical challenge. Reward Models (RMs)\nare a core technology for achieving this goal, but a systematic guide for\nbuilding state-of-the-art Multimodal Reward Models (MRMs) is currently lacking\nin both academia and industry. Through exhaustive experimental analysis, this\npaper aims to provide a clear ``recipe'' for constructing high-performance\nMRMs. We systematically investigate every crucial component in the MRM\ndevelopment pipeline, including reward modeling paradigms (e.g.,\nNaive-RM, Critic-based RM, and Generative RM), reward head\narchitecture, training strategies, data curation (covering\nover ten multimodal and text-only preference datasets), backbone model\nand model scale, and ensemble methods.\n  Based on these experimental insights, we introduce BaseReward, a\npowerful and efficient baseline for multimodal reward modeling. BaseReward\nadopts a simple yet effective architecture, built upon a {Qwen2.5-VL} backbone,\nfeaturing an optimized two-layer reward head, and is trained on a carefully\ncurated mixture of high-quality multimodal and text-only preference data. Our\nresults show that BaseReward establishes a new SOTA on major benchmarks such as\nMM-RLHF-Reward Bench, VL-Reward Bench, and Multimodal Reward Bench,\noutperforming previous models. Furthermore, to validate its practical utility\nbeyond static benchmarks, we integrate BaseReward into a real-world\nreinforcement learning pipeline, successfully enhancing an MLLM's performance\nacross various perception, reasoning, and conversational tasks. This work not\nonly delivers a top-tier MRM but, more importantly, provides the community with\na clear, empirically-backed guide for developing robust reward models for the\nnext generation of MLLMs.",
+    "authors": [
+      "Yi-Fan Zhang",
+      "Haihua Yang",
+      "Huanyu Zhang",
+      "Yang Shi",
+      "Zezhou Chen",
+      "Haochen Tian",
+      "Chaoyou Fu",
+      "Haotian Wang",
+      "Kai Wu",
+      "Bo Cui",
+      "Xu Wang",
+      "Jianfei Pan",
+      "Haotian Wang",
+      "Zhang Zhang",
+      "Liang Wang"
+    ],
+    "likes": 17,
+    "published_date": "Sep 19",
+    "url": "https://huggingface.co/papers/2509.16127",
+    "date_collected": "2025-09-24T07:07:45.747712+09:00",
+    "week": "2025-W39",
+    "translation": {
+      "title": "BaseReward: 다중모달 보상 모델을 위한 강력한 기준선",
+      "abstract": "다중 모달 대형 언어 모델(MLLMs)의 급속한 발전으로 인해 인간 선호와 조화를 이루는 것은 중요한 과제가 되었습니다. 보상 모델(RMs)은 이 목표를 달성하기 위한 핵심 기술이지만, 현재 학계와 산업 모두에서 최첨단 다중모달 보상 모델(MRMs)을 구축하기 위한 체계적 가이드가 부족한 상황입니다. 본 논문은 철저한 실험 분석을 통해 고성능 MRMs를 구축하는 명확한 \"레시피\"를 제공하는 것을 목표로 합니다. 우리는 보상 모델링 패러다임(예: Naive-RM, Critic-based RM, Generative RM), 보상 헤드 구조, 훈련 전략, 데이터 선별(10개 이상의 다중모달 및 텍스트 기반 선호 데이터세트 다룸), 백본 모델 및 모델 규모, 그리고 앙상블 방법을 포함한 MRMs 개발 파이프라인의 모든 중요 구성 요소를 체계적으로 조사합니다."
+    },
+    "summary": "1. 고성능 다중모달 보상 모델(MRM)을 구축하는데 필수적인 구성 요소들을 실험적으로 조사하여 BaseReward라는 강력하고 효율적인 기준선을 소개합니다.\n2. BaseReward는 Qwen2.5-VL 백본을 기반으로 한 간단하면서 효과적인 아키텍처를 채택하며, 최적화된 두 층의 보상 헤드를 특징으로 하고 고품질 다중모달 및 텍스트 기반 선호 데이터의 조합으로 훈련됩니다.\n3. BaseReward는 MM-RLHF-Reward Bench, VL-Reward Bench, 그리고 Multimodal Reward Bench와 같은 주요 기준에서 이전 모델들을 능가하는 SOTA를 성립하며, 실제 성능에 대한 유효성을 입증하기 위해 MLLM의 성능을 향상시키는 데 성공합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  }
+]

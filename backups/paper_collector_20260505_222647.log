@@ -1,0 +1,111 @@
+=== Paper Collection Started at Mon May  4 22:27:30 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W19
+URL: https://huggingface.co/papers/week/2026-W19
+Found 10 papers in weekly view
+Fetching likes for: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Fetching likes for: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Fetching likes for: Map2World: Segment Map Conditioned Text to 3D World Generation
+Fetching likes for: Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions
+Fetching likes for: From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills
+Fetching likes for: Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies
+Fetching likes for: Let ViT Speak: Generative Language-Image Pre-training
+Fetching likes for: Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance
+Fetching likes for: Trees to Flows and Back: Unifying Decision Trees and Diffusion Models
+Fetching likes for: When Do Diffusion Models learn to Generate Multiple Objects?
+Selected top 10 papers by likes:
+1. UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors (67 likes)
+2. Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction (25 likes)
+3. Map2World: Segment Map Conditioned Text to 3D World Generation (13 likes)
+4. Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions (13 likes)
+5. From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills (10 likes)
+6. Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies (9 likes)
+7. Let ViT Speak: Generative Language-Image Pre-training (9 likes)
+8. Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance (9 likes)
+9. Trees to Flows and Back: Unifying Decision Trees and Diffusion Models (4 likes)
+10. When Do Diffusion Models learn to Generate Multiple Objects? (4 likes)
+Found abstract: Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimoda...
+Processed paper: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Found abstract: Agentic web search increasingly faces two distinct demands: deep reasoning over a single target, and...
+Processed paper: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Found abstract: 3D world generation is essential for applications such as immersive content creation or autonomous d...
+Processed paper: Map2World: Segment Map Conditioned Text to 3D World Generation
+Found abstract: Text-based 2D image editing models have recently reached an impressive level of maturity, motivating...
+Processed paper: Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions
+Found abstract: LLM agents increasingly rely on reusable skills, capability packages that combine instructions, cont...
+Processed paper: From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills
+Found abstract: Generalist robot policies increasingly benefit from large-scale pretraining, but offline data alone ...
+Processed paper: Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies
+Found abstract: In this paper, we present Generative Language-Image Pre-training (GenLIP), a minimalist generative p...
+Processed paper: Let ViT Speak: Generative Language-Image Pre-training
+Found abstract: Large Language Model (LLM) Red-Teaming, which proactively identifies vulnerabilities of LLMs, is an ...
+Processed paper: Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance
+Found abstract: Decision trees and diffusion models are ostensibly disparate model classes, one discrete and hierarc...
+Processed paper: Trees to Flows and Back: Unifying Decision Trees and Diffusion Models
+Found abstract: Text-to-image diffusion models achieve impressive visual fidelity, yet they remain unreliable in mul...
+Processed paper: When Do Diffusion Models learn to Generate Multiple Objects?
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Map2World: Segment Map Conditioned Text to 3D World Generation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Let ViT Speak: Generative Language-Image Pre-training
+Paper already exists, checking if translation is complete...
+Update likes: 9  ->  0
+Update date_collected: 2026-05-05T07:27:41.100916+09:00  ->  2026-05-04T10:42:11.814972+09:00
+
+Processing paper 8/10
+Title: Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Trees to Flows and Back: Unifying Decision Trees and Diffusion Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: When Do Diffusion Models learn to Generate Multiple Objects?
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W19.json...
+
+Updating Notion database...
+Creating new paper: 유니비디엑스: 확산 사전을 통한 다목적 비디오 생성을 위한 통합된 다중 모달 프레임워크
+Creating new paper: Web2BigTable: 인터넷 규모 정보 검색 및 추출을 위한 이중 멀티 에이전트 LLM 시스템
+Creating new paper: Map2World: 세그먼트 맵에 의존하는 텍스트를 3D 세계 생성
+Creating new paper: Prox-E: 원시 기반 추상화를 통한 세밀한 3D 모양 편집
+Creating new paper: 기술 텍스트부터 기술 구조로: 에이전트 스킬을 위한 스케줄링-구조적-논리적 표현
+Creating new paper: 배포 중 학습: 다목적 로봇 정책을 위한 대규모 강화학습
+Updating paper: ViT가 말하다: 생성언어-이미지 사전학습 (likes: 0 -> 9)
+Creating new paper: 안정적인-GFlowNet: 대조적 궤적 균형을 통한 다양하고 견고한 LLM Red-Teaming으로
+Creating new paper: 의사 결정 트리와 확산 모델 통합: Trees to Flows and Back
+Creating new paper: 다중 객체 생성을 학습하는 확산 모델은 언제 배우나요?
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May  4 22:29:48 UTC 2026 ===
+

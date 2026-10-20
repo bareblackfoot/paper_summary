@@ -1,0 +1,276 @@
+[
+  {
+    "title": "Why Language Models Hallucinate",
+    "abstract": "Like students facing hard exam questions, large language models sometimes\nguess when uncertain, producing plausible yet incorrect statements instead of\nadmitting uncertainty. Such \"hallucinations\" persist even in state-of-the-art\nsystems and undermine trust. We argue that language models hallucinate because\nthe training and evaluation procedures reward guessing over acknowledging\nuncertainty, and we analyze the statistical causes of hallucinations in the\nmodern training pipeline. Hallucinations need not be mysterious -- they\noriginate simply as errors in binary classification. If incorrect statements\ncannot be distinguished from facts, then hallucinations in pretrained language\nmodels will arise through natural statistical pressures. We then argue that\nhallucinations persist due to the way most evaluations are graded -- language\nmodels are optimized to be good test-takers, and guessing when uncertain\nimproves test performance. This \"epidemic\" of penalizing uncertain responses\ncan only be addressed through a socio-technical mitigation: modifying the\nscoring of existing benchmarks that are misaligned but dominate leaderboards,\nrather than introducing additional hallucination evaluations. This change may\nsteer the field toward more trustworthy AI systems.",
+    "authors": [
+      "Adam Tauman Kalai",
+      "Ofir Nachum",
+      "Santosh S. Vempala",
+      "Edwin Zhang"
+    ],
+    "likes": 71,
+    "published_date": "Sep 4",
+    "url": "https://huggingface.co/papers/2509.04664",
+    "date_collected": "2025-09-09T07:07:36.248723+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "왜 언어 모델은 환각하는가",
+      "abstract": "어려운 시험 문제를 만난 학생처럼 대형 언어 모델은 때때로 불확실할 때 추측하여 불확실성을 인정하는 대신 그럴듯하지만 잘못된 문장을 생성합니다. 이러한 \"환각\"은 최첨단 시스템에서도 계속되고 신뢰를 저해합니다. 우리는 언어 모델이 환각하는 이유는 훈련 및 평가 절차가 불확실성을 인정하는 대신 추측을 보상하기 때문이라고 주장하며 현대 훈련 파이프라인에서 환각의 통계적 원인을 분석합니다."
+    },
+    "summary": "1. 대형 언어 모델은 불확실할 때 추측함으로써 환각을 일으키는데, 이는 훈련 및 평가 절차가 불확실성을 인정하는 대신 추측을 장려하기 때문입니다.\n2. 환각은 이진 분류 오류로 단순히 발생하는데, 이를 구별할 수 없다면 사전 훈련된 언어 모델의 환각은 자연적인 통계적 압력으로 발생합니다.\n3. 평가 과정에서 불확실할 때 추측하는 것이 테스트 성능을 향상시키기 때문에 언어 모델들이 환각을 계속하는데, 이러한 불확실 응답을 처벌하는 것은 사회 기술적 완화만이 해결책이 될 수 있습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Symbolic Graphics Programming with Large Language Models",
+    "abstract": "Large language models (LLMs) excel at program synthesis, yet their ability to\nproduce symbolic graphics programs (SGPs) that render into precise visual\ncontent remains underexplored. We study symbolic graphics programming, where\nthe goal is to generate an SGP from a natural-language description. This task\nalso serves as a lens into how LLMs understand the visual world by prompting\nthem to generate images rendered from SGPs. Among various SGPs, our paper\nsticks to scalable vector graphics (SVGs). We begin by examining the extent to\nwhich LLMs can generate SGPs. To this end, we introduce SGP-GenBench, a\ncomprehensive benchmark covering object fidelity, scene fidelity, and\ncompositionality (attribute binding, spatial relations, numeracy). On\nSGP-GenBench, we discover that frontier proprietary models substantially\noutperform open-source models, and performance correlates well with general\ncoding capabilities. Motivated by this gap, we aim to improve LLMs' ability to\ngenerate SGPs. We propose a reinforcement learning (RL) with verifiable rewards\napproach, where a format-validity gate ensures renderable SVG, and a\ncross-modal reward aligns text and the rendered image via strong vision\nencoders (e.g., SigLIP for text-image and DINO for image-image). Applied to\nQwen-2.5-7B, our method substantially improves SVG generation quality and\nsemantics, achieving performance on par with frontier systems. We further\nanalyze training dynamics, showing that RL induces (i) finer decomposition of\nobjects into controllable primitives and (ii) contextual details that improve\nscene coherence. Our results demonstrate that symbolic graphics programming\noffers a precise and interpretable lens on cross-modal grounding.",
+    "authors": [
+      "Yamei Chen",
+      "Haoquan Zhang",
+      "Yangyi Huang",
+      "Zeju Qiu",
+      "Kaipeng Zhang",
+      "Yandong Wen",
+      "Weiyang Liu"
+    ],
+    "likes": 28,
+    "published_date": "Sep 5",
+    "url": "https://huggingface.co/papers/2509.05208",
+    "date_collected": "2025-09-09T07:07:36.250013+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "Symbolic Graphics Programming with Large Language Models (대규모 언어 모델과 상징적 그래픽 프로그래밍)",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)은 프로그램 합성에서 뛰어나지만, 정확한 시각 내용으로 변환되는 상징적 그래픽 프로그램(Symbolic Graphics Programs, SGPs)을 생성하는 능력은 아직 탐구되지 않았습니다. 본 연구에서는 자연어 설명으로부터 SGP를 생성하는 상징적 그래픽 프로그래밍을 연구합니다. 또한, 이 작업은 LLM이 시각적 세계를 어떻게 이해하는지를 보여주는 창을 제공하며, SGPs에서 렌더링된 이미지를 생성하도록 유도합니다. 다양한 SGPs 중에서 본 논문은 확장 가능한 벡터 그래픽(Scalable Vector Graphics, SVGs)를 사용합니다. 먼저, LLM이 SGPs를 어느 정도 생성할 수 있는지를 조사합니다. 이를 위해 객체 충실도, 장면 충실도 및 구성 요소 (속성 바인딩, 공간 관계, 숫자 체계)를 포함하는 포괄적인 벤치마크인 SGP-GenBench를 소개합니다. SGP-GenBench에서 우리는 전방 적인 독점 모델이 오픈 소스 모델보다 상당히 우수한 성과를 내며 성능이 일반 코딩 능력과 잘 일치하는 것을 발견합니다. 이 갭에 영감을 받아, LLM의 SGP 생성 능력을 향상시키기 위해 노력합니다. 우리는 검증 가능한 보상이 있는 강화 학습(RL) 방식을 제안합니다. 여기서 형식 유효성 검사 게이트는 렌더링 가능한 SVG를 보장하고, 교차 모달 보상은 강력한 비전 인코더(예: 텍스트-이미지를 위한 SigLIP, 이미지-이미지를 위한 DINO)를 통해 텍스트와 렌더링된 이미지를 정렬합니다. Qwen-2.5-7B에 적용한 결과, 우리의 방법은 SVG 생성 품질과 의미론적 의미에서 상당한 향상을 이끌어내며, 전방 시스템과 성능이 비슷해집니다. 또한 RL이 객체를 효과적으로 기본단위로 분해하고 장면 일관성을 향상시키는 문맥 상세 사항을 도입함을 보여주는 교육 역학을 분석합니다. 결과는 상징적 그래픽 프로그래밍이 크로스 모달 그라운딩에 정밀하고 해석 가능한 창을 제공한다는 것을 보여줍니다."
+    },
+    "summary": "1. 대규모 언어 모델(Large Language Models, LLMs)은 상징적 그래픽 프로그래밍(Symbolic Graphics Programming)에서도 뛰어난 성과를 보이나, 정확한 시각적 내용을 생성하는 능력은 부족하며, 본 논문은 이에 대해 연구한다.\n2. SGP-GenBench라는 포괄적인 벤치마크를 도입하여, 상징적 그래픽 프로그램에 대한 LLMs의 생성 능력을 검증하고, 성능이 일반적인 코딩 능력과 상관관계가 높음을 발견한다.\n3. 제안된 강화 학습(RL) 방법론을 사용하여, 형식 유효성 검사 게이트와 교차 모달 보상을 활용해 LLM의 SGP 생성 능력을 향상시키고, 상당한 품질 향상을 이루어냄으로써 크로스 모달 그라운딩에 정밀하고 해석 가능한 창을 제공한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Set Block Decoding is a Language Model Inference Accelerator",
+    "abstract": "Autoregressive next token prediction language models offer powerful\ncapabilities but face significant challenges in practical deployment due to the\nhigh computational and memory costs of inference, particularly during the\ndecoding stage. We introduce Set Block Decoding (SBD), a simple and flexible\nparadigm that accelerates generation by integrating standard next token\nprediction (NTP) and masked token prediction (MATP) within a single\narchitecture. SBD allows the model to sample multiple, not necessarily\nconsecutive, future tokens in parallel, a key distinction from previous\nacceleration methods. This flexibility allows the use of advanced solvers from\nthe discrete diffusion literature, offering significant speedups without\nsacrificing accuracy. SBD requires no architectural changes or extra training\nhyperparameters, maintains compatibility with exact KV-caching, and can be\nimplemented by fine-tuning existing next token prediction models. By\nfine-tuning Llama-3.1 8B and Qwen-3 8B, we demonstrate that SBD enables a 3-5x\nreduction in the number of forward passes required for generation while\nachieving same performance as equivalent NTP training.",
+    "authors": [
+      "Itai Gat",
+      "Heli Ben-Hamu",
+      "Marton Havasi",
+      "Daniel Haziza",
+      "Jeremy Reizenstein",
+      "Gabriel Synnaeve",
+      "David Lopez-Paz",
+      "Brian Karrer",
+      "Yaron Lipman"
+    ],
+    "likes": 24,
+    "published_date": "Sep 4",
+    "url": "https://huggingface.co/papers/2509.04185",
+    "date_collected": "2025-09-09T07:07:36.251345+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "Set Block Decoding는 언어 모델 추론 가속화기",
+      "abstract": "자회귀형 다음 토큰 예측 언어 모델은 강력한 능력을 제공하지만, 디코딩 단계에서 특히 추론의 높은 계산 및 메모리 비용으로 인해 실제 적용에서 중요한 어려움을 겪습니다. 우리는 Set Block Decoding (SBD)를 소개합니다. SBD는 표준 다음 토큰 예측(NTP)과 마스킹된 토큰 예측(MATP)을 하나의 구조 내에서 통합하여 생성을 가속화하는 간단하고 유연한 패러다임입니다. SBD는 모델이 병렬로 여러 개의 미래 토큰을 샘플링할 수 있도록 하여 이전 가속화 방법과 구분되는 중요한 특징을 지닙니다. 이 유연성은 이산 확산 문헌에서 사용되는 고급 해결사들을 사용할 수 있게 하여 정확도를 희생하지 않고 상당한 가속화를 제공합니다. SBD는 구조적인 변경이나 추가 학습 초매개변수가 필요하지 않으며 정확한 KV-캐싱과 호환되며 기존의 다음 토큰 예측 모델을 세밀하게 조정하여 구현할 수 있습니다. Llama-3.1 8B와 Qwen-3 8B를 세밀하게 조정함으로써, SBD가 생성에 필요한 전방향 패스의 수를 3-5배 감소시키면서 동등한 NTP 학습 결과를 달성하는 것을 입증합니다."
+    },
+    "summary": "1. SBD는 다음 토큰 예측과 마스킹된 토큰 예측을 통합한 단일 아키텍처로 생성을 가속화시키는데, 기존 가속화 방법과 비교하여 병렬적으로 여러 미래 토큰을 샘플링하는 유연성을 제공한다.\n2. SBD는 구조적 변경이나 추가 학습 초매개변수 없이도 KV-캐싱과 호환되며 기존 다음 토큰 예측 모델을 세밀하게 조정하여 구현할 수 있다.\n3. Llama-3.1 8B와 Qwen-3 8B를 세밀하게 조정한 결과, SBD는 동등한 NTP 학습 성능을 유지하면서 생성에 필요한 전방향 패스의 수를 3-5배 줄일 수 있음을 입증했다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning",
+    "abstract": "Recent advances in Multimodal Large Language Models (MLLMs) have demonstrated\nimpressive capabilities across various vision-language tasks. However, their\nreasoning abilities in the multimodal symbolic music domain remain largely\nunexplored. We introduce WildScore, the first in-the-wild multimodal symbolic\nmusic reasoning and analysis benchmark, designed to evaluate MLLMs' capacity to\ninterpret real-world music scores and answer complex musicological queries.\nEach instance in WildScore is sourced from genuine musical compositions and\naccompanied by authentic user-generated questions and discussions, capturing\nthe intricacies of practical music analysis. To facilitate systematic\nevaluation, we propose a systematic taxonomy, comprising both high-level and\nfine-grained musicological ontologies. Furthermore, we frame complex music\nreasoning as multiple-choice question answering, enabling controlled and\nscalable assessment of MLLMs' symbolic music understanding. Empirical\nbenchmarking of state-of-the-art MLLMs on WildScore reveals intriguing patterns\nin their visual-symbolic reasoning, uncovering both promising directions and\npersistent challenges for MLLMs in symbolic music reasoning and analysis. We\nrelease the dataset and code.",
+    "authors": [
+      "Gagan Mundada",
+      "Yash Vishe",
+      "Amit Namburi",
+      "Xin Xu",
+      "Zachary Novack",
+      "Julian McAuley",
+      "Junda Wu"
+    ],
+    "likes": 8,
+    "published_date": "Sep 5",
+    "url": "https://huggingface.co/papers/2509.04744",
+    "date_collected": "2025-09-09T07:07:36.252581+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "WildScore: 야외에서의 기호 음악 추론에 대한 MLLM 벤치마킹",
+      "abstract": "최근의 다중모달 대형 언어 모델(Multimodal Large Language Models, MLLMs)의 발전은 다양한 시각-언어 작업에서 놀라운 능력을 보여주었습니다. 그러나 이러한 모델의 추론 능력이 다중 모달 기호 음악 영역에서는 아직 충분히 탐구되지 않았습니다. 본 연구에서는 첫 번째 야외에서의 다중모달 기호 음악 추론 및 분석 벤치마킹인 WildScore을 소개합니다. WildScore은 실제 음악 작품에서 비롯된 각 사례가 실용적인 음악 분석의 복잡성을 담은 질문과 토론과 함께 제시됩니다. 이를 통해 MLLMs가 현실 세계의 악보를 해석하고 복잡한 음악학적 질문에 답하는 능력을 평가합니다. 우리는 체계적인 분류법을 제안하여 높은 수준과 세분화된 음악학 체계를 포함하였습니다. 또한 다중선택형 질문 응답으로 복잡한 음악 추론을 프레임화하여 MLLMs의 기호 음악 이해력을 효율적으로 평가합니다. WildScore에서 최첨단 MLLMs의 경험적인 벤치마킹을 통해 그들의 시각-기호적 추론에서 흥미로운 패턴을 발견하며, MLLMs가 기호 음악 추론 및 분석에서 직면한 유망한 방향과 지속적인 과제를 밝혀냅니다. 우리는 데이터셋과 코드를 공개합니다."
+    },
+    "summary": "1. WildScore는 다중모달 대형 언어 모델의 기호 음악 이해 능력을 평가하기 위한 실제 음악 작품 기반 벤치마킹으로, 음악학적 질문에 대한 해답을 제시합니다.\n2. 연구에서는 다중선택형 질문 응답을 통해 MLLMs의 심벌릭 음악 추론 능력을 체계적으로 검증하며, 복잡한 음악 이해를 가능케 합니다.\n3. WildScore의 벤치마킹 결과는 MLLMs의 시각-기호적 추론에서 유망한 방향과 과제를 밝히며, 데이터셋과 코드를 공개하여 이에 대한 연구를 활성화합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "LatticeWorld: A Multimodal Large Language Model-Empowered Framework for\n  Interactive Complex World Generation",
+    "abstract": "Recent research has been increasingly focusing on developing 3D world models\nthat simulate complex real-world scenarios. World models have found broad\napplications across various domains, including embodied AI, autonomous driving,\nentertainment, etc. A more realistic simulation with accurate physics will\neffectively narrow the sim-to-real gap and allow us to gather rich information\nabout the real world conveniently. While traditional manual modeling has\nenabled the creation of virtual 3D scenes, modern approaches have leveraged\nadvanced machine learning algorithms for 3D world generation, with most recent\nadvances focusing on generative methods that can create virtual worlds based on\nuser instructions. This work explores such a research direction by proposing\nLatticeWorld, a simple yet effective 3D world generation framework that\nstreamlines the industrial production pipeline of 3D environments. LatticeWorld\nleverages lightweight LLMs (LLaMA-2-7B) alongside the industry-grade rendering\nengine (e.g., Unreal Engine 5) to generate a dynamic environment. Our proposed\nframework accepts textual descriptions and visual instructions as multimodal\ninputs and creates large-scale 3D interactive worlds with dynamic agents,\nfeaturing competitive multi-agent interaction, high-fidelity physics\nsimulation, and real-time rendering. We conduct comprehensive experiments to\nevaluate LatticeWorld, showing that it achieves superior accuracy in scene\nlayout generation and visual fidelity. Moreover, LatticeWorld achieves over a\n90times increase in industrial production efficiency while maintaining high\ncreative quality compared with traditional manual production methods. Our demo\nvideo is available at https://youtu.be/8VWZXpERR18",
+    "authors": [
+      "Yinglin Duan",
+      "Zhengxia Zou",
+      "Tongwei Gu",
+      "Wei Jia",
+      "Zhan Zhao",
+      "Luyi Xu",
+      "Xinzhu Liu",
+      "Hao Jiang",
+      "Kang Chen",
+      "Shuang Qiu"
+    ],
+    "likes": 6,
+    "published_date": "Sep 5",
+    "url": "https://huggingface.co/papers/2509.05263",
+    "date_collected": "2025-09-09T07:07:36.253903+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "LatticeWorld: 대화형 복잡한 세계 생성을 위한 멀티모달 대형 언어 모델 기반의 프레임워크",
+      "abstract": "최근 연구는 복잡한 현실 시나리오를 모방하는 3D 세계 모델 개발에 점점 더 초점을 맞추고 있습니다. 세계 모델은 적용 분야가 다양한데, 그중에는 신체화된 AI, 자율 주행, 엔터테인먼트 등이 있습니다. 정확한 물리학적 시뮬레이션을 통한 더 리얼리스틱한 시뮬레이션은 sim-to-real 간극을 줄이고 현실 세계에 대한 풍부한 정보를 편리하게 수집할 수 있도록 합니다. 이 작업은 LatticeWorld를 제안함으로써 이러한 연구 방향을 탐구하며, LatticeWorld는 3D 환경의 산업 생산 파이프라인을 최적화하는 간단하고 효과적인 3D 세계 생성 프레임워크입니다."
+    },
+    "summary": "1. LatticeWorld는 가벼운 LLMs(LaMa-2-7B)를 활용하여 산업용 렌더링 엔진(예: Unreal Engine 5)과 함께 동적 환경을 생성하며, 텍스트 설명과 시각적 지침을 입력으로 받아 경쟁력 있는 다중 에이전트 상호작용, 고사실도 물리 시뮬레이션, 실시간 렌더링을 갖춘 대규모 3D 대화형 세계를 만듭니다.\n2. LatticeWorld는 장면 레이아웃 생성과 시각적 충실성에서 우수한 정확도를 달성하며, 전통적인 수동 생산 방법과 비교하여 제작 효율성을 90배 이상 향상시키면서 높은 창의적 품질을 유지합니다.\n3. LatticeWorld는 사용자 지침에 따라 가상 세계를 생성할 수 있는 생성 메커니즘에 초점을 맞춘 현대적인 기계 학습 알고리즘을 활용하고 있습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "LuxDiT: Lighting Estimation with Video Diffusion Transformer",
+    "abstract": "Estimating scene lighting from a single image or video remains a longstanding\nchallenge in computer vision and graphics. Learning-based approaches are\nconstrained by the scarcity of ground-truth HDR environment maps, which are\nexpensive to capture and limited in diversity. While recent generative models\noffer strong priors for image synthesis, lighting estimation remains difficult\ndue to its reliance on indirect visual cues, the need to infer global\n(non-local) context, and the recovery of high-dynamic-range outputs. We propose\nLuxDiT, a novel data-driven approach that fine-tunes a video diffusion\ntransformer to generate HDR environment maps conditioned on visual input.\nTrained on a large synthetic dataset with diverse lighting conditions, our\nmodel learns to infer illumination from indirect visual cues and generalizes\neffectively to real-world scenes. To improve semantic alignment between the\ninput and the predicted environment map, we introduce a low-rank adaptation\nfinetuning strategy using a collected dataset of HDR panoramas. Our method\nproduces accurate lighting predictions with realistic angular high-frequency\ndetails, outperforming existing state-of-the-art techniques in both\nquantitative and qualitative evaluations.",
+    "authors": [
+      "Ruofan Liang",
+      "Kai He",
+      "Zan Gojcic",
+      "Igor Gilitschenski",
+      "Sanja Fidler",
+      "Nandita Vijaykumar",
+      "Zian Wang"
+    ],
+    "likes": 6,
+    "published_date": "Sep 3",
+    "url": "https://huggingface.co/papers/2509.03680",
+    "date_collected": "2025-09-09T07:07:36.255084+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "LuxDiT: 비디오 확산 트랜스포머를 이용한 조명 추정",
+      "abstract": "단일 이미지나 비디오로부터 장면 조명을 추정하는 것은 컴퓨터 비전과 그래픽 분야에서 계속되는 어려움입니다. 학습 기반 접근법은 HDR 환경 맵의 희소성으로 제약을 받는데, 이는 캡처 비용이 많이 들고 다양성이 제한적입니다. 최근 생성 모델은 이미지 합성에 강력한 사전 지식을 제공하지만, 조명 추정은 간접적인 시각 신호에 의존하며 비전역적인 맥락을 추론해야 하며 고 다이내믹 레인지 출력을 회복해야 하는 어려움이 있습니다. 본 논문에서는 LuxDiT를 제안합니다. 이는 비주얼 입력에 의존하는 HDR 환경 맵을 생성하기 위해 비디오 확산 트랜스포머를 세밀하게 조정하는 새로운 데이터 주도 접근 방법입니다."
+    },
+    "summary": "1. LuxDiT는 비디오 확산 트랜스포머를 활용하여 HDR 환경 맵을 생성하고 장면 조명을 추정하는 데이터 주도 방법으로, 풍부한 합성 데이터셋을 통해 간접적인 시각 신호에서 조명을 추론하며 현실적인 장면에 잘 일반화됩니다.\n2. 입력과 예측된 환경 맵 간의 의미적 정렬을 향상시키기 위해 저랭크 적응 세부 조정 전략을 사용하며, 각도 높은 주파수 세부 사항을 포함한 정확한 조명 예측을 제공하여, 양적 및 질적 평가에서 기존 기술을 능가합니다.\n3. 조명 추정 분야에서 LuxDiT의 성능은 기존 최첨단 기술들보다 우수하며, 다양한 조명 조건을 가진 대규모 합성 데이터셋을 기반으로 효과적으로 작동함이 입증되었습니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "WinT3R: Window-Based Streaming Reconstruction with Camera Token Pool",
+    "abstract": "We present WinT3R, a feed-forward reconstruction model capable of online\nprediction of precise camera poses and high-quality point maps. Previous\nmethods suffer from a trade-off between reconstruction quality and real-time\nperformance. To address this, we first introduce a sliding window mechanism\nthat ensures sufficient information exchange among frames within the window,\nthereby improving the quality of geometric predictions without large\ncomputation. In addition, we leverage a compact representation of cameras and\nmaintain a global camera token pool, which enhances the reliability of camera\npose estimation without sacrificing efficiency. These designs enable WinT3R to\nachieve state-of-the-art performance in terms of online reconstruction quality,\ncamera pose estimation, and reconstruction speed, as validated by extensive\nexperiments on diverse datasets. Code and model are publicly available at\nhttps://github.com/LiZizun/WinT3R.",
+    "authors": [
+      "Zizun Li",
+      "Jianjun Zhou",
+      "Yifan Wang",
+      "Haoyu Guo",
+      "Wenzheng Chang",
+      "Yang Zhou",
+      "Haoyi Zhu",
+      "Junyi Chen",
+      "Chunhua Shen",
+      "Tong He"
+    ],
+    "likes": 3,
+    "published_date": "Sep 5",
+    "url": "https://huggingface.co/papers/2509.05296",
+    "date_collected": "2025-09-09T07:07:36.256398+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "윈터: 윈도우 기반 스트리밍 재구성과 카메라 토큰 풀로의 접근",
+      "abstract": "저희는 온라인에서 정확한 카메라 위치와 고품질 포인트 지도를 예측할 수 있는 피드포워드 재구성 모델인 윈터를 제안합니다. 기존 방법들은 재구성 품질과 실시간 성능 사이의 절충이 있었습니다. 이를 해결하기 위해 먼저 윈도우 내 프레임들 간의 충분한 정보 교환을 보장하는 슬라이딩 윈도우 메커니즘을 도입하여 대규모 계산 없이도 기하학 예측 품질을 향상시킵니다. 또한 카메라의 간결한 표현을 활용하고 전역 카메라 토큰 풀을 유지하여 카메라 위치 추정의 신뢰성을 향상시키면서도 효율성을 희생하지 않습니다. 이러한 설계는 윈터가 다양한 데이터셋에서의 실험을 통해 온라인 재구성 품질, 카메라 위치 추정 및 재구성 속도 면에서 최고 수준의 성능을 달성할 수 있음을 입증합니다. 코드 및 모델은 https://github.com/LiZizun/WinT3R에서 공개되어 있습니다."
+    },
+    "summary": "1. 윈터는 슬라이딩 윈도우 메커니즘을 활용하여 온라인에서 정확한 카메라 위치와 고품질 포인트 지도를 예측하는 모델이다.\n2. 카메라의 간결한 표현과 전역 카메라 토큰 풀을 유지하여 기하학 예측의 품질을 향상시키며 계산 효율성을 높인다.\n3. 윈터는 다양한 데이터셋에서 실험을 통해 온라인 재구성 품질, 카메라 위치 추정 및 재구성 속도 면에서 우수한 성능을 보인다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MedVista3D: Vision-Language Modeling for Reducing Diagnostic Errors in\n  3D CT Disease Detection, Understanding and Reporting",
+    "abstract": "Radiologic diagnostic errors-under-reading errors, inattentional blindness,\nand communication failures-remain prevalent in clinical practice. These issues\noften stem from missed localized abnormalities, limited global context, and\nvariability in report language. These challenges are amplified in 3D imaging,\nwhere clinicians must examine hundreds of slices per scan. Addressing them\nrequires systems with precise localized detection, global volume-level\nreasoning, and semantically consistent natural language reporting. However,\nexisting 3D vision-language models are unable to meet all three needs jointly,\nlacking local-global understanding for spatial reasoning and struggling with\nthe variability and noise of uncurated radiology reports. We present\nMedVista3D, a multi-scale semantic-enriched vision-language pretraining\nframework for 3D CT analysis. To enable joint disease detection and holistic\ninterpretation, MedVista3D performs local and global image-text alignment for\nfine-grained representation learning within full-volume context. To address\nreport variability, we apply language model rewrites and introduce a Radiology\nSemantic Matching Bank for semantics-aware alignment. MedVista3D achieves\nstate-of-the-art performance on zero-shot disease classification, report\nretrieval, and medical visual question answering, while transferring well to\norgan segmentation and prognosis prediction. Code and datasets will be\nreleased.",
+    "authors": [
+      "Yuheng Li",
+      "Yenho Chen",
+      "Yuxiang Lai",
+      "Jike Zhong",
+      "Vanessa Wildman",
+      "Xiaofeng Yang"
+    ],
+    "likes": 3,
+    "published_date": "Sep 4",
+    "url": "https://huggingface.co/papers/2509.03800",
+    "date_collected": "2025-09-09T07:07:36.257534+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "MedVista3D: 3D CT 질병 감지, 이해 및 보고를 위한 질병 진단 오류 감소를 위한 비전-언어 모델링",
+      "abstract": "영상의 진단 오류인 읽기 오류, 주의 블라인드, 커뮤니케이션 실패는 임상 실무에서 여전히 유행합니다. 이러한 문제는 종종 지역화된 이상 소견의 누락, 제한된 전역적 맥락 및 보고 언어의 변이로부터 비롯됩니다. 이러한 도전에는 정확한 지역화된 감지, 전역적 볼륨 수준 추론 및 의미론적 일관성 있는 자연어 보고 시스템이 필요합니다. 그러나 기존의 3D 비전-언어 모델은 명확한 전역 이해를 위한 지역-전역 이해가 불가능하며, 편향되지 않은 방사선학 보고의 변동성과 소음으로 인해 고생합니다. 본 논문에서는 3D CT 분석을 위한 다중 스케일 의미론적으로 풍부한 비전-언어 사전 훈련 프레임워크인 MedVista3D를 제안합니다. 질병 감지와 전체적 해석을 위한 MedVista3D는 완전 볼륨 맥락 내에서 세밀한 표현 학습을 위한 지역 및 전역 이미지-텍스트 정렬을 수행합니다. 보고 변이에 대응하기 위해 언어 모델 재작성을 적용하고 의미론적 일치를 위한 방사선학 의미 일치 은행을 소개합니다. MedVista3D는 제로샷 질병 분류, 보고 검색 및 의학적 시각 질문 답변에서 최고 수준의 성능을 달성하며 장기 예후 예측 및 장기 분할로의 전이도 우수합니다. 코드 및 데이터셋은 공개될 예정입니다."
+    },
+    "summary": "1. MedVista3D는 3D CT 분석을 위한 다중 스케일 의미론적으로 풍부한 비전-언어 사전 훈련 프레임워크로, 지역화된 감지, 전체적 추론, 의미론적 일치 보고를 수행하여 질병 분류, 보고 검색, 의학적 시각 질문 답변에서 최고 수준의 성능을 보입니다.\n2. MedVista3D는 방사선학 보고의 변이에 대응하기 위해 언어 모델 재작성과 방사선학 의미 일치 은행을 활용하여 제로샷 질병 분류 및 보고 검색에서 우수한 성과를 보입니다.\n3. MedVista3D는 신체 장기 분할 및 예후 예측으로의 전이에서도 효과적이며, 코드와 데이터셋은 공개될 예정입니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "On Robustness and Reliability of Benchmark-Based Evaluation of LLMs",
+    "abstract": "Large Language Models (LLMs) effectiveness is usually evaluated by means of\nbenchmarks such as MMLU, ARC-C, or HellaSwag, where questions are presented in\ntheir original wording, thus in a fixed, standardized format. However,\nreal-world applications involve linguistic variability, requiring models to\nmaintain their effectiveness across diverse rewordings of the same question or\nquery. In this study, we systematically assess the robustness of LLMs to\nparaphrased benchmark questions and investigate whether benchmark-based\nevaluations provide a reliable measure of model capabilities. We systematically\ngenerate various paraphrases of all the questions across six different common\nbenchmarks, and measure the resulting variations in effectiveness of 34\nstate-of-the-art LLMs, of different size and effectiveness. Our findings reveal\nthat while LLM rankings remain relatively stable across paraphrased inputs,\nabsolute effectiveness scores change, and decline significantly. This suggests\nthat LLMs struggle with linguistic variability, raising concerns about their\ngeneralization abilities and evaluation methodologies. Furthermore, the\nobserved performance drop challenges the reliability of benchmark-based\nevaluations, indicating that high benchmark scores may not fully capture a\nmodel's robustness to real-world input variations. We discuss the implications\nof these findings for LLM evaluation methodologies, emphasizing the need for\nrobustness-aware benchmarks that better reflect practical deployment scenarios.",
+    "authors": [
+      "Riccardo Lunardi",
+      "Vincenzo Della Mea",
+      "Stefano Mizzaro",
+      "Kevin Roitero"
+    ],
+    "likes": 2,
+    "published_date": "Sep 4",
+    "url": "https://huggingface.co/papers/2509.04013",
+    "date_collected": "2025-09-09T07:07:36.258585+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "LLM의 강인성과 신뢰성에 관한 벤치마크 기반 평가",
+      "abstract": "대규모 언어 모델(LLMs)의 효과성은 MMLU, ARC-C, 또는 HellaSwag와 같은 벤치마크를 통해 평가됩니다. 그러나 실제 응용 프로그램은 언어적 다양성이 포함되어 모델이 동일한 질문 또는 쿼리의 다양한 다시 말을 통해 효과를 유지해야 합니다. 본 연구에서는 LLMs의 강조력을 체계적으로 평가하고 벤치마크 기반 평가가 모델 능력의 신뢰할 수 있는 척도를 제공하는지 조사합니다."
+    },
+    "summary": "1. 다양한 벤치마크 질문의 다양한 다시 말에 대한 LLMs의 효과성을 측정하여 모델의 안정성 평가.\n2. LLMs의 랭킹이 비교적 안정적이지만 절대 효과 점수가 변경되어 뚜렷한 하락을 나타내며, 언어적 다양성에 어려움을 겪음.\n3. 벤치마크 기반 평가의 신뢰성에 대한 의문 제기하며, 실제 세계의 입력 변화에 대한 모델의 강도를 완전히 포착하지 못할 수 있음.",
+    "categories": [
+      "LLM",
+      "기계학습",
+      "자연어 처리"
+    ]
+  },
+  {
+    "title": "U-ARM : Ultra low-cost general teleoperation interface for robot\n  manipulation",
+    "abstract": "We propose U-Arm, a low-cost and rapidly adaptable leader-follower\nteleoperation framework designed to interface with most of commercially\navailable robotic arms. Our system supports teleoperation through three\nstructurally distinct 3D-printed leader arms that share consistent control\nlogic, enabling seamless compatibility with diverse commercial robot\nconfigurations. Compared with previous open-source leader-follower interfaces,\nwe further optimized both the mechanical design and servo selection, achieving\na bill of materials (BOM) cost of only \\50.5 for the 6-DoF leader arm and\n56.8 for the 7-DoF version. To enhance usability, we mitigate the common\nchallenge in controlling redundant degrees of freedom by %engineering methods\nmechanical and control optimizations. Experimental results demonstrate that\nU-Arm achieves 39\\% higher data collection efficiency and comparable task\nsuccess rates across multiple manipulation scenarios compared with Joycon,\nanother low-cost teleoperation interface. We have open-sourced all CAD models\nof three configs and also provided simulation support for validating\nteleoperation workflows. We also open-sourced real-world manipulation data\ncollected with U-Arm. The project website is\nhttps://github.com/MINT-SJTU/LeRobot-Anything-U-Arm.",
+    "authors": [
+      "Yanwen Zou",
+      "Zhaoye Zhou",
+      "Chenyang Shi",
+      "Zewei Ye",
+      "Junda Huang",
+      "Yan Ding",
+      "Bo Zhao"
+    ],
+    "likes": 1,
+    "published_date": "Sep 2",
+    "url": "https://huggingface.co/papers/2509.02437",
+    "date_collected": "2025-09-09T07:07:36.259744+09:00",
+    "week": "2025-W37",
+    "translation": {
+      "title": "U-ARM: 저렴한 비용으로 제작된 로봇 조작을 위한 인터페이스",
+      "abstract": "U-Arm은 대부분의 상업적으로 이용 가능한 로봇 팔과 상호 작용할 수 있는 저렴하고 빠르게 적응 가능한 리더-팔로우 원격 조작 시스템을 제안합니다. 우리의 시스템은 일관된 제어 논리를 공유하는 세 가지 구조적으로 다른 3D 프린트된 리더 팔을 통해 원격 조작을 지원하며, 다양한 상업적 로봇 구성과 원활하게 호환됩니다."
+    },
+    "summary": "1. U-Arm은 저렴한 가격으로 다양한 상업적 로봇과 상호 작용할 수 있는 리더-팔로우 원격 조작 시스템을 제안하며, 메카니컬 디자인과 서보 선택을 최적화하여 저렴한 재료비로 구현합니다.\n2. 불필요한 자유도를 효과적으로 제어하기 위해 엔지니어링 및 제어 최적화를 통해 사용성을 향상시키고, Joycon과 비교하여 데이터 수집 효율이 39% 향상되고 여러 조작 시나리오에서 유사한 작업 성공률을 보입니다.\n3. U-Arm은 세 가지 구성의 모든 CAD 모델을 오픈 소스로 제공하며, 텔레오퍼레이션 워크플로우를 검증하기 위한 시뮬레이션 지원과 실제 조작 데이터를 오픈 소스로 제공합니다.",
+    "categories": [
+      "Robotics",
+      "Other"
+    ]
+  }
+]

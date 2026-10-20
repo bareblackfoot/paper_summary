@@ -1,0 +1,119 @@
+=== Paper Collection Started at Fri Jul 31 23:09:17 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W31
+URL: https://huggingface.co/papers/week/2026-W31
+Found 10 papers in weekly view
+Fetching likes for: Kimi K3: Open Frontier Intelligence
+Fetching likes for: AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis
+Fetching likes for: Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents
+Fetching likes for: Metis: Memory Foundation Model
+Fetching likes for: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Fetching likes for: PhiZero: A World Model Built Around Physical Language
+Fetching likes for: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Fetching likes for: Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering
+Fetching likes for: TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM
+Fetching likes for: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Selected top 10 papers by likes:
+1. Kimi K3: Open Frontier Intelligence (412 likes)
+2. AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis (279 likes)
+3. Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents (264 likes)
+4. Metis: Memory Foundation Model (240 likes)
+5. Progress Reward Modeling for Robotic Learning: A Comprehensive Survey (192 likes)
+6. PhiZero: A World Model Built Around Physical Language (148 likes)
+7. HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone (144 likes)
+8. Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering (123 likes)
+9. TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM (122 likes)
+10. JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents (120 likes)
+Found abstract: We introduce Kimi K3, a 2.8T parameter Mixture-of-Experts model with 104 billion activated parameter...
+Processed paper: Kimi K3: Open Frontier Intelligence
+Found abstract: Chemistry literature synthesis often requires assembling specific findings scattered across many pub...
+Processed paper: AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis
+Found abstract: GUI agents have the potential to become a general purpose executor over existing digital devices. To...
+Processed paper: Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents
+Found abstract: Recent advances in AI agents have increasingly internalized native capabilities into their underlyin...
+Processed paper: Metis: Memory Foundation Model
+Found abstract: Robotic learning takes place in dynamic environments with large behavior spaces. A terminal success ...
+Processed paper: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Found abstract: We introduce PhiZero, a physical world model built around physical language, a compact discrete repr...
+Processed paper: PhiZero: A World Model Built Around Physical Language
+Found abstract: Learning deployable manipulation policies is bottlenecked by the scarcity of data that is both high-...
+Processed paper: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Found abstract: Recursive self-improvement (RSI) requires AI systems that improve the process of building AI (i.e., ...
+Processed paper: Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering
+Found abstract: Vision-language-action (VLA) models commonly adopt an LLM-centric V to L to A pathway, where visual ...
+Processed paper: TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM
+Found abstract: Creative AI is moving from single-step asset generation toward long-horizon multimodal production. A...
+Processed paper: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Kimi K3: Open Frontier Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 412  ->  386
+Update date_collected: 2026-08-01T08:09:25.666842+09:00  ->  2026-07-31T08:13:04.965639+09:00
+
+Processing paper 2/10
+Title: AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Metis: Memory Foundation Model
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Paper already exists, checking if translation is complete...
+Update likes: 192  ->  191
+Update date_collected: 2026-08-01T08:09:25.677230+09:00  ->  2026-07-31T08:13:04.969135+09:00
+
+Processing paper 6/10
+Title: PhiZero: A World Model Built Around Physical Language
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Paper already exists, checking if translation is complete...
+Update likes: 144  ->  141
+Update date_collected: 2026-08-01T08:09:25.682342+09:00  ->  2026-07-31T08:13:04.973155+09:00
+
+Processing paper 8/10
+Title: Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM
+Paper already exists, checking if translation is complete...
+Update likes: 122  ->  119
+Update date_collected: 2026-08-01T08:09:25.687818+09:00  ->  2026-07-31T08:13:04.976568+09:00
+
+Processing paper 10/10
+Title: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Paper already exists, checking if translation is complete...
+Update likes: 120  ->  119
+Update date_collected: 2026-08-01T08:09:25.690853+09:00  ->  2026-07-31T08:13:04.980786+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W31.json...
+
+Updating Notion database...
+Updating paper: Kimi K3: 오픈 프론티어 인텔리전스 (likes: 386 -> 412)
+Creating new paper: 화학 문헌 종합을 위한 주장 중심 인프라: AskChem
+Creating new paper: 혁신적인 실세계 중심 GUI 에이전트를 향한 Qwen-UI-Agent 기술 보고서
+Creating new paper: 메티스: 메모리 기반 모델
+Updating paper: 로봇 학습을 위한 진행 보상 모델링: 포괄적인 조사 (likes: 191 -> 192)
+Creating new paper: PhiZero: 물리 언어를 중심으로 구축된 세계 모델
+Updating paper: HiFi-UMI: 고품질 UMI 데이터만을 활용한 전달 가능한 조작 정책 학습 (likes: 141 -> 144)
+Creating new paper: Frontis-MA1: 기계 학습 엔지니어링에서 재귀적 자가개선을 위한 AI4AI 모델 훈련
+Updating paper: TurboVLA: RTX 4090에서 32 Hz의 실시간 Vision-Language-Action 모델, VRAM 1GB 미만으로 (likes: 119 -> 122)
+Updating paper: JarvisHub: 캔버스 기반 다중 모달 창조적 에이전트를 위한 개방형 하네스 (likes: 119 -> 120)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Jul 31 23:10:40 UTC 2026 ===
+

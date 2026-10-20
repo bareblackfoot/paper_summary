@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Nov 17 22:07:53 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W47
+URL: https://huggingface.co/papers/week/2025-W47
+Found 10 papers in weekly view
+Fetching likes for: DoPE: Denoising Rotary Position Embedding
+Fetching likes for: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation
+Fetching likes for: GGBench: A Geometric Generative Reasoning Benchmark for Unified Multimodal Models
+Fetching likes for: UI2Code^N: A Visual Language Model for Test-Time Scalable Interactive UI-to-Code Generation
+Fetching likes for: AIonopedia: an LLM agent orchestrating multimodal learning for ionic liquid discovery
+Fetching likes for: Virtual Width Networks
+Fetching likes for: LiteAttention: A Temporal Sparse Attention for Diffusion Transformers
+Fetching likes for: Simulating the Visual World with Artificial Intelligence: A Roadmap
+Fetching likes for: SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards
+Fetching likes for: HI-TransPA: Hearing Impairments Translation Personal Assistant
+Selected top 10 papers by likes:
+1. DoPE: Denoising Rotary Position Embedding (57 likes)
+2. WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation (40 likes)
+3. GGBench: A Geometric Generative Reasoning Benchmark for Unified Multimodal Models (29 likes)
+4. UI2Code^N: A Visual Language Model for Test-Time Scalable Interactive UI-to-Code Generation (28 likes)
+5. AIonopedia: an LLM agent orchestrating multimodal learning for ionic liquid discovery (24 likes)
+6. Virtual Width Networks (22 likes)
+7. LiteAttention: A Temporal Sparse Attention for Diffusion Transformers (21 likes)
+8. Simulating the Visual World with Artificial Intelligence: A Roadmap (17 likes)
+9. SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards (10 likes)
+10. HI-TransPA: Hearing Impairments Translation Personal Assistant (6 likes)
+Found abstract: Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrap...
+Processed paper: DoPE: Denoising Rotary Position Embedding
+Found abstract: Recent advances in unified multimodal models (UMMs) have enabled impressive progress in visual compr...
+Processed paper: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation
+Found abstract: The advent of Unified Multimodal Models (UMMs) signals a paradigm shift in artificial intelligence, ...
+Processed paper: GGBench: A Geometric Generative Reasoning Benchmark for Unified Multimodal Models
+Found abstract: User interface (UI) programming is a core yet highly complex part of modern software development. Re...
+Processed paper: UI2Code^N: A Visual Language Model for Test-Time Scalable Interactive UI-to-Code Generation
+Found abstract: The discovery of novel Ionic Liquids (ILs) is hindered by critical challenges in property prediction...
+Processed paper: AIonopedia: an LLM agent orchestrating multimodal learning for ionic liquid discovery
+Found abstract: We introduce Virtual Width Networks (VWN), a framework that delivers the benefits of wider represent...
+Processed paper: Virtual Width Networks
+Found abstract: Diffusion Transformers, particularly for video generation, achieve remarkable quality but suffer fro...
+Processed paper: LiteAttention: A Temporal Sparse Attention for Diffusion Transformers
+Found abstract: The landscape of video generation is shifting, from a focus on generating visually appealing clips t...
+Processed paper: Simulating the Visual World with Artificial Intelligence: A Roadmap
+Found abstract: Multimodal large language models (MLLMs) have achieved remarkable progress in vision-language tasks,...
+Processed paper: SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards
+Found abstract: To provide a unified and flexible solution for daily communication among hearing-impaired individual...
+Processed paper: HI-TransPA: Hearing Impairments Translation Personal Assistant
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: DoPE: Denoising Rotary Position Embedding
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: GGBench: A Geometric Generative Reasoning Benchmark for Unified Multimodal Models
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: UI2Code^N: A Visual Language Model for Test-Time Scalable Interactive UI-to-Code Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: AIonopedia: an LLM agent orchestrating multimodal learning for ionic liquid discovery
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Virtual Width Networks
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: LiteAttention: A Temporal Sparse Attention for Diffusion Transformers
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Simulating the Visual World with Artificial Intelligence: A Roadmap
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: HI-TransPA: Hearing Impairments Translation Personal Assistant
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W47.json...
+
+Updating Notion database...
+Creating new paper: DoPE: Denoising Rotary Position Embedding
+Creating new paper: WEAVE: 문맥 속 교차된 이해와 생성의 발휘와 평가
+Creating new paper: GGBench: 통합 다중 모달 모델을 위한 기하학적 생성 추론 벤치마크
+Creating new paper: UI2Code^N: 스케일 가능한 상호작용형 UI-to-Code 생성을 위한 시각적 언어 모델
+Creating new paper: AIonopedia: 멀티모달 학습을 조합한 LLM 에이전트로 이온성 액체 발견
+Creating new paper: 가상 너비 네트워크
+Creating new paper: LiteAttention: 확산 트랜스포머를 위한 시간적 희소 어텐션
+Creating new paper: 인공 지능을 활용한 시각적 세계 시뮬레이션: 로드맵
+Creating new paper: SpatialThinker: 3D 공간 추론 강화를 통한 다중모달 LLMs
+Creating new paper: 청각장애 번역 개인 비서 HI-TransPA
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Nov 17 22:09:32 UTC 2025 ===
+

@@ -1,0 +1,131 @@
+=== Paper Collection Started at Fri Jul 11 22:07:53 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W28
+URL: https://huggingface.co/papers/week/2025-W28
+Found 10 papers in weekly view
+Fetching likes for: MemOS: A Memory OS for AI System
+Fetching likes for: Scaling RL to Long Videos
+Fetching likes for: SingLoRA: Low Rank Adaptation Using a Single Matrix
+Fetching likes for: T-LoRA: Single Image Diffusion Model Customization Without Overfitting
+Fetching likes for: Should We Still Pretrain Encoders with Masked Language Modeling?
+Fetching likes for: A Survey on Latent Reasoning
+Fetching likes for: 4KAgent: Agentic Any Image to 4K Super-Resolution
+Fetching likes for: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving
+Fetching likes for: Skywork-R1V3 Technical Report
+Fetching likes for: MIRIX: Multi-Agent Memory System for LLM-Based Agents
+Selected top 10 papers by likes:
+1. MemOS: A Memory OS for AI System (103 likes)
+2. Scaling RL to Long Videos (88 likes)
+3. SingLoRA: Low Rank Adaptation Using a Single Matrix (84 likes)
+4. T-LoRA: Single Image Diffusion Model Customization Without Overfitting (81 likes)
+5. Should We Still Pretrain Encoders with Masked Language Modeling? (72 likes)
+6. A Survey on Latent Reasoning (68 likes)
+7. 4KAgent: Agentic Any Image to 4K Super-Resolution (66 likes)
+8. Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving (64 likes)
+9. Skywork-R1V3 Technical Report (52 likes)
+10. MIRIX: Multi-Agent Memory System for LLM-Based Agents (48 likes)
+Found abstract: Large Language Models (LLMs) have become an essential infrastructure for
+Artificial General Intellig...
+Processed paper: MemOS: A Memory OS for AI System
+Found abstract: We introduce a full-stack framework that scales up reasoning in
+vision-language models (VLMs) to lon...
+Processed paper: Scaling RL to Long Videos
+Found abstract: Low-Rank Adaptation (LoRA) has significantly advanced parameter-efficient
+fine-tuning of large pretr...
+Processed paper: SingLoRA: Low Rank Adaptation Using a Single Matrix
+Found abstract: While diffusion model fine-tuning offers a powerful approach for customizing
+pre-trained models to g...
+Processed paper: T-LoRA: Single Image Diffusion Model Customization Without Overfitting
+Found abstract: Learning high-quality text representations is fundamental to a wide range of
+NLP tasks. While encode...
+Processed paper: Should We Still Pretrain Encoders with Masked Language Modeling?
+Found abstract: Large Language Models (LLMs) have demonstrated impressive reasoning
+capabilities, especially when gu...
+Processed paper: A Survey on Latent Reasoning
+Found abstract: We present 4KAgent, a unified agentic super-resolution generalist system
+designed to universally ups...
+Processed paper: 4KAgent: Agentic Any Image to 4K Super-Resolution
+Found abstract: As language agents tackle increasingly complex tasks, they struggle with
+effective error correction ...
+Processed paper: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving
+Found abstract: We introduce Skywork-R1V3, an advanced, open-source vision-language model
+(VLM) that pioneers a new ...
+Processed paper: Skywork-R1V3 Technical Report
+Found abstract: Although memory capabilities of AI agents are gaining increasing attention,
+existing solutions remai...
+Processed paper: MIRIX: Multi-Agent Memory System for LLM-Based Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MemOS: A Memory OS for AI System
+Paper already exists, checking if translation is complete...
+Update likes: 103  ->  102
+Update date_collected: 2025-07-12T07:08:02.477576+09:00  ->  2025-07-11T07:07:34.726806+09:00
+
+Processing paper 2/10
+Title: Scaling RL to Long Videos
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: SingLoRA: Low Rank Adaptation Using a Single Matrix
+Paper already exists, checking if translation is complete...
+Update likes: 84  ->  80
+Update date_collected: 2025-07-12T07:08:02.480312+09:00  ->  2025-07-11T07:07:34.728000+09:00
+
+Processing paper 4/10
+Title: T-LoRA: Single Image Diffusion Model Customization Without Overfitting
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Should We Still Pretrain Encoders with Masked Language Modeling?
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  73
+Update date_collected: 2025-07-12T07:08:02.482761+09:00  ->  2025-07-11T07:07:34.729302+09:00
+
+Processing paper 6/10
+Title: A Survey on Latent Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  65
+Update date_collected: 2025-07-12T07:08:02.484620+09:00  ->  2025-07-11T07:07:34.731198+09:00
+
+Processing paper 7/10
+Title: 4KAgent: Agentic Any Image to 4K Super-Resolution
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  49
+Update date_collected: 2025-07-12T07:08:02.486041+09:00  ->  2025-07-11T07:07:34.734323+09:00
+
+Processing paper 8/10
+Title: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  61
+Update date_collected: 2025-07-12T07:08:02.487696+09:00  ->  2025-07-11T07:07:34.732857+09:00
+
+Processing paper 9/10
+Title: Skywork-R1V3 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: MIRIX: Multi-Agent Memory System for LLM-Based Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W28.json...
+
+Updating Notion database...
+Updating paper: MemOS: AI 시스템을 위한 메모리 운영 체제 (likes: 102 -> 103)
+Creating new paper: 비디오 역량 강화를 통한 강화 학습 확장
+Updating paper: 싱글로라: 단일 행렬을 이용한 저랭크 적응 (likes: 80 -> 84)
+Creating new paper: 오버피팅 없는 단일 이미지 확산 모델 맞춤화인 T-LoRA
+Updating paper: 마스크된 언어 모델링으로 인코더를 여전히 사전학습해야 할까요? (likes: 73 -> 72)
+Updating paper: 잠재 추론에 대한 조사 (likes: 65 -> 68)
+Updating paper: 4KAgent: 4K 초고해상도를 위한 에이전틱 에이전트 (likes: 49 -> 66)
+Updating paper: Cross-Domain 경험 활용을 통한 Agentic 문제 해결에 대한 Agent KB (likes: 61 -> 64)
+Creating new paper: Skywork-R1V3 기술 보고서
+Creating new paper: MIRIX: LLM 기반 에이전트를 위한 다중 에이전트 메모리 시스템
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Jul 11 22:09:49 UTC 2025 ===
+

@@ -1,0 +1,346 @@
+[
+  {
+    "title": "Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens",
+    "abstract": "Chain-of-Thought (CoT) prompting has been shown to improve Large Language\nModel (LLM) performance on various tasks. With this approach, LLMs appear to\nproduce human-like reasoning steps before providing answers (a.k.a., CoT\nreasoning), which often leads to the perception that they engage in deliberate\ninferential processes. However, some initial findings suggest that CoT\nreasoning may be more superficial than it appears, motivating us to explore\nfurther. In this paper, we study CoT reasoning via a data distribution lens and\ninvestigate if CoT reasoning reflects a structured inductive bias learned from\nin-distribution data, allowing the model to conditionally generate reasoning\npaths that approximate those seen during training. Thus, its effectiveness is\nfundamentally bounded by the degree of distribution discrepancy between the\ntraining data and the test queries. With this lens, we dissect CoT reasoning\nvia three dimensions: task, length, and format. To investigate each dimension,\nwe design DataAlchemy, an isolated and controlled environment to train LLMs\nfrom scratch and systematically probe them under various distribution\nconditions. Our results reveal that CoT reasoning is a brittle mirage that\nvanishes when it is pushed beyond training distributions. This work offers a\ndeeper understanding of why and when CoT reasoning fails, emphasizing the\nongoing challenge of achieving genuine and generalizable reasoning.",
+    "authors": [
+      "Chengshuai Zhao",
+      "Zhen Tan",
+      "Pingchuan Ma",
+      "Dawei Li",
+      "Bohan Jiang",
+      "Yancheng Wang",
+      "Yingzhen Yang",
+      "Huan Liu"
+    ],
+    "likes": 184,
+    "published_date": "Aug 2",
+    "url": "https://huggingface.co/papers/2508.01191",
+    "date_collected": "2025-08-11T07:07:49.052117+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "큰 언어 모델의 사고 연쇄 추론, 신기림인가? 데이터 분포 렌즈 관점",
+      "abstract": "사고 연쇄 (Chain-of-Thought, CoT) 프롬프팅은 다양한 작업에서 큰 언어 모델(Large Language Model, LLM)의 성능을 향상시키는 것으로 나타났습니다. 이 방식으로 LLM은 답변을 제공하기 전에 인간과 유사한 추론 단계를 보여주는 것처럼 보입니다 (즉, CoT 추론), 이는 종종 고의적 추론 과정에 참여한다는 인식으로 이어집니다. 그러나 일부 초기 연구 결과는 CoT 추론이 보이는 것보다 더 표면적일 수 있다는 것을 시사하여 우리를 더 탐구하도록 이끕니다. 본 논문에서는 CoT 추론을 데이터 분포 렌즈를 통해 연구하고, CoT 추론이 인풋 데이터로부터 학습된 구조화된 인지 편향을 반영하여 조건적으로 훈련 중 본격 추론 경로를 만들어내는 것인지 조사합니다. 이로써 그 효과는 훈련 데이터와 테스트 쿼리 간의 데이터 분포 불일치 정도에 근본적으로 제약을 받습니다. 이 렌즈를 통해 CoT 추론을 작업, 길이, 형식 이 세 가지 차원으로 분해하여 연구합니다. 각 차원을 조사하기 위해 우리는 DataAlchemy를 디자인하여 훈련 및 다양한 분포 조건에서 체계적으로 조사할 수 있는 격리 및 제어된 환경을 제공합니다. 결과는 CoT 추론이 훈련 분포를 벗어나면 사라지는 박해성 강림이라는 것을 드러냅니다. 본 연구는 CoT 추론이 왜 그리고 언제 실패하는지에 대한 보다 깊은 이해를 제공하며, 진정하고 일반화 가능한 추론 달성이 계속되는 과제임을 강조합니다."
+    },
+    "summary": "1. 큰 언어 모델의 사고 연쇄 추론은 훈련 데이터와 테스트 쿼리 간의 데이터 분포 불일치에 근본적으로 제한을 받아 취약한 메커니즘임을 밝혀냄.\n2. 연구는 작업, 길이, 형식이라는 세 가지 차원을 통해 CoT 추론을 분해하고 격리된 환경에서 체계적으로 조사하며, 그 결과는 CoT 추론이 훈련 분포를 벗어나면 사라지는 경향을 보임.\n3. CoT 추론의 실패 이유와 조건에 대한 심도 있는 이해를 제공하며, 진정하고 일반화 가능한 추론 달성의 계속적인 어려움을 강조함.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Qwen-Image Technical Report",
+    "abstract": "We present Qwen-Image, an image generation foundation model in the Qwen\nseries that achieves significant advances in complex text rendering and precise\nimage editing. To address the challenges of complex text rendering, we design a\ncomprehensive data pipeline that includes large-scale data collection,\nfiltering, annotation, synthesis, and balancing. Moreover, we adopt a\nprogressive training strategy that starts with non-text-to-text rendering,\nevolves from simple to complex textual inputs, and gradually scales up to\nparagraph-level descriptions. This curriculum learning approach substantially\nenhances the model's native text rendering capabilities. As a result,\nQwen-Image not only performs exceptionally well in alphabetic languages such as\nEnglish, but also achieves remarkable progress on more challenging logographic\nlanguages like Chinese. To enhance image editing consistency, we introduce an\nimproved multi-task training paradigm that incorporates not only traditional\ntext-to-image (T2I) and text-image-to-image (TI2I) tasks but also\nimage-to-image (I2I) reconstruction, effectively aligning the latent\nrepresentations between Qwen2.5-VL and MMDiT. Furthermore, we separately feed\nthe original image into Qwen2.5-VL and the VAE encoder to obtain semantic and\nreconstructive representations, respectively. This dual-encoding mechanism\nenables the editing module to strike a balance between preserving semantic\nconsistency and maintaining visual fidelity. Qwen-Image achieves\nstate-of-the-art performance, demonstrating its strong capabilities in both\nimage generation and editing across multiple benchmarks.",
+    "authors": [
+      "Chenfei Wu",
+      "Jiahao Li",
+      "Jingren Zhou",
+      "Junyang Lin",
+      "Kaiyuan Gao",
+      "Kun Yan",
+      "Sheng-ming Yin",
+      "Shuai Bai",
+      "Xiao Xu",
+      "Yilei Chen",
+      "Yuxiang Chen",
+      "Zecheng Tang",
+      "Zekai Zhang",
+      "Zhengyi Wang",
+      "An Yang",
+      "Bowen Yu",
+      "Chen Cheng",
+      "Dayiheng Liu",
+      "Deqing Li",
+      "Hang Zhang",
+      "Hao Meng",
+      "Hu Wei"
+    ],
+    "likes": 164,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2508.02324",
+    "date_collected": "2025-08-11T07:07:49.054067+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "Qwen-Image 기술 보고서",
+      "abstract": "Qwen 시리즈의 이미지 생성 기반 모델인 Qwen-Image를 제안하며, 복잡한 텍스트 렌더링과 정밀한 이미지 편집에서 큰 진전을 이루었습니다. 본 연구에서는 대규모 데이터 수집, 필터링, 주석 달기, 합성 및 균형화를 포함하는 포괄적인 데이터 파이프라인을 설계하여 복잡한 텍스트 렌더링의 어려움에 대처했습니다."
+    },
+    "summary": "1. Qwen-Image는 복잡한 텍스트 렌더링에 대한 도전에 대응하기 위해 진보된 학습 전략과 커리큘럼 학습 방식을 도입하여 모델의 텍스트 렌더링 능력을 혁신적으로 향상시켰습니다.\n2. 이미지 편집 일관성을 강화하기 위해 기존의 텍스트-이미지 및 이미지-이미지 재구성 작업에 이미지-이미지 재구성을 포함하는 개선된 다중 작업 학습 패러다임을 소개하였으며, 이를 통해 Qwen-Image는 다중 벤치마크에서 우수한 성능을 발휘합니다.\n3. Qwen-Image는 이미지 생성 및 편집 분야에서 최첨단 성능을 달성하며, 알파벳 언어뿐만 아니라 중국어와 같은 로고그래픽 언어에서도 현저한 진전을 이룹니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "VeriGUI: Verifiable Long-Chain GUI Dataset",
+    "abstract": "Recent studies have delved into constructing autonomous agents capable of\nperforming complex Graphical User Interface (GUI)-based computer tasks, with\nthe potential to revolutionize human-computer interaction. Despite encouraging\nresults, existing efforts mainly focus on short-term interactions and rely on\noutcome-only verification, thereby limiting their scalability in real-world GUI\napplications that demand long-horizon task decomposition and execution. In this\nwork, we introduce VeriGUI, a novel verifiable long-chain GUI dataset designed\nto facilitate the development and evaluation of generalist GUI agents operating\nin realistic computer environments. Our dataset emphasizes two critical\ndimensions: (1) long-chain complexity, with tasks decomposed into a sequence of\ninterdependent subtasks spanning hundreds of steps, explicitly designed to\nallow any subtask to serve as a valid starting point; and (2) subtask-level\nverifiability, which enables diverse exploration strategies within each\nsubtask, while ensuring that each subtask-level goal remains verifiable and\nconsistent. The dataset consists of GUI task trajectories across both desktop\nand web, annotated by human experts. Extensive experiments on VeriGUI using\nvarious agents with different foundation models reveal significant performance\ngaps in handling long-horizon tasks, highlighting the need for more robust\nplanning and decision-making capabilities in GUI agents.",
+    "authors": [
+      "Shunyu Liu",
+      "Minghao Liu",
+      "Huichi Zhou",
+      "Zhenyu Cui",
+      "Yang Zhou",
+      "Yuhao Zhou",
+      "Wendong Fan",
+      "Ge Zhang",
+      "Jiajun Shi",
+      "Weihao Xuan",
+      "Jiaxing Huang",
+      "Shuang Luo",
+      "Fang Wu",
+      "Heli Qi",
+      "Qingcheng Zeng",
+      "Ziqi Ren",
+      "Jialiang Gao",
+      "Jindi Lv",
+      "Junjie Wang",
+      "Aosong Feng",
+      "Heng Zhou",
+      "Wangchunshu Zhou"
+    ],
+    "likes": 130,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2508.04026",
+    "date_collected": "2025-08-11T07:07:49.056015+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "VeriGUI: 검증 가능한 장기 체인 GUI 데이터셋",
+      "abstract": "최근 연구에서는 복잡한 그래픽 사용자 인터페이스(GUI) 기반 컴퓨터 작업을 수행할 수 있는 자율 에이전트를 구축하는 데 관심을 기울이고 있으며, 이는 인간-컴퓨터 상호작용을 혁신할 잠재력을 지니고 있습니다. 그러나 기존 노력들은 주로 짧은 기간의 상호작용에 중점을 두고 결과에 대한 확인만을 의존하여 장기적인 과업 분해와 실행이 필요한 현실적인 GUI 애플리케이션에서 그 확장성을 제한하고 있습니다. 본 논문에서는 실제 컴퓨터 환경에서 작동하는 일반적 GUI 에이전트의 개발과 평가를 용이하게 하는 신규한 검증 가능한 장기 체인 GUI 데이터셋인 VeriGUI를 제안합니다. 데이터셋은 긴 체인 복잡성과 각 하위 과업이 유효한 출발점이 될 수 있도록 앞뒤 작업으로 구분된 수백 단계에 걸친 시퀀스로 분해된 작업을 강조하며, 각 하위 작업 목표가 확인 가능하고 일관되게 유지되도록 하는 하위 과업 수준의 검증 가능성을 강조합니다. 데스크탑과 웹 양쪽의 GUI 과업 궤적으로 인간 전문가에 의해 주석이 달린 데이터셋이며, 다양한 기초 모델을 사용하는 다양한 에이전트를 사용한 VeriGUI에 대한 방대한 실험에서 장기적 과업 처리에 대한 성능 차이가 뚜렷하게 나타나면서 GUI 에이전트에 더 강력한 계획 및 의사결정 능력이 필요함을 강조합니다."
+    },
+    "summary": "1. VeriGUI는 장기적인 GUI 작업 처리에 대한 성능 차이를 보여주며, 높은 확장성을 요구하는 현실적인 GUI 애플리케이션 분야에서 중요성을 갖습니다.\n2. 이 데이터셋은 긴 체인 복잡성과 하위 과업 수준의 검증 가능성을 강조하여, 다양한 탐구 전략을 가능하게 하며, 각 하위 과업 목표를 확인 가능하고 일관되게 유지합니다.\n3. VeriGUI에 대한 실험 결과는 GUI 에이전트가 장기적인 과업을 다루는 데 중요한 성능 차이가 있음을 보여주며, 보다 강건한 계획과 의사결정 능력의 필요성을 강조합니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed\n  Inference",
+    "abstract": "We present Seed Diffusion Preview, a large-scale language model based on\ndiscrete-state diffusion, offering remarkably fast inference speed. Thanks to\nnon-sequential, parallel generation, discrete diffusion models provide a\nnotable speedup to mitigate the inherent latency of token-by-token decoding, as\ndemonstrated recently (e.g., Mercury Coder, Gemini Diffusion). Seed Diffusion\nPreview achieves an inference speed of 2,146 token/s over H20 GPUs while\nmaintaining competitive performance across a sweep of standard code evaluation\nbenchmarks, significantly faster than contemporary Mercury and Gemini\nDiffusion, establishing new state of the art on the speed-quality Pareto\nfrontier for code models.",
+    "authors": [
+      "Yuxuan Song",
+      "Zheng Zhang",
+      "Cheng Luo",
+      "Pengyang Gao",
+      "Fan Xia",
+      "Hao Luo",
+      "Zheng Li",
+      "Yuehang Yang",
+      "Hongli Yu",
+      "Xingwei Qu",
+      "Yuwei Fu",
+      "Jing Su",
+      "Ge Zhang",
+      "Wenhao Huang",
+      "Mingxuan Wang",
+      "Lin Yan",
+      "Xiaoying Jia",
+      "Jingjing Liu",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Yonghui Wu",
+      "Hao Zhou"
+    ],
+    "likes": 103,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2508.02193",
+    "date_collected": "2025-08-11T07:07:49.057931+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "씨드 디퓨전: 고속 추론을 지원하는 대규모 디퓨전 언어 모델",
+      "abstract": "이 연구는 이산 상태 디퓨전을 기반으로 한 대규모 언어 모델인 씨드 디퓨전 프리뷰를 소개하며, 매우 빠른 추론 속도를 제공한다. 비순차적이고 병렬 생성으로 인해 이산 디퓨전 모델은 토큰 단위 디코딩의 내재적 지연을 완화하기 위한 주목할만한 속도 향상을 제공한다. 최근에 시연된 Mercury Coder, Gemini Diffusion과 같이 표준 코드 평가 벤치마크를 횡단하는 효율적인 성능을 유지하면서, H20 GPU에서 초당 2,146 토큰의 추론 속도를 달성한다. 현대적인 Mercury 및 Gemini 디퓨전보다 훨씬 빨리, 코드 모델의 속도-품질 Pareto 경계에서 새로운 최첨단을 구축한다."
+    },
+    "summary": "1. 씨드 디퓨전 프리뷰는 빠른 추론 속도를 제공하며, 표준 코드 평가 벤치마크에서 경쟁력 있는 성능을 유지한다.\n2. 이산 상태 디퓨전 모델은 토큰 단위 디코딩의 내재적 지연을 완화하기 위한 속도 향상을 제공한다.\n3. 씨드 디퓨전은 Mercury와 Gemini 디퓨전에 비해 높은 속도-품질 성능을 보여주며, 코드 모델의 최첨단을 정립한다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "On the Generalization of SFT: A Reinforcement Learning Perspective with\n  Reward Rectification",
+    "abstract": "We present a simple yet theoretically motivated improvement to Supervised\nFine-Tuning (SFT) for the Large Language Model (LLM), addressing its limited\ngeneralization compared to reinforcement learning (RL). Through mathematical\nanalysis, we reveal that standard SFT gradients implicitly encode a problematic\nreward structure that may severely restrict the generalization capabilities of\nmodel. To rectify this, we propose Dynamic Fine-Tuning (DFT), stabilizing\ngradient updates for each token by dynamically rescaling the objective function\nwith the probability of this token. Remarkably, this single-line code change\nsignificantly outperforms standard SFT across multiple challenging benchmarks\nand base models, demonstrating greatly improved generalization. Additionally,\nour approach shows competitive results in offline RL settings, offering an\neffective yet simpler alternative. This work bridges theoretical insight and\npractical solutions, substantially advancing SFT performance. The code will be\navailable at https://github.com/yongliang-wu/DFT.",
+    "authors": [
+      "Yongliang Wu",
+      "Yizhou Zhou",
+      "Zhou Ziheng",
+      "Yingzhe Peng",
+      "Xinyu Ye",
+      "Xinting Hu",
+      "Wenbo Zhu",
+      "Lu Qi",
+      "Ming-Hsuan Yang",
+      "Xu Yang"
+    ],
+    "likes": 102,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2508.05629",
+    "date_collected": "2025-08-11T07:07:49.059302+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "SFT 일반화에 대한 강화학습 관점에서의 개선",
+      "abstract": "큰 언어 모델 (LLM)에 대한 지도 미세 조정 (SFT)의 한계적인 일반화를 강화학습 (RL)과 비교하여 이론적으로 타당한 간단한 개선 방안을 제안합니다. 수학적 분석을 통해, 표준 SFT 그래디언트가 모델의 일반화 능력을 심각하게 제한할 수 있는 문제가 내재된 보상 구조를 암시한다는 것을 밝힙니다. 이를 보완하기 위해, 우리는 Dynamic Fine-Tuning (DFT)을 제안하여 각 토큰의 그래디언트 업데이트를 안정화시키고 이 토큰의 확률로 목적 함수를 동적으로 재조정합니다. 이 단일 라인 코드 변경이 다양한 어려운 벤치마크 및 기본 모델 전체에서 표준 SFT를 크게 능가하여 크게 향상된 일반화를 보여줍니다. 또한 우리의 접근 방식은 오프라인 강화학습 환경에서 경쟁력 있는 결과를 제공하여 효과적이고 간단한 대안을 제시합니다. 본 연구는 이론적 통찰과 실용적 해결책을 결합하여 SFT 성능을 크게 향상시킵니다. 코드는 https://github.com/yongliang-wu/DFT에서 사용 가능합니다."
+    },
+    "summary": "1. 지도 미세 조정(SFT)을 개선하기 위해 Dynamic Fine-Tuning(DFT)을 제안하였으며, 이는 강화학습(RL)과의 일반화 능력을 비교하여 혁신적인 결과를 보여줍니다.\n2. DFT는 각 토큰에 대한 그래디언트 업데이트를 안정화시키고 목적 함수를 동적으로 재조정하여 모델의 일반화 능력을 크게 향상시킵니다.\n3. 본 연구는 이론적인 통찰과 실용적인 해결책을 결합하여 SFT의 성능을 크게 발전시키며, 오프라인 강화학습 환경에서도 경쟁력 있는 결과를 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "R-Zero: Self-Evolving Reasoning LLM from Zero Data",
+    "abstract": "Self-evolving Large Language Models (LLMs) offer a scalable path toward\nsuper-intelligence by autonomously generating, refining, and learning from\ntheir own experiences. However, existing methods for training such models still\nrely heavily on vast human-curated tasks and labels, typically via fine-tuning\nor reinforcement learning, which poses a fundamental bottleneck to advancing AI\nsystems toward capabilities beyond human intelligence. To overcome this\nlimitation, we introduce R-Zero, a fully autonomous framework that generates\nits own training data from scratch. Starting from a single base LLM, R-Zero\ninitializes two independent models with distinct roles, a Challenger and a\nSolver. These models are optimized separately and co-evolve through\ninteraction: the Challenger is rewarded for proposing tasks near the edge of\nthe Solver capability, and the Solver is rewarded for solving increasingly\nchallenging tasks posed by the Challenger. This process yields a targeted,\nself-improving curriculum without any pre-existing tasks and labels.\nEmpirically, R-Zero substantially improves reasoning capability across\ndifferent backbone LLMs, e.g., boosting the Qwen3-4B-Base by +6.49 on\nmath-reasoning benchmarks and +7.54 on general-domain reasoning benchmarks.",
+    "authors": [
+      "Chengsong Huang",
+      "Wenhao Yu",
+      "Xiaoyang Wang",
+      "Hongming Zhang",
+      "Zongxia Li",
+      "Ruosen Li",
+      "Jiaxin Huang",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "likes": 83,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2508.05004",
+    "date_collected": "2025-08-11T07:07:49.060642+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "R-Zero: 제로 데이터로부터 진화하는 추론 LLM(Self-Evolving Reasoning LLM from Zero Data)",
+      "abstract": "자기 진화형 대형 언어 모델(Self-evolving Large Language Models, LLMs)은 자체 경험에서 자율적으로 생성, 정제 및 학습하여 초인공지능으로 나아가는 확장 가능한 경로를 제공한다. 그러나, 이러한 모델을 훈련하는 기존 방법은 여전히 방대한 인간이 정리한 작업과 라벨에 의존하며, 일반적으로 세부 조정(fine-tuning)이나 강화 학습(reinforcement learning)을 통해 이루어진다. 이는 인공지능 시스템을 인간의 지능을 넘어선 능력으로 발전시키는 기본 병목 현상을 야기한다. 이 한계를 극복하기 위해, R-Zero를 소개한다. 이는 자체 훈련 데이터를 처음부터 생성하는 완전 자율적인 프레임워크이다."
+    },
+    "summary": "1. R-Zero는 자체 훈련 데이터를 생성하여 인간의 개입 없이도 대형 언어 모델을 향상시키는 완전 자동화된 프레임워크이다.\n2. R-Zero는 Challenger와 Solver라는 두 가지 역할을 가진 모델을 독립적으로 최적화하고 상호작용을 통해 공동 진화시킨다.\n3. 실험적으로 R-Zero는 다양한 기반 LLM에서 추론 능력을 상당히 향상시키며, 수학 추론 기준에서 Qwen3-4B-Base를 +6.49, 일반적인 도메인 추론 기준에서 +7.54 향상시킨다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent\n  Foundation Models Training",
+    "abstract": "General AI Agents are increasingly recognized as foundational frameworks for\nthe next generation of artificial intelligence, enabling complex reasoning, web\ninteraction, coding, and autonomous research capabilities. However, current\nagent systems are either closed-source or heavily reliant on a variety of paid\nAPIs and proprietary tools, limiting accessibility and reproducibility for the\nresearch community. In this work, we present Cognitive Kernel-Pro, a\nfully open-source and (to the maximum extent) free multi-module agent framework\ndesigned to democratize the development and evaluation of advanced AI agents.\nWithin Cognitive Kernel-Pro, we systematically investigate the curation of\nhigh-quality training data for Agent Foundation Models, focusing on the\nconstruction of queries, trajectories, and verifiable answers across four key\ndomains: web, file, code, and general reasoning. Furthermore, we explore novel\nstrategies for agent test-time reflection and voting to enhance agent\nrobustness and performance. We evaluate Cognitive Kernel-Pro on GAIA, achieving\nstate-of-the-art results among open-source and free agents. Notably, our\n8B-parameter open-source model surpasses previous leading systems such as\nWebDancer and WebSailor, establishing a new performance standard for\naccessible, high-capability AI agents. Code is available at\nhttps://github.com/Tencent/CognitiveKernel-Pro",
+    "authors": [
+      "Tianqing Fang",
+      "Zhisong Zhang",
+      "Xiaoyang Wang",
+      "Rui Wang",
+      "Can Qin",
+      "Yuxuan Wan",
+      "Jun-Yu Ma",
+      "Ce Zhang",
+      "Jiaqi Chen",
+      "Xiyun Li",
+      "Hongming Zhang",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "likes": 80,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00414",
+    "date_collected": "2025-08-11T07:07:49.062142+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "인지적 커널-프로: 심층 연구 에이전트 및 에이전트 기반 모델 훈련을 위한 프레임워크",
+      "abstract": "일반 인공 지능 에이전트들은 복잡한 추론, 웹 상호작용, 코딩 및 자율적인 연구 능력을 가능케 함으로써, 다음 세대 인공 지능을 위한 기초적인 프레임워크로 점점 더 인식받고 있습니다. 그러나 현재의 에이전트 시스템은 일반적으로 소스가 공개되지 않거나 여러 유료 API 및 독점적인 도구에 강하게 의존하므로, 연구 공동체에 대한 접근성과 재현성이 제한되어 있습니다. 본 연구에서는 인지적 커널-프로를 제시하며, 이는 완전히 공개되고 (최대한) 무료인 다중 모듈 에이전트 프레임워크로, 고급 인공 지능 에이전트의 개발과 평가를 대중화하기 위해 설계되었습니다. 인지적 커널-프로 내에서는 에이전트 기반 모델의 고품질 훈련 데이터 구성을 체계적으로 조사하며, 웹, 파일, 코드 및 일반 추론 네 가지 주요 영역에서의 질문, 경로 및 검증 가능한 답변의 구축에 초점을 맞춥니다. 더불어, 에이전트 테스트시간 반성과 투표에 대한 혁신적인 전략을 탐구하여 에이전트의 견고성과 성능을 향상시킵니다. 우리는 GAIA에서 인지적 커널-프로를 평가하여, 오픈소스 및 무료 에이전트 중 최고 수준의 결과를 달성하였습니다. 특히, 우리의 80억 파라미터 공개 모델은 WebDancer 및 WebSailor와 같은 이전 선도 시스템을 넘어선 새로운 성능 기준을 세우며, 접근성과 고능력의 AI 에이전트를 위한 새로운 모델을 제시합니다. 코드는 https://github.com/Tencent/CognitiveKernel-Pro에서 제공됩니다."
+    },
+    "summary": "1. 인공지능에 기초를 둔 다양한 분야의 고급 에이전트 개발과 평가를 대중화하기 위한 인지적 커널-프로 프레임워크 소개\n2. 웹, 파일, 코드, 일반 추론 네 가지 주요 영역에서 훈련 데이터를 체계적으로 조사하며, 에이전트의 성능을 향상시키는 새로운 전략 탐구\n3. 오픈소스 및 무료 에이전트 중 최고 성능 달성 및 이전 선도 시스템을 능가하는 80억 파라미터 모델 개발 및 성과 확인",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Efficient Agents: Building Effective Agents While Reducing Cost",
+    "abstract": "The remarkable capabilities of Large Language Model (LLM)-driven agents have\nenabled sophisticated systems to tackle complex, multi-step tasks, but their\nescalating costs threaten scalability and accessibility. This work presents the\nfirst systematic study of the efficiency-effectiveness trade-off in modern\nagent systems, addressing the critical need for cost-effective designs without\nsacrificing performance. We investigate three key questions: (1) How much\ncomplexity do agentic tasks inherently require? (2) When do additional modules\nyield diminishing returns? (3) How much efficiency can be gained through the\ndesign of efficient agent frameworks? Through an empirical analysis on the GAIA\nbenchmark, we evaluate the impact of LLM backbone selection, agent framework\ndesigns, and test-time scaling strategies. Using the cost-of-pass metric, we\nquantify the efficiency-performance trade-off across these dimensions. Our\nfindings inform the development of Efficient Agents , a novel agent framework\nthat has an optimal complexity to task requirements. Efficient Agents retains\n96.7% of the performance of OWL, one leading open-source agent framework, while\nreducing operational costs from 0.398 to 0.228, resulting in a 28.4%\nimprovement in cost-of-pass. Our work provides actionable insights for\ndesigning efficient, high-performing agent systems, advancing the accessibility\nand sustainability of AI-driven solutions.",
+    "authors": [
+      "Ningning Wang",
+      "Xavier Hu",
+      "Pai Liu",
+      "He Zhu",
+      "Yue Hou",
+      "Heyuan Huang",
+      "Shengyu Zhang",
+      "Jian Yang",
+      "Jiaheng Liu",
+      "Ge Zhang",
+      "Changwang Zhang",
+      "Jun Wang",
+      "Yuchen Eleanor Jiang",
+      "Wangchunshu Zhou"
+    ],
+    "likes": 70,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2508.02694",
+    "date_collected": "2025-08-11T07:07:49.063944+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "효율적인 에이전트: 비용 절감과 효율성 구축",
+      "abstract": "대형 언어모델(LLM)-주도적인 에이전트의 뛰어난 능력은 복잡한 다단계 작업에 대처하는 정교한 시스템을 가능하게 했지만, 증가하는 비용이 확장성과 접근성을 위협한다. 본 연구는 현대 에이전트 시스템의 효율성-효과성 교역에 대한 첫 체계적인 연구를 제시하여, 성능을 희생하지 않고도 비용 효율적인 설계가 중요함을 다룬다. 우리는 세 가지 주요 질문을 조사한다: (1) 에이전트 작업이 고유로 요구하는 복잡성은 얼마인가? (2) 추가 모듈이 언제 감소하는 수익을 제공하는가? (3) 효율적인 에이전트 프레임워크 설계를 통해 얼마나 효율성을 얻을 수 있는가? GAIA 벤치마크에서 경험적 분석을 통해 LLM 백본 선택, 에이전트 프레임워크 설계, 테스트 시간 스케일링 전략의 영향을 평가한다. 통과 비용 지표를 사용하여 이러한 차원에서의 효율성-성능 교역을 양적화한다. 우리의 결과는 작업 요구에 최적의 복잡성을 가지는 새로운 에이전트 프레임워크인 '효율적인 에이전트'를 개발한다. 효율적인 에이전트는 OWL이라는 선도적인 오픈 소스 에이전트 프레임워크의 성능의 96.7%를 유지하면서 운영 비용을 0.398에서 0.228로 줄여 통과 비용을 28.4% 향상시킨다. 우리의 연구는 효율적이고 성능이 우수한 에이전트 시스템을 설계하기 위한 실질적인 통찰을 제공하여 AI 드리븐 솔루션의 접근성과 지속 가능성을 높인다."
+    },
+    "summary": "1. 현대 에이전트 시스템의 효율성-효과성 교역에 대한 체계적인 연구를 통해 비용을 줄이면서 성능을 유지하는 '효율적인 에이전트' 프레임워크를 개발함.\n2. LLM 백본 선택, 에이전트 프레임워크 설계, 테스트 시간 스케일링 전략의 영향을 분석하여 효율성과 성능의 교역을 측정함.\n3. OWL에 비해 운영 비용을 획기적으로 줄이고 성능을 유지하는 '효율적인 에이전트'로, 에이전트 시스템의 효율적 설계에 대한 구체적 인사이트 제공.",
+    "categories": [
+      "LLM",
+      "AI",
+      "Efficiency"
+    ]
+  },
+  {
+    "title": "Genie Envisioner: A Unified World Foundation Platform for Robotic\n  Manipulation",
+    "abstract": "We introduce Genie Envisioner (GE), a unified world foundation platform for\nrobotic manipulation that integrates policy learning, evaluation, and\nsimulation within a single video-generative framework. At its core, GE-Base is\na large-scale, instruction-conditioned video diffusion model that captures the\nspatial, temporal, and semantic dynamics of real-world robotic interactions in\na structured latent space. Built upon this foundation, GE-Act maps latent\nrepresentations to executable action trajectories through a lightweight,\nflow-matching decoder, enabling precise and generalizable policy inference\nacross diverse embodiments with minimal supervision. To support scalable\nevaluation and training, GE-Sim serves as an action-conditioned neural\nsimulator, producing high-fidelity rollouts for closed-loop policy development.\nThe platform is further equipped with EWMBench, a standardized benchmark suite\nmeasuring visual fidelity, physical consistency, and instruction-action\nalignment. Together, these components establish Genie Envisioner as a scalable\nand practical foundation for instruction-driven, general-purpose embodied\nintelligence. All code, models, and benchmarks will be released publicly.",
+    "authors": [
+      "Yue Liao",
+      "Pengfei Zhou",
+      "Siyuan Huang",
+      "Donglin Yang",
+      "Shengcong Chen",
+      "Yuxin Jiang",
+      "Yue Hu",
+      "Jingbin Cai",
+      "Si Liu",
+      "Jianlan Luo",
+      "Liliang Chen",
+      "Shuicheng Yan",
+      "Maoqing Yao",
+      "Guanghui Ren"
+    ],
+    "likes": 63,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2508.05635",
+    "date_collected": "2025-08-11T07:07:49.065510+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "지니 비전 조회자: 로봇 조작을 위한 통합된 세계 기반 플랫폼",
+      "abstract": "본 연구에서는 정책 학습, 평가 및 시뮬레이션을 단일 비디오 생성 프레임워크 내에서 통합하는 로봇 조작을 위한 통합된 세계 기반 플랫폼인 지니 비전 조회자(Genie Envisioner, GE)를 소개합니다. GE-Base는 실제 로봇 상호작용의 공간적, 시간적 및 의미론적 역학을 캡처하는 대규모 인스트럭션 조건 비디오 확산 모델로, 중심에 위치합니다. 이 기반 위에 GE-Act는 경량 플로우 매칭 디코더를 통해 잠재적 표현을 실행 가능한 조치 궤적으로 매핑하여 최소 지도를 통해 다양한 구현체에 걸쳐 정확하고 일반화된 정책 추론이 가능하게 합니다. 확장 가능한 평가와 훈련을 지원하기 위해 GE-Sim은 행동 조건화된 신경 시뮬레이터로, 닫힌 루프 정책 개발을 위해 고품질 롤아웃을 생성합니다. 이 플랫폼은 시각적 충실성, 물리적 일관성 및 지시-조치 정렬을 측정하는 표준화된 벤치마크 스위트인 EWMBench로 확장됩니다. 이러한 구성 요소들은 지니 비전 조회자를 척도에 맞는 지시 기반, 일반목적 태생 정보로 체계적이고 실용적인 기반으로 확립합니다. 모든 코드, 모델 및 벤치마크는 공개로 공개될 것입니다."
+    },
+    "summary": "1. 지니 비전 조회자(Genie Envisioner)는 로봇 조작을 위한 통합된 플랫폼으로, 정책 학습, 평가, 시뮬레이션을 비디오 생성 프레임워크 내에서 통합합니다.\n2. GE는 실제 로봇 상호작용을 캡처하는 확산 모델을 기반으로 하며, 경량 디코더를 활용하여 실행 가능한 조치 궤적으로 잠재적 표현을 매핑합니다.\n3. 이 플랫폼은 EWMBench를 포함하여 시각적 충실성, 물리적 일관성, 지시-조치 정렬 등을 측정하는 벤치마크 suite를 제공하여 척도에 맞는 지시 기반, 일반목적 태생 정보로 사용 가능합니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Fixed: Variable-Length Denoising for Diffusion Large Language\n  Models",
+    "abstract": "Diffusion Large Language Models (DLLMs) are emerging as a powerful\nalternative to the dominant Autoregressive Large Language Models, offering\nefficient parallel generation and capable global context modeling. However, the\npractical application of DLLMs is hindered by a critical architectural\nconstraint: the need for a statically predefined generation length. This static\nlength allocation leads to a problematic trade-off: insufficient lengths\ncripple performance on complex tasks, while excessive lengths incur significant\ncomputational overhead and sometimes result in performance degradation. While\nthe inference framework is rigid, we observe that the model itself possesses\ninternal signals that correlate with the optimal response length for a given\ntask. To bridge this gap, we leverage these latent signals and introduce\nDAEDAL, a novel training-free denoising strategy that enables Dynamic Adaptive\nLength Expansion for Diffusion Large Language Models. DAEDAL operates in two\nphases: 1) Before the denoising process, DAEDAL starts from a short initial\nlength and iteratively expands it to a coarse task-appropriate length, guided\nby a sequence completion metric. 2) During the denoising process, DAEDAL\ndynamically intervenes by pinpointing and expanding insufficient generation\nregions through mask token insertion, ensuring the final output is fully\ndeveloped. Extensive experiments on DLLMs demonstrate that DAEDAL achieves\nperformance comparable, and in some cases superior, to meticulously tuned\nfixed-length baselines, while simultaneously enhancing computational efficiency\nby achieving a higher effective token ratio. By resolving the static length\nconstraint, DAEDAL unlocks new potential for DLLMs, bridging a critical gap\nwith their Autoregressive counterparts and paving the way for more efficient\nand capable generation.",
+    "authors": [
+      "Jinsong Li",
+      "Xiaoyi Dong",
+      "Yuhang Zang",
+      "Yuhang Cao",
+      "Jiaqi Wang",
+      "Dahua Lin"
+    ],
+    "likes": 59,
+    "published_date": "Aug 1",
+    "url": "https://huggingface.co/papers/2508.00819",
+    "date_collected": "2025-08-11T07:07:49.066707+09:00",
+    "week": "2025-W32",
+    "translation": {
+      "title": "고정이 넘어, 변수 길이 디노이징을 통한 확산 대형 언어 모델",
+      "abstract": "확산 대형 언어 모델(DLLM)은 지배적인 자기회귀 대형 언어 모델에 대안으로 강력하게 부각되며 효율적인 병렬 생성과 뛰어난 전역 문맥 모델링을 제공합니다. 그러나 DLLM의 실용적 응용은 중요한 아키텍처 제약으로 방해받고 있습니다: 정적으로 미리 정의된 생성 길이의 필요성. 이 정적 길이 할당은 문제가 있는 트레이드오프로 이어집니다: 충분하지 않은 길이는 복잡한 작업에서 성능을 약화시키며, 과도한 길이는 상당한 계산 비용을 초래하고 때로는 성능 저하로 이어집니다. 추론 프레임워크가 엄격하더라도, 모델 자체에는 특정 작업에 대한 최적 반응 길이와 관련된 내부 신호가 존재한다는 것을 관찰합니다. 이 간극을 메우기 위해 우리는 이러한 잠재 신호를 활용하고, DAEDAL이라는 훈련이 필요 없는 새로운 디노이징 전략을 소개하여, 확산 대형 언어 모델을 위한 동적 적응적 길이 확장을 가능하게 합니다."
+    },
+    "summary": "1. 고정된 생성 길이의 문제를 해결하기 위해 DAEDAL이라는 새로운 디노이징 전략을 소개함.\n2. DAEDAL은 초기 길이를 확장하고 생성 영역을 동적으로 보완하여 DLLM의 성능을 향상시킴.\n3. 실험 결과 DAEDAL이 성능을 향상시키면서 더 효율적이고 능력 있는 생성을 가능케 함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

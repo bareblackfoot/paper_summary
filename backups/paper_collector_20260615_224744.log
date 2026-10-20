@@ -1,0 +1,28 @@
+=== Paper Collection Started at Mon Jun 15 01:56:18 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W25
+URL: https://huggingface.co/papers/week/2026-W25
+Found 1 papers in weekly view
+Fetching likes for: VISTA: View-Consistent Self-Verified Training for GUI Grounding
+Selected top 10 papers by likes:
+1. VISTA: View-Consistent Self-Verified Training for GUI Grounding (1 likes)
+Found abstract: When applying Group Relative Policy Optimization (GRPO) for GUI Grounding, rollouts are sampled from...
+Processed paper: VISTA: View-Consistent Self-Verified Training for GUI Grounding
+Collected top 1 papers. Starting summary generation...
+
+Processing paper 1/1
+Title: VISTA: View-Consistent Self-Verified Training for GUI Grounding
+Generating Korean translation and summary...
+
+Processed 1 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W25.json...
+
+Updating Notion database...
+Creating new paper: VISTA: GUI Grounding을 위한 View-Consistent Self-Verified Training
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 15 01:56:28 UTC 2026 ===
+

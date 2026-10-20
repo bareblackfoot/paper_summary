@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Jul 20 04:38:41 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W30
+URL: https://huggingface.co/papers/week/2026-W30
+Found 10 papers in weekly view
+Fetching likes for: xHC: Expanded Hyper-Connections
+Fetching likes for: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Fetching likes for: RecGPT-V3 Technical Report
+Fetching likes for: Cura 1T: Specialized Model for Agentic Healthcare
+Fetching likes for: From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality
+Fetching likes for: On-Policy Delta Distillation
+Fetching likes for: Loop the Loopies!
+Fetching likes for: Understanding Reasoning from Pretraining to Post-Training
+Fetching likes for: Recursive Harness Self-Improvement
+Fetching likes for: DSWorld: A Data Science World Model for Efficient Autonomous Agents
+Selected top 10 papers by likes:
+1. xHC: Expanded Hyper-Connections (26 likes)
+2. Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories (20 likes)
+3. RecGPT-V3 Technical Report (19 likes)
+4. Cura 1T: Specialized Model for Agentic Healthcare (15 likes)
+5. From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality (15 likes)
+6. On-Policy Delta Distillation (14 likes)
+7. Loop the Loopies! (10 likes)
+8. Understanding Reasoning from Pretraining to Post-Training (7 likes)
+9. Recursive Harness Self-Improvement (4 likes)
+10. DSWorld: A Data Science World Model for Efficient Autonomous Agents (2 likes)
+Found abstract: Hyper-Connections (HC) expand the residual stream of Transformers into N parallel streams, providing...
+Processed paper: xHC: Expanded Hyper-Connections
+Found abstract: We present Xiaomi-Robotics-1, a foundational vision-language-action (VLA) model capable of (1) follo...
+Processed paper: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Found abstract: Large language models (LLMs) are transforming recommender systems from matching co-occurrence patter...
+Processed paper: RecGPT-V3 Technical Report
+Found abstract: Healthcare spans high-stakes communication, expert reasoning, and workflow execution, yet specialize...
+Processed paper: Cura 1T: Specialized Model for Agentic Healthcare
+Found abstract: Code review helps maintain software quality before code integration, but it also imposes a substanti...
+Processed paper: From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality
+Found abstract: On-policy distillation is an alternative post-training method in reinforcement learning that allevia...
+Processed paper: On-Policy Delta Distillation
+Found abstract: We present Loopie, the most powerful looped Transformer to date. The Loopie series consists of two M...
+Processed paper: Loop the Loopies!
+Found abstract: Reinforcement learning (RL) has become central to improving large language models (LLMs) on complex ...
+Processed paper: Understanding Reasoning from Pretraining to Post-Training
+Found abstract: Under model--harness co-evolution, harnesses are not merely inference-time scaffolds but data-genera...
+Processed paper: Recursive Harness Self-Improvement
+Found abstract: Despite strong capabilities in data understanding and decision-making, autonomous data science agent...
+Processed paper: DSWorld: A Data Science World Model for Efficient Autonomous Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: xHC: Expanded Hyper-Connections
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: RecGPT-V3 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Cura 1T: Specialized Model for Agentic Healthcare
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: On-Policy Delta Distillation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Loop the Loopies!
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Understanding Reasoning from Pretraining to Post-Training
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Recursive Harness Self-Improvement
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: DSWorld: A Data Science World Model for Efficient Autonomous Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W30.json...
+
+Updating Notion database...
+Creating new paper: 확장된 하이퍼 커넥션(xHC)
+Creating new paper: Xiaomi-Robotics-1: 실세계 궤적 100,000시간 이상을 활용한 비전-언어-행동 모델의 확장
+Creating new paper: RecGPT-V3 기술 보고서
+Creating new paper: 양립 건강 관리를 위한 특화된 모델 Cura 1T
+Creating new paper: 인간 중심에서 주체적 코드 리뷰로: 서로 다른 세대의 생성 AI 기술이 리뷰 품질에 미치는 영향
+Creating new paper: 정책 기반 델타 증류
+Creating new paper: 루프 더 루피!
+Creating new paper: 사전훈련부터 사후훈련까지 추론 이해하기
+Creating new paper: 재귀적 하네스 자체 개선
+Creating new paper: DSWorld: 효율적인 자율 에이전트를 위한 데이터 과학 세계 모델
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul 20 04:40:22 UTC 2026 ===
+

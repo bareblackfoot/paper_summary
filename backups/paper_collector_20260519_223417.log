@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon May 18 22:27:51 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W21
+URL: https://huggingface.co/papers/week/2026-W21
+Found 10 papers in weekly view
+Fetching likes for: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Fetching likes for: PhysBrain 1.0 Technical Report
+Fetching likes for: MMSkills: Towards Multimodal Skills for General Visual Agents
+Fetching likes for: FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization
+Fetching likes for: Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation
+Fetching likes for: DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo
+Fetching likes for: Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding
+Fetching likes for: InsightTok: Improving Text and Face Fidelity in Discrete Tokenization for Autoregressive Image Generation
+Fetching likes for: Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization
+Fetching likes for: Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR
+Selected top 10 papers by likes:
+1. CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence (161 likes)
+2. PhysBrain 1.0 Technical Report (129 likes)
+3. MMSkills: Towards Multimodal Skills for General Visual Agents (99 likes)
+4. FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization (52 likes)
+5. Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation (49 likes)
+6. DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo (46 likes)
+7. Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding (32 likes)
+8. InsightTok: Improving Text and Face Fidelity in Discrete Tokenization for Autoregressive Image Generation (31 likes)
+9. Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization (27 likes)
+10. Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR (25 likes)
+Found abstract: Multimodal Large Language Models (MLLMs) have significantly advanced document understanding, yet cur...
+Processed paper: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Found abstract: Vision-language-action models have advanced rapidly, but robot trajectories alone provide limited co...
+Processed paper: PhysBrain 1.0 Technical Report
+Found abstract: Reusable skills have become a core substrate for improving agent capabilities, yet most existing ski...
+Processed paper: MMSkills: Towards Multimodal Skills for General Visual Agents
+Found abstract: Human-centric video customization, particularly at the garment level, has shown significant commerci...
+Processed paper: FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization
+Found abstract: On-policy distillation (OPD) has emerged as an efficient post-training paradigm for large language m...
+Processed paper: Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation
+Found abstract: Achieving human-level manipulation requires dexterous robotic hands capable of complex object intera...
+Processed paper: DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo
+Found abstract: Distilling large reasoning models is essential for making Long-CoT reasoning practical, as full-scal...
+Processed paper: Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding
+Found abstract: Text and faces are among the most perceptually salient and practically important patterns in visual ...
+Processed paper: InsightTok: Improving Text and Face Fidelity in Discrete Tokenization for Autoregressive Image Generation
+Found abstract: Group Relative Policy Optimization has emerged as essential for aligning video diffusion models with...
+Processed paper: Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) has emerged as a scalable paradigm for improvi...
+Processed paper: Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: PhysBrain 1.0 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: MMSkills: Towards Multimodal Skills for General Visual Agents
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: InsightTok: Improving Text and Face Fidelity in Discrete Tokenization for Autoregressive Image Generation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W21.json...
+
+Updating Notion database...
+Creating new paper: 신뢰할 수 있는 문서 지능을 위한 근거 소속성 벤치마킹
+Creating new paper: PhysBrain 1.0 기술 보고서
+Creating new paper: MMSkills: 일반 시각 에이전트를 위한 다중모달 스킬로 향하는
+Creating new paper: 패션카멜레온: 실시간 및 상호작용적인 인간-의복 비디오 커스터마이제이션을 향하여
+Creating new paper: 예측 학습: 정책 증류의 효율성 해부
+Creating new paper: DexJoCo: MuJoCo에서 작업 지향적 능숙한 조작을 위한 벤치마크 및 도구상자
+Creating new paper: 협력적 단계별 다중 교사 디코딩을 통한 거시적 Long-CoT 추론 축소
+Creating new paper: InsightTok: 자율 생성 이미지를 위한 이산 토큰화에서 텍스트와 얼굴의 충실도 개선
+Creating new paper: 플래시-그룹 상대 정책 최적화를 통한 비디오 확산을 위한 효율적인 정렬
+Creating new paper: 편안한 영역을 넘어선 누지기: RLVR을 위한 효율적인 전략 유도 탐사
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May 18 22:30:07 UTC 2026 ===
+

@@ -1,0 +1,143 @@
+=== Paper Collection Started at Mon Oct 20 22:07:50 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W43
+URL: https://huggingface.co/papers/week/2025-W43
+Found 10 papers in weekly view
+Fetching likes for: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Fetching likes for: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Fetching likes for: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Fetching likes for: Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs
+Fetching likes for: Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset
+Fetching likes for: Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery
+Fetching likes for: Latent Diffusion Model without Variational Autoencoder
+Fetching likes for: LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal
+Fetching likes for: Paper2Web: Let's Make Your Paper Alive!
+Fetching likes for: A^2FM: An Adaptive Agent Foundation Model for Tool-Aware Hybrid
+  Reasoning
+Selected top 10 papers by likes:
+1. A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning (106 likes)
+2. OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM (53 likes)
+3. NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks (47 likes)
+4. Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs (39 likes)
+5. Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset (35 likes)
+6. Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery (30 likes)
+7. Latent Diffusion Model without Variational Autoencoder (30 likes)
+8. LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal (20 likes)
+9. Paper2Web: Let's Make Your Paper Alive! (20 likes)
+10. A^2FM: An Adaptive Agent Foundation Model for Tool-Aware Hybrid
+  Reasoning (19 likes)
+Found abstract: Test-time scaling seeks to improve the reasoning performance of large
+language models (LLMs) by addi...
+Processed paper: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Found abstract: Advancing machine intelligence requires developing the ability to perceive
+across multiple modalitie...
+Processed paper: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Found abstract: 3D object editing is essential for interactive content creation in gaming,
+animation, and robotics, ...
+Processed paper: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Found abstract: Recent work has shown that narrow finetuning can produce broadly misaligned
+LLMs, a phenomenon terme...
+Processed paper: Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs
+Found abstract: Instruction-based video editing promises to democratize content creation, yet
+its progress is severe...
+Processed paper: Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset
+Found abstract: Synthesizing large-scale, explorable, and geometrically accurate 3D urban
+scenes is a challenging ye...
+Processed paper: Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery
+Found abstract: Recent progress in diffusion-based visual generation has largely relied on
+latent diffusion models w...
+Processed paper: Latent Diffusion Model without Variational Autoencoder
+Found abstract: Lens flare significantly degrades image quality, impacting critical computer
+vision tasks like objec...
+Processed paper: LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal
+Found abstract: Academic project websites can more effectively disseminate research when they
+clearly present core c...
+Processed paper: Paper2Web: Let's Make Your Paper Alive!
+Found abstract: Large language models split into two families: reasoning-centric LLMs, which
+strengthen internal cha...
+Processed paper: A^2FM: An Adaptive Agent Foundation Model for Tool-Aware Hybrid
+  Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Latent Diffusion Model without Variational Autoencoder
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Paper2Web: Let's Make Your Paper Alive!
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: A^2FM: An Adaptive Agent Foundation Model for Tool-Aware Hybrid
+  Reasoning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W43.json...
+
+Updating Notion database...
+Creating new paper: 내부 확률과 자기 일관성을 이어주는 LLM 추론에 관한 이론적 연구
+Creating new paper: 옴니빈치: 옴니-모달 이해를 위한 아키텍처와 데이터 강화
+Creating new paper: 훈련 없이 가능한 효율적인 마스크 없는 3D 편집 방법: NANO3D
+Creating new paper: 본문 학습을 통한 비정렬성의 발생: 좁은 인-컨텍스트 예시는 광범위하게 비정렬된 LLMs를 만들 수 있습니다
+Creating new paper: 고품질 합성 데이터셋을 이용한 지시 기반 비디오 편집 규모 확장
+Creating new paper: Skyfall-GS: 위성 영상으로부터 침체적인 3D 도시 장면 합성
+Creating new paper: 변이 오토인코더 없이 잠재 확산 모델
+Creating new paper: 라이츠아웃: 확산 기반 아웃페인팅을 통한 렌즈 플레어 제거 향상
+Creating new paper: Paper2Web: 논문이 살아 숨쉬게 만드는 방법!
+Creating new paper: 도구 인식형 하이브리드 추론을 위한 적응형 에이전트 기본 모델 A^2FM
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Oct 20 22:10:00 UTC 2025 ===
+

@@ -1,0 +1,308 @@
+[
+  {
+    "title": "General Agentic Memory Via Deep Research",
+    "abstract": "Memory is critical for AI agents, yet the widely-adopted static memory, aiming to create readily available memory in advance, is inevitably subject to severe information loss. To address this limitation, we propose a novel framework called general agentic memory (GAM). GAM follows the principle of \"just-in time (JIT) compilation\" where it focuses on creating optimized contexts for its client at runtime while keeping only simple but useful memory during the offline stage. To this end, GAM employs a duo-design with the following components. 1) Memorizer, which highlights key historical information using a lightweight memory, while maintaining complete historical information within a universal page-store. 2) Researcher, which retrieves and integrates useful information from the page-store for its online request guided by the pre-constructed memory. This design allows GAM to effectively leverage the agentic capabilities and test-time scalability of frontier large language models (LLMs), while also facilitating end-to-end performance optimization through reinforcement learning. In our experimental study, we demonstrate that GAM achieves substantial improvement on various memory-grounded task completion scenarios against existing memory systems.",
+    "authors": [
+      "B. Y. Yan",
+      "Chaofan Li",
+      "Hongjin Qian",
+      "Shuqi Lu",
+      "Zheng Liu"
+    ],
+    "likes": 131,
+    "published_date": "Nov 23",
+    "url": "https://huggingface.co/papers/2511.18423",
+    "date_collected": "2025-11-27T07:08:10.540472+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "깊이 있는 연구를 통한 일반적 에이전트 기억",
+      "abstract": "기억은 AI 에이전트에게 중요하지만 미리 사용 가능한 정적 기억은 정보 손실이 발생할 수밖에 없습니다. 이 한계를 극복하기 위해 저희는 새로운 프레임워크인 일반적 에이전트 기억 (General Agentic Memory, GAM)를 제안합니다. GAM은 \"적시 컴파일 (Just-in-Time Compilation, JIT)\" 원칙을 따라, 런타임에서 클라이언트에게 최적화된 문맥을 만들면서 오프라인 단계에서는 단순하지만 유용한 기억만 유지합니다. 이를 위해 GAM은 다음과 같은 두 가지 구성 요소를 사용합니다. 1) Memorizer는 가벼운 메모리를 사용하여 주요 역사적 정보를 강조하며, 모든 역사적 정보를 보유한 범용 페이지 저장소에 유지합니다. 2) Researcher는 사전 구성된 메모리에 안내되는 온라인 요청을 위해 페이지 저장소에서 유용한 정보를 검색하고 통합합니다. 이 설계를 통해 GAM은 최신 대형 언어 모델 (Large Language Models, LLMs)의 에이전트적 능력과 테스트 시간 확장성을 효과적으로 활용할 뿐만 아니라 강화 학습을 통한 엔드-투-엔드 성능 최적화도 가능하게 합니다. 실험적 연구에서 GAM이 기존의 기억 시스템에 비해 다양한 기억 중심 작업 완수 시나리오에서 상당한 개선을 달성하는 것을 보여줍니다."
+    },
+    "summary": "1. 기존 정적 기억의 한계를 극복하기 위해 새로운 프레임워크인 일반적 에이전트 기억 (GAM)이 제안됨.\n2. GAM은 Memorizer와 Researcher로 구성되어, 클라이언트에게 최적화된 문맥을 제공하고 유용한 정보를 검색 및 통합하여 효율적인 기억 활용이 가능함.\n3. 실험 결과, GAM이 다양한 기억 기반 작업에서 기존 시스템보다 획기적인 성능 향상을 보임.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe",
+    "abstract": "Recent advancements in large reasoning models have fueled growing interest in extending such capabilities to multimodal domains. However, despite notable progress in visual reasoning, the lack of transparent and reproducible data curation and training strategies remains a major barrier to scalable research. In this work, we introduce OpenMMReasoner, a fully transparent two-stage recipe for multimodal reasoning spanning supervised fine-tuning (SFT) and reinforcement learning (RL). In the SFT stage, we construct an 874K-sample cold-start dataset with rigorous step-by-step validation, providing a strong foundation for reasoning capabilities. The subsequent RL stage leverages a 74K-sample dataset across diverse domains to further sharpen and stabilize these abilities, resulting in a more robust and efficient learning process. Extensive evaluations demonstrate that our training recipe not only surpasses strong baselines but also highlights the critical role of data quality and training design in shaping multimodal reasoning performance. Notably, our method achieves a 11.6% improvement over the Qwen2.5-VL-7B-Instruct baseline across nine multimodal reasoning benchmarks, establishing a solid empirical foundation for future large-scale multimodal reasoning research. We open-sourced all our codes, pipeline, and data at https://github.com/EvolvingLMMs-Lab/OpenMMReasoner.",
+    "authors": [
+      "Kaichen Zhang",
+      "Keming Wu",
+      "Zuhao Yang",
+      "Kairui Hu",
+      "Bin Wang",
+      "Ziwei Liu",
+      "Xingxuan Li",
+      "Lidong Bing"
+    ],
+    "likes": 85,
+    "published_date": "Nov 20",
+    "url": "https://huggingface.co/papers/2511.16334",
+    "date_collected": "2025-11-27T07:08:10.541816+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "OpenMMReasoner: 오픈 및 일반적 레시피로 다변량 추론의 선두를 확장하다",
+      "abstract": "대규모 추론 모델의 최근 발전은 이러한 능력을 다양한 형태의 도메인에 확장하는 데 대한 관심이 증가하게 했습니다. 그러나 시각적 추론에서의 주목할만한 진전에도 불구하고, 투명하고 재현 가능한 데이터 정제 및 교육 전략의 부재는 규모 확장 가능한 연구에 있어 주요 장벽 중 하나입니다. 본 연구에서는, 우리는 OpenMMReasoner를 소개합니다. 이는 감독된 세밀 조정(SFT)과 강화 학습(RL)으로 이어지는 다변량 추론을 위한 완전히 투명한 두 단계 레시피입니다."
+    },
+    "summary": "1. OpenMMReasoner는 감독된 세밀 조정(SFT)과 강화 학습(RL)으로 이루어진 다변량 추론을 위한 투명한 두 단계 레시피를 도입했다.\n2. 874,000개의 샘플로 이루어진 초기 데이터셋과 그에 대한 엄격한 검증을 통해 추론 능력에 견고한 기반을 제공한다.\n3. OpenMMReasoner는 다양한 영역의 74,000개 샘플 데이터셋을 이용하여 보다 강력하고 안정적인 학습 프로세스를 통해 다변량 추론 역량을 빌려올리고 안정화시킨다.",
+    "categories": [
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "AutoEnv: Automated Environments for Measuring Cross-Environment Agent Learning",
+    "abstract": "Humans naturally adapt to diverse environments by learning underlying rules across worlds with different dynamics, observations, and reward structures. In contrast, existing agents typically demonstrate improvements via self-evolving within a single domain, implicitly assuming a fixed environment distribution. Cross-environment learning has remained largely unmeasured: there is no standard collection of controllable, heterogeneous environments, nor a unified way to represent how agents learn. We address these gaps in two steps. First, we propose AutoEnv, an automated framework that treats environments as factorizable distributions over transitions, observations, and rewards, enabling low-cost (4.12 USD on average) generation of heterogeneous worlds. Using AutoEnv, we construct AutoEnv-36, a dataset of 36 environments with 358 validated levels, on which seven language models achieve 12-49% normalized reward, demonstrating the challenge of AutoEnv-36. Second, we formalize agent learning as a component-centric process driven by three stages of Selection, Optimization, and Evaluation applied to an improvable agent component. Using this formulation, we design eight learning methods and evaluate them on AutoEnv-36. Empirically, the gain of any single learning method quickly decrease as the number of environments increases, revealing that fixed learning methods do not scale across heterogeneous environments. Environment-adaptive selection of learning methods substantially improves performance but exhibits diminishing returns as the method space expands. These results highlight both the necessity and the current limitations of agent learning for scalable cross-environment generalization, and position AutoEnv and AutoEnv-36 as a testbed for studying cross-environment agent learning. The code is avaiable at https://github.com/FoundationAgents/AutoEnv.",
+    "authors": [
+      "Jiayi Zhang",
+      "Yiran Peng",
+      "Fanqi Kong",
+      "Yang Cheng",
+      "Yifan Wu",
+      "Zhaoyang Yu",
+      "Jinyu Xiang",
+      "Jianhao Ruan",
+      "Jinlin Wang",
+      "Maojia Song",
+      "HongZhang Liu",
+      "Xiangru Tang",
+      "Bang Liu",
+      "Chenglin Wu",
+      "Yuyu Luo"
+    ],
+    "likes": 82,
+    "published_date": "Nov 24",
+    "url": "https://huggingface.co/papers/2511.19304",
+    "date_collected": "2025-11-27T07:08:10.543353+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "Agent 학습을 위한 자동화된 환경 구축: AutoEnv",
+      "abstract": "인간은 서로 다른 역학, 관찰, 보상 구조를 갖는 세계 간의 기본 규칙을 학습함으로써 다양한 환경에 자연스럽게 적응합니다. 그러나 기존 에이전트들은 대부분 단일 도메인 안에서 스스로 진화함으로써 개선을 시현하며, 고정된 환경 분포를 내제적으로 가정합니다. 환경 간 학습은 대부분 측정되어지지 않았습니다: 조작 가능하고 이질적인 환경의 표준 컬렉션이나 에이전트 학습 방법론의 통합된 표현 방법이 없습니다. 이 논문에서 우리는 두 단계로 이러한 공백을 해결합니다. 먼저, 우리는 AutoEnv를 제안합니다. AutoEnv는 환경을 전이, 관측, 보상에 대한 분해 가능한 분포로 취급하는 자동화된 프레임워크로, 이를 통해 이질적인 세계의 저렴한 생성을 가능하게 합니다. AutoEnv를 활용하여 358개의 검증된 레벨을 갖는 36개의 환경 데이터셋 AutoEnv-36을 생성합니다. 이를 이용해 여러 언어 모델이 12-49%의 정규화된 보상을 달성하여 AutoEnv-36의 어려움을 입증합니다. 둘째로, 우리는 에이전트 학습을 선택, 최적화, 평가의 세 단계로 구성된 구성 성분 중심적 과정으로 형식화하였습니다. 이 형식을 사용하여 여덟 가지 학습 방법을 설계하고 AutoEnv-36에서 이를 평가합니다. 이러한 결과는 고정 학습 방법이 이질적인 환경에서는 환경 수가 증가함에 따라 개별 학습 방법의 이득이 빠르게 감소하며, 환경 적응적 학습 방법의 선택은 성능을 현저히 향상시키지만 방법 공간이 확장되면서 한계 이익을 보여줍니다. 이러한 결과는 환경 간 일반성 있는 에이전트 학습의 필요성과 현재의 한계를 동시에 강조하며, AutoEnv와 AutoEnv-36을 환경 간 에이전트 학습 연구 테스트베드로 위치시킵니다. 코드는 다음 링크에서 확인할 수 있습니다: https://github.com/FoundationAgents/AutoEnv."
+    },
+    "summary": "1. AutoEnv는 여러 환경을 낮은 비용으로 생성할 수 있는 자동화된 프레임워크이며, AutoEnv-36은 358개의 검증된 레벨을 갖는 36가지 환경 데이터셋을 구축하여 언어 모델들의 학습 어려움을 입증하였습니다.\n2. 에이전트 학습은 선택, 최적화, 평가의 세 가지 단계로 이루어지며, 이질적인 환경에서 고정 학습 방법의 성능이 환경 수 증가에 따라 빠르게 감소한다는 것을 실험적으로 입증하였습니다.\n3. 환경 적응적 학습 방법의 선택은 성능을 향상시키지만, 방법 공간이 확장될수록 한계 이익이 나타나며, 이는 환경 간 일반성 있는 에이전트 학습의 현재 한계를 드러내었습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization",
+    "abstract": "Current research on agentic visual reasoning enables deep multimodal understanding but primarily focuses on image manipulation tools, leaving a gap toward more general-purpose agentic models. In this work, we revisit the geolocalization task, which requires not only nuanced visual grounding but also web search to confirm or refine hypotheses during reasoning. Since existing geolocalization benchmarks fail to meet the need for high-resolution imagery and the localization challenge for deep agentic reasoning, we curate GeoBench, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocalization ability of agentic models. We also propose GeoVista, an agentic model that seamlessly integrates tool invocation within the reasoning loop, including an image-zoom-in tool to magnify regions of interest and a web-search tool to retrieve related web information. We develop a complete training pipeline for it, including a cold-start supervised fine-tuning (SFT) stage to learn reasoning patterns and tool-use priors, followed by a reinforcement learning (RL) stage to further enhance reasoning ability. We adopt a hierarchical reward to leverage multi-level geographical information and improve overall geolocalization performance. Experimental results show that GeoVista surpasses other open-source agentic models on the geolocalization task greatly and achieves performance comparable to closed-source models such as Gemini-2.5-flash and GPT-5 on most metrics.",
+    "authors": [
+      "Yikun Wang",
+      "Zuyan Liu",
+      "Ziyi Wang",
+      "Pengfei Liu",
+      "Han Hu",
+      "Yongming Rao"
+    ],
+    "likes": 82,
+    "published_date": "Nov 19",
+    "url": "https://huggingface.co/papers/2511.15705",
+    "date_collected": "2025-11-27T07:08:10.544553+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "GeoVista: 지역화를 위한 웹 보조 에이전트 시각 추론",
+      "abstract": "현재의 에이전트 시각 추론 연구는 깊은 다중모달 이해를 가능케 하지만 주로 이미지 조작 도구에 초점을 맞추어 일반 목적의 에이전트 모델에 대한 공백이 남아 있습니다. 본 연구에서는 상세한 시각적 근거 뿐만 아니라 추론 중 가설을 확인하거나 정제하기 위한 웹 검색이 필요한 지역화 작업을 다시 살펴보았습니다. 기존의 지역화 벤치마크는 고해상도 이미지와 깊은 에이전트 추론을 위한 지역화 도전에 부합하지 못하므로, 세계 각지의 사진 및 파노라마, 그리고 여러 도시의 위성 이미지 하위집합을 포함하는 GeoBench를 만들어 에이전트 모델의 지역화 능력을 엄밀히 평가합니다. 또한, 에이전트 모델인 GeoVista를 제안하는데, 추론 루프 내에서 도구 활용이 완벽하게 통합되도록 해당 이미지 확대 도구 및 관심 지역 확대, 관련 웹 정보 검색을 포함합니다. 이를 위해 추론 패턴 및 도구 사용 우선순위를 학습하는 cold-start 감독형 미세조정(SFT) 단계와 이를 향상시키기 위한 강화 학습(RL) 단계를 포함하는 완전한 학습 파이프라인을 개발합니다. 다중 수준의 지리적 정보를 활용하기 위해 계층적 보상을 채택하여 전반적인 지역화 성능을 향상시킵니다. 실험 결과, GeoVista는 다른 오픈소스 에이전트 모델들을 크게 능가하며 대부분의 지표에서 Gemini-2.5-flash 및 GPT-5와 같은 폐쇄소스 모델에 견줄만한 성능을 달성합니다."
+    },
+    "summary": "1. GeoBench는 고해상도 이미지와 지역화 도전에 부합하는 벤치마크로 에이전트 모델의 지역화 능력을 평가합니다.\n2. GeoVista는 이미지 확대 및 웹 검색 도구를 포함하여 지역화 작업에 특화된 에이전트 모델로, cold-start 감독형 미세조정과 강화 학습을 통해 학습된다.\n3. 다중 수준의 지리적 정보를 기반으로 한 계층적 보상을 사용하여 GeoVista는 다른 모델들에 비해 우수한 지역화 성능을 보이며, 폐쇄소스 모델들과 비슷한 수준의 성과를 달성한다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "GigaEvo: An Open Source Optimization Framework Powered By LLMs And Evolution Algorithms",
+    "abstract": "Recent advances in LLM-guided evolutionary computation, particularly AlphaEvolve (Novikov et al., 2025; Georgiev et al., 2025), have demonstrated remarkable success in discovering novel mathematical constructions and solving challenging optimization problems. However, the high-level descriptions in published work leave many implementation details unspecified, hindering reproducibility and further research. In this report we present GigaEvo, an extensible open-source framework that enables researchers to study and experiment with hybrid LLM-evolution approaches inspired by AlphaEvolve. Our system provides modular implementations of key components: MAP-Elites quality-diversity algorithms, asynchronous DAG-based evaluation pipelines, LLM-driven mutation operators with insight generation and bidirectional lineage tracking, and flexible multi-island evolutionary strategies. In order to assess reproducibility and validate our implementation we evaluate GigaEvo on challenging problems from the AlphaEvolve paper: Heilbronn triangle placement, circle packing in squares, and high-dimensional kissing numbers. The framework emphasizes modularity, concurrency, and ease of experimentation, enabling rapid prototyping through declarative configuration. We provide detailed descriptions of system architecture, implementation decisions, and experimental methodology to support further research in LLM driven evolutionary methods. The GigaEvo framework and all experimental code are available at https://github.com/AIRI-Institute/gigaevo-core.",
+    "authors": [
+      "Valentin Khrulkov",
+      "Andrey Galichin",
+      "Denis Bashkirov",
+      "Dmitry Vinichenko",
+      "Oleg Travkin",
+      "Roman Alferov",
+      "Andrey Kuznetsov",
+      "Ivan Oseledets"
+    ],
+    "likes": 82,
+    "published_date": "Nov 17",
+    "url": "https://huggingface.co/papers/2511.17592",
+    "date_collected": "2025-11-27T07:08:10.545851+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "LLM 및 진화 알고리즘으로 구동되는 오픈 소스 최적화 프레임워크인 GigaEvo",
+      "abstract": "최근 LLM 유도 진화 계산의 발전, 특히 AlphaEvolve에 의해 (Novikov et al., 2025; Georgiev et al., 2025) 높은 수준의 성공을 보여와서 혁신적인 수학 구성물을 발견하고 어려운 최적화 문제를 해결함을 입증했습니다. 그러나 발표된 작업의 고수준 설명은 많은 구현 세부사항을 명시하지 않아 재현성과 추가 연구를 방해합니다. 본 보고서에서 우리는 AlphaEvolve에서 영감을 받은 하이브리드 LLM-진화 방법론을 연구하고 실험할 수 있는 확장 가능한 오픈 소스 프레임워크인 GigaEvo를 제안합니다. 우리의 시스템은 핵심 구성 요소의 모듈식 구현을 제공합니다."
+    },
+    "summary": "1. 최근 LLM-진화 계산의 발전으로 혁신적인 수학 구성물을 발견하고 어려운 최적화 문제를 해결함을 입증했으나 구현 세부사항을 명시하지 않아 재현성에 어려움이 있었습니다.\n2. GigaEvo는 AlphaEvolve에서 영감을 받은 하이브리드 LLM-진화 방법론을 연구하고 실험할 수 있는 확장 가능한 오픈 소스 프레임워크로, 모듈식 구현을 제공하며 성능을 검증하기 위한 실험적 방법을 제공합니다.\n3. 본 프레임워크는 모듈성, 병렬성, 그리고 실험의 용이성을 강조하며 선언적 설정을 통해 빠른 프로토타이핑을 가능하게 합니다.",
+    "categories": [
+      "LLM",
+      "Evolutionary Computation",
+      "Other"
+    ]
+  },
+  {
+    "title": "Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story",
+    "abstract": "Intrinsic dimension (ID) is an important tool in modern LLM analysis, informing studies of training dynamics, scaling behavior, and dataset structure, yet its textual determinants remain underexplored. We provide the first comprehensive study grounding ID in interpretable text properties through cross-encoder analysis, linguistic features, and sparse autoencoders (SAEs). In this work, we establish three key findings. First, ID is complementary to entropy-based metrics: after controlling for length, the two are uncorrelated, with ID capturing geometric complexity orthogonal to prediction quality. Second, ID exhibits robust genre stratification: scientific prose shows low ID (~8), encyclopedic content medium ID (~9), and creative/opinion writing high ID (~10.5) across all models tested. This reveals that contemporary LLMs find scientific text \"representationally simple\" while fiction requires additional degrees of freedom. Third, using SAEs, we identify causal features: scientific signals (formal tone, report templates, statistics) reduce ID; humanized signals (personalization, emotion, narrative) increase it. Steering experiments confirm these effects are causal. Thus, for contemporary models, scientific writing appears comparatively \"easy\", whereas fiction, opinion, and affect add representational degrees of freedom. Our multi-faceted analysis provides practical guidance for the proper use of ID and the sound interpretation of ID-based results.",
+    "authors": [
+      "Vladislav Pedashenko",
+      "Laida Kushnareva",
+      "Yana Khassan Nibal",
+      "Eduard Tulchinskii",
+      "Kristian Kuznetsov",
+      "Vladislav Zharchinskii",
+      "Yury Maximov",
+      "Irina Piontkovskaya"
+    ],
+    "likes": 80,
+    "published_date": "Nov 19",
+    "url": "https://huggingface.co/papers/2511.15210",
+    "date_collected": "2025-11-27T07:08:10.547123+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "텍스트의 본질적 차원 해독: 학술 초록부터 창작 이야기까지",
+      "abstract": "본질적 차원(ID)은 현대 LLM 분석에서 중요한 도구로, 훈련 동역학, 스케일링 행동, 데이터셋 구조에 대한 연구에 정보를 제공하지만, 텍스트 결정 요인은 아직 충분히 탐구되지 않았습니다. 우린 ID를 해석 가능한 텍스트 특성에 근간을 두고 교차 인코더 분석, 언어적 특징, 희소 오토인코더(SAEs)를 통해 첫 번째 포괄적 연구를 제시합니다. 이 연구에서 세 가지 주요 결과를 수립했습니다. 먼저, ID는 엔트로피 기반 메트릭에 보완적입니다: 길이를 통제한 후 두 가지는 상관관계가 없으며, ID는 예측 품질과 직교하는 기하학적 복잡성을 잡아냅니다. 둘째, ID는 견고한 장르 계층화를 나타냅니다: 과학적 서사는 낮은 ID(~8), 백과사전 콘텐츠는 중간 ID(~9), 창작/의견 작성은 모든 테스트된 모델에서 높은 ID(~10.5)을 보여줍니다. 이것은 현대 LLM이 과학적 텍스트를 \"표현적으로 간단\"하다고 보며, 소설에는 추가적인 자유의도가 필요하다는 것을 보여줍니다. 셋째, SAEs를 이용하여 인과적 특성을 식별했습니다: 과학적 신호(정형화된 어조, 보고 양식, 통계)는 ID를 줄이고, 인간화된 신호(개인화, 감정, 서술)는 증가시킵니다. 조정 실험을 통해 이 효과들이 인과적임을 확인했습니다. 따라서 현대 모델에서 학술 문서 작성은 비교적 \"쉬우나,\" 소설, 의견 및 감정은 표현적 자유의도를 추가합니다. 우리의 다각적 분석은 ID의 적절한 사용과 ID를 기반으로 한 결과의 타당한 해석에 대한 실용적 지침을 제시합니다."
+    },
+    "summary": "1. ID는 텍스트의 기하학적 복잡성을 측정하며, 과학적 텍스트와 창작/의견 작성 사이에 차이를 밝혀냄.\n2. ID는 문장 길이를 통제한 후에도 엔트로피 기반 메트릭과 관련이 없으며, 예측 품질과는 별개의 본질적 특성을 나타냄.\n3. 희소 오토인코더(SAEs)를 사용하여 과학적 텍스트 특징과 인간화된 텍스트 특징이 ID에 미치는 영향을 밝혀내며, 이를 통해 ID의 인과적 특성을 식별함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "SAM 3: Segment Anything with Concepts",
+    "abstract": "We present Segment Anything Model (SAM) 3, a unified model that detects, segments, and tracks objects in images and videos based on concept prompts, which we define as either short noun phrases (e.g., \"yellow school bus\"), image exemplars, or a combination of both. Promptable Concept Segmentation (PCS) takes such prompts and returns segmentation masks and unique identities for all matching object instances. To advance PCS, we build a scalable data engine that produces a high-quality dataset with 4M unique concept labels, including hard negatives, across images and videos. Our model consists of an image-level detector and a memory-based video tracker that share a single backbone. Recognition and localization are decoupled with a presence head, which boosts detection accuracy. SAM 3 doubles the accuracy of existing systems in both image and video PCS, and improves previous SAM capabilities on visual segmentation tasks. We open source SAM 3 along with our new Segment Anything with Concepts (SA-Co) benchmark for promptable concept segmentation.",
+    "authors": [
+      "Nicolas Carion",
+      "Laura Gustafson",
+      "Yuan-Ting Hu",
+      "Shoubhik Debnath",
+      "Ronghang Hu",
+      "Didac Suris",
+      "Chaitanya Ryali",
+      "Kalyan Vasudev Alwala",
+      "Haitham Khedr",
+      "Andrew Huang",
+      "Jie Lei",
+      "Tengyu Ma",
+      "Baishan Guo",
+      "Arpit Kalla",
+      "Markus Marks",
+      "Joseph Greer",
+      "Meng Wang",
+      "Peize Sun",
+      "Roman Rädle",
+      "Triantafyllos Afouras",
+      "Effrosyni Mavroudi",
+      "Katherine Xu"
+    ],
+    "likes": 79,
+    "published_date": "Nov 20",
+    "url": "https://huggingface.co/papers/2511.16719",
+    "date_collected": "2025-11-27T07:08:10.548918+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "SAM 3: 개념으로 무엇이든 세분화",
+      "abstract": "우리는 개념 프롬프트(Concept prompts)를 기반으로 이미지와 영상에서 물체를 감지하고 세분화하며 추적하는 통합 모델인 Segment Anything Model (SAM) 3을 제안합니다. 이 프롬프트는 짧은 명사 구문(예: \"노란 학교 버스\"), 이미지 예시 또는 두 가지를 조합한 것으로 정의됩니다. 개념 프롬프트 세분화 (Promptable Concept Segmentation, PCS)는 이러한 프롬프트를 사용하여 모든 일치하는 물체 인스턴스에 대한 세분화 마스크와 고유 식별을 반환합니다. 우리는 PCS를 발전시키기 위해 4백만 개의 고유한 개념 라벨과 해당 이미지와 영상에 걸친 어려운 부정들을 포함한 고품질 데이터셋을 생성하는 확장 가능한 데이터 엔진을 구축했습니다. 우리 모델은 이미지 수준 탐지기와 기억 기반 비디오 추적기로 구성되어 단일 백본을 공유합니다. 인식과 지역화는 존재 헤드를 통해 분리되어 감지 정확도를 높입니다. SAM 3는 이미지와 비디오 PCS 모두에서 기존 시스템의 정확도를 2배로 높이고 시각적 세분화 작업에 대한 이전 SAM 기능을 개선합니다. 우리는 개념 프롬프트 세분화를 위한 Segment Anything with Concepts (SA-Co) 벤치마크와 함께 SAM 3를 오픈 소스로 제공합니다."
+    },
+    "summary": "1. SAM 3은 이미지와 영상에서 객체를 탐지하고 세분화하며 추적하는 통합 모델이며, 개념 프롬프트를 기반으로 한다.\n2. PCS를 발전시키기 위해 4백만 개의 고유한 개념 라벨을 포함한 데이터셋과 확장 가능한 데이터 엔진을 구축함.\n3. SAM 3은 이미지와 비디오 PCS에서 기존 시스템의 정확도를 2배 이상 향상시키고 시각적 세분화 작업에서 이전 SAM 능력을 향상시킴.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "DeCo: Frequency-Decoupled Pixel Diffusion for End-to-End Image Generation",
+    "abstract": "Pixel diffusion aims to generate images directly in pixel space in an end-to-end fashion. This approach avoids the limitations of VAE in the two-stage latent diffusion, offering higher model capacity. Existing pixel diffusion models suffer from slow training and inference, as they usually model both high-frequency signals and low-frequency semantics within a single diffusion transformer (DiT). To pursue a more efficient pixel diffusion paradigm, we propose the frequency-DeCoupled pixel diffusion framework. With the intuition to decouple the generation of high and low frequency components, we leverage a lightweight pixel decoder to generate high-frequency details conditioned on semantic guidance from the DiT. This thus frees the DiT to specialize in modeling low-frequency semantics. In addition, we introduce a frequency-aware flow-matching loss that emphasizes visually salient frequencies while suppressing insignificant ones. Extensive experiments show that DeCo achieves superior performance among pixel diffusion models, attaining FID of 1.62 (256x256) and 2.22 (512x512) on ImageNet, closing the gap with latent diffusion methods. Furthermore, our pretrained text-to-image model achieves a leading overall score of 0.86 on GenEval in system-level comparison. Codes are publicly available at https://github.com/Zehong-Ma/DeCo.",
+    "authors": [
+      "Zehong Ma",
+      "Longhui Wei",
+      "Shuai Wang",
+      "Shiliang Zhang",
+      "Qi Tian"
+    ],
+    "likes": 54,
+    "published_date": "Nov 24",
+    "url": "https://huggingface.co/papers/2511.19365",
+    "date_collected": "2025-11-27T07:08:10.550063+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "엔드 투 엔드 이미지 생성을 위한 주파수 분리 픽셀 확산 (Frequency-Decoupled Pixel Diffusion)",
+      "abstract": "픽셀 확산은 이미지를 픽셀 공간에서 직접 생성하는 것을 목표로 합니다. 기존의 픽셀 확산 모델은 종종 고주파 신호와 저주파 의미를 모두 모델링해야 하기 때문에 학습과 추론이 느립니다. 이 논문에서는 주파수 분리 픽셀 확산 프레임워크를 제안하며 고주파와 저주파 성분의 생성을 분리함으로써 높은 성능을 달성했습니다."
+    },
+    "summary": "1. DeCo는 효율적인 이미지 생성을 위해 고주파와 저주파 성분의 생성을 분리하여 성능을 높였습니다.\n2. 주파수에 민감한 플로우 매칭 손실을 도입하여 시각적으로 중요한 주파수를 강조하고 무의미한 주파수를 억제하였습니다.\n3. 이미지넷에서 높은 FID 성과를 보여주며 라텬트 확산 방법과의 차이를 줄였으며, 텍스트-이미지 모델에서 우수한 성능을 달성했습니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Computer-Use Agents as Judges for Generative User Interface",
+    "abstract": "Computer-Use Agents (CUA) are becoming increasingly capable of autonomously operating digital environments through Graphical User Interfaces (GUI). Yet, most GUI remain designed primarily for humans--prioritizing aesthetics and usability--forcing agents to adopt human-oriented behaviors that are unnecessary for efficient task execution. At the same time, rapid advances in coding-oriented language models (Coder) have transformed automatic GUI design. This raises a fundamental question: Can CUA as judges to assist Coder for automatic GUI design? To investigate, we introduce AUI-Gym, a benchmark for Automatic GUI development spanning 52 applications across diverse domains. Using language models, we synthesize 1560 tasks that simulate real-world scenarios. To ensure task reliability, we further develop a verifier that programmatically checks whether each task is executable within its environment. Building on this, we propose a Coder-CUA in Collaboration framework: the Coder acts as Designer, generating and revising websites, while the CUA serves as Judge, evaluating functionality and refining designs. Success is measured not by visual appearance, but by task solvability and CUA navigation success rate. To turn CUA feedback into usable guidance, we design a CUA Dashboard that compresses multi-step navigation histories into concise visual summaries, offering interpretable guidance for iterative redesign. By positioning agents as both designers and judges, our framework shifts interface design toward agent-native efficiency and reliability. Our work takes a step toward shifting agents from passive use toward active participation in digital environments. Our code and dataset are available at https://github.com/showlab/AUI.",
+    "authors": [
+      "Kevin Qinghong Lin",
+      "Siyuan Hu",
+      "Linjie Li",
+      "Zhengyuan Yang",
+      "Lijuan Wang",
+      "Philip Torr",
+      "Mike Zheng Shou"
+    ],
+    "likes": 48,
+    "published_date": "Nov 19",
+    "url": "https://huggingface.co/papers/2511.15567",
+    "date_collected": "2025-11-27T07:08:10.551297+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "컴퓨터 사용 에이전트를 판단자로 활용한 생성적 사용자 인터페이스",
+      "abstract": "컴퓨터 사용 에이전트(Computer-Use Agents, CUA)는 그래픽 사용자 인터페이스(GUI)를 통해 점점 더 자율적으로 디지털 환경을 운영하는 능력이 향상되고 있습니다. 그러나 대부분의 GUI는 주로 인간을 위해 디자인되어 있어, 미학과 사용 용이성에 중점을 두는데, 이는 효율적인 작업 실행에 꼭 필요하지 않은 인간 중심 행동을 에이전트에게 강요합니다. 같은 시기에, 코딩 중심 언어 모델(Coder)의 급속한 발전으로 자동 GUI 디자인이 변형되고 있습니다. 이는 기본적인 질문을 던집니다: CUA가 자동 GUI 디자인을 위해 Coder를 지원하는 판단자로 작용할 수 있을까요? 이를 조사하기 위해 AUI-Gym을 소개합니다. 이는 다양한 도메인에서 52가지 애플리케이션을 포괄하는 자동 GUI 개발 벤치마크입니다. 언어 모델을 사용하여 현실 시나리오를 모방하는 1560개의 작업을 합성합니다. 작업 신뢰성을 보장하기 위해 각 작업이 환경 내에서 실행 가능한지 프로그램적으로 확인하는 검증기도 개발합니다. 이를 기반으로, Coder-CUA 협업 프레임워크를 제안합니다: Coder는 디자이너 역할을 하여 웹사이트를 생성하고 수정하는 반면, CUA는 판단자 역할로 기능을 평가하고 디자인을 정제합니다. 성공은 시각적인 외관이 아닌 작업 해결 능력과 CUA 내비게이션 성공률에 의해 측정됩니다. CUA 피드백을 유용한 지침으로 전환하기 위해 CUA 대시보드를 설계하여 여러 단계의 내비게이션 이력을 간결한 시각적 요약으로 압축하여 반복적 재디자인을 위한 해석 가능한 지침을 제공합니다. 에이전트를 디자이너 및 판단자로 위치시킴으로써, 우리의 프레임워크는 인터페이스 디자인을 에이전트 기반의 효율성과 신뢰성을 향상시킵니다. 우리의 작업은 에이전트를 수동적 사용에서 디지털 환경에서의 적극적 참여로 전환시키는 한 걸음을 나아가고 있습니다. 코드와 데이터셋은 https://github.com/showlab/AUI 에서 사용 가능합니다."
+    },
+    "summary": "1. 컴퓨터 사용 에이전트(CUA)가 코더를 지원하여 자동 GUI 디자인에 판단자로 작용할 수 있는지를 조사함.\n2. AUI-Gym을 활용하여 자동 GUI 개발을 위한 벤치마크를 도입하고, Coder-CUA 협업 프레임워크를 제안하여 인터페이스 디자인을 효율적으로 변화시킴.\n3. 시각적 외관이 아닌 작업 해결 능력과 CUA 내비게이션 성공률을 측정하여 에이전트를 디자이너 및 판단자로 활용하여 디지털 환경에서의 참여를 촉진함.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research",
+    "abstract": "Deep research models perform multi-step research to produce long-form, well-attributed answers. However, most open deep research models are trained on easily verifiable short-form QA tasks via reinforcement learning with verifiable rewards (RLVR), which does not extend to realistic long-form tasks. We address this with Reinforcement Learning with Evolving Rubrics (RLER), in which we construct and maintain rubrics that co-evolve with the policy model during training; this allows the rubrics to incorporate information that the model has newly explored and to provide discriminative, on-policy feedback. Using RLER, we develop Deep Research Tulu (DR Tulu-8B), the first open model that is directly trained for open-ended, long-form deep research. Across four long-form deep research benchmarks in science, healthcare and general domains, DR Tulu substantially outperforms existing open deep research models, and matches or exceeds proprietary deep research systems, while being significantly smaller and cheaper per query. To facilitate future research, we release all data, models, and code, including our new MCP-based agent infrastructure for deep research systems.",
+    "authors": [
+      "Rulin Shao",
+      "Akari Asai",
+      "Shannon Zejiang Shen",
+      "Hamish Ivison",
+      "Varsha Kishore",
+      "Jingming Zhuo",
+      "Xinran Zhao",
+      "Molly Park",
+      "Samuel G. Finlayson",
+      "David Sontag",
+      "Tyler Murray",
+      "Sewon Min",
+      "Pradeep Dasigi",
+      "Luca Soldaini",
+      "Faeze Brahman",
+      "Wen-tau Yih",
+      "Tongshuang Wu",
+      "Luke Zettlemoyer",
+      "Yoon Kim",
+      "Hannaneh Hajishirzi",
+      "Pang Wei Koh"
+    ],
+    "likes": 46,
+    "published_date": "Nov 24",
+    "url": "https://huggingface.co/papers/2511.19399",
+    "date_collected": "2025-11-27T07:08:10.553085+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "DR Tulu: 진화하는 평가 기준을 활용한 강화학습을 통한 깊은 연구",
+      "abstract": "깊은 연구 모델은 다단계 연구를 통해 긴 형태의 잘 속성화된 답변을 만들어냅니다. 그러나 대부분의 공개 깊은 연구 모델은 짧은 QA 작업을 통해 학습되어 현실적인 긴 형태의 작업으로 확장되지 않습니다. 저희는 학습 중에 정책 모델과 함께 공진화하는 평가 기준을 활용하는 '진화하는 평가 기준을 활용한 강화학습'을 제시합니다. 이를 통해 모델이 새롭게 탐험한 정보를 반영하고 식별적인 온-폴리시 피드백을 제공할 수 있는 평가 기준을 유지 및 구축합니다. 이 방법을 통해 우리는 열린 형태의 긴 형태 깊은 연구를 직접적으로 학습하는 최초의 열린 모델, DR Tulu-8B를 개발했습니다. 과학, 의료 및 일반 영역에서 네 가지의 긴 형태 깊은 연구 벤치마크를 통해 DR Tulu는 기존의 공개 깊은 연구 모델을 크게 능가하며, 소유 깊은 연구 시스템과 맞먹거나 그 이상의 결과를 얻는데 성공했습니다. 또한, 쿼리 당 상당히 작고 저렴한 DR Tulu는 향후 연구를 용이하게 하기 위해 깊은 연구 시스템을 위한 새로운 MCP 기반 에이전트 인프라를 비롯한 모든 데이터, 모델 및 코드를 공개합니다."
+    },
+    "summary": "1. 공개 깊은 연구 모델의 한계를 극복하기 위해 '진화하는 평가 기준을 활용한 강화학습'을 도입하고, 이를 통해 새로운 정보를 반영하며 식별적인 피드백을 제공합니다.\n2. DR Tulu-8B는 열린 형태의 긴 형태 깊은 연구를 위해 직접적으로 학습된 최초의 모델로, 기존 모델을 크게 능가하고 소유 깊은 연구 시스템과 견줄만한 결과를 보여줍니다.\n3. DR Tulu는 작고 저렴하면서 효율적인데, 향후 연구를 위해 새로운 에이전트 인프라를 비롯한 모든 자료와 코드를 공개하여 연구를 용이하게 합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

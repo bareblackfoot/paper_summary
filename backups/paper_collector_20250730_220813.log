@@ -1,0 +1,153 @@
+=== Paper Collection Started at Tue Jul 29 22:08:17 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W31
+URL: https://huggingface.co/papers/week/2025-W31
+Found 10 papers in weekly view
+Fetching likes for: Agentic Reinforced Policy Optimization
+Fetching likes for: ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World
+  Shorts
+Fetching likes for: Deep Researcher with Test-Time Diffusion
+Fetching likes for: Rep-MTL: Unleashing the Power of Representation-level Task Saliency for
+  Multi-Task Learning
+Fetching likes for: The Geometry of LLM Quantization: GPTQ as Babai's Nearest Plane
+  Algorithm
+Fetching likes for: SmallThinker: A Family of Efficient Large Language Models Natively
+  Trained for Local Deployment
+Fetching likes for: Reconstructing 4D Spatial Intelligence: A Survey
+Fetching likes for: MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI
+  Agents
+Fetching likes for: A Survey of Self-Evolving Agents: On Path to Artificial Super
+  Intelligence
+Fetching likes for: When Tokens Talk Too Much: A Survey of Multimodal Long-Context Token
+  Compression across Images, Videos, and Audios
+Selected top 10 papers by likes:
+1. Agentic Reinforced Policy Optimization (71 likes)
+2. ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World
+  Shorts (46 likes)
+3. Deep Researcher with Test-Time Diffusion (42 likes)
+4. Rep-MTL: Unleashing the Power of Representation-level Task Saliency for
+  Multi-Task Learning (31 likes)
+5. The Geometry of LLM Quantization: GPTQ as Babai's Nearest Plane
+  Algorithm (30 likes)
+6. SmallThinker: A Family of Efficient Large Language Models Natively
+  Trained for Local Deployment (29 likes)
+7. Reconstructing 4D Spatial Intelligence: A Survey (26 likes)
+8. MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI
+  Agents (24 likes)
+9. A Survey of Self-Evolving Agents: On Path to Artificial Super
+  Intelligence (22 likes)
+10. When Tokens Talk Too Much: A Survey of Multimodal Long-Context Token
+  Compression across Images, Videos, and Audios (18 likes)
+Found abstract: Large-scale reinforcement learning with verifiable rewards (RLVR) has
+demonstrated its effectiveness...
+Processed paper: Agentic Reinforced Policy Optimization
+Found abstract: Real-world user-generated short videos, especially those distributed on
+platforms such as WeChat Cha...
+Processed paper: ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World
+  Shorts
+Found abstract: Deep research agents, powered by Large Language Models (LLMs), are rapidly
+advancing; yet, their per...
+Processed paper: Deep Researcher with Test-Time Diffusion
+Found abstract: Despite the promise of Multi-Task Learning in leveraging complementary
+knowledge across tasks, exist...
+Processed paper: Rep-MTL: Unleashing the Power of Representation-level Task Saliency for
+  Multi-Task Learning
+Found abstract: Quantizing the weights of large language models (LLMs) from 16-bit to lower
+bitwidth is the de facto...
+Processed paper: The Geometry of LLM Quantization: GPTQ as Babai's Nearest Plane
+  Algorithm
+Found abstract: While frontier large language models (LLMs) continue to push capability
+boundaries, their deployment...
+Processed paper: SmallThinker: A Family of Efficient Large Language Models Natively
+  Trained for Local Deployment
+Found abstract: Reconstructing 4D spatial intelligence from visual observations has long been
+a central yet challeng...
+Processed paper: Reconstructing 4D Spatial Intelligence: A Survey
+Found abstract: We introduce MMBench-GUI, a hierarchical benchmark for evaluating GUI
+automation agents across Windo...
+Processed paper: MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI
+  Agents
+Found abstract: Large Language Models (LLMs) have demonstrated strong capabilities but remain
+fundamentally static, ...
+Processed paper: A Survey of Self-Evolving Agents: On Path to Artificial Super
+  Intelligence
+Found abstract: Multimodal large language models (MLLMs) have made remarkable strides,
+largely driven by their abili...
+Processed paper: When Tokens Talk Too Much: A Survey of Multimodal Long-Context Token
+  Compression across Images, Videos, and Audios
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Agentic Reinforced Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World
+  Shorts
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Deep Researcher with Test-Time Diffusion
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  22
+Update date_collected: 2025-07-30T07:08:24.751050+09:00  ->  2025-07-29T07:08:21.943688+09:00
+
+Processing paper 4/10
+Title: Rep-MTL: Unleashing the Power of Representation-level Task Saliency for
+  Multi-Task Learning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: The Geometry of LLM Quantization: GPTQ as Babai's Nearest Plane
+  Algorithm
+Paper already exists, checking if translation is complete...
+Update likes: 30  ->  17
+Update date_collected: 2025-07-30T07:08:24.753131+09:00  ->  2025-07-29T07:08:21.944812+09:00
+
+Processing paper 6/10
+Title: SmallThinker: A Family of Efficient Large Language Models Natively
+  Trained for Local Deployment
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Reconstructing 4D Spatial Intelligence: A Survey
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI
+  Agents
+Paper already exists, checking if translation is complete...
+Update likes: 24  ->  13
+Update date_collected: 2025-07-30T07:08:24.757964+09:00  ->  2025-07-29T07:08:21.946710+09:00
+
+Processing paper 9/10
+Title: A Survey of Self-Evolving Agents: On Path to Artificial Super
+  Intelligence
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: When Tokens Talk Too Much: A Survey of Multimodal Long-Context Token
+  Compression across Images, Videos, and Audios
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W31.json...
+
+Updating Notion database...
+Creating new paper: 적극적 보강 정책 최적화
+Creating new paper: ARC-Hunyuan-Video-7B: 현실 세계 단편 영상의 구조화된 이해
+Updating paper: 테스트 시간 확산을 활용한 깊은 연구자 (likes: 22 -> 42)
+Creating new paper: Rep-MTL: 다중 작업 학습을 위한 표현 수준 작업 중요도의 발휘
+Updating paper: LLM 양자화의 기하: GPTQ가 Babai의 가장 가까운 평면 알고리즘으로 나타난다 (likes: 17 -> 30)
+Creating new paper: SmallThinker: 지역 배포용으로 네이티브로 훈련된 효율적인 대규모 언어 모델군
+Creating new paper: 4차원 공간 지능 재구성: 조사
+Updating paper: MMBench-GUI: GUI 에이전트를 위한 계층적 다중 플랫폼 평가 프레임워크 (likes: 13 -> 24)
+Creating new paper: 스스로 진화하는 에이전트 조사: 인공 초지능으로의 길
+Creating new paper: 토큰이 말하는 양은 과도할 때: 이미지, 비디오, 음성에서의 다중모달 장문맥 토큰 압축 조사
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jul 29 22:10:00 UTC 2025 ===
+

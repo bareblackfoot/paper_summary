@@ -1,0 +1,119 @@
+=== Paper Collection Started at Tue Jul 21 23:03:22 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W30
+URL: https://huggingface.co/papers/week/2026-W30
+Found 10 papers in weekly view
+Fetching likes for: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Fetching likes for: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Fetching likes for: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Fetching likes for: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Fetching likes for: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Fetching likes for: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Fetching likes for: Loop the Loopies!
+Fetching likes for: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Fetching likes for: xHC: Expanded Hyper-Connections
+Fetching likes for: HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement
+Selected top 10 papers by likes:
+1. TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs (139 likes)
+2. RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources (128 likes)
+3. RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM (128 likes)
+4. EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World (73 likes)
+5. DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment (71 likes)
+6. SWE-Pruner Pro: The Coder LLM Already Knows What to Prune (64 likes)
+7. Loop the Loopies! (63 likes)
+8. Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories (59 likes)
+9. xHC: Expanded Hyper-Connections (51 likes)
+10. HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement (46 likes)
+Found abstract: Video multimodal large language models (MLLMs) can describe what happens in a video, but rarely iden...
+Processed paper: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Found abstract: Skills are a useful abstraction for software agents, turning human and agent experience into reusabl...
+Processed paper: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Found abstract: Graph retrieval-augmented generation (GraphRAG) enhances large language models with structured knowl...
+Processed paper: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Found abstract: This paper introduces EvolvingWorld, a framework and benchmark for character and world co-evolution ...
+Processed paper: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Found abstract: Training tool-use agents to improve from their own experience remains challenging, as supervised fin...
+Processed paper: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Found abstract: Pruning long context for coding agents has been a vital technology for efficient context management....
+Processed paper: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Found abstract: We present Loopie, the most powerful looped Transformer to date. The Loopie series consists of two M...
+Processed paper: Loop the Loopies!
+Found abstract: We present Xiaomi-Robotics-1, a foundational vision-language-action (VLA) model capable of (1) follo...
+Processed paper: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Found abstract: Hyper-Connections (HC) expand the residual stream of Transformers into N parallel streams, providing...
+Processed paper: xHC: Expanded Hyper-Connections
+Found abstract: Human-object centric video personalization (HOCVP) is a core task within subject-driven video genera...
+Processed paper: HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Paper already exists, checking if translation is complete...
+Update likes: 128  ->  113
+Update date_collected: 2026-07-22T08:03:31.623309+09:00  ->  2026-07-21T08:05:56.911516+09:00
+
+Processing paper 3/10
+Title: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Paper already exists, checking if translation is complete...
+Update likes: 128  ->  111
+Update date_collected: 2026-07-22T08:03:31.626434+09:00  ->  2026-07-21T08:05:56.914592+09:00
+
+Processing paper 4/10
+Title: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Loop the Loopies!
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  54
+Update date_collected: 2026-07-22T08:03:31.639015+09:00  ->  2026-07-21T08:05:56.917268+09:00
+
+Processing paper 8/10
+Title: Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  54
+Update date_collected: 2026-07-22T08:03:31.643267+09:00  ->  2026-07-21T08:05:56.921357+09:00
+
+Processing paper 9/10
+Title: xHC: Expanded Hyper-Connections
+Paper already exists, checking if translation is complete...
+Update likes: 51  ->  46
+Update date_collected: 2026-07-22T08:03:31.646973+09:00  ->  2026-07-21T08:05:56.924891+09:00
+
+Processing paper 10/10
+Title: HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W30.json...
+
+Updating Notion database...
+Creating new paper: TimeLens2: 멀티모달 LLM을 활용한 다목적 비디오 시간 기준화
+Updating paper: RESOURCE2SKILL: 인간이 만든 다중 모달 자원으로부터 실행 가능한 에이전트 스킬 추출 (likes: 113 -> 128)
+Updating paper: RAGU: 소형 도메인 적응 LLM을 갖춘 다단계 GraphRAG 엔진 (likes: 111 -> 128)
+Creating new paper: 진화하는 세상: 상호작용적인 문학 세계에서 역할 연기 에이전트와 세계 모델의 공동 진화를 위한 오픈 스키마 프레임워크
+Creating new paper: DeepSearch-World: 베리파이어 환경에서 깊이 탐색 에이전트들을 위한 자기 증류
+Creating new paper: SWE-Pruner Pro: 코더 LLM이 이미 무엇을 다듬어야 하는지 알고 있습니다
+Updating paper: 루프 더 루피! (likes: 54 -> 63)
+Updating paper: Xiaomi-Robotics-1: 실세계 궤적 100,000시간 이상을 활용한 비전-언어-행동 모델의 확장 (likes: 54 -> 59)
+Updating paper: 확장된 하이퍼 커넥션(xHC) (likes: 46 -> 51)
+Creating new paper: HOMIE: 사람-객체 중심 비디오 개인화를 위한 멀티모달 지능 향상
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jul 21 23:04:57 UTC 2026 ===
+

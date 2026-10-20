@@ -1,0 +1,115 @@
+=== Paper Collection Started at Tue Aug 18 22:30:27 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W34
+URL: https://huggingface.co/papers/week/2026-W34
+Found 10 papers in weekly view
+Fetching likes for: Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination
+Fetching likes for: Self-Supervised Visual On-Policy Distillation
+Fetching likes for: HarnessEval-W: Agentifying the Evaluation of Visual Worlds
+Fetching likes for: StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling
+Fetching likes for: VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?
+Fetching likes for: Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search
+Fetching likes for: Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development
+Fetching likes for: Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization
+Fetching likes for: MOSS-VL Technical Report
+Fetching likes for: ClawGym II: Exploring Black-Box RL on Agent Harness
+Selected top 10 papers by likes:
+1. Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination (267 likes)
+2. Self-Supervised Visual On-Policy Distillation (158 likes)
+3. HarnessEval-W: Agentifying the Evaluation of Visual Worlds (110 likes)
+4. StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling (90 likes)
+5. VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End? (51 likes)
+6. Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search (49 likes)
+7. Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development (48 likes)
+8. Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization (44 likes)
+9. MOSS-VL Technical Report (38 likes)
+10. ClawGym II: Exploring Black-Box RL on Agent Harness (34 likes)
+Found abstract: Recent video generators can fabricate realistic depictions of wars, disasters, public emergencies, a...
+Processed paper: Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination
+Found abstract: Visual on-policy distillation relies heavily on an informative teacher-student asymmetry, through ei...
+Processed paper: Self-Supervised Visual On-Policy Distillation
+Found abstract: A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the rea...
+Processed paper: HarnessEval-W: Agentifying the Evaluation of Visual Worlds
+Found abstract: Long-horizon agents can fail even when their underlying models can solve the constituent steps. They...
+Processed paper: StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling
+Found abstract: Constructing an interactive 3D open world from a user query is important. However, existing methods ...
+Processed paper: VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?
+Found abstract: Scientific discovery often involves optimising expensive-to-evaluate objectives over vast, structure...
+Processed paper: Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search
+Found abstract: Autonomous agents are increasingly capable of improving models, systems, and other technical artifac...
+Processed paper: Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development
+Found abstract: Reinforcement learning (RL) with group-relative advantages has become the de facto standard for post...
+Processed paper: Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization
+Found abstract: We present MOSS-VL, an open vision-language model family that treats real-time interaction -- percei...
+Processed paper: MOSS-VL Technical Report
+Found abstract: Agent harnesses have substantially improved performance on long-horizon tasks by coordinating agent ...
+Processed paper: ClawGym II: Exploring Black-Box RL on Agent Harness
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination
+Paper already exists, checking if translation is complete...
+Update likes: 267  ->  257
+Update date_collected: 2026-08-19T07:30:37.423006+09:00  ->  2026-08-18T07:31:07.580972+09:00
+
+Processing paper 2/10
+Title: Self-Supervised Visual On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 158  ->  146
+Update date_collected: 2026-08-19T07:30:37.425579+09:00  ->  2026-08-18T07:31:07.582745+09:00
+
+Processing paper 3/10
+Title: HarnessEval-W: Agentifying the Evaluation of Visual Worlds
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Large Discovery Models: Empirically-grounded Model-Based Open-Ended Search
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  41
+Update date_collected: 2026-08-19T07:30:37.439147+09:00  ->  2026-08-18T07:31:07.584608+09:00
+
+Processing paper 8/10
+Title: Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: MOSS-VL Technical Report
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: ClawGym II: Exploring Black-Box RL on Agent Harness
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W34.json...
+
+Updating Notion database...
+Updating paper: 실제 위기 사건에서 AI 생성 비디오 공격으로부터 어떻게 방어할까요? 탐지기, 생성기 및 사회적 전파의 체계적 평가 (likes: 257 -> 267)
+Updating paper: 자기 감독 비주장적 시각적 온-폴리시 디스틸레이션 (likes: 146 -> 158)
+Creating new paper: 시각 세계의 평가를 에이전트화하는 HarnessEval-W
+Creating new paper: StateM: Terminal-Bench 2.1에서 \$15의 비용으로 95.3%의 정확도 도달
+Creating new paper: 멜로월딩: 다중모달 에이전트가 끝에서 끝으로 3D 오픈 월드를 구축할 수 있을까?
+Creating new paper: 대규모 발견 모델: 경험적으로 기반을 둔 모델 기반 오픈엔드 검색
+Updating paper: 최종 점수를 넘어서: 장기간 AI 연구 및 개발을 위한 에이전트의 체계적 평가 (likes: 41 -> 48)
+Creating new paper: 익히키디안 학습보다 남은 것을 배우라: 다중보상 정책 최적화를 위한 포화 인식 어드밴티지 가중치 재조정
+Creating new paper: MOSS-VL 기술 보고서
+Creating new paper: ClawGym II: 에이전트 하네스에서의 블랙박스 강화학습 탐구
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Aug 18 22:32:02 UTC 2026 ===
+

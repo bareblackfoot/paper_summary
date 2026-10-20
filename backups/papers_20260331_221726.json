@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
+    "abstract": "Video world models have shown immense potential in simulating the physical world, yet existing memory mechanisms primarily treat environments as static canvases. When dynamic subjects hide out of sight and later re-emerge, current methods often struggle, leading to frozen, distorted, or vanishing subjects. To address this, we introduce Hybrid Memory, a novel paradigm requiring models to simultaneously act as precise archivists for static backgrounds and vigilant trackers for dynamic subjects, ensuring motion continuity during out-of-view intervals. To facilitate research in this direction, we construct HM-World, the first large-scale video dataset dedicated to hybrid memory. It features 59K high-fidelity clips with decoupled camera and subject trajectories, encompassing 17 diverse scenes, 49 distinct subjects, and meticulously designed exit-entry events to rigorously evaluate hybrid coherence. Furthermore, we propose HyDRA, a specialized memory architecture that compresses memory into tokens and utilizes a spatiotemporal relevance-driven retrieval mechanism. By selectively attending to relevant motion cues, HyDRA effectively preserves the identity and motion of hidden subjects. Extensive experiments on HM-World demonstrate that our method significantly outperforms state-of-the-art approaches in both dynamic subject consistency and overall generation quality.",
+    "authors": [
+      "Kaijin Chen",
+      "Dingkang Liang",
+      "Xin Zhou",
+      "Yikang Ding",
+      "Xiaoqiang Liu",
+      "Pengfei Wan",
+      "Xiang Bai"
+    ],
+    "likes": 133,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25716",
+    "date_collected": "2026-03-31T07:16:51.237767+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "시야 밖, 그러나 마음속에: 동적 비디오 월드 모델을 위한 하이브리드 메모리",
+      "abstract": "비디오 월드 모델은 물리적 세계를 시뮬레이션하는 데 엄청난 잠재력을 보여주었지만, 기존의 메모리 메커니즘은 주로 환경을 정적 캔버스로 처리합니다. 동적 주체가 시야에서 사라지고 나중에 다시 나타날 때 현재 방법들은 종종 고전하며, 얼어붙거나 왜곡된 주체로 이어집니다. 이를 해결하기 위해 우리는 하이브리드 메모리를 소개합니다. 이는 모델이 정적 배경에 대해 정확한 기록가로 작용하고 동적 주체를 주의 깊게 추적하여 시야에서 벗어날 때 움직임 연속성을 보장합니다. 이 방향의 연구를 촉진하기 위해 하이브리드 메모리에 특화된 첫 번째 대규모 비디오 데이터셋인 HM-World를 구축했습니다. 이는 17가지 다양한 장면, 49가지 다른 주체를 포함하고 있으며 엄격한 하이브리드 일관성을 철저히 평가하기 위해 카메라와 주체의 궤적을 분리한 59,000개의 고품질 클립을 포함합니다. 더 나아가, 우리는 토큰으로 메모리를 압축하고 시공간 관련성 주도적 검색 메커니즘을 활용하는 특수 메모리 아키텍처인 HyDRA를 제안합니다. 관련 운동 단서에 선택적으로 주의를 기울이면, HyDRA는 숨겨진 주체의 정체성과 움직임을 효과적으로 보존합니다. HM-World에서의 광범위한 실험은 우리의 방법이 동적 주체 일관성과 전반적 생성 품질 모두에서 최첨단 접근법을 현격히 능가함을 보여줍니다."
+    },
+    "summary": "1. 기존 비디오 월드 모델의 한계를 해결하기 위해 하이브리드 메모리 도입\n2. HM-World 데이터셋과 HyDRA 메모리 아키텍처 소개\n3. 실험 결과, HyDRA가 동적 주체 일관성과 전반적 생성 품질 모두에서 우수한 성과를 보임",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling",
+    "abstract": "Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional architectures suffer from limited interactivity and high latency. We propose ShotStream, a novel causal multi-shot architecture that enables interactive storytelling and efficient on-the-fly frame generation. By reformulating the task as next-shot generation conditioned on historical context, ShotStream allows users to dynamically instruct ongoing narratives via streaming prompts. We achieve this by first fine-tuning a text-to-video model into a bidirectional next-shot generator, which is then distilled into a causal student via Distribution Matching Distillation. To overcome the challenges of inter-shot consistency and error accumulation inherent in autoregressive generation, we introduce two key innovations. First, a dual-cache memory mechanism preserves visual coherence: a global context cache retains conditional frames for inter-shot consistency, while a local context cache holds generated frames within the current shot for intra-shot consistency. And a RoPE discontinuity indicator is employed to explicitly distinguish the two caches to eliminate ambiguity. Second, to mitigate error accumulation, we propose a two-stage distillation strategy. This begins with intra-shot self-forcing conditioned on ground-truth historical shots and progressively extends to inter-shot self-forcing using self-generated histories, effectively bridging the train-test gap. Extensive experiments demonstrate that ShotStream generates coherent multi-shot videos with sub-second latency, achieving 16 FPS on a single GPU. It matches or exceeds the quality of slower bidirectional models, paving the way for real-time interactive storytelling. Training and inference code, as well as the models, are available on our",
+    "authors": [
+      "Yawen Luo",
+      "Xiaoyu Shi",
+      "Junhao Zhuang",
+      "Yutian Chen",
+      "Quande Liu",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Tianfan Xue"
+    ],
+    "likes": 110,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25746",
+    "date_collected": "2026-03-31T07:16:51.240761+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "ShotStream: 대화형 이야기 만들기를 위한 스트리밍 멀티샷 비디오 생성",
+      "abstract": "멀티샷 비디오 생성은 긴 이야기 생성에 중요하지만, 현재의 양방향 아키텍처는 상호작용이 제한되고 높은 대기 시간이 발생합니다. ShotStream은 대화형 이야기 만들기와 효율적인 즉석 프레임 생성을 가능케 하는 혁신적인 인과적 멀티샷 아키텍처로 제안됩니다. 이를 통해 사용자는 스트리밍 프롬프트를 통해 지속적인 이야기를 동적으로 조작할 수 있습니다."
+    },
+    "summary": "1. ShotStream은 다음 샷 생성을 역사적 맥락에 의존하는 것으로 재해석하여 사용자가 스트리밍 프롬프트를 통해 지속적인 이야기를 동적으로 지시할 수 있게 합니다.\n2. Dual-cache 메모리 메커니즘과 RoPE 불연속성 지표를 활용하여 시각 일관성을 유지하고 오류 누적을 완화하는 두 가지 혁신적인 기법을 도입합니다.\n3. ShotStream은 하위 초 시대의 지연 시간으로 일관성있는 멀티샷 비디오를 생성하며, 싱글 GPU에서 초당 16 FPS를 달성하여 느린 양방향 모델보다 빠른 실시간 대화형 이야기 만들기를 가능하게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference",
+    "abstract": "Autoregressive video diffusion models have demonstrated remarkable progress, yet they remain bottlenecked by intractable linear KV-cache growth, temporal repetition, and compounding errors during long-video generation. To address these challenges, we present PackForcing, a unified framework that efficiently manages the generation history through a novel three-partition KV-cache strategy. Specifically, we categorize the historical context into three distinct types: (1) Sink tokens, which preserve early anchor frames at full resolution to maintain global semantics; (2) Mid tokens, which achieve a massive spatiotemporal compression (32x token reduction) via a dual-branch network fusing progressive 3D convolutions with low-resolution VAE re-encoding; and (3) Recent tokens, kept at full resolution to ensure local temporal coherence. To strictly bound the memory footprint without sacrificing quality, we introduce a dynamic top-k context selection mechanism for the mid tokens, coupled with a continuous Temporal RoPE Adjustment that seamlessly re-aligns position gaps caused by dropped tokens with negligible overhead. Empowered by this principled hierarchical context compression, PackForcing can generate coherent 2-minute, 832x480 videos at 16 FPS on a single H200 GPU. It achieves a bounded KV cache of just 4 GB and enables a remarkable 24x temporal extrapolation (5s to 120s), operating effectively either zero-shot or trained on merely 5-second clips. Extensive results on VBench demonstrate state-of-the-art temporal consistency (26.07) and dynamic degree (56.25), proving that short-video supervision is sufficient for high-quality, long-video synthesis. https://github.com/ShandaAI/PackForcing",
+    "authors": [
+      "Xiaofeng Mao",
+      "Shaohao Rui",
+      "Kaining Ying",
+      "Bo Zheng",
+      "Chuanhao Li",
+      "Mingmin Chi",
+      "Kaipeng Zhang"
+    ],
+    "likes": 38,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25730",
+    "date_collected": "2026-03-31T07:16:51.243009+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "PackForcing: 짧은 비디오 교육은 긴 비디오 샘플링과 긴 문맥 추론에 충분하다",
+      "abstract": "자기 회귀 비디오 확산 모델은 놀랍도록 발전을 이루었지만, 매우 긴 영상 생성 중에 불가리한 선형 KV-캐시 증가, 시간적 반복, 및 누적 오류로 인한 병목 현상을 겪고 있다. 이러한 도전에 대처하기 위해, 우리는 PackForcing을 제안한다. 이는 새로운 세 분할 KV-캐시 전략을 통해 영상 생성 이력을 효율적으로 관리하는 통합 프레임워크이다. 구체적으로, 우리는 역사적 문맥을 세 가지 유형으로 분류한다: (1) Sink 토큰, (2) Mid 토큰, (3) Recent 토큰. PackForcing은 단일 H200 GPU에서 16 FPS로 2분 길이, 832x480 해상도의 일관된 비디오를 생성할 수 있다. 이는 단지 4 GB의 한정된 KV 캐시를 달성하며 놀라운 24배의 시간 외삽(5초에서 120초)을 가능케 한다. 짧은 비디오 지도만으로도 고품질의 긴 비디오 합성이 충분함을 입증하였다."
+    },
+    "summary": "1. PackForcing은 세 분할 KV-캐시 전략을 통해 관련 문맥을 효율적으로 다룬다.\n2. 중요한 위치 정보를 보존하는 Sink 토큰, 공간적 및 시간적 압축을 달성하는 Mid 토큰, 그리고 지역적 시간 일관성을 보장하는 Recent 토큰으로 구성된다.\n3. PackForcing은 단 한 번의 학습으로 5초의 비디오 클립을 가지고도 뛰어난 긴 비디오 합성 성과를 보인다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills",
+    "abstract": "Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling complex tasks. Yet, manual authoring creates a severe scalability bottleneck. Conversely, automated skill generation often yields fragile or fragmented results because it either relies on shallow parametric knowledge or sequentially overfits to non-generalizable trajectory-local lessons. To overcome this, we introduce Trace2Skill, a framework that mirrors how human experts author skills: by holistically analyzing broad execution experience before distilling it into a single, comprehensive guide. Instead of reacting sequentially to individual trajectories, Trace2Skill dispatches a parallel fleet of sub-agents to analyze a diverse pool of executions. It extracts trajectory-specific lessons and hierarchically consolidates them into a unified, conflict-free skill directory via inductive reasoning. Trace2Skill supports both deepening existing human-written skills and creating new ones from scratch. Experiments in challenging domains, such as spreadsheet, VisionQA and math reasoning, show that Trace2Skill significantly improves upon strong baselines, including Anthropic's official xlsx skills. Crucially, this trajectory-grounded evolution does not merely memorize task instances or model-specific quirks: evolved skills transfer across LLM scales and generalize to OOD settings. For example, skills evolved by Qwen3.5-35B on its own trajectories improved a Qwen3.5-122B agent by up to 57.65 absolute percentage points on WikiTableQuestions. Ultimately, our results demonstrate that complex agent experience can be packaged into highly transferable, declarative skills -- requiring no parameter updates, no external retrieval modules, and utilizing open-source models as small as 35B parameters.",
+    "authors": [
+      "Jingwei Ni",
+      "Yihao Liu",
+      "Xinpeng Liu",
+      "Yutao Sun",
+      "Mengyu Zhou",
+      "Pengyu Cheng",
+      "Dexin Wang",
+      "Xiaoxi Jiang",
+      "Guanjun Jiang"
+    ],
+    "likes": 33,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25158",
+    "date_collected": "2026-03-31T07:16:51.245377+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "Trace2Skill: Trajectory-Local Lessons를 전이 가능한 에이전트 스킬로 압축(Transferable Agent Skills)",
+      "abstract": "대규모 언어모델(LLM) 에이전트에 특정 도메인 스킬 부여는 복잡한 작업에 대처하는 데 중요합니다. 그러나 수동 저작은 심각한 확장성 병목 현상을 유발합니다. 이와는 달리, 자동 스킬 생성은 흔히 얕은 매개지식에 의존하거나 비일반화 가능한 궤적-지역적 교훈에 순차적으로 과적합하기 때문에 부서지거나 조각난 결과물을 얻을 때가 많습니다. 이를 극복하기 위해 우리는 Trace2Skill을 소개합니다. 이는 인간 전문가가 스킬을 저술하는 방식을 모방하는 프레임워크입니다: 광범위한 실행 경험을 종합적으로 분석한 후에 이를 하나의 포괄적인 안내로 압축합니다. Trace2Skill은 개별 궤적에 순차적으로 반응하는 대신 다양한 실행 집합을 분석하기 위해 병렬 하위 에이전트 집단을 보냅니다. 이는 궤적에 특화된 교훈을 추출하고 귀납적 추론을 통해 이를 일치하는, 갈등 없는 스킬 디렉토리로 계층적으로 통합합니다. Trace2Skill은 기존의 인간이 작성한 스킬을 보강하고 0부터 새로운 스킬을 만드는 데 모두 지원합니다. 스프레드시트, VisionQA, 수학 추론 등 어려운 도메인에서의 실험 결과는 Trace2Skill이 Anthropic의 공식 xlsx 스킬을 비롯한 강력한 베이스라인에 비해 크게 향상되는 것을 보여줍니다. 이 궤적 중심적 진화는 과업 사례나 특정 모델 특이성을 단순히 기억하는 것이 아닙니다: 진화된 스킬은 LLM 스케일 간에 이전되고 OOD 설정으로 일반화됩니다. 예를 들어, Qwen3.5-35B에 의해 진화된 스킬은 WikiTableQuestions에서 Qwen3.5-122B 에이전트를 최대 57.65 절대 백분율포인트로 향상시켰습니다. 최종적으로, 우리 결과는 복잡한 에이전트 경험이 35B 매개변수 크기의 오픈 소스 모델을 활용하며 매개변수 업데이트 또는 외부 검색 모듈 없이도 매우 전이 가능한 선언적 스킬로 패키징할 수 있음을 보여줍니다."
+    },
+    "summary": "1. Trace2Skill은 다양한 실행 경험을 분석하고 궤적-지역적 교훈을 사용해 스킬 디렉토리를 구축하여 복잡한 작업에 대처하는데 큰 진전을 가져왔습니다.\n2. 이 프레임워크는 기존의 스킬을 확장하거나 새로운 스킬을 개발하는 데 도움을 줄 뿐만 아니라, 여러 도메인에서 실험을 통해 강력한 결과를 확인하였습니다.\n3. Trace2Skill은 매개변수 업데이트나 외부 검색 모듈 없이도 뛰어난 전이 가능한 선언적 스킬을 생성하는 것으로 판명되었습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies",
+    "abstract": "Currently, evaluating vision-language models (VLMs) in medical imaging tasks oversimplifies clinical reality by relying on pre-selected 2D images that demand significant manual labor to curate. This setup misses the core challenge of realworld diagnostics: a true clinical agent must actively navigate full 3D volumes across multiple sequences or modalities to gather evidence and ultimately support a final decision. To address this, we propose MEDOPENCLAW, an auditable runtime designed to let VLMs operate dynamically within standard medical tools or viewers (e.g., 3D Slicer). On top of this runtime, we introduce MEDFLOWBENCH, a full-study medical imaging benchmark covering multi-sequence brain MRI and lung CT/PET. It systematically evaluates medical agentic capabilities across viewer-only, tool-use, and open-method tracks. Initial results reveal a critical insight: while state-of-the-art LLMs/VLMs (e.g., Gemini 3.1 Pro and GPT-5.4) can successfully navigate the viewer to solve basic study-level tasks, their performance paradoxically degrades when given access to professional support tools due to a lack of precise spatial grounding. By bridging the gap between static-image perception and interactive clinical workflows, MEDOPENCLAW and MEDFLOWBENCH establish a reproducible foundation for developing auditable, full-study medical imaging agents.",
+    "authors": [
+      "Weixiang Shen",
+      "Yanzhu Hu",
+      "Che Liu",
+      "Junde Wu",
+      "Jiayuan Zhu",
+      "Chengzhi Shen",
+      "Min Xu",
+      "Yueming Jin",
+      "Benedikt Wiestler",
+      "Daniel Rueckert",
+      "Jiazhen Pan"
+    ],
+    "likes": 20,
+    "published_date": "Mar 25",
+    "url": "https://huggingface.co/papers/2603.24649",
+    "date_collected": "2026-03-31T07:16:51.247687+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "MedOpenClaw: 미 정리된 전체 연구에 대해 추론하는 감사 가능한 의료 이미징 에이전트",
+      "abstract": "현재 의료 이미징 작업에서 시각-언어 모델(VLMs)을 평가하는 것은 큐레이팅을 필요로 하는 2D 이미지에 의존하여 임상 현실을 과도하게 단순화합니다. 이 설정은 실제 진단의 핵심 도전 과제를 놓치는데, 실제 임상 에이전트는 증거를 수집하고 최종 결정을 지원하기 위해 여러 시퀀스나 모달리티를 가로지르며 전체 3D 볼륨을 활동적으로 탐색해야 합니다. 이를 해결하기 위해 우리는 MEDOPENCLAW를 제안합니다. 이는 VLMs이 표준 의료 도구나 뷰어(예: 3D Slicer) 내에서 동적으로 작동할 수 있도록 설계된 감사 가능한 런타임입니다. 이 런타임 위에는 MEDFLOWBENCH가 있으며, 다중 시퀀스 뇌 MRI 및 폐 CT/PET을 다루는 전체 연구 의료 이미징 벤치마크를 소개합니다. 이 벤치마크는 뷰어 전용, 도구 사용 및 개방형 방법 트랙을 통해 의료 에이전트 능력을 체계적으로 평가합니다. 초기 결과는 중요한 통찰력을 드러냅니다: 최첨단 LLMs/VLMs(예: Gemini 3.1 Pro 및 GPT-5.4)는 기본적인 연구 수준 작업을 해결하기 위해 뷰어를 성공적으로 탐험할 수 있지만, 전문 지원 도구에 접근할 때 공간적 정밀도 부족으로 인해 성능이 역설적으로 약화됩니다. 정적 이미지 지각과 상호작용하는 임상 워크플로우 간의 격차를 메꾸기 위해, MEDOPENCLAW와 MEDFLOWBENCH는 감사 가능한 전체 연구 의료 이미징 에이전트 개발을 위한 재현 가능한 기반을 구축합니다."
+    },
+    "summary": "1. 의료 이미징 작업에서 VLMs 평가는 2D 이미지에 과도하게 의존해서 실제 임상 도전에 대응하지 못함.\n2. MEDOPENCLAW와 MEDFLOWBENCH는 감사 가능한 의료 이미징 에이전트를 개발하기 위한 표준 의료 도구 내 런타임과 전체 연구 벤치마크를 제안함.\n3. 최첨단 LLMs/VLMs은 기본적인 작업에서는 성공적이나 전문 지원 도구에 접근할 때 공간적 정밀도 부족으로 성능이 약화되는 것을 보임.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation",
+    "abstract": "Vision-Language Models (VLMs) have demonstrated impressive capabilities in code generation across various domains. However, their ability to replicate complex, multi-panel visualizations from real-world data remains largely unassessed. To address this gap, we introduce \\texttt{RealChart2Code}, a new large-scale benchmark with over 2,800 instances grounded in authentic datasets and featuring tasks with clear analytical intent. Crucially, it is the first benchmark to systematically evaluate chart generation from large-scale raw data and assess iterative code refinement in a multi-turn conversational setting. Our comprehensive evaluation of 14 leading VLMs on RealChart2Code reveals significant performance degradation compared to simpler benchmarks, highlighting their struggles with complex plot structures and authentic data. Our analysis uncovers a substantial performance gap between proprietary and open-weight models and confirms that even state-of-the-art VLMs often fail to accurately replicate intricate, multi-panel charts. These findings provide valuable insights into the current limitations of VLMs and guide future research directions. We release the benchmark and code at https://github.com/Speakn0w/RealChart2Code.",
+    "authors": [
+      "Jiajun Zhang",
+      "Yuying Li",
+      "Zhixun Li",
+      "Xingyu Guo",
+      "Jingzhuo Wu",
+      "Leqi Zheng",
+      "Yiran Yang",
+      "Jianke Zhang",
+      "Qingbin Li",
+      "Shannan Yan",
+      "Zhetong Li",
+      "Changguo Jia",
+      "Junfei Wu",
+      "Zilei Wang",
+      "Qiang Liu",
+      "Liang Wang"
+    ],
+    "likes": 16,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25804",
+    "date_collected": "2026-03-31T07:16:51.250307+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "RealChart2Code: 실제 데이터와 다중 작업 평가로 차트 생성 발전시키기",
+      "abstract": "Vision-Language Models (VLMs)는 다양한 영역에서 코드 생성에서 놀라운 능력을 보여주었습니다. 그러나 실제 데이터를 기반으로 한 복잡한 다중 패널 시각화를 복제하는 능력은 여전히 평가되지 않은 상태입니다. 이 간극을 해소하기 위해 우리는 \\texttt{RealChart2Code}를 소개합니다. 이는 실제 데이터셋에 기반을 둔 새로운 대규모 벤치마크로, 명확한 분석적 의도를 갖춘 작업을 제공합니다. 이는 대규모 원시 데이터로부터 차트 생성을 체계적으로 평가하고 다중 대화형 설정에서 반복적인 코드 재정립을 평가하는 첫 번째 벤치마크입니다. RealChart2Code에서 14가지 선도적인 VLM의 포괄적인 평가는 단순한 벤치마크와 비교했을 때 상당한 성능 저하를 보여주며, 복잡한 플롯 구조와 실제 데이터에 대한 어려움을 강조합니다. 우리의 분석은 소유권이 있는 가중치 모델과 공개 가중치 모델 간의 상당한 성능 격차를 발견하며, 최첨단 VLM조차도 정교한 다중 패널 차트를 정확하게 복제하는 데 종종 실패하는 것을 확인합니다. 이 결과는 VLM의 현재 제약 사항에 대한 소중한 통찰력을 제공하며, 미래 연구 방향을 제시합니다. 우리는 해당 벤치마크와 코드를 https://github.com/Speakn0w/RealChart2Code에서 공개합니다."
+    },
+    "summary": "1. VLMs의 성능은 실제 데이터와 복잡한 플롯 구조에 대한 해결 과제가 있음을 나타냄.\n2. RealChart2Code 벤치마크는 차트 생성과 코드 재정립을 다중 대화형 설정에서 평가하는 첫 번째 시도임.\n3. 제시된 결과는 VLM의 현재 제약 사항을 드러내며, 미래 연구 방향을 안내함.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset",
+    "abstract": "In real-world domains such as self-driving, generalization to rare scenarios remains a fundamental challenge. To address this, we introduce a new dataset designed for end-to-end driving that focuses on long-tail driving events. We provide multi-view video data, trajectories, high-level instructions, and detailed reasoning traces, facilitating in-context learning and few-shot generalization. The resulting benchmark for multimodal models, such as VLMs and VLAs, goes beyond safety and comfort metrics by evaluating instruction following and semantic coherence between model outputs. The multilingual reasoning traces in English, Spanish, and Chinese are from domain experts with diverse cultural backgrounds. Thus, our dataset is a unique resource for studying how different forms of reasoning affect driving competence. Our dataset is available at: https://hf.co/datasets/kit-mrt/kitscenes-longtail",
+    "authors": [
+      "Royden Wagner",
+      "Omer Sahin Tas",
+      "Jaime Villa",
+      "Felix Hauser",
+      "Yinzhe Shen",
+      "Marlon Steiner",
+      "Dominik Strutz",
+      "Carlos Fernandez",
+      "Christian Kinzig",
+      "Guillermo S. Guitierrez-Cabello",
+      "Hendrik Königshof",
+      "Fabian Immel",
+      "Richard Schwarzkopf",
+      "Nils Alexander Rack",
+      "Kevin Rösch",
+      "Kaiwen Wang",
+      "Jan-Hendrik Pauls",
+      "Martin Lauer",
+      "Igor Gilitschenski",
+      "Holger Caesar",
+      "Christoph Stiller"
+    ],
+    "likes": 12,
+    "published_date": "Mar 24",
+    "url": "https://huggingface.co/papers/2603.23607",
+    "date_collected": "2026-03-31T07:16:51.253013+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "장꼬리 주행 시나리오와 추론 트레이스: KITScenes 장꼬리 데이터셋",
+      "abstract": "자율주행과 같은 실제 세계 도메인에서 드문 시나리오로의 일반화는 기본적인 과제로 남아있다. 이를 해결하기 위해 장꼬리 주행 이벤트에 초점을 맞춘 새로운 데이터셋을 소개한다. 다중 뷰 비디오 데이터, 궤적, 고수준 지침 및 상세 추론 트레이스를 제공하여 문맥 내 학습과 희소 샷 일반화를 용이하게 한다. VLMs와 VLAs와 같은 다중모달 모델에 대한 결과 벤치마크는 안전 및 편안함 지표를 넘어 모델 출력 간 지침 따르기 및 의미 일치를 평가한다. 다양한 문화적 배경을 갖는 도메인 전문가에 의해 작성된 영어, 스페인어 및 중국어 다국어 추론 트레이스가 포함되어 있다. 따라서 우리의 데이터셋은 다양한 형태의 추론이 주행 능력에 어떤 영향을 미치는지 연구하는 데 독특한 자료이다. 우리의 데이터셋은 다음 위치에서 이용 가능하다: https://hf.co/datasets/kit-mrt/kitscenes-longtail"
+    },
+    "summary": "1. 실제 세계 주행 상황에 대한 일반화로 인한 도전\n2. 다양한 데이터로 문맥적 학습과 희소 샷 일반화를 지원\n3. 명령 따르기와 모델 출력 간 의미 일치 평가를 통한 다중모달 모델 벤치마크",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Natural-Language Agent Harnesses",
+    "abstract": "Agent performance increasingly depends on harness engineering, yet harness design is usually buried in controller code and runtime-specific conventions, making it hard to transfer, compare, and study as a scientific object. We ask whether the high-level control logic of an agent harness can instead be externalized as a portable executable artifact. We introduce Natural-Language Agent Harnesses (NLAHs), which express harness behavior in editable natural language, and Intelligent Harness Runtime (IHR), a shared runtime that executes these harnesses through explicit contracts, durable artifacts, and lightweight adapters. Across coding and computer-use benchmarks, we conduct controlled evaluations of operational viability, module ablation, and code-to-text harness migration.",
+    "authors": [
+      "Linyue Pan",
+      "Lexiao Zou",
+      "Shuo Guo",
+      "Jingchen Ni",
+      "Hai-Tao Zheng"
+    ],
+    "likes": 10,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25723",
+    "date_collected": "2026-03-31T07:16:51.254878+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "자연어 기반 에이전트 핸드라이징",
+      "abstract": "에이전트 성능은 점점 핸드라이징 엔지니어링에 의존해오고 있지만, 핸드라이징 디자인은 대개 컨트롤러 코드나 특정 런타임 규칙 속에 감춰져 있어 과학적 대상으로서의 전이, 비교, 연구가 어렵다. 우리는 에이전트 핸드라이징의 고수준 제어 논리를 대신 휴대 가능한 실행 가능한 아티팩트로 외부화할 수 있는지 탐구한다. 우리는 자연어 기반 에이전트 핸드라이징(NLAHs)와 지능적 핸드라이징 런타임(IHR)을 소개하는데, NLAHs는 편집 가능한 자연어로 핸드라이징 행동을 표현하며, IHR은 이러한 핸드라이징을 명시적 계약, 지속적 아티팩트 및 가벼운 어댑터를 통해 실행하는 공유 런타임이다. 코딩 및 컴퓨터 사용 벤치마크를 통해 운용 가능성, 모듈 제거, 코드 - 텍스트 핸드라이징 이주를 통제된 평가를 수행한다."
+    },
+    "summary": "1. 에이전트 핸드라이징의 고수준 제어 논리를 자연어로 외부화하는 자연어 기반 에이전트 핸드라이징(NLAHs)를 소개한다.\n2. 지능적 핸드라이징 런타임(IHR)은 핸드라이징을 명시적 계약, 지속적 아티팩트, 가벼운 어댑터를 통해 실행한다.\n3. 코딩과 컴퓨터 사용 벤치마크를 사용하여 운용 가능성, 모듈 제거, 코드 - 텍스트 핸드라이징 이주에 대한 통제된 평가를 실시한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models",
+    "abstract": "Recent advances in 3D generation have improved the fidelity and geometric details of synthesized 3D assets. However, due to the inherent ambiguity of single-view observations and the lack of robust global structural priors caused by limited 3D training data, the unseen regions generated by existing models are often stochastic and difficult to control, which may sometimes fail to align with user intentions or produce implausible geometries. In this paper, we propose Know3D, a novel framework that incorporates rich knowledge from multimodal large language models into 3D generative processes via latent hidden-state injection, enabling language-controllable generation of the back-view for 3D assets. We utilize a VLM-diffusion-based model, where the VLM is responsible for semantic understanding and guidance. The diffusion model acts as a bridge that transfers semantic knowledge from the VLM to the 3D generation model. In this way, we successfully bridge the gap between abstract textual instructions and the geometric reconstruction of unobserved regions, transforming the traditionally stochastic back-view hallucination into a semantically controllable process, demonstrating a promising direction for future 3D generation models.",
+    "authors": [
+      "Wenyue Chen",
+      "Wenjue Chen",
+      "Peng Li",
+      "Qinghe Wang",
+      "Xu Jia",
+      "Heliang Zheng",
+      "Rongfei Jia",
+      "Yuan Liu",
+      "Ronggang Wang"
+    ],
+    "likes": 8,
+    "published_date": "Mar 24",
+    "url": "https://huggingface.co/papers/2603.22782",
+    "date_collected": "2026-03-31T07:16:51.256883+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models",
+      "abstract": "최근 3D 생성 기술의 발전으로 합성된 3D 자산의 충실도와 기하학적 세부 사항이 향상되었습니다. 그러나 단일 시점 관측의 본질적 모호함과 3D 훈련 데이터의 한정으로 인한 강력한 전역 구조 우선 사항의 부재로, 기존 모델이 생성하는 볼 수 없는 영역은 종종 확률적이고 제어하기 어렵습니다. 이에 본 논문에서는 뷰-언어 모델로부터의 지식을 3D 생성 과정에 유연한 잠재 상태 주입을 통해 통합하는 새로운 Know3D 프레임워크를 제안합니다. 이를 통해 3D 자산의 후면 뷰를 언어로 제어 가능한 생성합니다. VLM-확산 기반 모델을 활용하여 VLM은 의미적 이해와 안내를 담당하며 확산 모델은 VLM에서 3D 생성 모델로 의미 지식을 전달하는 다리 역할을 합니다. 이를 통해 추상적인 텍스트 지침과 볼 수 없는 영역의 기하학적 재구성 사이의 간극을 성공적으로 줄여, 전통적으로 확률적인 후면 뷰 환영을 의미론적으로 제어 가능한 프로세스로 변환하며, 미래 3D 생성 모델에 융통성 있는 방향을 보여줍니다."
+    },
+    "summary": "1. 한정적인 3D 훈련 데이터로 인해 기존 모델이 생성하는 보이지 않는 영역이 종종 확률적이고 제어가 어렵다.\n2. Know3D는 뷰-언어 모델의 지식을 3D 생성 과정에 유연하게 통합하여 언어로 제어 가능한 3D 자산 후면 뷰 생성을 제안한다.\n3. 이 연구는 VLM과 확산 모델을 활용하여 텍스트 지침과 기하학적 재구성 사이의 간극을 줄여 확률적인 후면 뷰 환영을 의미론적으로 제어 가능한 과정으로 변환하는 방법을 성공적으로 입증했다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models",
+    "abstract": "As the paradigm of AI shifts from text-based LLMs to Speech Language Models (SLMs), there is a growing demand for full-duplex systems capable of real-time, natural human-computer interaction. However, the development of such models is constrained by the scarcity of high-quality, multi-speaker conversational data, as existing large-scale resources are predominantly single-speaker or limited in volume. Addressing the complex dynamics of natural dialogue, such as overlapping and back-channeling remains a challenge, with standard processing pipelines suffering from diarization errors and ASR hallucinations. To bridge this gap, we present a robust and scalable open-source data processing pipeline designed for full-duplex model.",
+    "authors": [
+      "Kyudan Jung",
+      "Jihwan Kim",
+      "Soyoon Kim",
+      "Jeongoon Kim",
+      "Jaegul Choo",
+      "Cheonbok Park"
+    ],
+    "likes": 8,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2603.25750",
+    "date_collected": "2026-03-31T07:16:51.258588+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "소믈리에: 전이중 말 데이터 모델을 위한 확장 가능한 다중 대화식 오디오 전처리",
+      "abstract": "AI 패러다임이 텍스트 기반 LLM에서 음성 언어 모델(SLM)로 이동함에 따라 실시간, 자연스러운 인간-컴퓨터 상호작용이 가능한 전이중 시스템에 대한 수요가 증가하고 있습니다. 그러나 고품질 다중 화자 대화 데이터의 부족으로 인해 이러한 모델의 개발이 제약을 받고 있습니다. 본 논문에서는 자연 대화의 복잡한 동적을 해결하기 위해 전이중 모델을 위해 설계된 견고하고 확장 가능한 오픈 소스 데이터 처리 파이프라인을 제안합니다."
+    },
+    "summary": "1. 음성 언어 모델에 필요한 고품질 다중 화자 대화 데이터 부족으로 인해 전이중 시스템 개발이 어려운 문제를 다룸.\n2. 자연 대화의 복잡한 동적을 해결하기 위해 개발된 확장 가능한 오픈 소스 데이터 처리 파이프라인 소개.\n3. 기존 처리 파이프라인의 문제점인 대화 중첩 및 후행 발화에 대한 도전을 극복하기 위한 방안 제시.",
+    "categories": [
+      "Audio",
+      "Multimodal"
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+=== Paper Collection Started at Mon Jun 23 22:07:56 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W26
+URL: https://huggingface.co/papers/week/2025-W26
+Found 10 papers in weekly view
+Fetching likes for: Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights
+Fetching likes for: Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding
+Fetching likes for: PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models
+Fetching likes for: VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement
+  Learning
+Fetching likes for: Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation with
+  Hybrid History Condition
+Fetching likes for: Optimizing Multilingual Text-To-Speech with Accents & Emotions
+Fetching likes for: DreamCube: 3D Panorama Generation via Multi-plane Synchronization
+Fetching likes for: Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate
+  Details
+Fetching likes for: Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual
+  Tokens
+Fetching likes for: InfiniPot-V: Memory-Constrained KV Cache Compression for Streaming Video
+  Understanding
+Selected top 10 papers by likes:
+1. Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights (75 likes)
+2. Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding (53 likes)
+3. PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models (43 likes)
+4. VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement
+  Learning (29 likes)
+5. Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation with
+  Hybrid History Condition (23 likes)
+6. Optimizing Multilingual Text-To-Speech with Accents & Emotions (21 likes)
+7. DreamCube: 3D Panorama Generation via Multi-plane Synchronization (15 likes)
+8. Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate
+  Details (12 likes)
+9. Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual
+  Tokens (10 likes)
+10. InfiniPot-V: Memory-Constrained KV Cache Compression for Streaming Video
+  Understanding (8 likes)
+Found abstract: Modern Parameter-Efficient Fine-Tuning (PEFT) methods such as low-rank
+adaptation (LoRA) reduce the ...
+Processed paper: Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights
+Found abstract: Retrieval-Augmented Generation (RAG) systems have revolutionized information
+retrieval and question ...
+Processed paper: Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding
+Found abstract: In visual generation, the quadratic complexity of attention mechanisms
+results in high memory and co...
+Processed paper: PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models
+Found abstract: Coordinating multiple embodied agents in dynamic environments remains a core
+challenge in artificial...
+Processed paper: VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement
+  Learning
+Found abstract: Recent advances in diffusion-based and controllable video generation have
+enabled high-quality and t...
+Processed paper: Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation with
+  Hybrid History Condition
+Found abstract: State-of-the-art text-to-speech (TTS) systems realize high naturalness in
+monolingual environments, ...
+Processed paper: Optimizing Multilingual Text-To-Speech with Accents & Emotions
+Found abstract: 3D panorama synthesis is a promising yet challenging task that demands
+high-quality and diverse visu...
+Processed paper: DreamCube: 3D Panorama Generation via Multi-plane Synchronization
+Found abstract: In this report, we present Hunyuan3D 2.5, a robust suite of 3D diffusion
+models aimed at generating ...
+Processed paper: Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate
+  Details
+Found abstract: Vision-language models (VLMs) excel at multimodal understanding, yet their
+text-only decoding forces...
+Processed paper: Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual
+  Tokens
+Found abstract: Modern multimodal large language models (MLLMs) can reason over hour-long
+video, yet their key-value...
+Processed paper: InfiniPot-V: Memory-Constrained KV Cache Compression for Streaming Video
+  Understanding
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement
+  Learning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation with
+  Hybrid History Condition
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Optimizing Multilingual Text-To-Speech with Accents & Emotions
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: DreamCube: 3D Panorama Generation via Multi-plane Synchronization
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate
+  Details
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual
+  Tokens
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: InfiniPot-V: Memory-Constrained KV Cache Compression for Streaming Video
+  Understanding
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W26.json...
+
+Updating Notion database...
+Creating new paper: 드래그 앤 드롭 LLMs: 제로 샷 프롬프트-투-웨이츠
+Creating new paper: 비전 안내 청킹이 필요한 전부: 다중 모달 문서 이해 기능을 강화하는 RAG
+Creating new paper: 효율적인 희박 및 양자화 주의를 위한 패턴 인식 기반 재배치 모델
+Creating new paper: VIKI-R: 강화 학습을 통한 신체화된 다중 에이전트 협력 조정
+Creating new paper: 헌유안-게임크래프트: 하이다이내믹 상호작용형 게임 동영상 생성과 혼합 히스토리 조건
+Creating new paper: 다국어 텍스트 음성 합성 최적화: 액센트와 감정
+Creating new paper: 드림큐브: 다중 평면 동기화를 통한 3D 파노라마 생성
+Creating new paper: Hunyuan3D 2.5: 최고 상세 3D 에셋 생성을 향한 고화질 3D 모델 생성
+Creating new paper: 기계적 시각 상상: 잠재 시각 토큰으로 다중 모달 추론 강화
+Creating new paper: 메모리 제약 KV 캐시 압축 기법 InfiniPot-V: 스트리밍 비디오 이해를 위한
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 23 22:09:59 UTC 2025 ===
+

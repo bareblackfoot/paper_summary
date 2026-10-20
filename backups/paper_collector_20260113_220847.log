@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Jan 12 22:08:30 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W03
+URL: https://huggingface.co/papers/week/2026-W03
+Found 10 papers in weekly view
+Fetching likes for: Thinking with Map: Reinforced Parallel Map-Augmented Agent for Geolocalization
+Fetching likes for: MMFormalizer: Multimodal Autoformalization in the Wild
+Fetching likes for: CaricatureGS: Exaggerating 3D Gaussian Splatting Faces With Gaussian Curvature
+Fetching likes for: The Molecular Structure of Thought: Mapping the Topology of Long Chain-of-Thought Reasoning
+Fetching likes for: Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards
+Fetching likes for: EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis
+Fetching likes for: Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking
+Fetching likes for: Can We Predict Before Executing Machine Learning Agents?
+Fetching likes for: An Empirical Study on Preference Tuning Generalization and Diversity Under Domain Shift
+Fetching likes for: AgentOCR: Reimagining Agent History via Optical Self-Compression
+Selected top 10 papers by likes:
+1. Thinking with Map: Reinforced Parallel Map-Augmented Agent for Geolocalization (129 likes)
+2. MMFormalizer: Multimodal Autoformalization in the Wild (94 likes)
+3. CaricatureGS: Exaggerating 3D Gaussian Splatting Faces With Gaussian Curvature (44 likes)
+4. The Molecular Structure of Thought: Mapping the Topology of Long Chain-of-Thought Reasoning (37 likes)
+5. Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards (30 likes)
+6. EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis (24 likes)
+7. Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking (20 likes)
+8. Can We Predict Before Executing Machine Learning Agents? (19 likes)
+9. An Empirical Study on Preference Tuning Generalization and Diversity Under Domain Shift (18 likes)
+10. AgentOCR: Reimagining Agent History via Optical Self-Compression (18 likes)
+Found abstract: The image geolocalization task aims to predict the location where an image was taken anywhere on Ear...
+Processed paper: Thinking with Map: Reinforced Parallel Map-Augmented Agent for Geolocalization
+Found abstract: Autoformalization, which translates natural language mathematics into formal statements to enable ma...
+Processed paper: MMFormalizer: Multimodal Autoformalization in the Wild
+Found abstract: A photorealistic and controllable 3D caricaturization framework for faces is introduced. We start wi...
+Processed paper: CaricatureGS: Exaggerating 3D Gaussian Splatting Faces With Gaussian Curvature
+Found abstract: Large language models (LLMs) often fail to learn effective long chain-of-thought (Long CoT) reasonin...
+Processed paper: The Molecular Structure of Thought: Mapping the Topology of Long Chain-of-Thought Reasoning
+Found abstract: Reinforcement learning (RL) has emerged as a critical technique for enhancing LLM-based deep search ...
+Processed paper: Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards
+Found abstract: Large language models (LLMs) are expected to be trained to act as agents in various real-world envir...
+Processed paper: EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis
+Found abstract: In this report, we introduce the Qwen3-VL-Embedding and Qwen3-VL-Reranker model series, the latest e...
+Processed paper: Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking
+Found abstract: Autonomous machine learning agents have revolutionized scientific discovery, yet they remain constra...
+Processed paper: Can We Predict Before Executing Machine Learning Agents?
+Found abstract: Preference tuning aligns pretrained language models to human judgments of quality, helpfulness, or s...
+Processed paper: An Empirical Study on Preference Tuning Generalization and Diversity Under Domain Shift
+Found abstract: Recent advances in large language models (LLMs) enable agentic systems trained with reinforcement le...
+Processed paper: AgentOCR: Reimagining Agent History via Optical Self-Compression
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Thinking with Map: Reinforced Parallel Map-Augmented Agent for Geolocalization
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: MMFormalizer: Multimodal Autoformalization in the Wild
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: CaricatureGS: Exaggerating 3D Gaussian Splatting Faces With Gaussian Curvature
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: The Molecular Structure of Thought: Mapping the Topology of Long Chain-of-Thought Reasoning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Can We Predict Before Executing Machine Learning Agents?
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: An Empirical Study on Preference Tuning Generalization and Diversity Under Domain Shift
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: AgentOCR: Reimagining Agent History via Optical Self-Compression
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W03.json...
+
+Updating Notion database...
+Creating new paper: 지도와 함께 생각하기: 지리위치파악을 위한 강화된 병렬 지도 보강 에이전트
+Creating new paper: MMFormalizer: 야생에서의 다중모달 자동 정형화
+Creating new paper: 카리커처GS: 가우시안 곡률을 강조한 3D 가우시안 스플래팅 얼굴 핥기
+Creating new paper: 사고의 분자 구조: 긴 사고 사슬의 위상 매핑
+Creating new paper: 증거 연결하기: 인용 정보 인식을 통한 강건한 강화 학습을 위한 깊은 탐색 에이전트 (Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards)
+Creating new paper: EnvScaler: 프로그램적 합성을 통한 LLM 에이전트를 위한 상호작용 환경 확장 도구
+Creating new paper: Qwen3-VL-Embedding 및 Qwen3-VL-Reranker: 최신 다중모달 검색 및 랭킹을 위한 통합 프레임워크
+Creating new paper: 기계 학습 에이전트 실행 전 예측 가능할까요?
+Creating new paper: 도메인 이동에서의 선호 튜닝 일반화와 다양성에 관한 경험적 연구
+Creating new paper: 에이전트 OCR: 광학 자기 압축을 통한 에이전트 역사 재구상
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jan 12 22:10:28 UTC 2026 ===
+

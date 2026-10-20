@@ -1,0 +1,129 @@
+=== Paper Collection Started at Sun Jun  7 22:29:55 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W24
+URL: https://huggingface.co/papers/week/2026-W24
+Found 10 papers in weekly view
+Fetching likes for: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Fetching likes for: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Fetching likes for: Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding
+Fetching likes for: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Fetching likes for: Audio Interaction Model
+Fetching likes for: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Fetching likes for: Cosmos 3: Omnimodal World Models for Physical AI
+Fetching likes for: OCC-RAG: Optimal Cognitive Core for Faithful Question Answering
+Fetching likes for: Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution
+Fetching likes for: Trust-Region Behavior Blending for On-Policy Distillation
+Selected top 10 papers by likes:
+1. On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters (220 likes)
+2. Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs (192 likes)
+3. Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding (140 likes)
+4. COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation (109 likes)
+5. Audio Interaction Model (102 likes)
+6. GrepSeek: Training Search Agents for Direct Corpus Interaction (102 likes)
+7. Cosmos 3: Omnimodal World Models for Physical AI (92 likes)
+8. OCC-RAG: Optimal Cognitive Core for Faithful Question Answering (86 likes)
+9. Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution (71 likes)
+10. Trust-Region Behavior Blending for On-Policy Distillation (64 likes)
+Found abstract: Parameter-efficient fine-tuning (PEFT) is usually treated as a cheaper alternative to full fine-tuni...
+Processed paper: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Found abstract: Scientific figures are among the most effective means of communicating complex research ideas, yet p...
+Processed paper: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Found abstract: Speculative decoding accelerates LLM inference by drafting multiple tokens and verifying them in par...
+Processed paper: Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding
+Found abstract: LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded ...
+Processed paper: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Found abstract: Audio is an inherently interactive modality, yet today's Large Audio Language Models (LALMs) are off...
+Processed paper: Audio Interaction Model
+Found abstract: Large Language Model (LLM) search agents have shown strong promise for knowledge-intensive language ...
+Processed paper: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Found abstract: We introduce Cosmos 3, a family of omnimodal world models designed to jointly process and generate l...
+Processed paper: Cosmos 3: Omnimodal World Models for Physical AI
+Found abstract: Recent progress in the development of language models has been defined by scale, with each generatio...
+Processed paper: OCC-RAG: Optimal Cognitive Core for Faithful Question Answering
+Found abstract: Code language models need repository-level context to resolve imports, APIs, and project conventions...
+Processed paper: Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution
+Found abstract: On-policy distillation (OPD) trains a student on prefixes sampled from its own policy while matching...
+Processed paper: Trust-Region Behavior Blending for On-Policy Distillation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Paper already exists, checking if translation is complete...
+Update likes: 220  ->  175
+Update date_collected: 2026-06-08T07:30:04.853341+09:00  ->  2026-06-07T07:29:31.675268+09:00
+
+Processing paper 2/10
+Title: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Paper already exists, checking if translation is complete...
+Update likes: 192  ->  191
+Update date_collected: 2026-06-08T07:30:04.855827+09:00  ->  2026-06-07T07:29:31.672347+09:00
+
+Processing paper 3/10
+Title: Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 140  ->  140
+Update date_collected: 2026-06-08T07:30:04.858193+09:00  ->  2026-06-07T07:29:31.677414+09:00
+
+Processing paper 4/10
+Title: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 109  ->  108
+Update date_collected: 2026-06-08T07:30:04.860479+09:00  ->  2026-06-07T07:29:31.679517+09:00
+
+Processing paper 5/10
+Title: Audio Interaction Model
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  101
+Update date_collected: 2026-06-08T07:30:04.863119+09:00  ->  2026-06-07T07:29:31.684052+09:00
+
+Processing paper 6/10
+Title: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  102
+Update date_collected: 2026-06-08T07:30:04.865482+09:00  ->  2026-06-07T07:29:31.681683+09:00
+
+Processing paper 7/10
+Title: Cosmos 3: Omnimodal World Models for Physical AI
+Paper already exists, checking if translation is complete...
+Update likes: 92  ->  87
+Update date_collected: 2026-06-08T07:30:04.868615+09:00  ->  2026-06-07T07:29:31.686944+09:00
+
+Processing paper 8/10
+Title: OCC-RAG: Optimal Cognitive Core for Faithful Question Answering
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  84
+Update date_collected: 2026-06-08T07:30:04.871174+09:00  ->  2026-06-07T07:29:31.689277+09:00
+
+Processing paper 9/10
+Title: Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  63
+Update date_collected: 2026-06-08T07:30:04.873392+09:00  ->  2026-06-07T07:29:31.693464+09:00
+
+Processing paper 10/10
+Title: Trust-Region Behavior Blending for On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  64
+Update date_collected: 2026-06-08T07:30:04.875708+09:00  ->  2026-06-07T07:29:31.691431+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W24.json...
+
+Updating Notion database...
+Updating paper: PEFT의 스케일링에 관한 연구: 조백만 개의 개인 모델을 가진 십조 개 파라미터로 (likes: 175 -> 220)
+Updating paper: 다양한 입력으로부터 편집 가능한 과학 그림 생성을 위한 다중 에이전트 하네스 Crafter (likes: 191 -> 192)
+Paper already exists with same likes count: 도미노: 사양 디코딩에서 인과 모델링 분리하기
+Updating paper: COLLEAGUE.SKILL: 전문가 지식 증류를 통한 자동 AI 기술 생성 (likes: 108 -> 109)
+Updating paper: 오디오 상호작용 모델 (likes: 101 -> 102)
+Paper already exists with same likes count: GrepSeek: 직접 말뭉치 상호작용을 위한 검색 에이전트 훈련
+Updating paper: 물리적 AI를 위한 통합된 모든 모달 월드 모델, Cosmos 3 (likes: 87 -> 92)
+Updating paper: 충실한 질문 응답을 위한 최적의 인지 핵심인 OCC-RAG (likes: 84 -> 86)
+Updating paper: 코드 언어 모델을 위한 하이퍼네트워크 생성 어댑터: 소프트웨어 진화 아래의 Code2LoRA (likes: 63 -> 71)
+Paper already exists with same likes count: Trust-Region Behavior Blending를 위한 신뢰 영역 행동 혼합
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Jun  7 22:31:00 UTC 2026 ===
+

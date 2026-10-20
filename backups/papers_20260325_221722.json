@@ -1,0 +1,321 @@
+[
+  {
+    "title": "Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models",
+    "abstract": "Video--based world models have emerged along two dominant paradigms: video generation and 3D reconstruction. However, existing evaluation benchmarks either focus narrowly on visual fidelity and text--video alignment for generative models, or rely on static 3D reconstruction metrics that fundamentally neglect temporal dynamics. We argue that the future of world modeling lies in 4D generation, which jointly models spatial structure and temporal evolution. In this paradigm, the core capability is interactive response: the ability to faithfully reflect how interaction actions drive state transitions across space and time. Yet no existing benchmark systematically evaluates this critical dimension. To address this gap, we propose Omni--WorldBench, a comprehensive benchmark specifically designed to evaluate the interactive response capabilities of world models in 4D settings. Omni--WorldBench comprises two key components: Omni--WorldSuite, a systematic prompt suite spanning diverse interaction levels and scene types; and Omni--Metrics, an agent-based evaluation framework that quantifies world modeling capabilities by measuring the causal impact of interaction actions on both final outcomes and intermediate state evolution trajectories. We conduct extensive evaluations of 18 representative world models across multiple paradigms. Our analysis reveals critical limitations of current world models in interactive response, providing actionable insights for future research. Omni-WorldBench will be publicly released to foster progress in interactive 4D world modeling.",
+    "authors": [
+      "Meiqi Wu",
+      "Zhixin Cai",
+      "Fufangchen Zhao",
+      "Xiaokun Feng",
+      "Rujing Dang",
+      "Bingze Song",
+      "Ruitian Tian",
+      "Jiashu Zhu",
+      "Jiachen Lei",
+      "Hao Dou",
+      "Jing Tang",
+      "Lei Sun",
+      "Jiahong Wu",
+      "Xiangxiang Chu",
+      "Zeming Liu",
+      "Kaiqi Huang"
+    ],
+    "likes": 107,
+    "published_date": "Mar 23",
+    "url": "https://huggingface.co/papers/2603.22212",
+    "date_collected": "2026-03-25T07:14:01.086820+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "옴니-월드벤치: 세계 모델링을 위한 종합적 상호작용 중심 평가를 향하여",
+      "abstract": "비디오 기반 세계 모델은 비디오 생성과 3D 재구성이 두 가지 주류 패러다임으로 등장했습니다. 그러나 기존의 평가 기준은 생성 모델의 시각적 미적과 텍스트-비디오 정렬에 집중하거나, 시간적 역동성을 기본적으로 무시하는 정적 3D 재구성 지표를 의존합니다. 저희는 세계 모델링의 미래는 4차원 생성에 있다고 주장합니다. 공간 구조와 시간적 진화를 함께 모델링하는 것입니다. 이 패러다임에서 핵심 능력은 상호작용 응답인데, 상호작용 작업이 공간과 시간을 통해 상태 전이를 어떻게 이끌어내는지를 정확하게 반영하는 능력입니다. 그러나 이 핵심 측면을 체계적으로 평가하는 기준은 아직 없습니다. 이 공백을 해결하기 위해 우리는 옴니-월드벤치를 제안합니다. 이는 4차원 환경에서 세계 모델의 상호작용 응답 능력을 평가하기 위한 특별히 설계된 종합적인 평가 기준입니다. 옴니-월드벤치는 두 가지 주요 구성요소로 이루어져 있습니다. 다양한 상호작용 수준과 장면 유형을 아우르는 체계적인 프롬프트 스위트인 '옴니-월드수트', 그리고 상호작용 작업이 최종 결과와 중간 상태 진화 경로에 미치는 인과적 영향을 측정함으로써 세계 모델링 능력을 양적 평가하는 '옴니-메트릭스' 입니다. 우리는 다양한 패러다임을 아우르는 18개의 대표적인 세계 모델에 대한 철저한 평가를 수행합니다. 우리의 분석은 현재의 세계 모델이 상호작용 응답에 대한 중요한 제한점을 보여줌으로써 향후 연구를 위한 실질적인 통찰을 제공합니다. 옴니-월드벤치는 상호작용적인 4차원 세계 모델링의 발전을 촉진하기 위해 공개적으로 공개될 것입니다."
+    },
+    "summary": "1. 세계 모델링의 미래는 4차원 생성으로, 상호작용 응답 능력이 핵심이며, 이를 체계적으로 평가하는 옴니-월드벤치가 제안됨.\n2. 옴니-월드벤치는 상호작용 수준과 장면 유형을 아우르는 프롬프트 스위트인 '옴니-월드수트'와 세계 모델링 능력을 측정하는 '옴니-메트릭스'로 구성됨.\n3. 18가지 대표적인 세계 모델의 평가를 통해 현재 모델의 상호작용 응답 한계를 밝혀내고, 향후 연구를 위한 인사이트를 제공함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning",
+    "abstract": "VLMs show strong multimodal capabilities, but they still struggle with fine-grained vision-language reasoning. We find that long CoT reasoning exposes diverse failure modes, including perception, reasoning, knowledge, and hallucination errors, which can compound across intermediate steps. However, most existing vision-language data used for RLVR does not involve complex reasoning chains that rely on visual evidence throughout, leaving these weaknesses largely unexposed. We therefore propose HopChain, a scalable framework for synthesizing multi-hop vision-language reasoning data specifically for RLVR training of VLMs. Each synthesized multi-hop query forms a logically dependent chain of instance-grounded hops, where earlier hops establish the instances, sets, or conditions needed for later hops, while the final answer remains a specific, unambiguous number suitable for verifiable rewards. We add the multi-hop data synthesized by HopChain to the original RLVR data used to train Qwen3.5-35B-A3B and Qwen3.5-397B-A17B, and compare against RLVR on the original RLVR data alone across 24 benchmarks spanning STEM and Puzzle, General VQA, Text Recognition and Document Understanding, and Video Understanding. Although this multi-hop data is not synthesized to target any specific benchmark, adding it improves 20 out of 24 benchmarks on both models, indicating broad and generalizable gains. To demonstrate that full chained queries are important, we replace them with half-multi-hop or single-hop variants, reducing the 24-benchmark average accuracy by 5.3 and 7.0 points, respectively. Multi-hop training also strengthens long-CoT vision-language reasoning, with gains peaking at more than 50 accuracy points in the ultra-long-CoT regime. These experiments establish HopChain as an effective, scalable framework for synthesizing multi-hop data that improves generalizable vision-language reasoning.",
+    "authors": [
+      "Shenzhi Wang",
+      "Shixuan Liu",
+      "Jing Zhou",
+      "Chang Gao",
+      "Xiong-Hui Chen",
+      "Binghai Wang",
+      "An Yang",
+      "Shiji Song",
+      "Bowen Yu",
+      "Gao Huang",
+      "Junyang Lin"
+    ],
+    "likes": 100,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.17024",
+    "date_collected": "2026-03-25T07:14:01.088656+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "HopChain: 일반화 가능한 비전-언어 추론을 위한 다중 점프 데이터 합성",
+      "abstract": "VLMs는 강력한 다중모달 능력을 보여주지만 세부적인 비전-언어 추론에는 여전히 어려움을 겪습니다. 본 연구에서는 장기 CoT 추론이 지각, 추론, 지식, 환각 오류를 노출하는 것을 발견했으며 이는 중간 단계에서 복합될 수 있습니다. 그러나 RLVR에 사용된 기존 비전-언어 데이터 대부분은 시각적 증거에 의존하는 복잡한 추론 체인을 포함하지 않아 이러한 약점이 크게 노출되지 않았습니다. 따라서 우리는 VLMs의 RLVR 훈련을 위해 특히 다중 점프 비전-언어 추론 데이터를 합성하는 확장 가능한 프레임워크인 HopChain을 제안합니다. 각 합성된 다중 점프 쿼리는 초기 점프가 후속 점프에 필요한 사례, 집합 또는 조건을 설정하고 최종 답변은 검증 가능한 보상에 적합한 특정하고 모호하지 않은 숫자입니다. HopChain에 의해 합성된 다중 점프 데이터는 Qwen3.5-35B-A3B와 Qwen3.5-397B-A17B를 훈련하는 데 사용된 원래 RLVR 데이터에 추가되어, STEM 및 퍼즐, 일반 VQA, 텍스트 인식 및 문서 이해, 비디오 이해를 포함하는 24개의 벤치마크에서 RLVR과 비교합니다. 이 다중 점프 데이터는 특정 벤치마크를 대상으로 합성되지는 않았지만 이것을 추가하면 모델 모두에서 24개 벤치마크 중 20개가 향상되어 일반화 가능한 이득을 나타냅니다. 전체 체인된 쿼리가 중요함을 보여주기 위해 이를 반쪽 다중 점프나 단일 점프 변형으로 대체하여 24개의 평균 정확도가 각각 5.3점과 7.0점 줄어듭니다. 다중 점프 훈련은 또한 장기 CoT 비전-언어 추론을 강화시켜, 초장기 CoT 영역에서 50점 이상의 이익을 보입니다. 이 실험은 일반화 가능한 비전-언어 추론을 개선하는 다중 점프 데이터를 합성하는 효과적이고 확장 가능한 프레임워크로서의 HopChain을 확립합니다."
+    },
+    "summary": "1. VLMs는 강력한 다중모달 능력을 보유하지만 세부 비전-언어 추론에 어려움을 겪고 있습니다.\n2. HopChain은 RLVR 훈련을 위해 다중 점프 비전-언어 추론 데이터를 합성하는 확장 가능한 프레임워크로 제안됩니다.\n3. 다중 점프 데이터를 추가하면 모델의 20개 벤치마크에서 향상되어 일반화 가능한 이득을 보이며, 전체 체인된 쿼리의 중요성이 실험을 통해 입증됩니다.",
+    "categories": [
+      "Computer Vision",
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models",
+    "abstract": "Distilled autoregressive (AR) video models enable efficient streaming generation but frequently misalign with human visual preferences. Existing reinforcement learning (RL) frameworks are not naturally suited to these architectures, typically requiring either expensive re-distillation or solver-coupled reverse-process optimization that introduces considerable memory and computational overhead. We present Astrolabe, an efficient online RL framework tailored for distilled AR models. To overcome existing bottlenecks, we introduce a forward-process RL formulation based on negative-aware fine-tuning. By contrasting positive and negative samples directly at inference endpoints, this approach establishes an implicit policy improvement direction without requiring reverse-process unrolling. To scale this alignment to long videos, we propose a streaming training scheme that generates sequences progressively via a rolling KV-cache, applying RL updates exclusively to local clip windows while conditioning on prior context to ensure long-range coherence. Finally, to mitigate reward hacking, we integrate a multi-reward objective stabilized by uncertainty-aware selective regularization and dynamic reference updates. Extensive experiments demonstrate that our method consistently enhances generation quality across multiple distilled AR video models, serving as a robust and scalable alignment solution.",
+    "authors": [
+      "Songchun Zhang",
+      "Zeyue Xue",
+      "Siming Fu",
+      "Jie Huang",
+      "Xianghao Kong",
+      "Y Ma",
+      "Haoyang Huang",
+      "Nan Duan",
+      "Anyi Rao"
+    ],
+    "likes": 92,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.17051",
+    "date_collected": "2026-03-25T07:14:01.090278+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "아스트롤라브: 정제된 자기회귀 비디오 모델을 위한 전진 과정 강화학습",
+      "abstract": "정제된 자기회귀(AR) 비디오 모델은 효율적인 스트리밍 생성을 가능하게 하지만 인간의 시각적 취향과 자주 일치하지 않습니다. 기존 강화학습(RL) 프레임워크는 이러한 구조에 자연스럽게 적합하지 않으며, 보통 고가의 재정제나 상당한 메모리 및 계산 부담을 도입하는 솔버 결합 역과정 최적화를 요구합니다. 우리는 정제된 AR 모델을 위해 맞춤형 온라인 RL 프레임워크인 아스트롤라브를 제안합니다. 기존 병목 현상을 극복하기 위해 부정 인식 세밀 조정을 기반으로 한 전진 과정 RL 공식을 소개합니다. 이 접근 방식은 추론 단말에서 직접 양대 샘플을 대조함으로써 역산 풀이를 요구하지 않고도 암시적 정책 개선 방향을 확립합니다. 이 정렬을 긴 비디오에 확장하기 위해 롤링 KV-캐시를 통해 서열을 점진적으로 생성하는 스트리밍 훈련 체계를 제안하며 RL 업데이트를 지역 클립 창에만 적용하고 이전 컨텍스트에 조건을 걸어 장거리 일관성을 보장합니다. 마지막으로, 보상 해킹을 줄이기 위해 불확실성 인식 선택적 정규화와 동적 참조 업데이트에 의해 안정화된 다중 보상 목표를 통합합니다. 방대한 실험 결과는 우리의 방법이 다수의 정제된 AR 비디오 모델에서 일관되게 생성 품질을 향상시키며 견고하고 확장 가능한 정렬 솔루션 역할을 한다는 것을 증명합니다."
+    },
+    "summary": "1. 정제된 AR 비디오 모델의 효율적인 생성을 위해 전진 과정 RL 프레임워크인 아스트롤라브를 소개합니다.\n2. 부정 인식 세밀 조정을 기반으로 하여 역과정을 요구하지 않으면서도 정책 향상 방향을 수립하는 방법을 제시합니다.\n3. 다중 보상 목표를 안정화하고 동적 참조 업데이트를 통해 보상 해킹을 완화하는 방법을 통해 생성 품질을 지속적으로 향상시키는 것을 실험을 통해 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model",
+    "abstract": "We present daVinci-MagiHuman, an open-source audio-video generative foundation model for human-centric generation. daVinci-MagiHuman jointly generates synchronized video and audio using a single-stream Transformer that processes text, video, and audio within a unified token sequence via self-attention only. This single-stream design avoids the complexity of multi-stream or cross-attention architectures while remaining easy to optimize with standard training and inference infrastructure. The model is particularly strong in human-centric scenarios, producing expressive facial performance, natural speech-expression coordination, realistic body motion, and precise audio-video synchronization. It supports multilingual spoken generation across Chinese (Mandarin and Cantonese), English, Japanese, Korean, German, and French. For efficient inference, we combine the single-stream backbone with model distillation, latent-space super-resolution, and a Turbo VAE decoder, enabling generation of a 5-second 256p video in 2 seconds on a single H100 GPU. In automatic evaluation, daVinci-MagiHuman achieves the highest visual quality and text alignment among leading open models, along with the lowest word error rate (14.60%) for speech intelligibility. In pairwise human evaluation, it achieves win rates of 80.0% against Ovi 1.1 and 60.9% against LTX 2.3 over 2000 comparisons. We open-source the complete model stack, including the base model, the distilled model, the super-resolution model, and the inference codebase.",
+    "authors": [
+      "SII-GAIR",
+      "Sand. ai",
+      "Ethan Chern",
+      "Hansi Teng",
+      "Hanwen Sun",
+      "Hao Wang",
+      "Hong Pan",
+      "Hongyu Jia",
+      "Jiadi Su",
+      "Jin Li",
+      "Junjie Yu",
+      "Lijie Liu",
+      "Lingzhi Li",
+      "Lyumanshan Ye",
+      "Min Hu",
+      "Qiangang Wang",
+      "Quanwei Qi",
+      "Steffi Chern",
+      "Tao Bu",
+      "Taoran Wang",
+      "Teren Xu",
+      "Tianning Zhang"
+    ],
+    "likes": 88,
+    "published_date": "Mar 23",
+    "url": "https://huggingface.co/papers/2603.21986",
+    "date_collected": "2026-03-25T07:14:01.092674+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "단순함으로 속도 낮추다: 빠른 오디오-비디오 생성 기반 모델을 위한 단일 스트림 아키텍처",
+      "abstract": "우리는 인간 중심 생성을 위한 오픈 소스 오디오-비디오 생성 기반 모델인 daVinci-MagiHuman을 제시합니다. 이 모델은 텍스트, 비디오 및 오디오를 단일 스트림 Transformer를 통해 자체 주의 메커니즘만 사용하여 통합된 토큰 시퀀스 내에서 동기화된 비디오와 오디오를 함께 생성합니다. 이 단일 스트림 디자인은 복잡한 다중 스트림이나 교차 주의 아키텍처의 복잡성을 피하면서 표준 학습 및 추론 기바구조를 사용하여 최적화하기 쉽습니다. 이 모델은 특히 인간 중심 시나리오에서 강하며 표정 풍부한 얼굴 표현, 자연스러운 음성-표현 조율, 현실적인 몸의 동작 및 정확한 오디오-비디오 동기화를 생산합니다. 또한 중국어(중국어와 광동어), 영어, 일본어, 한국어, 독일어 및 프랑스어에 걸쳐 다국어 발화 생성을 지원합니다. 효율적인 추론을 위해 단일 스트림 백본에 모델 증류, 잠재 공간 초해상화 및 Turbo VAE 디코더를 결합하여 1개의 H100 GPU에서 2초 안에 5초 256p 비디오를 생성할 수 있습니다. 자동 평가에서 daVinci-MagiHuman은 주요 오픈 모델 중 가장 높은 시각적 품질과 텍스트 정렬, 말청칙도의 가장 낮은 단어 오류율(14.60%)을 달성합니다. 짝 비교 인간 평가에서는 2000회 이상의 비교 중 Ovi 1.1에 대해 80.0%의 승률, LTX 2.3에 대해 60.9%의 승률을 달성합니다. 우리는 기본 모델, 증류 모델, 초해상화 모델 및 추론 코드베이스를 포함한 완전한 모델 스택을 오픈 소스로 공개합니다."
+    },
+    "summary": "1. daVinci-MagiHuman은 텍스트, 비디오, 오디오 정보를 단일 Transformer 스트림에서 처리하여 동기화된 비디오와 오디오를 생성하며, 복잡한 아키텍처 없이도 효과적인 학습 및 추론이 가능합니다.\n2. 모델은 인간 중심 시나리오에서 탁월한 성능을 보여주며, 다국어 발화 생성과 시각적 품질, 말청칙도 측면에서 우수함을 확인하였습니다.\n3. 단일 스트림 백본과 모델 증류, 잠재 공간 초해상화, Turbo VAE 디코더 등을 결합하여 효율적인 256p 비디오 생성을 가능케 하며, 이미 수많은 비교에서 우수한 평가 결과를 보여주고 있습니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning",
+    "abstract": "We introduce LongCat-Flash-Prover, a flagship 560-billion-parameter open-source Mixture-of- Experts (MoE) model that advances Native Formal Reasoning in Lean4 through agentic tool-integrated reasoning (TIR). We decompose the native formal reasoning task into three independent formal capabilities, i.e., auto-formalization, sketching, and proving. To facilitate these capabilities, we propose a Hybrid-Experts Iteration Framework to expand high-quality task trajectories, including generating a formal statement based on a given informal problem, producing a whole-proof directly from the statement, or a lemma-style sketch. During agentic RL, we present a Hierarchical Importance Sampling Policy Optimization (HisPO) algorithm, which aims to stabilize the MoE model training on such long-horizon tasks. It employs a gradient masking strategy that accounts for the policy staleness and the inherent train-inference engine discrepancies at both sequence and token levels. Additionally, we also incorporate theorem consistency and legality detection mechanisms to eliminate reward hacking issues. Extensive evaluations show that our LongCat-Flash-Prover sets a new state-of-the-art for open-weights models in both auto-formalization and theorem proving. Demonstrating remarkable sample efficiency, it achieves a 97.1% pass rate on MiniF2F-Test using only 72 inference budget per problem. On more challenging benchmarks, it solves 70.8% of ProverBench and 41.5% of PutnamBench with no more than 220 attempts per problem, significantly outperforming existing open-weights baselines.",
+    "authors": [
+      "Jianing Wang",
+      "Jianfei Zhang",
+      "Qi Guo",
+      "Linsen Guo",
+      "Rumei Li",
+      "Chao Zhang",
+      "Chong Peng",
+      "Cunguang Wang",
+      "Dengchang Zhao",
+      "Jiarong Shi",
+      "Jingang Wang",
+      "Liulin Feng",
+      "Mengxia Shen",
+      "Qi Li",
+      "Shengnan An",
+      "Shun Wang",
+      "Wei Shi",
+      "Xiangyu Xi",
+      "Xiaoyu Li",
+      "Xuezhi Cao",
+      "Yi Lu",
+      "Yunke Zhao"
+    ],
+    "likes": 62,
+    "published_date": "Mar 22",
+    "url": "https://huggingface.co/papers/2603.21065",
+    "date_collected": "2026-03-25T07:14:01.095088+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "LongCat-Flash-Prover: 에이전트 툴 통합 강화학습을 통한 네이티브 형식적 추론의 발전",
+      "abstract": "LongCat-Flash-Prover는 Lean4에서 에이전트 툴 통합 추론(TIR)을 통해 네이티브 형식적 추론을 발전시키는 560억 개의 파라미터를 가진 오픈소스 Mixture-of-Experts (MoE) 모델입니다. 우리는 형식적 추론 작업을 자동 형식화, 스케치, 증명 세 가지 독립적인 형식적 능력으로 분해합니다. 이 능력들을 지원하기 위해 고자유역 할인 프레임워크를 제안하여 고 품질의 작업 궤적을 확장합니다."
+    },
+    "summary": "1. LongCat-Flash-Prover는 자동 형식화와 정리 증명에서 새로운 최고 수준을 설정하며 MiniF2F-Test에서 72번의 추론 예산으로 97.1% 합격률을 달성합니다.\n2. 형식적인 문제로부터 형식적인 문장을 생성하고, 그 문장으로부터 전체 증명 또는 보조 정리 스케치를 만들어내는 능력을 제공하며, 기울기 마스킹 전략과 이상 행위 감지 메커니즘을 사용하여 MoE 모델 훈련을 안정화시키는 Hierarchical Importance Sampling Policy Optimization (HisPO) 알고리즘을 도입합니다.\n3. LongCat-Flash-Prover는 ProverBench의 70.8%와 PutnamBench의 41.5%를 해결해냄으로써 기존 오픈 가중치 기준을 크게 능가하며, 샘플 효율성을 두드러지게 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs",
+    "abstract": "Vision-language models (VLMs) typically process images at a native high-resolution, forcing a trade-off between accuracy and computational efficiency: high-resolution inputs capture fine details but incur significant computational costs, while low-resolution inputs advocate for efficiency, they potentially miss critical visual information, like small text. We present AwaRes, a spatial-on-demand framework that resolves this accuracy-efficiency trade-off by operating on a low-resolution global view and using tool-calling to retrieve only high-resolution segments needed for a given query. We construct supervised data automatically: a judge compares low- vs.\\ high-resolution answers to label whether cropping is needed, and an oracle grounding model localizes the evidence for the correct answer, which we map to a discrete crop set to form multi-turn tool-use trajectories. We train our framework with cold-start SFT followed by multi-turn GRPO with a composite reward that combines semantic answer correctness with explicit crop-cost penalties. Project page: https://nimrodshabtay.github.io/AwaRes",
+    "authors": [
+      "Nimrod Shabtay",
+      "Moshe Kimhi",
+      "Artem Spector",
+      "Sivan Haray",
+      "Ehud Rivlin",
+      "Chaim Baskin",
+      "Raja Giryes",
+      "Eli Schwartz"
+    ],
+    "likes": 54,
+    "published_date": "Mar 14",
+    "url": "https://huggingface.co/papers/2603.16932",
+    "date_collected": "2026-03-25T07:14:01.096695+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "중요한 곳을 보세요: 효율적인 VLMs를 위한 고해상도 자르기 검색",
+      "abstract": "시각-언어 모델(VLMs)은 일반적으로 고해상도 이미지를 처리하며, 정확성과 계산 효율성 사이의 교환이 필요합니다. 고해상도 입력은 세부 사항을 잡지만 계산 비용이 증가하며, 저해상도 입력은 효율성을 위해 주장하지만 작은 텍스트 등 중요한 시각 정보를 놓칠 수 있습니다. 저해상도 전체적인 뷰에 작용하고 주어진 쿼리에 필요한 고해상도 세그먼트만 검색하는 AwaRes라는 공간-요구 프레임워크를 제안합니다. 저-대고해상도 답변을 비교하는 심사관과 올바른 답변에 대한 근거를 지역화하는 오라클 지식 모델을 사용하여 자동으로 지도 데이터를 생성합니다. 이 정보는 다중 턴 도구 사용 트라젝토리를 형성하는 다중 턴 GRPO로 이어지는 차가운 시작 SFT로 훈련합니다. 시맨틱 답변 정확성과 명시적 자르기 비용 패널티를 결합한 복합 보상을 사용합니다. 프로젝트 페이지: https://nimrodshabtay.github.io/AwaRes"
+    },
+    "summary": "1. 이미지 처리 모델(VLMs)에서 고해상도와 효율성 사이의 교환이 필요한 문제 해결을 위해 AwaRes 프레임워크를 제안함.\n2. 낮은 해상도의 전체적인 이미지를 기반으로 필요한 고해상도 세그먼트만을 선택함으로써 정확성과 효율성의 균형을 이룸.\n3. 자동으로 생성된 지도 데이터와 다중 턴 학습을 통해 명확한 답변 정확성과 자르기 비용을 고려한 보상을 통해 프레임워크를 훈련함.",
+    "categories": [
+      "Computer Vision",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis",
+    "abstract": "Training deep research agents requires long-horizon trajectories that interleave search, evidence aggregation, and multi-step reasoning. However, existing data collection pipelines typically rely on proprietary web APIs, making large-scale trajectory synthesis costly, unstable, and difficult to reproduce. We present OpenResearcher, a reproducible pipeline that decouples one-time corpus bootstrapping from multi-turn trajectory synthesis and executes the search-and-browse loop entirely offline using three explicit browser primitives: search, open, and find, over a 15M-document corpus. Using GPT-OSS-120B as the teacher model, we synthesize over 97K trajectories, including a substantial long-horizon tail with 100+ tool calls. Supervised fine-tuning a 30B-A3B backbone on these trajectories achieves 54.8\\% accuracy on BrowseComp-Plus, a +34.0 point improvement over the base model, while remaining competitive on BrowseComp, GAIA, and xbench-DeepSearch. Because the environment is offline and fully instrumented, it also enables controlled analysis, where our study reveals practical insights into deep research pipeline design, including data filtering strategies, agent configuration choices, and how retrieval success relates to final answer accuracy. We release the pipeline, synthesized trajectories, model checkpoints, and the offline search environment at https://github.com/TIGER-AI-Lab/OpenResearcher.",
+    "authors": [
+      "Zhuofeng Li",
+      "Dongfu Jiang",
+      "Xueguang Ma",
+      "Haoxiang Zhang",
+      "Ping Nie",
+      "Yuyu Zhang",
+      "Kai Zou",
+      "Jianwen Xie",
+      "Yu Zhang",
+      "Wenhu Chen"
+    ],
+    "likes": 49,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.20278",
+    "date_collected": "2026-03-25T07:14:01.098418+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "오픈리서처: 장기간 깊은 연구 궤적 합성을 위한 완전히 오픈 파이프라인",
+      "abstract": "깊은 연구 에이전트를 훈련시키기 위해서는 탐색, 증거 집계 및 다단계 추론이 교차되는 장기간 궤적이 필요합니다. 그러나 기존의 데이터 수집 파이프라인은 보통 독점적인 웹 API에 의존하며 대규모 궤적 합성을 비용이 많이 들고 불안정하며 재현하기 어려운 상황을 만들어냅니다. 우리는 OpenResearcher를 제안합니다. 이는 한 번만의 말뭉치 부트스트래핑을 다단계 궤적 합성과 분리하고 검색 및 둘러보기 루프를 완전히 오프라인에서 실행하는데 사용되며, 15백만 문서 말뭉치 상에서 검색, 열기 및 찾기 세 가지 명시적 브라우저 기본 요소를 사용합니다. GPT-OSS-120B를 교사 모델로 사용하여 97,000개가 넘는 궤적을 합성하였고, 100여 개의 도구 호출을 포함하는 상당한 장기간 꼬리도 포함하고 있습니다. 이러한 궤적을 기반으로 30B-A3B 백본의 지도 학습을 실시하면, 기본 모델 대비 BrowseComp-Plus에서 54.8%의 정확도를 달성하여 기반 모델 대비 34.0 포인트 향상을 시현하며, BrowseComp, GAIA 및 xbench-DeepSearch에서 경쟁력을 유지합니다. 오프라인 및 완전히 계측된 환경이므로 제어된 분석도 가능하며, 우리의 연구는 데이터 필터링 전략, 에이전트 구성 선택 및 검색 성공이 최종 답변 정확도와 어떻게 관련되는지를 포함한 깊은 연구 파이프라인 설계에 대한 실용적인 통찰력들을 밝혀냅니다. 우리는 https://github.com/TIGER-AI-Lab/OpenResearcher에서 파이프라인, 합성 궤적, 모델 체크포인트 및 오프라인 검색 환경을 공개합니다."
+    },
+    "summary": "1. 장기간 깊은 연구 에이전트 훈련을 위해 오프라인에서 실행되는 오픈리서처 파이프라인을 제안하였습니다.\n2. GPT-OSS-120B를 교사 모델로 사용하여 97,000개가 넘는 장기간 궤적을 합성하였으며, 이를 기반으로 모델의 성능을 향상시킵니다.\n3. 제안된 파이프라인은 대규모 궤적 합성 뿐만 아니라 데이터 필터링 전략, 에이전트 구성 선택 및 검색 성공과 답변 정확도와의 관련성에 대한 실용적인 통찰력을 제공합니다.",
+    "categories": [
+      "Other"
+    ]
+  },
+  {
+    "title": "VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding",
+    "abstract": "Long video understanding remains challenging for multimodal large language models (MLLMs) due to limited context windows, which necessitate identifying sparse query-relevant video segments. However, existing methods predominantly localize clues based solely on the query, overlooking the video's intrinsic structure and varying relevance across segments. To address this, we propose VideoDetective, a framework that integrates query-to-segment relevance and inter-segment affinity for effective clue hunting in long-video question answering. Specifically, we divide a video into various segments and represent them as a visual-temporal affinity graph built from visual similarity and temporal proximity. We then perform a Hypothesis-Verification-Refinement loop to estimate relevance scores of observed segments to the query and propagate them to unseen segments, yielding a global relevance distribution that guides the localization of the most critical segments for final answering with sparse observation. Experiments show our method consistently achieves substantial gains across a wide range of mainstream MLLMs on representative benchmarks, with accuracy improvements of up to 7.5% on VideoMME-long. Our code is available at https://videodetective.github.io/",
+    "authors": [
+      "Ruoliu Yang",
+      "Chu Wu",
+      "Caifeng Shan",
+      "Ran He",
+      "Chaoyou Fu"
+    ],
+    "likes": 45,
+    "published_date": "Mar 23",
+    "url": "https://huggingface.co/papers/2603.22285",
+    "date_collected": "2026-03-25T07:14:01.099878+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "비디오탐정: 장 영상 이해를 위한 내외부 쿼리 및 내재적 연관성을 통한 단서 추적",
+      "abstract": "다중모달 대규모 언어 모델(MLLMs)에 대한 장 영상 이해는 제한된 컨텍스트 창으로 인해 여전히 어려움이 남아 있습니다. 이는 희소한 쿼리 관련 영상 세그먼트를 식별해야 하는 필요성을 더욱 부각시킵니다. 그러나 기존 방법들은 주로 쿼리만을 기반으로 단서를 국부화하는데, 영상의 내재적 구조와 세그먼트 간 가변적인 관련성을 간과합니다. 이에 우리는 장 영상 질문 응답을 위한 효과적인 단서 추적을 위해 VideoDetective를 제안합니다. 이 프레임워크는 쿼리-세그먼트 관련성과 세그먼트 간 유사성 강도를 통합합니다. 구체적으로, 우리는 영상을 다양한 세그먼트로 분할하고 그들을 시각-시간적 유사성과 시간적 근접성에서 구축된 비주합성 그래프로 표현합니다. 그런 다음, 가설-검증-정제 루프를 통해 관측된 세그먼트의 쿼리에 대한 관련성 점수를 추정하고, 관찰되지 않은 세그먼트로 전파함으로써 최종 응답을 위한 중요한 세그먼트의 지역화를 안내하는 전역적 관련성 분포를 얻습니다. 실험 결과, 우리 방법은 대표적인 벤치마크에서 주류 MLLMs의 넓은 범위에서 지속적인 성과 향상을 보여주며, VideoMME-long에서 최대 7.5%의 정확도 향상을 달성합니다. 우리의 코드는 https://videodetective.github.io/ 에서 이용 가능합니다."
+    },
+    "summary": "1. VideoDetective는 장 영상 질문 응답에서 효과적인 단서 추적을 위해 쿼리-세그먼트 관련성과 세그먼트 간 유사성 강도를 통합하는 프레임워크를 제안합니다.\n2. 영상을 세그먼트로 나누고 시각적 유사성과 시간적 근접성에서 구축된 그래프로 표현하여 세그먼트 간 상호 작용을 고려합니다.\n3. VideoDetective는 실험을 통해 주류 MLLMs의 다양한 벤치마크에서 상당한 성능향상을 보이며, VideoMME-long에서 최대 7.5%의 정확도 향상을 달성했습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation",
+    "abstract": "Vision-language models (VLMs) have shown promise in earth observation (EO), yet they struggle with tasks that require grounding complex spatial reasoning in precise pixel-level visual representations. To address this problem, we introduce TerraScope, a unified VLM that delivers pixel-grounded geospatial reasoning with two key capabilities: (1) modality-flexible reasoning: it handles single-modality inputs (optical or SAR) and adaptively fuses different modalities into the reasoning process when both are available; (2) multi-temporal reasoning: it integrates temporal sequences for change analysis across multiple time points. In addition, we curate Terra-CoT, a large-scale dataset containing 1 million samples with pixel-level masks embedded in reasoning chains across multiple sources. We also propose TerraScope-Bench, the first benchmark for pixel-grounded geospatial reasoning with six sub-tasks that evaluates both answer accuracy and mask quality to ensure authentic pixel-grounded reasoning. Experiments show that TerraScope significantly outperforms existing VLMs on pixel-grounded geospatial reasoning while providing interpretable visual evidence.",
+    "authors": [
+      "Yan Shu",
+      "Bin Ren",
+      "Zhitong Xiong",
+      "Xiao Xiang Zhu",
+      "Begüm Demir",
+      "Nicu Sebe",
+      "Paolo Rota"
+    ],
+    "likes": 43,
+    "published_date": "Mar 19",
+    "url": "https://huggingface.co/papers/2603.19039",
+    "date_collected": "2026-03-25T07:14:01.101408+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "TerraScope: 지구 관측을 위한 픽셀 기반 시각적 추론",
+      "abstract": "비전-언어 모델(VLMs)은 지구 관측(EO)에서 유망성을 보이지만, 복잡한 공간 추론을 픽셀 수준의 시각적 표현에 근거해야 하는 작업에서 어려움을 겪습니다. 이 문제를 해결하기 위해 우리는 TerraScope를 소개합니다. TerraScope는 두 가지 핵심 능력을 갖춘 픽셀 기반 지리적 추론을 제공하는 통합형 VLM입니다: (1) 모달리티 유연한 추론: 단일 모달리티 입력(광학 또는 SAR)을 처리하며 두 모달리티가 모두 있는 경우 추론 과정에서 다양한 모달리티를 적응적으로 융합합니다; (2) 다중 시간적 추론: 여러 시점에서의 변화 분석을 위해 시간적 순서를 통합합니다. 또한, 픽셀 수준 마스크가 포함된 엄청난 크기의 데이터셋인 Terra-CoT를 제작했습니다. 우리는 또한 TerraScope-Bench를 제안하는데, 이는 Authentic한 픽셀 기반 추론을 보장하기 위해 답변 정확성과 마스크 품질을 평가하는 여섯 가지 하위 작업으로 이루어진 픽셀 기반 지리적 추론의 첫 번째 벤치마크입니다. 실험 결과, TerraScope는 시각적 증거를 제공하면서 기존 VLMs보다 픽셀 기반 지리적 추론에서 상당한 성능을 보입니다."
+    },
+    "summary": "1. TerraScope는 지구 관측에서 픽셀 기반 지리적 추론을 제공하는데, 단일 또는 다중 모달리티 입력을 처리하며 다중 시간적 추론을 수행합니다.\n2. TerraScope는 Terra-CoT라는 대규모 데이터셋을 활용하며, TerraScope-Bench를 통해 픽셀 기반 지리적 추론을 위한 첫 번째 벤치마크를 제시합니다.\n3. 실험 결과에 따르면 TerraScope는 다른 VLMs보다 픽셀 기반 지리적 추론에서 우수한 성능을 보이며, 해석 가능한 시각적 증거를 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning",
+    "abstract": "Despite the remarkable success of large-scale pre-trained image representation models (i.e., vision encoders) across various vision tasks, they are predominantly trained on 2D image data and therefore often fail to capture 3D spatial relationships between objects and backgrounds in the real world, constraining their effectiveness in many downstream applications. To address this, we propose SpatialBoost, a scalable framework that enhances the spatial awareness of existing pre-trained vision encoders by injecting 3D spatial knowledge expressed in linguistic descriptions. The core idea involves converting dense 3D spatial information from 2D images into linguistic expressions, which is then used to inject such spatial knowledge into vision encoders through a Large Language Model (LLM). To this end, we adopt a multi-turn Chain-of-Thought (CoT) reasoning process that progressively incorporates dense spatial knowledge and builds hierarchical spatial understanding. To validate effectiveness, we adapt SpatialBoost to state-of-the-art vision encoders such as DINOv3, and evaluate its performance gains on a wide range of benchmarks requiring both 3D perception and general vision abilities. For instance, SpatialBoost improves DINOv3 performance from 55.9 to 59.7 mIoU on ADE20K, achieving state-of-the-art performance with 3.8% gain over the pre-trained DINOv3.",
+    "authors": [
+      "Byungwoo Jeon",
+      "Dongyoung Kim",
+      "Huiwon Jang",
+      "Insoo Kim",
+      "Jinwoo Shin"
+    ],
+    "likes": 38,
+    "published_date": "Mar 23",
+    "url": "https://huggingface.co/papers/2603.22057",
+    "date_collected": "2026-03-25T07:14:01.102857+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "공간부스트: 언어로 이끄는 추론을 통한 시각적 표현 강화",
+      "abstract": "다양한 시각 작업에서 대규모 사전 훈련된 이미지 표현 모델(즉, 비전 인코더)이 높은 성공을 거두었지만, 이들은 주로 2D 이미지 데이터로 훈련되어 실제 세계의 물체와 배경 사이의 3D 공간 관계를 캡처하지 못해 다양한 하위 응용 프로그램에서 효과적이지 못한 경우가 많습니다. 이를 해결하기 위해 우리는 SpatialBoost를 제안합니다. 이는 언어적 설명으로 표현된 3D 공간 지식을 주입하여 기존 사전 훈련된 비전 인코더의 공간 인식을 향상시키는 확장 가능한 프레임워크입니다."
+    },
+    "summary": "1. SpatialBoost는 사전 훈련된 비전 인코더의 성능을 향상시키기 위해 언어적 설명을 활용하여 3D 공간 정보를 주입하는 프레임워크이다.\n2. SpatialBoost는 Dense 3D 공간 정보를 언어적 표현으로 변환하고, Large Language Model(LLM)을 통해 비전 인코더에 이러한 공간 지식을 주입함으로써 계층적인 공간 이해를 구축한다.\n3. 실험 결과, SpatialBoost는 DINOv3와 같은 최첨단 비전 인코더에 적용되어 ADE20K에서 DINOv3의 성능을 55.9에서 59.7 mIoU로 향상시켜 3.8%의 성능 향상을 이끌어내었다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

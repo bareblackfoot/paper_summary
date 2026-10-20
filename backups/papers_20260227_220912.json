@@ -1,0 +1,296 @@
+[
+  {
+    "title": "A Very Big Video Reasoning Suite",
+    "abstract": "Rapid progress in video models has largely focused on visual quality, leaving their reasoning capabilities underexplored. Video reasoning grounds intelligence in spatiotemporally consistent visual environments that go beyond what text can naturally capture, enabling intuitive reasoning over spatiotemporal structure such as continuity, interaction, and causality. However, systematically studying video reasoning and its scaling behavior is hindered by the lack of large-scale training data. To address this gap, we introduce the Very Big Video Reasoning (VBVR) Dataset, an unprecedentedly large-scale resource spanning 200 curated reasoning tasks following a principled taxonomy and over one million video clips, approximately three orders of magnitude larger than existing datasets. We further present VBVR-Bench, a verifiable evaluation framework that moves beyond model-based judging by incorporating rule-based, human-aligned scorers, enabling reproducible and interpretable diagnosis of video reasoning capabilities. Leveraging the VBVR suite, we conduct one of the first large-scale scaling studies of video reasoning and observe early signs of emergent generalization to unseen reasoning tasks. Together, VBVR lays a foundation for the next stage of research in generalizable video reasoning. The data, benchmark toolkit, and models are publicly available at https://video-reason.com/ .",
+    "authors": [
+      "Maijunxian Wang",
+      "Ruisi Wang",
+      "Juyi Lin",
+      "Ran Ji",
+      "Thaddäus Wiedemer",
+      "Qingying Gao",
+      "Dezhi Luo",
+      "Yaoyao Qian",
+      "Lianyu Huang",
+      "Zelong Hong",
+      "Jiahui Ge",
+      "Qianli Ma",
+      "Hang He",
+      "Yifan Zhou",
+      "Lingzi Guo",
+      "Lantao Mei",
+      "Jiachen Li",
+      "Hanwen Xing",
+      "Tianqi Zhao",
+      "Fengyuan Yu",
+      "Weihang Xiao",
+      "Yizheng Jiao"
+    ],
+    "likes": 441,
+    "published_date": "Feb 23",
+    "url": "https://huggingface.co/papers/2602.20159",
+    "date_collected": "2026-02-27T07:14:46.538023+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "대규모 비디오 추론 스위트",
+      "abstract": "비디오 모델의 신속한 발전은 주로 시각적 품질에 초점을 맞추어 왔으며, 그 추론 능력은 여전히 미개척 상태에 있다. 비디오 추론은 텍스트로 자연스럽게 표현하기 어려운 시간과 공간에 걸친 일관된 시각적 환경에서 지식을 바탕으로 하며, 연속성, 상호작용, 인과관계와 같은 시공간 구조에 대한 직관적인 추론을 가능하게 한다. 그러나 대규모 훈련 데이터 부족으로 비디오 추론 및 그 확장 특성 체계적 연구가 제약을 받고 있다. 이 미비를 해소하기 위해 우리는 원칙에 따라 구성된 세부 분류를 따르는 200개의 선별된 추론 과제와 약 백만 개의 비디오 클립으로 이루어진 공간적으로 매우 큰 비디오 추론(VBVR) 데이터셋을 제시한다. 더 나아가 VBVR-Bench도 제시하는데, 이는 모델 기반 판단을 초월하여 규칙 기반, 인간 정렬 평가자의 평가를 포함하고 있어 비디오 추론 능력의 재현 가능하고 해석 가능한 진단을 가능하게 한다. VBVR 스위트를 활용하여 비디오 추론의 대규모 확장 연구 중 하나를 수행하고, 보이지 않은 추론 과제로의 초기 총화능성 징후를 관찰한다. VBVR은 일반화 가능한 비디오 추론 연구의 다음 단계를 위한 기반을 마련한다."
+    },
+    "summary": "1. 비디오 모델 발전은 주로 시각적 품질에 집중해왔으나, 이 논문은 비디오 추론 능력의 중요성과 대규모 훈련 데이터 부족 문제를 다룬다.\n2. 대규모 비디오 추론 데이터셋인 VBVR을 소개하며, 이를 통해 비디오 추론 능력의 진단이 가능한 평가 도구인 VBVR-Bench를 제시한다.\n3. VBVR 스위트를 통해 보이지 않은 추론 과제로의 일반화 능력을 확인하고, 일반화 가능한 비디오 추론 연구의 기초를 마련한다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Does Your Reasoning Model Implicitly Know When to Stop Thinking?",
+    "abstract": "Recent advancements in large reasoning models (LRMs) have greatly improved their capabilities on complex reasoning tasks through Long Chains of Thought (CoTs). However, this approach often results in substantial redundancy, impairing computational efficiency and causing significant delays in real-time applications. Recent studies show that longer reasoning chains are frequently uncorrelated with correctness and can even be detrimental to accuracy. In a further in-depth analysis of this phenomenon, we surprisingly uncover and empirically verify that LRMs implicitly know the appropriate time to stop thinking, while this capability is obscured by current sampling paradigms. Motivated by this, we introduce SAGE (Self-Aware Guided Efficient Reasoning), a novel sampling paradigm that unleashes this efficient reasoning potential. Furthermore, integrating SAGE as mixed sampling into group-based reinforcement learning (SAGE-RL) enables SAGE-RL to effectively incorporate SAGE-discovered efficient reasoning patterns into standard pass@1 inference, markedly enhancing both the reasoning accuracy and efficiency of LRMs across multiple challenging mathematical benchmarks.",
+    "authors": [
+      "Zixuan Huang",
+      "Xin Xia",
+      "Yuxi Ren",
+      "Jianbin Zheng",
+      "Xuanda Wang",
+      "Zhixia Zhang",
+      "Hongyan Xie",
+      "Songshi Liang",
+      "Zehao Chen",
+      "Xuefeng Xiao",
+      "Fuzhen Zhuang",
+      "Jianxin Li",
+      "Yikun Ban",
+      "Deqing Wang"
+    ],
+    "likes": 208,
+    "published_date": "Feb 9",
+    "url": "https://huggingface.co/papers/2602.08354",
+    "date_collected": "2026-02-27T07:14:46.539613+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "추론 모델이 암묵적으로 생각을 멈출 때를 아는가?",
+      "abstract": "최근 대규모 추론 모델(LRMs)의 발전으로 Long Chains of Thought(CoTs)를 통해 복잡한 추론 과제에 대한 능력이 크게 향상되었으나, 이 방법은 종종 상당한 중복을 초래하여 계산 효율성을 저해하고 실시간 응용에서 상당한 지연을 유발합니다. 최근 연구 결과는 더 긴 추론 체인이 종종 정확성과 무관하며 정확도에도 해를 끼칠 수 있음을 보여줍니다. 이 현상에 대한 추가 깊이 있는 분석을 통해, LRMs이 생각을 멈출 적절한 시기를 암묵적으로 안다는 것을 발견하고 경험적으로 검증합니다. 현재 샘플링 패러다임에 의해 이 능력이 가려져 있습니다. 이를 동기로, 효율적인 추론 잠재력을 풀어낼 새로운 샘플링 패러다임인 SAGE(Self-Aware Guided Efficient Reasoning)를 소개합니다. 게다가 SAGE를 그룹 기반 강화 학습(SAGE-RL)에 혼합 샘플링으로 통합함으로써, SAGE-RL이 효율적인 추론 패턴을 표준 pass@1 추론에 효과적으로 통합하여 다양한 어려운 수학 벤치마크에서 LRMs의 추론 정확도와 효율성을 현저히 향상시킵니다."
+    },
+    "summary": "1. 대규모 추론 모델은 생각을 멈출 적절한 시기를 암묵적으로 안다.\n2. SAGE 샘플링 패러다임을 도입하여 LRMs의 효율적인 추론 잠재력을 활용하고, SAGE-RL을 통해 이를 표준 pass@1 추론에 효과적으로 통합합니다.\n3. 이로 인해 LRMs는 여러 어려운 수학 벤치마크에서 추론 정확도와 효율성이 현저히 향상됩니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training",
+    "abstract": "Training stability remains a central challenge in reinforcement learning (RL) for large language models (LLMs). Policy staleness, asynchronous training, and mismatches between training and inference engines all cause the behavior policy to diverge from the current policy, risking training collapse. Importance sampling provides a principled correction for this distribution shift but suffers from high variance; existing remedies such as token-level clipping and sequence-level normalization lack a unified theoretical foundation. We propose Variational sEquence-level Soft Policy Optimization (VESPO). By incorporating variance reduction into a variational formulation over proposal distributions, VESPO derives a closed-form reshaping kernel that operates directly on sequence-level importance weights without length normalization. Experiments on mathematical reasoning benchmarks show that VESPO maintains stable training under staleness ratios up to 64x and fully asynchronous execution, and delivers consistent gains across both dense and Mixture-of-Experts models. Code is available at https://github.com/FloyedShen/VESPO",
+    "authors": [
+      "Guobin Shen",
+      "Chenxiao Zhao",
+      "Xiang Cheng",
+      "Lei Huang",
+      "Xing Yu"
+    ],
+    "likes": 184,
+    "published_date": "Feb 11",
+    "url": "https://huggingface.co/papers/2602.10693",
+    "date_collected": "2026-02-27T07:14:46.540784+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "VESPO: 안정적인 오프-폴리시 LLM 훈련을 위한 변이적 시퀀스-레벨 소프트 정책 최적화",
+      "abstract": "대형 언어 모델(LLM)에 대한 강화 학습(RL)에서 훈련 안정성은 여전히 중요한 과제입니다. 정책 오래됨, 비동기 훈련, 그리고 훈련과 추론 엔진 간 불일치로 인해 행위 정책이 현재 정책에서 벗어나면서 훈련이 붕괴할 위험이 있습니다. 중요도 샘플링은 이 분포 변이를 교정하는 원칙적인 방법을 제공하지만, 고분산에 시달립니다. 기존의 해결책인 토큰-레벨 클리핑 및 시퀀스-레벨 정규화는 통일된 이론적 기반을 가지고 있지 않습니다. 우리는 변이적 시퀀스-레벨 소프트 정책 최적화(VESPO)를 제안합니다. VESPO는 제안 분포에 대한 변이 감소를 통합하여, 길이 정규화 없이도 시퀀스-레벨 중요도 가중치에 직접 작용하는 닫힌 형태의 재구성 커널을 유도합니다. 수학적 추론 벤치마크 실험 결과, VESPO는 정책 오래됨 비율이 최대 64배이고 완전 비동기 실행 하에서 안정적인 훈련을 유지하며, 밀집 및 전문가 모델에서 일관된 이득을 제공합니다. 소스 코드는 https://github.com/FloyedShen/VESPO 에서 사용할 수 있습니다."
+    },
+    "summary": "1. 강화 학습에서의 대형 언어 모델(LLM) 훈련 안정성은 중요한 이슈이며, 기존 해결책의 한계가 존재하는데, VESPO는 이를 개선하기 위해 변이적 소프트 정책 최적화를 제안합니다.\n2. VESPO는 제안 분포에서 변이 감소를 통합하여 중요도 가중치에 영향을 미치는 재구성 커널을 유도하며, 길이 정규화를 필요로 하지 않는다는 특징이 있습니다.\n3. 실험 결과, VESPO는 정책 오래됨 비율이 높고 비동기 실행 조건에서도 안정적인 훈련을 유지하며, 밀집 모델 및 전문가 모델에서 일관된 성과 향상을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "On Data Engineering for Scaling LLM Terminal Capabilities",
+    "abstract": "Despite rapid recent progress in the terminal capabilities of large language models, the training data strategies behind state-of-the-art terminal agents remain largely undisclosed. We address this gap through a systematic study of data engineering practices for terminal agents, making two key contributions: (1) Terminal-Task-Gen, a lightweight synthetic task generation pipeline that supports seed-based and skill-based task construction, and (2) a comprehensive analysis of data and training strategies, including filtering, curriculum learning, long context training, and scaling behavior. Our pipeline yields Terminal-Corpus, a large-scale open-source dataset for terminal tasks. Using this dataset, we train Nemotron-Terminal, a family of models initialized from Qwen3(8B, 14B, 32B) that achieve substantial gains on Terminal-Bench 2.0: Nemotron-Terminal-8B improves from 2.5% to 13.0% Nemotron-Terminal-14B improves from 4.0% to 20.2%, and Nemotron-Terminal-32B improves from 3.4% to 27.4%, matching the performance of significantly larger models. To accelerate research in this domain, we open-source our model checkpoints and most of our synthetic datasets at https://huggingface.co/collections/nvidia/nemotron-terminal.",
+    "authors": [
+      "Renjie Pi",
+      "Grace Lam",
+      "Mohammad Shoeybi",
+      "Pooya Jannaty",
+      "Bryan Catanzaro",
+      "Wei Ping"
+    ],
+    "likes": 82,
+    "published_date": "Feb 24",
+    "url": "https://huggingface.co/papers/2602.21193",
+    "date_collected": "2026-02-27T07:14:46.542034+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "큰 언어 모델 단말 능력의 확장을 위한 데이터 공학에 대해",
+      "abstract": "최근 대규모 언어 모델의 단말 능력이 급속히 발전했지만, 최첨단 단말 에이전트의 훈련 데이터 전략은 크게 공개되지 않았다. 본 연구에서는 단말 에이전트에 대한 데이터 공학 방법론을 체계적으로 조사하여 (1) 씨앗 기반 및 기술 기반 작업을 지원하는 가벼운 합성 작업 생성 파이프라인인 터미널-태스크-젠과 (2) 필터링, 커리큘럼 학습, 긴 문맥 훈련, 확장 행동을 포함한 데이터 및 훈련 전략의 철저한 분석을 제시한다. 저희 파이프라인은 단말 작업을 위한 대규모 오픈 소스 데이터셋인 터미널-코퍼스를 생성한다. 이 데이터셋을 활용하여 Qwen3(8B, 14B, 32B)에서 초기화된 모델군인 네모트론-터미널을 훈련시켜, 터미널-벤치 2.0에서 상당한 성과 향상을 이룩했다: 네모트론-터미널-8B는 2.5%에서 13.0%로 향상되었고, 네모트론-터미널-14B는 4.0%에서 20.2%로, 네모트론-터미널-32B는 3.4%에서 27.4%로 향상되어 크게 더 큰 모델들과 성능이 일치했다. 이 분야의 연구 가속화를 위해 모델 체크포인트와 대부분의 합성 데이터셋을 오픈소스로 https://huggingface.co/collections/nvidia/nemotron-terminal 에 공개했다."
+    },
+    "summary": "1. 최근 대규모 언어 모델의 터미널 능력이 발전했지만 그 훈련 데이터 전략에 대한 연구가 부족함.\n2. 터미널 에이전트를 위한 가벼운 합성 작업 생성 파이프라인인 터미널-태스크-젠(Korean)과 데이터 및 훈련 전략 분석으로 상당한 성과 향상 확인.\n3. 터미널 작업을 위한 대규모 오픈 소스 데이터셋 터미널-코퍼스(Korean) 생성하여 모델 군인 네모트론-터미널(Korean)의 훈련을 통해 성능 향상을 이룸.",
+    "categories": [
+      "LLM",
+      "Data Engineering",
+      "Other"
+    ]
+  },
+  {
+    "title": "SkillOrchestra: Learning to Route Agents via Skill Transfer",
+    "abstract": "Compound AI systems promise capabilities beyond those of individual models, yet their success depends critically on effective orchestration. Existing routing approaches face two limitations: (1) input-level routers make coarse query-level decisions that ignore evolving task requirements; (2) RL-trained orchestrators are expensive to adapt and often suffer from routing collapse, repeatedly invoking one strong but costly option in multi-turn scenarios. We introduce SkillOrchestra, a framework for skill-aware orchestration. Instead of directly learning a routing policy end-to-end, SkillOrchestra learns fine-grained skills from execution experience and models agent-specific competence and cost under those skills. At deployment, the orchestrator infers the skill demands of the current interaction and selects agents that best satisfy them under an explicit performance-cost trade-off. Extensive experiments across ten benchmarks demonstrate that SkillOrchestra outperforms SoTA RL-based orchestrators by up to 22.5% with 700x and 300x learning cost reduction compared to Router-R1 and ToolOrchestra, respectively. These results show that explicit skill modeling enables scalable, interpretable, and sample-efficient orchestration, offering a principled alternative to data-intensive RL-based approaches. The code is available at: https://github.com/jiayuww/SkillOrchestra.",
+    "authors": [
+      "Jiayu Wang",
+      "Yifei Ming",
+      "Zixuan Ke",
+      "Shafiq Joty",
+      "Aws Albarghouthi",
+      "Frederic Sala"
+    ],
+    "likes": 50,
+    "published_date": "Feb 23",
+    "url": "https://huggingface.co/papers/2602.19672",
+    "date_collected": "2026-02-27T07:14:46.543254+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "SkillOrchestra: 스킬 전이를 통한 에이전트 경로 지정 학습",
+      "abstract": "복합 AI 시스템은 개별 모델보다 더 나은 능력을 약속하지만 그들의 성공은 효과적인 오케스트레이션에 중대하게 의존합니다. 기존의 경로 지정 방법은 두 가지 제한을 가지고 있습니다: (1) 입력 수준의 라우터는 진화하는 작업 요구 사항을 무시하고 미세한 쿼리 수준의 결정을 내리며; (2) 강화 학습으로 훈련된 오케스트레이터들은 적응하기 어렵고 종종 라우팅 붕괴에 시달리며 다중 턴 시나리오에서 강하고 비용이 많이 드는 하나의 옵션을 반복하여 호출합니다. 우리는 SkillOrchestra를 소개합니다. SkillOrchestra는 스킬 인식 오케스트레이션을 위한 프레임워크입니다. 라우팅 정책을 처음부터 끝까지 직접 학습하는 대신, SkillOrchestra는 실행 경험으로부터 미세한 스킬을 배우고 해당 스킬 하에 에이전트별 능력과 비용을 모델링합니다. 배치 시, 오케스트레이터는 현재 상호작용의 스킬 요구를 유추하고 명시적인 성능-비용 교환 하에 해당 요구를 가장 잘 충족하는 에이전트들을 선택합니다. 열 개의 벤치마크를 통한 광범위한 실험 결과는 SkillOrchestra가 Router-R1 및 ToolOrchestra에 비해 최대 22.5%의 우수한 성과를 보이며, 학습 비용은 각각 700배 및 300배 감소합니다. 이러한 결과는 명시적인 스킬 모델링이 확장 가능하며 해석 가능하며 효율적인 오케스트레이션을 가능하게 하며, 데이터 집중적인 강화 학습 기반 접근에 대한 원칙적 대안을 제공한다는 것을 보여줍니다. 코드는 다음에서 확인할 수 있습니다: https://github.com/jiayuww/SkillOrchestra."
+    },
+    "summary": "1. 기존 경로 지정 방법의 한계: 입력 수준의 라우터는 작업 요구 사항을 무시하고 강화 학습으로 훈련된 오케스트레이터는 적응하기 어렵고 자주 라우팅 붕괴를 겪는다.\n2. SkillOrchestra의 접근 방식: 미세한 스킬을 학습하고 명시적인 성능-비용 교환 하에 스킬 요구를 충족하는 에이전트를 선택함으로써 확장 가능하고 효율적인 오케스트레이션을 제공한다.\n3. 실험 결과: SkillOrchestra는 Router-R1 및 ToolOrchestra에 비해 최대 22.5% 우수한 성과를 보이며, 학습 비용은 대폭 감소한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "VLANeXt: Recipes for Building Strong VLA Models",
+    "abstract": "Following the rise of large foundation models, Vision-Language-Action models (VLAs) emerged, leveraging strong visual and language understanding for general-purpose policy learning. Yet, the current VLA landscape remains fragmented and exploratory. Although many groups have proposed their own VLA models, inconsistencies in training protocols and evaluation settings make it difficult to identify which design choices truly matter. To bring structure to this evolving space, we reexamine the VLA design space under a unified framework and evaluation setup. Starting from a simple VLA baseline similar to RT-2 and OpenVLA, we systematically dissect design choices along three dimensions: foundational components, perception essentials, and action modelling perspectives. From this study, we distill 12 key findings that together form a practical recipe for building strong VLA models. The outcome of this exploration is a simple yet effective model, VLANeXt. VLANeXt outperforms prior state-of-the-art methods on the LIBERO and LIBERO-plus benchmarks and demonstrates strong generalization in real-world experiments. We will release a unified, easy-to-use codebase that serves as a common platform for the community to reproduce our findings, explore the design space, and build new VLA variants on top of a shared foundation.",
+    "authors": [
+      "Xiao-Ming Wu",
+      "Bin Fan",
+      "Kang Liao",
+      "Jian-Jian Jiang",
+      "Runze Yang",
+      "Yihang Luo",
+      "Zhonghua Wu",
+      "Wei-Shi Zheng",
+      "Chen Change Loy"
+    ],
+    "likes": 48,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18532",
+    "date_collected": "2026-02-27T07:14:46.544605+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "VLANeXt: 강력한 VLA 모델 구축을 위한 레시피",
+      "abstract": "대형 기초 모델의 부상을 따라 Vision-Language-Action 모델(VLA)이 나왔는데, 이는 강력한 시각과 언어 이해를 활용하여 일반적인 정책 학습을 위한 것이다. 그러나 현재의 VLA 분야는 분열되어 있고 탐색적이다. 많은 그룹들이 각자의 VLA 모델을 제안했지만, 훈련 프로토콜과 평가 설정의 불일치로 어떤 디자인 선택이 실제로 중요한지 식별하기 어렵다. 이 변화하는 공간에 구조를 부여하기 위해 우리는 하나의 통합된 프레임워크와 평가 설정 아래에서 VLA 디자인 공간을 재검토한다. RT-2 및 OpenVLA와 유사한 간단한 VLA 기준에서 시작하여, 우리는 기반 구성 요소, 인식 필수 요소, 그리고 행동 모델링 관점에 따라 체계적으로 디자인 선택을 분석한다. 이 연구로부터 강력한 VLA 모델을 구축하는 실용적인 레시피를 이루는 12가지 주요 발견을 추출한다. 이 탐구의 결과는 VLANeXt라는 간단하고 효과적인 모델이다. VLANeXt는 LIBERO 및 LIBERO-plus 벤치마크에서 이전 최첨단 방법을 능가하며, 실제 세계 실험에서 강력한 일반화를 보여준다. 우리는 우리의 발견을 재현하고 디자인 공간을 탐색하며 공통 기반 위에 새로운 VLA 변형을 구축할 수 있는 통합 및 사용하기 쉬운 코드베이스를 공개할 것이다."
+    },
+    "summary": "1. VLA 모델의 다양한 디자인 선택을 분석하여 강력한 모델을 구축하기 위한 실용적인 레시피 도출.\n2. VLANeXt 모델이 LIBERO와 LIBERO-plus 벤치마크에서 이전 최첨단 모델들을 능가하며, 실제 세계 실험에서 강력한 일반화를 보여줌.\n3. 연구 결과를 재현하고 디자인 공간을 탐색하며 새로운 VLA 모델을 만들기 위한 공통 플랫폼 코드베이스를 공개할 계획.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation",
+    "abstract": "Modeling long sequences of user behaviors has emerged as a critical frontier in generative recommendation. However, existing solutions face a dilemma: linear attention mechanisms achieve efficiency at the cost of retrieval precision due to limited state capacity, while softmax attention suffers from prohibitive computational overhead. To address this challenge, we propose HyTRec, a model featuring a Hybrid Attention architecture that explicitly decouples long-term stable preferences from short-term intent spikes. By assigning massive historical sequences to a linear attention branch and reserving a specialized softmax attention branch for recent interactions, our approach restores precise retrieval capabilities within industrial-scale contexts involving ten thousand interactions. To mitigate the lag in capturing rapid interest drifts within the linear layers, we furthermore design Temporal-Aware Delta Network (TADN) to dynamically upweight fresh behavioral signals while effectively suppressing historical noise. Empirical results on industrial-scale datasets confirm the superiority that our model maintains linear inference speed and outperforms strong baselines, notably delivering over 8% improvement in Hit Rate for users with ultra-long sequences with great efficiency.",
+    "authors": [
+      "Lei Xin",
+      "Yuhao Zheng",
+      "Ke Cheng",
+      "Changjiang Jiang",
+      "Zifan Zhang",
+      "Fanhu Zeng"
+    ],
+    "likes": 46,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18283",
+    "date_collected": "2026-02-27T07:14:46.545821+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "하이브리드 시간 인지 주의 아키텍처(HyTRec)를 이용한 장기 행동 순차 추천",
+      "abstract": "사용자 행위의 장기적인 시퀀스를 모델링하는 것은 생성적 추천의 중요한 전선으로 떠올랐습니다. 그러나 기존 솔루션들은 한 가지 딜레마를 직면하고 있습니다: 선형 주의 메커니즘은 상태 용량이 제한되어 정확한 검색 능력을 손해 보며, 소프트맥스 주의는 계산 오버헤드로 인해 고비용을 초래합니다. 이러한 도전에 대처하기 위해, 우리는 HyTRec를 제안합니다. 이 모델은 장기적인 안정된 선호도와 단기적인 의도 변화를 명확하게 분리하는 하이브리드 주의 아키텍처를 특징으로 합니다. 역사적인 대규모 시퀀스를 선형 주의 분기에 할당하고 최근 상호작용을 위해 전용된 소프트맥스 주의 분기를 예약함으로써, 우리의 접근 방식은 수만 건의 상호작용이 포함된 산업 규모 환경에서 정확한 검색 능력을 복원합니다. 선형 레이어에서 신속한 관심 변화를 포착하는 지연을 완화하기 위해 우리는 Temporal-Aware Delta Network (TADN)를 설계하여 신선한 행동 신호를 동적으로 강조하고 효과적으로 역사적인 잡음을 억제합니다. 산업 규모 데이터셋에서의 경험적 결과는 우리 모델이 선형 추론 속도를 유지하며 강력한 기준 모델을 능가한다는 우수성을 확인하는데, 특히 초장기 시퀀스를 가진 사용자들에게 8% 이상의 향상된 Hit Rate을 효율적으로 제공하는 것을 참조합니다."
+    },
+    "summary": "1. 장기 행동 시퀀스 모델링은 생성적 추천에서 중요한 도전 과제로 인식됨.\n2. HyTRec는 선형 및 소프트맥스 주의를 결합하여 정확한 추천 능력을 복원하는 하이브리드 주의 아키텍처를 제안함.\n3. 실험적 결과는 모델이 선형 추론 속도를 유지하고 효율적으로 강력한 기준 모델을 능가한다는 것을 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Query-focused and Memory-aware Reranker for Long Context Processing",
+    "abstract": "Built upon the existing analysis of retrieval heads in large language models, we propose an alternative reranking framework that trains models to estimate passage-query relevance using the attention scores of selected heads. This approach provides a listwise solution that leverages holistic information within the entire candidate shortlist during ranking. At the same time, it naturally produces continuous relevance scores, enabling training on arbitrary retrieval datasets without requiring Likert-scale supervision. Our framework is lightweight and effective, requiring only small-scale models (e.g., 4B parameters) to achieve strong performance. Extensive experiments demonstrate that our method outperforms existing state-of-the-art pointwise and listwise rerankers across multiple domains, including Wikipedia and long narrative datasets. It further establishes a new state-of-the-art on the LoCoMo benchmark that assesses the capabilities of dialogue understanding and memory usage. We further demonstrate that our framework supports flexible extensions. For example, augmenting candidate passages with contextual information further improves ranking accuracy, while training attention heads from middle layers enhances efficiency without sacrificing performance.",
+    "authors": [
+      "Yuqing Li",
+      "Jiangnan Li",
+      "Mo Yu",
+      "Guoxuan Ding",
+      "Zheng Lin",
+      "Weiping Wang",
+      "Jie Zhou"
+    ],
+    "likes": 45,
+    "published_date": "Feb 12",
+    "url": "https://huggingface.co/papers/2602.12192",
+    "date_collected": "2026-02-27T07:14:46.547093+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "쿼리 중심 메모리 인식 재랭커를 위한 재정렬기",
+      "abstract": "대규모 언어 모델의 검색 헤드 분석을 기초로, 선택된 헤드의 주의 점수를 사용하여 패싸지-쿼리 관련성을 추정하는 모델을 훈련시키는 대안적 재랭킹 프레임워크를 제안합니다. 이 방식은 랭킹 중 전체 후보 짧은 목록 내의 종합적 정보를 활용하는 리스트형 해결책을 제공하며, 임의의 검색 데이터셋에서 Likert 규모 감독을 필요로하지 않은 연속적인 관련성 점수를 자연스럽게 생성합니다. 우리의 프레임워크는 가벼우면서 효과적이며, 강력한 성능을 발휘하기 위해 작고 규모가 작은 모델(예: 4B 파라미터)만 요구합니다. 방대한 실험에서 우리의 방법이 Wikipedia 및 장문 데이터를 포함한 여러 영역에서 기존 최신 기술의 점별 및 리스트형 재랭커보다 우수한 결과를 보여줍니다. 또한 대화 이해 및 메모리 사용 능력을 평가하는 LoCoMo 벤치마크에서 새로운 최고 수준을 설정합니다. 우리의 프레임워크가 유연한 확장을 지원함을 보다시피 구체적으로 확인합니다. 예를 들어, 문맥 정보로 후보 패싸지를 보강하면 랭킹 정확도가 향상되고, 중간 레이어의 주의 헤드를 훈련함으로써 효율성이 향상되면서 성능이 포기되지 않습니다."
+    },
+    "summary": "1. 대안적 재랭킹 프레임워크는 전체 후보 짧은 목록 내의 종합적 정보를 활용하며, 임의의 검색 데이터셋에서도 훈련 가능한 연속적인 관련성 점수를 생성합니다.\n2. 작고 가벼운 모델만으로 강력한 성능을 발휘하며, Wikipedia와 장문 데이터 등 다양한 영역에서 최신 기술을 능가합니다.\n3. LoCoMo 벤치마크에서 우수한 능력을 입증하며, 다양한 확장을 지원하며 성능을 희생하지 않고 효율성을 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models",
+    "abstract": "Molecular generation with diffusion models has emerged as a promising direction for AI-driven drug discovery and materials science. While graph diffusion models have been widely adopted due to the discrete nature of 2D molecular graphs, existing models suffer from low chemical validity and struggle to meet the desired properties compared to 1D modeling. In this work, we introduce MolHIT, a powerful molecular graph generation framework that overcomes long-standing performance limitations in existing methods. MolHIT is based on the Hierarchical Discrete Diffusion Model, which generalizes discrete diffusion to additional categories that encode chemical priors, and decoupled atom encoding that splits the atom types according to their chemical roles. Overall, MolHIT achieves new state-of-the-art performance on the MOSES dataset with near-perfect validity for the first time in graph diffusion, surpassing strong 1D baselines across multiple metrics. We further demonstrate strong performance in downstream tasks, including multi-property guided generation and scaffold extension.",
+    "authors": [
+      "Hojung Jung",
+      "Rodrigo Hormazabal",
+      "Jaehyeong Jo",
+      "Youngrok Park",
+      "Kyunggeun Roh",
+      "Se-Young Yun",
+      "Sehui Han",
+      "Dae-Woong Jeong"
+    ],
+    "likes": 41,
+    "published_date": "Feb 19",
+    "url": "https://huggingface.co/papers/2602.17602",
+    "date_collected": "2026-02-27T07:14:46.548434+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "MolHIT: 분류론적 이산 확산 모델로 분자 그래프 생성 고도화",
+      "abstract": "확산 모델을 활용한 분자 생성은 AI 중심의 약물 발견과 소재 과학을 위한 유망한 방향으로 부상하고 있습니다. 그래프 확산 모델은 2D 분자 그래프의 이산적 특성으로 널리 채택되었으나, 기존 모델들은 낮은 화학적 타당성을 가지고 있고 1차원 모델링과 비교했을 때 원하는 속성을 만족시키기 어렵다는 문제점을 안고 있습니다. 본 연구에서는 기존 방법의 성능 한계를 극복하는 강력한 분자 그래프 생성 프레임워크인 MolHIT를 제안합니다. MolHIT는 화학적 사전 값을 부여하는 추가 범주로 이산 확산을 일반화하는 Hierarchical Discrete Diffusion 모델과 화학적 역할에 따라 원자 유형을 분리하는 별도의 원자 인코딩에 기반을 두고 있습니다. MolHIT는 MOSES 데이터셋에서 새로운 최고 수준의 성능을 달성하며, 그래프 확산 분야에서 처음으로 거의 완벽한 타당성을 보여주며 강력한 1차원 기준을 다양한 메트릭에서 능가합니다. 또한 다중 속성 지도 생성 및 기둥 확장을 통해 하류 작업에서 강력한 성능을 입증합니다."
+    },
+    "summary": "1. MolHIT는 기존 모델들의 성능 한계를 극복한 분자 그래프 생성 프레임워크로, 화학적 사전 값을 부여하는 Hierarchical Discrete Diffusion 모델과 별도의 원자 인코딩을 기반으로 한다.\n2. MolHIT는 그래프 확산 분야에서 새로운 최고 수준의 성능을 보여주며, 강력한 1차원 기준을 다양한 메트릭에서 초월한다.\n3. 본 연구는 MolHIT가 다중 속성 지도 생성 및 기둥 확장을 통해 하류 작업에서도 강력한 성능을 발휘한다는 사실을 입증하였다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation",
+    "abstract": "Recent advancements in foundation models have revolutionized joint audio-video generation. However, existing approaches typically treat human-centric tasks including reference-based audio-video generation (R2AV), video editing (RV2AV) and audio-driven video animation (RA2V) as isolated objectives. Furthermore, achieving precise, disentangled control over multiple character identities and voice timbres within a single framework remains an open challenge. In this paper, we propose DreamID-Omni, a unified framework for controllable human-centric audio-video generation. Specifically, we design a Symmetric Conditional Diffusion Transformer that integrates heterogeneous conditioning signals via a symmetric conditional injection scheme. To resolve the pervasive identity-timbre binding failures and speaker confusion in multi-person scenarios, we introduce a Dual-Level Disentanglement strategy: Synchronized RoPE at the signal level to ensure rigid attention-space binding, and Structured Captions at the semantic level to establish explicit attribute-subject mappings. Furthermore, we devise a Multi-Task Progressive Training scheme that leverages weakly-constrained generative priors to regularize strongly-constrained tasks, preventing overfitting and harmonizing disparate objectives. Extensive experiments demonstrate that DreamID-Omni achieves comprehensive state-of-the-art performance across video, audio, and audio-visual consistency, even outperforming leading proprietary commercial models. We will release our code to bridge the gap between academic research and commercial-grade applications.",
+    "authors": [
+      "Xu Guo",
+      "Fulong Ye",
+      "Qichao Sun",
+      "Liyang Chen",
+      "Bingchuan Li",
+      "Pengze Zhang",
+      "Jiawei Liu",
+      "Songtao Zhao",
+      "Qian He",
+      "Xiangwang Hou"
+    ],
+    "likes": 29,
+    "published_date": "Feb 12",
+    "url": "https://huggingface.co/papers/2602.12160",
+    "date_collected": "2026-02-27T07:14:46.550102+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "DreamID-Omni: 통제 가능한 인간 중심 오디오-비디오 생성을 위한 통합 프레임워크",
+      "abstract": "최근의 기초 모델의 발전으로 인해 오디오-비디오 생성에 있어 혁명이 일어났습니다. 그러나 기존 방법은 주로 참조 기반 오디오-비디오 생성 (R2AV), 비디오 편집 (RV2AV), 오디오 주도 비디오 애니메이션 (RA2V)을 격리된 목표로 취급합니다. 더욱이, 단일 프레임워크 내에서 다중 캐릭터 신원과 음색에 대한 정밀하고 분리된 통제를 달성하는 것은 여전히 난제입니다. 본 논문에서 우리는 통제 가능한 인간 중심 오디오-비디오 생성을 위한 DreamID-Omni라는 통합 프레임워크를 제안합니다. 구체적으로, 우리는 대칭적 조건 확산 트랜스포머를 설계하여 다양한 조건 신호를 대칭적인 조건 주입 방식으로 통합합니다. 다중 인물 시나리오에서의 신원-음색 결합 문제 및 화자 혼란을 해소하기 위해 신호 수준에서의 동기화된 RoPE를 통한 이중 수준의 분해 전략과 의미 수준에서의 구조화된 캡션을 통해 명시적 속성-주체 매핑을 설정합니다. 또한, 강하게 제약된 작업을 규제하고 과적합을 방지하며 상이한 목표를 조화시키기 위해 약하게 제한된 생성적 사전을 활용하는 다중 작업 점진적 교육 체계를 고안합니다. 포괄적인 실험 결과는 DreamID-Omni가 비디오, 오디오 및 오디오-비주얼 일관성 전반에 걸쳐 세계 최고 수준의 성능을 달성한다는 것을 보여주며, 심지어 선두 프로프리테러리 상용 모델보다 더 뛰어난 성과를 보입니다. 우리는 학술적 연구와 상업용 응용 프로그램 간의 격차를 줄이기 위해 코드를 공개할 예정입니다."
+    },
+    "summary": "1. DreamID-Omni는 참조 기반 오디오-비디오 생성, 비디오 편집, 오디오 주도 비디오 애니메이션을 포함한 인간 중심 작업을 하나의 통합 프레임워크에서 다루며, 다중 캐릭터 신원과 음색의 정밀하고 분리된 통제를 제공합니다.\n2. 신원-음색 결합 문제와 화자 혼란을 해결하기 위해 DreamID-Omni는 동기화된 RoPE와 구조화된 캡션을 활용하는 이중 수준의 분해 전략을 사용합니다.\n3. DreamID-Omni는 다중 작업 점진적 교육 체계를 도입하여 각 작업을 규제하고 다양한 목표를 조화시키며, 비디오, 오디오 및 오디오-비주얼 일관성에서 세계 최고 수준의 성능을 보입니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  }
+]

@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon May 25 22:29:13 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W22
+URL: https://huggingface.co/papers/week/2026-W22
+Found 10 papers in weekly view
+Fetching likes for: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Fetching likes for: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Fetching likes for: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Fetching likes for: SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research
+Fetching likes for: StepAudio 2.5 Technical Report
+Fetching likes for: See What I Mean: Aligning Vision and Language Representations for Video Fine-grained Object Understanding
+Fetching likes for: From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills
+Fetching likes for: PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion
+Fetching likes for: PhotoFlow: Agentic 3D Virtual Photography Missions
+Fetching likes for: VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis
+Selected top 10 papers by likes:
+1. SkillOpt: Executive Strategy for Self-Evolving Agent Skills (152 likes)
+2. Rethinking Cross-Layer Information Routing in Diffusion Transformers (90 likes)
+3. Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models (89 likes)
+4. SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research (45 likes)
+5. StepAudio 2.5 Technical Report (37 likes)
+6. See What I Mean: Aligning Vision and Language Representations for Video Fine-grained Object Understanding (28 likes)
+7. From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills (22 likes)
+8. PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion (21 likes)
+9. PhotoFlow: Agentic 3D Virtual Photography Missions (20 likes)
+10. VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis (20 likes)
+Found abstract: Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-...
+Processed paper: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Found abstract: Diffusion Transformers (DiTs) have become a de facto backbone of modern visual generation, and nearl...
+Processed paper: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Found abstract: We introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in sev...
+Processed paper: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Found abstract: The exponential growth of global academic output has confronted researchers and AI agents with an un...
+Processed paper: SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research
+Found abstract: Unified audio-language modeling has emerged as a prominent trend in modern speech systems, promising...
+Processed paper: StepAudio 2.5 Technical Report
+Found abstract: We present SWIM (See What I Mean), a novel training strategy that aligns vision and language represe...
+Processed paper: See What I Mean: Aligning Vision and Language Representations for Video Fine-grained Object Understanding
+Found abstract: Language agents increasingly improve by reusing skills -- structured procedural artifacts distilled ...
+Processed paper: From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills
+Found abstract: Most practical high-resolution text-to-image systems, including latent diffusion and autoregressive ...
+Processed paper: PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion
+Found abstract: Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or re...
+Processed paper: PhotoFlow: Agentic 3D Virtual Photography Missions
+Found abstract: Spatio-temporal reasoning is a core capability for Multimodal Large Language Models (MLLMs) operatin...
+Processed paper: VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: StepAudio 2.5 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: See What I Mean: Aligning Vision and Language Representations for Video Fine-grained Object Understanding
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: PhotoFlow: Agentic 3D Virtual Photography Missions
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W22.json...
+
+Updating Notion database...
+Creating new paper: SkillOpt: 진화 중인 에이전트 스킬을 위한 실행 전략
+Creating new paper: 확산 트랜스포머에서의 교차 계층 정보 라우팅 다시 생각하기
+Creating new paper: 렌즈: 핵심 텍스트-이미지 모델의 효율적인 훈련 방식 재고
+Creating new paper: SciAtlas: 자동화된 과학 연구를 위한 대규모 지식 그래프
+Creating new paper: StepAudio 2.5 기술 보고서
+Creating new paper: 무엇을 보라는거니: 비디오 세세한 물체 이해를 위한 시각과 언어 표현 조정
+Creating new paper: 원시 경험으로부터 기술 소비로: 모델 생성 요소 기술의 체계적 연구
+Creating new paper: PiD: 빠르고 고해상도의 잠재 디코딩과 픽셀 확산
+Creating new paper: 사진플로우: 주체적 3D 가상 사진 촬영 미션
+Creating new paper: VGenST-Bench: 활동적 비디오 합성을 통한 시공간 추론용 벤치마크
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May 25 22:31:08 UTC 2026 ===
+

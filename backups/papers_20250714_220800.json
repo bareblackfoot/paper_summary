@@ -1,0 +1,323 @@
+[
+  {
+    "title": "Scaling RL to Long Videos",
+    "abstract": "We introduce a full-stack framework that scales up reasoning in\nvision-language models (VLMs) to long videos, leveraging reinforcement\nlearning. We address the unique challenges of long video reasoning by\nintegrating three critical components: (1) a large-scale dataset,\nLongVideo-Reason, comprising 52K long video QA pairs with high-quality\nreasoning annotations across diverse domains such as sports, games, and vlogs;\n(2) a two-stage training pipeline that extends VLMs with chain-of-thought\nsupervised fine-tuning (CoT-SFT) and reinforcement learning (RL); and (3) a\ntraining infrastructure for long video RL, named Multi-modal Reinforcement\nSequence Parallelism (MR-SP), which incorporates sequence parallelism and a\nvLLM-based engine tailored for long video, using cached video embeddings for\nefficient rollout and prefilling. In experiments, LongVILA-R1-7B achieves\nstrong performance on long video QA benchmarks such as VideoMME. It also\noutperforms Video-R1-7B and even matches Gemini-1.5-Pro across temporal\nreasoning, goal and purpose reasoning, spatial reasoning, and plot reasoning on\nour LongVideo-Reason-eval benchmark. Notably, our MR-SP system achieves up to\n2.1x speedup on long video RL training. LongVILA-R1 demonstrates consistent\nperformance gains as the number of input video frames scales. LongVILA-R1 marks\na firm step towards long video reasoning in VLMs. In addition, we release our\ntraining system for public availability that supports RL training on various\nmodalities (video, text, and audio), various models (VILA and Qwen series), and\neven image and video generation models. On a single A100 node (8 GPUs), it\nsupports RL training on hour-long videos (e.g., 3,600 frames / around 256k\ntokens).",
+    "authors": [
+      "Yukang Chen",
+      "Wei Huang",
+      "Baifeng Shi",
+      "Qinghao Hu",
+      "Hanrong Ye",
+      "Ligeng Zhu",
+      "Zhijian Liu",
+      "Pavlo Molchanov",
+      "Jan Kautz",
+      "Xiaojuan Qi",
+      "Sifei Liu",
+      "Hongxu Yin",
+      "Yao Lu",
+      "Song Han"
+    ],
+    "likes": 112,
+    "published_date": "Jul 10",
+    "url": "https://huggingface.co/papers/2507.07966",
+    "date_collected": "2025-07-14T07:07:41.328036+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "비디오 역량 강화를 통한 강화 학습 확장",
+      "abstract": "저희는 시각-언어 모델(VLMs)에서 강화 학습을 활용하여 장시간 비디오에서 추론을 확장하는 전체 스택 프레임워크를 소개합니다. 장시간 비디오 추론의 독특한 도전점들을 다루기 위해 (1) 체인-오브-스롯 집중 학습 (CoT-SFT) 및 강화 학습 (RL)으로 VLMs를 확장하는 두 단계 훈련 파이프라인, (2) 스포츠, 게임, 블로그 등 다양한 영역에서 고품질의 추론 주석을 포함한 52,000개의 장시간 비디오 QA쌍을 보유한 대규모 데이터셋인 LongVideo-Reason, (3) 장시간 비디오 RL을 위한 훈련 인프라인 Multi-modal Reinforcement Sequence Parallelism (MR-SP)을 결합하는 세 가지 핵심 구성요소를 도입합니다."
+    },
+    "summary": "1. LongVILA-R1-7B는 VideoMME 같은 장시간 비디오 QA 벤치마크에서 우수한 성능을 보이며 LongVideo-Reason-eval 벤치마크에서 Gemini-1.5-Pro와 일치하는 것을 증명합니다.\n2. MR-SP 시스템은 장시간 비디오 RL 훈련에서 최대 2.1배의 속도 향상을 달성합니다.\n3. LongVILA-R1은 입력 비디오 프레임 수가 증가함에 따라 일관된 성능 향상을 시현하며 장시간 비디오 추론에 대한 단단한 진전을 나타냅니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MemOS: A Memory OS for AI System",
+    "abstract": "Large Language Models (LLMs) have become an essential infrastructure for\nArtificial General Intelligence (AGI), yet their lack of well-defined memory\nmanagement systems hinders the development of long-context reasoning, continual\npersonalization, and knowledge consistency.Existing models mainly rely on\nstatic parameters and short-lived contextual states, limiting their ability to\ntrack user preferences or update knowledge over extended periods.While\nRetrieval-Augmented Generation (RAG) introduces external knowledge in plain\ntext, it remains a stateless workaround without lifecycle control or\nintegration with persistent representations.Recent work has modeled the\ntraining and inference cost of LLMs from a memory hierarchy perspective,\nshowing that introducing an explicit memory layer between parameter memory and\nexternal retrieval can substantially reduce these costs by externalizing\nspecific knowledge. Beyond computational efficiency, LLMs face broader\nchallenges arising from how information is distributed over time and context,\nrequiring systems capable of managing heterogeneous knowledge spanning\ndifferent temporal scales and sources. To address this challenge, we propose\nMemOS, a memory operating system that treats memory as a manageable system\nresource. It unifies the representation, scheduling, and evolution of\nplaintext, activation-based, and parameter-level memories, enabling\ncost-efficient storage and retrieval. As the basic unit, a MemCube encapsulates\nboth memory content and metadata such as provenance and versioning. MemCubes\ncan be composed, migrated, and fused over time, enabling flexible transitions\nbetween memory types and bridging retrieval with parameter-based learning.\nMemOS establishes a memory-centric system framework that brings\ncontrollability, plasticity, and evolvability to LLMs, laying the foundation\nfor continual learning and personalized modeling.",
+    "authors": [
+      "Zhiyu Li",
+      "Shichao Song",
+      "Chenyang Xi",
+      "Hanyu Wang",
+      "Chen Tang",
+      "Simin Niu",
+      "Ding Chen",
+      "Jiawei Yang",
+      "Chunyu Li",
+      "Qingchen Yu",
+      "Jihao Zhao",
+      "Yezhaohui Wang",
+      "Peng Liu",
+      "Zehao Lin",
+      "Pengyuan Wang",
+      "Jiahao Huo",
+      "Tianyi Chen",
+      "Kai Chen",
+      "Kehang Li",
+      "Zhen Tao",
+      "Junpeng Ren",
+      "Huayi Lai"
+    ],
+    "likes": 107,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2507.03724",
+    "date_collected": "2025-07-14T07:07:41.329939+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "MemOS: AI 시스템을 위한 메모리 운영 체제",
+      "abstract": "대규모 언어 모델(LLMs)은 인공 일반지능(AGI)을 위한 중요한 인프라가 되었지만, 잘 정의된 메모리 관리 시스템의 부재로 인해 장문 맥락 추론, 계속적인 개인화, 지식 일관성 발전이 제한된다. 기존 모델은 주로 정적 매개변수와 단기적 문맥 상태에 의존하여 사용자 기호를 추적하거나 지식을 오랫동안 업데이트하는 능력이 제한된다. 외부 지식을 일반 텍스트로 도입하는 검색 보강 생성(RAG)은 생명주기 제어나 지속적 표현과의 통합 없이 상태가 없는 해결책으로 남아 있다. 최근 연구에서는 메모리 계층 관점에서 LLMs의 교육 및 추론 비용을 모델링함으로써 매개 변수 메모리와 외부 검색 사이에 명시적인 메모리 레이어를 도입하면 특정 지식을 외부화하여 이러한 비용을 상당히 줄일 수 있다는 것을 보였다. 연산 효율성 이상으로, 정보가 어떻게 시간과 맥락에 걸쳐 분산되는지에 따라 LLM은 시간적 및 맥락적으로 다른 지식을 관리할 수 있는 시스템을 필요로 한다. 이러한 도전에 대처하기 위해 우리는 메모리를 관리 가능한 시스템 자원으로 다루는 MemOS를 제안한다. 이 시스템은 평문, 활성 기반, 매개변수 수준 메모리의 표현, 스케줄링, 진화를 통합하여 비용 효과적인 저장 및 검색을 가능케 한다. MemCube는 기본 단위로, 메모리 콘텐츠와 출처, 버전 등 메타데이터를 캡슐화한다. MemCube는 시간이 지나면서 구성, 이동, 융합될 수 있어 메모리 유형 간 유연한 전환을 허용하고 검색을 매개변수 기반 학습과 이어주는 것을 가능케 한다. MemOS는 LLM에 통제성, 가변성, 발전 가능성을 제공하는 메모리 중심 시스템 구조를 확립하여 계속적인 학습과 개인화 모델링을 위한 기초를 마련한다."
+    },
+    "summary": "1. 대규모 언어 모델은 외부 지식을 획득하는 현재의 한계를 극복하기 위해 MemOS와 같은 메모리 운영 체제를 도입하여 지식을 효과적으로 저장하고 검색하는 것을 제안한다.\n2. MemOS는 MemCube를 사용하여 메모리 콘텐츠와 메타데이터를 캡슐화함으로써 메모리 유형 간의 유연한 전환을 가능케 하며, 검색과 매개변수 기반 학습을 결합함으로써 제어성, 가변성, 발전 가능성을 제공한다.\n3. 이를 통해 MemOS는 LLMs의 지속적인 학습과 개인화 모델링을 위한 기반을 마련하여 인공 일반지능의 발전에 기여할 수 있다.",
+    "categories": [
+      "LLM",
+      "AI System",
+      "Memory Management"
+    ]
+  },
+  {
+    "title": "T-LoRA: Single Image Diffusion Model Customization Without Overfitting",
+    "abstract": "While diffusion model fine-tuning offers a powerful approach for customizing\npre-trained models to generate specific objects, it frequently suffers from\noverfitting when training samples are limited, compromising both generalization\ncapability and output diversity. This paper tackles the challenging yet most\nimpactful task of adapting a diffusion model using just a single concept image,\nas single-image customization holds the greatest practical potential. We\nintroduce T-LoRA, a Timestep-Dependent Low-Rank Adaptation framework\nspecifically designed for diffusion model personalization. In our work we show\nthat higher diffusion timesteps are more prone to overfitting than lower ones,\nnecessitating a timestep-sensitive fine-tuning strategy. T-LoRA incorporates\ntwo key innovations: (1) a dynamic fine-tuning strategy that adjusts\nrank-constrained updates based on diffusion timesteps, and (2) a weight\nparametrization technique that ensures independence between adapter components\nthrough orthogonal initialization. Extensive experiments show that T-LoRA and\nits individual components outperform standard LoRA and other diffusion model\npersonalization techniques. They achieve a superior balance between concept\nfidelity and text alignment, highlighting the potential of T-LoRA in\ndata-limited and resource-constrained scenarios. Code is available at\nhttps://github.com/ControlGenAI/T-LoRA.",
+    "authors": [
+      "Vera Soboleva",
+      "Aibek Alanov",
+      "Andrey Kuznetsov",
+      "Konstantin Sobolev"
+    ],
+    "likes": 97,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.05964",
+    "date_collected": "2025-07-14T07:07:41.331021+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "오버피팅 없는 단일 이미지 확산 모델 맞춤화인 T-LoRA",
+      "abstract": "사전 훈련된 모델을 특정 객체 생성을 위해 맞춤화하는 확산 모델 세밀 조정은 효과적인 방법이지만 훈련 샘플이 제한적인 경우 과적합에 자주 취약하며, 일반화 능력과 출력 다양성을 저해합니다. 본 논문은 딱 한 가지 개념 이미지만을 사용하여 확산 모델을 조정하는 어려운 작업에 도전하며, 단일 이미지 맞춤화가 가장 현실적인 가능성을 지니고 있다. T-LoRA는 확산 모델 개인화를 위해 특별히 설계된 Timestep-Dependent Low-Rank Adaptation 프레임워크입니다. 높은 확산 타임스텝일수록 낮은 타임스텝들보다 과적합하기 쉬워 타임스텝에 민감한 세밀 조정 전략이 필요함을 보여주었습니다. T-LoRA는 (1) 확산 타임스텝에 따라 순위 제한된 업데이트를 조정하는 동적 세밀 조정 전략, (2) 어댑터 구성 요소 간 독립성을 보장하는 가중치 매개변수화 기술을 결합합니다. 다양한 실험 결과는 T-LoRA와 그 개별 구성 요소가 표준 LoRA 및 다른 확산 모델 개인화 기술보다 우수한 성과를 거둔다고 보여주었습니다. 이는 개념 충성도와 텍스트 정렬 간 우수한 균형을 이루며, T-LoRA의 데이터 제한적 및 자원 제약적 시나리오에서의 잠재력을 강조합니다. 코드는 https://github.com/ControlGenAI/T-LoRA 에서 확인할 수 있습니다."
+    },
+    "summary": "1. T-LoRA는 단일 개념 이미지를 사용하여 확산 모델을 조정하는 것으로, 다른 개인화 기법보다 뛰어난 성능을 보입니다.\n2. 높은 확산 타임스텝일수록 낮은 타임스텝보다 더 많은 과적합이 발생하며, 이에 따라 타임스텝에 민감한 세밀 조정 전략이 필요합니다.\n3. T-LoRA는 동적 세밀 조정 전략과 가중치 매개변수화 기술을 결합하여, 개념 충실도와 텍스트 정렬 간 우수한 균형을 이루며, 데이터 제한적 시나리오에서의 잠재력을 강조합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "SingLoRA: Low Rank Adaptation Using a Single Matrix",
+    "abstract": "Low-Rank Adaptation (LoRA) has significantly advanced parameter-efficient\nfine-tuning of large pretrained models. LoRA augments the pre-trained weights\nof a model by adding the product of two smaller matrices that together form a\nlow-rank matrix update. Recent research has shown that scale disparities\nbetween these two matrices often cause unstable training dynamics, leading to\nsuboptimal performance. In this paper, we propose SingLoRA, which reformulates\nlow-rank adaptation by learning the weights update as a decomposition of a\nsingle low-rank matrix multiplied by its transpose. This simple design\ninherently removes inter-matrix scale conflicts, ensuring stable optimization,\nand roughly halves the parameter count. We analyze SingLoRA within the\ninfinite-width neural network framework, showing that it guarantees stable\nfeature learning by construction. Extensive experiments on multiple tasks\nvalidate these benefits. In common sense reasoning, fine-tuning LLama 7B on\nMNLI with SingLoRA achieves 91.3% accuracy - surpassing LoRA (89.1%) and LoRA+\n(90.2%) - while using only 60% of their parameter budget. In image generation,\nfine-tuning Stable Diffusion with SingLoRA significantly improves image\nfidelity on DreamBooth, achieving a DINO similarity score of 0.151, compared to\nscores of 0.148 and 0.143 for DoRA and LoRA, respectively.",
+    "authors": [
+      "David Bensaïd",
+      "Noam Rotstein",
+      "Roy Velich",
+      "Daniel Bensaïd",
+      "Ron Kimmel"
+    ],
+    "likes": 88,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.05566",
+    "date_collected": "2025-07-14T07:07:41.332164+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "싱글로라: 단일 행렬을 이용한 저랭크 적응",
+      "abstract": "저랭크 적응(LoRA)은 대규모 사전 훈련된 모델의 효율적인 파라미터 조정을 크게 발전시켰다. 이 논문에서는 두 개의 작은 행렬의 곱으로 구성된 낮은 랭크 행렬 업데이트를 추가함으로써 모델의 사전 훈련된 가중치를 확장하는 LoRA를 소개한다. 최근 연구에서 이 두 행렬 사이의 규모 불일치가 종종 불안정한 훈련 역학을 유발하여 최적의 성능을 줄이는 것으로 나타났다. SingLoRA를 제안함으로서 저랭크 적응을 단일 저랭크 행렬과 그 전치행렬의 분해로 학습하여 하나의 낮은 랭크 행렬의 업데이트로 재정의한다. 이 간단한 구조는 행렬 간 규모 충돌을 자연히 제거하여 안정적인 최적화를 보장하고 파라미터 수를 대략 절반으로 줄인다. 우리는 SingLoRA를 무한폭 신경망 프레임워크 내에서 분석하여 안정적인 특성 학습이 구성에 의해 보장된다는 것을 보여준다. 여러 작업에 대한 방대한 실험으로 이러한 이점을 검증한다."
+    },
+    "summary": "1. SingLoRA는 한 개의 행렬을 사용하여 낮은 랭크 적응을 재정의하여 안정적인 최적화를 보장하고 파라미터 수를 줄이는 기술이다.\n2. 무한폭 신경망 프레임워크 내에서 SingLoRA가 안정적인 특성 학습을 보장함을 보여주는 실험을 통해 검증되었다.\n3. SingLoRA를 사용한 다양한 작업 실험에서 이점이 입증되었으며, MNLI에서 LLama 7B를 SingLoRA로 파인튜닝한 결과 LoRA와 LoRA+보다 뛰어난 정확도를 보였다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Should We Still Pretrain Encoders with Masked Language Modeling?",
+    "abstract": "Learning high-quality text representations is fundamental to a wide range of\nNLP tasks. While encoder pretraining has traditionally relied on Masked\nLanguage Modeling (MLM), recent evidence suggests that decoder models\npretrained with Causal Language Modeling (CLM) can be effectively repurposed as\nencoders, often surpassing traditional encoders on text representation\nbenchmarks. However, it remains unclear whether these gains reflect an inherent\nadvantage of the CLM objective or arise from confounding factors such as model\nand data scale. In this paper, we address this question through a series of\nlarge-scale, carefully controlled pretraining ablations, training a total of 30\nmodels ranging from 210 million to 1 billion parameters, and conducting over\n15,000 fine-tuning and evaluation runs. We find that while training with MLM\ngenerally yields better performance across text representation tasks,\nCLM-trained models are more data-efficient and demonstrate improved fine-tuning\nstability. Building on these findings, we experimentally show that a biphasic\ntraining strategy that sequentially applies CLM and then MLM, achieves optimal\nperformance under a fixed computational training budget. Moreover, we\ndemonstrate that this strategy becomes more appealing when initializing from\nreadily available pretrained CLM models (from the existing LLM ecosystem),\nreducing the computational burden needed to train best-in-class encoder models.\nWe release all project artifacts at https://hf.co/MLMvsCLM to foster further\nresearch.",
+    "authors": [
+      "Hippolyte Gisserot-Boukhlef",
+      "Nicolas Boizard",
+      "Manuel Faysse",
+      "Duarte M. Alves",
+      "Emmanuel Malherbe",
+      "André F. T. Martins",
+      "Céline Hudelot",
+      "Pierre Colombo"
+    ],
+    "likes": 72,
+    "published_date": "Jul 1",
+    "url": "https://huggingface.co/papers/2507.00994",
+    "date_collected": "2025-07-14T07:07:41.333387+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "마스크된 언어 모델링으로 인코더를 여전히 사전학습해야 할까요?",
+      "abstract": "고품질 텍스트 표현 학습은 다양한 자연어 처리 작업에 기본적입니다. 인코더 사전학습은 일반적으로 마스크된 언어 모델링(MLM)을 사용해왔지만, 최근 연구에서는 인과 언어 모델링(CLM)으로 사전학습된 디코더 모델이 종종 기존의 인코더를 능가하는 텍스트 표현 기준에서 효과적으로 재활용될 수 있다는 증거가 나타났습니다. 그러나 이러한 성과가 CLM 목표의 본연적인 장점에서 비롯된 것인지 아니면 모델 및 데이터 규모와 같은 혼동 요인에서 비롯된 것인지 여전히 분명하지 않습니다. 본 논문에서는 이 질문에 대해 21억 개 파라미터에서 10억 개 파라미터의 범위에 걸쳐 총 30개 모델을 훈련시키고 1만 5000회 이상의 파인튜닝 및 평가 실행을 실시하는 대규모이며 신중하게 제어된 사전학습 제거를 통해 이를 해결합니다. MLM으로 훈련하는 동안 일반적으로 텍스트 표현 작업에서 더 나은 성능을 내지만, CLM으로 훈련된 모델은 데이터 효율성이 뛰어나며 파인튜닝 안정성이 향상됩니다. 이러한 결과를 바탕으로 우리는 순차적으로 CLM을 먼저 적용한 후 MLM을 적용하는 양상적 훈련 전략이 고정된 계산 훈련 예산 하에서 최적의 성능을 달성한다는 것을 실험적으로 보여줍니다. 더 나아가, 기존의 LLM 생태계에서 미리 훈련된 CLM 모델에서 초기화할 때 이러한 전략이 더 매력적임을 보여주며, 최고 수준의 인코더 모델을 훈련하는 데 필요한 계산 부담을 줄입니다. 추가 연구를 위해 모든 프로젝트 자료를 https://hf.co/MLMvsCLM 에 공개합니다."
+    },
+    "summary": "1. MLM 훈련은 텍스트 표현 작업에서 일반적으로 더 나은 성능을 보이지만, CLM으로 훈련된 모델은 데이터를 더 효율적으로 사용하고 파인튜닝의 안정성을 개선합니다.\n2. 순차적인 CLM과 MLM을 적용하는 양상적 훈련 전략은 고정된 계산 훈련 예산 하에서 최적의 성능을 달성합니다.\n3. 기존 LLM 생태계의 사전훈련된 CLM 모델로부터 초기화할 때 이 양상적 전략은 최고 수준의 인코더 모델을 훈련하는 데 필요한 계산 부담을 줄입니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
+    "abstract": "We present 4KAgent, a unified agentic super-resolution generalist system\ndesigned to universally upscale any image to 4K resolution (and even higher, if\napplied iteratively). Our system can transform images from extremely low\nresolutions with severe degradations, for example, highly distorted inputs at\n256x256, into crystal-clear, photorealistic 4K outputs. 4KAgent comprises three\ncore components: (1) Profiling, a module that customizes the 4KAgent pipeline\nbased on bespoke use cases; (2) A Perception Agent, which leverages\nvision-language models alongside image quality assessment experts to analyze\nthe input image and make a tailored restoration plan; and (3) A Restoration\nAgent, which executes the plan, following a recursive execution-reflection\nparadigm, guided by a quality-driven mixture-of-expert policy to select the\noptimal output for each step. Additionally, 4KAgent embeds a specialized face\nrestoration pipeline, significantly enhancing facial details in portrait and\nselfie photos. We rigorously evaluate our 4KAgent across 11 distinct task\ncategories encompassing a total of 26 diverse benchmarks, setting new\nstate-of-the-art on a broad spectrum of imaging domains. Our evaluations cover\nnatural images, portrait photos, AI-generated content, satellite imagery,\nfluorescence microscopy, and medical imaging like fundoscopy, ultrasound, and\nX-ray, demonstrating superior performance in terms of both perceptual (e.g.,\nNIQE, MUSIQ) and fidelity (e.g., PSNR) metrics. By establishing a novel agentic\nparadigm for low-level vision tasks, we aim to catalyze broader interest and\ninnovation within vision-centric autonomous agents across diverse research\ncommunities. We will release all the code, models, and results at:\nhttps://4kagent.github.io.",
+    "authors": [
+      "Yushen Zuo",
+      "Qi Zheng",
+      "Mingyang Wu",
+      "Xinrui Jiang",
+      "Renjie Li",
+      "Jian Wang",
+      "Yide Zhang",
+      "Gengchen Mai",
+      "Lihong V. Wang",
+      "James Zou",
+      "Xiaoyu Wang",
+      "Ming-Hsuan Yang",
+      "Zhengzhong Tu"
+    ],
+    "likes": 71,
+    "published_date": "Jul 9",
+    "url": "https://huggingface.co/papers/2507.07105",
+    "date_collected": "2025-07-14T07:07:41.334833+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "4KAgent: 4K 초고해상도를 위한 에이전틱 에이전트",
+      "abstract": "본 연구에서는 4KAgent를 제시합니다. 이는 어떠한 이미지든 4K 해상도로 업스케일하는 통합된 에이전틱 초고해상도 일반 시스템으로, 심지어 반복적으로 적용하여 더 높은 해상도로 변환할 수 있습니다. 4KAgent는 심한 손상이 있는 매우 낮은 해상도의 이미지(예: 256x256에서의 심하게 왜곡된 입력값)를 수비드하고 사실적인 4K 결과물로 변환할 수 있습니다. 4KAgent는 세 가지 핵심 컴포넌트로 이루어져 있습니다: (1) Profiling, 맞춤형 사용 사례에 기반한 4KAgent 파이프라인을 맞춤화하는 모듈; (2) A Perception Agent, 입력 이미지를 분석하고 맞춤형 복원 계획을 세우기 위해 시각-언어 모델과 이미지 품질평가 전문가를 활용하는 요인; 그리고 (3) A Restoration Agent, 품질 중심의 전문가 혼합 정책에 따라 최적의 출력물을 선택하기 위한 재귀 실행반영 패러다임을 따르며 계획을 실행하는 요인. 더불어, 4KAgent는 특별한 얼굴 복원 파이프라인을 내포하고 있어, 초상화와 셀카 사진에서 사람 얼굴 세부사항을 크게 향상시킵니다. 우리는 4KAgent를 11가지 다양한 작업 범주 인 26가지 다양한 벤치마크를 아우르는 폭넓은 평가를 거쳤으며, 자연 이미지, 초상 사진, 인공지능 생성 콘텐츠, 위성 이미지, 형광 현미경 그리고 난리 베팅쇼 같은 의료 이미징(망막검사, 초음파 및 X-선) 등에서 새로운 차원의 성능을 보여주었습니다. 우리의 평가는 심각도(예: NIQE, MUSIQ) 및 확실성(예: PSNR) 지표 양쪽에서 우수한 성과를 나타내었습니다. 저희는 저수준 비전 작업을 위한 새로운 에이전틱 패러다임을 수립함으로써, 다양한 연구 커뮤니티 전반에 걸쳐 비전 중심 자율 에이전트에 대한 보다 넓은 관심과 혁신을 촉진하고자 합니다. 모든 코드, 모델 및 결과물은 https://4kagent.github.io에서 제공될 예정입니다."
+    },
+    "summary": "1. 4KAgent는 어떠한 이미지든 4K 초고해상도로 변환할 수 있는 통합된 시스템으로, 맞춤형 복원 계획을 수립하고 품질 중심 전문가 정책을 활용하여 최적의 결과물을 선택합니다.\n2. 얼굴 복원 파이프라인을 내장한 4KAgent는 다양한 작업 범주에서 새로운 차원의 성능을 보여주며, 이미지 심각도 및 확실성 지표에서 우수한 성과를 거두었습니다.\n3. 저수준 비전 작업을 위한 새로운 에이전틱 패러다임을 제시한 4KAgent는 비전 중심 자율 에이전트에 대한 넓은 관심과 혁신을 촉진하고자 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "A Survey on Latent Reasoning",
+    "abstract": "Large Language Models (LLMs) have demonstrated impressive reasoning\ncapabilities, especially when guided by explicit chain-of-thought (CoT)\nreasoning that verbalizes intermediate steps. While CoT improves both\ninterpretability and accuracy, its dependence on natural language reasoning\nlimits the model's expressive bandwidth. Latent reasoning tackles this\nbottleneck by performing multi-step inference entirely in the model's\ncontinuous hidden state, eliminating token-level supervision. To advance latent\nreasoning research, this survey provides a comprehensive overview of the\nemerging field of latent reasoning. We begin by examining the foundational role\nof neural network layers as the computational substrate for reasoning,\nhighlighting how hierarchical representations support complex transformations.\nNext, we explore diverse latent reasoning methodologies, including\nactivation-based recurrence, hidden state propagation, and fine-tuning\nstrategies that compress or internalize explicit reasoning traces. Finally, we\ndiscuss advanced paradigms such as infinite-depth latent reasoning via masked\ndiffusion models, which enable globally consistent and reversible reasoning\nprocesses. By unifying these perspectives, we aim to clarify the conceptual\nlandscape of latent reasoning and chart future directions for research at the\nfrontier of LLM cognition. An associated GitHub repository collecting the\nlatest papers and repos is available at:\nhttps://github.com/multimodal-art-projection/LatentCoT-Horizon/.",
+    "authors": [
+      "Rui-Jie Zhu",
+      "Tianhao Peng",
+      "Tianhao Cheng",
+      "Xingwei Qu",
+      "Jinfa Huang",
+      "Dawei Zhu",
+      "Hao Wang",
+      "Kaiwen Xue",
+      "Xuanliang Zhang",
+      "Yong Shan",
+      "Tianle Cai",
+      "Taylor Kergan",
+      "Assel Kembay",
+      "Andrew Smith",
+      "Chenghua Lin",
+      "Binh Nguyen",
+      "Yuqi Pan",
+      "Yuhong Chou",
+      "Zefan Cai",
+      "Zhenhe Wu",
+      "Yongchi Zhao",
+      "Tianyu Liu"
+    ],
+    "likes": 71,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.06203",
+    "date_collected": "2025-07-14T07:07:41.336690+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "잠재 추론에 대한 조사",
+      "abstract": "대형 언어 모델(Large Language Models, LLMs)은 중간 단계를 문장으로 표현하는 명시적 사고 연쇄(chain-of-thought, CoT) 추론에 인도될 때 탁월한 추론 능력을 보여주었습니다. 하지만 CoT는 해석성과 정확성을 향상시키지만 자연어 추론에 의존함으로써 모델의 표현 대역폭을 제한합니다. 잠재 추론은 토큰 수준 지도 없이 모델의 연속적인 숨겨진 상태에서 완전히 다단계 추론을 수행하여 이 병목현상을 해결합니다. 잠재 추론 연구를 발전시키기 위해, 본 조사는 잠재 추론 분야의 현황에 대한 포괄적인 개요를 제공합니다. 우리는 이러한 추론을 하는 데 계산적 기저로서 신경망 계층의 필수적인 역할을 검토하고, 계층적 표현이 복잡한 변환을 지원하는 방법을 강조합니다."
+    },
+    "summary": "1. 신경망 계층의 기본 역할을 살펴보면서 계층적 표현이 복잡한 변환을 지원함을 확인\n2. 활성화 기반 반복, 숨겨진 상태 전파, 명시적 추론 추적을 압축하거나 내재화하는 세분화된 잠재 추론 방법론을 탐구\n3. 마스킹 확산 모델을 통한 무한 깊이의 잠재 추론과 같은 고급 패러다임에 대해 논의하며, 글로벌하게 일관성 있고 역반전적인 추론 프로세스를 가능케 하는 방법을 다룸",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
+    "abstract": "As language agents tackle increasingly complex tasks, they struggle with\neffective error correction and experience reuse across domains. We introduce\nAgent KB, a hierarchical experience framework that enables complex agentic\nproblem solving via a novel Reason-Retrieve-Refine pipeline. Agent KB addresses\na core limitation: agents traditionally cannot learn from each other's\nexperiences. By capturing both high-level strategies and detailed execution\nlogs, Agent KB creates a shared knowledge base that enables cross-agent\nknowledge transfer. Evaluated on the GAIA benchmark, Agent KB improves success\nrates by up to 16.28 percentage points. On the most challenging tasks, Claude-3\nimproves from 38.46% to 57.69%, while GPT-4 improves from 53.49% to 73.26% on\nintermediate tasks. On SWE-bench code repair, Agent KB enables Claude-3 to\nimprove from 41.33% to 53.33%. Our results suggest that Agent KB provides a\nmodular, framework-agnostic infrastructure for enabling agents to learn from\npast experiences and generalize successful strategies to new tasks.",
+    "authors": [
+      "Xiangru Tang",
+      "Tianrui Qin",
+      "Tianhao Peng",
+      "Ziyang Zhou",
+      "Daniel Shao",
+      "Tingting Du",
+      "Xinming Wei",
+      "Peng Xia",
+      "Fang Wu",
+      "He Zhu",
+      "Ge Zhang",
+      "Jiaheng Liu",
+      "Xingyao Wang",
+      "Sirui Hong",
+      "Chenglin Wu",
+      "Hao Cheng",
+      "Chi Wang",
+      "Wangchunshu Zhou"
+    ],
+    "likes": 66,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.06229",
+    "date_collected": "2025-07-14T07:07:41.338411+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "Cross-Domain 경험 활용을 통한 Agentic 문제 해결에 대한 Agent KB",
+      "abstract": "언어 에이전트들이 점차 복잡해지는 작업에 대처할 때, 다양한 영역 간 효과적인 오류 수정과 경험 재사용에 어려움을 겪습니다. 본 연구에서는 새로운 Reason-Retrieve-Refine 파이프라인을 통해 복잡한 Agentic 문제 해결을 가능하게 하는 계층적 경험 프레임워크인 Agent KB를 소개합니다. Agent KB는 기존에 에이전트들이 서로의 경험으로부터 배울 수 없다는 핵심적인 한계를 극복합니다."
+    },
+    "summary": "1. Agent KB는 고수준 전략과 세부 실행 로그를 포착하여, 다양한 에이전트 간 지식 전이를 가능케 하는 공유 지식 베이스를 만들어낸다.\n2. GAIA 벤치마크를 통한 평가에서 Agent KB는 성공률을 최대 16.28%포인트 향상시킨다.\n3. Agent KB는 과거 경험으로부터 학습하고 새로운 작업에 성공적인 전략을 일반화하는 데 도움이 되는 모듈화된, 프레임워크에 독립적인 인프라를 제공한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Skywork-R1V3 Technical Report",
+    "abstract": "We introduce Skywork-R1V3, an advanced, open-source vision-language model\n(VLM) that pioneers a new approach to visual reasoning. Its key innovation lies\nin effectively transferring reasoning skills from text-only Large Language\nModels (LLMs) to visual tasks. The strong performance of Skywork-R1V3 primarily\nstems from our elaborate post-training RL framework, which effectively\nactivates and enhances the model's reasoning ability, without the need for\nadditional continue pre-training. Through this framework, we further uncover\nthe fundamental role of the connector module in achieving robust cross-modal\nalignment for multimodal reasoning models. In addition, we introduce a unique\nindicator of reasoning capability, the entropy of critical reasoning tokens,\nwhich has proven highly effective for checkpoint selection during RL training.\nSkywork-R1V3 achieves state-of-the-art results on MMMU, significantly improving\nfrom 64.3% to 76.0%. This performance matches entry-level human capabilities.\nRemarkably, our RL-powered post-training approach enables even the 38B\nparameter model to rival top closed-source VLMs. The implementation\nsuccessfully transfers mathematical reasoning to other subject-related\nreasoning tasks. We also include an analysis of curriculum learning and\nreinforcement finetuning strategies, along with a broader discussion on\nmultimodal reasoning. Skywork-R1V3 represents a significant leap in multimodal\nreasoning, showcasing RL as a powerful engine for advancing open-source VLM\ncapabilities.",
+    "authors": [
+      "Wei Shen",
+      "Jiangbo Pei",
+      "Yi Peng",
+      "Xuchen Song",
+      "Yang Liu",
+      "Jian Peng",
+      "Haofeng Sun",
+      "Yunzhuo Hao",
+      "Peiyu Wang",
+      "Yahui Zhou"
+    ],
+    "likes": 60,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.06167",
+    "date_collected": "2025-07-14T07:07:41.339791+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "Skywork-R1V3 기술 보고서",
+      "abstract": "Skywork-R1V3는 고급, 오픈 소스 비전-언어 모델(VLM)로, 시각적 추론에 새로운 접근을 선도합니다. 이 모델의 주요 혁신은 텍스트 기반 대형 언어 모델(LLMs)의 추론 능력을 효과적으로 시각적 작업으로 전이하는 데 있습니다. Skywork-R1V3의 강력한 성능은 별도의 추가 사전 훈련 없이 모델의 추론 능력을 효과적으로 활성화하고 향상시키는 세심한 사후 훈련 RL 프레임워크에서 주로 비롯됩니다. 이 프레임워크를 통해 우리는 다중 모달 추론 모델의 강력한 교차 모달 정렬을 달성하는 커넥터 모듈의 기본 역할을 더 깊게 파악합니다. 또한, 우리는 엔트로피의 중요 추론 토큰을 확인하는 독특한 추론 능력 지표도 소개합니다. 이 지표는 RL 훈련 중 체크포인트 선택에 매우 효과적임이 입증되었습니다. Skywork-R1V3는 MMMU에서 최신 기술 성과를 달성하며 64.3%에서 76.0%로 크게 향상시켰습니다. 이 성능은 입문 수준의 인간 능력과 일치합니다. 우리의 RL 기반 사후 훈련 방식은 38B 매개 변수 모델조차도 최고의 폐쇄 소스 VLM들과 견줄 정도로 성능을 향상시킵니다. 이 구현은 수학적 추론을 다른 주제 관련 추론 작업으로 효과적으로 전이합니다. 또한, 커리큘럼 학습 및 강화 미세조정 전략에 대한 분석과 다중 모달 추론에 대한 보다 광범위한 논의를 포함합니다. Skywork-R1V3는 RL을 고급 오픈 소스 VLM 능력을 발전시키는 강력한 엔진으로 보여줌으로써 다중 모달 추론에서 큰 도약을 의미합니다."
+    },
+    "summary": "1. Skywork-R1V3는 텍스트-기반 언어 모델의 추론 능력을 시각적 작업으로 효과적으로 전이시키는 오픈 소스 비전-언어 모델로, 다중 모달 추론에서 최신 기술 성과를 달성합니다.\n2. Skywork-R1V3의 성능 향상에는 세심한 사후 훈련 RL 프레임워크가 주요 기여하며, 이를 통해 모델의 추론 능력이 활성화되고 향상됩니다.\n3. Skywork-R1V3는 엔트로피 기반 추론 능력 지표를 활용하여 RL 훈련 중 체크포인트 선택에 효과적이며, 수학적 추론을 다른 주제 관련 추론 작업으로 효과적으로 전이시킬 수 있음을 입증합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "MIRIX: Multi-Agent Memory System for LLM-Based Agents",
+    "abstract": "Although memory capabilities of AI agents are gaining increasing attention,\nexisting solutions remain fundamentally limited. Most rely on flat, narrowly\nscoped memory components, constraining their ability to personalize, abstract,\nand reliably recall user-specific information over time. To this end, we\nintroduce MIRIX, a modular, multi-agent memory system that redefines the future\nof AI memory by solving the field's most critical challenge: enabling language\nmodels to truly remember. Unlike prior approaches, MIRIX transcends text to\nembrace rich visual and multimodal experiences, making memory genuinely useful\nin real-world scenarios. MIRIX consists of six distinct, carefully structured\nmemory types: Core, Episodic, Semantic, Procedural, Resource Memory, and\nKnowledge Vault, coupled with a multi-agent framework that dynamically controls\nand coordinates updates and retrieval. This design enables agents to persist,\nreason over, and accurately retrieve diverse, long-term user data at scale. We\nvalidate MIRIX in two demanding settings. First, on ScreenshotVQA, a\nchallenging multimodal benchmark comprising nearly 20,000 high-resolution\ncomputer screenshots per sequence, requiring deep contextual understanding and\nwhere no existing memory systems can be applied, MIRIX achieves 35% higher\naccuracy than the RAG baseline while reducing storage requirements by 99.9%.\nSecond, on LOCOMO, a long-form conversation benchmark with single-modal textual\ninput, MIRIX attains state-of-the-art performance of 85.4%, far surpassing\nexisting baselines. These results show that MIRIX sets a new performance\nstandard for memory-augmented LLM agents. To allow users to experience our\nmemory system, we provide a packaged application powered by MIRIX. It monitors\nthe screen in real time, builds a personalized memory base, and offers\nintuitive visualization and secure local storage to ensure privacy.",
+    "authors": [
+      "Yu Wang",
+      "Xi Chen"
+    ],
+    "likes": 50,
+    "published_date": "Jul 10",
+    "url": "https://huggingface.co/papers/2507.07957",
+    "date_collected": "2025-07-14T07:07:41.340797+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "MIRIX: LLM 기반 에이전트를 위한 다중 에이전트 메모리 시스템",
+      "abstract": "AI 에이전트의 메모리 능력은 점점 주목받고 있지만, 기존 솔루션이 기본적으로 한계가 있습니다. 대부분은 얕고 한정된 메모리 구성 요소에 의존하여 시간이 지남에 따라 사용자별 정보를 개인화하고 추상화하며 안정적으로 회상하는 능력을 제한합니다. 이에 우리는 MIRIX를 소개합니다. 이는 미래의 AI 메모리를 재정의하는 모듈화된 다중 에이전트 메모리 시스템으로, 언어 모델이 진정으로 기억할 수 있도록 하는 분야에서 가장 중요한 과제를 해결합니다. MIRIX는 텍스트를 벗어나 풍부한 시각적 및 다중 모달 경험을 포용하여 실제 세계 시나리오에서 메모리를 실질적으로 유용하게 만듭니다."
+    },
+    "summary": "1. MIRIX는 다양한 메모리 유형을 결합하여 AI 에이전트가 다양하고 장기간에 걸친 사용자 데이터를 효과적으로 유지, 추론하고 정확하게 검색할 수 있도록 돕는 모듈화된, 다중 에이전트 메모리 시스템을 제공합니다.\n2. MIRIX는 ScreenshotVQA에서 RAG 기준선보다 35% 더 높은 정확도를 달성하고 저장 요구 사항을 99.9% 줄이면서, LOCOMO에서는 85.4%라는 최고 수준의 성능을 달성하여 메모리를 보강한 LLM 에이전트에 대한 새로운 성능 기준을 제시합니다.\n3. 사용자가 메모리 시스템을 경험할 수 있도록, 우리는 MIRIX에서 파워드된 패키지 애플리케이션을 제공합니다. 이는 화면을 실시간으로 모니터링하여 개인화된 메모리 기반을 구축하고 직관적인 시각화 및 안전한 로컬 저장소를 제공합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+=== Paper Collection Started at Mon Jul  7 14:42:25 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W28
+URL: https://huggingface.co/papers/week/2025-W28
+Found 2 papers in weekly view
+Fetching likes for: Eka-Eval : A Comprehensive Evaluation Framework for Large Language
+  Models in Indian Languages
+Fetching likes for: How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks
+Selected top 10 papers by likes:
+1. Eka-Eval : A Comprehensive Evaluation Framework for Large Language
+  Models in Indian Languages (2 likes)
+2. How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks (0 likes)
+Found abstract: The rapid advancement of Large Language Models (LLMs) has intensified the
+need for evaluation framew...
+Processed paper: Eka-Eval : A Comprehensive Evaluation Framework for Large Language
+  Models in Indian Languages
+Found abstract: Multimodal foundation models, such as GPT-4o, have recently made remarkable
+progress, but it is not ...
+Processed paper: How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks
+Collected top 2 papers. Starting summary generation...
+
+Processing paper 1/2
+Title: Eka-Eval : A Comprehensive Evaluation Framework for Large Language
+  Models in Indian Languages
+Paper already exists, checking if translation is complete...
+Update likes: 2  ->  2
+Update date_collected: 2025-07-07T23:42:28.139358+09:00  ->  2025-07-07T23:33:26.632440+09:00
+
+Processing paper 2/2
+Title: How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 0  ->  0
+Update date_collected: 2025-07-07T23:42:28.140543+09:00  ->  2025-07-07T23:33:26.633660+09:00
+
+Processed 2 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W28.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 인도어 대규모 언어 모델의 종합적 평가 프레임워크인 Eka-Eval
+Paper already exists with same likes count: GPT-4o는 시각을 얼마나 잘 이해하는가? 표준 컴퓨터 비전 작업에서의 다중모달 기반 모델 평가
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul  7 14:42:30 UTC 2025 ===
+

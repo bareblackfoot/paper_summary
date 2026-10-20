@@ -1,0 +1,141 @@
+=== Paper Collection Started at Wed Sep 10 22:07:24 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W37
+URL: https://huggingface.co/papers/week/2025-W37
+Found 10 papers in weekly view
+Fetching likes for: Why Language Models Hallucinate
+Fetching likes for: Reverse-Engineered Reasoning for Open-Ended Generation
+Fetching likes for: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Fetching likes for: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Fetching likes for: Visual Representation Alignment for Multimodal Large Language Models
+Fetching likes for: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Fetching likes for: Set Block Decoding is a Language Model Inference Accelerator
+Fetching likes for: Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search
+Fetching likes for: Symbolic Graphics Programming with Large Language Models
+Fetching likes for: Does DINOv3 Set a New Medical Vision Standard?
+Selected top 10 papers by likes:
+1. Why Language Models Hallucinate (137 likes)
+2. Reverse-Engineered Reasoning for Open-Ended Generation (125 likes)
+3. WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents (68 likes)
+4. Parallel-R1: Towards Parallel Thinking via Reinforcement Learning (66 likes)
+5. Visual Representation Alignment for Multimodal Large Language Models (51 likes)
+6. Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models (46 likes)
+7. Set Block Decoding is a Language Model Inference Accelerator (46 likes)
+8. Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search (45 likes)
+9. Symbolic Graphics Programming with Large Language Models (43 likes)
+10. Does DINOv3 Set a New Medical Vision Standard? (31 likes)
+Found abstract: Like students facing hard exam questions, large language models sometimes
+guess when uncertain, prod...
+Processed paper: Why Language Models Hallucinate
+Found abstract: While the ``deep reasoning'' paradigm has spurred significant advances in
+verifiable domains like ma...
+Processed paper: Reverse-Engineered Reasoning for Open-Ended Generation
+Found abstract: The paradigm of Large Language Models (LLMs) has increasingly shifted toward
+agentic applications, w...
+Processed paper: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Found abstract: Parallel thinking has emerged as a novel approach for enhancing the reasoning
+capabilities of large ...
+Processed paper: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Found abstract: Multimodal large language models (MLLMs) trained with visual instruction
+tuning have achieved strong...
+Processed paper: Visual Representation Alignment for Multimodal Large Language Models
+Found abstract: We propose TraceRL, a trajectory-aware reinforcement learning framework for
+diffusion language model...
+Processed paper: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Found abstract: Autoregressive next token prediction language models offer powerful
+capabilities but face significan...
+Processed paper: Set Block Decoding is a Language Model Inference Accelerator
+Found abstract: Recent advances in large multimodal models have leveraged image-based tools
+with reinforcement learn...
+Processed paper: Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search
+Found abstract: Large language models (LLMs) excel at program synthesis, yet their ability to
+produce symbolic graph...
+Processed paper: Symbolic Graphics Programming with Large Language Models
+Found abstract: The advent of large-scale vision foundation models, pre-trained on diverse
+natural images, has marke...
+Processed paper: Does DINOv3 Set a New Medical Vision Standard?
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Why Language Models Hallucinate
+Paper already exists, checking if translation is complete...
+Update likes: 137  ->  117
+Update date_collected: 2025-09-11T07:07:32.804902+09:00  ->  2025-09-10T07:07:39.178765+09:00
+
+Processing paper 2/10
+Title: Reverse-Engineered Reasoning for Open-Ended Generation
+Paper already exists, checking if translation is complete...
+Update likes: 125  ->  99
+Update date_collected: 2025-09-11T07:07:32.806381+09:00  ->  2025-09-10T07:07:39.180242+09:00
+
+Processing paper 3/10
+Title: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  55
+Update date_collected: 2025-09-11T07:07:32.807969+09:00  ->  2025-09-10T07:07:39.181804+09:00
+
+Processing paper 4/10
+Title: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Visual Representation Alignment for Multimodal Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  36
+Update date_collected: 2025-09-11T07:07:32.812042+09:00  ->  2025-09-10T07:07:39.185474+09:00
+
+Processing paper 7/10
+Title: Set Block Decoding is a Language Model Inference Accelerator
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  43
+Update date_collected: 2025-09-11T07:07:32.813344+09:00  ->  2025-09-10T07:07:39.183090+09:00
+
+Processing paper 8/10
+Title: Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Symbolic Graphics Programming with Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  42
+Update date_collected: 2025-09-11T07:07:32.815742+09:00  ->  2025-09-10T07:07:39.184310+09:00
+
+Processing paper 10/10
+Title: Does DINOv3 Set a New Medical Vision Standard?
+Paper already exists, checking if translation is complete...
+Update likes: 31  ->  27
+Update date_collected: 2025-09-11T07:07:32.817466+09:00  ->  2025-09-10T07:07:39.187191+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W37.json...
+
+Updating Notion database...
+Updating paper: 왜 언어 모델은 환각하는가 (likes: 117 -> 137)
+Updating paper: 역공학화된 추론을 통한 개방형 생성 (likes: 99 -> 125)
+Updating paper: 웹탐험가: 장기간 웹 에이전트 훈련을 위한 탐사 및 발전 (likes: 55 -> 68)
+Creating new paper: 병렬-R1: 강화 학습을 통한 병렬 사고로의 진화
+Creating new paper: 멀티모달 대형 언어 모델을 위한 시각적 표현 정렬
+Updating paper: 확산형 대언어 모델을 위한 혁신적인 강화학습 프레임워크 (likes: 36 -> 46)
+Updating paper: Set Block Decoding는 언어 모델 추론 가속화기 (likes: 43 -> 46)
+Creating new paper: 미니-o3: 시각 검색을 위한 추론 패턴 및 상호작용 턴 확장
+Updating paper: Symbolic Graphics Programming with Large Language Models (대규모 언어 모델과 상징적 그래픽 프로그래밍) (likes: 42 -> 43)
+Updating paper: DINOv3가 새로운 의료 비전 표준을 정립하나요? (likes: 27 -> 31)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Sep 10 22:09:49 UTC 2025 ===
+

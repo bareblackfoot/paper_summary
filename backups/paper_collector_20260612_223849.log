@@ -1,0 +1,125 @@
+=== Paper Collection Started at Thu Jun 11 22:41:39 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W24
+URL: https://huggingface.co/papers/week/2026-W24
+Found 10 papers in weekly view
+Fetching likes for: Agents' Last Exam
+Fetching likes for: ABot-Earth 0.5: Generative 3D Earth Model
+Fetching likes for: Kwai Keye-VL-2.0 Technical Report
+Fetching likes for: Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models
+Fetching likes for: SWE-Explore: Benchmarking How Coding Agents Explore Repositories
+Fetching likes for: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Fetching likes for: ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research
+Fetching likes for: Redesign Mixture-of-Experts Routers with Manifold Power Iteration
+Fetching likes for: Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution
+Fetching likes for: Toward Generalist Autonomous Research via Hypothesis-Tree Refinement
+Selected top 10 papers by likes:
+1. Agents' Last Exam (278 likes)
+2. ABot-Earth 0.5: Generative 3D Earth Model (206 likes)
+3. Kwai Keye-VL-2.0 Technical Report (177 likes)
+4. Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models (115 likes)
+5. SWE-Explore: Benchmarking How Coding Agents Explore Repositories (108 likes)
+6. Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings (87 likes)
+7. ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research (85 likes)
+8. Redesign Mixture-of-Experts Routers with Manifold Power Iteration (74 likes)
+9. Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution (73 likes)
+10. Toward Generalist Autonomous Research via Hypothesis-Tree Refinement (68 likes)
+Found abstract: Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have n...
+Processed paper: Agents' Last Exam
+Found abstract: We present ABot-Earth 0.5, a generative 3D framework designed to synthesize vast, seamless 3D enviro...
+Processed paper: ABot-Earth 0.5: Generative 3D Earth Model
+Found abstract: We introduce Kwai Keye-VL-2.0-30B-A3B, an open-source Mixture-of-Experts (MoE) multimodal foundation...
+Processed paper: Kwai Keye-VL-2.0 Technical Report
+Found abstract: Vision language models (VLMs) excel at many tasks but still struggle with spatial reasoning when cri...
+Processed paper: Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models
+Found abstract: Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities o...
+Processed paper: SWE-Explore: Benchmarking How Coding Agents Explore Repositories
+Found abstract: Large language models exhibit impressive zero-shot capabilities across a wide range of downstream ta...
+Processed paper: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Found abstract: AI coding agents are increasingly used for scientific work, but their end-to-end autonomous research...
+Processed paper: ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research
+Found abstract: Router is the cornerstone component to the Mixture-of-Experts models. Serving as expert proxies, the...
+Processed paper: Redesign Mixture-of-Experts Routers with Manifold Power Iteration
+Found abstract: Although Large Language Model (LLM) agents have demonstrated strong performance on complex tasks, th...
+Processed paper: Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution
+Found abstract: Scientific progress depends on a repeated loop of exploration, experimentation, and abstraction. Res...
+Processed paper: Toward Generalist Autonomous Research via Hypothesis-Tree Refinement
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Agents' Last Exam
+Paper already exists, checking if translation is complete...
+Update likes: 278  ->  172
+Update date_collected: 2026-06-12T07:41:48.964738+09:00  ->  2026-06-11T07:42:17.755499+09:00
+
+Processing paper 2/10
+Title: ABot-Earth 0.5: Generative 3D Earth Model
+Paper already exists, checking if translation is complete...
+Update likes: 206  ->  193
+Update date_collected: 2026-06-12T07:41:48.967990+09:00  ->  2026-06-11T07:42:17.752390+09:00
+
+Processing paper 3/10
+Title: Kwai Keye-VL-2.0 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 177  ->  166
+Update date_collected: 2026-06-12T07:41:48.971231+09:00  ->  2026-06-11T07:42:17.758626+09:00
+
+Processing paper 4/10
+Title: Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 115  ->  112
+Update date_collected: 2026-06-12T07:41:48.973856+09:00  ->  2026-06-11T07:42:17.761152+09:00
+
+Processing paper 5/10
+Title: SWE-Explore: Benchmarking How Coding Agents Explore Repositories
+Paper already exists, checking if translation is complete...
+Update likes: 108  ->  105
+Update date_collected: 2026-06-12T07:41:48.976471+09:00  ->  2026-06-11T07:42:17.763692+09:00
+
+Processing paper 6/10
+Title: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  84
+Update date_collected: 2026-06-12T07:41:48.978796+09:00  ->  2026-06-11T07:42:17.765902+09:00
+
+Processing paper 7/10
+Title: ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  82
+Update date_collected: 2026-06-12T07:41:48.982080+09:00  ->  2026-06-11T07:42:17.769023+09:00
+
+Processing paper 8/10
+Title: Redesign Mixture-of-Experts Routers with Manifold Power Iteration
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  73
+Update date_collected: 2026-06-12T07:41:48.986653+09:00  ->  2026-06-11T07:42:17.771278+09:00
+
+Processing paper 10/10
+Title: Toward Generalist Autonomous Research via Hypothesis-Tree Refinement
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W24.json...
+
+Updating Notion database...
+Updating paper: 에이전트의 최종 시험 (likes: 172 -> 278)
+Updating paper: ABot-Earth 0.5: 생성적 3D 지구 모델 (likes: 193 -> 206)
+Updating paper: Kwai Keye-VL-2.0 기술 보고서 (likes: 166 -> 177)
+Updating paper: 상상력 있는 지각 토큰이 다중모달 언어 모델에서 공간 추론을 향상시킵니다 (likes: 112 -> 115)
+Updating paper: 코딩 에이전트의 리포지토리 탐색 능력을 벤치마킹하는 SWE-Explore (likes: 105 -> 108)
+Updating paper: 텍스트 임베딩을 위한 숨겨진 특징 렌즈인 당신의 비임베딩 행렬 (likes: 84 -> 87)
+Updating paper: End-to-End 자율적 과학 연구를 위한 벤치마크인 ResearchClawBench (likes: 82 -> 85)
+Creating new paper: Manifold Power Iteration을 활용한 Mixture-of-Experts 라우터 재설계
+Paper already exists with same likes count: Role-Agent: 듀얼 롤 진화를 통한 LLM 에이전트 부트스트래핑
+Creating new paper: 자율 연구의 일반화를 향하여: 가설-트리 정밀화를 통해
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jun 11 22:43:25 UTC 2026 ===
+

@@ -1,0 +1,129 @@
+=== Paper Collection Started at Mon Mar 30 01:41:12 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W14
+URL: https://huggingface.co/papers/week/2026-W14
+Found 10 papers in weekly view
+Fetching likes for: MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding
+Fetching likes for: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Fetching likes for: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Fetching likes for: PixelSmile: Toward Fine-Grained Facial Expression Editing
+Fetching likes for: Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale
+Fetching likes for: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Fetching likes for: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Fetching likes for: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Fetching likes for: CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents
+Fetching likes for: WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG
+Selected top 10 papers by likes:
+1. MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding (130 likes)
+2. Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models (122 likes)
+3. Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model (117 likes)
+4. PixelSmile: Toward Fine-Grained Facial Expression Editing (112 likes)
+5. Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale (110 likes)
+6. Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models (106 likes)
+7. HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning (105 likes)
+8. OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis (90 likes)
+9. CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents (87 likes)
+10. WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG (85 likes)
+Found abstract: Optical character recognition (OCR) has evolved from line-level transcription to structured document...
+Processed paper: MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding
+Found abstract: Video--based world models have emerged along two dominant paradigms: video generation and 3D reconst...
+Processed paper: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Found abstract: We present daVinci-MagiHuman, an open-source audio-video generative foundation model for human-centr...
+Processed paper: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Found abstract: Fine-grained facial expression editing has long been limited by intrinsic semantic overlap. To addre...
+Processed paper: PixelSmile: Toward Fine-Grained Facial Expression Editing
+Found abstract: We introduce Intern-S1-Pro, the first one-trillion-parameter scientific multimodal foundation model....
+Processed paper: Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale
+Found abstract: Distilled autoregressive (AR) video models enable efficient streaming generation but frequently misa...
+Processed paper: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Found abstract: VLMs show strong multimodal capabilities, but they still struggle with fine-grained vision-language ...
+Processed paper: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Found abstract: Training deep research agents requires long-horizon trajectories that interleave search, evidence ag...
+Processed paper: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Found abstract: Computer-use agents (CUAs) hold great promise for automating complex desktop workflows, yet progress...
+Processed paper: CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents
+Found abstract: Dynamical systems theory and reinforcement learning view world evolution as latent-state dynamics dr...
+Processed paper: WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 130  ->  130
+Update date_collected: 2026-03-30T10:41:26.002502+09:00  ->  2026-03-30T07:12:55.505160+09:00
+
+Processing paper 2/10
+Title: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models
+Paper already exists, checking if translation is complete...
+Update likes: 122  ->  122
+Update date_collected: 2026-03-30T10:41:26.004495+09:00  ->  2026-03-30T07:12:55.507281+09:00
+
+Processing paper 3/10
+Title: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 117  ->  117
+Update date_collected: 2026-03-30T10:41:26.006744+09:00  ->  2026-03-30T07:12:55.509706+09:00
+
+Processing paper 4/10
+Title: PixelSmile: Toward Fine-Grained Facial Expression Editing
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  111
+Update date_collected: 2026-03-30T10:41:26.008226+09:00  ->  2026-03-30T07:12:55.511282+09:00
+
+Processing paper 5/10
+Title: Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale
+Paper already exists, checking if translation is complete...
+Update likes: 110  ->  108
+Update date_collected: 2026-03-30T10:41:26.010484+09:00  ->  2026-03-30T07:12:55.513706+09:00
+
+Processing paper 6/10
+Title: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Paper already exists, checking if translation is complete...
+Update likes: 106  ->  106
+Update date_collected: 2026-03-30T10:41:26.011977+09:00  ->  2026-03-30T07:12:55.515299+09:00
+
+Processing paper 7/10
+Title: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 105  ->  105
+Update date_collected: 2026-03-30T10:41:26.013695+09:00  ->  2026-03-30T07:12:55.517185+09:00
+
+Processing paper 8/10
+Title: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  89
+Update date_collected: 2026-03-30T10:41:26.015330+09:00  ->  2026-03-30T07:12:55.519038+09:00
+
+Processing paper 9/10
+Title: CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  87
+Update date_collected: 2026-03-30T10:41:26.016804+09:00  ->  2026-03-30T07:12:55.520647+09:00
+
+Processing paper 10/10
+Title: WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  85
+Update date_collected: 2026-03-30T10:41:26.018340+09:00  ->  2026-03-30T07:12:55.522282+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W14.json...
+
+Updating Notion database...
+Paper already exists with same likes count: MinerU-Diffusion: 확산 복호화를 통한 문서 OCR의 역방향 렌더링으로의 재고
+Paper already exists with same likes count: 옴니-월드벤치: 세계 모델링을 위한 종합적 상호작용 중심 평가를 향하여
+Paper already exists with same likes count: 단순함으로 속도 낮추다: 빠른 오디오-비디오 생성 기반 모델을 위한 단일 스트림 아키텍처
+Updating paper: PixelSmile: 세밀한 얼굴 표정 편집을 향하여 (likes: 111 -> 112)
+Updating paper: Intern-S1-Pro: 1조 규모의 과학적 다중모달 기초 모델 (likes: 108 -> 110)
+Paper already exists with same likes count: 아스트롤라브: 정제된 자기회귀 비디오 모델을 위한 전진 과정 강화학습
+Paper already exists with same likes count: HopChain: 일반화 가능한 비전-언어 추론을 위한 다중 점프 데이터 합성
+Updating paper: 오픈리서처: 장기간 깊은 연구 궤적 합성을 위한 완전히 오픈 파이프라인 (likes: 89 -> 90)
+Paper already exists with same likes count: CUA-Suite: 컴퓨터 사용 에이전트를 위한 대규모 인간 주석 비디오 데모
+Paper already exists with same likes count: WildWorld: 액션 및 명시적 상태를 향한 ARPG 생성을 위한 다이내믹 월드 모델링 대규모 데이터셋
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Mar 30 01:42:16 UTC 2026 ===
+

@@ -1,0 +1,123 @@
+=== Paper Collection Started at Wed May  6 22:23:24 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W19
+URL: https://huggingface.co/papers/week/2026-W19
+Found 10 papers in weekly view
+Fetching likes for: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Fetching likes for: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Fetching likes for: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Fetching likes for: ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration
+Fetching likes for: OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories
+Fetching likes for: Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL
+Fetching likes for: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Fetching likes for: Map2World: Segment Map Conditioned Text to 3D World Generation
+Fetching likes for: Let ViT Speak: Generative Language-Image Pre-training
+Fetching likes for: Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs
+Selected top 10 papers by likes:
+1. MolmoAct2: Action Reasoning Models for Real-world Deployment (196 likes)
+2. From Context to Skills: Can Language Models Learn from Context Skillfully? (134 likes)
+3. UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors (77 likes)
+4. ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration (68 likes)
+5. OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories (38 likes)
+6. Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL (35 likes)
+7. Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction (32 likes)
+8. Map2World: Segment Map Conditioned Text to 3D World Generation (23 likes)
+9. Let ViT Speak: Generative Language-Image Pre-training (21 likes)
+10. Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs (16 likes)
+Found abstract: Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but to...
+Processed paper: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Found abstract: Many real-world tasks require language models (LMs) to reason over complex contexts that exceed thei...
+Processed paper: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Found abstract: Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimoda...
+Processed paper: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Found abstract: This report describes ARIS (Auto-Research-in-sleep), an open-source research harness for autonomous ...
+Processed paper: ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration
+Found abstract: Deep search capabilities have become an indispensable competency for frontier Large Language Model (...
+Processed paper: OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories
+Found abstract: The standard post-training recipe for large multimodal models (LMMs) applies supervised fine-tuning ...
+Processed paper: Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL
+Found abstract: Agentic web search increasingly faces two distinct demands: deep reasoning over a single target, and...
+Processed paper: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Found abstract: 3D world generation is essential for applications such as immersive content creation or autonomous d...
+Processed paper: Map2World: Segment Map Conditioned Text to 3D World Generation
+Found abstract: In this paper, we present Generative Language-Image Pre-training (GenLIP), a minimalist generative p...
+Processed paper: Let ViT Speak: Generative Language-Image Pre-training
+Found abstract: While autoregressive Large Vision-Language Models (LVLMs) demonstrate remarkable proficiency in mult...
+Processed paper: Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Paper already exists, checking if translation is complete...
+Update likes: 196  ->  160
+Update date_collected: 2026-05-07T07:23:34.135316+09:00  ->  2026-05-06T07:26:54.846711+09:00
+
+Processing paper 2/10
+Title: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Paper already exists, checking if translation is complete...
+Update likes: 134  ->  120
+Update date_collected: 2026-05-07T07:23:34.137356+09:00  ->  2026-05-06T07:26:54.848653+09:00
+
+Processing paper 3/10
+Title: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Paper already exists, checking if translation is complete...
+Update likes: 77  ->  74
+Update date_collected: 2026-05-07T07:23:34.139229+09:00  ->  2026-05-06T07:26:54.850414+09:00
+
+Processing paper 4/10
+Title: ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction
+Paper already exists, checking if translation is complete...
+Update likes: 32  ->  31
+Update date_collected: 2026-05-07T07:23:34.146342+09:00  ->  2026-05-06T07:26:54.852081+09:00
+
+Processing paper 8/10
+Title: Map2World: Segment Map Conditioned Text to 3D World Generation
+Paper already exists, checking if translation is complete...
+Update likes: 23  ->  21
+Update date_collected: 2026-05-07T07:23:34.147890+09:00  ->  2026-05-06T07:26:54.853579+09:00
+
+Processing paper 9/10
+Title: Let ViT Speak: Generative Language-Image Pre-training
+Paper already exists, checking if translation is complete...
+Update likes: 21  ->  16
+Update date_collected: 2026-05-07T07:23:34.149740+09:00  ->  2026-05-06T07:26:54.855342+09:00
+
+Processing paper 10/10
+Title: Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs
+Paper already exists, checking if translation is complete...
+Update likes: 16  ->  12
+Update date_collected: 2026-05-07T07:23:34.151521+09:00  ->  2026-05-06T07:26:54.861378+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W19.json...
+
+Updating Notion database...
+Updating paper: 실제 선발을 위한 액션 추론 모델 MolmoAct2 (likes: 160 -> 196)
+Updating paper: 문맥으로부터 기술까지: 언어 모델이 문맥에서 기술을 잘 배울 수 있을까? (likes: 120 -> 134)
+Updating paper: 유니비디엑스: 확산 사전을 통한 다목적 비디오 생성을 위한 통합된 다중 모달 프레임워크 (likes: 74 -> 77)
+Creating new paper: ARIS: 자율 연구를 위한 적대적 다중 에이전트 협업을 통한 자동 연구
+Creating new paper: OpenSeeker-v2: 정보 제공과 높은 난이도 궤적으로 검색 에이전트의 한계를 넓히다
+Creating new paper: SFT에서 RL로의 Beyond: 다중 모달 RL을 위한 블랙박스 온-폴리시 디스틸레이션을 통한 사전 정렬
+Updating paper: Web2BigTable: 인터넷 규모 정보 검색 및 추출을 위한 이중 멀티 에이전트 LLM 시스템 (likes: 31 -> 32)
+Updating paper: Map2World: 세그먼트 맵에 의존하는 텍스트를 3D 세계 생성 (likes: 21 -> 23)
+Updating paper: ViT가 말하다: 생성언어-이미지 사전학습 (likes: 16 -> 21)
+Updating paper: LVLMs에서 깊은 생성을 위한 지속적 시각 기억: 지각 지원 (likes: 12 -> 16)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed May  6 22:25:32 UTC 2026 ===
+

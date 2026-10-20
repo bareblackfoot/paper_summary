@@ -1,0 +1,119 @@
+=== Paper Collection Started at Tue May 26 22:34:40 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W22
+URL: https://huggingface.co/papers/week/2026-W22
+Found 10 papers in weekly view
+Fetching likes for: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Fetching likes for: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Fetching likes for: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Fetching likes for: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Fetching likes for: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Fetching likes for: Macaron-A2UI: A Model for Generative UI in Personal Agents
+Fetching likes for: Foundation Protocol: A Coordination Layer for Agentic Society
+Fetching likes for: SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research
+Fetching likes for: StepAudio 2.5 Technical Report
+Fetching likes for: TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction
+Selected top 10 papers by likes:
+1. SkillOpt: Executive Strategy for Self-Evolving Agent Skills (170 likes)
+2. DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning (116 likes)
+3. Rethinking Cross-Layer Information Routing in Diffusion Transformers (98 likes)
+4. Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models (95 likes)
+5. WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation (88 likes)
+6. Macaron-A2UI: A Model for Generative UI in Personal Agents (67 likes)
+7. Foundation Protocol: A Coordination Layer for Agentic Society (58 likes)
+8. SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research (49 likes)
+9. StepAudio 2.5 Technical Report (42 likes)
+10. TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction (34 likes)
+Found abstract: Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-...
+Processed paper: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Found abstract: Reinforcement Learning has become a standard paradigm for aligning Large Language Models with human ...
+Processed paper: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Found abstract: Diffusion Transformers (DiTs) have become a de facto backbone of modern visual generation, and nearl...
+Processed paper: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Found abstract: We introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in sev...
+Processed paper: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Found abstract: Interactive world models are advancing rapidly, yet existing benchmarks cover only part of the requi...
+Processed paper: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Found abstract: As personal agents evolve to handle complex, user-centric tasks, static plain-text chat is rapidly b...
+Processed paper: Macaron-A2UI: A Model for Generative UI in Personal Agents
+Found abstract: Autonomous agents are moving from tools into a layer of social infrastructure: they browse, purchase...
+Processed paper: Foundation Protocol: A Coordination Layer for Agentic Society
+Found abstract: The exponential growth of global academic output has confronted researchers and AI agents with an un...
+Processed paper: SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research
+Found abstract: Unified audio-language modeling has emerged as a prominent trend in modern speech systems, promising...
+Processed paper: StepAudio 2.5 Technical Report
+Found abstract: Sparse-view 3D reconstruction is increasingly addressed with feed-forward splatting networks that pr...
+Processed paper: TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Paper already exists, checking if translation is complete...
+Update likes: 170  ->  152
+Update date_collected: 2026-05-27T07:34:53.069195+09:00  ->  2026-05-26T07:29:22.858931+09:00
+
+Processing paper 2/10
+Title: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Paper already exists, checking if translation is complete...
+Update likes: 98  ->  90
+Update date_collected: 2026-05-27T07:34:53.074311+09:00  ->  2026-05-26T07:29:22.861453+09:00
+
+Processing paper 4/10
+Title: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Paper already exists, checking if translation is complete...
+Update likes: 95  ->  89
+Update date_collected: 2026-05-27T07:34:53.077495+09:00  ->  2026-05-26T07:29:22.864381+09:00
+
+Processing paper 5/10
+Title: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Macaron-A2UI: A Model for Generative UI in Personal Agents
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Foundation Protocol: A Coordination Layer for Agentic Society
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  45
+Update date_collected: 2026-05-27T07:34:53.089367+09:00  ->  2026-05-26T07:29:22.866795+09:00
+
+Processing paper 9/10
+Title: StepAudio 2.5 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  37
+Update date_collected: 2026-05-27T07:34:53.092719+09:00  ->  2026-05-26T07:29:22.869736+09:00
+
+Processing paper 10/10
+Title: TriSplat: Simulation-Ready Feed-Forward 3D Scene Reconstruction
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W22.json...
+
+Updating Notion database...
+Updating paper: SkillOpt: 진화 중인 에이전트 스킬을 위한 실행 전략 (likes: 152 -> 170)
+Creating new paper: 다이내믹 분산 적응형 어드밴티지 최적화를 이용한 다중 보상 강화학습 (DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning)
+Updating paper: 확산 트랜스포머에서의 교차 계층 정보 라우팅 다시 생각하기 (likes: 90 -> 98)
+Updating paper: 렌즈: 핵심 텍스트-이미지 모델의 효율적인 훈련 방식 재고 (likes: 89 -> 95)
+Creating new paper: WBench: 상호작용형 비디오 세계 모델 평가를 위한 포괄적인 다중 턴 벤치마크
+Creating new paper: 개인 에이전트에서 생성 UI 모델인 Macaron-A2UI
+Creating new paper: Foundation Protocol: 사회적 기반의 조정 레이어
+Updating paper: SciAtlas: 자동화된 과학 연구를 위한 대규모 지식 그래프 (likes: 45 -> 49)
+Updating paper: StepAudio 2.5 기술 보고서 (likes: 37 -> 42)
+Creating new paper: TriSplat: 시뮬레이션에 적합한 피드 포워드 3D 장면 재구성
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue May 26 22:36:32 UTC 2026 ===
+

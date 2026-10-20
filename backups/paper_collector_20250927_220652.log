@@ -1,0 +1,147 @@
+=== Paper Collection Started at Fri Sep 26 22:07:30 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W39
+URL: https://huggingface.co/papers/week/2025-W39
+Found 10 papers in weekly view
+Fetching likes for: Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR
+Fetching likes for: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Fetching likes for: Qwen3-Omni Technical Report
+Fetching likes for: VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models
+Fetching likes for: LIMI: Less is More for Agency
+Fetching likes for: SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines
+Fetching likes for: MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources
+Fetching likes for: Video models are zero-shot learners and reasoners
+Fetching likes for: OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models
+Fetching likes for: Tree Search for LLM Agent Reinforcement Learning
+Selected top 10 papers by likes:
+1. Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR (114 likes)
+2. RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation (112 likes)
+3. Qwen3-Omni Technical Report (110 likes)
+4. VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models (95 likes)
+5. LIMI: Less is More for Agency (88 likes)
+6. SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines (76 likes)
+7. MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources (65 likes)
+8. Video models are zero-shot learners and reasoners (63 likes)
+9. OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models (59 likes)
+10. Tree Search for LLM Agent Reinforcement Learning (58 likes)
+Found abstract: Arabic document OCR remains a challenging task due to the language's cursive
+script, diverse fonts, ...
+Processed paper: Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR
+Found abstract: Large language models excel at function- and file-level code generation, yet
+generating complete rep...
+Processed paper: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Found abstract: We present Qwen3-Omni, a single multimodal model that, for the first time,
+maintains state-of-the-ar...
+Processed paper: Qwen3-Omni Technical Report
+Found abstract: Policy-based reinforcement learning currently plays an important role in
+improving LLMs on mathemati...
+Processed paper: VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models
+Found abstract: We define Agency as the emergent capacity of AI systems to function as
+autonomous agents actively di...
+Processed paper: LIMI: Less is More for Agency
+Found abstract: We present a scientific reasoning foundation model that aligns natural
+language with heterogeneous s...
+Processed paper: SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines
+Found abstract: Large multimodal reasoning models have achieved rapid progress, but their
+advancement is constrained...
+Processed paper: MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources
+Found abstract: The remarkable zero-shot capabilities of Large Language Models (LLMs) have
+propelled natural languag...
+Processed paper: Video models are zero-shot learners and reasoners
+Found abstract: Recent advances in video insertion based on diffusion models are impressive.
+However, existing metho...
+Processed paper: OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models
+Found abstract: Recent advances in reinforcement learning (RL) have significantly enhanced
+the agentic capabilities ...
+Processed paper: Tree Search for LLM Agent Reinforcement Learning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR
+Paper already exists, checking if translation is complete...
+Update likes: 114  ->  106
+Update date_collected: 2025-09-27T07:07:39.623810+09:00  ->  2025-09-26T07:06:46.728706+09:00
+
+Processing paper 2/10
+Title: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  104
+Update date_collected: 2025-09-27T07:07:39.625462+09:00  ->  2025-09-26T07:06:46.730166+09:00
+
+Processing paper 3/10
+Title: Qwen3-Omni Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 110  ->  97
+Update date_collected: 2025-09-27T07:07:39.627341+09:00  ->  2025-09-26T07:06:46.731882+09:00
+
+Processing paper 4/10
+Title: VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: LIMI: Less is More for Agency
+Paper already exists, checking if translation is complete...
+Update likes: 88  ->  84
+Update date_collected: 2025-09-27T07:07:39.630312+09:00  ->  2025-09-26T07:06:46.733508+09:00
+
+Processing paper 6/10
+Title: SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Video models are zero-shot learners and reasoners
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  41
+Update date_collected: 2025-09-27T07:07:39.635036+09:00  ->  2025-09-26T07:06:46.741795+09:00
+
+Processing paper 9/10
+Title: OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion
+  Transformer Models
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  59
+Update date_collected: 2025-09-27T07:07:39.636404+09:00  ->  2025-09-26T07:06:46.734774+09:00
+
+Processing paper 10/10
+Title: Tree Search for LLM Agent Reinforcement Learning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W39.json...
+
+Updating Notion database...
+Updating paper: Baseer: 아랍어 문서를 Markdown OCR로 변환하기 위한 Vision-Language 모델 (likes: 106 -> 114)
+Updating paper: RPG: 통합 및 확장 가능한 코드베이스 생성을 위한 저장소 계획 그래프 (likes: 104 -> 112)
+Updating paper: Qwen3-Omni 기술 보고서 (likes: 97 -> 110)
+Creating new paper: VCRL: 대규모 언어 모델을 위한 분산 기반 커리큘럼 강화 학습
+Updating paper: LIMI: 에이전시를 위한 적은 양이 더 많다 (likes: 84 -> 88)
+Creating new paper: SciReasoner: 다양한 학문 영역을 아우르는 과학적 추론 기반 모델
+Creating new paper: MMR1: 변동성 인식 샘플링과 개방 자원을 활용한 다중모달 추론 강화
+Updating paper: 비디오 모델은 제로샷 학습자 및 추론자 (likes: 41 -> 63)
+Paper already exists with same likes count: 옴니인서트: 확산을 통한 임의의 참조 비디오 삽입을 위한 마스크 없는 모델
+Creating new paper: LLM 에이전트 강화학습을 위한 트리 탐색
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Sep 26 22:09:23 UTC 2025 ===
+

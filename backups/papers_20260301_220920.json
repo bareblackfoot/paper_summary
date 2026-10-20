@@ -1,0 +1,306 @@
+[
+  {
+    "title": "A Very Big Video Reasoning Suite",
+    "abstract": "Rapid progress in video models has largely focused on visual quality, leaving their reasoning capabilities underexplored. Video reasoning grounds intelligence in spatiotemporally consistent visual environments that go beyond what text can naturally capture, enabling intuitive reasoning over spatiotemporal structure such as continuity, interaction, and causality. However, systematically studying video reasoning and its scaling behavior is hindered by the lack of large-scale training data. To address this gap, we introduce the Very Big Video Reasoning (VBVR) Dataset, an unprecedentedly large-scale resource spanning 200 curated reasoning tasks following a principled taxonomy and over one million video clips, approximately three orders of magnitude larger than existing datasets. We further present VBVR-Bench, a verifiable evaluation framework that moves beyond model-based judging by incorporating rule-based, human-aligned scorers, enabling reproducible and interpretable diagnosis of video reasoning capabilities. Leveraging the VBVR suite, we conduct one of the first large-scale scaling studies of video reasoning and observe early signs of emergent generalization to unseen reasoning tasks. Together, VBVR lays a foundation for the next stage of research in generalizable video reasoning. The data, benchmark toolkit, and models are publicly available at https://video-reason.com/ .",
+    "authors": [
+      "Maijunxian Wang",
+      "Ruisi Wang",
+      "Juyi Lin",
+      "Ran Ji",
+      "Thaddäus Wiedemer",
+      "Qingying Gao",
+      "Dezhi Luo",
+      "Yaoyao Qian",
+      "Lianyu Huang",
+      "Zelong Hong",
+      "Jiahui Ge",
+      "Qianli Ma",
+      "Hang He",
+      "Yifan Zhou",
+      "Lingzi Guo",
+      "Lantao Mei",
+      "Jiachen Li",
+      "Hanwen Xing",
+      "Tianqi Zhao",
+      "Fengyuan Yu",
+      "Weihang Xiao",
+      "Yizheng Jiao"
+    ],
+    "likes": 491,
+    "published_date": "Feb 23",
+    "url": "https://huggingface.co/papers/2602.20159",
+    "date_collected": "2026-03-01T07:09:00.338999+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "대규모 비디오 추론 스위트",
+      "abstract": "비디오 모델의 신속한 발전은 주로 시각적 품질에 초점을 맞추어 왔으며, 그 추론 능력은 여전히 미개척 상태에 있다. 비디오 추론은 텍스트로 자연스럽게 표현하기 어려운 시간과 공간에 걸친 일관된 시각적 환경에서 지식을 바탕으로 하며, 연속성, 상호작용, 인과관계와 같은 시공간 구조에 대한 직관적인 추론을 가능하게 한다. 그러나 대규모 훈련 데이터 부족으로 비디오 추론 및 그 확장 특성 체계적 연구가 제약을 받고 있다. 이 미비를 해소하기 위해 우리는 원칙에 따라 구성된 세부 분류를 따르는 200개의 선별된 추론 과제와 약 백만 개의 비디오 클립으로 이루어진 공간적으로 매우 큰 비디오 추론(VBVR) 데이터셋을 제시한다. 더 나아가 VBVR-Bench도 제시하는데, 이는 모델 기반 판단을 초월하여 규칙 기반, 인간 정렬 평가자의 평가를 포함하고 있어 비디오 추론 능력의 재현 가능하고 해석 가능한 진단을 가능하게 한다. VBVR 스위트를 활용하여 비디오 추론의 대규모 확장 연구 중 하나를 수행하고, 보이지 않은 추론 과제로의 초기 총화능성 징후를 관찰한다. VBVR은 일반화 가능한 비디오 추론 연구의 다음 단계를 위한 기반을 마련한다."
+    },
+    "summary": "1. 비디오 모델 발전은 주로 시각적 품질에 집중해왔으나, 이 논문은 비디오 추론 능력의 중요성과 대규모 훈련 데이터 부족 문제를 다룬다.\n2. 대규모 비디오 추론 데이터셋인 VBVR을 소개하며, 이를 통해 비디오 추론 능력의 진단이 가능한 평가 도구인 VBVR-Bench를 제시한다.\n3. VBVR 스위트를 통해 보이지 않은 추론 과제로의 일반화 능력을 확인하고, 일반화 가능한 비디오 추론 연구의 기초를 마련한다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Does Your Reasoning Model Implicitly Know When to Stop Thinking?",
+    "abstract": "Recent advancements in large reasoning models (LRMs) have greatly improved their capabilities on complex reasoning tasks through Long Chains of Thought (CoTs). However, this approach often results in substantial redundancy, impairing computational efficiency and causing significant delays in real-time applications. Recent studies show that longer reasoning chains are frequently uncorrelated with correctness and can even be detrimental to accuracy. In a further in-depth analysis of this phenomenon, we surprisingly uncover and empirically verify that LRMs implicitly know the appropriate time to stop thinking, while this capability is obscured by current sampling paradigms. Motivated by this, we introduce SAGE (Self-Aware Guided Efficient Reasoning), a novel sampling paradigm that unleashes this efficient reasoning potential. Furthermore, integrating SAGE as mixed sampling into group-based reinforcement learning (SAGE-RL) enables SAGE-RL to effectively incorporate SAGE-discovered efficient reasoning patterns into standard pass@1 inference, markedly enhancing both the reasoning accuracy and efficiency of LRMs across multiple challenging mathematical benchmarks.",
+    "authors": [
+      "Zixuan Huang",
+      "Xin Xia",
+      "Yuxi Ren",
+      "Jianbin Zheng",
+      "Xuanda Wang",
+      "Zhixia Zhang",
+      "Hongyan Xie",
+      "Songshi Liang",
+      "Zehao Chen",
+      "Xuefeng Xiao",
+      "Fuzhen Zhuang",
+      "Jianxin Li",
+      "Yikun Ban",
+      "Deqing Wang"
+    ],
+    "likes": 246,
+    "published_date": "Feb 9",
+    "url": "https://huggingface.co/papers/2602.08354",
+    "date_collected": "2026-03-01T07:09:00.340612+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "추론 모델이 암묵적으로 생각을 멈출 때를 아는가?",
+      "abstract": "최근 대규모 추론 모델(LRMs)의 발전으로 Long Chains of Thought(CoTs)를 통해 복잡한 추론 과제에 대한 능력이 크게 향상되었으나, 이 방법은 종종 상당한 중복을 초래하여 계산 효율성을 저해하고 실시간 응용에서 상당한 지연을 유발합니다. 최근 연구 결과는 더 긴 추론 체인이 종종 정확성과 무관하며 정확도에도 해를 끼칠 수 있음을 보여줍니다. 이 현상에 대한 추가 깊이 있는 분석을 통해, LRMs이 생각을 멈출 적절한 시기를 암묵적으로 안다는 것을 발견하고 경험적으로 검증합니다. 현재 샘플링 패러다임에 의해 이 능력이 가려져 있습니다. 이를 동기로, 효율적인 추론 잠재력을 풀어낼 새로운 샘플링 패러다임인 SAGE(Self-Aware Guided Efficient Reasoning)를 소개합니다. 게다가 SAGE를 그룹 기반 강화 학습(SAGE-RL)에 혼합 샘플링으로 통합함으로써, SAGE-RL이 효율적인 추론 패턴을 표준 pass@1 추론에 효과적으로 통합하여 다양한 어려운 수학 벤치마크에서 LRMs의 추론 정확도와 효율성을 현저히 향상시킵니다."
+    },
+    "summary": "1. 대규모 추론 모델은 생각을 멈출 적절한 시기를 암묵적으로 안다.\n2. SAGE 샘플링 패러다임을 도입하여 LRMs의 효율적인 추론 잠재력을 활용하고, SAGE-RL을 통해 이를 표준 pass@1 추론에 효과적으로 통합합니다.\n3. 이로 인해 LRMs는 여러 어려운 수학 벤치마크에서 추론 정확도와 효율성이 현저히 향상됩니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training",
+    "abstract": "Training stability remains a central challenge in reinforcement learning (RL) for large language models (LLMs). Policy staleness, asynchronous training, and mismatches between training and inference engines all cause the behavior policy to diverge from the current policy, risking training collapse. Importance sampling provides a principled correction for this distribution shift but suffers from high variance; existing remedies such as token-level clipping and sequence-level normalization lack a unified theoretical foundation. We propose Variational sEquence-level Soft Policy Optimization (VESPO). By incorporating variance reduction into a variational formulation over proposal distributions, VESPO derives a closed-form reshaping kernel that operates directly on sequence-level importance weights without length normalization. Experiments on mathematical reasoning benchmarks show that VESPO maintains stable training under staleness ratios up to 64x and fully asynchronous execution, and delivers consistent gains across both dense and Mixture-of-Experts models. Code is available at https://github.com/FloyedShen/VESPO",
+    "authors": [
+      "Guobin Shen",
+      "Chenxiao Zhao",
+      "Xiang Cheng",
+      "Lei Huang",
+      "Xing Yu"
+    ],
+    "likes": 215,
+    "published_date": "Feb 11",
+    "url": "https://huggingface.co/papers/2602.10693",
+    "date_collected": "2026-03-01T07:09:00.341803+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "VESPO: 안정적인 오프-폴리시 LLM 훈련을 위한 변이적 시퀀스-레벨 소프트 정책 최적화",
+      "abstract": "대형 언어 모델(LLM)에 대한 강화 학습(RL)에서 훈련 안정성은 여전히 중요한 과제입니다. 정책 오래됨, 비동기 훈련, 그리고 훈련과 추론 엔진 간 불일치로 인해 행위 정책이 현재 정책에서 벗어나면서 훈련이 붕괴할 위험이 있습니다. 중요도 샘플링은 이 분포 변이를 교정하는 원칙적인 방법을 제공하지만, 고분산에 시달립니다. 기존의 해결책인 토큰-레벨 클리핑 및 시퀀스-레벨 정규화는 통일된 이론적 기반을 가지고 있지 않습니다. 우리는 변이적 시퀀스-레벨 소프트 정책 최적화(VESPO)를 제안합니다. VESPO는 제안 분포에 대한 변이 감소를 통합하여, 길이 정규화 없이도 시퀀스-레벨 중요도 가중치에 직접 작용하는 닫힌 형태의 재구성 커널을 유도합니다. 수학적 추론 벤치마크 실험 결과, VESPO는 정책 오래됨 비율이 최대 64배이고 완전 비동기 실행 하에서 안정적인 훈련을 유지하며, 밀집 및 전문가 모델에서 일관된 이득을 제공합니다. 소스 코드는 https://github.com/FloyedShen/VESPO 에서 사용할 수 있습니다."
+    },
+    "summary": "1. 강화 학습에서의 대형 언어 모델(LLM) 훈련 안정성은 중요한 이슈이며, 기존 해결책의 한계가 존재하는데, VESPO는 이를 개선하기 위해 변이적 소프트 정책 최적화를 제안합니다.\n2. VESPO는 제안 분포에서 변이 감소를 통합하여 중요도 가중치에 영향을 미치는 재구성 커널을 유도하며, 길이 정규화를 필요로 하지 않는다는 특징이 있습니다.\n3. 실험 결과, VESPO는 정책 오래됨 비율이 높고 비동기 실행 조건에서도 안정적인 훈련을 유지하며, 밀집 모델 및 전문가 모델에서 일관된 성과 향상을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "The Trinity of Consistency as a Defining Principle for General World Models",
+    "abstract": "The construction of World Models capable of learning, simulating, and reasoning about objective physical laws constitutes a foundational challenge in the pursuit of Artificial General Intelligence. Recent advancements represented by video generation models like Sora have demonstrated the potential of data-driven scaling laws to approximate physical dynamics, while the emerging Unified Multimodal Model (UMM) offers a promising architectural paradigm for integrating perception, language, and reasoning. Despite these advances, the field still lacks a principled theoretical framework that defines the essential properties requisite for a General World Model. In this paper, we propose that a World Model must be grounded in the Trinity of Consistency: Modal Consistency as the semantic interface, Spatial Consistency as the geometric basis, and Temporal Consistency as the causal engine. Through this tripartite lens, we systematically review the evolution of multimodal learning, revealing a trajectory from loosely coupled specialized modules toward unified architectures that enable the synergistic emergence of internal world simulators. To complement this conceptual framework, we introduce CoW-Bench, a benchmark centered on multi-frame reasoning and generation scenarios. CoW-Bench evaluates both video generation models and UMMs under a unified evaluation protocol. Our work establishes a principled pathway toward general world models, clarifying both the limitations of current systems and the architectural requirements for future progress.",
+    "authors": [
+      "Jingxuan Wei",
+      "Siyuan Li",
+      "Yuhang Xu",
+      "Zheng Sun",
+      "Junjie Jiang",
+      "Hexuan Jin",
+      "Caijun Jia",
+      "Honghao He",
+      "Xinglong Xu",
+      "Xi bai",
+      "Chang Yu",
+      "Yumou Liu",
+      "Junnan Zhu",
+      "Xuanhe Zhou",
+      "Jintao Chen",
+      "Xiaobin Hu",
+      "Shancheng Pang",
+      "Bihui Yu",
+      "Ran He",
+      "Zhen Lei",
+      "Stan Z. Li",
+      "Conghui He"
+    ],
+    "likes": 184,
+    "published_date": "Feb 26",
+    "url": "https://huggingface.co/papers/2602.23152",
+    "date_collected": "2026-03-01T07:09:00.343709+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "일반 세계 모형을 위한 정의 원리로서 일관성의 삼중성",
+      "abstract": "학습, 시뮬레이션 및 객관적 물리 법칙에 대한 추론이 가능한 세계 모형을 구축하는 것은 인공 일반 지능에 대한 추구에서 기초적인 도전 과제이다. 최근의 진전은 Sora와 같은 비디오 생성 모델에 의해 대표되며, 데이터 기반 스케일링 법칙이 물리적 동역학을 근사하는 잠재력을 보여주었다. 한편 신흥 통합 다중 모달 모델(Unified Multimodal Model, UMM)은 지각, 언어 및 추론을 통합하는 유망한 구조 패러다임을 제공한다. 이러한 발전에도 불구하고, 이 분야는 여전히 일반 세계 모형에 필요한 본질적 속성을 정의하는 원리적 이론적 구조를 부족하다. 본 논문에서는 세계 모형은 '일관성의 삼중성'에 입각해야 한다고 주장한다: 의미적 인터페이스로서의 Modal Consistency, 기하적 기초로서의 Spatial Consistency 및 인과적 엔진으로서의 Temporal Consistency. 이 삼중적 시각을 통해 우리는 다중 모달 학습의 진화를 체계적으로 검토하여, 특화된 모듈부터 통합 아키텍처로 나아가는 궤적을 밝혀내며, 내부 세계 시뮬레이터의 융합적 발생을 가능케 하는 아키텍처 요구 사항을 확인한다. 이 개념적 구조를 보완하기 위해, 우리는 다중 프레임 추론 및 생성 시나리오를 중심으로 하는 CoW-Bench를 소개한다. CoW-Bench는 비디오 생성 모델과 UMM을 통일된 평가 프로토콜 하에 평가한다. 우리의 작업은 일반 세계 모형에 대한 원칙적인 방향으로 나아가며, 현재 시스템의 한계와 미래 발전을 위한 아키텍처 요구를 명확히 한다."
+    },
+    "summary": "1. 인공 일반 지능을 위한 세계 모형의 핵심 기본 원리로 '일관성의 삼중성'을 제안하였다.\n2. 다중 모달 학습의 진화를 통해 특화된 모듈에서 통합 아키텍처로 발전해 내부 세계 시뮬레이터의 융합적 발생을 가능하게 하는 아키텍처 요구를 확인하였다.\n3. CoW-Bench를 소개하여 비디오 생성 모델과 UMM을 다중 프레임 추론 및 생성 시나리오를 통해 평가하는 일원화된 평가 방법을 제시하였다.",
+    "categories": [
+      "Multimodal",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models",
+    "abstract": "As Large Multimodal Models (LMMs) scale up and reinforcement learning (RL) methods mature, LMMs have made notable progress in complex reasoning and decision making. Yet training still relies on static data and fixed recipes, making it difficult to diagnose capability blind spots or provide dynamic, targeted reinforcement. Motivated by findings that test driven error exposure and feedback based correction outperform repetitive practice, we propose Diagnostic-driven Progressive Evolution (DPE), a spiral loop where diagnosis steers data generation and reinforcement, and each iteration re-diagnoses the updated model to drive the next round of targeted improvement. DPE has two key components. First, multiple agents annotate and quality control massive unlabeled multimodal data, using tools such as web search and image editing to produce diverse, realistic samples. Second, DPE attributes failures to specific weaknesses, dynamically adjusts the data mixture, and guides agents to generate weakness focused data for targeted reinforcement. Experiments on Qwen3-VL-8B-Instruct and Qwen2.5-VL-7B-Instruct show stable, continual gains across eleven benchmarks, indicating DPE as a scalable paradigm for continual LMM training under open task distributions. Our code, models, and data are publicly available at https://github.com/hongruijia/DPE.",
+    "authors": [
+      "Hongrui Jia",
+      "Chaoya Jiang",
+      "Shikun Zhang",
+      "Wei Ye"
+    ],
+    "likes": 143,
+    "published_date": "Feb 26",
+    "url": "https://huggingface.co/papers/2602.22859",
+    "date_collected": "2026-03-01T07:09:00.344826+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "맹점에서 이득으로: 대형 다중 모달 모델을 위한 진단 주도 반복 학습",
+      "abstract": "대형 다중 모달 모델(Large Multimodal Models, LMMs)이 확장되고 강화 학습(Reinforcement Learning, RL) 방법이 성숙해짐에 따라, LMMs는 복잡한 추론과 의사 결정에서 주목할 만한 진전을 이루었습니다. 그러나 학습은 여전히 정적 데이터와 고정된 레시피에 의존하여 능력 맹점을 진단하거나 동적이고 특정한 강화를 제공하기가 어렵습니다. 반복적인 실습보다 테스트 주도 오류 노출 및 피드백 기반 수정이 우수함이 밝혀진 것에서 영감을 받아, 진단 주도 진화(Diagnostic-driven Progressive Evolution, DPE)를 제안합니다. 여기에는 진단이 데이터 생성과 강화를 조종하며 각 반복에서 업데이트된 모델을 재진단하여 다음 단계의 특정 개선을 이끌어내는 나선형 루프가 포함됩니다. DPE는 주요 구성 요소로, 여러 에이전트가 대규모 미분류된 다중 모달 데이터를 주석달고 품질을 통제하는 데 사용하여 웹 검색 및 이미지 편집과 같은 도구를 사용하여 다양하고 현실적인 샘플을 생성합니다. 실패를 특정 약점으로 귀속하고 데이터 혼합물을 동적으로 조정하며 약점 중심 데이터를 생성하도록 에이전트를 이끄는 데 실패합니다. Qwen3-VL-8B-Instruct 및 Qwen2.5-VL-7B-Instruct에서의 실험은 11가지 벤치마크에서 안정적인 지속적인 이득을 보여주며, DPE가 오픈 태스크 분포 하에서 계속적인 LMM 학습을 위한 확장 가능한 패러다임임을 나타냅니다. 저희의 코드, 모델, 데이터는 https://github.com/hongruijia/DPE에서 공개적으로 사용 가능합니다."
+    },
+    "summary": "1. 대형 다중 모달 모델(LMMs)의 학습 방법은 진단 주도 진화(DPE)에 의해 개선되었으며, 데이터 생성과 강화가 진단에 의해 조절되는 나선형 루프를 따릅니다.\n2. DPE는 미분류된 다중 모달 데이터를 주석달고 품질을 통제하여 다양하고 현실적인 샘플을 생성하는 여러 에이전트와 실패를 특정 약점에 귀속시키고 약점 중심 데이터를 생성하기 위해 데이터를 동적으로 조정하는 방식으로 구성됩니다.\n3. Qwen3-VL-8B-Instruct와 Qwen2.5-VL-7B-Instruct에서의 실험 결과는 DPE가 여러 벤치마크에서 안정적이고 계속적인 성과 향상을 제공하며, 오픈 태스크 분포 하에서 LMM 학습에 확장 가능한 패러다임으로 작용함을 시사합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios",
+    "abstract": "Route-planning agents powered by large language models (LLMs) have emerged as a promising paradigm for supporting everyday human mobility through natural language interaction and tool-mediated decision making. However, systematic evaluation in real-world mobility settings is hindered by diverse routing demands, non-deterministic mapping services, and limited reproducibility. In this study, we introduce MobilityBench, a scalable benchmark for evaluating LLM-based route-planning agents in real-world mobility scenarios. MobilityBench is constructed from large-scale, anonymized real user queries collected from Amap and covers a broad spectrum of route-planning intents across multiple cities worldwide. To enable reproducible, end-to-end evaluation, we design a deterministic API-replay sandbox that eliminates environmental variance from live services. We further propose a multi-dimensional evaluation protocol centered on outcome validity, complemented by assessments of instruction understanding, planning, tool use, and efficiency. Using MobilityBench, we evaluate multiple LLM-based route-planning agents across diverse real-world mobility scenarios and provide an in-depth analysis of their behaviors and performance. Our findings reveal that current models perform competently on Basic information retrieval and Route Planning tasks, yet struggle considerably with Preference-Constrained Route Planning, underscoring significant room for improvement in personalized mobility applications. We publicly release the benchmark data, evaluation toolkit, and documentation at https://github.com/AMAP-ML/MobilityBench .",
+    "authors": [
+      "Zhiheng Song",
+      "Jingshuai Zhang",
+      "Chuan Qin",
+      "Chao Wang",
+      "Chao Chen",
+      "Longfei Xu",
+      "Kaikui Liu",
+      "Xiangxiang Chu",
+      "Hengshu Zhu"
+    ],
+    "likes": 94,
+    "published_date": "Feb 26",
+    "url": "https://huggingface.co/papers/2602.22638",
+    "date_collected": "2026-03-01T07:09:00.346187+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "실제 세계 이동 시나리오에서 경로 계획 에이전트 평가를 위한 벤치마크인 MobilityBench",
+      "abstract": "대형 언어 모델 (Large Language Models, LLMs)을 이용한 경로 계획 에이전트는 자연어 상호작용과 도구 중심 의사 결정을 통해 일상적인 인간 이동을 지원하는 유망한 패러다임으로 떠오르고 있습니다. 그러나 실제 세계 이동 환경에서의 체계적인 평가는 다양한 경로 요구, 결정론적이 아닌 매핑 서비스 및 제한된 재현성으로 인해 어려움을 겪고 있습니다. 본 연구에서 우리는 실제 세계 이동 시나리오에서 LLM 기반의 경로 계획 에이전트를 평가하기 위한 확장 가능한 벤치마크인 MobilityBench를 소개합니다."
+    },
+    "summary": "1. MobilityBench는 실제 사용자 쿼리를 기반으로 구축되었으며, 다양한 도시의 경로 계획 의도를 다루는 대규모 익명화된 데이터를 제공합니다.\n2. 벤치마크는 라이브 서비스의 환경적 변동을 제거하는 결정론적 API-재생 샌드박스를 통해 재현 가능한 종단 간 평가를 가능케 합니다.\n3. MobilityBench를 활용하여 다양한 실제 이동 시나리오에서 다수의 LLM 기반 경로 계획 에이전트를 평가하고, 그들의 행동과 성능에 대해 심층적인 분석을 제공하였습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "On Data Engineering for Scaling LLM Terminal Capabilities",
+    "abstract": "Despite rapid recent progress in the terminal capabilities of large language models, the training data strategies behind state-of-the-art terminal agents remain largely undisclosed. We address this gap through a systematic study of data engineering practices for terminal agents, making two key contributions: (1) Terminal-Task-Gen, a lightweight synthetic task generation pipeline that supports seed-based and skill-based task construction, and (2) a comprehensive analysis of data and training strategies, including filtering, curriculum learning, long context training, and scaling behavior. Our pipeline yields Terminal-Corpus, a large-scale open-source dataset for terminal tasks. Using this dataset, we train Nemotron-Terminal, a family of models initialized from Qwen3(8B, 14B, 32B) that achieve substantial gains on Terminal-Bench 2.0: Nemotron-Terminal-8B improves from 2.5% to 13.0% Nemotron-Terminal-14B improves from 4.0% to 20.2%, and Nemotron-Terminal-32B improves from 3.4% to 27.4%, matching the performance of significantly larger models. To accelerate research in this domain, we open-source our model checkpoints and most of our synthetic datasets at https://huggingface.co/collections/nvidia/nemotron-terminal.",
+    "authors": [
+      "Renjie Pi",
+      "Grace Lam",
+      "Mohammad Shoeybi",
+      "Pooya Jannaty",
+      "Bryan Catanzaro",
+      "Wei Ping"
+    ],
+    "likes": 88,
+    "published_date": "Feb 24",
+    "url": "https://huggingface.co/papers/2602.21193",
+    "date_collected": "2026-03-01T07:09:00.347408+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "큰 언어 모델 단말 능력의 확장을 위한 데이터 공학에 대해",
+      "abstract": "최근 대규모 언어 모델의 단말 능력이 급속히 발전했지만, 최첨단 단말 에이전트의 훈련 데이터 전략은 크게 공개되지 않았다. 본 연구에서는 단말 에이전트에 대한 데이터 공학 방법론을 체계적으로 조사하여 (1) 씨앗 기반 및 기술 기반 작업을 지원하는 가벼운 합성 작업 생성 파이프라인인 터미널-태스크-젠과 (2) 필터링, 커리큘럼 학습, 긴 문맥 훈련, 확장 행동을 포함한 데이터 및 훈련 전략의 철저한 분석을 제시한다. 저희 파이프라인은 단말 작업을 위한 대규모 오픈 소스 데이터셋인 터미널-코퍼스를 생성한다. 이 데이터셋을 활용하여 Qwen3(8B, 14B, 32B)에서 초기화된 모델군인 네모트론-터미널을 훈련시켜, 터미널-벤치 2.0에서 상당한 성과 향상을 이룩했다: 네모트론-터미널-8B는 2.5%에서 13.0%로 향상되었고, 네모트론-터미널-14B는 4.0%에서 20.2%로, 네모트론-터미널-32B는 3.4%에서 27.4%로 향상되어 크게 더 큰 모델들과 성능이 일치했다. 이 분야의 연구 가속화를 위해 모델 체크포인트와 대부분의 합성 데이터셋을 오픈소스로 https://huggingface.co/collections/nvidia/nemotron-terminal 에 공개했다."
+    },
+    "summary": "1. 최근 대규모 언어 모델의 터미널 능력이 발전했지만 그 훈련 데이터 전략에 대한 연구가 부족함.\n2. 터미널 에이전트를 위한 가벼운 합성 작업 생성 파이프라인인 터미널-태스크-젠(Korean)과 데이터 및 훈련 전략 분석으로 상당한 성과 향상 확인.\n3. 터미널 작업을 위한 대규모 오픈 소스 데이터셋 터미널-코퍼스(Korean) 생성하여 모델 군인 네모트론-터미널(Korean)의 훈련을 통해 성능 향상을 이룸.",
+    "categories": [
+      "LLM",
+      "Data Engineering",
+      "Other"
+    ]
+  },
+  {
+    "title": "SkillOrchestra: Learning to Route Agents via Skill Transfer",
+    "abstract": "Compound AI systems promise capabilities beyond those of individual models, yet their success depends critically on effective orchestration. Existing routing approaches face two limitations: (1) input-level routers make coarse query-level decisions that ignore evolving task requirements; (2) RL-trained orchestrators are expensive to adapt and often suffer from routing collapse, repeatedly invoking one strong but costly option in multi-turn scenarios. We introduce SkillOrchestra, a framework for skill-aware orchestration. Instead of directly learning a routing policy end-to-end, SkillOrchestra learns fine-grained skills from execution experience and models agent-specific competence and cost under those skills. At deployment, the orchestrator infers the skill demands of the current interaction and selects agents that best satisfy them under an explicit performance-cost trade-off. Extensive experiments across ten benchmarks demonstrate that SkillOrchestra outperforms SoTA RL-based orchestrators by up to 22.5% with 700x and 300x learning cost reduction compared to Router-R1 and ToolOrchestra, respectively. These results show that explicit skill modeling enables scalable, interpretable, and sample-efficient orchestration, offering a principled alternative to data-intensive RL-based approaches. The code is available at: https://github.com/jiayuww/SkillOrchestra.",
+    "authors": [
+      "Jiayu Wang",
+      "Yifei Ming",
+      "Zixuan Ke",
+      "Shafiq Joty",
+      "Aws Albarghouthi",
+      "Frederic Sala"
+    ],
+    "likes": 54,
+    "published_date": "Feb 23",
+    "url": "https://huggingface.co/papers/2602.19672",
+    "date_collected": "2026-03-01T07:09:00.348617+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "SkillOrchestra: 스킬 전이를 통한 에이전트 경로 지정 학습",
+      "abstract": "복합 AI 시스템은 개별 모델보다 더 나은 능력을 약속하지만 그들의 성공은 효과적인 오케스트레이션에 중대하게 의존합니다. 기존의 경로 지정 방법은 두 가지 제한을 가지고 있습니다: (1) 입력 수준의 라우터는 진화하는 작업 요구 사항을 무시하고 미세한 쿼리 수준의 결정을 내리며; (2) 강화 학습으로 훈련된 오케스트레이터들은 적응하기 어렵고 종종 라우팅 붕괴에 시달리며 다중 턴 시나리오에서 강하고 비용이 많이 드는 하나의 옵션을 반복하여 호출합니다. 우리는 SkillOrchestra를 소개합니다. SkillOrchestra는 스킬 인식 오케스트레이션을 위한 프레임워크입니다. 라우팅 정책을 처음부터 끝까지 직접 학습하는 대신, SkillOrchestra는 실행 경험으로부터 미세한 스킬을 배우고 해당 스킬 하에 에이전트별 능력과 비용을 모델링합니다. 배치 시, 오케스트레이터는 현재 상호작용의 스킬 요구를 유추하고 명시적인 성능-비용 교환 하에 해당 요구를 가장 잘 충족하는 에이전트들을 선택합니다. 열 개의 벤치마크를 통한 광범위한 실험 결과는 SkillOrchestra가 Router-R1 및 ToolOrchestra에 비해 최대 22.5%의 우수한 성과를 보이며, 학습 비용은 각각 700배 및 300배 감소합니다. 이러한 결과는 명시적인 스킬 모델링이 확장 가능하며 해석 가능하며 효율적인 오케스트레이션을 가능하게 하며, 데이터 집중적인 강화 학습 기반 접근에 대한 원칙적 대안을 제공한다는 것을 보여줍니다. 코드는 다음에서 확인할 수 있습니다: https://github.com/jiayuww/SkillOrchestra."
+    },
+    "summary": "1. 기존 경로 지정 방법의 한계: 입력 수준의 라우터는 작업 요구 사항을 무시하고 강화 학습으로 훈련된 오케스트레이터는 적응하기 어렵고 자주 라우팅 붕괴를 겪는다.\n2. SkillOrchestra의 접근 방식: 미세한 스킬을 학습하고 명시적인 성능-비용 교환 하에 스킬 요구를 충족하는 에이전트를 선택함으로써 확장 가능하고 효율적인 오케스트레이션을 제공한다.\n3. 실험 결과: SkillOrchestra는 Router-R1 및 ToolOrchestra에 비해 최대 22.5% 우수한 성과를 보이며, 학습 비용은 대폭 감소한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation",
+    "abstract": "Modeling long sequences of user behaviors has emerged as a critical frontier in generative recommendation. However, existing solutions face a dilemma: linear attention mechanisms achieve efficiency at the cost of retrieval precision due to limited state capacity, while softmax attention suffers from prohibitive computational overhead. To address this challenge, we propose HyTRec, a model featuring a Hybrid Attention architecture that explicitly decouples long-term stable preferences from short-term intent spikes. By assigning massive historical sequences to a linear attention branch and reserving a specialized softmax attention branch for recent interactions, our approach restores precise retrieval capabilities within industrial-scale contexts involving ten thousand interactions. To mitigate the lag in capturing rapid interest drifts within the linear layers, we furthermore design Temporal-Aware Delta Network (TADN) to dynamically upweight fresh behavioral signals while effectively suppressing historical noise. Empirical results on industrial-scale datasets confirm the superiority that our model maintains linear inference speed and outperforms strong baselines, notably delivering over 8% improvement in Hit Rate for users with ultra-long sequences with great efficiency.",
+    "authors": [
+      "Lei Xin",
+      "Yuhao Zheng",
+      "Ke Cheng",
+      "Changjiang Jiang",
+      "Zifan Zhang",
+      "Fanhu Zeng"
+    ],
+    "likes": 53,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18283",
+    "date_collected": "2026-03-01T07:09:00.349840+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "하이브리드 시간 인지 주의 아키텍처(HyTRec)를 이용한 장기 행동 순차 추천",
+      "abstract": "사용자 행위의 장기적인 시퀀스를 모델링하는 것은 생성적 추천의 중요한 전선으로 떠올랐습니다. 그러나 기존 솔루션들은 한 가지 딜레마를 직면하고 있습니다: 선형 주의 메커니즘은 상태 용량이 제한되어 정확한 검색 능력을 손해 보며, 소프트맥스 주의는 계산 오버헤드로 인해 고비용을 초래합니다. 이러한 도전에 대처하기 위해, 우리는 HyTRec를 제안합니다. 이 모델은 장기적인 안정된 선호도와 단기적인 의도 변화를 명확하게 분리하는 하이브리드 주의 아키텍처를 특징으로 합니다. 역사적인 대규모 시퀀스를 선형 주의 분기에 할당하고 최근 상호작용을 위해 전용된 소프트맥스 주의 분기를 예약함으로써, 우리의 접근 방식은 수만 건의 상호작용이 포함된 산업 규모 환경에서 정확한 검색 능력을 복원합니다. 선형 레이어에서 신속한 관심 변화를 포착하는 지연을 완화하기 위해 우리는 Temporal-Aware Delta Network (TADN)를 설계하여 신선한 행동 신호를 동적으로 강조하고 효과적으로 역사적인 잡음을 억제합니다. 산업 규모 데이터셋에서의 경험적 결과는 우리 모델이 선형 추론 속도를 유지하며 강력한 기준 모델을 능가한다는 우수성을 확인하는데, 특히 초장기 시퀀스를 가진 사용자들에게 8% 이상의 향상된 Hit Rate을 효율적으로 제공하는 것을 참조합니다."
+    },
+    "summary": "1. 장기 행동 시퀀스 모델링은 생성적 추천에서 중요한 도전 과제로 인식됨.\n2. HyTRec는 선형 및 소프트맥스 주의를 결합하여 정확한 추천 능력을 복원하는 하이브리드 주의 아키텍처를 제안함.\n3. 실험적 결과는 모델이 선형 추론 속도를 유지하고 효율적으로 강력한 기준 모델을 능가한다는 것을 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "VLANeXt: Recipes for Building Strong VLA Models",
+    "abstract": "Following the rise of large foundation models, Vision-Language-Action models (VLAs) emerged, leveraging strong visual and language understanding for general-purpose policy learning. Yet, the current VLA landscape remains fragmented and exploratory. Although many groups have proposed their own VLA models, inconsistencies in training protocols and evaluation settings make it difficult to identify which design choices truly matter. To bring structure to this evolving space, we reexamine the VLA design space under a unified framework and evaluation setup. Starting from a simple VLA baseline similar to RT-2 and OpenVLA, we systematically dissect design choices along three dimensions: foundational components, perception essentials, and action modelling perspectives. From this study, we distill 12 key findings that together form a practical recipe for building strong VLA models. The outcome of this exploration is a simple yet effective model, VLANeXt. VLANeXt outperforms prior state-of-the-art methods on the LIBERO and LIBERO-plus benchmarks and demonstrates strong generalization in real-world experiments. We will release a unified, easy-to-use codebase that serves as a common platform for the community to reproduce our findings, explore the design space, and build new VLA variants on top of a shared foundation.",
+    "authors": [
+      "Xiao-Ming Wu",
+      "Bin Fan",
+      "Kang Liao",
+      "Jian-Jian Jiang",
+      "Runze Yang",
+      "Yihang Luo",
+      "Zhonghua Wu",
+      "Wei-Shi Zheng",
+      "Chen Change Loy"
+    ],
+    "likes": 52,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18532",
+    "date_collected": "2026-03-01T07:09:00.351190+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "VLANeXt: 강력한 VLA 모델 구축을 위한 레시피",
+      "abstract": "대형 기초 모델의 부상을 따라 Vision-Language-Action 모델(VLA)이 나왔는데, 이는 강력한 시각과 언어 이해를 활용하여 일반적인 정책 학습을 위한 것이다. 그러나 현재의 VLA 분야는 분열되어 있고 탐색적이다. 많은 그룹들이 각자의 VLA 모델을 제안했지만, 훈련 프로토콜과 평가 설정의 불일치로 어떤 디자인 선택이 실제로 중요한지 식별하기 어렵다. 이 변화하는 공간에 구조를 부여하기 위해 우리는 하나의 통합된 프레임워크와 평가 설정 아래에서 VLA 디자인 공간을 재검토한다. RT-2 및 OpenVLA와 유사한 간단한 VLA 기준에서 시작하여, 우리는 기반 구성 요소, 인식 필수 요소, 그리고 행동 모델링 관점에 따라 체계적으로 디자인 선택을 분석한다. 이 연구로부터 강력한 VLA 모델을 구축하는 실용적인 레시피를 이루는 12가지 주요 발견을 추출한다. 이 탐구의 결과는 VLANeXt라는 간단하고 효과적인 모델이다. VLANeXt는 LIBERO 및 LIBERO-plus 벤치마크에서 이전 최첨단 방법을 능가하며, 실제 세계 실험에서 강력한 일반화를 보여준다. 우리는 우리의 발견을 재현하고 디자인 공간을 탐색하며 공통 기반 위에 새로운 VLA 변형을 구축할 수 있는 통합 및 사용하기 쉬운 코드베이스를 공개할 것이다."
+    },
+    "summary": "1. VLA 모델의 다양한 디자인 선택을 분석하여 강력한 모델을 구축하기 위한 실용적인 레시피 도출.\n2. VLANeXt 모델이 LIBERO와 LIBERO-plus 벤치마크에서 이전 최첨단 모델들을 능가하며, 실제 세계 실험에서 강력한 일반화를 보여줌.\n3. 연구 결과를 재현하고 디자인 공간을 탐색하며 새로운 VLA 모델을 만들기 위한 공통 플랫폼 코드베이스를 공개할 계획.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  }
+]

@@ -1,0 +1,161 @@
+=== Paper Collection Started at Sat Sep  6 22:06:42 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W37
+URL: https://huggingface.co/papers/week/2025-W37
+Found 10 papers in weekly view
+Fetching likes for: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Fetching likes for: Drivel-ology: Challenging LLMs with Interpreting Nonsense with Depth
+Fetching likes for: The Landscape of Agentic Reinforcement Learning for LLMs: A Survey
+Fetching likes for: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Fetching likes for: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Fetching likes for: UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning
+Fetching likes for: SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning
+Fetching likes for: LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
+Fetching likes for: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Fetching likes for: From Editor to Dense Geometry Estimator
+Selected top 10 papers by likes:
+1. A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code (196 likes)
+2. Drivel-ology: Challenging LLMs with Interpreting Nonsense with Depth (160 likes)
+3. The Landscape of Agentic Reinforcement Learning for LLMs: A Survey (145 likes)
+4. A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers (129 likes)
+5. R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning (103 likes)
+6. UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning (102 likes)
+7. SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning (76 likes)
+8. LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model (74 likes)
+9. EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control (72 likes)
+10. From Editor to Dense Geometry Estimator (70 likes)
+Found abstract: The increasing adoption of large language models (LLMs) in software
+engineering necessitates rigorou...
+Processed paper: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Found abstract: We introduce Drivelology, a unique linguistic phenomenon characterised as
+"nonsense with depth", utt...
+Processed paper: Drivel-ology: Challenging LLMs with Interpreting Nonsense with Depth
+Found abstract: The emergence of agentic reinforcement learning (Agentic RL) marks a paradigm
+shift from conventiona...
+Processed paper: The Landscape of Agentic Reinforcement Learning for LLMs: A Survey
+Found abstract: Scientific Large Language Models (Sci-LLMs) are transforming how knowledge is
+represented, integrate...
+Processed paper: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Found abstract: Multimodal Large Language Models (MLLMs) equipped with step-by-step thinking
+capabilities have demon...
+Processed paper: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Found abstract: The development of autonomous agents for graphical user interfaces (GUIs)
+presents major challenges ...
+Processed paper: UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning
+Found abstract: Large Language Models (LLMs) can significantly improve their reasoning
+capabilities by interacting w...
+Processed paper: SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning
+Found abstract: In vision-language modeling, critic models are typically trained to evaluate
+outputs -- assigning sc...
+Processed paper: LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
+Found abstract: The human ability to seamlessly perform multimodal reasoning and physical
+interaction in the open wo...
+Processed paper: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Found abstract: Leveraging visual priors from pre-trained text-to-image (T2I) generative
+models has shown success in...
+Processed paper: From Editor to Dense Geometry Estimator
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Paper already exists, checking if translation is complete...
+Update likes: 196  ->  131
+Update date_collected: 2025-09-07T07:06:51.902275+09:00  ->  2025-09-06T07:07:10.021896+09:00
+
+Processing paper 2/10
+Title: Drivel-ology: Challenging LLMs with Interpreting Nonsense with Depth
+Paper already exists, checking if translation is complete...
+Update likes: 160  ->  93
+Update date_collected: 2025-09-07T07:06:51.903518+09:00  ->  2025-09-06T07:07:10.028134+09:00
+
+Processing paper 3/10
+Title: The Landscape of Agentic Reinforcement Learning for LLMs: A Survey
+Paper already exists, checking if translation is complete...
+Update likes: 145  ->  138
+Update date_collected: 2025-09-07T07:06:51.905387+09:00  ->  2025-09-06T07:07:10.020002+09:00
+
+Processing paper 4/10
+Title: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Paper already exists, checking if translation is complete...
+Update likes: 129  ->  126
+Update date_collected: 2025-09-07T07:06:51.907262+09:00  ->  2025-09-06T07:07:10.023804+09:00
+
+Processing paper 5/10
+Title: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Paper already exists, checking if translation is complete...
+Update likes: 103  ->  102
+Update date_collected: 2025-09-07T07:06:51.908417+09:00  ->  2025-09-06T07:07:10.025012+09:00
+
+Processing paper 6/10
+Title: UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  97
+Update date_collected: 2025-09-07T07:06:51.910271+09:00  ->  2025-09-06T07:07:10.026914+09:00
+
+Processing paper 7/10
+Title: SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 76  ->  76
+Update date_collected: 2025-09-07T07:06:51.911458+09:00  ->  2025-09-06T07:07:10.029346+09:00
+
+Processing paper 8/10
+Title: LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  72
+Update date_collected: 2025-09-07T07:06:51.912676+09:00  ->  2025-09-06T07:07:10.030559+09:00
+
+Processing paper 9/10
+Title: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  72
+Update date_collected: 2025-09-07T07:06:51.914233+09:00  ->  2025-09-06T07:07:10.032134+09:00
+
+Processing paper 10/10
+Title: From Editor to Dense Geometry Estimator
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W37.json...
+
+Updating Notion database...
+Updating paper: A.S.E: AI 생성 코드 보안 평가를 위한 저장소 수준 벤치마크 (likes: 131 -> 196)
+Updating paper: 드리블러지: LLMs를 도전하는 알수 없는 것을 심도 있게 해석하기 (likes: 93 -> 160)
+Updating paper: LLM을 위한 에이전틱 강화학습의 풍경: 조사 (likes: 138 -> 145)
+Updating paper: 과학적 대규모 언어 모델 조사: 데이터 기초부터 에이전트 전선까지 (likes: 126 -> 129)
+Updating paper: MLLM에서 양상 결합 앤닐링과 강화 학습을 통해 일반용 자동 사고 능력을 장려하는 R-4B (likes: 102 -> 103)
+Updating paper: UI-TARS-2 기술 보고서: 다중 턴 강화학습을 통한 GUI 에이전트 발전 (likes: 97 -> 102)
+Paper already exists with same likes count: 단순TIR: 다중 턴 툴 통합 추론을 위한 엔드투엔드 강화 학습
+Updating paper: LLaVA-Critic-R1: 당신의 평가 모델은 비밀로 강력한 정책 모델이었습니다 (likes: 72 -> 74)
+Paper already exists with same likes count: EmbodiedOneVision: 일반 로봇 제어를 위한 간섭된 비전-텍스트-행동 사전학습
+Creating new paper: 에디터로부터 밀도 기하학 추정기까지
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Sep  6 22:08:10 UTC 2025 ===
+

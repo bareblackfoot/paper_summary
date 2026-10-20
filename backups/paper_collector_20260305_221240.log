@@ -1,0 +1,123 @@
+=== Paper Collection Started at Wed Mar  4 22:13:05 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W10
+URL: https://huggingface.co/papers/week/2026-W10
+Found 10 papers in weekly view
+Fetching likes for: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Fetching likes for: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Fetching likes for: Utonia: Toward One Encoder for All Point Clouds
+Fetching likes for: dLLM: Simple Diffusion Language Modeling
+Fetching likes for: UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?
+Fetching likes for: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Fetching likes for: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale
+Fetching likes for: RubricBench: Aligning Model-Generated Rubrics with Human Standards
+Fetching likes for: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Fetching likes for: Beyond Language Modeling: An Exploration of Multimodal Pretraining
+Selected top 10 papers by likes:
+1. From Scale to Speed: Adaptive Test-Time Scaling for Image Editing (125 likes)
+2. OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens (121 likes)
+3. Utonia: Toward One Encoder for All Point Clouds (112 likes)
+4. dLLM: Simple Diffusion Language Modeling (107 likes)
+5. UniG2U-Bench: Do Unified Models Advance Multimodal Understanding? (72 likes)
+6. CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation (69 likes)
+7. SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale (54 likes)
+8. RubricBench: Aligning Model-Generated Rubrics with Human Standards (47 likes)
+9. Enhancing Spatial Understanding in Image Generation via Reward Modeling (46 likes)
+10. Beyond Language Modeling: An Exploration of Multimodal Pretraining (44 likes)
+Found abstract: Image Chain-of-Thought (Image-CoT) is a test-time scaling paradigm that improves image generation by...
+Processed paper: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Found abstract: OmniLottie is a versatile framework that generates high quality vector animations from multi-modal i...
+Processed paper: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Found abstract: We dream of a future where point clouds from all domains can come together to shape a single model t...
+Processed paper: Utonia: Toward One Encoder for All Point Clouds
+Found abstract: Although diffusion language models (DLMs) are evolving quickly, many recent models converge on a set...
+Processed paper: dLLM: Simple Diffusion Language Modeling
+Found abstract: Unified multimodal models have recently demonstrated strong generative capabilities, yet whether and...
+Processed paper: UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?
+Found abstract: GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task...
+Processed paper: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Found abstract: Software engineering agents (SWE) are improving rapidly, with recent gains largely driven by reinfor...
+Processed paper: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale
+Found abstract: As Large Language Model (LLM) alignment evolves from simple completions to complex, highly sophistic...
+Processed paper: RubricBench: Aligning Model-Generated Rubrics with Human Standards
+Found abstract: Recent progress in text-to-image generation has greatly advanced visual fidelity and creativity, but...
+Processed paper: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Found abstract: The visual world offers a critical axis for advancing foundation models beyond language. Despite gro...
+Processed paper: Beyond Language Modeling: An Exploration of Multimodal Pretraining
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Paper already exists, checking if translation is complete...
+Update likes: 125  ->  112
+Update date_collected: 2026-03-05T07:13:14.066921+09:00  ->  2026-03-04T07:12:12.212902+09:00
+
+Processing paper 2/10
+Title: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Paper already exists, checking if translation is complete...
+Update likes: 121  ->  105
+Update date_collected: 2026-03-05T07:13:14.068135+09:00  ->  2026-03-04T07:12:12.214270+09:00
+
+Processing paper 3/10
+Title: Utonia: Toward One Encoder for All Point Clouds
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: dLLM: Simple Diffusion Language Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 107  ->  102
+Update date_collected: 2026-03-05T07:13:14.070375+09:00  ->  2026-03-04T07:12:12.215433+09:00
+
+Processing paper 5/10
+Title: UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  58
+Update date_collected: 2026-03-05T07:13:14.073245+09:00  ->  2026-03-04T07:12:12.217111+09:00
+
+Processing paper 7/10
+Title: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  43
+Update date_collected: 2026-03-05T07:13:14.074270+09:00  ->  2026-03-04T07:12:12.219600+09:00
+
+Processing paper 8/10
+Title: RubricBench: Aligning Model-Generated Rubrics with Human Standards
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  42
+Update date_collected: 2026-03-05T07:13:14.075576+09:00  ->  2026-03-04T07:12:12.221044+09:00
+
+Processing paper 9/10
+Title: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  44
+Update date_collected: 2026-03-05T07:13:14.076756+09:00  ->  2026-03-04T07:12:12.218437+09:00
+
+Processing paper 10/10
+Title: Beyond Language Modeling: An Exploration of Multimodal Pretraining
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W10.json...
+
+Updating Notion database...
+Updating paper: 스케일에서 속도로: 이미지 편집을 위한 적응형 테스트 타임 스케일링 (likes: 112 -> 125)
+Updating paper: OmniLottie: 매개변수화된 Lottie 토큰을 통해 벡터 애니메이션 생성하기 (likes: 105 -> 121)
+Creating new paper: Utonia: 모든 포인트 클라우드를 위한 하나의 인코더로
+Updating paper: dLLM: 간단한 확산 언어 모델링 (likes: 102 -> 107)
+Creating new paper: 통합 모델이 다중모달 이해를 진전시키는가? - UniG2U-Bench
+Updating paper: CUDA 에이전트: 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습 (likes: 58 -> 69)
+Updating paper: SWE-rebench V2: 규모에 맞게 구축된 언어에 중립적인 SWE 작업 모음 (likes: 43 -> 54)
+Updating paper: RubricBench: 모델 생성 루브릭을 인간 기준과 일치시키다 (likes: 42 -> 47)
+Updating paper: 이미지 생성에서 보상 모델링을 통한 공간 이해 강화 (likes: 44 -> 46)
+Creating new paper: 언어 모델링을 넘어서: 다중 모달 사전훈련의 탐구
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Mar  4 22:15:45 UTC 2026 ===
+

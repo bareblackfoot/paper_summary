@@ -1,0 +1,314 @@
+[
+  {
+    "title": "A Survey of Context Engineering for Large Language Models",
+    "abstract": "The performance of Large Language Models (LLMs) is fundamentally determined\nby the contextual information provided during inference. This survey introduces\nContext Engineering, a formal discipline that transcends simple prompt design\nto encompass the systematic optimization of information payloads for LLMs. We\npresent a comprehensive taxonomy decomposing Context Engineering into its\nfoundational components and the sophisticated implementations that integrate\nthem into intelligent systems. We first examine the foundational components:\ncontext retrieval and generation, context processing and context management. We\nthen explore how these components are architecturally integrated to create\nsophisticated system implementations: retrieval-augmented generation (RAG),\nmemory systems and tool-integrated reasoning, and multi-agent systems. Through\nthis systematic analysis of over 1300 research papers, our survey not only\nestablishes a technical roadmap for the field but also reveals a critical\nresearch gap: a fundamental asymmetry exists between model capabilities. While\ncurrent models, augmented by advanced context engineering, demonstrate\nremarkable proficiency in understanding complex contexts, they exhibit\npronounced limitations in generating equally sophisticated, long-form outputs.\nAddressing this gap is a defining priority for future research. Ultimately,\nthis survey provides a unified framework for both researchers and engineers\nadvancing context-aware AI.",
+    "authors": [
+      "Lingrui Mei",
+      "Jiayu Yao",
+      "Yuyao Ge",
+      "Yiwei Wang",
+      "Baolong Bi",
+      "Yujun Cai",
+      "Jiazhi Liu",
+      "Mingyu Li",
+      "Zhong-Zhi Li",
+      "Duzhen Zhang",
+      "Chenlin Zhou",
+      "Jiayi Mao",
+      "Tianze Xia",
+      "Jiafeng Guo",
+      "Shenghua Liu"
+    ],
+    "likes": 89,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2507.13334",
+    "date_collected": "2025-07-19T07:08:05.851177+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "대규모 언어 모델을 위한 맥락 엔지니어링 조사",
+      "abstract": "대규모 언어 모델의 성능은 추론 과정에서 제공된 맥락 정보에 근본적으로 의존합니다. 이 조사는 단순 프롬프트 디자인을 뛰어넘어 대규모 언어 모델을 위한 정보 페이로드를 체계적으로 최적화하는 '맥락 엔지니어링'을 소개합니다. 1300편 이상의 연구 논문을 체계적으로 분석하여 분야에 대한 기술적 로드맵을 수립하고, 모델 능력 간의 근본적인 불균형을 밝히며 향후 연구에 대한 우선 순위를 제시합니다."
+    },
+    "summary": "1. 맥락 엔지니어링은 대규모 언어 모델의 성능을 결정짓는 맥락 정보를 체계적으로 최적화하는 핵심 요소이다.\n2. 연구는 맥락 검색과 생성, 맥락 처리, 맥락 관리 등의 기본 구성 요소와 이를 통합한 시스템 구현 방법을 탐구한다.\n3. 현재 모델은 복잡한 맥락을 이해하는 능력에 있어 뛰어나지만, 고급 맥락 엔지니어링에도 불구하고 복잡하고 긴 형식의 결과물을 생성하는 데 제한이 있다는 연구 결여를 지적하며 이를 해결하는 것이 미래 연구의 중요 과제라고 강조한다.",
+    "categories": [
+      "LLM",
+      "AI",
+      "기계학습"
+    ]
+  },
+  {
+    "title": "Test-Time Scaling with Reflective Generative Model",
+    "abstract": "We introduce our first reflective generative model MetaStone-S1, which\nobtains OpenAI o3's performance via the self-supervised process reward model\n(SPRM). Through sharing the backbone network and using task-specific heads for\nnext token prediction and process scoring respectively, SPRM successfully\nintegrates the policy model and process reward model(PRM) into a unified\ninterface without extra process annotation, reducing over 99% PRM parameters\nfor efficient reasoning. Equipped with SPRM, MetaStone-S1 is naturally suitable\nfor test time scaling (TTS), and we provide three reasoning effort modes (low,\nmedium, and high), based on the controllable thinking length. Moreover, we\nempirically establish a scaling law that reveals the relationship between total\nthinking computation and TTS performance. Experiments demonstrate that our\nMetaStone-S1 achieves comparable performance to OpenAI-o3-mini's series with\nonly 32B parameter size. To support the research community, we have\nopen-sourced MetaStone-S1 at https://github.com/MetaStone-AI/MetaStone-S1.",
+    "authors": [
+      "Zixiao Wang",
+      "Yuxin Wang",
+      "Xiaorui Wang",
+      "Mengting Xing",
+      "Jie Gao",
+      "Jianjun Xu",
+      "Guangcan Liu",
+      "Chenhui Jin",
+      "Zhuo Wang",
+      "Shengzhuo Zhang",
+      "Hongtao Xie"
+    ],
+    "likes": 85,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01951",
+    "date_collected": "2025-07-19T07:08:05.852600+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "반사적 생성 모델을 활용한 테스트 시간 스케일링",
+      "abstract": "본 연구에서는 첫 번째 반사적 생성 모델인 MetaStone-S1을 소개합니다. OpenAI o3의 성능을 달성하기 위해 자가 지도 학습 과정 보상 모델(SPRM)을 활용합니다. SPRM은 공통된 백본 네트워크를 공유하고 다음 토큰 예측 및 과정 점수화를 위해 작업별 머리를 사용하여 정책 모델과 과정 보상 모델(PRM)을 추가적인 과정 주석 없이 통합 인터페이스로 성공적으로 통합시킵니다. 효율적 추론을 위해 PRM 파라미터를 99% 이상 줄입니다. SPRM을 장착한 MetaStone-S1은 테스트 시간 스케일링(TTS)에 적합하며, 제어 가능한 사고 길이를 기반으로 낮은, 중간, 높은 세 가지 추론 노력 모드를 제공합니다. 또한, 총 사고 계산과 TTS 성능 간 관계를 밝히는 스케일링 법칙을 경험적으로 입증합니다. 실험 결과 MetaStone-S1은 32B 파라미터 크기로 OpenAI-o3-mini 시리즈와 유사한 성능을 달성합니다. 연구 공동체를 지원하기 위해 MetaStone-S1은 https://github.com/MetaStone-AI/MetaStone-S1에서 오픈 소스로 제공됩니다."
+    },
+    "summary": "1. MetaStone-S1은 자가 지도 학습 과정 보상 모델을 통해 효율적인 추론을 위한 공통 인터페이스를 제공하며, 테스트 시간 스케일링에 적합한 세 가지 추론 노력 모드를 제공합니다.\n2. 연구에서는 총 사고 계산과 TTS 성능 사이의 관계를 밝히는 스케일링 법칙을 경험적으로 입증했으며, MetaStone-S1이 작은 파라미터 크기로 비교 가능한 성능을 보여줍니다.\n3. MetaStone-S1은 연구 공동체에 오픈 소스로 제공되어 다양한 활용 가능성을 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Reasoning or Memorization? Unreliable Results of Reinforcement Learning\n  Due to Data Contamination",
+    "abstract": "The reasoning capabilities of large language models (LLMs) have been a\nlongstanding focus of research. Recent works have further enhanced these\ncapabilities using reinforcement learning (RL), with many new methods claiming\nsignificant improvements with minimal or no external supervision. Surprisingly,\nsome studies even suggest that random or incorrect reward signals can enhance\nreasoning performance. However, these breakthroughs are mostly reported on the\nQwen2.5 model family and evaluated on well-known benchmarks such as MATH-500,\nAMC, and AIME, while failing to achieve similar gains on other models like\nLlama, which warrants further investigation. Our analysis shows that although\nQwen2.5 achieves strong mathematical reasoning performance, its pretraining on\nlarge-scale web corpora makes it vulnerable to data contamination in popular\nbenchmarks. As a result, results derived from these benchmarks may be\nunreliable. To address this, we introduce a generator that produces fully\nsynthetic arithmetic problems of arbitrary length and difficulty, yielding a\nclean dataset we call RandomCalculation. Using these leakage-free datasets, we\nshow that only accurate reward signals consistently improve performance, while\nnoisy or incorrect signals do not. We advocate for evaluating RL methods on\nuncontaminated benchmarks and across diverse model families to ensure\ntrustworthy conclusions.",
+    "authors": [
+      "Mingqi Wu",
+      "Zhihao Zhang",
+      "Qiaole Dong",
+      "Zhiheng Xi",
+      "Jun Zhao",
+      "Senjie Jin",
+      "Xiaoran Fan",
+      "Yuhao Zhou",
+      "Yanwei Fu",
+      "Qin Liu",
+      "Songyang Zhang",
+      "Qi Zhang"
+    ],
+    "likes": 71,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2507.10532",
+    "date_collected": "2025-07-19T07:08:05.854127+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "추론 또는 기억? 데이터 오염으로 인한 강화 학습의 불안정한 결과",
+      "abstract": "대규모 언어 모델(LLM)의 추론 능력은 오랫동안 연구의 중심이었습니다. 최근 연구에서는 강화 학습(RL)을 사용하여 이러한 능력을 더욱 향상시키고 있으며, 많은 새로운 방법들이 외부 감독이 적거나 전혀 없이도 상당한 개선을 주장하고 있습니다. 놀랍게도 어떤 연구들은 무작위 또는 잘못된 보상 신호가 추론 성능을 향상시킬 수 있다고 주장하기도 합니다. 그러나 이러한 폭발적인 발전은 주로 Qwen2.5 모델군에서 보고되었으며, MATH-500, AMC, AIME 등의 잘 알려진 벤치마크에서 평가되었지만 Llama와 같은 다른 모델들에서는 유사한 향상을 이루지 못했으며, 이는 추가적인 조사가 필요함을 시사합니다. 우리의 분석은 Qwen2.5가 강력한 수학적 추론 성능을 달성하더라도 대규모 웹 말뭉치에서의 사전 훈련으로 인해 인기 있는 벤치마크에서 데이터 오염의 취약성을 가질 수 있다는 것을 보여줍니다. 그 결과, 이러한 벤치마크에서 유도된 결과는 신뢰할 수 없을 수 있습니다. 이를 해결하기 위해 임의 길이와 난이도의 완전 합성 산술 문제를 생성하는 생성기를 도입하여 'RandomCalculation'이라는 깨끗한 데이터셋을 만듭니다. 이러한 누설이 없는 데이터셋을 사용하여 정확한 보상 신호만이 일관되게 성능을 향상시키는 반면, 소음이나 잘못된 신호는 그렇지 않음을 보여줍니다. 우리는 신뢰할 수 있는 결론을 도출하기 위해 강화 학습 방법을 오염되지 않은 벤치마크에서 다양한 모델군을 통해 평가할 것을 주장합니다."
+    },
+    "summary": "1. 대규모 언어 모델의 추론 능력을 강화 학습을 통해 향상시키는 연구는 주로 Qwen2.5 모델군에서 보고되었지만, 다른 모델들에는 유사한 향상을 이루지 못하여 이에 대한 추가적인 조사가 필요합니다.\n2. Qwen2.5 모델은 수학적 추론 성능이 뛰어나지만, 웹 말뭉치에서의 사전 훈련으로 인해 인기 있는 벤치마크에서 데이터 오염의 취약성을 가질 수 있어, 이러한 벤치마크에서 얻은 결과는 신뢰할 수 없을 수 있습니다.\n3. 데이터 오염을 방지하기 위해 완전 합성 산술 문제를 생성하는 'RandomCalculation' 데이터셋을 도입하여, 정확한 보상 신호만이 일관되게 성능을 향상시키는 것을 보여줌으로써, 신뢰할 수 있는 결론을 도출할 수 있음을 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for\n  Visual Reasoning",
+    "abstract": "The remarkable reasoning capability of large language models (LLMs) stems\nfrom cognitive behaviors that emerge through reinforcement with verifiable\nrewards. This work investigates how to transfer this principle to Multimodal\nLLMs (MLLMs) to unlock advanced visual reasoning. We introduce a two-stage\nparadigm built on Qwen2.5-VL-7B: a massive linguistic cold-start fine-tuning,\nfollowed by multimodal reinforcement learning (RL) spanning nearly 1,000 steps,\nsurpassing all previous open-source efforts in scale. This pioneering work\nreveals three fundamental insights: 1) Behavior transfer emerges surprisingly\nearly in cold start due to linguistic mental imagery. 2) Cold start broadly\nmemorizes visual behaviors, while RL critically discerns and scales up\neffective patterns. 3) Transfer strategically favors high-utility behaviors\nsuch as visual reflection. Our resulting model, Open-Vision-Reasoner (OVR),\nachieves state-of-the-art performance on a suite of reasoning benchmarks,\nincluding 95.3% on MATH500, 51.8% on MathVision and 54.6% on MathVerse. We\nrelease our model, data, and training dynamics to catalyze the development of\nmore capable, behavior-aligned multimodal reasoners.",
+    "authors": [
+      "Yana Wei",
+      "Liang Zhao",
+      "Jianjian Sun",
+      "Kangheng Lin",
+      "Jisheng Yin",
+      "Jingcheng Hu",
+      "Yinmin Zhang",
+      "En Yu",
+      "Haoran Lv",
+      "Zejia Weng",
+      "Jia Wang",
+      "Chunrui Han",
+      "Yuang Peng",
+      "Qi Han",
+      "Zheng Ge",
+      "Xiangyu Zhang",
+      "Daxin Jiang",
+      "Vishal M. Patel"
+    ],
+    "likes": 67,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.05255",
+    "date_collected": "2025-07-19T07:08:05.855850+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "오픈 비전 리스너: 시각 추론을 위한 언어적 인지 행동 전이",
+      "abstract": "대형 언어 모델(LLM)의 놀라운 추론 능력은 확인 가능한 보상으로 강화되는 인지 행동에서 비롯됩니다. 본 연구는 이 원리를 다중 모달 언어 모델(MLLM)로 전이해 고급 시각 추론을 발휘하는 방법을 탐구합니다. 우리는 대대적인 언어적 콜드 스타트 파인튜닝인 Qwen2.5-VL-7B에 기반한 1,000 걸음 가까운 다중 모달 강화 학습으로 구성된 두 단계 패러다임을 소개합니다. 이는 이전의 모든 오픈 소스 노력을 뛰어넘는 규모입니다. 이 전례없는 연구는 1) 언어적 정신적 인상 때문에 콜드 스타트 단계에서 행동 전이가 놀랍게 빨리 나타난다는 기본적 통찰을 보여줍니다. 2) 콜드 스타트는 시각적 행동을 넓게 기억하며, 강화 학습은 효과적인 패턴을 결정하고 확대하는 역할을 합니다. 3) 전이는 시각적 반영과 같은 고효용성 행동을 전략적으로 선호합니다. 결과 모델인 오픈-비전-리스너(OVR)은 MATH500에서 95.3%, MathVision에서 51.8%, MathVerse에서 54.6% 포함한 추론 벤치마크에서 최고 수준의 성능을 발휘합니다. 보다 능숙하고 행동에 일치하는 다중 모달 리스너 개발을 촉진하기 위해 모델, 데이터 및 학습 동태를 공개합니다."
+    },
+    "summary": "1. 언어 모델의 인지 행동을 다중 모달 모델로 전이하여 고급 시각 추론을 수행함.\n2. 콜드 스타트에서 행동 전이의 놀라운 속도와 시각적 행동 메모리 제공.\n3. 고효용성 시각적 행동과 같은 행동을 전략적으로 강화하여 최고 성능의 모델 개발.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "NeuralOS: Towards Simulating Operating Systems via Neural Generative\n  Models",
+    "abstract": "We introduce NeuralOS, a neural framework that simulates graphical user\ninterfaces (GUIs) of operating systems by directly predicting screen frames in\nresponse to user inputs such as mouse movements, clicks, and keyboard events.\nNeuralOS combines a recurrent neural network (RNN), which tracks computer\nstate, with a diffusion-based neural renderer that generates screen images. The\nmodel is trained on a large-scale dataset of Ubuntu XFCE recordings, which\ninclude both randomly generated interactions and realistic interactions\nproduced by AI agents. Experiments show that NeuralOS successfully renders\nrealistic GUI sequences, accurately captures mouse interactions, and reliably\npredicts state transitions like application launches. Although modeling\nfine-grained keyboard interactions precisely remains challenging, NeuralOS\noffers a step toward creating fully adaptive, generative neural interfaces for\nfuture human-computer interaction systems.",
+    "authors": [
+      "Luke Rivard",
+      "Sun Sun",
+      "Hongyu Guo",
+      "Wenhu Chen",
+      "Yuntian Deng"
+    ],
+    "likes": 64,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08800",
+    "date_collected": "2025-07-19T07:08:05.856996+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "NeuralOS: 신경 생성 모델을 통한 운영 체제 시뮬레이션을 향하여",
+      "abstract": "본 연구에서는 사용자 입력에 대응하여 마우스 움직임, 클릭 및 키보드 이벤트와 같은 운영 체제의 그래픽 사용자 인터페이스(GUI)를 직접 예측하는 신경망 프레임워크 NeuralOS를 소개합니다. NeuralOS는 컴퓨터 상태를 추적하는 순환 신경망(RNN)과 화면 이미지를 생성하는 확산 기반 신경 렌더러를 결합합니다. 이 모델은 Ubuntu XFCE 녹화의 대규모 데이터셋에서 학습되었으며, 무작위로 생성된 상호작용과 AI 에이전트에 의해 생성된 실제 상호작용이 포함되어 있습니다. 실험 결과, NeuralOS가 현실적인 GUI 시퀀스를 성공적으로 렌더링하고 마우스 상호작용을 정확히 캡처하며 응용프로그램 실행과 같은 상태 전이를 신뢰성 있게 예측함이 확인되었습니다. 세밀한 키보드 상호작용을 정확히 모델링하는 것은 여전히 어려우나, NeuralOS는 미래의 인간-컴퓨터 상호작용 시스템을 위한 완전히 적응형, 생성적인 신경 인터페이스를 구축하는 한 걸음을 제시합니다."
+    },
+    "summary": "1. NeuralOS는 컴퓨터 상태를 추적하는 RNN과 화면 이미지를 생성하는 확산 기반 신경 렌더러를 결합하여 운영 체제의 GUI를 예측하는 신경망 프레임워크이다.\n2. 모델은 Ubuntu XFCE 녹화 데이터셋을 기반으로 학습되어 현실적인 GUI 시퀀스를 성공적으로 렌더링하고 마우스 상호작용과 응용프로그램 실행 등을 신뢰성 있게 예측한다.\n3. 세밀한 키보드 상호작용 모델링에는 도전이 남아 있지만, NeuralOS는 미래 인간-컴퓨터 상호작용 시스템을 위한 적응형, 생성적인 신경 인터페이스 제작 방향으로 전진하고 있다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning\n  Systems in LLMs",
+    "abstract": "Retrieval-Augmented Generation (RAG) lifts the factuality of Large Language\nModels (LLMs) by injecting external knowledge, yet it falls short on problems\nthat demand multi-step inference; conversely, purely reasoning-oriented\napproaches often hallucinate or mis-ground facts. This survey synthesizes both\nstrands under a unified reasoning-retrieval perspective. We first map how\nadvanced reasoning optimizes each stage of RAG (Reasoning-Enhanced RAG). Then,\nwe show how retrieved knowledge of different type supply missing premises and\nexpand context for complex inference (RAG-Enhanced Reasoning). Finally, we\nspotlight emerging Synergized RAG-Reasoning frameworks, where (agentic) LLMs\niteratively interleave search and reasoning to achieve state-of-the-art\nperformance across knowledge-intensive benchmarks. We categorize methods,\ndatasets, and open challenges, and outline research avenues toward deeper\nRAG-Reasoning systems that are more effective, multimodally-adaptive,\ntrustworthy, and human-centric. The collection is available at\nhttps://github.com/DavidZWZ/Awesome-RAG-Reasoning.",
+    "authors": [
+      "Yangning Li",
+      "Weizhi Zhang",
+      "Yuyao Yang",
+      "Wei-Chieh Huang",
+      "Yaozu Wu",
+      "Junyu Luo",
+      "Yuanchen Bei",
+      "Henry Peng Zou",
+      "Xiao Luo",
+      "Yusheng Zhao",
+      "Chunkit Chan",
+      "Yankai Chen",
+      "Zhongfen Deng",
+      "Yinghui Li",
+      "Hai-Tao Zheng",
+      "Dongyuan Li",
+      "Renhe Jiang",
+      "Ming Zhang",
+      "Yangqiu Song",
+      "Philip S. Yu"
+    ],
+    "likes": 58,
+    "published_date": "Jul 13",
+    "url": "https://huggingface.co/papers/2507.09477",
+    "date_collected": "2025-07-19T07:08:05.858782+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "깊은 추론을 통한 에이전틱 RAG로 나아가기: LLM에서 RAG-추론 시스템 조사",
+      "abstract": "검색 보완 생성 (RAG)은 외부 지식을 주입함으로써 대형 언어 모델 (LLMs)의 사실성을 높이지만, 다단계 추론을 필요로 하는 문제에서 한계가 있습니다; 반면, 순수 추론 중심적 접근법은 종종 사실을 발명하거나 잘못된 근거를 제시합니다. 본 조사는 통합된 추론-검색 관점 아래 두 가지 접근을 종합적으로 다룹니다. 먼저 고급 추론이 RAG 각 단계를 최적화하는 방법을 매핑합니다 (추론-강화 RAG). 그런 다음, 서로 다른 유형의 검색 지식이 부재한 전제를 공급하고 복잡한 추론을 위한 맥락을 확장하는 방법을 보여줍니다 (RAG-강화 추론). 마지막으로, (에이전틱) LLM이 지식 집중적 벤치마크 전반에 걸쳐 최고 수준의 성능을 달성하기 위해 탐색과 추론을 반복적으로 교차하는 신흥 RAG-추론 프레임워크를 강조합니다. 방법, 데이터 세트 및 개방적인 도전과제를 분류하고 효과적이며 다중 모달적으로 적응 가능하며 신뢰 가능하며 인간 중심적인 보다 깊은 RAG-추론 시스템으로 나아가기 위한 연구 방향을 개요로 제시합니다. 해당 자료는 https://github.com/DavidZWZ/Awesome-RAG-Reasoning에서 확인할 수 있습니다."
+    },
+    "summary": "1. RAG-추론 시스템의 진화: 고급 추론이 각 RAG 단계를 어떻게 최적화하는지 조망합니다.\n2. 지식 확장을 통한 복합 추론: 서로 다른 유형의 검색 지식이 복잡한 추론을 위해 어떻게 부재한 전제를 보충하고 맥락을 확장하는지 소개합니다.\n3. 신흥 RAG-추론 프레임워크: LLM이 탐색과 추론을 교차하여 지식 집중적 벤치마크에서 최고 수준의 성능을 달성하는 방법을 강조합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Vision Foundation Models as Effective Visual Tokenizers for\n  Autoregressive Image Generation",
+    "abstract": "Leveraging the powerful representations of pre-trained vision foundation\nmodels -- traditionally used for visual comprehension -- we explore a novel\ndirection: building an image tokenizer directly atop such models, a largely\nunderexplored area. Specifically, we employ a frozen vision foundation model as\nthe encoder of our tokenizer. To enhance its effectiveness, we introduce two\nkey components: (1) a region-adaptive quantization framework that reduces\nredundancy in the pre-trained features on regular 2D grids, and (2) a semantic\nreconstruction objective that aligns the tokenizer's outputs with the\nfoundation model's representations to preserve semantic fidelity. Based on\nthese designs, our proposed image tokenizer, VFMTok, achieves substantial\nimprovements in image reconstruction and generation quality, while also\nenhancing token efficiency. It further boosts autoregressive (AR) generation --\nachieving a gFID of 2.07 on ImageNet benchmarks, while accelerating model\nconvergence by three times, and enabling high-fidelity class-conditional\nsynthesis without the need for classifier-free guidance (CFG). The code will be\nreleased publicly to benefit the community.",
+    "authors": [
+      "Anlin Zheng",
+      "Xin Wen",
+      "Xuanyang Zhang",
+      "Chuofan Ma",
+      "Tiancai Wang",
+      "Gang Yu",
+      "Xiangyu Zhang",
+      "Xiaojuan Qi"
+    ],
+    "likes": 56,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08441",
+    "date_collected": "2025-07-19T07:08:05.860030+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "시각 기반 모델을 활용한 자기회귀 이미지 생성을 위한 효과적인 시각 토크나이저들",
+      "abstract": "시각 이해에 전통적으로 사용되어 온 사전 훈련된 시각 기반 모델의 강력한 표현을 활용하여 우리는 새로운 방향으로 나아가며, 이러한 모델 위에 이미지 토크나이저를 직접 구축하는 것을 탐구합니다. 이는 대부분 미탐구된 분야입니다. 구체적으로, 우리는 동결된 시각 기반 모델을 토크나이저의 인코더로 사용합니다. 효과를 증대하기 위해 두 가지 핵심 구성 요소를 소개합니다: (1) 일반적인 2차원 그리드에서 사전 훈련된 특성의 중복을 줄이는 지역적 적응 양자화 프레임워크 및 (2) 토크나이저의 출력을 기존 모델의 표현과 일치시켜 의미 미필을 보존하는 의미 재구성 목적입니다. 이러한 설계를 바탕으로, 우리가 제안하는 이미지 토크나이저인 VFMTok은 이미지 재구성 및 생성 품질에서 상당한 개선을 이루며, 토큰 효율성을 향상시킵니다. 이는 또한 자기회귀 생성을 강화하여 ImageNet 벤치마크에서 2.07의 gFID를 달성하며 모델 수렴 속도를 3배 가속화하고, 분류기 없는 안내(CFG)로 높은 품질의 클래스 조건부 합성을 가능하게 합니다. 코드는 공개적으로 배포될 예정입니다."
+    },
+    "summary": "1. 시각 기반의 사전 훈련 모델을 사용하여 새로운 이미지 토크나이저인 VFMTok을 개발하였다.\n2. VFMTok은 이미지 재구성과 생성 품질을 향상시키고, 효율적인 토큰 사용을 도모한다.\n3. VFMTok은 ImageNet 벤치마크에서 우수한 성과를 보이며 모델 수렴 속도를 가속화하고 안내 분류기 없이 고품질의 합성을 가능케 한다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "VisionThink: Smart and Efficient Vision Language Model via Reinforcement\n  Learning",
+    "abstract": "Recent advancements in vision-language models (VLMs) have improved\nperformance by increasing the number of visual tokens, which are often\nsignificantly longer than text tokens. However, we observe that most real-world\nscenarios do not require such an extensive number of visual tokens. While the\nperformance drops significantly in a small subset of OCR-related tasks, models\nstill perform accurately in most other general VQA tasks with only 1/4\nresolution. Therefore, we propose to dynamically process distinct samples with\ndifferent resolutions, and present a new paradigm for visual token compression,\nnamely, VisionThink. It starts with a downsampled image and smartly decides\nwhether it is sufficient for problem solving. Otherwise, the model could output\na special token to request the higher-resolution image. Compared to existing\nEfficient VLM methods that compress tokens using fixed pruning ratios or\nthresholds, VisionThink autonomously decides whether to compress tokens case by\ncase. As a result, it demonstrates strong fine-grained visual understanding\ncapability on OCR-related tasks, and meanwhile saves substantial visual tokens\non simpler tasks. We adopt reinforcement learning and propose the LLM-as-Judge\nstrategy to successfully apply RL to general VQA tasks. Moreover, we carefully\ndesign a reward function and penalty mechanism to achieve a stable and\nreasonable image resize call ratio. Extensive experiments demonstrate the\nsuperiority, efficiency, and effectiveness of our method. Our code is available\nat https://github.com/dvlab-research/VisionThink.",
+    "authors": [
+      "Senqiao Yang",
+      "Junyi Li",
+      "Xin Lai",
+      "Bei Yu",
+      "Hengshuang Zhao",
+      "Jiaya Jia"
+    ],
+    "likes": 50,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2507.13348",
+    "date_collected": "2025-07-19T07:08:05.861199+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "VisionThink: 스마트하고 효율적인 시각 언어 모델을 통한 강화 학습",
+      "abstract": "최근 시각-언어 모델(VLMs)의 발전으로 시각 토큰 수를 증가시켜 성능을 향상시켰으나 실제 상황에서 많은 시각 토큰이 필요하지 않다는 사실을 관찰했습니다. 우리는 서로 다른 해상도를 가진 샘플을 동적으로 처리하고 시각적 토큰 압축을 위한 VisionThink라는 새로운 패러다임을 제안합니다. 이로써 우리의 방법은 OCR 관련 작업에서 강력한 세밀한 시각 이해 능력을 보여주며, 더 간단한 작업에서는 상당한 시각 토큰을 절약합니다."
+    },
+    "summary": "1. VisionThink는 동적으로 다른 해상도의 샘플을 처리하여 시각적 토큰을 압축하는 새로운 모델이다.\n2. LLM-as-Judge 전략을 활용하여 강화 학습을 적용하여 일반 VQA 작업에서 성공적으로 사용했다.\n3. 실험 결과는 우리의 방법이 우수하며 효율적이며 효과적임을 입증했다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive\n  Token-Level Computation",
+    "abstract": "Scaling language models unlocks impressive capabilities, but the accompanying\ncomputational and memory demands make both training and deployment expensive.\nExisting efficiency efforts typically target either parameter sharing or\nadaptive computation, leaving open the question of how to attain both\nsimultaneously. We introduce Mixture-of-Recursions (MoR), a unified framework\nthat combines the two axes of efficiency inside a single Recursive Transformer.\nMoR reuses a shared stack of layers across recursion steps to achieve parameter\nefficiency, while lightweight routers enable adaptive token-level thinking by\ndynamically assigning different recursion depths to individual tokens. This\nallows MoR to focus quadratic attention computation only among tokens still\nactive at a given recursion depth, further improving memory access efficiency\nby selectively caching only their key-value pairs. Beyond these core\nmechanisms, we also propose a KV sharing variant that reuses KV pairs from the\nfirst recursion, specifically designed to decrease prefill latency and memory\nfootprint. Across model scales ranging from 135M to 1.7B parameters, MoR forms\na new Pareto frontier: at equal training FLOPs and smaller model sizes, it\nsignificantly lowers validation perplexity and improves few-shot accuracy,\nwhile delivering higher throughput compared with vanilla and existing recursive\nbaselines. These gains demonstrate that MoR is an effective path towards\nlarge-model quality without incurring large-model cost.",
+    "authors": [
+      "Sangmin Bae",
+      "Yujin Kim",
+      "Reza Bayat",
+      "Sungnyun Kim",
+      "Jiyoun Ha",
+      "Tal Schuster",
+      "Adam Fisch",
+      "Hrayr Harutyunyan",
+      "Ziwei Ji",
+      "Aaron Courville",
+      "Se-Young Yun"
+    ],
+    "likes": 50,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2507.10524",
+    "date_collected": "2025-07-19T07:08:05.862617+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "동적 재귀 깊이 학습을 통한 적응형 토큰 수준 계산의 Mixture-of-Recursions",
+      "abstract": "언어 모델의 확장은 놀라운 능력을 발휘하지만, 이에 수반되는 계산 및 메모리 요구는 훈련과 배포를 비싸게 만듭니다. 기존의 효율화 노력은 일반적으로 매개변수 공유 또는 적응형 계산에 초점을 맞추지만, 두 가지를 동시에 어떻게 달성할지에 대한 문제는 여전히 남아 있습니다. 본 논문에서는 두 축인 효율성을 통합하는 Mixture-of-Recursions (MoR)를 소개합니다. 이 프레임워크는 Recursive Transformer 내에서 두 가지 효율성 축을 결합합니다. MoR는 재귀 단계별로 일관된 계층 스택을 재사용하여 매개변수 효율성을 달성하고, 가벼운 라우터는 각각의 토큰에 동적으로 다른 재귀 깊이를 할당하여 적응형 토큰 수준 사고를 가능하게 합니다. 이를 통해 MoR는 특정 재귀 깊이에서 활성 상태인 토큰들 간에 제곱 형태의 주의 계산에만 집중할 수 있도록 하여 메모리 접근 효율성을 높이고, 그들의 키-값 쌍만 선택적으로 캐싱함으로써 메모리 액세스 효율성을 더 향상시킵니다. 이러한 핵심 메커니즘을 넘어서 우리는 첫 번째 재귀에서 KV 쌍을 재사용하는 KV 공유 변형도 제안합니다. 이는 채우기 지연 및 메모리 풋프린트를 줄이도록 특별히 설계되었습니다. 135M에서 1.7B 매개변수로 이루어진 모델 규모를 갖는 모든 경우에, MoR은 동등한 훈련 FLOPs와 더 작은 모델 크기에서 검증 곤란함을 크게 낮추고, 기존의 재귀 기준과 바닐라에 비해 높은 처리량을 제공하면서 일반적인 perplexity를 낮추는 새로운 Pareto 경계를 형성합니다. 이러한 이득은 MoR이 큰 비용을 발생시키지 않고 대형 모델 품질로 향하는 효과적인 경로임을 입증합니다."
+    },
+    "summary": "1. 언어 모델의 효율성을 증가시키기 위해 재귀 깊이를 동적으로 조절해 토큰마다 다른 계산량을 할당하는 Mixture-of-Recursions (MoR) 프레임워크를 제안함.\n2. MoR은 활성 토큰 간에만 제곱형태의 주의 계산을 집중하여 메모리 효율성을 높이고, key-value 쌍을 선택적으로 캐싱하여 메모리 접근 효율성을 향상시킬 뿐만 아니라, KV 공유 기법도 제안함.\n3. MoR은 다양한 모델 규모에서 기존 방법과 비교했을 때 훈련 FLOPs와 모델 크기가 동일할 때 검증 곤란함을 낮추고 throughput을 향상시키면서 적은 데이터 포인트 정확성을 향상시킵니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive\n  Neural Rendering",
+    "abstract": "This paper proposes a neural rendering approach that represents a scene as\n\"compressed light-field tokens (CLiFTs)\", retaining rich appearance and\ngeometric information of a scene. CLiFT enables compute-efficient rendering by\ncompressed tokens, while being capable of changing the number of tokens to\nrepresent a scene or render a novel view with one trained network. Concretely,\ngiven a set of images, multi-view encoder tokenizes the images with the camera\nposes. Latent-space K-means selects a reduced set of rays as cluster centroids\nusing the tokens. The multi-view ``condenser'' compresses the information of\nall the tokens into the centroid tokens to construct CLiFTs. At test time,\ngiven a target view and a compute budget (i.e., the number of CLiFTs), the\nsystem collects the specified number of nearby tokens and synthesizes a novel\nview using a compute-adaptive renderer. Extensive experiments on RealEstate10K\nand DL3DV datasets quantitatively and qualitatively validate our approach,\nachieving significant data reduction with comparable rendering quality and the\nhighest overall rendering score, while providing trade-offs of data size,\nrendering quality, and rendering speed.",
+    "authors": [
+      "Zhengqing Wang",
+      "Yuefan Wu",
+      "Jiacheng Chen",
+      "Fuyang Zhang",
+      "Yasutaka Furukawa"
+    ],
+    "likes": 50,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08776",
+    "date_collected": "2025-07-19T07:08:05.863968+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "CLiFT: Compute-Efficient 및 Adaptive를 위한 압축적 광필드 토큰 Neural 렌더링",
+      "abstract": "본 논문은 \"압축된 광필드 토큰 (CLiFTs)\"으로 장면을 표현하는 신경 렌더링 접근법을 제안하며, 장면의 풍부한 외형 및 기하학적 정보를 보존합니다. CLiFT는 압축된 토큰으로 계산 효율적인 렌더링을 가능하게 하며, 훈련된 하나의 네트워크로 장면을 나타내거나 새로운 뷰를 렌더링할 때 토큰 수를 변경할 수 있습니다. 구체적으로, 이미지 집합을 제공하면 다중 뷰 인코더는 카메라 위치로 이미지를 토큰화합니다. 잠재 공간 K-means는 토큰을 사용하여 클러스터 중심을 선택하여 감소된 광선 세트를 선택합니다. 다중 뷰 \"압축기\"는 모든 토큰의 정보를 중심 토큰으로 압축하여 CLiFTs를 구성합니다. 시험 시, 대상 뷰 및 컴퓨트 예산(즉, CLiFT의 수)이 주어지면 시스템은 지정된 수의 인근 토큰을 수집하고 컴퓨트 적응형 렌더러를 사용하여 새로운 뷰를 합성합니다. RealEstate10K 및 DL3DV 데이터 세트에서의 광범위한 실험은 우리의 접근법을 양적 및 질적으로 검증하며, 데이터 크기, 렌더링 품질 및 렌더링 속도의 균형을 제공하면서 비교 가능한 렌더링 품질과 가장 높은 종합 렌더링 점수를 달성합니다."
+    },
+    "summary": "1. CLiFT는 압축된 토큰을 사용해 장면을 효율적으로 렌더링하며, 훈련된 네트워크로 새로운 뷰를 렌더링할 수 있습니다.\n2. 다중 뷰 인코더는 이미지를 카메라 위치로 토큰화하고, K-means는 클러스터 중심을 선택하여 광선의 감소된 세트를 생성합니다.\n3. CLiFT 시스템은 컴퓨트 예산에 맞게 인근 토큰을 수집하여 새로운 뷰를 합성하는데 사용됩니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  }
+]

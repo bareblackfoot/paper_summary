@@ -1,0 +1,917 @@
+2025-11-04 10:36:13,943 - INFO - ======================================================================
+2025-11-04 10:36:13,944 - INFO - 백업 파일 마이그레이션 시작
+2025-11-04 10:36:13,944 - INFO - ======================================================================
+2025-11-04 10:36:13,945 - INFO - 총 162개의 백업 파일 발견
+2025-11-04 10:36:13,948 - INFO - 총 23개의 주차로 그룹화됨
+2025-11-04 10:36:13,948 - INFO - 
+주차별 마이그레이션 시작 (23개 주차)
+2025-11-04 10:36:13,948 - INFO - ----------------------------------------------------------------------
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W23'
+Arguments: ()
+2025-11-04 10:36:13,948 - INFO - 
+\U0001f4c5 2025-W23
+2025-11-04 10:36:13,953 - INFO -   - 백업 파일 수: 2개
+2025-11-04 10:36:13,953 - INFO -   - 최신 파일: papers_20250608_070816.json
+2025-11-04 10:36:13,953 - INFO -   - 파일 날짜: 2025-06-08 07:08:16
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W23.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,955 - INFO -   \u2705 paper_week2025-W23.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W24'
+Arguments: ()
+2025-11-04 10:36:13,956 - INFO - 
+\U0001f4c5 2025-W24
+2025-11-04 10:36:13,956 - INFO -   - 백업 파일 수: 10개
+2025-11-04 10:36:13,956 - INFO -   - 최신 파일: papers_20250615_220711.json
+2025-11-04 10:36:13,956 - INFO -   - 파일 날짜: 2025-06-15 22:07:11
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W24.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,957 - INFO -   \u2705 paper_week2025-W24.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W25'
+Arguments: ()
+2025-11-04 10:36:13,958 - INFO - 
+\U0001f4c5 2025-W25
+2025-11-04 10:36:13,959 - INFO -   - 백업 파일 수: 9개
+2025-11-04 10:36:13,959 - INFO -   - 최신 파일: papers_20250622_220706.json
+2025-11-04 10:36:13,959 - INFO -   - 파일 날짜: 2025-06-22 22:07:06
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W25.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,960 - INFO -   \u2705 paper_week2025-W25.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W26'
+Arguments: ()
+2025-11-04 10:36:13,961 - INFO - 
+\U0001f4c5 2025-W26
+2025-11-04 10:36:13,961 - INFO -   - 백업 파일 수: 6개
+2025-11-04 10:36:13,961 - INFO -   - 최신 파일: papers_20250629_220709.json
+2025-11-04 10:36:13,961 - INFO -   - 파일 날짜: 2025-06-29 22:07:09
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W26.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,962 - INFO -   \u2705 paper_week2025-W26.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W27'
+Arguments: ()
+2025-11-04 10:36:13,963 - INFO - 
+\U0001f4c5 2025-W27
+2025-11-04 10:36:13,963 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,963 - INFO -   - 최신 파일: papers_20250706_220713.json
+2025-11-04 10:36:13,964 - INFO -   - 파일 날짜: 2025-07-06 22:07:13
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W27.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,964 - INFO -   \u2705 paper_week2025-W27.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W28'
+Arguments: ()
+2025-11-04 10:36:13,966 - INFO - 
+\U0001f4c5 2025-W28
+2025-11-04 10:36:13,966 - INFO -   - 백업 파일 수: 15개
+2025-11-04 10:36:13,966 - INFO -   - 최신 파일: papers_20250713_220733.json
+2025-11-04 10:36:13,966 - INFO -   - 파일 날짜: 2025-07-13 22:07:33
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W28.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,967 - INFO -   \u2705 paper_week2025-W28.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W29'
+Arguments: ()
+2025-11-04 10:36:13,968 - INFO - 
+\U0001f4c5 2025-W29
+2025-11-04 10:36:13,968 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,968 - INFO -   - 최신 파일: papers_20250720_220728.json
+2025-11-04 10:36:13,968 - INFO -   - 파일 날짜: 2025-07-20 22:07:28
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W29.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,969 - INFO -   \u2705 paper_week2025-W29.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W30'
+Arguments: ()
+2025-11-04 10:36:13,970 - INFO - 
+\U0001f4c5 2025-W30
+2025-11-04 10:36:13,971 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,971 - INFO -   - 최신 파일: papers_20250727_220754.json
+2025-11-04 10:36:13,971 - INFO -   - 파일 날짜: 2025-07-27 22:07:54
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W30.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,972 - INFO -   \u2705 paper_week2025-W30.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W31'
+Arguments: ()
+2025-11-04 10:36:13,973 - INFO - 
+\U0001f4c5 2025-W31
+2025-11-04 10:36:13,973 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,973 - INFO -   - 최신 파일: papers_20250803_220752.json
+2025-11-04 10:36:13,973 - INFO -   - 파일 날짜: 2025-08-03 22:07:52
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W31.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,974 - INFO -   \u2705 paper_week2025-W31.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W32'
+Arguments: ()
+2025-11-04 10:36:13,975 - INFO - 
+\U0001f4c5 2025-W32
+2025-11-04 10:36:13,975 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,976 - INFO -   - 최신 파일: papers_20250810_220740.json
+2025-11-04 10:36:13,976 - INFO -   - 파일 날짜: 2025-08-10 22:07:40
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W32.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,976 - INFO -   \u2705 paper_week2025-W32.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W33'
+Arguments: ()
+2025-11-04 10:36:13,977 - INFO - 
+\U0001f4c5 2025-W33
+2025-11-04 10:36:13,978 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,978 - INFO -   - 최신 파일: papers_20250817_220729.json
+2025-11-04 10:36:13,978 - INFO -   - 파일 날짜: 2025-08-17 22:07:29
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W33.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,979 - INFO -   \u2705 paper_week2025-W33.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W34'
+Arguments: ()
+2025-11-04 10:36:13,980 - INFO - 
+\U0001f4c5 2025-W34
+2025-11-04 10:36:13,980 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,980 - INFO -   - 최신 파일: papers_20250824_220658.json
+2025-11-04 10:36:13,980 - INFO -   - 파일 날짜: 2025-08-24 22:06:58
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W34.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,981 - INFO -   \u2705 paper_week2025-W34.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W35'
+Arguments: ()
+2025-11-04 10:36:13,982 - INFO - 
+\U0001f4c5 2025-W35
+2025-11-04 10:36:13,983 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,983 - INFO -   - 최신 파일: papers_20250831_220711.json
+2025-11-04 10:36:13,983 - INFO -   - 파일 날짜: 2025-08-31 22:07:11
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W35.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,984 - INFO -   \u2705 paper_week2025-W35.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W36'
+Arguments: ()
+2025-11-04 10:36:13,985 - INFO - 
+\U0001f4c5 2025-W36
+2025-11-04 10:36:13,985 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,985 - INFO -   - 최신 파일: papers_20250907_220646.json
+2025-11-04 10:36:13,985 - INFO -   - 파일 날짜: 2025-09-07 22:06:46
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W36.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,986 - INFO -   \u2705 paper_week2025-W36.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W37'
+Arguments: ()
+2025-11-04 10:36:13,987 - INFO - 
+\U0001f4c5 2025-W37
+2025-11-04 10:36:13,987 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,987 - INFO -   - 최신 파일: papers_20250914_220644.json
+2025-11-04 10:36:13,987 - INFO -   - 파일 날짜: 2025-09-14 22:06:44
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W37.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,988 - INFO -   \u2705 paper_week2025-W37.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W38'
+Arguments: ()
+2025-11-04 10:36:13,989 - INFO - 
+\U0001f4c5 2025-W38
+2025-11-04 10:36:13,989 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,990 - INFO -   - 최신 파일: papers_20250921_220705.json
+2025-11-04 10:36:13,990 - INFO -   - 파일 날짜: 2025-09-21 22:07:05
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W38.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,991 - INFO -   \u2705 paper_week2025-W38.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W39'
+Arguments: ()
+2025-11-04 10:36:13,991 - INFO - 
+\U0001f4c5 2025-W39
+2025-11-04 10:36:13,992 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,992 - INFO -   - 최신 파일: papers_20250928_220652.json
+2025-11-04 10:36:13,992 - INFO -   - 파일 날짜: 2025-09-28 22:06:52
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W39.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,993 - INFO -   \u2705 paper_week2025-W39.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W40'
+Arguments: ()
+2025-11-04 10:36:13,994 - INFO - 
+\U0001f4c5 2025-W40
+2025-11-04 10:36:13,994 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,994 - INFO -   - 최신 파일: papers_20251005_220709.json
+2025-11-04 10:36:13,994 - INFO -   - 파일 날짜: 2025-10-05 22:07:09
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W40.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,995 - INFO -   \u2705 paper_week2025-W40.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W41'
+Arguments: ()
+2025-11-04 10:36:13,996 - INFO - 
+\U0001f4c5 2025-W41
+2025-11-04 10:36:13,997 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,997 - INFO -   - 최신 파일: papers_20251012_220723.json
+2025-11-04 10:36:13,997 - INFO -   - 파일 날짜: 2025-10-12 22:07:23
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W41.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:13,998 - INFO -   \u2705 paper_week2025-W41.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W42'
+Arguments: ()
+2025-11-04 10:36:13,999 - INFO - 
+\U0001f4c5 2025-W42
+2025-11-04 10:36:13,999 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:13,999 - INFO -   - 최신 파일: papers_20251019_220727.json
+2025-11-04 10:36:13,999 - INFO -   - 파일 날짜: 2025-10-19 22:07:27
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W42.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:14,000 - INFO -   \u2705 paper_week2025-W42.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W43'
+Arguments: ()
+2025-11-04 10:36:14,001 - INFO - 
+\U0001f4c5 2025-W43
+2025-11-04 10:36:14,001 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:14,001 - INFO -   - 최신 파일: papers_20251026_220734.json
+2025-11-04 10:36:14,001 - INFO -   - 파일 날짜: 2025-10-26 22:07:34
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W43.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:14,002 - INFO -   \u2705 paper_week2025-W43.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W44'
+Arguments: ()
+2025-11-04 10:36:14,003 - INFO - 
+\U0001f4c5 2025-W44
+2025-11-04 10:36:14,004 - INFO -   - 백업 파일 수: 7개
+2025-11-04 10:36:14,004 - INFO -   - 최신 파일: papers_20251102_220719.json
+2025-11-04 10:36:14,004 - INFO -   - 파일 날짜: 2025-11-02 22:07:19
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W44.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:14,005 - INFO -   \u2705 paper_week2025-W44.json 저장 완료 (10개 논문)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4c5' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 198, in migrate_all_backups
+    logger.info(f"\n\U0001f4c5 {week_number}")
+Message: '\n\U0001f4c5 2025-W45'
+Arguments: ()
+2025-11-04 10:36:14,006 - INFO - 
+\U0001f4c5 2025-W45
+2025-11-04 10:36:14,006 - INFO -   - 백업 파일 수: 1개
+2025-11-04 10:36:14,006 - INFO -   - 최신 파일: papers_20251103_220807.json
+2025-11-04 10:36:14,006 - INFO -   - 파일 날짜: 2025-11-03 22:08:07
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2705' in position 35: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 221, in main
+    success, fail = migrate_all_backups()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 204, in migrate_all_backups
+    if save_to_database(latest_file, week_number):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 148, in save_to_database
+    logger.info(f"  \u2705 {target_file.name} 저장 완료 ({len(papers_data)}개 논문)")
+Message: '  \u2705 paper_week2025-W45.json 저장 완료 (10개 논문)'
+Arguments: ()
+2025-11-04 10:36:14,007 - INFO -   \u2705 paper_week2025-W45.json 저장 완료 (10개 논문)
+2025-11-04 10:36:14,008 - INFO - 
+======================================================================
+2025-11-04 10:36:14,008 - INFO - 마이그레이션 완료!
+2025-11-04 10:36:14,008 - INFO -   - 성공: 23개 주차
+2025-11-04 10:36:14,008 - INFO -   - 실패: 0개 주차
+2025-11-04 10:36:14,008 - INFO - ======================================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 225, in main
+    print("\U0001f4ca 마이그레이션 결과 요약")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4ca' in position 0: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\default.DESKTOP-MN76BN7\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4ca' in position 271: illegal multibyte sequence
+Call stack:
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 242, in <module>
+    main()
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 237, in main
+    logger.error(f"예상치 못한 오류 발생: {e}", exc_info=True)
+Message: "예상치 못한 오류 발생: 'cp949' codec can't encode character '\\U0001f4ca' in position 0: illegal multibyte sequence"
+Arguments: ()
+2025-11-04 10:36:14,009 - ERROR - 예상치 못한 오류 발생: 'cp949' codec can't encode character '\U0001f4ca' in position 0: illegal multibyte sequence
+Traceback (most recent call last):
+  File "D:\codes\paper_summary\migrate_backups_to_database.py", line 225, in main
+    print("\U0001f4ca 마이그레이션 결과 요약")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\U0001f4ca' in position 0: illegal multibyte sequence
+
+======================================================================

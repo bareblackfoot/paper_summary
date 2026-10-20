@@ -1,0 +1,155 @@
+=== Paper Collection Started at Tue Aug 26 22:07:13 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W35
+URL: https://huggingface.co/papers/week/2025-W35
+Found 10 papers in weekly view
+Fetching likes for: InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency
+Fetching likes for: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Fetching likes for: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Fetching likes for: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Fetching likes for: Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation
+Fetching likes for: MV-RAG: Retrieval Augmented Multiview Diffusion
+Fetching likes for: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image
+  Generation
+Fetching likes for: Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement
+  Learning for General LLM Reasoning
+Fetching likes for: EgoTwin: Dreaming Body and View in First Person
+Fetching likes for: Beyond Memorization: Extending Reasoning Depth with Recurrence, Memory
+  and Test-Time Compute Scaling
+Selected top 10 papers by likes:
+1. InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency (108 likes)
+2. Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR (107 likes)
+3. AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs (82 likes)
+4. ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks (39 likes)
+5. Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation (33 likes)
+6. MV-RAG: Retrieval Augmented Multiview Diffusion (28 likes)
+7. T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image
+  Generation (20 likes)
+8. Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement
+  Learning for General LLM Reasoning (17 likes)
+9. EgoTwin: Dreaming Body and View in First Person (16 likes)
+10. Beyond Memorization: Extending Reasoning Depth with Recurrence, Memory
+  and Test-Time Compute Scaling (15 likes)
+Found abstract: We introduce InternVL 3.5, a new family of open-source multimodal models that
+significantly advances...
+Processed paper: InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as
+a key paradigm for pos...
+Processed paper: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Found abstract: In this paper, we introduce a novel learning paradigm for adaptive Large
+Language Model (LLM) agents...
+Processed paper: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Found abstract: Language-guided long-horizon mobile manipulation has long been a grand
+challenge in embodied semanti...
+Processed paper: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Found abstract: Despite the promising progress of recent autoregressive models in
+text-to-image (T2I) generation, th...
+Processed paper: Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation
+Found abstract: Text-to-3D generation approaches have advanced significantly by leveraging
+pretrained 2D diffusion p...
+Processed paper: MV-RAG: Retrieval Augmented Multiview Diffusion
+Found abstract: We propose T2I-ReasonBench, a benchmark evaluating reasoning capabilities of
+text-to-image (T2I) mod...
+Processed paper: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image
+  Generation
+Found abstract: Recent advances in Large Language Models (LLMs) have underscored the
+potential of Reinforcement Lear...
+Processed paper: Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement
+  Learning for General LLM Reasoning
+Found abstract: While exocentric video synthesis has achieved great progress, egocentric
+video generation remains la...
+Processed paper: EgoTwin: Dreaming Body and View in First Person
+Found abstract: Reasoning is a core capability of large language models, yet understanding
+how they learn and perfor...
+Processed paper: Beyond Memorization: Extending Reasoning Depth with Recurrence, Memory
+  and Test-Time Compute Scaling
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Paper already exists, checking if translation is complete...
+Update likes: 107  ->  27
+Update date_collected: 2025-08-27T07:07:22.435859+09:00  ->  2025-08-26T07:08:07.689731+09:00
+
+Processing paper 3/10
+Title: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 82  ->  52
+Update date_collected: 2025-08-27T07:07:22.437257+09:00  ->  2025-08-26T07:08:07.687128+09:00
+
+Processing paper 4/10
+Title: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 39  ->  34
+Update date_collected: 2025-08-27T07:07:22.438623+09:00  ->  2025-08-26T07:08:07.688515+09:00
+
+Processing paper 5/10
+Title: Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: MV-RAG: Retrieval Augmented Multiview Diffusion
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image
+  Generation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement
+  Learning for General LLM Reasoning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: EgoTwin: Dreaming Body and View in First Person
+Paper already exists, checking if translation is complete...
+Update likes: 16  ->  14
+Update date_collected: 2025-08-27T07:07:22.444861+09:00  ->  2025-08-26T07:08:07.690973+09:00
+
+Processing paper 10/10
+Title: Beyond Memorization: Extending Reasoning Depth with Recurrence, Memory
+  and Test-Time Compute Scaling
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W35.json...
+
+Updating Notion database...
+Creating new paper: InternVL3.5: 다재다능성, 추론 능력, 효율성을 높이는 오픈소스 다모델의 진보
+Updating paper: Pass@1 이상: 변이 문제 합성과 함께하는 Self-Play가 지속시키는 RLVR (likes: 27 -> 107)
+Updating paper: AgentFly: LLM 에이전트 파인튜닝에 파인튜닝 없이 (likes: 52 -> 82)
+Updating paper: 오딧세이: 장기간 작업을 위한 오픈 월드 사분다리 탐험과 조작 (likes: 34 -> 39)
+Creating new paper: 시각-지카이드: 단계별 지도 활용한 강화학습을 통한 텍스트-이미지 생성
+Creating new paper: MV-RAG: 검색 보강된 다중뷰 확산
+Creating new paper: T2I-ReasonBench: Reasoning-Informed Text-to-Image Generation의 평가를 위한 벤치마킹
+Creating new paper: 탐사 병목 극복: Rubric-Scaffolded Reinforcement Learning을 통한 일반적 LLM 추론
+Updating paper: 자아쌍: 일인칭 시점의 몸과 시야를 꿈꾸다 (likes: 14 -> 16)
+Creating new paper: 암기 너머로: 재귀, 메모리 및 테스트 시간 연산 확장을 통한 추론 깊이 확장
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Aug 26 22:09:34 UTC 2025 ===
+

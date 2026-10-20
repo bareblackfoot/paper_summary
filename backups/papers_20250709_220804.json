@@ -1,0 +1,339 @@
+[
+  {
+    "title": "MemOS: A Memory OS for AI System",
+    "abstract": "Large Language Models (LLMs) have become an essential infrastructure for\nArtificial General Intelligence (AGI), yet their lack of well-defined memory\nmanagement systems hinders the development of long-context reasoning, continual\npersonalization, and knowledge consistency.Existing models mainly rely on\nstatic parameters and short-lived contextual states, limiting their ability to\ntrack user preferences or update knowledge over extended periods.While\nRetrieval-Augmented Generation (RAG) introduces external knowledge in plain\ntext, it remains a stateless workaround without lifecycle control or\nintegration with persistent representations.Recent work has modeled the\ntraining and inference cost of LLMs from a memory hierarchy perspective,\nshowing that introducing an explicit memory layer between parameter memory and\nexternal retrieval can substantially reduce these costs by externalizing\nspecific knowledge. Beyond computational efficiency, LLMs face broader\nchallenges arising from how information is distributed over time and context,\nrequiring systems capable of managing heterogeneous knowledge spanning\ndifferent temporal scales and sources. To address this challenge, we propose\nMemOS, a memory operating system that treats memory as a manageable system\nresource. It unifies the representation, scheduling, and evolution of\nplaintext, activation-based, and parameter-level memories, enabling\ncost-efficient storage and retrieval. As the basic unit, a MemCube encapsulates\nboth memory content and metadata such as provenance and versioning. MemCubes\ncan be composed, migrated, and fused over time, enabling flexible transitions\nbetween memory types and bridging retrieval with parameter-based learning.\nMemOS establishes a memory-centric system framework that brings\ncontrollability, plasticity, and evolvability to LLMs, laying the foundation\nfor continual learning and personalized modeling.",
+    "authors": [
+      "Zhiyu Li",
+      "Shichao Song",
+      "Chenyang Xi",
+      "Hanyu Wang",
+      "Chen Tang",
+      "Simin Niu",
+      "Ding Chen",
+      "Jiawei Yang",
+      "Chunyu Li",
+      "Qingchen Yu",
+      "Jihao Zhao",
+      "Yezhaohui Wang",
+      "Peng Liu",
+      "Zehao Lin",
+      "Pengyuan Wang",
+      "Jiahao Huo",
+      "Tianyi Chen",
+      "Kai Chen",
+      "Kehang Li",
+      "Zhen Tao",
+      "Junpeng Ren",
+      "Huayi Lai"
+    ],
+    "likes": 91,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2507.03724",
+    "date_collected": "2025-07-09T20:20:41.770783+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "MemOS: AI 시스템을 위한 메모리 운영 체제",
+      "abstract": "대규모 언어 모델(LLMs)은 인공 일반지능(AGI)을 위한 중요한 인프라가 되었지만, 잘 정의된 메모리 관리 시스템의 부재로 인해 장문 맥락 추론, 계속적인 개인화, 지식 일관성 발전이 제한된다. 기존 모델은 주로 정적 매개변수와 단기적 문맥 상태에 의존하여 사용자 기호를 추적하거나 지식을 오랫동안 업데이트하는 능력이 제한된다. 외부 지식을 일반 텍스트로 도입하는 검색 보강 생성(RAG)은 생명주기 제어나 지속적 표현과의 통합 없이 상태가 없는 해결책으로 남아 있다. 최근 연구에서는 메모리 계층 관점에서 LLMs의 교육 및 추론 비용을 모델링함으로써 매개 변수 메모리와 외부 검색 사이에 명시적인 메모리 레이어를 도입하면 특정 지식을 외부화하여 이러한 비용을 상당히 줄일 수 있다는 것을 보였다. 연산 효율성 이상으로, 정보가 어떻게 시간과 맥락에 걸쳐 분산되는지에 따라 LLM은 시간적 및 맥락적으로 다른 지식을 관리할 수 있는 시스템을 필요로 한다. 이러한 도전에 대처하기 위해 우리는 메모리를 관리 가능한 시스템 자원으로 다루는 MemOS를 제안한다. 이 시스템은 평문, 활성 기반, 매개변수 수준 메모리의 표현, 스케줄링, 진화를 통합하여 비용 효과적인 저장 및 검색을 가능케 한다. MemCube는 기본 단위로, 메모리 콘텐츠와 출처, 버전 등 메타데이터를 캡슐화한다. MemCube는 시간이 지나면서 구성, 이동, 융합될 수 있어 메모리 유형 간 유연한 전환을 허용하고 검색을 매개변수 기반 학습과 이어주는 것을 가능케 한다. MemOS는 LLM에 통제성, 가변성, 발전 가능성을 제공하는 메모리 중심 시스템 구조를 확립하여 계속적인 학습과 개인화 모델링을 위한 기초를 마련한다."
+    },
+    "summary": "1. 대규모 언어 모델은 외부 지식을 획득하는 현재의 한계를 극복하기 위해 MemOS와 같은 메모리 운영 체제를 도입하여 지식을 효과적으로 저장하고 검색하는 것을 제안한다.\n2. MemOS는 MemCube를 사용하여 메모리 콘텐츠와 메타데이터를 캡슐화함으로써 메모리 유형 간의 유연한 전환을 가능케 하며, 검색과 매개변수 기반 학습을 결합함으로써 제어성, 가변성, 발전 가능성을 제공한다.\n3. 이를 통해 MemOS는 LLMs의 지속적인 학습과 개인화 모델링을 위한 기반을 마련하여 인공 일반지능의 발전에 기여할 수 있다.",
+    "categories": [
+      "LLM",
+      "AI System",
+      "Memory Management"
+    ]
+  },
+  {
+    "title": "Should We Still Pretrain Encoders with Masked Language Modeling?",
+    "abstract": "Learning high-quality text representations is fundamental to a wide range of\nNLP tasks. While encoder pretraining has traditionally relied on Masked\nLanguage Modeling (MLM), recent evidence suggests that decoder models\npretrained with Causal Language Modeling (CLM) can be effectively repurposed as\nencoders, often surpassing traditional encoders on text representation\nbenchmarks. However, it remains unclear whether these gains reflect an inherent\nadvantage of the CLM objective or arise from confounding factors such as model\nand data scale. In this paper, we address this question through a series of\nlarge-scale, carefully controlled pretraining ablations, training a total of 30\nmodels ranging from 210 million to 1 billion parameters, and conducting over\n15,000 fine-tuning and evaluation runs. We find that while training with MLM\ngenerally yields better performance across text representation tasks,\nCLM-trained models are more data-efficient and demonstrate improved fine-tuning\nstability. Building on these findings, we experimentally show that a biphasic\ntraining strategy that sequentially applies CLM and then MLM, achieves optimal\nperformance under a fixed computational training budget. Moreover, we\ndemonstrate that this strategy becomes more appealing when initializing from\nreadily available pretrained CLM models (from the existing LLM ecosystem),\nreducing the computational burden needed to train best-in-class encoder models.\nWe release all project artifacts at https://hf.co/MLMvsCLM to foster further\nresearch.",
+    "authors": [
+      "Hippolyte Gisserot-Boukhlef",
+      "Nicolas Boizard",
+      "Manuel Faysse",
+      "Duarte M. Alves",
+      "Emmanuel Malherbe",
+      "André F. T. Martins",
+      "Céline Hudelot",
+      "Pierre Colombo"
+    ],
+    "likes": 64,
+    "published_date": "Jul 1",
+    "url": "https://huggingface.co/papers/2507.00994",
+    "date_collected": "2025-07-09T20:20:41.772042+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "마스크된 언어 모델링으로 인코더를 여전히 사전학습해야 할까요?",
+      "abstract": "고품질 텍스트 표현 학습은 다양한 자연어 처리 작업에 기본적입니다. 인코더 사전학습은 일반적으로 마스크된 언어 모델링(MLM)을 사용해왔지만, 최근 연구에서는 인과 언어 모델링(CLM)으로 사전학습된 디코더 모델이 종종 기존의 인코더를 능가하는 텍스트 표현 기준에서 효과적으로 재활용될 수 있다는 증거가 나타났습니다. 그러나 이러한 성과가 CLM 목표의 본연적인 장점에서 비롯된 것인지 아니면 모델 및 데이터 규모와 같은 혼동 요인에서 비롯된 것인지 여전히 분명하지 않습니다. 본 논문에서는 이 질문에 대해 21억 개 파라미터에서 10억 개 파라미터의 범위에 걸쳐 총 30개 모델을 훈련시키고 1만 5000회 이상의 파인튜닝 및 평가 실행을 실시하는 대규모이며 신중하게 제어된 사전학습 제거를 통해 이를 해결합니다. MLM으로 훈련하는 동안 일반적으로 텍스트 표현 작업에서 더 나은 성능을 내지만, CLM으로 훈련된 모델은 데이터 효율성이 뛰어나며 파인튜닝 안정성이 향상됩니다. 이러한 결과를 바탕으로 우리는 순차적으로 CLM을 먼저 적용한 후 MLM을 적용하는 양상적 훈련 전략이 고정된 계산 훈련 예산 하에서 최적의 성능을 달성한다는 것을 실험적으로 보여줍니다. 더 나아가, 기존의 LLM 생태계에서 미리 훈련된 CLM 모델에서 초기화할 때 이러한 전략이 더 매력적임을 보여주며, 최고 수준의 인코더 모델을 훈련하는 데 필요한 계산 부담을 줄입니다. 추가 연구를 위해 모든 프로젝트 자료를 https://hf.co/MLMvsCLM 에 공개합니다."
+    },
+    "summary": "1. MLM 훈련은 텍스트 표현 작업에서 일반적으로 더 나은 성능을 보이지만, CLM으로 훈련된 모델은 데이터를 더 효율적으로 사용하고 파인튜닝의 안정성을 개선합니다.\n2. 순차적인 CLM과 MLM을 적용하는 양상적 훈련 전략은 고정된 계산 훈련 예산 하에서 최적의 성능을 달성합니다.\n3. 기존 LLM 생태계의 사전훈련된 CLM 모델로부터 초기화할 때 이 양상적 전략은 최고 수준의 인코더 모델을 훈련하는 데 필요한 계산 부담을 줄입니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
+    "abstract": "As language agents tackle increasingly complex tasks, they struggle with\neffective error correction and experience reuse across domains. We introduce\nAgent KB, a hierarchical experience framework that enables complex agentic\nproblem solving via a novel Reason-Retrieve-Refine pipeline. Agent KB addresses\na core limitation: agents traditionally cannot learn from each other's\nexperiences. By capturing both high-level strategies and detailed execution\nlogs, Agent KB creates a shared knowledge base that enables cross-agent\nknowledge transfer. Evaluated on the GAIA benchmark, Agent KB improves success\nrates by up to 16.28 percentage points. On the most challenging tasks, Claude-3\nimproves from 38.46% to 57.69%, while GPT-4 improves from 53.49% to 73.26% on\nintermediate tasks. On SWE-bench code repair, Agent KB enables Claude-3 to\nimprove from 41.33% to 53.33%. Our results suggest that Agent KB provides a\nmodular, framework-agnostic infrastructure for enabling agents to learn from\npast experiences and generalize successful strategies to new tasks.",
+    "authors": [
+      "Xiangru Tang",
+      "Tianrui Qin",
+      "Tianhao Peng",
+      "Ziyang Zhou",
+      "Daniel Shao",
+      "Tingting Du",
+      "Xinming Wei",
+      "Peng Xia",
+      "Fang Wu",
+      "He Zhu",
+      "Ge Zhang",
+      "Jiaheng Liu",
+      "Xingyao Wang",
+      "Sirui Hong",
+      "Chenglin Wu",
+      "Hao Cheng",
+      "Chi Wang",
+      "Wangchunshu Zhou"
+    ],
+    "likes": 52,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.06229",
+    "date_collected": "2025-07-09T20:20:41.773729+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "Cross-Domain 경험 활용을 통한 Agentic 문제 해결에 대한 Agent KB",
+      "abstract": "언어 에이전트들이 점차 복잡해지는 작업에 대처할 때, 다양한 영역 간 효과적인 오류 수정과 경험 재사용에 어려움을 겪습니다. 본 연구에서는 새로운 Reason-Retrieve-Refine 파이프라인을 통해 복잡한 Agentic 문제 해결을 가능하게 하는 계층적 경험 프레임워크인 Agent KB를 소개합니다. Agent KB는 기존에 에이전트들이 서로의 경험으로부터 배울 수 없다는 핵심적인 한계를 극복합니다."
+    },
+    "summary": "1. Agent KB는 고수준 전략과 세부 실행 로그를 포착하여, 다양한 에이전트 간 지식 전이를 가능케 하는 공유 지식 베이스를 만들어낸다.\n2. GAIA 벤치마크를 통한 평가에서 Agent KB는 성공률을 최대 16.28%포인트 향상시킨다.\n3. Agent KB는 과거 경험으로부터 학습하고 새로운 작업에 성공적인 전략을 일반화하는 데 도움이 되는 모듈화된, 프레임워크에 독립적인 인프라를 제공한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "A Survey on Latent Reasoning",
+    "abstract": "Large Language Models (LLMs) have demonstrated impressive reasoning\ncapabilities, especially when guided by explicit chain-of-thought (CoT)\nreasoning that verbalizes intermediate steps. While CoT improves both\ninterpretability and accuracy, its dependence on natural language reasoning\nlimits the model's expressive bandwidth. Latent reasoning tackles this\nbottleneck by performing multi-step inference entirely in the model's\ncontinuous hidden state, eliminating token-level supervision. To advance latent\nreasoning research, this survey provides a comprehensive overview of the\nemerging field of latent reasoning. We begin by examining the foundational role\nof neural network layers as the computational substrate for reasoning,\nhighlighting how hierarchical representations support complex transformations.\nNext, we explore diverse latent reasoning methodologies, including\nactivation-based recurrence, hidden state propagation, and fine-tuning\nstrategies that compress or internalize explicit reasoning traces. Finally, we\ndiscuss advanced paradigms such as infinite-depth latent reasoning via masked\ndiffusion models, which enable globally consistent and reversible reasoning\nprocesses. By unifying these perspectives, we aim to clarify the conceptual\nlandscape of latent reasoning and chart future directions for research at the\nfrontier of LLM cognition. An associated GitHub repository collecting the\nlatest papers and repos is available at:\nhttps://github.com/multimodal-art-projection/LatentCoT-Horizon/.",
+    "authors": [
+      "Rui-Jie Zhu",
+      "Tianhao Peng",
+      "Tianhao Cheng",
+      "Xingwei Qu",
+      "Jinfa Huang",
+      "Dawei Zhu",
+      "Hao Wang",
+      "Kaiwen Xue",
+      "Xuanliang Zhang",
+      "Yong Shan",
+      "Tianle Cai",
+      "Taylor Kergan",
+      "Assel Kembay",
+      "Andrew Smith",
+      "Chenghua Lin",
+      "Binh Nguyen",
+      "Yuqi Pan",
+      "Yuhong Chou",
+      "Zefan Cai",
+      "Zhenhe Wu",
+      "Yongchi Zhao",
+      "Tianyu Liu"
+    ],
+    "likes": 46,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.06203",
+    "date_collected": "2025-07-09T20:20:41.775628+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "잠재 추론에 대한 조사",
+      "abstract": "대형 언어 모델(Large Language Models, LLMs)은 중간 단계를 문장으로 표현하는 명시적 사고 연쇄(chain-of-thought, CoT) 추론에 인도될 때 탁월한 추론 능력을 보여주었습니다. 하지만 CoT는 해석성과 정확성을 향상시키지만 자연어 추론에 의존함으로써 모델의 표현 대역폭을 제한합니다. 잠재 추론은 토큰 수준 지도 없이 모델의 연속적인 숨겨진 상태에서 완전히 다단계 추론을 수행하여 이 병목현상을 해결합니다. 잠재 추론 연구를 발전시키기 위해, 본 조사는 잠재 추론 분야의 현황에 대한 포괄적인 개요를 제공합니다. 우리는 이러한 추론을 하는 데 계산적 기저로서 신경망 계층의 필수적인 역할을 검토하고, 계층적 표현이 복잡한 변환을 지원하는 방법을 강조합니다."
+    },
+    "summary": "1. 신경망 계층의 기본 역할을 살펴보면서 계층적 표현이 복잡한 변환을 지원함을 확인\n2. 활성화 기반 반복, 숨겨진 상태 전파, 명시적 추론 추적을 압축하거나 내재화하는 세분화된 잠재 추론 방법론을 탐구\n3. 마스킹 확산 모델을 통한 무한 깊이의 잠재 추론과 같은 고급 패러다임에 대해 논의하며, 글로벌하게 일관성 있고 역반전적인 추론 프로세스를 가능케 하는 방법을 다룸",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "SingLoRA: Low Rank Adaptation Using a Single Matrix",
+    "abstract": "Low-Rank Adaptation (LoRA) has significantly advanced parameter-efficient\nfine-tuning of large pretrained models. LoRA augments the pre-trained weights\nof a model by adding the product of two smaller matrices that together form a\nlow-rank matrix update. Recent research has shown that scale disparities\nbetween these two matrices often cause unstable training dynamics, leading to\nsuboptimal performance. In this paper, we propose SingLoRA, which reformulates\nlow-rank adaptation by learning the weights update as a decomposition of a\nsingle low-rank matrix multiplied by its transpose. This simple design\ninherently removes inter-matrix scale conflicts, ensuring stable optimization,\nand roughly halves the parameter count. We analyze SingLoRA within the\ninfinite-width neural network framework, showing that it guarantees stable\nfeature learning by construction. Extensive experiments on multiple tasks\nvalidate these benefits. In common sense reasoning, fine-tuning LLama 7B on\nMNLI with SingLoRA achieves 91.3% accuracy - surpassing LoRA (89.1%) and LoRA+\n(90.2%) - while using only 60% of their parameter budget. In image generation,\nfine-tuning Stable Diffusion with SingLoRA significantly improves image\nfidelity on DreamBooth, achieving a DINO similarity score of 0.151, compared to\nscores of 0.148 and 0.143 for DoRA and LoRA, respectively.",
+    "authors": [
+      "David Bensaïd",
+      "Noam Rotstein",
+      "Roy Velich",
+      "Daniel Bensaïd",
+      "Ron Kimmel"
+    ],
+    "likes": 41,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.05566",
+    "date_collected": "2025-07-09T20:20:41.776772+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "싱글로라: 단일 행렬을 이용한 저랭크 적응",
+      "abstract": "저랭크 적응(LoRA)은 대규모 사전 훈련된 모델의 효율적인 파라미터 조정을 크게 발전시켰다. 이 논문에서는 두 개의 작은 행렬의 곱으로 구성된 낮은 랭크 행렬 업데이트를 추가함으로써 모델의 사전 훈련된 가중치를 확장하는 LoRA를 소개한다. 최근 연구에서 이 두 행렬 사이의 규모 불일치가 종종 불안정한 훈련 역학을 유발하여 최적의 성능을 줄이는 것으로 나타났다. SingLoRA를 제안함으로서 저랭크 적응을 단일 저랭크 행렬과 그 전치행렬의 분해로 학습하여 하나의 낮은 랭크 행렬의 업데이트로 재정의한다. 이 간단한 구조는 행렬 간 규모 충돌을 자연히 제거하여 안정적인 최적화를 보장하고 파라미터 수를 대략 절반으로 줄인다. 우리는 SingLoRA를 무한폭 신경망 프레임워크 내에서 분석하여 안정적인 특성 학습이 구성에 의해 보장된다는 것을 보여준다. 여러 작업에 대한 방대한 실험으로 이러한 이점을 검증한다."
+    },
+    "summary": "1. SingLoRA는 한 개의 행렬을 사용하여 낮은 랭크 적응을 재정의하여 안정적인 최적화를 보장하고 파라미터 수를 줄이는 기술이다.\n2. 무한폭 신경망 프레임워크 내에서 SingLoRA가 안정적인 특성 학습을 보장함을 보여주는 실험을 통해 검증되었다.\n3. SingLoRA를 사용한 다양한 작업 실험에서 이점이 입증되었으며, MNLI에서 LLama 7B를 SingLoRA로 파인튜닝한 결과 LoRA와 LoRA+보다 뛰어난 정확도를 보였다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous\n  Capture",
+    "abstract": "Reconstructing fast-dynamic scenes from multi-view videos is crucial for\nhigh-speed motion analysis and realistic 4D reconstruction. However, the\nmajority of 4D capture systems are limited to frame rates below 30 FPS (frames\nper second), and a direct 4D reconstruction of high-speed motion from low FPS\ninput may lead to undesirable results. In this work, we propose a high-speed 4D\ncapturing system only using low FPS cameras, through novel capturing and\nprocessing modules. On the capturing side, we propose an asynchronous capture\nscheme that increases the effective frame rate by staggering the start times of\ncameras. By grouping cameras and leveraging a base frame rate of 25 FPS, our\nmethod achieves an equivalent frame rate of 100-200 FPS without requiring\nspecialized high-speed cameras. On processing side, we also propose a novel\ngenerative model to fix artifacts caused by 4D sparse-view reconstruction, as\nasynchrony reduces the number of viewpoints at each timestamp. Specifically, we\npropose to train a video-diffusion-based artifact-fix model for sparse 4D\nreconstruction, which refines missing details, maintains temporal consistency,\nand improves overall reconstruction quality. Experimental results demonstrate\nthat our method significantly enhances high-speed 4D reconstruction compared to\nsynchronous capture.",
+    "authors": [
+      "Yutian Chen",
+      "Shi Guo",
+      "Tianshuo Yang",
+      "Lihe Ding",
+      "Xiuyuan Yu",
+      "Jinwei Gu",
+      "Tianfan Xue"
+    ],
+    "likes": 35,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.05163",
+    "date_collected": "2025-07-09T20:20:41.777953+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "4DSloMo: 고속 씬을 위한 4D 재구성과 비동기적 촬영",
+      "abstract": "다중 뷰 비디오로부터 고속 동적 씬을 재구성하는 것은 고속 움직임 분석과 현실적인 4D 재구성에 중요합니다. 본 논문에서는 저 프레임률 카메라만을 이용하여 높은 속도의 4D 캡처 시스템을 제안합니다. 비동기적인 촬영 방법과 신규 촬영 및 처리 모듈을 통해 효율적인 프레임 속도를 달성하며, 적어도 25 FPS의 기본 프레임 속도를 이용하여 100-200 FPS의 등가 프레임 속도를 달성합니다. 또한, 비동기성으로 인한 아티팩트를 개선하기 위한 새로운 생성 모델을 제안하고, 실험 결과는 우리의 방법이 동기적인 촬영에 비해 고속 4D 재구성을 크게 향상시킨다는 것을 보여줍니다."
+    },
+    "summary": "1. 고속 씬의 4D 재구성을 위한 저 프레임속 카메라를 이용한 비동기적 촬영 방법을 제안함.\n2. 25 FPS의 기본 프레임 속도를 이용하여 100-200 FPS의 등가 프레임 속도를 달성하는 새로운 제안된 캡처 시스템 사용.\n3. 아티팩트를 개선하기 위한 비디오 확산 기반 아티팩트 수정 모델을 훈련시켜 고속 4D 재구성 품질을 향상시킨다.",
+    "categories": [
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive\n  World Knowledge",
+    "abstract": "Recent advances in vision-language-action (VLA) models have shown promise in\nintegrating image generation with action prediction to improve generalization\nand reasoning in robot manipulation. However, existing methods are limited to\nchallenging image-based forecasting, which suffers from redundant information\nand lacks comprehensive and critical world knowledge, including dynamic,\nspatial and semantic information. To address these limitations, we propose\nDreamVLA, a novel VLA framework that integrates comprehensive world knowledge\nforecasting to enable inverse dynamics modeling, thereby establishing a\nperception-prediction-action loop for manipulation tasks. Specifically,\nDreamVLA introduces a dynamic-region-guided world knowledge prediction,\nintegrated with the spatial and semantic cues, which provide compact yet\ncomprehensive representations for action planning. This design aligns with how\nhumans interact with the world by first forming abstract multimodal reasoning\nchains before acting. To mitigate interference among the dynamic, spatial and\nsemantic information during training, we adopt a block-wise structured\nattention mechanism that masks their mutual attention, preventing information\nleakage and keeping each representation clean and disentangled. Moreover, to\nmodel the conditional distribution over future actions, we employ a\ndiffusion-based transformer that disentangles action representations from\nshared latent features. Extensive experiments on both real-world and simulation\nenvironments demonstrate that DreamVLA achieves 76.7% success rate on real\nrobot tasks and 4.44 average length on the CALVIN ABC-D benchmarks.",
+    "authors": [
+      "Wenyao Zhang",
+      "Hongsi Liu",
+      "Zekun Qi",
+      "Yunnan Wang",
+      "XinQiang Yu",
+      "Jiazhao Zhang",
+      "Runpei Dong",
+      "Jiawei He",
+      "He Wang",
+      "Zhizheng Zhang",
+      "Li Yi",
+      "Wenjun Zeng",
+      "Xin Jin"
+    ],
+    "likes": 33,
+    "published_date": "Jul 6",
+    "url": "https://huggingface.co/papers/2507.04447",
+    "date_collected": "2025-07-09T20:20:41.779487+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "꿈꾸는 포괄적 세계 지식으로 설계된 비전-언어-행동 모델 DreamVLA",
+      "abstract": "최근에 발전한 비전-언어-행동(VLA) 모델은 이미지 생성과 행동 예측을 통합하여 로봇 조작에서 일반화와 추론을 개선하는 가능성을 보여주었습니다. 그러나 기존 방법들은 동적, 공간적 및 의미론적 정보를 포함한 포괄적이고 중요한 세계 지식이 부족한 어려운 기반의 이미지 예측에 한정되어 있습니다. 이러한 한계를 해결하기 위해 저희는 DreamVLA를 제안합니다. DreamVLA는 역동적인 상황 가이드된 세계 지식 예측을 도입하고 공간적 및 의미론적 정보와 통합하여 로봇 작업에서 인식-예측-행동 루프를 확립합니다."
+    },
+    "summary": "1. DreamVLA는 포괄적인 세계 지식을 활용하여 로봇 작업에서 인식-예측-행동 루프를 구축하는 혁신적인 비전-언어-행동 프레임워크이다.\n2. 이 모델은 동적, 공간적, 의미론적 정보를 효과적으로 통합하고 추상적 다중 모달 추론 체인을 형성하여 사람들이 세상과 상호작용하는 방식과 일치시킨다.\n3. DreamVLA는 블록 단위 구조화된 주의 메커니즘을 통해 학습 중 상호 간섭을 완화하고 정보 누출을 방지함으로써 각 표현을 깔끔하고 분리된 상태로 유지한다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "OmniPart: Part-Aware 3D Generation with Semantic Decoupling and\n  Structural Cohesion",
+    "abstract": "The creation of 3D assets with explicit, editable part structures is crucial\nfor advancing interactive applications, yet most generative methods produce\nonly monolithic shapes, limiting their utility. We introduce OmniPart, a novel\nframework for part-aware 3D object generation designed to achieve high semantic\ndecoupling among components while maintaining robust structural cohesion.\nOmniPart uniquely decouples this complex task into two synergistic stages: (1)\nan autoregressive structure planning module generates a controllable,\nvariable-length sequence of 3D part bounding boxes, critically guided by\nflexible 2D part masks that allow for intuitive control over part decomposition\nwithout requiring direct correspondences or semantic labels; and (2) a\nspatially-conditioned rectified flow model, efficiently adapted from a\npre-trained holistic 3D generator, synthesizes all 3D parts simultaneously and\nconsistently within the planned layout. Our approach supports user-defined part\ngranularity, precise localization, and enables diverse downstream applications.\nExtensive experiments demonstrate that OmniPart achieves state-of-the-art\nperformance, paving the way for more interpretable, editable, and versatile 3D\ncontent.",
+    "authors": [
+      "Yunhan Yang",
+      "Yufan Zhou",
+      "Yuan-Chen Guo",
+      "Zi-Xin Zou",
+      "Yukun Huang",
+      "Ying-Tian Liu",
+      "Hao Xu",
+      "Ding Liang",
+      "Yan-Pei Cao",
+      "Xihui Liu"
+    ],
+    "likes": 32,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.06165",
+    "date_collected": "2025-07-09T20:20:41.780877+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "OmniPart: 파트 의식적 3D 생성에서 의미론적 분리와 구조적 응집",
+      "abstract": "명시적이고 편집 가능한 파트 구조를 갖는 3D 에셋 생성은 상호작용 애플리케이션 발전에 중요하나 대부분의 생성 방법은 단일체 형상만을 생성하여 유용성이 제한됩니다. 본 연구는 OmniPart를 소개합니다. 이는 파트 의식적 3D 객체 생성을 위한 독창적인 프레임워크로, 구성 요소 간 높은 의미론적 분리와 견고한 구조적 응집을 달성하기 위해 설계되었습니다. OmniPart는 이 복잡한 작업을 두 가지 상호작용적 단계로 분리합니다."
+    },
+    "summary": "1. OmniPart는 자동회귀 구조 계획 모듈을 사용하여 사용자가 직접 상응이나 의미적 레이블이 필요하지 않고 직관적인 파트 분해를 가능케 하는 유연한 2D 파트 마스크에 의도적으로 유도되는 3D 파트 경계 상자의 가변 길이 시퀀스를 생성합니다.\n2. 미리 훈련된 전체 3D 생성기에서 효율적으로 적응된 공간 조건화 정렬된 흐름 모델이 계획된 레이아웃 내에서 모든 3D 파트를 동시에 일관되게 합성합니다.\n3. OmniPart는 사용자 정의 파트 세분성을 지원하며 정확한 위치 지정을 가능케 하며 다양한 후속 응용프로그램을 활성화합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "CriticLean: Critic-Guided Reinforcement Learning for Mathematical\n  Formalization",
+    "abstract": "Translating natural language mathematical statements into formal, executable\ncode is a fundamental challenge in automated theorem proving. While prior work\nhas focused on generation and compilation success, little attention has been\npaid to the critic phase-the evaluation of whether generated formalizations\ntruly capture the semantic intent of the original problem. In this paper, we\nintroduce CriticLean, a novel critic-guided reinforcement learning framework\nthat elevates the role of the critic from a passive validator to an active\nlearning component. Specifically, first, we propose the CriticLeanGPT, trained\nvia supervised fine-tuning and reinforcement learning, to rigorously assess the\nsemantic fidelity of Lean 4 formalizations. Then, we introduce CriticLeanBench,\na benchmark designed to measure models' ability to distinguish semantically\ncorrect from incorrect formalizations, and demonstrate that our trained\nCriticLeanGPT models can significantly outperform strong open- and\nclosed-source baselines. Building on the CriticLean framework, we construct\nFineLeanCorpus, a dataset comprising over 285K problems that exhibits rich\ndomain diversity, broad difficulty coverage, and high correctness based on\nhuman evaluation. Overall, our findings highlight that optimizing the critic\nphase is essential for producing reliable formalizations, and we hope our\nCriticLean will provide valuable insights for future advances in formal\nmathematical reasoning.",
+    "authors": [
+      "Zhongyuan Peng",
+      "Yifan Yao",
+      "Kaijing Ma",
+      "Shuyue Guo",
+      "Yizhe Li",
+      "Yichi Zhang",
+      "Chenchen Zhang",
+      "Yifan Zhang",
+      "Zhouliang Yu",
+      "Luming Li",
+      "Minghao Liu",
+      "Yihang Xia",
+      "Jiawei Shen",
+      "Yuchen Wu",
+      "Yixin Cao",
+      "Zhaoxiang Zhang",
+      "Wenhao Huang",
+      "Jiaheng Liu",
+      "Ge Zhang"
+    ],
+    "likes": 31,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2507.06181",
+    "date_collected": "2025-07-09T20:20:41.782629+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "CriticLean: 평가 안내형 강화학습을 활용한 수학 형식화",
+      "abstract": "자연어 수학 문장을 형식적이고 실행 가능한 코드로 번역하는 것은 자동 정리증명에서의 기본적인 과제입니다. 이전 연구는 생성과 컴파일 성공에 초점을 맞추었지만 생성된 형식화가 원래 문제의 의미적 의도를 정확하게 잘 포착하는지를 평가하는 평가 단계, 즉 비평자 단계에 대해 거의 주목을 기울이지 않았습니다. 본 논문에서는 비평자-안내형 강화학습 프레임워크인 CriticLean을 소개합니다. CriticLean은 비평자의 역할을 수동적인 검증기에서 능동적인 학습 구성요소로 높입니다. 구체적으로 먼저 우리는 CriticLeanGPT를 제안하며, 이는 감독 지도 미세 조정과 강화학습을 통해 근본적으로 Lean 4 형식화의 의미적 충실성을 엄밀히 평가합니다. 그런 다음 모델이 올바른 형식화와 부정확한 형식화를 구별하는 능력을 측정하도록 설계된 벤치마크인 CriticLeanBench를 소개하고, 우리가 훈련한 CriticLeanGPT 모델이 강력한 오픈 및 폐쇄 소스 기준을 현저히 능가할 수 있다는 것을 보여줍니다. CriticLean 프레임워크를 기반으로 우리는 FineLeanCorpus를 구축했는데, 이는 인간 평가에 따라 다양한 도메인, 넓은 어려움 범위, 높은 정확성을 보여주는 28만 5천 문제 이상으로 구성된 데이터셋입니다. 전반적으로 우리의 연구 결과는 비평자 단계의 최적화가 신뢰할 수 있는 형식화를 생성하는 데 중요함을 강조하며, CriticLean은 미래의 형식 수학 추론의 진전에 유용한 통찰을 제공할 것으로 기대합니다."
+    },
+    "summary": "1. CriticLean은 비평자-안내형 강화학습 프레임워크로, Lean 4 형식화의 의미적 충실성을 엄밀히 평가하며 성능이 우수하다.\n2. CriticLeanBench는 모델들이 올바른 형식화와 부정확한 형식화를 구별하는 능력을 측정하는 벤치마크를 제시한다.\n3. FineLeanCorpus는 인간 평가에 의해 고품질의 28만 5천 문제가 포함된 데이터셋으로, 다양한 도메인과 어려움을 다루며 미래의 형식 수학 추론에 도움이 될 것이다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context\n  Modeling",
+    "abstract": "Vision-and-Language Navigation (VLN) in real-world settings requires agents\nto process continuous visual streams and generate actions with low latency\ngrounded in language instructions. While Video-based Large Language Models\n(Video-LLMs) have driven recent progress, current VLN methods based on\nVideo-LLM often face trade-offs among fine-grained visual understanding,\nlong-term context modeling and computational efficiency. We introduce\nStreamVLN, a streaming VLN framework that employs a hybrid slow-fast context\nmodeling strategy to support multi-modal reasoning over interleaved vision,\nlanguage and action inputs. The fast-streaming dialogue context facilitates\nresponsive action generation through a sliding-window of active dialogues,\nwhile the slow-updating memory context compresses historical visual states\nusing a 3D-aware token pruning strategy. With this slow-fast design, StreamVLN\nachieves coherent multi-turn dialogue through efficient KV cache reuse,\nsupporting long video streams with bounded context size and inference cost.\nExperiments on VLN-CE benchmarks demonstrate state-of-the-art performance with\nstable low latency, ensuring robustness and efficiency in real-world\ndeployment. The project page is:\nhttps://streamvln.github.io/{https://streamvln.github.io/}.",
+    "authors": [
+      "Meng Wei",
+      "Chenyang Wan",
+      "Xiqian Yu",
+      "Tai Wang",
+      "Yuqiang Yang",
+      "Xiaohan Mao",
+      "Chenming Zhu",
+      "Wenzhe Cai",
+      "Hanqing Wang",
+      "Yilun Chen",
+      "Xihui Liu",
+      "Jiangmiao Pang"
+    ],
+    "likes": 31,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.05240",
+    "date_collected": "2025-07-09T20:20:41.784067+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "StreamVLN: Streaming Vision-and-Language Navigation을 위한 SlowFast 컨텍스트 모델링",
+      "abstract": "현실 세계에서의 Vision-and-Language Navigation (VLN)은 연속적인 시각적 스트림을 처리하고 언어 지침에 기반한 낮은 대기 시간으로 행동을 생성하는 것을 요구합니다. 최근 Video-LLM(비디오 기반 대형 언어 모델)에 기반하여 진보를 이룩해왔지만, Video-LLM에 기반한 현재 VLN 방법은 미세한 시각적 이해, 장기간 컨텍스트 모델링 및 계산 효율성 사이에서 상충점에 직면합니다. 우리는 Multi-Modal 추론을 지원하기 위한 하이브리드 slow-fast 컨텍스트 모델링 전략을 채용하는 스트리밍 VLN 프레임워크인 StreamVLN을 소개합니다. 이 프레임워크는 빠른 스트리밍 대화 컨텍스트를 통해 적극적인 대화창의 슬라이딩 윈도우를 통해 반응성 있는 행동 생성을 돕는 반면, 느린 업데이팅 메모리 컨텍스트는 3D 인식 토큰 가지치기 전략을 사용하여 과거 시각적 상태를 압축합니다. 이 slow-fast 디자인을 통해 StreamVLN은 일관된 멀티턴 대화를 통한 효율적인 KV 캐시 재사용을 통해 긴 비디오 스트림, 유한한 컨텍스트 크기 및 추론 비용을 지원하며 VLN-CE 벤치마크 실험에서 최신의 성과를 보여주고 안정적인 낮은 대기 시간을 보장하여 현실 세계 배포에서 견고함과 효율성을 보증합니다. 프로젝트 페이지: https://streamvln.github.io/{https://streamvln.github.io/}."
+    },
+    "summary": "1. StreamVLN은 빠른 대화 컨텍스트와 느린 메모리 컨텍스트를 적절히 결합하여 효율적인 Vision-and-Language Navigation을 지원합니다.\n2. 이 프레임워크는 KV 캐시 재사용을 통해 안정적인 성능과 낮은 대기 시간을 제공하며 실제 환경에서 효율적으로 작동합니다.\n3. StreamVLN은 Multi-Modal 추론을 가능하게 하며, Video-LLM 기반의 VLN 방법의 한계를 극복하는데 기여합니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  }
+]

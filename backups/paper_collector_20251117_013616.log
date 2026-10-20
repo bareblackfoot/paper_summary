@@ -1,0 +1,139 @@
+=== Paper Collection Started at Sun Nov 16 22:07:23 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W47
+URL: https://huggingface.co/papers/week/2025-W47
+Found 10 papers in weekly view
+Fetching likes for: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Fetching likes for: Grounding Computer Use Agents on Human Demonstrations
+Fetching likes for: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Fetching likes for: One Small Step in Latent, One Giant Leap for Pixels: Fast Latent Upscale Adapter for Your Diffusion Models
+Fetching likes for: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Fetching likes for: TiDAR: Think in Diffusion, Talk in Autoregression
+Fetching likes for: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Fetching likes for: PAN: A World Model for General, Interactable, and Long-Horizon World Simulation
+Fetching likes for: MADD: Multi-Agent Drug Discovery Orchestra
+Fetching likes for: Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising
+Selected top 10 papers by likes:
+1. Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds (145 likes)
+2. Grounding Computer Use Agents on Human Demonstrations (98 likes)
+3. Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B (93 likes)
+4. One Small Step in Latent, One Giant Leap for Pixels: Fast Latent Upscale Adapter for Your Diffusion Models (85 likes)
+5. HaluMem: Evaluating Hallucinations in Memory Systems of Agents (85 likes)
+6. TiDAR: Think in Diffusion, Talk in Autoregression (72 likes)
+7. IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction (67 likes)
+8. PAN: A World Model for General, Interactable, and Long-Horizon World Simulation (63 likes)
+9. MADD: Multi-Agent Drug Discovery Orchestra (54 likes)
+10. Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising (50 likes)
+Found abstract: We introduce Lumine, the first open recipe for developing generalist agents capable of completing ho...
+Processed paper: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Found abstract: Building reliable computer-use agents requires grounding: accurately
+connecting natural language ins...
+Processed paper: Grounding Computer Use Agents on Human Demonstrations
+Found abstract: Challenging the prevailing consensus that small models inherently lack robust
+reasoning, this report...
+Processed paper: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Found abstract: Diffusion models struggle to scale beyond their training resolutions, as direct high-resolution samp...
+Processed paper: One Small Step in Latent, One Giant Leap for Pixels: Fast Latent Upscale Adapter for Your Diffusion Models
+Found abstract: Memory systems are key components that enable AI systems such as LLMs and AI
+agents to achieve long-...
+Processed paper: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Found abstract: Diffusion language models hold the promise of fast parallel generation, while autoregressive (AR) mo...
+Processed paper: TiDAR: Think in Diffusion, Talk in Autoregression
+Found abstract: Recent advances in deep-research agents have shown promise for autonomous
+knowledge construction thr...
+Processed paper: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Found abstract: A world model enables an intelligent agent to imagine, predict, and reason about how the world evolv...
+Processed paper: PAN: A World Model for General, Interactable, and Long-Horizon World Simulation
+Found abstract: Hit identification is a central challenge in early drug discovery, traditionally requiring substanti...
+Processed paper: MADD: Multi-Agent Drug Discovery Orchestra
+Found abstract: Diffusion-based video generation can create realistic videos, yet existing image- and text-based con...
+Processed paper: Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Paper already exists, checking if translation is complete...
+Update likes: 145  ->  137
+Update date_collected: 2025-11-17T07:07:30.874842+09:00  ->  2025-11-16T07:06:37.912644+09:00
+
+Processing paper 2/10
+Title: Grounding Computer Use Agents on Human Demonstrations
+Paper already exists, checking if translation is complete...
+Update likes: 98  ->  97
+Update date_collected: 2025-11-17T07:07:30.876561+09:00  ->  2025-11-16T07:06:37.914369+09:00
+
+Processing paper 3/10
+Title: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Paper already exists, checking if translation is complete...
+Update likes: 93  ->  91
+Update date_collected: 2025-11-17T07:07:30.877925+09:00  ->  2025-11-16T07:06:37.915745+09:00
+
+Processing paper 4/10
+Title: One Small Step in Latent, One Giant Leap for Pixels: Fast Latent Upscale Adapter for Your Diffusion Models
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  75
+Update date_collected: 2025-11-17T07:07:30.878986+09:00  ->  2025-11-16T07:06:37.918211+09:00
+
+Processing paper 5/10
+Title: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  84
+Update date_collected: 2025-11-17T07:07:30.880348+09:00  ->  2025-11-16T07:06:37.917120+09:00
+
+Processing paper 6/10
+Title: TiDAR: Think in Diffusion, Talk in Autoregression
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  65
+Update date_collected: 2025-11-17T07:07:30.881702+09:00  ->  2025-11-16T07:06:37.921291+09:00
+
+Processing paper 7/10
+Title: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Paper already exists, checking if translation is complete...
+Update likes: 67  ->  67
+Update date_collected: 2025-11-17T07:07:30.883327+09:00  ->  2025-11-16T07:06:37.919883+09:00
+
+Processing paper 8/10
+Title: PAN: A World Model for General, Interactable, and Long-Horizon World Simulation
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  54
+Update date_collected: 2025-11-17T07:07:30.885240+09:00  ->  2025-11-16T07:06:37.923219+09:00
+
+Processing paper 9/10
+Title: MADD: Multi-Agent Drug Discovery Orchestra
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  54
+Update date_collected: 2025-11-17T07:07:30.887093+09:00  ->  2025-11-16T07:06:37.925109+09:00
+
+Processing paper 10/10
+Title: Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W47.json...
+
+Updating Notion database...
+Updating paper: 3D 오픈 월드에서 일반적 에이전트 구축을 위한 Lumine: 오픈 레시피 (likes: 137 -> 145)
+Updating paper: 인간 데모에 기반한 컴퓨터 사용 에이전트의 연결 (likes: 97 -> 98)
+Updating paper: 작은 모델, 큰 논리: 다양성 주도 최적화는 VibeThinker-1.5B에서 대규모 모델 추론 능력을 촉구한다 (likes: 91 -> 93)
+Updating paper: 레이턴트 한 발, 픽셀을 위한 거대한 발걸음: 당신의 디퓨전 모델을 위한 빠른 레이턴트 업스케일 어댑터 (likes: 75 -> 85)
+Updating paper: HaluMem: 에이전트의 기억 시스템에서 환각 평가 (likes: 84 -> 85)
+Updating paper: TiDAR: 확산으로 생각하고 자기회귀로 말하다 (likes: 65 -> 72)
+Paper already exists with same likes count: IterResearch: Markovian State를 통한 장기 고려 에이전트 재고
+Updating paper: PAN: 일반적이고 상호작용 가능하며 장기적 시각의 세계 시뮬레이션 모델 (likes: 54 -> 63)
+Paper already exists with same likes count: 다중 에이전트 약물 발견 오케스트라 (MADD: Multi-Agent Drug Discovery Orchestra)
+Updating paper: 움직임까지 시간: 이중 시계 소음 제거를 통한 훈련 없는 동작 제어 비디오 생성 (likes: 48 -> 50)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Nov 16 22:09:47 UTC 2025 ===
+

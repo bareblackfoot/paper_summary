@@ -1,0 +1,1295 @@
+=== Paper Collection Started at Sun Jun  8 06:47:57 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_updater import update_notion_database
+ModuleNotFoundError: No module named 'notion_updater'
+=== Paper Collection Finished at Sun Jun  8 06:47:58 UTC 2025 ===
+
+=== Paper Collection Started at Sun Jun  8 07:08:16 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_auto_publisher import create_notion_page
+  File "/home/runner/work/paper_summary/paper_summary/notion_auto_publisher.py", line 3, in <module>
+    from notion_client import Client
+ModuleNotFoundError: No module named 'notion_client'
+=== Paper Collection Finished at Sun Jun  8 07:08:17 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 07:32:16 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_auto_publisher import create_notion_page
+  File "/home/runner/work/paper_summary/paper_summary/notion_auto_publisher.py", line 3, in <module>
+    from notion_client import Client
+ModuleNotFoundError: No module named 'notion_client'
+=== Paper Collection Finished at Wed Jun 11 07:32:18 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 08:30:32 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Fetching likes for: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Fetching likes for: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Fetching likes for: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Fetching likes for: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (162 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (112 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (89 likes)
+4. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (63 likes)
+5. MiniCPM4: Ultra-Efficient LLMs on End Devices (61 likes)
+6. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (37 likes)
+7. Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning (33 likes)
+8. Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs (32 likes)
+9. SpatialLM: Training Large Language Models for Structured Indoor Modeling (31 likes)
+10. MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning (31 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Found abstract: While multi-modal large language models (MLLMs) have made significant
+progress in complex reasoning ...
+Processed paper: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Found abstract: The performance of large language models in domain-specific tasks
+necessitates fine-tuning, which is...
+Processed paper: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Found abstract: SpatialLM is a large language model designed to process 3D point cloud data
+and generate structured ...
+Processed paper: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Found abstract: Despite rapid advances in vision-language models (VLMs), current benchmarks
+for multimodal reasoning...
+Processed paper: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 4/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 5/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 6/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 7/10
+Title: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 8/10
+Title: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 9/10
+Title: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 10/10
+Title: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 11 08:31:19 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 08:36:16 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Fetching likes for: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Fetching likes for: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Fetching likes for: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Fetching likes for: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (162 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (112 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (89 likes)
+4. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (63 likes)
+5. MiniCPM4: Ultra-Efficient LLMs on End Devices (61 likes)
+6. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (37 likes)
+7. Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning (33 likes)
+8. Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs (32 likes)
+9. SpatialLM: Training Large Language Models for Structured Indoor Modeling (31 likes)
+10. MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning (31 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Found abstract: While multi-modal large language models (MLLMs) have made significant
+progress in complex reasoning ...
+Processed paper: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Found abstract: The performance of large language models in domain-specific tasks
+necessitates fine-tuning, which is...
+Processed paper: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Found abstract: SpatialLM is a large language model designed to process 3D point cloud data
+and generate structured ...
+Processed paper: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Found abstract: Despite rapid advances in vision-language models (VLMs), current benchmarks
+for multimodal reasoning...
+Processed paper: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Paper already exists, checking if translation is complete...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Paper already exists, checking if translation is complete...
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 4/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Paper already exists, checking if translation is complete...
+
+Processing paper 5/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Paper already exists, checking if translation is complete...
+
+Processing paper 6/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Paper already exists, checking if translation is complete...
+
+Processing paper 7/10
+Title: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 8/10
+Title: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Paper already exists, checking if translation is complete...
+
+Processing paper 9/10
+Title: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Paper already exists, checking if translation is complete...
+
+Processing paper 10/10
+Title: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Paper already exists, checking if translation is complete...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 11 08:36:46 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 10:38:58 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Fetching likes for: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Fetching likes for: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Fetching likes for: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (166 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (113 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (91 likes)
+4. MiniCPM4: Ultra-Efficient LLMs on End Devices (62 likes)
+5. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (62 likes)
+6. Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models (38 likes)
+7. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (37 likes)
+8. Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning (33 likes)
+9. SpatialLM: Training Large Language Models for Structured Indoor Modeling (32 likes)
+10. Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs (32 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper evaluates geopolitical biases in LLMs with respect to various
+countries though an analysi...
+Processed paper: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Found abstract: While multi-modal large language models (MLLMs) have made significant
+progress in complex reasoning ...
+Processed paper: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Found abstract: SpatialLM is a large language model designed to process 3D point cloud data
+and generate structured ...
+Processed paper: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Found abstract: The performance of large language models in domain-specific tasks
+necessitates fine-tuning, which is...
+Processed paper: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Paper already exists, checking if translation is complete...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Paper already exists, checking if translation is complete...
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 4/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Paper already exists, checking if translation is complete...
+
+Processing paper 5/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Paper already exists, checking if translation is complete...
+
+Processing paper 6/10
+Title: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Paper already exists, checking if translation is complete...
+
+Processing paper 8/10
+Title: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 9/10
+Title: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Paper already exists, checking if translation is complete...
+
+Processing paper 10/10
+Title: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Paper already exists, checking if translation is complete...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 162 -> 166)
+Error updating Notion database: 'BlocksChildrenEndpoint' object has no attribute 'update'
+Done!
+=== Paper Collection Finished at Wed Jun 11 10:39:23 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 10:48:12 UTC 2025 ===
+Starting paper collection...
+Error loading existing papers: Expecting value: line 2 column 1 (char 1)
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Fetching likes for: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Fetching likes for: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Fetching likes for: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (166 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (113 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (91 likes)
+4. MiniCPM4: Ultra-Efficient LLMs on End Devices (62 likes)
+5. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (62 likes)
+6. Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models (38 likes)
+7. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (37 likes)
+8. Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning (33 likes)
+9. SpatialLM: Training Large Language Models for Structured Indoor Modeling (32 likes)
+10. Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs (32 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper evaluates geopolitical biases in LLMs with respect to various
+countries though an analysi...
+Processed paper: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Found abstract: While multi-modal large language models (MLLMs) have made significant
+progress in complex reasoning ...
+Processed paper: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Found abstract: SpatialLM is a large language model designed to process 3D point cloud data
+and generate structured ...
+Processed paper: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Found abstract: The performance of large language models in domain-specific tasks
+necessitates fine-tuning, which is...
+Processed paper: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 강화 사전 훈련
+Paper already exists with same likes count: 내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류
+Paper already exists with same likes count: 통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu
+Updating paper: 미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델 (likes: 61 -> 62)
+Updating paper: LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구 (likes: 63 -> 62)
+Creating new paper: LLMs에서의 지정학적 편향: 현대 언어 모델에서 "좋은" 나라와 "나쁜" 나라는 무엇인가
+Paper already exists with same likes count: 이미지 생성을 위한 Omni-dimensional Nuanced 평가를 위한 OneIG-Bench
+Paper already exists with same likes count: 소수의 진실: 효율적인 다중 모달 추론을 위한 고가치 데이터 선택
+Updating paper: 공간적 언어 모델: 구조화된 실내 모델링을 위한 대규모 언어 모델 훈련 (likes: 31 -> 32)
+Paper already exists with same likes count: LLMs에서 입력에 따른 소프트 프롬프팅을 위한 셀프 어텐션 활용
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 11 10:49:50 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 22:07:28 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Fetching likes for: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Fetching likes for: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Fetching likes for: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (175 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (114 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (92 likes)
+4. MiniCPM4: Ultra-Efficient LLMs on End Devices (66 likes)
+5. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (66 likes)
+6. Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models (52 likes)
+7. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (38 likes)
+8. SpatialLM: Training Large Language Models for Structured Indoor Modeling (33 likes)
+9. Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning (33 likes)
+10. Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs (32 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper evaluates geopolitical biases in LLMs with respect to various
+countries though an analysi...
+Processed paper: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Found abstract: SpatialLM is a large language model designed to process 3D point cloud data
+and generate structured ...
+Processed paper: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Found abstract: While multi-modal large language models (MLLMs) have made significant
+progress in complex reasoning ...
+Processed paper: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Found abstract: The performance of large language models in domain-specific tasks
+necessitates fine-tuning, which is...
+Processed paper: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Paper already exists, checking if translation is complete...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Paper already exists, checking if translation is complete...
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 4/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Paper already exists, checking if translation is complete...
+
+Processing paper 5/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Paper already exists, checking if translation is complete...
+
+Processing paper 6/10
+Title: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Paper already exists, checking if translation is complete...
+
+Processing paper 7/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Paper already exists, checking if translation is complete...
+
+Processing paper 8/10
+Title: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Paper already exists, checking if translation is complete...
+
+Processing paper 9/10
+Title: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 10/10
+Title: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Paper already exists, checking if translation is complete...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Updating paper: 강화 사전 훈련 (likes: 166 -> 175)
+Updating paper: 내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류 (likes: 113 -> 114)
+Updating paper: 통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu (likes: 91 -> 92)
+Updating paper: 미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델 (likes: 62 -> 66)
+Updating paper: LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구 (likes: 62 -> 66)
+Updating paper: LLMs에서의 지정학적 편향: 현대 언어 모델에서 "좋은" 나라와 "나쁜" 나라는 무엇인가 (likes: 38 -> 52)
+Updating paper: 이미지 생성을 위한 Omni-dimensional Nuanced 평가를 위한 OneIG-Bench (likes: 37 -> 38)
+Updating paper: 공간적 언어 모델: 구조화된 실내 모델링을 위한 대규모 언어 모델 훈련 (likes: 32 -> 33)
+Paper already exists with same likes count: 소수의 진실: 효율적인 다중 모달 추론을 위한 고가치 데이터 선택
+Paper already exists with same likes count: LLMs에서 입력에 따른 소프트 프롬프팅을 위한 셀프 어텐션 활용
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 11 22:09:36 UTC 2025 ===
+
+=== Paper Collection Started at Thu Jun 12 22:07:49 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Fetching likes for: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Fetching likes for: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (190 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (118 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (94 likes)
+4. MiniCPM4: Ultra-Efficient LLMs on End Devices (72 likes)
+5. Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models (70 likes)
+6. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (68 likes)
+7. Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models (62 likes)
+8. Seedance 1.0: Exploring the Boundaries of Video Generation Models (47 likes)
+9. PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers (47 likes)
+10. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (38 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Large language models (LLMs) excel at reasoning, yet post-training remains
+critical for aligning the...
+Processed paper: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper evaluates geopolitical biases in LLMs with respect to various
+countries though an analysi...
+Processed paper: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Found abstract: Notable breakthroughs in diffusion modeling have propelled rapid improvements
+in video generation, y...
+Processed paper: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Found abstract: We introduce PartCrafter, the first structured 3D generative model that
+jointly synthesizes multiple...
+Processed paper: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Paper already exists, checking if translation is complete...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Paper already exists, checking if translation is complete...
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 4/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Paper already exists, checking if translation is complete...
+
+Processing paper 5/10
+Title: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Paper already exists, checking if translation is complete...
+
+Processing paper 7/10
+Title: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Paper already exists, checking if translation is complete...
+
+Processing paper 8/10
+Title: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Paper already exists, checking if translation is complete...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Updating paper: 강화 사전 훈련 (likes: 175 -> 190)
+Updating paper: 내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류 (likes: 114 -> 118)
+Updating paper: 통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu (likes: 92 -> 94)
+Updating paper: 미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델 (likes: 66 -> 72)
+Creating new paper: 자신감이 전부다: 언어 모델의 소수 학습 후 강화학습 세밀 조정
+Updating paper: LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구 (likes: 66 -> 68)
+Updating paper: LLMs에서의 지정학적 편향: 현대 언어 모델에서 "좋은" 나라와 "나쁜" 나라는 무엇인가 (likes: 52 -> 62)
+Creating new paper: Seedance 1.0: 비디오 생성 모델의 경계 탐색
+Creating new paper: PartCrafter: 구성적 잠재 확산 변형기를 통한 구조화된 3D 메쉬 생성
+Paper already exists with same likes count: 이미지 생성을 위한 Omni-dimensional Nuanced 평가를 위한 OneIG-Bench
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jun 12 22:09:42 UTC 2025 ===
+
+=== Paper Collection Started at Fri Jun 13 22:07:27 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Fetching likes for: ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning
+Fetching likes for: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Fetching likes for: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (194 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (122 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (99 likes)
+4. Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models (93 likes)
+5. MiniCPM4: Ultra-Efficient LLMs on End Devices (73 likes)
+6. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (69 likes)
+7. Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models (62 likes)
+8. ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning (60 likes)
+9. Seedance 1.0: Exploring the Boundaries of Video Generation Models (59 likes)
+10. PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers (55 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: Large language models (LLMs) excel at reasoning, yet post-training remains
+critical for aligning the...
+Processed paper: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper evaluates geopolitical biases in LLMs with respect to various
+countries though an analysi...
+Processed paper: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Found abstract: Though reasoning-based large language models (LLMs) have excelled in
+mathematics and programming, th...
+Processed paper: ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning
+Found abstract: Notable breakthroughs in diffusion modeling have propelled rapid improvements
+in video generation, y...
+Processed paper: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Found abstract: We introduce PartCrafter, the first structured 3D generative model that
+jointly synthesizes multiple...
+Processed paper: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Paper already exists, checking if translation is complete...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Paper already exists, checking if translation is complete...
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 4/10
+Title: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Paper already exists, checking if translation is complete...
+
+Processing paper 5/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Paper already exists, checking if translation is complete...
+
+Processing paper 6/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Paper already exists, checking if translation is complete...
+
+Processing paper 7/10
+Title: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Paper already exists, checking if translation is complete...
+
+Processing paper 8/10
+Title: ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Paper already exists, checking if translation is complete...
+
+Processing paper 10/10
+Title: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Paper already exists, checking if translation is complete...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Updating paper: 강화 사전 훈련 (likes: 190 -> 194)
+Updating paper: 내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류 (likes: 118 -> 122)
+Updating paper: 통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu (likes: 94 -> 99)
+Updating paper: 자신감이 전부다: 언어 모델의 소수 학습 후 강화학습 세밀 조정 (likes: 70 -> 93)
+Updating paper: 미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델 (likes: 72 -> 73)
+Updating paper: LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구 (likes: 68 -> 69)
+Paper already exists with same likes count: LLMs에서의 지정학적 편향: 현대 언어 모델에서 "좋은" 나라와 "나쁜" 나라는 무엇인가
+Creating new paper: 의료 추론 발전을 위한 37만 개 에이전트 생성 데이터셋 ReasonMed
+Updating paper: Seedance 1.0: 비디오 생성 모델의 경계 탐색 (likes: 47 -> 59)
+Updating paper: PartCrafter: 구성적 잠재 확산 변형기를 통한 구조화된 3D 메쉬 생성 (likes: 47 -> 55)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Jun 13 22:09:37 UTC 2025 ===
+
+=== Paper Collection Started at Sat Jun 14 22:06:54 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Error fetching papers: 504 Server Error: Gateway Time-out for url: https://huggingface.co/papers/week/2025-W24
+No new papers were collected!
+=== Paper Collection Finished at Sat Jun 14 22:08:55 UTC 2025 ===
+
+=== Paper Collection Started at Sun Jun 15 22:07:11 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Fetching likes for: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Fetching likes for: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (203 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (124 likes)
+3. Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models (107 likes)
+4. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (100 likes)
+5. ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning (81 likes)
+6. MiniCPM4: Ultra-Efficient LLMs on End Devices (74 likes)
+7. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (69 likes)
+8. Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models (67 likes)
+9. Seedance 1.0: Exploring the Boundaries of Video Generation Models (65 likes)
+10. PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers (58 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Large language models (LLMs) excel at reasoning, yet post-training remains
+critical for aligning the...
+Processed paper: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: Though reasoning-based large language models (LLMs) have excelled in
+mathematics and programming, th...
+Processed paper: ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper evaluates geopolitical biases in LLMs with respect to various
+countries though an analysi...
+Processed paper: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Found abstract: Notable breakthroughs in diffusion modeling have propelled rapid improvements
+in video generation, y...
+Processed paper: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Found abstract: We introduce PartCrafter, the first structured 3D generative model that
+jointly synthesizes multiple...
+Processed paper: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Paper already exists, checking if translation is complete...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Paper already exists, checking if translation is complete...
+
+Processing paper 3/10
+Title: Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models
+Paper already exists, checking if translation is complete...
+
+Processing paper 4/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 5/10
+Title: ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 6/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Paper already exists, checking if translation is complete...
+
+Processing paper 7/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Paper already exists, checking if translation is complete...
+
+Processing paper 8/10
+Title: Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models
+Paper already exists, checking if translation is complete...
+
+Processing paper 9/10
+Title: Seedance 1.0: Exploring the Boundaries of Video Generation Models
+Paper already exists, checking if translation is complete...
+
+Processing paper 10/10
+Title: PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers
+Paper already exists, checking if translation is complete...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Updating paper: 강화 사전 훈련 (likes: 194 -> 203)
+Updating paper: 내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류 (likes: 122 -> 124)
+Updating paper: 자신감이 전부다: 언어 모델의 소수 학습 후 강화학습 세밀 조정 (likes: 93 -> 107)
+Updating paper: 통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu (likes: 99 -> 100)
+Updating paper: 의료 추론 발전을 위한 37만 개 에이전트 생성 데이터셋 ReasonMed (likes: 60 -> 81)
+Updating paper: 미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델 (likes: 73 -> 74)
+Paper already exists with same likes count: LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구
+Updating paper: LLMs에서의 지정학적 편향: 현대 언어 모델에서 "좋은" 나라와 "나쁜" 나라는 무엇인가 (likes: 62 -> 67)
+Updating paper: Seedance 1.0: 비디오 생성 모델의 경계 탐색 (likes: 59 -> 65)
+Updating paper: PartCrafter: 구성적 잠재 확산 변형기를 통한 구조화된 3D 메쉬 생성 (likes: 55 -> 58)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Jun 15 22:09:25 UTC 2025 ===
+
+=== Paper Collection Started at Mon Jun 16 07:59:36 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W25
+URL: https://huggingface.co/papers/week/2025-W25
+Found 9 papers in weekly view
+Fetching likes for: Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation
+Fetching likes for: Effective Red-Teaming of Policy-Adherent Agents
+Fetching likes for: The Diffusion Duality
+Fetching likes for: LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive
+  Programming?
+Fetching likes for: A High-Quality Dataset and Reliable Evaluation for Interleaved
+  Image-Text Generation
+Fetching likes for: SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation
+  via Skill Blending
+Fetching likes for: Detecting Harmful Memes with Decoupled Understanding and Guided CoT
+  Reasoning
+Fetching likes for: Configurable Preference Tuning with Rubric-Guided Synthetic Data
+Fetching likes for: Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity
+  Dilemma of Embeddings
+Selected top 10 papers by likes:
+1. Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation (21 likes)
+2. Effective Red-Teaming of Policy-Adherent Agents (7 likes)
+3. The Diffusion Duality (5 likes)
+4. LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive
+  Programming? (3 likes)
+5. A High-Quality Dataset and Reliable Evaluation for Interleaved
+  Image-Text Generation (3 likes)
+6. SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation
+  via Skill Blending (2 likes)
+7. Detecting Harmful Memes with Decoupled Understanding and Guided CoT
+  Reasoning (2 likes)
+8. Configurable Preference Tuning with Rubric-Guided Synthetic Data (1 likes)
+9. Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity
+  Dilemma of Embeddings (0 likes)
+Found abstract: We introduce a diffusion-based framework that performs aligned novel view
+image and geometry generat...
+Processed paper: Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation
+Found abstract: Task-oriented LLM-based agents are increasingly used in domains with strict
+policies, such as refund...
+Processed paper: Effective Red-Teaming of Policy-Adherent Agents
+Found abstract: Uniform-state discrete diffusion models hold the promise of fast text
+generation due to their inhere...
+Processed paper: The Diffusion Duality
+Found abstract: Recent reports claim that large language models (LLMs) now outperform elite
+humans in competitive pr...
+Processed paper: LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive
+  Programming?
+Found abstract: Recent advancements in Large Multimodal Models (LMMs) have significantly
+improved multimodal underst...
+Processed paper: A High-Quality Dataset and Reliable Evaluation for Interleaved
+  Image-Text Generation
+Found abstract: Humanoid robots hold significant potential in accomplishing daily tasks
+across diverse environments ...
+Processed paper: SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation
+  via Skill Blending
+Found abstract: Detecting harmful memes is essential for maintaining the integrity of online
+environments. However, ...
+Processed paper: Detecting Harmful Memes with Decoupled Understanding and Guided CoT
+  Reasoning
+Found abstract: Models of human feedback for AI alignment, such as those underpinning Direct
+Preference Optimization...
+Processed paper: Configurable Preference Tuning with Rubric-Guided Synthetic Data
+Found abstract: This work focuses on an observed limitation of text encoders: embeddings may
+not be able to recogniz...
+Processed paper: Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity
+  Dilemma of Embeddings
+Collected top 9 papers. Starting summary generation...
+
+Processing paper 1/9
+Title: Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation
+Generating Korean translation and summary...
+
+Processing paper 2/9
+Title: Effective Red-Teaming of Policy-Adherent Agents
+Generating Korean translation and summary...
+
+Processing paper 3/9
+Title: The Diffusion Duality
+Generating Korean translation and summary...
+
+Processing paper 4/9
+Title: LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive
+  Programming?
+Generating Korean translation and summary...
+
+Processing paper 5/9
+Title: A High-Quality Dataset and Reliable Evaluation for Interleaved
+  Image-Text Generation
+Generating Korean translation and summary...
+
+Processing paper 6/9
+Title: SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation
+  via Skill Blending
+Generating Korean translation and summary...
+
+Processing paper 7/9
+Title: Detecting Harmful Memes with Decoupled Understanding and Guided CoT
+  Reasoning
+Generating Korean translation and summary...
+
+Processing paper 8/9
+Title: Configurable Preference Tuning with Rubric-Guided Synthetic Data
+Generating Korean translation and summary...
+
+Processing paper 9/9
+Title: Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity
+  Dilemma of Embeddings
+Generating Korean translation and summary...
+
+Processed 9 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W25.json...
+
+Updating Notion database...
+Creating new paper: 교차 모달 주의 주입을 통한 정렬된 신규 뷰 이미지 및 기하학 합성
+Creating new paper: 정책 따르는 에이전트들의 효과적인 레드팀 구성
+Creating new paper: 확산 이중성
+Creating new paper: LiveCodeBench Pro: 올림피아드 메달리스트들은 경쟁 프로그래밍에서 LLMs를 어떻게 판단하는가?
+Creating new paper: 고품질 데이터셋과 신뢰성 있는 평가를 위한 교차 이미지-텍스트 생성
+Creating new paper: 유연한 인간형 로봇의 완전히 몸 전체를 활용한 동작-조작을 위한 SkillBlender
+Creating new paper: 해로운 미미 탐지를 위한 이해와 안내된 CoT 추론의 분리
+Creating new paper: 루브릭 안내 구성 가능한 선호도 조정
+Creating new paper: 밀집 검색기는 간단한 쿼리에서 실패할 수 있다: 임베딩의 미세한 세분화 딜레마 해결
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 16 08:01:37 UTC 2025 ===
+
+=== Paper Collection Started at Mon Jun 16 22:07:42 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    import pytz
+ModuleNotFoundError: No module named 'pytz'
+=== Paper Collection Finished at Mon Jun 16 22:07:43 UTC 2025 ===
+

@@ -1,0 +1,139 @@
+=== Paper Collection Started at Mon Jul 14 22:08:00 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W29
+URL: https://huggingface.co/papers/week/2025-W29
+Found 10 papers in weekly view
+Fetching likes for: Test-Time Scaling with Reflective Generative Model
+Fetching likes for: CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering
+Fetching likes for: NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models
+Fetching likes for: Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning
+Fetching likes for: KV Cache Steering for Inducing Reasoning in Small Language Models
+Fetching likes for: Neural-Driven Image Editing
+Fetching likes for: Lumos-1: On Autoregressive Video Generation from a Unified Model
+  Perspective
+Fetching likes for: Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities
+Fetching likes for: One Token to Fool LLM-as-a-Judge
+Fetching likes for: From One to More: Contextual Part Latents for 3D Generation
+Selected top 10 papers by likes:
+1. Test-Time Scaling with Reflective Generative Model (67 likes)
+2. CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering (41 likes)
+3. NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models (33 likes)
+4. Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning (30 likes)
+5. KV Cache Steering for Inducing Reasoning in Small Language Models (23 likes)
+6. Neural-Driven Image Editing (23 likes)
+7. Lumos-1: On Autoregressive Video Generation from a Unified Model
+  Perspective (18 likes)
+8. Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities (18 likes)
+9. One Token to Fool LLM-as-a-Judge (12 likes)
+10. From One to More: Contextual Part Latents for 3D Generation (10 likes)
+Found abstract: We introduce our first reflective generative model MetaStone-S1, which
+obtains OpenAI o3's performan...
+Processed paper: Test-Time Scaling with Reflective Generative Model
+Found abstract: This paper proposes a neural rendering approach that represents a scene as
+"compressed light-field t...
+Processed paper: CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering
+Found abstract: We introduce NeuralOS, a neural framework that simulates graphical user
+interfaces (GUIs) of operati...
+Processed paper: NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models
+Found abstract: The remarkable reasoning capability of large language models (LLMs) stems
+from cognitive behaviors t...
+Processed paper: Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning
+Found abstract: We propose cache steering, a lightweight method for implicit steering of
+language models via a one-s...
+Processed paper: KV Cache Steering for Inducing Reasoning in Small Language Models
+Found abstract: Traditional image editing typically relies on manual prompting, making it
+labor-intensive and inacce...
+Processed paper: Neural-Driven Image Editing
+Found abstract: Autoregressive large language models (LLMs) have unified a vast range of
+language tasks, inspiring p...
+Processed paper: Lumos-1: On Autoregressive Video Generation from a Unified Model
+  Perspective
+Found abstract: In this report, we introduce the Gemini 2.X model family: Gemini 2.5 Pro and
+Gemini 2.5 Flash, as we...
+Processed paper: Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities
+Found abstract: Generative reward models (also known as LLMs-as-judges), which use large
+language models (LLMs) to e...
+Processed paper: One Token to Fool LLM-as-a-Judge
+Found abstract: Recent advances in 3D generation have transitioned from multi-view 2D
+rendering approaches to 3D-nat...
+Processed paper: From One to More: Contextual Part Latents for 3D Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Test-Time Scaling with Reflective Generative Model
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive
+  Neural Rendering
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: NeuralOS: Towards Simulating Operating Systems via Neural Generative
+  Models
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for
+  Visual Reasoning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: KV Cache Steering for Inducing Reasoning in Small Language Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Neural-Driven Image Editing
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Lumos-1: On Autoregressive Video Generation from a Unified Model
+  Perspective
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,
+  Long Context, and Next Generation Agentic Capabilities
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: One Token to Fool LLM-as-a-Judge
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: From One to More: Contextual Part Latents for 3D Generation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W29.json...
+
+Updating Notion database...
+Creating new paper: 반사적 생성 모델을 활용한 테스트 시간 스케일링
+Creating new paper: CLiFT: Compute-Efficient 및 Adaptive를 위한 압축적 광필드 토큰 Neural 렌더링
+Creating new paper: NeuralOS: 신경 생성 모델을 통한 운영 체제 시뮬레이션을 향하여
+Creating new paper: 오픈 비전 리스너: 시각 추론을 위한 언어적 인지 행동 전이
+Creating new paper: 작은 언어 모델에서 추론을 유도하기 위한 KV 캐시 스티어링
+Creating new paper: 신경 주도형 이미지 편집
+Creating new paper: Lumos-1: 단일 모델로부터의 자기 회귀적 비디오 생성에 대해
+Creating new paper: Gemini 2.5: 고도의 추론, 다중 모달, 장기적 맥락 및 차세대 에이전틱 기능으로 한계를 넓히다
+Creating new paper: 판별 모델 속이기 위한 단일 토큰
+Creating new paper: 하나에서 여러 개로: 3D 생성을 위한 맥락적인 부위 잠재 요인
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul 14 22:09:26 UTC 2025 ===
+

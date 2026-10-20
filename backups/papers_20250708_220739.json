@@ -1,0 +1,105 @@
+[
+  {
+    "title": "How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation\n  Models on Standard Computer Vision Tasks",
+    "abstract": "Multimodal foundation models, such as GPT-4o, have recently made remarkable\nprogress, but it is not clear where exactly these models stand in terms of\nunderstanding vision. In this paper, we benchmark the performance of popular\nmultimodal foundation models (GPT-4o, o4-mini, Gemini 1.5 Pro and Gemini 2.0\nFlash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2) on standard computer vision\ntasks (semantic segmentation, object detection, image classification, depth and\nsurface normal prediction) using established datasets (e.g., COCO, ImageNet and\nits variants, etc).\n  The main challenges to performing this are: 1) most models are trained to\noutput text and cannot natively express versatile domains, such as segments or\n3D geometry, and 2) many leading models are proprietary and accessible only at\nan API level, i.e., there is no weight access to adapt them. We address these\nchallenges by translating standard vision tasks into equivalent text-promptable\nand API-compatible tasks via prompt chaining to create a standardized\nbenchmarking framework.\n  We observe that 1) the models are not close to the state-of-the-art\nspecialist models at any task. However, 2) they are respectable generalists;\nthis is remarkable as they are presumably trained on primarily image-text-based\ntasks. 3) They perform semantic tasks notably better than geometric ones. 4)\nWhile the prompt-chaining techniques affect performance, better models exhibit\nless sensitivity to prompt variations. 5) GPT-4o performs the best among\nnon-reasoning models, securing the top position in 4 out of 6 tasks, 6)\nreasoning models, e.g. o3, show improvements in geometric tasks, and 7) a\npreliminary analysis of models with native image generation, like the latest\nGPT-4o, shows they exhibit quirks like hallucinations and spatial\nmisalignments.",
+    "authors": [
+      "Rahul Ramachandran",
+      "Ali Garjani",
+      "Roman Bachmann",
+      "Andrei Atanov",
+      "Oğuzhan Fatih Kar",
+      "Amir Zamir"
+    ],
+    "likes": 9,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01955",
+    "date_collected": "2025-07-08T07:07:59.022560+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "GPT-4o는 시각을 얼마나 잘 이해하는가? 표준 컴퓨터 비전 작업에서의 다중모달 기반 모델 평가",
+      "abstract": "GPT-4o와 같은 다중모달 기반 모델은 최근 현저한 진전을 이루었지만, 이러한 모델들이 시각을 얼마나 잘 이해하는지 명확하지 않다. 본 논문에서는 인기 있는 다중모달 기반 모델(GPT-4o, o4-mini, Gemini 1.5 Pro 및 Gemini 2.0 Flash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2)의 성능을 표준 컴퓨터 비전 작업(의미 분할, 객체 감지, 이미지 분류, 깊이 및 표면 정상 예측)에 대해 측정하였다. 예정된 데이터셋(COCO, ImageNet 및 이와 유사한 것들 등)을 사용하였다."
+    },
+    "summary": "1. GPT-4o와 같은 모델들은 특정 작업에서 압도적인 성능을 보이지 않지만, 이미지-텍스트 기반 작업에서 훈련되었다는 점을 감안하면 훌륭한 일반화 능력을 보인다.\n2. 이러한 모델들은 기하학 작업보다 의미 작업에서 뛰어난 성과를 보인다.\n3. GPT-4o는 비추론 모델 중에서 가장 우수한 성능을 보이며, 다른 모델들과는 달리 프롬프트 변화에 덜 민감함을 보인다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Lost in Latent Space: An Empirical Study of Latent Diffusion Models for\n  Physics Emulation",
+    "abstract": "The steep computational cost of diffusion models at inference hinders their\nuse as fast physics emulators. In the context of image and video generation,\nthis computational drawback has been addressed by generating in the latent\nspace of an autoencoder instead of the pixel space. In this work, we\ninvestigate whether a similar strategy can be effectively applied to the\nemulation of dynamical systems and at what cost. We find that the accuracy of\nlatent-space emulation is surprisingly robust to a wide range of compression\nrates (up to 1000x). We also show that diffusion-based emulators are\nconsistently more accurate than non-generative counterparts and compensate for\nuncertainty in their predictions with greater diversity. Finally, we cover\npractical design choices, spanning from architectures to optimizers, that we\nfound critical to train latent-space emulators.",
+    "authors": [
+      "François Rozet",
+      "Ruben Ohana",
+      "Michael McCabe",
+      "Gilles Louppe",
+      "François Lanusse",
+      "Shirley Ho"
+    ],
+    "likes": 5,
+    "published_date": "Jul 3",
+    "url": "https://huggingface.co/papers/2507.02608",
+    "date_collected": "2025-07-08T07:07:59.023777+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "잠겨버린 잠재 공간: 물리 에뮬레이션을 위한 잠재 확산 모델의 경험적 연구",
+      "abstract": "추론에서의 확산 모델의 높은 계산 비용은 빠른 물리 에뮬레이터로서의 활용을 방해합니다. 이미지 및 영상 생성의 맥락에서, 이 계산적인 단점은 픽셀 공간이 아닌 오토인코더의 잠재 공간에서 생성함으로써 해결되어 왔습니다. 본 연구에서는 비슷한 전략이 동적 시스템의 에뮬레이션에 효과적으로 적용될 수 있는지, 그 비용은 어떻게 되는지 조사합니다. 우리는 잠재 공간 에뮬레이션이 다양한 압축률에서 상당히 견고한 정확도를 보여주는 것을 발견했습니다 (최대 1000배까지). 또한 확산 기반 에뮬레이터가 비생성적 대안들보다 일관되게 더 정확하며, 예측의 불확실성을 더 큰 다양성으로 보상합니다. 마지막으로, 우리는 잠재 공간 에뮬레이터를 훈련하는 데 결정적인 것으로 발견한 아키텍처부터 옵티마이저에 이르는 실용적인 설계 선택 사항을 다룹니다."
+    },
+    "summary": "1. 잠재 공간에서 물리 에뮬레이션은 다양한 압축률에도 견고한 정확도를 유지한다.\n2. 확산 기반 에뮬레이터는 비생성적인 대안들보다 더 정확하며, 예측 불확실성을 다양성으로 보상한다.\n3. 잠재 공간 에뮬레이터를 훈련하는 데 있어서 중요한 아키텍처와 옵티마이저 선택이 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Eka-Eval : A Comprehensive Evaluation Framework for Large Language\n  Models in Indian Languages",
+    "abstract": "The rapid advancement of Large Language Models (LLMs) has intensified the\nneed for evaluation frameworks that go beyond English centric benchmarks and\naddress the requirements of linguistically diverse regions such as India. We\npresent EKA-EVAL, a unified and production-ready evaluation framework that\nintegrates over 35 benchmarks, including 10 Indic-specific datasets, spanning\ncategories like reasoning, mathematics, tool use, long-context understanding,\nand reading comprehension. Compared to existing Indian language evaluation\ntools, EKA-EVAL offers broader benchmark coverage, with built-in support for\ndistributed inference, quantization, and multi-GPU usage. Our systematic\ncomparison positions EKA-EVAL as the first end-to-end, extensible evaluation\nsuite tailored for both global and Indic LLMs, significantly lowering the\nbarrier to multilingual benchmarking. The framework is open-source and publicly\navailable at https://github.com/lingo-iitgn/ eka-eval and a part of ongoing EKA\ninitiative (https://eka.soket.ai), which aims to scale up to over 100\nbenchmarks and establish a robust, multilingual evaluation ecosystem for LLMs.",
+    "authors": [
+      "Samridhi Raj Sinha",
+      "Rajvee Sheth",
+      "Abhishek Upperwal",
+      "Mayank Singh"
+    ],
+    "likes": 4,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01853",
+    "date_collected": "2025-07-08T07:07:59.024859+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "인도어 대규모 언어 모델의 종합적 평가 프레임워크인 Eka-Eval",
+      "abstract": "대규모 언어 모델(LLM)의 급속한 발전은 영어 중심의 기준을 넘어 인도와 같이 언어적으로 다양한 지역의 요구를 충족하는 평가 프레임워크에 대한 필요성을 증대시켰습니다. 우리는 EKA-EVAL을 제시합니다. 이는 10개의 인도어 특화 데이터셋을 포함한 35개 이상의 벤치마크를 통합한 통합된 제품용 평가 프레임워크로, 추론, 수학, 도구 사용, 장기적 맥락 이해, 읽기 이해 등의 범주를 포함합니다. 기존의 인도어 언어 평가 도구와 비교했을 때 EKA-EVAL은 분산 추론, 양자화, 다중 GPU 사용을 내장하여 보다 폭넓은 벤치마크를 제공합니다. 체계적인 비교를 통해 EKA-EVAL을 글로벌 및 인도어 LLM에 맞춘 최초의 엔드 투 엔드, 확장 가능한 평가 스위트로 위치시켜 다국어 벤치마킹의 장벽을 크게 낮춥니다. 이 프레임워크는 오픈 소스이며 https://github.com/lingo-iitgn/eka-eval에서 공개되어 있으며 EKA 이니셔티브(https://eka.soket.ai)의 일환으로 진행 중인데, 이 이니셔티브는 100개 이상의 벤치마크로 확장하고 LLM을 위한 견고하고 다국어 평가 생태계를 구축하는 것을 목표로 합니다."
+    },
+    "summary": "1. EKA-EVAL은 인도어 대규모 언어 모델을 평가하기 위한 종합적인 프레임워크로, 35개 이상의 벤치마크와 10개의 인도어 특화 데이터셋을 통합하여 분산 추론, 양자화, 다중 GPU 사용 등을 지원합니다.\n2. 이 프레임워크는 글로벌 및 인도어 언어 모델에 맞춰진 최초의 엔드 투 엔드 평가 스위트로서, 다국어 벤치마킹의 진입 장벽을 크게 낮춥니다.\n3. EKA-EVAL은 오픈 소스로 공개되어 있으며, 다양한 벤치마크를 지원하여 LLM을 위한 견고하고 다국어 평가 생태계를 구축하는 EKA 이니셔티브의 일환입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "LitBench: A Benchmark and Dataset for Reliable Evaluation of Creative\n  Writing",
+    "abstract": "Evaluating creative writing generated by large language models (LLMs) remains\nchallenging because open-ended narratives lack ground truths. Without\nperformant automated evaluation methods, off-the-shelf (OTS) language models\nare employed as zero-shot judges, yet their reliability is unclear in this\ncontext. In pursuit of robust evaluation for creative writing, we introduce\nLitBench, the first standardized benchmark and paired dataset for creative\nwriting verification, comprising a held-out test set of 2,480 debiased,\nhuman-labeled story comparisons drawn from Reddit and a 43,827-pair training\ncorpus of human preference labels. Using LitBench, we (i) benchmark zero-shot\nLLM judges, (ii) train Bradley Terry and generative reward models, and (iii)\nconduct an online human study to validate reward model rankings on newly\nLLM-generated stories. Our benchmark identifies Claude-3.7-Sonnet as the\nstrongest off-the-shelf judge, reaching 73% agreement with human preferences;\namong trained reward models, Bradley-Terry and Generative reward models both\nattain an accuracy of 78%, outperforming all off-the-shelf judges. An online\nhuman study further confirms that our trained reward models consistently align\nwith human preferences in novel LLM-generated stories. We release LitBench and\nreward models at\nhttps://huggingface.co/collections/SAA-Lab/litbench-68267b5da3aafe58f9e43461,\nproviding a vetted resource for reliable, automated evaluation and optimization\nof creative writing systems.",
+    "authors": [
+      "Daniel Fein",
+      "Sebastian Russo",
+      "Violet Xiang",
+      "Kabir Jolly",
+      "Rafael Rafailov",
+      "Nick Haber"
+    ],
+    "likes": 1,
+    "published_date": "Jul 1",
+    "url": "https://huggingface.co/papers/2507.00769",
+    "date_collected": "2025-07-08T07:07:59.026022+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "LitBench: 신뢰성 평가를 위한 창작적 작문의 벤치마크 및 데이터셋",
+      "abstract": "대형 언어 모델(LLM)에 의해 생성된 창작적 작문을 평가하는 것은 힘든데, 개방형 이야기는 명확한 기준이 부족하다. 이에 우수한 자동평가 방법이 없어서 오프더셀프(OTS) 언어 모델이 제로샷 판단자로 사용되지만, 이들의 신뢰성은 이 문맥에서 불분명하다. 창작적 작문에 대한 견고한 평가를 위해 우리는 창작적 작문 검증을 위한 표준화된 벤치마크 및 겹치는 데이터셋인 LitBench를 소개한다. 이는 Reddit에서 뽑은 2,480개의 디바이스(공정한) 인간 레이블 스토리 비교로 이루어진 보류된 테스트 세트와, 인간 선호도 레이블의 43,827쌍 학습 말뭉치를 포함한다. LitBench를 사용하여 우리는 (i) 제로샷 LLM 심사위원을 벤치마크하고, (ii) Bradley Terry 및 생성 보상 모델을 훈련시키며, 그리고 (iii) 신규 LLM에서 생성된 이야기에 대한 보상 모델 순위를 유효성 검증하기 위해 온라인 인간 연구를 실시했다. 우리의 벤치마크는 Claude-3.7-쇼네이를 가장 강력한 OTS 심사위원으로 확인하며, 인간 선호도와 73% 일치한다. 훈련된 보상 모델 중에서는, Bradley-Terry 및 생성 보상 모델 모두 78%의 정확도를 달성하여 모든 OTS 심사위원을 능가했다. 온라인 인간 연구는 우리의 훈련된 보상 모델이 신규 LLM이 생성한 이야기에서 일관되게 인간 선호와 일치함을 추가로 확인한다. 우리는 LitBench와 보상 모델을 발표하며, 창작적 작문 시스템의 신뢰성 있는 자동 평가 및 최적화를 위한 검증된 자원을 제공한다."
+    },
+    "summary": "1. 창작적 작문을 평가하기 위한 LitBench 벤치마크와 데이터셋 소개\n2. 훈련된 보상 모델들이 오프더셀프 심사위원을 능가하며 인간 선호도와 일치함을 확인\n3. LitBench와 보상 모델을 통해 창작적 작문 시스템의 신뢰성 있는 자동 평가 및 최적화 가능",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

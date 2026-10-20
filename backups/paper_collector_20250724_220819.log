@@ -1,0 +1,149 @@
+=== Paper Collection Started at Wed Jul 23 22:08:01 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W30
+URL: https://huggingface.co/papers/week/2025-W30
+Found 10 papers in weekly view
+Fetching likes for: GUI-G^2: Gaussian Reward Modeling for GUI Grounding
+Fetching likes for: MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization
+Fetching likes for: Beyond Context Limits: Subconscious Threads for Long-Horizon Reasoning
+Fetching likes for: The Invisible Leash: Why RLVR May Not Escape Its Origin
+Fetching likes for: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Fetching likes for: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Fetching likes for: Step-Audio 2 Technical Report
+Fetching likes for: GR-3 Technical Report
+Fetching likes for: NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining
+Fetching likes for: MegaScience: Pushing the Frontiers of Post-Training Datasets for Science
+  Reasoning
+Selected top 10 papers by likes:
+1. GUI-G^2: Gaussian Reward Modeling for GUI Grounding (112 likes)
+2. MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization (102 likes)
+3. Beyond Context Limits: Subconscious Threads for Long-Horizon Reasoning (77 likes)
+4. The Invisible Leash: Why RLVR May Not Escape Its Origin (70 likes)
+5. The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs (56 likes)
+6. A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models (48 likes)
+7. Step-Audio 2 Technical Report (40 likes)
+8. GR-3 Technical Report (36 likes)
+9. NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining (36 likes)
+10. MegaScience: Pushing the Frontiers of Post-Training Datasets for Science
+  Reasoning (34 likes)
+Found abstract: Graphical User Interface (GUI) grounding maps natural language instructions
+to precise interface loc...
+Processed paper: GUI-G^2: Gaussian Reward Modeling for GUI Grounding
+Found abstract: Large language models have recently evolved from fluent text generation to
+advanced reasoning across...
+Processed paper: MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization
+Found abstract: To break the context limits of large language models (LLMs) that bottleneck
+reasoning accuracy and e...
+Processed paper: Beyond Context Limits: Subconscious Threads for Long-Horizon Reasoning
+Found abstract: Recent advances in large reasoning models highlight Reinforcement Learning
+with Verifiable Rewards (...
+Processed paper: The Invisible Leash: Why RLVR May Not Escape Its Origin
+Found abstract: Diffusion-based large language models (dLLMs) have recently emerged as a
+powerful alternative to aut...
+Processed paper: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Found abstract: Russian speech synthesis presents distinctive challenges, including vowel
+reduction, consonant devoi...
+Processed paper: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Found abstract: This paper presents Step-Audio~2, an end-to-end multi-modal large language
+model designed for indust...
+Processed paper: Step-Audio 2 Technical Report
+Found abstract: We report our recent progress towards building generalist robot policies, the
+development of GR-3. G...
+Processed paper: GR-3 Technical Report
+Found abstract: Recent advances in generative modeling enable image editing assistants that
+follow natural language ...
+Processed paper: NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining
+Found abstract: Scientific reasoning is critical for developing AI scientists and supporting
+human researchers in ad...
+Processed paper: MegaScience: Pushing the Frontiers of Post-Training Datasets for Science
+  Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: GUI-G^2: Gaussian Reward Modeling for GUI Grounding
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  98
+Update date_collected: 2025-07-24T07:08:09.380137+09:00  ->  2025-07-23T07:08:00.735188+09:00
+
+Processing paper 2/10
+Title: MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  89
+Update date_collected: 2025-07-24T07:08:09.381947+09:00  ->  2025-07-23T07:08:00.736905+09:00
+
+Processing paper 3/10
+Title: Beyond Context Limits: Subconscious Threads for Long-Horizon Reasoning
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: The Invisible Leash: Why RLVR May Not Escape Its Origin
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  59
+Update date_collected: 2025-07-24T07:08:09.384666+09:00  ->  2025-07-23T07:08:00.738023+09:00
+
+Processing paper 5/10
+Title: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 56  ->  54
+Update date_collected: 2025-07-24T07:08:09.386221+09:00  ->  2025-07-23T07:08:00.739484+09:00
+
+Processing paper 6/10
+Title: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  48
+Update date_collected: 2025-07-24T07:08:09.387442+09:00  ->  2025-07-23T07:08:00.740657+09:00
+
+Processing paper 7/10
+Title: Step-Audio 2 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: GR-3 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 36  ->  27
+Update date_collected: 2025-07-24T07:08:09.391099+09:00  ->  2025-07-23T07:08:00.744860+09:00
+
+Processing paper 9/10
+Title: NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining
+Paper already exists, checking if translation is complete...
+Update likes: 36  ->  36
+Update date_collected: 2025-07-24T07:08:09.392301+09:00  ->  2025-07-23T07:08:00.741796+09:00
+
+Processing paper 10/10
+Title: MegaScience: Pushing the Frontiers of Post-Training Datasets for Science
+  Reasoning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W30.json...
+
+Updating Notion database...
+Updating paper: GUI-G^2: GUI 그라운딩을 위한 가우시안 보상 모델링 (likes: 98 -> 112)
+Updating paper: MiroMind-M1: 수학 추론의 컨텍스트 인식 다단계 정책 최적화를 통한 오픈 소스 진보 (likes: 89 -> 102)
+Creating new paper: 맥락 한계를 넘어: 장기적 추론을 위한 잠재의식적 스레드
+Updating paper: 보이지 않는 '밧줄': RLVR이 자신의 기원에서 벗어나지 못하는 이유 (likes: 59 -> 70)
+Updating paper: 가림막 뒤의 악마: Diffusion LLMs의 신생 안전 취약성 (likes: 54 -> 56)
+Paper already exists with same likes count: 러시아어 발화 생성 모델의 음운론적 및 어굴적 과제 해결을 위한 데이터 중심 프레임워크
+Creating new paper: 스텝-오디오 2 기술 보고서
+Updating paper: GR-3 기술 보고서 (likes: 27 -> 36)
+Paper already exists with same likes count: 인간 불필요: 자율적이고 고품질 이미지 편집을 위한 삼쌍 데이터 마이닝
+Creating new paper: MegaScience: 과학 추론을 위한 포스트-트레이닝 데이터셋의 선두를 달리다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jul 23 22:09:35 UTC 2025 ===
+

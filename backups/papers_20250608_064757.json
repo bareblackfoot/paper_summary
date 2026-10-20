@@ -1,0 +1,274 @@
+[
+  {
+    "title": "Reflect, Retry, Reward: Self-Improving LLMs via Reinforcement Learning",
+    "abstract": "We explore a method for improving the performance of large language models\nthrough self-reflection and reinforcement learning. By incentivizing the model\nto generate better self-reflections when it answers incorrectly, we demonstrate\nthat a model's ability to solve complex, verifiable tasks can be enhanced even\nwhen generating synthetic data is infeasible and only binary feedback is\navailable. Our framework operates in two stages: first, upon failing a given\ntask, the model generates a self-reflective commentary analyzing its previous\nattempt; second, the model is given another attempt at the task with the\nself-reflection in context. If the subsequent attempt succeeds, the tokens\ngenerated during the self-reflection phase are rewarded. Our experimental\nresults show substantial performance gains across a variety of model\narchitectures, as high as 34.7% improvement at math equation writing and 18.1%\nimprovement at function calling. Notably, smaller fine-tuned models (1.5\nbillion to 7 billion parameters) outperform models in the same family that are\n10 times larger. Our novel paradigm is thus an exciting pathway to more useful\nand reliable language models that can self-improve on challenging tasks with\nlimited external feedback.",
+    "authors": [
+      "Shelly Bensal",
+      "Umar Jamil",
+      "Christopher Bryant",
+      "Melisa Russak",
+      "Kiran Kamble",
+      "Dmytro Mozolevskyi",
+      "Muayad Ali",
+      "Waseem AlShikh"
+    ],
+    "likes": 162,
+    "published_date": "May 30",
+    "url": "https://huggingface.co/papers/2505.24726",
+    "date_collected": "2025-06-06T15:01:43.234482",
+    "week": "2025-W23",
+    "translation": {
+      "title": "반성, 재시도, 보상: 강화 학습을 통한 자가 발전형 언어 모델",
+      "abstract": "우리는 큰 언어 모델의 성능을 향상시키는 방법을 탐구합니다. 모델이 잘못 대답했을 때 더 나은 반성을 유도하여, 합성 데이터 생성이 어려울 때에도 모델이 복잡한 작업을 해결하는 능력을 향상시킬 수 있다는 것을 보여줍니다. 우리의 프레임워크는 두 단계로 작동합니다: 첫째, 주어진 작업에 실패하면 모델은 이전 시도를 분석하는 반성적 논평을 생성합니다; 둘째, 모델은 반성을 고려한 또 다른 시도를 합니다. 연구 결과는 다양한 모델 아키텍처에서 상당한 성능 향상을 보여주며, 수학 방정식 작성에서 34.7% 및 함수 호출에서 18.1%의 개선이 있습니다. 작은 세밀 조정된 모델들은 큰 모델보다 더 나은 성과를 거두고, 한 가지 패밀리 안에서 10배 작은 모델일지라도 우수한 결과를 보여줍니다. 이 새로운 패러다임은 외부 피드백이 제한적인 어려운 작업에서도 스스로 개선할 수 있는 더 유용하고 신뢰할 수 있는 언어 모델로의 흥미로운 길이 됩니다."
+    },
+    "summary": "1. 언어 모델 성능 향상을 위해 강화 학습을 통해 자가 반성을 도입하고, 성능을 개선하는 방법을 제시함.\n2. 모델이 잘못 대답했을 때 반성을 통해 새로운 시도를 하고, 성공하면 보상을 주는 프레임워크를 설명함.\n3. 실험 결과, 다양한 모델 구조에서 상당한 성능 향상을 보이며, 작은 모델이 큰 모델보다 우수한 결과를 보이는 것을 확인함."
+  },
+  {
+    "title": "Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective\n  Reinforcement Learning for LLM Reasoning",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a\npowerful approach to enhancing the reasoning capabilities of Large Language\nModels (LLMs), while its mechanisms are not yet well understood. In this work,\nwe undertake a pioneering exploration of RLVR through the novel perspective of\ntoken entropy patterns, comprehensively analyzing how different tokens\ninfluence reasoning performance. By examining token entropy patterns in\nChain-of-Thought (CoT) reasoning, we observe that only a small fraction of\ntokens exhibit high entropy, and these tokens act as critical forks that steer\nthe model toward diverse reasoning pathways. Furthermore, studying how entropy\npatterns evolve during RLVR training reveals that RLVR largely adheres to the\nbase model's entropy patterns, primarily adjusting the entropy of high-entropy\ntokens. These findings highlight the significance of high-entropy tokens (i.e.,\nforking tokens) to RLVR. We ultimately improve RLVR by restricting policy\ngradient updates to forking tokens and uncover a finding even beyond the 80/20\nrule: utilizing only 20% of the tokens while maintaining performance comparable\nto full-gradient updates on the Qwen3-8B base model and significantly\nsurpassing full-gradient updates on the Qwen3-32B (+11.04 on AIME'25 and +7.71\non AIME'24) and Qwen3-14B (+4.79 on AIME'25 and +5.21 on AIME'24) base models,\nhighlighting a strong scaling trend. In contrast, training exclusively on the\n80% lowest-entropy tokens leads to a marked decline in performance. These\nfindings indicate that the efficacy of RLVR primarily arises from optimizing\nthe high-entropy tokens that decide reasoning directions. Collectively, our\nresults highlight the potential to understand RLVR through a token-entropy\nperspective and optimize RLVR by leveraging high-entropy minority tokens to\nfurther improve LLM reasoning.",
+    "authors": [
+      "Shenzhi Wang",
+      "Le Yu",
+      "Chang Gao",
+      "Chujie Zheng",
+      "Shixuan Liu",
+      "Rui Lu",
+      "Kai Dang",
+      "Xionghui Chen",
+      "Jianxin Yang",
+      "Zhenru Zhang",
+      "Yuqiong Liu",
+      "An Yang",
+      "Andrew Zhao",
+      "Yang Yue",
+      "Shiji Song",
+      "Bowen Yu",
+      "Gao Huang",
+      "Junyang Lin"
+    ],
+    "likes": 123,
+    "published_date": "Jun 2",
+    "url": "https://huggingface.co/papers/2506.01939",
+    "date_collected": "2025-06-06T15:01:43.235801",
+    "week": "2025-W23",
+    "translation": {
+      "title": "80/20 법칙을 넘어: 고엔트로피 소수 토큰이 큰 언어 모델 추론을 위한 효과적인 강화 학습을 이끈다",
+      "abstract": "검증 가능 보상을 갖는 강화 학습 (RLVR)은 거대한 언어 모델 (LLM)의 추론 능력을 향상시키는 강력한 방법으로 부상하였지만, 그 메커니즘은 아직 잘 알려지지 않았다. 본 논문에서는 토큰 엔트로피 패턴의 혁신적인 시각을 통해 RLVR을 첨단적으로 탐구하며, 다양한 토큰이 추론 성능에 어떻게 영향을 미치는지 종합적으로 분석한다. Chain-of-Thought (CoT) 추론에서 토큰 엔트로피 패턴을 조사함으로써, 일부 토큰만이 높은 엔트로피를 나타내고, 이러한 토큰들이 모델을 다양한 추론 경로로 이끄는 중요한 갈림길 역할을 한다는 사실을 관찰했다. 더불어, RLVR 훈련 중 엔트로피 패턴이 어떻게 변화하는지 연구함으로써, RLVR이 주로 기본 모델의 엔트로피 패턴을 준수하며, 주로 높은 엔트로피 토큰의 엔트로피를 조절함을 발견했다. 이러한 결과들은 RLVR에서 고엔트로피 토큰 (즉, 갈림길 토큰)이 중요함을 강조한다."
+    },
+    "summary": "1. 고엔트로피 소수 토큰이 다양한 추론 경로로 모델을 이끈다.\n2. RLVR은 주로 높은 엔트로피 토큰을 최적화하여 효과를 발휘하며, 저엔트로피 토큰에만 훈련하는 것은 성능 저하를 불러온다.\n3. 80/20 법칙을 넘어, 20%의 토큰만을 이용하여 다른 기본 모델보다 우수한 성능을 보이는 RLVR의 강화된 효과를 강조한다."
+  },
+  {
+    "title": "ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in\n  Large Language Models",
+    "abstract": "Recent advances in reasoning-centric language models have highlighted\nreinforcement learning (RL) as a promising method for aligning models with\nverifiable rewards. However, it remains contentious whether RL truly expands a\nmodel's reasoning capabilities or merely amplifies high-reward outputs already\nlatent in the base model's distribution, and whether continually scaling up RL\ncompute reliably leads to improved reasoning performance. In this work, we\nchallenge prevailing assumptions by demonstrating that prolonged RL (ProRL)\ntraining can uncover novel reasoning strategies that are inaccessible to base\nmodels, even under extensive sampling. We introduce ProRL, a novel training\nmethodology that incorporates KL divergence control, reference policy\nresetting, and a diverse suite of tasks. Our empirical analysis reveals that\nRL-trained models consistently outperform base models across a wide range of\npass@k evaluations, including scenarios where base models fail entirely\nregardless of the number of attempts. We further show that reasoning boundary\nimprovements correlates strongly with task competence of base model and\ntraining duration, suggesting that RL can explore and populate new regions of\nsolution space over time. These findings offer new insights into the conditions\nunder which RL meaningfully expands reasoning boundaries in language models and\nestablish a foundation for future work on long-horizon RL for reasoning. We\nrelease model weights to support further research:\nhttps://huggingface.co/nvidia/Nemotron-Research-Reasoning-Qwen-1.5B",
+    "authors": [
+      "Mingjie Liu",
+      "Shizhe Diao",
+      "Ximing Lu",
+      "Jian Hu",
+      "Xin Dong",
+      "Yejin Choi",
+      "Jan Kautz",
+      "Yi Dong"
+    ],
+    "likes": 112,
+    "published_date": "May 30",
+    "url": "https://huggingface.co/papers/2505.24864",
+    "date_collected": "2025-06-06T15:01:43.236816",
+    "week": "2025-W23",
+    "translation": {
+      "title": "ProRL: 장기 강화 학습이 대형 언어 모델의 추론 경계를 확장하는 방법",
+      "abstract": "최근 추론 중심 언어 모델의 발전은 강화 학습(RL)을 통해 모델을 검증 가능한 보상과 일치시키는 유망한 방법으로 역설해왔다. 그러나 RL이 모델의 추론 능력을 실제로 확장시키는지 또는 단지 기본 모델 분포에 이미 잠재된 높은 보상 결과를 강화하는지, 그리고 계속해서 RL 컴퓨트 스케일을 확장하는 것이 신뢰할 수 있는 추론 성능 향상으로 이어지는지에 대해 논쟁 중이다. 본 연구에서 우리는 ProRL(장기 강화 학습) 훈련이 기본 모델에서 접근할 수 없는 새로운 추론 전략을 발견할 수 있는 것을 보여 기존의 가정에 도전한다. 우리는 KL 발산 제어, 참조 정책 재설정 및 다양한 작업 모음을 통합한 새로운 훈련 방법인 ProRL을 소개한다. 우리의 경험적 분석은 RL로 훈련된 모델이 다양한 pass@k 평가를 통해 기본 모델을 일관되게 능가하는 것을 보여주며, 기본 모델이 시도 횟수와 관계없이 완전히 실패하는 시나리오를 포함한 폭넓은 범위의 평가에 대해 효과적임을 입증한다. 더욱이 추론 경계의 개선이 기본 모델의 작업 능력과 훈련 기간과 강력하게 상관되어 있음을 보여주어 RL이 시간이 흐름에 따라 새로운 해결 공간을 탐색하고 채울 수 있다는 것을 시사한다. 이러한 발견은 RL이 언어 모델에서 추론 경계를 의미있게 확장하는 조건에 대한 새로운 통찰을 제공하며, 추론을 위한 장기 RL에 대한 향후 연구를 위한 기반을 확립한다. 추가로 모델 가중치를 공개하여 더 많은 연구를 지원한다: https://huggingface.co/nvidia/Nemotron-Research-Reasoning-Qwen-1.5B"
+    },
+    "summary": "1. ProRL 훈련을 통해 새로운 추론 전략을 개발하고 기본 모델에서 불가능한 영역을 발견할 수 있다.\n2. 장기 강화 학습이 KL 발산 제어, 참조 정책 재설정, 다양한 작업 등을 포함한 ProRL 훈련 방법론은 다양한 상황에서 효과적인 추론 성능을 보여준다.\n3. 추론 경계의 확장은 기본 모델의 작업 능력과 훈련 기간과 강력하게 연관되며, RL은 시간이 지남에 따라 새로운 해결 공간을 탐색하고 채울 수 있다."
+  },
+  {
+    "title": "AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time",
+    "abstract": "This paper presents AlphaOne (alpha1), a universal framework for\nmodulating reasoning progress in large reasoning models (LRMs) at test time.\nalpha1 first introduces alpha moment, which represents the scaled\nthinking phase with a universal parameter alpha. Within this scaled\npre-alpha moment phase, it dynamically schedules slow thinking transitions\nby modeling the insertion of reasoning transition tokens as a Bernoulli\nstochastic process. After the alpha moment, alpha1 deterministically\nterminates slow thinking with the end-of-thinking token, thereby fostering fast\nreasoning and efficient answer generation. This approach unifies and\ngeneralizes existing monotonic scaling methods by enabling flexible and dense\nslow-to-fast reasoning modulation. Extensive empirical studies on various\nchallenging benchmarks across mathematical, coding, and scientific domains\ndemonstrate alpha1's superior reasoning capability and efficiency. Project\npage: https://alphaone-project.github.io/",
+    "authors": [
+      "Junyu Zhang",
+      "Runpei Dong",
+      "Han Wang",
+      "Xuying Ning",
+      "Haoran Geng",
+      "Peihao Li",
+      "Xialin He",
+      "Yutong Bai",
+      "Jitendra Malik",
+      "Saurabh Gupta",
+      "Huan Zhang"
+    ],
+    "likes": 84,
+    "published_date": "May 30",
+    "url": "https://huggingface.co/papers/2505.24863",
+    "date_collected": "2025-06-06T15:01:43.237900",
+    "week": "2025-W23",
+    "translation": {
+      "title": "알파원: 테스트 시간에 느리고 빠르게 사고하는 모델의 추론 (AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time)",
+      "abstract": "본 논문은 알파원 (alpha1)이라는 대규모 추론 모델(LRMs)에서 추론 진행을 조절하는 범용 프레임워크를 제시합니다. alpha1은 먼저 범용 파라미터 알파를 통해 스케일된 사고 단계를 나타내는 알파 모멘트를 소개합니다. 스케일된 사전-알파 모멘트 단계 내에서, alpha1은 추론 전이 토큰 삽입을 베르누이 확률 과정으로 모델링하여 느린 사고 전이를 동적으로 스케줄링합니다. 알파 모멘트 이후, alpha1은 추론 종료 토큰을 사용하여 느린 사고를 결정론적으로 종료시킴으로써 빠른 추론과 효율적인 답변 생성을 촉진합니다. 이 접근 방식은 유연하고 밀도 높은 느린-빠른 추론 조절을 가능케 함으로써 기존의 단조 스케일링 방법을 통합하고 일반화합니다. 수학, 코딩 및 과학 분야의 다양한 어려운 벤치마크에 대한 포괄적인 경험적 연구는 alpha1의 우수한 추론 능력과 효율성을 입증합니다. 프로젝트 페이지: https://alphaone-project.github.io/"
+    },
+    "summary": "1. AlphaOne (alpha1)은 대규모 추론 모델에서 추론 진행을 모듈화하는 범용 프레임워크로, 느린 사고 전이를 동적으로 스케줄링하여 효과적인 빠른 추론을 유도합니다.\n2. 이 모델은 레이어 별 스케일링 방법을 통합하고, 느린-빠른 추론 모듈을 밀도 높게 제어하여 다양한 벤치마크에서 우수한 추론 능력을 보였습니다.\n3. 연구 결과는 수학, 코딩, 과학 분야에서 alpha1이 효율적인 답변 생성과 함께 우수한 추론 능력을 갖는다는 것을 명확히 입증하였습니다."
+  },
+  {
+    "title": "Time Blindness: Why Video-Language Models Can't See What Humans Can?",
+    "abstract": "Recent advances in vision-language models (VLMs) have made impressive strides\nin understanding spatio-temporal relationships in videos. However, when spatial\ninformation is obscured, these models struggle to capture purely temporal\npatterns. We introduce SpookyBench, a benchmark where information is\nencoded solely in temporal sequences of noise-like frames, mirroring natural\nphenomena from biological signaling to covert communication. Interestingly,\nwhile humans can recognize shapes, text, and patterns in these sequences with\nover 98% accuracy, state-of-the-art VLMs achieve 0% accuracy. This performance\ngap highlights a critical limitation: an over-reliance on frame-level spatial\nfeatures and an inability to extract meaning from temporal cues. Furthermore,\nwhen trained in data sets with low spatial signal-to-noise ratios (SNR),\ntemporal understanding of models degrades more rapidly than human perception,\nespecially in tasks requiring fine-grained temporal reasoning. Overcoming this\nlimitation will require novel architectures or training paradigms that decouple\nspatial dependencies from temporal processing. Our systematic analysis shows\nthat this issue persists across model scales and architectures. We release\nSpookyBench to catalyze research in temporal pattern recognition and bridge the\ngap between human and machine video understanding. Dataset and code has been\nmade available on our project website: https://timeblindness.github.io/.",
+    "authors": [
+      "Ujjwal Upadhyay",
+      "Mukul Ranjan",
+      "Zhiqiang Shen",
+      "Mohamed Elhoseiny"
+    ],
+    "likes": 72,
+    "published_date": "May 30",
+    "url": "https://huggingface.co/papers/2505.24867",
+    "date_collected": "2025-06-06T15:01:43.238883",
+    "week": "2025-W23",
+    "translation": {
+      "title": "시간의 맹시: 왜 비디오-언어 모델은 인간이 볼 수 있는 것을 보지 못하는가?",
+      "abstract": "최근 시각-언어 모델(VLMs)의 발전으로 비디오 속 시공간적 관계를 이해하는데 상당한 진전이 이루어졌다. 그러나, 공간 정보가 가려지면 이러한 모델들은 순수하게 시간적 패턴을 포착하는 데 어려움을 겪는다. 우리는 정보가 순전히 잡음과 같은 프레임의 시간적 순서에 부호화된 SpookyBench를 소개한다. 이는 생물학적 신호 전달부터 은밀한 소통까지의 자연 현상을 반영한다. 흥미롭게도, 인간은 이러한 순서에서 모양, 문자 및 패턴을 98% 이상의 정확도로 인식할 수 있지만, 최첨단 VLMs는 0%의 정확도를 달성한다. 이 성능 차이는 중요한 한계를 강조한다: 프레임 수준의 공간적 특징에 과도하게 의존하며 시간적 단서에서 의미를 추출할 수 없는 능력. 또한, 저 공간 신호 대잡음 비율(SNR) 데이터셋에서 훈련된 경우, 모델의 시간적 이해는 특히 세밀한 시간 추론을 필요로 하는 작업에서 인간 지각보다 빠르게 저하된다. 이 한계 극복을 위해서는 새로운 아키텍처나 훈련 패러다임이 필요할 것이다. 우리의 체계적 분석은 이 문제가 모델 규모와 아키텍처를 통해 계속된다는 것을 보여준다. 우리는 인간과 기계 비디오 이해 사이의 간극을 줄이고 시간적 패턴 인식에 대한 연구를 촉진하기 위해 SpookyBench를 공개한다. 데이터셋 및 코드는 프로젝트 웹사이트(https://timeblindness.github.io/)에서 이용 가능하다."
+    },
+    "summary": "1. 최신 비전-언어 모델(VLMs)은 시간적 패턴을 인식하는 데 어려움을 겪고, 인간보다 정확도가 현저히 낮다.\n2. 낮은 공간 신호 대잡음 비율(SNR) 데이터셋에서 훈련된 모델은 시간적 이해가 빠르게 떨어지는데, 특히 세밀한 시간 추론이 필요한 작업에서 뚜렷하다.\n3. 이러한 한계를 극복하기 위해 공간적 의존성을 시간적 처리에서 분리하는 새로운 아키텍처나 훈련 방법론이 필요하며, 이에 대한 연구를 촉진하기 위해 SpookyBench를 공개하였다."
+  },
+  {
+    "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient\n  Robotics",
+    "abstract": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets\nencode rich visual and linguistic knowledge, making them a strong foundation\nfor robotics. Rather than training robotic policies from scratch, recent\napproaches adapt VLMs into vision-language-action (VLA) models that enable\nnatural language-driven perception and control. However, existing VLAs are\ntypically massive--often with billions of parameters--leading to high training\ncosts and limited real-world deployability. Moreover, they rely on academic and\nindustrial datasets, overlooking the growing availability of\ncommunity-collected data from affordable robotic platforms. In this work, we\npresent SmolVLA, a small, efficient, and community-driven VLA that drastically\nreduces both training and inference costs, while retaining competitive\nperformance. SmolVLA is designed to be trained on a single GPU and deployed on\nconsumer-grade GPUs or even CPUs. To further improve responsiveness, we\nintroduce an asynchronous inference stack decoupling perception and action\nprediction from action execution, allowing higher control rates with chunked\naction generation. Despite its compact size, SmolVLA achieves performance\ncomparable to VLAs that are 10x larger. We evaluate SmolVLA on a range of both\nsimulated as well as real-world robotic benchmarks and release all code,\npretrained models, and training data.",
+    "authors": [
+      "Mustafa Shukor",
+      "Dana Aubakirova",
+      "Francesco Capuano",
+      "Pepijn Kooijmans",
+      "Steven Palma",
+      "Adil Zouitine",
+      "Michel Aractingi",
+      "Caroline Pascal",
+      "Martino Russi",
+      "Andres Marafioti",
+      "Simon Alibert",
+      "Matthieu Cord",
+      "Thomas Wolf",
+      "Remi Cadene"
+    ],
+    "likes": 69,
+    "published_date": "Jun 2",
+    "url": "https://huggingface.co/papers/2506.01844",
+    "date_collected": "2025-06-06T15:01:43.240106",
+    "week": "2025-W23",
+    "translation": {
+      "title": "SmolVLA: 경제적이고 효율적인 로봇학을 위한 비전-언어-행동 모델",
+      "abstract": "대규모 다중 모달 데이터셋에서 사전학습된 비전-언어 모델(Vision-language models, VLMs)은 풍부한 시각적 및 언어적 지식을 인코딩하여 로봇학에 강력한 기반을 제공한다. 이 연구에서는 불필요한 비용과 한정된 실제 적용성을 해결하기 위해 소형, 효율적이며 커뮤니티 중심인 SmolVLA를 제안한다."
+    },
+    "summary": "1. 대규모 비전-언어 모델보다 10배 더 작은 크기의 SmolVLA를 소개하여 훈련 및 추론 비용을 크게 절감하면서도 경쟁력 있는 성능을 유지한다.\n2. SmolVLA는 단일 GPU에서 훈련될 수 있고, 소비자용 GPU나 심지어 CPU에서 실행이 가능하며, 비동기 추론 스택을 통해 더 나은 반응성을 제공한다.\n3. 다양한 시뮬레이션 및 실제 로봇 벤치마크에서 SmolVLA의 성능을 평가하고, 모든 코드, 사전 학습된 모델 및 훈련 데이터를 공개한다."
+  },
+  {
+    "title": "MiMo-VL Technical Report",
+    "abstract": "We open-source MiMo-VL-7B-SFT and MiMo-VL-7B-RL, two powerful vision-language\nmodels delivering state-of-the-art performance in both general visual\nunderstanding and multimodal reasoning. MiMo-VL-7B-RL outperforms Qwen2.5-VL-7B\non 35 out of 40 evaluated tasks, and scores 59.4 on OlympiadBench, surpassing\nmodels with up to 78B parameters. For GUI grounding applications, it sets a new\nstandard with 56.1 on OSWorld-G, even outperforming specialized models such as\nUI-TARS. Our training combines four-stage pre-training (2.4 trillion tokens)\nwith Mixed On-policy Reinforcement Learning (MORL) integrating diverse reward\nsignals. We identify the importance of incorporating high-quality reasoning\ndata with long Chain-of-Thought into pre-training stages, and the benefits of\nmixed RL despite challenges in simultaneous multi-domain optimization. We also\ncontribute a comprehensive evaluation suite covering 50+ tasks to promote\nreproducibility and advance the field. The model checkpoints and full\nevaluation suite are available at https://github.com/XiaomiMiMo/MiMo-VL.",
+    "authors": [
+      "Xiaomi LLM-Core Team",
+      "Zihao Yue",
+      "Zhenru Lin",
+      "Yifan Song",
+      "Weikun Wang",
+      "Shuhuai Ren",
+      "Shuhao Gu",
+      "Shicheng Li",
+      "Peidian Li",
+      "Liang Zhao",
+      "Lei Li",
+      "Kainan Bao",
+      "Hao Tian",
+      "Hailin Zhang",
+      "Gang Wang",
+      "Dawei Zhu",
+      "Cici",
+      "Chenhong He",
+      "Bowen Ye",
+      "Bowen Shen",
+      "Zihan Zhang",
+      "Zihan Jiang"
+    ],
+    "likes": 58,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2506.03569",
+    "date_collected": "2025-06-06T15:01:43.241580",
+    "week": "2025-W23",
+    "translation": {
+      "title": "MiMo-VL 기술 보고서",
+      "abstract": "MiMo-VL-7B-SFT와 MiMo-VL-7B-RL, 두 강력한 비전-언어 모델을 오픈소스로 공개합니다. 이 모델들은 일반적인 시각 이해와 다중 모달 추론에서 최고 수준의 성능을 제공합니다. MiMo-VL-7B-RL은 40개 평가 작업 중 35개에서 Qwen2.5-VL-7B를 능가하며, OlympiadBench에서 59.4점을 획득하여 최대 78B 매개변수를 가진 모델들을 뛰어넘었습니다. GUI grounding 애플리케이션에서는 OSWorld-G에서 56.1점을 기록하여 UI-TARS와 같은 전문 모델들을 능가하는 새로운 기준을 세우고 있습니다. 저희의 훈련은 4단계 사전 훈련(2.4조 토큰)과 다양한 보상 신호를 통합한 Mixed On-policy Reinforcement Learning(MORL)을 결합하고 있습니다."
+    },
+    "summary": "1. MiMo-VL-7B-RL은 다양한 작업에서 높은 성능을 보이며, GUI grounding 영역에서 OSWorld-G에서 특히 뛰어난 결과를 보여 새로운 기준을 제시합니다.\n2. 사전 훈련 단계에 고품질 추론 데이터의 중요성과 혼합 강화 학습의 이점을 확인하며, 병렬 다중 도메인 최적화의 어려움에도 불구하고 혼합 RL의 이점을 밝히고 있습니다.\n3. 연구의 재현성 증진 및 해당 분야의 발전을 위해 50개 이상의 작업을 포함한 포괄적인 평가 스위트를 제공하고 있습니다."
+  },
+  {
+    "title": "REASONING GYM: Reasoning Environments for Reinforcement Learning with\n  Verifiable Rewards",
+    "abstract": "We introduce Reasoning Gym (RG), a library of reasoning environments for\nreinforcement learning with verifiable rewards. It provides over 100 data\ngenerators and verifiers spanning multiple domains including algebra,\narithmetic, computation, cognition, geometry, graph theory, logic, and various\ncommon games. Its key innovation is the ability to generate virtually infinite\ntraining data with adjustable complexity, unlike most previous reasoning\ndatasets, which are typically fixed. This procedural generation approach allows\nfor continuous evaluation across varying difficulty levels. Our experimental\nresults demonstrate the efficacy of RG in both evaluating and reinforcement\nlearning of reasoning models.",
+    "authors": [
+      "Zafir Stojanovski",
+      "Oliver Stanley",
+      "Joe Sharratt",
+      "Richard Jones",
+      "Abdulhakeem Adefioye",
+      "Jean Kaddour",
+      "Andreas Köpf"
+    ],
+    "likes": 57,
+    "published_date": "May 30",
+    "url": "https://huggingface.co/papers/2505.24760",
+    "date_collected": "2025-06-06T15:01:43.242538",
+    "week": "2025-W23",
+    "translation": {
+      "title": "추론 체육관: 확인 가능한 보상을 갖춘 강화 학습을 위한 추론 환경",
+      "abstract": "우리는 확인 가능한 보상을 갖춘 강화 학습을 위한 추론 환경 라이브러리인 Reasoning Gym (RG)를 소개합니다. 대수, 산술, 계산, 인지, 기하학, 그래프 이론, 논리, 그리고 다양한 일반 게임을 포함하는 100개 이상의 데이터 생성기와 확인기를 제공합니다. 이 라이브러리의 주요 혁신점은 일반적으로 고정된 이전 추론 데이터셋과 달리 조정 가능한 복잡성으로 거의 무한한 훈련 데이터를 생성할 수 있는 능력입니다. 이 절차적 생성 접근 방식은 다양한 난이도 수준에서의 지속적인 평가를 허용합니다. 실험 결과는 RG가 추론 모델의 평가와 강화 학습에서의 효과를 입증합니다."
+    },
+    "summary": "1. Reasoning Gym은 다양한 도메인에 걸쳐 100가지 이상의 데이터 생성기와 확인기를 제공하여, 조정 가능한 복잡성으로 거의 무한한 훈련 데이터를 생성하고 다양한 난이도 수준에서의 평가를 가능케 합니다.\n2. 실험 결과는 Reasoning Gym의 추론 모델 평가와 강화 학습에서의 효과를 입증하며, 이전 데이터셋과 비교하여 우수한 성능을 보여줍니다.\n3. Reasoning Gym은 강화 학습에 적합한 환경을 제공하며, 확인 가능한 보상 시스템을 활용하여 모델의 향상을 지원합니다."
+  },
+  {
+    "title": "UniWorld: High-Resolution Semantic Encoders for Unified Visual\n  Understanding and Generation",
+    "abstract": "Although existing unified models deliver strong performance on\nvision-language understanding and text-to-image generation, their models are\nlimited in exploring image perception and manipulation tasks, which are\nurgently desired by users for wide applications. Recently, OpenAI released\ntheir powerful GPT-4o-Image model for comprehensive image perception and\nmanipulation, achieving expressive capability and attracting community\ninterests. By observing the performance of GPT-4o-Image in our carefully\nconstructed experiments, we infer that GPT-4o-Image leverages features\nextracted by semantic encoders instead of VAE, while VAEs are considered\nessential components in many image manipulation models. Motivated by such\ninspiring observations, we present a unified generative framework named\nUniWorld based on semantic features provided by powerful visual-language models\nand contrastive semantic encoders. As a result, we build a strong unified model\nusing only 1% amount of BAGEL's data, which consistently outperforms BAGEL on\nimage editing benchmarks. UniWorld also maintains competitive image\nunderstanding and generation capabilities, achieving strong performance across\nmultiple image perception tasks. We fully open-source our models, including\nmodel weights, training and evaluation scripts, and datasets.",
+    "authors": [
+      "Bin Lin",
+      "Zongjian Li",
+      "Xinhua Cheng",
+      "Yuwei Niu",
+      "Yang Ye",
+      "Xianyi He",
+      "Shenghai Yuan",
+      "Wangbo Yu",
+      "Shaodong Wang",
+      "Yunyang Ge",
+      "Yatian Pang",
+      "Li Yuan"
+    ],
+    "likes": 55,
+    "published_date": "Jun 3",
+    "url": "https://huggingface.co/papers/2506.03147",
+    "date_collected": "2025-06-06T15:01:43.243674",
+    "week": "2025-W23",
+    "translation": {
+      "title": "유니월드: 통합 시각 이해 및 생성을 위한 고해상도 의미 인코더",
+      "abstract": "기존의 통합 모델은 시각-언어 이해 및 텍스트-이미지 생성에서 강력한 성능을 보이지만, 이미지 지각과 조작 작업을 탐구하는 데 제약이 있어 사용자들이 긴밀한 응용을 원하는 상황에서 긴요하게 여겨진다. 최근 OpenAI는 강력한 GPT-4o-Image 모델을 공개하여 포괄적인 이미지 지각과 조작을 실현하며 표현 능력을 갖추고 커뮤니티의 관심을 끌었다. GPT-4o-Image의 성능을 신중히 구성된 실험을 통해 관찰한 결과, GPT-4o-Image가 VAE 대신 의미 인코더에서 추출된 특징을 활용하는 것으로 추정되며, VAE는 많은 이미지 조작 모델에서 필수적인 구성 요소로 간주된다. 이러한 영감적인 관찰을 바탕으로, 우리는 강력한 시각-언어 모델에서 제공하는 의미적 특징과 대조적 의미 인코더를 기반으로 한 유니World라는 통합 생성 프레임워크를 제시한다. 결과적으로, 우리는 BAGEL의 1%양의 데이터만 사용하여 BAGEL을 일관되게 능가하는 강력한 통합 모델을 구축한다. UniWorld는 경쟁력 있는 이미지 이해 및 생성 능력을 유지하며, 여러 이미지 지각 작업에서 강력한 성능을 달성한다. 우리는 모델 가중치, 훈련 및 평가 스크립트, 그리고 데이터셋을 모두 공개한다."
+    },
+    "summary": "1. GPT-4o-Image 모델을 사용한 이미지 지각과 조작 작업에 대한 UniWorld의 개발\n2. 오직 1% 양의 데이터를 사용하여 BAGEL을 능가하는 강력한 통합 모델의 구축\n3. 이미지 이해와 생성 능력에서 경쟁력을 유지하며 다양한 이미지 지각 작업에서 강력한 성능을 보임."
+  },
+  {
+    "title": "VS-Bench: Evaluating VLMs for Strategic Reasoning and Decision-Making in\n  Multi-Agent Environments",
+    "abstract": "Recent advancements in Vision Language Models (VLMs) have expanded their\ncapabilities to interactive agent tasks, yet existing benchmarks remain limited\nto single-agent or text-only environments. In contrast, real-world scenarios\noften involve multiple agents interacting within rich visual and linguistic\ncontexts, posing challenges with both multimodal observations and strategic\ninteractions. To bridge this gap, we introduce Visual Strategic Bench\n(VS-Bench), a multimodal benchmark that evaluates VLMs for strategic reasoning\nand decision-making in multi-agent environments. VS-Bench comprises eight\nvision-grounded environments spanning cooperative, competitive, and\nmixed-motive interactions, designed to assess agents' ability to predict\nothers' future moves and optimize for long-term objectives. We consider two\ncomplementary evaluation dimensions, including offline evaluation of strategic\nreasoning by next-action prediction accuracy and online evaluation of\ndecision-making by normalized episode return. Extensive experiments of fourteen\nleading VLMs reveal a significant gap between current models and optimal\nperformance, with the best models attaining 47.8% prediction accuracy and 24.3%\nnormalized return. We further conduct in-depth analyses on multimodal\nobservations, test-time scaling, social behaviors, and failure cases of VLM\nagents. By standardizing the evaluation and highlighting the limitations of\nexisting models, we envision VS-Bench as a foundation for future research on\nstrategic multimodal agents. Code and data are available at\nhttps://vs-bench.github.io.",
+    "authors": [
+      "Zelai Xu",
+      "Zhexuan Xu",
+      "Xiangmin Yi",
+      "Huining Yuan",
+      "Xinlei Chen",
+      "Yi Wu",
+      "Chao Yu",
+      "Yu Wang"
+    ],
+    "likes": 55,
+    "published_date": "Jun 3",
+    "url": "https://huggingface.co/papers/2506.02387",
+    "date_collected": "2025-06-06T15:01:43.244729",
+    "week": "2025-W23",
+    "translation": {
+      "title": "VS-Bench: 다중 에이전트 환경에서 전략적 추론과 의사 결정 평가",
+      "abstract": "최근 Vision Language Models (VLMs)의 발전으로 상호작용하는 에이전트 작업에 대한 능력이 확대되었지만, 기존의 벤치마크는 단일 에이전트나 텍스트 전용 환경에만 제한되어 있습니다. 반면, 실제 시나리오는 주로 다중 에이전트가 풍부한 시각적 및 언어적 맥락에서 상호작용하며, 다중 모달 관측과 전략적 상호작용에 도전을 제공합니다. 이러한 간극을 메우기 위해, 우리는 다중 에이전트 환경에서의 전략적 추론과 의사 결정을 평가하는 다중 모달 벤치마크인 Visual Strategic Bench (VS-Bench)를 소개합니다. VS-Bench는 협력, 경쟁, 혼합 동기 상호작용을 포괄하는 8가지 시각적 환경으로 구성되어 있으며, 에이전트의 다른 이동을 예측하고 장기적 목표를 최적화하기 위한 능력을 평가하기 위해 설계되었습니다. 우리는 다음-행동 예측 정확도에 의한 전략적 추론의 오프라인 평가와 정규화된 에피소드 반환에 의한 의사결정 온라인 평가라는 두 가지 보완적인 평가 차원을 고려합니다. 14개의 주요 VLMs에 대한 광범위한 실험에서, 최고의 모델이 47.8%의 예측 정확도와 24.3%의 정규화된 반환을 달성하는 등, 현재 모델과 최적 성능 사이에 상당한 격차가 있음을 밝혀냅니다. 또한 VLM 에이전트의 다중 모달 관측, 테스트 시간 스케일링, 사회적 행동 및 실패 사례에 대해 심층 분석을 수행합니다. 우리는 평가 표준화와 기존 모델의 한계를 강조함으로써, VS-Bench를 전략적 다중 모달 에이전트에 대한 미래 연구의 기초로 제시합니다. 코드와 데이터는 https://vs-bench.github.io 에서 확인할 수 있습니다."
+    },
+    "summary": "1. Vision Language Models을 위한 새로운 벤치마크인 VS-Bench가 소개되었으며, 다중 에이전트 환경에서 전략적 추론과 의사 결정 능력을 평가하는데 사용됩니다.\n2. 협력, 경쟁, 혼합 동기 상호작용을 포함하는 8가지 시각적 환경으로 이루어진 VS-Bench는 다른 에이전트의 행동 예측과 장기적 목표 최적화 능력을 평가합니다.\n3. 최고의 VLM 모델들이 47.8%의 예측 정확도와 24.3%의 정규화된 반환을 달성했지만, 현재 모델과 최적 성능 간에 상당한 차이가 있음을 보여주는 실험 결과 및 분석 결과가 제시됩니다."
+  }
+]

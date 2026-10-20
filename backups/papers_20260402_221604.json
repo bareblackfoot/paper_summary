@@ -1,0 +1,296 @@
+[
+  {
+    "title": "FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization",
+    "abstract": "We present Future-KL Influenced Policy Optimization (FIPO), a reinforcement learning algorithm designed to overcome reasoning bottlenecks in large language models. While GRPO style training scales effectively, it typically relies on outcome-based rewards (ORM) that distribute a global advantage uniformly across every token in a trajectory. We argue that this coarse-grained credit assignment imposes a performance ceiling by failing to distinguish critical logical pivots from trivial tokens. FIPO addresses this by incorporating discounted future-KL divergence into the policy update, creating a dense advantage formulation that re-weights tokens based on their influence on subsequent trajectory behavior. Empirically, FIPO enables models to break through the length stagnation seen in standard baselines. Evaluated on Qwen2.5-32B, FIPO extends the average chain-of-thought length from roughly 4,000 to over 10,000 tokens and increases AIME 2024 Pass@1 accuracy from 50.0% to a peak of 58.0% (converging at approximately 56.0\\%). This outperforms both DeepSeek-R1-Zero-Math-32B (around 47.0%) and o1-mini (approximately 56.0%). Our results suggest that establishing dense advantage formulations is a vital path for evolving ORM-based algorithms to unlock the full reasoning potential of base models. We open-source our training system, built on the verl framework.",
+    "authors": [
+      "Chiyu Ma",
+      "Shuo Yang",
+      "Kexin Huang",
+      "Jinda Lu",
+      "Haoming Meng",
+      "Shangshang Wang",
+      "Bolin Ding",
+      "Soroush Vosoughi",
+      "Guoyin Wang",
+      "Jingren Zhou"
+    ],
+    "likes": 288,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2603.19835",
+    "date_collected": "2026-04-02T07:18:11.392971+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "FIPO: 미래-KL 영향을 받은 정책 최적화를 통한 심층 추론 유도",
+      "abstract": "우리는 대규모 언어 모델의 추론 병목을 극복하기 위해 고안된 강화 학습 알고리즘인 미래-KL 영향을 받은 정책 최적화(FIPO)를 제안합니다. 기존의 GRPO 스타일 학습은 효율적으로 확장되지만 일반적으로 결과 중심 보상(ORM)에 의존하며 이는 전체 토큰에 균일하게 전역적으로 이점을 부여합니다. 저희는 이러한 거칠게 구분된 크레딧 할당이 핵심 논리적 피벗과 사소한 토큰을 구분하지 못하여 성능 상한선을 가중한다고 주장합니다. FIPO는 정책 업데이트에 할인된 미래-KL 발산을 포함하여 각 토큰이 후속 경로 행동에 미치는 영향에 따라 토큰을 재조정하는 밀도형 이점 공식을 생성함으로써 이를 해결합니다."
+    },
+    "summary": "1. FIPO는 대규모 언어 모델에서 추론 병목을 극복하기 위해 미래-KL 영향을 받은 정책 최적화를 제안하며, 밀도형 이점 공식을 통해 토큰을 재조정하여 성능 향상을 도모합니다.\n2. 실험 결과, FIPO는 표준 기준선에서 보이는 길이 정체 현상을 극복하고 평균 사고 체인 길이를 4,000에서 10,000 토큰 이상으로 연장하며, AIME 2024 Pass@1 정확도를 50.0%에서 58.0%로 향상시킵니다.\n3. 이러한 결과는 밀도형 이점 공식을 수립함으로써 기본 모델의 전체 추론 잠재력을 해제하는데 있어서 ORM 기반 알고리즘을 발전시키는 중요한 길임을 시사합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence",
+    "abstract": "The convergence of low-altitude economies, embodied intelligence, and air-ground cooperative systems creates growing demand for simulation infrastructure capable of jointly modeling aerial and ground agents within a single physically coherent environment. Existing open-source platforms remain domain-segregated: driving simulators lack aerial dynamics, while multirotor simulators lack realistic ground scenes. Bridge-based co-simulation introduces synchronization overhead and cannot guarantee strict spatial-temporal consistency.\n  We present CARLA-Air, an open-source infrastructure that unifies high-fidelity urban driving and physics-accurate multirotor flight within a single Unreal Engine process. The platform preserves both CARLA and AirSim native Python APIs and ROS 2 interfaces, enabling zero-modification code reuse. Within a shared physics tick and rendering pipeline, CARLA-Air delivers photorealistic environments with rule-compliant traffic, socially-aware pedestrians, and aerodynamically consistent UAV dynamics, synchronously capturing up to 18 sensor modalities across all platforms at each tick. The platform supports representative air-ground embodied intelligence workloads spanning cooperation, embodied navigation and vision-language action, multi-modal perception and dataset construction, and reinforcement-learning-based policy training. An extensible asset pipeline allows integration of custom robot platforms into the shared world. By inheriting AirSim's aerial capabilities -- whose upstream development has been archived -- CARLA-Air ensures this widely adopted flight stack continues to evolve within a modern infrastructure.\n  Released with prebuilt binaries and full source: https://github.com/louiszengCN/CarlaAir",
+    "authors": [
+      "Tianle Zeng",
+      "Hanxuan Chen",
+      "Yanci Wen",
+      "Hong Zhang"
+    ],
+    "likes": 228,
+    "published_date": "Mar 30",
+    "url": "https://huggingface.co/papers/2603.28032",
+    "date_collected": "2026-04-02T07:18:11.394409+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "CARLA-Air: CARLA 세계 안에서 드론을 조종하라 -- 공중-지상 융합 인텔리전스를 위한 통합 인프라",
+      "abstract": "저공도 시스템, 인텔리전트 시스템, 그리고 공중-지상 협력 시스템의 융합으로 인해, 공중 및 지상 에이전트를 함께 모델링할 수 있는 시뮬레이션 인프라에 대한 수요가 증가하고 있습니다. 기존의 오픈소스 플랫폼은 영역별로 분리되어 있어, 운전 시뮬레이터에서는 공중 역학이 부족하고, 멀티로터 시뮬레이터에서는 현실적인 지상 장면이 부족합니다. 다리 기반의 공동 시뮬레이션은 동기화 오버헤드를 도입하며 엄격한 공간-시간 일관성을 보장할 수 없습니다."
+    },
+    "summary": "1. CARLA-Air는 Unreal Engine 프로세스 내에서 고도의 사실적인 도시 운전과 물리적으로 정확한 멀티로터 비행을 통합하는 오픈소스 인프라를 제공합니다.\n2. CARLA-Air는 CARLA와 AirSim의 Python API 및 ROS 2 인터페이스를 보존하여 코드 재사용을 가능하게 하며, 공중-지상 융합 인텔리전트 작업을 지원합니다.\n3. CARLA-Air는 공중 및 지상 에이전트를 함께 모델링하며, 각 플랫폼마다 최대 18가지 센서 모드를 동기화하여 캡처하고 대표적인 작업을 지원합니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling",
+    "abstract": "Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional architectures suffer from limited interactivity and high latency. We propose ShotStream, a novel causal multi-shot architecture that enables interactive storytelling and efficient on-the-fly frame generation. By reformulating the task as next-shot generation conditioned on historical context, ShotStream allows users to dynamically instruct ongoing narratives via streaming prompts. We achieve this by first fine-tuning a text-to-video model into a bidirectional next-shot generator, which is then distilled into a causal student via Distribution Matching Distillation. To overcome the challenges of inter-shot consistency and error accumulation inherent in autoregressive generation, we introduce two key innovations. First, a dual-cache memory mechanism preserves visual coherence: a global context cache retains conditional frames for inter-shot consistency, while a local context cache holds generated frames within the current shot for intra-shot consistency. And a RoPE discontinuity indicator is employed to explicitly distinguish the two caches to eliminate ambiguity. Second, to mitigate error accumulation, we propose a two-stage distillation strategy. This begins with intra-shot self-forcing conditioned on ground-truth historical shots and progressively extends to inter-shot self-forcing using self-generated histories, effectively bridging the train-test gap. Extensive experiments demonstrate that ShotStream generates coherent multi-shot videos with sub-second latency, achieving 16 FPS on a single GPU. It matches or exceeds the quality of slower bidirectional models, paving the way for real-time interactive storytelling. Training and inference code, as well as the models, are available on our",
+    "authors": [
+      "Yawen Luo",
+      "Xiaoyu Shi",
+      "Junhao Zhuang",
+      "Yutian Chen",
+      "Quande Liu",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Tianfan Xue"
+    ],
+    "likes": 150,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25746",
+    "date_collected": "2026-04-02T07:18:11.396007+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "ShotStream: 대화형 이야기 만들기를 위한 스트리밍 멀티샷 비디오 생성",
+      "abstract": "멀티샷 비디오 생성은 긴 이야기 생성에 중요하지만, 현재의 양방향 아키텍처는 상호작용이 제한되고 높은 대기 시간이 발생합니다. ShotStream은 대화형 이야기 만들기와 효율적인 즉석 프레임 생성을 가능케 하는 혁신적인 인과적 멀티샷 아키텍처로 제안됩니다. 이를 통해 사용자는 스트리밍 프롬프트를 통해 지속적인 이야기를 동적으로 조작할 수 있습니다."
+    },
+    "summary": "1. ShotStream은 다음 샷 생성을 역사적 맥락에 의존하는 것으로 재해석하여 사용자가 스트리밍 프롬프트를 통해 지속적인 이야기를 동적으로 지시할 수 있게 합니다.\n2. Dual-cache 메모리 메커니즘과 RoPE 불연속성 지표를 활용하여 시각 일관성을 유지하고 오류 누적을 완화하는 두 가지 혁신적인 기법을 도입합니다.\n3. ShotStream은 하위 초 시대의 지연 시간으로 일관성있는 멀티샷 비디오를 생성하며, 싱글 GPU에서 초당 16 FPS를 달성하여 느린 양방향 모델보다 빠른 실시간 대화형 이야기 만들기를 가능하게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
+    "abstract": "Video world models have shown immense potential in simulating the physical world, yet existing memory mechanisms primarily treat environments as static canvases. When dynamic subjects hide out of sight and later re-emerge, current methods often struggle, leading to frozen, distorted, or vanishing subjects. To address this, we introduce Hybrid Memory, a novel paradigm requiring models to simultaneously act as precise archivists for static backgrounds and vigilant trackers for dynamic subjects, ensuring motion continuity during out-of-view intervals. To facilitate research in this direction, we construct HM-World, the first large-scale video dataset dedicated to hybrid memory. It features 59K high-fidelity clips with decoupled camera and subject trajectories, encompassing 17 diverse scenes, 49 distinct subjects, and meticulously designed exit-entry events to rigorously evaluate hybrid coherence. Furthermore, we propose HyDRA, a specialized memory architecture that compresses memory into tokens and utilizes a spatiotemporal relevance-driven retrieval mechanism. By selectively attending to relevant motion cues, HyDRA effectively preserves the identity and motion of hidden subjects. Extensive experiments on HM-World demonstrate that our method significantly outperforms state-of-the-art approaches in both dynamic subject consistency and overall generation quality.",
+    "authors": [
+      "Kaijin Chen",
+      "Dingkang Liang",
+      "Xin Zhou",
+      "Yikang Ding",
+      "Xiaoqiang Liu",
+      "Pengfei Wan",
+      "Xiang Bai"
+    ],
+    "likes": 145,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25716",
+    "date_collected": "2026-04-02T07:18:11.397547+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "시야 밖, 그러나 마음속에: 동적 비디오 월드 모델을 위한 하이브리드 메모리",
+      "abstract": "비디오 월드 모델은 물리적 세계를 시뮬레이션하는 데 엄청난 잠재력을 보여주었지만, 기존의 메모리 메커니즘은 주로 환경을 정적 캔버스로 처리합니다. 동적 주체가 시야에서 사라지고 나중에 다시 나타날 때 현재 방법들은 종종 고전하며, 얼어붙거나 왜곡된 주체로 이어집니다. 이를 해결하기 위해 우리는 하이브리드 메모리를 소개합니다. 이는 모델이 정적 배경에 대해 정확한 기록가로 작용하고 동적 주체를 주의 깊게 추적하여 시야에서 벗어날 때 움직임 연속성을 보장합니다. 이 방향의 연구를 촉진하기 위해 하이브리드 메모리에 특화된 첫 번째 대규모 비디오 데이터셋인 HM-World를 구축했습니다. 이는 17가지 다양한 장면, 49가지 다른 주체를 포함하고 있으며 엄격한 하이브리드 일관성을 철저히 평가하기 위해 카메라와 주체의 궤적을 분리한 59,000개의 고품질 클립을 포함합니다. 더 나아가, 우리는 토큰으로 메모리를 압축하고 시공간 관련성 주도적 검색 메커니즘을 활용하는 특수 메모리 아키텍처인 HyDRA를 제안합니다. 관련 운동 단서에 선택적으로 주의를 기울이면, HyDRA는 숨겨진 주체의 정체성과 움직임을 효과적으로 보존합니다. HM-World에서의 광범위한 실험은 우리의 방법이 동적 주체 일관성과 전반적 생성 품질 모두에서 최첨단 접근법을 현격히 능가함을 보여줍니다."
+    },
+    "summary": "1. 기존 비디오 월드 모델의 한계를 해결하기 위해 하이브리드 메모리 도입\n2. HM-World 데이터셋과 HyDRA 메모리 아키텍처 소개\n3. 실험 결과, HyDRA가 동적 주체 일관성과 전반적 생성 품질 모두에서 우수한 성과를 보임",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "TAPS: Task Aware Proposal Distributions for Speculative Sampling",
+    "abstract": "Speculative decoding accelerates autoregressive generation by letting a lightweight draft model propose future tokens that a larger target model then verifies in parallel. In practice, however, draft models are usually trained on broad generic corpora, which leaves it unclear how much speculative decoding quality depends on the draft training distribution. We study this question with lightweight HASS and EAGLE-2 drafters trained on MathInstruct, ShareGPT, and mixed-data variants, evaluated on MT-Bench, GSM8K, MATH-500, and SVAMP. Measured by acceptance length, task-specific training yields clear specialization: MathInstruct-trained drafts are strongest on reasoning benchmarks, while ShareGPT-trained drafts are strongest on MT-Bench. Mixed-data training improves robustness, but larger mixtures do not dominate across decoding temperatures. We also study how to combine specialized drafters at inference time. Naive checkpoint averaging performs poorly, whereas confidence-based routing improves over single-domain drafts and merged-tree verification yields the highest acceptance length overall for both backbones. Finally, confidence is a more useful routing signal than entropy: rejected tokens tend to have higher entropy, but confidence produces much clearer benchmark-level routing decisions. These results show that speculative decoding quality depends not only on draft architecture, but also on the match between draft training data and downstream workload, and that specialized drafters are better combined at inference time than in weight space.",
+    "authors": [
+      "Mohamad Zbib",
+      "Mohamad Bazzi",
+      "Ammar Mohanna",
+      "Hasan Abed Al Kader Hammoud",
+      "Bernard Ghanem"
+    ],
+    "likes": 133,
+    "published_date": "Mar 27",
+    "url": "https://huggingface.co/papers/2603.27027",
+    "date_collected": "2026-04-02T07:18:11.398947+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "TAPS: Task Aware Proposal Distributions for Speculative Sampling",
+      "abstract": "명시적으로 미래 토큰을 제안하게 하는 가벼운 초안 모델을 사용해 자율 회귀 생성을 가속화하는 '추측 디코딩' 기법을 연구합니다. 연구에서는 초안 모델이 일반적인 데이터로 학습되는 것이 추측 디코딩의 품질에 미치는 영향을 알아봅니다. MathInstruct, ShareGPT, 혼합 데이터 등을 기반으로 한 가벼운 HASS와 EAGLE-2 초안 작성기를 MT-Bench, GSM8K, MATH-500, SVAMP에서 평가하고, 작업별 훈련은 분명한 특화성을 나타냅니다."
+    },
+    "summary": "1. 가벼운 초안 모델의 훈련 데이터와 추론 작업 간 일치가 추측 디코딩 품질에 영향을 줌을 밝힘.\n2. 특화된 초안 작성기의 결합은 특화되지 않은 것보다 추측 디코딩의 품질을 높일 수 있음.\n3. 신뢰도기반 라우팅이 단일 도메인 초안 작성기보다 더 높은 품질을 제공함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "LongCat-Next: Lexicalizing Modalities as Discrete Tokens",
+    "abstract": "The prevailing Next-Token Prediction (NTP) paradigm has driven the success of large language models through discrete autoregressive modeling. However, contemporary multimodal systems remain language-centric, often treating non-linguistic modalities as external attachments, leading to fragmented architectures and suboptimal integration. To transcend this limitation, we introduce Discrete Native Autoregressive (DiNA), a unified framework that represents multimodal information within a shared discrete space, enabling a consistent and principled autoregressive modeling across modalities. A key innovation is the Discrete Native Any-resolution Visual Transformer (dNaViT), which performs tokenization and de-tokenization at arbitrary resolutions, transforming continuous visual signals into hierarchical discrete tokens. Building on this foundation, we develop LongCat-Next, a native multimodal model that processes text, vision, and audio under a single autoregressive objective with minimal modality-specific design. As an industrial-strength foundation model, it excels at seeing, painting, and talking within a single framework, achieving strong performance across a wide range of multimodal benchmarks. In particular, LongCat-Next addresses the long-standing performance ceiling of discrete vision modeling on understanding tasks and provides a unified approach to effectively reconcile the conflict between understanding and generation. As an attempt toward native multimodality, we open-source the LongCat-Next and its tokenizers, hoping to foster further research and development in the community. GitHub: https://github.com/meituan-longcat/LongCat-Next",
+    "authors": [
+      "Meituan LongCat Team",
+      "Bin Xiao",
+      "Chao Wang",
+      "Chengjiang Li",
+      "Chi Zhang",
+      "Chong Peng",
+      "Hang Yu",
+      "Hao Yang",
+      "Haonan Yan",
+      "Haoze Sun",
+      "Haozhe Zhao",
+      "Hong Liu",
+      "Hui Su",
+      "Jiaqi Zhang",
+      "Jiawei Wang",
+      "Jing Li",
+      "Kefeng Zhang",
+      "Manyuan Zhang",
+      "Minhao Jing",
+      "Peng Pei",
+      "Quan Chen",
+      "Taofeng Xue"
+    ],
+    "likes": 116,
+    "published_date": "Mar 29",
+    "url": "https://huggingface.co/papers/2603.27538",
+    "date_collected": "2026-04-02T07:18:11.401322+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "LongCat-Next: 모달리티를 이산 토큰으로 표현하기",
+      "abstract": "현재의 다음 토큰 예측(NTP) 패러다임은 이산적인 자기회귀 모델링을 통해 대형 언어 모델의 성공을 이끌어냈습니다. 그러나 현대의 멀티모달 시스템은 종종 비언어적 모달리티를 외부 부착물로 취급하여 분열된 아키텍처와 최적화되지 않은 통합을 야기하는 언어 중심적입니다. 이러한 제한을 극복하기 위해, 우리는 이산 네이티브 자기회귀(Discrete Native Autoregressive, DiNA)를 소개합니다. 이는 멀티모달 정보를 공유하는 이산 공간 내에서 표현하여 모달리티 간 일관되고 원칙적인 자기회귀 모델링을 가능케 합니다. 주요 혁신은 임의 해상도에 토큰화 및 비토큰화를 수행하는 이산 네이티브 임의 해상도 비전 트랜스포머(Discrete Native Any-resolution Visual Transformer, dNaViT)입니다. 이는 연속적인 시각 신호를 계층적인 이산 토큰으로 변환하여 연속적이고 계층적인 트랜스포메이션을 제공합니다. 이 기반 위에, 우리는 LongCat-Next를 개발했습니다. 이는 최소한의 모달리티 특정 설계로 텍스트, 비전, 오디오를 하나의 자기회귀 목적 하에 처리하는 네이티브 멀티모달 모델입니다. 산업용 기반 모델로서, 이는 단일 프레임워크 내에서 보고, 그리기, 대화하는 데 뛰어난 성능을 보여주며 다양한 멀티모달 벤치마크에서 강력한 성과를 거두었습니다. 특히, LongCat-Next는 이해 작업에 대한 이산식 비전 모델링의 오랜 성능 천장에 대응하며 이해와 생성 간의 충돌을 효과적으로 조정하기 위한 통합적인 방법을 제공합니다. 네이티브 멀티모닐리티로 나아가는 시도로, 우리는 LongCat-Next와 그의 토크나이저를 오픈소스로 공개함으로써 커뮤니티에서 더 많은 연구와 개발을 촉진하길 바랍니다."
+    },
+    "summary": "1. DiNA는 멀티모달 정보를 이산 공간 내에서 표현하여 일관된 자기회귀 모델링을 가능케 하며, dNaViT는 시각 신호를 계층적인 이산 토큰으로 변환하는 혁신적인 기술이다.\n2. LongCat-Next는 텍스트, 비전, 오디오를 하나의 자기회귀 목적 하에 처리하며, 멀티모달 벤치마크에서 뛰어난 성과를 보이며 이해 작업과 생성 간의 충돌을 조정한다.\n3. LongCat-Next는 이해 작업에 대한 이산식 비전 모델링의 성능 한계를 극복하고 네이티브 멀티모달 방식으로 개발되었으며, 연구와 개발을 위해 오픈소스로 제공된다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Towards a Medical AI Scientist",
+    "abstract": "Autonomous systems that generate scientific hypotheses, conduct experiments, and draft manuscripts have recently emerged as a promising paradigm for accelerating discovery. However, existing AI Scientists remain largely domain-agnostic, limiting their applicability to clinical medicine, where research is required to be grounded in medical evidence with specialized data modalities. In this work, we introduce Medical AI Scientist, the first autonomous research framework tailored to clinical autonomous research. It enables clinically grounded ideation by transforming extensively surveyed literature into actionable evidence through clinician-engineer co-reasoning mechanism, which improves the traceability of generated research ideas. It further facilitates evidence-grounded manuscript drafting guided by structured medical compositional conventions and ethical policies. The framework operates under 3 research modes, namely paper-based reproduction, literature-inspired innovation, and task-driven exploration, each corresponding to a distinct level of automated scientific inquiry with progressively increasing autonomy. Comprehensive evaluations by both large language models and human experts demonstrate that the ideas generated by the Medical AI Scientist are of substantially higher quality than those produced by commercial LLMs across 171 cases, 19 clinical tasks, and 6 data modalities. Meanwhile, our system achieves strong alignment between the proposed method and its implementation, while also demonstrating significantly higher success rates in executable experiments. Double-blind evaluations by human experts and the Stanford Agentic Reviewer suggest that the generated manuscripts approach MICCAI-level quality, while consistently surpassing those from ISBI and BIBM. The proposed Medical AI Scientist highlights the potential of leveraging AI for autonomous scientific discovery in healthcare.",
+    "authors": [
+      "Hongtao Wu",
+      "Boyun Zheng",
+      "Dingjie Song",
+      "Yu Jiang",
+      "Jianfeng Gao",
+      "Lei Xing",
+      "Lichao Sun",
+      "Yixuan Yuan"
+    ],
+    "likes": 80,
+    "published_date": "Mar 30",
+    "url": "https://huggingface.co/papers/2603.28589",
+    "date_collected": "2026-04-02T07:18:11.402890+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "메디컬 AI 과학자를 향하여",
+      "abstract": "최근에 제안된 자율 시스템은 과학적 가설을 생성하고 실험을 실시하며 원고를 작성하는 새로운 패러다임으로 빠르게 발전해왔습니다. 그러나 기존의 AI 과학자는 주로 도메인에 중립적이며, 특수한 데이터 양식이 필요한 임상 의학에는 적용 범위가 제한됩니다. 본 논문에서는 임상 자율 연구에 맞춘 최초의 자율 연구 프레임워크인 메디컬 AI 과학자를 소개합니다. 이 프레임워크는 의료 증거에 기반을 둔 의학적 사고를 가능하게 하는 진료자-엔지니어 공동 추론 메커니즘을 통해 체계적으로 조사된 문헌을 실행 가능한 증거로 변환합니다. 이는 생성된 연구 아이디어의 추적 가능성을 향상시킵니다. 또한, 구조화된 의학적 작품 규칙과 윤리 정책에 따라 증거에 기반한 원고 작성을 용이하게 합니다. 프레임워크는 논문 기반 재현, 문헌 영감에 바탕을 둔 혁신, 그리고 과제 주도적 탐구의 3가지 연구 모드에서 작동하며, 각각이 점진적으로 증가하는 자동화된 과학적 조사 수준에 해당합니다. 대형 언어 모델과 인간 전문가에 의한 포괄적인 평가 결과, 메디컬 AI 과학자에 의해 생성된 아이디어는 171가지 경우, 19가지 임상 과제, 6가지 데이터 양식에 걸쳐 상용 LLM보다 훨씬 더 높은 품질임을 보여줍니다. 한편, 본 시스템은 제안된 방법과 구현 사이의 강력한 일치를 달성하며 실행 가능한 실험에서 상당히 높은 성공률을 보입니다. 인간 전문가들에 의한 이중 블라인드 평가 및 Stanford Agentic Reviewer에 의하면 생성된 원고는 MICCAI 수준의 품질에 도달하고, ISBI 및 BIBM에서 제공되는 것을 일관되게 능가합니다. 제안된 메디컬 AI 과학자는 건강 관리 분야에서 자율적인 과학적 탐구를 위해 AI를 활용하는 잠재력을 강조합니다."
+    },
+    "summary": "1. 메디컬 AI 과학자는 임상 의학에 특화된 자율적인 연구 프레임워크로, 진료자-엔지니어 공동 추론을 통해 의학적 증거를 활용하여 실행 가능한 연구 아이디어를 제공합니다.\n2. 세 가지 연구 모드를 통해 논문 기반 재현, 문헌 영감에 바탕을 둔 혁신, 과제 주도적 탐구를 실시하며, 상용 LLM 대비 더 높은 품질의 아이디어를 제공하며 성공률도 높습니다.\n3. 인간 전문가와 Stanford Agentic Reviewer에 의한 평가 결과, 메디컬 AI 과학자로 생성된 원고는 MICCAI 수준의 품질에 근접하며 다른 원고들을 일관되게 능가함을 입증하였습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells",
+    "abstract": "Modeling cellular states and predicting their responses to perturbations are central challenges in computational biology and the development of virtual cells. Existing foundation models for single-cell transcriptomics provide powerful static representations, but they do not explicitly model the distribution of cellular states for generative simulation. Here, we introduce Lingshu-Cell, a masked discrete diffusion model that learns transcriptomic state distributions and supports conditional simulation under perturbation. By operating directly in a discrete token space that is compatible with the sparse, non-sequential nature of single-cell transcriptomic data, Lingshu-Cell captures complex transcriptome-wide expression dependencies across approximately 18,000 genes without relying on prior gene selection, such as filtering by high variability or ranking by expression level. Across diverse tissues and species, Lingshu-Cell accurately reproduces transcriptomic distributions, marker-gene expression patterns and cell-subtype proportions, demonstrating its ability to capture complex cellular heterogeneity. Moreover, by jointly embedding cell type or donor identity with perturbation, Lingshu-Cell can predict whole-transcriptome expression changes for novel combinations of identity and perturbation. It achieves leading performance on the Virtual Cell Challenge H1 genetic perturbation benchmark and in predicting cytokine-induced responses in human PBMCs. Together, these results establish Lingshu-Cell as a flexible cellular world model for in silico simulation of cell states and perturbation responses, laying the foundation for a new paradigm in biological discovery and perturbation screening.",
+    "authors": [
+      "Han Zhang",
+      "Guo-Hua Yuan",
+      "Chaohao Yuan",
+      "Tingyang Xu",
+      "Tian Bian",
+      "Hong Cheng",
+      "Wenbing Huang",
+      "Deli Zhao",
+      "Yu Rong"
+    ],
+    "likes": 71,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25240",
+    "date_collected": "2026-04-02T07:18:11.404582+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "Lingshu-Cell: 가상 세포를 향한 전사체 모델링을 위한 생성적 세포 세계 모델",
+      "abstract": "세포 상태의 모델링 및 그들의 변화에 대한 예측은 계산 생물학과 가상 세포의 발전에서 중요한 도전 과제입니다. 기존의 단일 세포 전사체를 위한 기초 모델은 강력한 정적 표현을 제공하지만 생성적 시뮬레이션을 위해 세포 상태의 분포를 명시적으로 모델링하지 않습니다. 본 연구에서는 Lingshu-Cell을 소개합니다. 이는 전사체 상태 분포를 학습하고 변동에 대한 조건부 시뮬레이션을 지원하는 가리워진 이산 확산 모델입니다."
+    },
+    "summary": "1. Lingshu-Cell은 단일 세포 전사체 데이터의 희박하고 비연속적인 특성과 호환되는 이산 토큰 공간에서 작동하여, 고가변성으로 필터링하거나 발현 수준에 따라 순위 매기는 것과 같은 이전 유전자 선택에 의존하지 않고 약 18,000개의 유전자를 포함하여 복잡한 전사체 전체 표현 종속성을 파악합니다.\n2. Lingshu-Cell은 다양한 조직 및 종에 걸쳐 전사체 분포, 마커 유전자 발현 양식 및 세포 하위 유형 비율을 정확하게 재현하여 복잡한 세포 이질성을 포착하는 능력을 입증합니다.\n3. Lingshu-Cell은 세포 유형 또는 기부자 ID와 변동을 함께 임베딩하면서, 신원 및 변동에 대한 새로운 조합에 대한 전체 전사체 발현 변화를 예측할 수 있습니다.",
+    "categories": [
+      "LLM",
+      "Computational Biology",
+      "Other"
+    ]
+  },
+  {
+    "title": "GEMS: Agent-Native Multimodal Generation with Memory and Skills",
+    "abstract": "Recent multimodal generation models have achieved remarkable progress on general-purpose generation tasks, yet continue to struggle with complex instructions and specialized downstream tasks. Inspired by the success of advanced agent frameworks such as Claude Code, we propose GEMS (Agent-Native Multimodal GEneration with Memory and Skills), a framework that pushes beyond the inherent limitations of foundational models on both general and downstream tasks. GEMS is built upon three core components. Agent Loop introduces a structured multi-agent framework that iteratively improves generation quality through closed-loop optimization. Agent Memory provides a persistent, trajectory-level memory that hierarchically stores both factual states and compressed experiential summaries, enabling a global view of the optimization process while reducing redundancy. Agent Skill offers an extensible collection of domain-specific expertise with on-demand loading, allowing the system to effectively handle diverse downstream applications. Across five mainstream tasks and four downstream tasks, evaluated on multiple generative backends, GEMS consistently achieves significant performance gains. Most notably, it enables the lightweight 6B model Z-Image-Turbo to surpass the state-of-the-art Nano Banana 2 on GenEval2, demonstrating the effectiveness of agent harness in extending model capabilities beyond their original limits.",
+    "authors": [
+      "Zefeng He",
+      "Siyuan Huang",
+      "Xiaoye Qu",
+      "Yafu Li",
+      "Tong Zhu",
+      "Yu Cheng",
+      "Yang Yang"
+    ],
+    "likes": 58,
+    "published_date": "Mar 30",
+    "url": "https://huggingface.co/papers/2603.28088",
+    "date_collected": "2026-04-02T07:18:11.406134+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "GEMS: 에이전트 네이티브 멀티모달 생성 기술 (Multimodal Generation with Memory and Skills)",
+      "abstract": "최근 멀티모달 생성 모델은 일반적인 생성 작업에서 놀라운 진전을 이루었지만, 복잡한 지시사항과 전문적인 하향 작업에서 여전히 어려움을 겪고 있습니다. Claude Code와 같은 고급 에이전트 프레임워크의 성공을 모티브로, 우리는 GEMS (메모리와 스킬을 활용한 에이전트 네이티브 멀티모달 생성 기술)을 제안합니다. GEMS는 기본 모델의 내재적 한계를 일반적 및 하향 작업 양쪽에서 초월하는 프레임워크로 구축되었습니다. 에이전트 루프는 구조화된 다중 에이전트 프레임워크를 소개하여 폐포 루프 최적화를 통해 생성 품질을 반복적으로 향상시킵니다. 에이전트 메모리는 계층적으로 사실적인 상태와 압축된 경험적 요약을 보관하는 지속적인 경로수준 메모리를 제공하여 최적화 과정의 전역적인 관점을 제공하고 중복을 줄입니다. 에이전트 스킬은 도메인 특정 전문 지식의 확장 가능한 모음을 온디맨드 로딩으로 제공하여 시스템이 다양한 하향 응용프로그램을 효과적으로 처리할 수 있습니다. 다수의 생성 백엔드에서 평가된 다섯 가지 주요 작업과 네 가지 하향 작업에서 GEMS는 일관되게  유의한 성능 향상을 달성합니다. 특히, 경량 6B 모델 Z-Image-Turbo를 GenEval2에서 최첨단 Nano Banana 2를 뛰어넘도록 만들어, 모델 능력을 초월하는 에이전트 활용의 효과를 입증합니다."
+    },
+    "summary": "1. GEMS는 다양한 전문 분야에 대응할 수 있는 다중 에이전트 프레임워크와 메모리, 스킬의 세 가지 핵심 구성요소를 기반으로 합니다.\n2. 에이전트 루프는 닫힌 루프 최적화를 통해 생성 품질을 반복적으로 향상시키고, 에이전트 메모리는 전역적인 최적화 과정을 지원하며 중복을 줄입니다.\n3. GEMS는 다수의 작업에서 높은 성능 향상을 보이며, 에이전트를 활용함으로써 모델 능력을 원래 한계를 넘어 뛰어난 성과를 달성합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
+    "abstract": "Recent image generation models have shown strong capabilities in generating high-fidelity and photorealistic images. However, they are fundamentally constrained by frozen internal knowledge, thus often failing on real-world scenarios that are knowledge-intensive or require up-to-date information. In this paper, we present Gen-Searcher, as the first attempt to train a search-augmented image generation agent, which performs multi-hop reasoning and search to collect the textual knowledge and reference images needed for grounded generation. To achieve this, we construct a tailored data pipeline and curate two high-quality datasets, Gen-Searcher-SFT-10k and Gen-Searcher-RL-6k, containing diverse search-intensive prompts and corresponding ground-truth synthesis images. We further introduce KnowGen, a comprehensive benchmark that explicitly requires search-grounded external knowledge for image generation and evaluates models from multiple dimensions. Based on these resources, we train Gen-Searcher with SFT followed by agentic reinforcement learning with dual reward feedback, which combines text-based and image-based rewards to provide more stable and informative learning signals for GRPO training. Experiments show that Gen-Searcher brings substantial gains, improving Qwen-Image by around 16 points on KnowGen and 15 points on WISE. We hope this work can serve as an open foundation for search agents in image generation, and we fully open-source our data, models, and code.",
+    "authors": [
+      "Kaituo Feng",
+      "Manyuan Zhang",
+      "Shuang Chen",
+      "Yunlong Lin",
+      "Kaixuan Fan",
+      "Yilei Jiang",
+      "Hongyu Li",
+      "Dian Zheng",
+      "Chenyang Wang",
+      "Xiangyu Yue"
+    ],
+    "likes": 51,
+    "published_date": "Mar 30",
+    "url": "https://huggingface.co/papers/2603.28767",
+    "date_collected": "2026-04-02T07:18:11.407753+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "이미지 생성을 위한 에이전트 검색 강화 (Gen-Searcher: Reinforcing Agentic Search for Image Generation)",
+      "abstract": "최근 이미지 생성 모델은 고품질 및 사실적인 이미지를 생성하는 강력한 능력을 보여주었습니다. 그러나 이러한 모델들은 동결된 내부 지식에 기반을 두고 있어, 실제 지식이 많이 필요하거나 최신 정보가 필요한 현실 세계 상황에서 종종 실패합니다. 본 논문에서는 텍스트 기반 지식과 참조 이미지를 수집하기 위해 다중 단계 추론 및 검색을 수행하는 최초의 검색 보충 이미지 생성 에이전트인 Gen-Searcher를 제안합니다. 이를 위해 검색을 많이 필요로 하는 프롬프트와 해당 신뢰할 수 있는 합성 이미지를 포함하는 Gen-Searcher-SFT-10k 및 Gen-Searcher-RL-6k라는 두 가지 높은 품질의 데이터셋을 구축하였습니다. 또한 이미지 생성을 위해 외부 지식을 검색 기반으로 요구하는 종합적인 평가 척도인 KnowGen을 소개하고 다양한 차원에서 모델을 평가합니다. 이러한 자원을 기반으로 SFT로 훈련을 진행하고, 이후 이중 보상 피드백을 통한 에이전트 강화 학습으로 Gen-Searcher를 훈련합니다. 실험 결과, Gen-Searcher는 KnowGen에서 Qwen-Image를 약 16 포인트, WISE에서 약 15 포인트 향상시켰습니다. 본 연구가 이미지 생성에 있어 검색 에이전트의 기초 역할을 할 수 있고, 우리는 데이터, 모델 및 코드를 완전히 오픈 소스로 제공합니다."
+    },
+    "summary": "1. 최근 이미지 생성 모델은 실제 지식이 필요한 상황에서 실패할 수 있는 동결된 내부 지식에 제약을 받고 있음.\n2. Gen-Searcher는 다중 단계 추론 및 검색을 통해 텍스트 기반 지식과 참조 이미지를 수집하는 검색 보충 이미지 생성 에이전트로, 높은 품질의 데이터셋과 종합적인 평가 척도를 활용하여 훈련됨.\n3. Gen-Searcher는 이중 보상 피드백을 토대로 안정적이고 정보 전달력 있는 학습 신호를 제공하여 이미지 생성에서 상당한 향상을 이루었음.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Other"
+    ]
+  }
+]

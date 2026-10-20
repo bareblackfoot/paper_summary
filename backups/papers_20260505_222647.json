@@ -1,0 +1,280 @@
+[
+  {
+    "title": "UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors",
+    "abstract": "Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimodal graphics tasks. However, existing methods often train separate models for each problem setting, which fixes the input-output mapping and limits the modeling of correlations across modalities. We present UniVidX, a unified multimodal framework that leverages VDM priors for versatile video generation. UniVidX formulates pixel-aligned tasks as conditional generation in a shared multimodal space, adapts to modality-specific distributions while preserving the backbone's native priors, and promotes cross-modal consistency during synthesis. It is built on three key designs. Stochastic Condition Masking (SCM) randomly partitions modalities into clean conditions and noisy targets during training, enabling omni-directional conditional generation instead of fixed mappings. Decoupled Gated LoRA (DGL) introduces per-modality LoRAs that are activated when a modality serves as the generation target, preserving the strong priors of the VDM. Cross-Modal Self-Attention (CMSA) shares keys and values across modalities while keeping modality-specific queries, facilitating information exchange and inter-modal alignment. We instantiate UniVidX in two domains: UniVid-Intrinsic, for RGB videos and intrinsic maps including albedo, irradiance, and normal; and UniVid-Alpha, for blended RGB videos and their constituent RGBA layers. Experiments show that both models achieve performance competitive with state-of-the-art methods across distinct tasks and generalize robustly to in-the-wild scenarios, even when trained on fewer than 1,000 videos. Project page: https://houyuanchen111.github.io/UniVidX.github.io/",
+    "authors": [
+      "Houyuan Chen",
+      "Hong Li",
+      "Xianghao Kong",
+      "Tianrui Zhu",
+      "Shaocong Xu",
+      "Weiqing Xiao",
+      "Yuwei Guo",
+      "Chongjie Ye",
+      "Lvmin Zhang",
+      "Hao Zhao",
+      "Anyi Rao"
+    ],
+    "likes": 67,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00658",
+    "date_collected": "2026-05-05T07:27:41.090533+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "유니비디엑스: 확산 사전을 통한 다목적 비디오 생성을 위한 통합된 다중 모달 프레임워크",
+      "abstract": "최근 진전은 비디오 확산 모델(VDM)이 다양한 다중 모달 그래픽 작업에 활용될 수 있다는 것을 보여주었다. 그러나 기존 방법은 각 문제 설정에 대해 별도의 모델을 훈련시키는 경우가 많아 입력-출력 매핑을 고정시키고 모달 간 상관 관계 모델링을 제한한다. 우리는 유니비디엑스를 제시하는데, 이는 유연한 비디오 생성을 위해 VDM 사전을 활용하는 통합된 다중 모달 프레임워크이다. 유니비디엑스는 픽셀 정렬 작업을 공유된 다중 모달 공간에서 조건부 생성으로 제시하며, 모달리티 특정 분포에 적응하면서도 백본의 원래 사전을 보존하고 합성 중 교모달 일관성을 촉진한다. 세 가지 주요 설계를 기반으로 구축되었다."
+    },
+    "summary": "1. UniVidX는 다양한 비디오 생성을 위해 VDM 사전을 활용하는 통합된 다중 모달 프레임워크이다.\n2. Stochastic Condition Masking (SCM)은 모달리티를 깨끗한 조건과 소음 타겟으로 무작위 분할하여 omni-directional한 조건부 생성을 가능하게 한다.\n3. Decoupled Gated LoRA (DGL)과 Cross-Modal Self-Attention (CMSA)는 모달리티 특정 LoRA와 정보 교환 및 모달 간 정렬을 용이하게 하는 데 도움을 준다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction",
+    "abstract": "Agentic web search increasingly faces two distinct demands: deep reasoning over a single target, and structured aggregation across many entities and heterogeneous sources. Current systems struggle on both fronts. Breadth-oriented tasks demand schema-aligned outputs with wide coverage and cross-entity consistency, while depth-oriented tasks require coherent reasoning over long, branching search trajectories. We introduce Web2BigTable, a multi-agent framework for web-to-table search that supports both regimes. Web2BigTable adopts a bi-level architecture in which an upper-level orchestrator decomposes the task into sub-problems and lower-level worker agents solve them in parallel. Through a closed-loop run--verify--reflect process, the framework jointly improves decomposition and execution over time via persistent, human-readable external memory, with self-evolving updates to each single-agent. During execution, workers coordinate through a shared workspace that makes partial findings visible, allowing them to reduce redundant exploration, reconcile conflicting evidence, and adapt to emerging coverage gaps. Web2BigTable sets a new state of the art on WideSearch, reaching an Avg@4 Success Rate of 38.50 (7.5times the second best at 5.10), Row F1 of 63.53 (+25.03 over the second best), and Item F1 of 80.12 (+14.42 over the second best). It also generalises to depth-oriented search on XBench-DeepSearch, achieving 73.0 accuracy. Code is available at https://github.com/web2bigtable/web2bigtable.",
+    "authors": [
+      "Yuxuan Huang",
+      "Yihang Chen",
+      "Zhiyuan He",
+      "Yuxiang Chen",
+      "Ka Yiu Lee",
+      "Huichi Zhou",
+      "Weilin Luo",
+      "Meng Fang",
+      "Jun Wang"
+    ],
+    "likes": 25,
+    "published_date": "Apr 29",
+    "url": "https://huggingface.co/papers/2604.27221",
+    "date_collected": "2026-05-05T07:27:41.092311+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "Web2BigTable: 인터넷 규모 정보 검색 및 추출을 위한 이중 멀티 에이전트 LLM 시스템",
+      "abstract": "에이전트 기반의 웹 검색은 점점 더 깊은 추론과 다수의 엔티티 및 이질적 소스에 걸쳐 구조화된 집계를 요구하고 있습니다. 현재 시스템은 양면에서 어려움을 겪고 있습니다. Web2BigTable은 웹에서 테이블로 검색하는 멀티 에이전트 프레임워크로, 상위 수준의 조정자는 작업을 하위 문제로 분해하고 하위 수준의 작업자 에이전트가 병렬로 해결합니다."
+    },
+    "summary": "1. Web2BigTable는 인터넷 규모 정보 검색 및 추출을 위한 이중 멀티 에이전트 시스템으로, 상위 수준의 조정자와 하위 수준의 작업자 에이전트로 구성되어 작업을 효율적으로 처리합니다.\n2. 이 시스템은 넓은 범위의 작업과 깊은 추론 작업을 모두 지원하며, 실행 중에 공유 작업 공간을 통해 작업자들이 정보를 교류하고 중복된 탐색을 줄이며 충돌하는 증거를 조정할 수 있습니다.\n3. Web2BigTable은 WideSearch에서 새로운 최고 성능을 세워 7.5배 빠른 성공률을 보이고, 깊이 지향 검색에서도 뛰어난 정확도를 보여주며, 코드는 GitHub에서 제공됩니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Map2World: Segment Map Conditioned Text to 3D World Generation",
+    "abstract": "3D world generation is essential for applications such as immersive content creation or autonomous driving simulation. Recent advances in 3D world generation have shown promising results; however, these methods are constrained by grid layouts and suffer from inconsistencies in object scale throughout the entire world. In this work, we introduce a novel framework, Map2World, that first enables 3D world generation conditioned on user-defined segment maps of arbitrary shapes and scales, ensuring global-scale consistency and flexibility across expansive environments. To further enhance the quality, we propose a detail enhancer network that generates fine details of the world. The detail enhancer enables the addition of fine-grained details without compromising overall scene coherence by incorporating global structure information. We design the entire pipeline to leverage strong priors from asset generators, achieving robust generalization across diverse domains, even under limited training data for scene generation. Extensive experiments demonstrate that our method significantly outperforms existing approaches in user-controllability, scale consistency, and content coherence, enabling users to generate 3D worlds under more complex conditions.",
+    "authors": [
+      "Jaeyoung Chung",
+      "Suyoung Lee",
+      "Jianfeng Xiang",
+      "Jiaolong Yang",
+      "Kyoung Mu Lee"
+    ],
+    "likes": 13,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00781",
+    "date_collected": "2026-05-05T07:27:41.093826+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "Map2World: 세그먼트 맵에 의존하는 텍스트를 3D 세계 생성",
+      "abstract": "3D 세계 생성은 몰입형 콘텐츠 작성이나 자율 주행 시뮬레이션과 같은 응용 프로그램에서 필수적입니다. 최근 3D 세계 생성의 발전은 유망한 결과를 보여주었지만, 이러한 방법은 격자 레이아웃에 제약을 받고 전체 세계에서 객체 규모의 불일치로 인해 고통 받고 있습니다. 본 연구에서는 사용자가 정의한 임의 모양 및 규모의 세그먼트 맵에 의존하는 3D 세계 생성이 가능한 새로운 프레임워크인 Map2World를 제안합니다. 이는 광범위한 환경에서 전반적인 규모 일관성과 유연성을 보장합니다. 품질을 높이기 위해 세계의 세부 정보를 생성하는 세부 정보 강화 네트워크를 제안합니다. 세부 정보 강화 네트워크는 전역 구조 정보를 통합하여 전반적인 장면 일관성을 훼손하지 않고 세계의 세부 사항을 추가할 수 있도록 합니다. 트레이닝 데이터가 제한적인 경우에도 장면 생성에 강한 사전지식을 활용하도록 전체 파이프라인을 설계하였습니다. 방대한 실험 결과 우리의 방법이 기존 방법보다 사용자 제어 가능성, 규모 일관성, 콘텐츠 일관성에서 현저히 뛰어나다는 것을 입증하였습니다."
+    },
+    "summary": "1. Map2World는 사용자가 정의한 세그먼트 맵에 기반한 3D 세계 생성을 가능케하며, 확장성 있는 환경에서 전반적인 일관성과 유연성을 보장합니다.\n2. 세부 정보 강화 네트워크를 통해 전반적인 장면 일관성을 유지하면서 세계의 세부 사항을 추가하여 세계의 품질을 높일 수 있습니다.\n3. 실험 결과는 Map2World 방법이 기존 접근 방식보다 사용자의 제어 능력, 규모 일관성, 콘텐츠 일관성에서 우수함을 보여주며, 더 복잡한 조건에서 3D 세계를 생성할 수 있게 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions",
+    "abstract": "Text-based 2D image editing models have recently reached an impressive level of maturity, motivating a growing body of work that heavily depends on these models to drive 3D edits. While effective for appearance-based modifications, such 2D-centric 3D editing pipelines often struggle with fine-grained 3D editing, where localized structural changes must be applied while strictly preserving an object's overall identity. To address this limitation, we propose Prox-E, a training-free framework that enables fine-grained 3D control through an explicit, primitive-based geometric abstraction. Our framework first abstracts an input 3D shape into a compact set of geometric primitives. A pretrained vision-language model (VLM) then edits this abstraction to specify primitive-level changes. These structural edits are subsequently used to guide a 3D generative model, enabling fine-grained, localized modifications while preserving unchanged regions of the original shape. Through extensive experiments, we demonstrate that our method consistently balances identity preservation, shape quality, and instruction fidelity more effectively than various existing approaches, including 2D-based 3D editors and training-based methods.",
+    "authors": [
+      "Etai Sella",
+      "Hao Phung",
+      "Nitay Amiel",
+      "Or Litany",
+      "Or Patashnik",
+      "Hadar Averbuch-Elor"
+    ],
+    "likes": 13,
+    "published_date": "Apr 29",
+    "url": "https://huggingface.co/papers/2604.23774",
+    "date_collected": "2026-05-05T07:27:41.095399+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "Prox-E: 원시 기반 추상화를 통한 세밀한 3D 모양 편집",
+      "abstract": "최근 텍스트 기반 2D 이미지 편집 모델은 높은 성숙도에 도달함에 따라, 이러한 모델을 기반으로 한 3D 편집에 의존하는 연구가 늘어나고 있습니다. 그러나 외관을 기반으로 한 수정에는 효과적이지만, 세밀한 3D 편집에서는 물체의 전체적인 정체성은 유지하면서 지역적인 구조적 변경이 필요한데, 이 때 2D 중심 3D 편집 파이프라인은 어려움을 겪습니다. 이 한계를 극복하기 위해, 우리는 Prox-E를 제안합니다. Prox-E는 fine-grained 3D 제어를 가능하게 하는, 명시적인, 원시 기반 기하적 추상화를 통해 훈련이 필요 없는 프레임워크입니다. 우리의 방법은 입력 3D 모양을 간결한 기하 원시들로 추상화한 후, 사전 훈련된 비전-언어 모델(VLM)이 이 추상화를 수정하여 원시 수준의 변경을 명시합니다. 이러한 구조적 수정은 이후 3D 생성 모델을 안내하여, 원본 모양의 변경되지 않은 영역을 보존하면서 세밀하고 지역적인 수정을 가능하게 합니다. 실험 결과를 통해, 우리의 방법이 다양한 기존 방법들(2D 기반 3D 편집기 및 훈련 기반 방법 등)보다 일관되게 정체성 보존, 모양 품질, 지시 사항의 충실도를 효과적으로 균형 있게 유지함을 입증합니다."
+    },
+    "summary": "1. Prox-E는 훈련이 필요 없는 프레임워크로, 3D 모양을 세밀하게 편집할 수 있도록 한다.\n2. 방법은 입력 모양을 기하 원시들로 추상화하고 VLM을 사용하여 수정한 후 3D 생성 모델을 안내한다.\n3. 실험에서 Prox-E는 여러 기존 방법들보다 더 효과적으로 정체성 보존, 모양 품질, 지시 사항의 충실도를 균형 있게 유지하는 것을 보여준다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills",
+    "abstract": "LLM agents increasingly rely on reusable skills, capability packages that combine instructions, control flow, constraints, and tool calls. In most current agent systems, however, skills are still represented by text-heavy artifacts, including SKILL.md-style documents and structured records whose machine-usable evidence remains embedded largely in natural-language descriptions. This poses a challenge for skill-centered agent systems: managing skill collections and using skills to support agent both require reasoning over invocation interfaces, execution structure, and concrete side effects that are often entangled in a single textual surface. An explicit representation of skill knowledge may therefore help make these artifacts easier for machines to acquire and leverage. Drawing on Memory Organization Packets, Script Theory, and Conceptual Dependency from Schank and Abelson's classical work on linguistic knowledge representation, we introduce what is, to our knowledge, the first structured representation for agent skill artifacts that disentangles skill-level scheduling signals, scene-level execution structure, and logic-level action and resource-use evidence: the Scheduling-Structural-Logical (SSL) representation. We instantiate SSL with an LLM-based normalizer and evaluate it on a corpus of skills in two tasks, Skill Discovery and Risk Assessment, and superiorly outperform the text-only baselines: in Skill Discovery, SSL improves MRR from 0.573 to 0.707; in Risk Assessment, it improves macro F1 from 0.744 to 0.787. These findings reveal that explicit, source-grounded structure makes agent skills easier to search and review. They also suggest that SSL is best understood as a practical step toward more inspectable, reusable, and operationally actionable skill representations for agent systems, rather than as a finished standard or an end-to-end mechanism for managing and using skills.",
+    "authors": [
+      "Qiliang Liang",
+      "Hansi Wang",
+      "Zhong Liang",
+      "Yang Liu"
+    ],
+    "likes": 10,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24026",
+    "date_collected": "2026-05-05T07:27:41.096903+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "기술 텍스트부터 기술 구조로: 에이전트 스킬을 위한 스케줄링-구조적-논리적 표현",
+      "abstract": "LLM 에이전트들은 점점 더 재사용 가능한 스킬에 의존하며, 지시, 제어 흐름, 제약, 그리고 도구 호출을 결합한 능력 패키지를 말합니다. 현재 대부분의 에이전트 시스템에서는 스킬을 여전히 텍스트 중심의 자료로 나타내며, 이는 기계가 사용할 수 있는 증거가 자연어 기술로 주로 내포되어 있는 SKILL.md-스타일 문서와 구조화된 레코드를 포함합니다. 이는 스킬 중심의 에이전트 시스템에 대한 도전 과제가 됩니다: 스킬 컬렉션을 관리하고 스킬을 사용하여 에이전트를 지원하기 위해 사용자 호출 인터페이스, 실행 구조, 그리고 종종 텍스트 표면에 얽힌 구체적인 부작용과 함께 추론이 필요합니다. 스킬 지식의 명시적 표현은 기계가 이러한 자료를 습득하고 활용하기 쉽게 할 수 있습니다. 언어 지식 표현에 대한 Schank와 Abelson의 고전적인 작품인 MO-Pac, 스크립트 이론, 그리고 개념 의존성을 바탕으로, 에이전트 스킬 자료를 위한 첫 구조화된 표현인 스케줄링-구조적-논리적 (SSL) 표현을 소개합니다. 우리는 SSL을 LLM-기반 정규화기와 함께 구체적으로 설명하고, Skill Discovery와 Risk Assessment 두 작업의 스킬 자료 모음에서 평가하며, 텍스트만 있는 기준에 비해 우수한 성과를 보였습니다: Skill Discovery에서 SSL은 MRR을 0.573에서 0.707로 향상시키고, Risk Assessment에서는 매크로 F1을 0.744에서 0.787로 향상시켰습니다. 이 결과는 명시적이고 소스 기반의 구조가 에이전트 스킬을 검색하고 검토하기 쉽게 만든다는 것을 보여줍니다. 또한, SSL은 더 검사 가능하고 재사용 가능하며 운영 가능한 스킬 표현을 위한 실용적인 단계로 간주되어야 하며, 완료된 표준이나 스킬을 관리하고 사용하기 위한 종단 간 메커니즘으로 이해되어서는 안 됩니다."
+    },
+    "summary": "1. LLM 에이전트들이 재사용 가능한 스킬에 매우 의존하고 있으며, 스킬을 명확하게 표현하는 것이 에이전트 시스템에서 중요하다.\n2. SSL은 스킬 자료를 구조화하는 첫 번째 시도로, 스킬 수집을 관리하고 에이전트를 지원하는 데 도움이 된다.\n3. SSL은 Skill Discovery와 Risk Assessment 작업에서 텍스트만 있는 기준보다 우수한 성능을 발휘하며, 에이전트 스킬을 보다 쉽게 검색하고 검토할 수 있게 해준다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
+    "abstract": "Generalist robot policies increasingly benefit from large-scale pretraining, but offline data alone is insufficient for robust real-world deployment. Deployed robots encounter distribution shifts, long-tail failures, task variations, and human correction opportunities that fixed demonstration datasets cannot fully capture. We present Learning While Deploying (LWD), a fleet-scale offline-to-online reinforcement learning framework for continual post-training of generalist Vision-Language-Action (VLA) policies. Starting from a pretrained VLA policy, LWD closes the loop between deployment, shared physical experience, policy improvement, and redeployment by using autonomous rollouts and human interventions collected across a robot fleet. To stabilize learning from heterogeneous, sparse-reward fleet data, LWD combines Distributional Implicit Value Learning (DIVL) for robust value estimation with Q-learning via Adjoint Matching (QAM) for policy extraction in flow-based VLA action generators. We validate LWD on a fleet of 16 dual-arm robots across eight real-world manipulation tasks, including semantic grocery restocking and 3--5 minute long-horizon tasks. A single generalist policy improves as fleet experience accumulates, reaching an average success rate of 95%, with the largest gains on long-horizon tasks.",
+    "authors": [
+      "Yi Wang",
+      "Xinchen Li",
+      "Pengwei Xie",
+      "Pu Yang",
+      "Buqing Nie",
+      "Yunuo Cai",
+      "Qinglin Zhang",
+      "Chendi Qu",
+      "Jeffrey Wu",
+      "Jianheng Song",
+      "Xinlin Ren",
+      "Jingshun Huang",
+      "Mingjie Pan",
+      "Siyuan Feng",
+      "Zhi Chen",
+      "Jianlan Luo"
+    ],
+    "likes": 9,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00416",
+    "date_collected": "2026-05-05T07:27:41.099092+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "배포 중 학습: 다목적 로봇 정책을 위한 대규모 강화학습",
+      "abstract": "대용량 사전 훈련이 다목적 로봇 정책에 점점 더 이점을 제공하지만 오프라인 데이터만으로는 강력한 현실 세계 배포에 부족하다. 배포된 로봇은 분산 이동, 장기적 실패, 작업 변화 및 인간 수정 기회를 경험하며 고정된 데모 데이터셋이 완전히 포착할 수 없다. 저희는 배포 중 학습(Learning While Deploying, LWD)을 제시합니다. 이는 다목적 Vision-Language-Action (VLA) 정책의 지속적 후훈련을 위한 flleet 규모의 오프라인-온라인 강화학습 프레임워크입니다. 사전 훈련된 VLA 정책에서 시작해, LWD는 로봇 플리트에서 수집된 자율 롤아웃 및 인간 개입을 이용하여 배포, 공유된 실제 경험, 정책 개선 및 재배포 간 루프를 닫습니다."
+    },
+    "summary": "1. 대규모 로봇 플리트를 활용하여 현실 세계의 다양한 작업에서 지속적으로 향상되는 다목적 로봇 정책을 위한 배포 중 학습(LWD) 프레임워크를 제시합니다.\n2. LWD는 로봇 플리트에서 수집한 데이터를 활용하여 이질적인 희박 보상 데이터로부터 학습을 안정화하고 효과적인 policy를 추출하기 위해 DIVL과 QAM을 결합합니다.\n3. 실험 결과로 LWD가 식료품 보충 및 장기 과업 등 8가지 실제 세계 조작 작업에서 평균 성공률을 95%로 향상시키는 것을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Let ViT Speak: Generative Language-Image Pre-training",
+    "abstract": "In this paper, we present Generative Language-Image Pre-training (GenLIP), a minimalist generative pretraining framework for Vision Transformers (ViTs) designed for multimodal large language models (MLLMs). To better align vision encoders with the autoregressive nature of LLMs, GenLIP trains a ViT to predict language tokens directly from visual tokens using a standard language modeling objective, without contrastive batch construction or an additional text decoder. This design offers three key advantages: (1) Simplicity: a single transformer jointly models visual and textual tokens; (2) Scalability: it scales effectively with both data and model size; and (3) Performance: it achieves competitive or superior results across diverse multimodal benchmarks. Trained on 8B samples from Recap-DataComp-1B, GenLIP matches or surpasses strong baselines despite using substantially less pretraining data. After continued pretraining on multi-resolution images at native aspect ratios, GenLIP further improves on detail-sensitive tasks such as OCR and chart understanding, making it a strong foundation for vision encoders in MLLMs.",
+    "authors": [
+      "Yan Fang",
+      "Mengcheng Lan",
+      "Zilong Huang",
+      "Weixian Lei",
+      "Yunqing Zhao",
+      "Yujie Zhong",
+      "Yingchen Yu",
+      "Qi She",
+      "Yao Zhao",
+      "Yunchao Wei"
+    ],
+    "likes": 9,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00809",
+    "date_collected": "2026-05-05T07:27:41.100916+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "ViT가 말하다: 생성언어-이미지 사전학습",
+      "abstract": "본 논문에서는 Vision Transformers(ViT)를 위한 다중모달 대규모 언어모델(Multimodal Large Language Models, MLLMs)을 위한 간소화된 생성 사전학습 프레임워크인 GenLIP(Generative Language-Image Pre-training)을 제안합니다. GenLIP은 시각 인코더들을 언어 모델의 자기 회귀적 특성과 더 잘 맞추기 위해 시각 토큰에서 바로 언어 토큰을 예측하도록 ViT를 훈련시킵니다. 이 때, 대조 배치 구성이나 추가 텍스트 디코더 없이 일반적인 언어 모델링 목적을 따릅니다. 이 설계는 세 가지 주요 장점을 제공합니다: (1) 단숨함, (2) 확장성, (3) 성능."
+    },
+    "summary": "1. GenLIP은 ViT를 사용하여 시각과 텍스트 토큰을 함께 모델링하며, 대량의 데이터와 모델 크기에 효과적으로 확장 가능하며 다양한 다중모달 벤치마크에서 경쟁력있거나 우수한 결과를 달성합니다.\n2. Recap-DataComp-1B의 8B 샘플로 훈련된 GenLIP는 강력한 기준을 넘어서거나 따라잡음으로써 사전 훈련 데이터를 크게 줄이더라도 우수한 성과를 보입니다.\n3. 원본 종횡비의 다중 해상도 이미지에서 지속적인 사전 훈련 후, GenLIP은 OCR 및 차트 이해와 같은 디테일에 민감한 작업에서 더욱 향상되어 ViT를 MLLMs의 시각 인코더로 강력한 기반으로 만듭니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance",
+    "abstract": "Large Language Model (LLM) Red-Teaming, which proactively identifies vulnerabilities of LLMs, is an essential process for ensuring safety. Finding effective and diverse attacks in red-teaming is important, but achieving both is challenging. Generative Flow Networks (GFNs) that perform distribution matching are a promising methods, but they are notorious for training instability and mode collapse. In particular, unstable rewards in red-teaming accelerate mode collapse. We propose Stable-GFN (S-GFN), which eliminates partition function Z estimation in GFN and reduces training instability. S-GFN avoids Z-estimation through pairwise comparisons and employs a robust masking methodology against noisy rewards. Additionally, we propose a fluency stabilizer to prevent the model from getting stuck in local optima that produce gibberish. S-GFN provides more stable training while maintaining the optimal policy of GFN. We demonstrate the overwhelming attack performance and diversity of S-GFN across various settings.",
+    "authors": [
+      "Minchan Kwon",
+      "Sunghyun Baek",
+      "Minseo Kim",
+      "Jaemyung Yu",
+      "Dongyoon Han",
+      "Junmo Kim"
+    ],
+    "likes": 9,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00553",
+    "date_collected": "2026-05-05T07:27:41.102441+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "안정적인-GFlowNet: 대조적 궤적 균형을 통한 다양하고 견고한 LLM Red-Teaming으로",
+      "abstract": "대형 언어 모델(Large Language Model, LLM) Red-Teaming은 LLM의 취약점을 예측적으로 식별하는 것으로 안전을 보장하는 필수과정입니다. Red-Teaming에서 효과적이고 다양한 공격을 찾는 것은 중요하지만, 둘 다 달성하는 것은 어려운 과제입니다. 분포 매칭을 수행하는 생성적 플로우 네트워크(Generative Flow Networks, GFN)는 유망한 방법론이지만, 훈련 불안정성과 모드 붕괴로 악명이 있습니다. 특히 Red-Teaming에서의 불안정한 보상은 모드 붕괴를 가속화시킵니다. 우리는 파티션 함수 Z 추정을 제거하고 훈련 불안정성을 줄이기 위해 S-GFN(Stable-GFN)을 제안합니다. S-GFN은 쌍별 비교를 통해 Z 추정을 회피하고, 소음이 있는 보상에 대한 견고한 마스킹 방법론을 사용합니다. 더불어, 의미없는 결과를 만들어내는 국부 최솟값에 갇히는 것을 방지하기 위해 언어 능숙도 안정화기를 제안합니다. S-GFN은 최적의 정책을 유지하면서 더 안정적인 훈련을 제공합니다. 우리는 다양한 설정에서 S-GFN의 압도적인 공격 성능과 다양성을 시연합니다."
+    },
+    "summary": "1. LLM Red-Teaming에서 안정적인 공격 다양성을 도모하기 위해 안정적인-GFN(S-GFN)을 제안하였습니다.\n2. S-GFN은 GFN의 파티션 함수 Z 추정을 제거하고 더 안정적인 훈련을 가능케 하는데, 이는 다양하고 견고한 공격을 가능하게 합니다.\n3. S-GFN은 소음이 있는 보상에 대해 견고한 마스킹 기법을 활용하여 모델이 국부 최솟값에 갇히는 것을 방지하고, 안정적인 훈련을 제공합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Trees to Flows and Back: Unifying Decision Trees and Diffusion Models",
+    "abstract": "Decision trees and diffusion models are ostensibly disparate model classes, one discrete and hierarchical, the other continuous and dynamic. This work unifies the two by establishing a crisp mathematical correspondence between hierarchical decision trees and diffusion processes in appropriate limiting regimes. Our unification reveals a shared optimization principle: Global Trajectory Score Matching (GTSM), for which gradient boosting (in an idealized version) is asymptotically optimal. We underscore the conceptual value of our work through two key practical instantiations: \\treeflow, which achieves competitive generation quality on tabular data with higher fidelity and a 2\\times computational speedup, and \\dsmtree, a novel distillation method that transfers hierarchical decision logic into neural networks, matching teacher performance within 2\\% on many benchmarks.",
+    "authors": [
+      "Sai Niranjan Ramachandran",
+      "Suvrit Sra"
+    ],
+    "likes": 4,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00414",
+    "date_collected": "2026-05-05T07:27:41.103708+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "의사 결정 트리와 확산 모델 통합: Trees to Flows and Back",
+      "abstract": "의사 결정 트리와 확산 모델은 본질적으로 이질적인 모델 클래스로, 하나는 이산적이고 계층적이며 다른 하나는 연속적이고 동적이다. 본 연구는 적절한 한계 근사 상황에서 의사 결정 트리와 확산 프로세스 간의 명확한 수학적 대응을 확립함으로써 두 모델을 통합합니다. 이 통합은 전역 궤적 점수 일치(Global Trajectory Score Matching, GTSM)라는 공유 최적화 원칙을 드러내는데, 초보화된 경사 부스팅이 점근적으로 최적임을 보여줍니다. 우리는 이 작업의 개념적 가치를 강조하기 위해 두 가지 핵심 실용적 시제인 \\treeflow와 \\dsmtree를 소개합니다."
+    },
+    "summary": "1. 의사 결정 트리와 확산 모델의 수학적 대응을 통해 Global Trajectory Score Matching (GTSM) 최적화 원칙을 밝힘.\n2. \\treeflow는 탭ular 데이터에서 이상적인 성능을 발휘하며 계산 속도를 2배 빠르게 함.\n3. \\dsmtree는 의사 결정 논리를 신경망으로 전달하여 다양한 벤치마크에서 교사 성능과 2% 이내로 일치시키는 새로운 연산 방법 제시.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "When Do Diffusion Models learn to Generate Multiple Objects?",
+    "abstract": "Text-to-image diffusion models achieve impressive visual fidelity, yet they remain unreliable in multi-object generation. Despite extensive empirical evidence of these failures, the underlying causes remain unclear. We begin by asking how much of this limitation arises from the data itself. To disentangle data effects, we consider two regimes across different dataset sizes: (1) concept generalization, where each individual concept is observed during training under potentially imbalanced data distributions, and (2) compositional generalization, where specific combinations of concepts are systematically held out. To study these regimes, we introduce mosaic (Multi-Object Spatial relations, AttrIbution, Counting), a controlled framework for dataset generation. By training diffusion models on mosaic, we find that scene complexity plays a dominant role rather than concept imbalance, and that counting is uniquely difficult to learn in low-data regimes. Moreover, compositional generalization collapses as more concept combinations are held out during training. These findings highlight fundamental limitations of diffusion models and motivate stronger inductive biases and data design for robust multi-object compositional generation.",
+    "authors": [
+      "Yujin Jeong",
+      "Arnas Uselis",
+      "Iro Laina",
+      "Seong Joon Oh",
+      "Anna Rohrbach"
+    ],
+    "likes": 4,
+    "published_date": "Apr 30",
+    "url": "https://huggingface.co/papers/2605.00273",
+    "date_collected": "2026-05-05T07:27:41.105233+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "다중 객체 생성을 학습하는 확산 모델은 언제 배우나요?",
+      "abstract": "텍스트-이미지 확산 모델은 인상적인 시각적 정확도를 보여줍니다. 그러나 이들은 다중 객체 생성에서 신뢰성이 부족합니다. 이 실패의 확실한 경험적 증거에도 불구하고, 근본적인 원인은 여전히 명확하지 않습니다. 데이터의 얼마나 이 제약이 기인하는지를 살펴보며, 우리는 데이터 크기에 따른 두 가지 regime를 고려합니다."
+    },
+    "summary": "1. 다중 객체 생성에 대한 확산 모델의 한계는 주로 데이터의 화면 복잡성에 비례하며, 개념 불균형보다는 주로 촬영된 객체들에 기인합니다.\n2. Mosaic를 통한 확산 모델의 학습에서, 적은 데이터 조건에서는 계산이 학습이 어려움을 확인할 수 있습니다.\n3. 조합적 일반화는 훈련 기간에 각각의 개념 조합이 배제될수록 더욱 축소됩니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Other"
+    ]
+  }
+]

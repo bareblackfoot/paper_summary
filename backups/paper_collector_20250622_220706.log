@@ -1,0 +1,159 @@
+=== Paper Collection Started at Sat Jun 21 22:06:46 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W26
+URL: https://huggingface.co/papers/week/2025-W26
+Found 10 papers in weekly view
+Fetching likes for: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Fetching likes for: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Fetching likes for: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Fetching likes for: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Fetching likes for: Scaling Test-time Compute for LLM Agents
+Fetching likes for: Sekai: A Video Dataset towards World Exploration
+Fetching likes for: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Fetching likes for: CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following
+Fetching likes for: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Fetching likes for: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Selected top 10 papers by likes:
+1. MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention (218 likes)
+2. MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation (82 likes)
+3. Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning (64 likes)
+4. DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents (54 likes)
+5. Scaling Test-time Compute for LLM Agents (53 likes)
+6. Sekai: A Video Dataset towards World Exploration (52 likes)
+7. Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback (50 likes)
+8. CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following (48 likes)
+9. DoTA-RAG: Dynamic of Thought Aggregation RAG (44 likes)
+10. Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency (42 likes)
+Found abstract: We introduce MiniMax-M1, the world's first open-weight, large-scale
+hybrid-attention reasoning model...
+Processed paper: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Found abstract: Recent advances in large language models (LLMs) have accelerated progress in
+financial NLP and appli...
+Processed paper: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Found abstract: Scientific discoveries increasingly rely on complex multimodal reasoning
+based on information-intens...
+Processed paper: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Found abstract: Deep Research Agents are a prominent category of LLM-based agents. By
+autonomously orchestrating mul...
+Processed paper: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Found abstract: Scaling test time compute has shown remarkable success in improving the
+reasoning abilities of large...
+Processed paper: Scaling Test-time Compute for LLM Agents
+Found abstract: Video generation techniques have made remarkable progress, promising to be
+the foundation of interac...
+Processed paper: Sekai: A Video Dataset towards World Exploration
+Found abstract: Recent studies have shown LLMs possess some ability to improve their
+responses when given external f...
+Processed paper: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Found abstract: Recent advances in audio-text large language models (LLMs) have opened new
+possibilities for music u...
+Processed paper: CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following
+Found abstract: In this paper, we introduce DoTA-RAG (Dynamic-of-Thought Aggregation RAG), a
+retrieval-augmented gen...
+Processed paper: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Found abstract: Recent advances in large reasoning models have enabled complex, step-by-step
+reasoning but often int...
+Processed paper: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Paper already exists, checking if translation is complete...
+Update likes: 218  ->  215
+Update date_collected: 2025-06-22T07:06:55.055424+09:00  ->  2025-06-21T07:07:38.271796+09:00
+
+Processing paper 2/10
+Title: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Paper already exists, checking if translation is complete...
+Update likes: 82  ->  81
+Update date_collected: 2025-06-22T07:06:55.057379+09:00  ->  2025-06-21T07:07:38.273831+09:00
+
+Processing paper 3/10
+Title: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  63
+Update date_collected: 2025-06-22T07:06:55.059314+09:00  ->  2025-06-21T07:07:38.275830+09:00
+
+Processing paper 4/10
+Title: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  52
+Update date_collected: 2025-06-22T07:06:55.060486+09:00  ->  2025-06-21T07:07:38.277051+09:00
+
+Processing paper 5/10
+Title: Scaling Test-time Compute for LLM Agents
+Paper already exists, checking if translation is complete...
+Update likes: 53  ->  50
+Update date_collected: 2025-06-22T07:06:55.062087+09:00  ->  2025-06-21T07:07:38.278697+09:00
+
+Processing paper 6/10
+Title: Sekai: A Video Dataset towards World Exploration
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  49
+Update date_collected: 2025-06-22T07:06:55.063898+09:00  ->  2025-06-21T07:07:38.280576+09:00
+
+Processing paper 7/10
+Title: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  47
+Update date_collected: 2025-06-22T07:06:55.065070+09:00  ->  2025-06-21T07:07:38.283018+09:00
+
+Processing paper 8/10
+Title: CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  47
+Update date_collected: 2025-06-22T07:06:55.066251+09:00  ->  2025-06-21T07:07:38.281804+09:00
+
+Processing paper 9/10
+Title: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  43
+Update date_collected: 2025-06-22T07:06:55.067396+09:00  ->  2025-06-21T07:07:38.284205+09:00
+
+Processing paper 10/10
+Title: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  41
+Update date_collected: 2025-06-22T07:06:55.068606+09:00  ->  2025-06-21T07:07:38.285442+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W26.json...
+
+Updating Notion database...
+Updating paper: 라이트닝 어텐션으로 효율적인 테스트 시간 연산 확장하는 MiniMax-M1 (likes: 215 -> 218)
+Updating paper: 멀티핀벤: 금융 LLM 평가를 위한 다중언어, 다중모달, 난이도인식 벤치마크 (likes: 81 -> 82)
+Updating paper: 과학자들의 첫 번째 시험: 지각, 이해, 추론을 통해 MLLM의 인지 능력 탐구 (likes: 63 -> 64)
+Updating paper: 깊은 연구 벤치마크: 깊은 연구 에이전트를 위한 포괄적인 벤치마크 (likes: 52 -> 54)
+Updating paper: LLM 에이전트들을 위한 시험 시간 계산 확장 (likes: 50 -> 53)
+Updating paper: 세카이: 세계 탐험을 향한 비디오 데이터셋 (likes: 49 -> 52)
+Updating paper: 피드백 마찰: LLMs가 외부 피드백을 완전히 흡수하는 데 어려움을 겪다 (likes: 47 -> 50)
+Updating paper: CMI-Bench: 음악 지시평가를 위한 포괄적인 벤치마크 (likes: 47 -> 48)
+Updating paper: 도타-랙: 생각 집합의 동적 (likes: 43 -> 44)
+Updating paper: 기다릴 필요 없어요! 사고 토큰 제거가 추론 효율성 향상 (likes: 41 -> 42)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Jun 21 22:09:08 UTC 2025 ===
+

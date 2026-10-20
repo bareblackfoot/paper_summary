@@ -1,0 +1,348 @@
+[
+  {
+    "title": "Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable",
+    "abstract": "The capability of a modern AI agent depends not only on its foundation model but also on its harness, which constructs prompts, manages state, invokes tools, and coordinates execution. As models, APIs, environments, and requirements evolve, the harness must be continually modified. Before such a change can be made, a developer or coding agent must identify all code locations that implement the target behavior. This is difficult because production harnesses are large, tightly coupled, and behaviorally distributed, while modification requests describe what the system should do and repositories are organized by files and modules. Code search, repository indexing, and long-context processing ease inspection, but still leave this behavior-to-code mapping to be recovered by hand. Behavior localization is therefore a central bottleneck in harness evolution. We introduce the Harness Handbook, a behavior-centric representation synthesized automatically from a harness codebase via static analysis and LLM-assisted structuring, linking each behavior to its corresponding source. We also introduce Behavior-Guided Progressive Disclosure (BGPD), which guides agents from high-level behaviors to relevant implementation details and verifies candidate locations against the current source. On diverse modification requests from two open-source harnesses, Handbook-Assisted planning improves behavior localization and edit-plan quality while using fewer planner tokens, with the largest gains on scattered sites, rarely executed paths, and cross-module interactions. Evolving complex agentic systems thus depends not only on generating edits, but also on determining where those edits should be made.",
+    "authors": [
+      "Ruhan Wang",
+      "Yucheng Shi",
+      "Zongxia Li",
+      "Zhongzhi Li",
+      "Yue Yu",
+      "Junyao Yang",
+      "Kishan Panaganti",
+      "Haitao Mi",
+      "Dongruo Zhou",
+      "Leoweiliang"
+    ],
+    "likes": 186,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2607.13285",
+    "date_collected": "2026-07-18T07:55:30.195445+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-model reasoning, but it is expensive to repeat on every new strong model because the target model must generate many rollouts during training. As models scale, post-training itself becomes a bottleneck. We study a weak-to-strong alternative: run RL on a smaller model where rollouts are cheaper, then reuse what that RL run learned to improve a stronger target model. Directly distilling the post-RL weak teacher is not enough, because the teacher's final policy mixes useful RL gains with the limitations of the smaller model. We propose Direct On-Policy Distillation (Direct-OPD), which transfers the teacher's RL-induced policy shift instead. Direct-OPD compares the post-RL teacher with its own pre-RL reference and treats their log-ratio as a dense implicit reward for the student. In plain terms, the checkpoint pair tells us which actions RL made the weak model more or less likely to take, and Direct-OPD applies that signal on the stronger student's own on-policy states. This directly reuses the weak model's RL supervision signal without running sparse-reward RL on the target model. Empirically, Direct-OPD consistently leverages weaker teachers to improve stronger target models; notably, it boosts Qwen3-1.7B from 48.3% to 58.3% on AIME 2024 in just 4 hours on 8 A100 GPUs. It outperforms step-matched direct RL and enables the sequential composition of multiple policy shifts. Our results show that RL outcomes can be reused across model scales as implicit reward signals, not merely as final models to imitate.",
+    "authors": [
+      "Shiyuan Feng",
+      "Huan-ang Gao",
+      "Haohan Chi",
+      "Hanlin Wu",
+      "Zhilong Zhang",
+      "Zheng Jiang",
+      "Bingxiang He",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Hao Zhou"
+    ],
+    "likes": 125,
+    "published_date": "Jul 8",
+    "url": "https://huggingface.co/papers/2607.05394",
+    "date_collected": "2026-07-18T07:55:30.198127+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation",
+    "abstract": "We introduce Boogu-Image-0.1, an open-source unified multimodal understanding and generation model family, comprising Base, Turbo, Edit, and Edit-Turbo variants. It delivers competitive performance in high-quality text-to-image generation, fast inference, instruction-based editing, and bilingual (Chinese-English) text rendering. Closed-source multimodal systems like Nano-Banana-Pro and GPT-Image-2 achieve strong performance through system-level integration rather than a single model, yet their internal practices remain largely undisclosed. In this work, we demonstrate that targeted improvements in model understanding, data quality, and training pipelines, coupled with agentic inference-time scaling, can substantially enhance generation and editing performance even under highly constrained compute budgets. Comprehensive evaluations show that Boogu-Image-0.1 consistently matches or surpasses other open-source models across standard benchmarks, and achieves results approaching leading closed-source systems. Notably, this is accomplished with only 208.62 million unique images. The base model's theoretical training cost is only approximately \\$400K. We share practical discussions that we believe are valuable to the broader research community, and release weights, code, and recipes under Apache 2.0 to advance the open ecosystem for unified multimodal understanding and generation. Our code is available here: https://github.com/Boogu-Project/Boogu-Image.",
+    "authors": [
+      "Guoxuan Chen",
+      "Chufeng Xiao",
+      "Haoran Yang",
+      "Siyue Xie",
+      "Binxiao Huang",
+      "Ming Zhang",
+      "Cheuk Him Chau",
+      "Xinyu Fu",
+      "Yingzhao Lian",
+      "Tom S. Y. Li",
+      "Jintao Lin",
+      "Bowen Dong",
+      "Zian Qian",
+      "Yuhao Liu",
+      "Yuxuan Hu",
+      "Weikang Shi",
+      "Bin Zou",
+      "Bowen Zheng",
+      "Haoxuan Che",
+      "Chang Chen",
+      "Yuyang He",
+      "Heyang Sun"
+    ],
+    "likes": 122,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2607.13125",
+    "date_collected": "2026-07-18T07:55:30.202301+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding",
+    "abstract": "Recent advances in video understanding have spanned motion, long video, and streaming interaction, driving this field toward real-world applications. Despite this progress, current open-source models remain limited in several ways. They often struggle to generalize across diverse video types, making them effective only in specific domains. High computational demands further restrict their efficiency and scalability. Moreover, most models are only partially open, with key components such as training code, strategy, or datasets unavailable, which hinders reproducibility and slows community-driven development. To address these issues, we introduce VideoChat3, a fully open, efficient, and generalist video-centric MLLM. VideoChat3 advances video understanding through two complementary designs. For efficiency, we introduce Inflated 3D Vision Transformer (I3D-ViT) and Adaptive Frame Resolution for Streaming Video Perception, which enables efficient spatiotemporal representation and reduces the cost of processing video inputs during training and inference. For effectiveness, we develop a scalable video data synthesis pipeline that curates three diverse, high-quality training datasets: VideoChat3-Academic2M, VideoChat3-LV116K, and VideoChat3-OL617K, covering general, long-form, and streaming video scenarios, improving the model's generalization across domains. By integrating these designs, VideoChat3 achieves a rare balance of broad generalization and computational efficiency. Experiments across general, long-form, and streaming benchmarks demonstrate that VideoChat3 surpasses prior open-source models with equal or larger parameter counts with only 4B parameters and higher efficiency.",
+    "authors": [
+      "Xinhao Li",
+      "Yuhan Zhu",
+      "Xiangyu Zeng",
+      "Yuhao Dong",
+      "Haoning Wu",
+      "Zhiqiu Zhang",
+      "Yuandong Yang",
+      "Changlian Ma",
+      "Qingyu Zhang",
+      "Yansong Shi",
+      "Xinyu Chen",
+      "Haoran Chen",
+      "Zizheng Huang",
+      "Jun Zhang",
+      "Kun Ouyang",
+      "Lin Sui",
+      "Ziang Yan",
+      "Yicheng Xu",
+      "Chenting Wang",
+      "Yinan He",
+      "Hongjie Zhang",
+      "Yi Wang"
+    ],
+    "likes": 108,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2607.14935",
+    "date_collected": "2026-07-18T07:55:30.206348+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "비디오챗3: 효율적이고 다재다능한 비디오 이해를 위한 완전 개방형 비디오 MLLM 시스템",
+      "abstract": "최근의 비디오 이해 기술 발전은 동작, 장거리 비디오, 그리고 스트리밍 상호작용을 포함하며, 해당 분야를 실무 응용으로 이끌고 있습니다. 그러나 현재의 오픈 소스 모델은 여러 측면에서 제한적입니다. 이러한 모델들은 종종 다양한 비디오 유형 간에 일반화하기 어렵고, 특정 영역에서만 효과적입니다. 높은 계산 요구는 효율성과 확장성을 제한합니다. 더구나 대부분의 모델은 학습 코드, 전략, 또는 데이터셋과 같은 주요 구성 요소가 부분적으로만 오픈되어 있어, 재현성을 방해하고 커뮤니티 주도 개발을 늦춥니다. 이러한 문제를 해결하기 위해, 우리는 VideoChat3를 제안합니다. 이는 완전 개방형이고 효율적이며 다재다능한 비디오 중심 MLLM 모델입니다."
+    },
+    "summary": "1. VideoChat3는 효율적인 Inflated 3D Vision Transformer (I3D-ViT)와 Adaptive Frame Resolution을 도입하여 비디오 입력 처리 비용을 줄이고 시공간 표현을 효율적으로 합니다.\n2. 비디오챗3는 VideoChat3-Academic2M, VideoChat3-LV116K, VideoChat3-OL617K와 같이 세 가지 다양하고 고품질의 훈련 데이터셋을 활용하여 다양한 시나리오에 대한 범용화를 촉진합니다.\n3. VideoChat3는 넓은 일반화와 계산 효율성을 동시에 달성하며, 일반적인, 장거리, 그리고 스트리밍 벤치마킹에서 이전 오픈 소스 모델을 능가합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models",
+    "abstract": "Coding agents must integrate external tool returns into ongoing reasoning - a capability that standard left-to-right pretraining on code exposes only in its forward direction. We observe that the action-observation-continuation loop of a coding agent is structurally isomorphic to a function call site, where a caller binds arguments, a callee returns a value computed elsewhere, and downstream code consumes that value. This conditioning structure exists at internet scale in ordinary code. We exploit it through function-aware fill-in-the-middle (FIM) mid-training: a self-supervised objective that masks functions selected via program dependency graph analysis and a complexity-inferability double criterion. We mid-train Qwen2.5-Coder-Instruct (7B/14B) and Qwen3-8B on a 2.6B-token decontaminated corpus drawn from 968 GitHub repositories, then apply existing agentic post-training pipelines. Mid-training improves SWE-Bench-Verified by +2.8/+3.0 at 7B/14B and by +3.2 on Qwen3-8B; SWE-Bench-Lite gains are +3.7/+4.0/+5.4 on the same models. The improvement holds across two post-training pipelines (R2E-Gym, SWE-Smith) and on a non-Qwen2.5 base (Qwen3-8B with SWE-Lego). Beyond in-domain gains, mid-training also mitigates the capability erosion that agentic post-training otherwise inflicts on non-agent coding (e.g., LiveCodeBench) and non-coding tool-use benchmarks (tau-bench, BFCL): although the mid-training corpus contains Python code only, the function-call inductive bias survives post-training and yields consistent gains.",
+    "authors": [
+      "Yubo Wang",
+      "Jiarong Liang",
+      "Yuxuan Zhang",
+      "Xuye Liu",
+      "Cong Wei",
+      "Yuyu Zhang",
+      "Ping Nie",
+      "Wenhu Chen"
+    ],
+    "likes": 96,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2607.12463",
+    "date_collected": "2026-07-18T07:55:30.210383+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+    "abstract": "Visual Language Navigation foundation models aim to unify deep reasoning for grounded spatial decisions with broad versatility for diverse embodied tasks. Current approaches typically achieve this integration via monolithic policies that map observations directly to actions, yet they often suffer from coordinate drift and poor handling of long-tail semantics. Furthermore, these black-box mappings lack interpretability, hindering the simultaneous achievement of generality, robustness, and transparency. We present ABot-N1, a step toward a general Visual Language Navigation foundation model, that addresses these challenges by decoupling cognition from control via a slow-fast architecture guided by dual visual-language signals. More specifically, a slow vision-language reasoner performs explicit Chain-of-Thought reasoning while producing a pixel goal. This compact set of image-space anchor points serves as a universal interface for diverse tasks, including point-goal, object-goal, poi-goal, instruction-following, and person-following. Subsequently, a fast action expert leverages both the textual cues and the pixel guidance to generate continuous waypoints at the native control frequency. By bridging high-level intents and low-level control through pixel-grounded anchors paired with explicit linguistic traces, our approach ensures robust, generalizable, and interpretable navigation across simulation and real-world benchmarks. ABot-N1 establishes new state-of-the-art records, delivering massive gains specifically in urban-scale navigation: boosting POI arrival by 35.0% (to 77.3%) and achieving 95.4%/92.9% SR in complex indoor and outdoor scenes. It also maintains superior robustness across object-reaching, person-following, and instruction-following tasks. New Point-Goal/POI-Goal benchmarks are released as open source to advance the field of urban-scale navigation.",
+    "authors": [
+      "Ruiyan Gong",
+      "Yingnan Guo",
+      "Junjun Hu",
+      "Jintao Kong",
+      "Xiaoxu Leng",
+      "Tianlun Li",
+      "Weize Li",
+      "Fei Liu",
+      "Zhicheng Liu",
+      "Jia Lu",
+      "Minghua Luo",
+      "Chenlin Ming",
+      "Yanfen Shen",
+      "Jiyue Tao",
+      "Zhengbo Wang",
+      "Mingyang Yin",
+      "Minqi Gu",
+      "Zihao Guan",
+      "Wei Guo",
+      "Guoqing Liu",
+      "Huachong Pang",
+      "Menglin Yang"
+    ],
+    "likes": 95,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2607.10383",
+    "date_collected": "2026-07-18T07:55:30.215333+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning",
+    "abstract": "Reinforcement learning with verifiable rewards without human-annotated data, often referred to as zero RL, has emerged as a powerful paradigm for eliciting chain-of-thought reasoning. However, due to computational constraints, existing studies are largely restricted to small models, leaving the training dynamics and emergent capabilities at a large scale unexplored. To meaningfully explore this frontier, we aim to elicit high-quality reasoning behaviors from the model. However, we find that naive scaling often suffers from poor readability, token redundancy, and a lack of adaptive reasoning depth. To address these challenges, we present a stable and efficient training pipeline, incorporating algorithmic and system optimizations such as clipped importance sampling, training-inference ratio correction, and mixed-precision control. Our experiments offer three key findings that validate the \"bitter lesson\" of scaling: (1) scaling to 1T parameters significantly enhances sample efficiency and performance ceilings; (2) the training process progresses sequentially through an initial discovery phase followed by a sharpening phase; and (3) the model spontaneously develops advanced cognitive behaviors, including anthropomorphism, structured formatting, self-verification, parallel reasoning, and context anxiety, rendering hand-crafted heuristics redundant. Evaluated on seven mathematical benchmarks, Ring-2.5-1T-Zero achieves competitive performance. Additionally, to assess CoT quality beyond final-answer correctness, we propose a structured evaluation framework across three dimensions: comprehensibility, reproducibility, and efficiency, where our model demonstrates clear advantages in producing structured and concise reasoning traces. By sharing our observed emergent phenomena, we hope to provide the community with deeper insights into scaling behaviors, particularly at the 1-trillion scale.",
+    "authors": [
+      "Xinyu Tang",
+      "Gangqiang Cao",
+      "Yurou Liu",
+      "Yuliang Zhan",
+      "Xiaochong Lan",
+      "Yifan Li",
+      "Yuchen Yan",
+      "Han Peng",
+      "Zican Dong",
+      "Zhenduo Zhang",
+      "Tianshu Wang",
+      "Xinyu Kong",
+      "Zujie Wen",
+      "Wayne Xin Zhao",
+      "Zhiqiang Zhang",
+      "Jun Zhou"
+    ],
+    "likes": 84,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2607.12395",
+    "date_collected": "2026-07-18T07:55:30.220098+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
+    "abstract": "Visual generators excel at rendering, but they confidently fabricate what they do not know. User requests are unbounded, evolving, and deeply long-tailed: new characters, trending entities, post-cutoff events, and more. This world-knowledge bottleneck is structural: generators are trained on fixed corpora, but the visual world is open-ended. We construct SearchGen-20K and SearchGen-Bench, with 20,839 prompts spanning twelve failure categories and twenty-two domains, paired with a pre-executed multimodal SearchGen-Corpus-1M to support offline, reproducible research. On SearchGen-Bench, frontier open generators score only 21 to 28 out of 100, a 40-point collapse invisible to existing benchmarks. The natural remedy is to employ search tools, enabling agentic visual generation. However, we find that naive search fails: it retrieves indiscriminately, injecting noise into prompts the generator already handles. We trace the root cause to a generator-specific, evolving knowledge boundary: the divide between what a generator can internalize through training and what must remain in external context. Although this boundary is hard to specify in advance, we show that it is discoverable through a teach-then-search co-training framework. Even a minimal version of this co-training recipe produces monotonic improvement, laying the foundation for recursive self-improvement in visual generation that can meet world-knowledge-grounded requests. We release the full dataset, co-training corpus, and search corpus as a replayable harness for tool-augmented, world-knowledge-grounded visual generation.",
+    "authors": [
+      "Haozhe Wang",
+      "Weijia Feng",
+      "Jinpeng Yu",
+      "Che Liu",
+      "Ping Nie",
+      "Fangzhen Lin",
+      "Jiaming Liu",
+      "Ruihua Huang",
+      "Jimmy Lin",
+      "Wenhu Chen",
+      "Cong Wei"
+    ],
+    "likes": 79,
+    "published_date": "Jul 9",
+    "url": "https://huggingface.co/papers/2607.05382",
+    "date_collected": "2026-07-18T07:55:30.223576+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+    "abstract": "Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory, tool use, verification, and cross-embodiment execution. We present ABot-AgentOS, a general robotic Agent Operating System that sits above low-level controllers and provides a deliberative agent layer for scene-conditioned planning, context-isolated skill execution, multi-stage verification, multi-modal memory, and edge-cloud collaboration. To evaluate such systems, we introduce EmbodiedWorldBench, an executable benchmark with 16 indoor, outdoor, and hybrid scenes, four difficulty levels, and over 200 tasks involving navigation, object search, NPC dialogue, dynamic events, and trace-grounded scoring. ABot-AgentOS further introduces Universal Multi-modal Graph Memory, a persistent source-grounded substrate that converts dialogue, visual observations, spatial context, temporal relations, and task traces into typed nodes and edges. A failure-driven self-evolution loop converts diagnosed memory failures into gated runtime evo-assets that are promoted only to later evaluation splits, preventing current-split ground-truth leakage while enabling continual improvement. On an initial EmbodiedWorldBench subset, ABot-AgentOS improves over a single-controller baseline in both task success and goal completion. Across memory benchmarks, ABot-AgentOS Static achieves 87.5 on LoCoMo, 59.9 on OpenEQA EM-EQA, 88.6 on Mem-Gallery, and 76.5 Acc@All on NExT-QA; self-evolution further improves LoCoMo to 88.7, OpenEQA to 60.4, and Mem-Gallery to 89.0. These results suggest that a general Agent OS layer can improve long-horizon embodied execution while providing persistent, auditable memory for continual interaction.",
+    "authors": [
+      "Jiayi Tian",
+      "Shiao Liu",
+      "Yuting Xu",
+      "Jia Lu",
+      "Zihao Guan",
+      "Honglin Han",
+      "Di Yang",
+      "Minqi Gu",
+      "Yifei Qian",
+      "Tianlin Zhang",
+      "Yanqing Zhu",
+      "Zeqian Ye",
+      "Menglin Yang",
+      "Fei Wang",
+      "Xu Hu",
+      "Xiuxian Li",
+      "Wei Zhang",
+      "Shihui Su",
+      "Yiyan Ji",
+      "Jingbo Wang",
+      "Ziteng Feng",
+      "Jiaheng Liu"
+    ],
+    "likes": 78,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2607.10350",
+    "date_collected": "2026-07-18T07:55:30.227689+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Video Generation Models are General-Purpose Vision Learners",
+    "abstract": "Driven by next-token prediction, NLP shifted from task-specific models into powerful generalist foundation models. What, then, is the equivalent catalyst needed to achieve a general-purpose model in computer vision? In this paper, we contend that large-scale text-to-video generation serves as a strong pre-training paradigm for computer vision, providing the necessary spatiotemporal priors, vision-language alignment, and scalability required for general visual intelligence. We introduce GenCeption, which leverages a pre-trained video generative diffusion backbone to define a feed-forward perception model, capable of performing various vision tasks steered by text instructions. Empirical results demonstrate that GenCeption achieves state-of-the-art performance across a diverse suite of tasks, including depth, surface normal, and camera pose estimation, expression-referring segmentation, and 3D keypoint prediction, often matching or surpassing specialized models (e.g. DepthAnything3, SAM3, D4RT, VGGT-Omega, Sapiens, David, Genmo, and Lotus-2). Furthermore, the video generative pretrained backbone outperforms alternative pretraining paradigms (e.g., V-JEPA, and Video MAE) under comparable settings. Importantly, GenCeption exhibits preliminary data and model scaling properties along with exceptional data efficiency, where it achieves comparable performance with leading models like D4RT and VGGT-Omega with 7 to 500 less training data. Finally, GenCeption also exhibits intriguing emergent behaviors: a model trained exclusively on synthetic human videos generalizes to real-world footage and out-of-distribution object categories (e.g., animals and robots). These findings suggest that video generation is not merely a synthesis tool, but a foundational path toward generalist vision intelligence for the physical world. Project page: https://genception.github.io",
+    "authors": [
+      "Letian Wang",
+      "Chuhan Zhang",
+      "Rishabh Kabra",
+      "Jasper Uijlings",
+      "Steven Waslander",
+      "Andrew Zisserman",
+      "Joao Carreira",
+      "Kaiming He",
+      "Misha Andriluka",
+      "Eduard Gabriel Bazavan",
+      "Andrei Zanfir",
+      "Cristian Sminchisescu"
+    ],
+    "likes": 74,
+    "published_date": "Jul 10",
+    "url": "https://huggingface.co/papers/2607.09024",
+    "date_collected": "2026-07-18T07:55:30.231304+09:00",
+    "week": "2026-W29",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  }
+]

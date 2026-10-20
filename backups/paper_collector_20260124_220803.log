@@ -1,0 +1,121 @@
+=== Paper Collection Started at Fri Jan 23 22:07:37 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W04
+URL: https://huggingface.co/papers/week/2026-W04
+Found 10 papers in weekly view
+Fetching likes for: Agentic Reasoning for Large Language Models
+Fetching likes for: Your Group-Relative Advantage Is Biased
+Fetching likes for: Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization
+Fetching likes for: EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience
+Fetching likes for: ABC-Bench: Benchmarking Agentic Backend Coding in Real-World Development
+Fetching likes for: Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey
+Fetching likes for: The Flexibility Trap: Why Arbitrary Order Limits Reasoning Potential in Diffusion Language Models
+Fetching likes for: RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
+Fetching likes for: HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding
+Fetching likes for: BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries
+Selected top 10 papers by likes:
+1. Agentic Reasoning for Large Language Models (156 likes)
+2. Your Group-Relative Advantage Is Biased (136 likes)
+3. Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization (70 likes)
+4. EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience (62 likes)
+5. ABC-Bench: Benchmarking Agentic Backend Coding in Real-World Development (62 likes)
+6. Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey (58 likes)
+7. The Flexibility Trap: Why Arbitrary Order Limits Reasoning Potential in Diffusion Language Models (55 likes)
+8. RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation (54 likes)
+9. HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding (52 likes)
+10. BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries (50 likes)
+Found abstract: Reasoning is a fundamental cognitive process underlying inference, problem-solving, and decision-mak...
+Processed paper: Agentic Reasoning for Large Language Models
+Found abstract: Reinforcement Learning from Verifier Rewards (RLVR) has emerged as a widely used approach for post-t...
+Processed paper: Your Group-Relative Advantage Is Biased
+Found abstract: We introduce Being-H0.5, a foundational Vision-Language-Action (VLA) model designed for robust cross...
+Processed paper: Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization
+Found abstract: The development of native computer-use agents (CUA) represents a significant leap in multimodal AI. ...
+Processed paper: EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience
+Found abstract: The evolution of Large Language Models (LLMs) into autonomous agents has expanded the scope of AI co...
+Processed paper: ABC-Bench: Benchmarking Agentic Backend Coding in Real-World Development
+Found abstract: Issue resolution, a complex Software Engineering (SWE) task integral to real-world development, has ...
+Processed paper: Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey
+Found abstract: Diffusion Large Language Models (dLLMs) break the rigid left-to-right constraint of traditional LLMs...
+Processed paper: The Flexibility Trap: Why Arbitrary Order Limits Reasoning Potential in Diffusion Language Models
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has driven substantial progress in reasoning-i...
+Processed paper: RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
+Found abstract: Recent advancements in Multimodal Large Language Models (MLLMs) have demonstrated significant improv...
+Processed paper: HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding
+Found abstract: Vision-Language-Action (VLA) models have shown promise in robot manipulation but often struggle to g...
+Processed paper: BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Agentic Reasoning for Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 156  ->  121
+Update date_collected: 2026-01-24T07:07:45.403547+09:00  ->  2026-01-23T07:09:23.662069+09:00
+
+Processing paper 2/10
+Title: Your Group-Relative Advantage Is Biased
+Paper already exists, checking if translation is complete...
+Update likes: 136  ->  135
+Update date_collected: 2026-01-24T07:07:45.405019+09:00  ->  2026-01-23T07:09:23.660122+09:00
+
+Processing paper 3/10
+Title: Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  70
+Update date_collected: 2026-01-24T07:07:45.406442+09:00  ->  2026-01-23T07:09:23.663512+09:00
+
+Processing paper 4/10
+Title: EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: ABC-Bench: Benchmarking Agentic Backend Coding in Real-World Development
+Paper already exists, checking if translation is complete...
+Update likes: 62  ->  62
+Update date_collected: 2026-01-24T07:07:45.409551+09:00  ->  2026-01-23T07:09:23.665050+09:00
+
+Processing paper 6/10
+Title: Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  57
+Update date_collected: 2026-01-24T07:07:45.410969+09:00  ->  2026-01-23T07:09:23.666505+09:00
+
+Processing paper 7/10
+Title: The Flexibility Trap: Why Arbitrary Order Limits Reasoning Potential in Diffusion Language Models
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  53
+Update date_collected: 2026-01-24T07:07:45.413685+09:00  ->  2026-01-23T07:09:23.667818+09:00
+
+Processing paper 9/10
+Title: HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W04.json...
+
+Updating Notion database...
+Updating paper: 대규모 언어 모델을 위한 주체적 추론 (likes: 121 -> 156)
+Updating paper: 그룹 상대적 우위는 편향되어 있습니다 (likes: 135 -> 136)
+Paper already exists with same likes count: 인간 중심 로봇 학습 확장을 위한 Being-H0.5: 교차 신체 일반화 규모 업
+Creating new paper: 진화형 컴퓨터 사용 에이전트(EvoCUA): 확장 가능한 합성 경험을 통한 학습을 통한 에이전트 진화
+Paper already exists with same likes count: ABC-Bench: 현실 세계 개발에서의 에이전틱 백엔드 코딩 평가
+Updating paper: 소프트웨어 엔지니어링에서 LLM 기반 문제 해결의 발전과 전망: 포괄적인 조사 (likes: 57 -> 58)
+Creating new paper: 임의 순서가 추론 능력을 제한하는 이유: 확산 언어 모델에서의 한정
+Updating paper: 루브릭허브: 자동 코스 투 파인 생성을 통한 포괄적이고 고도구별 루브릭 데이터셋 (likes: 53 -> 54)
+Creating new paper: 효율적인 스트리밍 비디오 이해를 위한 HERMES: KV 캐시를 계층적 메모리로
+Creating new paper: BayesianVLA: 잠재적인 행동 쿼리를 통한 비젼 언어 행동 모델의 베이지안 분해
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Jan 23 22:09:22 UTC 2026 ===
+

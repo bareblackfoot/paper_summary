@@ -1,0 +1,145 @@
+=== Paper Collection Started at Thu Sep 11 22:07:42 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W37
+URL: https://huggingface.co/papers/week/2025-W37
+Found 10 papers in weekly view
+Fetching likes for: Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing
+Fetching likes for: Why Language Models Hallucinate
+Fetching likes for: Reverse-Engineered Reasoning for Open-Ended Generation
+Fetching likes for: A Survey of Reinforcement Learning for Large Reasoning Models
+Fetching likes for: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Fetching likes for: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Fetching likes for: Visual Representation Alignment for Multimodal Large Language Models
+Fetching likes for: Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search
+Fetching likes for: RewardDance: Reward Scaling in Visual Generation
+Fetching likes for: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Selected top 10 papers by likes:
+1. Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing (352 likes)
+2. Why Language Models Hallucinate (149 likes)
+3. Reverse-Engineered Reasoning for Open-Ended Generation (129 likes)
+4. A Survey of Reinforcement Learning for Large Reasoning Models (91 likes)
+5. Parallel-R1: Towards Parallel Thinking via Reinforcement Learning (77 likes)
+6. WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents (72 likes)
+7. Visual Representation Alignment for Multimodal Large Language Models (64 likes)
+8. Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search (50 likes)
+9. RewardDance: Reward Scaling in Visual Generation (49 likes)
+10. Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models (49 likes)
+Found abstract: Post-training language models (LMs) with reinforcement learning (RL) can
+enhance their complex reaso...
+Processed paper: Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing
+Found abstract: Like students facing hard exam questions, large language models sometimes
+guess when uncertain, prod...
+Processed paper: Why Language Models Hallucinate
+Found abstract: While the ``deep reasoning'' paradigm has spurred significant advances in
+verifiable domains like ma...
+Processed paper: Reverse-Engineered Reasoning for Open-Ended Generation
+Found abstract: In this paper, we survey recent advances in Reinforcement Learning (RL) for
+reasoning with Large Lan...
+Processed paper: A Survey of Reinforcement Learning for Large Reasoning Models
+Found abstract: Parallel thinking has emerged as a novel approach for enhancing the reasoning
+capabilities of large ...
+Processed paper: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Found abstract: The paradigm of Large Language Models (LLMs) has increasingly shifted toward
+agentic applications, w...
+Processed paper: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Found abstract: Multimodal large language models (MLLMs) trained with visual instruction
+tuning have achieved strong...
+Processed paper: Visual Representation Alignment for Multimodal Large Language Models
+Found abstract: Recent advances in large multimodal models have leveraged image-based tools
+with reinforcement learn...
+Processed paper: Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search
+Found abstract: Reward Models (RMs) are critical for improving generation models via
+Reinforcement Learning (RL), ye...
+Processed paper: RewardDance: Reward Scaling in Visual Generation
+Found abstract: We propose TraceRL, a trajectory-aware reinforcement learning framework for
+diffusion language model...
+Processed paper: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Why Language Models Hallucinate
+Paper already exists, checking if translation is complete...
+Update likes: 149  ->  137
+Update date_collected: 2025-09-12T07:07:53.528213+09:00  ->  2025-09-11T07:07:32.804902+09:00
+
+Processing paper 3/10
+Title: Reverse-Engineered Reasoning for Open-Ended Generation
+Paper already exists, checking if translation is complete...
+Update likes: 129  ->  125
+Update date_collected: 2025-09-12T07:07:53.529637+09:00  ->  2025-09-11T07:07:32.806381+09:00
+
+Processing paper 4/10
+Title: A Survey of Reinforcement Learning for Large Reasoning Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 77  ->  66
+Update date_collected: 2025-09-12T07:07:53.532937+09:00  ->  2025-09-11T07:07:32.809365+09:00
+
+Processing paper 6/10
+Title: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  68
+Update date_collected: 2025-09-12T07:07:53.534514+09:00  ->  2025-09-11T07:07:32.807969+09:00
+
+Processing paper 7/10
+Title: Visual Representation Alignment for Multimodal Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  51
+Update date_collected: 2025-09-12T07:07:53.536009+09:00  ->  2025-09-11T07:07:32.810867+09:00
+
+Processing paper 8/10
+Title: Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual
+  Search
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  45
+Update date_collected: 2025-09-12T07:07:53.537177+09:00  ->  2025-09-11T07:07:32.814523+09:00
+
+Processing paper 9/10
+Title: RewardDance: Reward Scaling in Visual Generation
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  46
+Update date_collected: 2025-09-12T07:07:53.539802+09:00  ->  2025-09-11T07:07:32.812042+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W37.json...
+
+Updating Notion database...
+Creating new paper: 공유함은 사랑함의 첫걸음: 집단 강화 학습 경험 공유를 통한 효율적인 LM 사후 훈련
+Updating paper: 왜 언어 모델은 환각하는가 (likes: 137 -> 149)
+Updating paper: 역공학화된 추론을 통한 개방형 생성 (likes: 125 -> 129)
+Creating new paper: 대규모 추론 모델을 위한 강화학습 조사
+Updating paper: 병렬-R1: 강화 학습을 통한 병렬 사고로의 진화 (likes: 66 -> 77)
+Updating paper: 웹탐험가: 장기간 웹 에이전트 훈련을 위한 탐사 및 발전 (likes: 68 -> 72)
+Updating paper: 멀티모달 대형 언어 모델을 위한 시각적 표현 정렬 (likes: 51 -> 64)
+Updating paper: 미니-o3: 시각 검색을 위한 추론 패턴 및 상호작용 턴 확장 (likes: 45 -> 50)
+Creating new paper: 리워드댄스: 시각 생성에서의 보상 스케일링
+Updating paper: 확산형 대언어 모델을 위한 혁신적인 강화학습 프레임워크 (likes: 46 -> 49)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Sep 11 22:09:44 UTC 2025 ===
+

@@ -1,0 +1,127 @@
+=== Paper Collection Started at Sun Jul 19 22:58:21 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W30
+URL: https://huggingface.co/papers/week/2026-W30
+Found 10 papers in weekly view
+Fetching likes for: Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable
+Fetching likes for: LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget
+Fetching likes for: VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding
+Fetching likes for: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Fetching likes for: Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation
+Fetching likes for: Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models
+Fetching likes for: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Fetching likes for: Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning
+Fetching likes for: SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning
+Fetching likes for: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Selected top 10 papers by likes:
+1. Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable (198 likes)
+2. LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget (175 likes)
+3. VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding (145 likes)
+4. Weak-to-Strong Generalization via Direct On-Policy Distillation (130 likes)
+5. Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation (126 likes)
+6. Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models (103 likes)
+7. ABot-N1: Toward a General Visual Language Navigation Foundation Model (100 likes)
+8. Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning (91 likes)
+9. SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning (85 likes)
+10. ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory (83 likes)
+Found abstract: The capability of a modern AI agent depends not only on its foundation model but also on its harness...
+Processed paper: Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable
+Found abstract: A growing gap separates inference context lengths from RL post-training: inference systems are appro...
+Processed paper: LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget
+Found abstract: Recent advances in video understanding have spanned motion, long video, and streaming interaction, d...
+Processed paper: VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-mo...
+Processed paper: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Found abstract: We introduce Boogu-Image-0.1, an open-source unified multimodal understanding and generation model f...
+Processed paper: Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation
+Found abstract: Coding agents must integrate external tool returns into ongoing reasoning - a capability that standa...
+Processed paper: Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models
+Found abstract: Visual Language Navigation foundation models aim to unify deep reasoning for grounded spatial decisi...
+Processed paper: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Found abstract: Reinforcement learning with verifiable rewards without human-annotated data, often referred to as ze...
+Processed paper: Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning
+Found abstract: Large language models are increasingly trained as interactive agents for long-horizon tasks involvin...
+Processed paper: SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning
+Found abstract: Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon ...
+Processed paper: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable
+Paper already exists, checking if translation is complete...
+Update likes: 198  ->  194
+Update date_collected: 2026-07-20T07:58:29.334268+09:00  ->  2026-07-19T07:56:39.031226+09:00
+
+Processing paper 2/10
+Title: LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget
+Paper already exists, checking if translation is complete...
+Update likes: 175  ->  171
+Update date_collected: 2026-07-20T07:58:29.338093+09:00  ->  2026-07-19T07:56:39.035250+09:00
+
+Processing paper 3/10
+Title: VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding
+Paper already exists, checking if translation is complete...
+Update likes: 145  ->  120
+Update date_collected: 2026-07-20T07:58:29.342151+09:00  ->  2026-07-19T07:56:39.044889+09:00
+
+Processing paper 4/10
+Title: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 130  ->  128
+Update date_collected: 2026-07-20T07:58:29.344797+09:00  ->  2026-07-19T07:56:39.037649+09:00
+
+Processing paper 5/10
+Title: Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 126  ->  125
+Update date_collected: 2026-07-20T07:58:29.348799+09:00  ->  2026-07-19T07:56:39.041125+09:00
+
+Processing paper 6/10
+Title: Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models
+Paper already exists, checking if translation is complete...
+Update likes: 103  ->  102
+Update date_collected: 2026-07-20T07:58:29.352039+09:00  ->  2026-07-19T07:56:39.047768+09:00
+
+Processing paper 7/10
+Title: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 100  ->  98
+Update date_collected: 2026-07-20T07:58:29.356106+09:00  ->  2026-07-19T07:56:39.051418+09:00
+
+Processing paper 8/10
+Title: Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 91  ->  90
+Update date_collected: 2026-07-20T07:58:29.359956+09:00  ->  2026-07-19T07:56:39.054839+09:00
+
+Processing paper 9/10
+Title: SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  82
+Update date_collected: 2026-07-20T07:58:29.363440+09:00  ->  2026-07-19T07:56:39.061006+09:00
+
+Processing paper 10/10
+Title: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W30.json...
+
+Updating Notion database...
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 194 -> 198)
+Updating paper: 고정 GPU 예산 하에 2백만 토큰을 넘는 긴 문맥 강화학습인 LongStraw (likes: 171 -> 175)
+Updating paper: 비디오챗3: 효율적이고 다재다능한 비디오 이해를 위한 완전 개방형 비디오 MLLM 시스템 (likes: 120 -> 145)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 128 -> 130)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 125 -> 126)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 102 -> 103)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 98 -> 100)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 90 -> 91)
+Updating paper: SEED: 자기 진화하는 온-폴리시 축약을 통한 에이전트 강화 학습 (likes: 82 -> 85)
+Updating paper: ABot-AgentOS: 평생 다중 모달 메모리를 갖는 일반적인 로봇 에이전트 운영 체제 (likes: 78 -> 83)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Jul 19 22:59:54 UTC 2026 ===
+

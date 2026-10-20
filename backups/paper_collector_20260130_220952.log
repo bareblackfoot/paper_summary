@@ -1,0 +1,123 @@
+=== Paper Collection Started at Thu Jan 29 22:11:13 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W05
+URL: https://huggingface.co/papers/week/2026-W05
+Found 10 papers in weekly view
+Fetching likes for: LongCat-Flash-Thinking-2601 Technical Report
+Fetching likes for: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Fetching likes for: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Fetching likes for: Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation
+Fetching likes for: AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security
+Fetching likes for: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Fetching likes for: Advancing Open-source World Models
+Fetching likes for: TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers
+Fetching likes for: Innovator-VL: A Multimodal Large Language Model for Scientific Discovery
+Fetching likes for: The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation
+Selected top 10 papers by likes:
+1. LongCat-Flash-Thinking-2601 Technical Report (161 likes)
+2. Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs (150 likes)
+3. daVinci-Dev: Agent-native Mid-training for Software Engineering (118 likes)
+4. Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation (93 likes)
+5. AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security (85 likes)
+6. SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents (78 likes)
+7. Advancing Open-source World Models (65 likes)
+8. TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers (57 likes)
+9. Innovator-VL: A Multimodal Large Language Model for Scientific Discovery (52 likes)
+10. The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation (50 likes)
+Found abstract: We introduce LongCat-Flash-Thinking-2601, a 560-billion-parameter open-source Mixture-of-Experts (Mo...
+Processed paper: LongCat-Flash-Thinking-2601 Technical Report
+Found abstract: Data preparation aims to denoise raw datasets, uncover cross-dataset relationships, and extract valu...
+Processed paper: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Found abstract: Recently, the frontier of Large Language Model (LLM) capabilities has shifted from single-turn code ...
+Processed paper: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) offers a robust mechanism for enhancing mathem...
+Processed paper: Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation
+Found abstract: The rise of AI agents introduces complex safety and security challenges arising from autonomous tool...
+Processed paper: AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security
+Found abstract: LLM agents have demonstrated remarkable capabilities in software development, but their performance ...
+Processed paper: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Found abstract: We present LingBot-World, an open-sourced world simulator stemming from video generation. Positioned...
+Processed paper: Advancing Open-source World Models
+Found abstract: Standard Vision-Language-Action (VLA) models typically fine-tune a monolithic Vision-Language Model ...
+Processed paper: TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers
+Found abstract: We present Innovator-VL, a scientific multimodal large language model designed to advance understand...
+Processed paper: Innovator-VL: A Multimodal Large Language Model for Scientific Discovery
+Found abstract: Recent advances in video generation have produced models capable of synthesizing stunning visual con...
+Processed paper: The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: LongCat-Flash-Thinking-2601 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 161  ->  156
+Update date_collected: 2026-01-30T07:11:21.408544+09:00  ->  2026-01-29T07:11:42.873854+09:00
+
+Processing paper 2/10
+Title: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 150  ->  138
+Update date_collected: 2026-01-30T07:11:21.410292+09:00  ->  2026-01-29T07:11:42.875587+09:00
+
+Processing paper 3/10
+Title: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Paper already exists, checking if translation is complete...
+Update likes: 118  ->  114
+Update date_collected: 2026-01-30T07:11:21.411941+09:00  ->  2026-01-29T07:11:42.877209+09:00
+
+Processing paper 4/10
+Title: Harder Is Better: Boosting Mathematical Reasoning via Difficulty-Aware GRPO and Multi-Aspect Question Reformulation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  60
+Update date_collected: 2026-01-30T07:11:21.415021+09:00  ->  2026-01-29T07:11:42.880410+09:00
+
+Processing paper 6/10
+Title: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Paper already exists, checking if translation is complete...
+Update likes: 78  ->  75
+Update date_collected: 2026-01-30T07:11:21.416382+09:00  ->  2026-01-29T07:11:42.878547+09:00
+
+Processing paper 7/10
+Title: Advancing Open-source World Models
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  56
+Update date_collected: 2026-01-30T07:11:21.419673+09:00  ->  2026-01-29T07:11:42.881800+09:00
+
+Processing paper 9/10
+Title: Innovator-VL: A Multimodal Large Language Model for Scientific Discovery
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  48
+Update date_collected: 2026-01-30T07:11:21.423226+09:00  ->  2026-01-29T07:11:42.883450+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W05.json...
+
+Updating Notion database...
+Updating paper: LongCat-Flash-Thinking-2601 기술 보고서 (likes: 156 -> 161)
+Updating paper: LLM이 정리 작업을 할 수 있을까? LLM을 활용한 응용준비 데이터 처리 조사 (likes: 138 -> 150)
+Updating paper: daVinci-Dev: 소프트웨어 공학을 위한 에이전트 기반 중간 학습 (likes: 114 -> 118)
+Creating new paper: 어렵게, 더 나아가기: 어려움 인식형 GRPO와 다면적 문제 재포장을 통한 수학적 추론 촉진
+Updating paper: AI 에이전트 안전 및 보안을 위한 진단 가드레일 프레임워크: AgentDoG (likes: 60 -> 85)
+Updating paper: SWE-Pruner: 코딩 에이전트용 자기 적응식 컨텍스트 가지치기 (likes: 75 -> 78)
+Creating new paper: 오픈소스 월드 모델의 발전
+Updating paper: TwinBrainVLA: 일반 VLM의 잠재력을 비대칭 Transformer 혼합을 통해 실체화된 작업에 발휘하기 (likes: 56 -> 57)
+Creating new paper: 혁신가-VL: 과학적 발견을 위한 다중모달 대형 언어 모델
+Updating paper: 대본만 필요합니다: 장거리 대화에서 시네마틱 비디오 생성을 위한 에이전트 기반 프레임워크 (likes: 48 -> 50)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jan 29 22:13:29 UTC 2026 ===
+

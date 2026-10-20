@@ -1,0 +1,36 @@
+[
+  {
+    "title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+    "abstract": "Video generation models have emerged as a promising paradigm for embodied world simulation. However, both general-domain video generators and robot-specific data fine-tuned models can still produce physically implausible manipulations, including discontinuous motion trajectories and inconsistent robot-object interactions, which limits their reliability as world simulators. Through extensive experiments, we find that such physical instability mainly arises from two factors: deformation of moving objects and implausible spatio-temporal correlations among interacting entities, particularly during contact. Building on this observation, we propose PhysisForcing, a scalable training framework that strengthens physical consistency by focusing supervision on physics-informative regions through joint optimization of pixel-level and semantic-level features. The framework consists of a pixel-level trajectory alignment loss, which supervises DiT features using reference point trajectories, and a semantic-level relational alignment loss, which aligns DiT features with inter-region relations extracted from a frozen video understanding encoder. Extensive experiments on R-Bench, PAI-Bench, and EZS-Bench show that PhysisForcing consistently improves embodied video generation over strong baselines, improving the Wan2.2-I2V-A14B and Cosmos3-Nano base models on R-Bench by 22.3\\% and 9.2\\% (7.1\\% and 3.7\\% over vanilla finetuning), with the Cosmos3-Nano variant attaining the best overall score. Beyond generation, as a world model under the WorldArena action-planner protocol it raises the closed-loop success rate from 16.0\\% to 24.0\\% and further improves downstream policy success, indicating that physically aligned video models yield stronger representations for robotic manipulation.",
+    "authors": [
+      "Peiwen Zhang",
+      "Yufan Deng",
+      "Shangkun Sun",
+      "Juncheng Ma",
+      "Duomin Wang",
+      "Jonas Du",
+      "Zilin Pan",
+      "Ye Huang",
+      "Hao Liang",
+      "Songyan Huang",
+      "Ruihua Zhang",
+      "Enze Xie",
+      "Ming-Yu Liu",
+      "Daquan Zhou"
+    ],
+    "likes": 0,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28128",
+    "date_collected": "2026-06-29T10:50:16.543657+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing",
+      "abstract": "비디오 생성 모델은 행위 세계 시뮬레이션에서 융합하는 유망한 패러다임으로 부상했다. 그러나, 일반 영역 비디오 생성기와 로봇 특정 데이터 미세 조정 모델 모두 불연속한 움직임 궤적과 일관성 없는 로봇-물체 상호작용을 포함한 물리적으로 그럴듯하지 않은 조작을 여전히 생성할 수 있어, 이는 그들을 세계 시뮬레이터로서의 신뢰성을 제한한다. 광범위한 실험을 통해 물리적 불안정성이 주로 이동 물체의 변형과 접촉 시간 동안 이동 엔티티들 간의 불가능한 시공간 상관성에서 비롯되는 것을 발견한다. 이 관찰을 기반으로 우리는 PhysisForcing이라는 확장 가능한 훈련 프레임워크를 제안한다."
+    },
+    "summary": "1. 물리적 불일치로 인한 영상 생성 모델의 한계를 극복하기 위해 PhysisForcing 훈련 프레임워크를 도입하였다.\n2. PhysisForcing은 물리적 일관성을 강화하기 위해 픽셀 수준의 궤적 정렬 손실과 의미 수준의 관계 정렬 손실을 결합한 것으로, 기존 벤치마크 모델들을 향상시킨다.\n3. 실험 결과는 PhysisForcing이 로봇 조작을 위한 더 강력한 표현을 제공하며, WorldArena 행동 계획자 프로토콜에서 닫힌 루프 성공률을 향상시킨다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning"
+    ]
+  }
+]

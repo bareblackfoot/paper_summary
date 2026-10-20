@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a standard approach for large language models (LLMs) post-training to incentivize reasoning capacity. Among existing recipes, group-based policy gradient is prevalent, which samples a group of responses per prompt and updates the policy via group-relative advantage signals. This work reveals that these optimization strategies share a common geometric structure: each implicitly defines a target distribution on the response simplex and projects toward it via first-order approximation. Building on this insight, we propose Listwise Policy Optimization (LPO) to explicitly conduct the target-projection, which demystifies the implicit target by restricting the proximal RL objective to the response simplex, and then projects the policy via exact divergence minimization. This framework provides (i) monotonic improvement on the listwise objective with bounded, zero-sum, and self-correcting projection gradients, and (ii) flexibility in divergence selection with distinct structural properties through the decoupled projection step. On diverse reasoning tasks and LLM backbones, LPO consistently improves training performance over typical policy gradient baselines under matched targets, while intrinsically preserving optimization stability and response diversity.",
+    "authors": [
+      "Yun Qu",
+      "Qi Wang",
+      "Yixiu Mao",
+      "Heming Zou",
+      "Yuhang Jiang",
+      "Yingyue Li",
+      "Wutong Xu",
+      "Lizhou Cai",
+      "Weijie Liu",
+      "Clive Bai",
+      "Kai Yang",
+      "Yangkun Chen",
+      "Saiyong Yang",
+      "Xiangyang Ji"
+    ],
+    "likes": 1,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2605.06139",
+    "date_collected": "2026-05-11T10:42:59.778465+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "목록형 정책 최적화: LLM 응답 단순체내에서의 그룹 기반 RLVR 타겟 투영",
+      "abstract": "검증 가능 보상(Verifiable Rewards)을 활용한 강화 학습(Reinforcement Learning)이 대규모 언어 모델(LLMs)에게 추론 능력을 인센티브화하는 표준 접근 방식이 되었습니다. 이 연구는 그룹 기반 정책 경사 방법이 흔히 쓰이는데, 이는 프롬프트 당 응답 그룹을 샘플링하고 상대적인 이점 신호를 통해 정책을 업데이트하는 것입니다. 이 연구는 이 최적화 전략이 공통 기하 구조를 공유한다는 것을 밝혀냅니다. 각 전략은 응답 단순체(response simplex)에서 목표 분포(target distribution)를 암묵적으로 정의하고, 첫 차 근사를 통해 해당 분포 방향으로 투영합니다. 이 통찰을 기반으로, 우리는 목록형 정책 최적화(LPO)를 제안하여 명시적으로 목표 투영을 수행합니다. 이는 근접 RL 목적을 응답 단순체로 제한하고, 이후 정확한 발산 최소화를 통해 정책을 투영합니다. 이 프레임워크는 리스트형 목적에 대한 일정한 개선을 제공하며, 유일하고 제로-합, 자가 수정 프로젝션 그래디언트로 경계가 있는, 최적화 안정성 및 응답 다양성을 지속적으로 유지합니다."
+    },
+    "summary": "1. 그룹 기반 정책 경사 방법은 응답 단순체 위에서 목표 분포를 암묵적으로 정의하고, 첫 차 근사를 통해 해당 방향으로 투영합니다.\n2. 목록형 정책 최적화(LPO)는 목표 투영을 명시적으로 수행하여 응답 단순체에 최적화를 제공하고 정책을 정확하게 투영합니다.\n3. LPO는 리스트형 목적에 대한 일정한 개선을 제공하며 최적화 안정성과 응답 다양성을 유지하면서 교육 성능을 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "IntentGrasp: A Comprehensive Benchmark for Intent Understanding",
+    "abstract": "Accurately understanding the intent behind speech, conversation, and writing is crucial to the development of helpful Large Language Model (LLM) assistants. This paper introduces IntentGrasp, a comprehensive benchmark for evaluating the intent understanding capability of LLMs. Derived from 49 high-quality, open-licensed corpora spanning 12 diverse domains, IntentGrasp is constructed through source datasets curation, intent label contextualization, and task format unification. IntentGrasp contains a large-scale training set of 262,759 instances and two evaluation sets: an All Set of 12,909 test cases and a more balanced and challenging Gem Set of 470 cases. Extensive evaluations on 20 LLMs across 7 families (including frontier models such as GPT-5.4, Gemini-3.1-Pro, and Claude-Opus-4.7) demonstrate unsatisfactory performance, with scores below 60% on All Set and below 25% on Gem set. Notably, 17 out of 20 tested models perform worse than a random-guess baseline (15.2%) on Gem Set, while the estimated human performance is ~81.1%, showing substantial room for improvement. To enhance such ability, this paper proposes Intentional Fine-Tuning (IFT), which fine-tunes the models on the training set in IntentGrasp, yielding significant gains of 30+ F1 points on All Set and 20+ points on Gem Set. Tellingly, the leave-one-domain-out (Lodo) experiments further demonstrate the strong cross-domain generalizability of IFT, verifying that it is a promising approach to substantially enhancing the intent understanding of LLMs. Overall, by benchmarking and boosting intent understanding ability, this study sheds light on a promising path towards more intentional, capable, and safe AI assistants for human benefits and social good.",
+    "authors": [
+      "Yuwei Yin",
+      "Chuyuan Li",
+      "Giuseppe Carenini"
+    ],
+    "likes": 1,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2605.06832",
+    "date_collected": "2026-05-11T10:42:59.779859+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "의도이해: 의도 이해를 위한 종합적인 평가 기준",
+      "abstract": "말, 대화, 글 뒤에 숨은 의도를 정확히 이해하는 것은 유익한 대규모 언어 모델(Large Language Model, LLM) 어시스턴트를 개발하는 데 중요합니다. 본 논문은 LLM의 의도 이해 능력을 평가하기 위한 종합적인 기준인 '의도이해(IntentGrasp)'를 소개합니다. 12가지 다양한 도메인에 걸쳐 49개의 고품질, 공개 라이선스 규모에서 유래된 IntentGrasp는 소스 데이터셋 선별, 의도 레이블 맥락화, 작업 형식 통합을 통해 구성되었습니다. IntentGrasp에는 262,759개의 대규모 학습 세트와 12,909개의 테스트 케이스를 포함한 'All Set', 그리고 보다 균형 잡히고 어려운 470개의 케이스로 이루어진 'Gem Set' 두 가지 평가 세트가 포함되어 있습니다. 7개의 패밀리를 포함한 20개의 LLM에 대한 광범위한 평가 결과, 성능은 All Set에서 60% 이하, Gem Set에서 25% 이하로 부족한 것으로 드러났습니다. 특히, 20개의 테스트된 모델 중 17개가 Gem Set에서 임의 추측 기준(15.2%)보다 낮은 결과를 보였으며, 인간의 성능은 약 81.1%로, 큰 개선余지를 보여주었습니다. 이 논문은 모델을 IntentGrasp의 학습 세트로 세밀하게 조정하는 'Intentional Fine-Tuning(IFT)'을 제안하여, All Set에서 30 포인트 이상의 F1 점수, Gem Set에서 20 점 이상의 상승을 이끌어 냈습니다. Lodo 실험 결과는 IFT의 강력한 교차 도메인 일반화 능력을 더 확인해주었으며, 이는 LLM의 의도 이해를 크게 향상시키는 유망한 접근 방법임을 입증합니다. 전반적으로, 의도 이해 능력의 평가와 향상을 통해 본 연구는 인간의 이익과 사회적 이익을 위한 의도적이고 능동적인 AI 어시스턴트에 대한 유망한 길을 밝힙니다."
+    },
+    "summary": "1. LLM 어시스턴트의 의도 이해 능력을 평가하기 위한 IntentGrasp 벤치마크가 소개됐으며, 다양한 도메인의 데이터를 활용하여 구축되었습니다.\n2. 다수의 LLM 모델이 IntentGrasp의 평가 세트에서 낮은 성능을 보여, 인간의 수준에 미치지 못하는 결과를 도출했습니다.\n3. 의도적인 세밀한 조정(IFT)을 통해 LLM 모델을 개선하여 크로스 도메인에서의 능력을 향상시킬 수 있음이 입증되었습니다.",
+    "categories": [
+      "LLM",
+      "기타(other)"
+    ]
+  },
+  {
+    "title": "MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference",
+    "abstract": "DeepSeek Sparse Attention (DSA) sets the state of the art for fine-grained inference-time sparse attention by introducing a learned token-wise indexer that scores every prefix token and selects the most relevant ones for the main attention. To remain expressive, the indexer uses many query heads (for example, 64 on DeepSeek-V3.2) that share the same selected token set; this multi-head design is precisely what makes the indexer the dominant cost on long contexts. We propose MISA (Mixture of Indexer Sparse Attention), a drop-in replacement for the DSA indexer that treats its indexer heads as a pool of mixture-of-experts. A lightweight router uses cheap block-level statistics to pick a query-dependent subset of only a few active heads, and only those heads run the heavy token-level scoring. This preserves the diversity of the original indexer pool while reducing the per-query cost from scoring every prefix token with every head to scoring it with only a handful of routed heads, plus a negligible router term computed on a small set of pooled keys. We further introduce a hierarchical variant of MISA that uses the routed pass to keep an enlarged candidate set and then re-ranks it with the original DSA indexer to recover the final selected tokens almost exactly. With only eight active heads and no additional training, MISA matches the dense DSA indexer on LongBench across DeepSeek-V3.2 and GLM-5 while running with eight and four times fewer indexer heads respectively, and outperforms HISA on average. It also preserves fully green Needle-in-a-Haystack heatmaps up to a 128K-token context and recovers more than 92% of the tokens selected by the DSA indexer per layer. Our TileLang kernel delivers roughly a 3.82 times speedup over DSA's original indexer kernel on a single NVIDIA H200 GPU.",
+    "authors": [
+      "Ruijie Zhou",
+      "Fanxu Meng",
+      "Yufei Xu",
+      "Tongxuan Liu",
+      "Guangming Lu",
+      "Muhan Zhang",
+      "Wenjie Pei"
+    ],
+    "likes": 0,
+    "published_date": "May 8",
+    "url": "https://huggingface.co/papers/2605.07363",
+    "date_collected": "2026-05-11T10:42:59.781517+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "DSA 대비 Long-Context LLM 추론을 위한 MISA: Mixture of Indexer Sparse Attention",
+      "abstract": "DeepSeek Sparse Attention (DSA)는 접두어 토큰마다 점수를 매기고 주요 관심사항을 위해 가장 관련성 높은 토큰을 선택하는 학습된 토큰 단위 인덱서를 도입하여 섬세한 추론 시간 희소 주의에 대한 최선의 결과를 제시한다. MISA (Mixture of Indexer Sparse Attention)를 제안하여 DSA 인덱서의 대체물로 소개한다. MISA는 인덱서 헤드를 전문가 집합의 풀로 취급하며 경량화된 라우터가 저렴한 블록 수준 통계를 사용하여 일부 활성 헤드의 하위 집합을 선택하고 해당 헤드만 무거운 토큰 수준 점수를 실행한다."
+    },
+    "summary": "1. DSA 대비 MISA는 적은 활성 헤드만 사용하여 더 효율적인 인덱싱을 제공하며 LongBench에서 성능을 향상시킨다.\n2. MISA의 계층적인 변형은 더 큰 후보 토큰 세트를 유지하고 원래 DSA 인덱서로 다시 순위를 매겨 거의 정확하게 선택된 토큰을 회복한다.\n3. MISA는 높은 효율성과 효율적인 성능을 제공하며 DSA 인덱서에 비해 속도 향상을 이룬다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

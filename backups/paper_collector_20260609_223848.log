@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Jun  8 22:38:01 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W24
+URL: https://huggingface.co/papers/week/2026-W24
+Found 10 papers in weekly view
+Fetching likes for: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Fetching likes for: SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations
+Fetching likes for: GENEB: Why Genomic Models Are Hard to Compare
+Fetching likes for: MMAE: A Massive Multitask Audio Editing Benchmark
+Fetching likes for: AnchorWorld: Embodied Egocentric World Simulation with View-based Evolution Customization
+Fetching likes for: Direct 3D-Aware Object Insertion via Decomposed Visual Proxies
+Fetching likes for: Robots Need More than VLA and World Models
+Fetching likes for: When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents
+Fetching likes for: OpenSkill: Open-World Self-Evolution for LLM Agents
+Fetching likes for: SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents
+Selected top 10 papers by likes:
+1. Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings (69 likes)
+2. SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations (42 likes)
+3. GENEB: Why Genomic Models Are Hard to Compare (42 likes)
+4. MMAE: A Massive Multitask Audio Editing Benchmark (39 likes)
+5. AnchorWorld: Embodied Egocentric World Simulation with View-based Evolution Customization (24 likes)
+6. Direct 3D-Aware Object Insertion via Decomposed Visual Proxies (22 likes)
+7. Robots Need More than VLA and World Models (20 likes)
+8. When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents (18 likes)
+9. OpenSkill: Open-World Self-Evolution for LLM Agents (17 likes)
+10. SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents (17 likes)
+Found abstract: Large language models exhibit impressive zero-shot capabilities across a wide range of downstream ta...
+Processed paper: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Found abstract: Evaluating LLM mediators remains challenging, as mediation unfolds as a real-time trajectory shaped ...
+Processed paper: SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations
+Found abstract: Progress in genomic foundation models is difficult to assess due to fragmented benchmarks, incompati...
+Processed paper: GENEB: Why Genomic Models Are Hard to Compare
+Found abstract: We introduce MMAE, a Massive Multitask Audio Editing benchmark, serving as the first comprehensive e...
+Processed paper: MMAE: A Massive Multitask Audio Editing Benchmark
+Found abstract: Despite being a pivotal frontier, interactive world modeling remains underexplored in terms of the v...
+Processed paper: AnchorWorld: Embodied Egocentric World Simulation with View-based Evolution Customization
+Found abstract: Object insertion aims to seamlessly composite a reference object into a specified region of a backgr...
+Processed paper: Direct 3D-Aware Object Insertion via Decomposed Visual Proxies
+Found abstract: Generalist robot intelligence is often framed as a policy-scaling problem: collect more robot demons...
+Processed paper: Robots Need More than VLA and World Models
+Found abstract: Existing benchmarks evaluate Tool-Integrated Reasoning (TIR) in LLMs on idealized ''happy paths'', l...
+Processed paper: When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents
+Found abstract: Self-evolving agents requires adaptation after deployment, but existing approaches assume a usable l...
+Processed paper: OpenSkill: Open-World Self-Evolution for LLM Agents
+Found abstract: Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over lo...
+Processed paper: SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: GENEB: Why Genomic Models Are Hard to Compare
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: MMAE: A Massive Multitask Audio Editing Benchmark
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: AnchorWorld: Embodied Egocentric World Simulation with View-based Evolution Customization
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Direct 3D-Aware Object Insertion via Decomposed Visual Proxies
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Robots Need More than VLA and World Models
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: OpenSkill: Open-World Self-Evolution for LLM Agents
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W24.json...
+
+Updating Notion database...
+Creating new paper: 텍스트 임베딩을 위한 숨겨진 특징 렌즈인 당신의 비임베딩 행렬
+Creating new paper: 다양한 도메인과 사회인지적 변이를 고려한 신뢰할 수 있는 프로액티브 LLM 중재의 자동평가를 향하여 (Proactive LLM Mediation의 Reliable Automated Evaluation을 위한 SoCRATES)
+Creating new paper: 유전체 모델의 비교가 어려운 이유
+Creating new paper: **MMAE: 대규모 멀티태스크 오디오 편집 벤치마크**
+Creating new paper: 앵커월드: 시각 기반 진화 맞춤화를 통한 몸속 세계 시뮬레이션
+Creating new paper: 3D 인식 물체 삽입을 위한 직접적인 접근 방식: 분해된 시각적 프록시를 통해
+Creating new paper: 로봇은 VLA와 세계 모델 이상이 필요하다
+Creating new paper: 도구의 실패 시: LLM 에이전트의 동적 재계획과 이상 복구 벤치마킹
+Creating new paper: 오픈스킬: LLM 에이전트를 위한 오픈 월드 자기 진화
+Creating new paper: SubtleMemory: 긴 시간 대 AI 에이전트에서 세밀한 관계 기억 식별을 위한 벤치마크
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun  8 22:39:38 UTC 2026 ===
+

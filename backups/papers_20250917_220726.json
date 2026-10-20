@@ -1,0 +1,298 @@
+[
+  {
+    "title": "OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling",
+    "abstract": "The field of 4D world modeling - aiming to jointly capture spatial geometry\nand temporal dynamics - has witnessed remarkable progress in recent years,\ndriven by advances in large-scale generative models and multimodal learning.\nHowever, the development of truly general 4D world models remains fundamentally\nconstrained by the availability of high-quality data. Existing datasets and\nbenchmarks often lack the dynamic complexity, multi-domain diversity, and\nspatial-temporal annotations required to support key tasks such as 4D geometric\nreconstruction, future prediction, and camera-control video generation. To\naddress this gap, we introduce OmniWorld, a large-scale, multi-domain,\nmulti-modal dataset specifically designed for 4D world modeling. OmniWorld\nconsists of a newly collected OmniWorld-Game dataset and several curated public\ndatasets spanning diverse domains. Compared with existing synthetic datasets,\nOmniWorld-Game provides richer modality coverage, larger scale, and more\nrealistic dynamic interactions. Based on this dataset, we establish a\nchallenging benchmark that exposes the limitations of current state-of-the-art\n(SOTA) approaches in modeling complex 4D environments. Moreover, fine-tuning\nexisting SOTA methods on OmniWorld leads to significant performance gains\nacross 4D reconstruction and video generation tasks, strongly validating\nOmniWorld as a powerful resource for training and evaluation. We envision\nOmniWorld as a catalyst for accelerating the development of general-purpose 4D\nworld models, ultimately advancing machines' holistic understanding of the\nphysical world.",
+    "authors": [
+      "Yang Zhou",
+      "Yifan Wang",
+      "Jianjun Zhou",
+      "Wenzheng Chang",
+      "Haoyu Guo",
+      "Zizun Li",
+      "Kaijing Ma",
+      "Xinyue Li",
+      "Yating Wang",
+      "Haoyi Zhu",
+      "Mingyu Liu",
+      "Dingning Liu",
+      "Jiange Yang",
+      "Zhoujie Fu",
+      "Junyi Chen",
+      "Chunhua Shen",
+      "Jiangmiao Pang",
+      "Kaipeng Zhang",
+      "Tong He"
+    ],
+    "likes": 72,
+    "published_date": "Sep 15",
+    "url": "https://huggingface.co/papers/2509.12201",
+    "date_collected": "2025-09-17T07:07:36.695868+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "옴니월드: 4D 세계 모델링을 위한 멀티 도메인 및 멀티 모달 데이터셋",
+      "abstract": "공간 지오메트리와 시간 역동성을 함께 포착하는 4D 세계 모델링 분야는 큰 규모의 생성 모델 및 멀티모달 학습의 발전으로 최근 몇 년간 놀라운 진전을 만들어냈다. 그러나 실제로 일반적인 4D 세계 모델의 개발은 고품질 데이터의 제공에 근본적으로 제약을 받는다. 기존 데이터셋과 벤치마크는 종종 4D 기하학적 재구성, 미래 예측 및 카메라 제어 비디오 생성과 같은 주요 작업을 지원하는 데 필요한 동적 복잡성, 멀티 도메인 다양성 및 공간-시간 주석이 부족하다. 이러한 공백을 해소하기 위해 4D 세계 모델링을 위해 특별히 설계된 대규모, 멀티 도메인, 멀티 모달 데이터셋인 OmniWorld를 소개한다."
+    },
+    "summary": "1. 최근 4D 세계 모델링 분야는 대규모 생성 모델과 멀티모달 학습의 발전으로 발전했으나 일반적인 4D 세계 모델의 개발은 데이터 부족으로 어려움을 겪고 있음.\n2. OmniWorld는 멀티 도메인, 멀티 모달 데이터셋으로, 4D 세계 모델링을 위해 동적 복잡성과 현실적 상호작용을 포함하고 있으며, SOTA 방법의 성능 향상을 보여줌.\n3. OmniWorld는 4D 환경 모델링 및 비디오 생성 작업에서 기존 SOTA 방법의 성능을 대폭 향상시켜 일반적인 4D 세계 모델 개발을 가속화시키는 강력한 자원으로 작용.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning",
+    "abstract": "Graphical User Interface (GUI) agents have demonstrated remarkable progress\nin automating complex user interface interactions through reinforcement\nlearning. However, current approaches face a fundamental dilemma: offline RL\nenables stable training on pre-collected trajectories, but struggles with\nmulti-step task execution for lack of trajectory-level reward signals; online\nRL captures these signals through environment interaction, but suffers from\nsparse rewards and prohibitive deployment costs. To address it, we present\nSemi-online Reinforcement Learning, a novel paradigm that simulates online RL\non offline trajectories. During each rollout process, we preserve the original\nmodel output within the multi-turn dialogue, where a Patch Module adaptively\nrecovers the divergence between rollout and expert trajectories. To capture\nlong-term training signals, Semi-online RL introduces discounted future returns\ninto the reward computation and optimizes the policy with weighted step-level\nand episode-level advantages. We further introduce Semi-Online Performance\n(SOP), a metric that aligns better with true online performance, serving as a\npractical and effective proxy for real-world evaluation. Experiments show that\nours Semi-online RL achieves SOTA performance among 7B models across four\ndynamic benchmarks, with significant gains over the base model (e.g., +12.0% on\nAndroidWorld, +23.8% on AITW), demonstrating significant progress in bridging\nthe gap between offline training efficiency and online multi-turn reasoning.\nThe code is available at https://github.com/X-PLUG/MobileAgent/tree/main/UI-S1.",
+    "authors": [
+      "Zhengxi Lu",
+      "Jiabo Ye",
+      "Fei Tang",
+      "Yongliang Shen",
+      "Haiyang Xu",
+      "Ziwei Zheng",
+      "Weiming Lu",
+      "Ming Yan",
+      "Fei Huang",
+      "Jun Xiao",
+      "Yueting Zhuang"
+    ],
+    "likes": 33,
+    "published_date": "Sep 15",
+    "url": "https://huggingface.co/papers/2509.11543",
+    "date_collected": "2025-09-17T07:07:36.697277+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "UI-S1: 준온라인 강화학습을 통한 GUI 자동화 발전",
+      "abstract": "그래픽 사용자 인터페이스(GUI) 에이전트들은 강화 학습을 통해 복잡한 사용자 인터페이스 상호작용을 자동화하는 데 놀라운 진전을 보였습니다. 그러나 현재의 접근법은 기본적인 딜레마에 직면해 있습니다. 오프라인 강화학습은 사전 수집된 궤적에서 안정적인 훈련을 가능케하지만 다단계 작업 수행에 어려움을 겪는데, 그 이유는 궤적 수준의 보상 신호가 부족하기 때문입니다. 온라인 강화학습은 이러한 신호를 환경 상호작용을 통해 캡처하지만 드문 보상과 나가도 높은 비용으로 고통받습니다. 이 문제를 해결하기 위해 저희는 준온라인 강화학습을 제시합니다. 이는 오프라인 궤적에서 온라인 강화학습을 시뮬레이트하는 새로운 패러다임입니다. 각 rollout 과정에서 Patch Module을 통해 롤 아웃과 전문가 궤적 간의 차이를 적응적으로 복원합니다. 장기적인 훈련 신호를 캡처하기 위해 준온라인 강화학습은 할인된 미래 보상을 보상 계산에 도입하고 가중치 부여된 단계 및 에피소드 수준 장점으로 정책을 최적화합니다. 저희는 진정한 온라인 성능과 더 잘 일치하는 측정 지표인 Semi-Online Performance(SOP)를 소개하여 실제 평가에 유용하고 효과적인 대리자 역할을 합니다. 실험 결과, 저희의 준온라인 강화학습은 7B 모델 중에서 네 가지 동적 벤치마크에서 강화학습의 최첨단 성능을 달성하며(예: AndroidWorld에서 +12.0%, AITW에서 +23.8% 증가), 오프라인 훈련 효율과 온라인 다단계 추론 사이의 간격을 줄이는 중요한 진전을 나타냅니다. 코드는 https://github.com/X-PLUG/MobileAgent/tree/main/UI-S1 에서 확인할 수 있습니다."
+    },
+    "summary": "1. UI-S1은 GUI 자동화에서 오프라인 훈련 효율과 온라인 다단계 추론 간의 간극을 줄이는 준온라인 강화학습 기법을 소개합니다.\n2. 새로운 Semi-Online Performance(SOP) 지표가 진정한 온라인 성능을 더 잘 반영하여, 효과적인 실제 성능 대리자로 작용합니다.\n3. 실험 결과, UI-S1은 네 가지 동적 벤치마크에서 7B 모델 중 최상의 성능을 보여주며, AndroidWorld에서 +12.0%, AITW에서 +23.8%의 성능 향상을 달성했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Illusion of Diminishing Returns: Measuring Long Horizon Execution in\n  LLMs",
+    "abstract": "Does continued scaling of large language models (LLMs) yield diminishing\nreturns? Real-world value often stems from the length of task an agent can\ncomplete. We start this work by observing the simple but counterintuitive fact\nthat marginal gains in single-step accuracy can compound into exponential\nimprovements in the length of a task a model can successfully complete. Then,\nwe argue that failures of LLMs when simple tasks are made longer arise from\nmistakes in execution, rather than an inability to reason. We propose isolating\nexecution capability, by explicitly providing the knowledge and plan needed to\nsolve a long-horizon task. We find that larger models can correctly execute\nsignificantly more turns even when small models have 100\\% single-turn\naccuracy. We observe that the per-step accuracy of models degrades as the\nnumber of steps increases. This is not just due to long-context limitations --\ncuriously, we observe a self-conditioning effect -- models become more likely\nto make mistakes when the context contains their errors from prior turns.\nSelf-conditioning does not reduce by just scaling the model size. In contrast,\nrecent thinking models do not self-condition, and can also execute much longer\ntasks in a single turn. We conclude by benchmarking frontier thinking models on\nthe length of task they can execute in a single turn. Overall, by focusing on\nthe ability to execute, we hope to reconcile debates on how LLMs can solve\ncomplex reasoning problems yet fail at simple tasks when made longer, and\nhighlight the massive benefits of scaling model size and sequential test-time\ncompute for long-horizon tasks.",
+    "authors": [
+      "Akshit Sinha",
+      "Arvindh Arun",
+      "Shashwat Goel",
+      "Steffen Staab",
+      "Jonas Geiping"
+    ],
+    "likes": 25,
+    "published_date": "Sep 11",
+    "url": "https://huggingface.co/papers/2509.09677",
+    "date_collected": "2025-09-17T07:07:36.698397+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "감소 수익의 환상: LLM에서의 장기 실행 측정",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)의 계속된 확장이 감소하는 가치를 가져오는가? 실제 가치는 주어진 작업을 완료하는 데 걸리는 시간에서 나타납니다. 본 연구는 단일 단계 정확도의 경계적 이익이 모델이 성공적으로 완료할 수 있는 작업의 길이에 기하급수적인 개선으로 이어질 수 있다는 간단하지만 직관에 반하는 사실을 관찰함으로 시작합니다. 그리고 한 번의 단순한 작업이 길어질 때 LLMs의 실패가 이해 능력 부족이 아닌 실행 중의 오류에서 비롯되는 것을 주장합니다."
+    },
+    "summary": "1. 단일 단계 정확도의 증가가 작업의 길이에 지수적인 개선으로 이어질 수 있다.\n2. LLMs의 실패는 실행 중의 오류에서 비롯되는데, 실제로 문제 해결을 위한 지식과 계획을 제공함으로써 실행 능력을 고립시킬 수 있다.\n3. 모델의 단계별 정확도는 단계 수가 증가할수록 저하되는데, 모델은 자신의 이전 단계에서의 오류를 포함하는 문맥을 가질 때 실수 가능성이 더 높아지는 자체 조건화 효과를 관찰할 수 있다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis",
+    "abstract": "Arbitrary resolution image generation provides a consistent visual experience\nacross devices, having extensive applications for producers and consumers.\nCurrent diffusion models increase computational demand quadratically with\nresolution, causing 4K image generation delays over 100 seconds. To solve this,\nwe explore the second generation upon the latent diffusion models, where the\nfixed latent generated by diffusion models is regarded as the content\nrepresentation and we propose to decode arbitrary resolution images with a\ncompact generated latent using a one-step generator. Thus, we present the\nInfGen, replacing the VAE decoder with the new generator, for\ngenerating images at any resolution from a fixed-size latent without retraining\nthe diffusion models, which simplifies the process, reducing computational\ncomplexity and can be applied to any model using the same latent space.\nExperiments show InfGen is capable of improving many models into the arbitrary\nhigh-resolution era while cutting 4K image generation time to under 10 seconds.",
+    "authors": [
+      "Tao Han",
+      "Wanghan Xu",
+      "Junchao Gong",
+      "Xiaoyu Yue",
+      "Song Guo",
+      "Luping Zhou",
+      "Lei Bai"
+    ],
+    "likes": 24,
+    "published_date": "Sep 12",
+    "url": "https://huggingface.co/papers/2509.10441",
+    "date_collected": "2025-09-17T07:07:36.699606+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "해상도 무관한 확장 가능한 이미지 합성을 위한 InfGen 패러다임",
+      "abstract": "임의의 해상도 이미지 생성은 디바이스 간 일관된 시각적 경험을 제공하며, 생산자와 소비자에게 광범위한 응용이 있습니다. 현재 확산 모델은 해상도에 따라 계산 수요가 이차적으로 증가하여, 4K 이미지 생성이 100초 넘게 지연됩니다. 이를 해결하기 위해, 우리는 임의의 해상도 이미지를 한 단계 생성기를 사용해 고정된 크기의 잠재 공간에서 해석하는 둘째 세대의 확산 모델을 탐구합니다. 이에 따라 VAE 디코더를 새로운 생성기로 대체하여, 확산 모델을 다시 교육하지 않고 고정된 크기의 잠재 공간에서 임의의 해상도 이미지를 디코딩 합니다. 결과적으로 InfGen을 제안하게 되었으며, 이는 프로세스를 간소화하여 계산 복잡성을 줄이며, 동일한 잠재 공간을 사용하는 모든 모델에 적용할 수 있습니다. 실험 결과 InfGen은 4K 이미지 생성 시간을 10초 미만으로 줄이면서 많은 모델을 임의의 고해상도 시대로 발전시킬 수 있는 능력을 갖추었습니다."
+    },
+    "summary": "1. 현재의 해상도를 고려하지 않는 이미지 생성 모델인 InfGen은 임의의 고해상도 이미지 생성을 가능케하며, 이미지 생성 시간을 현저히 단축시키는 새로운 생성기를 제안합니다.\n2. InfGen은 고정된 크기의 잠재 공간에서 임의의 해상도 이미지를 해석하므로, 모든 모델에 확산 모델의 추가 교육 없이 적용할 수 있습니다.\n3. 실험 결과, InfGen은 4K 이미지 생성 지연 시간을 10초 미만으로 단축하고 많은 모델을 고해상도 이미지 생성 가능한 시대로 전환할 수 있는 능력을 입증했습니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "InternScenes: A Large-scale Simulatable Indoor Scene Dataset with\n  Realistic Layouts",
+    "abstract": "The advancement of Embodied AI heavily relies on large-scale, simulatable 3D\nscene datasets characterized by scene diversity and realistic layouts. However,\nexisting datasets typically suffer from limitations in data scale or diversity,\nsanitized layouts lacking small items, and severe object collisions. To address\nthese shortcomings, we introduce InternScenes, a novel large-scale\nsimulatable indoor scene dataset comprising approximately 40,000 diverse scenes\nby integrating three disparate scene sources, real-world scans, procedurally\ngenerated scenes, and designer-created scenes, including 1.96M 3D objects and\ncovering 15 common scene types and 288 object classes. We particularly preserve\nmassive small items in the scenes, resulting in realistic and complex layouts\nwith an average of 41.5 objects per region. Our comprehensive data processing\npipeline ensures simulatability by creating real-to-sim replicas for real-world\nscans, enhances interactivity by incorporating interactive objects into these\nscenes, and resolves object collisions by physical simulations. We demonstrate\nthe value of InternScenes with two benchmark applications: scene layout\ngeneration and point-goal navigation. Both show the new challenges posed by the\ncomplex and realistic layouts. More importantly, InternScenes paves the way for\nscaling up the model training for both tasks, making the generation and\nnavigation in such complex scenes possible. We commit to open-sourcing the\ndata, models, and benchmarks to benefit the whole community.",
+    "authors": [
+      "Weipeng Zhong",
+      "Peizhou Cao",
+      "Yichen Jin",
+      "Li Luo",
+      "Wenzhe Cai",
+      "Jingli Lin",
+      "Hanqing Wang",
+      "Zhaoyang Lyu",
+      "Tai Wang",
+      "Bo Dai",
+      "Xudong Xu",
+      "Jiangmiao Pang"
+    ],
+    "likes": 22,
+    "published_date": "Sep 13",
+    "url": "https://huggingface.co/papers/2509.10813",
+    "date_collected": "2025-09-17T07:07:36.701059+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "InternScenes: 현실적인 레이아웃을 갖춘 대규모 시뮬레이션 가능한 실내 장면 데이터셋",
+      "abstract": "태체된 AI(Embodied AI)의 발전은 장면 다양성과 현실적인 레이아웃으로 특징 지어진 대규모 시뮬레이션 가능한 3D 장면 데이터셋에 심종한. 그러나 기존의 데이터셋은 일반적으로 데이터 규모나 다양성에 제한을 받거나 소규모 항목이 부족한 정돈된 레이아웃, 심한 물체 충돌과 같은 제약 사항이 있습니다. 이러한 한계를 해결하기 위해 InternScenes를 도입하는데, 이는 대략 40,000개의 다양한 장면으로 이루어진 새로운 대규모 실내 장면 데이터셋이며, 실제 스캔 데이터, 절차적으로 생성된 장면 및 디자이너가 만든 장면이라는 세 가지 다른 출처의 장면을 통합하여 만들어졌으며, 15가지 일반적인 장면 유형과 288가지 물체 클래스를 포함하고 있습니다. 우리는 특히 장면 내 작은 항목들을 완전히 보존하여 장면당 평균 41.5개의 물체가 포함된 현실적이고 복잡한 레이아웃을 얻었습니다. 우리의 종합적인 데이터 처리 파이프라인은 실제 스캔의 실세계와 시뮬레이션된 복제본을 만들어 시뮬레이션 가능성을 보장하고, 대화형 물체들을 이러한 장면에 통합함으로써 상호 작용성을 높이고 물체 충돌을 물리학 시뮬레이션으로 해결합니다. InternScenes의 가치를 두 가지 벤치마크 응용 프로그램인 장면 레이아웃 생성 및 지점-목표 네비게이션을 통해 보여 주었습니다. 두 가지 모두 복잡하고 현실적인 레이아웃이 초래하는 새로운 도전을 보여줍니다. 더 중요한 것은 InternScenes가 두 작업 모두의 모델 트레이닝을 확장하여 이러한 복잡한 장면에서의 생성 및 네비게이션을 가능하게 하는 길을 열어두었다는 것입니다. 우리는 데이터, 모델 및 벤치마크를 공개하여 전체 커뮤니티에 혜택을 주기로 했습니다."
+    },
+    "summary": "1. InternScenes는 실내 장면 데이터셋으로, 다양한 장면과 1.96백만 개의 3D 물체, 15가지 장면 유형, 288가지 물체 클래스를 포함하여 현실적이고 복잡한 레이아웃을 제공합니다.\n2. 데이터 처리 과정은 실세계 스캔의 시뮬레이션 가능성, 대화형 물체의 삽입, 물리학 시뮬레이션을 통해 물체 충돌 문제를 해결하며 시뮬레이션 가능성과 상호 작용성을 보장합니다.\n3. InternScenes는 장면 레이아웃 생성 및 지점-목표 네비게이션을 위한 두 가지 벤치마크 응용 프로그램을 통해 복잡하고 현실적인 레이아웃이 제기하는 새로운 도전을 보여주며 이러한 복잡한 장면에서의 모델 트레이닝을 확장함으로써 생성과 네비게이션을 가능케 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "IntrEx: A Dataset for Modeling Engagement in Educational Conversations",
+    "abstract": "Engagement and motivation are crucial for second-language acquisition, yet\nmaintaining learner interest in educational conversations remains a challenge.\nWhile prior research has explored what makes educational texts interesting,\nstill little is known about the linguistic features that drive engagement in\nconversations. To address this gap, we introduce IntrEx, the first large\ndataset annotated for interestingness and expected interestingness in\nteacher-student interactions. Built upon the Teacher-Student Chatroom Corpus\n(TSCC), IntrEx extends prior work by incorporating sequence-level annotations,\nallowing for the study of engagement beyond isolated turns to capture how\ninterest evolves over extended dialogues. We employ a rigorous annotation\nprocess with over 100 second-language learners, using a comparison-based rating\napproach inspired by reinforcement learning from human feedback (RLHF) to\nimprove agreement. We investigate whether large language models (LLMs) can\npredict human interestingness judgments. We find that LLMs (7B/8B parameters)\nfine-tuned on interestingness ratings outperform larger proprietary models like\nGPT-4o, demonstrating the potential for specialised datasets to model\nengagement in educational settings. Finally, we analyze how linguistic and\ncognitive factors, such as concreteness, comprehensibility (readability), and\nuptake, influence engagement in educational dialogues.",
+    "authors": [
+      "Xingwei Tan",
+      "Mahathi Parvatham",
+      "Chiara Gambi",
+      "Gabriele Pergola"
+    ],
+    "likes": 22,
+    "published_date": "Sep 8",
+    "url": "https://huggingface.co/papers/2509.06652",
+    "date_collected": "2025-09-17T07:07:36.702132+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "교육 대화에서 참여 모델링을 위한 데이터셋 IntrEx",
+      "abstract": "참여와 동기 부여는 제2언어 습득에 중요하나, 학습자의 흥미를 유지하는 것은 여전히 도전이다. 이전 연구에서는 교육 텍스트를 흥미롭게 만드는 요소를 탐구해왔지만, 대화에서 참여를 촉진하는 언어적 요소에 대해 알려진 지식은 적다. 이 간극을 해소하기 위해 우리는 교사-학생 상호작용에서 흥미로움과 예상 흥미로움을 주석달린 첫 번째 대형 데이터셋인 IntrEx를 소개한다. TSCC를 기반으로 구축된 IntrEx는 이전 작업을 확장하여 순서 수준 주석을 통합함으로써, 흥미가 어떻게 발전하는지를 포착하기 위해 고립된 대화 턴을 넘어 확장된 대화에서 흥미를 연구할 수 있도록 한다. 우리는 RLHF로부터 영감을 받은 비교 기반 평가 방식을 사용하여 100명 이상의 제2언어 학습자와 함께 엄격한 주석 프로세스를 시행하여 합의를 개선했다. 우리는 LLMs가 인간의 흥미 판단을 예측할 수 있는지 조사했다. 우리는 흥미 평가에 맞춰 세밀하게 조정된 LLMs(7B/8B 매개변수)가 GPT-4o와 같은 더 큰 고유 모델을 능가함을 발견했으며, 교육 환경에서 참여를 모델링하는 전문 데이터셋의 잠재력을 입증했다. 마지막으로, 구상성, 가독성 및 이해 수정과 같은 언어적 요소 및 인지적 요소가 교육 대화에서 참여에 어떻게 영향을 미치는지 분석한다."
+    },
+    "summary": "1. 교육 대화에서 흥미 모델링을 위한 첫 번째 대형 데이터셋인 IntrEx 소개\n2. LLMs가 인간의 흥미 평가를 예측하는 능력 및 특정 데이터셋이 교육 환경에서 참여를 모델링하는 데 잠재력을 보여줌\n3. 언어적 및 인지적 요소가 교육 대화에서 참여에 영향을 미치는 방식 분석",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "X-Part: high fidelity and structure coherent shape decomposition",
+    "abstract": "Generating 3D shapes at part level is pivotal for downstream applications\nsuch as mesh retopology, UV mapping, and 3D printing. However, existing\npart-based generation methods often lack sufficient controllability and suffer\nfrom poor semantically meaningful decomposition. To this end, we introduce\nX-Part, a controllable generative model designed to decompose a holistic 3D\nobject into semantically meaningful and structurally coherent parts with high\ngeometric fidelity. X-Part exploits the bounding box as prompts for the part\ngeneration and injects point-wise semantic features for meaningful\ndecomposition. Furthermore, we design an editable pipeline for interactive part\ngeneration. Extensive experimental results show that X-Part achieves\nstate-of-the-art performance in part-level shape generation. This work\nestablishes a new paradigm for creating production-ready, editable, and\nstructurally sound 3D assets. Codes will be released for public research.",
+    "authors": [
+      "Xinhao Yan",
+      "Jiachen Xu",
+      "Yang Li",
+      "Changfeng Ma",
+      "Yunhan Yang",
+      "Chunshi Wang",
+      "Zibo Zhao",
+      "Zeqiang Lai",
+      "Yunfei Zhao",
+      "Zhuo Chen",
+      "Chunchao Guo"
+    ],
+    "likes": 21,
+    "published_date": "Sep 10",
+    "url": "https://huggingface.co/papers/2509.08643",
+    "date_collected": "2025-09-17T07:07:36.703491+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "X-Part: 고운 형태 분해를 위한 높은 정밀도와 구조 일관성",
+      "abstract": "3D 개체의 부분 수준에서 형태를 생성하는 것은 메시 재탑오토피, UV 맵핑 및 3D 프린팅과 같은 하류 응용 프로그램에 중요합니다. 그러나 기존의 부분 기반 생성 방법은 종종 충분한 가용성이 없으며 의미 있는 의미론적 분해에 고통받습니다. 이에 우리는 고기하고 기하학적 충실도가 높은 의미론적 의미 있는 부분으로 전체적인 3D 객체를 분해하는 제어 가능한 생성 모델인 X-Part를 소개합니다. X-Part는 부분 생성을 위해 바운딩 박스를 프롬프트로 활용하고 의미 있는 분해를 위해 점별 의미 특징을 주입합니다. 더불어 상호 작용적인 부분 생성을 위한 편집 가능한 파이프라인을 설계했습니다. 광범위한 실험 결과는 X-Part가 부분 수준 형태 생성에서 최첨단 성능을 달성한다는 것을 보여줍니다. 본 연구는 공개 연구를 위해 코드를 공개할 예정입니다."
+    },
+    "summary": "1. X-Part는 3D 객체를 의미 있는 부분으로 분해하여 높은 정밀도와 구조적 일관성을 제공하는 제어 가능한 생성 모델이다.\n2. 바운딩 박스를 활용해 부분 생성에 도움을 주고, 점별 의미 특징을 이용해 의미 있는 분해를 가능케 한다.\n3. 실험 결과는 X-Part가 부분 수준 형태 생성에서 성능이 우수하며, 수정 가능하고 구조적으로 안정된 3D 자산을 생성하기 위한 새로운 패러다임을 제시한다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Virtual Agent Economies",
+    "abstract": "The rapid adoption of autonomous AI agents is giving rise to a new economic\nlayer where agents transact and coordinate at scales and speeds beyond direct\nhuman oversight. We propose the \"sandbox economy\" as a framework for analyzing\nthis emergent system, characterizing it along two key dimensions: its origins\n(emergent vs. intentional) and its degree of separateness from the established\nhuman economy (permeable vs. impermeable). Our current trajectory points toward\na spontaneous emergence of a vast and highly permeable AI agent economy,\npresenting us with opportunities for an unprecedented degree of coordination as\nwell as significant challenges, including systemic economic risk and\nexacerbated inequality. Here we discuss a number of possible design choices\nthat may lead to safely steerable AI agent markets. In particular, we consider\nauction mechanisms for fair resource allocation and preference resolution, the\ndesign of AI \"mission economies\" to coordinate around achieving collective\ngoals, and socio-technical infrastructure needed to ensure trust, safety, and\naccountability. By doing this, we argue for the proactive design of steerable\nagent markets to ensure the coming technological shift aligns with humanity's\nlong-term collective flourishing.",
+    "authors": [
+      "Nenad Tomasev",
+      "Matija Franklin",
+      "Joel Z. Leibo",
+      "Julian Jacobs",
+      "William A. Cunningham",
+      "Iason Gabriel",
+      "Simon Osindero"
+    ],
+    "likes": 20,
+    "published_date": "Sep 12",
+    "url": "https://huggingface.co/papers/2509.10147",
+    "date_collected": "2025-09-17T07:07:36.704707+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "가상 에이전트 경제학",
+      "abstract": "자율적 인공지능(AI) 에이전트의 신속한 채택은 직접적인 인간 감시를 넘어 에이전트들이 규모와 속도로 거래하고 조정하는 새로운 경제적 계층을 탄생시키고 있다. 우리는 이 새로운 시스템을 분석하는 데 \"모래상 경제\"를 제안하며, 그 기저를 (자발적 vs. 의도적)과 확립된 인간 경제와의 분리 정도 (투과성 vs. 비투과성)라는 두 가지 중요한 차원을 특성화하고 있다. 우리의 현재 궤적은 거대하고 매우 투과성 있는 AI 에이전트 경제의 자발적 발생으로 이어지고 있으며, 우리에게 전례 없는 조정 정도와 시스템적 경제적 위험 및 심화된 불평등과 같은 중요한 과제들을 제시하고 있다. 여기에서 우리는 안전하게 조정 가능한 AI 에이전트 시장으로 이끌 수 있는 여러 디자인 선택지들을 논의하고 있다. 특히, 우리는 공정한 자원 할당 및 선호도 해결을 위한 경매 메커니즘, 집단 목표 달성을 위해 조정하는 AI \"미션 경제\"의 디자인, 신뢰, 안전 및 책임성을 보장하는 사회 기술적 인프라가 필요하다고 본다. 이를 통해 우리는 인류의 장기적 집단 번영과 일치하는 기술적 변화를 보장하기 위해 조절 가능한 에이전트 시장의 선도적인 디자인을 주장한다."
+    },
+    "summary": "1. 자율적 AI 에이전트의 빠른 채택은 새로운 경제적 계층을 만들어내고 있으며, \"모래상 경제\"를 제안하여 이를 분석한다.\n2. 현재의 궤적은 거대하고 매우 투과성 있는 AI 에이전트 경제의 자발적 발생을 예상하고 있으며, 이는 조정의 기회와 경제적 위험, 불평등 증대와 같은 중요한 도전을 제기한다.\n3. 안전하게 조정 가능한 AI 에이전트 시장을 위한 경매 메커니즘, \"미션 경제\" 디자인, 사회 기술적 인프라의 중요성을 강조하며, 조절 가능한 에이전트 시장의 선도적 디자인의 필요성을 주장한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Interpretable Physics Reasoning and Performance Taxonomy in\n  Vision-Language Models",
+    "abstract": "As Vision-Language Models (VLMs) grow in sophistication, their ability to\nperform reasoning is coming under increasing supervision. While they excel at\nmany tasks, their grasp of fundamental scientific principles, such as physics,\nremains an underexplored frontier. To reflect the advancements in these\ncapabilities, we introduce a novel and accessible framework designed to\nrigorously evaluate VLMs on their understanding of 2D physics. Our framework\nfeatures a pragmatic scenario generator that creates a diverse testbed of over\n400 problems across four core domains: Projectile Motion, Collision Dynamics,\nMechanics, and Fluid Dynamics. Through comprehensive evaluation of four\nstate-of-the-art VLMs, we demonstrate a strong correlation between model scale\nand reasoning ability, with our top-performing model, Qwen2.5-VL-7B, achieving\nan overall score of 0.815. We find that while models excel at formulaic\nproblems, they struggle significantly with domains requiring abstract spatial\nreasoning. By designing this framework, we aim to democratize the study of\nscientific reasoning in VLMs and foster deeper insights into their capabilities\nand limitations.",
+    "authors": [
+      "Pranav Pawar",
+      "Kavish Shah",
+      "Akshat Bhalani",
+      "Komal Kasat",
+      "Dev Mittal",
+      "Hadi Gala",
+      "Deepali Patil",
+      "Nikita Raichada",
+      "Monali Deshmukh"
+    ],
+    "likes": 20,
+    "published_date": "Sep 10",
+    "url": "https://huggingface.co/papers/2509.08270",
+    "date_collected": "2025-09-17T07:07:36.705967+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "비전-언어 모델에서 해석 가능한 물리학 추론과 성능 분류",
+      "abstract": "비전-언어 모델(VLMs)이 세련되어 가는 가운데, 그들의 추론 능력은 점점 주목받고 있습니다. 많은 작업에서 뛰어나지만 물리학과 같은 핵심 과학 원리를 이해하는 능력은 잘 알려지지 않은 분야입니다. 이 능력의 발전을 반영하기 위해, 우리는 2D 물리학 이해를 철저히 평가하는 혁신적이고 이해하기 쉬운 프레임워크를 소개합니다. 우리의 프레임워크는 실용적인 시나리오 생성기를 특징으로 하며, 네 가지 핵심 영역(투사 운동, 충돌 역학, 역핸구성 이론, 유체 역학)에서 400개 이상의 다양한 문제를 생성합니다. 네 가지 최첨단 VLMs의 철저한 평가를 통해, 모델 규모와 추론 능력 사이의 강한 상관 관계를 보여주며, 우리의 최고 성과 모델인 Qwen2.5-VL-7B가 총점 0.815를 달성했습니다. 모델들은 공식적인 문제에서 뛰어나지만, 추상적인 공간 추론이 필요한 영역에서 크게 어려움을 겪는 것으로 나타났습니다. 우리는 이 프레임워크를 디자인함으로써 VLMs의 과학적 추론 연구를 대중화하고 그들의 능력과 한계에 대한 깊은 통찰력을 유발하고자 합니다."
+    },
+    "summary": "1. 비전-언어 모델의 물리학 이해를 철저히 평가하기 위한 새로운 프레임워크 개발\n2. 최신 VLMs 네 가지를 종합적으로 평가하여 모델 규모와 추론 능력 간의 강한 상관 관계 입증\n3. 모델들이 공식적인 문제에서 우수한 성과를 거둬도 추상적인 공간 추론이 필요한 영역에서 어려움을 겪는 것 확인",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented\n  Generation for Multi-hop Question Answering",
+    "abstract": "The Retrieval-Augmented Generation (RAG) approach enhances question-answering\nsystems and dialogue generation tasks by integrating information retrieval (IR)\ntechnologies with large language models (LLMs). This strategy, which retrieves\ninformation from external knowledge bases to bolster the response capabilities\nof generative models, has achieved certain successes. However, current RAG\nmethods still face numerous challenges when dealing with multi-hop queries. For\ninstance, some approaches overly rely on iterative retrieval, wasting too many\nretrieval steps on compound queries. Additionally, using the original complex\nquery for retrieval may fail to capture content relevant to specific\nsub-queries, resulting in noisy retrieved content. If the noise is not managed,\nit can lead to the problem of noise accumulation. To address these issues, we\nintroduce HANRAG, a novel heuristic-based framework designed to efficiently\ntackle problems of varying complexity. Driven by a powerful revelator, HANRAG\nroutes queries, decomposes them into sub-queries, and filters noise from\nretrieved documents. This enhances the system's adaptability and noise\nresistance, making it highly capable of handling diverse queries. We compare\nthe proposed framework against other leading industry methods across various\nbenchmarks. The results demonstrate that our framework obtains superior\nperformance in both single-hop and multi-hop question-answering tasks.",
+    "authors": [
+      "Duolin Sun",
+      "Dan Yang",
+      "Yue Shen",
+      "Yihan Jiao",
+      "Zhehao Tan",
+      "Jie Feng",
+      "Lianzhen Zhong",
+      "Jian Wang",
+      "Peng Wei",
+      "Jinjie Gu"
+    ],
+    "likes": 20,
+    "published_date": "Sep 8",
+    "url": "https://huggingface.co/papers/2509.09713",
+    "date_collected": "2025-09-17T07:07:36.707327+09:00",
+    "week": "2025-W38",
+    "translation": {
+      "title": "HANRAG: 휴리스틱 정확도 노이즈에 강한 검색 증가 생성을 위한",
+      "abstract": "검색 증강 생성(Retrieval-Augmented Generation, RAG) 방식은 정보 검색 기술과 대형 언어 모델(Large Language Models, LLMs)을 통합하여 질문응답 시스템과 대화 생성 작업을 향상시킵니다. 현재의 RAG 방법은 다중 점프 쿼리를 처리할 때 여전히 많은 도전에 직면하고 있습니다. HANRAG는 이러한 문제를 해결하기 위한 새로운 휴리스틱 기반 프레임워크로, 강력한 리벨레이터에 의해 구동되어 쿼리를 라우팅하고 서브 쿼리로 분해하며 검색된 문서에서 노이즈를 필터링합니다. 이 프레임워크를 다양한 벤치마크에서 기존 산업용 방법과 비교하여 우수한 성능을 보여줍니다."
+    },
+    "summary": "1. 정보 검색 기술과 대형 언어 모델을 결합한 검색 증강 생성(RAG) 방식은 질문응답 시스템과 대화 생성 작업을 향상시킵니다.\n2. 다중 점프 쿼리를 처리하는 데에 어려움을 겪는 기존 RAG 방법에 대한 문제점을 해결하기 위해 HANRAG가 소개되었습니다.\n3. HANRAG는 휴리스틱 기반 프레임워크로, 강력한 리벨레이터에 의해 구동되어 다양한 쿼리를 효율적으로 처리하고 노이즈에 강합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

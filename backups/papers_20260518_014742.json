@@ -1,0 +1,336 @@
+[
+  {
+    "title": "MinT: Managed Infrastructure for Training and Serving Millions of LLMs",
+    "abstract": "We present MindLab Toolkit (MinT), a managed infrastructure system for Low-Rank Adaptation (LoRA) post-training and online serving. MinT targets a setting where many trained policies are produced over a small number of expensive base-model deployments. Instead of materializing each policy as a merged full checkpoint, MinT keeps the base model resident and moves exported LoRA adapter revisions through rollout, update, export, evaluation, serving, and rollback, hiding distributed training, serving, scheduling, and data movement behind a service interface. MinT scales this path along three axes. Scale Up extends LoRA RL to frontier-scale dense and MoE architectures, including MLA and DSA attention paths, with training and serving validated beyond 1T total parameters. Scale Down moves only the exported LoRA adapter, which can be under 1% of base-model size in rank-1 settings; adapter-only handoff reduces the measured step by 18.3x on a 4B dense model and 2.85x on a 30B MoE, while concurrent multi-policy GRPO shortens wall time by 1.77x and 1.45x without raising peak memory. Scale Out separates durable policy addressability from CPU/GPU working sets: a tensor-parallel deployment supports 10^6-scale addressable catalogs (measured single-engine sweeps through 100K) and thousand-adapter active waves at cluster scale, with cold loading treated as scheduled service work and packed MoE LoRA tensors improving live engine loading by 8.5-8.7x. MinT thus manages million-scale LoRA policy catalogs while training and serving selected adapter revisions over shared 1T-class base models.",
+    "authors": [
+      "Mind Lab",
+      "Song Cao",
+      "Vic Cao",
+      "Andrew Chen",
+      "Kaijie Chen",
+      "Cleon Cheng",
+      "Steven Chiang",
+      "Kaixuan Fan",
+      "Hera Feng",
+      "Huan Feng",
+      "Arthur Fu",
+      "Jun Gao",
+      "Hongquan Gu",
+      "Aaron Guan",
+      "Nolan Ho",
+      "Mutian Hong",
+      "Hailee Hou",
+      "Peixuan Hua",
+      "Charles Huang",
+      "Miles Jiang",
+      "Nora Jiang",
+      "Yuyi Jiang"
+    ],
+    "likes": 209,
+    "published_date": "May 13",
+    "url": "https://huggingface.co/papers/2605.13779",
+    "date_collected": "2026-05-18T07:23:54.245924+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "MinT: 수백만 개의 LLM을 위한 학습 및 서빙을 위한 관리되는 인프라",
+      "abstract": "우리는 Low-Rank Adaptation (LoRA) 사후 학습 및 온라인 서빙을 위한 관리되는 인프라 시스템 MindLab Toolkit (MinT)을 제시합니다. MinT는 적은 수의 비싼 기본 모델 배포로 많은 학습된 정책이 생성되는 환경을 대상으로 합니다. MinT는 각 정책을 병합된 전체 체크포인트로 구현하는 대신, 기본 모델을 상주시키고 내보낸 LoRA 어댑터 수정 사항을 rollout, update, export, evaluation, serving, rollback을 통해 이동시킴으로써 분산 학습, 서빙, 일정 및 데이터 이동을 서비스 인터페이스 뒤에 숨깁니다. MinT는 이 경로를 세 가지 축으로 확장합니다. Scale Up은 LoRA 강화 학습을 frontier-scale 밀집 및 MoE 아키텍처로 확장하며, 학습 및 서빙이 1T 총 매개변수 이상으로 검증됩니다. Scale Down은 수백만 규모의 LoRA 정책 카탈로그를 관리하며 선택된 어댑터 수정 사항을 학습 및 서빙합니다."
+    },
+    "summary": "1. MinT는 수백만 규모의 LoRA 정책 카탈로그를 관리하며 선택된 어댑터 수정 사항을 학습 및 서빙합니다.\n2. MinT는 기본 모델을 상주시키고 내보낸 LoRA 어댑터 수정 사항을 이동시키며 분산 학습, 서빙을 감춥니다.\n3. MinT는 LoRA 강화 학습을 frontier-scale 밀집 및 MoE 아키텍처로 확장하여 1T 총 매개변수 이상을 지원합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers",
+    "abstract": "Scaling Diffusion Transformers (DiTs) to hundreds of layers introduces a structural vulnerability: networks can enter a silent, mean-dominated collapse state that homogenizes token representations and suppresses centered variation. Through mechanistic auditing, we isolate the trigger event of this collapse as Mean Mode Screaming (MMS). MMS can occur even when training appears stable, with a mean-coherent backward shock on residual writers that opens deep residual branches and drives the network into a mean-dominated state. We show this behavior is driven by an exact decomposition of these gradients into mean-coherent and centered components, compounded by the structural suppression of attention-logit gradients through the null space of the Softmax Jacobian once values homogenize.\n  To address this, we propose Mean-Variance Split (MV-Split) Residuals, which combine a separately gained centered residual update with a leaky trunk-mean replacement. On a 400-layer single-stream DiT, MV-Split prevents the divergent collapse that crashes the un-stabilized baseline; it tracks close to the baseline's pre-crash trajectory while remaining substantially better than token-isotropic gating methods such as LayerScale across the full schedule. Finally, we present a 1000-layer DiT as a scale-validation run at boundary scales, establishing that the architecture remains stably trainable at extreme depth.",
+    "authors": [
+      "Pengqi Lu"
+    ],
+    "likes": 183,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2605.06169",
+    "date_collected": "2026-05-18T07:23:54.248055+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "평균 모드 스크리밍: 1000층 확산 트랜스포머에 대한 평균-분산 분리 잔차",
+      "abstract": "수백 층의 확산 트랜스포머(DiT)를 확장하면 구조적 취약성이 발생하는데, 네트워크가 침묵적이고 평균 중심적 붕괴 상태로 진입할 수 있으며 토큰 표현을 동질화시키고 중심화된 변화를 억제할 수 있다. 이 연구에서는 Mean Mode Screaming (MMS)라는 붕괴의 유발 사건을 분리하기 위해 메커니즘 감사를 거칩니다. MMS는 훈련이 안정적인 것처럼 보일 때에도 발생할 수 있으며, 이는 평균 일관성 있는 역방향 충격에 의해 발생하며 깊은 잔여 분기를 열며 네트워크를 평균 중심적 상태로 이끕니다. 이 행동이 발생하는 것은 이러한 기울기를 평균 일관성 및 중심화된 구성 요소로 정확하게 분해하고, 값이 동질화되면 Softmax Jacobian의 영역으로 주의력-로그 키단 그래디언트를 구조적으로 억제함에 의해 촉진됩니다."
+    },
+    "summary": "1. 수백 층의 확산 트랜스포머 구조적 취약성에 대해 MMS라는 평균 중심적 붕괴의 유발 사건을 밝혀내고, 이를 해결하기 위해 MV-Split Residuals를 제안합니다.\n2. MV-Split은 중심화된 잔차 업데이트와 누수 트렁크-평균 교체를 결합하여 다이버전트 붕괴를 방지하고 안정화되지 않은 기준선이 충돌하는 것을 막습니다.\n3. 1000층 DiT를 제안하여 극한 깊이에서도 구조가 안정하게 훈련 가능함을 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture",
+    "abstract": "Recent large vision-language models (VLMs) remain fundamentally constrained by a persistent dichotomy: understanding and generation are treated as distinct problems, leading to fragmented architectures, cascaded pipelines, and misaligned representation spaces. We argue that this divide is not merely an engineering artifact, but a structural limitation that hinders the emergence of native multimodal intelligence. Hence, we introduce SenseNova-U1, a native unified multimodal paradigm built upon NEO-unify, in which understanding and generation evolve as synergistic views of a single underlying process. We launch two native unified variants, SenseNova-U1-8B-MoT and SenseNova-U1-A3B-MoT, built on dense (8B) and mixture-of-experts (30B-A3B) understanding baselines, respectively. Designed from first principles, they rival top-tier understanding-only VLMs across text understanding, vision-language perception, knowledge reasoning, agentic decision-making, and spatial intelligence. Meanwhile, they deliver strong semantic consistency and visual fidelity, excelling in conventional or knowledge-intensive any-to-image (X2I) synthesis, complex text-rich infographic generation, and interleaved vision-language generation, with or without think patterns. Beyond performance, we show detailed model design, data preprocessing, pre-/post-training, and inference strategies to support community research. Last but not least, preliminary evidence demonstrates that our models extend beyond perception and generation, performing strongly in vision-language-action (VLA) and world model (WM) scenarios. This points toward a broader roadmap where models do not translate between modalities, but think and act across them in a native manner. Multimodal AI is no longer about connecting separate systems, but about building a unified one and trusting the necessary capabilities to emerge from within.",
+    "authors": [
+      "Haiwen Diao",
+      "Penghao Wu",
+      "Hanming Deng",
+      "Jiahao Wang",
+      "Shihao Bai",
+      "Silei Wu",
+      "Weichen Fan",
+      "Wenjie Ye",
+      "Wenwen Tong",
+      "Xiangyu Fan",
+      "Yan Li",
+      "Yubo Wang",
+      "Zhijie Cao",
+      "Zhiqian Lin",
+      "Zhitao Yang",
+      "Zhongang Cai",
+      "Yuwei Niu",
+      "Yue Zhu",
+      "Bo Liu",
+      "Chengguang Lv",
+      "Haojia Yu",
+      "Haozhe Xie"
+    ],
+    "likes": 171,
+    "published_date": "May 12",
+    "url": "https://huggingface.co/papers/2605.12500",
+    "date_collected": "2026-05-18T07:23:54.251315+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "SenseNova-U1: NEO-unify 아키텍처로 다중 모달 이해 및 생성 통합",
+      "abstract": "최근 대형 비전-언어 모델(VLMs)은 이해와 생성을 서로 다른 문제로 다루어 분할된 아키텍처, 연쇄적 파이프라인, 그리고 정렬되지 않은 표현 공간으로 인해 본질적으로 제약을 받고 있다. 저희는 이 분할이 공학적인 결과물뿐만 아니라 네이티브 다중 모달 지능 발생을 방해하는 구조적 제약임을 주장합니다. 그래서 이해와 생성이 단일 기저 프로세스의 상호 보완적 시각으로 진화하는 네이티브 통합 다중 모달 패러다임인 SenseNova-U1을 소개합니다."
+    },
+    "summary": "1. SenseNova-U1은 이해와 생성을 통합한 네이티브 다중 모달 패러다임으로, 지식 추론, 결정 제시, 공간 지능 등에서 상위 수준의 성과를 거둬 텍스트 이해, 비전-언어 지각, 인과적 추론, 복잡한 정보 그래픽 생성 등 다양한 작업에서 우수함을 보입니다.\n2. SenseNova-U1은 제한적인 성능뿐만 아니라 시맨틱 일관성과 시각적 충실도를 제공하며, 승리하는 메타데이터, 복잡한 텍스트 기반 정보 그림 생성, 비전-언어 생성 작업에서 우수한 성능을 나타냅니다.\n3. 이 모델들은 지각 및 생성을 넘어 사실적인 비전-언어-행동(VLA) 및 세계 모델(WM) 시나리오에서 강한 성능을 보이며, 단순히 모달 간 변환하는 것이 아니라 원래의 방식으로 생각하고 행동할 수 있는 더 넓은 도로맵을 제시합니다.",
+    "categories": [
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents",
+    "abstract": "As LLM-powered agents are increasingly deployed in edge-cloud environments, personalized memory has become a key enabler of long-term adaptation and user-centric interaction. However, cloud-assisted memory management exposes sensitive user information, while existing privacy protection methods typically rely on aggressive masking that removes task-relevant semantics and consequently degrades memory utility and personalization quality. To address this challenge, We propose MemPrivacy, which identifies privacy-sensitive spans on edge devices, replaces them with semantically structured type-aware placeholders for cloud-side memory processing, and restores the original values locally when needed. By decoupling privacy protection from semantic destruction, MemPrivacy minimizes sensitive data exposure while retaining the information required for effective memory formation and retrieval. We also construct MemPrivacy-Bench for systematic evaluation, a dataset covering 200 users and over 52k privacy instances, and introduce a four-level privacy taxonomy for configurable protection policies. Experiments show that MemPrivacy achieves strong performance in privacy information extraction, substantially surpassing strong general-purpose models such as GPT-5.2 and Gemini-3.1-Pro, while also reducing inference latency. Across multiple widely used memory systems, MemPrivacy limits utility loss to within 1.6%, outperforming baseline masking strategies. Overall, MemPrivacy offers an effective balance between privacy protection and personalized memory utility for edge-cloud agents, enabling secure, practical, and user-transparent deployment.",
+    "authors": [
+      "Yining Chen",
+      "Jihao Zhao",
+      "Bo Tang",
+      "Haofen Wang",
+      "Feiyu Xiong",
+      "Zhiyu Li"
+    ],
+    "likes": 141,
+    "published_date": "May 10",
+    "url": "https://huggingface.co/papers/2605.09530",
+    "date_collected": "2026-05-18T07:23:54.253707+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "에지-클라우드 에이전트를 위한 개인화된 메모리 관리의 개인정보 보호 (Privacy) 시스템인 MemPrivacy",
+      "abstract": "LLM(언어 모델) 기술을 활용한 에이전트가 에지-클라우드 환경에서 점점 더 많이 배치되면, 개인화된 메모리가 장기적 적응력과 사용자 중심 상호작용을 구현하는 데 핵심적인 역할을 하게 되었습니다. 그러나 클라우드 지원 메모리 관리는 민감한 사용자 정보를 노출시키는 반면, 기존의 개인정보 보호 방법은 주로 작업과 관련된 의미론적 구조를 제거하는 공격적인 가리기에 의존하여 메모리 유틸리티와 개인화 품질을 감소시키는 경향이 있습니다. 이러한 도전에 대처하기 위해 MemPrivacy를 제안합니다. MemPrivacy는 에지 장치에서 개인정보 민감한 영역을 식별하여 클라우드 측 메모리 처리를 위해 이를 의미론적으로 구조화된 타입-인식한 플레이스홀더로 대체하고 필요시 원래 값들을 로컬에서 복원합니다. 개인정보 보호를 의미 파괴로부터 분리함으로써 MemPrivacy는 효과적인 메모리 형성과 검색에 필요한 정보를 유지하면서 민감한 데이터 노출을 최소화합니다. 우리는 시스템적 평가를 위한 MemPrivacy-Bench를 구성하였으며, 200명의 사용자와 52,000개 이상의 개인정보 인스턴스를 커버하는 데이터셋을 소개하고 구성 가능한 보호 정책을 위한 4단계 개인정보 분류 체계를 도입합니다. 실험 결과 MemPrivacy는 GPT-5.2 및 Gemini-3.1-Pro와 같은 강력한 일반 목적 모델을 크게 능가하는 개인정보 추출 성능을 보여주며 추론 대기 시간을 줄입니다. 다양한 널리 사용되는 메모리 시스템에서 베이스라인 가리기 전략을 능가하여 MemPrivacy는 유틸리티 손실을 1.6% 이내로 제한합니다. 총적으로, MemPrivacy는 에지-클라우드 에이전트들을 위한 개인정보 보호와 개인화된 메모리 유틸리티 사이의 효과적인 균형을 제공하여 안전하고 실용적이며 사용자에게 투명한 배포를 가능케 합니다."
+    },
+    "summary": "1. MemPrivacy는 에이전트의 개인화된 메모리를 보호하기 위해 개인정보 민감한 부분을 식별하고 클라우드 쪽에서는 이를 가리기하지 않고 의미론적인 구조로 대체하여 민감한 데이터 노출을 최소화합니다.\n2. MemPrivacy-Bench를 통해 200명 이상의 사용자와 52,000개 이상의 개인정보 인스턴스를 포함하는 데이터셋을 구축하고, 4단계 개인정보 분류 체계를 소개하여 보호 정책을 설정할 수 있도록 합니다.\n3. 실험 결과 MemPrivacy는 개인정보 추출 성능에서 강력한 성과를 보이며, 다양한 메모리 시스템에서 베이스라인 가리기 전략을 능가하여 유틸리티 손실을 최대 1.6%로 제한하며, 개인화된 메모리의 품질을 유지합니다.",
+    "categories": [
+      "LLM",
+      "Privacy"
+    ]
+  },
+  {
+    "title": "Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
+    "abstract": "Recent progress in reasoning models has substantially advanced long-horizon mathematical and scientific problem solving, with several systems now reaching gold-medal-level performance on International Mathematical Olympiad (IMO) and International Physics Olympiad (IPhO) problems. In this paper, we introduce a simple and unified recipe for converting a post-trained reasoning backbone into a rigorous olympiad-level solver. The recipe first uses a reverse-perplexity curriculum for SFT to instill rigorous proof-search and self-checking behaviors, then scales these behaviors through a two-stage RL pipeline that progresses from RL with verifiable rewards to more delicate proof-level RL, and finally boosts solving performance with test-time scaling. Applying this recipe, we train a 30B-A3B backbone with SFT on around 340K sub-8K-token trajectories followed by 200 RL steps. The resulting model, SU-01, supports stable reasoning on difficult problems with trajectories exceeding 100K tokens, while achieving gold-medal-level performance on mathematical and physical olympiad competitions, including IMO 2025/USAMO 2026 and IPhO 2024/2025. It also demonstrates strong generalization of scientific reasoning to domains beyond mathematics and physics.",
+    "authors": [
+      "Yafu Li",
+      "Runzhe Zhan",
+      "Haoran Zhang",
+      "Shunkai Zhang",
+      "Yizhuo Li",
+      "Zhilin Wang",
+      "Jiacheng Chen",
+      "Futing Wang",
+      "Xuyang Hu",
+      "Yuchen Fan",
+      "Bangjie Xu",
+      "Yucheng Su",
+      "Xinmiao Han",
+      "Chenxi Li",
+      "Haodi Lei",
+      "Yufeng Zhao",
+      "Zejin Lin",
+      "Qianjia Cheng",
+      "Tong Zhu",
+      "Xiaoye Qu",
+      "Ganqu Cui",
+      "Peng Ye"
+    ],
+    "likes": 140,
+    "published_date": "May 13",
+    "url": "https://huggingface.co/papers/2605.13301",
+    "date_collected": "2026-05-18T07:23:54.257011+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "단순하고 통합된 스케일링을 통해 금메달 수준의 올림피아드 추론 달성",
+      "abstract": "최근 추론 모델의 발전으로 인해 장기간 수학 및 과학 문제 해결이 상당히 진전되었으며, 몇몇 시스템은 국제 수학 올림피아드 (IMO) 및 국제 물리 올림피아드 (IPhO) 문제에서 금메달 수준의 성과를 거두고 있습니다. 본 논문에서는 사후 교육된 추론 백본을 엄격한 올림피아드 수준의 문제 해결기로 변환하는 간단하고 통합된 레시피를 제시합니다. 이 레시피는 먼저 엄격한 증명 탐색과 자가 확인 행동을 심어 주기 위해 SFT (Self-Training Framework)에 대한 역 퍼플렉서티 커리큘럼을 사용하고, 그러한 행동을 이 RL 파이프라인의 두 단계로 스케일링하며, RL과 검증 가능한 보상을 통한 RL에서 미묘한 증명 수준의 RL로 진행하고, 마지막으로 테스트 시점 스케일링으로 문제 해결 성능을 향상시킵니다. 이 레시피를 적용하여 340K 개의 하위-8K 토큰 궤적에서 SFT로 30B-A3B 백본을 훈련하고, 200 RL 단계를 거칩니다. 결과 모델인 SU-01은 100K 토큰을 초과하는 궤적의 어려운 문제에 대해 안정적인 추론을 지원하며, IMO 2025/USAMO 2026, IPhO 2024/2025를 포함한 수학 및 물리 올림피아드 대회에서 금메달 수준의 성과를 달성합니다. 또한 이는 수학 및 물리 이외의 영역으로의 과학적 추론 강력한 일반화를 보여줍니다."
+    },
+    "summary": "1. 최근 추론 모델의 발전으로 금메달 수준의 국제 수학 올림피아드 및 물리 올림피아드 문제 등에 안정적인 추론을 지원하는 모델 SU-01을 소개함.\n2. SFT 및 RL을 활용하고 테스트 시점 스케일링을 통해 모델의 성능을 향상시키는 간단하고 통합된 레시피 소개.\n3. 30B-A3B 백본을 훈련하여 100K 토큰을 초과하는 어려운 문제에 안정적으로 대응하며, 수학과 물리 이외 분야로의 과학적 추론의 강력한 일반화를 보임.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image",
+    "abstract": "Tabular Foundation Models have recently established the state of the art in supervised tabular learning, by leveraging pretraining to learn generalizable representations of numerical and categorical structured data. However, they lack native support for unstructured modalities such as text and image, and rely on frozen, pretrained embeddings to process them. On established Multimodal Tabular Learning benchmarks, we show that tuning the embeddings to the task improves performance. Existing benchmarks, however, often focus on the mere co-occurrence of modalities; this leads to high variance across datasets and masks the benefits of task-specific tuning. To address this gap, we introduce MulTaBench, a benchmark of 40 datasets, split equally between image-tabular and text-tabular tasks. We focus on predictive tasks where the modalities provide complementary predictive signal, and where generic embeddings lose critical information, necessitating Target-Aware Representations that are aligned with the task. Our experimental results demonstrate that the gains from target-aware representation tuning generalize across both text and image modalities, several tabular learners, encoder scales, and embedding dimensions. MulTaBench constitutes the largest image-tabular benchmarking effort to date, spanning high-impact domains such as healthcare and e-commerce. It is designed to enable the research of novel architectures which incorporate joint modeling and target-aware representations, paving the way for the development of novel Multimodal Tabular Foundation Models.",
+    "authors": [
+      "Alan Arazi",
+      "Eilam Shapira",
+      "Shoham Grunblat",
+      "Mor Ventura",
+      "Elad Hoffer",
+      "Gioia Blayer",
+      "David Holzmüller",
+      "Lennart Purucker",
+      "Gaël Varoquaux",
+      "Frank Hutter",
+      "Roi Reichart"
+    ],
+    "likes": 134,
+    "published_date": "May 11",
+    "url": "https://huggingface.co/papers/2605.10616",
+    "date_collected": "2026-05-18T07:23:54.259675+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "MulTaBench: 텍스트와 이미지를 활용한 다중 모달 탭러러닝의 벤치마킹",
+      "abstract": "Tabular Foundation Models은 최근 사전훈련을 활용하여 수치 및 범주형 구조화된 데이터의 일반화 가능한 표현을 학습함으로써 지도 학습에서 최고 수준을 달성했습니다. 그러나 이러한 모델들은 텍스트와 이미지와 같은 구조화되지 않은 모달리티에 대한 내장 지원이 부족하며, 이들을 처리하기 위해 동결된, 사전훈련된 임베딩을 의존합니다. 저희는 확립된 다중 모달 탭러러닝 벤치마크에서 임베딩을 태스크에 맞게 조정하는 것이 성능을 향상시킨다는 것을 보였습니다. 그러나 기존의 벤치마크들은 종종 모달리티의 단순한 공생에만 집중하며, 이는 데이터셋 간의 높은 분산을 유발하고 태스크별 조정의 이점을 숨깁니다. 이러한 공백을 해결하기 위해 저희는 MulTaBench를 소개합니다. 이는 이미지-탭러러 및 텍스트-탭러러 작업이 각각 동등하게 분할된 40개 데이터셋으로 이루어진 벤치마크입니다. 저희는 모달리티가 상호 보완적인 예측 신호를 제공하고 일반적인 임베딩이 중요한 정보를 잃어버리는 경우에 초점을 맞춥니다. 실험 결과는 타겟-의존적 표현을 조정함으로써 얻은 이득이 텍스트 및 이미지 모달리티, 여러 탭러러 인식기, 인코더 규모, 임베딩 차원에 걸쳐 일반화된다는 것을 보여줍니다. MulTaBench는 건강 관리 및 전자상거래와 같은 고영향 영역을 포함하는 오늘날까지 가장 큰 이미지-탭러러 벤치마킹 노력을 구성합니다. 이는 공동 모델링과 타겟-의존적 표현을 통합하는 혁신적인 아키텍처의 연구를 가능하게 하고 신규 다중 모달 탭러러 기반 모델의 발전을 뒷받침합니다."
+    },
+    "summary": "1. Tabular Foundation Models은 사전훈련을 통해 일반화 가능한 표현을 학습하여 지도학습에서 최상의 성과를 보이지만, 텍스트와 이미지와 같은 구조화되지 않은 데이터 형태에는 대한 부족한 지원을 보입니다.\n2. 새로운 MulTaBench 벤치마크는 40개의 데이터셋으로 구성되어 있으며, 이미지-탭러러와 텍스트-탭러러 작업이 공히 포함되어 있습니다. 이는 탭러러 학습에 새로운 아키텍처 연구 가능성을 제시합니다.\n3. 실험 결과는 타겟-의존적 표현을 조정하는 것이 텍스트 및 이미지 모달리티, 여러 탭러러 인식기, 인코더 규모, 임베딩 차원에 걸쳐 일반화된다는 것을 입증하며, 다중 모달 탭러러 기반 모델의 발전을 촉진합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "δ-mem: Efficient Online Memory for Large Language Models",
+    "abstract": "Large language models increasingly need to accumulate and reuse historical information in long-term assistants and agent systems. Simply expanding the context window is costly and often fails to ensure effective context utilization. We propose δ-mem, a lightweight memory mechanism that augments a frozen full-attention backbone with a compact online state of associative memory. δ-mem compresses past information into a fixed-size state matrix updated by delta-rule learning, and uses its readout to generate low-rank corrections to the backbone's attention computation during generation. With only an 8times8 online memory state, δ-mem improves the average score to 1.10times that of the frozen backbone and 1.15times that of the strongest non-δ-mem memory baseline. It achieves larger gains on memory-heavy benchmarks, reaching 1.31times on MemoryAgentBench and 1.20times on LoCoMo, while largely preserving general capabilities. These results show that effective memory can be realized through a compact online state directly coupled with attention computation, without full fine-tuning, backbone replacement, or explicit context extension.",
+    "authors": [
+      "Jingdi Lei",
+      "Di Zhang",
+      "Junxian Li",
+      "Weida Wang",
+      "Kaixuan Fan",
+      "Xiang Liu",
+      "Qihan Liu",
+      "Xiaoteng Ma",
+      "Baian Chen",
+      "Soujanya Poria"
+    ],
+    "likes": 112,
+    "published_date": "May 12",
+    "url": "https://huggingface.co/papers/2605.12357",
+    "date_collected": "2026-05-18T07:23:54.262263+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "대량 언어 모델을 위한 효율적인 온라인 메모리",
+      "abstract": "대규모 언어 모델은 장기 비서 및 에이전트 시스템에서 역사적 정보를 축적하고 재사용해야 하는 요구가 점점 더 증가하고 있습니다. 단순히 컨텍스트 창을 확장하는 것은 비용이 많이 들며 효과적인 컨텍스트 활용을 보장하기 어렵습니다. 본 논문에서는 고정된 완전 주의 백본에 압축된 온라인 연상 메모리 상태 행렬을 추가한 가벼운 메모리 메커니즘인 δ-mem을 제안합니다. δ-mem은 과거 정보를 델타 규칙 학습에 의해 업데이트되는 고정 크기 상태 행렬로 압축하고, 이를 통해 생성 중에 백본의 주의 계산에 저랭크 수정을 생성합니다. 오직 8x8 크기의 온라인 메모리 상태로, δ-mem은 얼어붙은 백본의 평균 점수를 1.10배, 가장 강력한 non-δ-mem 메모리 기준의 1.15배로 향상시킵니다. MemoryAgentBench에서 1.31배, LoCoMo에서 1.20배의 큰 성능 향상을 달성하며 주요 벤치마크에서 광범위한 능력을 유지하면서 이로써 효과적인 메모리가 완전한 미세 조정, 백본 교체 또는 명시적 컨텍스트 확장 없이 직접 주의 계산과 결합된 압축된 온라인 상태를 통해 실현될 수 있음을 보여줍니다."
+    },
+    "summary": "1. δ-mem은 고정된 크기의 상태 행렬로 과거 정보를 압축하여 온라인 상태를 향상시키고, 백본 주의 계산에 저랭크 수정을 생성하여 평균 성적을 향상시킵니다.\n2. 메모리가 많이 필요한 벤치마크에서도 일반 능력을 크게 유지하면서, δ-mem은 다른 메모리 기준대비 1.10배에서 1.31배까지 큰 성능 향상을 달성합니다.\n3. δ-mem은 효과적인 컨텍스트 확장 없이도 효율적인 메모리를 구현할 수 있는 것을 입증하며, 얼어붙은 백본과 백본 교체 없이 결과를 높이는 결과를 도출합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Qwen-Image-2.0 Technical Report",
+    "abstract": "We present Qwen-Image-2.0, an omni-capable image generation foundation model that unifies high-fidelity generation and precise image editing within a single framework. Despite recent progress, existing models still struggle with ultra-long text rendering, multilingual typography, high-resolution photorealism, robust instruction following, and efficient deployment, especially in text-rich and compositionally complex scenarios. Qwen-Image-2.0 addresses these challenges by coupling Qwen3-VL as the condition encoder with a Multimodal Diffusion Transformer for joint condition-target modeling, supported by large-scale data curation and a customized multi-stage training pipeline. This enables strong multimodal understanding while preserving flexible generation and editing capabilities. The model supports instructions of up to 1K tokens for generating text-rich content such as slides, posters, infographics, and comics, while significantly improving multilingual text fidelity and typography. It also enhances photorealistic generation with richer details, more realistic textures, and coherent lighting, and follows complex prompts more reliably across diverse styles. Extensive human evaluations show that Qwen-Image-2.0 substantially outperforms previous Qwen-Image models in both generation and editing, marking a step toward more general, reliable, and practical image generation foundation models.",
+    "authors": [
+      "Bing Zhao",
+      "Chenfei Wu",
+      "Deqing Li",
+      "Hao Meng",
+      "Jiahao Li",
+      "Jie Zhang",
+      "Jingren Zhou",
+      "Junyang Lin",
+      "Kaiyuan Gao",
+      "Kuan Cao",
+      "Kun Yan",
+      "Liang Peng",
+      "Lihan Jiang",
+      "Niantong Li",
+      "Ningyuan Tang",
+      "Shengming Yin",
+      "Tianhe Wu",
+      "Xiao Xu",
+      "Xiaoyue Chen",
+      "Xihua Wang",
+      "Yan Shu",
+      "Yanran Zhang"
+    ],
+    "likes": 104,
+    "published_date": "May 11",
+    "url": "https://huggingface.co/papers/2605.10730",
+    "date_collected": "2026-05-18T07:23:54.265448+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "Qwen-Image-2.0 기술 보고서",
+      "abstract": "우리는 Qwen-Image-2.0을 제시합니다. 이는 고역량 이미지 생성 기반 모델로, 고품질 생성과 정확한 이미지 편집을 하나의 프레임워크 내에서 통합합니다. 최근의 발전에도 불구하고, 기존 모델들은 특히 텍스트가 풍부하고 구성이 복잡한 상황에서 초고해상도 사실적 이미지 렌더링, 다국어 타이포그래피, 견고한 명령 수행 및 효율적인 배포에서 여전히 어려움을 겪고 있습니다. Qwen-Image-2.0은 Qwen3-VL을 조건 인코더로 연결하고 멀티모달 확산 트랜스포머를 사용하여 공동 조건-대상 모델링을 수행함으로써 이러한 도전을 해결합니다. 이는 대규모 데이터 정리와 맞춤형 다단계 훈련 파이프라인을 통해 지원되며, 유연한 생성 및 편집 기능을 유지하면서 강력한 멀티모달 이해를 실현합니다."
+    },
+    "summary": "1. Qwen-Image-2.0은 고해상도 사실적 이미지 생성과 유연한 이미지 편집을 통합한 고역량 이미지 생성 기반 모델이며, 텍스트가 풍부하고 구성이 복잡한 콘텐츠를 생성하는 데 뛰어납니다.\n2. Qwen-Image-2.0은 다국어 텍스트의 충실도 및 타이포그래피를 개선하고, 보다 풍부한 세부 사항, 사실적인 질감 및 일관된 조명으로 사실적인 이미지 생성을 향상시킵니다.\n3. 인간 평가 결과, Qwen-Image-2.0은 이전 모델에 비해 생성 및 편집에서 현격히 우수함을 입증하여, 더 일반적이고 신뢰성이 높고 실용적인 이미지 생성 기반 모델로의 발전을 나타냅니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
+    "abstract": "Existing Flow Matching (FM) text-to-image models suffer from two critical bottlenecks under multi-task alignment: the reward sparsity induced by scalar-valued rewards, and the gradient interference arising from jointly optimizing heterogeneous objectives, which together give rise to a 'seesaw effect' of competing metrics and pervasive reward hacking. Inspired by the success of On-Policy Distillation (OPD) in the large language model community, we propose Flow-OPD, the first unified post-training framework that integrates on-policy distillation into Flow Matching models. Flow-OPD adopts a two-stage alignment strategy: it first cultivates domain-specialized teacher models via single-reward GRPO fine-tuning, allowing each expert to reach its performance ceiling in isolation; it then establishes a robust initial policy through a Flow-based Cold-Start scheme and seamlessly consolidates heterogeneous expertise into a single student via a three-step orchestration of on-policy sampling, task-routing labeling, and dense trajectory-level supervision. We further introduce Manifold Anchor Regularization (MAR), which leverages a task-agnostic teacher to provide full-data supervision that anchors generation to a high-quality manifold, effectively mitigating the aesthetic degradation commonly observed in purely RL-driven alignment. Built upon Stable Diffusion 3.5 Medium, Flow-OPD raises the GenEval score from 63 to 92 and the OCR accuracy from 59 to 94, yielding an overall improvement of roughly 10 points over vanilla GRPO, while preserving image fidelity and human-preference alignment and exhibiting an emergent 'teacher-surpassing' effect. These results establish Flow-OPD as a scalable alignment paradigm for building generalist text-to-image models.",
+    "authors": [
+      "Zhen Fang",
+      "Wenxuan Huang",
+      "Yu Zeng",
+      "Yiming Zhao",
+      "Shuang Chen",
+      "Kaituo Feng",
+      "Yunlong Lin",
+      "Lin Chen",
+      "Zehui Chen",
+      "Shaosheng Cao",
+      "Feng Zhao"
+    ],
+    "likes": 94,
+    "published_date": "May 8",
+    "url": "https://huggingface.co/papers/2605.08063",
+    "date_collected": "2026-05-18T07:23:54.268258+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "Flow-OPD: On-Policy Distillation을 위한 플로우 매칭 모델",
+      "abstract": "기존의 플로우 매칭 (FM) 텍스트-이미지 모델은 다중 작업 정렬에서 두 가지 핵심 병목 현상을 겪습니다: 스칼라 값 보상에 의해 유도되는 보상 희소성과 이질적 목표를 함께 최적화하며 발생하는 기울기 간섭은 경쟁 메트릭과 널리 퍼져 있는 보상 해킹의 '시소 효과'를 낳습니다. 대형 언어 모델 커뮤니티에서 On-Policy Distillation (OPD)의 성공을 모티브로, 우리는 플로우 매칭 모델에 온-폴리시 디스틸레이션을 통합한 최초의 통합된 사후 훈련 프레임워크인 Flow-OPD를 제안합니다. Flow-OPD는 두 단계 맞춤 전략을 채택합니다: 먼저 도메인 전문적인 선생님 모델을 단일 보상 GRPO 세세하게 튜닝을 통해 육성하여 각 전문가가 고립된 상태에서 성능 천장에 도달하도록 합니다. 그런 다음 Flow 기반 콜드 스타트 체계를 통해 견고한 초기 정책을 수립하고, 온-폴리시 샘플링, 작업 라우팅 레이블링, 밀도 궤적 수준 지도학습의 삼단계 조율을 통해 이질적 전문성을 단일 학생으로 원활하게 통합합니다. 우리는 또한 저품질 궤도에 대한 순수 RL 주도의 정렬에서 흔히 관찰되는 미학적 성능 저하를 효과적으로 완화하기 위해 태스크 무관한 선생님으로 Manifold Anchor Regularization (MAR)을 도입합니다. Stable Diffusion 3.5 Medium에서 구축된 Flow-OPD는 GenEval 점수를 63에서 92로, OCR 정확도를 59에서 94로 높여 전반적으로 바닐라 GRPO 대비 대략 10점의 향상을 이루며, 이미지 충실도와 인간 선호 정렬을 유지하고 급격한 '선생 초월' 효과를 나타냅니다. 이러한 결과는 Flow-OPD를 일반적인 텍스트-이미지 모델을 구축하기 위한 확장 가능한 조정 패러다임으로 확립합니다."
+    },
+    "summary": "1. Flow-OPD는 다중 작업 정렬에서 발생하는 보상 희소성과 기울기 간섭을 해결하기 위해 온-폴리시 디스틸레이션을 이용한 첫 번째 통합된 사후 훈련 프레임워크로, 고립된 전문성을 통합하는 두 단계 정렬 전략을 채택합니다.\n2. Manifold Anchor Regularization(MAR)을 이용한 Flow-OPD는 높은 품질에 매핑하는 완전한 데이터 지도학습을 제공하여 성능 저하를 완화하고, 다양한 성능 메트릭을 개선하며 '선생을 뛰어넘는' 효과를 나타냅니다.\n3. Stable Diffusion 3.5 Medium에서 구축된 Flow-OPD는 GenEval 점수와 OCR 정확도를 상당히 향상시켜 일반적인 텍스트-이미지 모델을 구축하는데 우수한 성능을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation",
+    "abstract": "Few-step video generation has been significantly advanced by consistency distillation. However, the performance of consistency-distilled models often degrades as more sampling steps are allocated at test time, limiting their effectiveness for any-step video diffusion. This limitation arises because consistency distillation replaces the original probability-flow ODE trajectory with a consistency-sampling trajectory, weakening the desirable test-time scaling behavior of ODE sampling. To address this limitation, we introduce AnyFlow, the first any-step video diffusion distillation framework based on flow maps. Instead of distilling a model for only a few fixed sampling steps, AnyFlow optimizes the full ODE sampling trajectory. To this end, we shift the distillation target from endpoint consistency mapping (z_{t}rightarrow z_{0}) to flow-map transition learning (z_{t}rightarrow z_{r}) over arbitrary time intervals. We further propose Flow Map Backward Simulation, which decomposes a full Euler rollout into shortcut flow-map transitions, enabling efficient on-policy distillation that reduces test-time errors (i.e., discretization error in few-step sampling and exposure bias in causal generation). Extensive experiments across both bidirectional and causal architectures, at scales ranging from 1.3B to 14B parameters, demonstrate that AnyFlow achieves performance matches or surpasses consistency-based counterparts in the few-step regime, while scaling with sampling step budgets.",
+    "authors": [
+      "Yuchao Gu",
+      "Guian Fang",
+      "Yuxin Jiang",
+      "Weijia Mao",
+      "Song Han",
+      "Han Cai",
+      "Mike Zheng Shou"
+    ],
+    "likes": 89,
+    "published_date": "May 13",
+    "url": "https://huggingface.co/papers/2605.13724",
+    "date_collected": "2026-05-18T07:23:54.270638+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "AnyFlow: Any-Step 비디오 확산 모델에 대한 온-폴리시 플로우 맵 축약",
+      "abstract": "몇 단계 비디오 생성은 일관성 축약에 의해 크게 발전해왔습니다. 그러나, 일관성 축약 모델의 성능은 더 많은 샘플링 단계가 할당될 때 테스트 시 성능이 종종 저하되어, 어떠한 단계 비디오 확산에 대한 효과가 제한됩니다. 이 한계는 일관성 축약이 원본 확률-플로우 ODE(Ordinary Differential Equation) 트라젝터리를 일관성 샘플링 트라젝터리로 대체하여, ODE 샘플링의 원하는 테스트 시 스케일링 행동을 약화시키기 때문에 발생합니다. 본 논문에서 이 한계를 해결하기 위해, 플로우 맵을 기반으로 한 최초의 어떠한 단계 비디오 확산 축약 프레임워크인 AnyFlow를 제안합니다. AnyFlow는 몇 가지 고정된 샘플링 단계에 대한 모델을 축약하는 대신 전체 ODE 샘플링 트라젝터리를 최적화합니다. 이를 위해, 우리는 최종점 일관성 매핑(z_{t} -> z_{0}) 대신 임의의 시간 간격에 걸친 플로우 맵 전이 학습(z_{t} -> z_{r})으로 축약 대상을 옮깁니다. 또한 플로우 맵 역 시뮬레이션을 제안하여 전체 Euler 롤아웃을 바로가기 플로우 맵 전이로 분해하여, 테스트 시 오류(예: 소수 단계 샘플링에서의 이산화 오류 및 인과 생성에서 노출 편향)를 줄이는 효율적인 온-폴리시 축약을 가능하게 합니다. 13억에서 140억 파라미터 범위의 이중 방향 및 인과 아키텍처에 걸쳐 진행된 광범위한 실험을 통해, AnyFlow가 몇 단계 범위에서 일관성 기반 대조군과 동등한 성능을 달성하거나 능가하는 것을 보여주며, 샘플링 단계 예산에 따라 확장됨을 확인합니다."
+    },
+    "summary": "1. 일부 단계 비디오 확산이 일관성 축약에 의해 발전되었지만, 일관성 축약 모델의 성능이 더 많은 샘플링 단계가 할당될 때 저하되는 한계가 있음.\n2. AnyFlow는 어떠한 단계 비디오 확산에 대한 최초의 확산 프레임워크로, 전체 ODE 샘플링 트라젝터리 최적화 및 플로우 맵 기반으로 구성됨.\n3. 실험 결과에서 AnyFlow는 일부 단계 범위에서 일관성 기반 대조 모델과 동등한 성능을 보여주며, 샘플링 단계 예산에 따라 효과적으로 확장됨.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  }
+]

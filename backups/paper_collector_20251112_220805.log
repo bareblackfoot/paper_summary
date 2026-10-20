@@ -1,0 +1,147 @@
+=== Paper Collection Started at Tue Nov 11 22:08:17 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W46
+URL: https://huggingface.co/papers/week/2025-W46
+Found 10 papers in weekly view
+Fetching likes for: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Fetching likes for: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Fetching likes for: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Fetching likes for: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Fetching likes for: Visual Spatial Tuning
+Fetching likes for: DeepEyesV2: Toward Agentic Multimodal Model
+Fetching likes for: VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks
+Fetching likes for: The Station: An Open-World Environment for AI-Driven Discovery
+Fetching likes for: MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal
+  LLMs
+Fetching likes for: Routing Manifold Alignment Improves Generalization of Mixture-of-Experts
+  LLMs
+Selected top 10 papers by likes:
+1. HaluMem: Evaluating Hallucinations in Memory Systems of Agents (70 likes)
+2. IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction (57 likes)
+3. Too Good to be Bad: On the Failure of LLMs to Role-Play Villains (44 likes)
+4. DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation (40 likes)
+5. Visual Spatial Tuning (40 likes)
+6. DeepEyesV2: Toward Agentic Multimodal Model (34 likes)
+7. VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks (31 likes)
+8. The Station: An Open-World Environment for AI-Driven Discovery (28 likes)
+9. MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal
+  LLMs (17 likes)
+10. Routing Manifold Alignment Improves Generalization of Mixture-of-Experts
+  LLMs (16 likes)
+Found abstract: Memory systems are key components that enable AI systems such as LLMs and AI
+agents to achieve long-...
+Processed paper: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Found abstract: Recent advances in deep-research agents have shown promise for autonomous
+knowledge construction thr...
+Processed paper: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Found abstract: Large Language Models (LLMs) are increasingly tasked with creative
+generation, including the simulat...
+Processed paper: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Found abstract: Recent reasoning-first models (e.g., OpenAI o1, DeepSeek R1) have spurred a
+resurgence of interest i...
+Processed paper: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Found abstract: Capturing spatial relationships from visual inputs is a cornerstone of
+human-like general intelligen...
+Processed paper: Visual Spatial Tuning
+Found abstract: Agentic multimodal models should not only comprehend text and images, but
+also actively invoke exter...
+Processed paper: DeepEyesV2: Toward Agentic Multimodal Model
+Found abstract: LLMs can perform multi-step reasoning through Chain-of-Thought (CoT), but
+they cannot reliably verif...
+Processed paper: VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks
+Found abstract: We introduce the STATION, an open-world multi-agent environment that models a
+miniature scientific e...
+Processed paper: The Station: An Open-World Environment for AI-Driven Discovery
+Found abstract: The advent of Multimodal Large Language Models (MLLMs) has expanded AI
+capabilities to visual modali...
+Processed paper: MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal
+  LLMs
+Found abstract: Sparse Mixture-of-Experts (MoE) have been widely adopted in recent large
+language models since it ca...
+Processed paper: Routing Manifold Alignment Improves Generalization of Mixture-of-Experts
+  LLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  31
+Update date_collected: 2025-11-12T07:08:25.345645+09:00  ->  2025-11-11T07:08:33.780165+09:00
+
+Processing paper 4/10
+Title: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Visual Spatial Tuning
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  23
+Update date_collected: 2025-11-12T07:08:25.348258+09:00  ->  2025-11-11T07:08:33.782920+09:00
+
+Processing paper 6/10
+Title: DeepEyesV2: Toward Agentic Multimodal Model
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  27
+Update date_collected: 2025-11-12T07:08:25.349416+09:00  ->  2025-11-11T07:08:33.781418+09:00
+
+Processing paper 7/10
+Title: VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks
+Paper already exists, checking if translation is complete...
+Update likes: 31  ->  18
+Update date_collected: 2025-11-12T07:08:25.350673+09:00  ->  2025-11-11T07:08:33.784221+09:00
+
+Processing paper 8/10
+Title: The Station: An Open-World Environment for AI-Driven Discovery
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal
+  LLMs
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Routing Manifold Alignment Improves Generalization of Mixture-of-Experts
+  LLMs
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W46.json...
+
+Updating Notion database...
+Creating new paper: HaluMem: 에이전트의 기억 시스템에서 환각 평가
+Creating new paper: IterResearch: Markovian State를 통한 장기 고려 에이전트 재고
+Updating paper: 너무나 선하다가 나쁠 수밖에 없는: LLM들이 악당 역할하기 위해서 실패하는 이유 (likes: 31 -> 44)
+Creating new paper: 경쟁적 코드 생성에서 확인 가능한 보상을 갖춘 강화 학습을 위한 데이터 정리 최상의 방법 (RLVR)
+Updating paper: 시각적 공간 튜닝 (likes: 23 -> 40)
+Updating paper: DeepEyesV2: 대화형 다중모달 모델로 (likes: 27 -> 34)
+Updating paper: VeriCoT: 논리 일관성 확인을 통한 신경-기호 연쇄 사고 유효성 검증 (likes: 18 -> 31)
+Creating new paper: 인공지능 주도의 발견을 위한 오픈 월드 환경: The Station
+Creating new paper: MVU-Eval: 다중 비디오 이해 평가를 향한 다중 모달 LLMs(Multimodal Large Language Models)
+Creating new paper: 라우팅 매니폴드 정렬이 MoE LLM의 일반화 향상을 도모합니다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Nov 11 22:09:58 UTC 2025 ===
+

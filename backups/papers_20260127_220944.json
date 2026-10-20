@@ -1,0 +1,311 @@
+[
+  {
+    "title": "LongCat-Flash-Thinking-2601 Technical Report",
+    "abstract": "We introduce LongCat-Flash-Thinking-2601, a 560-billion-parameter open-source Mixture-of-Experts (MoE) reasoning model with superior agentic reasoning capability. LongCat-Flash-Thinking-2601 achieves state-of-the-art performance among open-source models on a wide range of agentic benchmarks, including agentic search, agentic tool use, and tool-integrated reasoning. Beyond benchmark performance, the model demonstrates strong generalization to complex tool interactions and robust behavior under noisy real-world environments. Its advanced capability stems from a unified training framework that combines domain-parallel expert training with subsequent fusion, together with an end-to-end co-design of data construction, environments, algorithms, and infrastructure spanning from pre-training to post-training. In particular, the model's strong generalization capability in complex tool-use are driven by our in-depth exploration of environment scaling and principled task construction. To optimize long-tailed, skewed generation and multi-turn agentic interactions, and to enable stable training across over 10,000 environments spanning more than 20 domains, we systematically extend our asynchronous reinforcement learning framework, DORA, for stable and efficient large-scale multi-environment training. Furthermore, recognizing that real-world tasks are inherently noisy, we conduct a systematic analysis and decomposition of real-world noise patterns, and design targeted training procedures to explicitly incorporate such imperfections into the training process, resulting in improved robustness for real-world applications. To further enhance performance on complex reasoning tasks, we introduce a Heavy Thinking mode that enables effective test-time scaling by jointly expanding reasoning depth and width through intensive parallel thinking.",
+    "authors": [
+      "Meituan LongCat Team",
+      "Anchun Gui",
+      "Bei Li",
+      "Bingyang Tao",
+      "Bole Zhou",
+      "Borun Chen",
+      "Chao Zhang",
+      "Chao Zhang",
+      "Chen Gao",
+      "Chen Zhang",
+      "Chengcheng Han",
+      "Chenhui Yang",
+      "Chuyu Zhang",
+      "Cong Chen",
+      "Cunguang Wang",
+      "Daoru Pan",
+      "Defei Bu",
+      "Dengchang Zhao",
+      "Di Xiu",
+      "Dishan Liu",
+      "Dongyu Ru",
+      "Dunwei Tu"
+    ],
+    "likes": 136,
+    "published_date": "Jan 23",
+    "url": "https://huggingface.co/papers/2601.16725",
+    "date_collected": "2026-01-27T07:09:02.649098+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "LongCat-Flash-Thinking-2601 기술 보고서",
+      "abstract": "LongCat-Flash-Thinking-2601은 560억 개의 매개변수를 갖춘 우수한 속성적 추론 능력을 가진 오픈소스 Mixture-of-Experts (MoE) 모델로, 다양한 속성적 벤치마크에서 현재 공개된 모델 중 최고의 성능을 내면서 속성적 검색, 속성적 도구 사용, 도구 통합 추론 등에 우수한 결과를 보이고 있습니다. 이 모델은 벤치마크 성능을 뛰어넘어 복잡한 도구 상호작용에 강한 일반화 능력을 보이며, 노이지가 포함된 현실 환경에서도 강건한 동작을 보여줍니다."
+    },
+    "summary": "1. LongCat-Flash-Thinking-2601은 우수한 속성적 추론 능력을 갖춘 560억 개 매개변수 모델로, 다양한 속성적 벤치마크에서 최고 성능을 보입니다.\n2. 이 모델은 복잡한 도구 상호작용에 대한 강한 일반화 능력을 갖추고 있으며, 노이직한 현실 환경에서도 안정적으로 동작합니다.\n3. LongCat-Flash-Thinking-2601은 도구 사용에 대한 개발 및 테스트를 위해 효율적인 프레임워크를 제공하며, 현실 세계의 복잡한 작업에 대한 성능을 향상시키기 위한 Heavy Thinking 모드를 소개합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
+    "abstract": "LLM agents have demonstrated remarkable capabilities in software development, but their performance is hampered by long interaction contexts, which incur high API costs and latency. While various context compression approaches such as LongLLMLingua have emerged to tackle this challenge, they typically rely on fixed metrics such as PPL, ignoring the task-specific nature of code understanding. As a result, they frequently disrupt syntactic and logical structure and fail to retain critical implementation details. In this paper, we propose SWE-Pruner, a self-adaptive context pruning framework tailored for coding agents. Drawing inspiration from how human programmers \"selectively skim\" source code during development and debugging, SWE-Pruner performs task-aware adaptive pruning for long contexts. Given the current task, the agent formulates an explicit goal (e.g., \"focus on error handling\") as a hint to guide the pruning targets. A lightweight neural skimmer (0.6B parameters) is trained to dynamically select relevant lines from the surrounding context given the goal. Evaluations across four benchmarks and multiple models validate SWE-Pruner's effectiveness in various scenarios, achieving 23-54% token reduction on agent tasks like SWE-Bench Verified and up to 14.84x compression on single-turn tasks like LongCodeQA with minimal performance impact.",
+    "authors": [
+      "Yuhang Wang",
+      "Yuling Shi",
+      "Mo Yang",
+      "Rongrui Zhang",
+      "Shilin He",
+      "Heng Lian",
+      "Yuting Chen",
+      "Siyu Ye",
+      "Kai Cai",
+      "Xiaodong Gu"
+    ],
+    "likes": 62,
+    "published_date": "Jan 23",
+    "url": "https://huggingface.co/papers/2601.16746",
+    "date_collected": "2026-01-27T07:09:02.650518+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "SWE-Pruner: 코딩 에이전트용 자기 적응식 컨텍스트 가지치기",
+      "abstract": "LLM 에이전트는 소프트웨어 개발에서 뛰어난 성능을 보여주었지만, API 비용과 지연을 초래하는 긴 상호작용 컨텍스트로 성능이 제한되었습니다. LongLLMLingua와 같은 다양한 컨텍스트 압축 방법이 이 도전 과제에 대응하기 위해 등장했지만, 이들은 일반적으로 PPL과 같은 고정된 지표에 의존하여 코드 이해의 작업 특성을 무시합니다. 이로 인해 문법적 및 논리적 구조를 자주 파괴하고 중요한 구현 세부 정보를 유지하지 못합니다. 본 논문에서는 코딩 에이전트용으로 맞춤화된 자기 적응식 컨텍스트 가지치기 프레임워크인 SWE-Pruner를 제안합니다. SWE-Pruner는 인간 프로그래머가 개발 및 디버깅 중에 소스 코드를 \"선택적으로 훑어보는\" 방식에서 영감을 받아, 긴 컨텍스트에 대해 작업 인식적인 적응적인 가지치기를 수행합니다."
+    },
+    "summary": "1. SWE-Pruner는 코딩 에이전트를 위한 자기 적응식 컨텍스트 가지치기 프레임워크로, 과업에 맞는 가지치기를 수행하여 긴 컨텍스트의 성능을 향상시킵니다.\n2. 목적에 맞게 명시적인 목표를 수립하고 주변 컨텍스트에서 관련된 줄을 동적으로 선택하는 경량 신경 스킴러를 활용합니다.\n3. SWE-Pruner는 다양한 시나리오에서 효과적으로 작동하며, SWE-Bench Verified와 같은 에이전트 작업에서 23-54%의 토큰 축소와 LongCodeQA와 같은 단일 턴 작업에서 최대 14.84배의 압축률을 달성합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers",
+    "abstract": "Standard Vision-Language-Action (VLA) models typically fine-tune a monolithic Vision-Language Model (VLM) backbone explicitly for robotic control. However, this approach creates a critical tension between maintaining high-level general semantic understanding and learning low-level, fine-grained sensorimotor skills, often leading to \"catastrophic forgetting\" of the model's open-world capabilities. To resolve this conflict, we introduce TwinBrainVLA, a novel architecture that coordinates a generalist VLM retaining universal semantic understanding and a specialist VLM dedicated to embodied proprioception for joint robotic control. TwinBrainVLA synergizes a frozen \"Left Brain\", which retains robust general visual reasoning, with a trainable \"Right Brain\", specialized for embodied perception, via a novel Asymmetric Mixture-of-Transformers (AsyMoT) mechanism. This design allows the Right Brain to dynamically query semantic knowledge from the frozen Left Brain and fuse it with proprioceptive states, providing rich conditioning for a Flow-Matching Action Expert to generate precise continuous controls. Extensive experiments on SimplerEnv and RoboCasa benchmarks demonstrate that TwinBrainVLA achieves superior manipulation performance compared to state-of-the-art baselines while explicitly preserving the comprehensive visual understanding capabilities of the pre-trained VLM, offering a promising direction for building general-purpose robots that simultaneously achieve high-level semantic understanding and low-level physical dexterity.",
+    "authors": [
+      "Bin Yu",
+      "Shijie Lian",
+      "Xiaopeng Lin",
+      "Yuliang Wei",
+      "Zhaolong Shen",
+      "Changti Wu",
+      "Yuzhuo Miao",
+      "Xinming Wang",
+      "Bailing Wang",
+      "Cong Huang",
+      "Kai Chen"
+    ],
+    "likes": 52,
+    "published_date": "Jan 20",
+    "url": "https://huggingface.co/papers/2601.14133",
+    "date_collected": "2026-01-27T07:09:02.651958+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "TwinBrainVLA: 일반 VLM의 잠재력을 비대칭 Transformer 혼합을 통해 실체화된 작업에 발휘하기",
+      "abstract": "표준 Vision-Language-Action(VLA) 모델은 일반적으로 로봇 제어를 명시적으로 위한 단일 Vision-Language Model(VLM) 백본을 정교하게 재조정합니다. 그러나 이러한 방식은 상위 수준의 일반적 의미 이해와 하위 수준의 세밀한 감각 운동기술을 학습하는 사이에 중요한 긴장을 야기하여 종종 모델의 개방 세계 능력의 \"비극적 잊혀짐\"을 유발합니다. 이러한 충돌을 해소하기 위해 본 논문에서는 TwinBrainVLA를 제안하는데, 이는 일반적인 의미 이해를 유지하는 종합 VLM과 로봇 제어를 위해 특화된 전용 VLM을 협조하는 혁신적인 아키텍처입니다. TwinBrainVLA는 움직일 수 있는 소유 감각을 위한 특화된 \"오른쪽 뇌\"와 결합된 일반적인 시각 추론을 유지하는 정지된 \"왼쪽 뇌\"를 비대칭 Transformer 혼합(AsyMoT) 메커니즘을 통해 조화시킵니다. 이 설계는 오른쪽 뇌가 정지된 왼쪽 뇌에서 의미 지식을 동적으로 쿼리하고 소유 상태와 융합하여 정확한 지속적인 제어를 생성하는 Flow-Matching Action 전문가에 풍부한 조건을 제공합니다. SimpierEnv와 RoboCasa 벤치마크에서 수행된 광범위한 실험 결과, TwinBrainVLA는 최신 기준선에 비해 우수한 조작 성능을 달성하면서 사전 훈련된 VLM의 포괄적 시각 이해 능력을 명시적으로 보존하여 고수준 의미 이해와 저수준 물리적 재능을 동시에 달성하는 일반 목적 로봇 구축 방향을 제시합니다."
+    },
+    "summary": "1. TwinBrainVLA는 일반적 의미 이해를 유지하면서 로봇 제어를 위한 전용 VLM과 협조하는 혁신적인 아키텍처를 소개합니다.\n2. TwinBrainVLA는 정지된 \"왼쪽 뇌\"와 훈련 가능한 \"오른쪽 뇌\"를 혼합하는 비대칭 Transformer 메커니즘을 통해 각각 일반적인 시각 추론과 특화된 소유 지각을 조화시킵니다.\n3. 실험 결과는 TwinBrainVLA가 최신 벤치마크 대비 우수한 조작 성능을 달성하며, 높은 수준의 시각 이해 능력을 유지하는 방향으로 일반 목적 로봇 구축을 제안합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents",
+    "abstract": "Modern Vision-Language Models (VLMs) remain poorly characterized in multi-step visual interactions, particularly in how they integrate perception, memory, and action over long horizons. We introduce VisGym, a gymnasium of 17 environments for evaluating and training VLMs. The suite spans symbolic puzzles, real-image understanding, navigation, and manipulation, and provides flexible controls over difficulty, input representation, planning horizon, and feedback. We also provide multi-step solvers that generate structured demonstrations, enabling supervised finetuning. Our evaluations show that all frontier models struggle in interactive settings, achieving low success rates in both the easy (46.6%) and hard (26.0%) configurations. Our experiments reveal notable limitations: models struggle to effectively leverage long context, performing worse with an unbounded history than with truncated windows. Furthermore, we find that several text-based symbolic tasks become substantially harder once rendered visually. However, explicit goal observations, textual feedback, and exploratory demonstrations in partially observable or unknown-dynamics settings for supervised finetuning yield consistent gains, highlighting concrete failure modes and pathways for improving multi-step visual decision-making. Code, data, and models can be found at: https://visgym.github.io/.",
+    "authors": [
+      "Zirui Wang",
+      "Junyi Zhang",
+      "Jiaxin Ge",
+      "Long Lian",
+      "Letian Fu",
+      "Lisa Dunlap",
+      "Ken Goldberg",
+      "XuDong Wang",
+      "Ion Stoica",
+      "David M. Chan",
+      "Sewon Min",
+      "Joseph E. Gonzalez"
+    ],
+    "likes": 22,
+    "published_date": "Jan 23",
+    "url": "https://huggingface.co/papers/2601.16973",
+    "date_collected": "2026-01-27T07:09:02.653406+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "VisGym: 다양하고 사용자화 가능하며 확장 가능한 다중 모달 에이전트를 위한 환경",
+      "abstract": "현대적인 Vision-Language 모델(VLMs)은 장거리 시각적 상호작용에서 특히 지각, 기억 및 행동을 어떻게 장기적으로 통합하는지에 대해 명확히 되어있지 않다. 우리는 VLMs를 평가하고 훈련하는 17개 환경의 체육관인 VisGym을 소개한다. 이 패키지는 심볼릭 퍼즐, 실제 이미지 이해, 내비게이션 및 조작을 포함하며 난이도, 입력 표현, 계획 수평 및 피드백에 대해 유연한 제어를 제공한다. 또한 구조화된 데모를 생성하는 다중 단계 해결자도 제공되어 지도된 세부 조정을 가능하게 한다. 우리의 평가는 모든 선두 모델이 상호작용적 환경에서 어려움을 겪는 것을 보여주며, 쉬운(46.6%)과 어려운(26.0%) 설정 모두에서 낮은 성공률을 기록한다. 우리 실험에서 모델은 긴 컨텍스트를 효과적으로 활용하는 데 어려움을 겪어, 무제한 기록으로는 효율적으로 수행하지 못하고 잘린 창으로 수행하는 것보다 성능이 떨어진다. 또한 텍스트 기반의 심볼적 작업 중 여러 작업들은 시각적으로 변환된 후에 현저히 어려워진다. 그러나 완전 불확실하거나 알려지지 않은 역학 설정에서 목표 관찰, 텍스트 피드백 및 탐험적 데모는 지도된 세부 조정을 위해 일관된 효과를 발휘하며 세부적인 실패 모드와 다중 단계 시각적 의사 결정 향상을 위한 전략을 강조한다."
+    },
+    "summary": "1. 현대적인 Vision-Language 모델(VLMs)은 다중 단계 시각적 상호작용에서 성능이 낮고 모델은 긴 컨텍스트를 효과적으로 활용하지 못함을 보여줌.\n2. 텍스트 기반의 심볼적 작업은 시각적으로 변환되면 더 어려워지며, 목표 관찰 및 지도된 세부 조정은 성능 향상에 기여함.\n3. 실험 결과는 다양한 실패 모드와 다중 단계 시각적 의사 결정 능력 향상을 위한 전략을 제시함.",
+    "categories": [
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Memory-V2V: Augmenting Video-to-Video Diffusion Models with Memory",
+    "abstract": "Recent foundational video-to-video diffusion models have achieved impressive results in editing user provided videos by modifying appearance, motion, or camera movement. However, real-world video editing is often an iterative process, where users refine results across multiple rounds of interaction. In this multi-turn setting, current video editors struggle to maintain cross-consistency across sequential edits. In this work, we tackle, for the first time, the problem of cross-consistency in multi-turn video editing and introduce Memory-V2V, a simple, yet effective framework that augments existing video-to-video models with explicit memory. Given an external cache of previously edited videos, Memory-V2V employs accurate retrieval and dynamic tokenization strategies to condition the current editing step on prior results. To further mitigate redundancy and computational overhead, we propose a learnable token compressor within the DiT backbone that compresses redundant conditioning tokens while preserving essential visual cues, achieving an overall speedup of 30%. We validate Memory-V2V on challenging tasks including video novel view synthesis and text-conditioned long video editing. Extensive experiments show that Memory-V2V produces videos that are significantly more cross-consistent with minimal computational overhead, while maintaining or even improving task-specific performance over state-of-the-art baselines. Project page: https://dohunlee1.github.io/MemoryV2V",
+    "authors": [
+      "Dohun Lee",
+      "Chun-Hao Paul Huang",
+      "Xuelin Chen",
+      "Jong Chul Ye",
+      "Duygu Ceylan",
+      "Hyeonho Jeong"
+    ],
+    "likes": 14,
+    "published_date": "Jan 22",
+    "url": "https://huggingface.co/papers/2601.16296",
+    "date_collected": "2026-01-27T07:09:02.654623+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "메모리-V2V: 메모리를 활용한 비디오 대 비디오 확산 모델 보강",
+      "abstract": "최근의 기본 비디오 대 비디오 확산 모델들은 사용자가 제공한 비디오를 수정하여 외모, 움직임 또는 카메라 이동을 변경하여 인상적인 결과를 달성했습니다. 그러나 현실 세계의 비디오 편집은 종종 여러 차례 상호 작용을 통해 결과물을 개선하는 반복적인 과정입니다. 이러한 다중 순서 환경에서 현재의 비디오 편집 도구들은 연속적인 편집에서 크로스 일관성을 유지하기 어려웠습니다. 본 연구에서는 다중 순서 비디오 편집에서의 크로스 일관성 문제에 처음으로 도전하며, 기존의 비디오 대 비디오 모델을 명시적인 메모리로 보강하는 간단하고 효과적인 프레임워크인 Memory-V2V를 소개합니다. 외부 캐시로 이전에 편집한 비디오의 메모리를 활용하여 Memory-V2V는 정확한 검색 및 동적 토큰화 전략을 사용하여 현재 편집 단계를 이전 결과에 의존하도록 합니다. 중복성과 계산 부담을 더 줄이기 위해 핵심 시각적 신호를 보존하면서 중복 조건 토큰을 압축하는 학습 가능한 토큰 압축기를 DiT 백본 내에 제안하여 전체 속도 향상을 30% 달성했습니다. Memory-V2V를 비디오 신규 시야 합성 및 텍스트에 조건을 건 비디오 편집과 같은 어려운 작업에 이용하여 유효성을 검증했습니다. 다양한 실험 결과 Memory-V2V는 최소한의 계산 부담을 유지하면서 상용 벤치마크보다 크로스 일관성이 뛰어나거나 작업별 성능을 유지하거나 향상시킵니다. 프로젝트 페이지: https://dohunlee1.github.io/MemoryV2V"
+    },
+    "summary": "1. 현재 비디오 편집 과정에서 이전 결과에 의존하여 크로스 일관성을 유지하는 Memory-V2V 프레임워크를 제안하였습니다.\n2. 학습 가능한 토큰 압축기를 이용하여 전체 속도를 30% 향상시키고, 중복성을 줄이는 방법을 제시하였습니다.\n3. Memory-V2V는 비디오 신규 시야 합성 및 텍스트 조건 비디오 편집과 같은 어려운 작업에서 탁월한 성능을 보여주며, 상용 벤치마크를 상회하는 결과를 도출합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Inference-Time Scaling of Verification: Self-Evolving Deep Research Agents via Test-Time Rubric-Guided Verification",
+    "abstract": "Recent advances in Deep Research Agents (DRAs) are transforming automated knowledge discovery and problem-solving. While the majority of existing efforts focus on enhancing policy capabilities via post-training, we propose an alternative paradigm: self-evolving the agent's ability by iteratively verifying the policy model's outputs, guided by meticulously crafted rubrics. This approach gives rise to the inference-time scaling of verification, wherein an agent self-improves by evaluating its generated answers to produce iterative feedback and refinements. We derive the rubrics based on an automatically constructed DRA Failure Taxonomy, which systematically classifies agent failures into five major categories and thirteen sub-categories. We present DeepVerifier, a rubrics-based outcome reward verifier that leverages the asymmetry of verification and outperforms vanilla agent-as-judge and LLM judge baselines by 12%-48% in meta-evaluation F1 score. To enable practical self-evolution, DeepVerifier integrates as a plug-and-play module during test-time inference. The verifier produces detailed rubric-based feedback, which is fed back to the agent for iterative bootstrapping, refining responses without additional training. This test-time scaling delivers 8%-11% accuracy gains on challenging subsets of GAIA and XBench-DeepResearch when powered by capable closed-source LLMs. Finally, to support open-source advancement, we release DeepVerifier-4K, a curated supervised fine-tuning dataset of 4,646 high-quality agent steps focused on DRA verification. These examples emphasize reflection and self-critique, enabling open models to develop robust verification capabilities.",
+    "authors": [
+      "Yuxuan Wan",
+      "Tianqing Fang",
+      "Zaitang Li",
+      "Yintong Huo",
+      "Wenxuan Wang",
+      "Haitao Mi",
+      "Dong Yu",
+      "Michael R. Lyu"
+    ],
+    "likes": 14,
+    "published_date": "Jan 22",
+    "url": "https://huggingface.co/papers/2601.15808",
+    "date_collected": "2026-01-27T07:09:02.655923+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "검증의 추론 시간 확장: 테스트 시간 루브릭 안내 검증을 통한 자기 진화형 심층 연구 에이전트",
+      "abstract": "최근의 심층 연구 에이전트(DRAs)의 발전은 자동 지식 발견과 문제 해결을 변화시키고 있습니다. 기존 노력의 대부분이 훈련 후 정책 능력을 향상시키는 데 중점을 두는 반면, 우리는 대안적인 패러다임을 제안합니다: 신중하게 설계된 루브릭에 따라 정책 모델의 출력을 반복적으로 검증함으로써 에이전트의 능력을 자가 진화하는 방법. 이 접근법은 검증의 추론 시간 확장을 일으키며, 에이전트가 생성된 답변을 평가하고 반복적 피드백 및 수정을 생성함으로써 자가 개선합니다. 우리는 자동으로 구성된 DRA(Deep Research Agent) 실패 타입 분류에 근거한 루브릭을 유도하고, 에이전트의 실패를 다섯 가지 주요 범주와 십 삼개의 하위 범주로 체계적으로 분류합니다. 저희는 검증의 비대칭성을 활용하는 루브릭 기반 결과 보상 검증기인 DeepVerifier를 제시하며, 메타 평가 F1 점수에서 일반적인 에이전트-심판 및 LLM 심사 기준에 비해 12% ~ 48% 우수한 성능을 보입니다. 실용적인 자가 진화를 가능하게 하기 위해 DeepVerifier는 테스트 시간 추론과정에서 플러그 앤 플레이 모듈로 통합됩니다. 검증기는 상세한 루브릭 기반 피드백을 생성하며, 추가 훈련없이 반복적인 부트스트래핑을 위해 에이전트로 피드백이 제공됩니다. 이러한 테스트 시간 확장은 강력한 폐쇄형 LLM 지원 아래에서 GAIA 및 XBench-DeepResearch의 어려운 하위 집합에서 8% ~ 11% 정확도 향상을 제공합니다. 마지막으로 공개 소스 발전을 지원하기 위해, DRA 확인에 중점을 둔 4,646개의 고품질 에이전트 단계로 이루어진 정제된 지도 학습 데이터셋인 DeepVerifier-4K를 공개합니다. 이러한 예제들은 반성과 자기 비평을 강조하며, 공개 모델이 강력한 확인 능력을 발전시킬 수 있도록 합니다."
+    },
+    "summary": "1. 기존 연구들이 훈련 이후 정책 능력을 향상시키는 데 배접했다면, 본 연구는 정책 모델의 출력을 반복적으로 검증하여 에이전트의 능력을 자가 진화시키는 새로운 패러다임을 제안합니다.\n2. DeepVerifier는 루브릭 안내의 결과 보상 검증기로, 검증의 비대칭성을 활용하여 다른 기준에 비해 우수한 성능을 보입니다.\n3. 테스트 시간 확장을 통해 자가 진화를 실현하며, 어려운 데이터셋에서 정확도 향상을 이루고, 공개 소스 발전을 지원하기 위한 데이터셋인 DeepVerifier-4K를 제공합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Jet-RL: Enabling On-Policy FP8 Reinforcement Learning with Unified Training and Rollout Precision Flow",
+    "abstract": "Reinforcement learning (RL) is essential for enhancing the complex reasoning capabilities of large language models (LLMs). However, existing RL training pipelines are computationally inefficient and resource-intensive, with the rollout phase accounting for over 70% of total training time. Quantized RL training, particularly using FP8 precision, offers a promising approach to mitigating this bottleneck. A commonly adopted strategy applies FP8 precision during rollout while retaining BF16 precision for training. In this work, we present the first comprehensive study of FP8 RL training and demonstrate that the widely used BF16-training + FP8-rollout strategy suffers from severe training instability and catastrophic accuracy collapse under long-horizon rollouts and challenging tasks. Our analysis shows that these failures stem from the off-policy nature of the approach, which introduces substantial numerical mismatch between training and inference. Motivated by these observations, we propose Jet-RL, an FP8 RL training framework that enables robust and stable RL optimization. The key idea is to adopt a unified FP8 precision flow for both training and rollout, thereby minimizing numerical discrepancies and eliminating the need for inefficient inter-step calibration. Extensive experiments validate the effectiveness of Jet-RL: our method achieves up to 33% speedup in the rollout phase, up to 41% speedup in the training phase, and a 16% end-to-end speedup over BF16 training, while maintaining stable convergence across all settings and incurring negligible accuracy degradation.",
+    "authors": [
+      "Haocheng Xi",
+      "Charlie Ruan",
+      "Peiyuan Liao",
+      "Yujun Lin",
+      "Han Cai",
+      "Yilong Zhao",
+      "Shuo Yang",
+      "Kurt Keutzer",
+      "Song Han",
+      "Ligeng Zhu"
+    ],
+    "likes": 13,
+    "published_date": "Jan 20",
+    "url": "https://huggingface.co/papers/2601.14243",
+    "date_collected": "2026-01-27T07:09:02.657314+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "Jet-RL: 통합된 훈련 및 롤아웃 정밀도 흐름으로 온-정책 FP8 강화 학습 가능하게 하기",
+      "abstract": "강화 학습은 대규모 언어 모델의 복잡한 추론 능력을 향상시키는 데 필수적입니다. 그러나 기존 강화 학습 훈련 파이프라인은 계산 효율이 낮고 자원이 많이 소모되며, 롤아웃 단계가 총 훈련 시간의 70% 이상을 차지합니다. 특히 FP8 정밀도를 사용한 양자화된 강화 학습은 이 병목 현상 완화에 유망한 방법을 제공합니다. 일반적인 전략은 BF16 정밀도를 훈련에 유지하면서 롤아웃에서 FP8 정밀도를 적용하는 것입니다. 본 연구에서는 FP8 강화 학습에 대한 첫 포괄적인 연구를 제시하고, 널리 사용되는 BF16-훈련 + FP8-롤아웃 전략이 장기 롤아웃과 어려운 작업에서 뚜렷한 훈련 불안정성과 정확도 붕괴 문제를 겪는 것을 입증합니다. 우리의 분석은 이러한 실패가 접근 방식의 오프-정책 특성에서 비롯되어 훈련과 추론 사이에 상당한 수치적 불일치를 도입한다는 것을 보여줍니다. 이러한 관측을 바탕으로 우리는 충분하고 안정적인 강화 학습 최적화를 가능케 하는 FP8 강화 학습 프레임워크인 Jet-RL을 제안합니다. 주요 아이디어는 훈련과 롤아웃 모두를 위해 통합된 FP8 정밀도 흐름을 채택하여 수치적 불일치를 최소화하고 비효율적인 스텝 간 캘리브레이션 필요성을 없애는 것입니다. 방대한 실험을 통해 Jet-RL의 효과를 검증합니다: 우리 방법은 롤아웃 단계에서 최대 33%의 속도 향상, 훈련 단계에서 최대 41%의 속도 향상 및 BF16 훈련에 비해 16%의 최종 속도 향상을 달성하면서 안정적인 수렴을 유지하고 무시할 만한 정확도 저하를 초래합니다."
+    },
+    "summary": "1. 기존의 BF16-훈련 + FP8-롤아웃 전략은 장기 롤아웃 및 어려운 작업에서 훈련 불안정성과 정확도 붕괴 문제를 겪음.\n2. Jet-RL은 통합된 FP8 정밀도 흐름을 통해 안정적이고 효과적인 강화 학습 최적화를 가능케 함.\n3. 실험 결과, Jet-RL은 안정적인 수렴을 유지하면서 훈련 속도를 최대 41%, 롤아웃 속도를 최대 33% 향상시키고 BF16 대비 16%의 최종 속도 향상을 달성함.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "SALAD: Achieve High-Sparsity Attention via Efficient Linear Attention Tuning for Video Diffusion Transformer",
+    "abstract": "Diffusion Transformers have recently demonstrated remarkable performance in video generation. However, the long input sequences result in high computational latency due to the quadratic complexity of full attention. Various sparse attention mechanisms have been proposed. Training-free sparse attention is constrained by limited sparsity and thus offers modest acceleration, whereas training-based methods can reach much higher sparsity but demand substantial data and computation for training. In this work, we propose SALAD, introducing a lightweight linear attention branch in parallel with the sparse attention. By incorporating an input-dependent gating mechanism to finely balance the two branches, our method attains 90% sparsity and 1.72x inference speedup, while maintaining generation quality comparable to the full attention baseline. Moreover, our finetuning process is highly efficient, requiring only 2,000 video samples and 1,600 training steps with a batch size of 8.",
+    "authors": [
+      "Tongcheng Fang",
+      "Hanling Zhang",
+      "Ruiqi Xie",
+      "Zhuo Han",
+      "Xin Tao",
+      "Tianchen Zhao",
+      "Pengfei Wan",
+      "Wenbo Ding",
+      "Wanli Ouyang",
+      "Xuefei Ning",
+      "Yu Wang"
+    ],
+    "likes": 9,
+    "published_date": "Jan 23",
+    "url": "https://huggingface.co/papers/2601.16515",
+    "date_collected": "2026-01-27T07:09:02.658736+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "비디오 디퓨전 트랜스포머를 위한 효율적인 선형 주의 튜닝을 통한 고 희소성 주의 달성(SALAD)",
+      "abstract": "최근에 도입된 디퓨전 트랜스포머는 비디오 생성에서 놀라운 성능을 보여주었습니다. 그러나 긴 입력 시퀀스는 전체 주의(qadratic complexity)에 따른 높은 계산 지연을 초래합니다. 우리는 SALAD를 제안합니다. 본 작업에서는 두 개의 가지를 미세하게 균형을 맞추기 위해 입력 종속적 게이팅 메커니즘을 통합하여 절반의 주의가 있는 가볍고 선형 주의 브랜치를 도입함으로써, 기존의 전체 주의 기준에 비해 90%의 희소성과 1.72배의 추론 가속화를 달성합니다."
+    },
+    "summary": "1. 디퓨전 트랜스포머는 높은 희소성 주의와 효율적인 선형 주의를 결합하여 비디오 생성 성능을 향상시킴.\n2. SALAD는 90%의 희소성과 1.72배의 추론 가속화를 달성하는 동시에 생성 품질을 유지함.\n3. SALAD의 세밀한 균형 조절을 통해 높은 계산 효율성을 제공하며, 학습 과정에 2,000개의 비디오 샘플과 1,600번의 훈련 단계만 필요로 함.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Mecellem Models: Turkish Models Trained from Scratch and Continually Pre-trained for the Legal Domain",
+    "abstract": "This paper presents Mecellem models, a framework for developing specialized language models for the Turkish legal domain through domain adaptation strategies. We make two contributions: (1)Encoder Model Pre-trained from Scratch: ModernBERT-based bidirectional encoders pre-trained on a Turkish-dominant corpus of 112.7 billion tokens. We implement a checkpoint selection strategy that evaluates downstream retrieval performance throughout training, revealing that optimal checkpoints achieve best retrieval scores before pre-training loss reaches its minimum. Our encoder models achieve top-3 rankings on the Turkish retrieval leaderboard, with smaller models (155M parameters) achieving comparable performance to larger reference models (307M-567M parameters). Our approach achieves 92.36% production efficiency compared to state-of-the-art models (embeddinggemma-300m: 100.00%, BAAI/bge-m3: 99.54%, newmindai/bge-m3-stsb: 94.38%), ranking fourth overall despite requiring less computational resources. SOTA models rely on multi-stage, computationally intensive training pipelines, making our single-stage pre-training followed by efficient post-training approach a cost-effective alternative; (2)Decoder Model with Continual Pre-training (CPT): Qwen3-1.7B and Qwen3-4B models adapted to Turkish legal domain through controlled curriculum learning. Four-phase CPT with optimal sample ratios enables gradual transition from general language knowledge to specialized legal terminology and long-context reasoning. This approach achieves 36.2% perplexity reduction on Turkish legal text, demonstrating domain adaptation gains.",
+    "authors": [
+      "Özgür Uğur",
+      "Mahmut Göksu",
+      "Mahmut Çimen",
+      "Musa Yılmaz",
+      "Esra Şavirdi",
+      "Alp Talha Demir",
+      "Rumeysa Güllüce",
+      "İclal Çetin",
+      "Ömer Can Sağbaş"
+    ],
+    "likes": 7,
+    "published_date": "Jan 22",
+    "url": "https://huggingface.co/papers/2601.16018",
+    "date_collected": "2026-01-27T07:09:02.660080+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "Mecellem 모델: 전적으로 새롭게 학습 및 지속적으로 사전 훈련된 터키어 모델",
+      "abstract": "본 논문은 도메인 적응 전략을 통해 터키어 법률 도메인을 위한 전문 언어 모델인 Mecellem 모델을 개발하는 프레임워크를 제시합니다. 우리의 두 가지 기여점은 다음과 같습니다: (1) Scratch에서 사전 학습된 인코더 모델: 112.7억 토큰의 터키어 중심 말뭉치에 기반한 현대 BERT 기반의 양방향 인코더 모델입니다. 전체적인 훈련 과정을 통해 하향식 검색 성능을 평가하는 체크포인트 선택 전략을 구현하였으며, 최적의 체크포인트가 사전 학습 손실이 최소가 되기 전에 최적의 검색 점수를 달성함을 보여줍니다. 저희 인코더 모델은 터키어 검색 리더보드에서 상위 3위를 차지하며, 파라미터 수가 큰 참고 모델들(307M-567M 파라미터)과 유사한 성능을 보이는 작은 모델(155M 파라미터)들이 달성되었습니다. 저희 방법은 SOTA 모델에 비해 92.36%의 생산 효율을 달성하였으며, 전산 자원이 적게 필요함에도 불구하고 전체적인 4위를 차지했습니다."
+    },
+    "summary": "1. 터키어 법률 도메인을 위한 특화된 언어 모델 개발을 위한 Mecellem 모델 프레임워크 소개\n2. 터키어 중심 말뭉치를 기반으로 Scratch에서 사전 학습된 양방향 인코더 모델의 우수한 성능 확인\n3. 법률 전문 용어와 장기적인 문맥 추론까지 단계적으로 이어지는 Continual Pre-training을 통해 터키어 법률 텍스트의 혼란(`perplexity`) 감소 성과 설명",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MeepleLM: A Virtual Playtester Simulating Diverse Subjective Experiences",
+    "abstract": "Recent advancements have expanded the role of Large Language Models in board games from playing agents to creative co-designers. However, a critical gap remains: current systems lack the capacity to offer constructive critique grounded in the emergent user experience. Bridging this gap is fundamental for harmonizing Human-AI collaboration, as it empowers designers to refine their creations via external perspectives while steering models away from biased or unpredictable outcomes. Automating critique for board games presents two challenges: inferring the latent dynamics connecting rules to gameplay without an explicit engine, and modeling the subjective heterogeneity of diverse player groups. To address these, we curate a dataset of 1,727 structurally corrected rulebooks and 150K reviews selected via quality scoring and facet-aware sampling. We augment this data with Mechanics-Dynamics-Aesthetics (MDA) reasoning to explicitly bridge the causal gap between written rules and player experience. We further distill player personas and introduce MeepleLM, a specialized model that internalizes persona-specific reasoning patterns to accurately simulate the subjective feedback of diverse player archetypes. Experiments demonstrate that MeepleLM significantly outperforms latest commercial models (e.g., GPT-5.1, Gemini3-Pro) in community alignment and critique quality, achieving a 70% preference rate in user studies assessing utility. MeepleLM serves as a reliable virtual playtester for general interactive systems, marking a pivotal step towards audience-aligned, experience-aware Human-AI collaboration.",
+    "authors": [
+      "Zizhen Li",
+      "Chuanhao Li",
+      "Yibin Wang",
+      "Yukang Feng",
+      "Jianwen Sun",
+      "Jiaxin Ai",
+      "Fanrui Zhang",
+      "Mingzhu Sun",
+      "Yifei Huang",
+      "Kaipeng Zhang"
+    ],
+    "likes": 7,
+    "published_date": "Jan 12",
+    "url": "https://huggingface.co/papers/2601.07251",
+    "date_collected": "2026-01-27T07:09:02.661424+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "MeepleLM: 다양한 주관적 경험을 시뮬레이션하는 가상 플레이테스터",
+      "abstract": "최근의 발전으로 대형 언어 모델의 역할이 보드 게임에서는 단순한 플레이어가 아닌 창의적 공동 디자이너로까지 확장되었습니다. 그러나 중요한 공백이 남아있습니다: 현재 시스템들은 신생 사용자 경험에 근거한 건설적 비평을 제공할 능력이 부족합니다. 이 공백을 메꾸는 것은 인간-인공지능 협업을 조화롭게 하는 데 중요합니다. 디자이너들이 외부 시각을 통해 자신의 작품을 개선하고 모델을 편향된 또는 예측할 수 없는 결과에서 멀어지게 하는 데 도움이 됩니다."
+    },
+    "summary": "1. 보드 게임에 대한 비평 자동화는 두 가지 도전을 제기합니다: 명시적인 엔진 없이 규칙과 게임 플레이를 연결하는 잠재적인 동적을 추론하고, 다양한 플레이어 그룹의 주관적 다양성을 모델링하는 것입니다.\n2. 연구에서는 기계-동역학-미학(Mechanics-Dynamics-Aesthetics, MDA) 추론과 함께 1,727개의 구조적으로 수정된 규칙서와 15만 건의 리뷰로 이루어진 데이터셋을 활용합니다.\n3. MeepleLM은 플레이어 페르소나를 정리하고 다양한 플레이어 아처타입의 주관적 피드백을 정확하게 시뮬레이션하기 위해 특화된 모델을 도입하여 사용자 연구에서 유틸리티를 평가하는 결과로 GPT-5.1, Gemini3-Pro 등의 최신 상용 모델을 큰 우세함으로 상회합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

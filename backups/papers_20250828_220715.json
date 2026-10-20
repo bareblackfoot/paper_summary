@@ -1,0 +1,325 @@
+[
+  {
+    "title": "InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,\n  Reasoning, and Efficiency",
+    "abstract": "We introduce InternVL 3.5, a new family of open-source multimodal models that\nsignificantly advances versatility, reasoning capability, and inference\nefficiency along the InternVL series. A key innovation is the Cascade\nReinforcement Learning (Cascade RL) framework, which enhances reasoning through\na two-stage process: offline RL for stable convergence and online RL for\nrefined alignment. This coarse-to-fine training strategy leads to substantial\nimprovements on downstream reasoning tasks, e.g., MMMU and MathVista. To\noptimize efficiency, we propose a Visual Resolution Router (ViR) that\ndynamically adjusts the resolution of visual tokens without compromising\nperformance. Coupled with ViR, our Decoupled Vision-Language Deployment (DvD)\nstrategy separates the vision encoder and language model across different GPUs,\neffectively balancing computational load. These contributions collectively\nenable InternVL3.5 to achieve up to a +16.0\\% gain in overall reasoning\nperformance and a 4.05times inference speedup compared to its predecessor,\ni.e., InternVL3. In addition, InternVL3.5 supports novel capabilities such as\nGUI interaction and embodied agency. Notably, our largest model, i.e.,\nInternVL3.5-241B-A28B, attains state-of-the-art results among open-source MLLMs\nacross general multimodal, reasoning, text, and agentic tasks -- narrowing the\nperformance gap with leading commercial models like GPT-5. All models and code\nare publicly released.",
+    "authors": [
+      "Weiyun Wang",
+      "Zhangwei Gao",
+      "Lixin Gu",
+      "Hengjun Pu",
+      "Long Cui",
+      "Xingguang Wei",
+      "Zhaoyang Liu",
+      "Linglin Jing",
+      "Shenglong Ye",
+      "Jie Shao",
+      "Zhaokai Wang",
+      "Zhe Chen",
+      "Hongjie Zhang",
+      "Ganlin Yang",
+      "Haomin Wang",
+      "Qi Wei",
+      "Jinhui Yin",
+      "Wenhao Li",
+      "Erfei Cui",
+      "Guanzhou Chen",
+      "Zichen Ding",
+      "Changyao Tian"
+    ],
+    "likes": 146,
+    "published_date": "Aug 25",
+    "url": "https://huggingface.co/papers/2508.18265",
+    "date_collected": "2025-08-28T07:07:23.806946+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "InternVL3.5: 다재다능성, 추론 능력, 효율성을 높이는 오픈소스 다모델의 진보",
+      "abstract": "우리는 InternVL 3.5를 소개합니다. 이는 다양성, 추론 능력, 추론 효율성을 크게 향상시키는 새로운 오픈소스 다모델 계열입니다. 주요 혁신은 Cascade Reinforcement Learning (Cascade RL) 프레임워크로, 안정적 수렴을 위한 오프라인 RL 및 정교한 맞춤을 위한 온라인 RL을 통해 추론을 향상시킵니다."
+    },
+    "summary": "1. InternVL 3.5는 Cascade Reinforcement Learning (Cascade RL) 프레임워크를 통해 추론 능력을 향상시키는데 큰 성과를 보이며, Visual Resolution Router (ViR) 및 Decoupled Vision-Language Deployment (DvD) 전략을 통해 추론 태스크에서 큰 향상을 이끌어냅니다.\n2. 이 모델은 이전 버전(InternVL3) 대비 +16.0%의 전체 추론 성능 향상과 4.05배의 추론 속도 향상을 달성하며, GUI 상호작용 및 실체 기능과 같은 새로운 능력을 지원합니다.\n3. 최대 모델 InternVL 3.5-241B-A28B는 오픈소스 다이모델 중 최상의 결과를 달성하며, 상용 모델인 GPT-5와의 성능 격차를 좁히고 있습니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains\n  RLVR",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as\na key paradigm for post-training Large Language Models (LLMs), particularly for\ncomplex reasoning tasks. However, vanilla RLVR training has been shown to\nimprove Pass@1 performance at the expense of policy entropy, leading to reduced\ngeneration diversity and limiting the Pass@k performance, which typically\nrepresents the upper bound of LLM reasoning capability. In this paper, we\nsystematically analyze the policy's generation diversity from the perspective\nof training problems and find that augmenting and updating training problems\nhelps mitigate entropy collapse during training. Based on these observations,\nwe propose an online Self-play with Variational problem Synthesis (SvS)\nstrategy for RLVR training, which uses the policy's correct solutions to\nsynthesize variational problems while ensuring their reference answers remain\nidentical to the originals. This self-improving strategy effectively maintains\npolicy entropy during training and substantially improves Pass@k compared with\nstandard RLVR, sustaining prolonged improvements and achieving absolute gains\nof 18.3% and 22.8% in Pass@32 performance on the competition-level AIME24 and\nAIME25 benchmarks. Experiments on 12 reasoning benchmarks across varying model\nsizes from 3B to 32B consistently demonstrate the generalizability and\nrobustness of SvS.",
+    "authors": [
+      "Xiao Liang",
+      "Zhongzhi Li",
+      "Yeyun Gong",
+      "Yelong Shen",
+      "Ying Nian Wu",
+      "Zhijiang Guo",
+      "Weizhu Chen"
+    ],
+    "likes": 110,
+    "published_date": "Aug 19",
+    "url": "https://huggingface.co/papers/2508.14029",
+    "date_collected": "2025-08-28T07:07:23.808205+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "Pass@1 이상: 변이 문제 합성과 함께하는 Self-Play가 지속시키는 RLVR",
+      "abstract": "강인한 언어 모델 (LLM) 후 훈련을 위한 강화 학습 및 검증 가능 보상 (RLVR)는 최근에 복잡한 추론 작업을 위한 핵심 패러다임으로 등장했습니다. 그러나 기본 RLVR 훈련은 Pass@1 성능을 향상시켰지만, 정책 엔트로피를 희생하여 생성 다양성을 줄이고 일반적으로 LLM 추론 능력의 상한을 나타내는 Pass@k 성능 제한을 유발하였습니다. 이 논문에서는 훈련 문제 관점에서 정책의 생성 다양성을 체계적으로 분석하여 훈련 문제를 보강하고 업데이트하는 것이 엔트로피 붕괴를 완화하는 데 도움이 된다는 것을 발견했습니다. 이러한 관찰에 기초하여 RLVR 훈련을 위한 Self-play with Variational problem Synthesis (SvS) 전략을 제안합니다."
+    },
+    "summary": "1. Pass@k 성능을 획기적으로 향상시키는 RLVR 훈련 전략으로, 문제의 다양성을 유지하고 개선하는 Self-play with Variational problem Synthesis (SvS)가 소개되었습니다.\n2. SvS는 정책의 옳은 해결책을 활용하여 변이 문제를 합성하고, 원본과 동일한 해답을 보장하는 자기 개선 전략을 구현하여 훈련 중에 정책 엔트로피를 효과적으로 유지하며, 표준 RLVR 대비 Pass@k 성능을 크게 향상시켰습니다.\n3. 실험 결과는 SvS가 AIME24 및 AIME25의 경쟁 수준 벤치마크에서 Pass@32 성능의 절대 증가율을 18.3% 및 22.8% 달성하며, 3B에서 32B까지 다양한 모델 크기를 대상으로 하는 12개 추론 벤치마크에서 일관되게 일반화되고 견고함을 보여주었습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs",
+    "abstract": "In this paper, we introduce a novel learning paradigm for adaptive Large\nLanguage Model (LLM) agents that eliminates the need for fine-tuning the\nunderlying LLMs. Existing approaches are often either rigid, relying on static,\nhandcrafted reflection workflows, or computationally intensive, requiring\ngradient updates of LLM model parameters. In contrast, our method enables\nlow-cost continual adaptation via memory-based online reinforcement learning.\nWe formalise this as a Memory-augmented Markov Decision Process (M-MDP),\nequipped with a neural case-selection policy to guide action decisions. Past\nexperiences are stored in an episodic memory, either differentiable or\nnon-parametric. The policy is continually updated based on environmental\nfeedback through a memory rewriting mechanism, whereas policy improvement is\nachieved through efficient memory reading (retrieval). We instantiate our agent\nmodel in the deep research setting, namely AgentFly, which attains top-1 on\nGAIA validation (87.88% Pass@3) and 79.40% on the test set. It reaches\n66.6% F1 and 80.4% PM on the DeepResearcher dataset, outperforming the\nstate-of-the-art training-based method, while case-based memory adds 4.7% to\n9.6% absolute points on out-of-distribution tasks. Our approach offers a\nscalable and efficient pathway for developing generalist LLM agents capable of\ncontinuous, real-time learning without gradient updates, advancing machine\nlearning towards open-ended skill acquisition and deep research scenarios. The\ncode is available at https://github.com/Agent-on-the-Fly/AgentFly.",
+    "authors": [
+      "Huichi Zhou",
+      "Yihang Chen",
+      "Siyuan Guo",
+      "Xue Yan",
+      "Kin Hei Lee",
+      "Zihan Wang",
+      "Ka Yiu Lee",
+      "Guchun Zhang",
+      "Kun Shao",
+      "Linyi Yang",
+      "Jun Wang"
+    ],
+    "likes": 94,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16153",
+    "date_collected": "2025-08-28T07:07:23.809579+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "AgentFly: LLM 에이전트 파인튜닝에 파인튜닝 없이",
+      "abstract": "본 논문에서는 기존의 정적이거나 계산량이 많은 Large Language Model (LLM) 에이전트 파인튜닝 방법을 제거하는 새로운 학습 패러다임을 소개합니다. 저희 방법은 저비용의 지속적 적응을 가능케 하며, 메모리 기반 온라인 강화학습을 통해 이루어집니다. 이를 Markov Decision Process (M-MDP)와 신경 케이스 선택 정책으로 형식화하고, 환경 피드백에 근거해 정책을 지속적으로 업데이트하며 메모리 읽기로 정책 향상을 이룹니다. AgentFly로 구현한 모델은 GAIA 검증에서 1위를 차지하고 DeepResearcher 데이터셋에서 최첨단 학습 기반 방법을 능가합니다. 또한, 케이스 기반 메모리는 분야를 넘어 성과를 높입니다."
+    },
+    "summary": "1. 파인튜닝 없이 LLM 에이전트를 파인튜닝하는 새로운 학습 패러다임 소개\n2. 메모리 기반 온라인 강화학습을 통한 저렴한 지속적 적응 가능\n3. AgentFly 모델이 다양한 데이터셋에서 우수한 성과를 보이며, 케이스 기반 메모리가 성능 향상에 긍정적인 영향을 미침",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "TreePO: Bridging the Gap of Policy Optimization and Efficacy and\n  Inference Efficiency with Heuristic Tree-based Modeling",
+    "abstract": "Recent advancements in aligning large language models via reinforcement\nlearning have achieved remarkable gains in solving complex reasoning problems,\nbut at the cost of expensive on-policy rollouts and limited exploration of\ndiverse reasoning paths. In this work, we introduce TreePO, involving a\nself-guided rollout algorithm that views sequence generation as a\ntree-structured searching process. Composed of dynamic tree sampling policy and\nfixed-length segment decoding, TreePO leverages local uncertainty to warrant\nadditional branches. By amortizing computation across common prefixes and\npruning low-value paths early, TreePO essentially reduces the per-update\ncompute burden while preserving or enhancing exploration diversity. Key\ncontributions include: (1) a segment-wise sampling algorithm that alleviates\nthe KV cache burden through contiguous segments and spawns new branches along\nwith an early-stop mechanism; (2) a tree-based segment-level advantage\nestimation that considers both global and local proximal policy optimization.\nand (3) analysis on the effectiveness of probability and quality-driven dynamic\ndivergence and fallback strategy. We empirically validate the performance gain\nof TreePO on a set reasoning benchmarks and the efficiency saving of GPU hours\nfrom 22\\% up to 43\\% of the sampling design for the trained models, meanwhile\nshowing up to 40\\% reduction at trajectory-level and 35\\% at token-level\nsampling compute for the existing models. While offering a free lunch of\ninference efficiency, TreePO reveals a practical path toward scaling RL-based\npost-training with fewer samples and less compute. Home page locates at\nhttps://m-a-p.ai/TreePO.",
+    "authors": [
+      "Yizhi Li",
+      "Qingshui Gu",
+      "Zhoufutu Wen",
+      "Ziniu Li",
+      "Tianshun Xing",
+      "Shuyue Guo",
+      "Tianyu Zheng",
+      "Xin Zhou",
+      "Xingwei Qu",
+      "Wangchunshu Zhou",
+      "Zheng Zhang",
+      "Wei Shen",
+      "Qian Liu",
+      "Chenghua Lin",
+      "Jian Yang",
+      "Ge Zhang",
+      "Wenhao Huang"
+    ],
+    "likes": 57,
+    "published_date": "Aug 24",
+    "url": "https://huggingface.co/papers/2508.17445",
+    "date_collected": "2025-08-28T07:07:23.811204+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "TreePO: 정책 최적화와 휴리스틱 트리 기반 모델링을 통한 효율과 추론 효율 사이의 간극을 줄이다",
+      "abstract": "최근 대규모 언어 모델을 강화 학습을 통해 조정하는 최신 기술 발전은 복잡한 추론 문제 해결에서 놀라운 성과를 거뒀지만, 고비용의 정책 기반 롤아웃과 다양한 추론 경로 탐색의 한계를 동반합니다. 본 논문에서는 TreePO를 소개하는데, 이는 시퀀스 생성을 트리 구조화된 검색 과정으로 보는 자기 안내 롤아웃 알고리즘을 포함합니다. 동적 트리 샘플링 정책과 고정 길이 세그먼트 디코딩으로 구성된 TreePO는 로컬 불확실성을 활용하여 추가 분기를 보증합니다. 공통 접두어에 대한 계산을 분산시키고 낮은 가치 경로를 일찍 제거함으로써, TreePO는 업데이트 당 계산 부담을 줄이면서 탐사 다양성을 보존하거나 강화합니다. 주요 기여는 다음과 같습니다: (1) 일련의 샘플링 알고리즘은 연속 세그먼트를 통해 KV 캐시 부담을 줄이고 초기 중지 메커니즘을 동반하여 새로운 분기를 생성합니다; (2) 전역 및 로컬 근접 정책 최적화를 모두 고려하는 트리 기반 세그먼트 수준 이익 추정; 그리고 (3) 확률 및 품질 주도적인 동적 발산 및 탈락 전략의 효과 분석입니다. TreePO의 성능 향상과 GPU 시간 효율 절약을 추론 벤치마크에서 경험적으로 확인하고, 기존 모델의 샘플링 디자인에서 훈련된 모델에 대한 22%에서 43%까지의 GPU 작업량 절약, 동시에 경로 수준에서 최대 40%, 토큰 수준에서 35%까지 줄어든 샘플링 계산을 보여줍니다. 추론 효율의 무료 식사를 제공하면서, TreePO는 적은 샘플과 적은 계산으로 RL 기반 사후 훈련 확장에 대한 실용적인 길을 제시합니다."
+    },
+    "summary": "1. TreePO는 트리 기반 모델을 활용하여 대규모 언어 모델의 효율과 추론 효율을 향상시키는 자기 안내 롤아웃 알고리즘을 소개합니다.\n2. 새로운 분기 생성 및 초기 경로 제거를 통해 계산 부담을 줄이고 탐사 다양성을 유지하거나 향상시킵니다.\n3. TreePO는 추론 벤치마크에서 성능 향상과 GPU 시간 효율 절약을 보여주며, RL 기반 사후 훈련을 적은 샘플과 적은 계산으로 확장할 수 있는 가능성을 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "CMPhysBench: A Benchmark for Evaluating Large Language Models in\n  Condensed Matter Physics",
+    "abstract": "We introduce CMPhysBench, designed to assess the proficiency of Large\nLanguage Models (LLMs) in Condensed Matter Physics, as a novel Benchmark.\nCMPhysBench is composed of more than 520 graduate-level meticulously curated\nquestions covering both representative subfields and foundational theoretical\nframeworks of condensed matter physics, such as magnetism, superconductivity,\nstrongly correlated systems, etc. To ensure a deep understanding of the\nproblem-solving process,we focus exclusively on calculation problems, requiring\nLLMs to independently generate comprehensive solutions. Meanwhile, leveraging\ntree-based representations of expressions, we introduce the Scalable Expression\nEdit Distance (SEED) score, which provides fine-grained (non-binary) partial\ncredit and yields a more accurate assessment of similarity between prediction\nand ground-truth. Our results show that even the best models, Grok-4, reach\nonly 36 average SEED score and 28% accuracy on CMPhysBench, underscoring a\nsignificant capability gap, especially for this practical and frontier domain\nrelative to traditional physics. The code anddataset are publicly available at\nhttps://github.com/CMPhysBench/CMPhysBench.",
+    "authors": [
+      "Weida Wang",
+      "Dongchen Huang",
+      "Jiatong Li",
+      "Tengchao Yang",
+      "Ziyang Zheng",
+      "Di Zhang",
+      "Dong Han",
+      "Benteng Chen",
+      "Binzhao Luo",
+      "Zhiyu Liu",
+      "Kunling Liu",
+      "Zhiyuan Gao",
+      "Shiqi Geng",
+      "Wei Ma",
+      "Jiaming Su",
+      "Xin Li",
+      "Shuchen Pu",
+      "Yuhan Shui",
+      "Qianjia Cheng",
+      "Zhihao Dou",
+      "Dongfei Cui",
+      "Changyong He"
+    ],
+    "likes": 42,
+    "published_date": "Aug 25",
+    "url": "https://huggingface.co/papers/2508.18124",
+    "date_collected": "2025-08-28T07:07:23.813064+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "CMPhysBench: 압축 물질 물리학 분야에서 대형 언어 모델 평가를 위한 벤치마크",
+      "abstract": "우리는 대형 언어 모델(Large Language Models, LLMs)의 능력을 평가하기 위해 설계된 CMPhysBench를 소개합니다. CMPhysBench는 압축 물질 물리학의 대표적인 하위 분야와 기초 이론적 구조를 다루는 520개 이상의 세밀하게 선별된 대학원 수준의 문제들로 구성된 새로운 벤치마크입니다. 문제 해결 과정의 심층이해를 보장하기 위해 계산 문제에만 초점을 맞추어 LLMs가 포괄적인 해법을 독립적으로 생성해야 합니다. 또한, 표현식의 트리 기반 표현을 활용하여 Scalable Expression Edit Distance (SEED) 점수를 도입하여 이진이 아닌 세분화된 부분적 인정을 제공하고 예측과 정답 사이의 유사성을 더 정확하게 평가합니다. 우리의 결과는 최고의 모델인 Grok-4조차도 CMPhysBench에서 평균 SEED 점수 36과 28% 정확도에 불과하며, 전통적인 물리학에 비해 이 실용적이고 전선적인 도메인에 대해 상당한 능력 차이를 강조합니다. 코드와 데이터셋은 https://github.com/CMPhysBench/CMPhysBench에서 공개되어 있습니다."
+    },
+    "summary": "1. CMPhysBench는 대형 언어 모델을 평가하기 위한 압축 물질 물리학 벤치마크로, 계산 문제를 통해 LLMs의 이해도를 평가하고 SEED 점수를 활용하여 정확성을 측정합니다.\n2. 결과는 최고의 모델도 CMPhysBench에서 기존 물리학에 비해 높은 능력 차이를 나타내며, SEED 점수와 정확도 면에서 향상이 필요함을 보여줍니다.\n3. 이러한 결과는 이 실용적이고 전선적인 분야에서의 LLMs의 한계와 개선 가능성을 강조하며, 연구에서 사용된 데이터와 코드는 공개되어 있습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for\n  Long-Horizon Tasks",
+    "abstract": "Language-guided long-horizon mobile manipulation has long been a grand\nchallenge in embodied semantic reasoning, generalizable manipulation, and\nadaptive locomotion. Three fundamental limitations hinder progress: First,\nalthough large language models have improved spatial reasoning and task\nplanning through semantic priors, existing implementations remain confined to\ntabletop scenarios, failing to address the constrained perception and limited\nactuation ranges of mobile platforms. Second, current manipulation strategies\nexhibit insufficient generalization when confronted with the diverse object\nconfigurations encountered in open-world environments. Third, while crucial for\npractical deployment, the dual requirement of maintaining high platform\nmaneuverability alongside precise end-effector control in unstructured settings\nremains understudied.\n  In this work, we present ODYSSEY, a unified mobile manipulation framework for\nagile quadruped robots equipped with manipulators, which seamlessly integrates\nhigh-level task planning with low-level whole-body control. To address the\nchallenge of egocentric perception in language-conditioned tasks, we introduce\na hierarchical planner powered by a vision-language model, enabling\nlong-horizon instruction decomposition and precise action execution. At the\ncontrol level, our novel whole-body policy achieves robust coordination across\nchallenging terrains. We further present the first benchmark for long-horizon\nmobile manipulation, evaluating diverse indoor and outdoor scenarios. Through\nsuccessful sim-to-real transfer, we demonstrate the system's generalization and\nrobustness in real-world deployments, underscoring the practicality of legged\nmanipulators in unstructured environments. Our work advances the feasibility of\ngeneralized robotic assistants capable of complex, dynamic tasks. Our project\npage: https://kaijwang.github.io/odyssey.github.io/",
+    "authors": [
+      "Kaijun Wang",
+      "Liqin Lu",
+      "Mingyu Liu",
+      "Jianuo Jiang",
+      "Zeju Li",
+      "Bolin Zhang",
+      "Wancai Zheng",
+      "Xinyi Yu",
+      "Hao Chen",
+      "Chunhua Shen"
+    ],
+    "likes": 40,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.08240",
+    "date_collected": "2025-08-28T07:07:23.814401+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "오딧세이: 장기간 작업을 위한 오픈 월드 사분다리 탐험과 조작",
+      "abstract": "언어 안내 기반의 장기간 이동 조작은 존재하는 의미론적 추론, 일반적인 조작, 적응형 이동에서 오랫동안 거대한 도전 과제였습니다. 이 연구에서는 이러한 제한을 극복하기 위해 유연한 네 다리로봇에 조작장치를 갖춘 통합 모바일 조작 프레임워크인 오딧세이를 제시합니다."
+    },
+    "summary": "1. 대규모 언어 모델은 공간 추론 및 작업 계획을 개선했지만 기존 구현은 탁상 시나리오에 국한되어 이동 플랫폼의 제약된 지각 및 제한된 실행 범위에 대응하지 못합니다.\n2. 현재의 조작 전략은 오픈 월드 환경에서 다양한 객체 구성에 직면했을 때 불충분한 일반화를 보입니다.\n3. 무구조 환경에서 높은 플랫폼 기동성을 유지하면서 정밀한 종단단제제 제어를 유지해야 하는 이중 요구 사항은 아직 연구되지 않은 상태입니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance\n  for Text-to-Image Generation",
+    "abstract": "Despite the promising progress of recent autoregressive models in\ntext-to-image (T2I) generation, their ability to handle multi-attribute and\nambiguous prompts remains limited. To address these limitations, existing works\nhave applied chain-of-thought (CoT) to enable stage-aware visual synthesis and\nemployed reinforcement learning (RL) to improve reasoning capabilities.\nHowever, most models provide reward signals only at the end of the generation\nstage. This monolithic final-only guidance makes it difficult to identify which\nstages contribute positively to the final outcome and may lead to suboptimal\npolicies. To tackle this issue, we propose a Visual-Chain of Guidance\n(Visual-CoG) paradigm consisting of three stages: semantic reasoning, process\nrefining, and outcome evaluation, with stage-aware rewards providing immediate\nguidance throughout the image generation pipeline. We further construct a\nvisual cognition benchmark, VisCog-Bench, which comprises four subtasks to\nevaluate the effectiveness of semantic reasoning. Comprehensive evaluations on\nGenEval, T2I-CompBench, and the proposed VisCog-Bench show improvements of 15%,\n5%, and 19%, respectively, demonstrating the superior performance of the\nproposed Visual-CoG. We will release all the resources soon.",
+    "authors": [
+      "Yaqi Li",
+      "Peng Chen",
+      "Mingyang Han",
+      "Bu Pi",
+      "Haoxiang Shi",
+      "Runzhou Zhao",
+      "Yang Yao",
+      "Xuan Zhang",
+      "Jun Song"
+    ],
+    "likes": 38,
+    "published_date": "Aug 25",
+    "url": "https://huggingface.co/papers/2508.18032",
+    "date_collected": "2025-08-28T07:07:23.815693+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "시각-지카이드: 단계별 지도 활용한 강화학습을 통한 텍스트-이미지 생성",
+      "abstract": "최근 자동회귀 모델들이 텍스트-이미지(T2I) 생성에서 기대되는 발전을 보여주고 있음에도, 다중 속성과 모호한 프롬프트를 처리하는 능력은 여전히 제한적입니다. 이러한 한계를 극복하기 위해 기존 연구들은 \"CoT(Chain-of-Thought)\"를 적용하여 단계별 시각적 합성을 가능하게 하고, 강화학습을 사용하여 추론 능력을 향상시켰습니다. 그러나 대부분의 모델들은 생성 단계의 끝에서만 보상 신호를 제공합니다. 이 단절된 최종 지도는 어떤 단계가 최종 결과에 긍정적으로 기여하는지 파악하기 어렵게 만들 수 있으며 최적 정책으로 이끌 수도 있습니다. 이 문제를 해결하기 위해 우리는 세 가지 단계로 이루어진 시각-지카이드(Visual-CoG) 패러다임을 제안합니다: 의미론적 추론, 과정 수정, 결과 평가. 단계별 보상이 이미지 생성 파이프라인 전체에서 즉각적인 지도를 제공합니다. 또한 우리는 시각 인지 벤치마크인 VisCog-Bench를 구축했으며, 시맨틱 추론의 효과를 평가하는 네 가지 서브태스크로 구성되어 있습니다. GenEval, T2I-CompBench, 제안된 VisCog-Bench에 대한 종합적 평가는 각각 15%, 5%, 19%의 향상을 보여주어 제안된 Visual-CoG의 우수한 성능을 입증합니다. 모든 자원은 곧 공개할 예정입니다."
+    },
+    "summary": "1. 최근 텍스트-이미지 생성에서 사용되는 모델들은 다중 속성과 모호한 프롬프트를 처리하는 능력이 제한되어있지만, Visual-CoG는 세 가지 단계로 구성되어 이미지 생성 파이프라인 전체에서 즉각적인 지도를 제공하여 우수한 성능을 보여줍니다.\n2. Visual-CoG는 지적 향상을 위해 의미론적 추론, 과정 수정, 결과 평가의 세 가지 단계가 존재하며, 시각 인지 벤치마크로서 VisCog-Bench를 활용해 효과적인 성능평가를 수행합니다.\n3. 제안된 Visual-CoG는 기존 모델들 대비 GenEval, T2I-CompBench, VisCog-Bench 등에서 15%, 5%, 19%의 향상을 보여 우수한 성능을 입증하며, 모든 자원은 곧 공개될 예정입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "VibeVoice Technical Report",
+    "abstract": "This report presents VibeVoice, a novel model designed to synthesize\nlong-form speech with multiple speakers by employing next-token diffusion,\nwhich is a unified method for modeling continuous data by autoregressively\ngenerating latent vectors via diffusion. To enable this, we introduce a novel\ncontinuous speech tokenizer that, when compared to the popular Encodec model,\nimproves data compression by 80 times while maintaining comparable performance.\nThe tokenizer effectively preserves audio fidelity while significantly boosting\ncomputational efficiency for processing long sequences. Thus, VibeVoice can\nsynthesize long-form speech for up to 90 minutes (in a 64K context window\nlength) with a maximum of 4 speakers, capturing the authentic conversational\n``vibe'' and surpassing open-source and proprietary dialogue models.",
+    "authors": [
+      "Zhiliang Peng",
+      "Jianwei Yu",
+      "Wenhui Wang",
+      "Yaoyao Chang",
+      "Yutao Sun",
+      "Li Dong",
+      "Yi Zhu",
+      "Weijiang Xu",
+      "Hangbo Bao",
+      "Zehua Wang",
+      "Shaohan Huang",
+      "Yan Xia",
+      "Furu Wei"
+    ],
+    "likes": 36,
+    "published_date": "Aug 26",
+    "url": "https://huggingface.co/papers/2508.19205",
+    "date_collected": "2025-08-28T07:07:23.817154+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "VibeVoice 기술 보고서",
+      "abstract": "이 보고서는 VibeVoice라는 새로운 모델을 소개합니다. 이 모델은 다중 화자의 긴 음성을 다루기 위해 다음 토큰 확산을 활용하여 연속 데이터를 모델링하는 통합 방법을 사용합니다. 이를 위해 연속 음성 토크나이저를 도입하며, 인기 있는 Encodec 모델과 비교했을 때 데이터 압축률을 80배 향상시키면서 성능을 유지합니다. 이 토크나이저는 오디오 품질을 효과적으로 유지하면서 긴 시퀀스 처리의 계산 효율성을 크게 향상시킵니다. 따라서 VibeVoice는 최대 4명의 화자를 포함한 최대 90분의 긴 형식의 음성을 만들어내며, 원본 대화 모델을 능가합니다."
+    },
+    "summary": "1. VibeVoice는 다중 화자의 긴 음성을 생성하기 위해 다음 토큰 확산 방법을 사용하며, 새로운 연속 음성 토크나이저를 소개합니다.\n2. 새로운 토크나이저는 데이터 압축률을 향상시키면서 오디오 품질을 유지하고 계산 효율성을 향상시킴으로써 긴 시퀀스 처리를 용이하게 합니다.\n3. VibeVoice는 최대 90분의 음성을 생성할 수 있으며, 최대 4명의 화자를 담아 원본 대화 모델을 능가합니다.",
+    "categories": [
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "MV-RAG: Retrieval Augmented Multiview Diffusion",
+    "abstract": "Text-to-3D generation approaches have advanced significantly by leveraging\npretrained 2D diffusion priors, producing high-quality and 3D-consistent\noutputs. However, they often fail to produce out-of-domain (OOD) or rare\nconcepts, yielding inconsistent or inaccurate results. To this end, we propose\nMV-RAG, a novel text-to-3D pipeline that first retrieves relevant 2D images\nfrom a large in-the-wild 2D database and then conditions a multiview diffusion\nmodel on these images to synthesize consistent and accurate multiview outputs.\nTraining such a retrieval-conditioned model is achieved via a novel hybrid\nstrategy bridging structured multiview data and diverse 2D image collections.\nThis involves training on multiview data using augmented conditioning views\nthat simulate retrieval variance for view-specific reconstruction, alongside\ntraining on sets of retrieved real-world 2D images using a distinctive held-out\nview prediction objective: the model predicts the held-out view from the other\nviews to infer 3D consistency from 2D data. To facilitate a rigorous OOD\nevaluation, we introduce a new collection of challenging OOD prompts.\nExperiments against state-of-the-art text-to-3D, image-to-3D, and\npersonalization baselines show that our approach significantly improves 3D\nconsistency, photorealism, and text adherence for OOD/rare concepts, while\nmaintaining competitive performance on standard benchmarks.",
+    "authors": [
+      "Yosef Dayani",
+      "Omer Benishu",
+      "Sagie Benaim"
+    ],
+    "likes": 34,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16577",
+    "date_collected": "2025-08-28T07:07:23.818187+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "MV-RAG: 검색 보강된 다중뷰 확산",
+      "abstract": "텍스트로 3차원 생성 방법은 사전 훈련된 2차원 확산 사전을 활용하여 큰 품질의 3차원 일관된 결과물을 생산함으로써 상당히 발전했습니다. 그러나 이들은 적도 영역(out-of-domain, OOD)이나 드문 개념을 생성하는 데 종종 실패하여 일관되지 않거나 부정확한 결과물을 낳습니다. 이에 따라, 우리는 MV-RAG를 제안합니다. 이는 먼저 거대한 현장 2차원 데이터베이스로부터 관련 이미지를 검색한 후, 이러한 이미지에 조건화된 다중뷰 확산 모델을 사용하여 일관되고 정확한 다중뷰 결과물을 합성하는 혁신적인 텍스트로 3차원 파이프라인입니다. 이러한 검색 조건 모델의 훈련은 구조화된 다중뷰 데이터 및 다양한 2차원 이미지 컬렉션을 연결하는 혁신적인 하이브리드 전략을 통해 이루어집니다."
+    },
+    "summary": "1. MV-RAG는 텍스트로 3차원을 생성하기 위해 검색된 다중뷰 데이터와 실제 2차원 이미지를 활용하는 새로운 방법론을 제안합니다.\n2. 모델은 다중뷰 데이터로 훈련되며, 2D 이미지 집합을 사용하여 해당되는 보류(view) 예측 목표를 갖춥니다.\n3. 제안된 방법은 표준 벤치마크에서 경쟁력 있는 성능을 유지하면서, 적도/드문 개념에 대한 3D 일관성, 사실적임, 텍스트 지켜줌을 유의하게 향상시킵니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D\n  Space",
+    "abstract": "3D local editing of specified regions is crucial for game industry and robot\ninteraction. Recent methods typically edit rendered multi-view images and then\nreconstruct 3D models, but they face challenges in precisely preserving\nunedited regions and overall coherence. Inspired by structured 3D generative\nmodels, we propose VoxHammer, a novel training-free approach that performs\nprecise and coherent editing in 3D latent space. Given a 3D model, VoxHammer\nfirst predicts its inversion trajectory and obtains its inverted latents and\nkey-value tokens at each timestep. Subsequently, in the denoising and editing\nphase, we replace the denoising features of preserved regions with the\ncorresponding inverted latents and cached key-value tokens. By retaining these\ncontextual features, this approach ensures consistent reconstruction of\npreserved areas and coherent integration of edited parts. To evaluate the\nconsistency of preserved regions, we constructed Edit3D-Bench, a\nhuman-annotated dataset comprising hundreds of samples, each with carefully\nlabeled 3D editing regions. Experiments demonstrate that VoxHammer\nsignificantly outperforms existing methods in terms of both 3D consistency of\npreserved regions and overall quality. Our method holds promise for\nsynthesizing high-quality edited paired data, thereby laying the data\nfoundation for in-context 3D generation. See our project page at\nhttps://huanngzh.github.io/VoxHammer-Page/.",
+    "authors": [
+      "Lin Li",
+      "Zehuan Huang",
+      "Haoran Feng",
+      "Gengxiong Zhuang",
+      "Rui Chen",
+      "Chunchao Guo",
+      "Lu Sheng"
+    ],
+    "likes": 28,
+    "published_date": "Aug 26",
+    "url": "https://huggingface.co/papers/2508.19247",
+    "date_collected": "2025-08-28T07:07:23.819380+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "VoxHammer: 훈련 없이 정밀하고 일관된 네이티브 3D 공간 내 3D 편집",
+      "abstract": "특정 지역의 3D 지역적 편집은 게임 산업과 로봇 상호작용에 중요하다. 최근 방법은 보통 렌더링된 다중 뷰 이미지를 편집한 후 3D 모델을 재구성하는데, 정확한 보존되지 않은 영역과 전반적인 일관성 유지에 어려움을 겪는다. 구조화된 3D 생성 모델에서 영감을 받아, 우리는 VoxHammer를 제안한다. 이는 훈련 없이 3D 잠재 공간에서 정밀하고 일관된 편집을 수행하는 새로운 접근법이다. 3D 모델이 주어지면, VoxHammer는 먼저 그 반전 궤적을 예측하고 각 타임스텝에서 그 반전된 잠재 요소와 키-값 토큰을 얻는다. 이후, 소음 제거 및 편집 단계에서 보존된 영역의 소음 제거 기능을 해당 반전된 잠재 및 캐시된 키-값 토큰으로 대체한다. 이러한 맥락적 특징을 유지함으로써, 이 방법은 보존된 영역의 일관된 재구성과 편집된 부분의 일관된 통합을 보장한다. 보존된 영역의 일관성을 평가하기 위해 Edit3D-Bench를 구축했는데, 이는 수십 가지의 샘플로 구성된 인간 주석이 달린 데이터셋이며, 각각은 주의 깊게 라벨링된 3D 편집 영역을 포함한다. 실험 결과, VoxHammer는 보존 영역의 3D 일관성과 전반적인 품질 측면에서 기존 방법들을 크게 능가함을 보여준다. 우리의 방법은 고품질의 편집된 쌍 데이터를 합성함으로써, 문맥 속 3D 생성을 위한 데이터 기반을 마련하는 유망성을 지닌다. 자세한 내용은 https://huanngzh.github.io/VoxHammer-Page/를 참조해주십시오."
+    },
+    "summary": "1. VoxHammer는 훈련 없이 3D 잠재 공간에서 정밀하고 일관된 편집을 수행하여 보존된 영역의 일관성을 높이고 편집된 부분을 일관되게 통합한다.\n2. Edit3D-Bench라는 데이터셋을 활용하여 실험 결과, VoxHammer는 기존 방법들보다 3D 보존 영역의 일관성과 전체 품질 측면에서 우수한 성능을 보여준다.\n3. VoxHammer는 고품질의 편집된 쌍 데이터를 합성하여 문맥 속 3D 생성을 위한 데이터 기반을 마련하며, 이는 게임 산업과 로봇 상호작용 분야에 적용 가능성이 있다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  }
+]

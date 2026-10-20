@@ -1,0 +1,291 @@
+[
+  {
+    "title": "Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers",
+    "abstract": "Scaling Diffusion Transformers (DiTs) to hundreds of layers introduces a structural vulnerability: networks can enter a silent, mean-dominated collapse state that homogenizes token representations and suppresses centered variation. Through mechanistic auditing, we isolate the trigger event of this collapse as Mean Mode Screaming (MMS). MMS can occur even when training appears stable, with a mean-coherent backward shock on residual writers that opens deep residual branches and drives the network into a mean-dominated state. We show this behavior is driven by an exact decomposition of these gradients into mean-coherent and centered components, compounded by the structural suppression of attention-logit gradients through the null space of the Softmax Jacobian once values homogenize.\n  To address this, we propose Mean-Variance Split (MV-Split) Residuals, which combine a separately gained centered residual update with a leaky trunk-mean replacement. On a 400-layer single-stream DiT, MV-Split prevents the divergent collapse that crashes the un-stabilized baseline; it tracks close to the baseline's pre-crash trajectory while remaining substantially better than token-isotropic gating methods such as LayerScale across the full schedule. Finally, we present a 1000-layer DiT as a scale-validation run at boundary scales, establishing that the architecture remains stably trainable at extreme depth.",
+    "authors": [
+      "Pengqi Lu"
+    ],
+    "likes": 101,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2605.06169",
+    "date_collected": "2026-05-12T07:29:40.023243+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "평균 모드 스크리밍: 1000층 확산 트랜스포머에 대한 평균-분산 분리 잔차",
+      "abstract": "수백 층의 확산 트랜스포머(DiT)를 확장하면 구조적 취약성이 발생하는데, 네트워크가 침묵적이고 평균 중심적 붕괴 상태로 진입할 수 있으며 토큰 표현을 동질화시키고 중심화된 변화를 억제할 수 있다. 이 연구에서는 Mean Mode Screaming (MMS)라는 붕괴의 유발 사건을 분리하기 위해 메커니즘 감사를 거칩니다. MMS는 훈련이 안정적인 것처럼 보일 때에도 발생할 수 있으며, 이는 평균 일관성 있는 역방향 충격에 의해 발생하며 깊은 잔여 분기를 열며 네트워크를 평균 중심적 상태로 이끕니다. 이 행동이 발생하는 것은 이러한 기울기를 평균 일관성 및 중심화된 구성 요소로 정확하게 분해하고, 값이 동질화되면 Softmax Jacobian의 영역으로 주의력-로그 키단 그래디언트를 구조적으로 억제함에 의해 촉진됩니다."
+    },
+    "summary": "1. 수백 층의 확산 트랜스포머 구조적 취약성에 대해 MMS라는 평균 중심적 붕괴의 유발 사건을 밝혀내고, 이를 해결하기 위해 MV-Split Residuals를 제안합니다.\n2. MV-Split은 중심화된 잔차 업데이트와 누수 트렁크-평균 교체를 결합하여 다이버전트 붕괴를 방지하고 안정화되지 않은 기준선이 충돌하는 것을 막습니다.\n3. 1000층 DiT를 제안하여 극한 깊이에서도 구조가 안정하게 훈련 가능함을 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation",
+    "abstract": "With the rise of online dance-video platforms and rapid advances in AI-generated content (AIGC), music-driven dance generation has emerged as a compelling research direction. Despite substantial progress in related domains such as music-driven 3D dance generation, pose-driven image animation, and audio-driven talking-head synthesis, existing methods cannot be directly adapted to this task. Moreover, the limited studies in this area still struggle to jointly achieve high-quality visual appearance and realistic human motion. Accordingly, we present MACE-Dance, a music-driven dance video generation framework with cascaded Mixture-of-Experts (MoE). The Motion Expert performs music-to-3D motion generation while enforcing kinematic plausibility and artistic expressiveness, whereas the Appearance Expert carries out motion- and reference-conditioned video synthesis, preserving visual identity with spatiotemporal coherence. Specifically, the Motion Expert adopts a diffusion model with a BiMamba-Transformer hybrid architecture and a Guidance-Free Training (GFT) strategy, achieving state-of-the-art (SOTA) performance in 3D dance generation. The Appearance Expert employs a decoupled kinematic-aesthetic fine-tuning strategy, achieving state-of-the-art (SOTA) performance in pose-driven image animation. To better benchmark this task, we curate a large-scale and diverse dataset and design a motion-appearance evaluation protocol. Based on this protocol, MACE-Dance also achieves state-of-the-art performance. Code is available at https://github.com/AMAP-ML/MACE-Dance.",
+    "authors": [
+      "Kaixing Yang",
+      "Jiashu Zhu",
+      "Xulong Tang",
+      "Ziqiao Peng",
+      "Xiangyue Zhang",
+      "Puwei Wang",
+      "Jiahong Wu",
+      "Xiangxiang Chu",
+      "Hongyan Liu",
+      "Jun He"
+    ],
+    "likes": 80,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2512.18181",
+    "date_collected": "2026-05-12T07:29:40.025335+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "MACE-Dance: Motion-Appearance Cascaded Experts를 활용한 음악 기반 댄스 비디오 생성",
+      "abstract": "온라인 댄스 비디오 플랫폼의 급속한 증가와 AI 생성 콘텐츠(AIGC)의 급속한 발전에 따라, 음악 기반의 댄스 생성이 주목받는 연구 주제로 등장했습니다. 이 연구에서는 고품질의 시각적 외형과 현실적인 인간 모션을 동시에 달성하기 어려운 문제를 해결하기 위해 MACE-Dance, Motion-Appearance Cascaded Experts 구조를 제안합니다."
+    },
+    "summary": "1. MACE-Dance는 음악-3D 모션 생성 및 영상 합성에 각각 전문화된 전문가들을 사용하여 댄스 비디오를 생성하는 프레임워크이다.\n2. Motion Expert는 음악-3D 모션 생성을 담당하며 운동의 가능성과 예술적 표현을 강화하고, Appearance Expert는 영상 합성을 담당하며 비주얼 아이덴티티를 유지하는데 중요하다.\n3. MACE-Dance는 대규모이면서 다양한 데이터셋을 활용하고 모션-외형 평가 프로토콜을 설계하여 최첨단 성능을 달성하였다.",
+    "categories": [
+      "Computer Vision",
+      "Audio"
+    ]
+  },
+  {
+    "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
+    "abstract": "Existing Flow Matching (FM) text-to-image models suffer from two critical bottlenecks under multi-task alignment: the reward sparsity induced by scalar-valued rewards, and the gradient interference arising from jointly optimizing heterogeneous objectives, which together give rise to a 'seesaw effect' of competing metrics and pervasive reward hacking. Inspired by the success of On-Policy Distillation (OPD) in the large language model community, we propose Flow-OPD, the first unified post-training framework that integrates on-policy distillation into Flow Matching models. Flow-OPD adopts a two-stage alignment strategy: it first cultivates domain-specialized teacher models via single-reward GRPO fine-tuning, allowing each expert to reach its performance ceiling in isolation; it then establishes a robust initial policy through a Flow-based Cold-Start scheme and seamlessly consolidates heterogeneous expertise into a single student via a three-step orchestration of on-policy sampling, task-routing labeling, and dense trajectory-level supervision. We further introduce Manifold Anchor Regularization (MAR), which leverages a task-agnostic teacher to provide full-data supervision that anchors generation to a high-quality manifold, effectively mitigating the aesthetic degradation commonly observed in purely RL-driven alignment. Built upon Stable Diffusion 3.5 Medium, Flow-OPD raises the GenEval score from 63 to 92 and the OCR accuracy from 59 to 94, yielding an overall improvement of roughly 10 points over vanilla GRPO, while preserving image fidelity and human-preference alignment and exhibiting an emergent 'teacher-surpassing' effect. These results establish Flow-OPD as a scalable alignment paradigm for building generalist text-to-image models.",
+    "authors": [
+      "Zhen Fang",
+      "Wenxuan Huang",
+      "Yu Zeng",
+      "Yiming Zhao",
+      "Shuang Chen",
+      "Kaituo Feng",
+      "Yunlong Lin",
+      "Lin Chen",
+      "Zehui Chen",
+      "Shaosheng Cao",
+      "Feng Zhao"
+    ],
+    "likes": 73,
+    "published_date": "May 8",
+    "url": "https://huggingface.co/papers/2605.08063",
+    "date_collected": "2026-05-12T07:29:40.027358+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "Flow-OPD: On-Policy Distillation을 위한 플로우 매칭 모델",
+      "abstract": "기존의 플로우 매칭 (FM) 텍스트-이미지 모델은 다중 작업 정렬에서 두 가지 핵심 병목 현상을 겪습니다: 스칼라 값 보상에 의해 유도되는 보상 희소성과 이질적 목표를 함께 최적화하며 발생하는 기울기 간섭은 경쟁 메트릭과 널리 퍼져 있는 보상 해킹의 '시소 효과'를 낳습니다. 대형 언어 모델 커뮤니티에서 On-Policy Distillation (OPD)의 성공을 모티브로, 우리는 플로우 매칭 모델에 온-폴리시 디스틸레이션을 통합한 최초의 통합된 사후 훈련 프레임워크인 Flow-OPD를 제안합니다. Flow-OPD는 두 단계 맞춤 전략을 채택합니다: 먼저 도메인 전문적인 선생님 모델을 단일 보상 GRPO 세세하게 튜닝을 통해 육성하여 각 전문가가 고립된 상태에서 성능 천장에 도달하도록 합니다. 그런 다음 Flow 기반 콜드 스타트 체계를 통해 견고한 초기 정책을 수립하고, 온-폴리시 샘플링, 작업 라우팅 레이블링, 밀도 궤적 수준 지도학습의 삼단계 조율을 통해 이질적 전문성을 단일 학생으로 원활하게 통합합니다. 우리는 또한 저품질 궤도에 대한 순수 RL 주도의 정렬에서 흔히 관찰되는 미학적 성능 저하를 효과적으로 완화하기 위해 태스크 무관한 선생님으로 Manifold Anchor Regularization (MAR)을 도입합니다. Stable Diffusion 3.5 Medium에서 구축된 Flow-OPD는 GenEval 점수를 63에서 92로, OCR 정확도를 59에서 94로 높여 전반적으로 바닐라 GRPO 대비 대략 10점의 향상을 이루며, 이미지 충실도와 인간 선호 정렬을 유지하고 급격한 '선생 초월' 효과를 나타냅니다. 이러한 결과는 Flow-OPD를 일반적인 텍스트-이미지 모델을 구축하기 위한 확장 가능한 조정 패러다임으로 확립합니다."
+    },
+    "summary": "1. Flow-OPD는 다중 작업 정렬에서 발생하는 보상 희소성과 기울기 간섭을 해결하기 위해 온-폴리시 디스틸레이션을 이용한 첫 번째 통합된 사후 훈련 프레임워크로, 고립된 전문성을 통합하는 두 단계 정렬 전략을 채택합니다.\n2. Manifold Anchor Regularization(MAR)을 이용한 Flow-OPD는 높은 품질에 매핑하는 완전한 데이터 지도학습을 제공하여 성능 저하를 완화하고, 다양한 성능 메트릭을 개선하며 '선생을 뛰어넘는' 효과를 나타냅니다.\n3. Stable Diffusion 3.5 Medium에서 구축된 Flow-OPD는 GenEval 점수와 OCR 정확도를 상당히 향상시켜 일반적인 텍스트-이미지 모델을 구축하는데 우수한 성능을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents",
+    "abstract": "Existing multimodal search agents process target entities sequentially, issuing one tool call per entity and accumulating redundant interaction rounds whenever a query decomposes into independent sub-retrievals. We argue that effective multimodal agents should search wider rather than longer: dispatching multiple grounded queries concurrently within a round. To this end, we present HyperEyes, a parallel multimodal search agent that fuses visual grounding and retrieval into a single atomic action, enabling concurrent search across multiple entities while treating inference efficiency as a first-class training objective. HyperEyes is trained in two stages. For cold-start supervision, we develop a Parallel-Amenable Data Synthesis Pipeline covering visual multi-entity and textual multi-constraint queries, curating efficiency-oriented trajectories via Progressive Rejection Sampling. Building on this, our central contribution, a Dual-Grained Efficiency-Aware Reinforcement Learning framework, operates at two levels. At the macro level, we propose TRACE (Tool-use Reference-Adaptive Cost Efficiency), a trajectory-level reward whose reference is monotonically tightened during training to suppress superfluous tool calls without restricting genuine multi-hop search. At the micro level, we adapt On-Policy Distillation to inject dense token-level corrective signals from an external teacher on failed rollouts, mitigating the credit-assignment deficiency of sparse outcome rewards. Since existing benchmarks evaluate accuracy as the sole metric, omitting inference cost, we introduce IMEB, a human-curated benchmark of 300 instances that jointly evaluates search capability and efficiency. Across six benchmarks, HyperEyes-30B surpasses the strongest comparable open-source agent by 9.9% in accuracy with 5.3x fewer tool-call rounds on average.",
+    "authors": [
+      "Guankai Li",
+      "Jiabin Chen",
+      "Yi Xu",
+      "Xichen Zhang",
+      "Yuan Lu"
+    ],
+    "likes": 57,
+    "published_date": "May 8",
+    "url": "https://huggingface.co/papers/2605.07177",
+    "date_collected": "2026-05-12T07:29:40.028938+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "하이퍼아이즈: 병렬 다중 모달 검색 에이전트를 위한 기능 향상형 효율 인식 강화 학습",
+      "abstract": "기존의 다중 모달 검색 에이전트는 대상 엔티티를 순차적으로 처리하며, 쿼리가 독립적인 하위 검색으로 분해되었을 때 매 엔티티마다 하나의 도구 호출을 발생시키고 중복 상호 작용 라운드를 누적함. 본 연구에서는 효과적인 다중 모달 에이전트는 광범위한 탐색이 더 나은 것이라고 주장함: 라운드 내에서 여러 미리 정해 논리적 쿼리를 동시에 보냄. 이를 위해 하이퍼아이즈를 제안하며, 시각적 묘사와 검색을 단일 원자적 작업으로 융합하여 추론 효율성을 첫 번째로 강조하는 동시에 여러 엔티티 넘나드는 동시 탐색을 가능케 함. 하이퍼아이즈는 두 단계로 훈련됨. 콜드 스타트 감독을 위해 시각적 다중 엔티티 및 텍스트 다중 제약 쿼리를 다루는 효율 지향적 궤적을 Progressive Rejection Sampling을 통해 조립하는 Parallel-Amenable Data Synthesis Pipeline을 개발함. 이에 더하여, 저희의 중심적인 기여인 Dual-Grained Efficiency-Aware Reinforcement Learning 프레임워크는 두 수준에서 작동함. 전역 레벨에서는 훈련 중 참조가 단조롭게 좁혀지며 진정한 다중-홉 탐색을 제한하면서도 불필요한 도구 호출을 억제하는 경로 수준 보상인 TRACE(Tool-use Reference-Adaptive Cost Efficiency)를 제안함. 미시 레벨에서는 외부 교사로부터 실패한 롤아웃에서 집중적 토큰 수준 보정 신호를 주입하는 On-Policy Distillation을 채택하여 증거 할당 결핍을 완화함."
+    },
+    "summary": "1. 하이퍼아이즈는 병렬 다중 모달 검색을 위해 시각적 묘사와 검색을 결합하고 효율성을 핵심 훈련 목표로 하는 강화 학습 기반 에이전트이다.\n2. 새로운 벤치마크 IMEB를 소개하여, 활자 인스턴스 300개를 공동으로 검색 능력과 효율성을 평가한다.\n3. HyperEyes-30B는 기존의 강력한 오픈 소스 에이전트보다 9.9% 높은 정확도를 보이면서 평균 5.3배 적은 도구 호출 라운드를 가지고 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a standard approach for large language models (LLMs) post-training to incentivize reasoning capacity. Among existing recipes, group-based policy gradient is prevalent, which samples a group of responses per prompt and updates the policy via group-relative advantage signals. This work reveals that these optimization strategies share a common geometric structure: each implicitly defines a target distribution on the response simplex and projects toward it via first-order approximation. Building on this insight, we propose Listwise Policy Optimization (LPO) to explicitly conduct the target-projection, which demystifies the implicit target by restricting the proximal RL objective to the response simplex, and then projects the policy via exact divergence minimization. This framework provides (i) monotonic improvement on the listwise objective with bounded, zero-sum, and self-correcting projection gradients, and (ii) flexibility in divergence selection with distinct structural properties through the decoupled projection step. On diverse reasoning tasks and LLM backbones, LPO consistently improves training performance over typical policy gradient baselines under matched targets, while intrinsically preserving optimization stability and response diversity.",
+    "authors": [
+      "Yun Qu",
+      "Qi Wang",
+      "Yixiu Mao",
+      "Heming Zou",
+      "Yuhang Jiang",
+      "Yingyue Li",
+      "Wutong Xu",
+      "Lizhou Cai",
+      "Weijie Liu",
+      "Clive Bai",
+      "Kai Yang",
+      "Yangkun Chen",
+      "Saiyong Yang",
+      "Xiangyang Ji"
+    ],
+    "likes": 57,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2605.06139",
+    "date_collected": "2026-05-12T07:29:40.031011+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "목록형 정책 최적화: LLM 응답 단순체내에서의 그룹 기반 RLVR 타겟 투영",
+      "abstract": "검증 가능 보상(Verifiable Rewards)을 활용한 강화 학습(Reinforcement Learning)이 대규모 언어 모델(LLMs)에게 추론 능력을 인센티브화하는 표준 접근 방식이 되었습니다. 이 연구는 그룹 기반 정책 경사 방법이 흔히 쓰이는데, 이는 프롬프트 당 응답 그룹을 샘플링하고 상대적인 이점 신호를 통해 정책을 업데이트하는 것입니다. 이 연구는 이 최적화 전략이 공통 기하 구조를 공유한다는 것을 밝혀냅니다. 각 전략은 응답 단순체(response simplex)에서 목표 분포(target distribution)를 암묵적으로 정의하고, 첫 차 근사를 통해 해당 분포 방향으로 투영합니다. 이 통찰을 기반으로, 우리는 목록형 정책 최적화(LPO)를 제안하여 명시적으로 목표 투영을 수행합니다. 이는 근접 RL 목적을 응답 단순체로 제한하고, 이후 정확한 발산 최소화를 통해 정책을 투영합니다. 이 프레임워크는 리스트형 목적에 대한 일정한 개선을 제공하며, 유일하고 제로-합, 자가 수정 프로젝션 그래디언트로 경계가 있는, 최적화 안정성 및 응답 다양성을 지속적으로 유지합니다."
+    },
+    "summary": "1. 그룹 기반 정책 경사 방법은 응답 단순체 위에서 목표 분포를 암묵적으로 정의하고, 첫 차 근사를 통해 해당 방향으로 투영합니다.\n2. 목록형 정책 최적화(LPO)는 목표 투영을 명시적으로 수행하여 응답 단순체에 최적화를 제공하고 정책을 정확하게 투영합니다.\n3. LPO는 리스트형 목적에 대한 일정한 개선을 제공하며 최적화 안정성과 응답 다양성을 유지하면서 교육 성능을 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling",
+    "abstract": "Test-time scaling (TTS) has become an effective approach for improving large language model performance by allocating additional computation during inference. However, existing TTS strategies are largely hand-crafted: researchers manually design reasoning patterns and tune heuristics by intuition, leaving much of the computation-allocation space unexplored. We propose an environment-driven framework, AutoTTS, that changes what researchers design: from individual TTS heuristics to environments where TTS strategies can be discovered automatically. The key to AutoTTS lies in environment construction: the discovery environment must make the control space tractable and provide cheap, frequent feedback for TTS search. As a concrete instantiation, we formulate width--depth TTS as controller synthesis over pre-collected reasoning trajectories and probe signals, where controllers decide when to branch, continue, probe, prune, or stop and can be evaluated cheaply without repeated LLM calls. We further introduce beta parameterization to make the search tractable and fine-grained execution trace feedback to improve discovery efficiency by helping the agent diagnose why a TTS program fails. Experiments on mathematical reasoning benchmarks show that the discovered strategies improve the overall accuracy--cost tradeoff over strong manually designed baselines. The discovered strategies generalize to held-out benchmarks and model scales, while the entire discovery costs only $39.9 and 160 minutes. Our data, and code will be open-source at https://github.com/zhengkid/AutoTTS.",
+    "authors": [
+      "Tong Zheng",
+      "Haolin Liu",
+      "Chengsong Huang",
+      "Huiwen Bao",
+      "Sheng Zhang",
+      "Rui Liu",
+      "Runpeng Dai",
+      "Ruibo Chen",
+      "Chenxi Liu",
+      "Tianyi Xiong",
+      "Xidong Wu",
+      "Hongming Zhang",
+      "Heng Huang"
+    ],
+    "likes": 53,
+    "published_date": "May 8",
+    "url": "https://huggingface.co/papers/2605.08083",
+    "date_collected": "2026-05-12T07:29:40.033016+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "LLMs 개선을 위한 LLMs: 테스트 시간 확장에 대한 에이전틱 디스커버리",
+      "abstract": "테스트 시간 확장(TTS)은 부가 계산을 할당하여 추론 중에 대형 언어 모델 성능을 개선하는 효과적인 방법이 되었습니다. 그러나 기존 TTS 전략은 주로 수동 설정입니다. 연구자들은 추론 패턴을 직접 설계하고 직관에 따라 휴리스틱을 조정합니다. 이로써 계산 할당 공간의 많은 부분이 탐험되지 않은 채로 남게 됩니다. 저희는 AutoTTS라는 환경 주도적 프레임워크를 제안합니다. 이는 개별 TTS 휴리스틱에서 자동으로 TTS 전략이 발견될 수 있는 환경으로 연구자들이 설계하는 것을 바꿉니다. AutoTTS의 핵심은 환경 구성에 있습니다. 발견 환경은 제어 공간을 다룰 수 있고 TTS 탐색을 위해 싼 비용의 자주 발생하는 피드백을 제공해야 합니다. 구체적으로, 우리는 폭--깊이 TTS를 미리 수집된 추론 트라젝토리와 프로브 신호에 대한 컨트롤러 합성으로 고안합니다. 컨트롤러는 분기, 계속, 조사, 가지치기 또는 중지할 때를 결정하며 LLM 호출을 반복하지 않고도 저렴하게 평가될 수 있습니다. 더 나아가, 우리는 검색을 가능하게 하기 위해 베타 파라미터화를 소개하고 트레이싱 피드백을 통해 에이전트가 TTS 프로그램이 실패하는 이유를 진단할 수 있도록 섬세한 실행 추적 피드백을 제공합니다. 수학적 추론 벤치마크 실험에서 발견된 전략이 강력하게 수동으로 설계된 베이스라인에 비해 전반적인 정확도--비용 교환을 향상시킵니다. 발견된 전략은 보류된 벤치마크와 모델 스케일까지 일반화되며, 전체 발견 비용은 단 39.9 달러와 160분에 불과합니다. 우리의 데이터와 코드는 https://github.com/zhengkid/AutoTTS에서 오픈 소스로 제공될 것입니다."
+    },
+    "summary": "1. 테스트 시간 확장(TTS)을 자동으로 발견하는 AutoTTS 프레임워크를 제안하였으며, 수학적 추론 벤치마크 실험에서 발견된 전략이 전반적인 정확도--비용 교환을 향상시킵니다.\n2. AutoTTS는 환경 구성을 통해 발견 환경을 제어 가능하게 하고 자주 발생하는 피드백을 통해 TTS 탐색을 돕습니다.\n3. 폭--깊이 TTS를 컨트롤러 합성으로 고안하고 베타 파라미터화와 실행 추적 피드백을 도입하여 검색 가능성을 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "HumanNet: Scaling Human-centric Video Learning to One Million Hours",
+    "abstract": "Progress in embodied intelligence increasingly depends on scalable data infrastructure. While vision and language have scaled with internet corpora, learning physical interaction remains constrained by the lack of large, diverse, and richly annotated human activity data. We present HumanNet, a one-million-hour human-centric video corpus that captures how humans interact with the physical world at scale. HumanNet spans both first-person and third-person perspectives and covers fine-grained activities, human-object interactions, tool use, and long-horizon behaviors across diverse real-world environments. Beyond raw video, the dataset provides interaction-centric annotations, including captions, motion descriptions, and hand and body-related signals, enabling motion-aware and interaction-aware learning. Beyond scale, HumanNet introduces a systematic data curation paradigm for embodied learning, where human-centric filtering, temporal structuring, viewpoint diversity, and annotation enrichment are treated as first-class design principles. This design transforms unstructured internet video into a scalable substrate for representation learning, activity understanding, motion generation, and human-to-robot transfer. We conduct a first-step validation on the value of this design through controlled vision-language-action ablation: under a fixed set of validation data, continued training from the Qwen VLM model with 1000 hours of egocentric video drawn from HumanNet surpasses the continued training with 100 hours of real-robot data from Magic Cobot, indicating that egocentric human video could be a scalable and cost-effective substitute for robot data. By building this project, we aim to explore the opportunity to scale embodied foundation models using human-centric videos, rather than relying solely on robot-specific data.",
+    "authors": [
+      "Yufan Deng",
+      "Daquan Zhou"
+    ],
+    "likes": 40,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2605.06747",
+    "date_collected": "2026-05-12T07:29:40.034395+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "HumanNet: 인간중심 비디오 학습을 100만 시간으로 확장하기",
+      "abstract": "구체 지능의 발전은 점점 확장 가능한 데이터 인프라에 의존하고 있습니다. 비전과 언어는 인터넷 코퍼스로 확장되었지만, 물리적 상호작용 학습은 대규모, 다양하며 풍부하게 주석이 달린 인간 활동 데이터 부족으로 제약을 받고 있습니다. 본 논문에서는 인간이 어떻게 대규모로 물리적 세계와 상호작용하는지를 기록한 100만 시간 규모의 HumanNet이라는 인간중심 비디오 코퍼스를 제시합니다. HumanNet은 일인칭 및 3인칭 시점을 모두 포함하며, 세부 활동, 인간-물체 상호작용, 도구 사용, 다양한 실세계 환경에서의 장기 행동을 다룹니다. 해당 데이터셋은 캡션, 동작 설명, 손과 몸 신호 등 상호작용 중심 주석을 제공하여 동작 및 상호작용 인식을 가능하게 합니다. 또한 HumanNet은 체계적인 데이터 선별 패러다임을 소개하는데, 여기서 인간중심 필터링, 시간 구조화, 시각 다양성 및 주석 보강을 퍼스트클래스 디자인 원칙으로 취급합니다. 이 디자인은 구조화되지 않은 인터넷 비디오를 표현 학습, 활동 이해, 동작 생성 및 인간-로봇 전송을 위한 확장 가능한 기반으로 변환합니다. 이 연구를 통해 HumanNet은 이러한 디자인의 가치를 제어된 비전-언어-행동 제거를 통해 최초 검증합니다. HumanNet에서 추출된 로컬 비디오 1000시간을 가지고 Qwen VLM 모델로 계속 훈련하는 것이 Magic Cobot의 100시간의 실제 로봇 데이터로부터 계속 훈련하는 것을 능가함을 보여주며, 자아 중심 인간 비디오가 로봇 데이터에 대한 확장 가능하고 비용 효율적인 대체품일 수 있음을 보여줍니다. 이 프로젝트를 통해 인간 중심 비디오를 사용하여 구조적 기반 모델을 확장할 수 있는 기회를 탐색합니다."
+    },
+    "summary": "1. HumanNet은 100만 시간의 인간중심 비디오 코퍼스로, 활동, 상호작용, 도구 사용, 다양한 환경에서의 장기적 행동 등을 다루며, 상호작용 중심 주석을 통해 동작 및 상호작용 인식을 가능케 합니다.\n2. HumanNet은 체계적인 데이터 선별 및 다양한 디자인 원칙을 도입하여 인터넷 비디오를 활용한 구조화된 학습, 활동 이해, 동작 생성, 인간-로봇 전송을 가능하게 합니다.\n3. Qwen VLM 모델로 인간 중심 비디오를 사용한 훈련이 실제 로봇 데이터보다 효율적이라는 검증 결과를 통해, HumanNet은 로봇 데이터 대체로 활용 가능성을 제시하고 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Anisotropic Modality Align",
+    "abstract": "Training multimodal large language models has long been limited by the scarcity of high-quality paired multimodal data. Recent studies show that the shared representation space of pretrained multimodal contrastive models can serve as a bridge, enabling models to perform multimodal training with unimodal data. However, the key premise of this paradigm remains insufficiently understood: can representations from different modalities be reliably interchanged? The core obstacle lies in the persistent Modality Gap in the shared space. In this work, we revisit the geometric nature of the modality gap. We find that modality representations already share compatible dominant semantic geometry. What truly hinders modality interchangeability is not a simple global shift, but an anisotropic residual structure concentrated along a small number of dominant directions. Based on this finding, we further propose the principle of anisotropic modality gap alignment: effective modality alignment should align with the target-modality distribution while preserving the semantic structure of the source modality. Guided by this principle, we propose an anisotropic geometric correction framework, AnisoAlign, for unpaired modality alignment. This framework leverages the internal geometric prior of the target modality and performs bounded correction on source-modality representations, thereby constructing substitute representations in the target modality. Experiments confirm its benefits in both geometric diagnostics and text-only MLLM training. Overall, this work recasts the modality gap from an empirical observation into a correctable, structured geometric phenomenon and provides a new representation alignment perspective for training multimodal models with unimodal data.",
+    "authors": [
+      "Xiaomin Yu",
+      "Yijiang Li",
+      "Yuhui Zhang",
+      "Hanzhen Zhao",
+      "Yue Yang",
+      "Hao Tang",
+      "Yue Song",
+      "Xiaobin Hu",
+      "Chengwei Qin",
+      "Shuicheng Yan",
+      "Hui Xiong"
+    ],
+    "likes": 22,
+    "published_date": "May 8",
+    "url": "https://huggingface.co/papers/2605.07825",
+    "date_collected": "2026-05-12T07:29:40.036323+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "이방향성 모달리티 일치",
+      "abstract": "다양한 언어 및 이미지 정보를 결합한 대규모 모델 훈련은 고품질의 짝지어진 다모달 데이터 부족으로 제한되어왔습니다. 최근 연구에서 사전 훈련된 다모달 대조 모델의 공유 표현 공간이 모델이 단 모드 데이터로 다모달 훈련을 수행할 수 있도록 하는 다리 역할을 한다는 것을 보여주고 있습니다. 그러나 이 패러다임의 핵심 전제는 충분히 이해되지 않았습니다: 다른 모달리티의 표현을 신뢰할 수 있는 방식으로 교환할 수 있을까요? 가장 중요한 장애물은 공유 공간의 지속적인 모달리티 갭에 있습니다. 이 연구에서 우리는 모달리티 갭의 기하학적 성질을 재검토했습니다. 모달리티 표현은 이미 호환되는 우세한 의미 기하학을 공유한다는 것을 발견했습니다. 모달리티 교환 가능성을 실제로 방해하는 것은 단순한 전역 이동이 아니라 소수의 우세 방향을 따라 집중된 이방향성 잔류 구조입니다. 이 발견을 토대로 우리는 이방향성 모달리티 갭 일치 원칙을 제안합니다: 효과적인 모달리티 조정은 목표 모달리티 분포와 소스 모달리티의 의미 구조를 보존하는 동시에 조정해야 합니다. 이 원칙에 안내받아, 우리는 비짝지어진 모달리티 조정을 위한 이방향기하학적 보정 프레임워크인 AnisoAlign을 제안합니다. 이 프레임워크는 목표 모달리티의 내부 기하학적 선행 지식을 활용하고 소스 모달리티 표현에 제한된 보정을 수행하여 목표 모달리티에서 대체 표현을 구축합니다. 실험은 이것이 기하학적 진단 및 텍스트 전용 MLLM 훈련에서의 이점을 확인했습니다. 종합하면, 본 연구는 모달리티 갭을 경험적인 관찰에서 수정 가능한, 구조화된 기하학적 현상으로 재구성하고 단 모드 데이터로 다모달 모델을 훈련하기 위한 새로운 표현 조정 관점을 제시합니다."
+    },
+    "summary": "1. 다모달 대조 모델의 공유 표현 공간을 이용해 단 모드 데이터로 다모달 훈련을 하는 것이 가능한지에 대한 연구.\n2. 모달리티 갭의 기하학적 성질을 살펴보고, 이방향성 잔류 구조에 주목함.\n3. 목표 모달리티 분포에 따라 소스 모달리티의 의미 구조를 보존하면서 모달리티 조정을 하는 이방향성 모달리티 갭 일치 원칙을 제안하고 AnisoAlign 프레임워크를 개발.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Beyond Retrieval: A Multitask Benchmark and Model for Code Search",
+    "abstract": "Code search has usually been evaluated as first-stage retrieval, even though production systems rely on broader pipelines with reranking and developer-style queries. Existing benchmarks also suffer from data contamination, label noise, and degenerate binary relevance. In this paper, we introduce CoREB, a contamination-limited, multitask code retrieval and reranking benchmark, together with a fine-tuned code reranker, that goes beyond retrieval to cover the full code search pipeline. CoREB is built from counterfactually rewritten LiveCodeBench problems in five programming languages and delivered as timed releases with graded relevance judgments. We benchmark eleven embedding models and five rerankers across three tasks: text-to-code, code-to-text, and code-to-code. Our experiments reveal that: \\circone code-specialised embeddings dominate code-to-code retrieval ({sim}2{times} over general encoders), yet no single model wins all three tasks; \\circtwo short keyword queries, the format closest to real developer search, collapse every model to near-zero nDCG@10; \\circthree off-the-shelf rerankers are task-asymmetric, with a 12-point swing on code-to-code and no baseline net-positive across all tasks; \\circfour our fine-tuned CoREB-Reranker is the first to achieve consistent gains across all three tasks. The data and model are released.",
+    "authors": [
+      "Siqiao Xue",
+      "Zihan Liao",
+      "Jin Qin",
+      "Ziyin Zhang",
+      "Yixiang Mu",
+      "Fan Zhou",
+      "Hang Yu"
+    ],
+    "likes": 22,
+    "published_date": "May 6",
+    "url": "https://huggingface.co/papers/2605.04615",
+    "date_collected": "2026-05-12T07:29:40.037917+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "검색을 넘어: 코드 검색을 위한 다중 작업 벤치마크 및 모델",
+      "abstract": "코드 검색은 보통 첫 단계 검색으로 평가되어왔지만, 실제 시스템은 보다 넓은 파이프라인과 재랭킹 및 개발자 스타일 쿼리를 사용합니다. 기존 벤치마크는 데이터 오염, 레이블 노이즈 및 퇴화된 이진 관련성에 시달리고 있습니다. 본 논문에서는 오염이 제한된 다중 작업 코드 검색 및 재랭킹 벤치마크인 CoREB를 소개하며, 완전한 코드 검색 파이프라인을 다루는 파인튠드 코드 재랭커와 함께 제공합니다. CoREB는 다섯 가지 프로그래밍 언어의 컨트펙추얼 리라이트된 LiveCodeBench 문제에서 구축되었으며, 등급이 매겨진 관련성 판단이 담긴 타임드 릴리스로 제공됩니다. 우리는 세 가지 작업을 통해 열 한 개의 임베딩 모델과 다섯 개의 재랭커를 벤치마킹합니다: 텍스트 - 코드, 코드 - 텍스트 및 코드 - 코드. 우리의 실험 결과는 다음과 같습니다: ① 코드 특화 임베딩이 코드 - 코드 검색에서 우세합니다(일반 인코더의 약 2배), 그러나 하나의 모델이 세 가지 작업 모두에서 우승하지는 못함; ② 짧은 키워드 쿼리는 실제 개발자 검색에 가장 가까운 형식으로, 모든 모델을 거의 0에 가깝게 만듭니다; ③ 기본 재랭커들은 작업에 비대칭적이며, 코드 - 코드에서 12포인트의 변동이 발생하며 모든 작업에서 기준선 순위의 양수가 없습니다; ④ 우리의 파인튠드 CoREB-Reranker는 처음으로 세 가지 작업 모두에서 일관된 이득을 달성합니다. 데이터와 모델이 출시되었습니다."
+    },
+    "summary": "1. CoREB란 데이터 오염, 레이블 노이즈로부터 제한되어 코드 검색 및 재랭킹을 다루는 벤치마크로, 코드 특화 임베딩이 코드 - 코드 검색에서 우세하지만 모든 작업에서 특정 모델이 우승하지는 않음.\n2. 짧은 키워드 쿼리는 실제 개발자 검색에 가까운 형식이지만, 모든 모델을 거의 0으로 만들며, 재랭커들은 작업에 따라 편향되어 있음.\n3. CoREB-Reranker는 세 가지 작업 모두에서 일관된 이득을 얻는 첫 번째 모델로 나타났으며, 데이터와 모델이 공개되었다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "TextLDM: Language Modeling with Continuous Latent Diffusion",
+    "abstract": "Diffusion Transformers (DiT) trained with flow matching in a VAE latent space have unified visual generation across images and videos. A natural next step toward a single architecture for both generation (visual synthesis) and understanding (text generation) is to apply this framework to language modeling. We propose TextLDM, which transfers the visual latent diffusion recipe to text generation with minimal architectural modification. A Transformer-based VAE maps discrete tokens to continuous latents, enhanced by Representation Alignment (REPA) with a frozen pretrained language model to produce representations effective for conditional denoising. A standard DiT then performs flow matching in this latent space, identical in architecture to its visual counterpart. The central challenge we address is obtaining high-quality continuous text representations: we find that reconstruction fidelity alone is insufficient, and that aligning latent features with a pretrained language model via REPA is critical for downstream generation quality. Trained from scratch on OpenWebText2, TextLDM substantially outperforms prior diffusion language models and matches GPT-2 under the same settings. Our results establish that the visual DiT recipe transfers effectively to language, taking a concrete step toward unified diffusion architectures for multimodal generation and understanding.",
+    "authors": [
+      "Jiaxiu Jiang",
+      "Jingjing Ren",
+      "Wenbo Li",
+      "Bo Wang",
+      "Haoze Sun",
+      "Yijun Yang",
+      "Jianhui Liu",
+      "Yanbing Zhang",
+      "Shenghe Zheng",
+      "Yuan Zhang",
+      "Haoyang Huang",
+      "Nan Duan",
+      "Wangmeng Zuo"
+    ],
+    "likes": 19,
+    "published_date": "May 8",
+    "url": "https://huggingface.co/papers/2605.07748",
+    "date_collected": "2026-05-12T07:29:40.039902+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "TextLDM: 연속 잠재 확산을 이용한 언어 모델링",
+      "abstract": "VAE 잠재 공간에서 flow 일치를 훈련하는 Diffusion Transformers (DiT)는 이미지와 비디오 간 통합된 시각적 생성을 제공합니다. 이러한 프레임워크를 언어 모델링에 적용하여 생성 (시각적 합성)과 이해 (텍스트 생성)를 위한 단일 아키텍처로 나아가는 자연스러운 다음 단계는 무엇인가요? 저희는 TextLDM을 제안합니다. 이는 최소한의 구조적 수정으로 시각적 잠재 확산 레시피를 텍스트 생성으로 전이하는 것입니다. Transformer 기반 VAE는 이산 토큰을 연속적 잠재 요소로 매핑하며, 미세 조정된 사전 훈련된 언어 모델과의 표현 정렬(REPA)에 설명력을 더하여 조건부 노이즈 제거에 효과적인 표현을 생성합니다. 표준 DiT는 이러한 잠재 공간에서 flow 일치를 수행하며, 시각적 대응물과 동일한 아키텍처를 가지고 있습니다. 저희가 다루는 중심적인 과제는 고품질 연속 텍스트 표현을 확보하는 것입니다. 재구성 정확도만으로는 충분하지 않으며, REPA를 통해 잠재 특징을 사전 훈련된 언어 모델과 정렬하는 것이 하류 생성 품질에 중요하다는 사실을 발견했습니다. OpenWebText2에서 처음부터 훈련된 TextLDM은 기존의 확산 언어 모델을 크게 능가하며, 동일한 설정 하에서 GPT-2와 일치합니다. 저희 결과는 시각적 DiT 레시피가 언어로 효과적으로 전이되며, 멀티모달 생성과 이해를 위한 통합된 확산 아키텍처로의 구체적인 한 걸음임을 입증합니다."
+    },
+    "summary": "1. TextLDM은 시각적 생성과 텍스트 이해 모두에 활용되는 단일 아키텍처를 위한 방법론으로, Transformer 기반 VAE를 사용하여 연속적 텍스트 표현을 구현한다.\n2. Representation Alignment (REPA)를 통해 훈련된 언어 모델과의 효과적인 표현 정렬을 통해, TextLDM은 높은 품질의 연속 텍스트 표현을 얻고, downstream에서 우수한 생성 품질을 제공한다.\n3. OpenWebText2에서 훈련된 TextLDM은 기존의 확산 언어 모델을 크게 능가하며, GPT-2와 유사한 결과를 달성하며 멀티모달 생성과 이해를 위한 통합된 확산 아키텍처의 발전을 증명한다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

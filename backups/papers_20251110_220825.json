@@ -1,0 +1,328 @@
+[
+  {
+    "title": "Thinking with Video: Video Generation as a Promising Multimodal\n  Reasoning Paradigm",
+    "abstract": "\"Thinking with Text\" and \"Thinking with Images\" paradigm significantly\nimprove the reasoning ability of large language models (LLMs) and Vision\nLanguage Models (VLMs). However, these paradigms have inherent limitations. (1)\nImages capture only single moments and fail to represent dynamic processes or\ncontinuous changes, and (2) The separation of text and vision as distinct\nmodalities, hindering unified multimodal understanding and generation. To\novercome these limitations, we introduce \"Thinking with Video\", a new paradigm\nthat leverages video generation models, such as Sora-2, to bridge visual and\ntextual reasoning in a unified temporal framework. To support this exploration,\nwe developed the Video Thinking Benchmark (VideoThinkBench). VideoThinkBench\nencompasses two task categories: (1) vision-centric tasks (e.g., Eyeballing\nPuzzles), and (2) text-centric tasks (e.g., subsets of GSM8K, MMMU). Our\nevaluation establishes Sora-2 as a capable reasoner. On vision-centric tasks,\nSora-2 is generally comparable to state-of-the-art (SOTA) VLMs, and even\nsurpasses VLMs on several tasks, such as Eyeballing Games. On text-centric\ntasks, Sora-2 achieves 92% accuracy on MATH, and 75.53% accuracy on MMMU.\nFurthermore, we systematically analyse the source of these abilities. We also\nfind that self-consistency and in-context learning can improve Sora-2's\nperformance. In summary, our findings demonstrate that the video generation\nmodel is the potential unified multimodal understanding and generation model,\npositions \"thinking with video\" as a unified multimodal reasoning paradigm.",
+    "authors": [
+      "Jingqi Tong",
+      "Yurong Mou",
+      "Hangcheng Li",
+      "Mingzhe Li",
+      "Yongzhuo Yang",
+      "Ming Zhang",
+      "Qiguang Chen",
+      "Tianyi Liang",
+      "Xiaomeng Hu",
+      "Yining Zheng",
+      "Xinchi Chen",
+      "Jun Zhao",
+      "Xuanjing Huang",
+      "Xipeng Qiu"
+    ],
+    "likes": 162,
+    "published_date": "Nov 6",
+    "url": "https://huggingface.co/papers/2511.04570",
+    "date_collected": "2025-11-10T10:36:33.432014+09:00",
+    "week": "2025-W46",
+    "translation": {
+      "title": "동영상을 통한 사고: 약속된 다중모달 추론 패러다임으로서의 동영상 생성",
+      "abstract": "\"텍스트로 사고하기\"와 \"이미지로 사고하기\" 패러다임은 대형 언어 모델(Large Language Models, LLMs)과 비전 언어 모델(Vision Language Models, VLMs)의 추론 능력을 크게 향상시킵니다. 그러나 이러한 패러다임에는 내재적 제한이 있습니다. (1) 이미지는 단일 순간만을 포착하며 동적인 과정이나 지속적인 변화를 표현하지 못하며, (2) 텍스트와 비전을 서로 다른 모달로 분리하여 통합된 다중모달 이해와 생성을 방해합니다. 이러한 제한을 극복하기 위해, 우리는 \"동영상으로 사고하기\"를 소개합니다. 새로운 패러다임은 시각적과 텍스트적 추론을 통합 시간적 프레임워크에서 연계하기 위해 Sora-2와 같은 동영상 생성 모델을 활용합니다. 이 연구를 지원하기 위해 우리는 비전 중심 작업(예: 눈으로 해답을 찾기 퍼즐) 및 텍스트 중심 작업(예: GSM8K, MMMU 하위 집합)으로 이뤄진 Video Thinking Benchmark(VideoThinkBench)를 개발했습니다. 평가 결과, Sora-2는 뛰어난 추론 능력을 갖추고 있음을 입증했습니다."
+    },
+    "summary": "1. 기존 '텍스트로 사고하기'와 '이미지로 사고하기' 패러다임의 한계를 극복하기 위해 '동영상으로 사고하기'를 도입하며 시각적과 텍스트적 추론을 통합한 새로운 패러다임 제시\n2. Sora-2를 활용한 VideoThinkBench를 통해 이미지 중심 및 텍스트 중심 작업에서 우수한 성과 달성, SOTA VLMs보다 뛰어난 성능을 보임\n3. Sora-2의 성능을 향상시키는 자체 일관성과 맥락 학습의 중요성을 확인하며, 동영상 생성 모델이 통합된 다중모달 이해와 생성 모델의 가능성을 제시함",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Diffusion Language Models are Super Data Learners",
+    "abstract": "Under strictly controlled pre-training settings, we observe a Crossover: when\nunique data is limited, diffusion language models (DLMs) consistently surpass\nautoregressive (AR) models by training for more epochs. The crossover shifts\nlater with more or higher-quality data, earlier with larger models, and\npersists across dense and sparse architectures. We attribute the gains to three\ncompounding factors: (1) any-order modeling, (2) super-dense compute from\niterative bidirectional denoising, and (3) built-in Monte Carlo augmentation;\ninput or parameter noise improves AR under data constraint but cannot close the\ngap. At scale, a 1.7B DLM trained with a ~1.5T-token compute budget on 10B\nunique Python tokens overtakes an AR coder trained with strictly matched\nsettings. In addition, a 1B-parameter DLM achieves > 56% accuracy on HellaSwag\nand > 33% on MMLU using only 1B tokens, without any special tricks, just by\nrepeating standard pre-training data. We also show that rising validation\ncross-entropy does not imply degraded downstream performance in this regime.",
+    "authors": [
+      "Jinjie Ni",
+      "Qian Liu",
+      "Longxu Dou",
+      "Chao Du",
+      "Zili Wang",
+      "Hang Yan",
+      "Tianyu Pang",
+      "Michael Qizhe Shieh"
+    ],
+    "likes": 95,
+    "published_date": "Nov 5",
+    "url": "https://huggingface.co/papers/2511.03276",
+    "date_collected": "2025-11-10T10:36:33.433193+09:00",
+    "week": "2025-W46",
+    "translation": {
+      "title": "확산 언어 모델은 슈퍼 데이터 학습자들이다",
+      "abstract": "엄격히 제어된 사전 훈련 설정에서, 고유 데이터가 제한적인 경우, 확산 언어 모델(DLMs)은 더 많은 epoch로 훈련하여 자동 회귀(AR) 모델을 일관되게 능가하는 것을 관찰했습니다. 이 교차점은 더 많거나 높은 품질의 데이터로 인해 더 늦게 이동하며, 더 큰 모델로 인해 더 일찍 이동하며, 밀집형과 희소형 아키텍처 간에도 지속됩니다. 우리는 이러한 이득을 세 가지 복합 요인으로 귀속하고 있습니다: (1) 모든 순서를 모델링함, (2) 반복적인 양방향 제거를 통한 슈퍼 밀집 컴퓨팅, (3) 내장된 몬테카를로 증강; 입력 또는 매개변수 노이즈는 데이터 제한 하에서 AR을 개선하지만 격차를 메우지 못합니다. 규모에 따라, 약 1.5T 토큰 컴퓨팅 예산으로 훈련된 17억 DLM은 100억 개의 고유 파이썬 토큰에 AR 코더보다 능가합니다."
+    },
+    "summary": "1. 고유 데이터가 제한적인 경우, 확산 언어 모델(DLMs)은 자동 회귀(AR) 모델보다 더 많은 epoch로 훈련하여 우세함.\n2. 확산 언어 모델(DLMs)의 이익은 모든 순서를 모델링하고, 슈퍼 밀집 컴퓨팅, 몬테카를로 증강의 세 가지 복합 요인에 기인함.\n3. 대규모로 훈련된 확산 언어 모델(DLM)은 고유 파이썬 토큰을 사용하여 AR 코더보다 우세함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual\n  Representation",
+    "abstract": "Code has emerged as a precise and executable medium for reasoning and action\nin the agent era. Yet, progress has largely focused on language-centric tasks\nsuch as program synthesis and debugging, leaving visual-centric coding\nunderexplored. Inspired by how humans reason over sketches, we advocate SVG\ncode as a compact, interpretable, and executable visual representation. We\nintroduce VCode, a benchmark that reframes multimodal understanding as code\ngeneration: given an image, a model must produce SVG that preserves symbolic\nmeaning for downstream reasoning. VCode covers three domains - general\ncommonsense (MM-Vet), professional disciplines (MMMU), and visual-centric\nperception (CV-Bench). To assess symbolic fidelity, we propose CodeVQA, a novel\nevaluation protocol in which a policy model answers questions over rendered\nSVGs; correct answers indicate faithful symbolic preservation. Empirically,\nfrontier VLMs struggle to generate faithful SVGs, revealing a persistent gap\nbetween language-centric and visual-centric coding. To close this gap, we\nintroduce VCoder, an agentic framework that augments VLMs along two axes: (i)\nThinking with Revision, which iteratively analyzes discrepancies and refines\nSVG code; and (ii) Acting with Visual Tools, where detectors and parsers supply\nstructured cues such as objects, shapes, and text beyond the model's intrinsic\ncapacity. Across benchmarks, frontier VLMs with strong reasoning capabilities\nscore well overall yet remain limited in professional knowledge and 3D\nreasoning. VCoder delivers a 12.3-point overall gain over the top-performing\nClaude-4-Opus. Human studies show that both humans and VLMs perform worse on\nrendered SVGs, their consistency reveals the promise of symbolic visual\nrepresentation. The benchmark and code are available at\nhttps://github.com/CSU-JPG/VCode.",
+    "authors": [
+      "Kevin Qinghong Lin",
+      "Yuhao Zheng",
+      "Hangyu Ran",
+      "Dantong Zhu",
+      "Dongxing Mao",
+      "Linjie Li",
+      "Philip Torr",
+      "Alex Jinpeng Wang"
+    ],
+    "likes": 95,
+    "published_date": "Nov 4",
+    "url": "https://huggingface.co/papers/2511.02778",
+    "date_collected": "2025-11-10T10:36:33.434329+09:00",
+    "week": "2025-W46",
+    "translation": {
+      "title": "VCode: SVG를 기호적 시각 표현으로 하는 멀티모달 코딩 벤치마크",
+      "abstract": "코드는 에이전트 시대에서 추론과 행동을 위한 정교하고 실행 가능한 매체로 떠오르고 있습니다. 그러나 현재의 발전은 주로 프로그램 합성 및 디버깅과 같은 언어 중심 작업에 집중되어 시각 중심 코딩은 미개발된 상태입니다. 우리는 사람들이 스케치를 통해 추론하는 방식에서 영감을 받아 컴팩트하고 해석 가능하며 실행 가능한 시각 표현으로 SVG 코드를 주장합니다. 우리는 멀티모달 이해를 코드 생성으로 다시 정의하는 VCode를 소개합니다: 모델이 이미지를 제공하면 해당 모델은 상징적인 의미를 보존하는 SVG를 생성해야 합니다. VCode는 일반 상식(MM-Vet), 전문 분야(MMMU), 시각 중심 지각(CV-Bench) 세 가지 도메인을 다룹니다. 상징적 충실성을 평가하기 위해 SVG를 렌더링하고 질문에 답변하는 CodeVQA 평가 방법론을 제안합니다. VLMs는 신뢰성 있는 SVG를 생성하는 데 어려움을 겪어 언어 중심과 시각 중심 코딩 사이에 지속적인 격차가 있음을 보여줍니다."
+    },
+    "summary": "1. SVG로 상징적인 시각 표현을 제공하는 VCode 멀티모달 코딩 벤치마크를 도입하였다.\n2. VLMs는 신뢰성 있는 SVG 생성에 어려움을 겪어 언어 중심 코딩과 시각 중심 코딩 간 지속적인 격차가 있음을 밝혔다.\n3. VCoder는 VLMs에 Thinking with Revision과 Acting with Visual Tools을 도입하여 성능을 향상시킨다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Don't Blind Your VLA: Aligning Visual Representations for OOD\n  Generalization",
+    "abstract": "The growing success of Vision-Language-Action (VLA) models stems from the\npromise that pretrained Vision-Language Models (VLMs) can endow agents with\ntransferable world knowledge and vision-language (VL) grounding, laying a\nfoundation for action models with broader generalization. Yet when these VLMs\nare adapted to the action modality, it remains unclear to what extent their\noriginal VL representations and knowledge are preserved. In this work, we\nconduct a systematic study of representation retention during VLA fine-tuning,\nshowing that naive action fine-tuning leads to degradation of visual\nrepresentations. To characterize and measure these effects, we probe VLA's\nhidden representations and analyze attention maps, further, we design a set of\ntargeted tasks and methods that contrast VLA models with their counterpart\nVLMs, isolating changes in VL capabilities induced by action fine-tuning. We\nfurther evaluate a range of strategies for aligning visual representations and\nintroduce a simple yet effective method that mitigates degradation and yields\nimproved generalization to out-of-distribution (OOD) scenarios. Taken together,\nour analysis clarifies the trade-off between action fine-tuning and the\ndegradation of VL representations and highlights practical approaches to\nrecover inherited VL capabilities. Code is publicly available:\nhttps://blind-vla-paper.github.io",
+    "authors": [
+      "Nikita Kachaev",
+      "Mikhail Kolosov",
+      "Daniil Zelezetsky",
+      "Alexey K. Kovalev",
+      "Aleksandr I. Panov"
+    ],
+    "likes": 88,
+    "published_date": "Oct 29",
+    "url": "https://huggingface.co/papers/2510.25616",
+    "date_collected": "2025-11-10T10:36:33.435331+09:00",
+    "week": "2025-W46",
+    "translation": {
+      "title": "당신의 VLA를 잃지 마세요: OOD 일반화를 위한 시각적 표현 정렬",
+      "abstract": "Vision-Language-Action(VLA) 모델의 성공은 사전 훈련된 Vision-Language 모델(VLMs)이 이전된 세계 지식과 시각-언어(VL) 매핑을 에이전트에게 제공할 수 있는 가능성에서 기인한다. 그러나 이러한 VLMs가 행동 모델에 적응될 때, 원래의 VL 표현과 지식이 얼마나 보존되는지는 여전히 불분명하다. 본 연구에서는 VLA의 세밀 조정을 통해 표현 보존을 체계적으로 연구하고, 단순한 행동 세밀 조정이 시각적 표현의 저하로 이어진다는 것을 보여준다. 이러한 효과를 특성화하고 측정하기 위해 VLA의 숨겨진 표현을 조사하고 주의 맵을 분석하였으며, VLA 모델과 그들의 상응하는 VLMs를 대조하는 목표 작업과 방법을 설계하여 행동 세밀 조정에 의해 유발된 VL 능력의 변화를 분리한다. 더 나아가, 시각적 표현을 정렬하기 위한 다양한 전략을 평가하고, 저하를 완화하고 OOD 상황에 대한 개선된 일반화를 제공하는 간단하지만 효과적인 방법을 소개한다. 종합적으로, 우리의 분석은 행동 세밀 조정과 VL 표현의 저하는 사이의 상충 관계를 명확히하고 상속된 VL 능력을 회복하기 위한 실용적 접근법을 강조한다. 코드는 공개적으로 제공됩니다:"
+    },
+    "summary": "1. VLA 모델의 시각적 표현 보존을 연구하여 행동 세밀 조정이 시각적 표현의 저하로 이어지는 것을 밝힘.\n2. VLA와 VLM 사이의 VL 능력 변화를 분석하고, 시각적 표현을 정렬하는 전략들을 평가함.\n3. 간단하면서 효과적인 방법을 도입하여 시각적 표현의 저하를 완화하고 OOD 상황에서 개선된 일반화 효과를 제공함.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "V-Thinker: Interactive Thinking with Images",
+    "abstract": "Empowering Large Multimodal Models (LMMs) to deeply integrate image\ninteraction with long-horizon reasoning capabilities remains a long-standing\nchallenge in this field. Recent advances in vision-centric reasoning explore a\npromising \"Thinking with Images\" paradigm for LMMs, marking a shift from\nimage-assisted reasoning to image-interactive thinking. While this milestone\nenables models to focus on fine-grained image regions, progress remains\nconstrained by limited visual tool spaces and task-specific workflow designs.\nTo bridge this gap, we present V-Thinker, a general-purpose multimodal\nreasoning assistant that enables interactive, vision-centric thinking through\nend-to-end reinforcement learning. V-Thinker comprises two key components: (1)\na Data Evolution Flywheel that automatically synthesizes, evolves, and verifies\ninteractive reasoning datasets across three dimensions-diversity, quality, and\ndifficulty; and (2) a Visual Progressive Training Curriculum that first aligns\nperception via point-level supervision, then integrates interactive reasoning\nthrough a two-stage reinforcement learning framework. Furthermore, we introduce\nVTBench, an expert-verified benchmark targeting vision-centric interactive\nreasoning tasks. Extensive experiments demonstrate that V-Thinker consistently\noutperforms strong LMM-based baselines in both general and interactive\nreasoning scenarios, providing valuable insights for advancing\nimage-interactive reasoning applications.",
+    "authors": [
+      "Runqi Qiao",
+      "Qiuna Tan",
+      "Minghan Yang",
+      "Guanting Dong",
+      "Peiqing Yang",
+      "Shiqiang Lang",
+      "Enhui Wan",
+      "Xiaowan Wang",
+      "Yida Xu",
+      "Lan Yang",
+      "Chong Sun",
+      "Chen Li",
+      "Honggang Zhang"
+    ],
+    "likes": 81,
+    "published_date": "Nov 6",
+    "url": "https://huggingface.co/papers/2511.04460",
+    "date_collected": "2025-11-10T10:36:33.436653+09:00",
+    "week": "2025-W46",
+    "translation": {
+      "title": "이미지와 상호작용하는 V-Thinker: 대화형 사고",
+      "abstract": "대형 다중모달 모델(LMMs)이 이미지 상호작용을 긴 시야 범위 추론 능력과 깊게 통합하는 것은 이 분야에서 오랫동안 도전해온 과제입니다. 최근의 시각 중심 추론의 발전은 LMMs에 대한 \"이미지와 함께 사고(Thinking with Images)\" 패러다임을 탐구하여 이미지 지원 추론에서 이미지 상호작용적 사고로의 전환이되고 있습니다. 이 이정표는 모델이 세밀한 이미지 영역에 집중할 수 있도록 만들었지만, 진전은 한정된 시각적 도구 공간과 과업 특정 워크플로 디자인으로 제약되어 있습니다. 이것을 극복하기 위해 우리는 V-Thinker를 제안합니다. 이는 대화형, 시각 중심적 사고를 통해 종단간 강화학습을 가능하게 하는 일반 목적의 다중모달 추론 어시스턴트입니다."
+    },
+    "summary": "1. V-Thinker는 다중모달 모델에 대한 대화형, 시각 중심적 사고를 가능케 하는 일반 목적의 추론 어시스턴트입니다.\n2. Data Evolution Flywheel은 상호작용 추론 데이터셋을 자동으로 합성, 발전시키고 검증함으로써 다양성, 품질, 난이도의 세 가지 차원을 넘어섭니다.\n3. Visual Progressive Training Curriculum은 먼저 점수 수준의 감독을 통해 지각을 조정하고, 이후 상호작용 추론을 두 단계 강화학습 프레임워크를 통해 통합합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Every Activation Boosted: Scaling General Reasoner to 1 Trillion Open\n  Language Foundation",
+    "abstract": "We introduce Ling 2.0, a series reasoning-oriented language foundation built\nupon the principle that every activation boosts reasoning capability. Designed\nto scale from tens of billions to one trillion parameters under a unified\nMixture-of-Experts (MoE) paradigm, Ling 2.0 emphasizes high sparsity,\ncross-scale consistency, and efficiency guided by empirical scaling laws. The\nseries includes three non-thinking (instruct) models - Ling-mini-2.0,\nLing-flash-2.0, and Ling-1T - ranging from 16B to 1T total parameters and\nachieving up to 7-fold active-compute efficiency compared with dense\ncounterparts. Ling 2.0 integrates coordinated innovations across model\narchitecture, pre-training, post-training, and infrastructure: a high-sparsity\nMoE with MTP for efficient reasoning, reasoning-oriented data and mid-training\nCoT activation, reinforcement-based fine-tuning (DFT, Evo-CoT), and full-scale\nFP8 training with fine-grained heterogeneous pipelines. At the trillion scale,\nLing-1T establishes a new Pareto frontier of reasoning accuracy versus\ncomputational efficiency, demonstrating that sparse activation, when properly\naligned with reasoning objectives, enables scalable and efficient intelligence.\nCollectively, Ling 2.0 provides a coherent, open, and efficient foundation for\nadvancing future reasoning and thinking models, including the Ring series built\nupon the same base.",
+    "authors": [
+      "Ling-Team",
+      "Ang Li",
+      "Ben Liu",
+      "Binbin Hu",
+      "Bing Li",
+      "Bingwei Zeng",
+      "Borui Ye",
+      "Caizhi Tang",
+      "Changxin Tian",
+      "Chao Huang",
+      "Chao Zhang",
+      "Chen Qian",
+      "Chenchen Ju",
+      "Chenchen Li",
+      "Chengfu Tang",
+      "Chili Fu",
+      "Chunshao Ren",
+      "Chunwei Wu",
+      "Cong Zhang",
+      "Cunyin Peng",
+      "Dafeng Xu",
+      "Daixin Wang"
+    ],
+    "likes": 80,
+    "published_date": "Oct 25",
+    "url": "https://huggingface.co/papers/2510.22115",
+    "date_collected": "2025-11-10T10:36:33.438307+09:00",
+    "week": "2025-W46",
+    "translation": {
+      "title": "모든 활성화가 촉진된다: 1조 오픈 언어 기초로 범용 추론기를 확장하기",
+      "abstract": "Ling 2.0은 모든 활성화가 추론 능력을 촉진시키는 원칙에 기반한 추론 중심 언어 기초를 소개합니다. 10억에서 1조 파라미터까지 통합된 전문가 모델 혼합(Mixture-of-Experts, MoE) 패러다임 하에 확장 가능하도록 설계된 Ling 2.0은 고 희소성, 교차 스케일 일관성, 및 경험적 스케일링 법칙에 따른 효율성을 강조합니다. Ling-mini-2.0, Ling-flash-2.0, Ling-1T 등 세 비사고 모델을 포함한 시리즈는 16B에서 1T 파라미터를 보유하며, 밀집 대조군에 비해 최대 7배의 활성 계산 효율성을 달성합니다. Ling 2.0은 MoE 고 희소성과 효율적 추론을 위한 MTP, 추론 중심 데이터 및 중간 훈련 CoT 활성화, 강화 기반 미세 튜닝 (DFT, Evo-CoT), 그리고 고도 FP8 훈련과 미세한 이질적 파이프라인을 결합한 조정된 혁신을 통합합니다. 1조 규모에서 Ling-1T는 추론 정확도 대 계산 효율성의 새로운 파레토 효자를 수립하여, 적절하게 추론 목표에 맞게 정렬된 희소 활성화가 확장 가능하고 효율적인 지능을 가능하게 합니다. 총괄적으로 Ling 2.0은 미래 추론 및 사고 모델 발전을 위한 일관된, 개방적, 그리고 효율적인 기초를 제공하며, 동일한 기반 위에 구축된 Ring 시리즈를 포함합니다."
+    },
+    "summary": "1. Ling 2.0은 모든 활성화가 추론 능력을 향상시키는 중심 언어 기초로, 1조까지 확장 가능한 시리즈 모델로 구성되어 있다.\n2. Ling 2.0은 희소성 MoE, 효율적 추론을 위한 MTP, 그리고 강화 기반 미세 튜닝 등의 혁신을 채택하여, 활성 계산 효율성을 최대 7배 향상시켰다.\n3. Ling-1T는 추론 정확도 대 계산 효율성의 새로운 파레토 효자를 세우며, 희소 활성화가 효율적인 지능을 가능케 하는 것을 입증했다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "ThinkMorph: Emergent Properties in Multimodal Interleaved\n  Chain-of-Thought Reasoning",
+    "abstract": "Multimodal reasoning requires iterative coordination between language and\nvision, yet it remains unclear what constitutes a meaningful interleaved chain\nof thought. We posit that text and image thoughts should function as\ncomplementary, rather than isomorphic, modalities that mutually advance\nreasoning. Guided by this principle, we build ThinkMorph, a unified model\nfine-tuned on 24K high-quality interleaved reasoning traces spanning tasks with\nvarying visual engagement. ThinkMorph learns to generate progressive text-image\nreasoning steps that concretely manipulate visual content while maintaining\ncoherent verbal logic. It delivers large gains on vision-centric benchmarks\n(averaging 34.7% over the base model) and generalizes to out-of-domain tasks,\nmatching or surpassing larger and proprietary VLMs. Beyond performance,\nThinkMorph exhibits emergent multimodal intelligence, including unseen visual\nmanipulation skills, adaptive switching between reasoning modes, and better\ntest-time scaling through diversified multimodal thoughts.These findings\nsuggest promising directions for characterizing the emergent capabilities of\nunified models for multimodal reasoning.",
+    "authors": [
+      "Jiawei Gu",
+      "Yunzhuo Hao",
+      "Huichen Will Wang",
+      "Linjie Li",
+      "Michael Qizhe Shieh",
+      "Yejin Choi",
+      "Ranjay Krishna",
+      "Yu Cheng"
+    ],
+    "likes": 78,
+    "published_date": "Oct 30",
+    "url": "https://huggingface.co/papers/2510.27492",
+    "date_collected": "2025-11-10T10:36:33.439419+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "ThinkMorph: 다중 모달 교차체인 사고 추론에서의 신생 속성",
+      "abstract": "다중 모달 추론은 언어와 시각 간의 반복적 조율을 요구하지만, 어떤 의미 있는 교차체인 사고를 구성하는지는 여전히 명확하지 않습니다. 우리는 텍스트와 이미지 사고가 상호 보완적으로 작용해야 하며 동질적인 것이 아닌 모달로, 상호적으로 추론을 전진시킬 것이라고 주장합니다. 이 원칙에 따라, 우리는 서로 다른 시각적 참여를 가진 과제 영역에 걸쳐 24K의 고품질 교차체인 추론 트레이스에 맞춤형된 통합 모델 ThinkMorph를 구축했습니다."
+    },
+    "summary": "1. ThinkMorph는 텍스트-이미지 추론 단계를 생성하고 시각적 콘텐츠를 구체적으로 조작하면서 일관된 언어적 논리를 유지함으로써 대형 성능의 비전 중심 벤치마크에서 상당한 이득을 제공합니다.\n2. 본 연구에서 발견된 다중 모달 지능의 신생 속성은, unseen 시각적 조작 기술, 추론 모드 간 적응적 전환, 다양한 다중 모달 사고를 통한 더 나은 테스트 시 확장성을 포함합니다.\n3. ThinkMorph는 다중 모달 추론을 위한 통합 모델의 신생 능력을 특성화하는 유망한 방향을 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid\n  Validation in Realistic Workflows",
+    "abstract": "Computer-using agents powered by Vision-Language Models (VLMs) have\ndemonstrated human-like capabilities in operating digital environments like\nmobile platforms. While these agents hold great promise for advancing digital\nautomation, their potential for unsafe operations, such as system compromise\nand privacy leakage, is raising significant concerns. Detecting these safety\nconcerns across the vast and complex operational space of mobile environments\npresents a formidable challenge that remains critically underexplored. To\nestablish a foundation for mobile agent safety research, we introduce\nMobileRisk-Live, a dynamic sandbox environment accompanied by a safety\ndetection benchmark comprising realistic trajectories with fine-grained\nannotations. Built upon this, we propose OS-Sentinel, a novel hybrid safety\ndetection framework that synergistically combines a Formal Verifier for\ndetecting explicit system-level violations with a VLM-based Contextual Judge\nfor assessing contextual risks and agent actions. Experiments show that\nOS-Sentinel achieves 10%-30% improvements over existing approaches across\nmultiple metrics. Further analysis provides critical insights that foster the\ndevelopment of safer and more reliable autonomous mobile agents.",
+    "authors": [
+      "Qiushi Sun",
+      "Mukai Li",
+      "Zhoumianze Liu",
+      "Zhihui Xie",
+      "Fangzhi Xu",
+      "Zhangyue Yin",
+      "Kanzhi Cheng",
+      "Zehao Li",
+      "Zichen Ding",
+      "Qi Liu",
+      "Zhiyong Wu",
+      "Zhuosheng Zhang",
+      "Ben Kao",
+      "Lingpeng Kong"
+    ],
+    "likes": 70,
+    "published_date": "Oct 28",
+    "url": "https://huggingface.co/papers/2510.24411",
+    "date_collected": "2025-11-10T10:36:33.440790+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "OS-Sentinel: 혼합 검증을 통한 안전 강화 모바일 GUI 에이전트로",
+      "abstract": "비전-언어 모델(Vision-Language Models, VLMs)에 의한 컴퓨터 에이전트는 모바일 플랫폼과 같은 디지털 환경을 운영하는 데 인간과 유사한 능력을 보여주었습니다. 그러나 이러한 에이전트가 시스템 침해나 개인 정보 누출과 같은 안전하지 않은 작업을 할 수 있는 가능성은 상당히 우려스럽습니다. 본 연구는 안전 감지 벤치마크와 함께 현실적인 궤적 및 세세한 주석으로 이루어진 MobileRisk-Live를 소개하고, 여기에 기반한 OS-Sentinel을 제안합니다. OS-Sentinel은 명시적 시스템 수준 위반을 탐지하기 위한 형식 검증기와 맥락 위험 및 에이전트 작업을 평가하기 위한 VLM 기반 맥락적 심판을 융합한 혼합 안전 감지 프레임워크입니다. 실험 결과, OS-Sentinel은 다양한 측면에서 기존 방법에 비해 10%~30%의 개선을 달성합니다. 추가 분석은 더 안전하고 믿을 수 있는 자율적인 모바일 에이전트의 발전을 촉진하는 중요한 통찰력을 제공합니다."
+    },
+    "summary": "1. MobileRisk-Live를 통한 현실적인 환경에서의 안전 감지 벤치마크 도입\n2. OS-Sentinel은 시스템 수준 위반 및 맥락적 위험을 평가하여 안전 감지를 위한 혼합 프레임워크 제안\n3. 실험 결과, OS-Sentinel은 다양한 지표에서 10%~30%의 성능 향상을 보임",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Scaling Agent Learning via Experience Synthesis",
+    "abstract": "While reinforcement learning (RL) can empower large language model (LLM)\nagents by enabling self-improvement through interaction, its practical adoption\nremains challenging due to costly rollouts, limited task diversity, unreliable\nreward signals, and infrastructure complexity, all of which obstruct the\ncollection of scalable experience data. To address these challenges, we\nintroduce DreamGym, the first unified framework designed to synthesize diverse\nexperiences with scalability in mind to enable effective online RL training for\nautonomous agents. Rather than relying on expensive real-environment rollouts,\nDreamGym distills environment dynamics into a reasoning-based experience model\nthat derives consistent state transitions and feedback signals through\nstep-by-step reasoning, enabling scalable agent rollout collection for RL. To\nimprove the stability and quality of transitions, DreamGym leverages an\nexperience replay buffer initialized with offline real-world data and\ncontinuously enriched with fresh interactions to actively support agent\ntraining. To improve knowledge acquisition, DreamGym adaptively generates new\ntasks that challenge the current agent policy, enabling more effective online\ncurriculum learning. Experiments across diverse environments and agent\nbackbones demonstrate that DreamGym substantially improves RL training, both in\nfully synthetic settings and in sim-to-real transfer scenarios. On non-RL-ready\ntasks like WebArena, DreamGym outperforms all baselines by over 30%. And in\nRL-ready but costly settings, it matches GRPO and PPO performance using only\nsynthetic interactions. When transferring a policy trained purely on synthetic\nexperiences to real-environment RL, DreamGym yields significant additional\nperformance gains while requiring far fewer real-world interactions, providing\na scalable warm-start strategy for general-purpose RL.",
+    "authors": [
+      "Zhaorun Chen",
+      "Zhuokai Zhao",
+      "Kai Zhang",
+      "Bo Liu",
+      "Qi Qi",
+      "Yifan Wu",
+      "Tarun Kalluri",
+      "Sara Cao",
+      "Yuanhao Xiong",
+      "Haibo Tong",
+      "Huaxiu Yao",
+      "Hengduo Li",
+      "Jiacheng Zhu",
+      "Xian Li",
+      "Dawn Song",
+      "Bo Li",
+      "Jason Weston",
+      "Dat Huynh"
+    ],
+    "likes": 64,
+    "published_date": "Nov 5",
+    "url": "https://huggingface.co/papers/2511.03773",
+    "date_collected": "2025-11-10T10:36:33.442303+09:00",
+    "week": "2025-W46",
+    "translation": {
+      "title": "경험 합성을 통한 에이전트 학습 확장",
+      "abstract": "강화 학습(RL)은 대규모 언어 모델(LLM) 에이전트들이 상호작용을 통해 자가 개선을 가능하게 할 수 있지만, 비용이 많이 들고 작업 다양성이 제한되며 신뢰할 수 없는 보상 신호와 인프라 복잡성으로 실용적 채택이 어려운 상황이다. 이러한 도전에 대응하기 위해 우리는 확장 가능한 경험 데이터 수집을 위한 효과적인 온라인 RL 훈련을 가능케하는 DreamGym이라는 첫 번째 통합 프레임워크를 소개한다. DreamGym은 비용이 많이 드는 실제 환경 롤아웃에 의존하는 대신, 환경 역학을 추론 기반 경험 모델로 담아 상태 전이와 피드백 신호를 일관되게 도출하여 확장 가능한 RL을 위한 에이전트 롤아웃 수집을 가능케 한다. 전이의 안정성과 품질을 향상시키기 위해 DreamGym은 오프라인 실제 데이터로 초기화된 경험 재생 버퍼를 활용하고 신선한 상호작용을 통해 지속적으로 풍부하게 함으로써 에이전트 훈련을 지원한다. 지식 습득을 향상시키기 위해 DreamGym은 현재 에이전트 정책에 도전하는 새로운 작업을 적응적으로 생성함으로써 더 효과적인 온라인 커리큘럼 학습을 가능케 한다. 다양한 환경과 에이전트 백본에서의 실험은 DreamGym이 완전히 합성된 환경 및 실제 환경으로의 전송 시나리오에서 RL 훈련을 상당히 향상시키는 것을 보여준다. WebArena와 같은 RL 준비되지 않은 작업에서 DreamGym은 모든 기준선을 30% 이상 능가한다. 비용이 많이 드는 설정에서도, DreamGym은 단지 합성 상호작용을 사용하여 GRPO 및 PPO 성능과 일치시킨다. 순수한 합성 경험만을 기반으로 훈련된 정책을 실제 환경 RL로 전이할 때, DreamGym은 상당한 추가 성능 향상을 제공하면서 현실 세계 상호작용을 훨씬 적게 필요로 하여 일반적인 목적 RL을 위한 확장 가능한 웜 스타트 전략을 제공한다."
+    },
+    "summary": "1. DreamGym은 다양한 경험을 합성하고 확장성을 고려하여 각별한 현실 환경 롤아웃 비용을 줄여 효과적인 온라인 RL 에이전트 훈련을 가능케 한다.\n2. DreamGym은 안정성과 품질을 향상하기 위해 오프라인 실제 데이터를 활용하고 상호작용을 통해 경험 재생 버퍼를 지속적으로 업그레이드하면서 에이전트 훈련을 지원한다.\n3. DreamGym은 새로운 도전 작업을 생성하여 에이전트 정책에 도전함으로써 지식 습득을 향상시키는 동시에, 다양한 환경에서 RL 훈련을 상당히 향상시키며 전이 시나리오에서도 효과를 발휘한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization\n  Formats",
+    "abstract": "Modern AI hardware, such as Nvidia's Blackwell architecture, is increasingly\nembracing low-precision floating-point (FP) formats to handle the pervasive\nactivation outliers in Large Language Models (LLMs). Despite this industry\ntrend, a unified comparison of FP and integer (INT) quantization across varying\ngranularities has been missing, leaving algorithm and hardware co-design\nwithout clear guidance. This paper fills that gap by systematically\ninvestigating the trade-offs between FP and INT formats. We reveal a critical\nperformance crossover: while FP excels in coarse-grained quantization, the\ncomparison at fine-grained (block-wise) levels is more nuanced. Our\ncomprehensive comparison demonstrates that for popular 8-bit fine-grained\nformats (e.g., MX with block size 32), MXINT8 is superior to its FP counterpart\nin both algorithmic accuracy and hardware efficiency. However, for 4-bit\nformats, FP (e.g., MXFP4, NVFP4) often holds an accuracy advantage , though we\nshow that NVINT4 can surpass NVFP4 when outlier-mitigation techniques like\nHadamard rotation are applied. We also introduce a symmetric clipping method\nthat resolves gradient bias in fine-grained low-bit INT training, enabling\nnearly lossless performance for MXINT8 training. These findings challenge the\ncurrent hardware trajectory, demonstrating that a one-size-fits-all FP approach\nis suboptimal and advocating that fine-grained INT formats, particularly\nMXINT8, offer a better balance of accuracy, power, and efficiency for future AI\naccelerators.",
+    "authors": [
+      "Mengzhao Chen",
+      "Meng Wu",
+      "Hui Jin",
+      "Zhihang Yuan",
+      "Jing Liu",
+      "Chaoyi Zhang",
+      "Yunshui Li",
+      "Jie Huang",
+      "Jin Ma",
+      "Zeyue Xue",
+      "Zhiheng Liu",
+      "Xingyan Bin",
+      "Ping Luo"
+    ],
+    "likes": 63,
+    "published_date": "Oct 29",
+    "url": "https://huggingface.co/papers/2510.25602",
+    "date_collected": "2025-11-10T10:36:33.443629+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "INT 대 FP: 소수점 저비트 양자화 형식의 포괄적 연구",
+      "abstract": "현대 AI 하드웨어인 Nvidia의 Blackwell 구조 등은 대형 언어 모델 (LLM)의 지속적 활성화 이상치를 처리하기 위해 저 정밀도 부동 소수점 (FP) 형식을 점점 더 채택하고 있습니다. 그러나 FP와 정수 (INT) 양자화를 다양한 세부 단위에서 통합적으로 비교한 연구는 없었습니다. 이로 인해 알고리즘 및 하드웨어 공동 설계에 명확한 지침이 부족한 상황입니다. 본 논문은 FP와 INT 형식 사이의 트레이드오프를 체계적으로 조사해 이 간격을 메웁니다. 우리는 핵심 성능 교차점을 밝혀냅니다: FP는 대거나된 양자화에서 뛰어난 성과를 보이지만, 블록별 세밀한 수준에서의 비교는 미묘합니다. 우리의 포괄적 비교는 인기 있는 8비트 세밀한 형식(MX 블록 크기 32와 같은)에서 MXINT8이 알고리즘 정확도와 하드웨어 효율성 양면에서 FP 대응편보다 뛰어나다는 것을 보여줍니다. 그러나, 4비트 형식에서는 FP(MXFP4, NVFP4 등)가 종종 정확성 이점을 가집니다. 단, Hadamard 회전과 같은 이상치 완화 기술이 적용되면 NVINT4가 NVFP4를 능가할 수 있음을 보여줍니다. 또한 세밀한 저비트 INT 훈련의 기울기 편향을 해결하는 대칭 클리핑 방법을 소개하여 MXINT8 훈련에 거의 손실이 없는 성능을 제공합니다. 이러한 연구 결과는 현재 하드웨어 전략을 도전하며, 일반적인 FP 접근 방식이 하나의 크기가 모든 것이라는 것이 최적이 아니며, 향후 AI 가속기에 대한 정확성, 전력 및 효율성의 더 나은 균형을 제공하는 MXINT8과 같은 세밀한 INT 형식을 주장합니다."
+    },
+    "summary": "1. FP와 INT 양자화 형식의 세밀한 비교를 통해 MXINT8이 알고리즘 정확도와 하드웨어 효율성 측면에서 8비트 세밀 형식에서 우수하다는 것을 밝혀냄.\n2. Hadamard 회전 기술 등을 적용하면 NVINT4가 NVFP4를 능가할 수 있음을 시연하여 4비트 형식에서도 INT가 일정 이점을 지닌다는 것을 보여줌.\n3. 세밀한 INT 훈련에서 기울기 편향을 해결하는 대칭 클리핑 방법을 제안하여 MXINT8 훈련을 거의 손실없이 처리할 수 있게 함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  }
+]

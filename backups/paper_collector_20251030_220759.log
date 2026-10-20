@@ -1,0 +1,137 @@
+=== Paper Collection Started at Wed Oct 29 22:07:56 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W44
+URL: https://huggingface.co/papers/week/2025-W44
+Found 10 papers in weekly view
+Fetching likes for: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Fetching likes for: ReCode: Unify Plan and Action for Universal Granularity Control
+Fetching likes for: InteractComp: Evaluating Search Agents With Ambiguous Queries
+Fetching likes for: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Fetching likes for: Tongyi DeepResearch Technical Report
+Fetching likes for: A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
+Fetching likes for: AgentFold: Long-Horizon Web Agents with Proactive Context Management
+Fetching likes for: RoboOmni: Proactive Robot Manipulation in Omni-modal Context
+Fetching likes for: FARMER: Flow AutoRegressive Transformer over Pixels
+Fetching likes for: Game-TARS: Pretrained Foundation Models for Scalable Generalist
+  Multimodal Game Agents
+Selected top 10 papers by likes:
+1. Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations (159 likes)
+2. ReCode: Unify Plan and Action for Universal Granularity Control (108 likes)
+3. InteractComp: Evaluating Search Agents With Ambiguous Queries (82 likes)
+4. DeepAgent: A General Reasoning Agent with Scalable Toolsets (81 likes)
+5. Tongyi DeepResearch Technical Report (68 likes)
+6. A Survey of Data Agents: Emerging Paradigm or Overstated Hype? (59 likes)
+7. AgentFold: Long-Horizon Web Agents with Proactive Context Management (52 likes)
+8. RoboOmni: Proactive Robot Manipulation in Omni-modal Context (50 likes)
+9. FARMER: Flow AutoRegressive Transformer over Pixels (48 likes)
+10. Game-TARS: Pretrained Foundation Models for Scalable Generalist
+  Multimodal Game Agents (43 likes)
+Found abstract: Humans learn abstract concepts through multisensory synergy, and once formed,
+such representations c...
+Processed paper: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Found abstract: Real-world tasks require decisions at varying granularities, and humans excel
+at this by leveraging ...
+Processed paper: ReCode: Unify Plan and Action for Universal Granularity Control
+Found abstract: Language agents have demonstrated remarkable potential in web search and
+information retrieval. Howe...
+Processed paper: InteractComp: Evaluating Search Agents With Ambiguous Queries
+Found abstract: Large reasoning models have demonstrated strong problem-solving abilities,
+yet real-world tasks ofte...
+Processed paper: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Found abstract: We present Tongyi DeepResearch, an agentic large language model, which is
+specifically designed for ...
+Processed paper: Tongyi DeepResearch Technical Report
+Found abstract: The rapid advancement of large language models (LLMs) has spurred the
+emergence of data agents--auto...
+Processed paper: A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
+Found abstract: LLM-based web agents show immense promise for information seeking, yet their
+effectiveness on long-h...
+Processed paper: AgentFold: Long-Horizon Web Agents with Proactive Context Management
+Found abstract: Recent advances in Multimodal Large Language Models (MLLMs) have driven rapid
+progress in Vision-Lan...
+Processed paper: RoboOmni: Proactive Robot Manipulation in Omni-modal Context
+Found abstract: Directly modeling the explicit likelihood of the raw data distribution is key
+topic in the machine l...
+Processed paper: FARMER: Flow AutoRegressive Transformer over Pixels
+Found abstract: We present Game-TARS, a generalist game agent trained with a unified,
+scalable action space anchored...
+Processed paper: Game-TARS: Pretrained Foundation Models for Scalable Generalist
+  Multimodal Game Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Paper already exists, checking if translation is complete...
+Update likes: 159  ->  144
+Update date_collected: 2025-10-30T07:08:05.693020+09:00  ->  2025-10-29T07:08:09.278552+09:00
+
+Processing paper 2/10
+Title: ReCode: Unify Plan and Action for Universal Granularity Control
+Paper already exists, checking if translation is complete...
+Update likes: 108  ->  97
+Update date_collected: 2025-10-30T07:08:05.694537+09:00  ->  2025-10-29T07:08:09.280125+09:00
+
+Processing paper 3/10
+Title: InteractComp: Evaluating Search Agents With Ambiguous Queries
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Paper already exists, checking if translation is complete...
+Update likes: 81  ->  76
+Update date_collected: 2025-10-30T07:08:05.697851+09:00  ->  2025-10-29T07:08:09.281551+09:00
+
+Processing paper 5/10
+Title: Tongyi DeepResearch Technical Report
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  50
+Update date_collected: 2025-10-30T07:08:05.701857+09:00  ->  2025-10-29T07:08:09.283477+09:00
+
+Processing paper 7/10
+Title: AgentFold: Long-Horizon Web Agents with Proactive Context Management
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: RoboOmni: Proactive Robot Manipulation in Omni-modal Context
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: FARMER: Flow AutoRegressive Transformer over Pixels
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  43
+Update date_collected: 2025-10-30T07:08:05.706246+09:00  ->  2025-10-29T07:08:09.284803+09:00
+
+Processing paper 10/10
+Title: Game-TARS: Pretrained Foundation Models for Scalable Generalist
+  Multimodal Game Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W44.json...
+
+Updating Notion database...
+Updating paper: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial (likes: 144 -> 159)
+Updating paper: ReCode: 일반적인 세분성 제어를 위한 계획과 행동 통합 (likes: 97 -> 108)
+Creating new paper: 모호한 쿼리로 검색 보조 에이전트 평가하기
+Updating paper: DeepAgent: 확장 가능한 도구 세트를 갖춘 일반적인 추론 에이전트 (likes: 76 -> 81)
+Creating new paper: 동이 딥리서치 기술 보고서
+Updating paper: 데이터 에이전트 조사: 신흥 패러다임 또는 과대포장 논란? (likes: 50 -> 59)
+Creating new paper: 에이전트폴드: 선제적 컨텍스트 관리를 통한 장기적 웹 에이전트
+Creating new paper: 로보옴니: 다중 모달 맥락에서의 선제적 로봇 조작
+Updating paper: 픽셀 위의 플로우 자기회귀 트랜스포머: FARMER (likes: 43 -> 48)
+Creating new paper: 게임-TARS: 확장 가능한 일반 기능의 사전 훈련된 기초 모델을 갖춘 다중 모달 게임 에이전트
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Oct 29 22:11:19 UTC 2025 ===
+

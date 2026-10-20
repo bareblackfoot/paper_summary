@@ -1,0 +1,131 @@
+=== Paper Collection Started at Wed Jul 15 23:03:22 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W29
+URL: https://huggingface.co/papers/week/2026-W29
+Found 10 papers in weekly view
+Fetching likes for: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Fetching likes for: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Fetching likes for: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Fetching likes for: Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Fetching likes for: Video Generation Models are General-Purpose Vision Learners
+Fetching likes for: SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding
+Fetching likes for: Scalable Visual Pretraining for Language Intelligence
+Fetching likes for: Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation
+Fetching likes for: 4D Human-Scene Reconstruction from Low-Overlap Captures
+Fetching likes for: LightMem-Ego: Your AI Memory for Everyday Life
+Selected top 10 papers by likes:
+1. Weak-to-Strong Generalization via Direct On-Policy Distillation (112 likes)
+2. ABot-N1: Toward a General Visual Language Navigation Foundation Model (84 likes)
+3. ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory (72 likes)
+4. Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading (64 likes)
+5. Video Generation Models are General-Purpose Vision Learners (59 likes)
+6. SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding (51 likes)
+7. Scalable Visual Pretraining for Language Intelligence (50 likes)
+8. Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation (42 likes)
+9. 4D Human-Scene Reconstruction from Low-Overlap Captures (42 likes)
+10. LightMem-Ego: Your AI Memory for Everyday Life (36 likes)
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-mo...
+Processed paper: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Found abstract: Visual Language Navigation foundation models aim to unify deep reasoning for grounded spatial decisi...
+Processed paper: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Found abstract: Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon ...
+Processed paper: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Found abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, exist...
+Processed paper: Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Found abstract: Driven by next-token prediction, NLP shifted from task-specific models into powerful generalist foun...
+Processed paper: Video Generation Models are General-Purpose Vision Learners
+Found abstract: Vision language models (VLMs) have achieved strong performance on visual document understanding benc...
+Processed paper: SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding
+Found abstract: The rapid progress of large foundation models has been driven predominantly by pretraining on large-...
+Processed paper: Scalable Visual Pretraining for Language Intelligence
+Found abstract: In this paper, we propose SpectraReward, a training-free reward function that turns pretrained MLLMs...
+Processed paper: Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation
+Found abstract: Existing volumetric capture of dynamic human performance achieves high fidelity with dense camera ar...
+Processed paper: 4D Human-Scene Reconstruction from Low-Overlap Captures
+Found abstract: Personal AI assistants on mobile and wearable devices continuously perceive users' daily lives throu...
+Processed paper: LightMem-Ego: Your AI Memory for Everyday Life
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  92
+Update date_collected: 2026-07-16T08:03:31.279204+09:00  ->  2026-07-15T08:02:30.466344+09:00
+
+Processing paper 2/10
+Title: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 84  ->  80
+Update date_collected: 2026-07-16T08:03:31.283204+09:00  ->  2026-07-15T08:02:30.470413+09:00
+
+Processing paper 3/10
+Title: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  68
+Update date_collected: 2026-07-16T08:03:31.287097+09:00  ->  2026-07-15T08:02:30.474407+09:00
+
+Processing paper 4/10
+Title: Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  61
+Update date_collected: 2026-07-16T08:03:31.290683+09:00  ->  2026-07-15T08:02:30.478030+09:00
+
+Processing paper 5/10
+Title: Video Generation Models are General-Purpose Vision Learners
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  54
+Update date_collected: 2026-07-16T08:03:31.294138+09:00  ->  2026-07-15T08:02:30.481590+09:00
+
+Processing paper 6/10
+Title: SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 7/10
+Title: Scalable Visual Pretraining for Language Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  49
+Update date_collected: 2026-07-16T08:03:31.300382+09:00  ->  2026-07-15T08:02:30.484898+09:00
+
+Processing paper 8/10
+Title: Read It Back: Pretrained MLLMs Are Zero-Shot Reward Models for Text-to-Image Generation
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 9/10
+Title: 4D Human-Scene Reconstruction from Low-Overlap Captures
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  41
+Update date_collected: 2026-07-16T08:03:31.306099+09:00  ->  2026-07-15T08:02:30.487704+09:00
+
+Processing paper 10/10
+Title: LightMem-Ego: Your AI Memory for Everyday Life
+Paper already exists, checking if translation is complete...
+Update likes: 36  ->  33
+Update date_collected: 2026-07-16T08:03:31.309103+09:00  ->  2026-07-15T08:02:30.490850+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W29.json...
+
+Updating Notion database...
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 92 -> 112)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 80 -> 84)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 68 -> 72)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 61 -> 64)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 54 -> 59)
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 49 -> 50)
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 41 -> 42)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 33 -> 36)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jul 15 23:04:45 UTC 2026 ===
+

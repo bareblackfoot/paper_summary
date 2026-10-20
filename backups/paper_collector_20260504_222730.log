@@ -1,0 +1,37 @@
+=== Paper Collection Started at Mon May  4 01:42:08 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W19
+URL: https://huggingface.co/papers/week/2026-W19
+Found 2 papers in weekly view
+Fetching likes for: End-to-End Autoregressive Image Generation with 1D Semantic Tokenizer
+Fetching likes for: Let ViT Speak: Generative Language-Image Pre-training
+Selected top 10 papers by likes:
+1. End-to-End Autoregressive Image Generation with 1D Semantic Tokenizer (0 likes)
+2. Let ViT Speak: Generative Language-Image Pre-training (0 likes)
+Found abstract: Autoregressive image modeling relies on visual tokenizers to compress images into compact latent rep...
+Processed paper: End-to-End Autoregressive Image Generation with 1D Semantic Tokenizer
+Found abstract: In this paper, we present Generative Language-Image Pre-training (GenLIP), a minimalist generative p...
+Processed paper: Let ViT Speak: Generative Language-Image Pre-training
+Collected top 2 papers. Starting summary generation...
+
+Processing paper 1/2
+Title: End-to-End Autoregressive Image Generation with 1D Semantic Tokenizer
+Generating Korean translation and summary...
+
+Processing paper 2/2
+Title: Let ViT Speak: Generative Language-Image Pre-training
+Generating Korean translation and summary...
+
+Processed 2 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W19.json...
+
+Updating Notion database...
+Creating new paper: 1차원 시맨틱 토크나이저를 이용한 자동 회귀 이미지 생성
+Creating new paper: ViT가 말하다: 생성언어-이미지 사전학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May  4 01:42:31 UTC 2026 ===
+

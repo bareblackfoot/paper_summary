@@ -1,0 +1,351 @@
+[
+  {
+    "title": "LongCat-Flash-Thinking-2601 Technical Report",
+    "abstract": "We introduce LongCat-Flash-Thinking-2601, a 560-billion-parameter open-source Mixture-of-Experts (MoE) reasoning model with superior agentic reasoning capability. LongCat-Flash-Thinking-2601 achieves state-of-the-art performance among open-source models on a wide range of agentic benchmarks, including agentic search, agentic tool use, and tool-integrated reasoning. Beyond benchmark performance, the model demonstrates strong generalization to complex tool interactions and robust behavior under noisy real-world environments. Its advanced capability stems from a unified training framework that combines domain-parallel expert training with subsequent fusion, together with an end-to-end co-design of data construction, environments, algorithms, and infrastructure spanning from pre-training to post-training. In particular, the model's strong generalization capability in complex tool-use are driven by our in-depth exploration of environment scaling and principled task construction. To optimize long-tailed, skewed generation and multi-turn agentic interactions, and to enable stable training across over 10,000 environments spanning more than 20 domains, we systematically extend our asynchronous reinforcement learning framework, DORA, for stable and efficient large-scale multi-environment training. Furthermore, recognizing that real-world tasks are inherently noisy, we conduct a systematic analysis and decomposition of real-world noise patterns, and design targeted training procedures to explicitly incorporate such imperfections into the training process, resulting in improved robustness for real-world applications. To further enhance performance on complex reasoning tasks, we introduce a Heavy Thinking mode that enables effective test-time scaling by jointly expanding reasoning depth and width through intensive parallel thinking.",
+    "authors": [
+      "Meituan LongCat Team",
+      "Anchun Gui",
+      "Bei Li",
+      "Bingyang Tao",
+      "Bole Zhou",
+      "Borun Chen",
+      "Chao Zhang",
+      "Chao Zhang",
+      "Chen Gao",
+      "Chen Zhang",
+      "Chengcheng Han",
+      "Chenhui Yang",
+      "Chuyu Zhang",
+      "Cong Chen",
+      "Cunguang Wang",
+      "Daoru Pan",
+      "Defei Bu",
+      "Dengchang Zhao",
+      "Di Xiu",
+      "Dishan Liu",
+      "Dongyu Ru",
+      "Dunwei Tu"
+    ],
+    "likes": 156,
+    "published_date": "Jan 23",
+    "url": "https://huggingface.co/papers/2601.16725",
+    "date_collected": "2026-01-29T07:11:42.873854+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "LongCat-Flash-Thinking-2601 기술 보고서",
+      "abstract": "LongCat-Flash-Thinking-2601은 560억 개의 매개변수를 갖춘 우수한 속성적 추론 능력을 가진 오픈소스 Mixture-of-Experts (MoE) 모델로, 다양한 속성적 벤치마크에서 현재 공개된 모델 중 최고의 성능을 내면서 속성적 검색, 속성적 도구 사용, 도구 통합 추론 등에 우수한 결과를 보이고 있습니다. 이 모델은 벤치마크 성능을 뛰어넘어 복잡한 도구 상호작용에 강한 일반화 능력을 보이며, 노이지가 포함된 현실 환경에서도 강건한 동작을 보여줍니다."
+    },
+    "summary": "1. LongCat-Flash-Thinking-2601은 우수한 속성적 추론 능력을 갖춘 560억 개 매개변수 모델로, 다양한 속성적 벤치마크에서 최고 성능을 보입니다.\n2. 이 모델은 복잡한 도구 상호작용에 대한 강한 일반화 능력을 갖추고 있으며, 노이직한 현실 환경에서도 안정적으로 동작합니다.\n3. LongCat-Flash-Thinking-2601은 도구 사용에 대한 개발 및 테스트를 위해 효율적인 프레임워크를 제공하며, 현실 세계의 복잡한 작업에 대한 성능을 향상시키기 위한 Heavy Thinking 모드를 소개합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs",
+    "abstract": "Data preparation aims to denoise raw datasets, uncover cross-dataset relationships, and extract valuable insights from them, which is essential for a wide range of data-centric applications. Driven by (i) rising demands for application-ready data (e.g., for analytics, visualization, decision-making), (ii) increasingly powerful LLM techniques, and (iii) the emergence of infrastructures that facilitate flexible agent construction (e.g., using Databricks Unity Catalog), LLM-enhanced methods are rapidly becoming a transformative and potentially dominant paradigm for data preparation.\n  By investigating hundreds of recent literature works, this paper presents a systematic review of this evolving landscape, focusing on the use of LLM techniques to prepare data for diverse downstream tasks. First, we characterize the fundamental paradigm shift, from rule-based, model-specific pipelines to prompt-driven, context-aware, and agentic preparation workflows. Next, we introduce a task-centric taxonomy that organizes the field into three major tasks: data cleaning (e.g., standardization, error processing, imputation), data integration (e.g., entity matching, schema matching), and data enrichment (e.g., data annotation, profiling). For each task, we survey representative techniques, and highlight their respective strengths (e.g., improved generalization, semantic understanding) and limitations (e.g., the prohibitive cost of scaling LLMs, persistent hallucinations even in advanced agents, the mismatch between advanced methods and weak evaluation). Moreover, we analyze commonly used datasets and evaluation metrics (the empirical part). Finally, we discuss open research challenges and outline a forward-looking roadmap that emphasizes scalable LLM-data systems, principled designs for reliable agentic workflows, and robust evaluation protocols.",
+    "authors": [
+      "Wei Zhou",
+      "Jun Zhou",
+      "Haoyu Wang",
+      "Zhenghao Li",
+      "Qikang He",
+      "Shaokun Han",
+      "Guoliang Li",
+      "Xuanhe Zhou",
+      "Yeye He",
+      "Chunwei Liu",
+      "Zirui Tang",
+      "Bin Wang",
+      "Shen Tang",
+      "Kai Zuo",
+      "Yuyu Luo",
+      "Zhenzhe Zheng",
+      "Conghui He",
+      "Jingren Zhou",
+      "Fan Wu"
+    ],
+    "likes": 138,
+    "published_date": "Jan 22",
+    "url": "https://huggingface.co/papers/2601.17058",
+    "date_collected": "2026-01-29T07:11:42.875587+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "LLM이 정리 작업을 할 수 있을까? LLM을 활용한 응용준비 데이터 처리 조사",
+      "abstract": "데이터 처리는 노이즈 제거, 다른 데이터셋 간 관계 발견, 소중한 통찰력 추출을 목적으로 합니다. 데이터 중심 응용프로그램에 필수적인데, 최근에 수요 증가, 강력한 LLM 기술 활용 증가, Databricks Unity Catalog 등 유연한 에이전트 구축을 지원하는 인프라의 출현으로, LLM 향상 방법이 데이터 처리의 패러다임을 변화시키고 우세할 가능성이 빨리 커지고 있습니다."
+    },
+    "summary": "1. 규칙 기반, 모델별 파이프라인에서 프롬프트 주도, 문맥 인식, 에이전트형 처리 흐름으로의 근본적인 패러다임 변화가 일어나고 있습니다.\n2. 데이터 정제, 통합, 풍부화와 같은 세 가지 주요 작업으로 분류되는 작업 중심적 분류 체계가 소개되었습니다.\n3. 대표적인 기법과 그들의 강점 및 한계, 자주 사용되는 데이터셋과 평가 메트릭 등이 설문되며, 앞으로의 도전 과제와 확장 가능한 LLM-데이터 시스템, 신뢰할 수 있는 에이전트형 작업 흐름을 위한 원칙적 설계, 견고한 평가 방법론을 강조한 전망 아래 논의되었습니다.",
+    "categories": [
+      "LLM",
+      "데이터 처리",
+      "기계학습"
+    ]
+  },
+  {
+    "title": "daVinci-Dev: Agent-native Mid-training for Software Engineering",
+    "abstract": "Recently, the frontier of Large Language Model (LLM) capabilities has shifted from single-turn code generation to agentic software engineering-a paradigm where models autonomously navigate, edit, and test complex repositories. While post-training methods have become the de facto approach for code agents, **agentic mid-training**-mid-training (MT) on large-scale data that mirrors authentic agentic workflows-remains critically underexplored due to substantial resource requirements, despite offering a more scalable path to instilling foundational agentic behaviors than relying solely on expensive reinforcement learning. A central challenge in realizing effective agentic mid-training is the distribution mismatch between static training data and the dynamic, feedback-rich environment of real development. To address this, we present a systematic study of agentic mid-training, establishing both the data synthesis principles and training methodology for effective agent development at scale. Central to our approach is **agent-native data**-supervision comprising two complementary types of trajectories: **contextually-native trajectories** that preserve the complete information flow an agent experiences, offering broad coverage and diversity; and **environmentally-native trajectories** collected from executable repositories where observations stem from actual tool invocations and test executions, providing depth and interaction authenticity. We verify the model's agentic capabilities on `SWE-Bench Verified`. We demonstrate our superiority over the previous open software engineering mid-training recipe `Kimi-Dev` under two post-training settings with an aligned base model and agentic scaffold, while using less than half mid-training tokens (73.1B). Besides relative advantage, our best performing 32B and 72B models achieve **56.1%** and **58.5%** resolution rates, respectively, which are ...",
+    "authors": [
+      "Ji Zeng",
+      "Dayuan Fu",
+      "Tiantian Mi",
+      "Yumin Zhuang",
+      "Yaxing Huang",
+      "Xuefeng Li",
+      "Lyumanshan Ye",
+      "Muhang Xie",
+      "Qishuo Hua",
+      "Zhen Huang",
+      "Mohan Jiang",
+      "Hanning Wang",
+      "Jifan Lin",
+      "Yang Xiao",
+      "Jie Sun",
+      "Yunze Wu",
+      "Pengfei Liu"
+    ],
+    "likes": 114,
+    "published_date": "Jan 26",
+    "url": "https://huggingface.co/papers/2601.18418",
+    "date_collected": "2026-01-29T07:11:42.877209+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "daVinci-Dev: 소프트웨어 공학을 위한 에이전트 기반 중간 학습",
+      "abstract": "최근 대형 언어 모델(LLM) 능력의 전선은 단일턴 코드 생성에서 에이전트 소프트웨어 공학으로 변화되었는데, 이는 모델이 복잡한 저장소를 자율적으로 탐색, 편집하고 테스트하는 패러다임이다. 코드 에이전트에 대해 후처리 방법이 디폴트 접근법이 되었지만, **에이전트 기반 중간 학습**-진짜 에이전트적 워크플로를 반영한 대규모 데이터 상에서의 중간 학습(MT)-은 막대한 자원 요구로 인해 중요성에도 불구하고 여전히 체계적으로 탐구되지 않은 상태이다. 비싼 강화 학습에만 의존하는 것보다 보다 확장 가능한 방식으로 근본적인 에이전트 행동을 전파시키는 경로를 제공하기 때문에 중요하다. 효과적인 에이전트 중간 학습을 구현하는 주요 과제는 정적 훈련 데이터와 실제 개발의 동적이면서 피드백이 풍부한 환경 간의 분포 불일치이다. 이를 해결하기 위해, 우리는 에이전트 중간 학습에 대한 체계적인 연구를 제시하며, 규모에 맞는 효과적인 에이전트 개발을 위한 데이터 합성 원리와 훈련 방법론을 수립한다. 우리 방법론의 핵심은 **에이전트 원본 데이터**인 두 가지 보완적 궤적으로 구성된 감독이다: 에이전트가 경험하는 완전한 정보 흐름을 유지하는 **맥락별 원본 궤적**으로 폭넓은 커버리지와 다양성을 제공하며, 실제 도구 호출 및 테스트 실행에서 비롯된 **환경별 원본 궤적**은 깊이와 상호 작용의 신뢰성을 제공한다. 우리는 모델의 에이전트 능력을 `SWE-Bench Verified`에서 확인한다. 우리는 알맞은 베이스 모델과 에이전트 구조를 사용하여 이전의 오픈 소프트웨어 공학 중간 학습 레시피 `Kimi-Dev`보다 낮은 중간 토큰(73.1B)로 두 가지 후처리 설정에서 상대적인 우위를 입증한다. 최적의 32B와 72B 모델은 **56.1%**와 **58.5%** 해상도률을 달성한다."
+    },
+    "summary": "1. 코드 에이전트의 중간 학습에 대한 새로운 방법으로, 실제 에이전트적 워크플로를 반영한 대규모 데이터 상에서의 중간 학습(MT)의 중요성을 탐구함.\n2. 에이전트 원본 데이터에 중점을 둔 방법론을 제시하여, 확장 가능한 경로를 통해 에이전트 행동을 구축하는 것이 가능함.\n3. 실제 툴 사용과 테스트 실행에서 나온 데이터를 활용하여 모델의 에이전트 능력을 확인하며, 이전 모델에 비해 더 나은 성능을 보임.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
+    "abstract": "LLM agents have demonstrated remarkable capabilities in software development, but their performance is hampered by long interaction contexts, which incur high API costs and latency. While various context compression approaches such as LongLLMLingua have emerged to tackle this challenge, they typically rely on fixed metrics such as PPL, ignoring the task-specific nature of code understanding. As a result, they frequently disrupt syntactic and logical structure and fail to retain critical implementation details. In this paper, we propose SWE-Pruner, a self-adaptive context pruning framework tailored for coding agents. Drawing inspiration from how human programmers \"selectively skim\" source code during development and debugging, SWE-Pruner performs task-aware adaptive pruning for long contexts. Given the current task, the agent formulates an explicit goal (e.g., \"focus on error handling\") as a hint to guide the pruning targets. A lightweight neural skimmer (0.6B parameters) is trained to dynamically select relevant lines from the surrounding context given the goal. Evaluations across four benchmarks and multiple models validate SWE-Pruner's effectiveness in various scenarios, achieving 23-54% token reduction on agent tasks like SWE-Bench Verified and up to 14.84x compression on single-turn tasks like LongCodeQA with minimal performance impact.",
+    "authors": [
+      "Yuhang Wang",
+      "Yuling Shi",
+      "Mo Yang",
+      "Rongrui Zhang",
+      "Shilin He",
+      "Heng Lian",
+      "Yuting Chen",
+      "Siyu Ye",
+      "Kai Cai",
+      "Xiaodong Gu"
+    ],
+    "likes": 75,
+    "published_date": "Jan 23",
+    "url": "https://huggingface.co/papers/2601.16746",
+    "date_collected": "2026-01-29T07:11:42.878547+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "SWE-Pruner: 코딩 에이전트용 자기 적응식 컨텍스트 가지치기",
+      "abstract": "LLM 에이전트는 소프트웨어 개발에서 뛰어난 성능을 보여주었지만, API 비용과 지연을 초래하는 긴 상호작용 컨텍스트로 성능이 제한되었습니다. LongLLMLingua와 같은 다양한 컨텍스트 압축 방법이 이 도전 과제에 대응하기 위해 등장했지만, 이들은 일반적으로 PPL과 같은 고정된 지표에 의존하여 코드 이해의 작업 특성을 무시합니다. 이로 인해 문법적 및 논리적 구조를 자주 파괴하고 중요한 구현 세부 정보를 유지하지 못합니다. 본 논문에서는 코딩 에이전트용으로 맞춤화된 자기 적응식 컨텍스트 가지치기 프레임워크인 SWE-Pruner를 제안합니다. SWE-Pruner는 인간 프로그래머가 개발 및 디버깅 중에 소스 코드를 \"선택적으로 훑어보는\" 방식에서 영감을 받아, 긴 컨텍스트에 대해 작업 인식적인 적응적인 가지치기를 수행합니다."
+    },
+    "summary": "1. SWE-Pruner는 코딩 에이전트를 위한 자기 적응식 컨텍스트 가지치기 프레임워크로, 과업에 맞는 가지치기를 수행하여 긴 컨텍스트의 성능을 향상시킵니다.\n2. 목적에 맞게 명시적인 목표를 수립하고 주변 컨텍스트에서 관련된 줄을 동적으로 선택하는 경량 신경 스킴러를 활용합니다.\n3. SWE-Pruner는 다양한 시나리오에서 효과적으로 작동하며, SWE-Bench Verified와 같은 에이전트 작업에서 23-54%의 토큰 축소와 LongCodeQA와 같은 단일 턴 작업에서 최대 14.84배의 압축률을 달성합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security",
+    "abstract": "The rise of AI agents introduces complex safety and security challenges arising from autonomous tool use and environmental interactions. Current guardrail models lack agentic risk awareness and transparency in risk diagnosis. To introduce an agentic guardrail that covers complex and numerous risky behaviors, we first propose a unified three-dimensional taxonomy that orthogonally categorizes agentic risks by their source (where), failure mode (how), and consequence (what). Guided by this structured and hierarchical taxonomy, we introduce a new fine-grained agentic safety benchmark (ATBench) and a Diagnostic Guardrail framework for agent safety and security (AgentDoG). AgentDoG provides fine-grained and contextual monitoring across agent trajectories. More Crucially, AgentDoG can diagnose the root causes of unsafe actions and seemingly safe but unreasonable actions, offering provenance and transparency beyond binary labels to facilitate effective agent alignment. AgentDoG variants are available in three sizes (4B, 7B, and 8B parameters) across Qwen and Llama model families. Extensive experimental results demonstrate that AgentDoG achieves state-of-the-art performance in agentic safety moderation in diverse and complex interactive scenarios. All models and datasets are openly released.",
+    "authors": [
+      "Dongrui Liu",
+      "Qihan Ren",
+      "Chen Qian",
+      "Shuai Shao",
+      "Yuejin Xie",
+      "Yu Li",
+      "Zhonghao Yang",
+      "Haoyu Luo",
+      "Peng Wang",
+      "Qingyu Liu",
+      "Binxin Hu",
+      "Ling Tang",
+      "Jilin Mei",
+      "Dadi Guo",
+      "Leitao Yuan",
+      "Junyao Yang",
+      "Guanxu Chen",
+      "Qihao Lin",
+      "Yi Yu",
+      "Bo Zhang",
+      "Jiaxuan Guo",
+      "Jie Zhang"
+    ],
+    "likes": 60,
+    "published_date": "Jan 26",
+    "url": "https://huggingface.co/papers/2601.18491",
+    "date_collected": "2026-01-29T07:11:42.880410+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "AI 에이전트 안전 및 보안을 위한 진단 가드레일 프레임워크: AgentDoG",
+      "abstract": "AI 에이전트의 등장으로 자율적인 도구 사용 및 환경 상호작용에서 발생하는 복잡한 안전 및 보안 도전과 함께, 현재의 가드레일 모델은 에이전트 리스크 인식과 위험 진단 투명성이 부족합니다. 본 연구에서는 복합적이고 다양한 위험 행동을 다루는 에이전트 가드레일을 소개하기 위해 먼저, 공간적 역할(어디서), 실패 모드(어떻게), 그리고 결과(무엇을)에 따라 에이전트 리스크를 직교적으로 분류하는 통합된 3차원 분류 체계를 제안합니다."
+    },
+    "summary": "1. 에이전트의 위험을 공간적 역할, 실패 모드, 결과에 따라 분류하는 3차원 분류 체계를 제안합니다.\n2. 새로운 미세한 수준의 에이전트 안전 벤치마크(ATBench) 및 에이전트 안전 및 보안을 위한 진단 가드레일 프레임워크(AgentDoG)를 소개하며, AgentDoG는 에이전트의 행동 궤적 전반에 걸쳐 미세하고 맥락적인 모니터링을 제공합니다.\n3. AgentDoG는 다양하고 복잡한 상호작용 시나리오에서 에이전트의 안전 중재에 있어 최신 기술적 수준을 달성하는 것을 실험적으로 입증하며, 모든 모델과 데이터셋은 공개적으로 제공됩니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers",
+    "abstract": "Standard Vision-Language-Action (VLA) models typically fine-tune a monolithic Vision-Language Model (VLM) backbone explicitly for robotic control. However, this approach creates a critical tension between maintaining high-level general semantic understanding and learning low-level, fine-grained sensorimotor skills, often leading to \"catastrophic forgetting\" of the model's open-world capabilities. To resolve this conflict, we introduce TwinBrainVLA, a novel architecture that coordinates a generalist VLM retaining universal semantic understanding and a specialist VLM dedicated to embodied proprioception for joint robotic control. TwinBrainVLA synergizes a frozen \"Left Brain\", which retains robust general visual reasoning, with a trainable \"Right Brain\", specialized for embodied perception, via a novel Asymmetric Mixture-of-Transformers (AsyMoT) mechanism. This design allows the Right Brain to dynamically query semantic knowledge from the frozen Left Brain and fuse it with proprioceptive states, providing rich conditioning for a Flow-Matching Action Expert to generate precise continuous controls. Extensive experiments on SimplerEnv and RoboCasa benchmarks demonstrate that TwinBrainVLA achieves superior manipulation performance compared to state-of-the-art baselines while explicitly preserving the comprehensive visual understanding capabilities of the pre-trained VLM, offering a promising direction for building general-purpose robots that simultaneously achieve high-level semantic understanding and low-level physical dexterity.",
+    "authors": [
+      "Bin Yu",
+      "Shijie Lian",
+      "Xiaopeng Lin",
+      "Yuliang Wei",
+      "Zhaolong Shen",
+      "Changti Wu",
+      "Yuzhuo Miao",
+      "Xinming Wang",
+      "Bailing Wang",
+      "Cong Huang",
+      "Kai Chen"
+    ],
+    "likes": 56,
+    "published_date": "Jan 20",
+    "url": "https://huggingface.co/papers/2601.14133",
+    "date_collected": "2026-01-29T07:11:42.881800+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "TwinBrainVLA: 일반 VLM의 잠재력을 비대칭 Transformer 혼합을 통해 실체화된 작업에 발휘하기",
+      "abstract": "표준 Vision-Language-Action(VLA) 모델은 일반적으로 로봇 제어를 명시적으로 위한 단일 Vision-Language Model(VLM) 백본을 정교하게 재조정합니다. 그러나 이러한 방식은 상위 수준의 일반적 의미 이해와 하위 수준의 세밀한 감각 운동기술을 학습하는 사이에 중요한 긴장을 야기하여 종종 모델의 개방 세계 능력의 \"비극적 잊혀짐\"을 유발합니다. 이러한 충돌을 해소하기 위해 본 논문에서는 TwinBrainVLA를 제안하는데, 이는 일반적인 의미 이해를 유지하는 종합 VLM과 로봇 제어를 위해 특화된 전용 VLM을 협조하는 혁신적인 아키텍처입니다. TwinBrainVLA는 움직일 수 있는 소유 감각을 위한 특화된 \"오른쪽 뇌\"와 결합된 일반적인 시각 추론을 유지하는 정지된 \"왼쪽 뇌\"를 비대칭 Transformer 혼합(AsyMoT) 메커니즘을 통해 조화시킵니다. 이 설계는 오른쪽 뇌가 정지된 왼쪽 뇌에서 의미 지식을 동적으로 쿼리하고 소유 상태와 융합하여 정확한 지속적인 제어를 생성하는 Flow-Matching Action 전문가에 풍부한 조건을 제공합니다. SimpierEnv와 RoboCasa 벤치마크에서 수행된 광범위한 실험 결과, TwinBrainVLA는 최신 기준선에 비해 우수한 조작 성능을 달성하면서 사전 훈련된 VLM의 포괄적 시각 이해 능력을 명시적으로 보존하여 고수준 의미 이해와 저수준 물리적 재능을 동시에 달성하는 일반 목적 로봇 구축 방향을 제시합니다."
+    },
+    "summary": "1. TwinBrainVLA는 일반적 의미 이해를 유지하면서 로봇 제어를 위한 전용 VLM과 협조하는 혁신적인 아키텍처를 소개합니다.\n2. TwinBrainVLA는 정지된 \"왼쪽 뇌\"와 훈련 가능한 \"오른쪽 뇌\"를 혼합하는 비대칭 Transformer 메커니즘을 통해 각각 일반적인 시각 추론과 특화된 소유 지각을 조화시킵니다.\n3. 실험 결과는 TwinBrainVLA가 최신 벤치마크 대비 우수한 조작 성능을 달성하며, 높은 수준의 시각 이해 능력을 유지하는 방향으로 일반 목적 로봇 구축을 제안합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation",
+    "abstract": "Recent advances in video generation have produced models capable of synthesizing stunning visual content from simple text prompts. However, these models struggle to generate long-form, coherent narratives from high-level concepts like dialogue, revealing a ``semantic gap'' between a creative idea and its cinematic execution. To bridge this gap, we introduce a novel, end-to-end agentic framework for dialogue-to-cinematic-video generation. Central to our framework is ScripterAgent, a model trained to translate coarse dialogue into a fine-grained, executable cinematic script. To enable this, we construct ScriptBench, a new large-scale benchmark with rich multimodal context, annotated via an expert-guided pipeline. The generated script then guides DirectorAgent, which orchestrates state-of-the-art video models using a cross-scene continuous generation strategy to ensure long-horizon coherence. Our comprehensive evaluation, featuring an AI-powered CriticAgent and a new Visual-Script Alignment (VSA) metric, shows our framework significantly improves script faithfulness and temporal fidelity across all tested video models. Furthermore, our analysis uncovers a crucial trade-off in current SOTA models between visual spectacle and strict script adherence, providing valuable insights for the future of automated filmmaking.",
+    "authors": [
+      "Chenyu Mu",
+      "Xin He",
+      "Qu Yang",
+      "Wanshun Chen",
+      "Jiadi Yao",
+      "Huang Liu",
+      "Zihao Yi",
+      "Bo Zhao",
+      "Xingyu Chen",
+      "Ruotian Ma",
+      "Fanghua Ye",
+      "Erkun Yang",
+      "Cheng Deng",
+      "Zhaopeng Tu",
+      "Xiaolong Li",
+      "Linus"
+    ],
+    "likes": 48,
+    "published_date": "Jan 25",
+    "url": "https://huggingface.co/papers/2601.17737",
+    "date_collected": "2026-01-29T07:11:42.883450+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "대본만 필요합니다: 장거리 대화에서 시네마틱 비디오 생성을 위한 에이전트 기반 프레임워크",
+      "abstract": "최근 비디오 생성의 발전으로 간단한 텍스트 프롬프트에서 멋진 시각적 콘텐츠를 합성할 수 있는 모델이 생겼습니다. 그러나 이러한 모델은 대화와 같은 고수준 컨셉에서 장형식, 일관된 내러티브를 생성하는 데 어려워 하며 창의적인 아이디어와 시네마틱 실행 간의 '의미적 간격'을 드러냅니다. 이 간격을 좁히기 위해 대화에서 시네마틱 비디오 생성을 위한 혁신적인 엔드 투 엔드 에이전트 프레임워크를 소개합니다. 우리 프레임워크의 핵심은 ScripterAgent인데, 이 모델은 우수한 대화를 세밀하고 실행 가능한 시네마틱 대본으로 번역하는 데 훈련되었습니다. 이를 위해 우리는 전문가 지도 파이프라인을 통해 다양한 멀티모달 컨텍스트로 주석이 달린 ScriptBench를 구축합니다. 생성된 대본은 다음으로 최첨단 비디오 모델을 조율하는 DirectorAgent를 안내합니다. DirectorAgent는 장면 간 지속적인 생성 전략을 사용하여 장거리 일관성을 보장합니다. AI 기반 CriticAgent와 새로운 시각-대본 정렬 (VSA) 측정 항목을 특징으로 하는 포괄적인 평가 결과, 우리 프레임워크는 모든 테스트된 비디오 모델에서 대본 충실도와 시간적 충실도를 현저히 개선시킵니다. 더 나아가, 우리의 분석은 현재 SOTA 모델에서 시각적 경이로움과 엄격한 대본 준수 사이의 중요한 트레이드 오프를 밝혀내며 자동 영화 제작의 미래를 위한 중요한 통찰을 제공합니다."
+    },
+    "summary": "1. 대화에서 시네마틱 비디오를 생성하기 위해 새로운 에이전트 기반 방법론을 소개함.\n2. ScripterAgent를 활용하여 대화를 시네마틱 대본으로 변환하고, DirectorAgent를 통해 비디오 생성 모델들을 조율함.\n3. Script faithfulness와 temporal fidelity를 급격히 향상시키며, 시각적 경이로움과 엄격한 대본 준수 사이의 트레이드 오프를 발견함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "AdaReasoner: Dynamic Tool Orchestration for Iterative Visual Reasoning",
+    "abstract": "When humans face problems beyond their immediate capabilities, they rely on tools, providing a promising paradigm for improving visual reasoning in multimodal large language models (MLLMs). Effective reasoning, therefore, hinges on knowing which tools to use, when to invoke them, and how to compose them over multiple steps, even when faced with new tools or new tasks. We introduce AdaReasoner, a family of multimodal models that learn tool use as a general reasoning skill rather than as tool-specific or explicitly supervised behavior. AdaReasoner is enabled by (i) a scalable data curation pipeline exposing models to long-horizon, multi-step tool interactions; (ii) Tool-GRPO, a reinforcement learning algorithm that optimizes tool selection and sequencing based on end-task success; and (iii) an adaptive learning mechanism that dynamically regulates tool usage. Together, these components allow models to infer tool utility from task context and intermediate outcomes, enabling coordination of multiple tools and generalization to unseen tools. Empirically, AdaReasoner exhibits strong tool-adaptive and generalization behaviors: it autonomously adopts beneficial tools, suppresses irrelevant ones, and adjusts tool usage frequency based on task demands, despite never being explicitly trained to do so. These capabilities translate into state-of-the-art performance across challenging benchmarks, improving the 7B base model by +24.9\\% on average and surpassing strong proprietary systems such as GPT-5 on multiple tasks, including VSP and Jigsaw.",
+    "authors": [
+      "Mingyang Song",
+      "Haoyu Sun",
+      "Jiawei Gu",
+      "Linjie Li",
+      "Luxin Xu",
+      "Ranjay Krishna",
+      "Yu Cheng"
+    ],
+    "likes": 38,
+    "published_date": "Jan 26",
+    "url": "https://huggingface.co/papers/2601.18631",
+    "date_collected": "2026-01-29T07:11:42.884662+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "동적 도구 조합을 위한 AdaReasoner: 반복적 시각 추론을 위한 동적 도구 조합(Tool Orchestration)",
+      "abstract": "인간이 직면한 능력을 초월하는 문제에 직면했을 때, 도구에 의존함으로써 멀티모달 큰 언어 모델(MLLMs)에서 시각적 추론을 개선하는 유망한 패러다임 제공. 효과적인 추론은 새로운 도구나 새로운 작업에 직면했을 때도 여러 단계에서 언제 어떤 도구를 사용할지, 어떻게 조합할지를 알아내는 능력에 달려있음. 우리는 도구 사용을 도구별이나 명시적으로 지도된 행동이 아닌 일반적인 추론 기술로 습득하는 AdaReasoner를 소개. AdaReasoner는 (i) 장기적 시간대 및 다단계 도구 상호작용에 모델을 노출시키는 확장 가능한 데이터 정비 파이프라인, (ii) 최종 작업 성공에 기반을 둔 도구 선택 및 순서 최적화를 위한 강화 학습 알고리즘인 Tool-GRPO, (iii) 동적으로 도구 사용을 조절하는 적응 학습 메커니즘을 가능하게 함. 이러한 구성 요소들은 모델이 작업 맥락과 중간 결과로부터 도구 유틸리티를 추론하고 여러 도구를 조정하며 처음 보는 도구로 일반화할 수 있도록 함. 실험적으로 AdaReasoner는 뛰어난 도구 적응 및 일반화 행동을 나타냄: 유익한 도구를 자동으로 채택하고 관련 없는 것을 억제하며 작업 요구에 따라 도구 사용 빈도를 조절함. 이러한 능력은 어려운 벤치마크에서 최신 성능을 보여주며 7B 기본 모델을 평균 +24.9\\% 개선하여 다수의 작업(예: VSP 및 Jigsaw)에서 강력한 프로프라이어터리 시스템인 GPT-5를 초월함."
+    },
+    "summary": "1. AdaReasoner는 장기적 시각적 추론을 위해 도구 사용을 일반적 추론 기술로 습득하는 모델로, 강화 학습 알고리즘과 도구 사용 동적 조절 메커니즘을 적용하여 도구 유틸리티를 추론하고 새로운 도구에 대한 일반화를 가능하게 함.\n2. 실험 결과에서 AdaReasoner는 도구 적응 및 일반화 능력을 보이며, 어려운 벤치마크에서 7B 기본 모델보다 평균 +24.9\\%의 개선을 이끌어내어 GPT-5와 같은 강력한 시스템을 초월함.\n3. 모델은 유용한 도구를 채택하고 관련 없는 것을 억제하며 작업 요구에 따라 도구 사용 빈도를 조절함으로써 업무 성능을 극대화함.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Scientific Image Synthesis: Benchmarking, Methodologies, and Downstream Utility",
+    "abstract": "While synthetic data has proven effective for improving scientific reasoning in the text domain, multimodal reasoning remains constrained by the difficulty of synthesizing scientifically rigorous images. Existing Text-to-Image (T2I) models often produce outputs that are visually plausible yet scientifically incorrect, resulting in a persistent visual-logic divergence that limits their value for downstream reasoning. Motivated by recent advances in next-generation T2I models, we conduct a systematic study of scientific image synthesis across generation paradigms, evaluation, and downstream use. We analyze both direct pixel-based generation and programmatic synthesis, and propose ImgCoder, a logic-driven framework that follows an explicit \"understand - plan - code\" workflow to improve structural precision. To rigorously assess scientific correctness, we introduce SciGenBench, which evaluates generated images based on information utility and logical validity. Our evaluation reveals systematic failure modes in pixel-based models and highlights a fundamental expressiveness-precision trade-off. Finally, we show that fine-tuning Large Multimodal Models (LMMs) on rigorously verified synthetic scientific images yields consistent reasoning gains, with potential scaling trends analogous to the text domain, validating high-fidelity scientific synthesis as a viable path to unlocking massive multimodal reasoning capabilities.",
+    "authors": [
+      "Honglin Lin",
+      "Chonghan Qin",
+      "Zheng Liu",
+      "Qizhi Pei",
+      "Yu Li",
+      "Zhanping Zhong",
+      "Xin Gao",
+      "Yanfeng Wang",
+      "Conghui He",
+      "Lijun Wu"
+    ],
+    "likes": 36,
+    "published_date": "Jan 17",
+    "url": "https://huggingface.co/papers/2601.17027",
+    "date_collected": "2026-01-29T07:11:42.885981+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "과학 이미지 합성: 벤치마킹, 방법론, 그리고 하향 유틸리티",
+      "abstract": "텍스트 영역에서 합성 데이터가 과학적 추론을 향상시키는 데 효과적임이 입증되었지만, 다중모달 추론은 과학적으로 엄격한 이미지를 합성하는 어려움으로 제한되어 있습니다. 기존 텍스트-이미지 (T2I) 모델은 시각적으로 그럴싸하지만 과학적으로 부정확한 출력물을 자주 생성하여, 지속적인 시각-논리적 분리가 발생하며 하향 추론에 대한 가치를 제한합니다. 우리는 최근 다음 세대 T2I 모델의 발전에 동기부여를 받아, 생성 패러다임, 평가, 그리고 하향 사용을 통해 과학 이미지 합성에 대한 체계적인 연구를 수행합니다. 우리는 직접적인 픽셀 기반 생성과 프로그래밍 합성을 분석하고, 명시적인 \"이해 - 계획 - 코드\" 작업 흐름을 따르는 논리 주도 프레임워크 ImgCoder를 제안합니다. 과학적 정확성을 철저히 평가하기 위해 생성된 이미지를 정보 유틸리티와 논리적 유효성에 따라 평가하는 SciGenBench를 소개합니다. 우리의 평가는 픽셀 기반 모델의 체계적인 실패 모드를 밝혀내며, 기본적인 표현-정밀도 교환관계를 강조합니다. 마지막으로, 엄격하게 검증된 합성 과학 이미지에서 대형 다중모달 모델을 미세 조정함으로써 일관된 추론 이득을 얻는다는 것을 보여줌으로써, 과학적 합성이 대규모 다중모달 추론 능력을 발휘할 수 있는 가용 경로임을 입증합니다."
+    },
+    "summary": "1. 텍스트-이미지 모델의 시각적으로 그럴싸하지만 과학적으로 부정확한 출력물 제한을 개선하기 위한 ImgCoder 프레임워크를 제안하고, SciGenBench를 통해 생성된 이미지의 과학적 정확성을 평가함.\n2. 픽셀 기반 모델의 체계적인 실패 모드와 표현-정밀도 교환관계를 분석함.\n3. 엄격하게 검증된 합성 과학 이미지에서 대형 다중모달 모델을 미세 조정하는 것이 다중모달 추론 능력을 향상시키는 것을 확인하며, 과학적 합성이 대규모 추론 능력을 발휘할 수 있는 가능성을 입증함.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "LLM"
+    ]
+  },
+  {
+    "title": "VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents",
+    "abstract": "Modern Vision-Language Models (VLMs) remain poorly characterized in multi-step visual interactions, particularly in how they integrate perception, memory, and action over long horizons. We introduce VisGym, a gymnasium of 17 environments for evaluating and training VLMs. The suite spans symbolic puzzles, real-image understanding, navigation, and manipulation, and provides flexible controls over difficulty, input representation, planning horizon, and feedback. We also provide multi-step solvers that generate structured demonstrations, enabling supervised finetuning. Our evaluations show that all frontier models struggle in interactive settings, achieving low success rates in both the easy (46.6%) and hard (26.0%) configurations. Our experiments reveal notable limitations: models struggle to effectively leverage long context, performing worse with an unbounded history than with truncated windows. Furthermore, we find that several text-based symbolic tasks become substantially harder once rendered visually. However, explicit goal observations, textual feedback, and exploratory demonstrations in partially observable or unknown-dynamics settings for supervised finetuning yield consistent gains, highlighting concrete failure modes and pathways for improving multi-step visual decision-making. Code, data, and models can be found at: https://visgym.github.io/.",
+    "authors": [
+      "Zirui Wang",
+      "Junyi Zhang",
+      "Jiaxin Ge",
+      "Long Lian",
+      "Letian Fu",
+      "Lisa Dunlap",
+      "Ken Goldberg",
+      "XuDong Wang",
+      "Ion Stoica",
+      "David M. Chan",
+      "Sewon Min",
+      "Joseph E. Gonzalez"
+    ],
+    "likes": 33,
+    "published_date": "Jan 23",
+    "url": "https://huggingface.co/papers/2601.16973",
+    "date_collected": "2026-01-29T07:11:42.887408+09:00",
+    "week": "2026-W05",
+    "translation": {
+      "title": "VisGym: 다양하고 사용자화 가능하며 확장 가능한 다중 모달 에이전트를 위한 환경",
+      "abstract": "현대적인 Vision-Language 모델(VLMs)은 장거리 시각적 상호작용에서 특히 지각, 기억 및 행동을 어떻게 장기적으로 통합하는지에 대해 명확히 되어있지 않다. 우리는 VLMs를 평가하고 훈련하는 17개 환경의 체육관인 VisGym을 소개한다. 이 패키지는 심볼릭 퍼즐, 실제 이미지 이해, 내비게이션 및 조작을 포함하며 난이도, 입력 표현, 계획 수평 및 피드백에 대해 유연한 제어를 제공한다. 또한 구조화된 데모를 생성하는 다중 단계 해결자도 제공되어 지도된 세부 조정을 가능하게 한다. 우리의 평가는 모든 선두 모델이 상호작용적 환경에서 어려움을 겪는 것을 보여주며, 쉬운(46.6%)과 어려운(26.0%) 설정 모두에서 낮은 성공률을 기록한다. 우리 실험에서 모델은 긴 컨텍스트를 효과적으로 활용하는 데 어려움을 겪어, 무제한 기록으로는 효율적으로 수행하지 못하고 잘린 창으로 수행하는 것보다 성능이 떨어진다. 또한 텍스트 기반의 심볼적 작업 중 여러 작업들은 시각적으로 변환된 후에 현저히 어려워진다. 그러나 완전 불확실하거나 알려지지 않은 역학 설정에서 목표 관찰, 텍스트 피드백 및 탐험적 데모는 지도된 세부 조정을 위해 일관된 효과를 발휘하며 세부적인 실패 모드와 다중 단계 시각적 의사 결정 향상을 위한 전략을 강조한다."
+    },
+    "summary": "1. 현대적인 Vision-Language 모델(VLMs)은 다중 단계 시각적 상호작용에서 성능이 낮고 모델은 긴 컨텍스트를 효과적으로 활용하지 못함을 보여줌.\n2. 텍스트 기반의 심볼적 작업은 시각적으로 변환되면 더 어려워지며, 목표 관찰 및 지도된 세부 조정은 성능 향상에 기여함.\n3. 실험 결과는 다양한 실패 모드와 다중 단계 시각적 의사 결정 능력 향상을 위한 전략을 제시함.",
+    "categories": [
+      "Multimodal"
+    ]
+  }
+]

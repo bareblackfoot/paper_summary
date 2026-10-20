@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Eka-Eval : A Comprehensive Evaluation Framework for Large Language\n  Models in Indian Languages",
+    "abstract": "The rapid advancement of Large Language Models (LLMs) has intensified the\nneed for evaluation frameworks that go beyond English centric benchmarks and\naddress the requirements of linguistically diverse regions such as India. We\npresent EKA-EVAL, a unified and production-ready evaluation framework that\nintegrates over 35 benchmarks, including 10 Indic-specific datasets, spanning\ncategories like reasoning, mathematics, tool use, long-context understanding,\nand reading comprehension. Compared to existing Indian language evaluation\ntools, EKA-EVAL offers broader benchmark coverage, with built-in support for\ndistributed inference, quantization, and multi-GPU usage. Our systematic\ncomparison positions EKA-EVAL as the first end-to-end, extensible evaluation\nsuite tailored for both global and Indic LLMs, significantly lowering the\nbarrier to multilingual benchmarking. The framework is open-source and publicly\navailable at https://github.com/lingo-iitgn/ eka-eval and a part of ongoing EKA\ninitiative (https://eka.soket.ai), which aims to scale up to over 100\nbenchmarks and establish a robust, multilingual evaluation ecosystem for LLMs.",
+    "authors": [
+      "Samridhi Raj Sinha",
+      "Rajvee Sheth",
+      "Abhishek Upperwal",
+      "Mayank Singh"
+    ],
+    "likes": 2,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01853",
+    "date_collected": "2025-07-07T23:44:55.632673+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "인도어 대규모 언어 모델의 종합적 평가 프레임워크인 Eka-Eval",
+      "abstract": "대규모 언어 모델(LLM)의 급속한 발전은 영어 중심의 기준을 넘어 인도와 같이 언어적으로 다양한 지역의 요구를 충족하는 평가 프레임워크에 대한 필요성을 증대시켰습니다. 우리는 EKA-EVAL을 제시합니다. 이는 10개의 인도어 특화 데이터셋을 포함한 35개 이상의 벤치마크를 통합한 통합된 제품용 평가 프레임워크로, 추론, 수학, 도구 사용, 장기적 맥락 이해, 읽기 이해 등의 범주를 포함합니다. 기존의 인도어 언어 평가 도구와 비교했을 때 EKA-EVAL은 분산 추론, 양자화, 다중 GPU 사용을 내장하여 보다 폭넓은 벤치마크를 제공합니다. 체계적인 비교를 통해 EKA-EVAL을 글로벌 및 인도어 LLM에 맞춘 최초의 엔드 투 엔드, 확장 가능한 평가 스위트로 위치시켜 다국어 벤치마킹의 장벽을 크게 낮춥니다. 이 프레임워크는 오픈 소스이며 https://github.com/lingo-iitgn/eka-eval에서 공개되어 있으며 EKA 이니셔티브(https://eka.soket.ai)의 일환으로 진행 중인데, 이 이니셔티브는 100개 이상의 벤치마크로 확장하고 LLM을 위한 견고하고 다국어 평가 생태계를 구축하는 것을 목표로 합니다."
+    },
+    "summary": "1. EKA-EVAL은 인도어 대규모 언어 모델을 평가하기 위한 종합적인 프레임워크로, 35개 이상의 벤치마크와 10개의 인도어 특화 데이터셋을 통합하여 분산 추론, 양자화, 다중 GPU 사용 등을 지원합니다.\n2. 이 프레임워크는 글로벌 및 인도어 언어 모델에 맞춰진 최초의 엔드 투 엔드 평가 스위트로서, 다국어 벤치마킹의 진입 장벽을 크게 낮춥니다.\n3. EKA-EVAL은 오픈 소스로 공개되어 있으며, 다양한 벤치마크를 지원하여 LLM을 위한 견고하고 다국어 평가 생태계를 구축하는 EKA 이니셔티브의 일환입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation\n  Models on Standard Computer Vision Tasks",
+    "abstract": "Multimodal foundation models, such as GPT-4o, have recently made remarkable\nprogress, but it is not clear where exactly these models stand in terms of\nunderstanding vision. In this paper, we benchmark the performance of popular\nmultimodal foundation models (GPT-4o, o4-mini, Gemini 1.5 Pro and Gemini 2.0\nFlash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2) on standard computer vision\ntasks (semantic segmentation, object detection, image classification, depth and\nsurface normal prediction) using established datasets (e.g., COCO, ImageNet and\nits variants, etc).\n  The main challenges to performing this are: 1) most models are trained to\noutput text and cannot natively express versatile domains, such as segments or\n3D geometry, and 2) many leading models are proprietary and accessible only at\nan API level, i.e., there is no weight access to adapt them. We address these\nchallenges by translating standard vision tasks into equivalent text-promptable\nand API-compatible tasks via prompt chaining to create a standardized\nbenchmarking framework.\n  We observe that 1) the models are not close to the state-of-the-art\nspecialist models at any task. However, 2) they are respectable generalists;\nthis is remarkable as they are presumably trained on primarily image-text-based\ntasks. 3) They perform semantic tasks notably better than geometric ones. 4)\nWhile the prompt-chaining techniques affect performance, better models exhibit\nless sensitivity to prompt variations. 5) GPT-4o performs the best among\nnon-reasoning models, securing the top position in 4 out of 6 tasks, 6)\nreasoning models, e.g. o3, show improvements in geometric tasks, and 7) a\npreliminary analysis of models with native image generation, like the latest\nGPT-4o, shows they exhibit quirks like hallucinations and spatial\nmisalignments.",
+    "authors": [
+      "Rahul Ramachandran",
+      "Ali Garjani",
+      "Roman Bachmann",
+      "Andrei Atanov",
+      "Oğuzhan Fatih Kar",
+      "Amir Zamir"
+    ],
+    "likes": 0,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01955",
+    "date_collected": "2025-07-07T23:44:55.633952+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "GPT-4o는 시각을 얼마나 잘 이해하는가? 표준 컴퓨터 비전 작업에서의 다중모달 기반 모델 평가",
+      "abstract": "GPT-4o와 같은 다중모달 기반 모델은 최근 현저한 진전을 이루었지만, 이러한 모델들이 시각을 얼마나 잘 이해하는지 명확하지 않다. 본 논문에서는 인기 있는 다중모달 기반 모델(GPT-4o, o4-mini, Gemini 1.5 Pro 및 Gemini 2.0 Flash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2)의 성능을 표준 컴퓨터 비전 작업(의미 분할, 객체 감지, 이미지 분류, 깊이 및 표면 정상 예측)에 대해 측정하였다. 예정된 데이터셋(COCO, ImageNet 및 이와 유사한 것들 등)을 사용하였다."
+    },
+    "summary": "1. GPT-4o와 같은 모델들은 특정 작업에서 압도적인 성능을 보이지 않지만, 이미지-텍스트 기반 작업에서 훈련되었다는 점을 감안하면 훌륭한 일반화 능력을 보인다.\n2. 이러한 모델들은 기하학 작업보다 의미 작업에서 뛰어난 성과를 보인다.\n3. GPT-4o는 비추론 모델 중에서 가장 우수한 성능을 보이며, 다른 모델들과는 달리 프롬프트 변화에 덜 민감함을 보인다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  }
+]

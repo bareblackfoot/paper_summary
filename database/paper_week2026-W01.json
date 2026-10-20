@@ -1,0 +1,314 @@
+[
+  {
+    "title": "mHC: Manifold-Constrained Hyper-Connections",
+    "abstract": "Recently, studies exemplified by Hyper-Connections (HC) have extended the ubiquitous residual connection paradigm established over the past decade by expanding the residual stream width and diversifying connectivity patterns. While yielding substantial performance gains, this diversification fundamentally compromises the identity mapping property intrinsic to the residual connection, which causes severe training instability and restricted scalability, and additionally incurs notable memory access overhead. To address these challenges, we propose Manifold-Constrained Hyper-Connections (mHC), a general framework that projects the residual connection space of HC onto a specific manifold to restore the identity mapping property, while incorporating rigorous infrastructure optimization to ensure efficiency. Empirical experiments demonstrate that mHC is effective for training at scale, offering tangible performance improvements and superior scalability. We anticipate that mHC, as a flexible and practical extension of HC, will contribute to a deeper understanding of topological architecture design and suggest promising directions for the evolution of foundational models.",
+    "authors": [
+      "Zhenda Xie",
+      "Yixuan Wei",
+      "Huanqi Cao",
+      "Chenggang Zhao",
+      "Chengqi Deng",
+      "Jiashi Li",
+      "Damai Dai",
+      "Huazuo Gao",
+      "Jiang Chang",
+      "Liang Zhao",
+      "Shangyan Zhou",
+      "Zhean Xu",
+      "Zhengyan Zhang",
+      "Wangding Zeng",
+      "Shengding Hu",
+      "Yuqing Wang",
+      "Jingyang Yuan",
+      "Lean Wang",
+      "Wenfeng Liang"
+    ],
+    "likes": 119,
+    "published_date": "Dec 31, 2025",
+    "url": "https://huggingface.co/papers/2512.24880",
+    "date_collected": "2026-01-03T07:08:18.009602+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "매니폴드 제한 하이퍼-연결",
+      "abstract": "최근 연구들은 지난 10년간 확립된 잔차 연결 패러다임을 확장하고 잔차 스트림 폭을 넓히며 연결 패턴을 다양화시키는 하이퍼-연결(HC)을 보여주고 있습니다. 이 다양화는 상당한 성능 향상을 가져오지만, 기본적으로 잔차 연결에 내재된 정체 매핑 특성을 희생시켜 훈련의 불안정성과 확장 가능성 제한을 야기하며, 상당한 메모리 액세스 오버헤드도 초래합니다. 이러한 도전에 대처하기 위해 매니폴드 제한 하이퍼-연결(mHC)을 제안합니다. 이는 HC의 잔차 연결 공간을 특정 매니폴드로 투영하여 정체 매핑 특성을 복원하고, 효율성을 보장하기 위해 엄격한 인프라 최적화를 통합합니다. 실험 결과는 mHC가 규모에 맞게 훈련하는 데 효과적이며, 현저한 성능 향상과 우수한 확장 가능성을 제공함을 보여줍니다. 우리는 유연하고 실용적인 HC의 확장으로서 mHC가 고차원 아키텍처 설계에 대한 보다 심층적인 이해에 기여하고, 근본적 모델의 진화를 위한 유망한 방향을 제시할 것으로 기대합니다."
+    },
+    "summary": "1. 하이퍼-연결(HC)의 다양화로 인한 문제를 해결하기 위해 매니폴드 제한 하이퍼-연결(mHC)을 제안함.\n2. mHC는 HC의 잔차 연결 공간을 특정 매니폴드로 투영하여 정체 매핑 특성을 복원하고, 효율적 최적화를 통합함.\n3. 실험 결과로 mHC가 규모에 맞게 훈련하는 데 효과적이며, 성능 향상과 우수한 확장 가능성을 제공함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding",
+    "abstract": "Humans understand long and complex texts by relying on a holistic semantic representation of the content. This global view helps organize prior knowledge, interpret new information, and integrate evidence dispersed across a document, as revealed by the Mindscape-Aware Capability of humans in psychology. Current Retrieval-Augmented Generation (RAG) systems lack such guidance and therefore struggle with long-context tasks. In this paper, we propose Mindscape-Aware RAG (MiA-RAG), the first approach that equips LLM-based RAG systems with explicit global context awareness. MiA-RAG builds a mindscape through hierarchical summarization and conditions both retrieval and generation on this global semantic representation. This enables the retriever to form enriched query embeddings and the generator to reason over retrieved evidence within a coherent global context. We evaluate MiA-RAG across diverse long-context and bilingual benchmarks for evidence-based understanding and global sense-making. It consistently surpasses baselines, and further analysis shows that it aligns local details with a coherent global representation, enabling more human-like long-context retrieval and reasoning.",
+    "authors": [
+      "Yuqing Li",
+      "Jiangnan Li",
+      "Zheng Lin",
+      "Ziyan Zhou",
+      "Junjie Wu",
+      "Weiping Wang",
+      "Jie Zhou",
+      "Mo Yu"
+    ],
+    "likes": 97,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17220",
+    "date_collected": "2026-01-03T07:08:18.010917+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "상상력을 고려한 검색 증강 생성을 통한 장기 맥락 이해 향상",
+      "abstract": "인간은 복잡하고 긴 텍스트를 이해할 때 내용의 전체적인 의미적 표현에 의존합니다. 이러한 전체적인 관점은 이전 지식을 조직화하고 새로운 정보를 해석하며, 마인드스케이프-의식력 능력에 의해 인간이 갖는 증거를 통합할 수 있음이 밝혀졌습니다. 현재의 검색 증강 생성(RAG) 시스템은 이러한 지침이 없어서 장기 맥락 작업에 어려움을 겪습니다. 본 논문에서는 우리가 제안하는 명상력이 고려된 RAG(MiA-RAG)를 소개합니다. 이는 LLM 기반 RAG 시스템에 명시적인 전역적 맥락 인식을 제공하는 첫 번째 방법론입니다. MiA-RAG는 계층적 요약을 통해 마인드스케이프를 구축하고 검색 및 생성을 이러한 전역 의미적 표현에 조건화합니다. 이는 검색기가 풍부한 쿼리 임베딩을 형성하고 생성기가 일관된 전역적 맥락 내에서 검색된 증거에 대해 추론할 수 있도록 합니다. MiA-RAG를 다양한 장기 맥락과 양쪽말 벤치마크에서 평가합니다. 그 결과는 항상 베이스라인을 능가하며, 추가적인 분석에서 이는 지역적 세부사항을 일관된 전역 표현과 일치시켜 인간과 유사한 장기 맥락 검색 및 추론을 가능케 합니다."
+    },
+    "summary": "1. 본 연구는 마인드스케이프를 활용하여 검색 증강 생성 시스템을 향상시키는 MiA-RAG를 제안합니다.\n2. MiA-RAG는 전역적 의미적 표현을 활용하여 검색 및 생성을 조건화하여 장기 맥락 이해를 개선합니다.\n3. 실험 결과는 MiA-RAG가 인간다운 장기 맥락 검색과 추론을 가능케 하며, 다양한 벤치마크에서 기존 방법을 능가함을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion",
+    "abstract": "Recent advances in diffusion-based video generation have opened new possibilities for controllable video editing, yet realistic video object insertion (VOI) remains challenging due to limited 4D scene understanding and inadequate handling of occlusion and lighting effects. We present InsertAnywhere, a new VOI framework that achieves geometrically consistent object placement and appearance-faithful video synthesis. Our method begins with a 4D aware mask generation module that reconstructs the scene geometry and propagates user specified object placement across frames while maintaining temporal coherence and occlusion consistency. Building upon this spatial foundation, we extend a diffusion based video generation model to jointly synthesize the inserted object and its surrounding local variations such as illumination and shading. To enable supervised training, we introduce ROSE++, an illumination aware synthetic dataset constructed by transforming the ROSE object removal dataset into triplets of object removed video, object present video, and a VLM generated reference image. Through extensive experiments, we demonstrate that our framework produces geometrically plausible and visually coherent object insertions across diverse real world scenarios, significantly outperforming existing research and commercial models.",
+    "authors": [
+      "Hoiyeong Jin",
+      "Hyojin Jang",
+      "Jeongho Kim",
+      "Junha Hyung",
+      "Kinam Kim",
+      "Dongjin Kim",
+      "Huijin Choi",
+      "Hyeonji Kim",
+      "Jaegul Choo"
+    ],
+    "likes": 94,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17504",
+    "date_collected": "2026-01-03T07:08:18.012263+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "InsertAnywhere: 현실적인 비디오 객체 삽입을 위한 4D 장면 기하학과 확산 모델의 연결",
+      "abstract": "최근 확산 기반 비디오 생성 기술의 발전으로 제어 가능한 비디오 편집의 새로운 가능성이 열렸으나, 4D 장면 이해의 한계와 가려짐 및 조명 효과의 부적절한 처리로 현실적인 비디오 객체 삽입(VOI)은 여전히 어렵습니다. 우리는 geometrically consistent한 object 배치와 외관-정확한 비디오 합성을 달성하는 새로운 VOI 프레임워크인 InsertAnywhere를 제시합니다. 우리의 방법론은 4D 인식 마스크 생성 모듈로 시작하여 장면 기하를 재구성하고 사용자 지정 object 배치를 프레임 간 전파하면서 시간적 일관성과 가려짐 일관성을 유지합니다. 이 공간적 기초를 토대로 object 삽입과 주변 조명 및 음영과 같은 지역적 변이를 함께 종합적으로 합성하는 확산 기반 비디오 생성 모델을 확장합니다. 감독 지도 학습을 가능하게 하기 위해, ROSE++을 도입하여 ROSE object 제거 데이터셋을 변형하여 object 제거된 비디오, object 있는 비디오 및 VLM 생성된 참조 이미지의 세트로 구성된 조명 인식 가상 데이터셋을 구축합니다. 다양한 실제 시나리오에서 우리의 프레임워크가 기하학적으로 타당하고 시각적으로 일관된 object 삽입을 생성하며, 기존의 연구 및 상용 모델을 크게 앞선 것을 시사하는 방대한 실험을 통해 입증합니다."
+    },
+    "summary": "1. InsertAnywhere는 geometrically consistent한 object 배치와 외관-정확한 비디오 합성을 가능하게 하는 새로운 비디오 객체 삽입 프레임워크를 제시합니다.\n2. ROSE++을 활용하여 illumination aware synthetic dataset을 도입함으로써 감독 지도 학습을 가능케 하였고, 이는 기존 연구와 상용 모델을 크게 앞서는 결과를 얻을 수 있었습니다.\n3. InsertAnywhere는 다양한 실제 시나리오에서 기하학적으로 타당하고 시각적으로 일관된 object 삽입을 생성하여 현실적인 비디오 편집을 더욱 가능케 합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss",
+    "abstract": "Mixture-of-Experts (MoE) models lack explicit constraints to ensure the router's decisions align well with the experts' capabilities, which ultimately limits model performance. To address this, we propose expert-router coupling (ERC) loss, a lightweight auxiliary loss that tightly couples the router's decisions with expert capabilities. Our approach treats each expert's router embedding as a proxy token for the tokens assigned to that expert, and feeds perturbed router embeddings through the experts to obtain internal activations. The ERC loss enforces two constraints on these activations: (1) Each expert must exhibit higher activation for its own proxy token than for the proxy tokens of any other expert. (2) Each proxy token must elicit stronger activation from its corresponding expert than from any other expert. These constraints jointly ensure that each router embedding faithfully represents its corresponding expert's capability, while each expert specializes in processing the tokens actually routed to it. The ERC loss is computationally efficient, operating only on n^2 activations, where n is the number of experts. This represents a fixed cost independent of batch size, unlike prior coupling methods that scale with the number of tokens (often millions per batch). Through pre-training MoE-LLMs ranging from 3B to 15B parameters and extensive analysis on trillions of tokens, we demonstrate the effectiveness of the ERC loss. Moreover, the ERC loss offers flexible control and quantitative tracking of expert specialization levels during training, providing valuable insights into MoEs.",
+    "authors": [
+      "Ang Lv",
+      "Jin Ma",
+      "Yiyuan Ma",
+      "Siyuan Qiao"
+    ],
+    "likes": 86,
+    "published_date": "Dec 29",
+    "url": "https://huggingface.co/papers/2512.23447",
+    "date_collected": "2026-01-03T07:08:18.013379+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "전문가와 라우터를 연결하는 방식: 부수 손실을 통해 믹스처 오브 전문가(Mixture-of-Experts) 개선하기",
+      "abstract": "믹스처 오브 전문가(MoE) 모델은 라우터의 결정이 전문가의 능력과 잘 맞지 않아 모델 성능에 제약을 가져옵니다. 이를 해결하기 위해 우리는 전문가-라우터 연결(ERC) 손실을 제안합니다. 이 가벼운 부수 손실은 라우터의 결정을 전문가 능력과 긴밀하게 결합시킵니다. 우리의 접근 방식은 각 전문가의 라우터 임베딩을 그 전문가에 할당된 토큰의 대리 토큰으로 취급하고, 혼란스럽게 변경된 라우터 임베딩을 전문가를 통해 내부 활성화를 얻기 위해 피드합니다. ERC 손실은 이러한 활성화에 두 가지 제약을 부과합니다: (1) 각 전문가는 다른 전문가의 대리 토큰보다 자신의 대리 토큰에 대해 더 높은 활성화를 보여야 합니다. (2) 각 대리 토큰은 해당 전문가보다 다른 전문가로부터 더 강한 활성화를 유발해야 합니다. 이러한 제약 조건은 각 라우터 임베딩이 해당 전문가의 능력을 충실히 대표하도록 보장하며, 각 전문가가 실제로 라우팅된 토큰을 처리하는 데 특화되도록 합니다. ERC 손실은 n이 전문가 수인 n^2 활성화에만 작용하여 계산적으로 효율적이며 배치 크기와 관계 없는 고정 비용을 나타냅니다. 이는 종종 천만 개에 달하는 토큰 수에 따라 스케일되는 이전 결합 방법과는 달리합니다. 3B에서 15B 매개변수의 MoE-LLM 사전 훈련과 수조 개의 토큰에 대한 철저한 분석을 통해, 우리는 ERC 손실의 효과를 입증합니다. 더 나아가 ERC 손실은 훈련 중 전문가 특화 수준의 유연한 제어와 양적 추적을 제공하여 MoEs에 대한 유용한 통찰력을 제공합니다."
+    },
+    "summary": "1. 전문가-라우터 연결(ERC) 손실은 믹스처 오브 전문가 모델에서 라우터의 결정을 전문가 능력과 긴밀하게 결합시켜 모델 성능을 향상시킵니다.\n2. ERC 손실은 각 전문가의 라우터 임베딩이 해당 전문가의 능력을 충실히 대표하도록 보장하며, 각 전문가가 실제로 라우팅된 토큰을 처리하는 데 특화되도록 합니다.\n3. ERC 손실은 효과적인 모델 성능 개선을 보여주며, 훈련 중 전문가 특화 수준의 제어와 추적을 제공하여 MoE 모델에 대한 유용한 통찰력을 제공합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation",
+    "abstract": "Real-time video generation via diffusion is essential for building general-purpose multimodal interactive AI systems. However, the simultaneous denoising of all video frames with bidirectional attention via an iterative process in diffusion models prevents real-time interaction. While existing distillation methods can make the model autoregressive and reduce sampling steps to mitigate this, they focus primarily on text-to-video generation, leaving the human-AI interaction unnatural and less efficient. This paper targets real-time interactive video diffusion conditioned on a multimodal context, including text, image, and audio, to bridge the gap. Given the observation that the leading on-policy distillation approach Self Forcing encounters challenges (visual artifacts like flickering, black frames, and quality degradation) with multimodal conditioning, we investigate an improved distillation recipe with emphasis on the quality of condition inputs as well as the initialization and schedule for the on-policy optimization. On benchmarks for multimodal-conditioned (audio, image, and text) avatar video generation including HDTF, AVSpeech, and CelebV-HQ, our distilled model matches the visual quality of the full-step, bidirectional baselines of similar or larger size with 20x less inference cost and latency. Further, we integrate our model with audio language models and long-form video inference technique Anchor-Heavy Identity Sinks to build LiveTalk, a real-time multimodal interactive avatar system. System-level evaluation on our curated multi-turn interaction benchmark shows LiveTalk outperforms state-of-the-art models (Sora2, Veo3) in multi-turn video coherence and content quality, while reducing response latency from 1 to 2 minutes to real-time generation, enabling seamless human-AI multimodal interaction.",
+    "authors": [
+      "Ethan Chern",
+      "Zhulin Hu",
+      "Bohao Tang",
+      "Jiadi Su",
+      "Steffi Chern",
+      "Zhijie Deng",
+      "Pengfei Liu"
+    ],
+    "likes": 61,
+    "published_date": "Dec 29",
+    "url": "https://huggingface.co/papers/2512.23576",
+    "date_collected": "2026-01-03T07:08:18.014608+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "실시간 다중 모달 상호작용 비디오 확산을 향상시킨 온-정책 증류를 통한 LiveTalk",
+      "abstract": "확산을 통한 실시간 비디오 생성은 일반적인 다중 모달 상호작용 인공지능 시스템을 구축하는 데 필수적입니다. 하지만 확산 모델의 반복적인 과정을 통해 양방향 주의를 가진 모든 비디오 프레임의 동시적인 노이즈 제거는 실시간 상호작용을 방해합니다. 기존 증류 방법은 모델을 자기회귀적으로 만들고 샘플링 단계를 줄여 이를 완화할 수 있지만, 이는 주로 텍스트에서 비디오 생성에 초점을 맞추어 인간-인공지능 상호작용을 자연스럽고 효율적으로 만들어주지 않습니다. 이 논문은 텍스트, 이미지, 오디오를 포함한 다중 모달 문맥에 조건을 걸어 실시간 대화식 비디오 확산을 목표로 합니다. 이를 위해 선도적인 온-정책 증류 접근법인 Self Forcing이 다중 모달 조건부로 만나는 도전 (깜박임, 검은 프레임, 품질 저하와 같은 시각적 아티팩트)을 인식하고, 조건 입력의 품질, 초기화, 스케줄링에 중점을 둔 개선된 증류 레시피를 연구합니다. HDTF, AVSpeech, CelebV-HQ와 같은 다중 모달 조건부 아바타 비디오 생성 벤치마크에서, 저희 증류된 모델은 20 배 적은 추론 비용과 지연 시간으로 유사하거나 큰 크기의 전체 단계, 양방향 벤치마크의 시각적 품질에 맞먹습니다. 더불어, 오디오 언어 모델과 장형 비디오 추론 기법 Anchor-Heavy Identity Sinks를 통합하여 실시간 다중 모달 대화식 아바타 시스템 LiveTalk을 구축했습니다. 우리가 선별한 다중 턴 상호작용 벤치마크에서의 시스템 수준 평가는 LiveTalk이 Sora2, Veo3와 같은 최첨단 모델보다 다중 턴 비디오 일관성, 콘텐츠 품질에서 뛰어나며, 응답 지연 시간을 1~2분에서 실시간 생성으로 줄여 인간-인공지능 다중 모달 상호작용을 원활하게 합니다."
+    },
+    "summary": "1. 실시간 다중 모달 상호작용 비디오 확산을 향상시킨 접근 방법 연구\n2. 개선된 증류 레시피를 사용하여 시각적 품질 유지하고 인간-인공지능 상호작용 효율화\n3. Audio language models와 long-form video inference technique를 통합한 실시간 다중 모달 대화식 아바타 시스템 LiveTalk 구축 및 성능 평가",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models",
+    "abstract": "We introduce Youtu-LLM, a lightweight yet powerful language model that harmonizes high computational efficiency with native agentic intelligence. Unlike typical small models that rely on distillation, Youtu-LLM (1.96B) is pre-trained from scratch to systematically cultivate reasoning and planning capabilities. The key technical advancements are as follows: (1) Compact Architecture with Long-Context Support: Built on a dense Multi-Latent Attention (MLA) architecture with a novel STEM-oriented vocabulary, Youtu-LLM supports a 128k context window. This design enables robust long-context reasoning and state tracking within a minimal memory footprint, making it ideal for long-horizon agent and reasoning tasks. (2) Principled \"Commonsense-STEM-Agent\" Curriculum: We curated a massive corpus of approximately 11T tokens and implemented a multi-stage training strategy. By progressively shifting the pre-training data distribution from general commonsense to complex STEM and agentic tasks, we ensure the model acquires deep cognitive abilities rather than superficial alignment. (3) Scalable Agentic Mid-training: Specifically for the agentic mid-training, we employ diverse data construction schemes to synthesize rich and varied trajectories across math, coding, and tool-use domains. This high-quality data enables the model to internalize planning and reflection behaviors effectively. Extensive evaluations show that Youtu-LLM sets a new state-of-the-art for sub-2B LLMs. On general benchmarks, it achieves competitive performance against larger models, while on agent-specific tasks, it significantly surpasses existing SOTA baselines, demonstrating that lightweight models can possess strong intrinsic agentic capabilities.",
+    "authors": [
+      "Junru Lu",
+      "Jiarui Qin",
+      "Lingfeng Qiao",
+      "Yinghui Li",
+      "Xinyi Dai",
+      "Bo Ke",
+      "Jianfeng He",
+      "Ruizhi Qiao",
+      "Di Yin",
+      "Xing Sun",
+      "Yunsheng Wu",
+      "Yinsong Liu",
+      "Shuangyin Liu",
+      "Mingkong Tang",
+      "Haodong Lin",
+      "Jiayi Kuang",
+      "Fanxu Meng",
+      "Xiaojuan Tang",
+      "Yunjia Xi",
+      "Junjie Huang",
+      "Haotong Yang",
+      "Zhenyi Shen"
+    ],
+    "likes": 57,
+    "published_date": "Dec 31, 2025",
+    "url": "https://huggingface.co/papers/2512.24618",
+    "date_collected": "2026-01-03T07:08:18.016486+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "경량 대형 언어 모델을 위한 원천적 상관 요소의 해제, Youtu-LLM",
+      "abstract": "Youtu-LLM은 고성능의 경량 언어 모델로, 고유한 상호작용 지능과 높은 계산 효율성을 조화롭게 결합한다. 기존의 소형 모델과 달리 Youtu-LLM(1.96B)은 처음부터 사전 훈련을 받아 체계적인 추론 및 계획 능력을 육성한다. 주요 기술적 진보는 다음과 같다: (1) Context Support를 위한 컴팩트 아키텍처: 새로운 STEM 지향 어휘를 사용하고 밀도 높은 Multi-Latent Attention (MLA) 아키텍처로 구축된 Youtu-LLM은 128k 컨텍스트 창을 지원한다. 이 설계는 최소한의 메모리 공간에서 강력한 장기적 추론 및 상태 추적을 가능하게 하여 장기적 에이전트 및 추론 작업에 이상적이다. (2) 원칙에 입각한 \"Commonsense-STEM-Agent\" 커리큘럼: 약 11T의 토큰으로 이루어진 대량 말뭉치를 선별하고 다단계 훈련 전략을 구현했다. 일반 상식으로부터 복잡한 STEM 및 상호작용 작업으로 점진적으로 데이터 분포를 변경하여 모델이 표면적 조정이 아닌 심층적인 인지 능력을 확보하도록 한다. (3) 확장 가능한 상호작용 중간 훈련: 특히 상호작용 중간 훈련에 대해 다양한 데이터 구성 체계를 사용하여 수학, 코딩 및 도구 사용 영역에서 다양하고 풍부한 추적을 종합한다. 이 고품질 데이터는 모델이 효과적으로 계획 및 반성 행동을 내재화할 수 있게 한다. 광범위한 평가 결과, Youtu-LLM은 2B 미만의 LLM에 대해 새로운 최첨단을 구현했다. 일반 벤치마크에서는 더 큰 모델과 경쟁력 있는 성능을 보이며, 에이전트 특화 작업에서는 기존의 SOTA 기준선을 크게 능가하여 경량 모델이 강력한 본질적 상호작용 능력을 갖을 수 있음을 입증한다."
+    },
+    "summary": "1. Youtu-LLM은 경량 대형 언어 모델로, 장기적 추론과 계획 능력을 갖추고 낮은 메모리 공간으로 장기적 작업에 이상적이다.\n2. \"Commonsense-STEM-Agent\" 커리큘럼을 통해 Youtu-LLM은 심층적인 인지능력을 확보하며 상호작용 과제에 강점을 가진다.\n3. 다양한 데이터 구성 체계로 상호작용 중간 훈련을 실시하는 Youtu-LLM은 경량 모델임에도 뛰어난 성능을 보여준다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Yume-1.5: A Text-Controlled Interactive World Generation Model",
+    "abstract": "Recent approaches have demonstrated the promise of using diffusion models to generate interactive and explorable worlds. However, most of these methods face critical challenges such as excessively large parameter sizes, reliance on lengthy inference steps, and rapidly growing historical context, which severely limit real-time performance and lack text-controlled generation capabilities. To address these challenges, we propose \\method, a novel framework designed to generate realistic, interactive, and continuous worlds from a single image or text prompt. \\method achieves this through a carefully designed framework that supports keyboard-based exploration of the generated worlds. The framework comprises three core components: (1) a long-video generation framework integrating unified context compression with linear attention; (2) a real-time streaming acceleration strategy powered by bidirectional attention distillation and an enhanced text embedding scheme; (3) a text-controlled method for generating world events. We have provided the codebase in the supplementary material.",
+    "authors": [
+      "Xiaofeng Mao",
+      "Zhen Li",
+      "Chuanhao Li",
+      "Xiaojie Xu",
+      "Kaining Ying",
+      "Tong He",
+      "Jiangmiao Pang",
+      "Yu Qiao",
+      "Kaipeng Zhang"
+    ],
+    "likes": 55,
+    "published_date": "Dec 26",
+    "url": "https://huggingface.co/papers/2512.22096",
+    "date_collected": "2026-01-03T07:08:18.017779+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "Yume-1.5: 텍스트 제어형 대화형 세계 생성 모델",
+      "abstract": "최근 접근법들은 확산 모델을 사용하여 대화형 및 탐험 가능한 세계를 생성하는 데 유망성을 보였습니다. 그러나 대부분의 이러한 방법들은 지나치게 큰 매개변수 크기, 긴 추론 단계에 대한 의존성, 빠르게 증가하는 과거 문맥 등의 중대한 도전에 직면하여 실시간 성능을 심각하게 제한하며 텍스트 제어 생성 기능이 부족합니다. 이러한 도전에 대처하기 위해 우리는 \\method를 제안합니다. 이는 싱글 이미지 또는 텍스트 프롬프트에서 실제적이고 대화형 연속적인 세계를 생성하기 위해 고안된 혁신적인 프레임워크입니다. \\method는 생성된 세계를 키보드 기반으로 탐험할 수 있는 세심하게 설계된 프레임워크를 통해 이루어집니다. 이 프레임워크는 세 가지 핵심 구성 요소로 이루어져 있습니다: (1) 단일 프레임에서 통합된 문맥 압축과 선형 주의를 결합한 장기 비디오 생성 프레임워크; (2) 양방향 주의 증류 및 향상된 텍스트 임베딩 체계를 사용한 실시간 스트리밍 가속화 전략; (3) 세계 사건을 생성하는 텍스트 제어 방법. 보충 자료에서 코드베이스를 제공했습니다."
+    },
+    "summary": "1. 단일 이미지 또는 텍스트 프롬프트에서 현실적이고 대화형 세계를 생성하는 \\method 제안.\n2. 키보드 기반의 세계 탐험을 지원하는 프레임워크로 구성된 세 가지 핵심 구성 요소 소개.\n3. 실시간 성능을 향상시키기 위한 전략과 텍스트 제어 방법을 통한 세계 이벤트 생성 방법 소개.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion",
+    "abstract": "Diffusion-based video super-resolution (VSR) methods achieve strong perceptual quality but remain impractical for latency-sensitive settings due to reliance on future frames and expensive multi-step denoising. We propose Stream-DiffVSR, a causally conditioned diffusion framework for efficient online VSR. Operating strictly on past frames, it combines a four-step distilled denoiser for fast inference, an Auto-regressive Temporal Guidance (ARTG) module that injects motion-aligned cues during latent denoising, and a lightweight temporal-aware decoder with a Temporal Processor Module (TPM) that enhances detail and temporal coherence. Stream-DiffVSR processes 720p frames in 0.328 seconds on an RTX4090 GPU and significantly outperforms prior diffusion-based methods. Compared with the online SOTA TMP, it boosts perceptual quality (LPIPS +0.095) while reducing latency by over 130x. Stream-DiffVSR achieves the lowest latency reported for diffusion-based VSR, reducing initial delay from over 4600 seconds to 0.328 seconds, thereby making it the first diffusion VSR method suitable for low-latency online deployment. Project page: https://jamichss.github.io/stream-diffvsr-project-page/",
+    "authors": [
+      "Hau-Shiang Shiu",
+      "Chin-Yang Lin",
+      "Zhixiang Wang",
+      "Chi-Wei Hsiao",
+      "Po-Fan Yu",
+      "Yu-Chih Chen",
+      "Yu-Lun Liu"
+    ],
+    "likes": 40,
+    "published_date": "Dec 29",
+    "url": "https://huggingface.co/papers/2512.23709",
+    "date_collected": "2026-01-03T07:08:18.018994+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "스트림-DiffVSR: 자기 회귀 확산을 통한 저지연 스트리밍 비디오 초해상도 (Auto-Regressive Diffusion)",
+      "abstract": "확산 기반 비디오 초해상도(VSR) 방법은 미래 프레임에 의존하고 비용이 많이 드는 다단계 노이즈 제거로 인해 저지연이 중요한 환경에서는 실용적이지 않습니다. 저희는 과거 프레임에 엄격히 의존하는 효율적인 온라인 VSR을 위한 인과 조건부 확산 구조인 스트림-DiffVSR을 제안합니다. 이는 빠른 추론을 위한 네 단계의 가공된 노이즈 제거기, 잠재적 노이즈 제거 중 명암을 주입하는 자기 회귀 시간 안내(ArtG) 모듈, 시간적 세부사항과 시간적 일관성을 강화하는 가벼운 시간적 인지 디코더 및 시간 처리기 모듈(TPM)을 결합합니다. Stream-DiffVSR은 RTX4090 GPU에서 720p 프레임을 0.328초만에 처리하며 기존 확산 기반 방법들을 크게 능가합니다. 온라인 최신 기술인 TMP와 비교했을 때 0.095만큼 더 성능이 좋아지면서 레이턴시를 130배 이상 줄였습니다. Stream-DiffVSR은 확산 기반 VSR의 최저 레이턴시를 달성했으며 초기 지연 시간을 4600초에서 0.328초로 줄여 첫 번째 저지연 온라인 배포 가능한 확산 VSR 방법이 되었습니다. 프로젝트 페이지: https://jamichss.github.io/stream-diffvsr-project-page/"
+    },
+    "summary": "1. Stream-DiffVSR은 과거 프레임에 엄격히 의존하여 저지연으로 효율적인 온라인 비디오 초해상도를 제공합니다.\n2. 네 단계의 가공된 노이즈 제거기와 자기 회귀 시간 안내 모듈 등을 결합하여 세부사항과 시간적 일관성을 강화합니다.\n3. Stream-DiffVSR은 확산 기반 VSR 중에서 최저 레이턴시를 달성하며 초기 지연 시간을 현저히 줄여 첫 번째로 저지연 온라인 배포 가능한 방법입니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation",
+    "abstract": "Transparent objects remain notoriously hard for perception systems: refraction, reflection and transmission break the assumptions behind stereo, ToF and purely discriminative monocular depth, causing holes and temporally unstable estimates. Our key observation is that modern video diffusion models already synthesize convincing transparent phenomena, suggesting they have internalized the optical rules. We build TransPhy3D, a synthetic video corpus of transparent/reflective scenes: 11k sequences rendered with Blender/Cycles. Scenes are assembled from a curated bank of category-rich static assets and shape-rich procedural assets paired with glass/plastic/metal materials. We render RGB + depth + normals with physically based ray tracing and OptiX denoising. Starting from a large video diffusion model, we learn a video-to-video translator for depth (and normals) via lightweight LoRA adapters. During training we concatenate RGB and (noisy) depth latents in the DiT backbone and co-train on TransPhy3D and existing frame-wise synthetic datasets, yielding temporally consistent predictions for arbitrary-length input videos. The resulting model, DKT, achieves zero-shot SOTA on real and synthetic video benchmarks involving transparency: ClearPose, DREDS (CatKnown/CatNovel), and TransPhy3D-Test. It improves accuracy and temporal consistency over strong image/video baselines, and a normal variant sets the best video normal estimation results on ClearPose. A compact 1.3B version runs at ~0.17 s/frame. Integrated into a grasping stack, DKT's depth boosts success rates across translucent, reflective and diffuse surfaces, outperforming prior estimators. Together, these results support a broader claim: \"Diffusion knows transparency.\" Generative video priors can be repurposed, efficiently and label-free, into robust, temporally coherent perception for challenging real-world manipulation.",
+    "authors": [
+      "Shaocong Xu",
+      "Songlin Wei",
+      "Qizhe Wei",
+      "Zheng Geng",
+      "Hong Li",
+      "Licheng Shen",
+      "Qianpu Sun",
+      "Shu Han",
+      "Bin Ma",
+      "Bohan Li",
+      "Chongjie Ye",
+      "Yuhang Zheng",
+      "Nan Wang",
+      "Saining Zhang",
+      "Hao Zhao"
+    ],
+    "likes": 38,
+    "published_date": "Dec 29",
+    "url": "https://huggingface.co/papers/2512.23705",
+    "date_collected": "2026-01-03T07:08:18.020563+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "확산이 투명성을 알고 있다: 비디오 확산을 재활용하여 투명 물체의 깊이와 법선 추정",
+      "abstract": "투명 물체는 아직도 인식 시스템에게 어려운 과제로 남아있습니다: 굴절, 반사 및 투과는 스테레오, ToF 및 순전히 식별적인 단안 깊이의 가정을 깨뜨리며 구멍과 시간적으로 불안정한 추정을 야기합니다. 우리의 주요 관찰은 현대적인 비디오 확산 모델이 이미 설득력 있는 투명 현상을 합성한다는 것인데, 이는 이러한 모델이 광학적 규칙을 내재화했음을 시사합니다. 우리는 TransPhy3D를 구축했는데, 이는 투명/반사적인 장면의 합성 비디오 산출물입니다: 11,000개의 Blender/Cycles로 렌더링된 시퀀스. 장면은 카테고리 풍부한 정적 에셋과 유형 풍부한 절차적 에셋의 세트로 구성되며 유리/플라스틱/금속 소재와 짝지어져 있습니다. 우리는 물리적으로 기반으로 한 광선 추적 및 OptiX 데노이징과 함께 RGB + 깊이 + 법선을 렌더링합니다. 대량의 비디오 확산 모델을 기반으로 시작하여, 우리는 경량 LoRA 어댑터를 통해 깊이(및 법선)에 대한 비디오 대비 비디오 번역기를 학습합니다. 훈련 중에는 DiT 백본에 RGB와 (잡음이 섞인) 깊이 latents를 연결하고 TransPhy3D와 기존의 프레임별 합성 데이터셋에서 동시에 훈련하여 임의 길이 입력 비디오에 대해 시간적으로 일관된 예측을 얻습니다. 이 결과로 나온 모델인 DKT는 투명도를 포함한 실제 및 합성 비디오 기준 데이터셋에서 zero-shot SOTA를 달성합니다: ClearPose, DREDS (CatKnown/CatNovel), 그리고 TransPhy3D-Test. 이는 강력한 이미지/비디오 베이스라인보다 정확도와 시간적 일관성을 향상시키며, 법선 변형은 ClearPose에서 최고의 비디오 법선 추정 결과를 제시합니다. 간결한 13억 버전은 ~0.17초/프레임으로 실행됩니다. 그리핑 스택에 통합된 DKT의 깊이는 투명, 반사 및 확산 표면을 통해 이전 추정기를 능가하는 성공률을 높입니다. 이러한 결과들은 “확산이 투명성을 알고 있다”는 보다 광범위한 주장을 뒷받침합니다. 생성적 비디오 사전은 도전적인 실제 세계 조작을 위한 견고하고 시간적으로 일관된 인식으로 효과적으로 그리고 라벨 없이 적용될 수 있습니다."
+    },
+    "summary": "1. 현대적 비디오 확산 모델을 활용하여 투명 물체의 깊이와 법선을 추정하는 DKT 모델을 제안함.\n2. 투명/반사적인 장면의 합성 비디오 산출물 TransPhy3D를 구축하고, 이를 활용하여 시간적으로 일관된 예측을 실현함.\n3. DKT 모델은 투명도에 대한 zero-shot SOTA를 달성하며, 그리핑 작업에 통합시켜 이전 추정기를 능가하는 결과를 보임.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone",
+    "abstract": "While autoregressive Large Vision-Language Models (VLMs) have achieved remarkable success, their sequential generation often limits their efficacy in complex visual planning and dynamic robotic control. In this work, we investigate the potential of constructing Vision-Language Models upon diffusion-based large language models (dLLMs) to overcome these limitations. We introduce Dream-VL, an open diffusion-based VLM (dVLM) that achieves state-of-the-art performance among previous dVLMs. Dream-VL is comparable to top-tier AR-based VLMs trained on open data on various benchmarks but exhibits superior potential when applied to visual planning tasks. Building upon Dream-VL, we introduce Dream-VLA, a dLLM-based Vision-Language-Action model (dVLA) developed through continuous pre-training on open robotic datasets. We demonstrate that the natively bidirectional nature of this diffusion backbone serves as a superior foundation for VLA tasks, inherently suited for action chunking and parallel generation, leading to significantly faster convergence in downstream fine-tuning. Dream-VLA achieves top-tier performance of 97.2% average success rate on LIBERO, 71.4% overall average on SimplerEnv-Bridge, and 60.5% overall average on SimplerEnv-Fractal, surpassing leading models such as π_0 and GR00T-N1. We also validate that dVLMs surpass AR baselines on downstream tasks across different training objectives. We release both Dream-VL and Dream-VLA to facilitate further research in the community.",
+    "authors": [
+      "Jiacheng Ye",
+      "Shansan Gong",
+      "Jiahui Gao",
+      "Junming Fan",
+      "Shuang Wu",
+      "Wei Bi",
+      "Haoli Bai",
+      "Lifeng Shang",
+      "Lingpeng Kong"
+    ],
+    "likes": 38,
+    "published_date": "Dec 27",
+    "url": "https://huggingface.co/papers/2512.22615",
+    "date_collected": "2026-01-03T07:08:18.021881+09:00",
+    "week": "2026-W01",
+    "translation": {
+      "title": "Dream-VL & Dream-VLA: 확산 언어 모델 백본을 기반으로 한 오픈 비전-언어 및 비전-언어-행동 모델",
+      "abstract": "자기회귀 Large Vision-Language Models (VLMs)가 높은 성공을 거두었지만, 순차적 생성은 복잡한 시각적 계획과 동적 로봇 제어에 제한을 줄 수 있습니다. 본 연구에서는 이러한 제한을 극복하기 위해 확산 기반 대규모 언어 모델(dLLMs) 위에 비전-언어 모델을 구축하는 잠재력을 탐구합니다. 저희는 Dream-VL이라는 오픈 확산 기반 VLM(dVLM)을 소개합니다. 이 모델은 이전 dVLM 중 최고 성과를 달성합니다. Dream-VL은 오픈 데이터로 훈련된 최고 수준의 AR 기반 VLM과 다양한 벤치마크에서 비교 가능하지만, 시각적 계획 작업에 적용할 때 우수한 잠재력을 보입니다. Dream-VL을 기반으로 우리는 Dream-VLA라는 연속적 사전 훈련을 통해 개발된 dLLM 기반 비전-언어-행동 모델(dVLA)을 소개합니다. 우리는 이 확산 백본의 원래 양방향성이 VLA 작업에 뛰어난 기초를 제공하며, 액션 청킹과 병렬 생성에 이상적이며, 하향식 파인튜닝에서 크게 빠른 수렴을 이끌어냅니다. Dream-VLA는 LIBERO에서 97.2% 평균 성공률, SimplerEnv-Bridge에서 71.4% 전체 평균, 그리고 SimplerEnv-Fractal에서 60.5% 전체 평균을 달성하여 π_0 및 GR00T-N1과 같은 선도 모델을 앞지르고 있습니다. 또한 dVLM이 다양한 훈련 목표를 가진 하향식 작업에서 AR 기준선을 넘는 것을 확인했습니다. 저희는 Dream-VL과 Dream-VLA를 공개하여 커뮤니티에서 더 많은 연구를 촉진하고자 합니다."
+    },
+    "summary": "1. 자기회귀 모델보다 나은 성능을 낼 수 있는 확산 기반 Vision-Language 모델인 Dream-VL이 소개되었습니다.\n2. Dream-VLA는 확산 기반 언어 모델을 기반으로 하며, 로봇 데이터셋을 사용한 지속적 사전 훈련을 통해 개발되었으며, 빠른 수렴을 이끌어내는 양방향성을 갖추고 있습니다.\n3. Dream-VLA는 다양한 벤치마크에서 우수한 성능을 보이며, 선행 모델을 앞서는 결과를 보여주고 있습니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  }
+]

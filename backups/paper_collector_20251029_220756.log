@@ -1,0 +1,139 @@
+=== Paper Collection Started at Tue Oct 28 22:08:00 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W44
+URL: https://huggingface.co/papers/week/2025-W44
+Found 10 papers in weekly view
+Fetching likes for: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Fetching likes for: ReCode: Unify Plan and Action for Universal Granularity Control
+Fetching likes for: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Fetching likes for: A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
+Fetching likes for: FARMER: Flow AutoRegressive Transformer over Pixels
+Fetching likes for: Video-As-Prompt: Unified Semantic Control for Video Generation
+Fetching likes for: Lookahead Anchoring: Preserving Character Identity in Audio-Driven Human
+  Animation
+Fetching likes for: VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing,
+  Speaking, and Acting
+Fetching likes for: Reasoning with Sampling: Your Base Model is Smarter Than You Think
+Fetching likes for: WorldGrow: Generating Infinite 3D World
+Selected top 10 papers by likes:
+1. Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations (144 likes)
+2. ReCode: Unify Plan and Action for Universal Granularity Control (97 likes)
+3. DeepAgent: A General Reasoning Agent with Scalable Toolsets (76 likes)
+4. A Survey of Data Agents: Emerging Paradigm or Overstated Hype? (50 likes)
+5. FARMER: Flow AutoRegressive Transformer over Pixels (43 likes)
+6. Video-As-Prompt: Unified Semantic Control for Video Generation (40 likes)
+7. Lookahead Anchoring: Preserving Character Identity in Audio-Driven Human
+  Animation (39 likes)
+8. VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing,
+  Speaking, and Acting (39 likes)
+9. Reasoning with Sampling: Your Base Model is Smarter Than You Think (38 likes)
+10. WorldGrow: Generating Infinite 3D World (33 likes)
+Found abstract: Humans learn abstract concepts through multisensory synergy, and once formed,
+such representations c...
+Processed paper: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Found abstract: Real-world tasks require decisions at varying granularities, and humans excel
+at this by leveraging ...
+Processed paper: ReCode: Unify Plan and Action for Universal Granularity Control
+Found abstract: Large reasoning models have demonstrated strong problem-solving abilities,
+yet real-world tasks ofte...
+Processed paper: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Found abstract: The rapid advancement of large language models (LLMs) has spurred the
+emergence of data agents--auto...
+Processed paper: A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
+Found abstract: Directly modeling the explicit likelihood of the raw data distribution is key
+topic in the machine l...
+Processed paper: FARMER: Flow AutoRegressive Transformer over Pixels
+Found abstract: Unified, generalizable semantic control in video generation remains a
+critical open challenge. Exist...
+Processed paper: Video-As-Prompt: Unified Semantic Control for Video Generation
+Found abstract: Audio-driven human animation models often suffer from identity drift during
+temporal autoregressive ...
+Processed paper: Lookahead Anchoring: Preserving Character Identity in Audio-Driven Human
+  Animation
+Found abstract: Current Vision-Language-Action (VLA) models are often constrained by a rigid,
+static interaction par...
+Processed paper: VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing,
+  Speaking, and Acting
+Found abstract: Frontier reasoning models have exhibited incredible capabilities across a
+wide array of disciplines,...
+Processed paper: Reasoning with Sampling: Your Base Model is Smarter Than You Think
+Found abstract: We tackle the challenge of generating the infinitely extendable 3D world --
+large, continuous enviro...
+Processed paper: WorldGrow: Generating Infinite 3D World
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: ReCode: Unify Plan and Action for Universal Granularity Control
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Paper already exists, checking if translation is complete...
+Update likes: 76  ->  59
+Update date_collected: 2025-10-29T07:08:09.281551+09:00  ->  2025-10-28T07:07:47.796804+09:00
+
+Processing paper 4/10
+Title: A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: FARMER: Flow AutoRegressive Transformer over Pixels
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Video-As-Prompt: Unified Semantic Control for Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  33
+Update date_collected: 2025-10-29T07:08:09.286072+09:00  ->  2025-10-28T07:07:47.798079+09:00
+
+Processing paper 7/10
+Title: Lookahead Anchoring: Preserving Character Identity in Audio-Driven Human
+  Animation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing,
+  Speaking, and Acting
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Reasoning with Sampling: Your Base Model is Smarter Than You Think
+Paper already exists, checking if translation is complete...
+Update likes: 38  ->  21
+Update date_collected: 2025-10-29T07:08:09.290190+09:00  ->  2025-10-28T07:07:47.804845+09:00
+
+Processing paper 10/10
+Title: WorldGrow: Generating Infinite 3D World
+Paper already exists, checking if translation is complete...
+Update likes: 33  ->  25
+Update date_collected: 2025-10-29T07:08:09.291513+09:00  ->  2025-10-28T07:07:47.800704+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W44.json...
+
+Updating Notion database...
+Creating new paper: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+Creating new paper: ReCode: 일반적인 세분성 제어를 위한 계획과 행동 통합
+Updating paper: DeepAgent: 확장 가능한 도구 세트를 갖춘 일반적인 추론 에이전트 (likes: 59 -> 76)
+Creating new paper: 데이터 에이전트 조사: 신흥 패러다임 또는 과대포장 논란?
+Creating new paper: 픽셀 위의 플로우 자기회귀 트랜스포머: FARMER
+Updating paper: 비디오-를-프롬프트: 비디오 생성을 위한 통합적 의미 제어 (likes: 33 -> 40)
+Creating new paper: 오디오 주도 인간 애니메이션에서 캐릭터 신원 보존을 위한 미래 예약 고정: Lookahead Anchoring
+Creating new paper: VITA-E: 동시적 시각, 청각, 음성, 행동과의 자연스러운 몸으로 하는 상호작용
+Updating paper: 샘플링을 통한 추론: 당신의 기본 모델은 생각보다 똑똑합니다 (likes: 21 -> 38)
+Updating paper: WorldGrow: 무한한 3D 세계 생성 (likes: 25 -> 33)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Oct 28 22:10:10 UTC 2025 ===
+

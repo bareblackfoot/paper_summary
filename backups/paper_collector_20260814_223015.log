@@ -1,0 +1,125 @@
+=== Paper Collection Started at Thu Aug 13 22:51:27 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W33
+URL: https://huggingface.co/papers/week/2026-W33
+Found 10 papers in weekly view
+Fetching likes for: BDH-CQ: In-Context Learning with Recurrent Latent Reasoning
+Fetching likes for: Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA
+Fetching likes for: On-Policy Self-Distillation without Any Supervision
+Fetching likes for: ComBodied Agents: a New Paradigm of Human-Centric Agentic AI
+Fetching likes for: OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution
+Fetching likes for: Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill
+Fetching likes for: Beyond Pixels: From Video Priors to 4D Worlds
+Fetching likes for: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring
+Fetching likes for: Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design
+Fetching likes for: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Selected top 10 papers by likes:
+1. BDH-CQ: In-Context Learning with Recurrent Latent Reasoning (593 likes)
+2. Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA (328 likes)
+3. On-Policy Self-Distillation without Any Supervision (194 likes)
+4. ComBodied Agents: a New Paradigm of Human-Centric Agentic AI (181 likes)
+5. OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution (181 likes)
+6. Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill (176 likes)
+7. Beyond Pixels: From Video Priors to 4D Worlds (171 likes)
+8. SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring (126 likes)
+9. Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design (124 likes)
+10. SimWAM: A Simple World Action Model for End-to-End Autonomous Driving (102 likes)
+Found abstract: We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reaso...
+Processed paper: BDH-CQ: In-Context Learning with Recurrent Latent Reasoning
+Found abstract: Macaron-V1 is an open agent-model family for experiential intelligence: learning from experience in ...
+Processed paper: Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA
+Found abstract: On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large langua...
+Processed paper: On-Policy Self-Distillation without Any Supervision
+Found abstract: After an older adult misses a medication dose, a software agent can send another reminder and an emb...
+Processed paper: ComBodied Agents: a New Paradigm of Human-Centric Agentic AI
+Found abstract: AI agents operate in persistent environments where early state changes can influence decisions far i...
+Processed paper: OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution
+Found abstract: Turning a research idea into a complete paper requires more than text generation: the system must re...
+Processed paper: Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill
+Found abstract: 4D generation synthesizes dynamic 3D scenes from conditions such as text or images. Existing methods...
+Processed paper: Beyond Pixels: From Video Priors to 4D Worlds
+Found abstract: As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing ...
+Processed paper: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring
+Found abstract: Agentic systems are increasingly expected to improve after deployment, yet single-entity self-evolut...
+Processed paper: Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design
+Found abstract: World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics prio...
+Processed paper: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: BDH-CQ: In-Context Learning with Recurrent Latent Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 593  ->  551
+Update date_collected: 2026-08-14T07:51:36.523156+09:00  ->  2026-08-13T07:50:05.762357+09:00
+
+Processing paper 2/10
+Title: Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA
+Paper already exists, checking if translation is complete...
+Update likes: 328  ->  324
+Update date_collected: 2026-08-14T07:51:36.526416+09:00  ->  2026-08-13T07:50:05.765723+09:00
+
+Processing paper 3/10
+Title: On-Policy Self-Distillation without Any Supervision
+Paper already exists, checking if translation is complete...
+Update likes: 194  ->  184
+Update date_collected: 2026-08-14T07:51:36.528872+09:00  ->  2026-08-13T07:50:05.768199+09:00
+
+Processing paper 4/10
+Title: ComBodied Agents: a New Paradigm of Human-Centric Agentic AI
+Paper already exists, checking if translation is complete...
+Update likes: 181  ->  166
+Update date_collected: 2026-08-14T07:51:36.532163+09:00  ->  2026-08-13T07:50:05.771551+09:00
+
+Processing paper 5/10
+Title: OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Beyond Pixels: From Video Priors to 4D Worlds
+Paper already exists, checking if translation is complete...
+Update likes: 171  ->  102
+Update date_collected: 2026-08-14T07:51:36.539618+09:00  ->  2026-08-13T07:50:05.779777+09:00
+
+Processing paper 8/10
+Title: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring
+Paper already exists, checking if translation is complete...
+Update likes: 126  ->  125
+Update date_collected: 2026-08-14T07:51:36.542538+09:00  ->  2026-08-13T07:50:05.774568+09:00
+
+Processing paper 9/10
+Title: Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design
+Paper already exists, checking if translation is complete...
+Update likes: 124  ->  107
+Update date_collected: 2026-08-14T07:51:36.545214+09:00  ->  2026-08-13T07:50:05.777348+09:00
+
+Processing paper 10/10
+Title: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  102
+Update date_collected: 2026-08-14T07:51:36.547721+09:00  ->  2026-08-13T07:50:05.782373+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W33.json...
+
+Updating Notion database...
+Updating paper: BDH-CQ: 맥락 내 추론을 위한 반복적 잠재 추론과 모델 [In-Context Learning with Recurrent Latent Reasoning] (likes: 551 -> 593)
+Updating paper: Macaron-V1: 오픈 클론을 위한 자기 개선과 Mixture-of-LoRA로 향해 (likes: 324 -> 328)
+Updating paper: 외부 감독 없는 온 정책 자기 증류법 (likes: 184 -> 194)
+Updating paper: ComBodied Agents: 인간 중심 에이전트 AI의 새로운 패러다임 (likes: 166 -> 181)
+Creating new paper: 오픈아트: 개방된 환경 진화를 통한 에이전트 레드 팀 확장
+Creating new paper: 스파크투페이퍼: 조합 가능한 기술로서의 종단 간 논문 생성
+Updating paper: 픽셀을 넘어서: 비디오 선행과 4D 세계로 (likes: 102 -> 171)
+Updating paper: SWE-Bench ProMax: 대규모 다국어 코드 리팩터링에서 에이전트들의 벤치마킹 (likes: 125 -> 126)
+Updating paper: 자발적 진화를 향한 에이전틱 시스템의 상호 진화: 인간 설계를 초월하는 자기 지향 진화 (likes: 107 -> 124)
+Paper already exists with same likes count: SimWAM: 자율 주행을 위한 간단한 세계 행동 모델
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Aug 13 22:52:43 UTC 2026 ===
+

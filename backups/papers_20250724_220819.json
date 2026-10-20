@@ -1,0 +1,327 @@
+[
+  {
+    "title": "GUI-G^2: Gaussian Reward Modeling for GUI Grounding",
+    "abstract": "Graphical User Interface (GUI) grounding maps natural language instructions\nto precise interface locations for autonomous interaction. Current\nreinforcement learning approaches use binary rewards that treat elements as\nhit-or-miss targets, creating sparse signals that ignore the continuous nature\nof spatial interactions. Motivated by human clicking behavior that naturally\nforms Gaussian distributions centered on target elements, we introduce GUI\nGaussian Grounding Rewards (GUI-G^2), a principled reward framework that\nmodels GUI elements as continuous Gaussian distributions across the interface\nplane. GUI-G^2 incorporates two synergistic mechanisms: Gaussian point\nrewards model precise localization through exponentially decaying distributions\ncentered on element centroids, while coverage rewards assess spatial alignment\nby measuring the overlap between predicted Gaussian distributions and target\nregions. To handle diverse element scales, we develop an adaptive variance\nmechanism that calibrates reward distributions based on element dimensions.\nThis framework transforms GUI grounding from sparse binary classification to\ndense continuous optimization, where Gaussian distributions generate rich\ngradient signals that guide models toward optimal interaction positions.\nExtensive experiments across ScreenSpot, ScreenSpot-v2, and ScreenSpot-Pro\nbenchmarks demonstrate that GUI-G^2, substantially outperforms\nstate-of-the-art method UI-TARS-72B, with the most significant improvement of\n24.7% on ScreenSpot-Pro. Our analysis reveals that continuous modeling provides\nsuperior robustness to interface variations and enhanced generalization to\nunseen layouts, establishing a new paradigm for spatial reasoning in GUI\ninteraction tasks.",
+    "authors": [
+      "Fei Tang",
+      "Zhangxuan Gu",
+      "Zhengxi Lu",
+      "Xuyang Liu",
+      "Shuheng Shen",
+      "Changhua Meng",
+      "Wen Wang",
+      "Wenqi Zhang",
+      "Yongliang Shen",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang"
+    ],
+    "likes": 112,
+    "published_date": "Jul 21",
+    "url": "https://huggingface.co/papers/2507.15846",
+    "date_collected": "2025-07-24T07:08:09.380137+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "GUI-G^2: GUI 그라운딩을 위한 가우시안 보상 모델링",
+      "abstract": "그래픽 사용자 인터페이스(GUI) 그라운딩은 자연어 명령을 정확한 인터페이스 위치로 매핑하여 자율 상호작용을 위한 기반을 마련합니다. 현재의 강화 학습 접근 방식은 요소를 적중 또는 실패로 취급하는 이진 보상을 사용하여 공간 상호작용의 연속적인 성격을 무시하는 희소한 신호를 만듭니다. 이 연구는 인간의 클릭 행동에서 영감을 받아 대상 요소를 중심으로 가우시안 분포를 자연적으로 형성하는 것을 GUI 가우시안 그라운딩 보상(GUI-G^2)이라고 하는 원칙에 입각한 보상 프레임워크를 소개합니다. GUI-G^2는 요소를 인터페이스 평면 전체에 걸쳐 연속적인 가우시안 분포로 모델링하는 프레임워크로, 가우시안 포인트 보상은 요소 중심을 중심으로 지수적으로 감소하는 분포를 통해 정확한 위치 지정을 모델링하고, 커버리지 보상은 예측된 가우시안 분포와 대상 영역 간의 중첩을 측정하여 공간 정렬을 평가합니다. 다양한 요소 크기를 처리하기 위해 요소 크기에 따라 보상 분포를 보정하는 적응형 분산 메커니즘을 개발합니다. 이 프레임워크는 GUI 그라운딩을 희소한 이진 분류에서 밀도 높은 연속적 최적화로 변형시켜 가우시안 분포가 모델을 최적의 상호작용 위치로 안내하는 풍부한 경사 신호를 생성합니다. ScreenSpot, ScreenSpot-v2, ScreenSpot-Pro 벤치마크를 포함한 광범위한 실험은 GUI-G^2가 UI-TARS-72B 최신 기법을 현저하게 능가한다는 것을 보여주며, ScreenSpot-Pro에서 24.7%의 가장 큰 향상을 나타냅니다. 연구 결과는 연속적 모델링이 인터페이스 변이에 뛰어난 강건성을 제공하고 보이지 않는 레이아웃에 대한 향상된 일반화를 제공함을 보여주며, GUI 상호작용 작업에서 공간 추론의 새로운 패러다임을 확립합니다."
+    },
+    "summary": "1. GUI-G^2는 GUI 요소를 연속적 가우시안 분포로 모델링하여 밀도 높은 지역화를 가능하게 하는 GUI 그라운딩 보상 프레임워크를 소개합니다.\n2. 가우시안 포인트 보상과 커버리지 보상 메커니즘을 결합하여 GUI-G^2는 요소 정확한 위치 지정과 공간 정렬을 모델링하며, 적응형 분산 메커니즘을 통해 다양한 요소 크기를 처리합니다.\n3. GUI-G^2는 UI-TARS-72B 방법보다 우수한 성능을 보이며, 연속적 모델링은 인터페이스 변이에 강건하고 새로운 레이아웃에 대한 일반화를 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via\n  Context-Aware Multi-Stage Policy Optimization",
+    "abstract": "Large language models have recently evolved from fluent text generation to\nadvanced reasoning across diverse domains, giving rise to reasoning language\nmodels. Among these domains, mathematical reasoning serves as a representative\nbenchmark as it requires precise multi-step logic and abstract reasoning, which\ncan be generalized to other tasks. While closed-source RLMs such as GPT-o3\ndemonstrate impressive reasoning capabilities, their proprietary nature limits\ntransparency and reproducibility. Although many open-source projects aim to\nclose this gap, most of them lack sufficient openness by omitting critical\nresources such as datasets and detailed training configurations, which hinders\nreproducibility. To contribute toward greater transparency in RLM development,\nwe introduce the MiroMind-M1 series, a set of fully open-source RLMs built on\nthe Qwen-2.5 backbone that match or exceed the performance of existing\nopen-source RLMs. Specifically, our models are trained in two stages: SFT on a\ncarefully curated corpus of 719K math-reasoning problems with verified CoT\ntrajectories, followed by RLVR on 62K challenging and verifiable problems. To\nenhance the robustness and efficiency of the RLVR process, we introduce\nContext-Aware Multi-Stage Policy Optimization, an algorithm that integrates\nlength-progressive training with an adaptive repetition penalty to encourage\ncontext-aware RL training. Our model achieves state-of-the-art or competitive\nperformance and superior token efficiency among Qwen-2.5-based open-source 7B\nand 32B models on the AIME24, AIME25, and MATH benchmarks. To facilitate\nreproducibility, we release the complete stack: models (MiroMind-M1-SFT-7B,\nMiroMind-M1-RL-7B, MiroMind-M1-RL-32B); datasets (MiroMind-M1-SFT-719K,\nMiroMind-M1-RL-62K); and all training and evaluation configurations. We hope\nthese resources will support further research and foster community advancement.",
+    "authors": [
+      "Xingxuan Li",
+      "Yao Xiao",
+      "Dianwen Ng",
+      "Hai Ye",
+      "Yue Deng",
+      "Xiang Lin",
+      "Bin Wang",
+      "Zhanfeng Mo",
+      "Chong Zhang",
+      "Yueyi Zhang",
+      "Zonglin Yang",
+      "Ruilin Li",
+      "Lei Lei",
+      "Shihao Xu",
+      "Han Zhao",
+      "Weiling Chen",
+      "Feng Ji",
+      "Lidong Bing"
+    ],
+    "likes": 102,
+    "published_date": "Jul 19",
+    "url": "https://huggingface.co/papers/2507.14683",
+    "date_collected": "2025-07-24T07:08:09.381947+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "MiroMind-M1: 수학 추론의 컨텍스트 인식 다단계 정책 최적화를 통한 오픈 소스 진보",
+      "abstract": "최근 대형 언어 모델은 다양한 영역에서의 고급 추론을 위해 발전해 왔으며, 이는 추론 언어 모델로 이어졌습니다. 이러한 영역 중에서 수학적 추론은 정확한 다단계 논리와 추상적 추론이 필요하기 때문에 기타 작업에 일반화될 수 있는 대표적인 기준이 됩니다. 여러 폐쇄형 RLM(대규모 언어 모델)들은 탁월한 추론 능력을 보여주지만, 그들의 소유권 성격은 투명성과 재현성을 제한합니다. 이것을 해소하기 위해, 우리는 전체적으로 오픈 소스인 MiroMind-M1 시리즈를 소개합니다. 이러한 모델들은 Qwen-2.5 기반으로 구축된 오픈 소스 RLM들의 성능을 맞추거나 뛰어넘습니다. 특히, 우리 모델은 주어진 수학 추론 문제 719K개와 검증된 CoT 궤적이 담긴 말뭉치로 SFT 단계에서 훈련을 진행하고, 이어서 62K개의 어렵고 검증 가능한 문제로 RLVR 단계에서 훈련합니다. RLVR 과정의 강건성과 효율성을 높이기 위해, 우리는 컨텍스트 인식 다단계 정책 최적화를 소개합니다. 이 알고리즘은 길이에 따라 진행되는 훈련을 통합하고, 적응형 반복 패널티를 사용하여 컨텍스트 인식 RL 훈련을 촉진합니다. 우리 모델은 AIME24, AIME25, MATH 벤치마크에서 Qwen-2.5 기반의 오픈 소스 7B 및 32B 모델 중 가장 뛰어난 또는 경쟁력 있는 성능과 우수한 토큰 효율성을 달성합니다. 재현성을 촉진하기 위해, 우리는 완전한 스택을 공개합니다: 모델(MiroMind-M1-SFT-7B, MiroMind-M1-RL-7B, MiroMind-M1-RL-32B); 데이터셋(MiroMind-M1-SFT-719K, MiroMind-M1-RL-62K); 그리고 모든 훈련 및 평가 구성. 이러한 자료가 추가 연구를 지원하고 커뮤니티 발전을 촉진할 것으로 기대합니다."
+    },
+    "summary": "1. 최근 대형 언어 모델은 수학적 추론을 위해 컨텍스트 인식 다단계 정책 최적화를 도입한 MiroMind-M1 시리즈를 개발하여 오픈 소스 RLM 분야에 기여합니다.\n2. 모델은 719K개의 수학 문제를 훈련 데이터로 사용하고, 철저하게 검증된 CoT 궤적으로 SFT 단계를 거친 후 62K개 어려운 문제로 RLVR 단계를 진행합니다.\n3. 컨텍스트 인식 다단계 정책 최적화 알고리즘을 도입하여 모델은 AIME24, AIME25, MATH 벤치마크에서 우수한 성능과 토큰 효율성을 보여주며, 완전한 스택을 통해 재현성을 제고합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Context Limits: Subconscious Threads for Long-Horizon Reasoning",
+    "abstract": "To break the context limits of large language models (LLMs) that bottleneck\nreasoning accuracy and efficiency, we propose the Thread Inference Model (TIM),\na family of LLMs trained for recursive and decompositional problem solving, and\nTIMRUN, an inference runtime enabling long-horizon structured reasoning beyond\ncontext limits. Together, TIM hosted on TIMRUN supports virtually unlimited\nworking memory and multi-hop tool calls within a single language model\ninference, overcoming output limits, positional-embedding constraints, and\nGPU-memory bottlenecks. Performance is achieved by modeling natural language as\nreasoning trees measured by both length and depth instead of linear sequences.\nThe reasoning trees consist of tasks with thoughts, recursive subtasks, and\nconclusions based on the concept we proposed in Schroeder et al, 2025. During\ngeneration, we maintain a working memory that retains only the key-value states\nof the most relevant context tokens, selected by a rule-based subtask-pruning\nmechanism, enabling reuse of positional embeddings and GPU memory pages\nthroughout reasoning. Experimental results show that our system sustains high\ninference throughput, even when manipulating up to 90% of the KV cache in GPU\nmemory. It also delivers accurate reasoning on mathematical tasks and handles\ninformation retrieval challenges that require long-horizon reasoning and\nmulti-hop tool use.",
+    "authors": [
+      "Hongyin Luo",
+      "Nathaniel Morgan",
+      "Tina Li",
+      "Derek Zhao",
+      "Ai Vy Ngo",
+      "Philip Schroeder",
+      "Lijie Yang",
+      "Assaf Ben-Kish",
+      "Jack O'Brien",
+      "James Glass"
+    ],
+    "likes": 77,
+    "published_date": "Jul 22",
+    "url": "https://huggingface.co/papers/2507.16784",
+    "date_collected": "2025-07-24T07:08:09.383510+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "맥락 한계를 넘어: 장기적 추론을 위한 잠재의식적 스레드",
+      "abstract": "대규모 언어 모델(LLM)의 맥락 한계를 깨고 추론 정확도와 효율성을 높이기 위해, 우리는 Thread 추론 모델 (TIM)과 긴 맥락을 넘어 구조화된 추론을 가능케 하는 추론 런타임 TIMRUN을 제안합니다. TIM과 TIMRUN이 함께 작동하여, LLM을 통해 거의 무제한의 작업 메모리와 단일 언어 모델 내에서 다중 점프 도구 호출을 지원하며, 결과 한계, 위치 임베딩 제약, GPU 메모리 병목 현상을 극복합니다."
+    },
+    "summary": "1. 맥락 한계를 극복하기 위해 Thread 추론 모델 (TIM)과 추론 런타임 TIMRUN을 통해 장기적인 구조화된 추론을 가능케 합니다.\n2. 자연어를 길이와 깊이에 따른 추론 트리로 모델링하여, 추론 성능을 향상시키고 재사용성을 높입니다.\n3. 실험 결과는 시스템이 GPU 메모리의 KV 캐시를 90%까지 조작하더라도 높은 추론 처리량을 유지하고, 수학적 작업에 대해 정확한 추론을 제공하며, 장기적 추론과 다중 점프 도구 사용을 필요로 하는 정보 검색 문제를 다룹니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Invisible Leash: Why RLVR May Not Escape Its Origin",
+    "abstract": "Recent advances in large reasoning models highlight Reinforcement Learning\nwith Verifiable Rewards (RLVR) as a promising method for enhancing AI's\ncapabilities, particularly in solving complex logical tasks. However, it\nremains unclear whether RLVR truly expands a model's reasoning boundary or\nmerely amplifies high-reward outputs that the base model already knows for\nimproved precision. This study presents a theoretical and empirical\ninvestigation that provides fresh insights into the potential limits of RLVR.\nFirst, we offer a new theoretical perspective that RLVR is constrained by the\nbase model's support-unable to sample solutions with zero initial\nprobability-and operates as a conservative reweighting mechanism that may\nrestrict the discovery of entirely original solutions. We also identify an\nentropy-reward tradeoff: while RLVR reliably enhances precision, it may\nprogressively narrow exploration and potentially overlook correct yet\nunderrepresented solutions. Extensive empirical experiments validate that while\nRLVR consistently improves pass@1, the shrinkage of empirical support generally\noutweighs the expansion of empirical support under larger sampling budgets,\nfailing to recover correct answers that were previously accessible to the base\nmodel. Interestingly, we also observe that while RLVR sometimes increases\ntoken-level entropy, resulting in greater uncertainty at each generation step,\nanswer-level entropy declines, indicating that these seemingly more uncertain\npaths ultimately converge onto a smaller set of distinct answers. Taken\ntogether, these findings reveal potential limits of RLVR in extending reasoning\nhorizons. Breaking this invisible leash may require future algorithmic\ninnovations such as explicit exploration mechanisms or hybrid strategies that\nseed probability mass into underrepresented solution regions.",
+    "authors": [
+      "Fang Wu",
+      "Weihao Xuan",
+      "Ximing Lu",
+      "Zaid Harchaoui",
+      "Yejin Choi"
+    ],
+    "likes": 70,
+    "published_date": "Jul 20",
+    "url": "https://huggingface.co/papers/2507.14843",
+    "date_collected": "2025-07-24T07:08:09.384666+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "보이지 않는 '밧줄': RLVR이 자신의 기원에서 벗어나지 못하는 이유",
+      "abstract": "최근의 대규모 추론 모델의 발전은 검증 가능 보상을 갖는 강화 학습(RLVR)을 강조하여 AI의 능력을 향상시키는 유망한 방법으로 손꼽힌다. 특히 복잡한 논리적 작업을 해결하는 데에 RLVR이 주목받는다. 그러나 RLVR이 모델의 추론 범위를 실제로 확장시키는지 아니면 기존 모델이 이미 알고 있는 고보상 출력을 강조하여 정밀도를 향상시키는 것인지 여전히 명확하지 않다. 이 연구는 RLVR의 잠재적 한계에 대한 새로운 통찰력을 제공하는 이론적, 경험적 조사를 제시한다. 먼저, RLVR이 영감을 받은 모델의 제약으로 인해 지원 불가능한 상태로 제한되어, 완전히 원본의 해답을 발견하는 것을 제한하는 보수적 재가중 메커니즘으로 작용한다는 새로운 이론적 관점을 제시한다. 또한, 엔트로피-보상의 교환관계를 식별한다. RLVR은 정밀도를 신뢰할 수 있게 향상시키지만, 탐색을 점차 좁혀 이전에 액세스할 수 있던 정확한 해답을 회피할 가능성이 있다. 방대한 경험적 실험은 RLVR이 일관되게 pass@1을 향상시키지만, 샘플링 예산이 커질수록 경험적 지원의 수축이 일반적으로 확장보다 많아져 기존 모델이 이전에 접근 가능했던 정확한 해답을 복구하지 못하는 것으로 나타낸다. 흥미롭게도, RLVR은 때때로 토큰 수준 엔트로피를 증가시키지만, 응답 수준의 엔트로피는 감소하여 처음에는 더 불확실한 것으로 보이는 이러한 경로가 결국 더 작은 일련의 명확한 답변으로 수렴되는 것을 보여준다. 이 결과들은 RLVR이 추론의 범위를 확장하는 데 있어 잠재적인 한계를 보여준다. 이 보이지 않는 '밧줄'을 깨는 것은 앞으로 명시적 탐험 메커니즘이나 확률 질량을 미대표된 해결 영역에 심어주는 하이브리드 전략과 같은 알고리즘적 혁신이 필요할 수 있다."
+    },
+    "summary": "1. RLVR은 모델의 추론 범위를 확장하는 대신 기존에 알고 있는 고보상 출력을 강조함으로써 정밀도를 향상시킬 수도 있으며, 이는 모델이 완전히 새로운 해답을 발견하는 것을 제한할 수 있다.\n2. RLVR은 정밀도를 향상시키지만, 탐색을 좁히면서 정확한 해답을 놓칠 수 있으며, 이로 인해 확률적으로는 더 좁은 응답 집합으로 이끌 수 있다.\n3. 실험 결과는 RLVR이 pass@1을 향상시키지만, 샘플링 예산 증가에 따라 경험적 지원의 수축이 증가할 뿐 아니라, 정확한 해답을 복구하는 데 실패할 수 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Devil behind the mask: An emergent safety vulnerability of Diffusion\n  LLMs",
+    "abstract": "Diffusion-based large language models (dLLMs) have recently emerged as a\npowerful alternative to autoregressive LLMs, offering faster inference and\ngreater interactivity via parallel decoding and bidirectional modeling.\nHowever, despite strong performance in code generation and text infilling, we\nidentify a fundamental safety concern: existing alignment mechanisms fail to\nsafeguard dLLMs against context-aware, masked-input adversarial prompts,\nexposing novel vulnerabilities. To this end, we present DIJA, the first\nsystematic study and jailbreak attack framework that exploits unique safety\nweaknesses of dLLMs. Specifically, our proposed DIJA constructs adversarial\ninterleaved mask-text prompts that exploit the text generation mechanisms of\ndLLMs, i.e., bidirectional modeling and parallel decoding. Bidirectional\nmodeling drives the model to produce contextually consistent outputs for masked\nspans, even when harmful, while parallel decoding limits model dynamic\nfiltering and rejection sampling of unsafe content. This causes standard\nalignment mechanisms to fail, enabling harmful completions in alignment-tuned\ndLLMs, even when harmful behaviors or unsafe instructions are directly exposed\nin the prompt. Through comprehensive experiments, we demonstrate that DIJA\nsignificantly outperforms existing jailbreak methods, exposing a previously\noverlooked threat surface in dLLM architectures. Notably, our method achieves\nup to 100% keyword-based ASR on Dream-Instruct, surpassing the strongest prior\nbaseline, ReNeLLM, by up to 78.5% in evaluator-based ASR on JailbreakBench and\nby 37.7 points in StrongREJECT score, while requiring no rewriting or hiding of\nharmful content in the jailbreak prompt. Our findings underscore the urgent\nneed for rethinking safety alignment in this emerging class of language models.\nCode is available at https://github.com/ZichenWen1/DIJA.",
+    "authors": [
+      "Zichen Wen",
+      "Jiashu Qu",
+      "Dongrui Liu",
+      "Zhiyuan Liu",
+      "Ruixi Wu",
+      "Yicun Yang",
+      "Xiangqi Jin",
+      "Haoyun Xu",
+      "Xuyang Liu",
+      "Weijia Li",
+      "Chaochao Lu",
+      "Jing Shao",
+      "Conghui He",
+      "Linfeng Zhang"
+    ],
+    "likes": 56,
+    "published_date": "Jul 15",
+    "url": "https://huggingface.co/papers/2507.11097",
+    "date_collected": "2025-07-24T07:08:09.386221+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "가림막 뒤의 악마: Diffusion LLMs의 신생 안전 취약성",
+      "abstract": "확산 기반 대형 언어 모델(dLLMs)은 최근 방향성 자기 회귀 LLM에 대한 강력한 대안으로 나타났으며, 병렬 디코딩과 양방향 모델링을 통해 더 빠른 추론과 상호작용성을 제공합니다. 그러나 코드 생성과 텍스트 채움에서 강력한 성능을 보이더라도, 기존의 정렬 메커니즘이 dLLMs를 context-aware한 가려진 입력 적대적 프롬프트에 대해 안전하게 보호하지 못한다는 근본적인 안전 문제를 확인했습니다. 이에 DIJA를 제시하여, dLLMs의 고유한 안전 약점을 이용하는 첫 번째 체계적인 연구 및 탈옥 공격 프레임워크를 제시합니다. 구체적으로, 우리가 제안하는 DIJA는 dLLMs의 텍스트 생성 기구를 악용하는 적대적 교차 혼합 가림막-텍스트 프롬프트를 구축합니다. 양방향 모델링은 가려진 영역에 대해 문맥상 일관된 출력을 생성하도록 모델을 이끕니다. 이는 안전하지 않은 내용의 동적 필터링 및 거부 샘플링을 제한하는 병렬 디코딩으로 표준 정렬 메커니즘의 실패를 유발합니다. 이는 유해한 완성물이 정렬 조정된 dLLMs에서 발생할 수 있도록 하는데, 유해한 행동 또는 안전하지 않은 명령이 직접 노출되는 경우라도 그렇습니다. 포괄적인 실험을 통해, DIJA가 기존의 탈옥 방법을 현저히 능가하여 dLLM 구조에서 이전에 간과된 위협 표면을 드러냅니다. 특히, 저희 방법은 Dream-Instruct에서 100%의 키워드 기반 ASR을 달성하여, JailbreakBench의 평가자 기반 ASR에서 최강의 이전 기준인 ReNeLLM을 최대 78.5% 능가하며, StrongREJECT 점수에서 37.7포인트로 우세한 결과를 거뒀습니다. 이는 유해한 콘텐츠의 재작성이나 숨김을 요구하지 않고도 이런 장벽 프롬프트에서 가능합니다. 우리의 연구 결과는 이 신생 언어 모델 분야에서의 안전 정렬에 대한 긴급한 재고요구를 강조합니다. 코드는 https://github.com/ZichenWen1/DIJA에서 확인할 수 있습니다."
+    },
+    "summary": "1. dLLM에서 존재하는 새로운 취약점을 드러내는 DIJA 시스템 소개\n2. DIJA는 dLLMs의 고유한 안전 약점을 이용한 임의 프롬프트 공격 방법 제시\n3. DIJA는 기존 방법보다 더 강력한 성능을 보이며, dLLMs의 안전 문제를 재고하고 해결",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges\n  in Russian Speech Generative Models",
+    "abstract": "Russian speech synthesis presents distinctive challenges, including vowel\nreduction, consonant devoicing, variable stress patterns, homograph ambiguity,\nand unnatural intonation. This paper introduces Balalaika, a novel dataset\ncomprising more than 2,000 hours of studio-quality Russian speech with\ncomprehensive textual annotations, including punctuation and stress markings.\nExperimental results show that models trained on Balalaika significantly\noutperform those trained on existing datasets in both speech synthesis and\nenhancement tasks. We detail the dataset construction pipeline, annotation\nmethodology, and results of comparative evaluations.",
+    "authors": [
+      "Kirill Borodin",
+      "Nikita Vasiliev",
+      "Vasiliy Kudryavtsev",
+      "Maxim Maslov",
+      "Mikhail Gorodnichev",
+      "Oleg Rogov",
+      "Grach Mkrtchian"
+    ],
+    "likes": 48,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2507.13563",
+    "date_collected": "2025-07-24T07:08:09.387442+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "러시아어 발화 생성 모델의 음운론적 및 어굴적 과제 해결을 위한 데이터 중심 프레임워크",
+      "abstract": "러시아어 음성 합성은 모음 축약, 자음 무성화, 가변적인 강세 패턴, 동형어 모호성, 비자연스러운 억양 등 독특한 과제를 안고 있습니다. 본 논문은 Balalaika라는 새로운 데이터셋을 소개하는데, 이는 2,000시간 이상의 스튜디오급 러시아어 음성을 포함하며 구두 및 강세 표시를 포함한 포괄적인 텍스트 주석이 제공됩니다. 실험 결과는 Balalaika로 훈련된 모델이 음성 합성 및 향상 작업 모두에서 기존 데이터셋으로 훈련된 모델을 크게 능가한다는 것을 보여줍니다. 데이터셋 구축 파이프라인, 주석 방법론, 비교 평가 결과를 자세히 설명합니다."
+    },
+    "summary": "1. Balalaika는 2,000시간 이상의 러시아어 음성을 갖추고, 텍스트 주석에 구두 및 강세 표시를 포함한 데이터셋으로, 음성 합성 및 향상 작업에서 우수한 성과를 보여줌.\n2. Balalaika로 훈련된 모델은 기존 데이터셋으로 훈련된 모델보다 효율적이며, 음성 생성 작업에서 우수한 성능을 발휘.\n3. 연구는 데이터셋 구축 파이프라인, 주석 방법론, 비교 평가 결과 등을 자세히 다룸.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "Step-Audio 2 Technical Report",
+    "abstract": "This paper presents Step-Audio~2, an end-to-end multi-modal large language\nmodel designed for industry-strength audio understanding and speech\nconversation. By integrating a latent audio encoder and reasoning-centric\nreinforcement learning (RL), Step-Audio 2 achieves promising performance in\nautomatic speech recognition (ASR) and audio understanding. To facilitate\ngenuine end-to-end speech conversation, Step-Audio 2 incorporates the\ngeneration of discrete audio tokens into language modeling, significantly\nenhancing its responsiveness to paralinguistic information such as speaking\nstyles and emotions. To effectively leverage the rich textual and acoustic\nknowledge in real-world data, Step-Audio 2 integrates retrieval-augmented\ngeneration (RAG) and is able to call external tools such as web search to\nmitigate hallucination and audio search to switch timbres. Trained on millions\nof hours of speech and audio data, Step-Audio 2 delivers intelligence and\nexpressiveness across diverse conversational scenarios. Evaluation results\ndemonstrate that Step-Audio 2 achieves state-of-the-art performance on various\naudio understanding and conversational benchmarks compared to other open-source\nand commercial solutions. Please visit\nhttps://github.com/stepfun-ai/Step-Audio2 for more information.",
+    "authors": [
+      "Boyong Wu",
+      "Chao Yan",
+      "Chen Hu",
+      "Cheng Yi",
+      "Chengli Feng",
+      "Fei Tian",
+      "Feiyu Shen",
+      "Gang Yu",
+      "Haoyang Zhang",
+      "Jingbei Li",
+      "Mingrui Chen",
+      "Peng Liu",
+      "Wang You",
+      "Xiangyu Tony Zhang",
+      "Xingyuan Li",
+      "Xuerui Yang",
+      "Yayue Deng",
+      "Yechang Huang",
+      "Yuxin Li",
+      "Yuxin Zhang",
+      "Zhao You",
+      "Brian Li"
+    ],
+    "likes": 40,
+    "published_date": "Jul 22",
+    "url": "https://huggingface.co/papers/2507.16632",
+    "date_collected": "2025-07-24T07:08:09.389303+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "스텝-오디오 2 기술 보고서",
+      "abstract": "본 보고서는 산업 강도의 오디오 이해와 음성 대화를 위해 설계된 엔드-투-엔드 멀티모달 대형 언어 모델인 스텝-오디오~2를 제시합니다. 잠재 오디오 인코더와 추론 중심 강화학습(Reinforcement Learning, RL)을 통합함으로써, 스텝-오디오 2는 자동 음성 인식 (ASR) 및 오디오 이해에서 유망한 성능을 달성합니다."
+    },
+    "summary": "1. 스텝-오디오 2는 음성 대화를 위한 총체적 엔드-투-엔드 구조로, 감정 등 부연언 정보에 민감한 이산 오디오 토큰 생성을 통해 반응성을 크게 향상시켰습니다.\n2. 실제 데이터의 풍부한 텍스트 및 음향 지식을 적절히 활용하기 위해, 스텝-오디오 2는 검색 보강 생성 및 외부 도구 활용 기능을 통합하여 상류의 성능을 제공합니다.\n3. 수백만 시간의 음성 및 오디오 데이터로 훈련된 스텝-오디오 2는 다양한 대화 시나리오에서 지능성과 표현력을 제공하며, 다양한 오디오 이해 및 대화 벤치마크에서 최신의 성능을 달성합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Audio"
+    ]
+  },
+  {
+    "title": "GR-3 Technical Report",
+    "abstract": "We report our recent progress towards building generalist robot policies, the\ndevelopment of GR-3. GR-3 is a large-scale vision-language-action (VLA) model.\nIt showcases exceptional capabilities in generalizing to novel objects,\nenvironments, and instructions involving abstract concepts. Furthermore, it can\nbe efficiently fine-tuned with minimal human trajectory data, enabling rapid\nand cost-effective adaptation to new settings. GR-3 also excels in handling\nlong-horizon and dexterous tasks, including those requiring bi-manual\nmanipulation and mobile movement, showcasing robust and reliable performance.\nThese capabilities are achieved through a multi-faceted training recipe that\nincludes co-training with web-scale vision-language data, efficient fine-tuning\nfrom human trajectory data collected via VR devices, and effective imitation\nlearning with robot trajectory data. In addition, we introduce ByteMini, a\nversatile bi-manual mobile robot designed with exceptional flexibility and\nreliability, capable of accomplishing a wide range of tasks when integrated\nwith GR-3. Through extensive real-world experiments, we show GR-3 surpasses the\nstate-of-the-art baseline method, pi_0, on a wide variety of challenging\ntasks. We hope GR-3 can serve as a step towards building generalist robots\ncapable of assisting humans in daily life.",
+    "authors": [
+      "Chilam Cheang",
+      "Sijin Chen",
+      "Zhongren Cui",
+      "Yingdong Hu",
+      "Liqun Huang",
+      "Tao Kong",
+      "Hang Li",
+      "Yifeng Li",
+      "Yuxiao Liu",
+      "Xiao Ma",
+      "Hao Niu",
+      "Wenxuan Ou",
+      "Wanli Peng",
+      "Zeyu Ren",
+      "Haixin Shi",
+      "Jiawen Tian",
+      "Hongtao Wu",
+      "Xin Xiao",
+      "Yuyang Xiao",
+      "Jiafeng Xu",
+      "Yichu Yang"
+    ],
+    "likes": 36,
+    "published_date": "Jul 21",
+    "url": "https://huggingface.co/papers/2507.15493",
+    "date_collected": "2025-07-24T07:08:09.391099+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "GR-3 기술 보고서",
+      "abstract": "저희는 일반화된 로봇 정책인 GR-3을 구축하기 위한 최근 진전을 보고드립니다. GR-3은 대규모 시각-언어-행동(VLA) 모델로, 새로운 객체, 환경, 추상적인 개념을 포함하는 지시사항에 대해 일반화하는 우수한 능력을 선보입니다. 또한 인간 궤적 데이터를 최소로 활용하여 빠르고 비용 효율적으로 새로운 환경에 적응할 수 있습니다. GR-3는 장기적이고 미세한 작업을 다루며, 이중 손가락을 이용한 조작과 이동을 필요로 하는 작업을 우수하게 수행하여 견고하고 신뢰할 수 있는 성과를 보여줍니다."
+    },
+    "summary": "1. GR-3은 다양한 환경과 작업에 대해 일반화되고, 새로운 설정에 빠르고 효과적으로 적응할 수 있는 능력을 보유합니다.\n2. 이 모델은 다양한 훈련 방법을 통해 우수한 성과를 달성하며, ByteMini라는 유연하고 신뢰성 있는 이중 손가락 이동 로봇과 통합되어 다양한 작업을 수행할 수 있습니다.\n3. GR-3은 다양한 어려운 작업에서 최첨단 기준 방법을 능가하며, 인간의 일상 생활을 지원할 수 있는 일반화된 로봇 구축을 향한 한 걸음으로 기대됩니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining",
+    "abstract": "Recent advances in generative modeling enable image editing assistants that\nfollow natural language instructions without additional user input. Their\nsupervised training requires millions of triplets: original image, instruction,\nedited image. Yet mining pixel-accurate examples is hard. Each edit must affect\nonly prompt-specified regions, preserve stylistic coherence, respect physical\nplausibility, and retain visual appeal. The lack of robust automated\nedit-quality metrics hinders reliable automation at scale. We present an\nautomated, modular pipeline that mines high-fidelity triplets across domains,\nresolutions, instruction complexities, and styles. Built on public generative\nmodels and running without human intervention, our system uses a task-tuned\nGemini validator to score instruction adherence and aesthetics directly,\nremoving any need for segmentation or grounding models. Inversion and\ncompositional bootstrapping enlarge the mined set by approximately 2.2x,\nenabling large-scale high-fidelity training data. By automating the most\nrepetitive annotation steps, the approach allows a new scale of training\nwithout human labeling effort. To democratize research in this\nresource-intensive area, we release NHR-Edit: an open dataset of 358k\nhigh-quality triplets. In the largest cross-dataset evaluation, it surpasses\nall public alternatives. We also release Bagel-NHR-Edit, an open-source\nfine-tuned Bagel model, which achieves state-of-the-art metrics in our\nexperiments.",
+    "authors": [
+      "Maksim Kuprashevich",
+      "Grigorii Alekseenko",
+      "Irina Tolstykh",
+      "Georgii Fedorov",
+      "Bulat Suleimanov",
+      "Vladimir Dokholyan",
+      "Aleksandr Gordeev"
+    ],
+    "likes": 36,
+    "published_date": "Jul 18",
+    "url": "https://huggingface.co/papers/2507.14119",
+    "date_collected": "2025-07-24T07:08:09.392301+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "인간 불필요: 자율적이고 고품질 이미지 편집을 위한 삼쌍 데이터 마이닝",
+      "abstract": "최근 발전된 생성 모델링 기술로, 자연어 지시에 따라 추가 사용자 입력 없이 이미지 편집 보조 기능을 가능케 합니다. 그러나 이들의 감독 학습에는 수백만 개의 삼쌍 데이터(원본 이미지, 지시사항, 편집된 이미지)을 요구합니다. 픽셀 수준의 정확한 예제를 찾는 것은 어렵습니다. 각 편집은 특정 영역만 영향을 주어야 하며, 스타일 일관성을 유지하고, 물리적 타당성을 준수하고, 시각적 매력을 유지해야 합니다. 견고한 자동 편집 품질 측정 기준의 부재로 신뢰할 수 있는 대규모 자동화가 방해됩니다. 본 연구에서는 도메인, 해상도, 지시사항 복잡성, 스타일을 가로지르는 고품질 삼쌍 데이터를 추출하는 자동 모듈화된 파이프라인을 제안합니다. 인간 개입 없이 공개 생성 모델에 기반을 둔 본 시스템은 작업에 특화된 Gemini 검증기를 사용하여 지시사항 준수 및 미학을 직접 점수화함으로써 세분화나 기초 모델이 필요하지 않게 되었습니다. Inversion과 구성 부트스트래핑을 통해 삼쌍 데이터셋을 약 2.2배 확장하여 대규모 고품질 학습 데이터를 가능케 합니다. 가장 반복적인 주석 단계를 자동화함으로써 이 접근법은 인간 주석 작업 없이 새로운 규모의 훈련을 허용합니다. 이 자원 집약적인 분야의 연구를 민주화하기 위해 35.8만 개의 고품질 삼쌍 데이터가 포함된 NHR-Edit 데이터셋을 공개합니다. 가장 큰 교차 데이터셋 평가에서 모든 공개 대안을 능가합니다. 또한, 실험에서 최첨단 성능 지표를 달성하는 오픈소스로 고도로 세밀하게 조정된 Bagel-NHR-Edit 모델을 출시합니다."
+    },
+    "summary": "1. 최근 생성 모델링 기술로 자연어 지시에 따른 이미지 편집 보조 기능이 발전하고 있으며, 이에 필요한 삼쌍 데이터 마이닝의 어려움을 해결하기 위한 자동화된 파이프라인이 제안되었습니다.\n2. Gemini 검증기를 활용한 지시사항 준수와 미학 점수화를 통해 세분화나 기초 모델의 필요성을 줄이고, Inversion과 구성 부트스트래핑을 통해 삼쌍 데이터셋을 확장하여 대규모 고품질 학습 데이터를 얻었습니다.\n3. 인간 주석 작업 없이 새로운 규모의 훈련이 가능한 이 접근법은 35.8만 개의 NHR-Edit 데이터셋을 공개하고, 이는 최대 교차 데이터셋 평가에서 모든 공개 대안을 능가했으며 Bagel-NHR-Edit 모델도 최첨단 성능을 달성했습니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MegaScience: Pushing the Frontiers of Post-Training Datasets for Science\n  Reasoning",
+    "abstract": "Scientific reasoning is critical for developing AI scientists and supporting\nhuman researchers in advancing the frontiers of natural science discovery.\nHowever, the open-source community has primarily focused on mathematics and\ncoding while neglecting the scientific domain, largely due to the absence of\nopen, large-scale, high-quality, verifiable scientific reasoning datasets. To\nbridge this gap, we first present TextbookReasoning, an open dataset featuring\ntruthful reference answers extracted from 12k university-level scientific\ntextbooks, comprising 650k reasoning questions spanning 7 scientific\ndisciplines. We further introduce MegaScience, a large-scale mixture of\nhigh-quality open-source datasets totaling 1.25 million instances, developed\nthrough systematic ablation studies that evaluate various data selection\nmethodologies to identify the optimal subset for each publicly available\nscientific dataset. Meanwhile, we build a comprehensive evaluation system\ncovering diverse subjects and question types across 15 benchmarks,\nincorporating comprehensive answer extraction strategies to ensure accurate\nevaluation metrics. Our experiments demonstrate that our datasets achieve\nsuperior performance and training efficiency with more concise response lengths\ncompared to existing open-source scientific datasets. Furthermore, we train\nLlama3.1, Qwen2.5, and Qwen3 series base models on MegaScience, which\nsignificantly outperform the corresponding official instruct models in average\nperformance. In addition, MegaScience exhibits greater effectiveness for larger\nand stronger models, suggesting a scaling benefit for scientific tuning. We\nrelease our data curation pipeline, evaluation system, datasets, and seven\ntrained models to the community to advance scientific reasoning research.",
+    "authors": [
+      "Run-Ze Fan",
+      "Zengzhi Wang",
+      "Pengfei Liu"
+    ],
+    "likes": 34,
+    "published_date": "Jul 22",
+    "url": "https://huggingface.co/papers/2507.16812",
+    "date_collected": "2025-07-24T07:08:09.393337+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "MegaScience: 과학 추론을 위한 포스트-트레이닝 데이터셋의 선두를 달리다",
+      "abstract": "과학적 추론은 AI 과학자를 개발하고 자연 과학 발견의 선두를 진화시키는 데 중요합니다. 그러나 과학 분야는 열린 소스 커뮤니티에서 주로 수학과 코딩에 초점을 맞추어 왔으며, 열린, 대규모, 고품질, 검증 가능한 과학적 추론 데이터셋이 부족했습니다."
+    },
+    "summary": "1. TextbookReasoning 데이터셋은 12,000개의 대학 수준 과학 교재에서 추출한 진실된 참고 답변을 포함하며, 7개 과학 학문을 아우르는 650,000개의 추론 질문을 제공합니다.\n2. MegaScience는 다양한 데이터 선택 방법을 평가하는 체계적인 제거 연구를 통해 개발된, 1.25백만 개의 인스턴스를 포함하는 대규모 고품질 오픈 소스 데이터셋으로, 이를 통해 과학적 튜닝에 대한 확장 이점을 제공합니다.\n3. 실험 결과, MegaScience 데이터셋은 기존 오픈 소스 과학 데이터셋에 비해 더 간결한 응답 길이와 우수한 성능 및 훈련 효율성을 보여주며, Llama3.1, Qwen2.5 및 Qwen3 시리즈 기본 모델을 훈련시킨 결과 공식적인 모델들을 능가합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

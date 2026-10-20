@@ -1,0 +1,296 @@
+[
+  {
+    "title": "BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing",
+    "abstract": "We present BlenderFusion, a generative visual compositing framework that\nsynthesizes new scenes by recomposing objects, camera, and background. It\nfollows a layering-editing-compositing pipeline: (i) segmenting and converting\nvisual inputs into editable 3D entities (layering), (ii) editing them in\nBlender with 3D-grounded control (editing), and (iii) fusing them into a\ncoherent scene using a generative compositor (compositing). Our generative\ncompositor extends a pre-trained diffusion model to process both the original\n(source) and edited (target) scenes in parallel. It is fine-tuned on video\nframes with two key training strategies: (i) source masking, enabling flexible\nmodifications like background replacement; (ii) simulated object jittering,\nfacilitating disentangled control over objects and camera. BlenderFusion\nsignificantly outperforms prior methods in complex compositional scene editing\ntasks.",
+    "authors": [
+      "Jiacheng Chen",
+      "Ramin Mehran",
+      "Xuhui Jia",
+      "Saining Xie",
+      "Sanghyun Woo"
+    ],
+    "likes": 45,
+    "published_date": "Jun 20",
+    "url": "https://huggingface.co/papers/2506.17450",
+    "date_collected": "2025-07-01T07:08:09.193975+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "BlenderFusion: 3D-기반 시각 편집 및 생성적 합성",
+      "abstract": "본 연구에서는 객체, 카메라, 배경을 재구성하여 새로운 장면을 합성하는 생성적 시각 합성 프레임워크인 BlenderFusion을 제안합니다. 이는 레이어링-편집-합성 파이프라인을 따릅니다. 시각적 입력을 편집 가능한 3D 엔티티로 분할하고 변환하는 과정(레이어링), Blender에서 3D-기반 제어로 편집하는 과정(편집), 생성적 컴포지터를 사용하여 일관된 장면으로 퓨징하는 과정(합성). 저희의 생성적 컴포지터는 사전 훈련된 확산 모델을 확장하여 원본(소스) 및 편집된(타겟) 장면을 병렬로 처리합니다. 두 가지 주요 훈련 전략인 소스 마스킹(배경 교체와 같은 유연한 수정 가능)과 시뮬레이션 객체 지터링(객체 및 카메라에 대한 분리된 제어 용이화)을 사용하여 비디오 프레임으로 미세 조정됩니다. BlenderFusion은 복합적인 합성 장면 편집 작업에서 이전 방법들을 현격히 능가합니다."
+    },
+    "summary": "1. BlenderFusion은 시각적 입력을 3D 개체로 분할하고 Blender에서 3D-기반 제어로 편집한 후, 생성적 컴포지터를 사용하여 장면을 합성함.\n2. 연구에서는 사전 훈련된 확산 모델을 확장하여 소스와 편집된 장면을 동시에 처리하며, 소스 마스킹과 시뮬레이션 객체 지터링을 이용한 훈련 전략을 채택함.\n3. BlenderFusion은 복잡한 합성적 장면 편집 작업에서 이전 방법들보다 우수한 성능을 보임.",
+    "categories": [
+      "Computer Vision",
+      "Generative Modeling"
+    ]
+  },
+  {
+    "title": "LLaVA-Scissor: Token Compression with Semantic Connected Components for\n  Video LLMs",
+    "abstract": "In this paper, we present LLaVA-Scissor, a training-free token compression\nstrategy designed for video multimodal large language models. Previous methods\nmostly attempt to compress tokens based on attention scores, but fail to\neffectively capture all semantic regions and often lead to token redundancy.\nDifferently, we propose to leverage the Semantic Connected Components (SCC)\napproach that assigns tokens to distinct semantic regions within the token set,\nensuring comprehensive semantic coverage. The outcome is a two-step\nspatio-temporal token compression strategy that utilizes SCC in both spatial\nand temporal domains. This strategy can effectively compress tokens by\nrepresenting the entire video with a set of non-overlapping semantic tokens. We\nconduct extensive evaluations of the token compression capabilities of\nLLaVA-Scissor across diverse video understanding benchmarks, including video\nquestion answering, long video understanding, and comprehensive multi-choices\nbenchmarks. Experimental results show that the proposed LLaVA-Scissor\noutperforms other token compression methods, achieving superior performance in\nvarious video understanding benchmarks, particularly at low token retention\nratios. Project page: https://github.com/HumanMLLM/LLaVA-Scissor.",
+    "authors": [
+      "Boyuan Sun",
+      "Jiaxing Zhao",
+      "Xihan Wei",
+      "Qibin Hou"
+    ],
+    "likes": 29,
+    "published_date": "Jun 27",
+    "url": "https://huggingface.co/papers/2506.21862",
+    "date_collected": "2025-07-01T07:08:09.195115+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "LLaVA-Scissor: 비디오 LLM을 위한 의미적 연결 구성 요소를 활용한 토큰 압축",
+      "abstract": "본 논문에서는 비디오 멀티모달 대규모 언어 모델을 위한 훈련 불필요한 토큰 압축 전략인 LLaVA-Scissor를 제안합니다. 기존 방법은 대부분 주의 점수에 기반한 토큰 압축을 시도하지만 모든 의미적 영역을 효과적으로 포착하지 못하고 종종 토큰 중복으로 이어집니다. 우리는 다르게, 토큰을 토큰 세트 내에서 서로 다른 의미적 영역에 할당하는 의미적 연결 구성 요소 (SCC) 접근 방식을 활용하여 종합적인 의미적 범위를 보장합니다. 결과적으로 우리는 공간 및 시간 영역 모두에서 SCC를 활용하는 이차 시공간 토큰 압축 전략을 제안합니다. 이 전략은 비디오 전체를 상호 중첩되지 않는 의미적 토큰 집합으로 효과적으로 압축할 수 있습니다. 우리는 LLaVA-Scissor의 토큰 압축 능력을 다양한 비디오 이해 벤치마크를 통해 철저히 평가합니다."
+    },
+    "summary": "1. LLaVA-Scissor는 주의 점수가 아닌 의미적 연결 구성 요소를 활용한 토큰 압축 전략으로, 비디오 이해 벤치마크에서 우수한 성능을 보입니다.\n2. 이차 시공간 토큰 압축 전략은 영상 전체를 전체적으로 인식하기 위해 의미적 토큰으로 효과적으로 압축합니다.\n3. 실험 결과는 LLaVA-Scissor가 다른 토큰 압축 방법을 능가하며, 저 토큰 보유율에서 특히 우수한 성능을 보인다는 것을 보여줍니다.",
+    "categories": [
+      "LLM (대규모 언어 모델)",
+      "Multimodal (멀티모달)",
+      "Video (비디오)"
+    ]
+  },
+  {
+    "title": "XVerse: Consistent Multi-Subject Control of Identity and Semantic\n  Attributes via DiT Modulation",
+    "abstract": "Achieving fine-grained control over subject identity and semantic attributes\n(pose, style, lighting) in text-to-image generation, particularly for multiple\nsubjects, often undermines the editability and coherence of Diffusion\nTransformers (DiTs). Many approaches introduce artifacts or suffer from\nattribute entanglement. To overcome these challenges, we propose a novel\nmulti-subject controlled generation model XVerse. By transforming reference\nimages into offsets for token-specific text-stream modulation, XVerse allows\nfor precise and independent control for specific subject without disrupting\nimage latents or features. Consequently, XVerse offers high-fidelity, editable\nmulti-subject image synthesis with robust control over individual subject\ncharacteristics and semantic attributes. This advancement significantly\nimproves personalized and complex scene generation capabilities.",
+    "authors": [
+      "Bowen Chen",
+      "Mengyi Zhao",
+      "Haomiao Sun",
+      "Li Chen",
+      "Xu Wang",
+      "Kang Du",
+      "Xinglong Wu"
+    ],
+    "likes": 23,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2506.21416",
+    "date_collected": "2025-07-01T07:08:09.196370+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "XVerse: 일관된 다중 주제의 아이덴티티와 의미 속성 제어를 위한 DiT 조절",
+      "abstract": "텍스트에서 이미지를 생성할 때, 특히 다중 주제에 대한 주제 아이덴티티와 의미 속성(자세, 스타일, 조명)에 세밀한 제어를 달성하는 것은 종종 Diffusion Transformers(DiTs)의 편집 가능성과 일관성을 저해합니다. 여러 접근 방식은 이상현상을 도입하거나 속성의 뒤얽힘에 시달리곤 합니다. 이러한 도전을 극복하기 위해, 우리는 새로운 다중 주제 제어 생성 모델 XVerse를 제안합니다. 참조 이미지를 토큰별 텍스트 스트림 변조를 위한 오프셋으로 변환함으로써, XVerse는 특정 주제의 정확하고 독립적인 제어를 가능하게 합니다. 결과적으로, XVerse는 개별 주제 특성과 의미 속성에 대한 강력한 제어를 제공하는 고품질, 편집 가능한 다중 주제 이미지 합성을 제공합니다. 이러한 진보는 개인화 및 복잡한 장면 생성 능력을 현저하게 향상시킵니다."
+    },
+    "summary": "1. XVerse는 다중 주제 이미지 생성에서 개별 주제의 속성과 의미 속성을 미세하게 제어할 수 있는 새로운 모델이다.\n2. 참조 이미지를 텍스트 스트림 변조의 오프셋으로 사용하여 XVerse는 주제에 대한 정밀하고 독립적인 제어를 가능하게 한다.\n3. 이에 따라 XVerse는 고충고 편집 가능한 다중 주제 이미지 합성을 통해 개인화 및 복잡한 장면 생성 능력을 현저하게 향상시킨다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "ShotBench: Expert-Level Cinematic Understanding in Vision-Language\n  Models",
+    "abstract": "Cinematography, the fundamental visual language of film, is essential for\nconveying narrative, emotion, and aesthetic quality. While recent\nVision-Language Models (VLMs) demonstrate strong general visual understanding,\ntheir proficiency in comprehending the nuanced cinematic grammar embedded\nwithin individual shots remains largely unexplored and lacks robust evaluation.\nThis critical gap limits both fine-grained visual comprehension and the\nprecision of AI-assisted video generation. To address this, we introduce\nShotBench, a comprehensive benchmark specifically designed for cinematic\nlanguage understanding. It features over 3.5k expert-annotated QA pairs from\nimages and video clips, meticulously curated from over 200 acclaimed\n(predominantly Oscar-nominated) films and spanning eight key cinematography\ndimensions. Our evaluation of 24 leading VLMs on ShotBench reveals their\nsubstantial limitations: even the top-performing model achieves less than 60%\naverage accuracy, particularly struggling with fine-grained visual cues and\ncomplex spatial reasoning. To catalyze advancement in this domain, we construct\nShotQA, a large-scale multimodal dataset comprising approximately 70k cinematic\nQA pairs. Leveraging ShotQA, we develop ShotVL through supervised fine-tuning\nand Group Relative Policy Optimization. ShotVL significantly outperforms all\nexisting open-source and proprietary models on ShotBench, establishing new\nstate-of-the-art performance. We open-source our models, data, and code to\nfoster rapid progress in this crucial area of AI-driven cinematic understanding\nand generation.",
+    "authors": [
+      "Hongbo Liu",
+      "Jingwen He",
+      "Yi Jin",
+      "Dian Zheng",
+      "Yuhao Dong",
+      "Fan Zhang",
+      "Ziqi Huang",
+      "Yinan He",
+      "Yangguang Li",
+      "Weichao Chen",
+      "Yu Qiao",
+      "Wanli Ouyang",
+      "Shengjie Zhao",
+      "Ziwei Liu"
+    ],
+    "likes": 19,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2506.21356",
+    "date_collected": "2025-07-01T07:08:09.197905+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "ShotBench: 전문가 수준의 비전-언어에서의 영화 이해",
+      "abstract": "영화의 기본 시각 언어인 영화촬영은 이야기, 감정, 미학적 품질을 전달하는 데 중요합니다. 최근 비전-언어 모델(Vision-Language Models, VLMs)은 강력한 일반적인 시각 이해력을 보이지만, 개별 샷에 내재된 미묘한 영화 문법을 완벽히 이해하는 능력은 거의 탐구되지 않았으며 견고한 평가를 받지 못합니다. 이 비용은 세밀한 시각 이해와 AI보조 비디오 생성의 정밀성을 제한합니다. 이에 우리는 영화 언어 이해를 위해 특별히 디자인된 포괄적인 벤치마크인 ShotBench를 소개합니다."
+    },
+    "summary": "1. ShotBench는 영화 언어 이해를 위해 설계된 벤치마크로, 200편 이상의 명성 있는 (주로 아카데미상 후보) 영화에서 세심하게 선정된 3.5천개 이상의 전문가 주석이 달린 이미지와 비디오 클립에서 파생된 질의응답(QA) 쌍을 제공합니다.\n2. ShotBench에서 24개 주요 VLM을 평가한 결과, 가장 성능이 우수한 모델도 평균 정확도가 60% 미만으로, 세심한 시각적 단서와 복잡한 공간적 추론에 특히 어려움을 겪습니다.\n3. ShotQA를 활용하여 ShotVL을 개발하고, 지도 미세 조정과 그룹 상대적 정책 최적화를 통해 ShotBench에서 모든 기존 오픈소스 및 프로퍼티러리 모델을 획기적으로 능가하는 새로운 최첨단 성능을 확립했습니다.",
+    "categories": [
+      "NLP",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "From Ideal to Real: Unified and Data-Efficient Dense Prediction for\n  Real-World Scenarios",
+    "abstract": "Dense prediction tasks hold significant importance of computer vision, aiming\nto learn pixel-wise annotated label for an input image. Despite advances in\nthis field, existing methods primarily focus on idealized conditions, with\nlimited generalization to real-world scenarios and facing the challenging\nscarcity of real-world data. To systematically study this problem, we first\nintroduce DenseWorld, a benchmark spanning a broad set of 25 dense prediction\ntasks that correspond to urgent real-world applications, featuring unified\nevaluation across tasks. Then, we propose DenseDiT, which maximally exploits\ngenerative models' visual priors to perform diverse real-world dense prediction\ntasks through a unified strategy. DenseDiT combines a parameter-reuse mechanism\nand two lightweight branches that adaptively integrate multi-scale context,\nworking with less than 0.1% additional parameters. Evaluations on DenseWorld\nreveal significant performance drops in existing general and specialized\nbaselines, highlighting their limited real-world generalization. In contrast,\nDenseDiT achieves superior results using less than 0.01% training data of\nbaselines, underscoring its practical value for real-world deployment. Our\ndata, and checkpoints and codes are available at\nhttps://xcltql666.github.io/DenseDiTProj",
+    "authors": [
+      "Changliang Xia",
+      "Chengyou Jia",
+      "Zhuohang Dang",
+      "Minnan Luo"
+    ],
+    "likes": 15,
+    "published_date": "Jun 25",
+    "url": "https://huggingface.co/papers/2506.20279",
+    "date_collected": "2025-07-01T07:08:09.199000+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "이상에서 현실로: 현실 세계 상황을 위한 통합적이고 데이터 효율적인 밀도 예측",
+      "abstract": "밀도 예측 작업은 컴퓨터 비전에서 중요한 역할을 하며, 입력 이미지에 대해 픽셀 단위로 주석이 달린 레이블을 학습하는 것을 목표로 합니다. 이 분야의 발전에도 불구하고, 기존 방법은 주로 이상적인 조건에 초점을 맞추어 왔으며, 현실 세계 상황으로의 한계적인 일반화와 실제 데이터 부족에 직면하고 있습니다."
+    },
+    "summary": "1. 밀도 예측 작업은 현실 세계 응용 프로그램에 대응하는 25가지 작업을 포함하는 DenseWorld 벤치마크를 도입합니다.\n2. DenseDiT는 생성 모델의 시각 선호도를 극대화하여 통합적 전략을 통해 다양한 현실 세계 밀도 예측 작업을 수행하는 것으로, 적은 양의 추가 매개변수로 작업합니다.\n3. DenseDiT는 기존 벤치마크 대비 0.01% 미만의 훈련 데이터를 사용하여 우수한 결과를 달성하며, 실제 세계 배치에 대한 실용적 가치를 강조합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Ark: An Open-source Python-based Framework for Robot Learning",
+    "abstract": "Robotics has made remarkable hardware strides-from DARPA's Urban and Robotics\nChallenges to the first humanoid-robot kickboxing tournament-yet commercial\nautonomy still lags behind progress in machine learning. A major bottleneck is\nsoftware: current robot stacks demand steep learning curves, low-level C/C++\nexpertise, fragmented tooling, and intricate hardware integration, in stark\ncontrast to the Python-centric, well-documented ecosystems that propelled\nmodern AI. We introduce ARK, an open-source, Python-first robotics framework\ndesigned to close that gap. ARK presents a Gym-style environment interface that\nallows users to collect data, preprocess it, and train policies using\nstate-of-the-art imitation-learning algorithms (e.g., ACT, Diffusion Policy)\nwhile seamlessly toggling between high-fidelity simulation and physical robots.\nA lightweight client-server architecture provides networked\npublisher-subscriber communication, and optional C/C++ bindings ensure\nreal-time performance when needed. ARK ships with reusable modules for control,\nSLAM, motion planning, system identification, and visualization, along with\nnative ROS interoperability. Comprehensive documentation and case studies-from\nmanipulation to mobile navigation-demonstrate rapid prototyping, effortless\nhardware swapping, and end-to-end pipelines that rival the convenience of\nmainstream machine-learning workflows. By unifying robotics and AI practices\nunder a common Python umbrella, ARK lowers entry barriers and accelerates\nresearch and commercial deployment of autonomous robots.",
+    "authors": [
+      "Magnus Dierking",
+      "Christopher E. Mower",
+      "Sarthak Das",
+      "Huang Helong",
+      "Jiacheng Qiu",
+      "Cody Reading",
+      "Wei Chen",
+      "Huidong Liang",
+      "Huang Guowei",
+      "Jan Peters",
+      "Quan Xingyue",
+      "Jun Wang",
+      "Haitham Bou-Ammar"
+    ],
+    "likes": 11,
+    "published_date": "Jun 24",
+    "url": "https://huggingface.co/papers/2506.21628",
+    "date_collected": "2025-07-01T07:08:09.200496+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "로봇 학습을 위한 오픈소스 파이썬 기반 프레임워크인 ARK",
+      "abstract": "로봇공학은 DARPA의 Urban 및 Robotics Challenges부터 첫 번째 인간형 로봇 킥복싱 대회에 이르기까지 현저한 하드웨어 발전을 이루었지만, 상용 자율성은 기계 학습 분야의 진전에 뒤처지고 있다. 주요 병목 현상은 소프트웨어에 있다. 현재의 로봇 스택은 가파른 학습 곡선, 저수준 C/C++ 전문 지식, 단편화된 도구 및 복잡한 하드웨어 통합을 요구하며, 현대 AI 발전을 이끈 Python 중심이자 잘 문서화된 생태계와는 극명한 대조를 이룬다. 우리는 그 격차를 줄이기 위해 ARK를 소개한다. ARK는 Gym 스타일의 환경 인터페이스를 제공하여 사용자가 데이터 수집, 전처리, 최신 모방 학습 알고리즘(ACT, 확산 정책 등)을 사용한 정책 훈련을 손쉽게 수행할 수 있게 하며, 고도의 시뮬레이션 및 물리적 로봇 간의 원활한 전환을 지원한다. 가벼운 클라이언트-서버 구조는 네트워크 기반 발행-구독 형식의 통신을 제공하며 필요 시 실시간 성능을 위한 선택적인 C/C++ 바인딩을 통해 해당 기능을 확보한다. ARK는 제어, SLAM, 모션 계획, 시스템 식별 및 시각화를 위한 재사용 가능한 모듈과 네이티브 ROS 호환성을 제공한다. 제어, 모바일 네비게이션 등의 사례 연구를 통해 고속 원형 제작, 하드웨어 교체의 용이성 및 복잡한 인프라를 필요로하는 과업 전체 파이프라인을 시연한다. ARK는 로봇공학과 AI 실무를 공통의 Python 우산 아래 통합함으로써 진입 장벽을 낮추고 자율 로봇의 연구 및 상업 배치를 가속화한다."
+    },
+    "summary": "1. ARK는 Python을 중심으로 한 로봇 프레임워크로, 고속 시뮬레이션과 물리적 로봇 사이를 자유롭게 전환할 수 있으며 제어, 시각화 등 다양한 기능을 제공한다.\n2. 사용자는 Gym 환경 인터페이스를 통해 데이터 수집, 전처리, 최신 모방 학습 알고리즘을 활용한 정책 훈련 등을 간편하게 수행할 수 있다.\n3. ARK는 ROS와 호환되는 오픈소스 프레임워크로, 로봇과 AI를 통합하여 연구 및 상용 자율 로봇 배치의 편의성을 높인다.",
+    "categories": [
+      "Robotics",
+      "Python",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Pangu Pro MoE: Mixture of Grouped Experts for Efficient Sparsity",
+    "abstract": "The surgence of Mixture of Experts (MoE) in Large Language Models promises a\nsmall price of execution cost for a much larger model parameter count and\nlearning capacity, because only a small fraction of parameters are activated\nfor each input token. However, it is commonly observed that some experts are\nactivated far more often than others, leading to system inefficiency when\nrunning the experts on different devices in parallel. Therefore, we introduce\nMixture of Grouped Experts (MoGE), which groups the experts during selection\nand balances the expert workload better than MoE in nature. It constrains\ntokens to activate an equal number of experts within each predefined expert\ngroup. When a model execution is distributed on multiple devices, this\narchitectural design ensures a balanced computational load across devices,\nsignificantly enhancing throughput, particularly for the inference phase.\nFurther, we build Pangu Pro MoE on Ascend NPUs, a sparse model based on MoGE\nwith 72 billion total parameters, 16 billion of which are activated for each\ntoken. The configuration of Pangu Pro MoE is optimized for Ascend 300I Duo and\n800I A2 through extensive system simulation studies. Our experiments indicate\nthat MoGE indeed leads to better expert load balancing and more efficient\nexecution for both model training and inference on Ascend NPUs. The inference\nperformance of Pangu Pro MoE achieves 1148 tokens/s per card and can be further\nimproved to 1528 tokens/s per card by speculative acceleration, outperforming\ncomparable 32B and 72B Dense models. Furthermore, we achieve an excellent\ncost-to-performance ratio for model inference on Ascend 300I Duo. Our studies\nshow that Ascend NPUs are capable of training Pangu Pro MoE with massive\nparallelization to make it a leading model within the sub-100B total parameter\nclass, outperforming prominent open-source models like GLM-Z1-32B and\nQwen3-32B.",
+    "authors": [
+      "Yehui Tang",
+      "Xiaosong Li",
+      "Fangcheng Liu",
+      "Wei Guo",
+      "Hang Zhou",
+      "Yaoyuan Wang",
+      "Kai Han",
+      "Xianzhi Yu",
+      "Jinpeng Li",
+      "Hui Zang",
+      "Fei Mi",
+      "Xiaojun Meng",
+      "Zhicheng Liu",
+      "Hanting Chen",
+      "Binfan Zheng",
+      "Can Chen",
+      "Youliang Yan",
+      "Ruiming Tang",
+      "Peifeng Qin",
+      "Xinghao Chen",
+      "Dacheng Tao",
+      "Yunhe Wang"
+    ],
+    "likes": 11,
+    "published_date": "May 27",
+    "url": "https://huggingface.co/papers/2505.21411",
+    "date_collected": "2025-07-01T07:08:09.202412+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "Pangu Pro MoE: 효율적인 희소성을 위한 그룹화된 전문가들의 혼합",
+      "abstract": "대규모 언어 모델(Large Language Models)에서 전문가들의 혼합(Mixture of Experts, MoE)의 등장은 더 많은 모델 파라미터 및 학습 용량에 대한 낮은 실행 비용을 약속합니다. 그러나 몇몇 전문가가 다른 전문가보다 훨씬 더 자주 활성화되어 시스템의 비효율성을 야기하는 것이 일반적입니다. 따라서 우리는 전문가들을 그룹화하고 선택 과정에서 MoE보다 전문가 작업 부하를 더 균형있게 조절하는 '그룹화된 전문가들의 혼합'(Mixture of Grouped Experts, MoGE)을 소개합니다."
+    },
+    "summary": "1. MoGE는 MoE보다 전문가 작업 부하를 더 균형 있게 조절하여 실행 효율성을 향상시키며, Ascend NPU 기반인 Pangu Pro MoE는 72억 개의 총 파라미터 중 각 토큰 당 16억 개의 파라미터가 활성화된 희소 모델로, Ascend 300I Duo와 800I A2에 최적화된 구성을 보여줌.\n2. Pangu Pro MoE의 추론 성능은 카드 당 1148 토큰/초를 달성하며, 추측 가속화에 의해 카드 당 1528 토큰/초까지 더 향상시켜, 32B 및 72B 밀집 모델을 능가함.\n3. Ascend NPU에서 Pangu Pro MoE 모델 추론에 대한 우수한 비용 대 성능 비율을 달성하며, 대규모 병렬화를 통해 100B 미만의 모델 클래스에서 우수한 GLM-Z1-32B 및 Qwen3-32B 같은 오픈 소스 모델을 능가함.",
+    "categories": [
+      "LLM (대규모 언어 모델)",
+      "NLP (자연어 처리)",
+      "Computer Vision (컴퓨터 비전)"
+    ]
+  },
+  {
+    "title": "MiCo: Multi-image Contrast for Reinforcement Visual Reasoning",
+    "abstract": "This work explores enabling Chain-of-Thought (CoT) reasoning to link visual\ncues across multiple images. A straightforward solution is to adapt rule-based\nreinforcement learning for Vision-Language Models (VLMs). However, such methods\ntypically rely on manually curated question-answer pairs, which can be\nparticularly challenging when dealing with fine grained visual details and\ncomplex logic across images. Inspired by self-supervised visual representation\nlearning, we observe that images contain inherent constraints that can serve as\nsupervision. Based on this insight, we construct image triplets comprising two\naugmented views of the same image and a third, similar but distinct image.\nDuring training, the model is prompted to generate a reasoning process to\ncompare these images (i.e., determine same or different). Then we optimize the\nmodel with rule-based reinforcement learning. Due to the high visual similarity\nand the presence of augmentations, the model must attend to subtle visual\nchanges and perform logical reasoning to succeed. Experiments show that,\nalthough trained solely on visual comparison tasks, the learned reasoning\nability generalizes effectively to a wide range of questions. Without relying\non any human-annotated question-answer pairs, our method achieves significant\nimprovements on multi-image reasoning benchmarks and shows strong performance\non general vision tasks.",
+    "authors": [
+      "Xi Chen",
+      "Mingkang Zhu",
+      "Shaoteng Liu",
+      "Xiaoyang Wu",
+      "Xiaogang Xu",
+      "Yu Liu",
+      "Xiang Bai",
+      "Hengshuang Zhao"
+    ],
+    "likes": 9,
+    "published_date": "Jun 27",
+    "url": "https://huggingface.co/papers/2506.22434",
+    "date_collected": "2025-07-01T07:08:09.203667+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "MiCo: 다중 이미지 대조를 통한 강화 시각적 추론",
+      "abstract": "본 연구에서는 여러 이미지 간 시각적 단서를 연결하는 Chain-of-Thought (CoT) 추론을 가능하게 하는 방법을 탐색합니다. 시각-언어 모델(Vision-Language Models, VLM)을 위한 규칙 기반 강화 학습을 적응하는 간단한 해결책이 있습니다. 그러나 이러한 방법들은 일반적으로 수동으로 정리된 질문-답변 쌍에 의존하는데, 이는 세밀한 시각적 세부 사항과 이미지 간 복잡한 논리를 다룰 때 특히 어려울 수 있습니다. 저희는 자기 감독 학습된 시각적 표현 학습에서 영감을 받아, 이미지가 감독자로 작용할 수 있는 내재적 제약을 포함한다는 관찰을 합니다. 이 통찰력에 기초하여, 같은 이미지의 두 확장된 뷰와 세 번째로 비슷하지만 구별된 이미지로 이루어진 이미지 삼총사를 구성합니다. 훈련 중에 모델은 이러한 이미지들을 비교하여 추론 과정을 생성하도록 유도됩니다(즉, 동일한지 다른지 결정). 그런 다음, 규칙 기반 강화 학습을 통해 모델을 최적화합니다. 높은 시각적 유사성과 확장 요소의 존재로, 모델은 미묘한 시각적 변화에 주의를 기울이고 성공하기 위해 논리적 추론을 수행해야 합니다. 실험 결과, 시각 비교 작업만을 기반으로 훈련되었음에도 배운 추론 능력이 다양한 질문에 효과적으로 일반화되었습니다. 어떠한 인간이 작성한 질문-답변 쌍에 의존하지 않고도, 저희 방법은 다중 이미지 추론 기준에서 상당한 향상을 이루어내고, 일반 시각 작업에서 강한 성능을 보여줍니다."
+    },
+    "summary": "1. 다중 이미지 간 시각적 추론을 위해 자가 감독 학습된 이미지 삼총사를 활용하여 강화 학습을 적용한 새로운 방법을 소개합니다.\n2. 인간이 작성한 질문-답변 쌍 없이도 다양한 질문에 효과적으로 대처할 수 있으며, 다양한 시각 작업에서 강한 성능을 보입니다.\n3. 이미지 간 미묘한 시각적 변화를 올바르게 인식하고 논리적 추론을 수행하기 위해 고안된 모델이 실험 결과에서 유효하게 일반화됨을 확인했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Shape-for-Motion: Precise and Consistent Video Editing with 3D Proxy",
+    "abstract": "Recent advances in deep generative modeling have unlocked unprecedented\nopportunities for video synthesis. In real-world applications, however, users\noften seek tools to faithfully realize their creative editing intentions with\nprecise and consistent control. Despite the progress achieved by existing\nmethods, ensuring fine-grained alignment with user intentions remains an open\nand challenging problem. In this work, we present Shape-for-Motion, a novel\nframework that incorporates a 3D proxy for precise and consistent video\nediting. Shape-for-Motion achieves this by converting the target object in the\ninput video to a time-consistent mesh, i.e., a 3D proxy, allowing edits to be\nperformed directly on the proxy and then inferred back to the video frames. To\nsimplify the editing process, we design a novel Dual-Propagation Strategy that\nallows users to perform edits on the 3D mesh of a single frame, and the edits\nare then automatically propagated to the 3D meshes of the other frames. The 3D\nmeshes for different frames are further projected onto the 2D space to produce\nthe edited geometry and texture renderings, which serve as inputs to a\ndecoupled video diffusion model for generating edited results. Our framework\nsupports various precise and physically-consistent manipulations across the\nvideo frames, including pose editing, rotation, scaling, translation, texture\nmodification, and object composition. Our approach marks a key step toward\nhigh-quality, controllable video editing workflows. Extensive experiments\ndemonstrate the superiority and effectiveness of our approach. Project page:\nhttps://shapeformotion.github.io/",
+    "authors": [
+      "Yuhao Liu",
+      "Tengfei Wang",
+      "Fang Liu",
+      "Zhenwei Wang",
+      "Rynson W. H. Lau"
+    ],
+    "likes": 9,
+    "published_date": "Jun 27",
+    "url": "https://huggingface.co/papers/2506.22432",
+    "date_collected": "2025-07-01T07:08:09.204809+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "동작을 위한 형태: 3D 프록시로 정교하고 일관된 비디오 편집",
+      "abstract": "최근 심층 생성 모델링의 발전으로 비디오 합성에 전례 없는 기회가 열렸다. 그러나 실제 응용에서 사용자들은 자신의 창의적인 편집 의도를 정확하고 일관되게 실현하는 도구를 자주 찾는다. 기존 방법들이 이룩한 진전에도 사용자 의도와 정확하게 일치시키는 것은 여전히 열려 있는 어려운 문제이다. 본 논문에서 우리는 정확하고 일관된 비디오 편집을 위한 3D 프록시를 포함한 형태-포-동작이라는 새로운 프레임워크를 제안한다."
+    },
+    "summary": "1. 3D 프록시를 활용한 정교하고 일관된 비디오 편집을 가능케 하는 형태-포-동작 프레임워크를 소개한다.\n2. 편집 프로세스를 단순화하기 위해 단일 프레임의 3D 메쉬에서 편집을 수행하고 이를 다른 프레임의 3D 메쉬로 자동 전파하는 이중 전파 전략을 설계한다.\n3. 자세 편집, 회전, 크기 조정, 이동, 질감 수정, 그리고 물체 합성과 같은 정교하고 물리적으로 일관된 조작을 지원하며 고품질이고 조절 가능한 비디오 편집 워크플로로 나아가는 중요한 한 걸음을 나타낸다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Fine-Grained Preference Optimization Improves Spatial Reasoning in VLMs",
+    "abstract": "Current Vision-Language Models (VLMs) struggle with fine-grained spatial\nreasoning, particularly when multi-step logic and precise spatial alignment are\nrequired. In this work, we introduce SpatialReasoner-R1, a vision-language\nreasoning model designed to address these limitations. To construct\nhigh-quality supervision for spatial reasoning, we design a Multi-Model Monte\nCarlo Tree Search (M3CTS) method that generates diverse, logically consistent\nLong Chain-of-Thought (LongCoT) reasoning trajectories. In addition, we propose\nfine-grained Direct Preference Optimization (fDPO), which introduces\nsegment-specific preference granularity for descriptive grounding and logical\nreasoning, guided by a spatial reward mechanism that evaluates candidate\nresponses based on visual consistency, spatial grounding, and logical\ncoherence. Experimental results demonstrate that fDPO achieves an average\nimprovement of 4.1% over standard DPO across spatial quality tasks, and a 9.0%\ngain in spatial quantity tasks. SpatialReasoner-R1, trained with fDPO, sets a\nnew SoTA on SPATIALRGPT-Bench, outperforming the strongest baseline by 9.8% in\naverage accuracy, while maintaining competitive performance on general\nvision-language tasks.",
+    "authors": [
+      "Yifan Shen",
+      "Yuanzhe Liu",
+      "Jingyuan Zhu",
+      "Xu Cao",
+      "Xiaofeng Zhang",
+      "Yixiao He",
+      "Wenming Ye",
+      "James Matthew Rehg",
+      "Ismini Lourentzou"
+    ],
+    "likes": 9,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2506.21656",
+    "date_collected": "2025-07-01T07:08:09.206124+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "세밀한 선호도 최적화가 VLM에서 공간 추론을 개선합니다",
+      "abstract": "현재 비전-언어 모델(VLMs)은 특히 다단계 논리와 정확한 공간 정렬이 필요한 세밀한 공간 추론에서 어려움을 겪고 있습니다. 본 연구에서는 이러한 한계를 해결하기 위해 공간 추론 모델인 SpatialReasoner-R1을 소개합니다. 공간 추론에 대한 고품질 교육을 위해, 다양하고 논리적으로 일관된 LongCoT 추론 경로를 생성하는 Multi-Model Monte Carlo Tree Search(M3CTS) 방법을 설계합니다. 또한, 우리는 fine-grained Direct Preference Optimization(fDPO)을 제안하며, 시각적 일관성, 공간적 기반 및 논리적 일관성에 기반하여 후보 응답을 평가하는 공간 보상 메커니즘에 의해 안내되는 세그먼트별 선호도 세분성을 도입합니다. 실험 결과는 fDPO가 공간 품질 작업에서 표준 DPO 대비 평균 개선률 4.1%를 달성하고, 공간적 양 작업에서 9.0% 향상을 보인다는 것을 보여줍니다. fDPO로 훈련된 SpatialReasoner-R1은 SPATIALRGPT-Bench에서 새로운 최상의 결과를 도출하여, 평균 정확도에서 가장 강력한 기준을 9.8%로 능가하며, 일반적인 비전-언어 작업에서도 경쟁력 있는 성능을 유지합니다."
+    },
+    "summary": "1. SpatialReasoner-R1은 Multi-Model Monte Carlo Tree Search 방법을 도입하여 LongCoT 추론 경로를 생성하고, fine-grained Direct Preference Optimization을 통해 후보 응답을 평가하여 공간 추론 작업에서 우수한 성과를 보였습니다.\n2. fDPO는 표준 DPO에 비해 공간 품질 작업에서 4.1%의 평균 개선 및 공간적 양 작업에서 9.0% 향상을 이끌어내었습니다.\n3. SpatialReasoner-R1은 SPATIALRGPT-Bench에서 최고의 결과를 달성하여, 일반적 비전-언어 작업에서도 뛰어난 성능을 보여주었습니다.",
+    "categories": [
+      "NLP",
+      "Computer Vision"
+    ]
+  }
+]

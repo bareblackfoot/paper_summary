@@ -1,0 +1,123 @@
+=== Paper Collection Started at Thu Apr 16 22:20:28 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W16
+URL: https://huggingface.co/papers/week/2026-W16
+Found 10 papers in weekly view
+Fetching likes for: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Fetching likes for: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Fetching likes for: ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents
+Fetching likes for: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Fetching likes for: Seedance 2.0: Advancing Video Generation for World Complexity
+Fetching likes for: GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+Fetching likes for: RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time
+Fetching likes for: KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance
+Fetching likes for: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Fetching likes for: Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation
+Selected top 10 papers by likes:
+1. WildDet3D: Scaling Promptable 3D Detection in the Wild (233 likes)
+2. The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping (132 likes)
+3. ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents (129 likes)
+4. QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation (120 likes)
+5. Seedance 2.0: Advancing Video Generation for World Complexity (110 likes)
+6. GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents (105 likes)
+7. RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time (95 likes)
+8. KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance (92 likes)
+9. FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios (91 likes)
+10. Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation (72 likes)
+Found abstract: Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step...
+Processed paper: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Found abstract: Despite the success of reinforcement learning for large language models, a common failure mode is re...
+Processed paper: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Found abstract: GUI agents drive applications through their visual interfaces instead of programmatic APIs, interact...
+Processed paper: ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents
+Found abstract: Large Language Models (LLMs) are increasingly used for code generation, yet quantum code generation ...
+Processed paper: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Found abstract: Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China ...
+Processed paper: Seedance 2.0: Advancing Video Generation for World Complexity
+Found abstract: Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) ag...
+Processed paper: GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+Found abstract: Most reward models for visual generation reduce rich human judgments to a single unexplained score, ...
+Processed paper: RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time
+Found abstract: RLVR improves reasoning in large language models, but its effectiveness is often limited by severe r...
+Processed paper: KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance
+Found abstract: The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transi...
+Processed paper: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Found abstract: As the foundational architecture of modern machine learning, Transformers have driven remarkable pro...
+Processed paper: Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Paper already exists, checking if translation is complete...
+Update likes: 233  ->  230
+Update date_collected: 2026-04-17T07:20:38.759328+09:00  ->  2026-04-16T07:20:59.998334+09:00
+
+Processing paper 2/10
+Title: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Paper already exists, checking if translation is complete...
+Update likes: 132  ->  90
+Update date_collected: 2026-04-17T07:20:38.760634+09:00  ->  2026-04-16T07:21:00.003415+09:00
+
+Processing paper 3/10
+Title: ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents
+Paper already exists, checking if translation is complete...
+Update likes: 129  ->  119
+Update date_collected: 2026-04-17T07:20:38.761888+09:00  ->  2026-04-16T07:21:00.000035+09:00
+
+Processing paper 4/10
+Title: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Paper already exists, checking if translation is complete...
+Update likes: 120  ->  119
+Update date_collected: 2026-04-17T07:20:38.763183+09:00  ->  2026-04-16T07:21:00.001738+09:00
+
+Processing paper 5/10
+Title: Seedance 2.0: Advancing Video Generation for World Complexity
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance
+Paper already exists, checking if translation is complete...
+Update likes: 92  ->  81
+Update date_collected: 2026-04-17T07:20:38.768653+09:00  ->  2026-04-16T07:21:00.007438+09:00
+
+Processing paper 9/10
+Title: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Paper already exists, checking if translation is complete...
+Update likes: 91  ->  89
+Update date_collected: 2026-04-17T07:20:38.770186+09:00  ->  2026-04-16T07:21:00.005548+09:00
+
+Processing paper 10/10
+Title: Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  68
+Update date_collected: 2026-04-17T07:20:38.772148+09:00  ->  2026-04-16T07:21:00.009790+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W16.json...
+
+Updating Notion database...
+Updating paper: 야생에서의 프롬프터 가능한 3D 탐지의 확장 (3D Detection in the Wild) (likes: 230 -> 233)
+Updating paper: 과거는 지나지 않았다: 기억 강화형 동적 보상 형성 (likes: 90 -> 132)
+Updating paper: ClawGUI: GUI 에이전트를 훈련, 평가, 배포하기 위한 통합 프레임워크 (likes: 119 -> 129)
+Updating paper: QuanBench+: LLM 기반 양자 코드 생성을 위한 통합된 다중 프레임워크 벤치마크 (likes: 119 -> 120)
+Creating new paper: Seedance 2.0: 세계 복잡도에 대한 비디오 생성 기술 진보
+Creating new paper: 게임월드: 다중모달 게임 에이전트의 표준화 및 검증 가능한 평가를 향하여
+Creating new paper: 합리적 보상: 추론 보상이 훈련 및 테스트 시각적 생성을 규모 증가시킴
+Updating paper: 최소 충분 지식 안내를 통한 강화 학습을 활용한 대형 언어 모델 추론 강화 KnowRL (likes: 81 -> 92)
+Updating paper: FORGE: 제조 시나리오에 대한 세밀한 다중 모달 평가 (likes: 89 -> 91)
+Updating paper: 트랜스포머의 어텐션 싱크: 활용, 해석, 완화에 대한 조사 (likes: 68 -> 72)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Apr 16 22:22:24 UTC 2026 ===
+

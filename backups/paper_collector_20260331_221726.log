@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Mar 30 22:16:42 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W14
+URL: https://huggingface.co/papers/week/2026-W14
+Found 10 papers in weekly view
+Fetching likes for: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Fetching likes for: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Fetching likes for: PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference
+Fetching likes for: Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills
+Fetching likes for: MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies
+Fetching likes for: RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation
+Fetching likes for: LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset
+Fetching likes for: Natural-Language Agent Harnesses
+Fetching likes for: Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models
+Fetching likes for: Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models
+Selected top 10 papers by likes:
+1. Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models (133 likes)
+2. ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling (110 likes)
+3. PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference (38 likes)
+4. Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills (33 likes)
+5. MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies (20 likes)
+6. RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation (16 likes)
+7. LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset (12 likes)
+8. Natural-Language Agent Harnesses (10 likes)
+9. Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models (8 likes)
+10. Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models (8 likes)
+Found abstract: Video world models have shown immense potential in simulating the physical world, yet existing memor...
+Processed paper: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Found abstract: Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional ar...
+Processed paper: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Found abstract: Autoregressive video diffusion models have demonstrated remarkable progress, yet they remain bottlen...
+Processed paper: PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference
+Found abstract: Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling com...
+Processed paper: Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills
+Found abstract: Currently, evaluating vision-language models (VLMs) in medical imaging tasks oversimplifies clinical...
+Processed paper: MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies
+Found abstract: Vision-Language Models (VLMs) have demonstrated impressive capabilities in code generation across va...
+Processed paper: RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation
+Found abstract: In real-world domains such as self-driving, generalization to rare scenarios remains a fundamental c...
+Processed paper: LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset
+Found abstract: Agent performance increasingly depends on harness engineering, yet harness design is usually buried ...
+Processed paper: Natural-Language Agent Harnesses
+Found abstract: Recent advances in 3D generation have improved the fidelity and geometric details of synthesized 3D ...
+Processed paper: Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models
+Found abstract: As the paradigm of AI shifts from text-based LLMs to Speech Language Models (SLMs), there is a growi...
+Processed paper: Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Natural-Language Agent Harnesses
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W14.json...
+
+Updating Notion database...
+Creating new paper: 시야 밖, 그러나 마음속에: 동적 비디오 월드 모델을 위한 하이브리드 메모리
+Creating new paper: ShotStream: 대화형 이야기 만들기를 위한 스트리밍 멀티샷 비디오 생성
+Creating new paper: PackForcing: 짧은 비디오 교육은 긴 비디오 샘플링과 긴 문맥 추론에 충분하다
+Creating new paper: Trace2Skill: Trajectory-Local Lessons를 전이 가능한 에이전트 스킬로 압축(Transferable Agent Skills)
+Creating new paper: MedOpenClaw: 미 정리된 전체 연구에 대해 추론하는 감사 가능한 의료 이미징 에이전트
+Creating new paper: RealChart2Code: 실제 데이터와 다중 작업 평가로 차트 생성 발전시키기
+Creating new paper: 장꼬리 주행 시나리오와 추론 트레이스: KITScenes 장꼬리 데이터셋
+Creating new paper: 자연어 기반 에이전트 핸드라이징
+Creating new paper: Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models
+Creating new paper: 소믈리에: 전이중 말 데이터 모델을 위한 확장 가능한 다중 대화식 오디오 전처리
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Mar 30 22:18:53 UTC 2026 ===
+

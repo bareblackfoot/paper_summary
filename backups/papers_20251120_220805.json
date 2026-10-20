@@ -1,0 +1,329 @@
+[
+  {
+    "title": "MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling",
+    "abstract": "We present MiroThinker v1.0, an open-source research agent designed to advance tool-augmented reasoning and information-seeking capabilities. Unlike previous agents that only scale up model size or context length, MiroThinker explores interaction scaling at the model level, systematically training the model to handle deeper and more frequent agent-environment interactions as a third dimension of performance improvement. Unlike LLM test-time scaling, which operates in isolation and risks degradation with longer reasoning chains, interactive scaling leverages environment feedback and external information acquisition to correct errors and refine trajectories. Through reinforcement learning, the model achieves efficient interaction scaling: with a 256K context window, it can perform up to 600 tool calls per task, enabling sustained multi-turn reasoning and complex real-world research workflows. Across four representative benchmarks-GAIA, HLE, BrowseComp, and BrowseComp-ZH-the 72B variant achieves up to 81.9%, 37.7%, 47.1%, and 55.6% accuracy respectively, surpassing previous open-source agents and approaching commercial counterparts such as GPT-5-high. Our analysis reveals that MiroThinker benefits from interactive scaling consistently: research performance improves predictably as the model engages in deeper and more frequent agent-environment interactions, demonstrating that interaction depth exhibits scaling behaviors analogous to model size and context length. These findings establish interaction scaling as a third critical dimension for building next-generation open research agents, complementing model capacity and context windows.",
+    "authors": [
+      "MiroMind Team",
+      "Song Bai",
+      "Lidong Bing",
+      "Carson Chen",
+      "Guanzheng Chen",
+      "Yuntao Chen",
+      "Zhe Chen",
+      "Ziyi Chen",
+      "Jifeng Dai",
+      "Xuan Dong",
+      "Yue Deng",
+      "Yunjie Fu",
+      "Junqi Ge",
+      "Chenxia Han",
+      "Tammy Huang",
+      "Zhenhang Huang",
+      "Jerry Jiao",
+      "Shilei Jiang",
+      "Tianyu Jiao",
+      "Xiaoqi Jian",
+      "Lei Lei",
+      "Ruilin Li"
+    ],
+    "likes": 136,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11793",
+    "date_collected": "2025-11-20T07:08:12.099647+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "MiroThinker: 모델, 맥락, 상호작용 확장을 통한 오픈소스 연구 에이전트의 성능한계 돌파",
+      "abstract": "MiroThinker v1.0은 도구를 활용한 추론과 정보 탐색 능력을 향상시키기 위해 설계된 오픈소스 연구 에이전트를 제시합니다. 기존의 에이전트는 모델 크기나 맥락 길이만 확장했다면, MiroThinker는 성능 향상의 세 번째 차원으로 모델 수준에서의 상호작용 확장을 탐구하며, 보다 깊고 더 자주 발생하는 에이전트-환경 상호작용을 처리할 수 있도록 체계적으로 모델을 훈련시킵니다. 상호작용 확장은 LLM 테스트 시간 확장과 달리 환경 피드백 및 외부 정보 획득을 통해 에러를 교정하고 궤적을 개선합니다. 강화 학습을 통해, 이 모델은 256K 맥락 윈도우를 사용하여 작업 당 최대 600회의 도구 호출을 수행할 수 있어 계속된 다중 턴 추론과 복잡한 현실 세계 연구 작업을 가능하게 합니다. GAIA, HLE, BrowseComp 및 BrowseComp-ZH의 네 가지 대표적인 벤치마크에서 72B 버전은 각각 81.9%, 37.7%, 47.1%, 55.6%의 정확도를 달성하여 이전 오픈소스 에이전트를 능가하고 GPT-5-high와 같은 상용 프로그램에 준하는 수준에 이릅니다. 분석 결과, MiroThinker는 상호작용 확장을 일관되게 이용함으로써 연구 성과가 예측 가능하게 향상되며, 모델이 보다 깊고 자주 발생하는 에이전트-환경 상호작용에 참여함에 따라 상호작용 깊이가 모델 크기와 맥락 길이와 유사한 확장 행동을 나타낸다는 것을 입증합니다. 이러한 결과는 상호작용 확장을 다음 세대의 오픈 연구 에이전트를 구축하기 위한 세 번째 중요한 차원으로 확립하며, 모델 용량과 맥락 창을 보완합니다."
+    },
+    "summary": "1. MiroThinker는 모델 수준의 상호작용 확장을 통해 오픈소스 연구 에이전트의 성능을 향상시키고, 다중 턴 추론과 복잡한 연구 작업을 수행할 수 있게 합니다.\n2. 72B 버전은 다양한 벤치마크에서 상용 프로그램에 준하는 높은 정확도를 달성하여 이전 오픈소스 에이전트를 능가합니다.\n3. 상호작용 확장은 모델 크기와 맥락 길이와 유사한 확장 행동을 보이며, 다음 세대의 오픈 연구 에이전트에 필수적인 차원이 될 수 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "P1: Mastering Physics Olympiads with Reinforcement Learning",
+    "abstract": "Recent progress in large language models (LLMs) has moved the frontier from puzzle-solving to science-grade reasoning-the kind needed to tackle problems whose answers must stand against nature, not merely fit a rubric. Physics is the sharpest test of this shift, which binds symbols to reality in a fundamental way, serving as the cornerstone of most modern technologies. In this work, we manage to advance physics research by developing large language models with exceptional physics reasoning capabilities, especially excel at solving Olympiad-level physics problems. We introduce P1, a family of open-source physics reasoning models trained entirely through reinforcement learning (RL). Among them, P1-235B-A22B is the first open-source model with Gold-medal performance at the latest International Physics Olympiad (IPhO 2025), and wins 12 gold medals out of 13 international/regional physics competitions in 2024/2025. P1-30B-A3B also surpasses almost all other open-source models on IPhO 2025, getting a silver medal. Further equipped with an agentic framework PhysicsMinions, P1-235B-A22B+PhysicsMinions achieves overall No.1 on IPhO 2025, and obtains the highest average score over the 13 physics competitions. Besides physics, P1 models also present great performance on other reasoning tasks like math and coding, showing the great generalibility of P1 series.",
+    "authors": [
+      "Jiacheng Chen",
+      "Qianjia Cheng",
+      "Fangchen Yu",
+      "Haiyuan Wan",
+      "Yuchen Zhang",
+      "Shenghe Zheng",
+      "Junchi Yao",
+      "Qingyang Zhang",
+      "Haonan He",
+      "Yun Luo",
+      "Yufeng Zhao",
+      "Futing Wang",
+      "Li Sheng",
+      "Chengxing Xie",
+      "Yuxin Zuo",
+      "Yizhuo Li",
+      "Wenxauan Zeng",
+      "Yulun Wu",
+      "Rui Huang",
+      "Dongzhan Zhou",
+      "Kai Chen",
+      "Yu Qiao"
+    ],
+    "likes": 119,
+    "published_date": "Nov 17",
+    "url": "https://huggingface.co/papers/2511.13612",
+    "date_collected": "2025-11-20T07:08:12.101542+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "물리 올림피아드를 통한 강화 학습의 성공",
+      "abstract": "최근 대형언어모델의 발전으로 문제 해결에서 과학적 추론으로의 전환이 이루어졌으며 이는 단순히 규정에 맞추는 것이 아니라 자연에 맞서야 하는 문제를 해결하기 위한 추론 능력이 필요하다. 이 연구에서는 물리학을 획기적인 방법으로 출발하여, 강화 학습을 통해 훈련된 대형언어모델을 개발함으로써 물리학 연구를 선도해왔다. 특히 올림피아드 수준의 물리 문제 해결 능력에서 뛰어난 성과를 거뒀다. P1은 물리 추론 모델의 일종으로 IPhO 2025에서 Gold-medal 성과를 낸 최초의 오픈 소스 모델 중 하나이며, 2024/2025년 13개 국제/지역 물리 대회에서 12개의 Gold medal을 획득했다. P1은 또한 수학과 코딩과 같은 다른 추론 작업에서도 우수한 성능을 보여주었다."
+    },
+    "summary": "1. 대형언어모델 P1은 강화 학습을 통해 훈련되어 과학적 추론 능력을 탁월하게 발휘하며, 물리학 올림피아드와 같은 문제 해결 대회에서 높은 성적을 거둡니다.\n2. P1-235B-A22B는 최근 국제 물리 올림피아드에서 금메달을 획득하고, 2024/2025년 13개 대회 중 12회의 금메달을 획득하였습니다.\n3. P1은 물리뿐만 아니라 수학과 코딩과 같은 문제 해결 작업에서도 우수한 성능을 보여주며, 다양한 분야에서의 활용 가능성을 확인시켰습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, but their training remains resource- and time-intensive, requiring massive compute power and careful orchestration of training procedures. Model souping-the practice of averaging weights from multiple models of the same architecture-has emerged as a promising pre- and post-training technique that can enhance performance without expensive retraining. In this paper, we introduce Soup Of Category Experts (SoCE), a principled approach for model souping that utilizes benchmark composition to identify optimal model candidates and applies non-uniform weighted averaging to maximize performance. Contrary to previous uniform-averaging approaches, our method leverages the observation that benchmark categories often exhibit low inter-correlations in model performance. SoCE identifies \"expert\" models for each weakly-correlated category cluster and combines them using optimized weighted averaging rather than uniform weights. We demonstrate that the proposed method improves performance and robustness across multiple domains, including multilingual capabilities, tool calling, and math and achieves state-of-the-art results on the Berkeley Function Calling Leaderboard.",
+    "authors": [
+      "Shalini Maiti",
+      "Amar Budhiraja",
+      "Bhavul Gauri",
+      "Gaurav Chaurasia",
+      "Anton Protopopov",
+      "Alexis Audran-Reiss",
+      "Michael Slater",
+      "Despoina Magka",
+      "Tatiana Shavrina",
+      "Roberta Raileanu",
+      "Yoram Bachrach"
+    ],
+    "likes": 101,
+    "published_date": "Nov 17",
+    "url": "https://huggingface.co/papers/2511.13254",
+    "date_collected": "2025-11-20T07:08:12.102934+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "간단한 산술이 최신 LLM 성능의 열쇠를 제공하는 수퍼-모델",
+      "abstract": "대형 언어 모델(LLM)은 다양한 분야에서 놀라운 능력을 보여주었지만, 그들의 훈련은 자원 및 시간이 많이 소모되는데, 이는 방대한 컴퓨팅 파워와 세밀한 훈련 절차의 조화가 필요합니다. 모델 수핑이란, 동일 아키텍처의 여러 모델로부터 가중치를 평균 내는 실천법이 등장하여 비싼 재훈련 없이도 성능을 향상시킬 수 있는 유망한 사전 및 사후 훈련 기술로 부상하였습니다. 본 논문에서는 카테고리 전문가의 수프(Soup Of Category Experts, SoCE)를 소개하며, 이는 최적의 모델 후보를 식별하기 위해 벤치마크 구성을 활용하고 최적 성능을 극대화하기 위해 비교적 가중 평균을 적용하는 원칙적인 방법론입니다. 우리의 방법은 이전에 사용된 균일한 평균 방식과는 대조적으로, 벤치마크 카테고리가 종종 모델 성능의 낮은 상호 상관 관계를 보인다는 관찰을 활용합니다. SoCE는 약하게 상관된 각 범주 클러스터에 대한 \"전문가\" 모델을 식별하고, 그들을 균일한 가중치가 아닌 최적화된 가중 평균을 사용하여 결합합니다. 제안된 방법이 다국어 기능, 도구 호출, 수학 등 다양한 분야에서 성능과 견고성을 개선하며 버클리 함수 호출 리더보드에서 최신 결과를 달성함을 증명하였습니다."
+    },
+    "summary": "1. LLM 훈련을 많은 자원과 시간을 필요로 하는 작업으로 보이지만, 모델 수프(SoCE)라는 새로운 기법을 도입하여 비용 대비 성능을 향상시킬 수 있음.\n2. SoCE는 벤치마크 구성을 활용하여 최적 모델 후보를 식별하고, 비등중한 가중 평균을 통해 이들을 결합하여 성능을 극대화함.\n3. 기존의 균일한 평균 방식과는 다르게, SoCE는 낮은 상호 상관 관계를 보이는 벤치마크 카테고리를 활용하여 \"전문가\" 모델을 식별하고, 최적화된 가중 평균을 통해 개선된 성능과 견고성을 보여줌.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data",
+    "abstract": "We present Uni-MoE 2.0 from the Lychee family. As a fully open-source omnimodal large model (OLM), it substantially advances Lychee's Uni-MoE series in language-centric multimodal understanding, reasoning, and generating. Based on the Qwen2.5-7B dense architecture, we build Uni-MoE-2.0-Omni from scratch through three core contributions: dynamic-capacity Mixture-of-Experts (MoE) design, a progressive training strategy enhanced with an iterative reinforcement strategy, and a carefully curated multimodal data matching technique. It is capable of omnimodal understanding, as well as generating images, text, and speech. Architecturally, our new MoE framework balances computational efficiency and capability for 10 cross-modal inputs using shared, routed, and null experts, while our Omni-Modality 3D RoPE ensures spatio-temporal cross-modality alignment in the self-attention layer. For training, following cross-modal pretraining, we use a progressive supervised fine-tuning strategy that activates modality-specific experts and is enhanced by balanced data composition and an iterative GSPO-DPO method to stabilise RL training and improve reasoning. Data-wise, the base model, trained on approximately 75B tokens of open-source multimodal data, is equipped with special speech and image generation tokens, allowing it to learn these generative tasks by conditioning its outputs on linguistic cues. Extensive evaluation across 85 benchmarks demonstrates that our model achieves SOTA or highly competitive performance against leading OLMs, surpassing Qwen2.5-Omni (trained with 1.2T tokens) on over 50 of 76 benchmarks. Key strengths include video understanding (+7% avg. of 8), omnimodallity understanding (+7% avg. of 4), and audiovisual reasoning (+4%). It also advances long-form speech processing (reducing WER by 4.2%) and leads in low-level image processing and controllable generation across 5 metrics.",
+    "authors": [
+      "Yunxin Li",
+      "Xinyu Chen",
+      "Shenyuan Jiang",
+      "Haoyuan Shi",
+      "Zhenyu Liu",
+      "Xuanyu Zhang",
+      "Nanhao Deng",
+      "Zhenran Xu",
+      "Yicheng Ma",
+      "Meishan Zhang",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "likes": 93,
+    "published_date": "Nov 16",
+    "url": "https://huggingface.co/papers/2511.12609",
+    "date_collected": "2025-11-20T07:08:12.104369+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "Uni-MoE-2.0-Omni: 고급 MoE, 훈련 및 데이터로 언어 중심 옴니모달 대형 모델 확장",
+      "abstract": "Lychee 패밀리의 Uni-MoE 2.0를 소개합니다. 옴니모달 대형 모델(OLM)로 완전한 오픈 소스인 Uni-MoE 시리즈를 언어 중심의 다중모달 이해, 추론 및 생성에서 높게 발전시켰습니다. Qwen2.5-7B 밀집 아키텍처를 기반으로, 우리는 Uni-MoE-2.0-Omni를 다음 세 가지 주요 기여로부터 처음부터 구축했습니다: 동적 용량 MoE 디자인, 반복 강화 전략으로 강화된 점진적 훈련 전략 및 신중히 고른 다중모달 데이터 매칭 기술을 포함합니다. 이는 옴니모달 이해와 이미지, 텍스트 및 음성 생성이 가능합니다. 아키텍처적으로, 새로운 MoE 프레임워크는 공유된, 경로 지정된, 널(빈) 전문가를 사용하여 10개의 교차 모달 입력에 대한 계산 효율성과 능력을 균형 있게 유지하며, 우리의 Omni-Modality 3D RoPE는 자가 주의 계층에서 시공간 교차 모달 정렬을 보장합니다. 훈련 측면에서, 교차 모달 사전 훈련 이후, 우리는 모달리티-특정 전문가를 활성화하는 점진적 지도 학습 세밀 조정 전략을 사용하며 균형 잡힌 데이터 구성과 반복 GSPO-DPO 방법에 의해 강화학습 훈련을 안정화하고 추론을 향상시킵니다. 데이터 측면에서, 약 75B 토큰의 오픈 소스 다중모달 데이터로 훈련된 기본 모델은 특별 음성 및 이미지 생성 토큰을 장착하여 이러한 생성 작업을 언어적 힌트에 의존하여 학습할 수 있습니다. 85가지 벤치마크에서의 광범위한 평가에서, 우리 모델이 주요 OLM 대비 SOTA 또는 높은 경쟁력을 보이며, 76개 벤치마크 중 50개 이상에서 Qwen2.5-Omni(1.2T 토큰으로 훈련)을 초과했습니다. 주요 강점은 비디오 이해(+8의 평균치), 옴니모달 이해(+4의 평균치) 및 각종 이유(+4%)를 향상시켰습니다. 또한 긴 형식의 음성 처리(4.2%의 WER 감소)를 발전시키고 5가지 지표에 걸쳐 저수준 이미지 처리 및 제어 가능한 생성에서 선도합니다."
+    },
+    "summary": "1. Uni-MoE-2.0-Omni는 MoE 디자인, 훈련 전략, 데이터 기술 등에서 기존 모델을 발전시켜 언어 중심의 옴니모달 이해와 생성 능력을 갖추었습니다.\n2. 새로운 MoE 프레임워크와 Omni-Modality 3D RoPE를 활용하여 10가지 교차 모달 입력에 대한 효율적이고 균형 잡힌 모델을 제공하며, 모달리티-특정 전문가를 활성화하는 훈련 전략을 사용했습니다.\n3. 약 75B 토큰의 다중모달 데이터로 훈련된 Uni-MoE-2.0-Omni는 다양한 생성 작업과 벤치마크에서 우수한 성능을 보이며, 비디오 이해, 옴니모달 이해, 음성 및 이미지 처리에 강점을 갖고 있습니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "N/A"
+    ]
+  },
+  {
+    "title": "DoPE: Denoising Rotary Position Embedding",
+    "abstract": "Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrapolation. We reinterpret the attention map with positional encoding as a noisy feature map, and propose Denoising Positional Encoding (DoPE), a training-free method based on truncated matrix entropy to detect outlier frequency bands in the feature map. Leveraging the noise characteristics of the feature map, we further reparameterize it with a parameter-free Gaussian distribution to achieve robust extrapolation. Our method theoretically reveals the underlying cause of the attention sink phenomenon and its connection to truncated matrix entropy. Experiments on needle-in-a-haystack and many-shot in-context learning tasks demonstrate that DoPE significantly improves retrieval accuracy and reasoning stability across extended contexts (up to 64K tokens). The results show that the denoising strategy for positional embeddings effectively mitigates attention sinks and restores balanced attention patterns, providing a simple yet powerful solution for improving length generalization. Our project page is Project: https://The-physical-picture-of-LLMs.github.io",
+    "authors": [
+      "Jing Xiong",
+      "Liyang Fan",
+      "Hui Shen",
+      "Zunhai Su",
+      "Min Yang",
+      "Lingpeng Kong",
+      "Ngai Wong"
+    ],
+    "likes": 86,
+    "published_date": "Nov 12",
+    "url": "https://huggingface.co/papers/2511.09146",
+    "date_collected": "2025-11-20T07:08:12.105605+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "DoPE: Denoising Rotary Position Embedding",
+      "abstract": "Transformer 모델의 Rotary Position Embedding (RoPE)은 길이 추정을 약화시키는 내재적인 한계를 가지고 있습니다. 우리는 위치 부호화로 해석된 어텐션 맵을 있는 그대로의 특성 맵으로 보고, 이상적인 주파수 대역을 감지하는 것을 목적으로 하는 자율 학습 없이 해당 특성 맵에서 이상치 주파수 대역을 감지하는 Denoising Positional Encoding (DoPE)를 제안합니다. 특성 맵의 소음 특성을 활용하여 무료 매개변수인 가우시안 분포로 다시 매개변수화하여 견고한 추정을 달성합니다. 저희 방법론은 어텐션 싱크 현상의 근본적인 원인과 그것과 잘려진 행렬 엔트로피의 연관성을 이론적으로 밝힙니다. '바늘 속에서 바늘 찾기' 및 많은 샷 인 콘텍스트 학습 작업에서의 실험 결과는 DoPE가 64K 토큰까지의 확장된 컨텍스트에서 검색 정확도와 추론 안정성을 크게 향상시킨다는 것을 보여줍니다. 결과는 위치 부호화에 대한 소음 제거 전략이 어텐션 싱크를 효과적으로 완화시키고 균형 잡힌 어텐션 패턴을 복원함을 보여주며, 길이 추정을 개선하는 간단하고 강력한 해결책을 제공합니다."
+    },
+    "summary": "1. RoPE의 한계를 극복하기 위해 DoPE를 제안하였는데, 이는 이상치 주파수 대역을 감지하는 무료 매개변수 방법으로 어텐션 맵을 재해석함.\n2. 실험 결과는 DoPE가 길이 추정을 향상시키고, 어텐션 싱크를 완화시키며, 균형 잡힌 어텐션 패턴을 복원함을 입증함.\n3. DoPE는 위치 부호화의 소음 제거 전략이므로, Transformer 모델에서의 추론 안정성과 검색 정확도를 향상시키는 강력한 기법임.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Part-X-MLLM: Part-aware 3D Multimodal Large Language Model",
+    "abstract": "We introduce Part-X-MLLM, a native 3D multimodal large language model that unifies diverse 3D tasks by formulating them as programs in a structured, executable grammar. Given an RGB point cloud and a natural language prompt, our model autoregressively generates a single, coherent token sequence encoding part-level bounding boxes, semantic descriptions, and edit commands. This structured output serves as a versatile interface to drive downstream geometry-aware modules for part-based generation and editing. By decoupling the symbolic planning from the geometric synthesis, our approach allows any compatible geometry engine to be controlled through a single, language-native frontend. We pre-train a dual-encoder architecture to disentangle structure from semantics and instruction-tune the model on a large-scale, part-centric dataset. Experiments demonstrate that our model excels at producing high-quality, structured plans, enabling state-of-the-art performance in grounded Q\\&A, compositional generation, and localized editing through one unified interface. Project page: https://chunshi.wang/Part-X-MLLM/",
+    "authors": [
+      "Chunshi Wang",
+      "Junliang Ye",
+      "Yunhan Yang",
+      "Yang Li",
+      "Zizhuo Lin",
+      "Jun Zhu",
+      "Zhuo Chen",
+      "Yawei Luo",
+      "Chunchao Guo"
+    ],
+    "likes": 65,
+    "published_date": "Nov 17",
+    "url": "https://huggingface.co/papers/2511.13647",
+    "date_collected": "2025-11-20T07:08:12.106930+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "Part-X-MLLM: 파트-인식 3D 다중 모달 대형 언어 모델",
+      "abstract": "Part-X-MLLM은 다양한 3D 작업을 구조화된 실행 가능한 문법의 프로그램으로 정의하여 통합하는 네이티브 3D 다중 모달 대형 언어 모델입니다. RGB 포인트 클라우드와 자연어 프롬프트가 주어지면 모델은 파트 수준 바운딩 박스, 의미적 설명 및 편집 명령을 인코딩하는 일관된 토큰 시퀀스를 자동으로 생성합니다. 이 구조화된 출력은 파트 기반 생성 및 편집을 위한 하류 지오메트리 주도 모듈을 구동하는 유연한 인터페이스 역할을 합니다. 기호적 계획을 기하적 종합에서 분리함으로써 우리의 방법론은 호환되는 기하 엔진을 단일 언어 네이티브 프론트엔드를 통해 제어할 수 있게 합니다. 우리는 이중 인코더 구조를 사전 훈련하여 구조와 의미를 분리하고 대규모 파트 중심 데이터셋에서 모델을 지도 튜닝합니다. 실험 결과, 우리 모델은 고품질 구조화된 계획을 생성하여 통한 질의응답, 구성 생성 및 통합화된 인터페이스를 통한 지역화 편집에 있어 최첨단 성능을 보여줍니다. 프로젝트 페이지: https://chunshi.wang/Part-X-MLLM/"
+    },
+    "summary": "1. Part-X-MLLM은 다양한 3D 작업을 하나의 구조화된 언어 모델을 통해 통합하고, 고품질 구조화된 계획을 생성하여 Q&A, 생성 및 편집 작업에 뛰어난 성과를 보입니다.\n2. 모델은 RGB 포인트 클라우드와 자연어 프롬프트를 통해 파트 수준 바운딩 박스, 의미적 설명 및 편집 명령을 자동으로 생성하는 능력을 가지고 있습니다.\n3. 이중 인코더 아키텍처로 사전 훈련하고 대규모 데이터셋에서 모델을 지도 튜닝하여 구조와 의미를 분리하여 다양한 3D 작업을 효과적으로 처리합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models",
+    "abstract": "We present AraLingBench: a fully human annotated benchmark for evaluating the Arabic linguistic competence of large language models (LLMs). The benchmark spans five core categories: grammar, morphology, spelling, reading comprehension, and syntax, through 150 expert-designed multiple choice questions that directly assess structural language understanding. Evaluating 35 Arabic and bilingual LLMs reveals that current models demonstrate strong surface level proficiency but struggle with deeper grammatical and syntactic reasoning. AraLingBench highlights a persistent gap between high scores on knowledge-based benchmarks and true linguistic mastery, showing that many models succeed through memorization or pattern recognition rather than authentic comprehension. By isolating and measuring fundamental linguistic skills, AraLingBench provides a diagnostic framework for developing Arabic LLMs. The full evaluation code is publicly available on GitHub.",
+    "authors": [
+      "Mohammad Zbib",
+      "Hasan Abed Al Kader Hammoud",
+      "Sina Mukalled",
+      "Nadine Rizk",
+      "Fatima Karnib",
+      "Issam Lakkis",
+      "Ammar Mohanna",
+      "Bernard Ghanem"
+    ],
+    "likes": 58,
+    "published_date": "Nov 18",
+    "url": "https://huggingface.co/papers/2511.14295",
+    "date_collected": "2025-11-20T07:08:12.108231+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "AraLingBench: 대형 언어 모델의 아랍어 언어 능력 평가를 위한 인간 주석된 벤치마크",
+      "abstract": "AraLingBench를 제시합니다. 이는 대형 언어 모델(Large Language Models, LLMs)의 아랍어 언어 능력을 평가하기 위한 완전히 인간 주석된 벤치마크입니다. 이 벤치마크는 문법, 형태론, 철자, 독해, 구문 이 다섯 가지 핵심 범주를 아우르며, 150개의 전문가 설계 다중 선택 문항을 통해 직접 구조적 언어 이해를 평가합니다. 35개의 아랍어 및 이중언어 LLMs를 평가한 결과, 현재 모델들은 표면 수준의 능능성을 강조하지만 보다 심층적인 문법 및 구문적 추론에 어려움을 겪습니다. AraLingBench는 지식 기반 벤치마크에서의 높은 점수와 실제 언어적 숙련도 사이의 지속적인 격차를 강조하며, 많은 모델이 순암기 또는 패턴 인식을 통해 성공하는 것이 아닌 진정한 이해를 통해 성공하는 것을 보여줍니다. 근본적인 언어적 기술을 분리하고 측정함으로써 AraLingBench는 아랍어 LLMs를 개발하기 위한 진단적 프레임워크를 제공합니다. 전체 평가 코드는 GitHub에서 공개되어 있습니다."
+    },
+    "summary": "1. AraLingBench는 150개의 전문가 설계 질문을 통해 아랍어 LLMs의 언어 능력을 평가하며, 현재 대부분의 모델들이 표면적인 능력은 있지만 심층적인 문법 및 구문적 추론에 어려움을 겪고 있다.\n2. 높은 점수를 기반으로 한 지식 벤치마크와 실제 언어적 숙련도 사이에는 큰 차이가 있음을 보여주며, 많은 모델들이 진정한 이해보다는 순암기나 패턴 인식으로 성공하는 경향이 있다.\n3. AraLingBench는 아랍어 LLMs 개발을 위한 진단적 프레임워크로서, 언어적 기술을 분리하고 측정함으로써 모델의 능력을 측정할 수 있는 중요한 도구로 나타납니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation",
+    "abstract": "While thinking-aware generation aims to improve performance on complex tasks, we identify a critical failure mode where existing sequential, autoregressive approaches can paradoxically degrade performance due to error propagation. To systematically analyze this issue, we propose ParaBench, a new benchmark designed to evaluate both text and image output modalities. Our analysis using ParaBench reveals that this performance degradation is strongly correlated with poor alignment between the generated reasoning and the final image. To resolve this, we propose a parallel multimodal diffusion framework, MMaDA-Parallel, that enables continuous, bidirectional interaction between text and images throughout the entire denoising trajectory. MMaDA-Parallel is trained with supervised finetuning and then further optimized by Parallel Reinforcement Learning (ParaRL), a novel strategy that applies semantic rewards along the trajectory to enforce cross-modal consistency. Experiments validate that our model significantly improves cross-modal alignment and semantic consistency, achieving a 6.9\\% improvement in Output Alignment on ParaBench compared to the state-of-the-art model, Bagel, establishing a more robust paradigm for thinking-aware image synthesis. Our code is open-sourced at https://github.com/tyfeld/MMaDA-Parallel",
+    "authors": [
+      "Ye Tian",
+      "Ling Yang",
+      "Jiongfan Yang",
+      "Anran Wang",
+      "Yu Tian",
+      "Jiani Zheng",
+      "Haochen Wang",
+      "Zhiyang Teng",
+      "Zhuochen Wang",
+      "Yinjie Wang",
+      "Yunhai Tong",
+      "Mengdi Wang",
+      "Xiangtai Li"
+    ],
+    "likes": 57,
+    "published_date": "Nov 12",
+    "url": "https://huggingface.co/papers/2511.09611",
+    "date_collected": "2025-11-20T07:08:12.109727+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "MMaDA-Parallel: Thinking-Aware 편집과 생성을 위한 멀티모달 대규모 확산 언어 모델",
+      "abstract": "Thinking-aware generation은 복잡한 작업의 성능을 향상시키려는 노력이지만, 기존의 순차적 자기회귀적 방법은 오류 전파로 인해 성능이 역설적으로 저하되는 중요한 실패 모드를 식별합니다. 이 문제를 체계적으로 분석하기 위해 텍스트와 이미지 출력 모달리티를 평가하기 위해 설계된 ParaBench를 제안합니다. ParaBench를 사용한 분석 결과, 이러한 성능 저하가 생성된 추론과 최종 이미지 간의 불일치와 강력하게 상관이 있음을 밝힙니다. 따라서 우리는 텍스트와 이미지 간의 연속적이고 양방향 상호작용을 가능케 하는 병렬 멀티모달 확산 프레임워크 MMaDA-Parallel을 제안합니다. MMaDA-Parallel은 지도된 세밀 조정으로 학습되며, 그 후에 Semantic 보상을 적용하여 경로 상의 교차 모달 일관성을 강제하는 새로운 ParaRL을 통해 추가로 최적화됩니다. 실험결과, 우리 모델이 상태-of-the-art 모델 Bagel과 비교해 ParaBench의 출력 정렬에서 6.9\\% 향상을 달성하여, 생각을 고려한 이미지 합성을 위한 더 견고한 패러다임을 확립하는 것을 입증합니다. 우리의 코드는 https://github.com/tyfeld/MMaDA-Parallel에서 오픈소스로 제공됩니다."
+    },
+    "summary": "1. 기존의 순차적 방법론의 한계를 분석한 ParaBench를 통해, 텍스트와 이미지 간의 불일치로 인한 성능 저하를 확인함.\n2. MMaDA-Parallel은 텍스트와 이미지 사이의 연속적이고 양방향 상호작용을 가능케 하며, ParaRL을 통해 교차 모달 일관성을 강화함.\n3. 실험 결과, MMaDA-Parallel은 상태-of-the-art 모델 Bagel에 비해 6.9\\% 향상된 출력 정렬을 보이며, 생각을 고려한 이미지 합성을 위한 견고한 패러다임을 제시함.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models",
+    "abstract": "Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constraints, is crucial for real-world applications. Prior work proposes recurrent transformers, which allocate a fixed number of extra iterations per token to improve generation quality. After the first, standard forward pass, instead of verbalization, last-layer hidden states are fed back as inputs for additional iterations to refine token predictions. Yet we identify a latent overthinking phenomenon: easy token predictions that are already correct after the first pass are sometimes revised into errors in additional iterations. To address this, we propose Think-at-Hard (TaH), a dynamic latent thinking method that iterates deeper only at hard tokens. It employs a lightweight neural decider to trigger latent iterations only at tokens that are likely incorrect after the standard forward pass. During latent iterations, Low-Rank Adaptation (LoRA) modules shift the LLM objective from general next-token prediction to focused hard-token refinement. We further introduce a duo-causal attention mechanism that extends attention from the token sequence dimension to an additional iteration depth dimension. This enables cross-iteration information flow while maintaining full sequential parallelism. Experiments show that TaH boosts LLM reasoning performance across five challenging benchmarks while maintaining the same parameter count. Compared with baselines that iterate twice for all output tokens, TaH delivers 8.1-11.3% accuracy gains while exempting 94% of tokens from the second iteration. Against strong single-iteration Qwen3 models finetuned with the same data, it also delivers 4.0-5.0% accuracy gains. When allowing less than 3% additional parameters from LoRA and the iteration decider, the gains increase to 8.5-12.6% and 5.3-5.4%, respectively. Our code is available at https://github.com/thu-nics/TaH.",
+    "authors": [
+      "Tianyu Fu",
+      "Yichen You",
+      "Zekai Chen",
+      "Guohao Dai",
+      "Huazhong Yang",
+      "Yu Wang"
+    ],
+    "likes": 52,
+    "published_date": "Nov 11",
+    "url": "https://huggingface.co/papers/2511.08577",
+    "date_collected": "2025-11-20T07:08:12.110940+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "어려운 곳에서 생각하라: 추론 언어 모델 향상을 위한 선택적 잠재적 반복",
+      "abstract": "특히 매개변수 제약 조건 하에서 대규모 언어 모델(Large Language Models, LLMs)의 추론 능력을 향상하는 것은 실제 응용 분야에 중요합니다. 이전 연구에서는 추가 반복을 통해 생성 품질을 향상시키기 위해 각 토큰에 대한 고정된 횟수의 추가 반복을 할당하는 순환 트랜스포머를 제안합니다. 그러나 우리는 잠재적인 과다 생각 현상을 확인했습니다: 첫 번째 패스 후 이미 정확한 쉬운 토큰 예측이 때로는 추가 반복에서 잘못 수정됩니다. 이를 해결하기 위해 우리는 어려운 토큰에서만 더 깊게 반복하는 동적 잠재적 사고 방법인 Think-at-Hard (TaH)를 제안합니다. 이 방법은 표준 전진 패스 이후 추가 반복에서 Token의 예측을 미세 조정하기 위해 마지막 레이어 숨겨진 상태를 입력으로 사용합니다."
+    },
+    "summary": "1. 매개변수 수 제약 하에서 LLM의 추론 능력을 향상시키는 Think-at-Hard (TaH) 방법을 소개함.\n2. TaH는 쉬운 토큰보다는 어려운 토큰에서만 깊은 반복을 수행하여 LLM의 성능을 향상시킴.\n3. Experiments 결과, TaH는 추가 매개변수 비용 없이 LLM의 추론 성능을 향상시키며, 강한 단일 반복 모델보다 우수한 성능을 보임.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning",
+    "abstract": "Large Language Models have shown strong potential as rerankers to enhance the overall performance of RAG systems. However, existing reranking paradigms are constrained by a core theoretical and practical dilemma: Pointwise methods, while simple and highly flexible, evaluate documents independently, making them prone to the Ranking Myopia Trap, overlooking the relative importance between documents. In contrast, Listwise methods can perceive the global ranking context, but suffer from inherent List Rigidity, leading to severe scalability and flexibility issues when handling large candidate sets. To address these challenges, we propose Groupwise, a novel reranking paradigm. In this approach, the query and a group of candidate documents are jointly fed into the model, which performs within-group comparisons to assign individual relevance scores to each document. This design retains the flexibility of Pointwise methods while enabling the comparative capability of Listwise methods. We further adopt GRPO for model training, equipped with a heterogeneous reward function that integrates ranking metrics with a distributional reward aimed at aligning score distributions across groups. To overcome the bottleneck caused by the scarcity of high quality labeled data, we further propose an innovative pipeline for synthesizing high quality retrieval and ranking data. The resulting data can be leveraged not only for training the reranker but also for training the retriever. Extensive experiments validate the effectiveness of our approach. On two reasoning intensive retrieval benchmarks, BRIGHT and R2MED.",
+    "authors": [
+      "Duolin Sun",
+      "Meixiu Long",
+      "Dan Yang",
+      "Yihan Jiao",
+      "Zhehao Tan",
+      "Jie Feng",
+      "Junjie Wang",
+      "Yue Shen",
+      "Peng Wei",
+      "Jian Wang",
+      "Jinjie Gu"
+    ],
+    "likes": 47,
+    "published_date": "Nov 10",
+    "url": "https://huggingface.co/papers/2511.11653",
+    "date_collected": "2025-11-20T07:08:12.112346+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "그룹랭크: 강화학습 기반의 그룹별 다시 순위 지정 패러다임",
+      "abstract": "대형 언어 모델은 RAG 시스템의 전반적인 성능을 향상시키기 위해 재순위 지정기로서의 강력한 잠재력을 보여주었다. 그러나 기존의 재순위 지정 패러다임은 핵심적인 이론적, 실용적 딜레마에 제약을 받고 있다. Pointwise 방법은 각각 독립적으로 문서를 평가하여 문서 간 상대적 중요성을 무시하는 Ranking Myopia Trap에 취약하지만 단순하고 매우 유연하다. 이에 반해 Listwise 방법은 전역 순위 문맥을 인식할 수 있지만 대규모 후보 집합을 다룰 때 심각한 확장성과 유연성 문제를 겪는다. 이러한 과제를 해결하기 위해 그룹별 새로운 재순위 지정 패러다임인 Groupwise를 제안한다. 이 방법에서는 쿼리와 후보 문서 그룹이 모델에 공동으로 공급되며, 그룹 내 비교를 수행하여 각 문서에 개별적으로 관련성 점수를 할당한다. 이 설계는 Pointwise 방법의 유연성을 유지하면서 Listwise 방법의 비교 능력을 가능하게 한다. 우리는 GRPO를 모델 학습에 채택하며, 그룹 간 점수 분포를 조정하기 위한 분산 보상을 포함하는 이질적 보상 함수로 장착했다. 고품질 레이블 데이터 부족으로 인한 병목 현상을 극복하기 위해 고품질 검색 및 순위 데이터를 합성하기 위한 혁신적인 파이프라인을 제안한다. 결과 데이터는 리랭커를 학습하는 데뿐만 아니라 리트리버를 학습하는 데에도 활용될 수 있다. 광범위한 실험은 우리 방법의 효과를 입증했다. BRIGHT와 R2MED 두 가지 추론 중심 검색 벤치마크에서."
+    },
+    "summary": "1. 기존 재순위 지정 방법의 한계를 극복하기 위해 Groupwise라는 새로운 재순위 패러다임을 제안하였다. 이 방법은 Pointwise 방법의 유연성과 Listwise 방법의 비교 능력을 결합하여 글로벌 순위 문맥을 인식한다.\n2. 그룹별 쿼리와 후보 문서를 함께 고려하여 각 문서에 개별적인 관련성 점수를 할당하는 그룹 내 비교 방법을 도입하였다. 이는 문서 간 상대적 중요성을 고려하면서 평가를 진행한다.\n3. 레이블된 데이터의 부족으로 인한 문제를 해결하기 위해 고품질 검색 및 순위 데이터를 합성하는 파이프라인을 제안하였고, 이를 통해 제안한 방법의 효과를 검증하였다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "title": "InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,\n  Reasoning, and Efficiency",
+    "abstract": "We introduce InternVL 3.5, a new family of open-source multimodal models that\nsignificantly advances versatility, reasoning capability, and inference\nefficiency along the InternVL series. A key innovation is the Cascade\nReinforcement Learning (Cascade RL) framework, which enhances reasoning through\na two-stage process: offline RL for stable convergence and online RL for\nrefined alignment. This coarse-to-fine training strategy leads to substantial\nimprovements on downstream reasoning tasks, e.g., MMMU and MathVista. To\noptimize efficiency, we propose a Visual Resolution Router (ViR) that\ndynamically adjusts the resolution of visual tokens without compromising\nperformance. Coupled with ViR, our Decoupled Vision-Language Deployment (DvD)\nstrategy separates the vision encoder and language model across different GPUs,\neffectively balancing computational load. These contributions collectively\nenable InternVL3.5 to achieve up to a +16.0\\% gain in overall reasoning\nperformance and a 4.05times inference speedup compared to its predecessor,\ni.e., InternVL3. In addition, InternVL3.5 supports novel capabilities such as\nGUI interaction and embodied agency. Notably, our largest model, i.e.,\nInternVL3.5-241B-A28B, attains state-of-the-art results among open-source MLLMs\nacross general multimodal, reasoning, text, and agentic tasks -- narrowing the\nperformance gap with leading commercial models like GPT-5. All models and code\nare publicly released.",
+    "authors": [
+      "Weiyun Wang",
+      "Zhangwei Gao",
+      "Lixin Gu",
+      "Hengjun Pu",
+      "Long Cui",
+      "Xingguang Wei",
+      "Zhaoyang Liu",
+      "Linglin Jing",
+      "Shenglong Ye",
+      "Jie Shao",
+      "Zhaokai Wang",
+      "Zhe Chen",
+      "Hongjie Zhang",
+      "Ganlin Yang",
+      "Haomin Wang",
+      "Qi Wei",
+      "Jinhui Yin",
+      "Wenhao Li",
+      "Erfei Cui",
+      "Guanzhou Chen",
+      "Zichen Ding",
+      "Changyao Tian"
+    ],
+    "likes": 108,
+    "published_date": "Aug 25",
+    "url": "https://huggingface.co/papers/2508.18265",
+    "date_collected": "2025-08-27T07:07:22.434567+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "InternVL3.5: 다재다능성, 추론 능력, 효율성을 높이는 오픈소스 다모델의 진보",
+      "abstract": "우리는 InternVL 3.5를 소개합니다. 이는 다양성, 추론 능력, 추론 효율성을 크게 향상시키는 새로운 오픈소스 다모델 계열입니다. 주요 혁신은 Cascade Reinforcement Learning (Cascade RL) 프레임워크로, 안정적 수렴을 위한 오프라인 RL 및 정교한 맞춤을 위한 온라인 RL을 통해 추론을 향상시킵니다."
+    },
+    "summary": "1. InternVL 3.5는 Cascade Reinforcement Learning (Cascade RL) 프레임워크를 통해 추론 능력을 향상시키는데 큰 성과를 보이며, Visual Resolution Router (ViR) 및 Decoupled Vision-Language Deployment (DvD) 전략을 통해 추론 태스크에서 큰 향상을 이끌어냅니다.\n2. 이 모델은 이전 버전(InternVL3) 대비 +16.0%의 전체 추론 성능 향상과 4.05배의 추론 속도 향상을 달성하며, GUI 상호작용 및 실체 기능과 같은 새로운 능력을 지원합니다.\n3. 최대 모델 InternVL 3.5-241B-A28B는 오픈소스 다이모델 중 최상의 결과를 달성하며, 상용 모델인 GPT-5와의 성능 격차를 좁히고 있습니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains\n  RLVR",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as\na key paradigm for post-training Large Language Models (LLMs), particularly for\ncomplex reasoning tasks. However, vanilla RLVR training has been shown to\nimprove Pass@1 performance at the expense of policy entropy, leading to reduced\ngeneration diversity and limiting the Pass@k performance, which typically\nrepresents the upper bound of LLM reasoning capability. In this paper, we\nsystematically analyze the policy's generation diversity from the perspective\nof training problems and find that augmenting and updating training problems\nhelps mitigate entropy collapse during training. Based on these observations,\nwe propose an online Self-play with Variational problem Synthesis (SvS)\nstrategy for RLVR training, which uses the policy's correct solutions to\nsynthesize variational problems while ensuring their reference answers remain\nidentical to the originals. This self-improving strategy effectively maintains\npolicy entropy during training and substantially improves Pass@k compared with\nstandard RLVR, sustaining prolonged improvements and achieving absolute gains\nof 18.3% and 22.8% in Pass@32 performance on the competition-level AIME24 and\nAIME25 benchmarks. Experiments on 12 reasoning benchmarks across varying model\nsizes from 3B to 32B consistently demonstrate the generalizability and\nrobustness of SvS.",
+    "authors": [
+      "Xiao Liang",
+      "Zhongzhi Li",
+      "Yeyun Gong",
+      "Yelong Shen",
+      "Ying Nian Wu",
+      "Zhijiang Guo",
+      "Weizhu Chen"
+    ],
+    "likes": 107,
+    "published_date": "Aug 19",
+    "url": "https://huggingface.co/papers/2508.14029",
+    "date_collected": "2025-08-27T07:07:22.435859+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "Pass@1 이상: 변이 문제 합성과 함께하는 Self-Play가 지속시키는 RLVR",
+      "abstract": "강인한 언어 모델 (LLM) 후 훈련을 위한 강화 학습 및 검증 가능 보상 (RLVR)는 최근에 복잡한 추론 작업을 위한 핵심 패러다임으로 등장했습니다. 그러나 기본 RLVR 훈련은 Pass@1 성능을 향상시켰지만, 정책 엔트로피를 희생하여 생성 다양성을 줄이고 일반적으로 LLM 추론 능력의 상한을 나타내는 Pass@k 성능 제한을 유발하였습니다. 이 논문에서는 훈련 문제 관점에서 정책의 생성 다양성을 체계적으로 분석하여 훈련 문제를 보강하고 업데이트하는 것이 엔트로피 붕괴를 완화하는 데 도움이 된다는 것을 발견했습니다. 이러한 관찰에 기초하여 RLVR 훈련을 위한 Self-play with Variational problem Synthesis (SvS) 전략을 제안합니다."
+    },
+    "summary": "1. Pass@k 성능을 획기적으로 향상시키는 RLVR 훈련 전략으로, 문제의 다양성을 유지하고 개선하는 Self-play with Variational problem Synthesis (SvS)가 소개되었습니다.\n2. SvS는 정책의 옳은 해결책을 활용하여 변이 문제를 합성하고, 원본과 동일한 해답을 보장하는 자기 개선 전략을 구현하여 훈련 중에 정책 엔트로피를 효과적으로 유지하며, 표준 RLVR 대비 Pass@k 성능을 크게 향상시켰습니다.\n3. 실험 결과는 SvS가 AIME24 및 AIME25의 경쟁 수준 벤치마크에서 Pass@32 성능의 절대 증가율을 18.3% 및 22.8% 달성하며, 3B에서 32B까지 다양한 모델 크기를 대상으로 하는 12개 추론 벤치마크에서 일관되게 일반화되고 견고함을 보여주었습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs",
+    "abstract": "In this paper, we introduce a novel learning paradigm for adaptive Large\nLanguage Model (LLM) agents that eliminates the need for fine-tuning the\nunderlying LLMs. Existing approaches are often either rigid, relying on static,\nhandcrafted reflection workflows, or computationally intensive, requiring\ngradient updates of LLM model parameters. In contrast, our method enables\nlow-cost continual adaptation via memory-based online reinforcement learning.\nWe formalise this as a Memory-augmented Markov Decision Process (M-MDP),\nequipped with a neural case-selection policy to guide action decisions. Past\nexperiences are stored in an episodic memory, either differentiable or\nnon-parametric. The policy is continually updated based on environmental\nfeedback through a memory rewriting mechanism, whereas policy improvement is\nachieved through efficient memory reading (retrieval). We instantiate our agent\nmodel in the deep research setting, namely AgentFly, which attains top-1 on\nGAIA validation (87.88% Pass@3) and 79.40% on the test set. It reaches\n66.6% F1 and 80.4% PM on the DeepResearcher dataset, outperforming the\nstate-of-the-art training-based method, while case-based memory adds 4.7% to\n9.6% absolute points on out-of-distribution tasks. Our approach offers a\nscalable and efficient pathway for developing generalist LLM agents capable of\ncontinuous, real-time learning without gradient updates, advancing machine\nlearning towards open-ended skill acquisition and deep research scenarios. The\ncode is available at https://github.com/Agent-on-the-Fly/AgentFly.",
+    "authors": [
+      "Huichi Zhou",
+      "Yihang Chen",
+      "Siyuan Guo",
+      "Xue Yan",
+      "Kin Hei Lee",
+      "Zihan Wang",
+      "Ka Yiu Lee",
+      "Guchun Zhang",
+      "Kun Shao",
+      "Linyi Yang",
+      "Jun Wang"
+    ],
+    "likes": 82,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16153",
+    "date_collected": "2025-08-27T07:07:22.437257+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "AgentFly: LLM 에이전트 파인튜닝에 파인튜닝 없이",
+      "abstract": "본 논문에서는 기존의 정적이거나 계산량이 많은 Large Language Model (LLM) 에이전트 파인튜닝 방법을 제거하는 새로운 학습 패러다임을 소개합니다. 저희 방법은 저비용의 지속적 적응을 가능케 하며, 메모리 기반 온라인 강화학습을 통해 이루어집니다. 이를 Markov Decision Process (M-MDP)와 신경 케이스 선택 정책으로 형식화하고, 환경 피드백에 근거해 정책을 지속적으로 업데이트하며 메모리 읽기로 정책 향상을 이룹니다. AgentFly로 구현한 모델은 GAIA 검증에서 1위를 차지하고 DeepResearcher 데이터셋에서 최첨단 학습 기반 방법을 능가합니다. 또한, 케이스 기반 메모리는 분야를 넘어 성과를 높입니다."
+    },
+    "summary": "1. 파인튜닝 없이 LLM 에이전트를 파인튜닝하는 새로운 학습 패러다임 소개\n2. 메모리 기반 온라인 강화학습을 통한 저렴한 지속적 적응 가능\n3. AgentFly 모델이 다양한 데이터셋에서 우수한 성과를 보이며, 케이스 기반 메모리가 성능 향상에 긍정적인 영향을 미침",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for\n  Long-Horizon Tasks",
+    "abstract": "Language-guided long-horizon mobile manipulation has long been a grand\nchallenge in embodied semantic reasoning, generalizable manipulation, and\nadaptive locomotion. Three fundamental limitations hinder progress: First,\nalthough large language models have improved spatial reasoning and task\nplanning through semantic priors, existing implementations remain confined to\ntabletop scenarios, failing to address the constrained perception and limited\nactuation ranges of mobile platforms. Second, current manipulation strategies\nexhibit insufficient generalization when confronted with the diverse object\nconfigurations encountered in open-world environments. Third, while crucial for\npractical deployment, the dual requirement of maintaining high platform\nmaneuverability alongside precise end-effector control in unstructured settings\nremains understudied.\n  In this work, we present ODYSSEY, a unified mobile manipulation framework for\nagile quadruped robots equipped with manipulators, which seamlessly integrates\nhigh-level task planning with low-level whole-body control. To address the\nchallenge of egocentric perception in language-conditioned tasks, we introduce\na hierarchical planner powered by a vision-language model, enabling\nlong-horizon instruction decomposition and precise action execution. At the\ncontrol level, our novel whole-body policy achieves robust coordination across\nchallenging terrains. We further present the first benchmark for long-horizon\nmobile manipulation, evaluating diverse indoor and outdoor scenarios. Through\nsuccessful sim-to-real transfer, we demonstrate the system's generalization and\nrobustness in real-world deployments, underscoring the practicality of legged\nmanipulators in unstructured environments. Our work advances the feasibility of\ngeneralized robotic assistants capable of complex, dynamic tasks. Our project\npage: https://kaijwang.github.io/odyssey.github.io/",
+    "authors": [
+      "Kaijun Wang",
+      "Liqin Lu",
+      "Mingyu Liu",
+      "Jianuo Jiang",
+      "Zeju Li",
+      "Bolin Zhang",
+      "Wancai Zheng",
+      "Xinyi Yu",
+      "Hao Chen",
+      "Chunhua Shen"
+    ],
+    "likes": 39,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.08240",
+    "date_collected": "2025-08-27T07:07:22.438623+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "오딧세이: 장기간 작업을 위한 오픈 월드 사분다리 탐험과 조작",
+      "abstract": "언어 안내 기반의 장기간 이동 조작은 존재하는 의미론적 추론, 일반적인 조작, 적응형 이동에서 오랫동안 거대한 도전 과제였습니다. 이 연구에서는 이러한 제한을 극복하기 위해 유연한 네 다리로봇에 조작장치를 갖춘 통합 모바일 조작 프레임워크인 오딧세이를 제시합니다."
+    },
+    "summary": "1. 대규모 언어 모델은 공간 추론 및 작업 계획을 개선했지만 기존 구현은 탁상 시나리오에 국한되어 이동 플랫폼의 제약된 지각 및 제한된 실행 범위에 대응하지 못합니다.\n2. 현재의 조작 전략은 오픈 월드 환경에서 다양한 객체 구성에 직면했을 때 불충분한 일반화를 보입니다.\n3. 무구조 환경에서 높은 플랫폼 기동성을 유지하면서 정밀한 종단단제제 제어를 유지해야 하는 이중 요구 사항은 아직 연구되지 않은 상태입니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance\n  for Text-to-Image Generation",
+    "abstract": "Despite the promising progress of recent autoregressive models in\ntext-to-image (T2I) generation, their ability to handle multi-attribute and\nambiguous prompts remains limited. To address these limitations, existing works\nhave applied chain-of-thought (CoT) to enable stage-aware visual synthesis and\nemployed reinforcement learning (RL) to improve reasoning capabilities.\nHowever, most models provide reward signals only at the end of the generation\nstage. This monolithic final-only guidance makes it difficult to identify which\nstages contribute positively to the final outcome and may lead to suboptimal\npolicies. To tackle this issue, we propose a Visual-Chain of Guidance\n(Visual-CoG) paradigm consisting of three stages: semantic reasoning, process\nrefining, and outcome evaluation, with stage-aware rewards providing immediate\nguidance throughout the image generation pipeline. We further construct a\nvisual cognition benchmark, VisCog-Bench, which comprises four subtasks to\nevaluate the effectiveness of semantic reasoning. Comprehensive evaluations on\nGenEval, T2I-CompBench, and the proposed VisCog-Bench show improvements of 15%,\n5%, and 19%, respectively, demonstrating the superior performance of the\nproposed Visual-CoG. We will release all the resources soon.",
+    "authors": [
+      "Yaqi Li",
+      "Peng Chen",
+      "Mingyang Han",
+      "Bu Pi",
+      "Haoxiang Shi",
+      "Runzhou Zhao",
+      "Yang Yao",
+      "Xuan Zhang",
+      "Jun Song"
+    ],
+    "likes": 33,
+    "published_date": "Aug 25",
+    "url": "https://huggingface.co/papers/2508.18032",
+    "date_collected": "2025-08-27T07:07:22.439933+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "시각-지카이드: 단계별 지도 활용한 강화학습을 통한 텍스트-이미지 생성",
+      "abstract": "최근 자동회귀 모델들이 텍스트-이미지(T2I) 생성에서 기대되는 발전을 보여주고 있음에도, 다중 속성과 모호한 프롬프트를 처리하는 능력은 여전히 제한적입니다. 이러한 한계를 극복하기 위해 기존 연구들은 \"CoT(Chain-of-Thought)\"를 적용하여 단계별 시각적 합성을 가능하게 하고, 강화학습을 사용하여 추론 능력을 향상시켰습니다. 그러나 대부분의 모델들은 생성 단계의 끝에서만 보상 신호를 제공합니다. 이 단절된 최종 지도는 어떤 단계가 최종 결과에 긍정적으로 기여하는지 파악하기 어렵게 만들 수 있으며 최적 정책으로 이끌 수도 있습니다. 이 문제를 해결하기 위해 우리는 세 가지 단계로 이루어진 시각-지카이드(Visual-CoG) 패러다임을 제안합니다: 의미론적 추론, 과정 수정, 결과 평가. 단계별 보상이 이미지 생성 파이프라인 전체에서 즉각적인 지도를 제공합니다. 또한 우리는 시각 인지 벤치마크인 VisCog-Bench를 구축했으며, 시맨틱 추론의 효과를 평가하는 네 가지 서브태스크로 구성되어 있습니다. GenEval, T2I-CompBench, 제안된 VisCog-Bench에 대한 종합적 평가는 각각 15%, 5%, 19%의 향상을 보여주어 제안된 Visual-CoG의 우수한 성능을 입증합니다. 모든 자원은 곧 공개할 예정입니다."
+    },
+    "summary": "1. 최근 텍스트-이미지 생성에서 사용되는 모델들은 다중 속성과 모호한 프롬프트를 처리하는 능력이 제한되어있지만, Visual-CoG는 세 가지 단계로 구성되어 이미지 생성 파이프라인 전체에서 즉각적인 지도를 제공하여 우수한 성능을 보여줍니다.\n2. Visual-CoG는 지적 향상을 위해 의미론적 추론, 과정 수정, 결과 평가의 세 가지 단계가 존재하며, 시각 인지 벤치마크로서 VisCog-Bench를 활용해 효과적인 성능평가를 수행합니다.\n3. 제안된 Visual-CoG는 기존 모델들 대비 GenEval, T2I-CompBench, VisCog-Bench 등에서 15%, 5%, 19%의 향상을 보여 우수한 성능을 입증하며, 모든 자원은 곧 공개될 예정입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MV-RAG: Retrieval Augmented Multiview Diffusion",
+    "abstract": "Text-to-3D generation approaches have advanced significantly by leveraging\npretrained 2D diffusion priors, producing high-quality and 3D-consistent\noutputs. However, they often fail to produce out-of-domain (OOD) or rare\nconcepts, yielding inconsistent or inaccurate results. To this end, we propose\nMV-RAG, a novel text-to-3D pipeline that first retrieves relevant 2D images\nfrom a large in-the-wild 2D database and then conditions a multiview diffusion\nmodel on these images to synthesize consistent and accurate multiview outputs.\nTraining such a retrieval-conditioned model is achieved via a novel hybrid\nstrategy bridging structured multiview data and diverse 2D image collections.\nThis involves training on multiview data using augmented conditioning views\nthat simulate retrieval variance for view-specific reconstruction, alongside\ntraining on sets of retrieved real-world 2D images using a distinctive held-out\nview prediction objective: the model predicts the held-out view from the other\nviews to infer 3D consistency from 2D data. To facilitate a rigorous OOD\nevaluation, we introduce a new collection of challenging OOD prompts.\nExperiments against state-of-the-art text-to-3D, image-to-3D, and\npersonalization baselines show that our approach significantly improves 3D\nconsistency, photorealism, and text adherence for OOD/rare concepts, while\nmaintaining competitive performance on standard benchmarks.",
+    "authors": [
+      "Yosef Dayani",
+      "Omer Benishu",
+      "Sagie Benaim"
+    ],
+    "likes": 28,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16577",
+    "date_collected": "2025-08-27T07:07:22.440965+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "MV-RAG: 검색 보강된 다중뷰 확산",
+      "abstract": "텍스트로 3차원 생성 방법은 사전 훈련된 2차원 확산 사전을 활용하여 큰 품질의 3차원 일관된 결과물을 생산함으로써 상당히 발전했습니다. 그러나 이들은 적도 영역(out-of-domain, OOD)이나 드문 개념을 생성하는 데 종종 실패하여 일관되지 않거나 부정확한 결과물을 낳습니다. 이에 따라, 우리는 MV-RAG를 제안합니다. 이는 먼저 거대한 현장 2차원 데이터베이스로부터 관련 이미지를 검색한 후, 이러한 이미지에 조건화된 다중뷰 확산 모델을 사용하여 일관되고 정확한 다중뷰 결과물을 합성하는 혁신적인 텍스트로 3차원 파이프라인입니다. 이러한 검색 조건 모델의 훈련은 구조화된 다중뷰 데이터 및 다양한 2차원 이미지 컬렉션을 연결하는 혁신적인 하이브리드 전략을 통해 이루어집니다."
+    },
+    "summary": "1. MV-RAG는 텍스트로 3차원을 생성하기 위해 검색된 다중뷰 데이터와 실제 2차원 이미지를 활용하는 새로운 방법론을 제안합니다.\n2. 모델은 다중뷰 데이터로 훈련되며, 2D 이미지 집합을 사용하여 해당되는 보류(view) 예측 목표를 갖춥니다.\n3. 제안된 방법은 표준 벤치마크에서 경쟁력 있는 성능을 유지하면서, 적도/드문 개념에 대한 3D 일관성, 사실적임, 텍스트 지켜줌을 유의하게 향상시킵니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image\n  Generation",
+    "abstract": "We propose T2I-ReasonBench, a benchmark evaluating reasoning capabilities of\ntext-to-image (T2I) models. It consists of four dimensions: Idiom\nInterpretation, Textual Image Design, Entity-Reasoning and\nScientific-Reasoning. We propose a two-stage evaluation protocol to assess the\nreasoning accuracy and image quality. We benchmark various T2I generation\nmodels, and provide comprehensive analysis on their performances.",
+    "authors": [
+      "Kaiyue Sun",
+      "Rongyao Fang",
+      "Chengqi Duan",
+      "Xian Liu",
+      "Xihui Liu"
+    ],
+    "likes": 20,
+    "published_date": "Aug 24",
+    "url": "https://huggingface.co/papers/2508.17472",
+    "date_collected": "2025-08-27T07:07:22.442096+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "T2I-ReasonBench: Reasoning-Informed Text-to-Image Generation의 평가를 위한 벤치마킹",
+      "abstract": "T2I-ReasonBench는 텍스트에서 이미지로의 모델(T2I)의 추론 능력을 평가하는 벤치마크로, 관용 해석, 텍스트 이미지 디자인, 개체 추론, 과학적 추론 네 가지 차원으로 구성되었습니다. 추론 정확성과 이미지 품질을 평가하기 위한 이차 평가 프로토콜을 제안하였고, 다양한 T2I 생성 모델을 벤치마킹하여 그들의 성능에 대한 포괄적인 분석을 제공합니다."
+    },
+    "summary": "1. T2I-ReasonBench는 T2I 모델의 추론 능력을 평가하기 위한 벤치마크로, 이차 평가 프로토콜로 추론 정확성과 이미지 품질을 평가합니다.\n2. 벤치마킹을 통해 다양한 T2I 생성 모델을 평가하고, 그들의 성능에 대한 포괄적인 분석을 제공합니다.\n3. 분석의 차원은 관용 해석, 텍스트 이미지 디자인, 개체 추론, 과학적 추론으로 구성되어 있습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement\n  Learning for General LLM Reasoning",
+    "abstract": "Recent advances in Large Language Models (LLMs) have underscored the\npotential of Reinforcement Learning (RL) to facilitate the emergence of\nreasoning capabilities. Despite the encouraging results, a fundamental dilemma\npersists as RL improvement relies on learning from high-quality samples, yet\nthe exploration for such samples remains bounded by the inherent limitations of\nLLMs. This, in effect, creates an undesirable cycle in which what cannot be\nexplored cannot be learned. In this work, we propose Rubric-Scaffolded\nReinforcement Learning (RuscaRL), a novel instructional scaffolding framework\ndesigned to break the exploration bottleneck for general LLM reasoning.\nSpecifically, RuscaRL introduces checklist-style rubrics as (1) explicit\nscaffolding for exploration during rollout generation, where different rubrics\nare provided as external guidance within task instructions to steer diverse\nhigh-quality responses. This guidance is gradually decayed over time,\nencouraging the model to internalize the underlying reasoning patterns; (2)\nverifiable rewards for exploitation during model training, where we can obtain\nrobust LLM-as-a-Judge scores using rubrics as references, enabling effective RL\non general reasoning tasks. Extensive experiments demonstrate the superiority\nof the proposed RuscaRL across various benchmarks, effectively expanding\nreasoning boundaries under the best-of-N evaluation. Notably, RuscaRL\nsignificantly boosts Qwen-2.5-7B-Instruct from 23.6 to 50.3 on HealthBench-500,\nsurpassing GPT-4.1. Furthermore, our fine-tuned variant on\nQwen3-30B-A3B-Instruct achieves 61.1 on HealthBench-500, outperforming leading\nLLMs including OpenAI-o3.",
+    "authors": [
+      "Yang Zhou",
+      "Sunzhu Li",
+      "Shunyu Liu",
+      "Wenkai Fang",
+      "Jiale Zhao",
+      "Jingwen Yang",
+      "Jianwei Lv",
+      "Kongcheng Zhang",
+      "Yihe Zhou",
+      "Hengtong Lu",
+      "Wei Chen",
+      "Yan Xie",
+      "Mingli Song"
+    ],
+    "likes": 17,
+    "published_date": "Aug 23",
+    "url": "https://huggingface.co/papers/2508.16949",
+    "date_collected": "2025-08-27T07:07:22.443603+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "탐사 병목 극복: Rubric-Scaffolded Reinforcement Learning을 통한 일반적 LLM 추론",
+      "abstract": "최근의 대형 언어 모델(Large Language Models, LLMs)의 발전은 강화 학습(Reinforcement Learning, RL)이 추론 능력의 발현을 용이하게 하는 잠재력을 강조해왔습니다. 그러나 격려하는 결과에도 불구하고 RL 개선은 고품질 샘플로부터 학습에 의존하는데, 이러한 샘플을 찾는 탐사가 LLMs의 본질적 한계로 인해 제한되어 있습니다. 본 논문에서는 Rubric-Scaffolded Reinforcement Learning (RuscaRL)을 제안하여 일반적 LLM 추론을 위한 탐사 병목을 극복하는 새로운 지도 퍼즐링 구조를 디자인했습니다."
+    },
+    "summary": "1. RuscaRL은 추론의 기초가 되는 패턴을 내면화하도록 모델을 유도하기 위해 roll-out 생성 중에 탐사를 위한 명시적 지원으로서 체크리스트 스타일의 루브릭을 도입합니다.\n2. 루브릭을 참조로 사용하여 탐사를 유도하고 촉진하기 위해 모델 훈련 중에 이루어지는 이용에 대한 검증 가능한 보상을 제공합니다.\n3. 실험 결과는 RuscaRL이 다양한 벤치마크에서 우수성을 입증하며, 최고의 N 평가에서 추론 영역을 효과적으로 확장한다는 것을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "EgoTwin: Dreaming Body and View in First Person",
+    "abstract": "While exocentric video synthesis has achieved great progress, egocentric\nvideo generation remains largely underexplored, which requires modeling\nfirst-person view content along with camera motion patterns induced by the\nwearer's body movements. To bridge this gap, we introduce a novel task of joint\negocentric video and human motion generation, characterized by two key\nchallenges: 1) Viewpoint Alignment: the camera trajectory in the generated\nvideo must accurately align with the head trajectory derived from human motion;\n2) Causal Interplay: the synthesized human motion must causally align with the\nobserved visual dynamics across adjacent video frames. To address these\nchallenges, we propose EgoTwin, a joint video-motion generation framework built\non the diffusion transformer architecture. Specifically, EgoTwin introduces a\nhead-centric motion representation that anchors the human motion to the head\njoint and incorporates a cybernetics-inspired interaction mechanism that\nexplicitly captures the causal interplay between video and motion within\nattention operations. For comprehensive evaluation, we curate a large-scale\nreal-world dataset of synchronized text-video-motion triplets and design novel\nmetrics to assess video-motion consistency. Extensive experiments demonstrate\nthe effectiveness of the EgoTwin framework.",
+    "authors": [
+      "Jingqiao Xiu",
+      "Fangzhou Hong",
+      "Yicong Li",
+      "Mengze Li",
+      "Wentao Wang",
+      "Sirui Han",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "likes": 16,
+    "published_date": "Aug 18",
+    "url": "https://huggingface.co/papers/2508.13013",
+    "date_collected": "2025-08-27T07:07:22.444861+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "자아쌍: 일인칭 시점의 몸과 시야를 꿈꾸다",
+      "abstract": "외부에서의 비디오 합성 기술은 큰 발전을 이루었지만, 자아중심 비디오 생성은 여전히 충분히 탐구되지 않았는데, 이는 착용자의 몸의 움직임에 의해 유발되는 카메라 이동 패턴과 함께 일인칭 시점 콘텐츠를 모델링하는 것을 필요로 합니다. 이 간극을 메우기 위해 우리는 결합된 자아중심 비디오와 인간 모션 생성의 독창적인 과제를 제안하는데, 이것은 다음 두 가지 주요 도전에 의해 특징지어집니다: 1) 시점 조정: 생성된 비디오의 카메라 궤적은 인간 모션에서 파생된 머리 궤적과 정확하게 일치해야 합니다; 2) 인과적 상호작용: 합성된 인간 모션은 인접 비디오 프레임 간의 관측된 시각적 동역학과 인과적으로 일치하여야 합니다. 이러한 도전에 대응하기 위해 우리는 확산 트랜스포머 아키텍처를 기반으로 한 결합된 비디오-모션 생성 프레임워크인 자아쌍을 제안합니다. 구체적으로 자아쌍은 머리 중심적 모션 표현을 도입하여 인간 모션을 머리 관절에 고정시키고 비디오와 모션 간의 인과적 상호작용을 명시적으로 포착하는 사이버네틱스에 영감을 받은 상호작용 메커니즘을 수용합니다. 체계적인 평가를 위해 우리는 대규모 실제 세계 데이터셋을 동기화된 텍스트-비디오-모션 세트로 구성하고 비디오-모션 일관성을 평가하기 위한 새로운 지표를 설계합니다. 포괄적인 실험은 자아쌍 프레임워크의 효과를 입증합니다."
+    },
+    "summary": "1. 자아쌍은 일인칭 비디오와 인간 모션을 동시에 생성하는데, 머리 기반 모션 표현과 비디오-모션 간의 인과적 상호작용 메커니즘을 활용하여 시점 조정과 인과적 상호작용 도전에 대처합니다.\n2. 대규모 데이터셋과 새로운 평가 메트릭을 활용하여 자아쌍 프레임워크의 효과를 실험적으로 입증합니다.\n3. 확산 트랜스포머 아키텍처를 기반으로 한 자아쌍은 일인칭 시점 콘텐츠 생성 분야에서 효과적임을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Beyond Memorization: Extending Reasoning Depth with Recurrence, Memory\n  and Test-Time Compute Scaling",
+    "abstract": "Reasoning is a core capability of large language models, yet understanding\nhow they learn and perform multi-step reasoning remains an open problem. In\nthis study, we explore how different architectures and training methods affect\nmodel multi-step reasoning capabilities within a cellular automata framework.\nBy training on state sequences generated with random Boolean functions for\nrandom initial conditions to exclude memorization, we demonstrate that most\nneural architectures learn to abstract the underlying rules. While models\nachieve high accuracy in next-state prediction, their performance declines\nsharply if multi-step reasoning is required. We confirm that increasing model\ndepth plays a crucial role for sequential computations. We demonstrate that an\nextension of the effective model depth with recurrence, memory, and test-time\ncompute scaling substantially enhances reasoning capabilities.",
+    "authors": [
+      "Ivan Rodkin",
+      "Daniil Orel",
+      "Konstantin Smirnov",
+      "Arman Bolatov",
+      "Bilal Elbouardi",
+      "Besher Hassan",
+      "Yuri Kuratov",
+      "Aydar Bulatov",
+      "Preslav Nakov",
+      "Timothy Baldwin",
+      "Artem Shelmanov",
+      "Mikhail Burtsev"
+    ],
+    "likes": 15,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16745",
+    "date_collected": "2025-08-27T07:07:22.446283+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "암기 너머로: 재귀, 메모리 및 테스트 시간 연산 확장을 통한 추론 깊이 확장",
+      "abstract": "추론은 대형 언어 모델의 핵심 능력이지만, 그들이 다단계 추론을 배우고 수행하는 방식을 이해하는 것은 여전히 열린 문제입니다. 본 연구에서는 서로 다른 아키텍처와 교육 방법이 세포 자동기 구조 내에서 모델의 다단계 추론 능력에 어떤 영향을 미치는지 탐구합니다. 암기를 배제하기 위해 임의의 초기 조건을 가진 무작위 부울 함수로 생성된 상태 순서에서 교육함으로써, 대부분의 신경 아키텍처가 기저 규칙들을 추상화하는 방법을 증명합니다. 모델은 다음 상태 예측에서 높은 정확도를 달성하지만, 다단계 추론이 필요한 경우 성능이 급격히 저하됩니다. 연속적인 계산을 위해 모델의 깊이를 증가시키는 것이 핵심 역할을 하는 것을 확인합니다. 우리는 재귀, 메모리 및 테스트 시간 연산 확장을 통해 모델의 효과적인 깊이를 확대함으로써 추론 능력을 크게 향상시키는 것을 입증합니다."
+    },
+    "summary": "1. 다단계 추론을 위한 모델의 성능을 향상시키기 위해 재귀, 메모리, 및 테스트 시간 연산 확장이 효과적임을 입증함.\n2. 신경 아키텍처는 초기 조건을 고려하여 상태 순서에 대한 추상적인 기저 규칙을 학습함.\n3. 모델의 깊이를 증가시킴으로써 순차적 계산에 중요한 영향을 끼침.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  }
+]

@@ -1,0 +1,151 @@
+=== Paper Collection Started at Sun Sep 14 22:06:44 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W38
+URL: https://huggingface.co/papers/week/2025-W38
+Found 10 papers in weekly view
+Fetching likes for: Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing
+Fetching likes for: VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action
+  Model
+Fetching likes for: Why Language Models Hallucinate
+Fetching likes for: Reverse-Engineered Reasoning for Open-Ended Generation
+Fetching likes for: A Survey of Reinforcement Learning for Large Reasoning Models
+Fetching likes for: HuMo: Human-Centric Video Generation via Collaborative Multi-Modal
+  Conditioning
+Fetching likes for: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Fetching likes for: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Fetching likes for: Visual Representation Alignment for Multimodal Large Language Models
+Fetching likes for: SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning
+Selected top 10 papers by likes:
+1. Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing (470 likes)
+2. VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action
+  Model (169 likes)
+3. Why Language Models Hallucinate (157 likes)
+4. Reverse-Engineered Reasoning for Open-Ended Generation (139 likes)
+5. A Survey of Reinforcement Learning for Large Reasoning Models (135 likes)
+6. HuMo: Human-Centric Video Generation via Collaborative Multi-Modal
+  Conditioning (105 likes)
+7. Parallel-R1: Towards Parallel Thinking via Reinforcement Learning (90 likes)
+8. WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents (75 likes)
+9. Visual Representation Alignment for Multimodal Large Language Models (74 likes)
+10. SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning (68 likes)
+Found abstract: Post-training language models (LMs) with reinforcement learning (RL) can
+enhance their complex reaso...
+Processed paper: Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing
+Found abstract: Vision-Language-Action (VLA) models typically bridge the gap between
+perceptual and action spaces by...
+Processed paper: VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action
+  Model
+Found abstract: Like students facing hard exam questions, large language models sometimes
+guess when uncertain, prod...
+Processed paper: Why Language Models Hallucinate
+Found abstract: While the ``deep reasoning'' paradigm has spurred significant advances in
+verifiable domains like ma...
+Processed paper: Reverse-Engineered Reasoning for Open-Ended Generation
+Found abstract: In this paper, we survey recent advances in Reinforcement Learning (RL) for
+reasoning with Large Lan...
+Processed paper: A Survey of Reinforcement Learning for Large Reasoning Models
+Found abstract: Human-Centric Video Generation (HCVG) methods seek to synthesize human videos
+from multimodal inputs...
+Processed paper: HuMo: Human-Centric Video Generation via Collaborative Multi-Modal
+  Conditioning
+Found abstract: Parallel thinking has emerged as a novel approach for enhancing the reasoning
+capabilities of large ...
+Processed paper: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Found abstract: The paradigm of Large Language Models (LLMs) has increasingly shifted toward
+agentic applications, w...
+Processed paper: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Found abstract: Multimodal large language models (MLLMs) trained with visual instruction
+tuning have achieved strong...
+Processed paper: Visual Representation Alignment for Multimodal Large Language Models
+Found abstract: Vision-Language-Action (VLA) models have recently emerged as a powerful
+paradigm for robotic manipul...
+Processed paper: SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Sharing is Caring: Efficient LM Post-Training with Collective RL
+  Experience Sharing
+Paper already exists, checking if translation is complete...
+Update likes: 470  ->  453
+Update date_collected: 2025-09-15T07:06:53.169969+09:00  ->  2025-09-14T07:07:17.021028+09:00
+
+Processing paper 2/10
+Title: VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action
+  Model
+Paper already exists, checking if translation is complete...
+Update likes: 169  ->  163
+Update date_collected: 2025-09-15T07:06:53.171618+09:00  ->  2025-09-14T07:07:17.022673+09:00
+
+Processing paper 3/10
+Title: Why Language Models Hallucinate
+Paper already exists, checking if translation is complete...
+Update likes: 157  ->  156
+Update date_collected: 2025-09-15T07:06:53.172740+09:00  ->  2025-09-14T07:07:17.023752+09:00
+
+Processing paper 4/10
+Title: Reverse-Engineered Reasoning for Open-Ended Generation
+Paper already exists, checking if translation is complete...
+Update likes: 139  ->  139
+Update date_collected: 2025-09-15T07:06:53.174162+09:00  ->  2025-09-14T07:07:17.025160+09:00
+
+Processing paper 5/10
+Title: A Survey of Reinforcement Learning for Large Reasoning Models
+Paper already exists, checking if translation is complete...
+Update likes: 135  ->  131
+Update date_collected: 2025-09-15T07:06:53.176018+09:00  ->  2025-09-14T07:07:17.027010+09:00
+
+Processing paper 6/10
+Title: HuMo: Human-Centric Video Generation via Collaborative Multi-Modal
+  Conditioning
+Paper already exists, checking if translation is complete...
+Update likes: 105  ->  98
+Update date_collected: 2025-09-15T07:06:53.177374+09:00  ->  2025-09-14T07:07:17.028364+09:00
+
+Processing paper 7/10
+Title: Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  90
+Update date_collected: 2025-09-15T07:06:53.178761+09:00  ->  2025-09-14T07:07:17.029745+09:00
+
+Processing paper 8/10
+Title: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Paper already exists, checking if translation is complete...
+Update likes: 75  ->  75
+Update date_collected: 2025-09-15T07:06:53.180313+09:00  ->  2025-09-14T07:07:17.031301+09:00
+
+Processing paper 9/10
+Title: Visual Representation Alignment for Multimodal Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  71
+Update date_collected: 2025-09-15T07:06:53.181813+09:00  ->  2025-09-14T07:07:17.032765+09:00
+
+Processing paper 10/10
+Title: SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  65
+Update date_collected: 2025-09-15T07:06:53.183596+09:00  ->  2025-09-14T07:07:17.034560+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W38.json...
+
+Updating Notion database...
+Updating paper: 공유함은 사랑함의 첫걸음: 집단 강화 학습 경험 공유를 통한 효율적인 LM 사후 훈련 (likes: 453 -> 470)
+Updating paper: VLA-Adapter: 작은 규모의 Vision-Language-Action 모델을 위한 효과적인 패러다임 (likes: 163 -> 169)
+Updating paper: 왜 언어 모델은 환각하는가 (likes: 156 -> 157)
+Paper already exists with same likes count: 역공학화된 추론을 통한 개방형 생성
+Updating paper: 대규모 추론 모델을 위한 강화학습 조사 (likes: 131 -> 135)
+Updating paper: 인간 중심 비디오 생성을 위한 협력적 다중 모달 조건부(HuMo) (likes: 98 -> 105)
+Paper already exists with same likes count: 병렬-R1: 강화 학습을 통한 병렬 사고로의 진화
+Paper already exists with same likes count: 웹탐험가: 장기간 웹 에이전트 훈련을 위한 탐사 및 발전
+Updating paper: 멀티모달 대형 언어 모델을 위한 시각적 표현 정렬 (likes: 71 -> 74)
+Updating paper: SimpleVLA-RL: Reinforcement Learning을 통한 VLA Training 확장 (likes: 65 -> 68)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Sep 14 22:08:02 UTC 2025 ===
+

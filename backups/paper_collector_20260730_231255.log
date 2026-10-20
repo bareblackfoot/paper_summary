@@ -1,0 +1,123 @@
+=== Paper Collection Started at Wed Jul 29 23:03:27 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W31
+URL: https://huggingface.co/papers/week/2026-W31
+Found 10 papers in weekly view
+Fetching likes for: Kimi K3: Open Frontier Intelligence
+Fetching likes for: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Fetching likes for: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Fetching likes for: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Fetching likes for: A New Role for Relevance: Guiding Corpus Interaction in Agentic Search
+Fetching likes for: From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search
+Fetching likes for: Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+Fetching likes for: StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents
+Fetching likes for: ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition
+Fetching likes for: DataPrep-Bench: Benchmarking LLMs as Training Data Preparators
+Selected top 10 papers by likes:
+1. Kimi K3: Open Frontier Intelligence (342 likes)
+2. Progress Reward Modeling for Robotic Learning: A Comprehensive Survey (156 likes)
+3. HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone (134 likes)
+4. JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents (115 likes)
+5. A New Role for Relevance: Guiding Corpus Interaction in Agentic Search (82 likes)
+6. From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search (74 likes)
+7. Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation (70 likes)
+8. StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents (55 likes)
+9. ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition (54 likes)
+10. DataPrep-Bench: Benchmarking LLMs as Training Data Preparators (49 likes)
+Found abstract: We introduce Kimi K3, a 2.8T parameter Mixture-of-Experts model with 104 billion activated parameter...
+Processed paper: Kimi K3: Open Frontier Intelligence
+Found abstract: Robotic learning takes place in dynamic environments with large behavior spaces. A terminal success ...
+Processed paper: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Found abstract: Learning deployable manipulation policies is bottlenecked by the scarcity of data that is both high-...
+Processed paper: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Found abstract: Creative AI is moving from single-step asset generation toward long-horizon multimodal production. A...
+Processed paper: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Found abstract: Relevance is a query-dependent estimate of whether a document or excerpt contains useful evidence. E...
+Processed paper: A New Role for Relevance: Guiding Corpus Interaction in Agentic Search
+Found abstract: Agentic search enables large language models to solve knowledge-intensive tasks by interleaving mult...
+Processed paper: From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search
+Found abstract: On-policy distillation (OPD) adapts diffusion models by querying a teacher along trajectories genera...
+Processed paper: Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+Found abstract: Computer-use agents are usually improved by strengthening perception: better models for reading a sc...
+Processed paper: StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents
+Found abstract: Recovering an editable design file from a raster image is a common and costly bottleneck in modern d...
+Processed paper: ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition
+Found abstract: The quality of training data fundamentally determines the capabilities of large language models (LLM...
+Processed paper: DataPrep-Bench: Benchmarking LLMs as Training Data Preparators
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Kimi K3: Open Frontier Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 342  ->  257
+Update date_collected: 2026-07-30T08:03:36.081042+09:00  ->  2026-07-29T08:07:18.884451+09:00
+
+Processing paper 2/10
+Title: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Paper already exists, checking if translation is complete...
+Update likes: 156  ->  62
+Update date_collected: 2026-07-30T08:03:36.084592+09:00  ->  2026-07-29T08:07:18.895508+09:00
+
+Processing paper 3/10
+Title: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Paper already exists, checking if translation is complete...
+Update likes: 115  ->  102
+Update date_collected: 2026-07-30T08:03:36.092862+09:00  ->  2026-07-29T08:07:18.888603+09:00
+
+Processing paper 5/10
+Title: A New Role for Relevance: Guiding Corpus Interaction in Agentic Search
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  64
+Update date_collected: 2026-07-30T08:03:36.099427+09:00  ->  2026-07-29T08:07:18.892051+09:00
+
+Processing paper 7/10
+Title: Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  61
+Update date_collected: 2026-07-30T08:03:36.102651+09:00  ->  2026-07-29T08:07:18.898671+09:00
+
+Processing paper 8/10
+Title: StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents
+Paper already exists, checking if translation is complete...
+Update likes: 55  ->  51
+Update date_collected: 2026-07-30T08:03:36.106054+09:00  ->  2026-07-29T08:07:18.901997+09:00
+
+Processing paper 9/10
+Title: ReDesign: Recovering Editable Design Structures from Images via Agentic Decomposition
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: DataPrep-Bench: Benchmarking LLMs as Training Data Preparators
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  49
+Update date_collected: 2026-07-30T08:03:36.112839+09:00  ->  2026-07-29T08:07:18.905981+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W31.json...
+
+Updating Notion database...
+Updating paper: Kimi K3: 오픈 프론티어 인텔리전스 (likes: 257 -> 342)
+Updating paper: 로봇 학습을 위한 진행 보상 모델링: 포괄적인 조사 (likes: 62 -> 156)
+Creating new paper: HiFi-UMI: 고품질 UMI 데이터만을 활용한 전달 가능한 조작 정책 학습
+Updating paper: JarvisHub: 캔버스 기반 다중 모달 창조적 에이전트를 위한 개방형 하네스 (likes: 102 -> 115)
+Creating new paper: 관련성의 새로운 역할: Agent 기반 검색에서 코퍼스 상호작용 안내
+Updating paper: 프로프리터리에서 오픈 소스로: 일체적 검색에서 멀티 에이전트 프로토콜 증류를 통한 배포 격차 극복 (likes: 64 -> 74)
+Updating paper: 온-폴리시 확산 디스틸레이션에서 분류기 없는 가이던스 재고 (likes: 61 -> 70)
+Updating paper: StateAct: 프로그램 상태, 픽셀 이전에, 장기간 컴퓨터 사용 에이전트를 위한 (likes: 51 -> 55)
+Creating new paper: 이미지로부터 가치가 있는 디자인 구조를 복구하는 ReDesign: Agentic Decomposition을 통해
+Paper already exists with same likes count: DataPrep-Bench: LLM 학습 데이터 준비자로서의 벤치마킹
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jul 29 23:04:48 UTC 2026 ===
+

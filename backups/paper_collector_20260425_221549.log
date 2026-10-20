@@ -1,0 +1,127 @@
+=== Paper Collection Started at Fri Apr 24 22:21:06 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W17
+URL: https://huggingface.co/papers/week/2026-W17
+Found 10 papers in weekly view
+Fetching likes for: Tstars-Tryon 1.0: Robust and Realistic Virtual Try-On for Diverse Fashion Items
+Fetching likes for: LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model
+Fetching likes for: AgentSPEX: An Agent SPecification and EXecution Language
+Fetching likes for: Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation
+Fetching likes for: OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation
+Fetching likes for: CoInteract: Physically-Consistent Human-Object Interaction Video Synthesis via Spatially-Structured Co-Generation
+Fetching likes for: Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
+Fetching likes for: LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics
+Fetching likes for: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Fetching likes for: OpenGame: Open Agentic Coding for Games
+Selected top 10 papers by likes:
+1. Tstars-Tryon 1.0: Robust and Realistic Virtual Try-On for Diverse Fashion Items (242 likes)
+2. LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model (221 likes)
+3. AgentSPEX: An Agent SPecification and EXecution Language (153 likes)
+4. Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation (94 likes)
+5. OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation (84 likes)
+6. CoInteract: Physically-Consistent Human-Object Interaction Video Synthesis via Spatially-Structured Co-Generation (81 likes)
+7. Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence (78 likes)
+8. LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics (75 likes)
+9. Elucidating the SNR-t Bias of Diffusion Probabilistic Models (72 likes)
+10. OpenGame: Open Agentic Coding for Games (69 likes)
+Found abstract: Recent advances in image generation and editing have opened new opportunities for virtual try-on. Ho...
+Processed paper: Tstars-Tryon 1.0: Robust and Realistic Virtual Try-On for Diverse Fashion Items
+Found abstract: We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports mult...
+Processed paper: LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model
+Found abstract: Language-model agent systems commonly rely on reactive prompting, in which a single instruction guid...
+Processed paper: AgentSPEX: An Agent SPecification and EXecution Language
+Found abstract: Few-step generation has been a long-standing goal, with recent one-step generation methods exemplifi...
+Processed paper: Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation
+Found abstract: Chain-of-Thought (CoT) reasoning has become a powerful driver of trajectory prediction in VLA-based ...
+Processed paper: OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation
+Found abstract: Synthesizing human--object interaction (HOI) videos has broad practical value in e-commerce, digital...
+Processed paper: CoInteract: Physically-Consistent Human-Object Interaction Video Synthesis via Spatially-Structured Co-Generation
+Found abstract: Large language models are increasingly expected to serve as general-purpose agents that interact wit...
+Processed paper: Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
+Found abstract: Comprehensive understanding of time series remains a significant challenge for Large Language Models...
+Processed paper: LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics
+Found abstract: Diffusion Probabilistic Models have demonstrated remarkable performance across a wide range of gener...
+Processed paper: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Found abstract: Game development sits at the intersection of creative design and intricate software engineering, dem...
+Processed paper: OpenGame: Open Agentic Coding for Games
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Tstars-Tryon 1.0: Robust and Realistic Virtual Try-On for Diverse Fashion Items
+Paper already exists, checking if translation is complete...
+Update likes: 242  ->  226
+Update date_collected: 2026-04-25T07:21:16.629069+09:00  ->  2026-04-24T07:21:41.397047+09:00
+
+Processing paper 2/10
+Title: LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model
+Paper already exists, checking if translation is complete...
+Update likes: 221  ->  207
+Update date_collected: 2026-04-25T07:21:16.631484+09:00  ->  2026-04-24T07:21:41.399367+09:00
+
+Processing paper 3/10
+Title: AgentSPEX: An Agent SPecification and EXecution Language
+Paper already exists, checking if translation is complete...
+Update likes: 153  ->  53
+Update date_collected: 2026-04-25T07:21:16.633341+09:00  ->  2026-04-24T07:21:41.414904+09:00
+
+Processing paper 4/10
+Title: Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  94
+Update date_collected: 2026-04-25T07:21:16.635141+09:00  ->  2026-04-24T07:21:41.401160+09:00
+
+Processing paper 5/10
+Title: OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation
+Paper already exists, checking if translation is complete...
+Update likes: 84  ->  80
+Update date_collected: 2026-04-25T07:21:16.637672+09:00  ->  2026-04-24T07:21:41.405336+09:00
+
+Processing paper 6/10
+Title: CoInteract: Physically-Consistent Human-Object Interaction Video Synthesis via Spatially-Structured Co-Generation
+Paper already exists, checking if translation is complete...
+Update likes: 81  ->  80
+Update date_collected: 2026-04-25T07:21:16.639265+09:00  ->  2026-04-24T07:21:41.402790+09:00
+
+Processing paper 7/10
+Title: Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 78  ->  77
+Update date_collected: 2026-04-25T07:21:16.641689+09:00  ->  2026-04-24T07:21:41.407741+09:00
+
+Processing paper 8/10
+Title: LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  72
+Update date_collected: 2026-04-25T07:21:16.644919+09:00  ->  2026-04-24T07:21:41.409291+09:00
+
+Processing paper 10/10
+Title: OpenGame: Open Agentic Coding for Games
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  64
+Update date_collected: 2026-04-25T07:21:16.646801+09:00  ->  2026-04-24T07:21:41.411145+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W17.json...
+
+Updating Notion database...
+Updating paper: Tstars-Tryon 1.0: 다양한 패션 아이템을 위한 견고하고 현실적인 가상 시착 시스템 (likes: 226 -> 242)
+Updating paper: LLaDA2.0-Uni: 디퓨전 대형 언어 모델을 활용한 멀티모달 이해 및 생성 통합 (likes: 207 -> 221)
+Updating paper: 에이전트스펙스: 에이전트 명세 및 실행 언어 (likes: 53 -> 153)
+Paper already exists with same likes count: 텍스트를 통한 한 단계 이미지 생성 확장: 판별적 텍스트 표현을 통해
+Updating paper: 비전-언어 설명을 통한 일단계 은닉 추론과 계획 (OneVL) (likes: 80 -> 84)
+Updating paper: 물리적으로 일관된 인간-객체 상호작용 비디오 생성을 위한 CoInteract: 공간적 구조화된 공동 생성을 통한 (likes: 80 -> 81)
+Updating paper: Agent-World: 진화하는 일반 에이전트 지능을 위한 실제 환경 합성의 확장 (likes: 77 -> 78)
+Creating new paper: LLaTiSA: 난이도별 시계열 추론에서 시각 지각에서 의미론으로
+Paper already exists with same likes count: 확산 확률 모델의 SNR-t 편향 해석
+Updating paper: OpenGame: 게임을 위한 오픈 에이전트 코딩 (likes: 64 -> 69)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Apr 24 22:22:13 UTC 2026 ===
+

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📄 오늘의 arXiv Top {{ top|length }}: {{ date }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="{{ prefix }}assets/nuri-mark.svg" type="image/svg+xml">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            color: #333;
+            background: linear-gradient(135deg, #2f80ed 0%, #38bdf8 100%);
+            min-height: 100vh;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ---------- header ---------- */
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+        }
+
+        .header-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .site-logo { height: 58px; width: auto; }
+
+        .header h1 {
+            font-size: 2.4em;
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        .header .subtitle { font-size: 1.1em; color: #666; margin-top: 12px; }
+        .header .subtitle .accent { color: #38bdf8; font-weight: 700; }
+
+        .week-nav-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            padding: 8px 18px;
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.95em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .nav-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(47, 128, 237, 0.4); }
+        .nav-button.disabled { opacity: 0.45; pointer-events: none; }
+
+        .date-dropdown {
+            padding: 9px 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            background: white;
+            color: #333;
+            font-size: 0.95em;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        .date-dropdown:hover, .date-dropdown:focus { border-color: #2f80ed; outline: none; }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 26px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item { text-align: center; min-width: 72px; padding: 6px 12px; border-radius: 12px; border: 2px solid transparent; }
+
+        .cat-stat { cursor: pointer; transition: all 0.2s ease; }
+        .cat-stat:hover { background: #eef6ff; border-color: #2f80ed40; transform: translateY(-2px); }
+        .cat-stat.active { background: #e3f0ff; border-color: #2f80ed; box-shadow: 0 4px 14px rgba(47, 128, 237, 0.25); }
+
+        .stat-number {
+            font-size: 1.9em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label { font-size: 0.85em; color: #888; margin-top: 3px; }
+
+        .pipeline-note { margin-top: 18px; font-size: 0.85em; color: #999; }
+
+        /* ---------- filter ---------- */
+        .filter-section { padding: 22px 25px; margin-bottom: 30px; border-radius: 15px; }
+
+        .filter-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 14px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+
+        .category-filter {
+            padding: 7px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            background: white;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-size: 0.88em;
+            font-weight: 500;
+            font-family: inherit;
+        }
+        .category-filter:hover { border-color: #2f80ed; color: #2f80ed; }
+        .category-filter.active {
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            color: white;
+            border-color: #2f80ed;
+        }
+
+        .filter-controls { display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
+
+        .clear-filters {
+            padding: 7px 15px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            color: #666;
+            cursor: pointer;
+            font-size: 0.88em;
+            font-family: inherit;
+        }
+        .clear-filters:hover { background: #e9ecef; }
+
+        .filter-count { color: #666; font-size: 0.88em; }
+
+        /* ---------- paper cards ---------- */
+        .paper-list { display: flex; flex-direction: column; gap: 28px; }
+
+        .paper-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 26px 28px 22px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .paper-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); }
+
+        .paper-rank {
+            position: absolute;
+            top: -12px;
+            left: 22px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            min-width: 36px;
+            height: 36px;
+            padding: 0 8px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(238, 90, 36, 0.4);
+        }
+        .paper-card:nth-child(1) .paper-rank,
+        .paper-card:nth-child(2) .paper-rank,
+        .paper-card:nth-child(3) .paper-rank {
+            background: linear-gradient(45deg, #f9a825, #ff6f00);
+            box-shadow: 0 4px 12px rgba(255, 111, 0, 0.45);
+        }
+
+        .score-badge {
+            position: absolute;
+            top: -12px;
+            right: 22px;
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 18px;
+            font-weight: 700;
+            font-size: 1em;
+            box-shadow: 0 4px 12px rgba(47, 128, 237, 0.45);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .paper-title {
+            font-size: 1.25em;
+            font-weight: bold;
+            color: #2c3e50;
+            line-height: 1.45;
+            margin: 14px 0 10px;
+            word-break: keep-all;
+        }
+        .paper-title a { color: inherit; text-decoration: none; }
+        .paper-title a:hover {
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .paper-categories { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+
+        .category-tag {
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #2f80ed20, #38bdf820);
+            color: #2f80ed;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            border: 1px solid #2f80ed30;
+        }
+
+        .robot-tag {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+            background: linear-gradient(135deg, #4caf5022, #81c78422);
+            color: #2e7d32;
+            border: 1px solid #4caf5040;
+        }
+
+        .venue-tag {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+            background: linear-gradient(135deg, #ff980022, #ffb74d22);
+            color: #e65100;
+            border: 1px solid #ff980040;
+        }
+
+        .arxiv-tag {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            background: #f1f3f5;
+            color: #868e96;
+            border: 1px solid #e9ecef;
+        }
+
+        .paper-meta {
+            font-size: 0.88em;
+            color: #607d8b;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 18px;
+            align-items: center;
+        }
+        .paper-meta .meta-item { display: inline-flex; align-items: center; gap: 6px; }
+        .paper-meta i { color: #9fa8da; }
+
+        .tldr {
+            background: linear-gradient(135deg, #2f80ed14, #38bdf814);
+            border-left: 4px solid #2f80ed;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 4px 0 14px;
+            color: #3b4252;
+            font-size: 0.95em;
+            line-height: 1.7;
+            word-break: keep-all;
+        }
+
+        .paper-figure {
+            display: block;
+            margin: 16px 0 6px;
+            padding: 10px;
+            border: 1px solid rgba(29, 78, 216, 0.12);
+            border-radius: 10px;
+            background: #fff;
+            line-height: 0;
+        }
+        .paper-figure img {
+            display: block;
+            margin: 0 auto;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 480px;
+        }
+
+        .paper-figure a { display: block; }
+        .paper-video video { display: block; width: 100%; max-height: 420px; border-radius: 6px; background: #000; }
+        .paper-figure figcaption a { color: #2f80ed; text-decoration: none; }
+        .paper-figure figcaption {
+            line-height: 1.6;
+            font-size: 0.85em;
+            color: #607d8b;
+            padding: 8px 6px 2px;
+            word-break: keep-all;
+        }
+
+        /* review sections, read top to bottom: problem, method, results, limits, lab */
+        .sec {
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid;
+        }
+        .sec .sec-title {
+            padding: 11px 16px 4px;
+            font-weight: 600;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .sec .sec-body {
+            padding: 2px 18px 14px;
+            font-size: 0.95em;
+            color: #3b4252;
+            line-height: 1.8;
+            white-space: pre-line;
+            word-break: keep-all;
+        }
+
+        .sec-problem { background: linear-gradient(135deg, #f0fbfd 0%, #e8f7fb 100%); border-color: #0891b2; }
+        .sec-problem .sec-title { color: #0e7490; }
+        .sec-core    { background: linear-gradient(135deg, #f5f7ff 0%, #f0f2ff 100%); border-color: #3b82f6; }
+        .sec-core    .sec-title { color: #1d4ed8; }
+        .sec-bench   { background: linear-gradient(135deg, #4caf5012, #81c78412); border-color: #4caf50; }
+        .sec-bench   .sec-title { color: #2e7d32; }
+        .sec-limit   { background: linear-gradient(135deg, #fff8f0 0%, #fff3e0 100%); border-color: #ff9800; }
+        .sec-limit   .sec-title { color: #e65100; }
+        .sec-reco    { background: linear-gradient(135deg, #fdf2f6 0%, #fce4ec 100%); border-color: #e91e63; }
+        .sec-reco    .sec-title { color: #c2185b; }
+        .venue-tag.guess { background: #fffaf2; border-style: dashed; }
+
+        .paper-links { display: flex; gap: 8px; margin: 0 0 12px; flex-wrap: wrap; }
+
+        .paper-link {
+            display: inline-flex;
+            padding: 6px 14px;
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.82em;
+            font-weight: 500;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            align-items: center;
+            gap: 8px;
+        }
+        .paper-link.secondary { background: white; color: #2f80ed; border: 2px solid #2f80ed50; }
+        .paper-link:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(47, 128, 237, 0.4); }
+
+        /* ---------- synthesis ---------- */
+        .synthesis { padding: 30px 34px; margin-top: 36px; }
+        .synthesis h2 {
+            font-size: 1.35em;
+            margin: 1.6em 0 0.7em;
+            background: linear-gradient(45deg, #2f80ed, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .synthesis h2:first-child { margin-top: 0; }
+        .synthesis h3 { font-size: 1.05em; margin: 1.3em 0 0.5em; color: #2c3e50; }
+        .synthesis p, .synthesis li { color: #4a5568; font-size: 0.95em; word-break: keep-all; }
+        .synthesis ul, .synthesis ol { padding-left: 1.4em; margin: 0.5em 0 1em; }
+        .synthesis li { margin: 0.4em 0; }
+        .synthesis a { color: #2f80ed; text-decoration: none; font-weight: 500; }
+        .synthesis a:hover { text-decoration: underline; }
+        .synthesis strong { color: #2c3e50; }
+
+        /* ---------- screening table ---------- */
+        .screening { padding: 24px 28px; margin-top: 30px; }
+        .screening > details > summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            list-style: none;
+        }
+        .screening > details > summary::-webkit-details-marker { display: none; }
+        .table-wrap { overflow-x: auto; margin-top: 16px; max-height: 640px; overflow-y: auto; border: 1px solid #eceef1; border-radius: 10px; }
+        .screening table { border-collapse: collapse; width: 100%; font-size: 0.85em; }
+        .screening th {
+            background: #f4f5fb;
+            position: sticky;
+            top: 0;
+            padding: 9px 12px;
+            text-align: left;
+            color: #555;
+            white-space: nowrap;
+            border-bottom: 2px solid #e3e6ea;
+        }
+        .screening td { padding: 8px 12px; border-bottom: 1px solid #f0f1f4; vertical-align: top; }
+        .screening td.num { text-align: center; white-space: nowrap; font-weight: 600; color: #2f80ed; }
+        .screening a { color: #2c3e50; text-decoration: none; font-weight: 500; }
+        .screening a:hover { color: #2f80ed; }
+        .screening .reason { color: #777; font-size: 0.95em; }
+
+        footer { text-align: center; color: rgba(255, 255, 255, 0.85); font-size: 0.85em; padding: 30px 10px 10px; }
+        footer a { color: white; font-weight: 600; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .container { padding: 14px; }
+            .header { padding: 24px 18px; }
+            .header h1 { font-size: 1.7em; }
+            .site-logo { height: 42px; }
+            .stats { gap: 14px; }
+            .stat-number { font-size: 1.5em; }
+            .paper-card { padding: 22px 18px 18px; }
+            .paper-figure { padding: 6px; }
+            .paper-figure img { max-height: 320px; }
+            .paper-title { font-size: 1.1em; }
+            .score-badge { font-size: 0.9em; padding: 5px 12px; }
+            .synthesis { padding: 22px 18px; }
+            .screening { padding: 18px 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header glass">
+            <div class="header-title-row">
+                <img class="site-logo" src="{{ prefix }}assets/nuri-mark.svg" alt="NuRI Lab">
+                <h1>오늘의 arXiv Top {{ top|length }}</h1>
+            </div>
+            <p class="subtitle">
+                <span class="accent">{{ date }} ({{ weekday }})</span> ·
+                cs.CV / cs.LG / cs.RO / cs.CL / cs.AI New submissions 전수 평가
+                <br>cross-list · replacement 제외, 중복 병합 · Top {{ top|length }}은 원문까지 읽고 정리
+            </p>
+            <div class="week-nav-buttons">
+                {% if prev_date %}
+                <a class="nav-button" href="{{ prefix }}daily/{{ prev_date }}/"><i class="fas fa-chevron-left"></i> 이전</a>
+                {% else %}
+                <span class="nav-button disabled"><i class="fas fa-chevron-left"></i> 이전</span>
+                {% endif %}
+                <select class="date-dropdown" onchange="if(this.value) location.href='{{ prefix }}daily/' + this.value + '/';">
+                    {% for d in dates %}
+                    <option value="{{ d }}" {% if d == date %}selected{% endif %}>{{ d }}</option>
+                    {% endfor %}
+                </select>
+                {% if next_date %}
+                <a class="nav-button" href="{{ prefix }}daily/{{ next_date }}/">다음 <i class="fas fa-chevron-right"></i></a>
+                {% else %}
+                <span class="nav-button disabled">다음 <i class="fas fa-chevron-right"></i></span>
+                {% endif %}
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">{{ meta.total_new }}</div>
+                    <div class="stat-label">신규 논문</div>
+                </div>
+                {% for cat, n in meta.category_counts.items() %}
+                <div class="stat-item cat-stat" data-cat="{{ cat }}" title="{{ cat }} 논문만 보기">
+                    <div class="stat-number">{{ n }}</div>
+                    <div class="stat-label">{{ cat }}</div>
+                </div>
+                {% endfor %}
+                <div class="stat-item">
+                    <div class="stat-number">{{ top|length }}</div>
+                    <div class="stat-label">정밀 리뷰</div>
+                </div>
+            </div>
+            <p class="pipeline-note">
+                1차 스크리닝 {{ meta.evaluated }}편 ({{ meta.screen_model }}) → Top {{ top|length }} PDF 정밀 리뷰 ({{ meta.deep_model }})
+            </p>
+        </div>
+
+        <div class="filter-section glass">
+            <div class="filter-title"><i class="fas fa-filter"></i> 분야별 필터</div>
+            <div class="category-filters" id="category-filters"></div>
+            <div class="filter-controls">
+                <button class="clear-filters" onclick="clearAllFilters()"><i class="fas fa-times"></i> 모든 필터 해제</button>
+                <div class="filter-count" id="filter-count">전체 {{ top|length }}개 논문 표시 중</div>
+            </div>
+        </div>
+
+        <div class="paper-list" id="paper-list">
+            {% for p in top %}
+            {% set d = p.deep or {} %}
+            {% set v = p.venue_info or {} %}
+            {% set lk = d.links or {} %}
+            <div class="paper-card" data-categories="{{ d.field or '기타' }}" data-arxiv="{{ p.listed_in|join(',') }}">
+                <div class="paper-rank">{{ p.rank }}</div>
+                <div class="score-badge"><i class="fas fa-star"></i> {{ d.score if d else p.screen_score }}점</div>
+
+                <h2 class="paper-title">
+                    <a href="{{ p.abs_url }}" target="_blank">{{ p.title }}</a>
+                </h2>
+
+                <div class="paper-links">
+                    <a href="{{ p.abs_url }}" target="_blank" class="paper-link"><i class="fas fa-external-link-alt"></i> arXiv</a>
+                    <a href="{{ p.pdf_url }}" target="_blank" class="paper-link secondary"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="{{ p.alphaxiv_url or ('https://www.alphaxiv.org/abs/' ~ p.arxiv_id) }}" target="_blank" class="paper-link secondary"><i class="fas fa-book-open"></i> alphaXiv{% if p.alphaxiv_overview %} 요약{% endif %}</a>
+                    {% if lk.project %}<a href="{{ lk.project }}" target="_blank" class="paper-link secondary"><i class="fas fa-globe"></i> 프로젝트 페이지</a>{% endif %}
+                    {% if lk.code %}<a href="{{ lk.code }}" target="_blank" class="paper-link secondary"><i class="fab fa-github"></i> 코드</a>{% endif %}
+                    {% if lk.video %}<a href="{{ lk.video }}" target="_blank" class="paper-link secondary"><i class="fas fa-circle-play"></i> 영상</a>{% endif %}
+                </div>
+
+                <div class="paper-categories">
+                    {% for f in (d.field or '기타').replace('/', ',').split(',') %}
+                    {% if f.strip() %}<span class="category-tag">{{ f.strip() }}</span>{% endif %}
+                    {% endfor %}
+                    <span class="robot-tag"><i class="fas fa-robot"></i> relevance {{ p.robotics_relevance }}/10</span>
+                    {% if v.venue %}<span class="venue-tag{% if v.status == '양식 추정' %} guess{% endif %}" title="{{ v.evidence }}"><i class="fas fa-award"></i>
+                        {% if v.status == '양식 추정' %}{% if v.venue.endswith('양식') %}{{ v.venue }}{% else %}{{ v.venue }} 양식 (추정){% endif %}
+                        {% elif v.status == '표기' %}{{ v.venue }} (comments 표기)
+                        {% else %}{{ v.venue }} {{ v.status }}{% endif %}</span>{% endif %}
+                    <span class="arxiv-tag">{{ p.primary_subject }}</span>
+                </div>
+
+                <div class="paper-meta">
+                    <span class="meta-item"><i class="fas fa-users"></i>
+                        {% if p.authors|length > 8 %}{{ p.authors[:8]|join(', ') }} 외 {{ p.authors|length - 8 }}명
+                        {% else %}{{ p.authors|join(', ') }}{% endif %}
+                    </span>
+                    <span class="meta-item"><i class="fas fa-file-pdf"></i> {{ p.text_source }}</span>
+                    <span class="meta-item"><i class="fas fa-list-check"></i> 1차 {{ p.screen_score }}점</span>
+                </div>
+
+                {% if d.headline or d.tldr %}
+                <div class="tldr">{{ d.headline or d.tldr }}</div>
+                {% endif %}
+
+                {% if p.figure %}
+                <figure class="paper-figure">
+                    <a href="{{ p.abs_url }}" target="_blank">
+                        <img src="{{ prefix }}figures/{{ date }}/{{ p.figure }}"
+                             alt="{{ p.title }} 대표 그림" loading="lazy">
+                    </a>
+                    {% if d.figure_caption %}<figcaption>{{ d.figure_caption }}</figcaption>{% endif %}
+                </figure>
+                {% endif %}
+
+                {% if p.alphaxiv_video %}
+                <figure class="paper-figure paper-video">
+                    <video src="{{ p.alphaxiv_video }}" controls playsinline preload="metadata" muted></video>
+                    <figcaption>{% if d.video_caption %}{{ d.video_caption }} {% endif %}<a href="{{ p.alphaxiv_url }}" target="_blank">영상 출처: alphaXiv 요약</a></figcaption>
+                </figure>
+                {% endif %}
+
+                {% if d.headline %}
+                <div class="sec sec-problem">
+                    <div class="sec-title"><i class="fas fa-circle-question"></i> 무슨 문제인가</div>
+                    <div class="sec-body">{{ d.problem }}</div>
+                </div>
+                <div class="sec sec-core">
+                    <div class="sec-title"><i class="fas fa-gears"></i> 어떻게 푸나</div>
+                    <div class="sec-body">{{ d.method }}</div>
+                </div>
+                <div class="sec sec-bench">
+                    <div class="sec-title"><i class="fas fa-chart-column"></i> 결과</div>
+                    <div class="sec-body">{{ d.results }}</div>
+                </div>
+                <div class="sec sec-limit">
+                    <div class="sec-title"><i class="fas fa-triangle-exclamation"></i> 한계</div>
+                    <div class="sec-body">{{ d.limits }}</div>
+                </div>
+                <div class="sec sec-reco">
+                    <div class="sec-title"><i class="fas fa-bullseye"></i> 누리랩 연구와의 연결</div>
+                    <div class="sec-body">{{ d.lab_relevance }}</div>
+                </div>
+                {% elif d %}
+                {# 2026-10-12 이전 스키마. 추정 학회(venue) 칸은 보여 주지 않음 #}
+                <div class="sec sec-core">
+                    <div class="sec-title"><i class="fas fa-lightbulb"></i> Core Innovation &amp; Methodology</div>
+                    <div class="sec-body">{{ d.core_innovation }}</div>
+                </div>
+                <div class="sec sec-problem">
+                    <div class="sec-title"><i class="fas fa-code-compare"></i> Novelty vs. Prior Works</div>
+                    <div class="sec-body">{{ d.novelty_analysis }}</div>
+                </div>
+                <div class="sec sec-bench">
+                    <div class="sec-title"><i class="fas fa-chart-column"></i> Benchmark Results</div>
+                    <div class="sec-body">{{ d.benchmark_results }}</div>
+                </div>
+                <div class="sec sec-reco">
+                    <div class="sec-title"><i class="fas fa-bullseye"></i> 누리랩 연구와의 연결</div>
+                    <div class="sec-body">{{ d.recommendation }}</div>
+                </div>
+                {% endif %}
+
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if synthesis_html %}
+        <div class="synthesis glass">
+            {{ synthesis_html }}
+        </div>
+        {% endif %}
+
+        <div class="screening glass">
+            <details>
+                <summary><i class="fas fa-table-list"></i> 전체 1차 스크리닝 결과 ({{ screened|length }}편, 점수순) <span style="margin-left:auto; font-size:0.8em; color:#999;">펼치기</span></summary>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>제목</th><th>점수</th><th>🤖</th><th>분야</th><th>한 줄 근거</th></tr>
+                        </thead>
+                        <tbody>
+                            {% for s in screened %}
+                            <tr>
+                                <td class="num">{{ loop.index }}</td>
+                                <td><a href="https://arxiv.org/abs/{{ s.arxiv_id }}" target="_blank">{{ s.title }}</a></td>
+                                <td class="num">{{ s.screen_score }}</td>
+                                <td class="num">{{ s.robotics_relevance }}</td>
+                                <td>{{ s.field }}</td>
+                                <td class="reason">{{ s.reason }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+        </div>
+
+        <footer>
+            생성: {{ meta.generated_at[:16].replace('T', ' ') }} ·
+            <a href="{{ prefix }}daily/{{ date }}/report.md">markdown</a> ·
+            <a href="{{ prefix }}daily/{{ date }}/data.json">JSON</a>
+        </footer>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.paper-card');
+        const allCategories = new Set();
+        cards.forEach(card => {
+            card.dataset.categories.split(',').forEach(c => { if (c.trim()) allCategories.add(c.trim()); });
+        });
+
+        const filtersContainer = document.getElementById('category-filters');
+        let activeFilters = new Set();
+
+        Array.from(allCategories).sort().forEach(category => {
+            const btn = document.createElement('button');
+            btn.className = 'category-filter';
+            btn.textContent = category;
+            btn.onclick = () => {
+                if (activeFilters.has(category)) { activeFilters.delete(category); btn.classList.remove('active'); }
+                else { activeFilters.add(category); btn.classList.add('active'); }
+                filterPapers();
+            };
+            filtersContainer.appendChild(btn);
+        });
+
+        // arXiv 카테고리 필터 (헤더 통계 클릭)
+        let activeArxiv = new Set();
+        document.querySelectorAll('.cat-stat').forEach(el => {
+            el.addEventListener('click', () => {
+                const cat = el.dataset.cat;
+                if (activeArxiv.has(cat)) { activeArxiv.delete(cat); el.classList.remove('active'); }
+                else { activeArxiv.add(cat); el.classList.add('active'); }
+                filterPapers();
+            });
+        });
+
+        function clearAllFilters() {
+            activeFilters.clear();
+            activeArxiv.clear();
+            document.querySelectorAll('.category-filter').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.cat-stat').forEach(b => b.classList.remove('active'));
+            filterPapers();
+        }
+
+        function filterPapers() {
+            let visible = 0;
+            cards.forEach(card => {
+                const cats = card.dataset.categories.split(',').map(c => c.trim());
+                const arxivCats = (card.dataset.arxiv || '').split(',').map(c => c.trim());
+                const fieldOk = activeFilters.size === 0 || cats.some(c => activeFilters.has(c));
+                const arxivOk = activeArxiv.size === 0 || arxivCats.some(c => activeArxiv.has(c));
+                const show = fieldOk && arxivOk;
+                card.style.display = show ? 'block' : 'none';
+                if (show) visible++;
+            });
+            document.getElementById('filter-count').textContent = `${visible}개 논문 표시 중`;
+        }
+    </script>
+</body>
+</html>

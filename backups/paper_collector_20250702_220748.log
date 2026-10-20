@@ -1,0 +1,147 @@
+=== Paper Collection Started at Tue Jul  1 22:07:40 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W27
+URL: https://huggingface.co/papers/week/2025-W27
+Found 10 papers in weekly view
+Fetching likes for: BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing
+Fetching likes for: Ovis-U1 Technical Report
+Fetching likes for: LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs
+Fetching likes for: SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via
+  Multi-Agent Multi-Turn Reinforcement Learning
+Fetching likes for: XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation
+Fetching likes for: VMoBA: Mixture-of-Block Attention for Video Diffusion Models
+Fetching likes for: Calligrapher: Freestyle Text Image Customization
+Fetching likes for: Do Vision-Language Models Have Internal World Models? Towards an Atomic
+  Evaluation
+Fetching likes for: ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models
+Fetching likes for: Listener-Rewarded Thinking in VLMs for Image Preferences
+Selected top 10 papers by likes:
+1. BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing (51 likes)
+2. Ovis-U1 Technical Report (48 likes)
+3. LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs (31 likes)
+4. SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via
+  Multi-Agent Multi-Turn Reinforcement Learning (26 likes)
+5. XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation (26 likes)
+6. VMoBA: Mixture-of-Block Attention for Video Diffusion Models (25 likes)
+7. Calligrapher: Freestyle Text Image Customization (24 likes)
+8. Do Vision-Language Models Have Internal World Models? Towards an Atomic
+  Evaluation (23 likes)
+9. ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models (21 likes)
+10. Listener-Rewarded Thinking in VLMs for Image Preferences (19 likes)
+Found abstract: We present BlenderFusion, a generative visual compositing framework that
+synthesizes new scenes by r...
+Processed paper: BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing
+Found abstract: In this report, we introduce Ovis-U1, a 3-billion-parameter unified model
+that integrates multimodal...
+Processed paper: Ovis-U1 Technical Report
+Found abstract: In this paper, we present LLaVA-Scissor, a training-free token compression
+strategy designed for vid...
+Processed paper: LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs
+Found abstract: Recent advances in reinforcement learning have shown that language models can
+develop sophisticated ...
+Processed paper: SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via
+  Multi-Agent Multi-Turn Reinforcement Learning
+Found abstract: Achieving fine-grained control over subject identity and semantic attributes
+(pose, style, lighting)...
+Processed paper: XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation
+Found abstract: The quadratic complexity of full attention mechanisms poses a significant
+bottleneck for Video Diffu...
+Processed paper: VMoBA: Mixture-of-Block Attention for Video Diffusion Models
+Found abstract: We introduce Calligrapher, a novel diffusion-based framework that
+innovatively integrates advanced t...
+Processed paper: Calligrapher: Freestyle Text Image Customization
+Found abstract: Internal world models (WMs) enable agents to understand the world's state and
+predict transitions, s...
+Processed paper: Do Vision-Language Models Have Internal World Models? Towards an Atomic
+  Evaluation
+Found abstract: Cinematography, the fundamental visual language of film, is essential for
+conveying narrative, emoti...
+Processed paper: ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models
+Found abstract: Training robust and generalizable reward models for human visual preferences
+is essential for aligni...
+Processed paper: Listener-Rewarded Thinking in VLMs for Image Preferences
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing
+Paper already exists, checking if translation is complete...
+Update likes: 51  ->  45
+Update date_collected: 2025-07-02T07:07:48.875203+09:00  ->  2025-07-01T07:08:09.193975+09:00
+
+Processing paper 2/10
+Title: Ovis-U1 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 31  ->  29
+Update date_collected: 2025-07-02T07:07:48.877849+09:00  ->  2025-07-01T07:08:09.195115+09:00
+
+Processing paper 4/10
+Title: SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via
+  Multi-Agent Multi-Turn Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation
+Paper already exists, checking if translation is complete...
+Update likes: 26  ->  23
+Update date_collected: 2025-07-02T07:07:48.880513+09:00  ->  2025-07-01T07:08:09.196370+09:00
+
+Processing paper 6/10
+Title: VMoBA: Mixture-of-Block Attention for Video Diffusion Models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Calligrapher: Freestyle Text Image Customization
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Do Vision-Language Models Have Internal World Models? Towards an Atomic
+  Evaluation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 21  ->  19
+Update date_collected: 2025-07-02T07:07:48.886750+09:00  ->  2025-07-01T07:08:09.197905+09:00
+
+Processing paper 10/10
+Title: Listener-Rewarded Thinking in VLMs for Image Preferences
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W27.json...
+
+Updating Notion database...
+Updating paper: BlenderFusion: 3D-기반 시각 편집 및 생성적 합성 (likes: 45 -> 51)
+Creating new paper: Ovis-U1 기술 보고서
+Updating paper: LLaVA-Scissor: 비디오 LLM을 위한 의미적 연결 구성 요소를 활용한 토큰 압축 (likes: 29 -> 31)
+Creating new paper: SPIRAL: 자기 대결을 통한 0합 게임은 다중 에이전트 다중 턴 강화학습을 통해 추론을 유도합니다
+Updating paper: XVerse: 일관된 다중 주제의 아이덴티티와 의미 속성 제어를 위한 DiT 조절 (likes: 23 -> 26)
+Creating new paper: 비디오 확산 모델을 위한 블록 주의의 혼합 (VMoBA)
+Creating new paper: 캘리그래퍼: 프리스타일 텍스트 이미지 커스터마이징
+Creating new paper: 비전-언어 모델은 내부 세계 모델을 가지고 있을까? 원자적 평가를 향해
+Updating paper: ShotBench: 전문가 수준의 비전-언어에서의 영화 이해 (likes: 19 -> 21)
+Creating new paper: 이미지 선호도를 위한 VLM에서 청취자 보상 사고
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jul  1 22:09:48 UTC 2025 ===
+

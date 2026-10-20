@@ -1,0 +1,308 @@
+[
+  {
+    "title": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
+    "abstract": "LLM agents are expected to act over multiple turns, using search, browsing interfaces, and terminal tools to complete user goals. Yet not every goal is well specified or achievable in the available environment. In such cases, a reliable agent should recognize that further interaction is unlikely to help and abstain from additional tool calls. We define Agentic Abstention, the problem of deciding when an agent should stop acting under uncertainty. Unlike standard LLM abstention, which is usually evaluated as a single-turn answer-or-abstain decision, agentic abstention is a sequential decision problem: an agent can answer, abstain, or gather more information at each turn, and the need to abstain may only become clear after interacting with the environment. We study this problem across web shopping, terminal environments, and question answering, evaluating 13 LLM-as-agent systems and 2 agent scaffolds on more than 28,000 tasks. Our results show that the main challenge is not only whether agents can abstain, but also when they abstain. Some agents never abstain when they should, while others do so only after many unnecessary interactions. This gap is especially large on tasks where the instruction appears feasible until the environment reveals otherwise (e.g., no valid result matches the instruction). We further find that model scale, reasoning, and agent scaffolding affect abstention in different ways, where larger or more capable models sometimes perform worse at timely abstention. Finally, we introduce CONVOLVE, a context engineering method for improving agentic abstention that distills full interaction trajectories into reusable stopping rules. On WebShop, CONVOLVE substantially improves timely abstention without updating model parameters, raising Llama-3.3-70B's timely recall rate from 26.7 to 57.4. Our dataset and code are available at https://lhannnn.github.io/agentic-abstention",
+    "authors": [
+      "Han Luo",
+      "Bingbing Wen",
+      "Lucy Lu Wang"
+    ],
+    "likes": 120,
+    "published_date": "Jun 27",
+    "url": "https://huggingface.co/papers/2606.28733",
+    "date_collected": "2026-07-01T07:33:41.626296+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "의도적 절제: 에이전트들은 행동을 멈출 때를 알까?",
+      "abstract": "LLM 에이전트는 사용자의 목표를 달성하기 위해 여러 차례에 걸쳐 행동하며, 검색, 브라우징 인터페이스, 터미널 도구를 사용합니다. 그러나 모든 목표가 명확하게 정의되거나 주어진 환경에서 달성 가능한 것은 아닙니다. 이와 같은 경우 신뢰할 수 있는 에이전트는 추가 도구 호출로 인한 도움이 더 이상 되지 않을 것을 인지하고 행동을 중단해야 합니다. 우리는 에이전트가 불확실성 하에서 행동 중지를 결정해야 하는 문제인 의도적 절제를 정의합니다. 일반적으로 단일 턴의 응답 또는 절제 결정으로 평가되는 표준 LLM 절제와 달리, 의도적 절제는 순차적 의사 결정 문제입니다. 에이전트는 각 턴마다 답변, 절제 또는 추가 정보 수집을 선택할 수 있으며, 절제가 필요한 경우가 환경과 상호작용 후에만 명확해질 수 있습니다. 우리는 웹 쇼핑, 터미널 환경, 질문 응답 등에서 이 문제를 연구하며, 13개의 LLM-에이전트 시스템과 2개의 에이전트 골조에 대해 28,000개 이상의 작업을 평가합니다. 결과에서 중요한 도전 과제는 에이전트가 절제할 수 있는지뿐만 아니라 언제 절제해야 하는지에 대한 문제입니다. 일부 에이전트는 적절한 때에 절제하지 않으며, 다른 에이전트는 많은 불필요한 상호작용 후에야 절제합니다. 이 간극은 명령이 환경에서 그렇게 보이지 않지만 사실은 그렇지 않은 작업에서 특히 큽니다. 또한, 모델 규모, 추론 및 에이전트 골조가 절제에 다양한 영향을 미침을 발견했습니다. 종종 보다 크거나 더 능숙한 모델이 시기적절한 절제에서 성능이 떨어지는 경우도 있습니다. 마지막으로 CONVOLVE라는 콘텍스트 엔지니어링 방법을 소개합니다. Agentic 절제를 개선하기 위해 전체 상호작용 경로를 재사용 가능한 중지 규칙으로 압축합니다. WebShop에서 CONVOLVE는 모델 매개변수를 업데이트하지 않고 시기적절한 절제를 현저히 개선하며, Llama-3.3-70B의 시기적절한 복귀율을 26.7에서 57.4로 높입니다. 데이터셋과 코드는 https://lhannnn.github.io/agentic-abstention에서 사용 가능합니다."
+    },
+    "summary": "1. LLM 에이전트의 행동 중지 문제를 다룬 연구.\n2. 에이전트가 언제 행동을 멈춰야 하는지 결정하는 것이 주요 도전.\n3. CONVOLVE로 시기적절한 절제를 효과적으로 개선하는 방법을 제안 및 검증.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing",
+    "abstract": "Streaming video editing has made rapid progress, yet practical deployment is still limited by two core issues: maintaining stable backgrounds and non-edited regions over time, and achieving the low latency required for real-time interactive scenarios. Meanwhile, recent streaming video generation methods are mostly developed for synthesis and cannot be directly applied to editing due to the strict preservation requirement and region-specific control. In this work, we present a novel streaming video editing framework that performs causal, frame-by-frame editing with strong content preservation and real-time responsiveness. Our key design is a three-stage distillation pipeline that progressively transfers editing capability from a powerful bidirectional foundation model to an efficient unidirectional streaming editor, enabling stable long-horizon edits without sacrificing visual fidelity. To further support real-time deployment, we introduce an AR-oriented mask cache that reuses region-related computation across frames, substantially reducing redundant processing and accelerating inference. Finally, we establish a dedicated benchmark for streaming video editing. Extensive evaluations demonstrate that our method achieves state-of-the-art visual quality among streaming baselines while drastically boosting inference speed to 12.66 FPS, making it suitable for interactive and augmented reality applications.",
+    "authors": [
+      "Xinyu Wang",
+      "Chongbo Zhao",
+      "Fangneng Zhan",
+      "Yue Ma"
+    ],
+    "likes": 70,
+    "published_date": "Jun 25",
+    "url": "https://huggingface.co/papers/2606.26740",
+    "date_collected": "2026-07-01T07:33:41.628605+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "실시간 확산 기반 스트리밍 비디오 편집을 향하여",
+      "abstract": "스트리밍 비디오 편집은 급속한 발전을 이루었지만, 안정적인 배경과 수정되지 않은 영역을 유지하는 것과 실시간 상호작용 시나리오에 필요한 낮은 지연시간을 달성하는 데 제한이 있다. 이 연구에서는 강력한 내용 보존과 실시간 반응성을 갖춘 인과적인 프레임별 편집을 수행하는 혁신적인 스트리밍 비디오 편집 프레임워크를 제안한다. 우리의 주요 디자인은 강력한 양방향 기반 모델로부터 유용한 단방향 스트리밍 편집기로 편집 기능을 점진적으로 전달하는 세 단계의 정제 파이프라인이다."
+    },
+    "summary": "1. 실시간 상호작용 시나리오에 필요한 낮은 지연시간을 갖춘 스트리밍 비디오 편집 프레임워크를 개발했다.\n2. 강력한 내용 보존과 시각적 충실도를 희생하지 않고 안정적인 장기적 편집을 가능하게 하는 세 단계의 편집 파이프라인을 사용했다.\n3. 새로운 AR-지향 마스크 캐시를 도입하여 프레임 간 영역 관련 계산 재사용으로 중복 처리를 크게 줄이고 추론 속도를 크게 향상시켰다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
+    "abstract": "We introduce Agents-A1, a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level performance by scaling the agent horizon. We investigate agent-horizon scaling from two perspectives: scaling long-horizon trajectories and scaling heterogeneous agent abilities. To support this goal, we build a long-horizon knowledge-action infrastructure that connects external knowledge, actions, observations, and verifier outcomes, producing agentic trajectories with an average length of 45K tokens. Based on this, we train Agents-A1 with a three-stage recipe. First, we perform full-domain supervised fine-tuning to align the base model with broad agentic behaviors. Second, we train domain-level teacher models to capture specialized expertise in each domain. Third, we propose a multi-teacher domain-routed on-policy distillation with salient vocabulary alignment to improve knowledge transfer efficiency across different domains, unifying six heterogeneous domains into one deployable student model. Agents-A1 achieves strong and broad performance for long-horizon agent benchmarks. Compared with 1T-parameter model such as Kimi-K2.6 and DeepSeek-V4-pro, Agents-A1 achieves leading results on SEAL-0 (56.4), IFBench (80.6), HiPhO (46.4), FrontierScience-Olympiad (79.0), and MolBench-Bind (56.8), and remains highly competitive on SciCode (44.3), HLE (47.6) and BrowseComp (75.5). We hope this work provides the community with a practical path for scaling the horizon using a 35B agent that can reach or match the performance of 1T models on long-horizon tasks.",
+    "authors": [
+      "Lei Bai",
+      "Zongsheng Cao",
+      "Yang Chen",
+      "Zhiyao Cui",
+      "Shangheng Du",
+      "Yue Fan",
+      "Shiyang Feng",
+      "Zijie Guo",
+      "Haonan He",
+      "Liang He",
+      "Xiaohan He",
+      "Shuyue Hu",
+      "Yusong Hu",
+      "Songtao Huang",
+      "Yichen Jiang",
+      "Hao Li",
+      "Xin Li",
+      "Dahua Lin",
+      "Weihao Lin",
+      "Fenghua Ling",
+      "Dongrui Liu",
+      "Zhuo Liu"
+    ],
+    "likes": 67,
+    "published_date": "Jun 29",
+    "url": "https://huggingface.co/papers/2606.30616",
+    "date_collected": "2026-07-01T07:33:41.631866+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "파라미터를 확장하지 않고 수평을 넓히다: 35B 에이전트로 조 야 니언 파라미터 성능 달성",
+      "abstract": "본 연구에서는 35B Mixture-of-Experts 에이전트 모델인 에이전트-A1을 소개하며, 에이전트 수평을 확장함으로써 조 페 라 니언 파라미터 수준의 성능에 도달합니다. 우리는 에이전트 수평 확장을 장기적 궤적 및 이질적 에이전트 능력 확장 두 가지 관점에서 조사합니다. 이를 지원하기 위해, 외부 지식, 액션, 관측 및 확인자 결과를 연결하는 장기 지식-액션 인프라를 구축하여 평균 45K 토큰의 에이전트 궤적을 생성합니다. 우리는 이에 기반하여 에이전트-A1을 3단계 레시피로 훈련합니다."
+    },
+    "summary": "1. 에이전트 수평 확장을 통해 35B 에이전트로 1조 파라미터 수준의 성능을 달성합니다.\n2. 다양한 도메인에서 훈련된 여러 교사 모델로 특화된 전문 지식을 캡처하여 통합적인 학생 모델로 훈련합니다.\n3. 에이전트-A1은 장기적 에이전트 벤치마크에서 우수하고 다양한 성능을 달성하며, 1T 모델과 경쟁력 있는 결과를 보입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs",
+    "abstract": "We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprising metrics that are independent of downstream benchmark scores and reveal representational failures that benchmark accuracy masks. Existing evaluations conflate representation quality with model capacity. Therefore, failures cannot be attributed to the representation rather than to the model that processes it. We formalize four functional axioms (Causality, Minimality, Separability, and Stability) and define a quantitative measure for each, computed directly on the representation independently of downstream accuracy. We audit open-weight LLMs across 23 reasoning tasks (e.g., Spatial Reasoning, Factual QA). We find that no candidate satisfies all four axioms simultaneously, that the representations distinguish task type reliably but cannot distinguish between two questions within the same task, and that the representations encode little information beyond what is already present in the input embedding. The failure is consistent across dense, reasoning-distilled, and RL-trained model families, indicating that the gap is structural rather than a property of model size or training procedure.",
+    "authors": [
+      "Fahd Seddik",
+      "Fatemeh Fard"
+    ],
+    "likes": 52,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2606.27378",
+    "date_collected": "2026-07-01T07:33:41.634027+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리",
+      "abstract": "우리는 LLMs에서의 숨은 생각 표현에 대한 공리적 평가 프레임워크를 소개합니다. 이는 하류 벤치마크 점수와 독립적인 측정 항목으로 구성되어 있으며, 벤치마크 정확도가 가리는 표현적 실패를 드러냅니다. 기존 평가는 표현 품질과 모델 용량을 혼동시키고 있습니다. 따라서 실패는 표현에 아니라 그것을 처리하는 모델에 속합니다. 우리는 네 가지 기능적 공리 (인과관계, 최소성, 분리성, 안정성)을 형식화하고, 각각의 양을 정의하며, 하류 정확도와 독립적으로 표현에 직접 계산됩니다. 우리는 23가지 추론 작업 (예: 공간적 추론, 사실 기반 질문응답) 전체에서 오픈 웨이트 LLMs를 감사합니다. 우리는 어떠한 후보도 동시에 네 가지 공리를 모두 만족시키지 않음을 발견하며, 표현은 작업 유형을 신뢰할 수 있게 구별하지만 동일 작업 내에서 두 가지 질문을 구별할 수 없으며, 입력 임베딩에 이미 존재하는 정보를 거의 인코딩합니다. 실패는 밀집, 추론 축약, RL 훈련된 모델 패밀리 전반에 걸쳐 일관되며, 이는 갭이 모델 크기나 훈련 절차의 특성이 아닌 구조적인 것임을 나타냅니다."
+    },
+    "summary": "1. LLMs에서의 생각 표현에 대한 평가 프레임워크 소개\n2. 네 가지 기능적 공리 형식화하고 각각 양적 측정 제시\n3. 다양한 추론 작업에서 오픈 웨이트 LLMs를 통한 실험 결과 및 표현적 실패의 일관성",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+    "abstract": "Video generation models have emerged as a promising paradigm for embodied world simulation. However, both general-domain video generators and robot-specific data fine-tuned models can still produce physically implausible manipulations, including discontinuous motion trajectories and inconsistent robot-object interactions, which limits their reliability as world simulators. Through extensive experiments, we find that such physical instability mainly arises from two factors: deformation of moving objects and implausible spatio-temporal correlations among interacting entities, particularly during contact. Building on this observation, we propose PhysisForcing, a scalable training framework that strengthens physical consistency by focusing supervision on physics-informative regions through joint optimization of pixel-level and semantic-level features. The framework consists of a pixel-level trajectory alignment loss, which supervises DiT features using reference point trajectories, and a semantic-level relational alignment loss, which aligns DiT features with inter-region relations extracted from a frozen video understanding encoder. Extensive experiments on R-Bench, PAI-Bench, and EZS-Bench show that PhysisForcing consistently improves embodied video generation over strong baselines, improving the Wan2.2-I2V-A14B and Cosmos3-Nano base models on R-Bench by 22.3\\% and 9.2\\% (7.1\\% and 3.7\\% over vanilla finetuning), with the Cosmos3-Nano variant attaining the best overall score. Beyond generation, as a world model under the WorldArena action-planner protocol it raises the closed-loop success rate from 16.0\\% to 24.0\\% and further improves downstream policy success, indicating that physically aligned video models yield stronger representations for robotic manipulation.",
+    "authors": [
+      "Peiwen Zhang",
+      "Yufan Deng",
+      "Shangkun Sun",
+      "Juncheng Ma",
+      "Duomin Wang",
+      "Jonas Du",
+      "Zilin Pan",
+      "Ye Huang",
+      "Hao Liang",
+      "Songyan Huang",
+      "Ruihua Zhang",
+      "Enze Xie",
+      "Ming-Yu Liu",
+      "Daquan Zhou"
+    ],
+    "likes": 45,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28128",
+    "date_collected": "2026-07-01T07:33:41.636840+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing",
+      "abstract": "비디오 생성 모델은 행위 세계 시뮬레이션에서 융합하는 유망한 패러다임으로 부상했다. 그러나, 일반 영역 비디오 생성기와 로봇 특정 데이터 미세 조정 모델 모두 불연속한 움직임 궤적과 일관성 없는 로봇-물체 상호작용을 포함한 물리적으로 그럴듯하지 않은 조작을 여전히 생성할 수 있어, 이는 그들을 세계 시뮬레이터로서의 신뢰성을 제한한다. 광범위한 실험을 통해 물리적 불안정성이 주로 이동 물체의 변형과 접촉 시간 동안 이동 엔티티들 간의 불가능한 시공간 상관성에서 비롯되는 것을 발견한다. 이 관찰을 기반으로 우리는 PhysisForcing이라는 확장 가능한 훈련 프레임워크를 제안한다."
+    },
+    "summary": "1. 물리적 불일치로 인한 영상 생성 모델의 한계를 극복하기 위해 PhysisForcing 훈련 프레임워크를 도입하였다.\n2. PhysisForcing은 물리적 일관성을 강화하기 위해 픽셀 수준의 궤적 정렬 손실과 의미 수준의 관계 정렬 손실을 결합한 것으로, 기존 벤치마크 모델들을 향상시킨다.\n3. 실험 결과는 PhysisForcing이 로봇 조작을 위한 더 강력한 표현을 제공하며, WorldArena 행동 계획자 프로토콜에서 닫힌 루프 성공률을 향상시킨다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+    "abstract": "As large language models and harness frameworks continue to advance, agents operating in terminals are increasingly capable of performing a broader range of general computer-use tasks beyond coding. However, existing benchmarks do not adequately evaluate general-purpose terminal computer-use agents (TUAs): general computer-use benchmarks primarily target graphical user interfaces (GUIs), whereas terminal-based benchmarks largely emphasize technical and programming-centric workflows historically native to the shell. We introduce TUA-Bench, a general-purpose benchmark for terminal-use agents. TUA-Bench includes 120 real-world tasks across five task families, covering routine digital activities-including document editing, email management, and live-web information seeking-as well as scientific and engineering workflows co-designed with PhD-level domain experts that require specialized software. This breadth distinguishes TUA-Bench from prior shell-focused or domain-specific benchmarks. Each task is manually designed, runs in a real terminal with a deterministic setup script, and is evaluated by an execution-based scoring protocol. We find that the strongest frontier agent, Claude Code with Claude Opus 4.8 max reasoning effort, achieves 65.8% overall performance, with substantial gaps across both tracks. By providing a broad and realistic evaluation of terminal-use capabilities, TUA-Bench aims to accelerate the transition from narrow, task-specific assistants to general-purpose agents capable of operating reliably across diverse digital environments.",
+    "authors": [
+      "Shoufa Chen",
+      "Luyuan Wang",
+      "Xuan Yang",
+      "Zhiheng Liu",
+      "Yuren Cong",
+      "Yuanfeng Ji",
+      "Feiyan Zhou",
+      "Xiaohui Zhang",
+      "Fanny Yang",
+      "Belinda Zeng"
+    ],
+    "likes": 44,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28480",
+    "date_collected": "2026-07-01T07:33:41.639431+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "일반 목적 터미널 사용 에이전트를 위한 벤치마크: TUA-Bench",
+      "abstract": "대형 언어 모델과 엔진 프레임워크가 발전함에 따라, 터미널에서 작동하는 에이전트들은 코딩 이외의 다양한 컴퓨터 작업을 수행할 수 있는 능력을 점점 더 갖추게 되고 있습니다. 그러나 기존의 벤치마크는 일반 목적의 터미널 컴퓨터 사용 에이전트(TUAs)를 충분히 평가하지 못합니다. 이 논문에서는 제안하는 일반 목적 터미널 사용 에이전트 벤치마크인 TUA-Bench를 소개합니다."
+    },
+    "summary": "1. TUA-Bench는 터미널 사용 에이전트를 위한 일반 목적 벤치마크로, 다양한 현실 세계 작업과 과학 및 공학 작업을 포함한 120가지 작업을 제공합니다.\n2. 각 작업은 실제 터미널에서 수동으로 설계되며 실행 중인 설정 스크립트가 있어 결정적입니다. 실행 중심적 평가 프로토콜에 따라 각 작업이 평가됩니다.\n3. 최고 성능의 남전 코드 에이전트인 Claude Code는 총 65.8%의 성능을 달성했으며, 두 트랙 모두에서 상당한 간극을 보였습니다. TUA-Bench는 터미널 사용 능력을 넓고 현실적으로 평가하여, 한정적이고 작업 특화형 어시스턴트에서 다양한 디지털 환경에서 신뢰성 있게 작동할 수 있는 일반 목적 에이전트로의 전환을 가속화하고 있습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "ReFreeKV: Towards Threshold-Free KV Cache Compression",
+    "abstract": "To reduce memory consumption during LLM inference, a handful of methods have been proposed for KV cache pruning. While these techniques can accomplish lossless memory reduction on many datasets, they often hinge on an under-emphasized condition: an input/domain-specific threshold for KV cache budget needs to be pre-determined to achieve the optimal performance. However, such input-sensitive design may be considerably limited in real-world scenarios, as open-domain inputs span diverse domains, lengths and difficulty levels, without clear boundaries for threshold selection. As a result, the dependence of such input-sensitive threshold can be a fundamental limitation that causes large degradation on arbitrary inputs. In this work, we propose a new objective that lifts the threshold constraints for robust KV compression, advocating for \"threshold-free\" methods that adaptively adjust budget allocation while preserving full-cache performance. We then propose a novel method, ReFreeKV, serving as the first instantiation of this objective. Extensive experiments across 13 datasets with diverse context lengths, task types, and model sizes demonstrate its efficacy and efficiency. Our code is publicly released at https://github.com/Patrick-Ni/ReFreeKV.",
+    "authors": [
+      "Xuanfan Ni",
+      "Liyan Xu",
+      "Chenyang Lyu",
+      "Longyue Wang",
+      "Mo Yu",
+      "Lemao Liu",
+      "Fandong Meng",
+      "Jie Zhou",
+      "Piji Li"
+    ],
+    "likes": 43,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2502.16886",
+    "date_collected": "2026-07-01T07:33:41.641964+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "임계값 없는 KV 캐시 압축을 향하여: ReFreeKV",
+      "abstract": "LLM 추론 동안 메모리 소모를 줄이기 위해 KV 캐시 가지치기 방법이 제안되었습니다. 이러한 기술은 많은 데이터셋에서 메모리 손실 없는 축소를 이룰 수 있지만, 최적 성능을 얻으려면 입력/도메인별 KV 캐시 예산에 대한 임계값이 선행으로 결정되어야 한다는 조건에 의존합니다. 그러나 이러한 입력 민감한 설계는 오픈 도메인 입력이 임의의 입력에 대한 큰 저하를 유발할 수 있는 중대한 제약으로 작용할 수 있습니다. 본 논문에서는 이러한 문제를 해결하기 위해 새로운 목표를 제안하고 '임계값 없는' 방법을 제안합니다. 해당 방법은 예산 할당을 적응적으로 조정하면서 전체 캐시 성능을 유지하는 것을 지지합니다. ReFreeKV로 명명된 새로운 방법을 제안합니다. 서로 다른 문맥 길이, 작업 유형 및 모델 크기를 가진 13개 데이터셋을 대상으로 한 실험을 통해 그 효과와 효율성을 증명합니다. 코드는 https://github.com/Patrick-Ni/ReFreeKV 에서 공개되어 있습니다."
+    },
+    "summary": "1. LLM 추론 중 메모리 사용량을 줄이기 위해 제안된 ReFreeKV는 임계값에 의존하지 않는 새로운 KV 캐시 압축 방법이다.\n2. 이 방법은 예산 할당을 조정하면서 전체 캐시 성능을 유지하여 다양한 데이터셋에서 효과적으로 작동한다.\n3. 실험 결과, ReFreeKV는 다양한 조건에서 효과적이고 효율적으로 동작함이 입증되었다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Qwen-Image-2.0-RL Technical Report",
+    "abstract": "We present Qwen-Image-2.0-RL, a post-training pipeline that applies reinforcement learning from human feedback (RLHF) and on-policy distillation (OPD) to improve both the visual quality and instruction-following capability of the Qwen-Image-2.0 diffusion model. To provide reliable reward signals, we construct task-specific composite reward models by fine-tuning vision-language models with a pointwise scoring paradigm and chain-of-thought reasoning. For text-to-image generation, the reward models cover alignment, aesthetics, and portrait fidelity dimensions. For image editing tasks, the reward system addresses instruction-following accuracy and face identity preservation. Building on this reward system, we develop a scalable GRPO-based RL training framework, incorporating a hybrid classifier-free guidance (CFG) strategy to preserve pre-trained knowledge, prompt curation via intra-group reward range filtering, and per-category reward weight calibration. To merge the task-specialized RL policies for T2I and editing, we propose on-policy distillation as the final training stage, which consolidates multiple teachers into a single student model through trajectory-level velocity matching. Extensive evaluation shows that Qwen-Image-2.0-RL achieves 57.84 overall score on Qwen-Image-Bench (+2.61 over the base model), Elo ratings of 1193 in text-to-image arena (+78) and 1349 in image edit arena (+93), demonstrating consistent gains in aesthetic quality, prompt adherence, and editing accuracy.",
+    "authors": [
+      "Yixian Xu",
+      "Kaiyuan Gao",
+      "Yuxiang Chen",
+      "Yilei Chen",
+      "Zecheng Tang",
+      "Zihao Liu",
+      "Zikai Zhou",
+      "Deqing Li",
+      "Hao Meng",
+      "Kuan Cao",
+      "Jiahao Li",
+      "Jie Zhang",
+      "Liang Peng",
+      "Lihan Jiang",
+      "Ningyuan Tang",
+      "Shengming Yin",
+      "Tianhe Wu",
+      "Xiaoyue Chen",
+      "Yan Shu",
+      "Yanran Zhang",
+      "Yi Wang",
+      "Yu Wu"
+    ],
+    "likes": 42,
+    "published_date": "Jun 25",
+    "url": "https://huggingface.co/papers/2606.27608",
+    "date_collected": "2026-07-01T07:33:41.645207+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "Qwen-Image-2.0-RL 기술 보고서",
+      "abstract": "본 보고서에서는 Qwen-Image-2.0 확산 모델의 시각적 품질과 지시어 준수 능력을 향상시키기 위해 인간 피드백을 통한 강화 학습(RLHF)과 정책 내림술(OPD)을 적용하는 사후 훈련 파이프라인인 Qwen-Image-2.0-RL을 제시합니다."
+    },
+    "summary": "1. 사후 훈련 파이프라인인 Qwen-Image-2.0-RL은 강화 학습과 정책 내림술을 적용하여 시각적 품질과 지시어 준수 능력을 향상시킴.\n2. 신뢰할 수 있는 보상 신호를 제공하기 위해 과업별 복합 보상 모델을 구축하고, 텍스트-이미지 생성 및 이미지 편집 작업에 대한 보상 시스템을 발전시킴.\n3. Qwen-Image-2.0-RL은 시험 결과에서 미적 품질, 지시어 준수, 편집 정확도 등에서 일관된 향상을 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Beyond IID: How General Are Tabular Foundation Models, Really?",
+    "abstract": "Foundation models for predictive machine learning on tabular data have recently gained significant traction in academia and industry. Research communities across disciplines are increasingly evaluating tabular foundation models on diverse datasets and tasks. However, these task- and discipline-specific evaluations remain largely inaccessible to model researchers because benchmark software and evaluation protocols are fragmented. As a result, model researchers rely on standard benchmarks, which are mostly defined for tasks where tabular foundation models already excel. The most challenging scenarios are excluded, limiting meaningful progress in the field by focusing on marginal improvements on IID data rather than on broader, more demanding challenges. To overcome this, we introduce BeyondArena, the first unified holistic benchmark for tabular data that supports diverse task types (IID, temporal, grouped), across sample size and feature dimensionality scales, with diverse feature types (with text, with high cardinality) from a broad range of disciplines. To enable unified benchmarking beyond standard benchmarks, we introduce Data Foundry, a Python framework and metadata schema for curating tabular datasets for predictive machine learning. Our results across 11 models and 142 curated datasets show that existing tabular foundation models excel on tiny- to medium-sized IID data, while traditional tree-based and deep learning models still dominate on non-IID, large, and high-dimensional datasets. BeyondArena guides model research for the most demanding challenges in tabular data, enabling progress towards truly foundational tabular models.",
+    "authors": [
+      "Lennart Purucker",
+      "Andrej Tschalzev",
+      "Nick Erickson",
+      "Gioia Blayer",
+      "David Holzmüller",
+      "Alan Arazi",
+      "Alexander Pfefferle",
+      "Mustafa Tajjar",
+      "Gaël Varoquaux",
+      "Frank Hutter"
+    ],
+    "likes": 36,
+    "published_date": "Jun 29",
+    "url": "https://huggingface.co/papers/2606.30410",
+    "date_collected": "2026-07-01T07:33:41.647737+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "IID 너머: 탭러 데이터 기반 모델의 일반성은 정말로 얼마나 일반적인가?",
+      "abstract": "최근 학계와 산업에서는 탭러 데이터에 대한 예측 기계 학습을 위한 기초 모델이 큰 주목을 받고 있습니다. 하지만 다양한 데이터셋과 작업에서 탭러 기초 모델을 점차적으로 평가하는 연구 커뮤니티가 증가하고 있습니다. 그러나 이러한 작업 및 학제에 특화된 평가들은 대부분 모델 연구자들에게 알기 어렵습니다. 그 결과로 모델 연구자들은 대부분 탭러 기초 모델이 이미 뛰어난 작업들을 위해 정의된 표준 벤치마크에 의존하고 있습니다."
+    },
+    "summary": "1. 탭러 데이터에 대한 기초 모델의 일반화 정도를 평가하기 어려운 점을 지적하며 BeyondArena를 소개.\n2. 기존의 모델은 작은~중간 규모의 IID 데이터에 뛰어나지만, 비-IID, 대규모, 고차원 데이터에서는 전통적인 트리 기반 및 딥러닝 모델이 여전히 우세함을 실험 결과를 통해 보여줌.\n3. BeyondArena는 탭러 데이터에서 가장 요구되는 고난도 도전 과제를 모델 연구에 안내해 참신한 발전을 도모함.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots",
+    "abstract": "We study whether we can learn novel manipulation skills from human actions to a bi-manual robot with parallel grippers. Human action data is cheap, abundant, and diverse, making it one of the most promising resources for scaling up robot learning. Yet transferring skills from humans to robots remains hard: most prior work treats humans as just another bi-manual 6DoF embodiment, where hand-pose estimates are noisy and the contact patterns of human fingers differ fundamentally from those of a parallel gripper. We argue that learning rotation-inclusive action signals from human data is therefore sub-optimal, and instead propose a bridging action representation: the relative wrist translation within the initial head-camera frame, an action space shared by humans and robots. To handle the potential absence of certain action components in different embodiments, we build a π_0-like vision-language-action model with interleaved action tokens and attention masking. On a suite of novel bi-manual manipulation tasks, our bridging action transfers human manipulation knowledge to robots far more effectively than noisy 6DoF human actions and scales with the amount of human data.",
+    "authors": [
+      "Sijin Chen",
+      "Kaixuan Jiang",
+      "Haixin Shi",
+      "Yanhui Wang",
+      "Weiheng Zhong",
+      "Haosheng Li",
+      "Bo Jiang",
+      "Yuxiao Liu",
+      "Xihui Liu"
+    ],
+    "likes": 35,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28133",
+    "date_collected": "2026-07-01T07:33:41.650276+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "인간으로부터 로봇으로의 조작 기술 전이를 위한 다리 역할로서의 번역",
+      "abstract": "본 연구에서는 이원례 그리퍼를 가진 이중손 로봇에게서 새로운 조작 기술을 인간의 행동으로부터 배울 수 있는지 조사합니다. 인간 행동 데이터는 저렴하고 풍부하며 다양하여, 로봇 학습 확장에 있어서 가장 유망한 자원 중 하나로 여겨집니다. 그러나 인간으로부터 로봇으로 기술을 전이하는 것은 여전히 어렵습니다. 대부분의 이전 연구들은 인간을 다른 이원례 6DoF 구현체로만 다루어 왔는데, 손의 포즈 추정은 노이즈가 심하고 인간 손가락의 접촉 패턴은 이중손 그리퍼와 근본적으로 다릅니다. 저희는 인간 데이터로부터 회전 포함된 조작 신호를 학습하는 것이 부적절하다고 주장하며, 대신 다리 역할 표현을 제안합니다: 초기 머리-카메라 프레임 내 상대적인 손목 이동, 인간과 로봇이 공유하는 행동 공간. 다양한 실현체에서 일부 행동 구성요소가 없을 수 있는 가능성에 대처하기 위해, 우리는 상호 작용하는 명령 토큰과 주의 마스킹이 삽입된 π_0 유사한 비전-언어-행동 모델을 구축합니다. 새로운 이원례 조작 과제 모음에서, 우리의 다리 역할은 노이즈가 있는 6DoF 인간 행동보다 훨씬 효과적으로 인간 조작 지식을 로봇에게 전이시키며, 인간 데이터 양에 따라 확장됩니다."
+    },
+    "summary": "1. 인간 행동 데이터로부터 이중손 로봇에 조작 기술을 효과적으로 전이하는 다리 역할 표현을 제안함.\n2. 인간과 로봇이 공유하는 상대적인 손목 이동을 기준으로 하는 명령 모델을 구축하여 인간 데이터 양에 따라 확장.\n3. 6DoF 인간 행동 대신 다리 역할 표현이 로봇 학습에 더욱 효과적이며, 다양한 이원례 조작 과제에서 검증함.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  }
+]

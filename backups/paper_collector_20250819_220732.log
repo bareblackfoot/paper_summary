@@ -1,0 +1,139 @@
+=== Paper Collection Started at Mon Aug 18 22:07:37 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W34
+URL: https://huggingface.co/papers/week/2025-W34
+Found 10 papers in weekly view
+Fetching likes for: SSRL: Self-Search Reinforcement Learning
+Fetching likes for: Thyme: Think Beyond Images
+Fetching likes for: DINOv3
+Fetching likes for: BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining
+Fetching likes for: PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical
+  Register Indexing
+Fetching likes for: XQuant: Breaking the Memory Wall for LLM Inference with KV Cache
+  Rematerialization
+Fetching likes for: TexVerse: A Universe of 3D Objects with High-Resolution Textures
+Fetching likes for: StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image
+  Translation
+Fetching likes for: FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for
+  Audio-Driven Portrait Animation
+Fetching likes for: X-Node: Self-Explanation is All We Need
+Selected top 10 papers by likes:
+1. SSRL: Self-Search Reinforcement Learning (56 likes)
+2. Thyme: Think Beyond Images (55 likes)
+3. DINOv3 (45 likes)
+4. BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining (29 likes)
+5. PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical
+  Register Indexing (18 likes)
+6. XQuant: Breaking the Memory Wall for LLM Inference with KV Cache
+  Rematerialization (14 likes)
+7. TexVerse: A Universe of 3D Objects with High-Resolution Textures (8 likes)
+8. StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image
+  Translation (7 likes)
+9. FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for
+  Audio-Driven Portrait Animation (6 likes)
+10. X-Node: Self-Explanation is All We Need (5 likes)
+Found abstract: We investigate the potential of large language models (LLMs) to serve as
+efficient simulators for ag...
+Processed paper: SSRL: Self-Search Reinforcement Learning
+Found abstract: Following OpenAI's introduction of the ``thinking with images'' concept,
+recent efforts have explore...
+Processed paper: Thyme: Think Beyond Images
+Found abstract: Self-supervised learning holds the promise of eliminating the need for manual
+data annotation, enabl...
+Processed paper: DINOv3
+Found abstract: Recent advances in large language model (LLM) pretraining have shown that
+simply scaling data quanti...
+Processed paper: BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining
+Found abstract: Paper search is an important activity for researchers, typically involving
+using a query with descri...
+Processed paper: PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical
+  Register Indexing
+Found abstract: Although LLM inference has emerged as a critical workload for many downstream
+applications, efficien...
+Processed paper: XQuant: Breaking the Memory Wall for LLM Inference with KV Cache
+  Rematerialization
+Found abstract: We introduce TexVerse, a large-scale 3D dataset featuring high-resolution
+textures. While recent adv...
+Processed paper: TexVerse: A Universe of 3D Objects with High-Resolution Textures
+Found abstract: We introduce StyleMM, a novel framework that can construct a stylized 3D
+Morphable Model (3DMM) base...
+Processed paper: StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image
+  Translation
+Found abstract: Recent advances in audio-driven portrait animation have demonstrated
+impressive capabilities. Howeve...
+Processed paper: FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for
+  Audio-Driven Portrait Animation
+Found abstract: Graph neural networks (GNNs) have achieved state-of-the-art results in
+computer vision and medical i...
+Processed paper: X-Node: Self-Explanation is All We Need
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: SSRL: Self-Search Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Thyme: Think Beyond Images
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: DINOv3
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical
+  Register Indexing
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: XQuant: Breaking the Memory Wall for LLM Inference with KV Cache
+  Rematerialization
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: TexVerse: A Universe of 3D Objects with High-Resolution Textures
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image
+  Translation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for
+  Audio-Driven Portrait Animation
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: X-Node: Self-Explanation is All We Need
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W34.json...
+
+Updating Notion database...
+Creating new paper: SSRL: Self-Search Reinforcement Learning
+Creating new paper: 이미지 너머로 생각하라: Thyme (Think Beyond Images)
+Creating new paper: DINOv3
+Creating new paper: BeyondWeb: Trillion-규모 사전 훈련을 위한 합성 데이터 확장에 대한 교훈
+Creating new paper: PaperRegister: 계층 등록 색인을 통한 유연한 미세한 논문 검색 강화
+Creating new paper: XQuant: LLM 추론을 위한 KV 캐시 Rematerialization으로 메모리 벽 극복
+Creating new paper: TexVerse: 고해상도 텍스처를 갖는 3D 객체의 우주
+Creating new paper: 스타일MM: 텍스트 주도 정렬 이미지 번역을 통한 스타일화된 3D 변형 가능한 얼굴 모델
+Creating new paper: FantasyTalking2: Timestep-Layer Adaptive Preference Optimization을 위한 Audio-Driven Portrait Animation
+Creating new paper: X-Node: 설명은 우리가 필요로 하는 모든 것
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Aug 18 22:09:16 UTC 2025 ===
+

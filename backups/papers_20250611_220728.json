@@ -1,0 +1,263 @@
+[
+  {
+    "title": "Reinforcement Pre-Training",
+    "abstract": "In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling\nparadigm for large language models and reinforcement learning (RL).\nSpecifically, we reframe next-token prediction as a reasoning task trained\nusing RL, where it receives verifiable rewards for correctly predicting the\nnext token for a given context. RPT offers a scalable method to leverage vast\namounts of text data for general-purpose RL, rather than relying on\ndomain-specific annotated answers. By incentivizing the capability of\nnext-token reasoning, RPT significantly improves the language modeling accuracy\nof predicting the next tokens. Moreover, RPT provides a strong pre-trained\nfoundation for further reinforcement fine-tuning. The scaling curves show that\nincreased training compute consistently improves the next-token prediction\naccuracy. The results position RPT as an effective and promising scaling\nparadigm to advance language model pre-training.",
+    "authors": [
+      "Qingxiu Dong",
+      "Li Dong",
+      "Yao Tang",
+      "Tianzhu Ye",
+      "Yutao Sun",
+      "Zhifang Sui",
+      "Furu Wei"
+    ],
+    "likes": 166,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2506.08007",
+    "date_collected": "2025-06-11T10:48:22.379708",
+    "week": "2025-W24",
+    "translation": {
+      "title": "강화 사전 훈련",
+      "abstract": "본 연구에서는 대규모 언어 모델과 강화 학습을 위한 새로운 확장 패러다임으로 강화 사전 훈련(RPT)을 소개합니다. 구체적으로, 다음 토큰 예측을 추론 작업으로 재구성하여 RL을 사용하여 훈련된다. RPT는 도메인별 주석된 정답에 의존하지 않고 대량의 텍스트 데이터를 활용하는 확장 가능한 방법을 제공한다. RPT는 다음 토큰 추론 능력을 장려함으로써 언어 모델링 정확도를 크게 향상시키며, 추가적인 강화 미세 조정을 위한 강력한 사전 훈련 기반을 제공한다. 확장 곡선은 훈련 컴퓨트를 증가시킴에 따라 다음 토큰 예측 정확도가 지속적으로 향상되는 것을 보여준다. 결과는 RPT를 언어 모델 사전 훈련을 발전시키기 위한 효과적이고 유망한 확장 패러다임으로 위치시킨다."
+    },
+    "summary": "1. 강화 사전 훈련(RPT)은 대규모 언어 모델을 위한 새로운 확장 패러다임으로, 다음 토큰 추론 능력을 강화하여 언어 모델링 정확도를 향상시키는 방법을 제시한다.\n2. RPT는 도메인별 주석된 답변에 의존하지 않고 대량의 텍스트 데이터를 기반으로 일반적인 강화 학습에 활용 가능한 확장 가능한 방법을 제공한다.\n3. 실험 결과는 RPT가 언어 모델의 사전 훈련을 진전시키기 위한 효과적이고 유망한 확장 패러다임으로서의 위치를 강조하며, 훈련 컴퓨팅 파워의 증가가 다음 토큰 예측 정확도를 일관되게 향상시킨다."
+  },
+  {
+    "title": "Will It Still Be True Tomorrow? Multilingual Evergreen Question\n  Classification to Improve Trustworthy QA",
+    "abstract": "Large Language Models (LLMs) often hallucinate in question answering (QA)\ntasks. A key yet underexplored factor contributing to this is the temporality\nof questions -- whether they are evergreen (answers remain stable over time) or\nmutable (answers change). In this work, we introduce EverGreenQA, the first\nmultilingual QA dataset with evergreen labels, supporting both evaluation and\ntraining. Using EverGreenQA, we benchmark 12 modern LLMs to assess whether they\nencode question temporality explicitly (via verbalized judgments) or implicitly\n(via uncertainty signals). We also train EG-E5, a lightweight multilingual\nclassifier that achieves SoTA performance on this task. Finally, we demonstrate\nthe practical utility of evergreen classification across three applications:\nimproving self-knowledge estimation, filtering QA datasets, and explaining\nGPT-4o retrieval behavior.",
+    "authors": [
+      "Sergey Pletenev",
+      "Maria Marina",
+      "Nikolay Ivanov",
+      "Daria Galimzianova",
+      "Nikita Krayko",
+      "Mikhail Salnikov",
+      "Vasily Konovalov",
+      "Alexander Panchenko",
+      "Viktor Moskvoretskii"
+    ],
+    "likes": 113,
+    "published_date": "May 27",
+    "url": "https://huggingface.co/papers/2505.21115",
+    "date_collected": "2025-06-11T10:48:22.380995",
+    "week": "2025-W24",
+    "translation": {
+      "title": "내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류",
+      "abstract": "대형 언어 모델 (Large Language Models, LLMs)은 종종 질문 응답 (QA) 작업에서 환각을 일으킵니다. 이에 기여하는 주요하고 아직 탐구되지 않은 요인 중 하나는 질문의 시간적 특성입니다. 질문이 일종인지 (시간이 지나도 답변이 안정적인지) 또는 가변적인지 (답변이 변경되는지) 여부입니다. 본 연구에서는 첫 번째로 시간적 특성 라벨을 갖춘 최초의 다중언어 QA 데이터셋인 EverGreenQA를 소개합니다. EverGreenQA를 사용하여 12가지 최신 LLMs를 평가하여 질문의 시간적 특성을 명시적으로 (언어적 판단을 통해) 또는 암시적으로 (불확실성 신호를 통해) 부호화하는지 확인합니다. 또한 이 작업에 대한 SoTA(Sate-of-The-Art) 성능을 달성하는 경량 다중언어 분류기인 EG-E5를 훈련합니다. 마지막으로, 우리는 불시적 분류의 실용성을 증명하기 위해 자기-지식 추정 개선, QA 데이터셋 필터링, 그리고 GPT-4o 회수 동작 설명과 같은 세 가지 응용 분야에 걸쳐 실험합니다."
+    },
+    "summary": "1. EverGreenQA는 질문의 시간적 특성을 반영한 첫 번째 다중언어 QA 데이터셋으로, LLMs의 성능을 평가하고 EG-E5와 같은 경량 분류기를 훈련하는데 활용합니다.\n2. 시간적 특성에 근거한 분류는 자기-지식 추정 개선, QA 데이터셋 필터링 및 GPT-4o 회수 동작 설명과 같은 다양한 응용 분야에서 유용하게 활용될 수 있음을 보여줍니다.\n3. 다양한 목적을 위해 시간적 특성을 고려한 QA는 LLMs의 성능을 향상시키고, 미래의 질문 응답 엔진에 적용될 수 있는 새로운 가능성을 제시합니다."
+  },
+  {
+    "title": "Lingshu: A Generalist Foundation Model for Unified Multimodal Medical\n  Understanding and Reasoning",
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated impressive\ncapabilities in understanding common visual elements, largely due to their\nlarge-scale datasets and advanced training strategies. However, their\neffectiveness in medical applications remains limited due to the inherent\ndiscrepancies between data and tasks in medical scenarios and those in the\ngeneral domain. Concretely, existing medical MLLMs face the following critical\nlimitations: (1) limited coverage of medical knowledge beyond imaging, (2)\nheightened susceptibility to hallucinations due to suboptimal data curation\nprocesses, (3) lack of reasoning capabilities tailored for complex medical\nscenarios. To address these challenges, we first propose a comprehensive data\ncuration procedure that (1) efficiently acquires rich medical knowledge data\nnot only from medical imaging but also from extensive medical texts and\ngeneral-domain data; and (2) synthesizes accurate medical captions, visual\nquestion answering (VQA), and reasoning samples. As a result, we build a\nmultimodal dataset enriched with extensive medical knowledge. Building on the\ncurated data, we introduce our medical-specialized MLLM: Lingshu. Lingshu\nundergoes multi-stage training to embed medical expertise and enhance its\ntask-solving capabilities progressively. Besides, we preliminarily explore the\npotential of applying reinforcement learning with verifiable rewards paradigm\nto enhance Lingshu's medical reasoning ability. Additionally, we develop\nMedEvalKit, a unified evaluation framework that consolidates leading multimodal\nand textual medical benchmarks for standardized, fair, and efficient model\nassessment. We evaluate the performance of Lingshu on three fundamental medical\ntasks, multimodal QA, text-based QA, and medical report generation. The results\nshow that Lingshu consistently outperforms the existing open-source multimodal\nmodels on most tasks ...",
+    "authors": [
+      "LASA Team",
+      "Weiwen Xu",
+      "Hou Pong Chan",
+      "Long Li",
+      "Mahani Aljunied",
+      "Ruifeng Yuan",
+      "Jianyu Wang",
+      "Chenghao Xiao",
+      "Guizhen Chen",
+      "Chaoqun Liu",
+      "Zhaodonghui Li",
+      "Yu Sun",
+      "Junao Shen",
+      "Chaojun Wang",
+      "Jie Tan",
+      "Deli Zhao",
+      "Tingyang Xu",
+      "Hao Zhang",
+      "Yu Rong"
+    ],
+    "likes": 91,
+    "published_date": "Jun 8",
+    "url": "https://huggingface.co/papers/2506.07044",
+    "date_collected": "2025-06-11T10:48:22.382713",
+    "week": "2025-W24",
+    "translation": {
+      "title": "통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu",
+      "abstract": "다중 모달 대형 언어 모델(MLLMs)은 대규모 데이터셋과 선진한 훈련 전략으로 일반적인 시각 요소를 잘 이해하는 능력을 보여주었습니다. 그러나 의료 응용 분야에서의 효과는 의료 시나리오와 일반 도메인 간 데이터 및 작업의 본성적인 불일치로 인해 제한되어 있습니다."
+    },
+    "summary": "1. 의료 지식을 이미지뿐만 아니라 풍부한 의료 텍스트와 일반 도메인 데이터에서 효과적으로 확보하고 정확한 의료 캡션, 시각 질문 응답(VQA), 추론 샘플을 합성하여 다양한 의료 지식이 풍부한 다중 모달 데이터셋을 구축하였습니다.\n2. Lingshu는 의료 전문화된 MLLM으로, 의료 전문성을 내재시키고 과업 해결 능력을 점진적으로 향상시키기 위해 다단계 훈련을 거칩니다.\n3. MedEvalKit는 다양한 의료 벤치마크를 통합하여 표준화되고 공정하며 효율적인 모델 평가를 위한 통합 평가 프레임워크를 개발하였으며, Lingshu의 성능을 다중 모달 QA, 텍스트 기반 QA, 의료 보고서 생성 세 가지 기본 의료 작업에서 비교평가하였습니다."
+  },
+  {
+    "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices",
+    "abstract": "This paper introduces MiniCPM4, a highly efficient large language model (LLM)\ndesigned explicitly for end-side devices. We achieve this efficiency through\nsystematic innovation in four key dimensions: model architecture, training\ndata, training algorithms, and inference systems. Specifically, in terms of\nmodel architecture, we propose InfLLM v2, a trainable sparse attention\nmechanism that accelerates both prefilling and decoding phases for long-context\nprocessing. Regarding training data, we propose UltraClean, an efficient and\naccurate pre-training data filtering and generation strategy, and UltraChat v2,\na comprehensive supervised fine-tuning dataset. These datasets enable\nsatisfactory model performance to be achieved using just 8 trillion training\ntokens. Regarding training algorithms, we propose ModelTunnel v2 for efficient\npre-training strategy search, and improve existing post-training methods by\nintroducing chunk-wise rollout for load-balanced reinforcement learning and\ndata-efficient tenary LLM, BitCPM. Regarding inference systems, we propose\nCPM.cu that integrates sparse attention, model quantization, and speculative\nsampling to achieve efficient prefilling and decoding. To meet diverse\non-device requirements, MiniCPM4 is available in two versions, with 0.5B and 8B\nparameters, respectively. Sufficient evaluation results show that MiniCPM4\noutperforms open-source models of similar size across multiple benchmarks,\nhighlighting both its efficiency and effectiveness. Notably, MiniCPM4-8B\ndemonstrates significant speed improvements over Qwen3-8B when processing long\nsequences. Through further adaptation, MiniCPM4 successfully powers diverse\napplications, including trustworthy survey generation and tool use with model\ncontext protocol, clearly showcasing its broad usability.",
+    "authors": [
+      "MiniCPM Team",
+      "Chaojun Xiao",
+      "Yuxuan Li",
+      "Xu Han",
+      "Yuzhuo Bai",
+      "Jie Cai",
+      "Haotian Chen",
+      "Wentong Chen",
+      "Xin Cong",
+      "Ganqu Cui",
+      "Ning Ding",
+      "Shengdan Fan",
+      "Yewei Fang",
+      "Zixuan Fu",
+      "Wenyu Guan",
+      "Yitong Guan",
+      "Junshao Guo",
+      "Yufeng Han",
+      "Bingxiang He",
+      "Yuxiang Huang",
+      "Cunliang Kong",
+      "Qiuzuo Li"
+    ],
+    "likes": 62,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2506.07900",
+    "date_collected": "2025-06-11T10:48:22.384587",
+    "week": "2025-W24",
+    "translation": {
+      "title": "미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델",
+      "abstract": "본 논문은 에지 장치를 위해 명시적으로 설계된 매우 효율적인 대형 언어 모델인 미니CPM4를 소개합니다. 우리는 모델 구조, 훈련 데이터, 훈련 알고리즘, 추론 시스템 네 가지 핵심 차원에서 체계적인 혁신을 통해 이 효율성을 달성했습니다."
+    },
+    "summary": "1. 미니CPM4는 모델 구조, 훈련 데이터, 훈련 알고리즘, 추론 시스템의 네 가지 핵심 차원에서 혁신을 통해 에지 장치를 위한 매우 효율적인 대형 언어 모델을 제안한다.\n2. UltraClean과 UltraChat v2를 통한 데이터 필터링 및 생성 전략, ModelTunnel v2를 사용한 효율적인 사전 훈련 전략 탐색, 그리고 CPM.cu를 활용한 효율적인 선행 및 디코딩을 통해 모델의 성능이 향상되었다.\n3. MiniCPM4는 다양한 응용 프로그램을 지원하며, 오픈 소스 모델을 능가하는 놀라운 효과성을 보여주며 특히 MiniCPM4-8B는 긴 시퀀스 처리 시 Qwen3-8B보다 상당한 속도 향상을 보인다."
+  },
+  {
+    "title": "Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety\n  Assurance",
+    "abstract": "Existing safety assurance research has primarily focused on training-phase\nalignment to instill safe behaviors into LLMs. However, recent studies have\nexposed these methods' susceptibility to diverse jailbreak attacks.\nConcurrently, inference scaling has significantly advanced LLM reasoning\ncapabilities but remains unexplored in the context of safety assurance.\nAddressing this gap, our work pioneers inference scaling for robust and\neffective LLM safety against emerging threats. We reveal that conventional\ninference scaling techniques, despite their success in reasoning tasks, perform\npoorly in safety contexts, even falling short of basic approaches like\nBest-of-N Sampling. We attribute this inefficiency to a newly identified\nchallenge, the exploration--efficiency dilemma, arising from the high\ncomputational overhead associated with frequent process reward model (PRM)\nevaluations. To overcome this dilemma, we propose SAFFRON, a novel inference\nscaling paradigm tailored explicitly for safety assurance. Central to our\napproach is the introduction of a multifurcation reward model (MRM) that\nsignificantly reduces the required number of reward model evaluations. To\noperationalize this paradigm, we further propose: (i) a partial supervision\ntraining objective for MRM, (ii) a conservative exploration constraint to\nprevent out-of-distribution explorations, and (iii) a Trie-based key--value\ncaching strategy that facilitates cache sharing across sequences during tree\nsearch. Extensive experiments validate the effectiveness of our method.\nAdditionally, we publicly release our trained multifurcation reward model\n(Saffron-1) and the accompanying token-level safety reward dataset (Safety4M)\nto accelerate future research in LLM safety. Our code, model, and data are\npublicly available at https://github.com/q-rz/saffron , and our project\nhomepage is at https://q-rz.github.io/p/saffron .",
+    "authors": [
+      "Ruizhong Qiu",
+      "Gaotang Li",
+      "Tianxin Wei",
+      "Jingrui He",
+      "Hanghang Tong"
+    ],
+    "likes": 62,
+    "published_date": "Jun 6",
+    "url": "https://huggingface.co/papers/2506.06444",
+    "date_collected": "2025-06-11T10:48:22.385707",
+    "week": "2025-W24",
+    "translation": {
+      "title": "LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구",
+      "abstract": "기존의 안전성 보증 연구는 대부분 안전한 행동을 언어·지식 모형 기계(LLMs)에 채택하는 것에 초점을 맞추어왔다. 그러나 최근 연구에서는 이러한 방법들이 다양한 탈옥 공격에 취약하다는 문제점이 드러났다. 동시에, 추론 확장은 LLM의 추론 능력을 크게 향상시켰지만 안전성 보증 관련 연구에서는 여전히 탐구되지 않은 영역이다. 우리의 연구는 이러한 공백을 채우고, 신규 위협에 대해 견고하고 효과적인 LLM 안전성 추론 확장을 선도한다."
+    },
+    "summary": "1. 기존의 추론 확장 기술은 안전 상황에서의 성능이 미흡하여 새로운 안전 보증 패러다임 SAFFRON이 제안되었다.\n2. 이를 위해 다중 분기 보상 모형(MRM)을 도입하여 필요한 보상 모형 평가 횟수를 현저히 줄였으며, 트리 기반 검색 과정에서 일련의 키-값 캐싱 전략을 용이하게 하는 제안도 포함되었다.\n3. 광범위한 실험 결과가 우리의 방법이 효과적임을 입증하며, 훈련된 MRM인 Saffron-1과 토큰 수준 안전 보상 데이터 집합(Safety4M)을 공개하여 LLM 안전성에 대한 미래 연구를 가속화하고자 한다."
+  },
+  {
+    "title": "Geopolitical biases in LLMs: what are the \"good\" and the \"bad\" countries\n  according to contemporary language models",
+    "abstract": "This paper evaluates geopolitical biases in LLMs with respect to various\ncountries though an analysis of their interpretation of historical events with\nconflicting national perspectives (USA, UK, USSR, and China). We introduce a\nnovel dataset with neutral event descriptions and contrasting viewpoints from\ndifferent countries. Our findings show significant geopolitical biases, with\nmodels favoring specific national narratives. Additionally, simple debiasing\nprompts had a limited effect in reducing these biases. Experiments with\nmanipulated participant labels reveal models' sensitivity to attribution,\nsometimes amplifying biases or recognizing inconsistencies, especially with\nswapped labels. This work highlights national narrative biases in LLMs,\nchallenges the effectiveness of simple debiasing methods, and offers a\nframework and dataset for future geopolitical bias research.",
+    "authors": [
+      "Mikhail Salnikov",
+      "Dmitrii Korzh",
+      "Ivan Lazichny",
+      "Elvir Karimov",
+      "Artyom Iudin",
+      "Ivan Oseledets",
+      "Oleg Y. Rogov",
+      "Alexander Panchenko",
+      "Natalia Loukachevitch",
+      "Elena Tutubalina"
+    ],
+    "likes": 38,
+    "published_date": "Jun 7",
+    "url": "https://huggingface.co/papers/2506.06751",
+    "date_collected": "2025-06-11T10:48:22.387038",
+    "week": "2025-W24",
+    "translation": {
+      "title": "LLMs에서의 지정학적 편향: 현대 언어 모델에서 \"좋은\" 나라와 \"나쁜\" 나라는 무엇인가",
+      "abstract": "본 논문은 LLMs에서 다양한 국가에 대한 지정학적 편향을 분석하여 미국, 영국, 소련 및 중국의 역사적 사건 해석을 통해 이를 평가합니다. 우리는 중립적 사건 설명과 다른 국가들의 대립적 시각을 제시하는 혁신적인 데이터셋을 소개합니다. 우리의 결과는 특정 국가적 서술 우선을 보여주며, 간단한 편향 제거 프롬프트가 이러한 편향을 줄이는 데 제한적인 영향을 미쳤음을 보여줍니다. 또한, 가짜 참여자 레이블로 실험한 결과는 모델이 소속을 민감하게 감지하며, 때로는 편향을 강화하거나 일관성을 인식하는 것을 보여줍니다, 특히 레이블을 교체할 때. 본 연구는 LLMs 내의 국가적 서술 편향을 강조하며, 간단한 편향 제거 방법의 효과를 도전하며, 미래의 지정학적 편향 연구를 위한 프레임워크와 데이터셋을 제안합니다."
+    },
+    "summary": "1. LLMs에서 국가적 서술 편향을 발견하고, 간단한 편향 제거 방법의 한계를 밝힘.\n2. 모델의 민감성으로 인해 편향이 강화되거나 모순을 인정하는 실험 결과를 제시.\n3. 미래 지정학적 편향 연구를 위한 프레임워크와 데이터셋을 제공함으로써 중요성을 강조."
+  },
+  {
+    "title": "OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation",
+    "abstract": "Text-to-image (T2I) models have garnered significant attention for generating\nhigh-quality images aligned with text prompts. However, rapid T2I model\nadvancements reveal limitations in early benchmarks, lacking comprehensive\nevaluations, for example, the evaluation on reasoning, text rendering and\nstyle. Notably, recent state-of-the-art models, with their rich knowledge\nmodeling capabilities, show promising results on the image generation problems\nrequiring strong reasoning ability, yet existing evaluation systems have not\nadequately addressed this frontier. To systematically address these gaps, we\nintroduce OneIG-Bench, a meticulously designed comprehensive benchmark\nframework for fine-grained evaluation of T2I models across multiple dimensions,\nincluding prompt-image alignment, text rendering precision, reasoning-generated\ncontent, stylization, and diversity. By structuring the evaluation, this\nbenchmark enables in-depth analysis of model performance, helping researchers\nand practitioners pinpoint strengths and bottlenecks in the full pipeline of\nimage generation. Specifically, OneIG-Bench enables flexible evaluation by\nallowing users to focus on a particular evaluation subset. Instead of\ngenerating images for the entire set of prompts, users can generate images only\nfor the prompts associated with the selected dimension and complete the\ncorresponding evaluation accordingly. Our codebase and dataset are now publicly\navailable to facilitate reproducible evaluation studies and cross-model\ncomparisons within the T2I research community.",
+    "authors": [
+      "Jingjing Chang",
+      "Yixiao Fang",
+      "Peng Xing",
+      "Shuhan Wu",
+      "Wei Cheng",
+      "Rui Wang",
+      "Xianfang Zeng",
+      "Gang Yu",
+      "Hai-Bao Chen"
+    ],
+    "likes": 37,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2506.07977",
+    "date_collected": "2025-06-11T10:48:22.388325",
+    "week": "2025-W24",
+    "translation": {
+      "title": "이미지 생성을 위한 Omni-dimensional Nuanced 평가를 위한 OneIG-Bench",
+      "abstract": "텍스트-이미지(T2I) 모델은 텍스트 프롬프트에 일치하는 고품질 이미지를 생성하는 데 상당한 주목을 받았습니다. 그러나 빠르게 발전하는 T2I 모델은 초기 벤치마크의 한계를 드러내었는데, 이는 종합적인 평가가 부족하며, 예를 들어 추론, 텍스트 렌더링, 스타일 평가 등이 포함되어 있지 않습니다. 최근에는 최첨단 모델들이 풍부한 지식 모델링 능력으로 강력한 추론 능력이 필요한 이미지 생성 문제에서 융·복·기한 결과를 보여주었으나, 기존의 평가 시스템은 이러한 최전선을 충분히 다루지 못하고 있습니다. 이러한 공백을 체계적으로 다루기 위해 우리는 OneIG-Bench를 소개합니다. 이는 T2I 모델의 세밀한 평가를 위한 철저히 설계된 종합 벤치마크 프레임워크로, 프롬프트-이미지 정렬, 텍스트 렌더링 정밀도, 추론-생성된 콘텐츠, 스타일라이제이션, 다양성을 포함한 다양한 차원에서의 평가를 가능하게 합니다. 이 벤치마크를 통해 모델 성능의 깊은 분석이 가능해져 연구자들과 실무가 포괄적인 이미지 생성 파이프라인에서의 강점과 병목 현상을 파악할 수 있습니다. 특히, OneIG-Bench는 유저들이 특정 평가 하위 집합에 집중할 수 있도록 유연한 평가를 가능하게 합니다. 모든 프롬프트 세트에 대해 이미지를 생성하는 대신, 사용자는 선택한 차원과 관련된 프롬프트에 대해만 이미지를 생성하고 해당 평가를 완료할 수 있습니다. 우리의 코드베이스와 데이터셋은 현재 T2I 연구 커뮤니티 내에서 재현 가능한 평가 연구와 모델 간 비교를 용이하게 하기 위해 공개되어 있습니다."
+    },
+    "summary": "1. 텍스트-이미지 모델의 종합적인 평가를 위한 OneIG-Bench 소개\n2. 다양한 차원에서의 세밀한 평가를 가능하게 하며, 모델 성능 분석을 깊이 있게 할 수 있는 점\n3. 특히, 특정 평가 하위 집합에 집중하여 유연한 평가가 가능한 것이 장점으로 부각되고 있으며, 이를 통해 이미지 생성 전체 파이프라인에서의 강점과 병목 현상을 파악할 수 있다."
+  },
+  {
+    "title": "Truth in the Few: High-Value Data Selection for Efficient Multi-Modal\n  Reasoning",
+    "abstract": "While multi-modal large language models (MLLMs) have made significant\nprogress in complex reasoning tasks via reinforcement learning, it is commonly\nbelieved that extensive training data is necessary for improving multi-modal\nreasoning ability, inevitably leading to data redundancy and substantial\ncomputational costs. However, can smaller high-value datasets match or\noutperform full corpora for multi-modal reasoning in MLLMs? In this work, we\nchallenge this assumption through a key observation: meaningful multi-modal\nreasoning is triggered by only a sparse subset of training samples, termed\ncognitive samples, whereas the majority contribute marginally. Building on this\ninsight, we propose a novel data selection paradigm termed Reasoning Activation\nPotential (RAP), which identifies cognitive samples by estimating each sample's\npotential to stimulate genuine multi-modal reasoning by two complementary\nestimators: 1) Causal Discrepancy Estimator (CDE) based on the potential\noutcome model principle, eliminates samples that overly rely on language priors\nby comparing outputs between multi-modal and text-only inputs; 2) Attention\nConfidence Estimator (ACE), which exploits token-level self-attention to\ndiscard samples dominated by irrelevant but over-emphasized tokens in\nintermediate reasoning stages. Moreover, we introduce a Difficulty-aware\nReplacement Module (DRM) to substitute trivial instances with cognitively\nchallenging ones, thereby ensuring complexity for robust multi-modal reasoning.\nExperiments on six datasets show that our RAP method consistently achieves\nsuperior performance using only 9.3% of the training data, while reducing\ncomputational costs by over 43%. Our code is available at\nhttps://github.com/Leo-ssl/RAP.",
+    "authors": [
+      "Shenshen Li",
+      "Kaiyuan Deng",
+      "Lei Wang",
+      "Hao Yang",
+      "Chong Peng",
+      "Peng Yan",
+      "Fumin Shen",
+      "Heng Tao Shen",
+      "Xing Xu"
+    ],
+    "likes": 33,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2506.04755",
+    "date_collected": "2025-06-11T10:48:22.389615",
+    "week": "2025-W24",
+    "translation": {
+      "title": "소수의 진실: 효율적인 다중 모달 추론을 위한 고가치 데이터 선택",
+      "abstract": "다중 모달 대형 언어 모델(Multi-Modal Large Language Models, MLLMs)이 강화 학습을 통해 복잡한 추론 작업에서 상당한 진전을 이루었지만, 다중 모달 추론 능력 향상에는 많은 훈련 데이터가 필요하다고 일반적으로 여겨져 왔으며, 결과적으로 데이터 중복과 상당한 계산 비용을 야기한다. 그러나 MLLMs에서 다중 모달 추론을 위해 작은 고가치 데이터셋이 전체 말뭉치를 능가하거나 돌파할 수 있을까? 본 연구에서는 이 가정에 도전하는데, 의미 있는 다중 모달 추론은 \"인지적 샘플\"이라고 불리는 훈련 샘플의 희소 부분만으로 유발되는 반면, 대부분은 거의 기여하지 않는다는 핵심 관측을 통해 제시한다. 이 통찰력을 기반으로 우리는 Reasoning Activation Potential (RAP)이라는 새로운 데이터 선택 패러다임을 제안하는데, 이는 각 샘플이 정말 다중 모달 추론을 자극하는 잠재력을 추정함으로써 인지적 샘플을 식별한다. 이러한 estimator(추정기)는 1) 다변량 인과 모형 원리에 기초한 Causal Discrepancy Estimator (CDE)로 언어 선행지식에 지나치게 의존하는 샘플을 제거하며, 다중 모달 및 텍스트 입력 간의 출력을 비교함으로써; 2) Attention Confidence Estimator (ACE)는 중간 추론 단계에서 관련이 없지만 강조된 토큰에 지배당한 샘플을 폐기하기 위해 토큰 수준의 자기주의를 활용한다. 더불어, 우리는 난이도에 대한 Replacement Module (DRM)을 소개하여 단순한 사례를 계산적으로 도전적인 것들로 대체함으로써 견고한 다중 모달 추론을 보장한다. 6개 데이터셋에서의 실험 결과, 우리의 RAP 방법은 훈련 데이터의 9.3%만 사용하여 일관되게 우수한 성과를 보여주며, 계산 비용을 43% 이상 절감한다. 저희의 코드는 https://github.com/Leo-ssl/RAP에서 사용 가능합니다."
+    },
+    "summary": "1. 다중 모달 대형 언어 모델의 다중 모달 추론 능력을 향상시키기 위해 고품질 데이터 선택이 필요하며, 새로운 RAP 방법은 다중 모달 추론에 중요한 \"인지적 샘플\"을 식별하고, 계산 비용을 절감한다.\n2. RAP은 Causal Discrepancy Estimator (CDE)와 Attention Confidence Estimator(ACE)를 활용하여 언어 선행지식에 의존하지 않고 다중 모달 추론을 유발하는 훈련 샘플을 선택하며, Difficulty-aware Replacement Module (DRM)은 복잡성을 유지하면서 효율적인 다중 모달 추론을 보장한다.\n3. 실험 결과는 RAP 방법이 9.3%의 훈련 데이터만 사용하여 우수한 성능을 달성하고, 계산 비용을 43% 이상 절감함을 보여줌으로써 효율적인 다중 모달 추론을 이루는데 효과적임을 입증한다."
+  },
+  {
+    "title": "SpatialLM: Training Large Language Models for Structured Indoor Modeling",
+    "abstract": "SpatialLM is a large language model designed to process 3D point cloud data\nand generate structured 3D scene understanding outputs. These outputs include\narchitectural elements like walls, doors, windows, and oriented object boxes\nwith their semantic categories. Unlike previous methods which exploit\ntask-specific network designs, our model adheres to the standard multimodal LLM\narchitecture and is fine-tuned directly from open-source LLMs.\n  To train SpatialLM, we collect a large-scale, high-quality synthetic dataset\nconsisting of the point clouds of 12,328 indoor scenes (54,778 rooms) with\nground-truth 3D annotations, and conduct a careful study on various modeling\nand training decisions. On public benchmarks, our model gives state-of-the-art\nperformance in layout estimation and competitive results in 3D object\ndetection. With that, we show a feasible path for enhancing the spatial\nunderstanding capabilities of modern LLMs for applications in augmented\nreality, embodied robotics, and more.",
+    "authors": [
+      "Yongsen Mao",
+      "Junhao Zhong",
+      "Chuan Fang",
+      "Jia Zheng",
+      "Rui Tang",
+      "Hao Zhu",
+      "Ping Tan",
+      "Zihan Zhou"
+    ],
+    "likes": 32,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2506.07491",
+    "date_collected": "2025-06-11T10:48:22.390862",
+    "week": "2025-W24",
+    "translation": {
+      "title": "공간적 언어 모델: 구조화된 실내 모델링을 위한 대규모 언어 모델 훈련",
+      "abstract": "SpatialLM은 3D 포인트 클라우드 데이터를 처리하고 구조화된 3D 장면 이해 결과물을 생성하기 위해 고안된 대규모 언어 모델입니다. 이 결과물은 벽, 문, 창문 및 의미론적 범주와 함께 방향이 지정된 객체 상자와 같은 건축 요소를 포함합니다. 이전 방법들과는 달리 특정 작업에 특화된 네트워크 설계를 활용하는 대신, 우리의 모델은 표준 다중 모달 LLM 아키텍처를 따르며 오픈 소스 LLMs에서 직접 세밀하게 조정됩니다. SpatialLM을 훈련하기 위해 우리는 12,328개의 실내 장면(54,778개의 방)의 포인트 클라우드와 지면 실측 3D 주석으로 이루어진 대규모 고품질 합성 데이터셋을 수집하고 다양한 모델링 및 훈련 결정에 대해 주의 깊은 연구를 실시합니다. 공개 벤치마크에서 우리의 모델은 레이아웃 추정에서 최신 기술 성능을 제공하며 3D 객체 감지에서 경쟁력 있는 결과를 나타냅니다. 이를 통해 현대 LLMs의 공간적 이해 능력을 향상시키는 데서 중요한 길을 제시하며 증강 현실, 실제 로봇 공학 등 다양한 응용 분야에서 활용 가능한 가능성을 보여줍니다."
+    },
+    "summary": "1. SpatialLM은 3D 포인트 클라우드를 처리하고 건축 요소 및 객체 상자와 같은 구조화된 3D 장면 이해 결과물을 생성하는 대규모 언어 모델이다.\n2. 모델은 특정 작업에 특화된 네트워크 디자인 대신 표준 다중 모달 LLM 아키텍처를 따르며 공개 LLMs에서 직접 조정된다.\n3. SpatialLM은 대규모 합성 데이터셋을 사용하여 학습되며 레이아웃 추정에서 최고 수준의 성능을 보이며 3D 객체 감지에서도 경쟁력 있는 결과를 얻는다."
+  },
+  {
+    "title": "Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs",
+    "abstract": "The performance of large language models in domain-specific tasks\nnecessitates fine-tuning, which is computationally expensive and technically\nchallenging. This paper focuses on parameter-efficient fine-tuning using soft\nprompting, a promising approach that adapts pre-trained models to downstream\ntasks by learning a small set of parameters. We propose a novel Input Dependent\nSoft Prompting technique with a self-Attention Mechanism (ID-SPAM) that\ngenerates soft prompts based on the input tokens and attends different tokens\nwith varying importance. Our method is simple and efficient, keeping the number\nof trainable parameters small. We show the merits of the proposed approach\ncompared to state-of-the-art techniques on various tasks and show the improved\nzero shot domain transfer capability.",
+    "authors": [
+      "Ananth Muppidi",
+      "Abhilash Nandy",
+      "Sambaran Bandyopadhyay"
+    ],
+    "likes": 32,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2506.05629",
+    "date_collected": "2025-06-11T10:48:22.391882",
+    "week": "2025-W24",
+    "translation": {
+      "title": "LLMs에서 입력에 따른 소프트 프롬프팅을 위한 셀프 어텐션 활용",
+      "abstract": "대규모 언어 모델의 성능을 특정 도메인 작업에 맞게 미세 조정하는 것은 계산 비용이 많이 들고 기술적으로 어려운 작업이다. 이 논문은 사전 훈련된 모델을 하위 작업에 맞게 조정하는 소프트 프롬프팅 기법을 채택하여 매개변수 효율적인 미세 조정에 초점을 맞춘다. 입력 토큰에 기반한 소프트 프롬프팅 기술인 셀프 어텐션 메커니즘(ID-SPAM)을 제안하며, 이 기법은 다양한 중요도를 갖는 토큰에 대해 소프트 프롬프트를 생성하고 처리한다. 이 방법은 간단하고 효율적이며, 학습 가능한 매개변수 수를 적게 유지한다. 우리는 제안된 접근법이 다양한 작업에서 최신 기술과 비교했을 때 장점을 보여주며, 향상된 영역 간 전이 능력을 보여준다."
+    },
+    "summary": "1. 미세 조정에 소프트 프롬프팅을 사용한 매개변수 효율적인 방법론을 제안하였다.\n2. 입력 토큰에 따라 소프트 프롬프트를 생성하는 셀프 어텐션 메커니즘(ID-SPAM)을 도입하였다.\n3. 제안된 방법은 학습 가능한 매개변수 수를 최소화하면서 다양한 작업에서 우수한 성과를 보여주고, 영역 간 전이 능력을 향상시켰다."
+  }
+]

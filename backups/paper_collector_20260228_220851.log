@@ -1,0 +1,123 @@
+=== Paper Collection Started at Fri Feb 27 22:09:12 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W09
+URL: https://huggingface.co/papers/week/2026-W09
+Found 10 papers in weekly view
+Fetching likes for: A Very Big Video Reasoning Suite
+Fetching likes for: Does Your Reasoning Model Implicitly Know When to Stop Thinking?
+Fetching likes for: VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training
+Fetching likes for: The Trinity of Consistency as a Defining Principle for General World Models
+Fetching likes for: From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models
+Fetching likes for: On Data Engineering for Scaling LLM Terminal Capabilities
+Fetching likes for: MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios
+Fetching likes for: SkillOrchestra: Learning to Route Agents via Skill Transfer
+Fetching likes for: HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation
+Fetching likes for: VLANeXt: Recipes for Building Strong VLA Models
+Selected top 10 papers by likes:
+1. A Very Big Video Reasoning Suite (448 likes)
+2. Does Your Reasoning Model Implicitly Know When to Stop Thinking? (211 likes)
+3. VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training (185 likes)
+4. The Trinity of Consistency as a Defining Principle for General World Models (158 likes)
+5. From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models (141 likes)
+6. On Data Engineering for Scaling LLM Terminal Capabilities (87 likes)
+7. MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios (85 likes)
+8. SkillOrchestra: Learning to Route Agents via Skill Transfer (52 likes)
+9. HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation (52 likes)
+10. VLANeXt: Recipes for Building Strong VLA Models (52 likes)
+Found abstract: Rapid progress in video models has largely focused on visual quality, leaving their reasoning capabi...
+Processed paper: A Very Big Video Reasoning Suite
+Found abstract: Recent advancements in large reasoning models (LRMs) have greatly improved their capabilities on com...
+Processed paper: Does Your Reasoning Model Implicitly Know When to Stop Thinking?
+Found abstract: Training stability remains a central challenge in reinforcement learning (RL) for large language mod...
+Processed paper: VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training
+Found abstract: The construction of World Models capable of learning, simulating, and reasoning about objective phys...
+Processed paper: The Trinity of Consistency as a Defining Principle for General World Models
+Found abstract: As Large Multimodal Models (LMMs) scale up and reinforcement learning (RL) methods mature, LMMs have...
+Processed paper: From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models
+Found abstract: Despite rapid recent progress in the terminal capabilities of large language models, the training da...
+Processed paper: On Data Engineering for Scaling LLM Terminal Capabilities
+Found abstract: Route-planning agents powered by large language models (LLMs) have emerged as a promising paradigm f...
+Processed paper: MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios
+Found abstract: Compound AI systems promise capabilities beyond those of individual models, yet their success depend...
+Processed paper: SkillOrchestra: Learning to Route Agents via Skill Transfer
+Found abstract: Modeling long sequences of user behaviors has emerged as a critical frontier in generative recommend...
+Processed paper: HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation
+Found abstract: Following the rise of large foundation models, Vision-Language-Action models (VLAs) emerged, leverag...
+Processed paper: VLANeXt: Recipes for Building Strong VLA Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Very Big Video Reasoning Suite
+Paper already exists, checking if translation is complete...
+Update likes: 448  ->  441
+Update date_collected: 2026-02-28T07:09:20.676439+09:00  ->  2026-02-27T07:14:46.538023+09:00
+
+Processing paper 2/10
+Title: Does Your Reasoning Model Implicitly Know When to Stop Thinking?
+Paper already exists, checking if translation is complete...
+Update likes: 211  ->  208
+Update date_collected: 2026-02-28T07:09:20.678341+09:00  ->  2026-02-27T07:14:46.539613+09:00
+
+Processing paper 3/10
+Title: VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training
+Paper already exists, checking if translation is complete...
+Update likes: 185  ->  184
+Update date_collected: 2026-02-28T07:09:20.679778+09:00  ->  2026-02-27T07:14:46.540784+09:00
+
+Processing paper 4/10
+Title: The Trinity of Consistency as a Defining Principle for General World Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: On Data Engineering for Scaling LLM Terminal Capabilities
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  82
+Update date_collected: 2026-02-28T07:09:20.684809+09:00  ->  2026-02-27T07:14:46.542034+09:00
+
+Processing paper 7/10
+Title: MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: SkillOrchestra: Learning to Route Agents via Skill Transfer
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  50
+Update date_collected: 2026-02-28T07:09:20.687825+09:00  ->  2026-02-27T07:14:46.543254+09:00
+
+Processing paper 9/10
+Title: HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  46
+Update date_collected: 2026-02-28T07:09:20.689314+09:00  ->  2026-02-27T07:14:46.545821+09:00
+
+Processing paper 10/10
+Title: VLANeXt: Recipes for Building Strong VLA Models
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  48
+Update date_collected: 2026-02-28T07:09:20.690883+09:00  ->  2026-02-27T07:14:46.544605+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W09.json...
+
+Updating Notion database...
+Updating paper: 대규모 비디오 추론 스위트 (likes: 441 -> 448)
+Updating paper: 추론 모델이 암묵적으로 생각을 멈출 때를 아는가? (likes: 208 -> 211)
+Updating paper: VESPO: 안정적인 오프-폴리시 LLM 훈련을 위한 변이적 시퀀스-레벨 소프트 정책 최적화 (likes: 184 -> 185)
+Creating new paper: 일반 세계 모형을 위한 정의 원리로서 일관성의 삼중성
+Creating new paper: 맹점에서 이득으로: 대형 다중 모달 모델을 위한 진단 주도 반복 학습
+Updating paper: 큰 언어 모델 단말 능력의 확장을 위한 데이터 공학에 대해 (likes: 82 -> 87)
+Creating new paper: 실제 세계 이동 시나리오에서 경로 계획 에이전트 평가를 위한 벤치마크인 MobilityBench
+Updating paper: SkillOrchestra: 스킬 전이를 통한 에이전트 경로 지정 학습 (likes: 50 -> 52)
+Updating paper: 하이브리드 시간 인지 주의 아키텍처(HyTRec)를 이용한 장기 행동 순차 추천 (likes: 46 -> 52)
+Updating paper: VLANeXt: 강력한 VLA 모델 구축을 위한 레시피 (likes: 48 -> 52)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Feb 27 22:11:58 UTC 2026 ===
+

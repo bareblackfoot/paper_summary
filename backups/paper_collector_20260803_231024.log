@@ -1,0 +1,100 @@
+=== Paper Collection Started at Mon Aug  3 04:33:54 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W32
+URL: https://huggingface.co/papers/week/2026-W32
+Found 9 papers in weekly view
+Fetching likes for: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Fetching likes for: AISPA: User-Centric System Prompt Auditing for Large Language Model Applications
+Fetching likes for: QQWorld: Quantile-Quantile Matching for World Model Regularization
+Fetching likes for: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Fetching likes for: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Fetching likes for: Scaling Properties of Text Conditioning in Visual Generation
+Fetching likes for: ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction
+Fetching likes for: Enhancing Rubric-based RL via Self-Distillation
+Fetching likes for: Evaluation-Verification Reward for Consistent Multi-Reference Image Editing
+Selected top 10 papers by likes:
+1. From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement (18 likes)
+2. AISPA: User-Centric System Prompt Auditing for Large Language Model Applications (16 likes)
+3. QQWorld: Quantile-Quantile Matching for World Model Regularization (11 likes)
+4. N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens (9 likes)
+5. Meshy T2: Fast Native Mesh Generation with Flow Matching (7 likes)
+6. Scaling Properties of Text Conditioning in Visual Generation (5 likes)
+7. ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction (1 likes)
+8. Enhancing Rubric-based RL via Self-Distillation (1 likes)
+9. Evaluation-Verification Reward for Consistent Multi-Reference Image Editing (0 likes)
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-orient...
+Processed paper: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Found abstract: System prompts are instructions configured by developers to govern the behaviors of foundation model...
+Processed paper: AISPA: User-Centric System Prompt Auditing for Large Language Model Applications
+Found abstract: Latent world models enable efficient planning by predicting future states in a compact representatio...
+Processed paper: QQWorld: Quantile-Quantile Matching for World Model Regularization
+Found abstract: We present N_0-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-gr...
+Processed paper: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Found abstract: Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high...
+Processed paper: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Found abstract: We study empirical scaling properties for text conditioning in visual generation. Such properties ha...
+Processed paper: Scaling Properties of Text Conditioning in Visual Generation
+Found abstract: Enterprise workflows increasingly rely on agents for schema-guided extraction: given a document and ...
+Processed paper: ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction
+Found abstract: Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks. A widely recognize...
+Processed paper: Enhancing Rubric-based RL via Self-Distillation
+Found abstract: While recent image editing models have made rapid progress, multi-reference editing remains challeng...
+Processed paper: Evaluation-Verification Reward for Consistent Multi-Reference Image Editing
+Collected top 9 papers. Starting summary generation...
+
+Processing paper 1/9
+Title: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Generating Korean translation and summary...
+
+Processing paper 2/9
+Title: AISPA: User-Centric System Prompt Auditing for Large Language Model Applications
+Generating Korean translation and summary...
+
+Processing paper 3/9
+Title: QQWorld: Quantile-Quantile Matching for World Model Regularization
+Generating Korean translation and summary...
+
+Processing paper 4/9
+Title: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Generating Korean translation and summary...
+
+Processing paper 5/9
+Title: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Generating Korean translation and summary...
+
+Processing paper 6/9
+Title: Scaling Properties of Text Conditioning in Visual Generation
+Generating Korean translation and summary...
+
+Processing paper 7/9
+Title: ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction
+Generating Korean translation and summary...
+
+Processing paper 8/9
+Title: Enhancing Rubric-based RL via Self-Distillation
+Generating Korean translation and summary...
+
+Processing paper 9/9
+Title: Evaluation-Verification Reward for Consistent Multi-Reference Image Editing
+Generating Korean translation and summary...
+
+Processed 9 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W32.json...
+
+Updating Notion database...
+Creating new paper: RLVR에서 RLSVR로: 과제 변환이 열린 마음의 LLM 자가 향상을 유도합니다
+Creating new paper: 대형 언어 모델 응용 프로그램을 위한 사용자 중심 시스템 프롬프트 감사(AISPA)
+Creating new paper: QQWorld: 세계 모델 정규화를 위한 분위수-분위수 매칭
+Creating new paper: N_0-VTLA: 잠재적 촉각 토큰을 활용한 비전-촉각-언어-동작 모델의 확장
+Creating new paper: Meshy T2: 플로우 매칭을 이용한 빠른 원시 매쉬 생성
+Creating new paper: 시각 생성에서의 텍스트 조건화의 스케일링 속성
+Creating new paper: ExtractBench: 스키마-가이드 엔터프라이즈 문서 추출을 위한 벤치마크
+Creating new paper: Rubric 기반 강화학습의 자기-순도를 통한 향상
+Creating new paper: 일관된 다중 참조 이미지 편집을 위한 평가-확인 보상
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Aug  3 04:35:18 UTC 2026 ===
+

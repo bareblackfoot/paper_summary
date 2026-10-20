@@ -1,0 +1,274 @@
+[
+  {
+    "title": "Your Group-Relative Advantage Is Biased",
+    "abstract": "Reinforcement Learning from Verifier Rewards (RLVR) has emerged as a widely used approach for post-training large language models on reasoning tasks, with group-based methods such as GRPO and its variants gaining broad adoption. These methods rely on group-relative advantage estimation to avoid learned critics, yet its theoretical properties remain poorly understood.\n  In this work, we uncover a fundamental issue of group-based RL: the group-relative advantage estimator is inherently biased relative to the true (expected) advantage. We provide the first theoretical analysis showing that it systematically underestimates advantages for hard prompts and overestimates them for easy prompts, leading to imbalanced exploration and exploitation. To address this issue, we propose History-Aware Adaptive Difficulty Weighting (HA-DW), an adaptive reweighting scheme that adjusts advantage estimates based on an evolving difficulty anchor and training dynamics. Both theoretical analysis and experiments on five mathematical reasoning benchmarks demonstrate that HA-DW consistently improves performance when integrated into GRPO and its variants. Our results suggest that correcting biased advantage estimation is critical for robust and efficient RLVR training.",
+    "authors": [
+      "Fengkai Yang",
+      "Zherui Chen",
+      "Xiaohan Wang",
+      "Xiaodong Lu",
+      "Jiajun Chai",
+      "Guojun Yin",
+      "Wei Lin",
+      "Shuai Ma",
+      "Fuzhen Zhuang",
+      "Deqing Wang",
+      "Yaodong Yang",
+      "Jianxin Li",
+      "Yikun Ban"
+    ],
+    "likes": 94,
+    "published_date": "Jan 13",
+    "url": "https://huggingface.co/papers/2601.08521",
+    "date_collected": "2026-01-20T07:08:48.492665+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "그룹 상대적 우위는 편향되어 있습니다",
+      "abstract": "검증자 보상에 기반한 강화 학습 (Reinforcement Learning from Verifier Rewards, RLVR)은 추론 작업에 대한 대규모 언어 모델의 사후 훈련에 널리 사용되는 방법으로, GRPO와 그 변형들과 같은 그룹 기반 방법이 널리 채택되고 있습니다. 이러한 방법들은 학습된 평가자를 피하기 위해 그룹 상대적 우위 추정을 사용하나, 그 이론적 특성은 여전히 잘 이해되지 않고 있습니다."
+    },
+    "summary": "1. 그룹 기반 강화 학습의 주요 문제점은 그룹 상대적 우위 추정기가 진정한 우위에 비해 편향되어 있다는 것입니다.\n2. 우리는 이 문제를 해결하기 위해 HA-DW라는 역사 기반 적응적 난이도 가중치 방법을 제안하였으며, 실험 결과 이 방법이 GRPO와 그 변형에 통합될 때 일관되게 성능을 향상시킵니다.\n3. 실험 결과는 편향된 우위 추정을 수정하는 것이 견고하고 효율적인 강화 학습에 중요하다는 것을 시사합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Poisoned Apple Effect: Strategic Manipulation of Mediated Markets via Technology Expansion of AI Agents",
+    "abstract": "The integration of AI agents into economic markets fundamentally alters the landscape of strategic interaction. We investigate the economic implications of expanding the set of available technologies in three canonical game-theoretic settings: bargaining (resource division), negotiation (asymmetric information trade), and persuasion (strategic information transmission). We find that simply increasing the choice of AI delegates can drastically shift equilibrium payoffs and regulatory outcomes, often creating incentives for regulators to proactively develop and release technologies. Conversely, we identify a strategic phenomenon termed the \"Poisoned Apple\" effect: an agent may release a new technology, which neither they nor their opponent ultimately uses, solely to manipulate the regulator's choice of market design in their favor. This strategic release improves the releaser's welfare at the expense of their opponent and the regulator's fairness objectives. Our findings demonstrate that static regulatory frameworks are vulnerable to manipulation via technology expansion, necessitating dynamic market designs that adapt to the evolving landscape of AI capabilities.",
+    "authors": [
+      "Eilam Shapira",
+      "Roi Reichart",
+      "Moshe Tennenholtz"
+    ],
+    "likes": 38,
+    "published_date": "Jan 16",
+    "url": "https://huggingface.co/papers/2601.11496",
+    "date_collected": "2026-01-20T07:08:48.493774+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "인공 지능 에이전트 기술 확장을 통한 매개시장의 전략적 조작: 독사과효과(The Poisoned Apple Effect)",
+      "abstract": "경제 시장에 인공 지능 에이전트를 통합하는 것은 전략적 상호작용의 풍경을 근본적으로 변경합니다. 저희는 세 가지 고전적 게임 이론적 설정인 협상(자원 분배), 협상(비대칭 정보 교환), 설득(전략적 정보 전달)에서 이용 가능한 기술 집합을 확대하는 것의 경제적 함의를 조사합니다. 우리는 단순히 AI 대표자의 선택을 늘리는 것이 평형 수익과 규제 결과를 급격하게 변화시킬 수 있다는 것을 발견했습니다. 종종, 규제당국이 적극적으로 기술을 개발하고 배포할 동기를 만들어냅니다. 반대로, 우리는 \"독사과효과\"라는 전략적 현상을 식별했습니다: 에이전트가 자신이나 상대방이 최종적으로 사용하지 않는 새로운 기술을 출시하여 시장 설계자의 선택을 자신의 이익에 맞게 조작할 수 있습니다. 이 전략적 출시는 출시자의 복지를 향상시키지만, 상대방과 규제당국의 공정성 목표를 희생시킵니다. 우리의 발견은 정적인 규제 틀이 기술 확대를 통한 조작에 취약하며, AI 능력의 변화에 적응하는 동적 시장 디자인이 필요함을 보여줍니다."
+    },
+    "summary": "1. AI 에이전트 기술 확장이 매개시장에서 전략적 상호작용에 미치는 경제적 영향을 고전적 게임 이론적 상황에서 조사합니다.\n2. 선택 가능한 AI 대표자의 다양성 증가가 규제 결과를 크게 변화시킬 수 있으며, 규제당국이 기술 개발 및 배포에 대해 적극적으로 대응할 수 있음을 보여줍니다.\n3. \"독사과효과\"라는 전략적 현상에 대해 소개하며, 시장 설계자의 선택을 조작하는 전략적 기술 출시가 상대방과 규제당국의 이익을 희생시킬 수 있다는 결과를 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Unlocking Implicit Experience: Synthesizing Tool-Use Trajectories from Text",
+    "abstract": "Enabling Large Language Models (LLMs) to effectively utilize tools in multi-turn interactions is essential for building capable autonomous agents. However, acquiring diverse and realistic multi-turn tool-use data remains a significant challenge. In this work, we propose a novel text-based paradigm. We observe that textual corpora naturally contain rich, multi-step problem-solving experiences, which can serve as an untapped, scalable, and authentic data source for multi-turn tool-use tasks. Based on this insight, we introduce GEM, a data synthesis pipeline that enables the generation and extraction of multi-turn tool-use trajectories from text corpora through a four-stage process: relevance filtering, workflow & tool extraction, trajectory grounding, and complexity refinement. To reduce the computational cost, we further train a specialized Trajectory Synthesizer via supervised fine-tuning. This model distills the complex generation pipeline into an efficient, end-to-end trajectory generator. Experiments demonstrate that our GEM-32B achieve a 16.5% improvement on the BFCL V3 Multi-turn benchmark. Our models partially surpass the performance of models trained on τ - bench (Airline and Retail) in-domain data, highlighting the superior generalization capability derived from our text-based synthesis paradigm. Notably, our Trajectory Synthesizer matches the quality of the full pipeline while significantly reducing inference latency and costs.",
+    "authors": [
+      "Zhihao Xu",
+      "Rumei Li",
+      "Jiahuan Li",
+      "Rongxiang Weng",
+      "Jingang Wang",
+      "Xunliang Cai",
+      "Xiting Wang"
+    ],
+    "likes": 30,
+    "published_date": "Jan 15",
+    "url": "https://huggingface.co/papers/2601.10355",
+    "date_collected": "2026-01-20T07:08:48.495010+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "암묵 경험 해제: 텍스트로부터 도구 사용 궤적 합성",
+      "abstract": "다중 대화 상황에서 Large Language Models (LLMs)가 효과적으로 도구를 활용할 수 있도록 하는 것은 능력있는 자율 에이전트를 구축하는 데 중요합니다. 그러나 다양하고 현실적인 다중 대화 도구 사용 데이터를 확보하는 것은 여전히 중요한 과제입니다. 이 연구에서는 텍스트 기반 패러다임을 제안합니다. 우리는 텍스트 코퍼스가 자연스럽게 풍부한 다단계 문제 해결 경험을 포함하고 있다는 것을 관찰하며, 이는 다중 대화 도구 사용 작업에 대한 활용 가능하고 확장 가능하며 실제적인 데이터 원천으로 작용할 수 있음을 알아냅니다. 이 통찰력을 기반으로, 우리는 GEM이라는 데이터 합성 파이프라인을 소개합니다. 이는 관련 필터링, 워크플로 및 도구 추출, 궤적 근거화, 복잡성 정제의 네 단계 과정을 통해 텍스트 코퍼스로부터 다중 대화 도구 사용 궤적을 생성하고 추출할 수 있게 합니다."
+    },
+    "summary": "1. 다중 대화 도구 사용 작업을 위해 GEM 데이터 합성 파이프라인을 제안함.\n2. 텍스트 코퍼스로부터 다단계 문제 해결 경험을 추출하여 다중 대화 도구 사용 궤적을 생성하는 방법 소개.\n3. Trajectory Synthesizer 모델을 통해 품질 유지 및 추론 대기 시간 및 비용을 크게 줄이면서 적용하는 것을 확인.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has driven substantial progress in reasoning-intensive domains like mathematics. However, optimizing open-ended generation remains challenging due to the lack of ground truth. While rubric-based evaluation offers a structured proxy for verification, existing methods suffer from scalability bottlenecks and coarse criteria, resulting in a supervision ceiling effect. To address this, we propose an automated Coarse-to-Fine Rubric Generation framework. By synergizing principle-guided synthesis, multi-model aggregation, and difficulty evolution, our approach produces comprehensive and highly discriminative criteria capable of capturing the subtle nuances. Based on this framework, we introduce RubricHub, a large-scale (sim110k) and multi-domain dataset. We validate its utility through a two-stage post-training pipeline comprising Rubric-based Rejection Sampling Fine-Tuning (RuFT) and Reinforcement Learning (RuRL). Experimental results demonstrate that RubricHub unlocks significant performance gains: our post-trained Qwen3-14B achieves state-of-the-art (SOTA) results on HealthBench (69.3), surpassing proprietary frontier models such as GPT-5. The code and data will be released soon.",
+    "authors": [
+      "Sunzhu Li",
+      "Jiale Zhao",
+      "Miteto Wei",
+      "Huimin Ren",
+      "Yang Zhou",
+      "Jingwen Yang",
+      "Shunyu Liu",
+      "Kaike Zhang",
+      "Wei Chen"
+    ],
+    "likes": 25,
+    "published_date": "Jan 13",
+    "url": "https://huggingface.co/papers/2601.08430",
+    "date_collected": "2026-01-20T07:08:48.496296+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "루브릭허브: 자동 코스 투 파인 생성을 통한 포괄적이고 고도구별 루브릭 데이터셋",
+      "abstract": "검증 가능한 보상을 통한 강화 학습이 수학과 같은 추론 집중적 도메인에서 상당한 진전을 이끈 바 있습니다. 그러나 개방형 생성을 최적화 하는 것은 실제 결과물의 부재로 인해 여전히 어려움을 겪고 있습니다. 루브릭 기반 평가는 검증을 위한 구조화된 대리물로 제공되지만, 기존 방법은 확장성 병목과 정륞性 범주로 인한 감독 천장 효과로 인해 고통받고 있습니다. 이를 해결하기 위해 우리는 자동 코스 투 파인 루브릭 생성 프레임워크를 제안합니다. 원리 지향 합성, 다중 모델 집합 및 난이도 진화를 협업하여 접근하는 우리의 방법은 미묘한 뉘앙스를 포착할 수 있는 포괄적이고 고도구별 기준을 생산합니다. 이 프레임워크를 기반으로 루브릭허브를 소개하며 크기가 크고(sim110k), 다양한 도메인의 데이터셋을 제공합니다. 우리는 Rubric-based Rejection Sampling Fine-Tuning (RuFT) 및 강화 학습 (RuRL)을 포함한 두 단계 후 학습 파이프라인을 통해 유틸리티를 확인합니다. 실험 결과는 RubricHub이 상당한 성능 향상을 불러옴을 보여줍니다: 후 학습된 Qwen3-14B는 HealthBench에서 (69.3)의 최신 성과를 달성하며 GPT-5와 같은 독점적인 선두 모델을 능가합니다. 코드와 데이터는 곧 공개될 예정입니다."
+    },
+    "summary": "1. 강화 학습을 통한 실적 확보가 수학과 같은 추론 집중적 분야에서 진전을 이끌었지만 개방형 생성 최적화는 여전히 어렵습니다.\n2. 기존 방법은 측정 천정 효과로 인해 스케일링 병목과 거친 기준으로 인해 어려움을 겪고 있습니다.\n3. 자동 코스 투 파인 루브릭 생성 프레임워크를 제안하여 미묘한 뉘앙스를 캡처할 수 있는 포괄적이고 고도구별 기준을 제작합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "When Personalization Misleads: Understanding and Mitigating Hallucinations in Personalized LLMs",
+    "abstract": "Personalized large language models (LLMs) adapt model behavior to individual users to enhance user satisfaction, yet personalization can inadvertently distort factual reasoning. We show that when personalized LLMs face factual queries, there exists a phenomenon where the model generates answers aligned with a user's prior history rather than the objective truth, resulting in personalization-induced hallucinations that degrade factual reliability and may propagate incorrect beliefs, due to representational entanglement between personalization and factual representations. To address this issue, we propose Factuality-Preserving Personalized Steering (FPPS), a lightweight inference-time approach that mitigates personalization-induced factual distortions while preserving personalized behavior. We further introduce PFQABench, the first benchmark designed to jointly evaluate factual and personalized question answering under personalization. Experiments across multiple LLM backbones and personalization methods show that FPPS substantially improves factual accuracy while maintaining personalized performance.",
+    "authors": [
+      "Zhongxiang Sun",
+      "Yi Zhan",
+      "Chenglei Shen",
+      "Weijie Yu",
+      "Xiao Zhang",
+      "Ming He",
+      "Jun Xu"
+    ],
+    "likes": 21,
+    "published_date": "Jan 16",
+    "url": "https://huggingface.co/papers/2601.11000",
+    "date_collected": "2026-01-20T07:08:48.497529+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "개인화 모델이 오해를 일으킬 때: 개인화 LLM의 환각 이해와 완화",
+      "abstract": "개인화된 대형 언어 모델(Large Language Models, LLMs)은 사용자에 맞게 모델 행동을 조정하여 사용자 만족도를 높이지만, 이는 종종 사실적 추론을 왜곡할 수 있음을 보여줍니다. 개인화된 LLMs가 사실적인 질의를 직면할 때, 모델이 객관적인 사실 대신 사용자의 과거 기록과 일치하는 답변을 생성하는 현상이 존재하며, 결과적으로 사실적 신뢰성을 훼손시키고, 표현적 엉킴으로 인해 개인화로 인한 환각이 발생할 수 있습니다. 이 문제를 해결하기 위해 우리는 개인화로 인한 사실 왜곡을 완화하면서 개인화된 행동을 유지하는 가벼운 추론 시간 접근 방식인 '사실 보존 개인화 조절(Factuality-Preserving Personalized Steering, FPPS)'을 제안합니다. 또한 우리는 개인화 하 속에서 사실적인 질문 응답을 공동으로 평가하도록 설계된 첫 번째 평가지표 'PFQABench'를 소개합니다. 다양한 LLM 백본 및 개인화 방법을 통한 실험 결과, FPPS가 사실적 정확도를 현저히 향상시키면서 개인화된 성능을 유지하는 것을 보여줍니다."
+    },
+    "summary": "1. 개인화된 대형 언어 모델은 사용자의 과거 기록에 기반하여 객관적인 사실보다 사용자에게 맞는 답변을 생성할 수 있는데, 이는 개인화로 인한 사실 왜곡과 환각을 유발할 수 있습니다.\n2. '사실 보존 개인화 조절(FPPS)'은 개인화로 인한 사실 왜곡을 완화하고 사실적인 질문 응답 정확도를 향상시키는 가벼운 추론 시간 접근 방식입니다.\n3. 'PFQABench'는 개인화 하 속에서 사실적인 질문 응답을 평가하는 첫 번째 평가지표로, 다양한 대형 언어 모델과 개인화 방법에서 FPPS가 효과적임을 입증했습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) models have emerged as essential generalist robot policies for diverse manipulation tasks, conventionally relying on directly translating multimodal inputs into actions via Vision-Language Model (VLM) embeddings. Recent advancements have introduced explicit intermediary reasoning, such as sub-task prediction (language) or goal image synthesis (vision), to guide action generation. However, these intermediate reasoning are often indirect and inherently limited in their capacity to convey the full, granular information required for precise action execution. Instead, we posit that the most effective form of reasoning is one that deliberates directly in the action space. We introduce Action Chain-of-Thought (ACoT), a paradigm where the reasoning process itself is formulated as a structured sequence of coarse action intents that guide the final policy. In this paper, we propose ACoT-VLA, a novel architecture that materializes the ACoT paradigm. Specifically, we introduce two complementary components: an Explicit Action Reasoner (EAR) and Implicit Action Reasoner (IAR). The former proposes coarse reference trajectories as explicit action-level reasoning steps, while the latter extracts latent action priors from internal representations of multimodal input, co-forming an ACoT that conditions the downstream action head to enable grounded policy learning. Extensive experiments in real-world and simulation environments demonstrate the superiority of our proposed method, which achieves 98.5%, 84.1%, and 47.4% on LIBERO, LIBERO-Plus and VLABench, respectively.",
+    "authors": [
+      "Linqing Zhong",
+      "Yi Liu",
+      "Yifei Wei",
+      "Ziyu Xiong",
+      "Maoqing Yao",
+      "Si Liu",
+      "Guanghui Ren"
+    ],
+    "likes": 18,
+    "published_date": "Jan 16",
+    "url": "https://huggingface.co/papers/2601.11404",
+    "date_collected": "2026-01-20T07:08:48.498778+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "ACoT-VLA: 시각-언어-행동 모델을 위한 행동 사슬-의사결정",
+      "abstract": "시각-언어-행동 (VLA) 모델은 다양한 조작 작업에 필수적인 종합적인 로봇 정책으로 나타났으며, 기존에는 시각-언어 모델 (VLM) 임베딩을 통해 다양한 입력을 행동으로 직접 번역했습니다. 최근 발전에서는 중간 추론인 서브 태스크 예측 (언어) 또는 목표 이미지 합성 (시각)과 같은 명시적 중개 추론을 도입하여 행동 생성을 안내했습니다. 그러나 이러한 중간 추론은 종종 간접적이며 정확한 행동 실행에 필요한 상세한 정보를 전달하므로 용량이 제한됩니다. 대신 행동 공간 내에서 직접 심사를 하는 것이 가장 효과적인 추론 방법이라고 주장합니다. 우리는 Action Chain-of-Thought (ACoT)를 제시합니다. 이는 행동 적경로를 명시적인 행동 수준의 추론 단계로 제안하는 전문적인 행동 추론기 (EAR) 및 여러 모달 입력의 내부 표현에서 잠재적 행동 사전을 추출하여 하향식 행동 위치를 조건부로 하는 Implicit Action Reasoner (IAR)로 구성된 ACoT가 후속 행동 머리를 안내하는 구조화된 일련의 건조한 행동 의도입니다. 여러 실세계 및 시뮬레이션 환경에서의 실험은 제안된 방법이 LIBERO, LIBERO-Plus 및 VLABench에서 각각 98.5%, 84.1% 및 47.4%를 달성한다는 우수성을 입증합니다."
+    },
+    "summary": "1. 기존 VLA 모델의 한계를 극복하기 위해 ACoT-VLA 아키텍처를 제안하였다.\n2. ACoT-VLA는 명시적 행동 추론기와 잠재적 행동 사전 추출기를 결합하여 효율적인 정책 학습을 가능하게 한다.\n3. 실험 결과는 제안된 방법이 다양한 환경에서 우수한 성능을 보여주며, 정밀한 행동 실행에 효과적임을 입증한다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search",
+    "abstract": "RL-based agentic search enables LLMs to solve complex questions via dynamic planning and external search. While this approach significantly enhances accuracy with agent policies optimized via large-scale reinforcement learning, we identify a critical gap in reliability: these agents fail to recognize their reasoning boundaries and rarely admit ``I DON'T KNOW'' (IDK) even when evidence is insufficient or reasoning reaches its limit. The lack of reliability often leads to plausible but unreliable answers, introducing significant risks in many real-world scenarios. To this end, we propose Boundary-Aware Policy Optimization (BAPO), a novel RL framework designed to cultivate reliable boundary awareness without compromising accuracy. BAPO introduces two key components: (i) a group-based boundary-aware reward that encourages an IDK response only when the reasoning reaches its limit, and (ii) an adaptive reward modulator that strategically suspends this reward during early exploration, preventing the model from exploiting IDK as a shortcut. Extensive experiments on four benchmarks demonstrate that BAPO substantially enhances the overall reliability of agentic search.",
+    "authors": [
+      "Shiyu Liu",
+      "Yongjing Yin",
+      "Jianhao Yan",
+      "Yunbo Tang",
+      "Qinggang Zhang",
+      "Bei Li",
+      "Xin Chen",
+      "Jingang Wang",
+      "Xunliang Cai",
+      "Jinsong Su"
+    ],
+    "likes": 12,
+    "published_date": "Jan 16",
+    "url": "https://huggingface.co/papers/2601.11037",
+    "date_collected": "2026-01-20T07:08:48.500118+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "신뢰성 있는 에이전트 검색을 위한 경계 인식 정책 최적화 (BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search)",
+      "abstract": "강화학습 기반의 에이전트 검색은 동적 계획 및 외부 검색을 통해 복잡한 질문을 해결하는 LLMs를 가능하게 합니다. 그러나 에이전트 정책이 대규모 강화학습을 통해 최적화되었음에도 불구하고 신뢰성 측면에서 중요한 결여가 있음이 밝혀졌습니다. 우리는 이 중요한 결여가 신뢰성 없는 답변을 유발하고 많은 현실 시나리오에서 의미 있는 위험을 초래한다는 것을 발견했습니다. 이에 우리는 Boundary-Aware Policy Optimization (BAPO)을 제안합니다. BAPO는 정확도를 희생하지 않으면서 신뢰성 있는 경계 인식을 육성하기 위한 혁신적인 강화학습 프레임워크입니다."
+    },
+    "summary": "1. 기존의 강화학습 기반 에이전트 검색은 신뢰성 부족으로 인해 실제 시나리오에서 심각한 위험을 초래할 수 있음.\n2. BAPO는 신뢰성 있는 경계 인식을 위해 IDK 응답을 적절히 유도하고 이를 악용을 방지하는 두 가지 주요 컴포넌트를 도입함.\n3. BAPO의 실험 결과는 신뢰성 있는 에이전트 검색을 크게 향상시킴을 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "FrankenMotion: Part-level Human Motion Generation and Composition",
+    "abstract": "Human motion generation from text prompts has made remarkable progress in recent years. However, existing methods primarily rely on either sequence-level or action-level descriptions due to the absence of fine-grained, part-level motion annotations. This limits their controllability over individual body parts. In this work, we construct a high-quality motion dataset with atomic, temporally-aware part-level text annotations, leveraging the reasoning capabilities of large language models (LLMs). Unlike prior datasets that either provide synchronized part captions with fixed time segments or rely solely on global sequence labels, our dataset captures asynchronous and semantically distinct part movements at fine temporal resolution. Based on this dataset, we introduce a diffusion-based part-aware motion generation framework, namely FrankenMotion, where each body part is guided by its own temporally-structured textual prompt. This is, to our knowledge, the first work to provide atomic, temporally-aware part-level motion annotations and have a model that allows motion generation with both spatial (body part) and temporal (atomic action) control. Experiments demonstrate that FrankenMotion outperforms all previous baseline models adapted and retrained for our setting, and our model can compose motions unseen during training. Our code and dataset will be publicly available upon publication.",
+    "authors": [
+      "Chuqiao Li",
+      "Xianghui Xie",
+      "Yong Cao",
+      "Andreas Geiger",
+      "Gerard Pons-Moll"
+    ],
+    "likes": 10,
+    "published_date": "Jan 15",
+    "url": "https://huggingface.co/papers/2601.10909",
+    "date_collected": "2026-01-20T07:08:48.501240+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "FrankenMotion: 부분 수준 인간 동작 생성과 합성",
+      "abstract": "최근 몇 년 동안 텍스트 프롬프트로부터의 인간 동작 생성은 놀라운 진전을 이루어 왔습니다. 그러나 기존 방법은 주로 세부적이고 부분적인 동작 주석의 부재로 인해 일련 레벨 또는 액션 레벨 설명에 의존합니다. 이는 개별 신체 부위에 대한 조절 가능성을 제한합니다. 본 연구에서는 대형 언어 모델(LLM)의 추론 능력을 활용하여 원자적이고 시간적으로 인식하는 부분 수준 텍스트 주석으로 고품질 동작 데이터셋을 구축했습니다. 이전 데이터셋과 달리 고정된 시간 세그먼트로 동기화된 부분 캡션 또는 전역 시퀀스 레이블에만 의존하는 것은 아니며, 우리의 데이터셋은 세분적인 시간 해상도에서 비동기식이며 의미적으로 구분된 부분 움직임을 포착합니다. 이 데이터셋을 기반으로 우리는 각 신체 부위가 자체적으로 시간 구조화된 텍스트 프롬프트에 따라 이끌리는 확산 기반 부분 인식 동작 생성 프레임워크인 FrankenMotion을 소개합니다. 이는 우리의 지식 상 처음으로 원자적이고 시간적으로 인식하는 부분 수준 동작 주석을 제공하고 공간적(신체 부분) 및 시간적(원자적 액션) 제어를 통한 동작 생성을 가능케 하는 모델입니다. 실험 결과, FrankenMotion이 우리의 설정에 맞게 적응 및 재학습된 모든 이전 기준 모델을 능가하며, 우리의 모델은 훈련 중에 보지 못한 동작을 합성할 수 있음을 보여줍니다. 우리의 코드와 데이터셋은 발표 후에 공개될 예정입니다."
+    },
+    "summary": "1. 최근 인간 동작 생성은 세부적인 부분 주석이 부족해 전체 레벨이나 액션 레벨 설명에 의존했으나, 본 연구에서는 고품질의 부분 수준 텍스트 주석을 토대로 새로운 동작 데이터셋을 만들었고 대형 언어 모델을 활용한 프레임워크를 제안한다.\n2. FrankenMotion은 각 신체 부위에 해당하는 시간적으로 구조화된 텍스트 프롬프트에 의해 이끌리는 동작 생성 프레임워크로, 공간 및 시간 제어를 모두 제공하여 이전 최고 성능 베이스라인 모델을 능가하며 훈련 중에 보지 못한 동작을 합성할 수 있다.\n3. 연구 결과는 FrankenMotion이 이전 모델보다 우수하며 훈련 된 적 없는 동작을 합성할 수 있다는 것을 입증하며, 코드와 데이터셋은 공개될 예정이다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Entropy Sentinel: Continuous LLM Accuracy Monitoring from Decoding Entropy Traces in STEM",
+    "abstract": "Deploying LLMs raises two coupled challenges: (1) monitoring - estimating where a model underperforms as traffic and domains drift - and (2) improvement - prioritizing data acquisition to close the largest performance gaps. We test whether an inference-time signal can estimate slice-level accuracy under domain shift. For each response, we compute an output-entropy profile from final-layer next-token probabilities (from top-k logprobs) and summarize it with eleven statistics. A lightweight classifier predicts instance correctness, and averaging predicted probabilities yields a domain-level accuracy estimate. We evaluate on ten STEM reasoning benchmarks with exhaustive train/test compositions (k in {1,2,3,4}; all \"10 choose k\" combinations), across nine LLMs from six families (3B-20B). Estimates often track held-out benchmark accuracy, and several models show near-monotonic ordering of domains. Output-entropy profiles are thus an accessible signal for scalable monitoring and for targeting data acquisition.",
+    "authors": [
+      "Pedro Memoli Buffa",
+      "Luciano Del Corro"
+    ],
+    "likes": 10,
+    "published_date": "Jan 13",
+    "url": "https://huggingface.co/papers/2601.09001",
+    "date_collected": "2026-01-20T07:08:48.502268+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "엔트로피 감시자: STEM에서 디코딩 엔트로피 트레이스로부터 지속적인 LLM 정확도 모니터링",
+      "abstract": "LLM(Large Language Model) 배포는 모델의 성능이 하락하는 지점을 추정하고 데이터 획득을 최적화하는 두 가지 도전에 직면한다. 본 연구에서는 추론 시점 신호가 도메인 변화 아래에서 슬라이스 수준 정확도를 추정할 수 있는지 여부를 검증한다. 각 응답에 대해 최종 레이어 다음 토큰 확률 (상위-k 로그 확률)로부터 출력 엔트로피 프로필을 계산하고 열한 가지 통계로 요약한다. 가벼운 분류기가 인스턴스 정확도를 예측하며 예측 확률의 평균을 통해 도메인 수준 정확도를 추정한다. 본 연구에서는 여러 LLM(Large Language Model)을 사용하여 열 가지 STEM 추론 벤치마크에서 평가하였으며, 출력 엔트로피 프로필은 확장 가능한 모니터링과 데이터 획득 대상을 위한 접근 가능한 신호임을 보여준다."
+    },
+    "summary": "1. LLM 성능 모니터링과 최적화에 대한 도전에 대응하기 위해 디코딩 엔트로피 트레이스에서 슬라이스 수준 정확도를 추정하는데 사용되는 신호가 유효함을 확인하였다.\n2. 모델의 출력 엔트로피 프로필을 통해 인스턴스 정확도를 예측하고 도메인 수준 정확도를 추정함으로써 전반적인 성능을 평가하였다.\n3. 여러 STEM 추론 벤치마크에서 실험을 진행한 결과, 출력 엔트로피 프로필이 모델의 정확도를 추정하고 데이터 획득을 타겟팅하는데 유용한 신호임을 확인하였다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "ProFit: Leveraging High-Value Signals in SFT via Probability-Guided Token Selection",
+    "abstract": "Supervised fine-tuning (SFT) is a fundamental post-training strategy to align Large Language Models (LLMs) with human intent. However, traditional SFT often ignores the one-to-many nature of language by forcing alignment with a single reference answer, leading to the model overfitting to non-core expressions. Although our empirical analysis suggests that introducing multiple reference answers can mitigate this issue, the prohibitive data and computational costs necessitate a strategic shift: prioritizing the mitigation of single-reference overfitting over the costly pursuit of answer diversity. To achieve this, we reveal the intrinsic connection between token probability and semantic importance: high-probability tokens carry the core logical framework, while low-probability tokens are mostly replaceable expressions. Based on this insight, we propose ProFit, which selectively masks low-probability tokens to prevent surface-level overfitting. Extensive experiments confirm that ProFit consistently outperforms traditional SFT baselines on general reasoning and mathematical benchmarks.",
+    "authors": [
+      "Tao Liu",
+      "Taiqiang Wu",
+      "Runming Yang",
+      "Shaoning Sun",
+      "Junjie Wang",
+      "Yujiu Yang"
+    ],
+    "likes": 9,
+    "published_date": "Jan 14",
+    "url": "https://huggingface.co/papers/2601.09195",
+    "date_collected": "2026-01-20T07:08:48.503644+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "ProFit: 확률 가이드 토큰 선택을 통해 SFT에서 고 가치 신호 활용",
+      "abstract": "지도 미세 조정(Supervised fine-tuning, SFT)은 대규모 언어 모델(Large Language Models, LLMs)을 인간 의도에 맞게 조정하는 기본적인 사후 훈련 전략입니다. 그러나 기존의 SFT는 종종 언어의 일대다 특성을 무시하고 단일 참조 답변과의 조정을 강제하여 모델이 비핵심적 표현에 과적합되는 문제가 발생합니다. 우리의 경험적 분석에 따르면, 복수의 참조 답변을 도입함으로써 이 문제를 완화할 수 있지만, 데이터 및 계산 비용이 막대한 흡수로 인해 비싼 답변 다양성을 추구하기보다는 단일 참조 과적합 완화에 우선 순위를 두어야 합니다. 이를 위해 우리는 토큰 확률과 의미적 중요성 사이의 내재적 연결을 밝혀냅니다: 높은 확률 토큰은 핵심 논리 구조를 가지고 있으며, 낮은 확률 토큰은 대부분 대체 가능한 표현입니다. 이 통찰을 기반으로 우리는 ProFit을 제안합니다. ProFit은 낮은 확률 토큰을 선택적으로 마스킹하여 표면적 과적합을 방지합니다. 포괄적인 실험 결과는 ProFit이 일반적 추론 및 수학 벤치마크에서 기존의 SFT 기준을 일관되게 능가한다는 것을 확인합니다."
+    },
+    "summary": "1. 지도 미세 조정(SFT)은 대규모 언어 모델을 인간 의도에 맞게 조정하는 전략이지만, 과적합 문제가 있어 이에 대한 전략적 변화가 필요하다.\n2. ProFit은 토큰 확률과 의미적 중요성 사이의 연결을 활용하여 낮은 확률 토큰을 마스킹하여 과적합을 방지하며, 기존 SFT보다 우수한 성능을 보이고 있다.\n3. ProFit은 일반적인 추론과 수학적 평가에서 기존 SFT에 비해 일관된 우수성을 입증하였다.",
+    "categories": [
+      "LLM",
+      "기타"
+    ]
+  }
+]

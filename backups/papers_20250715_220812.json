@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Test-Time Scaling with Reflective Generative Model",
+    "abstract": "We introduce our first reflective generative model MetaStone-S1, which\nobtains OpenAI o3's performance via the self-supervised process reward model\n(SPRM). Through sharing the backbone network and using task-specific heads for\nnext token prediction and process scoring respectively, SPRM successfully\nintegrates the policy model and process reward model(PRM) into a unified\ninterface without extra process annotation, reducing over 99% PRM parameters\nfor efficient reasoning. Equipped with SPRM, MetaStone-S1 is naturally suitable\nfor test time scaling (TTS), and we provide three reasoning effort modes (low,\nmedium, and high), based on the controllable thinking length. Moreover, we\nempirically establish a scaling law that reveals the relationship between total\nthinking computation and TTS performance. Experiments demonstrate that our\nMetaStone-S1 achieves comparable performance to OpenAI-o3-mini's series with\nonly 32B parameter size. To support the research community, we have\nopen-sourced MetaStone-S1 at https://github.com/MetaStone-AI/MetaStone-S1.",
+    "authors": [
+      "Zixiao Wang",
+      "Yuxin Wang",
+      "Xiaorui Wang",
+      "Mengting Xing",
+      "Jie Gao",
+      "Jianjun Xu",
+      "Guangcan Liu",
+      "Chenhui Jin",
+      "Zhuo Wang",
+      "Shengzhuo Zhang",
+      "Hongtao Xie"
+    ],
+    "likes": 67,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01951",
+    "date_collected": "2025-07-15T07:08:08.070474+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "반사적 생성 모델을 활용한 테스트 시간 스케일링",
+      "abstract": "본 연구에서는 첫 번째 반사적 생성 모델인 MetaStone-S1을 소개합니다. OpenAI o3의 성능을 달성하기 위해 자가 지도 학습 과정 보상 모델(SPRM)을 활용합니다. SPRM은 공통된 백본 네트워크를 공유하고 다음 토큰 예측 및 과정 점수화를 위해 작업별 머리를 사용하여 정책 모델과 과정 보상 모델(PRM)을 추가적인 과정 주석 없이 통합 인터페이스로 성공적으로 통합시킵니다. 효율적 추론을 위해 PRM 파라미터를 99% 이상 줄입니다. SPRM을 장착한 MetaStone-S1은 테스트 시간 스케일링(TTS)에 적합하며, 제어 가능한 사고 길이를 기반으로 낮은, 중간, 높은 세 가지 추론 노력 모드를 제공합니다. 또한, 총 사고 계산과 TTS 성능 간 관계를 밝히는 스케일링 법칙을 경험적으로 입증합니다. 실험 결과 MetaStone-S1은 32B 파라미터 크기로 OpenAI-o3-mini 시리즈와 유사한 성능을 달성합니다. 연구 공동체를 지원하기 위해 MetaStone-S1은 https://github.com/MetaStone-AI/MetaStone-S1에서 오픈 소스로 제공됩니다."
+    },
+    "summary": "1. MetaStone-S1은 자가 지도 학습 과정 보상 모델을 통해 효율적인 추론을 위한 공통 인터페이스를 제공하며, 테스트 시간 스케일링에 적합한 세 가지 추론 노력 모드를 제공합니다.\n2. 연구에서는 총 사고 계산과 TTS 성능 사이의 관계를 밝히는 스케일링 법칙을 경험적으로 입증했으며, MetaStone-S1이 작은 파라미터 크기로 비교 가능한 성능을 보여줍니다.\n3. MetaStone-S1은 연구 공동체에 오픈 소스로 제공되어 다양한 활용 가능성을 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive\n  Neural Rendering",
+    "abstract": "This paper proposes a neural rendering approach that represents a scene as\n\"compressed light-field tokens (CLiFTs)\", retaining rich appearance and\ngeometric information of a scene. CLiFT enables compute-efficient rendering by\ncompressed tokens, while being capable of changing the number of tokens to\nrepresent a scene or render a novel view with one trained network. Concretely,\ngiven a set of images, multi-view encoder tokenizes the images with the camera\nposes. Latent-space K-means selects a reduced set of rays as cluster centroids\nusing the tokens. The multi-view ``condenser'' compresses the information of\nall the tokens into the centroid tokens to construct CLiFTs. At test time,\ngiven a target view and a compute budget (i.e., the number of CLiFTs), the\nsystem collects the specified number of nearby tokens and synthesizes a novel\nview using a compute-adaptive renderer. Extensive experiments on RealEstate10K\nand DL3DV datasets quantitatively and qualitatively validate our approach,\nachieving significant data reduction with comparable rendering quality and the\nhighest overall rendering score, while providing trade-offs of data size,\nrendering quality, and rendering speed.",
+    "authors": [
+      "Zhengqing Wang",
+      "Yuefan Wu",
+      "Jiacheng Chen",
+      "Fuyang Zhang",
+      "Yasutaka Furukawa"
+    ],
+    "likes": 41,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08776",
+    "date_collected": "2025-07-15T07:08:08.071703+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "CLiFT: Compute-Efficient 및 Adaptive를 위한 압축적 광필드 토큰 Neural 렌더링",
+      "abstract": "본 논문은 \"압축된 광필드 토큰 (CLiFTs)\"으로 장면을 표현하는 신경 렌더링 접근법을 제안하며, 장면의 풍부한 외형 및 기하학적 정보를 보존합니다. CLiFT는 압축된 토큰으로 계산 효율적인 렌더링을 가능하게 하며, 훈련된 하나의 네트워크로 장면을 나타내거나 새로운 뷰를 렌더링할 때 토큰 수를 변경할 수 있습니다. 구체적으로, 이미지 집합을 제공하면 다중 뷰 인코더는 카메라 위치로 이미지를 토큰화합니다. 잠재 공간 K-means는 토큰을 사용하여 클러스터 중심을 선택하여 감소된 광선 세트를 선택합니다. 다중 뷰 \"압축기\"는 모든 토큰의 정보를 중심 토큰으로 압축하여 CLiFTs를 구성합니다. 시험 시, 대상 뷰 및 컴퓨트 예산(즉, CLiFT의 수)이 주어지면 시스템은 지정된 수의 인근 토큰을 수집하고 컴퓨트 적응형 렌더러를 사용하여 새로운 뷰를 합성합니다. RealEstate10K 및 DL3DV 데이터 세트에서의 광범위한 실험은 우리의 접근법을 양적 및 질적으로 검증하며, 데이터 크기, 렌더링 품질 및 렌더링 속도의 균형을 제공하면서 비교 가능한 렌더링 품질과 가장 높은 종합 렌더링 점수를 달성합니다."
+    },
+    "summary": "1. CLiFT는 압축된 토큰을 사용해 장면을 효율적으로 렌더링하며, 훈련된 네트워크로 새로운 뷰를 렌더링할 수 있습니다.\n2. 다중 뷰 인코더는 이미지를 카메라 위치로 토큰화하고, K-means는 클러스터 중심을 선택하여 광선의 감소된 세트를 생성합니다.\n3. CLiFT 시스템은 컴퓨트 예산에 맞게 인근 토큰을 수집하여 새로운 뷰를 합성하는데 사용됩니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "NeuralOS: Towards Simulating Operating Systems via Neural Generative\n  Models",
+    "abstract": "We introduce NeuralOS, a neural framework that simulates graphical user\ninterfaces (GUIs) of operating systems by directly predicting screen frames in\nresponse to user inputs such as mouse movements, clicks, and keyboard events.\nNeuralOS combines a recurrent neural network (RNN), which tracks computer\nstate, with a diffusion-based neural renderer that generates screen images. The\nmodel is trained on a large-scale dataset of Ubuntu XFCE recordings, which\ninclude both randomly generated interactions and realistic interactions\nproduced by AI agents. Experiments show that NeuralOS successfully renders\nrealistic GUI sequences, accurately captures mouse interactions, and reliably\npredicts state transitions like application launches. Although modeling\nfine-grained keyboard interactions precisely remains challenging, NeuralOS\noffers a step toward creating fully adaptive, generative neural interfaces for\nfuture human-computer interaction systems.",
+    "authors": [
+      "Luke Rivard",
+      "Sun Sun",
+      "Hongyu Guo",
+      "Wenhu Chen",
+      "Yuntian Deng"
+    ],
+    "likes": 33,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08800",
+    "date_collected": "2025-07-15T07:08:08.072904+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "NeuralOS: 신경 생성 모델을 통한 운영 체제 시뮬레이션을 향하여",
+      "abstract": "본 연구에서는 사용자 입력에 대응하여 마우스 움직임, 클릭 및 키보드 이벤트와 같은 운영 체제의 그래픽 사용자 인터페이스(GUI)를 직접 예측하는 신경망 프레임워크 NeuralOS를 소개합니다. NeuralOS는 컴퓨터 상태를 추적하는 순환 신경망(RNN)과 화면 이미지를 생성하는 확산 기반 신경 렌더러를 결합합니다. 이 모델은 Ubuntu XFCE 녹화의 대규모 데이터셋에서 학습되었으며, 무작위로 생성된 상호작용과 AI 에이전트에 의해 생성된 실제 상호작용이 포함되어 있습니다. 실험 결과, NeuralOS가 현실적인 GUI 시퀀스를 성공적으로 렌더링하고 마우스 상호작용을 정확히 캡처하며 응용프로그램 실행과 같은 상태 전이를 신뢰성 있게 예측함이 확인되었습니다. 세밀한 키보드 상호작용을 정확히 모델링하는 것은 여전히 어려우나, NeuralOS는 미래의 인간-컴퓨터 상호작용 시스템을 위한 완전히 적응형, 생성적인 신경 인터페이스를 구축하는 한 걸음을 제시합니다."
+    },
+    "summary": "1. NeuralOS는 컴퓨터 상태를 추적하는 RNN과 화면 이미지를 생성하는 확산 기반 신경 렌더러를 결합하여 운영 체제의 GUI를 예측하는 신경망 프레임워크이다.\n2. 모델은 Ubuntu XFCE 녹화 데이터셋을 기반으로 학습되어 현실적인 GUI 시퀀스를 성공적으로 렌더링하고 마우스 상호작용과 응용프로그램 실행 등을 신뢰성 있게 예측한다.\n3. 세밀한 키보드 상호작용 모델링에는 도전이 남아 있지만, NeuralOS는 미래 인간-컴퓨터 상호작용 시스템을 위한 적응형, 생성적인 신경 인터페이스 제작 방향으로 전진하고 있다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for\n  Visual Reasoning",
+    "abstract": "The remarkable reasoning capability of large language models (LLMs) stems\nfrom cognitive behaviors that emerge through reinforcement with verifiable\nrewards. This work investigates how to transfer this principle to Multimodal\nLLMs (MLLMs) to unlock advanced visual reasoning. We introduce a two-stage\nparadigm built on Qwen2.5-VL-7B: a massive linguistic cold-start fine-tuning,\nfollowed by multimodal reinforcement learning (RL) spanning nearly 1,000 steps,\nsurpassing all previous open-source efforts in scale. This pioneering work\nreveals three fundamental insights: 1) Behavior transfer emerges surprisingly\nearly in cold start due to linguistic mental imagery. 2) Cold start broadly\nmemorizes visual behaviors, while RL critically discerns and scales up\neffective patterns. 3) Transfer strategically favors high-utility behaviors\nsuch as visual reflection. Our resulting model, Open-Vision-Reasoner (OVR),\nachieves state-of-the-art performance on a suite of reasoning benchmarks,\nincluding 95.3% on MATH500, 51.8% on MathVision and 54.6% on MathVerse. We\nrelease our model, data, and training dynamics to catalyze the development of\nmore capable, behavior-aligned multimodal reasoners.",
+    "authors": [
+      "Yana Wei",
+      "Liang Zhao",
+      "Jianjian Sun",
+      "Kangheng Lin",
+      "Jisheng Yin",
+      "Jingcheng Hu",
+      "Yinmin Zhang",
+      "En Yu",
+      "Haoran Lv",
+      "Zejia Weng",
+      "Jia Wang",
+      "Chunrui Han",
+      "Yuang Peng",
+      "Qi Han",
+      "Zheng Ge",
+      "Xiangyu Zhang",
+      "Daxin Jiang",
+      "Vishal M. Patel"
+    ],
+    "likes": 30,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.05255",
+    "date_collected": "2025-07-15T07:08:08.074645+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "오픈 비전 리스너: 시각 추론을 위한 언어적 인지 행동 전이",
+      "abstract": "대형 언어 모델(LLM)의 놀라운 추론 능력은 확인 가능한 보상으로 강화되는 인지 행동에서 비롯됩니다. 본 연구는 이 원리를 다중 모달 언어 모델(MLLM)로 전이해 고급 시각 추론을 발휘하는 방법을 탐구합니다. 우리는 대대적인 언어적 콜드 스타트 파인튜닝인 Qwen2.5-VL-7B에 기반한 1,000 걸음 가까운 다중 모달 강화 학습으로 구성된 두 단계 패러다임을 소개합니다. 이는 이전의 모든 오픈 소스 노력을 뛰어넘는 규모입니다. 이 전례없는 연구는 1) 언어적 정신적 인상 때문에 콜드 스타트 단계에서 행동 전이가 놀랍게 빨리 나타난다는 기본적 통찰을 보여줍니다. 2) 콜드 스타트는 시각적 행동을 넓게 기억하며, 강화 학습은 효과적인 패턴을 결정하고 확대하는 역할을 합니다. 3) 전이는 시각적 반영과 같은 고효용성 행동을 전략적으로 선호합니다. 결과 모델인 오픈-비전-리스너(OVR)은 MATH500에서 95.3%, MathVision에서 51.8%, MathVerse에서 54.6% 포함한 추론 벤치마크에서 최고 수준의 성능을 발휘합니다. 보다 능숙하고 행동에 일치하는 다중 모달 리스너 개발을 촉진하기 위해 모델, 데이터 및 학습 동태를 공개합니다."
+    },
+    "summary": "1. 언어 모델의 인지 행동을 다중 모달 모델로 전이하여 고급 시각 추론을 수행함.\n2. 콜드 스타트에서 행동 전이의 놀라운 속도와 시각적 행동 메모리 제공.\n3. 고효용성 시각적 행동과 같은 행동을 전략적으로 강화하여 최고 성능의 모델 개발.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "KV Cache Steering for Inducing Reasoning in Small Language Models",
+    "abstract": "We propose cache steering, a lightweight method for implicit steering of\nlanguage models via a one-shot intervention applied directly to the key-value\ncache. To validate its effectiveness, we apply cache steering to induce\nchain-of-thought reasoning in small language models. Our approach leverages\nGPT-4o-generated reasoning traces to construct steering vectors that shift\nmodel behavior toward more explicit, multi-step reasoning without fine-tuning\nor prompt modifications. Experimental evaluations on diverse reasoning\nbenchmarks demonstrate that cache steering improves both the qualitative\nstructure of model reasoning and quantitative task performance. Compared to\nprior activation steering techniques that require continuous interventions, our\none-shot cache steering offers substantial advantages in terms of\nhyperparameter stability, inference-time efficiency, and ease of integration,\nmaking it a more robust and practical solution for controlled generation.",
+    "authors": [
+      "Max Belitsky",
+      "Dawid J. Kopiczko",
+      "Michael Dorkenwald",
+      "M. Jehanzeb Mirza",
+      "Cees G. M. Snoek",
+      "Yuki M. Asano"
+    ],
+    "likes": 23,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08799",
+    "date_collected": "2025-07-15T07:08:08.076107+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "작은 언어 모델에서 추론을 유도하기 위한 KV 캐시 스티어링",
+      "abstract": "우리는 캐시 스티어링이라는 경량화된 방법을 제안합니다. 이 방법은 키-값 캐시에 직접 적용되는 일회성 개입을 통해 언어 모델을 암시적으로 조절하는 것입니다. 우리는 캐시 스티어링을 적용하여 작은 언어 모델에서 추론 체인을 유발하는 효과를 검증합니다. 우리의 접근 방식은 GPT-4o가 생성한 추론 추적을 활용하여 모델 행동을 더 명시적이고 다단계적인 추론 방향으로 이동시키는 스티어링 벡터를 구성합니다. 이는 세부 조정이나 프롬프트 수정 없이 모델의 구조를 개선하고 수량적 작업 성능을 향상시킵니다. 다양한 추론 벤치마크에 대한 실험적 평가는 캐시 스티어링이 모델 추론의 질적 구조와 작업 성능을 모두 향상시키는 것을 보여줍니다. 지속 개입이 필요한 이전 활성화 스티어링 기술과 비교하면, 우리의 일회성 캐시 스티어링은 하이퍼파라미터 안정성, 추론 시간 효율성 및 통합 용이성 측면에서 상당한 장점을 제공하며, 제어된 생성을 위한 더 견고하고 실용적인 솔루션입니다."
+    },
+    "summary": "1. KV 캐시 스티어링은 언어 모델의 추론 능력을 개선하기 위한 경량 방법으로, GPT-4o 추론 추적을 이용하여 모델 행동을 조절하여 다단계적 추론을 유도한다.\n2. 캐시 스티어링은 세부 조정이나 프롬프트 수정 없이도 모델 구조를 향상시키고 작업 성능을 향상시키며, 다양한 추론 벤치마크에서 그 효과를 검증하였다.\n3. 기존의 활성화 스티어링 기술과 비교하여 캐시 스티어링은 하이퍼파라미터 안정성, 추론 시간 효율성 및 통합 용이성 측면에서 뛰어난 장점을 가지고 있어, 제어된 생성을 위한 실용적인 솔루션이다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Neural-Driven Image Editing",
+    "abstract": "Traditional image editing typically relies on manual prompting, making it\nlabor-intensive and inaccessible to individuals with limited motor control or\nlanguage abilities. Leveraging recent advances in brain-computer interfaces\n(BCIs) and generative models, we propose LoongX, a hands-free image editing\napproach driven by multimodal neurophysiological signals. LoongX utilizes\nstate-of-the-art diffusion models trained on a comprehensive dataset of 23,928\nimage editing pairs, each paired with synchronized electroencephalography\n(EEG), functional near-infrared spectroscopy (fNIRS), photoplethysmography\n(PPG), and head motion signals that capture user intent. To effectively address\nthe heterogeneity of these signals, LoongX integrates two key modules. The\ncross-scale state space (CS3) module encodes informative modality-specific\nfeatures. The dynamic gated fusion (DGF) module further aggregates these\nfeatures into a unified latent space, which is then aligned with edit semantics\nvia fine-tuning on a diffusion transformer (DiT). Additionally, we pre-train\nthe encoders using contrastive learning to align cognitive states with semantic\nintentions from embedded natural language. Extensive experiments demonstrate\nthat LoongX achieves performance comparable to text-driven methods (CLIP-I:\n0.6605 vs. 0.6558; DINO: 0.4812 vs. 0.4636) and outperforms them when neural\nsignals are combined with speech (CLIP-T: 0.2588 vs. 0.2549). These results\nhighlight the promise of neural-driven generative models in enabling\naccessible, intuitive image editing and open new directions for\ncognitive-driven creative technologies. Datasets and code will be released to\nsupport future work and foster progress in this emerging area.",
+    "authors": [
+      "Pengfei Zhou",
+      "Jie Xia",
+      "Xiaopeng Peng",
+      "Wangbo Zhao",
+      "Zilong Ye",
+      "Zekai Li",
+      "Suorong Yang",
+      "Jiadong Pan",
+      "Yuanxiang Chen",
+      "Ziqiao Wang",
+      "Kai Wang",
+      "Qian Zheng",
+      "Xiaojun Chang",
+      "Gang Pan",
+      "Shurong Dong",
+      "Kaipeng Zhang",
+      "Yang You"
+    ],
+    "likes": 23,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.05397",
+    "date_collected": "2025-07-15T07:08:08.077892+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "신경 주도형 이미지 편집",
+      "abstract": "기존 이미지 편집은 수동 프롬프팅을 기반으로 하며, 이는 인력 집약적이고 운동 기능 제한이나 언어 능력이 제한된 개인에게는 접근하기 어렵다. 뇌-컴퓨터 인터페이스(BCI)와 생성 모델의 최근 발전을 활용하여, 우리는 다중 모달 신경생리학 신호에 기반한 'LoongX'라는 무료 이미지 편집 방법을 제안한다."
+    },
+    "summary": "1. LoongX는 다양한 신호들을 포착하는 EEG, fNIRS, PPG, 및 머리 움직임 신호와 동기화된 23,928개의 이미지 편집 쌍을 학습한 최신 확산 모델을 활용하여 사용자 의도를 파악한다.\n2. LoongX는 CS3 모듈과 DGF 모듈을 결합해 다양한 신호의 이질성을 효과적으로 다루며, DiT를 통해 편집 의미론과 일치되는 통합 잠재 공간을 형성한다.\n3. 실험에서 LoongX는 CLIP-I 및 DINO과 같은 텍스트 주도 방법에 대한 성능을 달성하고, 신경 신호와 음성이 결합될 때 이를 능가함을 입증한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Lumos-1: On Autoregressive Video Generation from a Unified Model\n  Perspective",
+    "abstract": "Autoregressive large language models (LLMs) have unified a vast range of\nlanguage tasks, inspiring preliminary efforts in autoregressive video\ngeneration. Existing autoregressive video generators either diverge from\nstandard LLM architectures, depend on bulky external text encoders, or incur\nprohibitive latency due to next-token decoding. In this paper, we introduce\nLumos-1, an autoregressive video generator that retains the LLM architecture\nwith minimal architectural modifications. To inject spatiotemporal correlations\nin LLMs, we identify the efficacy of incorporating 3D RoPE and diagnose its\nimbalanced frequency spectrum ranges. Therefore, we propose MM-RoPE, a RoPE\nscheme that preserves the original textual RoPE while providing comprehensive\nfrequency spectra and scaled 3D positions for modeling multimodal\nspatiotemporal data. Moreover, Lumos-1 resorts to a token dependency strategy\nthat obeys intra-frame bidirectionality and inter-frame temporal causality.\nBased on this dependency strategy, we identify the issue of frame-wise loss\nimbalance caused by spatial information redundancy and solve it by proposing\nAutoregressive Discrete Diffusion Forcing (AR-DF). AR-DF introduces temporal\ntube masking during training with a compatible inference-time masking policy to\navoid quality degradation. By using memory-efficient training techniques, we\npre-train Lumos-1 on only 48 GPUs, achieving performance comparable to EMU3 on\nGenEval, COSMOS-Video2World on VBench-I2V, and OpenSoraPlan on VBench-T2V. Code\nand models are available at https://github.com/alibaba-damo-academy/Lumos.",
+    "authors": [
+      "Hangjie Yuan",
+      "Weihua Chen",
+      "Jun Cen",
+      "Hu Yu",
+      "Jingyun Liang",
+      "Shuning Chang",
+      "Zhihui Lin",
+      "Tao Feng",
+      "Pengwei Liu",
+      "Jiazheng Xing",
+      "Hao Luo",
+      "Jiasheng Tang",
+      "Fan Wang",
+      "Yi Yang"
+    ],
+    "likes": 18,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08801",
+    "date_collected": "2025-07-15T07:08:08.079473+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "Lumos-1: 단일 모델로부터의 자기 회귀적 비디오 생성에 대해",
+      "abstract": "자기 회귀적 대형언어 모델(Large Language Models, LLMs)은 다양한 언어 작업들을 하나로 통합시켜 왔으며, 이는 비디오 생성에 대한 예비 노력을 일깨웠습니다. 기존의 자기 회귀적 비디오 생성기들은 표준 LLM 아키텍처에서 벗어나거나 비대한 외부 텍스트 인코더에 의존하거나 다음 토큰 디코딩으로 인한 금지할 수준의 대기시간을 초래합니다. 본 논문에서는 LLM 아키텍처를 최소한의 구조적 수정으로 유지하는 자기 회귀적 비디오 생성기인 Lumos-1을 제안합니다."
+    },
+    "summary": "1. Lumos-1은 LLM 아키텍처를 최소 변경으로 유지하며, 3D RoPE를 통합하여 시공간 상관 관계를 주입합니다.\n2. MM-RoPE는 원래의 텍스트 RoPE를 보존하면서 다중 모달 시공간 데이터 모델링을 위해 포괄적인 주파수 스펙트럼 및 스케일된 3D 위치를 제공하는 RoPE 방식을 제안합니다.\n3. Lumos-1은 프레임 내 양방향성과 프레임 간 시간적 인과 관계를 준수하는 토큰 의존성 전략을 택하며, 공간 정보 중복으로 인한 프레임별 손실 불균형 문제를 해결하기 위해 AR-DF를 제안합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,\n  Long Context, and Next Generation Agentic Capabilities",
+    "abstract": "In this report, we introduce the Gemini 2.X model family: Gemini 2.5 Pro and\nGemini 2.5 Flash, as well as our earlier Gemini 2.0 Flash and Flash-Lite\nmodels. Gemini 2.5 Pro is our most capable model yet, achieving SoTA\nperformance on frontier coding and reasoning benchmarks. In addition to its\nincredible coding and reasoning skills, Gemini 2.5 Pro is a thinking model that\nexcels at multimodal understanding and it is now able to process up to 3 hours\nof video content. Its unique combination of long context, multimodal and\nreasoning capabilities can be combined to unlock new agentic workflows. Gemini\n2.5 Flash provides excellent reasoning abilities at a fraction of the compute\nand latency requirements and Gemini 2.0 Flash and Flash-Lite provide high\nperformance at low latency and cost. Taken together, the Gemini 2.X model\ngeneration spans the full Pareto frontier of model capability vs cost, allowing\nusers to explore the boundaries of what is possible with complex agentic\nproblem solving.",
+    "authors": [
+      "Gheorghe Comanici",
+      "Eric Bieber",
+      "Mike Schaekermann",
+      "Ice Pasupat",
+      "Noveen Sachdeva",
+      "Inderjit Dhillon",
+      "Marcel Blistein",
+      "Ori Ram",
+      "Dan Zhang",
+      "Evan Rosen",
+      "Luke Marris",
+      "Sam Petulla",
+      "Colin Gaffney",
+      "Asaf Aharoni",
+      "Nathan Lintz",
+      "Tiago Cardal Pais",
+      "Henrik Jacobsson",
+      "Idan Szpektor",
+      "Nan-Jiang Jiang",
+      "Krishna Haridasan",
+      "Ahmed Omran",
+      "Nikunj Saunshi"
+    ],
+    "likes": 18,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.06261",
+    "date_collected": "2025-07-15T07:08:08.081399+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "Gemini 2.5: 고도의 추론, 다중 모달, 장기적 맥락 및 차세대 에이전틱 기능으로 한계를 넓히다",
+      "abstract": "본 보고서에서는 Gemini 2.X 모델 패밀리를 소개합니다: Gemini 2.5 Pro 및 Gemini 2.5 Flash, 그리고 이전 Gemini 2.0 Flash 및 Flash-Lite 모델들을 소개합니다. Gemini 2.5 Pro는 최신 모델로, 선두적인 코딩 및 추론 기준에 SoTA 성능을 달성합니다. 엄청난 코딩과 추론 능력 외에, Gemini 2.5 Pro는 다중 모달 이해를 뛰어나게 하고 이제 최대 3시간의 비디오 콘텐츠를 처리할 수 있습니다. 장기적 맥락, 다중 모달 및 추론 능력의 독특한 결합은 새로운 에이전틱 워크플로를 해제할 수 있습니다. Gemini 2.5 Flash는 계산 및 지연 요구 사항의 일부에 불과한 우수한 추론 능력을 제공하며 Gemini 2.0 Flash 및 Flash-Lite는 낮은 지연 및 비용으로 뛰어난 성능을 제공합니다. 합쳐서, Gemini 2.X 모델 세대는 모델 능력 대 비용의 완전 파레토 경계 전체에 걸쳐 사용자가 복잡한 에이전틱 문제 해결이 가능한 한계를 탐색할 수 있게 합니다."
+    },
+    "summary": "",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "One Token to Fool LLM-as-a-Judge",
+    "abstract": "Generative reward models (also known as LLMs-as-judges), which use large\nlanguage models (LLMs) to evaluate answer quality, are increasingly adopted in\nreinforcement learning with verifiable rewards (RLVR). They are often preferred\nover rigid rule-based metrics, especially for complex reasoning tasks involving\nfree-form outputs. In this paradigm, an LLM is typically prompted to compare a\ncandidate answer against a ground-truth reference and assign a binary reward\nindicating correctness. Despite the seeming simplicity of this comparison task,\nwe find that generative reward models exhibit surprising vulnerabilities to\nsuperficial manipulations: non-word symbols (e.g., \":\" or \".\") or reasoning\nopeners like \"Thought process:\" and \"Let's solve this problem step by step.\"\ncan often lead to false positive rewards. We demonstrate that this weakness is\nwidespread across LLMs, datasets, and prompt formats, posing a serious threat\nfor core algorithmic paradigms that rely on generative reward models, such as\nrejection sampling, preference optimization, and RLVR. To mitigate this issue,\nwe introduce a simple yet effective data augmentation strategy and train a new\ngenerative reward model with substantially improved robustness. Our findings\nhighlight the urgent need for more reliable LLM-based evaluation methods. We\nrelease our robust, general-domain reward model and its synthetic training data\nat https://huggingface.co/sarosavo/Master-RM and\nhttps://huggingface.co/datasets/sarosavo/Master-RM.",
+    "authors": [
+      "Yulai Zhao",
+      "Haolin Liu",
+      "Dian Yu",
+      "S. Y. Kung",
+      "Haitao Mi",
+      "Dong Yu"
+    ],
+    "likes": 12,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08794",
+    "date_collected": "2025-07-15T07:08:08.082595+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "판별 모델 속이기 위한 단일 토큰",
+      "abstract": "대답 품질을 평가하기 위해 대규모 언어 모델(Large Language Models, LLM)을 활용하는 생성 보상 모델(즉, LLM-판사)은 검증 가능한 보상(reward)을 갖춘 강화 학습(reinforcement learning)에서 점차 채택되고 있습니다. 이러한 모델들은 자유 형식의 출력을 포함하는 복잡한 추론 작업에서 일반적으로 강제적인 규칙 기반 측정보다 선호됩니다. 이 패러다임에서 LLM은 일반적으로 후보 답변을 실종 영역에 대한 기준 참조와 비교하고 정확성을 나타내는 이진 보상을 할당하도록 유도됩니다. 이 비교 작업이 보다 간단해 보이더라도, 생성적 보상 모델은 표면적 조작에 놀라운 취약점을 보이는 것으로 나타났습니다."
+    },
+    "summary": "1. 생성 보상 모델(LLM-판사)은 표면적 조작에 취약하여 잘못된 보상을 부여할 수 있음.\n2. 새로운 데이터 증강 전략을 도입하여 생성 보상 모델의 강건성을 크게 향상시킴.\n3. 보다 신뢰할 만한 LLM 기반 평가 방법에 대한 긴급한 필요성을 강조함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "From One to More: Contextual Part Latents for 3D Generation",
+    "abstract": "Recent advances in 3D generation have transitioned from multi-view 2D\nrendering approaches to 3D-native latent diffusion frameworks that exploit\ngeometric priors in ground truth data. Despite progress, three key limitations\npersist: (1) Single-latent representations fail to capture complex multi-part\ngeometries, causing detail degradation; (2) Holistic latent coding neglects\npart independence and interrelationships critical for compositional design; (3)\nGlobal conditioning mechanisms lack fine-grained controllability. Inspired by\nhuman 3D design workflows, we propose CoPart - a part-aware diffusion framework\nthat decomposes 3D objects into contextual part latents for coherent multi-part\ngeneration. This paradigm offers three advantages: i) Reduces encoding\ncomplexity through part decomposition; ii) Enables explicit part relationship\nmodeling; iii) Supports part-level conditioning. We further develop a mutual\nguidance strategy to fine-tune pre-trained diffusion models for joint part\nlatent denoising, ensuring both geometric coherence and foundation model\npriors. To enable large-scale training, we construct Partverse - a novel 3D\npart dataset derived from Objaverse through automated mesh segmentation and\nhuman-verified annotations. Extensive experiments demonstrate CoPart's superior\ncapabilities in part-level editing, articulated object generation, and scene\ncomposition with unprecedented controllability.",
+    "authors": [
+      "Shaocong Dong",
+      "Lihe Ding",
+      "Xiao Chen",
+      "Yaokun Li",
+      "Yuxin Wang",
+      "Yucheng Wang",
+      "Qi Wang",
+      "Jaehyeok Kim",
+      "Chenjian Gao",
+      "Zhanpeng Huang",
+      "Zibin Wang",
+      "Tianfan Xue",
+      "Dan Xu"
+    ],
+    "likes": 10,
+    "published_date": "Jul 11",
+    "url": "https://huggingface.co/papers/2507.08772",
+    "date_collected": "2025-07-15T07:08:08.084109+09:00",
+    "week": "2025-W29",
+    "translation": {
+      "title": "하나에서 여러 개로: 3D 생성을 위한 맥락적인 부위 잠재 요인",
+      "abstract": "최근 3D 생성의 발전은 다각도 2D 렌더링 접근법에서 지면진실 데이터의 기하학적 선험을 활용하는 3D 본연의 잠재 확산 프레임워크로 전환되었습니다. 그러나 발전에도 불구하고 세 가지 주요 한계가 남아 있습니다: (1) 단일 잠재 표현은 복잡한 다부분 기하학을 포착하지 못해 세부 정보가 손상됩니다; (2) 전체적인 잠재 부호화는 조합적 설계에 중요한 부분 독립성 및 상호 관계를 무시합니다; (3) 전역 조건화 메커니즘은 미세한 조절 가능성이 부족합니다. 우리는 인간 3D 디자인 작업에서 영감을 받아 일관된 다부분 생성을 위해 3D 객체를 맥락적인 부위 잠재 요인으로 분해하는 CoPart를 제안합니다. 이 패러다임은 세 가지 이점을 제공합니다: i) 부분 분해를 통한 부호화 복잡성 감소; ii) 명시적인 부분 관계 모델링 가능; iii) 부분 수준의 조건부 표현 지원. 미리 훈련된 확산 모델을 부분 잠재 소음 제거를 위해 상호적인 안내 전략을 개발하여 기하학적 일관성과 기초 모델 선호를 보장합니다. 대규모 훈련을 가능하게 하기 위해 Objaverse로부터 파생된 새로운 3D 부분 데이터 세트 Partverse를 구축하였습니다. 체계적인 실험은 CoPart의 우수한 능력을 부분 수준 편집, 관절 객체 생성, 및 예측할 수 없는 조작 가능한 장면 구성에서 나타냅니다."
+    },
+    "summary": "1. 단일 잠재 표현의 한계 극복을 위해 CoPart는 3D 객체를 부위별로 분해하여 복합적인 다부분 생성을 제공합니다.\n2. CoPart는 부분 관계 모델링과 부분 수준 조건부 표현이 가능해져 복잡한 설계를 지원합니다.\n3. Partverse 데이터 세트를 이용한 실험 결과, CoPart는 부분 수준 편집, 관절 객체 생성, 및 조작 가능한 장면 구성에 뛰어난 성능을 보입니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  }
+]

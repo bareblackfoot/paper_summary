@@ -1,0 +1,157 @@
+=== Paper Collection Started at Sun Jun 22 22:07:06 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W26
+URL: https://huggingface.co/papers/week/2025-W26
+Found 10 papers in weekly view
+Fetching likes for: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Fetching likes for: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Fetching likes for: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Fetching likes for: Sekai: A Video Dataset towards World Exploration
+Fetching likes for: Scaling Test-time Compute for LLM Agents
+Fetching likes for: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Fetching likes for: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Fetching likes for: CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following
+Fetching likes for: Marrying Autoregressive Transformer and Diffusion with Multi-Reference
+  Autoregression
+Fetching likes for: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Selected top 10 papers by likes:
+1. MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention (221 likes)
+2. MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation (85 likes)
+3. Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning (64 likes)
+4. Sekai: A Video Dataset towards World Exploration (54 likes)
+5. Scaling Test-time Compute for LLM Agents (54 likes)
+6. DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents (54 likes)
+7. Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback (52 likes)
+8. CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following (50 likes)
+9. Marrying Autoregressive Transformer and Diffusion with Multi-Reference
+  Autoregression (45 likes)
+10. DoTA-RAG: Dynamic of Thought Aggregation RAG (44 likes)
+Found abstract: We introduce MiniMax-M1, the world's first open-weight, large-scale
+hybrid-attention reasoning model...
+Processed paper: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Found abstract: Recent advances in large language models (LLMs) have accelerated progress in
+financial NLP and appli...
+Processed paper: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Found abstract: Scientific discoveries increasingly rely on complex multimodal reasoning
+based on information-intens...
+Processed paper: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Found abstract: Video generation techniques have made remarkable progress, promising to be
+the foundation of interac...
+Processed paper: Sekai: A Video Dataset towards World Exploration
+Found abstract: Scaling test time compute has shown remarkable success in improving the
+reasoning abilities of large...
+Processed paper: Scaling Test-time Compute for LLM Agents
+Found abstract: Deep Research Agents are a prominent category of LLM-based agents. By
+autonomously orchestrating mul...
+Processed paper: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Found abstract: Recent studies have shown LLMs possess some ability to improve their
+responses when given external f...
+Processed paper: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Found abstract: Recent advances in audio-text large language models (LLMs) have opened new
+possibilities for music u...
+Processed paper: CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following
+Found abstract: We introduce TransDiff, the first image generation model that marries
+Autoregressive (AR) Transforme...
+Processed paper: Marrying Autoregressive Transformer and Diffusion with Multi-Reference
+  Autoregression
+Found abstract: In this paper, we introduce DoTA-RAG (Dynamic-of-Thought Aggregation RAG), a
+retrieval-augmented gen...
+Processed paper: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Paper already exists, checking if translation is complete...
+Update likes: 221  ->  218
+Update date_collected: 2025-06-23T07:07:14.412122+09:00  ->  2025-06-22T07:06:55.055424+09:00
+
+Processing paper 2/10
+Title: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  82
+Update date_collected: 2025-06-23T07:07:14.414132+09:00  ->  2025-06-22T07:06:55.057379+09:00
+
+Processing paper 3/10
+Title: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  64
+Update date_collected: 2025-06-23T07:07:14.416110+09:00  ->  2025-06-22T07:06:55.059314+09:00
+
+Processing paper 4/10
+Title: Sekai: A Video Dataset towards World Exploration
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  52
+Update date_collected: 2025-06-23T07:07:14.417971+09:00  ->  2025-06-22T07:06:55.063898+09:00
+
+Processing paper 5/10
+Title: Scaling Test-time Compute for LLM Agents
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  53
+Update date_collected: 2025-06-23T07:07:14.419608+09:00  ->  2025-06-22T07:06:55.062087+09:00
+
+Processing paper 6/10
+Title: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  54
+Update date_collected: 2025-06-23T07:07:14.420832+09:00  ->  2025-06-22T07:06:55.060486+09:00
+
+Processing paper 7/10
+Title: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  50
+Update date_collected: 2025-06-23T07:07:14.422073+09:00  ->  2025-06-22T07:06:55.065070+09:00
+
+Processing paper 8/10
+Title: CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction
+  Following
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  48
+Update date_collected: 2025-06-23T07:07:14.423460+09:00  ->  2025-06-22T07:06:55.066251+09:00
+
+Processing paper 9/10
+Title: Marrying Autoregressive Transformer and Diffusion with Multi-Reference
+  Autoregression
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  44
+Update date_collected: 2025-06-23T07:07:14.425998+09:00  ->  2025-06-22T07:06:55.067396+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W26.json...
+
+Updating Notion database...
+Updating paper: 라이트닝 어텐션으로 효율적인 테스트 시간 연산 확장하는 MiniMax-M1 (likes: 218 -> 221)
+Updating paper: 멀티핀벤: 금융 LLM 평가를 위한 다중언어, 다중모달, 난이도인식 벤치마크 (likes: 82 -> 85)
+Paper already exists with same likes count: 과학자들의 첫 번째 시험: 지각, 이해, 추론을 통해 MLLM의 인지 능력 탐구
+Updating paper: 세카이: 세계 탐험을 향한 비디오 데이터셋 (likes: 52 -> 54)
+Updating paper: LLM 에이전트들을 위한 시험 시간 계산 확장 (likes: 53 -> 54)
+Paper already exists with same likes count: 깊은 연구 벤치마크: 깊은 연구 에이전트를 위한 포괄적인 벤치마크
+Updating paper: 피드백 마찰: LLMs가 외부 피드백을 완전히 흡수하는 데 어려움을 겪다 (likes: 50 -> 52)
+Updating paper: CMI-Bench: 음악 지시평가를 위한 포괄적인 벤치마크 (likes: 48 -> 50)
+Creating new paper: 자가회귀 트랜스포머와 디퓨전을 결합한 멀티 레퍼런스 자가회귀
+Paper already exists with same likes count: 도타-랙: 생각 집합의 동적
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Jun 22 22:08:36 UTC 2025 ===
+

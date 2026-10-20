@@ -1,0 +1,147 @@
+=== Paper Collection Started at Tue Jul 22 22:07:53 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W30
+URL: https://huggingface.co/papers/week/2025-W30
+Found 10 papers in weekly view
+Fetching likes for: GUI-G^2: Gaussian Reward Modeling for GUI Grounding
+Fetching likes for: MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization
+Fetching likes for: The Invisible Leash: Why RLVR May Not Escape Its Origin
+Fetching likes for: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Fetching likes for: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Fetching likes for: NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining
+Fetching likes for: WebShaper: Agentically Data Synthesizing via Information-Seeking
+  Formalization
+Fetching likes for: GR-3 Technical Report
+Fetching likes for: Robust 3D-Masked Part-level Editing in 3D Gaussian Splatting with
+  Regularized Score Distillation Sampling
+Fetching likes for: SeC: Advancing Complex Video Object Segmentation via Progressive Concept
+  Construction
+Selected top 10 papers by likes:
+1. GUI-G^2: Gaussian Reward Modeling for GUI Grounding (98 likes)
+2. MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization (89 likes)
+3. The Invisible Leash: Why RLVR May Not Escape Its Origin (59 likes)
+4. The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs (54 likes)
+5. A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models (48 likes)
+6. NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining (36 likes)
+7. WebShaper: Agentically Data Synthesizing via Information-Seeking
+  Formalization (31 likes)
+8. GR-3 Technical Report (27 likes)
+9. Robust 3D-Masked Part-level Editing in 3D Gaussian Splatting with
+  Regularized Score Distillation Sampling (27 likes)
+10. SeC: Advancing Complex Video Object Segmentation via Progressive Concept
+  Construction (24 likes)
+Found abstract: Graphical User Interface (GUI) grounding maps natural language instructions
+to precise interface loc...
+Processed paper: GUI-G^2: Gaussian Reward Modeling for GUI Grounding
+Found abstract: Large language models have recently evolved from fluent text generation to
+advanced reasoning across...
+Processed paper: MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization
+Found abstract: Recent advances in large reasoning models highlight Reinforcement Learning
+with Verifiable Rewards (...
+Processed paper: The Invisible Leash: Why RLVR May Not Escape Its Origin
+Found abstract: Diffusion-based large language models (dLLMs) have recently emerged as a
+powerful alternative to aut...
+Processed paper: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Found abstract: Russian speech synthesis presents distinctive challenges, including vowel
+reduction, consonant devoi...
+Processed paper: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Found abstract: Recent advances in generative modeling enable image editing assistants that
+follow natural language ...
+Processed paper: NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining
+Found abstract: The advent of Large Language Model (LLM)-powered agents has revolutionized
+artificial intelligence b...
+Processed paper: WebShaper: Agentically Data Synthesizing via Information-Seeking
+  Formalization
+Found abstract: We report our recent progress towards building generalist robot policies, the
+development of GR-3. G...
+Processed paper: GR-3 Technical Report
+Found abstract: Recent advances in 3D neural representations and instance-level editing
+models have enabled the effi...
+Processed paper: Robust 3D-Masked Part-level Editing in 3D Gaussian Splatting with
+  Regularized Score Distillation Sampling
+Found abstract: Video Object Segmentation (VOS) is a core task in computer vision, requiring
+models to track and seg...
+Processed paper: SeC: Advancing Complex Video Object Segmentation via Progressive Concept
+  Construction
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: GUI-G^2: Gaussian Reward Modeling for GUI Grounding
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via
+  Context-Aware Multi-Stage Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: The Invisible Leash: Why RLVR May Not Escape Its Origin
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  39
+Update date_collected: 2025-07-23T07:08:00.739484+09:00  ->  2025-07-22T07:08:23.253005+09:00
+
+Processing paper 5/10
+Title: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  41
+Update date_collected: 2025-07-23T07:08:00.740657+09:00  ->  2025-07-22T07:08:23.251396+09:00
+
+Processing paper 6/10
+Title: NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: WebShaper: Agentically Data Synthesizing via Information-Seeking
+  Formalization
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: GR-3 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Robust 3D-Masked Part-level Editing in 3D Gaussian Splatting with
+  Regularized Score Distillation Sampling
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SeC: Advancing Complex Video Object Segmentation via Progressive Concept
+  Construction
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W30.json...
+
+Updating Notion database...
+Creating new paper: GUI-G^2: GUI 그라운딩을 위한 가우시안 보상 모델링
+Creating new paper: MiroMind-M1: 수학 추론의 컨텍스트 인식 다단계 정책 최적화를 통한 오픈 소스 진보
+Creating new paper: 보이지 않는 '밧줄': RLVR이 자신의 기원에서 벗어나지 못하는 이유
+Updating paper: 가림막 뒤의 악마: Diffusion LLMs의 신생 안전 취약성 (likes: 39 -> 54)
+Updating paper: 러시아어 발화 생성 모델의 음운론적 및 어굴적 과제 해결을 위한 데이터 중심 프레임워크 (likes: 41 -> 48)
+Creating new paper: 인간 불필요: 자율적이고 고품질 이미지 편집을 위한 삼쌍 데이터 마이닝
+Creating new paper: WebShaper: 정보 탐색을 통한 에이전트식 데이터 합성 형식화
+Creating new paper: GR-3 기술 보고서
+Creating new paper: 3D 가우시안 스플래팅에서의 강건한 3D-마스크 레벨 편집과 정규화된 점수 증류 샘플링
+Creating new paper: 복합 비디오 객체 분할의 진보: 점진적 개념 구축을 통해
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jul 22 22:09:53 UTC 2025 ===
+

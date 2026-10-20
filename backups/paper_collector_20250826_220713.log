@@ -1,0 +1,143 @@
+=== Paper Collection Started at Mon Aug 25 22:07:59 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W35
+URL: https://huggingface.co/papers/week/2025-W35
+Found 10 papers in weekly view
+Fetching likes for: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Fetching likes for: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Fetching likes for: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Fetching likes for: EgoTwin: Dreaming Body and View in First Person
+Fetching likes for: CRISP: Persistent Concept Unlearning via Sparse Autoencoders
+Fetching likes for: Selective Contrastive Learning for Weakly Supervised Affordance
+  Grounding
+Fetching likes for: AetherCode: Evaluating LLMs' Ability to Win In Premier Programming
+  Competitions
+Fetching likes for: Do What? Teaching Vision-Language-Action Models to Reject the Impossible
+Fetching likes for: End-to-End Agentic RAG System Training for Traceable Diagnostic
+  Reasoning
+Fetching likes for: TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated
+  Prefill \& Decode Inference
+Selected top 10 papers by likes:
+1. AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs (52 likes)
+2. ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks (34 likes)
+3. Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR (27 likes)
+4. EgoTwin: Dreaming Body and View in First Person (14 likes)
+5. CRISP: Persistent Concept Unlearning via Sparse Autoencoders (11 likes)
+6. Selective Contrastive Learning for Weakly Supervised Affordance
+  Grounding (10 likes)
+7. AetherCode: Evaluating LLMs' Ability to Win In Premier Programming
+  Competitions (9 likes)
+8. Do What? Teaching Vision-Language-Action Models to Reject the Impossible (5 likes)
+9. End-to-End Agentic RAG System Training for Traceable Diagnostic
+  Reasoning (5 likes)
+10. TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated
+  Prefill \& Decode Inference (5 likes)
+Found abstract: In this paper, we introduce a novel learning paradigm for adaptive Large
+Language Model (LLM) agents...
+Processed paper: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Found abstract: Language-guided long-horizon mobile manipulation has long been a grand
+challenge in embodied semanti...
+Processed paper: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as
+a key paradigm for pos...
+Processed paper: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Found abstract: While exocentric video synthesis has achieved great progress, egocentric
+video generation remains la...
+Processed paper: EgoTwin: Dreaming Body and View in First Person
+Found abstract: As large language models (LLMs) are increasingly deployed in real-world
+applications, the need to se...
+Processed paper: CRISP: Persistent Concept Unlearning via Sparse Autoencoders
+Found abstract: Facilitating an entity's interaction with objects requires accurately
+identifying parts that afford ...
+Processed paper: Selective Contrastive Learning for Weakly Supervised Affordance
+  Grounding
+Found abstract: Competitive programming has emerged as a critical benchmark for evaluating
+the reasoning and coding ...
+Processed paper: AetherCode: Evaluating LLMs' Ability to Win In Premier Programming
+  Competitions
+Found abstract: Recently, Vision-Language-Action (VLA) models have demonstrated strong
+performance on a range of rob...
+Processed paper: Do What? Teaching Vision-Language-Action Models to Reject the Impossible
+Found abstract: Accurate diagnosis with medical large language models is hindered by
+knowledge gaps and hallucinatio...
+Processed paper: End-to-End Agentic RAG System Training for Traceable Diagnostic
+  Reasoning
+Found abstract: Multi-Head Latent Attention (MLA), introduced in DeepSeek-V2, compresses
+key-value states into a low...
+Processed paper: TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated
+  Prefill \& Decode Inference
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: EgoTwin: Dreaming Body and View in First Person
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: CRISP: Persistent Concept Unlearning via Sparse Autoencoders
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Selective Contrastive Learning for Weakly Supervised Affordance
+  Grounding
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: AetherCode: Evaluating LLMs' Ability to Win In Premier Programming
+  Competitions
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Do What? Teaching Vision-Language-Action Models to Reject the Impossible
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: End-to-End Agentic RAG System Training for Traceable Diagnostic
+  Reasoning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated
+  Prefill \& Decode Inference
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W35.json...
+
+Updating Notion database...
+Creating new paper: AgentFly: LLM 에이전트 파인튜닝에 파인튜닝 없이
+Creating new paper: 오딧세이: 장기간 작업을 위한 오픈 월드 사분다리 탐험과 조작
+Creating new paper: Pass@1 이상: 변이 문제 합성과 함께하는 Self-Play가 지속시키는 RLVR
+Creating new paper: 자아쌍: 일인칭 시점의 몸과 시야를 꿈꾸다
+Creating new paper: CRISP: 희소 오토인코더를 통한 영구 개념 언러닝
+Creating new paper: 약한 지도 하에서의 거치 가능성을 위한 선택적 대조적 학습
+Creating new paper: 에테르코드: LLM의 프리미어 프로그래밍 대회에서의 우승 능력 평가
+Creating new paper: 불가능한 것 거부하는 비전-언어-행동 모델 교육
+Creating new paper: End-to-End 에이전트 RAG 시스템 학습을 통한 추적 가능한 진단 추론
+Creating new paper: TPLA: 텐서 병렬 잠재 어텐션을 활용한 효율적인 분리형 채우기 & 디코딩 추론
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Aug 25 22:10:23 UTC 2025 ===
+

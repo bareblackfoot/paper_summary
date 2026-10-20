@@ -1,0 +1,121 @@
+=== Paper Collection Started at Thu Jun  4 22:37:28 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W23
+URL: https://huggingface.co/papers/week/2026-W23
+Found 10 papers in weekly view
+Fetching likes for: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Fetching likes for: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Fetching likes for: Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding
+Fetching likes for: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Fetching likes for: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Fetching likes for: Audio Interaction Model
+Fetching likes for: OCC-RAG: Optimal Cognitive Core for Faithful Question Answering
+Fetching likes for: Trust-Region Behavior Blending for On-Policy Distillation
+Fetching likes for: Cosmos 3: Omnimodal World Models for Physical AI
+Fetching likes for: A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks
+Selected top 10 papers by likes:
+1. Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs (186 likes)
+2. On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters (169 likes)
+3. Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding (135 likes)
+4. COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation (105 likes)
+5. GrepSeek: Training Search Agents for Direct Corpus Interaction (100 likes)
+6. Audio Interaction Model (84 likes)
+7. OCC-RAG: Optimal Cognitive Core for Faithful Question Answering (82 likes)
+8. Trust-Region Behavior Blending for On-Policy Distillation (64 likes)
+9. Cosmos 3: Omnimodal World Models for Physical AI (63 likes)
+10. A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks (62 likes)
+Found abstract: Scientific figures are among the most effective means of communicating complex research ideas, yet p...
+Processed paper: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Found abstract: Parameter-efficient fine-tuning (PEFT) is usually treated as a cheaper alternative to full fine-tuni...
+Processed paper: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Found abstract: Speculative decoding accelerates LLM inference by drafting multiple tokens and verifying them in par...
+Processed paper: Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding
+Found abstract: LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded ...
+Processed paper: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Found abstract: Large Language Model (LLM) search agents have shown strong promise for knowledge-intensive language ...
+Processed paper: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Found abstract: Audio is an inherently interactive modality, yet today's Large Audio Language Models (LALMs) are off...
+Processed paper: Audio Interaction Model
+Found abstract: Recent progress in the development of language models has been defined by scale, with each generatio...
+Processed paper: OCC-RAG: Optimal Cognitive Core for Faithful Question Answering
+Found abstract: On-policy distillation (OPD) trains a student on prefixes sampled from its own policy while matching...
+Processed paper: Trust-Region Behavior Blending for On-Policy Distillation
+Found abstract: We introduce Cosmos 3, a family of omnimodal world models designed to jointly process and generate l...
+Processed paper: Cosmos 3: Omnimodal World Models for Physical AI
+Found abstract: As agent capabilities advance, existing benchmarks, such as τ^2-Bench, are becoming increasingly sat...
+Processed paper: A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Paper already exists, checking if translation is complete...
+Update likes: 186  ->  107
+Update date_collected: 2026-06-05T07:37:38.781265+09:00  ->  2026-06-03T07:48:08.395553+09:00
+
+Processing paper 2/10
+Title: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Paper already exists, checking if translation is complete...
+Update likes: 169  ->  57
+Update date_collected: 2026-06-05T07:37:38.784465+09:00  ->  2026-06-03T07:48:08.405333+09:00
+
+Processing paper 3/10
+Title: Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 105  ->  92
+Update date_collected: 2026-06-05T07:37:38.789142+09:00  ->  2026-06-03T07:48:08.400057+09:00
+
+Processing paper 5/10
+Title: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Paper already exists, checking if translation is complete...
+Update likes: 100  ->  94
+Update date_collected: 2026-06-05T07:37:38.791548+09:00  ->  2026-06-03T07:48:08.397860+09:00
+
+Processing paper 6/10
+Title: Audio Interaction Model
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: OCC-RAG: Optimal Cognitive Core for Faithful Question Answering
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Trust-Region Behavior Blending for On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  59
+Update date_collected: 2026-06-05T07:37:38.799188+09:00  ->  2026-06-03T07:48:08.402323+09:00
+
+Processing paper 9/10
+Title: Cosmos 3: Omnimodal World Models for Physical AI
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks
+Paper already exists, checking if translation is complete...
+Update likes: 62  ->  53
+Update date_collected: 2026-06-05T07:37:38.804656+09:00  ->  2026-06-03T07:48:08.407479+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W23.json...
+
+Updating Notion database...
+Updating paper: 다양한 입력으로부터 편집 가능한 과학 그림 생성을 위한 다중 에이전트 하네스 Crafter (likes: 107 -> 186)
+Updating paper: PEFT의 스케일링에 관한 연구: 조백만 개의 개인 모델을 가진 십조 개 파라미터로 (likes: 57 -> 169)
+Creating new paper: 도미노: 사양 디코딩에서 인과 모델링 분리하기
+Updating paper: COLLEAGUE.SKILL: 전문가 지식 증류를 통한 자동 AI 기술 생성 (likes: 92 -> 105)
+Updating paper: GrepSeek: 직접 말뭉치 상호작용을 위한 검색 에이전트 훈련 (likes: 94 -> 100)
+Creating new paper: 오디오 상호작용 모델
+Creating new paper: 충실한 질문 응답을 위한 최적의 인지 핵심인 OCC-RAG
+Updating paper: Trust-Region Behavior Blending를 위한 신뢰 영역 행동 혼합 (likes: 59 -> 64)
+Creating new paper: 물리적 AI를 위한 통합된 모든 모달 월드 모델, Cosmos 3
+Updating paper: 에이전트 벤치마크의 지각과 난이도 향상 (likes: 53 -> 62)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jun  4 22:39:13 UTC 2026 ===
+

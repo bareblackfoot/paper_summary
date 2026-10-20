@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤗 Hugging Face Papers - Top 10</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-00XPL3BFL6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-00XPL3BFL6');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤗</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hf-logo {
+            font-size: 3em;
+            margin-right: 15px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            flex: none;
+        }
+
+        .week-nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        /* 카테고리 필터 섹션 */
+        .filter-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* 주차 선택 섹션 */
+        .week-selector {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .week-selector-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .week-selector-content {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .week-dropdown {
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            background: white;
+            color: #333;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }
+
+        .week-dropdown:hover {
+            border-color: #667eea;
+        }
+
+        .week-dropdown:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .current-week-indicator {
+            padding: 8px 16px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        .week-navigation {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .nav-button {
+            padding: 6px 16px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .nav-button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #764ba2, #667eea);
+            color: #fff;
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .category-filter {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            background: white;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .category-filter:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .category-filter.active {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .clear-filters {
+            padding: 8px 16px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .clear-filters:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .filter-count {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .paper-grid {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+
+        .paper-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .paper-rank {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1em;
+            box-shadow: 0 4px 12px rgba(238, 90, 36, 0.4);
+        }
+
+        .paper-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        .paper-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .paper-title a:hover {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .paper-subtitle {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+
+        /* 카테고리 태그 */
+        .paper-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .category-tag {
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            color: #667eea;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            border: 1px solid #667eea30;
+        }
+
+        .paper-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #666;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .upvotes {
+            background: linear-gradient(45deg, #ff5722, #e91e63);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+
+        .authors {
+            color: #607d8b;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .authors-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .paper-date {
+            color: #ff9800;
+            font-size: 0.85em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .korean-title {
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .korean-summary {
+            background: linear-gradient(135deg, #4caf5015, #81c78415);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #4caf50;
+        }
+
+        .korean-summary h4 {
+            background: linear-gradient(45deg, #4caf50, #81c784);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+
+        .korean-summary p {
+            color: #555;
+            line-height: 1.6;
+            word-break: keep-all;
+        }
+
+        .abstract {
+            background: linear-gradient(135deg, #f5f7ff 0%, #f0f2ff 100%);
+            border-left: 4px solid #6366f1;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+
+        .abstract-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: #4f46e5;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .abstract-title i {
+            font-size: 1.25rem;
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .abstract-title span {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .abstract p {
+            color: #4a5568;
+            line-height: 1.7;
+            margin: 0;
+            font-size: 0.95rem;
+            word-break: keep-all;
+        }
+
+        .paper-link {
+            display: inline-flex;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+        }
+
+        .paper-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* 태블릿 화면 (768px 이하) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 25px 20px;
+                margin-bottom: 25px;
+            }
+
+            .header-title-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .week-nav-buttons {
+                position: static;
+                transform: none;
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1.1em;
+            }
+
+            .stats {
+                gap: 20px;
+            }
+
+            .filter-section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .week-selector {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .week-selector-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+
+            .week-selector-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .week-dropdown {
+                width: 100%;
+                min-width: auto;
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+
+            .week-navigation {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .nav-button {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .current-week-indicator {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .category-filters {
+                gap: 8px;
+            }
+
+            .category-filter {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .paper-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .paper-card {
+                padding: 20px;
+            }
+
+            .paper-title {
+                font-size: 1.2em;
+            }
+
+            .paper-meta {
+                gap: 12px;
+            }
+        }
+
+        /* 작은 모바일 화면 (480px 이하) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+                border-radius: 15px;
+            }
+
+            .header-title-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hf-logo {
+                font-size: 2.5em;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .header p {
+                font-size: 1em;
+                margin-top: 8px;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+            }
+
+            .stat-item {
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+            }
+
+            .stat-number {
+                font-size: 1.8em;
+            }
+
+            .filter-section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .filter-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+
+            .category-filters {
+                gap: 6px;
+            }
+
+            .category-filter {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
+
+            .paper-card {
+                padding: 18px;
+                margin: 0;
+                border-radius: 12px;
+            }
+
+            .paper-rank {
+                width: 30px;
+                height: 30px;
+                font-size: 0.9em;
+                top: -8px;
+                left: 15px;
+            }
+
+            .paper-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+                margin-top: 8px;
+                line-height: 1.3;
+            }
+
+            .paper-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
+            .meta-item {
+                width: 100%;
+            }
+
+            .authors {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .authors-text {
+                white-space: normal;
+                word-break: break-word;
+            }
+
+            .upvotes {
+                padding: 8px 14px;
+                font-size: 0.9em;
+            }
+
+            .paper-date {
+                font-size: 0.8em;
+            }
+
+            .korean-summary {
+                padding: 12px;
+                margin: 12px 0;
+            }
+
+            .korean-summary h4 {
+                font-size: 0.9em;
+                margin-bottom: 6px;
+            }
+
+            .korean-summary p {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+
+            .abstract {
+                padding: 1rem;
+                margin: 0.8rem 0;
+            }
+
+            .abstract-title {
+                font-size: 1em;
+                gap: 0.5rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .abstract p {
+                font-size: 0.9em;
+                line-height: 1.6;
+            }
+
+            .paper-link {
+                padding: 10px 16px;
+                font-size: 0.85em;
+                margin-top: 12px;
+                border-radius: 20px;
+            }
+
+            .paper-subtitle {
+                font-size: 0.85em;
+                margin-bottom: 12px;
+            }
+        }
+
+        /* 매우 작은 모바일 화면 (360px 이하) */
+        @media (max-width: 360px) {
+            .container {
+                padding: 8px;
+            }
+
+            .header {
+                padding: 15px 12px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+                word-break: keep-all;
+            }
+
+            .paper-card {
+                padding: 15px;
+            }
+
+            .paper-title {
+                font-size: 1em;
+                line-height: 1.3;
+            }
+
+            .korean-summary {
+                padding: 10px;
+            }
+
+            .abstract {
+                padding: 0.8rem;
+            }
+
+            .abstract-title {
+                font-size: 0.95em;
+            }
+
+            .abstract p {
+                font-size: 0.85em;
+            }
+        }
+
+        /* 터치 인터페이스를 위한 개선 */
+        @media (hover: none) {
+            .paper-card {
+                transform: none !important;
+                transition: background-color 0.3s ease;
+            }
+
+            .paper-card:active {
+                background-color: rgba(255, 255, 255, 0.98);
+            }
+
+            .paper-title a {
+                padding: 8px 0;
+                display: block;
+            }
+
+            .paper-link {
+                padding: 14px 20px;
+                min-height: 44px;
+            }
+        }
+
+        /* 고해상도 화면 대응 */
+        @media (min-width: 1400px) {
+            .paper-grid {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+        }
+
+        /* 가로 모드 모바일 대응 */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .header {
+                padding: 20px;
+            }
+
+            .stats {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .paper-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-title-row">
+                <div class="hf-logo">🤗</div>
+                <h1>Hugging Face Papers</h1>
+            </div>
+            <p id="week-desc" style="margin-top:18px; font-size:1.2em; color:#666;">
+                
+                    2025-W24 (06월 08일 ~ 06월 14일) 상위 10개 논문
+                
+            </p>
+            <div class="week-nav-buttons">
+                <a href="#" class="nav-button" id="prev-week" onclick="navigateWeek(-1)">
+                    <i class="fas fa-chevron-left"></i> 이전 주
+                </a>
+                <a href="#" class="nav-button" id="next-week" onclick="navigateWeek(1)">
+                    다음 주 <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            
+
+        </div>
+
+        <!-- 카테고리 필터 섹션 -->
+        <div class="filter-section">
+            <div class="filter-title">
+                <i class="fas fa-filter"></i>
+                카테고리별 필터
+            </div>
+            <div class="category-filters" id="category-filters">
+                <!-- 카테고리 필터 버튼들이 JavaScript로 동적 생성됩니다 -->
+            </div>
+            <div class="filter-controls">
+                <button class="clear-filters" onclick="clearAllFilters()">
+                    <i class="fas fa-times"></i> 모든 필터 해제
+                </button>
+                <div class="filter-count" id="filter-count">
+                    전체 10개 논문 표시 중
+                </div>
+            </div>
+        </div>
+
+        <div class="paper-grid" id="paper-grid">
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">1</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.08007" target="_blank">Reinforcement Pre-Training</a>
+                </h2>
+                <div class="paper-subtitle">강화 사전 훈련</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            194
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Qingxiu Dong, Li Dong, Yao Tang, Tianzhu Ye, Yutao Sun, Zhifang Sui, Furu Wei
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 9
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 강화 사전 훈련(RPT)은 대규모 언어 모델을 위한 새로운 확장 패러다임으로, 다음 토큰 추론 능력을 강화하여 언어 모델링 정확도를 향상시키는 방법을 제시한다.
+2. RPT는 도메인별 주석된 답변에 의존하지 않고 대량의 텍스트 데이터를 기반으로 일반적인 강화 학습에 활용 가능한 확장 가능한 방법을 제공한다.
+3. 실험 결과는 RPT가 언어 모델의 사전 훈련을 진전시키기 위한 효과적이고 유망한 확장 패러다임으로서의 위치를 강조하며, 훈련 컴퓨팅 파워의 증가가 다음 토큰 예측 정확도를 일관되게 향상시킨다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>본 연구에서는 대규모 언어 모델과 강화 학습을 위한 새로운 확장 패러다임으로 강화 사전 훈련(RPT)을 소개합니다. 구체적으로, 다음 토큰 예측을 추론 작업으로 재구성하여 RL을 사용하여 훈련된다. RPT는 도메인별 주석된 정답에 의존하지 않고 대량의 텍스트 데이터를 활용하는 확장 가능한 방법을 제공한다. RPT는 다음 토큰 추론 능력을 장려함으로써 언어 모델링 정확도를 크게 향상시키며, 추가적인 강화 미세 조정을 위한 강력한 사전 훈련 기반을 제공한다. 확장 곡선은 훈련 컴퓨트를 증가시킴에 따라 다음 토큰 예측 정확도가 지속적으로 향상되는 것을 보여준다. 결과는 RPT를 언어 모델 사전 훈련을 발전시키기 위한 효과적이고 유망한 확장 패러다임으로 위치시킨다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.08007" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">2</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2505.21115" target="_blank">Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA</a>
+                </h2>
+                <div class="paper-subtitle">내일에도 여전히 사실인가요? 신뢰할 만한 QA를 개선하기 위한 다중언어 불시적 질문 분류</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            122
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Sergey Pletenev, Maria Marina, Nikolay Ivanov, Daria Galimzianova, Nikita Krayko, Mikhail Salnikov, Vasily Konovalov, Alexander Panchenko, Viktor Moskvoretskii
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        May 27
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. EverGreenQA는 질문의 시간적 특성을 반영한 첫 번째 다중언어 QA 데이터셋으로, LLMs의 성능을 평가하고 EG-E5와 같은 경량 분류기를 훈련하는데 활용합니다.
+2. 시간적 특성에 근거한 분류는 자기-지식 추정 개선, QA 데이터셋 필터링 및 GPT-4o 회수 동작 설명과 같은 다양한 응용 분야에서 유용하게 활용될 수 있음을 보여줍니다.
+3. 다양한 목적을 위해 시간적 특성을 고려한 QA는 LLMs의 성능을 향상시키고, 미래의 질문 응답 엔진에 적용될 수 있는 새로운 가능성을 제시합니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>대형 언어 모델 (Large Language Models, LLMs)은 종종 질문 응답 (QA) 작업에서 환각을 일으킵니다. 이에 기여하는 주요하고 아직 탐구되지 않은 요인 중 하나는 질문의 시간적 특성입니다. 질문이 일종인지 (시간이 지나도 답변이 안정적인지) 또는 가변적인지 (답변이 변경되는지) 여부입니다. 본 연구에서는 첫 번째로 시간적 특성 라벨을 갖춘 최초의 다중언어 QA 데이터셋인 EverGreenQA를 소개합니다. EverGreenQA를 사용하여 12가지 최신 LLMs를 평가하여 질문의 시간적 특성을 명시적으로 (언어적 판단을 통해) 또는 암시적으로 (불확실성 신호를 통해) 부호화하는지 확인합니다. 또한 이 작업에 대한 SoTA(Sate-of-The-Art) 성능을 달성하는 경량 다중언어 분류기인 EG-E5를 훈련합니다. 마지막으로, 우리는 불시적 분류의 실용성을 증명하기 위해 자기-지식 추정 개선, QA 데이터셋 필터링, 그리고 GPT-4o 회수 동작 설명과 같은 세 가지 응용 분야에 걸쳐 실험합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2505.21115" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">3</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.07044" target="_blank">Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning</a>
+                </h2>
+                <div class="paper-subtitle">통합 다중 모달 의료 이해 및 추론을 위한 일반적인 기초 모델: Lingshu</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            99
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            LASA Team, Weiwen Xu, Hou Pong Chan, Long Li, Mahani Aljunied, Ruifeng Yuan, Jianyu Wang, Chenghao Xiao, Guizhen Chen, Chaoqun Liu, Zhaodonghui Li, Yu Sun, Junao Shen, Chaojun Wang, Jie Tan, Deli Zhao, Tingyang Xu, Hao Zhang, Yu Rong
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 8
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 의료 지식을 이미지뿐만 아니라 풍부한 의료 텍스트와 일반 도메인 데이터에서 효과적으로 확보하고 정확한 의료 캡션, 시각 질문 응답(VQA), 추론 샘플을 합성하여 다양한 의료 지식이 풍부한 다중 모달 데이터셋을 구축하였습니다.
+2. Lingshu는 의료 전문화된 MLLM으로, 의료 전문성을 내재시키고 과업 해결 능력을 점진적으로 향상시키기 위해 다단계 훈련을 거칩니다.
+3. MedEvalKit는 다양한 의료 벤치마크를 통합하여 표준화되고 공정하며 효율적인 모델 평가를 위한 통합 평가 프레임워크를 개발하였으며, Lingshu의 성능을 다중 모달 QA, 텍스트 기반 QA, 의료 보고서 생성 세 가지 기본 의료 작업에서 비교평가하였습니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>다중 모달 대형 언어 모델(MLLMs)은 대규모 데이터셋과 선진한 훈련 전략으로 일반적인 시각 요소를 잘 이해하는 능력을 보여주었습니다. 그러나 의료 응용 분야에서의 효과는 의료 시나리오와 일반 도메인 간 데이터 및 작업의 본성적인 불일치로 인해 제한되어 있습니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.07044" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">4</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.06395" target="_blank">Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models</a>
+                </h2>
+                <div class="paper-subtitle">자신감이 전부다: 언어 모델의 소수 학습 후 강화학습 세밀 조정</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            93
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Pengyi Li, Matvey Skripkin, Alexander Zubrey, Andrey Kuznetsov, Ivan Oseledets
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 5
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 기존 언어 모델의 사후 학습을 위해 인간 주석이나 외부 보상 모델에 의존하는 강화학습 방법의 한계를 극복하기 위해 자신의 모델이 가진 자신감을 보상 신호로 활용하는 RLSC 방법을 제안.
+2. RLSC를 이용한 실험 결과, 소수의 샘플과 라벨이 없는 지도만으로 Qwen2.5-Math-7B에서 상당한 정확도 향상을 이룩함(+13.4% - +21.7%).
+3. RLSC는 추론 모델을 위한 간단하고 확장 가능한 사후 학습 방법으로, 비용이 적고 라벨 없는 지도만으로도 효과를 발휘함.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>대형 언어 모델(Large language models, LLMs)은 추론에서 뛰어나지만, 사후 학습은 그들의 행동을 작업 목표와 일치시키는 데 중요합니다. 기존 강화학습(Reinforcement learning, RL) 방법은 종종 비용이 많이 드는 인간 주석이나 외부 보상 모델에 의존합니다. 저희는 자신의 모델이 가진 자신감을 보상 신호로 활용하는 Reinforcement Learning via Self-Confidence (RLSC)를 제안합니다. 이는 라벨, 선호 모델 또는 보상 설계가 필요 없어지게 합니다. 한 질문 당 16개의 샘플과 10 또는 20개의 교육 단계만으로 Qwen2.5-Math-7B에 적용한 결과, RLSC는 AIME2024에서 정확도를 +13.4%, MATH500에서 +21.2%, Minerva Math에서 +21.7%, Olympiadbench에서 +20.8%, AMC23에서 +9.7% 향상시켰습니다. RLSC는 소수의 샘플과 라벨이 없는 지도만으로 추론 모델을 위한 간단하고 확장 가능한 사후 학습 방법을 제공합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.06395" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">5</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.07900" target="_blank">MiniCPM4: Ultra-Efficient LLMs on End Devices</a>
+                </h2>
+                <div class="paper-subtitle">미니CPM4: 최적화된 LLMs의 초고효율적인 에지 장치용 모델</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            73
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            MiniCPM Team, Chaojun Xiao, Yuxuan Li, Xu Han, Yuzhuo Bai, Jie Cai, Haotian Chen, Wentong Chen, Xin Cong, Ganqu Cui, Ning Ding, Shengdan Fan, Yewei Fang, Zixuan Fu, Wenyu Guan, Yitong Guan, Junshao Guo, Yufeng Han, Bingxiang He, Yuxiang Huang, Cunliang Kong, Qiuzuo Li
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 9
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 미니CPM4는 모델 구조, 훈련 데이터, 훈련 알고리즘, 추론 시스템의 네 가지 핵심 차원에서 혁신을 통해 에지 장치를 위한 매우 효율적인 대형 언어 모델을 제안한다.
+2. UltraClean과 UltraChat v2를 통한 데이터 필터링 및 생성 전략, ModelTunnel v2를 사용한 효율적인 사전 훈련 전략 탐색, 그리고 CPM.cu를 활용한 효율적인 선행 및 디코딩을 통해 모델의 성능이 향상되었다.
+3. MiniCPM4는 다양한 응용 프로그램을 지원하며, 오픈 소스 모델을 능가하는 놀라운 효과성을 보여주며 특히 MiniCPM4-8B는 긴 시퀀스 처리 시 Qwen3-8B보다 상당한 속도 향상을 보인다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>본 논문은 에지 장치를 위해 명시적으로 설계된 매우 효율적인 대형 언어 모델인 미니CPM4를 소개합니다. 우리는 모델 구조, 훈련 데이터, 훈련 알고리즘, 추론 시스템 네 가지 핵심 차원에서 체계적인 혁신을 통해 이 효율성을 달성했습니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.07900" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">6</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.06444" target="_blank">Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance</a>
+                </h2>
+                <div class="paper-subtitle">LLM 안전성 보증을 위한 추론 확장 패러다임에 대한 연구</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            69
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Ruizhong Qiu, Gaotang Li, Tianxin Wei, Jingrui He, Hanghang Tong
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 6
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 기존의 추론 확장 기술은 안전 상황에서의 성능이 미흡하여 새로운 안전 보증 패러다임 SAFFRON이 제안되었다.
+2. 이를 위해 다중 분기 보상 모형(MRM)을 도입하여 필요한 보상 모형 평가 횟수를 현저히 줄였으며, 트리 기반 검색 과정에서 일련의 키-값 캐싱 전략을 용이하게 하는 제안도 포함되었다.
+3. 광범위한 실험 결과가 우리의 방법이 효과적임을 입증하며, 훈련된 MRM인 Saffron-1과 토큰 수준 안전 보상 데이터 집합(Safety4M)을 공개하여 LLM 안전성에 대한 미래 연구를 가속화하고자 한다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>기존의 안전성 보증 연구는 대부분 안전한 행동을 언어·지식 모형 기계(LLMs)에 채택하는 것에 초점을 맞추어왔다. 그러나 최근 연구에서는 이러한 방법들이 다양한 탈옥 공격에 취약하다는 문제점이 드러났다. 동시에, 추론 확장은 LLM의 추론 능력을 크게 향상시켰지만 안전성 보증 관련 연구에서는 여전히 탐구되지 않은 영역이다. 우리의 연구는 이러한 공백을 채우고, 신규 위협에 대해 견고하고 효과적인 LLM 안전성 추론 확장을 선도한다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.06444" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">7</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.06751" target="_blank">Geopolitical biases in LLMs: what are the "good" and the "bad" countries
+  according to contemporary language models</a>
+                </h2>
+                <div class="paper-subtitle">LLMs에서의 지정학적 편향: 현대 언어 모델에서 "좋은" 나라와 "나쁜" 나라는 무엇인가</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            62
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Mikhail Salnikov, Dmitrii Korzh, Ivan Lazichny, Elvir Karimov, Artyom Iudin, Ivan Oseledets, Oleg Y. Rogov, Alexander Panchenko, Natalia Loukachevitch, Elena Tutubalina
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 7
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. LLMs에서 국가적 서술 편향을 발견하고, 간단한 편향 제거 방법의 한계를 밝힘.
+2. 모델의 민감성으로 인해 편향이 강화되거나 모순을 인정하는 실험 결과를 제시.
+3. 미래 지정학적 편향 연구를 위한 프레임워크와 데이터셋을 제공함으로써 중요성을 강조.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>본 논문은 LLMs에서 다양한 국가에 대한 지정학적 편향을 분석하여 미국, 영국, 소련 및 중국의 역사적 사건 해석을 통해 이를 평가합니다. 우리는 중립적 사건 설명과 다른 국가들의 대립적 시각을 제시하는 혁신적인 데이터셋을 소개합니다. 우리의 결과는 특정 국가적 서술 우선을 보여주며, 간단한 편향 제거 프롬프트가 이러한 편향을 줄이는 데 제한적인 영향을 미쳤음을 보여줍니다. 또한, 가짜 참여자 레이블로 실험한 결과는 모델이 소속을 민감하게 감지하며, 때로는 편향을 강화하거나 일관성을 인식하는 것을 보여줍니다, 특히 레이블을 교체할 때. 본 연구는 LLMs 내의 국가적 서술 편향을 강조하며, 간단한 편향 제거 방법의 효과를 도전하며, 미래의 지정학적 편향 연구를 위한 프레임워크와 데이터셋을 제안합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.06751" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">8</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.09513" target="_blank">ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical
+  Reasoning</a>
+                </h2>
+                <div class="paper-subtitle">의료 추론 발전을 위한 37만 개 에이전트 생성 데이터셋 ReasonMed</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            60
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Yu Sun, Xingyu Qian, Weiwen Xu, Hao Zhang, Chenghao Xiao, Long Li, Yu Rong, Wenbing Huang, Qifeng Bai, Tingyang Xu
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 11
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 추론 기반 대형 언어 모델은 의료 분야에서의 성능을 향상시키기 위해 ReasonMed 데이터셋을 소개하며, 이는 반복적인 검증 및 수정 과정을 통해 고품질 예시를 추출한 결과이다.
+2. ReasonMed를 활용하여 의료 추론 모델을 훈련하는 과정에서 세부 사고 체인과 간결한 요약을 결합하는 것이 가장 효율적인 미세 조정 전략임을 발견했으며, 이에 기초하여 새로운 모델 ReasonMed-7B를 개발했다.
+3. ReasonMed-7B 모델은 10B 미만 모델에서 새로운 기준을 설정하며, 선행 최고 모델을 4.17\% 능가하고 PubMedQA의 LLaMA3.1-70B 모델을 4.60\% 초과하는 성과를 보여주고 있다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>추론 기반 대형 언어 모델(LLMs)은 수학과 프로그래밍에서 뛰어나지만, 의료 지식을 활용한 질의응답에서의 성능은 여전히 미비하다. 이를 해결하기 위해, 다양한 LLMs에 의해 생성된 170만 개 초기 추론 경로 중 37만 개의 고품질 예시를 추출하여 구성된 ReasonMed라는 최대 규모의 의료 추론 데이터셋을 소개한다. ReasonMed는 다중 에이전트 검증 및 수정 과정을 거쳐 구축되었는데, 이 과정에서 오류 식별자로서의 '에러 리파이너'를 설계하여 검증기가 식별한 오류 내용을 수정해 추론 경로를 향상시킨다. ReasonMed를 활용하여 의료 추론 모델을 훈련하는 데 가장 효과적인 세부 사고 체인과 간결한 답변 요약을 결합하는 방법을 체계적으로 연구한 결과, 새로운 미세 조정 전략에서 우수한 성과를 보이는 ReasonMed-7B 모델을 훈련시켰다. 이 모델은 이전 최고 모델보다 4.17\% 우수한 결과를 달성하며 PubMedQA의 LLaMA3.1-70B를 4.60\% 초월한다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.09513" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">9</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.09113" target="_blank">Seedance 1.0: Exploring the Boundaries of Video Generation Models</a>
+                </h2>
+                <div class="paper-subtitle">Seedance 1.0: 비디오 생성 모델의 경계 탐색</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            59
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Yu Gao, Haoyuan Guo, Tuyen Hoang, Weilin Huang, Lu Jiang, Fangyuan Kong, Huixia Li, Jiashi Li, Liang Li, Xiaojie Li, Xunsong Li, Yifu Li, Shanchuan Lin, Zhijie Lin, Jiawei Liu, Shu Liu, Xiaonan Nie, Zhiwu Qing, Yuxi Ren, Li Sun, Zhi Tian, Rui Wang
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 10
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. Seedance 1.0은 다양한 시나리오의 포괄적인 학습을 가능케 하는 정밀하고 의미 있는 비디오 캡션을 통한 다중 소스 데이터 정리 및 효율적인 아키텍처 디자인을 특징으로 합니다.
+2. 이 모델은 다중 샷 생성을 원활하게 지원하며 텍스트에서 비디오, 이미지에서 비디오 작업을 동시에 학습하는 제안된 교육 패러다임을 갖추고 있습니다.
+3. Seedance 1.0은 고해상도 5초 비디오를 41.4초 만에 생성하는 빠른 추론 속도와 우수한 화질을 제공하며, 다양한 주제 표현에서 구조적 안정성과 지시에 따른 일관성을 보여주는 탁월한 성능을 자랑합니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>확산 모델링의 주목할만한 성과로 비디오 생성이 급속히 발전해왔지만, 현재의 기본 모델은 사용자 명령 따르기, 움직임 현실성, 시각적 품질을 동시에 균형 있게 유지하는데 중요한 문제에 직면하고 있습니다. 본 보고서에서는 여러 핵심 기술 개선을 통합한 성능 우수하고 추론 효율적인 비디오 기초 생성 모델인 Seedance 1.0을 소개합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.09113" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="기타">
+                <div class="paper-rank">10</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.05573" target="_blank">PartCrafter: Structured 3D Mesh Generation via Compositional Latent
+  Diffusion Transformers</a>
+                </h2>
+                <div class="paper-subtitle">PartCrafter: 구성적 잠재 확산 변형기를 통한 구조화된 3D 메쉬 생성</div>
+
+                <!-- 카테고리 태그 -->
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            55
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Yuchen Lin, Chenguo Lin, Panwang Pan, Honglei Yan, Yiqiang Feng, Yadong Mu, Katerina Fragkiadaki
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 5
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. PartCrafter는 단일 이미지를 기반으로 여러 의미 있는 3D 메쉬를 동시에 생성하는 구조화된 3D 생성 모델이다.
+2. 미리 학습된 3D 메쉬 확산 변형기를 기반으로, 구성적 잠재 공간과 계층적 주의 메커니즘을 도입하여 개별 파트 내부 및 전체 파트 간에 구조적 정보 전달을 보장하면서 생성 시 전역 일관성을 유지한다.
+3. 새로운 데이터셋을 구축하고 실험 결과에서 PartCrafter가 다른 방법보다 우수한 성과를 보여주며, 3D 이해와 합성을 위한 파트 인식 생성 사전지식의 강점을 입증한다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>PartCrafter는 단일 RGB 이미지로부터 여러 의미론적으로 유의미하고 기하학적으로 구분된 3D 메쉬를 함께 생성하는 첫 구조화된 3D 생성 모델을 소개합니다. PartCrafter는 이미지를 세분화하고 각 세그먼트를 재구성하는 2단계 파이프라인을 따르거나 단일한 3D 모양을 생성하는 기존 방법과 달리 사전 세분화된 입력에 의존하지 않는 통합적 구성 생성 아키텍처를 채택합니다. 이는 단일 이미지에 조건을 두고 여러 3D 파트를 동시에 소음 제거하여 개별 객체 및 복잡한 다중 객체 장면의 고려한 모양 생성을 가능케 합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.05573" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        // 모든 카테고리 수집
+        const papers = [{"abstract": "In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling\nparadigm for large language models and reinforcement learning (RL).\nSpecifically, we reframe next-token prediction as a reasoning task trained\nusing RL, where it receives verifiable rewards for correctly predicting the\nnext token for a given context. RPT offers a scalable method to leverage vast\namounts of text data for general-purpose RL, rather than relying on\ndomain-specific annotated answers. By incentivizing the capability of\nnext-token reasoning, RPT significantly improves the language modeling accuracy\nof predicting the next tokens. Moreover, RPT provides a strong pre-trained\nfoundation for further reinforcement fine-tuning. The scaling curves show that\nincreased training compute consistently improves the next-token prediction\naccuracy. The results position RPT as an effective and promising scaling\nparadigm to advance language model pre-training.", "authors": ["Qingxiu Dong", "Li Dong", "Yao Tang", "Tianzhu Ye", "Yutao Sun", "Zhifang Sui", "Furu Wei"], "date_collected": "2025-06-11T10:48:22.379708", "likes": 194, "published_date": "Jun 9", "summary": "1. \uac15\ud654 \uc0ac\uc804 \ud6c8\ub828(RPT)\uc740 \ub300\uaddc\ubaa8 \uc5b8\uc5b4 \ubaa8\ub378\uc744 \uc704\ud55c \uc0c8\ub85c\uc6b4 \ud655\uc7a5 \ud328\ub7ec\ub2e4\uc784\uc73c\ub85c, \ub2e4\uc74c \ud1a0\ud070 \ucd94\ub860 \ub2a5\ub825\uc744 \uac15\ud654\ud558\uc5ec \uc5b8\uc5b4 \ubaa8\ub378\ub9c1 \uc815\ud655\ub3c4\ub97c \ud5a5\uc0c1\uc2dc\ud0a4\ub294 \ubc29\ubc95\uc744 \uc81c\uc2dc\ud55c\ub2e4.\n2. RPT\ub294 \ub3c4\uba54\uc778\ubcc4 \uc8fc\uc11d\ub41c \ub2f5\ubcc0\uc5d0 \uc758\uc874\ud558\uc9c0 \uc54a\uace0 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \uae30\ubc18\uc73c\ub85c \uc77c\ubc18\uc801\uc778 \uac15\ud654 \ud559\uc2b5\uc5d0 \ud65c\uc6a9 \uac00\ub2a5\ud55c \ud655\uc7a5 \uac00\ub2a5\ud55c \ubc29\ubc95\uc744 \uc81c\uacf5\ud55c\ub2e4.\n3. \uc2e4\ud5d8 \uacb0\uacfc\ub294 RPT\uac00 \uc5b8\uc5b4 \ubaa8\ub378\uc758 \uc0ac\uc804 \ud6c8\ub828\uc744 \uc9c4\uc804\uc2dc\ud0a4\uae30 \uc704\ud55c \ud6a8\uacfc\uc801\uc774\uace0 \uc720\ub9dd\ud55c \ud655\uc7a5 \ud328\ub7ec\ub2e4\uc784\uc73c\ub85c\uc11c\uc758 \uc704\uce58\ub97c \uac15\uc870\ud558\uba70, \ud6c8\ub828 \ucef4\ud4e8\ud305 \ud30c\uc6cc\uc758 \uc99d\uac00\uac00 \ub2e4\uc74c \ud1a0\ud070 \uc608\uce21 \uc815\ud655\ub3c4\ub97c \uc77c\uad00\ub418\uac8c \ud5a5\uc0c1\uc2dc\ud0a8\ub2e4.", "title": "Reinforcement Pre-Training", "translation": {"abstract": "\ubcf8 \uc5f0\uad6c\uc5d0\uc11c\ub294 \ub300\uaddc\ubaa8 \uc5b8\uc5b4 \ubaa8\ub378\uacfc \uac15\ud654 \ud559\uc2b5\uc744 \uc704\ud55c \uc0c8\ub85c\uc6b4 \ud655\uc7a5 \ud328\ub7ec\ub2e4\uc784\uc73c\ub85c \uac15\ud654 \uc0ac\uc804 \ud6c8\ub828(RPT)\uc744 \uc18c\uac1c\ud569\ub2c8\ub2e4. \uad6c\uccb4\uc801\uc73c\ub85c, \ub2e4\uc74c \ud1a0\ud070 \uc608\uce21\uc744 \ucd94\ub860 \uc791\uc5c5\uc73c\ub85c \uc7ac\uad6c\uc131\ud558\uc5ec RL\uc744 \uc0ac\uc6a9\ud558\uc5ec \ud6c8\ub828\ub41c\ub2e4. RPT\ub294 \ub3c4\uba54\uc778\ubcc4 \uc8fc\uc11d\ub41c \uc815\ub2f5\uc5d0 \uc758\uc874\ud558\uc9c0 \uc54a\uace0 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud65c\uc6a9\ud558\ub294 \ud655\uc7a5 \uac00\ub2a5\ud55c \ubc29\ubc95\uc744 \uc81c\uacf5\ud55c\ub2e4. RPT\ub294 \ub2e4\uc74c \ud1a0\ud070 \ucd94\ub860 \ub2a5\ub825\uc744 \uc7a5\ub824\ud568\uc73c\ub85c\uc368 \uc5b8\uc5b4 \ubaa8\ub378\ub9c1 \uc815\ud655\ub3c4\ub97c \ud06c\uac8c \ud5a5\uc0c1\uc2dc\ud0a4\uba70, \ucd94\uac00\uc801\uc778 \uac15\ud654 \ubbf8\uc138 \uc870\uc815\uc744 \uc704\ud55c \uac15\ub825\ud55c \uc0ac\uc804 \ud6c8\ub828 \uae30\ubc18\uc744 \uc81c\uacf5\ud55c\ub2e4. \ud655\uc7a5 \uace1\uc120\uc740 \ud6c8\ub828 \ucef4\ud4e8\ud2b8\ub97c \uc99d\uac00\uc2dc\ud0b4\uc5d0 \ub530\ub77c \ub2e4\uc74c \ud1a0\ud070 \uc608\uce21 \uc815\ud655\ub3c4\uac00 \uc9c0\uc18d\uc801\uc73c\ub85c \ud5a5\uc0c1\ub418\ub294 \uac83\uc744 \ubcf4\uc5ec\uc900\ub2e4. \uacb0\uacfc\ub294 RPT\ub97c \uc5b8\uc5b4 \ubaa8\ub378 \uc0ac\uc804 \ud6c8\ub828\uc744 \ubc1c\uc804\uc2dc\ud0a4\uae30 \uc704\ud55c \ud6a8\uacfc\uc801\uc774\uace0 \uc720\ub9dd\ud55c \ud655\uc7a5 \ud328\ub7ec\ub2e4\uc784\uc73c\ub85c \uc704\uce58\uc2dc\ud0a8\ub2e4.", "title": "\uac15\ud654 \uc0ac\uc804 \ud6c8\ub828"}, "url": "https://huggingface.co/papers/2506.08007", "week": "2025-W24"}, {"abstract": "Large Language Models (LLMs) often hallucinate in question answering (QA)\ntasks. A key yet underexplored factor contributing to this is the temporality\nof questions -- whether they are evergreen (answers remain stable over time) or\nmutable (answers change). In this work, we introduce EverGreenQA, the first\nmultilingual QA dataset with evergreen labels, supporting both evaluation and\ntraining. Using EverGreenQA, we benchmark 12 modern LLMs to assess whether they\nencode question temporality explicitly (via verbalized judgments) or implicitly\n(via uncertainty signals). We also train EG-E5, a lightweight multilingual\nclassifier that achieves SoTA performance on this task. Finally, we demonstrate\nthe practical utility of evergreen classification across three applications:\nimproving self-knowledge estimation, filtering QA datasets, and explaining\nGPT-4o retrieval behavior.", "authors": ["Sergey Pletenev", "Maria Marina", "Nikolay Ivanov", "Daria Galimzianova", "Nikita Krayko", "Mikhail Salnikov", "Vasily Konovalov", "Alexander Panchenko", "Viktor Moskvoretskii"], "date_collected": "2025-06-11T10:48:22.380995", "likes": 122, "published_date": "May 27", "summary": "1. EverGreenQA\ub294 \uc9c8\ubb38\uc758 \uc2dc\uac04\uc801 \ud2b9\uc131\uc744 \ubc18\uc601\ud55c \uccab \ubc88\uc9f8 \ub2e4\uc911\uc5b8\uc5b4 QA \ub370\uc774\ud130\uc14b\uc73c\ub85c, LLMs\uc758 \uc131\ub2a5\uc744 \ud3c9\uac00\ud558\uace0 EG-E5\uc640 \uac19\uc740 \uacbd\ub7c9 \ubd84\ub958\uae30\ub97c \ud6c8\ub828\ud558\ub294\ub370 \ud65c\uc6a9\ud569\ub2c8\ub2e4.\n2. \uc2dc\uac04\uc801 \ud2b9\uc131\uc5d0 \uadfc\uac70\ud55c \ubd84\ub958\ub294 \uc790\uae30-\uc9c0\uc2dd \ucd94\uc815 \uac1c\uc120, QA \ub370\uc774\ud130\uc14b \ud544\ud130\ub9c1 \ubc0f GPT-4o \ud68c\uc218 \ub3d9\uc791 \uc124\uba85\uacfc \uac19\uc740 \ub2e4\uc591\ud55c \uc751\uc6a9 \ubd84\uc57c\uc5d0\uc11c \uc720\uc6a9\ud558\uac8c \ud65c\uc6a9\ub420 \uc218 \uc788\uc74c\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.\n3. \ub2e4\uc591\ud55c \ubaa9\uc801\uc744 \uc704\ud574 \uc2dc\uac04\uc801 \ud2b9\uc131\uc744 \uace0\ub824\ud55c QA\ub294 LLMs\uc758 \uc131\ub2a5\uc744 \ud5a5\uc0c1\uc2dc\ud0a4\uace0, \ubbf8\ub798\uc758 \uc9c8\ubb38 \uc751\ub2f5 \uc5d4\uc9c4\uc5d0 \uc801\uc6a9\ub420 \uc218 \uc788\ub294 \uc0c8\ub85c\uc6b4 \uac00\ub2a5\uc131\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4.", "title": "Will It Still Be True Tomorrow? Multilingual Evergreen Question\n  Classification to Improve Trustworthy QA", "translation": {"abstract": "\ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378 (Large Language Models, LLMs)\uc740 \uc885\uc885 \uc9c8\ubb38 \uc751\ub2f5 (QA) \uc791\uc5c5\uc5d0\uc11c \ud658\uac01\uc744 \uc77c\uc73c\ud0b5\ub2c8\ub2e4. \uc774\uc5d0 \uae30\uc5ec\ud558\ub294 \uc8fc\uc694\ud558\uace0 \uc544\uc9c1 \ud0d0\uad6c\ub418\uc9c0 \uc54a\uc740 \uc694\uc778 \uc911 \ud558\ub098\ub294 \uc9c8\ubb38\uc758 \uc2dc\uac04\uc801 \ud2b9\uc131\uc785\ub2c8\ub2e4. \uc9c8\ubb38\uc774 \uc77c\uc885\uc778\uc9c0 (\uc2dc\uac04\uc774 \uc9c0\ub098\ub3c4 \ub2f5\ubcc0\uc774 \uc548\uc815\uc801\uc778\uc9c0) \ub610\ub294 \uac00\ubcc0\uc801\uc778\uc9c0 (\ub2f5\ubcc0\uc774 \ubcc0\uacbd\ub418\ub294\uc9c0) \uc5ec\ubd80\uc785\ub2c8\ub2e4. \ubcf8 \uc5f0\uad6c\uc5d0\uc11c\ub294 \uccab \ubc88\uc9f8\ub85c \uc2dc\uac04\uc801 \ud2b9\uc131 \ub77c\ubca8\uc744 \uac16\ucd98 \ucd5c\ucd08\uc758 \ub2e4\uc911\uc5b8\uc5b4 QA \ub370\uc774\ud130\uc14b\uc778 EverGreenQA\ub97c \uc18c\uac1c\ud569\ub2c8\ub2e4. EverGreenQA\ub97c \uc0ac\uc6a9\ud558\uc5ec 12\uac00\uc9c0 \ucd5c\uc2e0 LLMs\ub97c \ud3c9\uac00\ud558\uc5ec \uc9c8\ubb38\uc758 \uc2dc\uac04\uc801 \ud2b9\uc131\uc744 \uba85\uc2dc\uc801\uc73c\ub85c (\uc5b8\uc5b4\uc801 \ud310\ub2e8\uc744 \ud1b5\ud574) \ub610\ub294 \uc554\uc2dc\uc801\uc73c\ub85c (\ubd88\ud655\uc2e4\uc131 \uc2e0\ud638\ub97c \ud1b5\ud574) \ubd80\ud638\ud654\ud558\ub294\uc9c0 \ud655\uc778\ud569\ub2c8\ub2e4. \ub610\ud55c \uc774 \uc791\uc5c5\uc5d0 \ub300\ud55c SoTA(Sate-of-The-Art) \uc131\ub2a5\uc744 \ub2ec\uc131\ud558\ub294 \uacbd\ub7c9 \ub2e4\uc911\uc5b8\uc5b4 \ubd84\ub958\uae30\uc778 EG-E5\ub97c \ud6c8\ub828\ud569\ub2c8\ub2e4. \ub9c8\uc9c0\ub9c9\uc73c\ub85c, \uc6b0\ub9ac\ub294 \ubd88\uc2dc\uc801 \ubd84\ub958\uc758 \uc2e4\uc6a9\uc131\uc744 \uc99d\uba85\ud558\uae30 \uc704\ud574 \uc790\uae30-\uc9c0\uc2dd \ucd94\uc815 \uac1c\uc120, QA \ub370\uc774\ud130\uc14b \ud544\ud130\ub9c1, \uadf8\ub9ac\uace0 GPT-4o \ud68c\uc218 \ub3d9\uc791 \uc124\uba85\uacfc \uac19\uc740 \uc138 \uac00\uc9c0 \uc751\uc6a9 \ubd84\uc57c\uc5d0 \uac78\uccd0 \uc2e4\ud5d8\ud569\ub2c8\ub2e4.", "title": "\ub0b4\uc77c\uc5d0\ub3c4 \uc5ec\uc804\ud788 \uc0ac\uc2e4\uc778\uac00\uc694? \uc2e0\ub8b0\ud560 \ub9cc\ud55c QA\ub97c \uac1c\uc120\ud558\uae30 \uc704\ud55c \ub2e4\uc911\uc5b8\uc5b4 \ubd88\uc2dc\uc801 \uc9c8\ubb38 \ubd84\ub958"}, "url": "https://huggingface.co/papers/2505.21115", "week": "2025-W24"}, {"abstract": "Multimodal Large Language Models (MLLMs) have demonstrated impressive\ncapabilities in understanding common visual elements, largely due to their\nlarge-scale datasets and advanced training strategies. However, their\neffectiveness in medical applications remains limited due to the inherent\ndiscrepancies between data and tasks in medical scenarios and those in the\ngeneral domain. Concretely, existing medical MLLMs face the following critical\nlimitations: (1) limited coverage of medical knowledge beyond imaging, (2)\nheightened susceptibility to hallucinations due to suboptimal data curation\nprocesses, (3) lack of reasoning capabilities tailored for complex medical\nscenarios. To address these challenges, we first propose a comprehensive data\ncuration procedure that (1) efficiently acquires rich medical knowledge data\nnot only from medical imaging but also from extensive medical texts and\ngeneral-domain data; and (2) synthesizes accurate medical captions, visual\nquestion answering (VQA), and reasoning samples. As a result, we build a\nmultimodal dataset enriched with extensive medical knowledge. Building on the\ncurated data, we introduce our medical-specialized MLLM: Lingshu. Lingshu\nundergoes multi-stage training to embed medical expertise and enhance its\ntask-solving capabilities progressively. Besides, we preliminarily explore the\npotential of applying reinforcement learning with verifiable rewards paradigm\nto enhance Lingshu\u0027s medical reasoning ability. Additionally, we develop\nMedEvalKit, a unified evaluation framework that consolidates leading multimodal\nand textual medical benchmarks for standardized, fair, and efficient model\nassessment. We evaluate the performance of Lingshu on three fundamental medical\ntasks, multimodal QA, text-based QA, and medical report generation. The results\nshow that Lingshu consistently outperforms the existing open-source multimodal\nmodels on most tasks ...", "authors": ["LASA Team", "Weiwen Xu", "Hou Pong Chan", "Long Li", "Mahani Aljunied", "Ruifeng Yuan", "Jianyu Wang", "Chenghao Xiao", "Guizhen Chen", "Chaoqun Liu", "Zhaodonghui Li", "Yu Sun", "Junao Shen", "Chaojun Wang", "Jie Tan", "Deli Zhao", "Tingyang Xu", "Hao Zhang", "Yu Rong"], "date_collected": "2025-06-11T10:48:22.382713", "likes": 99, "published_date": "Jun 8", "summary": "1. \uc758\ub8cc \uc9c0\uc2dd\uc744 \uc774\ubbf8\uc9c0\ubfd0\ub9cc \uc544\ub2c8\ub77c \ud48d\ubd80\ud55c \uc758\ub8cc \ud14d\uc2a4\ud2b8\uc640 \uc77c\ubc18 \ub3c4\uba54\uc778 \ub370\uc774\ud130\uc5d0\uc11c \ud6a8\uacfc\uc801\uc73c\ub85c \ud655\ubcf4\ud558\uace0 \uc815\ud655\ud55c \uc758\ub8cc \ucea1\uc158, \uc2dc\uac01 \uc9c8\ubb38 \uc751\ub2f5(VQA), \ucd94\ub860 \uc0d8\ud50c\uc744 \ud569\uc131\ud558\uc5ec \ub2e4\uc591\ud55c \uc758\ub8cc \uc9c0\uc2dd\uc774 \ud48d\ubd80\ud55c \ub2e4\uc911 \ubaa8\ub2ec \ub370\uc774\ud130\uc14b\uc744 \uad6c\ucd95\ud558\uc600\uc2b5\ub2c8\ub2e4.\n2. Lingshu\ub294 \uc758\ub8cc \uc804\ubb38\ud654\ub41c MLLM\uc73c\ub85c, \uc758\ub8cc \uc804\ubb38\uc131\uc744 \ub0b4\uc7ac\uc2dc\ud0a4\uace0 \uacfc\uc5c5 \ud574\uacb0 \ub2a5\ub825\uc744 \uc810\uc9c4\uc801\uc73c\ub85c \ud5a5\uc0c1\uc2dc\ud0a4\uae30 \uc704\ud574 \ub2e4\ub2e8\uacc4 \ud6c8\ub828\uc744 \uac70\uce69\ub2c8\ub2e4.\n3. MedEvalKit\ub294 \ub2e4\uc591\ud55c \uc758\ub8cc \ubca4\uce58\ub9c8\ud06c\ub97c \ud1b5\ud569\ud558\uc5ec \ud45c\uc900\ud654\ub418\uace0 \uacf5\uc815\ud558\uba70 \ud6a8\uc728\uc801\uc778 \ubaa8\ub378 \ud3c9\uac00\ub97c \uc704\ud55c \ud1b5\ud569 \ud3c9\uac00 \ud504\ub808\uc784\uc6cc\ud06c\ub97c \uac1c\ubc1c\ud558\uc600\uc73c\uba70, Lingshu\uc758 \uc131\ub2a5\uc744 \ub2e4\uc911 \ubaa8\ub2ec QA, \ud14d\uc2a4\ud2b8 \uae30\ubc18 QA, \uc758\ub8cc \ubcf4\uace0\uc11c \uc0dd\uc131 \uc138 \uac00\uc9c0 \uae30\ubcf8 \uc758\ub8cc \uc791\uc5c5\uc5d0\uc11c \ube44\uad50\ud3c9\uac00\ud558\uc600\uc2b5\ub2c8\ub2e4.", "title": "Lingshu: A Generalist Foundation Model for Unified Multimodal Medical\n  Understanding and Reasoning", "translation": {"abstract": "\ub2e4\uc911 \ubaa8\ub2ec \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378(MLLMs)\uc740 \ub300\uaddc\ubaa8 \ub370\uc774\ud130\uc14b\uacfc \uc120\uc9c4\ud55c \ud6c8\ub828 \uc804\ub7b5\uc73c\ub85c \uc77c\ubc18\uc801\uc778 \uc2dc\uac01 \uc694\uc18c\ub97c \uc798 \uc774\ud574\ud558\ub294 \ub2a5\ub825\uc744 \ubcf4\uc5ec\uc8fc\uc5c8\uc2b5\ub2c8\ub2e4. \uadf8\ub7ec\ub098 \uc758\ub8cc \uc751\uc6a9 \ubd84\uc57c\uc5d0\uc11c\uc758 \ud6a8\uacfc\ub294 \uc758\ub8cc \uc2dc\ub098\ub9ac\uc624\uc640 \uc77c\ubc18 \ub3c4\uba54\uc778 \uac04 \ub370\uc774\ud130 \ubc0f \uc791\uc5c5\uc758 \ubcf8\uc131\uc801\uc778 \ubd88\uc77c\uce58\ub85c \uc778\ud574 \uc81c\ud55c\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.", "title": "\ud1b5\ud569 \ub2e4\uc911 \ubaa8\ub2ec \uc758\ub8cc \uc774\ud574 \ubc0f \ucd94\ub860\uc744 \uc704\ud55c \uc77c\ubc18\uc801\uc778 \uae30\ucd08 \ubaa8\ub378: Lingshu"}, "url": "https://huggingface.co/papers/2506.07044", "week": "2025-W24"}, {"abstract": "Large language models (LLMs) excel at reasoning, yet post-training remains\ncritical for aligning their behavior with task goals. Existing reinforcement\nlearning (RL) methods often depend on costly human annotations or external\nreward models. We propose Reinforcement Learning via Self-Confidence (RLSC),\nwhich uses the model\u0027s own confidence as reward signals-eliminating the need\nfor labels, preference models, or reward engineering. Applied to\nQwen2.5-Math-7B with only 16 samples per question and 10 or 20 training steps,\nRLSC improves accuracy by +13.4% on AIME2024, +21.2% on MATH500, +21.7% on\nMinerva Math, +20.8% on Olympiadbench, and +9.7% on AMC23. RLSC provides a\nsimple, scalable post-training method for inference models, requiring only a\nsmall number of samples and unlabelled supervision.", "authors": ["Pengyi Li", "Matvey Skripkin", "Alexander Zubrey", "Andrey Kuznetsov", "Ivan Oseledets"], "date_collected": "2025-06-12T22:07:58.711356", "likes": 93, "published_date": "Jun 5", "summary": "1. \uae30\uc874 \uc5b8\uc5b4 \ubaa8\ub378\uc758 \uc0ac\ud6c4 \ud559\uc2b5\uc744 \uc704\ud574 \uc778\uac04 \uc8fc\uc11d\uc774\ub098 \uc678\ubd80 \ubcf4\uc0c1 \ubaa8\ub378\uc5d0 \uc758\uc874\ud558\ub294 \uac15\ud654\ud559\uc2b5 \ubc29\ubc95\uc758 \ud55c\uacc4\ub97c \uadf9\ubcf5\ud558\uae30 \uc704\ud574 \uc790\uc2e0\uc758 \ubaa8\ub378\uc774 \uac00\uc9c4 \uc790\uc2e0\uac10\uc744 \ubcf4\uc0c1 \uc2e0\ud638\ub85c \ud65c\uc6a9\ud558\ub294 RLSC \ubc29\ubc95\uc744 \uc81c\uc548.\n2. RLSC\ub97c \uc774\uc6a9\ud55c \uc2e4\ud5d8 \uacb0\uacfc, \uc18c\uc218\uc758 \uc0d8\ud50c\uacfc \ub77c\ubca8\uc774 \uc5c6\ub294 \uc9c0\ub3c4\ub9cc\uc73c\ub85c Qwen2.5-Math-7B\uc5d0\uc11c \uc0c1\ub2f9\ud55c \uc815\ud655\ub3c4 \ud5a5\uc0c1\uc744 \uc774\ub8e9\ud568(+13.4% - +21.7%).\n3. RLSC\ub294 \ucd94\ub860 \ubaa8\ub378\uc744 \uc704\ud55c \uac04\ub2e8\ud558\uace0 \ud655\uc7a5 \uac00\ub2a5\ud55c \uc0ac\ud6c4 \ud559\uc2b5 \ubc29\ubc95\uc73c\ub85c, \ube44\uc6a9\uc774 \uc801\uace0 \ub77c\ubca8 \uc5c6\ub294 \uc9c0\ub3c4\ub9cc\uc73c\ub85c\ub3c4 \ud6a8\uacfc\ub97c \ubc1c\ud718\ud568.", "title": "Confidence Is All You Need: Few-Shot RL Fine-Tuning of Language Models", "translation": {"abstract": "\ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378(Large language models, LLMs)\uc740 \ucd94\ub860\uc5d0\uc11c \ub6f0\uc5b4\ub098\uc9c0\ub9cc, \uc0ac\ud6c4 \ud559\uc2b5\uc740 \uadf8\ub4e4\uc758 \ud589\ub3d9\uc744 \uc791\uc5c5 \ubaa9\ud45c\uc640 \uc77c\uce58\uc2dc\ud0a4\ub294 \ub370 \uc911\uc694\ud569\ub2c8\ub2e4. \uae30\uc874 \uac15\ud654\ud559\uc2b5(Reinforcement learning, RL) \ubc29\ubc95\uc740 \uc885\uc885 \ube44\uc6a9\uc774 \ub9ce\uc774 \ub4dc\ub294 \uc778\uac04 \uc8fc\uc11d\uc774\ub098 \uc678\ubd80 \ubcf4\uc0c1 \ubaa8\ub378\uc5d0 \uc758\uc874\ud569\ub2c8\ub2e4. \uc800\ud76c\ub294 \uc790\uc2e0\uc758 \ubaa8\ub378\uc774 \uac00\uc9c4 \uc790\uc2e0\uac10\uc744 \ubcf4\uc0c1 \uc2e0\ud638\ub85c \ud65c\uc6a9\ud558\ub294 Reinforcement Learning via Self-Confidence (RLSC)\ub97c \uc81c\uc548\ud569\ub2c8\ub2e4. \uc774\ub294 \ub77c\ubca8, \uc120\ud638 \ubaa8\ub378 \ub610\ub294 \ubcf4\uc0c1 \uc124\uacc4\uac00 \ud544\uc694 \uc5c6\uc5b4\uc9c0\uac8c \ud569\ub2c8\ub2e4. \ud55c \uc9c8\ubb38 \ub2f9 16\uac1c\uc758 \uc0d8\ud50c\uacfc 10 \ub610\ub294 20\uac1c\uc758 \uad50\uc721 \ub2e8\uacc4\ub9cc\uc73c\ub85c Qwen2.5-Math-7B\uc5d0 \uc801\uc6a9\ud55c \uacb0\uacfc, RLSC\ub294 AIME2024\uc5d0\uc11c \uc815\ud655\ub3c4\ub97c +13.4%, MATH500\uc5d0\uc11c +21.2%, Minerva Math\uc5d0\uc11c +21.7%, Olympiadbench\uc5d0\uc11c +20.8%, AMC23\uc5d0\uc11c +9.7% \ud5a5\uc0c1\uc2dc\ucf30\uc2b5\ub2c8\ub2e4. RLSC\ub294 \uc18c\uc218\uc758 \uc0d8\ud50c\uacfc \ub77c\ubca8\uc774 \uc5c6\ub294 \uc9c0\ub3c4\ub9cc\uc73c\ub85c \ucd94\ub860 \ubaa8\ub378\uc744 \uc704\ud55c \uac04\ub2e8\ud558\uace0 \ud655\uc7a5 \uac00\ub2a5\ud55c \uc0ac\ud6c4 \ud559\uc2b5 \ubc29\ubc95\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.", "title": "\uc790\uc2e0\uac10\uc774 \uc804\ubd80\ub2e4: \uc5b8\uc5b4 \ubaa8\ub378\uc758 \uc18c\uc218 \ud559\uc2b5 \ud6c4 \uac15\ud654\ud559\uc2b5 \uc138\ubc00 \uc870\uc815"}, "url": "https://huggingface.co/papers/2506.06395", "week": "2025-W24"}, {"abstract": "This paper introduces MiniCPM4, a highly efficient large language model (LLM)\ndesigned explicitly for end-side devices. We achieve this efficiency through\nsystematic innovation in four key dimensions: model architecture, training\ndata, training algorithms, and inference systems. Specifically, in terms of\nmodel architecture, we propose InfLLM v2, a trainable sparse attention\nmechanism that accelerates both prefilling and decoding phases for long-context\nprocessing. Regarding training data, we propose UltraClean, an efficient and\naccurate pre-training data filtering and generation strategy, and UltraChat v2,\na comprehensive supervised fine-tuning dataset. These datasets enable\nsatisfactory model performance to be achieved using just 8 trillion training\ntokens. Regarding training algorithms, we propose ModelTunnel v2 for efficient\npre-training strategy search, and improve existing post-training methods by\nintroducing chunk-wise rollout for load-balanced reinforcement learning and\ndata-efficient tenary LLM, BitCPM. Regarding inference systems, we propose\nCPM.cu that integrates sparse attention, model quantization, and speculative\nsampling to achieve efficient prefilling and decoding. To meet diverse\non-device requirements, MiniCPM4 is available in two versions, with 0.5B and 8B\nparameters, respectively. Sufficient evaluation results show that MiniCPM4\noutperforms open-source models of similar size across multiple benchmarks,\nhighlighting both its efficiency and effectiveness. Notably, MiniCPM4-8B\ndemonstrates significant speed improvements over Qwen3-8B when processing long\nsequences. Through further adaptation, MiniCPM4 successfully powers diverse\napplications, including trustworthy survey generation and tool use with model\ncontext protocol, clearly showcasing its broad usability.", "authors": ["MiniCPM Team", "Chaojun Xiao", "Yuxuan Li", "Xu Han", "Yuzhuo Bai", "Jie Cai", "Haotian Chen", "Wentong Chen", "Xin Cong", "Ganqu Cui", "Ning Ding", "Shengdan Fan", "Yewei Fang", "Zixuan Fu", "Wenyu Guan", "Yitong Guan", "Junshao Guo", "Yufeng Han", "Bingxiang He", "Yuxiang Huang", "Cunliang Kong", "Qiuzuo Li"], "date_collected": "2025-06-11T10:48:22.384587", "likes": 73, "published_date": "Jun 9", "summary": "1. \ubbf8\ub2c8CPM4\ub294 \ubaa8\ub378 \uad6c\uc870, \ud6c8\ub828 \ub370\uc774\ud130, \ud6c8\ub828 \uc54c\uace0\ub9ac\uc998, \ucd94\ub860 \uc2dc\uc2a4\ud15c\uc758 \ub124 \uac00\uc9c0 \ud575\uc2ec \ucc28\uc6d0\uc5d0\uc11c \ud601\uc2e0\uc744 \ud1b5\ud574 \uc5d0\uc9c0 \uc7a5\uce58\ub97c \uc704\ud55c \ub9e4\uc6b0 \ud6a8\uc728\uc801\uc778 \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378\uc744 \uc81c\uc548\ud55c\ub2e4.\n2. UltraClean\uacfc UltraChat v2\ub97c \ud1b5\ud55c \ub370\uc774\ud130 \ud544\ud130\ub9c1 \ubc0f \uc0dd\uc131 \uc804\ub7b5, ModelTunnel v2\ub97c \uc0ac\uc6a9\ud55c \ud6a8\uc728\uc801\uc778 \uc0ac\uc804 \ud6c8\ub828 \uc804\ub7b5 \ud0d0\uc0c9, \uadf8\ub9ac\uace0 CPM.cu\ub97c \ud65c\uc6a9\ud55c \ud6a8\uc728\uc801\uc778 \uc120\ud589 \ubc0f \ub514\ucf54\ub529\uc744 \ud1b5\ud574 \ubaa8\ub378\uc758 \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uc5c8\ub2e4.\n3. MiniCPM4\ub294 \ub2e4\uc591\ud55c \uc751\uc6a9 \ud504\ub85c\uadf8\ub7a8\uc744 \uc9c0\uc6d0\ud558\uba70, \uc624\ud508 \uc18c\uc2a4 \ubaa8\ub378\uc744 \ub2a5\uac00\ud558\ub294 \ub180\ub77c\uc6b4 \ud6a8\uacfc\uc131\uc744 \ubcf4\uc5ec\uc8fc\uba70 \ud2b9\ud788 MiniCPM4-8B\ub294 \uae34 \uc2dc\ud000\uc2a4 \ucc98\ub9ac \uc2dc Qwen3-8B\ubcf4\ub2e4 \uc0c1\ub2f9\ud55c \uc18d\ub3c4 \ud5a5\uc0c1\uc744 \ubcf4\uc778\ub2e4.", "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices", "translation": {"abstract": "\ubcf8 \ub17c\ubb38\uc740 \uc5d0\uc9c0 \uc7a5\uce58\ub97c \uc704\ud574 \uba85\uc2dc\uc801\uc73c\ub85c \uc124\uacc4\ub41c \ub9e4\uc6b0 \ud6a8\uc728\uc801\uc778 \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378\uc778 \ubbf8\ub2c8CPM4\ub97c \uc18c\uac1c\ud569\ub2c8\ub2e4. \uc6b0\ub9ac\ub294 \ubaa8\ub378 \uad6c\uc870, \ud6c8\ub828 \ub370\uc774\ud130, \ud6c8\ub828 \uc54c\uace0\ub9ac\uc998, \ucd94\ub860 \uc2dc\uc2a4\ud15c \ub124 \uac00\uc9c0 \ud575\uc2ec \ucc28\uc6d0\uc5d0\uc11c \uccb4\uacc4\uc801\uc778 \ud601\uc2e0\uc744 \ud1b5\ud574 \uc774 \ud6a8\uc728\uc131\uc744 \ub2ec\uc131\ud588\uc2b5\ub2c8\ub2e4.", "title": "\ubbf8\ub2c8CPM4: \ucd5c\uc801\ud654\ub41c LLMs\uc758 \ucd08\uace0\ud6a8\uc728\uc801\uc778 \uc5d0\uc9c0 \uc7a5\uce58\uc6a9 \ubaa8\ub378"}, "url": "https://huggingface.co/papers/2506.07900", "week": "2025-W24"}, {"abstract": "Existing safety assurance research has primarily focused on training-phase\nalignment to instill safe behaviors into LLMs. However, recent studies have\nexposed these methods\u0027 susceptibility to diverse jailbreak attacks.\nConcurrently, inference scaling has significantly advanced LLM reasoning\ncapabilities but remains unexplored in the context of safety assurance.\nAddressing this gap, our work pioneers inference scaling for robust and\neffective LLM safety against emerging threats. We reveal that conventional\ninference scaling techniques, despite their success in reasoning tasks, perform\npoorly in safety contexts, even falling short of basic approaches like\nBest-of-N Sampling. We attribute this inefficiency to a newly identified\nchallenge, the exploration--efficiency dilemma, arising from the high\ncomputational overhead associated with frequent process reward model (PRM)\nevaluations. To overcome this dilemma, we propose SAFFRON, a novel inference\nscaling paradigm tailored explicitly for safety assurance. Central to our\napproach is the introduction of a multifurcation reward model (MRM) that\nsignificantly reduces the required number of reward model evaluations. To\noperationalize this paradigm, we further propose: (i) a partial supervision\ntraining objective for MRM, (ii) a conservative exploration constraint to\nprevent out-of-distribution explorations, and (iii) a Trie-based key--value\ncaching strategy that facilitates cache sharing across sequences during tree\nsearch. Extensive experiments validate the effectiveness of our method.\nAdditionally, we publicly release our trained multifurcation reward model\n(Saffron-1) and the accompanying token-level safety reward dataset (Safety4M)\nto accelerate future research in LLM safety. Our code, model, and data are\npublicly available at https://github.com/q-rz/saffron , and our project\nhomepage is at https://q-rz.github.io/p/saffron .", "authors": ["Ruizhong Qiu", "Gaotang Li", "Tianxin Wei", "Jingrui He", "Hanghang Tong"], "date_collected": "2025-06-11T10:48:22.385707", "likes": 69, "published_date": "Jun 6", "summary": "1. \uae30\uc874\uc758 \ucd94\ub860 \ud655\uc7a5 \uae30\uc220\uc740 \uc548\uc804 \uc0c1\ud669\uc5d0\uc11c\uc758 \uc131\ub2a5\uc774 \ubbf8\ud761\ud558\uc5ec \uc0c8\ub85c\uc6b4 \uc548\uc804 \ubcf4\uc99d \ud328\ub7ec\ub2e4\uc784 SAFFRON\uc774 \uc81c\uc548\ub418\uc5c8\ub2e4.\n2. \uc774\ub97c \uc704\ud574 \ub2e4\uc911 \ubd84\uae30 \ubcf4\uc0c1 \ubaa8\ud615(MRM)\uc744 \ub3c4\uc785\ud558\uc5ec \ud544\uc694\ud55c \ubcf4\uc0c1 \ubaa8\ud615 \ud3c9\uac00 \ud69f\uc218\ub97c \ud604\uc800\ud788 \uc904\uc600\uc73c\uba70, \ud2b8\ub9ac \uae30\ubc18 \uac80\uc0c9 \uacfc\uc815\uc5d0\uc11c \uc77c\ub828\uc758 \ud0a4-\uac12 \uce90\uc2f1 \uc804\ub7b5\uc744 \uc6a9\uc774\ud558\uac8c \ud558\ub294 \uc81c\uc548\ub3c4 \ud3ec\ud568\ub418\uc5c8\ub2e4.\n3. \uad11\ubc94\uc704\ud55c \uc2e4\ud5d8 \uacb0\uacfc\uac00 \uc6b0\ub9ac\uc758 \ubc29\ubc95\uc774 \ud6a8\uacfc\uc801\uc784\uc744 \uc785\uc99d\ud558\uba70, \ud6c8\ub828\ub41c MRM\uc778 Saffron-1\uacfc \ud1a0\ud070 \uc218\uc900 \uc548\uc804 \ubcf4\uc0c1 \ub370\uc774\ud130 \uc9d1\ud569(Safety4M)\uc744 \uacf5\uac1c\ud558\uc5ec LLM \uc548\uc804\uc131\uc5d0 \ub300\ud55c \ubbf8\ub798 \uc5f0\uad6c\ub97c \uac00\uc18d\ud654\ud558\uace0\uc790 \ud55c\ub2e4.", "title": "Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety\n  Assurance", "translation": {"abstract": "\uae30\uc874\uc758 \uc548\uc804\uc131 \ubcf4\uc99d \uc5f0\uad6c\ub294 \ub300\ubd80\ubd84 \uc548\uc804\ud55c \ud589\ub3d9\uc744 \uc5b8\uc5b4\u00b7\uc9c0\uc2dd \ubaa8\ud615 \uae30\uacc4(LLMs)\uc5d0 \ucc44\ud0dd\ud558\ub294 \uac83\uc5d0 \ucd08\uc810\uc744 \ub9de\ucd94\uc5b4\uc654\ub2e4. \uadf8\ub7ec\ub098 \ucd5c\uadfc \uc5f0\uad6c\uc5d0\uc11c\ub294 \uc774\ub7ec\ud55c \ubc29\ubc95\ub4e4\uc774 \ub2e4\uc591\ud55c \ud0c8\uc625 \uacf5\uaca9\uc5d0 \ucde8\uc57d\ud558\ub2e4\ub294 \ubb38\uc81c\uc810\uc774 \ub4dc\ub7ec\ub0ac\ub2e4. \ub3d9\uc2dc\uc5d0, \ucd94\ub860 \ud655\uc7a5\uc740 LLM\uc758 \ucd94\ub860 \ub2a5\ub825\uc744 \ud06c\uac8c \ud5a5\uc0c1\uc2dc\ucf30\uc9c0\ub9cc \uc548\uc804\uc131 \ubcf4\uc99d \uad00\ub828 \uc5f0\uad6c\uc5d0\uc11c\ub294 \uc5ec\uc804\ud788 \ud0d0\uad6c\ub418\uc9c0 \uc54a\uc740 \uc601\uc5ed\uc774\ub2e4. \uc6b0\ub9ac\uc758 \uc5f0\uad6c\ub294 \uc774\ub7ec\ud55c \uacf5\ubc31\uc744 \ucc44\uc6b0\uace0, \uc2e0\uaddc \uc704\ud611\uc5d0 \ub300\ud574 \uacac\uace0\ud558\uace0 \ud6a8\uacfc\uc801\uc778 LLM \uc548\uc804\uc131 \ucd94\ub860 \ud655\uc7a5\uc744 \uc120\ub3c4\ud55c\ub2e4.", "title": "LLM \uc548\uc804\uc131 \ubcf4\uc99d\uc744 \uc704\ud55c \ucd94\ub860 \ud655\uc7a5 \ud328\ub7ec\ub2e4\uc784\uc5d0 \ub300\ud55c \uc5f0\uad6c"}, "url": "https://huggingface.co/papers/2506.06444", "week": "2025-W24"}, {"abstract": "This paper evaluates geopolitical biases in LLMs with respect to various\ncountries though an analysis of their interpretation of historical events with\nconflicting national perspectives (USA, UK, USSR, and China). We introduce a\nnovel dataset with neutral event descriptions and contrasting viewpoints from\ndifferent countries. Our findings show significant geopolitical biases, with\nmodels favoring specific national narratives. Additionally, simple debiasing\nprompts had a limited effect in reducing these biases. Experiments with\nmanipulated participant labels reveal models\u0027 sensitivity to attribution,\nsometimes amplifying biases or recognizing inconsistencies, especially with\nswapped labels. This work highlights national narrative biases in LLMs,\nchallenges the effectiveness of simple debiasing methods, and offers a\nframework and dataset for future geopolitical bias research.", "authors": ["Mikhail Salnikov", "Dmitrii Korzh", "Ivan Lazichny", "Elvir Karimov", "Artyom Iudin", "Ivan Oseledets", "Oleg Y. Rogov", "Alexander Panchenko", "Natalia Loukachevitch", "Elena Tutubalina"], "date_collected": "2025-06-11T10:48:22.387038", "likes": 62, "published_date": "Jun 7", "summary": "1. LLMs\uc5d0\uc11c \uad6d\uac00\uc801 \uc11c\uc220 \ud3b8\ud5a5\uc744 \ubc1c\uacac\ud558\uace0, \uac04\ub2e8\ud55c \ud3b8\ud5a5 \uc81c\uac70 \ubc29\ubc95\uc758 \ud55c\uacc4\ub97c \ubc1d\ud798.\n2. \ubaa8\ub378\uc758 \ubbfc\uac10\uc131\uc73c\ub85c \uc778\ud574 \ud3b8\ud5a5\uc774 \uac15\ud654\ub418\uac70\ub098 \ubaa8\uc21c\uc744 \uc778\uc815\ud558\ub294 \uc2e4\ud5d8 \uacb0\uacfc\ub97c \uc81c\uc2dc.\n3. \ubbf8\ub798 \uc9c0\uc815\ud559\uc801 \ud3b8\ud5a5 \uc5f0\uad6c\ub97c \uc704\ud55c \ud504\ub808\uc784\uc6cc\ud06c\uc640 \ub370\uc774\ud130\uc14b\uc744 \uc81c\uacf5\ud568\uc73c\ub85c\uc368 \uc911\uc694\uc131\uc744 \uac15\uc870.", "title": "Geopolitical biases in LLMs: what are the \"good\" and the \"bad\" countries\n  according to contemporary language models", "translation": {"abstract": "\ubcf8 \ub17c\ubb38\uc740 LLMs\uc5d0\uc11c \ub2e4\uc591\ud55c \uad6d\uac00\uc5d0 \ub300\ud55c \uc9c0\uc815\ud559\uc801 \ud3b8\ud5a5\uc744 \ubd84\uc11d\ud558\uc5ec \ubbf8\uad6d, \uc601\uad6d, \uc18c\ub828 \ubc0f \uc911\uad6d\uc758 \uc5ed\uc0ac\uc801 \uc0ac\uac74 \ud574\uc11d\uc744 \ud1b5\ud574 \uc774\ub97c \ud3c9\uac00\ud569\ub2c8\ub2e4. \uc6b0\ub9ac\ub294 \uc911\ub9bd\uc801 \uc0ac\uac74 \uc124\uba85\uacfc \ub2e4\ub978 \uad6d\uac00\ub4e4\uc758 \ub300\ub9bd\uc801 \uc2dc\uac01\uc744 \uc81c\uc2dc\ud558\ub294 \ud601\uc2e0\uc801\uc778 \ub370\uc774\ud130\uc14b\uc744 \uc18c\uac1c\ud569\ub2c8\ub2e4. \uc6b0\ub9ac\uc758 \uacb0\uacfc\ub294 \ud2b9\uc815 \uad6d\uac00\uc801 \uc11c\uc220 \uc6b0\uc120\uc744 \ubcf4\uc5ec\uc8fc\uba70, \uac04\ub2e8\ud55c \ud3b8\ud5a5 \uc81c\uac70 \ud504\ub86c\ud504\ud2b8\uac00 \uc774\ub7ec\ud55c \ud3b8\ud5a5\uc744 \uc904\uc774\ub294 \ub370 \uc81c\ud55c\uc801\uc778 \uc601\ud5a5\uc744 \ubbf8\ucce4\uc74c\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \ub610\ud55c, \uac00\uc9dc \ucc38\uc5ec\uc790 \ub808\uc774\ube14\ub85c \uc2e4\ud5d8\ud55c \uacb0\uacfc\ub294 \ubaa8\ub378\uc774 \uc18c\uc18d\uc744 \ubbfc\uac10\ud558\uac8c \uac10\uc9c0\ud558\uba70, \ub54c\ub85c\ub294 \ud3b8\ud5a5\uc744 \uac15\ud654\ud558\uac70\ub098 \uc77c\uad00\uc131\uc744 \uc778\uc2dd\ud558\ub294 \uac83\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4, \ud2b9\ud788 \ub808\uc774\ube14\uc744 \uad50\uccb4\ud560 \ub54c. \ubcf8 \uc5f0\uad6c\ub294 LLMs \ub0b4\uc758 \uad6d\uac00\uc801 \uc11c\uc220 \ud3b8\ud5a5\uc744 \uac15\uc870\ud558\uba70, \uac04\ub2e8\ud55c \ud3b8\ud5a5 \uc81c\uac70 \ubc29\ubc95\uc758 \ud6a8\uacfc\ub97c \ub3c4\uc804\ud558\uba70, \ubbf8\ub798\uc758 \uc9c0\uc815\ud559\uc801 \ud3b8\ud5a5 \uc5f0\uad6c\ub97c \uc704\ud55c \ud504\ub808\uc784\uc6cc\ud06c\uc640 \ub370\uc774\ud130\uc14b\uc744 \uc81c\uc548\ud569\ub2c8\ub2e4.", "title": "LLMs\uc5d0\uc11c\uc758 \uc9c0\uc815\ud559\uc801 \ud3b8\ud5a5: \ud604\ub300 \uc5b8\uc5b4 \ubaa8\ub378\uc5d0\uc11c \"\uc88b\uc740\" \ub098\ub77c\uc640 \"\ub098\uc05c\" \ub098\ub77c\ub294 \ubb34\uc5c7\uc778\uac00"}, "url": "https://huggingface.co/papers/2506.06751", "week": "2025-W24"}, {"abstract": "Though reasoning-based large language models (LLMs) have excelled in\nmathematics and programming, their capabilities in knowledge-intensive medical\nquestion answering remain underexplored. To address this, we introduce\nReasonMed, the largest medical reasoning dataset, comprising 370k high-quality\nexamples distilled from 1.7 million initial reasoning paths generated by\nvarious LLMs. ReasonMed is constructed through a multi-agent\nverification and refinement process, where we design an Error Refiner\nto enhance the reasoning paths by identifying and correcting error-prone steps\nflagged by a verifier. Leveraging ReasonMed, we systematically investigate best\npractices for training medical reasoning models and find that combining\ndetailed Chain-of-Thought (CoT) reasoning with concise answer summaries yields\nthe most effective fine-tuning strategy. Based on this strategy, we train\nReasonMed-7B, which sets a new benchmark for sub-10B models, outperforming the\nprior best by 4.17\\% and even exceeding LLaMA3.1-70B on PubMedQA by 4.60\\%.", "authors": ["Yu Sun", "Xingyu Qian", "Weiwen Xu", "Hao Zhang", "Chenghao Xiao", "Long Li", "Yu Rong", "Wenbing Huang", "Qifeng Bai", "Tingyang Xu"], "date_collected": "2025-06-13T22:07:35.289566", "likes": 60, "published_date": "Jun 11", "summary": "1. \ucd94\ub860 \uae30\ubc18 \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378\uc740 \uc758\ub8cc \ubd84\uc57c\uc5d0\uc11c\uc758 \uc131\ub2a5\uc744 \ud5a5\uc0c1\uc2dc\ud0a4\uae30 \uc704\ud574 ReasonMed \ub370\uc774\ud130\uc14b\uc744 \uc18c\uac1c\ud558\uba70, \uc774\ub294 \ubc18\ubcf5\uc801\uc778 \uac80\uc99d \ubc0f \uc218\uc815 \uacfc\uc815\uc744 \ud1b5\ud574 \uace0\ud488\uc9c8 \uc608\uc2dc\ub97c \ucd94\ucd9c\ud55c \uacb0\uacfc\uc774\ub2e4.\n2. ReasonMed\ub97c \ud65c\uc6a9\ud558\uc5ec \uc758\ub8cc \ucd94\ub860 \ubaa8\ub378\uc744 \ud6c8\ub828\ud558\ub294 \uacfc\uc815\uc5d0\uc11c \uc138\ubd80 \uc0ac\uace0 \uccb4\uc778\uacfc \uac04\uacb0\ud55c \uc694\uc57d\uc744 \uacb0\ud569\ud558\ub294 \uac83\uc774 \uac00\uc7a5 \ud6a8\uc728\uc801\uc778 \ubbf8\uc138 \uc870\uc815 \uc804\ub7b5\uc784\uc744 \ubc1c\uacac\ud588\uc73c\uba70, \uc774\uc5d0 \uae30\ucd08\ud558\uc5ec \uc0c8\ub85c\uc6b4 \ubaa8\ub378 ReasonMed-7B\ub97c \uac1c\ubc1c\ud588\ub2e4.\n3. ReasonMed-7B \ubaa8\ub378\uc740 10B \ubbf8\ub9cc \ubaa8\ub378\uc5d0\uc11c \uc0c8\ub85c\uc6b4 \uae30\uc900\uc744 \uc124\uc815\ud558\uba70, \uc120\ud589 \ucd5c\uace0 \ubaa8\ub378\uc744 4.17\\% \ub2a5\uac00\ud558\uace0 PubMedQA\uc758 LLaMA3.1-70B \ubaa8\ub378\uc744 4.60\\% \ucd08\uacfc\ud558\ub294 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\ub2e4.", "title": "ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical\n  Reasoning", "translation": {"abstract": "\ucd94\ub860 \uae30\ubc18 \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378(LLMs)\uc740 \uc218\ud559\uacfc \ud504\ub85c\uadf8\ub798\ubc0d\uc5d0\uc11c \ub6f0\uc5b4\ub098\uc9c0\ub9cc, \uc758\ub8cc \uc9c0\uc2dd\uc744 \ud65c\uc6a9\ud55c \uc9c8\uc758\uc751\ub2f5\uc5d0\uc11c\uc758 \uc131\ub2a5\uc740 \uc5ec\uc804\ud788 \ubbf8\ube44\ud558\ub2e4. \uc774\ub97c \ud574\uacb0\ud558\uae30 \uc704\ud574, \ub2e4\uc591\ud55c LLMs\uc5d0 \uc758\ud574 \uc0dd\uc131\ub41c 170\ub9cc \uac1c \ucd08\uae30 \ucd94\ub860 \uacbd\ub85c \uc911 37\ub9cc \uac1c\uc758 \uace0\ud488\uc9c8 \uc608\uc2dc\ub97c \ucd94\ucd9c\ud558\uc5ec \uad6c\uc131\ub41c ReasonMed\ub77c\ub294 \ucd5c\ub300 \uaddc\ubaa8\uc758 \uc758\ub8cc \ucd94\ub860 \ub370\uc774\ud130\uc14b\uc744 \uc18c\uac1c\ud55c\ub2e4. ReasonMed\ub294 \ub2e4\uc911 \uc5d0\uc774\uc804\ud2b8 \uac80\uc99d \ubc0f \uc218\uc815 \uacfc\uc815\uc744 \uac70\uccd0 \uad6c\ucd95\ub418\uc5c8\ub294\ub370, \uc774 \uacfc\uc815\uc5d0\uc11c \uc624\ub958 \uc2dd\ubcc4\uc790\ub85c\uc11c\uc758 \u0027\uc5d0\ub7ec \ub9ac\ud30c\uc774\ub108\u0027\ub97c \uc124\uacc4\ud558\uc5ec \uac80\uc99d\uae30\uac00 \uc2dd\ubcc4\ud55c \uc624\ub958 \ub0b4\uc6a9\uc744 \uc218\uc815\ud574 \ucd94\ub860 \uacbd\ub85c\ub97c \ud5a5\uc0c1\uc2dc\ud0a8\ub2e4. ReasonMed\ub97c \ud65c\uc6a9\ud558\uc5ec \uc758\ub8cc \ucd94\ub860 \ubaa8\ub378\uc744 \ud6c8\ub828\ud558\ub294 \ub370 \uac00\uc7a5 \ud6a8\uacfc\uc801\uc778 \uc138\ubd80 \uc0ac\uace0 \uccb4\uc778\uacfc \uac04\uacb0\ud55c \ub2f5\ubcc0 \uc694\uc57d\uc744 \uacb0\ud569\ud558\ub294 \ubc29\ubc95\uc744 \uccb4\uacc4\uc801\uc73c\ub85c \uc5f0\uad6c\ud55c \uacb0\uacfc, \uc0c8\ub85c\uc6b4 \ubbf8\uc138 \uc870\uc815 \uc804\ub7b5\uc5d0\uc11c \uc6b0\uc218\ud55c \uc131\uacfc\ub97c \ubcf4\uc774\ub294 ReasonMed-7B \ubaa8\ub378\uc744 \ud6c8\ub828\uc2dc\ucf30\ub2e4. \uc774 \ubaa8\ub378\uc740 \uc774\uc804 \ucd5c\uace0 \ubaa8\ub378\ubcf4\ub2e4 4.17\\% \uc6b0\uc218\ud55c \uacb0\uacfc\ub97c \ub2ec\uc131\ud558\uba70 PubMedQA\uc758 LLaMA3.1-70B\ub97c 4.60\\% \ucd08\uc6d4\ud55c\ub2e4.", "title": "\uc758\ub8cc \ucd94\ub860 \ubc1c\uc804\uc744 \uc704\ud55c 37\ub9cc \uac1c \uc5d0\uc774\uc804\ud2b8 \uc0dd\uc131 \ub370\uc774\ud130\uc14b ReasonMed"}, "url": "https://huggingface.co/papers/2506.09513", "week": "2025-W24"}, {"abstract": "Notable breakthroughs in diffusion modeling have propelled rapid improvements\nin video generation, yet current foundational model still face critical\nchallenges in simultaneously balancing prompt following, motion plausibility,\nand visual quality. In this report, we introduce Seedance 1.0, a\nhigh-performance and inference-efficient video foundation generation model that\nintegrates several core technical improvements: (i) multi-source data curation\naugmented with precision and meaningful video captioning, enabling\ncomprehensive learning across diverse scenarios; (ii) an efficient architecture\ndesign with proposed training paradigm, which allows for natively supporting\nmulti-shot generation and jointly learning of both text-to-video and\nimage-to-video tasks. (iii) carefully-optimized post-training approaches\nleveraging fine-grained supervised fine-tuning, and video-specific RLHF with\nmulti-dimensional reward mechanisms for comprehensive performance improvements;\n(iv) excellent model acceleration achieving ~10x inference speedup through\nmulti-stage distillation strategies and system-level optimizations. Seedance\n1.0 can generate a 5-second video at 1080p resolution only with 41.4 seconds\n(NVIDIA-L20). Compared to state-of-the-art video generation models, Seedance\n1.0 stands out with high-quality and fast video generation having superior\nspatiotemporal fluidity with structural stability, precise instruction\nadherence in complex multi-subject contexts, native multi-shot narrative\ncoherence with consistent subject representation.", "authors": ["Yu Gao", "Haoyuan Guo", "Tuyen Hoang", "Weilin Huang", "Lu Jiang", "Fangyuan Kong", "Huixia Li", "Jiashi Li", "Liang Li", "Xiaojie Li", "Xunsong Li", "Yifu Li", "Shanchuan Lin", "Zhijie Lin", "Jiawei Liu", "Shu Liu", "Xiaonan Nie", "Zhiwu Qing", "Yuxi Ren", "Li Sun", "Zhi Tian", "Rui Wang"], "date_collected": "2025-06-12T22:07:58.715684", "likes": 59, "published_date": "Jun 10", "summary": "1. Seedance 1.0\uc740 \ub2e4\uc591\ud55c \uc2dc\ub098\ub9ac\uc624\uc758 \ud3ec\uad04\uc801\uc778 \ud559\uc2b5\uc744 \uac00\ub2a5\ucf00 \ud558\ub294 \uc815\ubc00\ud558\uace0 \uc758\ubbf8 \uc788\ub294 \ube44\ub514\uc624 \ucea1\uc158\uc744 \ud1b5\ud55c \ub2e4\uc911 \uc18c\uc2a4 \ub370\uc774\ud130 \uc815\ub9ac \ubc0f \ud6a8\uc728\uc801\uc778 \uc544\ud0a4\ud14d\ucc98 \ub514\uc790\uc778\uc744 \ud2b9\uc9d5\uc73c\ub85c \ud569\ub2c8\ub2e4.\n2. \uc774 \ubaa8\ub378\uc740 \ub2e4\uc911 \uc0f7 \uc0dd\uc131\uc744 \uc6d0\ud65c\ud558\uac8c \uc9c0\uc6d0\ud558\uba70 \ud14d\uc2a4\ud2b8\uc5d0\uc11c \ube44\ub514\uc624, \uc774\ubbf8\uc9c0\uc5d0\uc11c \ube44\ub514\uc624 \uc791\uc5c5\uc744 \ub3d9\uc2dc\uc5d0 \ud559\uc2b5\ud558\ub294 \uc81c\uc548\ub41c \uad50\uc721 \ud328\ub7ec\ub2e4\uc784\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n3. Seedance 1.0\uc740 \uace0\ud574\uc0c1\ub3c4 5\ucd08 \ube44\ub514\uc624\ub97c 41.4\ucd08 \ub9cc\uc5d0 \uc0dd\uc131\ud558\ub294 \ube60\ub978 \ucd94\ub860 \uc18d\ub3c4\uc640 \uc6b0\uc218\ud55c \ud654\uc9c8\uc744 \uc81c\uacf5\ud558\uba70, \ub2e4\uc591\ud55c \uc8fc\uc81c \ud45c\ud604\uc5d0\uc11c \uad6c\uc870\uc801 \uc548\uc815\uc131\uacfc \uc9c0\uc2dc\uc5d0 \ub530\ub978 \uc77c\uad00\uc131\uc744 \ubcf4\uc5ec\uc8fc\ub294 \ud0c1\uc6d4\ud55c \uc131\ub2a5\uc744 \uc790\ub791\ud569\ub2c8\ub2e4.", "title": "Seedance 1.0: Exploring the Boundaries of Video Generation Models", "translation": {"abstract": "\ud655\uc0b0 \ubaa8\ub378\ub9c1\uc758 \uc8fc\ubaa9\ud560\ub9cc\ud55c \uc131\uacfc\ub85c \ube44\ub514\uc624 \uc0dd\uc131\uc774 \uae09\uc18d\ud788 \ubc1c\uc804\ud574\uc654\uc9c0\ub9cc, \ud604\uc7ac\uc758 \uae30\ubcf8 \ubaa8\ub378\uc740 \uc0ac\uc6a9\uc790 \uba85\ub839 \ub530\ub974\uae30, \uc6c0\uc9c1\uc784 \ud604\uc2e4\uc131, \uc2dc\uac01\uc801 \ud488\uc9c8\uc744 \ub3d9\uc2dc\uc5d0 \uade0\ud615 \uc788\uac8c \uc720\uc9c0\ud558\ub294\ub370 \uc911\uc694\ud55c \ubb38\uc81c\uc5d0 \uc9c1\uba74\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubcf8 \ubcf4\uace0\uc11c\uc5d0\uc11c\ub294 \uc5ec\ub7ec \ud575\uc2ec \uae30\uc220 \uac1c\uc120\uc744 \ud1b5\ud569\ud55c \uc131\ub2a5 \uc6b0\uc218\ud558\uace0 \ucd94\ub860 \ud6a8\uc728\uc801\uc778 \ube44\ub514\uc624 \uae30\ucd08 \uc0dd\uc131 \ubaa8\ub378\uc778 Seedance 1.0\uc744 \uc18c\uac1c\ud569\ub2c8\ub2e4.", "title": "Seedance 1.0: \ube44\ub514\uc624 \uc0dd\uc131 \ubaa8\ub378\uc758 \uacbd\uacc4 \ud0d0\uc0c9"}, "url": "https://huggingface.co/papers/2506.09113", "week": "2025-W24"}, {"abstract": "We introduce PartCrafter, the first structured 3D generative model that\njointly synthesizes multiple semantically meaningful and geometrically distinct\n3D meshes from a single RGB image. Unlike existing methods that either produce\nmonolithic 3D shapes or follow two-stage pipelines, i.e., first segmenting an\nimage and then reconstructing each segment, PartCrafter adopts a unified,\ncompositional generation architecture that does not rely on pre-segmented\ninputs. Conditioned on a single image, it simultaneously denoises multiple 3D\nparts, enabling end-to-end part-aware generation of both individual objects and\ncomplex multi-object scenes. PartCrafter builds upon a pretrained 3D mesh\ndiffusion transformer (DiT) trained on whole objects, inheriting the pretrained\nweights, encoder, and decoder, and introduces two key innovations: (1) A\ncompositional latent space, where each 3D part is represented by a set of\ndisentangled latent tokens; (2) A hierarchical attention mechanism that enables\nstructured information flow both within individual parts and across all parts,\nensuring global coherence while preserving part-level detail during generation.\nTo support part-level supervision, we curate a new dataset by mining part-level\nannotations from large-scale 3D object datasets. Experiments show that\nPartCrafter outperforms existing approaches in generating decomposable 3D\nmeshes, including parts that are not directly visible in input images,\ndemonstrating the strength of part-aware generative priors for 3D understanding\nand synthesis. Code and training data will be released.", "authors": ["Yuchen Lin", "Chenguo Lin", "Panwang Pan", "Honglei Yan", "Yiqiang Feng", "Yadong Mu", "Katerina Fragkiadaki"], "date_collected": "2025-06-12T22:07:58.716875", "likes": 55, "published_date": "Jun 5", "summary": "1. PartCrafter\ub294 \ub2e8\uc77c \uc774\ubbf8\uc9c0\ub97c \uae30\ubc18\uc73c\ub85c \uc5ec\ub7ec \uc758\ubbf8 \uc788\ub294 3D \uba54\uc26c\ub97c \ub3d9\uc2dc\uc5d0 \uc0dd\uc131\ud558\ub294 \uad6c\uc870\ud654\ub41c 3D \uc0dd\uc131 \ubaa8\ub378\uc774\ub2e4.\n2. \ubbf8\ub9ac \ud559\uc2b5\ub41c 3D \uba54\uc26c \ud655\uc0b0 \ubcc0\ud615\uae30\ub97c \uae30\ubc18\uc73c\ub85c, \uad6c\uc131\uc801 \uc7a0\uc7ac \uacf5\uac04\uacfc \uacc4\uce35\uc801 \uc8fc\uc758 \uba54\ucee4\ub2c8\uc998\uc744 \ub3c4\uc785\ud558\uc5ec \uac1c\ubcc4 \ud30c\ud2b8 \ub0b4\ubd80 \ubc0f \uc804\uccb4 \ud30c\ud2b8 \uac04\uc5d0 \uad6c\uc870\uc801 \uc815\ubcf4 \uc804\ub2ec\uc744 \ubcf4\uc7a5\ud558\uba74\uc11c \uc0dd\uc131 \uc2dc \uc804\uc5ed \uc77c\uad00\uc131\uc744 \uc720\uc9c0\ud55c\ub2e4.\n3. \uc0c8\ub85c\uc6b4 \ub370\uc774\ud130\uc14b\uc744 \uad6c\ucd95\ud558\uace0 \uc2e4\ud5d8 \uacb0\uacfc\uc5d0\uc11c PartCrafter\uac00 \ub2e4\ub978 \ubc29\ubc95\ubcf4\ub2e4 \uc6b0\uc218\ud55c \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uba70, 3D \uc774\ud574\uc640 \ud569\uc131\uc744 \uc704\ud55c \ud30c\ud2b8 \uc778\uc2dd \uc0dd\uc131 \uc0ac\uc804\uc9c0\uc2dd\uc758 \uac15\uc810\uc744 \uc785\uc99d\ud55c\ub2e4.", "title": "PartCrafter: Structured 3D Mesh Generation via Compositional Latent\n  Diffusion Transformers", "translation": {"abstract": "PartCrafter\ub294 \ub2e8\uc77c RGB \uc774\ubbf8\uc9c0\ub85c\ubd80\ud130 \uc5ec\ub7ec \uc758\ubbf8\ub860\uc801\uc73c\ub85c \uc720\uc758\ubbf8\ud558\uace0 \uae30\ud558\ud559\uc801\uc73c\ub85c \uad6c\ubd84\ub41c 3D \uba54\uc26c\ub97c \ud568\uaed8 \uc0dd\uc131\ud558\ub294 \uccab \uad6c\uc870\ud654\ub41c 3D \uc0dd\uc131 \ubaa8\ub378\uc744 \uc18c\uac1c\ud569\ub2c8\ub2e4. PartCrafter\ub294 \uc774\ubbf8\uc9c0\ub97c \uc138\ubd84\ud654\ud558\uace0 \uac01 \uc138\uadf8\uba3c\ud2b8\ub97c \uc7ac\uad6c\uc131\ud558\ub294 2\ub2e8\uacc4 \ud30c\uc774\ud504\ub77c\uc778\uc744 \ub530\ub974\uac70\ub098 \ub2e8\uc77c\ud55c 3D \ubaa8\uc591\uc744 \uc0dd\uc131\ud558\ub294 \uae30\uc874 \ubc29\ubc95\uacfc \ub2ec\ub9ac \uc0ac\uc804 \uc138\ubd84\ud654\ub41c \uc785\ub825\uc5d0 \uc758\uc874\ud558\uc9c0 \uc54a\ub294 \ud1b5\ud569\uc801 \uad6c\uc131 \uc0dd\uc131 \uc544\ud0a4\ud14d\ucc98\ub97c \ucc44\ud0dd\ud569\ub2c8\ub2e4. \uc774\ub294 \ub2e8\uc77c \uc774\ubbf8\uc9c0\uc5d0 \uc870\uac74\uc744 \ub450\uace0 \uc5ec\ub7ec 3D \ud30c\ud2b8\ub97c \ub3d9\uc2dc\uc5d0 \uc18c\uc74c \uc81c\uac70\ud558\uc5ec \uac1c\ubcc4 \uac1d\uccb4 \ubc0f \ubcf5\uc7a1\ud55c \ub2e4\uc911 \uac1d\uccb4 \uc7a5\uba74\uc758 \uace0\ub824\ud55c \ubaa8\uc591 \uc0dd\uc131\uc744 \uac00\ub2a5\ucf00 \ud569\ub2c8\ub2e4.", "title": "PartCrafter: \uad6c\uc131\uc801 \uc7a0\uc7ac \ud655\uc0b0 \ubcc0\ud615\uae30\ub97c \ud1b5\ud55c \uad6c\uc870\ud654\ub41c 3D \uba54\uc26c \uc0dd\uc131"}, "url": "https://huggingface.co/papers/2506.05573", "week": "2025-W24"}];
+        const allCategories = new Set();
+        
+        papers.forEach(paper => {
+            if (paper.categories) {
+                paper.categories.forEach(category => allCategories.add(category));
+            } else {
+                allCategories.add('기타');
+            }
+        });
+
+        // 카테고리 필터 버튼 생성
+        const categoryFiltersContainer = document.getElementById('category-filters');
+        allCategories.forEach(category => {
+            const filterButton = document.createElement('button');
+            filterButton.className = 'category-filter';
+            filterButton.textContent = category;
+            filterButton.onclick = () => toggleFilter(category);
+            categoryFiltersContainer.appendChild(filterButton);
+        });
+
+        let activeFilters = new Set();
+
+        function toggleFilter(category) {
+            const button = event.target;
+            if (activeFilters.has(category)) {
+                activeFilters.delete(category);
+                button.classList.remove('active');
+            } else {
+                activeFilters.add(category);
+                button.classList.add('active');
+            }
+            filterPapers();
+        }
+
+        function clearAllFilters() {
+            activeFilters.clear();
+            document.querySelectorAll('.category-filter').forEach(button => {
+                button.classList.remove('active');
+            });
+            filterPapers();
+        }
+
+        function filterPapers() {
+            const paperCards = document.querySelectorAll('.paper-card');
+            let visibleCount = 0;
+
+            paperCards.forEach(card => {
+                const cardCategories = card.dataset.categories.split(',').map(cat => cat.trim());
+                
+                if (activeFilters.size === 0) {
+                    // 필터가 없으면 모든 카드 표시
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    // 선택된 카테고리와 겹치는지 확인
+                    const hasMatchingCategory = cardCategories.some(cat => activeFilters.has(cat));
+                    card.style.display = hasMatchingCategory ? 'block' : 'none';
+                    if (hasMatchingCategory) visibleCount++;
+                }
+            });
+
+            // 필터 카운트 업데이트
+            document.getElementById('filter-count').textContent = 
+                `${visibleCount}개 논문 표시 중`;
+            
+            // 총 논문 수 업데이트
+            document.getElementById('total-papers').textContent = visibleCount;
+        }
+
+        // 주차 네비게이션 기능
+        const availableWeeks = ["2026-W34", "2025-W27", "2025-W26", "2025-W25", "2025-W24", "2025-W23"];
+        const currentWeek = "2025-W24";
+
+        // 주차에서 연도와 주차 번호 추출하는 함수
+        function parseWeek(weekStr) {
+            const match = weekStr.match(/(\d{4})-W(\d{2})/);
+            if (match) {
+                return {
+                    year: parseInt(match[1]),
+                    week: parseInt(match[2])
+                };
+            }
+            return null;
+        }
+
+        // 주차 문자열 생성하는 함수
+        function createWeekStr(year, week) {
+            return `${year}-W${week.toString().padStart(2, '0')}`;
+        }
+
+        // 주차 네비게이션 함수
+        function navigateWeek(direction) {
+            let targetWeek;
+            
+            if (currentWeek === 'latest') {
+                // 현재 최신 주차에서 (현재 주차 계산 사용)
+                const currentWeekStr = "2025-W24";
+                const currentWeekInfo = parseWeek(currentWeekStr);
+                
+                if (!currentWeekInfo) {
+                    alert('현재 주차를 계산할 수 없습니다.');
+                    return;
+                }
+                
+                if (direction === -1) {
+                    // 이전 주로: 현재 주차 - 1
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    
+                    targetWeek = createWeekStr(prevYear, prevWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                } else {
+                    // 다음 주로: 현재 주차 + 1
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    
+                    targetWeek = createWeekStr(nextYear, nextWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                }
+            } else {
+                // 특정 주차에서
+                const currentWeekInfo = parseWeek(currentWeek);
+                if (!currentWeekInfo) {
+                    alert('현재 주차 형식이 올바르지 않습니다.');
+                    return;
+                }
+                
+                if (direction === -1) {
+                    // 이전 주로: 현재 주차 - 1
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52; // 대략적인 연간 주차 수
+                    }
+                    
+                    targetWeek = createWeekStr(prevYear, prevWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                } else {
+                    // 다음 주로: 현재 주차 + 1
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    
+                    targetWeek = createWeekStr(nextYear, nextWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                }
+            }
+            
+            // 목표 주차로 이동 - 최신 주차는 메인 페이지로, 나머지는 주차별 페이지로
+            const isLocalhost = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+            
+            // 최신 주차(availableWeeks[0])인지 확인
+            if (targetWeek === availableWeeks[0]) {
+                // 최신 주차는 메인 페이지로 이동
+                if (isLocalhost) {
+                    window.location.href = `/static/index.html`;
+                } else {
+                    window.location.href = `/paper_summary/index.html`;
+                }
+            } else {
+                // 이전 주차들은 주차별 페이지로 이동
+                if (isLocalhost) {
+                    window.location.href = `/static/week/${targetWeek}/index.html`;
+                } else {
+                    window.location.href = `/paper_summary/week/${targetWeek}/index.html`;
+                }
+            }
+        }
+
+        // 네비게이션 버튼 상태 업데이트
+        function updateNavigationButtons() {
+            const prevButton = document.getElementById('prev-week');
+            const nextButton = document.getElementById('next-week');
+            
+            if (currentWeek === 'latest') {
+                // 최신 주차에서 (현재 주차 계산 사용)
+                const currentWeekStr = "2025-W24";
+                const currentWeekInfo = parseWeek(currentWeekStr);
+                
+                if (!currentWeekInfo) {
+                    prevButton.disabled = true;
+                    nextButton.disabled = true;
+                } else {
+                    // 이전 주차 확인
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    const prevWeekStr = createWeekStr(prevYear, prevWeek);
+                    prevButton.disabled = !availableWeeks.includes(prevWeekStr);
+                    
+                    // 다음 주차 확인
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    const nextWeekStr = createWeekStr(nextYear, nextWeek);
+                    nextButton.disabled = !availableWeeks.includes(nextWeekStr);
+                }
+            } else {
+                // 특정 주차에서
+                const currentWeekInfo = parseWeek(currentWeek);
+                if (!currentWeekInfo) {
+                    prevButton.disabled = true;
+                    nextButton.disabled = true;
+                } else {
+                    // 이전 주차 확인
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    const prevWeekStr = createWeekStr(prevYear, prevWeek);
+                    prevButton.disabled = !availableWeeks.includes(prevWeekStr);
+                    
+                    // 다음 주차 확인
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    const nextWeekStr = createWeekStr(nextYear, nextWeek);
+                    nextButton.disabled = !availableWeeks.includes(nextWeekStr);
+                }
+            }
+        }
+        updateNavigationButtons();
+    </script>
+</body>
+</html> 

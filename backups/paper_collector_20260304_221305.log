@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Mar  3 22:12:03 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W10
+URL: https://huggingface.co/papers/week/2026-W10
+Found 10 papers in weekly view
+Fetching likes for: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Fetching likes for: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Fetching likes for: dLLM: Simple Diffusion Language Modeling
+Fetching likes for: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Fetching likes for: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Fetching likes for: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale
+Fetching likes for: RubricBench: Aligning Model-Generated Rubrics with Human Standards
+Fetching likes for: OpenAutoNLU: Open Source AutoML Library for NLU
+Fetching likes for: Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets
+Fetching likes for: MMR-Life: Piecing Together Real-life Scenes for Multimodal Multi-image Reasoning
+Selected top 10 papers by likes:
+1. From Scale to Speed: Adaptive Test-Time Scaling for Image Editing (112 likes)
+2. OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens (105 likes)
+3. dLLM: Simple Diffusion Language Modeling (102 likes)
+4. CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation (58 likes)
+5. Enhancing Spatial Understanding in Image Generation via Reward Modeling (44 likes)
+6. SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale (43 likes)
+7. RubricBench: Aligning Model-Generated Rubrics with Human Standards (42 likes)
+8. OpenAutoNLU: Open Source AutoML Library for NLU (40 likes)
+9. Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets (38 likes)
+10. MMR-Life: Piecing Together Real-life Scenes for Multimodal Multi-image Reasoning (36 likes)
+Found abstract: Image Chain-of-Thought (Image-CoT) is a test-time scaling paradigm that improves image generation by...
+Processed paper: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Found abstract: OmniLottie is a versatile framework that generates high quality vector animations from multi-modal i...
+Processed paper: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Found abstract: Although diffusion language models (DLMs) are evolving quickly, many recent models converge on a set...
+Processed paper: dLLM: Simple Diffusion Language Modeling
+Found abstract: GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task...
+Processed paper: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Found abstract: Recent progress in text-to-image generation has greatly advanced visual fidelity and creativity, but...
+Processed paper: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Found abstract: Software engineering agents (SWE) are improving rapidly, with recent gains largely driven by reinfor...
+Processed paper: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale
+Found abstract: As Large Language Model (LLM) alignment evolves from simple completions to complex, highly sophistic...
+Processed paper: RubricBench: Aligning Model-Generated Rubrics with Human Standards
+Found abstract: OpenAutoNLU is an open-source automated machine learning library for natural language understanding ...
+Processed paper: OpenAutoNLU: Open Source AutoML Library for NLU
+Found abstract: The reliability of multilingual Large Language Model (LLM) evaluation is currently compromised by th...
+Processed paper: Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets
+Found abstract: Recent progress in the reasoning capabilities of multimodal large language models (MLLMs) has empowe...
+Processed paper: MMR-Life: Piecing Together Real-life Scenes for Multimodal Multi-image Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: From Scale to Speed: Adaptive Test-Time Scaling for Image Editing
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: dLLM: Simple Diffusion Language Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  64
+Update date_collected: 2026-03-04T07:12:12.215433+09:00  ->  2026-03-03T07:12:32.031634+09:00
+
+Processing paper 4/10
+Title: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  32
+Update date_collected: 2026-03-04T07:12:12.217111+09:00  ->  2026-03-03T07:12:32.035877+09:00
+
+Processing paper 5/10
+Title: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  41
+Update date_collected: 2026-03-04T07:12:12.218437+09:00  ->  2026-03-03T07:12:32.033042+09:00
+
+Processing paper 6/10
+Title: SWE-rebench V2: Language-Agnostic SWE Task Collection at Scale
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: RubricBench: Aligning Model-Generated Rubrics with Human Standards
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: OpenAutoNLU: Open Source AutoML Library for NLU
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets
+Paper already exists, checking if translation is complete...
+Update likes: 38  ->  35
+Update date_collected: 2026-03-04T07:12:12.223403+09:00  ->  2026-03-03T07:12:32.034156+09:00
+
+Processing paper 10/10
+Title: MMR-Life: Piecing Together Real-life Scenes for Multimodal Multi-image Reasoning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W10.json...
+
+Updating Notion database...
+Creating new paper: 스케일에서 속도로: 이미지 편집을 위한 적응형 테스트 타임 스케일링
+Creating new paper: OmniLottie: 매개변수화된 Lottie 토큰을 통해 벡터 애니메이션 생성하기
+Updating paper: dLLM: 간단한 확산 언어 모델링 (likes: 64 -> 102)
+Updating paper: CUDA 에이전트: 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습 (likes: 32 -> 58)
+Updating paper: 이미지 생성에서 보상 모델링을 통한 공간 이해 강화 (likes: 41 -> 44)
+Creating new paper: SWE-rebench V2: 규모에 맞게 구축된 언어에 중립적인 SWE 작업 모음
+Creating new paper: RubricBench: 모델 생성 루브릭을 인간 기준과 일치시키다
+Creating new paper: 오픈오토NLU: NLU를 위한 오픈 소스 AutoML 라이브러리
+Updating paper: 번역에서의 회복: 벤치마크와 데이터셋의 자동 번역을 위한 효율적인 파이프라인 (likes: 35 -> 38)
+Creating new paper: 현실 세계 장면을 위한 다중 이미지 다중 모달 Reasoning에 대한 MMR-Life
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Mar  3 22:14:26 UTC 2026 ===
+

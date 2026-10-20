@@ -1,0 +1,129 @@
+=== Paper Collection Started at Tue Sep  9 22:07:31 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W37
+URL: https://huggingface.co/papers/week/2025-W37
+Found 10 papers in weekly view
+Fetching likes for: Why Language Models Hallucinate
+Fetching likes for: Reverse-Engineered Reasoning for Open-Ended Generation
+Fetching likes for: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Fetching likes for: Set Block Decoding is a Language Model Inference Accelerator
+Fetching likes for: Symbolic Graphics Programming with Large Language Models
+Fetching likes for: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Fetching likes for: Does DINOv3 Set a New Medical Vision Standard?
+Fetching likes for: Reinforced Visual Perception with Tools
+Fetching likes for: Reinforcement Learning Foundations for Deep Research Systems: A Survey
+Fetching likes for: Focusing by Contrastive Attention: Enhancing VLMs' Visual Reasoning
+Selected top 10 papers by likes:
+1. Why Language Models Hallucinate (117 likes)
+2. Reverse-Engineered Reasoning for Open-Ended Generation (99 likes)
+3. WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents (55 likes)
+4. Set Block Decoding is a Language Model Inference Accelerator (43 likes)
+5. Symbolic Graphics Programming with Large Language Models (42 likes)
+6. Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models (36 likes)
+7. Does DINOv3 Set a New Medical Vision Standard? (27 likes)
+8. Reinforced Visual Perception with Tools (24 likes)
+9. Reinforcement Learning Foundations for Deep Research Systems: A Survey (20 likes)
+10. Focusing by Contrastive Attention: Enhancing VLMs' Visual Reasoning (13 likes)
+Found abstract: Like students facing hard exam questions, large language models sometimes
+guess when uncertain, prod...
+Processed paper: Why Language Models Hallucinate
+Found abstract: While the ``deep reasoning'' paradigm has spurred significant advances in
+verifiable domains like ma...
+Processed paper: Reverse-Engineered Reasoning for Open-Ended Generation
+Found abstract: The paradigm of Large Language Models (LLMs) has increasingly shifted toward
+agentic applications, w...
+Processed paper: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Found abstract: Autoregressive next token prediction language models offer powerful
+capabilities but face significan...
+Processed paper: Set Block Decoding is a Language Model Inference Accelerator
+Found abstract: Large language models (LLMs) excel at program synthesis, yet their ability to
+produce symbolic graph...
+Processed paper: Symbolic Graphics Programming with Large Language Models
+Found abstract: We propose TraceRL, a trajectory-aware reinforcement learning framework for
+diffusion language model...
+Processed paper: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Found abstract: The advent of large-scale vision foundation models, pre-trained on diverse
+natural images, has marke...
+Processed paper: Does DINOv3 Set a New Medical Vision Standard?
+Found abstract: Visual reasoning, a cornerstone of human intelligence, encompasses complex
+perceptual and logical pr...
+Processed paper: Reinforced Visual Perception with Tools
+Found abstract: Deep research systems, agentic AI that solve complex, multi-step tasks by
+coordinating reasoning, se...
+Processed paper: Reinforcement Learning Foundations for Deep Research Systems: A Survey
+Found abstract: Vision-Language Models (VLMs) have demonstrated remarkable success across
+diverse visual tasks, yet ...
+Processed paper: Focusing by Contrastive Attention: Enhancing VLMs' Visual Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Why Language Models Hallucinate
+Paper already exists, checking if translation is complete...
+Update likes: 117  ->  71
+Update date_collected: 2025-09-10T07:07:39.178765+09:00  ->  2025-09-09T07:07:36.248723+09:00
+
+Processing paper 2/10
+Title: Reverse-Engineered Reasoning for Open-Ended Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Set Block Decoding is a Language Model Inference Accelerator
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  24
+Update date_collected: 2025-09-10T07:07:39.183090+09:00  ->  2025-09-09T07:07:36.251345+09:00
+
+Processing paper 5/10
+Title: Symbolic Graphics Programming with Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  28
+Update date_collected: 2025-09-10T07:07:39.184310+09:00  ->  2025-09-09T07:07:36.250013+09:00
+
+Processing paper 6/10
+Title: Revolutionizing Reinforcement Learning Framework for Diffusion Large
+  Language Models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Does DINOv3 Set a New Medical Vision Standard?
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Reinforced Visual Perception with Tools
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Reinforcement Learning Foundations for Deep Research Systems: A Survey
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Focusing by Contrastive Attention: Enhancing VLMs' Visual Reasoning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W37.json...
+
+Updating Notion database...
+Updating paper: 왜 언어 모델은 환각하는가 (likes: 71 -> 117)
+Creating new paper: 역공학화된 추론을 통한 개방형 생성
+Creating new paper: 웹탐험가: 장기간 웹 에이전트 훈련을 위한 탐사 및 발전
+Updating paper: Set Block Decoding는 언어 모델 추론 가속화기 (likes: 24 -> 43)
+Updating paper: Symbolic Graphics Programming with Large Language Models (대규모 언어 모델과 상징적 그래픽 프로그래밍) (likes: 28 -> 42)
+Creating new paper: 확산형 대언어 모델을 위한 혁신적인 강화학습 프레임워크
+Creating new paper: DINOv3가 새로운 의료 비전 표준을 정립하나요?
+Creating new paper: 도구를 활용한 강화된 시각 지각
+Creating new paper: 딥 연구 시스템을 위한 강화 학습 기초: 조사
+Creating new paper: 대조적 주의에 의한 초점화: VLM의 시각적 추론 강화
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Sep  9 22:09:22 UTC 2025 ===
+

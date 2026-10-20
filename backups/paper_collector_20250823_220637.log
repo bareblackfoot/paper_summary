@@ -1,0 +1,153 @@
+=== Paper Collection Started at Fri Aug 22 22:07:18 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W34
+URL: https://huggingface.co/papers/week/2025-W34
+Found 10 papers in weekly view
+Fetching likes for: DINOv3
+Fetching likes for: Intern-S1: A Scientific Multimodal Foundation Model
+Fetching likes for: Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent
+  Distillation and Agentic RL
+Fetching likes for: Ovis2.5 Technical Report
+Fetching likes for: SSRL: Self-Search Reinforcement Learning
+Fetching likes for: Thyme: Think Beyond Images
+Fetching likes for: DuPO: Enabling Reliable LLM Self-Verification via Dual Preference
+  Optimization
+Fetching likes for: ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning
+Fetching likes for: 4DNeX: Feed-Forward 4D Generative Modeling Made Easy
+Fetching likes for: From Scores to Skills: A Cognitive Diagnosis Framework for Evaluating
+  Financial Large Language Models
+Selected top 10 papers by likes:
+1. DINOv3 (167 likes)
+2. Intern-S1: A Scientific Multimodal Foundation Model (163 likes)
+3. Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent
+  Distillation and Agentic RL (99 likes)
+4. Ovis2.5 Technical Report (97 likes)
+5. SSRL: Self-Search Reinforcement Learning (86 likes)
+6. Thyme: Think Beyond Images (74 likes)
+7. DuPO: Enabling Reliable LLM Self-Verification via Dual Preference
+  Optimization (70 likes)
+8. ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning (68 likes)
+9. 4DNeX: Feed-Forward 4D Generative Modeling Made Easy (56 likes)
+10. From Scores to Skills: A Cognitive Diagnosis Framework for Evaluating
+  Financial Large Language Models (55 likes)
+Found abstract: Self-supervised learning holds the promise of eliminating the need for manual
+data annotation, enabl...
+Processed paper: DINOv3
+Found abstract: In recent years, a plethora of open-source foundation models have emerged,
+achieving remarkable prog...
+Processed paper: Intern-S1: A Scientific Multimodal Foundation Model
+Found abstract: Recent advances in large language models (LLMs) and multi-agent systems have
+demonstrated remarkable...
+Processed paper: Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent
+  Distillation and Agentic RL
+Found abstract: We present Ovis2.5, a successor to Ovis2 designed for native-resolution
+visual perception and strong...
+Processed paper: Ovis2.5 Technical Report
+Found abstract: We investigate the potential of large language models (LLMs) to serve as
+efficient simulators for ag...
+Processed paper: SSRL: Self-Search Reinforcement Learning
+Found abstract: Following OpenAI's introduction of the ``thinking with images'' concept,
+recent efforts have explore...
+Processed paper: Thyme: Think Beyond Images
+Found abstract: We present DuPO, a dual learning-based preference optimization framework that
+generates annotation-f...
+Processed paper: DuPO: Enabling Reliable LLM Self-Verification via Dual Preference
+  Optimization
+Found abstract: Narrative comprehension on long stories and novels has been a challenging
+domain attributed to their...
+Processed paper: ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning
+Found abstract: We present 4DNeX, the first feed-forward framework for generating 4D (i.e.,
+dynamic 3D) scene repres...
+Processed paper: 4DNeX: Feed-Forward 4D Generative Modeling Made Easy
+Found abstract: Large Language Models (LLMs) have shown promise for financial applications,
+yet their suitability fo...
+Processed paper: From Scores to Skills: A Cognitive Diagnosis Framework for Evaluating
+  Financial Large Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: DINOv3
+Paper already exists, checking if translation is complete...
+Update likes: 167  ->  145
+Update date_collected: 2025-08-23T07:07:27.313047+09:00  ->  2025-08-22T07:07:57.135156+09:00
+
+Processing paper 2/10
+Title: Intern-S1: A Scientific Multimodal Foundation Model
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent
+  Distillation and Agentic RL
+Paper already exists, checking if translation is complete...
+Update likes: 99  ->  90
+Update date_collected: 2025-08-23T07:07:27.316836+09:00  ->  2025-08-22T07:07:57.139065+09:00
+
+Processing paper 4/10
+Title: Ovis2.5 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 97  ->  95
+Update date_collected: 2025-08-23T07:07:27.318689+09:00  ->  2025-08-22T07:07:57.137114+09:00
+
+Processing paper 5/10
+Title: SSRL: Self-Search Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  82
+Update date_collected: 2025-08-23T07:07:27.320379+09:00  ->  2025-08-22T07:07:57.140795+09:00
+
+Processing paper 6/10
+Title: Thyme: Think Beyond Images
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  71
+Update date_collected: 2025-08-23T07:07:27.322150+09:00  ->  2025-08-22T07:07:57.142592+09:00
+
+Processing paper 7/10
+Title: DuPO: Enabling Reliable LLM Self-Verification via Dual Preference
+  Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  53
+Update date_collected: 2025-08-23T07:07:27.323453+09:00  ->  2025-08-22T07:07:57.145216+09:00
+
+Processing paper 8/10
+Title: ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  66
+Update date_collected: 2025-08-23T07:07:27.324715+09:00  ->  2025-08-22T07:07:57.143888+09:00
+
+Processing paper 9/10
+Title: 4DNeX: Feed-Forward 4D Generative Modeling Made Easy
+Paper already exists, checking if translation is complete...
+Update likes: 56  ->  53
+Update date_collected: 2025-08-23T07:07:27.326015+09:00  ->  2025-08-22T07:07:57.148001+09:00
+
+Processing paper 10/10
+Title: From Scores to Skills: A Cognitive Diagnosis Framework for Evaluating
+  Financial Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 55  ->  53
+Update date_collected: 2025-08-23T07:07:27.327386+09:00  ->  2025-08-22T07:07:57.146651+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W34.json...
+
+Updating Notion database...
+Updating paper: DINOv3 (likes: 145 -> 167)
+Creating new paper: Intern-S1: 과학적 다중모달 기초 모델
+Updating paper: 에이전트 연쇄: 다중 에이전트 간소화 및 영향력 기반 강화 학습을 통한 최종 에이전트 기반 모델 (likes: 90 -> 99)
+Updating paper: Ovis2.5 기술 보고서 (likes: 95 -> 97)
+Updating paper: SSRL: Self-Search Reinforcement Learning (likes: 82 -> 86)
+Updating paper: 이미지 너머로 생각하라: Thyme (Think Beyond Images) (likes: 71 -> 74)
+Updating paper: DuPO: 이중 선호도를 통한 신뢰할 수 있는 LLM 자체 검증 활성화 (likes: 53 -> 70)
+Updating paper: ComoRAG: 상태 기반 장기 이야기 추론을 위한 인지 영감을 받은 기억 조직화 RAG (likes: 66 -> 68)
+Updating paper: 4DNeX: Feed-Forward 4D 생성 모델링이 쉬워졌습니다 (likes: 53 -> 56)
+Updating paper: 점수에서 스킬로: 금융 대규모 언어 모델 평가를 위한 인지 진단 프레임워크 (likes: 53 -> 55)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Aug 22 22:09:23 UTC 2025 ===
+

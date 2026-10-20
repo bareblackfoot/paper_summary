@@ -1,0 +1,349 @@
+[
+  {
+    "title": "Agents' Last Exam",
+    "abstract": "Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have not translated into economically meaningful deployment across many professional domains. We argue that this gap is largely an evaluation problem: widely used benchmarks lack sustained performance measurement on real and economically valuable workflows. This paper introduces Agents' Last Exam (ALE), a benchmark designed to evaluate AI agents on long-horizon, economically valuable, real-world tasks with verifiable outcomes. Developed in collaboration with 250+ industry experts, ALE covers non-physical industries defined with reference to O*NET / SOC 2018 (the U.S. federal occupational taxonomy). It is organized around a task taxonomy with 55 subfields grouped into 13 industry clusters covering 1K+ tasks. Current results show that the hardest tier remains far from saturated: across mainstream harness and backbone configurations, the average full pass rate is 2.6%. ALE is designed as a living benchmark: its task pool grows continuously as new workflows and industries are onboarded. More broadly, ALE is intended not merely as another leaderboard, but as an instrument for closing the gap between benchmark success and GDP-relevant impact.",
+    "authors": [
+      "Yiyou Sun",
+      "Xinyang Han",
+      "Weichen Zhang",
+      "Yuanbo Pang",
+      "Tianyu Wang",
+      "Yuhan Cao",
+      "Yixiao Huang",
+      "Chris Duroiu",
+      "Haoyun Zhang",
+      "Jeffrey Lin",
+      "Weishu Zhang",
+      "Tyler Zeng",
+      "Ying Yan",
+      "Bo Liu",
+      "Hanson Wen",
+      "Mingyang Xu",
+      "Xiaoyuan Liu",
+      "Zimeng Chen",
+      "Weiyan Shi",
+      "Amanda Dsouza",
+      "Vincent Sunn Chen",
+      "Patrick Bryant"
+    ],
+    "likes": 278,
+    "published_date": "Jun 3",
+    "url": "https://huggingface.co/papers/2606.05405",
+    "date_collected": "2026-06-12T07:41:48.964738+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "에이전트의 최종 시험",
+      "abstract": "최근 AI 시스템은 다양한 벤치마크에서 강력한 결과를 얻었지만, 이러한 성과는 많은 전문 분야에서 경제적으로 의미 있는 배치로 이어지지 못했습니다. 우리는 이 차이가 주로 평가 문제라고 주장합니다: 널리 사용되는 벤치마크는 실제로 경제적 가치 있는 워크플로우에서 지속적인 성능 측정을 부족하게 합니다. 본 논문은 에이전트의 최종 시험 (ALE)을 소개하는데, 이는 AI 에이전트를 장기간, 경제적 가치가 있는, 실제 업무에서 확인 가능한 작업에 대해 평가하기 위한 벤치마크입니다. 250여 개의 산업 전문가와의 협력을 통해 개발된 ALE은 O*NET / SOC 2018을 기준으로 정의된 비물리적 산업을 다룹니다. 이는 55개 하위 분야로 구성된 작업 분류를 중심으로 하며, 13개 산업 클러스터가 포함된 1천 개 이상의 작업을 다룹니다. 현재 결과에서 가장 어려운 티어는 흔히 사용되는 하네스와 백본 구성에서도 평균적인 완전 통과율이 2.6%에 그칩니다. ALE은 계속 성장하는 작업 풀을 가지고 있으며, 새로운 워크플로우와 산업이 기록됨에 따라 확장됩니다. 보다 넓게, ALE은 다시 말해 리더보드일 뿐만 아니라 벤치마크 성공과 GDP 관련 영향 간의 간극을 좁히기 위한 수단으로 의도되었습니다."
+    },
+    "summary": "1. AI 시스템의 현재 성과가 전문 분야에서 경제적으로 적용되지 못하는 이유는 평가 문제 때문이며, 에이전트의 최종 시험(ALE)은 이를 해결하기 위한 벤치마크로 새롭게 소개됨.\n2. ALE은 장기적이고 경제적으로 가치 있는 실제 작업을 기반으로 AI 에이전트를 평가하며, 다양한 산업 클러스터와 1천 개 이상의 작업을 다루는 task taxonomy로 구성됨.\n3. 현재 결과에서 ALE은 다양한 하드웨어 및 구성에서 완전 통과율이 낮게 나타남. ALE은 리더보드가 아닌 GDP 영향을 향상시키는 도구로 고안됨.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "ABot-Earth 0.5: Generative 3D Earth Model",
+    "abstract": "We present ABot-Earth 0.5, a generative 3D framework designed to synthesize vast, seamless 3D environments from ubiquitous, geospatially referenced satellite imagery. To achieve this, we propose a novel generative model formulated directly with the 3D Gaussian Splatting (3DGS) representation. The model is trained on a diverse corpus of existing real-world urban reconstructions, learning to generate realistic geometry and textures. At inference, it synthesizes novel 3D scenes conditioned solely on satellite imagery at a scalable rate of under 10 minutes per square kilometer, while demonstrating exceptional realism. The framework is designed for accessibility, with integrated hierarchical level-of-detail (LOD) structures that permit real-time, interactive visualization on web-based map engines. This high-fidelity simulation sandbox effectively mitigates the sim-to-real domain gap, enabling critical downstream Embodied AI applications like closed-loop UAV navigation. By providing an ultra-low-cost and high-efficiency solution, ABot-Earth 0.5 significantly lowers the technical and financial barriers to large-scale 3D reconstruction and empowers the future of global digital earth visualization.",
+    "authors": [
+      "Ming Qian",
+      "Tianjian Ouyang",
+      "Mingchao Sun",
+      "Zijian Wang",
+      "Jincheng Xiong",
+      "Jiarong Han",
+      "Yongchang Zhang",
+      "Jiawei Zhang",
+      "Xu Wang",
+      "Yu Liu",
+      "Luyang Tang",
+      "Fei Yu",
+      "Zengye Ge",
+      "Mengmeng Du",
+      "Yuan Liu",
+      "Nianfei Fan",
+      "Song Wang",
+      "Yingliang Peng",
+      "Chunxue Jia",
+      "Yang Liu",
+      "Shiying Zeng",
+      "Haozhe Shi"
+    ],
+    "likes": 206,
+    "published_date": "Jun 8",
+    "url": "https://huggingface.co/papers/2606.09967",
+    "date_collected": "2026-06-12T07:41:48.967990+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "ABot-Earth 0.5: 생성적 3D 지구 모델",
+      "abstract": "본 연구에서는 유비쿼터스하게 지리적으로 참조된 위성 이미지로부터 방대하고 매끈한 3D 환경을 합성하기 위한 ABot-Earth 0.5를 제안합니다. 우리는 3D 가우시안 스플래팅(3DGS) 표현을 직접 포뮬레이션한 새로운 생성 모델을 제안합니다. 이 모델은 다양한 실제 도시 재구축 코퍼스로 학습되어 현실적인 지오메트리와 질감을 생성하는 법을 배웁니다. 추론 단계에서 이미지만을 조건으로 한 채 새로운 3D 장면을 합성하며, 매우 현실적인 결과를 보여줍니다. 이 프레임워크는 접근성을 고려하여 설계되었으며 실시간 대화식 시각화를 가능케 하는 통합된 계층별 세부수준(LOD) 구조가 통합되어 웹 기반 지도 엔진에서 시각화됩니다. 이 고도의 신뢰도를 가진 시뮬레이션 샌드박스는 현실로의 도메인 갭을 효과적으로 완화하며 닫힌 루프 UAV 항법과 같은 중요한 후속 탑재된 AI 응용을 가능케 합니다. ABot-Earth 0.5는 대규모 3D 재구성에 대한 기술 및 재정적 장벽을 크게 낮추어 글로벌 디지털 지구 시각화의 미래를 강화합니다."
+    },
+    "summary": "1. ABot-Earth 0.5는 위성 이미지를 기반으로 하는 3D 환경을 생성하기 위해 새로운 3D 생성 모델을 제안하며, 실시간 대화식 시각화가 가능하도록 설계되었습니다.\n2. 모델은 다양한 도시 재구성 자료로 학습하여 현실적인 지오메트리와 질감을 생성하며, 초당 10분 미만의 속도로 새로운 3D 장면을 생성합니다.\n3. ABot-Earth 0.5는 저비용 및 높은 효율성의 해결책으로 대규모 3D 재구성에 대한 기술적 및 재정적 장벽을 크게 낮추어 글로벌 디지털 지구 시각화의 미래를 지원합니다.",
+    "categories": [
+      "Computer Vision",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "Kwai Keye-VL-2.0 Technical Report",
+    "abstract": "We introduce Kwai Keye-VL-2.0-30B-A3B, an open-source Mixture-of-Experts (MoE) multimodal foundation model designed to advance long-video understanding and agentic intelligence. To address the challenges of ultra-long contexts, information redundancy, and prohibitive computational costs inherent in hour-level videos, Keye-VL-2.0 is the first to adapt DeepSeek Sparse Attention (DSA) to GQA-based multimodal architectures, enabling lossless 256K context processing while capturing critical frames and long-range temporal dependencies. This architecture is underpinned by a highly optimized training and inference infrastructure, including scalable video I/O, heterogeneous ViT-LM parallelism, and custom DSA kernels that significantly maximize throughput and minimize computational overhead. Furthermore, to overcome the algorithmic dilemma of catastrophic forgetting during multi-task alignment, we introduce Cross-Modal Multi-Teacher On-Policy Distillation (MOPD) paired with Context-RL and Video-RL. By distilling dense token-level teacher feedback from on-policy rollouts back into the MoE backbone, which activates only 3B parameters, Keye-VL-2.0 natively empowers advanced agent collaboration across Code, Tool, and Search scenarios with multimodal self-correction. Extensive evaluations across video understanding, temporal grounding, reasoning, STEM, and agent benchmarks demonstrate that Keye-VL-2.0-30B-A3B achieves state-of-the-art performance among models of similar scale, particularly excelling in fine-grained temporal localization on TimeLens and long-video comprehension on Video-MME-v2 and LongVideoBench. We release our model checkpoints to accelerate community progress toward scalable and robust multimodal agentic applications.",
+    "authors": [
+      "Kwai Keye Team",
+      "Bin Wen",
+      "Changyi Liu",
+      "Chengru Song",
+      "Chongling Rao",
+      "Guowang Zhang",
+      "Han Li",
+      "Haonan Fan",
+      "Hengrui Ju",
+      "Jiankang Chen",
+      "Jiapeng Chen",
+      "Jiawei Yuan",
+      "Kaixuan Yang",
+      "Kaiyu Jiang",
+      "Kun Gai",
+      "Lingzhi Zhou",
+      "Na Nie",
+      "Sen Na",
+      "Tianke Zhang",
+      "Tingting Gao",
+      "Xuanyu Zheng",
+      "Yulong Chen"
+    ],
+    "likes": 177,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2606.10651",
+    "date_collected": "2026-06-12T07:41:48.971231+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "Kwai Keye-VL-2.0 기술 보고서",
+      "abstract": "우리는 첨단 긴 비디오 이해와 적응적 지능을 위해 설계된 오픈 소스 Mixture-of-Experts (MoE) 다중 모달 기본 모델인 Kwai Keye-VL-2.0-30B-A3B를 소개합니다. Keye-VL-2.0은 DeepSeek Sparse Attention (DSA)을 GQA 기반 다중 모달 아키텍처에 적용하여 256K 문맥 처리와 중요 프레임 및 장거리 시간 의존성을 캡처하는 데 이례적인 기능을 제공합니다."
+    },
+    "summary": "1. Keye-VL-2.0은 DeepSeek Sparse Attention (DSA)과 다중 모달 아키텍처를 결합하여 256K 문맥 처리와 중요 프레임 및 장거리 시간 의존성을 캡처, 높은 성능을 실현합니다.\n2. Cross-Modal Multi-Teacher On-Policy Distillation (MOPD)을 통한 MoE 바탕으로의 밀도 있는 토큰 수준 교사 피드백 품질 개선으로, Keye-VL-2.0은 3B 파라미터만 활성화하여 다중 모달 자가 보정을 통한 고급 에이전트 협업을 가능하게 합니다.\n3. Keye-VL-2.0은 TimeLens의 세밀한 시간 지역화와 Video-MME-v2 및 LongVideoBench에서의 긴 비디오 이해에서 최첨단 성능을 보이면서 모델 체크포인트를 공개하여 커뮤니티 발전을 가속화합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models",
+    "abstract": "Vision language models (VLMs) excel at many tasks but still struggle with spatial reasoning when critical information is not directly observable. Many such problems require imaginative perception: inferring what would be seen from an unseen viewpoint, tracing paths through occluded spaces, or integrating partial observations into a coherent spatial representation. We introduce Imaginative Perception Tokens (IPT), intermediate perceptual representations that externalize what a VLM would perceive under alternative spatial configurations while remaining consistent with the observed input.\n  To study this capability, we formulate three tasks, Perspective Taking (PET), Path Tracing (PT), and Multiview Counting (MVC), and construct datasets of approximately 20K examples with ground truth imaginations, answers, and evaluation benchmarks. Using the unified VLM BAGEL as the backbone, IPT supervision consistently improves spatial reasoning and often outperforms textual chain of thought training, even without generating images at inference time. On MVC, IPT improves accuracy by 3.4% and achieves competitive performance with strong closed-source models on PT. We further find that combining IPT and label-only supervision yields additional gains, whereas textual chain of thought can substantially degrade performance, suggesting a modality mismatch when spatial computation is forced through language. Overall, IPT provides a principled supervision signal for reasoning about unobserved spatial structure, improving generalization while producing interpretable intermediate representations.",
+    "authors": [
+      "Mahtab Bigverdi",
+      "Linjie Li",
+      "Weikai Huang",
+      "Yiming Liu",
+      "Jaemin Cho",
+      "Jieyu Zhang",
+      "Tuhin Kundu",
+      "Chris Dangjoo Kim",
+      "Zelun Luo",
+      "Linda Shapiro",
+      "Ranjay Krishna"
+    ],
+    "likes": 115,
+    "published_date": "Jun 3",
+    "url": "https://huggingface.co/papers/2606.03988",
+    "date_collected": "2026-06-12T07:41:48.973856+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "상상력 있는 지각 토큰이 다중모달 언어 모델에서 공간 추론을 향상시킵니다",
+      "abstract": "시각 언어 모델(VLMs)은 많은 작업에서 뛰어나지만 핵심 정보가 직접적으로 관측되지 않을 때 공간 추론에 여전히 어려움을 겪습니다. 이러한 문제들 중 많은 것들은 상상력적인 지각을 필요로 합니다: 관측되지 않은 시점에서 어떤 것이 관측될 것인지 추론하거나, 가려진 공간을 통해 경로를 추적하거나, 부분적인 관측을 일관된 공간 표현으로 통합하는 것을 의미합니다. 본 연구에서는 BAGEL이라는 통합된 VLM을 기반으로 하여, IPT가 공간 추론을 개선하며 종종 텍스트의 사고 체인 학습을 능가하는 것을 보여줍니다."
+    },
+    "summary": "1. 상상력 있는 지각 토큰(IPT)은 다중모달 언어 모델에서 공간 추론을 향상시킵니다.\n2. IPT는 Perspective Taking (PET), Path Tracing (PT), Multiview Counting (MVC)의 세 가지 작업을 통해 검증되었으며, MVC에서 정확도를 3.4% 향상시키고 PT에서 강력한 클로즈드소스 모델과 경쟁력 있는 성능을 달성합니다.\n3. IPT와 레이블만 있는 감독을 결합하면 추가적인 향상을 가져오며, 텍스트의 사고 체인은 공간 계산을 언어를 통해 강제하는 경우 성능을 현저히 악화시킬 수 있다.",
+    "categories": [
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
+    "abstract": "Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities of coding agents. Yet they usually treat coding tasks as a holistic, binary prediction problem (e.g., resolved or unresolved), neglecting fine-grained agent capabilities such as repository understanding, context retrieval, code localization, and bug diagnosis. In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. Given a repository and an issue, SWE-Explore asks an explorer to return a ranked list of relevant code regions under a fixed line budget. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories. For each instance, we derive line-level ground truth from independent agent trajectories that successfully solved the same issue, distilling the specific code regions their solution paths actually consulted. We evaluate exploration along coverage, ranking, and context-efficiency dimensions, showing that these metrics strongly track downstream repair behavior. Across a broad set of retrieval methods, general coding agents, and specialized localizers, we find that agentic explorers form a clear tier above classical retrieval. While file-level localization is already strong for modern methods, line-level coverage and efficient ranking remain the key axes differentiating state-of-the-art explorers.",
+    "authors": [
+      "Shaoqiu Zhang",
+      "Yuhang Wang",
+      "Jialiang Liang",
+      "Yuling Shi",
+      "Wenhao Zeng",
+      "Maoquan Wang",
+      "Shilin He",
+      "Ningyuan Xu",
+      "Siyu Ye",
+      "Kai Cai",
+      "Xiaodong Gu"
+    ],
+    "likes": 108,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2606.07297",
+    "date_collected": "2026-06-12T07:41:48.976471+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "코딩 에이전트의 리포지토리 탐색 능력을 벤치마킹하는 SWE-Explore",
+      "abstract": "SWE-bench와 같은 리포지토리 수준의 코딩 벤치마킹은 코딩 에이전트의 능력을 급격히 향상시켰습니다. 그러나 이러한 벤치마킹은 주로 코딩 작업을 전체적이고 이분법적인 예측 문제(해결됨 또는 미해결)로 취급하여, 리포지토리 이해, 문맥 검색, 코드 위치 파악, 버그 진단과 같은 미세한 능력을 무시합니다. 본 논문에서는 코딩 에이전트의 중요한 능력 중 하나인 리포지토리 탐색을 평가하는 SWE-Explore를 소개합니다. 주어진 리포지토리와 이슈에 대해 SWE-Explore는 탐험가에게 고정된 라인 예산 내에서 관련 코드 영역의 순위가 매겨진 목록을 반환하도록 요구합니다. SWE-Explore는 10가지 프로그래밍 언어와 203개 오픈 소스 리포지토리에 걸쳐 848개 이슈를 다룹니다."
+    },
+    "summary": "1. SWE-Explore는 코딩 에이전트의 리포지토리 탐색 능력을 위한 벤치마크로, 코드 영역의 순위 매기기, 컨텍스트 효율성에 초점을 맞춥니다.\n2. 라인 수준의 땅데밋을 사용하여, 최신 방법들에는 이미 강한 파일 수준 지역화가 있지만, 라인 수준 커버리지와 효율적인 순위 매기기는 현대적인 방법들을 구분짓는 중요한 축인 것으로 나타냅니다.\n3. 다양한 검색 방법, 일반적인 코딩 에이전트, 전문화된 로컬라이저들에 대한 비교 결과, 에이전트 탐험가들이 고전적인 검색보다 명확한 계층을 형성한다고 밝혀냅니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings",
+    "abstract": "Large language models exhibit impressive zero-shot capabilities across a wide range of downstream tasks. However, they struggle to function as off-the-shelf embedding models, leading to suboptimal performance on massive text embedding benchmarks. In this paper, we identify a potential cause underlying this deficiency. Our motivation stems from an unexpected observation: text embeddings tend to align with frequent but uninformative tokens when projected onto the vocabulary space. We argue that this excessive expression of high-frequency tokens suppresses the model's ability to capture nuanced semantics. To address this, we introduce EmbedFilter, a simple linear transformation designed to refine text embeddings derived from LLMs directly. Specifically, we uncover that the unembedding matrix within LLMs encodes a latent space that is actively writing these frequent tokens into embedding space. By filtering out this subspace, EmbedFilter suppress the influence of high-frequency tokens, thereby enhancing semantic representations. As a compelling byproduct, this enables an inherent dimensionality reduction, lowering index storage and speedup retrieval while fully preserving the refined embedding quality. Our experiments across multiple LLM backbones demonstrate that LLMs equipped with EmbedFilter achieve superior zero-shot downstream performance even with significantly reduced embedding dimensions. We hope our findings provide deeper insights into the mechanisms of LLM-based representations and inspire more principled designs to improve text embeddings training. Our code is available at https://github.com/CentreChen/EmbFilter.",
+    "authors": [
+      "Songhao Wu",
+      "Zhongxin Chen",
+      "Yuxuan Liu",
+      "Heng Cui",
+      "Cong Li",
+      "Rui Yan"
+    ],
+    "likes": 87,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2606.07502",
+    "date_collected": "2026-06-12T07:41:48.978796+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "텍스트 임베딩을 위한 숨겨진 특징 렌즈인 당신의 비임베딩 행렬",
+      "abstract": "대규모 언어 모델은 다양한 하위 작업에서 인상적인 제로샷 능력을 보여줍니다. 그러나 오프더셸프(기존 데이터로 학습된 embedding을 그대로 사용하는 것)임베딩 모델로써 작동하는 것이 어려워 대규모 텍스트 임베딩 벤치마크에서 최적의 성능을 낼 수 없습니다. 본 논문에서는 이 결핍의 잠재적인 원인을 확인합니다. 우리의 동기는 예상치 못한 관찰에서 유래합니다: 텍스트 임베딩은 어휘 공간에 투사될 때 빈번하지만 정보를 제공하지 않는 토큰과 일치하는 경향이 있습니다. 우리는 이러한 고빈도 토큰의 지나친 표현이 모델이 미묘한 의미를 포착하는 능력을 억제한다고 주장합니다. 이를 해결하기 위해, 우리는 LLMs(대규모 언어 모델)로부터 유도된 텍스트 임베딩을 개선하기 위해 설계된 간단한 선형 변환인 EmbedFilter를 소개합니다. 구체적으로, LLMs 내부의 비임베딩 행렬이 임베딩 공간으로 빈번한 토큰을 쓰기 위한 잠재 공간을 인코딩한다는 것을 발견합니다. 이 하부 공간을 걸러내면 EmbedFilter는 고빈도 토큰의 영향을 억제하여 의미 표현을 강화합니다. 독창적 부산물로 그렇게 함으로써 내재적 차원 축소를 가능하게 하여, 개선된 임베딩 품질을 완전히 보존하면서 인덱스 저장을 줄이고 검색 속도를 가속화합니다. 다양한 LLM 백본을 대상으로 한 실험은 EmbedFilter가 적은 임베딩 차원으로도 우수한 제로샷 하위 작업 성능을 달성한다는 것을 보여줍니다. 우리는 본 연구 결과가 LLM 기반 표현의 메커니즘에 대해 보다 깊은 통찰력을 제공하고, 텍스트 임베딩 학습을 개선하기 위한 보다 원칙적인 설계를 영감을 주기를 희망합니다. 우리의 코드는 https://github.com/CentreChen/EmbFilter에서 사용할 수 있습니다."
+    },
+    "summary": "1. 대규모 언어 모델의 임베딩은 고빈도 토큰과 너무 일치하여 세부 의미를 잡아내기 어렵다.\n2. EmbedFilter를 사용하면 임베딩 차원을 줄이면서도 고빈도 토큰의 부정적 영향을 억제하고 의미 표현을 향상시킬 수 있다.\n3. EmbedFilter를 적용한 대규모 언어 모델은 향상된 성능을 보이며, 연구 결과는 텍스트 임베딩 훈련을 개선하는데 중요한 역할을 할 수 있다.",
+    "categories": [
+      "LLM",
+      "Text Embeddings"
+    ]
+  },
+  {
+    "title": "ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research",
+    "abstract": "AI coding agents are increasingly used for scientific work, but their end-to-end autonomous research capability remains difficult to verify. We present ResearchClawBench, a benchmark for evaluating autonomous scientific research across 40 tasks from 10 scientific domains. Each task is grounded in a real published paper, provides related literature and raw data, and hides the target paper during evaluation. Expert-curated multimodal rubrics decompose the target scientific artifacts into weighted criteria, enabling evaluation of target-paper-level re-discovery while leaving room for new discovery. We evaluate seven autonomous research (auto-research) agents under a unified protocol and seventeen native LLMs through the lightweight ResearchHarness. Current systems remain far from reliable re-discovery: the strongest autonomous agent, Claude Code, averages 21.5, and the strongest ResearchHarness LLM, Claude-Opus-4.7, averages 20.7, with an LLM frontier mean of only 26.5. Error analysis shows that failures concentrate in experimental protocol mismatch, evidence mismatch, and missing scientific core. ResearchClawBench provides a reproducible evaluation frontier for measuring progress toward autonomous scientific research.",
+    "authors": [
+      "Wanghan Xu",
+      "Shuo Li",
+      "Tianlin Ye",
+      "Qinglong Cao",
+      "Yixin Chen",
+      "Hengjian Gao",
+      "Yiheng Wang",
+      "Qi Li",
+      "Kun Li",
+      "Sheng Xu",
+      "Shengdu Chai",
+      "Fangchen Yu",
+      "Xiangyu Zhao",
+      "Zhangrui Zhao",
+      "Weijie Ma",
+      "Zijie Guo",
+      "Haoyu Zhou",
+      "Haoxiang Yin",
+      "Lixue Cheng",
+      "Chaofan Hu",
+      "Haoxuan Li",
+      "Lu Mi"
+    ],
+    "likes": 85,
+    "published_date": "May 28",
+    "url": "https://huggingface.co/papers/2606.07591",
+    "date_collected": "2026-06-12T07:41:48.982080+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "End-to-End 자율적 과학 연구를 위한 벤치마크인 ResearchClawBench",
+      "abstract": "AI 코딩 에이전트들이 과학 작업에 점점 더 활용되고 있지만, 그들의 End-to-End 자율적 연구 능력을 검증하기는 여전히 어렵습니다. 우리는 ResearchClawBench를 제시합니다. 이는 10가지 과학 분야에서 40가지 작업을 통해 자율적 과학 연구를 평가하는 벤치마크입니다. 각 작업은 실제 발표된 논문에 근거를 두며, 관련 문헌과 원시 데이터를 제공하며, 평가 시에 대상 논문을 숨깁니다. 전문가가 선별한 다중 모달 평가 척도는 대상 과학 자산을 가중 기준으로 분해하여 대상 논문 수준의 재발견을 평가할 수 있게 하며, 새로운 발견의 여지를 남깁니다. 우리는 일곱 개의 자율 연구 에이전트(auto-research)와 가벼운 ResearchHarness를 통해 열 일곱 개의 LLM을 통일된 프로토콜로 평가합니다. 현재 시스템들은 신뢰할 만한 재발견으로부터 아직 갈 길이 멉니다: 가장 강력한 자율 에이전트인 Claude Code의 평균은 21.5이며, 가장 강력한 ResearchHarness LLM인 Claude-Opus-4.7의 평균은 20.7입니다. LLM frontier의 평균은 단지 26.5에 불과합니다. 오류 분석 결과 실패는 실험 프로토콜 불일치, 증거 불일치 및 핵심 과학 누락에 집중됩니다. ResearchClawBench는 자율적 과학 연구로의 진전을 측정하기 위한 재현 가능한 평가 선진을 제공합니다."
+    },
+    "summary": "1. ResearchClawBench는 10가지 과학 분야에서 40가지 작업을 통해 End-to-End 자율적 과학 연구를 평가하는 벤치마크이다.\n2. 다중 모달 평가 척도를 사용하여 대상 논문 수준의 재발견을 가능하게 하며, 새로운 발견의 여지를 제공한다.\n3. 현재 시스템은 실험 프로토콜 불일치, 증거 불일치 및 핵심 과학 누락으로 신뢰할 만한 재발견에서 멀리 떨어져 있다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Redesign Mixture-of-Experts Routers with Manifold Power Iteration",
+    "abstract": "Router is the cornerstone component to the Mixture-of-Experts models. Serving as expert proxies, the rows of the router matrix compute their similarity to the MoE inputs to determine which subset of experts is activated. Ideally, each router row is designed to encode the expert matrix into this representative vector, such that its dot-product with token can better reflect token-expert affinity. However, there exists no design principles to enforce this condensation. In this paper, we propose to align each router row with the principal singular direction of the associated expert, as this direction provides the most expressive mathematical description of a matrix. Based on this principle, we propose a router redesign with Manifold Power Iteration (MPI). Specifically, it introduces a \"Power-then-Retract\" paradigm, where a power iteration step is performed on the router weights, followed by a retraction to impose a norm constraint to ensure both efficiency and stability. Theoretically, we show that MPI drives router rows to converge toward the principal singular directions of associated experts. Empirically, we pretrain MoE model across scales from 1B to 11B parameters to confirm that this alignment facilitates more effective MoE models.",
+    "authors": [
+      "Songhao Wu",
+      "Ang Lv",
+      "Ruobing Xie",
+      "Yankai Lin"
+    ],
+    "likes": 74,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2606.12397",
+    "date_collected": "2026-06-12T07:41:48.984283+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "Manifold Power Iteration을 활용한 Mixture-of-Experts 라우터 재설계",
+      "abstract": "라우터는 Mixture-of-Experts 모델의 핵심 구성 요소입니다. 라우터 행은 전문가 입력과의 유사성을 계산하여 활성화될 전문가 부분집합을 결정합니다. 본 논문에서는 각 라우터 행을 해당 전문가의 주요 특이 방향에 맞게 정렬하여 라우터를 Manifold Power Iteration(MPI)로 재설계하는 방법을 제안합니다. MPI는 \"Power-then-Retract\" 패러다임을 도입하며, 효율성과 안정성을 보장하기 위해 라우터 가중치에 대한 파워 이터레이션 단계를 수행한 뒤 정규화 제약을 부과하는 방식으로 작동합니다.理론적으론 MPI가 라우터 행을 관련된 전문가의 주요 특이 방향으로 수렴하도록 이끕니다. 경험적으로는, 우리는 1B부터 11B까지 크기의 MoE 모델을 사전 훈련하여 이 조정이 보다 효과적인 MoE 모델을 용이하게 하는 것을 확인합니다."
+    },
+    "summary": "1. Mixture-of-Experts 모델의 라우터 행을 주요 특이 방향에 맞춰 정렬하여 Manifold Power Iteration을 통해 라우터를 다시 설계함.\n2. MPI는 관련 전문가의 주요 특이 방향으로 라우터 행을 수렴시키는데 효과적임.\n3. 실험 결과, MPI를 활용한 라우터 재설계가 MoE 모델의 효율성을 향상시킴을 확인.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution",
+    "abstract": "Although Large Language Model (LLM) agents have demonstrated strong performance on complex tasks, their learning is often limited by inefficient interaction feedback and static training environments, which hinder broader generalization. To address these limitations, this paper introduces Role-Agent, black{a framework} that harnesses a single LLM to function concurrently as both the agent and the environment, enabling a bootstrapped co-evolution. Role-Agent comprises two synergistic components: World-In-Agent (WIA) and Agent-In-World (AIW). In WIA, the LLM acts as the agent and predicts future states after each action; the alignment between predicted and actual states is then used as a process reward, encouraging environment-aware reasoning. In AIW, the LLM analyzes failure modes from failed trajectories and retrieves tasks with similar failure patterns, thereby reshaping the training data distribution for targeted practice. Experiments on multiple benchmarks show that Role-Agent consistently improves performance, yielding an average gain of over 4\\% over strong baselines.",
+    "authors": [
+      "Xucong Wang",
+      "Ziyu Ma",
+      "Shidong Yang",
+      "Tongwen Huang",
+      "Pengkun Wang",
+      "Yong Wang",
+      "Xiangxiang Chu"
+    ],
+    "likes": 73,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2606.10917",
+    "date_collected": "2026-06-12T07:41:48.986653+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "Role-Agent: 듀얼 롤 진화를 통한 LLM 에이전트 부트스트래핑",
+      "abstract": "대형 언어 모델(Large Language Model, LLM) 에이전트들은 복잡한 작업에서 강력한 성능을 보여주었지만, 상호작용 피드백의 비효율성과 정적인 훈련 환경으로 학습이 종종 제약을 받아 더 넓은 일반화를 방해합니다. 이 논문에서는 이러한 한계를 해결하기 위해 Role-Agent를 소개합니다. 이는 단일 LLM을 동시에 에이전트와 환경으로 기능하도록 하여 부트스트랩 협동진화를 가능케 하는 프레임워크입니다. Role-Agent는 World-In-Agent (WIA)와 Agent-In-World (AIW) 두 가지 상호작용 컴포넌트로 구성됩니다. WIA에서 LLM은 에이전트로 기능하며 각 액션 이후 미래 상태를 예측합니다. 그리고 예측된 상태와 실제 상태 간의 정렬은 환경을 인식한 추론을 촉진하는 프로세스 보상으로 사용됩니다. AIW에서 LLM은 실패한 경로로부터 실패 모드를 분석하고 유사한 실패 패턴을 가진 작업을 가져와 훈련 데이터 분포를 타겟화된 실습을 위해 다시 구성합니다. 여러 벤치마크 실험 결과, Role-Agent는 일관된 성능 향상을 보여주며 강력한 기준선을 평균 4% 이상으로 뛰어넘는 결과를 얻습니다."
+    },
+    "summary": "1. LLM 에이전트의 학습 효율을 향상시키기 위해 Role-Agent가 소개되었고, 단일 LLM이 에이전트와 환경으로 동시에 작용하여 부트스트랩된 공동진화를 가능하게 합니다.\n2. World-In-Agent (WIA)에서는 LLM이 에이전트로 작용하여 미래 상태를 예측하고, 예측된 상태와 실제 상태 간의 일치를 환경 인식 추론을 장려하는 프로세스 보상으로 활용합니다.\n3. Agent-In-World (AIW)에서는 LLM이 실패한 경로를 분석하여 비슷한 실패 패턴을 갖는 작업들을 가져와 훈련 데이터 분포를 재구성하여 타겟으로 정밀한 연습을 합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
+    "abstract": "Scientific progress depends on a repeated loop of exploration, experimentation, and abstraction. Researchers test candidate directions, interpret the evidence, and carry the resulting lessons into later attempts. We study how an AI agent can run this loop autonomously over long horizons. We introduce Arbor, a general framework for autonomous research that combines a long-lived coordinator, short-lived executors, and Hypothesis Tree Refinement (HTR), a persistent tree that links hypotheses, artifacts, evidence, and distilled insights across time. The coordinator manages global research strategy over the tree, while executors implement and test individual hypotheses in isolated worktrees. As results return, Arbor updates the tree, propagates reusable lessons, refines the search frontier, and admits verified improvements. This design turns autonomous research from a sequence of local attempts into a cumulative process in which strategy, execution, and evidence are carried across time. We evaluate Arbor under Autonomous Optimization (AO), an operational setting where an agent improves an initial research artifact through iterative experimentation without step-level human supervision. Across six real research tasks in model training, harness engineering, and data synthesis, Arbor achieves the best held-out result on all six tasks, attaining more than 2.5x the average relative held-out gain of Codex and Claude Code under the same task interface and resource budget. On MLE-Bench Lite, Arbor reaches 86.36% Any Medal with GPT-5.5, the strongest result in our comparison.",
+    "authors": [
+      "Jiajie Jin",
+      "Yuyang Hu",
+      "Kai Qiu",
+      "Qi Dai",
+      "Chong Luo",
+      "Guanting Dong",
+      "Xiaoxi Li",
+      "Tong Zhao",
+      "Xiaolong Ma",
+      "Gongrui Zhang",
+      "Zhirong Wu",
+      "Bei Liu",
+      "Zhengyuan Yang",
+      "Linjie Li",
+      "Lijuan Wang",
+      "Hongjin Qian",
+      "Yutao Zhu",
+      "Zhicheng Dou"
+    ],
+    "likes": 68,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2606.11926",
+    "date_collected": "2026-06-12T07:41:48.989660+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "자율 연구의 일반화를 향하여: 가설-트리 정밀화를 통해",
+      "abstract": "과학적 진보는 탐사, 실험, 추상화의 반복적인 과정에 의해 이루어집니다. 연구자는 후보 방향을 시험하고 증거를 해석하며 얻은 교훈을 나중 시도에 반영합니다. 저희는 인공지능 에이전트가 장기적으로 자율적인 루프를 실행하는 방법을 연구했습니다. 우리는 가설, 아티팩트, 증거, 그리고 시간을 통해 정제된 통찰력을 연결하는 지속적인 트리인 HTR(Hypothesis Tree Refinement)를 결합한 자율 연구를 위한 일반적인 프레임워크인 Arbor를 소개합니다."
+    },
+    "summary": "1. Arbor는 자율 최적화(Autonomous Optimization)를 통해 초기 연구 아티팩트를 개선하는 데 사용되며, 실험을 거쳐 6가지 실제 연구 작업에서 코덱스(Codex)와 클로드 코드(Claude Code)보다 더 나은 결과를 보였습니다.\n2. 이 연구는 긴 수평을 거치는 AI 에이전트가 전역적 연구 전략을 관리하고 지역 연구 실행자들이 단일 가설을 시험할 수 있도록 하는 방법을 탐구하며, 단계별 인간 감독 없이 실현됩니다.\n3. 결과적으로 Arbor는 자율 연구를 지역 시도의 순서에서 누적적인 프로세스로 전환시키는 설계를 제시하며, 시간을 거쳐 전략, 실행, 증거를 전달하여 시행적 개선을 시도합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

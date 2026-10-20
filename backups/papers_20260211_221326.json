@@ -1,0 +1,355 @@
+[
+  {
+    "title": "QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining",
+    "abstract": "Financial markets are noisy and non-stationary, making alpha mining highly sensitive to noise in backtesting results and sudden market regime shifts. While recent agentic frameworks improve alpha mining automation, they often lack controllable multi-round search and reliable reuse of validated experience. To address these challenges, we propose QuantaAlpha, an evolutionary alpha mining framework that treats each end-to-end mining run as a trajectory and improves factors through trajectory-level mutation and crossover operations. QuantaAlpha localizes suboptimal steps in each trajectory for targeted revision and recombines complementary high-reward segments to reuse effective patterns, enabling structured exploration and refinement across mining iterations. During factor generation, QuantaAlpha enforces semantic consistency across the hypothesis, factor expression, and executable code, while constraining the complexity and redundancy of the generated factor to mitigate crowding. Extensive experiments on the China Securities Index 300 (CSI 300) demonstrate consistent gains over strong baseline models and prior agentic systems. When utilizing GPT-5.2, QuantaAlpha achieves an Information Coefficient (IC) of 0.1501, with an Annualized Rate of Return (ARR) of 27.75% and a Maximum Drawdown (MDD) of 7.98%. Moreover, factors mined on CSI 300 transfer effectively to the China Securities Index 500 (CSI 500) and the Standard & Poor's 500 Index (S&P 500), delivering 160% and 137% cumulative excess return over four years, respectively, which indicates strong robustness of QuantaAlpha under market distribution shifts.",
+    "authors": [
+      "Jun Han",
+      "Shuo Zhang",
+      "Wei Li",
+      "Zhi Yang",
+      "Yifan Dong",
+      "Tu Hu",
+      "Jialuo Yuan",
+      "Xiaomin Yu",
+      "Yumo Zhu",
+      "Fangqi Lou",
+      "Xin Guo",
+      "Zhaowei Liu",
+      "Tianyi Jiang",
+      "Ruichuan An",
+      "Jingping Liu",
+      "Biao Wu",
+      "Rongze Chen",
+      "Kunyi Wang",
+      "Yifan Wang",
+      "Sen Hu",
+      "Xinbing Kong",
+      "Liwen Zhang"
+    ],
+    "likes": 140,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.07085",
+    "date_collected": "2026-02-11T07:20:46.816117+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "양자알파: LLM-주도 알파 채굴을 위한 진화적 프레임워크",
+      "abstract": "금융 시장은 잡음이 많고 비정상적이어서, 알파 채굴은 백테스팅 결과의 잡음과 급격한 시장 규제 변화에 매우 민감합니다. 최근 개발된 에이전트 프레임워크들은 알파 채굴 자동화를 개선하지만, 제어 가능한 다회 검색과 검증된 경험의 신뢰할 수 있는 재사용이 부족합니다. 이러한 도전에 대처하기 위해, 우리는 각 전체 채굴 실행을 궤적으로 취급하며 궤적 수준의 돌연변이와 교차 작업을 통해 요소를 개선하는 진화적 알파 채굴 프레임워크인 양자알파를 제안합니다. 양자알파는 각 궤적에서 최적이 아닌 단계를 대상으로 수정하고 보상이 높은 구간을 재사용하여 효과적인 패턴을 활용함으로써 구조화된 탐사와 개량을 통해 채굴 반복에서 발전시킵니다. 요소 생성 중에 양자알파는 가설, 요소 표현, 실행 가능 코드 간의 의미론적 일관성을 강화하면서 생성된 요소의 복잡성과 중복성을 제한하여 혼잡을 완화합니다. 중국 CSI 300에서 수행된 다양한 실험은 강력한 기준 모형과 이전 에이전트 시스템에 비해 꾸준한 이익을 입증했습니다. GPT-5.2를 활용할 때 양자알파는 정보계수(IC)가 0.1501이고 연 평균 수익률(ARR)이 27.75%, 최대 손실액(MDD)이 7.98%인 성과를 달성했습니다. 또한, CSI 300에서 채굴된 요소는 중국 CSI 500 및 S&P 500에 효과적으로 전이되어, 각각 4년간 160%와 137%의 누적 초과수익을 제공하여, QuantaAlpha의 시장 분포 변화에 강한 견고성을 보여주었습니다."
+    },
+    "summary": "1. 금융 시장에서의 알파 채굴은 백테스팅 결과의 잡음과 시장 규제 변화에 민감하며, 이에 대응하기 위해 양자알파는 궤적 기반의 진화적 프레임워크로 제안됨.\n2. 양자알파는 구조화된 탐사와 개량을 통해 효과적인 패턴 재활용과 요소 개선을 실현하며, 중국 CSI 300에 대한 실험에서 강력한 결과를 보임.\n3. 채굴된 요소는 CSI 500 및 S&P 500으로 효과적으로 전이되어 안정적인 수익을 제공하며, QuantaAlpha는 시장 분포 변화에 강한 견고성을 보여줌.",
+    "categories": [
+      "LLM",
+      "Evolutionary Algorithms",
+      "Financial Markets"
+    ]
+  },
+  {
+    "title": "MOVA: Towards Scalable and Synchronized Video-Audio Generation",
+    "abstract": "Audio is indispensable for real-world video, yet generation models have largely overlooked audio components. Current approaches to producing audio-visual content often rely on cascaded pipelines, which increase cost, accumulate errors, and degrade overall quality. While systems such as Veo 3 and Sora 2 emphasize the value of simultaneous generation, joint multimodal modeling introduces unique challenges in architecture, data, and training. Moreover, the closed-source nature of existing systems limits progress in the field. In this work, we introduce MOVA (MOSS Video and Audio), an open-source model capable of generating high-quality, synchronized audio-visual content, including realistic lip-synced speech, environment-aware sound effects, and content-aligned music. MOVA employs a Mixture-of-Experts (MoE) architecture, with a total of 32B parameters, of which 18B are active during inference. It supports IT2VA (Image-Text to Video-Audio) generation task. By releasing the model weights and code, we aim to advance research and foster a vibrant community of creators. The released codebase features comprehensive support for efficient inference, LoRA fine-tuning, and prompt enhancement.",
+    "authors": [
+      "SII-OpenMOSS Team",
+      "Donghua Yu",
+      "Mingshu Chen",
+      "Qi Chen",
+      "Qi Luo",
+      "Qianyi Wu",
+      "Qinyuan Cheng",
+      "Ruixiao Li",
+      "Tianyi Liang",
+      "Wenbo Zhang",
+      "Wenming Tu",
+      "Xiangyu Peng",
+      "Yang Gao",
+      "Yanru Huo",
+      "Ying Zhu",
+      "Yinze Luo",
+      "Yiyang Zhang",
+      "Yuerong Song",
+      "Zhe Xu",
+      "Zhiyu Zhang",
+      "Chenchen Yang",
+      "Cheng Chang"
+    ],
+    "likes": 131,
+    "published_date": "Feb 9",
+    "url": "https://huggingface.co/papers/2602.08794",
+    "date_collected": "2026-02-11T07:20:46.818077+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "확장 가능하고 동기화된 비디오-오디오 생성을 향하여",
+      "abstract": "현실 세계 비디오에는 오디오가 불가피하지만, 생성 모델은 주로 오디오 구성 요소를 간과해왔습니다. 현재의 오디오-시각적 콘텐츠 생성 방법은 종래의 파이프라인에 의존하며, 비용을 증가시키고 오류를 축적시키며 전반적인 품질을 저하시키는 경향이 있습니다. Veo 3, Sora 2와 같은 시스템은 동시 생성의 가치를 강조하지만, 공동 다중모달 모델링은 설계, 데이터 및 훈련에서 고유한 도전 과제를 소개합니다. 또한 기존 시스템의 폐쇄 소스성은 분야의 발전을 제한하고 있습니다. 본 연구에서는 고품질 동기화된 오디오-시각적 콘텐츠를 생성할 수 있는 오픈 소스 모델인 MOVA (MOSS Video and Audio)를 제안합니다. MOVA는 현실적인 입술 동기에 의한 음성, 환경 인식 음향 효과 및 콘텐츠-일치 음악을 포함한 콘텐츠를 생성할 수 있습니다. MOVA는 Mixture-of-Experts (MoE) 아키텍처를 사용하며, 총 32B 매개변수 중 18B가 추론 중에 활성화됩니다. 이는 IT2VA (Image-Text to Video-Audio) 생성 작업을 지원합니다. 모델 가중치와 코드를 공개함으로써 연구를 진전시키고 창작자 커뮤니티를 육성하고자 합니다. 공개된 코드베이스에는 효율적인 추론, LoRA 미세 조정 및 즉각적인 향상을 위한 포괄적인 지원이 제공됩니다."
+    },
+    "summary": "1. 비디오와 오디오를 동시에 생성하는데 중점을 둔 MOVA 모델은 고품질의 동기화된 콘텐츠를 생산하며, 모델 가중치와 코드를 공개하여 연구 진행을 촉진한다.\n2. 기존의 오디오-시각적 콘텐츠 생성 방법은 비용 증가, 오류 축적, 전반적 품질 저하 등의 문제가 있으나, MOVA는 이러한 문제에 대응하는 오픈 소스 모델이다.\n3. MOVA는 Mixture-of-Experts 아키텍처를 활용하여 IT2VA 생성 작업을 지원하며, 효율적인 추론, 미세 조정 및 즉각적인 향상이 가능하다.",
+    "categories": [
+      "Multimodal",
+      "Audio"
+    ]
+  },
+  {
+    "title": "Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models",
+    "abstract": "Despite the success of multimodal contrastive learning in aligning visual and linguistic representations, a persistent geometric anomaly, the Modality Gap, remains: embeddings of distinct modalities expressing identical semantics occupy systematically offset regions. Prior approaches to bridge this gap are largely limited by oversimplified isotropic assumptions, hindering their application in large-scale scenarios. In this paper, we address these limitations by precisely characterizing the geometric shape of the modality gap and leveraging it for efficient model scaling. First, we propose the Fixed-frame Modality Gap Theory, which decomposes the modality gap within a frozen reference frame into stable biases and anisotropic residuals. Guided by this precise modeling, we introduce ReAlign, a training-free modality alignment strategy. Utilizing statistics from massive unpaired data, ReAlign aligns text representation into the image representation distribution via a three-step process comprising Anchor, Trace, and Centroid Alignment, thereby explicitly rectifying geometric misalignment. Building on ReAlign, we propose ReVision, a scalable training paradigm for Multimodal Large Language Models (MLLMs). ReVision integrates ReAlign into the pretraining stage, enabling the model to learn the distribution of visual representations from unpaired text before visual instruction tuning, without the need for large-scale, high-quality image-text pairs. Our framework demonstrates that statistically aligned unpaired data can effectively substitute for expensive image-text pairs, offering a robust path for the efficient scaling of MLLMs.",
+    "authors": [
+      "Xiaomin Yu",
+      "Yi Xin",
+      "Wenjie Zhang",
+      "Chonghan Liu",
+      "Hanzhen Zhao",
+      "Xiaoxing Hu",
+      "Xinlei Yu",
+      "Ziyue Qiao",
+      "Hao Tang",
+      "Xue Yang",
+      "Xiaobin Hu",
+      "Chengwei Qin",
+      "Hui Xiong",
+      "Yu Qiao",
+      "Shuicheng Yan"
+    ],
+    "likes": 120,
+    "published_date": "Feb 2",
+    "url": "https://huggingface.co/papers/2602.07026",
+    "date_collected": "2026-02-11T07:20:46.819679+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "다중 모달 대형 언어 모델을 위한 모닰리티 갭 주도 서브스페이스 정렬 훈련 패러다임",
+      "abstract": "시각적 및 언어적 표현을 정렬하는 다중 모달 대조 학습의 성공에도 불구하고, 일관된 기하학적 이상 현상인 모달리티 갭이 여전히 존재합니다. 이러한 갭을 연결하기 위한 기존 방법은 과도하게 단순화된 이종적 가정으로 인해 대규모 시나리오에서의 적용이 제한적입니다. 본 논문에서는 모닰리티 갭의 기하학적 모양을 정확히 성격화하고 효율적인 모델 스케일링을 위해 그를 활용함으로써 이러한 한계를 해결합니다. 우리는 고정된 프레임 모닰리티 갭 이론을 제안하고, 컨셉을 안정적인 편향과 이종적 잔차로 분해합니다. 이를 이용하여 훈련 불필요한 모달리티 정렬 전략인 ReAlign을 소개합니다. 대량의 언집데이터 통계를 활용하여 ReAlign은 Anchor, Trace, Centroid 정렬로 문장 표현을 이미지 표현 분포에 정렬시키며 기하학적 비정렬을 명시적으로 교정합니다. ReAlign을 바탕으로 다중 모달 대형 언어 모델(Multimodal Large Language Models, MLLMs)을 위한 확장 가능한 훈련 패러다임인 ReVision을 제안합니다. ReVision은 ReAlign을 사전훈련 단계로 통합하여 모델이 대규모 고품질 이미지-문장 쌍 없이도 시각적 표현 분포를 학습한 후 시각 지시 조정을 할 수 있게 합니다. 우리의 프레임워크는 통계적으로 정렬된 언집데이터가 비싼 이미지-텍스트 쌍을 대체할 수 있음을 보여주며 MLLMs의 효과적인 확장에 대한 견고한 경로를 제공합니다."
+    },
+    "summary": "1. 다중 모달 대형 언어 모델을 위해 모델 스케일링을 향상시키기 위해 모달리티 갭의 기하학적 모양을 정확히 성격화하여 ReAlign과 ReVision을 제안합니다.\n2. ReAlign은 훈련 없이 모달리티 정렬 전략을 소개하며, ReVision은 ReAlign을 MLLMs의 사전훈련 단계에 통합하여 이바지합니다.\n3. 통계적으로 정렬된 언집데이터가 비싼 이미지-텍스트 쌍을 대체할 수 있음을 입증하여 MLLMs의 효과적인 확장을 제안합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Weak-Driven Learning: How Weak Agents make Strong Agents Stronger",
+    "abstract": "As post-training optimization becomes central to improving large language models, we observe a persistent saturation bottleneck: once models grow highly confident, further training yields diminishing returns. While existing methods continue to reinforce target predictions, we find that informative supervision signals remain latent in models' own historical weak states. Motivated by this observation, we propose WMSS (Weak Agents Can Make Strong Agents Stronger), a post-training paradigm that leverages weak checkpoints to guide continued optimization. By identifying recoverable learning gaps via entropy dynamics and reinforcing them through compensatory learning, WMSS enables strong agents to improve beyond conventional post-training saturation. Experiments on mathematical reasoning and code generation datasets show that agents trained with our approach achieve effective performance improvements, while incurring zero additional inference cost.",
+    "authors": [
+      "Zehao Chen",
+      "Gongxun Li",
+      "Tianxiang Ai",
+      "Yifei Li",
+      "Zixuan Huang",
+      "Wang Zhou",
+      "Fuzhen Zhuang",
+      "Xianglong Liu",
+      "Jianxin Li",
+      "Deqing Wang",
+      "Yikun Ban"
+    ],
+    "likes": 116,
+    "published_date": "Feb 9",
+    "url": "https://huggingface.co/papers/2602.08222",
+    "date_collected": "2026-02-11T07:20:46.821056+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "약한 주도 학습: 어떻게 약한 에이전트가 강한 에이전트를 더욱 강하게 만드는가",
+      "abstract": "대형 언어 모델의 성능 향상을 위해 사후 훈련 최적화가 중요해지면서, 모델이 높은 자신감을 갖게 되면 추가 훈련이 더 이상 큰 보상을 제공하지 않는 지속적인 포화 현상을 관찰하였습니다. 기존 방법들은 여전히 목표 예측을 강화하지만, 우리는 정보 전달 신호가 모델 자체의 과거 약한 상태에 잠재적으로 남아 있는 것을 발견하였습니다. 이 관찰을 토대로, 우리는 약한 체크포인트를 활용하여 계속되는 최적화를 이끌어내는 WMSS(Weak Agents Can Make Strong Agents Stronger)라는 사후 훈련 패러다임을 제안합니다. 엔트로피 역학을 통해 복구 가능한 학습 간극을 식별하고 상쇄 학습을 통해 이를 강화함으로써, WMSS는 강한 에이전트들이 전통적인 사후 훈련 포화를 넘어서 성능을 향상시키도록 합니다. 수학적 추론 및 코드 생성 데이터셋에서의 실험 결과, 저희 방법으로 훈련받은 에이전트들이 효과적인 성능 향상을 달성하면서 추가 추론 비용은 발생하지 않았습니다."
+    },
+    "summary": "1. 대형 언어 모델에서 사후 훈련 최적화 시 자신감 증가로 인한 성능 향상 한계를 극복하기 위해 WMSS 방법을 제안함.\n2. WMSS는 약한 상태의 체크포인트를 활용하여 학습 간극을 식별하고 상쇄 학습을 통해 강한 에이전트의 성능을 향상시킴.\n3. 수학적 추론 및 코드 생성 데이터셋 실험 결과, WMSS 방법으로 향상된 성능을 달성하는 동시에 추가 추론 비용을 늘리지 않음.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is commonly based on group sampling to estimate advantages and stabilize policy updates. In practice, large group sizes are not feasible due to computational limits, which biases learning toward trajectories that are already likely. Smaller groups often miss rare-correct trajectories while still containing mixed rewards, concentrating probability on common solutions. We derive the probability that updates miss rare-correct modes as a function of group size, showing non-monotonic behavior, and characterize how updates redistribute mass within the correct set, revealing that unsampled-correct mass can shrink even as total correct mass grows. Motivated by this analysis, we propose a difficulty-aware advantage scaling coefficient, inspired by Focal loss, that down-weights updates on high-success prompts. The lightweight modification can be directly integrated into any group-relative RLVR algorithm such as GRPO, DAPO, and CISPO. On Qwen2.5-7B across in-domain and out-of-domain benchmarks, our method improves pass@256 from 64.1 rightarrow 70.3 (GRPO), 69.3 rightarrow 72.5 (DAPO), and 73.2 rightarrow 76.8 (CISPO), while preserving or improving pass@1, without increasing group size or computational cost.",
+    "authors": [
+      "Daniil Plyusov",
+      "Alexey Gorbatovski",
+      "Boris Shaposhnikov",
+      "Viacheslav Sinii",
+      "Alexey Malakhov",
+      "Daniil Gavrilov"
+    ],
+    "likes": 66,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.06717",
+    "date_collected": "2026-02-11T07:20:46.822259+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "F-GRPO: 정반대를 배우지만 드문 경우를 잊지 마세요",
+      "abstract": "검증 가능한 보상(Verifiable Rewards)을 이용한 강화 학습(Reinforcement Learning)은 주로 그룹 샘플링을 기반으로 하여 이점을 추정하고 정책 업데이트를 안정화합니다. 하지만 실무에서 컴퓨팅 한계로 큰 그룹 크기를 사용할 수 없어 이미 일어날 만한 경로에 학습이 편향되는 문제가 있습니다. 작은 그룹은 드문 올바른 경로를 놓치면서도 혼합된 보상을 포함하고 공통적인 해법에 확률을 집중합니다. 우리는 그룹 크기의 함수로 업데이트가 드문 올바른 모드를 놓치는 확률을 유도하며, 업데이트가 올바른 세트 내에서 질량을 재분배하는 방식을 특성화하여, 비모노토닉 행동을 보여줍니다. 이 분석에 기반해, 높은 성공 프롬프트에서 업데이트를 가중치를 감소시키는 Focal Loss에 영감을 받은 어려움 인식적 이점 조정 계수를 제안합니다. 이 가벼운 수정은 GRPO, DAPO, CISPO와 같은 모든 그룹 상대적 RLVR 알고리즘에 직접 통합할 수 있습니다. 도메인 내 및 도메인 외 벤치마크에서, 우리의 방법은 그룹 크기나 계산 비용을 증가시키지 않으면서 pass@256를 64.1에서 70.3(GrPO), 69.3에서 72.5(DAPO), 73.2에서 76.8(CISPO)로 향상시키고, pass@1을 유지하거나 개선합니다."
+    },
+    "summary": "1. 강화 학습에서 그룹 샘플링을 통한 이점 추정과 정책 업데이트 안정화가 중요한데, 컴퓨팅 제한으로 인해 큰 그룹 크기를 사용할 수 없는 문제가 있음.\n2. 작은 그룹은 드문 올바른 경로를 놓치면서도 혼합된 보상을 포함하고 공통적인 해법에 확률을 집중하여 문제 발생.\n3. 어려움 인식적 이점 조정 계수를 제안하여 높은 성공 프롬프트에서 업데이트를 가중치를 감소시키는 방법은 pass@256 를 향상시키면서 그룹 크기나 계산 비용을 증가시키지 않음.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Baichuan-M3: Modeling Clinical Inquiry for Reliable Medical Decision-Making",
+    "abstract": "We introduce Baichuan-M3, a medical-enhanced large language model engineered to shift the paradigm from passive question-answering to active, clinical-grade decision support. Addressing the limitations of existing systems in open-ended consultations, Baichuan-M3 utilizes a specialized training pipeline to model the systematic workflow of a physician. Key capabilities include: (i) proactive information acquisition to resolve ambiguity; (ii) long-horizon reasoning that unifies scattered evidence into coherent diagnoses; and (iii) adaptive hallucination suppression to ensure factual reliability. Empirical evaluations demonstrate that Baichuan-M3 achieves state-of-the-art results on HealthBench, the newly introduced HealthBench-Hallu and ScanBench, significantly outperforming GPT-5.2 in clinical inquiry, advisory and safety. The models are publicly available at https://huggingface.co/collections/baichuan-inc/baichuan-m3.",
+    "authors": [
+      "Baichuan-M3 Team",
+      "Chengfeng Dou",
+      "Fan Yang",
+      "Fei Li",
+      "Jiyuan Jia",
+      "Qiang Ju",
+      "Shuai Wang",
+      "Tianpeng Li",
+      "Xiangrong Zeng",
+      "Yijie Zhou",
+      "Hongda Zhang",
+      "Jinyang Tai",
+      "Linzhuang Sun",
+      "Peidong Guo",
+      "Yichuan Mo",
+      "Xiaochuan Wang",
+      "Hengfu Cui",
+      "Zhishou Zhang"
+    ],
+    "likes": 57,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.06570",
+    "date_collected": "2026-02-11T07:20:46.823940+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "Baichuan-M3: 의학 결정 지원을 위한 신뢰성 있는 의료 의사 결정 모델링",
+      "abstract": "Baichuan-M3은 수동 질문-답변에서 능동적이고 임상 수준의 결정 지원으로 패러다임을 전환하는 의료 강화 대형 언어 모델로, 개방적 상담의 한계를 극복하기 위해 의사의 체계적인 업무 흐름을 모델링하기 위한 전문화된 훈련 파이프라인을 활용합니다. 주요 기능으로는 (i) 모호성 해소를 위한 선제적 정보 획득, (ii) 흩어진 증거를 일관된 진단으로 통합하는 장기면 추론, (iii) 사실적 신빙성을 보장하기 위한 적응적 환각 억제가 포함됩니다. 경험적 평가 결과, Baichuan-M3은 HealthBench, HealthBench-Hallu 및 ScanBench에서 GPT-5.2를 크게 능가하는 최첨단 결정, 자문 및 안전성 결과를 도출합니다. 해당 모델은 https://huggingface.co/collections/baichuan-inc/baichuan-m3에서 공개됩니다."
+    },
+    "summary": "1. Baichuan-M3은 수동적인 질문에 응답하는 것을 넘어 활동적이고 임상 수준의 의사 결정 지원 모델로, 의사의 업무 흐름을 모방하여 의학 상담에서 업무 효율성을 향상시키는 데 주력합니다.\n2. 모델의 주요 기능으로는 모호성 해소를 위한 선제적 정보 획득, 흩어진 증거를 일관된 진단으로 통합하는 장기면 추론, 그리고 사실적 신빙성을 보장하기 위한 적응적 환각 억제가 있습니다.\n3. Baichuan-M3은 HealthBench와 같은 데이터셋에서 GPT-5.2를 능가하는 결과를 얻어내어 의료 분야에서 최신 기술을 보여주고 있습니다.",
+    "categories": [
+      "LLM",
+      "Medical"
+    ]
+  },
+  {
+    "title": "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+    "abstract": "LLM agents hold significant promise for advancing scientific research. To accelerate this progress, we introduce AIRS-Bench (the AI Research Science Benchmark), a suite of 20 tasks sourced from state-of-the-art machine learning papers. These tasks span diverse domains, including language modeling, mathematics, bioinformatics, and time series forecasting. AIRS-Bench tasks assess agentic capabilities over the full research lifecycle -- including idea generation, experiment analysis and iterative refinement -- without providing baseline code. The AIRS-Bench task format is versatile, enabling easy integration of new tasks and rigorous comparison across different agentic frameworks. We establish baselines using frontier models paired with both sequential and parallel scaffolds. Our results show that agents exceed human SOTA in four tasks but fail to match it in sixteen others. Even when agents surpass human benchmarks, they do not reach the theoretical performance ceiling for the underlying tasks. These findings indicate that AIRS-Bench is far from saturated and offers substantial room for improvement. We open-source the AIRS-Bench task definitions and evaluation code to catalyze further development in autonomous scientific research.",
+    "authors": [
+      "Alisia Lupidi",
+      "Bhavul Gauri",
+      "Thomas Simon Foster",
+      "Bassel Al Omari",
+      "Despoina Magka",
+      "Alberto Pepe",
+      "Alexis Audran-Reiss",
+      "Muna Aghamelu",
+      "Nicolas Baldwin",
+      "Lucia Cipolina-Kun",
+      "Jean-Christophe Gagnon-Audet",
+      "Chee Hau Leow",
+      "Sandra Lefdal",
+      "Hossam Mossalam",
+      "Abhinav Moudgil",
+      "Saba Nazir",
+      "Emanuel Tewolde",
+      "Isabel Urrego",
+      "Jordi Armengol Estape",
+      "Amar Budhiraja",
+      "Gaurav Chaurasia",
+      "Abhishek Charnalia"
+    ],
+    "likes": 54,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.06855",
+    "date_collected": "2026-02-11T07:20:46.825808+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "AIRS-Bench: AI 연구 과학 에이전트를 위한 과제 모음",
+      "abstract": "LLM 에이전트는 과학 연구 진보에 상당한 잠재력을 지니고 있습니다. 이 발전을 가속화하기 위해 최신 머신 러닝 논문에서 가져온 20가지 과제로 이루어진 AI Research Science Benchmark(AIRS-Bench)를 소개합니다. 이러한 과제는 언어 모델링, 수학, 생물 정보학, 시계열 예측 등 다양한 영역을 포괄하고 있습니다. AIRS-Bench 과제는 기존의 코드를 제공하지 않으면서 아이디어 생성, 실험 분석, 반복적 수정 등 연구 수명 주기 전반에 걸친 에이전트 능력을 평가합니다. AIRS-Bench 과제 형식은 다양성이 뛰어나며 새로운 과제의 쉬운 통합 및 다양한 에이전트 프레임워크 간의 엄격한 비교를 가능케 합니다. 우리는 선두 모델과 순차 및 병렬 구조를 결합한 베이스라인을 설정합니다. 결과는 에이전트가 네 가지 과제에서 인간 SOTA를 넘어섰지만, 16개 과제에서는 그에 미치지 못했음을 보여줍니다. 에이전트가 인간의 기준을 초과하더라도 기본 과제에 대한 이론적 성능 천정에 도달하지 못하는 것으로 나타납니다. 이러한 결과는 AIRS-Bench가 아직 포화되지 않았으며 더 많은 개발을 촉진할 수 있는 상당한 개선 여지가 있다는 것을 보여줍니다. 우리는 AIRS-Bench 과제 정의와 평가 코드를 오픈 소스로 제공하여 자율적인 과학 연구의 추가 발전을 촉진합니다."
+    },
+    "summary": "1. 최첨단 AI 연구에 대한 AIRS-Bench 과제 모음 소개\n2. 에이전트의 인간 SOTA를 넘는 능력과 한계 확인\n3. AIRS-Bench의 미해결 개선 가능성과 오픈 소스 제공의 중요성 강조",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders",
+    "abstract": "Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, including environmental noises and paralinguistic sounds (e.g. laughter, whispering) and disentangle them effectively, requiring removal of only 19-27% of features to erase a concept. Feature steering reduces Whisper's false speech detections by 70% with negligible WER increase, demonstrating real-world applicability. Finally, we find SAE features correlated with human EEG activity during speech perception, indicating alignment with human neural processing. The code and checkpoints are available at https://github.com/audiosae/audiosae_demo.",
+    "authors": [
+      "Georgii Aparin",
+      "Tasnima Sadekova",
+      "Alexey Rukhovich",
+      "Assel Yermekova",
+      "Laida Kushnareva",
+      "Vadim Popov",
+      "Kristian Kuznetsov",
+      "Irina Piontkovskaya"
+    ],
+    "likes": 54,
+    "published_date": "Feb 4",
+    "url": "https://huggingface.co/papers/2602.05027",
+    "date_collected": "2026-02-11T07:20:46.827088+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "오디오 처리 모델 이해를 위한 Sparse AutoEncoders 활용에 대한 연구",
+      "abstract": "Sparse Autoencoders (SAEs)는 신경 표현을 해석하는 데 강력한 도구이지만, 오디오 분야에서의 활용은 아직 탐구되지 않았습니다. Whisper와 HuBERT의 모든 인코더 레이어를 SAE로 훈련시키고, 그 안정성, 해석 가능성을 평가하며, 실용성을 보입니다. 랜덤 시드 간 50% 이상의 특징이 일관 유지되며, 재구성 품질은 유지됩니다. SAE 특징은 일반적인 음향 및 의미 정보뿐만 아니라 환경 소음,언어학적 소리(예: 웃음,속삭임) 등 특정 이벤트도 효과적으로 잡아내며, 개념을 지우기 위해 특징의 19-27%만 제거하면 충분합니다. 특징 제어는 Whisper의 잘못된 음성 감지를 70% 줄이고, 무시할 수 있는 WER 증가로, 실제 성능을 입증합니다. 마지막으로, 우리는 SAE 특징이 언어 인식 중 인간의 EEG 활동과 관련이 있음을 발견하여, 인간 신경 처리와 일치함을 보여줍니다. 코드 및 체크포인트는 https://github.com/audiosae/audiosae_demo 에서 확인할 수 있습니다."
+    },
+    "summary": "1. Sparse AutoEncoders(SAEs)를 이용한 오디오 처리 모델 해석에 대한 연구\n2. SAE 특징은 음향 및 의미 정보뿐만 아니라 환경 소음,언어학적 소리 등을 효과적으로 잡아내어 개념을 지울 때 19-27%의 특징만 제거하면 충분함\n3. SAE 특징은 Whisper의 잘못된 음성 감지를 70% 줄이는 효과를 보이고, 인간의 EEG 활동과 관련이 있어 인간의 신경 처리와 일치함을 보여줌",
+    "categories": [
+      "Audio"
+    ]
+  },
+  {
+    "title": "OdysseyArena: Benchmarking Large Language Models For Long-Horizon, Active and Inductive Interactions",
+    "abstract": "The rapid advancement of Large Language Models (LLMs) has catalyzed the development of autonomous agents capable of navigating complex environments. However, existing evaluations primarily adopt a deductive paradigm, where agents execute tasks based on explicitly provided rules and static goals, often within limited planning horizons. Crucially, this neglects the inductive necessity for agents to discover latent transition laws from experience autonomously, which is the cornerstone for enabling agentic foresight and sustaining strategic coherence. To bridge this gap, we introduce OdysseyArena, which re-centers agent evaluation on long-horizon, active, and inductive interactions. We formalize and instantiate four primitives, translating abstract transition dynamics into concrete interactive environments. Building upon this, we establish OdysseyArena-Lite for standardized benchmarking, providing a set of 120 tasks to measure an agent's inductive efficiency and long-horizon discovery. Pushing further, we introduce OdysseyArena-Challenge to stress-test agent stability across extreme interaction horizons (e.g., > 200 steps). Extensive experiments on 15+ leading LLMs reveal that even frontier models exhibit a deficiency in inductive scenarios, identifying a critical bottleneck in the pursuit of autonomous discovery in complex environments. Our code and data are available at https://github.com/xufangzhi/Odyssey-Arena",
+    "authors": [
+      "Fangzhi Xu",
+      "Hang Yan",
+      "Qiushi Sun",
+      "Jinyang Wu",
+      "Zixian Huang",
+      "Muye Huang",
+      "Jingyang Gong",
+      "Zichen Ding",
+      "Kanzhi Cheng",
+      "Yian Wang",
+      "Xinyu Che",
+      "Zeyi Sun",
+      "Jian Zhang",
+      "Zhangyue Yin",
+      "Haoran Luo",
+      "Xuanjing Huang",
+      "Ben Kao",
+      "Jun Liu",
+      "Qika Lin"
+    ],
+    "likes": 53,
+    "published_date": "Feb 5",
+    "url": "https://huggingface.co/papers/2602.05843",
+    "date_collected": "2026-02-11T07:20:46.828807+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "오디세이아레나: 장기적, 능동적이며 귀납적 상호작용을 위한 대규모 언어 모델 벤치마킹",
+      "abstract": "대규모 언어 모델(LLMs)의 급속한 발전은 복잡한 환경을 탐색할 수 있는 자율 에이전트의 개발을 가속화했다. 그러나 기존 평가는 대부분 추론적 패러다임을 채택하여, 에이전트가 명시적으로 제공된 규칙과 정적 목표에 따라 작업을 수행하며 종종 한정된 계획 수행 범위 내에서 이루어진다. 중요한 점은 에이전트가 경험으로부터 잠재적인 전이 법칙을 자율적으로 발견해야 하는 귀납적 필수성을 무시한다는 점인데, 이는 에이전트의 선행견지를 가능하게 하고 전략적 일관성을 유지하는 기반이 된다. 이것을 극복하기 위해 우리는 오디세이아레나를 소개하는데, 이는 에이전트 평가를 장기적, 능동적, 그리고 귀납적 상호작용에 중점을 둔다. 추상적인 전이 동역학을 구체적인 상호작용 환경으로 번역하는 네 가지 원시 요소를 형식화하고 실체화한다. 이를 기반으로 우리는 표준화된 벤치마킹을 위한 오디세이아레나-라이트를 확립하여, 에이전트의 귀납적 효율성과 장기적 발견을 측정하는 120가지 작업 세트를 제공한다. 더 나아가 우리는 상호작용 범위가 극단적으로 긴(예: > 200 단계) 경우 에이전트의 안정성을 스트레스 테스트하는 오디세이아레나-챌린지를 도입한다. 15개 이상의 주요 LLM에 대한 방대한 실험 결과는, 최첨단 모델조차 귀납적 시나리오에서 결핍을 보여줌으로써 복합 환경에서의 자율적 발견 추구에서 핵심 병목 현상을 식별한다. 우리의 코드와 데이터는 https://github.com/xufangzhi/Odyssey-Arena 에서 사용할 수 있다."
+    },
+    "summary": "1. 대규모 언어 모델의 발전으로 복잡 환경에서 탐색이 가능한 자율 에이전트 개발이 가속화되고 있으나, 기존 평가 방식은 귀납적 상호작용의 필수성을 간과하고 있다.\n2. 오디세이아레나는 장기적, 능동적, 그리고 귀납적 상호작용에 중점을 둔 에이전트 평가를 소개하며, 표준화된 벤치마킹을 위한 작업 세트를 제공한다.\n3. 실험 결과는 선행 모델들도 귀납적 시나리오에서 결핍을 보여주어, 복합 환경에서의 자율적 발견에 대한 병목 현상이 존재함을 밝힌다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models",
+    "abstract": "Entropy serves as a critical metric for measuring the diversity of outputs generated by large language models (LLMs), providing valuable insights into their exploration capabilities. While recent studies increasingly focus on monitoring and adjusting entropy to better balance exploration and exploitation in reinforcement fine-tuning (RFT), a principled understanding of entropy dynamics during this process is yet to be thoroughly investigated. In this paper, we establish a theoretical framework for analyzing the entropy dynamics during the RFT process, which begins with a discriminant expression that quantifies entropy change under a single logit update. This foundation enables the derivation of a first-order expression for entropy change, which can be further extended to the update formula of Group Relative Policy Optimization (GRPO). The corollaries and insights drawn from the theoretical analysis inspire the design of entropy control methods, and also offer a unified lens for interpreting various entropy-based methods in existing studies. We provide empirical evidence to support the main conclusions of our analysis and demonstrate the effectiveness of the derived entropy-discriminator clipping methods. This study yields novel insights into RFT training dynamics, providing theoretical support and practical strategies for optimizing the exploration-exploitation balance during LLM fine-tuning.",
+    "authors": [
+      "Shumin Wang",
+      "Yuexiang Xie",
+      "Wenhao Zhang",
+      "Yuchang Sun",
+      "Yanxi Chen",
+      "Yaliang Li",
+      "Yanyong Zhang"
+    ],
+    "likes": 50,
+    "published_date": "Feb 3",
+    "url": "https://huggingface.co/papers/2602.03392",
+    "date_collected": "2026-02-11T07:20:46.830015+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "대형 언어 모델의 강화 세밀 조정 과정에서의 엔트로피 역학에 관하여",
+      "abstract": "엔트로피는 대형 언어 모델이 생성하는 다양한 출력물의 다양성을 측정하는 중요한 지표로 작용하며, 탐사 능력을 평가하는 데 유용한 통찰을 제공합니다. 최근 연구들은 강화 학습 세밀 조정 (RFT)에서 엔트로피를 모니터링하고 조정하여 탐사와 활용의 균형을 더 잘 유지하려고 노력하지만, 이 과정에서의 엔트로피 역학에 대한 원리적 이해는 아직 철저히 조사되지 않았습니다. 본 논문에서는 RFT 과정 중 엔트로피 역학을 분석하기 위한 이론적 기반을 수립합니다. 이는 한 개의 로짓 업데이트에서 엔트로피 변화를 양적화하는 판별식 식으로 시작합니다. 이 바탕을 토대로 엔트로피 변화의 일차식 표현이 유도될 수 있으며, 이는 Group Relative Policy Optimization (GRPO)의 업데이트 공식으로 확장될 수 있습니다. 이론적 분석에서 파생된 함의와 통찰은 엔트로피 제어 방법의 설계를 영감주며, 기존 연구에서 다양한 엔트로피 기반 방법을 해석하는 통일된 렌즈를 제시합니다. 우리의 분석 주요 결론을 지원하는 경험적 증거를 제시하고, 유도된 엔트로피 판별자 클리핑 방법의 효과를 증명합니다. 본 연구는 RFT 훈련 역학에 새로운 통찰을 제공하며, LLM 세밀 조정 과정에서 탐사와 활용의 균형을 최적화하기 위한 이론적 지원과 실용적 전략을 제시합니다."
+    },
+    "summary": "1. 대형 언어 모델의 강화 세밀 조정 과정에서 엔트로피 역학을 분석하기 위한 이론적 기반을 수립하였습니다.\n2. 연구는 엔트로피 변화에 대한 일차식 표현을 유도하고, GRPO의 업데이트 공식으로 확장할 수 있음을 제시했습니다.\n3. 이론적 분석에서 얻은 결과를 토대로 엔트로피 제어 방법의 설계를 영감주며, 다양한 기존 연구의 엔트로피 기반 방법들을 해석하는 통일된 렌즈를 제시했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  }
+]

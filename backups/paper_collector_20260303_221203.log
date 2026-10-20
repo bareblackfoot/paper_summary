@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Mar  2 22:12:23 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W10
+URL: https://huggingface.co/papers/week/2026-W10
+Found 10 papers in weekly view
+Fetching likes for: dLLM: Simple Diffusion Language Modeling
+Fetching likes for: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Fetching likes for: Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets
+Fetching likes for: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Fetching likes for: Mode Seeking meets Mean Seeking for Fast Long Video Generation
+Fetching likes for: LK Losses: Direct Acceptance Rate Optimization for Speculative Decoding
+Fetching likes for: CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era
+Fetching likes for: Compositional Generalization Requires Linear, Orthogonal Representations in Vision Embedding Models
+Fetching likes for: InfoNCE Induces Gaussian Distribution
+Fetching likes for: Accelerating Masked Image Generation by Learning Latent Controlled Dynamics
+Selected top 10 papers by likes:
+1. dLLM: Simple Diffusion Language Modeling (64 likes)
+2. Enhancing Spatial Understanding in Image Generation via Reward Modeling (41 likes)
+3. Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets (35 likes)
+4. CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation (32 likes)
+5. Mode Seeking meets Mean Seeking for Fast Long Video Generation (23 likes)
+6. LK Losses: Direct Acceptance Rate Optimization for Speculative Decoding (15 likes)
+7. CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era (15 likes)
+8. Compositional Generalization Requires Linear, Orthogonal Representations in Vision Embedding Models (14 likes)
+9. InfoNCE Induces Gaussian Distribution (9 likes)
+10. Accelerating Masked Image Generation by Learning Latent Controlled Dynamics (8 likes)
+Found abstract: Although diffusion language models (DLMs) are evolving quickly, many recent models converge on a set...
+Processed paper: dLLM: Simple Diffusion Language Modeling
+Found abstract: Recent progress in text-to-image generation has greatly advanced visual fidelity and creativity, but...
+Processed paper: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Found abstract: The reliability of multilingual Large Language Model (LLM) evaluation is currently compromised by th...
+Processed paper: Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets
+Found abstract: GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task...
+Processed paper: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Found abstract: Scaling video generation from seconds to minutes faces a critical bottleneck: while short-video data...
+Processed paper: Mode Seeking meets Mean Seeking for Fast Long Video Generation
+Found abstract: Speculative decoding accelerates autoregressive large language model (LLM) inference by using a ligh...
+Processed paper: LK Losses: Direct Acceptance Rate Optimization for Speculative Decoding
+Found abstract: Scientific research relies on accurate citation for attribution and integrity, yet large language mo...
+Processed paper: CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era
+Found abstract: Compositional generalization, the ability to recognize familiar parts in novel contexts, is a defini...
+Processed paper: Compositional Generalization Requires Linear, Orthogonal Representations in Vision Embedding Models
+Found abstract: Contrastive learning has become a cornerstone of modern representation learning, allowing training w...
+Processed paper: InfoNCE Induces Gaussian Distribution
+Found abstract: Masked Image Generation Models (MIGMs) have achieved great success, yet their efficiency is hampered...
+Processed paper: Accelerating Masked Image Generation by Learning Latent Controlled Dynamics
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: dLLM: Simple Diffusion Language Modeling
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Enhancing Spatial Understanding in Image Generation via Reward Modeling
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Mode Seeking meets Mean Seeking for Fast Long Video Generation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: LK Losses: Direct Acceptance Rate Optimization for Speculative Decoding
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Compositional Generalization Requires Linear, Orthogonal Representations in Vision Embedding Models
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: InfoNCE Induces Gaussian Distribution
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Accelerating Masked Image Generation by Learning Latent Controlled Dynamics
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W10.json...
+
+Updating Notion database...
+Creating new paper: dLLM: 간단한 확산 언어 모델링
+Creating new paper: 이미지 생성에서 보상 모델링을 통한 공간 이해 강화
+Creating new paper: 번역에서의 회복: 벤치마크와 데이터셋의 자동 번역을 위한 효율적인 파이프라인
+Creating new paper: CUDA 에이전트: 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습
+Creating new paper: 모드 탐색과 평균 탐색을 결합한 빠른 장시간 비디오 생성
+Creating new paper: LK 손실: 과감한 디코딩을 위한 직접 수락률 최적화
+Creating new paper: 논문 인용 검증: 인용은 했지만, 직접 읽었나요? LLM 시대의 과학 참고문헌 확인을 위한 벤치마크
+Creating new paper: 시각 임베딩 모델에서 조합적 일반화에는 선형 및 직교적 표현이 필요합니다
+Creating new paper: InfoNCE는 가우시안 분포를 유도합니다
+Creating new paper: 숨겨진 이미지 생성의 속도 향상을 위한 잠재 제어 동적 학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Mar  2 22:14:33 UTC 2026 ===
+

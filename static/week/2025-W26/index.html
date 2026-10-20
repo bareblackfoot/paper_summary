@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤗 Hugging Face Papers - Top 10</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-00XPL3BFL6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-00XPL3BFL6');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤗</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hf-logo {
+            font-size: 3em;
+            margin-right: 15px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            flex: none;
+        }
+
+        .week-nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        /* 카테고리 필터 섹션 */
+        .filter-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* 주차 선택 섹션 */
+        .week-selector {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .week-selector-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .week-selector-content {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .week-dropdown {
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            background: white;
+            color: #333;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }
+
+        .week-dropdown:hover {
+            border-color: #667eea;
+        }
+
+        .week-dropdown:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .current-week-indicator {
+            padding: 8px 16px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        .week-navigation {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .nav-button {
+            padding: 6px 16px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .nav-button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #764ba2, #667eea);
+            color: #fff;
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .category-filter {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            background: white;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .category-filter:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .category-filter.active {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .clear-filters {
+            padding: 8px 16px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .clear-filters:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .filter-count {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .paper-grid {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+
+        .paper-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .paper-rank {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1em;
+            box-shadow: 0 4px 12px rgba(238, 90, 36, 0.4);
+        }
+
+        .paper-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        .paper-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .paper-title a:hover {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .paper-subtitle {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+
+        /* 카테고리 태그 */
+        .paper-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .category-tag {
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            color: #667eea;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            border: 1px solid #667eea30;
+        }
+
+        .paper-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #666;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .upvotes {
+            background: linear-gradient(45deg, #ff5722, #e91e63);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+
+        .authors {
+            color: #607d8b;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .authors-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .paper-date {
+            color: #ff9800;
+            font-size: 0.85em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .korean-title {
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .korean-summary {
+            background: linear-gradient(135deg, #4caf5015, #81c78415);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #4caf50;
+        }
+
+        .korean-summary h4 {
+            background: linear-gradient(45deg, #4caf50, #81c784);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+
+        .korean-summary p {
+            color: #555;
+            line-height: 1.6;
+            word-break: keep-all;
+        }
+
+        .abstract {
+            background: linear-gradient(135deg, #f5f7ff 0%, #f0f2ff 100%);
+            border-left: 4px solid #6366f1;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+
+        .abstract-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: #4f46e5;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .abstract-title i {
+            font-size: 1.25rem;
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .abstract-title span {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .abstract p {
+            color: #4a5568;
+            line-height: 1.7;
+            margin: 0;
+            font-size: 0.95rem;
+            word-break: keep-all;
+        }
+
+        .paper-link {
+            display: inline-flex;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+        }
+
+        .paper-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* 태블릿 화면 (768px 이하) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 25px 20px;
+                margin-bottom: 25px;
+            }
+
+            .header-title-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .week-nav-buttons {
+                position: static;
+                transform: none;
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1.1em;
+            }
+
+            .stats {
+                gap: 20px;
+            }
+
+            .filter-section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .week-selector {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .week-selector-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+
+            .week-selector-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .week-dropdown {
+                width: 100%;
+                min-width: auto;
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+
+            .week-navigation {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .nav-button {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .current-week-indicator {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .category-filters {
+                gap: 8px;
+            }
+
+            .category-filter {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .paper-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .paper-card {
+                padding: 20px;
+            }
+
+            .paper-title {
+                font-size: 1.2em;
+            }
+
+            .paper-meta {
+                gap: 12px;
+            }
+        }
+
+        /* 작은 모바일 화면 (480px 이하) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+                border-radius: 15px;
+            }
+
+            .header-title-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hf-logo {
+                font-size: 2.5em;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .header p {
+                font-size: 1em;
+                margin-top: 8px;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+            }
+
+            .stat-item {
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+            }
+
+            .stat-number {
+                font-size: 1.8em;
+            }
+
+            .filter-section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .filter-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+
+            .category-filters {
+                gap: 6px;
+            }
+
+            .category-filter {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
+
+            .paper-card {
+                padding: 18px;
+                margin: 0;
+                border-radius: 12px;
+            }
+
+            .paper-rank {
+                width: 30px;
+                height: 30px;
+                font-size: 0.9em;
+                top: -8px;
+                left: 15px;
+            }
+
+            .paper-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+                margin-top: 8px;
+                line-height: 1.3;
+            }
+
+            .paper-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
+            .meta-item {
+                width: 100%;
+            }
+
+            .authors {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .authors-text {
+                white-space: normal;
+                word-break: break-word;
+            }
+
+            .upvotes {
+                padding: 8px 14px;
+                font-size: 0.9em;
+            }
+
+            .paper-date {
+                font-size: 0.8em;
+            }
+
+            .korean-summary {
+                padding: 12px;
+                margin: 12px 0;
+            }
+
+            .korean-summary h4 {
+                font-size: 0.9em;
+                margin-bottom: 6px;
+            }
+
+            .korean-summary p {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+
+            .abstract {
+                padding: 1rem;
+                margin: 0.8rem 0;
+            }
+
+            .abstract-title {
+                font-size: 1em;
+                gap: 0.5rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .abstract p {
+                font-size: 0.9em;
+                line-height: 1.6;
+            }
+
+            .paper-link {
+                padding: 10px 16px;
+                font-size: 0.85em;
+                margin-top: 12px;
+                border-radius: 20px;
+            }
+
+            .paper-subtitle {
+                font-size: 0.85em;
+                margin-bottom: 12px;
+            }
+        }
+
+        /* 매우 작은 모바일 화면 (360px 이하) */
+        @media (max-width: 360px) {
+            .container {
+                padding: 8px;
+            }
+
+            .header {
+                padding: 15px 12px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+                word-break: keep-all;
+            }
+
+            .paper-card {
+                padding: 15px;
+            }
+
+            .paper-title {
+                font-size: 1em;
+                line-height: 1.3;
+            }
+
+            .korean-summary {
+                padding: 10px;
+            }
+
+            .abstract {
+                padding: 0.8rem;
+            }
+
+            .abstract-title {
+                font-size: 0.95em;
+            }
+
+            .abstract p {
+                font-size: 0.85em;
+            }
+        }
+
+        /* 터치 인터페이스를 위한 개선 */
+        @media (hover: none) {
+            .paper-card {
+                transform: none !important;
+                transition: background-color 0.3s ease;
+            }
+
+            .paper-card:active {
+                background-color: rgba(255, 255, 255, 0.98);
+            }
+
+            .paper-title a {
+                padding: 8px 0;
+                display: block;
+            }
+
+            .paper-link {
+                padding: 14px 20px;
+                min-height: 44px;
+            }
+        }
+
+        /* 고해상도 화면 대응 */
+        @media (min-width: 1400px) {
+            .paper-grid {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+        }
+
+        /* 가로 모드 모바일 대응 */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .header {
+                padding: 20px;
+            }
+
+            .stats {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .paper-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-title-row">
+                <div class="hf-logo">🤗</div>
+                <h1>Hugging Face Papers</h1>
+            </div>
+            <p id="week-desc" style="margin-top:18px; font-size:1.2em; color:#666;">
+                
+                    2025-W26 (06월 22일 ~ 06월 28일) 상위 10개 논문
+                
+            </p>
+            <div class="week-nav-buttons">
+                <a href="#" class="nav-button" id="prev-week" onclick="navigateWeek(-1)">
+                    <i class="fas fa-chevron-left"></i> 이전 주
+                </a>
+                <a href="#" class="nav-button" id="next-week" onclick="navigateWeek(1)">
+                    다음 주 <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            
+
+        </div>
+
+        <!-- 카테고리 필터 섹션 -->
+        <div class="filter-section">
+            <div class="filter-title">
+                <i class="fas fa-filter"></i>
+                카테고리별 필터
+            </div>
+            <div class="category-filters" id="category-filters">
+                <!-- 카테고리 필터 버튼들이 JavaScript로 동적 생성됩니다 -->
+            </div>
+            <div class="filter-controls">
+                <button class="clear-filters" onclick="clearAllFilters()">
+                    <i class="fas fa-times"></i> 모든 필터 해제
+                </button>
+                <div class="filter-count" id="filter-count">
+                    전체 10개 논문 표시 중
+                </div>
+            </div>
+        </div>
+
+        <div class="paper-grid" id="paper-grid">
+            
+            <div class="paper-card" data-categories="LLM,NLP">
+                <div class="paper-rank">1</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.16406" target="_blank">Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights</a>
+                </h2>
+                <div class="paper-subtitle">드래그 앤 드롭 LLMs: 제로 샷 프롬프트-투-웨이츠</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">LLM</span>
+                    
+                    <span class="category-tag">NLP</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            108
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Zhiyuan Liang, Dongwen Tang, Yuhao Zhou, Xuanlei Zhao, Mingjia Shi, Wangbo Zhao, Zekai Li, Peihao Wang, Konstantin Schürholt, Damian Borth, Michael M. Bronstein, Yang You, Zhangyang Wang, Kai Wang
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 19
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 드래그 앤 드롭 LLMs(DnD)는 로우랭크 적응 방법인 LoRA 가중치 업데이트로 작업별 훈련을 제거하고, 빠르게 작업별 매개변수를 생성하여 비용을 대폭 절감합니다.
+2. DnD는 강력한 LoRA 훈련에 비해 상식 추론, 수학, 코딩, 다중모달 벤치마크에서 최대 30%의 성능 향상을 제공하며, 대상 데이터나 라벨을 본 적이 없어도 교차 도메인 일반화를 효과적으로 수행합니다.
+3. 이 연구 결과는 그래디언트 기반 적응의 대안으로 프롬프트-조건 매개변수 생성이 LLMs를 특화시키는데 효과적임을 입증합니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>현대 파라미터 효율적인 파인튜닝(PEFT) 방법인 로우랭크 적응(LoRA)은 대형 언어 모델(LLMs) 맞춤화 비용을 줄이지만 여전히 각 하류 데이터셋에 대해 별도의 최적화 실행이 필요합니다. 저희는 프롬프트-조건 매개변수 생성기인 드래그 앤 드롭 LLMs(DnD)를 소개합니다. 이는 몇 가지 미출시된 작업 프롬프트를 직접 LoRA 가중치 업데이트로 매핑하여 작업당 훈련을 제거합니다. 가벼운 텍스트 인코더는 각 프롬프트 배치를 조건 임베딩으로 축소하고, 이후 이를 연속적 하이퍼-컨볼루션 디코더에 의해 전체 LoRA 행렬로 변환합니다. DnD는 다양한 프롬프트-체크포인트 쌍의 모임에서 훈련된 후 몇 초 안에 작업별 매개변수를 생성하며, i) 전체 파인튜닝 대비 최대 12,000배의 비용 절감, ii) 강력한 훈련 LoRA에 비해 견지 않은 상식 추론, 수학, 코딩, 다중모달 벤치마크에서 평균 최대 30% 성능 향상, iii) 대상 데이터나 라벨을 본 적이 없어도 강건한 교차 도메인 일반화를 제공합니다. 저희 결과는 빠르게 특화하는데 그래디언트 기반 적응 대안인 프롬프트-조건 매개변수 생성이 타당함을 보여줍니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.16406" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="Computer Vision,Multimodal">
+                <div class="paper-rank">2</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.18882" target="_blank">Light of Normals: Unified Feature Representation for Universal
+  Photometric Stereo</a>
+                </h2>
+                <div class="paper-subtitle">표면 법선의 빛: 범용 광도 스테레오를 위한 통합적인 특징 표현</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">Computer Vision</span>
+                    
+                    <span class="category-tag">Multimodal</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            80
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Hong Li, Houyuan Chen, Chongjie Ye, Zhaoxi Chen, Bohan Li, Shaocong Xu, Xianda Guo, Xuhui Liu, Yikai Wang, Baochang Zhang, Satoshi Ikehata, Boxin Shi, Anyi Rao, Hao Zhao
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 23
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 범용 광도 스테레오는 임의의 조명 조건에서 물체의 표면 법선을 복원하기 위한 기술이며, 밝기 변화를 통해 조명 변화와 표면 방향의 관련성을 파악하는 것이 어렵습니다.
+  
+2. 복잡한 표면에서 고주파 기하학적 세부 정보를 보존하는 것은 전통적인 특징 처리 작업이 정확히 캡처하기 어려운 도전입니다.
+  
+3. SDM-UniPS 및 Uni MS-PS와 같은 최근 발전에도 불구하고, 범용 광도 스테레오 기술은 어려운 셀프-섀도잉, 상호 반사 및 세밀한 법선 변화를 처리하는 데 어려움을 겪고 있습니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>범용 광도 스테레오(PS)는 특정 조명 모델에 의존하지 않고 임의의 조명 조건에서 물체의 높은 품질의 표면 법선을 복원하는 것을 목표로 합니다. 최근의 SDM-UniPS와 Uni MS-PS와 같은 발전에도 불구하고, 두 가지 기본적인 과제가 존재합니다: 1) 조명과 표면 법선 특징 사이의 깊은 결합, 관찰된 강도의 모호성으로 인해 밝기 변화가 조명 변화에서 비롯된 것인지 표면 방향에서 온 것인지 판단하기 어렵고; 2) 복잡한 표면에서 고주파 기하학적 세부 정보를 보존하는 것, 복잡한 기하학이 자체 그림자, 상호 반사 및 세밀한 법선 변화를 만들어 기존의 특징 처리 작업이 정확하게 캡처하기 어려운 상황입니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.18882" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="Multimodal,NLP,Vision">
+                <div class="paper-rank">3</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.16035" target="_blank">Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding</a>
+                </h2>
+                <div class="paper-subtitle">비전 안내 청킹이 필요한 전부: 다중 모달 문서 이해 기능을 강화하는 RAG</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">Multimodal</span>
+                    
+                    <span class="category-tag">NLP</span>
+                    
+                    <span class="category-tag">Vision</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            79
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Vishesh Tripathi, Tanmay Odapally, Indraneel Das, Uday Allu, Biddwan Ahmed
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 19
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. RAG 시스템의 문서 이해 기능 향상을 위해 LMMs를 활용한 새로운 다중 모달 문서 청킹 방식을 제안함.
+2. 쿼리가 수동으로 작성된 PDF 문서 데이터셋에서 우리의 방법을 평가하여 청킹 품질과 RAG 성능 개선을 입증함.
+3. 비전 안내 접근 방식은 전통적인 RAG 시스템에 비해 더 나은 정확도를 달성하고 문서 구조와 의미론적 일관성을 효율적으로 보존함.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>검색-증강 생성 (RAG) 시스템은 정보 검색과 질문 응답을 혁신적으로 바꿨지만, 복잡한 문서 구조, 다중 페이지 표, 포함된 그림, 그리고 페이지 경계를 넘나드는 문맥적 의존성과 호환되지 않는 전통적인 텍스트 기반 청킹 방법들이 어려움을 겪고 있습니다. 우리는 대형 다중 모달 모델(LMMs)을 활용한 신규 다중 모달 문서 청킹 접근 방식을 제안하여 PDF 문서를 일괄 처리하면서 의미론적 일관성과 구조적 통합을 유지합니다. 우리의 방법은 교차 배치 문맥 보존을 가능케 하여 구성 가능한 페이지 배치에서 문서를 처리하여 여러 페이지에 걸친 표, 포함된 시각적 요소, 절차적 내용을 정확히 처리할 수 있습니다. 우리는 수동으로 작성된 쿼리를 사용한 PDF 문서의 선별된 데이터셋에서 접근 방식을 평가하여 청킹 품질과 하류 RAG 성능의 향상을 보여줍니다. 우리의 비전 안내 접근 방식은 전통적인 보통 RAG 시스템에 비해 더 나은 정확도를 달성하며, 질적 분석을 통해 문서 구조와 의미론적 일관성의 탁월한 보존을 입증합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.16035" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="Multimodal,NLP">
+                <div class="paper-rank">4</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.18871" target="_blank">OmniGen2: Exploration to Advanced Multimodal Generation</a>
+                </h2>
+                <div class="paper-subtitle">OmniGen2: 고급 멀티모달 생성을 위한 탐색</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">Multimodal</span>
+                    
+                    <span class="category-tag">NLP</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            67
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Chenyuan Wu, Pengfei Zheng, Ruiran Yan, Shitao Xiao, Xin Luo, Yueze Wang, Wanli Li, Xiyan Jiang, Yexin Liu, Junjie Zhou, Ze Liu, Ziyi Xia, Chaofan Li, Haoge Deng, Jiahao Wang, Kun Luo, Bo Zhang, Defu Lian, Xinlong Wang, Zhongyuan Wang, Tiejun Huang, Zheng Liu
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 23
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. OmniGen2는 텍스트와 이미지 모드에 대해 서로 다른 디코딩 경로를 사용하며, 기존 VAE 입력을 다시 적응할 필요 없이 원본 텍스트 생성 능력을 보존하는 기능을 갖추고 있습니다.
+2. OmniGen2는 이미지 편집 및 문맥 생성 데이터를 포함한 포괄적인 데이터 구축 파이프라인을 개발했으며, 이미지 생성 작업을 위한 reflection 메커니즘과 전용 reflection 데이터셋을 소개하였습니다.
+3. OmniGen2는 텍스트에서 이미지로, 이미지 편집까지 다양한 작업에서 경쟁력 있는 결과를 달성하며, 새로운 벤치마크 OmniContext에서 뛰어난 성능을 보입니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>본 연구에서는 다양한 생성 작업을 위한 통합 솔루션을 제공하기 위해 설계된 다재다능하고 오픈 소스 생성 모델인 OmniGen2를 소개합니다. 텍스트-이미지, 이미지 편집, 문맥 생성을 포함하는 다양한 생성 과제에 대한 통합적인 솔루션을 제공하기 위한 두 개의 디코딩 경로를 갖춘 OmniGen2는 기존의 멀티모달 이해 모델을 기반으로 하여 텍스트 생성 능력을 보존하는 기능을 제공합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.18871" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="Multimodal,LLM,Computer Vision">
+                <div class="paper-rank">5</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.18095" target="_blank">ShareGPT-4o-Image: Aligning Multimodal Models with GPT-4o-Level Image
+  Generation</a>
+                </h2>
+                <div class="paper-subtitle">다중 모달 모델을 GPT-4o 수준의 이미지 생성과 조율하는 ShareGPT-4o-Image</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">Multimodal</span>
+                    
+                    <span class="category-tag">LLM</span>
+                    
+                    <span class="category-tag">Computer Vision</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            59
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Junying Chen, Zhenyang Cai, Pengcheng Chen, Shunian Chen, Ke Ji, Xidong Wang, Yunjin Yang, Benyou Wang
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 22
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. ShareGPT-4o-Image는 GPT-4o의 이미지 생성 능력을 담은 데이터셋으로, Janus-4o와 같은 다중 모달 대형 언어 모델을 발전시킴.
+2. Janus-4o는 텍스트-이미지 생성에 탁월한 성과를 보이며, 텍스트-이미지-이미지 생성을 지원하며 합성 샘플과 짧은 교육 시간으로 높은 성능을 달성함.
+3. ShareGPT-4o-Image와 Janus-4o의 발표가 사실적이고 조율된 이미지 생성에 대한 공개 연구를 촉진할 것으로 기대됨.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>최근 다중 모달 생성 모델의 발전으로 사실적인 이미지 생성이 가능해졌지만, GPT-4o-Image와 같은 선도적인 시스템은 사유적이고 접근하기 어렵다. 이 능력을 더 많은 사람들에게 알리기 위해, 우리는 GPT-4o의 이미지 생성 능력을 요약하기 위해 45,000개의 텍스트-이미지 및 46,000개의 텍스트-이미지 데이터를 포함한 첫 번째 데이터셋인 ShareGPT-4o-Image를 제시한다. 이 데이터셋을 활용하여, 우리는 텍스트-이미지 및 텍스트-이미지-이미지 생성이 가능한 다중 모달 대형 언어 모델인 Janus-4o를 개발한다. Janus-4o는 자신의 이전 버전 Janus-Pro보다 텍스트-이미지 생성을 크게 개선할 뿐만 아니라 텍스트-이미지-이미지 생성도 지원한다. 특히, 91,000개의 합성 샘플과 8 A800-GPU 기계에서 6시간의 교육만으로 천재적인 성능의 텍스트-이미지-이미지 생성을 이룬다. ShareGPT-4o-Image와 Janus-4o의 공개를 통해 사실적이고 조율된 이미지 생성에 대한 연구를 촉진할 것으로 기대한다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.18095" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="MLLM (대규모 언어 모델),Vision (컴퓨터 비전)">
+                <div class="paper-rank">6</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.17612" target="_blank">JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo
+  Retouching Agent</a>
+                </h2>
+                <div class="paper-subtitle">자비스아트: 지능적인 사진 보정 에이전트를 통해 인간의 예술적 창의력 해방하기</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">MLLM (대규모 언어 모델)</span>
+                    
+                    <span class="category-tag">Vision (컴퓨터 비전)</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            58
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Yunlong Lin, Zixu Lin, Kunjie Lin, Jinbin Bai, Panwang Pan, Chenxin Li, Haoyu Chen, Zhongdao Wang, Xinghao Ding, Wenbo Li, Shuicheng Yan
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 21
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 자비스아트는 멀티모달 대규모 언어 모델(MLLM)을 활용하여 사용자의 의도를 이해하고 전문 예술가의 추론 과정을 모방하여 지능적으로 보정 도구를 조정합니다.
+2. 자비스아트는 Chain-of-Thought 감독된 미세 조정과 Retouching을 위한 Group Relative Policy Optimization (GRPO-R) 두 단계의 교육 과정을 거쳐 사용자에게 우수한 일반화 능력과 편집 조절 기능을 제공합니다.
+3. MMArt-Bench를 통한 성능 평가에서 자비스아트는 사용자 친화적 상호작용과 GPT-4o 대비 60% 향상된 평균 픽셀 수준 지표를 보여주며, 지능적인 사진 보정을 위한 새로운 가능성을 제시합니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>사진 보정은 현대적 시각적 스토리텔링에 중요한 요소로 자리 잡았으며 사용자들이 미학을 담아 창의성을 표현할 수 있도록 합니다. Adobe Lightroom과 같은 프로페셔널한 도구들은 강력한 기능을 제공하지만 상당한 숙련과 수동 노력을 요구합니다. 기존의 AI 솔루션들은 자동화를 제공하지만 종종 제한된 조정 능력과 풍부한 일반화를 잃어 다양하고 개인화된 편집 요구를 충족시키지 못합니다. 이 간극을 좁히기 위해, 사용자 의도를 이해하고 전문 예술가의 추론 과정을 흉내내며 Lightroom 내에서 200여 가지 이상의 보정 도구를 지능적으로 조정하는 멀티모달 대규모 언어 모델(MLLM)을 활용한 자비스아트를 소개합니다. 자비스아트는 사용자의 기본적인 추론 및 도구 사용 기술을 확립하기 위한 초기 Chain-of-Thought 감독된 미세 조정을 거친 후, 결정력과 도구 숙련도를 더 향상시키기 위한 Retouching을 위한 Group Relative Policy Optimization (GRPO-R)를 진행합니다. 또한 자비스아트를 Lightroom과의 원활한 통합을 위한 에이전트-투-라이트룸 프로토콜을 제안합니다. 성능 평가를 위해 실제 사용자 편집으로 구성된 새로운 기준인 MMArt-Bench를 개발했습니다. 자비스아트는 사용자 친화적 상호작용, 우수한 일반화 능력, 그리고 전역적 및 지역적 조절에 대한 세밀한 통제를 보여줌으로써 지능적인 사진 보정을 위한 새로운 길을 열어갑니다. 특히, 컨텐츠 충실도에 대한 MMArt-Bench의 평균 픽셀 수준 지표에서 GPT-4o를 60% 개선하여 일치 지시 능력은 유지하면서 우수한 성과를 거두었습니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.17612" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="강화학습,컴퓨터 비전">
+                <div class="paper-rank">7</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.18701" target="_blank">Matrix-Game: Interactive World Foundation Model</a>
+                </h2>
+                <div class="paper-subtitle">상호작용하는 세계 기초 모델: Matrix-Game</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">강화학습</span>
+                    
+                    <span class="category-tag">컴퓨터 비전</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            55
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Yifan Zhang, Chunli Peng, Boyang Wang, Puyi Wang, Qingcheng Zhu, Fei Kang, Biao Jiang, Zedong Gao, Eric Li, Yang Liu, Yahui Zhou
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 23
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. Matrix-Game은 대규모 Minecraft 데이터셋을 활용하여, 시각적 품질, 시간적 품질, 행동 제어성, 물리적 규칙 이해를 측정하는 통합된 평가 지표인 GameWorld Score를 개발했으며, 여러 실험에서 이전 Minecraft 모델(Oasis, MineWorld 등)을 능가하는 결과를 보여줍니다.
+2. 모델은 순간 이미지, 움직임 맥락, 사용자 행동에 의해 조건화되는 조절 가능한 이미지-세계 생성 패러다임을 채택하여, 다양한 게임 시나리오에서 현실적이고 정확하게 조절 가능한 비디오 생성 능력을 강조합니다.
+3. Matrix-Game은 17억 개의 파라미터로 구성되어 있으며, 미래 연구를 위해 해당 모델 가중치와 GameWorld Score 벤치마크를 공개할 계획입니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>Matrix-Game은 조절 가능한 게임 세계 생성을 위한 상호작용하는 세계 기초 모델로, 대규모 미타깃 데이터 사전 훈련을 거친 후 상호작용 비디오 생성을 위한 행동 레이블 데이터로 학습됩니다. Matrix-Game은 명확한 캐릭터 행동 및 카메라 이동 제어를 제공하며 시각적 품질과 시간적 일관성을 유지합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.18701" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="Computer Vision,Optimization,AI (인공지능)">
+                <div class="paper-rank">8</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.16054" target="_blank">PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models</a>
+                </h2>
+                <div class="paper-subtitle">효율적인 희박 및 양자화 주의를 위한 패턴 인식 기반 재배치 모델</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">Computer Vision</span>
+                    
+                    <span class="category-tag">Optimization</span>
+                    
+                    <span class="category-tag">AI (인공지능)</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            55
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Tianchen Zhao, Ke Hong, Xinhao Yang, Xuefeng Xiao, Huixia Li, Feng Ling, Ruiqi Xie, Siqi Chen, Hongyu Zhu, Yichong Zhang, Yu Wang
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 19
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. 시각 생성에서 발생하는 높은 메모리 및 계산 비용을 완화하기 위해 주의 패턴을 재배치하는 "PAROAttention" 모델이 제안되었습니다.
+2. "PAROAttention" 모델은 시각적 주의 패턴을 하드웨어 친화적인 블록 방식으로 통합하여 희소화와 양자화를 단순화하고 강화합니다.
+3. 이 모델은 손실 메트릭을 갖는 비디오 및 이미지 생성을 가능하게 하며, 낮은 밀도와 비트폭에서 빠른 작동을 보장하여 정밀 베이스라인과 비슷한 결과를 달성합니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>시각 생성에서, 주요 메커니즘의 이차 복잡성은 고해상도 이미지 또는 다중 프레임 비디오 생성에 필요한 긴 토큰 시퀀스에 대해 높은 메모리 및 계산 비용으로 이어집니다. 이를 해결하기 위해, 이전 연구에서는 희소화(sparsification)와 양자화(quantization) 기술을 탐구해왔습니다. 그러나 이러한 기술은 낮은 밀도와 축소된 비트폭에서 중요한 도전에 직면합니다. 체계적인 분석을 통해 우리는 시각 주의 패턴의 분산되고 불규칙한 특성이 핵심 어려움임을 확인합니다. 이에 우리는 이러한 패턴을 수용하기 위해 특별한 희소화와 양자화 설계를 도입하는 대신, 도전을 완화하기 위해 주의 패턴을 재조정하는 대안 전략을 제안합니다. 시각적 특징 추출의 지역 집계 특성에서 영감을 받아, 우리는 다양한 주의 패턴을 하드웨어 친화적인 블록 방식 패턴으로 통합하는 혁신적인 "패턴 인식 토큰 재배치 (PARO)" 기술을 설계했습니다. 이 통합은 희소화와 양자화를 크게 단순화하고 강화합니다. 우리는 다양한 설계 선택의 성능-효율성의 상충관계를 평가하고 통합된 패턴에 특화된 방법론을 확정했습니다. 우리의 "PAROAttention" 접근법은 손실 메트릭으로 비디오 및 이미지 생성을 달성하며, 극히 낮은 밀도 (~20%-30%)와 비트폭(INT8/INT4)에서 작동하면서 거의 정밀 베이스라인과 동일한 결과를 달성하며 **1.9배**에서 **2.7배**의 종단-종단 지연 시간 가속도를 달성합니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.16054" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="Computer Vision,Multimodal,Robotics">
+                <div class="paper-rank">9</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.19851" target="_blank">AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion
+  Models</a>
+                </h2>
+                <div class="paper-subtitle">AnimaX: 3D에서 관절 비디오-자세 확산 모델로 무생물을 움직이게 하기</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">Computer Vision</span>
+                    
+                    <span class="category-tag">Multimodal</span>
+                    
+                    <span class="category-tag">Robotics</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            52
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Zehuan Huang, Haoran Feng, Yangtian Sun, Yuanchen Guo, Yanpei Cao, Lu Sheng
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 24
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. AnimaX는 고정된 골격 체계에 제한된 전통적인 동작 합성 방법과 달리, 비용이 많이 드는 최적화를 요구하지 않으면서도 비디오 기반 동작 지식을 3D 도메인으로 효과적으로 전달합니다.
+2. 우리의 방법은 3D 동작을 다양한 관절 망과 임의의 골격으로 표현하는데, 이를 위해 멀티뷰, 멀티프레임 2D 자세 맵을 사용합니다.
+3. AnimaX는 새롭게 구성된 160,000개의 리깅된 시퀀스 데이터셋에서 훈련되었으며, 일반화, 동작 충실도 및 효율성 면에서 VBench에서 최첨단 결과를 달성하며 범주에 구애받지 않는 3D 애니메이션에 확장 가능한 솔루션을 제공합니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>AnimaX는 비디오 확산 모델의 동작 선행 지식을 관절 기반 애니메이션의 제어 가능한 구조와 연결하는 3D 애니메이션 프레임워크입니다. 우리의 방법은 다양한 관절 망을 지원하면서도 비디오 기반 동작 지식을 효과적으로 3D 영역으로 전달하는데 성공하였습니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.19851" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+            <div class="paper-card" data-categories="Reinforcement Learning,LLM (대규모 언어 모델)">
+                <div class="paper-rank">10</div>
+                
+                <h2 class="paper-title">
+                    <a href="https://huggingface.co/papers/2506.18841" target="_blank">LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement
+  Learning</a>
+                </h2>
+                <div class="paper-subtitle">LongWriter-Zero: 강화 학습을 통한 초정밀 장문 텍스트 생성 마스터링</div>
+
+                <!-- 카테고리 태그 -->
+                
+                <div class="paper-categories">
+                    
+                    <span class="category-tag">Reinforcement Learning</span>
+                    
+                    <span class="category-tag">LLM (대규모 언어 모델)</span>
+                    
+                </div>
+                
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            49
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        
+                            Yuhao Wu, Yushi Bai, Zhiqiang Hu, Roy Ka-Wei Lee, Juanzi Li
+                        
+                    </div>
+                    
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        Jun 23
+                    </div>
+                    
+                </div>
+
+                
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">1. LongWriter-Zero는 강화 학습을 이용하여 주석이나 합성 데이터에 의존하지 않고 초장문이며 높은 품질의 텍스트 생성 능력을 갖추게 합니다.
+2. 이 모델은 WritingBench와 Arena-Write에서 다양한 메트릭에서 최고 수준의 결과를 보여주며, 기존의 SFT 방법을 능가합니다.
+3. LongWriter-Zero는 Qwen2.5-32B에서 훈련되었으며, 데이터와 모델 체크포인트는 오픈소스로 공개되어 있습니다.</p>
+                </div>
+                
+
+                
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>대규모 언어 모델(Large Language Models, LLMs)에 의한 초장문 생성은 많이 요구되지만, 시퀀스 길이가 증가함에 따라 생성 길이 제한과 전반적인 품질 저하로 인해 상당한 어려움이 남아 있습니다. 본 연구에서는 주석이나 합성 데이터에 의존하지 않고 처음부터 시작하여 강화 학습을 활용해 LLMs에서 초장문이며 높은 품질의 텍스트 생성 능력이 발현되도록 하는 고밀도화 기반 접근법을 제안합니다. LongWriter-Zero 모델은 WritingBench와 Arena-Write에서 모든 메트릭에서 최고 성능을 달성하며 DeepSeek R1과 Qwen3-235B와 같은 100B+ 모델을 능가했습니다.</p>
+                </div>
+                
+
+                <a href="https://huggingface.co/papers/2506.18841" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        // 모든 카테고리 수집
+        const papers = [{"abstract": "Modern Parameter-Efficient Fine-Tuning (PEFT) methods such as low-rank\nadaptation (LoRA) reduce the cost of customizing large language models (LLMs),\nyet still require a separate optimization run for every downstream dataset. We\nintroduce Drag-and-Drop LLMs (\\textit{DnD)}, a prompt-conditioned\nparameter generator that eliminates per-task training by mapping a handful of\nunlabeled task prompts directly to LoRA weight updates. A lightweight text\nencoder distills each prompt batch into condition embeddings, which are then\ntransformed by a cascaded hyper-convolutional decoder into the full set of LoRA\nmatrices. Once trained in a diverse collection of prompt-checkpoint pairs, DnD\nproduces task-specific parameters in seconds, yielding i) up to\n12,000times lower overhead than full fine-tuning, ii) average gains\nup to 30\\% in performance over the strongest training LoRAs on unseen\ncommon-sense reasoning, math, coding, and multimodal benchmarks, and iii)\nrobust cross-domain generalization despite never seeing the target data or\nlabels. Our results demonstrate that prompt-conditioned parameter generation is\na viable alternative to gradient-based adaptation for rapidly specializing\nLLMs. Our project is available at\nhttps://jerryliang24.github.io/DnD{https://jerryliang24.github.io/DnD}.", "authors": ["Zhiyuan Liang", "Dongwen Tang", "Yuhao Zhou", "Xuanlei Zhao", "Mingjia Shi", "Wangbo Zhao", "Zekai Li", "Peihao Wang", "Konstantin Sch\u00fcrholt", "Damian Borth", "Michael M. Bronstein", "Yang You", "Zhangyang Wang", "Kai Wang"], "categories": ["LLM", "NLP"], "date_collected": "2025-06-29T07:07:11.607114+09:00", "likes": 108, "published_date": "Jun 19", "summary": "1. \ub4dc\ub798\uadf8 \uc564 \ub4dc\ub86d LLMs(DnD)\ub294 \ub85c\uc6b0\ub7ad\ud06c \uc801\uc751 \ubc29\ubc95\uc778 LoRA \uac00\uc911\uce58 \uc5c5\ub370\uc774\ud2b8\ub85c \uc791\uc5c5\ubcc4 \ud6c8\ub828\uc744 \uc81c\uac70\ud558\uace0, \ube60\ub974\uac8c \uc791\uc5c5\ubcc4 \ub9e4\uac1c\ubcc0\uc218\ub97c \uc0dd\uc131\ud558\uc5ec \ube44\uc6a9\uc744 \ub300\ud3ed \uc808\uac10\ud569\ub2c8\ub2e4.\n2. DnD\ub294 \uac15\ub825\ud55c LoRA \ud6c8\ub828\uc5d0 \ube44\ud574 \uc0c1\uc2dd \ucd94\ub860, \uc218\ud559, \ucf54\ub529, \ub2e4\uc911\ubaa8\ub2ec \ubca4\uce58\ub9c8\ud06c\uc5d0\uc11c \ucd5c\ub300 30%\uc758 \uc131\ub2a5 \ud5a5\uc0c1\uc744 \uc81c\uacf5\ud558\uba70, \ub300\uc0c1 \ub370\uc774\ud130\ub098 \ub77c\ubca8\uc744 \ubcf8 \uc801\uc774 \uc5c6\uc5b4\ub3c4 \uad50\ucc28 \ub3c4\uba54\uc778 \uc77c\ubc18\ud654\ub97c \ud6a8\uacfc\uc801\uc73c\ub85c \uc218\ud589\ud569\ub2c8\ub2e4.\n3. \uc774 \uc5f0\uad6c \uacb0\uacfc\ub294 \uadf8\ub798\ub514\uc5b8\ud2b8 \uae30\ubc18 \uc801\uc751\uc758 \ub300\uc548\uc73c\ub85c \ud504\ub86c\ud504\ud2b8-\uc870\uac74 \ub9e4\uac1c\ubcc0\uc218 \uc0dd\uc131\uc774 LLMs\ub97c \ud2b9\ud654\uc2dc\ud0a4\ub294\ub370 \ud6a8\uacfc\uc801\uc784\uc744 \uc785\uc99d\ud569\ub2c8\ub2e4.", "title": "Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights", "translation": {"abstract": "\ud604\ub300 \ud30c\ub77c\ubbf8\ud130 \ud6a8\uc728\uc801\uc778 \ud30c\uc778\ud29c\ub2dd(PEFT) \ubc29\ubc95\uc778 \ub85c\uc6b0\ub7ad\ud06c \uc801\uc751(LoRA)\uc740 \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378(LLMs) \ub9de\ucda4\ud654 \ube44\uc6a9\uc744 \uc904\uc774\uc9c0\ub9cc \uc5ec\uc804\ud788 \uac01 \ud558\ub958 \ub370\uc774\ud130\uc14b\uc5d0 \ub300\ud574 \ubcc4\ub3c4\uc758 \ucd5c\uc801\ud654 \uc2e4\ud589\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \uc800\ud76c\ub294 \ud504\ub86c\ud504\ud2b8-\uc870\uac74 \ub9e4\uac1c\ubcc0\uc218 \uc0dd\uc131\uae30\uc778 \ub4dc\ub798\uadf8 \uc564 \ub4dc\ub86d LLMs(DnD)\ub97c \uc18c\uac1c\ud569\ub2c8\ub2e4. \uc774\ub294 \uba87 \uac00\uc9c0 \ubbf8\ucd9c\uc2dc\ub41c \uc791\uc5c5 \ud504\ub86c\ud504\ud2b8\ub97c \uc9c1\uc811 LoRA \uac00\uc911\uce58 \uc5c5\ub370\uc774\ud2b8\ub85c \ub9e4\ud551\ud558\uc5ec \uc791\uc5c5\ub2f9 \ud6c8\ub828\uc744 \uc81c\uac70\ud569\ub2c8\ub2e4. \uac00\ubcbc\uc6b4 \ud14d\uc2a4\ud2b8 \uc778\ucf54\ub354\ub294 \uac01 \ud504\ub86c\ud504\ud2b8 \ubc30\uce58\ub97c \uc870\uac74 \uc784\ubca0\ub529\uc73c\ub85c \ucd95\uc18c\ud558\uace0, \uc774\ud6c4 \uc774\ub97c \uc5f0\uc18d\uc801 \ud558\uc774\ud37c-\ucee8\ubcfc\ub8e8\uc158 \ub514\ucf54\ub354\uc5d0 \uc758\ud574 \uc804\uccb4 LoRA \ud589\ub82c\ub85c \ubcc0\ud658\ud569\ub2c8\ub2e4. DnD\ub294 \ub2e4\uc591\ud55c \ud504\ub86c\ud504\ud2b8-\uccb4\ud06c\ud3ec\uc778\ud2b8 \uc30d\uc758 \ubaa8\uc784\uc5d0\uc11c \ud6c8\ub828\ub41c \ud6c4 \uba87 \ucd08 \uc548\uc5d0 \uc791\uc5c5\ubcc4 \ub9e4\uac1c\ubcc0\uc218\ub97c \uc0dd\uc131\ud558\uba70, i) \uc804\uccb4 \ud30c\uc778\ud29c\ub2dd \ub300\ube44 \ucd5c\ub300 12,000\ubc30\uc758 \ube44\uc6a9 \uc808\uac10, ii) \uac15\ub825\ud55c \ud6c8\ub828 LoRA\uc5d0 \ube44\ud574 \uacac\uc9c0 \uc54a\uc740 \uc0c1\uc2dd \ucd94\ub860, \uc218\ud559, \ucf54\ub529, \ub2e4\uc911\ubaa8\ub2ec \ubca4\uce58\ub9c8\ud06c\uc5d0\uc11c \ud3c9\uade0 \ucd5c\ub300 30% \uc131\ub2a5 \ud5a5\uc0c1, iii) \ub300\uc0c1 \ub370\uc774\ud130\ub098 \ub77c\ubca8\uc744 \ubcf8 \uc801\uc774 \uc5c6\uc5b4\ub3c4 \uac15\uac74\ud55c \uad50\ucc28 \ub3c4\uba54\uc778 \uc77c\ubc18\ud654\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4. \uc800\ud76c \uacb0\uacfc\ub294 \ube60\ub974\uac8c \ud2b9\ud654\ud558\ub294\ub370 \uadf8\ub798\ub514\uc5b8\ud2b8 \uae30\ubc18 \uc801\uc751 \ub300\uc548\uc778 \ud504\ub86c\ud504\ud2b8-\uc870\uac74 \ub9e4\uac1c\ubcc0\uc218 \uc0dd\uc131\uc774 \ud0c0\ub2f9\ud568\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.", "title": "\ub4dc\ub798\uadf8 \uc564 \ub4dc\ub86d LLMs: \uc81c\ub85c \uc0f7 \ud504\ub86c\ud504\ud2b8-\ud22c-\uc6e8\uc774\uce20"}, "url": "https://huggingface.co/papers/2506.16406", "week": "2025-W26"}, {"abstract": "Universal photometric stereo (PS) aims to recover high-quality surface\nnormals from objects under arbitrary lighting conditions without relying on\nspecific illumination models. Despite recent advances such as SDM-UniPS and Uni\nMS-PS, two fundamental challenges persist: 1) the deep coupling between varying\nillumination and surface normal features, where ambiguity in observed intensity\nmakes it difficult to determine whether brightness variations stem from\nlighting changes or surface orientation; and 2) the preservation of\nhigh-frequency geometric details in complex surfaces, where intricate\ngeometries create self-shadowing, inter-reflections, and subtle normal\nvariations that conventional feature processing operations struggle to capture\naccurately.", "authors": ["Hong Li", "Houyuan Chen", "Chongjie Ye", "Zhaoxi Chen", "Bohan Li", "Shaocong Xu", "Xianda Guo", "Xuhui Liu", "Yikai Wang", "Baochang Zhang", "Satoshi Ikehata", "Boxin Shi", "Anyi Rao", "Hao Zhao"], "categories": ["Computer Vision", "Multimodal"], "date_collected": "2025-06-29T07:07:11.608690+09:00", "likes": 80, "published_date": "Jun 23", "summary": "1. \ubc94\uc6a9 \uad11\ub3c4 \uc2a4\ud14c\ub808\uc624\ub294 \uc784\uc758\uc758 \uc870\uba85 \uc870\uac74\uc5d0\uc11c \ubb3c\uccb4\uc758 \ud45c\uba74 \ubc95\uc120\uc744 \ubcf5\uc6d0\ud558\uae30 \uc704\ud55c \uae30\uc220\uc774\uba70, \ubc1d\uae30 \ubcc0\ud654\ub97c \ud1b5\ud574 \uc870\uba85 \ubcc0\ud654\uc640 \ud45c\uba74 \ubc29\ud5a5\uc758 \uad00\ub828\uc131\uc744 \ud30c\uc545\ud558\ub294 \uac83\uc774 \uc5b4\ub835\uc2b5\ub2c8\ub2e4.\n  \n2. \ubcf5\uc7a1\ud55c \ud45c\uba74\uc5d0\uc11c \uace0\uc8fc\ud30c \uae30\ud558\ud559\uc801 \uc138\ubd80 \uc815\ubcf4\ub97c \ubcf4\uc874\ud558\ub294 \uac83\uc740 \uc804\ud1b5\uc801\uc778 \ud2b9\uc9d5 \ucc98\ub9ac \uc791\uc5c5\uc774 \uc815\ud655\ud788 \ucea1\ucc98\ud558\uae30 \uc5b4\ub824\uc6b4 \ub3c4\uc804\uc785\ub2c8\ub2e4.\n  \n3. SDM-UniPS \ubc0f Uni MS-PS\uc640 \uac19\uc740 \ucd5c\uadfc \ubc1c\uc804\uc5d0\ub3c4 \ubd88\uad6c\ud558\uace0, \ubc94\uc6a9 \uad11\ub3c4 \uc2a4\ud14c\ub808\uc624 \uae30\uc220\uc740 \uc5b4\ub824\uc6b4 \uc140\ud504-\uc100\ub3c4\uc789, \uc0c1\ud638 \ubc18\uc0ac \ubc0f \uc138\ubc00\ud55c \ubc95\uc120 \ubcc0\ud654\ub97c \ucc98\ub9ac\ud558\ub294 \ub370 \uc5b4\ub824\uc6c0\uc744 \uacaa\uace0 \uc788\uc2b5\ub2c8\ub2e4.", "title": "Light of Normals: Unified Feature Representation for Universal\n  Photometric Stereo", "translation": {"abstract": "\ubc94\uc6a9 \uad11\ub3c4 \uc2a4\ud14c\ub808\uc624(PS)\ub294 \ud2b9\uc815 \uc870\uba85 \ubaa8\ub378\uc5d0 \uc758\uc874\ud558\uc9c0 \uc54a\uace0 \uc784\uc758\uc758 \uc870\uba85 \uc870\uac74\uc5d0\uc11c \ubb3c\uccb4\uc758 \ub192\uc740 \ud488\uc9c8\uc758 \ud45c\uba74 \ubc95\uc120\uc744 \ubcf5\uc6d0\ud558\ub294 \uac83\uc744 \ubaa9\ud45c\ub85c \ud569\ub2c8\ub2e4. \ucd5c\uadfc\uc758 SDM-UniPS\uc640 Uni MS-PS\uc640 \uac19\uc740 \ubc1c\uc804\uc5d0\ub3c4 \ubd88\uad6c\ud558\uace0, \ub450 \uac00\uc9c0 \uae30\ubcf8\uc801\uc778 \uacfc\uc81c\uac00 \uc874\uc7ac\ud569\ub2c8\ub2e4: 1) \uc870\uba85\uacfc \ud45c\uba74 \ubc95\uc120 \ud2b9\uc9d5 \uc0ac\uc774\uc758 \uae4a\uc740 \uacb0\ud569, \uad00\ucc30\ub41c \uac15\ub3c4\uc758 \ubaa8\ud638\uc131\uc73c\ub85c \uc778\ud574 \ubc1d\uae30 \ubcc0\ud654\uac00 \uc870\uba85 \ubcc0\ud654\uc5d0\uc11c \ube44\ub86f\ub41c \uac83\uc778\uc9c0 \ud45c\uba74 \ubc29\ud5a5\uc5d0\uc11c \uc628 \uac83\uc778\uc9c0 \ud310\ub2e8\ud558\uae30 \uc5b4\ub835\uace0; 2) \ubcf5\uc7a1\ud55c \ud45c\uba74\uc5d0\uc11c \uace0\uc8fc\ud30c \uae30\ud558\ud559\uc801 \uc138\ubd80 \uc815\ubcf4\ub97c \ubcf4\uc874\ud558\ub294 \uac83, \ubcf5\uc7a1\ud55c \uae30\ud558\ud559\uc774 \uc790\uccb4 \uadf8\ub9bc\uc790, \uc0c1\ud638 \ubc18\uc0ac \ubc0f \uc138\ubc00\ud55c \ubc95\uc120 \ubcc0\ud654\ub97c \ub9cc\ub4e4\uc5b4 \uae30\uc874\uc758 \ud2b9\uc9d5 \ucc98\ub9ac \uc791\uc5c5\uc774 \uc815\ud655\ud558\uac8c \ucea1\ucc98\ud558\uae30 \uc5b4\ub824\uc6b4 \uc0c1\ud669\uc785\ub2c8\ub2e4.", "title": "\ud45c\uba74 \ubc95\uc120\uc758 \ube5b: \ubc94\uc6a9 \uad11\ub3c4 \uc2a4\ud14c\ub808\uc624\ub97c \uc704\ud55c \ud1b5\ud569\uc801\uc778 \ud2b9\uc9d5 \ud45c\ud604"}, "url": "https://huggingface.co/papers/2506.18882", "week": "2025-W26"}, {"abstract": "Retrieval-Augmented Generation (RAG) systems have revolutionized information\nretrieval and question answering, but traditional text-based chunking methods\nstruggle with complex document structures, multi-page tables, embedded figures,\nand contextual dependencies across page boundaries. We present a novel\nmultimodal document chunking approach that leverages Large Multimodal Models\n(LMMs) to process PDF documents in batches while maintaining semantic coherence\nand structural integrity. Our method processes documents in configurable page\nbatches with cross-batch context preservation, enabling accurate handling of\ntables spanning multiple pages, embedded visual elements, and procedural\ncontent. We evaluate our approach on a curated dataset of PDF documents with\nmanually crafted queries, demonstrating improvements in chunk quality and\ndownstream RAG performance. Our vision-guided approach achieves better accuracy\ncompared to traditional vanilla RAG systems, with qualitative analysis showing\nsuperior preservation of document structure and semantic coherence.", "authors": ["Vishesh Tripathi", "Tanmay Odapally", "Indraneel Das", "Uday Allu", "Biddwan Ahmed"], "categories": ["Multimodal", "NLP", "Vision"], "date_collected": "2025-06-29T07:07:11.609828+09:00", "likes": 79, "published_date": "Jun 19", "summary": "1. RAG \uc2dc\uc2a4\ud15c\uc758 \ubb38\uc11c \uc774\ud574 \uae30\ub2a5 \ud5a5\uc0c1\uc744 \uc704\ud574 LMMs\ub97c \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \ub2e4\uc911 \ubaa8\ub2ec \ubb38\uc11c \uccad\ud0b9 \ubc29\uc2dd\uc744 \uc81c\uc548\ud568.\n2. \ucffc\ub9ac\uac00 \uc218\ub3d9\uc73c\ub85c \uc791\uc131\ub41c PDF \ubb38\uc11c \ub370\uc774\ud130\uc14b\uc5d0\uc11c \uc6b0\ub9ac\uc758 \ubc29\ubc95\uc744 \ud3c9\uac00\ud558\uc5ec \uccad\ud0b9 \ud488\uc9c8\uacfc RAG \uc131\ub2a5 \uac1c\uc120\uc744 \uc785\uc99d\ud568.\n3. \ube44\uc804 \uc548\ub0b4 \uc811\uadfc \ubc29\uc2dd\uc740 \uc804\ud1b5\uc801\uc778 RAG \uc2dc\uc2a4\ud15c\uc5d0 \ube44\ud574 \ub354 \ub098\uc740 \uc815\ud655\ub3c4\ub97c \ub2ec\uc131\ud558\uace0 \ubb38\uc11c \uad6c\uc870\uc640 \uc758\ubbf8\ub860\uc801 \uc77c\uad00\uc131\uc744 \ud6a8\uc728\uc801\uc73c\ub85c \ubcf4\uc874\ud568.", "title": "Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal\n  Document Understanding", "translation": {"abstract": "\uac80\uc0c9-\uc99d\uac15 \uc0dd\uc131 (RAG) \uc2dc\uc2a4\ud15c\uc740 \uc815\ubcf4 \uac80\uc0c9\uacfc \uc9c8\ubb38 \uc751\ub2f5\uc744 \ud601\uc2e0\uc801\uc73c\ub85c \ubc14\uafe8\uc9c0\ub9cc, \ubcf5\uc7a1\ud55c \ubb38\uc11c \uad6c\uc870, \ub2e4\uc911 \ud398\uc774\uc9c0 \ud45c, \ud3ec\ud568\ub41c \uadf8\ub9bc, \uadf8\ub9ac\uace0 \ud398\uc774\uc9c0 \uacbd\uacc4\ub97c \ub118\ub098\ub4dc\ub294 \ubb38\ub9e5\uc801 \uc758\uc874\uc131\uacfc \ud638\ud658\ub418\uc9c0 \uc54a\ub294 \uc804\ud1b5\uc801\uc778 \ud14d\uc2a4\ud2b8 \uae30\ubc18 \uccad\ud0b9 \ubc29\ubc95\ub4e4\uc774 \uc5b4\ub824\uc6c0\uc744 \uacaa\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc6b0\ub9ac\ub294 \ub300\ud615 \ub2e4\uc911 \ubaa8\ub2ec \ubaa8\ub378(LMMs)\uc744 \ud65c\uc6a9\ud55c \uc2e0\uaddc \ub2e4\uc911 \ubaa8\ub2ec \ubb38\uc11c \uccad\ud0b9 \uc811\uadfc \ubc29\uc2dd\uc744 \uc81c\uc548\ud558\uc5ec PDF \ubb38\uc11c\ub97c \uc77c\uad04 \ucc98\ub9ac\ud558\uba74\uc11c \uc758\ubbf8\ub860\uc801 \uc77c\uad00\uc131\uacfc \uad6c\uc870\uc801 \ud1b5\ud569\uc744 \uc720\uc9c0\ud569\ub2c8\ub2e4. \uc6b0\ub9ac\uc758 \ubc29\ubc95\uc740 \uad50\ucc28 \ubc30\uce58 \ubb38\ub9e5 \ubcf4\uc874\uc744 \uac00\ub2a5\ucf00 \ud558\uc5ec \uad6c\uc131 \uac00\ub2a5\ud55c \ud398\uc774\uc9c0 \ubc30\uce58\uc5d0\uc11c \ubb38\uc11c\ub97c \ucc98\ub9ac\ud558\uc5ec \uc5ec\ub7ec \ud398\uc774\uc9c0\uc5d0 \uac78\uce5c \ud45c, \ud3ec\ud568\ub41c \uc2dc\uac01\uc801 \uc694\uc18c, \uc808\ucc28\uc801 \ub0b4\uc6a9\uc744 \uc815\ud655\ud788 \ucc98\ub9ac\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc6b0\ub9ac\ub294 \uc218\ub3d9\uc73c\ub85c \uc791\uc131\ub41c \ucffc\ub9ac\ub97c \uc0ac\uc6a9\ud55c PDF \ubb38\uc11c\uc758 \uc120\ubcc4\ub41c \ub370\uc774\ud130\uc14b\uc5d0\uc11c \uc811\uadfc \ubc29\uc2dd\uc744 \ud3c9\uac00\ud558\uc5ec \uccad\ud0b9 \ud488\uc9c8\uacfc \ud558\ub958 RAG \uc131\ub2a5\uc758 \ud5a5\uc0c1\uc744 \ubcf4\uc5ec\uc90d\ub2c8\ub2e4. \uc6b0\ub9ac\uc758 \ube44\uc804 \uc548\ub0b4 \uc811\uadfc \ubc29\uc2dd\uc740 \uc804\ud1b5\uc801\uc778 \ubcf4\ud1b5 RAG \uc2dc\uc2a4\ud15c\uc5d0 \ube44\ud574 \ub354 \ub098\uc740 \uc815\ud655\ub3c4\ub97c \ub2ec\uc131\ud558\uba70, \uc9c8\uc801 \ubd84\uc11d\uc744 \ud1b5\ud574 \ubb38\uc11c \uad6c\uc870\uc640 \uc758\ubbf8\ub860\uc801 \uc77c\uad00\uc131\uc758 \ud0c1\uc6d4\ud55c \ubcf4\uc874\uc744 \uc785\uc99d\ud569\ub2c8\ub2e4.", "title": "\ube44\uc804 \uc548\ub0b4 \uccad\ud0b9\uc774 \ud544\uc694\ud55c \uc804\ubd80: \ub2e4\uc911 \ubaa8\ub2ec \ubb38\uc11c \uc774\ud574 \uae30\ub2a5\uc744 \uac15\ud654\ud558\ub294 RAG"}, "url": "https://huggingface.co/papers/2506.16035", "week": "2025-W26"}, {"abstract": "In this work, we introduce OmniGen2, a versatile and open-source generative\nmodel designed to provide a unified solution for diverse generation tasks,\nincluding text-to-image, image editing, and in-context generation. Unlike\nOmniGen v1, OmniGen2 features two distinct decoding pathways for text and image\nmodalities, utilizing unshared parameters and a decoupled image tokenizer. This\ndesign enables OmniGen2 to build upon existing multimodal understanding models\nwithout the need to re-adapt VAE inputs, thereby preserving the original text\ngeneration capabilities. To facilitate the training of OmniGen2, we developed\ncomprehensive data construction pipelines, encompassing image editing and\nin-context generation data. Additionally, we introduce a reflection mechanism\ntailored for image generation tasks and curate a dedicated reflection dataset\nbased on OmniGen2. Despite its relatively modest parameter size, OmniGen2\nachieves competitive results on multiple task benchmarks, including\ntext-to-image and image editing. To further evaluate in-context generation,\nalso referred to as subject-driven tasks, we introduce a new benchmark named\nOmniContext. OmniGen2 achieves state-of-the-art performance among open-source\nmodels in terms of consistency. We will release our models, training code,\ndatasets, and data construction pipeline to support future research in this\nfield. Project Page: https://vectorspacelab.github.io/OmniGen2; GitHub Link:\nhttps://github.com/VectorSpaceLab/OmniGen2", "authors": ["Chenyuan Wu", "Pengfei Zheng", "Ruiran Yan", "Shitao Xiao", "Xin Luo", "Yueze Wang", "Wanli Li", "Xiyan Jiang", "Yexin Liu", "Junjie Zhou", "Ze Liu", "Ziyi Xia", "Chaofan Li", "Haoge Deng", "Jiahao Wang", "Kun Luo", "Bo Zhang", "Defu Lian", "Xinlong Wang", "Zhongyuan Wang", "Tiejun Huang", "Zheng Liu"], "categories": ["Multimodal", "NLP"], "date_collected": "2025-06-29T07:07:11.611894+09:00", "likes": 67, "published_date": "Jun 23", "summary": "1. OmniGen2\ub294 \ud14d\uc2a4\ud2b8\uc640 \uc774\ubbf8\uc9c0 \ubaa8\ub4dc\uc5d0 \ub300\ud574 \uc11c\ub85c \ub2e4\ub978 \ub514\ucf54\ub529 \uacbd\ub85c\ub97c \uc0ac\uc6a9\ud558\uba70, \uae30\uc874 VAE \uc785\ub825\uc744 \ub2e4\uc2dc \uc801\uc751\ud560 \ud544\uc694 \uc5c6\uc774 \uc6d0\ubcf8 \ud14d\uc2a4\ud2b8 \uc0dd\uc131 \ub2a5\ub825\uc744 \ubcf4\uc874\ud558\ub294 \uae30\ub2a5\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n2. OmniGen2\ub294 \uc774\ubbf8\uc9c0 \ud3b8\uc9d1 \ubc0f \ubb38\ub9e5 \uc0dd\uc131 \ub370\uc774\ud130\ub97c \ud3ec\ud568\ud55c \ud3ec\uad04\uc801\uc778 \ub370\uc774\ud130 \uad6c\ucd95 \ud30c\uc774\ud504\ub77c\uc778\uc744 \uac1c\ubc1c\ud588\uc73c\uba70, \uc774\ubbf8\uc9c0 \uc0dd\uc131 \uc791\uc5c5\uc744 \uc704\ud55c reflection \uba54\ucee4\ub2c8\uc998\uacfc \uc804\uc6a9 reflection \ub370\uc774\ud130\uc14b\uc744 \uc18c\uac1c\ud558\uc600\uc2b5\ub2c8\ub2e4.\n3. OmniGen2\ub294 \ud14d\uc2a4\ud2b8\uc5d0\uc11c \uc774\ubbf8\uc9c0\ub85c, \uc774\ubbf8\uc9c0 \ud3b8\uc9d1\uae4c\uc9c0 \ub2e4\uc591\ud55c \uc791\uc5c5\uc5d0\uc11c \uacbd\uc7c1\ub825 \uc788\ub294 \uacb0\uacfc\ub97c \ub2ec\uc131\ud558\uba70, \uc0c8\ub85c\uc6b4 \ubca4\uce58\ub9c8\ud06c OmniContext\uc5d0\uc11c \ub6f0\uc5b4\ub09c \uc131\ub2a5\uc744 \ubcf4\uc785\ub2c8\ub2e4.", "title": "OmniGen2: Exploration to Advanced Multimodal Generation", "translation": {"abstract": "\ubcf8 \uc5f0\uad6c\uc5d0\uc11c\ub294 \ub2e4\uc591\ud55c \uc0dd\uc131 \uc791\uc5c5\uc744 \uc704\ud55c \ud1b5\ud569 \uc194\ub8e8\uc158\uc744 \uc81c\uacf5\ud558\uae30 \uc704\ud574 \uc124\uacc4\ub41c \ub2e4\uc7ac\ub2e4\ub2a5\ud558\uace0 \uc624\ud508 \uc18c\uc2a4 \uc0dd\uc131 \ubaa8\ub378\uc778 OmniGen2\ub97c \uc18c\uac1c\ud569\ub2c8\ub2e4. \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0, \uc774\ubbf8\uc9c0 \ud3b8\uc9d1, \ubb38\ub9e5 \uc0dd\uc131\uc744 \ud3ec\ud568\ud558\ub294 \ub2e4\uc591\ud55c \uc0dd\uc131 \uacfc\uc81c\uc5d0 \ub300\ud55c \ud1b5\ud569\uc801\uc778 \uc194\ub8e8\uc158\uc744 \uc81c\uacf5\ud558\uae30 \uc704\ud55c \ub450 \uac1c\uc758 \ub514\ucf54\ub529 \uacbd\ub85c\ub97c \uac16\ucd98 OmniGen2\ub294 \uae30\uc874\uc758 \uba40\ud2f0\ubaa8\ub2ec \uc774\ud574 \ubaa8\ub378\uc744 \uae30\ubc18\uc73c\ub85c \ud558\uc5ec \ud14d\uc2a4\ud2b8 \uc0dd\uc131 \ub2a5\ub825\uc744 \ubcf4\uc874\ud558\ub294 \uae30\ub2a5\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.", "title": "OmniGen2: \uace0\uae09 \uba40\ud2f0\ubaa8\ub2ec \uc0dd\uc131\uc744 \uc704\ud55c \ud0d0\uc0c9"}, "url": "https://huggingface.co/papers/2506.18871", "week": "2025-W26"}, {"abstract": "Recent advances in multimodal generative models have unlocked photorealistic,\ninstruction-aligned image generation, yet leading systems like GPT-4o-Image\nremain proprietary and inaccessible. To democratize these capabilities, we\npresent ShareGPT-4o-Image, the first dataset comprising 45K text-to-image and\n46K text-and-image-to-image data, all synthesized using GPT-4o\u0027s image\ngeneration capabilities for distilling its advanced image generation abilities.\nLeveraging this dataset, we develop Janus-4o, a multimodal large language model\ncapable of both text-to-image and text-and-image-to-image generation. Janus-4o\nnot only significantly improves text-to-image generation over its predecessor,\nJanus-Pro, but also newly supports text-and-image-to-image generation. Notably,\nit achieves impressive performance in text-and-image-to-image generation from\nscratch, using only 91K synthetic samples and 6 hours of training on an 8\nA800-GPU machine. We hope the release of ShareGPT-4o-Image and Janus-4o will\nfoster open research in photorealistic, instruction-aligned image generation.", "authors": ["Junying Chen", "Zhenyang Cai", "Pengcheng Chen", "Shunian Chen", "Ke Ji", "Xidong Wang", "Yunjin Yang", "Benyou Wang"], "categories": ["Multimodal", "LLM", "Computer Vision"], "date_collected": "2025-06-29T07:07:11.613198+09:00", "likes": 59, "published_date": "Jun 22", "summary": "1. ShareGPT-4o-Image\ub294 GPT-4o\uc758 \uc774\ubbf8\uc9c0 \uc0dd\uc131 \ub2a5\ub825\uc744 \ub2f4\uc740 \ub370\uc774\ud130\uc14b\uc73c\ub85c, Janus-4o\uc640 \uac19\uc740 \ub2e4\uc911 \ubaa8\ub2ec \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378\uc744 \ubc1c\uc804\uc2dc\ud0b4.\n2. Janus-4o\ub294 \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0 \uc0dd\uc131\uc5d0 \ud0c1\uc6d4\ud55c \uc131\uacfc\ub97c \ubcf4\uc774\uba70, \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0-\uc774\ubbf8\uc9c0 \uc0dd\uc131\uc744 \uc9c0\uc6d0\ud558\uba70 \ud569\uc131 \uc0d8\ud50c\uacfc \uc9e7\uc740 \uad50\uc721 \uc2dc\uac04\uc73c\ub85c \ub192\uc740 \uc131\ub2a5\uc744 \ub2ec\uc131\ud568.\n3. ShareGPT-4o-Image\uc640 Janus-4o\uc758 \ubc1c\ud45c\uac00 \uc0ac\uc2e4\uc801\uc774\uace0 \uc870\uc728\ub41c \uc774\ubbf8\uc9c0 \uc0dd\uc131\uc5d0 \ub300\ud55c \uacf5\uac1c \uc5f0\uad6c\ub97c \ucd09\uc9c4\ud560 \uac83\uc73c\ub85c \uae30\ub300\ub428.", "title": "ShareGPT-4o-Image: Aligning Multimodal Models with GPT-4o-Level Image\n  Generation", "translation": {"abstract": "\ucd5c\uadfc \ub2e4\uc911 \ubaa8\ub2ec \uc0dd\uc131 \ubaa8\ub378\uc758 \ubc1c\uc804\uc73c\ub85c \uc0ac\uc2e4\uc801\uc778 \uc774\ubbf8\uc9c0 \uc0dd\uc131\uc774 \uac00\ub2a5\ud574\uc84c\uc9c0\ub9cc, GPT-4o-Image\uc640 \uac19\uc740 \uc120\ub3c4\uc801\uc778 \uc2dc\uc2a4\ud15c\uc740 \uc0ac\uc720\uc801\uc774\uace0 \uc811\uadfc\ud558\uae30 \uc5b4\ub835\ub2e4. \uc774 \ub2a5\ub825\uc744 \ub354 \ub9ce\uc740 \uc0ac\ub78c\ub4e4\uc5d0\uac8c \uc54c\ub9ac\uae30 \uc704\ud574, \uc6b0\ub9ac\ub294 GPT-4o\uc758 \uc774\ubbf8\uc9c0 \uc0dd\uc131 \ub2a5\ub825\uc744 \uc694\uc57d\ud558\uae30 \uc704\ud574 45,000\uac1c\uc758 \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0 \ubc0f 46,000\uac1c\uc758 \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0 \ub370\uc774\ud130\ub97c \ud3ec\ud568\ud55c \uccab \ubc88\uc9f8 \ub370\uc774\ud130\uc14b\uc778 ShareGPT-4o-Image\ub97c \uc81c\uc2dc\ud55c\ub2e4. \uc774 \ub370\uc774\ud130\uc14b\uc744 \ud65c\uc6a9\ud558\uc5ec, \uc6b0\ub9ac\ub294 \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0 \ubc0f \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0-\uc774\ubbf8\uc9c0 \uc0dd\uc131\uc774 \uac00\ub2a5\ud55c \ub2e4\uc911 \ubaa8\ub2ec \ub300\ud615 \uc5b8\uc5b4 \ubaa8\ub378\uc778 Janus-4o\ub97c \uac1c\ubc1c\ud55c\ub2e4. Janus-4o\ub294 \uc790\uc2e0\uc758 \uc774\uc804 \ubc84\uc804 Janus-Pro\ubcf4\ub2e4 \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0 \uc0dd\uc131\uc744 \ud06c\uac8c \uac1c\uc120\ud560 \ubfd0\ub9cc \uc544\ub2c8\ub77c \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0-\uc774\ubbf8\uc9c0 \uc0dd\uc131\ub3c4 \uc9c0\uc6d0\ud55c\ub2e4. \ud2b9\ud788, 91,000\uac1c\uc758 \ud569\uc131 \uc0d8\ud50c\uacfc 8 A800-GPU \uae30\uacc4\uc5d0\uc11c 6\uc2dc\uac04\uc758 \uad50\uc721\ub9cc\uc73c\ub85c \ucc9c\uc7ac\uc801\uc778 \uc131\ub2a5\uc758 \ud14d\uc2a4\ud2b8-\uc774\ubbf8\uc9c0-\uc774\ubbf8\uc9c0 \uc0dd\uc131\uc744 \uc774\ub8ec\ub2e4. ShareGPT-4o-Image\uc640 Janus-4o\uc758 \uacf5\uac1c\ub97c \ud1b5\ud574 \uc0ac\uc2e4\uc801\uc774\uace0 \uc870\uc728\ub41c \uc774\ubbf8\uc9c0 \uc0dd\uc131\uc5d0 \ub300\ud55c \uc5f0\uad6c\ub97c \ucd09\uc9c4\ud560 \uac83\uc73c\ub85c \uae30\ub300\ud55c\ub2e4.", "title": "\ub2e4\uc911 \ubaa8\ub2ec \ubaa8\ub378\uc744 GPT-4o \uc218\uc900\uc758 \uc774\ubbf8\uc9c0 \uc0dd\uc131\uacfc \uc870\uc728\ud558\ub294 ShareGPT-4o-Image"}, "url": "https://huggingface.co/papers/2506.18095", "week": "2025-W26"}, {"abstract": "Photo retouching has become integral to contemporary visual storytelling,\nenabling users to capture aesthetics and express creativity. While professional\ntools such as Adobe Lightroom offer powerful capabilities, they demand\nsubstantial expertise and manual effort. In contrast, existing AI-based\nsolutions provide automation but often suffer from limited adjustability and\npoor generalization, failing to meet diverse and personalized editing needs. To\nbridge this gap, we introduce JarvisArt, a multi-modal large language model\n(MLLM)-driven agent that understands user intent, mimics the reasoning process\nof professional artists, and intelligently coordinates over 200 retouching\ntools within Lightroom. JarvisArt undergoes a two-stage training process: an\ninitial Chain-of-Thought supervised fine-tuning to establish basic reasoning\nand tool-use skills, followed by Group Relative Policy Optimization for\nRetouching (GRPO-R) to further enhance its decision-making and tool\nproficiency. We also propose the Agent-to-Lightroom Protocol to facilitate\nseamless integration with Lightroom. To evaluate performance, we develop\nMMArt-Bench, a novel benchmark constructed from real-world user edits.\nJarvisArt demonstrates user-friendly interaction, superior generalization, and\nfine-grained control over both global and local adjustments, paving a new\navenue for intelligent photo retouching. Notably, it outperforms GPT-4o with a\n60% improvement in average pixel-level metrics on MMArt-Bench for content\nfidelity, while maintaining comparable instruction-following capabilities.\nProject Page: https://jarvisart.vercel.app/.", "authors": ["Yunlong Lin", "Zixu Lin", "Kunjie Lin", "Jinbin Bai", "Panwang Pan", "Chenxin Li", "Haoyu Chen", "Zhongdao Wang", "Xinghao Ding", "Wenbo Li", "Shuicheng Yan"], "categories": ["MLLM (\ub300\uaddc\ubaa8 \uc5b8\uc5b4 \ubaa8\ub378)", "Vision (\ucef4\ud4e8\ud130 \ube44\uc804)"], "date_collected": "2025-06-29T07:07:11.614596+09:00", "likes": 58, "published_date": "Jun 21", "summary": "1. \uc790\ube44\uc2a4\uc544\ud2b8\ub294 \uba40\ud2f0\ubaa8\ub2ec \ub300\uaddc\ubaa8 \uc5b8\uc5b4 \ubaa8\ub378(MLLM)\uc744 \ud65c\uc6a9\ud558\uc5ec \uc0ac\uc6a9\uc790\uc758 \uc758\ub3c4\ub97c \uc774\ud574\ud558\uace0 \uc804\ubb38 \uc608\uc220\uac00\uc758 \ucd94\ub860 \uacfc\uc815\uc744 \ubaa8\ubc29\ud558\uc5ec \uc9c0\ub2a5\uc801\uc73c\ub85c \ubcf4\uc815 \ub3c4\uad6c\ub97c \uc870\uc815\ud569\ub2c8\ub2e4.\n2. \uc790\ube44\uc2a4\uc544\ud2b8\ub294 Chain-of-Thought \uac10\ub3c5\ub41c \ubbf8\uc138 \uc870\uc815\uacfc Retouching\uc744 \uc704\ud55c Group Relative Policy Optimization (GRPO-R) \ub450 \ub2e8\uacc4\uc758 \uad50\uc721 \uacfc\uc815\uc744 \uac70\uccd0 \uc0ac\uc6a9\uc790\uc5d0\uac8c \uc6b0\uc218\ud55c \uc77c\ubc18\ud654 \ub2a5\ub825\uacfc \ud3b8\uc9d1 \uc870\uc808 \uae30\ub2a5\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.\n3. MMArt-Bench\ub97c \ud1b5\ud55c \uc131\ub2a5 \ud3c9\uac00\uc5d0\uc11c \uc790\ube44\uc2a4\uc544\ud2b8\ub294 \uc0ac\uc6a9\uc790 \uce5c\ud654\uc801 \uc0c1\ud638\uc791\uc6a9\uacfc GPT-4o \ub300\ube44 60% \ud5a5\uc0c1\ub41c \ud3c9\uade0 \ud53d\uc140 \uc218\uc900 \uc9c0\ud45c\ub97c \ubcf4\uc5ec\uc8fc\uba70, \uc9c0\ub2a5\uc801\uc778 \uc0ac\uc9c4 \ubcf4\uc815\uc744 \uc704\ud55c \uc0c8\ub85c\uc6b4 \uac00\ub2a5\uc131\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4.", "title": "JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo\n  Retouching Agent", "translation": {"abstract": "\uc0ac\uc9c4 \ubcf4\uc815\uc740 \ud604\ub300\uc801 \uc2dc\uac01\uc801 \uc2a4\ud1a0\ub9ac\ud154\ub9c1\uc5d0 \uc911\uc694\ud55c \uc694\uc18c\ub85c \uc790\ub9ac \uc7a1\uc558\uc73c\uba70 \uc0ac\uc6a9\uc790\ub4e4\uc774 \ubbf8\ud559\uc744 \ub2f4\uc544 \ucc3d\uc758\uc131\uc744 \ud45c\ud604\ud560 \uc218 \uc788\ub3c4\ub85d \ud569\ub2c8\ub2e4. Adobe Lightroom\uacfc \uac19\uc740 \ud504\ub85c\ud398\uc154\ub110\ud55c \ub3c4\uad6c\ub4e4\uc740 \uac15\ub825\ud55c \uae30\ub2a5\uc744 \uc81c\uacf5\ud558\uc9c0\ub9cc \uc0c1\ub2f9\ud55c \uc219\ub828\uacfc \uc218\ub3d9 \ub178\ub825\uc744 \uc694\uad6c\ud569\ub2c8\ub2e4. \uae30\uc874\uc758 AI \uc194\ub8e8\uc158\ub4e4\uc740 \uc790\ub3d9\ud654\ub97c \uc81c\uacf5\ud558\uc9c0\ub9cc \uc885\uc885 \uc81c\ud55c\ub41c \uc870\uc815 \ub2a5\ub825\uacfc \ud48d\ubd80\ud55c \uc77c\ubc18\ud654\ub97c \uc783\uc5b4 \ub2e4\uc591\ud558\uace0 \uac1c\uc778\ud654\ub41c \ud3b8\uc9d1 \uc694\uad6c\ub97c \ucda9\uc871\uc2dc\ud0a4\uc9c0 \ubabb\ud569\ub2c8\ub2e4. \uc774 \uac04\uadf9\uc744 \uc881\ud788\uae30 \uc704\ud574, \uc0ac\uc6a9\uc790 \uc758\ub3c4\ub97c \uc774\ud574\ud558\uace0 \uc804\ubb38 \uc608\uc220\uac00\uc758 \ucd94\ub860 \uacfc\uc815\uc744 \ud749\ub0b4\ub0b4\uba70 Lightroom \ub0b4\uc5d0\uc11c 200\uc5ec \uac00\uc9c0 \uc774\uc0c1\uc758 \ubcf4\uc815 \ub3c4\uad6c\ub97c \uc9c0\ub2a5\uc801\uc73c\ub85c \uc870\uc815\ud558\ub294 \uba40\ud2f0\ubaa8\ub2ec \ub300\uaddc\ubaa8 \uc5b8\uc5b4 \ubaa8\ub378(MLLM)\uc744 \ud65c\uc6a9\ud55c \uc790\ube44\uc2a4\uc544\ud2b8\ub97c \uc18c\uac1c\ud569\ub2c8\ub2e4. \uc790\ube44\uc2a4\uc544\ud2b8\ub294 \uc0ac\uc6a9\uc790\uc758 \uae30\ubcf8\uc801\uc778 \ucd94\ub860 \ubc0f \ub3c4\uad6c \uc0ac\uc6a9 \uae30\uc220\uc744 \ud655\ub9bd\ud558\uae30 \uc704\ud55c \ucd08\uae30 Chain-of-Thought \uac10\ub3c5\ub41c \ubbf8\uc138 \uc870\uc815\uc744 \uac70\uce5c \ud6c4, \uacb0\uc815\ub825\uacfc \ub3c4\uad6c \uc219\ub828\ub3c4\ub97c \ub354 \ud5a5\uc0c1\uc2dc\ud0a4\uae30 \uc704\ud55c Retouching\uc744 \uc704\ud55c Group Relative Policy Optimization (GRPO-R)\ub97c \uc9c4\ud589\ud569\ub2c8\ub2e4. \ub610\ud55c \uc790\ube44\uc2a4\uc544\ud2b8\ub97c Lightroom\uacfc\uc758 \uc6d0\ud65c\ud55c \ud1b5\ud569\uc744 \uc704\ud55c \uc5d0\uc774\uc804\ud2b8-\ud22c-\ub77c\uc774\ud2b8\ub8f8 \ud504\ub85c\ud1a0\ucf5c\uc744 \uc81c\uc548\ud569\ub2c8\ub2e4. \uc131\ub2a5 \ud3c9\uac00\ub97c \uc704\ud574 \uc2e4\uc81c \uc0ac\uc6a9\uc790 \ud3b8\uc9d1\uc73c\ub85c \uad6c\uc131\ub41c \uc0c8\ub85c\uc6b4 \uae30\uc900\uc778 MMArt-Bench\ub97c \uac1c\ubc1c\ud588\uc2b5\ub2c8\ub2e4. \uc790\ube44\uc2a4\uc544\ud2b8\ub294 \uc0ac\uc6a9\uc790 \uce5c\ud654\uc801 \uc0c1\ud638\uc791\uc6a9, \uc6b0\uc218\ud55c \uc77c\ubc18\ud654 \ub2a5\ub825, \uadf8\ub9ac\uace0 \uc804\uc5ed\uc801 \ubc0f \uc9c0\uc5ed\uc801 \uc870\uc808\uc5d0 \ub300\ud55c \uc138\ubc00\ud55c \ud1b5\uc81c\ub97c \ubcf4\uc5ec\uc90c\uc73c\ub85c\uc368 \uc9c0\ub2a5\uc801\uc778 \uc0ac\uc9c4 \ubcf4\uc815\uc744 \uc704\ud55c \uc0c8\ub85c\uc6b4 \uae38\uc744 \uc5f4\uc5b4\uac11\ub2c8\ub2e4. \ud2b9\ud788, \ucee8\ud150\uce20 \ucda9\uc2e4\ub3c4\uc5d0 \ub300\ud55c MMArt-Bench\uc758 \ud3c9\uade0 \ud53d\uc140 \uc218\uc900 \uc9c0\ud45c\uc5d0\uc11c GPT-4o\ub97c 60% \uac1c\uc120\ud558\uc5ec \uc77c\uce58 \uc9c0\uc2dc \ub2a5\ub825\uc740 \uc720\uc9c0\ud558\uba74\uc11c \uc6b0\uc218\ud55c \uc131\uacfc\ub97c \uac70\ub450\uc5c8\uc2b5\ub2c8\ub2e4.", "title": "\uc790\ube44\uc2a4\uc544\ud2b8: \uc9c0\ub2a5\uc801\uc778 \uc0ac\uc9c4 \ubcf4\uc815 \uc5d0\uc774\uc804\ud2b8\ub97c \ud1b5\ud574 \uc778\uac04\uc758 \uc608\uc220\uc801 \ucc3d\uc758\ub825 \ud574\ubc29\ud558\uae30"}, "url": "https://huggingface.co/papers/2506.17612", "week": "2025-W26"}, {"abstract": "We introduce Matrix-Game, an interactive world foundation model for\ncontrollable game world generation. Matrix-Game is trained using a two-stage\npipeline that first performs large-scale unlabeled pretraining for environment\nunderstanding, followed by action-labeled training for interactive video\ngeneration. To support this, we curate Matrix-Game-MC, a comprehensive\nMinecraft dataset comprising over 2,700 hours of unlabeled gameplay video clips\nand over 1,000 hours of high-quality labeled clips with fine-grained keyboard\nand mouse action annotations. Our model adopts a controllable image-to-world\ngeneration paradigm, conditioned on a reference image, motion context, and user\nactions. With over 17 billion parameters, Matrix-Game enables precise control\nover character actions and camera movements, while maintaining high visual\nquality and temporal coherence. To evaluate performance, we develop GameWorld\nScore, a unified benchmark measuring visual quality, temporal quality, action\ncontrollability, and physical rule understanding for Minecraft world\ngeneration. Extensive experiments show that Matrix-Game consistently\noutperforms prior open-source Minecraft world models (including Oasis and\nMineWorld) across all metrics, with particularly strong gains in\ncontrollability and physical consistency. Double-blind human evaluations\nfurther confirm the superiority of Matrix-Game, highlighting its ability to\ngenerate perceptually realistic and precisely controllable videos across\ndiverse game scenarios. To facilitate future research on interactive\nimage-to-world generation, we will open-source the Matrix-Game model weights\nand the GameWorld Score benchmark at https://github.com/SkyworkAI/Matrix-Game.", "authors": ["Yifan Zhang", "Chunli Peng", "Boyang Wang", "Puyi Wang", "Qingcheng Zhu", "Fei Kang", "Biao Jiang", "Zedong Gao", "Eric Li", "Yang Liu", "Yahui Zhou"], "categories": ["\uac15\ud654\ud559\uc2b5", "\ucef4\ud4e8\ud130 \ube44\uc804"], "date_collected": "2025-06-29T07:07:11.616009+09:00", "likes": 55, "published_date": "Jun 23", "summary": "1. Matrix-Game\uc740 \ub300\uaddc\ubaa8 Minecraft \ub370\uc774\ud130\uc14b\uc744 \ud65c\uc6a9\ud558\uc5ec, \uc2dc\uac01\uc801 \ud488\uc9c8, \uc2dc\uac04\uc801 \ud488\uc9c8, \ud589\ub3d9 \uc81c\uc5b4\uc131, \ubb3c\ub9ac\uc801 \uaddc\uce59 \uc774\ud574\ub97c \uce21\uc815\ud558\ub294 \ud1b5\ud569\ub41c \ud3c9\uac00 \uc9c0\ud45c\uc778 GameWorld Score\ub97c \uac1c\ubc1c\ud588\uc73c\uba70, \uc5ec\ub7ec \uc2e4\ud5d8\uc5d0\uc11c \uc774\uc804 Minecraft \ubaa8\ub378(Oasis, MineWorld \ub4f1)\uc744 \ub2a5\uac00\ud558\ub294 \uacb0\uacfc\ub97c \ubcf4\uc5ec\uc90d\ub2c8\ub2e4.\n2. \ubaa8\ub378\uc740 \uc21c\uac04 \uc774\ubbf8\uc9c0, \uc6c0\uc9c1\uc784 \ub9e5\ub77d, \uc0ac\uc6a9\uc790 \ud589\ub3d9\uc5d0 \uc758\ud574 \uc870\uac74\ud654\ub418\ub294 \uc870\uc808 \uac00\ub2a5\ud55c \uc774\ubbf8\uc9c0-\uc138\uacc4 \uc0dd\uc131 \ud328\ub7ec\ub2e4\uc784\uc744 \ucc44\ud0dd\ud558\uc5ec, \ub2e4\uc591\ud55c \uac8c\uc784 \uc2dc\ub098\ub9ac\uc624\uc5d0\uc11c \ud604\uc2e4\uc801\uc774\uace0 \uc815\ud655\ud558\uac8c \uc870\uc808 \uac00\ub2a5\ud55c \ube44\ub514\uc624 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac15\uc870\ud569\ub2c8\ub2e4.\n3. Matrix-Game\uc740 17\uc5b5 \uac1c\uc758 \ud30c\ub77c\ubbf8\ud130\ub85c \uad6c\uc131\ub418\uc5b4 \uc788\uc73c\uba70, \ubbf8\ub798 \uc5f0\uad6c\ub97c \uc704\ud574 \ud574\ub2f9 \ubaa8\ub378 \uac00\uc911\uce58\uc640 GameWorld Score \ubca4\uce58\ub9c8\ud06c\ub97c \uacf5\uac1c\ud560 \uacc4\ud68d\uc785\ub2c8\ub2e4.", "title": "Matrix-Game: Interactive World Foundation Model", "translation": {"abstract": "Matrix-Game\uc740 \uc870\uc808 \uac00\ub2a5\ud55c \uac8c\uc784 \uc138\uacc4 \uc0dd\uc131\uc744 \uc704\ud55c \uc0c1\ud638\uc791\uc6a9\ud558\ub294 \uc138\uacc4 \uae30\ucd08 \ubaa8\ub378\ub85c, \ub300\uaddc\ubaa8 \ubbf8\ud0c0\uae43 \ub370\uc774\ud130 \uc0ac\uc804 \ud6c8\ub828\uc744 \uac70\uce5c \ud6c4 \uc0c1\ud638\uc791\uc6a9 \ube44\ub514\uc624 \uc0dd\uc131\uc744 \uc704\ud55c \ud589\ub3d9 \ub808\uc774\ube14 \ub370\uc774\ud130\ub85c \ud559\uc2b5\ub429\ub2c8\ub2e4. Matrix-Game\uc740 \uba85\ud655\ud55c \uce90\ub9ad\ud130 \ud589\ub3d9 \ubc0f \uce74\uba54\ub77c \uc774\ub3d9 \uc81c\uc5b4\ub97c \uc81c\uacf5\ud558\uba70 \uc2dc\uac01\uc801 \ud488\uc9c8\uacfc \uc2dc\uac04\uc801 \uc77c\uad00\uc131\uc744 \uc720\uc9c0\ud569\ub2c8\ub2e4.", "title": "\uc0c1\ud638\uc791\uc6a9\ud558\ub294 \uc138\uacc4 \uae30\ucd08 \ubaa8\ub378: Matrix-Game"}, "url": "https://huggingface.co/papers/2506.18701", "week": "2025-W26"}, {"abstract": "In visual generation, the quadratic complexity of attention mechanisms\nresults in high memory and computational costs, especially for longer token\nsequences required in high-resolution image or multi-frame video generation. To\naddress this, prior research has explored techniques such as sparsification and\nquantization. However, these techniques face significant challenges under low\ndensity and reduced bitwidths. Through systematic analysis, we identify that\nthe core difficulty stems from the dispersed and irregular characteristics of\nvisual attention patterns. Therefore, instead of introducing specialized\nsparsification and quantization design to accommodate such patterns, we propose\nan alternative strategy: *reorganizing* the attention pattern to alleviate the\nchallenges. Inspired by the local aggregation nature of visual feature\nextraction, we design a novel **Pattern-Aware token ReOrdering (PARO)**\ntechnique, which unifies the diverse attention patterns into a\nhardware-friendly block-wise pattern. This unification substantially simplifies\nand enhances both sparsification and quantization. We evaluate the\nperformance-efficiency trade-offs of various design choices and finalize a\nmethodology tailored for the unified pattern. Our approach, **PAROAttention**,\nachieves video and image generation with lossless metrics, and nearly identical\nresults from full-precision (FP) baselines, while operating at notably lower\ndensity (~20%-30%) and bitwidth (**INT8/INT4**), achieving a **1.9x** to\n**2.7x** end-to-end latency speedup.", "authors": ["Tianchen Zhao", "Ke Hong", "Xinhao Yang", "Xuefeng Xiao", "Huixia Li", "Feng Ling", "Ruiqi Xie", "Siqi Chen", "Hongyu Zhu", "Yichong Zhang", "Yu Wang"], "categories": ["Computer Vision", "Optimization", "AI (\uc778\uacf5\uc9c0\ub2a5)"], "date_collected": "2025-06-29T07:07:11.617432+09:00", "likes": 55, "published_date": "Jun 19", "summary": "1. \uc2dc\uac01 \uc0dd\uc131\uc5d0\uc11c \ubc1c\uc0dd\ud558\ub294 \ub192\uc740 \uba54\ubaa8\ub9ac \ubc0f \uacc4\uc0b0 \ube44\uc6a9\uc744 \uc644\ud654\ud558\uae30 \uc704\ud574 \uc8fc\uc758 \ud328\ud134\uc744 \uc7ac\ubc30\uce58\ud558\ub294 \"PAROAttention\" \ubaa8\ub378\uc774 \uc81c\uc548\ub418\uc5c8\uc2b5\ub2c8\ub2e4.\n2. \"PAROAttention\" \ubaa8\ub378\uc740 \uc2dc\uac01\uc801 \uc8fc\uc758 \ud328\ud134\uc744 \ud558\ub4dc\uc6e8\uc5b4 \uce5c\ud654\uc801\uc778 \ube14\ub85d \ubc29\uc2dd\uc73c\ub85c \ud1b5\ud569\ud558\uc5ec \ud76c\uc18c\ud654\uc640 \uc591\uc790\ud654\ub97c \ub2e8\uc21c\ud654\ud558\uace0 \uac15\ud654\ud569\ub2c8\ub2e4.\n3. \uc774 \ubaa8\ub378\uc740 \uc190\uc2e4 \uba54\ud2b8\ub9ad\uc744 \uac16\ub294 \ube44\ub514\uc624 \ubc0f \uc774\ubbf8\uc9c0 \uc0dd\uc131\uc744 \uac00\ub2a5\ud558\uac8c \ud558\uba70, \ub0ae\uc740 \ubc00\ub3c4\uc640 \ube44\ud2b8\ud3ed\uc5d0\uc11c \ube60\ub978 \uc791\ub3d9\uc744 \ubcf4\uc7a5\ud558\uc5ec \uc815\ubc00 \ubca0\uc774\uc2a4\ub77c\uc778\uacfc \ube44\uc2b7\ud55c \uacb0\uacfc\ub97c \ub2ec\uc131\ud569\ub2c8\ub2e4.", "title": "PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and\n  Quantized Attention in Visual Generation Models", "translation": {"abstract": "\uc2dc\uac01 \uc0dd\uc131\uc5d0\uc11c, \uc8fc\uc694 \uba54\ucee4\ub2c8\uc998\uc758 \uc774\ucc28 \ubcf5\uc7a1\uc131\uc740 \uace0\ud574\uc0c1\ub3c4 \uc774\ubbf8\uc9c0 \ub610\ub294 \ub2e4\uc911 \ud504\ub808\uc784 \ube44\ub514\uc624 \uc0dd\uc131\uc5d0 \ud544\uc694\ud55c \uae34 \ud1a0\ud070 \uc2dc\ud000\uc2a4\uc5d0 \ub300\ud574 \ub192\uc740 \uba54\ubaa8\ub9ac \ubc0f \uacc4\uc0b0 \ube44\uc6a9\uc73c\ub85c \uc774\uc5b4\uc9d1\ub2c8\ub2e4. \uc774\ub97c \ud574\uacb0\ud558\uae30 \uc704\ud574, \uc774\uc804 \uc5f0\uad6c\uc5d0\uc11c\ub294 \ud76c\uc18c\ud654(sparsification)\uc640 \uc591\uc790\ud654(quantization) \uae30\uc220\uc744 \ud0d0\uad6c\ud574\uc654\uc2b5\ub2c8\ub2e4. \uadf8\ub7ec\ub098 \uc774\ub7ec\ud55c \uae30\uc220\uc740 \ub0ae\uc740 \ubc00\ub3c4\uc640 \ucd95\uc18c\ub41c \ube44\ud2b8\ud3ed\uc5d0\uc11c \uc911\uc694\ud55c \ub3c4\uc804\uc5d0 \uc9c1\uba74\ud569\ub2c8\ub2e4. \uccb4\uacc4\uc801\uc778 \ubd84\uc11d\uc744 \ud1b5\ud574 \uc6b0\ub9ac\ub294 \uc2dc\uac01 \uc8fc\uc758 \ud328\ud134\uc758 \ubd84\uc0b0\ub418\uace0 \ubd88\uaddc\uce59\ud55c \ud2b9\uc131\uc774 \ud575\uc2ec \uc5b4\ub824\uc6c0\uc784\uc744 \ud655\uc778\ud569\ub2c8\ub2e4. \uc774\uc5d0 \uc6b0\ub9ac\ub294 \uc774\ub7ec\ud55c \ud328\ud134\uc744 \uc218\uc6a9\ud558\uae30 \uc704\ud574 \ud2b9\ubcc4\ud55c \ud76c\uc18c\ud654\uc640 \uc591\uc790\ud654 \uc124\uacc4\ub97c \ub3c4\uc785\ud558\ub294 \ub300\uc2e0, \ub3c4\uc804\uc744 \uc644\ud654\ud558\uae30 \uc704\ud574 \uc8fc\uc758 \ud328\ud134\uc744 \uc7ac\uc870\uc815\ud558\ub294 \ub300\uc548 \uc804\ub7b5\uc744 \uc81c\uc548\ud569\ub2c8\ub2e4. \uc2dc\uac01\uc801 \ud2b9\uc9d5 \ucd94\ucd9c\uc758 \uc9c0\uc5ed \uc9d1\uacc4 \ud2b9\uc131\uc5d0\uc11c \uc601\uac10\uc744 \ubc1b\uc544, \uc6b0\ub9ac\ub294 \ub2e4\uc591\ud55c \uc8fc\uc758 \ud328\ud134\uc744 \ud558\ub4dc\uc6e8\uc5b4 \uce5c\ud654\uc801\uc778 \ube14\ub85d \ubc29\uc2dd \ud328\ud134\uc73c\ub85c \ud1b5\ud569\ud558\ub294 \ud601\uc2e0\uc801\uc778 \"\ud328\ud134 \uc778\uc2dd \ud1a0\ud070 \uc7ac\ubc30\uce58 (PARO)\" \uae30\uc220\uc744 \uc124\uacc4\ud588\uc2b5\ub2c8\ub2e4. \uc774 \ud1b5\ud569\uc740 \ud76c\uc18c\ud654\uc640 \uc591\uc790\ud654\ub97c \ud06c\uac8c \ub2e8\uc21c\ud654\ud558\uace0 \uac15\ud654\ud569\ub2c8\ub2e4. \uc6b0\ub9ac\ub294 \ub2e4\uc591\ud55c \uc124\uacc4 \uc120\ud0dd\uc758 \uc131\ub2a5-\ud6a8\uc728\uc131\uc758 \uc0c1\ucda9\uad00\uacc4\ub97c \ud3c9\uac00\ud558\uace0 \ud1b5\ud569\ub41c \ud328\ud134\uc5d0 \ud2b9\ud654\ub41c \ubc29\ubc95\ub860\uc744 \ud655\uc815\ud588\uc2b5\ub2c8\ub2e4. \uc6b0\ub9ac\uc758 \"PAROAttention\" \uc811\uadfc\ubc95\uc740 \uc190\uc2e4 \uba54\ud2b8\ub9ad\uc73c\ub85c \ube44\ub514\uc624 \ubc0f \uc774\ubbf8\uc9c0 \uc0dd\uc131\uc744 \ub2ec\uc131\ud558\uba70, \uadf9\ud788 \ub0ae\uc740 \ubc00\ub3c4 (~20%-30%)\uc640 \ube44\ud2b8\ud3ed(INT8/INT4)\uc5d0\uc11c \uc791\ub3d9\ud558\uba74\uc11c \uac70\uc758 \uc815\ubc00 \ubca0\uc774\uc2a4\ub77c\uc778\uacfc \ub3d9\uc77c\ud55c \uacb0\uacfc\ub97c \ub2ec\uc131\ud558\uba70 **1.9\ubc30**\uc5d0\uc11c **2.7\ubc30**\uc758 \uc885\ub2e8-\uc885\ub2e8 \uc9c0\uc5f0 \uc2dc\uac04 \uac00\uc18d\ub3c4\ub97c \ub2ec\uc131\ud569\ub2c8\ub2e4.", "title": "\ud6a8\uc728\uc801\uc778 \ud76c\ubc15 \ubc0f \uc591\uc790\ud654 \uc8fc\uc758\ub97c \uc704\ud55c \ud328\ud134 \uc778\uc2dd \uae30\ubc18 \uc7ac\ubc30\uce58 \ubaa8\ub378"}, "url": "https://huggingface.co/papers/2506.16054", "week": "2025-W26"}, {"abstract": "We present AnimaX, a feed-forward 3D animation framework that bridges the\nmotion priors of video diffusion models with the controllable structure of\nskeleton-based animation. Traditional motion synthesis methods are either\nrestricted to fixed skeletal topologies or require costly optimization in\nhigh-dimensional deformation spaces. In contrast, AnimaX effectively transfers\nvideo-based motion knowledge to the 3D domain, supporting diverse articulated\nmeshes with arbitrary skeletons. Our method represents 3D motion as multi-view,\nmulti-frame 2D pose maps, and enables joint video-pose diffusion conditioned on\ntemplate renderings and a textual motion prompt. We introduce shared positional\nencodings and modality-aware embeddings to ensure spatial-temporal alignment\nbetween video and pose sequences, effectively transferring video priors to\nmotion generation task. The resulting multi-view pose sequences are\ntriangulated into 3D joint positions and converted into mesh animation via\ninverse kinematics. Trained on a newly curated dataset of 160,000 rigged\nsequences, AnimaX achieves state-of-the-art results on VBench in\ngeneralization, motion fidelity, and efficiency, offering a scalable solution\nfor category-agnostic 3D animation. Project page:\nhttps://anima-x.github.io/{https://anima-x.github.io/}.", "authors": ["Zehuan Huang", "Haoran Feng", "Yangtian Sun", "Yuanchen Guo", "Yanpei Cao", "Lu Sheng"], "categories": ["Computer Vision", "Multimodal", "Robotics"], "date_collected": "2025-06-29T07:07:11.618597+09:00", "likes": 52, "published_date": "Jun 24", "summary": "1. AnimaX\ub294 \uace0\uc815\ub41c \uace8\uaca9 \uccb4\uacc4\uc5d0 \uc81c\ud55c\ub41c \uc804\ud1b5\uc801\uc778 \ub3d9\uc791 \ud569\uc131 \ubc29\ubc95\uacfc \ub2ec\ub9ac, \ube44\uc6a9\uc774 \ub9ce\uc774 \ub4dc\ub294 \ucd5c\uc801\ud654\ub97c \uc694\uad6c\ud558\uc9c0 \uc54a\uc73c\uba74\uc11c\ub3c4 \ube44\ub514\uc624 \uae30\ubc18 \ub3d9\uc791 \uc9c0\uc2dd\uc744 3D \ub3c4\uba54\uc778\uc73c\ub85c \ud6a8\uacfc\uc801\uc73c\ub85c \uc804\ub2ec\ud569\ub2c8\ub2e4.\n2. \uc6b0\ub9ac\uc758 \ubc29\ubc95\uc740 3D \ub3d9\uc791\uc744 \ub2e4\uc591\ud55c \uad00\uc808 \ub9dd\uacfc \uc784\uc758\uc758 \uace8\uaca9\uc73c\ub85c \ud45c\ud604\ud558\ub294\ub370, \uc774\ub97c \uc704\ud574 \uba40\ud2f0\ubdf0, \uba40\ud2f0\ud504\ub808\uc784 2D \uc790\uc138 \ub9f5\uc744 \uc0ac\uc6a9\ud569\ub2c8\ub2e4.\n3. AnimaX\ub294 \uc0c8\ub86d\uac8c \uad6c\uc131\ub41c 160,000\uac1c\uc758 \ub9ac\uae45\ub41c \uc2dc\ud000\uc2a4 \ub370\uc774\ud130\uc14b\uc5d0\uc11c \ud6c8\ub828\ub418\uc5c8\uc73c\uba70, \uc77c\ubc18\ud654, \ub3d9\uc791 \ucda9\uc2e4\ub3c4 \ubc0f \ud6a8\uc728\uc131 \uba74\uc5d0\uc11c VBench\uc5d0\uc11c \ucd5c\ucca8\ub2e8 \uacb0\uacfc\ub97c \ub2ec\uc131\ud558\uba70 \ubc94\uc8fc\uc5d0 \uad6c\uc560\ubc1b\uc9c0 \uc54a\ub294 3D \uc560\ub2c8\uba54\uc774\uc158\uc5d0 \ud655\uc7a5 \uac00\ub2a5\ud55c \uc194\ub8e8\uc158\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4.", "title": "AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion\n  Models", "translation": {"abstract": "AnimaX\ub294 \ube44\ub514\uc624 \ud655\uc0b0 \ubaa8\ub378\uc758 \ub3d9\uc791 \uc120\ud589 \uc9c0\uc2dd\uc744 \uad00\uc808 \uae30\ubc18 \uc560\ub2c8\uba54\uc774\uc158\uc758 \uc81c\uc5b4 \uac00\ub2a5\ud55c \uad6c\uc870\uc640 \uc5f0\uacb0\ud558\ub294 3D \uc560\ub2c8\uba54\uc774\uc158 \ud504\ub808\uc784\uc6cc\ud06c\uc785\ub2c8\ub2e4. \uc6b0\ub9ac\uc758 \ubc29\ubc95\uc740 \ub2e4\uc591\ud55c \uad00\uc808 \ub9dd\uc744 \uc9c0\uc6d0\ud558\uba74\uc11c\ub3c4 \ube44\ub514\uc624 \uae30\ubc18 \ub3d9\uc791 \uc9c0\uc2dd\uc744 \ud6a8\uacfc\uc801\uc73c\ub85c 3D \uc601\uc5ed\uc73c\ub85c \uc804\ub2ec\ud558\ub294\ub370 \uc131\uacf5\ud558\uc600\uc2b5\ub2c8\ub2e4.", "title": "AnimaX: 3D\uc5d0\uc11c \uad00\uc808 \ube44\ub514\uc624-\uc790\uc138 \ud655\uc0b0 \ubaa8\ub378\ub85c \ubb34\uc0dd\ubb3c\uc744 \uc6c0\uc9c1\uc774\uac8c \ud558\uae30"}, "url": "https://huggingface.co/papers/2506.19851", "week": "2025-W26"}, {"abstract": "Ultra-long generation by large language models (LLMs) is a widely demanded\nscenario, yet it remains a significant challenge due to their maximum\ngeneration length limit and overall quality degradation as sequence length\nincreases. Previous approaches, exemplified by LongWriter, typically rely on\n\u0027\u0027teaching\u0027\u0027, which involves supervised fine-tuning (SFT) on synthetic\nlong-form outputs. However, this strategy heavily depends on synthetic SFT\ndata, which is difficult and costly to construct, often lacks coherence and\nconsistency, and tends to be overly artificial and structurally monotonous. In\nthis work, we propose an incentivization-based approach that, starting entirely\nfrom scratch and without relying on any annotated or synthetic data, leverages\nreinforcement learning (RL) to foster the emergence of ultra-long, high-quality\ntext generation capabilities in LLMs. We perform RL training starting from a\nbase model, similar to R1-Zero, guiding it to engage in reasoning that\nfacilitates planning and refinement during the writing process. To support\nthis, we employ specialized reward models that steer the LLM towards improved\nlength control, writing quality, and structural formatting. Experimental\nevaluations show that our LongWriter-Zero model, trained from Qwen2.5-32B,\nconsistently outperforms traditional SFT methods on long-form writing tasks,\nachieving state-of-the-art results across all metrics on WritingBench and\nArena-Write, and even surpassing 100B+ models such as DeepSeek R1 and\nQwen3-235B. We open-source our data and model checkpoints under\nhttps://huggingface.co/THU-KEG/LongWriter-Zero-32B", "authors": ["Yuhao Wu", "Yushi Bai", "Zhiqiang Hu", "Roy Ka-Wei Lee", "Juanzi Li"], "categories": ["Reinforcement Learning", "LLM (\ub300\uaddc\ubaa8 \uc5b8\uc5b4 \ubaa8\ub378)"], "date_collected": "2025-06-29T07:07:11.619744+09:00", "likes": 49, "published_date": "Jun 23", "summary": "1. LongWriter-Zero\ub294 \uac15\ud654 \ud559\uc2b5\uc744 \uc774\uc6a9\ud558\uc5ec \uc8fc\uc11d\uc774\ub098 \ud569\uc131 \ub370\uc774\ud130\uc5d0 \uc758\uc874\ud558\uc9c0 \uc54a\uace0 \ucd08\uc7a5\ubb38\uc774\uba70 \ub192\uc740 \ud488\uc9c8\uc758 \ud14d\uc2a4\ud2b8 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uac8c \ud569\ub2c8\ub2e4.\n2. \uc774 \ubaa8\ub378\uc740 WritingBench\uc640 Arena-Write\uc5d0\uc11c \ub2e4\uc591\ud55c \uba54\ud2b8\ub9ad\uc5d0\uc11c \ucd5c\uace0 \uc218\uc900\uc758 \uacb0\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uba70, \uae30\uc874\uc758 SFT \ubc29\ubc95\uc744 \ub2a5\uac00\ud569\ub2c8\ub2e4.\n3. LongWriter-Zero\ub294 Qwen2.5-32B\uc5d0\uc11c \ud6c8\ub828\ub418\uc5c8\uc73c\uba70, \ub370\uc774\ud130\uc640 \ubaa8\ub378 \uccb4\ud06c\ud3ec\uc778\ud2b8\ub294 \uc624\ud508\uc18c\uc2a4\ub85c \uacf5\uac1c\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.", "title": "LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement\n  Learning", "translation": {"abstract": "\ub300\uaddc\ubaa8 \uc5b8\uc5b4 \ubaa8\ub378(Large Language Models, LLMs)\uc5d0 \uc758\ud55c \ucd08\uc7a5\ubb38 \uc0dd\uc131\uc740 \ub9ce\uc774 \uc694\uad6c\ub418\uc9c0\ub9cc, \uc2dc\ud000\uc2a4 \uae38\uc774\uac00 \uc99d\uac00\ud568\uc5d0 \ub530\ub77c \uc0dd\uc131 \uae38\uc774 \uc81c\ud55c\uacfc \uc804\ubc18\uc801\uc778 \ud488\uc9c8 \uc800\ud558\ub85c \uc778\ud574 \uc0c1\ub2f9\ud55c \uc5b4\ub824\uc6c0\uc774 \ub0a8\uc544 \uc788\uc2b5\ub2c8\ub2e4. \ubcf8 \uc5f0\uad6c\uc5d0\uc11c\ub294 \uc8fc\uc11d\uc774\ub098 \ud569\uc131 \ub370\uc774\ud130\uc5d0 \uc758\uc874\ud558\uc9c0 \uc54a\uace0 \ucc98\uc74c\ubd80\ud130 \uc2dc\uc791\ud558\uc5ec \uac15\ud654 \ud559\uc2b5\uc744 \ud65c\uc6a9\ud574 LLMs\uc5d0\uc11c \ucd08\uc7a5\ubb38\uc774\uba70 \ub192\uc740 \ud488\uc9c8\uc758 \ud14d\uc2a4\ud2b8 \uc0dd\uc131 \ub2a5\ub825\uc774 \ubc1c\ud604\ub418\ub3c4\ub85d \ud558\ub294 \uace0\ubc00\ub3c4\ud654 \uae30\ubc18 \uc811\uadfc\ubc95\uc744 \uc81c\uc548\ud569\ub2c8\ub2e4. LongWriter-Zero \ubaa8\ub378\uc740 WritingBench\uc640 Arena-Write\uc5d0\uc11c \ubaa8\ub4e0 \uba54\ud2b8\ub9ad\uc5d0\uc11c \ucd5c\uace0 \uc131\ub2a5\uc744 \ub2ec\uc131\ud558\uba70 DeepSeek R1\uacfc Qwen3-235B\uc640 \uac19\uc740 100B+ \ubaa8\ub378\uc744 \ub2a5\uac00\ud588\uc2b5\ub2c8\ub2e4.", "title": "LongWriter-Zero: \uac15\ud654 \ud559\uc2b5\uc744 \ud1b5\ud55c \ucd08\uc815\ubc00 \uc7a5\ubb38 \ud14d\uc2a4\ud2b8 \uc0dd\uc131 \ub9c8\uc2a4\ud130\ub9c1"}, "url": "https://huggingface.co/papers/2506.18841", "week": "2025-W26"}];
+        const allCategories = new Set();
+        
+        papers.forEach(paper => {
+            if (paper.categories) {
+                paper.categories.forEach(category => allCategories.add(category));
+            } else {
+                allCategories.add('기타');
+            }
+        });
+
+        // 카테고리 필터 버튼 생성
+        const categoryFiltersContainer = document.getElementById('category-filters');
+        allCategories.forEach(category => {
+            const filterButton = document.createElement('button');
+            filterButton.className = 'category-filter';
+            filterButton.textContent = category;
+            filterButton.onclick = () => toggleFilter(category);
+            categoryFiltersContainer.appendChild(filterButton);
+        });
+
+        let activeFilters = new Set();
+
+        function toggleFilter(category) {
+            const button = event.target;
+            if (activeFilters.has(category)) {
+                activeFilters.delete(category);
+                button.classList.remove('active');
+            } else {
+                activeFilters.add(category);
+                button.classList.add('active');
+            }
+            filterPapers();
+        }
+
+        function clearAllFilters() {
+            activeFilters.clear();
+            document.querySelectorAll('.category-filter').forEach(button => {
+                button.classList.remove('active');
+            });
+            filterPapers();
+        }
+
+        function filterPapers() {
+            const paperCards = document.querySelectorAll('.paper-card');
+            let visibleCount = 0;
+
+            paperCards.forEach(card => {
+                const cardCategories = card.dataset.categories.split(',').map(cat => cat.trim());
+                
+                if (activeFilters.size === 0) {
+                    // 필터가 없으면 모든 카드 표시
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    // 선택된 카테고리와 겹치는지 확인
+                    const hasMatchingCategory = cardCategories.some(cat => activeFilters.has(cat));
+                    card.style.display = hasMatchingCategory ? 'block' : 'none';
+                    if (hasMatchingCategory) visibleCount++;
+                }
+            });
+
+            // 필터 카운트 업데이트
+            document.getElementById('filter-count').textContent = 
+                `${visibleCount}개 논문 표시 중`;
+            
+            // 총 논문 수 업데이트
+            document.getElementById('total-papers').textContent = visibleCount;
+        }
+
+        // 주차 네비게이션 기능
+        const availableWeeks = ["2026-W34", "2025-W27", "2025-W26", "2025-W25", "2025-W24", "2025-W23"];
+        const currentWeek = "2025-W26";
+
+        // 주차에서 연도와 주차 번호 추출하는 함수
+        function parseWeek(weekStr) {
+            const match = weekStr.match(/(\d{4})-W(\d{2})/);
+            if (match) {
+                return {
+                    year: parseInt(match[1]),
+                    week: parseInt(match[2])
+                };
+            }
+            return null;
+        }
+
+        // 주차 문자열 생성하는 함수
+        function createWeekStr(year, week) {
+            return `${year}-W${week.toString().padStart(2, '0')}`;
+        }
+
+        // 주차 네비게이션 함수
+        function navigateWeek(direction) {
+            let targetWeek;
+            
+            if (currentWeek === 'latest') {
+                // 현재 최신 주차에서 (현재 주차 계산 사용)
+                const currentWeekStr = "2025-W26";
+                const currentWeekInfo = parseWeek(currentWeekStr);
+                
+                if (!currentWeekInfo) {
+                    alert('현재 주차를 계산할 수 없습니다.');
+                    return;
+                }
+                
+                if (direction === -1) {
+                    // 이전 주로: 현재 주차 - 1
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    
+                    targetWeek = createWeekStr(prevYear, prevWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                } else {
+                    // 다음 주로: 현재 주차 + 1
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    
+                    targetWeek = createWeekStr(nextYear, nextWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                }
+            } else {
+                // 특정 주차에서
+                const currentWeekInfo = parseWeek(currentWeek);
+                if (!currentWeekInfo) {
+                    alert('현재 주차 형식이 올바르지 않습니다.');
+                    return;
+                }
+                
+                if (direction === -1) {
+                    // 이전 주로: 현재 주차 - 1
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52; // 대략적인 연간 주차 수
+                    }
+                    
+                    targetWeek = createWeekStr(prevYear, prevWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                } else {
+                    // 다음 주로: 현재 주차 + 1
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    
+                    targetWeek = createWeekStr(nextYear, nextWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                }
+            }
+            
+            // 목표 주차로 이동 - 최신 주차는 메인 페이지로, 나머지는 주차별 페이지로
+            const isLocalhost = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+            
+            // 최신 주차(availableWeeks[0])인지 확인
+            if (targetWeek === availableWeeks[0]) {
+                // 최신 주차는 메인 페이지로 이동
+                if (isLocalhost) {
+                    window.location.href = `/static/index.html`;
+                } else {
+                    window.location.href = `/paper_summary/index.html`;
+                }
+            } else {
+                // 이전 주차들은 주차별 페이지로 이동
+                if (isLocalhost) {
+                    window.location.href = `/static/week/${targetWeek}/index.html`;
+                } else {
+                    window.location.href = `/paper_summary/week/${targetWeek}/index.html`;
+                }
+            }
+        }
+
+        // 네비게이션 버튼 상태 업데이트
+        function updateNavigationButtons() {
+            const prevButton = document.getElementById('prev-week');
+            const nextButton = document.getElementById('next-week');
+            
+            if (currentWeek === 'latest') {
+                // 최신 주차에서 (현재 주차 계산 사용)
+                const currentWeekStr = "2025-W26";
+                const currentWeekInfo = parseWeek(currentWeekStr);
+                
+                if (!currentWeekInfo) {
+                    prevButton.disabled = true;
+                    nextButton.disabled = true;
+                } else {
+                    // 이전 주차 확인
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    const prevWeekStr = createWeekStr(prevYear, prevWeek);
+                    prevButton.disabled = !availableWeeks.includes(prevWeekStr);
+                    
+                    // 다음 주차 확인
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    const nextWeekStr = createWeekStr(nextYear, nextWeek);
+                    nextButton.disabled = !availableWeeks.includes(nextWeekStr);
+                }
+            } else {
+                // 특정 주차에서
+                const currentWeekInfo = parseWeek(currentWeek);
+                if (!currentWeekInfo) {
+                    prevButton.disabled = true;
+                    nextButton.disabled = true;
+                } else {
+                    // 이전 주차 확인
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    const prevWeekStr = createWeekStr(prevYear, prevWeek);
+                    prevButton.disabled = !availableWeeks.includes(prevWeekStr);
+                    
+                    // 다음 주차 확인
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    const nextWeekStr = createWeekStr(nextYear, nextWeek);
+                    nextButton.disabled = !availableWeeks.includes(nextWeekStr);
+                }
+            }
+        }
+        updateNavigationButtons();
+    </script>
+</body>
+</html> 

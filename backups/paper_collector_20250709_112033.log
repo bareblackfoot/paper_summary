@@ -1,0 +1,147 @@
+=== Paper Collection Started at Tue Jul  8 22:07:39 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W28
+URL: https://huggingface.co/papers/week/2025-W28
+Found 10 papers in weekly view
+Fetching likes for: MemOS: A Memory OS for AI System
+Fetching likes for: Should We Still Pretrain Encoders with Masked Language Modeling?
+Fetching likes for: 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture
+Fetching likes for: DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive
+  World Knowledge
+Fetching likes for: Pre-Trained Policy Discriminators are General Reward Models
+Fetching likes for: How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks
+Fetching likes for: BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning
+  Dataset
+Fetching likes for: RoboBrain 2.0 Technical Report
+Fetching likes for: Lost in Latent Space: An Empirical Study of Latent Diffusion Models for
+  Physics Emulation
+Fetching likes for: RefineX: Learning to Refine Pre-training Data at Scale from
+  Expert-Guided Programs
+Selected top 10 papers by likes:
+1. MemOS: A Memory OS for AI System (77 likes)
+2. Should We Still Pretrain Encoders with Masked Language Modeling? (56 likes)
+3. 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture (32 likes)
+4. DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive
+  World Knowledge (29 likes)
+5. Pre-Trained Policy Discriminators are General Reward Models (27 likes)
+6. How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks (24 likes)
+7. BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning
+  Dataset (20 likes)
+8. RoboBrain 2.0 Technical Report (18 likes)
+9. Lost in Latent Space: An Empirical Study of Latent Diffusion Models for
+  Physics Emulation (16 likes)
+10. RefineX: Learning to Refine Pre-training Data at Scale from
+  Expert-Guided Programs (14 likes)
+Found abstract: Large Language Models (LLMs) have become an essential infrastructure for
+Artificial General Intellig...
+Processed paper: MemOS: A Memory OS for AI System
+Found abstract: Learning high-quality text representations is fundamental to a wide range of
+NLP tasks. While encode...
+Processed paper: Should We Still Pretrain Encoders with Masked Language Modeling?
+Found abstract: Reconstructing fast-dynamic scenes from multi-view videos is crucial for
+high-speed motion analysis ...
+Processed paper: 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture
+Found abstract: Recent advances in vision-language-action (VLA) models have shown promise in
+integrating image gener...
+Processed paper: DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive
+  World Knowledge
+Found abstract: We offer a novel perspective on reward modeling by formulating it as a policy
+discriminator, which q...
+Processed paper: Pre-Trained Policy Discriminators are General Reward Models
+Found abstract: Multimodal foundation models, such as GPT-4o, have recently made remarkable
+progress, but it is not ...
+Processed paper: How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks
+Found abstract: In this paper, we introduce BMMR, a large-scale bilingual, multimodal,
+multi-disciplinary reasoning ...
+Processed paper: BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning
+  Dataset
+Found abstract: We introduce RoboBrain 2.0, our latest generation of embodied vision-language
+foundation models, des...
+Processed paper: RoboBrain 2.0 Technical Report
+Found abstract: The steep computational cost of diffusion models at inference hinders their
+use as fast physics emul...
+Processed paper: Lost in Latent Space: An Empirical Study of Latent Diffusion Models for
+  Physics Emulation
+Found abstract: The foundational capabilities of large language models (LLMs) are deeply
+influenced by the quality o...
+Processed paper: RefineX: Learning to Refine Pre-training Data at Scale from
+  Expert-Guided Programs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MemOS: A Memory OS for AI System
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Should We Still Pretrain Encoders with Masked Language Modeling?
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive
+  World Knowledge
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Pre-Trained Policy Discriminators are General Reward Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 24  ->  9
+Update date_collected: 2025-07-09T07:07:47.181796+09:00  ->  2025-07-08T07:07:59.022560+09:00
+
+Processing paper 7/10
+Title: BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning
+  Dataset
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: RoboBrain 2.0 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Lost in Latent Space: An Empirical Study of Latent Diffusion Models for
+  Physics Emulation
+Paper already exists, checking if translation is complete...
+Update likes: 16  ->  5
+Update date_collected: 2025-07-09T07:07:47.186412+09:00  ->  2025-07-08T07:07:59.023777+09:00
+
+Processing paper 10/10
+Title: RefineX: Learning to Refine Pre-training Data at Scale from
+  Expert-Guided Programs
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W28.json...
+
+Updating Notion database...
+Creating new paper: MemOS: AI 시스템을 위한 메모리 운영 체제
+Creating new paper: 마스크된 언어 모델링으로 인코더를 여전히 사전학습해야 할까요?
+Creating new paper: 4DSloMo: 고속 씬을 위한 4D 재구성과 비동기적 촬영
+Creating new paper: 꿈꾸는 포괄적 세계 지식으로 설계된 비전-언어-행동 모델 DreamVLA
+Creating new paper: 사전 학습된 정책 판별자는 일반 보상 모델입니다
+Updating paper: GPT-4o는 시각을 얼마나 잘 이해하는가? 표준 컴퓨터 비전 작업에서의 다중모달 기반 모델 평가 (likes: 9 -> 24)
+Creating new paper: 대규모 이중 언어 다중모달 다학제 추론 데이터셋
+Creating new paper: 로보브레인 2.0 기술 보고서
+Updating paper: 잠겨버린 잠재 공간: 물리 에뮬레이션을 위한 잠재 확산 모델의 경험적 연구 (likes: 5 -> 16)
+Creating new paper: RefineX: 전문가 지도 프로그램에서 규모별 사전 훈련 데이터를 정밀하게 개선하는 학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jul  8 22:09:33 UTC 2025 ===
+

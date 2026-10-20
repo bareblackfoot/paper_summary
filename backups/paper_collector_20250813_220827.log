@@ -1,0 +1,147 @@
+=== Paper Collection Started at Tue Aug 12 22:07:47 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W33
+URL: https://huggingface.co/papers/week/2025-W33
+Found 10 papers in weekly view
+Fetching likes for: GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models
+Fetching likes for: ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability
+Fetching likes for: WideSearch: Benchmarking Agentic Broad Info-Seeking
+Fetching likes for: Omni-Effects: Unified and Spatially-Controllable Visual Effects
+  Generation
+Fetching likes for: Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off
+Fetching likes for: A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm
+  Bridging Foundation Models and Lifelong Agentic Systems
+Fetching likes for: Klear-Reasoner: Advancing Reasoning Capability via Gradient-Preserving
+  Clipping Policy Optimization
+Fetching likes for: BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of
+  Deep-Research Agent
+Fetching likes for: SONAR-LLM: Autoregressive Transformer that Thinks in Sentence Embeddings
+  and Speaks in Tokens
+Fetching likes for: UserBench: An Interactive Gym Environment for User-Centric Agents
+Selected top 10 papers by likes:
+1. GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models (113 likes)
+2. ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability (88 likes)
+3. WideSearch: Benchmarking Agentic Broad Info-Seeking (81 likes)
+4. Omni-Effects: Unified and Spatially-Controllable Visual Effects
+  Generation (46 likes)
+5. Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off (42 likes)
+6. A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm
+  Bridging Foundation Models and Lifelong Agentic Systems (33 likes)
+7. Klear-Reasoner: Advancing Reasoning Capability via Gradient-Preserving
+  Clipping Policy Optimization (27 likes)
+8. BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of
+  Deep-Research Agent (27 likes)
+9. SONAR-LLM: Autoregressive Transformer that Thinks in Sentence Embeddings
+  and Speaks in Tokens (25 likes)
+10. UserBench: An Interactive Gym Environment for User-Centric Agents (25 likes)
+Found abstract: We present GLM-4.5, an open-source Mixture-of-Experts (MoE) large language
+model with 355B total par...
+Processed paper: GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models
+Found abstract: Large Language Model (LLM) based listwise ranking has shown superior
+performance in many passage ran...
+Processed paper: ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability
+Found abstract: From professional research to everyday planning, many tasks are bottlenecked
+by wide-scale informati...
+Processed paper: WideSearch: Benchmarking Agentic Broad Info-Seeking
+Found abstract: Visual effects (VFX) are essential visual enhancements fundamental to modern
+cinematic production. A...
+Processed paper: Omni-Effects: Unified and Spatially-Controllable Visual Effects
+  Generation
+Found abstract: Virtual try-on aims to synthesize a realistic image of a person wearing a
+target garment, but accura...
+Processed paper: Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off
+Found abstract: Recent advances in large language models have sparked growing interest in AI
+agents capable of solvi...
+Processed paper: A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm
+  Bridging Foundation Models and Lifelong Agentic Systems
+Found abstract: We present Klear-Reasoner, a model with long reasoning capabilities that
+demonstrates careful delibe...
+Processed paper: Klear-Reasoner: Advancing Reasoning Capability via Gradient-Preserving
+  Clipping Policy Optimization
+Found abstract: Deep-Research agents, which integrate large language models (LLMs) with
+search tools, have shown suc...
+Processed paper: BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of
+  Deep-Research Agent
+Found abstract: The recently proposed Large Concept Model (LCM) generates text by predicting
+a sequence of sentence-...
+Processed paper: SONAR-LLM: Autoregressive Transformer that Thinks in Sentence Embeddings
+  and Speaks in Tokens
+Found abstract: Large Language Models (LLMs)-based agents have made impressive progress in
+reasoning and tool use, e...
+Processed paper: UserBench: An Interactive Gym Environment for User-Centric Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models
+Paper already exists, checking if translation is complete...
+Update likes: 113  ->  71
+Update date_collected: 2025-08-13T07:07:55.164015+09:00  ->  2025-08-12T07:07:49.735086+09:00
+
+Processing paper 2/10
+Title: ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: WideSearch: Benchmarking Agentic Broad Info-Seeking
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Omni-Effects: Unified and Spatially-Controllable Visual Effects
+  Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  33
+Update date_collected: 2025-08-13T07:07:55.169232+09:00  ->  2025-08-12T07:07:49.736182+09:00
+
+Processing paper 6/10
+Title: A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm
+  Bridging Foundation Models and Lifelong Agentic Systems
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Klear-Reasoner: Advancing Reasoning Capability via Gradient-Preserving
+  Clipping Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of
+  Deep-Research Agent
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: SONAR-LLM: Autoregressive Transformer that Thinks in Sentence Embeddings
+  and Speaks in Tokens
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: UserBench: An Interactive Gym Environment for User-Centric Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W33.json...
+
+Updating Notion database...
+Updating paper: GLM-4.5: 에이전틱, 추론 및 코딩 (ARC) Foundation 모델 (likes: 71 -> 113)
+Creating new paper: 이유 랭크: 강력한 추론 능력으로 패싸지 랭킹 증강
+Creating new paper: WideSearch: 적용적 광범위 정보수집의 벤치마킹
+Creating new paper: 옴니-이펙트: 통합 및 공간 제어 가능한 비주얼 이펙트 생성
+Updating paper: Voost: 통합 및 확장 가능한 이중 확산 트랜스포머를 통한 양방향 가상 착용 및 탈의 (likes: 33 -> 42)
+Creating new paper: 자기진화형 AI 에이전트의 포괄적 고찰: 기초 모델과 평생 에이전틱 시스템 연결
+Creating new paper: Klear-Reasoner: Gradient-Preserving 클리핑 정책 최적화를 통한 추론 능력 진화
+Creating new paper: 브라우즈컴플러스: 보다 공정하고 투명한 딥리서치 에이전트의 평가 벤치마크
+Creating new paper: SONAR-LLM: 문장 임베딩에서 사고하고 토큰으로 말하는 자기 회귀 트랜스포머
+Creating new paper: 사용자 중심 에이전트를 위한 상호작용형 체육관 환경(UserBench)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Aug 12 22:09:52 UTC 2025 ===
+

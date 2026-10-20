@@ -1,0 +1,7 @@
+=== Paper Collection Started at Sun Jun  8 06:47:57 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_updater import update_notion_database
+ModuleNotFoundError: No module named 'notion_updater'
+=== Paper Collection Finished at Sun Jun  8 06:47:58 UTC 2025 ===
+

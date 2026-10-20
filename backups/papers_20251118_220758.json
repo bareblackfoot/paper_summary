@@ -1,0 +1,307 @@
+[
+  {
+    "title": "DoPE: Denoising Rotary Position Embedding",
+    "abstract": "Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrapolation. We reinterpret the attention map with positional encoding as a noisy feature map, and propose Denoising Positional Encoding (DoPE), a training-free method based on truncated matrix entropy to detect outlier frequency bands in the feature map. Leveraging the noise characteristics of the feature map, we further reparameterize it with a parameter-free Gaussian distribution to achieve robust extrapolation. Our method theoretically reveals the underlying cause of the attention sink phenomenon and its connection to truncated matrix entropy. Experiments on needle-in-a-haystack and many-shot in-context learning tasks demonstrate that DoPE significantly improves retrieval accuracy and reasoning stability across extended contexts (up to 64K tokens). The results show that the denoising strategy for positional embeddings effectively mitigates attention sinks and restores balanced attention patterns, providing a simple yet powerful solution for improving length generalization. Our project page is Project: https://The-physical-picture-of-LLMs.github.io",
+    "authors": [
+      "Jing Xiong",
+      "Liyang Fan",
+      "Hui Shen",
+      "Zunhai Su",
+      "Min Yang",
+      "Lingpeng Kong",
+      "Ngai Wong"
+    ],
+    "likes": 57,
+    "published_date": "Nov 12",
+    "url": "https://huggingface.co/papers/2511.09146",
+    "date_collected": "2025-11-18T07:08:01.005430+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "DoPE: Denoising Rotary Position Embedding",
+      "abstract": "Transformer 모델의 Rotary Position Embedding (RoPE)은 길이 추정을 약화시키는 내재적인 한계를 가지고 있습니다. 우리는 위치 부호화로 해석된 어텐션 맵을 있는 그대로의 특성 맵으로 보고, 이상적인 주파수 대역을 감지하는 것을 목적으로 하는 자율 학습 없이 해당 특성 맵에서 이상치 주파수 대역을 감지하는 Denoising Positional Encoding (DoPE)를 제안합니다. 특성 맵의 소음 특성을 활용하여 무료 매개변수인 가우시안 분포로 다시 매개변수화하여 견고한 추정을 달성합니다. 저희 방법론은 어텐션 싱크 현상의 근본적인 원인과 그것과 잘려진 행렬 엔트로피의 연관성을 이론적으로 밝힙니다. '바늘 속에서 바늘 찾기' 및 많은 샷 인 콘텍스트 학습 작업에서의 실험 결과는 DoPE가 64K 토큰까지의 확장된 컨텍스트에서 검색 정확도와 추론 안정성을 크게 향상시킨다는 것을 보여줍니다. 결과는 위치 부호화에 대한 소음 제거 전략이 어텐션 싱크를 효과적으로 완화시키고 균형 잡힌 어텐션 패턴을 복원함을 보여주며, 길이 추정을 개선하는 간단하고 강력한 해결책을 제공합니다."
+    },
+    "summary": "1. RoPE의 한계를 극복하기 위해 DoPE를 제안하였는데, 이는 이상치 주파수 대역을 감지하는 무료 매개변수 방법으로 어텐션 맵을 재해석함.\n2. 실험 결과는 DoPE가 길이 추정을 향상시키고, 어텐션 싱크를 완화시키며, 균형 잡힌 어텐션 패턴을 복원함을 입증함.\n3. DoPE는 위치 부호화의 소음 제거 전략이므로, Transformer 모델에서의 추론 안정성과 검색 정확도를 향상시키는 강력한 기법임.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation",
+    "abstract": "Recent advances in unified multimodal models (UMMs) have enabled impressive progress in visual comprehension and generation. However, existing datasets and benchmarks focus primarily on single-turn interactions, failing to capture the multi-turn, context-dependent nature of real-world image creation and editing. To address this gap, we present WEAVE, the first suite for in-context interleaved cross-modality comprehension and generation. Our suite consists of two complementary parts. WEAVE-100k is a large-scale dataset of 100K interleaved samples spanning over 370K dialogue turns and 500K images, covering comprehension, editing, and generation tasks that require reasoning over historical context. WEAVEBench is a human-annotated benchmark with 100 tasks based on 480 images, featuring a hybrid VLM judger evaluation framework based on both the reference image and the combination of the original image with editing instructions that assesses models' abilities in multi-turn generation, visual memory, and world-knowledge reasoning across diverse domains. Experiments demonstrate that training on WEAVE-100k enables vision comprehension, image editing, and comprehension-generation collaboration capabilities. Furthermore, it facilitates UMMs to develop emergent visual-memory capabilities, while extensive evaluations on WEAVEBench expose the persistent limitations and challenges of current approaches in multi-turn, context-aware image generation and editing. We believe WEAVE provides a view and foundation for studying in-context interleaved comprehension and generation for multi-modal community.",
+    "authors": [
+      "Wei Chow",
+      "Jiachun Pan",
+      "Yongyuan Liang",
+      "Mingze Zhou",
+      "Xue Song",
+      "Liyu Jia",
+      "Saining Zhang",
+      "Siliang Tang",
+      "Juncheng Li",
+      "Fengda Zhang",
+      "Weijia Wu",
+      "Hanwang Zhang",
+      "Tat-Seng Chua"
+    ],
+    "likes": 40,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11434",
+    "date_collected": "2025-11-18T07:08:01.006964+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "WEAVE: 문맥 속 교차된 이해와 생성의 발휘와 평가",
+      "abstract": "최근 통합된 다중 모달 모델(UMMs)의 발전으로 시각적 이해와 생성에서 상당한 진전이 이루어졌다. 그러나 기존의 데이터셋과 평가는 주로 한 번의 상호작용에 초점을 맞추어 실제 이미지 생성 및 편집의 다중턴, 문맥 의존적 특성을 잡아내지 못한다. 이 간극을 해소하기 위해, 우리는 WEAVE를 제시한다. 이는 문맥 속 교차된 모달 이해와 생성을 위한 최초의 스위트이다."
+    },
+    "summary": "1. WEAVE는 실제 이미지 창작 및 편집의 다중턴, 문맥 의존적 특성을 잡아내기 위한 대규모 데이터셋과 평가체계를 제시한다.\n2. 이를 통해 UMMs는 신경망 메모리 기능 개발을 통해 시각적 이해, 이미지 편집, 이해-생성 협력 능력을 향상시킬 수 있음을 실험을 통해 입증한다.\n3. 다양한 도메인에서 다중턴 생성, 시각적 메모리, 세계 지식 추론 능력을 평가하는 WEAVEBench를 통해 현 방법의 한계와 도전에 노출되며, UMMs는 신경망 메모리 기능을 발전시킬 수 있다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "GGBench: A Geometric Generative Reasoning Benchmark for Unified Multimodal Models",
+    "abstract": "The advent of Unified Multimodal Models (UMMs) signals a paradigm shift in artificial intelligence, moving from passive perception to active, cross-modal generation. Despite their unprecedented ability to synthesize information, a critical gap persists in evaluation: existing benchmarks primarily assess discriminative understanding or unconstrained image generation separately, failing to measure the integrated cognitive process of generative reasoning. To bridge this gap, we propose that geometric construction provides an ideal testbed as it inherently demands a fusion of language comprehension and precise visual generation. We introduce GGBench, a benchmark designed specifically to evaluate geometric generative reasoning. It provides a comprehensive framework for systematically diagnosing a model's ability to not only understand and reason but to actively construct a solution, thereby setting a more rigorous standard for the next generation of intelligent systems. Project website: https://opendatalab-raiser.github.io/GGBench/.",
+    "authors": [
+      "Jingxuan Wei",
+      "Caijun Jia",
+      "Xi Bai",
+      "Xinglong Xu",
+      "Siyuan Li",
+      "Linzhuang Sun",
+      "Bihui Yu",
+      "Conghui He",
+      "Lijun Wu",
+      "Cheng Tan"
+    ],
+    "likes": 29,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11134",
+    "date_collected": "2025-11-18T07:08:01.008333+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "GGBench: 통합 다중 모달 모델을 위한 기하학적 생성 추론 벤치마크",
+      "abstract": "통합 다중 모달 모델(UMMs)의 출현은 인공지능에서 수동 인식에서 적극적인, 상호 모달 생성으로의 패러다임 변화를 시사한다. 이들은 정보를 종합적으로 합성하는 비례없는 능력을 가졌음에도 불구하고, 기존의 벤치마크는 판별적 이해나 제약 없는 이미지 생성을 주로 평가하며, 생성적 추론의 통합적인 인지 과정을 측정하지 못하는 결함이 여전히 존재한다. 이러한 공백을 메우기 위해 기하학적 구성이 언어 이해와 정확한 시각적 생성의 융합을 본질적으로 요구하기 때문에 이상적인 실험대를 제공하는 것으로 제안한다. 우리는 기하학적 생성 추론을 평가하기 위해 중점적으로 설계된 벤치마크인 GGBench를 소개한다. 모델의 이해와 추론 뿐만 아니라 해결책을 적극적으로 구축하는 능력을 진단하는 체계적인 프레임워크를 제공하여, 다음 세대 지능 시스템에 더 엄격한 기준을 설정한다. 프로젝트 웹사이트: https://opendatalab-raiser.github.io/GGBench/."
+    },
+    "summary": "1. 통합 다중 모달 모델의 패러다임 전환과 결핍된 생성적 추론 평가의 필요성.\n2. 기하학적 구성이 언어 이해와 시각적 생성 융합을 테스트하는 이상적인 실험 대 제안.\n3. GGBench 벤치마크가 모델의 이해, 추론 능력 뿐만 아니라 해결책 구축 능력을 진단하기 위한 체계적인 프레임워크 제시.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "UI2Code^N: A Visual Language Model for Test-Time Scalable Interactive UI-to-Code Generation",
+    "abstract": "User interface (UI) programming is a core yet highly complex part of modern software development. Recent advances in visual language models (VLMs) highlight the potential of automatic UI coding, but current approaches face two key limitations: multimodal coding capabilities remain underdeveloped, and single-turn paradigms make little use of iterative visual feedback. We address these challenges with an interactive UI-to-code paradigm that better reflects real-world workflows and raises the upper bound of achievable performance. Under this paradigm, we present UI2Code^N, a visual language model trained through staged pretraining, fine-tuning, and reinforcement learning to achieve foundational improvements in multimodal coding. The model unifies three key capabilities: UI-to-code generation, UI editing, and UI polishing. We further explore test-time scaling for interactive generation, enabling systematic use of multi-turn feedback. Experiments on UI-to-code and UI polishing benchmarks show that UI2Code^N establishes a new state of the art among open-source models and achieves performance comparable to leading closed-source models such as Claude-4-Sonnet and GPT-5. Our code and models are available at https://github.com/zai-org/UI2Code_N.",
+    "authors": [
+      "Zhen Yang",
+      "Wenyi Hong",
+      "Mingde Xu",
+      "Xinyue Fan",
+      "Weihan Wang",
+      "Jiele Cheng",
+      "Xiaotao Gu",
+      "Jie Tang"
+    ],
+    "likes": 28,
+    "published_date": "Nov 11",
+    "url": "https://huggingface.co/papers/2511.08195",
+    "date_collected": "2025-11-18T07:08:01.009583+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "UI2Code^N: 스케일 가능한 상호작용형 UI-to-Code 생성을 위한 시각적 언어 모델",
+      "abstract": "사용자 인터페이스(UI) 프로그래밍은 현대 소프트웨어 개발의 중심이면서도 매우 복잡한 부분이다. 시각적 언어 모델(VLMs)의 최근 발전은 자동 UI 코딩의 잠재력을 강조하지만 현재 접근법은 다중 모달 코딩 능력이 미숙하며 단일 턴 패러다임은 반복적인 시각적 피드백을 적게 활용한다는 두 가지 주요 제한점을 가지고 있다. 우리는 실세계 워크플로우를 더 잘 반영하고 성능 달성의 상한선을 끌어올리는 상호작용형 UI-to-code 패러다임으로 이러한 도전에 대처한다. 이 패러다임 하에 우리는 전체적인 다중 모달 코딩에서 기초적인 개선을 달성하기 위해 staged pretraining, fine-tuning, 그리고 reinforcement learning을 통해 훈련된 시각적 언어 모델인 UI2Code^N을 제안한다. 이 모델은 UI-to-code 생성, UI 편집, 그리고 UI polishing 세 가지 핵심 기능을 통합한다. 우리는 더 나아가 다중 턴 피드백의 체계적인 사용을 가능하게 하는 상호작용형 생성을 위한 test-time scaling을 탐구한다. UI-to-code 및 UI polishing 벤치마크 실험 결과, UI2Code^N은 오픈 소스 모델 중 최고 성능을 달성하며 Claude-4-Sonnet 및 GPT-5와 같은 주요 폐쇄 소스 모델과 유사한 성능을 제공함을 보여준다. 우리의 코드와 모델은 https://github.com/zai-org/UI2Code_N에서 사용 가능하다."
+    },
+    "summary": "1. UI2Code^N은 다중 모달 코딩 능력을 향상시키기 위해 staged pretraining, fine-tuning, reinforcement learning을 활용한 시각적 언어 모델이다.\n2. 이 모델은 UI-to-code 생성, UI 편집, 그리고 UI polishing을 통합하여 상호작용성을 갖추었고, 다중 턴 피드백을 통해 성능을 높였다.\n3. UI2Code^N은 오픈 소스 모델 중 최고 성능을 기록하며 Claude-4-Sonnet 및 GPT-5와 유사한 결과를 얻었다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "AIonopedia: an LLM agent orchestrating multimodal learning for ionic liquid discovery",
+    "abstract": "The discovery of novel Ionic Liquids (ILs) is hindered by critical challenges in property prediction, including limited data, poor model accuracy, and fragmented workflows. Leveraging the power of Large Language Models (LLMs), we introduce AIonopedia, to the best of our knowledge, the first LLM agent for IL discovery. Powered by an LLM-augmented multimodal domain foundation model for ILs, AIonopedia enables accurate property predictions and incorporates a hierarchical search architecture for molecular screening and design. Trained and evaluated on a newly curated and comprehensive IL dataset, our model delivers superior performance. Complementing these results, evaluations on literature-reported systems indicate that the agent can perform effective IL modification. Moving beyond offline tests, the practical efficacy was further confirmed through real-world wet-lab validation, in which the agent demonstrated exceptional generalization capabilities on challenging out-of-distribution tasks, underscoring its ability to accelerate real-world IL discovery.",
+    "authors": [
+      "Yuqi Yin",
+      "Yibo Fu",
+      "Siyuan Wang",
+      "Peng Sun",
+      "Hongyu Wang",
+      "Xiaohui Wang",
+      "Lei Zheng",
+      "Zhiyong Li",
+      "Zhirong Liu",
+      "Jianji Wang",
+      "Zhaoxi Sun"
+    ],
+    "likes": 24,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11257",
+    "date_collected": "2025-11-18T07:08:01.010949+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "AIonopedia: 멀티모달 학습을 조합한 LLM 에이전트로 이온성 액체 발견",
+      "abstract": "속성 예측에 있어서 핵심적인 도전인 한계 데이터, 모델 정확도 부족 및 단편적인 작업 과정 등으로 인해 새로운 이온성 액체(ILs)의 발견이 제한되고 있다. Large Language Models (LLMs)의 능력을 활용하여, 우리는 IL 발견을 위한 최초의 LLM 에이전트인 AIonopedia를 소개한다. AIonopedia는 IL을 위한 LLM 보강 멀티모달 도메인 기초 모델을 기반으로 하여 정확한 속성 예측을 가능하게 하며, 분자 스크리닝과 디자인을 위한 계층적 검색 아키텍처를 통합한다. 새롭게 정리된 포괄적인 IL 데이터셋에서 훈련하고 평가한 결과, 우리의 모델은 우수한 성능을 보여준다. 이러한 결과를 보완하며, 문헌에 보고된 시스템을 평가한 결과, 해당 에이전트는 효과적인 IL 수정을 수행할 수 있다. 오프라인 테스트를 넘어, 현실적인 효능은 실제 세계에서의 습식 실험을 통해 더욱 확인되었는데, 이 과정에서 해당 에이전트는 어려운 분야의 일반화 작업에서 탁월한 성과를 보여주며, 실제 세상 IL 발견을 가속화할 수 있는 능력을 강조한다."
+    },
+    "summary": "1. AIonopedia는 이온성 액체(IL) 발견을 위한 최초의 Large Language Models (LLMs)에이전트로, 멀티모달 도메인 기초 모델을 활용하여 정확한 속성 예측과 분자 스크리닝, 디자인을 가능하게 한다.\n2. 새로운 포괄적인 IL 데이터셋에서 훈련된 AIonopedia 모델은 우수한 성능을 보이며, 문헌에 보고된 시스템에서도 효과적인 IL 수정을 수행할 수 있다.\n3. 현실 세계에서의 실험 결과로, AIonopedia는 어려운 작업에서도 뛰어난 일반화 능력을 보여주며, 실제 세계 IL 발견을 가속화하는 능력을 갖추고 있다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Virtual Width Networks",
+    "abstract": "We introduce Virtual Width Networks (VWN), a framework that delivers the benefits of wider representations without incurring the quadratic cost of increasing the hidden size. VWN decouples representational width from backbone width, expanding the embedding space while keeping backbone compute nearly constant. In our large-scale experiment, an 8-times expansion accelerates optimization by over 2 times for next-token and 3 times for next-2-token prediction. The advantage amplifies over training as both the loss gap grows and the convergence-speedup ratio increases, showing that VWN is not only token-efficient but also increasingly effective with scale. Moreover, we identify an approximately log-linear scaling relation between virtual width and loss reduction, offering an initial empirical basis and motivation for exploring virtual-width scaling as a new dimension of large-model efficiency.",
+    "authors": [
+      "Seed",
+      "Baisheng Li",
+      "Banggu Wu",
+      "Bole Ma",
+      "Bowen Xiao",
+      "Chaoyi Zhang",
+      "Cheng Li",
+      "Chengyi Wang",
+      "Chenyin Xu",
+      "Chi Zhang",
+      "Chong Hu",
+      "Daoguang Zan",
+      "Defa Zhu",
+      "Dongyu Xu",
+      "Du Li",
+      "Faming Wu",
+      "Fan Xia",
+      "Ge Zhang",
+      "Guang Shi",
+      "Haobin Chen",
+      "Hongyu Zhu",
+      "Hongzhi Huang"
+    ],
+    "likes": 22,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11238",
+    "date_collected": "2025-11-18T07:08:01.012838+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "가상 너비 네트워크",
+      "abstract": "가상 너비 네트워크(Virtual Width Networks, VWN)를 소개합니다. VWN은 표현의 너비를 확장시키는 이점을 얻으면서 숨겨진 크기를 증가시키는 이차 비용을 부담하지 않는 프레임워크입니다. VWN은 표현적 너비와 백본 너비를 분리하여 임베딩 공간을 확장하고 동시에 백본 계산을 거의 고정시킵니다. 대규모 실험에서 8배 확장은 다음 토큰 및 다음 2개 토큰 예측에 대해 최적화를 2배 이상 가속화합니다. 장점은 손실 갭과 수렴 속도 가속 비율이 증가함에 따라 훈련할수록 확대되며, VWN은 토큰을 효율적으로 사용할 뿐만 아니라 규모와 함께 점차적으로 효과적임을 보여줍니다. 또한, 가상 너비와 손실 감소 사이에 약 로그 선형 스케일 관계를 확인하여 대형 모델 효율성의 새로운 차원으로 가상 너비 스케일링을 탐색하는 초기 경험적 근거와 동기 부여를 제공합니다."
+    },
+    "summary": "1. 가상 너비 네트워크(VWN)는 표현의 너비를 확장하면서 숨겨진 크기를 증가시키는 이차 비용을 제거하는 프레임워크이다.\n2. 대규모 실험에서 VWN은 최적화 속도를 높이며, 손실 갭이 커지고 수렴 속도가 빨라질수록 효과가 더 커지는 것으로 나타난다.\n3. 가상 너비와 손실 감소 간에 로그 선형 스케일 관계가 있으며, 이는 대규모 모델 효율성을 높이는 새로운 가능성을 제시한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "LiteAttention: A Temporal Sparse Attention for Diffusion Transformers",
+    "abstract": "Diffusion Transformers, particularly for video generation, achieve remarkable quality but suffer from quadratic attention complexity, leading to prohibitive latency. Existing acceleration methods face a fundamental trade-off: dynamically estimating sparse attention patterns at each denoising step incurs high computational overhead and estimation errors, while static sparsity patterns remain fixed and often suboptimal throughout denoising. We identify a key structural property of diffusion attention, namely, its sparsity patterns exhibit strong temporal coherence across denoising steps. Tiles deemed non-essential at step t typically remain so at step t+δ. Leveraging this observation, we introduce LiteAttention, a method that exploits temporal coherence to enable evolutionary computation skips across the denoising sequence. By marking non-essential tiles early and propagating skip decisions forward, LiteAttention eliminates redundant attention computations without repeated profiling overheads, combining the adaptivity of dynamic methods with the efficiency of static ones. We implement a highly optimized LiteAttention kernel on top of FlashAttention and demonstrate substantial speedups on production video diffusion models, with no degradation in quality. The code and implementation details will be publicly released.",
+    "authors": [
+      "Dor Shmilovich",
+      "Tony Wu",
+      "Aviad Dahan",
+      "Yuval Domb"
+    ],
+    "likes": 21,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11062",
+    "date_collected": "2025-11-18T07:08:01.013938+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "LiteAttention: 확산 트랜스포머를 위한 시간적 희소 어텐션",
+      "abstract": "확산 트랜스포머는 특히 비디오 생성에 있어서 높은 품질을 달성하지만 제곱 시간 복잡도로 인한 지연 문제가 있습니다. 기존 가속화 방법은 기본적인 트레이드오프를 겪습니다: 각 소음 제거 단계에서 희소 어텐션 패턴을 동적으로 추정하는 것은 높은 계산적 오버헤드와 추정 오차를 발생시키는 반면, 정적 희소 패턴은 소음 제거 과정 전체에서 고정되어 종종 최적이 아닙니다. 우리는 확산 어텐션의 중요한 구조적 특성을 확인했는데, 그것은 시간적으로 강한 일관성을 갖는 희소 패턴을 보여줍니다. t 단계에서 필수가 아닌 타일은 보통 t+δ 단계에서도 그런 채로 남아 있습니다. 이 관찰을 활용하여, LiteAttention이라는 방법을 소개합니다. LiteAttention은 시간적 일관성을 활용하여 소음 제거 순서 전체에 걸쳐 진화적 계산을 스킵할 수 있도록 합니다. 필수가 아닌 타일을 일찍 표시하고 스킵 결정을 전파함으로써, LiteAttention은 반복 프로파일링 오버헤드 없이 불필요한 어텐션 계산을 제거하며, 동적 방법의 적응성과 정적 방법의 효율성을 결합합니다. 우리는 FlashAttention 위에 높은 최적화된 LiteAttention 커널을 구현하고 제작 비디오 확산 모델에서 상당한 가속화를 시연하며 품질 저하 없이 이루어졌습니다. 코드와 구현 디테일은 공개적으로 공개될 것입니다."
+    },
+    "summary": "1. 확산 트랜스포머의 어텐션 복잡성을 해결하기 위해 LiteAttention이라는 새로운 방법 제안.\n2. LiteAttention은 시간적 일관성을 활용하여 소음 제거 과정에서 불필요한 어텐션 계산을 줄이고 가속화를 달성.\n3. 확산 모델에서 LiteAttention을 적용한 결과, 큰 속도 향상을 달성함과 동시에 품질에 대한 저하 없이 작동.",
+    "categories": [
+      "LLM",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Simulating the Visual World with Artificial Intelligence: A Roadmap",
+    "abstract": "The landscape of video generation is shifting, from a focus on generating visually appealing clips to building virtual environments that support interaction and maintain physical plausibility. These developments point toward the emergence of video foundation models that function not only as visual generators but also as implicit world models, models that simulate the physical dynamics, agent-environment interactions, and task planning that govern real or imagined worlds. This survey provides a systematic overview of this evolution, conceptualizing modern video foundation models as the combination of two core components: an implicit world model and a video renderer. The world model encodes structured knowledge about the world, including physical laws, interaction dynamics, and agent behavior. It serves as a latent simulation engine that enables coherent visual reasoning, long-term temporal consistency, and goal-driven planning. The video renderer transforms this latent simulation into realistic visual observations, effectively producing videos as a \"window\" into the simulated world. We trace the progression of video generation through four generations, in which the core capabilities advance step by step, ultimately culminating in a world model, built upon a video generation model, that embodies intrinsic physical plausibility, real-time multimodal interaction, and planning capabilities spanning multiple spatiotemporal scales. For each generation, we define its core characteristics, highlight representative works, and examine their application domains such as robotics, autonomous driving, and interactive gaming. Finally, we discuss open challenges and design principles for next-generation world models, including the role of agent intelligence in shaping and evaluating these systems. An up-to-date list of related works is maintained at this link.",
+    "authors": [
+      "Jingtong Yue",
+      "Ziqi Huang",
+      "Zhaoxi Chen",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Ziwei Liu"
+    ],
+    "likes": 17,
+    "published_date": "Nov 11",
+    "url": "https://huggingface.co/papers/2511.08585",
+    "date_collected": "2025-11-18T07:08:01.015123+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "인공 지능을 활용한 시각적 세계 시뮬레이션: 로드맵",
+      "abstract": "비디오 생성의 풍경이 변화하고 있습니다. 시각적으로 매력적인 클립을 생성하는 데서 출발하여 상호 작용을 지원하고 물리적 타당성을 유지하는 가상 환경을 구축하는 방향으로 진화하고 있습니다. 이 연구는 현대 비디오 기반 모델을 두 가지 핵심 구성 요소인 암시적 세계 모델과 비디오 렌더러의 조합으로 이해하는 체계적 개요를 제시합니다. 세계 모델은 물리 법칙, 상호 작용 역학, 그리고 에이전트 행동과 같은 세계에 대한 구조화된 지식을 부호화합니다. 비디오 렌더러는 이러한 잠재적 시뮬레이션을 현실적인 시각적 관측으로 변환하여 모방된 세계의 \"창문\"으로 비디오를 효과적으로 생성합니다."
+    },
+    "summary": "1. 비디오 생성이 시각적으로 매력적인 클립에서 상호 작용을 지원하고 물리적 타당성을 유지하는 가상 환경 구축으로 진화함.\n2. 현대 비디오 기반 모델은 암시적 세계 모델과 비디오 렌더러 두 가지 핵심 구성 요소로 이해됨.\n3. 세계 모델은 물리 법칙, 상호 작용 역학, 에이전트 행동 등 세계에 대한 구조화된 지식을 부호화하며 시각적 추론, 장기적 시간 일관성, 목표 주도적 계획을 가능케 함.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards",
+    "abstract": "Multimodal large language models (MLLMs) have achieved remarkable progress in vision-language tasks, but they continue to struggle with spatial understanding. Existing spatial MLLMs often rely on explicit 3D inputs or architecture-specific modifications, and remain constrained by large-scale datasets or sparse supervision. To address these limitations, we introduce SpatialThinker, a 3D-aware MLLM trained with RL to integrate structured spatial grounding with multi-step reasoning. The model simulates human-like spatial perception by constructing a scene graph of task-relevant objects and spatial relations, and reasoning towards an answer via dense spatial rewards. SpatialThinker consists of two key contributions: (1) a data synthesis pipeline that generates STVQA-7K, a high-quality spatial VQA dataset, and (2) online RL with a multi-objective dense spatial reward enforcing spatial grounding. SpatialThinker-7B outperforms supervised fine-tuning and the sparse RL baseline on spatial understanding and real-world VQA benchmarks, nearly doubling the base-model gain compared to sparse RL, and surpassing GPT-4o. These results showcase the effectiveness of combining spatial supervision with reward-aligned reasoning in enabling robust 3D spatial understanding with limited data and advancing MLLMs towards human-level visual reasoning.",
+    "authors": [
+      "Hunar Batra",
+      "Haoqin Tu",
+      "Hardy Chen",
+      "Yuanze Lin",
+      "Cihang Xie",
+      "Ronald Clark"
+    ],
+    "likes": 10,
+    "published_date": "Nov 10",
+    "url": "https://huggingface.co/papers/2511.07403",
+    "date_collected": "2025-11-18T07:08:01.016338+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "SpatialThinker: 3D 공간 추론 강화를 통한 다중모달 LLMs",
+      "abstract": "다중모달 대형 언어 모델(MLLMs)은 시각-언어 과제에서 놀라운 진전을 이룩했지만, 공간 이해력에는 여전히 어려움을 겪고 있습니다. 기존의 공간 MLLMs은 명시적 3D 입력이나 아키텍처 특정 수정에 의존하며, 대규모 데이터셋이나 희소한 지도에 제약을 받고 있습니다. 이러한 제약을 해결하기 위해, 우리는 SpatialThinker를 소개합니다. 이는 RL로 훈련된 3D 인식 MLLM으로 구조화된 공간 기반을 다단계 추론과 통합합니다."
+    },
+    "summary": "1. SpatialThinker는 고밀도 공간 보상을 통해 구조화된 공간 기반을 결합한 RL로 훈련된 3D 인식 MLLM 모델입니다.\n2. STVQA-7K라는 고품질 공간 VQA 데이터셋을 생성하는 데이터 합성 파이프라인과, 다중목적 밀집한 공간 보상을 적용하는 온라인 RL 기술을 제공합니다.\n3. SpatialThinker-7B는 희소한 RL 베이스라인 및 지도된 미세 튜닝을 능가하며, 실제 세계 VQA 벤치마크에서 뛰어난 성과를 보이며, 제한된 데이터로 강력한 3D 공간 이해력을 가능케 하고 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "HI-TransPA: Hearing Impairments Translation Personal Assistant",
+    "abstract": "To provide a unified and flexible solution for daily communication among hearing-impaired individuals, we introduce the Omni-Model paradigm into assistive technology and present HI-TransPA, an instruction-driven audio-visual personal assistant. The model fuses indistinct speech with high-frame-rate lip dynamics, enabling both translation and dialogue within a single multimodal framework. To tackle the challenges of noisy and heterogeneous raw data and the limited adaptability of existing Omni-Models to hearing-impaired speech, we construct a comprehensive preprocessing and curation pipeline that detects facial landmarks, isolates and stabilizes the lip region, and quantitatively assesses multimodal sample quality. These quality scores guide a curriculum learning strategy that first trains on clean, high-confidence samples and progressively incorporates harder cases to strengthen model robustness. We further adopt a SigLIP encoder combined with a Unified 3D-Resampler to efficiently encode high-frame-rate lip motion. Experiments on our purpose-built HI-Dialogue dataset show that HI-TransPA achieves state-of-the-art performance in both literal accuracy and semantic fidelity. This work establishes a foundation for applying Omni-Models to assistive communication technology, providing an end-to-end modeling framework and essential processing tools for future research.",
+    "authors": [
+      "Zhiming Ma",
+      "Shiyu Gan",
+      "Junhao Zhao",
+      "Xianming Li",
+      "Qingyun Pan",
+      "Peidong Wang",
+      "Mingjun Pan",
+      "Yuhao Mo",
+      "Jiajie Cheng",
+      "Chengxin Chen",
+      "Zhonglun Cao",
+      "Chonghan Liu",
+      "Shi Cheng"
+    ],
+    "likes": 6,
+    "published_date": "Nov 13",
+    "url": "https://huggingface.co/papers/2511.09915",
+    "date_collected": "2025-11-18T07:08:01.017825+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "청각장애 번역 개인 비서 HI-TransPA",
+      "abstract": "청각 장애인들 간의 일상 소통을 위한 통합적이고 유연한 솔루션을 제공하기 위해 우리는 보조 기술에 옴니-모델 패러다임을 도입하고 HI-TransPA, 명령에 따른 오디오-시각적 개인 비서를 제안합니다. 이 모델은 불분명한 음성과 고프레임 립 다이내믹스를 융합하여 번역과 대화를 단일 멀티모달 프레임워크 내에서 가능하게 합니다."
+    },
+    "summary": "1. 오디오-시각적 개인 비서인 HI-TransPA는 보조 기술에 옴니-모델을 적용하여 청각 장애인들의 소통을 돕습니다.\n2. 다양한 노이즈와 데이터에 한정적으로 적응하는 문제를 해결하기 위해 전처리 및 정제 파이프라인을 사용하여 성능을 향상시킵니다.\n3. HI-TransPA는 HI-Dialogue 데이터셋에서 실험을 통해 리터럴 정확도와 의미적 충실도 모두에서 최고 수준의 성과를 달성하였습니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  }
+]

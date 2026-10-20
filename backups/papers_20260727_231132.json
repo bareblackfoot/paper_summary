@@ -1,0 +1,224 @@
+[
+  {
+    "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
+    "abstract": "Agentic reinforcement learning research is constant algorithm modification, new estimators, new pipeline stages, new rollout schemes, and in mainstream frameworks each change threads through layers of trainer, distributed backend, and rollout glue: the cost lands on the researcher at every iteration. Molt is a PyTorch-native training framework built to keep that cost small: a codebase compact and clean enough for a researcher to hold in their head, and for an AI coding assistant to read and reason about in its entirety, so the algorithm flow can be traced and changed end to end. The agent is an ordinary program, and one asynchronous loop trains multimodal and mixture-of-experts policies while never training on a token it did not generate, consistent in tokens, policy versions, and model semantics. Leanness does not cost performance: under a matched, fully asynchronous protocol, Molt is statistically comparable to a state-of-the-art Megatron-based stack. Molt is open source and provides recipes and containers at https://github.com/NVIDIA-NeMo/labs-molt.",
+    "authors": [
+      "Jian Hu",
+      "Huiying Li",
+      "Hao Zhang",
+      "Binfeng Xu",
+      "Yifan Zhang",
+      "Shaokun Zhang",
+      "Hemil Desai",
+      "Michael Demoret",
+      "Pavlo Molchanov",
+      "Jan Kautz",
+      "Yi Dong"
+    ],
+    "likes": 8,
+    "published_date": "Jul 22",
+    "url": "https://huggingface.co/papers/2607.21653",
+    "date_collected": "2026-07-27T13:39:48.758720+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "Molt: 에이전틱 강화 학습을 위한 확장 가능한 PyTorch 네이티브 트레이닝 프레임워크",
+      "abstract": "에이전틱 강화 학습 연구는 지속적인 알고리즘 수정, 새로운 추정기, 새로운 파이프라인 단계, 새로운 롤아웃 체계가 필요한데 주요 프레임워크에서 각 변경 사항은 트레이너, 분산 백엔드 및 롤아웃 체인에 걸친다. Molt는 이러한 비용을 최소화하기 위해 만들어진 PyTorch 네이티브 트레이닝 프레임워크로, 연구자가 한 번에 이해하고 인공지능 코딩 어시스턴트가 전체를 읽고 추론할 수 있는 정돈된 코드베이스를 제공하여 알고리즘 흐름을 추적하고 끝에서 끝으로 변경할 수 있게 합니다. 에이전트는 일반 프로그램이며 비동기 루프는 멀티모달 및 전문가 믹스 정책을 훈련시키면서 생성하지 않은 토큰에 대한 훈련은 하지 않으며 토큰, 정책 버전 및 모델 의미론에서 일관성을 유지합니다. 가볍기 때문에 성능에 손해가 없으며, 일치하는 완전 비동기 프로토콜에서 Molt는 최신 Megatron 기반 스택과 통계적으로 비교 가능합니다. Molt는 오픈 소스이며 https://github.com/NVIDIA-NeMo/labs-molt에서 레시피와 컨테이너를 제공합니다."
+    },
+    "summary": "1. Molt는 에이전트가 일반 프로그램이 되어 토큰을 생성하지 않은 토큰에 대한 훈련을 하지 않으면서 성능 손실 없이 멀티모달 및 전문가 믹스 정책을 훈련시키는 PyTorch 네이티브 트레이닝 프레임워크이다.\n2. Molt는 알고리즘의 변경 사항을 연구자가 이해하기 쉽고 인공지능 코딩 어시스턴트가 전체를 이해하고 추론할 수 있을만큼의 정돈된 코드베이스를 제공하여 효율적인 알고리즘 흐름 추적과 변경을 가능케 한다.\n3. 최신 Megatron 기반 스택에 통계적으로 비교 가능한 성능을 유지하면서도 Molt는 비용을 최소화하고 효율적인 강화 학습 훈련을 위한 레시피와 컨테이너를 제공한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+    "abstract": "LLM training is shifting from manual design and annotation to interaction-driven self-evolution. However, existing self-evolutionary methods face a fundamental dilemma between task diversity and verification reliability: environment-bound methods obtain precise feedback but confine learning to narrow domains, while open-ended self-generation broadens the task space but lacks reliable verification, allowing misleading rewards to pollute the training loop. We identify agent skills as a powerful middle ground to reconcile this tension: each skill ensures deep, verifiable execution in a specific scenario, while dynamic routing across skills maintains open-ended task variety. Leveraging this insight, we introduce Skill Self-Play (Skill-SP), a co-evolutionary framework comprising a proposer, a solver, and a dynamic skill controller. Orchestrated via a reinforcement learning loop, these components co-evolve in a continuous self-play loop: the proposer generates challenging tasks conditioned on dynamically sampled skills; the solver explores candidate solutions to push its capability boundaries; and the skill controller collects execution feedback to update and expand the skill library. This interactive co-evolution effectively bridges the gap between structured verification and open-ended exploration. Empirical evaluations on tool-use and reasoning benchmarks demonstrate that Skill-SP, serving as a robust evolution engine, consistently pushes the performance ceiling of competent backbones while catalyzing striking turnarounds for initially misaligned models. Our code is available at https://github.com/Qwen-Applications/skill-self-play.",
+    "authors": [
+      "Siyuan Huang",
+      "Pengyu Cheng",
+      "Haotian Liu",
+      "Tao Chen",
+      "Yihao Liu",
+      "Jingwei Ni",
+      "Shijie Zhou",
+      "Ziyi Yang",
+      "Gangwei Jiang",
+      "Mengyu Zhou",
+      "Yu Cheng",
+      "Xiaoxi Jiang",
+      "Guanjun Jiang"
+    ],
+    "likes": 6,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2607.22529",
+    "date_collected": "2026-07-27T13:39:48.762282+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "스킬 셀프 플레이: 공동 진화 스킬로 LLM 능력의 전방위 개척",
+      "abstract": "LLM 훈련은 수동 설계와 주석에서 상호작용 주도적인 자기 진화로 전환되고 있습니다. 그러나 기존의 자기 진화 방법은 작업의 다양성과 확인 신뢰성 사이의 근본적인 딜레마를 직면하고 있습니다: 환경에 구속된 방법은 정확한 피드백을 얻지만 학습을 좁은 영역으로 제한하며, 열린 자기 생성은 작업 공간을 확장하지만 확인이 믿을만한 정확성을 갖추지 못해 헷갈리는 보상이 훈련 루프를 오염시키게 합니다. 우리는 에이전트 스킬을 이 긴장을 해소할 강력한 중간 지점으로 식별했습니다: 각 스킬은 특정 시나리오에서 심층적이고 확인 가능한 실행을 보증하며, 스킬 간의 동적 라우팅은 열린 작업의 다양성을 유지합니다. 이 통찰력을 활용하여, 우리는 스킬 셀프 플레이 (Skill-SP)를 소개합니다. 제안자, 해결자 및 동적 스킬 컨트롤러로 구성된 공동 진화 프레임워크입니다. 강화 학습 루프를 통해 조율되며, 이러한 구성 요소는 지속적인 자가 플레이 루프에서 공동으로 진화합니다: 제안자는 동적으로 샘플링된 스킬에 의존한 도전 과제를 생성합니다. 해결자는 능력 경계를 넓히기 위해 후보 해법을 탐색하며, 스킬 컨트롤러는 실행 피드백을 수집하여 스킬 라이브러리를 업데이트하고 확장합니다. 이 상호 작용적인 공동 진화는 구조화된 확인과 열린 탐험 간의 격차를 효과적으로 극복합니다. 도구 사용 및 추론 벤치마크에서의 실험적 평가는, 강력한 진화 엔진으로 작용하는 Skill-SP가 경쟁력 있는 백본의 성능 천장을 일꾼 모델의 처음에 대한 빼어난 변화를 촉진하는 것을 보여줍니다. 코드는 https://github.com/Qwen-Applications/skill-self-play에서 제공됩니다."
+    },
+    "summary": "1. LLM 훈련은 자기 진화로 발전하고 있으며, 스킬 셀프 플레이를 통해 다양성과 확인 신뢰성 사이의 딜레마를 해소하며 열린 작업 공간을 확장합니다.\n2. 스킬 셀프 플레이는 제안자, 해결자, 동적 스킬 컨트롤러로 구성된 프레임워크로, 강화 학습 루프에서 공동 진화하여 성능 천장을 끊임없이 높입니다.\n3. 실험 결과는 Skill-SP가 강력한 진화 엔진으로 작용하여, 백본 모델의 능력을 향상시키고 초기에 잘못 정렬된 모델들에 대해 놀라운 변화를 이끌어냄을 입증합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Scaling Native Multimodal Pre-Training From Scratch",
+    "abstract": "Although large language models (LLMs) exhibit remarkable reasoning capabilities, their reliance on text-only pre-training restricts the perception of the multimodal physical world. Native multimodal pre-training avoids this limitation by training models from scratch on multimodal inputs, thereby achieving deep cross-modal integration and mitigating optimization asymmetries inherent to traditional late-fusion architectures. Despite these advantages, the scaling properties of this paradigm remain systematically uncharacterized. To address this gap, we investigate the optimal model size and token count for training a transformer-based vision-language model under a fixed computational budget. We demonstrate that minimal objective loss adheres to a predictable compute law, whereas compute-optimal model sizes and token counts scale as power laws. Notably, language and multimodal objectives manifest distinct scaling behaviors. The language allocation law is largely invariant to the composition of the data, indicating stable language learning regardless of the multimodal data ratio. Conversely, the multimodal allocation law is highly sensitive to this composition. Specifically, text-heavy mixtures become compute-efficient only at larger model scales, shifting the optimal resource allocation toward greater model capacity. Additionally, by modeling the influence of data composition on compute laws and allocation exponents, we derive an efficiency frontier specifying precise configurations of model size, token count, and data mixture. Downstream evaluations further reveal that native multimodal pre-training induces positive cross-modal transfer, thereby enhancing pure-text spatial reasoning and enabling robust multimodal in-context learning. In summary, this empirical research establishes the essential groundwork for predictably scaling multimodal foundation models.",
+    "authors": [
+      "Haoyuan Wu",
+      "Aoqi Wu",
+      "Hai Wang",
+      "Jiajia Wu",
+      "Jinxiang Ou",
+      "Bei Yu"
+    ],
+    "likes": 5,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2607.22043",
+    "date_collected": "2026-07-27T13:39:48.765581+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "처음부터 규모별 로컬 다중모달 사전훈련 확장",
+      "abstract": "대규모 언어 모델(LLM)은 감각적 물리적 세계 지각을 제한하는 텍스트만 사전훈련에 의존함에도 놀라운 추론 능력을 나타냅니다. 로컬 다중모달 사전훈련은 다중모달 입력으로 모델을 처음부터 훈련하여 전통적인 후반합 구조의 최적화 비대칭을 완화하고 깊은 교차 모달 통합을 달성함으로써 이 제한을 피합니다. 하지만 이 패러다임의 규모 확장 특성은 체계적으로 특성화되지 않았습니다. 따라서 우리는 고정된 계산 예산 하에서 비전-언어 모델을 훈련하기 위한 최적 모델 크기와 토큰 수를 조사했습니다.  결과적으로 로컬 다중모달 사전훈련은 양립하는 매력적인 교차 모달 전달을 유도하며 순수 텍스트 공간 추론을 강화하고 견고한 다중모달 문맥 학습을 가능케하여 다양한 평가에서 긍정적인 효과를 보여줍니다."
+    },
+    "summary": "1. 텍스트만 사전훈련을 피한 로컬 다중모달 사전훈련은 깊은 교차 모달 통합을 통해 최적화 비대칭을 완화합니다.\n2. 최적 모델 크기와 토큰 수가 스케일 법칙에 따라 확장되며, 언어 및 다중모달 목표 간 스케일링 행동이 다릅니다.\n3. 데이터 구성이 계산 법칙 및 할당 지수에 미치는 영향을 모델링하여 효율적인 로컬 다중모달 사전훈련 구성을 도출했습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "IDEAgent: Agentic Quality-Diversity Search for Research Idea Generation",
+    "abstract": "Large Language Models (LLMs) have significantly automated the process of scientific discovery over the past few years. However, existing systems share one core limitation: they generate and optimize ideas independently for either Quality or Diversity. This often leads to the generation of ideas in close proximity to one another or to a large set of trivial, unsound, or unclear concepts. In this work, we instead argue that research ideation should be treated as a conjunction of both objectives and framed as a Quality-Diversity (QD) search. In line with this perspective, we introduce IDEAgent, a multi-agent framework that manages the evolution of ideas through lineages. We jointly drive Quality using multi-objective feedback for dedicated repair and refinement, while Diversity is achieved through lightweight sequential memory and explicit comparison against completed ideas, their historical ancestors, and rejected proposals. To systematically evaluate this QD conjunction, we develop Yield, a joint metric that computes the largest set of mutually diverse ideas that satisfy a predetermined quality threshold. Finally, through evaluations across 32 topics spanning 8 domains of Computer Science, we show that IDEAgent outperforms the best baseline by 3.89x on Yield, while achieving non-zero Yield on 8x more topics. We further corroborate these findings through an analysis of quality improvements, showing that repair and refinement are crucial for building logical rigor and clarity while preserving non-obviousness. To encourage future research on QD-search-based ideation, we open-source IDEAgent at https://github.com/declare-lab/IDEAgent.",
+    "authors": [
+      "Varun Gumma",
+      "Navonil Majumder",
+      "Soumitra Sinhahajari",
+      "Soujanya Poria"
+    ],
+    "likes": 3,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2607.22375",
+    "date_collected": "2026-07-27T13:39:48.768616+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "IDEAgent: 연구 아이디어 생성을 위한 자발적 품질-다양성 검색",
+      "abstract": "최근 몇 년 동안 Large Language Models(LLMs)가 과학적 발견 과정을 크게 자동화했습니다. 그러나 기존 시스템들은 한 가지 핵심 제한을 공유합니다: 품질(Quality) 또는 다양성(Diversity) 중 하나를 위해 아이디어를 독립적으로 생성하고 최적화합니다. 이는 종종 서로 가까운 위치에 아이디어가 생성되거나 대량의 사소한, 잘못된 또는 분명하지 않은 개념이 생성되도록 이끌어집니다. 본 연구에서는 연구 아이디어 생성을 품질-다양성(Quality-Diversity, QD) 검색의 결합으로 다루어야 하며, 이 관점에 따라 아이디어를 진화시키는 다중 에이전트 프레임워크인 IDEAgent를 소개합니다. 우리는 품질을 다중 목적 피드백을 통해 전담 수리 및 정제를 통해 동시에 추진하고, 다양성은 가볍게 순차적인 메모리와 완료된 아이디어, 그들의 역사적 조상 및 거부된 제안에 대한 명시적 비교를 통해 이루어집니다. 이 QD 결합을 체계적으로 평가하기 위해 Yield라는 공동 메트릭을 개발하여 사전에 정의된 품질 임계값을 충족하는 상호 다양한 아이디어 집합을 계산합니다. 컴퓨터 과학의 8가지 영역을 포함한 32개 주제를 대상으로 한 평가를 통해 IDEAgent가 Yield에서 최고의 베이스라인을 3.89배 능가하면서 8배 더 많은 주제에서 0이 아닌 Yield를 달성하는 것을 보여줍니다. 우리는 논리적 엄밀성과 명확성을 구축하는 데 수리 및 정제이 중요하며 동시에 명백하지 않음을 유지하는 것을 보여주는 품질 향상 분석을 통해 이러한 결과를 더 확증합니다. QD-검색 기반 아이디어화에 대한 미래 연구를 촉진하기 위해 우리는 IDEAgent를 https://github.com/declare-lab/IDEAgent에 오픈 소스로 공개합니다."
+    },
+    "summary": "1. IDEAgent는 품질과 다양성을 동시에 고려하는 아이디어 생성을 위한 다중 에이전트 프레임워크로, 품질은 다중 목적 피드백을 통해, 다양성은 순차적인 메모리와 완료된 아이디어 비교를 통해 유지됩니다.\n2. 이 연구에서는 QD(Quality-Diversity) 검색을 통해 사전 정의된 품질 기준을 충족하는 상호 다양한 아이디어 집합을 산출하는 Yield 메트릭을 도입하며, 이를 통해 IDEAgent가 다양한 주제에서 우수한 성과를 보였습니다.\n3. IDEAgent의 평가 결과, 최고의 베이스라인을 3.89배 초과하며, 논리적 엄밀성과 명확성을 향상시키는 데 수리 및 정제가 중요하며, 명백하지 않은 아이디어를 유지하는 데 도움이 된다는 사실을 확인했습니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+    "abstract": "Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only describe them. Existing 3D benchmarks score textual responses or single-object operations, leaving agent action on complete multi-object 3D scenes under evaluated. We present SceneActBench, a benchmark for visually conditioned action across five 3D tasks under a unified agent-environment loop. Given PNG images or sampled video frames and, where applicable, supplied 3D assets, an agent acts on a 3D environment. We evaluate each final output against hidden ground truth with task-specific geometric metrics. SceneActBench comprises five tasks built from 210 source instances, yielding 520 task cases including paired input conditions. Every task runs through one fixed agent loop to keep the comparison fair. Across eleven proprietary VLM configurations, Overall scores span 38.6-50.2, and none performs consistently well across tasks. We further analyse where and how failures manifest.",
+    "authors": [
+      "Yifei Zhao",
+      "Xiangxin Zhou",
+      "Wenhao Yang",
+      "Jiaqi Tang",
+      "Pu Jian",
+      "Huanjin Yao",
+      "Jiarui Yao",
+      "Haowei Lin",
+      "Chunchao Guo",
+      "Zhuo Chen",
+      "Wenkai Lyu",
+      "Jianzhu Ma",
+      "Xueqian Wang",
+      "Wenxi Zhu"
+    ],
+    "likes": 3,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2607.22393",
+    "date_collected": "2026-07-27T13:39:48.771961+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "SceneActBench: 그들이 본 3D 장면에서 행동할 수 있을까?",
+      "abstract": "시각-언어 모델 (Vision-language model, VLM) 에이전트들은 묘사뿐만 아니라 3D 장면에서 행동하는 데 사용되는 도구를 점차적으로 사용하고 있습니다. 기존 3D 벤치마크는 텍스트 응답이나 단일 객체 조작을 평가하는 반면, 에이전트의 3D 장면 전반에 걸친 행동을 충분히 평가하지 못합니다. SceneActBench는 다섯 가지 3D 작업에서 통합된 에이전트-환경 루프 아래 시각적으로 조건부로 행동하는 벤치마크를 제시합니다. PNG 이미지나 샘플된 비디오 프레임 및 적용 가능한 경우 제공된 3D 자산을 주어진 채 에이전트는 3D 환경에서 행동합니다. 우리는 각 최종 출력물을 작업별 기하학적 메트릭을 사용하여 숨겨진 참값과 비교합니다. SceneActBench는 210개의 소스 인스턴스를 기반으로 한 다섯 가지 작업으로 구성되며, 입력 상황이 쌍으로 존재하는 520개의 작업 케이스를 생성합니다. 모든 작업은 공정한 비교를 유지하기 위해 고정된 에이전트 루프를 통해 실행됩니다. 11가지의 VLM 구성에 걸쳐서, 전체 점수는 38.6에서 50.2로 분포하며, 어느 것도 작업 전반에 걸쳐 일관된 좋은 성과를 보여주지 않습니다. 우리는 실패가 어디에서 어떻게 나타나는지 추가로 분석합니다."
+    },
+    "summary": "1. 기존 3D 벤치마크는 에이전트가 다중 객체 3D 장면에서 어떻게 행동해야 하는지 충분히 평가하지 못해, SceneActBench는 이에 도전합니다.\n2. SceneActBench는 3D 작업의 시각적으로 조건부 행동을 평가하고, 고정된 에이전트 루프를 통해 공정한 비교를 제공합니다.\n3. 다양한 VLM 구성에 따른 결과를 평가하여, 어떤 VLM도 모든 작업에서 일관된 우수한 성과를 내지 못한다는 사실을 밝혔으며, 실패가 발생하는 이유를 분석하였습니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Closing the Loop: Training-Free Revisit Consistency for Autoregressive Generative Rendering",
+    "abstract": "Recent conditional video generation models have shown promising potentials to transform 3D engine renderings, such as depth maps and untextured geometry, into photorealistic videos for gaming and immersive content creation. These applications require long-horizon auto-regressive generation that continuously synthesizes new frames while preserving a persistent 3D world. Auto-regressive generators synthesize video chunk by chunk with a bounded KV cache, so when the camera revisits a location after its context has been evicted, the model often regenerates inconsistent appearance, even though the conditioning renderings (e.g., depth) remain perfectly aligned with the underlying geometry.We address this revisit inconsistency without any post-training by exploiting correspondences the 3D engine already provides: temporal correspondence retrieves pose-matched historical latent chunks into the KV cache as loop-closure memory, while spatial correspondence from camera pose and depth reprojection biases token-level attention toward geometrically corresponding regions of the retrieved chunks. We demonstrate our method on loop-closure trajectories mined from TartanAir and TartanGround dataset to mirror complicate real-world application scenarios, where it outperforms existing training-free baselines on revisit consistency without losing overall video quality. Project Page: https://wenchao-m.github.io/ClosetheLoop.github.io/",
+    "authors": [
+      "Wenchao Ma",
+      "Changran Liu",
+      "Sharon X. Huang",
+      "Haomiao Jiang"
+    ],
+    "likes": 2,
+    "published_date": "Jul 23",
+    "url": "https://huggingface.co/papers/2607.21848",
+    "date_collected": "2026-07-27T13:39:48.774883+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "루프 폐쇄: 훈련 필요없는 재방문 일관성을 위한 자기 회귀적 생성 렌더링",
+      "abstract": "최근 조건付 비디오 생성 모델은 게임 및 몰입형 콘텐츠 제작을 위해 3D 엔진 렌더링(예: 깊이 맵 및 비질각 기하학)을 사실적 비디오로 변환하는 데 유망한 잠재력을 보여주었다. 이러한 응용 프로그램은 계속 새로운 프레임을 합성하면서 지속적인 3D 세계를 유지하는 장기 자회귀 생성을 필요로 한다. 자회귀 생성자는 제한된 KV 캐시로 비디오를 조각 조각 합성하기 때문에 카메라가 컨텍스트가 삭제된 후에 위치를 재방문하면, 모델은 종종 일관성 없는 외관을 재생산한다. 이는 컨디셔닝 렌더링(예: 깊이)이 기하학적으로 일치하지만 모델이 일관성 없는 외관을 재생산하는 경우가 많다. 우리는 이미지 무결성을 보존하며 후처리 없이 재방문 불일치를 다룬다. [원문 중 일부 생략]"
+    },
+    "summary": "1. 최근 조건부 비디오 생성 모델은 3D 엔진 렌더링을 사실적 비디오로 변환하는 데 유망한 잠재력을 보임.\n2. 장기 자회귀 생성이 필요한 응용 프로그램에서 재방문 일관성 문제를 해결하기 위한 새로운 방법을 제안.\n3. 카메라 위치 재방문 시 외관 불일치 문제를 해결하기 위해 공간 및 시간적 일치를 활용한 방법을 소개.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "LAMAR: An Open Language-Aware Multilingual Alignment Reranker",
+    "abstract": "In multilingual retrieval augmented generation, a retriever can retrieve relevant documents written in multiple languages, which are subsequently reranked before answer generation. However, it remains unclear whether existing multilingual rerankers consider document language when ordering semantically relevant candidates. Our analysis shows that these rerankers do not consistently prioritize documents written in the same language as the query when semantically equivalent documents are available across languages, even though document language can affect answer generation. We release LAMAR, a language aware multilingual cross encoder trained to account for both semantic relevance and language coherence. LAMAR first uses English anchored relevance distillation to establish consistent relevance scoring across multilingual inputs and then applies preference alignment for language coherence to encourage documents written in the same language as the query to receive higher rankings while retaining semantic relevance. In a controlled experiment designed to assess language coherence, LAMAR achieves the best performance overall and across all languages examined individually. LAMAR also remains competitive on established multilingual reranking benchmarks. In practical retrieval settings, LAMAR achieves the best results across all reported metrics when reranking candidates retrieved in the first stage. These results demonstrate that LAMAR accounts for language coherence while achieving strong performance on general multilingual reranking benchmarks.",
+    "authors": [
+      "Seongtae Hong",
+      "Youngjoon Jang",
+      "Jungseob Lee",
+      "Seungyoon Lee",
+      "Heuiseok Lim"
+    ],
+    "likes": 1,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2607.22042",
+    "date_collected": "2026-07-27T13:39:48.778027+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "LAMAR: 오픈 언어인식 다국어 정렬 재랭커",
+      "abstract": "다국어 검색 보강 생성에서, 리트리버는 다국어로 작성된 관련 문서를 검색한 후 응답 생성 전 재정렬됩니다. 그러나 기존의 다국어 재랭커들이 문서 언어를 고려하여 의미론적으로 관련 있는 후보를 정렬하는지 여전히 명확하지 않습니다. 우리의 분석 결과, 이러한 재랭커들이 다국어로 사용 가능한 의미론적으로 동등한 문서가 있을 때 쿼리와 동일한 언어로 작성된 문서를 우선적으로 다루지 않음을 보여줍니다. 그러나 문서 언어는 응답 생성에 영향을 줄 수 있습니다. 우리는 LAMAR을 발표합니다. 이는 언어 일치와 의미론적 관련성을 모두 고려하도록 훈련된 언어인식 다국어 크로스 인코더입니다."
+    },
+    "summary": "1. LAMAR은 다국어 입력에서 일관된 관련성 점수를 제공하고 언어 일치를 유지하면서 동일 언어 문서에 더 높은 순위를 부여하여 언어 일치를 고려합니다.\n2. 실험에서 LAMAR은 언어 일치를 평가하기 위해 설계된 실험에서 전반적으로 최고의 성능을 보이며 모든 개별 언어에 대해 최고의 성능을 달성합니다.\n3. LAMAR은 전체적인 성능측정에서 최상의 결과를 달성하며 이미 확립된 다국어 재랭킹 벤치마크에서 경쟁력을 유지합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "VisCo: Leveraging Large Language Models as Intrinsic Encoders for Visual Token Compression",
+    "abstract": "Vision-language models (VLMs) process large numbers of visual tokens, resulting in substantial inference latency and memory overhead. This has motivated extensive research on visual token compression. While training-free strategies rely on heuristic metrics and suffer significant performance degradation under high compression ratios, many training-based methods introduce external compression modules that force the VLM backbone to adapt, incurring substantial retraining cost and compromising VLMs' priors. Effective visual token compression hinges on strong information encoding, a capability already present in pretrained VLMs but underutilized by existing approaches. Motivated by this, we propose VisCo, a training-efficient self-compression framework that reuses the pretrained VLM itself as an intrinsic compressor. VisCo is a parameter-sharing autoencoder that compresses visual information using a small set of memory tokens and transfers hierarchical information from encoding to decoding. Experiments show that VisCo surpasses prior methods across all evaluated compression ratios, with larger gains under more aggressive compression, and remains stable even in the extreme single-token setting. Moreover, when combined with the original visual tokens, the learned memory tokens can even improve the base model, suggesting that VisCo captures complementary representations beyond compression.",
+    "authors": [
+      "Yupeng Zheng",
+      "Kai Zou",
+      "Bin Liu",
+      "Nenghai Yu"
+    ],
+    "likes": 1,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2607.12756",
+    "date_collected": "2026-07-27T13:39:48.780930+09:00",
+    "week": "2026-W31",
+    "translation": {
+      "title": "VisCo: 시각 토큰 압축을 위한 내재 인코더로서 대용량 언어 모델 활용",
+      "abstract": "시각-언어 모델(VLMs)은 많은 시각 토큰을 처리함으로써 추론 지연과 메모리 부담이 많아지게 됩니다. 이에 시각 토큰 압축에 대한 많은 연구가 이루어지고 있습니다. 하이퍼파라미터에 의존하는 무지면 기법은 압축 비율이 높아질수록 성능이 크게 저하되지만, 많은 훈련 기반 방법들은 외부 압축 모듈을 도입하여 VLM 백본이 적응해야 하므로 많은 재훈련 비용과 VLM의 선행 지식 손실을 야기합니다. 효과적인 시각 토큰 압축은 이미 선훈 VLM에 존재하는 강력한 정보 인코딩 능력에 달려 있지만 기존 방법들에서 이를 충분히 활용하지 않고 있습니다. 이에 우리는 VisCo를 제안합니다. 이는 훈련 효율적인 자체 압축 프레임워크로, 선훈된 VLM 자체를 내재 압축기로 재활용합니다. VisCo는 소량의 메모리 토큰을 사용하여 시각 정보를 압축하는 매개변수 공유 오토인코더이며 인코딩에서 디코딩으로 계층적 정보를 전달합니다. 실험 결과, VisCo가 모든 평가된 압축 비율에서 이전 방법을 능가하며, 더 강력한 압축에서 더 큰 이점을 제공하며, 극단적인 단일 토큰 설정에서도 안정성을 유지합니다. 게다가, 원래의 시각 토큰과 결합할 때, 학습된 메모리 토큰은 기본 모델을 향상시킬 수 있으며, VisCo가 압축 이상의 보조적인 표현을 포착한다는 것을 시사합니다."
+    },
+    "summary": "1. 대규모 언어 모델을 내재 압축기로 활용하여 시각 토큰을 효율적으로 압축하는 VisCo 제안.\n2. VisCo는 매개변수 공유 오토인코더로 구성되어 시각 정보를 소량의 메모리 토큰을 통해 압축하고 계층적 정보 전달 방식 사용.\n3. 실험 결과, VisCo는 기존 방법을 능가하며 더 강력한 압축에서 더 큰 이점을 제공하고, 학습된 메모리 토큰은 기본 모델을 향상시키는 보조적 표현을 제공.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

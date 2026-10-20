@@ -1,0 +1,352 @@
+[
+  {
+    "title": "Demystifing Video Reasoning",
+    "abstract": "Recent advances in video generation have revealed an unexpected phenomenon: diffusion-based video models exhibit non-trivial reasoning capabilities. Prior work attributes this to a Chain-of-Frames (CoF) mechanism, where reasoning is assumed to unfold sequentially across video frames. In this work, we challenge this assumption and uncover a fundamentally different mechanism. We show that reasoning in video models instead primarily emerges along the diffusion denoising steps. Through qualitative analysis and targeted probing experiments, we find that models explore multiple candidate solutions in early denoising steps and progressively converge to a final answer, a process we term Chain-of-Steps (CoS). Beyond this core mechanism, we identify several emergent reasoning behaviors critical to model performance: (1) working memory, enabling persistent reference; (2) self-correction and enhancement, allowing recovery from incorrect intermediate solutions; and (3) perception before action, where early steps establish semantic grounding and later steps perform structured manipulation. During a diffusion step, we further uncover self-evolved functional specialization within Diffusion Transformers, where early layers encode dense perceptual structure, middle layers execute reasoning, and later layers consolidate latent representations. Motivated by these insights, we present a simple training-free strategy as a proof-of-concept, demonstrating how reasoning can be improved by ensembling latent trajectories from identical models with different random seeds. Overall, our work provides a systematic understanding of how reasoning emerges in video generation models, offering a foundation to guide future research in better exploiting the inherent reasoning dynamics of video models as a new substrate for intelligence.",
+    "authors": [
+      "Ruisi Wang",
+      "Zhongang Cai",
+      "Fanyi Pu",
+      "Junxiang Xu",
+      "Wanqi Yin",
+      "Maijunxian Wang",
+      "Ran Ji",
+      "Chenyang Gu",
+      "Bo Li",
+      "Ziqi Huang",
+      "Hokin Deng",
+      "Dahua Lin",
+      "Ziwei Liu",
+      "Lei Yang"
+    ],
+    "likes": 348,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.16870",
+    "date_collected": "2026-03-23T07:10:22.581806+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "비디오 추론의 이해",
+      "abstract": "최근 비디오 생성 기술 발전으로 확연해진 사실: 확산 기반 비디오 모델은 중요한 추론 능력을 보여준다. 그동안의 연구는 이를 연속적으로 비디오 프레임 간에 펼쳐지는 '프레임 체인(Chain-of-Frames, CoF)' 메커니즘이라고 설명했다. 이 연구에서는 이 가정에 도전하고 근본적으로 다른 메커니즘을 발견한다. 우리는 비디오 모델에서 추론이 주로 확산 제거 단계를 따라 나타난다는 것을 보여준다."
+    },
+    "summary": "1. 기존 CoF 메커니즘에 도전하며 확산 제거 단계에서 추론이 주로 발생하는 'CoS (Chain-of-Steps)' 메커니즘 발견.\n2. 모델이 초기 확산 단계에서 여러 후보 솔루션을 탐색하고 점진적으로 최종 답안으로 수렴하는 것을 확인함.\n3. 추론 발생 메커니즘 외에 모델 성능에 중요한 여러 신규 추론 행동 식별: (1) 지속적 참조를 가능하게 하는 작업 기억; (2) 오류 중간 솔루션에서의 회복을 허용하는 자가 교정 및 향상; (3) 행동 이전 감지, 초기 단계가 의미론적 기반이 되고 후속 단계가 구조화된 수정을 수행함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "AI Can Learn Scientific Taste",
+    "abstract": "Great scientists have strong judgement and foresight, closely tied to what we call scientific taste. Here, we use the term to refer to the capacity to judge and propose research ideas with high potential impact. However, most relative research focuses on improving an AI scientist's executive capability, while enhancing an AI's scientific taste remains underexplored. In this work, we propose Reinforcement Learning from Community Feedback (RLCF), a training paradigm that uses large-scale community signals as supervision, and formulate scientific taste learning as a preference modeling and alignment problem. For preference modeling, we train Scientific Judge on 700K field- and time-matched pairs of high- vs. low-citation papers to judge ideas. For preference alignment, using Scientific Judge as a reward model, we train a policy model, Scientific Thinker, to propose research ideas with high potential impact. Experiments show Scientific Judge outperforms SOTA LLMs (e.g., GPT-5.2, Gemini 3 Pro) and generalizes to future-year test, unseen fields, and peer-review preference. Furthermore, Scientific Thinker proposes research ideas with higher potential impact than baselines. Our findings show that AI can learn scientific taste, marking a key step toward reaching human-level AI scientists.",
+    "authors": [
+      "Jingqi Tong",
+      "Mingzhe Li",
+      "Hangcheng Li",
+      "Yongzhuo Yang",
+      "Yurong Mou",
+      "Weijie Ma",
+      "Zhiheng Xi",
+      "Hongji Chen",
+      "Xiaoran Liu",
+      "Qinyuan Cheng",
+      "Ming Zhang",
+      "Qiguang Chen",
+      "Weifeng Ge",
+      "Qipeng Guo",
+      "Tianlei Ying",
+      "Tianxiang Sun",
+      "Yining Zheng",
+      "Xinchi Chen",
+      "Jun Zhao",
+      "Ning Ding",
+      "Xuanjing Huang",
+      "Yugang Jiang"
+    ],
+    "likes": 316,
+    "published_date": "Mar 15",
+    "url": "https://huggingface.co/papers/2603.14473",
+    "date_collected": "2026-03-23T07:10:22.584664+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "AI는 과학적 감각을 배울 수 있습니다",
+      "abstract": "위대한 과학자들은 강력한 판단력과 선견지명을 갖고 있으며, 이는 우리가 과학적 감각이라고 부르는 것과 밀접하게 연관되어 있습니다. 본 연구에서는 AI 과학자의 실행 능력을 향상시키는데 주로 초점을 맞춘 반면, AI의 과학적 감각을 향상시키는 연구는 미개척된 분야입니다. 본 연구에서는 대규모 커뮤니티 신호를 감독으로 활용하는 RLCF(Reinforcement Learning from Community Feedback)라는 학습 패러다임을 제안하고, 과학적 감각 학습을 선호 모델링 및 정렬 문제로 제시합니다. ..."
+    },
+    "summary": "1. AI 과학자가 과학적 감각을 배울 수 있는 새로운 학습 패러다임인 RLCF를 제안함\n2. 과학적 심판자(Scientific Judge)를 통해 논문 아이디어를 평가하는 선호 모델링과 과학적 사고자(Scientific Thinker)를 훈련시켜 높은 잠재적 영향력을 갖는 연구 아이디어를 제안하는 것을 포함한 실험적 결과 제시\n3. AI가 과학적 감각을 배울 수 있음을 입증하고, 인간 수준의 AI 과학가로 나아가는 데 중요한 한걸음을 나아갈 수 있음을 보여줌",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
+    "abstract": "Recent code large language models have achieved remarkable progress on general programming tasks. Nevertheless, their performance degrades significantly in industrial scenarios that require reasoning about hardware semantics, specialized language constructs, and strict resource constraints. To address these challenges, we introduce InCoder-32B (Industrial-Coder-32B), the first 32B-parameter code foundation model unifying code intelligence across chip design, GPU kernel optimization, embedded systems, compiler optimization, and 3D modeling. By adopting an efficient architecture, we train InCoder-32B from scratch with general code pre-training, curated industrial code annealing, mid-training that progressively extends context from 8K to 128K tokens with synthetic industrial reasoning data, and post-training with execution-grounded verification. We conduct extensive evaluation on 14 mainstream general code benchmarks and 9 industrial benchmarks spanning 4 specialized domains. Results show InCoder-32B achieves highly competitive performance on general tasks while establishing strong open-source baselines across industrial domains.",
+    "authors": [
+      "Jian Yang",
+      "Wei Zhang",
+      "Jiajun Wu",
+      "Junhang Cheng",
+      "Shawn Guo",
+      "Haowen Wang",
+      "Weicheng Gu",
+      "Yaxin Du",
+      "Joseph Li",
+      "Fanglin Xu",
+      "Yizhi Li",
+      "Lin Jing",
+      "Yuanbo Wang",
+      "Yuhan Gao",
+      "Ruihao Gong",
+      "Chuan Hao",
+      "Ran Tao",
+      "Aishan Liu",
+      "Tuney Zheng",
+      "Ganqu Cui",
+      "Zhoujun Li",
+      "Mingjie Tang"
+    ],
+    "likes": 291,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.16790",
+    "date_collected": "2026-03-23T07:10:22.587010+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "산업 시나리오를 위한 코딩 기반 모델 InCoder-32B",
+      "abstract": "최근 대규모 언어 모델인 코딩 모델은 일반 프로그래밍 작업에서 놀라운 진전을 이루었습니다. 그러나 하드웨어 의미론, 전문 언어 구조에 대한 추론, 엄격한 자원 제약이 필요한 산업 시나리오에서는 성능이 현저히 저하됩니다. 이러한 도전에 대처하기 위해, 우리는 InCoder-32B(산업 코더-32B)를 소개합니다. 이는 칩 디자인, GPU 커널 최적화, 임베디드 시스템, 컴파일러 최적화, 3D 모델링을 포괄하는 코드 지능을 통합한 최초의 32B 파라미터 코딩 기반 모델입니다. 효율적인 아키텍처를 채택하여, 우리는 InCoder-32B를 일반 코드 사전 훈련으로부터 시작해, 곡선으로 연약한 산업 코드 부각, 8K에서 128K 토큰까지 점진적으로 컨텍스트를 확장시켜 가는 소재 산업 추론 데이터로 중간 훈련을 거치며, 실행 주도적 검증으로 마무리하는 과정을 거쳤습니다. 우리는 14개 메인스트림 일반 코드 벤치마크와 4개의 전문 분야를 거쳐 9개의 산업 벤치마크에 대한 포괄적인 평가를 실시했습니다. 결과는 InCoder-32B가 일반 작업에서 높은 성능을 발휘하면서 산업 분야 전체에 강력한 오픈 소스 기준을 세웠음을 보여줍니다."
+    },
+    "summary": "1. InCoder-32B는 산업 시나리오에서 대규모 언어 모델의 성능 저하 문제를 해결하기 위해 개발되었으며, 칩 디자인, GPU 커널 최적화, 임베디드 시스템 등 다양한 분야의 코드 지능을 통합합니다.\n2. 효율적인 아키텍처와 훈련 방법을 통해 InCoder-32B는 일반 코드 벤치마크와 산업 벤치마크 모두에서 경쟁력 있는 성능을 보여주었습니다.\n3. InCoder-32B의 개발은 일반적인 작업에서 뛰어난 결과를 얻으면서 산업 분야에서도 강력한 열린 기준을 세우는 데 성공했습니다.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "SocialOmni: Benchmarking Audio-Visual Social Interactivity in Omni Models",
+    "abstract": "Omni-modal large language models (OLMs) redefine human-machine interaction by natively integrating audio, vision, and text. However, existing OLM benchmarks remain anchored to static, accuracy-centric tasks, leaving a critical gap in assessing social interactivity, the fundamental capacity to navigate dynamic cues in natural dialogues. To this end, we propose SocialOmni, a comprehensive benchmark that operationalizes the evaluation of this conversational interactivity across three core dimensions: (i) speaker separation and identification (who is speaking), (ii) interruption timing control (when to interject), and (iii) natural interruption generation (how to phrase the interruption). SocialOmni features 2,000 perception samples and a quality-controlled diagnostic set of 209 interaction-generation instances with strict temporal and contextual constraints, complemented by controlled audio-visual inconsistency scenarios to test model robustness. We benchmarked 12 leading OLMs, which uncovers significant variance in their social-interaction capabilities across models. Furthermore, our analysis reveals a pronounced decoupling between a model's perceptual accuracy and its ability to generate contextually appropriate interruptions, indicating that understanding-centric metrics alone are insufficient to characterize conversational social competence. More encouragingly, these diagnostics from SocialOmni yield actionable signals for bridging the perception-interaction divide in future OLMs.",
+    "authors": [
+      "Tianyu Xie",
+      "Jinfa Huang",
+      "Yuexiao Ma",
+      "Rongfang Luo",
+      "Yan Yang",
+      "Wang Chen",
+      "Yuhui Zeng",
+      "Ruize Fang",
+      "Yixuan Zou",
+      "Xiawu Zheng",
+      "Jiebo Luo",
+      "Rongrong Ji"
+    ],
+    "likes": 240,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.16859",
+    "date_collected": "2026-03-23T07:10:22.588758+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "소셜오미: 오미 모델에서의 음향-시각적 사회 상호작용 벤치마킹",
+      "abstract": "오미-모달 대형 언어 모델(OLMs)은 오디오, 비전 및 텍스트를 기본적으로 통합함으로써 인간-기계 상호작용을 재정의합니다. 그러나 기존 OLM 벤치마크는 정적이고 정확도 중심적인 작업으로 고정되어 있어 자연 대화의 동적 단서를 탐색하는 사회적 상호작용을 평가하는 데 중요한 간극을 남겨두고 있습니다. 이에 우리는 이 대화적 상호작용을 평가하기 위한 SocialOmni라는 포괄적인 벤치마크를 제안합니다. 이는 (i) 화자 분리 및 식별(누가 말하는가), (ii) 중단 시점 제어(언제 개입할지), (iii) 자연스러운 중단 생성(중단 어떻게 표현할지)의 세 가지 핵심 차원을 가로지르는 대화적 상호작용을 운영화합니다. SocialOmni는 2,000개의 지각 샘플과 엄격한 시간적 및 맥락적 제약을 가진 209개 상호작용 생성 인스턴스의 품질 통제 집합을 특징으로 하며, 제어된 오디오-시각적 일관성 시나리오에 의해 모델의 견고성을 테스트합니다. 우리는 12개의 주요 OLM들에 대해 평가를 실시했으며, 이로써 이러한 모델 간의 사회적 상호작용 능력에 상당한 차이가 있다는 것이 밝혀졌습니다. 더 나아가, 우리의 분석은 모델의 지각적 정확성과 문맥상 적합한 중단을 생성하는 능력 사이의 명백한 분리를 드러내며, 이는 이해 중심적 측정 항목만으로는 대화적 사회적 능력을 특징화하는 데 충분하지 않다는 것을 나타냅니다. 더욱 격려받는 점은 이러한 SocialOmni의 진단이 향후 OLM에서 지각-상호작용 간 교차요지를 연결하는 데 유용한 신호를 제공한다는 것입니다."
+    },
+    "summary": "1. 오미-모달 대형 언어 모델은 사회적 상호작용 능력을 평가하는 데 사용되는 SocialOmni 벤치마크를 제안하며, 화자 구분, 중단 시점 제어, 자연스러운 중단 생성의 세 가지 핵심 차원을 다룹니다.\n2. 12가지 주요 OLM을 평가한 결과, 모델들 간 사회적 상호작용 능력에 상당한 차이가 있음을 나타내며, 지각적 정확성과 적절한 중단 생성 능력 간에 분리가 있음을 발견합니다.\n3. SocialOmni의 진단 결과는 향후 OML에서 지각과 상호작용의 연결을 위한 구체적인 신호를 제공하며, 대화적 사회적 능력을 특징화하는 데 중요함을 강조합니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "MiroThinker-1.7 & H1: Towards Heavy-Duty Research Agents via Verification",
+    "abstract": "We present MiroThinker-1.7, a new research agent designed for complex long-horizon reasoning tasks. Building on this foundation, we further introduce MiroThinker-H1, which extends the agent with heavy-duty reasoning capabilities for more reliable multi-step problem solving. In particular, MiroThinker-1.7 improves the reliability of each interaction step through an agentic mid-training stage that emphasizes structured planning, contextual reasoning, and tool interaction. This enables more effective multi-step interaction and sustained reasoning across complex tasks. MiroThinker-H1 further incorporates verification directly into the reasoning process at both local and global levels. Intermediate reasoning decisions can be evaluated and refined during inference, while the overall reasoning trajectory is audited to ensure that final answers are supported by coherent chains of evidence. Across benchmarks covering open-web research, scientific reasoning, and financial analysis, MiroThinker-H1 achieves state-of-the-art performance on deep research tasks while maintaining strong results on specialized domains. We also release MiroThinker-1.7 and MiroThinker-1.7-mini as open-source models, providing competitive research-agent capabilities with significantly improved efficiency.",
+    "authors": [
+      "MiroMind Team",
+      "S. Bai",
+      "L. Bing",
+      "L. Lei",
+      "R. Li",
+      "X. Li",
+      "X. Lin",
+      "E. Min",
+      "L. Su",
+      "B. Wang",
+      "L. Wang",
+      "L. Wang",
+      "S. Wang",
+      "X. Wang",
+      "Y. Zhang",
+      "Z. Zhang",
+      "G. Chen",
+      "L. Chen",
+      "Z. Cheng",
+      "Y. Deng",
+      "Z. Huang",
+      "D. Ng"
+    ],
+    "likes": 175,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15726",
+    "date_collected": "2026-03-23T07:10:22.591099+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "MiroThinker-1.7 & H1: 신뢰성 있는 연구 에이전트로의 발전",
+      "abstract": "본 논문에서는 복잡한 장기적 추론 작업을 위해 설계된 새로운 연구 에이전트인 MiroThinker-1.7을 제안합니다. 이를 기반으로, 더욱 신뢰성 있는 다단계 문제 해결을 위해 에이전트를 강화한 MiroThinker-H1을 소개합니다. 특히, MiroThinker-1.7은 구조화된 계획, 맥락적 추론, 그리고 도구 상호작용에 중점을 둔 에이전트 중간 훈련 단계를 통해 각 상호작용 단계의 신뢰성을 향상시킴으로써 복잡한 작업에 걸친 더 효과적인 다단계 상호작용 및 지속적 추론을 가능하게 합니다. MiroThinker-H1은 추가로 검증을 직접 추론 프로세스에 지엽 및 전역 수준에서 통합합니다. 중간 추론 결정은 추론 중에 평가되고 개선될 수 있으며, 최종적 응답이 일관된 증거 체인으로 지원되는지 확인하기 위해 전체 추론 궤적이 감사됩니다. 새롭게 소개하는 MiroThinker-H1은 권위 있는 웹 연구, 과학적 추론, 그리고 금융 분석을 포함한 벤치마크에서 뛰어난 성능을 과시하면서 전문 분야에서 강력한 결과를 유지합니다. 또한, MiroThinker-1.7 및 MiroThinker-1.7-mini를 오픈 소스 모델로 제공함으로써 성능이 크게 향상된 경쟁력있는 연구 에이전트 기능을 제공합니다."
+    },
+    "summary": "1. MiroThinker-1.7은 복잡한 장기적 추론 작업을 위해 설계된 새로운 연구 에이전트이며, MiroThinker-H1은 더욱 신뢰성 있는 다단계 문제 해결을 위한 기능을 강화했습니다.\n2. 에이전트의 중간 훈련 단계에서는 구조화된 계획, 맥락적 추론, 그리고 도구 상호작용을 강조하여 각 상호작용 단계의 신뢰성을 향상시켰고, 이를 통해 더 효과적인 다단계 상호작용과 지속적인 추론이 가능해졌습니다.\n3. MiroThinker-H1은 검증을 추론 프로세스에 지엽 및 전역 수준에서 통합함으로써 중간 추론 결정을 평가하고 개선하며, 최종적 응답의 일관성을 보장합니다. 또한, 다양한 벤치마크에서 우수한 성능을 보이며 오픈 소스 모델로 제공됩니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions",
+    "abstract": "We present HSImul3R, a unified framework for simulation-ready 3D reconstruction of human-scene interactions (HSI) from casual captures, including sparse-view images and monocular videos. Existing methods suffer from a perception-simulation gap: visually plausible reconstructions often violate physical constraints, leading to instability in physics engines and failure in embodied AI applications. To bridge this gap, we introduce a physically-grounded bi-directional optimization pipeline that treats the physics simulator as an active supervisor to jointly refine human dynamics and scene geometry. In the forward direction, we employ Scene-targeted Reinforcement Learning to optimize human motion under dual supervision of motion fidelity and contact stability. In the reverse direction, we propose Direct Simulation Reward Optimization, which leverages simulation feedback on gravitational stability and interaction success to refine scene geometry. We further present HSIBench, a new benchmark with diverse objects and interaction scenarios. Extensive experiments demonstrate that HSImul3R produces the first stable, simulation-ready HSI reconstructions and can be directly deployed to real-world humanoid robots.",
+    "authors": [
+      "Yukang Cao",
+      "Haozhe Xie",
+      "Fangzhou Hong",
+      "Long Zhuo",
+      "Zhaoxi Chen",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "likes": 149,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15612",
+    "date_collected": "2026-03-23T07:10:22.592921+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "HSImul3R: 시뮬레이션 준비 인간-장면 상호 작용의 물리학 중심 재구성",
+      "abstract": "HSImul3R은 희박한 시점 이미지와 단안 비디오를 포함한 캐주얼 캡처로부터 시뮬레이션용 3D 인간-장면 상호 작용(HSI)의 통합된 재구성 프레임워크를 제시합니다. 기존 방법들은 물리적 제약을 위배하는 경우가 많아 물리 엔진의 불안정성과 신체 있는 AI 애플리케이션의 실패로 이어집니다. 이 간극을 줄이기 위해 물리학적으로 기반을 둔 양방향 최적화 파이프라인을 제안하며, 이 파이프라인은 물리 시뮬레이터를 활성 감독자로 취급하여 인간 역학과 장면 기하를 동시에 개선합니다. ..."
+    },
+    "summary": "1. HSI 재구성을 위한 새로운 프레임워크인 HSImul3R 소개\n2. 물리학적 제약을 준수하면서 안정적인 HSI 재구성 가능성을 보여줌\n3. 다양한 객체와 상호 작용 시나리오를 갖춘 새로운 벤치마크 HSIBench 제시",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Grounding World Simulation Models in a Real-World Metropolis",
+    "abstract": "What if a world simulation model could render not an imagined environment but a city that actually exists? Prior generative world models synthesize visually plausible yet artificial environments by imagining all content. We present Seoul World Model (SWM), a city-scale world model grounded in the real city of Seoul. SWM anchors autoregressive video generation through retrieval-augmented conditioning on nearby street-view images. However, this design introduces several challenges, including temporal misalignment between retrieved references and the dynamic target scene, limited trajectory diversity and data sparsity from vehicle-mounted captures at sparse intervals. We address these challenges through cross-temporal pairing, a large-scale synthetic dataset enabling diverse camera trajectories, and a view interpolation pipeline that synthesizes coherent training videos from sparse street-view images. We further introduce a Virtual Lookahead Sink to stabilize long-horizon generation by continuously re-grounding each chunk to a retrieved image at a future location. We evaluate SWM against recent video world models across three cities: Seoul, Busan, and Ann Arbor. SWM outperforms existing methods in generating spatially faithful, temporally consistent, long-horizon videos grounded in actual urban environments over trajectories reaching hundreds of meters, while supporting diverse camera movements and text-prompted scenario variations.",
+    "authors": [
+      "Junyoung Seo",
+      "Hyunwook Choi",
+      "Minkyung Kwon",
+      "Jinhyeok Choi",
+      "Siyoon Jin",
+      "Gayoung Lee",
+      "Junho Kim",
+      "JoungBin Lee",
+      "Geonmo Gu",
+      "Dongyoon Han",
+      "Sangdoo Yun",
+      "Seungryong Kim",
+      "Jin-Hwa Kim"
+    ],
+    "likes": 142,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15583",
+    "date_collected": "2026-03-23T07:10:22.595373+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "현실 세계 메트로폴리스에 기반을 둔 세계 시뮬레이션 모델",
+      "abstract": "만약 세계 시뮬레이션 모델이 상상 속 환경이 아니라 실제로 존재하는 도시를 렌더링할 수 있다면 어떨까요? 이전의 생성 모델은 모든 콘텐츠를 상상함으로써 시각적으로 현실적이지만 인공적인 환경을 합성합니다. 본 논문에서는 서울 세계 모델(SWM)을 제시하는데, 이는 실제 서울 시내를 기반으로 한 도시 규모의 세계 모델입니다. SWM은 인접한 거리뷰 이미지에 대한 검색 증강된 조건부자극을 통해 자율회귀 비디오 생성을 기반으로 하였습니다. 그러나 이 설계는 검색된 참조와 동적 대상 장면 사이의 시간적 불일치, 차량 장착된 캡처로 인한 제한된 궤적 다양성 및 데이터 희소성과 같은 여러 가지 도전 과제를 도입합니다. 우리는 이러한 도전 과제를 교차-시간적 페어링, 다양한 카메라 궤적을 가능케 하는 대규모 합성 데이터셋, 그리고 희소한 거리뷰 이미지로부터 일관된 훈련 비디오를 생성하는 뷰 보간 파이프라인을 통해 해결합니다. 또한 미래 위치에 있는 검색된 이미지에 각 청크를 계속적으로 재기준화하여 긴 구간 생성을 안정화하는 가상 미래 전망 싱크를 제시합니다. 우리는 서울, 부산, 그리고 앤 아버의 세 도시를 대상으로 SWM을 평가합니다. SWM은 수백 미터에 이르는 궤적을 통해 실제 도시 환경에 근거한 공간적으로 충실하며, 시간적으로 일관성 있는, 긴 구간 비디오를 생성하는 데 기존 방법들을 능가하며, 다양한 카메라 움직임과 텍스트 프롬프티드 시나리오 변화를 지원합니다."
+    },
+    "summary": "1. 서울 세계 모델(SWM)은 실제 서울 시내를 기반으로 하는 도시 규모의 세계 모델로, 자율회귀 비디오 생성과 함께 인근 거리뷰 이미지에 따른 검색 증강된 조건부 자극을 중심으로 한다.\n2. SWM은 교차-시간적 페어링, 대규모 합성 데이터셋, 뷰 보간 파이프라인을 통해 동적 타깃 장면과의 시간적 불일치, 카메라 궤적 다양성 및 희소한 데이터 문제를 해결한다.\n3. 가상 미래 전망 싱크를 도입한 SWM은 실제 도시 환경에 근거하여 수백 미터에 이르는 궤적을 향한 일관된 긴 구간 비디오를 안정화하며, 다양한 카메라 움직임과 텍스트 프롬프티드 시나리오 변화를 지원한다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data",
+    "abstract": "Deep search capabilities have become an indispensable competency for frontier Large Language Model (LLM) agents, yet the development of high-performance search agents remains dominated by industrial giants due to a lack of transparent, high-quality training data. This persistent data scarcity has fundamentally hindered the progress of the broader research community in developing and innovating within this domain. To bridge this gap, we introduce OpenSeeker, the first fully open-source search agent (i.e., model and data) that achieves frontier-level performance through two core technical innovations: (1) Fact-grounded scalable controllable QA synthesis, which reverse-engineers the web graph via topological expansion and entity obfuscation to generate complex, multi-hop reasoning tasks with controllable coverage and complexity. (2) Denoised trajectory synthesis, which employs a retrospective summarization mechanism to denoise the trajectory, therefore promoting the teacher LLMs to generate high-quality actions. Experimental results demonstrate that OpenSeeker, trained (a single training run) on only 11.7k synthesized samples, achieves state-of-the-art performance across multiple benchmarks including BrowseComp, BrowseComp-ZH, xbench-DeepSearch, and WideSearch. Notably, trained with simple SFT, OpenSeeker significantly outperforms the second-best fully open-source agent DeepDive (e.g., 29.5% v.s. 15.3% on BrowseComp), and even surpasses industrial competitors such as Tongyi DeepResearch (trained via extensive continual pre-training, SFT, and RL) on BrowseComp-ZH (48.4% v.s. 46.7%). We fully open-source the complete training dataset and the model weights to democratize frontier search agent research and foster a more transparent, collaborative ecosystem.",
+    "authors": [
+      "Yuwen Du",
+      "Rui Ye",
+      "Shuo Tang",
+      "Xinyu Zhu",
+      "Yijun Lu",
+      "Yuzhu Cai",
+      "Siheng Chen"
+    ],
+    "likes": 141,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15594",
+    "date_collected": "2026-03-23T07:10:22.597627+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "오픈시커: 훈련 데이터 완전 오픈소스화로 전선 검색 에이전트 민주화하기",
+      "abstract": "전선 대형 언어 모델 (Large Language Model, LLM) 에이전트에 대한 심층 검색 기능은 불가결한 능력이 되었지만 고품질의 투명한 훈련 데이터 부족으로 인해 높은 성능의 검색 에이전트 개발은 산업 거대기업들에 의해 주도되어 왔습니다. 이 지속적인 데이터 부족은 더 넓은 연구 커뮤니티가 이 도메인 내에서 발전하고 혁신하는 것을 근본적으로 방해했습니다. 이 격차를 메우기 위해 우리는 오픈시커를 소개합니다. 이는 전선 수준 성능을 달성하는 최초의 완전 오픈소스 검색 에이전트(모델 및 데이터)로, 두 가지 핵심 기술 혁신을 통해 이루어집니다. 첫째는 사실 기반 확장 가능한 제어 가능한 QA 합성으로, 웹 그래프를 역공학화하여 복잡한, 다중-점프 추론 작업을 생성합니다. 둘째로는 잡음제거 궤적 합성으로, 회고적 요약 메커니즘을 사용하여 궤적을 잡음제거하여 교사 LLMs가 고품질 행동을 생성하도록 장려합니다. 실험 결과는 오직 11.7k 합성 샘플로 훈련된 오픈시커가 BrowseComp, BrowseComp-ZH, xbench-DeepSearch, WideSearch를 포함한 여러 벤치마크에서 최첨단 성능을 달성한다는 것을 보여줍니다. 특히 단순 SFT로 학습된 OpenSeeker는 BrowseComp에서 두 번째로 최고의 완전 오픈소스 에이전트인 DeepDive보다 월등한 성과를 거두며, BrowseComp-ZH에서도 산업 경쟁자인 Tongyi DeepResearch를 능가했습니다. 우리는 전체 훈련 데이터셋과 모델 가중치를 완전 오픈소스로 제공하여 전선 검색 에이전트 연구를 민주화하고 보다 투명하며 협업적인 생태계를 육성합니다."
+    },
+    "summary": "1. 오픈시커는 투명하고 고품질 훈련 데이터 부족으로 인해 산업 거대기업들에 의해 주도되던 고성능 검색 에이전트 개발을 위해 완전 오픈소스로 제공됩니다.\n2. 사실 기반 확장 가능한 QA 합성과 잡음제거 궤적 합성을 통해 전선 수준 성능을 달성합니다.\n3. 11.7k 합성 샘플로 훈련된 오픈시커는 다양한 벤치마크에서 최첨단 성능을 보이며 산업 경쟁자들을 능가합니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings",
+    "abstract": "Large language models are shifting from passive information providers to active agents intended for complex workflows. However, their deployment as reliable AI workers in enterprise is stalled by benchmarks that fail to capture the intricacies of professional environments, specifically, the need for long-horizon planning amidst persistent state changes and strict access protocols. In this work, we introduce EnterpriseOps-Gym, a benchmark designed to evaluate agentic planning in realistic enterprise settings. Specifically, EnterpriseOps-Gym features a containerized sandbox with 164 database tables and 512 functional tools to mimic real-world search friction. Within this environment, agents are evaluated on 1,150 expert-curated tasks across eight mission-critical verticals (including Customer Service, HR, and IT). Our evaluation of 14 frontier models reveals critical limitations in state-of-the-art models: the top-performing Claude Opus 4.5 achieves only 37.4% success. Further analysis shows that providing oracle human plans improves performance by 14-35 percentage points, pinpointing strategic reasoning as the primary bottleneck. Additionally, agents frequently fail to refuse infeasible tasks (best model achieves 53.9%), leading to unintended and potentially harmful side effects. Our findings underscore that current agents are not yet ready for autonomous enterprise deployment. More broadly, EnterpriseOps-Gym provides a concrete testbed to advance the robustness of agentic planning in professional workflows.",
+    "authors": [
+      "Shiva Krishna Reddy Malay",
+      "Shravan Nayak",
+      "Jishnu Sethumadhavan Nair",
+      "Sagar Davasam",
+      "Aman Tiwari",
+      "Sathwik Tejaswi Madhusudhan",
+      "Sridhar Krishna Nemala",
+      "Srinivas Sunkara",
+      "Sai Rajeswar"
+    ],
+    "likes": 141,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.13594",
+    "date_collected": "2026-03-23T07:10:22.599872+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "기업 운영을 위한 환경 및 평가를 위한 EnterpriseOps-Gym",
+      "abstract": "대규모 언어 모델은 복잡한 작업 흐름을 위한 적극적인 에이전트로 전환되고 있습니다. 그러나 기업에서 신뢰할 수 있는 AI 작업자로의 배치는 전문적 환경의 복잡성을 포착하지 못하는 벤치마크에 의해 저해되고 있습니다. 특히, 장기간 계획과 엄격한 액세스 프로토콜이 필요한 환경 속에서의 작업을 포착하지 못합니다. 본 연구에서는 실제 기업 환경에서 에이전틱 플래닝을 평가하기 위해 디자인된 벤치마크인 EnterpriseOps-Gym을 소개합니다. 구체적으로, EnterpriseOps-Gym은 실제 워크플로우에 대한 검색 마찰을 모방하기 위해 164개의 데이터베이스 테이블 및 512개의 기능 도구를 갖춘 컨테이네라이즈된 샌드박스를 특징으로 합니다. 이 환경에서 에이전트들은 고객 서비스, 인사 및 IT를 포함한 여덟 가지 핵심 세로닝에서 1,150개의 전문가 연구된 작업에 대해 평가됩니다. 우리는 14가지 선도적인 모델의 평가 결과를 통해 최첨단 모델의 중요한 한계를 밝혀냅니다. 최고 성능을 내는 Claude Opus 4.5는 성공률이 37.4%에 불과합니다. 추가 분석 결과, 오라클 인간 계획을 제공함으로써 성능이 14-35%포인트 향상된다는 것을 확인하여 전략적 추론이 주요 병목 현상임을 확인합니다. 또한, 에이전트들은 종종 실현 불가능한 작업을 거부하지 못하고(최상의 모델은 53.9%를 달성), 의도치 않은 유해한 부작용을 야기합니다. 우리의 연구 결과는 현재의 에이전트들이 아직 자동 기업 배치에 준비되지 않았다는 것을 강조합니다. 더 넓은 의미에서 EnterpriseOps-Gym은 전문적 워크플로우에서의 플래닝의 견고성을 높이기 위한 구체적인 실험대를 제공합니다."
+    },
+    "summary": "1. EnterpriseOps-Gym은 실제 기업 환경에서 에이전트 플래닝 평가를 위한 벤치마크로, 실제 데이터베이스와 기능 도구를 활용하여 1,150가지 작업을 포함하고 있습니다.\n2. 최신 모델의 평가 결과를 통해, 현재의 에이전트가 전략적 추론 및 불가능한 작업 거부 등에서 제약을 겪고 있는 것을 확인할 수 있습니다.\n3. 연구 결과는 현재의 에이전트들이 자동 기업 배치에 아직 준비되지 않았음을 강조하며, EnterpriseOps-Gym은 이러한 도전에 대응하기 위한 실험환경을 제공합니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Qianfan-OCR: A Unified End-to-End Model for Document Intelligence",
+    "abstract": "We present Qianfan-OCR, a 4B-parameter end-to-end vision-language model that unifies document parsing, layout analysis, and document understanding within a single architecture. It performs direct image-to-Markdown conversion and supports diverse prompt-driven tasks including table extraction, chart understanding, document QA, and key information extraction. To address the loss of explicit layout analysis in end-to-end OCR, we propose Layout-as-Thought, an optional thinking phase triggered by special think tokens that generates structured layout representations -- bounding boxes, element types, and reading order -- before producing final outputs, recovering layout grounding capabilities while improving accuracy on complex layouts. Qianfan-OCR ranks first among end-to-end models on OmniDocBench v1.5 (93.12) and OlmOCR Bench (79.8), achieves competitive results on OCRBench, CCOCR, DocVQA, and ChartQA against general VLMs of comparable scale, and attains the highest average score on public key information extraction benchmarks, surpassing Gemini-3.1-Pro, Seed-2.0, and Qwen3-VL-235B. The model is publicly accessible via the Baidu AI Cloud Qianfan platform.",
+    "authors": [
+      "Daxiang Dong",
+      "Mingming Zheng",
+      "Dong Xu",
+      "Chunhua Luo",
+      "Bairong Zhuang",
+      "Yuxuan Li",
+      "Ruoyun He",
+      "Haoran Wang",
+      "Wenyu Zhang",
+      "Wenbo Wang",
+      "Yicheng Wang",
+      "Xue Xiong",
+      "Ayong Zheng",
+      "Xiaoying Zuo",
+      "Ziwei Ou",
+      "Jingnan Gu",
+      "Quanhao Guo",
+      "Jianmin Wu",
+      "Dawei Yin",
+      "Dou Shen"
+    ],
+    "likes": 141,
+    "published_date": "Mar 11",
+    "url": "https://huggingface.co/papers/2603.13398",
+    "date_collected": "2026-03-23T07:10:22.602066+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "키펀OCR: 문서 지능을 위한 통합형 엔드투엔드 모델",
+      "abstract": "Qianfan-OCR은 문서 구문 분석, 레이아웃 분석, 그리고 문서 이해를 하나의 구조 안에서 통합하는 40억 개 파라미터의 엔드투엔드 비전-언어 모델을 제시합니다. 이 모델은 이미지를 직접 Markdown으로 변환하며 테이블 추출, 차트 이해, 문서 QA, 그리고 주요 정보 추출을 포함한 다양한 프롬프트 주도 작업을 지원합니다. 또한, 엔드투엔드 OCR에서 명시적 레이아웃 분석의 손실에 대응하기 위해 Layout-as-Thought를 제안하였습니다. 이는 최종 출력물 생성 전에 구조화된 레이아웃 표현을 생성하는 선택적 사고 단계로, 복잡한 레이아웃에서 정확도를 향상시키면서 레이아웃 매핑 능력을 회복합니다. Qianfan-OCR은 OmniDocBench v1.5 (93.12) 및 OlmOCR Bench (79.8)에서 엔드투엔드 모델 중 1위를 차지하며, OCRBench, CCOCR, DocVQA, 그리고 ChartQA에서 유사 규모의 일반 VLM에 대해 경쟁력 있는 결과를 달성하였으며, 공개 키 정보 추출 벤치마크에서 최고 점수를 획득하여 Gemini-3.1-Pro, Seed-2.0, 그리고 Qwen3-VL-235B를 능가하였습니다. 해당 모델은 바이두 인공지능 클라우드 키펀 플랫폼을 통해 공개적으로 이용 가능합니다."
+    },
+    "summary": "1. Qianfan-OCR은 문서 파싱, 레이아웃 분석, 문서 이해를 하나의 모델에서 처리하는 엔드투엔드 비전-언어 모델이다.\n2. Layout-as-Thought를 통해 레이아웃 분석 능력을 개선하면서, 다양한 작업을 수행하며 다른 모델들을 능가하는 성능을 보여준다.\n3. 모델은 OmniDocBench와 OlmOCR Bench에서 우수한 성과를 거두고, 공개 키 정보 추출 벤치마크에서 최고 점수를 기록하며 다른 모델들을 능가한다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

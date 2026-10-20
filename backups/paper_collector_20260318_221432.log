@@ -1,0 +1,115 @@
+=== Paper Collection Started at Tue Mar 17 22:15:34 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W12
+URL: https://huggingface.co/papers/week/2026-W12
+Found 10 papers in weekly view
+Fetching likes for: AI Can Learn Scientific Taste
+Fetching likes for: OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data
+Fetching likes for: EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings
+Fetching likes for: HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions
+Fetching likes for: Grounding World Simulation Models in a Real-World Metropolis
+Fetching likes for: LMEB: Long-horizon Memory Embedding Benchmark
+Fetching likes for: Attention Residuals
+Fetching likes for: Mixture-of-Depths Attention
+Fetching likes for: Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation
+Fetching likes for: Can Vision-Language Models Solve the Shell Game?
+Selected top 10 papers by likes:
+1. AI Can Learn Scientific Taste (214 likes)
+2. OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data (124 likes)
+3. EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings (115 likes)
+4. HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions (92 likes)
+5. Grounding World Simulation Models in a Real-World Metropolis (92 likes)
+6. LMEB: Long-horizon Memory Embedding Benchmark (60 likes)
+7. Attention Residuals (57 likes)
+8. Mixture-of-Depths Attention (47 likes)
+9. Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation (33 likes)
+10. Can Vision-Language Models Solve the Shell Game? (33 likes)
+Found abstract: Great scientists have strong judgement and foresight, closely tied to what we call scientific taste....
+Processed paper: AI Can Learn Scientific Taste
+Found abstract: Deep search capabilities have become an indispensable competency for frontier Large Language Model (...
+Processed paper: OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data
+Found abstract: Large language models are shifting from passive information providers to active agents intended for ...
+Processed paper: EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings
+Found abstract: We present HSImul3R, a unified framework for simulation-ready 3D reconstruction of human-scene inter...
+Processed paper: HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions
+Found abstract: What if a world simulation model could render not an imagined environment but a city that actually e...
+Processed paper: Grounding World Simulation Models in a Real-World Metropolis
+Found abstract: Memory embeddings are crucial for memory-augmented systems, such as OpenClaw, but their evaluation i...
+Processed paper: LMEB: Long-horizon Memory Embedding Benchmark
+Found abstract: Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs...
+Processed paper: Attention Residuals
+Found abstract: Scaling depth is a key driver for large language models (LLMs). Yet, as LLMs become deeper, they oft...
+Processed paper: Mixture-of-Depths Attention
+Found abstract: A recent cutting-edge topic in multimodal modeling is to unify visual comprehension and generation w...
+Processed paper: Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation
+Found abstract: Visual entity tracking is an innate cognitive ability in humans, yet it remains a critical bottlenec...
+Processed paper: Can Vision-Language Models Solve the Shell Game?
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: AI Can Learn Scientific Taste
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Grounding World Simulation Models in a Real-World Metropolis
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: LMEB: Long-horizon Memory Embedding Benchmark
+Paper already exists, checking if translation is complete...
+Update likes: 60  ->  49
+Update date_collected: 2026-03-18T07:15:42.999563+09:00  ->  2026-03-17T07:16:21.973022+09:00
+
+Processing paper 7/10
+Title: Attention Residuals
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Mixture-of-Depths Attention
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 33  ->  26
+Update date_collected: 2026-03-18T07:15:43.005355+09:00  ->  2026-03-17T07:16:21.974881+09:00
+
+Processing paper 10/10
+Title: Can Vision-Language Models Solve the Shell Game?
+Paper already exists, checking if translation is complete...
+Update likes: 33  ->  25
+Update date_collected: 2026-03-18T07:15:43.006457+09:00  ->  2026-03-17T07:16:21.975907+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W12.json...
+
+Updating Notion database...
+Creating new paper: AI는 과학적 감각을 배울 수 있습니다
+Creating new paper: 오픈시커: 훈련 데이터 완전 오픈소스화로 전선 검색 에이전트 민주화하기
+Creating new paper: 기업 운영을 위한 환경 및 평가를 위한 EnterpriseOps-Gym
+Creating new paper: HSImul3R: 시뮬레이션 준비 인간-장면 상호 작용의 물리학 중심 재구성
+Creating new paper: 현실 세계 메트로폴리스에 기반을 둔 세계 시뮬레이션 모델
+Updating paper: 장기 기억 내장 평가를 위한 벤치마크(LMEB: Long-horizon Memory Embedding Benchmark) (likes: 49 -> 60)
+Creating new paper: 주의력 잔차
+Creating new paper: 깊이 혼합 주의(Mixture-of-Depths Attention)
+Updating paper: 세부 패치 정보와 의미적 표현의 분리로 통합된 다중모달 이해와 생성 가능하게 함 (likes: 26 -> 33)
+Updating paper: 비전-언어 모델이 껍질 게임을 해결할 수 있을까? (likes: 25 -> 33)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Mar 17 22:17:55 UTC 2026 ===
+

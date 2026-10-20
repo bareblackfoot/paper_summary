@@ -1,0 +1,304 @@
+[
+  {
+    "title": "DeepAgent: A General Reasoning Agent with Scalable Toolsets",
+    "abstract": "Large reasoning models have demonstrated strong problem-solving abilities,\nyet real-world tasks often require external tools and long-horizon\ninteractions. Existing agent frameworks typically follow predefined workflows,\nwhich limit autonomous and global task completion. In this paper, we introduce\nDeepAgent, an end-to-end deep reasoning agent that performs autonomous\nthinking, tool discovery, and action execution within a single, coherent\nreasoning process. To address the challenges of long-horizon interactions,\nparticularly the context length explosion from multiple tool calls and the\naccumulation of interaction history, we introduce an autonomous memory folding\nmechanism that compresses past interactions into structured episodic, working,\nand tool memories, reducing error accumulation while preserving critical\ninformation. To teach general-purpose tool use efficiently and stably, we\ndevelop an end-to-end reinforcement learning strategy, namely ToolPO, that\nleverages LLM-simulated APIs and applies tool-call advantage attribution to\nassign fine-grained credit to the tool invocation tokens. Extensive experiments\non eight benchmarks, including general tool-use tasks (ToolBench, API-Bank,\nTMDB, Spotify, ToolHop) and downstream applications (ALFWorld, WebShop, GAIA,\nHLE), demonstrate that DeepAgent consistently outperforms baselines across both\nlabeled-tool and open-set tool retrieval scenarios. This work takes a step\ntoward more general and capable agents for real-world applications. The code\nand demo are available at https://github.com/RUC-NLPIR/DeepAgent.",
+    "authors": [
+      "Xiaoxi Li",
+      "Wenxiang Jiao",
+      "Jiarui Jin",
+      "Guanting Dong",
+      "Jiajie Jin",
+      "Yinuo Wang",
+      "Hao Wang",
+      "Yutao Zhu",
+      "Ji-Rong Wen",
+      "Yuan Lu",
+      "Zhicheng Dou"
+    ],
+    "likes": 59,
+    "published_date": "Oct 24",
+    "url": "https://huggingface.co/papers/2510.21618",
+    "date_collected": "2025-10-28T07:07:47.796804+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "DeepAgent: 확장 가능한 도구 세트를 갖춘 일반적인 추론 에이전트",
+      "abstract": "대규모 추론 모델은 강력한 문제 해결 능력을 보여주었지만, 현실 세계 작업은 종종 외부 도구와 장기적 상호작용이 필요합니다. 기존 에이전트 프레임워크는 보통 미리 정의된 작업 흐름을 따라 자율적이고 전역적인 작업 완료를 제한합니다. 본 논문에서는 DeepAgent를 소개합니다. DeepAgent는 단일 일관된 추론 프로세스 내에서 자율적 사고, 도구 발견 및 실행을 수행하는 end-to-end deep reasoning agent입니다. 긴 기간 상호작용의 도전을 해결하기 위해 과거 상호작용을 구조화된 에피소득, 작업 및 도구 메모리로 압축하는 자율 메모리 펼침 메커니즘을 도입합니다. 특히 다중 도구 호출로부터 발생하는 컨텍스트 길이 폭발과 상호작용 기록의 축적 문제를 다루기 위해 이를 도입합니다. 또한 일반적인 도구 사용을 효율적으로 가르치고 안정적으로 수행하기 위해 LLM-시뮬레이션된 API를 활용하고 도구 호출 강점 지정을 적용하는 end-to-end reinforcement learning 전략인 ToolPO를 개발합니다. ToolPO는 도구 호출 토큰에 세분화된 신용을 할당하여 도구 사용 효율성을 높입니다. ToolPO는 도구 호출 토큰에 세분화된 신용을 할당하여 도구 사용 효율성을 높입니다. ToolPO는 라벨이 지정된 도구와 오픈셋 도구 검색 시나리오 모두에서 DeepAgent가 기준 모델을 일관되게 능가한다는 것을 보여줍니다. 본 연구는 현실 세계 응용프로그램에 대한 더 일반적이고 능력 있는 에이전트로 한 걸음 나아간 것입니다. 코드와 데모는 https://github.com/RUC-NLPIR/DeepAgent에서 확인할 수 있습니다."
+    },
+    "summary": "1. DeepAgent는 자율적 사고, 도구 발견 및 실행을 단일 프로세스 내에서 수행하는 end-to-end deep reasoning agent이다.\n2. 자율 메모리 펼침 메커니즘을 도입하여 과거 상호작용을 구조화된 메모리로 압축하며, ToolPO 전략을 통해 일반적인 도구 사용을 효과적으로 가르치고 안정적으로 수행한다.\n3. 실험 결과는 DeepAgent가 다양한 벤치마크에서 기준 모델을 일관되게 능가하며, 현실 응용에 더 일반적이고 능력 있는 에이전트를 제공함을 보여준다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Video-As-Prompt: Unified Semantic Control for Video Generation",
+    "abstract": "Unified, generalizable semantic control in video generation remains a\ncritical open challenge. Existing methods either introduce artifacts by\nenforcing inappropriate pixel-wise priors from structure-based controls, or\nrely on non-generalizable, condition-specific finetuning or task-specific\narchitectures. We introduce Video-As-Prompt (VAP), a new paradigm that reframes\nthis problem as in-context generation. VAP leverages a reference video as a\ndirect semantic prompt, guiding a frozen Video Diffusion Transformer (DiT) via\na plug-and-play Mixture-of-Transformers (MoT) expert. This architecture\nprevents catastrophic forgetting and is guided by a temporally biased position\nembedding that eliminates spurious mapping priors for robust context retrieval.\nTo power this approach and catalyze future research, we built VAP-Data, the\nlargest dataset for semantic-controlled video generation with over 100K paired\nvideos across 100 semantic conditions. As a single unified model, VAP sets a\nnew state-of-the-art for open-source methods, achieving a 38.7% user preference\nrate that rivals leading condition-specific commercial models. VAP's strong\nzero-shot generalization and support for various downstream applications mark a\nsignificant advance toward general-purpose, controllable video generation.",
+    "authors": [
+      "Yuxuan Bian",
+      "Xin Chen",
+      "Zenan Li",
+      "Tiancheng Zhi",
+      "Shen Sang",
+      "Linjie Luo",
+      "Qiang Xu"
+    ],
+    "likes": 33,
+    "published_date": "Oct 23",
+    "url": "https://huggingface.co/papers/2510.20888",
+    "date_collected": "2025-10-28T07:07:47.798079+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "비디오-를-프롬프트: 비디오 생성을 위한 통합적 의미 제어",
+      "abstract": "비디오 생성에서 통합적이고 일반화된 의미 제어는 여전히 중요한 과제로 남아 있습니다. 기존 방법은 구조 기반 제어로 인해 적절하지 않은 픽셀 단위 사전을 강제하거나 비일반화 가능성 또는 작업별 아키텍처에 의존하여 인공물을 도입합니다. 우리는 Video-As-Prompt (VAP)를 소개합니다. 이는 이 문제를 문맥 내 생성으로 다시 정의하는 새로운 패러다임입니다. VAP는 참조 비디오를 직접적인 의미 프롬프트로 활용하여 얼어붙은 비디오 확산 트랜스포머 (DiT)를 가이드하는 플러그 앤 플레이 Mixture-of-Transformers (MoT) 전문가를 통해 이용합니다. 이 아키텍처는 잘못된 연결 사전을 없애 견고한 컨텍스트 검색을 위한 시간에 따른 편향적인 위치 삽입을 통해 이에 대응합니다."
+    },
+    "summary": "1. 비디오 생성에서 통합적이고 일반화된 의미 제어가 중요한 과제이며, Video-As-Prompt(VAP)는 이를 해결하기 위한 새로운 패러다임으로 참조 비디오를 활용하여 비디오 생성을 지원합니다.\n2. VAP는 가이드된 위치 삽입을 통해 잘못된 매핑 사전을 제거함으로써 안정적인 컨텍스트 검색을 실현하며, 100가지 의미 조건을 가진 10만 개 이상의 연속된 비디오로 이루어진 VAP-Data 데이터셋을 구축했습니다.\n3. VAP는 상업용 모델과 견줄만한 38.7%의 사용자 선호도를 달성하여 최신 기술을 선보이며, 다양한 하향 응용에 대한 강력한 영상 생성 지원과 강력한 제로샷 일반화를 제공하여 일반용 조절 가능 비디오 생성을 향한 중요한 발전을 이루고 있습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Sample By Step, Optimize By Chunk: Chunk-Level GRPO For Text-to-Image\n  Generation",
+    "abstract": "Group Relative Policy Optimization (GRPO) has shown strong potential for\nflow-matching-based text-to-image (T2I) generation, but it faces two key\nlimitations: inaccurate advantage attribution, and the neglect of temporal\ndynamics of generation. In this work, we argue that shifting the optimization\nparadigm from the step level to the chunk level can effectively alleviate these\nissues. Building on this idea, we propose Chunk-GRPO, the first chunk-level\nGRPO-based approach for T2I generation. The insight is to group consecutive\nsteps into coherent 'chunk's that capture the intrinsic temporal dynamics of\nflow matching, and to optimize policies at the chunk level. In addition, we\nintroduce an optional weighted sampling strategy to further enhance\nperformance. Extensive experiments show that ChunkGRPO achieves superior\nresults in both preference alignment and image quality, highlighting the\npromise of chunk-level optimization for GRPO-based methods.",
+    "authors": [
+      "Yifu Luo",
+      "Penghui Du",
+      "Bo Li",
+      "Sinan Du",
+      "Tiantian Zhang",
+      "Yongzhe Chang",
+      "Kai Wu",
+      "Kun Gai",
+      "Xueqian Wang"
+    ],
+    "likes": 26,
+    "published_date": "Oct 24",
+    "url": "https://huggingface.co/papers/2510.21583",
+    "date_collected": "2025-10-28T07:07:47.799397+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "단계별 샘플, 청크별 최적화: 텍스트-이미지 생성을 위한 청크 수준 GRPO",
+      "abstract": "그룹 상대 정책 최적화 (GRPO)는 흐름 일치 기반 텍스트-이미지 (T2I) 생성에 강점을 보여주었으나, 정확하지 않은 이점 할당과 생성의 시간적 동적 무시라는 두 가지 주요 한계에 직면합니다. 본 연구에서는 최적화 패러다임을 단계 수준에서 청크 수준으로 전환함으로써 이러한 문제를 효과적으로 완화할 수 있다고 주장합니다. 이 아이디어를 바탕으로, T2I 생성을 위한 최초의 청크 수준 GRPO 기반 접근 방식인 Chunk-GRPO를 제안합니다. 연속적인 단계들을 응집적인 '청크'로 그룹화하여 흐름 일치의 고유한 시간적 동적을 포착하고, 청크 수준에서 정책을 최적화합니다. 더불어, 성능을 더욱 향상시키기 위한 선택적 가중 샘플링 전략을 도입합니다. 광범위한 실험 결과, Chunk-GRPO가 선호 정렬 및 이미지 품질 모두에서 우수한 결과를 달성하며, GRPO 기반 방법들에 대한 청크 수준 최적화의 잠재력을 강조합니다."
+    },
+    "summary": "1. GRPO를 이용한 텍스트-이미지 생성에서 단계 수준 최적화의 한계를 극복하기 위해 청크 수준 최적화를 제안함.\n2. 연속적인 단계를 청크로 그룹화하여 흐름 일치의 시간적 동적을 포착하고 청크 수준에서 정책을 최적화하는 Chunk-GRPO 소개.\n3. 선택적 가중 샘플링 전략을 통해 성능을 향상시킨 Chunk-GRPO가 선호 정렬 및 이미지 품질에서 우수한 결과를 보임.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "WorldGrow: Generating Infinite 3D World",
+    "abstract": "We tackle the challenge of generating the infinitely extendable 3D world --\nlarge, continuous environments with coherent geometry and realistic appearance.\nExisting methods face key challenges: 2D-lifting approaches suffer from\ngeometric and appearance inconsistencies across views, 3D implicit\nrepresentations are hard to scale up, and current 3D foundation models are\nmostly object-centric, limiting their applicability to scene-level generation.\nOur key insight is leveraging strong generation priors from pre-trained 3D\nmodels for structured scene block generation. To this end, we propose\nWorldGrow, a hierarchical framework for unbounded 3D scene synthesis. Our\nmethod features three core components: (1) a data curation pipeline that\nextracts high-quality scene blocks for training, making the 3D structured\nlatent representations suitable for scene generation; (2) a 3D block inpainting\nmechanism that enables context-aware scene extension; and (3) a coarse-to-fine\ngeneration strategy that ensures both global layout plausibility and local\ngeometric/textural fidelity. Evaluated on the large-scale 3D-FRONT dataset,\nWorldGrow achieves SOTA performance in geometry reconstruction, while uniquely\nsupporting infinite scene generation with photorealistic and structurally\nconsistent outputs. These results highlight its capability for constructing\nlarge-scale virtual environments and potential for building future world\nmodels.",
+    "authors": [
+      "Sikuang Li",
+      "Chen Yang",
+      "Jiemin Fang",
+      "Taoran Yi",
+      "Jia Lu",
+      "Jiazhong Cen",
+      "Lingxi Xie",
+      "Wei Shen",
+      "Qi Tian"
+    ],
+    "likes": 25,
+    "published_date": "Oct 24",
+    "url": "https://huggingface.co/papers/2510.21682",
+    "date_collected": "2025-10-28T07:07:47.800704+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "WorldGrow: 무한한 3D 세계 생성",
+      "abstract": "무한히 확장 가능한 3D 세계를 생성하는 과제에 대해 다룹니다. 대규모, 연속적인 환경에서 일관된 기하학과 현실적인 외관이 필요합니다."
+    },
+    "summary": "1. WorldGrow는 사전 훈련된 3D 모델로부터 강력한 생성 사전 확률을 활용하여 구조화된 장면 블록 생성을 위한 계층적 프레임워크를 제안합니다.\n2. 데이터 정제 파이프라인, 3D 블록 inpainting 메커니즘, 세밀한 생성 전략 등 세 가지 주요 구성 요소로 이루어져 있습니다.\n3. 3D-FRONT 데이터셋에서 검증한 결과, WorldGrow는 기하학적 재구성에서 최고 성능을 달성하며, 사실적이고 구조적으로 일관된 출력으로 무한한 장면 생성을 지원합니다.",
+    "categories": [
+      "Computer Vision",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "From Denoising to Refining: A Corrective Framework for Vision-Language\n  Diffusion Model",
+    "abstract": "Discrete diffusion models have emerged as a promising direction for\nvision-language tasks, offering bidirectional context modeling and theoretical\nparallelization. However, their practical application is severely hindered by a\ntrain-inference discrepancy, which leads to catastrophic error cascades:\ninitial token errors during parallel decoding pollute the generation context,\ntriggering a chain reaction of compounding errors and leading to syntactic\nerrors and semantic hallucinations. To address this fundamental challenge, we\nreframe the generation process from passive denoising to active refining. We\nintroduce ReDiff, a refining-enhanced diffusion framework that teaches the\nmodel to identify and correct its own errors. Our approach features a two-stage\ntraining process: first, we instill a foundational revision capability by\ntraining the model to revise synthetic errors; second, we implement a novel\nonline self-correction loop where the model is explicitly trained to revise its\nown flawed drafts by learning from an expert's corrections. This mistake-driven\nlearning endows the model with the crucial ability to revisit and refine its\nalready generated output, effectively breaking the error cascade. Extensive\nexperiments demonstrate that ReDiff significantly improves the coherence and\nfactual accuracy of generated content, enabling stable and efficient parallel\ngeneration far superior to traditional denoising methods. Our codes and models\nare available at https://rediff-hku.github.io/.",
+    "authors": [
+      "Yatai Ji",
+      "Teng Wang",
+      "Yuying Ge",
+      "Zhiheng Liu",
+      "Sidi Yang",
+      "Ying Shan",
+      "Ping Luo"
+    ],
+    "likes": 24,
+    "published_date": "Oct 22",
+    "url": "https://huggingface.co/papers/2510.19871",
+    "date_collected": "2025-10-28T07:07:47.801969+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "세발자동차를 위한 스테레오 시각 측정 센서",
+      "abstract": "본 연구에서는 세발자동차에 사용되는 스테레오 시각 측정 센서의 설계와 성능 분석에 대해 소개합니다."
+    },
+    "summary": "1. 비전-언어 작업을 위한 확산 모델을 위한 수정 프레임워크가 제안됨.\n2. ReDiff를 도입하여 모델이 자체 오류를 인식하고 수정하는 방법을 제시.\n3. ReDiff는 생성된 콘텐츠의 일관성과 사실적 정확도를 획기적으로 향상시킴.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "A Definition of AGI",
+    "abstract": "The lack of a concrete definition for Artificial General Intelligence (AGI)\nobscures the gap between today's specialized AI and human-level cognition. This\npaper introduces a quantifiable framework to address this, defining AGI as\nmatching the cognitive versatility and proficiency of a well-educated adult. To\noperationalize this, we ground our methodology in Cattell-Horn-Carroll theory,\nthe most empirically validated model of human cognition. The framework dissects\ngeneral intelligence into ten core cognitive domains-including reasoning,\nmemory, and perception-and adapts established human psychometric batteries to\nevaluate AI systems. Application of this framework reveals a highly \"jagged\"\ncognitive profile in contemporary models. While proficient in\nknowledge-intensive domains, current AI systems have critical deficits in\nfoundational cognitive machinery, particularly long-term memory storage. The\nresulting AGI scores (e.g., GPT-4 at 27%, GPT-5 at 58%) concretely quantify\nboth rapid progress and the substantial gap remaining before AGI.",
+    "authors": [
+      "Dan Hendrycks",
+      "Dawn Song",
+      "Christian Szegedy",
+      "Honglak Lee",
+      "Yarin Gal",
+      "Erik Brynjolfsson",
+      "Sharon Li",
+      "Andy Zou",
+      "Lionel Levine",
+      "Bo Han",
+      "Jie Fu",
+      "Ziwei Liu",
+      "Jinwoo Shin",
+      "Kimin Lee",
+      "Mantas Mazeika",
+      "Long Phan",
+      "George Ingebretsen",
+      "Adam Khoja",
+      "Cihang Xie",
+      "Olawale Salaudeen",
+      "Matthias Hein",
+      "Kevin Zhao"
+    ],
+    "likes": 23,
+    "published_date": "Oct 21",
+    "url": "https://huggingface.co/papers/2510.18212",
+    "date_collected": "2025-10-28T07:07:47.803829+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "AGI의 정의",
+      "abstract": "인공 일반 지능(AGI)에 대한 명확한 정의의 부재는 오늘날의 특화된 AI와 인간 수준의 인지 간의 격차를 흐리게 만든다. 본 논문은 이를 해결하기 위한 계량적인 프레임워크를 제시하며, AGI를 잘 교육된 성인의 인지 다양성과 능숙성과 일치시키는 것으로 정의한다. 이를 구체화하기 위해 우리의 방법론을 인간 인지의 가장 실험적으로 검증된 모델인 Cattell-Horn-Carroll 이론에 근거로 두었다. 이 프레임워크는 추론, 기억, 지각 등을 포함한 열 가지 핵심 인지 도메인으로 일반 지능을 해체하고, 확립된 인간 심리 측정법을 적용하여 AI 시스템을 평가한다. 이 프레임워크의 적용을 통해 현대 모델들의 인지 프로필은 매우 \"비평면적\"임을 밝혀냈다. 지식 집중적 도메인에서 능숙하나 현재 AI 시스템은 특히 장기 기억 저장에 심각한 결여가 있다. 결과적인 AGI 점수(GPT-4 27%, GPT-5 58% 등)는 AGI 이전의 빠른 진전과 남은 상당한 격차를 구체적으로 측정한다."
+    },
+    "summary": "1. 이 논문은 AGI를 정의하기 위한 계량적인 프레임워크를 소개하며, 인간 수준의 인지 다양성과 능숙성에 부합하는 AI로 정의한다.\n2. 연구에서는 Cattell-Horn-Carroll 이론을 기초로 하고, 열 가지 핵심 인지 도메인을 분석하여 AI 시스템을 평가한다.\n3. 현대 AI 모델은 지식 집중적인 분야에서는 뛰어나지만 장기 기억 저장과 같은 기본적인 인지 기능에서 심각한 결여가 있음을 밝혀냈으며, AGI 점수로도 이를 구체적으로 측정한다.",
+    "categories": [
+      "LLM",
+      "인공일반지능",
+      "인지과학"
+    ]
+  },
+  {
+    "title": "Reasoning with Sampling: Your Base Model is Smarter Than You Think",
+    "abstract": "Frontier reasoning models have exhibited incredible capabilities across a\nwide array of disciplines, driven by posttraining large language models (LLMs)\nwith reinforcement learning (RL). However, despite the widespread success of\nthis paradigm, much of the literature has been devoted to disentangling truly\nnovel behaviors that emerge during RL but are not present in the base models.\nIn our work, we approach this question from a different angle, instead asking\nwhether comparable reasoning capabilites can be elicited from base models at\ninference time by pure sampling, without any additional training. Inspired by\nMarkov chain Monte Carlo (MCMC) techniques for sampling from sharpened\ndistributions, we propose a simple iterative sampling algorithm leveraging the\nbase models' own likelihoods. Over different base models, we show that our\nalgorithm offers substantial boosts in reasoning that nearly match and even\noutperform those from RL on a wide variety of single-shot tasks, including\nMATH500, HumanEval, and GPQA. Moreover, our sampler avoids the collapse in\ndiversity over multiple samples that is characteristic of RL-posttraining.\nCrucially, our method does not require training, curated datasets, or a\nverifier, suggesting broad applicability beyond easily verifiable domains.",
+    "authors": [
+      "Aayush Karan",
+      "Yilun Du"
+    ],
+    "likes": 21,
+    "published_date": "Oct 16",
+    "url": "https://huggingface.co/papers/2510.14901",
+    "date_collected": "2025-10-28T07:07:47.804845+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "샘플링을 통한 추론: 당신의 기본 모델은 생각보다 똑똑합니다",
+      "abstract": "피드트론 추론 모델은 후훈련된 대형 언어 모델(LLMs)과 강화 학습(RL)을 통해 다양한 분야에서 놀라운 능력을 발휘했습니다. 우리는 특히 훈련 이후 RL에서 나타나는 참신한 행동과 기본 모델에는 없는 행동을 해결하는데 주목합니다. 본 연구에서는 추가적인 훈련 없이 순수한 샘플링을 통해 추론 시 기본 모델로 부터 유사한 추론 능력을 유발할 수 있는지 탐구합니다. 우리의 알고리즘은 기본 모델의 likelihood를 활용한 단순한 샘플링 알고리즘을 제안하며, MATH500, HumanEval, GPQA 등의 다양한 작업에서 RL을 뛰어넘는 추론 향상을 보여줍니다."
+    },
+    "summary": "1. 후훈련이나 추가 훈련 없이 샘플링을 활용하여 기본 모델이 추론 과제에서 RL보다 뛰어난 성과를 보일 수 있다.\n2. 제안된 반복적인 샘플링 알고리즘은 기본 모델의 likelihood를 기반으로 하며, 다양한 작업에서 상당한 추론 역량 향상을 보여준다.\n3. 샘플러는 다양성 붕괴를 피하는 동시에 훈련, 정제된 데이터셋, 확인자가 필요하지 않아 넓은 적용 가능성을 제시한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Sparser Block-Sparse Attention via Token Permutation",
+    "abstract": "Scaling the context length of large language models (LLMs) offers significant\nbenefits but is computationally expensive. This expense stems primarily from\nthe self-attention mechanism, whose O(N^2) complexity with respect to\nsequence length presents a major bottleneck for both memory and latency.\nFortunately, the attention matrix is often sparse, particularly for long\nsequences, suggesting an opportunity for optimization. Block-sparse attention\nhas emerged as a promising solution that partitions sequences into blocks and\nskips computation for a subset of these blocks. However, the effectiveness of\nthis method is highly dependent on the underlying attention patterns, which can\nlead to sub-optimal block-level sparsity. For instance, important key tokens\nfor queries within a single block may be scattered across numerous other\nblocks, leading to computational redundancy. In this work, we propose Permuted\nBlock-Sparse Attention (PBS-Attn), a plug-and-play method that\nleverages the permutation properties of attention to increase block-level\nsparsity and enhance the computational efficiency of LLM prefilling. We conduct\ncomprehensive experiments on challenging real-world long-context datasets,\ndemonstrating that PBS-Attn consistently outperforms existing block-sparse\nattention methods in model accuracy and closely matches the full attention\nbaseline. Powered by our custom permuted-FlashAttention kernels, PBS-Attn\nachieves an end-to-end speedup of up to 2.75times in long-context\nprefilling, confirming its practical viability. Code available at\nhttps://github.com/xinghaow99/pbs-attn",
+    "authors": [
+      "Xinghao Wang",
+      "Pengyu Wang",
+      "Dong Zhang",
+      "Chenkun Tan",
+      "Shaojun Zhou",
+      "Zhaoxiang Liu",
+      "Shiguo Lian",
+      "Fangxu Liu",
+      "Kai Song",
+      "Xipeng Qiu"
+    ],
+    "likes": 20,
+    "published_date": "Oct 24",
+    "url": "https://huggingface.co/papers/2510.21270",
+    "date_collected": "2025-10-28T07:07:47.806194+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "토큰 순열을 통한 희소 블록 희소 주의",
+      "abstract": "대형 언어 모델의 문맥 길이를 확장하면 중요한 이점을 얻을 수 있지만, 계산적으로 비싸다. O(N^2) 복잡도를 가진 self-attention 메커니즘 때문에 특히 sequence 길이에 대해 주요 병목 현상으로 작용한다. 우리의 작업에서는 어텐션의 순열 특성을 활용하여 블록 단위의 희소성을 증가시키고 LLM 사전 채우기의 계산 효율성을 향상시키는 Permuted 블록 희소 주의(PBS-Attn)를 제안한다. PBS-Attn는 실제 긴 문맥 데이터셋에서 전반적으로 기존의 블록 희소 어텐션 방법을 능가하며 전체 어텐션 기준에 근접한 모델 정확도를 보여준다."
+    },
+    "summary": "1. 대형 언어 모델의 성능을 향상시키기 위해 토큰 순열을 활용하는 Permuted 블록 희소 주의(PBS-Attn) 방법을 제안하였다.\n2. PBS-Attn은 블록 단위의 희소성을 늘리고 LLM 사전 채우기의 계산 효율성을 향상시켜, 모델의 정확도를 향상시킨다.\n3. PBS-Attn은 기존의 블록 희소 어텐션 방법을 능가하며 전체 어텐션 기준에 근접한 모델 정확도를 보여주며, 실제로 실용적인 가치를 확인하였다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "UI-Ins: Enhancing GUI Grounding with Multi-Perspective\n  Instruction-as-Reasoning",
+    "abstract": "GUI grounding, which maps natural-language instructions to actionable UI\nelements, is a core capability of GUI agents. Prior works largely treats\ninstructions as a static proxy for user intent, overlooking the impact of\ninstruction diversity and quality on grounding performance. Through a careful\ninvestigation of existing grounding datasets, we find a 23.3% flaw rate in\ntheir instructions and show that inference-time exploitation of instruction\ndiversity yields up to a substantial 76% relative performance improvement. In\nthis paper, we introduce the Instruction-as-Reasoning paradigm, treating\ninstructions as dynamic analytical pathways that offer distinct perspectives\nand enabling the model to select the most effective pathway during reasoning.\nTo achieve this, we propose a two-stage training framework: supervised\nfine-tuning (SFT) on synthesized, diverse instructions to instill\nmulti-perspective reasoning, followed by reinforcement learning (RL) to\noptimize pathway selection and composition. Our resulting models, UI-Ins-7B and\nUI-Ins-32B, achieve state-of-the-art results on five challenging grounding\nbenchmarks and exhibit emergent reasoning, selectively composing and\nsynthesizing novel instruction pathways at inference. In particular, UI-Ins-32B\nattains the best grounding accuracy, scoring 87.3% on UI-I2E-Bench, 57.0% on\nScreenSpot-Pro, and 84.9% on MMBench-GUI L2. Furthermore, our model\ndemonstrates strong agentic potential, achieving a 74.1% success rate on\nAndroidWorld using UI-Ins-7B as the executor. Our in-depth analysis reveals\nadditional insights such as how reasoning can be formulated to enhance rather\nthan hinder grounding performance, and how our method mitigates policy collapse\nin the SFT+RL framework. All code and model checkpoints will be publicly\nreleased in https://github.com/alibaba/UI-Ins.",
+    "authors": [
+      "Liangyu Chen",
+      "Hanzhang Zhou",
+      "Chenglin Cai",
+      "Jianan Zhang",
+      "Panrong Tong",
+      "Quyu Kong",
+      "Xu Zhang",
+      "Chen Liu",
+      "Yuqi Liu",
+      "Wenxuan Wang",
+      "Yue Wang",
+      "Qin Jin",
+      "Steven Hoi"
+    ],
+    "likes": 16,
+    "published_date": "Oct 23",
+    "url": "https://huggingface.co/papers/2510.20286",
+    "date_collected": "2025-10-28T07:07:47.807682+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "UI-Ins: 다중 관점을 활용한 GUI Grounding 강화",
+      "abstract": "GUI grounding은 자연어 지침을 실행 가능한 UI 요소로 매핑하는 능력으로, GUI 에이전트의 핵심 능력이다. 기존 연구는 지침을 사용자 의도의 정적 대리물로 취급하며, 지침 다양성과 품질이 Grounding 성능에 미치는 영향을 간과하고 있다. 본 연구에서는 기존의 Groudning 데이터셋을 신중하게 조사하여 그들의 지침에서 23.3%의 결함률을 발견하고, 지침 다양성의 추론 시 활용이 상당한 76% 상대적 성능 향상을 가져온다는 것을 보여준다. 본 논문에서는 Instruction-as-Reasoning 패러다임을 소개하며, 지침을 동적인 분석적 경로로 취급하여 서로 다른 관점을 제공하고 추론 중에 모델이 가장 효과적인 경로를 선택할 수 있도록 한다. 이를 달성하기 위해, 우리는 두 단계의 학습 프레임워크를 제안한다: 다양한 지침을 합성하여 다중 관점 추론력을 부여하기 위한 지도된 미세 조정(SFT), 추론력의 경로 선택 및 구성을 최적화하기 위한 강화 학습(RL). 결과 모델인 UI-Ins-7B와 UI-Ins-32B는 다섯 가지 도전적인 Grounding 벤치마크에서 최첨단 결과를 달성하며, 추론 중에 새로운 지침 경로를 선택적으로 구성하고 합성한다. 특히, UI-Ins-32B는 UI-I2E-Bench에서 87.3%, ScreenSpot-Pro에서 57.0%, MMBench-GUI L2에서 84.9%의 최상의 Grounding 정확도를 기록한다. 더불어, 우리 모델은 UI-Ins-7B를 실행자로 사용하여 AndoridWorld에서 74.1%의 성공률을 달성하는 강점 포텐셜을 보였다. 우리의 심층 분석은 추론이 Grounding 성능을 향상시키는 방식으로 어떻게 구성될 수 있고, SFT+RL 프레임워크에서 정책 붕괴를 어떻게 완화하는지와 같은 추가적인 통찰력을 보여준다. 모든 코드와 모델 체크포인트는 https://github.com/alibaba/UI-Ins에서 공개될 예정이다."
+    },
+    "summary": "1. GUI Grounding을 향상시키기 위해 Instruction-as-Reasoning 접근법을 제안하였으며, 지침 다양성의 추론 시 활용으로 최대 76%의 성능 향상을 보였다.\n2. 지도된 미세 조정(SFT)과 강화 학습(RL)을 결합한 두 단계의 학습 프레임워크를 통해 UI-Ins-7B와 UI-Ins-32B 모델을 개발하여 최고의 Grounding 정확도를 달성하고 새로운 지침 경로를 추론 중에 구성한다.\n3. 모델은 AndroidWorld에서 높은 성공률을 보여주며, 추론과 Grounding 성능 향상을 위한 Reasoning 방법론과 SFT+RL 프레임워크의 정책 붕괴 완화 방안을 제시하였다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Visual Diffusion Models are Geometric Solvers",
+    "abstract": "In this paper we show that visual diffusion models can serve as effective\ngeometric solvers: they can directly reason about geometric problems by working\nin pixel space. We first demonstrate this on the Inscribed Square Problem, a\nlong-standing problem in geometry that asks whether every Jordan curve contains\nfour points forming a square. We then extend the approach to two other\nwell-known hard geometric problems: the Steiner Tree Problem and the Simple\nPolygon Problem.\n  Our method treats each problem instance as an image and trains a standard\nvisual diffusion model that transforms Gaussian noise into an image\nrepresenting a valid approximate solution that closely matches the exact one.\nThe model learns to transform noisy geometric structures into correct\nconfigurations, effectively recasting geometric reasoning as image generation.\n  Unlike prior work that necessitates specialized architectures and\ndomain-specific adaptations when applying diffusion to parametric geometric\nrepresentations, we employ a standard visual diffusion model that operates on\nthe visual representation of the problem. This simplicity highlights a\nsurprising bridge between generative modeling and geometric problem solving.\nBeyond the specific problems studied here, our results point toward a broader\nparadigm: operating in image space provides a general and practical framework\nfor approximating notoriously hard problems, and opens the door to tackling a\nfar wider class of challenging geometric tasks.",
+    "authors": [
+      "Nir Goren",
+      "Shai Yehezkel",
+      "Omer Dahary",
+      "Andrey Voynov",
+      "Or Patashnik",
+      "Daniel Cohen-Or"
+    ],
+    "likes": 13,
+    "published_date": "Oct 24",
+    "url": "https://huggingface.co/papers/2510.21697",
+    "date_collected": "2025-10-28T07:07:47.808880+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "시각 확산 모델은 기하학적 문제 해결자입니다",
+      "abstract": "본 논문에서는 시각 확산 모델이 픽셀 공간에서 작동하여 기하학적 문제를 직접적으로 해결할 수 있는 효과적인 방법임을 보여줍니다. 우리는 먼저 , 매번 존재하는 문제로, 모든 조르단 곡선이 사각형을 형성하는 네 점을 포함하는 지 여부를 묻는 문제의 경우 이를 보여줍니다. 그런 다음 우리는 이 방법을 다른 두 개의 잘 알려진 어려운 기하학 문제인 슈타이너 트리 문제와 단순 다각형 문제로 확장시킵니다."
+    },
+    "summary": "1. 기하학적 문제를 픽셀 공간에서 해결하는 시각 확산 모델의 효과적인 활용을 보여줌.\n2. 문제 인스턴스를 이미지로 취급하고 가우시안 노이즈를 올바른 대략적인 솔루션을 나타내는 이미지로 변환하여 학습함.\n3. 기하학적 추론을 이미지 생성으로 표현하며, 특정 문제뿐만 아니라 다양한 어려운 기하학적 작업을 근사적으로 해결할 수 있는 지평을 제시함.",
+    "categories": [
+      "Computer Vision",
+      "LLM"
+    ]
+  }
+]

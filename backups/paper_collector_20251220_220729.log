@@ -1,0 +1,127 @@
+=== Paper Collection Started at Fri Dec 19 22:08:34 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W51
+URL: https://huggingface.co/papers/week/2025-W51
+Found 10 papers in weekly view
+Fetching likes for: Step-GUI Technical Report
+Fetching likes for: MMGR: Multi-Modal Generative Reasoning
+Fetching likes for: Kling-Omni Technical Report
+Fetching likes for: QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management
+Fetching likes for: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Fetching likes for: Memory in the Age of AI Agents
+Fetching likes for: Towards Scalable Pre-training of Visual Tokenizers for Generation
+Fetching likes for: ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding
+Fetching likes for: LongVie 2: Multimodal Controllable Ultra-Long Video World Model
+Fetching likes for: Video Reality Test: Can AI-Generated ASMR Videos fool VLMs and Humans?
+Selected top 10 papers by likes:
+1. Step-GUI Technical Report (116 likes)
+2. MMGR: Multi-Modal Generative Reasoning (112 likes)
+3. Kling-Omni Technical Report (110 likes)
+4. QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management (96 likes)
+5. EgoX: Egocentric Video Generation from a Single Exocentric Video (96 likes)
+6. Memory in the Age of AI Agents (93 likes)
+7. Towards Scalable Pre-training of Visual Tokenizers for Generation (86 likes)
+8. ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding (85 likes)
+9. LongVie 2: Multimodal Controllable Ultra-Long Video World Model (62 likes)
+10. Video Reality Test: Can AI-Generated ASMR Videos fool VLMs and Humans? (60 likes)
+Found abstract: Recent advances in multimodal large language models unlock unprecedented opportunities for GUI autom...
+Processed paper: Step-GUI Technical Report
+Found abstract: Video foundation models generate visually realistic and temporally coherent content, but their relia...
+Processed paper: MMGR: Multi-Modal Generative Reasoning
+Found abstract: We present Kling-Omni, a generalist generative framework designed to synthesize high-fidelity videos...
+Processed paper: Kling-Omni Technical Report
+Found abstract: We introduce QwenLong-L1.5, a model that achieves superior long-context reasoning capabilities throu...
+Processed paper: QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management
+Found abstract: Egocentric perception enables humans to experience and understand the world directly from their own ...
+Processed paper: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Found abstract: Memory has emerged, and will continue to remain, a core capability of foundation model-based agents....
+Processed paper: Memory in the Age of AI Agents
+Found abstract: The quality of the latent space in visual tokenizers (e.g., VAEs) is crucial for modern generative m...
+Processed paper: Towards Scalable Pre-training of Visual Tokenizers for Generation
+Found abstract: Autoregressive models (ARMs) are hindered by slow sequential inference. While masked diffusion model...
+Processed paper: ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding
+Found abstract: Building video world models upon pretrained video generation systems represents an important yet cha...
+Processed paper: LongVie 2: Multimodal Controllable Ultra-Long Video World Model
+Found abstract: Recent advances in video generation have produced vivid content that are often indistinguishable fro...
+Processed paper: Video Reality Test: Can AI-Generated ASMR Videos fool VLMs and Humans?
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Step-GUI Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 116  ->  77
+Update date_collected: 2025-12-20T07:08:43.270864+09:00  ->  2025-12-19T07:08:17.527312+09:00
+
+Processing paper 2/10
+Title: MMGR: Multi-Modal Generative Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  107
+Update date_collected: 2025-12-20T07:08:43.272344+09:00  ->  2025-12-19T07:08:17.513994+09:00
+
+Processing paper 3/10
+Title: Kling-Omni Technical Report
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management
+Paper already exists, checking if translation is complete...
+Update likes: 96  ->  90
+Update date_collected: 2025-12-20T07:08:43.275717+09:00  ->  2025-12-19T07:08:17.518237+09:00
+
+Processing paper 5/10
+Title: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Paper already exists, checking if translation is complete...
+Update likes: 96  ->  92
+Update date_collected: 2025-12-20T07:08:43.276892+09:00  ->  2025-12-19T07:08:17.515857+09:00
+
+Processing paper 6/10
+Title: Memory in the Age of AI Agents
+Paper already exists, checking if translation is complete...
+Update likes: 93  ->  87
+Update date_collected: 2025-12-20T07:08:43.278732+09:00  ->  2025-12-19T07:08:17.521090+09:00
+
+Processing paper 7/10
+Title: Towards Scalable Pre-training of Visual Tokenizers for Generation
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  81
+Update date_collected: 2025-12-20T07:08:43.279844+09:00  ->  2025-12-19T07:08:17.524419+09:00
+
+Processing paper 8/10
+Title: ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  84
+Update date_collected: 2025-12-20T07:08:43.280916+09:00  ->  2025-12-19T07:08:17.522732+09:00
+
+Processing paper 9/10
+Title: LongVie 2: Multimodal Controllable Ultra-Long Video World Model
+Paper already exists, checking if translation is complete...
+Update likes: 62  ->  62
+Update date_collected: 2025-12-20T07:08:43.282346+09:00  ->  2025-12-19T07:08:17.529416+09:00
+
+Processing paper 10/10
+Title: Video Reality Test: Can AI-Generated ASMR Videos fool VLMs and Humans?
+Paper already exists, checking if translation is complete...
+Update likes: 60  ->  60
+Update date_collected: 2025-12-20T07:08:43.283620+09:00  ->  2025-12-19T07:08:17.531457+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W51.json...
+
+Updating Notion database...
+Updating paper: Step-GUI 기술 보고서 (likes: 77 -> 116)
+Updating paper: 다중 모달 생성적 추론(Multi-Modal Generative Reasoning) (likes: 107 -> 112)
+Creating new paper: Kling-Omni 기술 보고서
+Updating paper: QwenLong-L1.5: 긴 맥락 추론과 메모리 관리를 위한 후속 훈련 레시피 (likes: 90 -> 96)
+Updating paper: 단일 외부 시점 동영상으로부터 자아 중심 동영상 생성 (EgoX) (likes: 92 -> 96)
+Updating paper: AI 에이전트 시대의 기억 (likes: 87 -> 93)
+Updating paper: 시각 토크나이저 생성을 위한 확장 가능한 사전 학습에 가까이 (likes: 81 -> 86)
+Updating paper: ReFusion: 병렬 자기회귀 디코딩을 통한 확산 대형 언어 모델 (likes: 84 -> 85)
+Paper already exists with same likes count: LongVie 2: 멀티모달 제어 가능한 초장기 비디오 월드 모델
+Paper already exists with same likes count: 비디오 현실 테스트: AI가 생성한 ASMR 비디오가 VLMs와 인간들을 속일 수 있을까?
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Dec 19 22:10:18 UTC 2025 ===
+

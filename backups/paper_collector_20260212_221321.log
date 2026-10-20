@@ -1,0 +1,121 @@
+=== Paper Collection Started at Wed Feb 11 22:13:26 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W07
+URL: https://huggingface.co/papers/week/2026-W07
+Found 10 papers in weekly view
+Fetching likes for: OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration
+Fetching likes for: QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining
+Fetching likes for: Code2World: A GUI World Model via Renderable Code Generation
+Fetching likes for: Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
+Fetching likes for: UI-Venus-1.5 Technical Report
+Fetching likes for: MOVA: Towards Scalable and Synchronized Video-Audio Generation
+Fetching likes for: Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models
+Fetching likes for: F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare
+Fetching likes for: Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning
+Fetching likes for: AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents
+Selected top 10 papers by likes:
+1. OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration (277 likes)
+2. QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining (176 likes)
+3. Code2World: A GUI World Model via Renderable Code Generation (167 likes)
+4. Weak-Driven Learning: How Weak Agents make Strong Agents Stronger (167 likes)
+5. UI-Venus-1.5 Technical Report (143 likes)
+6. MOVA: Towards Scalable and Synchronized Video-Audio Generation (142 likes)
+7. Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models (128 likes)
+8. F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare (68 likes)
+9. Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning (64 likes)
+10. AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents (63 likes)
+Found abstract: As high-quality public text approaches exhaustion, a phenomenon known as the Data Wall, pre-training...
+Processed paper: OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration
+Found abstract: Financial markets are noisy and non-stationary, making alpha mining highly sensitive to noise in bac...
+Processed paper: QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining
+Found abstract: Autonomous GUI agents interact with environments by perceiving interfaces and executing actions. As ...
+Processed paper: Code2World: A GUI World Model via Renderable Code Generation
+Found abstract: As post-training optimization becomes central to improving large language models, we observe a persi...
+Processed paper: Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
+Found abstract: GUI agents have emerged as a powerful paradigm for automating interactions in digital environments, ...
+Processed paper: UI-Venus-1.5 Technical Report
+Found abstract: Audio is indispensable for real-world video, yet generation models have largely overlooked audio com...
+Processed paper: MOVA: Towards Scalable and Synchronized Video-Audio Generation
+Found abstract: Despite the success of multimodal contrastive learning in aligning visual and linguistic representat...
+Processed paper: Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) is commonly based on group sampling to estimat...
+Processed paper: F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare
+Found abstract: Current Vision-Language-Action (VLA) models rely on fixed computational depth, expending the same am...
+Processed paper: Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning
+Found abstract: LLM agents hold significant promise for advancing scientific research. To accelerate this progress, ...
+Processed paper: AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining
+Paper already exists, checking if translation is complete...
+Update likes: 176  ->  140
+Update date_collected: 2026-02-12T07:13:34.074944+09:00  ->  2026-02-11T07:20:46.816117+09:00
+
+Processing paper 3/10
+Title: Code2World: A GUI World Model via Renderable Code Generation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
+Paper already exists, checking if translation is complete...
+Update likes: 167  ->  116
+Update date_collected: 2026-02-12T07:13:34.077628+09:00  ->  2026-02-11T07:20:46.821056+09:00
+
+Processing paper 5/10
+Title: UI-Venus-1.5 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: MOVA: Towards Scalable and Synchronized Video-Audio Generation
+Paper already exists, checking if translation is complete...
+Update likes: 142  ->  131
+Update date_collected: 2026-02-12T07:13:34.081289+09:00  ->  2026-02-11T07:20:46.818077+09:00
+
+Processing paper 7/10
+Title: Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 128  ->  120
+Update date_collected: 2026-02-12T07:13:34.082842+09:00  ->  2026-02-11T07:20:46.819679+09:00
+
+Processing paper 8/10
+Title: F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  66
+Update date_collected: 2026-02-12T07:13:34.084026+09:00  ->  2026-02-11T07:20:46.822259+09:00
+
+Processing paper 9/10
+Title: Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  54
+Update date_collected: 2026-02-12T07:13:34.087119+09:00  ->  2026-02-11T07:20:46.825808+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W07.json...
+
+Updating Notion database...
+Creating new paper: 효율적이고 원칙적인 데이터 선택을 향한 OPUS: 대형 언어 모델 사전 훈련에서 매 반복마다
+Updating paper: 양자알파: LLM-주도 알파 채굴을 위한 진화적 프레임워크 (likes: 140 -> 176)
+Creating new paper: Code2World: 렌더 가능 코드 생성을 통한 GUI 세계 모델
+Updating paper: 약한 주도 학습: 어떻게 약한 에이전트가 강한 에이전트를 더욱 강하게 만드는가 (likes: 116 -> 167)
+Creating new paper: UI-Venus-1.5 기술 보고서
+Updating paper: 확장 가능하고 동기화된 비디오-오디오 생성을 향하여 (likes: 131 -> 142)
+Updating paper: 다중 모달 대형 언어 모델을 위한 모닰리티 갭 주도 서브스페이스 정렬 훈련 패러다임 (likes: 120 -> 128)
+Updating paper: F-GRPO: 정반대를 배우지만 드문 경우를 잊지 마세요 (likes: 66 -> 68)
+Creating new paper: 순환깊이 VLA: 잠재적 반복 추론을 통한 시각-언어-행동 모델의 검사 시간 계산 확장
+Updating paper: AIRS-Bench: AI 연구 과학 에이전트를 위한 과제 모음 (likes: 54 -> 63)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Feb 11 22:15:13 UTC 2026 ===
+

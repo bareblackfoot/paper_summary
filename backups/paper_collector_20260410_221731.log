@@ -1,0 +1,129 @@
+=== Paper Collection Started at Thu Apr  9 22:19:58 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W15
+URL: https://huggingface.co/papers/week/2026-W15
+Found 10 papers in weekly view
+Fetching likes for: Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding
+Fetching likes for: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Fetching likes for: Adam's Law: Textual Frequency Law on Large Language Models
+Fetching likes for: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Fetching likes for: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Fetching likes for: Self-Distilled RLVR
+Fetching likes for: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Fetching likes for: Claw-Eval: Toward Trustworthy Evaluation of Autonomous Agents
+Fetching likes for: TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
+Fetching likes for: LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models
+Selected top 10 papers by likes:
+1. Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding (217 likes)
+2. OpenWorldLib: A Unified Codebase and Definition of Advanced World Models (171 likes)
+3. Adam's Law: Textual Frequency Law on Large Language Models (161 likes)
+4. InCoder-32B-Thinking: Industrial Code World Model for Thinking (155 likes)
+5. GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning (147 likes)
+6. Self-Distilled RLVR (145 likes)
+7. MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale (103 likes)
+8. Claw-Eval: Toward Trustworthy Evaluation of Autonomous Agents (102 likes)
+9. TriAttention: Efficient Long Reasoning with Trigonometric KV Compression (90 likes)
+10. LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models (75 likes)
+Found abstract: With the rapid advancement of video understanding, existing benchmarks are becoming increasingly sat...
+Processed paper: Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding
+Found abstract: World models have garnered significant attention as a promising research direction in artificial int...
+Processed paper: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Found abstract: While textual frequency has been validated as relevant to human cognition in reading speed, its rela...
+Processed paper: Adam's Law: Textual Frequency Law on Large Language Models
+Found abstract: Industrial software development across chip design, GPU optimization, and embedded systems lacks exp...
+Processed paper: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Found abstract: Competitive programming remains one of the last few human strongholds in coding against AI. The best...
+Processed paper: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Found abstract: On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This parad...
+Processed paper: Self-Distilled RLVR
+Found abstract: Current document parsing methods compete primarily on model architecture innovation, while systemati...
+Processed paper: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Found abstract: Large language models are increasingly deployed as autonomous agents executing multi-step workflows ...
+Processed paper: Claw-Eval: Toward Trustworthy Evaluation of Autonomous Agents
+Found abstract: Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leadi...
+Processed paper: TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
+Found abstract: Vision-Language-Action (VLA) models achieve strong performance in robotic manipulation by leveraging...
+Processed paper: LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding
+Paper already exists, checking if translation is complete...
+Update likes: 217  ->  194
+Update date_collected: 2026-04-10T07:20:08.060736+09:00  ->  2026-04-09T07:20:09.655009+09:00
+
+Processing paper 2/10
+Title: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Paper already exists, checking if translation is complete...
+Update likes: 171  ->  164
+Update date_collected: 2026-04-10T07:20:08.062991+09:00  ->  2026-04-09T07:20:09.657294+09:00
+
+Processing paper 3/10
+Title: Adam's Law: Textual Frequency Law on Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 161  ->  158
+Update date_collected: 2026-04-10T07:20:08.064545+09:00  ->  2026-04-09T07:20:09.658871+09:00
+
+Processing paper 4/10
+Title: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Paper already exists, checking if translation is complete...
+Update likes: 155  ->  119
+Update date_collected: 2026-04-10T07:20:08.066797+09:00  ->  2026-04-09T07:20:09.662749+09:00
+
+Processing paper 5/10
+Title: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 147  ->  80
+Update date_collected: 2026-04-10T07:20:08.068323+09:00  ->  2026-04-09T07:20:09.669931+09:00
+
+Processing paper 6/10
+Title: Self-Distilled RLVR
+Paper already exists, checking if translation is complete...
+Update likes: 145  ->  136
+Update date_collected: 2026-04-10T07:20:08.069976+09:00  ->  2026-04-09T07:20:09.660519+09:00
+
+Processing paper 7/10
+Title: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Paper already exists, checking if translation is complete...
+Update likes: 103  ->  99
+Update date_collected: 2026-04-10T07:20:08.072262+09:00  ->  2026-04-09T07:20:09.665036+09:00
+
+Processing paper 8/10
+Title: Claw-Eval: Toward Trustworthy Evaluation of Autonomous Agents
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  94
+Update date_collected: 2026-04-10T07:20:08.074057+09:00  ->  2026-04-09T07:20:09.666831+09:00
+
+Processing paper 9/10
+Title: TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  81
+Update date_collected: 2026-04-10T07:20:08.075629+09:00  ->  2026-04-09T07:20:09.668415+09:00
+
+Processing paper 10/10
+Title: LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models
+Paper already exists, checking if translation is complete...
+Update likes: 75  ->  75
+Update date_collected: 2026-04-10T07:20:08.077038+09:00  ->  2026-04-09T07:20:09.671351+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W15.json...
+
+Updating Notion database...
+Updating paper: 비디오 이해의 다음 단계를 향한 Video-MME-v2 벤치마크 (likes: 194 -> 217)
+Updating paper: OpenWorldLib: 고급 세계 모델의 통합된 코드베이스와 정의 (likes: 164 -> 171)
+Updating paper: 아담의 법칙: 대형언어모델에서의 텍스트 빈도 법칙 (likes: 158 -> 161)
+Updating paper: 산업 코드 세계 모델을 위한 인코더-32B-사고력 (likes: 119 -> 155)
+Updating paper: GrandCode: 경쟁 프로그래밍에서 에이전틱 강화 학습을 통해 그랜드마스터 수준 달성 (likes: 80 -> 147)
+Updating paper: 자기 생성 강화학습 기반의 Self-Distilled RLVR (likes: 136 -> 145)
+Updating paper: 데이터 중심 문서 구문 분석의 한계를 넓히는 MinerU2.5-Pro (likes: 99 -> 103)
+Updating paper: Claw-Eval: 신뢰할 만한 자율 에이전트 평가를 향하여 (likes: 94 -> 102)
+Updating paper: TriAttention: 삼각 함수화된 KV 압축을 통한 효율적인 장거리 추론 (likes: 81 -> 90)
+Paper already exists with same likes count: LIBERO-Para: VLA 모델에서 패러프레이즈 견고성에 대한 진단적 벤치마크 및 측정 지표
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Apr  9 22:21:43 UTC 2026 ===
+

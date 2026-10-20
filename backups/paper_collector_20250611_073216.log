@@ -1,0 +1,16 @@
+=== Paper Collection Started at Sun Jun  8 06:47:57 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_updater import update_notion_database
+ModuleNotFoundError: No module named 'notion_updater'
+=== Paper Collection Finished at Sun Jun  8 06:47:58 UTC 2025 ===
+
+=== Paper Collection Started at Sun Jun  8 07:08:16 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_auto_publisher import create_notion_page
+  File "/home/runner/work/paper_summary/paper_summary/notion_auto_publisher.py", line 3, in <module>
+    from notion_client import Client
+ModuleNotFoundError: No module named 'notion_client'
+=== Paper Collection Finished at Sun Jun  8 07:08:17 UTC 2025 ===
+

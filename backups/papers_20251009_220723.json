@@ -1,0 +1,302 @@
+[
+  {
+    "title": "Apriel-1.5-15b-Thinker",
+    "abstract": "We present Apriel-1.5-15B-Thinker, a 15-billion parameter open-weights\nmultimodal reasoning model that achieves frontier-level performance through\ntraining design rather than sheer scale. Starting from Pixtral-12B, we apply a\nprogressive three-stage methodology: (1) depth upscaling to expand reasoning\ncapacity without pretraining from scratch, (2) staged continual pre-training\nthat first develops foundational text and vision understanding, then enhances\nvisual reasoning through targeted synthetic data generation addressing spatial\nstructure, compositional understanding, and fine-grained perception, and (3)\nhigh-quality text-only supervised fine-tuning on curated instruction-response\npairs with explicit reasoning traces spanning mathematics, coding, science, and\ntool use. Notably, our model achieves competitive results without reinforcement\nlearning or preference optimization, isolating the contribution of our\ndata-centric continual pre-training approach. On the Artificial Analysis\nIntelligence Index, Apriel-1.5-15B-Thinker attains a score of 52, matching\nDeepSeek-R1-0528 despite requiring significantly fewer computational resources.\nAcross ten image benchmarks, its performance is on average within five points\nof Gemini-2.5-Flash and Claude Sonnet-3.7, a key achievement for a model\noperating within single-GPU deployment constraints. Our results demonstrate\nthat thoughtful mid-training 2 design can close substantial capability gaps\nwithout massive scale, making frontier-level multimodal reasoning accessible to\norganizations with limited infrastructure. We release the model checkpoint, all\ntraining recipes, and evaluation protocols under the MIT license to to advance\nopen-source research.",
+    "authors": [
+      "Shruthan Radhakrishna",
+      "Aman Tiwari",
+      "Aanjaneya Shukla",
+      "Masoud Hashemi",
+      "Rishabh Maheshwary",
+      "Shiva Krishna Reddy Malay",
+      "Jash Mehta",
+      "Pulkit Pattnaik",
+      "Saloni Mittal",
+      "Khalil Slimi",
+      "Kelechi Ogueji",
+      "Akintunde Oladipo",
+      "Soham Parikh",
+      "Oluwanifemi Bamgbose",
+      "Toby Liang",
+      "Ahmed Masry",
+      "Khyati Mahajan",
+      "Sai Rajeswar Mudumba",
+      "Vikas Yadav",
+      "Sathwik Tejaswi Madhusudhan",
+      "Torsten Scholak",
+      "Sagar Davasam"
+    ],
+    "likes": 98,
+    "published_date": "Oct 1",
+    "url": "https://huggingface.co/papers/2510.01141",
+    "date_collected": "2025-10-09T07:07:47.334028+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "Apriel-1.5-15B-Thinker",
+      "abstract": "우리는 150억 개의 파라미터를 가지는 Apriel-1.5-15B-Thinker를 소개합니다. 이 모델은 순수한 규모가 아닌 훈련 설계를 통해 선도 수준의 성능을 달성합니다. Pixtral-12B에서 시작하여 점진적인 세 단계 방법론을 적용합니다."
+    },
+    "summary": "1. Apriel-1.5-15B-Thinker는 광범위한 이유 추론 능력을 확장시키기 위한 진보된 세 단계 방법론을 통해 성과를 끌어올립니다.\n2. 연구는 강화 학습이나 선호도 최적화 없이 경쟁력 있는 결과를 달성하며, 데이터 중심의 계속적인 사전 훈련 방식의 기여를 분리합니다.\n3. Apriel-1.5-15B-Thinker는 규모가 크게 덜해도 딥러닝 모델이 갖춰야 하는 선도 수준의 다중 모달 추론 능력을 개선할 수 있음을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Paper2Video: Automatic Video Generation from Scientific Papers",
+    "abstract": "Academic presentation videos have become an essential medium for research\ncommunication, yet producing them remains highly labor-intensive, often\nrequiring hours of slide design, recording, and editing for a short 2 to 10\nminutes video. Unlike natural video, presentation video generation involves\ndistinctive challenges: inputs from research papers, dense multi-modal\ninformation (text, figures, tables), and the need to coordinate multiple\naligned channels such as slides, subtitles, speech, and human talker. To\naddress these challenges, we introduce PaperTalker, the first benchmark of 101\nresearch papers paired with author-created presentation videos, slides, and\nspeaker metadata. We further design four tailored evaluation metrics--Meta\nSimilarity, PresentArena, PresentQuiz, and IP Memory--to measure how videos\nconvey the paper's information to the audience. Building on this foundation, we\npropose PaperTalker, the first multi-agent framework for academic presentation\nvideo generation. It integrates slide generation with effective layout\nrefinement by a novel effective tree search visual choice, cursor grounding,\nsubtitling, speech synthesis, and talking-head rendering, while parallelizing\nslide-wise generation for efficiency. Experiments on Paper2Video demonstrate\nthat the presentation videos produced by our approach are more faithful and\ninformative than existing baselines, establishing a practical step toward\nautomated and ready-to-use academic video generation. Our dataset, agent, and\ncode are available at https://github.com/showlab/Paper2Video.",
+    "authors": [
+      "Zeyu Zhu",
+      "Kevin Qinghong Lin",
+      "Mike Zheng Shou"
+    ],
+    "likes": 70,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.05096",
+    "date_collected": "2025-10-09T07:07:47.335133+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "Paper2Video: 학문 논문으로부터의 자동 비디오 생성",
+      "abstract": "학술 발표 동영상은 연구 소통을 위한 중요한 매체가 되었으나, 그 제작은 슬라이드 디자인, 녹화, 편집에 여전히 많은 노력이 필요하여 자연 비디오와는 다른 독특한 도전이 있습니다. 이 연구에서는 PaperTalker라는 제 1의 벤치마크를 소개하여 학문 논문에 대응하는 발표 비디오, 슬라이드 및 연사 메타데이터가 포함된 101개의 논문을 제시합니다. 이를 바탕으로 학술 발표 동영상을 위한 첫 번째 멀티 에이전트 프레임워크인 PaperTalker를 제안하며, 이는 슬라이드 생성과 효과적인 레이아웃 개선을 통합한 것입니다."
+    },
+    "summary": "1. PaperTalker는 101개의 학문 논문과 해당하는 발표 비디오, 슬라이드, 연사 메타데이터로 이루어진 벤치마크를 소개하며, 학술 발표 동영상의 자동 생성을 위한 멀티 에이전트 프레임워크를 제안합니다.\n2. 연구는 새로운 평가 메트릭인 Meta Similarity, PresentArena, PresentQuiz, IP Memory를 도입하여 비디오가 논문 정보를 어떻게 전달하는지를 측정하며, 이를 통해 기존 보다 충실하고 정보 전달력이 높은 발표 동영상을 생성한다는 것을 입증합니다.\n3. Paper2Video 실험 결과, 제안된 방법을 통해 생성된 발표 동영상이 기존 기준에 비해 더 충실하고 정보 전달력이 높다는 것을 입증하여 자동 및 즉시 사용 가능한 학문 동영상 생성으로 나아가는 실용적인 단계를 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Less is More: Recursive Reasoning with Tiny Networks",
+    "abstract": "Hierarchical Reasoning Model (HRM) is a novel approach using two small neural\nnetworks recursing at different frequencies. This biologically inspired method\nbeats Large Language models (LLMs) on hard puzzle tasks such as Sudoku, Maze,\nand ARC-AGI while trained with small models (27M parameters) on small data\n(around 1000 examples). HRM holds great promise for solving hard problems with\nsmall networks, but it is not yet well understood and may be suboptimal. We\npropose Tiny Recursive Model (TRM), a much simpler recursive reasoning approach\nthat achieves significantly higher generalization than HRM, while using a\nsingle tiny network with only 2 layers. With only 7M parameters, TRM obtains\n45% test-accuracy on ARC-AGI-1 and 8% on ARC-AGI-2, higher than most LLMs\n(e.g., Deepseek R1, o3-mini, Gemini 2.5 Pro) with less than 0.01% of the\nparameters.",
+    "authors": [
+      "Alexia Jolicoeur-Martineau"
+    ],
+    "likes": 68,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.04871",
+    "date_collected": "2025-10-09T07:07:47.336147+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "더 적은 것이 더 좋다: 작은 네트워크로 재귀 추론하기",
+      "abstract": "계층적 추론 모델 (HRM)은 두 개의 작은 신경망이 서로 다른 주파수로 순환하는 혁신적인 접근 방식입니다. 이 생물학적 영감을 받은 방법은 작은 모델 (27M 매개변수)과 작은 데이터 (약 1000개의 예시)로 훈련되며, 수도쿠, 미로, ARC-AGI와 같은 어려운 퍼즐 작업에서 대형 언어 모델(Large Language Models, LLMs)을 이길 수 있습니다. HRM은 어려운 문제를 해결하기 위한 큰 가능성을 가지고 있지만 아직 충분히 이해되지 않았으며 최적이 아닐 수도 있습니다. 우리는 Tiny Recursive Model (TRM)을 제안합니다. TRM은 한 개의 단 하나의 작은 네트워크와 단 2개의 층만 사용하여 HRM보다 훨씬 더 높은 일반화 능력을 달성합니다. 7M 매개변수로, TRM은 ARC-AGI-1에서 45%의 테스트 정확도, ARC-AGI-2에서는 8%의 정확도를 얻어, Deepseek R1, o3-mini, Gemini 2.5 Pro와 같은 대부분의 LLMs보다 적은 양의 매개변수로 높은 수준의 성능을 내는 것을 보여줍니다."
+    },
+    "summary": "1. 계층적 추론 모델(HRM)은 두 개의 작은 신경망이 서로 다른 주파수로 순환하여 어려운 퍼즐 작업에서 큰 언어 모델(LLMs)을 이기는 혁신적인 접근 방식이다.\n2. Tiny Recursive Model (TRM)은 한 개의 작은 네트워크와 2개의 층만을 사용하여 HRM보다 더 높은 일반화 능력을 달성하며, 적은 매개변수로 높은 성능을 보여준다.\n3. TRM은 ARC-AGI-1에서 45% 테스트 정확도, ARC-AGI-2에서 8%의 정확도를 얻어 대부분의 LLMs보다 적은 양의 매개변수로 뛰어난 성능을 보여준다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and\n  Synthesis for SLMs",
+    "abstract": "Tool-integrated reasoning has emerged as a key focus for enabling agentic\napplications. Among these, DeepResearch Agents have gained significant\nattention for their strong performance on complex, open-ended\ninformation-seeking tasks. We introduce Fathom-DeepResearch, an agentic system\ncomposed of two specialized models. The first is Fathom-Search-4B, a DeepSearch\nmodel trained from Qwen3-4B and optimized for evidence-based investigation\nthrough live web search and targeted webpage querying. Its training combines\nthree advances: (i) DUETQA, a 5K-sample dataset generated via multi-agent\nself-play that enforces strict web-search dependence and heterogeneous source\ngrounding; (ii) RAPO, a zero-overhead extension of GRPO that stabilizes\nmulti-turn Reinforcement Learning with Verifiable Rewards through curriculum\npruning, reward-aware advantage scaling, and per-prompt replay buffers; and\n(iii) a steerable step-level reward that classifies each tool call by cognitive\nbehavior and marginal utility, enabling explicit control over search trajectory\nbreadth, depth, and horizon. These improvements enable reliable extension of\ntool-calling beyond 20 calls when warranted. The second is\nFathom-Synthesizer-4B, trained from Qwen3-4B, which converts multi-turn\nDeepSearch traces into structured, citation-dense DeepResearch Reports for\ncomprehensive synthesis. Evaluated on DeepSearch benchmarks (SimpleQA, FRAMES,\nWebWalker, Seal0, MuSiQue) and DeepResearch-Bench, the system achieves\nstate-of-the-art performance in the open-weights category while demonstrating\nstrong generalization to diverse reasoning tasks including HLE, AIME-25,\nGPQA-Diamond, and MedQA.",
+    "authors": [
+      "Shreyas Singh",
+      "Kunal Singh",
+      "Pradeep Moturi"
+    ],
+    "likes": 57,
+    "published_date": "Sep 28",
+    "url": "https://huggingface.co/papers/2509.24107",
+    "date_collected": "2025-10-09T07:07:47.337235+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "Fathom-DeepResearch: SLMs를 위한 장거리 정보 검색 및 합성의 해제",
+      "abstract": "도구 통합 추론은 임무 수행 어플리케이션을 가능하게 하는 주요 관심사로 부상했다. 그중 DeepResearch 에이전트는 복잡하고 개방적인 정보 수집 작업에서 뛰어난 성능으로 큰 주목을 받았다. 본 연구에서는 Fathom-DeepResearch를 소개하는데, 이는 두 가지 특화된 모델로 구성된 에이전트 시스템이다."
+    },
+    "summary": "1. Fathom-Search-4B는 Qwen3-4B에서 학습된 DeepSearch 모델로, 원거리 웹 검색과 대상 페이지 쿼리를 통해 증거 기반 조사를 최적화한 것이다.\n2. RAPO와 DUETQA를 통해 향상된 Fathom-Search-4B는 멀티-에이전트의 자가 대결에 기반을 둔 5천 개 샘플 데이터셋을 결합하고, 강화 학습 안정성을 유지하기 위해 GRPO의 제로 부담 겨우 연장인 RAPO를 사용했다.\n3. Fathom-Synthesizer-4B는 DeepSearch 추적을 구조화된, 인용 밀집 DeepResearch 보고서로 변환하는 모델로, DeepSearch 기준에서 최첨단 성능을 달성하면서 HLE, AIME-25, GPQA-Diamond, MedQA를 포함한 다양한 추론 작업에 강한 일반화 능력을 보여준다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular\n  Reasoning",
+    "abstract": "Process Reward Models (PRMs) have recently emerged as a powerful framework\nfor enhancing the reasoning capabilities of large reasoning models (LRMs),\nparticularly in the context of test-time scaling (TTS). However, their\npotential for supervising LRMs on tabular reasoning domains remains\nunderexplored. Through detailed empirical analyses, we identify that existing\nPRMs, though widely adopted for supervising text-only reasoning steps, struggle\nwith table-specific operations such as sub-table retrieval and schema\ninteraction, leading to critical performance bottlenecks. To address this\nlimitation, we propose TaTToo, a novel table-grounded PRM framework that (i)\nreasons explicitly over tabular reasoning steps and (ii) integrates tool-based\nverification to provide precise reward supervision. Concretely, we first design\na scalable data curation pipeline that constructs over 60k high-quality\nstep-level annotations by integrating table verification rationales with\ntool-based executions. Building on the collected data, we train TaTToo with a\ndual-stage paradigm: cold-start supervised fine-tuning to capture tool-use\nreasoning patterns, followed by reinforcement learning with tool-grounded\nreward shaping to align our model with table-based verification. We provide a\ncomprehensive evaluation of the policy improvement induced by our newly\ndesigned PRM. Across 5 challenging tabular reasoning benchmarks covering\nnumerical reasoning, fact-checking, and data analysis, TaTToo improves\ndownstream policy LRMs by 30.9% at inference, surpasses strong PRM baselines\nsuch as Qwen-2.5-Math-PRM-72B with only 8B parameters, and demonstrates strong\ngeneralizability across diverse TTS strategies.",
+    "authors": [
+      "Jiaru Zou",
+      "Soumya Roy",
+      "Vinay Kumar Verma",
+      "Ziyi Wang",
+      "David Wipf",
+      "Pan Lu",
+      "Sumit Negi",
+      "James Zou",
+      "Jingrui He"
+    ],
+    "likes": 54,
+    "published_date": "Oct 7",
+    "url": "https://huggingface.co/papers/2510.06217",
+    "date_collected": "2025-10-09T07:07:47.338573+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "TaTToo: 도구 기반 사고 PRM을 활용한 탭릿 추론의 테스트 타임 스케일링",
+      "abstract": "최근에는 과정 보상 모델(PRMs)이 대규모 추론 모델(LRMs)의 추론 능력을 향상시키는 강력한 프레임워크로 부상하였는데, 특히 테스트 타임 스케일링(TTS)의 맥락에서 더욱 강력한 증거를 제공합니다. 그러나 PRMs가 탭릿 추론 도메인에서 LRMs를 감독하는 잠재력은 아직 탐구되지 않았습니다. 우리는 PRMs가 주로 텍스트만 있는 추론 단계를 감독하는 데 널리 사용되었지만, 서브 테이블 검색 및 스키마 상호작용과 같은 테이블에 특화된 작업에 어려움을 겪어 성능 병목 현상을 야기한다는 것을 자세히 연구를 통해 발견했습니다. 이 한계를 극복하기 위해 우리는 TaTToo를 제안합니다. 이는 탭릿 추론 단계에 명시적으로 추론을 수행하고 툴 기반 검증을 통해 정확한 보상 감독을 제공하는 새로운 테이블 기반 PRM 프레임워크입니다."
+    },
+    "summary": "1. 기존 PRMs가 텍스트만 있는 추론에 적합하나 테이블 특화된 작업에서 성능 저하가 나타나는데, 이를 극복하기 위해 TaTToo라는 새로운 테이블 기반 PRM 프레임워크를 제안하였습니다.\n2. TaTToo는 툴 사용이유 추론 패턴을 포착하기 위한 냉시작 감독 미세 조정과 테이블 기반 검증 모델과 일치시키기 위한 툴 기반 보상 형성의 강화 학습을 통해 학습되었고, 다양한 TTS 전략에서 강한 일반화 능력을 보여주었습니다.\n3. 5개의 어려운 탭릿 추론 벤치마크에서 TaTToo는 하류 정책 LRMs를 30.9% 개선시키고, 8B 파라미터로만 이루어진 강력한 PRM 기준인 Qwen-2.5-Math-PRM-72B를 앞서며, 다양한 TTS 전략에서 강력한 일반화 능력을 보여주었습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Large Reasoning Models Learn Better Alignment from Flawed Thinking",
+    "abstract": "Large reasoning models (LRMs) \"think\" by generating structured\nchain-of-thought (CoT) before producing a final answer, yet they still lack the\nability to reason critically about safety alignment and are easily biased when\na flawed premise is injected into their thought process. We propose RECAP\n(Robust Safety Alignment via Counter-Aligned Prefilling), a principled\nreinforcement learning (RL) method for post-training that explicitly teaches\nmodels to override flawed reasoning trajectories and reroute to safe and\nhelpful responses. RECAP trains on a mixture of synthetically generated\ncounter-aligned CoT prefills and standard prompts, requires no additional\ntraining cost or modifications beyond vanilla reinforcement learning from human\nfeedback (RLHF), and substantially improves safety and jailbreak robustness,\nreduces overrefusal, and preserves core reasoning capability -- all while\nmaintaining inference token budget. Extensive analysis shows that RECAP-trained\nmodels engage in self-reflection more frequently and remain robust under\nadaptive attacks, preserving safety even after repeated attempts to override\ntheir reasoning.",
+    "authors": [
+      "ShengYun Peng",
+      "Eric Smith",
+      "Ivan Evtimov",
+      "Song Jiang",
+      "Pin-Yu Chen",
+      "Hongyuan Zhan",
+      "Haozhu Wang",
+      "Duen Horng Chau",
+      "Mahesh Pasupuleti",
+      "Jianfeng Chi"
+    ],
+    "likes": 46,
+    "published_date": "Oct 1",
+    "url": "https://huggingface.co/papers/2510.00938",
+    "date_collected": "2025-10-09T07:07:47.339961+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "오류된 사고로부터 큰 추론 모델이 더 나은 정렬을 배우는 방법",
+      "abstract": "대규모 추론 모델(Large reasoning models, LRMs)은 최종 답변을 생성하기 전에 구조화된 연쇄사고(Chain-of-thought, CoT)를 생성함으로써 \"사고\"하지만, 안전 정렬에 대해 비판적으로 추론하는 능력이 부족하며 잘못된 전제가 사고과정에 주입되면 쉽게 편향됩니다. 우리는 RECAP(Robust Safety Alignment via Counter-Aligned Prefilling)을 제안합니다. 이는 후속 훈련을 위한 원칙적인 강화 학습(RL) 방법으로, 모델에게 잘못된 추론 경로를 무시하고 안전하고 유익한 응답으로 재전환하는 것을 명확히 가르치는 것입니다. RECAP은 반대로 정렬된 CoT 예비데이터와 기존 프롬프트의 혼합에서 훈련되며, 인간 피드백으로부터의 보통 강화 학습(Reinforcement learning from human feedback, RLHF)을 넘어서는 추가 훈련 비용이나 수정 없이요. 그리고 안전성 및 탈옥 저항성을 크게 향상시키며 거부 과잉을 줄이고 핵심 추론 능력을 보존하면서 추론 토큰 예산을 유지합니다. 광범위한 분석 결과 RECAP으로 훈련된 모델이 자주 자기반성에 참여하고 적응적 공격에 대해 강건하게 유지되며 추론을 재차 무시하려는 시도를 거친 후에도 안전을 보존함을 보여줍니다."
+    },
+    "summary": "1. 대규모 추론 모델은 안전 정렬에 대해 비판적으로 추론할 능력이 부족한데, RECAP은 잘못된 사고 경로를 무시하고 안전한 응답으로 돌아가도록 가르치는 강화 학습 방법이다.\n2. RECAP 훈련은 안전성 및 탈옥 저항성을 향상시키고 거부 과잉을 줄이며 핵심 추론 능력을 유지하며, 훈련 비용이나 수정 없이 인간 피드백에서의 강화 학습과 크게 다르지 않다.\n3. RECAP으로 훈련된 모델은 자기반성에 빈번히 참여하고 적응적 공격에도 강건하며, 추론을 무시하는 반복 시도에도 안전을 유지한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Efficient Multi-modal Large Language Models via Progressive Consistency\n  Distillation",
+    "abstract": "Visual tokens consume substantial computational resources in multi-modal\nlarge models (MLLMs), significantly compromising their efficiency. Recent works\nhave attempted to improve efficiency by compressing visual tokens during\ntraining, either through modifications to model components or by introducing\nadditional parameters. However, they often overlook the increased learning\ndifficulty caused by such compression, as the model's parameter space struggles\nto quickly adapt to the substantial perturbations in the feature space induced\nby token compression. In this work, we propose to develop Efficient MLLMs via\nProgressive Consistency Distillation (EPIC), a progressive learning framework.\nSpecifically, by decomposing the feature space perturbations introduced by\ntoken compression along the token-wise and layer-wise dimensions, we introduce\ntoken consistency distillation and layer consistency distillation,\nrespectively, aiming to reduce the training difficulty by leveraging guidance\nfrom a teacher model and following a progressive learning trajectory. Extensive\nexperiments demonstrate the superior effectiveness, robustness, and\ngeneralization capabilities of our proposed framework.",
+    "authors": [
+      "Zichen Wen",
+      "Shaobo Wang",
+      "Yufa Zhou",
+      "Junyuan Zhang",
+      "Qintong Zhang",
+      "Yifeng Gao",
+      "Zhaorun Chen",
+      "Bin Wang",
+      "Weijia Li",
+      "Conghui He",
+      "Linfeng Zhang"
+    ],
+    "likes": 39,
+    "published_date": "Oct 1",
+    "url": "https://huggingface.co/papers/2510.00515",
+    "date_collected": "2025-10-09T07:07:47.341381+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "효율적인 멀티모달 대형 언어 모델: 점진적 일관성 증류를 통해",
+      "abstract": "멀티모달 대형 모델(MLLMs)에서 시각적 토큰은 상당한 계산 리소스를 소비하여 효율성을 심각하게 저해합니다. 본 연구에서는 효율적인 MLLMs 개발을 제안하며, 일관성 증류를 통해 훈련의 어려움을 줄이고 지도 모델로부터 가이드를 활용하는 점진적 학습 프레임워크인 EPIC를 제안합니다."
+    },
+    "summary": "1. 멀티모달 대형 언어 모델의 효율성을 높이기 위해 점진적 일관성 증류를 도입한 EPIC 프레임워크를 제안합니다.\n2. 토큰 일관성 증류와 레이어 일관성 증류를 통해 학습 어려움을 감소시키고 훈련의 효과적인 진행을 돕습니다.\n3. 실험 결과는 제안된 프레임워크의 우수한 효과적성, 견고성 및 일반화 능력을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Video-LMM Post-Training: A Deep Dive into Video Reasoning with Large\n  Multimodal Models",
+    "abstract": "Video understanding represents the most challenging frontier in computer\nvision, requiring models to reason about complex spatiotemporal relationships,\nlong-term dependencies, and multimodal evidence. The recent emergence of\nVideo-Large Multimodal Models (Video-LMMs), which integrate visual encoders\nwith powerful decoder-based language models, has demonstrated remarkable\ncapabilities in video understanding tasks. However, the critical phase that\ntransforms these models from basic perception systems into sophisticated\nreasoning engines, post-training, remains fragmented across the literature.\nThis survey provides the first comprehensive examination of post-training\nmethodologies for Video-LMMs, encompassing three fundamental pillars:\nsupervised fine-tuning (SFT) with chain-of-thought, reinforcement learning (RL)\nfrom verifiable objectives, and test-time scaling (TTS) through enhanced\ninference computation. We present a structured taxonomy that clarifies the\nroles, interconnections, and video-specific adaptations of these techniques,\naddressing unique challenges such as temporal localization, spatiotemporal\ngrounding, long video efficiency, and multimodal evidence integration. Through\nsystematic analysis of representative methods, we synthesize key design\nprinciples, insights, and evaluation protocols while identifying critical open\nchallenges in reward design, scalability, and cost-performance optimization. We\nfurther curate essential benchmarks, datasets, and metrics to facilitate\nrigorous assessment of post-training effectiveness. This survey aims to provide\nresearchers and practitioners with a unified framework for advancing Video-LMM\ncapabilities. Additional resources and updates are maintained at:\nhttps://github.com/yunlong10/Awesome-Video-LMM-Post-Training",
+    "authors": [
+      "Yunlong Tang",
+      "Jing Bi",
+      "Pinxin Liu",
+      "Zhenyu Pan",
+      "Zhangyun Tan",
+      "Qianxiang Shen",
+      "Jiani Liu",
+      "Hang Hua",
+      "Junjia Guo",
+      "Yunzhong Xiao",
+      "Chao Huang",
+      "Zhiyuan Wang",
+      "Susan Liang",
+      "Xinyi Liu",
+      "Yizhi Song",
+      "Yuhe Nie",
+      "Jia-Xing Zhong",
+      "Bozheng Li",
+      "Daiqing Qi",
+      "Ziyun Zeng",
+      "Ali Vosoughi",
+      "Luchuan Song"
+    ],
+    "likes": 38,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.05034",
+    "date_collected": "2025-10-09T07:07:47.343280+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "비디오-LMM 후 트레이닝: 대규모 다중 모달 모델을 활용한 비디오 추론의 심층 탐구",
+      "abstract": "비디오 이해는 컴퓨터 비전에서 가장 어려운 과제를 대표하며, 모델이 복잡한 시공간 관계, 장기 의존성, 그리고 다중 모달 증거를 추론해야 합니다. 비디오-Large Multimodal Models (비디오-LMMs)의 최근 등장은 시각 인코더를 강력한 디코더 기반 언어 모델과 통합하여 비디오 이해 작업에서 놀라운 능력을 보여주었습니다. 그러나 이러한 모델을 기본 인식 시스템에서 정교한 추론 엔진으로 전환하는 중요한 단계인 후 트레이닝은 문헌 전체에 걸쳐 파편화되어 있습니다. 본 서베이는 비디오-LMMs에 대한 후 트레이닝 방법론을 첫 번째로 종합적으로 검토하며 감독된 세부 조정 (SFT)과 사고 연쇄, 검증 가능한 목표로부터의 강화 학습 (RL), 향상된 추론 계산을 통한 테스트 시간 스케일링 (TTS)을 포함하는 세 가지 기본 요소를 아우릅니다. 이러한 기술의 역할, 상호 연결 및 비디오 특화적 적응을 명확히 하는 구조화된 분류를 제시하면서 시간적 위치 지정, 시공간 기초, 장기 비디오 효율성, 다중 모달 증거 통합과 같은 독특한 도전 과제를 다룹니다. 대표적인 방법의 체계적 분석을 통해 핵심 설계 원칙, 통찰력 및 평가 프로토콜을 종합하고 보상 설계, 확장성 및 성능 최적화 비용에 대한 중요한 개방적 도전 과제를 식별하면서 후 트레이닝의 효과를 철저히 평가하기 위한 필수 벤치마크, 데이터셋 및 메트릭을 추가로 정리합니다. 본 서베이는 연구자와 실무자들에게 비디오-LMM 능력의 발전을 위한 통일된 프레임워크를 제공하는 것을 목표로 합니다. 추가 자료 및 업데이트는 아래 링크에서 확인하실 수 있습니다: https://github.com/yunlong10/Awesome-Video-LMM-Post-Training"
+    },
+    "summary": "1. 비디오-Large Multimodal Models인 Video-LMMs는 비디오 이해 작업에서 놀라운 성능을 보이는데, 이들을 정교한 추론 엔진으로 전환하는 후 트레이닝은 여전히 문헌에 파편화되어 있습니다.\n2. 후 트레이닝 방법론으로는 감독된 세부 조정, 검증 가능한 목표로부터의 강화 학습, 향상된 추론 계산을 통한 테스트 시간 스케일링 세 가지가 주요 구성 요소로 작용하며, 이들의 역할과 비디오 특화적 도전 과제를 다룹니다.\n3. 후 트레이닝의 효과를 신중하게 평가하기 위해 핵심 설계 원칙, 비디오 특화적 도전 과제, 평가 프로토콜 및 관련 벤치마크, 데이터셋이 중요하며, 이들을 종합적으로 검토함으로써 비디오-LMM 능력을 발전시키는 통일된 프레임워크를 제공합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual\n  Information",
+    "abstract": "Tree search has become as a representative framework for test-time reasoning\nwith large language models (LLMs), exemplified by methods such as\nTree-of-Thought and Monte Carlo Tree Search that explore multiple reasoning\npaths. However, it remains difficult to provide instant and reliable\nquantitative assessments of intermediate reasoning step quality, and extensive\npath exploration is computationally costly. To address this, we propose Mutual\nInformation Tree Search (MITS), a novel framework that guides reasoning with\ninformation-theoretic principles. MITS introduces an effective scoring function\nbased on pointwise mutual information (PMI), which enables step-wise evaluation\nof reasoning paths and search tree expansion via beam search without expensive\nlook-ahead simulations, achieving superior reasoning performances while\nmaintaining computational efficiency. The framework is complemented by an\nentropy-based dynamic sampling strategy that adaptively allocates computational\nresources to uncertain reasoning steps where exploration is most beneficial.\nFor final prediction, MITS employs a weighted voting scheme that combines PMI\nscores with prediction consensus. Through comprehensive experiments on diverse\nreasoning benchmarks, MITS consistently surpasses baseline methods,\nestablishing a principled and efficient framework for LLM reasoning.",
+    "authors": [
+      "Jiaxi Li",
+      "Yucheng Shi",
+      "Jin Lu",
+      "Ninghao Liu"
+    ],
+    "likes": 38,
+    "published_date": "Oct 4",
+    "url": "https://huggingface.co/papers/2510.03632",
+    "date_collected": "2025-10-09T07:07:47.344385+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "MITS: 포인트 단위 상호 정보를 통한 LLM을 위한 향상된 트리 검색 추론",
+      "abstract": "트리 검색은 다양한 추론 경로를 탐색하는 Tree-of-Thought 및 Monte Carlo Tree Search와 같은 방법을 포함하여 대규모 언어 모델 (LLMs)에 대한 시험 시간 추론의 대표적인 프레임워크로 자리잡았습니다. 그러나 중간 추론 단계 품질에 대한 신속하고 신뢰할 수 있는 양적 평가를 제공하는 것은 여전히 어렵고, 방대한 경로 탐색은 계산적으로 비용이 많이 듭니다. 이를 해결하기 위해, 우리는 상호 정보 트리 검색 (MITS)이라는 정보 이론 원리를 이용한 새로운 프레임워크를 제안합니다. MITS은 PMI를 기반으로 한 효과적인 점별 상호 정보를 기반으로 하는 점수 함수를 도입하여 비싼 최첨단 시뮬레이션이 필요 없는 상태별 추론 경로 및 빔 검색을 통한 검색 트리 확장을 가능하게 합니다. 이는 계산적 효율성을 유지하면서 우수한 추론 성능을 달성하며, 조절가능한 자원을 불확실한 추론 단계에 할당하는 엔트로피 기반의 동적 샘플링 전략으로 보완됩니다. 최종 예측을 위해, MITS는 PMI 점수와 예측 일치를 결합하는 가중 투표 체계를 사용합니다. 다양한 추론 벤치마크에서의 포괄적인 실험을 통해 MITS는 기본 방법을 일관되게 능가하여 LLM 추론을 위한 원칙적이고 효율적인 프레임워크를 수립합니다."
+    },
+    "summary": "1. 상호 정보 이론을 이용한 상태별 추론 경로 평가로 성능 향상을 이룸.\n2. 엔트로피 기반의 동적 샘플링 전략으로 계산적 자원 할당을 최적화함.\n3. 최종 예측을 위해 PMI 점수와 조합된 가중 투표 체계를 도입하여 다양한 벤치마크에서 우수한 추론 성능을 입증함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving\n  Language Models",
+    "abstract": "Large language model (LLM) applications such as agents and domain-specific\nreasoning increasingly rely on context adaptation -- modifying inputs with\ninstructions, strategies, or evidence, rather than weight updates. Prior\napproaches improve usability but often suffer from brevity bias, which drops\ndomain insights for concise summaries, and from context collapse, where\niterative rewriting erodes details over time. Building on the adaptive memory\nintroduced by Dynamic Cheatsheet, we introduce ACE (Agentic Context\nEngineering), a framework that treats contexts as evolving playbooks that\naccumulate, refine, and organize strategies through a modular process of\ngeneration, reflection, and curation. ACE prevents collapse with structured,\nincremental updates that preserve detailed knowledge and scale with\nlong-context models. Across agent and domain-specific benchmarks, ACE optimizes\ncontexts both offline (e.g., system prompts) and online (e.g., agent memory),\nconsistently outperforming strong baselines: +10.6% on agents and +8.6% on\nfinance, while significantly reducing adaptation latency and rollout cost.\nNotably, ACE could adapt effectively without labeled supervision and instead by\nleveraging natural execution feedback. On the AppWorld leaderboard, ACE matches\nthe top-ranked production-level agent on the overall average and surpasses it\non the harder test-challenge split, despite using a smaller open-source model.\nThese results show that comprehensive, evolving contexts enable scalable,\nefficient, and self-improving LLM systems with low overhead.",
+    "authors": [
+      "Qizheng Zhang",
+      "Changran Hu",
+      "Shubhangi Upasani",
+      "Boyuan Ma",
+      "Fenglu Hong",
+      "Vamsidhar Kamanuru",
+      "Jay Rainton",
+      "Chen Wu",
+      "Mengmeng Ji",
+      "Hanchen Li",
+      "Urmish Thakker",
+      "James Zou",
+      "Kunle Olukotun"
+    ],
+    "likes": 36,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.04618",
+    "date_collected": "2025-10-09T07:07:47.345867+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "에이전틱 컨텍스트 엔지니어링: 자가 향상을 위한 진화하는 컨텍스트 (Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models)",
+      "abstract": "에이전트와 특정 도메인 추론과 같은 대형 언어 모델 (LLM) 애플리케이션은 점점 더 컨텍스트 적응에 의존하며 입력을 수정하기 위해 가중치 업데이트가 아닌 지침, 전략 또는 증거로 변형합니다. 이전 방법은 사용성을 향상시키지만 짧은 각주 편향과 컨텍스트 붕괴에서 주로 고생합니다. ACE (Agentic Context Engineering)는 동적 참조표에서 소개된 적응 메모리를 기반으로, 컨텍스트를 진화하는 플레이북으로 다루고 생성, 반영 및 정리의 모듈식 절차를 통해 전략을 축적, 개선 및 조직화하는 프레임워크를 제시합니다."
+    },
+    "summary": "1. ACE 프레임워크는 컨텍스트를 진화하는 플레이북으로 보고, 증명 및 전략을 쌓고 정제, 체계적이고 점진적인 업데이트를 통해 세부 지식을 보존하여 장기적 컨텍스트 모델에 적합합니다.\n2. ACE는 에이전트 및 특정 도메인 벤치마크에서 강력한 기준을 능가하며 오프라인 (시스템 프롬프트 등) 및 온라인 (에이전트 메모리 등)에서 컨텍스트를 최적화하며 적응 지연 및 롤아웃 비용을 크게 줄입니다.\n3. ACE는 감독되는 교육 없이 자연 실행 피드백을 이용해 효과적으로 적응할 수 있어 더 작은 오픈 소스 모델을 활용하더라도 상위 수준의 제품 에이전트와 일치하거나 초월하는 성능을 발휘하며, 이를 통해 확장 가능하고 효율적이며 자가 향상이 가능한 LLM 시스템을 제시합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "title": "Watching, Reasoning, and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning",
+    "abstract": "In real-world video question answering scenarios, videos often provide only localized visual cues, while verifiable answers are distributed across the open web; models therefore need to jointly perform cross-frame clue extraction, iterative retrieval, and multi-hop reasoning-based verification. To bridge this gap, we construct the first video deep research benchmark, VideoDR. VideoDR centers on video-conditioned open-domain video question answering, requiring cross-frame visual anchor extraction, interactive web retrieval, and multi-hop reasoning over joint video-web evidence; through rigorous human annotation and quality control, we obtain high-quality video deep research samples spanning six semantic domains. We evaluate multiple closed-source and open-source multimodal large language models under both the Workflow and Agentic paradigms, and the results show that Agentic is not consistently superior to Workflow: its gains depend on a model's ability to maintain the initial video anchors over long retrieval chains. Further analysis indicates that goal drift and long-horizon consistency are the core bottlenecks. In sum, VideoDR provides a systematic benchmark for studying video agents in open-web settings and reveals the key challenges for next-generation video deep research agents.",
+    "authors": [
+      "Chengwen Liu",
+      "Xiaomin Yu",
+      "Zhuoyue Chang",
+      "Zhe Huang",
+      "Shuo Zhang",
+      "Heng Lian",
+      "Kunyi Wang",
+      "Rui Xu",
+      "Sen Hu",
+      "Jianheng Hou",
+      "Hao Peng",
+      "Chengwei Qin",
+      "Xiaobin Hu",
+      "Hong Peng",
+      "Ronghao Chen",
+      "Huacan Wang"
+    ],
+    "likes": 198,
+    "published_date": "Jan 11",
+    "url": "https://huggingface.co/papers/2601.06943",
+    "date_collected": "2026-01-16T07:09:09.040689+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "시청, 추론, 및 탐색: 오픈 웹에서의 적극적 비디오 추론을 위한 비디오 깊은 연구 벤치마크",
+      "abstract": "현실 세계 비디오 질문 응답 시나리오에서 비디오들은 종종 지역화된 시각적 단서만을 제공하며, 검증 가능한 답변들은 오픈 웹 전체에 분산되어 있습니다; 따라서 모델들은 교차 프레임 단서 추출, 반복적 검색, 그리고 다중 점프 추론 기반 검증을 함께 수행해야 합니다. 이 간극을 줄이기 위해, 우리는 첫 번째 비디오 깊은 연구 벤치마크인 VideoDR을 구축했습니다. VideoDR은 비디오에 조건을 둔 오픈 도메인 비디오 질문 응답을 중심으로 하며, 교차 프레임 시각적 앵커 추출, 상호작용적 웹 검색, 그리고 공동 비디오-웹 증거 위에서 다중 점프 추론을 요구합니다; 엄격한 인간 주석과 품질 통제를 통해, 여섯 가지 의미 영역을 아우르는 고품질 비디오 깊은 연구 샘플을 획득합니다. 우리는 Workflow와 Agentic 패러다임 모두에 걸쳐 여러 닫힌 소스와 오픈 소스 다중 모달 대형언어 모델들을 평가하고, 결과는 Agentic이 항상 Workflow보다 뛰어나지는 않음을 보여줍니다: 그 이익은 모델이 초기 비디오 앵커들을 장거리 검색 체인을 통해 유지하는 능력에 달려 있습니다. 추가 분석은 목표 변화와 장기 일관성이 핵심 병목 현상임을 나타냅니다. 요약하면, VideoDR은 오픈 웹 환경에서 비디오 에이전트를 연구하기 위한 체계적인 벤치마크를 제공하며, 차세대 비디오 깊은 연구 에이전트를 위한 주요 과제들을 밝힙니다."
+    },
+    "summary": "1. VideoDR은 오픈 웹에서의 비디오에이전트 연구를 위해 만들어진 첫 비디오 깊은 연구 벤치마크이다.\n2. Workflow와 Agentic 패러다임 모두에서 다양한 다중 모달 대형언어 모델을 평가한 결과, Agentic이 항상 Workflow보다 우월하다는 것이 아니라는 결과를 보여준다.\n3. VideoDR은 다음 세대 비디오 깊은 연구 에이전트를 위한 주요 과제로 목표 이탈과 장기적 일관성을 지목한다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "BabyVision: Visual Reasoning Beyond Language",
+    "abstract": "While humans develop core visual skills long before acquiring language, contemporary Multimodal LLMs (MLLMs) still rely heavily on linguistic priors to compensate for their fragile visual understanding. We uncovered a crucial fact: state-of-the-art MLLMs consistently fail on basic visual tasks that humans, even 3-year-olds, can solve effortlessly. To systematically investigate this gap, we introduce BabyVision, a benchmark designed to assess core visual abilities independent of linguistic knowledge for MLLMs. BabyVision spans a wide range of tasks, with 388 items divided into 22 subclasses across four key categories. Empirical results and human evaluation reveal that leading MLLMs perform significantly below human baselines. Gemini3-Pro-Preview scores 49.7, lagging behind 6-year-old humans and falling well behind the average adult score of 94.1. These results show despite excelling in knowledge-heavy evaluations, current MLLMs still lack fundamental visual primitives. Progress in BabyVision represents a step toward human-level visual perception and reasoning capabilities. We also explore solving visual reasoning with generation models by proposing BabyVision-Gen and automatic evaluation toolkit. Our code and benchmark data are released at https://github.com/UniPat-AI/BabyVision for reproduction.",
+    "authors": [
+      "Liang Chen",
+      "Weichu Xie",
+      "Yiyan Liang",
+      "Hongfeng He",
+      "Hans Zhao",
+      "Zhibo Yang",
+      "Zhiqi Huang",
+      "Haoning Wu",
+      "Haoyu Lu",
+      "Y. charles",
+      "Yiping Bao",
+      "Yuantao Fan",
+      "Guopeng Li",
+      "Haiyang Shen",
+      "Xuanzhong Chen",
+      "Wendong Xu",
+      "Shuzheng Si",
+      "Zefan Cai",
+      "Wenhao Chai",
+      "Ziqi Huang",
+      "Fangfu Liu",
+      "Tianyu Liu"
+    ],
+    "likes": 176,
+    "published_date": "Jan 10",
+    "url": "https://huggingface.co/papers/2601.06521",
+    "date_collected": "2026-01-16T07:09:09.042561+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "언어를 넘어선 시각 추론: 베이비비전",
+      "abstract": "인간은 언어를 습득하기 훨씬 전에 기본적인 시각 기술을 발전시키지만, 현대 다중모달 언어 모델(MLLMs)은 여전히 시각 이해력이 부족한 점을 보상하기 위해 언어 우선순위에 크게 의존합니다. 우리는 MLLMs가 심각한 시각적 작업에서 계속 실패하는 사실을 발견했습니다. 이는 3세의 아이들조차 쉽게 해결할 수 있는 기본 시각 작업에서도 그렇습니다. 이 간극을 체계적으로 조사하기 위해 우리는 베이비비전을 소개합니다. 이 벤치마크는 MLLMs의 언어 지식과 독립적으로 핵심 시각 능력을 평가하기 위해 설계되었습니다. 베이비비전은 22개 하위 클래스로 구분된 388개 세부 작업으로 구성된 폭넓은 범위의 작업을 다룹니다. 경험적 결과와 인간 평가 결과는 선도적인 MLLMs가 인간 기준에 크게 못 미치는 것을 보여줍니다."
+    },
+    "summary": "1. 현재의 다중모달 언어 모델은 언어적인 힌트에 크게 의존하면서도, 아이들조차 쉽게 수행하는 기본적인 시각 작업에서 실패하는 경향이 있다.\n2. 베이비비전 벤치마크를 통해 주요 선도적 모델은 인간의 성능을 상당히 밑도는 결과를 보이며, 시각적 기본 원시를 부족하게 이해하고 있다는 것을 반영한다.\n3. 베이비비전을 통한 진전은 인간 수준의 시각 지각과 추론 능력에 한 걸음 더 다가가는 것을 의미한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Thinking with Map: Reinforced Parallel Map-Augmented Agent for Geolocalization",
+    "abstract": "The image geolocalization task aims to predict the location where an image was taken anywhere on Earth using visual clues. Existing large vision-language model (LVLM) approaches leverage world knowledge, chain-of-thought reasoning, and agentic capabilities, but overlook a common strategy used by humans -- using maps. In this work, we first equip the model Thinking with Map ability and formulate it as an agent-in-the-map loop. We develop a two-stage optimization scheme for it, including agentic reinforcement learning (RL) followed by parallel test-time scaling (TTS). The RL strengthens the agentic capability of model to improve sampling efficiency, and the parallel TTS enables the model to explore multiple candidate paths before making the final prediction, which is crucial for geolocalization. To evaluate our method on up-to-date and in-the-wild images, we further present MAPBench, a comprehensive geolocalization training and evaluation benchmark composed entirely of real-world images. Experimental results show that our method outperforms existing open- and closed-source models on most metrics, specifically improving Acc@500m from 8.0\\% to 22.1\\% compared to Gemini-3-Pro with Google Search/Map grounded mode.",
+    "authors": [
+      "Yuxiang Ji",
+      "Yong Wang",
+      "Ziyu Ma",
+      "Yiming Hu",
+      "Hailang Huang",
+      "Xuecai Hu",
+      "Guanhua Chen",
+      "Liaoni Wu",
+      "Xiangxiang Chu"
+    ],
+    "likes": 152,
+    "published_date": "Jan 8",
+    "url": "https://huggingface.co/papers/2601.05432",
+    "date_collected": "2026-01-16T07:09:09.043891+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "지도와 함께 생각하기: 지리위치파악을 위한 강화된 병렬 지도 보강 에이전트",
+      "abstract": "이미지 지리위치파악 작업은 시각적 단서를 사용하여 지구상의 어디에서든 이미지가 촬영된 위치를 예측하는 것을 목표로 합니다. 기존의 대규모 비전-언어 모델(LVLM) 접근 방식은 세상의 지식, 사고 체인, 에이전트 능력을 활용하지만 인간들이 사용하는 일반적인 전략 중 하나인 지도 사용을 무시합니다. 본 연구에서는 우선 모델에 '지도와 함께 생각하기' 능력을 부여하고 이를 에이전트-지도 루프로 구성합니다. 우리는 이를 위해 에이전트 강화 학습(RL) 및 병렬 테스트 시간 스케일링(TTS)을 포함한 두 단계 최적화 체계를 개발했습니다."
+    },
+    "summary": "1. 기존의 대규모 비전-언어 모델 접근 방식과 달리, 본 연구는 지리위치파악 과정에서 지도 활용의 중요성을 강조하고, 에이전트-지도 루프로 구성된 두 단계 최적화 체계를 개발했습니다.\n2. 에이전트 강화 학습은 모델의 에이전트 능력을 강화하여 샘플링 효율성을 향상시키고, 병렬 TTS는 최종 예측을 내리기 전에 모델이 여러 후보 경로를 탐색할 수 있도록 하여 지리위치파악에 중요합니다.\n3. 최근 및 실제 이미지로 모델을 평가하기 위해 MAPBench를 제안하며 실험 결과는 우리 방법이 Gemini-3-Pro와 비교하여 Acc@500m을 8.0%에서 22.1%로 향상시킴을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MMFormalizer: Multimodal Autoformalization in the Wild",
+    "abstract": "Autoformalization, which translates natural language mathematics into formal statements to enable machine reasoning, faces fundamental challenges in the wild due to the multimodal nature of the physical world, where physics requires inferring hidden constraints (e.g., mass or energy) from visual elements. To address this, we propose MMFormalizer, which extends autoformalization beyond text by integrating adaptive grounding with entities from real-world mathematical and physical domains. MMFormalizer recursively constructs formal propositions from perceptually grounded primitives through recursive grounding and axiom composition, with adaptive recursive termination ensuring that every abstraction is supported by visual evidence and anchored in dimensional or axiomatic grounding. We evaluate MMFormalizer on a new benchmark, PhyX-AF, comprising 115 curated samples from MathVerse, PhyX, Synthetic Geometry, and Analytic Geometry, covering diverse multimodal autoformalization tasks. Results show that frontier models such as GPT-5 and Gemini-3-Pro achieve the highest compile and semantic accuracy, with GPT-5 excelling in physical reasoning, while geometry remains the most challenging domain. Overall, MMFormalizer provides a scalable framework for unified multimodal autoformalization, bridging perception and formal reasoning. To the best of our knowledge, this is the first multimodal autoformalization method capable of handling classical mechanics (derived from the Hamiltonian), as well as relativity, quantum mechanics, and thermodynamics. More details are available on our project page: MMFormalizer.github.io",
+    "authors": [
+      "Jing Xiong",
+      "Qi Han",
+      "Yunta Hsieh",
+      "Hui Shen",
+      "Huajian Xin",
+      "Chaofan Tao",
+      "Chenyang Zhao",
+      "Hengyuan Zhang",
+      "Taiqiang Wu",
+      "Zhen Zhang",
+      "Haochen Wang",
+      "Zhongwei Wan",
+      "Lingpeng Kong",
+      "Ngai Wong"
+    ],
+    "likes": 101,
+    "published_date": "Jan 6",
+    "url": "https://huggingface.co/papers/2601.03017",
+    "date_collected": "2026-01-16T07:09:09.045410+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "MMFormalizer: 야생에서의 다중모달 자동 정형화",
+      "abstract": "자연어 수학을 형식적인 명제로 변환하여 기계 추론을 가능케 하는 자동 정형화는, 물리학이 시각 요소로부터 숨겨진 제약(예: 질량 또는 에너지)을 추론하는 것을 필요로 하는 물리적 세계의 다중모달성으로 인해 야생에서 근본적인 도전을 맞이합니다. 이를 해결하기 위해 우리는 MMFormalizer를 제안하는데, 이는 실제 수학적 및 물리적 도메인의 엔티티들을 적응적으로 그라운딩하여 텍스트 이상의 자동 정형화를 확장합니다. MMFormalizer는 반복적으로 눈으로 본 원시 요소로부터 형식적 명제를 재귀적 그라운딩과 공리 합성을 통해 구성하며, 적응적 재귀 종료는 모든 추상화가 시각적 증거에 의해 지지되고 차원적 또는 공리적 그라운딩에 고정된 것을 보장합니다. MathVerse, PhyX, Synthetic Geometry 및 Analytic Geometry에서 선별된 샘플 115개로 이루어진 새로운 벤치마크인 PhyX-AF를 통해 MMFormalizer를 평가합니다. 결과는 GPT-5 및 Gemini-3-Pro와 같은 최신 모델이 가장 높은 컴파일 및 의미적 정확도를 달성하는데, GPT-5는 물리적 추론에서 뛰어나며, 기하학이 여전히 가장 어려운 도메인임을 보여줍니다. 전반적으로, MMFormalizer는 지각과 형식적 추론을 이어주는 확장 가능한 다중모달 자동 정형화 프레임워크를 제공합니다. 우리의 지식으로는, 이는 카멜턴식(Hamiltonian)에서 파생된 고전역학 뿐만 아니라 상대성이론, 양자역학 및 열역학을 다룰 수 있는 최초의 다중모달 자동 정형화 방법입니다. 프로젝트 페이지 MMFormalizer.github.io에서 자세한 내용을 확인할 수 있습니다."
+    },
+    "summary": "1. 자동 정형화를 다중모달 환경에서 처리하기 위해 MMFormalizer가 제안된다.\n2. MMFormalizer는 시각 증거에 기반한 형식적 명제를 재귀적으로 생성함으로써 다중모달 자동 정형화를 실현한다.\n3. Geeteepee-5(GPT-5)와 Gemini-3-Pro 등의 모델이 높은 정확도를 보이며, 물리적 추론에서 특히 뛰어나다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Controlled Self-Evolution for Algorithmic Code Optimization",
+    "abstract": "Self-evolution methods enhance code generation through iterative \"generate-verify-refine\" cycles, yet existing approaches suffer from low exploration efficiency, failing to discover solutions with superior complexity within limited budgets. This inefficiency stems from initialization bias trapping evolution in poor solution regions, uncontrolled stochastic operations lacking feedback guidance, and insufficient experience utilization across tasks. To address these bottlenecks, we propose Controlled Self-Evolution (CSE), which consists of three key components. Diversified Planning Initialization generates structurally distinct algorithmic strategies for broad solution space coverage. Genetic Evolution replaces stochastic operations with feedback-guided mechanisms, enabling targeted mutation and compositional crossover. Hierarchical Evolution Memory captures both successful and failed experiences at inter-task and intra-task levels. Experiments on EffiBench-X demonstrate that CSE consistently outperforms all baselines across various LLM backbones. Furthermore, CSE achieves higher efficiency from early generations and maintains continuous improvement throughout evolution. Our code is publicly available at https://github.com/QuantaAlpha/EvoControl.",
+    "authors": [
+      "Tu Hu",
+      "Ronghao Chen",
+      "Shuo Zhang",
+      "Jianghao Yin",
+      "Mou Xiao Feng",
+      "Jingping Liu",
+      "Shaolei Zhang",
+      "Wenqi Jiang",
+      "Yuqi Fang",
+      "Sen Hu",
+      "Yi Xu",
+      "Huacan Wang"
+    ],
+    "likes": 94,
+    "published_date": "Jan 12",
+    "url": "https://huggingface.co/papers/2601.07348",
+    "date_collected": "2026-01-16T07:09:09.046852+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "알고리즘적 코드 최적화를 위한 제어된 자기 진화",
+      "abstract": "자기 진화 방법은 반복적인 \"생성-확인-개선\" 주기를 통해 코드 생성을 향상시키지만, 기존 접근 방식은 탐사 효율이 낮아 한정된 예산 내에서 우수한 복잡성의 해결책을 발견하지 못하는 문제가 있다. 이 비효율성은 초기화 편향으로 인해 진화가 부적절한 해결책 영역에 갇히고, 피드백 안내가 없는 제어되지 않은 확률적 작업, 그리고 작업 간 및 작업 내 수준에서의 경험 활용 부족에서 비롯된다. 이러한 병목현상을 해결하기 위해 우리는 Controlled Self-Evolution (CSE)을 제안한다. 이는 세 가지 핵심 구성 요소로 이루어져 있다. 다양화된 계획 초기화는 폭넓은 해결책 공간을 위해 구조적으로 다른 알고리즘 전략을 생성한다. 유전적 진화는 피드백 안내 기구로 확률적 작업을 대상화한 돌연변이와 구성 교차를 가능하게 한다. 계층적 진화 메모리는 작업 간 및 작업 내 수준에서 성공적이고 실패한 경험을 모두 포착한다. EffiBench-X 실험 결과, CSE이 다양한 LLM 백본에서 모든 기준 모델을 꾸준히 능가함을 입증한다. 게다가 CSE은 초기 세대부터 더 높은 효율성을 달성하고 진화 과정을 통해 지속적인 개선을 유지한다. 저희의 코드는 https://github.com/QuantaAlpha/EvoControl 에서 공개되어 있다."
+    },
+    "summary": "1. 기존 방법은 한정된 예산 내에서 뛰어난 복잡성 해결책을 발견하지 못하는 문제가 있으며, 이를 해결하기 위해 Controlled Self-Evolution (CSE)이 제안되었다.\n2. CSE은 다양한 알고리즘 전략을 생성하는 초기화, 피드백 안내 기구를 통한 진화, 성공과 실패 경험을 기록하는 계층적 진화 메모리 등 세 가지 구성 요소로 구성되어 있다.\n3. EffiBench-X 실험에서 CSE은 다양한 LLM 백본에서 모든 기준 모델을 능가하며, 초기 세대부터 높은 효율성을 보이고 지속적인 개선을 이루어냈다.",
+    "categories": [
+      "LLM",
+      "Algorithmic Optimization",
+      "Controlled Evolution"
+    ]
+  },
+  {
+    "title": "DeepResearchEval: An Automated Framework for Deep Research Task Construction and Agentic Evaluation",
+    "abstract": "Deep research systems are widely used for multi-step web research, analysis, and cross-source synthesis, yet their evaluation remains challenging. Existing benchmarks often require annotation-intensive task construction, rely on static evaluation dimensions, or fail to reliably verify facts when citations are missing. To bridge these gaps, we introduce DeepResearchEval, an automated framework for deep research task construction and agentic evaluation. For task construction, we propose a persona-driven pipeline generating realistic, complex research tasks anchored in diverse user profiles, applying a two-stage filter Task Qualification and Search Necessity to retain only tasks requiring multi-source evidence integration and external retrieval. For evaluation, we propose an agentic pipeline with two components: an Adaptive Point-wise Quality Evaluation that dynamically derives task-specific evaluation dimensions, criteria, and weights conditioned on each generated task, and an Active Fact-Checking that autonomously extracts and verifies report statements via web search, even when citations are missing.",
+    "authors": [
+      "Yibo Wang",
+      "Lei Wang",
+      "Yue Deng",
+      "Keming Wu",
+      "Yao Xiao",
+      "Huanjin Yao",
+      "Liwei Kang",
+      "Hai Ye",
+      "Yongcheng Jing",
+      "Lidong Bing"
+    ],
+    "likes": 90,
+    "published_date": "Jan 14",
+    "url": "https://huggingface.co/papers/2601.09688",
+    "date_collected": "2026-01-16T07:09:09.048207+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "깊은 연구평가: 깊은 연구 작업 구성과 주체적 평가를 위한 자동화 프레임워크",
+      "abstract": "깊은 연구 시스템은 다단계 웹 연구, 분석 및 다원 소스 종합에 널리 사용되지만, 그 평가는 여전히 어렵습니다. 기존의 벤치마크는 종종 주석 집중적 작업 구성을 필요로 하거나 정적인 평가 차원에 의존하거나 인용문이 누락된 경우 신뢰성 있는 사실 검증을 실패합니다. 이러한 간극을 메우기 위해, 우리는 깊은 연구평가라는 깊은 연구 작업 구성과 주체적 평가를 위한 자동화 프레임워크를 소개합니다. 작업 구성에서는 다양한 사용자 프로필에 기반한 현실적이고 복잡한 연구 작업을 생성하는 \"페르소나 주도 파이프라인\"을 제안하며, 다중 소스 증거 통합과 외부 검색이 필요한 작업만 보존하는 두 단계 필터 '작업 자격' 및 '검색 필요성'을 적용합니다. 평가에 대해, 우리는 작업별로 조건부로 각 생성된 작업에 대한 평가 차원, 기준 및 가중치를 동적으로 유도하는 '적응적 점별 품질 평가'와, 인용문이 누락된 경우에도 자율적으로 보고문 명제를 추출하고 검증하는 '적극적 사실 검증'이라는 주체적 파이프라인을 제안합니다."
+    },
+    "summary": "1. 깊은 연구평가는 깊은 연구 작업 구성과 주체적 평가를 위해 자동화 프레임워크를 제시하며, 페르소나 주도 파이프라인을 활용하여 현실적이고 다양한 연구 작업을 생성합니다.\n2. 작업에는 다중 소스 증거 통합과 외부 검색이 필요한 작업만을 보존하도록 하는 두 단계 필터 '작업 자격' 및 '검색 필요성'이 적용됩니다.\n3. 평가에서는 동적으로 작업별 평가 차원, 기준, 가중치를 유도하는 '적응적 점별 품질 평가'와 인용문이 누락된 경우에도 자동적으로 보고문 명제를 추출하고 검증하는 '적극적 사실 검증'이 제시됩니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MAXS: Meta-Adaptive Exploration with LLM Agents",
+    "abstract": "Large Language Model (LLM) Agents exhibit inherent reasoning abilities through the collaboration of multiple tools. However, during agent inference, existing methods often suffer from (i) locally myopic generation, due to the absence of lookahead, and (ii) trajectory instability, where minor early errors can escalate into divergent reasoning paths. These issues make it difficult to balance global effectiveness and computational efficiency. To address these two issues, we propose meta-adaptive exploration with LLM agents https://github.com/exoskeletonzj/MAXS, a meta-adaptive reasoning framework based on LLM Agents that flexibly integrates tool execution and reasoning planning. MAXS employs a lookahead strategy to extend reasoning paths a few steps ahead, estimating the advantage value of tool usage, and combines step consistency variance and inter-step trend slopes to jointly select stable, consistent, and high-value reasoning steps. Additionally, we introduce a trajectory convergence mechanism that controls computational cost by halting further rollouts once path consistency is achieved, enabling a balance between resource efficiency and global effectiveness in multi-tool reasoning. We conduct extensive empirical studies across three base models (MiMo-VL-7B, Qwen2.5-VL-7B, Qwen2.5-VL-32B) and five datasets, demonstrating that MAXS consistently outperforms existing methods in both performance and inference efficiency. Further analysis confirms the effectiveness of our lookahead strategy and tool usage.",
+    "authors": [
+      "Jian Zhang",
+      "Zhiyuan Wang",
+      "Zhangqi Wang",
+      "Yu He",
+      "Haoran Luo",
+      "li yuan",
+      "Lingling Zhang",
+      "Rui Mao",
+      "Qika Lin",
+      "Jun Liu"
+    ],
+    "likes": 80,
+    "published_date": "Jan 14",
+    "url": "https://huggingface.co/papers/2601.09259",
+    "date_collected": "2026-01-16T07:09:09.049561+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "MAXS: LLM 에이전트와의 메타 적응적 탐사",
+      "abstract": "대형 언어 모델(Large Language Model, LLM) 에이전트들은 다양한 도구들의 협력을 통해 고유한 추론 능력을 보여줍니다. 그러나 에이전트 추론 과정에서 기존 방법은 종종 (i) 미래 전망이 없어 발생하는 지역적 근시적 생성 및 (ii) 초기 작은 오류가 발산적인 추론 경로로 확대되는 추적 불안정성 문제로 고통받습니다. 이러한 문제로 인해 전반적인 효과와 계산 효율성을 균형있게 유지하기 어려워집니다. 본 연구에서는 이 두 가지 문제에 대응하기 위해 LLM 에이전트를 기반으로 한 MAXS: 메타 적응적 추론 프레임워크를 제안합니다. MAXS는 도구 실행과 추론 계획을 유연하게 통합하는 메타 적응적 추론 프레임워크로, 이를 위해 전망 전략을 채택하여 추론 경로를 몇 단계 앞으로 연장하고 도구 사용의 이점값을 추정하며, 단계 일관성 분산과 단계 간 경향 기울기를 결합하여 안정적이고 일관적이며 고효용성 추론 단계를 공동 선택합니다. 또한, 경로 일관성이 달성될 때까지 추가적인 롤아웃을 중단하여 계산 비용을 제어하는 추적 수렴 메커니즘을 소개하여, 자원 효율성과 전반적 효과 사이의 균형을 제공합니다. MiMo-VL-7B, Qwen2.5-VL-7B, Qwen2.5-VL-32B의 세 가지 베이스 모델과 다섯 개의 데이터셋에서 MAXS가 기존 방법보다 성능과 추론 효율성 면에서 꾸준히 우수함을 입증하는 방대한 경험적 연구를 수행합니다. 추가적인 분석은 전망 전략과 도구 사용의 효과를 확인합니다."
+    },
+    "summary": "1. LLM 에이전트를 활용한 MAXS는 전망 전략을 통해 안정적이고 일관적인, 고효용성 추론 단계를 선택함으로써 기존 방법보다 우수한 성능을 보입니다.\n2. MAXS는 경로 일관성이 달성될 때까지 추가적인 롤아웃을 중단하여 자원 효율성과 전반적 효과 사이의 균형을 유지하는 추적 수렴 메커니즘을 도입합니다.\n3. MiMo-VL-7B, Qwen2.5-VL-7B, Qwen2.5-VL-32B 세 가지 베이스 모델과 다섯 개의 데이터셋에서 MAXS가 기존 방법보다 성능과 추론 효율성 면에서 우수한 결과를 보임을 실험적으로 입증합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "A^3-Bench: Benchmarking Memory-Driven Scientific Reasoning via Anchor and Attractor Activation",
+    "abstract": "Scientific reasoning relies not only on logical inference but also on activating prior knowledge and experiential structures. Memory can efficiently reuse knowledge and enhance reasoning consistency and stability. However, existing benchmarks mainly evaluate final answers or step-by-step coherence, overlooking the memory-driven mechanisms that underlie human reasoning, which involves activating anchors and attractors, then integrating them into multi-step inference. To address this gap, we propose A^3-Bench~ https://a3-bench.github.io, a benchmark designed to evaluate scientific reasoning through dual-scale memory-driven activation, grounded in Anchor and Attractor Activation. First, we annotate 2,198 science reasoning problems across domains using the SAPM process(subject, anchor & attractor, problem, and memory developing). Second, we introduce a dual-scale memory evaluation framework utilizing anchors and attractors, along with the AAUI(Anchor--Attractor Utilization Index) metric to measure memory activation rates. Finally, through experiments with various base models and paradigms, we validate A^3-Bench and analyze how memory activation impacts reasoning performance, providing insights into memory-driven scientific reasoning.",
+    "authors": [
+      "Jian Zhang",
+      "Yu He",
+      "Zhiyuan Wang",
+      "Zhangqi Wang",
+      "Kai He",
+      "Fangzhi Xu",
+      "Qika Lin",
+      "Jun Liu"
+    ],
+    "likes": 74,
+    "published_date": "Jan 14",
+    "url": "https://huggingface.co/papers/2601.09274",
+    "date_collected": "2026-01-16T07:09:09.050826+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "A^3-Bench: 앵커 및 어트랙터 활성화를 통한 기반 기억 주도적 과학적 추론 평가",
+      "abstract": "과학적 추론은 논리적 추론뿐 아니라 이전 지식과 경험적 구조의 활성화에 의존합니다. 기억은 지식을 효율적으로 재활용하고 추론의 일관성과 안정성을 향상시킵니다. 이러한 인간의 추론의 기억 주도적 메커니즘인 앵커와 어트랙터를 활성화하고 이들을 다중 단계 추론에 통합하는 과정을 고려하지 않고 기존의 평가 기준은 주로 최종 답변이나 단계별 일관성을 평가합니다. 이러한 공백을 해결하기 위해 우리는 A^3-Bench를 제안하며, 이는 Anchor and Attractor Activation에 근거한 이중 규모의 기억 주도적 활성화를 통해 과학적 추론을 평가하기 위한 벤치마크입니다. 먼저 SAPM 프로세스(주제, 앵커 및 어트랙터, 문제, 기억 개발)를 사용하여 다양한 영역에서 2,198개의 과학적 추론 문제를 주석으로 달았습니다. 둘째, 앵커와 어트랙터를 활용한 이중 규모의 기억 평가 프레임워크를 도입하고 기억 활성화율을 측정하는 AAUI(Anchor--Attractor Utilization Index) 지표를 사용합니다. 마지막으로, 다양한 베이스 모델과 패러다임 실험을 통해 A^3-Bench를 검증하고 기억 활성화가 추론 성능에 미치는 영향을 분석하여 기억 주도적 과학적 추론에 대한 통찰을 제공합니다."
+    },
+    "summary": "1. A^3-Bench는 과학적 추론의 메커니즘을 평가하기 위한 벤치마크로, 앵커와 어트랙터 활성화를 통한 이중 규모의 기억 주도적 추론을 제안합니다.\n2. SAPM 프로세스를 활용하여 다양한 영역에서 2,198개의 과학적 추론 문제를 주석으로 달고, AAUI 지표를 활용하여 기억 활성화율을 측정합니다.\n3. 실험 결과를 통해 A^3-Bench의 유효성을 입증하고, 기억 활성화가 추론 성능에 미치는 영향을 분석하여 기억 주도적 과학적 추론에 대한 통찰을 제공합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MemGovern: Enhancing Code Agents through Learning from Governed Human Experiences",
+    "abstract": "While autonomous software engineering (SWE) agents are reshaping programming paradigms, they currently suffer from a \"closed-world\" limitation: they attempt to fix bugs from scratch or solely using local context, ignoring the immense historical human experience available on platforms like GitHub. Accessing this open-world experience is hindered by the unstructured and fragmented nature of real-world issue-tracking data. In this paper, we introduce MemGovern, a framework designed to govern and transform raw GitHub data into actionable experiential memory for agents. MemGovern employs experience governance to convert human experience into agent-friendly experience cards and introduces an agentic experience search strategy that enables logic-driven retrieval of human expertise. By producing 135K governed experience cards, MemGovern achieves a significant performance boost, improving resolution rates on the SWE-bench Verified by 4.65%. As a plug-in approach, MemGovern provides a solution for agent-friendly memory infrastructure.",
+    "authors": [
+      "Qihao Wang",
+      "Ziming Cheng",
+      "Shuo Zhang",
+      "Fan Liu",
+      "Rui Xu",
+      "Heng Lian",
+      "Kunyi Wang",
+      "Xiaoming Yu",
+      "Jianghao Yin",
+      "Sen Hu",
+      "Yue Hu",
+      "Shaolei Zhang",
+      "Yanbing Liu",
+      "Ronghao Chen",
+      "Huacan Wang"
+    ],
+    "likes": 73,
+    "published_date": "Jan 11",
+    "url": "https://huggingface.co/papers/2601.06789",
+    "date_collected": "2026-01-16T07:09:09.052375+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "MemGovern: 학습을 통해 코드 에이전트 강화하기",
+      "abstract": "자율 소프트웨어 공학 (SWE) 에이전트가 프로그래밍 패러다임을 재구성하는 가운데, 현재는 \"폐쇄적인 세계\" 제한으로 고생하고 있습니다. 이들은 문제를 처음부터 고치려 하거나 로컬 컨텍스트만을 사용하여 버그를 수정하려고 합니다. GitHub와 같은 플랫폼에 있는 엄청난 역사적인 인간 경험을 무시하고 있습니다. 이 오픈 월드 경험에 접근하는 것은 현실 세계 이슈 추적 데이터의 구조화되지 않고 조각난 성격으로 인해 방해 받습니다. 본 논문에서는 MemGovern이라는 프레임워크를 소개합니다. 이 프레임워크는 GitHub 데이터를 액션 가능한 체험적 기억으로 변환하고 제어하는 데 사용됩니다. MemGovern은 인간 경험을 에이전트 친화적인 경험 카드로 변환하기 위한 경험 관리를 사용하며, 에이전트 중심의 경험 탐색 전략을 소개하여 논리 주도적으로 인간 전문 지식을 검색할 수 있게 합니다. MemGovern은 13.5만 개의 관리되는 경험 카드를 생성하여, SWE-bench에서 4.65% 성능 향상을 이루었습니다. 플러그인 방식으로 MemGovern은 에이전트 친화적인 메모리 인프라 솔루션을 제공합니다."
+    },
+    "summary": "1. 에이전트들을 위해 GitHub 데이터를 경험적인 메모리로 변환하는 MemGovern 프레임워크를 소개합니다.\n2. MemGovern은 경험 관리와 에이전트 중심의 경험 탐색 전략을 활용하여 인간 경험을 활용하며, SWE 성능 향상을 도모합니다.\n3. 13.5만 개의 경험 카드를 생성하며, 에이전트가 논리적으로 인간 전문 지식을 검색할 수 있게 해주는 솔루션을 제공합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "PaCoRe: Learning to Scale Test-Time Compute with Parallel Coordinated Reasoning",
+    "abstract": "We introduce Parallel Coordinated Reasoning (PaCoRe), a training-and-inference framework designed to overcome a central limitation of contemporary language models: their inability to scale test-time compute (TTC) far beyond sequential reasoning under a fixed context window. PaCoRe departs from the traditional sequential paradigm by driving TTC through massive parallel exploration coordinated via a message-passing architecture in multiple rounds. Each round launches many parallel reasoning trajectories, compacts their findings into context-bounded messages, and synthesizes these messages to guide the next round and ultimately produce the final answer. Trained end-to-end with large-scale, outcome-based reinforcement learning, the model masters the synthesis abilities required by PaCoRe and scales to multi-million-token effective TTC without exceeding context limits. The approach yields strong improvements across diverse domains, and notably pushes reasoning beyond frontier systems in mathematics: an 8B model reaches 94.5% on HMMT 2025, surpassing GPT-5's 93.2% by scaling effective TTC to roughly two million tokens. We open-source model checkpoints, training data, and the full inference pipeline to accelerate follow-up work.",
+    "authors": [
+      "Jingcheng Hu",
+      "Yinmin Zhang",
+      "Shijie Shang",
+      "Xiaobo Yang",
+      "Yue Peng",
+      "Zhewei Huang",
+      "Hebin Zhou",
+      "Xin Wu",
+      "Jie Cheng",
+      "Fanqi Wan",
+      "Xiangwen Kong",
+      "Chengyuan Yao",
+      "Kaiwen Yan",
+      "Ailin Huang",
+      "Hongyu Zhou",
+      "Qi Han",
+      "Zheng Ge",
+      "Daxin Jiang",
+      "Xiangyu Zhang",
+      "Heung-Yeung Shum"
+    ],
+    "likes": 72,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.05593",
+    "date_collected": "2026-01-16T07:09:09.054186+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "스케일 테스트 시간 컴퓨팅 확장을 배우는 PaCoRe: 병렬 조정 추론",
+      "abstract": "우리는 현대 언어 모델의 중심적인 한계인 시퀀셜 추론 아래의 테스트 시간 컴퓨팅(TTC) 확장 능력 부재를 극복하기 위해 설계된 PaCoRe(병렬 조정 추론)를 소개합니다. PaCoRe는 많은 병렬 추론 궤도를 시작시킨 다음 그들의 발견물을 컨텍스트에 제한된 메시지로 압축하고, 이러한 메시지들을 합성하여 다음 라운드를 이끄는 것과 최종적으로 최종 답변을 생성하는 방식으로 TTC를 주도하는 메시지 통과 아키텍처를 통해 협조적으로 조정된 대규모 병렬 탐색을 통해 시퀀셜 패러다임에서 벗어납니다. 대규모 결과 중심 강화 학습으로 단단히 끝까지 교육되어 PaCoRe가 요구하는 합성 능력을 마스터하고, 컨텍스트 제한을 초과하지 않는 다중 백만 토큰의 유효한 TTC로 확장됩니다. 이 방식은 다양한 분야에서 강력한 개선을 이루어내며 특히 수학 분야의 선도 시스템을 넘어서는 추론을 이룬다: 8B 모델은 HMMT 2025에서 GPT-5의 93.2%를 거의 200만 토큰에 유효한 TTC로 스케일링하여 94.5%에 도달합니다. 이어지는 작업을 가속화하기 위해 모델 체크포인트, 훈련 데이터 및 전체 추론 파이프라인을 오픈 소스로 제공합니다."
+    },
+    "summary": "1. PaCoRe는 병렬 조정 추론을 통해 현재 언어 모델의 한계인 테스트 시간 컴퓨팅(TTC) 스케일을 극복함.\n2. 대규모 결과 중심 강화 학습을 통해 훈련된 PaCoRe 모델은 다양한 분야에서 강력한 성능 향상을 보임.\n3. PaCoRe는 수학 분야를 포함한 여러 분야에서 원시적 시스템을 넘어서는 추론 능력을 보임.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

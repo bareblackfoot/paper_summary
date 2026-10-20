@@ -1,0 +1,129 @@
+=== Paper Collection Started at Sun Jul 26 23:03:13 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W31
+URL: https://huggingface.co/papers/week/2026-W31
+Found 10 papers in weekly view
+Fetching likes for: ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU
+Fetching likes for: RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model
+Fetching likes for: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Fetching likes for: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Fetching likes for: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Fetching likes for: AREX: Towards a Recursively Self-Improving Agent for Deep Research
+Fetching likes for: DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines
+Fetching likes for: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Fetching likes for: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Fetching likes for: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Selected top 10 papers by likes:
+1. ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU (295 likes)
+2. RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model (197 likes)
+3. TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs (165 likes)
+4. RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM (144 likes)
+5. RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources (140 likes)
+6. AREX: Towards a Recursively Self-Improving Agent for Deep Research (139 likes)
+7. DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines (136 likes)
+8. EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World (89 likes)
+9. DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment (89 likes)
+10. SWE-Pruner Pro: The Coder LLM Already Knows What to Prune (76 likes)
+Found abstract: We present ABot-World-0, an action-conditioned video world model for real-time, long-horizon closed-...
+Processed paper: ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU
+Found abstract: We present RynnBrain 1.1, a family of embodied foundation models spanning 2B, 9B, and 122B-A10B scal...
+Processed paper: RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model
+Found abstract: Video multimodal large language models (MLLMs) can describe what happens in a video, but rarely iden...
+Processed paper: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Found abstract: Graph retrieval-augmented generation (GraphRAG) enhances large language models with structured knowl...
+Processed paper: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Found abstract: Skills are a useful abstraction for software agents, turning human and agent experience into reusabl...
+Processed paper: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Found abstract: Deep research requires agents to find answers that jointly satisfy multiple constraints. Discovering...
+Processed paper: AREX: Towards a Recursively Self-Improving Agent for Deep Research
+Found abstract: Large language models (LLMs) are increasingly used to automate data-processing workflows, yet coding...
+Processed paper: DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines
+Found abstract: This paper introduces EvolvingWorld, a framework and benchmark for character and world co-evolution ...
+Processed paper: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Found abstract: Training tool-use agents to improve from their own experience remains challenging, as supervised fin...
+Processed paper: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Found abstract: Pruning long context for coding agents has been a vital technology for efficient context management....
+Processed paper: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU
+Paper already exists, checking if translation is complete...
+Update likes: 295  ->  291
+Update date_collected: 2026-07-27T08:03:22.820814+09:00  ->  2026-07-26T08:00:02.037760+09:00
+
+Processing paper 2/10
+Title: RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 197  ->  196
+Update date_collected: 2026-07-27T08:03:22.824654+09:00  ->  2026-07-26T08:00:02.041582+09:00
+
+Processing paper 3/10
+Title: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 165  ->  165
+Update date_collected: 2026-07-27T08:03:22.828296+09:00  ->  2026-07-26T08:00:02.045144+09:00
+
+Processing paper 4/10
+Title: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Paper already exists, checking if translation is complete...
+Update likes: 144  ->  143
+Update date_collected: 2026-07-27T08:03:22.831437+09:00  ->  2026-07-26T08:00:02.048225+09:00
+
+Processing paper 5/10
+Title: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Paper already exists, checking if translation is complete...
+Update likes: 140  ->  139
+Update date_collected: 2026-07-27T08:03:22.834825+09:00  ->  2026-07-26T08:00:02.051536+09:00
+
+Processing paper 6/10
+Title: AREX: Towards a Recursively Self-Improving Agent for Deep Research
+Paper already exists, checking if translation is complete...
+Update likes: 139  ->  127
+Update date_collected: 2026-07-27T08:03:22.838959+09:00  ->  2026-07-26T08:00:02.058706+09:00
+
+Processing paper 7/10
+Title: DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines
+Paper already exists, checking if translation is complete...
+Update likes: 136  ->  135
+Update date_collected: 2026-07-27T08:03:22.842087+09:00  ->  2026-07-26T08:00:02.054639+09:00
+
+Processing paper 8/10
+Title: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Paper already exists, checking if translation is complete...
+Update likes: 89  ->  89
+Update date_collected: 2026-07-27T08:03:22.845160+09:00  ->  2026-07-26T08:00:02.061695+09:00
+
+Processing paper 9/10
+Title: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Paper already exists, checking if translation is complete...
+Update likes: 89  ->  89
+Update date_collected: 2026-07-27T08:03:22.848454+09:00  ->  2026-07-26T08:00:02.064813+09:00
+
+Processing paper 10/10
+Title: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Paper already exists, checking if translation is complete...
+Update likes: 76  ->  75
+Update date_collected: 2026-07-27T08:03:22.851555+09:00  ->  2026-07-26T08:00:02.067823+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W31.json...
+
+Updating Notion database...
+Updating paper: 단일 데스크탑 GPU에서 무한한 상호작용 월드 롤아웃을 위한 ABot-World-0 (likes: 291 -> 295)
+Updating paper: RynnBrain 1.1: 더 강력하고 일반화된 신체화된 기반 모델을 향해 (likes: 196 -> 197)
+Paper already exists with same likes count: TimeLens2: 멀티모달 LLM을 활용한 다목적 비디오 시간 기준화
+Updating paper: RAGU: 소형 도메인 적응 LLM을 갖춘 다단계 GraphRAG 엔진 (likes: 143 -> 144)
+Updating paper: RESOURCE2SKILL: 인간이 만든 다중 모달 자원으로부터 실행 가능한 에이전트 스킬 추출 (likes: 139 -> 140)
+Updating paper: 재귀적으로 자가 발전하는 심층 연구 에이전트를 향하여 (likes: 127 -> 139)
+Updating paper: DataFlow-Harness: 편집 가능한 LLM 데이터 파이프라인을 구축하기 위한 기반이 되는 코드 에이전트 플랫폼 (likes: 135 -> 136)
+Paper already exists with same likes count: 진화하는 세상: 상호작용적인 문학 세계에서 역할 연기 에이전트와 세계 모델의 공동 진화를 위한 오픈 스키마 프레임워크
+Paper already exists with same likes count: DeepSearch-World: 베리파이어 환경에서 깊이 탐색 에이전트들을 위한 자기 증류
+Updating paper: SWE-Pruner Pro: 코더 LLM이 이미 무엇을 다듬어야 하는지 알고 있습니다 (likes: 75 -> 76)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Jul 26 23:04:04 UTC 2026 ===
+

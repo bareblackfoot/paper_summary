@@ -1,0 +1,115 @@
+=== Paper Collection Started at Tue Apr  7 22:18:37 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W15
+URL: https://huggingface.co/papers/week/2026-W15
+Found 10 papers in weekly view
+Fetching likes for: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Fetching likes for: Self-Distilled RLVR
+Fetching likes for: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Fetching likes for: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Fetching likes for: LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models
+Fetching likes for: TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
+Fetching likes for: A Simple Baseline for Streaming Video Understanding
+Fetching likes for: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Fetching likes for: Adam's Law: Textual Frequency Law on Large Language Models
+Fetching likes for: AURA: Always-On Understanding and Real-Time Assistance via Video Streams
+Selected top 10 papers by likes:
+1. OpenWorldLib: A Unified Codebase and Definition of Advanced World Models (148 likes)
+2. Self-Distilled RLVR (121 likes)
+3. MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale (89 likes)
+4. InCoder-32B-Thinking: Industrial Code World Model for Thinking (73 likes)
+5. LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models (70 likes)
+6. TriAttention: Efficient Long Reasoning with Trigonometric KV Compression (64 likes)
+7. A Simple Baseline for Streaming Video Understanding (64 likes)
+8. GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning (62 likes)
+9. Adam's Law: Textual Frequency Law on Large Language Models (45 likes)
+10. AURA: Always-On Understanding and Real-Time Assistance via Video Streams (37 likes)
+Found abstract: World models have garnered significant attention as a promising research direction in artificial int...
+Processed paper: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Found abstract: On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This parad...
+Processed paper: Self-Distilled RLVR
+Found abstract: Current document parsing methods compete primarily on model architecture innovation, while systemati...
+Processed paper: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Found abstract: Industrial software development across chip design, GPU optimization, and embedded systems lacks exp...
+Processed paper: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Found abstract: Vision-Language-Action (VLA) models achieve strong performance in robotic manipulation by leveraging...
+Processed paper: LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models
+Found abstract: Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leadi...
+Processed paper: TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
+Found abstract: Recent streaming video understanding methods increasingly rely on complex memory mechanisms to handl...
+Processed paper: A Simple Baseline for Streaming Video Understanding
+Found abstract: Competitive programming remains one of the last few human strongholds in coding against AI. The best...
+Processed paper: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Found abstract: While textual frequency has been validated as relevant to human cognition in reading speed, its rela...
+Processed paper: Adam's Law: Textual Frequency Law on Large Language Models
+Found abstract: Video Large Language Models (VideoLLMs) have achieved strong performance on many video understanding...
+Processed paper: AURA: Always-On Understanding and Real-Time Assistance via Video Streams
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: OpenWorldLib: A Unified Codebase and Definition of Advanced World Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Self-Distilled RLVR
+Paper already exists, checking if translation is complete...
+Update likes: 121  ->  79
+Update date_collected: 2026-04-08T07:18:45.214662+09:00  ->  2026-04-07T07:16:23.419022+09:00
+
+Processing paper 3/10
+Title: MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  5
+Update date_collected: 2026-04-08T07:18:45.219204+09:00  ->  2026-04-07T07:16:23.429608+09:00
+
+Processing paper 5/10
+Title: LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: TriAttention: Efficient Long Reasoning with Trigonometric KV Compression
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: A Simple Baseline for Streaming Video Understanding
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  53
+Update date_collected: 2026-04-08T07:18:45.223476+09:00  ->  2026-04-07T07:16:23.420487+09:00
+
+Processing paper 8/10
+Title: GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Adam's Law: Textual Frequency Law on Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: AURA: Always-On Understanding and Real-Time Assistance via Video Streams
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W15.json...
+
+Updating Notion database...
+Creating new paper: OpenWorldLib: 고급 세계 모델의 통합된 코드베이스와 정의
+Updating paper: 자기 생성 강화학습 기반의 Self-Distilled RLVR (likes: 79 -> 121)
+Creating new paper: 데이터 중심 문서 구문 분석의 한계를 넓히는 MinerU2.5-Pro
+Updating paper: 산업 코드 세계 모델을 위한 인코더-32B-사고력 (likes: 5 -> 73)
+Creating new paper: LIBERO-Para: VLA 모델에서 패러프레이즈 견고성에 대한 진단적 벤치마크 및 측정 지표
+Creating new paper: TriAttention: 삼각 함수화된 KV 압축을 통한 효율적인 장거리 추론
+Updating paper: 스트리밍 비디오 이해를 위한 간단한 베이스라인 (likes: 53 -> 64)
+Creating new paper: GrandCode: 경쟁 프로그래밍에서 에이전틱 강화 학습을 통해 그랜드마스터 수준 달성
+Creating new paper: 아담의 법칙: 대형언어모델에서의 텍스트 빈도 법칙
+Creating new paper: 항상 작동하는 이해와 실시간 지원을 통한 비디오 스트림 (AURA)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Apr  7 22:20:59 UTC 2026 ===
+

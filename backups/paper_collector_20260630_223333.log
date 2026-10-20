@@ -1,0 +1,111 @@
+=== Paper Collection Started at Mon Jun 29 22:29:32 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W27
+URL: https://huggingface.co/papers/week/2026-W27
+Found 10 papers in weekly view
+Fetching likes for: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Fetching likes for: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Fetching likes for: Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots
+Fetching likes for: Qwen-Image-2.0-RL Technical Report
+Fetching likes for: MultiHashFormer: Hash-based Generative Language Models
+Fetching likes for: SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning
+Fetching likes for: The Tatoxa System for Text Detoxification in Low-Resource Languages: The Case of Tatar
+Fetching likes for: GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems
+Fetching likes for: ProMSA:Progressive Multimodal Search Agents for Knowledge-Based Visual Question Answering
+Fetching likes for: SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation
+Selected top 10 papers by likes:
+1. PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation (39 likes)
+2. Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs (36 likes)
+3. Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots (32 likes)
+4. Qwen-Image-2.0-RL Technical Report (27 likes)
+5. MultiHashFormer: Hash-based Generative Language Models (16 likes)
+6. SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning (11 likes)
+7. The Tatoxa System for Text Detoxification in Low-Resource Languages: The Case of Tatar (9 likes)
+8. GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems (8 likes)
+9. ProMSA:Progressive Multimodal Search Agents for Knowledge-Based Visual Question Answering (7 likes)
+10. SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation (6 likes)
+Found abstract: Video generation models have emerged as a promising paradigm for embodied world simulation. However,...
+Processed paper: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Found abstract: We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprisin...
+Processed paper: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Found abstract: We study whether we can learn novel manipulation skills from human actions to a bi-manual robot with...
+Processed paper: Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots
+Found abstract: We present Qwen-Image-2.0-RL, a post-training pipeline that applies reinforcement learning from huma...
+Processed paper: Qwen-Image-2.0-RL Technical Report
+Found abstract: Language models (LMs) represent tokens using embedding matrices that scale linearly with the vocabul...
+Processed paper: MultiHashFormer: Hash-based Generative Language Models
+Found abstract: Vision-language models (VLMs) are increasingly deployed in consumer, medical, financial, and enterpr...
+Processed paper: SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning
+Found abstract: Text detoxification, the automated detection and mitigation of abusive and harmful content, is essen...
+Processed paper: The Tatoxa System for Text Detoxification in Low-Resource Languages: The Case of Tatar
+Found abstract: Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for so...
+Processed paper: GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems
+Found abstract: Knowledge-based Visual Question Answering (KB-VQA) requires models to combine image understanding wi...
+Processed paper: ProMSA:Progressive Multimodal Search Agents for Knowledge-Based Visual Question Answering
+Found abstract: Training and evaluating robot policies in the real world is costly and difficult to scale. We introd...
+Processed paper: SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Paper already exists, checking if translation is complete...
+Update likes: 39  ->  0
+Update date_collected: 2026-06-30T07:29:40.695795+09:00  ->  2026-06-29T10:50:16.543657+09:00
+
+Processing paper 2/10
+Title: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Qwen-Image-2.0-RL Technical Report
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: MultiHashFormer: Hash-based Generative Language Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: The Tatoxa System for Text Detoxification in Low-Resource Languages: The Case of Tatar
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: ProMSA:Progressive Multimodal Search Agents for Knowledge-Based Visual Question Answering
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W27.json...
+
+Updating Notion database...
+Updating paper: 로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing (likes: 0 -> 39)
+Creating new paper: 숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리
+Creating new paper: 인간으로부터 로봇으로의 조작 기술 전이를 위한 다리 역할로서의 번역
+Creating new paper: Qwen-Image-2.0-RL 기술 보고서
+Creating new paper: 멀티해시포머: 해시 기반 생성 언어 모델
+Creating new paper: 싱가드: 정책 적응형 다중 모달 LLM 가드레일과 동적 추론
+Creating new paper: 저자원 언어에서의 텍스트 독성 완화를 위한 타톡사(Tatoxa) 시스템: 타타르어 사례
+Creating new paper: GBC: 그라디언트 기반 연결로 다중 에이전트 시스템 최적화하기
+Creating new paper: ProMSA:Progressive Multimodal Search Agents를 활용한 기반 지식 시각 질의 응답 기법
+Creating new paper: SimFoundry: 정책 학습 및 평가를 위한 모듈화 및 자동화된 장면 생성
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 29 22:31:07 UTC 2026 ===
+

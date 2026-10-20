@@ -1,0 +1,147 @@
+=== Paper Collection Started at Mon Oct 13 22:07:31 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W42
+URL: https://huggingface.co/papers/week/2025-W42
+Found 10 papers in weekly view
+Fetching likes for: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Fetching likes for: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Fetching likes for: AutoPR: Let's Automate Your Academic Promotion!
+Fetching likes for: TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling
+Fetching likes for: Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs
+Fetching likes for: R-Horizon: How Far Can Your Large Reasoning Model Really Go in Breadth
+  and Depth?
+Fetching likes for: Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining
+  Levels
+Fetching likes for: BigCodeArena: Unveiling More Reliable Human Preferences in Code
+  Generation via Execution
+Fetching likes for: StreamingVLM: Real-Time Understanding for Infinite Video Streams
+Fetching likes for: SpaceVista: All-Scale Visual Spatial Reasoning from mm to km
+Selected top 10 papers by likes:
+1. D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI (100 likes)
+2. Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation (85 likes)
+3. AutoPR: Let's Automate Your Academic Promotion! (38 likes)
+4. TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling (38 likes)
+5. Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs (35 likes)
+6. R-Horizon: How Far Can Your Large Reasoning Model Really Go in Breadth
+  and Depth? (21 likes)
+7. Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining
+  Levels (21 likes)
+8. BigCodeArena: Unveiling More Reliable Human Preferences in Code
+  Generation via Execution (18 likes)
+9. StreamingVLM: Real-Time Understanding for Infinite Video Streams (17 likes)
+10. SpaceVista: All-Scale Visual Spatial Reasoning from mm to km (16 likes)
+Found abstract: Large language models leverage internet-scale text data, yet embodied AI
+remains constrained by the ...
+Processed paper: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Found abstract: Camera-centric understanding and generation are two cornerstones of spatial
+intelligence, yet they a...
+Processed paper: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Found abstract: As the volume of peer-reviewed research surges, scholars increasingly rely on
+social platforms for d...
+Processed paper: AutoPR: Let's Automate Your Academic Promotion!
+Found abstract: Recent diffusion models achieve the state-of-the-art performance in image
+generation, but often suff...
+Processed paper: TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling
+Found abstract: Large Language Models (LLMs) have shown remarkable success, and their
+multimodal expansions (MLLMs) ...
+Processed paper: Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs
+Found abstract: Recent trends in test-time scaling for reasoning models (e.g., OpenAI o1,
+DeepSeek-R1) have led to r...
+Processed paper: R-Horizon: How Far Can Your Large Reasoning Model Really Go in Breadth
+  and Depth?
+Found abstract: Large Language Models (LLMs) have achieved remarkable success through
+imitation learning on vast tex...
+Processed paper: Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining
+  Levels
+Found abstract: Crowdsourced model evaluation platforms, such as Chatbot Arena, enable
+real-time evaluation from hum...
+Processed paper: BigCodeArena: Unveiling More Reliable Human Preferences in Code
+  Generation via Execution
+Found abstract: Vision-language models (VLMs) could power real-time assistants and autonomous
+agents, but they face ...
+Processed paper: StreamingVLM: Real-Time Understanding for Infinite Video Streams
+Found abstract: With the current surge in spatial reasoning explorations, researchers have
+made significant progress...
+Processed paper: SpaceVista: All-Scale Visual Spatial Reasoning from mm to km
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: AutoPR: Let's Automate Your Academic Promotion!
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: R-Horizon: How Far Can Your Large Reasoning Model Really Go in Breadth
+  and Depth?
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining
+  Levels
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: BigCodeArena: Unveiling More Reliable Human Preferences in Code
+  Generation via Execution
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: StreamingVLM: Real-Time Understanding for Infinite Video Streams
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SpaceVista: All-Scale Visual Spatial Reasoning from mm to km
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W42.json...
+
+Updating Notion database...
+Creating new paper: 데스크톱 데이터에서 비전-행동 사전학습 확장하여 실체화된 AI로의 이전을 위한 D2E
+Creating new paper: 카메라와 함께하는 사고: 카메라 중심의 이해 및 생성을 위한 통합적 다중 모달 모델
+Creating new paper: 자동 PR: 학술 승진을 자동화합시다!
+Creating new paper: TAG: 측면 증폭 안내를 이용한 환각 억제 확산 샘플링
+Creating new paper: 다중 모달 프롬프트 최적화: MLLM을 위해 여러 모달리티를 활용하는 이유
+Creating new paper: R-Horizon: 대규모 추론 모델의 폭과 깊이에서 얼마나 멀리 갈 수 있을까?
+Creating new paper: 웹스케일-RL: RL 데이터를 사전학습 수준으로 확장하기 위한 자동화 데이터 파이프라인
+Creating new paper: 빅코드아레나: 실행을 통해 부드러운 코드 생성에서 보다 신뢰할 만한 인간 선호도 해독하기
+Creating new paper: 무한 비디오 스트림에 대한 실시간 이해를 위한 StreamingVLM
+Creating new paper: SpaceVista: mm에서 km까지의 모든 규모 시각적 공간 추론
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Oct 13 22:10:20 UTC 2025 ===
+

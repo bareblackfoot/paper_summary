@@ -1,0 +1,129 @@
+=== Paper Collection Started at Sat Dec 13 22:07:39 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W51
+URL: https://huggingface.co/papers/week/2025-W51
+Found 10 papers in weekly view
+Fetching likes for: Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
+Fetching likes for: Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform
+Fetching likes for: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Fetching likes for: T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground
+Fetching likes for: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Fetching likes for: StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation
+Fetching likes for: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Fetching likes for: Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality
+Fetching likes for: OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory
+Fetching likes for: Unified Video Editing with Temporal Reasoner
+Selected top 10 papers by likes:
+1. Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance (119 likes)
+2. Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform (71 likes)
+3. Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning (71 likes)
+4. T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground (66 likes)
+5. TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows (66 likes)
+6. StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation (63 likes)
+7. Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs (53 likes)
+8. Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality (45 likes)
+9. OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory (42 likes)
+10. Unified Video Editing with Temporal Reasoner (42 likes)
+Found abstract: We present Wan-Move, a simple and scalable framework that brings motion control to video generative ...
+Processed paper: Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
+Found abstract: Neural rendering, particularly 3D Gaussian Splatting (3DGS), has evolved rapidly and become a key co...
+Processed paper: Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform
+Found abstract: We introduce Native Parallel Reasoner (NPR), a teacher-free framework that enables Large Language Mo...
+Processed paper: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Found abstract: We introduce T-pro 2.0, an open-weight Russian LLM for hybrid reasoning and efficient inference. The...
+Processed paper: T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground
+Found abstract: Recent advances in large multi-modal generative models have demonstrated impressive capabilities in ...
+Processed paper: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Found abstract: The growing adoption of XR devices has fueled strong demand for high-quality stereo video, yet its p...
+Processed paper: StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation
+Found abstract: Rotary Position Embeddings (RoPE) have become a standard for encoding sequence order in Large Langua...
+Processed paper: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Found abstract: Video face swapping is crucial in film and entertainment production, where achieving high fidelity a...
+Processed paper: Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality
+Found abstract: Storytelling in real-world videos often unfolds through multiple shots -- discontinuous yet semantic...
+Processed paper: OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory
+Found abstract: Existing video editing methods face a critical trade-off: expert models offer precision but rely on ...
+Processed paper: Unified Video Editing with Temporal Reasoner
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
+Paper already exists, checking if translation is complete...
+Update likes: 119  ->  116
+Update date_collected: 2025-12-14T07:07:48.004553+09:00  ->  2025-12-13T07:08:19.281266+09:00
+
+Processing paper 2/10
+Title: Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  71
+Update date_collected: 2025-12-14T07:07:48.006406+09:00  ->  2025-12-13T07:08:19.283142+09:00
+
+Processing paper 3/10
+Title: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  71
+Update date_collected: 2025-12-14T07:07:48.007713+09:00  ->  2025-12-13T07:08:19.284433+09:00
+
+Processing paper 4/10
+Title: T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  60
+Update date_collected: 2025-12-14T07:07:48.009222+09:00  ->  2025-12-13T07:08:19.287043+09:00
+
+Processing paper 5/10
+Title: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  65
+Update date_collected: 2025-12-14T07:07:48.010312+09:00  ->  2025-12-13T07:08:19.285537+09:00
+
+Processing paper 6/10
+Title: StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  60
+Update date_collected: 2025-12-14T07:07:48.011669+09:00  ->  2025-12-13T07:08:19.288390+09:00
+
+Processing paper 7/10
+Title: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 53  ->  52
+Update date_collected: 2025-12-14T07:07:48.012931+09:00  ->  2025-12-13T07:08:19.289667+09:00
+
+Processing paper 8/10
+Title: Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  45
+Update date_collected: 2025-12-14T07:07:48.014251+09:00  ->  2025-12-13T07:08:19.291007+09:00
+
+Processing paper 9/10
+Title: OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  41
+Update date_collected: 2025-12-14T07:07:48.015802+09:00  ->  2025-12-13T07:08:19.293744+09:00
+
+Processing paper 10/10
+Title: Unified Video Editing with Temporal Reasoner
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  42
+Update date_collected: 2025-12-14T07:07:48.016958+09:00  ->  2025-12-13T07:08:19.292192+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W51.json...
+
+Updating Notion database...
+Updating paper: 원-무브: 잠재 경로 안내를 통한 움직임 제어형 비디오 생성 (likes: 116 -> 119)
+Paper already exists with same likes count: 미래지향적: 웹GPU 기술을 기반으로 한 가우시안 스플래팅 플랫폼에 구축된 세계 모델 플랫폼
+Paper already exists with same likes count: 본능적 병렬 추론자: 자가 증류 강화 학습을 통한 병렬 추론 (Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning)
+Updating paper: T-pro 2.0: 효율적인 러시아어 하이브리드 추론 모델 및 플레이그라운드 (likes: 60 -> 66)
+Updating paper: TwinFlow: 자가 적대적 플로우를 활용한 대규모 모델에서의 일단계 생성 실현 (likes: 65 -> 66)
+Updating paper: 스테레오월드: 지오메트리 인식 단안-스테레오 비디오 생성 (likes: 60 -> 63)
+Updating paper: 실제를 넘어선다: 장문맥 대언어모델을 위한 회전 위치 임베딩의 허구 확장 (likes: 52 -> 53)
+Paper already exists with same likes count: 소스 비디오 현실감 보존: 시네마틱 퀄리티를 위한 고품질 얼굴 스왑
+Updating paper: 일문일답식 메모리를 이용한 일관된 다중 샷 비디오 생성 (likes: 41 -> 42)
+Paper already exists with same likes count: 시간적 추론기를 활용한 통합 비디오 편집
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Dec 13 22:09:21 UTC 2025 ===
+

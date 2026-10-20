@@ -1,0 +1,317 @@
+[
+  {
+    "title": "LMEB: Long-horizon Memory Embedding Benchmark",
+    "abstract": "Memory embeddings are crucial for memory-augmented systems, such as OpenClaw, but their evaluation is underexplored in current text embedding benchmarks, which narrowly focus on traditional passage retrieval and fail to assess models' ability to handle long-horizon memory retrieval tasks involving fragmented, context-dependent, and temporally distant information. To address this, we introduce the Long-horizon Memory Embedding Benchmark (LMEB), a comprehensive framework that evaluates embedding models' capabilities in handling complex, long-horizon memory retrieval tasks. LMEB spans 22 datasets and 193 zero-shot retrieval tasks across 4 memory types: episodic, dialogue, semantic, and procedural, with both AI-generated and human-annotated data. These memory types differ in terms of level of abstraction and temporal dependency, capturing distinct aspects of memory retrieval that reflect the diverse challenges of the real world. We evaluate 15 widely used embedding models, ranging from hundreds of millions to ten billion parameters. The results reveal that (1) LMEB provides a reasonable level of difficulty; (2) Larger models do not always perform better; (3) LMEB and MTEB exhibit orthogonality. This suggests that the field has yet to converge on a universal model capable of excelling across all memory retrieval tasks, and that performance in traditional passage retrieval may not generalize to long-horizon memory retrieval. In summary, by providing a standardized and reproducible evaluation framework, LMEB fills a crucial gap in memory embedding evaluation, driving further advancements in text embedding for handling long-term, context-dependent memory retrieval. LMEB is available at https://github.com/KaLM-Embedding/LMEB.",
+    "authors": [
+      "Xinping Zhao",
+      "Xinshuo Hu",
+      "Jiaxin Xu",
+      "Danyu Tang",
+      "Xin Zhang",
+      "Mengjia Zhou",
+      "Yan Zhong",
+      "Yao Zhou",
+      "Zifei Shan",
+      "Meishan Zhang",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "likes": 49,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.12572",
+    "date_collected": "2026-03-17T07:16:21.973022+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "장기 기억 내장 평가를 위한 벤치마크(LMEB: Long-horizon Memory Embedding Benchmark)",
+      "abstract": "기억 내장은 OpenClaw와 같은 기억 증강 시스템에 중요한데, 현재의 텍스트 내장 벤치마크는 장기 기억 검색 작업에 초점을 두고 있지 않아서 실질적으로 평가되지 않고, 전통적인 단락 검색에 중점을 둠으로써 단편적이고 맥락 의존적이며 시간적으로 먼 정보를 처리할 수 있는 모델의 능력을 평가하지 못합니다. 이에 대응하여, 우리는 Long-horizon Memory Embedding Benchmark (LMEB)를 제시하는데, 이는 복잡한 장기 기억 검색 작업을 처리하는 내장 모델의 능력을 평가하기 위한 포괄적인 프레임워크입니다. LMEB는 총 22개의 데이터셋과 4가지 메모리 유형인 에피소딕, 대화, 의미론적 및 절차적을 포함하여 193가지의 영 제로샷 검색 작업을 다룹니다. 이들 메모리 유형은 추상화 수준과 시간적 종속성 면에서 다르며, 실세계의 다양한 도전 과제를 반영하는 메모리 검색의 구별된 측면을 포착합니다. 저희는 수억 개에서 십억 개의 매개 변수를 갖는 15가지 널리 사용되는 내장 모델을 평가합니다. 결과는 (1) LMEB가 합당한 난이도를 제공한다는 것을 보여줍니다; (2) 더 큰 모델이 항상 더 나은 성능을 발휘하지 않는다는 것을 보여줍니다; (3) LMEB와 MTEB가 직교성을 나타낸다는 사실을 보여줍니다. 이는 이 분야가 모든 기억 검색 작업에 걸쳐 우수한 성과를 발휘할 수 있는 보편적인 모델에 수렴한 것이 아니라는 것을 시사하며, 전통적인 단락 검색에서의 성과가 장기 기억 검색으로 일반화되지 않을 수도 있다는 것을 보여줍니다. 요약하자면, 표준화되고 재현 가능한 평가 프레임워크를 제공함으로써 LMEB는 기억 내장 평가에서 중요한 공백을 메우면서 장기적이고 맥락 의존적인 기억 검색을 다루는 텍스트 임베딩 분야의 추가 발전을 이끌어내고 있습니다. LMEB는 https://github.com/KaLM-Embedding/LMEB에서 제공됩니다."
+    },
+    "summary": "1. LMEB는 다양한 메모리 유형과 영 제로샷 검색 작업을 포함하는 장기 기억 검색 작업을 처리하는 내장 모델의 능력을 평가하는 벤치마크이다.\n2. 연구 결과는 LMEB가 합리적인 난이도를 제공하며, 큰 모델이 항상 더 좋은 성능을 발휘하는 것은 아닌 것을 보여준다.\n3. 전통적인 단락 검색 성과가 장기 기억 검색으로 일반화되지 않을 수 있으며, 모든 기억 검색 작업에 걸쳐 우수한 성과를 내는 보편적 모델이 아직 존재하지 않을 수 있다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation",
+    "abstract": "A recent cutting-edge topic in multimodal modeling is to unify visual comprehension and generation within a single model. However, the two tasks demand mismatched decoding regimes and visual representations, making it non-trivial to jointly optimize within a shared feature space. In this work, we present Cheers, a unified multimodal model that decouples patch-level details from semantic representations, thereby stabilizing semantics for multimodal understanding and improving fidelity for image generation via gated detail residuals. Cheers includes three key components: (i) a unified vision tokenizer that encodes and compresses image latent states into semantic tokens for efficient LLM conditioning, (ii) an LLM-based Transformer that unifies autoregressive decoding for text generation and diffusion decoding for image generation, and (iii) a cascaded flow matching head that decodes visual semantics first and then injects semantically gated detail residuals from the vision tokenizer to refine high-frequency content. Experiments on popular benchmarks demonstrate that Cheers matches or surpasses advanced UMMs in both visual understanding and generation. Cheers also achieves 4x token compression, enabling more efficient high-resolution image encoding and generation. Notably, Cheers outperforms the Tar-1.5B on the popular benchmarks GenEval and MMBench, while requiring only 20% of the training cost, indicating effective and efficient (i.e., 4x token compression) unified multimodal modeling. We will release all code and data for future research.",
+    "authors": [
+      "Yichen Zhang",
+      "Da Peng",
+      "Zonghao Guo",
+      "Zijian Zhang",
+      "Xuesong Yang",
+      "Tong Sun",
+      "Shichu Sun",
+      "Yidan Zhang",
+      "Yanghao Li",
+      "Haiyan Zhao",
+      "Wang Xu",
+      "Qi Shi",
+      "Yangang Sun",
+      "Chi Chen",
+      "Shuo Wang",
+      "Yukun Yan",
+      "Xu Han",
+      "Qiang Ma",
+      "Wei Ke",
+      "Liang Wang",
+      "Zhiyuan Liu",
+      "Maosong Sun"
+    ],
+    "likes": 26,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.12793",
+    "date_collected": "2026-03-17T07:16:21.974881+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "세부 패치 정보와 의미적 표현의 분리로 통합된 다중모달 이해와 생성 가능하게 함",
+      "abstract": "최근의 다중모달 모델링 연구는 시각적 이해와 생성을 단일 모델 내에서 통합하는 것에 초점을 맞추고 있습니다. 그러나 두 가지 작업은 일치하지 않는 디코딩 규칙과 시각적 표현을 요구하여, 공유된 특징 공간 내에서 동시에 최적화하기가 어렵습니다. 본 논문에서는 세부 패치 정보를 의미적 표현으로부터 분리함으로써, 통합된 다중모달 모델인 Cheers를 제안합니다. 이는 다중모달 이해를 위한 의미를 안정화시키고, 게이트된 디테일 잔차를 통해 이미지 생성의 충실도를 향상시키는 데 도움이 됩니다."
+    },
+    "summary": "1. Cheers는 시각적 정보를 의미적 토큰으로 압축하여 효율적인 LLM 조건부합을 제공하는 통합된 비전 토크나이저를 포함합니다.\n2. LLM 기반 Transformer는 텍스트 생성을 위한 자기회귀 디코딩과 이미지 생성을 위한 확산 디코딩을 하나로 통합합니다.\n3. Cheers는 시각적 의미를 먼저 해독하고, 비전 토크나이저로부터 의미적으로 게이트된 디테일 잔차를 주입하여 고주파 콘텐츠를 개선하는 카스케이드 플로 매칭 헤드를 포함합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Can Vision-Language Models Solve the Shell Game?",
+    "abstract": "Visual entity tracking is an innate cognitive ability in humans, yet it remains a critical bottleneck for Vision-Language Models (VLMs). This deficit is often obscured in existing video benchmarks by visual shortcuts. We introduce VET-Bench, a synthetic diagnostic testbed featuring visually identical objects that necessitate tracking exclusively through spatiotemporal continuity. Our experiments reveal that current state-of-the-art VLMs perform at or near chance level on VET-Bench, exposing a fundamental limitation: an over-reliance on static frame-level features and a failure to maintain entity representations over time. We provide a theoretical analysis drawing connections to the state-tracking problem, proving that fixed-depth transformer-based VLMs are fundamentally limited in tracking indistinguishable objects without intermediate supervision due to expressivity constraints. To address this, we propose Spatiotemporal Grounded Chain-of-Thought (SGCoT): generating object trajectories as explicit intermediate states. Leveraging Molmo2's object tracking ability, we elicit SGCoT reasoning by fine-tuning on synthesized text-only data for alignment. Our method achieves state-of-the-art accuracy exceeding 90% on VET-Bench, demonstrating that VLMs can reliably solve the video shell-game task end-to-end without external tools. Our code and data are available at https://vetbench.github.io .",
+    "authors": [
+      "Tiedong Liu",
+      "Wee Sun Lee"
+    ],
+    "likes": 25,
+    "published_date": "Mar 9",
+    "url": "https://huggingface.co/papers/2603.08436",
+    "date_collected": "2026-03-17T07:16:21.975907+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "비전-언어 모델이 껍질 게임을 해결할 수 있을까?",
+      "abstract": "시각적 엔티티 추적은 사람들에게 타고난 인지 능력이지만, 비전-언어 모델(Vision-Language Models, VLMs)에게는 여전히 핵심적인 병목 현상으로 남아있습니다. 이 결핍은 기존의 비디오 벤치마크에서 종종 시각적 단축키로 인해 가려져 있습니다. 본 연구에서는 시공간 연속성을 통해 추적이 필요한 모양이 동일한 객체들을 특징으로 하는 VET-Bench를 소개합니다. 실험 결과, 현재 최첨단 VLMs가 VET-Bench 상에서 운이 좋은 수준이거나 거의 그 수준에 머물러 있다는 것을 밝혀내며, 정적 프레임 수준 특징에 과도하게 의존하고 객체 표현을 시간이 지나도 유지하지 못하는 기본적인 한계를 드러냅니다. 우리는 고정된 깊이의 트랜스포머 기반 VLMs가 중간 감독 없이 구별할 수 없는 객체를 추적하는 데 근본적으로 제한되어 있는 것을 입증하는 이론적 분석을 제공합니다. 이를 해결하기 위해 우리는 시공간 기반 사고 연대(Statiotemporal Grounded Chain of Thought, SGCoT)를 제안합니다. 목표는 물체 궤적을 명시적인 중간 상태로 생성하는 것입니다. Molmo2의 물체 추적 능력을 활용해 우리는 SGCoT 추론을 일치시키기 위해 텍스트만으로 구성된 데이터를 통한 미세 조정을 진행합니다. 이 방법은 VET-Bench에서 90% 이상의 최첨단 정확도를 달성하여 VLMs가 외부 도구 없이 비디오 껍질 게임 작업을 믿을 수 있는 수준으로 해결할 수 있음을 보여줍니다. 코드 및 데이터는 https://vetbench.github.io에서 이용 가능합니다."
+    },
+    "summary": "1. VLMs는 어려운 시공간 연속적 추적 작업을 처리하는 데 한계를 보이며, 이를 극복하기 위해 SGCoT를 제안하여 물체 궤적을 생성하는 방법을 제시한다.\n2. 현재의 최첨단 VLMs는 VET-Bench에서 운이나 그 수준 이하의 성능만을 보이며, 정적 프레임 수준 특징에 과도하게 의존하고 있는 한계를 드러낸다.\n3. SGCoT를 활용한 SGCoT에 대한 실험 결과, VLMs가 중간 감독 없이 비디오 껍질 게임 작업을 믿을 수 있을 정도로 고도의 정확도를 달성할 수 있음을 입증한다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "daVinci-Env: Open SWE Environment Synthesis at Scale",
+    "abstract": "Training capable software engineering (SWE) agents demands large-scale, executable, and verifiable environments that provide dynamic feedback loops for iterative code editing, test execution, and solution refinement. However, existing open-source datasets remain limited in scale and repository diversity, while industrial solutions are opaque with unreleased infrastructure, creating a prohibitive barrier for most academic research groups. We present OpenSWE, the largest fully transparent framework for SWE agent training in Python, comprising 45,320 executable Docker environments spanning over 12.8k repositories, with all Dockerfiles, evaluation scripts, and infrastructure fully open-sourced for reproducibility. OpenSWE is built through a multi-agent synthesis pipeline deployed across a 64-node distributed cluster, automating repository exploration, Dockerfile construction, evaluation script generation, and iterative test analysis. Beyond scale, we propose a quality-centric filtering pipeline that characterizes the inherent difficulty of each environment, filtering out instances that are either unsolvable or insufficiently challenging and retaining only those that maximize learning efficiency. With 891K spent on environment construction and an additional 576K on trajectory sampling and difficulty-aware curation, the entire project represents a total investment of approximately $1.47 million, yielding about 13,000 curated trajectories from roughly 9,000 quality guaranteed environments. Extensive experiments validate OpenSWE's effectiveness: OpenSWE-32B and OpenSWE-72B achieve 62.4% and 66.0% on SWE-bench Verified, establishing SOTA among Qwen2.5 series. Moreover, SWE-focused training yields substantial out-of-domain improvements, including up to 12 points on mathematical reasoning and 5 points on science benchmarks, without degrading factual recall.",
+    "authors": [
+      "Dayuan Fu",
+      "Shenyu Wu",
+      "Yunze Wu",
+      "Zerui Peng",
+      "Yaxing Huang",
+      "Jie Sun",
+      "Ji Zeng",
+      "Mohan Jiang",
+      "Lin Zhang",
+      "Yukun Li",
+      "Jiarui Hu",
+      "Liming Liu",
+      "Jinlong Hou",
+      "Pengfei Liu"
+    ],
+    "likes": 20,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.13023",
+    "date_collected": "2026-03-17T07:16:21.977367+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "daVinci-Env: 대규모 규모에서의 오픈 SWE 환경 합성",
+      "abstract": "능력 있는 소프트웨어 엔지니어링(SWE) 에이전트 훈련은 대규모이며 실행 가능하며 검증 가능한 환경이 필요하며, 이러한 환경은 반복적인 코드 편집, 테스트 실행 및 솔루션 개선을 위한 동적 피드백 루프를 제공해야 합니다. 그러나 기존의 오픈 소스 데이터셋은 규모와 저장소 다양성에 제한이 있으며, 산업 솔루션은 미출시된 인프라로 불투명하여 대부분의 학술 연구 그룹에게는 접근이 어렵습니다. 우리는 Python에서 총 45,320개의 실행 가능한 Docker 환경으로 이루어진, 총 12.8k개 저장소에서 확장된 SWE 에이전트 훈련을 위한 최대 규모의 완전 투명 프레임워크인 OpenSWE를 제안합니다. 모든 Docker 파일, 평가 스크립트 및 인프라가 완전히 오픈되어 재현 가능합니다. OpenSWE는 64노드 분산 클러스터 전체에 배포된 다중 에이전트 합성 파이프라인을 통해 구축되었으며, 저장소 탐색, Docker 파일 작성, 평가 스크립트 생성 및 반복적인 테스트 분석을 자동화합니다. 우리는 규모 이상으로, 각 환경의 내재적 난이도를 특성화하는 품질 중심 필터링 파이프라인을 제안하여, 해결 불능한 또는 충분히 도전적이지 않은 인스턴스를 걸러내어 학습 효율을 극대화하는 인스턴스만 유지합니다."
+    },
+    "summary": "1. SWE 에이전트 훈련을 위한 대규모 환경인 OpenSWE가 도입되어, 최대 12.8k개의 저장소에서 45,320개의 실행 가능한 Docker 환경이 제공됨.\n2. OpenSWE는 품질 중심 필터링 파이프라인을 통해 난이도가 높은 환경만을 유지하여, 전체 투자액 1.47백만달러로 학습 효율을 극대화함.\n3. OpenSWE-32B와 OpenSWE-72B는 현재 SOTA로 인정받으며, SWE 집중 훈련은 수학적 추론 및 과학 벤치마크에서 상당한 개선을 이끌어냄.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "OmniForcing: Unleashing Real-time Joint Audio-Visual Generation",
+    "abstract": "Recent joint audio-visual diffusion models achieve remarkable generation quality but suffer from high latency due to their bidirectional attention dependencies, hindering real-time applications. We propose OmniForcing, the first framework to distill an offline, dual-stream bidirectional diffusion model into a high-fidelity streaming autoregressive generator. However, naively applying causal distillation to such dual-stream architectures triggers severe training instability, due to the extreme temporal asymmetry between modalities and the resulting token sparsity. We address the inherent information density gap by introducing an Asymmetric Block-Causal Alignment with a zero-truncation Global Prefix that prevents multi-modal synchronization drift. The gradient explosion caused by extreme audio token sparsity during the causal shift is further resolved through an Audio Sink Token mechanism equipped with an Identity RoPE constraint. Finally, a Joint Self-Forcing Distillation paradigm enables the model to dynamically self-correct cumulative cross-modal errors from exposure bias during long rollouts. Empowered by a modality-independent rolling KV-cache inference scheme, OmniForcing achieves state-of-the-art streaming generation at sim25 FPS on a single GPU, maintaining multi-modal synchronization and visual quality on par with the bidirectional teacher.Project Page: https://omniforcing.com{https://omniforcing.com}",
+    "authors": [
+      "Yaofeng Su",
+      "Yuming Li",
+      "Zeyue Xue",
+      "Jie Huang",
+      "Siming Fu",
+      "Haoran Li",
+      "Ying Li",
+      "Zezhong Qian",
+      "Haoyang Huang",
+      "Nan Duan"
+    ],
+    "likes": 19,
+    "published_date": "Mar 12",
+    "url": "https://huggingface.co/papers/2603.11647",
+    "date_collected": "2026-03-17T07:16:21.978681+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "OmniForcing: 실시간 공동 음향-시각 생성의 해방",
+      "abstract": "최근의 공동 음향-시각 확산 모델은 높은 생성 품질을 달성하지만 양방향 주의 의존성으로 인한 높은 지연으로 실시간 응용이 어렵습니다. 우리는 OmniForcing을 제안합니다. 이는 오프라인 이중 스트림 양방향 확산 모델을 고품질 스트리밍 자가회귀 생성기로 단조화하는 첫 번째 프레임워크입니다. 그러나 이러한 이중 스트림 아키텍처에 인과 증류를 단순히 적용하면 모달 간 극단적 시간적 불균형과 이로 인한 토큰 희소성으로 인해 심각한 훈련 불안정성을 유발합니다. 우리는 보상이 발생하는 정보 밀도 차이를 해결하기 위해 전염되지 않은 글로벌 접두어가 있는 비대칭 블록-인과 정렬을 도입합니다. 인과 이동 동안 극단적인 음향 토큰 희소성에 의한 그래디언트 폭발은 아이덴티티 RoPE 제약이 장착된 오디오 싱크 토큰 메커니즘을 통해 해결됩니다. 마지막으로, 합동 셀프-강제 증류 패러다임은 모델이 장기 롤아웃 동안 누적 교모달 오류를 자가 동적으로 교정할 수 있도록 합니다. 모달 독립 롤링 KV-캐시 추론 방식을 통해 강화된 OmniForcing은 단일 GPU에서 25 FPS에서 최첨단 스트리밍 생성을 달성하며, 양방향 교사와 동등한 다중 모달 동기화 및 시각 품질을 유지합니다."
+    },
+    "summary": "1. 최근 공동 음향-시각 모델은 높은 품질을 보이나 실시간 응용에는 높은 지연 문제가 있었다.\n2. OmniForcing은 고품질 스트리밍 생성기로 이중 스트림 모델을 단조화하며, 정보 밀도 차이와 토큰 희소성 문제를 해결하기 위한 새로운 방식을 제안한다.\n3. 모델은 셀프-강제 증류 방식을 통해 오디오-시각 동기화와 시각 품질을 유지하면서 최첨단 스트리밍 생성을 실시간으로 수행한다.",
+    "categories": [
+      "Multimodal",
+      "Audio"
+    ]
+  },
+  {
+    "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
+    "abstract": "Vision-to-code tasks require models to reconstruct structured visual inputs, such as charts, tables, and SVGs, into executable or structured representations with high visual fidelity. While recent Large Vision Language Models (LVLMs) achieve strong results via supervised fine-tuning, reinforcement learning remains challenging due to misaligned reward signals. Existing rewards either rely on textual rules or coarse visual embedding similarity, both of which fail to capture fine-grained visual discrepancies and are vulnerable to reward hacking. We propose Visual Equivalence Reward Model (Visual-ERM), a multimodal generative reward model that provides fine-grained, interpretable, and task-agnostic feedback to evaluate vision-to-code quality directly in the rendered visual space. Integrated into RL, Visual-ERM improves Qwen3-VL-8B-Instruct by +8.4 on chart-to-code and yields consistent gains on table and SVG parsing (+2.7, +4.1 on average), and further strengthens test-time scaling via reflection and revision. We also introduce VisualCritic-RewardBench (VC-RewardBench), a benchmark for judging fine-grained image-to-image discrepancies on structured visual data, where Visual-ERM at 8B decisively outperforms Qwen3-VL-235B-Instruct and approaches leading closed-source models. Our results suggest that fine-grained visual reward supervision is both necessary and sufficient for vision-to-code RL, regardless of task specificity.",
+    "authors": [
+      "Ziyu Liu",
+      "Shengyuan Ding",
+      "Xinyu Fang",
+      "Xuanlang Dai",
+      "Penghui Yang",
+      "Jianze Liang",
+      "Jiaqi Wang",
+      "Kai Chen",
+      "Dahua Lin",
+      "Yuhang Zang"
+    ],
+    "likes": 16,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.13224",
+    "date_collected": "2026-03-17T07:16:21.980001+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "시각적 동등성을 위한 보상 모델링(Visual-ERM)",
+      "abstract": "비전-to-코드 작업은 차트, 테이블 및 SVG와 같은 구조화된 시각적 입력물을 실내 또는 구조화된 표현으로 재구성해야 하며 시각적 충실도가 높아야 합니다. 최근 대형 비전 언어 모델(LVLMs)은 감독된 세밀 조정을 통해 강력한 결과를 달성하지만, 리인포스먼트 러닝은 보상 신호의 불일치로 인해 여전히 어려움을 겪고 있습니다. 기존 보상은 텍스트 규칙이나 요약된 시각적 임베딩 유사성에 의존하는데, 두 가지 모두 미세한 시각적 불일치를 포착하지 못하며 보상 해킹에 취약합니다. 우리는 시각적 동등성 보상 모델(Visual-ERM)을 제안합니다. 이는 세부적이고 해석 가능하며 과제 중립적인 피드백을 제공하는 다중 모달 생성적 보상 모델로 시각적 공간에서 직접 시각-to-코드 품질을 평가합니다. RL에 통합된 Visual-ERM은 차트-to-코드에서 Qwen3-VL-8B-Instruct보다 +8.4를 향상시키고 표 및 SVG 파싱에서 일관된 이득(+2.7, 평균 +4.1)을 보여주며 반사(reflection) 및 수정(revision)을 통해 테스트 시 스케일링을 더욱 강화합니다. 또한 구조화된 시각적 데이터의 세부적인 이미지-to-이미지 불일치를 심사하기 위한 벤치마크인 VisualCritic-RewardBench(VC-RewardBench)를 소개합니다. 여기서 8B의 Visual-ERM은 Qwen3-VL-235B-Instruct보다 우세하며 주요 폐쇄형 모델에 접근합니다. 우리의 결과는 과업 특성과 상관없이 시각-to-코드 RL을 위해 미세 시각적 보상 감독이 필요하고 충분하다는 것을 시사합니다."
+    },
+    "summary": "1. 시각-to-코드 작업에서 미세한 시각적 보상 감독은 과제 중립적이며 품질 평가에 유리하며, 새로운 Visual-ERM은 이를 실현하고 RL에서 강력한 결과를 보임.\n2. Visual-ERM은 차트-to-코드에서 큰 성능 향상을 이끌어내며 표와 SVG 파싱에서도 일관된 이익을 제공하며, 테스트 시 스케일링을 강화함.\n3. VC-RewardBench를 통해 Visual-ERM은 세부적인 이미지-to-이미지 불일치의 평가를 위한 벤치마크로 활용되며, 기존 모델들을 능가하는 결과를 보임.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Multimodal OCR: Parse Anything from Documents",
+    "abstract": "We present Multimodal OCR (MOCR), a document parsing paradigm that jointly parses text and graphics into unified textual representations. Unlike conventional OCR systems that focus on text recognition and leave graphical regions as cropped pixels, our method, termed dots.mocr, treats visual elements such as charts, diagrams, tables, and icons as first-class parsing targets, enabling systems to parse documents while preserving semantic relationships across elements. It offers several advantages: (1) it reconstructs both text and graphics as structured outputs, enabling more faithful document reconstruction; (2) it supports end-to-end training over heterogeneous document elements, allowing models to exploit semantic relations between textual and visual components; and (3) it converts previously discarded graphics into reusable code-level supervision, unlocking multimodal supervision embedded in existing documents. To make this paradigm practical at scale, we build a comprehensive data engine from PDFs, rendered webpages, and native SVG assets, and train a compact 3B-parameter model through staged pretraining and supervised fine-tuning. We evaluate dots.mocr from two perspectives: document parsing and structured graphics parsing. On document parsing benchmarks, it ranks second only to Gemini 3 Pro on our OCR Arena Elo leaderboard, surpasses existing open-source document parsing systems, and sets a new state of the art of 83.9 on olmOCR Bench. On structured graphics parsing, dots.mocr achieves higher reconstruction quality than Gemini 3 Pro across image-to-SVG benchmarks, demonstrating strong performance on charts, UI layouts, scientific figures, and chemical diagrams. These results show a scalable path toward building large-scale image-to-code corpora for multimodal pretraining. Code and models are publicly available at https://github.com/rednote-hilab/dots.mocr.",
+    "authors": [
+      "Handong Zheng",
+      "Yumeng Li",
+      "Kaile Zhang",
+      "Liang Xin",
+      "Guangwei Zhao",
+      "Hao Liu",
+      "Jiayu Chen",
+      "Jie Lou",
+      "Jiyu Qiu",
+      "Qi Fu",
+      "Rui Yang",
+      "Shuo Jiang",
+      "Weijian Luo",
+      "Weijie Su",
+      "Weijun Zhang",
+      "Xingyu Zhu",
+      "Yabin Li",
+      "Yiwei ma",
+      "Yu Chen",
+      "Zhaohui Yu",
+      "Guang Yang",
+      "Colin Zhang"
+    ],
+    "likes": 16,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.13032",
+    "date_collected": "2026-03-17T07:16:21.981823+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "다중모달 OCR: 문서로부터의 해석",
+      "abstract": "본 연구에서는 다중모달 OCR(MOCR)를 제안하는데, 이는 텍스트와 그래픽을 통합된 텍스트 표현으로 동시에 해석하는 문서 해석 패러다임입니다. dots.mocr이라고 불리는 우리의 방법은 텍스트 인식에 초점을 맞추고 그래픽 영역을 잘라낸 픽셀로 남기는 기존의 OCR 시스템과는 달리, 차트, 다이어그램, 표 및 아이콘과 같은 시각적 요소를 일등 시행 파싱 대상으로 취급하여 시스템이 문서를 파싱하면서 요소 간 의미적 연결을 보존할 수 있습니다. 이는 텍스트와 그래픽을 구조화된 출력물로 재구성하여 더욱 충실한 문서 재구성을 가능하게 하며, 텍스트와 시각적 구성 요소 사이의 의미적 관계를 활용할 수 있도록 이종 문서 요소에 대해 엔드 투 엔드 훈련을 지원하며, 이전에 폐기되었던 그래픽을 재사용 가능한 코드 수준의 감독으로 변환하여 기존 문서에 포함된 다중모달 감독을 활성화합니다. 규모에 맞게 이 패러다임을 실용적으로 만들기 위해, 우리는 PDF, 렌더링된 웹페이지 및 네이티브 SVG 에셋으로부터 상세한 데이터 엔진을 구축하고 단계별 사전 훈련과 지도 미세조정을 통해 30억 개 파라미터 모델을 훈련시켰습니다. 우리는 dots.mocr을 문서 파싱과 구조화된 그래픽 파싱 두 가지 관점에서 평가했습니다. 문서 파싱 벤치마크에서, OCR 아레나 엘로 리더보드에서 Gemini 3 Pro에 이어 두 번째로 랭크되었으며, 기존 오픈 소스 문서 파싱 시스템을 능가하며, olmOCR 벤치마크에서 83.9의 새로운 최고 성적을 달성했습니다. 구조화된 그래픽 파싱에서, dots.mocr은 이미지에서 SVG로의 벤치마크에서 Gemini 3 Pro보다 높은 재구성 품질을 달성하며, 차트, UI 레이아웃, 과학적 도표 및 화학 다이어그램에서 강력한 성능을 보여주었습니다. 이러한 결과는 다중모달 사전 훈련을 위한 대규모 이미지-to-코드 코퍼스를 구축하는 확장 가능한 길을 보여줍니다. 코드 및 모델은 https://github.com/rednote-hilab/dots.mocr 에서 공개되어 있습니다."
+    },
+    "summary": "1. dots.mocr은 텍스트와 시각적 요소를 구조화된 출력물로 재구성하여 문서 재구성을 미세하게 하고, 텍스트 및 시각적 구성 요소 간의 의미적 관계를 활용하여 이종 문서 요소에 대한 엔드 투 엔드 훈련을 지원합니다.\n2. PDF, 렌더링된 웹페이지 및 네이티브 SVG 에셋을 기반으로 30억 개 파라미터 모델을 훈련시키는 dots.mocr은 문서 파싱과 구조화된 그래픽 파싱에서 높은 품질의 재구성을 성취했습니다.\n3. dots.mocr은 이미지-to-SVG 벤치마크에서 강력한 성능을 보여주며, 다중모달 사전 훈련을 위한 대규모 이미지-to-코드 코퍼스 구축의 척도로 제시되었습니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MM-CondChain: A Programmatically Verified Benchmark for Visually Grounded Deep Compositional Reasoning",
+    "abstract": "Multimodal Large Language Models (MLLMs) are increasingly used to carry out visual workflows such as navigating GUIs, where the next step depends on verified visual compositional conditions (e.g., \"if a permission dialog appears and the color of the interface is green, click Allow\") and the process may branch or terminate early. Yet this capability remains under-evaluated: existing benchmarks focus on shallow-compositions or independent-constraints rather than deeply chained compositional conditionals. In this paper, we introduce MM-CondChain, a benchmark for visually grounded deep compositional reasoning. Each benchmark instance is organized as a multi-layer reasoning chain, where every layer contains a non-trivial compositional condition grounded in visual evidence and built from multiple objects, attributes, or relations. To answer correctly, an MLLM must perceive the image in detail, reason over multiple visual elements at each step, and follow the resulting execution path to the final outcome. To scalably construct such workflow-style data, we propose an agentic synthesis pipeline: a Planner orchestrates layer-by-layer generation of compositional conditions, while a Verifiable Programmatic Intermediate Representation (VPIR) ensures each layer's condition is mechanically verifiable. A Composer then assembles these verified layers into complete instructions. Using this pipeline, we construct benchmarks across three visual domains: natural images, data charts, and GUI trajectories. Experiments on a range of MLLMs show that even the strongest model attains only 53.33 Path F1, with sharp drops on hard negatives and as depth or predicate complexity grows, confirming that deep compositional reasoning remains a fundamental challenge.",
+    "authors": [
+      "Haozhan Shen",
+      "Shilin Yan",
+      "Hongwei Xue",
+      "Shuaiqi Lu",
+      "Xiaojun Tang",
+      "Guannan Zhang",
+      "Tiancheng Zhao",
+      "Jianwei Yin"
+    ],
+    "likes": 16,
+    "published_date": "Mar 12",
+    "url": "https://huggingface.co/papers/2603.12266",
+    "date_collected": "2026-03-17T07:16:21.983093+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "MM-CondChain: 시각적으로 기반을 둔 심층합성 추론을 위한 프로그램적으로 검증된 벤치마크",
+      "abstract": "다중모달 대형 언어 모델(MLLMs)은 점점 더 시각적 워크플로우를 수행하는 데 사용되고 있습니다. 다음 단계가 확인된 시각적 합성 조건에 의존하는 GUI 탐색과 같은 작업은 가지치기가 일찍 시작되거나 가지가 치거나 할 수 있습니다. 그러나 이 능력은 여전히 충분히 평가받지 않았습니다. 기존의 벤치마크는 깊게 연결된 합성 조건문이나 독립적인 제약조건보다 얕은 합성에 초점을 맞추고 있습니다. 본 논문에서는 시각적으로 기반을 둔 심층합성 추론을 위한 MM-CondChain 벤치마크를 소개합니다. 각 벤치마크 인스턴스는 다중 계층 추론 체인으로 구성되며, 각 계층에는 다중 객체, 특성 또는 관계에서 구축된 시각 증거에 근거한 중요한 합성 조건이 포함되어 있습니다. 정답을 얻기 위해 MLLM은 상세히 이미지를 인지하고, 각 단계에서 여러 시각적 요소를 고려하며, 결과적으로 실행 경로를 최종 결과까지 따라야 합니다. 이러한 워크플로우 형식의 데이터를 확장 가능하게 구축하기 위해, 우리는 에이전트 촉매 합성 파이프라인을 제안합니다. 계획자는 합성 조건의 계층별 생성을 조율하며, VPIR은 각 계층의 조건이 기계적으로 검증됨을 보장합니다. 그런 다음 작곡가는 이러한 확인된 계층을 완전한 명령어로 조합합니다. 이 파이프라인을 사용하여 자연 이미지, 데이터 차트 및 GUI 궤적 세 가지 시각 도메인에서 벤치마크를 구축합니다. MLLMs 다양한 실험 결과는 가장 강력한 모델조차도 53.33의 패스 F1만 달성하며, 어려운 부정적 요인이나 심층이나 술부 복잡성이 증가함에 따라 급격히 하락함을 확인하여 심층합성 추론이 여전히 근본적인 도전임을 확인합니다."
+    },
+    "summary": "1. MM-CondChain은 시각적으로 기반을 둔 심층합성 추론을 위한 벤치마크로, 각 인스턴스는 여러 계층의 조건을 포함한 다중 계층 추론 체인으로 구성되어 있다.\n2. 연구에 따르면, MLLM은 이미지를 상세히 인지하고 여러 시각적 요소를 고려해야 하며, 실행 경로를 따라야만 최종 결과를 예측할 수 있다.\n3. 실험 결과는 심층합성 추론이 여전히 기본적인 도전으로 남아 있음을 보여준다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration",
+    "abstract": "Large-scale video generative models are trained on vast and diverse visual data, enabling them to internalize rich structural, semantic, and dynamic priors of the visual world. While these models have demonstrated impressive generative capability, their potential as general-purpose visual learners remains largely untapped. In this work, we introduce V-Bridge, a framework that bridges this latent capacity to versatile few-shot image restoration tasks. We reinterpret image restoration not as a static regression problem, but as a progressive generative process, and leverage video models to simulate the gradual refinement from degraded inputs to high-fidelity outputs. Surprisingly, with only 1,000 multi-task training samples (less than 2% of existing restoration methods), pretrained video models can be induced to perform competitive image restoration, achieving multiple tasks with a single model, rivaling specialized architectures designed explicitly for this purpose. Our findings reveal that video generative models implicitly learn powerful and transferable restoration priors that can be activated with only extremely limited data, challenging the traditional boundary between generative modeling and low-level vision, and opening a new design paradigm for foundation models in visual tasks.",
+    "authors": [
+      "Shenghe Zheng",
+      "Junpeng Jiang",
+      "Wenbo Li"
+    ],
+    "likes": 12,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.13089",
+    "date_collected": "2026-03-17T07:16:21.984125+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "V-Bridge: 비디오 생성 선행 지식을 활용한 다목적 소량 샷 이미지 복원의 연결",
+      "abstract": "대규모 비디오 생성 모델은 다양한 시각적 데이터로 훈련되어 시각 세계의 풍부한 구조적, 의미적, 동적 선행 지식을 내재화할 수 있게 합니다. 이러한 모델들은 놀라운 생성 능력을 보여주었지만 그들의 잠재력을 일반적인 시각 학습자로 활용하는 노력은 아직 크게 부족합니다. 본 논문에서는 V-Bridge를 제안하여 이러한 잠재 용량을 다목적 소량 샷 이미지 복원 작업에 활용합니다. 이미지 복원을 정적 회귀 문제가 아닌 점진적 생성 프로세스로 재해석하고, 비디오 모델을 활용하여 손상된 입력부터 고품질 출력까지의 점진적 세밀화를 시뮬레이션합니다. 놀랍게도 1,000개의 다중 작업 훈련 샘플 (기존 복원 방법의 2% 미만)만으로 사전 훈련된 비디오 모델을 활용하여 경쟁력 있는 이미지 복원을 수행할 수 있으며, 하나의 모델로 여러 작업을 수행하며 이를 명시적으로 지정된 전문 아키텍처와 견줄 정도로 성과를 달성합니다. 결과는 비디오 생성 모델이 강력하고 이전이 가능한 복원 선행 지식을 암묵적으로 학습한다는 점을 보여주며, 이를 매우 제한된 데이터로 활성화할 수 있다는 점에서 생성 모델링과 저수준 비전 간의 전통적 경계에 도전하며 시각 작업의 기초 모델에 대한 새로운 설계 패러다임을 엽니다."
+    },
+    "summary": "1. 비디오 생성 모델의 잠재적 용량을 활용한 다목적 소량 샷 이미지 복원을 위한 V-Bridge 프레임워크 소개\n2. 이미지 복원을 점진적 생성 과정으로 취급하고 비디오 모델을 활용하여 고품질 출력물을 얻을 수 있는 점을 실험적으로 입증\n3. 사전 훈련된 비디오 모델이 매우 제한된 데이터를 사용하여 경쟁력 있는 이미지 복원 수행하며, 생성 모델링과 저수준 비전의 경계를 도전하는 새로운 시각 작업 모델 설계 패러다임 제시",
+    "categories": [
+      "Generative Modeling",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously",
+    "abstract": "Online Video Large Language Models (VideoLLMs) play a critical role in supporting responsive, real-time interaction. Existing methods focus on streaming perception, lacking a synchronized logical reasoning stream. However, directly applying test-time scaling methods incurs unacceptable response latency. To address this trade-off, we propose Video Streaming Thinking (VST), a novel paradigm for streaming video understanding. It supports a thinking while watching mechanism, which activates reasoning over incoming video clips during streaming. This design improves timely comprehension and coherent cognition while preserving real-time responsiveness by amortizing LLM reasoning latency over video playback. Furthermore, we introduce a comprehensive post-training pipeline that integrates VST-SFT, which structurally adapts the offline VideoLLM to causal streaming reasoning, and VST-RL, which provides end-to-end improvement through self-exploration in a multi-turn video interaction environment. Additionally, we devise an automated training-data synthesis pipeline that uses video knowledge graphs to generate high-quality streaming QA pairs, with an entity-relation grounded streaming Chain-of-Thought to enforce multi-evidence reasoning and sustained attention to the video stream. Extensive evaluations show that VST-7B performs strongly on online benchmarks, e.g. 79.5% on StreamingBench and 59.3% on OVO-Bench. Meanwhile, VST remains competitive on offline long-form or reasoning benchmarks. Compared with Video-R1, VST responds 15.7 times faster and achieves +5.4% improvement on VideoHolmes, demonstrating higher efficiency and strong generalization across diverse video understanding tasks. Code, data, and models will be released at https://github.com/1ranGuan/VST.",
+    "authors": [
+      "Yiran Guan",
+      "Liang Yin",
+      "Dingkang Liang",
+      "Jianzhong Ju",
+      "Zhenbo Luo",
+      "Jian Luan",
+      "Yuliang Liu",
+      "Xiang Bai"
+    ],
+    "likes": 12,
+    "published_date": "Mar 12",
+    "url": "https://huggingface.co/papers/2603.12262",
+    "date_collected": "2026-03-17T07:16:21.985382+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "비디오 스트리밍 사고: VideoLLMs가 동시에 보고 사고할 수 있습니다",
+      "abstract": "온라인 비디오 대형 언어 모델(VideoLLMs)은 빠른 실시간 상호작용을 지원하는 데 중요한 역할을 합니다. 기존 방법은 스트리밍 인식에 중점을 두었지만, 동기화된 논리적 추론 스트림이 부족합니다. 그러나 테스트 시 스케일링 방법을 직접 적용하면 받아들일 수 없는 반응 대기 시간이 발생합니다. 이런 트레이드오프를 해결하기 위해 우리는 스트리밍 비디오 이해를 위한 새로운 패러다임인 Video Streaming Thinking (VST)을 제안합니다. VST는 시청 중에 추론을 활성화하는 \"보면서 사고\" 메커니즘을 지원하며, 비디오 클립이 스트리밍되는 동안 들어오는 비디오 클립에 대한 추론을 활성화합니다. 이 설계는 LLM 추론 지연 시간을 비디오 재생 시간에 걸쳐 분담함으로써 적시에 이해와 일관된 인지를 개선하고, 실시간 대응성을 유지합니다. 더불어, 우리는 VST-SFT를 통합하는 포스트 트레이닝 파이프라인을 소개합니다. 이것은 오프라인 VideoLLM을 인과적인 스트리밍 추론에 구조적으로 적응시키는 VST-RL과 함께 다중 턴 비디오 상호작용 환경에서 자체 탐색을 통해 최종적으로 개선을 제공합니다. 또한, 비디오 지식 그래프를 활용하여 고품질 스트리밍 QA 쌍을 생성하는 자동 트레이닝 데이터 합성 파이프라인을 고안했습니다. 이때 엔티티-관계에 근거한 스트리밍 사고의 체인을 강제하여 다중 증거 추론과 비디오 스트림에 지속적인 주의를 유도합니다. 광범위한 평가 결과, VST-7B는 온라인 벤치마크에서 뛰어난 성능을 보여주며, StreamingBench에서 79.5%, OVO-Bench에서 59.3%를 달성했습니다. 한편, VST는 오프라인 장문 또는 추론 벤치마크에서 경쟁력을 유지합니다. Video-R1과 비교해 VST는 VideoHolmes에서 15.7배 빠르게 응답하고, 다양한 비디오 이해 작업에 걸쳐 더 높은 효율성과 강력한 일반화 능력을 보여주면서, VideoHolmes에서 +5.4%의 개선을 달성했습니다. 코드, 데이터, 및 모델은 https://github.com/1ranGuan/VST 에서 공개될 예정입니다."
+    },
+    "summary": "1. VST는 스트리밍 비디오 이해를 위한 새로운 패러다임으로, 실시간 반응성을 유지하면서 시청 중 추론을 활성화하여 빠른 이해와 일관된 인지를 향상시킵니다.\n2. 오프라인 훈련된 VideoLLM을 스트리밍 추론에 적응시키는 VST-SFT와 자체 탐색을 통해 종단 간 개선을 제공하는 VST-RL을 소개합니다.\n3. VST는 온라인 벤치마크에서 뛰어난 성능을 보이며, 다양한 비디오 이해 작업에 강력한 일반화 능력을 보입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  }
+]

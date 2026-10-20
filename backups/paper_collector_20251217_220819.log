@@ -1,0 +1,115 @@
+=== Paper Collection Started at Tue Dec 16 22:08:17 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W51
+URL: https://huggingface.co/papers/week/2025-W51
+Found 10 papers in weekly view
+Fetching likes for: ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding
+Fetching likes for: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Fetching likes for: Towards Scalable Pre-training of Visual Tokenizers for Generation
+Fetching likes for: Memory in the Age of AI Agents
+Fetching likes for: QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management
+Fetching likes for: LongVie 2: Multimodal Controllable Ultra-Long Video World Model
+Fetching likes for: Finch: Benchmarking Finance & Accounting across Spreadsheet-Centric Enterprise Workflows
+Fetching likes for: DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry
+Fetching likes for: NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents
+Fetching likes for: SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder
+Selected top 10 papers by likes:
+1. ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding (73 likes)
+2. EgoX: Egocentric Video Generation from a Single Exocentric Video (73 likes)
+3. Towards Scalable Pre-training of Visual Tokenizers for Generation (66 likes)
+4. Memory in the Age of AI Agents (60 likes)
+5. QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management (54 likes)
+6. LongVie 2: Multimodal Controllable Ultra-Long Video World Model (52 likes)
+7. Finch: Benchmarking Finance & Accounting across Spreadsheet-Centric Enterprise Workflows (46 likes)
+8. DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry (40 likes)
+9. NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents (37 likes)
+10. SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder (34 likes)
+Found abstract: Autoregressive models (ARMs) are hindered by slow sequential inference. While masked diffusion model...
+Processed paper: ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding
+Found abstract: Egocentric perception enables humans to experience and understand the world directly from their own ...
+Processed paper: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Found abstract: The quality of the latent space in visual tokenizers (e.g., VAEs) is crucial for modern generative m...
+Processed paper: Towards Scalable Pre-training of Visual Tokenizers for Generation
+Found abstract: Memory has emerged, and will continue to remain, a core capability of foundation model-based agents....
+Processed paper: Memory in the Age of AI Agents
+Found abstract: We introduce QwenLong-L1.5, a model that achieves superior long-context reasoning capabilities throu...
+Processed paper: QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management
+Found abstract: Building video world models upon pretrained video generation systems represents an important yet cha...
+Processed paper: LongVie 2: Multimodal Controllable Ultra-Long Video World Model
+Found abstract: We introduce a finance & accounting benchmark (Finch) for evaluating AI agents on real-world, enterp...
+Processed paper: Finch: Benchmarking Finance & Accounting across Spreadsheet-Centric Enterprise Workflows
+Found abstract: Reliable interpretation of multimodal data in dentistry is essential for automated oral healthcare, ...
+Processed paper: DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry
+Found abstract: Recent advances in coding agents suggest rapid progress toward autonomous software development, yet ...
+Processed paper: NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents
+Found abstract: Visual generation grounded in Visual Foundation Model (VFM) representations offers a highly promisin...
+Processed paper: SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  37
+Update date_collected: 2025-12-17T07:08:25.745765+09:00  ->  2025-12-16T07:08:34.239835+09:00
+
+Processing paper 3/10
+Title: Towards Scalable Pre-training of Visual Tokenizers for Generation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Memory in the Age of AI Agents
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: LongVie 2: Multimodal Controllable Ultra-Long Video World Model
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Finch: Benchmarking Finance & Accounting across Spreadsheet-Centric Enterprise Workflows
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  37
+Update date_collected: 2025-12-17T07:08:25.754570+09:00  ->  2025-12-16T07:08:34.238488+09:00
+
+Processing paper 9/10
+Title: NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  32
+Update date_collected: 2025-12-17T07:08:25.757887+09:00  ->  2025-12-16T07:08:34.241362+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W51.json...
+
+Updating Notion database...
+Creating new paper: ReFusion: 병렬 자기회귀 디코딩을 통한 확산 대형 언어 모델
+Updating paper: 단일 외부 시점 동영상으로부터 자아 중심 동영상 생성 (EgoX) (likes: 37 -> 73)
+Creating new paper: 시각 토크나이저 생성을 위한 확장 가능한 사전 학습에 가까이
+Creating new paper: AI 에이전트 시대의 기억
+Creating new paper: QwenLong-L1.5: 긴 맥락 추론과 메모리 관리를 위한 후속 훈련 레시피
+Creating new paper: LongVie 2: 멀티모달 제어 가능한 초장기 비디오 월드 모델
+Creating new paper: 회계 및 재무 분야의 스프레드시트 중심 기업 업무에서의 AI 에이전트 평가를 위한 벤치마킹 (Finch)
+Updating paper: 치과를 위한 멀티모달 복합 추론을 장려하는 DentalGPT (likes: 37 -> 40)
+Creating new paper: NL2Repo-Bench: 장기 미래 저장소 생성 능력 평가를 향하여 코딩 에이전트의 길게 뻔한 업무
+Updating paper: VAE 없이 크기를 늘린 SVG-T2I: 텍스트-이미지 잠재 확산 모델 (likes: 32 -> 34)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Dec 16 22:10:08 UTC 2025 ===
+

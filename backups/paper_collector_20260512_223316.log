@@ -1,0 +1,111 @@
+=== Paper Collection Started at Mon May 11 22:29:29 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W20
+URL: https://huggingface.co/papers/week/2026-W20
+Found 10 papers in weekly view
+Fetching likes for: Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers
+Fetching likes for: MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation
+Fetching likes for: Flow-OPD: On-Policy Distillation for Flow Matching Models
+Fetching likes for: HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents
+Fetching likes for: Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex
+Fetching likes for: LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling
+Fetching likes for: HumanNet: Scaling Human-centric Video Learning to One Million Hours
+Fetching likes for: Anisotropic Modality Align
+Fetching likes for: Beyond Retrieval: A Multitask Benchmark and Model for Code Search
+Fetching likes for: TextLDM: Language Modeling with Continuous Latent Diffusion
+Selected top 10 papers by likes:
+1. Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers (101 likes)
+2. MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation (80 likes)
+3. Flow-OPD: On-Policy Distillation for Flow Matching Models (73 likes)
+4. HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents (57 likes)
+5. Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex (57 likes)
+6. LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling (53 likes)
+7. HumanNet: Scaling Human-centric Video Learning to One Million Hours (40 likes)
+8. Anisotropic Modality Align (22 likes)
+9. Beyond Retrieval: A Multitask Benchmark and Model for Code Search (22 likes)
+10. TextLDM: Language Modeling with Continuous Latent Diffusion (19 likes)
+Found abstract: Scaling Diffusion Transformers (DiTs) to hundreds of layers introduces a structural vulnerability: n...
+Processed paper: Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers
+Found abstract: With the rise of online dance-video platforms and rapid advances in AI-generated content (AIGC), mus...
+Processed paper: MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation
+Found abstract: Existing Flow Matching (FM) text-to-image models suffer from two critical bottlenecks under multi-ta...
+Processed paper: Flow-OPD: On-Policy Distillation for Flow Matching Models
+Found abstract: Existing multimodal search agents process target entities sequentially, issuing one tool call per en...
+Processed paper: HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) has become a standard approach for large langu...
+Processed paper: Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex
+Found abstract: Test-time scaling (TTS) has become an effective approach for improving large language model performa...
+Processed paper: LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling
+Found abstract: Progress in embodied intelligence increasingly depends on scalable data infrastructure. While vision...
+Processed paper: HumanNet: Scaling Human-centric Video Learning to One Million Hours
+Found abstract: Training multimodal large language models has long been limited by the scarcity of high-quality pair...
+Processed paper: Anisotropic Modality Align
+Found abstract: Code search has usually been evaluated as first-stage retrieval, even though production systems rely...
+Processed paper: Beyond Retrieval: A Multitask Benchmark and Model for Code Search
+Found abstract: Diffusion Transformers (DiT) trained with flow matching in a VAE latent space have unified visual ge...
+Processed paper: TextLDM: Language Modeling with Continuous Latent Diffusion
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: MACE-Dance: Motion-Appearance Cascaded Experts for Music-Driven Dance Video Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Flow-OPD: On-Policy Distillation for Flow Matching Models
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  1
+Update date_collected: 2026-05-12T07:29:40.031011+09:00  ->  2026-05-11T10:42:59.778465+09:00
+
+Processing paper 6/10
+Title: LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: HumanNet: Scaling Human-centric Video Learning to One Million Hours
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Anisotropic Modality Align
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Beyond Retrieval: A Multitask Benchmark and Model for Code Search
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: TextLDM: Language Modeling with Continuous Latent Diffusion
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W20.json...
+
+Updating Notion database...
+Creating new paper: 평균 모드 스크리밍: 1000층 확산 트랜스포머에 대한 평균-분산 분리 잔차
+Creating new paper: MACE-Dance: Motion-Appearance Cascaded Experts를 활용한 음악 기반 댄스 비디오 생성
+Creating new paper: Flow-OPD: On-Policy Distillation을 위한 플로우 매칭 모델
+Creating new paper: 하이퍼아이즈: 병렬 다중 모달 검색 에이전트를 위한 기능 향상형 효율 인식 강화 학습
+Updating paper: 목록형 정책 최적화: LLM 응답 단순체내에서의 그룹 기반 RLVR 타겟 투영 (likes: 1 -> 57)
+Creating new paper: LLMs 개선을 위한 LLMs: 테스트 시간 확장에 대한 에이전틱 디스커버리
+Creating new paper: HumanNet: 인간중심 비디오 학습을 100만 시간으로 확장하기
+Creating new paper: 이방향성 모달리티 일치
+Creating new paper: 검색을 넘어: 코드 검색을 위한 다중 작업 벤치마크 및 모델
+Creating new paper: TextLDM: 연속 잠재 확산을 이용한 언어 모델링
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May 11 22:31:45 UTC 2026 ===
+

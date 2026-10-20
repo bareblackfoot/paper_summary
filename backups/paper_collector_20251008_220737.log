@@ -1,0 +1,143 @@
+=== Paper Collection Started at Tue Oct  7 22:07:42 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W41
+URL: https://huggingface.co/papers/week/2025-W41
+Found 10 papers in weekly view
+Fetching likes for: Apriel-1.5-15b-Thinker
+Fetching likes for: Paper2Video: Automatic Video Generation from Scientific Papers
+Fetching likes for: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Fetching likes for: Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation
+Fetching likes for: Video-LMM Post-Training: A Deep Dive into Video Reasoning with Large
+  Multimodal Models
+Fetching likes for: VChain: Chain-of-Visual-Thought for Reasoning in Video Generation
+Fetching likes for: MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual
+  Information
+Fetching likes for: Imperceptible Jailbreaking against Large Language Models
+Fetching likes for: CoDA: Agentic Systems for Collaborative Data Visualization
+Fetching likes for: Hybrid Architectures for Language Models: Systematic Analysis and Design
+  Insights
+Selected top 10 papers by likes:
+1. Apriel-1.5-15b-Thinker (89 likes)
+2. Paper2Video: Automatic Video Generation from Scientific Papers (48 likes)
+3. Large Reasoning Models Learn Better Alignment from Flawed Thinking (43 likes)
+4. Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation (37 likes)
+5. Video-LMM Post-Training: A Deep Dive into Video Reasoning with Large
+  Multimodal Models (33 likes)
+6. VChain: Chain-of-Visual-Thought for Reasoning in Video Generation (30 likes)
+7. MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual
+  Information (27 likes)
+8. Imperceptible Jailbreaking against Large Language Models (25 likes)
+9. CoDA: Agentic Systems for Collaborative Data Visualization (23 likes)
+10. Hybrid Architectures for Language Models: Systematic Analysis and Design
+  Insights (22 likes)
+Found abstract: We present Apriel-1.5-15B-Thinker, a 15-billion parameter open-weights
+multimodal reasoning model th...
+Processed paper: Apriel-1.5-15b-Thinker
+Found abstract: Academic presentation videos have become an essential medium for research
+communication, yet produci...
+Processed paper: Paper2Video: Automatic Video Generation from Scientific Papers
+Found abstract: Large reasoning models (LRMs) "think" by generating structured
+chain-of-thought (CoT) before produci...
+Processed paper: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Found abstract: Visual tokens consume substantial computational resources in multi-modal
+large models (MLLMs), signi...
+Processed paper: Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation
+Found abstract: Video understanding represents the most challenging frontier in computer
+vision, requiring models to...
+Processed paper: Video-LMM Post-Training: A Deep Dive into Video Reasoning with Large
+  Multimodal Models
+Found abstract: Recent video generation models can produce smooth and visually appealing
+clips, but they often strug...
+Processed paper: VChain: Chain-of-Visual-Thought for Reasoning in Video Generation
+Found abstract: Tree search has become as a representative framework for test-time reasoning
+with large language mod...
+Processed paper: MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual
+  Information
+Found abstract: Jailbreaking attacks on the vision modality typically rely on imperceptible
+adversarial perturbation...
+Processed paper: Imperceptible Jailbreaking against Large Language Models
+Found abstract: Deep research has revolutionized data analysis, yet data scientists still
+devote substantial time to...
+Processed paper: CoDA: Agentic Systems for Collaborative Data Visualization
+Found abstract: Recent progress in large language models demonstrates that hybrid
+architectures--combining self-atte...
+Processed paper: Hybrid Architectures for Language Models: Systematic Analysis and Design
+  Insights
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Apriel-1.5-15b-Thinker
+Paper already exists, checking if translation is complete...
+Update likes: 89  ->  76
+Update date_collected: 2025-10-08T07:07:51.501982+09:00  ->  2025-10-07T07:07:31.238940+09:00
+
+Processing paper 2/10
+Title: Paper2Video: Automatic Video Generation from Scientific Papers
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  33
+Update date_collected: 2025-10-08T07:07:51.504474+09:00  ->  2025-10-07T07:07:31.240347+09:00
+
+Processing paper 4/10
+Title: Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 37  ->  28
+Update date_collected: 2025-10-08T07:07:51.505914+09:00  ->  2025-10-07T07:07:31.241772+09:00
+
+Processing paper 5/10
+Title: Video-LMM Post-Training: A Deep Dive into Video Reasoning with Large
+  Multimodal Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: VChain: Chain-of-Visual-Thought for Reasoning in Video Generation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual
+  Information
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Imperceptible Jailbreaking against Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: CoDA: Agentic Systems for Collaborative Data Visualization
+Paper already exists, checking if translation is complete...
+Update likes: 23  ->  16
+Update date_collected: 2025-10-08T07:07:51.512567+09:00  ->  2025-10-07T07:07:31.244676+09:00
+
+Processing paper 10/10
+Title: Hybrid Architectures for Language Models: Systematic Analysis and Design
+  Insights
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W41.json...
+
+Updating Notion database...
+Updating paper: Apriel-1.5-15B-Thinker (likes: 76 -> 89)
+Creating new paper: Paper2Video: 학문 논문으로부터의 자동 비디오 생성
+Updating paper: 오류된 사고로부터 큰 추론 모델이 더 나은 정렬을 배우는 방법 (likes: 33 -> 43)
+Updating paper: 효율적인 멀티모달 대형 언어 모델: 점진적 일관성 증류를 통해 (likes: 28 -> 37)
+Creating new paper: 비디오-LMM 후 트레이닝: 대규모 다중 모달 모델을 활용한 비디오 추론의 심층 탐구
+Creating new paper: 비전생성에서 추론을 위한 비전사고 연쇄 (Chain-of-Visual-Thought)인 VChain
+Creating new paper: MITS: 포인트 단위 상호 정보를 통한 LLM을 위한 향상된 트리 검색 추론
+Creating new paper: 대형 언어 모델에 대한 감지하기 어려운 질병침입
+Updating paper: 협업 데이터 시각화를 위한 CoDA: 에이전트 시스템 (likes: 16 -> 23)
+Creating new paper: 언어 모델용 복합 구조: 체계적 분석과 설계 통찰
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Oct  7 22:10:09 UTC 2025 ===
+

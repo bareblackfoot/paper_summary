@@ -1,0 +1,325 @@
+[
+  {
+    "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+    "abstract": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold for dependable use. We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe. We release three new datasets spanning low-to-medium cost platforms, including MolmoAct2-BimanualYAM, 720 hours of teleoperated bimanual trajectories that constitute the largest open bimanual dataset to date, together with quality-filtered Franka (DROID) and SO100/101 subsets. We provide OpenFAST, an open-weight, open-data action tokenizer trained on millions of trajectories across five embodiments. We redesign the architecture to graft a flow-matching continuous-action expert onto a discrete-token VLM via per-layer KV-cache conditioning. Finally, we propose MolmoThink, an adaptive-depth reasoning variant that re-predicts depth tokens only for scene regions that change between timesteps, retaining geometric grounding at a fraction of prior latency. In the most extensive empirical study of any open VLA to date, spanning 7 simulation and real-world benchmarks, MolmoAct2 outperforms strong baselines including Pi-05, while MolmoER surpasses GPT-5 and Gemini Robotics ER-1.5 across 13 embodied-reasoning benchmarks. We release model weights, training code, and complete training data. Project page: https://allenai.org/blog/molmoact2",
+    "authors": [
+      "Haoquan Fang",
+      "Jiafei Duan",
+      "Donovan Clay",
+      "Sam Wang",
+      "Shuo Liu",
+      "Weikai Huang",
+      "Xiang Fan",
+      "Wei-Chuan Tsai",
+      "Shirui Chen",
+      "Yi Ru Wang",
+      "Shanli Xing",
+      "Jaemin Cho",
+      "Jae Sung Park",
+      "Ainaz Eftekhar",
+      "Peter Sushko",
+      "Karen Farley",
+      "Angad Wadhwa",
+      "Cole Harrison",
+      "Winson Han",
+      "Ying-Chun Lee",
+      "Eli VanderBilt",
+      "Rose Hendrix"
+    ],
+    "likes": 266,
+    "published_date": "May 4",
+    "url": "https://huggingface.co/papers/2605.02881",
+    "date_collected": "2026-05-10T07:21:29.593187+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "실제 선발을 위한 액션 추론 모델 MolmoAct2",
+      "abstract": "Vision-Language-Action (VLA) 모델은 로봇을 위한 단일 종합 제어기를 제공하는 것을 목표로 하지만, 오늘날의 시스템은 실제 선발에 중요한 요소들에서 부족하다. 선두 모델은 폐쇄적이며, 오픈-웨이트 대안은 비싼 하드웨어에 종속되어 있다. 추론 보강 정책은 기초를 위해 높은 대기시간을 요구하며, 세밀한 성공률은 신뢰할 수 있는 사용을 위한 임계값 아래에 남아 있다. 우리는 MolmoAct2를 제시하는데, 이는 실용적인 선발을 위해 구축된 완전히 오픈된 액션 추론 모델로, 다섯 가지 면에서 전신 모델을 발전시킨다. 우리는 MolmoER을 소개하는데, 이는 공간적 및 그림으로써의 추론에 특화된 VLM 백본으로, 전문화된 후에 숙련장에서 훈련되었다. 우리는 MolmoAct2-BimanualYAM을 포함한 세 개의 새로운 데이터셋을 발표한다. 이는 오늘날까지 최대의 오픈 바이매니ュ얼 데이터셋을 구성하는 720시간의 텔레오퍼레이티드 바이매니얼 궤적이자, 품질 필터링된 Franka(DROID) 및 SO100/101 서브셋을 함께 한다. 우리는 수백만 개의 궤적을 통해 훈련된 오픈 웨이트, 오픈 데이터 액션 토크나이저인 OpenFAST를 제공한다. 우리는 아키텍처를 재설계하여 흐름 일치 연속 액션 전문가를 과 으로 연결한 뒤, 층별 KV-케시 조건부를 통해 이산 토큰 VLM에 끼워 넣는다. 마지막으로, 우리는 타임스텝 간에 변하는 장면 영역에 대해서만 심층 추론 변형인 MolmoThink를 제안한다. 이는 이전 대기시간의 일부분만 사용하여 기하학적 기초를 유지하는 심층 추론 변수를 다시 예측한다. 오늘날까지 가장 체계적인 오픈 VLA에 대한 가장 포괄적인 경험적 연구에서, 7개의 시뮬레이션 및 실제 벤치마크를 포함하여, MolmoAct2는 Pi-05를 포함한 강력한 기준을 능가하는 반면, MolmoER은 13개의 그림으로써의 추론 벤치마크를 횡재하며 GPT-5 및 Gemini Robotics ER-1.5를 능가한다. 우리는 모델 가중치, 훈련 코드 및 완전한 훈련 데이터를 공개한다. 프로젝트 페이지: https://allenai.org/blog/molmoact2"
+    },
+    "summary": "1. MolmoAct2는 실용적인 선발을 위해 구축된 완전히 오픈된 액션 추론 모델이며, MolmoER은 공간적 및 그림으로써의 추론에 특화된 VLM 백본이다.\n2. MolmoAct2는 오늘날까지 최대의 오픈 바이매니얼 데이터셋을 구성하는 720시간의 텔레오퍼레이티드 바이매니얼 궤적과 OpenFAST를 제공하며, MolmoThink는 심층 추론 변수를 다시 예측하여 기하학적 기초를 유지한다.\n3. MolmoAct2는 7개의 시뮬레이션 및 실제 벤치마크에서 Pi-05를 포함한 강력한 기준을 능가하며, MolmoER은 13개의 그림으로써의 추론 벤치마크를 횡재하며 GPT-5 및 Gemini Robotics ER-1.5를 능가한다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "From Context to Skills: Can Language Models Learn from Context Skillfully?",
+    "abstract": "Many real-world tasks require language models (LMs) to reason over complex contexts that exceed their parametric knowledge. This calls for context learning, where LMs directly learn relevant knowledge from the given context. An intuitive solution is inference-time skill augmentation: extracting the rules and procedures from context into natural-language skills. However, constructing such skills for context learning scenarios faces two challenges: the prohibitive cost of manual skill annotation for long, technically dense contexts, and the lack of external feedback for automated skill construction. In this paper, we propose Ctx2Skill, a self-evolving framework that autonomously discovers, refines, and selects context-specific skills without human supervision or external feedback. At its core, a multi-agent self-play loop has a Challenger that generates probing tasks and rubrics, a Reasoner that attempts to solve them guided by an evolving skill set, and a neutral Judge that provides binary feedback. Crucially, both the Challenger and the Reasoner evolve through accumulated skills: dedicated Proposer and Generator agents analyze failure cases and synthesize them into targeted skill updates for both sides, enabling automated skill discovery and refinement. To prevent adversarial collapse caused by increasingly extreme task generation and over-specialized skill accumulation, we further introduce a Cross-time Replay mechanism that identifies the skill set achieving the best balance across representative cases for the Reasoner side, ensuring robust and generalizable skill evolution. The resulting skills can be plugged into any language model to obtain better context learning capability. Evaluated on four context learning tasks from CL-bench, Ctx2Skill consistently improves solving rates across backbone models.",
+    "authors": [
+      "Shuzheng Si",
+      "Haozhe Zhao",
+      "Yu Lei",
+      "Qingyi Wang",
+      "Dingwei Chen",
+      "Zhitong Wang",
+      "Zhenhailong Wang",
+      "Kangyang Luo",
+      "Zheng Wang",
+      "Gang Chen",
+      "Fanchao Qi",
+      "Minjia Zhang",
+      "Maosong Sun"
+    ],
+    "likes": 145,
+    "published_date": "May 3",
+    "url": "https://huggingface.co/papers/2604.27660",
+    "date_collected": "2026-05-10T07:21:29.595118+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "문맥으로부터 기술까지: 언어 모델이 문맥에서 기술을 잘 배울 수 있을까?",
+      "abstract": "많은 실제 과제에서 언어 모델(Language Models, LMs)은 매개변수 지식을 초과하는 복잡한 문맥을 추론해야 합니다. 이는 문맥 학습(Context Learning)을 요구하며, 여기서 LMs는 주어진 문맥으로부터 직접 관련 지식을 학습합니다. 이 논문에서는 인간 감독이나 외부 피드백 없이 자율적으로 문맥 특정 기술을 발견, 정제, 선택하는 Ctx2Skill 프레임워크를 제안합니다. 이를 통해 언어 모델에 더 나은 문맥 학습 능력을 제공할 수 있습니다."
+    },
+    "summary": "1. Ctx2Skill는 인간 감독 없이 자율적으로 문맥 특정 기술을 발견하고 이를 개선, 선택할 수 있는 프레임워크이다.\n2. 다수의 에이전트들이 상호작용하여 실력을 향상시키며, 자동화된 기술 발견과 정제를 가능케 한다.\n3. 시행착오를 통해 기술을 계속 발전시키고, Reasoner 측에서 일반화된 기술 진화를 보장하는 Cross-time Replay 메커니즘을 도입하였다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation",
+    "abstract": "Distillation-based acceleration has become foundational for making autoregressive streaming video diffusion models practical, with distribution matching distillation (DMD) as the de facto choice. Existing methods, however, train the student to match the teacher's output indiscriminately, treating every rollout, frame, and pixel as equally reliable supervision. We argue that this caps distilled quality, since it overlooks two complementary axes of variance in DMD supervision: Inter-Reliability across student rollouts whose supervision varies in reliability, and Intra-Perplexity across spatial regions and temporal frames that contribute unequally to where quality can still be improved. The objective thus conflates two questions under a uniform weight: whether to learn from each rollout, and where to concentrate optimization within it. To address this, we propose Stream-R1, a Reliability-Perplexity Aware Reward Distillation framework that adaptively reweights the distillation objective at both rollout and spatiotemporal-element levels through a single shared reward-guided mechanism. At the Inter-Reliability level, Stream-R1 rescales each rollout's loss by an exponential of a pretrained video reward score, so that rollouts with reliable supervision dominate optimization. At the Intra-Perplexity level, it back-propagates the same reward model to extract per-pixel gradient saliency, which is factored into spatial and temporal weights that concentrate optimization pressure on regions and frames where refinement yields the largest expected gain. An adaptive balancing mechanism prevents any single quality axis from dominating across visual quality, motion quality, and text alignment. Stream-R1 attains consistent improvements on all three dimensions over distillation baselines on standard streaming video generation benchmarks, without architectural modification or additional inference cost.",
+    "authors": [
+      "Bin Wu",
+      "Mengqi Huang",
+      "Shaojin Wu",
+      "Weinan Jia",
+      "Yuxin Wang",
+      "Zhendong Mao",
+      "Yongdong Zhang"
+    ],
+    "likes": 117,
+    "published_date": "May 5",
+    "url": "https://huggingface.co/papers/2605.03849",
+    "date_collected": "2026-05-10T07:21:29.596718+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "스트림-R1: 스트리밍 비디오 생성을 위한 신뢰성-복잡도 인지 보상 증류",
+      "abstract": "증류 기반 가속은 오토리그레시브 스트리밍 비디오 확산 모델의 실용성을 높이는 데 중요한 역할을 하였으며, 분포 일치 증류(Distribution Matching Distillation, DMD)가 사실상의 선택으로 자리를 굳혀왔다. 그러나 기존 방법은 학습을 필요에 따라 다르게 변하는 각 롤아웃, 프레임 및 픽셀을 모두 동등하게 신뢰할 수 있는 지도로 취급하여 학생을 교사의 출력과 일치시키기 때문에 품질 증류를 제한한다. 우리는 DMD 지도에서 신뢰성이 다른 학생 롤아웃 간 공생 신뢰성과, 품위가 다른 공간 영역 및 시간 프레임 간 산소의 이중 축을 간과하고 있어 품질이 향상될 수 있는 곳에 관여하지 못하는 것이라고 주장한다. 이 목적은 각 롤 아웃에서 배울 것인지, 그리고 그 안에서 최적화해야 할 곳이 어디인지라는 두 가지 질문을 균일한 가중치로 혼용시킨다. 이에 따라, 우리는 신뢰성-복잡도 인지 보상 증류라는 스트림-R1을 제안한다."
+    },
+    "summary": "1. 기존 방법에서 각 롤아웃, 프레임 및 픽셀을 동등하게 취급하여 품질 증류를 제한하는 문제를 신뢰성-복잡도 인지 보상 증류를 통해 극복하였다.\n2. 스트림-R1은 학생 롤아웃의 신뢰성을 고려한 비디오 보상 점수의 지수로 각 롤아웃의 손실을 재조정하여 신뢰할 수 있는 지도인 롤아웃이 최적화를 주도하도록 하였다.\n3. 스트림-R1은 픽셀 그라디언트 중요성을 추출해 공간 및 시간 가중치로 변환하여 품질 향상이 가장 큰 기대 이득을 얻을 수 있는 영역 및 프레임에 최적화 압력을 집중시키는 것을 통해 품질 축들 사이에서 균형을 유지하였다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "RLDX-1 Technical Report",
+    "abstract": "While Vision-Language-Action models (VLAs) have shown remarkable progress toward human-like generalist robotic policies through the versatile intelligence (i.e. broad scene understanding and language-conditioned generalization) inherited from pre-trained Vision-Language Models, they still struggle with complex real-world tasks requiring broader functional capabilities (e.g. motion awareness, memory-aware decision making, and physical sensing). To address this, we introduce RLDX-1, a general-purpose robotic policy for dexterous manipulation built on the Multi-Stream Action Transformer (MSAT), an architecture that unifies these capabilities by integrating heterogeneous modalities through modality-specific streams with cross-modal joint self-attention. RLDX-1 further combines this architecture with system-level design choices, including synthesizing training data for rare manipulation scenarios, learning procedures specialized for human-like manipulation, and inference optimizations for real-time deployment. Through empirical evaluation, we show that RLDX-1 consistently outperforms recent frontier VLAs (e.g. π_{0.5} and GR00T N1.6) across both simulation benchmarks and real-world tasks that require broad functional capabilities beyond general versatility. In particular, RLDX-1 shows superiority in ALLEX humanoid tasks by achieving success rates of 86.8% while π_{0.5} and GR00T N1.6 achieve around 40%, highlighting the ability of RLDX-1 to control a high-DoF humanoid robot under diverse functional demands. Together, these results position RLDX-1 as a promising step toward reliable VLAs for complex, contact-rich, and dynamic real-world dexterous manipulation.",
+    "authors": [
+      "Dongyoung Kim",
+      "Huiwon Jang",
+      "Myungkyu Koo",
+      "Suhyeok Jang",
+      "Taeyoung Kim",
+      "Beomjun Kim",
+      "Byungjun Yoon",
+      "Changsung Jang",
+      "Daewon Choi",
+      "Dongsu Han",
+      "Donguk Lee",
+      "Heeseung Kwon",
+      "Hojin Jeon",
+      "Jaehyun Kang",
+      "Jaekyoung Bae",
+      "Jihyuk Lee",
+      "Jimin Lee",
+      "John Won",
+      "Joonwoo Ahn",
+      "Junhyeong Park",
+      "Junyoung Sung",
+      "Kyungmin Lee"
+    ],
+    "likes": 101,
+    "published_date": "May 5",
+    "url": "https://huggingface.co/papers/2605.03269",
+    "date_collected": "2026-05-10T07:21:29.599082+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "RLDX-1 기술 보고서",
+      "abstract": "비전-언어-행동 모델(Vision-Language-Action models, VLAs)은 사전 훈련된 비전-언어 모델의 다재다능한 지식(넓은 장면 이해 및 언어에 의한 일반화)으로 인간과 유사한 종합적인 로봇 정책으로의 현저한 진전을 보였지만, 실제 세계의 복잡한 작업에서는 더 넓은 기능적 능력(예: 동작 인식, 기억을 고려한 의사 결정, 물리적 감지)이 필요한 어려움을 겪고 있습니다. 이를 해결하기 위해 우리는 RLDX-1을 소개합니다. 이는 다양한 모달리티를 통합하기 위해 모달리티별 스트림을 교차 모달리티 공동 자기 주의를 통해 통합하는 다목적 로봇 정책이며, 이를 통합하는 다목적 로봇 정책입니다. RLDX-1은 드문 조작 시나리오를 위한 교육 데이터 합성, 인간과 유사한 조작에 특화된 학습 절차, 실시간 배포를 위한 추론 최적화를 포함한 시스템 수준 설계 선택과 절차를 결합합니다. 경험적 평가를 통해 RLDX-1이 최근의 초전방 VLAs(예: π_{0.5} 및 GR00T N1.6)를 모의 벤치마크와 일반 다재다능성을 넘어 넓은 기능적 능력을 요구하는 실제 작업에서 일관되게 뛰어나다는 것을 보여줍니다. 특히 RLDX-1은 ALLEX 인간형 작업에서 86.8%의 성공률을 달성하며, π_{0.5} 및 GR00T N1.6이 약 40%를 도달하는 가운데, 다양한 기능적 요구 사항 하에서 높은 자유도동(Degree of Freedom, DoF) 인간형 로봇을 제어하는 능력을 강조합니다. 이러한 결과들은 RLDX-1을 복잡하고 다양한 실제 환경의 미끄러운 조작을 위한 믿을만한 VLAs로 나아가는 유망한 한 걸음으로 위치시킵니다."
+    },
+    "summary": "1. VLAs는 인간과 유사한 로봇 정책에 진전을 보였지만, 현실 세계의 복잡한 작업에서 부족한 넓은 기능성을 해결하기 위해 RLDX-1 소개.\n2. MSAT 아키텍처를 사용한 RLDX-1은 모달리티별 스트림과 교차 모달리티 공동 자기 주의를 통해 다양한 능력을 통합하여 다재다능한 로봇 정책을 제작.\n3. RLDX-1은 ALLEX 인간형 작업에서 86.8%의 성공률을 보이며, 이는 기존 VLAs보다 우수함을 입증하고 다양한 기능적 요구 사항 하에서 높은 자유도동 인간형 로봇을 제어하는 능력을 갖춤.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+    "abstract": "This report describes ARIS (Auto-Research-in-sleep), an open-source research harness for autonomous research, including its architecture, assurance mechanisms, and early deployment experience. The performance of agent systems built on LLMs depends on both the model weights and the harness around them, which governs what information to store, retrieve, and present to the model. For long-horizon research workflows, the central failure mode is not a visible breakdown but a plausible unsupported success: a long-running agent can produce claims whose evidential support is incomplete, misreported, or silently inherited from the executor's framing. Therefore, we present ARIS as a research harness that coordinates machine-learning research workflows through cross-model adversarial collaboration as a default configuration: an executor model drives forward progress while a reviewer from a different model family is recommended to critique intermediate artifacts and request revisions. ARIS has three architectural layers. The execution layer provides more than 65 reusable Markdown-defined skills, model integrations via MCP, a persistent research wiki for iterative reuse of prior findings, and deterministic figure generation. The orchestration layer coordinates five end-to-end workflows with adjustable effort settings and configurable routing to reviewer models. The assurance layer includes a three-stage process for checking whether experimental claims are supported by evidence: integrity verification, result-to-claim mapping, and claim auditing that cross-checks manuscript statements against the claim ledger and raw evidence, as well as a five-pass scientific-editing pipeline, mathematical-proof checks, and visual inspection of the rendered PDF. A prototype self-improvement loop records research traces and proposes harness improvements that are adopted only after reviewer approval.",
+    "authors": [
+      "Ruofeng Yang",
+      "Yongcan Li",
+      "Shuai Li"
+    ],
+    "likes": 99,
+    "published_date": "May 4",
+    "url": "https://huggingface.co/papers/2605.03042",
+    "date_collected": "2026-05-10T07:21:29.600482+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "ARIS: 자율 연구를 위한 적대적 다중 에이전트 협업을 통한 자동 연구",
+      "abstract": "본 보고서는 ARIS (Auto-Research-in-sleep)라는 자율 연구를 위한 오픈 소스 연구 플랫폼에 대해 설명하며, 그 아키텍처, 보증 메커니즘, 초기 배포 경험에 대해 다룹니다. LLM에 기반한 에이전트 시스템의 성능은 모델 가중치와 주변 환경인 키가 되는 상황을 제공하는 하네스에 의해 결정됩니다. ARIS는 연구 작업을 기계 학습 및 적대적 협업을 통해 조정하는 연구 플랫폼으로 소개되며, 실행 계층, 조정 계층, 보증 계층으로 구성됩니다."
+    },
+    "summary": "1. ARIS는 자동 연구를 위한 연구 플랫폼으로, 모델 가중치와 주변 환경이 그 성능을 결정하며, 긴 과정에서 완료되지 않은 결과가 주요 실패 모드이다.\n2. ARIS는 실행, 조정, 보증의 세 계층으로 구성되며, 모델 통합, 지속적인 연구 위키, 그림 생성, 실험 결과 검증 등을 제공한다.\n3. ARIS는 자체 개선 루프를 통해 연구 경로를 기록하고 향상을 제안하며, 이는 리뷰어의 승인 후에 채택된다.",
+    "categories": [
+      "LLM",
+      "다른 (Other)"
+    ]
+  },
+  {
+    "title": "Stream-T1: Test-Time Scaling for Streaming Video Generation",
+    "abstract": "While Test-Time Scaling (TTS) offers a promising direction to enhance video generation without the surging costs of training, current test-time video generation methods based on diffusion models suffer from exorbitant candidate exploration costs and lack temporal guidance. To address these structural bottlenecks, we propose shifting the focus to streaming video generation. We identify that its chunk-level synthesis and few denoising steps are intrinsically suited for TTS, significantly lowering computational overhead while enabling fine-grained temporal control. Driven by this insight, we introduced Stream-T1, a pioneering comprehensive TTS framework exclusively tailored for streaming video generation. Specifically, Stream-T1 is composed of three units: (1) Stream -Scaled Noise Propagation, which actively refines the initial latent noise of the generating chunk using historically proven, high-quality previous chunk noise, effectively establishes temporal dependency and utilizing the historical Gaussian prior to guide the current generation; (2) Stream -Scaled Reward Pruning, which comprehensively evaluates generated candidates to strike an optimal balance between local spatial aesthetics and global temporal coherence by integrating immediate short-term assessments with sliding-window-based long-term evaluations; (3) Stream-Scaled Memory Sinking, which dynamically routes the context evicted from KV-cache into distinct updating pathways guided by the reward feedback, ensuring that previously generated visual information effectively anchors and guides the subsequent video stream. Evaluated on both 5s and 30s comprehensive video benchmarks, Stream-T1 demonstrates profound superiority, significantly improving temporal consistency, motion smoothness, and frame-level visual quality.",
+    "authors": [
+      "Yijing Tu",
+      "Shaojin Wu",
+      "Mengqi Huang",
+      "Wenchuan Wang",
+      "Yuxin Wang",
+      "Chunxiao Liu",
+      "Zhendong Mao"
+    ],
+    "likes": 98,
+    "published_date": "May 6",
+    "url": "https://huggingface.co/papers/2605.04461",
+    "date_collected": "2026-05-10T07:21:29.602055+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "스트림-T1: 스트리밍 비디오 생성을 위한 테스트 시간 스케일링",
+      "abstract": "테스트 시간 스케일링(TTS)은 훈련 비용을 증가시키지 않고 비디오 생성을 향상시키는 유망한 방향을 제공하나, 확산 모델에 기반한 현재의 테스트 시간 비디오 생성 방법은 과도한 후보자 탐색 비용과 시간적 안내 부재로 인한 구조적 병목 현상에 시달린다. 이러한 구조적 병목 현상을 해결하기 위해 우리는 스트리밍 비디오 생성에 주안점을 두는 것을 제안한다. 이 구조는 청크 수준의 합성과 소수의 노이즈 제거 단계가 TTS에 내재적으로 적합하며, 계산적 부담을 크게 줄이면서 세밀한 시간적 제어를 가능하게 한다. 이 통찰력을 기반으로, 우리는 스트림-T1을 제안한다. 이는 스트리밍 비디오 생성 전용으로 특별히 제작된 혁신적인 포괄적 TTS 프레임워크이다. 구체적으로, Stream-T1은 세 가지 유닛으로 구성되어 있다: (1) Stream -Scaled Noise Propagation, (2) Stream -Scaled Reward Pruning, (3) Stream-Scaled Memory Sinking. 5초와 30초의 포괄적인 비디오 벤치마크에서 평가된 결과, Stream-T1은 심층적인 우수성을 보여주며, 시간적 일관성, 움직임 부드러움, 프레임 수준의 시각적 품질을 크게 향상시킨다."
+    },
+    "summary": "1. 스트림-T1은 스트리밍 비디오 생성을 위한 혁신적인 테스트 시간 스케일링 프레임워크로, 과거의 노이즈를 활용하여 현재 비디오 생성을 안내하는 방식을 도입한다.\n2. Stream-T1은 후보자들을 ganztdp기반 글창고을 보귀시분 시느다 어쩌고 저쩌고.\n3. Stream-T1은 시간적 일관성, 움직임 부드러움, 프레임 수준 시각적 품질을 획기적으로 향상시킨다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents",
+    "abstract": "Deep search has become a crucial capability for frontier multimodal agents, enabling models to solve complex questions through active search, evidence verification, and multi-step reasoning. Despite rapid progress, top-tier multimodal search agents remain difficult to reproduce, largely due to the absence of open high-quality training data, transparent trajectory synthesis pipelines, or detailed training recipes. To this end, we introduce OpenSearch-VL, a fully open-source recipe for training frontier multimodal deep search agents with agentic reinforcement learning. First, we curated a dedicated pipeline to construct high-quality training data through Wikipedia path sampling, fuzzy entity rewriting, and source-anchor visual grounding, which jointly reduce shortcuts and one-step retrieval collapse. Based on this pipeline, we curate two training datasets, SearchVL-SFT-36k for SFT and SearchVL-RL-8k for RL. Besides, we design a diverse tool environment that unifies text search, image search, OCR, cropping, sharpening, super-resolution, and perspective correction, enabling agents to combine active perception with external knowledge acquisition. Finally, we propose a multi-turn fatal-aware GRPO training algorithm that handles cascading tool failures by masking post-failure tokens while preserving useful pre-failure reasoning through one-sided advantage clamping. Built on this recipe, OpenSearch-VL delivers substantial performance gains, with over 10-point average improvements across seven benchmarks, and achieves results comparable to proprietary commercial models on several tasks. We will release all data, code, and models to support open research on multimodal deep search agents.",
+    "authors": [
+      "Shuang Chen",
+      "Kaituo Feng",
+      "Hangting Chen",
+      "Wenxuan Huang",
+      "Dasen Dai",
+      "Quanxin Shou",
+      "Yunlong Lin",
+      "Xiangyu Yue",
+      "Shenghua Gao",
+      "Tianyu Pang"
+    ],
+    "likes": 92,
+    "published_date": "May 6",
+    "url": "https://huggingface.co/papers/2605.05185",
+    "date_collected": "2026-05-10T07:21:29.603813+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "오픈서치-VL: 전선 멀티모달 검색 에이전트를 위한 오픈 레시피",
+      "abstract": "심층 검색은 전선 멀티모달 에이전트에게 중요한 능력이 되었는데, 이를 통해 모델들은 적극적인 검색, 증거 확인, 그리고 여러 단계 추론을 통해 복잡한 문제를 해결할 수 있습니다. 최근의 발전에도 불구하고, 최상위 멀티모달 검색 에이전트는 공개되어 재현하기 어렵습니다. 이는 고품질 훈련 데이터, 투명한 추적 합성 파이프라인, 상세한 훈련 레시피의 부재로 인한 것입니다. 이에 우리는 오픈서치-VL을 소개합니다. 이는 멀티모달 심층 검색 에이전트를 훈련하기 위한 오픈소스 레시피이며, 에이전트적 강화 학습을 사용합니다."
+    },
+    "summary": "1. 오픈서치-VL은 고품질 훈련 데이터를 위한 Wikipedia 경로 샘플링, 퍼지 엔티티 재작성, 그리고 시각적 지역화를 통해 구성된 파이프라인으로, 두 가지 훈련 데이터 집합을 융합하여 활성 지각과 외부 지식 습득을 결합할 수 있는 다양한 도구 환경을 설계합니다.\n2. 그들은 역질병 인식 GRPO 훈련 알고리즘을 제안하여, 고장 발생 시 후속 토큰을 마스킹하는 동안, 유용한 전 배 보존 추론을 유지함으로써 도구 실패를 다루는데 사용합니다.\n3. 오픈서치-VL은 7개 벤치마크에서 10 포인트 이상의 성능 향상을 제공하며, 여러 작업에서 전용 상용 모델과 비교 가능한 결과를 달성합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors",
+    "abstract": "Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimodal graphics tasks. However, existing methods often train separate models for each problem setting, which fixes the input-output mapping and limits the modeling of correlations across modalities. We present UniVidX, a unified multimodal framework that leverages VDM priors for versatile video generation. UniVidX formulates pixel-aligned tasks as conditional generation in a shared multimodal space, adapts to modality-specific distributions while preserving the backbone's native priors, and promotes cross-modal consistency during synthesis. It is built on three key designs. Stochastic Condition Masking (SCM) randomly partitions modalities into clean conditions and noisy targets during training, enabling omni-directional conditional generation instead of fixed mappings. Decoupled Gated LoRA (DGL) introduces per-modality LoRAs that are activated when a modality serves as the generation target, preserving the strong priors of the VDM. Cross-Modal Self-Attention (CMSA) shares keys and values across modalities while keeping modality-specific queries, facilitating information exchange and inter-modal alignment. We instantiate UniVidX in two domains: UniVid-Intrinsic, for RGB videos and intrinsic maps including albedo, irradiance, and normal; and UniVid-Alpha, for blended RGB videos and their constituent RGBA layers. Experiments show that both models achieve performance competitive with state-of-the-art methods across distinct tasks and generalize robustly to in-the-wild scenarios, even when trained on fewer than 1,000 videos. Project page: https://houyuanchen111.github.io/UniVidX.github.io/",
+    "authors": [
+      "Houyuan Chen",
+      "Hong Li",
+      "Xianghao Kong",
+      "Tianrui Zhu",
+      "Shaocong Xu",
+      "Weiqing Xiao",
+      "Yuwei Guo",
+      "Chongjie Ye",
+      "Lvmin Zhang",
+      "Hao Zhao",
+      "Anyi Rao"
+    ],
+    "likes": 80,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00658",
+    "date_collected": "2026-05-10T07:21:29.605547+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "유니비디엑스: 확산 사전을 통한 다목적 비디오 생성을 위한 통합된 다중 모달 프레임워크",
+      "abstract": "최근 진전은 비디오 확산 모델(VDM)이 다양한 다중 모달 그래픽 작업에 활용될 수 있다는 것을 보여주었다. 그러나 기존 방법은 각 문제 설정에 대해 별도의 모델을 훈련시키는 경우가 많아 입력-출력 매핑을 고정시키고 모달 간 상관 관계 모델링을 제한한다. 우리는 유니비디엑스를 제시하는데, 이는 유연한 비디오 생성을 위해 VDM 사전을 활용하는 통합된 다중 모달 프레임워크이다. 유니비디엑스는 픽셀 정렬 작업을 공유된 다중 모달 공간에서 조건부 생성으로 제시하며, 모달리티 특정 분포에 적응하면서도 백본의 원래 사전을 보존하고 합성 중 교모달 일관성을 촉진한다. 세 가지 주요 설계를 기반으로 구축되었다."
+    },
+    "summary": "1. UniVidX는 다양한 비디오 생성을 위해 VDM 사전을 활용하는 통합된 다중 모달 프레임워크이다.\n2. Stochastic Condition Masking (SCM)은 모달리티를 깨끗한 조건과 소음 타겟으로 무작위 분할하여 omni-directional한 조건부 생성을 가능하게 한다.\n3. Decoupled Gated LoRA (DGL)과 Cross-Modal Self-Attention (CMSA)는 모달리티 특정 LoRA와 정보 교환 및 모달 간 정렬을 용이하게 하는 데 도움을 준다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation",
+    "abstract": "Driving world models serve as a pivotal technology for autonomous driving by simulating environmental dynamics. However, existing approaches predominantly focus on future scene generation, often overlooking comprehensive 3D scene understanding. Conversely, while Large Language Models (LLMs) demonstrate impressive reasoning capabilities, they lack the capacity to predict future geometric evolution, creating a significant disparity between semantic interpretation and physical simulation. To bridge this gap, we propose HERMES++, a unified driving world model that integrates 3D scene understanding and future geometry prediction within a single framework. Our approach addresses the distinct requirements of these tasks through synergistic designs. First, a BEV representation consolidates multi-view spatial information into a structure compatible with LLMs. Second, we introduce LLM-enhanced world queries to facilitate knowledge transfer from the understanding branch. Third, a Current-to-Future Link is designed to bridge the temporal gap, conditioning geometric evolution on semantic context. Finally, to enforce structural integrity, we employ a Joint Geometric Optimization strategy that integrates explicit geometric constraints with implicit latent regularization to align internal representations with geometry-aware priors. Extensive evaluations on multiple benchmarks validate the effectiveness of our method. HERMES++ achieves strong performance, outperforming specialist approaches in both future point cloud prediction and 3D scene understanding tasks. The model and code will be publicly released at https://github.com/H-EmbodVis/HERMESV2.",
+    "authors": [
+      "Xin Zhou",
+      "Dingkang Liang",
+      "Xiwu Chen",
+      "Feiyang Tan",
+      "Dingyuan Zhang",
+      "Hengshuang Zhao",
+      "Xiang Bai"
+    ],
+    "likes": 69,
+    "published_date": "Apr 30",
+    "url": "https://huggingface.co/papers/2604.28196",
+    "date_collected": "2026-05-10T07:21:29.607103+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "HERMES++: 3차원 장면 이해와 생성을 위한 통합 운전 세계 모델로",
+      "abstract": "자율 주행을 위해 중요한 기술인 운전 세계 모델은 환경 역학을 시뮬레이션함으로써 기능합니다. 그러나 기존 방법은 주로 미래 장면 생성에 초점을 맞추며 종종 포괄적인 3차원 장면 이해를 간과합니다. 반면에 대형 언어 모델(LLMs)은 감탄할 만한 추론 능력을 보여주지만 미래 지오메트리 변화를 예측할 능력이 부족해 의미적 해석과 물리적 시뮬레이션 간에 상당한 차이가 있습니다. 이 갭을 메우기 위해 HERMES++라는 통합된 운전 세계 모델을 제안합니다. 이 모델은 3차원 장면 이해와 미래 지오메트리 예측을 하나의 프레임워크 내에서 통합합니다. 저희 방법은 이러한 작업들의 고유한 요구사항을 상호작용적 디자인을 통해 해결합니다..."
+    },
+    "summary": "1. HERMES++는 3차원 장면 이해와 미래 지오메트리 예측을 통합한 운전 세계 모델로, BEV 표현, LLM-강화된 월드 쿼리, 현재-미래 연결 및 합작 지오메트릭 최적화 전략을 활용하여 미래 포인트 클라우드 예측과 3차원 장면 이해 작업에서 특화된 성능을 보입니다.\n2. 이 방법은 내부 표현을 지오메트리 인식 사전과 조화롭게 맞추기 위해 명시적 지오메트리 제약 조건과 암묵적 잠재적 규약을 통합하는 합작 지오메트릭 최적화 전략을 사용합니다.\n3. HERMES++는 다양한 벤치마크에서 폭넓은 평가를 거쳐 우수한 성능을 입증했으며, 미래 지점 클라우드 예측과 3차원 장면 이해 작업에서 전문가 접근법들을 능가했습니다.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction",
+    "abstract": "Modern retrieval systems, whether lexical or semantic, expose a corpus through a fixed similarity interface that compresses access into a single top-k retrieval step before reasoning. This abstraction is efficient, but for agentic search, it becomes a bottleneck: exact lexical constraints, sparse clue conjunctions, local context checks, and multi-step hypothesis refinement are difficult to implement by calling a conventional off-the-shelf retriever, and evidence filtered out early cannot be recovered by stronger downstream reasoning. Agentic tasks further exacerbate this limitation because they require agents to orchestrate multiple steps, including discovering intermediate entities, combining weak clues, and revising the plan after observing partial evidence. To tackle the limitation, we study direct corpus interaction (DCI), where an agent searches the raw corpus directly with general-purpose terminal tools (e.g., grep, file reads, shell commands, lightweight scripts), without any embedding model, vector index, or retrieval API. This approach requires no offline indexing and adapts naturally to evolving local corpora. Across IR benchmarks and end-to-end agentic search tasks, this simple setup substantially outperforms strong sparse, dense, and reranking baselines on several BRIGHT and BEIR datasets, and attains strong accuracy on BrowseComp-Plus and multi-hop QA without relying on any conventional semantic retriever. Our results indicate that as language agents become stronger, retrieval quality depends not only on reasoning ability but also on the resolution of the interface through which the model interacts with the corpus, with which DCI opens a broader interface-design space for agentic search.",
+    "authors": [
+      "Zhuofeng Li",
+      "Haoxiang Zhang",
+      "Cong Wei",
+      "Pan Lu",
+      "Ping Nie",
+      "Yi Lu",
+      "Yuyang Bai",
+      "Shangbin Feng",
+      "Hangxiao Zhu",
+      "Ming Zhong",
+      "Yuyu Zhang",
+      "Jianwen Xie",
+      "Yejin Choi",
+      "James Zou",
+      "Jiawei Han",
+      "Wenhu Chen",
+      "Jimmy Lin",
+      "Dongfu Jiang",
+      "Yu Zhang"
+    ],
+    "likes": 66,
+    "published_date": "May 3",
+    "url": "https://huggingface.co/papers/2605.05242",
+    "date_collected": "2026-05-10T07:21:29.609258+09:00",
+    "week": "2026-W20",
+    "translation": {
+      "title": "의미 유사성 넘어서: 직접 말뭉치 상호작용을 통한 에이젠틱 검색 재고",
+      "abstract": "현대 검색 시스템은 렉시컬 혹은 의미적이든 고정된 유사성 인터페이스를 통해 말뭉치를 노출시키고 추론하기 전 단일 상위-k 검색 단계로 접근을 압축한다. 이 추상화는 효율적이지만, 에이젠틱 검색의 경우, 정확한 렉시컬 제약 조건, 희소한 단서 결합, 지역적 맥락 확인 및 다단계 가설 수정이 일반적인 보편 검색기의 호출로 구현하기 어렵다. 질서상 원격 추론에 의해 조기에 걸러진 증거는 강력한 하향식 추론으로 복구할 수 없다. 에이젠틱 작업은 중간 엔티티 발견, 약한 단서 결합, 부분적 증거 관찰 후 계획 재조정 포함한 여러 단계 구성을 요구하여이 한계를 악화시킨다. 한국인의 대화 요구를 충족하기 위해 우리는 일반적인 용도의 터미널 도구 (예: grep, 파일 읽기, 쉘 명령, 경량 스크립트)를 사용하여 임의 말뭉치를 직접 검색하는 직접 말뭉치 상호작용 (DCI)을 연구한다. 이 방법론은 오프라인 인덱싱을 필요로하지 않으며 지역 말뭉치로의 자연스러운 적응성을 가지고 있습니다. IR 벤치마크 및 단대단 에이젠틱 검색 작업을 통하여, 이 간단한 설정은 여러 BRIGHT 및 BEIR 데이터셋에서 강력한 희소, 밀도 및 재순위 기준을 훨씬 능가하며, 어떠한 전통적인 의미적 검색기에도 의존하지 않고, BrowseComp-Plus 및 다중 홉 QA에서 강력한 정확도를 달성한다. 결과는 언어 에이전트가 강화됨에 따라 검색 품질은 추론 능력뿐만 아니라 모델이 말뭉치와 상호작용하는 인터페이스의 해상도에도 좌우된다는 것을 보여주며, 이는 DCI가 에이젠틱 검색을위한 보다 넓은 인터페이스 디자인 공간을 열어 놓는다."
+    },
+    "summary": "1. 전통적인 검색 시스템의 제약으로는 실시하기 어려운, 에이젠틱 검색 과제에 대응하기 위해 직접 말뭉치 상호작용(DCI)을 연구했고, 이는 강력한 기준을 크게 능가하며, BrowseComp-Plus 및 다중 홉 QA에서 강력한 정확도를 보여줌.\n2. DCI는 오프라인 인덱싱을 필요로 하지 않고 지역 말뭉치로 자연스럽게 적응되는 장점을 가지며, 강화학습 IR 벤치마크 및 단대단 에이젠틱 검색 작업을 통해 검증됨.\n3. 언어 에이전트의 강화에 따라 검색 품질은 추론 능력 뿐 아니라 모델이 말뭉치와 상호작용하는 인터페이스의 해상도에도 영향을 받는데, 이러한 문제를 DCI가 개선할 수 있음을 보여준다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

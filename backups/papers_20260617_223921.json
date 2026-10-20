@@ -1,0 +1,315 @@
+[
+  {
+    "title": "JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence",
+    "abstract": "Many moments in the real world do not wait for a user to ask. A fire starts on a security monitor, an expression flickers across a video call, or a product a viewer wants flashes by in a livestream. Yet today's large models remain mostly turn-based by design: they answer only when addressed, and even video-call apps that appear interactive still operate as question-answer systems, reacting only when polled or prompted. We argue for a different paradigm: a model that is present in the world like a person. It continuously watches what is happening now, decides on its own whether to speak or stay silent, interacts in real time, and delegates to a background model when the problem is hard. To advance interaction models and their adoption across domains, we make two fully open-sourced contributions. First, we release JoyAI-VL-Interaction, an 8B-scale, vision-first VL-interaction model. The model makes the response decision internally, choosing each second to stay silent, respond, or delegate to a background model, and it excels at vision-triggered responsiveness and time awareness. We pair it with a transferable training recipe, from which capabilities we never trained for emerge, such as guiding a shopper through changing app screens or improvising a lecture from a slide deck. Second, we release a complete, deployable system built around that model. The system streams any ongoing video into the model, making it genuinely present in the world. All other components are pluggable, including ASR/TTS modules, memory, visualization UI, and a background brain that can connect to any API or agent. Across six real-world scenarios, human raters prefer JoyAI-VL-Interaction over the in-app video-call assistants of Doubao and Gemini by a wide margin. To our knowledge, this is the first open, vision-driven interaction model released together with its training recipe, data, and complete deployable system.",
+    "authors": [
+      "Dingyu Yao",
+      "Junhao Zhou",
+      "Chenxu Yang",
+      "Chuanyu Qin",
+      "Haowen Hou",
+      "Zheming Liang",
+      "Congcong Wang",
+      "Yuhang Cao",
+      "Shenglong Ye",
+      "Shuai Xie",
+      "Shuhuan Gu",
+      "Haoyang Huang",
+      "Qingyi Si",
+      "Nan Duan",
+      "Jiaqi Wang"
+    ],
+    "likes": 157,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2606.14777",
+    "date_collected": "2026-06-17T07:43:11.182171+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "JoyAI-VL-Interaction: 실시간 Vision-Language 상호작용 지능",
+      "abstract": "현실 세계의 많은 순간들은 사용자가 요청할 때를 기다리지 않습니다. 보안 모니터에서 불이 나거나, 비디오 통화 중 얼굴 표정이 번쩍일 때, 또는 시청자가 원하는 제품이 라이브 방송 중에 번쩍일 때가 있습니다. 하지만 오늘날의 대규모 모델들은 대부분 요청에 응답할 때만 작동하는 방식으로 설계되어 있습니다. 우리는 다른 패러다임을 제안합니다: 사람처럼 세계에 존재하는 모델. 이 모델은 현재 일어나고 있는 것을 지속적으로 감시하며, 말할 것인지 침묵할 것인지 스스로 판단하고, 실시간으로 상호작용하며, 문제가 어려울 때 백그라운드 모델에 위임합니다. 상호작용 모델의 발전과 다양한 분야에서의 채택을 위해 두 가지 완전히 오픈 소스 기여를 제공합니다. 우리는 JoyAI-VL-Interaction이라는 80억 규모의 비전 위주 VL-상호작용 모델을 공개합니다. 이 모델은 응답 결정을 내부적으로 내리며, 매 초별로 침묵할지, 응답할지, 또는 백그라운드 모델에 위임할지 선택하며, 비전 트리거 응답 및 시간 인식에 뛰어납니다. 우리는 이 모델을 둘러싸고 전이 가능한 훈련 레시피를 제공하는데, 이를 통해 구매자를 앱 화면 변경을 안내하거나 슬라이드 덱에서 강의를 즉흥적으로 진행하는 등 우리가 훈련하지 않은 능력이 나타납니다. 두 번째로, 해당 모델을 중심으로 완전한 배포 가능한 시스템을 공개합니다. 이 시스템은 모든 진행 중인 비디오를 모델로 스트리밍하여 세상에 실제로 존재하도록 합니다. ASR/TTS 모듈, 메모리, 시각화 UI, API 또는 에이전트에 연결할 수 있는 백그라운드 브레인을 포함하여 모든 구성 요소가 연결할 수 있습니다. 여섯 가지 현실적 시나리오에서 인간 평가자들은 Doubao와 Gemini의 앱 내 비디오 통화 어시스턴트보다 JoyAI-VL-Interaction을 훨씬 선호합니다. 우리의 지식으로는 이것이 처음으로 공개된 비전 중심 상호작용 모델이며 훈련 레시피, 데이터, 및 완전한 배포 가능한 시스템을 함께 공개한 것입니다."
+    },
+    "summary": "1. 오늘날의 모델들은 대부분 요청에 응답하는 방식으로 작동하는 반면, JoyAI-VL-Interaction은 현실 세계에서 사람처럼 존재하여 실시간으로 상호작용하고 문제가 어려울 때는 백그라운드 모델에 위임하여 새로운 패러다임을 제안합니다.\n2. JoyAI-VL-Interaction은 80억 규모의 비전 위주 VL-상호작용 모델로, 비전 트리거 응답 및 시간 인식에 뛰어나며, 훈련하지 않은 능력들이 나타나는 전이 가능한 훈련 레시피를 제공합니다.\n3. 완전한 배포 가능한 시스템은 JoyAI-VL-Interaction 모델을 중심으로 구성되어 있으며, 모든 구성 요소가 연결 가능하며 여러 현실적 시나리오에서 상호작용 모델을 통한 선호도가 높은 것으로 나타났습니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+    "abstract": "Data tells stories that shape society; the data journalist's job is to turn raw information into stories non-experts can trust. A high-quality news feature takes a newsroom team weeks: hunting for context, running statistics, choosing an angle, and designing visuals. Recent agents handle individual steps well: data-science agents close the analysis loop, while design agents synthesize beautiful websites. But can an agent serve as a data journalist end to end? We introduce Data Journalist Agent (Data2Story), a multi-agent framework that orchestrates specialized roles into a single virtual newsroom. Data2Story contributes two innovations. (i) Claims are evidence-grounded: an Inspector links every number, angle, and asset back to data, code, or an external reference. (ii) Articles are multimodally generative: rather than defaulting to plain text and static charts, Data2Story reasons about what readers will want to see, then deploys multimodal tools, such as interactive maps for geography and audio for music. We evaluate Data2Story on 18 articles, each paired with the originally published expert piece, along four axes: (a) human-agent angle coverage; (b) rubric evaluation with 53 participants across five dimensions; (c) computer-use agents as judges, a cost-saving proxy for how readers navigate interactive articles; and (d) verifiability, where a coding verifier re-executes statements against the data and checks claims against references. Data2Story produces competitive, evidence-traceable multimedia stories, with particular strength in transparency and auditability. Human articles retain an edge in editorial angle, creative design, and presentation. We position Data2Story as a collaborator for journalists, enabling more evidence-based, transparent, and verifiable reporting. Code and demos are available at https://data2story.github.io.",
+    "authors": [
+      "Kevin Qinghong Lin",
+      "Batu EI",
+      "Yuhong Shi",
+      "Pan Lu",
+      "Philip Torr",
+      "James Zou"
+    ],
+    "likes": 100,
+    "published_date": "Jun 9",
+    "url": "https://huggingface.co/papers/2606.11176",
+    "date_collected": "2026-06-17T07:43:11.183359+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "데이터 저널리스트 에이전트: 데이터를 확인 가능한 멀티모달 이야기로 변환하기",
+      "abstract": "데이터는 사회를 형성하는 이야기를 전달합니다; 데이터 저널리스트의 임무는 비전문가도 신뢰할 수 있는 이야기로 원시 정보를 전환하는 것입니다. 고품질 뉴스 피처를 만드는 데에는 뉴스룸 팀이 수 주 동안 소요됩니다: 맥락을 파악하고 통계를 수행하며 각도를 선택하고 시각 자료를 디자인합니다. 최근의 에이전트들은 각각의 단계를 잘 처리합니다: 데이터 과학 에이전트들은 분석 루프를 닫고, 디자인 에이전트는 아름다운 웹사이트를 종합합니다. 하지만 에이전트가 데이터 저널리스트로서 양 끝단까지 기능할 수 있을까요? 데이터 저널리스트 에이전트(Data2Story)를 소개합니다. Data2Story는 전문화된 역할을 하나로 통합하는 멀티 에이전트 프레임워크입니다. Data2Story는 두 가지 혁신을 제공합니다. (i) 주장은 증거에 기반합니다: 감사관은 모든 숫자, 각도, 자산을 데이터, 코드 또는 외부 참조로 연결합니다. (ii) 기사는 멀티모달로 생성됩니다: 평범한 텍스트와 정적 차트를 기본으로 하는 대신, Data2Story는 독자가 보고 싶어할 것으로 추론하고, 지리에 대한 대화형 지도나 음악에 대한 오디오 등 멀티모달 도구를 배치합니다. Data2Story를 18개의 문서에서 사용하여 평가합니다. 각각은 처음 발표된 전문가 기사와 연결되며, 인간과 에이전트의 각도 커버리지, 53명의 참가자를 대상으로 한 평가, 에이전트 채택과 5차원을 초래한 평가 결과, 컴퓨터 사용 에이전트 평가, 독자가 상호 작용하는 기사를 탐색하는 방법에 대한 절약 프록시, 증명 가능성 및 코딩 검증기에 대한 기사가 참조에 대한 명령을 데이터를 다시 실행하고 확인합니다. Data2Story는 투명성과 감사 가능성에서 특히 강점을 보이는 경쟁력 있는 증거 추적 멀티미디어 이야기를 생산합니다. 인간 기사는 편집 각도, 창의적 디자인 및 프레젠테이션 면에서 열세가 있습니다. 우리는 저널리스트를 위한 공동 작업자로 Data2Story를 위치시켜, 더 많은 증거에 기반한, 투명하고 확인 가능한 보도를 가능하게 합니다. 코드와 데모는 https://data2story.github.io에서 확인하실 수 있습니다."
+    },
+    "summary": "1. 데이터 저널리스트 에이전트(Data2Story)는 다양한 역할을 단일 가상 뉴스룸으로 통합하는 멀티 에이전트 프레임워크로, 투명하고 감사 가능한 멀티미디어 이야기를 생성합니다.\n2. Data2Story는 주장을 증거에 기반하여 제공하며, 기사를 멀티모달로 생성하여 독자들이 원하는 내용을 추론하고 제공합니다.\n3. 연구 결과에 따르면 Data2Story는 특히 투명성과 감사 가능성에서 강점을 보이며, 저널리스트들에게 증거 기반, 투명하고 확인 가능한 보도를 가능하게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data",
+    "abstract": "Cloning camera motion from reference videos is an important task in video generation, as videos provide intuitive and precise control. Existing methods either directly use parametric representations that fail to handle multi-shot generation or synthesize cross-paired data, which suffer from data scarcity, resulting in poor performance in complicated camera motion cloning. To address these issues, we introduce a general camera motion representation that encodes cameras as grid motion videos. This camera grid represents the camera parameters visually and supports the integration of diverse trajectories for multi-shot video generation. Building upon this, we propose OmniDirector, a unified framework trained on a million-scale camera grid-video pairs that coordinates characters, actions, and cameras to provide director-level control for multimodal diffusion transformers. Furthermore, we design a novel hierarchical prompt expansion agent that harmoniously integrates different control signals by systematically describing camera motion and visual content through understanding signal relationships. Extensive experiments demonstrate the superior performance and outstanding controllability of our framework. Project page: https://ymlinfeng.github.io/OmniDirector.github.io/",
+    "authors": [
+      "Jiwen Liu",
+      "Shujuan Li",
+      "Zhixue Fang",
+      "Xiaohan Li",
+      "Yan Zhou",
+      "Zijie Meng",
+      "Zhimin Zhang",
+      "Yawen Luo",
+      "Guoxin Zhang",
+      "Yu-Shen Liu",
+      "Pengfei Wan"
+    ],
+    "likes": 96,
+    "published_date": "Jun 11",
+    "url": "https://huggingface.co/papers/2606.13432",
+    "date_collected": "2026-06-17T07:43:11.184663+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "OmniDirector: 교차 페어 데이터 없이 다양한 다중 샷 카메라 클로닝",
+      "abstract": "참조 비디오로부터 카메라 움직임을 복제하는 것은 비디오 생성에서 중요한 작업이다. 기존 방법은 다중 샷 생성을 처리하지 못하는 매개변수 표현을 직접 사용하거나 데이터 부족으로 성능이 저하되는 교차 매칭 데이터를 합성하는 것이다. 이러한 문제를 해결하기 위해 우리는 카메라를 그리드 모션 비디오로 인코딩하는 일반적인 카메라 움직임 표현을 소개한다. 이 카메라 그리드는 시각적으로 카메라 매개변수를 나타내며 다양한 궤적을 통합하여 다중 샷 비디오 생성에 지원을 제공한다. 더불어, 우리는 백만 규모의 카메라 그리드-비디오 쌍에서 훈련된 통합 프레임워크인 OmniDirector를 제안한다."
+    },
+    "summary": "1. 다양한 카메라 움직임을 다룰 수 있는 일반적인 카메라 움직임 표현 소개\n2. 백만 규모의 카메라 그리드-비디오 쌍으로 훈련된 OmniDirector 프레임워크 소개\n3. 디렉터 수준의 제어를 제공하는 다중모달 확산 트랜스포머를 위한 새로운 계층적 프롬프트 확장 에이전트 설계",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Geometric Action Model for Robot Policy Learning",
+    "abstract": "Generalist robot policies must follow user instructions while reasoning about how objects, cameras, and robot actions interact in the 3D physical world. Recent vision-language-action models (VLAs) and video world-action models (WAMs) inherit strong semantic or temporal priors from large-scale foundation models, but they still operate primarily on 2D image frames or 2D-derived latent spaces, leaving implicit the 3D geometry required for contact-rich manipulation. We propose the Geometric Action Model (GAM), a language-conditioned manipulation policy that directly repurposes a pretrained geometric foundation model (GFM) as a shared substrate for perception, temporal prediction, and action decoding. GAM splits the GFM at an intermediate layer: the shallow layers serve as an observation encoder, and a causal future predictor inserted at the split layer forecasts future latent tokens conditioned on language, proprioception, and action history. The predicted future tokens are then routed through the remaining GFM blocks for feature propagation and decoding, allowing a single backbone to produce both future geometry and actions. This design equips the GFM with language-conditioned temporal world modeling through minimal architectural modification while preserving its rich geometric priors. Across a broad suite of simulation and real-robot manipulation benchmarks, GAM is more accurate, more robust, faster, and lighter than current foundation-model-scale baselines.",
+    "authors": [
+      "Jisang Han",
+      "Seonghu Jeon",
+      "Jaewoo Jung",
+      "René Zurbrügg",
+      "Honggyu An",
+      "Tifanny Portela",
+      "Marco Hutter",
+      "Marc Pollefeys",
+      "Seungryong Kim",
+      "Sunghwan Hong"
+    ],
+    "likes": 84,
+    "published_date": "Jun 15",
+    "url": "https://huggingface.co/papers/2606.17046",
+    "date_collected": "2026-06-17T07:43:11.185909+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "로봇 정책 학습을 위한 기하학적 행동 모델",
+      "abstract": "일반적인 로봇 정책은 사용자 지시를 따를 때 3D 물리적 세계에서 물체, 카메라, 로봇 조작이 상호작용하는 방법에 대해 추론해야 합니다. 최근의 비전-언어-행동 모델(Vision-Language-Action, VLAs)과 비디오-월드-행동 모델(Video World-Action Models, WAMs)은 대규모 기반 모델로부터 강력한 의미론적이거나 시간적 사전 지식을 계승하지만, 여전히 주로 2D 이미지 프레임이나 2D 기반 잠재 공간에서 작동하여 접촉이 풍부한 조작에 필요한 3D 기하학을 암시적으로 처리합니다. 우리는 기하학적 행동 모델(Geometric Action Model, GAM)을 제안합니다. 이 모델은 사전 훈련된 기하학적 기반 모델(Geometric Foundation Model, GFM)을 지각, 시간 예측 및 행동 해독을 위한 공유 기반으로 직접 재활용하는 언어-조건부 조작 정책입니다."
+    },
+    "summary": "1. 3D 물리적 세계에서 물체, 카메라, 로봇 행동이 상호작용하는 환경에서 일반적인 로봇 정책이 작동해야 합니다.\n2. 기존 모델들과 달리 기하학적 행동 모델(GAM)은 3D 기하학에 직접 초점을 맞추어, 3D 조작을 위한 효율적인 언어-조건부 조작 정책을 제공합니다.\n3. GAM은 최소한의 구조 수정을 통해 언어-조건부 시간적 세계 모델링을 가능케하며, 넓은 범위의 시뮬레이션 및 실제 로봇 조작 평가에서 더 정확하고 강건하며 빠르며 가벼운 결과를 보여줍니다.",
+    "categories": [
+      "Robotics",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "DreamX-World 1.0: A General-Purpose Interactive World Model",
+    "abstract": "DreamX-World 1.0 is a general-purpose interactive text/image-to-video world model for controllable long-horizon generation. It supports camera navigation, revisits to previously observed regions, and promptable events across photorealistic, game-style, and stylized domains. Our data engine combines camera-accurate Unreal Engine rendering, action-rich gameplay recordings, and real-world videos with recovered camera geometry. For camera control, we introduce E-PRoPE, a lightweight variant of projective positional encoding that retains PRoPE's projective camera geometry while applying camera-aware attention to spatially reduced tokens. We convert a bidirectional video generator into a few-step autoregressive world model using causal forcing, DMD-style distillation, and long-rollout training. Training on self-generated long-horizon contexts exposes the model to its own generated history and reduces the style and color drift that accumulates across autoregressive chunks. Memory-Conditioned Scene Persistence retrieves earlier views through camera-geometry-based retrieval, while residual recycling makes the conditioning path less sensitive to imperfect memory latents. Event Instruction Tuning adds composable event control, and reinforcement learning alignment recovers camera control and visual quality after distillation. With mixed-precision DiT execution, residual reuse, 75\\%-pruned VAE decoding, and asynchronous pipeline parallelism, DreamX-World 1.0 reaches up to 16\\,FPS on eight RTX\\,5090 GPUs. On our 5-second basic evaluation, DreamX-World 1.0 achieves a camera-control score of 73.75 and an overall score of 84.76, outperforming HY-WorldPlay 1.5 and LingBot-World in overall score, which achieve 80.79 and 80.45, respectively.",
+    "authors": [
+      "DreamX Team",
+      "Yancheng Bai",
+      "Rui Chen",
+      "Xiangxiang Chu",
+      "Rujing Dang",
+      "Hao Dou",
+      "Bingjie Gao",
+      "Qiwen Gu",
+      "Siyu Hong",
+      "Jiachen Lei",
+      "Geng Li",
+      "Jifan Li",
+      "Ruimin Lin",
+      "Qingfeng Shi",
+      "Bingze Song",
+      "Lei Sun",
+      "Jing Tang",
+      "Ruitian Tian",
+      "Jun Wang",
+      "Jiahong Wu",
+      "Pengfei Zhang",
+      "Shen Zhang"
+    ],
+    "likes": 78,
+    "published_date": "Jun 15",
+    "url": "https://huggingface.co/papers/2606.16993",
+    "date_collected": "2026-06-17T07:43:11.187554+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "DreamX-World 1.0: 일반적인 대화식 세계 모델",
+      "abstract": "DreamX-World 1.0은 조절 가능한 장기 생성을 위한 일반적인 대화식 텍스트/이미지-비디오 세계 모델입니다. 카메라 탐색, 이전에 관측된 지역 재방문, 사실적인, 게임 스타일, 그리고 스타일화된 도메인 전반에 걸쳐 견고성 있는 이벤트를 지원합니다."
+    },
+    "summary": "1. DreamX-World 1.0은 카메라 제어, 지역 재방문, 이벤트 제어를 지원하며 Unreal Engine 렌더링, 게임 플레이 녹화, 실제 비디오를 결합한 데이터 엔진을 사용합니다.\n2. E-PRoPE를 도입하여 프로젝티브 위치 인코딩의 경량화 변형으로 카메라 지각 주의를 적용합니다. 양방향 비디오 생성기를 일부 단계의 자기회귀 세계 모델로 변환합니다.\n3. 메모리-조건 부분의 씬 지속성은 카메라 지오메트리 기반의 검색을 통해 이전 뷰를 검색하고, 이벤트 지시 튜닝 및 강화 학습 정렬을 추가하여 비쥬얼 품질을 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
+    "abstract": "Large Language Model (LLM) coding agents have achieved strong results on software engineering tasks, yet repository exploration remains a major bottleneck: locating relevant code consumes substantial token budget and pollutes the agent's context with irrelevant snippets. In most agents, the same model explores the repository and solves the task, leaving exploratory reads and searches in the solver's history. We present FastContext, a dedicated exploration subagent that separates repository exploration from solving. Invoked on demand, FastContext issues parallel tool calls and returns concise file paths and line ranges as focused context. FastContext is powered by specialized exploration models spanning 4B--30B parameters. We bootstrap them from strong reference-model trajectories and refine them with task-grounded rewards for broad first-turn search, multi-turn evidence gathering, and precise citation generation. Across SWE-bench Multilingual, SWE-bench Pro, and SWE-QA, integrating FastContext into Mini-SWE-Agent improves end-to-end resolution rates up to 5.5\\% while reducing coding-agent token consumption up to 60\\%, with marginal overhead. These results show that repository exploration can be separated from solving and handled effectively by specialized models. Code and data: https://github.com/microsoft/fastcontext",
+    "authors": [
+      "Shaoqiu Zhang",
+      "Maoquan Wang",
+      "Yuling Shi",
+      "Yuhang Wang",
+      "Xiaodong Gu",
+      "Yongqiang Yao",
+      "Rao Fu",
+      "Shengyu Fu"
+    ],
+    "likes": 76,
+    "published_date": "Jun 12",
+    "url": "https://huggingface.co/papers/2606.14066",
+    "date_collected": "2026-06-17T07:43:11.188774+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "효율적인 저장소 탐색을 위한 FastContext 훈련",
+      "abstract": "대규모 언어 모델 (Large Language Model, LLM) 코딩 에이전트는 소프트웨어 공학 작업에서 뛰어난 결과를 이뤄냈지만, 저장소 탐색은 여전히 주요 병목 현상입니다: 관련 코드를 찾는 데 많은 토큰 예산이 소모되고, 불필요한 코드 조각으로 에이전트의 컨텍스트가 오염됩니다. 대부분의 에이전트에서 동일한 모델이 저장소를 탐색하고 작업을 해결하는데, 이는 탐사적인 읽기와 검색이 해결자의 이력에 남게 됩니다. 우리는 해결과 저장소 탐색을 분리하는 FastContext를 제시합니다. 요청 시 발동되며, FastContext는 병렬 도구 호출을 수행하고 집중된 컨텍스트로 간결한 파일 경로 및 라인 범위를 반환합니다. FastContext는 40억~300억 매개변수를 포함하는 특수화된 탐사 모델에 의해 제공됩니다. 우리는 강력한 참조 모델 궤적에서 구동된 제시 모델을 초기화하고, 다양한 첫 번째 턴 검색, 다중 턴 증거 수집 및 정확한 인용 발생을 위해 작업 지향적 보상으로 세부적으로 수정합니다. SWE-bench Multilingual, SWE-bench Pro 및 SWE-QA에서 FastContext를 Mini-SWE-Agent에 통합함으로써 종단 간 해결률을 최대 5.5\\% 향상시키면서 코딩 에이전트 토큰 소모를 최대 60\\% 줄였으며, 비용 증가는 미미합니다. 이러한 결과는 저장소 탐색을 해결에서 분리하고 특수화된 모델에 의해 효과적으로 처리할 수 있음을 보여줍니다. 코드 및 데이터: https://github.com/microsoft/fastcontext"
+    },
+    "summary": "1. LLM 코딩 에이전트의 저장소 탐색 효율을 향상시키기 위해 FastContext를 소개합니다.\n2. FastContext는 저장소 탐색과 문제 해결을 분리하여 병목 현상을 완화하고, 특수화된 모델을 활용하여 세밀하고 효율적인 탐색을 수행합니다.\n3. Mini-SWE-Agent에 FastContext를 통합하면 종단 간 해결률이 향상되고 코딩 에이전트의 토큰 소모가 줄어들지만 추가적인 비용은 거의 발생하지 않습니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "APPO: Agentic Procedural Policy Optimization",
+    "abstract": "Recent advances in agentic Reinforcement Learning (RL) have substantially improved the multi-turn tool-use capabilities of large language model agents. However, most existing methods assign credit over coarse heuristic units, such as tool-call boundaries or fixed workflows, making it difficult to identify which intermediate decisions influence downstream outcomes. In this work, we study agentic RL from two perspectives: where to branch and how to assign credit after branching. Our pilot analysis shows that influential decision points are broadly distributed throughout the generated sequence rather than concentrated at tool calls, while token entropy alone does not reliably reflect their impact on final outcomes. Motivated by these observations, we propose Agentic Procedural Policy Optimization (APPO), which shifts branching and credit assignment from coarse interaction units to fine-grained decision points in the sequence. APPO selects branching locations using a Branching Score that combines token uncertainty with policy-induced likelihood gains of subsequent continuations, enabling more targeted exploration while filtering out spurious high-entropy positions. It further introduces procedure-level advantage scaling to better distribute credit across branched rollouts. Experiments on 13 benchmarks show that APPO consistently improves strong agentic RL baselines by nearly 4 points, while keeping efficient tool-calls and maintaining behavior interpretability.",
+    "authors": [
+      "Xucong Wang",
+      "Ziyu Ma",
+      "Yong Wang",
+      "Yuxiang Ji",
+      "Shidong Yang",
+      "Guanhua Chen",
+      "Pengkun Wang",
+      "Xiangxiang Chu"
+    ],
+    "likes": 70,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2606.12384",
+    "date_collected": "2026-06-17T07:43:11.189965+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "APPO: 의인적 절차적 정책 최적화",
+      "abstract": "최근 의인적 강화 학습의 발전으로 대형 언어 모델 에이전트들의 다중 턴 도구 사용 능력이 상당히 향상되었습니다. 그러나 기존 방법들은 일반적으로 도구 호출 경계나 고정된 작업 흐름과 같은 근사적인 단위에 크레딧을 할당하는데, 이는 중간 결정이 최종 결과에 어떤 영향을 미치는지 식별하기 어렵게 만듭니다. 본 연구에서는 의인적 강화 학습을 두 가지 측면에서 연구합니다: 어디서 가지를 칠 것인가, 그리고 가지를 친 후에 어떻게 크레딧을 할당할 것인가. 우리의 시범 분석은 영향력 있는 결정 지점이 도구 호출에 집중되는 것이 아니라 생성된 순서 전체에 널리 분포되어 있음을 보여주며, 토큰 엔트로피만으로는 그들이 최종 결과에 미치는 영향을 믿을 수 없다는 것을 보여줍니다. 이러한 관찰을 토대로 우리는 의인적 절차적 정책 최적화 (APPO)를 제안합니다. 이는 가지치기 위치를 선택할 때 토큰 불확실성과 후속 연속성의 정책 유도 가능성 증가를 결합한 Branching Score를 사용하여 보다 타겟팅된 탐색을 가능하게 하고, 잘못된 고 엔트로피 위치를 걸러내는데 도움을 줍니다. 또한 가지치기된 롤아웃 전체에 크레딧을 더 잘 분배하기 위해 절차 수준의 이점 스케일링을 도입합니다. 13개의 벤치마크 실험 결과, APPO는 효율적인 도구 호출을 유지하면서 성능 해석 가능성을 만족시키며 강력한 의인적 강화 학습 베이스라인을 거의 4점 개선시킵니다."
+    },
+    "summary": "1. 기존 방법들이 가지치기와 크레딧 할당을 근사적인 단위에 의존하는 데 반해, APPO는 세부 결정 지점으로의 초점을 옮겨 더 효율적인 탐색과 크레딧 할당을 가능케 합니다.\n2. APPO는 Branching Score를 활용하여 가지치기 위치를 선정하며, 토큰 불확실성과 정책 유도 가능성 증가를 조합하여 더 명확한 학습 경로를 제시합니다.\n3. 실험 결과는 APPO가 강력한 의인적 강화 학습 베이스라인을 거의 4점 개선시키는 것으로 나타났으며, 도구 호출 효율성을 유지하면서 행동 해석이 가능함을 확인했습니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents",
+    "abstract": "Despite recent progress, LLM agents still struggle with reasoning over long interaction histories. While current memory-augmented agents rely on a static retrieve-then-reason paradigm, this rigid pipeline design prevents them from dynamically adapting memory access to intermediate evidence discovered during inference. To bridge this gap, we propose MRAgent, a framework that combines an associative memory graph with an active reconstruction mechanism. We represent memory as a Cue-Tag-Content graph, where associative tags serve as semantic bridges connecting fine-grained cues to memory contents. Operating on this structure, our active reconstruction mechanism integrates LLM reasoning directly into memory access, allowing the agent to iteratively explore and prune retrieval paths based on accumulated evidence. This ensures that memory retrieval is dynamically adapted to the reasoning context while avoiding combinatorial explosion caused by unconstrained expansion. Experiments on the LoCoMo benchmark and LongMemEval benchmark demonstrate significant improvements over strong baselines (up to 23%), while substantially reducing token and runtime cost, highlighting the effectiveness of active and associative reconstruction for long-horizon memory reasoning.",
+    "authors": [
+      "Shuo Ji",
+      "Yibo Li",
+      "Bryan Hooi"
+    ],
+    "likes": 63,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2606.06036",
+    "date_collected": "2026-06-17T07:43:11.191041+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "기억은 복원되며, 검색되지 않습니다: LLM 에이전트를 위한 그래프 기억",
+      "abstract": "최근의 발전에도 불구하고, LLM 에이전트는 여전히 긴 상호 작용 이력에 대한 추론에 어려움을 겪습니다. 현재의 기억 증강 에이전트들은 정적 검색 후 추론 패러다임에 의존하나, 이러한 강경한 파이프라인 설계는 추론 중에 발견된 중간 증거에 동적으로 기억 접근을 조정하는 것을 방해합니다. 이 간극을 좁히기 위해, 우리는 MRAgent를 제안합니다. 이는 연상 기억 그래프와 능동적 복원 메커니즘을 결합한 프레임워크입니다. 우리는 기억을 Cue-Tag-Content 그래프로 나타내는데, 이때 연상 태그는 미시적인 단서를 기억 내용에 연결하는 의미적 다리 역할을 합니다. 이러한 구조에서 우리의 능동적 복원 메커니즘은 LLM 추론을 직접적으로 기억 접근으로 통합시킴으로써, 에이전트가 누적된 증거에 기초하여 반복적으로 탐색하고 검색 경로를 제거할 수 있게 합니다. 이를 통해 기억 검색이 추론 컨텍스트에 동적으로 적응되고, 무제한 확장으로 인한 조합 폭발을 피할 수 있습니다. LoCoMo 벤치마크 및 LongMemEval 벤치마크의 실험에서, 강력한 기준선에 비해 상당한 개선(최대 23%)이 나타났으며, 토큰 및 런타임 비용을 크게 줄임으로써, 긴 시점 기억 추론을 위한 능동적 및 연상적 복원의 효과를 강조합니다."
+    },
+    "summary": "1. LLM 에이전트들이 긴 상호 작용 이력에 대한 추론에서 어려움을 겪는 문제를 해결하기 위해 MRAgent라는 프레임워크가 제안되었습니다.\n2. 기억을 Cue-Tag-Content 그래프로 나타내고, 능동적 복원 메커니즘을 통해 LLM 추론을 기억 접근에 통합시킴으로써, 에이전트는 동적으로 검색 경로를 탐색하고 수정할 수 있습니다.\n3. 실험 결과는 능동적 및 연상적 복원이 상당한 개선을 가져오며, 기억 검색을 추론 컨텍스트에 실시간으로 조정하는 효과를 입증합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models",
+    "abstract": "This technical report introduces VibeThinker-3B, a compact dense model with 3B parameters developed to investigate how far verifiable reasoning can be pushed within a strictly small-model regime. Building upon the Spectrum-to-Signal post-training paradigm, we systematically enhance the model through an optimized pipeline that includes curriculum-based supervised fine-tuning, multi-domain reinforcement learning, and offline self-distillation. Experimental evaluations demonstrate that VibeThinker-3B achieves frontier-level performance on highly demanding verifiable tasks. Specifically, it attains a score of 94.3 on AIME26 (improving to 97.1 with claim-level test-time scaling), an 80.2 Pass@1 on LiveCodeBench v6, and exhibits strong out-of-distribution generalization with a 96.1\\% acceptance rate on recent unseen LeetCode contests. This effectively places it in the performance band of first-tier reasoning systems, matching or exceeding flagship models that are orders of magnitude larger, such as DeepSeek V3.2, GLM-5, and Gemini 3 Pro. Furthermore, a score of 93.4 on IFEval confirms that this extreme reasoning enhancement does not compromise strict instruction controllability. Extending our previous 1.5B work, these findings motivate the Parametric Compression-Coverage Hypothesis, which views verifiable reasoning as compressible into compact reasoning cores, while open-domain knowledge and general-purpose competence require broad parameter coverage over facts, concepts, and long-tail scenarios. This perspective suggests that compact models are not merely deployment-efficient substitutes, but a complementary path toward frontier-level performance in parameter-dense capability regimes.",
+    "authors": [
+      "Sen Xu",
+      "Shixi Liu",
+      "Wei Wang",
+      "Jixin Min",
+      "Yingwei Dai",
+      "Zhibin Yin",
+      "Yirong Chen",
+      "Xin Zhou",
+      "Junlin Zhang"
+    ],
+    "likes": 62,
+    "published_date": "Jun 15",
+    "url": "https://huggingface.co/papers/2606.16140",
+    "date_collected": "2026-06-17T07:43:11.192292+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "작은 언어 모델에서 검증 가능한 추론의 최전선 탐색: VibeThinker-3B",
+      "abstract": "본 기술 보고서는 3B 파라미터를 갖춘 조밀하고 소형 모델인 VibeThinker-3B를 소개하며, 엄격한 소형 모델 규모 내에서 검증 가능한 추론을 얼마나 발전시킬 수 있는지 조사했습니다. Spectrum-to-Signal 사후 훈련 패러다임을 기반으로, 과정 기반 감독 미세 조정, 다중 도메인 강화 학습, 그리고 오프라인 자가 증류를 포함하는 최적화된 파이프라인을 통해 모델을 체계적으로 향상시켰습니다. 실험 평가 결과, VibeThinker-3B가 매우 요구되는 검증 가능한 작업에서 최전선 수준의 성능을 달성함을 보여주었습니다."
+    },
+    "summary": "1. VibeThinker-3B는 Spectrum-to-Signal 후속 훈련 패러다임을 토대로 최적화된 파이프라인을 통해 엄격한 작업에서 경쟁력 있는 성능을 보여주며, DeepSeek V3.2, GLM-5, Gemini 3 Pro 등과 같은 대형 모델을 능가하는 결과를 얻었습니다.\n2. 강화 학습 및 자가 증류를 활용하여 VibeThinker-3B는 LiveCodeBench v6에서 80.2 Pass@1 점수를 기록하고 LeetCode 대회에서 96.1\\%의 심층 범위 일반화를 보이는 등 다양한 작업에 잘 대응합니다.\n3. 이러한 결과는 소형 모델이 단순히 배치 효율적인 대체품이 아니라 파라미터 밀도 높은 능력 모드에서 최전선 수준의 성능을 향한 보완적인 길임을 제안하며, 추론 가능성을 압축하여 핵심 추론 코어로의 전환 가능성을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+    "abstract": "Large Language Models (LLMs) are undergoing a fundamental transformation from conversational generators into integrated AI systems capable of reasoning, action, memory, and self-improvement. We conceptualize this transition as a shift from Chatbot to Digital Colleague: from conversational answers to persistent work. We organize this transition along two tightly coupled dimensions. First, at the cognitive core level, LLMs are advancing from Chatbot-era \"fast thinking\" systems driven by next-token prediction toward Thinking LLMs that leverage inference-time computation, Chain-of-Thought reasoning, reflection, process supervision, and reinforcement learning to support more deliberate and reliable cognition. Second, at the tool-augmented task execution level, LLMs are progressing from tool-calling Agents that invoke external resources in an ad hoc manner toward OpenClaw-style workstation systems (OpenClaw) equipped with persistent Workspaces, skills, verification loops, and governance. The \"Workspace + Skill\" paradigm makes episodic tool use colleague-like via state persistence, reusable procedures, task closure, and experience reuse. We examine data construction shifts from instruction-response pairs to State-Action-Observation trajectories and evaluation from static benchmarks to sandboxed, auditable, self-evolving AI ecosystems.",
+    "authors": [
+      "Yongheng Zhang",
+      "Ziang Liu",
+      "Jiaxuan Zhu",
+      "Shuai Wang",
+      "Xiangqi Chen",
+      "Haojing Huang",
+      "Jiayi Kuang",
+      "Siyu Chen",
+      "Ao Shen",
+      "Hao Wu",
+      "Qiufeng Wang",
+      "Qian-Wen Zhang",
+      "Junnan Dong",
+      "Wenhao Jiang",
+      "Ying Shen",
+      "Hai-Tao Zheng",
+      "Yinghui Li",
+      "Di Yin",
+      "Xing Sun",
+      "Philip S. Yu"
+    ],
+    "likes": 47,
+    "published_date": "Jun 12",
+    "url": "https://huggingface.co/papers/2606.14502",
+    "date_collected": "2026-06-17T07:43:11.193867+09:00",
+    "week": "2026-W25",
+    "translation": {
+      "title": "챗봇에서 디지털 동료로: 지속적인 자율 인공지능으로의 패러다임 변화",
+      "abstract": "대규모 언어 모델(LLMs)은 대화 생성기에서 추론, 행동, 기억, 자가 발전이 가능한 통합된 인공지능 시스템으로 기본적인 변화를 겪고 있습니다. 이 전환을 챗봇에서 디지털 동료로의 변화로 조직화하며, 이는 대화식 대답에서 지속적인 업무로의 이동을 의미합니다."
+    },
+    "summary": "1. LLMs는 Chatbot 시대의 \"빠른 사고\" 시스템에서 Chain-of-Thought 추론, 강화 학습을 활용한 Thinking LLMs로 발전하며 의도적이고 신뢰할 수 있는 인지를 지원합니다.\n2. LLMs는 Ad hoc 방식의 외부 자원 호출 에이전트에서 영구 워크스테이션 시스템인 OpenClaw로 진화하며, 상태 지속성, 재사용 가능한 절차, 작업 완료, 경험 재사용을 통해 동료와 같은 사용 방식을 제공합니다.\n3. 데이터 구축은 지시-응답 쌍에서 상태-행동-관찰 궤적으로, 평가는 정적 벤치마크에서 검증 가능하고 스스로 진화하는 AI 생태계로의 진화 중입니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

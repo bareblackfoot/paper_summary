@@ -1,0 +1,139 @@
+=== Paper Collection Started at Mon Aug 11 22:07:41 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W33
+URL: https://huggingface.co/papers/week/2025-W33
+Found 10 papers in weekly view
+Fetching likes for: GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models
+Fetching likes for: Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off
+Fetching likes for: InfiGUI-G1: Advancing GUI Grounding with Adaptive Exploration Policy
+  Optimization
+Fetching likes for: Memp: Exploring Agent Procedural Memory
+Fetching likes for: Pruning the Unsurprising: Efficient Code Reasoning via First-Token
+  Surprisal
+Fetching likes for: Hidden Dynamics of Massive Activations in Transformer Training
+Fetching likes for: GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing
+Fetching likes for: Adapting Vision-Language Models Without Labels: A Comprehensive Survey
+Fetching likes for: MELLA: Bridging Linguistic Capability and Cultural Groundedness for
+  Low-Resource Language MLLMs
+Fetching likes for: MeshLLM: Empowering Large Language Models to Progressively Understand
+  and Generate 3D Mesh
+Selected top 10 papers by likes:
+1. GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models (71 likes)
+2. Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off (33 likes)
+3. InfiGUI-G1: Advancing GUI Grounding with Adaptive Exploration Policy
+  Optimization (17 likes)
+4. Memp: Exploring Agent Procedural Memory (16 likes)
+5. Pruning the Unsurprising: Efficient Code Reasoning via First-Token
+  Surprisal (12 likes)
+6. Hidden Dynamics of Massive Activations in Transformer Training (9 likes)
+7. GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing (6 likes)
+8. Adapting Vision-Language Models Without Labels: A Comprehensive Survey (5 likes)
+9. MELLA: Bridging Linguistic Capability and Cultural Groundedness for
+  Low-Resource Language MLLMs (4 likes)
+10. MeshLLM: Empowering Large Language Models to Progressively Understand
+  and Generate 3D Mesh (3 likes)
+Found abstract: We present GLM-4.5, an open-source Mixture-of-Experts (MoE) large language
+model with 355B total par...
+Processed paper: GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models
+Found abstract: Virtual try-on aims to synthesize a realistic image of a person wearing a
+target garment, but accura...
+Processed paper: Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off
+Found abstract: The emergence of Multimodal Large Language Models (MLLMs) has propelled the
+development of autonomou...
+Processed paper: InfiGUI-G1: Advancing GUI Grounding with Adaptive Exploration Policy
+  Optimization
+Found abstract: Large Language Models (LLMs) based agents excel at diverse tasks, yet they
+suffer from brittle proce...
+Processed paper: Memp: Exploring Agent Procedural Memory
+Found abstract: Recently, Large Reasoning Models (LRMs) have demonstrated remarkable
+capabilities in code reasoning ...
+Processed paper: Pruning the Unsurprising: Efficient Code Reasoning via First-Token
+  Surprisal
+Found abstract: Massive activations are scalar values in transformer hidden states that
+achieve values orders of mag...
+Processed paper: Hidden Dynamics of Massive Activations in Transformer Training
+Found abstract: Neural Radiance Fields (NeRF) and Gaussian Splatting (GS) have recently
+transformed 3D scene represe...
+Processed paper: GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing
+Found abstract: Vision-Language Models (VLMs) have demonstrated remarkable generalization
+capabilities across a wide...
+Processed paper: Adapting Vision-Language Models Without Labels: A Comprehensive Survey
+Found abstract: Multimodal Large Language Models (MLLMs) have shown remarkable performance in
+high-resource language...
+Processed paper: MELLA: Bridging Linguistic Capability and Cultural Groundedness for
+  Low-Resource Language MLLMs
+Found abstract: We present MeshLLM, a novel framework that leverages large language models
+(LLMs) to understand and ...
+Processed paper: MeshLLM: Empowering Large Language Models to Progressively Understand
+  and Generate 3D Mesh
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Voost: A Unified and Scalable Diffusion Transformer for Bidirectional
+  Virtual Try-On and Try-Off
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: InfiGUI-G1: Advancing GUI Grounding with Adaptive Exploration Policy
+  Optimization
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Memp: Exploring Agent Procedural Memory
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Pruning the Unsurprising: Efficient Code Reasoning via First-Token
+  Surprisal
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Hidden Dynamics of Massive Activations in Transformer Training
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Adapting Vision-Language Models Without Labels: A Comprehensive Survey
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: MELLA: Bridging Linguistic Capability and Cultural Groundedness for
+  Low-Resource Language MLLMs
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: MeshLLM: Empowering Large Language Models to Progressively Understand
+  and Generate 3D Mesh
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W33.json...
+
+Updating Notion database...
+Creating new paper: GLM-4.5: 에이전틱, 추론 및 코딩 (ARC) Foundation 모델
+Creating new paper: Voost: 통합 및 확장 가능한 이중 확산 트랜스포머를 통한 양방향 가상 착용 및 탈의
+Creating new paper: InfiGUI-G1: 적응적 탐험 정책 최적화를 통한 GUI Grounding 발전
+Creating new paper: 에이전트 절차 메모리 탐구
+Creating new paper: 효율적인 코드 추론을 위한 놀라움을 제거하는 가지치기
+Creating new paper: 트랜스포머 학습에서 대규모 활성화의 숨겨진 역학
+Creating new paper: GENIE: 가우시안 인코딩을 활용한 신경 방사도 영역 대화식 편집
+Creating new paper: 레이블 없는 비전-언어 모델 적응: 포괄적인 조사
+Creating new paper: MELLA: 낮은 자원 언어 MLLM을 위한 언어 능력과 문화적 기반 연결
+Creating new paper: MeshLLM: 대규모 언어 모델을 발전적으로 이해하고 3D 메시 생성 능력을 갖추다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Aug 11 22:10:07 UTC 2025 ===
+

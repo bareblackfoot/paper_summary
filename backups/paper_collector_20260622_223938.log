@@ -1,0 +1,129 @@
+=== Paper Collection Started at Mon Jun 22 01:56:48 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W26
+URL: https://huggingface.co/papers/week/2026-W26
+Found 10 papers in weekly view
+Fetching likes for: Looped World Models
+Fetching likes for: LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling
+Fetching likes for: JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence
+Fetching likes for: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
+Fetching likes for: Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance
+Fetching likes for: Geometric Action Model for Robot Policy Learning
+Fetching likes for: DreamX-World 1.0: A General-Purpose Interactive World Model
+Fetching likes for: OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data
+Fetching likes for: VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models
+Fetching likes for: FastContext: Training Efficient Repository Explorer for Coding Agents
+Selected top 10 papers by likes:
+1. Looped World Models (398 likes)
+2. LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling (198 likes)
+3. JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence (195 likes)
+4. Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories (121 likes)
+5. Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance (113 likes)
+6. Geometric Action Model for Robot Policy Learning (112 likes)
+7. DreamX-World 1.0: A General-Purpose Interactive World Model (106 likes)
+8. OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data (105 likes)
+9. VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models (103 likes)
+10. FastContext: Training Efficient Repository Explorer for Coding Agents (89 likes)
+Found abstract: Current world models face a fundamental tension: faithful long-horizon simulation demands deep compu...
+Processed paper: Looped World Models
+Found abstract: Looped Transformers scale latent computation by repeatedly applying shared blocks, but sequential lo...
+Processed paper: LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling
+Found abstract: Many moments in the real world do not wait for a user to ask. A fire starts on a security monitor, a...
+Processed paper: JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence
+Found abstract: Data tells stories that shape society; the data journalist's job is to turn raw information into sto...
+Processed paper: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
+Found abstract: While 10B-level industrial foundation models have pushed the boundaries of image inpainting, their p...
+Processed paper: Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance
+Found abstract: Generalist robot policies must follow user instructions while reasoning about how objects, cameras, ...
+Processed paper: Geometric Action Model for Robot Policy Learning
+Found abstract: DreamX-World 1.0 is a general-purpose interactive text/image-to-video world model for controllable l...
+Processed paper: DreamX-World 1.0: A General-Purpose Interactive World Model
+Found abstract: Cloning camera motion from reference videos is an important task in video generation, as videos prov...
+Processed paper: OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data
+Found abstract: This technical report introduces VibeThinker-3B, a compact dense model with 3B parameters developed ...
+Processed paper: VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models
+Found abstract: Large Language Model (LLM) coding agents have achieved strong results on software engineering tasks,...
+Processed paper: FastContext: Training Efficient Repository Explorer for Coding Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Looped World Models
+Paper already exists, checking if translation is complete...
+Update likes: 398  ->  366
+Update date_collected: 2026-06-22T10:56:57.124544+09:00  ->  2026-06-22T07:33:32.801064+09:00
+
+Processing paper 2/10
+Title: LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling
+Paper already exists, checking if translation is complete...
+Update likes: 198  ->  197
+Update date_collected: 2026-06-22T10:56:57.127764+09:00  ->  2026-06-22T07:33:32.803410+09:00
+
+Processing paper 3/10
+Title: JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 195  ->  195
+Update date_collected: 2026-06-22T10:56:57.130570+09:00  ->  2026-06-22T07:33:32.805578+09:00
+
+Processing paper 4/10
+Title: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
+Paper already exists, checking if translation is complete...
+Update likes: 121  ->  120
+Update date_collected: 2026-06-22T10:56:57.132853+09:00  ->  2026-06-22T07:33:32.807343+09:00
+
+Processing paper 5/10
+Title: Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance
+Paper already exists, checking if translation is complete...
+Update likes: 113  ->  112
+Update date_collected: 2026-06-22T10:56:57.135148+09:00  ->  2026-06-22T07:33:32.809111+09:00
+
+Processing paper 6/10
+Title: Geometric Action Model for Robot Policy Learning
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  112
+Update date_collected: 2026-06-22T10:56:57.137644+09:00  ->  2026-06-22T07:33:32.811046+09:00
+
+Processing paper 7/10
+Title: DreamX-World 1.0: A General-Purpose Interactive World Model
+Paper already exists, checking if translation is complete...
+Update likes: 106  ->  106
+Update date_collected: 2026-06-22T10:56:57.140788+09:00  ->  2026-06-22T07:33:32.813512+09:00
+
+Processing paper 8/10
+Title: OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data
+Paper already exists, checking if translation is complete...
+Update likes: 105  ->  105
+Update date_collected: 2026-06-22T10:56:57.143314+09:00  ->  2026-06-22T07:33:32.815502+09:00
+
+Processing paper 9/10
+Title: VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 103  ->  103
+Update date_collected: 2026-06-22T10:56:57.145758+09:00  ->  2026-06-22T07:33:32.817380+09:00
+
+Processing paper 10/10
+Title: FastContext: Training Efficient Repository Explorer for Coding Agents
+Paper already exists, checking if translation is complete...
+Update likes: 89  ->  89
+Update date_collected: 2026-06-22T10:56:57.148140+09:00  ->  2026-06-22T07:33:32.819249+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W26.json...
+
+Updating Notion database...
+Updating paper: 루프된 월드 모델 (likes: 366 -> 398)
+Updating paper: 루프코더-v2: 테스트 시간 계산 확장을 위한 효율적인 한 번 루프만 (likes: 197 -> 198)
+Paper already exists with same likes count: JoyAI-VL-Interaction: 실시간 Vision-Language 상호작용 지능
+Updating paper: 데이터 저널리스트 에이전트: 데이터를 확인 가능한 멀티모달 이야기로 변환하기 (likes: 120 -> 121)
+Updating paper: Moebius: 0.2B 경량 이미지 인페인팅 프레임워크로 10B 수준의 성능 달성 (likes: 112 -> 113)
+Paper already exists with same likes count: 로봇 정책 학습을 위한 기하학적 행동 모델
+Paper already exists with same likes count: DreamX-World 1.0: 일반적인 대화식 세계 모델
+Paper already exists with same likes count: OmniDirector: 교차 페어 데이터 없이 다양한 다중 샷 카메라 클로닝
+Paper already exists with same likes count: 작은 언어 모델에서 검증 가능한 추론의 최전선 탐색: VibeThinker-3B
+Paper already exists with same likes count: 효율적인 저장소 탐색을 위한 FastContext 훈련
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 22 01:57:37 UTC 2026 ===
+

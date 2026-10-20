@@ -1,0 +1,127 @@
+=== Paper Collection Started at Sat Apr 18 22:14:08 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W17
+URL: https://huggingface.co/papers/week/2026-W17
+Found 10 papers in weekly view
+Fetching likes for: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Fetching likes for: Seedance 2.0: Advancing Video Generation for World Complexity
+Fetching likes for: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Fetching likes for: ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents
+Fetching likes for: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Fetching likes for: GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+Fetching likes for: RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time
+Fetching likes for: KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance
+Fetching likes for: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Fetching likes for: HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds
+Selected top 10 papers by likes:
+1. WildDet3D: Scaling Promptable 3D Detection in the Wild (238 likes)
+2. Seedance 2.0: Advancing Video Generation for World Complexity (136 likes)
+3. The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping (135 likes)
+4. ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents (134 likes)
+5. QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation (121 likes)
+6. GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents (109 likes)
+7. RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time (99 likes)
+8. KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance (96 likes)
+9. FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios (93 likes)
+10. HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds (80 likes)
+Found abstract: Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step...
+Processed paper: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Found abstract: Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China ...
+Processed paper: Seedance 2.0: Advancing Video Generation for World Complexity
+Found abstract: Despite the success of reinforcement learning for large language models, a common failure mode is re...
+Processed paper: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Found abstract: GUI agents drive applications through their visual interfaces instead of programmatic APIs, interact...
+Processed paper: ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents
+Found abstract: Large Language Models (LLMs) are increasingly used for code generation, yet quantum code generation ...
+Processed paper: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Found abstract: Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) ag...
+Processed paper: GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+Found abstract: Most reward models for visual generation reduce rich human judgments to a single unexplained score, ...
+Processed paper: RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time
+Found abstract: RLVR improves reasoning in large language models, but its effectiveness is often limited by severe r...
+Processed paper: KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance
+Found abstract: The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transi...
+Processed paper: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Found abstract: We introduce HY-World 2.0, a multi-modal world model framework that advances our prior project HY-Wo...
+Processed paper: HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Paper already exists, checking if translation is complete...
+Update likes: 238  ->  237
+Update date_collected: 2026-04-19T07:14:18.079370+09:00  ->  2026-04-18T07:19:16.379741+09:00
+
+Processing paper 2/10
+Title: Seedance 2.0: Advancing Video Generation for World Complexity
+Paper already exists, checking if translation is complete...
+Update likes: 136  ->  133
+Update date_collected: 2026-04-19T07:14:18.081905+09:00  ->  2026-04-18T07:19:16.385755+09:00
+
+Processing paper 3/10
+Title: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Paper already exists, checking if translation is complete...
+Update likes: 135  ->  135
+Update date_collected: 2026-04-19T07:14:18.083617+09:00  ->  2026-04-18T07:19:16.381530+09:00
+
+Processing paper 4/10
+Title: ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents
+Paper already exists, checking if translation is complete...
+Update likes: 134  ->  134
+Update date_collected: 2026-04-19T07:14:18.085303+09:00  ->  2026-04-18T07:19:16.383242+09:00
+
+Processing paper 5/10
+Title: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Paper already exists, checking if translation is complete...
+Update likes: 121  ->  121
+Update date_collected: 2026-04-19T07:14:18.087008+09:00  ->  2026-04-18T07:19:16.387529+09:00
+
+Processing paper 6/10
+Title: GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents
+Paper already exists, checking if translation is complete...
+Update likes: 109  ->  108
+Update date_collected: 2026-04-19T07:14:18.088522+09:00  ->  2026-04-18T07:19:16.389053+09:00
+
+Processing paper 7/10
+Title: RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time
+Paper already exists, checking if translation is complete...
+Update likes: 99  ->  99
+Update date_collected: 2026-04-19T07:14:18.090103+09:00  ->  2026-04-18T07:19:16.390691+09:00
+
+Processing paper 8/10
+Title: KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance
+Paper already exists, checking if translation is complete...
+Update likes: 96  ->  96
+Update date_collected: 2026-04-19T07:14:18.091984+09:00  ->  2026-04-18T07:19:16.392710+09:00
+
+Processing paper 9/10
+Title: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Paper already exists, checking if translation is complete...
+Update likes: 93  ->  91
+Update date_collected: 2026-04-19T07:14:18.094088+09:00  ->  2026-04-18T07:19:16.394878+09:00
+
+Processing paper 10/10
+Title: HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W17.json...
+
+Updating Notion database...
+Updating paper: 야생에서의 프롬프터 가능한 3D 탐지의 확장 (3D Detection in the Wild) (likes: 237 -> 238)
+Updating paper: Seedance 2.0: 세계 복잡도에 대한 비디오 생성 기술 진보 (likes: 133 -> 136)
+Paper already exists with same likes count: 과거는 지나지 않았다: 기억 강화형 동적 보상 형성
+Paper already exists with same likes count: ClawGUI: GUI 에이전트를 훈련, 평가, 배포하기 위한 통합 프레임워크
+Paper already exists with same likes count: QuanBench+: LLM 기반 양자 코드 생성을 위한 통합된 다중 프레임워크 벤치마크
+Updating paper: 게임월드: 다중모달 게임 에이전트의 표준화 및 검증 가능한 평가를 향하여 (likes: 108 -> 109)
+Paper already exists with same likes count: 합리적 보상: 추론 보상이 훈련 및 테스트 시각적 생성을 규모 증가시킴
+Paper already exists with same likes count: 최소 충분 지식 안내를 통한 강화 학습을 활용한 대형 언어 모델 추론 강화 KnowRL
+Updating paper: FORGE: 제조 시나리오에 대한 세밀한 다중 모달 평가 (likes: 91 -> 93)
+Creating new paper: HY-World 2.0: 재구성, 생성 및 시뮬레이션을 위한 다중 모달 3D 세계 모델
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Apr 18 22:15:18 UTC 2026 ===
+

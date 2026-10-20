@@ -1,0 +1,307 @@
+[
+  {
+    "title": "BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing",
+    "abstract": "We present BlenderFusion, a generative visual compositing framework that\nsynthesizes new scenes by recomposing objects, camera, and background. It\nfollows a layering-editing-compositing pipeline: (i) segmenting and converting\nvisual inputs into editable 3D entities (layering), (ii) editing them in\nBlender with 3D-grounded control (editing), and (iii) fusing them into a\ncoherent scene using a generative compositor (compositing). Our generative\ncompositor extends a pre-trained diffusion model to process both the original\n(source) and edited (target) scenes in parallel. It is fine-tuned on video\nframes with two key training strategies: (i) source masking, enabling flexible\nmodifications like background replacement; (ii) simulated object jittering,\nfacilitating disentangled control over objects and camera. BlenderFusion\nsignificantly outperforms prior methods in complex compositional scene editing\ntasks.",
+    "authors": [
+      "Jiacheng Chen",
+      "Ramin Mehran",
+      "Xuhui Jia",
+      "Saining Xie",
+      "Sanghyun Woo"
+    ],
+    "likes": 51,
+    "published_date": "Jun 20",
+    "url": "https://huggingface.co/papers/2506.17450",
+    "date_collected": "2025-07-02T07:07:48.875203+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "BlenderFusion: 3D-기반 시각 편집 및 생성적 합성",
+      "abstract": "본 연구에서는 객체, 카메라, 배경을 재구성하여 새로운 장면을 합성하는 생성적 시각 합성 프레임워크인 BlenderFusion을 제안합니다. 이는 레이어링-편집-합성 파이프라인을 따릅니다. 시각적 입력을 편집 가능한 3D 엔티티로 분할하고 변환하는 과정(레이어링), Blender에서 3D-기반 제어로 편집하는 과정(편집), 생성적 컴포지터를 사용하여 일관된 장면으로 퓨징하는 과정(합성). 저희의 생성적 컴포지터는 사전 훈련된 확산 모델을 확장하여 원본(소스) 및 편집된(타겟) 장면을 병렬로 처리합니다. 두 가지 주요 훈련 전략인 소스 마스킹(배경 교체와 같은 유연한 수정 가능)과 시뮬레이션 객체 지터링(객체 및 카메라에 대한 분리된 제어 용이화)을 사용하여 비디오 프레임으로 미세 조정됩니다. BlenderFusion은 복합적인 합성 장면 편집 작업에서 이전 방법들을 현격히 능가합니다."
+    },
+    "summary": "1. BlenderFusion은 시각적 입력을 3D 개체로 분할하고 Blender에서 3D-기반 제어로 편집한 후, 생성적 컴포지터를 사용하여 장면을 합성함.\n2. 연구에서는 사전 훈련된 확산 모델을 확장하여 소스와 편집된 장면을 동시에 처리하며, 소스 마스킹과 시뮬레이션 객체 지터링을 이용한 훈련 전략을 채택함.\n3. BlenderFusion은 복잡한 합성적 장면 편집 작업에서 이전 방법들보다 우수한 성능을 보임.",
+    "categories": [
+      "Computer Vision",
+      "Generative Modeling"
+    ]
+  },
+  {
+    "title": "Ovis-U1 Technical Report",
+    "abstract": "In this report, we introduce Ovis-U1, a 3-billion-parameter unified model\nthat integrates multimodal understanding, text-to-image generation, and image\nediting capabilities. Building on the foundation of the Ovis series, Ovis-U1\nincorporates a diffusion-based visual decoder paired with a bidirectional token\nrefiner, enabling image generation tasks comparable to leading models like\nGPT-4o. Unlike some previous models that use a frozen MLLM for generation\ntasks, Ovis-U1 utilizes a new unified training approach starting from a\nlanguage model. Compared to training solely on understanding or generation\ntasks, unified training yields better performance, demonstrating the\nenhancement achieved by integrating these two tasks. Ovis-U1 achieves a score\nof 69.6 on the OpenCompass Multi-modal Academic Benchmark, surpassing recent\nstate-of-the-art models such as Ristretto-3B and SAIL-VL-1.5-2B. In\ntext-to-image generation, it excels with scores of 83.72 and 0.89 on the\nDPG-Bench and GenEval benchmarks, respectively. For image editing, it achieves\n4.00 and 6.42 on the ImgEdit-Bench and GEdit-Bench-EN, respectively. As the\ninitial version of the Ovis unified model series, Ovis-U1 pushes the boundaries\nof multimodal understanding, generation, and editing.",
+    "authors": [
+      "Guo-Hua Wang",
+      "Shanshan Zhao",
+      "Xinjie Zhang",
+      "Liangfu Cao",
+      "Pengxin Zhan",
+      "Lunhao Duan",
+      "Shiyin Lu",
+      "Minghao Fu",
+      "Xiaohao Chen",
+      "Jianshan Zhao",
+      "Yang Li",
+      "Qing-Guo Chen"
+    ],
+    "likes": 48,
+    "published_date": "Jun 29",
+    "url": "https://huggingface.co/papers/2506.23044",
+    "date_collected": "2025-07-02T07:07:48.876761+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "Ovis-U1 기술 보고서",
+      "abstract": "본 보고서에서는 멀티모달 이해, 텍스트-이미지 생성, 이미지 편집 기능을 통합한 30억 개 파라미터의 Ovis-U1을 소개합니다. Ovis 시리즈의 기반 위에 구축된 Ovis-U1은 확산 기반 시각 디코더와 양방향 토큰 리파이너를 결합하여 GPT-4o와 유사한 이미지 생성 작업을 수행합니다. 일부 이전 모델이 생성 작업에 동결된 MLLM을 사용하는 것과 달리, Ovis-U1은 언어 모델을 기반으로 시작하는 새로운 통합 훈련 방식을 활용합니다. 이에 통합 훈련은 이해 또는 생성 작업만을 훈련하는 것보다 더 나은 성능을 냅니다. Ovis-U1은 OpenCompass 멀티모달 학술 벤치마크에서 69.6의 점수를 기록하여 Ristretto-3B 및 SAIL-VL-1.5-2B와 같은 최근 최첨단 모델을 앞섭니다."
+    },
+    "summary": "1. Ovis-U1은 멀티모달 이해, 생성 및 편집에서 성능을 끌어올리며 GPT-4o와 비교 가능한 이미지 생성 작업을 수행합니다.\n2. Ovis-U1은 언어 모델을 기반으로 한 통합 훈련을 통해 이해 및 생성 작업을 통합하는데 성공하였고 좋은 성능을 보입니다.\n3. Ovis-U1은 다양한 벤치마크에서 우수한 점수를 기록하여 다양한 작업들에 강점을 보이며, 멀티모달 이해, 생성 및 편집 영역에서 진보된 모델입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "LLaVA-Scissor: Token Compression with Semantic Connected Components for\n  Video LLMs",
+    "abstract": "In this paper, we present LLaVA-Scissor, a training-free token compression\nstrategy designed for video multimodal large language models. Previous methods\nmostly attempt to compress tokens based on attention scores, but fail to\neffectively capture all semantic regions and often lead to token redundancy.\nDifferently, we propose to leverage the Semantic Connected Components (SCC)\napproach that assigns tokens to distinct semantic regions within the token set,\nensuring comprehensive semantic coverage. The outcome is a two-step\nspatio-temporal token compression strategy that utilizes SCC in both spatial\nand temporal domains. This strategy can effectively compress tokens by\nrepresenting the entire video with a set of non-overlapping semantic tokens. We\nconduct extensive evaluations of the token compression capabilities of\nLLaVA-Scissor across diverse video understanding benchmarks, including video\nquestion answering, long video understanding, and comprehensive multi-choices\nbenchmarks. Experimental results show that the proposed LLaVA-Scissor\noutperforms other token compression methods, achieving superior performance in\nvarious video understanding benchmarks, particularly at low token retention\nratios. Project page: https://github.com/HumanMLLM/LLaVA-Scissor.",
+    "authors": [
+      "Boyuan Sun",
+      "Jiaxing Zhao",
+      "Xihan Wei",
+      "Qibin Hou"
+    ],
+    "likes": 31,
+    "published_date": "Jun 27",
+    "url": "https://huggingface.co/papers/2506.21862",
+    "date_collected": "2025-07-02T07:07:48.877849+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "LLaVA-Scissor: 비디오 LLM을 위한 의미적 연결 구성 요소를 활용한 토큰 압축",
+      "abstract": "본 논문에서는 비디오 멀티모달 대규모 언어 모델을 위한 훈련 불필요한 토큰 압축 전략인 LLaVA-Scissor를 제안합니다. 기존 방법은 대부분 주의 점수에 기반한 토큰 압축을 시도하지만 모든 의미적 영역을 효과적으로 포착하지 못하고 종종 토큰 중복으로 이어집니다. 우리는 다르게, 토큰을 토큰 세트 내에서 서로 다른 의미적 영역에 할당하는 의미적 연결 구성 요소 (SCC) 접근 방식을 활용하여 종합적인 의미적 범위를 보장합니다. 결과적으로 우리는 공간 및 시간 영역 모두에서 SCC를 활용하는 이차 시공간 토큰 압축 전략을 제안합니다. 이 전략은 비디오 전체를 상호 중첩되지 않는 의미적 토큰 집합으로 효과적으로 압축할 수 있습니다. 우리는 LLaVA-Scissor의 토큰 압축 능력을 다양한 비디오 이해 벤치마크를 통해 철저히 평가합니다."
+    },
+    "summary": "1. LLaVA-Scissor는 주의 점수가 아닌 의미적 연결 구성 요소를 활용한 토큰 압축 전략으로, 비디오 이해 벤치마크에서 우수한 성능을 보입니다.\n2. 이차 시공간 토큰 압축 전략은 영상 전체를 전체적으로 인식하기 위해 의미적 토큰으로 효과적으로 압축합니다.\n3. 실험 결과는 LLaVA-Scissor가 다른 토큰 압축 방법을 능가하며, 저 토큰 보유율에서 특히 우수한 성능을 보인다는 것을 보여줍니다.",
+    "categories": [
+      "LLM (대규모 언어 모델)",
+      "Multimodal (멀티모달)",
+      "Video (비디오)"
+    ]
+  },
+  {
+    "title": "SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via\n  Multi-Agent Multi-Turn Reinforcement Learning",
+    "abstract": "Recent advances in reinforcement learning have shown that language models can\ndevelop sophisticated reasoning through training on tasks with verifiable\nrewards, but these approaches depend on human-curated problem-answer pairs and\ndomain-specific reward engineering. We introduce SPIRAL, a self-play framework\nwhere models learn by playing multi-turn, zero-sum games against continuously\nimproving versions of themselves, eliminating the need for human supervision.\nThrough self-play, SPIRAL generates an infinite curriculum of progressively\nchallenging problems as models must constantly adapt to stronger opponents. To\nenable this self-play training at scale, We implement a fully online,\nmulti-turn, multi-agent reinforcement learning system for LLMs and propose\nrole-conditioned advantage estimation (RAE) to stabilize multi-agent training.\nUsing SPIRAL, self-play on zero-sum games produces reasoning capabilities that\ntransfer broadly. Training Qwen3-4B-Base on Kuhn Poker alone achieves 8.6%\nimprovement on math and 8.4% on general reasoning, outperforming SFT on 25,000\nexpert game trajectories. Analysis reveals that this transfer occurs through\nthree cognitive patterns: systematic decomposition, expected value calculation,\nand case-by-case analysis. Multi-game training (TicTacToe, Kuhn Poker, Simple\nNegotiation) further enhances performance as each game develops distinct\nreasoning strengths. Applying SPIRAL to a strong reasoning model\n(DeepSeek-R1-Distill-Qwen-7B) can still lead to 2.0% average improvement. These\nresults demonstrate that zero-sum games naturally develop transferable\nreasoning capabilities, highlighting a promising direction for autonomous\nreasoning development.",
+    "authors": [
+      "Bo Liu",
+      "Leon Guertler",
+      "Simon Yu",
+      "Zichen Liu",
+      "Penghui Qi",
+      "Daniel Balcells",
+      "Mickel Liu",
+      "Cheston Tan",
+      "Weiyan Shi",
+      "Min Lin",
+      "Wee Sun Lee",
+      "Natasha Jaques"
+    ],
+    "likes": 26,
+    "published_date": "Jun 30",
+    "url": "https://huggingface.co/papers/2506.24119",
+    "date_collected": "2025-07-02T07:07:48.879282+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "SPIRAL: 자기 대결을 통한 0합 게임은 다중 에이전트 다중 턴 강화학습을 통해 추론을 유도합니다",
+      "abstract": "강화학습의 최근 발전으로 언어 모델이 검증 가능한 보상을 가진 작업을 학습함으로써 정교한 추론력을 개발할 수 있었지만, 이러한 접근 방식은 인간이 선정한 문제-답 쌍과 도메인별 보상 엔지니어링에 의존합니다. 우리는 SPIRAL을 소개합니다. 이는 모델이 서로 계속 발전하는 다중 턴, 0합 게임을 플레이하며 학습하는 자기 대결 프레임워크로, 인간 감독이 필요 없어집니다. SPIRAL을 통해 모델은 강해지는 상대에게 계속 적응해야 하므로 점차 어려워지는 문제의 무한 커리큘럼을 생성합니다. 이러한 자기 대결을 위해 LLM을 위한 완전 온라인, 다중 턴, 다중 에이전트 강화학습 시스템을 구현하고 다중 에이전트 훈련을 안정화하기 위해 역할-조건화된 이점 추정(RAE)을 제안합니다. SPIRAL을 사용하면 0합 게임에서의 자기 대결이 넓게 이전 가능한 추론 능력을 얻게 됩니다. 쿤 포커에서 Qwen3-4B-Base를 훈련하는 것만으로 수학에서 8.6% 향상과 일반적인 추론에서 8.4% 향상을 달성하여 25,000개의 전문가 게임 궤적에 SFT보다 우수한 결과를 얻습니다. 분석 결과, 이러한 전이가 체계적인 분해, 기대값 계산 및 사례별 분석이라는 세 가지 인지 패턴을 통해 발생하는 것을 보여줍니다. 다중 게임 훈련(틱택토, 쿤 포커, 간단한 협상)은 각 게임이 독특한 추론 능력을 발전시킴에 따라 성능을 더욱 향상시킵니다. 강력한 추론 모델(DeepSeek-R1-Distill-Qwen-7B)에 SPIRAL을 적용해도 평균 2.0% 향상을 이끌어낼 수 있습니다. 이러한 결과는 0합 게임이 자연스럽게 전이 가능한 추론 능력을 발전시키며, 자율적인 추론 발전을 위한 융합적 방향을 강조합니다."
+    },
+    "summary": "1. SPIRAL은 자기 대결로 모델이 서로 개선되는 다중 턴, 0합 게임을 플레이하여 강화학습을 통해 추론 능력을 향상시킨다.\n2. 쿤 포커에서의 자기 대결 훈련만으로 수학에서 8.6%, 일반적인 추론에서 8.4% 향상을 이끌어내며, 강화학습 모델의 다양한 인지 패턴을 분석한다.\n3. 다중 게임 훈련은 각 게임마다 고유한 추론 능력을 키우며, 강력한 추론 모델에 적용 시키면 평균적으로 2.0% 성능 향상을 얻는다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "XVerse: Consistent Multi-Subject Control of Identity and Semantic\n  Attributes via DiT Modulation",
+    "abstract": "Achieving fine-grained control over subject identity and semantic attributes\n(pose, style, lighting) in text-to-image generation, particularly for multiple\nsubjects, often undermines the editability and coherence of Diffusion\nTransformers (DiTs). Many approaches introduce artifacts or suffer from\nattribute entanglement. To overcome these challenges, we propose a novel\nmulti-subject controlled generation model XVerse. By transforming reference\nimages into offsets for token-specific text-stream modulation, XVerse allows\nfor precise and independent control for specific subject without disrupting\nimage latents or features. Consequently, XVerse offers high-fidelity, editable\nmulti-subject image synthesis with robust control over individual subject\ncharacteristics and semantic attributes. This advancement significantly\nimproves personalized and complex scene generation capabilities.",
+    "authors": [
+      "Bowen Chen",
+      "Mengyi Zhao",
+      "Haomiao Sun",
+      "Li Chen",
+      "Xu Wang",
+      "Kang Du",
+      "Xinglong Wu"
+    ],
+    "likes": 26,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2506.21416",
+    "date_collected": "2025-07-02T07:07:48.880513+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "XVerse: 일관된 다중 주제의 아이덴티티와 의미 속성 제어를 위한 DiT 조절",
+      "abstract": "텍스트에서 이미지를 생성할 때, 특히 다중 주제에 대한 주제 아이덴티티와 의미 속성(자세, 스타일, 조명)에 세밀한 제어를 달성하는 것은 종종 Diffusion Transformers(DiTs)의 편집 가능성과 일관성을 저해합니다. 여러 접근 방식은 이상현상을 도입하거나 속성의 뒤얽힘에 시달리곤 합니다. 이러한 도전을 극복하기 위해, 우리는 새로운 다중 주제 제어 생성 모델 XVerse를 제안합니다. 참조 이미지를 토큰별 텍스트 스트림 변조를 위한 오프셋으로 변환함으로써, XVerse는 특정 주제의 정확하고 독립적인 제어를 가능하게 합니다. 결과적으로, XVerse는 개별 주제 특성과 의미 속성에 대한 강력한 제어를 제공하는 고품질, 편집 가능한 다중 주제 이미지 합성을 제공합니다. 이러한 진보는 개인화 및 복잡한 장면 생성 능력을 현저하게 향상시킵니다."
+    },
+    "summary": "1. XVerse는 다중 주제 이미지 생성에서 개별 주제의 속성과 의미 속성을 미세하게 제어할 수 있는 새로운 모델이다.\n2. 참조 이미지를 텍스트 스트림 변조의 오프셋으로 사용하여 XVerse는 주제에 대한 정밀하고 독립적인 제어를 가능하게 한다.\n3. 이에 따라 XVerse는 고충고 편집 가능한 다중 주제 이미지 합성을 통해 개인화 및 복잡한 장면 생성 능력을 현저하게 향상시킨다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "VMoBA: Mixture-of-Block Attention for Video Diffusion Models",
+    "abstract": "The quadratic complexity of full attention mechanisms poses a significant\nbottleneck for Video Diffusion Models (VDMs) aiming to generate long-duration,\nhigh-resolution videos. While various sparse attention methods have been\nproposed, many are designed as training-free inference accelerators or do not\noptimally capture the unique spatio-temporal characteristics inherent in video\ndata when trained natively. This paper introduces Video Mixture of Block\nAttention (VMoBA), a novel sparse attention mechanism specifically adapted for\nVDMs. Motivated by an in-depth analysis of attention patterns within\npre-trained video transformers, which revealed strong spatio-temporal locality,\nvarying query importance, and head-specific concentration levels, VMoBA\nenhances the original MoBA framework with three key modifications: (1) a\nlayer-wise recurrent block partition scheme (1D-2D-3D) to dynamically adapt to\ndiverse spatio-temporal attention patterns and improve efficiency; (2) global\nblock selection to prioritize the most salient query-key block interactions\nacross an entire attention head; and (3) threshold-based block selection to\ndynamically determine the number of attended blocks based on their cumulative\nsimilarity. Extensive experiments demonstrate that VMoBA significantly\naccelerates the training of VDMs on longer sequences, achieving 2.92x FLOPs and\n1.48x latency speedup, while attaining comparable or even superior generation\nquality to full attention. Furthermore, VMoBA exhibits competitive performance\nin training-free inference, offering 2.40x FLOPs and 1.35x latency speedup for\nhigh-res video generation.",
+    "authors": [
+      "Jianzong Wu",
+      "Liang Hou",
+      "Haotian Yang",
+      "Xin Tao",
+      "Ye Tian",
+      "Pengfei Wan",
+      "Di Zhang",
+      "Yunhai Tong"
+    ],
+    "likes": 25,
+    "published_date": "Jun 30",
+    "url": "https://huggingface.co/papers/2506.23858",
+    "date_collected": "2025-07-02T07:07:48.881881+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "비디오 확산 모델을 위한 블록 주의의 혼합 (VMoBA)",
+      "abstract": "전체 주의 메커니즘의 이차 복잡성은 긴 기간, 고해상도 비디오 생성을 목표로 하는 비디오 확산 모델(VDMs)에서 중요한 병목 현상을 초래한다. 다양한 희소 주의 방법이 제안되었지만, 많은 방법들은 훈련이 필요 없는 추론 가속기로 설계되었거나 비디오 데이터의 고유한 시공간 특성을 최적으로 포착하지 못한다. 본 논문은 VDMs에 특별히 적응된 혁신적인 희소 주의 메커니즘인 비디오 블록 주의의 혼합(VMoBA)를 소개한다. 사전 훈련된 비디오 트랜스포머 내의 주의 패턴을 심층 분석한 결과, 강한 시공간 국부성, 다양한 쿼리 중요성, 헤드별 집중 수준이 나타났다. VMoBA는 원래 MoBA 프레임워크를 (1) 층별 재귀 블록 분할 체계(1D-2D-3D)로 바꿔서 다양한 시공간 주의 패턴에 동적으로 적응하고 효율성을 향상시키며, (2) 전역 블록 선택을 통해 전체 주의 헤드에 걸쳐 가장 중요한 쿼리-키 블록 상호작용을 우선 순위화하고, (3) 임계값 기반 블록 선택을 통해 누적 유사성에 따라 참석하는 블록 수를 동적으로 결정한다. 방대한 실험 결과, VMoBA는 VDMs의 긴 시퀀스에서 훈련을 유의미하게 가속화시켜 2.92배 FLOPs 및 1.48배 지연 시간을 절약하면서 전체 주의 대비 동등하거나 우수한 생성 품질을 달성한다. 또한, VMoBA는 훈련이 필요 없는 추론에서도 경쟁력 있는 성능을 나타내며 고해상도 비디오 생성에 대해 2.40배 FLOPs 및 1.35배 지연 시간을 절약한다."
+    },
+    "summary": "1. 비디오 확산 모델(VDMs)을 위한 새로운 희소 주의 메커니즘인 VMoBA를 소개하였으며, 이는 긴 시퀀스에서 훈련을 가속화하고 생성 품질을 향상시키는 효과를 보였다.\n2. VMoBA는 층별 재귀 블록 분할 체계, 전역 블록 선택, 임계값 기반 블록 선택의 세 가지 특징을 가지며, 여러 실험에서 효과를 입증하였다.\n3. 쿼리 중요성, 시공간 국부성, 헤드별 집중 수준을 고려하여 VMoBA는 VDMs에 적합한 혼합형 주의 메커니즘으로 빠른 훈련과 높은 생성 품질을 제공한다.",
+    "categories": [
+      "NLP",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Calligrapher: Freestyle Text Image Customization",
+    "abstract": "We introduce Calligrapher, a novel diffusion-based framework that\ninnovatively integrates advanced text customization with artistic typography\nfor digital calligraphy and design applications. Addressing the challenges of\nprecise style control and data dependency in typographic customization, our\nframework incorporates three key technical contributions. First, we develop a\nself-distillation mechanism that leverages the pre-trained text-to-image\ngenerative model itself alongside the large language model to automatically\nconstruct a style-centric typography benchmark. Second, we introduce a\nlocalized style injection framework via a trainable style encoder, which\ncomprises both Qformer and linear layers, to extract robust style features from\nreference images. An in-context generation mechanism is also employed to\ndirectly embed reference images into the denoising process, further enhancing\nthe refined alignment of target styles. Extensive quantitative and qualitative\nevaluations across diverse fonts and design contexts confirm Calligrapher's\naccurate reproduction of intricate stylistic details and precise glyph\npositioning. By automating high-quality, visually consistent typography,\nCalligrapher surpasses traditional models, empowering creative practitioners in\ndigital art, branding, and contextual typographic design.",
+    "authors": [
+      "Yue Ma",
+      "Qingyan Bai",
+      "Hao Ouyang",
+      "Ka Leong Cheng",
+      "Qiuyu Wang",
+      "Hongyu Liu",
+      "Zichen Liu",
+      "Haofan Wang",
+      "Jingye Chen",
+      "Yujun Shen",
+      "Qifeng Chen"
+    ],
+    "likes": 24,
+    "published_date": "Jun 30",
+    "url": "https://huggingface.co/papers/2506.24123",
+    "date_collected": "2025-07-02T07:07:48.883302+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "캘리그래퍼: 프리스타일 텍스트 이미지 커스터마이징",
+      "abstract": "캘리그래퍼(Calligrapher)는 디지털 캘리그라피와 디자인 응용 프로그램을 위한 고급 텍스트 커스터마이징과 예술적 타이포그래피를 혁신적으로 통합하는 확산 기반 프레임워크를 소개합니다."
+    },
+    "summary": "1. 캘리그래퍼는 세 가지 주요 기술적 기여를 통해 정확한 스타일 제어와 데이터 의존성 문제를 해결합니다.\n2. 자가 증류 메커니즘을 개발하여 사전 훈련된 텍스트-이미지 생성 모델을 활용하여 스타일 중심의 타이포그래피 벤치마크를 자동으로 구축합니다.\n3. 지역화된 스타일 주입 프레임워크를 소개하여 견고한 스타일 특성 추출 및 참고 이미지로부터 강건한 스타일 특징 추출력이 포함된다.",
+    "categories": [
+      "NLP",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Do Vision-Language Models Have Internal World Models? Towards an Atomic\n  Evaluation",
+    "abstract": "Internal world models (WMs) enable agents to understand the world's state and\npredict transitions, serving as the basis for advanced deliberative reasoning.\nRecent large Vision-Language Models (VLMs), such as OpenAI o3, GPT-4o and\nGemini, exhibit potential as general-purpose WMs. While the latest studies have\nevaluated and shown limitations in specific capabilities such as visual\nunderstanding, a systematic evaluation of VLMs' fundamental WM abilities\nremains absent. Drawing on comparative psychology and cognitive science, we\npropose a two-stage framework that assesses Perception (visual, spatial,\ntemporal, quantitative, and motion) and Prediction (mechanistic simulation,\ntransitive inference, compositional inference) to provide an atomic evaluation\nof VLMs as WMs. Guided by this framework, we introduce WM-ABench, a large-scale\nbenchmark comprising 23 fine-grained evaluation dimensions across 6 diverse\nsimulated environments with controlled counterfactual simulations. Through 660\nexperiments on 15 latest commercial and open-source VLMs, we find that these\nmodels exhibit striking limitations in basic world modeling abilities. For\ninstance, almost all models perform at near-random accuracy when distinguishing\nmotion trajectories. Additionally, they lack disentangled understanding --\ne.g., some models tend to believe blue objects move faster than green ones.\nMore rich results and analyses reveal significant gaps between VLMs and\nhuman-level world modeling.",
+    "authors": [
+      "Qiyue Gao",
+      "Xinyu Pi",
+      "Kevin Liu",
+      "Junrong Chen",
+      "Ruolan Yang",
+      "Xinqi Huang",
+      "Xinyu Fang",
+      "Lu Sun",
+      "Gautham Kishore",
+      "Bo Ai",
+      "Stone Tao",
+      "Mengyang Liu",
+      "Jiaxi Yang",
+      "Chao-Jung Lai",
+      "Chuanyang Jin",
+      "Jiannan Xiang",
+      "Benhao Huang",
+      "Zeming Chen",
+      "David Danks",
+      "Hao Su",
+      "Tianmin Shu",
+      "Ziqiao Ma"
+    ],
+    "likes": 23,
+    "published_date": "Jun 27",
+    "url": "https://huggingface.co/papers/2506.21876",
+    "date_collected": "2025-07-02T07:07:48.885195+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "비전-언어 모델은 내부 세계 모델을 가지고 있을까? 원자적 평가를 향해",
+      "abstract": "내부 세계 모델(World Models, WMs)은 에이전트가 세계의 상태를 이해하고 전이를 예측하는 것을 가능케 하며, 고급 권고적 추론의 기초 역할을 한다. 최근 대규모 비전-언어 모델(Vision-Language Models, VLMs)인 OpenAI o3, GPT-4o, Gemini 등은 일반적 목적의 WMs로의 잠재력을 보여준다. 이전 연구는 시각 이해와 같은 특정 기능들의 한계를 평가하고 나타냈지만, VLMs의 기본적인 WM 능력을 체계적으로 평가한 연구는 부족하다. 우리는 비교심리학과 인지과학에 착안하여 VLMs를 WM으로 평가하기 위한 지각(시각, 공간, 시간적, 양적, 움직임)과 예측(기계적 시뮬레이션, 숨김 추론, 구성적 추론)을 평가하는 2단계 프레임워크를 제안한다. 이 프레임워크에 따라 우리는 WM-ABench를 소개하는데, 이는 6가지의 다양한 시뮬레이션 환경과 제어된 대체사실적 시뮬레이션을 포함한 23개의 세세한 평가 차원으로 구성된 대규모 벤치마크이다. 최신 상용 및 오픈소스 VLMs 15개를 이용한 660개 실험에서, 이러한 모델들은 기본적인 세계 모델링 능력에서 뚜렷한 한계를 보인다. 예를 들어, 거의 모든 모델이 움직임 궤적을 구별할 때 거의 무작위 정확도를 보인다. 게다가, 이러한 모델들은 분리된 이해 능력이 부족하며, 예를 들어, 어떤 모델들은 파란 물체가 녹색 물체보다 빠르게 움직인다고 믿는 경향을 보인다. 좀 더 풍부한 결과와 분석들은 VLMs와 인간 수준의 세계 모델링 간의 중요한 격차를 보여준다."
+    },
+    "summary": "1. 최근 연구는 VLMs의 특정 능력에 한계가 있음을 보여주었지만, VLMs의 기본적인 세계 모델링 능력에 대한 체계적 평가는 부족한 상황이다.\n2. 인지과학과 비교심리학을 기반으로, VLMs의 세계 모델링 능력을 원자적으로 평가하기 위한 2단계 프레임워크가 제안되었다.\n3. 다수 실험 결과는 VLMs가 움직임 궤적을 구별하는 데 거의 무작위 정확도를 보이고, 인간 수준의 세계 모델링과의 중요한 차이점을 드러내고 있다.",
+    "categories": [
+      "NLP",
+      "LLM"
+    ]
+  },
+  {
+    "title": "ShotBench: Expert-Level Cinematic Understanding in Vision-Language\n  Models",
+    "abstract": "Cinematography, the fundamental visual language of film, is essential for\nconveying narrative, emotion, and aesthetic quality. While recent\nVision-Language Models (VLMs) demonstrate strong general visual understanding,\ntheir proficiency in comprehending the nuanced cinematic grammar embedded\nwithin individual shots remains largely unexplored and lacks robust evaluation.\nThis critical gap limits both fine-grained visual comprehension and the\nprecision of AI-assisted video generation. To address this, we introduce\nShotBench, a comprehensive benchmark specifically designed for cinematic\nlanguage understanding. It features over 3.5k expert-annotated QA pairs from\nimages and video clips, meticulously curated from over 200 acclaimed\n(predominantly Oscar-nominated) films and spanning eight key cinematography\ndimensions. Our evaluation of 24 leading VLMs on ShotBench reveals their\nsubstantial limitations: even the top-performing model achieves less than 60%\naverage accuracy, particularly struggling with fine-grained visual cues and\ncomplex spatial reasoning. To catalyze advancement in this domain, we construct\nShotQA, a large-scale multimodal dataset comprising approximately 70k cinematic\nQA pairs. Leveraging ShotQA, we develop ShotVL through supervised fine-tuning\nand Group Relative Policy Optimization. ShotVL significantly outperforms all\nexisting open-source and proprietary models on ShotBench, establishing new\nstate-of-the-art performance. We open-source our models, data, and code to\nfoster rapid progress in this crucial area of AI-driven cinematic understanding\nand generation.",
+    "authors": [
+      "Hongbo Liu",
+      "Jingwen He",
+      "Yi Jin",
+      "Dian Zheng",
+      "Yuhao Dong",
+      "Fan Zhang",
+      "Ziqi Huang",
+      "Yinan He",
+      "Yangguang Li",
+      "Weichao Chen",
+      "Yu Qiao",
+      "Wanli Ouyang",
+      "Shengjie Zhao",
+      "Ziwei Liu"
+    ],
+    "likes": 21,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2506.21356",
+    "date_collected": "2025-07-02T07:07:48.886750+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "ShotBench: 전문가 수준의 비전-언어에서의 영화 이해",
+      "abstract": "영화의 기본 시각 언어인 영화촬영은 이야기, 감정, 미학적 품질을 전달하는 데 중요합니다. 최근 비전-언어 모델(Vision-Language Models, VLMs)은 강력한 일반적인 시각 이해력을 보이지만, 개별 샷에 내재된 미묘한 영화 문법을 완벽히 이해하는 능력은 거의 탐구되지 않았으며 견고한 평가를 받지 못합니다. 이 비용은 세밀한 시각 이해와 AI보조 비디오 생성의 정밀성을 제한합니다. 이에 우리는 영화 언어 이해를 위해 특별히 디자인된 포괄적인 벤치마크인 ShotBench를 소개합니다."
+    },
+    "summary": "1. ShotBench는 영화 언어 이해를 위해 설계된 벤치마크로, 200편 이상의 명성 있는 (주로 아카데미상 후보) 영화에서 세심하게 선정된 3.5천개 이상의 전문가 주석이 달린 이미지와 비디오 클립에서 파생된 질의응답(QA) 쌍을 제공합니다.\n2. ShotBench에서 24개 주요 VLM을 평가한 결과, 가장 성능이 우수한 모델도 평균 정확도가 60% 미만으로, 세심한 시각적 단서와 복잡한 공간적 추론에 특히 어려움을 겪습니다.\n3. ShotQA를 활용하여 ShotVL을 개발하고, 지도 미세 조정과 그룹 상대적 정책 최적화를 통해 ShotBench에서 모든 기존 오픈소스 및 프로퍼티러리 모델을 획기적으로 능가하는 새로운 최첨단 성능을 확립했습니다.",
+    "categories": [
+      "NLP",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Listener-Rewarded Thinking in VLMs for Image Preferences",
+    "abstract": "Training robust and generalizable reward models for human visual preferences\nis essential for aligning text-to-image and text-to-video generative models\nwith human intent. However, current reward models often fail to generalize, and\nsupervised fine-tuning leads to memorization, demanding complex annotation\npipelines. While reinforcement learning (RL), specifically Group Relative\nPolicy Optimization (GRPO), improves generalization, we uncover a key failure\nmode: a significant drop in reasoning accuracy occurs when a model's reasoning\ntrace contradicts that of an independent, frozen vision-language model\n(\"listener\") evaluating the same output. To address this, we introduce a\nlistener-augmented GRPO framework. Here, the listener re-evaluates the\nreasoner's chain-of-thought to provide a dense, calibrated confidence score,\nshaping the RL reward signal. This encourages the reasoner not only to answer\ncorrectly, but to produce explanations that are persuasive to an independent\nmodel. Our listener-shaped reward scheme achieves best accuracy on the\nImageReward benchmark (67.4%), significantly improves out-of-distribution (OOD)\nperformance on a large-scale human preference dataset (1.2M votes, up to +6%\nover naive reasoner), and reduces reasoning contradictions compared to strong\nGRPO and SFT baselines. These results demonstrate that listener-based rewards\nprovide a scalable, data-efficient path to aligning vision-language models with\nnuanced human preferences. We will release our reasoning model here:\nhttps://huggingface.co/alexgambashidze/qwen2.5vl_image_preference_reasoner.",
+    "authors": [
+      "Alexander Gambashidze",
+      "Li Pengyi",
+      "Matvey Skripkin",
+      "Andrey Galichin",
+      "Anton Gusarov",
+      "Konstantin Sobolev",
+      "Andrey Kuznetsov",
+      "Ivan Oseledets"
+    ],
+    "likes": 19,
+    "published_date": "Jun 28",
+    "url": "https://huggingface.co/papers/2506.22832",
+    "date_collected": "2025-07-02T07:07:48.888003+09:00",
+    "week": "2025-W27",
+    "translation": {
+      "title": "이미지 선호도를 위한 VLM에서 청취자 보상 사고",
+      "abstract": "인간의 시각적 선호도에 대한 견고하고 일반화된 보상 모델을 훈련시키는 것은 텍스트-이미지 및 텍스트-비디오 생성 모델을 인간의 의도와 일치시키는 데 중요합니다. 그러나 현재의 보상 모델은 일반화에 실패하고 지도학습 미세조정은 메모리제이션을 유도하여 복잡한 주석 파이프라인을 요구합니다. 강화학습(RL) 중 특히 군집 상대 정책 최적화(GRPO)는 일반화를 개선하지만, 우리는 핵심 실패 모드를 발견했습니다: 모델의 추론 추적이 같은 출력을 평가하는 독립적이고 고정된 비전-언어 모델(\"청취자\")과 상충할 때 추리 정확도가 크게 하락합니다. 이를 해결하기 위해 우리는 청취자를 보강한 GRPO 프레임워크를 소개합니다."
+    },
+    "summary": "1. 인간의 시각적 선호도를 위한 견고하고 일반화된 보상 모델 훈련이 중요하며, 명시적인 미세조정은 메모리제이션을 유도하므로 보상 모델의 일반화 문제를 해결하는 데 어려움이 있습니다.\n2. 강화학습을 통해 일반화를 개선하는 동시에 추리 정확도를 낮추는 핵심 실패 모드가 있으며, 이를 해결하기 위해 청취자를 보강한 GRPO 프레임워크를 제안하였습니다.\n3. 청취자가 추리자의 사고 과정을 다시 평가하여 밀도 있는 보상 신호를 제공하고, 이를 통해 일반화와 설득력 있는 설명을 도모하여 인간의 선호도와 일치시키는 데 효과적입니다.",
+    "categories": [
+      "NLP",
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "title": "Self-Distilled RLVR",
+    "abstract": "On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This paradigm selects a larger model as the teacher to provide dense, fine-grained signals for each sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR), which only obtains sparse signals from verifiable outcomes in the environment. Recently, the community has explored on-policy self-distillation (OPSD), where the same model serves as both teacher and student, with the teacher receiving additional privileged information such as reference answers to enable self-evolution. This paper demonstrates that learning signals solely derived from the privileged teacher result in severe information leakage and unstable long-term training. Accordingly, we identify the optimal niche for self-distillation and propose RLSD (RLVR with Self-Distillation). Specifically, we leverage self-distillation to obtain token-level policy differences for determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable update directions from environmental feedback (e.g., response correctness). This enables RLSD to simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence ceiling and superior training stability.",
+    "authors": [
+      "Chenxu Yang",
+      "Chuanyu Qin",
+      "Qingyi Si",
+      "Minghui Chen",
+      "Naibin Gu",
+      "Dingyu Yao",
+      "Zheng Lin",
+      "Weiping Wang",
+      "Jiaqi Wang",
+      "Nan Duan"
+    ],
+    "likes": 79,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.03128",
+    "date_collected": "2026-04-07T07:16:23.419022+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "자기 생성 강화학습 기반의 Self-Distilled RLVR",
+      "abstract": "온-폴리시 디스틸레이션(OPD)은 LLM 커뮤니티에서 인기 있는 훈련 패러다임이 되었습니다. RLVR(확인 가능 보상 강화학습)과 대조적으로, OPD는 각 샘플된 경로에 밀도 높고 세밀한 신호를 제공하기 위해 더 큰 모델을 선생님으로 선택합니다. 최근, 커뮤니티는 동일한 모델이 선생님과 학생 역할을 모두 수행하는 온-폴리시 자기 디스틸레이션(OPSD)을 탐구했습니다. 본 연구는 특권적 선생님으로부터 유도된 학습 신호만으로는 심각한 정보 누출과 불안정한 장기적 훈련을 초래한다는 것을 입증합니다. 이에 우리는 자기 생성 디스틸레이션의 최적적 용도를 찾아 RLSD(자기 생성 강화학습 기반의 RLVR)를 제안합니다. 구체적으로, 우리는 토큰-레벨 정책 차이를 얻기 위해 자기 생성 디스틸레이션을 활용하고, 환경 피드백(예: 응답 정확도)으로부터 신뢰할 수 있는 업데이트 방향을 도출하기 위해 RLVR을 계속 사용합니다. 이는 RLSD가 RLVR과 OPSD의 장점을 동시에 활용하여 보다 높은 수렴 천장과 우수한 훈련 안정성을 달성할 수 있게 합니다."
+    },
+    "summary": "1. 온-폴리시 디스틸레이션(OPD)은 밀도 높고 세밀한 신호를 제공하는 훈련 패러다임이며, 온-폴리시 자기 디스틸레이션(OPSD)은 동일한 모델로 자기 진화를 가능하게 합니다.\n2. 특권적 선생님의 학습 신호만으로는 정보 누출과 훈련 불안정성을 초래하며, 자기 생성 강화학습 기반의 RLSD는 이를 극복하는 최적의 솔루션을 제시합니다.\n3. RLSD는 선생님으로부터 정책 차이를, 환경 피드백으로부터 신뢰할 수 있는 업데이트 방향을 얻어 RLVR과 OPSD의 장점을 동시에 활용하여 훈련 안정성과 수렴력을 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "A Simple Baseline for Streaming Video Understanding",
+    "abstract": "Recent streaming video understanding methods increasingly rely on complex memory mechanisms to handle long video streams. We challenge this trend with a simple finding: a sliding-window baseline that feeds only the most recent N frames to an off-the-shelf VLM already matches or surpasses published streaming models. We formalize this baseline as SimpleStream and evaluate it against 13 major offline and online video LLM baselines on OVO-Bench and StreamingBench. Despite its simplicity, SimpleStream delivers consistently strong performance. With only 4 recent frames, it reaches 67.7% average accuracy on OVO-Bench and 80.59% on StreamingBench. Controlled ablations further show that the value of longer context is backbone-dependent rather than uniformly increasing with model scale, and reveal a consistent perception-memory trade-off: adding more historical context can improve recall, but often weakens real-time perception. This suggests that stronger memory, retrieval, or compression modules should not be taken as evidence of progress unless they clearly outperform SimpleStream under the same protocol. We therefore argue that future streaming benchmarks should separate recent-scene perception from long-range memory, so that performance improvements from added complexity can be evaluated more clearly.",
+    "authors": [
+      "Yujiao Shen",
+      "Shulin Tian",
+      "Jingkang Yang",
+      "Ziwei Liu"
+    ],
+    "likes": 53,
+    "published_date": "Apr 2",
+    "url": "https://huggingface.co/papers/2604.02317",
+    "date_collected": "2026-04-07T07:16:23.420487+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "스트리밍 비디오 이해를 위한 간단한 베이스라인",
+      "abstract": "최근 스트리밍 비디오 이해 방법은 점점 더 긴 비디오 스트림을 처리하기 위해 복잡한 메모리 메커니즘에 의존하고 있습니다. 이러한 추세에 대해 우리는 간단한 발견으로 도전합니다: 최근 N개 프레임만 최신 VLM에 공급하는 슬라이딩 윈도우 베이스라인이 이미 발표된 스트리밍 모델들을 맞거나 능가합니다. 우리는 이 기준을 SimpleStream으로 형식화하고 OVO-Bench와 StreamingBench에서 13개의 주요 오프라인 및 온라인 비디오 LLM 베이스라인과 평가합니다. SimpleStream은 그 간단함에도 일관되게 강력한 성능을 발휘합니다. 최근 4프레임만 있어도 OVO-Bench에서 67.7% 평균 정확도, StreamingBench에서 80.59%에 도달합니다. 제어된 제외 실험은 더 긴 컨텍스트의 가치가 백본에 따라 일정하지 않고 모델 규모와 균일하게 증가하는 것이 아니라 일관된 지각-기억 트레이드오프를 나타내는 것을 보여줍니다: 더 많은 역사적 컨텍스트를 추가할 수록 리콜을 개선할 수 있지만 종종 실시간 지각을 약화시킵니다. 따라서 보다 강력한 메모리, 검색 또는 압축 모듈은 동일한 프로토콜 하에서 SimpleStream을 명확하게 능가하지 않는 한 진전의 증거로 보아서는 안 됩니다. 따라서, 미래의 스트리밍 벤치마크에서는 최신 씬 지각과 장거리 기억을 분리함으로써 복잡성이 추가되었을 때의 성능 향상을 더 명확하게 평가할 수 있도록 해야 한다고 주장합니다."
+    },
+    "summary": "1. 최근 스트리밍 비디오 이해 기법은 복잡한 메모리 메커니즘보다 간단한 슬라이딩 윈도우 베이스라인인 SimpleStream이 뛰어난 성능을 보이는 것을 발견함.\n2. SimpleStream은 4개의 최근 프레임으로만 67.7%의 정확도를 달성하며, 더 많은 과거 컨텍스트 추가는 실시간 지각을 약화시키는 것을 보여줌.\n3. 긴 비디오 스트림 처리에 강력한 메모리 모듈이 추가 복잡성의 진전을 증명하지 못한다면, SimpleStream과 동일한 프로토콜 하에서의 우수성을 명확히 보여주어야 함.",
+    "categories": [
+      "LLM",
+      "Video",
+      "Other"
+    ]
+  },
+  {
+    "title": "Token Warping Helps MLLMs Look from Nearby Viewpoints",
+    "abstract": "Can warping tokens, rather than pixels, help multimodal large language models (MLLMs) understand how a scene appears from a nearby viewpoint? While MLLMs perform well on visual reasoning, they remain fragile to viewpoint changes, as pixel-wise warping is highly sensitive to small depth errors and often introduces geometric distortions. Drawing on theories of mental imagery that posit part-level structural representations as the basis for human perspective transformation, we examine whether image tokens in ViT-based MLLMs serve as an effective substrate for viewpoint changes. We compare forward and backward warping, finding that backward token warping, which defines a dense grid on the target view and retrieves a corresponding source-view token for each grid point, achieves greater stability and better preserves semantic coherence under viewpoint shifts. Experiments on our proposed ViewBench benchmark demonstrate that token-level warping enables MLLMs to reason reliably from nearby viewpoints, consistently outperforming all baselines including pixel-wise warping approaches, spatially fine-tuned MLLMs, and a generative warping method.",
+    "authors": [
+      "Phillip Y. Lee",
+      "Chanho Park",
+      "Mingue Park",
+      "Seungwoo Yoo",
+      "Juil Koo",
+      "Minhyuk Sung"
+    ],
+    "likes": 21,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.02870",
+    "date_collected": "2026-04-07T07:16:23.422021+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "토큰 와핑이 MLLM이 가까운 시각에서 바라보는 능력을 향상시킬까?",
+      "abstract": "화소 대신 토큰을 와핑하는 것이 다중 모달 대규모 언어 모델(MLLM)이 어떻게 가까운 시각에서 장면을 이해하는 데 도움이 될까? MLLM은 시각적 추론에서 잘 작동하지만 시각점 변환에 취약한데, 이는 화소별 와핑이 작은 깊이 오차에 매우 민감하고 종종 기하학적 왜곡을 초래하기 때문이다. 우리는 인간의 시각적 변환의 기초로 부분 수준 구조적 표현을 주장하는 정신적 상상력 이론에 바탕을 두어, ViT 기반 MLLM에서의 이미지 토큰이 시각점 변화에 효과적인 기저로 작용하는지 검토한다. 우리는 전방 및 후방 와핑을 비교하여, 대상 뷰에 밀도 그리드를 정의하고 각 그리드 지점에 대해 해당 소스-뷰 토큰을 검색하는 후방 토큰 와핑이 시각점 변화에 대한 안정성을 보다 높이고 의미 일관성을 더 잘 보존한다는 것을 발견한다. 제안된 ViewBench 벤치마크에서의 실험은 토큰 수준 와핑이 MLLM이 가까운 시각에서 신뢰성 있게 추론하도록 만들며, 모든 기준선인 화소별 와핑 방법, 공간적으로 세분화된 MLLM 및 생성적 와핑 방법을 포함한 모든 기준선들을 일관되게 능가함을 보여준다."
+    },
+    "summary": "1. 이미지 토큰을 활용한 MLLM의 시각점 변화에 대한 안정성 및 의미 일관성 분석.\n2. 후방 토큰 와핑이 다중 모달 대규모 언어 모델의 시각적 추론 능력을 향상시킬 수 있는 가능성 증명.\n3. 제안된 ViewBench 벤치마크를 활용한 실험 결과, 토큰 수준 와핑이 모든 기준선 모델들을 능가하며 가까운 시각에서의 신뢰성 있는 추론을 가능케 함.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?",
+    "abstract": "Multimodal Large Language Models (MLLMs) are evolving from passive observers into active agents, solving problems through Visual Expansion (invoking visual tools) and Knowledge Expansion (open-web search). However, existing evaluations fall short: they lack flexible tool integration, test visual and search tools separately, and evaluate primarily by final answers. Consequently, they cannot verify if tools were actually invoked, applied correctly, or used efficiently. To address this, we introduce Agentic-MME, a process-verified benchmark for Multimodal Agentic Capabilities. It contains 418 real-world tasks across 6 domains and 3 difficulty levels to evaluate capability synergy, featuring over 2,000 stepwise checkpoints that average 10+ person-hours of manual annotation per task. Each task includes a unified evaluation framework supporting sandboxed code and APIs, alongside a human reference trajectory annotated with stepwise checkpoints along dual-axis: S-axis and V-axis. To enable true process-level verification, we audit fine-grained intermediate states rather than just final answers, and quantify efficiency via an overthinking metric relative to human trajectories. Experimental results show the best model, Gemini3-pro, achieves 56.3% overall accuracy, which falls significantly to 23.0% on Level-3 tasks, underscoring the difficulty of real-world multimodal agentic problem solving.",
+    "authors": [
+      "Qianshan Wei",
+      "Yishan Yang",
+      "Siyi Wang",
+      "Jinglin Chen",
+      "Binyu Wang",
+      "Jiaming Wang",
+      "Shuang Chen",
+      "Zechen Li",
+      "Yang Shi",
+      "Yuqi Tang",
+      "Weining Wang",
+      "Yi Yu",
+      "Chaoyou Fu",
+      "Qi Li",
+      "Yi-Fan Zhang"
+    ],
+    "likes": 20,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.03016",
+    "date_collected": "2026-04-07T07:16:23.424014+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "MLLM과 가능성: Agentic 능력이 멀티모달 인지에 주는 영향은 무엇인가?",
+      "abstract": "멀티모달 대형 언어 모델(MLLMs)은 시각적 도구를 활용하는 Visual Expansion과 웹 검색을 통한 Knowledge Expansion을 통해 문제를 해결하는 능동적 요소로 진화하고 있다. 그러나 기존의 평가 방식은 유연한 도구 통합이 부족하며 시각적 및 검색 도구를 별도로 테스트하고 주로 최종 답변을 평가한다. 그 결과, 도구가 실제로 활성화되었는지, 올바르게 적용되었는지 또는 효율적으로 사용되었는지를 확인할 수 없다. 이를 해결하기 위해 우리는 Agentic-MME를 소개한다. 이는 멀티모달 에이전트 능력을 검증하기 위한 프로세스 기반 벤치마크이다. 6개의 도메인과 3개의 난이도 수준에서 418개의 실제 업무를 담고 있으며, 능력 시너지를 평가하며 개별 작업 당 평균 10명 이상의 작업 시간을 요하는 2,000개 이상의 점검점을 특징으로 한다. 각 작업은 S-축과 V-축을 통해 단계적 확인점이 주석 처리된 인간 참조 궤적과 함께 보호된 코드와 API를 지원하는 통합 평가 프레임워크를 포함한다. 최종 답변뿐만 아니라 계산된 효율성을 인간 궤적을 기준으로 하는 과거 치가 포함된 세부 중간 상태를 감사하며 진정한 프로세스 수준 검증을 가능하게 한다. 실험 결과는 최고 모델인 Gemini3-pro가 56.3%의 전체 정확도를 달성한다는 것을 보여주며, 이는 실제 세계의 멀티모달 에이전크 문제 해결의 어려움을 강조한다."
+    },
+    "summary": "1. MLLM은 Visual Expansion과 Knowledge Expansion을 통해 문제를 해결하는 능동적 에이전트로 진화하고 있으나, 기존 평가 방식의 한계로 답변의 최종 결과만으로는 도구 활용, 올바른 적용, 효율적 사용을 확인하기 힘들다.\n2. Agentic-MME는 멀티모달 에이전트 능력을 검증하기 위한 벤치마크로, 실제 업무 418개를 포함하며 능력 시너지와 효율성을 평가하며 프로세스 레벨 검증이 가능하다.\n3. 실험 결과는 최고 모델인 Gemini3-pro가 전체 정확도 56.3%를 달성하나, Level-3 작업에서는 23.0%에 그침으로 실제 세계 멀티모달 에이전트 문제 해결의 어려움을 보여준다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
+    "abstract": "Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples. This creates a trade-off that pretraining scaling laws, such as Chinchilla, do not address. We present Train-to-Test (T^2) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets. T^2 modernizes pretraining scaling laws with pass@k modeling used for test-time scaling, then jointly optimizes pretraining and test-time decisions. Forecasts from T^2 are robust over distinct modeling approaches: measuring joint scaling effect on the task loss and modeling impact on task accuracy. Across eight downstream tasks, we find that when accounting for inference cost, optimal pretraining decisions shift radically into the overtraining regime, well-outside of the range of standard pretraining scaling suites. We validate our results by pretraining heavily overtrained models in the optimal region that T^2 scaling forecasts, confirming their substantially stronger performance compared to pretraining scaling alone. Finally, as frontier LLMs are post-trained, we show that our findings survive the post-training stage, making T^2 scaling meaningful in modern deployments.",
+    "authors": [
+      "Nicholas Roberts",
+      "Sungjun Cho",
+      "Zhiqi Gao",
+      "Tzu-Heng Huang",
+      "Albert Wu",
+      "Gabriel Orlanski",
+      "Avi Trost",
+      "Kelly Buchanan",
+      "Aws Albarghouthi",
+      "Frederic Sala"
+    ],
+    "likes": 14,
+    "published_date": "Apr 1",
+    "url": "https://huggingface.co/papers/2604.01411",
+    "date_collected": "2026-04-07T07:16:23.425775+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "테스트 시간 스케일링은 오버트레이닝을 계산적으로 최적화합니다",
+      "abstract": "현대적인 LLMs는 테스트 시간에 스케일링을 하며, 예를 들어 반복 샘플링을 통해 모델 크기와 샘플 수에 따라 추론 비용이 증가합니다. 이는 Chinchilla와 같은 사전 학습 스케일링 법칙에서 다루지 않는 트레이드오프를 만듭니다. 우리는 고정된 엔드-투-엔드 예산 하에서 모델 크기, 훈련 토큰, 그리고 추론 샘플 수를 함께 최적화하는 Train-to-Test (T^2) 스케일링 법칙을 제안합니다. T^2는 테스트 시간 스케일링을 위해 사용되는 pass@k 모델링과 결합하여 사전 학습과 테스트 시간 결정을 함께 최적화합니다. T^2에서의 예측은 작업 손실에 대한 결합 스케일링 효과와 작업 정확도에 대한 모델링 영향을 측정하여 이를 공통적이고 강력한 예측으로 제시합니다. 여덟 가지 하향 작업을 통해, 추론 비용을 고려할 때, 최적의 사전 학습 결정은 표준 사전 학습 스케일링 모음 범위를 크게 벗어나 오버트레이닝 영역으로 극적으로 변화한다는 것을 발견했습니다. 우리는 T^2 스케일링 예측이 나타내는 최적 영역에서 과도하게 오버트레인된 모델을 사전 학습하여 그 결과를 확인하고, 사전 학습 스케일링만 사용한 것과 비교했을 때 크게 강력한 성능을 확인했습니다. 마지막으로, 선두 LLMs이 후처리되는 경우, 우리의 결과가 후처리 단계에서도 유의미한 T^2 스케일링을 현대적인 적용에서 의미 있게 만든다는 것을 보여줍니다."
+    },
+    "summary": "1. T^2 스케일링은 사전 학습 및 테스트 시간 결정을 모두 최적화하여 현대 LLM 성능을 향상시킵니다.\n2. 추론 비용을 고려할 때, 최적의 사전 학습 결정은 표준 스케일링 이상의 오버트레이닝 영역으로 크게 확대됩니다.\n3. T^2 스케일링은 후처리 단계에서도 유의미하며, 새로운 LLM 배포에서 효과적으로 적용됨을 확인했습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Communicating about Space: Language-Mediated Spatial Integration Across Partial Views",
+    "abstract": "Humans build shared spatial understanding by communicating partial, viewpoint-dependent observations. We ask whether Multimodal Large Language Models (MLLMs) can do the same, aligning distinct egocentric views through dialogue to form a coherent, allocentric mental model of a shared environment. To study this systematically, we introduce COSMIC, a benchmark for Collaborative Spatial Communication. In this setting, two static MLLM agents observe a 3D indoor environment from different viewpoints and exchange natural-language messages to solve spatial queries. COSMIC contains 899 diverse scenes and 1250 question-answer pairs spanning five tasks. We find a consistent capability hierarchy, MLLMs are most reliable at identifying shared anchor objects across views, perform worse on relational reasoning, and largely fail at building globally consistent maps, performing near chance, even for the frontier models. Moreover, we find thinking capability yields consistent gains in anchor grounding, but is insufficient for higher-level spatial communication. To contextualize model behavior, we additionally collect 250 human-human dialogues. Humans achieve 95% aggregate accuracy, leaving significant room for improvement for even the best performing model Gemini-3-Pro-Thinking which achieves 72% aggregate accuracy. Moreover, human conversations become increasingly specific as partners converge on a shared mental model, whereas model dialogues continue to explore new possibilities rather than converging, consistent with a limited ability to build and maintain a robust shared mental model. Our code and data is available at https://github.com/ankursikarwar/Cosmic",
+    "authors": [
+      "Ankur Sikarwar",
+      "Debangan Mishra",
+      "Sudarshan Nikhil",
+      "Ponnurangam Kumaraguru",
+      "Aishwarya Agrawal"
+    ],
+    "likes": 12,
+    "published_date": "Mar 28",
+    "url": "https://huggingface.co/papers/2603.27183",
+    "date_collected": "2026-04-07T07:16:23.427254+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "공간에 대한 의사소통: 부분적 시야를 통한 언어 중재된 공간 통합",
+      "abstract": "인간은 부분적이고 시점에 따라 다른 관찰을 통해 공유된 공간 이해를 구축합니다. 우리는 MLLM(Multimodal Large Language Models)이 대화를 통해 서로 다른 시점의 자아중심적인 시각을 조율하여 일관된 공유 환경의 알레오센트릭 정신적 모델을 형성할 수 있는지 확인합니다. 이를 체계적으로 연구하기 위해 협력적인 공간 의사소통을 위한 벤치마크인 COSMIC를 소개합니다."
+    },
+    "summary": "1. MLLM은 서로 다른 관점에서 공유된 앵커 객체를 식별하는 능력이 뛰어나지만, 상대적 추론에서 성능이 나빠지며, 전역적으로 일관된 맵을 구축하는 데 거의 실패합니다.\n2. Thinking 능력은 앵커 위치 결정에서 일관된 이익을 제공하지만, 고수준의 공간 의사소통에는 부족합니다.\n3. 인간 대화는 공유된 정신 모델에 수렴함에 따라 점점 구체적이 되지만, 모델 대화는 새로운 가능성을 탐색하며 수렴 대신 지속되므로 향상의 여지가 있습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
+    "abstract": "Industrial software development across chip design, GPU optimization, and embedded systems lacks expert reasoning traces showing how engineers reason about hardware constraints and timing semantics. In this work, we propose InCoder-32B-Thinking, trained on the data from the Error-driven Chain-of-Thought (ECoT) synthesis framework with an industrial code world model (ICWM) to generate reasoning traces. Specifically, ECoT generates reasoning chains by synthesizing the thinking content from multi-turn dialogue with environmental error feedback, explicitly modeling the error-correction process. ICWM is trained on domain-specific execution traces from Verilog simulation, GPU profiling, etc., learns the causal dynamics of how code affects hardware behavior, and enables self-verification by predicting execution outcomes before actual compilation. All synthesized reasoning traces are validated through domain toolchains, creating training data matching the natural reasoning depth distribution of industrial tasks. Evaluation on 14 general (81.3% on LiveCodeBench v5) and 9 industrial benchmarks (84.0% in CAD-Coder and 38.0% on KernelBench) shows InCoder-32B-Thinking achieves top-tier open-source results across all domains.GPU Optimization",
+    "authors": [
+      "Jian Yang",
+      "Wei Zhang",
+      "Jiajun Wu",
+      "Junhang Cheng",
+      "Tuney Zheng",
+      "Fanglin Xu",
+      "Weicheng Gu",
+      "Lin Jing",
+      "Yaxin Du",
+      "Joseph Li",
+      "Yizhi Li",
+      "Yan Xing",
+      "Chuan Hao",
+      "Ran Tao",
+      "Ruihao Gong",
+      "Aishan Liu",
+      "Zhoujun Li",
+      "Mingjie Tang",
+      "Chenghua Lin",
+      "Siheng Chen",
+      "Wayne Xin Zhao",
+      "Xianglong Liu"
+    ],
+    "likes": 5,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.03144",
+    "date_collected": "2026-04-07T07:16:23.429608+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "산업 코드 세계 모델을 위한 인코더-32B-사고력",
+      "abstract": "칩 디자인, GPU 최적화 및 임베디드 시스템에 걸쳐 산업용 소프트웨어 개발은 엔지니어들이 하드웨어 제약과 타이밍 의미론에 대해 어떻게 사고하는지를 보여주는 전문가 추론 트레이스가 부족합니다. 본 논문에서는 산업용 코드 세계 모델 (ICWM)을 활용하여 에러 주도 사고 연쇄 (ECoT) 합성 프레임워크로부터의 데이터로 훈련된 인코더-32B-사고력을 제안합니다. 특히, ECoT는 환경 오류 피드백을 통해 다중 턴 대화에서 사고 내용을 종합함으로써 추론 체인을 생성하며, 오류 수정 과정을 명시적으로 모델링합니다. ICWM은 Verilog 시뮬레이션, GPU 프로파일링 등에서 도메인별 실행 트레이스로 훈련되어 코드가 하드웨어 동작에 어떻게 영향을 주는지의 원인 역학을 학습하고, 실제 컴파일 전에 실행 결과를 예측하여 자가 검증을 가능하게 합니다. 모든 합성된 추론 트레이스는 도메인 도구 체인을 통해 검증되어, 산업 과제의 자연적 추론 깊이 분포와 일치하는 훈련 데이터를 생성합니다. 라이브코드벤치 v5에서 14개 일반 (81.3%) 및 9개 산업 벤치마크 (CAD-Coder에서 84.0%, KernelBench에서 38.0%)의 평가 결과, 인코더-32B-사고력은 모든 도메인에서 최고 수준의 오픈소스 결과를 달성합니다."
+    },
+    "summary": "1. 산업 소프트웨어 개발에서 하드웨어 제약과 타이밍 의미론에 대한 전문가적 추론 트레이스 부족 문제를 해결하기 위해 인코더-32B-사고력 도입.\n2. 에러 주도 사고 연쇄 합성 프레임워크 데이터 및 산업용 코드 세계 모델 활용으로 추론 트레이스 생성 및 자가 검증 가능성 제공.\n3. 라이브코드벤치 및 산업 벤치마크 평가 결과, 인코더-32B-사고력이 모든 도메인에서 최상위 오픈소스 성과를 달성함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks",
+    "abstract": "With the rise of personalized, persistent LLM agent frameworks such as OpenClaw, human-centered agentic social networks in which teams of collaborative AI agents serve individual users in a social network across multiple domains are becoming a reality. This setting creates novel privacy challenges: agents must coordinate across domain boundaries, mediate between humans, and interact with other users' agents, all while protecting sensitive personal information. While prior work has evaluated multi-agent coordination and privacy preservation, the dynamics and privacy risks of human-centered agentic social networks remain unexplored. To this end, we introduce AgentSocialBench, the first benchmark to systematically evaluate privacy risk in this setting, comprising scenarios across seven categories spanning dyadic and multi-party interactions, grounded in realistic user profiles with hierarchical sensitivity labels and directed social graphs. Our experiments reveal that privacy in agentic social networks is fundamentally harder than in single-agent settings: (1) cross-domain and cross-user coordination creates persistent leakage pressure even when agents are explicitly instructed to protect information, (2) privacy instructions that teach agents how to abstract sensitive information paradoxically cause them to discuss it more (we call it abstraction paradox). These findings underscore that current LLM agents lack robust mechanisms for privacy preservation in human-centered agentic social networks, and that new approaches beyond prompt engineering are needed to make agent-mediated social coordination safe for real-world deployment.",
+    "authors": [
+      "Prince Zizhuang Wang",
+      "Shuli Jiang"
+    ],
+    "likes": 4,
+    "published_date": "Apr 1",
+    "url": "https://huggingface.co/papers/2604.01487",
+    "date_collected": "2026-04-07T07:16:23.430903+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "AgentSocialBench: 인간 중심 에이전트 소셜 네트워크에서의 개인 정보 보안 위험 평가",
+      "abstract": "OpenClaw와 같은 맞춤화되고 영구적인 LLM(Agent-based Language Model) 에이전트 프레임워크의 등장으로, 여러 도메인에서 개인 사용자를 위한 협업 AI 에이전트 팀이 소셜 네트워크 내에서 실제 세계로 나타나고 있습니다. 이러한 상황에서는 에이전트들이 도메인 간에 조정하고, 인간들 사이를 중재하며, 다른 사용자들의 에이전트와 상호 작용하면서 민감한 개인 정보를 보호해야 하는 새로운 개인 정보 보안 도전이 발생합니다. 이전 연구에서는 다중 에이전트 조정과 개인 정보 보호를 평가해 왔지만, 인간 중심 에이전트 소셜 네트워크의 동적 및 개인 정보 보안 위험은 아직 탐구되지 않았습니다. 이를 위해 본 연구에서는 AgentSocialBench를 소개하는데, 이는 이 설정에서 개인 정보 보안 위험을 체계적으로 평가하는 최초의 벤치마크로, 계층적 민감도 레이블을 가진 현실적인 사용자 프로필에 기반을 둔 이어진 사회 그래프에서 다분류 및 다중 파티 상호 작용을 포함하는 카테고리의 시나리오로 구성되어 있습니다. 실험 결과는 에이전트 소셜 네트워크에서의 개인 정보 보안이 단일 에이전트 설정보다 기본적으로 어렵다는 것을 보여주는데, (1) 도메인 간 및 사용자 간 조정은 정보 보호를 명시적으로 지시해도 계속해서 정보 누출 압력을 생성하며, (2) 에이전트에게 민감 정보를 추상화하는 방법을 가르치는 개인 정보 지시는 역설적으로 이를 논의하게 만듭니다 (이를 추상화 역설이라고 부릅니다). 이러한 발견은 현재 LLM 에이전트가 인간 중심 에이전트 소셜 네트워크에서 개인 정보 보호를 위한 견고한 메커니즘을 부족하게 하며, 프롬프트 엔지니어링을 넘어선 새로운 접근 방식이 현실 세계 배치를 위해 에이전트 중개 소셜 조정을 안전하게 만들어야 함을 강조합니다."
+    },
+    "summary": "1. AgentSocialBench는 인간 중심 에이전트 소셜 네트워크에서의 개인 정보 보안 위험을 평가하는 최초의 벤치마크로, 다양한 상호 작용 시나리오를 포함하고 있습니다.\n2. 역설적으로, 개인 정보를 보호하도록 명시적으로 지시해도, 에이전트 간의 도메인 및 사용자 간 조정은 계속해서 정보 누출 압력을 유발합니다.\n3. 연구 결과는 현재 LLM 에이전트들이 인간 중심 에이전트 소셜 네트워크에서의 개인 정보 보호에 취약하다는 것을 보여주며, 실세계 적용을 위해 새로운 접근 방식이 필요함을 강조합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Swift-SVD: Theoretical Optimality Meets Practical Efficiency in Low-Rank LLM Compression",
+    "abstract": "The deployment of Large Language Models is constrained by the memory and bandwidth demands of static weights and dynamic Key-Value cache. SVD-based compression provides a hardware-friendly solution to reduce these costs. However, existing methods suffer from two key limitations: some are suboptimal in reconstruction error, while others are theoretically optimal but practically inefficient. In this paper, we propose Swift-SVD, an activation-aware, closed-form compression framework that simultaneously guarantees theoretical optimum, practical efficiency and numerical stability. Swift-SVD incrementally aggregates covariance of output activations given a batch of inputs and performs a single eigenvalue decomposition after aggregation, enabling training-free, fast, and optimal layer-wise low-rank approximation. We employ effective rank to analyze local layer-wise compressibility and design a dynamic rank allocation strategy that jointly accounts for local reconstruction loss and end-to-end layer importance. Extensive experiments across six LLMs and eight datasets demonstrate that Swift-SVD outperforms state-of-the-art baselines, achieving optimal compression accuracy while delivering 3-70X speedups in end-to-end compression time. Our code will be released upon acceptance.",
+    "authors": [
+      "Ruoling Qi",
+      "Yirui Liu",
+      "Xuaner Wu",
+      "Xiangyu Wang",
+      "Ming Li",
+      "Chen Chen",
+      "Jian Chen",
+      "Yin Chen",
+      "Qizhen Weng"
+    ],
+    "likes": 3,
+    "published_date": "Apr 2",
+    "url": "https://huggingface.co/papers/2604.01609",
+    "date_collected": "2026-04-07T07:16:23.432584+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "Swift-SVD: 저위계 LLM 압축에서 이론적 최적성이 실용적 효율성을 만나다",
+      "abstract": "대형 언어 모델의 배포는 정적 가중치 및 동적 키-값 캐시의 메모리와 대역폭 요구 사항에 제약을 받습니다. SVD 기반 압축은 이러한 비용을 줄이기 위한 하드웨어 친화적인 솔루션을 제공합니다. 하지만 기존 방법들은 재구성 오차가 부적절한 경우도 있고 이론적으로는 최적이지만 실제로는 비효율적인 경우가 있습니다. 본 논문에서는 입력 배치를 통해 출력 활성화의 공분산을 증분적으로 집계하고 집계 후 단일 고유값 분해를 수행하는 Swift-SVD를 제안합니다. 이는 교육없이 빠르고 최적의 계층별 저위계 근사화를 가능하게 합니다. 우리는 효과적인 순위를 사용하여 지역적 계층별 압축 가능성을 분석하고 지역적 재구성 손실과 최종 계층 중요성을 함께 반영하는 동적 순위 할당 전략을 설계합니다. 여섯 개의 LLMs와 여덟 가지 데이터셋을 대상으로 한 광범위한 실험에서 Swift-SVD가 최적의 압축 정확도를 달성하고 최종 압축 시간에서 3-70배의 가속을 제공하며 최신 기준을 능가함을 보입니다. 저희 코드는 승인 후 공개될 예정입니다."
+    },
+    "summary": "1. Swift-SVD는 이론적 최적성과 실용적 효율성을 동시에 보장하는 활성화 인식형, 폐쇄형 압축 프레임워크이다.\n2. Swift-SVD는 입력 배치를 통해 출력 활성화의 공분산을 집계하고 단일 고유값 분해를 수행하여 교육 없이 빠르고 최적의 계층별 저위계 근사화를 가능하게 한다.\n3. 실험 결과, Swift-SVD는 최신 기준을 능가하며 최적의 압축 정확도를 달성하고 최종 압축 시간에서 3-70배의 가속을 제공한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
+    "abstract": "Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments. Unlike chat systems, they maintain state across interactions and translate intermediate outputs into concrete actions. This creates a distinct safety challenge in that harmful behavior may emerge through sequences of individually plausible steps, including intermediate actions that appear locally acceptable but collectively lead to unauthorized actions. We present AgentHazard, a benchmark for evaluating harmful behavior in computer-use agents. AgentHazard contains 2,653 instances spanning diverse risk categories and attack strategies. Each instance pairs a harmful objective with a sequence of operational steps that are locally legitimate but jointly induce unsafe behavior. The benchmark evaluates whether agents can recognize and interrupt harm arising from accumulated context, repeated tool use, intermediate actions, and dependencies across steps. We evaluate AgentHazard on Claude Code, OpenClaw, and IFlow using mostly open or openly deployable models from the Qwen3, Kimi, GLM, and DeepSeek families. Our experimental results indicate that current systems remain highly vulnerable. In particular, when powered by Qwen3-Coder, Claude Code exhibits an attack success rate of 73.63\\%, suggesting that model alignment alone does not reliably guarantee the safety of autonomous agents.",
+    "authors": [
+      "Yunhao Feng",
+      "Yifan Ding",
+      "Yingshui Tan",
+      "Xingjun Ma",
+      "Yige Li",
+      "Yutao Wu",
+      "Yifeng Gao",
+      "Kun Zhai",
+      "Yanming Guo"
+    ],
+    "likes": 2,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.02947",
+    "date_collected": "2026-04-07T07:16:23.434235+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "AgentHazard: 컴퓨터 사용 에이전트에서 해로운 행동을 평가하기 위한 벤치마크",
+      "abstract": "컴퓨터 사용 에이전트는 텍스트 생성에서 지속적인 도구, 파일 및 실행 환경 조작으로 언어 모델을 확장합니다. 채팅 시스템과는 달리, 이들은 상호 작용을 통해 상태를 유지하고 중간 결과를 구체적인 행동으로 번역합니다. 이는 해로운 행동이 개별적으로 타당한 단계의 연속을 통해 발생할 수 있기 때문에 안전 도전 과제를 제기합니다. 중간 단계의 동작이 지역적으로 허용되지만 집합적으로 불인가된 동작으로 이어지는 과정 중 유해한 목적을 포함하는 2,653개의 사례를 포함하는 AgentHazard 벤치마크를 제시합니다. 이 벤치마크는 에이전트가 누적된 컨텍스트, 반복적인 도구 사용, 중간 조치 및 단계 간 의존성에서 발생하는 해로운 행동을 인식하고 중단할 수 있는지를 평가합니다. 실험 결과는 현재 시스템이 여전히 매우 취약함을 나타냅니다."
+    },
+    "summary": "1. 컴퓨터 사용 에이전트의 안전 도전 과제로 인한 해로운 행동 평가를 위한 AgentHazard 벤치마크 도입.\n2. 각 사례는 해로운 목적과 지역적으로 합법적인 동작이지만 함께 사용하면 불안전 행동을 유발하는 연산 단계를 포함.\n3. 실험 결과는 현재 시스템이 여전히 매우 취약하며, 모델 조정만으로 자율 에이전트의 안전을 신뢰할 수 없다는 것을 나타냄.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

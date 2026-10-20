@@ -1,0 +1,157 @@
+=== Paper Collection Started at Thu Oct  9 22:07:23 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W41
+URL: https://huggingface.co/papers/week/2025-W41
+Found 10 papers in weekly view
+Fetching likes for: Less is More: Recursive Reasoning with Tiny Networks
+Fetching likes for: Apriel-1.5-15b-Thinker
+Fetching likes for: Paper2Video: Automatic Video Generation from Scientific Papers
+Fetching likes for: Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models
+Fetching likes for: Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs
+Fetching likes for: TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular
+  Reasoning
+Fetching likes for: Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer
+Fetching likes for: In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use
+Fetching likes for: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Fetching likes for: Agentic Context Engineering: Evolving Contexts for Self-Improving
+  Language Models
+Selected top 10 papers by likes:
+1. Less is More: Recursive Reasoning with Tiny Networks (179 likes)
+2. Apriel-1.5-15b-Thinker (101 likes)
+3. Paper2Video: Automatic Video Generation from Scientific Papers (80 likes)
+4. Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models (63 likes)
+5. Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs (61 likes)
+6. TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular
+  Reasoning (59 likes)
+7. Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer (58 likes)
+8. In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use (53 likes)
+9. Large Reasoning Models Learn Better Alignment from Flawed Thinking (48 likes)
+10. Agentic Context Engineering: Evolving Contexts for Self-Improving
+  Language Models (43 likes)
+Found abstract: Hierarchical Reasoning Model (HRM) is a novel approach using two small neural
+networks recursing at ...
+Processed paper: Less is More: Recursive Reasoning with Tiny Networks
+Found abstract: We present Apriel-1.5-15B-Thinker, a 15-billion parameter open-weights
+multimodal reasoning model th...
+Processed paper: Apriel-1.5-15b-Thinker
+Found abstract: Academic presentation videos have become an essential medium for research
+communication, yet produci...
+Processed paper: Paper2Video: Automatic Video Generation from Scientific Papers
+Found abstract: Multi-LLM systems harness the complementary strengths of diverse Large
+Language Models, achieving pe...
+Processed paper: Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models
+Found abstract: Tool-integrated reasoning has emerged as a key focus for enabling agentic
+applications. Among these,...
+Processed paper: Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs
+Found abstract: Process Reward Models (PRMs) have recently emerged as a powerful framework
+for enhancing the reasoni...
+Processed paper: TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular
+  Reasoning
+Found abstract: Visual tokenization remains a core challenge in unifying visual understanding
+and generation within ...
+Processed paper: Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer
+Found abstract: Outcome-driven reinforcement learning has advanced reasoning in large
+language models (LLMs), but pr...
+Processed paper: In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use
+Found abstract: Large reasoning models (LRMs) "think" by generating structured
+chain-of-thought (CoT) before produci...
+Processed paper: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Found abstract: Large language model (LLM) applications such as agents and domain-specific
+reasoning increasingly re...
+Processed paper: Agentic Context Engineering: Evolving Contexts for Self-Improving
+  Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Less is More: Recursive Reasoning with Tiny Networks
+Paper already exists, checking if translation is complete...
+Update likes: 179  ->  68
+Update date_collected: 2025-10-10T07:07:31.976207+09:00  ->  2025-10-09T07:07:47.336147+09:00
+
+Processing paper 2/10
+Title: Apriel-1.5-15b-Thinker
+Paper already exists, checking if translation is complete...
+Update likes: 101  ->  98
+Update date_collected: 2025-10-10T07:07:31.978146+09:00  ->  2025-10-09T07:07:47.334028+09:00
+
+Processing paper 3/10
+Title: Paper2Video: Automatic Video Generation from Scientific Papers
+Paper already exists, checking if translation is complete...
+Update likes: 80  ->  70
+Update date_collected: 2025-10-10T07:07:31.979213+09:00  ->  2025-10-09T07:07:47.335133+09:00
+
+Processing paper 4/10
+Title: Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  57
+Update date_collected: 2025-10-10T07:07:31.981528+09:00  ->  2025-10-09T07:07:47.337235+09:00
+
+Processing paper 6/10
+Title: TaTToo: Tool-Grounded Thinking PRM for Test-Time Scaling in Tabular
+  Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  54
+Update date_collected: 2025-10-10T07:07:31.982856+09:00  ->  2025-10-09T07:07:47.338573+09:00
+
+Processing paper 7/10
+Title: Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  46
+Update date_collected: 2025-10-10T07:07:31.987237+09:00  ->  2025-10-09T07:07:47.339961+09:00
+
+Processing paper 10/10
+Title: Agentic Context Engineering: Evolving Contexts for Self-Improving
+  Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  36
+Update date_collected: 2025-10-10T07:07:31.988741+09:00  ->  2025-10-09T07:07:47.345867+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W41.json...
+
+Updating Notion database...
+Updating paper: 더 적은 것이 더 좋다: 작은 네트워크로 재귀 추론하기 (likes: 68 -> 179)
+Updating paper: Apriel-1.5-15B-Thinker (likes: 98 -> 101)
+Updating paper: Paper2Video: 학문 논문으로부터의 자동 비디오 생성 (likes: 70 -> 80)
+Creating new paper: 캐시-투-캐시: 대형 언어 모델 간 직접 의미적 통신
+Updating paper: Fathom-DeepResearch: SLMs를 위한 장거리 정보 검색 및 합성의 해제 (likes: 57 -> 61)
+Updating paper: TaTToo: 도구 기반 사고 PRM을 활용한 탭릿 추론의 테스트 타임 스케일링 (likes: 54 -> 59)
+Creating new paper: Ming-UniVision: 통합된 연속형 토크나이저를 활용한 이미지 이해와 생성
+Creating new paper: 효율적인 계획과 도구 활용을 위한 흐름 속 에이전트 시스템 최적화
+Updating paper: 오류된 사고로부터 큰 추론 모델이 더 나은 정렬을 배우는 방법 (likes: 46 -> 48)
+Updating paper: 에이전틱 컨텍스트 엔지니어링: 자가 향상을 위한 진화하는 컨텍스트 (Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models) (likes: 36 -> 43)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Oct  9 22:10:01 UTC 2025 ===
+

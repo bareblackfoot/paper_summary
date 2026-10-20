@@ -1,0 +1,159 @@
+=== Paper Collection Started at Thu Aug 28 22:07:15 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W35
+URL: https://huggingface.co/papers/week/2025-W35
+Found 10 papers in weekly view
+Fetching likes for: InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency
+Fetching likes for: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Fetching likes for: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Fetching likes for: VibeVoice Technical Report
+Fetching likes for: TreePO: Bridging the Gap of Policy Optimization and Efficacy and
+  Inference Efficiency with Heuristic Tree-based Modeling
+Fetching likes for: Beyond Transcription: Mechanistic Interpretability in ASR
+Fetching likes for: Self-Rewarding Vision-Language Model via Reasoning Decomposition
+Fetching likes for: CMPhysBench: A Benchmark for Evaluating Large Language Models in
+  Condensed Matter Physics
+Fetching likes for: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Fetching likes for: Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation
+Selected top 10 papers by likes:
+1. InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency (153 likes)
+2. Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR (111 likes)
+3. AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs (104 likes)
+4. VibeVoice Technical Report (83 likes)
+5. TreePO: Bridging the Gap of Policy Optimization and Efficacy and
+  Inference Efficiency with Heuristic Tree-based Modeling (68 likes)
+6. Beyond Transcription: Mechanistic Interpretability in ASR (68 likes)
+7. Self-Rewarding Vision-Language Model via Reasoning Decomposition (60 likes)
+8. CMPhysBench: A Benchmark for Evaluating Large Language Models in
+  Condensed Matter Physics (45 likes)
+9. ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks (41 likes)
+10. Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation (39 likes)
+Found abstract: We introduce InternVL 3.5, a new family of open-source multimodal models that
+significantly advances...
+Processed paper: InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as
+a key paradigm for pos...
+Processed paper: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Found abstract: In this paper, we introduce a novel learning paradigm for adaptive Large
+Language Model (LLM) agents...
+Processed paper: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Found abstract: This report presents VibeVoice, a novel model designed to synthesize
+long-form speech with multiple ...
+Processed paper: VibeVoice Technical Report
+Found abstract: Recent advancements in aligning large language models via reinforcement
+learning have achieved remar...
+Processed paper: TreePO: Bridging the Gap of Policy Optimization and Efficacy and
+  Inference Efficiency with Heuristic Tree-based Modeling
+Found abstract: Interpretability methods have recently gained significant attention,
+particularly in the context of ...
+Processed paper: Beyond Transcription: Mechanistic Interpretability in ASR
+Found abstract: Vision-Language Models (VLMs) often suffer from visual hallucinations, saying
+things that are not ac...
+Processed paper: Self-Rewarding Vision-Language Model via Reasoning Decomposition
+Found abstract: We introduce CMPhysBench, designed to assess the proficiency of Large
+Language Models (LLMs) in Cond...
+Processed paper: CMPhysBench: A Benchmark for Evaluating Large Language Models in
+  Condensed Matter Physics
+Found abstract: Language-guided long-horizon mobile manipulation has long been a grand
+challenge in embodied semanti...
+Processed paper: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Found abstract: Despite the promising progress of recent autoregressive models in
+text-to-image (T2I) generation, th...
+Processed paper: Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,
+  Reasoning, and Efficiency
+Paper already exists, checking if translation is complete...
+Update likes: 153  ->  146
+Update date_collected: 2025-08-29T07:07:24.651442+09:00  ->  2025-08-28T07:07:23.806946+09:00
+
+Processing paper 2/10
+Title: Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains
+  RLVR
+Paper already exists, checking if translation is complete...
+Update likes: 111  ->  110
+Update date_collected: 2025-08-29T07:07:24.652688+09:00  ->  2025-08-28T07:07:23.808205+09:00
+
+Processing paper 3/10
+Title: AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  94
+Update date_collected: 2025-08-29T07:07:24.654083+09:00  ->  2025-08-28T07:07:23.809579+09:00
+
+Processing paper 4/10
+Title: VibeVoice Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 83  ->  36
+Update date_collected: 2025-08-29T07:07:24.655547+09:00  ->  2025-08-28T07:07:23.817154+09:00
+
+Processing paper 5/10
+Title: TreePO: Bridging the Gap of Policy Optimization and Efficacy and
+  Inference Efficiency with Heuristic Tree-based Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  57
+Update date_collected: 2025-08-29T07:07:24.657179+09:00  ->  2025-08-28T07:07:23.811204+09:00
+
+Processing paper 6/10
+Title: Beyond Transcription: Mechanistic Interpretability in ASR
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Self-Rewarding Vision-Language Model via Reasoning Decomposition
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: CMPhysBench: A Benchmark for Evaluating Large Language Models in
+  Condensed Matter Physics
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  42
+Update date_collected: 2025-08-29T07:07:24.661667+09:00  ->  2025-08-28T07:07:23.813064+09:00
+
+Processing paper 9/10
+Title: ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for
+  Long-Horizon Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 41  ->  40
+Update date_collected: 2025-08-29T07:07:24.662987+09:00  ->  2025-08-28T07:07:23.814401+09:00
+
+Processing paper 10/10
+Title: Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance
+  for Text-to-Image Generation
+Paper already exists, checking if translation is complete...
+Update likes: 39  ->  38
+Update date_collected: 2025-08-29T07:07:24.664249+09:00  ->  2025-08-28T07:07:23.815693+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W35.json...
+
+Updating Notion database...
+Updating paper: InternVL3.5: 다재다능성, 추론 능력, 효율성을 높이는 오픈소스 다모델의 진보 (likes: 146 -> 153)
+Updating paper: Pass@1 이상: 변이 문제 합성과 함께하는 Self-Play가 지속시키는 RLVR (likes: 110 -> 111)
+Updating paper: AgentFly: LLM 에이전트 파인튜닝에 파인튜닝 없이 (likes: 94 -> 104)
+Updating paper: VibeVoice 기술 보고서 (likes: 36 -> 83)
+Updating paper: TreePO: 정책 최적화와 휴리스틱 트리 기반 모델링을 통한 효율과 추론 효율 사이의 간극을 줄이다 (likes: 57 -> 68)
+Creating new paper: 음성인식에서 기계적 해석 가능성을 넘어서
+Creating new paper: 자체 보상 비전-언어 모델을 통한 추론 분해
+Updating paper: CMPhysBench: 압축 물질 물리학 분야에서 대형 언어 모델 평가를 위한 벤치마크 (likes: 42 -> 45)
+Updating paper: 오딧세이: 장기간 작업을 위한 오픈 월드 사분다리 탐험과 조작 (likes: 40 -> 41)
+Updating paper: 시각-지카이드: 단계별 지도 활용한 강화학습을 통한 텍스트-이미지 생성 (likes: 38 -> 39)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Aug 28 22:09:14 UTC 2025 ===
+

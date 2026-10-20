@@ -1,0 +1,121 @@
+=== Paper Collection Started at Tue Jun  2 22:48:00 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W23
+URL: https://huggingface.co/papers/week/2026-W23
+Found 10 papers in weekly view
+Fetching likes for: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Fetching likes for: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Fetching likes for: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Fetching likes for: Trust-Region Behavior Blending for On-Policy Distillation
+Fetching likes for: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Fetching likes for: A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks
+Fetching likes for: Representation Forcing for Bottleneck-Free Unified Multimodal Models
+Fetching likes for: Mellum2 Technical Report
+Fetching likes for: K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts
+Fetching likes for: SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue
+Selected top 10 papers by likes:
+1. Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs (107 likes)
+2. GrepSeek: Training Search Agents for Direct Corpus Interaction (94 likes)
+3. COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation (92 likes)
+4. Trust-Region Behavior Blending for On-Policy Distillation (59 likes)
+5. On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters (57 likes)
+6. A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks (53 likes)
+7. Representation Forcing for Bottleneck-Free Unified Multimodal Models (47 likes)
+8. Mellum2 Technical Report (45 likes)
+9. K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts (43 likes)
+10. SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue (39 likes)
+Found abstract: Scientific figures are among the most effective means of communicating complex research ideas, yet p...
+Processed paper: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Found abstract: Large Language Model (LLM) search agents have shown strong promise for knowledge-intensive language ...
+Processed paper: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Found abstract: LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded ...
+Processed paper: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Found abstract: On-policy distillation (OPD) trains a student on prefixes sampled from its own policy while matching...
+Processed paper: Trust-Region Behavior Blending for On-Policy Distillation
+Found abstract: Parameter-efficient fine-tuning (PEFT) is usually treated as a cheaper alternative to full fine-tuni...
+Processed paper: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Found abstract: As agent capabilities advance, existing benchmarks, such as τ^2-Bench, are becoming increasingly sat...
+Processed paper: A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks
+Found abstract: Unified multimodal models (UMMs) aim to handle perception and generation in a single model. Yet exis...
+Processed paper: Representation Forcing for Bottleneck-Free Unified Multimodal Models
+Found abstract: We present Mellum 2, an open-weight 12B-parameter Mixture-of-Experts (MoE) language model with 2.5B ...
+Processed paper: Mellum2 Technical Report
+Found abstract: Frontier model evaluations are shifting from foundational capabilities (e.g., instruction following ...
+Processed paper: K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts
+Found abstract: Zero-shot text-to-speech (TTS) has improved substantially for single-speaker synthesis, yet expressi...
+Processed paper: SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  83
+Update date_collected: 2026-06-03T07:48:08.397860+09:00  ->  2026-06-02T07:47:11.867129+09:00
+
+Processing paper 3/10
+Title: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 92  ->  70
+Update date_collected: 2026-06-03T07:48:08.400057+09:00  ->  2026-06-02T07:47:11.869372+09:00
+
+Processing paper 4/10
+Title: Trust-Region Behavior Blending for On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  51
+Update date_collected: 2026-06-03T07:48:08.402323+09:00  ->  2026-06-02T07:47:11.871657+09:00
+
+Processing paper 5/10
+Title: On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Representation Forcing for Bottleneck-Free Unified Multimodal Models
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  42
+Update date_collected: 2026-06-03T07:48:08.410076+09:00  ->  2026-06-02T07:47:11.874283+09:00
+
+Processing paper 8/10
+Title: Mellum2 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  34
+Update date_collected: 2026-06-03T07:48:08.412442+09:00  ->  2026-06-02T07:47:11.878978+09:00
+
+Processing paper 9/10
+Title: K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue
+Paper already exists, checking if translation is complete...
+Update likes: 39  ->  36
+Update date_collected: 2026-06-03T07:48:08.417455+09:00  ->  2026-06-02T07:47:11.876529+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W23.json...
+
+Updating Notion database...
+Creating new paper: 다양한 입력으로부터 편집 가능한 과학 그림 생성을 위한 다중 에이전트 하네스 Crafter
+Updating paper: GrepSeek: 직접 말뭉치 상호작용을 위한 검색 에이전트 훈련 (likes: 83 -> 94)
+Updating paper: COLLEAGUE.SKILL: 전문가 지식 증류를 통한 자동 AI 기술 생성 (likes: 70 -> 92)
+Updating paper: Trust-Region Behavior Blending를 위한 신뢰 영역 행동 혼합 (likes: 51 -> 59)
+Creating new paper: PEFT의 스케일링에 관한 연구: 조백만 개의 개인 모델을 가진 십조 개 파라미터로
+Creating new paper: 에이전트 벤치마크의 지각과 난이도 향상
+Updating paper: 병목 현상 없는 통합 다중모달 모델을 위한 표현 강제 (likes: 42 -> 47)
+Updating paper: Mellum2 기술 보고서 (likes: 34 -> 45)
+Creating new paper: 한국어 맥락에 근거한 웹 브라우징 에이전트 평가 기준인 K-BrowseComp
+Updating paper: SwanVoice: 표현력 있는 장문형 제로샷 음성 합성 (Zero-Shot Speech Synthesis) 모노로그 및 대화용 (likes: 36 -> 39)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jun  2 22:49:35 UTC 2026 ===
+

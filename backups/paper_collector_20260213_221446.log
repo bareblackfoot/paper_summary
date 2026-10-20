@@ -1,0 +1,125 @@
+=== Paper Collection Started at Thu Feb 12 22:13:21 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W07
+URL: https://huggingface.co/papers/week/2026-W07
+Found 10 papers in weekly view
+Fetching likes for: OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration
+Fetching likes for: Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
+Fetching likes for: Code2World: A GUI World Model via Renderable Code Generation
+Fetching likes for: QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining
+Fetching likes for: Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters
+Fetching likes for: UI-Venus-1.5 Technical Report
+Fetching likes for: MOVA: Towards Scalable and Synchronized Video-Audio Generation
+Fetching likes for: Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models
+Fetching likes for: Chain of Mindset: Reasoning with Adaptive Cognitive Modes
+Fetching likes for: F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare
+Selected top 10 papers by likes:
+1. OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration (294 likes)
+2. Weak-Driven Learning: How Weak Agents make Strong Agents Stronger (236 likes)
+3. Code2World: A GUI World Model via Renderable Code Generation (182 likes)
+4. QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining (177 likes)
+5. Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters (147 likes)
+6. UI-Venus-1.5 Technical Report (147 likes)
+7. MOVA: Towards Scalable and Synchronized Video-Audio Generation (144 likes)
+8. Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models (129 likes)
+9. Chain of Mindset: Reasoning with Adaptive Cognitive Modes (69 likes)
+10. F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare (67 likes)
+Found abstract: As high-quality public text approaches exhaustion, a phenomenon known as the Data Wall, pre-training...
+Processed paper: OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration
+Found abstract: As post-training optimization becomes central to improving large language models, we observe a persi...
+Processed paper: Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
+Found abstract: Autonomous GUI agents interact with environments by perceiving interfaces and executing actions. As ...
+Processed paper: Code2World: A GUI World Model via Renderable Code Generation
+Found abstract: Financial markets are noisy and non-stationary, making alpha mining highly sensitive to noise in bac...
+Processed paper: QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining
+Found abstract: We introduce Step 3.5 Flash, a sparse Mixture-of-Experts (MoE) model that bridges frontier-level age...
+Processed paper: Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters
+Found abstract: GUI agents have emerged as a powerful paradigm for automating interactions in digital environments, ...
+Processed paper: UI-Venus-1.5 Technical Report
+Found abstract: Audio is indispensable for real-world video, yet generation models have largely overlooked audio com...
+Processed paper: MOVA: Towards Scalable and Synchronized Video-Audio Generation
+Found abstract: Despite the success of multimodal contrastive learning in aligning visual and linguistic representat...
+Processed paper: Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models
+Found abstract: Human problem-solving is never the repetition of a single mindset, by which we mean a distinct mode ...
+Processed paper: Chain of Mindset: Reasoning with Adaptive Cognitive Modes
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) is commonly based on group sampling to estimat...
+Processed paper: F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration
+Paper already exists, checking if translation is complete...
+Update likes: 294  ->  277
+Update date_collected: 2026-02-13T07:13:30.857639+09:00  ->  2026-02-12T07:13:34.072992+09:00
+
+Processing paper 2/10
+Title: Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
+Paper already exists, checking if translation is complete...
+Update likes: 236  ->  167
+Update date_collected: 2026-02-13T07:13:30.859128+09:00  ->  2026-02-12T07:13:34.077628+09:00
+
+Processing paper 3/10
+Title: Code2World: A GUI World Model via Renderable Code Generation
+Paper already exists, checking if translation is complete...
+Update likes: 182  ->  167
+Update date_collected: 2026-02-13T07:13:30.860492+09:00  ->  2026-02-12T07:13:34.076268+09:00
+
+Processing paper 4/10
+Title: QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining
+Paper already exists, checking if translation is complete...
+Update likes: 177  ->  176
+Update date_collected: 2026-02-13T07:13:30.862708+09:00  ->  2026-02-12T07:13:34.074944+09:00
+
+Processing paper 5/10
+Title: Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: UI-Venus-1.5 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 147  ->  143
+Update date_collected: 2026-02-13T07:13:30.866628+09:00  ->  2026-02-12T07:13:34.079460+09:00
+
+Processing paper 7/10
+Title: MOVA: Towards Scalable and Synchronized Video-Audio Generation
+Paper already exists, checking if translation is complete...
+Update likes: 144  ->  142
+Update date_collected: 2026-02-13T07:13:30.868539+09:00  ->  2026-02-12T07:13:34.081289+09:00
+
+Processing paper 8/10
+Title: Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 129  ->  128
+Update date_collected: 2026-02-13T07:13:30.870170+09:00  ->  2026-02-12T07:13:34.082842+09:00
+
+Processing paper 9/10
+Title: Chain of Mindset: Reasoning with Adaptive Cognitive Modes
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare
+Paper already exists, checking if translation is complete...
+Update likes: 67  ->  68
+Update date_collected: 2026-02-13T07:13:30.873013+09:00  ->  2026-02-12T07:13:34.084026+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W07.json...
+
+Updating Notion database...
+Updating paper: 효율적이고 원칙적인 데이터 선택을 향한 OPUS: 대형 언어 모델 사전 훈련에서 매 반복마다 (likes: 277 -> 294)
+Updating paper: 약한 주도 학습: 어떻게 약한 에이전트가 강한 에이전트를 더욱 강하게 만드는가 (likes: 167 -> 236)
+Updating paper: Code2World: 렌더 가능 코드 생성을 통한 GUI 세계 모델 (likes: 167 -> 182)
+Updating paper: 양자알파: LLM-주도 알파 채굴을 위한 진화적 프레임워크 (likes: 176 -> 177)
+Creating new paper: 스텝 3.5 플래시: 11B 액티브 파라미터로 오픈 프론티어 수준 지능 구현
+Updating paper: UI-Venus-1.5 기술 보고서 (likes: 143 -> 147)
+Updating paper: 확장 가능하고 동기화된 비디오-오디오 생성을 향하여 (likes: 142 -> 144)
+Updating paper: 다중 모달 대형 언어 모델을 위한 모닰리티 갭 주도 서브스페이스 정렬 훈련 패러다임 (likes: 128 -> 129)
+Creating new paper: 마인드셋 체인: 적응적인 인지 모드로 추론하기
+Updating paper: F-GRPO: 정반대를 배우지만 드문 경우를 잊지 마세요 (likes: 68 -> 67)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Feb 12 22:16:01 UTC 2026 ===
+

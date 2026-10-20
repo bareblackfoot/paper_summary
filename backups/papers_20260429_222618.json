@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+    "abstract": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities. We introduce a \"levels x laws\" taxonomy organized along two axes. The first defines three capability levels: L1 Predictor, which learns one-step local transition operators; L2 Simulator, which composes them into multi-step, action-conditioned rollouts that respect domain laws; and L3 Evolver, which autonomously revises its own model when predictions fail against new evidence. The second identifies four governing-law regimes: physical, digital, social, and scientific. These regimes determine what constraints a world model must satisfy and where it is most likely to fail. Using this framework, we synthesize over 400 works and summarize more than 100 representative systems spanning model-based reinforcement learning, video generation, web and GUI agents, multi-agent social simulation, and AI-driven scientific discovery. We analyze methods, failure modes, and evaluation practices across level-regime pairs, propose decision-centric evaluation principles and a minimal reproducible evaluation package, and outline architectural guidance, open problems, and governance challenges. The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate.",
+    "authors": [
+      "Meng Chu",
+      "Xuan Billy Zhang",
+      "Kevin Qinghong Lin",
+      "Lingdong Kong",
+      "Jize Zhang",
+      "Teng Tu",
+      "Weijian Ma",
+      "Ziqi Huang",
+      "Senqiao Yang",
+      "Wei Huang",
+      "Yeying Jin",
+      "Zhefan Rao",
+      "Jinhui Ye",
+      "Xinyu Lin",
+      "Xichen Zhang",
+      "Qisheng Hu",
+      "Shuai Yang",
+      "Leyang Shen",
+      "Wei Chow",
+      "Yifei Dong",
+      "Fengyi Wu",
+      "Quanyu Long"
+    ],
+    "likes": 201,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22748",
+    "date_collected": "2026-04-29T07:26:42.866518+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "의지 있는 세계 모델링: 기초, 능력, 법칙, 그리고 그 너머",
+      "abstract": "AI 시스템이 텍스트 생성에서 상호작용을 통해 목표를 달성하는 데 진화함에 따라 환경 역학을 모델링하는 능력은 중요한 병목 현상이 됩니다. 물체를 조작하거나 소프트웨어를 탐색하거나 다른 요소들과 협력하거나 실험을 설계하는 에이전트들은 예측적인 환경 모델이 필요합니다. 그러나 세계 모델이라는 용어는 연구 커뮤니티마다 다른 의미를 지니고 있습니다. 본고서에서는 두 축을 따라 정리된 \"수준 x 법칙\" 분류법을 소개합니다."
+    },
+    "summary": "1. AI 시스템이 긴 여러 단계 상호작용에서 목표를 달성하기 위해 예측적 환경 모델이 중요하며, 이를 위해 \"수준\"이라는 능력 수준과 \"법칙\"이라는 규칙 체계를 소개합니다.\n2. 세 가지 능력 수준(L1 Predictor, L2 Simulator, L3 Evolver)과 네 가지 규칙 체계(물리, 디지털, 사회, 과학)를 정의하고, 모델 기반 강화학습, 비디오 생성, 웹/GUI 에이전트, 다중 에이전트 사회 시뮬레이션, AI 주도적 과학적 발견 등을 아우르는 100여 개 대표적인 시스템을 종합하여 분석했습니다.\n3. 결정 중심적 평가 원칙과 최소 재현 가능한 평가 패키지를 제안하고, 구조적 가이드, 미해결 문제, 그리고 지배 도약 도전 과제를 개요로 제시하여 이 분야의 커뮤니티 간 연결과 에이전트가 운영하는 환경을 시뮬레이션하고 궁극적으로 재편할 수 있는 세계 모델로의 길을 개척합니다.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company",
+    "abstract": "Individual agent capabilities have advanced rapidly through modular skills and tool integrations, yet multi-agent systems remain constrained by fixed team structures, tightly coupled coordination logic, and session-bound learning. We argue that this reflects a deeper absence: a principled organisational layer that governs how a workforce of agents is assembled, governed, and improved over time, decoupled from what individual agents know. To fill this gap, we introduce OneManCompany (OMC), a framework that elevates multi-agent systems to the organisational level. OMC encapsulates skills, tools, and runtime configurations into portable agent identities called Talents, orchestrated through typed organisational interfaces that abstract over heterogeneous backends. A community-driven Talent Market enables on-demand recruitment, allowing the organisation to close capability gaps and reconfigure itself dynamically during execution. Organisational decision-making is operationalised through an Explore-Execute-Review (E^2R) tree search, which unifies planning, execution, and evaluation in a single hierarchical loop: tasks are decomposed top-down into accountable units and execution outcomes are aggregated bottom-up to drive systematic review and refinement. This loop provides formal guarantees on termination and deadlock freedom while mirroring the feedback mechanisms of human enterprises. Together, these contributions transform multi-agent systems from static, pre-configured pipelines into self-organising and self-improving AI organisations capable of adapting to open-ended tasks across diverse domains. Empirical evaluation on PRDBench shows that OMC achieves an 84.67% success rate, surpassing the state of the art by 15.48 percentage points, with cross-domain case studies further demonstrating its generality.",
+    "authors": [
+      "Zhengxu Yu",
+      "Yu Fu",
+      "Zhiyuan He",
+      "Yuxuan Huang",
+      "Lee Ka Yiu",
+      "Meng Fang",
+      "Weilin Luo",
+      "Jun Wang"
+    ],
+    "likes": 97,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22446",
+    "date_collected": "2026-04-29T07:26:42.868269+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "스킬에서 재능으로: 혼재된 에이전트를 현실 세상 기업으로 구성하기",
+      "abstract": "개별 에이전트의 능력은 모듈형 스킬과 도구 통합을 통해 급속히 발전했지만, 다중 에이전트 시스템은 여전히 고정된 팀 구조, 강하게 결합된 조정 논리, 그리고 세션에 제한된 학습으로 제약받고 있다. 저희는 이것이 보다 깊은 결핍을 반영한다고 주장합니다: 어떤 개별 에이전트가 알고 있는 것과 분리된, 에이전트 집단이 어떻게 구성, 통제, 시간이 흐름에 따라 개선되는 원칙적인 조직적 계층이다. 이 공백을 채우기 위해 우리는 OneManCompany (OMC)를 소개합니다."
+    },
+    "summary": "1. 에이전트를 \"재능(Talents)\"이라는 휴대 가능한 에이전트 신원으로 캡슐화하고, 타입화된 조직적 인터페이스를 통해 다양한 백엔드를 추상화하여 조정하는 OMC 프레임워크를 도입합니다.\n2. 탤런트 시장을 통해 요청에 따라 채용이 가능하게 하여 기능적 갭을 메우고 실행 중에 동적으로 재구성할 수 있는 기능을 제공합니다. \n3. 탐색-실행-검토(E^2R) 트리 서치를 통해 조직적 의사 결정을 연산화하는데, 이는 계획, 실행 및 평가를 단일 계층적 루프에서 통합합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+    "abstract": "Recent video foundation models demonstrate impressive visual synthesis but frequently suffer from geometric inconsistencies. While existing methods attempt to inject 3D priors via architectural modifications, they often incur high computational costs and limit scalability. We propose World-R1, a framework that aligns video generation with 3D constraints through reinforcement learning. To facilitate this alignment, we introduce a specialized pure text dataset tailored for world simulation. Utilizing Flow-GRPO, we optimize the model using feedback from pre-trained 3D foundation models and vision-language models to enforce structural coherence without altering the underlying architecture. We further employ a periodic decoupled training strategy to balance rigid geometric consistency with dynamic scene fluidity. Extensive evaluations reveal that our approach significantly enhances 3D consistency while preserving the original visual quality of the foundation model, effectively bridging the gap between video generation and scalable world simulation.",
+    "authors": [
+      "Weijie Wang",
+      "Xiaoxuan He",
+      "Youping Gu",
+      "Yifan Yang",
+      "Zeyu Zhang",
+      "Yefei He",
+      "Yanbo Ding",
+      "Xirui Hu",
+      "Donny Y. Chen",
+      "Zhiyuan He",
+      "Yuqing Yang",
+      "Bohan Zhuang"
+    ],
+    "likes": 95,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24764",
+    "date_collected": "2026-04-29T07:26:42.870438+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "3D 제약을 강화하는 World-R1: 텍스트에서 비디오 생성",
+      "abstract": "최근 비디오 기반 모델은 인상적인 시각적 합성을 보여주지만 종종 기하적 불일치에 시달립니다. 기존 방법은 3D 우선순위를 구조적 수정을 통해 주입하려 시도하지만, 이는 종종 높은 계산 비용을 초래하고 확장성을 제한합니다. 본 연구에서는 비디오 생성을 3D 제약과 일치시키기 위해 reinforcement learning을 통해 World-R1이라는 프레임워크를 제안합니다. 이 일치를 용이하게 하기 위해, 우리는 세계 시뮬레이션을 위해 특별히 제작된 순수 텍스트 데이터셋을 도입합니다. 우리는 Flow-GRPO를 활용하여 사전 훈련된 3D 기반 모델과 시각-언어 모델로부터의 피드백을 통해 모델을 최적화하여 구조적 일관성을 유지하면서 기존 아키텍처를 변경하지 않습니다. 우리는 주기적 분리된 훈련 전략을 사용하여 엄격한 기하학적 일관성과 동적 장면 유동성을 균형 있게 유지합니다. 광범위한 평가 결과, 우리의 방법은 비디오 생성과 확장 가능한 세계 시뮬레이션 간의 간격을 효과적으로 메우면서 3D 일관성을 크게 향상시킵니다."
+    },
+    "summary": "1. 3D 제약을 강조하여 텍스트에서 비디오를 생성하는 World-R1 프레임워크 제안\n2. 순수 텍스트 데이터셋을 활용하고, Flow-GRPO를 이용하여 모델 최적화\n3. 주기적으로 분리된 훈련 전략을 통해 3D 일관성을 향상시키고 시각적 품질 유지",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+    "abstract": "Current evaluations of spatial intelligence can be systematically invalid under modern vision-language model (VLM) settings. First, many benchmarks derive question-answer (QA) pairs from point-cloud-based 3D annotations originally curated for traditional 3D perception. When such annotations are treated as ground truth for video-based evaluation, reconstruction and annotation artifacts can miss objects that are clearly visible in the video, mislabel object identities, or corrupt geometry-dependent answers (e.g., size), yielding incorrect or ambiguous QA pairs. Second, evaluations often assume full-scene access, while many VLMs operate on sparsely sampled frames (e.g., 16-64), making many questions effectively unanswerable under the actual model inputs. We improve evaluation validity by introducing ReVSI, a benchmark and protocol that ensures each QA pair is answerable and correct under the model's actual inputs. To this end, we re-annotate objects and geometry across 381 scenes from 5 datasets to improve data quality, and regenerate all QA pairs with rigorous bias mitigation and human verification using professional 3D annotation tools. We further enhance evaluation controllability by providing variants across multiple frame budgets (16/32/64/all) and fine-grained object visibility metadata, enabling controlled diagnostic analyses. Evaluations of general and domain-specific VLMs on ReVSI reveal systematic failure modes that are obscured by prior benchmarks, yielding a more reliable and diagnostic assessment of spatial intelligence.",
+    "authors": [
+      "Yiming Zhang",
+      "Jiacheng Chen",
+      "Jiaqi Tan",
+      "Yongsen Mao",
+      "Wenhu Chen",
+      "Angel X. Chang"
+    ],
+    "likes": 54,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24300",
+    "date_collected": "2026-04-29T07:26:42.872054+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "VLM 3D 추론의 정확한 평가를 위한 시각적 공간 지능 평가 재구성 (Vision-Language Model, VLM)",
+      "abstract": "현재의 공간 지능 평가는 현대 시각-언어 모델 (VLM) 환경에서 체계적으로 부적합할 수 있습니다."
+    },
+    "summary": "1. 기존 3D 어노테이션에서 유도된 많은 기준들은 비디오 기반 평가를 위해 원래 전통적인 3D 인식을 위해 정리된 산점-클라우드 기반 3D 어노테이션에서 질문-답변 (QA) 쌍을 파생합니다.\n2. ReVSI는 각 QA 쌍이 모델의 실제 입력 하에서 답변 가능하고 정확한지를 보장하기 위한 벤치마크와 프로토콜을 제시하며, 이를 통해 기존의 벤치마크에 은폐된 체계적인 실패 모드를 밝혀냅니다.\n3. ReVSI는 5 개의 데이터 세트로부터 총 381 개의 장면을 획득하고, 엄격한 편향 완화 및 전문적인 3D 어노테이션 도구를 사용하여 QA 쌍을 모두 재생성하여 평가의 신뢰도를 높입니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Video Analysis and Generation via a Semantic Progress Function",
+    "abstract": "Transformations produced by image and video generation models often evolve in a highly non-linear manner: long stretches where the content barely changes are followed by sudden, abrupt semantic jumps. To analyze and correct this behavior, we introduce a Semantic Progress Function, a one-dimensional representation that captures how the meaning of a given sequence evolves over time. For each frame, we compute distances between semantic embeddings and fit a smooth curve that reflects the cumulative semantic shift across the sequence. Departures of this curve from a straight line reveal uneven semantic pacing. Building on this insight, we propose a semantic linearization procedure that reparameterizes (or retimes) the sequence so that semantic change unfolds at a constant rate, yielding smoother and more coherent transitions. Beyond linearization, our framework provides a model-agnostic foundation for identifying temporal irregularities, comparing semantic pacing across different generators, and steering both generated and real-world video sequences toward arbitrary target pacing.",
+    "authors": [
+      "Gal Metzer",
+      "Sagi Polaczek",
+      "Ali Mahdavi-Amiri",
+      "Raja Giryes",
+      "Daniel Cohen-Or"
+    ],
+    "likes": 53,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22554",
+    "date_collected": "2026-04-29T07:26:42.873630+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "시맨틱 진행 함수를 통한 비디오 분석과 생성",
+      "abstract": "이미지 및 비디오 생성 모델에 의해 생성된 변환은 종종 매우 비선형적인 방식으로 진화합니다. 내용이 거의 변하지 않는 장기간이 갑자기 갑작스럽게 나타나는 급격한 의미적 점프를 따릅니다. 이러한 행동을 분석하고 수정하기 위해, 우리는 시맨틱 진행 함수를 소개합니다. 이 함수는 특정 시퀀스의 의미가 어떻게 시간에 따라 진화하는지를 포착하는 일차원 표현입니다. 우리는 각 프레임에 대해 시맨틱 임베딩 간의 거리를 계산하고, 일련의 누적 시맨틱 변화를 반영하는 부드러운 곡선을 맞춥니다. 이러한 곡선이 직선에서 벗어나면 불규칙한 의미적 페이싱을 나타냅니다. 이 통찰력을 바탕으로, 우리는 의미적 선형화 절차를 제안합니다. 이 절차는 시퀀스를 다시 매개변수화(또는 재타이밍)하여 의미적 변화가 일정한 비율로 펼쳐지도록 만들어 부드럽고 더 일관된 전환을 도출합니다. 선형화를 넘어서, 우리의 프레임워크는 시간적 불규칙성을 식별하고, 다른 생성자들 간의 의미적 페이싱을 비교하며, 생성된 비디오와 실제 비디오 시퀀스를 임의의 목표 페이싱으로 이끄는 데에 모델에 중립적인 기초를 제공합니다."
+    },
+    "summary": "1. 이미지와 비디오 생성 모델에서 발생하는 변환은 비선형적이고, 의미적 점프가 있는 불규칙한 패턴을 보입니다.\n2. 제안된 시맨틱 진행 함수는 일련의 프레임에서 의미적 변화를 부드럽게 나타내는 방법을 제시합니다.\n3. 제안된 시맨틱 선형화 절차는 의미적 변화를 균일하게 만들어 부드럽고 일관된 비디오 전환을 도출하며, 모든 생성자들 간의 의미적 페이싱을 비교하고 비디오 시퀀스를 목표 페이싱으로 조정할 수 있습니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms",
+    "abstract": "Vision-Language-Action (VLA) models are emerging as a unified substrate for embodied intelligence. This shift raises a new class of safety challenges, stemming from the embodied nature of VLA systems, including irreversible physical consequences, a multimodal attack surface across vision, language, and state, real-time latency constraints on defense, error propagation over long-horizon trajectories, and vulnerabilities in the data supply chain. Yet the literature remains fragmented across robotic learning, adversarial machine learning, AI alignment, and autonomous systems safety. This survey provides a unified and up-to-date overview of safety in Vision-Language-Action models. We organize the field along two parallel timing axes, attack timing (training-time vs. inference-time and defense timing (training-time vs. inference-time, linking each class of threat to the stage at which it can be mitigated. We first define the scope of VLA safety, distinguishing it from text-only LLM safety and classical robotic safety, and review the foundations of VLA models, including architectures, training paradigms, and inference mechanisms. We then examine the literature through four lenses: Attacks, Defenses, Evaluation, and Deployment. We survey training-time threats such as data poisoning and backdoors, as well as inference-time attacks including adversarial patches, cross-modal perturbations, semantic jailbreaks, and freezing attacks. We review training-time and runtime defenses, analyze existing benchmarks and metrics, and discuss safety challenges across six deployment domains. Finally, we highlight key open problems, including certified robustness for embodied trajectories, physically realizable defenses, safety-aware training, unified runtime safety architectures, and standardized evaluation.",
+    "authors": [
+      "Qi Li",
+      "Bo Yin",
+      "Weiqi Huang",
+      "Ruhao Liu",
+      "Bojun Zou",
+      "Runpeng Yu",
+      "Jingwen Ye",
+      "Weihao Yu",
+      "Xinchao Wang"
+    ],
+    "likes": 42,
+    "published_date": "Apr 26",
+    "url": "https://huggingface.co/papers/2604.23775",
+    "date_collected": "2026-04-29T07:26:42.875431+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "비전-언어-행동 안전: 위협, 도전, 평가, 및 메커니즘",
+      "abstract": "비전-언어-행동(Vision-Language-Action, VLA) 모델은 구현지능의 통합 기반으로 떠오르고 있습니다. 이러한 변화는 VLA 시스템의 구체적 본질로부터 비롯된 안전 문제들을 끌어올립니다. 그에는 불가역적인 물리적 결과, 비전, 언어, 상태에 걸친 다중 모달 공격 표면, 방어에 대한 실시간 지연 제약, 장기적 경로에서의 오류 전파, 그리고 데이터 공급망에서의 취약점들이 포함됩니다. 그러나 문헌은 로봇 학습, 적대적 기계 학습, 인공지능 정렬, 그리고 자율 시스템 안전 분야에 걸쳐 분산되어 있습니다. 본 설문은 비전-언어-행동 모델의 안전에 대한 통합된 최신 전망을 제시합니다. 우리는 공격 시간 축(training-time vs. inference-time)과 방어 시간 축(training-time vs. inference-time)을 따라 분야를 구성하며 각 위협 클래스를 경감될 수 있는 단계에 연결합니다. 먼저 VLA 안전의 범위를 정의하고, 텍스트 전용 LLM 안전과 고전적 로봇 안전과 구별합니다. 또한, 아키텍처, 교육 패러다임, 그리고 추론 메커니즘을 포함한 VLA 모델의 기반을 검토합니다. 그 후 공격, 방어, 평가, 그리고 배포 네 가지 관점을 통해 문헌을 검토합니다. 데이타 오염 및 백도어와 같은 교육 시간 위협과, 공격적 패치, 교차 모달 왜곡, 의미적 탈옥, 그리고 동결 공격 등의 추론 시간 공격을 살펴봅니다. 교육 시간과 실행 시간 방어를 검토하고, 기존의 벤치마크와 측정 항목을 분석하며, 여섯 가지 전개 도메인에 걸친 안전 도전을 논의합니다. 마지막으로, 구현지능 경로에 대한 인증 된 강인성, 물리적으로 실현 가능한 방어책, 안전 인식 교육, 통합 런타임 안전 아키텍처, 그리고 표준화된 평가를 강조합니다."
+    },
+    "summary": "1. VLA 모델에서의 안전 문제로의 전환은 공격 및 방어 시간을 고려하고, 안전 메커니즘의 단계에 따라 위협을 경감함.\n2. VLA 안전의 범위를 정의하고 기존 안전 분야와의 차이를 확인하며, 다양한 평가 및 배포 도메인에서의 안전 도전을 검토함.\n3. 물리적 결과와 데이터 공급망에서의 취약점을 비롯한 VLA 안전에 대한 주요 개방 문제들을 강조함.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation",
+    "abstract": "Unified multimodal models typically rely on pretrained vision encoders and use separate visual representations for understanding and generation, creating misalignment between the two tasks and preventing fully end-to-end optimization from raw pixels. We introduce Tuna-2, a native unified multimodal model that performs visual understanding and generation directly based on pixel embeddings. Tuna-2 drastically simplifies the model architecture by employing simple patch embedding layers to encode visual input, completely discarding the modular vision encoder designs such as the VAE or the representation encoder. Experiments show that Tuna-2 achieves state-of-the-art performance in multimodal benchmarks, demonstrating that unified pixel-space modelling can fully compete with latent-space approaches for high-quality image generation. Moreover, while the encoder-based variant converges faster in early pretraining, Tuna-2's encoder-free design achieves stronger multimodal understanding at scale, particularly on tasks requiring fine-grained visual perception. These results show that pretrained vision encoders are not necessary for multimodal modelling, and end-to-end pixel-space learning offers a scalable path toward stronger visual representations for both generation and perception.",
+    "authors": [
+      "Zhiheng Liu",
+      "Weiming Ren",
+      "Xiaoke Huang",
+      "Shoufa Chen",
+      "Tianhong Li",
+      "Mengzhao Chen",
+      "Yatai Ji",
+      "Sen He",
+      "Jonas Schult",
+      "Belinda Zeng",
+      "Tao Xiang",
+      "Wenhu Chen",
+      "Ping Luo",
+      "Luke Zettlemoyer",
+      "Yuren Cong"
+    ],
+    "likes": 39,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24763",
+    "date_collected": "2026-04-29T07:26:42.877553+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "Tuna-2: 픽셀 임베딩이 시각 인코더를 능가하여 멀티모달 이해와 생성을 이끌어냅니다",
+      "abstract": "통합된 멀티모달 모델은 일반적으로 사전 학습된 시각 인코더에 의존하며 이해와 생성을 위해 별도의 시각적 표현을 사용하여 두 작업 사이에 불일치가 발생합니다. 본 논문에서는 픽셀 임베딩을 기반으로 직접 시각 이해와 생성을 수행하는 Tuna-2를 제안합니다. Tuna-2는 시각 입력을 인코딩하기 위해 간단한 패치 임베딩 레이어를 사용하여 모델 구조를 대폭 간소화하며 VAE나 표현 인코더와 같은 모듈화된 시각 인코더 설계를 완전히 버립니다. 실험 결과, Tuna-2가 멀티모달 벤치마크에서 최고 수준의 성능을 달성함을 보여주며, 픽셀 공간 모델링이 고품질 이미지 생성을 위한 잠재 공간 접근과 완벽하게 경쟁할 수 있음을 입증합니다. 또한, 인코더 기반 변형이 초기 사전 학습 단계에서 더 빨리 수렴하지만, Tuna-2의 인코더 없는 설계가 미세한 시각 지각을 요구하는 작업에 대해 광범위한 멀티모달 이해를 갖게 합니다. 이러한 결과들은 사전 학습된 시각 인코더가 멀티모달 모델링에 필수적이지 않으며, 로우 픽셀 공간 학습이 생성과 인식을 위한 더 강력한 시각적 표현으로의 확장 가능한 경로를 제공한다는 것을 보여줍니다."
+    },
+    "summary": "1. Tuna-2는 픽셀 임베딩을 기반으로 한 통합 멀티모달 모델로, 시각 이해와 생성을 직접 수행하여 다른 작업 간의 불일치를 최소화하고 최적화를 실현합니다.\n2. 실험 결과에 따르면 Tuna-2는 멀티모달 벤치마크에서 우수한 성능을 보여주며, 고품질 이미지 생성을 위해 잠재 공간 방식과 완벽하게 경쟁합니다.\n3. Tuna-2의 인코더 없는 설계는 미세한 시각 지각을 필요로 하는 작업에서 강력한 멀티모달 이해를 이루는 반면, 사전 학습된 시각 인코더를 사용할 필요가 없음을 입증합니다.",
+    "categories": [
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction",
+    "abstract": "Neural representations (NRs), such as neural fields and 3D Gaussians, effectively model volumetric data in computed tomography (CT) but suffer from severe artifacts under sparse-view settings. To address this, we propose DiffNR, a novel framework that enhances NR optimization with diffusion priors. At its core is SliceFixer, a single-step diffusion model designed to correct artifacts in degraded slices. We integrate specialized conditioning layers into the network and develop tailored data curation strategies to support model finetuning. During reconstruction, SliceFixer periodically generates pseudo-reference volumes, providing auxiliary 3D perceptual supervision to fix underconstrained regions. Compared to prior methods that embed CT solvers into time-consuming iterative denoising, our repair-and-augment strategy avoids frequent diffusion model queries, leading to better runtime performance. Extensive experiments show that DiffNR improves PSNR by 3.99 dB on average, generalizes well across domains, and maintains efficient optimization.",
+    "authors": [
+      "Shiyan Su",
+      "Ruyi Zha",
+      "Danli Shi",
+      "Hongdong Li",
+      "Xuelian Cheng"
+    ],
+    "likes": 27,
+    "published_date": "Apr 23",
+    "url": "https://huggingface.co/papers/2604.21518",
+    "date_collected": "2026-04-29T07:26:42.879234+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "희박-뷰 3D 단층촬영 재구축을 위한 확산 증진 신경 표현 최적화(DiffNR)",
+      "abstract": "신경 표현(NRs)은 컴퓨터 단층촬영(CT)의 부피 데이터를 효과적으로 모델링하지만 희소한 시야 설정 하에서 심각한 아티팩트를 겪는다. 본 논문에서는 이를 해결하기 위해 확산 선호사항과 결합된 NR 최적화를 제안하는 DiffNR 프레임워크를 제안한다. SliceFixer라는 단일 단계 확산 모델을 핵심으로, 약화된 슬라이스의 아티팩트를 수정하기 위해 설계되었다. 우리는 네트워크에 특화된 조건부 레이어를 통합하고 모델을 세밀하게 튜닝하기 위한 맞춤형 데이터 정리 전략을 개발했다. 재구성 중에 SliceFixer는 주기적으로 의사 참고 볼륨을 생성하여, 언더컨스트레인 지역을 수정하기 위해 보조 3D 지각적 감독을 제공한다. 이전 방법들이 CT 솔버를 시간이 많이 걸리는 반복적인 소음 제거로 통합하는 반면, 우리의 수리-증강 전략은 빈번한 확산 모델 조회를 피하며 더 나은 런타임 성능을 나타낸다. 광범위한 실험 결과, DiffNR은 평균 PSNR을 3.99 dB 향상시키고, 도메인을 넘어서 잘 일반화되며, 효율적인 최적화를 유지한다."
+    },
+    "summary": "1. 희소한 시야 설정 하에서 단층촬영 재구축시 발생하는 심각한 아티팩트를 개선하기 위해 확산 선호사항과 결합된 NR 최적화 프레임워크인 DiffNR을 소개합니다.\n2. 모델 내에 특별히 설계된 SliceFixer를 핵심으로 사용하여 약화된 슬라이스의 아티팩트를 수정하기 위한 단계적인 확산 모델을 제안하고, 네트워크에 조건부 레이어를 통합하며 모델 튜닝을 지원하기 위한 데이터 정리 전략을 개발합니다.\n3. SliceFixer는 주기적으로 의사 참고 볼륨을 생성하여 언더컨스트레인 지역을 수정함으로써, 빠른 런타임 성능을 보이며 PSNR을 높이고 효과적인 최적화를 유지합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+    "abstract": "Language-model agents are increasingly used as persistent coworkers that assist users across multiple working days. During such workflows, the surrounding environment may change independently of the agent: new emails arrive, calendar entries shift, knowledge-base records are updated, and evidence appears across images, scanned PDFs, audio, video, and spreadsheets. Existing benchmarks do not adequately evaluate this setting because they typically run within a single static episode and remain largely text-centric. We introduce , a benchmark for coworker agents built around multi-turn multi-day tasks, a stateful sandboxed service environment whose state evolves between turns, and rule-based verification. The current release contains 100 tasks across 13 professional scenarios, executed against five stateful sandboxed services (filesystem, email, calendar, knowledge base, spreadsheet) and scored by 1537 deterministic Python checkers over post-execution service state; no LLM-as-judge is invoked during scoring. We benchmark seven frontier agent systems. The strongest model reaches 75.8 weighted score, but the best strict Task Success is only 20.0\\%, indicating that partial progress is common while complete end-to-end workflow completion remains rare. Turn-level analysis shows that performance drops after the first exogenous environment update, highlighting adaptation to changing state as a key open challenge. We release the benchmark, evaluation harness, and construction pipeline to support reproducible coworker-agent evaluation.",
+    "authors": [
+      "Fanqing Meng",
+      "Lingxiao Du",
+      "Zijian Wu",
+      "Guanzheng Chen",
+      "Xiangyan Liu",
+      "Jiaqi Liao",
+      "Chonghe Jiang",
+      "Zhenglin Wan",
+      "Jiawei Gu",
+      "Pengfei Zhou",
+      "Rui Huang",
+      "Ziqi Zhao",
+      "Shengyuan Ding",
+      "Ailing Yu",
+      "Bo Peng",
+      "Bowei Xia",
+      "Hao Sun",
+      "Haotian Liang",
+      "Ji Xie",
+      "Jiajun Chen",
+      "Jiajun Song",
+      "Liu Yang"
+    ],
+    "likes": 25,
+    "published_date": "Apr 26",
+    "url": "https://huggingface.co/papers/2604.23781",
+    "date_collected": "2026-04-29T07:26:42.881744+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "ClawMark: 다중 턴, 다중 날짜, 다중 모달리티 동료 에이전트를 위한 리빙-월드 벤치마크",
+      "abstract": "언어 모델 에이전트는 점점 더 사용자를 여러 작업 날짜에 걸쳐 지원하는 지속적인 동료로 활용됩니다. 이러한 업무 흐름에서 에이전트 주변 환경은 독립적으로 변경될 수 있습니다: 새 이메일이 도착하고, 캘린더 항목이 변경되며, 지식베이스 레코드가 업데이트되며, 증거가 이미지, 스캔된 PDF, 오디오, 비디오 및 스프레드시트에 나타납니다. 기존의 벤치마크는 주로 텍스트 중심이며 단일 정적 에피소드 내에서만 실행되기 때문에 이러한 상황을 충분히 평가하지 못합니다. 우리는 , 다중 턴 다중 날짜 작업 중심의 동료 에이전트를 위한 벤치마크를 소개합니다. 상태가 변하는 상태 보드 서비스 환경을 기반으로 하며 도중에 상태가 변합니다. 현재 릴리스에는 13가지 전문 시나리오에서 100가지 작업이 포함되어 있으며, 파일 시스템, 이메일, 캘린더, 지식 베이스, 스프레드시트와 같은 다섯 가지 상태 보드 서비스에 대해 실행되며, 실행 후 서비스 상태에 대해 1537개의 결정론적 파이썬 체커에 의해 점수가 매겨집니다. 점수 부여 과정에서 LLM은 심사 역할을 수행하지 않습니다. 일곱 가지 선두적인 에이전트 시스템을 벤치마킹합니다. 가장 강력한 모델은 75.8의 가중 점수를 기록했지만, 최상의 엄격한 작업 성공은 단 20.0\\%에 불과하여 전체적인 업무 흐름 완료는 드물다는 것을 보여줍니다. 턴 수준 분석 결과, 첫 번째 외생적 환경 업데이트 이후에 성능이 하락하는 것을 보여 중요한 오픈 챌린지로서 상태 변경에 대한 적응을 강조합니다. 우리는 벤치마크, 평가 하네스 및 생성 파이프라인을 공개하여 재현 가능한 동료 에이전트 평가를 지원합니다."
+    },
+    "summary": "1. 언어 모델 에이전트를 위한 새로운 벤치마크인 ClawMark 소개.\n2. 다중 턴, 다중 날짜 작업 중심의 동료 에이전트를 위한 상태가 변하는 환경에서의 벤치마크.\n3. 현재 릴리스에는 13가지 전문 시나리오에서 100가지 작업이 포함되어 있으며 일곱 가지 선두적인 에이전트 시스템을 벤치마킹.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "SketchVLM: Vision language models can annotate images to explain thoughts and guide users",
+    "abstract": "When answering questions about images, humans naturally point, label, and draw to explain their reasoning. In contrast, modern vision-language models (VLMs) such as Gemini-3-Pro and GPT-5 only respond with text, which can be difficult for users to verify. We present SketchVLM, a training-free, model-agnostic framework that enables VLMs to produce non-destructive, editable SVG overlays on the input image to visually explain their answers. Across seven benchmarks spanning visual reasoning (maze navigation, ball-drop trajectory prediction, and object counting) and drawing (part labeling, connecting-the-dots, and drawing shapes around objects), SketchVLM improves visual reasoning task accuracy by up to +28.5 percentage points and annotation quality by up to 1.48x relative to image-editing and fine-tuned sketching baselines, while also producing annotations that are more faithful to the model's stated answer. We find that single-turn generation already achieves strong accuracy and annotation quality, and multi-turn generation opens up further opportunities for human-AI collaboration. An interactive demo and code are at https://sketchvlm.github.io/.",
+    "authors": [
+      "Brandon Collins",
+      "Logan Bolton",
+      "Hung Huy Nguyen",
+      "Mohammad Reza Taesiri",
+      "Trung Bui",
+      "Anh Totti Nguyen"
+    ],
+    "likes": 22,
+    "published_date": "Apr 23",
+    "url": "https://huggingface.co/papers/2604.22875",
+    "date_collected": "2026-04-29T07:26:42.883352+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "SketchVLM: 이미지를 설명하고 사고를 안내하는 비전 언어 모델",
+      "abstract": "이미지에 관한 질문에 대답할 때 사람들은 자연적으로 지시를 하거나 라벨을 붙이거나 그림을 그려서 그들의 추론을 설명합니다. 한편, Gemini-3-Pro나 GPT-5와 같은 현대의 비전-언어 모델은 텍스트로만 응답하는데, 이는 사용자들이 확인하기 어렵게 만들 수 있습니다. 본 논문에서는 SketchVLM을 제안합니다. 이는 훈련이 필요 없는 모델에 중립적인 프레임워크로, 비전-언어 모델이 입력 이미지 상에 비주 vernacular answer 왈어 지에서 주어진 것을 시각적으로 설명할 수 있도록 합니다. 7개의 벤치마크를 통해(미로 내비게이션, 공 낙하 궤적 예측, 객사 세기 등) SketchVLM은 시각적 추론 작업 정확도를 최대 +28.5%포인트, 주석 품질을 최대 1.48배 증가시키고, 이미지 편집 및 정교한 스케치 기준에 비해 +x를 달성함과 동시에 모델이 명시적으로 제시한 답변에 더 충실한 주석을 생성합니다. 단일 턴 생성만으로도 강한 정확성과 주석 품질이 이미 달성된 것을 발견하며, 멀티턴 생성은 인간-AI 협력에 새로운 기회를 제공합니다. 인터랙티브 데모 및 코드는 https://sketchvlm.github.io/ 에서 확인하실 수 있습니다."
+    },
+    "summary": "1. SketchVLM은 이미지에 대한 비전-언어 모델의 사고를 시각적으로 설명하고, 시각적 추론과 그리기 작업에서 뛰어난 정확도 및 주석 품질을 제공합니다.\n2. 모델은 훈련이 필요 없고 수정 가능한 SVG 오버레이를 생성하여 이미지에 직관적인 설명을 제공하며, 이미지 편집이나 정교한 스케치에 비해 더 나은 주석을 생성합니다.\n3. 단일 턴 생성이 이미 강한 정확성과 주석 품질을 달성하였으며, 멀티턴 생성은 인간-인공지능 협력을 위한 새로운 기회를 제공합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision",
+      "Multimodal"
+    ]
+  }
+]

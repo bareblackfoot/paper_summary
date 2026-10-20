@@ -1,0 +1,340 @@
+[
+  {
+    "title": "Your Group-Relative Advantage Is Biased",
+    "abstract": "Reinforcement Learning from Verifier Rewards (RLVR) has emerged as a widely used approach for post-training large language models on reasoning tasks, with group-based methods such as GRPO and its variants gaining broad adoption. These methods rely on group-relative advantage estimation to avoid learned critics, yet its theoretical properties remain poorly understood.\n  In this work, we uncover a fundamental issue of group-based RL: the group-relative advantage estimator is inherently biased relative to the true (expected) advantage. We provide the first theoretical analysis showing that it systematically underestimates advantages for hard prompts and overestimates them for easy prompts, leading to imbalanced exploration and exploitation. To address this issue, we propose History-Aware Adaptive Difficulty Weighting (HA-DW), an adaptive reweighting scheme that adjusts advantage estimates based on an evolving difficulty anchor and training dynamics. Both theoretical analysis and experiments on five mathematical reasoning benchmarks demonstrate that HA-DW consistently improves performance when integrated into GRPO and its variants. Our results suggest that correcting biased advantage estimation is critical for robust and efficient RLVR training.",
+    "authors": [
+      "Fengkai Yang",
+      "Zherui Chen",
+      "Xiaohan Wang",
+      "Xiaodong Lu",
+      "Jiajun Chai",
+      "Guojun Yin",
+      "Wei Lin",
+      "Shuai Ma",
+      "Fuzhen Zhuang",
+      "Deqing Wang",
+      "Yaodong Yang",
+      "Jianxin Li",
+      "Yikun Ban"
+    ],
+    "likes": 135,
+    "published_date": "Jan 13",
+    "url": "https://huggingface.co/papers/2601.08521",
+    "date_collected": "2026-01-23T07:09:23.660122+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "그룹 상대적 우위는 편향되어 있습니다",
+      "abstract": "검증자 보상에 기반한 강화 학습 (Reinforcement Learning from Verifier Rewards, RLVR)은 추론 작업에 대한 대규모 언어 모델의 사후 훈련에 널리 사용되는 방법으로, GRPO와 그 변형들과 같은 그룹 기반 방법이 널리 채택되고 있습니다. 이러한 방법들은 학습된 평가자를 피하기 위해 그룹 상대적 우위 추정을 사용하나, 그 이론적 특성은 여전히 잘 이해되지 않고 있습니다."
+    },
+    "summary": "1. 그룹 기반 강화 학습의 주요 문제점은 그룹 상대적 우위 추정기가 진정한 우위에 비해 편향되어 있다는 것입니다.\n2. 우리는 이 문제를 해결하기 위해 HA-DW라는 역사 기반 적응적 난이도 가중치 방법을 제안하였으며, 실험 결과 이 방법이 GRPO와 그 변형에 통합될 때 일관되게 성능을 향상시킵니다.\n3. 실험 결과는 편향된 우위 추정을 수정하는 것이 견고하고 효율적인 강화 학습에 중요하다는 것을 시사합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Agentic Reasoning for Large Language Models",
+    "abstract": "Reasoning is a fundamental cognitive process underlying inference, problem-solving, and decision-making. While large language models (LLMs) demonstrate strong reasoning capabilities in closed-world settings, they struggle in open-ended and dynamic environments. Agentic reasoning marks a paradigm shift by reframing LLMs as autonomous agents that plan, act, and learn through continual interaction. In this survey, we organize agentic reasoning along three complementary dimensions. First, we characterize environmental dynamics through three layers: foundational agentic reasoning, which establishes core single-agent capabilities including planning, tool use, and search in stable environments; self-evolving agentic reasoning, which studies how agents refine these capabilities through feedback, memory, and adaptation; and collective multi-agent reasoning, which extends intelligence to collaborative settings involving coordination, knowledge sharing, and shared goals. Across these layers, we distinguish in-context reasoning, which scales test-time interaction through structured orchestration, from post-training reasoning, which optimizes behaviors via reinforcement learning and supervised fine-tuning. We further review representative agentic reasoning frameworks across real-world applications and benchmarks, including science, robotics, healthcare, autonomous research, and mathematics. This survey synthesizes agentic reasoning methods into a unified roadmap bridging thought and action, and outlines open challenges and future directions, including personalization, long-horizon interaction, world modeling, scalable multi-agent training, and governance for real-world deployment.",
+    "authors": [
+      "Tianxin Wei",
+      "Ting-Wei Li",
+      "Zhining Liu",
+      "Xuying Ning",
+      "Ze Yang",
+      "Jiaru Zou",
+      "Zhichen Zeng",
+      "Ruizhong Qiu",
+      "Xiao Lin",
+      "Dongqi Fu",
+      "Zihao Li",
+      "Mengting Ai",
+      "Duo Zhou",
+      "Wenxuan Bao",
+      "Yunzhe Li",
+      "Gaotang Li",
+      "Cheng Qian",
+      "Yu Wang",
+      "Xiangru Tang",
+      "Yin Xiao",
+      "Liri Fang",
+      "Hui Liu"
+    ],
+    "likes": 121,
+    "published_date": "Jan 18",
+    "url": "https://huggingface.co/papers/2601.12538",
+    "date_collected": "2026-01-23T07:09:23.662069+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "대규모 언어 모델을 위한 주체적 추론",
+      "abstract": "추론, 문제 해결 및 의사 결정의 기본적인 인지 과정이다. 대규모 언어 모델(Large Language Models, LLMs)은 폐쇄 세계에서 뛰어난 추론 능력을 보이지만, 개방적이고 동적인 환경에서는 어려움을 겪는다. 주체적 추론은 LLMs를 계획하고, 행동하며, 지속적 상호 작용을 통해 학습하는 자율적 요소로 재평가하는 패러다임 변화를 표시한다. 이 연구에서는 주체적 추론을 세 가지 보완적 차원에 따라 조직화한다. 먼저, 환경적 역학을 세 가지 수준을 통해 특성화한다: 핵심 단일 주체 능력인 계획, 도구 사용, 안정적 환경에서의 탐색을 확립하는 기초적 주체적 추론; 피드백, 기억, 적응을 통해 에이전트가 이러한 능력을 어떻게 정제하는지 연구하는 자율진화 주체적 추론; 협조적 상황에서 지능을 확장하는 집단적 다중 에이전트 추론으로, 이는 조정, 지식 공유, 공유 목표에 관여하는 협력적 상황을 포함한다. 이러한 수준을 통해 구조화된 지향성을 통해 검증 시간 상호 작용을 확장하는 맥락 내 추론을 구별하며, 강화 학습과 지도 미세 조정을 통해 행동을 최적화하는 훈련 후 추론을 구별한다. 실제 응용 및 벤치마크인 과학, 로봇학, 의료, 자율 연구, 수학을 포함한 대표적 주체적 추론 프레임워크를 확인한다. 이 연구는 주관과 실천을 연결하는 통일된 로드맵으로 주체적 추론 방법을 종합하고, 맞춤화, 장기적 상호 작용, 세계 모델링, 확장 가능한 다중 에이전트 훈련 및 실제 세계 배치에 대한 개방적 도전과 향후 방향을 개요하고 있다."
+    },
+    "summary": "1. 대규모 언어 모델은 폐쇄적인 환경에서 강한 추론 능력을 보이지만, 개방적이고 동적인 환경에서는 어려움을 겪음.\n2. 주체적 추론은 LLMs를 자율적인 에이전트로 취급하여 계획하고 행동하며 지속적으로 학습하는 새로운 방식을 제시함.\n3. 주체적 추론은 환경의 동적인 특성을 고려하여 단일 에이전트 능력, 에이전트 성능 개선을 위한 피드백 및 다중 에이전트 협력에 대해 조직화함.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization",
+    "abstract": "We introduce Being-H0.5, a foundational Vision-Language-Action (VLA) model designed for robust cross-embodiment generalization across diverse robotic platforms. While existing VLAs often struggle with morphological heterogeneity and data scarcity, we propose a human-centric learning paradigm that treats human interaction traces as a universal \"mother tongue\" for physical interaction. To support this, we present UniHand-2.0, the largest embodied pre-training recipe to date, comprising over 35,000 hours of multimodal data across 30 distinct robotic embodiments. Our approach introduces a Unified Action Space that maps heterogeneous robot controls into semantically aligned slots, enabling low-resource robots to bootstrap skills from human data and high-resource platforms. Built upon this human-centric foundation, we design a unified sequential modeling and multi-task pre-training paradigm to bridge human demonstrations and robotic execution. Architecturally, Being-H0.5 utilizes a Mixture-of-Transformers design featuring a novel Mixture-of-Flow (MoF) framework to decouple shared motor primitives from specialized embodiment-specific experts. Finally, to make cross-embodiment policies stable in the real world, we introduce Manifold-Preserving Gating for robustness under sensory shift and Universal Async Chunking to universalize chunked control across embodiments with different latency and control profiles. We empirically demonstrate that Being-H0.5 achieves state-of-the-art results on simulated benchmarks, such as LIBERO (98.9%) and RoboCasa (53.9%), while also exhibiting strong cross-embodiment capabilities on five robotic platforms.",
+    "authors": [
+      "Hao Luo",
+      "Ye Wang",
+      "Wanpeng Zhang",
+      "Sipeng Zheng",
+      "Ziheng Xi",
+      "Chaoyi Xu",
+      "Haiweng Xu",
+      "Haoqi Yuan",
+      "Chi Zhang",
+      "Yiqing Wang",
+      "Yicheng Feng",
+      "Zongqing Lu"
+    ],
+    "likes": 70,
+    "published_date": "Jan 19",
+    "url": "https://huggingface.co/papers/2601.12993",
+    "date_collected": "2026-01-23T07:09:23.663512+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "인간 중심 로봇 학습 확장을 위한 Being-H0.5: 교차 신체 일반화 규모 업",
+      "abstract": "본 연구에서는 로봇 플랫폼 간의 견고한 교차 신체 일반화를 위해 설계된 기초적인 비전-언어-행동(Vision-Language-Action, VLA) 모델인 Being-H0.5를 제안합니다. 기존 VLA 모델은 형태학적 다양성과 데이터 부족 문제에 직면하는 반면, 우리는 인간 중심 학습 패러다임을 제안하여 인간 상호작용 흔적을 물리적 상호작용의 범용적인 \"모국어\"로 취급합니다. 이를 지원하기 위해 UniHand-2.0을 제시하며, 이는 30가지 다양한 로봇 신체에 걸쳐 35,000시간 이상의 다중모달 데이터로 이루어진 가장 큰 신체 사전 훈련 레시피입니다."
+    },
+    "summary": "1. Being-H0.5는 다양한 로봇 플랫폼 간의 신체 일반화를 위해 인간 상호작용 흔적을 활용하는 VLA 모델로, UniHand-2.0을 통해 대규모의 다중모달 데이터를 이용하여 로봇이 인간 데이터로부터 기술을 습득할 수 있게 합니다.\n2. 이 모델은 통일된 행동 공간을 도입하여 로봇 조종을 의미적으로 일치하는 슬롯으로 매핑하고, 인간 데모와 로봇 실행 사이의 연결을 위해 통합된 순차 모델링과 다중 작업 사전 훈련 패러다임을 디자인했습니다.\n3. Being-H0.5는 Mixture-of-Transformers와 Mixture-of-Flow(MoF) 프레임워크를 활용하여 로봇 플랫폼의 전문화된 전문가들과 공유 모터 기본 요소를 분리시킴으로써 실제 세계에서 교차 신체 정책을 안정화시키는 기술적인 내용을 포함하고 있습니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "ABC-Bench: Benchmarking Agentic Backend Coding in Real-World Development",
+    "abstract": "The evolution of Large Language Models (LLMs) into autonomous agents has expanded the scope of AI coding from localized code generation to complex, repository-level, and execution-driven problem solving. However, current benchmarks predominantly evaluate code logic in static contexts, neglecting the dynamic, full-process requirements of real-world engineering, particularly in backend development which demands rigorous environment configuration and service deployment. To address this gap, we introduce ABC-Bench, a benchmark explicitly designed to evaluate agentic backend coding within a realistic, executable workflow. Using a scalable automated pipeline, we curated 224 practical tasks spanning 8 languages and 19 frameworks from open-source repositories. Distinct from previous evaluations, ABC-Bench require the agents to manage the entire development lifecycle from repository exploration to instantiating containerized services and pass the external end-to-end API tests. Our extensive evaluation reveals that even state-of-the-art models struggle to deliver reliable performance on these holistic tasks, highlighting a substantial disparity between current model capabilities and the demands of practical backend engineering. Our code is available at https://github.com/OpenMOSS/ABC-Bench.",
+    "authors": [
+      "Jie Yang",
+      "Honglin Guo",
+      "Li Ji",
+      "Jiazheng Zhou",
+      "Rui Zheng",
+      "Zhikai Lei",
+      "Shuo Zhang",
+      "Zhiheng Xi",
+      "Shichun Liu",
+      "Yuxin Wang",
+      "Bo Wang",
+      "Yining Zheng",
+      "Tao Gui",
+      "Xipeng Qiu"
+    ],
+    "likes": 62,
+    "published_date": "Jan 16",
+    "url": "https://huggingface.co/papers/2601.11077",
+    "date_collected": "2026-01-23T07:09:23.665050+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "ABC-Bench: 현실 세계 개발에서의 에이전틱 백엔드 코딩 평가",
+      "abstract": "대형 언어 모델(LLMs)의 진화로 자율적 에이전트로 확장된 인공지능 코딩은 로컬에서의 코드 생성에서부터 복잡한 저장소 수준의 실행 주도적 문제 해결로 확대되었습니다. 그러나 현재의 벤치마크는 주로 정적 맥락에서 코드 논리를 평가하며 현실적 엔지니어링의 동적인 전체 과정 요구를 무시합니다. 특히 확고한 환경 구성과 서비스 배포를 요구하는 백엔드 개발에서는 무시됩니다. 이러한 공백을 해결하기 위해 우리는 실현 가능한 워크플로 내에서 에이전틱 백엔드 코딩을 평가하는 ABC-Bench를 소개합니다. 확장 가능한 자동화된 파이프라인을 사용하여, 우리는 오픈 소스 저장소에서 8개 언어와 19개 프레임워크에 걸친 224가지 실용적인 작업을 선별했습니다. 이전 평가와 다르게, ABC-Bench는 에이전트들에게 저장소 탐색부터 컨테이너화된 서비스 인스턴스화 및 외부 엔드 투 엔드 API 테스트 통과까지 전체 개발 라이프사이클을 관리하도록 요구합니다. 우리의 철저한 평가는 최첨단 모델조차도 이러한 종합적 작업에서 신뢰할만한 성능을 제공하기 어려워하는 것을 밝혀냅니다. 현재 모델 능력과 실제 백엔드 엔지니어링 요구 사이에 상당한 불일치를 강조합니다. 우리의 코드는 https://github.com/OpenMOSS/ABC-Bench에서 확인할 수 있습니다."
+    },
+    "summary": "1. 대형 언어 모델을 활용한 자율적 에이전트로의 인공지능 코딩이 복잡한 문제 해결로 확대되었지만, 현실적인 백엔드 엔지니어링 요구를 충족하지 못하는 것으로 나타남.\n2. ABC-Bench는 실제적인 실행 워크플로 내에서 에이전틱 백엔드 코딩을 평가하기 위해 설계된 벤치마크로, 이를 통해 과제 수행 전체 과정을 평가.\n3. 최신 모델조차도 ABC-Bench의 전체적 작업에서 신뢰할 만한 성능을 제공하는 데 어려움을 겪고, 현재 모델 능력과 실제 백엔드 엔지니어링 요구 간 뚜렷한 불일치를 보여줌.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Advances and Frontiers of LLM-based Issue Resolution in Software Engineering: A Comprehensive Survey",
+    "abstract": "Issue resolution, a complex Software Engineering (SWE) task integral to real-world development, has emerged as a compelling challenge for artificial intelligence. The establishment of benchmarks like SWE-bench revealed this task as profoundly difficult for large language models, thereby significantly accelerating the evolution of autonomous coding agents. This paper presents a systematic survey of this emerging domain. We begin by examining data construction pipelines, covering automated collection and synthesis approaches. We then provide a comprehensive analysis of methodologies, spanning training-free frameworks with their modular components to training-based techniques, including supervised fine-tuning and reinforcement learning. Subsequently, we discuss critical analyses of data quality and agent behavior, alongside practical applications. Finally, we identify key challenges and outline promising directions for future research. An open-source repository is maintained at https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution to serve as a dynamic resource in this field.",
+    "authors": [
+      "Caihua Li",
+      "Lianghong Guo",
+      "Yanlin Wang",
+      "Daya Guo",
+      "Wei Tao",
+      "Zhenyu Shan",
+      "Mingwei Liu",
+      "Jiachi Chen",
+      "Haoyu Song",
+      "Duyu Tang",
+      "Hongyu Zhang",
+      "Zibin Zheng"
+    ],
+    "likes": 57,
+    "published_date": "Jan 15",
+    "url": "https://huggingface.co/papers/2601.11655",
+    "date_collected": "2026-01-23T07:09:23.666505+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "소프트웨어 엔지니어링에서 LLM 기반 문제 해결의 발전과 전망: 포괄적인 조사",
+      "abstract": "실제 개발에 필수적인 복잡한 소프트웨어 엔지니어링(SWE) 작업인 문제 해결은 인공지능에게 매력적인 도전 과제로 부상했다. SWE-bench와 같은 벤치마크의 설립으로 큰 언어 모델에게 이 작업이 깊은 어려움을 안기며, 자율 코딩 에이전트의 진화를 크게 가속화했다. 본 논문은 이 신흥 도메인에 대한 체계적인 조사를 제시한다. 우리는 데이터 구축 파이프라인을 검토하면서 자동화된 수집과 합성 방법을 다룬다. 이어서, 모듈식 구성요소를 갖춘 교육 불필요 프레임워크와 지도된 미세 조정 및 강화 학습을 포함한 훈련 기반 기술을 포괄적으로 분석한다. 그 후, 데이터 품질과 에이전트 행동의 중요한 분석 및 실제 적용에 대해 논의한다. 마지막으로, 앞으로의 연구를 위한 핵심 도전 과제를 파악하고 유망한 방향을 제시한다. https://github.com/DeepSoftwareAnalytics/Awesome-Issue-Resolution에서 유지되는 오픈 소스 저장소는 이 분야의 동적인 자원 역할을 한다."
+    },
+    "summary": "1. 소프트웨어 엔지니어링에서 문제 해결은 인공지능의 중요 도전 과제로 부상하였고, 큰 언어 모델에게 깊은 어려움을 안길 정도의 복합성을 보인다.\n2. 논문은 자동화된 수집과 합성 방법을 다루는 데이터 구축 파이프라인과 훈련 기법을 분석하며, 지도된 미세 조정과 강화 학습 등을 포함한다.\n3. 데이터 품질, 에이전트 행동, 실제 응용 및 미래 연구 방향에 대한 주요 도전 과제를 파악해 나가며, 이를 바탕으로 유망한 방향은 계속 발전해 나갈 것으로 전망된다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has driven substantial progress in reasoning-intensive domains like mathematics. However, optimizing open-ended generation remains challenging due to the lack of ground truth. While rubric-based evaluation offers a structured proxy for verification, existing methods suffer from scalability bottlenecks and coarse criteria, resulting in a supervision ceiling effect. To address this, we propose an automated Coarse-to-Fine Rubric Generation framework. By synergizing principle-guided synthesis, multi-model aggregation, and difficulty evolution, our approach produces comprehensive and highly discriminative criteria capable of capturing the subtle nuances. Based on this framework, we introduce RubricHub, a large-scale (sim110k) and multi-domain dataset. We validate its utility through a two-stage post-training pipeline comprising Rubric-based Rejection Sampling Fine-Tuning (RuFT) and Reinforcement Learning (RuRL). Experimental results demonstrate that RubricHub unlocks significant performance gains: our post-trained Qwen3-14B achieves state-of-the-art (SOTA) results on HealthBench (69.3), surpassing proprietary frontier models such as GPT-5. The code and data will be released soon.",
+    "authors": [
+      "Sunzhu Li",
+      "Jiale Zhao",
+      "Miteto Wei",
+      "Huimin Ren",
+      "Yang Zhou",
+      "Jingwen Yang",
+      "Shunyu Liu",
+      "Kaike Zhang",
+      "Wei Chen"
+    ],
+    "likes": 53,
+    "published_date": "Jan 13",
+    "url": "https://huggingface.co/papers/2601.08430",
+    "date_collected": "2026-01-23T07:09:23.667818+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "루브릭허브: 자동 코스 투 파인 생성을 통한 포괄적이고 고도구별 루브릭 데이터셋",
+      "abstract": "검증 가능한 보상을 통한 강화 학습이 수학과 같은 추론 집중적 도메인에서 상당한 진전을 이끈 바 있습니다. 그러나 개방형 생성을 최적화 하는 것은 실제 결과물의 부재로 인해 여전히 어려움을 겪고 있습니다. 루브릭 기반 평가는 검증을 위한 구조화된 대리물로 제공되지만, 기존 방법은 확장성 병목과 정륞性 범주로 인한 감독 천장 효과로 인해 고통받고 있습니다. 이를 해결하기 위해 우리는 자동 코스 투 파인 루브릭 생성 프레임워크를 제안합니다. 원리 지향 합성, 다중 모델 집합 및 난이도 진화를 협업하여 접근하는 우리의 방법은 미묘한 뉘앙스를 포착할 수 있는 포괄적이고 고도구별 기준을 생산합니다. 이 프레임워크를 기반으로 루브릭허브를 소개하며 크기가 크고(sim110k), 다양한 도메인의 데이터셋을 제공합니다. 우리는 Rubric-based Rejection Sampling Fine-Tuning (RuFT) 및 강화 학습 (RuRL)을 포함한 두 단계 후 학습 파이프라인을 통해 유틸리티를 확인합니다. 실험 결과는 RubricHub이 상당한 성능 향상을 불러옴을 보여줍니다: 후 학습된 Qwen3-14B는 HealthBench에서 (69.3)의 최신 성과를 달성하며 GPT-5와 같은 독점적인 선두 모델을 능가합니다. 코드와 데이터는 곧 공개될 예정입니다."
+    },
+    "summary": "1. 강화 학습을 통한 실적 확보가 수학과 같은 추론 집중적 분야에서 진전을 이끌었지만 개방형 생성 최적화는 여전히 어렵습니다.\n2. 기존 방법은 측정 천정 효과로 인해 스케일링 병목과 거친 기준으로 인해 어려움을 겪고 있습니다.\n3. 자동 코스 투 파인 루브릭 생성 프레임워크를 제안하여 미묘한 뉘앙스를 캡처할 수 있는 포괄적이고 고도구별 기준을 제작합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Poisoned Apple Effect: Strategic Manipulation of Mediated Markets via Technology Expansion of AI Agents",
+    "abstract": "The integration of AI agents into economic markets fundamentally alters the landscape of strategic interaction. We investigate the economic implications of expanding the set of available technologies in three canonical game-theoretic settings: bargaining (resource division), negotiation (asymmetric information trade), and persuasion (strategic information transmission). We find that simply increasing the choice of AI delegates can drastically shift equilibrium payoffs and regulatory outcomes, often creating incentives for regulators to proactively develop and release technologies. Conversely, we identify a strategic phenomenon termed the \"Poisoned Apple\" effect: an agent may release a new technology, which neither they nor their opponent ultimately uses, solely to manipulate the regulator's choice of market design in their favor. This strategic release improves the releaser's welfare at the expense of their opponent and the regulator's fairness objectives. Our findings demonstrate that static regulatory frameworks are vulnerable to manipulation via technology expansion, necessitating dynamic market designs that adapt to the evolving landscape of AI capabilities.",
+    "authors": [
+      "Eilam Shapira",
+      "Roi Reichart",
+      "Moshe Tennenholtz"
+    ],
+    "likes": 44,
+    "published_date": "Jan 16",
+    "url": "https://huggingface.co/papers/2601.11496",
+    "date_collected": "2026-01-23T07:09:23.668896+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "인공 지능 에이전트 기술 확장을 통한 매개시장의 전략적 조작: 독사과효과(The Poisoned Apple Effect)",
+      "abstract": "경제 시장에 인공 지능 에이전트를 통합하는 것은 전략적 상호작용의 풍경을 근본적으로 변경합니다. 저희는 세 가지 고전적 게임 이론적 설정인 협상(자원 분배), 협상(비대칭 정보 교환), 설득(전략적 정보 전달)에서 이용 가능한 기술 집합을 확대하는 것의 경제적 함의를 조사합니다. 우리는 단순히 AI 대표자의 선택을 늘리는 것이 평형 수익과 규제 결과를 급격하게 변화시킬 수 있다는 것을 발견했습니다. 종종, 규제당국이 적극적으로 기술을 개발하고 배포할 동기를 만들어냅니다. 반대로, 우리는 \"독사과효과\"라는 전략적 현상을 식별했습니다: 에이전트가 자신이나 상대방이 최종적으로 사용하지 않는 새로운 기술을 출시하여 시장 설계자의 선택을 자신의 이익에 맞게 조작할 수 있습니다. 이 전략적 출시는 출시자의 복지를 향상시키지만, 상대방과 규제당국의 공정성 목표를 희생시킵니다. 우리의 발견은 정적인 규제 틀이 기술 확대를 통한 조작에 취약하며, AI 능력의 변화에 적응하는 동적 시장 디자인이 필요함을 보여줍니다."
+    },
+    "summary": "1. AI 에이전트 기술 확장이 매개시장에서 전략적 상호작용에 미치는 경제적 영향을 고전적 게임 이론적 상황에서 조사합니다.\n2. 선택 가능한 AI 대표자의 다양성 증가가 규제 결과를 크게 변화시킬 수 있으며, 규제당국이 기술 개발 및 배포에 대해 적극적으로 대응할 수 있음을 보여줍니다.\n3. \"독사과효과\"라는 전략적 현상에 대해 소개하며, 시장 설계자의 선택을 조작하는 전략적 기술 출시가 상대방과 규제당국의 이익을 희생시킬 수 있다는 결과를 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models",
+    "abstract": "Mechanistic Interpretability (MI) has emerged as a vital approach to demystify the opaque decision-making of Large Language Models (LLMs). However, existing reviews primarily treat MI as an observational science, summarizing analytical insights while lacking a systematic framework for actionable intervention. To bridge this gap, we present a practical survey structured around the pipeline: \"Locate, Steer, and Improve.\" We formally categorize Localizing (diagnosis) and Steering (intervention) methods based on specific Interpretable Objects to establish a rigorous intervention protocol. Furthermore, we demonstrate how this framework enables tangible improvements in Alignment, Capability, and Efficiency, effectively operationalizing MI as an actionable methodology for model optimization. The curated paper list of this work is available at https://github.com/rattlesnakey/Awesome-Actionable-MI-Survey.",
+    "authors": [
+      "Hengyuan Zhang",
+      "Zhihao Zhang",
+      "Mingyang Wang",
+      "Zunhai Su",
+      "Yiwei Wang",
+      "Qianli Wang",
+      "Shuzhou Yuan",
+      "Ercong Nie",
+      "Xufeng Duan",
+      "Qibo Xue",
+      "Zeping Yu",
+      "Chenming Shang",
+      "Xiao Liang",
+      "Jing Xiong",
+      "Hui Shen",
+      "Chaofan Tao",
+      "Zhengwu Liu",
+      "Senjie Jin",
+      "Zhiheng Xi",
+      "Dongdong Zhang",
+      "Sophia Ananiadou",
+      "Tao Gui"
+    ],
+    "likes": 42,
+    "published_date": "Jan 20",
+    "url": "https://huggingface.co/papers/2601.14004",
+    "date_collected": "2026-01-23T07:09:23.670822+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "대다수 언어 모델에서 실현 가능한 메커니스틱 해석가능성에 대한 실용적 조사",
+      "abstract": "메커니스틱 해석가능성(Mechanistic Interpretability, MI)은 대다수 언어 모델의 불투명한 의사 결정 과정을 명확하게 하는 중요한 방법으로 부상했습니다. 기존의 리뷰는 MI를 주로 관찰적인 과학으로 취급하여 분석적 통찰을 요약하지만 실행 가능한 개입에 대한 체계적인 프레임워크가 부족합니다. 이 간극을 메우기 위해 우리는 \"찾기, 조절하기, 개선하기\"라는 파이프라인을 중심으로 구성된 실용적인 조사를 제시합니다. 특정 해석 가능한 객체를 기반으로 장소 인식 및 조절 메커니즘을 공식적으로 분류하여 엄격한 개입 프로토콜을 수립합니다. 또한 이 프레임워크가 정렬, 능력, 효율성의 형태로 구현 가능한 개선을 어떻게 가능하게 하는지를 시연하여 MI를 모델 최적화를 위한 실행 가능한 방법론으로 작동 가능하게 합니다."
+    },
+    "summary": "1. MI는 대다수 언어 모델의 의사 결정을 명확하게 하기 위한 중요한 방법론으로 현존하는 리뷰들은 주로 관찰적인 과학적 접근이며 실행 가능한 개입에 대한 틀이 부족하다.\n2. \"찾기, 조절하기, 개선하기\" 파이프라인에 따라 구성된 이 논문은 해석 가능한 객체를 기반으로 메커니스트적 해석가능성의 엄격한 개입 프로토콜을 수립한다.\n3. 해당 프레임워크를 이용하여 정렬, 능력, 효율성의 개선을 통해 MI를 실행 가능한 방법론으로 작동 가능하게 하며 모델 최적화에 효과적으로 활용할 수 있다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MMDeepResearch-Bench: A Benchmark for Multimodal Deep Research Agents",
+    "abstract": "Deep Research Agents (DRAs) generate citation-rich reports via multi-step search and synthesis, yet existing benchmarks mainly target text-only settings or short-form multimodal QA, missing end-to-end multimodal evidence use. We introduce MMDeepResearch-Bench (MMDR-Bench), a benchmark of 140 expert-crafted tasks across 21 domains, where each task provides an image-text bundle to evaluate multimodal understanding and citation-grounded report generation. Compared to prior setups, MMDR-Bench emphasizes report-style synthesis with explicit evidence use, where models must connect visual artifacts to sourced claims and maintain consistency across narrative, citations, and visual references. We further propose a unified, interpretable evaluation pipeline: Formula-LLM Adaptive Evaluation (FLAE) for report quality, Trustworthy Retrieval-Aligned Citation Evaluation (TRACE) for citation-grounded evidence alignment, and Multimodal Support-Aligned Integrity Check (MOSAIC) for text-visual integrity, each producing fine-grained signals that support error diagnosis beyond a single overall score. Experiments across 25 state-of-the-art models reveal systematic trade-offs between generation quality, citation discipline, and multimodal grounding, highlighting that strong prose alone does not guarantee faithful evidence use and that multimodal integrity remains a key bottleneck for deep research agents.",
+    "authors": [
+      "Peizhou Huang",
+      "Zixuan Zhong",
+      "Zhongwei Wan",
+      "Donghao Zhou",
+      "Samiul Alam",
+      "Xin Wang",
+      "Zexin Li",
+      "Zhihao Dou",
+      "Li Zhu",
+      "Jing Xiong",
+      "Chaofan Tao",
+      "Yan Xu",
+      "Dimitrios Dimitriadis",
+      "Tuo Zhang",
+      "Mi Zhang"
+    ],
+    "likes": 41,
+    "published_date": "Jan 18",
+    "url": "https://huggingface.co/papers/2601.12346",
+    "date_collected": "2026-01-23T07:09:23.672410+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "MMDeepResearch-Bench: 멀티모달 심층 연구 에이전트를 위한 벤치마크",
+      "abstract": "심층 연구 에이전트(DRAs)는 다단계 검색과 합성을 통해 인용문이 풍부한 보고서를 생성하지만, 기존의 벤치마크는 주로 텍스트만을 다루거나 짧은 형태의 멀티모달 QA에 초점을 맞추어 완전한 멀티모달 증거 활용을 놓치고 있다. 본 연구에서는 멀티모달 이해와 인용문 기반 보고서 작성 능력을 평가하기 위해 이미지-텍스트 번들을 제공하는 140개의 전문가가 작성한 과제를 포함한 21개 도메인의 벤치마크 MMDeepResearch-Bench (MMDR-Bench)를 소개한다. 이에 따라 이전 설정에 비해 MMDR-Bench는 시각적 artifact를 소스로 하는 주장과 내용, 인용 및 시각적 참조 사이의 일관성을 유지하면서 보고서 형식의 합성을 강조한다. 더 나아가 보고서 품질을 위한 Formula-LLM 적응적 평가(FLAE), 인용문 기반 증거 정렬을 위한 Trustworthy 검색-정렬 인용문 평가(TRACE), 텍스트-시각적 일관성을 위한 Multimodal Support-정직성 점검(MOSAIC)을 제안하며, 각각은 전체적인 점수 이상의 세부 신호를 생성하여 오류 진단을 지원하는 일관된 평가 파이프라인을 구축한다. 25개 최첨단 모델에 대한 실험 결과는 생성 품질, 인용문 디스플린 및 멀티모달 기반 간의 체계적인 트레이드오프를 드러내며, 강력한 문체만으로 충실한 증거 사용이 보장되지 않고, 멀티모달 일관성이 심층 연구 에이전트에 대한 주요 병목 현상임을 강조한다."
+    },
+    "summary": "1. 멀티모달 이해와 인용문 활용을 평가하기 위한 140개의 과제로 구성된 MMDeepResearch-Bench(MMDR-Bench) 벤치마크가 소개됨.\n2. 보고서 형식의 합성 능력과 시각적 증거 활용을 강조하며, 다양한 평가 지표(FLAE, TRACE, MOSAIC)를 제안하여 모델의 오류 진단을 지원함.\n3. 심층 연구 에이전트의 경우, 생성 품질, 인용 디스플린 및 멀티모달 일관성 간에 체계적인 트레이드오프가 존재하며, 멀티모달 일관성은 주요 병목으로 지적됨.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Think3D: Thinking with Space for Spatial Reasoning",
+    "abstract": "Understanding and reasoning about the physical world requires spatial intelligence: the ability to interpret geometry, perspective, and spatial relations beyond 2D perception. While recent vision large models (VLMs) excel at visual understanding, they remain fundamentally 2D perceivers and struggle with genuine 3D reasoning. We introduce Think3D, a framework that enables VLM agents to think with 3D space. By leveraging 3D reconstruction models that recover point clouds and camera poses from images or videos, Think3D allows the agent to actively manipulate space through camera-based operations and ego/global-view switching, transforming spatial reasoning into an interactive 3D chain-of-thought process. Without additional training, Think3D significantly improves the spatial reasoning performance of advanced models such as GPT-4.1 and Gemini 2.5 Pro, yielding average gains of +7.8% on BLINK Multi-view and MindCube, and +4.7% on VSI-Bench. We further show that smaller models, which struggle with spatial exploration, benefit significantly from a reinforcement learning policy that enables the model to select informative viewpoints and operations. With RL, the benefit from tool usage increases from +0.7% to +6.8%. Our findings demonstrate that training-free, tool-augmented spatial exploration is a viable path toward more flexible and human-like 3D reasoning in multimodal agents, establishing a new dimension of multimodal intelligence. Code and weights are released at https://github.com/zhangzaibin/spagent.",
+    "authors": [
+      "Zaibin Zhang",
+      "Yuhan Wu",
+      "Lianjie Jia",
+      "Yifan Wang",
+      "Zhongbo Zhang",
+      "Yijiang Li",
+      "Binghao Ran",
+      "Fuxi Zhang",
+      "Zhuohan Sun",
+      "Zhenfei Yin",
+      "Lijun Wang",
+      "Huchuan Lu"
+    ],
+    "likes": 40,
+    "published_date": "Jan 19",
+    "url": "https://huggingface.co/papers/2601.13029",
+    "date_collected": "2026-01-23T07:09:23.673836+09:00",
+    "week": "2026-W04",
+    "translation": {
+      "title": "공간 사고를 위한 Think3D: 3D 공간과 함께 생각하기",
+      "abstract": "물리적 세계를 이해하고 추론하기 위해서는 공간 지능이 필요합니다: 2D 인식을 넘어 기하학, 원근 및 공간적 관계를 해석하는 능력. 최근의 비전 대형 모델(VLMs)은 시각적 이해에서 뛰어나지만, 기본적으로 2D 인식자로 남아 진짜 3D 추론에 어려움을 겪습니다. 우리는 VLM 에이전트가 3D 공간과 함께 사고할 수 있게 하는 Think3D를 소개합니다. 이미지나 비디오에서 포인트 클라우드와 카메라 위치를 복원하는 3D 재구성 모델을 활용함으로써, Think3D는 에이전트가 3D 공간을 카메라 기반의 작업과 ego/global-view 전환을 통해 능동적으로 조작하고, 공간적 추론을 상호작용 3D 사고 과정으로 변환합니다. 추가적인 훈련 없이도 Think3D는 GPT-4.1 및 Gemini 2.5 Pro와 같은 고급 모델의 공간 추론 성능을 현저히 향상시키며, BLINK Multi-view 및 MindCube에서 평균적인 향상률은 +7.8%, VSI-Bench에서는 +4.7%를 기록합니다. 또한, 공간적 탐사에 어려움을 겪는 작은 모델들은 정보 전망 및 작업 선택을 가능케 하는 강화 학습 정책에서 상당한 이점을 얻습니다. RL을 통해, 도구 사용에서의 이점은 +0.7%에서 +6.8%로 증가합니다. 우리의 연구 결과는 훈련 없이 도구를 활용한 공간 탐색이 다모달 에이전트의 더 유연하고 인간적인 3D 추론으로 향하는 새로운 차원을 제시함을 보여줍니다. 코드 및 가중치는 https://github.com/zhangzaibin/spagent에서 공개됩니다."
+    },
+    "summary": "1. Think3D는 비전 대형 모델에 3D 공간 사고를 도입하여 공간 추론 성능을 획기적으로 향상시키며, GPT-4.1 및 Gemini 2.5 Pro에서 평균적으로 +7.8%의 성능 향상을 보입니다.\n2. 작은 모델은 강화 학습 정책을 통해 정보 전망과 작업 선택을 개선함으로써, 공간적 탐사에 큰 이점을 얻을 수 있습니다.\n3. 툴을 활용한 훈련 없이도 공간 탐색이 가능한 접근은 다모달 에이전트가 더 유연하고 인간적인 3D 추론을 달성하는데 효과적임을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  }
+]

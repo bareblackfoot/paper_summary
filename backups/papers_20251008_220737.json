@@ -1,0 +1,302 @@
+[
+  {
+    "title": "Apriel-1.5-15b-Thinker",
+    "abstract": "We present Apriel-1.5-15B-Thinker, a 15-billion parameter open-weights\nmultimodal reasoning model that achieves frontier-level performance through\ntraining design rather than sheer scale. Starting from Pixtral-12B, we apply a\nprogressive three-stage methodology: (1) depth upscaling to expand reasoning\ncapacity without pretraining from scratch, (2) staged continual pre-training\nthat first develops foundational text and vision understanding, then enhances\nvisual reasoning through targeted synthetic data generation addressing spatial\nstructure, compositional understanding, and fine-grained perception, and (3)\nhigh-quality text-only supervised fine-tuning on curated instruction-response\npairs with explicit reasoning traces spanning mathematics, coding, science, and\ntool use. Notably, our model achieves competitive results without reinforcement\nlearning or preference optimization, isolating the contribution of our\ndata-centric continual pre-training approach. On the Artificial Analysis\nIntelligence Index, Apriel-1.5-15B-Thinker attains a score of 52, matching\nDeepSeek-R1-0528 despite requiring significantly fewer computational resources.\nAcross ten image benchmarks, its performance is on average within five points\nof Gemini-2.5-Flash and Claude Sonnet-3.7, a key achievement for a model\noperating within single-GPU deployment constraints. Our results demonstrate\nthat thoughtful mid-training 2 design can close substantial capability gaps\nwithout massive scale, making frontier-level multimodal reasoning accessible to\norganizations with limited infrastructure. We release the model checkpoint, all\ntraining recipes, and evaluation protocols under the MIT license to to advance\nopen-source research.",
+    "authors": [
+      "Shruthan Radhakrishna",
+      "Aman Tiwari",
+      "Aanjaneya Shukla",
+      "Masoud Hashemi",
+      "Rishabh Maheshwary",
+      "Shiva Krishna Reddy Malay",
+      "Jash Mehta",
+      "Pulkit Pattnaik",
+      "Saloni Mittal",
+      "Khalil Slimi",
+      "Kelechi Ogueji",
+      "Akintunde Oladipo",
+      "Soham Parikh",
+      "Oluwanifemi Bamgbose",
+      "Toby Liang",
+      "Ahmed Masry",
+      "Khyati Mahajan",
+      "Sai Rajeswar Mudumba",
+      "Vikas Yadav",
+      "Sathwik Tejaswi Madhusudhan",
+      "Torsten Scholak",
+      "Sagar Davasam"
+    ],
+    "likes": 89,
+    "published_date": "Oct 1",
+    "url": "https://huggingface.co/papers/2510.01141",
+    "date_collected": "2025-10-08T07:07:51.501982+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "Apriel-1.5-15B-Thinker",
+      "abstract": "우리는 150억 개의 파라미터를 가지는 Apriel-1.5-15B-Thinker를 소개합니다. 이 모델은 순수한 규모가 아닌 훈련 설계를 통해 선도 수준의 성능을 달성합니다. Pixtral-12B에서 시작하여 점진적인 세 단계 방법론을 적용합니다."
+    },
+    "summary": "1. Apriel-1.5-15B-Thinker는 광범위한 이유 추론 능력을 확장시키기 위한 진보된 세 단계 방법론을 통해 성과를 끌어올립니다.\n2. 연구는 강화 학습이나 선호도 최적화 없이 경쟁력 있는 결과를 달성하며, 데이터 중심의 계속적인 사전 훈련 방식의 기여를 분리합니다.\n3. Apriel-1.5-15B-Thinker는 규모가 크게 덜해도 딥러닝 모델이 갖춰야 하는 선도 수준의 다중 모달 추론 능력을 개선할 수 있음을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Paper2Video: Automatic Video Generation from Scientific Papers",
+    "abstract": "Academic presentation videos have become an essential medium for research\ncommunication, yet producing them remains highly labor-intensive, often\nrequiring hours of slide design, recording, and editing for a short 2 to 10\nminutes video. Unlike natural video, presentation video generation involves\ndistinctive challenges: inputs from research papers, dense multi-modal\ninformation (text, figures, tables), and the need to coordinate multiple\naligned channels such as slides, subtitles, speech, and human talker. To\naddress these challenges, we introduce PaperTalker, the first benchmark of 101\nresearch papers paired with author-created presentation videos, slides, and\nspeaker metadata. We further design four tailored evaluation metrics--Meta\nSimilarity, PresentArena, PresentQuiz, and IP Memory--to measure how videos\nconvey the paper's information to the audience. Building on this foundation, we\npropose PaperTalker, the first multi-agent framework for academic presentation\nvideo generation. It integrates slide generation with effective layout\nrefinement by a novel effective tree search visual choice, cursor grounding,\nsubtitling, speech synthesis, and talking-head rendering, while parallelizing\nslide-wise generation for efficiency. Experiments on Paper2Video demonstrate\nthat the presentation videos produced by our approach are more faithful and\ninformative than existing baselines, establishing a practical step toward\nautomated and ready-to-use academic video generation. Our dataset, agent, and\ncode are available at https://github.com/showlab/Paper2Video.",
+    "authors": [
+      "Zeyu Zhu",
+      "Kevin Qinghong Lin",
+      "Mike Zheng Shou"
+    ],
+    "likes": 48,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.05096",
+    "date_collected": "2025-10-08T07:07:51.503088+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "Paper2Video: 학문 논문으로부터의 자동 비디오 생성",
+      "abstract": "학술 발표 동영상은 연구 소통을 위한 중요한 매체가 되었으나, 그 제작은 슬라이드 디자인, 녹화, 편집에 여전히 많은 노력이 필요하여 자연 비디오와는 다른 독특한 도전이 있습니다. 이 연구에서는 PaperTalker라는 제 1의 벤치마크를 소개하여 학문 논문에 대응하는 발표 비디오, 슬라이드 및 연사 메타데이터가 포함된 101개의 논문을 제시합니다. 이를 바탕으로 학술 발표 동영상을 위한 첫 번째 멀티 에이전트 프레임워크인 PaperTalker를 제안하며, 이는 슬라이드 생성과 효과적인 레이아웃 개선을 통합한 것입니다."
+    },
+    "summary": "1. PaperTalker는 101개의 학문 논문과 해당하는 발표 비디오, 슬라이드, 연사 메타데이터로 이루어진 벤치마크를 소개하며, 학술 발표 동영상의 자동 생성을 위한 멀티 에이전트 프레임워크를 제안합니다.\n2. 연구는 새로운 평가 메트릭인 Meta Similarity, PresentArena, PresentQuiz, IP Memory를 도입하여 비디오가 논문 정보를 어떻게 전달하는지를 측정하며, 이를 통해 기존 보다 충실하고 정보 전달력이 높은 발표 동영상을 생성한다는 것을 입증합니다.\n3. Paper2Video 실험 결과, 제안된 방법을 통해 생성된 발표 동영상이 기존 기준에 비해 더 충실하고 정보 전달력이 높다는 것을 입증하여 자동 및 즉시 사용 가능한 학문 동영상 생성으로 나아가는 실용적인 단계를 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Large Reasoning Models Learn Better Alignment from Flawed Thinking",
+    "abstract": "Large reasoning models (LRMs) \"think\" by generating structured\nchain-of-thought (CoT) before producing a final answer, yet they still lack the\nability to reason critically about safety alignment and are easily biased when\na flawed premise is injected into their thought process. We propose RECAP\n(Robust Safety Alignment via Counter-Aligned Prefilling), a principled\nreinforcement learning (RL) method for post-training that explicitly teaches\nmodels to override flawed reasoning trajectories and reroute to safe and\nhelpful responses. RECAP trains on a mixture of synthetically generated\ncounter-aligned CoT prefills and standard prompts, requires no additional\ntraining cost or modifications beyond vanilla reinforcement learning from human\nfeedback (RLHF), and substantially improves safety and jailbreak robustness,\nreduces overrefusal, and preserves core reasoning capability -- all while\nmaintaining inference token budget. Extensive analysis shows that RECAP-trained\nmodels engage in self-reflection more frequently and remain robust under\nadaptive attacks, preserving safety even after repeated attempts to override\ntheir reasoning.",
+    "authors": [
+      "ShengYun Peng",
+      "Eric Smith",
+      "Ivan Evtimov",
+      "Song Jiang",
+      "Pin-Yu Chen",
+      "Hongyuan Zhan",
+      "Haozhu Wang",
+      "Duen Horng Chau",
+      "Mahesh Pasupuleti",
+      "Jianfeng Chi"
+    ],
+    "likes": 43,
+    "published_date": "Oct 1",
+    "url": "https://huggingface.co/papers/2510.00938",
+    "date_collected": "2025-10-08T07:07:51.504474+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "오류된 사고로부터 큰 추론 모델이 더 나은 정렬을 배우는 방법",
+      "abstract": "대규모 추론 모델(Large reasoning models, LRMs)은 최종 답변을 생성하기 전에 구조화된 연쇄사고(Chain-of-thought, CoT)를 생성함으로써 \"사고\"하지만, 안전 정렬에 대해 비판적으로 추론하는 능력이 부족하며 잘못된 전제가 사고과정에 주입되면 쉽게 편향됩니다. 우리는 RECAP(Robust Safety Alignment via Counter-Aligned Prefilling)을 제안합니다. 이는 후속 훈련을 위한 원칙적인 강화 학습(RL) 방법으로, 모델에게 잘못된 추론 경로를 무시하고 안전하고 유익한 응답으로 재전환하는 것을 명확히 가르치는 것입니다. RECAP은 반대로 정렬된 CoT 예비데이터와 기존 프롬프트의 혼합에서 훈련되며, 인간 피드백으로부터의 보통 강화 학습(Reinforcement learning from human feedback, RLHF)을 넘어서는 추가 훈련 비용이나 수정 없이요. 그리고 안전성 및 탈옥 저항성을 크게 향상시키며 거부 과잉을 줄이고 핵심 추론 능력을 보존하면서 추론 토큰 예산을 유지합니다. 광범위한 분석 결과 RECAP으로 훈련된 모델이 자주 자기반성에 참여하고 적응적 공격에 대해 강건하게 유지되며 추론을 재차 무시하려는 시도를 거친 후에도 안전을 보존함을 보여줍니다."
+    },
+    "summary": "1. 대규모 추론 모델은 안전 정렬에 대해 비판적으로 추론할 능력이 부족한데, RECAP은 잘못된 사고 경로를 무시하고 안전한 응답으로 돌아가도록 가르치는 강화 학습 방법이다.\n2. RECAP 훈련은 안전성 및 탈옥 저항성을 향상시키고 거부 과잉을 줄이며 핵심 추론 능력을 유지하며, 훈련 비용이나 수정 없이 인간 피드백에서의 강화 학습과 크게 다르지 않다.\n3. RECAP으로 훈련된 모델은 자기반성에 빈번히 참여하고 적응적 공격에도 강건하며, 추론을 무시하는 반복 시도에도 안전을 유지한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Efficient Multi-modal Large Language Models via Progressive Consistency\n  Distillation",
+    "abstract": "Visual tokens consume substantial computational resources in multi-modal\nlarge models (MLLMs), significantly compromising their efficiency. Recent works\nhave attempted to improve efficiency by compressing visual tokens during\ntraining, either through modifications to model components or by introducing\nadditional parameters. However, they often overlook the increased learning\ndifficulty caused by such compression, as the model's parameter space struggles\nto quickly adapt to the substantial perturbations in the feature space induced\nby token compression. In this work, we propose to develop Efficient MLLMs via\nProgressive Consistency Distillation (EPIC), a progressive learning framework.\nSpecifically, by decomposing the feature space perturbations introduced by\ntoken compression along the token-wise and layer-wise dimensions, we introduce\ntoken consistency distillation and layer consistency distillation,\nrespectively, aiming to reduce the training difficulty by leveraging guidance\nfrom a teacher model and following a progressive learning trajectory. Extensive\nexperiments demonstrate the superior effectiveness, robustness, and\ngeneralization capabilities of our proposed framework.",
+    "authors": [
+      "Zichen Wen",
+      "Shaobo Wang",
+      "Yufa Zhou",
+      "Junyuan Zhang",
+      "Qintong Zhang",
+      "Yifeng Gao",
+      "Zhaorun Chen",
+      "Bin Wang",
+      "Weijia Li",
+      "Conghui He",
+      "Linfeng Zhang"
+    ],
+    "likes": 37,
+    "published_date": "Oct 1",
+    "url": "https://huggingface.co/papers/2510.00515",
+    "date_collected": "2025-10-08T07:07:51.505914+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "효율적인 멀티모달 대형 언어 모델: 점진적 일관성 증류를 통해",
+      "abstract": "멀티모달 대형 모델(MLLMs)에서 시각적 토큰은 상당한 계산 리소스를 소비하여 효율성을 심각하게 저해합니다. 본 연구에서는 효율적인 MLLMs 개발을 제안하며, 일관성 증류를 통해 훈련의 어려움을 줄이고 지도 모델로부터 가이드를 활용하는 점진적 학습 프레임워크인 EPIC를 제안합니다."
+    },
+    "summary": "1. 멀티모달 대형 언어 모델의 효율성을 높이기 위해 점진적 일관성 증류를 도입한 EPIC 프레임워크를 제안합니다.\n2. 토큰 일관성 증류와 레이어 일관성 증류를 통해 학습 어려움을 감소시키고 훈련의 효과적인 진행을 돕습니다.\n3. 실험 결과는 제안된 프레임워크의 우수한 효과적성, 견고성 및 일반화 능력을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Video-LMM Post-Training: A Deep Dive into Video Reasoning with Large\n  Multimodal Models",
+    "abstract": "Video understanding represents the most challenging frontier in computer\nvision, requiring models to reason about complex spatiotemporal relationships,\nlong-term dependencies, and multimodal evidence. The recent emergence of\nVideo-Large Multimodal Models (Video-LMMs), which integrate visual encoders\nwith powerful decoder-based language models, has demonstrated remarkable\ncapabilities in video understanding tasks. However, the critical phase that\ntransforms these models from basic perception systems into sophisticated\nreasoning engines, post-training, remains fragmented across the literature.\nThis survey provides the first comprehensive examination of post-training\nmethodologies for Video-LMMs, encompassing three fundamental pillars:\nsupervised fine-tuning (SFT) with chain-of-thought, reinforcement learning (RL)\nfrom verifiable objectives, and test-time scaling (TTS) through enhanced\ninference computation. We present a structured taxonomy that clarifies the\nroles, interconnections, and video-specific adaptations of these techniques,\naddressing unique challenges such as temporal localization, spatiotemporal\ngrounding, long video efficiency, and multimodal evidence integration. Through\nsystematic analysis of representative methods, we synthesize key design\nprinciples, insights, and evaluation protocols while identifying critical open\nchallenges in reward design, scalability, and cost-performance optimization. We\nfurther curate essential benchmarks, datasets, and metrics to facilitate\nrigorous assessment of post-training effectiveness. This survey aims to provide\nresearchers and practitioners with a unified framework for advancing Video-LMM\ncapabilities. Additional resources and updates are maintained at:\nhttps://github.com/yunlong10/Awesome-Video-LMM-Post-Training",
+    "authors": [
+      "Yunlong Tang",
+      "Jing Bi",
+      "Pinxin Liu",
+      "Zhenyu Pan",
+      "Zhangyun Tan",
+      "Qianxiang Shen",
+      "Jiani Liu",
+      "Hang Hua",
+      "Junjia Guo",
+      "Yunzhong Xiao",
+      "Chao Huang",
+      "Zhiyuan Wang",
+      "Susan Liang",
+      "Xinyi Liu",
+      "Yizhi Song",
+      "Yuhe Nie",
+      "Jia-Xing Zhong",
+      "Bozheng Li",
+      "Daiqing Qi",
+      "Ziyun Zeng",
+      "Ali Vosoughi",
+      "Luchuan Song"
+    ],
+    "likes": 33,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.05034",
+    "date_collected": "2025-10-08T07:07:51.507821+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "비디오-LMM 후 트레이닝: 대규모 다중 모달 모델을 활용한 비디오 추론의 심층 탐구",
+      "abstract": "비디오 이해는 컴퓨터 비전에서 가장 어려운 과제를 대표하며, 모델이 복잡한 시공간 관계, 장기 의존성, 그리고 다중 모달 증거를 추론해야 합니다. 비디오-Large Multimodal Models (비디오-LMMs)의 최근 등장은 시각 인코더를 강력한 디코더 기반 언어 모델과 통합하여 비디오 이해 작업에서 놀라운 능력을 보여주었습니다. 그러나 이러한 모델을 기본 인식 시스템에서 정교한 추론 엔진으로 전환하는 중요한 단계인 후 트레이닝은 문헌 전체에 걸쳐 파편화되어 있습니다. 본 서베이는 비디오-LMMs에 대한 후 트레이닝 방법론을 첫 번째로 종합적으로 검토하며 감독된 세부 조정 (SFT)과 사고 연쇄, 검증 가능한 목표로부터의 강화 학습 (RL), 향상된 추론 계산을 통한 테스트 시간 스케일링 (TTS)을 포함하는 세 가지 기본 요소를 아우릅니다. 이러한 기술의 역할, 상호 연결 및 비디오 특화적 적응을 명확히 하는 구조화된 분류를 제시하면서 시간적 위치 지정, 시공간 기초, 장기 비디오 효율성, 다중 모달 증거 통합과 같은 독특한 도전 과제를 다룹니다. 대표적인 방법의 체계적 분석을 통해 핵심 설계 원칙, 통찰력 및 평가 프로토콜을 종합하고 보상 설계, 확장성 및 성능 최적화 비용에 대한 중요한 개방적 도전 과제를 식별하면서 후 트레이닝의 효과를 철저히 평가하기 위한 필수 벤치마크, 데이터셋 및 메트릭을 추가로 정리합니다. 본 서베이는 연구자와 실무자들에게 비디오-LMM 능력의 발전을 위한 통일된 프레임워크를 제공하는 것을 목표로 합니다. 추가 자료 및 업데이트는 아래 링크에서 확인하실 수 있습니다: https://github.com/yunlong10/Awesome-Video-LMM-Post-Training"
+    },
+    "summary": "1. 비디오-Large Multimodal Models인 Video-LMMs는 비디오 이해 작업에서 놀라운 성능을 보이는데, 이들을 정교한 추론 엔진으로 전환하는 후 트레이닝은 여전히 문헌에 파편화되어 있습니다.\n2. 후 트레이닝 방법론으로는 감독된 세부 조정, 검증 가능한 목표로부터의 강화 학습, 향상된 추론 계산을 통한 테스트 시간 스케일링 세 가지가 주요 구성 요소로 작용하며, 이들의 역할과 비디오 특화적 도전 과제를 다룹니다.\n3. 후 트레이닝의 효과를 신중하게 평가하기 위해 핵심 설계 원칙, 비디오 특화적 도전 과제, 평가 프로토콜 및 관련 벤치마크, 데이터셋이 중요하며, 이들을 종합적으로 검토함으로써 비디오-LMM 능력을 발전시키는 통일된 프레임워크를 제공합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "VChain: Chain-of-Visual-Thought for Reasoning in Video Generation",
+    "abstract": "Recent video generation models can produce smooth and visually appealing\nclips, but they often struggle to synthesize complex dynamics with a coherent\nchain of consequences. Accurately modeling visual outcomes and state\ntransitions over time remains a core challenge. In contrast, large language and\nmultimodal models (e.g., GPT-4o) exhibit strong visual state reasoning and\nfuture prediction capabilities. To bridge these strengths, we introduce VChain,\na novel inference-time chain-of-visual-thought framework that injects visual\nreasoning signals from multimodal models into video generation. Specifically,\nVChain contains a dedicated pipeline that leverages large multimodal models to\ngenerate a sparse set of critical keyframes as snapshots, which are then used\nto guide the sparse inference-time tuning of a pre-trained video generator only\nat these key moments. Our approach is tuning-efficient, introduces minimal\noverhead and avoids dense supervision. Extensive experiments on complex,\nmulti-step scenarios show that VChain significantly enhances the quality of\ngenerated videos.",
+    "authors": [
+      "Ziqi Huang",
+      "Ning Yu",
+      "Gordon Chen",
+      "Haonan Qiu",
+      "Paul Debevec",
+      "Ziwei Liu"
+    ],
+    "likes": 30,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.05094",
+    "date_collected": "2025-10-08T07:07:51.508995+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "비전생성에서 추론을 위한 비전사고 연쇄 (Chain-of-Visual-Thought)인 VChain",
+      "abstract": "최근 비디오 생성 모델은 부드럽고 시각적으로 매력적인 클립을 만들어내지만, 종종 일관된 연쇄적 결과물로 복잡한 역학을 합성하는 데 어려움을 겪습니다. 시간 경과에 따른 시각적 결과물과 상태 전이를 정확하게 모델링하는 것은 여전히 핵심적인 과제입니다. 반면에 대규모 언어 및 멀티모달 모델 (예: GPT-4o)은 강력한 시각적 상태 추론 및 미래 예측 능력을 보여줍니다. 이러한 강점을 이어받기 위해 VChain을 소개합니다. VChain은 비전 생성에 멀티모달 모델로부터 비전 사고 신호를 주입하는 새로운 추론 시간 비전사고 연쇄 프레임워크입니다. 구체적으로, VChain에는 대규모 멀티모달 모델을 활용하여 중요한 열쇠 프레임의 희소한 집합을 생성하는 전용 파이프라인이 포함되어 있으며, 이는 그런 다음 이러한 핵심적 순간만을 대상으로 사전 훈련된 비디오 생성기의 희소한 추론 시간 조정을 안내하는 데 사용됩니다. 우리의 방법론은 효과적인 조정을 실현할 뿐만 아니라, 최소한의 오버헤드를 도입하며 밀도 있는 지도를 피합니다. 복잡하고 다단계 시나리오에서의 광범위한 실험 결과는 VChain이 생성된 비디오의 품질을 현저하게 향상시킨다는 것을 보여줍니다."
+    },
+    "summary": "1. 최근 비디오 생성 모델은 부드럽고 시각적으로 매력적인 클립을 만들 수 있지만, 복잡한 역학을 연속적인 결과물로 합성하는 데 어려움을 겪음.\n2. VChain은 멀티모달 모델의 시각적 사고 신호를 비디오 생성에 주입하는 새로운 프레임워크로, 효율적인 조정을 실현하고 밀도 있는 지도를 피함.\n3. 복잡한 다단계 시나리오에서의 실험은 VChain이 생성된 비디오의 품질을 현저하게 향상시킨다는 것을 입증함.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MITS: Enhanced Tree Search Reasoning for LLMs via Pointwise Mutual\n  Information",
+    "abstract": "Tree search has become as a representative framework for test-time reasoning\nwith large language models (LLMs), exemplified by methods such as\nTree-of-Thought and Monte Carlo Tree Search that explore multiple reasoning\npaths. However, it remains difficult to provide instant and reliable\nquantitative assessments of intermediate reasoning step quality, and extensive\npath exploration is computationally costly. To address this, we propose Mutual\nInformation Tree Search (MITS), a novel framework that guides reasoning with\ninformation-theoretic principles. MITS introduces an effective scoring function\nbased on pointwise mutual information (PMI), which enables step-wise evaluation\nof reasoning paths and search tree expansion via beam search without expensive\nlook-ahead simulations, achieving superior reasoning performances while\nmaintaining computational efficiency. The framework is complemented by an\nentropy-based dynamic sampling strategy that adaptively allocates computational\nresources to uncertain reasoning steps where exploration is most beneficial.\nFor final prediction, MITS employs a weighted voting scheme that combines PMI\nscores with prediction consensus. Through comprehensive experiments on diverse\nreasoning benchmarks, MITS consistently surpasses baseline methods,\nestablishing a principled and efficient framework for LLM reasoning.",
+    "authors": [
+      "Jiaxi Li",
+      "Yucheng Shi",
+      "Jin Lu",
+      "Ninghao Liu"
+    ],
+    "likes": 27,
+    "published_date": "Oct 4",
+    "url": "https://huggingface.co/papers/2510.03632",
+    "date_collected": "2025-10-08T07:07:51.510098+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "MITS: 포인트 단위 상호 정보를 통한 LLM을 위한 향상된 트리 검색 추론",
+      "abstract": "트리 검색은 다양한 추론 경로를 탐색하는 Tree-of-Thought 및 Monte Carlo Tree Search와 같은 방법을 포함하여 대규모 언어 모델 (LLMs)에 대한 시험 시간 추론의 대표적인 프레임워크로 자리잡았습니다. 그러나 중간 추론 단계 품질에 대한 신속하고 신뢰할 수 있는 양적 평가를 제공하는 것은 여전히 어렵고, 방대한 경로 탐색은 계산적으로 비용이 많이 듭니다. 이를 해결하기 위해, 우리는 상호 정보 트리 검색 (MITS)이라는 정보 이론 원리를 이용한 새로운 프레임워크를 제안합니다. MITS은 PMI를 기반으로 한 효과적인 점별 상호 정보를 기반으로 하는 점수 함수를 도입하여 비싼 최첨단 시뮬레이션이 필요 없는 상태별 추론 경로 및 빔 검색을 통한 검색 트리 확장을 가능하게 합니다. 이는 계산적 효율성을 유지하면서 우수한 추론 성능을 달성하며, 조절가능한 자원을 불확실한 추론 단계에 할당하는 엔트로피 기반의 동적 샘플링 전략으로 보완됩니다. 최종 예측을 위해, MITS는 PMI 점수와 예측 일치를 결합하는 가중 투표 체계를 사용합니다. 다양한 추론 벤치마크에서의 포괄적인 실험을 통해 MITS는 기본 방법을 일관되게 능가하여 LLM 추론을 위한 원칙적이고 효율적인 프레임워크를 수립합니다."
+    },
+    "summary": "1. 상호 정보 이론을 이용한 상태별 추론 경로 평가로 성능 향상을 이룸.\n2. 엔트로피 기반의 동적 샘플링 전략으로 계산적 자원 할당을 최적화함.\n3. 최종 예측을 위해 PMI 점수와 조합된 가중 투표 체계를 도입하여 다양한 벤치마크에서 우수한 추론 성능을 입증함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Imperceptible Jailbreaking against Large Language Models",
+    "abstract": "Jailbreaking attacks on the vision modality typically rely on imperceptible\nadversarial perturbations, whereas attacks on the textual modality are\ngenerally assumed to require visible modifications (e.g., non-semantic\nsuffixes). In this paper, we introduce imperceptible jailbreaks that exploit a\nclass of Unicode characters called variation selectors. By appending invisible\nvariation selectors to malicious questions, the jailbreak prompts appear\nvisually identical to original malicious questions on screen, while their\ntokenization is \"secretly\" altered. We propose a chain-of-search pipeline to\ngenerate such adversarial suffixes to induce harmful responses. Our experiments\nshow that our imperceptible jailbreaks achieve high attack success rates\nagainst four aligned LLMs and generalize to prompt injection attacks, all\nwithout producing any visible modifications in the written prompt. Our code is\navailable at https://github.com/sail-sg/imperceptible-jailbreaks.",
+    "authors": [
+      "Kuofeng Gao",
+      "Yiming Li",
+      "Chao Du",
+      "Xin Wang",
+      "Xingjun Ma",
+      "Shu-Tao Xia",
+      "Tianyu Pang"
+    ],
+    "likes": 25,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.05025",
+    "date_collected": "2025-10-08T07:07:51.511365+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "대형 언어 모델에 대한 감지하기 어려운 질병침입",
+      "abstract": "시각 모드에 대한 질병침입 공격은 일반적으로 감지하기 어려운 적대적 왜곡에 의존하는 반면, 텍스트 모드에 대한 공격은 일반적으로 시각적 수정(예: 비의미적 접미사)이 필요하다고 가정됩니다. 본 논문에서는 변조 선택자(variation selectors)라는 유니코드 문자 클래스를 활용하는 감지하기 어려운 질병침입을 소개합니다. 악성 질문에 보이지 않는 변조 선택자를 추가하여, 침입 프롬프트는 화면에서 원래의 악성 질문과 시각적으로 동일하게 나타나지만 그들의 토큰화는 \"은밀하게\" 변경됩니다. 우리는 이와 같은 적대적 접미사를 생성하기 위한 검색-연쇄 파이프라인을 제안하고, 실험 결과 우리의 감지하기 어려운 질병침입이 네 개의 일치된 LLM에 대해 높은 공격 성공율을 달성하고 프롬프트 주입 공격에 일반화되며, 작성된 프롬프트에 어떠한 시각적 수정도 생성하지 않습니다. 코드는 https://github.com/sail-sg/imperceptible-jailbreaks 에서 확인할 수 있습니다."
+    },
+    "summary": "1. 텍스트 모드에 시각적 수정 없이 감지하기 어려운 악성 질문을 생성하는 방법 소개\n2. 변조 선택자를 활용하여 토큰화를 \"은밀하게\" 변경하여 악의적인 응답을 유도하는 과정 제안\n3. 대형 언어 모델에 대한 높은 공격 성공율을 달성하고, 시각적 수정 없이 프롬프트 주입 공격 일반화 확인",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "CoDA: Agentic Systems for Collaborative Data Visualization",
+    "abstract": "Deep research has revolutionized data analysis, yet data scientists still\ndevote substantial time to manually crafting visualizations, highlighting the\nneed for robust automation from natural language queries. However, current\nsystems struggle with complex datasets containing multiple files and iterative\nrefinement. Existing approaches, including simple single- or multi-agent\nsystems, often oversimplify the task, focusing on initial query parsing while\nfailing to robustly manage data complexity, code errors, or final visualization\nquality. In this paper, we reframe this challenge as a collaborative\nmulti-agent problem. We introduce CoDA, a multi-agent system that employs\nspecialized LLM agents for metadata analysis, task planning, code generation,\nand self-reflection. We formalize this pipeline, demonstrating how\nmetadata-focused analysis bypasses token limits and quality-driven refinement\nensures robustness. Extensive evaluations show CoDA achieves substantial gains\nin the overall score, outperforming competitive baselines by up to 41.5%. This\nwork demonstrates that the future of visualization automation lies not in\nisolated code generation but in integrated, collaborative agentic workflows.",
+    "authors": [
+      "Zichen Chen",
+      "Jiefeng Chen",
+      "Sercan Ö. Arik",
+      "Misha Sra",
+      "Tomas Pfister",
+      "Jinsung Yoon"
+    ],
+    "likes": 23,
+    "published_date": "Oct 3",
+    "url": "https://huggingface.co/papers/2510.03194",
+    "date_collected": "2025-10-08T07:07:51.512567+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "협업 데이터 시각화를 위한 CoDA: 에이전트 시스템",
+      "abstract": "심층 연구는 데이터 분석을 혁신하였지만, 데이터 과학자들은 여전히 시각화를 수동으로 제작하기 위해 상당한 시간을 할애하며, 자연어 쿼리로부터의 강력한 자동화 필요성을 강조하고 있다. 그러나 현재의 시스템은 여러 파일과 반복적 개선이 있는 복잡한 데이터셋에서 어려움을 겪고 있다. 단순한 단일 또는 다중 에이전트 시스템을 포함한 기존 방법론은 종종 초기 쿼리 분석에 초점을 맞추지만, 데이터 복잡성, 코드 오류 또는 최종 시각화 품질을 견고하게 다루지 못하고 있다. 본 논문에서는 이 도전을 협업적 다중 에이전트 문제로 재구성한다. CoDA를 소개하는데, 이는 메타데이터 분석, 작업 계획, 코드 생성 및 자기 반성을 위한 특화된 LLM 에이전트를 사용하는 다중 에이전트 시스템이다. 우리는 이 파이프라인을 형식화하여 메타데이터 중심의 분석이 토큰 한도를 우회하고 품질 중심의 개선이 견고함을 보장하는 방법을 보였다. 포괄적인 평가 결과, CoDA가 경쟁하는 기준에 비해 최대 41.5%의 큰 이득을 얻었다. 이 작업은 시각화 자동화의 미래는 고립된 코드 생성이 아닌 통합된, 협업적인 에이전트 워크플로우에 있다는 것을 보여준다."
+    },
+    "summary": "1. 데이터 과학자들이 수동으로 시각화를 만드는데 드는 시간을 줄이기 위해 협업적 다중 에이전트 시스템인 CoDA를 소개함.\n2. CoDA는 특화된 LLM 에이전트를 활용하여 메타데이터 분석, 작업 계획, 코드 생성, 자가 반성 등에 적용되며, 품질 중심의 개선을 통해 견고성 보장.\n3. 실험 결과, CoDA는 경쟁 모델 대비 최대 41.5%의 성능 향상을 달성하며, 시각화 자동화의 미래는 협업적인 에이전트 워크플로우에 있음을 입증함.",
+    "categories": [
+      "LLM",
+      "데이터 시각화",
+      "협업적 시스템"
+    ]
+  },
+  {
+    "title": "Hybrid Architectures for Language Models: Systematic Analysis and Design\n  Insights",
+    "abstract": "Recent progress in large language models demonstrates that hybrid\narchitectures--combining self-attention mechanisms with structured state space\nmodels like Mamba--can achieve a compelling balance between modeling quality\nand computational efficiency, particularly for long-context tasks. While these\nhybrid models show promising performance, systematic comparisons of\nhybridization strategies and analyses on the key factors behind their\neffectiveness have not been clearly shared to the community. In this work, we\npresent a holistic evaluation of hybrid architectures based on inter-layer\n(sequential) or intra-layer (parallel) fusion. We evaluate these designs from a\nvariety of perspectives: language modeling performance, long-context\ncapabilities, scaling analysis, and training and inference efficiency. By\ninvestigating the core characteristics of their computational primitive, we\nidentify the most critical elements for each hybridization strategy and further\npropose optimal design recipes for both hybrid models. Our comprehensive\nanalysis provides practical guidance and valuable insights for developing\nhybrid language models, facilitating the optimization of architectural\nconfigurations.",
+    "authors": [
+      "Sangmin Bae",
+      "Bilge Acun",
+      "Haroun Habeeb",
+      "Seungyeon Kim",
+      "Chien-Yu Lin",
+      "Liang Luo",
+      "Junjie Wang",
+      "Carole-Jean Wu"
+    ],
+    "likes": 22,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.04800",
+    "date_collected": "2025-10-08T07:07:51.513852+09:00",
+    "week": "2025-W41",
+    "translation": {
+      "title": "언어 모델용 복합 구조: 체계적 분석과 설계 통찰",
+      "abstract": "대형 언어 모델의 최근 발전은 셀프 어텐션 메커니즘과 Mamba와 같은 구조화된 상태 공간 모델을 결합하는 복합 구조가 특히 장문맥 작업에 대한 모델링 품질과 계산 효율성 사이에 매력적인 균형을 달성할 수 있음을 보여줍니다. 이러한 복합 모델은 유망한 성능을 보이지만, 복합화 전략의 체계적 비교 및 효과적인 요소에 대한 분석은 커뮤니티와 충분히 공유되지 않았습니다. 본 연구에서는 이러한 설계를 전체적으로 평가하고, 계층 간(순차) 또는 계층 내(병렬) 퓨전을 기반으로 하는 복합 구조를 제시합니다. 우리는 언어 모델링 성능, 장문맥 능력, 확장 분석, 그리고 훈련 및 추론 효율성의 다양한 관점에서 이러한 설계를 평가합니다. 계산 원시 구성 요소의 핵심 특성을 조사함으로써, 우리는 각 복합화 전략에 대한 가장 중요한 요소를 식별하고, 더 나아가 두 가지 모델의 최적 설계 레시피를 제안합니다. 우리의 포괄적인 분석은 복합 언어 모델 개발을 위한 실용적인 지침과 값진 통찰을 제공하여 구조적 설정의 최적화를 용이하게 합니다."
+    },
+    "summary": "1. 대형 언어 모델의 복합 구조는 셀프 어텐션 메커니즘과 구조화된 상태 공간 모델을 결합하여 모델링 품질과 계산 효율성 사이에서 균형을 유지할 수 있는 것으로 입증됨.\n2. 본 논문에서는 복합 아키텍처를 계층 간 또는 계층 내 퓨전을 기반으로 평가하고, 언어 모델링 성능, 장문맥 능력, 확장 분석, 훈련 및 추론 효율성에서 이를 분석함.\n3. 계산 원시 구성 요소의 핵심 특성을 조사하여, 각 복합화 전략의 가장 중요한 요소를 식별하고, 두 모델의 최적 설계 레시피를 제안함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

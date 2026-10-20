@@ -1,0 +1,123 @@
+=== Paper Collection Started at Thu Feb 26 22:14:35 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W09
+URL: https://huggingface.co/papers/week/2026-W09
+Found 10 papers in weekly view
+Fetching likes for: A Very Big Video Reasoning Suite
+Fetching likes for: Does Your Reasoning Model Implicitly Know When to Stop Thinking?
+Fetching likes for: VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training
+Fetching likes for: On Data Engineering for Scaling LLM Terminal Capabilities
+Fetching likes for: SkillOrchestra: Learning to Route Agents via Skill Transfer
+Fetching likes for: VLANeXt: Recipes for Building Strong VLA Models
+Fetching likes for: HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation
+Fetching likes for: Query-focused and Memory-aware Reranker for Long Context Processing
+Fetching likes for: MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models
+Fetching likes for: DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation
+Selected top 10 papers by likes:
+1. A Very Big Video Reasoning Suite (441 likes)
+2. Does Your Reasoning Model Implicitly Know When to Stop Thinking? (208 likes)
+3. VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training (184 likes)
+4. On Data Engineering for Scaling LLM Terminal Capabilities (82 likes)
+5. SkillOrchestra: Learning to Route Agents via Skill Transfer (50 likes)
+6. VLANeXt: Recipes for Building Strong VLA Models (48 likes)
+7. HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation (46 likes)
+8. Query-focused and Memory-aware Reranker for Long Context Processing (45 likes)
+9. MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models (41 likes)
+10. DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation (29 likes)
+Found abstract: Rapid progress in video models has largely focused on visual quality, leaving their reasoning capabi...
+Processed paper: A Very Big Video Reasoning Suite
+Found abstract: Recent advancements in large reasoning models (LRMs) have greatly improved their capabilities on com...
+Processed paper: Does Your Reasoning Model Implicitly Know When to Stop Thinking?
+Found abstract: Training stability remains a central challenge in reinforcement learning (RL) for large language mod...
+Processed paper: VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training
+Found abstract: Despite rapid recent progress in the terminal capabilities of large language models, the training da...
+Processed paper: On Data Engineering for Scaling LLM Terminal Capabilities
+Found abstract: Compound AI systems promise capabilities beyond those of individual models, yet their success depend...
+Processed paper: SkillOrchestra: Learning to Route Agents via Skill Transfer
+Found abstract: Following the rise of large foundation models, Vision-Language-Action models (VLAs) emerged, leverag...
+Processed paper: VLANeXt: Recipes for Building Strong VLA Models
+Found abstract: Modeling long sequences of user behaviors has emerged as a critical frontier in generative recommend...
+Processed paper: HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation
+Found abstract: Built upon the existing analysis of retrieval heads in large language models, we propose an alternat...
+Processed paper: Query-focused and Memory-aware Reranker for Long Context Processing
+Found abstract: Molecular generation with diffusion models has emerged as a promising direction for AI-driven drug d...
+Processed paper: MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models
+Found abstract: Recent advancements in foundation models have revolutionized joint audio-video generation. However, ...
+Processed paper: DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Very Big Video Reasoning Suite
+Paper already exists, checking if translation is complete...
+Update likes: 441  ->  377
+Update date_collected: 2026-02-27T07:14:46.538023+09:00  ->  2026-02-26T07:13:14.382474+09:00
+
+Processing paper 2/10
+Title: Does Your Reasoning Model Implicitly Know When to Stop Thinking?
+Paper already exists, checking if translation is complete...
+Update likes: 208  ->  201
+Update date_collected: 2026-02-27T07:14:46.539613+09:00  ->  2026-02-26T07:13:14.384109+09:00
+
+Processing paper 3/10
+Title: VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training
+Paper already exists, checking if translation is complete...
+Update likes: 184  ->  183
+Update date_collected: 2026-02-27T07:14:46.540784+09:00  ->  2026-02-26T07:13:14.385360+09:00
+
+Processing paper 4/10
+Title: On Data Engineering for Scaling LLM Terminal Capabilities
+Paper already exists, checking if translation is complete...
+Update likes: 82  ->  54
+Update date_collected: 2026-02-27T07:14:46.542034+09:00  ->  2026-02-26T07:13:14.386613+09:00
+
+Processing paper 5/10
+Title: SkillOrchestra: Learning to Route Agents via Skill Transfer
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  43
+Update date_collected: 2026-02-27T07:14:46.543254+09:00  ->  2026-02-26T07:13:14.389218+09:00
+
+Processing paper 6/10
+Title: VLANeXt: Recipes for Building Strong VLA Models
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  44
+Update date_collected: 2026-02-27T07:14:46.544605+09:00  ->  2026-02-26T07:13:14.387975+09:00
+
+Processing paper 7/10
+Title: HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Query-focused and Memory-aware Reranker for Long Context Processing
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  34
+Update date_collected: 2026-02-27T07:14:46.547093+09:00  ->  2026-02-26T07:13:14.390503+09:00
+
+Processing paper 9/10
+Title: MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W09.json...
+
+Updating Notion database...
+Updating paper: 대규모 비디오 추론 스위트 (likes: 377 -> 441)
+Updating paper: 추론 모델이 암묵적으로 생각을 멈출 때를 아는가? (likes: 201 -> 208)
+Updating paper: VESPO: 안정적인 오프-폴리시 LLM 훈련을 위한 변이적 시퀀스-레벨 소프트 정책 최적화 (likes: 183 -> 184)
+Updating paper: 큰 언어 모델 단말 능력의 확장을 위한 데이터 공학에 대해 (likes: 54 -> 82)
+Updating paper: SkillOrchestra: 스킬 전이를 통한 에이전트 경로 지정 학습 (likes: 43 -> 50)
+Updating paper: VLANeXt: 강력한 VLA 모델 구축을 위한 레시피 (likes: 44 -> 48)
+Creating new paper: 하이브리드 시간 인지 주의 아키텍처(HyTRec)를 이용한 장기 행동 순차 추천
+Updating paper: 쿼리 중심 메모리 인식 재랭커를 위한 재정렬기 (likes: 34 -> 45)
+Creating new paper: MolHIT: 분류론적 이산 확산 모델로 분자 그래프 생성 고도화
+Creating new paper: DreamID-Omni: 통제 가능한 인간 중심 오디오-비디오 생성을 위한 통합 프레임워크
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Feb 26 22:18:18 UTC 2026 ===
+

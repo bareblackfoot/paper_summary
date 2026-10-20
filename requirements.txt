@@ -1,0 +1,13 @@
+requests>=2.31.0
+openai>=1.40.0
+python-dotenv>=1.0.1
+beautifulsoup4>=4.12.3
+pytz
+jinja2>=3.1
+markdown>=3.5
+pypdf>=4.2
+cffi>=1.16
+pillow>=10.3
+pymupdf>=1.24
+notion-client>=2.2.1,<2.6  # 2.6+ speaks Notion API 2025-09-03 and has no databases.query; publisher uses the old calls
+flask==3.0.2

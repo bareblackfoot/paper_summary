@@ -1,0 +1,306 @@
+[
+  {
+    "title": "The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning",
+    "abstract": "Reinforcement learning (RL) has gained growing attention in large language model (LLM) post-training, yet RL training remains fragile and can suffer from instability or collapse. One vital cause is training-inference mismatch: LLM adopts separate inference and training engines for generation efficiency and training precision, which in practice exhibits inconsistent probabilities for the same trajectories on training and inference sides, even with synchronized model parameters. This naturally induces a special type of off-policyness ever existing and poisoning the training. Prior works have made various efforts in addressing the off-policyness to stabilize the training policies under the mismatch. In this paper, we point out the objective misalignment neglected by existing works that an effective update to the policy in the training engine not necessarily ensures the improvement of the inference policy, i.e., the one used in deployment. To this end, we propose a new policy optimization objective for LLM RL, named Monotonic Inference Policy Improvement (MIPI). Following this principle, we introduce Monotonic Inference Policy Update (MIPU), a two-step LLM RL framework that constructs sampler-referenced candidate updates and selectively accepts synchronized candidates using an inference-side gap proxy. Experiments conducted on two model scales under high mismatch show that MIPU improves average reasoning performance and training stability.",
+    "authors": [
+      "Jing Liang",
+      "Hongyao Tang",
+      "Yi Ma",
+      "Yancheng He",
+      "Weixun Wang",
+      "Xiaoyang Li",
+      "Ju Huang",
+      "Wenbo Su",
+      "Jinyi Liu",
+      "Yan Zheng",
+      "Jianye Hao",
+      "Bo Zheng"
+    ],
+    "likes": 155,
+    "published_date": "Jun 28",
+    "url": "https://huggingface.co/papers/2606.29526",
+    "date_collected": "2026-07-08T08:07:51.932789+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "OmniOpt: Taxonomy, Geometry, and Benchmarking of Modern Optimizers",
+    "abstract": "Optimizer selection for large-scale model training has become a system-level design decision constrained jointly by compute, memory, tuning budget, and task diversity, yet the landscape of over one hundred methods remains fragmented. We therefore present OmniOpt, a unified survey and benchmark cookbook of optimizers for the research community. OmniOpt rests on four coupled components. First, we treat every optimizer update as a structured transformation through a five-stage meta-pipeline, and show that most methods engage only one or two of these stages. Second, we use norm-constrained linear minimization oracles (LMOs) to unify different optimizers. Third, these two views ground a dual-dimension taxonomy, one dimension assigning each method to a mechanism family and the other recording the measurable training objectives it aims to improve. Fourth, and at the core of this paper, we instantiate the full taxonomy in a unified cross-domain benchmark spanning representative optimizers, model scales, and training regimes from language model pretraining to image classification, systematically analyzing each method family across multiple effect objectives and laying out their trade-offs. OmniOpt thus supplies the research community with an operational coordinate system for selecting optimizers under explicit mechanism and objective assumptions, and charts a direction for the future development of the optimizer community.",
+    "authors": [
+      "Siyuan Li",
+      "Jiabao Pan",
+      "Yumou Liu",
+      "Zhuoli Ouyang",
+      "Xin Jin",
+      "Xinglong Xu",
+      "Jingxuan Wei",
+      "Shengye Pang",
+      "Jintao Che",
+      "Xuanhe Zhou",
+      "Conghui He",
+      "Cheng Tan"
+    ],
+    "likes": 64,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2607.04033",
+    "date_collected": "2026-07-08T08:07:51.935475+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "UI-MOPD: Multi-Platform On-Policy Distillation for Continual GUI Agent Learning",
+    "abstract": "Recent advances in multimodal foundation models and agent systems have driven GUI agents from single-platform task execution toward cross-platform interaction. However, building multi-platform GUI agents remains challenging. On one hand, high-quality and executable cross-platform interaction trajectories are still scarce, and existing data often suffer from limited platform coverage. On the other hand, different platforms exhibit distinct interaction conventions, making joint or continual training prone to behavioral pattern mixing, platform-specific capability degradation, and catastrophic forgetting. To address these challenges, we construct Uni-GUI, a high-quality cross-platform GUI interaction dataset, and propose UI-MOPD, the first method that incorporates multi-teacher on-policy distillation into continual learning for GUI agents. UI-MOPD dynamically selects a platform-specific teacher according to the current environment and transfers platform-specific behavioral priors to a shared policy through platform-conditioned distillation, enabling adaptation to new platforms while preserving capabilities on existing ones. Experiments on OSWorld and MobileWorld show that UI-MOPD achieves task success rates of 38.2% and 12.0%, respectively, demonstrating its effectiveness in balancing cross-platform capability retention and new-platform adaptation.\n  Project page: https://elispectre.github.io/UI-MOPD/.",
+    "authors": [
+      "Niu Lian",
+      "Alan Chen",
+      "Zhehao Yu",
+      "Chengzhen Duan",
+      "Fazhan Liu",
+      "Hui Liu",
+      "Pei Fu",
+      "Jian Luan",
+      "Yaowei Wang",
+      "Shu-Tao Xia",
+      "Jinpeng Wang"
+    ],
+    "likes": 62,
+    "published_date": "Jul 5",
+    "url": "https://huggingface.co/papers/2607.04425",
+    "date_collected": "2026-07-08T08:07:51.938102+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "ResearchStudio-Reel: Automate the Last Mile of Research from Paper to Poster, Video, and Blog",
+    "abstract": "Research dissemination, turning a paper into a poster, a talk video, and a blog post, is still a manual last mile. Prior automation treats each artifact in isolation that each re-extract the paper from scratch, usually ship one-way renders the author cannot reopen in PowerPoint or Word, and gates quality on soft VLM-preference scores that plateau while load-bearing sections still read as empty. We argue this last mile is best built as a composition of skills: thin agent-readable contracts that share one upstream extractor and wrap deterministic primitives in a measured-fill loop whose exits are hard pass/fail render gates. We instantiate this as ResearchStudio-Reel, five Claude Code and Codex skills organized into one shared extractor (Paper2Assets), three editable generators (Paper2Poster, Paper2Video, Paper2Blog), and one interactive convergence layer (Paper2Reel). Paper2Assets extracts each paper once into a shared bundle that can be reused by every downstream skill; The three generators produce a print-ready poster, a synchronized talk video, and a bilingual blog that stay factually consistent and round-trip through PowerPoint or Word; Paper2Reel then binds all three into a self-contained HTML viewer whose section-level clicks jump the video, slides, captions, and blog to matching content. On the Paper2Poster benchmark, our posters lead every aesthetic and information sub-criterion against both prior automated systems and single-shot frontier LLMs, surpassing the authors' own on aesthetics under two held-out VLM judges and winning overall on 84% to 93% of papers; capability audits further show that, by uniquely pairing narration-aligned on-slide highlights with a bilingual blog gated by layout-aware DOCX repair, ResearchStudio-Reel is the only pipeline to ship all three editable artifacts. Project is available at https://aka.ms/ResearchStudio",
+    "authors": [
+      "Lingao Xiao",
+      "Yalun Dai",
+      "Yangyu Huang",
+      "Qihao Zhao",
+      "Wenshan Wu",
+      "Hugo He",
+      "Ruishuo Chen",
+      "Jin Jiang",
+      "Qianli Ma",
+      "Jiahuan Zhang",
+      "Xin Zhang",
+      "Ying Xin",
+      "Yang Ou",
+      "Yan Xia",
+      "Scarlett Li",
+      "Longbo Huang",
+      "Zhipeng Zhang",
+      "Yang He",
+      "Yap Kim Hui",
+      "Yan Lu"
+    ],
+    "likes": 47,
+    "published_date": "Jul 5",
+    "url": "https://huggingface.co/papers/2607.04438",
+    "date_collected": "2026-07-08T08:07:51.941255+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+    "abstract": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment: multi-rate execution inside closed-loop control, latency-first batch-1 inference on heterogeneous hardware, and extensible embodied interfaces beyond fixed token I/O. We present Embodied.cpp, a portable C++ inference runtime for embodied models. Based on an architectural analysis of representative VLA models and WAMs, Embodied.cpp captures a shared execution path and organizes it into five layers: input adapters, sequence builders, backbone execution, head plugins, and deployment adapters. The runtime provides modular multi-rate execution, latency-first fused inference, and extensible operator and I/O support, enabling deployment across heterogeneous devices, robots, and simulators through one backend abstraction. We evaluate Embodied.cpp on two VLA models, HY-VLA and pi0.5, and on a preliminary WAM benchmark using a LingBot-VA Transformer block. The VLA deployments achieve successful closed-loop execution with 100.0% and 91.0% task success rates, respectively. The WAM benchmark reduces block memory from 312.2 MiB to 88.1 MiB. These results show that Embodied.cpp improves deployment efficiency while preserving high accuracy across diverse embodied model architectures.",
+    "authors": [
+      "Ling Xu",
+      "Chuyu Han",
+      "Borui Li",
+      "Hao Wu",
+      "Shiqi Jiang",
+      "Ting Cao",
+      "Chuanyou Li",
+      "Sheng Zhong",
+      "Shuai Wang"
+    ],
+    "likes": 47,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2607.02501",
+    "date_collected": "2026-07-08T08:07:51.943776+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "PixWorld: Unifying 3D Scene Generation and Reconstruction in Pixel Space",
+    "abstract": "3D reconstruction and generation are commonly tackled by separate paradigms: pixel-based regression for reconstruction, and latent diffusion for generation. Recent works attempt to unify them in latent space, but with notable drawbacks: the diffusion objective is defined on latent features rather than the underlying 3D representation, and both branches suffer from information loss introduced by latent encoding, while requiring a pretrained Variational Autoencoder (VAE) or Representation Autoencoder (RAE). In this paper, we reformulate these two tasks under a unified pixel-space diffusion paradigm and introduce PixWorld, a single model that jointly addresses 3D reconstruction and generation. By supervising diffusion directly on rendered images, PixWorld removes the above limitations and aligns optimization with 3D scene fidelity. Beyond photometric and perceptual supervision that operates at the 2D image level and lacks 3D geometric awareness, we further introduce a geometry perception loss that aligns rendered views with their ground truth in the geometry-aware feature space of a pretrained 3D foundation model, providing 3D structural supervision. PixWorld consistently outperforms prior latent-space generation methods and matches state-of-the-art reconstruction methods, demonstrating the superiority of a unified pixel-space approach.",
+    "authors": [
+      "Sensen Gao",
+      "Zhaoqing Wang",
+      "Qihang Cao",
+      "Dongdong Yu",
+      "Changhu Wang",
+      "Jia-Wang Bian"
+    ],
+    "likes": 46,
+    "published_date": "Jul 6",
+    "url": "https://huggingface.co/papers/2607.05373",
+    "date_collected": "2026-07-08T08:07:51.946116+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "DataComp-VLM: Improved Open Datasets for Vision-Language Models",
+    "abstract": "Building performant Vision-Language Models (VLMs) requires carefully curating large-scale training datasets, yet the community lacks systematic benchmarks for evaluating such curation strategies. We introduce DataComp for VLMs (DCVLM), a benchmark for controlled data-centric experiments to improve VLM training. As part of DCVLM, we collect 160 datasets spanning four data types -- image-caption pairs, multimodal interleaved documents, text-only, and instruction-tuning data -- into a corpus of 6T multimodal tokens. DCVLM allows participants to test curation strategies (filtering, mixing, formatting, sampling) across 1B-8B models and 6.25B-200B token budgets. Models are then evaluated on a carefully selected suite of up to 52 downstream benchmarks across 9 domains. We conduct extensive experiments on DCVLM and find that data mixing, not filtering, is key to a high-quality training dataset: instruction-heavy mixtures scale better than caption-heavy ones, with gains widening at larger scales. The resulting dataset, DCVLM-Baseline, enables training an 8B VLM to 63.6% accuracy on our 33-task core suite with 200B training tokens. Compared to FineVision, the state-of-the-art open VLM training dataset, this represents an improvement of +5.4pp. DCVLM and all accompanying artifacts will be made publicly available at https://www.datacomp.ai/dcvlm/.",
+    "authors": [
+      "Matteo Farina",
+      "Vishaal Udandarao",
+      "Thao Nguyen",
+      "Selim Kuzucu",
+      "Maximilian Böther",
+      "Andreas Hochlehnert",
+      "Adhiraj Ghosh",
+      "Marianna Nezhurina",
+      "Karsten Roth",
+      "Joschka Struber",
+      "Yuhui Zhang",
+      "Sebastian Dziadzio",
+      "Elaine Sui",
+      "Soumya Jahagirdar",
+      "Dhruba Ghosh",
+      "Hasan Hammoud",
+      "Thomas De Min",
+      "Simone Caldarella",
+      "Jehanzeb Mirza",
+      "Sedrick Keh",
+      "Mehdi Cherti",
+      "Hilde Kuehne"
+    ],
+    "likes": 40,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28551",
+    "date_collected": "2026-07-08T08:07:51.949298+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes",
+    "abstract": "Large language models have made research ideation increasingly accessible, yet effective idea development requires more than generating candidate directions. Researchers must ground a problem in current literature, identify meaningful bottlenecks, differentiate from existing solutions, and evaluate risks before committing to implementation. We present ResearchStudio-Idea as a reusable skill suite for this first mile of research ideation. The suite includes Paper-Search, a standalone multi-source literature search skill; Scoop-Check, a standalone prior-art collision checker for novelty claims; and IdeaSpark, the end-to-end skill that composes evidence grounding, pattern-guided generation, collision retrieval, audit, and idea-card rendering into one workflow. IdeaSpark is constructed from a corpus of 1,947 machine learning conference papers collected from ICLR, ICML, and NeurIPS between 2021 and 2025, including Oral papers, a separately tracked high-citation subset, and rejected submissions. Analysis of these outcomes reveals 31 recurring ideation sub-patterns, consolidated into 15 reusable ideation patterns. Each pattern is operationalized as a structured card containing research contexts, bottleneck types, differentiation strategies, supporting precedents, and common failure modes. Given a research problem and an evidence bundle, IdeaSpark evaluates evidence readiness, reconstructs the surrounding research context, identifies unresolved bottlenecks, selects relevant patterns, instantiates one candidate direction, retrieves potentially conflicting prior work, and performs outcome-informed auditing. This workflow transforms reusable ideation patterns into traceable research proposals. Blind automated-judge evaluations show that IdeaSpark consistently produces stronger research proposals than no-skill and generic-skill baselines while maintaining competitive novelty.",
+    "authors": [
+      "Qihao Zhao",
+      "Yangyu Huang",
+      "Yalun Dai",
+      "Lingao Xiao",
+      "Jianjun Gao",
+      "Xin Zhang",
+      "Wenshan Wu",
+      "Scarlett Li",
+      "Yang He",
+      "Yan Lu",
+      "Yap Kim Hui"
+    ],
+    "likes": 38,
+    "published_date": "Jul 5",
+    "url": "https://huggingface.co/papers/2607.04439",
+    "date_collected": "2026-07-08T08:07:51.951945+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "OrbitQuant: Data-Agnostic Quantization for Image and Video Diffusion Transformers",
+    "abstract": "Diffusion transformers (DiTs) achieve state-of-the-art image and video generation, but their multi-step sampling and growing parameter count make inference expensive. Post-training quantization (PTQ) is the natural remedy, yet DiT activations shift across timesteps, prompts, and guidance branches, forcing prior methods to re-fit calibration data for every new checkpoint or modality. We present OrbitQuant, a data-agnostic weight-activation quantizer that bypasses range estimation by quantizing in a normalized, rotated basis. In this basis, a randomized permuted block-Hadamard (RPBH) rotation concentrates each coordinate around one fixed, known marginal regardless of the input, so a single Lloyd-Max codebook serves all timesteps, prompts, and layers of a given input dimension. We extend the same quantizer to weight rows offline, absorbing the rotation into the weights so that it cancels inside each linear layer and only a forward rotation on the activations remains at runtime. The same recipe transfers from image to video with no per-modality tuning. Across FLUX.1, Z-Image-Turbo, Wan 2.1, and CogVideoX, it sets the state of the art for PTQ at several low-bit settings. It also pushes PTQ of image diffusion transformers to W2A4 with usable generation quality.",
+    "authors": [
+      "Donghyun Lee",
+      "Jitesh Chavan",
+      "Duy Nguyen",
+      "Sam Huang",
+      "Liming Jiang",
+      "Priyadarshini Panda",
+      "Timo Mertens",
+      "Saurabh Shukla"
+    ],
+    "likes": 33,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2607.02461",
+    "date_collected": "2026-07-08T08:07:51.954366+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "MANCE: Manifold Aware Concept Erasure",
+    "abstract": "Concept erasure aims to remove a target concept from a representation while preserving the other information encoded in it. This is difficult because representations encode many concepts that are often correlated with the erasure target, so removing the target risks damaging them. We propose the Manifold Constraint Hypothesis (MCH): if natural representations concentrate on a structured, lower-dimensional manifold, then interventions should be constrained to that manifold and better preserve other information encoded in the representation during interventions. We instantiate MCH in a new concept erasure method: MANifold aware Concept Erasure (MANCE). MANCE performs iterative updates to the representations using signals from a classifier that predicts a target concept. We estimate the manifold using representations obtained from natural inputs, and then we project the concept removal update to the estimated manifold. We perform extensive evaluation on 119 settings spanning text and vision, including 13 language models, three NLP concepts, and 40 CelebA-CLIP attributes. Employing MANCE on top of previous methods shows consistent improved leakage results. We also introduce MANCE+ and MANCE++, which prepend a closed-form erasure algorithm before employing MANCE, achieving better leakage--surgicality tradeoffs relative to matched full-space updates. MANCE++, our best method, achieves state-of-the-art results on nonlinear concept erasure. These results support MCH in the erasure setting: interventions should be constrained to the natural representation manifold.",
+    "authors": [
+      "Matan Avitan",
+      "Yoav Goldberg",
+      "Yanai Elazar"
+    ],
+    "likes": 32,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2607.03973",
+    "date_collected": "2026-07-08T08:07:51.956543+09:00",
+    "week": "2026-W28",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  }
+]

@@ -1,0 +1,167 @@
+=== Paper Collection Started at Sun Jun 29 22:07:09 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W27
+URL: https://huggingface.co/papers/week/2025-W27
+Found 10 papers in weekly view
+Fetching likes for: Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights
+Fetching likes for: Light of Normals: Unified Feature Representation for Universal
+  Photometric Stereo
+Fetching likes for: Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding
+Fetching likes for: OmniGen2: Exploration to Advanced Multimodal Generation
+Fetching likes for: ShareGPT-4o-Image: Aligning Multimodal Models with GPT-4o-Level Image
+  Generation
+Fetching likes for: JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo
+  Retouching Agent
+Fetching likes for: Matrix-Game: Interactive World Foundation Model
+Fetching likes for: PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models
+Fetching likes for: AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion
+  Models
+Fetching likes for: LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement
+  Learning
+Selected top 10 papers by likes:
+1. Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights (111 likes)
+2. Light of Normals: Unified Feature Representation for Universal
+  Photometric Stereo (80 likes)
+3. Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding (80 likes)
+4. OmniGen2: Exploration to Advanced Multimodal Generation (68 likes)
+5. ShareGPT-4o-Image: Aligning Multimodal Models with GPT-4o-Level Image
+  Generation (61 likes)
+6. JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo
+  Retouching Agent (59 likes)
+7. Matrix-Game: Interactive World Foundation Model (56 likes)
+8. PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models (56 likes)
+9. AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion
+  Models (52 likes)
+10. LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement
+  Learning (50 likes)
+Found abstract: Modern Parameter-Efficient Fine-Tuning (PEFT) methods such as low-rank
+adaptation (LoRA) reduce the ...
+Processed paper: Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights
+Found abstract: Universal photometric stereo (PS) aims to recover high-quality surface
+normals from objects under ar...
+Processed paper: Light of Normals: Unified Feature Representation for Universal
+  Photometric Stereo
+Found abstract: Retrieval-Augmented Generation (RAG) systems have revolutionized information
+retrieval and question ...
+Processed paper: Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding
+Found abstract: In this work, we introduce OmniGen2, a versatile and open-source generative
+model designed to provid...
+Processed paper: OmniGen2: Exploration to Advanced Multimodal Generation
+Found abstract: Recent advances in multimodal generative models have unlocked photorealistic,
+instruction-aligned im...
+Processed paper: ShareGPT-4o-Image: Aligning Multimodal Models with GPT-4o-Level Image
+  Generation
+Found abstract: Photo retouching has become integral to contemporary visual storytelling,
+enabling users to capture ...
+Processed paper: JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo
+  Retouching Agent
+Found abstract: We introduce Matrix-Game, an interactive world foundation model for
+controllable game world generati...
+Processed paper: Matrix-Game: Interactive World Foundation Model
+Found abstract: In visual generation, the quadratic complexity of attention mechanisms
+results in high memory and co...
+Processed paper: PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models
+Found abstract: We present AnimaX, a feed-forward 3D animation framework that bridges the
+motion priors of video dif...
+Processed paper: AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion
+  Models
+Found abstract: Ultra-long generation by large language models (LLMs) is a widely demanded
+scenario, yet it remains ...
+Processed paper: LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement
+  Learning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights
+Paper already exists, checking if translation is complete...
+Update likes: 111  ->  108
+Update date_collected: 2025-06-30T07:07:17.407655+09:00  ->  2025-06-29T07:07:11.607114+09:00
+
+Processing paper 2/10
+Title: Light of Normals: Unified Feature Representation for Universal
+  Photometric Stereo
+Paper already exists, checking if translation is complete...
+Update likes: 80  ->  80
+Update date_collected: 2025-06-30T07:07:17.409199+09:00  ->  2025-06-29T07:07:11.608690+09:00
+
+Processing paper 3/10
+Title: Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal
+  Document Understanding
+Paper already exists, checking if translation is complete...
+Update likes: 80  ->  79
+Update date_collected: 2025-06-30T07:07:17.410307+09:00  ->  2025-06-29T07:07:11.609828+09:00
+
+Processing paper 4/10
+Title: OmniGen2: Exploration to Advanced Multimodal Generation
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  67
+Update date_collected: 2025-06-30T07:07:17.412102+09:00  ->  2025-06-29T07:07:11.611894+09:00
+
+Processing paper 5/10
+Title: ShareGPT-4o-Image: Aligning Multimodal Models with GPT-4o-Level Image
+  Generation
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  59
+Update date_collected: 2025-06-30T07:07:17.413368+09:00  ->  2025-06-29T07:07:11.613198+09:00
+
+Processing paper 6/10
+Title: JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo
+  Retouching Agent
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  58
+Update date_collected: 2025-06-30T07:07:17.414740+09:00  ->  2025-06-29T07:07:11.614596+09:00
+
+Processing paper 7/10
+Title: Matrix-Game: Interactive World Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 56  ->  55
+Update date_collected: 2025-06-30T07:07:17.416095+09:00  ->  2025-06-29T07:07:11.616009+09:00
+
+Processing paper 8/10
+Title: PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and
+  Quantized Attention in Visual Generation Models
+Paper already exists, checking if translation is complete...
+Update likes: 56  ->  55
+Update date_collected: 2025-06-30T07:07:17.417460+09:00  ->  2025-06-29T07:07:11.617432+09:00
+
+Processing paper 9/10
+Title: AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  52
+Update date_collected: 2025-06-30T07:07:17.418594+09:00  ->  2025-06-29T07:07:11.618597+09:00
+
+Processing paper 10/10
+Title: LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement
+  Learning
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  49
+Update date_collected: 2025-06-30T07:07:17.419685+09:00  ->  2025-06-29T07:07:11.619744+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W27.json...
+
+Updating Notion database...
+Updating paper: 드래그 앤 드롭 LLMs: 제로 샷 프롬프트-투-웨이츠 (likes: 108 -> 111)
+Paper already exists with same likes count: 표면 법선의 빛: 범용 광도 스테레오를 위한 통합적인 특징 표현
+Updating paper: 비전 안내 청킹이 필요한 전부: 다중 모달 문서 이해 기능을 강화하는 RAG (likes: 79 -> 80)
+Updating paper: OmniGen2: 고급 멀티모달 생성을 위한 탐색 (likes: 67 -> 68)
+Updating paper: 다중 모달 모델을 GPT-4o 수준의 이미지 생성과 조율하는 ShareGPT-4o-Image (likes: 59 -> 61)
+Updating paper: 자비스아트: 지능적인 사진 보정 에이전트를 통해 인간의 예술적 창의력 해방하기 (likes: 58 -> 59)
+Updating paper: 상호작용하는 세계 기초 모델: Matrix-Game (likes: 55 -> 56)
+Updating paper: 효율적인 희박 및 양자화 주의를 위한 패턴 인식 기반 재배치 모델 (likes: 55 -> 56)
+Paper already exists with same likes count: AnimaX: 3D에서 관절 비디오-자세 확산 모델로 무생물을 움직이게 하기
+Updating paper: LongWriter-Zero: 강화 학습을 통한 초정밀 장문 텍스트 생성 마스터링 (likes: 49 -> 50)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Jun 29 22:08:07 UTC 2025 ===
+

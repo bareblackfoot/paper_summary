@@ -1,0 +1,330 @@
+[
+  {
+    "title": "Group Sequence Policy Optimization",
+    "abstract": "This paper introduces Group Sequence Policy Optimization (GSPO), our stable,\nefficient, and performant reinforcement learning algorithm for training large\nlanguage models. Unlike previous algorithms that adopt token-level importance\nratios, GSPO defines the importance ratio based on sequence likelihood and\nperforms sequence-level clipping, rewarding, and optimization. We demonstrate\nthat GSPO achieves superior training efficiency and performance compared to the\nGRPO algorithm, notably stabilizes Mixture-of-Experts (MoE) RL training, and\nhas the potential for simplifying the design of RL infrastructure. These merits\nof GSPO have contributed to the remarkable improvements in the latest Qwen3\nmodels.",
+    "authors": [
+      "Chujie Zheng",
+      "Shixuan Liu",
+      "Mingze Li",
+      "Xiong-Hui Chen",
+      "Bowen Yu",
+      "Chang Gao",
+      "Kai Dang",
+      "Yuqiong Liu",
+      "Rui Men",
+      "An Yang",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ],
+    "likes": 119,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2507.18071",
+    "date_collected": "2025-07-28T07:08:03.433682+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "그룹 시퀀스 정책 최적화",
+      "abstract": "본 논문은 대규모 언어 모델을 훈련하는 안정적이고 효율적이며 성능이 우수한 강화학습 알고리즘인 그룹 시퀀스 정책 최적화 (Group Sequence Policy Optimization, GSPO)를 소개합니다. 이전 알고리즘이 토큰 수준의 중요도 비율을 채택하는 반면, GSPO는 시퀀스 우도를 기반으로 중요도 비율을 정의하고 시퀀스 수준의 클리핑, 보상 및 최적화를 수행합니다. GSPO가 GRPO 알고리즘에 비해 우수한 훈련 효율성과 성능을 달성하며, 특히 MoE(Mixture-of-Experts) 강화학습 훈련을 안정화시키고 강화학습 인프라 설계를 단순화할 수 있는 잠재력이 있음을 입증합니다. GSPO의 이러한 장점은 최신 Qwen3 모델의 현저한 개선에 기여하였습니다."
+    },
+    "summary": "1. GSPO는 기존의 알고리즘과 달리 시퀀스 우도를 기반으로 중요도 비율을 정의하고 시퀀스 수준의 클리핑, 보상, 최적화를 수행하여 대규모 언어 모델 훈련에서 우수한 효율성과 성능을 달성합니다.\n2. GSPO는 MoE 강화학습 훈련을 안정화시키는 데 도움이 되며, 강화학습 인프라 설계를 단순화하는 잠재력을 가지고 있습니다.\n3. GSPO의 우수한 훈련 효율성과 성능은 최신 Qwen3 모델의 현저한 개선을 이루어내었습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "GUI-G^2: Gaussian Reward Modeling for GUI Grounding",
+    "abstract": "Graphical User Interface (GUI) grounding maps natural language instructions\nto precise interface locations for autonomous interaction. Current\nreinforcement learning approaches use binary rewards that treat elements as\nhit-or-miss targets, creating sparse signals that ignore the continuous nature\nof spatial interactions. Motivated by human clicking behavior that naturally\nforms Gaussian distributions centered on target elements, we introduce GUI\nGaussian Grounding Rewards (GUI-G^2), a principled reward framework that\nmodels GUI elements as continuous Gaussian distributions across the interface\nplane. GUI-G^2 incorporates two synergistic mechanisms: Gaussian point\nrewards model precise localization through exponentially decaying distributions\ncentered on element centroids, while coverage rewards assess spatial alignment\nby measuring the overlap between predicted Gaussian distributions and target\nregions. To handle diverse element scales, we develop an adaptive variance\nmechanism that calibrates reward distributions based on element dimensions.\nThis framework transforms GUI grounding from sparse binary classification to\ndense continuous optimization, where Gaussian distributions generate rich\ngradient signals that guide models toward optimal interaction positions.\nExtensive experiments across ScreenSpot, ScreenSpot-v2, and ScreenSpot-Pro\nbenchmarks demonstrate that GUI-G^2, substantially outperforms\nstate-of-the-art method UI-TARS-72B, with the most significant improvement of\n24.7% on ScreenSpot-Pro. Our analysis reveals that continuous modeling provides\nsuperior robustness to interface variations and enhanced generalization to\nunseen layouts, establishing a new paradigm for spatial reasoning in GUI\ninteraction tasks.",
+    "authors": [
+      "Fei Tang",
+      "Zhangxuan Gu",
+      "Zhengxi Lu",
+      "Xuyang Liu",
+      "Shuheng Shen",
+      "Changhua Meng",
+      "Wen Wang",
+      "Wenqi Zhang",
+      "Yongliang Shen",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang"
+    ],
+    "likes": 118,
+    "published_date": "Jul 21",
+    "url": "https://huggingface.co/papers/2507.15846",
+    "date_collected": "2025-07-28T07:08:03.435131+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "GUI-G^2: GUI 그라운딩을 위한 가우시안 보상 모델링",
+      "abstract": "그래픽 사용자 인터페이스(GUI) 그라운딩은 자연어 명령을 정확한 인터페이스 위치로 매핑하여 자율 상호작용을 위한 기반을 마련합니다. 현재의 강화 학습 접근 방식은 요소를 적중 또는 실패로 취급하는 이진 보상을 사용하여 공간 상호작용의 연속적인 성격을 무시하는 희소한 신호를 만듭니다. 이 연구는 인간의 클릭 행동에서 영감을 받아 대상 요소를 중심으로 가우시안 분포를 자연적으로 형성하는 것을 GUI 가우시안 그라운딩 보상(GUI-G^2)이라고 하는 원칙에 입각한 보상 프레임워크를 소개합니다. GUI-G^2는 요소를 인터페이스 평면 전체에 걸쳐 연속적인 가우시안 분포로 모델링하는 프레임워크로, 가우시안 포인트 보상은 요소 중심을 중심으로 지수적으로 감소하는 분포를 통해 정확한 위치 지정을 모델링하고, 커버리지 보상은 예측된 가우시안 분포와 대상 영역 간의 중첩을 측정하여 공간 정렬을 평가합니다. 다양한 요소 크기를 처리하기 위해 요소 크기에 따라 보상 분포를 보정하는 적응형 분산 메커니즘을 개발합니다. 이 프레임워크는 GUI 그라운딩을 희소한 이진 분류에서 밀도 높은 연속적 최적화로 변형시켜 가우시안 분포가 모델을 최적의 상호작용 위치로 안내하는 풍부한 경사 신호를 생성합니다. ScreenSpot, ScreenSpot-v2, ScreenSpot-Pro 벤치마크를 포함한 광범위한 실험은 GUI-G^2가 UI-TARS-72B 최신 기법을 현저하게 능가한다는 것을 보여주며, ScreenSpot-Pro에서 24.7%의 가장 큰 향상을 나타냅니다. 연구 결과는 연속적 모델링이 인터페이스 변이에 뛰어난 강건성을 제공하고 보이지 않는 레이아웃에 대한 향상된 일반화를 제공함을 보여주며, GUI 상호작용 작업에서 공간 추론의 새로운 패러다임을 확립합니다."
+    },
+    "summary": "1. GUI-G^2는 GUI 요소를 연속적 가우시안 분포로 모델링하여 밀도 높은 지역화를 가능하게 하는 GUI 그라운딩 보상 프레임워크를 소개합니다.\n2. 가우시안 포인트 보상과 커버리지 보상 메커니즘을 결합하여 GUI-G^2는 요소 정확한 위치 지정과 공간 정렬을 모델링하며, 적응형 분산 메커니즘을 통해 다양한 요소 크기를 처리합니다.\n3. GUI-G^2는 UI-TARS-72B 방법보다 우수한 성능을 보이며, 연속적 모델링은 인터페이스 변이에 강건하고 새로운 레이아웃에 대한 일반화를 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via\n  Context-Aware Multi-Stage Policy Optimization",
+    "abstract": "Large language models have recently evolved from fluent text generation to\nadvanced reasoning across diverse domains, giving rise to reasoning language\nmodels. Among these domains, mathematical reasoning serves as a representative\nbenchmark as it requires precise multi-step logic and abstract reasoning, which\ncan be generalized to other tasks. While closed-source RLMs such as GPT-o3\ndemonstrate impressive reasoning capabilities, their proprietary nature limits\ntransparency and reproducibility. Although many open-source projects aim to\nclose this gap, most of them lack sufficient openness by omitting critical\nresources such as datasets and detailed training configurations, which hinders\nreproducibility. To contribute toward greater transparency in RLM development,\nwe introduce the MiroMind-M1 series, a set of fully open-source RLMs built on\nthe Qwen-2.5 backbone that match or exceed the performance of existing\nopen-source RLMs. Specifically, our models are trained in two stages: SFT on a\ncarefully curated corpus of 719K math-reasoning problems with verified CoT\ntrajectories, followed by RLVR on 62K challenging and verifiable problems. To\nenhance the robustness and efficiency of the RLVR process, we introduce\nContext-Aware Multi-Stage Policy Optimization, an algorithm that integrates\nlength-progressive training with an adaptive repetition penalty to encourage\ncontext-aware RL training. Our model achieves state-of-the-art or competitive\nperformance and superior token efficiency among Qwen-2.5-based open-source 7B\nand 32B models on the AIME24, AIME25, and MATH benchmarks. To facilitate\nreproducibility, we release the complete stack: models (MiroMind-M1-SFT-7B,\nMiroMind-M1-RL-7B, MiroMind-M1-RL-32B); datasets (MiroMind-M1-SFT-719K,\nMiroMind-M1-RL-62K); and all training and evaluation configurations. We hope\nthese resources will support further research and foster community advancement.",
+    "authors": [
+      "Xingxuan Li",
+      "Yao Xiao",
+      "Dianwen Ng",
+      "Hai Ye",
+      "Yue Deng",
+      "Xiang Lin",
+      "Bin Wang",
+      "Zhanfeng Mo",
+      "Chong Zhang",
+      "Yueyi Zhang",
+      "Zonglin Yang",
+      "Ruilin Li",
+      "Lei Lei",
+      "Shihao Xu",
+      "Han Zhao",
+      "Weiling Chen",
+      "Feng Ji",
+      "Lidong Bing"
+    ],
+    "likes": 109,
+    "published_date": "Jul 19",
+    "url": "https://huggingface.co/papers/2507.14683",
+    "date_collected": "2025-07-28T07:08:03.436824+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "MiroMind-M1: 수학 추론의 컨텍스트 인식 다단계 정책 최적화를 통한 오픈 소스 진보",
+      "abstract": "최근 대형 언어 모델은 다양한 영역에서의 고급 추론을 위해 발전해 왔으며, 이는 추론 언어 모델로 이어졌습니다. 이러한 영역 중에서 수학적 추론은 정확한 다단계 논리와 추상적 추론이 필요하기 때문에 기타 작업에 일반화될 수 있는 대표적인 기준이 됩니다. 여러 폐쇄형 RLM(대규모 언어 모델)들은 탁월한 추론 능력을 보여주지만, 그들의 소유권 성격은 투명성과 재현성을 제한합니다. 이것을 해소하기 위해, 우리는 전체적으로 오픈 소스인 MiroMind-M1 시리즈를 소개합니다. 이러한 모델들은 Qwen-2.5 기반으로 구축된 오픈 소스 RLM들의 성능을 맞추거나 뛰어넘습니다. 특히, 우리 모델은 주어진 수학 추론 문제 719K개와 검증된 CoT 궤적이 담긴 말뭉치로 SFT 단계에서 훈련을 진행하고, 이어서 62K개의 어렵고 검증 가능한 문제로 RLVR 단계에서 훈련합니다. RLVR 과정의 강건성과 효율성을 높이기 위해, 우리는 컨텍스트 인식 다단계 정책 최적화를 소개합니다. 이 알고리즘은 길이에 따라 진행되는 훈련을 통합하고, 적응형 반복 패널티를 사용하여 컨텍스트 인식 RL 훈련을 촉진합니다. 우리 모델은 AIME24, AIME25, MATH 벤치마크에서 Qwen-2.5 기반의 오픈 소스 7B 및 32B 모델 중 가장 뛰어난 또는 경쟁력 있는 성능과 우수한 토큰 효율성을 달성합니다. 재현성을 촉진하기 위해, 우리는 완전한 스택을 공개합니다: 모델(MiroMind-M1-SFT-7B, MiroMind-M1-RL-7B, MiroMind-M1-RL-32B); 데이터셋(MiroMind-M1-SFT-719K, MiroMind-M1-RL-62K); 그리고 모든 훈련 및 평가 구성. 이러한 자료가 추가 연구를 지원하고 커뮤니티 발전을 촉진할 것으로 기대합니다."
+    },
+    "summary": "1. 최근 대형 언어 모델은 수학적 추론을 위해 컨텍스트 인식 다단계 정책 최적화를 도입한 MiroMind-M1 시리즈를 개발하여 오픈 소스 RLM 분야에 기여합니다.\n2. 모델은 719K개의 수학 문제를 훈련 데이터로 사용하고, 철저하게 검증된 CoT 궤적으로 SFT 단계를 거친 후 62K개 어려운 문제로 RLVR 단계를 진행합니다.\n3. 컨텍스트 인식 다단계 정책 최적화 알고리즘을 도입하여 모델은 AIME24, AIME25, MATH 벤치마크에서 우수한 성능과 토큰 효율성을 보여주며, 완전한 스택을 통해 재현성을 제고합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Context Limits: Subconscious Threads for Long-Horizon Reasoning",
+    "abstract": "To break the context limits of large language models (LLMs) that bottleneck\nreasoning accuracy and efficiency, we propose the Thread Inference Model (TIM),\na family of LLMs trained for recursive and decompositional problem solving, and\nTIMRUN, an inference runtime enabling long-horizon structured reasoning beyond\ncontext limits. Together, TIM hosted on TIMRUN supports virtually unlimited\nworking memory and multi-hop tool calls within a single language model\ninference, overcoming output limits, positional-embedding constraints, and\nGPU-memory bottlenecks. Performance is achieved by modeling natural language as\nreasoning trees measured by both length and depth instead of linear sequences.\nThe reasoning trees consist of tasks with thoughts, recursive subtasks, and\nconclusions based on the concept we proposed in Schroeder et al, 2025. During\ngeneration, we maintain a working memory that retains only the key-value states\nof the most relevant context tokens, selected by a rule-based subtask-pruning\nmechanism, enabling reuse of positional embeddings and GPU memory pages\nthroughout reasoning. Experimental results show that our system sustains high\ninference throughput, even when manipulating up to 90% of the KV cache in GPU\nmemory. It also delivers accurate reasoning on mathematical tasks and handles\ninformation retrieval challenges that require long-horizon reasoning and\nmulti-hop tool use.",
+    "authors": [
+      "Hongyin Luo",
+      "Nathaniel Morgan",
+      "Tina Li",
+      "Derek Zhao",
+      "Ai Vy Ngo",
+      "Philip Schroeder",
+      "Lijie Yang",
+      "Assaf Ben-Kish",
+      "Jack O'Brien",
+      "James Glass"
+    ],
+    "likes": 106,
+    "published_date": "Jul 22",
+    "url": "https://huggingface.co/papers/2507.16784",
+    "date_collected": "2025-07-28T07:08:03.438205+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "맥락 한계를 넘어: 장기적 추론을 위한 잠재의식적 스레드",
+      "abstract": "대규모 언어 모델(LLM)의 맥락 한계를 깨고 추론 정확도와 효율성을 높이기 위해, 우리는 Thread 추론 모델 (TIM)과 긴 맥락을 넘어 구조화된 추론을 가능케 하는 추론 런타임 TIMRUN을 제안합니다. TIM과 TIMRUN이 함께 작동하여, LLM을 통해 거의 무제한의 작업 메모리와 단일 언어 모델 내에서 다중 점프 도구 호출을 지원하며, 결과 한계, 위치 임베딩 제약, GPU 메모리 병목 현상을 극복합니다."
+    },
+    "summary": "1. 맥락 한계를 극복하기 위해 Thread 추론 모델 (TIM)과 추론 런타임 TIMRUN을 통해 장기적인 구조화된 추론을 가능케 합니다.\n2. 자연어를 길이와 깊이에 따른 추론 트리로 모델링하여, 추론 성능을 향상시키고 재사용성을 높입니다.\n3. 실험 결과는 시스템이 GPU 메모리의 KV 캐시를 90%까지 조작하더라도 높은 추론 처리량을 유지하고, 수학적 작업에 대해 정확한 추론을 제공하며, 장기적 추론과 다중 점프 도구 사용을 필요로 하는 정보 검색 문제를 다룹니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "nablaNABLA: Neighborhood Adaptive Block-Level Attention",
+    "abstract": "Recent progress in transformer-based architectures has demonstrated\nremarkable success in video generation tasks. However, the quadratic complexity\nof full attention mechanisms remains a critical bottleneck, particularly for\nhigh-resolution and long-duration video sequences. In this paper, we propose\nNABLA, a novel Neighborhood Adaptive Block-Level Attention mechanism that\ndynamically adapts to sparsity patterns in video diffusion transformers (DiTs).\nBy leveraging block-wise attention with adaptive sparsity-driven threshold,\nNABLA reduces computational overhead while preserving generative quality. Our\nmethod does not require custom low-level operator design and can be seamlessly\nintegrated with PyTorch's Flex Attention operator. Experiments demonstrate that\nNABLA achieves up to 2.7x faster training and inference compared to baseline\nalmost without compromising quantitative metrics (CLIP score, VBench score,\nhuman evaluation score) and visual quality drop. The code and model weights are\navailable here: https://github.com/gen-ai-team/Wan2.1-NABLA",
+    "authors": [
+      "Dmitrii Mikhailov",
+      "Aleksey Letunovskiy",
+      "Maria Kovaleva",
+      "Vladimir Arkhipkin",
+      "Vladimir Korviakov",
+      "Vladimir Polovnikov",
+      "Viacheslav Vasilev",
+      "Evelina Sidorova",
+      "Denis Dimitrov"
+    ],
+    "likes": 100,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2507.13546",
+    "date_collected": "2025-07-28T07:08:03.439518+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "nablaNABLA: 이웃 적응형 블록 수준 주의",
+      "abstract": "최근 Transformer 기반 구조의 발전은 비디오 생성 작업에서 놀랍도록 성공을 보여주었습니다. 그러나 전체 주의 메커니즘의 이차 복잡성은 특히 고해상도와 긴 지속 시간 비디오 시퀀스에 대해 중요한 병목 현상으로 남아 있습니다. 본 논문에서는 비디오 확산 Transformer(DiT)에서 희박성 패턴에 동적으로 적응하는 새로운 이웃 적응형 블록 수준 주의 메커니즘 NABLA를 제안합니다. 적응적 희소성 기반 임계값과 함께 블록별 주의를 활용함으로써 NABLA는 계산 오버헤드를 줄이면서 생성적 품질을 유지합니다. 본 방법은 사용자 정의 저수준 연산자 설계가 필요하지 않으며 PyTorch의 Flex Attention 연산자와 원활하게 통합될 수 있습니다. 실험 결과, NABLA는 기준과 비교하여 학습 및 추론 속도가 최대 2.7배 빨라지면서 양적 지표(CLIP 점수, VBench 점수, 인간 평가 점수)와 시각적 품질 감소를 거의 없애는 것을 보여줍니다. 코드와 모델 가중치는 다음 주소에서 제공됩니다: https://github.com/gen-ai-team/Wan2.1-NABLA"
+    },
+    "summary": "1. 비디오 생성 작업에서 효율적인 NABLA 이웃 적응형 블록 수준 주의 메커니즘 소개\n2. NABLA는 희소성 패턴에 동적으로 적응하여 생성적 품질을 유지하면서 연산 효율성을 향상시킴\n3. 실험 결과, NABLA는 거의 모든 양적 및 시각적 지표를 거의 훼손하지 않으면서 기준 대비 최대 2.7배 빠른 학습 및 추론 속도를 달성",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "The Invisible Leash: Why RLVR May Not Escape Its Origin",
+    "abstract": "Recent advances in large reasoning models highlight Reinforcement Learning\nwith Verifiable Rewards (RLVR) as a promising method for enhancing AI's\ncapabilities, particularly in solving complex logical tasks. However, it\nremains unclear whether RLVR truly expands a model's reasoning boundary or\nmerely amplifies high-reward outputs that the base model already knows for\nimproved precision. This study presents a theoretical and empirical\ninvestigation that provides fresh insights into the potential limits of RLVR.\nFirst, we offer a new theoretical perspective that RLVR is constrained by the\nbase model's support-unable to sample solutions with zero initial\nprobability-and operates as a conservative reweighting mechanism that may\nrestrict the discovery of entirely original solutions. We also identify an\nentropy-reward tradeoff: while RLVR reliably enhances precision, it may\nprogressively narrow exploration and potentially overlook correct yet\nunderrepresented solutions. Extensive empirical experiments validate that while\nRLVR consistently improves pass@1, the shrinkage of empirical support generally\noutweighs the expansion of empirical support under larger sampling budgets,\nfailing to recover correct answers that were previously accessible to the base\nmodel. Interestingly, we also observe that while RLVR sometimes increases\ntoken-level entropy, resulting in greater uncertainty at each generation step,\nanswer-level entropy declines, indicating that these seemingly more uncertain\npaths ultimately converge onto a smaller set of distinct answers. Taken\ntogether, these findings reveal potential limits of RLVR in extending reasoning\nhorizons. Breaking this invisible leash may require future algorithmic\ninnovations such as explicit exploration mechanisms or hybrid strategies that\nseed probability mass into underrepresented solution regions.",
+    "authors": [
+      "Fang Wu",
+      "Weihao Xuan",
+      "Ximing Lu",
+      "Zaid Harchaoui",
+      "Yejin Choi"
+    ],
+    "likes": 75,
+    "published_date": "Jul 20",
+    "url": "https://huggingface.co/papers/2507.14843",
+    "date_collected": "2025-07-28T07:08:03.440642+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "보이지 않는 '밧줄': RLVR이 자신의 기원에서 벗어나지 못하는 이유",
+      "abstract": "최근의 대규모 추론 모델의 발전은 검증 가능 보상을 갖는 강화 학습(RLVR)을 강조하여 AI의 능력을 향상시키는 유망한 방법으로 손꼽힌다. 특히 복잡한 논리적 작업을 해결하는 데에 RLVR이 주목받는다. 그러나 RLVR이 모델의 추론 범위를 실제로 확장시키는지 아니면 기존 모델이 이미 알고 있는 고보상 출력을 강조하여 정밀도를 향상시키는 것인지 여전히 명확하지 않다. 이 연구는 RLVR의 잠재적 한계에 대한 새로운 통찰력을 제공하는 이론적, 경험적 조사를 제시한다. 먼저, RLVR이 영감을 받은 모델의 제약으로 인해 지원 불가능한 상태로 제한되어, 완전히 원본의 해답을 발견하는 것을 제한하는 보수적 재가중 메커니즘으로 작용한다는 새로운 이론적 관점을 제시한다. 또한, 엔트로피-보상의 교환관계를 식별한다. RLVR은 정밀도를 신뢰할 수 있게 향상시키지만, 탐색을 점차 좁혀 이전에 액세스할 수 있던 정확한 해답을 회피할 가능성이 있다. 방대한 경험적 실험은 RLVR이 일관되게 pass@1을 향상시키지만, 샘플링 예산이 커질수록 경험적 지원의 수축이 일반적으로 확장보다 많아져 기존 모델이 이전에 접근 가능했던 정확한 해답을 복구하지 못하는 것으로 나타낸다. 흥미롭게도, RLVR은 때때로 토큰 수준 엔트로피를 증가시키지만, 응답 수준의 엔트로피는 감소하여 처음에는 더 불확실한 것으로 보이는 이러한 경로가 결국 더 작은 일련의 명확한 답변으로 수렴되는 것을 보여준다. 이 결과들은 RLVR이 추론의 범위를 확장하는 데 있어 잠재적인 한계를 보여준다. 이 보이지 않는 '밧줄'을 깨는 것은 앞으로 명시적 탐험 메커니즘이나 확률 질량을 미대표된 해결 영역에 심어주는 하이브리드 전략과 같은 알고리즘적 혁신이 필요할 수 있다."
+    },
+    "summary": "1. RLVR은 모델의 추론 범위를 확장하는 대신 기존에 알고 있는 고보상 출력을 강조함으로써 정밀도를 향상시킬 수도 있으며, 이는 모델이 완전히 새로운 해답을 발견하는 것을 제한할 수 있다.\n2. RLVR은 정밀도를 향상시키지만, 탐색을 좁히면서 정확한 해답을 놓칠 수 있으며, 이로 인해 확률적으로는 더 좁은 응답 집합으로 이끌 수 있다.\n3. 실험 결과는 RLVR이 pass@1을 향상시키지만, 샘플링 예산 증가에 따라 경험적 지원의 수축이 증가할 뿐 아니라, 정확한 해답을 복구하는 데 실패할 수 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Yume: An Interactive World Generation Model",
+    "abstract": "Yume aims to use images, text, or videos to create an interactive, realistic,\nand dynamic world, which allows exploration and control using peripheral\ndevices or neural signals. In this report, we present a preview version of\n\\method, which creates a dynamic world from an input image and allows\nexploration of the world using keyboard actions. To achieve this high-fidelity\nand interactive video world generation, we introduce a well-designed framework,\nwhich consists of four main components, including camera motion quantization,\nvideo generation architecture, advanced sampler, and model acceleration. First,\nwe quantize camera motions for stable training and user-friendly interaction\nusing keyboard inputs. Then, we introduce the Masked Video Diffusion\nTransformer~(MVDT) with a memory module for infinite video generation in an\nautoregressive manner. After that, training-free Anti-Artifact Mechanism (AAM)\nand Time Travel Sampling based on Stochastic Differential Equations (TTS-SDE)\nare introduced to the sampler for better visual quality and more precise\ncontrol. Moreover, we investigate model acceleration by synergistic\noptimization of adversarial distillation and caching mechanisms. We use the\nhigh-quality world exploration dataset \\sekai to train \\method, and it achieves\nremarkable results in diverse scenes and applications. All data, codebase, and\nmodel weights are available on https://github.com/stdstu12/YUME. Yume will\nupdate monthly to achieve its original goal. Project page:\nhttps://stdstu12.github.io/YUME-Project/.",
+    "authors": [
+      "Xiaofeng Mao",
+      "Shaoheng Lin",
+      "Zhen Li",
+      "Chuanhao Li",
+      "Wenshuo Peng",
+      "Tong He",
+      "Jiangmiao Pang",
+      "Mingmin Chi",
+      "Yu Qiao",
+      "Kaipeng Zhang"
+    ],
+    "likes": 62,
+    "published_date": "Jul 23",
+    "url": "https://huggingface.co/papers/2507.17744",
+    "date_collected": "2025-07-28T07:08:03.441972+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "상호작용적인 세계 생성 모델 Yume",
+      "abstract": "Yume는 이미지, 텍스트 또는 비디오를 사용하여 상호작용적이고 현실적이며 동적인 세계를 만들어내는 것을 목표로 하며, 주변 장치나 신경 신호를 통해 탐구하고 제어할 수 있습니다. 이 보고서에서는 입력 이미지에서 동적인 세계를 생성하고 키보드 조작을 통해 그 세계를 탐구할 수 있는 \\method의 미리보기 버전을 제시합니다. 이 고품질 상호작용 비디오 세계 생성을 위해 안정적인 훈련과 사용자 친화적 상호작용을 위해 카메라 움직임 양자화, 비디오 생성 아키텍처, 고급 샘플러 및 모델 가속화로 구성된 잘 설계된 프레임워크를 소개합니다."
+    },
+    "summary": "1. Yume는 이미지를 통해 동적인 세계를 생성하고 키보드 조작을 통해 탐구할 수 있는 기능을 제공합니다.\n2. 이를 위해 카메라 움직임 양자화, 비디오 생성 아키텍처, 고급 샘플러, 모델 가속화 등 4가지 주요 구성 요소를 사용합니다.\n3. 훈련을 거치지 않는 Anti-Artifact Mechanism (AAM) 및 확률적 미분 방정식을 기반으로 한 Time Travel Sampling 등을 도입하여 시각적 품질 향상과 더 정교한 제어를 실현했습니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "The Devil behind the mask: An emergent safety vulnerability of Diffusion\n  LLMs",
+    "abstract": "Diffusion-based large language models (dLLMs) have recently emerged as a\npowerful alternative to autoregressive LLMs, offering faster inference and\ngreater interactivity via parallel decoding and bidirectional modeling.\nHowever, despite strong performance in code generation and text infilling, we\nidentify a fundamental safety concern: existing alignment mechanisms fail to\nsafeguard dLLMs against context-aware, masked-input adversarial prompts,\nexposing novel vulnerabilities. To this end, we present DIJA, the first\nsystematic study and jailbreak attack framework that exploits unique safety\nweaknesses of dLLMs. Specifically, our proposed DIJA constructs adversarial\ninterleaved mask-text prompts that exploit the text generation mechanisms of\ndLLMs, i.e., bidirectional modeling and parallel decoding. Bidirectional\nmodeling drives the model to produce contextually consistent outputs for masked\nspans, even when harmful, while parallel decoding limits model dynamic\nfiltering and rejection sampling of unsafe content. This causes standard\nalignment mechanisms to fail, enabling harmful completions in alignment-tuned\ndLLMs, even when harmful behaviors or unsafe instructions are directly exposed\nin the prompt. Through comprehensive experiments, we demonstrate that DIJA\nsignificantly outperforms existing jailbreak methods, exposing a previously\noverlooked threat surface in dLLM architectures. Notably, our method achieves\nup to 100% keyword-based ASR on Dream-Instruct, surpassing the strongest prior\nbaseline, ReNeLLM, by up to 78.5% in evaluator-based ASR on JailbreakBench and\nby 37.7 points in StrongREJECT score, while requiring no rewriting or hiding of\nharmful content in the jailbreak prompt. Our findings underscore the urgent\nneed for rethinking safety alignment in this emerging class of language models.\nCode is available at https://github.com/ZichenWen1/DIJA.",
+    "authors": [
+      "Zichen Wen",
+      "Jiashu Qu",
+      "Dongrui Liu",
+      "Zhiyuan Liu",
+      "Ruixi Wu",
+      "Yicun Yang",
+      "Xiangqi Jin",
+      "Haoyun Xu",
+      "Xuyang Liu",
+      "Weijia Li",
+      "Chaochao Lu",
+      "Jing Shao",
+      "Conghui He",
+      "Linfeng Zhang"
+    ],
+    "likes": 56,
+    "published_date": "Jul 15",
+    "url": "https://huggingface.co/papers/2507.11097",
+    "date_collected": "2025-07-28T07:08:03.443484+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "가림막 뒤의 악마: Diffusion LLMs의 신생 안전 취약성",
+      "abstract": "확산 기반 대형 언어 모델(dLLMs)은 최근 방향성 자기 회귀 LLM에 대한 강력한 대안으로 나타났으며, 병렬 디코딩과 양방향 모델링을 통해 더 빠른 추론과 상호작용성을 제공합니다. 그러나 코드 생성과 텍스트 채움에서 강력한 성능을 보이더라도, 기존의 정렬 메커니즘이 dLLMs를 context-aware한 가려진 입력 적대적 프롬프트에 대해 안전하게 보호하지 못한다는 근본적인 안전 문제를 확인했습니다. 이에 DIJA를 제시하여, dLLMs의 고유한 안전 약점을 이용하는 첫 번째 체계적인 연구 및 탈옥 공격 프레임워크를 제시합니다. 구체적으로, 우리가 제안하는 DIJA는 dLLMs의 텍스트 생성 기구를 악용하는 적대적 교차 혼합 가림막-텍스트 프롬프트를 구축합니다. 양방향 모델링은 가려진 영역에 대해 문맥상 일관된 출력을 생성하도록 모델을 이끕니다. 이는 안전하지 않은 내용의 동적 필터링 및 거부 샘플링을 제한하는 병렬 디코딩으로 표준 정렬 메커니즘의 실패를 유발합니다. 이는 유해한 완성물이 정렬 조정된 dLLMs에서 발생할 수 있도록 하는데, 유해한 행동 또는 안전하지 않은 명령이 직접 노출되는 경우라도 그렇습니다. 포괄적인 실험을 통해, DIJA가 기존의 탈옥 방법을 현저히 능가하여 dLLM 구조에서 이전에 간과된 위협 표면을 드러냅니다. 특히, 저희 방법은 Dream-Instruct에서 100%의 키워드 기반 ASR을 달성하여, JailbreakBench의 평가자 기반 ASR에서 최강의 이전 기준인 ReNeLLM을 최대 78.5% 능가하며, StrongREJECT 점수에서 37.7포인트로 우세한 결과를 거뒀습니다. 이는 유해한 콘텐츠의 재작성이나 숨김을 요구하지 않고도 이런 장벽 프롬프트에서 가능합니다. 우리의 연구 결과는 이 신생 언어 모델 분야에서의 안전 정렬에 대한 긴급한 재고요구를 강조합니다. 코드는 https://github.com/ZichenWen1/DIJA에서 확인할 수 있습니다."
+    },
+    "summary": "1. dLLM에서 존재하는 새로운 취약점을 드러내는 DIJA 시스템 소개\n2. DIJA는 dLLMs의 고유한 안전 약점을 이용한 임의 프롬프트 공격 방법 제시\n3. DIJA는 기존 방법보다 더 강력한 성능을 보이며, dLLMs의 안전 문제를 재고하고 해결",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Pixels, Patterns, but No Poetry: To See The World like Humans",
+    "abstract": "Achieving human-like perception and reasoning in Multimodal Large Language\nModels (MLLMs) remains a central challenge in artificial intelligence. While\nrecent research has primarily focused on enhancing reasoning capabilities in\nMLLMs, a fundamental question persists: Can Multimodal Large Language Models\ntruly perceive the world as humans do? This paper shifts focus from reasoning\nto perception. Rather than constructing benchmarks specifically for reasoning,\nwe introduce the Turing Eye Test (TET), a challenging perception-oriented\nbenchmark comprising four diagnostic tasks that evaluate MLLMs' performance on\nsynthetic images that humans process intuitively. Our findings reveal that\nstate-of-the-art MLLMs exhibit catastrophic failures on our perceptual tasks\ntrivial for humans. Both in-context learning and training on language\nbackbone-effective for previous benchmarks-fail to improve performance on our\ntasks, while fine-tuning the vision tower enables rapid adaptation, suggesting\nthat our benchmark poses challenges for vision tower generalization rather than\nfor the knowledge and reasoning capabilities of the language backbone-a key gap\nbetween current MLLMs and human perception. We release a representative subset\nof TET tasks in this version, and will introduce more diverse tasks and methods\nto enhance visual generalization in future work.",
+    "authors": [
+      "Hongcheng Gao",
+      "Zihao Huang",
+      "Lin Xu",
+      "Jingyi Tang",
+      "Xinhao Li",
+      "Yue Liu",
+      "Haoyang Li",
+      "Taihang Hu",
+      "Minhua Lin",
+      "Xinlong Yang",
+      "Ge Wu",
+      "Balong Bi",
+      "Hongyu Chen",
+      "Wentao Zhang"
+    ],
+    "likes": 54,
+    "published_date": "Jul 21",
+    "url": "https://huggingface.co/papers/2507.16863",
+    "date_collected": "2025-07-28T07:08:03.444995+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "화소, 패턴, 그러나 시의 없음: 인간처럼 세계를 보는 방법",
+      "abstract": "인공지능에서 인간과 유사한 지각과 추론을 달성하는 것은 중요한 과제입니다. 최근 연구는 주로 MLLMs(다중 모달 대형 언어 모델)의 추론 능력을 향상시키는 데 초점을 맞추었으나, 기본적인 의문이 남아 있습니다: MLLMs가 실제로 인간처럼 세계를 지각할 수 있는가? 본 논문은 추론에서 지각으로 초점을 전환합니다. 추론을 위한 벤치마크를 명확히 설정하는 대신 인간이 직관적으로 처리하는 합성 이미지 위에서 MLLMs의 성능을 평가하는 네 가지 진단 작업으로 구성된 어려운 지각 중심 벤치마크인 Turing Eye Test (TET)을 제안합니다. 우리의 연구 결과는 최첨단 MLLMs가 인간에게는 쉬운 지각 작업에서 재앙적인 실패를 보인다는 것을 보여줍니다. 문맥 학습과 언어 핵심 훈련은 이전 벤치마크에 효과적이었지만, 우리의 작업에서 성능을 향상시키지 못하는 반면, 비전 타워의 미세 조정은 빠른 적응을 가능하게 하며, 현재 MLLMs와 인간의 지각 사이의 주요 격차인 비전 타워의 일반화에 대한 과제를 제시합니다. 본 논문은 이번 버전에서 TET 작업의 대표적 부분을 공개하며, 미래 작업에서 시각적 일반화를 향상시키기 위해 더 다양한 작업과 방법을 소개할 것입니다."
+    },
+    "summary": "1. MLLMs의 인간 지각 능력 평가를 위한 Turing Eye Test (TET) 소개.\n2. 최첨단 MLLMs가 인간에게는 쉬운 지각 작업에서 재앙적인 실패를 보이며, 기존의 학습 방법의 한계를 나타냄.\n3. 언어 핵심과 관련된 지식 및 추론 능력이 아닌 비전 타워의 일반화에 대한 도전이 현재 MLLMs와 인간 지각 사이의 주요 차이를 보여줌.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Step-Audio 2 Technical Report",
+    "abstract": "This paper presents Step-Audio~2, an end-to-end multi-modal large language\nmodel designed for industry-strength audio understanding and speech\nconversation. By integrating a latent audio encoder and reasoning-centric\nreinforcement learning (RL), Step-Audio 2 achieves promising performance in\nautomatic speech recognition (ASR) and audio understanding. To facilitate\ngenuine end-to-end speech conversation, Step-Audio 2 incorporates the\ngeneration of discrete audio tokens into language modeling, significantly\nenhancing its responsiveness to paralinguistic information such as speaking\nstyles and emotions. To effectively leverage the rich textual and acoustic\nknowledge in real-world data, Step-Audio 2 integrates retrieval-augmented\ngeneration (RAG) and is able to call external tools such as web search to\nmitigate hallucination and audio search to switch timbres. Trained on millions\nof hours of speech and audio data, Step-Audio 2 delivers intelligence and\nexpressiveness across diverse conversational scenarios. Evaluation results\ndemonstrate that Step-Audio 2 achieves state-of-the-art performance on various\naudio understanding and conversational benchmarks compared to other open-source\nand commercial solutions. Please visit\nhttps://github.com/stepfun-ai/Step-Audio2 for more information.",
+    "authors": [
+      "Boyong Wu",
+      "Chao Yan",
+      "Chen Hu",
+      "Cheng Yi",
+      "Chengli Feng",
+      "Fei Tian",
+      "Feiyu Shen",
+      "Gang Yu",
+      "Haoyang Zhang",
+      "Jingbei Li",
+      "Mingrui Chen",
+      "Peng Liu",
+      "Wang You",
+      "Xiangyu Tony Zhang",
+      "Xingyuan Li",
+      "Xuerui Yang",
+      "Yayue Deng",
+      "Yechang Huang",
+      "Yuxin Li",
+      "Yuxin Zhang",
+      "Zhao You",
+      "Brian Li"
+    ],
+    "likes": 53,
+    "published_date": "Jul 22",
+    "url": "https://huggingface.co/papers/2507.16632",
+    "date_collected": "2025-07-28T07:08:03.446820+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "스텝-오디오 2 기술 보고서",
+      "abstract": "본 보고서는 산업 강도의 오디오 이해와 음성 대화를 위해 설계된 엔드-투-엔드 멀티모달 대형 언어 모델인 스텝-오디오~2를 제시합니다. 잠재 오디오 인코더와 추론 중심 강화학습(Reinforcement Learning, RL)을 통합함으로써, 스텝-오디오 2는 자동 음성 인식 (ASR) 및 오디오 이해에서 유망한 성능을 달성합니다."
+    },
+    "summary": "1. 스텝-오디오 2는 음성 대화를 위한 총체적 엔드-투-엔드 구조로, 감정 등 부연언 정보에 민감한 이산 오디오 토큰 생성을 통해 반응성을 크게 향상시켰습니다.\n2. 실제 데이터의 풍부한 텍스트 및 음향 지식을 적절히 활용하기 위해, 스텝-오디오 2는 검색 보강 생성 및 외부 도구 활용 기능을 통합하여 상류의 성능을 제공합니다.\n3. 수백만 시간의 음성 및 오디오 데이터로 훈련된 스텝-오디오 2는 다양한 대화 시나리오에서 지능성과 표현력을 제공하며, 다양한 오디오 이해 및 대화 벤치마크에서 최신의 성능을 달성합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Audio"
+    ]
+  }
+]

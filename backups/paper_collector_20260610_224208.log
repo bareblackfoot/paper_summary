@@ -1,0 +1,113 @@
+=== Paper Collection Started at Tue Jun  9 22:38:48 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W24
+URL: https://huggingface.co/papers/week/2026-W24
+Found 10 papers in weekly view
+Fetching likes for: Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models
+Fetching likes for: SWE-Explore: Benchmarking How Coding Agents Explore Repositories
+Fetching likes for: ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research
+Fetching likes for: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Fetching likes for: On the Geometry of On-Policy Distillation
+Fetching likes for: LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents
+Fetching likes for: Latent Spatial Memory for Video World Models
+Fetching likes for: SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations
+Fetching likes for: Agents' Last Exam
+Fetching likes for: CoVEBench: Can Video Editing Models Handle Complex Instructions?
+Selected top 10 papers by likes:
+1. Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models (109 likes)
+2. SWE-Explore: Benchmarking How Coding Agents Explore Repositories (95 likes)
+3. ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research (80 likes)
+4. Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings (74 likes)
+5. On the Geometry of On-Policy Distillation (56 likes)
+6. LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents (50 likes)
+7. Latent Spatial Memory for Video World Models (47 likes)
+8. SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations (46 likes)
+9. Agents' Last Exam (46 likes)
+10. CoVEBench: Can Video Editing Models Handle Complex Instructions? (44 likes)
+Found abstract: Vision language models (VLMs) excel at many tasks but still struggle with spatial reasoning when cri...
+Processed paper: Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models
+Found abstract: Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities o...
+Processed paper: SWE-Explore: Benchmarking How Coding Agents Explore Repositories
+Found abstract: AI coding agents are increasingly used for scientific work, but their end-to-end autonomous research...
+Processed paper: ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research
+Found abstract: Large language models exhibit impressive zero-shot capabilities across a wide range of downstream ta...
+Processed paper: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Found abstract: On-policy distillation (OPD) is increasingly used to improve large language model reasoning, but its...
+Processed paper: On the Geometry of On-Policy Distillation
+Found abstract: Agent systems increasingly use textual skills to encode reusable task procedures, but injecting thes...
+Processed paper: LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents
+Found abstract: Video world models that maintain 3D spatial consistency across generated frames typically rely on ex...
+Processed paper: Latent Spatial Memory for Video World Models
+Found abstract: Evaluating LLM mediators remains challenging, as mediation unfolds as a real-time trajectory shaped ...
+Processed paper: SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations
+Found abstract: Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have n...
+Processed paper: Agents' Last Exam
+Found abstract: While recent text-guided video editing models excel at elementary tasks (e.g., style transfer, objec...
+Processed paper: CoVEBench: Can Video Editing Models Handle Complex Instructions?
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: SWE-Explore: Benchmarking How Coding Agents Explore Repositories
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  69
+Update date_collected: 2026-06-10T07:38:57.838747+09:00  ->  2026-06-09T07:38:09.800327+09:00
+
+Processing paper 5/10
+Title: On the Geometry of On-Policy Distillation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: LatentSkill: From In-Context Textual Skills to In-Weight Latent Skills for LLM Agents
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Latent Spatial Memory for Video World Models
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  42
+Update date_collected: 2026-06-10T07:38:57.848724+09:00  ->  2026-06-09T07:38:09.802615+09:00
+
+Processing paper 9/10
+Title: Agents' Last Exam
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: CoVEBench: Can Video Editing Models Handle Complex Instructions?
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W24.json...
+
+Updating Notion database...
+Creating new paper: 상상력 있는 지각 토큰이 다중모달 언어 모델에서 공간 추론을 향상시킵니다
+Creating new paper: 코딩 에이전트의 리포지토리 탐색 능력을 벤치마킹하는 SWE-Explore
+Creating new paper: End-to-End 자율적 과학 연구를 위한 벤치마크인 ResearchClawBench
+Updating paper: 텍스트 임베딩을 위한 숨겨진 특징 렌즈인 당신의 비임베딩 행렬 (likes: 69 -> 74)
+Creating new paper: 정책 증류의 기하학
+Creating new paper: LatentSkill: LLM 에이전트를 위한 문맥 내 텍스트 스킬에서 가중치 잠재 스킬로
+Creating new paper: 비디오 월드 모델을 위한 잠재 공간 메모리
+Updating paper: 다양한 도메인과 사회인지적 변이를 고려한 신뢰할 수 있는 프로액티브 LLM 중재의 자동평가를 향하여 (Proactive LLM Mediation의 Reliable Automated Evaluation을 위한 SoCRATES) (likes: 42 -> 46)
+Creating new paper: 에이전트의 최종 시험
+Creating new paper: CoVEBench: 비디오 편집 모델이 복잡한 지침을 처리할 수 있을까?
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jun  9 22:40:29 UTC 2026 ===
+

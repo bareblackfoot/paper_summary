@@ -1,0 +1,121 @@
+=== Paper Collection Started at Wed Aug 12 22:49:56 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W33
+URL: https://huggingface.co/papers/week/2026-W33
+Found 10 papers in weekly view
+Fetching likes for: BDH-CQ: In-Context Learning with Recurrent Latent Reasoning
+Fetching likes for: Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA
+Fetching likes for: On-Policy Self-Distillation without Any Supervision
+Fetching likes for: ComBodied Agents: a New Paradigm of Human-Centric Agentic AI
+Fetching likes for: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring
+Fetching likes for: Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design
+Fetching likes for: Beyond Pixels: From Video Priors to 4D Worlds
+Fetching likes for: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Fetching likes for: Stealing Reasoning Traces from Proprietary LLM APIs
+Fetching likes for: Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution
+Selected top 10 papers by likes:
+1. BDH-CQ: In-Context Learning with Recurrent Latent Reasoning (551 likes)
+2. Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA (324 likes)
+3. On-Policy Self-Distillation without Any Supervision (184 likes)
+4. ComBodied Agents: a New Paradigm of Human-Centric Agentic AI (166 likes)
+5. SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring (125 likes)
+6. Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design (107 likes)
+7. Beyond Pixels: From Video Priors to 4D Worlds (102 likes)
+8. SimWAM: A Simple World Action Model for End-to-End Autonomous Driving (102 likes)
+9. Stealing Reasoning Traces from Proprietary LLM APIs (86 likes)
+10. Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution (79 likes)
+Found abstract: We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reaso...
+Processed paper: BDH-CQ: In-Context Learning with Recurrent Latent Reasoning
+Found abstract: Macaron-V1 is an open agent-model family for experiential intelligence: learning from experience in ...
+Processed paper: Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA
+Found abstract: On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large langua...
+Processed paper: On-Policy Self-Distillation without Any Supervision
+Found abstract: After an older adult misses a medication dose, a software agent can send another reminder and an emb...
+Processed paper: ComBodied Agents: a New Paradigm of Human-Centric Agentic AI
+Found abstract: As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing ...
+Processed paper: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring
+Found abstract: Agentic systems are increasingly expected to improve after deployment, yet single-entity self-evolut...
+Processed paper: Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design
+Found abstract: 4D generation synthesizes dynamic 3D scenes from conditions such as text or images. Existing methods...
+Processed paper: Beyond Pixels: From Video Priors to 4D Worlds
+Found abstract: World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics prio...
+Processed paper: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Found abstract: Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of...
+Processed paper: Stealing Reasoning Traces from Proprietary LLM APIs
+Found abstract: We present Ouroboros, a self-developing agent harness whose tools, prompts, context assembly, and co...
+Processed paper: Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: BDH-CQ: In-Context Learning with Recurrent Latent Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 551  ->  239
+Update date_collected: 2026-08-13T07:50:05.762357+09:00  ->  2026-08-12T07:51:41.294370+09:00
+
+Processing paper 2/10
+Title: Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA
+Paper already exists, checking if translation is complete...
+Update likes: 324  ->  192
+Update date_collected: 2026-08-13T07:50:05.765723+09:00  ->  2026-08-12T07:51:41.297471+09:00
+
+Processing paper 3/10
+Title: On-Policy Self-Distillation without Any Supervision
+Paper already exists, checking if translation is complete...
+Update likes: 184  ->  50
+Update date_collected: 2026-08-13T07:50:05.768199+09:00  ->  2026-08-12T07:51:41.307825+09:00
+
+Processing paper 4/10
+Title: ComBodied Agents: a New Paradigm of Human-Centric Agentic AI
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring
+Paper already exists, checking if translation is complete...
+Update likes: 125  ->  116
+Update date_collected: 2026-08-13T07:50:05.774568+09:00  ->  2026-08-12T07:51:41.300211+09:00
+
+Processing paper 6/10
+Title: Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Beyond Pixels: From Video Priors to 4D Worlds
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  97
+Update date_collected: 2026-08-13T07:50:05.782373+09:00  ->  2026-08-12T07:51:41.302606+09:00
+
+Processing paper 9/10
+Title: Stealing Reasoning Traces from Proprietary LLM APIs
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution
+Paper already exists, checking if translation is complete...
+Update likes: 79  ->  66
+Update date_collected: 2026-08-13T07:50:05.787975+09:00  ->  2026-08-12T07:51:41.305516+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W33.json...
+
+Updating Notion database...
+Updating paper: BDH-CQ: 맥락 내 추론을 위한 반복적 잠재 추론과 모델 [In-Context Learning with Recurrent Latent Reasoning] (likes: 239 -> 551)
+Updating paper: Macaron-V1: 오픈 클론을 위한 자기 개선과 Mixture-of-LoRA로 향해 (likes: 192 -> 324)
+Updating paper: 외부 감독 없는 온 정책 자기 증류법 (likes: 50 -> 184)
+Creating new paper: ComBodied Agents: 인간 중심 에이전트 AI의 새로운 패러다임
+Updating paper: SWE-Bench ProMax: 대규모 다국어 코드 리팩터링에서 에이전트들의 벤치마킹 (likes: 116 -> 125)
+Creating new paper: 자발적 진화를 향한 에이전틱 시스템의 상호 진화: 인간 설계를 초월하는 자기 지향 진화
+Creating new paper: 픽셀을 넘어서: 비디오 선행과 4D 세계로
+Updating paper: SimWAM: 자율 주행을 위한 간단한 세계 행동 모델 (likes: 97 -> 102)
+Creating new paper: 프로프라이어터리 LLM API로부터 추적 추론 도용
+Updating paper: 오로보로스: Reviewed Core Evolution을 통한 자체 개발 프론티어 코딩 에이전트 (likes: 66 -> 79)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Aug 12 22:51:27 UTC 2026 ===
+

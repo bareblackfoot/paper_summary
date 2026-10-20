@@ -1,0 +1,144 @@
+=== Paper Collection Started at Tue Oct 21 22:08:14 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W43
+URL: https://huggingface.co/papers/week/2025-W43
+Found 10 papers in weekly view
+Fetching likes for: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Fetching likes for: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Fetching likes for: PICABench: How Far Are We from Physically Realistic Image Editing?
+Fetching likes for: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Fetching likes for: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Fetching likes for: Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset
+Fetching likes for: Glyph: Scaling Context Windows via Visual-Text Compression
+Fetching likes for: Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs
+Fetching likes for: Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery
+Fetching likes for: Latent Diffusion Model without Variational Autoencoder
+Selected top 10 papers by likes:
+1. A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning (125 likes)
+2. OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM (59 likes)
+3. PICABench: How Far Are We from Physically Realistic Image Editing? (55 likes)
+4. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science (53 likes)
+5. NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks (52 likes)
+6. Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset (43 likes)
+7. Glyph: Scaling Context Windows via Visual-Text Compression (42 likes)
+8. Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs (41 likes)
+9. Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery (37 likes)
+10. Latent Diffusion Model without Variational Autoencoder (34 likes)
+Found abstract: Test-time scaling seeks to improve the reasoning performance of large
+language models (LLMs) by addi...
+Processed paper: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Found abstract: Advancing machine intelligence requires developing the ability to perceive
+across multiple modalitie...
+Processed paper: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Found abstract: Image editing has achieved remarkable progress recently. Modern editing
+models could already follow ...
+Processed paper: PICABench: How Far Are We from Physically Realistic Image Editing?
+Found abstract: Autonomous data science, from raw data sources to analyst-grade deep research
+reports, has been a lo...
+Processed paper: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Found abstract: 3D object editing is essential for interactive content creation in gaming,
+animation, and robotics, ...
+Processed paper: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Found abstract: Instruction-based video editing promises to democratize content creation, yet
+its progress is severe...
+Processed paper: Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset
+Found abstract: Large language models (LLMs) increasingly rely on long-context modeling for
+tasks such as document u...
+Processed paper: Glyph: Scaling Context Windows via Visual-Text Compression
+Found abstract: Recent work has shown that narrow finetuning can produce broadly misaligned
+LLMs, a phenomenon terme...
+Processed paper: Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs
+Found abstract: Synthesizing large-scale, explorable, and geometrically accurate 3D urban
+scenes is a challenging ye...
+Processed paper: Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery
+Found abstract: Recent progress in diffusion-based visual generation has largely relied on
+latent diffusion models w...
+Processed paper: Latent Diffusion Model without Variational Autoencoder
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 125  ->  106
+Update date_collected: 2025-10-22T07:08:22.958555+09:00  ->  2025-10-21T07:08:00.059548+09:00
+
+Processing paper 2/10
+Title: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  53
+Update date_collected: 2025-10-22T07:08:22.960477+09:00  ->  2025-10-21T07:08:00.061520+09:00
+
+Processing paper 3/10
+Title: PICABench: How Far Are We from Physically Realistic Image Editing?
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  47
+Update date_collected: 2025-10-22T07:08:22.964360+09:00  ->  2025-10-21T07:08:00.062846+09:00
+
+Processing paper 6/10
+Title: Scaling Instruction-Based Video Editing with a High-Quality Synthetic
+  Dataset
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  35
+Update date_collected: 2025-10-22T07:08:22.965813+09:00  ->  2025-10-21T07:08:00.065765+09:00
+
+Processing paper 7/10
+Title: Glyph: Scaling Context Windows via Visual-Text Compression
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Emergent Misalignment via In-Context Learning: Narrow in-context
+  examples can produce broadly misaligned LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 41  ->  39
+Update date_collected: 2025-10-22T07:08:22.968728+09:00  ->  2025-10-21T07:08:00.064296+09:00
+
+Processing paper 9/10
+Title: Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite
+  Imagery
+Paper already exists, checking if translation is complete...
+Update likes: 37  ->  30
+Update date_collected: 2025-10-22T07:08:22.970034+09:00  ->  2025-10-21T07:08:00.067087+09:00
+
+Processing paper 10/10
+Title: Latent Diffusion Model without Variational Autoencoder
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  30
+Update date_collected: 2025-10-22T07:08:22.971305+09:00  ->  2025-10-21T07:08:00.068427+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W43.json...
+
+Updating Notion database...
+Updating paper: 내부 확률과 자기 일관성을 이어주는 LLM 추론에 관한 이론적 연구 (likes: 106 -> 125)
+Error updating Notion database: Unsaved transactions: DatastoreInfraError: please retry later
+Done!
+=== Paper Collection Finished at Tue Oct 21 22:09:04 UTC 2025 ===
+

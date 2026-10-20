@@ -1,0 +1,119 @@
+=== Paper Collection Started at Wed Apr  1 22:18:02 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W14
+URL: https://huggingface.co/papers/week/2026-W14
+Found 10 papers in weekly view
+Fetching likes for: FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization
+Fetching likes for: CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence
+Fetching likes for: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Fetching likes for: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Fetching likes for: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Fetching likes for: LongCat-Next: Lexicalizing Modalities as Discrete Tokens
+Fetching likes for: Towards a Medical AI Scientist
+Fetching likes for: Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells
+Fetching likes for: GEMS: Agent-Native Multimodal Generation with Memory and Skills
+Fetching likes for: Gen-Searcher: Reinforcing Agentic Search for Image Generation
+Selected top 10 papers by likes:
+1. FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization (288 likes)
+2. CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence (228 likes)
+3. ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling (150 likes)
+4. Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models (145 likes)
+5. TAPS: Task Aware Proposal Distributions for Speculative Sampling (133 likes)
+6. LongCat-Next: Lexicalizing Modalities as Discrete Tokens (116 likes)
+7. Towards a Medical AI Scientist (80 likes)
+8. Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells (71 likes)
+9. GEMS: Agent-Native Multimodal Generation with Memory and Skills (58 likes)
+10. Gen-Searcher: Reinforcing Agentic Search for Image Generation (51 likes)
+Found abstract: We present Future-KL Influenced Policy Optimization (FIPO), a reinforcement learning algorithm desig...
+Processed paper: FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization
+Found abstract: The convergence of low-altitude economies, embodied intelligence, and air-ground cooperative systems...
+Processed paper: CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence
+Found abstract: Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional ar...
+Processed paper: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Found abstract: Video world models have shown immense potential in simulating the physical world, yet existing memor...
+Processed paper: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Found abstract: Speculative decoding accelerates autoregressive generation by letting a lightweight draft model prop...
+Processed paper: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Found abstract: The prevailing Next-Token Prediction (NTP) paradigm has driven the success of large language models ...
+Processed paper: LongCat-Next: Lexicalizing Modalities as Discrete Tokens
+Found abstract: Autonomous systems that generate scientific hypotheses, conduct experiments, and draft manuscripts h...
+Processed paper: Towards a Medical AI Scientist
+Found abstract: Modeling cellular states and predicting their responses to perturbations are central challenges in c...
+Processed paper: Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells
+Found abstract: Recent multimodal generation models have achieved remarkable progress on general-purpose generation ...
+Processed paper: GEMS: Agent-Native Multimodal Generation with Memory and Skills
+Found abstract: Recent image generation models have shown strong capabilities in generating high-fidelity and photor...
+Processed paper: Gen-Searcher: Reinforcing Agentic Search for Image Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Paper already exists, checking if translation is complete...
+Update likes: 150  ->  128
+Update date_collected: 2026-04-02T07:18:11.396007+09:00  ->  2026-04-01T07:17:36.846227+09:00
+
+Processing paper 4/10
+Title: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Paper already exists, checking if translation is complete...
+Update likes: 145  ->  141
+Update date_collected: 2026-04-02T07:18:11.397547+09:00  ->  2026-04-01T07:17:36.844576+09:00
+
+Processing paper 5/10
+Title: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Paper already exists, checking if translation is complete...
+Update likes: 133  ->  113
+Update date_collected: 2026-04-02T07:18:11.398947+09:00  ->  2026-04-01T07:17:36.847682+09:00
+
+Processing paper 6/10
+Title: LongCat-Next: Lexicalizing Modalities as Discrete Tokens
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Towards a Medical AI Scientist
+Paper already exists, checking if translation is complete...
+Update likes: 80  ->  63
+Update date_collected: 2026-04-02T07:18:11.402890+09:00  ->  2026-04-01T07:17:36.849286+09:00
+
+Processing paper 8/10
+Title: Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: GEMS: Agent-Native Multimodal Generation with Memory and Skills
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Gen-Searcher: Reinforcing Agentic Search for Image Generation
+Paper already exists, checking if translation is complete...
+Update likes: 51  ->  43
+Update date_collected: 2026-04-02T07:18:11.407753+09:00  ->  2026-04-01T07:17:36.850953+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W14.json...
+
+Updating Notion database...
+Creating new paper: FIPO: 미래-KL 영향을 받은 정책 최적화를 통한 심층 추론 유도
+Creating new paper: CARLA-Air: CARLA 세계 안에서 드론을 조종하라 -- 공중-지상 융합 인텔리전스를 위한 통합 인프라
+Updating paper: ShotStream: 대화형 이야기 만들기를 위한 스트리밍 멀티샷 비디오 생성 (likes: 128 -> 150)
+Updating paper: 시야 밖, 그러나 마음속에: 동적 비디오 월드 모델을 위한 하이브리드 메모리 (likes: 141 -> 145)
+Updating paper: TAPS: Task Aware Proposal Distributions for Speculative Sampling (likes: 113 -> 133)
+Creating new paper: LongCat-Next: 모달리티를 이산 토큰으로 표현하기
+Updating paper: 메디컬 AI 과학자를 향하여 (likes: 63 -> 80)
+Creating new paper: Lingshu-Cell: 가상 세포를 향한 전사체 모델링을 위한 생성적 세포 세계 모델
+Creating new paper: GEMS: 에이전트 네이티브 멀티모달 생성 기술 (Multimodal Generation with Memory and Skills)
+Updating paper: 이미지 생성을 위한 에이전트 검색 강화 (Gen-Searcher: Reinforcing Agentic Search for Image Generation) (likes: 43 -> 51)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Apr  1 22:20:11 UTC 2026 ===
+

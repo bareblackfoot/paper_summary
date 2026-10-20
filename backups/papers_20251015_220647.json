@@ -1,0 +1,320 @@
+[
+  {
+    "title": "D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to\n  Embodied AI",
+    "abstract": "Large language models leverage internet-scale text data, yet embodied AI\nremains constrained by the prohibitive costs of physical trajectory collection.\nDesktop environments -- particularly gaming -- offer a compelling alternative:\nthey provide rich sensorimotor interactions at scale while maintaining the\nstructured observation-action coupling essential for embodied learning. We\npresent D2E (Desktop to Embodied AI), a framework that demonstrates desktop\ninteractions can serve as an effective pretraining substrate for robotics\nembodied AI tasks. Unlike prior work that remained domain-specific (e.g., VPT\nfor Minecraft) or kept data proprietary (e.g., SIMA), D2E establishes a\ncomplete pipeline from scalable desktop data collection to verified transfer in\nembodied domains. Our framework comprises three components: (1) the OWA Toolkit\nthat unifies diverse desktop interactions into a standardized format with 152x\ncompression, (2) the Generalist-IDM that achieves strong zero-shot\ngeneralization across unseen games through timestamp-based event prediction,\nenabling internet-scale pseudo-labeling, and (3) VAPT that transfers\ndesktop-pretrained representations to physical manipulation and navigation.\nUsing 1.3K+ hours of data (259 hours of human demonstrations, and 1K+ hours of\npseudo-labeled gameplay), we achieve a total of 96.6% success rate on LIBERO\nmanipulation and 83.3% on CANVAS navigation benchmarks. This validates that\nsensorimotor primitives in digital interactions exhibit sufficient invariance\nto transfer meaningfully to physical embodied tasks, establishing desktop\npretraining as a practical paradigm for robotics. We will make all our work\npublic, including the OWA toolkit, datasets of human-collected and\npseudo-labeled, and VAPT-trained models available at\nhttps://worv-ai.github.io/d2e/",
+    "authors": [
+      "Suwhan Choi",
+      "Jaeyoon Jung",
+      "Haebin Seong",
+      "Minchan Kim",
+      "Minyeong Kim",
+      "Yongjun Cho",
+      "Yoonshik Kim",
+      "Yubeen Park",
+      "Youngjae Yu",
+      "Yunsung Lee"
+    ],
+    "likes": 119,
+    "published_date": "Oct 7",
+    "url": "https://huggingface.co/papers/2510.05684",
+    "date_collected": "2025-10-15T07:08:16.489739+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "데스크톱 데이터에서 비전-행동 사전학습 확장하여 실체화된 AI로의 이전을 위한 D2E",
+      "abstract": "대규모 언어 모델은 인터넷 규모의 텍스트 데이터를 활용하지만, 실체화된 AI는 물리적 궤적 수집의 비용이 막대한 제약으로 남아 있습니다. 특히 게임과 같은 데스크톱 환경은 이를 대체할 매력적인 대안을 제공합니다: 그들은 구조화된 관찰-행동 결합을 유지하면서 규모에 걸맞은 풍부한 감각 운동 상호작용을 제공합니다. 저희는 D2E(데스크톱에서 실체화된 AI로)라는 프레임워크를 제시하는데, 이는 데스크톱 상호작용이 로봇 실체화된 AI 작업에 대한 효과적인 사전학습 기반으로 작용할 수 있다는 것을 보여줍니다. 이전의 작업과 달리 (예: 마인크래프트용 VPT) 도메인 특정한 상태로 남거나(예: SIMA) 데이터를 사유로 유지하지 않고 D2E는 확장 가능한 데스크톱 데이터 수집부터 실체화 도메인의 확인된 전이까지 완전한 파이프라인을 확립합니다. 우리의 프레임워크는 세 가지 구성 요소로 구성되어 있습니다: (1) 다양한 데스크톱 상호작용을 152배 압축률로 통합하는 OWA 툴킷, (2) 게임 시간 기반 이벤트 예측을 통해 보이지 않는 게임에 강력한 제로샷 일반화를 달성하는 일반(IDM), 인터넷 규모 유사 레이블링을 가능하게 하는 자바 후라인, 그리고 (3) 데스크톱에서 사전 훈련된 표현을 물리적 조작 및 탐색으로 전송하는 VAPT. 우리는 1.3K 시간 이상의 데이터(259시간의 인간 시연 및 1K 시간 이상의 유사 레이블 게임 플레이)를 사용하여 LIBERO 조작에서 총 96.6%의 성공률과 CANVAS 탐색 벤치마크에서 83.3%를 달성합니다. 이는 디지털 상호작용으로부터의 감각 운동 기본 요소가 물리적 실체된 작업으로 의미 있는 전이를 위한 충분한 불변성을 나타내며, 데스크톱 사전학습을 로봇학에 대한 실용적 패러다임으로 확립합니다. 우리는 OWA 툴킷, 인간 수집 및 유사 레이블링된 데이터 세트, VAPT로 훈련된 모델을 https://worv-ai.github.io/d2e/에 공개할 예정입니다."
+    },
+    "summary": "1. 데스크톱 환경에서 수집한 데이터를 이용한 실체화된 AI 작업 전이를 위한 D2E 프레임워크 소개\n2. OWA 툴킷을 통한 다양한 데스크톱 상호작용 기준화와 152배 압축\n3. 인간 시연 및 유사 레이블링 게임 플레이를 통해 물리적 조작 및 탐색 과제에서 뛰어난 성과를 보이며 데스크톱 사전 학습의 실용성 입증",
+    "categories": [
+      "Robotics",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning\n  for LLMs",
+    "abstract": "We propose QeRL, a Quantization-enhanced Reinforcement Learning framework for\nlarge language models (LLMs). While RL is essential for LLMs' reasoning\ncapabilities, it is resource-intensive, requiring substantial GPU memory and\nlong rollout durations. QeRL addresses these issues by combining NVFP4\nquantization with Low-Rank Adaptation (LoRA), accelerating rollout phase of RL\nwhile reducing memory overhead. Beyond efficiency, our findings show that\nquantization noise increases policy entropy, enhancing exploration, and\nenabling the discovery of better strategies during RL. To further optimize\nexploration, QeRL introduces an Adaptive Quantization Noise (AQN) mechanism,\nwhich dynamically adjusts noise during training. Experiments demonstrate that\nQeRL delivers over 1.5 times speedup in the rollout phase. Moreover, this is\nthe first framework to enable RL training of a 32B LLM on a single H100 80GB\nGPU, while delivering overall speedups for RL training. It also achieves faster\nreward growth and higher final accuracy than 16-bit LoRA and QLoRA, while\nmatching the performance of full-parameter fine-tuning on mathematical\nbenchmarks such as GSM8K (90.8%) and MATH 500 (77.4%) in the 7B model. These\nresults establish QeRL as an efficient and effective framework for RL training\nin LLMs.",
+    "authors": [
+      "Wei Huang",
+      "Yi Ge",
+      "Shuai Yang",
+      "Yicheng Xiao",
+      "Huizi Mao",
+      "Yujun Lin",
+      "Hanrong Ye",
+      "Sifei Liu",
+      "Ka Chun Cheung",
+      "Hongxu Yin",
+      "Yao Lu",
+      "Xiaojuan Qi",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "likes": 98,
+    "published_date": "Oct 13",
+    "url": "https://huggingface.co/papers/2510.11696",
+    "date_collected": "2025-10-15T07:08:16.491196+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "QeRL: 효율 이상을 넘어서 -- 양자화 강화 학습을 통한 대규모 언어 모델(Large Language Models, LLMs)에 대한 연구",
+      "abstract": "본 연구에서는 대규모 언어 모델(Large Language Models, LLMs)을 위한 양자화 강화 학습 프레임워크인 QeRL을 제안합니다. 강화 학습은 LLMs의 추론 능력에 필수적이지만, 상당한 GPU 메모리와 오래 걸리는 롤아웃 기간이 필요합니다. QeRL은 NVFP4 양자화와 Low-Rank Adaptation(LoRA)을 결합하여 강화 학습의 롤아웃 단계를 가속화하고 메모리 오버헤드를 줄입니다. 효율성을 넘어, 우리의 연구 결과는 양자화 노이즈가 정책 엔트로피를 증가시켜 탐사를 강화하고 강화 학습 중 더 나은 전략을 발견하는데 도움을 준다는 점을 보여줍니다. 탐사를 더 최적화하기 위해 QeRL은 훈련 중에 노이즈를 동적으로 조절하는 Adaptive Quantization Noise(AQN) 메커니즘을 소개합니다. 실험 결과, QeRL은 롤아웃 단계에서 1.5배 이상의 가속을 제공합니다. 더욱이, 이는 32B LLM을 단일 H100 80GB GPU에서 강화 학습할 수 있는 첫 번째 프레임워크로, 전반적으로 강화 학습에 대한 속도 향상을 이룹니다."
+    },
+    "summary": "1. QeRL은 대규모 언어 모델(Large Language Models, LLMs)을 위한 양자화 강화 학습 프레임워크로, NVFP4 양자화와 Low-Rank Adaptation(LoRA)를 결합하여 강화 학습의 롤아웃 단계를 가속화하고 메모리 오버헤드를 줄입니다.\n2. 양자화 노이즈는 정책 엔트로피를 증가시켜 탐사를 강화하고 더 나은 전략을 발견하는 데 도움을 줍니다. Adaptive Quantization Noise(AQN) 메커니즘을 도입하여 훈련 중에 노이즈를 동적으로 조절합니다.\n3. 실험 결과에 따르면, QeRL은 롤아웃 단계에서 1.5배 이상의 가속을 제공하며, 32B LLM을 단일 GPU에서 강화 학습할 수 있는 최초의 프레임워크로서 빠른 보상 증가와 높은 최종 정확도를 달성합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Thinking with Camera: A Unified Multimodal Model for Camera-Centric\n  Understanding and Generation",
+    "abstract": "Camera-centric understanding and generation are two cornerstones of spatial\nintelligence, yet they are typically studied in isolation. We present Puffin, a\nunified camera-centric multimodal model that extends spatial awareness along\nthe camera dimension. Puffin integrates language regression and diffusion-based\ngeneration to interpret and create scenes from arbitrary viewpoints. To bridge\nthe modality gap between cameras and vision-language, we introduce a novel\nparadigm that treats camera as language, enabling thinking with camera. This\nguides the model to align spatially grounded visual cues with photographic\nterminology while reasoning across geometric context. Puffin is trained on\nPuffin-4M, a large-scale dataset of 4 million vision-language-camera triplets.\nWe incorporate both global camera parameters and pixel-wise camera maps,\nyielding flexible and reliable spatial generation. Experiments demonstrate\nPuffin superior performance over specialized models for camera-centric\ngeneration and understanding. With instruction tuning, Puffin generalizes to\ndiverse cross-view tasks such as spatial imagination, world exploration, and\nphotography guidance. We will release the code, models, dataset pipeline, and\nbenchmark to advance multimodal spatial intelligence research.",
+    "authors": [
+      "Kang Liao",
+      "Size Wu",
+      "Zhonghua Wu",
+      "Linyi Jin",
+      "Chao Wang",
+      "Yikai Wang",
+      "Fei Wang",
+      "Wei Li",
+      "Chen Change Loy"
+    ],
+    "likes": 92,
+    "published_date": "Oct 9",
+    "url": "https://huggingface.co/papers/2510.08673",
+    "date_collected": "2025-10-15T07:08:16.492412+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "카메라와 함께하는 사고: 카메라 중심의 이해 및 생성을 위한 통합적 다중 모달 모델",
+      "abstract": "카메라 중심의 이해와 생성은 공간 지능의 중추를 이루지만, 일반적으로 독립적으로 연구됩니다. 우리는 Puffin이라는 통합 카메라 중심 다중 모달 모델을 제시합니다. Puffin은 카메라 차원을 따라 공간 인식을 확장합니다. 언어 회귀와 확산 기반 생성을 통합하여 임의의 시점에서 장면을 해석하고 생성합니다. 우리는 카메라와 비전-언어 간 모달 갭을 줄이기 위해 카메라를 언어로 취급하는 새로운 패러다임을 소개합니다. 이는 모델이 공간적으로 뿌리를 박힌 시각적 단서를 사진 용어와 일치시키는 동시에 기하적 맥락에 걸쳐 추론하도록 이끕니다. Puffin은 4백만 개의 비전-언어-카메라 트리플릿으로 이루어진 대규모 데이터셋인 Puffin-4M에서 훈련됩니다. 전역 카메라 매개변수와 픽셀별 카메라 맵을 모두 통합하여 유연하고 신뢰할 수 있는 공간 생성을 제공합니다. 실험 결과, Puffin은 카메라 중심 생성 및 이해에 특화된 모델보다 우수한 성능을 나타냅니다. 지침 조정을 통해 Puffin은 공간 상상, 세계 탐험, 사진 안내와 같은 다양한 크로스-뷰 작업에 일반화됩니다. 우리는 멀티모달 공간 지능 연구를 발전시키기 위해 코드, 모델, 데이터셋 파이프라인 및 벤치마크를 공개할 예정입니다."
+    },
+    "summary": "1. Puffin은 카메라 차원을 따라 공간 인식을 확장한 통합적 다중 모달 모델이다.\n2. Puffin은 임의의 시점에서 장면을 해석하고 생성하기 위해 언어 회귀와 확산 기반 생성을 통합한다.\n3. Puffin은 카메라를 언어로 취급하여 시각적 단서를 사진 용어와 일치시키며 기하적 맥락에 걸쳐 추론하는 새로운 패러다임을 제시한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Diffusion Transformers with Representation Autoencoders",
+    "abstract": "Latent generative modeling, where a pretrained autoencoder maps pixels into a\nlatent space for the diffusion process, has become the standard strategy for\nDiffusion Transformers (DiT); however, the autoencoder component has barely\nevolved. Most DiTs continue to rely on the original VAE encoder, which\nintroduces several limitations: outdated backbones that compromise\narchitectural simplicity, low-dimensional latent spaces that restrict\ninformation capacity, and weak representations that result from purely\nreconstruction-based training and ultimately limit generative quality. In this\nwork, we explore replacing the VAE with pretrained representation encoders\n(e.g., DINO, SigLIP, MAE) paired with trained decoders, forming what we term\nRepresentation Autoencoders (RAEs). These models provide both high-quality\nreconstructions and semantically rich latent spaces, while allowing for a\nscalable transformer-based architecture. Since these latent spaces are\ntypically high-dimensional, a key challenge is enabling diffusion transformers\nto operate effectively within them. We analyze the sources of this difficulty,\npropose theoretically motivated solutions, and validate them empirically. Our\napproach achieves faster convergence without auxiliary representation alignment\nlosses. Using a DiT variant equipped with a lightweight, wide DDT head, we\nachieve strong image generation results on ImageNet: 1.51 FID at 256x256 (no\nguidance) and 1.13 at both 256x256 and 512x512 (with guidance). RAE offers\nclear advantages and should be the new default for diffusion transformer\ntraining.",
+    "authors": [
+      "Boyang Zheng",
+      "Nanye Ma",
+      "Shengbang Tong",
+      "Saining Xie"
+    ],
+    "likes": 85,
+    "published_date": "Oct 13",
+    "url": "https://huggingface.co/papers/2510.11690",
+    "date_collected": "2025-10-15T07:08:16.493438+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "표현 자동인코더와 함께 하는 확산 트랜스포머",
+      "abstract": "사전 훈련된 자동인코더가 픽셀을 잠재 공간으로 매핑하여 확산 과정에 사용되는 잠재 생성 모델링은 확산 트랜스포머(Diffusion Transformers, DiT)의 표준 전략이 되었지만, 자동인코더 구성 요소는 거의 발전하지 않았습니다. 대부분의 DiT는 여전히 원래의 VAE(Variational Autoencoder) 인코더에 의존하며 이는 구조적 단순성을 저해하는 구식한 백본, 정보 능력을 제한하는 저차원 잠재 공간, 순수히 재구성 기반 훈련에서 비롯된 약한 표현을 도입합니다. 본 연구에서는 VAE를 사전 훈련된 표현 인코더(e.g., DINO, SigLIP, MAE)로 대체하고 훈련된 디코더와 짝을 이루어 표현 자동인코더(Representation Autoencoders, RAE)라고 부르는 모델을 형성하는 방법을 탐구합니다. 이러한 모델은 고품질 재구성과 의미론적으로 풍부한 잠재 공간을 제공하며 확장 가능한 트랜스포머 기반 아키텍처를 가능하게 합니다. 이러한 잠재 공간은 일반적으로 고차원이므로, 핵심 과제는 확산 트랜스포머가 효과적으로 작동할 수 있도록 하는 것입니다. 이 어려움의 원인을 분석하고, 이론적 동기를 부여한 해결책을 제안하고 실증적으로 검증합니다. 우리의 접근법은 보조 표현 정렬 손실 없이 빠른 수렴을 달성합니다. 경량이면서 넓은 DDT 헤드를 탑재한 DiT 변형을 사용하여 ImageNet에서 강력한 이미지 생성 결과를 달성합니다: 가이드 없이 256x256에서 1.51 FID 및 가이드와 함께 256x256 및 512x512 모두에서 1.13을 얻었습니다. RAE는 명확한 장점을 제공하며 확산 트랜스포머 훈련의 새로운 기본 설정이 되어야 합니다."
+    },
+    "summary": "1. 사전 훈련된 표현 인코더를 사용한 표현 자동인코더(RAE)는 확산 트랜스포머(DiT)의 표준 전략인 자동인코더에 비해 더 높은 재구성 품질과 의미론적으로 풍부한 잠재 공간을 제공하며, 확장 가능한 트랜스포머 아키텍처를 가능케 합니다.\n2. 고차원 잠재 공간에서 효과적으로 작동하는 것이 핵심 도전 과제인 RAE를 통해, 빠른 수렴을 달성하고 보조 표현 정렬 손실 없이 강력한 이미지 생성 결과를 얻을 수 있었습니다.\n3. RAE는 현재의 VAE 인코더에 비해 업그레이드된 구성 요소로, ImageNet에서 뛰어난 이미지 생성 결과를 도출하여, 확산 트랜스포머 훈련의 새로운 필수 도구로 인정받을 것으로 예상됩니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "KORMo: Korean Open Reasoning Model for Everyone",
+    "abstract": "This work presents the first large-scale investigation into constructing a\nfully open bilingual large language model (LLM) for a non-English language,\nspecifically Korean, trained predominantly on synthetic data. We introduce\nKORMo-10B, a 10.8B-parameter model trained from scratch on a Korean-English\ncorpus in which 68.74% of the Korean portion is synthetic. Through systematic\nexperimentation, we demonstrate that synthetic data, when carefully curated\nwith balanced linguistic coverage and diverse instruction styles, does not\ncause instability or degradation during large-scale pretraining. Furthermore,\nthe model achieves performance comparable to that of contemporary open-weight\nmultilingual baselines across a wide range of reasoning, knowledge, and\ninstruction-following benchmarks. Our experiments reveal two key findings: (1)\nsynthetic data can reliably sustain long-horizon pretraining without model\ncollapse, and (2) bilingual instruction tuning enables near-native reasoning\nand discourse coherence in Korean. By fully releasing all components including\ndata, code, training recipes, and logs, this work establishes a transparent\nframework for developing synthetic data-driven fully open models (FOMs) in\nlow-resource settings and sets a reproducible precedent for future multilingual\nLLM research.",
+    "authors": [
+      "Minjun Kim",
+      "Hyeonseok Lim",
+      "Hangyeol Yoo",
+      "Inho Won",
+      "Seungwoo Song",
+      "Minkyung Cho",
+      "Junhun Yuk",
+      "Changsu Choi",
+      "Dongjae Shin",
+      "Huige Lee",
+      "Hoyun Song",
+      "Alice Oh",
+      "Kyungtae Lim"
+    ],
+    "likes": 54,
+    "published_date": "Oct 10",
+    "url": "https://huggingface.co/papers/2510.09426",
+    "date_collected": "2025-10-15T07:08:16.494787+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "모두를 위한 한국어 오픈 추론 모델 KORMo",
+      "abstract": "본 연구는 비영어권 언어인 한국어를 대상으로 하는 최초의 대규모 오픈 이중언어 대형 언어모델 (LLM)을 건설하는 방대한 조사를 제시합니다. 우리는 주로 합성 데이터로 훈련된 한국-영어 말뭉치에서 완전히 새롭게 훈련된 108억 파라미터 모델 KORMo-10B를 소개합니다. 한국어 부분의 68.74%가 합성인 이 말뭉치를 통해 시스템적인 실험을 통해 우리는 균형있는 언어적 커버리지와 다양한 지시 스타일로 조성된 합성 데이터는 대규모 사전 훈련 중 불안정성이나 저하를 일으키지 않음을 입증합니다. 더욱이, 해당 모델은 많은 추론, 지식 및 지시 따르기 벤치마크에서 현대적인 오픈 가중치 다국어 대조와 비슷한 성능을 달성합니다. 우리 실험 결과는 두 가지 주요 결과를 보여줍니다: (1) 합성 데이터는 모델 붕괴 없이 장기간 사전 훈련을 신뢰할 수 있게 유지할 수 있고, (2) 이중언어 지시 튜닝은 한국어에서 거의 원어민 수준의 추론과 담화 일관성을 실현합니다. 이 연구는 데이터, 코드, 훈련 레시피 및 로그를 포함한 모든 구성요소를 완전히 공개하여 저자원 환경에서 합성 데이터 기반 완전히 오픈 모델(FOMs)을 개발하기 위한 투명한 프레임워크를 확립하고, 미래의 다국어 LLM 연구에 대한 재현 가능한 선례를 제시합니다."
+    },
+    "summary": "1. 한국어를 대상으로 하는 첫 번째 대규모 오픈 이중언어 대형 언어모델 KORMo-10B이 합성 데이터를 중심으로 훈련되어 현대적인 다국어 기준에 필적하는 성능을 달성함을 입증함.\n2. 합성 데이터는 균형 잡힌 언어 커버리지와 다양한 지시 스타일로 조성될 때 대규모 사전 훈련 중 안정성이나 성능 하락을 초래하지 않음을 실험적으로 밝힘.\n3. 이중언어 지시 튜닝을 통해 KORMo 모델은 한국어에서 거의 원어민 수준의 추론 및 담화 일관성을 실현하며, 미래 다국어 LLM 연구에 재현 가능한 선례를 마련함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion\n  Sampling",
+    "abstract": "Recent diffusion models achieve the state-of-the-art performance in image\ngeneration, but often suffer from semantic inconsistencies or hallucinations.\nWhile various inference-time guidance methods can enhance generation, they\noften operate indirectly by relying on external signals or architectural\nmodifications, which introduces additional computational overhead. In this\npaper, we propose Tangential Amplifying Guidance (TAG), a more efficient and\ndirect guidance method that operates solely on trajectory signals without\nmodifying the underlying diffusion model. TAG leverages an intermediate sample\nas a projection basis and amplifies the tangential components of the estimated\nscores with respect to this basis to correct the sampling trajectory. We\nformalize this guidance process by leveraging a first-order Taylor expansion,\nwhich demonstrates that amplifying the tangential component steers the state\ntoward higher-probability regions, thereby reducing inconsistencies and\nenhancing sample quality. TAG is a plug-and-play, architecture-agnostic module\nthat improves diffusion sampling fidelity with minimal computational addition,\noffering a new perspective on diffusion guidance.",
+    "authors": [
+      "Hyunmin Cho",
+      "Donghoon Ahn",
+      "Susung Hong",
+      "Jee Eun Kim",
+      "Seungryong Kim",
+      "Kyong Hwan Jin"
+    ],
+    "likes": 44,
+    "published_date": "Oct 6",
+    "url": "https://huggingface.co/papers/2510.04533",
+    "date_collected": "2025-10-15T07:08:16.495876+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "TAG: 측면 증폭 안내를 이용한 환각 억제 확산 샘플링",
+      "abstract": "최근 확산 모델은 이미지 생성에서 최고 수준의 성능을 보이지만, 종종 의미적 불일치나 환각에 시달립니다. 다양한 추론 시간 안내 방법이 성능을 향상시킬 수 있지만, 외부 신호나 구조적 수정에 의존하여 간접적으로 작동하는 경우가 많아 추가 계산 부하를 일으킵니다. 본 논문에서는 환각 증폭 안내(TAG)라는 더 효율적이고 직접적인 안내 방법을 제안합니다. 이 방법은 기본 확산 모델을 수정하지 않고 궤적 신호에만 작용합니다. TAG는 중간 샘플을 투상 기저로 활용하고 예상된 점수의 측면 구성 요소를 이 기저에 대해 증폭하여 샘플링 궤적을 수정합니다. 첫번째 차 테일러 전개법을 활용하여 이 안내 과정을 형식화하면, 측면 성분을 증폭하는 것이 상태를 고 확률 영역으로 이끈다는 것을 보여 의미적인 불일치를 줄이고 샘플 품질을 향상시킵니다. TAG는 최소한의 계산 추가로 확산 샘플링의 충실성을 향상시키는 플러그 앤 플레이, 구조에 중립적인 모듈로, 확산 안내에 대한 새로운 시각을 제공합니다."
+    },
+    "summary": "1. 최근의 확산 모델은 이미지 생성에서 우수한 성능을 보이지만, 종종 의미적인 불일치나 환각 문제가 있습니다.\n2. 본 연구는 환각 증폭 안내라는 효율적이고 직접적인 안내 방법을 제안하며, 기존 확산 모델을 수정하지 않습니다.\n3. TAG는 상태를 고 확률 영역으로 이끄는데 측면 성분을 증폭하여 환각 억제 확산을 향상시킬 수 있는 구조에 중립적인 모듈입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "AutoPR: Let's Automate Your Academic Promotion!",
+    "abstract": "As the volume of peer-reviewed research surges, scholars increasingly rely on\nsocial platforms for discovery, while authors invest considerable effort in\npromoting their work to ensure visibility and citations. To streamline this\nprocess and reduce the reliance on human effort, we introduce Automatic\nPromotion (AutoPR), a novel task that transforms research papers into accurate,\nengaging, and timely public content. To enable rigorous evaluation, we release\nPRBench, a multimodal benchmark that links 512 peer-reviewed articles to\nhigh-quality promotional posts, assessing systems along three axes: Fidelity\n(accuracy and tone), Engagement (audience targeting and appeal), and Alignment\n(timing and channel optimization). We also introduce PRAgent, a multi-agent\nframework that automates AutoPR in three stages: content extraction with\nmultimodal preparation, collaborative synthesis for polished outputs, and\nplatform-specific adaptation to optimize norms, tone, and tagging for maximum\nreach. When compared to direct LLM pipelines on PRBench, PRAgent demonstrates\nsubstantial improvements, including a 604% increase in total watch time, a 438%\nrise in likes, and at least a 2.9x boost in overall engagement. Ablation\nstudies show that platform modeling and targeted promotion contribute the most\nto these gains. Our results position AutoPR as a tractable, measurable research\nproblem and provide a roadmap for scalable, impactful automated scholarly\ncommunication.",
+    "authors": [
+      "Qiguang Chen",
+      "Zheng Yan",
+      "Mingda Yang",
+      "Libo Qin",
+      "Yixin Yuan",
+      "Hanjing Li",
+      "Jinhao Liu",
+      "Yiyan Ji",
+      "Dengyun Peng",
+      "Jiannan Guan",
+      "Mengkang Hu",
+      "Yantao Du",
+      "Wanxiang Che"
+    ],
+    "likes": 43,
+    "published_date": "Oct 10",
+    "url": "https://huggingface.co/papers/2510.09558",
+    "date_collected": "2025-10-15T07:08:16.497230+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "자동 PR: 학술 승진을 자동화합시다!",
+      "abstract": "피어 리뷰 논문의 양이 급증함에 따라 학자들은 발견을 위해 사회적 플랫폼에 점점 의존하며, 저자들은 작품을 홍보하여 가시성과 인용을 확보하기 위해 상당한 노력을 기울입니다. 이 과정을 간소화하고 인간의 노력에 대한 의존을 줄이기 위해, 우리는 자동 프로모션 (AutoPR)을 소개합니다. 이것은 연구 논문을 정확하고 매력적이며 적시에 대중 콘텐츠로 변환하는 새로운 작업입니다. 엄격한 평가를 위해, 우리는 PRBench를 공개하며, 이는 512편의 피어 리뷰 논문을 고품질 프로모션 게시물에 연결하여 시스템을 세 가지 면에서 평가합니다: 충실도 (정확도와 어조), 참여도 (대상 청중과 매력), 일치도 (타이밍 및 채널 최적화). 또한 PRAgent를 소개하는데, 이는 AutoPR을 자동화하는 다중 에이전트 프레임워크로, 다음 세 단계로 동작합니다: 다중 모달 준비로 내용 추출, 극대화된 결과를 위한 협력적 합성, 그리고 최대한의 유효 범위에 대한 양식, 어조 및 태깅을 최적화하기 위한 플랫폼별 적응. PRBench 상에서 직접적인 LLM 파이프라인과 비교했을 때, PRAgent는 총체적 시청 시간 604% 증가, 좋아요 438% 상승, 총 참여도 최소 2.9배 증가 등 상당한 향상을 보여줍니다. 제거 연구는 플랫폼 모델링과 대상화된 프로모션이 이러한 이익에 가장 크게 기여한다는 것을 보여줍니다. 우리의 결과는 AutoPR을 실용적이고 측정 가능한 연구 문제로 위치시키며, 확장 가능하고 중요한 자동 학술 커뮤니케이션을 위한 로드맵을 제시합니다."
+    },
+    "summary": "1. AutoPR은 학술 논문을 정확하고 매력적이며 적시에 대중 콘텐츠로 변환하는 작업으로, PRAgent를 활용한 자동화가 높은 성과를 보이며 피어 리뷰 논문을 프로모션 게시물로 변환합니다.\n2. PRBench를 활용한 AutoPR은 정확성, 어조, 대상 청중 및 매력, 타이밍 및 채널 최적화 세 가지 면에서 시스템을 평가하며, 자동화된 학술 콘텐츠 작업의 효율성을 제시합니다.\n3. 연구 결과는 PRAgent를 통해 참여도 및 관심도 향상, 플랫폼 모델링 및 대상 프로모션의 중요성 강조하며, AutoPR을 효율적이고 중요한 자동 학술 커뮤니케이션 연구로 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "BEAR: Benchmarking and Enhancing Multimodal Language Models for Atomic\n  Embodied Capabilities",
+    "abstract": "Embodied capabilities refer to a suite of fundamental abilities for an agent\nto perceive, comprehend, and interact with the physical world. While multimodal\nlarge language models (MLLMs) show promise as embodied agents, a thorough and\nsystematic evaluation of their embodied capabilities remains underexplored, as\nexisting benchmarks primarily focus on specific domains such as planning or\nspatial understanding. To bridge this gap, we introduce BEAR, a comprehensive\nand fine-grained benchmark that evaluates MLLMs on atomic embodied\ncapabilities. BEAR comprises 4,469 interleaved image-video-text entries across\n14 domains in 6 categories, including tasks from low-level pointing, trajectory\nunderstanding, spatial reasoning, to high-level planning. Extensive evaluation\nresults of 20 representative MLLMs reveal their persistent limitations across\nall domains of embodied capabilities. To tackle the shortfall, we propose\nBEAR-Agent, a multimodal conversable agent that integrates pretrained vision\nmodels to strengthen MLLM perception, 3D understanding, and planning\ncapabilities. It substantially enhances MLLM performance across diverse\nembodied capabilities on BEAR, yielding a 9.12% absolute gain and a relative\nimprovement of 17.5% on GPT-5. Furthermore, our experiments indicate that\nimproving MLLM embodied capabilities can benefit embodied tasks in simulated\nenvironments. Project website: https://bear-official66.github.io/",
+    "authors": [
+      "Yu Qi",
+      "Haibo Zhao",
+      "Ziyu Guo",
+      "Siyuan Ma",
+      "Ziyan Chen",
+      "Yaokun Han",
+      "Renrui Zhang",
+      "Zitiantao Lin",
+      "Shiji Xin",
+      "Yijian Huang",
+      "Kai Cheng",
+      "Peiheng Wang",
+      "Jiazheng Liu",
+      "Jiayi Zhang",
+      "Yizhe Zhu",
+      "Wenqing Wang",
+      "Yiran Qin",
+      "Xupeng Zhu",
+      "Haojie Huang",
+      "Lawson L. S. Wong"
+    ],
+    "likes": 42,
+    "published_date": "Oct 9",
+    "url": "https://huggingface.co/papers/2510.08759",
+    "date_collected": "2025-10-15T07:08:16.498857+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "BEAR: 벤치마킹과 원자적 신체 능력을 위한 다중 모달 언어 모델 강화",
+      "abstract": "신체적 능력은 에이전트가 물리 세계를 인식하고 이해하며 상호작용하기 위한 기본 능력 집합을 의미합니다. 다중 모달 대규모 언어 모델(MLLMs)은 신체적 에이전트로서의 잠재력을 보여주지만, 그들의 신체적 능력을 철저히 평가한 시스템적 벤치마킹은 여전히 적극적으로 탐구되지 않고 있습니다. 이를 극복하기 위해, 우리는 원자적 신체 능력에 대한 MLLMs를 평가하는 포괄적이고 세밀한 벤치마크인 BEAR를 소개합니다. BEAR는 6가지 카테고리의 14개 도메인에서 4,469개의 교차 이미지-비디오-텍스트 엔트리로 구성되어 있으며, 저수준 포인팅, 궤적이해, 공간추론부터 고수준 계획 작업 등을 포함합니다. 20개의 대표 MLLMs에 대한 방대한 평가 결과는 그들이 신체적 능력의 모든 영역에서 지속적인 한계를 보여주었습니다. 이러한 부족을 극복하기 위해, 우리는 MLLM 지각, 3차원 이해 및 계획 능력을 강화하기 위해 사전학습된 비전 모델을 통합한 다중 모달 대화형 에이전트 BEAR-Agent를 제안합니다. 이는 MLLM의 다양한 신체적 능력에 대한 성능을 크게 향상시키며, BEAR에서 9.12%의 절대 향상과 GPT-5에서 17.5%의 상대적 향상을 보여줍니다. 더 나아가, 우리의 실험은 MLLM의 신체적 능력을 향상시킴으로써 시뮬레이션 환경에서의 신체적 작업에 혜택을 줄 수 있음을 시사합니다. 프로젝트 웹사이트: https://bear-official66.github.io/"
+    },
+    "summary": "1. 다중 모달 대규모 언어 모델들의 원자적 신체 능력을 평가하기 위한 포괄적이고 세밀한 BEAR 벤치마크가 소개되었습니다.\n2. 20개의 대표 MLLMs에 대한 평가 결과는 그들의 신체적 능력 영역 전체에서의 한계를 보여주었습니다.\n3. BEAR-Agent는 사전학습된 비전 모델을 통합하여 MLLM의 신체적 능력을 강화하며, 다양한 신체적 능력에 대한 성능을 크게 향상시킵니다.",
+    "categories": [
+      "Multimodal",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for\n  MLLMs",
+    "abstract": "Large Language Models (LLMs) have shown remarkable success, and their\nmultimodal expansions (MLLMs) further unlock capabilities spanning images,\nvideos, and other modalities beyond text. However, despite this shift, prompt\noptimization approaches, designed to reduce the burden of manual prompt\ncrafting while maximizing performance, remain confined to text, ultimately\nlimiting the full potential of MLLMs. Motivated by this gap, we introduce the\nnew problem of multimodal prompt optimization, which expands the prior\ndefinition of prompt optimization to the multimodal space defined by the pairs\nof textual and non-textual prompts. To tackle this problem, we then propose the\nMultimodal Prompt Optimizer (MPO), a unified framework that not only performs\nthe joint optimization of multimodal prompts through alignment-preserving\nupdates but also guides the selection process of candidate prompts by\nleveraging earlier evaluations as priors in a Bayesian-based selection\nstrategy. Through extensive experiments across diverse modalities that go\nbeyond text, such as images, videos, and even molecules, we demonstrate that\nMPO outperforms leading text-only optimization methods, establishing multimodal\nprompt optimization as a crucial step to realizing the potential of MLLMs.",
+    "authors": [
+      "Yumin Choi",
+      "Dongki Kim",
+      "Jinheon Baek",
+      "Sung Ju Hwang"
+    ],
+    "likes": 40,
+    "published_date": "Oct 10",
+    "url": "https://huggingface.co/papers/2510.09201",
+    "date_collected": "2025-10-15T07:08:16.499861+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "다중 모달 프롬프트 최적화: MLLM을 위해 여러 모달리티를 활용하는 이유",
+      "abstract": "대형 언어 모델 (Large Language Models, LLMs)은 놀랍도록 성공을 거두었고, 그들의 다중 모달 확장판(Multimodal Language Models, MLLMs)은 텍스트를 넘어 이미지, 영상 및 기타 모달리티에 걸쳐 확장된 능력을 발휘했습니다. 그러나 이러한 전환에도 불구하고, 수동 프롬프트 작성 부담을 줄이면서 성능을 극대화하는 프롬프트 최적화 접근법은 여전히 텍스트에 국한되어 있어 MLLMs의 전체 잠재력을 제약하고 있습니다. 이러한 불일치에 동기부여받아, 우리는 이전의 프롬프트 최적화를 텍스트와 비텍스트 프롬프트 쌍에 의해 정의된 다중 모달리티 공간에까지 확장하는 새로운 문제인 다중 모달 프롬프트 최적화 문제를 제시합니다. 이 문제를 해결하기 위해, 우리는 Multimodal Prompt Optimizer (MPO)라는 통합 프레임워크를 제안합니다. 이 프레임워크는 다중 모달 프롬프트의 공동 최적화를 수행하는 동시에 정렬 보존 업데이트를 통해 후보 프롬프트 선택 과정을 안내하고, 베이지안 기반 선택 전략에서 이전 평가를 사전 확률로 활용합니다. 텍스트 이상의 이미지, 영상, 심지어 분자와 같은 다양한 모달리티에 걸쳐 광범위한 실험을 통해, MPO가 선도적인 텍스트 기반 최적화 방법을 능가함을 입증하여, 다중 모달 프롬프트 최적화가 MLLMs의 잠재력을 실현하기 위한 중요한 단계임을 확인합니다."
+    },
+    "summary": "1. MLLMs의 다중 모달 프롬프트 최적화를 도입하여 텍스트와 비텍스트 프롬프트 쌍에 의해 정의된 공간에서 효율적으로 프롬프트를 최적화하는 Multimodal Prompt Optimizer(MPO)를 제안함.\n2. MPO는 정렬 보존 업데이트를 통해 다중 모달 프롬프트의 공동 최적화를 수행하고, 베이지안 기반 선택 전략을 사용하여 후보 프롬프트 선택과정을 안내함.\n3. 다양한 모달리티에 걸쳐 수행된 실험을 통해 MPO가 선행 텍스트 기반 최적화 방법보다 우수함을 입증하여, 다중 모달 프롬프트 최적화의 중요성을 강조함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni\n  MLLMs",
+    "abstract": "Recent advances in multimodal large language models (MLLMs) have demonstrated\nsubstantial potential in video understanding. However, existing benchmarks fail\nto comprehensively evaluate synergistic reasoning capabilities across audio and\nvisual modalities, often neglecting either one of the modalities or integrating\nthem in a logically inconsistent manner. To bridge this gap, we introduce\nOmniVideoBench, a large-scale and rigorously designed benchmark dedicated to\nassessing synergistic audio-visual understanding, with a strong emphasis on\nmodality complementarity and logical consistency. Specifically, OmniVideoBench\ncomprises 1000 high-quality question-answer(QA) pairs, each annotated with\nstep-by-step reasoning traces, derived from 628 diverse videos ranging from\nseveral seconds to 30 minutes, and manually verified to guarantee complete\ncorrectness and uniqueness. Moreover, OmniVideoBench encompasses 13 carefully\ndesigned question types, covering temporal reasoning, spatial localization,\ncounting, causal inference, summarization, and beyond, thereby capturing the\nessential challenges of video understanding. Evaluation of multiple MLLMs on\nOmniVideoBench reveals a pronounced gap between model performance and human\nreasoning, with open-source models lagging significantly behind their\nclosed-source counterparts, underscoring the inherent difficulty of genuine\naudio-visual reasoning. We will release OmniVideoBench to foster the\ndevelopment of MLLMs with stronger and more generalizable reasoning\ncapabilities.",
+    "authors": [
+      "Caorui Li",
+      "Yu Chen",
+      "Yiyan Ji",
+      "Jin Xu",
+      "Zhenyu Cui",
+      "Shihao Li",
+      "Yuanxing Zhang",
+      "Jiafu Tang",
+      "Zhenghao Song",
+      "Dingling Zhang",
+      "Ying He",
+      "Haoxiang Liu",
+      "Yuxuan Wang",
+      "Qiufeng Wang",
+      "Zhenhe Wu",
+      "Jiehui Luo",
+      "Zhiyu Pan",
+      "Weihao Xie",
+      "Chenchen Zhang",
+      "Zhaohui Wang",
+      "Jiayi Tian",
+      "Yanghai Wang"
+    ],
+    "likes": 38,
+    "published_date": "Oct 12",
+    "url": "https://huggingface.co/papers/2510.10689",
+    "date_collected": "2025-10-15T07:08:16.501572+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "OmniVideoBench: 오미(Audio-Visual; 오디오-비주얼) 이해 평가를 향하여 Omni MLLMs(다중언어 대형 모델)를 위한",
+      "abstract": "최근 다중 모달 대형 언어 모델(MLLMs)의 발전은 비디오 이해 분야에서 상당한 잠재력을 보여주었습니다. 그러나 기존의 평가 기준은 종종 오디오나 비주얼 중 하나를 무시하거나 논리적으로 일관성 없는 방식으로 통합하여, 오디오 및 비주얼 모달리티 간 상호 작용적 추론 능력을 포괄적으로 평가하지 못합니다. 이러한 격차를 메우기 위해, 우리는 오미비디오벤치(OmniVideoBench)를 소개합니다. 오미비디오벤치는 오디오-비주얼 이해를 평가하기 위해 엄밀하게 설계된 대규모 벤치마크로, 모달리티 보완성과 논리적 일관성에 강조를 두었습니다. 특히, 오미비디오벤치에는 628개의 다양한 비디오에서 파생된 1000개의 고품질 질문-답변(QA) 쌍이 포함되어 있으며, 각각은 단계별 추론 추적을 주석으로 달고 있어 몇 초부터 30분까지의 다양한 영상 범위에서 유래되었으며, 완벽한 정확성과 독특성을 보증하기 위해 수동으로 검증되었습니다. 또한 오미비디오벤치는 비디오 이해의 주요 도전 요소를 포착하기 위해 시간적 추론, 공간적 지역화, 카운팅, 인과 추론, 요약 등 13가지 신중하게 설계된 질문 유형을 포함하고 있습니다. 다중 MLLMs의 오미비디오벤치 평가는 모델 성능과 인간 추론 사이에 현저한 격차를 보여주었는데, 오픈 소스 모델이 그들의 폐쇄 소스 상대들에 비해 현저히 뒤처지고 있음을 확인하며, 진정한 오디오-비주얼 추론의 본질적인 어려움을 강조합니다. 우리는 오미비디오벤치를 공개하여 보다 강력하고 일반화된 추론 능력을 갖춘 MLLMs의 발전을 촉진할 것입니다."
+    },
+    "summary": "1. 오미비디오벤치는 오디오-비주얼 이해를 평가하기 위해 설계된 대규모 벤치마크로, 시간적 추론, 공간적 지역화, 카운팅 등 다양한 질문 유형을 포함합니다.\n2. 다중 MLLMs 평가 결과, 모델 성능과 인간 추론 간에 현저한 차이가 있으며, 오픈 소스 모델이 뒤처지는 경향을 보입니다.\n3. 오미비디오벤치의 공개는 더 강력하고 일반화된 추론 능력을 갖춘 MLLMs의 발전을 촉진할 것으로 기대됩니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "title": "Tstars-Tryon 1.0: Robust and Realistic Virtual Try-On for Diverse Fashion Items",
+    "abstract": "Recent advances in image generation and editing have opened new opportunities for virtual try-on. However, existing methods still struggle to meet complex real-world demands. We present Tstars-Tryon 1.0, a commercial-scale virtual try-on system that is robust, realistic, versatile, and highly efficient. First, our system maintains a high success rate across challenging cases like extreme poses, severe illumination variations, motion blur, and other in-the-wild conditions. Second, it delivers highly photorealistic results with fine-grained details, faithfully preserving garment texture, material properties, and structural characteristics, while largely avoiding common AI-generated artifacts. Third, beyond apparel try-on, our model supports flexible multi-image composition (up to 6 reference images) across 8 fashion categories, with coordinated control over person identity and background. Fourth, to overcome the latency bottlenecks of commercial deployment, our system is heavily optimized for inference speed, delivering near real-time generation for a seamless user experience. These capabilities are enabled by an integrated system design spanning end-to-end model architecture, a scalable data engine, robust infrastructure, and a multi-stage training paradigm. Extensive evaluation and large-scale product deployment demonstrate that Tstars-Tryon1.0 achieves leading overall performance. To support future research, we also release a comprehensive benchmark. The model has been deployed at an industrial scale on the Taobao App, serving millions of users with tens of millions of requests.",
+    "authors": [
+      "Mengting Chen",
+      "Zhengrui Chen",
+      "Yongchao Du",
+      "Zuan Gao",
+      "Taihang Hu",
+      "Jinsong Lan",
+      "Chao Lin",
+      "Yefeng Shen",
+      "Xingjian Wang",
+      "Zhao Wang",
+      "Zhengtao Wu",
+      "Xiaoli Xu",
+      "Zhengze Xu",
+      "Hao Yan",
+      "Mingzhou Zhang",
+      "Jun Zheng",
+      "Qinye Zhou",
+      "Xiaoyong Zhu",
+      "Bo Zheng"
+    ],
+    "likes": 226,
+    "published_date": "Apr 21",
+    "url": "https://huggingface.co/papers/2604.19748",
+    "date_collected": "2026-04-24T07:21:41.397047+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "Tstars-Tryon 1.0: 다양한 패션 아이템을 위한 견고하고 현실적인 가상 시착 시스템",
+      "abstract": "최근 이미지 생성 및 편집 기술의 발전으로 가상 시착에 새로운 기회가 열렸지만, 기존 방법은 여전히 복잡한 현실 세계 요구에 어려움을 겪고 있습니다. 본 연구에서는 견고하고 현실적이며 다양하고 매우 효율적인 상용 규모의 가상 시착 시스템 Tstars-Tryon 1.0을 제안합니다."
+    },
+    "summary": "1. Tstars-Tryon 1.0은 복잡한 상황에서도 높은 성공률을 유지하며 선명한 세부사항을 포함한 매우 사실적인 결과물을 제공합니다.\n2. 이 모델은 의류 시착 뿐 아니라 여러 이미지를 조합하고 배경 및 인물 식별을 유연하게 제어할 수 있는 다재다능성을 제공합니다.\n3. 상업 배포의 시간 지연 병목현상을 극복하기 위해 추론 속도에 중점을 둔 최적화된 시스템으로 사용자 경험을 부드럽게 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
+    "abstract": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
+    "authors": [
+      "Inclusion AI",
+      "Tiwei Bie",
+      "Haoxing Chen",
+      "Tieyuan Chen",
+      "Zhenglin Cheng",
+      "Long Cui",
+      "Kai Gan",
+      "Zhicheng Huang",
+      "Zhenzhong Lan",
+      "Haoquan Li",
+      "Jianguo Li",
+      "Tao Lin",
+      "Qi Qin",
+      "Hongjun Wang",
+      "Xiaomei Wang",
+      "Haoyuan Wu",
+      "Yi Xin",
+      "Junbo Zhao"
+    ],
+    "likes": 207,
+    "published_date": "Apr 22",
+    "url": "https://huggingface.co/papers/2604.20796",
+    "date_collected": "2026-04-24T07:21:41.399367+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "LLaDA2.0-Uni: 디퓨전 대형 언어 모델을 활용한 멀티모달 이해 및 생성 통합",
+      "abstract": "본 논문에서는 LLaDA2.0-Uni를 제안하는데, 이는 멀티모달 이해와 생성을 네이티브하게 통합하는 통합된 이산 디퓨전 대형 언어 모델(dLLM) 입니다. 해당 아키텍처는 완전한 의미론적 이산 토크나이저, MoE 기반의 dLLM 백본 및 디퓨전 디코더를 결합하였습니다. 모델은 SigLIP-VQ를 통해 연속적인 시각적 입력을 이산화하며, 이를 통해 텍스트와 비전 입력에 대한 블록 수준의 가림 마스크된 디퓨전을 백본 내에서 가능하게 합니다. 동시에 디코더는 시각적 토큰을 고품질 이미지로 재구성합니다. 백본 내의 프리픽스 인식 최적화와 디코더 내의 몇 단계 증류를 통해 병렬 디코딩 이상으로 추론 효율성이 향상됩니다. 정밀하게 선별된 대규모 데이터와 맞춤형 다단계 트레이닝 파이프라인의 지원을 받아, LLaDA2.0-Uni는 멀티모달 이해에 있어 특화된 VLM과 호환되며, 이미지 생성 및 편집에서 강력한 성능을 제공합니다. 겹쳐진 생성과 추론에 대한 네이티브 지원은 다음 세대의 통합된 기반 모델에 대한 유망하고 확장 가능한 패러다임을 구축합니다. 코드와 모델은 https://github.com/inclusionAI/LLaDA2.0-Uni에서 제공됩니다."
+    },
+    "summary": "1. LLaDA2.0-Uni는 멀티모달 이해와 생성이 결합된 디퓨전 대형 언어 모델로, 시각적 입력을 이산화하여 텍스트와 비전 입력에 대한 가림 마스크된 디퓨전을 지원하며 고품질 이미지로 재구성합니다.\n2. 백본 내의 최적화 및 디코더 내의 적은 단계 증류를 통해 추론 효율성을 향상시키며, 대규모 데이터와 다단계 트레이닝 파이프라인을 활용하여 멀티모달 이해에서 강력한 성능을 발휘합니다.\n3. LLaDA2.0-Uni는 다음 세대의 통합된 기반 모델을 위한 유망하고 확장 가능한 패러다임을 확립하며, 코드와 모델은 오픈 소스로 제공됩니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation",
+    "abstract": "Few-step generation has been a long-standing goal, with recent one-step generation methods exemplified by MeanFlow achieving remarkable results. Existing research on MeanFlow primarily focuses on class-to-image generation. However, an intuitive yet unexplored direction is to extend the condition from fixed class labels to flexible text inputs, enabling richer content creation. Compared to the limited class labels, text conditions pose greater challenges to the model's understanding capability, necessitating the effective integration of powerful text encoders into the MeanFlow framework. Surprisingly, although incorporating text conditions appears straightforward, we find that integrating powerful LLM-based text encoders using conventional training strategies results in unsatisfactory performance. To uncover the underlying cause, we conduct detailed analyses and reveal that, due to the extremely limited number of refinement steps in the MeanFlow generation, such as only one step, the text feature representations are required to possess sufficiently high discriminability. This also explains why discrete and easily distinguishable class features perform well within the MeanFlow framework. Guided by these insights, we leverage a powerful LLM-based text encoder validated to possess the required semantic properties and adapt the MeanFlow generation process to this framework, resulting in efficient text-conditioned synthesis for the first time. Furthermore, we validate our approach on the widely used diffusion model, demonstrating significant generation performance improvements. We hope this work provides a general and practical reference for future research on text-conditioned MeanFlow generation. The code is available at https://github.com/AMAP-ML/EMF.",
+    "authors": [
+      "Chenxi Zhao",
+      "Chen Zhu",
+      "Xiaokun Feng",
+      "Aiming Hao",
+      "Jiashu Zhu",
+      "Jiachen Lei",
+      "Jiahong Wu",
+      "Xiangxiang Chu",
+      "Jufeng Yang"
+    ],
+    "likes": 94,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18168",
+    "date_collected": "2026-04-24T07:21:41.401160+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "텍스트를 통한 한 단계 이미지 생성 확장: 판별적 텍스트 표현을 통해",
+      "abstract": "최근의 MeanFlow와 같은 한 단계 생성 방법이 현저한 성과를 거두며, 몇 단계 생성이 오랫동안 추구되었습니다. 기존 MeanFlow 연구는 주로 클래스-이미지 생성에 초점을 맞추었습니다. 그러나 고정된 클래스 레이블에서 유연한 텍스트 입력으로 조건을 확장하는 직관적이면서 미개척된 방향이 더욱 풍부한 콘텐츠 생성을 가능하게 합니다. 클래스 레이블에 비해 텍스트 조건은 모델의 이해 능력에 더 큰 도전을 제기하며, 강력한 텍스트 인코더를 MeanFlow 프레임워크에 효과적으로 통합해야 합니다."
+    },
+    "summary": "1. 기존의 MeanFlow 생성 방법은 클래스 레이블에서 유연한 텍스트 입력으로의 조건을 확장하여 텍스트 조건이 모델의 이해 능력에 더 큰 도전을 제시함.\n2. 강력한 LLM 기반 텍스트 인코더의 적절한 사용을 통해 효율적인 텍스트-조건 생성을 가능케 함.\n3. 변경된 프레임워크에서 검증한 결과, MeanFlow를 적용한 텍스트-조건 합성에서 상당한 성능 향상을 입증함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "CoInteract: Physically-Consistent Human-Object Interaction Video Synthesis via Spatially-Structured Co-Generation",
+    "abstract": "Synthesizing human--object interaction (HOI) videos has broad practical value in e-commerce, digital advertising, and virtual marketing. However, current diffusion models, despite their photorealistic rendering capability, still frequently fail on (i) the structural stability of sensitive regions such as hands and faces and (ii) physically plausible contact (e.g., avoiding hand--object interpenetration). We present CoInteract, an end-to-end framework for HOI video synthesis conditioned on a person reference image, a product reference image, text prompts, and speech audio. CoInteract introduces two complementary designs embedded into a Diffusion Transformer (DiT) backbone. First, we propose a Human-Aware Mixture-of-Experts (MoE) that routes tokens to lightweight, region-specialized experts via spatially supervised routing, improving fine-grained structural fidelity with minimal parameter overhead. Second, we propose Spatially-Structured Co-Generation, a dual-stream training paradigm that jointly models an RGB appearance stream and an auxiliary HOI structure stream to inject interaction geometry priors. During training, the HOI stream attends to RGB tokens and its supervision regularizes shared backbone weights; at inference, the HOI branch is removed for zero-overhead RGB generation. Experimental results demonstrate that CoInteract significantly outperforms existing methods in structural stability, logical consistency, and interaction realism.",
+    "authors": [
+      "Xiangyang Luo",
+      "Xiaozhe Xin",
+      "Tao Feng",
+      "Xu Guo",
+      "Meiguang Jin",
+      "Junfeng Ma"
+    ],
+    "likes": 80,
+    "published_date": "Apr 21",
+    "url": "https://huggingface.co/papers/2604.19636",
+    "date_collected": "2026-04-24T07:21:41.402790+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "물리적으로 일관된 인간-객체 상호작용 비디오 생성을 위한 CoInteract: 공간적 구조화된 공동 생성을 통한",
+      "abstract": "인간-객체 상호작용 비디오를 합성하는 것은 전자상거래, 디지털 광고, 가상 마케팅에서 광범위한 실용적 가치를 가지고 있습니다. 그러나 현재의 확산 모델은 사람의 미세한 부위(예: 손과 얼굴)의 구조적 안정성과 물리적으로 타당한 접촉(예: 손-객체간의 침투 회피)에 대한 실패가 여전히 빈번합니다. 우리는 CoInteract를 제안합니다. 이는 인간 참조 이미지, 제품 참조 이미지, 텍스트 프롬프트 및 음성 오디오에 조건을 부여한 HOI 비디오 합성을 위한 종단간 프레임워크입니다. CoInteract은 Diffusion Transformer (DiT) 백본에 내장된 두 가지 보완적 디자인을 소개합니다. 먼저, 미세한 구조적 충실도를 개선하기 위해 공간적으로 지도된 라우팅을 통해 토큰을 가벼운, 영역에 특화된 전문가로 전달하는 Human-Aware Mixture-of-Experts (MoE)를 제안합니다. 두 번째로, 상호작용 지오메트리 사전을 주입하기 위해 RGB 외형 스트림과 보조 HOI 구조 스트림을 일제히 모델링하는 Spatially-Structured Co-Generation을 제안합니다."
+    },
+    "summary": "1. CoInteract는 인간-객체 상호작용 비디오 합성을 위한 새로운 프레임워크로, 세부적인 구조 안정성을 향상시키고 상호작용적 실제성을 증진시킵니다.\n2. 이 모델은 Diffusion Transformer를 기반으로 하며, Human-Aware Mixture-of-Experts와 Spatially-Structured Co-Generation을 결합하여 공간적 구조화 및 인간 인지 능력을 도입합니다.\n3. 실험 결과는 CoInteract가 구조적 안정성, 논리적 일관성 및 상호작용적 현실성 측면에서 기존 방법을 획기적으로 능가한다는 것을 입증합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation",
+    "abstract": "Chain-of-Thought (CoT) reasoning has become a powerful driver of trajectory prediction in VLA-based autonomous driving, yet its autoregressive nature imposes a latency cost that is prohibitive for real-time deployment. Latent CoT methods attempt to close this gap by compressing reasoning into continuous hidden states, but consistently fall short of their explicit counterparts. We suggest that this is due to purely linguistic latent representations compressing a symbolic abstraction of the world, rather than the causal dynamics that actually govern driving. Thus, we present OneVL (One-step latent reasoning and planning with Vision-Language explanations), a unified VLA and World Model framework that routes reasoning through compact latent tokens supervised by dual auxiliary decoders. Alongside a language decoder that reconstructs text CoT, we introduce a visual world model decoder that predicts future-frame tokens, forcing the latent space to internalize the causal dynamics of road geometry, agent motion, and environmental change. A three-stage training pipeline progressively aligns these latents with trajectory, language, and visual objectives, ensuring stable joint optimization. At inference, the auxiliary decoders are discarded and all latent tokens are prefilled in a single parallel pass, matching the speed of answer-only prediction. Across four benchmarks, OneVL becomes the first latent CoT method to surpass explicit CoT, delivering state-of-the-art accuracy at answer-only latency, and providing direct evidence that tighter compression, when guided in both language and world-model supervision, produces more generalizable representations than verbose token-by-token reasoning. Project Page: https://xiaomi-embodied-intelligence.github.io/OneVL",
+    "authors": [
+      "Jinghui Lu",
+      "Jiayi Guan",
+      "Zhijian Huang",
+      "Jinlong Li",
+      "Guang Li",
+      "Lingdong Kong",
+      "Yingyan Li",
+      "Han Wang",
+      "Shaoqing Xu",
+      "Yuechen Luo",
+      "Fang Li",
+      "Chenxu Dang",
+      "Junli Wang",
+      "Tao Xu",
+      "Jing Wu",
+      "Jianhua Wu",
+      "Xiaoshuai Hao",
+      "Wen Zhang",
+      "Tianyi Jiang",
+      "Lingfeng Zhang",
+      "Lei Zhou",
+      "Yingbo Tang"
+    ],
+    "likes": 80,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18486",
+    "date_collected": "2026-04-24T07:21:41.405336+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "비전-언어 설명을 통한 일단계 은닉 추론과 계획 (OneVL)",
+      "abstract": "체인 오브 사고 (CoT) 추론은 VLA 기반 자율 주행에서 궤적 예측의 강력한 주도 요인이 되었지만, 자기회귀적인 성격으로 인해 실시간 배치에는 부담이 되는 지연 비용을 부과합니다. 은담 CoT 방법은 추론을 연속된 숨겨진 상태로 압축하여 이 간극을 줄이려고 하지만 명시적인 상대자들에 대한 것만큼 성과를 내지 못합니다. 우리는 이것이 세계를 상징적 추상화로 압축하는 순수 언어적 숨겨진 표현 때문이며, 실제 주행을 지배하는 인과적 동역학이 아니라고 제안합니다. 따라서, 비전-언어 설명을 통한 일단계 은닉 추론과 계획 (OneVL)을 제시합니다."
+    },
+    "summary": "1. 자동 주행에서의 체인 오브 사고 추론은 강력한데도 자기회귀적 성격으로 실시간 실행에는 부적합한 지연 비용을 가집니다.\n2. OneVL은 언어 디코더와 시각적 세계 모델 디코더를 통해 계획을 라우팅하고 압축된 숨겨진 토큰을 돌아감하는 통합된 VLA 및 세계 모델 프레임워크를 제공합니다.\n3. 세 가지 단계의 훈련 파이프라인은 이 숨겨진 상태를 궤적, 언어 및 시각적 목표와 점진적으로 일치시켜 안정적인 공동 최적화를 보장합니다.",
+    "categories": [
+      "Multimodal",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence",
+    "abstract": "Large language models are increasingly expected to serve as general-purpose agents that interact with external, stateful tool environments. The Model Context Protocol (MCP) and broader agent skills offer a unified interface for connecting agents with scalable real-world services, but training robust agents remains limited by the lack of realistic environments and principled mechanisms for life-long learning. In this paper, we present Agent-World, a self-evolving training arena for advancing general agent intelligence through scalable environments. Agent-World has two main components: (1) Agentic Environment-Task Discovery, which autonomously explores topic-aligned databases and executable tool ecosystems from thousands of real-world environment themes and synthesizes verifiable tasks with controllable difficulty; and (2) Continuous Self-Evolving Agent Training, which combines multi-environment reinforcement learning with a self-evolving agent arena that automatically identifies capability gaps through dynamic task synthesis and drives targeted learning, enabling the co-evolution of agent policies and environments. Across 23 challenging agent benchmarks, Agent-World-8B and 14B consistently outperforms strong proprietary models and environment scaling baselines. Further analyses reveal scaling trends in relation to environment diversity and self-evolution rounds, offering insights for building general agent intelligence.",
+    "authors": [
+      "Guanting Dong",
+      "Junting Lu",
+      "Junjie Huang",
+      "Wanjun Zhong",
+      "Longxiang Liu",
+      "Shijue Huang",
+      "Zhenyu Li",
+      "Yang Zhao",
+      "Xiaoshuai Song",
+      "Xiaoxi Li",
+      "Jiajie Jin",
+      "Yutao Zhu",
+      "Hanbin Wang",
+      "Fangyu Lei",
+      "Qinyu Luo",
+      "Mingyang Chen",
+      "Zehui Chen",
+      "Jiazhan Feng",
+      "Ji-Rong Wen",
+      "Zhicheng Dou"
+    ],
+    "likes": 77,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18292",
+    "date_collected": "2026-04-24T07:21:41.407741+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "Agent-World: 진화하는 일반 에이전트 지능을 위한 실제 환경 합성의 확장",
+      "abstract": "대형 언어 모델은 점점 외부 상태 저장형 도구 환경과 상호 작용하는 일반 목적의 에이전트로서 역할을 기대받고 있습니다. 모델 컨텍스트 프로토콜 (MCP)과 보다 넓은 에이전트 스킬은 에이전트를 확장 가능한 실제 세계 서비스로 연결하는 통합된 인터페이스를 제공하지만, 강력한 에이전트를 훈련시키는 것은 현실적인 환경과 평생 학습에 대한 원칙적인 메커니즘의 부재로 제한됩니다. 본 논문에서는 진화하는 일반 에이전트 지능을 발전시키기 위한 확장 가능한 환경을 통해 Agent-World를 제시합니다. Agent-World에는 두 가지 주요 구성 요소가 있습니다: (1) 에이전트-환경 발견, (2) 지속적인 자체 진화 에이전트 훈련. Agent-World-8B 및 14B는 강력한 자사 모델 및 환경 확장 기준을 꾸준히 능가합니다. 더 많은 분석은 환경 다양성 및 자가 진화 라운드와 관련된 확장 추세를 보여주며, 일반적인 에이전트 지능을 구축하는 데 통찰을 제공합니다."
+    },
+    "summary": "1. Agent-World는 실제 환경과 실행 가능한 도구 생태계를 자율적으로 탐색하여 검증 가능한 작업을 합성하고, 강화 학습을 결합하여 에이전트 정책 및 환경의 상호 진화를 가능케하며 뛰어난 성능을 보입니다.\n2. 에이전트-환경 발견은 수천 개의 실제 환경 테마로부터 주제에 맞는 데이터베이스를 자동으로 탐색하고, 조절 가능한 난이도를 갖는 작업을 합성합니다.\n3. 지속적인 자체 진화 에이전트 훈련은 동적 작업 합성을 통해 능력 공백을 식별하고, 대상 지향 학습을 이끌어내어 에이전트 정책과 환경의 상호 진화를 가능케합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Elucidating the SNR-t Bias of Diffusion Probabilistic Models",
+    "abstract": "Diffusion Probabilistic Models have demonstrated remarkable performance across a wide range of generative tasks. However, we have observed that these models often suffer from a Signal-to-Noise Ratio-timestep (SNR-t) bias. This bias refers to the misalignment between the SNR of the denoising sample and its corresponding timestep during the inference phase. Specifically, during training, the SNR of a sample is strictly coupled with its timestep. However, this correspondence is disrupted during inference, leading to error accumulation and impairing the generation quality. We provide comprehensive empirical evidence and theoretical analysis to substantiate this phenomenon and propose a simple yet effective differential correction method to mitigate the SNR-t bias. Recognizing that diffusion models typically reconstruct low-frequency components before focusing on high-frequency details during the reverse denoising process, we decompose samples into various frequency components and apply differential correction to each component individually. Extensive experiments show that our approach significantly improves the generation quality of various diffusion models (IDDPM, ADM, DDIM, A-DPM, EA-DPM, EDM, PFGM++, and FLUX) on datasets of various resolutions with negligible computational overhead. The code is at https://github.com/AMAP-ML/DCW.",
+    "authors": [
+      "Meng Yu",
+      "Lei Sun",
+      "Jianhao Zeng",
+      "Xiangxiang Chu",
+      "Kun Zhan"
+    ],
+    "likes": 72,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.16044",
+    "date_collected": "2026-04-24T07:21:41.409291+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "확산 확률 모델의 SNR-t 편향 해석",
+      "abstract": "확산 확률 모델은 다양한 생성 과제에서 놀라운 성능을 보여주고 있습니다. 그러나 이러한 모델들은 종종 신호 대 잡음 비율-타임스텝 (SNR-t) 편향 문제를 겪고 있는 것으로 관찰되었습니다. 이 편향은 추론 단계에서 잡음 제거 샘플의 SNR과 해당 타임스텝 간의 불일치를 가리킵니다. 훈련 과정에서 샘플의 SNR은 엄격히 해당 타임스텝과 결합됩니다. 그러나 추론 중에 이 대응이 방해를 받아 오류가 누적되고 생성 품질이 저하됩니다. 우리는 이 현상을 입증하기 위해 포괄적인 경험적 증거와 이론적 분석을 제시하고 이 SNR-t 편향을 완화하기 위한 간단하면서 효과적인 차별적 수정 방법을 제안합니다. 확산 모델이 일반적으로 역 잡음 프로세스에서 고주파 세부 사항에 집중하기 전에 저주파 구성 요소를 재구성하는 경향이 있다는 점을 인지하고, 샘플을 각각의 다양한 주파수 구성 요소로 분해하고 각 구성 요소에 차별적 수정을 적용합니다. 광범위한 실험 결과는 우리의 방법이 다양한 해상도 데이터셋 (IDDPM, ADM, DDIM, A-DPM, EA-DPM, EDM, PFGM++ 및 FLUX)에서 무시할 만한 계산 부담으로 생성 품질을 현저히 향상시킨다는 것을 보여줍니다. 코드는 https://github.com/AMAP-ML/DCW 에서 확인할 수 있습니다."
+    },
+    "summary": "1. 확산 확률 모델은 SNR-t 편향 문제로 인해 생성 품질이 손상될 수 있는데, 이를 완화하기 위해 차별적 수정 방법을 제안하고 이를 통해 생성 품질을 현저히 향상시킬 수 있다.\n2. 차별적 수정은 각 주파수 구성 요소에 개별적으로 적용되며, 샘플을 재구성하는 절차에 있어 높은 주파수 세부 사항에 초점을 맞추는 전략을 변경함으로써 생성 품질을 개선할 수 있다.\n3. 실험 결과는 제안된 방법이 다양한 해상도 데이터셋에서 확산 모델의 생성 품질을 향상시키는 데 효과적임을 입증하고 있다.",
+    "categories": [
+      "LLM",
+      "Generative Modeling",
+      "Other"
+    ]
+  },
+  {
+    "title": "OpenGame: Open Agentic Coding for Games",
+    "abstract": "Game development sits at the intersection of creative design and intricate software engineering, demanding the joint orchestration of game engines, real-time loops, and tightly coupled state across many files. While Large Language Models (LLMs) and code agents now solve isolated programming tasks with ease, they consistently stumble when asked to produce a fully playable game from a high-level design, collapsing under cross-file inconsistencies, broken scene wiring, and logical incoherence. We bridge this gap with OpenGame, the first open-source agentic framework explicitly designed for end-to-end web game creation. At its core lies Game Skill, a reusable, evolving capability composed of a Template Skill that grows a library of project skeletons from experience and a Debug Skill that maintains a living protocol of verified fixes - together enabling the agent to scaffold stable architectures and systematically repair integration errors rather than patch isolated syntax bugs. Powering this framework is GameCoder-27B, a code LLM specialized for game engine mastery through a three-stage pipeline of continual pre-training, supervised fine-tuning, and execution-grounded reinforcement learning. Since verifying interactive playability is fundamentally harder than checking static code, we further introduce OpenGame-Bench, an evaluation pipeline that scores agentic game generation along Build Health, Visual Usability, and Intent Alignment via headless browser execution and VLM judging. Across 150 diverse game prompts, OpenGame establishes a new state-of-the-art. We hope OpenGame pushes code agents beyond discrete software engineering problems and toward building complex, interactive real-world applications. Our framework will be fully open-sourced.",
+    "authors": [
+      "Yilei Jiang",
+      "Jinyuan Hu",
+      "Qianyin Xiao",
+      "Yaozhi Zheng",
+      "Ruize Ma",
+      "Kaituo Feng",
+      "Jiaming Han",
+      "Tianshuo Peng",
+      "Kaixuan Fan",
+      "Manyuan Zhang",
+      "Xiangyu Yue"
+    ],
+    "likes": 64,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18394",
+    "date_collected": "2026-04-24T07:21:41.411145+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "OpenGame: 게임을 위한 오픈 에이전트 코딩",
+      "abstract": "게임 개발은 창의적 디자인과 복잡한 소프트웨어 엔지니어링의 교차로에 위치하여, 게임 엔진, 실시간 반복 루프, 그리고 여러 파일 간 밀접하게 결합된 상태의 공동 조정을 요구합니다. 대형 언어 모델 (LLMs)과 코드 에이전트는 이제 고립된 프로그래밍 작업을 쉽게 해결하지만, 고수준 디자인으로부터 완전히 플레이 가능한 게임을 제작하도록 요청받으면, 교차 파일 불일치, 작동하지 않는 씬 연결, 그리고 논리적인 모순으로 인해 일관성이 무너집니다. 우리는 오픈소스로 처음으로 고안된 웹 게임 작성을 위한 에이전틱 프레임워크인 OpenGame으로 이 간극을 극복합니다. 핵심 요소는 게임 스킬인데, 이는 현장 경험을 토대로 프로젝트 스켈레톤 라이브러리를 키우는 템플릿 스킬과 검증된 수정 사항 프로토콜을 유지하는 디버그 스킬로 구성된 재사용 가능하며 발전 가능한 능력입니다."
+    },
+    "summary": "1. OpenGame은 게임 개발에서 LLMs와 코드 에이전트로 인해 발생하는 문제를 해결하고, 완전한 웹 게임 작성을 위한 프레임워크를 제공한다.\n2. 이 프레임워크의 핵심인 Game Skill은 템플릿 스킬과 디버그 스킬로 구성된 능력으로 안정적인 아키텍처를 효과적으로 구축한다.\n3. GameCoder-27B는 게임 엔진 마스터리를 위해 특화된 코드 LLM으로, 강화 학습을 통해 게임의 인터랙티브 플레이 가능성을 검증하는 OpenGame-Bench를 도입했다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has catalyzed significant advances in the reasoning capabilities of Large Language Models (LLMs). However, effectively managing the exploration and exploitation trade-off remains a critical challenge. In this paper, we fully analyze the exploration and exploitation dilemma of extremely hard and easy samples during the training and propose a new fine-grained trade-off mechanism. Concretely, we introduce a perplexity space disentangling strategy that divides the sample space into distinct exploration (high perplexity) and exploitation (low perplexity) subspaces, thereby mining fine-grained samples requiring exploration-exploitation trade-off. Subsequently, we propose a bidirectional reward allocation mechanism with a minimum impact on verification rewards to implement perplexity-guided exploration and exploitation, enabling more stable policy optimization. Finally, we have evaluated our method on two mainstream tasks: mathematical reasoning and function calling, and experimental results demonstrate the superiority of the proposed method, confirming its effectiveness in enhancing LLM performance by fine-grained exploration-exploitation trade-off.",
+    "authors": [
+      "Xiaofan Li",
+      "Ming Yang",
+      "Zhiyuan Ma",
+      "Shichao Ma",
+      "Jintao Du",
+      "Yu Cheng",
+      "Weiqiang Wang",
+      "Zhizhong Zhang",
+      "Xin Tan",
+      "Yanyun Qu",
+      "Lizhuang Ma",
+      "Yuan Xie"
+    ],
+    "likes": 58,
+    "published_date": "Apr 15",
+    "url": "https://huggingface.co/papers/2604.13902",
+    "date_collected": "2026-04-24T07:21:41.413086+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "DiPO: 디센텡글된 불확실성 정책 최적화를 통한 세밀한 탐사-활용 트레이드오프",
+      "abstract": "확인 가능 보상을 통한 강화 학습(RLVR)은 대형 언어 모델(LLMs)의 추론 능력에 중요한 발전을 이끌었습니다. 그러나 탐사와 활용 트레이드오프 효과적으로 관리하는 것은 여전히 중요한 도전입니다. 본 논문에서는 학습 중에 매우 어려운 샘플과 쉬운 샘플의 탐사와 활용 딜레마를 완전히 분석하고 새로운 세밀한 트레이드오프 메커니즘을 제안합니다. 구체적으로, perplexity 공간을 분리하는 전략을 소개하여 샘플 공간을 구별된 탐사(높은 perplexity) 및 활용(낮은 perplexity) 하위 공간으로 나누어 세밀한 탐사-활용 트레이드오프가 필요한 샘플을 찾아냅니다. 이어서, perplexity에 따라 탐사와 활용을 구현하기 위해 확인 보상에 최소한의 영향을 끼치는 양방향 보상 할당 메커니즘을 제안하여 보다 안정적인 정책 최적화를 가능케 합니다. 마지막으로, 우리는 수학적 추론 및 함수 호출과 같은 두 가지 주요 작업에서 우리의 방법을 평가하였으며 실험 결과는 제안된 방법의 우수성을 입증하며 세밀한 탐사-활용 트레이드오프를 통해 LLM 성능을 향상시키는 효과를 확인합니다."
+    },
+    "summary": "1. 강화 학습 기반의 대형 언어 모델 성능 강화를 위해 샘플 탐사와 활용 사이의 세밀한 교환 메커니즘을 제안함.\n2. Perplexity를 활용한 탐사와 활용 방법을 도입하여 안정적인 정책 최적화를 가능케 함.\n3. 수학적 추론과 함수 호출과 같은 작업에서 실험 결과가 제안된 방법의 우수성을 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "AgentSPEX: An Agent SPecification and EXecution Language",
+    "abstract": "Language-model agent systems commonly rely on reactive prompting, in which a single instruction guides the model through an open-ended sequence of reasoning and tool-use steps, leaving control flow and intermediate state implicit and making agent behavior potentially difficult to control. Orchestration frameworks such as LangGraph, DSPy, and CrewAI impose greater structure through explicit workflow definitions, but tightly couple workflow logic with Python, making agents difficult to maintain and modify. In this paper, we introduce AgentSPEX, an Agent SPecification and EXecution Language for specifying LLM-agent workflows with explicit control flow and modular structure, along with a customizable agent harness. AgentSPEX supports typed steps, branching and loops, parallel execution, reusable submodules, and explicit state management, and these workflows execute within an agent harness that provides tool access, a sandboxed virtual environment, and support for checkpointing, verification, and logging. Furthermore, we provide a visual editor with synchronized graph and workflow views for authoring and inspection. We include ready-to-use agents for deep research and scientific research, and we evaluate AgentSPEX on 7 benchmarks. Finally, we show through a user study that AgentSPEX provides a more interpretable and accessible workflow-authoring paradigm than a popular existing agent framework.",
+    "authors": [
+      "Pengcheng Wang",
+      "Jerry Huang",
+      "Jiarui Yao",
+      "Rui Pan",
+      "Peizhi Niu",
+      "Yaowenqi Liu",
+      "Ruida Wang",
+      "Renhao Lu",
+      "Yuwei Guo",
+      "Tong Zhang"
+    ],
+    "likes": 53,
+    "published_date": "Apr 14",
+    "url": "https://huggingface.co/papers/2604.13346",
+    "date_collected": "2026-04-24T07:21:41.414904+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "에이전트스펙스: 에이전트 명세 및 실행 언어",
+      "abstract": "언어 모델 에이전트 시스템은 리액티브 프롬프팅에 의존하는데, 한 가지 명령이 모델을 열린 순서 추론 및 도구 사용 단계로 안내하며 제어 흐름과 중간 상태를 암시적으로 남겨 에이전트 행동을 어렵게 만들 수 있습니다. 랭그래프, 디에스파이, 크루에이아이와 같은 오케스트레이션 프레임워크는 명시적 워크플로우 정의를 통해 구조를 부여하지만, 워크플로우 논리를 파이썬과 강하게 결합하여 에이전트를 유지 및 수정하기 어렵게 만듭니다. 본 논문에서는 에이전트스펙스를 소개하는데, 명시적 제어 흐름과 모듈식 구조를 갖는 LLM-에이전트 워크플로우를 지정하기 위한 에이전트 명세 및 실행 언어로, 사용자 정의 가능한 에이전트 하네스도 함께 포함합니다. 에이전트스펙스는 유형화된 단계, 분기 및 루프, 병렬 실행, 재사용 가능한 서브모듈, 명시적 상태 관리를 지원하며, 이러한 워크플로우는 도구 접근, 격리된 가상 환경, 체크포인트, 확인, 로깅 지원을 제공하는 에이전트 하네스 내에서 실행됩니다. 또한, 저자 및 검사를 위한 동기화된 그래프와 워크플로우 뷰를 제공하는 시각 편집기가 함께 제공됩니다. 우리는 깊은 연구와 과학 연구용으로 준비된 에이전트를 포함하고, 7가지 벤치마크에서 에이전트스펙스를 평가합니다. 마지막으로, 인기 있는 기존 에이전트 프레임워크보다 에이전트스펙스가 더 이해하기 쉽고 접근성 있는 워크플로우 편집 패러다임을 제공함을 사용자 연구를 통해 보여줍니다."
+    },
+    "summary": "1. 언어 모델 에이전트가 가진 한계를 극복하기 위해 명시적 제어 흐름과 모듈화된 구조를 가진 에이전트스펙스가 제안됨.\n2. 에이전트스펙스는 유형화된 단계, 분기/루프, 병렬 실행, 서브모듈, 명시적 상태 관리를 지원하며, 시각 편집기를 통해 워크플로우를 작성하고 검사할 수 있음.\n3. 사용자 연구를 통해 에이전트스펙스가 기존 프레임워크보다 더 이해하기 쉽고 접근성 있는 워크플로우 편집 패러다임을 제공한다는 것을 입증함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

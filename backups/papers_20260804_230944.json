@@ -1,0 +1,275 @@
+[
+  {
+    "title": "From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-oriented large language models (LLMs) by enabling large-scale optimization. However, its applicability remains largely limited to domains such as mathematics and coding, where correctness can be deterministically verified. Open-ended tasks instead often rely on human preferences, reward models, or LLM-based judges, introducing evaluation bias, judge capability bottlenecks, and additional inference costs.Drawing on the principle of self-supervised learning, which constructs pretext tasks to derive supervision from the data itself, we propose Reinforcement Learning with Self-Verifiable Rewards (RLSVR), a task-transformation-based training paradigm for extending RLVR to open-ended tasks. RLSVR transforms open-ended tasks into verifiable proxy environments whose internal rules and interaction outcomes automatically generate reward signals. We instantiate RLSVR with SpyRL, a multi-agent self-play environment inspired by Who Is the Spy?. Agents receive asymmetric information, complete the same target task, and vote to identify a designated spy. Because the spy identity is predetermined, voting outcomes provide fully verifiable rewards, while successful identification remains closely related to output quality. Experiments on text summarization, creative writing, and mathematical reasoning show that SpyRL outperforms existing self-improvement methods on non-verifiable tasks and yields consistent gains on verifiable reasoning tasks. These results demonstrate that task transformation can extend scalable RLVR-based self-improvement beyond inherently verifiable domains. Models and code have been released at https://github.com/wangqinsi1/SpyRL.",
+    "authors": [
+      "Qinsi Wang",
+      "Jing Shi",
+      "Huazheng Wang",
+      "Kun Wan",
+      "Yiran Wu",
+      "Bo Liu",
+      "Qingyun Wu",
+      "Hai Helen Li",
+      "Yiran Chen",
+      "Handong Zhao",
+      "Wentian Zhao"
+    ],
+    "likes": 71,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2607.23802",
+    "date_collected": "2026-08-04T08:10:32.265290+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "RLVR에서 RLSVR로: 과제 변환이 열린 마음의 LLM 자가 향상을 유도합니다",
+      "abstract": "확인 가능 보상(Verifiable Rewards)을 활용한 강화 학습(RLVR)은 최근 대규모 언어모델(Large Language Models, LLMs)의 추론 지향적 진전을 이끌며 대규모 최적화를 가능케 했습니다. 그러나 이것의 적용 가능성은 주로 수학 및 코딩과 같이 결정적으로 확인 가능한 분야로 크게 제한됩니다. 그 대신 열린 과제들은 종종 인간의 선호도, 보상 모델, 또는 LLM 기반 심사자에 의존하여 평가 편향, 심사자 능력 병목 현상, 추가적 추론 비용을 도입합니다. 자가 지도 학습의 원칙을 차용하여, 우리는 데이터 자체로부터 지도를 유도하기 위해 선행 과제를 구축하는 자가 확인 보상을 갖는 강화 학습(RLSVR)을 제안합니다. RLSVR은 열린 과제를 확인 가능한 대리 환경으로 변환하여 내부 규칙과 상호 작용 결과가 보상 신호를 자동으로 생성하도록 합니다. 우리는 SpyRL과 함께 RLSVR을 구체화했습니다. 이는 Who Is the Spy?에서 영감을 받은 다중 에이전트 자가 대결 환경입니다. 에이전트들은 비대칭 정보를 받고 동일한 목표 과제를 완수하고 지정된 스파이를 식별하기 위해 투표합니다. 스파이 신원이 미리 결정되므로 투표 결과는 완전히 확인 가능한 보상을 제공하며, 성공적인 식별은 출력 품질과 밀접하게 관련됩니다. 텍스트 요약, 창의적 글쓰기, 수학적 추론에 대한 실험 결과는 SpyRL이 확인 불가능한 과제에서 기존 자가 향상 방법을 능가하며 확인 가능한 추론 과제에서 일관된 향상을 제공함을 보여줍니다. 이러한 결과는 과제 변환이 본래 확인 가능한 도메인을 넘어 확장 가능한 RLVR 기반의 자가 향상을 가능케 할 수 있음을 보여줍니다. 모델과 코드는 https://github.com/wangqinsi1/SpyRL에서 공개되었습니다."
+    },
+    "summary": "1. 확인 가능한 보상을 활용한 강화 학습(RLVR)의 한계를 극복하기 위해 자가 확인 가능 보상(RLSVR)을 제안하였습니다.\n2. RLSVR은 열린 과제를 확인 가능한 대리 환경으로 변환하여 자가 지도 학습 원리에 기반한 교육 방법론을 소개합니다.\n3. SpyRL을 통해 실시한 실험 결과는 현재의 자가 향상 방법보다 확인 불가능한 과제에서 우수한 성과를 보이고, 확인 가능한 추론 작업에서 일관된 향상을 나타냅니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Mental World Modeling",
+    "abstract": "World models enable a predictive substrate for planning and action, yet existing formulations merely answer a physical question: what/where it is, and how will it evolve. Human behavior, however, is driven by hidden mental state (what a person believes, wants, intends, feels, and considers socially permissible), so a model that tracks the physical scene but not what each agent knows and believes about it predicts the wrong action for the right-looking scene. We formulate Mental World Modeling (MWM), a generic theoretical framework that makes mental variables core components of a world model rather than posthoc rationales: MWM aintains a coupled physical-mental world state, renders a target-specific partial observation, and simulates how candidate actions jointly update both components. We instantiate the framework in MENTIS, a training-free and fully inspectable baseline that decomposes the process into state parsing, target-observation generation, action decomposition, coupled physical and mental transition, and branch-level value evaluation. On a manually constructed, quality-controlled dataset of situated decision scenarios spanning text, image, and sounding-video stories, experiments with 8 modern LLM-based world models demonstrate that explicitly modeling the mental state is essential for predicting human decisions. Deeper analyses further expose the bottlenecks of current mental world modeling. We expect MWM as a next stage of world modeling, from simulating physical scenes to simulating the minds that act in them.",
+    "authors": [
+      "Hao Fei",
+      "Yiran Zhao"
+    ],
+    "likes": 52,
+    "published_date": "Jul 29",
+    "url": "https://huggingface.co/papers/2607.27201",
+    "date_collected": "2026-08-04T08:10:32.267463+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "정신적 세계 모델링",
+      "abstract": "세계 모델은 계획과 행동을 위한 예측적 기반을 제공하지만, 기존의 개념은 단순히 물리적인 질문에 대답합니다: 무엇이/어디에 있는지, 어떻게 진화할 것인가. 그러나 인간 행동은 숨겨진 정신적 상태에 의해 주도되며, 각 주체가 그에 대해 무엇을 믿고 의도하며 느끼는지, 사회적으로 허용되는 것으로 간주하는 등의 내재적인 상태에 의해 영향을 받습니다. 그래서 물리적 상황을 추적하는 모델은 각 주체가 그에 대해 알고 믿는 것을 고려하지 않으면 올바르게 보이는 상황에 대해 잘못된 행동을 예측합니다. 우리는 정신 세계 모델링(MWM)을 수립합니다. 이는 정신 변수들을 세계 모델의 핵심 구성 요소로 만들어 사후적 합리화가 아닌 이론적인 프레임워크입니다: MWM은 결합된 물리적-정신적 세계 상태를 유지하고, 목표별 부분적 관찰을 제공하며, 후보 행동이 어떻게 두 구성 요소를 동시에 업데이트하는지 시뮬레이션합니다. 우리는 MENTIS에서 이 프레임워크를 구현했으며, 이는 훈련이 필요없고 완전히 검사 가능한 기준선으로, 상태 구문 분석, 목표 관찰 생성, 행동 분해, 결합된 물리적 및 정신적 전이, 그리고 가치 평가 레벨의 분해로 과정을 세분화합니다. 텍스트, 이미지, 소리-비디오 스토리를 포함하는 양질의 데이터세트에서 8가지 최신 LLM 기반의 세계 모델과의 실험은 정신적 상태를 명시적으로 모델링하는 것이 인간의 결정을 예측하는 데 필수적임을 보여줍니다. 더 깊은 분석은 현재 정신적 세계 모델링의 병목 현상을 더욱 드러냅니다. 우리는 MWM을 세계 모델링의 다음 단계로 예상하며, 물리적인 장면을 모방하는 것에서 그 안에서 행동하는 마음을 모방하는 단계로 나아갈 것입니다."
+    },
+    "summary": "1. 인간의 행동은 물리적 상황을 추적하는 것뿐 아니라 각 주체의 정신적 상태를 고려하는 정신 세계 모델링이 필수적입니다.\n2. MWM은 물리적-정신적 세계 상태를 유지하고, 특정 목표에 대한 부분적 관찰을 제공하며, 후보 행동이 두 구성 요소를 동시에 업데이트하는 방식을 시뮬레이션합니다.\n3. 실험 결과는 정신적 상태를 명시적으로 모델링하는 것이 인간 결정을 예측하는 데 필수적이며, 현재 모델링의 병목 현상을 밝혀내었습니다.",
+    "categories": [
+      "LLM",
+      "다른 방면"
+    ]
+  },
+  {
+    "title": "N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens",
+    "abstract": "We present N_0-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Building on current vision-based backbones, we propose a training recipe for tactile integration consisting of visuo-tactile pre-training, staged tactile-pathway integration, and advantage-conditioned offline policy improvement. During pre-training, the policy learns broad contact priors from NeoData, our large-scale visuo-tactile robot dataset; to our knowledge, N_0-VTLA is the first VTLA model pretrained on tactile data at scale. During post-training, we augment the policy with a predictive tactile pathway that distills the contact patterns learned at scale into the fine motion adjustments required by downstream tactile-centric manipulation. For offline policy improvement, we introduce ALTER, an advantage-conditioned offline reinforcement learning method that converts relative progress and trajectory-event comparisons into binary advantage labels for policy training on a fixed deployment corpus, further improving task-specific learning on contact-rich skills such as deformable object manipulation. Across contact-rich benchmarks, N_0-VTLA outperforms strong baselines by wide margins: it wins all nine real-robot NeoReal tasks and reaches 63.8% mean success on a twenty-task simulation suite, against 44.0% for the strongest baseline. N_0-VTLA policies trained with ALTER reach 75-95% success on three long-horizon real-robot tasks. These results lay a foundation for versatile tactile-driven manipulation policies.",
+    "authors": [
+      "NeoteAI Team",
+      "Fudan TEAI Team"
+    ],
+    "likes": 49,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2607.23782",
+    "date_collected": "2026-08-04T08:10:32.269589+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "N_0-VTLA: 잠재적 촉각 토큰을 활용한 비전-촉각-언어-동작 모델의 확장",
+      "abstract": "본 논문에서는 촉각 지각과 촉각 피드백 제어를 통해 미세한 접촉 풍부한 조작이 가능한 비전-촉각-언어-동작(VTLA) 기반 모델인 N_0-VTLA를 제안합니다. 우리는 현재의 비전 기반 백본에 기반하여, 시각-촉각 사전 훈련, 단계적 촉각 경로 통합, 이점 조건화 오프라인 정책 개선으로 구성된 촉각 통합을 위한 훈련 방법을 제안합니다. N_0-VTLA은 촉각 데이터를 대규모로 사전 훈련하는 첫 번째 VTLA 모델로 알려져 있습니다. ALTER를 도입하여 오프라인 정책 개선을 수행하여, 전체적으로 엄청난 우위를 가지고 강한 기준선을 능가하는 성능을 보입니다."
+    },
+    "summary": "1. N_0-VTLA는 촉각 지각 데이터를 활용한 첫 번째 VTLA 모델로, 촉각 중심의 조작에 필요한 미세한 움직임 조절에 대한 넓은 접촉 사전을 학습합니다.\n2. 오프라인 정책 개선을 위해 ALTER를 도입하여 상대적 진전과 경로 이벤트 비교를 바이너리 이점 레이블로 변환하여 정책 훈련을 통해 고정 배치 언어 자료에서 작업별 학습을 추가로 향상시킵니다.\n3. N_0-VTLA는 강한 기준선을 크게 능가하여 모든 구라이 영진과 같은 9가지 실제 로봇 태스크를 이기고 시뮬레이션 수트에서 20가지의 태스크 중 63.8%의 평균 성공률을 보입니다. ALTER로 훈련된 N_0-VTLA 정책은 3가지 장기간의 실제 로봇 태스크에서 75-95%의 성공률을 달성합니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Meshy T2: Fast Native Mesh Generation with Flow Matching",
+    "abstract": "Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token sequence and decode it autoregressively, which is slow at inference and sensitive to error accumulation, making them impractical for interactive asset creation. We present Meshy T2, a fast native mesh generation framework built on flow matching. At its core is a vertex-set mesh VAE that encodes a mesh into one continuous latent token per vertex and decodes vertices, edge connectivity, and face winding order in a single pass, preserving high-precision geometry and artist-authored topology without vertex quantization or welding. Generation proceeds as a coarse-to-fine cascade of two flow-matching models: an image-conditioned voxel flow first sketches the overall shape as a coarse occupancy scaffold, and a mesh flow then populates the scaffold with per-vertex latent tokens, conditioned on the image, the scaffold, and a requested vertex budget. This design delivers three practical capabilities: interactive generation speed through parallel flow-based synthesis; effective face-count control through the requested vertex budget; and native support for multi-part assets, whose components emerge directly from the generated connectivity. In our experiments, Meshy T2 achieves state-of-the-art geometric fidelity and completes end-to-end image-to-mesh generation within a median of 6 seconds, over an order of magnitude faster than autoregressive baselines. Code and weights will be available at https://github.com/meshy-dev/meshy-t2.",
+    "authors": [
+      "Jiale Xu",
+      "Rendong Liang",
+      "Yuhao Long",
+      "Siyuan Shen",
+      "Zangyueyang Xian",
+      "Zeyi Xu",
+      "Yuanming Hu"
+    ],
+    "likes": 41,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2607.28675",
+    "date_collected": "2026-08-04T08:10:32.271922+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "Meshy T2: 플로우 매칭을 이용한 빠른 원시 매쉬 생성",
+      "abstract": "다각형 메쉬는 현대 3D 파이프라인의 표준 표면 표현이며, 고품질의 메쉬를 아티스트 스타일의 토폴로지로 생성하는 것은 영화, 게임 및 대화형 3D 응용프로그램에 대하여 필수적입니다. Meshy T2를 제안하는데, 이는 플로우 매칭을 기반으로 한 빠른 원시 메쉬 생성 프레임워크입니다. 중심에는 하나의 연속 잠재 토큰으로 메쉬를 인코딩하는 버텍스 세트 메쉬 VAE가 있으며, 이는 한 번의 통과로 정확한 지오메트리와 아티스트가 작성한 토폴로지를 보존합니다."
+    },
+    "summary": "1. Meshy T2는 플로우 매칭을 활용하여 빠르게 메쉬를 생성하며, 복잡한 형태와 토폴로지를 보존함.\n2. 이미지 및 메쉬 플로우를 이용하여 상호작용 가능한 속도로 메쉬를 생성하고, 얼마나 많은 버텍스를 요청하는지에 따라 효과적으로 면 수를 제어함.\n3. Meshy T2는 최신의 기하학적 정확도를 달성하며, 이미지에서 메쉬까지의 생성을 평균 6초 안에 완료함.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+    "abstract": "System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to the public or regulators, creating a serious trust and accountability gap in the wide deployment of AI systems. In this paper, we introduce Artificial Intelligence System Prompt Assurance (AISPA), a user-centric framework for systematically auditing system prompts in AI systems. AISPA examines specific parts of a system prompt and evaluates them along eight dimensions that matter to users. We then use this framework to review 3,249 instructions from system prompts in 88 commercial AI products, classifying each instruction as either protective (of users) or problematic. Our audit surfaces four core findings. First, system prompt design varies substantially across products and developers, with some organizations averaging over 60 protective instructions per product while others average fewer than 5. Second, protective instructions are widely adopted but shallow in scope: 98.9% of products contain at least one, yet only 24% cover all eight dimensions of the AISPA taxonomy. Third, system prompts have grown steadily longer and more protective of users, suggesting that user protection is becoming a more visible concern in commercial prompt design. Fourth, despite this progress, problematic instructions remain pervasive: roughly 40% of products contain at least one instruction that works against user interests, and protective and problematic instructions frequently coexist within the same prompt. Our findings highlight the need for greater transparency, standardization, and independent oversight for system prompts in commercial AI products.",
+    "authors": [
+      "Xiangning Lin",
+      "Shenzhe Zhu",
+      "Shu Yang",
+      "Zhenyu Zhang",
+      "Haoqian Zhang",
+      "Yipeng Zhao",
+      "Chengxuan Qian",
+      "Tianwei Wang",
+      "Ziheng Zhang",
+      "Zhenlong Yuan",
+      "Dingcheng Wang",
+      "Juncheng Wu",
+      "Yuan Si",
+      "Jiaxin Liu",
+      "Baolong Bi",
+      "Robert Mahari",
+      "Tobin South",
+      "Dazza Greenwood",
+      "Zexue He",
+      "Rishi Bommasani",
+      "Sophia Kazinnik",
+      "Andreas Haupt"
+    ],
+    "likes": 30,
+    "published_date": "Jul 30",
+    "url": "https://huggingface.co/papers/2607.28617",
+    "date_collected": "2026-08-04T08:10:32.274910+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "대형 언어 모델 응용 프로그램을 위한 사용자 중심 시스템 프롬프트 감사(AISPA)",
+      "abstract": "시스템 프롬프트는 AI 응용프로그램의 기본 모델 행동을 조절하기 위해 개발자가 설정하는 지침이다. 이 논문에서는 사용자 중심의 시스템 프롬프트를 체계적으로 감사하기 위한 AISPA(인공지능 시스템 프롬프트 보증)를 소개한다. AISPA는 사용자에게 중요한 여덟 가지 차원을 따라 시스템 프롬프트의 특정 부분을 조사하고 평가한다. 이를 통해 88개의 상용 AI 제품에서 3,249개의 시스템 프롬프트 지시 사항을 검토하고, 각 지시 사항을 사용자를 보호하는 것 또는 문제가 있는 것으로 분류한다."
+    },
+    "summary": "1. AISPA는 AI 시스템에서 시스템 프롬프트를 체계적으로 감사하는 사용자 중심 프레임워크를 소개한다.\n2. 상용 AI 제품의 시스템 프롬프트는 사용자를 보호하려는 노력이 있지만 한계가 있으며, 문제가 있는 지시 사항도 여전히 널리 존재한다.\n3. 향후 상용 AI 제품에서 시스템 프롬프트의 투명성, 표준화, 독립적 감사가 필요하다는 점을 강조한다.",
+    "categories": [
+      "LLM",
+      "AI(Prompt)"
+    ]
+  },
+  {
+    "title": "N_0-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation",
+    "abstract": "We present N_0-TWAM, a tactile-native world-action model for contact-rich manipulation that predicts both future vision and future contact. To our knowledge, it is the first tactile world-action model trained at large scale, and it shows strong capability on contact-rich tasks. We pre-train N_0-TWAM at large scale with visuo-tactile joint training over tactile-rich demonstrations spanning six embodiments and 450 tasks. We use NeoForce, a unified force-based tactile representation, to form a physically grounded contact signal that conditions action generation. To improve long-horizon and multi-stage manipulation, we introduce tactile contact events for task staging and advance through them during execution. For real-time efficiency, we adopt an asymmetric Mixture-of-Transformers architecture that pairs a full-width expert for video prediction with slim experts for downstream action and tactile prediction. Evaluations on both real and simulated benchmarks justify the capabilities of N_0-TWAM across a range of contact-rich tasks, and demonstrate the benefit of data scaling for precise tactile and action prediction. In summary, N_0-TWAM endows a world-action model with predictive capabilities to foresee vision, touch and action, building a solid foundation for fine-grained manipulation on open contact-rich tasks. The codebase and model checkpoints will be made publicly available to foster further research and development in tactile-enabled robotic manipulation.",
+    "authors": [
+      "NeoteAI Team",
+      "Fudan TEAI Team"
+    ],
+    "likes": 27,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2607.23783",
+    "date_collected": "2026-08-04T08:10:32.276939+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "N_0-TWAM: 접촉 기반 조작을 위한 첨감 기반 세계-동작 모델 확장",
+      "abstract": "N_0-TWAM은 미래 시각과 미래 접촉을 예측하는 접촉 기반 조작을 위한 첨감 기반 세계-동작 모델로, 접촉 풍부한 작업에서 강한 능력을 보입니다. 단일 규모로 훈련된 최초의 청감 세계-동작 모델로, NeoForce를 사용하여 물리적으로 근거 있는 접촉 신호를 형성하여 행동 생성을 조건으로 합니다."
+    },
+    "summary": "1. N_0-TWAM은 접촉 풍부한 작업에서 강력한 성능을 보이며, 미래 시각, 접촉, 행동을 예측할 수 있는 세계-동작 모델입니다.\n2. 모델은 대규모로 visuo-tactile 합동 훈련을 거쳐 최적화되며, 물리적으로 근거 있는 접촉 신호를 활용하여 행동 생성을 조건으로 합니다.\n3. N_0-TWAM은 실시간 효율성을 개선하기 위해 비대칭 Mixture-of-Transformers 아키텍처를 도입하며, 다양한 작업에서 정밀한 접촉 및 행동 예측을 위한 데이터 확장의 장점을 입증합니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Scaling Properties of Text Conditioning in Visual Generation",
+    "abstract": "We study empirical scaling properties for text conditioning in visual generation. Such properties have rarely been measured because diffusion loss does not scale with the number of tokens in natural-language prompts. Surprisingly, we find that the converged diffusion loss scales with the amount of structured language in the prompt. To quantify structured language, we adapt two complementary measures: a white-box likelihood metric (GPG) and a black-box attribute metric (ED). Across controlled training runs, the converged diffusion loss decreases approximately linearly with GPG and follows a power law with ED. Guided by these scaling properties, we improve diffusability by constructing structured prompts with semantic and geometric annotations derived from images, and improve promptability by training a prompter through supervised fine-tuning, cold-start, and verifier-gated on-policy distillation. The resulting system outperforms all evaluated open-weight models on nearly every compositional, reasoning, and world-knowledge benchmark, while matching or surpassing the strongest closed-weight models on most evaluations.",
+    "authors": [
+      "Zilong Chen",
+      "Chaorui Deng",
+      "Kunchang Li",
+      "Hongyi Yuan",
+      "Haoqi Fan"
+    ],
+    "likes": 23,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2607.29679",
+    "date_collected": "2026-08-04T08:10:32.278892+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "시각 생성에서의 텍스트 조건화의 스케일링 속성",
+      "abstract": "우리는 시각 생성에서의 텍스트 조건화의 경험적인 스케일링 속성을 연구합니다. 자연 언어 프롬프트의 토큰 수에 따라 확산 손실이 스케일되지 않아 이러한 속성이 드물게 측정되어왔습니다. 놀랍게도, 우리는 수렴된 확산 손실이 프롬프트의 구조화된 언어 양과 스케일되는 것을 발견합니다. 구조화된 언어를 정량화하기 위해 우리는 두 가지 보완적인 측정법을 적용합니다: 백박스 가능성 메트릭 (GPG)과 블랙박스 속성 메트릭 (ED). 제어된 훈련 실행에서, 수렴된 확산 손실은 GPG와 대략적으로 선형적으로 감소하며 ED와의 관계는 멱함수 법칙을 따릅니다. 이러한 스케일링 속성에 의해 우리는 이미지에서 유도된 의미적 및 기하적 주석이 있는 구조화된 프롬프트를 생성하여 확산성을 개선하고, 지도된 미세 조정, 콜드 스타트 및 검증자 게이트 온-정책 증류를 통해 프롬프터를 훈련하여 프롬포터 능력을 개선합니다. 결과적으로, 이 시스템은 거의 모든 구성, 추론 및 세계 지식 벤치마크에서 평가된 오픈 웨이트 모델보다 우수한 성능을 보이며 대부분의 평가에서 가장 강력한 폐쇄 웨이트 모델을 맞추거나 능가합니다."
+    },
+    "summary": "1. 자연어 프롬프트의 구조화된 언어 양에 따라 수렴된 확산 손실이 스케일링된다.\n2. 이미지에서 유도된 의미적 및 기하적 주석이 있는 구조화된 프롬프트를 사용하여 시스템 성능을 향상시킬 수 있다.\n3. 지도된 미세 조정 및 온-정책 증류를 통해 프롬프터를 훈련하면 거의 모든 벤치마크에서 우수한 성능을 얻을 수 있다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "SAF-OPD: Stable Advantage Fusion for On-Policy Distillation",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) broadcasts a single response-level reward to every token, while on-policy distillation (OPD) scores each token against a stronger teacher for a dense advantage but caps performance at teacher quality and discourages exploration beyond it. Their complementarity makes combining RLVR and OPD promising, but we find that fusing the two advantages with a fixed coefficient triggers entropy collapse from two miscalibrations: a magnitude mismatch, where token-level OPD advantages can spike far beyond the bounded RLVR advantage and erase its signal, and a temporal mismatch, where sustained full-strength OPD keeps pulling the student toward the teacher and limits exploration needed to surpass it. We propose SAF, a Stable Advantage Fusion framework that resolves both issues via a lightweight, four-stage pipeline applied only to the OPD advantage: a sparsify-then-compress mechanism for magnitude control paired with a warm-up-then-anneal mechanism for temporal control, with each stage independently switchable and adding negligible overhead. Instantiating RLVR with GRPO, we evaluate SAF across seven mathematical reasoning and code generation benchmarks with Qwen3-1.7B/4B/8B: SAF avoids entropy collapse and consistently outperforms fixed-coefficient GRPO+OPD fusion, improving the aggregate score by 0.51-2.70% across all six model-domain settings while achieving more stable training.",
+    "authors": [
+      "Yifan Ding",
+      "Xincheng Wei",
+      "Yoshua Y. Li",
+      "Ziheng Li",
+      "Yuquan Lu",
+      "Siyu Zhang",
+      "Dongsheng Ma",
+      "Rongxiang Weng",
+      "Xunliang Cai",
+      "Yun Chen"
+    ],
+    "likes": 23,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2607.29209",
+    "date_collected": "2026-08-04T08:10:32.281219+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "안정적 이점 퓨전을 위한 온-폴리시 증류 (Stable Advantage Fusion for On-Policy Distillation)",
+      "abstract": "확인 가능한 보상을 사용하는 강화 학습 (RLVR)은 각 토큰에 단일 응답 수준의 보상을 방송하는데 반해, 온-폴리시 증류 (OPD)는 각 토큰을 더 강한 선생님에 대해 평가하여 밀도 있는 이점을 제공하지만 막아서 선생님 품질로의 성능을 제한하고 그 이상을 탐구하지 않게 만든다. 이 두 기법의 보완성은 RLVR과 OPD를 결합하는 것이 유망해 보이지만, 둘의 이점을 고정 계수로 결합하면 두 가지 오류로 인해 엔트로피 붕괴가 발생한다: 토큰 수준 OPD 이점이 제한된 RLVR 이점을 크게 초과하여 신호를 지워버리는 크기 불일치, 지속적으로 완전 강한 OPD가 학생을 선생님 쪽으로 끌어당기며 그것을 넘어서기 위해 필요한 탐구를 제한하는 시간적 불일치가 발생한다. 우리는 SAF (Stable Advantage Fusion)라는 경량, 네 단계 파이프라인을 제안한다. 이는 오직 OPD 이점에만 적용되며 크기 제어를 위한 희박화-압축 메커니즘과 시간 제어를 위한 웜업-앤닐 메커니즘을 갖추며, 각 단계가 독립적으로 전환 가능하며 무시할 만한 추가 부하를 더한다. 우리는 GRPO를 사용하여 RLVR을 구현하며, Qwen3-1.7B/4B/8B를 통해 일곱 가지 수학적 근거 및 코드 생성 벤치마크를 평가한다: SAF는 엔트로피 붕괴를 피하며 모든 여섯 모델 영역 설정에서 AGPO+OPD 퓨전을 consistently outperform하여, 평균 점수를 0.51-2.70% 향상시키면서 더 안정적인 훈련을 달성한다."
+    },
+    "summary": "1. 강화 학습에서 확인 가능한 보상과 온-폴리시 증류를 결합하는 것은 유망한데, 고정 계수로 이점을 퓨전하면 엔트로피 붕괴가 발생한다.\n2. SAF (Stable Advantage Fusion) 프레임워크는 두 가지 불일치 문제 (크기 및 시간)를 해결하기 위한 경량 파이프라인을 제안한다.\n3. SAF는 엔트로피 붕괴를 피하고 AGPO+OPD 퓨전을 consistently outperform하여 안정적인 훈련과 성능 향상을 달성한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "QQWorld: Quantile-Quantile Matching for World Model Regularization",
+    "abstract": "Latent world models enable efficient planning by predicting future states in a compact representation space, but their performance depends critically on the quality of the learned latent distribution. LeWorldModel (LeWM) regularizes its latents toward an isotropic Gaussian using the Epps-Pulley (EP) objective. We show that the corrective gradients of EP rapidly vanish for isolated tail samples, leaving heavy-tailed deviations insufficiently controlled. To address this limitation, we propose QQWorld, which replaces EP with a quantile-quantile matching objective that directly aligns projected latent samples with rank-matched Gaussian quantiles, thereby maintaining effective corrective gradients in the tails. We further develop cross-batch QQ, which enlarges the effective ranking pool using detached samples from previous batches, and characterize its bias-variance trade-off. Across four control environments, QQWorld effectively improves the average planning success rate of LeWM, while consistently yielding better Gaussian alignment and thinner latent tails.",
+    "authors": [
+      "Zhoushun Yu",
+      "Xiaoyu Hu",
+      "Xiangyu Xu"
+    ],
+    "likes": 23,
+    "published_date": "Jul 30",
+    "url": "https://huggingface.co/papers/2607.28415",
+    "date_collected": "2026-08-04T08:10:32.283084+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "QQWorld: 세계 모델 정규화를 위한 분위수-분위수 매칭",
+      "abstract": "잠재 세계 모델은 미래 상태를 예측하여 효율적인 계획을 도와주지만, 학습된 잠재 분포의 품질에 매우 의존합니다. LeWorldModel (LeWM)은 Epps-Pulley (EP) 목적을 사용하여 잠재 분포를 등방성 가우시안으로 정규화합니다. 우리는 EP의 보정 기울기가 꼬리 샘플에서 빨리 사라지는 문제를 보여줍니다. 이에 대응하기 위해, 우리는 EP를 대체하는 QQWorld를 제안합니다. 이는 분위수-분위수 매칭 목적을 이용하여 투영된 잠재 샘플을 순위에 맞게 가우시안 분위수에 정렬함으로써 효과적인 보정 기울기를 유지합니다."
+    },
+    "summary": "1. LeWorldModel은 EP를 사용하여 잠재 분포 정규화하나, 꼬리 샘플에서 보정 기울기가 사라지는 문제를 QQWorld가 분위수-분위수 매칭 목적으로 개선.\n2. QQWorld은 이전 배치의 분리된 샘플을 사용하여 효과적인 순위 풀을 확장하고 편향-분산 교환을 특성화.\n3. 네 가지 제어 환경에서 QQWorld는 LeWM의 계획 성공률을 효과적으로 향상시키고, 더 나은 가우시안 정렬과 얇은 잠재 꼬리를 일관되게 보여줌.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Fewer Clarifications, Better Code: Benchmarking Cross-Session Personalized Ambiguity Adaptation in Coding Assistants",
+    "abstract": "AI-assisted coding increasingly translates informal user intent into executable software, yet coding requests often contain ambiguities that recur in user-specific ways across tasks and sessions. Existing disambiguation methods typically address each ambiguous request in isolation within the current coding session, often through eliciting additional clarification. However, whether resolved session history from the same user can serve as memory for resolving recurring personalized ambiguity in a newly opened session remains underexplored. We formulate personalized ambiguity adaptation as a new task: given a user's previously resolved coding sessions and a new ambiguous request, an assistant should identify the recurring ambiguity pattern, produce the intended executable solution, and minimize clarification. To benchmark this task, we introduce CAPA, which characterizes personalized coding ambiguity through six mechanisms and injects these mechanisms into unambiguous executable tasks using a controlled three-stage generation pipeline. CAPA contains 600 coding sessions across 60 balanced user--ambiguity cells, including 300 held-out evaluation sessions. We evaluate 12 recent LLMs under no-history and same-user-history conditions using executable success, first-turn success, and turns-to-completion. Our analyses examine task difficulty, user identity, and memory-based history use, and we further propose same-user history gating as a lightweight inference-time method. CAPA provides a foundation for developing long-term coding assistants that better align generated code with user intent while reducing repeated clarification.",
+    "authors": [
+      "Zijian Xu",
+      "Wenshuo Zhang",
+      "Zisen Qin",
+      "Rui Sheng",
+      "Yushi Sun",
+      "Huamin Qu",
+      "Chuhan Shi"
+    ],
+    "likes": 19,
+    "published_date": "Jul 29",
+    "url": "https://huggingface.co/papers/2607.26611",
+    "date_collected": "2026-08-04T08:10:32.285343+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "더 적은 명확화, 더 좋은 코드: 코딩 어시스턴트에서의 세션 간 맞춤형 모호성 적응력 평가",
+      "abstract": "AI를 활용한 코딩은 점점 비형식적인 사용자 의도를 실행 가능한 소프트웨어로 번역하고 있지만, 코딩 요청은 종종 다의성을 포함하며 이는 작업과 세션 간에 사용자별 반복되는 방식으로 발생한다. 기존의 다의성 해소 방법은 주로 현재 코딩 세션 내에서 각 모호한 요청을 개별적으로 다루며 추가 명확화를 유도하는 방식이다. 그러나 동일 사용자의 해결된 세션 기록이 새로 열린 세션에서 반복되는 맞춤형 모호성 해결의 메모리로 작용할 수 있는지는 미해결된 문제이다. 우리는 맞춤형 모호성 적응력을 새로운 과제로 정의한다. 사용자의 이전 해결된 코딩 세션과 새로운 모호한 요청이 주어졌을 때, 어시스턴트는 반복되는 모호성 패턴을 식별하고 의도된 실행 가능한 솔루션을 생성하며 명확화를 최소화해야 한다. 이 과제를 벤치마킹하기 위해 우리는 CAPA를 소개한다. CAPA는 개인화된 코딩 모호성을 여섯 가지 메커니즘을 통해 특성화하고 이러한 메커니즘을 제어된 세 단계 생성 파이프라인을 통해 모호하지 않은 실행 가능한 작업으로 주입한다. CAPA는 60개의 균형잡힌 사용자-모호성 셀을 포함하는 600개의 코딩 세션과 300개의 평가 세션을 포함하고 있다. 우리는 실행 가능한 성공, 첫 번째 성공, 완료까지 걸리는 턴 등에 대해 최근 12개의 LLM을 기록 없음 및 동일 사용자 기록 조건 하에 평가했다. 우리의 분석은 과제의 난이도, 사용자 신원, 그리고 기억 기반의 히스토리 사용을 살펴보며, 경량 추론 방법으로 동일 사용자 히스토리 게이팅을 제안한다. CAPA는 사용자 의도와 코드 일치를 더 잘하면서 반복적인 명확화를 줄이는 장기적인 코딩 어시스턴트 개발을 위한 기반을 제공한다."
+    },
+    "summary": "1. 코딩 어시스턴트가 사용자의 이전 코딩 세션 기록을 활용하여 새로운 세션에서 발생하는 반복되는 모호성을 해결하기 위한 방법론인 CAPA를 소개한다.\n2. CAPA는 600개의 코딩 세션과 300개의 평가 세션을 포함하며, 사용자-모호성 셀을 사용하여 이를 평가한다.\n3. 연구는 12개의 LLM을 평가하며, 실행 가능한 성공, 첫 번째 성공, 완료까지 걸리는 턴 등을 고찰하고 동일 사용자 히스토리 게이팅을 제안한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

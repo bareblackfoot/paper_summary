@@ -1,0 +1,299 @@
+[
+  {
+    "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
+    "abstract": "Video world models have shown immense potential in simulating the physical world, yet existing memory mechanisms primarily treat environments as static canvases. When dynamic subjects hide out of sight and later re-emerge, current methods often struggle, leading to frozen, distorted, or vanishing subjects. To address this, we introduce Hybrid Memory, a novel paradigm requiring models to simultaneously act as precise archivists for static backgrounds and vigilant trackers for dynamic subjects, ensuring motion continuity during out-of-view intervals. To facilitate research in this direction, we construct HM-World, the first large-scale video dataset dedicated to hybrid memory. It features 59K high-fidelity clips with decoupled camera and subject trajectories, encompassing 17 diverse scenes, 49 distinct subjects, and meticulously designed exit-entry events to rigorously evaluate hybrid coherence. Furthermore, we propose HyDRA, a specialized memory architecture that compresses memory into tokens and utilizes a spatiotemporal relevance-driven retrieval mechanism. By selectively attending to relevant motion cues, HyDRA effectively preserves the identity and motion of hidden subjects. Extensive experiments on HM-World demonstrate that our method significantly outperforms state-of-the-art approaches in both dynamic subject consistency and overall generation quality.",
+    "authors": [
+      "Kaijin Chen",
+      "Dingkang Liang",
+      "Xin Zhou",
+      "Yikang Ding",
+      "Xiaoqiang Liu",
+      "Pengfei Wan",
+      "Xiang Bai"
+    ],
+    "likes": 141,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25716",
+    "date_collected": "2026-04-01T07:17:36.844576+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "시야 밖, 그러나 마음속에: 동적 비디오 월드 모델을 위한 하이브리드 메모리",
+      "abstract": "비디오 월드 모델은 물리적 세계를 시뮬레이션하는 데 엄청난 잠재력을 보여주었지만, 기존의 메모리 메커니즘은 주로 환경을 정적 캔버스로 처리합니다. 동적 주체가 시야에서 사라지고 나중에 다시 나타날 때 현재 방법들은 종종 고전하며, 얼어붙거나 왜곡된 주체로 이어집니다. 이를 해결하기 위해 우리는 하이브리드 메모리를 소개합니다. 이는 모델이 정적 배경에 대해 정확한 기록가로 작용하고 동적 주체를 주의 깊게 추적하여 시야에서 벗어날 때 움직임 연속성을 보장합니다. 이 방향의 연구를 촉진하기 위해 하이브리드 메모리에 특화된 첫 번째 대규모 비디오 데이터셋인 HM-World를 구축했습니다. 이는 17가지 다양한 장면, 49가지 다른 주체를 포함하고 있으며 엄격한 하이브리드 일관성을 철저히 평가하기 위해 카메라와 주체의 궤적을 분리한 59,000개의 고품질 클립을 포함합니다. 더 나아가, 우리는 토큰으로 메모리를 압축하고 시공간 관련성 주도적 검색 메커니즘을 활용하는 특수 메모리 아키텍처인 HyDRA를 제안합니다. 관련 운동 단서에 선택적으로 주의를 기울이면, HyDRA는 숨겨진 주체의 정체성과 움직임을 효과적으로 보존합니다. HM-World에서의 광범위한 실험은 우리의 방법이 동적 주체 일관성과 전반적 생성 품질 모두에서 최첨단 접근법을 현격히 능가함을 보여줍니다."
+    },
+    "summary": "1. 기존 비디오 월드 모델의 한계를 해결하기 위해 하이브리드 메모리 도입\n2. HM-World 데이터셋과 HyDRA 메모리 아키텍처 소개\n3. 실험 결과, HyDRA가 동적 주체 일관성과 전반적 생성 품질 모두에서 우수한 성과를 보임",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling",
+    "abstract": "Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional architectures suffer from limited interactivity and high latency. We propose ShotStream, a novel causal multi-shot architecture that enables interactive storytelling and efficient on-the-fly frame generation. By reformulating the task as next-shot generation conditioned on historical context, ShotStream allows users to dynamically instruct ongoing narratives via streaming prompts. We achieve this by first fine-tuning a text-to-video model into a bidirectional next-shot generator, which is then distilled into a causal student via Distribution Matching Distillation. To overcome the challenges of inter-shot consistency and error accumulation inherent in autoregressive generation, we introduce two key innovations. First, a dual-cache memory mechanism preserves visual coherence: a global context cache retains conditional frames for inter-shot consistency, while a local context cache holds generated frames within the current shot for intra-shot consistency. And a RoPE discontinuity indicator is employed to explicitly distinguish the two caches to eliminate ambiguity. Second, to mitigate error accumulation, we propose a two-stage distillation strategy. This begins with intra-shot self-forcing conditioned on ground-truth historical shots and progressively extends to inter-shot self-forcing using self-generated histories, effectively bridging the train-test gap. Extensive experiments demonstrate that ShotStream generates coherent multi-shot videos with sub-second latency, achieving 16 FPS on a single GPU. It matches or exceeds the quality of slower bidirectional models, paving the way for real-time interactive storytelling. Training and inference code, as well as the models, are available on our",
+    "authors": [
+      "Yawen Luo",
+      "Xiaoyu Shi",
+      "Junhao Zhuang",
+      "Yutian Chen",
+      "Quande Liu",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Tianfan Xue"
+    ],
+    "likes": 128,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25746",
+    "date_collected": "2026-04-01T07:17:36.846227+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "ShotStream: 대화형 이야기 만들기를 위한 스트리밍 멀티샷 비디오 생성",
+      "abstract": "멀티샷 비디오 생성은 긴 이야기 생성에 중요하지만, 현재의 양방향 아키텍처는 상호작용이 제한되고 높은 대기 시간이 발생합니다. ShotStream은 대화형 이야기 만들기와 효율적인 즉석 프레임 생성을 가능케 하는 혁신적인 인과적 멀티샷 아키텍처로 제안됩니다. 이를 통해 사용자는 스트리밍 프롬프트를 통해 지속적인 이야기를 동적으로 조작할 수 있습니다."
+    },
+    "summary": "1. ShotStream은 다음 샷 생성을 역사적 맥락에 의존하는 것으로 재해석하여 사용자가 스트리밍 프롬프트를 통해 지속적인 이야기를 동적으로 지시할 수 있게 합니다.\n2. Dual-cache 메모리 메커니즘과 RoPE 불연속성 지표를 활용하여 시각 일관성을 유지하고 오류 누적을 완화하는 두 가지 혁신적인 기법을 도입합니다.\n3. ShotStream은 하위 초 시대의 지연 시간으로 일관성있는 멀티샷 비디오를 생성하며, 싱글 GPU에서 초당 16 FPS를 달성하여 느린 양방향 모델보다 빠른 실시간 대화형 이야기 만들기를 가능하게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "TAPS: Task Aware Proposal Distributions for Speculative Sampling",
+    "abstract": "Speculative decoding accelerates autoregressive generation by letting a lightweight draft model propose future tokens that a larger target model then verifies in parallel. In practice, however, draft models are usually trained on broad generic corpora, which leaves it unclear how much speculative decoding quality depends on the draft training distribution. We study this question with lightweight HASS and EAGLE-2 drafters trained on MathInstruct, ShareGPT, and mixed-data variants, evaluated on MT-Bench, GSM8K, MATH-500, and SVAMP. Measured by acceptance length, task-specific training yields clear specialization: MathInstruct-trained drafts are strongest on reasoning benchmarks, while ShareGPT-trained drafts are strongest on MT-Bench. Mixed-data training improves robustness, but larger mixtures do not dominate across decoding temperatures. We also study how to combine specialized drafters at inference time. Naive checkpoint averaging performs poorly, whereas confidence-based routing improves over single-domain drafts and merged-tree verification yields the highest acceptance length overall for both backbones. Finally, confidence is a more useful routing signal than entropy: rejected tokens tend to have higher entropy, but confidence produces much clearer benchmark-level routing decisions. These results show that speculative decoding quality depends not only on draft architecture, but also on the match between draft training data and downstream workload, and that specialized drafters are better combined at inference time than in weight space.",
+    "authors": [
+      "Mohamad Zbib",
+      "Mohamad Bazzi",
+      "Ammar Mohanna",
+      "Hasan Abed Al Kader Hammoud",
+      "Bernard Ghanem"
+    ],
+    "likes": 113,
+    "published_date": "Mar 27",
+    "url": "https://huggingface.co/papers/2603.27027",
+    "date_collected": "2026-04-01T07:17:36.847682+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "TAPS: Task Aware Proposal Distributions for Speculative Sampling",
+      "abstract": "명시적으로 미래 토큰을 제안하게 하는 가벼운 초안 모델을 사용해 자율 회귀 생성을 가속화하는 '추측 디코딩' 기법을 연구합니다. 연구에서는 초안 모델이 일반적인 데이터로 학습되는 것이 추측 디코딩의 품질에 미치는 영향을 알아봅니다. MathInstruct, ShareGPT, 혼합 데이터 등을 기반으로 한 가벼운 HASS와 EAGLE-2 초안 작성기를 MT-Bench, GSM8K, MATH-500, SVAMP에서 평가하고, 작업별 훈련은 분명한 특화성을 나타냅니다."
+    },
+    "summary": "1. 가벼운 초안 모델의 훈련 데이터와 추론 작업 간 일치가 추측 디코딩 품질에 영향을 줌을 밝힘.\n2. 특화된 초안 작성기의 결합은 특화되지 않은 것보다 추측 디코딩의 품질을 높일 수 있음.\n3. 신뢰도기반 라우팅이 단일 도메인 초안 작성기보다 더 높은 품질을 제공함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Towards a Medical AI Scientist",
+    "abstract": "Autonomous systems that generate scientific hypotheses, conduct experiments, and draft manuscripts have recently emerged as a promising paradigm for accelerating discovery. However, existing AI Scientists remain largely domain-agnostic, limiting their applicability to clinical medicine, where research is required to be grounded in medical evidence with specialized data modalities. In this work, we introduce Medical AI Scientist, the first autonomous research framework tailored to clinical autonomous research. It enables clinically grounded ideation by transforming extensively surveyed literature into actionable evidence through clinician-engineer co-reasoning mechanism, which improves the traceability of generated research ideas. It further facilitates evidence-grounded manuscript drafting guided by structured medical compositional conventions and ethical policies. The framework operates under 3 research modes, namely paper-based reproduction, literature-inspired innovation, and task-driven exploration, each corresponding to a distinct level of automated scientific inquiry with progressively increasing autonomy. Comprehensive evaluations by both large language models and human experts demonstrate that the ideas generated by the Medical AI Scientist are of substantially higher quality than those produced by commercial LLMs across 171 cases, 19 clinical tasks, and 6 data modalities. Meanwhile, our system achieves strong alignment between the proposed method and its implementation, while also demonstrating significantly higher success rates in executable experiments. Double-blind evaluations by human experts and the Stanford Agentic Reviewer suggest that the generated manuscripts approach MICCAI-level quality, while consistently surpassing those from ISBI and BIBM. The proposed Medical AI Scientist highlights the potential of leveraging AI for autonomous scientific discovery in healthcare.",
+    "authors": [
+      "Hongtao Wu",
+      "Boyun Zheng",
+      "Dingjie Song",
+      "Yu Jiang",
+      "Jianfeng Gao",
+      "Lei Xing",
+      "Lichao Sun",
+      "Yixuan Yuan"
+    ],
+    "likes": 63,
+    "published_date": "Mar 30",
+    "url": "https://huggingface.co/papers/2603.28589",
+    "date_collected": "2026-04-01T07:17:36.849286+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "메디컬 AI 과학자를 향하여",
+      "abstract": "최근에 제안된 자율 시스템은 과학적 가설을 생성하고 실험을 실시하며 원고를 작성하는 새로운 패러다임으로 빠르게 발전해왔습니다. 그러나 기존의 AI 과학자는 주로 도메인에 중립적이며, 특수한 데이터 양식이 필요한 임상 의학에는 적용 범위가 제한됩니다. 본 논문에서는 임상 자율 연구에 맞춘 최초의 자율 연구 프레임워크인 메디컬 AI 과학자를 소개합니다. 이 프레임워크는 의료 증거에 기반을 둔 의학적 사고를 가능하게 하는 진료자-엔지니어 공동 추론 메커니즘을 통해 체계적으로 조사된 문헌을 실행 가능한 증거로 변환합니다. 이는 생성된 연구 아이디어의 추적 가능성을 향상시킵니다. 또한, 구조화된 의학적 작품 규칙과 윤리 정책에 따라 증거에 기반한 원고 작성을 용이하게 합니다. 프레임워크는 논문 기반 재현, 문헌 영감에 바탕을 둔 혁신, 그리고 과제 주도적 탐구의 3가지 연구 모드에서 작동하며, 각각이 점진적으로 증가하는 자동화된 과학적 조사 수준에 해당합니다. 대형 언어 모델과 인간 전문가에 의한 포괄적인 평가 결과, 메디컬 AI 과학자에 의해 생성된 아이디어는 171가지 경우, 19가지 임상 과제, 6가지 데이터 양식에 걸쳐 상용 LLM보다 훨씬 더 높은 품질임을 보여줍니다. 한편, 본 시스템은 제안된 방법과 구현 사이의 강력한 일치를 달성하며 실행 가능한 실험에서 상당히 높은 성공률을 보입니다. 인간 전문가들에 의한 이중 블라인드 평가 및 Stanford Agentic Reviewer에 의하면 생성된 원고는 MICCAI 수준의 품질에 도달하고, ISBI 및 BIBM에서 제공되는 것을 일관되게 능가합니다. 제안된 메디컬 AI 과학자는 건강 관리 분야에서 자율적인 과학적 탐구를 위해 AI를 활용하는 잠재력을 강조합니다."
+    },
+    "summary": "1. 메디컬 AI 과학자는 임상 의학에 특화된 자율적인 연구 프레임워크로, 진료자-엔지니어 공동 추론을 통해 의학적 증거를 활용하여 실행 가능한 연구 아이디어를 제공합니다.\n2. 세 가지 연구 모드를 통해 논문 기반 재현, 문헌 영감에 바탕을 둔 혁신, 과제 주도적 탐구를 실시하며, 상용 LLM 대비 더 높은 품질의 아이디어를 제공하며 성공률도 높습니다.\n3. 인간 전문가와 Stanford Agentic Reviewer에 의한 평가 결과, 메디컬 AI 과학자로 생성된 원고는 MICCAI 수준의 품질에 근접하며 다른 원고들을 일관되게 능가함을 입증하였습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
+    "abstract": "Recent image generation models have shown strong capabilities in generating high-fidelity and photorealistic images. However, they are fundamentally constrained by frozen internal knowledge, thus often failing on real-world scenarios that are knowledge-intensive or require up-to-date information. In this paper, we present Gen-Searcher, as the first attempt to train a search-augmented image generation agent, which performs multi-hop reasoning and search to collect the textual knowledge and reference images needed for grounded generation. To achieve this, we construct a tailored data pipeline and curate two high-quality datasets, Gen-Searcher-SFT-10k and Gen-Searcher-RL-6k, containing diverse search-intensive prompts and corresponding ground-truth synthesis images. We further introduce KnowGen, a comprehensive benchmark that explicitly requires search-grounded external knowledge for image generation and evaluates models from multiple dimensions. Based on these resources, we train Gen-Searcher with SFT followed by agentic reinforcement learning with dual reward feedback, which combines text-based and image-based rewards to provide more stable and informative learning signals for GRPO training. Experiments show that Gen-Searcher brings substantial gains, improving Qwen-Image by around 16 points on KnowGen and 15 points on WISE. We hope this work can serve as an open foundation for search agents in image generation, and we fully open-source our data, models, and code.",
+    "authors": [
+      "Kaituo Feng",
+      "Manyuan Zhang",
+      "Shuang Chen",
+      "Yunlong Lin",
+      "Kaixuan Fan",
+      "Yilei Jiang",
+      "Hongyu Li",
+      "Dian Zheng",
+      "Chenyang Wang",
+      "Xiangyu Yue"
+    ],
+    "likes": 43,
+    "published_date": "Mar 30",
+    "url": "https://huggingface.co/papers/2603.28767",
+    "date_collected": "2026-04-01T07:17:36.850953+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "이미지 생성을 위한 에이전트 검색 강화 (Gen-Searcher: Reinforcing Agentic Search for Image Generation)",
+      "abstract": "최근 이미지 생성 모델은 고품질 및 사실적인 이미지를 생성하는 강력한 능력을 보여주었습니다. 그러나 이러한 모델들은 동결된 내부 지식에 기반을 두고 있어, 실제 지식이 많이 필요하거나 최신 정보가 필요한 현실 세계 상황에서 종종 실패합니다. 본 논문에서는 텍스트 기반 지식과 참조 이미지를 수집하기 위해 다중 단계 추론 및 검색을 수행하는 최초의 검색 보충 이미지 생성 에이전트인 Gen-Searcher를 제안합니다. 이를 위해 검색을 많이 필요로 하는 프롬프트와 해당 신뢰할 수 있는 합성 이미지를 포함하는 Gen-Searcher-SFT-10k 및 Gen-Searcher-RL-6k라는 두 가지 높은 품질의 데이터셋을 구축하였습니다. 또한 이미지 생성을 위해 외부 지식을 검색 기반으로 요구하는 종합적인 평가 척도인 KnowGen을 소개하고 다양한 차원에서 모델을 평가합니다. 이러한 자원을 기반으로 SFT로 훈련을 진행하고, 이후 이중 보상 피드백을 통한 에이전트 강화 학습으로 Gen-Searcher를 훈련합니다. 실험 결과, Gen-Searcher는 KnowGen에서 Qwen-Image를 약 16 포인트, WISE에서 약 15 포인트 향상시켰습니다. 본 연구가 이미지 생성에 있어 검색 에이전트의 기초 역할을 할 수 있고, 우리는 데이터, 모델 및 코드를 완전히 오픈 소스로 제공합니다."
+    },
+    "summary": "1. 최근 이미지 생성 모델은 실제 지식이 필요한 상황에서 실패할 수 있는 동결된 내부 지식에 제약을 받고 있음.\n2. Gen-Searcher는 다중 단계 추론 및 검색을 통해 텍스트 기반 지식과 참조 이미지를 수집하는 검색 보충 이미지 생성 에이전트로, 높은 품질의 데이터셋과 종합적인 평가 척도를 활용하여 훈련됨.\n3. Gen-Searcher는 이중 보상 피드백을 토대로 안정적이고 정보 전달력 있는 학습 신호를 제공하여 이미지 생성에서 상당한 향상을 이루었음.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference",
+    "abstract": "Autoregressive video diffusion models have demonstrated remarkable progress, yet they remain bottlenecked by intractable linear KV-cache growth, temporal repetition, and compounding errors during long-video generation. To address these challenges, we present PackForcing, a unified framework that efficiently manages the generation history through a novel three-partition KV-cache strategy. Specifically, we categorize the historical context into three distinct types: (1) Sink tokens, which preserve early anchor frames at full resolution to maintain global semantics; (2) Mid tokens, which achieve a massive spatiotemporal compression (32x token reduction) via a dual-branch network fusing progressive 3D convolutions with low-resolution VAE re-encoding; and (3) Recent tokens, kept at full resolution to ensure local temporal coherence. To strictly bound the memory footprint without sacrificing quality, we introduce a dynamic top-k context selection mechanism for the mid tokens, coupled with a continuous Temporal RoPE Adjustment that seamlessly re-aligns position gaps caused by dropped tokens with negligible overhead. Empowered by this principled hierarchical context compression, PackForcing can generate coherent 2-minute, 832x480 videos at 16 FPS on a single H200 GPU. It achieves a bounded KV cache of just 4 GB and enables a remarkable 24x temporal extrapolation (5s to 120s), operating effectively either zero-shot or trained on merely 5-second clips. Extensive results on VBench demonstrate state-of-the-art temporal consistency (26.07) and dynamic degree (56.25), proving that short-video supervision is sufficient for high-quality, long-video synthesis. https://github.com/ShandaAI/PackForcing",
+    "authors": [
+      "Xiaofeng Mao",
+      "Shaohao Rui",
+      "Kaining Ying",
+      "Bo Zheng",
+      "Chuanhao Li",
+      "Mingmin Chi",
+      "Kaipeng Zhang"
+    ],
+    "likes": 42,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25730",
+    "date_collected": "2026-04-01T07:17:36.852603+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "PackForcing: 짧은 비디오 교육은 긴 비디오 샘플링과 긴 문맥 추론에 충분하다",
+      "abstract": "자기 회귀 비디오 확산 모델은 놀랍도록 발전을 이루었지만, 매우 긴 영상 생성 중에 불가리한 선형 KV-캐시 증가, 시간적 반복, 및 누적 오류로 인한 병목 현상을 겪고 있다. 이러한 도전에 대처하기 위해, 우리는 PackForcing을 제안한다. 이는 새로운 세 분할 KV-캐시 전략을 통해 영상 생성 이력을 효율적으로 관리하는 통합 프레임워크이다. 구체적으로, 우리는 역사적 문맥을 세 가지 유형으로 분류한다: (1) Sink 토큰, (2) Mid 토큰, (3) Recent 토큰. PackForcing은 단일 H200 GPU에서 16 FPS로 2분 길이, 832x480 해상도의 일관된 비디오를 생성할 수 있다. 이는 단지 4 GB의 한정된 KV 캐시를 달성하며 놀라운 24배의 시간 외삽(5초에서 120초)을 가능케 한다. 짧은 비디오 지도만으로도 고품질의 긴 비디오 합성이 충분함을 입증하였다."
+    },
+    "summary": "1. PackForcing은 세 분할 KV-캐시 전략을 통해 관련 문맥을 효율적으로 다룬다.\n2. 중요한 위치 정보를 보존하는 Sink 토큰, 공간적 및 시간적 압축을 달성하는 Mid 토큰, 그리고 지역적 시간 일관성을 보장하는 Recent 토큰으로 구성된다.\n3. PackForcing은 단 한 번의 학습으로 5초의 비디오 클립을 가지고도 뛰어난 긴 비디오 합성 성과를 보인다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Emergent Social Intelligence Risks in Generative Multi-Agent Systems",
+    "abstract": "Multi-agent systems composed of large generative models are rapidly moving from laboratory prototypes to real-world deployments, where they jointly plan, negotiate, and allocate shared resources to solve complex tasks. While such systems promise unprecedented scalability and autonomy, their collective interaction also gives rise to failure modes that cannot be reduced to individual agents. Understanding these emergent risks is therefore critical. Here, we present a pioneer study of such emergent multi-agent risk in workflows that involve competition over shared resources (e.g., computing resources or market share), sequential handoff collaboration (where downstream agents see only predecessor outputs), collective decision aggregation, and others. Across these settings, we observe that such group behaviors arise frequently across repeated trials and a wide range of interaction conditions, rather than as rare or pathological cases. In particular, phenomena such as collusion-like coordination and conformity emerge with non-trivial frequency under realistic resource constraints, communication protocols, and role assignments, mirroring well-known pathologies in human societies despite no explicit instruction. Moreover, these risks cannot be prevented by existing agent-level safeguards alone. These findings expose the dark side of intelligent multi-agent systems: a social intelligence risk where agent collectives, despite no instruction to do so, spontaneously reproduce familiar failure patterns from human societies.",
+    "authors": [
+      "Yue Huang",
+      "Yu Jiang",
+      "Wenjie Wang",
+      "Haomin Zhuang",
+      "Xiaonan Luo",
+      "Yuchen Ma",
+      "Zhangchen Xu",
+      "Zichen Chen",
+      "Nuno Moniz",
+      "Zinan Lin",
+      "Pin-Yu Chen",
+      "Nitesh V Chawla",
+      "Nouha Dziri",
+      "Huan Sun",
+      "Xiangliang Zhang"
+    ],
+    "likes": 41,
+    "published_date": "Mar 29",
+    "url": "https://huggingface.co/papers/2603.27771",
+    "date_collected": "2026-04-01T07:17:36.854601+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "생성형 다중 에이전트 시스템에서 비상 시 사회적 지능 리스크",
+      "abstract": "대규모 생성 모델로 이뤄진 다중 에이전트 시스템은 실험실 프로토타입에서 현실 세계 적용으로 신속히 진화하고 있으며, 이들은 복잡한 작업 해결을 위해 공동으로 계획을 세우고 협상하며 공유 자원을 할당한다. 이러한 시스템은 전례 없는 확장성과 자율성을 약속하지만, 그들의 집단적 상호작용은 개별 에이전트로 축소할 수 없는 실패 모드를 일으킨다. 이러한 비상 리스크를 이해하는 것이 중요하다. 본 논문에서는 공유 자원 경쟁(예: 컴퓨팅 자원 또는 시장 점유율) 또는 순차적 협력 협상(하류 에이전트가 이전 에이전트의 출력만 보게 됨) 등의 작업 흐름에서 이러한 비상 다중 에이전트 리스크를 탐구하는 선구적인 연구를 제시한다. 이러한 설정에서 우리는 그룹 행동이 반복된 시행에서 자주 발생하며 다양한 상호작용 조건에서 드물거나 병적인 경우가 아니라는 것을 관찰한다. 특히, 현실적인 자원 제약, 통신 프로토콜 및 역할 할당 아래서 결합된 현상들이 비겁상의 치매 및 순응 등의 현상이 발생하며, 인간 사회에서 잘 알려진 병적 상황을 반영하는 것을 나타낸다. 더우기, 이러한 리스크는 기존 에이전트 수준의 안전장치만으로 방지될 수 없음을 보여준다. 이러한 결과는 지능형 다중 에이전트 시스템의 어두운 면을 드러낸다: 에이전트 집단이 인간 사회로부터 익숙한 실패 패턴을 자발적으로 재생산하는 사회적 지능 리스크."
+    },
+    "summary": "1. 다중 생성 에이전트 시스템은 새로운 비상 상호작용 리스크를 내포하며, 개별 에이전트 수준에서 감시할 수 없는 그룹 행동이 자주 발생한다.\n2. 공유 자원 경쟁, 순차적 협력 협상 등의 작업에서 그룹 행동은 드문 경우가 아니라 반복된 시행에서 일어나며, 인간 사회의 경로를 따르는 경향이 있다.\n3. 기존 에이전트 수준의 안전장치만으로 이러한 사회적 지능 리스크를 방지할 수 없음을 확인하며, 에이전트 집단이 사회적 실패 패턴을 자발적으로 재생산하는 어두운 면을 드러냄.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills",
+    "abstract": "Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling complex tasks. Yet, manual authoring creates a severe scalability bottleneck. Conversely, automated skill generation often yields fragile or fragmented results because it either relies on shallow parametric knowledge or sequentially overfits to non-generalizable trajectory-local lessons. To overcome this, we introduce Trace2Skill, a framework that mirrors how human experts author skills: by holistically analyzing broad execution experience before distilling it into a single, comprehensive guide. Instead of reacting sequentially to individual trajectories, Trace2Skill dispatches a parallel fleet of sub-agents to analyze a diverse pool of executions. It extracts trajectory-specific lessons and hierarchically consolidates them into a unified, conflict-free skill directory via inductive reasoning. Trace2Skill supports both deepening existing human-written skills and creating new ones from scratch. Experiments in challenging domains, such as spreadsheet, VisionQA and math reasoning, show that Trace2Skill significantly improves upon strong baselines, including Anthropic's official xlsx skills. Crucially, this trajectory-grounded evolution does not merely memorize task instances or model-specific quirks: evolved skills transfer across LLM scales and generalize to OOD settings. For example, skills evolved by Qwen3.5-35B on its own trajectories improved a Qwen3.5-122B agent by up to 57.65 absolute percentage points on WikiTableQuestions. Ultimately, our results demonstrate that complex agent experience can be packaged into highly transferable, declarative skills -- requiring no parameter updates, no external retrieval modules, and utilizing open-source models as small as 35B parameters.",
+    "authors": [
+      "Jingwei Ni",
+      "Yihao Liu",
+      "Xinpeng Liu",
+      "Yutao Sun",
+      "Mengyu Zhou",
+      "Pengyu Cheng",
+      "Dexin Wang",
+      "Xiaoxi Jiang",
+      "Guanjun Jiang"
+    ],
+    "likes": 40,
+    "published_date": "Mar 26",
+    "url": "https://huggingface.co/papers/2603.25158",
+    "date_collected": "2026-04-01T07:17:36.856256+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "Trace2Skill: Trajectory-Local Lessons를 전이 가능한 에이전트 스킬로 압축(Transferable Agent Skills)",
+      "abstract": "대규모 언어모델(LLM) 에이전트에 특정 도메인 스킬 부여는 복잡한 작업에 대처하는 데 중요합니다. 그러나 수동 저작은 심각한 확장성 병목 현상을 유발합니다. 이와는 달리, 자동 스킬 생성은 흔히 얕은 매개지식에 의존하거나 비일반화 가능한 궤적-지역적 교훈에 순차적으로 과적합하기 때문에 부서지거나 조각난 결과물을 얻을 때가 많습니다. 이를 극복하기 위해 우리는 Trace2Skill을 소개합니다. 이는 인간 전문가가 스킬을 저술하는 방식을 모방하는 프레임워크입니다: 광범위한 실행 경험을 종합적으로 분석한 후에 이를 하나의 포괄적인 안내로 압축합니다. Trace2Skill은 개별 궤적에 순차적으로 반응하는 대신 다양한 실행 집합을 분석하기 위해 병렬 하위 에이전트 집단을 보냅니다. 이는 궤적에 특화된 교훈을 추출하고 귀납적 추론을 통해 이를 일치하는, 갈등 없는 스킬 디렉토리로 계층적으로 통합합니다. Trace2Skill은 기존의 인간이 작성한 스킬을 보강하고 0부터 새로운 스킬을 만드는 데 모두 지원합니다. 스프레드시트, VisionQA, 수학 추론 등 어려운 도메인에서의 실험 결과는 Trace2Skill이 Anthropic의 공식 xlsx 스킬을 비롯한 강력한 베이스라인에 비해 크게 향상되는 것을 보여줍니다. 이 궤적 중심적 진화는 과업 사례나 특정 모델 특이성을 단순히 기억하는 것이 아닙니다: 진화된 스킬은 LLM 스케일 간에 이전되고 OOD 설정으로 일반화됩니다. 예를 들어, Qwen3.5-35B에 의해 진화된 스킬은 WikiTableQuestions에서 Qwen3.5-122B 에이전트를 최대 57.65 절대 백분율포인트로 향상시켰습니다. 최종적으로, 우리 결과는 복잡한 에이전트 경험이 35B 매개변수 크기의 오픈 소스 모델을 활용하며 매개변수 업데이트 또는 외부 검색 모듈 없이도 매우 전이 가능한 선언적 스킬로 패키징할 수 있음을 보여줍니다."
+    },
+    "summary": "1. Trace2Skill은 다양한 실행 경험을 분석하고 궤적-지역적 교훈을 사용해 스킬 디렉토리를 구축하여 복잡한 작업에 대처하는데 큰 진전을 가져왔습니다.\n2. 이 프레임워크는 기존의 스킬을 확장하거나 새로운 스킬을 개발하는 데 도움을 줄 뿐만 아니라, 여러 도메인에서 실험을 통해 강력한 결과를 확인하였습니다.\n3. Trace2Skill은 매개변수 업데이트나 외부 검색 모듈 없이도 뛰어난 전이 가능한 선언적 스킬을 생성하는 것으로 판명되었습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "EpochX: Building the Infrastructure for an Emergent Agent Civilization",
+    "abstract": "General-purpose technologies reshape economies less by improving individual tools than by enabling new ways to organize production and coordination. We believe AI agents are approaching a similar inflection point: as foundation models make broad task execution and tool use increasingly accessible, the binding constraint shifts from raw capability to how work is delegated, verified, and rewarded at scale. We introduce EpochX, a credits-native marketplace infrastructure for human-agent production networks. EpochX treats humans and agents as peer participants who can post tasks or claim them. Claimed tasks can be decomposed into subtasks and executed through an explicit delivery workflow with verification and acceptance. Crucially, EpochX is designed so that each completed transaction can produce reusable ecosystem assets, including skills, workflows, execution traces, and distilled experience. These assets are stored with explicit dependency structure, enabling retrieval, composition, and cumulative improvement over time. EpochX also introduces a native credit mechanism to make participation economically viable under real compute costs. Credits lock task bounties, budget delegation, settle rewards upon acceptance, and compensate creators when verified assets are reused. By formalizing the end-to-end transaction model together with its asset and incentive layers, EpochX reframes agentic AI as an organizational design problem: building infrastructures where verifiable work leaves persistent, reusable artifacts, and where value flows support durable human-agent collaboration.",
+    "authors": [
+      "Huacan Wang",
+      "Chaofa Yuan",
+      "Xialie Zhuang",
+      "Tu Hu",
+      "Shuo Zhang",
+      "Jun Han",
+      "Shi Wei",
+      "Daiqiang Li",
+      "Jingping Liu",
+      "Kunyi Wang",
+      "Zihan Yin",
+      "Zhenheng Tang",
+      "Andy Wang",
+      "Henry Peng Zou",
+      "Philip S. Yu",
+      "Sen Hu",
+      "Qizhen Lan",
+      "Ronghao Chen"
+    ],
+    "likes": 39,
+    "published_date": "Mar 28",
+    "url": "https://huggingface.co/papers/2603.27304",
+    "date_collected": "2026-04-01T07:17:36.859132+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "EpochX: 신흥 에이전트 문명을 위한 인프라 구축",
+      "abstract": "일반 목적 기술은 생산과 조정 방식을 변화시켜 경제를 재구성하는 데에 있어 개별 도구의 개선보다는 새로운 생산 및 조정 방법을 가능하게 함으로써 더 크게 작용한다. 우리는 AI 에이전트가 유사한 전환점에 다가오고 있다고 믿습니다: 토대 모델들이 다양한 작업 실행과 도구 사용을 점차적으로 접근 가능하게 함에 따라 바인딩 제약이 원시 능력에서 규모에 걸친 작업 위임, 검증 및 보상 방식으로 이동된다. 우리는 인간-에이전트 생산 네트워크를 위한 크레딧 네이티브 마켓플레이스 인프라인 EpochX를 소개합니다. EpochX는 인간과 에이전트를 등등한 참여자로 취급하며 작업을 게시하거나 제안할 수 있는 시스템입니다. 제안된 작업은 하위 작업으로 분해되고 명시적인 전달 워크플로우를 통해 검증 및 수락이 이루어지는 과정을 거칩니다. 결정적으로, EpochX는 각 완료된 거래별로 재사용 가능한 생태계 자산들을 생성할 수 있도록 설계되었습니다. 이러한 자산에는 기술, 워크플로우, 실행 추적 및 요약된 경험을 포함하며 명시적인 종속 구조로 저장되어 시간이 흐름에 따라 검색, 구성 및 누적 개선이 가능합니다. EpochX는 또한 참여를 실질적으로 가능하게 하는 네이티브 크레딧 메커니즘을 도입합니다. 크레딧은 작업 보상을 잠그고 예산 위임, 수락 시 보상 정산 및 검증된 자산 재사용 시 창조자 보상을 지원합니다. 각 단계의 거래 모델과 그 자산 및 인센티브 레이어를 공식화함으로써, EpochX는 에이전트 AI를 조직 설계 문제로 다시평가합니다: 검증 가능한 작업이 지속적이고 재사용 가능한 아티팩트를 남기는 인프라를 구축하고 가치 흐름이 견고한 인간-에이전트 협력을 지원하는 방식입니다."
+    },
+    "summary": "1. 인프라 구축을 통해 에이전트 AI를 조직 설계 문제로 다시 평가하며, 검증 가능한 작업이 지속적이고 재사용 가능한 아티팩트를 생산하는 EpochX 소개\n2. 인간과 에이전트를 동등한 참여자로 취급하여 작업을 게시하거나 제안할 수 있으며, 완료된 거래마다 재사용 가능한 자산을 생성하여 시간이 지남에 따라 누적 개선 가능\n3. 네이티브 크레딧 메커니즘을 도입하여 참여를 경제적으로 지원하고, 작업 보상, 예산 위임, 보상 정산, 자산 재사용 시 창조자 보상을 가능케 하는 EpochX의 핵심 기능 소개",
+    "categories": [
+      "LLM",
+      "AI",
+      "Other"
+    ]
+  },
+  {
+    "title": "On Token's Dilemma: Dynamic MoE with Drift-Aware Token Assignment for Continual Learning of Large Vision Language Models",
+    "abstract": "Multimodal Continual Instruction Tuning aims to continually enhance Large Vision Language Models (LVLMs) by learning from new data without forgetting previously acquired knowledge. Mixture of Experts (MoE) architectures naturally facilitate this by incrementally adding new experts and expanding routers while keeping the existing ones frozen. However, despite expert isolation, MoE-based continual learners still suffer from forgetting due to routing-drift: old-task tokens become mistakenly attracted to newly added experts, degrading performance on prior tasks. We analyze the failure mode at the token level and reveal the token's dilemma: ambiguous and old tokens in new-task data offer minimal learning benefit yet induce forgetting when routed to new experts, due to their ambiguous routing assignment during training. Motivated by this, we propose LLaVA-DyMoE, a dynamic MoE framework that incrementally expands the MoE with drift-aware token assignment. We characterize token types via their routing score distributions and apply targeted regularization. Specifically, a token-level assignment guidance steers ambiguous and old tokens away from new experts to preserve established routing patterns and alleviate routing-drift, while complementary routing score regularizations enforce expert-group separation and promote new-expert specialization. Extensive experiments demonstrate that our LLaVA-DyMoE effectively mitigates routing-drift-induced forgetting, achieving over a 7% gain in mean final accuracy and a 12% reduction in forgetting compared to baselines. The project page is https://zhaoc5.github.io/DyMoE.",
+    "authors": [
+      "Chongyang Zhao",
+      "Mingsong Li",
+      "Haodong Lu",
+      "Dong Gong"
+    ],
+    "likes": 27,
+    "published_date": "Mar 29",
+    "url": "https://huggingface.co/papers/2603.27481",
+    "date_collected": "2026-04-01T07:17:36.860601+09:00",
+    "week": "2026-W14",
+    "translation": {
+      "title": "토큰의 딜레마: 드리프트 인식 토큰 할당과 함께하는 동적 MoE를 통한 대규모 비전 언어 모델의 계속적 학습",
+      "abstract": "다중 모달 계속적 학습 튜닝은 새로운 데이터로부터 학습하면서 이전에 습득한 지식을 잊지 않고 비전 언어 모델을 지속적으로 개선하는 것을 목표로 합니다. 그러나 Mixture of Experts (MoE) 아키텍처는 라우팅 드리프트로 인해 지식을 잊는 문제가 있습니다. 우리는 이 문제를 해결하기 위해 동적 MoE 프레임워크 LLaVA-DyMoE를 제안합니다."
+    },
+    "summary": "1. 새로운 데이터로의 학습 시, 토큰의 모호성과 오래된 토큰이 새로운 전문가로 잘못 라우팅되어 지식 소실을 야기하는 토큰의 딜레마를 분석하였습니다.\n2. LLaVA-DyMoE는 라우팅 드리프트를 감소시키기 위해 토큰 유형을 구분하여 새로운 전문가로 잘못 라우팅되는 토큰을 방지하고 새로운 전문가의 특화를 증진합니다.\n3. 실험 결과, LLaVA-DyMoE는 라우팅 드리프트로 인한 지식 소실을 효과적으로 완화시켜 기존 방법에 비해 평균 최종 정확도에서 7% 이상 향상 및 지식 소실에서 12% 감소를 달성하였습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+=== Paper Collection Started at Mon Nov  3 22:08:07 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W45
+URL: https://huggingface.co/papers/week/2025-W45
+Found 10 papers in weekly view
+Fetching likes for: OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows
+Fetching likes for: ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning
+Fetching likes for: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats
+Fetching likes for: π_RL: Online RL Fine-tuning for Flow-based
+  Vision-Language-Action Models
+Fetching likes for: Continuous Autoregressive Language Models
+Fetching likes for: Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised
+  Reinforcement Learning
+Fetching likes for: HyperClick: Advancing Reliable GUI Grounding via Uncertainty Calibration
+Fetching likes for: Defeating the Training-Inference Mismatch via FP16
+Fetching likes for: Phased DMD: Few-step Distribution Matching Distillation via Score
+  Matching within Subintervals
+Fetching likes for: Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive
+  Trigger Learning
+Selected top 10 papers by likes:
+1. OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows (59 likes)
+2. ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning (54 likes)
+3. INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats (46 likes)
+4. π_RL: Online RL Fine-tuning for Flow-based
+  Vision-Language-Action Models (38 likes)
+5. Continuous Autoregressive Language Models (27 likes)
+6. Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised
+  Reinforcement Learning (19 likes)
+7. HyperClick: Advancing Reliable GUI Grounding via Uncertainty Calibration (15 likes)
+8. Defeating the Training-Inference Mismatch via FP16 (15 likes)
+9. Phased DMD: Few-step Distribution Matching Distillation via Score
+  Matching within Subintervals (14 likes)
+10. Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive
+  Trigger Learning (7 likes)
+Found abstract: Computer-using agents powered by Vision-Language Models (VLMs) have
+demonstrated human-like capabili...
+Processed paper: OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows
+Found abstract: Multimodal reasoning requires iterative coordination between language and
+vision, yet it remains unc...
+Processed paper: ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning
+Found abstract: Modern AI hardware, such as Nvidia's Blackwell architecture, is increasingly
+embracing low-precision...
+Processed paper: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats
+Found abstract: Vision-Language-Action (VLA) models enable robots to understand and perform
+complex tasks from multi...
+Processed paper: π_RL: Online RL Fine-tuning for Flow-based
+  Vision-Language-Action Models
+Found abstract: The efficiency of large language models (LLMs) is fundamentally limited by
+their sequential, token-b...
+Processed paper: Continuous Autoregressive Language Models
+Found abstract: Spatial understanding remains a weakness of Large Vision-Language Models
+(LVLMs). Existing supervise...
+Processed paper: Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised
+  Reinforcement Learning
+Found abstract: Autonomous Graphical User Interface (GUI) agents rely on accurate GUI
+grounding, which maps language...
+Processed paper: HyperClick: Advancing Reliable GUI Grounding via Uncertainty Calibration
+Found abstract: Reinforcement learning (RL) fine-tuning of large language models (LLMs) often
+suffers from instabili...
+Processed paper: Defeating the Training-Inference Mismatch via FP16
+Found abstract: Distribution Matching Distillation (DMD) distills score-based generative
+models into efficient one-s...
+Processed paper: Phased DMD: Few-step Distribution Matching Distillation via Score
+  Matching within Subintervals
+Found abstract: Multimodal large language models (MLLMs) have advanced embodied agents by
+enabling direct perception...
+Processed paper: Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive
+  Trigger Learning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: π_RL: Online RL Fine-tuning for Flow-based
+  Vision-Language-Action Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Continuous Autoregressive Language Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised
+  Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: HyperClick: Advancing Reliable GUI Grounding via Uncertainty Calibration
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Defeating the Training-Inference Mismatch via FP16
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Phased DMD: Few-step Distribution Matching Distillation via Score
+  Matching within Subintervals
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive
+  Trigger Learning
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W45.json...
+
+Updating Notion database...
+Creating new paper: OS-Sentinel: 혼합 검증을 통한 안전 강화 모바일 GUI 에이전트로
+Creating new paper: ThinkMorph: 다중 모달 교차체인 사고 추론에서의 신생 속성
+Creating new paper: INT 대 FP: 소수점 저비트 양자화 형식의 포괄적 연구
+Creating new paper: π_RL: 온라인 강화학습 Fine-tuning을 위한 플로우 기반 시각-언어-동작 모델
+Creating new paper: 연속 자기회귀 언어 모델
+Creating new paper: Spatial-SSRL: 자기 주도적 강화 학습을 통한 공간 이해력 향상
+Creating new paper: 신뢰할 수 있는 GUI 그라운딩을 발전시키는 HyperClick: 불확실성 보정을 통해
+Creating new paper: FP16를 통한 훈련-추론 불일치 극복
+Creating new paper: 다단계 단계별 분포 매칭 디스틸레이션: 하위구간 내 점수 매칭을 통한 소수 단계 분포 일치
+Creating new paper: MLLM 기반 시각 후문 공격: 대조적 트리거 학습을 통한 신체화된 의사 결정에 대한 시각적 공격
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Nov  3 22:10:40 UTC 2025 ===
+

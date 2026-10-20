@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Dec 15 22:08:23 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W51
+URL: https://huggingface.co/papers/week/2025-W51
+Found 10 papers in weekly view
+Fetching likes for: DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry
+Fetching likes for: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Fetching likes for: SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder
+Fetching likes for: V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties
+Fetching likes for: Sliding Window Attention Adaptation
+Fetching likes for: PersonaLive! Expressive Portrait Image Animation for Live Streaming
+Fetching likes for: Exploring MLLM-Diffusion Information Transfer with MetaCanvas
+Fetching likes for: MeshSplatting: Differentiable Rendering with Opaque Meshes
+Fetching likes for: Structure From Tracking: Distilling Structure-Preserving Motion for Video Generation
+Fetching likes for: LEO-RobotAgent: A General-purpose Robotic Agent for Language-driven Embodied Operator
+Selected top 10 papers by likes:
+1. DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry (37 likes)
+2. EgoX: Egocentric Video Generation from a Single Exocentric Video (37 likes)
+3. SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder (32 likes)
+4. V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties (24 likes)
+5. Sliding Window Attention Adaptation (13 likes)
+6. PersonaLive! Expressive Portrait Image Animation for Live Streaming (10 likes)
+7. Exploring MLLM-Diffusion Information Transfer with MetaCanvas (8 likes)
+8. MeshSplatting: Differentiable Rendering with Opaque Meshes (6 likes)
+9. Structure From Tracking: Distilling Structure-Preserving Motion for Video Generation (5 likes)
+10. LEO-RobotAgent: A General-purpose Robotic Agent for Language-driven Embodied Operator (4 likes)
+Found abstract: Reliable interpretation of multimodal data in dentistry is essential for automated oral healthcare, ...
+Processed paper: DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry
+Found abstract: Egocentric perception enables humans to experience and understand the world directly from their own ...
+Processed paper: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Found abstract: Visual generation grounded in Visual Foundation Model (VFM) representations offers a highly promisin...
+Processed paper: SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder
+Found abstract: Large-scale video generation models have shown remarkable potential in modeling photorealistic appea...
+Processed paper: V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties
+Found abstract: The self-attention mechanism in Transformer-based Large Language Models (LLMs) scales quadratically ...
+Processed paper: Sliding Window Attention Adaptation
+Found abstract: Current diffusion-based portrait animation models predominantly focus on enhancing visual quality an...
+Processed paper: PersonaLive! Expressive Portrait Image Animation for Live Streaming
+Found abstract: Multimodal learning has rapidly advanced visual understanding, largely via multimodal large language...
+Processed paper: Exploring MLLM-Diffusion Information Transfer with MetaCanvas
+Found abstract: Primitive-based splatting methods like 3D Gaussian Splatting have revolutionized novel view synthesi...
+Processed paper: MeshSplatting: Differentiable Rendering with Opaque Meshes
+Found abstract: Reality is a dance between rigid constraints and deformable structures. For video models, that means...
+Processed paper: Structure From Tracking: Distilling Structure-Preserving Motion for Video Generation
+Found abstract: We propose LEO-RobotAgent, a general-purpose language-driven intelligent agent framework for robots....
+Processed paper: LEO-RobotAgent: A General-purpose Robotic Agent for Language-driven Embodied Operator
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: EgoX: Egocentric Video Generation from a Single Exocentric Video
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Sliding Window Attention Adaptation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: PersonaLive! Expressive Portrait Image Animation for Live Streaming
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Exploring MLLM-Diffusion Information Transfer with MetaCanvas
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: MeshSplatting: Differentiable Rendering with Opaque Meshes
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Structure From Tracking: Distilling Structure-Preserving Motion for Video Generation
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: LEO-RobotAgent: A General-purpose Robotic Agent for Language-driven Embodied Operator
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W51.json...
+
+Updating Notion database...
+Creating new paper: 치과를 위한 멀티모달 복합 추론을 장려하는 DentalGPT
+Creating new paper: 단일 외부 시점 동영상으로부터 자아 중심 동영상 생성 (EgoX)
+Creating new paper: VAE 없이 크기를 늘린 SVG-T2I: 텍스트-이미지 잠재 확산 모델
+Creating new paper: V-RGBX: 내재적 속성에 대한 정확한 제어를 갖춘 비디오 편집
+Creating new paper: 슬라이딩 윈도우 어텐션 적응
+Creating new paper: 생동감 넘치는 초상 화상 애니메이션 리얼 타임 라이브 스트리밍을 위한 PersonaLive!
+Creating new paper: 메타캔버스를 활용한 MLLM-확산 정보 전달 탐구
+Creating new paper: MeshSplatting: Opque Meshes와 함께 하는 미분가능 렌더링
+Creating new paper: 추적으로부터의 구조: 비디오 생성을 위한 구조 보존 운동 증류
+Creating new paper: LEO-RobotAgent: 언어 주도형 신체화 연산을 위한 일반용도 로봇 에이전트
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Dec 15 22:10:17 UTC 2025 ===
+

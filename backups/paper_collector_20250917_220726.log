@@ -1,0 +1,147 @@
+=== Paper Collection Started at Tue Sep 16 22:07:28 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W38
+URL: https://huggingface.co/papers/week/2025-W38
+Found 10 papers in weekly view
+Fetching likes for: OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling
+Fetching likes for: UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning
+Fetching likes for: The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs
+Fetching likes for: InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis
+Fetching likes for: InternScenes: A Large-scale Simulatable Indoor Scene Dataset with
+  Realistic Layouts
+Fetching likes for: IntrEx: A Dataset for Modeling Engagement in Educational Conversations
+Fetching likes for: X-Part: high fidelity and structure coherent shape decomposition
+Fetching likes for: Virtual Agent Economies
+Fetching likes for: Interpretable Physics Reasoning and Performance Taxonomy in
+  Vision-Language Models
+Fetching likes for: HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering
+Selected top 10 papers by likes:
+1. OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling (72 likes)
+2. UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning (33 likes)
+3. The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs (25 likes)
+4. InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis (24 likes)
+5. InternScenes: A Large-scale Simulatable Indoor Scene Dataset with
+  Realistic Layouts (22 likes)
+6. IntrEx: A Dataset for Modeling Engagement in Educational Conversations (22 likes)
+7. X-Part: high fidelity and structure coherent shape decomposition (21 likes)
+8. Virtual Agent Economies (20 likes)
+9. Interpretable Physics Reasoning and Performance Taxonomy in
+  Vision-Language Models (20 likes)
+10. HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering (20 likes)
+Found abstract: The field of 4D world modeling - aiming to jointly capture spatial geometry
+and temporal dynamics - ...
+Processed paper: OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling
+Found abstract: Graphical User Interface (GUI) agents have demonstrated remarkable progress
+in automating complex us...
+Processed paper: UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning
+Found abstract: Does continued scaling of large language models (LLMs) yield diminishing
+returns? Real-world value o...
+Processed paper: The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs
+Found abstract: Arbitrary resolution image generation provides a consistent visual experience
+across devices, having...
+Processed paper: InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis
+Found abstract: The advancement of Embodied AI heavily relies on large-scale, simulatable 3D
+scene datasets characte...
+Processed paper: InternScenes: A Large-scale Simulatable Indoor Scene Dataset with
+  Realistic Layouts
+Found abstract: Engagement and motivation are crucial for second-language acquisition, yet
+maintaining learner inter...
+Processed paper: IntrEx: A Dataset for Modeling Engagement in Educational Conversations
+Found abstract: Generating 3D shapes at part level is pivotal for downstream applications
+such as mesh retopology, U...
+Processed paper: X-Part: high fidelity and structure coherent shape decomposition
+Found abstract: The rapid adoption of autonomous AI agents is giving rise to a new economic
+layer where agents trans...
+Processed paper: Virtual Agent Economies
+Found abstract: As Vision-Language Models (VLMs) grow in sophistication, their ability to
+perform reasoning is comin...
+Processed paper: Interpretable Physics Reasoning and Performance Taxonomy in
+  Vision-Language Models
+Found abstract: The Retrieval-Augmented Generation (RAG) approach enhances question-answering
+systems and dialogue g...
+Processed paper: HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: The Illusion of Diminishing Returns: Measuring Long Horizon Execution in
+  LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 25  ->  18
+Update date_collected: 2025-09-17T07:07:36.698397+09:00  ->  2025-09-16T07:07:39.996756+09:00
+
+Processing paper 4/10
+Title: InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis
+Paper already exists, checking if translation is complete...
+Update likes: 24  ->  18
+Update date_collected: 2025-09-17T07:07:36.699606+09:00  ->  2025-09-16T07:07:39.995598+09:00
+
+Processing paper 5/10
+Title: InternScenes: A Large-scale Simulatable Indoor Scene Dataset with
+  Realistic Layouts
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: IntrEx: A Dataset for Modeling Engagement in Educational Conversations
+Paper already exists, checking if translation is complete...
+Update likes: 22  ->  21
+Update date_collected: 2025-09-17T07:07:36.702132+09:00  ->  2025-09-16T07:07:39.994289+09:00
+
+Processing paper 7/10
+Title: X-Part: high fidelity and structure coherent shape decomposition
+Paper already exists, checking if translation is complete...
+Update likes: 21  ->  17
+Update date_collected: 2025-09-17T07:07:36.703491+09:00  ->  2025-09-16T07:07:39.998109+09:00
+
+Processing paper 8/10
+Title: Virtual Agent Economies
+Paper already exists, checking if translation is complete...
+Update likes: 20  ->  8
+Update date_collected: 2025-09-17T07:07:36.704707+09:00  ->  2025-09-16T07:07:40.002133+09:00
+
+Processing paper 9/10
+Title: Interpretable Physics Reasoning and Performance Taxonomy in
+  Vision-Language Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented
+  Generation for Multi-hop Question Answering
+Paper already exists, checking if translation is complete...
+Update likes: 20  ->  13
+Update date_collected: 2025-09-17T07:07:36.707327+09:00  ->  2025-09-16T07:07:39.999439+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W38.json...
+
+Updating Notion database...
+Creating new paper: 옴니월드: 4D 세계 모델링을 위한 멀티 도메인 및 멀티 모달 데이터셋
+Creating new paper: UI-S1: 준온라인 강화학습을 통한 GUI 자동화 발전
+Updating paper: 감소 수익의 환상: LLM에서의 장기 실행 측정 (likes: 18 -> 25)
+Updating paper: 해상도 무관한 확장 가능한 이미지 합성을 위한 InfGen 패러다임 (likes: 18 -> 24)
+Creating new paper: InternScenes: 현실적인 레이아웃을 갖춘 대규모 시뮬레이션 가능한 실내 장면 데이터셋
+Updating paper: 교육 대화에서 참여 모델링을 위한 데이터셋 IntrEx (likes: 21 -> 22)
+Updating paper: X-Part: 고운 형태 분해를 위한 높은 정밀도와 구조 일관성 (likes: 17 -> 21)
+Updating paper: 가상 에이전트 경제학 (likes: 8 -> 20)
+Creating new paper: 비전-언어 모델에서 해석 가능한 물리학 추론과 성능 분류
+Updating paper: HANRAG: 휴리스틱 정확도 노이즈에 강한 검색 증가 생성을 위한 (likes: 13 -> 20)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Sep 16 22:09:41 UTC 2025 ===
+

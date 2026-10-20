@@ -1,0 +1,90 @@
+=== arXiv daily pipeline started at 2026-08-20T10:23:06.061050+09:00 ===
+[arxiv] fetching https://arxiv.org/list/cs.CV/new?skip=0&show=2000
+[arxiv] cs.CV: 89 new submissions (mailing: 2026-08-19)
+[arxiv] fetching https://arxiv.org/list/cs.LG/new?skip=0&show=2000
+[arxiv] cs.LG: 81 new submissions (mailing: 2026-08-19)
+[arxiv] fetching https://arxiv.org/list/cs.RO/new?skip=0&show=2000
+[arxiv] cs.RO: 34 new submissions (mailing: 2026-08-19)
+[arxiv] fetching https://arxiv.org/list/cs.CL/new?skip=0&show=2000
+[arxiv] cs.CL: 49 new submissions (mailing: 2026-08-19)
+[arxiv] fetching https://arxiv.org/list/cs.AI/new?skip=0&show=2000
+[arxiv] cs.AI: 65 new submissions (mailing: 2026-08-19)
+[arxiv] total new submissions: 318 across 5 lists, 318 unique after dedup
+Evaluating 318 papers for mailing 2026-08-19 (수)
+Models — screening: gpt-5-mini, deep review: gpt-5
+[ckpt] resuming from checkpoint: 270 screened, 0 deep-reviewed
+[screen] 270 papers restored from checkpoint
+[screen] 48 papers in 5 batches (model: gpt-5-mini)
+[screen] batch 1/5 done
+[screen] batch 2/5 done
+[screen] batch 3/5 done
+[screen] batch 4/5 done
+[screen] batch 5/5 done
+[deep] downloading 30 papers for full-text review
+[deep] 1/30 2608.17956: PDF 전문
+[deep] 2/30 2608.17717: PDF 전문
+[deep] 3/30 2608.17129: PDF 전문
+[deep] 4/30 2608.17209: PDF 전문
+[deep] 5/30 2608.18077: PDF 전문
+[deep] 6/30 2608.17819: PDF 전문
+[deep] 7/30 2608.17741: PDF 전문
+[deep] 8/30 2608.18035: PDF 전문
+[deep] 9/30 2608.17318: PDF 전문
+[deep] 10/30 2608.17163: PDF 전문
+[deep] 11/30 2608.17146: PDF 전문
+[deep] 12/30 2608.17601: PDF 전문
+[deep] 13/30 2608.16978: PDF 전문
+[deep] 14/30 2608.17535: PDF 전문
+[deep] 15/30 2608.17625: PDF 전문
+[deep] 16/30 2608.17973: PDF 전문
+[deep] 17/30 2608.17432: PDF 전문
+[deep] 18/30 2608.17542: PDF 전문
+[deep] 19/30 2608.17386: PDF 전문
+[deep] 20/30 2608.17389: PDF 전문
+[deep] 21/30 2608.17713: PDF 전문
+[deep] 22/30 2608.17962: PDF 전문
+[deep] 23/30 2608.18004: PDF 전문
+[deep] 24/30 2608.17324: PDF 전문
+[deep] 25/30 2608.17283: PDF 전문
+[deep] 26/30 2608.18009: PDF 전문
+[deep] 27/30 2608.17347: PDF 전문
+[deep] 28/30 2608.17703: PDF 전문
+[deep] 29/30 2608.17587: PDF 전문
+[deep] 30/30 2608.16932: PDF 전문
+[deep] reviewing with model: gpt-5
+[deep] review done: 2608.17129 → 86점
+[deep] review done: 2608.17717 → 92점
+[deep] review done: 2608.17956 → 92점
+[deep] review done: 2608.17209 → 82점
+[deep] review done: 2608.18077 → 89점
+[deep] review done: 2608.17819 → 86점
+[deep] review done: 2608.18035 → 86점
+[deep] review done: 2608.17741 → 86점
+[deep] review done: 2608.17318 → 86점
+[deep] review done: 2608.17163 → 86점
+[deep] review done: 2608.17146 → 84점
+[deep] review done: 2608.17601 → 84점
+[deep] review done: 2608.16978 → 86점
+[deep] review done: 2608.17535 → 91점
+[deep] review done: 2608.17625 → 84점
+[deep] review done: 2608.17973 → 86점
+[deep] review done: 2608.17542 → 85점
+[deep] review done: 2608.17432 → 88점
+[deep] review done: 2608.17389 → 86점
+[deep] review done: 2608.17386 → 87점
+[llm] error (attempt 1/3): 'utf-8' codec can't encode character '\ud835' in position 34217: surrogates not allowed — retrying in 5s
+[deep] review done: 2608.17713 → 87점
+[llm] error (attempt 2/3): 'utf-8' codec can't encode character '\ud835' in position 34217: surrogates not allowed — retrying in 10s
+[llm] error (attempt 3/3): 'utf-8' codec can't encode character '\ud835' in position 34217: surrogates not allowed — retrying in 15s
+[deep] review FAILED for 2608.17324: LLM call failed after 3 attempts: 'utf-8' codec can't encode character '\ud835' in position 34217: surrogates not allowed
+[deep] review done: 2608.17962 → 84점
+[deep] review done: 2608.18004 → 84점
+[deep] review done: 2608.17283 → 84점
+[deep] review done: 2608.18009 → 84점
+[deep] review done: 2608.17347 → 77점
+[deep] review done: 2608.17703 → 84점
+[deep] review done: 2608.17587 → 82점
+[deep] review done: 2608.16932 → 86점
+[synth] generating trends / strategy / must-read sections
+Saved database/daily\2026-08-19.json and database/daily\2026-08-19.md
+Done!

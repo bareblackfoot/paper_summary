@@ -1,0 +1,289 @@
+[
+  {
+    "title": "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning\n  Attention",
+    "abstract": "We introduce MiniMax-M1, the world's first open-weight, large-scale\nhybrid-attention reasoning model. MiniMax-M1 is powered by a hybrid\nMixture-of-Experts (MoE) architecture combined with a lightning attention\nmechanism. The model is developed based on our previous MiniMax-Text-01 model,\nwhich contains a total of 456 billion parameters with 45.9 billion parameters\nactivated per token. The M1 model natively supports a context length of 1\nmillion tokens, 8x the context size of DeepSeek R1. Furthermore, the lightning\nattention mechanism in MiniMax-M1 enables efficient scaling of test-time\ncompute. These properties make M1 particularly suitable for complex tasks that\nrequire processing long inputs and thinking extensively. MiniMax-M1 is trained\nusing large-scale reinforcement learning (RL) on diverse problems including\nsandbox-based, real-world software engineering environments. In addition to\nM1's inherent efficiency advantage for RL training, we propose CISPO, a novel\nRL algorithm to further enhance RL efficiency. CISPO clips importance sampling\nweights rather than token updates, outperforming other competitive RL variants.\nCombining hybrid-attention and CISPO enables MiniMax-M1's full RL training on\n512 H800 GPUs to complete in only three weeks, with a rental cost of just\n$534,700. We release two versions of MiniMax-M1 models with 40K and 80K\nthinking budgets respectively, where the 40K model represents an intermediate\nphase of the 80K training. Experiments on standard benchmarks show that our\nmodels are comparable or superior to strong open-weight models such as the\noriginal DeepSeek-R1 and Qwen3-235B, with particular strengths in complex\nsoftware engineering, tool utilization, and long-context tasks. We publicly\nrelease MiniMax-M1 at https://github.com/MiniMax-AI/MiniMax-M1.",
+    "authors": [
+      "MiniMax",
+      "Aili Chen",
+      "Aonian Li",
+      "Bangwei Gong",
+      "Binyang Jiang",
+      "Bo Fei",
+      "Bo Yang",
+      "Boji Shan",
+      "Changqing Yu",
+      "Chao Wang",
+      "Cheng Zhu",
+      "Chengjun Xiao",
+      "Chengyu Du",
+      "Chi Zhang",
+      "Chu Qiao",
+      "Chunhao Zhang",
+      "Chunhui Du",
+      "Congchao Guo",
+      "Da Chen",
+      "Deming Ding",
+      "Dianjun Sun",
+      "Dong Li"
+    ],
+    "likes": 218,
+    "published_date": "Jun 16",
+    "url": "https://huggingface.co/papers/2506.13585",
+    "date_collected": "2025-06-22T07:06:55.055424+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "라이트닝 어텐션으로 효율적인 테스트 시간 연산 확장하는 MiniMax-M1",
+      "abstract": "우리는 세계 최초의 오픈 가중치 대규모 하이브리드 어텐션 추론 모델 MiniMax-M1을 소개합니다. MiniMax-M1은 라이트닝 어텐션 메커니즘과 결합된 하이브리드 전문가 집합(MoE) 아키텍처로 구동됩니다. M1 모델은 이전 MiniMax-Text-01 모델을 기반으로 개발되었으며 총 4560억 개의 매개변수를 보유하며 토큰 당 459억 개의 매개변수가 활성화됩니다. 또한, MiniMax-M1의 라이트닝 어텐션 메커니즘은 테스트 시간 연산의 효율적인 확장을 가능케 합니다. 이러한 특징으로 M1은 긴 입력 처리와 광범위한 사고가 필요한 복잡한 작업에 특히 적합합니다. MiniMax-M1은 대규모 RL(강화 학습)을 다양한 문제에 대해 스케일링하여 훈련했습니다."
+    },
+    "summary": "1. MiniMax-M1은 하이브리드 어텐션과 CISPO를 결합하여 대규모 강화 학습을 빠르게 수행하며, 긴 입력 처리와 깊은 사고를 필요로 하는 복잡한 작업에 적합합니다.\n2. CISPO는 다른 강화 학습 변형을 능가하며, MiniMax-M1의 훈련을 효율적으로 완료합니다. 단 3주 동안 512개의 H800 GPU에서 534,700달러의 비용으로 훈련이 가능합니다.\n3. MiniMax-M1은 DeepSeek-R1 및 Qwen3-235B와 비교하여 복잡한 소프트웨어 엔지니어링, 도구 활용 및 긴 컨텍스트 작업에서 우수한 성능을 보이며, 표준 벤치마크 실험에서 강력한 오픈 가중치 모델과 유사하거나 우수함을 입증합니다."
+  },
+  {
+    "title": "MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark\n  for Financial LLM Evaluation",
+    "abstract": "Recent advances in large language models (LLMs) have accelerated progress in\nfinancial NLP and applications, yet existing benchmarks remain limited to\nmonolingual and unimodal settings, often over-relying on simple tasks and\nfailing to reflect the complexity of real-world financial communication. We\nintroduce MultiFinBen, the first multilingual and multimodal benchmark tailored\nto the global financial domain, evaluating LLMs across modalities (text,\nvision, audio) and linguistic settings (monolingual, bilingual, multilingual)\non domain-specific tasks. We introduce two novel tasks, including PolyFiQA-Easy\nand PolyFiQA-Expert, the first multilingual financial benchmarks requiring\nmodels to perform complex reasoning over mixed-language inputs; and EnglishOCR\nand SpanishOCR, the first OCR-embedded financial QA tasks challenging models to\nextract and reason over information from visual-text financial documents.\nMoreover, we propose a dynamic, difficulty-aware selection mechanism and curate\na compact, balanced benchmark rather than simple aggregation existing datasets.\nExtensive evaluation of 22 state-of-the-art models reveals that even the\nstrongest models, despite their general multimodal and multilingual\ncapabilities, struggle dramatically when faced with complex cross-lingual and\nmultimodal tasks in financial domain. MultiFinBen is publicly released to\nfoster transparent, reproducible, and inclusive progress in financial studies\nand applications.",
+    "authors": [
+      "Xueqing Peng",
+      "Lingfei Qian",
+      "Yan Wang",
+      "Ruoyu Xiang",
+      "Yueru He",
+      "Yang Ren",
+      "Mingyang Jiang",
+      "Jeff Zhao",
+      "Huan He",
+      "Yi Han",
+      "Yun Feng",
+      "Yuechen Jiang",
+      "Yupeng Cao",
+      "Haohang Li",
+      "Yangyang Yu",
+      "Xiaoyu Wang",
+      "Penglei Gao",
+      "Shengyuan Lin",
+      "Keyi Wang",
+      "Shanshan Yang",
+      "Yilun Zhao",
+      "Zhiwei Liu"
+    ],
+    "likes": 82,
+    "published_date": "Jun 16",
+    "url": "https://huggingface.co/papers/2506.14028",
+    "date_collected": "2025-06-22T07:06:55.057379+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "멀티핀벤: 금융 LLM 평가를 위한 다중언어, 다중모달, 난이도인식 벤치마크",
+      "abstract": "최근 대형 언어 모델(LLM)의 발전으로 금융 NLP와 응용 분야에서 진전이 가속화되었지만, 기존의 벤치마크는 단일언어 및 단일모달 설정에 제한되어 있어 현실 세계 금융 커뮤니케이션의 복잡성을 제대로 반영하지 못하고 간단한 작업에 지나치게 의존하고 있다. 우리는 글로벌 금융 분야에 특화된 최초의 다중언어 및 다중모달 벤치마크인 멀티핀벤을 제안한다. 이는 LLM을 텍스트, 비전, 오디오 모달리티 및 언어 환경(단일언어, 양언어, 다중언어)에서 도메인 특화 작업을 평가한다. 우리는 PolyFiQA-Easy와 PolyFiQA-Expert를 포함한 두 가지 새로운 작업을 소개하는데, 이는 모델이 혼합언어 입력에 대해 복잡한 추론을 수행해야 하는 최초의 다중언어 금융 벤치마크이며, EnglishOCR과 SpanishOCR은 시각-텍스트 금융 문서에서 정보를 추출하고 추론하는 모델에 도전을 제공하는 최초의 OCR 포함 금융 QA 작업이다. 더불어, 우리는 동적이며 난이도를 인식하는 선택 메커니즘을 제안하고 단순 집계된 기존 데이터셋보다 작고 균형있는 벤치마크를 집합하는 것을 추구한다. 22개의 최첨단 모델의 포괄적인 평가 결과, 심지어 가장 강력한 모델들도 금융 분야의 복잡한 다중언어 및 다중모달 작업에 직면했을 때 심각한 어려움을 겪는 것으로 나타났다. 멀티핀벤은 금융 연구와 응용 분야에서 투명하고 재현 가능하며 포용적인 진전을 촉진하기 위해 공개적으로 공개된다."
+    },
+    "summary": "1. 금융 LLM 평가를 위한 멀티핀벤은 다중언어, 다중모달 벤치마크로 실제 금융 커뮤니케이션의 복잡성을 반영한다.\n2. 새로운 다중언어 금융 작업 및 시각-텍스트 금융 QA 작업을 도입하여 모델의 복잡한 추론 능력을 평가한다.\n3. 최신 모델들도 복잡한 다중언어 및 다중모달 금융 작업에 직면할 때 심각한 어려움을 겪으며, 이는 멀티핀벤이 포용적이고 투명한 진전을 위해 중요함을 강조한다."
+  },
+  {
+    "title": "Scientists' First Exam: Probing Cognitive Abilities of MLLM via\n  Perception, Understanding, and Reasoning",
+    "abstract": "Scientific discoveries increasingly rely on complex multimodal reasoning\nbased on information-intensive scientific data and domain-specific expertise.\nEmpowered by expert-level scientific benchmarks, scientific Multimodal Large\nLanguage Models (MLLMs) hold the potential to significantly enhance this\ndiscovery process in realistic workflows. However, current scientific\nbenchmarks mostly focus on evaluating the knowledge understanding capabilities\nof MLLMs, leading to an inadequate assessment of their perception and reasoning\nabilities. To address this gap, we present the Scientists' First Exam (SFE)\nbenchmark, designed to evaluate the scientific cognitive capacities of MLLMs\nthrough three interconnected levels: scientific signal perception, scientific\nattribute understanding, scientific comparative reasoning. Specifically, SFE\ncomprises 830 expert-verified VQA pairs across three question types, spanning\n66 multimodal tasks across five high-value disciplines. Extensive experiments\nreveal that current state-of-the-art GPT-o3 and InternVL-3 achieve only 34.08%\nand 26.52% on SFE, highlighting significant room for MLLMs to improve in\nscientific realms. We hope the insights obtained in SFE will facilitate further\ndevelopments in AI-enhanced scientific discoveries.",
+    "authors": [
+      "Yuhao Zhou",
+      "Yiheng Wang",
+      "Xuming He",
+      "Ruoyao Xiao",
+      "Zhiwei Li",
+      "Qiantai Feng",
+      "Zijie Guo",
+      "Yuejin Yang",
+      "Hao Wu",
+      "Wenxuan Huang",
+      "Jiaqi Wei",
+      "Dan Si",
+      "Xiuqi Yao",
+      "Jia Bu",
+      "Haiwen Huang",
+      "Tianfan Fu",
+      "Shixiang Tang",
+      "Ben Fei",
+      "Dongzhan Zhou",
+      "Fenghua Ling",
+      "Yan Lu",
+      "Siqi Sun"
+    ],
+    "likes": 64,
+    "published_date": "Jun 12",
+    "url": "https://huggingface.co/papers/2506.10521",
+    "date_collected": "2025-06-22T07:06:55.059314+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "과학자들의 첫 번째 시험: 지각, 이해, 추론을 통해 MLLM의 인지 능력 탐구",
+      "abstract": "과학적 발견은 점점 복잡한 다중모달 추론에 의존하며 정보밀도가 높은 과학적 데이터와 도메인 특화 전문성에 기반합니다. 고수준 과학적 기준을 활용한 과학적 다중모달 대형 언어 모델(MLLM)은 현실적인 작업흐름에서 이 발견 프로세스를 크게 향상시킬 수 있는 잠재력을 갖고 있습니다. 그러나 현재의 과학적 기준은 주로 MLLM의 지식 이해 능력을 평가하고 있어 지각 및 추론 능력에 대한 부적절한 평가로 이어집니다. 이것을 해결하기 위해, 우리는 과학자들의 첫 번째 시험(SFE) 기준을 제시합니다. 이 기준은 MLLM의 과학적 인지 능력을 과학적 신호 지각, 과학적 속성 이해, 과학적 비교 추론 세 가지 수준을 통해 평가하도록 설계되었습니다."
+    },
+    "summary": "1. MLLM의 지각, 이해, 추론 능력을 평가하는 Scientists' First Exam(SFE) 기준이 소개됨.\n2. SFE에는 830개의 전문가 확인 VQA 쌍이 포함되어 있으며, 현재 최첨단인 GPT-o3 및 InternVL-3은 SFE에서 각각 34.08% 및 26.52%의 성능을 보임.\n3. SFE에서 얻은 통찰이 AI로 강화된 과학적 발견 분야의 추가 발전을 촉진할 것으로 기대됨."
+  },
+  {
+    "title": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents",
+    "abstract": "Deep Research Agents are a prominent category of LLM-based agents. By\nautonomously orchestrating multistep web exploration, targeted retrieval, and\nhigher-order synthesis, they transform vast amounts of online information into\nanalyst-grade, citation-rich reports--compressing hours of manual desk research\ninto minutes. However, a comprehensive benchmark for systematically evaluating\nthe capabilities of these agents remains absent. To bridge this gap, we present\nDeepResearch Bench, a benchmark consisting of 100 PhD-level research tasks,\neach meticulously crafted by domain experts across 22 distinct fields.\nEvaluating DRAs is inherently complex and labor-intensive. We therefore propose\ntwo novel methodologies that achieve strong alignment with human judgment. The\nfirst is a reference-based method with adaptive criteria to assess the quality\nof generated research reports. The other framework is introduced to evaluate\nDRA's information retrieval and collection capabilities by assessing its\neffective citation count and overall citation accuracy. We have open-sourced\nDeepResearch Bench and key components of these frameworks at\nhttps://github.com/Ayanami0730/deep_research_bench to accelerate the\ndevelopment of practical LLM-based agents.",
+    "authors": [
+      "Mingxuan Du",
+      "Benfeng Xu",
+      "Chiwei Zhu",
+      "Xiaorui Wang",
+      "Zhendong Mao"
+    ],
+    "likes": 54,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11763",
+    "date_collected": "2025-06-22T07:06:55.060486+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "깊은 연구 벤치마크: 깊은 연구 에이전트를 위한 포괄적인 벤치마크",
+      "abstract": "깊은 연구 에이전트는 LLM 기반 에이전트의 중요한 범주 중 하나입니다. 다단계 웹 탐색, 특정 검색 및 고차원 합성을 자율적으로 조정함으로써 그들은 방대한 온라인 정보를 분석가급의 서적이 풍부한 보고서로 변환시켜 수십 시간이 걸리는 수동 데스크 연구를 몇 분 안으로 압축합니다. 그러나 이러한 에이전트의 능력을 체계적으로 평가하기 위한 포괄적인 벤치마크가 아직 존재하지 않습니다. 이 격차를 메우기 위해 저희는 22가지 다양한 분야에서 도메인 전문가들에 의해 세심하게 설계된 100개의 박사 수준 연구 과제로 구성된 벤치마크인 DeepResearch Bench를 제시합니다."
+    },
+    "summary": "1. 깊은 연구 에이전트는 온라인 정보를 고급 보고서로 변환시키는데 사용되며, 이에 대한 체계적인 평가를 위한 DeepResearch Bench라는 벤치마크가 소개되었습니다.\n2. 이 연구에서는 인간 판단과 강력한 일치를 이루기 위한 두 가지 새로운 방법론이 제안되었는데, 그 중 하나는 생성된 연구 보고서의 품질을 평가하는 기준을 적응적으로 하는 참고 기반 방법론이고 다른 하나는 DRA의 정보 검색 및 수집 능력을 평가하기 위한 프레임워크입니다.\n3. DeepResearch Bench 및 이러한 프레임워크의 핵심 구성 요소가 공개되었으며 실용적인 LLM 기반 에이전트의 개발을 가속화하기 위해 활용되고 있습니다."
+  },
+  {
+    "title": "Scaling Test-time Compute for LLM Agents",
+    "abstract": "Scaling test time compute has shown remarkable success in improving the\nreasoning abilities of large language models (LLMs). In this work, we conduct\nthe first systematic exploration of applying test-time scaling methods to\nlanguage agents and investigate the extent to which it improves their\neffectiveness. Specifically, we explore different test-time scaling strategies,\nincluding: (1) parallel sampling algorithms; (2) sequential revision\nstrategies; (3) verifiers and merging methods; (4)strategies for diversifying\nrollouts.We carefully analyze and ablate the impact of different design\nstrategies on applying test-time scaling on language agents, and have follow\nfindings: 1. Scaling test time compute could improve the performance of agents.\n2. Knowing when to reflect is important for agents. 3. Among different\nverification and result merging approaches, the list-wise method performs best.\n4. Increasing diversified rollouts exerts a positive effect on the agent's task\nperformance.",
+    "authors": [
+      "King Zhu",
+      "Hanhao Li",
+      "Siwei Wu",
+      "Tianshun Xing",
+      "Dehua Ma",
+      "Xiangru Tang",
+      "Minghao Liu",
+      "Jian Yang",
+      "Jiaheng Liu",
+      "Yuchen Eleanor Jiang",
+      "Changwang Zhang",
+      "Chenghua Lin",
+      "Jun Wang",
+      "Ge Zhang",
+      "Wangchunshu Zhou"
+    ],
+    "likes": 53,
+    "published_date": "Jun 15",
+    "url": "https://huggingface.co/papers/2506.12928",
+    "date_collected": "2025-06-22T07:06:55.062087+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "LLM 에이전트들을 위한 시험 시간 계산 확장",
+      "abstract": "시험 시간 계산의 확장은 대형 언어 모델 (LLMs)의 추론 능력을 향상시키는 데 놀라운 성과를 보여주었습니다. 본 논문에서는 언어 에이전트에 시험 시간 확장 방법을 적용하는 첫 체계적 탐구를 실시하고, 이것이 그 효과를 얼마나 향상시키는지 조사합니다. 특히, 병렬 샘플링 알고리즘, 순차적 수정 전략, 확인자 및 병합 방법, 롤아웃을 다양화하는 전략 등 다양한 시험 시간 확장 전략을 탐구합니다. 다양한 설계 전략이 언어 에이전트에 적용되는 시험 시간 확장의 영향을 신중하게 분석하고 제거하여, 시험 시간 계산의 확장이 에이전트의 성능을 향상시킬 수 있다는 결과를 도출했습니다. 에이전트가 언제 반영해야 하는지를 파악하는 것이 중요하며, 다양한 확인 및 결과 병합 접근법 중 리스트 방식이 가장 우수한 성과를 보입니다. 다양화된 롤아웃을 늘리는 것이 에이전트의 작업 성능에 긍정적인 영향을 미칩니다."
+    },
+    "summary": "1. 시험 시간 계산의 확장은 에이전트의 성능을 향상시킬 수 있음.\n2. 에이전트가 반영해야 하는 시기를 알아내는 것이 중요함.\n3. 확인 및 결과 병합 방법 중 리스트 방식이 가장 우수한 성과를 보임."
+  },
+  {
+    "title": "Sekai: A Video Dataset towards World Exploration",
+    "abstract": "Video generation techniques have made remarkable progress, promising to be\nthe foundation of interactive world exploration. However, existing video\ngeneration datasets are not well-suited for world exploration training as they\nsuffer from some limitations: limited locations, short duration, static scenes,\nand a lack of annotations about exploration and the world. In this paper, we\nintroduce Sekai (meaning ``world'' in Japanese), a high-quality first-person\nview worldwide video dataset with rich annotations for world exploration. It\nconsists of over 5,000 hours of walking or drone view (FPV and UVA) videos from\nover 100 countries and regions across 750 cities. We develop an efficient and\neffective toolbox to collect, pre-process and annotate videos with location,\nscene, weather, crowd density, captions, and camera trajectories. Experiments\ndemonstrate the quality of the dataset. And, we use a subset to train an\ninteractive video world exploration model, named YUME (meaning ``dream'' in\nJapanese). We believe Sekai will benefit the area of video generation and world\nexploration, and motivate valuable applications.",
+    "authors": [
+      "Zhen Li",
+      "Chuanhao Li",
+      "Xiaofeng Mao",
+      "Shaoheng Lin",
+      "Ming Li",
+      "Shitian Zhao",
+      "Zhaopan Xu",
+      "Xinyue Li",
+      "Yukang Feng",
+      "Jianwen Sun",
+      "Zizhen Li",
+      "Fanrui Zhang",
+      "Jiaxin Ai",
+      "Zhixiang Wang",
+      "Yuwei Wu",
+      "Tong He",
+      "Jiangmiao Pang",
+      "Yu Qiao",
+      "Yunde Jia",
+      "Kaipeng Zhang"
+    ],
+    "likes": 52,
+    "published_date": "Jun 18",
+    "url": "https://huggingface.co/papers/2506.15675",
+    "date_collected": "2025-06-22T07:06:55.063898+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "세카이: 세계 탐험을 향한 비디오 데이터셋",
+      "abstract": "비디오 생성 기술은 혁신적인 발전을 이룩하며 대화형 세계 탐험의 기반이 될 전망이다. 그러나 기존의 비디오 생성 데이터셋은 한계가 있어 세계 탐험 훈련에 적합하지 않다. 이 논문에서는 \"세카이\"(일본어로 \"세계\")라는 이름의 초고품질의 일인칭 시점 세계 비디오 데이터셋을 소개한다. 이 데이터셋은 100여 개국과 지역의 750개 도시에서 수집된 5,000시간 이상의 걸음 또는 드론 시점(FPV와 UVA) 비디오로 구성되어 있으며, 세계 탐험을 위한 풍부한 주석이 달려 있다."
+    },
+    "summary": "1. 세계 탐험을 위한 고품질의 세카이 비디오 데이터셋 소개\n2. 위치, 장면, 날씨, 인구 밀도, 자막, 카메라 궤적과 같은 다양한 주석으로 비디오를 수집, 전처리, 주석 달기 위한 효과적인 도구 개발\n3. 세카이 데이터셋을 사용하여 상호작용 비디오 세계 탐험 모델 YUME를 훈련시키고 실험 결과를 통해 데이터셋의 품질을 입증하여 비디오 생성과 세계 탐험 분야에 유익한 응용 프로그램을 촉진할 것으로 기대함"
+  },
+  {
+    "title": "Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback",
+    "abstract": "Recent studies have shown LLMs possess some ability to improve their\nresponses when given external feedback. However, it remains unclear how\neffectively and thoroughly these models can incorporate extrinsic feedback. In\nan ideal scenario, if LLMs receive near-perfect and complete feedback, we would\nexpect them to fully integrate the feedback and change their incorrect answers\nto correct ones. In this paper, we systematically investigate LLMs' ability to\nincorporate feedback by designing a controlled experimental environment. For\neach problem, a solver model attempts a solution, then a feedback generator\nwith access to near-complete ground-truth answers produces targeted feedback,\nafter which the solver tries again. We evaluate this pipeline across a diverse\nrange of tasks, including math reasoning, knowledge reasoning, scientific\nreasoning, and general multi-domain evaluations with state-of-the-art language\nmodels including Claude 3.7 (with and without extended thinking). Surprisingly,\neven under these near-ideal conditions, solver models consistently show\nresistance to feedback, a limitation that we term FEEDBACK FRICTION. To\nmitigate this limitation, we experiment with sampling-based strategies like\nprogressive temperature increases and explicit rejection of previously\nattempted incorrect answers, which yield improvements but still fail to help\nmodels achieve target performance. We also perform a rigorous exploration of\npotential causes of FEEDBACK FRICTION, ruling out factors such as model\noverconfidence and data familiarity. We hope that highlighting this issue in\nLLMs and ruling out several apparent causes will help future research in\nself-improvement.",
+    "authors": [
+      "Dongwei Jiang",
+      "Alvin Zhang",
+      "Andrew Wang",
+      "Nicholas Andrews",
+      "Daniel Khashabi"
+    ],
+    "likes": 50,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11930",
+    "date_collected": "2025-06-22T07:06:55.065070+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "피드백 마찰: LLMs가 외부 피드백을 완전히 흡수하는 데 어려움을 겪다",
+      "abstract": "최근 연구에서 LLMs는 외부 피드백을 받을 때 답변을 개선하는 능력을 가지고 있음이 밝혀졌다. 그러나 이러한 모델이 외부 피드백을 효과적으로 어떻게 완전하게 흡수할 수 있는지는 여전히 불분명하다. 본 논문에서는 LLMs가 피드백을 흡수하는 능력을 체계적으로 조사하고자 하며, 이를 위해 실험적 환경을 설계한다."
+    },
+    "summary": "1. 최근 연구에 따르면 LLMs는 외부 피드백을 통해 자신의 답변을 개선할 수 있지만, '피드백 마찰'이라는 제약으로 완전한 개선이 어렵다.\n2. 실험 결과, LLMs가 외부 피드백을 받아도 잘못된 답을 올바른 것으로 바꾸는 데 저항을 보이며, 이를 해소하기 위한 다양한 전략이 실패하는 것으로 나타났다.\n3. 연구는 LLMs의 피드백 처리 능력의 문제를 명확히 하고, 모델의 성능 향상을 위한 향후 연구에 도움이 될 것으로 기대된다."
+  },
+  {
+    "title": "CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction\n  Following",
+    "abstract": "Recent advances in audio-text large language models (LLMs) have opened new\npossibilities for music understanding and generation. However, existing\nbenchmarks are limited in scope, often relying on simplified tasks or\nmulti-choice evaluations that fail to reflect the complexity of real-world\nmusic analysis. We reinterpret a broad range of traditional MIR annotations as\ninstruction-following formats and introduce CMI-Bench, a comprehensive music\ninstruction following benchmark designed to evaluate audio-text LLMs on a\ndiverse set of music information retrieval (MIR) tasks. These include genre\nclassification, emotion regression, emotion tagging, instrument classification,\npitch estimation, key detection, lyrics transcription, melody extraction, vocal\ntechnique recognition, instrument performance technique detection, music\ntagging, music captioning, and (down)beat tracking: reflecting core challenges\nin MIR research. Unlike previous benchmarks, CMI-Bench adopts standardized\nevaluation metrics consistent with previous state-of-the-art MIR models,\nensuring direct comparability with supervised approaches. We provide an\nevaluation toolkit supporting all open-source audio-textual LLMs, including\nLTU, Qwen-audio, SALMONN, MusiLingo, etc. Experiment results reveal significant\nperformance gaps between LLMs and supervised models, along with their culture,\nchronological and gender bias, highlighting the potential and limitations of\ncurrent models in addressing MIR tasks. CMI-Bench establishes a unified\nfoundation for evaluating music instruction following, driving progress in\nmusic-aware LLMs.",
+    "authors": [
+      "Yinghao Ma",
+      "Siyou Li",
+      "Juntao Yu",
+      "Emmanouil Benetos",
+      "Akira Maezawa"
+    ],
+    "likes": 48,
+    "published_date": "Jun 14",
+    "url": "https://huggingface.co/papers/2506.12285",
+    "date_collected": "2025-06-22T07:06:55.066251+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "CMI-Bench: 음악 지시평가를 위한 포괄적인 벤치마크",
+      "abstract": "최근 오디오-텍스트 대형 언어 모델(LLMs)의 발전으로 음악 이해와 생성 분야에 새로운 가능성이 열렸습니다. 그러나 기존의 벤치마크는 범위가 제한되어 있어 실제 음악 분석의 복잡성을 반영하지 못하는 단순화된 작업이나 다중 선택 평가에 의존합니다. 우리는 다양한 음악 정보 검색(MIR) 작업에서 오디오-텍스트 LLMs를 평가하기 위해 CMI-Bench를 소개합니다. 이 작업에는 장르 분류, 감정 회귀, 감정 태깅, 악기 분류, 음높이 추정, 조표 탐지, 가사 작성, 멜로디 추출, 보컬 기법 인식, 악기 연주 기법 탐지, 음악 태깅, 음악 캡션, 그리고 (다운)비트 추적 등이 포함되어 있습니다. CMI-Bench는 이전 벤치마크와는 달리, 이전 최신 MIR 모델과 일관된 표준화된 평가 지표를 채택하여 감독 학습 방법과 직접 비교할 수 있도록 합니다. 우리는 LTU, Qwen-audio, SALMONN, MusiLingo 등을 포함한 모든 오픈 소스 오디오-텍스트 LLMs를 지원하는 평가 도구 세트를 제공합니다. 실험 결과는 LLMs와 감독 모델 사이의 상당한 성능 차이뿐 아니라 그들의 문화, 연대 및 성별 편향을 드러내며, 현재 모델이 MIR 작업에 대해 갖는 잠재력과 한계를 강조합니다. CMI-Bench는 음악 지시 평가를 평가하기 위한 통합 기반을 마련하여 음악 인식형 LLMs의 발전을 이끌어냅니다."
+    },
+    "summary": "1. CMI-Bench는 오디오-텍스트 LLMs를 다양한 MIR 작업에서 평가하는 포괄적인 벤치마크로, 이전 모델들과의 직접 비교를 위해 일관된 평가 지표를 채택합니다.\n2. 실험 결과는 LLMs와 감독 모델 간의 성능 차이뿐 아니라 문화, 연대, 성별 편향을 보여주며, 현재 모델의 MIR 작업 처리에 대한 잠재력과 한계를 강조합니다.\n3. CMI-Bench는 음악 지시 평가를 위한 통합된 기반을 제공하여 음악 인식형 LLMs의 발전을 촉진합니다."
+  },
+  {
+    "title": "DoTA-RAG: Dynamic of Thought Aggregation RAG",
+    "abstract": "In this paper, we introduce DoTA-RAG (Dynamic-of-Thought Aggregation RAG), a\nretrieval-augmented generation system optimized for high-throughput,\nlarge-scale web knowledge indexes. Traditional RAG pipelines often suffer from\nhigh latency and limited accuracy over massive, diverse datasets. DoTA-RAG\naddresses these challenges with a three-stage pipeline: query rewriting,\ndynamic routing to specialized sub-indexes, and multi-stage retrieval and\nranking. We further enhance retrieval by evaluating and selecting a superior\nembedding model, re-embedding the large FineWeb-10BT corpus. Moreover, we\ncreate a diverse Q&A dataset of 500 questions generated via the DataMorgana\nsetup across a broad range of WebOrganizer topics and formats. DoTA-RAG\nimproves the answer correctness score from 0.752 (baseline, using LiveRAG\npre-built vector store) to 1.478 while maintaining low latency, and it achieves\na 0.929 correctness score on the Live Challenge Day. These results highlight\nDoTA-RAG's potential for practical deployment in domains requiring fast,\nreliable access to large and evolving knowledge sources.",
+    "authors": [
+      "Saksorn Ruangtanusak",
+      "Natthapath Rungseesiripak",
+      "Peerawat Rojratchadakorn",
+      "Monthol Charattrakool",
+      "Natapong Nitarach"
+    ],
+    "likes": 44,
+    "published_date": "Jun 14",
+    "url": "https://huggingface.co/papers/2506.12571",
+    "date_collected": "2025-06-22T07:06:55.067396+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "도타-랙: 생각 집합의 동적",
+      "abstract": "본 논문에서는 고성능 대규모 웹 지식 색인을 위해 최적화된 검색 보강 생성 시스템인 도타-랙(생각 집합의 동적)을 소개합니다. 기존 RAG 파이프라인은 대규모 다양한 데이터셋에서 높은 대기 시간과 제한된 정확성에 어려움을 겪습니다. 도타-랙은 질의 재작성, 전문 하위 색인으로 동적 라우팅, 다단계 검색 및 순위 매기기와 같은 세 가지 단계로 이러한 도전 과제를 해결합니다. 또한 대용량 FineWeb-10BT 코퍼스를 재포함하여 우수한 임베딩 모델을 평가하고 선택하여 검색을 개선합니다. 더불어 DataMorgana 설정을 통해 생성된 500개 질문의 다양한 Q&A 데이터셋을 만들었으며, 이는 WebOrganizer 주제 및 형식의 범위를 포괄합니다. 도타-랙은 낮은 대기 시간을 유지하면서 LiveRAG 사전 빌드 벡터 저장소를 사용한 0.752(기준선)에서 1.478의 정답 정확도 점수를 향상시킵니다. 또한 Live Challenge Day에서 0.929의 정확도 점수를 달성합니다. 이러한 결과는 도타-랙이 대규모이고 발전하는 지식 소스에 빠르고 안정적으로 접근이 필요한 분야에서 현실적인 배포 잠재력을 강조합니다."
+    },
+    "summary": "1. DoTA-RAG은 대규모 웹 지식 색인을 위한 검색 보강 생성 시스템으로, 세 단계 파이프라인을 통해 높은 대기 시간과 제한된 정확성 문제를 해결한다.\n2. 임베딩 모델의 평가와 선택으로 검색을 개선하며, 다양한 주제와 형식의 500개 질문을 담은 Q&A 데이터셋을 생성한다.\n3. DoTA-RAG은 저지연을 유지하면서 정답 정확도를 향상시켜 대규모이고 변화하는 지식 소스에 빠르고 신뢰할 수 있는 접근을 제공하며, 실용적인 적용 가능성을 갖춘다."
+  },
+  {
+    "title": "Wait, We Don't Need to \"Wait\"! Removing Thinking Tokens Improves\n  Reasoning Efficiency",
+    "abstract": "Recent advances in large reasoning models have enabled complex, step-by-step\nreasoning but often introduce significant overthinking, resulting in verbose\nand redundant outputs that hinder efficiency. In this study, we examine whether\nexplicit self-reflection, signaled by tokens such as \"Wait\" and \"Hmm\", is\nnecessary for advanced reasoning. We propose NoWait, a simple yet effective\napproach that disables explicit self-reflection by suppressing these tokens\nduring inference. Extensive experiments on ten benchmarks across textual,\nvisual, and video reasoning tasks show that NoWait reduces chain-of-thought\ntrajectory length by up to 27%-51% in five R1-style model series, without\ncompromising model utility. NoWait thus offers a plug-and-play solution for\nefficient and utility-preserving multimodal reasoning.",
+    "authors": [
+      "Chenlong Wang",
+      "Yuanning Feng",
+      "Dongping Chen",
+      "Zhaoyang Chu",
+      "Ranjay Krishna",
+      "Tianyi Zhou"
+    ],
+    "likes": 42,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2506.08343",
+    "date_collected": "2025-06-22T07:06:55.068606+09:00",
+    "week": "2025-W25",
+    "translation": {
+      "title": "기다릴 필요 없어요! 사고 토큰 제거가 추론 효율성 향상",
+      "abstract": "최근 대규모 추론 모델의 발전은 복잡한 단계별 추론을 가능케 했지만 종종 지나치게 과유불급한 것으로, 효율성을 해치는 장황하고 중복된 결과를 가져옵니다. 본 연구에서는 \"기다려\"나 \"음...\"과 같은 토큰에 의한 명시적 자기반성이 고급 추론에 필요한지 검토합니다. 저희는 NoWait이라는 명시적 자기반성을 차단하고 추론 과정에서 이러한 토큰을 억제하는 간단하면서도 효과적인 방법을 제안합니다. 텍스트, 시각, 비디오 추론 과업을 포함한 열 가지 벤치마크에서의 방대한 실험 결과는 NoWait이 R1-스타일 모델 시리즈 다섯 개에서 사고의 흔적 궤적 길이를 최대 27%-51% 감소시키는 것을 보여주었으며, 모델의 유틸리티에 손상을 주지 않습니다. NoWait은 효율적이고 유틸리티를 보존하는 다중모달 추론을 위한 플러그 앤 플레이 솔루션을 제공합니다."
+    },
+    "summary": "1. 복잡한 추론 모델의 장점을 유지하면서 효율성을 높이기 위해 명시적 자기반성을 제거하는 NoWait 방법을 소개하고 실험 결과로 효과를 입증했습니다.\n2. NoWait은 텍스트, 시각, 비디오 추론과제에서 사용된 벤치마크에서 사고의 흔적 궤적 길이를 27%-51%까지 줄이는 효과를 보여주었습니다.\n3. 이 연구는 NoWait이 모델의 성능을 희생하지 않으면서도 효율적이고 유용한 다중모달 추론을 가능하게 하는 플러그 앤 플레이 솔루션이라는 결론을 얻었습니다."
+  }
+]

@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Apr 14 22:22:17 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W16
+URL: https://huggingface.co/papers/week/2026-W16
+Found 10 papers in weekly view
+Fetching likes for: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Fetching likes for: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Fetching likes for: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Fetching likes for: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Fetching likes for: OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation
+Fetching likes for: Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation
+Fetching likes for: EXAONE 4.5 Technical Report
+Fetching likes for: Strips as Tokens: Artist Mesh Generation with Native UV Segmentation
+Fetching likes for: Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory
+Fetching likes for: Uni-ViGU: Towards Unified Video Generation and Understanding via A Diffusion-Based Video Generator
+Selected top 10 papers by likes:
+1. WildDet3D: Scaling Promptable 3D Detection in the Wild (224 likes)
+2. QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation (109 likes)
+3. FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios (86 likes)
+4. The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping (80 likes)
+5. OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation (55 likes)
+6. Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation (55 likes)
+7. EXAONE 4.5 Technical Report (50 likes)
+8. Strips as Tokens: Artist Mesh Generation with Native UV Segmentation (44 likes)
+9. Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory (41 likes)
+10. Uni-ViGU: Towards Unified Video Generation and Understanding via A Diffusion-Based Video Generator (39 likes)
+Found abstract: Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step...
+Processed paper: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Found abstract: Large Language Models (LLMs) are increasingly used for code generation, yet quantum code generation ...
+Processed paper: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Found abstract: The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transi...
+Processed paper: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Found abstract: Despite the success of reinforcement learning for large language models, a common failure mode is re...
+Processed paper: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Found abstract: In this work, we study Human-Object Interaction Video Generation (HOIVG), which aims to synthesize h...
+Processed paper: OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation
+Found abstract: As the foundational architecture of modern machine learning, Transformers have driven remarkable pro...
+Processed paper: Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation
+Found abstract: This technical report introduces EXAONE 4.5, the first open-weight vision language model released by...
+Processed paper: EXAONE 4.5 Technical Report
+Found abstract: Recent advancements in autoregressive transformers have demonstrated remarkable potential for genera...
+Processed paper: Strips as Tokens: Artist Mesh Generation with Native UV Segmentation
+Found abstract: With the advancement of interactive video generation, diffusion models have increasingly demonstrate...
+Processed paper: Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory
+Found abstract: Unified multimodal models integrating visual understanding and generation face a fundamental challen...
+Processed paper: Uni-ViGU: Towards Unified Video Generation and Understanding via A Diffusion-Based Video Generator
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: WildDet3D: Scaling Promptable 3D Detection in the Wild
+Paper already exists, checking if translation is complete...
+Update likes: 224  ->  193
+Update date_collected: 2026-04-15T07:22:26.880108+09:00  ->  2026-04-14T07:23:01.951316+09:00
+
+Processing paper 2/10
+Title: QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  82
+Update date_collected: 2026-04-15T07:22:26.883781+09:00  ->  2026-04-14T07:23:01.953374+09:00
+
+Processing paper 4/10
+Title: The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: EXAONE 4.5 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  33
+Update date_collected: 2026-04-15T07:22:26.891913+09:00  ->  2026-04-14T07:23:01.958860+09:00
+
+Processing paper 8/10
+Title: Strips as Tokens: Artist Mesh Generation with Native UV Segmentation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory
+Paper already exists, checking if translation is complete...
+Update likes: 41  ->  32
+Update date_collected: 2026-04-15T07:22:26.896118+09:00  ->  2026-04-14T07:23:01.961261+09:00
+
+Processing paper 10/10
+Title: Uni-ViGU: Towards Unified Video Generation and Understanding via A Diffusion-Based Video Generator
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W16.json...
+
+Updating Notion database...
+Updating paper: 야생에서의 프롬프터 가능한 3D 탐지의 확장 (3D Detection in the Wild) (likes: 193 -> 224)
+Creating new paper: QuanBench+: LLM 기반 양자 코드 생성을 위한 통합된 다중 프레임워크 벤치마크
+Updating paper: FORGE: 제조 시나리오에 대한 세밀한 다중 모달 평가 (likes: 82 -> 86)
+Creating new paper: 과거는 지나지 않았다: 기억 강화형 동적 보상 형성
+Creating new paper: OmniShow: 인간-객체 상호작용 비디오 생성을 위한 다중 모달 조건 통합
+Creating new paper: 트랜스포머의 어텐션 싱크: 활용, 해석, 완화에 대한 조사
+Updating paper: EXAONE 4.5 기술 보고서 (likes: 33 -> 50)
+Creating new paper: 토큰으로서의 스트립: 네이티브 UV 세분화를 통한 아티스트 메쉬 생성
+Updating paper: 매트릭스 게임 3.0: 장기 기억을 갖춘 실시간 및 스트리밍 상호작용형 세계 모델 (likes: 32 -> 41)
+Creating new paper: 통합 비디오 생성 및 이해를 향하여: 확산 기반 비디오 생성기를 통한 통합(Uni-ViGU)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Apr 14 22:24:27 UTC 2026 ===
+

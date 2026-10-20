@@ -1,0 +1,125 @@
+=== Paper Collection Started at Wed Nov 19 22:08:03 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W47
+URL: https://huggingface.co/papers/week/2025-W47
+Found 10 papers in weekly view
+Fetching likes for: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Fetching likes for: P1: Mastering Physics Olympiads with Reinforcement Learning
+Fetching likes for: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Fetching likes for: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Fetching likes for: DoPE: Denoising Rotary Position Embedding
+Fetching likes for: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Fetching likes for: AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models
+Fetching likes for: MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation
+Fetching likes for: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Fetching likes for: GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning
+Selected top 10 papers by likes:
+1. MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling (136 likes)
+2. P1: Mastering Physics Olympiads with Reinforcement Learning (119 likes)
+3. Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance (101 likes)
+4. Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data (93 likes)
+5. DoPE: Denoising Rotary Position Embedding (86 likes)
+6. Part-X-MLLM: Part-aware 3D Multimodal Large Language Model (65 likes)
+7. AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models (58 likes)
+8. MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation (57 likes)
+9. Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models (52 likes)
+10. GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning (47 likes)
+Found abstract: We present MiroThinker v1.0, an open-source research agent designed to advance tool-augmented reason...
+Processed paper: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Found abstract: Recent progress in large language models (LLMs) has moved the frontier from puzzle-solving to scienc...
+Processed paper: P1: Mastering Physics Olympiads with Reinforcement Learning
+Found abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, but t...
+Processed paper: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Found abstract: We present Uni-MoE 2.0 from the Lychee family. As a fully open-source omnimodal large model (OLM), i...
+Processed paper: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Found abstract: Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrap...
+Processed paper: DoPE: Denoising Rotary Position Embedding
+Found abstract: We introduce Part-X-MLLM, a native 3D multimodal large language model that unifies diverse 3D tasks ...
+Processed paper: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Found abstract: We present AraLingBench: a fully human annotated benchmark for evaluating the Arabic linguistic comp...
+Processed paper: AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models
+Found abstract: While thinking-aware generation aims to improve performance on complex tasks, we identify a critical...
+Processed paper: MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation
+Found abstract: Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constra...
+Processed paper: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Found abstract: Large Language Models have shown strong potential as rerankers to enhance the overall performance of...
+Processed paper: GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Paper already exists, checking if translation is complete...
+Update likes: 136  ->  75
+Update date_collected: 2025-11-20T07:08:12.099647+09:00  ->  2025-11-19T07:08:08.412162+09:00
+
+Processing paper 2/10
+Title: P1: Mastering Physics Olympiads with Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 119  ->  105
+Update date_collected: 2025-11-20T07:08:12.101542+09:00  ->  2025-11-19T07:08:08.407484+09:00
+
+Processing paper 3/10
+Title: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Paper already exists, checking if translation is complete...
+Update likes: 101  ->  74
+Update date_collected: 2025-11-20T07:08:12.102934+09:00  ->  2025-11-19T07:08:08.413561+09:00
+
+Processing paper 4/10
+Title: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Paper already exists, checking if translation is complete...
+Update likes: 93  ->  85
+Update date_collected: 2025-11-20T07:08:12.104369+09:00  ->  2025-11-19T07:08:08.409003+09:00
+
+Processing paper 5/10
+Title: DoPE: Denoising Rotary Position Embedding
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  84
+Update date_collected: 2025-11-20T07:08:12.105605+09:00  ->  2025-11-19T07:08:08.410257+09:00
+
+Processing paper 6/10
+Title: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Paper already exists, checking if translation is complete...
+Update likes: 65  ->  62
+Update date_collected: 2025-11-20T07:08:12.106930+09:00  ->  2025-11-19T07:08:08.414878+09:00
+
+Processing paper 7/10
+Title: AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  42
+Update date_collected: 2025-11-20T07:08:12.109727+09:00  ->  2025-11-19T07:08:08.417817+09:00
+
+Processing paper 9/10
+Title: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  40
+Update date_collected: 2025-11-20T07:08:12.112346+09:00  ->  2025-11-19T07:08:08.419212+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W47.json...
+
+Updating Notion database...
+Updating paper: MiroThinker: 모델, 맥락, 상호작용 확장을 통한 오픈소스 연구 에이전트의 성능한계 돌파 (likes: 75 -> 136)
+Updating paper: 물리 올림피아드를 통한 강화 학습의 성공 (likes: 105 -> 119)
+Updating paper: 간단한 산술이 최신 LLM 성능의 열쇠를 제공하는 수퍼-모델 (likes: 74 -> 101)
+Updating paper: Uni-MoE-2.0-Omni: 고급 MoE, 훈련 및 데이터로 언어 중심 옴니모달 대형 모델 확장 (likes: 85 -> 93)
+Updating paper: DoPE: Denoising Rotary Position Embedding (likes: 84 -> 86)
+Updating paper: Part-X-MLLM: 파트-인식 3D 다중 모달 대형 언어 모델 (likes: 62 -> 65)
+Creating new paper: AraLingBench: 대형 언어 모델의 아랍어 언어 능력 평가를 위한 인간 주석된 벤치마크
+Updating paper: MMaDA-Parallel: Thinking-Aware 편집과 생성을 위한 멀티모달 대규모 확산 언어 모델 (likes: 42 -> 57)
+Creating new paper: 어려운 곳에서 생각하라: 추론 언어 모델 향상을 위한 선택적 잠재적 반복
+Updating paper: 그룹랭크: 강화학습 기반의 그룹별 다시 순위 지정 패러다임 (likes: 40 -> 47)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Nov 19 22:10:07 UTC 2025 ===
+

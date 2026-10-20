@@ -1,0 +1,133 @@
+=== Paper Collection Started at Wed Jul  1 22:35:35 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W27
+URL: https://huggingface.co/papers/week/2026-W27
+Found 10 papers in weekly view
+Fetching likes for: Orca: The World is in Your Mind
+Fetching likes for: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Fetching likes for: Dockerless: Environment-Free Program Verifier for Coding Agents
+Fetching likes for: DOPD: Dual On-policy Distillation
+Fetching likes for: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Fetching likes for: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Fetching likes for: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Fetching likes for: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Fetching likes for: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Fetching likes for: Qwen-Image-2.0-RL Technical Report
+Selected top 10 papers by likes:
+1. Orca: The World is in Your Mind (176 likes)
+2. Agentic Abstention: Do Agents Know When to Stop Instead of Act? (129 likes)
+3. Dockerless: Environment-Free Program Verifier for Coding Agents (86 likes)
+4. DOPD: Dual On-policy Distillation (75 likes)
+5. LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing (75 likes)
+6. Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent (73 likes)
+7. BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding (67 likes)
+8. Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs (52 likes)
+9. PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation (49 likes)
+10. Qwen-Image-2.0-RL Technical Report (46 likes)
+Found abstract: We introduce Orca, an initial instantiation of a general world foundation model. Orca learns a unifi...
+Processed paper: Orca: The World is in Your Mind
+Found abstract: LLM agents are expected to act over multiple turns, using search, browsing interfaces, and terminal ...
+Processed paper: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Found abstract: Program verifiers play a central role in training coding agents, including selecting trajectories fo...
+Processed paper: Dockerless: Environment-Free Program Verifier for Coding Agents
+Found abstract: On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajec...
+Processed paper: DOPD: Dual On-policy Distillation
+Found abstract: Streaming video editing has made rapid progress, yet practical deployment is still limited by two co...
+Processed paper: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Found abstract: We introduce Agents-A1, a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level...
+Processed paper: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Found abstract: Speculative decoding accelerates inference by using a lightweight draft model to generate candidate ...
+Processed paper: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Found abstract: We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprisin...
+Processed paper: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Found abstract: Video generation models have emerged as a promising paradigm for embodied world simulation. However,...
+Processed paper: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Found abstract: We present Qwen-Image-2.0-RL, a post-training pipeline that applies reinforcement learning from huma...
+Processed paper: Qwen-Image-2.0-RL Technical Report
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Orca: The World is in Your Mind
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 2/10
+Title: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Paper already exists, checking if translation is complete...
+Update likes: 129  ->  120
+Update date_collected: 2026-07-02T07:35:49.469145+09:00  ->  2026-07-01T07:33:41.626296+09:00
+
+Processing paper 3/10
+Title: Dockerless: Environment-Free Program Verifier for Coding Agents
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 4/10
+Title: DOPD: Dual On-policy Distillation
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 5/10
+Title: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Paper already exists, checking if translation is complete...
+Update likes: 75  ->  70
+Update date_collected: 2026-07-02T07:35:49.477492+09:00  ->  2026-07-01T07:33:41.628605+09:00
+
+Processing paper 6/10
+Title: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  67
+Update date_collected: 2026-07-02T07:35:49.480872+09:00  ->  2026-07-01T07:33:41.631866+09:00
+
+Processing paper 7/10
+Title: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 8/10
+Title: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  52
+Update date_collected: 2026-07-02T07:35:49.485547+09:00  ->  2026-07-01T07:33:41.634027+09:00
+
+Processing paper 9/10
+Title: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  45
+Update date_collected: 2026-07-02T07:35:49.488463+09:00  ->  2026-07-01T07:33:41.636840+09:00
+
+Processing paper 10/10
+Title: Qwen-Image-2.0-RL Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  42
+Update date_collected: 2026-07-02T07:35:49.491783+09:00  ->  2026-07-01T07:33:41.645207+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W27.json...
+
+Updating Notion database...
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Updating paper: 의도적 절제: 에이전트들은 행동을 멈출 때를 알까? (likes: 120 -> 129)
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Updating paper: 실시간 확산 기반 스트리밍 비디오 편집을 향하여 (likes: 70 -> 75)
+Updating paper: 파라미터를 확장하지 않고 수평을 넓히다: 35B 에이전트로 조 야 니언 파라미터 성능 달성 (likes: 67 -> 73)
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리
+Updating paper: 로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing (likes: 45 -> 49)
+Updating paper: Qwen-Image-2.0-RL 기술 보고서 (likes: 42 -> 46)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jul  1 22:37:07 UTC 2026 ===
+

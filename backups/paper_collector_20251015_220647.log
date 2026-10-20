@@ -1,0 +1,157 @@
+=== Paper Collection Started at Tue Oct 14 22:08:06 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W42
+URL: https://huggingface.co/papers/week/2025-W42
+Found 10 papers in weekly view
+Fetching likes for: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Fetching likes for: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Fetching likes for: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Fetching likes for: Diffusion Transformers with Representation Autoencoders
+Fetching likes for: KORMo: Korean Open Reasoning Model for Everyone
+Fetching likes for: TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling
+Fetching likes for: AutoPR: Let's Automate Your Academic Promotion!
+Fetching likes for: BEAR: Benchmarking and Enhancing Multimodal Language Models for Atomic
+  Embodied Capabilities
+Fetching likes for: Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs
+Fetching likes for: OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni
+  MLLMs
+Selected top 10 papers by likes:
+1. D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI (119 likes)
+2. QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs (98 likes)
+3. Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation (92 likes)
+4. Diffusion Transformers with Representation Autoencoders (85 likes)
+5. KORMo: Korean Open Reasoning Model for Everyone (54 likes)
+6. TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling (44 likes)
+7. AutoPR: Let's Automate Your Academic Promotion! (43 likes)
+8. BEAR: Benchmarking and Enhancing Multimodal Language Models for Atomic
+  Embodied Capabilities (42 likes)
+9. Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs (40 likes)
+10. OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni
+  MLLMs (38 likes)
+Found abstract: Large language models leverage internet-scale text data, yet embodied AI
+remains constrained by the ...
+Processed paper: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Found abstract: We propose QeRL, a Quantization-enhanced Reinforcement Learning framework for
+large language models ...
+Processed paper: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Found abstract: Camera-centric understanding and generation are two cornerstones of spatial
+intelligence, yet they a...
+Processed paper: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Found abstract: Latent generative modeling, where a pretrained autoencoder maps pixels into a
+latent space for the d...
+Processed paper: Diffusion Transformers with Representation Autoencoders
+Found abstract: This work presents the first large-scale investigation into constructing a
+fully open bilingual larg...
+Processed paper: KORMo: Korean Open Reasoning Model for Everyone
+Found abstract: Recent diffusion models achieve the state-of-the-art performance in image
+generation, but often suff...
+Processed paper: TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling
+Found abstract: As the volume of peer-reviewed research surges, scholars increasingly rely on
+social platforms for d...
+Processed paper: AutoPR: Let's Automate Your Academic Promotion!
+Found abstract: Embodied capabilities refer to a suite of fundamental abilities for an agent
+to perceive, comprehend...
+Processed paper: BEAR: Benchmarking and Enhancing Multimodal Language Models for Atomic
+  Embodied Capabilities
+Found abstract: Large Language Models (LLMs) have shown remarkable success, and their
+multimodal expansions (MLLMs) ...
+Processed paper: Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs
+Found abstract: Recent advances in multimodal large language models (MLLMs) have demonstrated
+substantial potential ...
+Processed paper: OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni
+  MLLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Paper already exists, checking if translation is complete...
+Update likes: 119  ->  100
+Update date_collected: 2025-10-15T07:08:16.489739+09:00  ->  2025-10-14T07:07:39.863940+09:00
+
+Processing paper 2/10
+Title: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 92  ->  85
+Update date_collected: 2025-10-15T07:08:16.492412+09:00  ->  2025-10-14T07:07:39.865378+09:00
+
+Processing paper 4/10
+Title: Diffusion Transformers with Representation Autoencoders
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: KORMo: Korean Open Reasoning Model for Everyone
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion
+  Sampling
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  38
+Update date_collected: 2025-10-15T07:08:16.495876+09:00  ->  2025-10-14T07:07:39.868151+09:00
+
+Processing paper 7/10
+Title: AutoPR: Let's Automate Your Academic Promotion!
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  38
+Update date_collected: 2025-10-15T07:08:16.497230+09:00  ->  2025-10-14T07:07:39.866921+09:00
+
+Processing paper 8/10
+Title: BEAR: Benchmarking and Enhancing Multimodal Language Models for Atomic
+  Embodied Capabilities
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Multimodal Prompt Optimization: Why Not Leverage Multiple Modalities for
+  MLLMs
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  35
+Update date_collected: 2025-10-15T07:08:16.499861+09:00  ->  2025-10-14T07:07:39.869266+09:00
+
+Processing paper 10/10
+Title: OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni
+  MLLMs
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W42.json...
+
+Updating Notion database...
+Updating paper: 데스크톱 데이터에서 비전-행동 사전학습 확장하여 실체화된 AI로의 이전을 위한 D2E (likes: 100 -> 119)
+Creating new paper: QeRL: 효율 이상을 넘어서 -- 양자화 강화 학습을 통한 대규모 언어 모델(Large Language Models, LLMs)에 대한 연구
+Updating paper: 카메라와 함께하는 사고: 카메라 중심의 이해 및 생성을 위한 통합적 다중 모달 모델 (likes: 85 -> 92)
+Creating new paper: 표현 자동인코더와 함께 하는 확산 트랜스포머
+Creating new paper: 모두를 위한 한국어 오픈 추론 모델 KORMo
+Updating paper: TAG: 측면 증폭 안내를 이용한 환각 억제 확산 샘플링 (likes: 38 -> 44)
+Updating paper: 자동 PR: 학술 승진을 자동화합시다! (likes: 38 -> 43)
+Creating new paper: BEAR: 벤치마킹과 원자적 신체 능력을 위한 다중 모달 언어 모델 강화
+Updating paper: 다중 모달 프롬프트 최적화: MLLM을 위해 여러 모달리티를 활용하는 이유 (likes: 35 -> 40)
+Creating new paper: OmniVideoBench: 오미(Audio-Visual; 오디오-비주얼) 이해 평가를 향하여 Omni MLLMs(다중언어 대형 모델)를 위한
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Oct 14 22:10:04 UTC 2025 ===
+

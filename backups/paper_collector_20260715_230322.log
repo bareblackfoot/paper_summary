@@ -1,0 +1,135 @@
+=== Paper Collection Started at Tue Jul 14 23:02:21 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W29
+URL: https://huggingface.co/papers/week/2026-W29
+Found 10 papers in weekly view
+Fetching likes for: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Fetching likes for: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Fetching likes for: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Fetching likes for: Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Fetching likes for: Video Generation Models are General-Purpose Vision Learners
+Fetching likes for: Scalable Visual Pretraining for Language Intelligence
+Fetching likes for: 4D Human-Scene Reconstruction from Low-Overlap Captures
+Fetching likes for: LightMem-Ego: Your AI Memory for Everyday Life
+Fetching likes for: Trust Region Policy Distillation
+Fetching likes for: AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification
+Selected top 10 papers by likes:
+1. Weak-to-Strong Generalization via Direct On-Policy Distillation (92 likes)
+2. ABot-N1: Toward a General Visual Language Navigation Foundation Model (80 likes)
+3. ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory (68 likes)
+4. Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading (61 likes)
+5. Video Generation Models are General-Purpose Vision Learners (54 likes)
+6. Scalable Visual Pretraining for Language Intelligence (49 likes)
+7. 4D Human-Scene Reconstruction from Low-Overlap Captures (41 likes)
+8. LightMem-Ego: Your AI Memory for Everyday Life (33 likes)
+9. Trust Region Policy Distillation (21 likes)
+10. AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification (19 likes)
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-mo...
+Processed paper: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Found abstract: Visual Language Navigation foundation models aim to unify deep reasoning for grounded spatial decisi...
+Processed paper: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Found abstract: Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon ...
+Processed paper: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Found abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, exist...
+Processed paper: Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Found abstract: Driven by next-token prediction, NLP shifted from task-specific models into powerful generalist foun...
+Processed paper: Video Generation Models are General-Purpose Vision Learners
+Found abstract: The rapid progress of large foundation models has been driven predominantly by pretraining on large-...
+Processed paper: Scalable Visual Pretraining for Language Intelligence
+Found abstract: Existing volumetric capture of dynamic human performance achieves high fidelity with dense camera ar...
+Processed paper: 4D Human-Scene Reconstruction from Low-Overlap Captures
+Found abstract: Personal AI assistants on mobile and wearable devices continuously perceive users' daily lives throu...
+Processed paper: LightMem-Ego: Your AI Memory for Everyday Life
+Found abstract: Big goals are hard to achieve all at once; breaking them into small steps is wiser. We present Trust...
+Processed paper: Trust Region Policy Distillation
+Found abstract: Large language models (LLMs) have achieved remarkable performance on high-school and olympiad-style ...
+Processed paper: AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 2/10
+Title: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 3/10
+Title: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 4/10
+Title: Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  46
+Update date_collected: 2026-07-15T08:02:30.478030+09:00  ->  2026-07-14T08:01:54.472082+09:00
+
+Processing paper 5/10
+Title: Video Generation Models are General-Purpose Vision Learners
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  40
+Update date_collected: 2026-07-15T08:02:30.481590+09:00  ->  2026-07-14T08:01:54.479061+09:00
+
+Processing paper 6/10
+Title: Scalable Visual Pretraining for Language Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  41
+Update date_collected: 2026-07-15T08:02:30.484898+09:00  ->  2026-07-14T08:01:54.475449+09:00
+
+Processing paper 7/10
+Title: 4D Human-Scene Reconstruction from Low-Overlap Captures
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 8/10
+Title: LightMem-Ego: Your AI Memory for Everyday Life
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 9/10
+Title: Trust Region Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 21  ->  17
+Update date_collected: 2026-07-15T08:02:30.493493+09:00  ->  2026-07-14T08:01:54.481786+09:00
+
+Processing paper 10/10
+Title: AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W29.json...
+
+Updating Notion database...
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 46 -> 61)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 40 -> 54)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 41 -> 49)
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 17 -> 21)
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jul 14 23:03:30 UTC 2026 ===
+

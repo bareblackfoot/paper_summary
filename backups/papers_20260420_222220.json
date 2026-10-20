@@ -1,0 +1,329 @@
+[
+  {
+    "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
+    "abstract": "Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step toward this goal is monocular 3D object detection--recovering the extent, location, and orientation of objects from an input RGB image. To be practical in the open world, such a detector must generalize beyond closed-set categories, support diverse prompt modalities, and leverage geometric cues when available. Progress is hampered by two bottlenecks: existing methods are designed for a single prompt type and lack a mechanism to incorporate additional geometric cues, and current 3D datasets cover only narrow categories in controlled environments, limiting open-world transfer. In this work we address both gaps. First, we introduce WildDet3D, a unified geometry-aware architecture that natively accepts text, point, and box prompts and can incorporate auxiliary depth signals at inference time. Second, we present WildDet3D-Data, the largest open 3D detection dataset to date, constructed by generating candidate 3D boxes from existing 2D annotations and retaining only human-verified ones, yielding over 1M images across 13.5K categories in diverse real-world scenes. WildDet3D establishes a new state-of-the-art across multiple benchmarks and settings. In the open-world setting, it achieves 22.6/24.8 AP3D on our newly introduced WildDet3D-Bench with text and box prompts. On Omni3D, it reaches 34.2/36.4 AP3D with text and box prompts, respectively. In zero-shot evaluation, it achieves 40.3/48.9 ODS on Argoverse 2 and ScanNet. Notably, incorporating depth cues at inference time yields substantial additional gains (+20.7 AP on average across settings).",
+    "authors": [
+      "Weikai Huang",
+      "Jieyu Zhang",
+      "Sijun Li",
+      "Taoyang Jia",
+      "Jiafei Duan",
+      "Yunqian Cheng",
+      "Jaemin Cho",
+      "Mattew Wallingford",
+      "Rustin Soraki",
+      "Chris Dongjoo Kim",
+      "Donovan Clay",
+      "Taira Anderson",
+      "Winson Han",
+      "Ali Farhadi",
+      "Bharath Hariharan",
+      "Zhongzheng Ren",
+      "Ranjay Krishna"
+    ],
+    "likes": 238,
+    "published_date": "Apr 9",
+    "url": "https://huggingface.co/papers/2604.08626",
+    "date_collected": "2026-04-20T10:41:33.780587+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "야생에서의 프롬프터 가능한 3D 탐지의 확장 (3D Detection in the Wild)",
+      "abstract": "단일 이미지로부터 3D에서 객체를 이해하는 것은 공간 지능의 중심입니다. 이러한 목표로의 주요 단계는 단안 (monocular) 3D 객체 탐지입니다 - 입력 RGB 이미지로부터 객체의 범위, 위치 및 방향을 복구하는 작업입니다. 이러한 탐지기가 실제 세계에서 실용적이기 위해서는 폐쇄 집합 범주를 넘어선 일반화되어야 하며, 다양한 프롬프트 양식을 지원하고 가능한 경우 지오메트릭 단서를 활용해야 합니다. 진전은 다음 두 가지 병목 현상으로 어렵습니다: 기존 방법은 단일 프롬프트 유형을 위해 설계되었으며 추가 지오메트릭 단서를 통합할 수 있는 메커니즘이 부족하며, 현재 3D 데이터셋은 통제된 환경에서의 좁은 범주만을 다루고 있어 실제 세계 전이를 제한하고 있습니다. 본 논문에서는 두 개의 이러한 갭을 해결합니다. 먼저, 우리는 텍스트, 포인트, 상자 프롬프트를 기본적으로 수용하고 추론 시 보조 깊이 신호를 통합할 수 있는 통합 지오메트리 인식 구조인 WildDet3D를 제시합니다. 둘째, 우리는 존재하는 2D 주석에서 후보 3D 상자를 생성하고 인간이 확인한 것만 보존하여 다양한 실제 세계 장면에서 13.5K 범주를 가진 1백만 개 이상의 이미지를 제공하는 현재까지 가장 큰 개방형 3D 탐지 데이터셋인 WildDet3D-Data를 제시합니다. WildDet3D는 여러 벤치마크 및 환경에서 새로운 최고 성능을 달성합니다. 개방형 세팅에서는 텍스트 및 상자 프롬프트를 사용하여 WildDet3D-Bench에서 22.6/24.8 AP3D를 달성합니다. Omni3D에서는 각각 텍스트 및 상자 프롬프트로 34.2/36.4 AP3D를 달성합니다. 제로샷 평가에서는 Argoverse 2와 ScanNet에서 각각 40.3/48.9 ODS를 달성합니다. 특히, 추론 시 깊이 단서를 통합하면 설정별 평균으로 추가적인 크게 높은 이익 (+20.7 AP)을 얻을 수 있습니다."
+    },
+    "summary": "1. WildDet3D는 다양한 프롬프트 타입과 지오메트리 신호를 통합 가능한 통합 지오메트리 인식 구조로, 대규모 개방형 3D 탐지 데이터셋을 통해 새로운 최고 성능을 달성함.\n2. 모델은 텍스트 및 상자 프롬프트를 사용하여 여러 벤치마크 및 환경에서 3D 객체 탐지에서 새로운 상태를 정립함.\n3. 깊이 단서를 추론 시 통합하면 설정별로 평균 20.7 AP 높은 추가적인 이익을 달성함.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+    "abstract": "Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China in early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro, Seedance 2.0 adopts a unified, highly efficient, and large-scale architecture for multi-modal audio-video joint generation. This allows it to support four input modalities: text, image, audio, and video, by integrating one of the most comprehensive suites of multi-modal content reference and editing capabilities available in the industry to date. It delivers substantial, well-rounded improvements across all key sub-dimensions of video and audio generation. In both expert evaluations and public user tests, the model has demonstrated performance on par with the leading levels in the field. Seedance 2.0 supports direct generation of audio-video content with durations ranging from 4 to 15 seconds, with native output resolutions of 480p and 720p. For multi-modal inputs as reference, its current open platform supports up to 3 video clips, 9 images, and 3 audio clips. In addition, we provide Seedance 2.0 Fast version, an accelerated variant of Seedance 2.0 designed to boost generation speed for low-latency scenarios. Seedance 2.0 has delivered significant improvements to its foundational generation capabilities and multi-modal generation performance, bringing an enhanced creative experience for end users.",
+    "authors": [
+      "Team Seedance",
+      "De Chen",
+      "Liyang Chen",
+      "Xin Chen",
+      "Ying Chen",
+      "Zhuo Chen",
+      "Zhuowei Chen",
+      "Feng Cheng",
+      "Tianheng Cheng",
+      "Yufeng Cheng",
+      "Mojie Chi",
+      "Xuyan Chi",
+      "Jian Cong",
+      "Qinpeng Cui",
+      "Fei Ding",
+      "Qide Dong",
+      "Yujiao Du",
+      "Haojie Duanmu",
+      "Junliang Fan",
+      "Jiarui Fang",
+      "Jing Fang",
+      "Zetao Fang"
+    ],
+    "likes": 140,
+    "published_date": "Apr 15",
+    "url": "https://huggingface.co/papers/2604.14148",
+    "date_collected": "2026-04-20T10:41:33.782891+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "Seedance 2.0: 세계 복잡도에 대한 비디오 생성 기술 진보",
+      "abstract": "Seedance 2.0은 2026년 초에 중국에서 공식적으로 출시된 새로운 네이티브 멀티 모달 오디오-비디오 생성 모델이다. 이전 버전인 Seedance 1.0 및 1.5 Pro와 비교하여 Seedance 2.0은 멀티 모달 오디오-비디오 공동 생성을 위한 통합적이고 고효율적이며 대규모 아키텍처를 도입했다. 이는 업계에서 현재까지 가장 포괄적인 멀티 모달 콘텐츠 참조 및 편집 기능 세트 중 하나를 통합하여 텍스트, 이미지, 오디오, 비디오의 네 가지 입력 모드를 지원한다. 이 모델은 비디오와 오디오 생성의 모든 주요 부분 차원에서 상당하고 폭넓은 개선을 제공하였다. 전문가 평가와 대중 사용자 테스트 모두에서 이 모델은 해당 분야의 선두 수준과 동등한 성능을 보여주었다. Seedance 2.0은 4부터 15초까지의 오디오-비디오 콘텐츠를 직접 생성할 수 있으며, 기본 해상도는 480p와 720p이다. 참조로 멀티 모달 입력을 사용하는 경우, 현재의 오픈 플랫폼은 3개의 비디오 클립, 9개의 이미지, 3개의 오디오 클립을 지원한다. 또한, 저지연 시나리오의 생성 속도를 증가시키기 위해 설계된 Seedance 2.0 Fast 버전도 제공된다. Seedance 2.0은 기본 생성 능력 및 멀티 모달 생성 성능에 상당한 개선을 이뤄내어 최종 사용자에게 향상된 창의적 경험을 제공하였다."
+    },
+    "summary": "1. Seedance 2.0은 멀티 모달 오디오-비디오 생성 모델로, 다양한 입력 모드를 지원하며 업계에서 매우 포괄적인 참조 및 편집 기능을 제공한다.\n2. 이 모델은 비디오와 오디오 생성의 모든 주요 부분 차원에 상당하고 폭넓은 개선을 이루어내었으며, 전문가 평가와 대중 사용자 테스트에서 선도적인 성능을 보여주었다.\n3. Seedance 2.0은 4부터 15초의 콘텐츠를 직접 생성하고 멀티 모달 입력을 지원하며, 향상된 생성 능력과 성능을 제공하여 사용자들에게 창의적인 경험을 제공한다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents",
+    "abstract": "GUI agents drive applications through their visual interfaces instead of programmatic APIs, interacting with arbitrary software via taps, swipes, and keystrokes, reaching a long tail of applications that CLI-based agents cannot. Yet progress in this area is bottlenecked less by modeling capacity than by the absence of a coherent full-stack infrastructure: online RL training suffers from environment instability and closed pipelines, evaluation protocols drift silently across works, and trained agents rarely reach real users on real devices. We present ClawGUI, an open-source framework addressing these three gaps within a single harness. ClawGUI-RL provides the first open-source GUI agent RL infrastructure with validated support for both parallel virtual environments and real physical devices, integrating GiGPO with a Process Reward Model for dense step-level supervision. ClawGUI-Eval enforces a fully standardized evaluation pipeline across 6 benchmarks and 11+ models, achieving 95.8\\% reproduction against official baselines. ClawGUI-Agent brings trained agents to Android, HarmonyOS, and iOS through 12+ chat platforms with hybrid CLI-GUI control and persistent personalized memory. Trained end to end within this pipeline, ClawGUI-2B achieves 17.1\\% Success Rate on MobileWorld GUI-Only, outperforming the same-scale MAI-UI-2B baseline by 6.0\\%.",
+    "authors": [
+      "Fei Tang",
+      "Zhiqiong Lu",
+      "Boxuan Zhang",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang",
+      "Yongliang Shen"
+    ],
+    "likes": 137,
+    "published_date": "Apr 13",
+    "url": "https://huggingface.co/papers/2604.11784",
+    "date_collected": "2026-04-20T10:41:33.784481+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "ClawGUI: GUI 에이전트를 훈련, 평가, 배포하기 위한 통합 프레임워크",
+      "abstract": "GUI 에이전트는 프로그래밍 API 대신 시각적 인터페이스를 통해 어플리케이션을 구동시키며 탭, 스와이프, 키 입력 등을 통해 임의의 소프트웨어와 상호작용함으로써 CLI 기반의 에이전트가 도달할 수 없는 다양한 어플리케이션에 접근합니다. 그러나 이 분야의 진전은 모델링 능력보다는 일관된 풀 스택 인프라의 부재로 인해 병목 현상이 나타납니다: 온라인 강화학습 훈련은 환경 불안정성과 닫힌 파이프라인으로 어려움을 겪고, 평가 방법론은 작업 간 무성과로 조용히 변하며, 훈련된 에이전트들은 실제 사용자와 디바이스에 거의 도달하지 못합니다. 본 논문에서는 이 세 가지 간극을 한 번에 해결하는 오픈 소스 프레임워크인 ClawGUI를 제시합니다. \"ClawGUI-RL\"은 병렬 가상 환경과 실제 물리적 디바이스를 모두 지원하는 최초의 오픈 소스 GUI 에이전트 강화학습 인프라를 제공하며, GiGPO를 밀도 있는 스텝 수준 감독을 위한 Process Reward Model과 통합합니다. \"ClawGUI-Eval\"은 6가지 벤치마크와 11개 이상의 모델을 횡단하여 공식 베이스라인에 대한 95.8\\% 복원율을 달성하는 완전히 표준화된 평가 파이프라인을 시행합니다. \"ClawGUI-Agent\"는 훈련된 에이전트를 Android, HarmonyOS, iOS로 가져오며 혼합 CLI-GUI 제어 및 지속적인 개인화된 메모리를 통해 12개 이상의 채팅 플랫폼에서 작동합니다. 이 파이프라인 내에서 전체적으로 훈련된 \"ClawGUI-2B\"는 MobileWorld GUI만을 대상으로 17.1\\%의 성공률을 달성하여 같은 규모의 MAI-UI-2B 베이스라인보다 6.0\\% 우월합니다."
+    },
+    "summary": "1. ClawGUI는 GUI 에이전트의 훈련, 평가, 배포를 위한 종합 프레임워크로, 강화학습 인프라부터 에이전트의 실제 사용까지를 아우릅니다.\n2. ClawGUI는 각기 다른 솔루션의 부재로 인해 진전이 제약되던 GUI 에이전트 분야에서 성능 향상을 이끌어 냅니다.\n3. ClawGUI-2B는 MobileWorld GUI-Only에서 MAI-UI-2B 베이스라인을 6.0% 능가하는 17.1%의 성공률을 달성하여 실제 사용 환경에서 효과적임을 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping",
+    "abstract": "Despite the success of reinforcement learning for large language models, a common failure mode is reduced sampling diversity, where the policy repeatedly generates similar erroneous behaviors. Classical entropy regularization encourages randomness under the current policy, but does not explicitly discourage recurrent failure patterns across rollouts. We propose MEDS, a Memory-Enhanced Dynamic reward Shaping framework that incorporates historical behavioral signals into reward design. By storing and leveraging intermediate model representations, we capture features of past rollouts and use density-based clustering to identify frequently recurring error patterns. Rollouts assigned to more prevalent error clusters are penalized more heavily, encouraging broader exploration while reducing repeated mistakes. Across five datasets and three base models, MEDS consistently improves average performance over existing baselines, achieving gains of up to 4.13 pass@1 points and 4.37 pass@128 points. Additional analyses using both LLM-based annotations and quantitative diversity metrics show that MEDS increases behavioral diversity during sampling.",
+    "authors": [
+      "Yang Liu",
+      "Enxi Wang",
+      "Yufei Gao",
+      "Weixin Zhang",
+      "Bo Wang",
+      "Zhiyuan Zeng",
+      "Yikai Zhang",
+      "Yining Zheng",
+      "Xipeng Qiu"
+    ],
+    "likes": 135,
+    "published_date": "Apr 13",
+    "url": "https://huggingface.co/papers/2604.11297",
+    "date_collected": "2026-04-20T10:41:33.786075+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "과거는 지나지 않았다: 기억 강화형 동적 보상 형성",
+      "abstract": "대형 언어 모델에 대한 강화 학습의 성공에도 불구하고, 보편적인 실패 모드는 샘플링 다양성의 감소이며, 정책이 유사한 잘못된 행동을 반복적으로 생성하는 문제가 발생합니다. 기존의 엔트로피 규제는 현재 정책 하에서 무작위성을 장려하지만, 여러 차례의 실행 중 촘촘히 반복되는 실패 패턴을 명시적으로 억제하지는 않습니다. 본 연구에서는 과거의 행동 신호를 보상 설계에 통합하는 기억 강화형 동적 보상 형성(MEDS) 프레임워크를 제안합니다. 중간 모델 표현을 저장하고 활용함으로써 이전 실행의 특징을 포착하고 밀도 기반 클러스터링을 사용하여 자주 반복되는 오류 패턴을 식별합니다. 빈도가 높은 오류 클러스터에 할당된 실행은 보다 엄격하게 처벌되어 더 넓은 탐색을 장려하고 반복된 실수를 감소시킵니다. 다섯 개의 데이터셋과 세 가지 베이스 모델을 대상으로 한 실험 결과, MEDS는 기존의 기준선을 통해 평균 성능을 지속적으로 향상시켜 최대 4.13 pass@1 포인트 및 4.37 pass@128 포인트의 이득을 얻었습니다. LLM 기반 주석 및 양적 다양성 측정을 사용한 추가 분석 결과 MEDS는 샘플링 중 행동 다양성을 증가시킵니다."
+    },
+    "summary": "1. 강화 학습의 성공에도 불구하고, 샘플링 다양성 감소와 반복적인 잘못된 행동 생성으로 인한 문제를 해결하기 위해 과거 행동 신호를 보상 설계에 통합하는 기억 강화형 동적 보상 형성(MEDS) 프레임워크가 제안되었습니다.\n2. MEDS는 중간 모델 표현을 활용하여 과거 실행의 특징을 포착하고, 밀도 기반 클러스터링을 통해 자주 반복되는 오류 패턴을 식별하여 넓은 탐색을 장려하고 반복된 실수를 줄입니다.\n3. 실험 결과에 따르면, MEDS는 다양한 데이터셋과 베이스 모델을 대상으로 성능을 향상시켜 최대 4.13 pass@1 포인트와 4.37 pass@128 포인트의 성과 향상을 보였으며, LLM 기반 주석 및 양적 다양성 측정 결과 샘플링 중 행동 다양성이 증가하는 것을 확인했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation",
+    "abstract": "Large Language Models (LLMs) are increasingly used for code generation, yet quantum code generation is still evaluated mostly within single frameworks, making it difficult to separate quantum reasoning from framework familiarity. We introduce QuanBench+, a unified benchmark spanning Qiskit, PennyLane, and Cirq, with 42 aligned tasks covering quantum algorithms, gate decomposition, and state preparation.\n  We evaluate models with executable functional tests, report Pass@1 and Pass@5, and use KL-divergence-based acceptance for probabilistic outputs. We additionally study Pass@1 after feedback-based repair, where a model may revise code after a runtime error or wrong answer. Across frameworks, the strongest one-shot scores reach 59.5% in Qiskit, 54.8% in Cirq, and 42.9% in PennyLane; with feedback-based repair, the best scores rise to 83.3%, 76.2%, and 66.7%, respectively. These results show clear progress, but also that reliable multi-framework quantum code generation remains unsolved and still depends strongly on framework-specific knowledge.",
+    "authors": [
+      "Ali Slim",
+      "Haydar Hamieh",
+      "Jawad Kotaich",
+      "Yehya Ghosn",
+      "Mahdi Chehimi",
+      "Ammar Mohanna",
+      "Hasan Abed Al Kader Hammoud",
+      "Bernard Ghanem"
+    ],
+    "likes": 122,
+    "published_date": "Mar 25",
+    "url": "https://huggingface.co/papers/2604.08570",
+    "date_collected": "2026-04-20T10:41:33.787674+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "QuanBench+: LLM 기반 양자 코드 생성을 위한 통합된 다중 프레임워크 벤치마크",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)은 코드 생성에 점점 많이 활용되고 있지만, 양자 코드 생성은 아직 단일 프레임워크 내에서 주로 평가되어 양자 추론과 프레임워크 숙련성을 분리하기 어렵게 합니다. 본 논문에서는 Qiskit, PennyLane, Cirq를 아우르는 통합된 벤치마크인 QuanBench+를 소개합니다. 이 벤치마크는 양자 알고리즘, 게이트 분해, 상태 준비 등을 다루는 42가지 태스크를 제공합니다."
+    },
+    "summary": "1. QuanBench+는 Qiskit, PennyLane, Cirq를 아우르는 통합된 벤치마크로, 양자 코드 생성에 대한 강력한 평가 기준을 제시합니다.\n2. 실행 가능한 기능 테스트를 통해 모델을 평가하고, Pass@1 및 Pass@5를 보고하며, 확률적 출력에 대한 KL-다이버전스 기반 수용 기준을 사용합니다.\n3. 피드백 기반 수리 후 Pass@1을 추가로 연구하며, 프레임워크 간에 가장 강력한 점수는 Qiskit에서 59.5%, Cirq에서 54.8%, PennyLane에서 42.9%에 이르지만, 피드백 기반 수리를 통해 최고 점수는 각각 83.3%, 76.2%, 66.7%로 상승합니다.",
+    "categories": [
+      "LLM",
+      "Quantum Processing",
+      "Other"
+    ]
+  },
+  {
+    "title": "GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents",
+    "abstract": "Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) agents still suffer from challenging latency, sparse feedback, and irreversible mistakes. Video games offer an ideal testbed with rich visual observations and closed-loop interaction, demanding fine-grained perception, long-horizon planning, and precise control. However, systematically evaluating these capabilities is currently hindered by heterogeneous action interfaces and heuristic verification. To this end, we introduce GameWorld, a benchmark designed for standardized and verifiable evaluation of MLLMs as generalist game agents in browser environments. Two game agent interfaces are studied: (i) computer-use agents that directly emit keyboard and mouse controls, and (ii) generalist multimodal agents that act in a semantic action space via deterministic Semantic Action Parsing. GameWorld contains 34 diverse games and 170 tasks, each paired with state-verifiable metrics for outcome-based evaluation. The results across 18 model-interface pairs suggest that even the best performing agent is far from achieving human capabilities on video games. Extensive experiments of repeated full-benchmark reruns demonstrate the robustness of the benchmark, while further studies on real-time interaction, context-memory sensitivity, and action validity expose more challenges ahead for game agents. Together, by offering a standardized, verifiable, and reproducible evaluation framework, GameWorld lays a robust foundation for advancing research on multimodal game agents and beyond. The project page is at https://gameworld-bench.github.io.",
+    "authors": [
+      "Mingyu Ouyang",
+      "Siyuan Hu",
+      "Kevin Qinghong Lin",
+      "Hwee Tou Ng",
+      "Mike Zheng Shou"
+    ],
+    "likes": 110,
+    "published_date": "Apr 8",
+    "url": "https://huggingface.co/papers/2604.07429",
+    "date_collected": "2026-04-20T10:41:33.789050+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "게임월드: 다중모달 게임 에이전트의 표준화 및 검증 가능한 평가를 향하여",
+      "abstract": "현실 세계 상호작용을 위한 본질적인 일반화를 위해, 다중모달 대형 언어 모델 (MLLM) 에이전트는 여전히 지연시간 문제, 희박한 피드백, 그리고 되돌릴 수 없는 실수에 직면합니다. 비디오 게임은 풍부한 시각적 관측과 닫힌 루프 상호작용을 제공하여, 세밀한 지각, 장기 계획, 그리고 정밀한 제어를 요구하며 현재는 이러한 능력을 체계적으로 검증하는 것이 어렵습니다. 이를 해결하기 위해, 우리는 브라우저 환경에서 일반적인 게임 에이전트로서의 MLLM의 표준화 및 검증 가능한 평가를 위해 고안된 벤치마크인 게임월드를 소개합니다."
+    },
+    "summary": "1. 다중모달 대형 언어 모델(MLLM) 에이전트의 게임 능력을 표준화하고 검증 가능하게 평가하기 위한 GameWorld 벤치마크를 도입.\n2. 게임월드는 34가지의 다양한 게임과 170가지의 작업을 포함하며, 각각의 결과를 기반으로 한 평가를 위한 상태 검증 가능한 측정항목을 제공.\n3. 실험 결과는 최고 성능을 보인 에이전트조차도 비디오 게임에서 인간의 능력을 달성하는 데는 아직 멀었다는 것을 시사하며, GameWorld가 다중모달 게임 에이전트에 대한 연구를 진보시키기 위한 견고한 기반이 되고 있음을 보여줌.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time",
+    "abstract": "Most reward models for visual generation reduce rich human judgments to a single unexplained score, discarding the reasoning that underlies preference. We show that teaching reward models to produce explicit, multi-dimensional critiques before scoring transforms them from passive evaluators into active optimization tools, improving generators in two complementary ways: at training time, structured rationales provide interpretable, fine-grained rewards for reinforcement learning; at test time, a Generate-Critique-Refine loop turns critiques into targeted prompt revisions that improve outputs without any parameter updates. To train such a reward model without costly rationale annotations, we introduce Preference-Anchored Rationalization (PARROT), a principled framework that recovers high-quality rationales from readily available preference data through anchored generation, consistency filtering, and distillation. The resulting model, RationalRewards (8B), achieves state-of-the-art preference prediction among open-source reward models, competitive with Gemini-2.5-Pro, while using 10-20x less training data than comparable baselines. As an RL reward, it consistently improves text-to-image and image-editing generators beyond scalar alternatives. Most strikingly, its test-time critique-and-refine loop matches or exceeds RL-based fine-tuning on several benchmarks, suggesting that structured reasoning can unlock latent capabilities in existing generators that suboptimal prompts fail to elicit.",
+    "authors": [
+      "Haozhe Wang",
+      "Cong Wei",
+      "Weiming Ren",
+      "Jiaming Liu",
+      "Fangzhen Lin",
+      "Wenhu Chen"
+    ],
+    "likes": 100,
+    "published_date": "Apr 13",
+    "url": "https://huggingface.co/papers/2604.11626",
+    "date_collected": "2026-04-20T10:41:33.790511+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "합리적 보상: 추론 보상이 훈련 및 테스트 시각적 생성을 규모 증가시킴",
+      "abstract": "시각적 생성을 위한 대부분의 보상 모델은 풍부한 인간 판단을 한 가지 설명되지 않은 점수로 축소하여 선호하는 추론을 버려버립니다. 우리는 보상 모델이 점수를 매기기 전에 명시적이고 다차원적인 비평을 생산하도록 가르치면, 패시브한 평가자에서 능동적 최적화 도구로 변화하여 생성자를 두 가지 상호 보완적인 방식으로 개선할 수 있음을 보여줍니다: 훈련 시에는 체계적인 근거가 강화학습을 위한 해석 가능하고 세분화된 보상을 제공하며, 테스트 시에는 생성-비평-정제 루프가 비평을 목표로 하는 프롬프트 개선으로 전환되어 임의의 매개변수 업데이트 없이 출력을 개선합니다. 이러한 보상 모델을 비용이 많이 드는 근거 어노테이션 없이 훈련시키기 위해, 우리는 Preference-Anchored Rationalization (PARROT)이라는 원칙에 입각한 프레임워크를 소개하여 고정된 생성, 일관성 필터링 및 증류를 통해 이미 사용 가능한 선호 데이터에서 고품질의 근거를 복원합니다. 결과 모델인 RationalRewards(8B)는 공개 소스 보상 모델 중 최신 기술의 선호 예측을 달성하며, Gemini-2.5-Pro와 경쟁력이 있음에도, 비교 가능한 베이스라인보다 10-20배 적은 훈련 데이터를 사용합니다. RL 보상으로, 본 보상 모델은 벡터 대안보다 텍스트에서 이미지 및 이미지 편집 생성자의 성능을 꾸준히 개선합니다. 가장 놀랍게도, 그것의 테스트 시 비평 및 정제 루프는 몇 가지 벤치마크에서 RL 기반 세밀 조정을 맞거나 능가하여, 구조화된 추론이 부적절한 프롬프트로부터 추출하지 못한 기존 생성자의 잠재적 능력을 해제할 수 있다는 것을 시사합니다."
+    },
+    "summary": "1. 보상 모델이 명시적이고 다차원적 비평을 생성하도록 가르치면, 생성자를 훈련 시에 해석 가능하고 세분화된 보상으로 개선하며, 테스트 시에는 비평을 목표로 하는 프롬프트 개선을 통해 출력을 개선할 수 있음을 입증함.\n2. 높은 품질의 근거를 회복함으로써 이미 사용 가능한 선호 데이터에서 비용을 절감하면서도 RationalRewards(8B)는 최신 선호 예측 기술을 선보이며 경쟁력을 유지함.\n3. RL 보상으로 RationalRewards(8B)는 벡터 대안보다 텍스트에서 이미지 및 이미지 편집 생성자의 성능을 꾸준히 향상시키며, 테스트 시 비평 및 정제 루프는 기존 생성자의 잠재적 능력을 발휘함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance",
+    "abstract": "RLVR improves reasoning in large language models, but its effectiveness is often limited by severe reward sparsity on hard problems. Recent hint-based RL methods mitigate sparsity by injecting partial solutions or abstract templates, yet they typically scale guidance by adding more tokens, which introduce redundancy, inconsistency, and extra training overhead. We propose KnowRL (Knowledge-Guided Reinforcement Learning), an RL training framework that treats hint design as a minimal-sufficient guidance problem. During RL training, KnowRL decomposes guidance into atomic knowledge points (KPs) and uses Constrained Subset Search (CSS) to construct compact, interaction-aware subsets for training. We further identify a pruning interaction paradox -- removing one KP may help while removing multiple such KPs can hurt -- and explicitly optimize for robust subset curation under this dependency structure. We train KnowRL-Nemotron-1.5B from OpenMath-Nemotron-1.5B. Across eight reasoning benchmarks at the 1.5B scale, KnowRL-Nemotron-1.5B consistently outperforms strong RL and hinting baselines. Without KP hints at inference, KnowRL-Nemotron-1.5B reaches 70.08 average accuracy, already surpassing Nemotron-1.5B by +9.63 points; with selected KPs, performance improves to 74.16, establishing a new state of the art at this scale. The model, curated training data, and code are publicly available at https://github.com/Hasuer/KnowRL.",
+    "authors": [
+      "Linhao Yu",
+      "Tianmeng Yang",
+      "Siyu Ding",
+      "Renren Jin",
+      "Naibin Gu",
+      "Xiangzhao Hao",
+      "Shuaiyi Nie",
+      "Deyi Xiong",
+      "Weichong Yin",
+      "Yu Sun",
+      "Hua Wu"
+    ],
+    "likes": 96,
+    "published_date": "Apr 14",
+    "url": "https://huggingface.co/papers/2604.12627",
+    "date_collected": "2026-04-20T10:41:33.792252+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "최소 충분 지식 안내를 통한 강화 학습을 활용한 대형 언어 모델 추론 강화 KnowRL",
+      "abstract": "RLVR은 대형 언어 모델의 추론을 개선하지만 어려운 문제에서 보상 희소성으로 인해 효과가 제한될 때가 많습니다. 최근의 힌트 기반 강화 학습 방법은 부분적인 해결책이나 추상적인 템플릿을 주입함으로써 희소성을 완화하지만, 종종 더 많은 토큰을 추가하여 안내를 확장하므로 중복, 일관성 부족, 추가 훈련 부담이 발생합니다. 저희는 최소 충분 안내 문제로 힌트 디자인을 취급하는 KnowRL (지식 안내 강화 학습)이라는 강화 학습 훈련 프레임워크를 제안합니다. KnowRL은 강화 학습 훈련 중 안내를 원자 지식 점(KPs)으로 분해하고 제한된 부분 집합 탐색(CSS)을 사용하여 간결하고 상호 작용을 고려한 부분 집합을 구축합니다. 또한 한 KP를 삭제하면 도움이 되지만 여러 KP를 삭제할 경우 해를 끼칠 수 있는 가지치기 상호작용 역설을 확인하고 이 종속구조 하에서 강력한 부분 집합 선별을 명시적으로 최적화합니다. 우리는 OpenMath-Nemotron-1.5B에서 KnowRL-Nemotron-1.5B를 훈련시킵니다. 1.5B 규모의 여덟 가지 추론 벤치마크에서, KnowRL-Nemotron-1.5B는 강력한 RL 및 힌트 기준을 일관되게 능가합니다. 추론 시 KP 힌트 없이, KnowRL-Nemotron-1.5B는 70.08 평균 정확도에 도달하여 Nemotron-1.5B를 이미 +9.63 포인트 상회합니다. 특정 KP를 선택하면 성능이 74.16으로 향상되어 이 규모에서 새로운 최고 성능을 구축합니다. 이 모델, 선별된 훈련 데이터, 코드는 https://github.com/Hasuer/KnowRL에서 공개되어 있습니다."
+    },
+    "summary": "1. 대형 언어 모델의 추론 향상을 위해 최소-충분한 안내에 따라 강화 학습을 적용한 KnowRL 제안\n2. KnowRL은 원자 지식 점(KPs)으로 안내를 분해하고 상호작용을 고려한 간략하고 효과적인 훈련 부분 집합을 구축하는 새로운 강화 학습 프레임워크\n3. KnowRL-Nemotron-1.5B는 강력한 RL 및 힌트 기준을 능가하며, KP 힌트 없이도 높은 정확도를 보여주며 KP 선택 시 최고 성능을 달성",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios",
+    "abstract": "The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transition from simple perception to autonomous execution, yet current evaluations fail to reflect the rigorous demands of real-world manufacturing environments. Progress is hindered by data scarcity and a lack of fine-grained domain semantics in existing datasets. To bridge this gap, we introduce FORGE. Wefirst construct a high-quality multimodal dataset that combines real-world 2D images and 3D point clouds, annotated with fine-grained domain semantics (e.g., exact model numbers). We then evaluate 18 state-of-the-art MLLMs across three manufacturing tasks, namely workpiece verification, structural surface inspection, and assembly verification, revealing significant performance gaps. Counter to conventional understanding, the bottleneck analysis shows that visual grounding is not the primary limiting factor. Instead, insufficient domain-specific knowledge is the key bottleneck, setting a clear direction for future research. Beyond evaluation, we show that our structured annotations can serve as an actionable training resource: supervised fine-tuning of a compact 3B-parameter model on our data yields up to 90.8% relative improvement in accuracy on held-out manufacturing scenarios, providing preliminary evidence for a practical pathway toward domain-adapted manufacturing MLLMs. The code and datasets are available at https://ai4manufacturing.github.io/forge-web.",
+    "authors": [
+      "Xiangru Jian",
+      "Hao Xu",
+      "Wei Pang",
+      "Xinjian Zhao",
+      "Chengyu Tao",
+      "Qixin Zhang",
+      "Xikun Zhang",
+      "Chao Zhang",
+      "Guanzhi Deng",
+      "Alex Xue",
+      "Juan Du",
+      "Tianshu Yu",
+      "Garth Tarr",
+      "Linqi Song",
+      "Qiuzhuang Sun",
+      "Dacheng Tao"
+    ],
+    "likes": 93,
+    "published_date": "Apr 8",
+    "url": "https://huggingface.co/papers/2604.07413",
+    "date_collected": "2026-04-20T10:41:33.794202+09:00",
+    "week": "2026-W16",
+    "translation": {
+      "title": "FORGE: 제조 시나리오에 대한 세밀한 다중 모달 평가",
+      "abstract": "제조업 분야는 간단한 인지에서 자율 실행으로 전환하기 위해 다중 모달 대형 언어 모델(MLLMs)을 점차 채택하고 있지만, 현재의 평가는 실제 제조 환경의 엄격한 요구를 반영하지 못합니다. 데이터 부족과 기존 데이터셋에서의 세밀한 도메인 의미 부재로 진전이 지연되고 있습니다. 이 간극을 메워주기 위해, 우리는 FORGE를 소개합니다. 먼저, 정확한 모델 번호 등 세밀한 도메인 의미로 주석이 달린 현실의 2D 이미지와 3D 포인트 클라우드를 결합한 고품질 다중 모달 데이터셋을 구축합니다. 그 후, 작업피스 확인, 구조 표면 검사, 조립 확인이라는 세 가지 제조 작업을 바탕으로 18개의 최첨단 MLLMs를 평가하여 성능 차이를 드러냅니다. 전통적인 이해와는 달리 병목 분석에서 시각적 근거가 주된 제한 요인이 아닌 것으로 드러납니다. 대신, 도메인 특정 지식이 부족한 것이 주된 병목 제한 요소로 작용하여 향후 연구 방향을 명확히 합니다. 평가 외에도, 우리의 구조화된 주석이 실용적으로 사용될 수 있는 교육 자원으로 작용함을 보여줍니다: 3B-파라미터 모델을 우리 데이터에 대해 지도된 세밀 조정하면 예비 제조 시나리오의 정확도에서 최대 90.8% 상대적 향상을 달성하여 도메인 적응 제조 MLLMs로의 현실적인 길을 제공합니다. 코드와 데이터셋은 https://ai4manufacturing.github.io/forge-web에서 제공됩니다."
+    },
+    "summary": "1. 현실 제조 환경의 엄격한 요구를 반영하기 위해 세밀한 도메인 주석이 달린 고품질 다중 모달 데이터셋을 사용하여 18개의 최첨단 MLLMs를 세 가지 제조 작업을 통해 평가하고, 시각적 근거가 아닌 도메인 특정 지식 부족이 주된 병목 제한 요소로 확인됨.\n2. 향후 연구 방향으로써 도메인 특정 지식의 부족이 제조 MLLMs의 주요 병목으로 설정됨.\n3. 구조화된 주석이 효과적인 교육 자원으로 활용될 수 있음을 보이고, 이를 통해 도메인 적응 제조 MLLMs로의 현실적인 발전 가능성을 제시함.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds",
+    "abstract": "We introduce HY-World 2.0, a multi-modal world model framework that advances our prior project HY-World 1.0. HY-World 2.0 accommodates diverse input modalities, including text prompts, single-view images, multi-view images, and videos, and produces 3D world representations. With text or single-view image inputs, the model performs world generation, synthesizing high-fidelity, navigable 3D Gaussian Splatting (3DGS) scenes. This is achieved through a four-stage method: a) Panorama Generation with HY-Pano 2.0, b) Trajectory Planning with WorldNav, c) World Expansion with WorldStereo 2.0, and d) World Composition with WorldMirror 2.0. Specifically, we introduce key innovations to enhance panorama fidelity, enable 3D scene understanding and planning, and upgrade WorldStereo, our keyframe-based view generation model with consistent memory. We also upgrade WorldMirror, a feed-forward model for universal 3D prediction, by refining model architecture and learning strategy, enabling world reconstruction from multi-view images or videos. Also, we introduce WorldLens, a high-performance 3DGS rendering platform featuring a flexible engine-agnostic architecture, automatic IBL lighting, efficient collision detection, and training-rendering co-design, enabling interactive exploration of 3D worlds with character support. Extensive experiments demonstrate that HY-World 2.0 achieves state-of-the-art performance on several benchmarks among open-source approaches, delivering results comparable to the closed-source model Marble. We release all model weights, code, and technical details to facilitate reproducibility and support further research on 3D world models.",
+    "authors": [
+      "Team HY-World",
+      "Chenjie Cao",
+      "Xuhui Zuo",
+      "Zhenwei Wang",
+      "Yisu Zhang",
+      "Junta Wu",
+      "Zhenyang Liu",
+      "Yuning Gong",
+      "Yang Liu",
+      "Bo Yuan",
+      "Chao Zhang",
+      "Coopers Li",
+      "Dongyuan Guo",
+      "Fan Yang",
+      "Haiyu Zhang",
+      "Hang Cao",
+      "Jianchen Zhu",
+      "Jiaxin Lin",
+      "Jie Xiao",
+      "Jihong Zhang",
+      "Junlin Yu",
+      "Lei Wang"
+    ],
+    "likes": 90,
+    "published_date": "Apr 15",
+    "url": "https://huggingface.co/papers/2604.14268",
+    "date_collected": "2026-04-20T10:41:33.796547+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "HY-World 2.0: 재구성, 생성 및 시뮬레이션을 위한 다중 모달 3D 세계 모델",
+      "abstract": "저희는 HY-World 1.0의 선행 프로젝트를 발전시킨 다중 모달 세계 모델 프레임워크인 HY-World 2.0을 소개합니다. 이 모델은 텍스트 프롬프트, 단일 뷰 이미지, 다중 뷰 이미지 및 비디오와 같은 다양한 입력 모달리티를 수용하고 3D 세계 표현물을 생성합니다. 텍스트나 단일 뷰 이미지 입력 시, 이 모델은 3D Gaussian Splatting (3DGS) 장면을 통한 세계 생성을 수행하며 높은 품질의 탐색 가능한 3D 시선을 합성합니다. 이에는 네 단계 방법이 사용됩니다: a) HY-Pano 2.0로 파노라마 생성, b) WorldNav로 궤적 계획, c) WorldStereo 2.0로 세계 확장, 그리고 d) WorldMirror 2.0로 세계 구성입니다. 특히, 우리는 파노라마의 충실도를 향상시키고, 3D 장면 이해와 계획을 수행하며, 메모리 일관성을 갖는 키프레임 기반 뷰 생성 모델인 WorldStereo를 업그레이드하는 핵심 혁신을 소개합니다. 또한, 우리는 유니버설 3D 예측을 위한 WorldMirror를 소개하며, 다중 뷰 이미지나 비디오로부터의 세계 재구성을 가능케 하는 모델 아키텍처와 학습 전략을 개선합니다. 또한, 우리는 엔진에 독립적인 유연한 아키텍처, 자동 IBL 조명, 효율적인 충돌 검출, 그리고 훈련-렌더링 공동 설계를 특징으로 하는 높은 성능의 3DGS 렌더링 플랫폼인 WorldLens를 소개합니다. 광범위한 실험 결과는 HY-World 2.0이 오픈 소스 접근법 중의 몇몇 벤치마크에서 최첨단 성능을 달성하며, 폐쇄 소스 모델 Marble과 유사한 결과를 제공함을 입증합니다. 저희는 3D 세계 모델에 대한 추가 연구를 지원하고 재현성을 용이하게 하는 모든 모델 가중치, 코드 및 기술적 세부 정보를 공개합니다."
+    },
+    "summary": "1. HY-World 2.0은 다양한 입력 모달리티를 수용하고 3D 세계 표현물을 생성하는 다중 모달 세계 모델이며, 3DGS 장면을 합성하는 등 다양한 기능을 제공합니다.\n2. 다양한 기술적 혁신을 도입하여 세계 생성 및 재구성을 통해 높은 품질의 3D 시선을 구현하고, 세계 확장 및 구성을 위한 과정을 강화했습니다.\n3. HY-World 2.0은 오픈 소스 접근법 중 여러 벤치마크에서 최첨단 성능을 달성하며, 3D 세계 모델에 대한 추가 연구를 지원하기 위해 모든 기술 정보를 공개합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  }
+]

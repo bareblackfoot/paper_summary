@@ -1,0 +1,289 @@
+[
+  {
+    "title": "Spatial Forcing: Implicit Spatial Representation Alignment for\n  Vision-language-action Model",
+    "abstract": "Vision-language-action (VLA) models have recently shown strong potential in\nenabling robots to follow language instructions and execute precise actions.\nHowever, most VLAs are built upon vision-language models pretrained solely on\n2D data, which lack accurate spatial awareness and hinder their ability to\noperate in the 3D physical world. Existing solutions attempt to incorporate\nexplicit 3D sensor inputs such as depth maps or point clouds, but these\napproaches face challenges due to sensor noise, hardware heterogeneity, and\nincomplete depth coverage in existing datasets. Alternative methods that\nestimate 3D cues from 2D images also suffer from the limited performance of\ndepth estimators.We propose Spatial Forcing (SF), a simple yet effective\nalignment strategy that implicitly forces VLA models to develop spatial\ncomprehension capabilities without relying on explicit 3D inputs or depth\nestimators. SF aligns intermediate visual embeddings of VLAs with geometric\nrepresentations produced by pretrained 3D foundation models. By enforcing\nalignment at intermediate layers, SF guides VLAs to encode richer spatial\nrepresentations that enhance action precision.Extensive experiments in\nsimulation and real-world environments demonstrate that SF achieves\nstate-of-the-art results, surpassing both 2D- and 3D-based VLAs. SF further\naccelerates training by up to 3.8x and improves data efficiency across diverse\nrobotic tasks. Project page is at https://spatial-forcing.github.io/",
+    "authors": [
+      "Fuhao Li",
+      "Wenxuan Song",
+      "Han Zhao",
+      "Jingbo Wang",
+      "Pengxiang Ding",
+      "Donglin Wang",
+      "Long Zeng",
+      "Haoang Li"
+    ],
+    "likes": 134,
+    "published_date": "Oct 14",
+    "url": "https://huggingface.co/papers/2510.12276",
+    "date_collected": "2025-10-17T07:06:47.609668+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "공간 강제: 비주류 공간 표현 조정을 위한 시각-언어-행동 모델 (Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model)",
+      "abstract": "최근에 시각-언어-행동 (VLA) 모델은 로봇이 언어 지침을 따르고 정확한 동작을 수행하는 데 강력한 잠재력을 보여주고 있습니다. 그러나 대부분의 VLA는 오로지 2D 데이터에 대해 사전 학습된 시각-언어 모델에 기반을 둔데, 이는 정확한 공간 인식을 부족하게 하고 3D 물리적 세계에서의 작동 능력을 저해합니다. 기존의 해결책들은 깊이 맵이나 포인트 클라우드와 같은 명시적인 3D 센서 입력을 통합하려고 노력하지만, 센서 노이즈, 하드웨어 이질성 및 기존 데이터셋에서의 미완성한 깊이 범위로 인해 어려움을 겪습니다. 또한 2D 이미지로부터 3D 단서를 추정하는 대안적인 방법들은 깊이 추정기의 제한된 성능으로 인해 고통받습니다. 우리는 명확한 3D 입력이나 깊이 추정기에 의존하지 않고 VLA 모델이 공간 이해 능력을 개발하도록 강제하는 간단하면서 효과적인 조정 전략인 Spatial Forcing (SF)를 제안합니다. SF는 VLAs의 중간 시각적 임베딩을 사전 학습된 3D 기본 모델에 의해 생성된 기하학적 표현과 조정시킴으로써 VLA가 더 풍부한 공간 표현을 부여하여 동작 정밀도를 향상시킵니다. 시뮬레이션 및 실제 환경에서 수행된 방대한 실험 결과 SF는 2D 및 3D 기반 VLA를 능가하며 최첨단 결과를 달성합니다. 또한 SF는 훈련 속도를 최대 3.8배 가속화시키고 다양한 로봇 작업에 대한 데이터 효율성을 향상시킵니다. 프로젝트 페이지: https://spatial-forcing.github.io/"
+    },
+    "summary": "1. VLA 모델은 2D 데이터에만 사전 학습된 경우 3D 세계에서의 작동 능력을 저해하며, SF는 명확한 3D 입력이나 깊이 추정기 없이도 VLA 모델이 공간 이해 능력을 갖출 수 있게 하는 간단하면서 효과적인 조정 전략이다.\n2. SF는 VLAs의 시각적 임베딩을 3D 기본 모델의 기하학적 표현과 조정하여 더 풍부한 공간 표현을 부여하여 동작 정밀도를 향상시킨다.\n3. SF는 2D 및 3D 기반 VLAs를 능가하며 최첨단 결과를 달성하고, 훈련 속도를 최대 3.8배 가속화시키고 다양한 로봇 작업에 대한 데이터 효율성을 향상시킨다.",
+    "categories": [
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Diffusion Transformers with Representation Autoencoders",
+    "abstract": "Latent generative modeling, where a pretrained autoencoder maps pixels into a\nlatent space for the diffusion process, has become the standard strategy for\nDiffusion Transformers (DiT); however, the autoencoder component has barely\nevolved. Most DiTs continue to rely on the original VAE encoder, which\nintroduces several limitations: outdated backbones that compromise\narchitectural simplicity, low-dimensional latent spaces that restrict\ninformation capacity, and weak representations that result from purely\nreconstruction-based training and ultimately limit generative quality. In this\nwork, we explore replacing the VAE with pretrained representation encoders\n(e.g., DINO, SigLIP, MAE) paired with trained decoders, forming what we term\nRepresentation Autoencoders (RAEs). These models provide both high-quality\nreconstructions and semantically rich latent spaces, while allowing for a\nscalable transformer-based architecture. Since these latent spaces are\ntypically high-dimensional, a key challenge is enabling diffusion transformers\nto operate effectively within them. We analyze the sources of this difficulty,\npropose theoretically motivated solutions, and validate them empirically. Our\napproach achieves faster convergence without auxiliary representation alignment\nlosses. Using a DiT variant equipped with a lightweight, wide DDT head, we\nachieve strong image generation results on ImageNet: 1.51 FID at 256x256 (no\nguidance) and 1.13 at both 256x256 and 512x512 (with guidance). RAE offers\nclear advantages and should be the new default for diffusion transformer\ntraining.",
+    "authors": [
+      "Boyang Zheng",
+      "Nanye Ma",
+      "Shengbang Tong",
+      "Saining Xie"
+    ],
+    "likes": 132,
+    "published_date": "Oct 13",
+    "url": "https://huggingface.co/papers/2510.11690",
+    "date_collected": "2025-10-17T07:06:47.610952+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "표현 자동인코더와 함께 하는 확산 트랜스포머",
+      "abstract": "사전 훈련된 자동인코더가 픽셀을 잠재 공간으로 매핑하여 확산 과정에 사용되는 잠재 생성 모델링은 확산 트랜스포머(Diffusion Transformers, DiT)의 표준 전략이 되었지만, 자동인코더 구성 요소는 거의 발전하지 않았습니다. 대부분의 DiT는 여전히 원래의 VAE(Variational Autoencoder) 인코더에 의존하며 이는 구조적 단순성을 저해하는 구식한 백본, 정보 능력을 제한하는 저차원 잠재 공간, 순수히 재구성 기반 훈련에서 비롯된 약한 표현을 도입합니다. 본 연구에서는 VAE를 사전 훈련된 표현 인코더(e.g., DINO, SigLIP, MAE)로 대체하고 훈련된 디코더와 짝을 이루어 표현 자동인코더(Representation Autoencoders, RAE)라고 부르는 모델을 형성하는 방법을 탐구합니다. 이러한 모델은 고품질 재구성과 의미론적으로 풍부한 잠재 공간을 제공하며 확장 가능한 트랜스포머 기반 아키텍처를 가능하게 합니다. 이러한 잠재 공간은 일반적으로 고차원이므로, 핵심 과제는 확산 트랜스포머가 효과적으로 작동할 수 있도록 하는 것입니다. 이 어려움의 원인을 분석하고, 이론적 동기를 부여한 해결책을 제안하고 실증적으로 검증합니다. 우리의 접근법은 보조 표현 정렬 손실 없이 빠른 수렴을 달성합니다. 경량이면서 넓은 DDT 헤드를 탑재한 DiT 변형을 사용하여 ImageNet에서 강력한 이미지 생성 결과를 달성합니다: 가이드 없이 256x256에서 1.51 FID 및 가이드와 함께 256x256 및 512x512 모두에서 1.13을 얻었습니다. RAE는 명확한 장점을 제공하며 확산 트랜스포머 훈련의 새로운 기본 설정이 되어야 합니다."
+    },
+    "summary": "1. 사전 훈련된 표현 인코더를 사용한 표현 자동인코더(RAE)는 확산 트랜스포머(DiT)의 표준 전략인 자동인코더에 비해 더 높은 재구성 품질과 의미론적으로 풍부한 잠재 공간을 제공하며, 확장 가능한 트랜스포머 아키텍처를 가능케 합니다.\n2. 고차원 잠재 공간에서 효과적으로 작동하는 것이 핵심 도전 과제인 RAE를 통해, 빠른 수렴을 달성하고 보조 표현 정렬 손실 없이 강력한 이미지 생성 결과를 얻을 수 있었습니다.\n3. RAE는 현재의 VAE 인코더에 비해 업그레이드된 구성 요소로, ImageNet에서 뛰어난 이미지 생성 결과를 도출하여, 확산 트랜스포머 훈련의 새로운 필수 도구로 인정받을 것으로 예상됩니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Thinking with Camera: A Unified Multimodal Model for Camera-Centric\n  Understanding and Generation",
+    "abstract": "Camera-centric understanding and generation are two cornerstones of spatial\nintelligence, yet they are typically studied in isolation. We present Puffin, a\nunified camera-centric multimodal model that extends spatial awareness along\nthe camera dimension. Puffin integrates language regression and diffusion-based\ngeneration to interpret and create scenes from arbitrary viewpoints. To bridge\nthe modality gap between cameras and vision-language, we introduce a novel\nparadigm that treats camera as language, enabling thinking with camera. This\nguides the model to align spatially grounded visual cues with photographic\nterminology while reasoning across geometric context. Puffin is trained on\nPuffin-4M, a large-scale dataset of 4 million vision-language-camera triplets.\nWe incorporate both global camera parameters and pixel-wise camera maps,\nyielding flexible and reliable spatial generation. Experiments demonstrate\nPuffin superior performance over specialized models for camera-centric\ngeneration and understanding. With instruction tuning, Puffin generalizes to\ndiverse cross-view tasks such as spatial imagination, world exploration, and\nphotography guidance. We will release the code, models, dataset pipeline, and\nbenchmark to advance multimodal spatial intelligence research.",
+    "authors": [
+      "Kang Liao",
+      "Size Wu",
+      "Zhonghua Wu",
+      "Linyi Jin",
+      "Chao Wang",
+      "Yikai Wang",
+      "Fei Wang",
+      "Wei Li",
+      "Chen Change Loy"
+    ],
+    "likes": 109,
+    "published_date": "Oct 9",
+    "url": "https://huggingface.co/papers/2510.08673",
+    "date_collected": "2025-10-17T07:06:47.612359+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "카메라와 함께하는 사고: 카메라 중심의 이해 및 생성을 위한 통합적 다중 모달 모델",
+      "abstract": "카메라 중심의 이해와 생성은 공간 지능의 중추를 이루지만, 일반적으로 독립적으로 연구됩니다. 우리는 Puffin이라는 통합 카메라 중심 다중 모달 모델을 제시합니다. Puffin은 카메라 차원을 따라 공간 인식을 확장합니다. 언어 회귀와 확산 기반 생성을 통합하여 임의의 시점에서 장면을 해석하고 생성합니다. 우리는 카메라와 비전-언어 간 모달 갭을 줄이기 위해 카메라를 언어로 취급하는 새로운 패러다임을 소개합니다. 이는 모델이 공간적으로 뿌리를 박힌 시각적 단서를 사진 용어와 일치시키는 동시에 기하적 맥락에 걸쳐 추론하도록 이끕니다. Puffin은 4백만 개의 비전-언어-카메라 트리플릿으로 이루어진 대규모 데이터셋인 Puffin-4M에서 훈련됩니다. 전역 카메라 매개변수와 픽셀별 카메라 맵을 모두 통합하여 유연하고 신뢰할 수 있는 공간 생성을 제공합니다. 실험 결과, Puffin은 카메라 중심 생성 및 이해에 특화된 모델보다 우수한 성능을 나타냅니다. 지침 조정을 통해 Puffin은 공간 상상, 세계 탐험, 사진 안내와 같은 다양한 크로스-뷰 작업에 일반화됩니다. 우리는 멀티모달 공간 지능 연구를 발전시키기 위해 코드, 모델, 데이터셋 파이프라인 및 벤치마크를 공개할 예정입니다."
+    },
+    "summary": "1. Puffin은 카메라 차원을 따라 공간 인식을 확장한 통합적 다중 모달 모델이다.\n2. Puffin은 임의의 시점에서 장면을 해석하고 생성하기 위해 언어 회귀와 확산 기반 생성을 통합한다.\n3. Puffin은 카메라를 언어로 취급하여 시각적 단서를 사진 용어와 일치시키며 기하적 맥락에 걸쳐 추론하는 새로운 패러다임을 제시한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Advancing End-to-End Pixel Space Generative Modeling via Self-supervised\n  Pre-training",
+    "abstract": "Pixel-space generative models are often more difficult to train and generally\nunderperform compared to their latent-space counterparts, leaving a persistent\nperformance and efficiency gap. In this paper, we introduce a novel two-stage\ntraining framework that closes this gap for pixel-space diffusion and\nconsistency models. In the first stage, we pre-train encoders to capture\nmeaningful semantics from clean images while aligning them with points along\nthe same deterministic sampling trajectory, which evolves points from the prior\nto the data distribution. In the second stage, we integrate the encoder with a\nrandomly initialized decoder and fine-tune the complete model end-to-end for\nboth diffusion and consistency models. Our training framework demonstrates\nstrong empirical performance on ImageNet dataset. Specifically, our diffusion\nmodel reaches an FID of 2.04 on ImageNet-256 and 2.35 on ImageNet-512 with 75\nnumber of function evaluations (NFE), surpassing prior pixel-space methods by a\nlarge margin in both generation quality and efficiency while rivaling leading\nVAE-based models at comparable training cost. Furthermore, on ImageNet-256, our\nconsistency model achieves an impressive FID of 8.82 in a single sampling step,\nsignificantly surpassing its latent-space counterpart. To the best of our\nknowledge, this marks the first successful training of a consistency model\ndirectly on high-resolution images without relying on pre-trained VAEs or\ndiffusion models.",
+    "authors": [
+      "Jiachen Lei",
+      "Keli Liu",
+      "Julius Berner",
+      "Haiming Yu",
+      "Hongkai Zheng",
+      "Jiahong Wu",
+      "Xiangxiang Chu"
+    ],
+    "likes": 98,
+    "published_date": "Oct 14",
+    "url": "https://huggingface.co/papers/2510.12586",
+    "date_collected": "2025-10-17T07:06:47.613613+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "자가지도를 통한 픽셀 공간 생성 모델링의 종단 간 진보",
+      "abstract": "픽셀 공간 생성 모델은 일반적으로 잠재 공간 모델보다 훈련이 어렵고 성능이 낮아 계속된 성능과 효율성 간격이 남는다. 본 논문에서는 이 간극을 닫기 위한 새로운 두 단계 훈련 프레임워크를 소개한다. 첫 번째 단계에서는 인코더를 사전 훈련하여 깨끗한 이미지로부터 의미 있는 의미론적 정보를 캡처하고, 이를 결정적 샘플링 경로 상의 점과 정렬하여 이전 분포로부터 데이터 분포로 진화하는 점을 포착한다. 두 번째 단계에서는 인코더를 무작위로 초기화된 디코더와 통합하고 확산 및 일관성 모델의 완전한 모델을 최적화한다. 우리의 훈련 프레임워크는 ImageNet 데이터셋에서 강력한 실험적 성능을 나타낸다. 구체적으로, 우리의 확산 모델은 ImageNet-256에서 2.04의 FID를 기록하고 ImageNet-512에서 2.35로 단순화수 보다 훨씬 우수한 성능을 보이며, 세대 품질과 효율성 측면에서 이끄는 VAE 기반 모델과 비슷한 훈련 비용에서 경쟁한다. 더 나아가, ImageNet-256에서 우리의 일관성 모델은 한 번의 샘플링 단계로 8.82의 인상적인 FID를 달성하며 잠재 공간의 상대 뛰어 넘는다. 우리의 지식에 따르면, 이는 사전 훈련된 VAE나 확산 모델에 의존하지 않고 고해상도 이미지에 대한 일관성 모델의 최초 성공적인 훈련을 나타낸다."
+    },
+    "summary": "1. 픽셀 공간 생성 모델 훈련의 어려움을 극복하기 위해 자가지도 학습을 사용하는 새로운 두 단계 훈련 프레임워크를 소개.\n2. ImageNet 데이터셋에서 우수한 성과를 보이며, 확산 모델은 FID 2.04(256x256) 및 2.35(512x512)를 기록하며 일관성 모델은 FID 8.82를 달성.\n3. 최초로 고해상도 이미지에 대해 사전 훈련된 모델 없이 일관성 모델을 성공적으로 훈련시킨 것으로 기록.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel\n  Translation",
+    "abstract": "Large language models (LLMs) have substantially advanced machine translation\n(MT), yet their effectiveness in translating web novels remains unclear.\nExisting benchmarks rely on surface-level metrics that fail to capture the\ndistinctive traits of this genre. To address these gaps, we introduce DITING,\nthe first comprehensive evaluation framework for web novel translation,\nassessing narrative and cultural fidelity across six dimensions: idiom\ntranslation, lexical ambiguity, terminology localization, tense consistency,\nzero-pronoun resolution, and cultural safety, supported by over 18K\nexpert-annotated Chinese-English sentence pairs. We further propose AgentEval,\na reasoning-driven multi-agent evaluation framework that simulates expert\ndeliberation to assess translation quality beyond lexical overlap, achieving\nthe highest correlation with human judgments among seven tested automatic\nmetrics. To enable metric comparison, we develop MetricAlign, a meta-evaluation\ndataset of 300 sentence pairs annotated with error labels and scalar quality\nscores. Comprehensive evaluation of fourteen open, closed, and commercial\nmodels reveals that Chinese-trained LLMs surpass larger foreign counterparts,\nand that DeepSeek-V3 delivers the most faithful and stylistically coherent\ntranslations. Our work establishes a new paradigm for exploring LLM-based web\nnovel translation and provides public resources to advance future research.",
+    "authors": [
+      "Enze Zhang",
+      "Jiaying Wang",
+      "Mengxi Xiao",
+      "Jifei Liu",
+      "Ziyan Kuang",
+      "Rui Dong",
+      "Eric Dong",
+      "Sophia Ananiadou",
+      "Min Peng",
+      "Qianqian Xie"
+    ],
+    "likes": 92,
+    "published_date": "Oct 10",
+    "url": "https://huggingface.co/papers/2510.09116",
+    "date_collected": "2025-10-17T07:06:47.614958+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "DITING: 웹 소설 번역의 벤치마킹을 위한 멀티 에이전트 평가 프레임워크",
+      "abstract": "대형 언어 모델(Large language models, LLMs)은 기계 번역(MT)을 크게 발전시켰지만, 웹 소설 번역에서의 효과는 여전히 모호합니다."
+    },
+    "summary": "1. 웹 소설 번역 분야에서 LLM의 효과를 평가하기 위해 DITING 프레임워크를 소개함.\n2. AgentEval을 통해 전문가 판단을 시뮬레이션하는 멀티 에이전트 평가 프레임워크 제안함.\n3. 14개의 모델을 평가한 결과, DeepSeek-V3가 가장 충실하고 스타일적으로 일관된 번역을 제공함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Scaling Language-Centric Omnimodal Representation Learning",
+    "abstract": "Recent multimodal embedding approaches leveraging multimodal large language\nmodels (MLLMs) fine-tuned with contrastive learning (CL) have shown promising\nresults, yet the underlying reasons behind their superiority remain\nunderexplored. This work argues that a crucial advantage of MLLM-based\napproaches stems from implicit cross-modal alignment achieved during generative\npretraining, where the language decoder learns to exploit multimodal signals\nwithin a shared representation space for generating unimodal outputs. Through\nanalysis of anisotropy and kernel similarity structure, we empirically confirm\nthat latent alignment emerges within MLLM representations, allowing CL to serve\nas a lightweight refinement stage. Leveraging this insight, we propose a\nLanguage-Centric Omnimodal Embedding framework, termed LCO-Emb. Extensive\nexperiments across diverse backbones and benchmarks demonstrate its\neffectiveness, achieving state-of-the-art performance across modalities.\nFurthermore, we identify a Generation-Representation Scaling Law (GRSL),\nshowing that the representational capabilities gained through contrastive\nrefinement scales positively with the MLLM's generative capabilities. This\nsuggests that improving generative abilities evolves as an effective paradigm\nfor enhancing representation quality. We provide a theoretical explanation of\nGRSL, which formally links the MLLM's generative quality to the upper bound on\nits representation performance, and validate it on a challenging, low-resource\nvisual-document retrieval task, showing that continual generative pretraining\nbefore CL can further enhance the potential of a model's embedding\ncapabilities. Codes, models, and resources are available at\nhttps://github.com/LCO-Embedding/LCO-Embedding.",
+    "authors": [
+      "Chenghao Xiao",
+      "Hou Pong Chan",
+      "Hao Zhang",
+      "Weiwen Xu",
+      "Mahani Aljunied",
+      "Yu Rong"
+    ],
+    "likes": 91,
+    "published_date": "Oct 13",
+    "url": "https://huggingface.co/papers/2510.11693",
+    "date_collected": "2025-10-17T07:06:47.616124+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "언어 중심 옴니모달 표현 학습의 확장",
+      "abstract": "최근 대규모 언어 모델 (MLLMs)을 대조 학습 (CL)으로 세밀하게 조정한 최근 다중 모달 임베딩 방법은 유망한 결과를 보여주지만, 이러한 우월성의 근본적인 이유는 아직 탐구되지 않았습니다. 본 연구는 MLLM 기반 접근법의 중요한 장점이 언어 디코더가 생성을 위해 공유 표현 공간 내에서 다중 모달 신호를 활용하는 방식으로, 생성적 사전 학습 과정 중 암시적 교모달 정렬에서 유래한다고 주장합니다. 탄젠트 공간의 해방성과 커널 유사성 구조 분석을 통해 MLLM 표현 내에서 잠재적 정렬이 나타나는 것을 경험적으로 확인하여 CL이 가벼운 정제 단계로 작용할 수 있음을 입증했습니다. 이 통찰을 활용하여 LCO-Emb라는 언어 중심 옴니모달 임베딩 프레임워크를 제안합니다. 다양한 백본과 벤치마크를 대상으로 한 광범위한 실험에서 효과를 입증하며, 각 모드에서 최고 수준의 성능을 달성했습니다. 더불어, 대조적 정제를 통해 얻은 표현적 능력이 MLLM의 생성 능력과 긍정적으로 상관되는 표현-생성 확장 법칙(GRSL)를 확인했습니다. 이는 생성 능력을 향상시킨다는 것이 표현의 질을 향상시키는 효과적인 패러다임으로 진화한다는 것을 시사합니다. MLLM의 생성적 품질을 그 표현 성능의 상한과 형식적으로 연결하는 GRSL에 대한 이론적 설명을 제공하고, 모델의 임베딩 능력의 잠재성을 더욱 향상시키기 위해 CL 이전에 계속된 생성적 사전 학습이 모델의 임베딩 능력의 잠재성을 더욱 향상시킬 수 있음을 도전적인 저자료 검색 작업을 통해 입증했습니다."
+    },
+    "summary": "1. MLLM 기반 다중 모달 임베딩의 성능 우수성은 언어 디코더가 다중 모달 신호를 활용하여 생성하는 공통 표현 공간 내에서 잠재적 교모달 정렬을 이끌어내는 것에 기인한다.\n2. 제안된 Language-Centric Omnimodal Embedding 프레임워크(LCO-Emb)는 다양한 백본과 벤치마크에서 실험을 통해 효과적임을 입증하고, 여러 모달에서 최고 수준의 성능을 보여준다.\n3. 대조적 정제를 통해 얻은 표현 능력은 MLLM의 생성 능력과 긍정적으로 연관되어, 생성능력 향상이 표현 품질 향상을 위한 효과적인 패러다임으로 발전한다.",
+    "categories": [
+      "Multimodal",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Robot Learning: A Tutorial",
+    "abstract": "Robot learning is at an inflection point, driven by rapid advancements in\nmachine learning and the growing availability of large-scale robotics data.\nThis shift from classical, model-based methods to data-driven, learning-based\nparadigms is unlocking unprecedented capabilities in autonomous systems. This\ntutorial navigates the landscape of modern robot learning, charting a course\nfrom the foundational principles of Reinforcement Learning and Behavioral\nCloning to generalist, language-conditioned models capable of operating across\ndiverse tasks and even robot embodiments. This work is intended as a guide for\nresearchers and practitioners, and our goal is to equip the reader with the\nconceptual understanding and practical tools necessary to contribute to\ndevelopments in robot learning, with ready-to-use examples implemented in\nlerobot.",
+    "authors": [
+      "Francesco Capuano",
+      "Caroline Pascal",
+      "Adil Zouitine",
+      "Thomas Wolf",
+      "Michel Aractingi"
+    ],
+    "likes": 60,
+    "published_date": "Oct 14",
+    "url": "https://huggingface.co/papers/2510.12403",
+    "date_collected": "2025-10-17T07:06:47.617243+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "로봇 학습: 튜토리얼",
+      "abstract": "로봇 학습은 기계 학습의 급속한 발전과 대규모 로봇 데이터의 점점 더 많은 활용으로 전환점에 이르렀다. 전통적인 모델 기반 방법에서 데이터 기반 학습 기반 패러다임으로의 전환은 자율 시스템에서 전례없는 능력을 발휘하게 되었다. 이 튜토리얼은 현대 로봇 학습의 영역을 안내하며, 강화 학습과 행동 복제의 기본 원리부터 다양한 작업 및 로봇 표현에서 작동할 수 있는 종합적인, 언어 조건 모델로 이어지는 과정을 제시한다. 이 작업은 연구자 및 실무자를 위한 안내서로서, 독자가 로봇 학습 분야의 발전에 기여하기 위해 필요한 개념적 이해와 실용적 도구를 갖출 수 있도록 하는 것이 목표이며, lerobot에 구현된 사용 예제를 제공한다."
+    },
+    "summary": "1. 로봇 학습은 기계 학습 발전과 대규모 로봇 데이터의 활용 증가로 전환점에 있으며, 강화 학습과 행동 복제 등의 기본 원리부터 다양한 작업과 로봇 표현을 다루는 종합적인 모델에 이르기까지 다양한 영역을 안내하고 있다.\n2. 이 연구는 연구자와 실무자들을 위해 로봇 학습 분야의 발전에 필요한 개념적 이해와 실용적 도구를 제공하며, lerobot에 구현된 사용 예제를 제시하고 있다.\n3. 전통적인 모델 기반 방법에서 데이터 기반 학습 기반 패러다임으로의 전환은 자율 시스템에서 전례없는 능력을 발휘하게 되었다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "KORMo: Korean Open Reasoning Model for Everyone",
+    "abstract": "This work presents the first large-scale investigation into constructing a\nfully open bilingual large language model (LLM) for a non-English language,\nspecifically Korean, trained predominantly on synthetic data. We introduce\nKORMo-10B, a 10.8B-parameter model trained from scratch on a Korean-English\ncorpus in which 68.74% of the Korean portion is synthetic. Through systematic\nexperimentation, we demonstrate that synthetic data, when carefully curated\nwith balanced linguistic coverage and diverse instruction styles, does not\ncause instability or degradation during large-scale pretraining. Furthermore,\nthe model achieves performance comparable to that of contemporary open-weight\nmultilingual baselines across a wide range of reasoning, knowledge, and\ninstruction-following benchmarks. Our experiments reveal two key findings: (1)\nsynthetic data can reliably sustain long-horizon pretraining without model\ncollapse, and (2) bilingual instruction tuning enables near-native reasoning\nand discourse coherence in Korean. By fully releasing all components including\ndata, code, training recipes, and logs, this work establishes a transparent\nframework for developing synthetic data-driven fully open models (FOMs) in\nlow-resource settings and sets a reproducible precedent for future multilingual\nLLM research.",
+    "authors": [
+      "Minjun Kim",
+      "Hyeonseok Lim",
+      "Hangyeol Yoo",
+      "Inho Won",
+      "Seungwoo Song",
+      "Minkyung Cho",
+      "Junhun Yuk",
+      "Changsu Choi",
+      "Dongjae Shin",
+      "Huige Lee",
+      "Hoyun Song",
+      "Alice Oh",
+      "Kyungtae Lim"
+    ],
+    "likes": 60,
+    "published_date": "Oct 10",
+    "url": "https://huggingface.co/papers/2510.09426",
+    "date_collected": "2025-10-17T07:06:47.618737+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "모두를 위한 한국어 오픈 추론 모델 KORMo",
+      "abstract": "본 연구는 비영어권 언어인 한국어를 대상으로 하는 최초의 대규모 오픈 이중언어 대형 언어모델 (LLM)을 건설하는 방대한 조사를 제시합니다. 우리는 주로 합성 데이터로 훈련된 한국-영어 말뭉치에서 완전히 새롭게 훈련된 108억 파라미터 모델 KORMo-10B를 소개합니다. 한국어 부분의 68.74%가 합성인 이 말뭉치를 통해 시스템적인 실험을 통해 우리는 균형있는 언어적 커버리지와 다양한 지시 스타일로 조성된 합성 데이터는 대규모 사전 훈련 중 불안정성이나 저하를 일으키지 않음을 입증합니다. 더욱이, 해당 모델은 많은 추론, 지식 및 지시 따르기 벤치마크에서 현대적인 오픈 가중치 다국어 대조와 비슷한 성능을 달성합니다. 우리 실험 결과는 두 가지 주요 결과를 보여줍니다: (1) 합성 데이터는 모델 붕괴 없이 장기간 사전 훈련을 신뢰할 수 있게 유지할 수 있고, (2) 이중언어 지시 튜닝은 한국어에서 거의 원어민 수준의 추론과 담화 일관성을 실현합니다. 이 연구는 데이터, 코드, 훈련 레시피 및 로그를 포함한 모든 구성요소를 완전히 공개하여 저자원 환경에서 합성 데이터 기반 완전히 오픈 모델(FOMs)을 개발하기 위한 투명한 프레임워크를 확립하고, 미래의 다국어 LLM 연구에 대한 재현 가능한 선례를 제시합니다."
+    },
+    "summary": "1. 한국어를 대상으로 하는 첫 번째 대규모 오픈 이중언어 대형 언어모델 KORMo-10B이 합성 데이터를 중심으로 훈련되어 현대적인 다국어 기준에 필적하는 성능을 달성함을 입증함.\n2. 합성 데이터는 균형 잡힌 언어 커버리지와 다양한 지시 스타일로 조성될 때 대규모 사전 훈련 중 안정성이나 성능 하락을 초래하지 않음을 실험적으로 밝힘.\n3. 이중언어 지시 튜닝을 통해 KORMo 모델은 한국어에서 거의 원어민 수준의 추론 및 담화 일관성을 실현하며, 미래 다국어 LLM 연구에 재현 가능한 선례를 마련함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning\n  for LLMs",
+    "abstract": "We propose QeRL, a Quantization-enhanced Reinforcement Learning framework for\nlarge language models (LLMs). While RL is essential for LLMs' reasoning\ncapabilities, it is resource-intensive, requiring substantial GPU memory and\nlong rollout durations. QeRL addresses these issues by combining NVFP4\nquantization with Low-Rank Adaptation (LoRA), accelerating rollout phase of RL\nwhile reducing memory overhead. Beyond efficiency, our findings show that\nquantization noise increases policy entropy, enhancing exploration, and\nenabling the discovery of better strategies during RL. To further optimize\nexploration, QeRL introduces an Adaptive Quantization Noise (AQN) mechanism,\nwhich dynamically adjusts noise during training. Experiments demonstrate that\nQeRL delivers over 1.5 times speedup in the rollout phase. Moreover, this is\nthe first framework to enable RL training of a 32B LLM on a single H100 80GB\nGPU, while delivering overall speedups for RL training. It also achieves faster\nreward growth and higher final accuracy than 16-bit LoRA and QLoRA, while\nmatching the performance of full-parameter fine-tuning on mathematical\nbenchmarks such as GSM8K (90.8%) and MATH 500 (77.4%) in the 7B model. These\nresults establish QeRL as an efficient and effective framework for RL training\nin LLMs.",
+    "authors": [
+      "Wei Huang",
+      "Yi Ge",
+      "Shuai Yang",
+      "Yicheng Xiao",
+      "Huizi Mao",
+      "Yujun Lin",
+      "Hanrong Ye",
+      "Sifei Liu",
+      "Ka Chun Cheung",
+      "Hongxu Yin",
+      "Yao Lu",
+      "Xiaojuan Qi",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "likes": 0,
+    "published_date": "Oct 13",
+    "url": "https://huggingface.co/papers/2510.11696",
+    "date_collected": "2025-10-17T07:06:47.619753+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "QeRL: 효율 이상을 넘어서 -- 양자화 강화 학습을 통한 대규모 언어 모델(Large Language Models, LLMs)에 대한 연구",
+      "abstract": "본 연구에서는 대규모 언어 모델(Large Language Models, LLMs)을 위한 양자화 강화 학습 프레임워크인 QeRL을 제안합니다. 강화 학습은 LLMs의 추론 능력에 필수적이지만, 상당한 GPU 메모리와 오래 걸리는 롤아웃 기간이 필요합니다. QeRL은 NVFP4 양자화와 Low-Rank Adaptation(LoRA)을 결합하여 강화 학습의 롤아웃 단계를 가속화하고 메모리 오버헤드를 줄입니다. 효율성을 넘어, 우리의 연구 결과는 양자화 노이즈가 정책 엔트로피를 증가시켜 탐사를 강화하고 강화 학습 중 더 나은 전략을 발견하는데 도움을 준다는 점을 보여줍니다. 탐사를 더 최적화하기 위해 QeRL은 훈련 중에 노이즈를 동적으로 조절하는 Adaptive Quantization Noise(AQN) 메커니즘을 소개합니다. 실험 결과, QeRL은 롤아웃 단계에서 1.5배 이상의 가속을 제공합니다. 더욱이, 이는 32B LLM을 단일 H100 80GB GPU에서 강화 학습할 수 있는 첫 번째 프레임워크로, 전반적으로 강화 학습에 대한 속도 향상을 이룹니다."
+    },
+    "summary": "1. QeRL은 대규모 언어 모델(Large Language Models, LLMs)을 위한 양자화 강화 학습 프레임워크로, NVFP4 양자화와 Low-Rank Adaptation(LoRA)를 결합하여 강화 학습의 롤아웃 단계를 가속화하고 메모리 오버헤드를 줄입니다.\n2. 양자화 노이즈는 정책 엔트로피를 증가시켜 탐사를 강화하고 더 나은 전략을 발견하는 데 도움을 줍니다. Adaptive Quantization Noise(AQN) 메커니즘을 도입하여 훈련 중에 노이즈를 동적으로 조절합니다.\n3. 실험 결과에 따르면, QeRL은 롤아웃 단계에서 1.5배 이상의 가속을 제공하며, 32B LLM을 단일 GPU에서 강화 학습할 수 있는 최초의 프레임워크로서 빠른 보상 증가와 높은 최종 정확도를 달성합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to\n  Embodied AI",
+    "abstract": "Large language models leverage internet-scale text data, yet embodied AI\nremains constrained by the prohibitive costs of physical trajectory collection.\nDesktop environments -- particularly gaming -- offer a compelling alternative:\nthey provide rich sensorimotor interactions at scale while maintaining the\nstructured observation-action coupling essential for embodied learning. We\npresent D2E (Desktop to Embodied AI), a framework that demonstrates desktop\ninteractions can serve as an effective pretraining substrate for robotics\nembodied AI tasks. Unlike prior work that remained domain-specific (e.g., VPT\nfor Minecraft) or kept data proprietary (e.g., SIMA), D2E establishes a\ncomplete pipeline from scalable desktop data collection to verified transfer in\nembodied domains. Our framework comprises three components: (1) the OWA Toolkit\nthat unifies diverse desktop interactions into a standardized format with 152x\ncompression, (2) the Generalist-IDM that achieves strong zero-shot\ngeneralization across unseen games through timestamp-based event prediction,\nenabling internet-scale pseudo-labeling, and (3) VAPT that transfers\ndesktop-pretrained representations to physical manipulation and navigation.\nUsing 1.3K+ hours of data (259 hours of human demonstrations, and 1K+ hours of\npseudo-labeled gameplay), we achieve a total of 96.6% success rate on LIBERO\nmanipulation and 83.3% on CANVAS navigation benchmarks. This validates that\nsensorimotor primitives in digital interactions exhibit sufficient invariance\nto transfer meaningfully to physical embodied tasks, establishing desktop\npretraining as a practical paradigm for robotics. We will make all our work\npublic, including the OWA toolkit, datasets of human-collected and\npseudo-labeled, and VAPT-trained models available at\nhttps://worv-ai.github.io/d2e/",
+    "authors": [
+      "Suwhan Choi",
+      "Jaeyoon Jung",
+      "Haebin Seong",
+      "Minchan Kim",
+      "Minyeong Kim",
+      "Yongjun Cho",
+      "Yoonshik Kim",
+      "Yubeen Park",
+      "Youngjae Yu",
+      "Yunsung Lee"
+    ],
+    "likes": 0,
+    "published_date": "Oct 7",
+    "url": "https://huggingface.co/papers/2510.05684",
+    "date_collected": "2025-10-17T07:06:47.620697+09:00",
+    "week": "2025-W42",
+    "translation": {
+      "title": "데스크톱 데이터에서 비전-행동 사전학습 확장하여 실체화된 AI로의 이전을 위한 D2E",
+      "abstract": "대규모 언어 모델은 인터넷 규모의 텍스트 데이터를 활용하지만, 실체화된 AI는 물리적 궤적 수집의 비용이 막대한 제약으로 남아 있습니다. 특히 게임과 같은 데스크톱 환경은 이를 대체할 매력적인 대안을 제공합니다: 그들은 구조화된 관찰-행동 결합을 유지하면서 규모에 걸맞은 풍부한 감각 운동 상호작용을 제공합니다. 저희는 D2E(데스크톱에서 실체화된 AI로)라는 프레임워크를 제시하는데, 이는 데스크톱 상호작용이 로봇 실체화된 AI 작업에 대한 효과적인 사전학습 기반으로 작용할 수 있다는 것을 보여줍니다. 이전의 작업과 달리 (예: 마인크래프트용 VPT) 도메인 특정한 상태로 남거나(예: SIMA) 데이터를 사유로 유지하지 않고 D2E는 확장 가능한 데스크톱 데이터 수집부터 실체화 도메인의 확인된 전이까지 완전한 파이프라인을 확립합니다. 우리의 프레임워크는 세 가지 구성 요소로 구성되어 있습니다: (1) 다양한 데스크톱 상호작용을 152배 압축률로 통합하는 OWA 툴킷, (2) 게임 시간 기반 이벤트 예측을 통해 보이지 않는 게임에 강력한 제로샷 일반화를 달성하는 일반(IDM), 인터넷 규모 유사 레이블링을 가능하게 하는 자바 후라인, 그리고 (3) 데스크톱에서 사전 훈련된 표현을 물리적 조작 및 탐색으로 전송하는 VAPT. 우리는 1.3K 시간 이상의 데이터(259시간의 인간 시연 및 1K 시간 이상의 유사 레이블 게임 플레이)를 사용하여 LIBERO 조작에서 총 96.6%의 성공률과 CANVAS 탐색 벤치마크에서 83.3%를 달성합니다. 이는 디지털 상호작용으로부터의 감각 운동 기본 요소가 물리적 실체된 작업으로 의미 있는 전이를 위한 충분한 불변성을 나타내며, 데스크톱 사전학습을 로봇학에 대한 실용적 패러다임으로 확립합니다. 우리는 OWA 툴킷, 인간 수집 및 유사 레이블링된 데이터 세트, VAPT로 훈련된 모델을 https://worv-ai.github.io/d2e/에 공개할 예정입니다."
+    },
+    "summary": "1. 데스크톱 환경에서 수집한 데이터를 이용한 실체화된 AI 작업 전이를 위한 D2E 프레임워크 소개\n2. OWA 툴킷을 통한 다양한 데스크톱 상호작용 기준화와 152배 압축\n3. 인간 시연 및 유사 레이블링 게임 플레이를 통해 물리적 조작 및 탐색 과제에서 뛰어난 성과를 보이며 데스크톱 사전 학습의 실용성 입증",
+    "categories": [
+      "Robotics",
+      "Computer Vision",
+      "Other"
+    ]
+  }
+]

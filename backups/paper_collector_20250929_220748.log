@@ -1,0 +1,149 @@
+=== Paper Collection Started at Sun Sep 28 22:06:52 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W40
+URL: https://huggingface.co/papers/week/2025-W40
+Found 10 papers in weekly view
+Fetching likes for: Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR
+Fetching likes for: Qwen3-Omni Technical Report
+Fetching likes for: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Fetching likes for: VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models
+Fetching likes for: LIMI: Less is More for Agency
+Fetching likes for: MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources
+Fetching likes for: SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines
+Fetching likes for: Video models are zero-shot learners and reasoners
+Fetching likes for: Tree Search for LLM Agent Reinforcement Learning
+Fetching likes for: Seedream 4.0: Toward Next-generation Multimodal Image Generation
+Selected top 10 papers by likes:
+1. Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR (121 likes)
+2. Qwen3-Omni Technical Report (116 likes)
+3. RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation (115 likes)
+4. VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models (111 likes)
+5. LIMI: Less is More for Agency (91 likes)
+6. MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources (90 likes)
+7. SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines (86 likes)
+8. Video models are zero-shot learners and reasoners (74 likes)
+9. Tree Search for LLM Agent Reinforcement Learning (70 likes)
+10. Seedream 4.0: Toward Next-generation Multimodal Image Generation (63 likes)
+Found abstract: Arabic document OCR remains a challenging task due to the language's cursive
+script, diverse fonts, ...
+Processed paper: Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR
+Found abstract: We present Qwen3-Omni, a single multimodal model that, for the first time,
+maintains state-of-the-ar...
+Processed paper: Qwen3-Omni Technical Report
+Found abstract: Large language models excel at function- and file-level code generation, yet
+generating complete rep...
+Processed paper: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Found abstract: Policy-based reinforcement learning currently plays an important role in
+improving LLMs on mathemati...
+Processed paper: VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models
+Found abstract: We define Agency as the emergent capacity of AI systems to function as
+autonomous agents actively di...
+Processed paper: LIMI: Less is More for Agency
+Found abstract: Large multimodal reasoning models have achieved rapid progress, but their
+advancement is constrained...
+Processed paper: MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources
+Found abstract: We present a scientific reasoning foundation model that aligns natural
+language with heterogeneous s...
+Processed paper: SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines
+Found abstract: The remarkable zero-shot capabilities of Large Language Models (LLMs) have
+propelled natural languag...
+Processed paper: Video models are zero-shot learners and reasoners
+Found abstract: Recent advances in reinforcement learning (RL) have significantly enhanced
+the agentic capabilities ...
+Processed paper: Tree Search for LLM Agent Reinforcement Learning
+Found abstract: We introduce Seedream 4.0, an efficient and high-performance multimodal image
+generation system that...
+Processed paper: Seedream 4.0: Toward Next-generation Multimodal Image Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR
+Paper already exists, checking if translation is complete...
+Update likes: 121  ->  117
+Update date_collected: 2025-09-29T07:07:00.168141+09:00  ->  2025-09-28T07:07:01.766164+09:00
+
+Processing paper 2/10
+Title: Qwen3-Omni Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 116  ->  114
+Update date_collected: 2025-09-29T07:07:00.169872+09:00  ->  2025-09-28T07:07:01.767940+09:00
+
+Processing paper 3/10
+Title: RPG: A Repository Planning Graph for Unified and Scalable Codebase
+  Generation
+Paper already exists, checking if translation is complete...
+Update likes: 115  ->  114
+Update date_collected: 2025-09-29T07:07:00.171269+09:00  ->  2025-09-28T07:07:01.769376+09:00
+
+Processing paper 4/10
+Title: VCRL: Variance-based Curriculum Reinforcement Learning for Large
+  Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 111  ->  105
+Update date_collected: 2025-09-29T07:07:00.172369+09:00  ->  2025-09-28T07:07:01.770490+09:00
+
+Processing paper 5/10
+Title: LIMI: Less is More for Agency
+Paper already exists, checking if translation is complete...
+Update likes: 91  ->  90
+Update date_collected: 2025-09-29T07:07:00.173956+09:00  ->  2025-09-28T07:07:01.772098+09:00
+
+Processing paper 6/10
+Title: MMR1: Enhancing Multimodal Reasoning with Variance-Aware Sampling and
+  Open Resources
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  85
+Update date_collected: 2025-09-29T07:07:00.175381+09:00  ->  2025-09-28T07:07:01.773499+09:00
+
+Processing paper 7/10
+Title: SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  84
+Update date_collected: 2025-09-29T07:07:00.177052+09:00  ->  2025-09-28T07:07:01.775176+09:00
+
+Processing paper 8/10
+Title: Video models are zero-shot learners and reasoners
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  71
+Update date_collected: 2025-09-29T07:07:00.178237+09:00  ->  2025-09-28T07:07:01.776367+09:00
+
+Processing paper 9/10
+Title: Tree Search for LLM Agent Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  69
+Update date_collected: 2025-09-29T07:07:00.179311+09:00  ->  2025-09-28T07:07:01.777428+09:00
+
+Processing paper 10/10
+Title: Seedream 4.0: Toward Next-generation Multimodal Image Generation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W40.json...
+
+Updating Notion database...
+Updating paper: Baseer: 아랍어 문서를 Markdown OCR로 변환하기 위한 Vision-Language 모델 (likes: 117 -> 121)
+Updating paper: Qwen3-Omni 기술 보고서 (likes: 114 -> 116)
+Updating paper: RPG: 통합 및 확장 가능한 코드베이스 생성을 위한 저장소 계획 그래프 (likes: 114 -> 115)
+Updating paper: VCRL: 대규모 언어 모델을 위한 분산 기반 커리큘럼 강화 학습 (likes: 105 -> 111)
+Updating paper: LIMI: 에이전시를 위한 적은 양이 더 많다 (likes: 90 -> 91)
+Updating paper: MMR1: 변동성 인식 샘플링과 개방 자원을 활용한 다중모달 추론 강화 (likes: 85 -> 90)
+Updating paper: SciReasoner: 다양한 학문 영역을 아우르는 과학적 추론 기반 모델 (likes: 84 -> 86)
+Updating paper: 비디오 모델은 제로샷 학습자 및 추론자 (likes: 71 -> 74)
+Updating paper: LLM 에이전트 강화학습을 위한 트리 탐색 (likes: 69 -> 70)
+Creating new paper: Seedream 4.0: 차세대 멀티모달 이미지 생성을 향하여
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Sep 28 22:09:12 UTC 2025 ===
+

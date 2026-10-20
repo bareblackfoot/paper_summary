@@ -1,0 +1,123 @@
+=== Paper Collection Started at Thu Jul 30 23:12:55 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W31
+URL: https://huggingface.co/papers/week/2026-W31
+Found 10 papers in weekly view
+Fetching likes for: Kimi K3: Open Frontier Intelligence
+Fetching likes for: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Fetching likes for: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Fetching likes for: TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM
+Fetching likes for: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Fetching likes for: A New Role for Relevance: Guiding Corpus Interaction in Agentic Search
+Fetching likes for: From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search
+Fetching likes for: CodeNib: A Multi-View Data System for Serving Repository Context to Coding Agents
+Fetching likes for: CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization
+Fetching likes for: Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+Selected top 10 papers by likes:
+1. Kimi K3: Open Frontier Intelligence (386 likes)
+2. Progress Reward Modeling for Robotic Learning: A Comprehensive Survey (191 likes)
+3. HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone (141 likes)
+4. TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM (119 likes)
+5. JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents (119 likes)
+6. A New Role for Relevance: Guiding Corpus Interaction in Agentic Search (87 likes)
+7. From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search (81 likes)
+8. CodeNib: A Multi-View Data System for Serving Repository Context to Coding Agents (74 likes)
+9. CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization (73 likes)
+10. Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation (73 likes)
+Found abstract: We introduce Kimi K3, a 2.8T parameter Mixture-of-Experts model with 104 billion activated parameter...
+Processed paper: Kimi K3: Open Frontier Intelligence
+Found abstract: Robotic learning takes place in dynamic environments with large behavior spaces. A terminal success ...
+Processed paper: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Found abstract: Learning deployable manipulation policies is bottlenecked by the scarcity of data that is both high-...
+Processed paper: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Found abstract: Vision-language-action (VLA) models commonly adopt an LLM-centric V to L to A pathway, where visual ...
+Processed paper: TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM
+Found abstract: Creative AI is moving from single-step asset generation toward long-horizon multimodal production. A...
+Processed paper: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Found abstract: Relevance is a query-dependent estimate of whether a document or excerpt contains useful evidence. E...
+Processed paper: A New Role for Relevance: Guiding Corpus Interaction in Agentic Search
+Found abstract: Agentic search enables large language models to solve knowledge-intensive tasks by interleaving mult...
+Processed paper: From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search
+Found abstract: Coding agents repeatedly search, navigate, and retain context from evolving repositories, but discon...
+Processed paper: CodeNib: A Multi-View Data System for Serving Repository Context to Coding Agents
+Found abstract: Rubric-based reinforcement learning enriches language model training by evaluating model outputs aga...
+Processed paper: CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization
+Found abstract: On-policy distillation (OPD) adapts diffusion models by querying a teacher along trajectories genera...
+Processed paper: Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Kimi K3: Open Frontier Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 386  ->  342
+Update date_collected: 2026-07-31T08:13:04.965639+09:00  ->  2026-07-30T08:03:36.081042+09:00
+
+Processing paper 2/10
+Title: Progress Reward Modeling for Robotic Learning: A Comprehensive Survey
+Paper already exists, checking if translation is complete...
+Update likes: 191  ->  156
+Update date_collected: 2026-07-31T08:13:04.969135+09:00  ->  2026-07-30T08:03:36.084592+09:00
+
+Processing paper 3/10
+Title: HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+Paper already exists, checking if translation is complete...
+Update likes: 141  ->  134
+Update date_collected: 2026-07-31T08:13:04.973155+09:00  ->  2026-07-30T08:03:36.088699+09:00
+
+Processing paper 4/10
+Title: TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents
+Paper already exists, checking if translation is complete...
+Update likes: 119  ->  115
+Update date_collected: 2026-07-31T08:13:04.980786+09:00  ->  2026-07-30T08:03:36.092862+09:00
+
+Processing paper 6/10
+Title: A New Role for Relevance: Guiding Corpus Interaction in Agentic Search
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  82
+Update date_collected: 2026-07-31T08:13:04.983906+09:00  ->  2026-07-30T08:03:36.095967+09:00
+
+Processing paper 7/10
+Title: From Proprietary to Open-Source: Bridging the Distribution Gap via Multi-Agent Protocol Distillation in Agentic Search
+Paper already exists, checking if translation is complete...
+Update likes: 81  ->  74
+Update date_collected: 2026-07-31T08:13:04.987344+09:00  ->  2026-07-30T08:03:36.099427+09:00
+
+Processing paper 8/10
+Title: CodeNib: A Multi-View Data System for Serving Repository Context to Coding Agents
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  70
+Update date_collected: 2026-07-31T08:13:04.997417+09:00  ->  2026-07-30T08:03:36.102651+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W31.json...
+
+Updating Notion database...
+Updating paper: Kimi K3: 오픈 프론티어 인텔리전스 (likes: 342 -> 386)
+Updating paper: 로봇 학습을 위한 진행 보상 모델링: 포괄적인 조사 (likes: 156 -> 191)
+Updating paper: HiFi-UMI: 고품질 UMI 데이터만을 활용한 전달 가능한 조작 정책 학습 (likes: 134 -> 141)
+Creating new paper: TurboVLA: RTX 4090에서 32 Hz의 실시간 Vision-Language-Action 모델, VRAM 1GB 미만으로
+Updating paper: JarvisHub: 캔버스 기반 다중 모달 창조적 에이전트를 위한 개방형 하네스 (likes: 115 -> 119)
+Updating paper: 관련성의 새로운 역할: Agent 기반 검색에서 코퍼스 상호작용 안내 (likes: 82 -> 87)
+Updating paper: 프로프리터리에서 오픈 소스로: 일체적 검색에서 멀티 에이전트 프로토콜 증류를 통한 배포 격차 극복 (likes: 74 -> 81)
+Creating new paper: 코드니브: 코딩 에이전트에게 저장소 컨텍스트를 제공하는 멀티뷰 데이터 시스템
+Creating new paper: CoRT: 토큰 수준 루브릭 안내 정책 최적화를 위한 대사적 재생
+Updating paper: 온-폴리시 확산 디스틸레이션에서 분류기 없는 가이던스 재고 (likes: 70 -> 73)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jul 30 23:14:22 UTC 2026 ===
+

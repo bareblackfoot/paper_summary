@@ -1,0 +1,280 @@
+[
+  {
+    "title": "Deep Researcher with Test-Time Diffusion",
+    "abstract": "Deep research agents, powered by Large Language Models (LLMs), are rapidly\nadvancing; yet, their performance often plateaus when generating complex,\nlong-form research reports using generic test-time scaling algorithms. Drawing\ninspiration from the iterative nature of human research, which involves cycles\nof searching, reasoning, and revision, we propose the Test-Time Diffusion Deep\nResearcher (TTD-DR). This novel framework conceptualizes research report\ngeneration as a diffusion process. TTD-DR initiates this process with a\npreliminary draft, an updatable skeleton that serves as an evolving foundation\nto guide the research direction. The draft is then iteratively refined through\na \"denoising\" process, which is dynamically informed by a retrieval mechanism\nthat incorporates external information at each step. The core process is\nfurther enhanced by a self-evolutionary algorithm applied to each component of\nthe agentic workflow, ensuring the generation of high-quality context for the\ndiffusion process. This draft-centric design makes the report writing process\nmore timely and coherent while reducing information loss during the iterative\nsearch process. We demonstrate that our TTD-DR achieves state-of-the-art\nresults on a wide array of benchmarks that require intensive search and\nmulti-hop reasoning, significantly outperforming existing deep research agents.",
+    "authors": [
+      "Rujun Han",
+      "Yanfei Chen",
+      "Zoey CuiZhu",
+      "Lesly Miculicich",
+      "Guan Sun",
+      "Yuanjun Bi",
+      "Weiming Wen",
+      "Hui Wan",
+      "Chunfeng Wen",
+      "Solène Maître",
+      "George Lee",
+      "Vishy Tirumalashetty",
+      "Emily Xue",
+      "Zizhao Zhang",
+      "Salem Haykal",
+      "Burak Gokturk",
+      "Tomas Pfister",
+      "Chen-Yu Lee"
+    ],
+    "likes": 22,
+    "published_date": "Jul 21",
+    "url": "https://huggingface.co/papers/2507.16075",
+    "date_collected": "2025-07-29T07:08:21.943688+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "테스트 시간 확산을 활용한 깊은 연구자",
+      "abstract": "대형 언어 모델(Large Language Models, LLM)을 기반으로 한 깊은 연구 에이전트들이 급속히 발전하고 있지만, 일반적인 테스트 시간 스케일링 알고리즘을 사용하여 복잡하고 긴 형태의 연구 보고서를 생성할 때 성능이 종종 정체됩니다. 이 연구에서는 인간의 연구 방법의 반복적 성격에서 영감을 받아 검색, 추론 및 개정의 사이클을 거치면서 연구를 개념화한 '테스트 시간 확산 깊은 연구자(Test-Time Diffusion Deep Researcher, TTD-DR)'를 제안합니다. 이 혁신적인 프레임워크는 연구 보고서 생성을 확산 프로세스로 개념화합니다."
+    },
+    "summary": "1. TTD-DR는 초기 초안을 시작으로 연구 방향을 안내하는 진화하는 기초로 작용하는 업데이트 가능한 뼈대로 연속적으로 개선되는 확산 프로세스로 연구 보고서 생성을 추진합니다.\n2. 외부 정보를 동적으로 통합하는 검색 메커니즘에 의해 각 단계에서 동적으로 정보를 보정하는 \"denoising\" 프로세스를 통해 초안이 반복적으로 정제됩니다.\n3. 자가 진화 알고리즘을 각 구성 요소에 적용하여 코어 프로세스가 강화되며, 높은 품질의 컨텍스트를 확산 프로세스에 제공하여 정보 손실을 줄입니다. TTD-DR은 탐색과 다중 홉 추론을 필요로하는 다양한 벤치마크에서 최첨단 결과를 달성하며 기존의 깊은 연구 에이전트를 크게 능가합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Geometry of LLM Quantization: GPTQ as Babai's Nearest Plane\n  Algorithm",
+    "abstract": "Quantizing the weights of large language models (LLMs) from 16-bit to lower\nbitwidth is the de facto approach to deploy massive transformers onto more\naffordable accelerators. GPTQ emerged as one of the standard methods for\none-shot post-training quantization at LLM scale. Yet, its inner workings are\ndescribed as a sequence of ad-hoc algebraic updates that obscure any geometric\nmeaning or worst-case guarantees. In this work, we show that, when executed\nback-to-front (from the last to first dimension) for a linear layer, GPTQ is\nmathematically identical to Babai's nearest plane algorithm for the classical\nclosest vector problem (CVP) on a lattice defined by the Hessian matrix of the\nlayer's inputs. This equivalence is based on a sophisticated mathematical\nargument, and has two analytical consequences: (i) the GPTQ error propagation\nstep gains an intuitive geometric interpretation; (ii) GPTQ inherits the error\nupper bound of Babai's algorithm under the no-clipping condition. Taken\ntogether, these results place GPTQ on firm theoretical footing and open the\ndoor to importing decades of progress in lattice algorithms towards the design\nof future quantization algorithms for billion-parameter models.",
+    "authors": [
+      "Jiale Chen",
+      "Torsten Hoefler",
+      "Dan Alistarh"
+    ],
+    "likes": 17,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2507.18553",
+    "date_collected": "2025-07-29T07:08:21.944812+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "LLM 양자화의 기하: GPTQ가 Babai의 가장 가까운 평면 알고리즘으로 나타난다",
+      "abstract": "16비트에서 낮은 비트폭으로 대규모 언어 모델(Large Language Models, LLMs)의 가중치를 양자화하는 것은 대규모 트랜스포머를 더 저렴한 가속기에 배포하는 사실상의 접근법이다. GPTQ는 LLM 규모에서의 일회성 후 학습 양자화의 표준 방법 중 하나로 등장했다. 그러나 그 내부 작업은 기하학적 의미나 최악의 경우 보장을 흐리는 일련의 ad-hoc 대수적 업데이트로 설명된다. 본 연구에서는 선형 층의 경우 뒤에서부터 앞으로(마지막 차원부터 첫 번째 차원까지) 실행할 때, GPTQ가 해당 층의 입력의 헤시안 행렬에 의해 정의된 격자(lattice)에서 고전적 가장 가까운 벡터 문제(CVP)의 Babai의 가장 가까운 평면 알고리즘과 수학적으로 동일함을 보여준다. 이 동등성은 고급 수학적 논증에 기초하며, (i) GPTQ의 오류 전파 단계가 직관적인 기하학적 해석을 얻게 되고, (ii) GPTQ가 클리핑 조건 하에서 Babai의 알고리즘의 오류 상한선을 상속받게 된다. 이러한 결과들은 GPTQ를 튼튼한 이론적 기초 위에 놓아주며, 수십 년간 격자 알고리즘의 발전을 미래 억억 개 파라미터 모델을 위한 양자화 알고리즘 설계로 수입하는 문을 열어준다."
+    },
+    "summary": "1. 대규모 언어 모델의 가중치를 낮은 비트폭으로 양자화하는 것은 저렴한 가속기에 효율적으로 배포하는 중요한 접근법이다.\n2. 연구에서는 GPTQ가 Babai의 가장 가까운 평면 알고리즘과 동일함을 수학적으로 보여주었으며, 이를 통해 GPTQ에 대한 이론적 기초가 확립되었다.\n3. 이러한 결과들은 미래 억억 개 파라미터 모델을 위한 양자화 알고리즘 설계를 위한 격자 알고리즘의 발전을 촉진한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI\n  Agents",
+    "abstract": "We introduce MMBench-GUI, a hierarchical benchmark for evaluating GUI\nautomation agents across Windows, macOS, Linux, iOS, Android, and Web\nplatforms. It comprises four levels: GUI Content Understanding, Element\nGrounding, Task Automation, and Task Collaboration, covering essential skills\nfor GUI agents. In addition, we propose a novel Efficiency-Quality Area (EQA)\nmetric to assess GUI agent execution efficiency in online automation scenarios.\nThrough MMBench-GUI, we identify accurate visual grounding as a critical\ndeterminant of overall task success, emphasizing the substantial benefits of\nmodular frameworks that integrate specialized grounding modules. Furthermore,\nto achieve reliable GUI automation, an agent requires strong task planning and\ncross-platform generalization abilities, with long-context memory, a broad\naction space, and long-term reasoning playing a critical role. More important,\ntask efficiency remains a critically underexplored dimension, and all models\nsuffer from substantial inefficiencies, with excessive redundant steps even\nwhen tasks are ultimately completed. The integration of precise localization,\neffective planning, and early stopping strategies is indispensable to enable\ntruly efficient and scalable GUI automation. Our benchmark code, evaluation\ndata, and running environment will be publicly available at\nhttps://github.com/open-compass/MMBench-GUI.",
+    "authors": [
+      "Xuehui Wang",
+      "Zhenyu Wu",
+      "JingJing Xie",
+      "Zichen Ding",
+      "Bowen Yang",
+      "Zehao Li",
+      "Zhaoyang Liu",
+      "Qingyun Li",
+      "Xuan Dong",
+      "Zhe Chen",
+      "Weiyun Wang",
+      "Xiangyu Zhao",
+      "Jixuan Chen",
+      "Haodong Duan",
+      "Tianbao Xie",
+      "Chenyu Yang",
+      "Shiqian Su",
+      "Yue Yu",
+      "Yuan Huang",
+      "Yiqian Liu",
+      "Xiao Zhang",
+      "Yanting Zhang"
+    ],
+    "likes": 13,
+    "published_date": "Jul 25",
+    "url": "https://huggingface.co/papers/2507.19478",
+    "date_collected": "2025-07-29T07:08:21.946710+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "MMBench-GUI: GUI 에이전트를 위한 계층적 다중 플랫폼 평가 프레임워크",
+      "abstract": "Windows, macOS, Linux, iOS, Android, 그리고 Web 플랫폼에서 GUI 자동화 에이전트를 평가하기 위한 계층적 벤치마크인 MMBench-GUI를 소개합니다. GUI 콘텐츠 이해, 요소 맵핑, 작업 자동화, 그리고 작업 협력을 포함하여 GUI 에이전트에 대한 필수 기술을 다룹니다. 또한 온라인 자동화 시나리오에서 GUI 에이전트 실행 효율성을 평가하기 위한 새로운 EQA(효율성-품질 영역) 측정 지표를 제안합니다. MMBench-GUI를 통해 정확한 시각적 맵핑이 전체 작업 성공의 중요한 결정 요인임을 확인하며, 전문화된 매핑 모듈을 통합하는 모듈식 프레임워크의 상당한 이점을 강조합니다. 더불어 신뢰할 수 있는 GUI 자동화를 위해, 에이전트는 강력한 작업 계획 및 크로스 플랫폼 일반화 능력이 필요하며, 장기 기억, 광범위한 행동 공간, 그리고 장기적 추론이 중요한 역할을 합니다. 더 중요한 것은, 작업 효율성은 아직 충분히 탐구되지 않은 차원이며, 모든 모델이 상당한 무효성을 겪고 있으며, 최종적으로 작업이 완료되더라도 지나친 중복 단계로 인해 진행이 더딘 현상이 나타납니다. 정확한 위치 파악, 효과적인 계획, 그리고 조기 중단 전략의 통합은 실제로 효율적이고 확장 가능한 GUI 자동화를 가능하게 하는 데 필수적입니다. 우리의 벤치마크 코드, 평가 데이터, 실행 환경은 https://github.com/open-compass/MMBench-GUI에서 공개될 예정입니다."
+    },
+    "summary": "1. MMBench-GUI는 GUI 에이전트의 핵심 기술을 평가하기 위한 다중 플랫폼 벤치마크로, 시각적 매핑의 정확성이 작업 성공에 중요한 역할을 한다.\n2. GUI 자동화를 위해 강력한 작업 계획과 크로스 플랫폼 범용화 능력이 필요하며, 모델은 효율성과 중복된 단계 개선이 필요하다.\n3. 정확한 위치 파악, 효과적인 계획, 그리고 조기 중단 전략의 통합이 효율적이고 확장 가능한 GUI 자동화를 실현하는 데 필수적이다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "CLEAR: Error Analysis via LLM-as-a-Judge Made Easy",
+    "abstract": "The evaluation of Large Language Models (LLMs) increasingly relies on other\nLLMs acting as judges. However, current evaluation paradigms typically yield a\nsingle score or ranking, answering which model is better but not why. While\nessential for benchmarking, these top-level scores obscure the specific,\nactionable reasons behind a model's performance. To bridge this gap, we\nintroduce CLEAR, an interactive, open-source package for LLM-based error\nanalysis. CLEAR first generates per-instance textual feedback, then it creates\na set of system-level error issues, and quantifies the prevalence of each\nidentified issue. Our package also provides users with an interactive dashboard\nthat allows for a comprehensive error analysis through aggregate\nvisualizations, applies interactive filters to isolate specific issues or score\nranges, and drills down to the individual instances that exemplify a particular\nbehavioral pattern. We demonstrate CLEAR analysis for RAG and Math benchmarks,\nand showcase its utility through a user case study.",
+    "authors": [
+      "Asaf Yehudai",
+      "Lilach Eden",
+      "Yotam Perlitz",
+      "Roy Bar-Haim",
+      "Michal Shmueli-Scheuer"
+    ],
+    "likes": 8,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2507.18392",
+    "date_collected": "2025-07-29T07:08:21.947838+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "CLEAR: LLM을 심판으로 사용한 오류 분석이 쉬워진다",
+      "abstract": "대형 언어 모델 (LLMs)의 평가는 점점 더 다른 LLMs가 심판 역할을 하는 것에 의존하고 있습니다. 하지만 현재의 평가 패러다임은 일반적으로 단일 점수나 순위를 제시하여 어떤 모델이 더 좋은지는 알려줍니다만 그 이유는 설명하지 않습니다. 이러한 최상위 점수들은 벤치마킹에 필수적이지만, 모델의 성능 뒤에 있는 구체적이고 실행 가능한 이유들을 가려냅니다. 이러한 갭을 메우기 위해 우리는 CLEAR를 소개합니다. 이는 LLM 기반 오류 분석을 위한 대화식 공개 소프트웨어 패키지로, 먼저 개별 인스턴스에 대한 텍스트 피드백을 생성한 후 시스템 수준의 오류 문제 집합을 만들고, 각 식별된 문제의 유행을 정량화합니다. 우리의 패키지는 또한 사용자들에게 종합적인 오류 분석이 가능한 대화식 대시보드를 제공하며, 집계 시각화를 통해 특정 문제나 점수 범위를 분리하고 특정 문제 행동 패턴을 보여주는 개별 인스턴스로 집중합니다. 우리는 RAG와 Math 벤치마크를 통해 CLEAR 분석을 시연하고, 사용자 케이스 스터디를 통해 유용성을 보여줍니다."
+    },
+    "summary": "1. 다른 LLM들을 심판으로 활용한 모델을 평가하는데, 단일 점수 대신 구체적인 오류 이유를 제시하는 CLEAR 소프트웨어 패키지를 도입했다.\n2. CLEAR는 텍스트 피드백을 생성하고 시스템 수준의 오류 문제 집합을 만들며, 각 문제의 유행을 정량화하여 사용자들에게 대화식 대시보드를 제공한다.\n3. RAG와 Math 벤치마크를 통해 CLEAR 분석을 시연하고, 사용자 케이스 스터디를 통해 유효성을 입증했다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "PRIX: Learning to Plan from Raw Pixels for End-to-End Autonomous Driving",
+    "abstract": "While end-to-end autonomous driving models show promising results, their\npractical deployment is often hindered by large model sizes, a reliance on\nexpensive LiDAR sensors and computationally intensive BEV feature\nrepresentations. This limits their scalability, especially for mass-market\nvehicles equipped only with cameras. To address these challenges, we propose\nPRIX (Plan from Raw Pixels). Our novel and efficient end-to-end driving\narchitecture operates using only camera data, without explicit BEV\nrepresentation and forgoing the need for LiDAR. PRIX leverages a visual feature\nextractor coupled with a generative planning head to predict safe trajectories\nfrom raw pixel inputs directly. A core component of our architecture is the\nContext-aware Recalibration Transformer (CaRT), a novel module designed to\neffectively enhance multi-level visual features for more robust planning. We\ndemonstrate through comprehensive experiments that PRIX achieves\nstate-of-the-art performance on the NavSim and nuScenes benchmarks, matching\nthe capabilities of larger, multimodal diffusion planners while being\nsignificantly more efficient in terms of inference speed and model size, making\nit a practical solution for real-world deployment. Our work is open-source and\nthe code will be at https://maxiuw.github.io/prix.",
+    "authors": [
+      "Maciej K. Wozniak",
+      "Lianhang Liu",
+      "Yixi Cai",
+      "Patric Jensfelt"
+    ],
+    "likes": 3,
+    "published_date": "Jul 23",
+    "url": "https://huggingface.co/papers/2507.17596",
+    "date_collected": "2025-07-29T07:08:21.948901+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "PRIX: 원시 픽셀로부터 학습하여 자율 주행을 위한 계획 학습",
+      "abstract": "최근의 자율 주행 모델은 유망한 결과를 보여주지만, 대규모 모델 크기와 고가의 LiDAR 센서 및 계산량이 많은 BEV 특징 표현에 의존하는 것으로 실용적인 적용이 어렵습니다. 이는 주로 카메라만 장착된 대중 시장용 차량에 적용하는 데 한계가 있습니다. 이러한 문제를 해결하기 위해 우리는 PRIX (PRIX)를 제안합니다. 우리의 혁신적이고 효율적인 자율 주행 아키텍처는 디테일한 BEV 표현 없이 오직 카메라 데이터만 사용하고 LiDAR를 필요로 하지 않습니다. PRIX는 시각적 특징 추출기와 생성적 계획 헤드를 활용하여 원시 픽셀 입력으로부터 안전한 궤적을 직접 예측합니다. 저희 아키텍처의 핵심 구성 요소는 다중 수준 시각적 특징을 효과적으로 향상시키기 위해 설계된 Context-aware Recalibration Transformer (CaRT)라는 혁신적인 모듈입니다. 저희는 포괄적인 실험을 통해 PRIX가 NavSim 및 nuScenes 기준에서 최첨단 성능을 달성하며, 추론 속도와 모델 크기 측면에서 훨씬 효율적인 멀티모달 확산 계획자의 능력과 맞먹는 실용적인 해결책임을 입증했습니다. 우리의 작업은 오픈 소스이며 코드는 https://maxiuw.github.io/prix에서 확인하실 수 있습니다."
+    },
+    "summary": "1. 자율 주행 모델의 확장 가능성 제한을 극복하기 위해 PRIX를 소개함.\n2. 카메라 데이터만을 활용하여 안전한 궤적을 예측하는 새로운 자율 주행 아키텍처.\n3. Context-aware Recalibration Transformer (CaRT)를 통해 더 강력한 계획을 위한 시각적 특징을 효과적으로 향상시킴.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Specification Self-Correction: Mitigating In-Context Reward Hacking\n  Through Test-Time Refinement",
+    "abstract": "Language models (LMs) are susceptible to in-context reward hacking, where\nthey exploit flaws in tainted or faulty written specifications or rubrics to\nachieve high scores without fulfilling the user's true intent. We introduce\nSpecification Self-Correction (SSC), a novel, test-time framework that enables\nan LM to identify and correct flaws within its own guiding specification. SSC\nemploys a multi-step inference process where the model first generates a\nresponse based on a potentially tainted specification, critiques its output,\nand then revises the specification itself to remove the exploitable loophole. A\nfinal, more robust response is then generated using this self-corrected\nspecification. Across experiments spanning creative writing and agentic coding\ntasks with several LMs, we demonstrate that while models initially game tainted\nspecifications in 50-70\\% of cases, the SSC process reduces this vulnerability\nby over 90\\%. This dynamic repair occurs at inference time, requires no weight\nmodification, and leads to more robustly aligned model behavior. Code at\nhttps://github.com/vicgalle/specification-self-correction .",
+    "authors": [
+      "Víctor Gallego"
+    ],
+    "likes": 2,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2507.18742",
+    "date_collected": "2025-07-29T07:08:21.949808+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "명시 사정 자기교정: 테스트 시간 세분화를 통한 인-컨텍스트 보상해킹 완화",
+      "abstract": "언어 모델(Language models, LMs)은 사용자의 진짜 의도를 만족시키지 않고도 높은 점수를 얻는 문제에 취약하다. 본 논문에서는 명시 사정 자기교정(SSC)이라는 새로운 테스트 시간 프레임워크를 소개하는데, 이는 LM이 자신의 지침 명세서 안의 결함을 식별하고 교정할 수 있게 한다. SSC는 모델이 먼저 잠재적으로 오염된 명세서를 기반으로 응답을 생성하고, 이를 비평한 후에 해당 명세서 자체를 개선하여 악용 가능한 구멍을 메운다. 이렇게 자기 교정된 명세서를 사용하여 더 견고한 응답을 생성한다. 실험 결과로, 크리에이티브 라이팅과 에이전틱 코딩 작업을 포함한 여러 LM 실험을 통해, 모델들이 초기에 오염된 명세서를 활용하는 비율이 50-70\\%인 반면, SSC 과정을 통해 이 취약성이 90\\% 이상으로 감소하는 것을 보여준다. 이 동적인 수정은 추론 시간에 발생하며 가중치 수정이 필요 없다. 또한 보다 견고하게 정렬된 모델 행동으로 이끈다. 코드는 https://github.com/vicgalle/specification-self-correction 에서 확인할 수 있다."
+    },
+    "summary": "1. 명세 사정 자기교정(SSC)은 LM이 자체 명세서의 결함을 식별하고 교정하는 새로운 프레임워크이다.\n2. 실험 결과로 SSC 과정을 통해 LM이 오염된 명세서를 이용하는 취약성이 90% 이상으로 감소하는 것을 확인하였다.\n3. SSC는 가중치 수정이 필요 없이 추론 시간에 발생하며 모델의 행동을 더 견고하게 정렬시킨다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Chat with AI: The Surprising Turn of Real-time Video Communication from\n  Human to AI",
+    "abstract": "AI Video Chat emerges as a new paradigm for Real-time Communication (RTC),\nwhere one peer is not a human, but a Multimodal Large Language Model (MLLM).\nThis makes interaction between humans and AI more intuitive, as if chatting\nface-to-face with a real person. However, this poses significant challenges to\nlatency, because the MLLM inference takes up most of the response time, leaving\nvery little time for video streaming. Due to network uncertainty and\ninstability, transmission latency becomes a critical bottleneck preventing AI\nfrom being like a real person. To address this, we propose Artic, an\nAI-oriented Real-time Communication framework, exploring the network\nrequirement shift from \"humans watching video\" to \"AI understanding video\". To\nreduce bitrate dramatically while maintaining MLLM accuracy, we propose\nContext-Aware Video Streaming that recognizes the importance of each video\nregion for chat and allocates bitrate almost exclusively to chat-important\nregions. To avoid packet retransmission, we propose Loss-Resilient Adaptive\nFrame Rate that leverages previous frames to substitute for lost/delayed frames\nwhile avoiding bitrate waste. To evaluate the impact of video streaming quality\non MLLM accuracy, we build the first benchmark, named Degraded Video\nUnderstanding Benchmark (DeViBench). Finally, we discuss some open questions\nand ongoing solutions for AI Video Chat.",
+    "authors": [
+      "Jiangkai Wu",
+      "Zhiyuan Ren",
+      "Liming Liu",
+      "Xinggong Zhang"
+    ],
+    "likes": 2,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2507.10510",
+    "date_collected": "2025-07-29T07:08:21.950852+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "AI와의 대화: 실시간 비디오 통신의 놀라운 전환",
+      "abstract": "AI 비디오 채팅은 하나의 동료가 사람이 아닌 다중모달 대형 언어 모델(MLLM)인 실시간 통신(RTC)의 새로운 패러다임으로 나타납니다. 이는 인간과 AI 간 상호작용을 현실적으로 만들어 주어 마치 실제 사람과 대화를 나누는 것과 같이 자연스럽게 만들어 줍니다. 그러나 이는 MLLM 추론이 응답 시간의 대부분을 차지하여 비디오 스트리밍에 거의 시간이 남지 않는다는 중요한 도전을 안겨줍니다. 네트워크의 불확실성과 불안정성으로 인해 전송 지연은 AI가 실제 사람처럼 되는 것을 방해하는 중요한 병목 현상이 됩니다. 이를 해결하기 위해 'Artic'이라는 AI 지향 실시간 통신 프레임워크를 제안하여 네트워크 요구 사항을 '사람들이 비디오를 보는 것'에서 'AI가 비디오를 이해하는 것'으로 전환합니다. MLLM 정확도를 유지하면서 비트율을 크게 감소시키기 위해 우리는 '콘텍스트-인지 비디오 스트리밍'을 제안하여 대화에 중요한 각 비디오 영역의 중요성을 인식하고 비트율을 대부분 대화 중요 영역에 할당합니다. 패킷 재전송을 피하기 위해 우리는 '손실에 강한 적응형 프레임 속도'를 제안하여 이전 프레임을 활용하여 손실된/지연된 프레임을 대체하면서 비트율 낭비를 피합니다. 비디오 스트리밍 품질이 MLLM 정확도에 미치는 영향을 평가하기 위해 우리는 '디그레이드 비디오 이해 벤치마크(DeViBench)'라는 최초의 벤치마크를 구축합니다. 마지막으로, AI 비디오 채팅에 대한 열린 질문과 진행 중인 솔루션을 논의합니다."
+    },
+    "summary": "1. AI 비디오 채팅은 실시간 통신에서 새로운 패러다임으로 나타나며, 인간이 아닌 MLLM이 상대가 됨.\n2. MLLM 추론에 의한 지연 문제로 인해 AI의 비디오 채팅이 실제 사람과 같아지는 데 어려움이 있음.\n3. Artic 프레임워크를 통해 비디오 스트리밍 품질을 향상시키고, MLLM 정확도와의 관계를 평가하기 위한 DeViBench 벤치마크를 소개하며, AI 비디오 채팅에 대한 열린 문제와 해결책을 논의함.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning",
+    "abstract": "Large language models (LLMs) are increasingly adapted to downstream tasks via\nreinforcement learning (RL) methods like Group Relative Policy Optimization\n(GRPO), which often require thousands of rollouts to learn new tasks. We argue\nthat the interpretable nature of language can often provide a much richer\nlearning medium for LLMs, compared with policy gradients derived from sparse,\nscalar rewards. To test this, we introduce GEPA (Genetic-Pareto), a prompt\noptimizer that thoroughly incorporates natural language reflection to learn\nhigh-level rules from trial and error. Given any AI system containing one or\nmore LLM prompts, GEPA samples system-level trajectories (e.g., reasoning, tool\ncalls, and tool outputs) and reflects on them in natural language to diagnose\nproblems, propose and test prompt updates, and combine complementary lessons\nfrom the Pareto frontier of its own attempts. As a result of GEPA's design, it\ncan often turn even just a few rollouts into a large quality gain. Across four\ntasks, GEPA outperforms GRPO by 10% on average and by up to 20%, while using up\nto 35x fewer rollouts. GEPA also outperforms the leading prompt optimizer,\nMIPROv2, by over 10% across two LLMs, and demonstrates promising results as an\ninference-time search strategy for code optimization.",
+    "authors": [
+      "Lakshya A Agrawal",
+      "Shangyin Tan",
+      "Dilara Soylu",
+      "Noah Ziems",
+      "Rishi Khare",
+      "Krista Opsahl-Ong",
+      "Arnav Singhvi",
+      "Herumb Shandilya",
+      "Michael J Ryan",
+      "Meng Jiang",
+      "Christopher Potts",
+      "Koushik Sen",
+      "Alexandros G. Dimakis",
+      "Ion Stoica",
+      "Dan Klein",
+      "Matei Zaharia",
+      "Omar Khattab"
+    ],
+    "likes": 1,
+    "published_date": "Jul 25",
+    "url": "https://huggingface.co/papers/2507.19457",
+    "date_collected": "2025-07-29T07:08:21.952491+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "GEPA: 반성적 프롬프트 진화는 강화 학습을 능가할 수 있다",
+      "abstract": "대규모 언어 모델(Large language models, LLMs)은 Group Relative Policy Optimization (GRPO)와 같은 강화 학습(Reinforcement Learning, RL) 방법을 통해 하위 작업에 점차 적응되고 있으며, 이는 종종 새로운 작업을 학습하기 위해 수천 번의 롤아웃을 필요로 한다. 우리는 언어의 해석 가능한 특성이 종종 희소하고 스칼라 보상에서 유도된 정책 그래디언트에 비해 LLMs에 대해 훨씬 더 풍부한 학습 매체를 제공할 수 있다고 주장한다. 이를 검증하기 위해 우리는 GEPA (Genetic-Pareto)를 소개하는데, 이는 자연어 반사를 철저히 포함하여 시행착오를 통해 상위 수준 규칙을 학습하는 프롬프트 최적화기이다."
+    },
+    "summary": "1. GEPA는 자연어 반사를 활용하여 AI 시스템에서 높은 수준의 규칙을 학습하며, GRPO보다 10%에서 20%까지 성능을 향상시키고 롤아웃 수를 최대 35배 줄이면서도 더 나은 결과를 보인다.\n2. GEPA는 MIPROv2를 능가하며, 코드 최적화를 위한 추론 시간 검색 전략으로 유망한 결과를 보인다.\n3. GEPA의 설계로 인해 몇 번의 롤아웃만으로도 큰 품질 향상을 이룰 수 있다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Frontier AI Risk Management Framework in Practice: A Risk Analysis\n  Technical Report",
+    "abstract": "To understand and identify the unprecedented risks posed by rapidly advancing\nartificial intelligence (AI) models, this report presents a comprehensive\nassessment of their frontier risks. Drawing on the E-T-C analysis (deployment\nenvironment, threat source, enabling capability) from the Frontier AI Risk\nManagement Framework (v1.0) (SafeWork-F1-Framework), we identify critical risks\nin seven areas: cyber offense, biological and chemical risks, persuasion and\nmanipulation, uncontrolled autonomous AI R\\&D, strategic deception and\nscheming, self-replication, and collusion. Guided by the \"AI-45^circ Law,\"\nwe evaluate these risks using \"red lines\" (intolerable thresholds) and \"yellow\nlines\" (early warning indicators) to define risk zones: green (manageable risk\nfor routine deployment and continuous monitoring), yellow (requiring\nstrengthened mitigations and controlled deployment), and red (necessitating\nsuspension of development and/or deployment). Experimental results show that\nall recent frontier AI models reside in green and yellow zones, without\ncrossing red lines. Specifically, no evaluated models cross the yellow line for\ncyber offense or uncontrolled AI R\\&D risks. For self-replication, and\nstrategic deception and scheming, most models remain in the green zone, except\nfor certain reasoning models in the yellow zone. In persuasion and\nmanipulation, most models are in the yellow zone due to their effective\ninfluence on humans. For biological and chemical risks, we are unable to rule\nout the possibility of most models residing in the yellow zone, although\ndetailed threat modeling and in-depth assessment are required to make further\nclaims. This work reflects our current understanding of AI frontier risks and\nurges collective action to mitigate these challenges.",
+    "authors": [
+      "Shanghai AI Lab",
+      "Xiaoyang Chen",
+      "Yunhao Chen",
+      "Zeren Chen",
+      "Zhiyun Chen",
+      "Hanyun Cui",
+      "Yawen Duan",
+      "Jiaxuan Guo",
+      "Qi Guo",
+      "Xuhao Hu",
+      "Hong Huang",
+      "Lige Huang",
+      "Chunxiao Li",
+      "Juncheng Li",
+      "Qihao Lin",
+      "Dongrui Liu",
+      "Xinmin Liu",
+      "Zicheng Liu",
+      "Chaochao Lu",
+      "Xiaoya Lu",
+      "Jingjing Qu",
+      "Qibing Ren"
+    ],
+    "likes": 0,
+    "published_date": "Jul 22",
+    "url": "https://huggingface.co/papers/2507.16534",
+    "date_collected": "2025-07-29T07:08:21.954302+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "실무에서의 AI 리스크 관리 프레임워크: 리스크 분석 기술 보고서",
+      "abstract": "급격히 진보하는 인공지능(AI) 모델로 인한 전례 없는 리스크를 이해하고 식별하기 위해, 본 보고서는 그들의 선두적인 리스크를 종합적으로 평가합니다. Frontier AI Risk Management Framework(v1.0)(SafeWork-F1-Framework)의 E-T-C 분석(배치 환경, 위협원, 활성화 능력)을 기반으로, 사이버 공격, 생물학 및 화학 리스크, 설득과 조작, 통제되지 않은 자율 AI 연구 및 전략적 속임수와 꾀임, 자가 복제, 공모의 일곐를 중점적으로 식별합니다. \"AI-45도 법칙\"을 가이드로 삼아, \"적재선\" (견디기 힘든 한계)과 \"노란 선\" (조기 경고 지표)을 사용하여 리스크 영역을 정의합니다: 녹색(일상 배치 및 지속적 모니터링에 적합한 관리 가능한 리스크), 노란색(강화된 완화조치와 통제된 배치가 필요한 리스크) 및 적색(개발 및/또는 배치 중단이 필요한 리스크). 실험 결과에 따르면, 최근의 선두적 AI 모델은 모두 녹색과 노란색 영역에 속하며, 적재선을 넘어서지 않았습니다."
+    },
+    "summary": "1. AI 모델의 선두적인 리스크를 E-T-C 분석을 통해 7가지 영역에서 식별하여 관리 가능한 영역과 조치가 필요한 영역으로 구분합니다.\n2. 실험 결과에 따르면, 대부분의 선두적 AI 모델은 적재선을 넘어서지 않는 녹색과 노란색 영역에 위치하며, 특히 사이버 공격 및 통제되지 않은 AI 연구 리스크에서 어려움이 없습니다.\n3. 이 연구는 현재의 AI 선두적 리스크를 반영하며, 이러한 도전 과제를 완화하기 위해 집단적 행동을 촉구합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

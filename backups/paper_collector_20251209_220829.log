@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Dec  8 22:08:12 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W50
+URL: https://huggingface.co/papers/week/2025-W50
+Found 10 papers in weekly view
+Fetching likes for: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Fetching likes for: EditThinker: Unlocking Iterative Reasoning for Any Image Editor
+Fetching likes for: From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks
+Fetching likes for: EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture
+Fetching likes for: PaCo-RL: Advancing Reinforcement Learning for Consistent Image Generation with Pairwise Reward Modeling
+Fetching likes for: Entropy Ratio Clipping as a Soft Global Constraint for Stable Reinforcement Learning
+Fetching likes for: SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations
+Fetching likes for: Joint 3D Geometry Reconstruction and Motion Generation for 4D Synthesis from a Single Image
+Fetching likes for: COOPER: A Unified Model for Cooperative Perception and Reasoning in Spatial Intelligence
+Fetching likes for: RealGen: Photorealistic Text-to-Image Generation via Detector-Guided Rewards
+Selected top 10 papers by likes:
+1. TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows (44 likes)
+2. EditThinker: Unlocking Iterative Reasoning for Any Image Editor (31 likes)
+3. From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks (24 likes)
+4. EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture (21 likes)
+5. PaCo-RL: Advancing Reinforcement Learning for Consistent Image Generation with Pairwise Reward Modeling (19 likes)
+6. Entropy Ratio Clipping as a Soft Global Constraint for Stable Reinforcement Learning (13 likes)
+7. SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations (12 likes)
+8. Joint 3D Geometry Reconstruction and Motion Generation for 4D Synthesis from a Single Image (12 likes)
+9. COOPER: A Unified Model for Cooperative Perception and Reasoning in Spatial Intelligence (11 likes)
+10. RealGen: Photorealistic Text-to-Image Generation via Detector-Guided Rewards (10 likes)
+Found abstract: Recent advances in large multi-modal generative models have demonstrated impressive capabilities in ...
+Processed paper: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Found abstract: Instruction-based image editing has emerged as a prominent research area, which, benefiting from ima...
+Processed paper: EditThinker: Unlocking Iterative Reasoning for Any Image Editor
+Found abstract: Reinforcement learning has emerged as a paradigm for post-training large language models, boosting t...
+Processed paper: From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks
+Found abstract: We propose EMMA, an efficient and unified architecture for multimodal understanding, generation and ...
+Processed paper: EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture
+Found abstract: Consistent image generation requires faithfully preserving identities, styles, and logical coherence...
+Processed paper: PaCo-RL: Advancing Reinforcement Learning for Consistent Image Generation with Pairwise Reward Modeling
+Found abstract: Large language model post-training relies on reinforcement learning to improve model capability and ...
+Processed paper: Entropy Ratio Clipping as a Soft Global Constraint for Stable Reinforcement Learning
+Found abstract: Achieving character animation that meets studio-grade production standards remains challenging despi...
+Processed paper: SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations
+Found abstract: Generating interactive and dynamic 4D scenes from a single static image remains a core challenge. Mo...
+Processed paper: Joint 3D Geometry Reconstruction and Motion Generation for 4D Synthesis from a Single Image
+Found abstract: Visual Spatial Reasoning is crucial for enabling Multimodal Large Language Models (MLLMs) to underst...
+Processed paper: COOPER: A Unified Model for Cooperative Perception and Reasoning in Spatial Intelligence
+Found abstract: With the continuous advancement of image generation technology, advanced models such as GPT-Image-1 ...
+Processed paper: RealGen: Photorealistic Text-to-Image Generation via Detector-Guided Rewards
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: EditThinker: Unlocking Iterative Reasoning for Any Image Editor
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: From Imitation to Discrimination: Toward A Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: EMMA: Efficient Multimodal Understanding, Generation, and Editing with a Unified Architecture
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: PaCo-RL: Advancing Reinforcement Learning for Consistent Image Generation with Pairwise Reward Modeling
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Entropy Ratio Clipping as a Soft Global Constraint for Stable Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Joint 3D Geometry Reconstruction and Motion Generation for 4D Synthesis from a Single Image
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: COOPER: A Unified Model for Cooperative Perception and Reasoning in Spatial Intelligence
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: RealGen: Photorealistic Text-to-Image Generation via Detector-Guided Rewards
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W50.json...
+
+Updating Notion database...
+Creating new paper: TwinFlow: 자가 적대적 플로우를 활용한 대규모 모델에서의 일단계 생성 실현
+Creating new paper: EditThinker: 어떤 이미지 편집기에도 반복 추론을 해제하다
+Creating new paper: 모방에서 식별로: 교차 도메인 추론 작업 강화를 위한 일반화된 커리큘럼 이점 메커니즘에 대한 연구
+Creating new paper: EMMA: 통합 구조를 활용한 효율적인 다중 모달 이해, 생성 및 편집
+Creating new paper: 패어와이즈 보상 모델링을 활용한 일관된 이미지 생성을 위한 강화학습의 발전(PaCo-RL: Advancing Reinforcement Learning for Consistent Image Generation with Pairwise Reward Modeling)
+Creating new paper: 안정적인 강화 학습을 위한 소프트 전역 제약으로서의 엔트로피 비율 클리핑
+Creating new paper: SCAIL: 스튜디오 수준 캐릭터 애니메이션을 위한 3D 일관된 자세 표현 인콘텍스트 학습을 통한
+Creating new paper: 단일 이미지로부터 4D 합성을 위한 공동 3D 기하학 재구성 및 동작 생성
+Creating new paper: 협력적 지각 및 추론을 위한 통합 모델인 COOPER
+Creating new paper: RealGen: Detector-Guided Rewards를 통한 사실적인 이미지 생성
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Dec  8 22:10:04 UTC 2025 ===
+

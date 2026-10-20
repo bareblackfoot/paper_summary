@@ -1,0 +1,143 @@
+=== Paper Collection Started at Tue Aug  5 22:08:32 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W32
+URL: https://huggingface.co/papers/week/2025-W32
+Found 10 papers in weekly view
+Fetching likes for: Qwen-Image Technical Report
+Fetching likes for: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Fetching likes for: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Fetching likes for: PixNerd: Pixel Neural Field Diffusion
+Fetching likes for: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Fetching likes for: CellForge: Agentic Design of Virtual Cell Models
+Fetching likes for: Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct Technical Report
+Fetching likes for: Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following
+Fetching likes for: Trainable Dynamic Mask Sparse Attention
+Fetching likes for: 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding
+Selected top 10 papers by likes:
+1. Qwen-Image Technical Report (79 likes)
+2. Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training (57 likes)
+3. Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models (50 likes)
+4. PixNerd: Pixel Neural Field Diffusion (39 likes)
+5. SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension (37 likes)
+6. CellForge: Agentic Design of Virtual Cell Models (27 likes)
+7. Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct Technical Report (21 likes)
+8. Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following (20 likes)
+9. Trainable Dynamic Mask Sparse Attention (9 likes)
+10. 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding (9 likes)
+Found abstract: We present Qwen-Image, an image generation foundation model in the Qwen
+series that achieves signifi...
+Processed paper: Qwen-Image Technical Report
+Found abstract: General AI Agents are increasingly recognized as foundational frameworks for
+the next generation of ...
+Processed paper: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Found abstract: Diffusion Large Language Models (DLLMs) are emerging as a powerful
+alternative to the dominant Autor...
+Processed paper: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Found abstract: The current success of diffusion transformers heavily depends on the
+compressed latent space shaped ...
+Processed paper: PixNerd: Pixel Neural Field Diffusion
+Found abstract: Retrieval-augmented generation (RAG) over long documents typically involves
+splitting the text into ...
+Processed paper: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Found abstract: Virtual cell modeling represents an emerging frontier at the intersection of
+artificial intelligence...
+Processed paper: CellForge: Agentic Design of Virtual Cell Models
+Found abstract: Large language models (LLMs) have shown remarkable success across many
+domains, yet their integratio...
+Processed paper: Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct Technical Report
+Found abstract: Reasoning models excel in complex problem solving but exhibit a concerning
+trade off between reasoni...
+Processed paper: Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following
+Found abstract: In large language models, the demand for modeling long contexts is constantly
+increasing, but the qu...
+Processed paper: Trainable Dynamic Mask Sparse Attention
+Found abstract: Large vision-language models (VLMs) have made significant strides in 2D
+visual understanding tasks, ...
+Processed paper: 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Qwen-Image Technical Report
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  14
+Update date_collected: 2025-08-06T07:08:42.095163+09:00  ->  2025-08-05T07:08:25.173201+09:00
+
+Processing paper 3/10
+Title: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  35
+Update date_collected: 2025-08-06T07:08:42.096405+09:00  ->  2025-08-05T07:08:25.170463+09:00
+
+Processing paper 4/10
+Title: PixNerd: Pixel Neural Field Diffusion
+Paper already exists, checking if translation is complete...
+Update likes: 39  ->  31
+Update date_collected: 2025-08-06T07:08:42.097591+09:00  ->  2025-08-05T07:08:25.171673+09:00
+
+Processing paper 5/10
+Title: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: CellForge: Agentic Design of Virtual Cell Models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct Technical Report
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Beyond the Trade-off: Self-Supervised Reinforcement Learning for
+  Reasoning Models' Instruction Following
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Trainable Dynamic Mask Sparse Attention
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: 3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding
+Paper already exists, checking if translation is complete...
+Update likes: 9  ->  6
+Update date_collected: 2025-08-06T07:08:42.105920+09:00  ->  2025-08-05T07:08:25.174287+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W32.json...
+
+Updating Notion database...
+Creating new paper: Qwen-Image 기술 보고서
+Updating paper: 인지적 커널-프로: 심층 연구 에이전트 및 에이전트 기반 모델 훈련을 위한 프레임워크 (likes: 14 -> 57)
+Updating paper: 고정이 넘어, 변수 길이 디노이징을 통한 확산 대형 언어 모델 (likes: 35 -> 50)
+Updating paper: 픽셀 신경장 필드 확산 (likes: 31 -> 39)
+Creating new paper: SitEmb-v1.5: 의미 연관 및 장편 이해를 위한 개선된 컨텍스트 인식 밀집 검색
+Creating new paper: CellForge: Virtual Cell Models의 에이전틱 디자인
+Creating new paper: Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct 기술 보고서
+Creating new paper: 트레이드오프를 넘어: 이해 모델의 지시 따르기를 위한 자가지도 강화학습
+Creating new paper: Trainable Dynamic Mask Sparse Attention
+Updating paper: 3D-R1: 통합된 장면 이해를 위한 3D VLMs의 추론 강화 (likes: 6 -> 9)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Aug  5 22:10:34 UTC 2025 ===
+

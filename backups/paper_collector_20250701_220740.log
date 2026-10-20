@@ -1,0 +1,135 @@
+=== Paper Collection Started at Mon Jun 30 22:08:00 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W27
+URL: https://huggingface.co/papers/week/2025-W27
+Found 10 papers in weekly view
+Fetching likes for: BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing
+Fetching likes for: LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs
+Fetching likes for: XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation
+Fetching likes for: ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models
+Fetching likes for: From Ideal to Real: Unified and Data-Efficient Dense Prediction for
+  Real-World Scenarios
+Fetching likes for: Ark: An Open-source Python-based Framework for Robot Learning
+Fetching likes for: Pangu Pro MoE: Mixture of Grouped Experts for Efficient Sparsity
+Fetching likes for: MiCo: Multi-image Contrast for Reinforcement Visual Reasoning
+Fetching likes for: Shape-for-Motion: Precise and Consistent Video Editing with 3D Proxy
+Fetching likes for: Fine-Grained Preference Optimization Improves Spatial Reasoning in VLMs
+Selected top 10 papers by likes:
+1. BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing (45 likes)
+2. LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs (29 likes)
+3. XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation (23 likes)
+4. ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models (19 likes)
+5. From Ideal to Real: Unified and Data-Efficient Dense Prediction for
+  Real-World Scenarios (15 likes)
+6. Ark: An Open-source Python-based Framework for Robot Learning (11 likes)
+7. Pangu Pro MoE: Mixture of Grouped Experts for Efficient Sparsity (11 likes)
+8. MiCo: Multi-image Contrast for Reinforcement Visual Reasoning (9 likes)
+9. Shape-for-Motion: Precise and Consistent Video Editing with 3D Proxy (9 likes)
+10. Fine-Grained Preference Optimization Improves Spatial Reasoning in VLMs (9 likes)
+Found abstract: We present BlenderFusion, a generative visual compositing framework that
+synthesizes new scenes by r...
+Processed paper: BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing
+Found abstract: In this paper, we present LLaVA-Scissor, a training-free token compression
+strategy designed for vid...
+Processed paper: LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs
+Found abstract: Achieving fine-grained control over subject identity and semantic attributes
+(pose, style, lighting)...
+Processed paper: XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation
+Found abstract: Cinematography, the fundamental visual language of film, is essential for
+conveying narrative, emoti...
+Processed paper: ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models
+Found abstract: Dense prediction tasks hold significant importance of computer vision, aiming
+to learn pixel-wise an...
+Processed paper: From Ideal to Real: Unified and Data-Efficient Dense Prediction for
+  Real-World Scenarios
+Found abstract: Robotics has made remarkable hardware strides-from DARPA's Urban and Robotics
+Challenges to the firs...
+Processed paper: Ark: An Open-source Python-based Framework for Robot Learning
+Found abstract: The surgence of Mixture of Experts (MoE) in Large Language Models promises a
+small price of executio...
+Processed paper: Pangu Pro MoE: Mixture of Grouped Experts for Efficient Sparsity
+Found abstract: This work explores enabling Chain-of-Thought (CoT) reasoning to link visual
+cues across multiple ima...
+Processed paper: MiCo: Multi-image Contrast for Reinforcement Visual Reasoning
+Found abstract: Recent advances in deep generative modeling have unlocked unprecedented
+opportunities for video synt...
+Processed paper: Shape-for-Motion: Precise and Consistent Video Editing with 3D Proxy
+Found abstract: Current Vision-Language Models (VLMs) struggle with fine-grained spatial
+reasoning, particularly whe...
+Processed paper: Fine-Grained Preference Optimization Improves Spatial Reasoning in VLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: LLaVA-Scissor: Token Compression with Semantic Connected Components for
+  Video LLMs
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: XVerse: Consistent Multi-Subject Control of Identity and Semantic
+  Attributes via DiT Modulation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: ShotBench: Expert-Level Cinematic Understanding in Vision-Language
+  Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: From Ideal to Real: Unified and Data-Efficient Dense Prediction for
+  Real-World Scenarios
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Ark: An Open-source Python-based Framework for Robot Learning
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Pangu Pro MoE: Mixture of Grouped Experts for Efficient Sparsity
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: MiCo: Multi-image Contrast for Reinforcement Visual Reasoning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Shape-for-Motion: Precise and Consistent Video Editing with 3D Proxy
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Fine-Grained Preference Optimization Improves Spatial Reasoning in VLMs
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W27.json...
+
+Updating Notion database...
+Creating new paper: BlenderFusion: 3D-기반 시각 편집 및 생성적 합성
+Creating new paper: LLaVA-Scissor: 비디오 LLM을 위한 의미적 연결 구성 요소를 활용한 토큰 압축
+Creating new paper: XVerse: 일관된 다중 주제의 아이덴티티와 의미 속성 제어를 위한 DiT 조절
+Creating new paper: ShotBench: 전문가 수준의 비전-언어에서의 영화 이해
+Creating new paper: 이상에서 현실로: 현실 세계 상황을 위한 통합적이고 데이터 효율적인 밀도 예측
+Creating new paper: 로봇 학습을 위한 오픈소스 파이썬 기반 프레임워크인 ARK
+Creating new paper: Pangu Pro MoE: 효율적인 희소성을 위한 그룹화된 전문가들의 혼합
+Creating new paper: MiCo: 다중 이미지 대조를 통한 강화 시각적 추론
+Creating new paper: 동작을 위한 형태: 3D 프록시로 정교하고 일관된 비디오 편집
+Creating new paper: 세밀한 선호도 최적화가 VLM에서 공간 추론을 개선합니다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun 30 22:09:23 UTC 2025 ===
+

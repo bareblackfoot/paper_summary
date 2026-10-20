@@ -1,0 +1,348 @@
+[
+  {
+    "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+    "abstract": "Recent video generators can fabricate realistic depictions of wars, disasters, public emergencies, and other real-world crises, creating substantial risks of misinformation. Existing benchmarks, however, provide limited evidence on detector and generator behavior in such settings, including how detectability varies with generation conditions, how people perceive generated videos, and whether detectors remain reliable during social dissemination. To address this gap, we introduce RA-Bench, a benchmark for AI-generated video detection that uses Real videos as Anchors. RA-Bench contains 17,886 videos, comprising 1,830 real-video anchors across 10 social-risk categories and 16,056 generated clips from four open-source and five closed-source generators. Based on RA-Bench, we organize our evaluation along three dimensions. We first assess detector generalization across seven traditional detectors, ten zero-shot multimodal models under three review settings, and two MLLMs specifically fine-tuned on AI-generated video detection. Across these methods, none of the three detector families generalizes consistently across RA-Bench instances. We then examine how detectability varies with generation quality, conditioning information, and sampling seeds. These analyses show that generation properties affect detector families differently, while source-level detection patterns remain stable across seeds. Finally, we study human authenticity judgments and detector reliability during social dissemination. We find that videos that mislead people are also difficult for current detectors, and that social dissemination makes detection harder. Together, these findings show that current methods struggle to detect realistic AI-generated videos, highlighting the need for detectors robust to evolving video generators.",
+    "authors": [
+      "Shuo Liang",
+      "Yixing Ma",
+      "Pengfei Zhou",
+      "Xingyan Chen",
+      "Zihan Mei",
+      "Manting Li",
+      "Feihan Chen",
+      "Zhiwen Wang",
+      "Bin Xu",
+      "Haotian Zhang",
+      "Jiajun Song",
+      "Shiya Su",
+      "Run Liu",
+      "Zhenghang Ni",
+      "Yifa Yu",
+      "Jintao Hong",
+      "Bolong Feng",
+      "Yifei Liu",
+      "Zirui Zhang",
+      "Jingxuan Zhang",
+      "Songlin Zhao",
+      "Yifan Bai"
+    ],
+    "likes": 257,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14391",
+    "date_collected": "2026-08-18T07:31:07.580972+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "실제 위기 사건에서 AI 생성 비디오 공격으로부터 어떻게 방어할까요? 탐지기, 생성기 및 사회적 전파의 체계적 평가",
+      "abstract": "최근의 비디오 생성기는 전쟁, 재해, 공공 비상사태 등의 현실 세계 위기를 현실적으로 가장한 영상을 제작하여 잘못된 정보의 심각한 위험을 초래할 수 있습니다. 그러나 기존의 벤치마크는 해당 상황에서의 탐지기와 생성기 행동에 대한 제한된 증거를 제공하며, 생성 조건에 따른 인식 가능성 변화, 인간들이 생성된 비디오를 어떻게 인식하는지, 그리고 탐지기가 사회적 전파 과정에서 계속 신뢰할 수 있는지에 대해 포함하고 있지 않습니다. 이러한 공백을 해소하기 위해 우리는 RA-Bench를 소개합니다. 이는 실제 비디오를 고정점으로 사용하는 AI 생성 비디오 탐지를 위한 벤치마크입니다."
+    },
+    "summary": "1. RA-Bench는 17,886개의 비디오로 이루어져 있으며, 1,830개의 실제 비디오 고정점과 10가지 사회 위험 범주를 포함한 16,056개의 생성된 클립이 있습니다.\n2. 여러 방법을 통해 이 벤치마크를 평가하며, 현재 방법들은 현실적인 AI 생성 비디오를 탐지하는 데 어려움을 겪고 있음을 보여줍니다.\n3. 생성 속성이 탐지기 가족에 각기 다르게 영향을 미치며, 사회적 전파는 탐지를 더 어렵게 만듭니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Self-Supervised Visual On-Policy Distillation",
+    "abstract": "Visual on-policy distillation relies heavily on an informative teacher-student asymmetry, through either a larger, stronger teacher or privileged supervision, such as reference answers or ground-truth regions of interest. This raises a fundamental question: where can informative asymmetry come from when nothing privileged is available? We answer this by inverting where the asymmetry comes from. Rather than adding privileged information to the teacher, we subtract information from the student. This asymmetry creates the same effective learning signal for free as a teacher with access to information unavailable to the student, without ground-truth annotations, rewards, or a separate stronger teacher model. Building on this principle, we introduce Self-Supervised Visual On-Policy Distillation (S^2VOPD), a simple yet effective method that constructs on-policy learning signals from asymmetric augmented views. S^2VOPD distills the teacher's distribution conditioned on the original image on-policy into the student distribution conditioned on a strongly augmented view of the same image. We systematically explore a broad design space of visual augmentations and uncover that (1) asymmetry matters: all four augmentation families improve performance, while symmetric self-distillation degrades it; (2) strength matters: performance peaks at a moderate strength; and (3) the gap must remain task-consistent: augmentations that completely remove the question-relevant evidence can induce large but uninformative discrepancies. Across six fine-grained perception benchmarks, S^2VOPD improves Qwen3.5-4B from 70.7% to 77.4%, above all open-source models compared, up to Qwen3-VL at 235B, and surpasses GPT-5.4. While holding training data the same, it recovers 96% of the improvement achieved by methods with privileged information. Website is at https://williamium3000.github.io/s2vopd",
+    "authors": [
+      "Yijiang Li",
+      "Yijun Liang",
+      "Yunjie Tian",
+      "Bingyang Wang",
+      "Ke Zhang",
+      "Zhenfei Yin",
+      "Di Fu",
+      "Philip Torr",
+      "Nuno Vasconcelos"
+    ],
+    "likes": 146,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14144",
+    "date_collected": "2026-08-18T07:31:07.582745+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "자기 감독 비주장적 시각적 온-폴리시 디스틸레이션",
+      "abstract": "시각적 온-폴리시 디스틸레이션은 정보가 풍부한 선생과 학생의 비대칭에 크게 의존하며, 이는 대형이고 강력한 선생이거나 참조 답변 또는 관심영역의 지상실증과 같은 특권 지도를 통해 이루어진다. 이는 기본적인 질문을 제기한다: 아무런 특권이 없을 때 정보가 풍부한 비대칭이 어디서 비롯될 수 있을까? 저희는 비대칭이 어디서 발생하는지를 역전시켜 이 질문에 답한다. 선생에게 특권 정보를 추가하는 대신 학생으로부터 정보를 빼았는다. 이러한 비대칭은, 지상실증, 보상 또는 별도의 더 강력한 선생 모델이 없어도 학생이 이용할 수 없는 정보에 접근할 수 있는 선생에게서 나오는 동일한 효과적인 학습 신호를 무료로 만든다. 이 원칙을 기반으로 Self-Supervised Visual On-Policy Distillation (S^2VOPD)를 제안한다. 이는 시각적 온-폴리시 학습 신호를 비대칭적으로 증가된 뷰에서 구성하는 간단하고 효과적인 방법이다. S^2VOPD는 원본 이미지에 의존하는 선생의 분포를 동일한 이미지의 강력하게 증가된 뷰에 의존하는 학생 분포로 디스틸레이션한다. 우리는 시각적 증가의 넓은 디자인 공간을 체계적으로 탐색하며, (1) 비대칭이 중요하다: 네 가지 증가 패밀리 모두 성능을 향상시키며, 대칭 자체 디스틸레이션은 성능을 저하시킨다; (2) 강도가 중요하다: 성능은 중간 강도에서 최고치를 보인다; (3) 간격은 작업 일관성을 유지해야 한다: 질문과 관련된 증거를 완전히 제거하는 증가는 크지만 안 지시적인 불일치를 유발할 수 있다. S^2VOPD는 여섯 가지 미세한 지각 벤치마크에서 Qwen3.5-4B를 70.7%에서 77.4%로 개선시키며, 모든 오픈소스 모델 중 최고의 결과를 보여준다. 사이트는 https://williamium3000.github.io/s2vopd에 있습니다."
+    },
+    "summary": "1. 특권 지식 없이도 학습 신호를 구축하는 자기 감독 시각적 온-폴리시 디스틸레이션 방법을 도입하여 선생과 학생의 비대칭을 이용한다.\n2. 시각적 증가된 뷰에서 선생과 학생 분포를 디스틸레이션하는 S^2VOPD 방법을 통해 성능을 향상시키고, 비대칭이 중요하며 중간 강도에서 최상의 성능이 나타난다.\n3. 질문 관련 증거를 완전히 제거하는 증가는 불일치를 유발할 수 있지만, 적절한 비대칭은 뚜렷한 성능 향상을 이끌어낸다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+    "abstract": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
+    "authors": [
+      "Yiwei Li",
+      "Wanli Yang",
+      "Hexiang Tan",
+      "Xiangzhou Huang",
+      "Zhengyu Chen",
+      "Ziran Li",
+      "Borun Chen",
+      "Shanglin Lei",
+      "Huaisheng Zhu",
+      "Hao Tian",
+      "Fei Sun",
+      "Xunliang Cai",
+      "Jingang Wang"
+    ],
+    "likes": 41,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2608.13417",
+    "date_collected": "2026-08-18T07:31:07.584608+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "최종 점수를 넘어서: 장기간 AI 연구 및 개발을 위한 에이전트의 체계적 평가",
+      "abstract": "자율 에이전트들은 장기간 실험을 통해 모델, 시스템 및 기술적 유물을 향상시키는 능력을 점차 향상시키고 있습니다. 그러나 현재 이 능력의 상태를 이해하기 위해서는 최종 점수를 넘어간 평가가 필수적입니다. 최종 점수는 진전이 어디서 나타나거나 상실되는 지를 밝혀주지 않을 뿐만 아니라 쌓인 경험이 나중의 결정을 개선하는 지 여부를 나타내지도 않습니다. 이에, 새로운 프레임워크를 기반으로 Solution Framing, Execution, Feedback Control을 통해 36가지 장기간 과제에 대한 일곱 가지 최첨단 모델의 체계적 평가를 제시합니다. 현재 에이전트들은 완전히 자율 연구자보다는 공학적 최적화자처럼 작동하는 것으로 나타났습니다. 그들은 실용적인 해결책을 구상하고 실행할 수 있지만, 그들의 성과는 실행마다 상당히 다양하며, 가장 강력한 해결책들은 주로 수립된 기술을 적응하거나 결합하는 것이고, 본질적인 방법론적 신뢰가 드문 것으로 나타났습니다. 구체적인 방향성을 제시하여 모델 훈련, 추론 시간 전략, 경험 관리 및 해리스 디자인을 개선하기 위한 구체적 방향을 제안합니다."
+    },
+    "summary": "1. 현재 AI 에이전트들은 공학적인 최적화자로서 작동하며, 기존 기술을 적응하거나 결합하는 것이 주를 이루고, 혁신적인 방법은 드물하다.\n2. 에이전트의 성과는 실행마다 크게 다양하며, 경험의 재사용은 후속 결정을 돕거나 오도할 수 있다.\n3. 성과는 다양한 요소에 의해 형성되는데, 이는 비슷한 최종 결과 뒤에는 다른 프로세스 병목 현상과 결정을 돕거나 오도할 수 있는 경험의 재사용, 그리고 성과 안정성에 영향을 미치는 해리스 디자인이 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+    "abstract": "We introduce Mobius-v0, an architecture that comprises a globally shared Memory (FFN) that stores knowledge vectors and multiple Reasoners (Self-Attn) that iteratively achieve compositional reasoning. Using hidden states as cache and carrier, reasoners repeatedly query memory for required knowledge-vectors, while the knowledge is transmitted back to reasoning operators. Through this knowledge-reasoning-separation architecture, Mobius achieves better knowledge compression and reasoning efficiency. Built upon Mobius-v0 architecture: 1) Our 7B model trained-from-scratch achieves similar downstream score as a 7B Transformer baseline with 62.6% of baseline's training data. 2) Our Intern-S2-Mobius, continually-pretrained from Qwen3.5-35B, achieves similar downstream score while delivering nearly 4x end-to-end inference speedup.",
+    "authors": [
+      "Kai Chen",
+      "Jifeng Ding",
+      "Ning Ding",
+      "Jiaye Ge",
+      "Lixin Gu",
+      "Yicheng Gu",
+      "Qipeng Guo",
+      "Ermo Hua",
+      "Haian Huang",
+      "Haozheng Hou",
+      "Jie Hou",
+      "Xiangyu Hong",
+      "Che Jiang",
+      "Minxi Jin",
+      "Cheng Liang",
+      "Dahua Lin",
+      "Dawei Liu",
+      "Kuikun Liu",
+      "Chengqi Lv",
+      "Haijun Lv",
+      "Han Lv",
+      "Ningsheng Ma"
+    ],
+    "likes": 31,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14290",
+    "date_collected": "2026-08-18T07:31:07.586777+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "Intern-S2-Mobius: 지식과 추론을 분리한 기초 모델",
+      "abstract": "본 연구에서는 지식 벡터를 저장하는 글로벌 공유 메모리(FFN)과 복합적 추론을 반복적으로 수행하는 여러 Reasoner(Self-Attn)로 구성된 Mobius-v0 아키텍처를 제안합니다. Reasoner는 숨겨진 상태를 캐시 및 전송 매개체로 사용하여 필요한 지식 벡터를 메모리에서 반복적으로 조회하고, 해당 지식이 추론 연산자로 전달됩니다. 이 지식-추론 분리 아키텍처를 통해 Mobius는 더 나은 지식 압축과 추론 효율성을 달성합니다. Mobius-v0 아키텍처를 기반으로: 1) 우리의 7B 모델은 7B Transformer 기준의 62.6% 훈련 데이터로부터 동등한 하류 점수를 달성합니다. 2) Qwen3.5-35B로부터 지속적으로 사전 훈련된 Intern-S2-Mobius는 거의 4배의 종단 간 추론 가속화를 제공하면서 동등한 하류 점수를 달성합니다."
+    },
+    "summary": "1. Mobius-v0 아키텍처는 지식 벡터를 저장하는 메모리와 복합적 추론을 수행하는 Reasoner로 구성되어 있습니다. 이를 통해 지식과 추론을 효율적으로 분리하여 지식 압축과 추론 효율성을 향상시킵니다.\n2. 7B 모델은 7B Transformer 기준의 훈련 데이터의 62.6%만 사용하여 동등한 결과를 달성하며, Intern-S2-Mobius는 사전 훈련으로 동등한 성과를 얻으며 추론 속도를 거의 4배 향상시킵니다.\n3. Mobius 아키텍처는 지식과 추론의 분리를 중요시하며, 효율적인 지식 검색과 활용을 통해 더 효율적인 추론을 실현합니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "Apodex Discovery: Reality Benchmarks and Environments for Evaluating and Building Discoverative Artificial Intelligence",
+    "abstract": "Apollo did not reach the Moon merely because its engineers could solve difficult equations. It succeeded by turning a distant ambition into a mission architecture of explicit objectives, simulation, verification, and repeated correction. AI now faces a similar transition: frontier models can solve difficult tasks once the problem, tools, and success criteria are specified, yet consequential real-world challenges rarely arrive in an executable or verifiable form.\n  We introduce Apodex Discovery, a framework for building and evaluating discoverative AI through the heavy-duty solver, a system comprising a foundation model, harness, tools, and control policies that pursues extended, stateful, verifiable investigations. It has three core components. First, a problem-scouting process surveyed 561 industries across 16 sectors, assembled 423 high-value real-world problems, and selected 20 for the initial release. Second, a common environment-task-episode abstraction provides data, tools, constraints, feedback, trajectory recording, and verification of intermediate artifacts and final submissions. Third, HDS6 evaluates Tools, Repair, Alternatives, Coherence, Evidence, and Scope independently of final-task success.\n  In AAV capsid design, Apodex surpassed the published state of the art by 7% across viability, tropism, structure prediction, and generative design. In drug repurposing and reformulation, a task-specific biomedical environment improved the mean normalized prediction score of GPT-5.5 and GPT-5.6-sol by 2.5 and 7.6 points over the same closed-book backbone. Controlled ablations show that the fixed TRACES episode interface enables attribution of performance differences to specific solver components. Apodex Discovery moves AI evaluation beyond predefined benchmarks toward verifiable investigations aimed at genuine discovery.",
+    "authors": [
+      "Brian Wang",
+      "Bin Feng",
+      "Xiaoman Pan",
+      "Chenyang An",
+      "Felix Liu",
+      "Tangqi Fang",
+      "Gongbo Sun",
+      "Lingfeng Shen",
+      "Ning Wang",
+      "Handuo Zhang",
+      "Feng Chen",
+      "Fuchao Yang",
+      "Xiang Wang",
+      "Jiacheng Lin",
+      "Siting Li",
+      "Zixuan Liu",
+      "Chi Han",
+      "Zhenhailong Wang",
+      "Kunlun Zhu",
+      "Lawrence Zhao",
+      "Yueqi Guo",
+      "Kailong Wen"
+    ],
+    "likes": 23,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2608.11341",
+    "date_collected": "2026-08-18T07:31:07.588958+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "Apodex Discovery: 발견형 인공지능을 평가하고 구축하기 위한 현실적인 평가 및 환경",
+      "abstract": "아폴로는 어려운 방정식을 해결할 수 있는 엔지니어들 때문이 아니라 먼 원대한 목표를 명확한 목표, 시뮬레이션, 검증 및 반복적 보정의 임무 구조로 바꿈으로써 달에 도달했습니다. 지금 AI는 비슷한 변화에 직면하고 있습니다. 선두 모델은 문제, 도구 및 성공 기준이 명시될 때 어려운 작업을 해결할 수 있지만 현실 세계의 중요한 도전들은 실행 가능한 혹은 검증 가능한 형태로 드물게 제공됩니다."
+    },
+    "summary": "1. Apodex Discovery는 발견적 AI를 구축하고 평가하기 위한 프레임워크로, 고객 환경-작업-에피소드 추상화, 공통 환경 및 제약 조건 제공, 중간 결과물 및 최종 제출의 확인 등 세 가지 핵심 구성 요소를 갖추고 있습니다.\n2. Apodex는 AAV 켑시드 디자인에서 최신 기술을 7% 넘어선 성과를 보였으며, 약물 재활용 및 재구성에서 바이오메디컬 환경은 GPT-5.5 및 GPT-5.6-sol의 평균 정규화 예측 점수를 향상시켰습니다.\n3. Apodex Discovery는 사전 정의된 벤치마크를 넘어 진정한 발견을 위해 검증 가능한 조사를 향한 AI 평가를 이동시킵니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long-Context Reasoning",
+    "abstract": "On-policy distillation (OPD) offers a promising way to transfer reasoning capabilities from stronger teacher models, but applying it to long-context reasoning teachers and short-context students introduces practical challenges, including tokenizer mismatch, teacher-student distribution mismatch, response length explosion, and training instability. In this work, we study this setting by transferring proof-reasoning capabilities from the long-context reasoning model SU-01 to short-context student models. To handle tokenizer differences, we perform OPD in a shared text space and align only tokens that occupy identical text spans under the student and teacher tokenizers. To mitigate the problem of excessive generation length and frequent truncation, we introduce a student reference KL loss and mask the advantages of special termination tokens such as </think> and <|im_end|>. This strategy constrains the student from drifting excessively from its initial policy, thereby mitigating the teacher-student distribution mismatch problem and fostering steady length growth. Experiments on both same-family and different-family student models, including Qwen3, Qwen3.5, Intern-S2, GLM-4.7, Gemma-4, show consistent gains in mathematical reasoning, especially natural-language math proving. Notably, Intern-S2-Preview improves by 21.2 points on ProofBench, reaching 55.2 and surpassing Gemini-2.5-Pro. It also improves on science benchmarks such as HLE and HiPhO, suggesting that OPD transfers reasoning capabilities that generalize beyond the mathematical training domain.",
+    "authors": [
+      "Haonan He",
+      "Haodi Lei",
+      "Yun Luo",
+      "Haoran Zhang",
+      "Shunkai Zhang",
+      "Yizhuo Li",
+      "Shengji Tang",
+      "Zhilin Wang",
+      "Runzhe Zhan",
+      "Lei Bai",
+      "Ganqu Cui",
+      "Fangchen Yu",
+      "Yafu Li",
+      "Peng Ye",
+      "Ning Ding",
+      "Yu Cheng"
+    ],
+    "likes": 22,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14277",
+    "date_collected": "2026-08-18T07:31:07.590918+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long-Context Reasoning",
+      "abstract": "On-policy distillation (OPD)은 강력한 교사 모델로부터 추론 능력을 전이하는 유망한 방법을 제공하지만, 장문맥 추론 교사와 단문맥 학생 간에 적용하는 것은 tokenizer 불일치, 학생-교사 분포 불일치, 응답 길이 폭발, 그리고 훈련 불안정성과 같은 실제적인 도전을 초래한다. 본 연구에서는 이 설정을 연구하여 장문맥 추론 모델 SU-01로부터 단문맥 학생 모델로 증명 추론 능력을 전이한다. tokenizer 차이를 처리하기 위해 학생과 교사 tokenizer 아래 동일한 텍스트 구간을 차지하는 토큰만을 정렬하는 공유 텍스트 공간에서 OPD를 수행한다. 너무 많은 생성 길이와 빈번한 절단 문제를 완화하기 위해 학생 참조 KL 손실을 도입하고 </think> 및 <|im_end|>와 같은 특별 종료 토큰의 이점을 마스킹한다. 이 전략은 학생이 초기 정책에서 지나치게 벗어나는 것을 제한하여 교사-학생 분포 불일치 문제를 완화하고 안정적인 길이 성장을 촉진한다. Qwen3, Qwen3.5, Intern-S2, GLM-4.7, Gemma-4를 포함한 동일 가족 및 다른 가족 학생 모델에 대한 실험에서 수학 추론과 특히 자연 언어 수학 증명에 일관된 향상을 보여준다. 특히, Intern-S2-Preview는 ProofBench에서 21.2 점 향상되어 55.2에 도달하며 Gemini-2.5-Pro를 넘어선다. 또한 OPD는 수학 훈련 도메인을 넘어 일반화하는 추론 능력을 전이한다고 나타내는 HLE 및 HiPhO와 같은 과학 벤치마크에서도 성능을 향상시킨다."
+    },
+    "summary": "1. OPD는 장문맥 추론 모델로부터 단문맥 학생 모델로 증명-추론 능력을 전이하는 방법을 제시한다.\n2. 공유 텍스트 공간에서의 OPD 수행을 통해 tokenizer 불일치 문제를 해결하고, 학생의 길이 성장을 안정화시킨다.\n3. 실험 결과, 다양한 학생 모델에서 수학 추론 및 자연 언어 수학 증명에 일관된 성능 향상이 나타났으며, 과학 벤치마크에서도 효과를 입증했다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
+    "abstract": "Interactive game world models typically autoregress visual observations directly in pixel or latent space, forcing structured properties such as pose, geometry, and occlusion to be implicitly maintained by the same generative sequence. Over long horizons, errors in these latent world properties accumulate, making consistency and controllability fragile. We explicitly model the evolving world state, delegate exact geometric computation to a fixed, zero-parameter renderer, and leave the neural model to synthesize appearance. We instantiate this idea as Marionette, a world model for interactive games with articulated characters. First, a two-stage autoregressive dynamics model predicts an explicit and interpretable 276-dimensional 3D world state comprising multi-entity articulated skeletons, metric root trajectories, and rotations. Second, a zero-parameter graphics bridge converts the predicted state into pose-control videos, computing world-space geometry and occlusion in closed form. Third, a control-conditioned video-diffusion observation model synthesizes photorealistic RGB observations from the resulting structured controls. Our experiments establish two properties of Marionette. First, the predicted world state is directly controllable. Forcing a mismatched action stream changes root-aligned joint error by 31% across 48 held-out segments. Second, long-horizon behaviour is determined in the state, and can be repaired there. Left free, the two generated characters drift to 21.2 m apart (recorded sessions stay near 5 m) and a third of frames show ground penetration. Two rules imposed on the explicit state, a terrain collider and a separation cap, cut penetration by 66% and keep the pair engaged, with no change to the observation model. Routing appearance through the predicted state costs no fidelity we can detect, at an FVD of 831 against 799 for recorded pose.",
+    "authors": [
+      "Zian Meng",
+      "Zhen Li",
+      "Chuanhao Li",
+      "Qiang Li",
+      "Kaipeng Zhang"
+    ],
+    "likes": 22,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14530",
+    "date_collected": "2026-08-18T07:31:07.592566+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "마리오넷: 세계 상태 예측, 기하학 렌더링, 외형 그리기",
+      "abstract": "대화형 게임 세계 모델은 일반적으로 시각적 관측을 픽셀이나 잠재 공간에서 직접 자동 회귀함으로써 자세, 기하학, 가려짐과 같은 구조화된 특성을 동시에 유지해야 하므로 장기적으로는 잠재 세계 속성의 오차가 누적되기 쉽습니다. 우리는 변화하는 세계 상태를 명시적으로 모델링하고 정확한 기하학적 계산을 고정된, 제로 파라미터 렌더러에 위임하고 신경 모델은 외형을 합성하도록 했습니다. 이를 '마리오넷'이라는 상호작용적 게임을 위한 세계 모델로 구현했습니다."
+    },
+    "summary": "1. 마리오넷은 세계 상태를 명시적으로 모델링하고 고정된 렌더러를 사용하여 기하학 계산을 처리하며 신경 모델은 외형을 합성합니다.\n2. 두 단계의 자동 회귀 동역학 모델은 명시적이고 해석 가능한 3D 세계 상태를 예측하며, 그래픽스 브리지는 예측된 상태를 제어할 수 있는 비디오로 변환합니다.\n3. 마리오넷의 실험에서 세계 상태는 직접 제어 가능하며 장기적인 행동은 상태에서 결정되어 복구 가능함이 입증되었습니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data",
+    "abstract": "Current large language model development relies on massive, often non-permissible datasets, creating a high barrier for researchers committed to open-source and ethically sourced data. We introduce Mimir v1, a 1-billion-parameter language model based on the Hierarchical Reasoning Model (HRM) architecture, that is trained from scratch and delivers highly competitive performance for English and sets a new state of the art for Danish using only permissible post-training data. Trained on a mixture of 161 datasets, Mimir v1 outperforms the original HRM-Text 1B and competes with larger frontier models like Qwen 3.5 4B and Gemma 4 E2B, tested across 20 benchmarks for English, Math & Code and Danish. The model is available on the Hugging Face Hub: https://huggingface.co/danish-foundation-models/DFM-Mimir",
+    "authors": [
+      "Peter Schneider-Kamp",
+      "Jacob Nielsen",
+      "Gianluca Barmina",
+      "Kenneth Enevoldsen",
+      "Lukas Galke Poech"
+    ],
+    "likes": 21,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2608.13517",
+    "date_collected": "2026-08-18T07:31:07.594120+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "DFM Mimir v1: 허용된 사후 훈련 데이터만을 이용하여 10억 파라미터 인공지능 언어 모델의 선두적인 성능을 제공하는 오픈 HRM",
+      "abstract": "현재 대규모 언어 모델 개발은 종종 부적절한 대규모 데이터셋에 의존하여, 오픈소스와 윤리적 데이터에 헌신한 연구자들에게 높은 진입 장벽을 설정합니다. 우리는 HRM 아키텍처 기반의 10억 파라미터 언어 모델인 Mimir v1을 소개합니다. 이 모델은 처음부터 훈련되어 영어에서 뛰어난 성능을 발휘하며, 허용된 사후 훈련 데이터만을 사용하여 덴마크어에 대해 새로운 최고성능을 달성합니다. 161개 데이터셋의 혼합으로 훈련된 Mimir v1은 원래의 HRM-Text 1B를 능가하며, Qwen 3.5 4B 및 Gemma 4 E2B와 같은 더 큰 선두 모델과 겨룰 수 있습니다."
+    },
+    "summary": "1. Mimir v1은 HRM 아키텍처 기반의 10억 파라미터 언어 모델로, 허용된 사후 훈련 데이터만을 이용하여 영어와 덴마크어에 대해 경쟁력 있는 성능을 보입니다.\n2. 161개 데이터셋의 혼합으로 훈련된 Mimir v1은 HRM-Text 1B를 능가하며, Qwen 3.5 4B 및 Gemma 4 E2B와 같은 대규모 모델과 경쟁합니다.\n3. 이 모델은 영어, 수학, 코드 및 덴마크어 각각 20가지의 벤치마크에서 테스트되었으며, Hugging Face Hub에서 이용 가능합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MobileMem: Learning from a Year of Mobile Experiences",
+    "abstract": "The next generation of AI agents is increasingly moving beyond systems that answer isolated questions toward persistent personal assistants that can understand, remember, and continuously learn from users' experiences. Such assistants require long-term memory to accumulate and leverage user-specific experiences over time, yet existing benchmarks remain inadequate for realistic mobile settings, where experiences are heterogeneous, multimodal, evolving, and deeply personal. We introduce MobileMem, a benchmark and framework for studying on-device long-term memory, grounded in a year-scale collection of mobile experiences. MobileMem employs a knowledge-grounded synthesis pipeline to construct coherent and temporally consistent long-horizon trajectories from user-app sessions. It provides complementary text and multimodal settings covering multi-hop and temporal reasoning, knowledge updating, and implicit preference inference. Specifically, MobileMem enables agents to remember the past, understand the present, and adapt to the future. By modeling experiences rather than isolated facts, MobileMem moves memory beyond information retrieval toward experiential intelligence for continuous personal learning.",
+    "authors": [
+      "Xinle Deng",
+      "Yida Xue",
+      "Xiangyuan Ru",
+      "Haoming Xu",
+      "Shuofei Qiao",
+      "Mengru Wang",
+      "Yijun Chen",
+      "Buqiang Xu",
+      "Chen Jiang",
+      "Yuchen Eleanor Jiang",
+      "Lizhong Wang",
+      "Jianfeng Wang",
+      "Li Zeng",
+      "Haofen Wang",
+      "Guilin Qi",
+      "Huajun Chen",
+      "Ningyu Zhang"
+    ],
+    "likes": 20,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2608.13606",
+    "date_collected": "2026-08-18T07:31:07.596116+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "MobileMem: 모바일 경험의 일년간 학습",
+      "abstract": "다음 세대의 AI 에이전트는 단일 질문에 답변하는 시스템을 넘어서, 지속적인 개인 비서로 진화하고 있습니다. 이들은 사용자의 경험을 이해하고 기억하며 지속적으로 학습할 수 있는 능력을 갖춰야 합니다. 그러한 비서들은 시간이 지남에 따라 사용자별 경험을 축적하고 활용하기 위해 장기 기억이 필요하지만, 기존의 벤치마크는 모바일 환경에서는 현실적이지 못합니다. 거기서의 경험은 이질적이고 다중 모달이며 진화하고 깊은 개인적인 성격을 가지고 있습니다. 우리는 MobileMem을 소개합니다. MobileMem은 모바일 경험의 일년간의 데이터를 기반으로 한 장치 내 장기 기억 연구를 위한 벤치마크와 프레임워크입니다. MobileMem은 지식 기반의 합성 파이프라인을 활용하여 사용자-앱 세션으로부터 일관되고 시간적으로 일관된 장기 지식을 구축합니다."
+    },
+    "summary": "1. MobileMem은 모바일 경험의 연속적인 기억을 위한 벤치마크이며, 사용자의 경험을 통해 개인화된 지능을 구축합니다.\n2. 이 프레임워크는 다중 모달 설정을 포함하며, 과거를 기억하고 현재를 이해하며 미래에 적응하는 능력을 제공합니다.\n3. MobileMem은 격리된 사실이 아닌 경험을 모델링하여 지식 갱신과 암묵적인 선호 추론을 포함한 지속적인 개인 학습을 위한 경험적 지능으로 기억을 발전시킵니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
+    "abstract": "Humanoid motion tracking is central to teleoperation and whole-body imitation, yet evaluation often disagrees with what people perceive in videos. Kinematic errors average per-frame pose differences but miss the physical artifacts that matter most, particularly unstable support and incorrect contacts such as foot skating and mistimed touch-downs. Meanwhile, widely used test suites are small and lack the diversity needed to stress contact-rich, long-horizon behaviors. We introduce HumanTracker to make humanoid tracking evaluation both perceptually aligned and scalable. The HumanTracker benchmark contains approximately 153 hours of optical motion trajectories from multiple professional performers, organized into four motion families with text labels for fine-grained diagnosis. We further propose HumanScore, a preference-aligned metric trained on 12K motion pairs containing 24K motions. Across representative state-of-the-art trackers, HumanScore better predicts human preferences and reveals contact and stability failures that kinematic metrics often miss.",
+    "authors": [
+      "Dairu Liu",
+      "Zekun Qi",
+      "Jiayu Zeng",
+      "Ruixi Yu",
+      "Yu Guan",
+      "Yintianrun Zhang",
+      "Xuchuan Chen",
+      "Sikai Liang",
+      "Zekai Li",
+      "Chenghuai Lin",
+      "Xinqiang Yu",
+      "Wenyao Zhang",
+      "He Wang",
+      "Li Yi"
+    ],
+    "likes": 15,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2608.13555",
+    "date_collected": "2026-08-18T07:31:07.597989+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "HumanTracker: 포괄적이고 인간 중심의 동작 추적 벤치마크로 향한",
+      "abstract": "인간형 로봇의 동작 추적은 원격 조종 및 전신 모방에 중요하지만, 평가는 종종 영상에서 사람들이 지각하는 것과 다릅니다. 심도 오차는 프레임 당 자세 차이를 평균화하지만, 불안정한 지지 및 발 skating 및 잘못된 접촉을 포함한 실질적인 오류를 놓칩니다. 한편, 널리 사용되는 테스트 스위트는 다수의 접촉을 포함하고 긴 시계열 동작을 강조하는 데 필요한 다양성이 부족합니다. 우리는 HumanTracker를 소개하여 인간형 추적 평가를 지각적으로 정렬되고 확장 가능하게 만듭니다. HumanTracker 벤치마크에는 다수의 전문 퍼포머의 대략 153시간의 광학적 동작 궤적이 있으며, 섬세한 진단을 위해 텍스트 라벨이 지정된 네 가지 동작 패밀리로 구성되어 있습니다. 우리는 12,000개 동작 쌍을 포함하는 24,000개 동작으로 훈련된 선호도 맞춤 메트릭인 HumanScore를 제안합니다. 대표적인 최첨단 추적기를 통해 HumanScore는 사람의 선호도를 더 잘 예측하고 심도 메트릭에서 종종 놓치는 접촉 및 안정성 실패를 보여줍니다."
+    },
+    "summary": "1. 인간형 동작 추적의 문제는 심도 오차가 실제적인 물리적 현상을 놓칠 수 있어 발생합니다.\n2. 기존 테스트 스위트는 필요한 다양성을 제공하지 못하여 접촉이 많은 긴 시계열 동작을 충분히 검증하지 못합니다.\n3. HumanTracker는 인간의 선호도를 고려한 새로운 메트릭인 HumanScore를 도입하여 기존 추적기보다 인간의 선호도를 더 잘 예측하고 안정성 및 접촉 실패를 보완합니다.",
+    "categories": [
+      "Multimodal",
+      "Robotics",
+      "Other"
+    ]
+  }
+]

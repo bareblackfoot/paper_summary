@@ -1,0 +1,161 @@
+=== Paper Collection Started at Thu Sep  4 22:07:15 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W36
+URL: https://huggingface.co/papers/week/2025-W36
+Found 10 papers in weekly view
+Fetching likes for: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Fetching likes for: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Fetching likes for: The Landscape of Agentic Reinforcement Learning for LLMs: A Survey
+Fetching likes for: UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning
+Fetching likes for: SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning
+Fetching likes for: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Fetching likes for: LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
+Fetching likes for: Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation
+Fetching likes for: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Fetching likes for: VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use
+Selected top 10 papers by likes:
+1. A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers (122 likes)
+2. R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning (102 likes)
+3. The Landscape of Agentic Reinforcement Learning for LLMs: A Survey (101 likes)
+4. UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning (93 likes)
+5. SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning (74 likes)
+6. EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control (71 likes)
+7. LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model (70 likes)
+8. Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation (64 likes)
+9. A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code (63 likes)
+10. VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use (53 likes)
+Found abstract: Scientific Large Language Models (Sci-LLMs) are transforming how knowledge is
+represented, integrate...
+Processed paper: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Found abstract: Multimodal Large Language Models (MLLMs) equipped with step-by-step thinking
+capabilities have demon...
+Processed paper: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Found abstract: The emergence of agentic reinforcement learning (Agentic RL) marks a paradigm
+shift from conventiona...
+Processed paper: The Landscape of Agentic Reinforcement Learning for LLMs: A Survey
+Found abstract: The development of autonomous agents for graphical user interfaces (GUIs)
+presents major challenges ...
+Processed paper: UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning
+Found abstract: Large Language Models (LLMs) can significantly improve their reasoning
+capabilities by interacting w...
+Processed paper: SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning
+Found abstract: The human ability to seamlessly perform multimodal reasoning and physical
+interaction in the open wo...
+Processed paper: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Found abstract: In vision-language modeling, critic models are typically trained to evaluate
+outputs -- assigning sc...
+Processed paper: LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
+Found abstract: Scaling laws have validated the success and promise of large-data-trained
+models in creative generat...
+Processed paper: Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation
+Found abstract: The increasing adoption of large language models (LLMs) in software
+engineering necessitates rigorou...
+Processed paper: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has demonstrated
+success in enhancing LLM reas...
+Processed paper: VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Paper already exists, checking if translation is complete...
+Update likes: 122  ->  118
+Update date_collected: 2025-09-05T07:07:24.305949+09:00  ->  2025-09-04T07:07:05.856031+09:00
+
+Processing paper 2/10
+Title: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  100
+Update date_collected: 2025-09-05T07:07:24.307152+09:00  ->  2025-09-04T07:07:05.857243+09:00
+
+Processing paper 3/10
+Title: The Landscape of Agentic Reinforcement Learning for LLMs: A Survey
+Paper already exists, checking if translation is complete...
+Update likes: 101  ->  69
+Update date_collected: 2025-09-05T07:07:24.309008+09:00  ->  2025-09-04T07:07:05.860583+09:00
+
+Processing paper 4/10
+Title: UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 93  ->  63
+Update date_collected: 2025-09-05T07:07:24.310870+09:00  ->  2025-09-04T07:07:05.862398+09:00
+
+Processing paper 5/10
+Title: SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn
+  Tool-Integrated Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  62
+Update date_collected: 2025-09-05T07:07:24.312069+09:00  ->  2025-09-04T07:07:05.863599+09:00
+
+Processing paper 6/10
+Title: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  70
+Update date_collected: 2025-09-05T07:07:24.313599+09:00  ->  2025-09-04T07:07:05.858755+09:00
+
+Processing paper 7/10
+Title: LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  56
+Update date_collected: 2025-09-05T07:07:24.314841+09:00  ->  2025-09-04T07:07:05.868037+09:00
+
+Processing paper 8/10
+Title: Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  62
+Update date_collected: 2025-09-05T07:07:24.316339+09:00  ->  2025-09-04T07:07:05.865124+09:00
+
+Processing paper 9/10
+Title: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  61
+Update date_collected: 2025-09-05T07:07:24.318147+09:00  ->  2025-09-04T07:07:05.866876+09:00
+
+Processing paper 10/10
+Title: VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W36.json...
+
+Updating Notion database...
+Updating paper: 과학적 대규모 언어 모델 조사: 데이터 기초부터 에이전트 전선까지 (likes: 118 -> 122)
+Updating paper: MLLM에서 양상 결합 앤닐링과 강화 학습을 통해 일반용 자동 사고 능력을 장려하는 R-4B (likes: 100 -> 102)
+Updating paper: LLM을 위한 에이전틱 강화학습의 풍경: 조사 (likes: 69 -> 101)
+Updating paper: UI-TARS-2 기술 보고서: 다중 턴 강화학습을 통한 GUI 에이전트 발전 (likes: 63 -> 93)
+Updating paper: 단순TIR: 다중 턴 툴 통합 추론을 위한 엔드투엔드 강화 학습 (likes: 62 -> 74)
+Updating paper: EmbodiedOneVision: 일반 로봇 제어를 위한 간섭된 비전-텍스트-행동 사전학습 (likes: 70 -> 71)
+Updating paper: LLaVA-Critic-R1: 당신의 평가 모델은 비밀로 강력한 정책 모델이었습니다 (likes: 56 -> 70)
+Updating paper: Droplet3D: 비디오로부터 유래된 상식 우선순위가 3D 생성을 용이하게 합니다 (likes: 62 -> 64)
+Updating paper: A.S.E: AI 생성 코드 보안 평가를 위한 저장소 수준 벤치마크 (likes: 61 -> 63)
+Creating new paper: 종합적 에이전트적 보상 학습을 향한 VerlTool
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Sep  4 22:09:57 UTC 2025 ===
+

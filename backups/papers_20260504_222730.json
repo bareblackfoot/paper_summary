@@ -1,0 +1,60 @@
+[
+  {
+    "title": "End-to-End Autoregressive Image Generation with 1D Semantic Tokenizer",
+    "abstract": "Autoregressive image modeling relies on visual tokenizers to compress images into compact latent representations. We design an end-to-end training pipeline that jointly optimizes reconstruction and generation, enabling direct supervision from generation results to the tokenizer. This contrasts with prior two-stage approaches that train tokenizers and generative models separately. We further investigate leveraging vision foundation models to improve 1D tokenizers for autoregressive modeling. Our autoregressive generative model achieves strong empirical results, including a state-of-the-art FID score of 1.48 without guidance on ImageNet 256x256 generation.",
+    "authors": [
+      "Wenda Chu",
+      "Bingliang Zhang",
+      "Jiaqi Han",
+      "Yizhuo Li",
+      "Linjie Yang",
+      "Yisong Yue",
+      "Qiushan Guo"
+    ],
+    "likes": 0,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00503",
+    "date_collected": "2026-05-04T10:42:11.813196+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "1차원 시맨틱 토크나이저를 이용한 자동 회귀 이미지 생성",
+      "abstract": "자동 회귀적 이미지 모델링은 이미지를 조밀한 잠재 표현으로 압축하기 위해 시각적 토크나이저에 의존합니다. 우리는 재구성과 생성을 동시에 최적화하는 끝에서 끝 학습 파이프라인을 설계하여 생성 결과로부터 토크나이저에 직접 지도하는 것을 가능케 합니다. 이는 토크나이저와 생성 모델을 별도로 훈련하는 이전의 이중 단계 접근법과 대조됩니다. 또한 자동 회귀 모델링을 위해 시각 기반 모델을 활용해 1차원 토크나이저를 개선하는 연구를 진행합니다. 우리의 자기 회귀적 생성 모델은 ImageNet 256x256 생성에서 가이드 없이 1.48의 최신 FID 점수를 달성하는 등 강력한 경험적 결과를 얻었습니다."
+    },
+    "summary": "1. 이미지 생성을 위해 잠재 표현을 압축하는 1차원 시맨틱 토크나이저를 사용한 자동 회귀 모델을 설계함.\n2. 생성 결과에서 토크나이저로부터 직접 지도하는 끝에서끝 학습 파이프라인을 개발함.\n3. 시각 기반 모델을 활용하여 자동 회귀 모델을 개선하고, ImageNet 256x256 생성에서 최신 FID 점수를 달성함.",
+    "categories": [
+      "Computer Vision",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Let ViT Speak: Generative Language-Image Pre-training",
+    "abstract": "In this paper, we present Generative Language-Image Pre-training (GenLIP), a minimalist generative pretraining framework for Vision Transformers (ViTs) designed for multimodal large language models (MLLMs). To better align vision encoders with the autoregressive nature of LLMs, GenLIP trains a ViT to predict language tokens directly from visual tokens using a standard language modeling objective, without contrastive batch construction or an additional text decoder. This design offers three key advantages: (1) Simplicity: a single transformer jointly models visual and textual tokens; (2) Scalability: it scales effectively with both data and model size; and (3) Performance: it achieves competitive or superior results across diverse multimodal benchmarks. Trained on 8B samples from Recap-DataComp-1B, GenLIP matches or surpasses strong baselines despite using substantially less pretraining data. After continued pretraining on multi-resolution images at native aspect ratios, GenLIP further improves on detail-sensitive tasks such as OCR and chart understanding, making it a strong foundation for vision encoders in MLLMs.",
+    "authors": [
+      "Yan Fang",
+      "Mengcheng Lan",
+      "Zilong Huang",
+      "Weixian Lei",
+      "Yunqing Zhao",
+      "Yujie Zhong",
+      "Yingchen Yu",
+      "Qi She",
+      "Yao Zhao",
+      "Yunchao Wei"
+    ],
+    "likes": 0,
+    "published_date": "May 1",
+    "url": "https://huggingface.co/papers/2605.00809",
+    "date_collected": "2026-05-04T10:42:11.814972+09:00",
+    "week": "2026-W19",
+    "translation": {
+      "title": "ViT가 말하다: 생성언어-이미지 사전학습",
+      "abstract": "본 논문에서는 Vision Transformers(ViT)를 위한 다중모달 대규모 언어모델(Multimodal Large Language Models, MLLMs)을 위한 간소화된 생성 사전학습 프레임워크인 GenLIP(Generative Language-Image Pre-training)을 제안합니다. GenLIP은 시각 인코더들을 언어 모델의 자기 회귀적 특성과 더 잘 맞추기 위해 시각 토큰에서 바로 언어 토큰을 예측하도록 ViT를 훈련시킵니다. 이 때, 대조 배치 구성이나 추가 텍스트 디코더 없이 일반적인 언어 모델링 목적을 따릅니다. 이 설계는 세 가지 주요 장점을 제공합니다: (1) 단숨함, (2) 확장성, (3) 성능."
+    },
+    "summary": "1. GenLIP은 ViT를 사용하여 시각과 텍스트 토큰을 함께 모델링하며, 대량의 데이터와 모델 크기에 효과적으로 확장 가능하며 다양한 다중모달 벤치마크에서 경쟁력있거나 우수한 결과를 달성합니다.\n2. Recap-DataComp-1B의 8B 샘플로 훈련된 GenLIP는 강력한 기준을 넘어서거나 따라잡음으로써 사전 훈련 데이터를 크게 줄이더라도 우수한 성과를 보입니다.\n3. 원본 종횡비의 다중 해상도 이미지에서 지속적인 사전 훈련 후, GenLIP은 OCR 및 차트 이해와 같은 디테일에 민감한 작업에서 더욱 향상되어 ViT를 MLLMs의 시각 인코더로 강력한 기반으로 만듭니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "title": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding",
+    "abstract": "With the rapid advancement of video understanding, existing benchmarks are becoming increasingly saturated, exposing a critical discrepancy between inflated leaderboard scores and real-world model capabilities. To address this widening gap, we introduce Video-MME-v2, a comprehensive benchmark designed to rigorously evaluate the robustness and faithfulness of video understanding. To systematically evaluate model capabilities, we design a progressive tri-level hierarchy that incrementally increases the complexity of video comprehension, ranging from multi-point visual information aggregation, to temporal dynamics modeling, and ultimately to complex multimodal reasoning. Besides, in contrast to conventional per-question accuracy, we propose a group-based non-linear evaluation strategy that enforces both consistency across related queries and coherence in multi-step reasoning. It penalizes fragmented or guess-based correctness and assigns credit only to answers supported by valid reasoning. To guarantee data quality, Video-MME-v2 is constructed through a rigorously controlled human annotation pipeline, involving 12 annotators and 50 independent reviewers. Backed by 3,300 human-hours and up to 5 rounds of quality assurance, Video-MME-v2 aims to serve as one of the most authoritative video benchmarks. Extensive experiments reveal a substantial gap between current best model Gemini-3-Pro and human experts, and uncover a clear hierarchical bottleneck where errors in visual information aggregation and temporal modeling propagate to limit high-level reasoning. We further find that thinking-based reasoning is highly dependent on textual cues, improving performance with subtitles but sometimes degrading it in purely visual settings. By exposing these limitations, Video-MME-v2 establishes a demanding new testbed for the development of next-generation video MLLMs.",
+    "authors": [
+      "Chaoyou Fu",
+      "Haozhi Yuan",
+      "Yuhao Dong",
+      "Yi-Fan Zhang",
+      "Yunhang Shen",
+      "Xiaoxing Hu",
+      "Xueying Li",
+      "Jinsen Su",
+      "Chengwu Long",
+      "Xiaoyao Xie",
+      "Yongkang Xie",
+      "Xiawu Zheng",
+      "Xue Yang",
+      "Haoyu Cao",
+      "Yunsheng Wu",
+      "Ziwei Liu",
+      "Xing Sun",
+      "Caifeng Shan",
+      "Ran He"
+    ],
+    "likes": 217,
+    "published_date": "Apr 6",
+    "url": "https://huggingface.co/papers/2604.05015",
+    "date_collected": "2026-04-10T07:20:08.060736+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "비디오 이해의 다음 단계를 향한 Video-MME-v2 벤치마크",
+      "abstract": "비디오 이해의 급속한 발전에 따라 기존 벤치마크는 점점 포화되어 기존 모델 능력과 실제 성능 사이의 중요한 불일치를 드러내고 있습니다. 이 불일치를 해소하기 위해, 우리는 Video-MME-v2를 소개합니다. 이 벤치마크는 비디오 이해의 견고성과 충실성을 철저히 평가하기 위해 설계되었습니다. 모델 능력을 체계적으로 평가하기 위해, 저희는 비디오 이해의 복잡도를 점진적으로 높이는 3단계 계층 구조를 디자인했습니다. 이는 다중 시각 정보 집계부터 시간적 동적 모델링, 그리고 복합적인 다중 모달 추론까지 이어집니다."
+    },
+    "summary": "1. Video-MME-v2는 비디오 이해 모델의 견고성과 품질을 철저하게 검증하는 포괄적인 벤치마크로, 다중 수준의 비디오 이해 복잡성을 기반으로 모델 능력을 체계적으로 평가합니다.\n2. 기존의 단순한 정확도 평가 방식을 벗어나, 관련 쿼리 간 일관성과 다단계 추론의 일관성을 강조하는 비선형 평가 전략을 제안하여 모델의 참신성을 강조합니다.\n3. Video-MME-v2는 인간 주석 파이프라인을 통해 엄격히 제어된 데이터 품질을 보장하며, 도메인 전문가와의 성능 비교를 통해 시각 정보 집계, 시간 모델링 등의 실수 지점을 밝혀냅니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "OpenWorldLib: A Unified Codebase and Definition of Advanced World Models",
+    "abstract": "World models have garnered significant attention as a promising research direction in artificial intelligence, yet a clear and unified definition remains lacking. In this paper, we introduce OpenWorldLib, a comprehensive and standardized inference framework for Advanced World Models. Drawing on the evolution of world models, we propose a clear definition: a world model is a model or framework centered on perception, equipped with interaction and long-term memory capabilities, for understanding and predicting the complex world. We further systematically categorize the essential capabilities of world models. Based on this definition, OpenWorldLib integrates models across different tasks within a unified framework, enabling efficient reuse and collaborative inference. Finally, we present additional reflections and analyses on potential future directions for world model research. Code link: https://github.com/OpenDCAI/OpenWorldLib",
+    "authors": [
+      "DataFlow Team",
+      "Bohan Zeng",
+      "Daili Hua",
+      "Kaixin Zhu",
+      "Yifan Dai",
+      "Bozhou Li",
+      "Yuran Wang",
+      "Chengzhuo Tong",
+      "Yifan Yang",
+      "Mingkun Chang",
+      "Jianbin Zhao",
+      "Zhou Liu",
+      "Hao Liang",
+      "Xiaochen Ma",
+      "Ruichuan An",
+      "Junbo Niu",
+      "Zimo Meng",
+      "Tianyi Bai",
+      "Meiyi Qiang",
+      "Huanyao Zhang",
+      "Zhiyou Xiao",
+      "Tianyu Guo"
+    ],
+    "likes": 171,
+    "published_date": "Apr 6",
+    "url": "https://huggingface.co/papers/2604.04707",
+    "date_collected": "2026-04-10T07:20:08.062991+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "OpenWorldLib: 고급 세계 모델의 통합된 코드베이스와 정의",
+      "abstract": "세계 모델은 인공 지능 연구의 유망한 방향으로 주목받고 있지만 명확하고 통일된 정의가 부족하다. 본 논문에서는 고급 세계 모델을 위한 포괄적이고 표준화된 추론 프레임워크인 OpenWorldLib을 소개한다. 우리는 세계 모델의 진화를 바탕으로, 세계 모델을 인식을 중심으로 한, 상호작용과 장기 기억 기능을 갖추고 복잡한 세계를 이해하고 예측하기 위한 모델 또는 프레임워크로 명확히 정의한다. 우리는 더 나아가 세계 모델의 필수 능력을 체계적으로 분류한다. 이 정의에 따라 OpenWorldLib은 통합된 프레임워크 내에서 다양한 작업의 모델을 효율적으로 통합하여 재사용과 협업 추론을 가능하게 한다. 마지막으로, 세계 모델 연구의 잠재적인 미래 방향에 대한 추가적인 고찰과 분석을 제시한다."
+    },
+    "summary": "1. OpenWorldLib는 고급 세계 모델을 위한 통합된 추론 프레임워크로, 세계 모델의 정의를 명확히 하고 필수 능력을 분류한다.\n2. 이 코드베이스는 다양한 작업의 모델을 하나로 통합하여 효율적인 재사용과 협업 추론을 가능케 한다.\n3. 논문은 뿐만 아니라 세계 모델 연구의 잠재적인 미래 방향에 대한 고찰과 분석도 제시한다.",
+    "categories": [
+      "LLM",
+      "Artificial Intelligence",
+      "Other"
+    ]
+  },
+  {
+    "title": "Adam's Law: Textual Frequency Law on Large Language Models",
+    "abstract": "While textual frequency has been validated as relevant to human cognition in reading speed, its relatedness to Large Language Models (LLMs) is seldom studied. We propose a novel research direction in terms of textual data frequency, which is an understudied topic, to the best of our knowledge. Our framework is composed of three units. First, this paper proposes Textual Frequency Law (TFL), which indicates that frequent textual data should be preferred for LLMs for both prompting and fine-tuning. Since many LLMs are closed-source in their training data, we propose using online resources to estimate the sentence-level frequency. We then utilize an input paraphraser to paraphrase the input into a more frequent textual expression. Next, we propose Textual Frequency Distillation (TFD) by querying LLMs to conduct story completion by further extending the sentences in the datasets, and the resulting corpora are used to adjust the initial estimation. Finally, we propose Curriculum Textual Frequency Training (CTFT) that fine-tunes LLMs in an increasing order of sentence-level frequency. Experiments are conducted on our curated dataset Textual Frequency Paired Dataset (TFPD) on math reasoning, machine translation, commonsense reasoning and agentic tool calling. Results show the effectiveness of our framework.",
+    "authors": [
+      "Hongyuan Adam Lu",
+      "Z. L.",
+      "Victor Wei",
+      "Zefan Zhang",
+      "Zhao Hong",
+      "Qiqi Xiang",
+      "Bowen Cao",
+      "Wai Lam"
+    ],
+    "likes": 161,
+    "published_date": "Apr 2",
+    "url": "https://huggingface.co/papers/2604.02176",
+    "date_collected": "2026-04-10T07:20:08.064545+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "아담의 법칙: 대형언어모델에서의 텍스트 빈도 법칙",
+      "abstract": "문장의 빈도가 독해 속도에 관련이 있다는 것은 입증되었지만, 대형언어모델(Large Language Models, LLMs)과의 관련성은 잘 연구되지 않았다. 우리는 텍스트 데이터 빈도에 관한 혁신적인 연구 방향을 제안하며, 이는 우리의 최고의 지식으로는 잘 연구되지 않은 주제이다. 이 논문은 Textual Frequency Law (TFL)을 제안하며, 이는 LLMs에게 빈번한 텍스트 데이터를 프롬프팅과 파인튜닝에 사용하는 것이 좋다는 것을 나타낸다. 다수의 LLMs는 훈련 데이터가 편향되어 있기 때문에, 우리는 온라인 자원을 활용하여 문장 수준의 빈도를 추정하는 것을 제안한다. 그 후, 입력 패러프레이저를 사용하여 입력을 더 빈번한 텍스트 표현으로 패러프레이징한다. 또한, 우리는 Textual Frequency Distillation (TFD)를 제안하며, 이는 LLMs에 쿼리를 보내어 데이터셋의 문장을 더 확장한 이야기 완성을 시행한다. 이 결과 말뭉치는 초기 추정을 조정하는 데 사용된다. 최종적으로, 우리는 Curriculum Textual Frequency Training (CTFT)을 제안하여 LLMs를 문장 수준 빈도의 증가 순서로 파인튜닝한다. 수학 추론, 기계 번역, 상식 추론, 그리고 주체 도구 호출과 관련된 우리가 큐레이션한 데이터셋 Textual Frequency Paired Dataset (TFPD)에서 실험이 수행되었으며, 결과는 우리의 프레임워크의 효과성을 보여준다."
+    },
+    "summary": "1. 텍스트 데이터 빈도인 Textual Frequency Law (TFL)을 제안하여 LLMs의 프롬프팅과 파인튜닝에 빈번한 텍스트 데이터 사용이 효과적임을 밝힘.\n2. Textual Frequency Distillation (TFD)은 데이터셋의 문장을 확장하여 LLMs를 조정하며, Curriculum Textual Frequency Training (CTFT)은 문장 빈도의 증가순으로 파인튜닝을 제안함.\n3. 실험 결과는 Textual Frequency Paired Dataset (TFPD)에서 우리의 프레임워크의 효과적임을 입증함.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
+    "abstract": "Industrial software development across chip design, GPU optimization, and embedded systems lacks expert reasoning traces showing how engineers reason about hardware constraints and timing semantics. In this work, we propose InCoder-32B-Thinking, trained on the data from the Error-driven Chain-of-Thought (ECoT) synthesis framework with an industrial code world model (ICWM) to generate reasoning traces. Specifically, ECoT generates reasoning chains by synthesizing the thinking content from multi-turn dialogue with environmental error feedback, explicitly modeling the error-correction process. ICWM is trained on domain-specific execution traces from Verilog simulation, GPU profiling, etc., learns the causal dynamics of how code affects hardware behavior, and enables self-verification by predicting execution outcomes before actual compilation. All synthesized reasoning traces are validated through domain toolchains, creating training data matching the natural reasoning depth distribution of industrial tasks. Evaluation on 14 general (81.3% on LiveCodeBench v5) and 9 industrial benchmarks (84.0% in CAD-Coder and 38.0% on KernelBench) shows InCoder-32B-Thinking achieves top-tier open-source results across all domains.GPU Optimization",
+    "authors": [
+      "Jian Yang",
+      "Wei Zhang",
+      "Jiajun Wu",
+      "Junhang Cheng",
+      "Tuney Zheng",
+      "Fanglin Xu",
+      "Weicheng Gu",
+      "Lin Jing",
+      "Yaxin Du",
+      "Joseph Li",
+      "Yizhi Li",
+      "Yan Xing",
+      "Chuan Hao",
+      "Ran Tao",
+      "Ruihao Gong",
+      "Aishan Liu",
+      "Zhoujun Li",
+      "Mingjie Tang",
+      "Chenghua Lin",
+      "Siheng Chen",
+      "Wayne Xin Zhao",
+      "Xianglong Liu"
+    ],
+    "likes": 155,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.03144",
+    "date_collected": "2026-04-10T07:20:08.066797+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "산업 코드 세계 모델을 위한 인코더-32B-사고력",
+      "abstract": "칩 디자인, GPU 최적화 및 임베디드 시스템에 걸쳐 산업용 소프트웨어 개발은 엔지니어들이 하드웨어 제약과 타이밍 의미론에 대해 어떻게 사고하는지를 보여주는 전문가 추론 트레이스가 부족합니다. 본 논문에서는 산업용 코드 세계 모델 (ICWM)을 활용하여 에러 주도 사고 연쇄 (ECoT) 합성 프레임워크로부터의 데이터로 훈련된 인코더-32B-사고력을 제안합니다. 특히, ECoT는 환경 오류 피드백을 통해 다중 턴 대화에서 사고 내용을 종합함으로써 추론 체인을 생성하며, 오류 수정 과정을 명시적으로 모델링합니다. ICWM은 Verilog 시뮬레이션, GPU 프로파일링 등에서 도메인별 실행 트레이스로 훈련되어 코드가 하드웨어 동작에 어떻게 영향을 주는지의 원인 역학을 학습하고, 실제 컴파일 전에 실행 결과를 예측하여 자가 검증을 가능하게 합니다. 모든 합성된 추론 트레이스는 도메인 도구 체인을 통해 검증되어, 산업 과제의 자연적 추론 깊이 분포와 일치하는 훈련 데이터를 생성합니다. 라이브코드벤치 v5에서 14개 일반 (81.3%) 및 9개 산업 벤치마크 (CAD-Coder에서 84.0%, KernelBench에서 38.0%)의 평가 결과, 인코더-32B-사고력은 모든 도메인에서 최고 수준의 오픈소스 결과를 달성합니다."
+    },
+    "summary": "1. 산업 소프트웨어 개발에서 하드웨어 제약과 타이밍 의미론에 대한 전문가적 추론 트레이스 부족 문제를 해결하기 위해 인코더-32B-사고력 도입.\n2. 에러 주도 사고 연쇄 합성 프레임워크 데이터 및 산업용 코드 세계 모델 활용으로 추론 트레이스 생성 및 자가 검증 가능성 제공.\n3. 라이브코드벤치 및 산업 벤치마크 평가 결과, 인코더-32B-사고력이 모든 도메인에서 최상위 오픈소스 성과를 달성함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning",
+    "abstract": "Competitive programming remains one of the last few human strongholds in coding against AI. The best AI system to date still underperforms the best humans competitive programming: the most recent best result, Google's Gemini~3 Deep Think, attained 8th place even not being evaluated under live competition conditions. In this work, we introduce GrandCode, a multi-agent RL system designed for competitive programming. The capability of GrandCode is attributed to two key factors: (1) It orchestrates a variety of agentic modules (hypothesis proposal, solver, test generator, summarization, etc) and jointly improves them through post-training and online test-time RL; (2) We introduce Agentic GRPO specifically designed for multi-stage agent rollouts with delayed rewards and the severe off-policy drift that is prevalent in agentic RL. GrandCode is the first AI system that consistently beats all human participants in live contests of competitive programming: in the most recent three Codeforces live competitions, i.e., Round~1087 (Mar 21, 2026), Round~1088 (Mar 28, 2026), and Round~1089 (Mar 29, 2026), GrandCode placed first in all of them, beating all human participants, including legendary grandmasters. GrandCode shows that AI systems have reached a point where they surpass the strongest human programmers on the most competitive coding tasks.",
+    "authors": [
+      "DeepReinforce Team",
+      "Xiaoya Li",
+      "Xiaofei Sun",
+      "Guoyin Wang",
+      "Songqiao Su",
+      "Chris Shum",
+      "Jiwei Li"
+    ],
+    "likes": 147,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.02721",
+    "date_collected": "2026-04-10T07:20:08.068323+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "GrandCode: 경쟁 프로그래밍에서 에이전틱 강화 학습을 통해 그랜드마스터 수준 달성",
+      "abstract": "경쟁 프로그래밍은 인공지능에 대항해 코딩에서 인간의 강점 중 하나로 남아있습니다. 현재까지 최고의 AI 시스템도 최고의 인간 경쟁 프로그래밍 자에게 성능상 뒤처집니다. Google의 제미니~3 딥띵크가 최근 달성한 최고 성적은 생중계 조건에서도 평가받지 않은 상태에서 8위를 기록했습니다. 본 연구에서는 경쟁 프로그래밍을 위해 설계된 멀티-에이전트 강화 학습 시스템인 GrandCode를 소개합니다. GrandCode의 능력은 두 가지 주요 요인에 기인합니다: (1) 다양한 에이전틱 모듈을 조율하며 (가설 제안, 해결기, 테스트 생성기, 요약 등), 이를 사후 훈련 및 온라인 시험 시간 강화 학습을 통해 공동으로 개선합니다; (2) 우리는 멀티 스테이지 에이전트 롤아웃을 위해 설계된 에이전틱 GRPO를 소개합니다. 이는 에이전틱 강화 학습에서 효과 지연 보상과 흔하게 나타나는 심한 오프-폴리시 드리프트에 대비하도록 설계되었습니다. GrandCode는 경쟁 프로그래밍의 모든 생명 참가자를 꾸준히 이긴 최초의 AI 시스템입니다. 최근의 세 Codeforces 생중계 대회인 Round~1087 (2026년 3월 21일), Round~1088 (2026년 3월 28일), Round~1089 (2026년 3월 29일)에서 GrandCode는 전설적인 그랜드마스터들을 포함한 모든 인간 참가자를 이기며 1위를 차지했습니다. GrandCode는 AI 시스템이 가장 치열한 코딩 작업에서 가장 강력한 인간 프로그래머를 능가한 지점에 도달했음을 보여줍니다."
+    },
+    "summary": "1. GrandCode는 경쟁 프로그래밍을 위한 멀티-에이전트 강화 학습 시스템으로, 가설 제안, 해결기, 테스트 생성기, 요약 등 다양한 모듈을 조율하며 온라인 강화 학습을 통해 지속적으로 개선됩니다.\n2. GrandCode는 멀티 스테이지 에이전트 롤아웃을 위한 에이전틱 GRPO를 도입하여, 생명 대회에서 전설적인 그랜드마스터들을 포함한 모든 인간 참가자를 이기며 1위를 차지했습니다.\n3. AI 시스템 GrandCode는 가장 치열한 코딩 작업에서 가장 강력한 인간 프로그래머를 능가하여, 경쟁 프로그래밍 분야에서 최고 수준을 달성했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Self-Distilled RLVR",
+    "abstract": "On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This paradigm selects a larger model as the teacher to provide dense, fine-grained signals for each sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR), which only obtains sparse signals from verifiable outcomes in the environment. Recently, the community has explored on-policy self-distillation (OPSD), where the same model serves as both teacher and student, with the teacher receiving additional privileged information such as reference answers to enable self-evolution. This paper demonstrates that learning signals solely derived from the privileged teacher result in severe information leakage and unstable long-term training. Accordingly, we identify the optimal niche for self-distillation and propose RLSD (RLVR with Self-Distillation). Specifically, we leverage self-distillation to obtain token-level policy differences for determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable update directions from environmental feedback (e.g., response correctness). This enables RLSD to simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence ceiling and superior training stability.",
+    "authors": [
+      "Chenxu Yang",
+      "Chuanyu Qin",
+      "Qingyi Si",
+      "Minghui Chen",
+      "Naibin Gu",
+      "Dingyu Yao",
+      "Zheng Lin",
+      "Weiping Wang",
+      "Jiaqi Wang",
+      "Nan Duan"
+    ],
+    "likes": 145,
+    "published_date": "Apr 3",
+    "url": "https://huggingface.co/papers/2604.03128",
+    "date_collected": "2026-04-10T07:20:08.069976+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "자기 생성 강화학습 기반의 Self-Distilled RLVR",
+      "abstract": "온-폴리시 디스틸레이션(OPD)은 LLM 커뮤니티에서 인기 있는 훈련 패러다임이 되었습니다. RLVR(확인 가능 보상 강화학습)과 대조적으로, OPD는 각 샘플된 경로에 밀도 높고 세밀한 신호를 제공하기 위해 더 큰 모델을 선생님으로 선택합니다. 최근, 커뮤니티는 동일한 모델이 선생님과 학생 역할을 모두 수행하는 온-폴리시 자기 디스틸레이션(OPSD)을 탐구했습니다. 본 연구는 특권적 선생님으로부터 유도된 학습 신호만으로는 심각한 정보 누출과 불안정한 장기적 훈련을 초래한다는 것을 입증합니다. 이에 우리는 자기 생성 디스틸레이션의 최적적 용도를 찾아 RLSD(자기 생성 강화학습 기반의 RLVR)를 제안합니다. 구체적으로, 우리는 토큰-레벨 정책 차이를 얻기 위해 자기 생성 디스틸레이션을 활용하고, 환경 피드백(예: 응답 정확도)으로부터 신뢰할 수 있는 업데이트 방향을 도출하기 위해 RLVR을 계속 사용합니다. 이는 RLSD가 RLVR과 OPSD의 장점을 동시에 활용하여 보다 높은 수렴 천장과 우수한 훈련 안정성을 달성할 수 있게 합니다."
+    },
+    "summary": "1. 온-폴리시 디스틸레이션(OPD)은 밀도 높고 세밀한 신호를 제공하는 훈련 패러다임이며, 온-폴리시 자기 디스틸레이션(OPSD)은 동일한 모델로 자기 진화를 가능하게 합니다.\n2. 특권적 선생님의 학습 신호만으로는 정보 누출과 훈련 불안정성을 초래하며, 자기 생성 강화학습 기반의 RLSD는 이를 극복하는 최적의 솔루션을 제시합니다.\n3. RLSD는 선생님으로부터 정책 차이를, 환경 피드백으로부터 신뢰할 수 있는 업데이트 방향을 얻어 RLVR과 OPSD의 장점을 동시에 활용하여 훈련 안정성과 수렴력을 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale",
+    "abstract": "Current document parsing methods compete primarily on model architecture innovation, while systematic engineering of training data remains underexplored. Yet SOTA models of different architectures and parameter scales exhibit highly consistent failure patterns on the same set of hard samples, suggesting that the performance bottleneck stems from shared deficiencies in training data rather than architecture itself. Building on this finding, we present \\minerupro, which advances the state of the art solely through data engineering and training strategy optimization while keeping the 1.2B-parameter architecture of \\mineru completely fixed. At its core is a Data Engine co-designed around coverage, informativeness, and annotation accuracy: Diversity-and-Difficulty-Aware Sampling expands training data from under 10M to 65.5M samples while correcting distribution shift; Cross-Model Consistency Verification leverages output agreement among heterogeneous models to assess sample difficulty and generate reliable annotations; the Judge-and-Refine pipeline improves annotation quality for hard samples through render-then-verify iterative correction. A three-stage progressive training strategy -- large-scale pre-training, hard sample fine-tuning, and GRPO alignment -- sequentially exploits these data at different quality tiers. On the evaluation front, we fix element-matching biases in OmniDocBench~v1.5 and introduce a Hard subset, establishing the more discriminative OmniDocBench~v1.6 protocol. Without any architectural modification, \\minerupro achieves 95.69 on OmniDocBench~v1.6, improving over the same-architecture baseline by 2.71 points and surpassing all existing methods including models with over 200times more parameters.",
+    "authors": [
+      "Bin Wang",
+      "Tianyao He",
+      "Linke Ouyang",
+      "Fan Wu",
+      "Zhiyuan Zhao",
+      "Tao Chu",
+      "Yuan Qu",
+      "Zhenjiang Jin",
+      "Weijun Zeng",
+      "Ziyang Miao",
+      "Bangrui Xu",
+      "Junbo Niu",
+      "Mengzhang Cai",
+      "Jiantao Qiu",
+      "Qintong Zhang",
+      "Dongsheng Ma",
+      "Yuefeng Sun",
+      "Hejun Dong",
+      "Wenzheng Zhang",
+      "Jutao Xiao",
+      "Jiayong Shi",
+      "Pengyu Liao"
+    ],
+    "likes": 103,
+    "published_date": "Apr 6",
+    "url": "https://huggingface.co/papers/2604.04771",
+    "date_collected": "2026-04-10T07:20:08.072262+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "데이터 중심 문서 구문 분석의 한계를 넓히는 MinerU2.5-Pro",
+      "abstract": "현재 문서 구문 분석 방법은 주로 모델 구조의 혁신을 경쟁하는 반면, 훈련 데이터의 체계적 엔지니어링은 미개척된 상태입니다. 다양한 아키텍처와 매개변수 규모의 SOTA 모델들이 동일한 어려운 샘플 집합에서 매우 일관된 실패 패턴을 나타내는데, 이는 성능 병목이 아키텍처 자체보다는 훈련 데이터의 공통적인 결핍에서 비롯된다는 것을 시사합니다. 이러한 발견을 바탕으로 우리는 MinerU를 고정된 12억 매개변수 아키텍처를 유지하면서 데이터 엔지니어링과 훈련 전략 최적화를 통해 최신 기술을 발전시키는 \\minerupro를 제시합니다. 핵심 요소는 커버리지, 정보성, 주석 정확도를 고려한 데이터 엔진인 Diversity-and-Difficulty-Aware 샘플링을 중심으로 1000만 개 미만의 훈련 데이터를 6550만 개로 확장하고 분포 shift를 수정합니다; Cross-Model Consistency Verification은 이질적 모델들 간 출력 일치를 활용하여 샘플 어려움을 평가하고 신뢰할 수 있는 주석을 생성합니다; Judge-and-Refine 파이프라인은 어려운 샘플의 주석 품질을 render-then-verify 반복 수정을 통해 개선합니다. 세 단계의 점진적 훈련 전략 -- 대규모 사전 훈련, 어려운 샘플 섬세 조정, GRPO 정렬 --은 이러한 데이터를 다른 품질 계층에서 순차적으로 활용합니다. 평가 측면에서 OmniDocBench v1.5의 element-matching 편향을 수정하고 Hard 하위 모음을 소개하여 더 구별력이 높은 OmniDocBench v1.6 프로토콜을 설정합니다. \\minerupro는 아키텍처 수정 없이 OmniDocBench v1.6에서 95.69를 달성하여, 동일 아키텍처 기준보다 2.71 포인트 향상 및 200배 이상의 매개변수를 갖는 모델을 포함한 모든 기존 방법을 능가합니다."
+    },
+    "summary": "1. 기존 모델들이 어려운 샘플에서 공통적인 실패 패턴을 보이며, 이는 아키텍처보다는 훈련 데이터의 결핍에서 비롯된다.\n2. MinerU2.5-Pro는 데이터 엔지니어링과 훈련 전략 최적화를 통해 1.2B-매개변수 아키텍처를 유지하면서 최신 기술을 발전시킵니다.\n3. 다양성과 난이도 고려 샘플링, 다중 모델 일치 검증, 주석 개선을 통한 효율적인 훈련 전략은 어려운 샘플에 대한 성능을 향상시킵니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "Claw-Eval: Toward Trustworthy Evaluation of Autonomous Agents",
+    "abstract": "Large language models are increasingly deployed as autonomous agents executing multi-step workflows in real-world software environments. However, existing agent benchmarks suffer from three critical limitations: (1) trajectory-opaque grading that checks only final outputs, (2) underspecified safety and robustness evaluation, and (3) narrow modality coverage and interaction paradigms. We introduce Claw-Eval, an end-to-end evaluation suite addressing all three gaps. It comprises 300 human-verified tasks spanning 9 categories across three groups (general service orchestration, multimodal perception and generation, and multi-turn professional dialogue). Every agent action is recorded through three independent evidence channels (execution traces, audit logs, and environment snapshots), enabling trajectory-aware grading over 2,159 fine-grained rubric items. The scoring protocol evaluates Completion, Safety, and Robustness, reporting Average Score, Pass@k, and Pass^k across three trials to distinguish genuine capability from lucky outcomes. Experiments on 14 frontier models reveal that: (1) trajectory-opaque evaluation is systematically unreliable, missing 44% of safety violations and 13% of robustness failures that our hybrid pipeline catches; (2) controlled error injection primarily degrades consistency rather than peak capability, with Pass^3 dropping up to 24% while Pass@3 remains stable; (3) multimodal performance varies sharply, with most models performing poorer on video than on document or image, and no single model dominating across all modalities. Beyond benchmarking, Claw-Eval highlights actionable directions for agent development, shedding light on what it takes to build agents that are not only capable but reliably deployable.",
+    "authors": [
+      "Bowen Ye",
+      "Rang Li",
+      "Qibin Yang",
+      "Yuanxin Liu",
+      "Linli Yao",
+      "Hanglong Lv",
+      "Zhihui Xie",
+      "Chenxin An",
+      "Lei Li",
+      "Lingpeng Kong",
+      "Qi Liu",
+      "Zhifang Sui",
+      "Tong Yang"
+    ],
+    "likes": 102,
+    "published_date": "Apr 7",
+    "url": "https://huggingface.co/papers/2604.06132",
+    "date_collected": "2026-04-10T07:20:08.074057+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "Claw-Eval: 신뢰할 만한 자율 에이전트 평가를 향하여",
+      "abstract": "대형 언어 모델들이 현실 소프트웨어 환경에서 다단계 워크플로를 수행하는 자율 에이전트로써 점점 더 많이 채택되고 있습니다. 그러나 기존의 에이전트 벤치마크는 (1) 최종 출력만을 확인하는 관통할 수 없는 등급, (2) 안전 및 견고성 평가의 미명시성, (3) 좁은 다중 체계 및 상호 작용 패러다임과 같은 세 가지의 중요한 한계를 갖고 있습니다. 우리는 세 가지 빈 틈을 모두 다루는 전체평가 스위트인 Claw-Eval을 소개합니다."
+    },
+    "summary": "1. Claw-Eval은 최종 출력물만 확인하는 관통할 수 없는 등급, 안전 및 견고성 평가의 미명시성, 좁은 다중 체계 및 상호 작용 패러다임과 같은 문제점을 해결하기 위한 종합평가 도구이다.\n2. Claw-Eval은 300가지 인간 검증 작업과 9가지 범주, 3개 그룹을 포함하며, 에이전트 작업의 모든 행동을 세 가지 독립 증거 채널을 통해 기록하여 2,159개의 세부 루브릭 항목을 통한 관통된 등급을 가능하게 한다.\n3. 실험 결과에 따르면, Claw-Eval은 각 모달리티에서의 성능 차이를 드러내며, 대부분의 모델이 동영상에서는 성능이 떨어지고 문서나 이미지에서의 성능이 낮았으며, 특정 모델이 모든 모델에 걸쳐 우세하지 않음을 보여준다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression",
+    "abstract": "Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leading KV cache compression methods estimate KV importance using attention scores from recent post-RoPE queries. However, queries rotate with position during RoPE, making representative queries very few, leading to poor top-key selection and unstable reasoning. To avoid this issue, we turn to the pre-RoPE space, where we observe that Q and K vectors are highly concentrated around fixed non-zero centers and remain stable across positions -- Q/K concentration. We show that this concentration causes queries to preferentially attend to keys at specific distances (e.g., nearest keys), with the centers determining which distances are preferred via a trigonometric series. Based on this, we propose TriAttention to estimate key importance by leveraging these centers. Via the trigonometric series, we use the distance preference characterized by these centers to score keys according to their positions, and also leverage Q/K norms as an additional signal for importance estimation. On AIME25 with 32K-token generation, TriAttention matches Full Attention reasoning accuracy while achieving 2.5x higher throughput or 10.7x KV memory reduction, whereas leading baselines achieve only about half the accuracy at the same efficiency. TriAttention enables OpenClaw deployment on a single consumer GPU, where long context would otherwise cause out-of-memory with Full Attention.",
+    "authors": [
+      "Weian Mao",
+      "Xi Lin",
+      "Wei Huang",
+      "Yuxin Xie",
+      "Tianfu Fu",
+      "Bohan Zhuang",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "likes": 90,
+    "published_date": "Apr 6",
+    "url": "https://huggingface.co/papers/2604.04921",
+    "date_collected": "2026-04-10T07:20:08.075629+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "TriAttention: 삼각 함수화된 KV 압축을 통한 효율적인 장거리 추론",
+      "abstract": "대규모 언어 모델(LLMs)에서의 확장된 추론은 KV 캐시 메모리 병목 현상을 유발합니다. 선행 RoPE(Embedding) 쿼리로부터 지난 주요한 위치 결합점에 대한 어텐션 점수를 추정하는 주요 KV 캐시 압축 방법들은 대부분 대표적인 쿼리가 매우 소수이며, 상위 키 선택이 미흡하고 추론이 불안정해지는 문제가 있습니다. 이 문제를 회피하기 위해, 우리는 선행 RoPE 공간으로 주목을 돌립니다. 여기서 우리는 Q 및 K 벡터가 고정된 0이 아닌 중심 주위에 높은 집중도를 갖고 있으며 위치에 따라 안정적인 상태임을 관찰합니다 -- Q/K 집중도. 우리는 이 집중도가 쿼리가 특정 거리(예: 인접한 키)에 우선적으로 주목하도록 유도하며, 중심은 삼각함수 시리즈를 통해 어떤 거리를 선호하는지를 결정합니다. 이를 바탕으로, 우리는 TriAttention을 제안하여 중심을 활용해 키 중요도를 추정합니다. 삼각함수 시리즈를 통해, 이러한 중심에 의해 특징 지어지는 거리 선호도를 이용하여 키를 위치에 따라 점수 매기고, 중요도 추정을 위해 Q/K 노름도 추가적인 신호로 활용합니다. 32K 토큰 생성을 통한 AIME25에서, TriAttention은 풀 어텐션 추론 정확도를 달성하면서 2.5배 높은 처리량 또는 10.7배 KV 메모리 감소를 달성하며, 선도적인 기준은 같은 효율성에서 약 절반 정도의 정확도만 달성합니다. TriAttention은 풀 어텐션에서는 메모리 부족으로 인해 가능하지 않았던 단일 소비자 GPU에 OpenClaw 배포가 가능하게 합니다."
+    },
+    "summary": "1. TriAttention은 삼각함수 시리즈를 활용하여 중심을 이용해 키 중요도를 추정하여, Full Attention 추론 정확도를 유지하면서 처리량을 늘리거나 메모리를 크게 줄이는 성과를 보여줍니다.\n2. 기존 방법론의 경우 TriAttention과 비교했을 때, 같은 효율성에서 약 반 정도의 정확도만을 달성할 뿐입니다.\n3. TriAttention은 긴 문맥에서도 메모리 부족 문제를 해결하며 단일 소비자 GPU에서의 배포가 가능하게 합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models",
+    "abstract": "Vision-Language-Action (VLA) models achieve strong performance in robotic manipulation by leveraging pre-trained vision-language backbones. However, in downstream robotic settings, they are typically fine-tuned with limited data, leading to overfitting to specific instruction formulations and leaving robustness to paraphrased instructions underexplored. To study this gap, we introduce LIBERO-Para, a controlled benchmark that independently varies action expressions and object references for fine-grained analysis of linguistic generalization. Across seven VLA configurations (0.6B-7.5B), we observe consistent performance degradation of 22-52 pp under paraphrasing. This degradation is primarily driven by object-level lexical variation: even simple synonym substitutions cause large drops, indicating reliance on surface-level matching rather than semantic grounding. Moreover, 80-96% of failures arise from planning-level trajectory divergence rather than execution errors, showing that paraphrasing disrupts task identification. Binary success rate treats all paraphrases equally, obscuring whether models perform consistently across difficulty levels or rely on easier cases. To address this, we propose PRIDE, a metric that quantifies paraphrase difficulty using semantic and syntactic factors. Our benchmark and corresponding code are available at: https://github.com/cau-hai-lab/LIBERO-Para",
+    "authors": [
+      "Chanyoung Kim",
+      "Minwoo Kim",
+      "Minseok Kang",
+      "Hyunwoo Kim",
+      "Dahuin Jung"
+    ],
+    "likes": 75,
+    "published_date": "Mar 30",
+    "url": "https://huggingface.co/papers/2603.28301",
+    "date_collected": "2026-04-10T07:20:08.077038+09:00",
+    "week": "2026-W15",
+    "translation": {
+      "title": "LIBERO-Para: VLA 모델에서 패러프레이즈 견고성에 대한 진단적 벤치마크 및 측정 지표",
+      "abstract": "Vision-Language-Action (VLA) 모델은 사전 훈련된 비전-언어 백본을 활용하여 로봇 조작에서 강력한 성능을 달성합니다. 그러나 하류 로봇 설정에서는 일반적으로 제한된 데이터로 미세 조정되어 특정 지시 표현에 과적합되어 패러프레이즈된 지침의 견고성이 충분히 탐구되지 않았습니다. 이 간극을 연구하기 위해, 우리는 LIBERO-Para를 소개합니다. 이는 액션 표현과 객체 참조를 독립적으로 변화시켜 언어 일반화의 세부 분석을 위한 제어된 벤치마크입니다. 7가지 VLA 구성 (0.6B-7.5B)에서, 우리는 패러프레이징에 따른 22-52 pp의 일관된 성능 저하를 관찰했습니다. 이 저하는 주로 객체 수준의 어휘적 변화에 의해 주도되며, 심지어 간단한 동의어 대체라도 큰 하락을 유발하는데 이는 의미론적 기반보다는 표면 수준 일치에 의존함을 보여줍니다. 게다가, 실패의 80-96%가 실행 오류보다는 계획 수준의 경로 이탈로 인해 발생하는 것으로 나타났습니다. 이것은 패러프레이징이 작업 식별을 방해함을 보여주며, 이진 성공률은 모든 패러프레이즈를 동등하게 처리하여 모델이 어려움 수준에 따라 일관되게 수행하는지 또는 쉬운 경우에 의존하는지를 명확히하지 못합니다. 이를 해결하기 위해 PRIDE 지표를 제안하여 의미론적 및 문법적 요인을 사용하여 패러프레이즈 어려움을 측정합니다. 우리의 벤치마크와 해당 코드는 다음에서 이용 가능합니다: https://github.com/cau-hai-lab/LIBERO-Para"
+    },
+    "summary": "1. VLA 모델들은 패러프레이즈된 지침에 대한 견고성 부족으로 인해 성능 저하가 나타난다.\n2. 이러한 성능 저하는 대부분 객체 수준의 어휘적 변화로 인한 것으로, 동의어 대체조차도 큰 영향을 준다.\n3. 모델의 실패는 주로 계획 수준의 경로 이탈 때문에 발생하며, PRIDE 지표를 통해 패러프레이즈 난이도를 측정하여 해결 방안을 제안한다.",
+    "categories": [
+      "Multimodal",
+      "Robotics"
+    ]
+  }
+]

@@ -1,0 +1,129 @@
+=== Paper Collection Started at Sun Mar 15 22:11:13 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W12
+URL: https://huggingface.co/papers/week/2026-W12
+Found 10 papers in weekly view
+Fetching likes for: Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning
+Fetching likes for: Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing
+Fetching likes for: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Fetching likes for: OpenClaw-RL: Train Any Agent Simply by Talking
+Fetching likes for: Lost in Stories: Consistency Bugs in Long Story Generation by LLMs
+Fetching likes for: Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence
+Fetching likes for: Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training
+Fetching likes for: Flash-KMeans: Fast and Memory-Efficient Exact K-Means
+Fetching likes for: Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs
+Fetching likes for: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Selected top 10 papers by likes:
+1. Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning (156 likes)
+2. Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing (136 likes)
+3. Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders (104 likes)
+4. OpenClaw-RL: Train Any Agent Simply by Talking (94 likes)
+5. Lost in Stories: Consistency Bugs in Long Story Generation by LLMs (82 likes)
+6. Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence (77 likes)
+7. Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training (73 likes)
+8. Flash-KMeans: Fast and Memory-Efficient Exact K-Means (65 likes)
+9. Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs (61 likes)
+10. BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning (54 likes)
+Found abstract: Large language models (LLMs) typically receive diverse natural language (NL) feedback through intera...
+Processed paper: Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning
+Found abstract: Leveraging the priors of 2D diffusion models for 3D editing has emerged as a promising paradigm. How...
+Processed paper: Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing
+Found abstract: Vision Language Model (VLM) development has largely relied on scaling model size, which hinders depl...
+Processed paper: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Found abstract: Every agent interaction generates a next-state signal, namely the user reply, tool output, terminal ...
+Processed paper: OpenClaw-RL: Train Any Agent Simply by Talking
+Found abstract: What happens when a storyteller forgets its own story? Large Language Models (LLMs) can now generate...
+Processed paper: Lost in Stories: Consistency Bugs in Long Story Generation by LLMs
+Found abstract: The pursuit of spatial intelligence fundamentally relies on access to large-scale, fine-grained 3D d...
+Processed paper: Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence
+Found abstract: Humans perceive and understand real-world spaces through a stream of visual observations. Therefore,...
+Processed paper: Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training
+Found abstract: k-means has historically been positioned primarily as an offline processing primitive, typically use...
+Processed paper: Flash-KMeans: Fast and Memory-Efficient Exact K-Means
+Found abstract: While reasoning in LLMs plays a natural role in math, code generation, and multi-hop factual questio...
+Processed paper: Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs
+Found abstract: Proximal constraints are fundamental to the stability of the Large Language Model reinforcement lear...
+Processed paper: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 156  ->  65
+Update date_collected: 2026-03-16T07:11:22.029301+09:00  ->  2026-03-15T07:09:58.998128+09:00
+
+Processing paper 2/10
+Title: Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing
+Paper already exists, checking if translation is complete...
+Update likes: 136  ->  136
+Update date_collected: 2026-03-16T07:11:22.030714+09:00  ->  2026-03-15T07:09:58.990127+09:00
+
+Processing paper 3/10
+Title: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  104
+Update date_collected: 2026-03-16T07:11:22.031942+09:00  ->  2026-03-15T07:09:58.991418+09:00
+
+Processing paper 4/10
+Title: OpenClaw-RL: Train Any Agent Simply by Talking
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  90
+Update date_collected: 2026-03-16T07:11:22.033057+09:00  ->  2026-03-15T07:09:58.992607+09:00
+
+Processing paper 5/10
+Title: Lost in Stories: Consistency Bugs in Long Story Generation by LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 82  ->  81
+Update date_collected: 2026-03-16T07:11:22.034192+09:00  ->  2026-03-15T07:09:58.993797+09:00
+
+Processing paper 6/10
+Title: Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 77  ->  77
+Update date_collected: 2026-03-16T07:11:22.035832+09:00  ->  2026-03-15T07:09:58.995408+09:00
+
+Processing paper 7/10
+Title: Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  68
+Update date_collected: 2026-03-16T07:11:22.037376+09:00  ->  2026-03-15T07:09:58.996756+09:00
+
+Processing paper 8/10
+Title: Flash-KMeans: Fast and Memory-Efficient Exact K-Means
+Paper already exists, checking if translation is complete...
+Update likes: 65  ->  64
+Update date_collected: 2026-03-16T07:11:22.038846+09:00  ->  2026-03-15T07:09:58.999609+09:00
+
+Processing paper 9/10
+Title: Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  59
+Update date_collected: 2026-03-16T07:11:22.039993+09:00  ->  2026-03-15T07:09:59.000811+09:00
+
+Processing paper 10/10
+Title: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  54
+Update date_collected: 2026-03-16T07:11:22.041180+09:00  ->  2026-03-15T07:09:59.002034+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W12.json...
+
+Updating Notion database...
+Updating paper: 강화 학습에서 그룹 수준 자연어 피드백으로 탐사 부트스트래핑 (likes: 65 -> 156)
+Paper already exists with same likes count: 기하학 안내 강화 학습을 통한 다중 뷰 일관성 있는 3D 장면 편집
+Paper already exists with same likes count: 펭귄-VL: LLM 기반 비전 인코더의 효율 한계 탐구
+Updating paper: 음성 명령만으로 어떤 에이전트든 간단히 훈련하기: OpenClaw-RL (likes: 90 -> 94)
+Updating paper: 이야기에서 길을 잃다: LLM에 의한 장편 이야기 생성 중 일관성 버그 (likes: 81 -> 82)
+Paper already exists with same likes count: 홀리-스페이셜: 비디오 스트림을 전체적인 3D 공간 지능으로 진화시키다
+Updating paper: 공간-TTT: 테스트 시간 훈련을 통한 스트리밍 시각 기반 공간 지능 (likes: 68 -> 73)
+Updating paper: Flash-KMeans: 빠르고 메모리 효율적인 정확한 K-Means (likes: 64 -> 65)
+Updating paper: 추론을 통한 기억: LLMs에서 매개 지식 해제되는 방법 (likes: 59 -> 61)
+Paper already exists with same likes count: BandPO: 신뢰 영역과 비율 클리핑을 연결하는 확률 인식한 경계를 통한 LLM 강화 학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Mar 15 22:12:48 UTC 2026 ===
+

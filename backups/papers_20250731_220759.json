@@ -1,0 +1,352 @@
+[
+  {
+    "title": "Agentic Reinforced Policy Optimization",
+    "abstract": "Large-scale reinforcement learning with verifiable rewards (RLVR) has\ndemonstrated its effectiveness in harnessing the potential of large language\nmodels (LLMs) for single-turn reasoning tasks. In realistic reasoning\nscenarios, LLMs can often utilize external tools to assist in task-solving\nprocesses. However, current RL algorithms inadequately balance the models'\nintrinsic long-horizon reasoning capabilities and their proficiency in\nmulti-turn tool interactions. To bridge this gap, we propose Agentic Reinforced\nPolicy Optimization (ARPO), a novel agentic RL algorithm tailored for training\nmulti-turn LLM-based agents. Through preliminary experiments, we observe that\nLLMs tend to exhibit highly uncertain behavior, characterized by an increase in\nthe entropy distribution of generated tokens, immediately following\ninteractions with external tools. Motivated by this observation, ARPO\nincorporates an entropy-based adaptive rollout mechanism, dynamically balancing\nglobal trajectory sampling and step-level sampling, thereby promoting\nexploration at steps with high uncertainty after tool usage. By integrating an\nadvantage attribution estimation, ARPO enables LLMs to internalize advantage\ndifferences in stepwise tool-use interactions. Our experiments across 13\nchallenging benchmarks in computational reasoning, knowledge reasoning, and\ndeep search domains demonstrate ARPO's superiority over trajectory-level RL\nalgorithms. Remarkably, ARPO achieves improved performance using only half of\nthe tool-use budget required by existing methods, offering a scalable solution\nfor aligning LLM-based agents with real-time dynamic environments. Our code and\ndatasets are released at https://github.com/dongguanting/ARPO",
+    "authors": [
+      "Guanting Dong",
+      "Hangyu Mao",
+      "Kai Ma",
+      "Licheng Bao",
+      "Yifei Chen",
+      "Zhongyuan Wang",
+      "Zhongxia Chen",
+      "Jiazhen Du",
+      "Huiyang Wang",
+      "Fuzheng Zhang",
+      "Guorui Zhou",
+      "Yutao Zhu",
+      "Ji-Rong Wen",
+      "Zhicheng Dou"
+    ],
+    "likes": 98,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2507.19849",
+    "date_collected": "2025-07-31T07:08:22.263505+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "적극적 보강 정책 최적화",
+      "abstract": "대규모 보상 검증을 통한 강화 학습(RLVR)은 대형 언어 모델(LLMs)의 잠재력을 활용하여 단일 턴 추론 작업에서 효과를 입증했습니다. 현실적인 추론 시나리오에서 LLMs는 종종 외부 도구를 활용하여 작업 해결에 도움을 받습니다. 하지만 현재의 RL 알고리즘은 모델의 내재적인 장기간 추론 능력과 다중 턴 도구 상호작용에서의 능숙함을 불균형하게 다루고 있습니다. 이 간극을 줄이기 위해, 우리는 적극적 보강 정책 최적화(ARPO)를 제안합니다. 이는 다중 턴 LLM 기반 에이전트를 훈련하기 위해 맞춤형된 새로운 적극적인 RL 알고리즘입니다. 초기 실험을 통해, LLMs가 외부 도구와 상호작용한 후 생성된 토큰 엔트로피 분포가 증가하는 것으로 나타났습니다. 이 관찰에 기반하여 ARPO는 엔트로피를 기반으로 한 적응형 롤아웃 메커니즘을 통합하여 높은 불확실성을 가진 단계에서의 탐색을 촉진합니다. 이를 통해 ARPO는 단계별 도구 사용 상호작용에서 이점 차이를 내재화하여 LLMs가 이점을 추정할 수 있게 합니다. 컴퓨테이셔널 추론, 지식 추론 및 심층 탐색 도메인의 13가지 어려운 벤치마크를 통해 우리의 실험은 ARPO가 경로 수준의 RL 알고리즘보다 우수함을 입증합니다. 놀랍게도, 기존 방법에 필요한 도구 사용 예산의 절반만 사용하여 개선된 성능을 달성하며, 실시간 동적 환경에 맞춘 LLM 기반 에이전트의 확장 가능한 솔루션을 제공합니다. 우리의 코드와 데이터셋은 https://github.com/dongguanting/ARPO에서 공개되어 있습니다."
+    },
+    "summary": "1. 새로운 적극적 강화 학습 알고리즘인 ARPO는 다중 턴 LLM 기반 에이전트를 훈련하기 위해 엔트로피 기반의 적응 롤아웃 메커니즘을 활용하여 탐색을 촉진합니다.\n2. ARPO는 이점 차이 추정을 통해 LLMs가 다중 턴 도구 사용 상호작용에서 이점을 내재화할 수 있도록 합니다.\n3. 실험 결과, ARPO는 기존 RL 알고리즘보다 효율적으로 동작하여, 실시간 동적 환경에서 LLM 기반 에이전트의 성능을 개선합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Computational Reasoning"
+    ]
+  },
+  {
+    "title": "A Survey of Self-Evolving Agents: On Path to Artificial Super\n  Intelligence",
+    "abstract": "Large Language Models (LLMs) have demonstrated strong capabilities but remain\nfundamentally static, unable to adapt their internal parameters to novel tasks,\nevolving knowledge domains, or dynamic interaction contexts. As LLMs are\nincreasingly deployed in open-ended, interactive environments, this static\nnature has become a critical bottleneck, necessitating agents that can\nadaptively reason, act, and evolve in real time. This paradigm shift -- from\nscaling static models to developing self-evolving agents -- has sparked growing\ninterest in architectures and methods enabling continual learning and\nadaptation from data, interactions, and experiences. This survey provides the\nfirst systematic and comprehensive review of self-evolving agents, organized\naround three foundational dimensions -- what to evolve, when to evolve, and how\nto evolve. We examine evolutionary mechanisms across agent components (e.g.,\nmodels, memory, tools, architecture), categorize adaptation methods by stages\n(e.g., intra-test-time, inter-test-time), and analyze the algorithmic and\narchitectural designs that guide evolutionary adaptation (e.g., scalar rewards,\ntextual feedback, single-agent and multi-agent systems). Additionally, we\nanalyze evaluation metrics and benchmarks tailored for self-evolving agents,\nhighlight applications in domains such as coding, education, and healthcare,\nand identify critical challenges and research directions in safety,\nscalability, and co-evolutionary dynamics. By providing a structured framework\nfor understanding and designing self-evolving agents, this survey establishes a\nroadmap for advancing adaptive agentic systems in both research and real-world\ndeployments, ultimately shedding lights to pave the way for the realization of\nArtificial Super Intelligence (ASI), where agents evolve autonomously,\nperforming at or beyond human-level intelligence across a wide array of tasks.",
+    "authors": [
+      "Huan-ang Gao",
+      "Jiayi Geng",
+      "Wenyue Hua",
+      "Mengkang Hu",
+      "Xinzhe Juan",
+      "Hongzhang Liu",
+      "Shilong Liu",
+      "Jiahao Qiu",
+      "Xuan Qi",
+      "Yiran Wu",
+      "Hongru Wang",
+      "Han Xiao",
+      "Yuhang Zhou",
+      "Shaokun Zhang",
+      "Jiayi Zhang",
+      "Jinyu Xiang",
+      "Yixiong Fang",
+      "Qiwen Zhao",
+      "Dongrui Liu",
+      "Qihan Ren",
+      "Cheng Qian",
+      "Zhenghailong Wang"
+    ],
+    "likes": 63,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2507.21046",
+    "date_collected": "2025-07-31T07:08:22.265417+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "스스로 진화하는 에이전트 조사: 인공 초지능으로의 길",
+      "abstract": "대형 언어 모델(Large Language Models, LLMs)은 강력한 성능을 보여주지만 기본적으로 정적이며 새로운 작업, 진화하는 지식 영역 또는 동적 상호작용 문맥에 맞게 내부 매개변수를 적응시키지 못합니다. LLMs가 점점 개방적이고 상호작용적인 환경에서 사용됨에 따라 이 정적 성격은 적응적으로 사고하고 행동하며 실시간으로 진화할 수 있는 에이전트가 필요한 중요한 병목 현상이 되어왔습니다. 이러한 패러다임 변화 - 정적 모델 확장에서 스스로 진화하는 에이전트 개발로의 전환 -은 데이터, 상호작용 및 경험으로부터 지속적인 학습과 적응을 가능케 하는 아키텍처 및 방법에 대한 증가하는 관심을 불러일으켰습니다. 본 조사는 스스로 진화하는 에이전트에 대한 첫 번째 체계적이고 포괄적인 검토를 제공하며 세 가지 기본적인 차원인 무엇을 진화시킬지, 언제 진화시킬지, 그리고 어떻게 진화시킬지를 중심으로 구성되어 있습니다."
+    },
+    "summary": "1. 대형 언어 모델은 새로운 작업, 지식 영역 또는 동적 상호작용에 적응할 수 없으며, 이에 대한 대안으로 스스로 진화하는 에이전트의 필요성이 대두되고 있다.\n2. 이 조사는 스스로 진화하는 에이전트의 진화 기준, 시점 및 방법을 토대로 에이전트 구성 요소(모델, 메모리, 도구, 아키텍처), 적응 방법(시험 시간 내, 시험 시간 간), 진화적 적응을 이끄는 알고리즘적 및 아키텍처적 설계(스칼라 보상, 텍스트 피드백, 단일 에이전트 및 다중 에이전트 시스템)을 분석하고 있다.\n3. 또한 이 조사는 스스로 진화하는 에이전트를 위한 평가 지표 및 벤치마크, 코딩, 교육, 건강 관리와 같은 분야에서의 응용, 안정성, 확장성, 상호 진화 역동성에 대한 중요한 도전 과제 및 연구 방향을 식별하고 있다.",
+    "categories": [
+      "LLM",
+      "Artificial Super Intelligence (ASI)",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "HunyuanWorld 1.0: Generating Immersive, Explorable, and Interactive 3D\n  Worlds from Words or Pixels",
+    "abstract": "Creating immersive and playable 3D worlds from texts or images remains a\nfundamental challenge in computer vision and graphics. Existing world\ngeneration approaches typically fall into two categories: video-based methods\nthat offer rich diversity but lack 3D consistency and rendering efficiency, and\n3D-based methods that provide geometric consistency but struggle with limited\ntraining data and memory-inefficient representations. To address these\nlimitations, we present HunyuanWorld 1.0, a novel framework that combines the\nbest of both worlds for generating immersive, explorable, and interactive 3D\nscenes from text and image conditions. Our approach features three key\nadvantages: 1) 360{\\deg} immersive experiences via panoramic world proxies; 2)\nmesh export capabilities for seamless compatibility with existing computer\ngraphics pipelines; 3) disentangled object representations for augmented\ninteractivity. The core of our framework is a semantically layered 3D mesh\nrepresentation that leverages panoramic images as 360{\\deg} world proxies for\nsemantic-aware world decomposition and reconstruction, enabling the generation\nof diverse 3D worlds. Extensive experiments demonstrate that our method\nachieves state-of-the-art performance in generating coherent, explorable, and\ninteractive 3D worlds while enabling versatile applications in virtual reality,\nphysical simulation, game development, and interactive content creation.",
+    "authors": [
+      "HunyuanWorld Team",
+      "Zhenwei Wang",
+      "Yuhao Liu",
+      "Junta Wu",
+      "Zixiao Gu",
+      "Haoyuan Wang",
+      "Xuhui Zuo",
+      "Tianyu Huang",
+      "Wenhuan Li",
+      "Sheng Zhang",
+      "Yihang Lian",
+      "Yulin Tsai",
+      "Lifu Wang",
+      "Sicong Liu",
+      "Puhua Jiang",
+      "Xianghui Yang",
+      "Dongyuan Guo",
+      "Yixuan Tang",
+      "Xinyue Mao",
+      "Jiaao Yu",
+      "Junlin Yu",
+      "Jihong Zhang"
+    ],
+    "likes": 61,
+    "published_date": "Jul 29",
+    "url": "https://huggingface.co/papers/2507.21809",
+    "date_collected": "2025-07-31T07:08:22.267339+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "HunyuanWorld 1.0: 단어 또는 픽셀에서 입체적이고 탐험 가능하며 상호작용적인 3D 세계 생성",
+      "abstract": "텍스트 또는 이미지로부터 몰입적이고 플레이 가능한 3D 세계를 만드는 것은 컴퓨터 비전 및 그래픽스에서 중요한 과제입니다. 기존의 세계 생성 방법은 일반적으로 다양성을 제공하지만 3D 일관성과 렌더링 효율성이 부족한 비디오 기반 방법과 기하적 일관성을 제공하지만 훈련 데이터가 제한되고 메모리 비효율적인 표현으로 고심하는 3D 기반 방법 두 가지로 나뉩니다. 이러한 한계를 극복하기 위해 우리는 텍스트 및 이미지 조건에서 입체적이고 탐험 가능하며 상호작용적인 3D 장면을 생성하기 위해 최고의 접근법을 결합한 새로운 프레임워크인 훈야안월드 1.0을 제안합니다. 우리의 방법론은 1) 360도 몰입형 경험을 위한 원형 세계 프록시; 2) 기존 컴퓨터 그래픽스 파이프라인과의 완벽한 호환을 위한 메시 익스포트 기능; 3) 증강 상호작용을 위한 분리된 객체 표현이라는 세 가지 주요 장점을 제공합니다. 우리의 프레임워크의 핵심은 의미론적으로 층화된 3D 메시 표현으로, 360도 원형 이미지를 활용하여 의미론적인 인식 세계 분해 및 재구성을 위한 원형 세계 프록시로 다양한 3D 세계의 생성을 가능하게 합니다. 방대한 실험을 통해 우리의 방법은 일관적이고 탐험 가능하며 상호작용적인 3D 세계를 생성하는 데 성공하면서 가상 현실, 물리 시뮬레이션, 게임 개발 및 대화형 콘텐츠 작성에 다양하게 활용할 수 있음을 입증합니다."
+    },
+    "summary": "1. 텍스트나 이미지를 기반으로 고유한 3D 세계를 생성하는데 새로운 방법론인 훈야안월드 1.0 제안.\n2. 원형 세계 프록시를 활용하여 360도 몰입형 경험과 기존 컴퓨터 그래픽스와의 호환성을 제공.\n3. 의미론적으로 층화된 3D 메시 표현으로 다양한 3D 세계 생성 및 가상 현실, 게임 개발 등 다양한 분야에 활용 가능.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World\n  Shorts",
+    "abstract": "Real-world user-generated short videos, especially those distributed on\nplatforms such as WeChat Channel and TikTok, dominate the mobile internet.\nHowever, current large multimodal models lack essential temporally-structured,\ndetailed, and in-depth video comprehension capabilities, which are the\ncornerstone of effective video search and recommendation, as well as emerging\nvideo applications. Understanding real-world shorts is actually challenging due\nto their complex visual elements, high information density in both visuals and\naudio, and fast pacing that focuses on emotional expression and viewpoint\ndelivery. This requires advanced reasoning to effectively integrate multimodal\ninformation, including visual, audio, and text. In this work, we introduce\nARC-Hunyuan-Video, a multimodal model that processes visual, audio, and textual\nsignals from raw video inputs end-to-end for structured comprehension. The\nmodel is capable of multi-granularity timestamped video captioning and\nsummarization, open-ended video question answering, temporal video grounding,\nand video reasoning. Leveraging high-quality data from an automated annotation\npipeline, our compact 7B-parameter model is trained through a comprehensive\nregimen: pre-training, instruction fine-tuning, cold start, reinforcement\nlearning (RL) post-training, and final instruction fine-tuning. Quantitative\nevaluations on our introduced benchmark ShortVid-Bench and qualitative\ncomparisons demonstrate its strong performance in real-world video\ncomprehension, and it supports zero-shot or fine-tuning with a few samples for\ndiverse downstream applications. The real-world production deployment of our\nmodel has yielded tangible and measurable improvements in user engagement and\nsatisfaction, a success supported by its remarkable efficiency, with stress\ntests indicating an inference time of just 10 seconds for a one-minute video on\nH20 GPU.",
+    "authors": [
+      "Yuying Ge",
+      "Yixiao Ge",
+      "Chen Li",
+      "Teng Wang",
+      "Junfu Pu",
+      "Yizhuo Li",
+      "Lu Qiu",
+      "Jin Ma",
+      "Lisheng Duan",
+      "Xinyu Zuo",
+      "Jinwen Luo",
+      "Weibo Gu",
+      "Zexuan Li",
+      "Xiaojing Zhang",
+      "Yangyu Tao",
+      "Han Hu",
+      "Di Wang",
+      "Ying Shan"
+    ],
+    "likes": 53,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2507.20939",
+    "date_collected": "2025-07-31T07:08:22.269058+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "ARC-Hunyuan-Video-7B: 현실 세계 단편 영상의 구조화된 이해",
+      "abstract": "WeChat 채널이나 TikTok과 같은 플랫폼에서 배포되는 현실 세계 사용자 생성 단편 영상은 모바일 인터넷을 지배한다. 현재의 대형 멀티모달 모델은 효과적인 영상 검색, 추천, 그리고 새로운 영상 응용의 기반이 되는 필수적인 시간적 구조화, 상세 및 심층적인 영상 이해 능력을 부족하다. 본 연구에서는 비디오 각주 및 요약, 영상 질문에 대한 답변, 시간적 영상 위치 지정, 그리고 영상 추론을 위한 ARC-Hunyuan-Video라는 멀티모달 모델을 소개한다."
+    },
+    "summary": "1. 현재의 대형 멀티모달 모델은 현실 세계 단편 영상의 복잡한 시각적 요소, 높은 정보 밀도, 그리고 감정 표현 및 시점 전달에 초점을 맞춘 빠른 편집으로 인해 실제 이해가 어렵다.\n2. ARC-Hunyuan-Video는 비디오 입력의 시각적, 오디오, 텍스트 신호를 처리하여 구조화된 이해를 위해 시간별 비디오 자막 및 요약, 개방형 비디오 질문에 대한 답변, 시간적 비디오 위치 지정 및 비디오 추론을 수행하는 능력을 갖추고 있다.\n3. 높은 품질의 자동 주석 파이프라인 데이터를 활용한 이 7B-파라미터 모델은 실제 세계 영상 이해에서 강력한 성능을 보여주며, 다양한 하위 응용에 대한 제로샷 또는 소량의 샘플을 사용한 파인튜닝을 지원한다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Deep Researcher with Test-Time Diffusion",
+    "abstract": "Deep research agents, powered by Large Language Models (LLMs), are rapidly\nadvancing; yet, their performance often plateaus when generating complex,\nlong-form research reports using generic test-time scaling algorithms. Drawing\ninspiration from the iterative nature of human research, which involves cycles\nof searching, reasoning, and revision, we propose the Test-Time Diffusion Deep\nResearcher (TTD-DR). This novel framework conceptualizes research report\ngeneration as a diffusion process. TTD-DR initiates this process with a\npreliminary draft, an updatable skeleton that serves as an evolving foundation\nto guide the research direction. The draft is then iteratively refined through\na \"denoising\" process, which is dynamically informed by a retrieval mechanism\nthat incorporates external information at each step. The core process is\nfurther enhanced by a self-evolutionary algorithm applied to each component of\nthe agentic workflow, ensuring the generation of high-quality context for the\ndiffusion process. This draft-centric design makes the report writing process\nmore timely and coherent while reducing information loss during the iterative\nsearch process. We demonstrate that our TTD-DR achieves state-of-the-art\nresults on a wide array of benchmarks that require intensive search and\nmulti-hop reasoning, significantly outperforming existing deep research agents.",
+    "authors": [
+      "Rujun Han",
+      "Yanfei Chen",
+      "Zoey CuiZhu",
+      "Lesly Miculicich",
+      "Guan Sun",
+      "Yuanjun Bi",
+      "Weiming Wen",
+      "Hui Wan",
+      "Chunfeng Wen",
+      "Solène Maître",
+      "George Lee",
+      "Vishy Tirumalashetty",
+      "Emily Xue",
+      "Zizhao Zhang",
+      "Salem Haykal",
+      "Burak Gokturk",
+      "Tomas Pfister",
+      "Chen-Yu Lee"
+    ],
+    "likes": 47,
+    "published_date": "Jul 21",
+    "url": "https://huggingface.co/papers/2507.16075",
+    "date_collected": "2025-07-31T07:08:22.270803+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "테스트 시간 확산을 활용한 깊은 연구자",
+      "abstract": "대형 언어 모델(Large Language Models, LLM)을 기반으로 한 깊은 연구 에이전트들이 급속히 발전하고 있지만, 일반적인 테스트 시간 스케일링 알고리즘을 사용하여 복잡하고 긴 형태의 연구 보고서를 생성할 때 성능이 종종 정체됩니다. 이 연구에서는 인간의 연구 방법의 반복적 성격에서 영감을 받아 검색, 추론 및 개정의 사이클을 거치면서 연구를 개념화한 '테스트 시간 확산 깊은 연구자(Test-Time Diffusion Deep Researcher, TTD-DR)'를 제안합니다. 이 혁신적인 프레임워크는 연구 보고서 생성을 확산 프로세스로 개념화합니다."
+    },
+    "summary": "1. TTD-DR는 초기 초안을 시작으로 연구 방향을 안내하는 진화하는 기초로 작용하는 업데이트 가능한 뼈대로 연속적으로 개선되는 확산 프로세스로 연구 보고서 생성을 추진합니다.\n2. 외부 정보를 동적으로 통합하는 검색 메커니즘에 의해 각 단계에서 동적으로 정보를 보정하는 \"denoising\" 프로세스를 통해 초안이 반복적으로 정제됩니다.\n3. 자가 진화 알고리즘을 각 구성 요소에 적용하여 코어 프로세스가 강화되며, 높은 품질의 컨텍스트를 확산 프로세스에 제공하여 정보 손실을 줄입니다. TTD-DR은 탐색과 다중 홉 추론을 필요로하는 다양한 벤치마크에서 최첨단 결과를 달성하며 기존의 깊은 연구 에이전트를 크게 능가합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Rep-MTL: Unleashing the Power of Representation-level Task Saliency for\n  Multi-Task Learning",
+    "abstract": "Despite the promise of Multi-Task Learning in leveraging complementary\nknowledge across tasks, existing multi-task optimization (MTO) techniques\nremain fixated on resolving conflicts via optimizer-centric loss scaling and\ngradient manipulation strategies, yet fail to deliver consistent gains. In this\npaper, we argue that the shared representation space, where task interactions\nnaturally occur, offers rich information and potential for operations\ncomplementary to existing optimizers, especially for facilitating the\ninter-task complementarity, which is rarely explored in MTO. This intuition\nleads to Rep-MTL, which exploits the representation-level task saliency to\nquantify interactions between task-specific optimization and shared\nrepresentation learning. By steering these saliencies through entropy-based\npenalization and sample-wise cross-task alignment, Rep-MTL aims to mitigate\nnegative transfer by maintaining the effective training of individual tasks\ninstead pure conflict-solving, while explicitly promoting complementary\ninformation sharing. Experiments are conducted on four challenging MTL\nbenchmarks covering both task-shift and domain-shift scenarios. The results\nshow that Rep-MTL, even paired with the basic equal weighting policy, achieves\ncompetitive performance gains with favorable efficiency. Beyond standard\nperformance metrics, Power Law exponent analysis demonstrates Rep-MTL's\nefficacy in balancing task-specific learning and cross-task sharing. The\nproject page is available at HERE.",
+    "authors": [
+      "Zedong Wang",
+      "Siyuan Li",
+      "Dan Xu"
+    ],
+    "likes": 37,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2507.21049",
+    "date_collected": "2025-07-31T07:08:22.271855+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "Rep-MTL: 다중 작업 학습을 위한 표현 수준 작업 중요도의 발휘",
+      "abstract": "서로 보완적인 지식을 활용하는 다중 작업 학습의 잠재력에도 불구하고, 기존의 다중 작업 최적화(MTO) 기술은 충돌을 해결하는 데서 벗어나지 못하고 최적화자 중심의 손실 스케일링 및 그래디언트 조작 전략에 집착하며 일관된 이득을 창출하지 못한다. 이 논문에서는 태스크 상호작용이 자연스럽게 일어나는 공유 표현 공간이 이미 존재하는 최적화자들에 보왕적인 작업에서 풍부한 정보와 잠재력을 제공한다고 주장한다."
+    },
+    "summary": "1. 다중 작업 학습에서 Rep-MTL은 공유 표현 공간을 활용하여 태스크 간 최적화와 공유 표현 학습 사이의 상호작용을 양적화한다.\n2. Rep-MTL은 음의 전이를 완화하고 순수한 충돌 해결이 아닌 개별 태스크의 효과적인 교육을 유지하면서 상호 보완적인 정보 공유를 명시적으로 촉진한다.\n3. 실험 결과는 Rep-MTL이 기본적인 균일 가중치 정책과 결합되어도 유리한 효율성을 갖는 경쟁력 있는 성능 향상을 달성한다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "SmallThinker: A Family of Efficient Large Language Models Natively\n  Trained for Local Deployment",
+    "abstract": "While frontier large language models (LLMs) continue to push capability\nboundaries, their deployment remains confined to GPU-powered cloud\ninfrastructure. We challenge this paradigm with SmallThinker, a family of LLMs\nnatively designed - not adapted - for the unique constraints of local devices:\nweak computational power, limited memory, and slow storage. Unlike traditional\napproaches that mainly compress existing models built for clouds, we architect\nSmallThinker from the ground up to thrive within these limitations. Our\ninnovation lies in a deployment-aware architecture that transforms constraints\ninto design principles. First, We introduce a two-level sparse structure\ncombining fine-grained Mixture-of-Experts (MoE) with sparse feed-forward\nnetworks, drastically reducing computational demands without sacrificing model\ncapacity. Second, to conquer the I/O bottleneck of slow storage, we design a\npre-attention router that enables our co-designed inference engine to prefetch\nexpert parameters from storage while computing attention, effectively hiding\nstorage latency that would otherwise cripple on-device inference. Third, for\nmemory efficiency, we utilize NoPE-RoPE hybrid sparse attention mechanism to\nslash KV cache requirements. We release SmallThinker-4B-A0.6B and\nSmallThinker-21B-A3B, which achieve state-of-the-art performance scores and\neven outperform larger LLMs. Remarkably, our co-designed system mostly\neliminates the need for expensive GPU hardware: with Q4_0 quantization, both\nmodels exceed 20 tokens/s on ordinary consumer CPUs, while consuming only 1GB\nand 8GB of memory respectively. SmallThinker is publicly available at\nhf.co/PowerInfer/SmallThinker-4BA0.6B-Instruct and\nhf.co/PowerInfer/SmallThinker-21BA3B-Instruct.",
+    "authors": [
+      "Yixin Song",
+      "Zhenliang Xue",
+      "Dongliang Wei",
+      "Feiyang Chen",
+      "Jianxiang Gao",
+      "Junchen Liu",
+      "Hangyu Liang",
+      "Guangshuo Qin",
+      "Chengrong Tian",
+      "Bo Wen",
+      "Longyu Zhao",
+      "Xinrui Zheng",
+      "Zeyu Mi",
+      "Haibo Chen"
+    ],
+    "likes": 37,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2507.20984",
+    "date_collected": "2025-07-31T07:08:22.273361+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "SmallThinker: 지역 배포용으로 네이티브로 훈련된 효율적인 대규모 언어 모델군",
+      "abstract": "최첨단 대규모 언어 모델(Large Language Models, LLMs)은 능력 한계를 계속 높이고 있지만, 이를 구현하는 것은 여전히 GPU 기반의 클라우드 인프라로 한정되어 있습니다. 저희는 SmallThinker를 소개하여 이러한 패러다임을 도전합니다. SmallThinker는 지역 장치의 독특한 제약 조건에 맞게 네이티브로 설계된 LLM 모델군으로, 연산 능력 부족, 제한된 메모리 및 느린 저장 공간과 같은 제약을 고려합니다."
+    },
+    "summary": "1. SmallThinker는 지역 장치의 제약 사항을 고려하여 설계된 LLM 모델군으로, Mixture-of-Experts(MoE)와 희소한 피드포워드 네트워크를 결합한 두 수준의 희소 구조를 도입하여 연산 요구를 크게 줄이고 모델 용량을 유지합니다.\n2. 저장 공간의 I/O 병목 현상을 극복하기 위해, SmallThinker는 사전 어텐션 라우터를 디자인하여 전문가 매개변수를 사전 가져오는 기능을 제공하여 저장 공간 지연 시간을 숨기고 장치 내 추론을 원활하게 합니다.\n3. 메모리 효율성을 위해 SmallThinker는 NoPE-RoPE 하이브리드 희소 어텐션 메커니즘을 활용하여 KV 캐시 요구 사항을 대폭 줄입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Geometry of LLM Quantization: GPTQ as Babai's Nearest Plane\n  Algorithm",
+    "abstract": "Quantizing the weights of large language models (LLMs) from 16-bit to lower\nbitwidth is the de facto approach to deploy massive transformers onto more\naffordable accelerators. GPTQ emerged as one of the standard methods for\none-shot post-training quantization at LLM scale. Yet, its inner workings are\ndescribed as a sequence of ad-hoc algebraic updates that obscure any geometric\nmeaning or worst-case guarantees. In this work, we show that, when executed\nback-to-front (from the last to first dimension) for a linear layer, GPTQ is\nmathematically identical to Babai's nearest plane algorithm for the classical\nclosest vector problem (CVP) on a lattice defined by the Hessian matrix of the\nlayer's inputs. This equivalence is based on a sophisticated mathematical\nargument, and has two analytical consequences: (i) the GPTQ error propagation\nstep gains an intuitive geometric interpretation; (ii) GPTQ inherits the error\nupper bound of Babai's algorithm under the no-clipping condition. Taken\ntogether, these results place GPTQ on firm theoretical footing and open the\ndoor to importing decades of progress in lattice algorithms towards the design\nof future quantization algorithms for billion-parameter models.",
+    "authors": [
+      "Jiale Chen",
+      "Torsten Hoefler",
+      "Dan Alistarh"
+    ],
+    "likes": 31,
+    "published_date": "Jul 24",
+    "url": "https://huggingface.co/papers/2507.18553",
+    "date_collected": "2025-07-31T07:08:22.274385+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "LLM 양자화의 기하: GPTQ가 Babai의 가장 가까운 평면 알고리즘으로 나타난다",
+      "abstract": "16비트에서 낮은 비트폭으로 대규모 언어 모델(Large Language Models, LLMs)의 가중치를 양자화하는 것은 대규모 트랜스포머를 더 저렴한 가속기에 배포하는 사실상의 접근법이다. GPTQ는 LLM 규모에서의 일회성 후 학습 양자화의 표준 방법 중 하나로 등장했다. 그러나 그 내부 작업은 기하학적 의미나 최악의 경우 보장을 흐리는 일련의 ad-hoc 대수적 업데이트로 설명된다. 본 연구에서는 선형 층의 경우 뒤에서부터 앞으로(마지막 차원부터 첫 번째 차원까지) 실행할 때, GPTQ가 해당 층의 입력의 헤시안 행렬에 의해 정의된 격자(lattice)에서 고전적 가장 가까운 벡터 문제(CVP)의 Babai의 가장 가까운 평면 알고리즘과 수학적으로 동일함을 보여준다. 이 동등성은 고급 수학적 논증에 기초하며, (i) GPTQ의 오류 전파 단계가 직관적인 기하학적 해석을 얻게 되고, (ii) GPTQ가 클리핑 조건 하에서 Babai의 알고리즘의 오류 상한선을 상속받게 된다. 이러한 결과들은 GPTQ를 튼튼한 이론적 기초 위에 놓아주며, 수십 년간 격자 알고리즘의 발전을 미래 억억 개 파라미터 모델을 위한 양자화 알고리즘 설계로 수입하는 문을 열어준다."
+    },
+    "summary": "1. 대규모 언어 모델의 가중치를 낮은 비트폭으로 양자화하는 것은 저렴한 가속기에 효율적으로 배포하는 중요한 접근법이다.\n2. 연구에서는 GPTQ가 Babai의 가장 가까운 평면 알고리즘과 동일함을 수학적으로 보여주었으며, 이를 통해 GPTQ에 대한 이론적 기초가 확립되었다.\n3. 이러한 결과들은 미래 억억 개 파라미터 모델을 위한 양자화 알고리즘 설계를 위한 격자 알고리즘의 발전을 촉진한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Reconstructing 4D Spatial Intelligence: A Survey",
+    "abstract": "Reconstructing 4D spatial intelligence from visual observations has long been\na central yet challenging task in computer vision, with broad real-world\napplications. These range from entertainment domains like movies, where the\nfocus is often on reconstructing fundamental visual elements, to embodied AI,\nwhich emphasizes interaction modeling and physical realism. Fueled by rapid\nadvances in 3D representations and deep learning architectures, the field has\nevolved quickly, outpacing the scope of previous surveys. Additionally,\nexisting surveys rarely offer a comprehensive analysis of the hierarchical\nstructure of 4D scene reconstruction. To address this gap, we present a new\nperspective that organizes existing methods into five progressive levels of 4D\nspatial intelligence: (1) Level 1 -- reconstruction of low-level 3D attributes\n(e.g., depth, pose, and point maps); (2) Level 2 -- reconstruction of 3D scene\ncomponents (e.g., objects, humans, structures); (3) Level 3 -- reconstruction\nof 4D dynamic scenes; (4) Level 4 -- modeling of interactions among scene\ncomponents; and (5) Level 5 -- incorporation of physical laws and constraints.\nWe conclude the survey by discussing the key challenges at each level and\nhighlighting promising directions for advancing toward even richer levels of 4D\nspatial intelligence. To track ongoing developments, we maintain an up-to-date\nproject page: https://github.com/yukangcao/Awesome-4D-Spatial-Intelligence.",
+    "authors": [
+      "Yukang Cao",
+      "Jiahao Lu",
+      "Zhisheng Huang",
+      "Zhuowei Shen",
+      "Chengfeng Zhao",
+      "Fangzhou Hong",
+      "Zhaoxi Chen",
+      "Xin Li",
+      "Wenping Wang",
+      "Yuan Liu",
+      "Ziwei Liu"
+    ],
+    "likes": 29,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2507.21045",
+    "date_collected": "2025-07-31T07:08:22.275780+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "4차원 공간 지능 재구성: 조사",
+      "abstract": "시각 관측에서 4차원 공간 지능을 재구성하는 것은 컴퓨터 비전에서 중심적이면서도 어려운 과제로 여겨져왔으며, 엔터테인먼트 분야에서부터 에워싼 다양한 실제 응용 사례를 가지고 있습니다. 이 분야는 깊은 학습 아키텍처의 급격한 발전으로 빠르게 진화해왔으며, 기존의 조사 범위를 능가하였습니다. 더불어, 기존의 조사들은 4차원 장면 재구성의 계층적 구조에 대한 포괄적인 분석을 제공하지 않았습니다. 본 연구에서는 기존 방법들을 5가지 단계로 분류하여 새로운 관점을 제시하였습니다."
+    },
+    "summary": "1. 4차원 공간 지능의 계층적 구조에 따라, 낮은 수준의 3차원 특성부터 물체, 인간, 구조 등의 재구성, 동적 장면의 재구성, 장면 구성 요소 간 상호 작용 모델링, 물리 법칙 및 제약사항 통합 등 다섯 가지 수준으로 분류됩니다.\n2. 각 수준의 주요 도전 과제와 더 높은 수준의 4차원 공간 지능으로 나아가기 위한 유망한 방향에 대해 논의하였습니다.\n3. 지속적인 발전을 추적하기 위해 최신 프로젝트 페이지를 유지 관리하고 있습니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI\n  Agents",
+    "abstract": "We introduce MMBench-GUI, a hierarchical benchmark for evaluating GUI\nautomation agents across Windows, macOS, Linux, iOS, Android, and Web\nplatforms. It comprises four levels: GUI Content Understanding, Element\nGrounding, Task Automation, and Task Collaboration, covering essential skills\nfor GUI agents. In addition, we propose a novel Efficiency-Quality Area (EQA)\nmetric to assess GUI agent execution efficiency in online automation scenarios.\nThrough MMBench-GUI, we identify accurate visual grounding as a critical\ndeterminant of overall task success, emphasizing the substantial benefits of\nmodular frameworks that integrate specialized grounding modules. Furthermore,\nto achieve reliable GUI automation, an agent requires strong task planning and\ncross-platform generalization abilities, with long-context memory, a broad\naction space, and long-term reasoning playing a critical role. More important,\ntask efficiency remains a critically underexplored dimension, and all models\nsuffer from substantial inefficiencies, with excessive redundant steps even\nwhen tasks are ultimately completed. The integration of precise localization,\neffective planning, and early stopping strategies is indispensable to enable\ntruly efficient and scalable GUI automation. Our benchmark code, evaluation\ndata, and running environment will be publicly available at\nhttps://github.com/open-compass/MMBench-GUI.",
+    "authors": [
+      "Xuehui Wang",
+      "Zhenyu Wu",
+      "JingJing Xie",
+      "Zichen Ding",
+      "Bowen Yang",
+      "Zehao Li",
+      "Zhaoyang Liu",
+      "Qingyun Li",
+      "Xuan Dong",
+      "Zhe Chen",
+      "Weiyun Wang",
+      "Xiangyu Zhao",
+      "Jixuan Chen",
+      "Haodong Duan",
+      "Tianbao Xie",
+      "Chenyu Yang",
+      "Shiqian Su",
+      "Yue Yu",
+      "Yuan Huang",
+      "Yiqian Liu",
+      "Xiao Zhang",
+      "Yanting Zhang"
+    ],
+    "likes": 26,
+    "published_date": "Jul 25",
+    "url": "https://huggingface.co/papers/2507.19478",
+    "date_collected": "2025-07-31T07:08:22.277685+09:00",
+    "week": "2025-W31",
+    "translation": {
+      "title": "MMBench-GUI: GUI 에이전트를 위한 계층적 다중 플랫폼 평가 프레임워크",
+      "abstract": "Windows, macOS, Linux, iOS, Android, 그리고 Web 플랫폼에서 GUI 자동화 에이전트를 평가하기 위한 계층적 벤치마크인 MMBench-GUI를 소개합니다. GUI 콘텐츠 이해, 요소 맵핑, 작업 자동화, 그리고 작업 협력을 포함하여 GUI 에이전트에 대한 필수 기술을 다룹니다. 또한 온라인 자동화 시나리오에서 GUI 에이전트 실행 효율성을 평가하기 위한 새로운 EQA(효율성-품질 영역) 측정 지표를 제안합니다. MMBench-GUI를 통해 정확한 시각적 맵핑이 전체 작업 성공의 중요한 결정 요인임을 확인하며, 전문화된 매핑 모듈을 통합하는 모듈식 프레임워크의 상당한 이점을 강조합니다. 더불어 신뢰할 수 있는 GUI 자동화를 위해, 에이전트는 강력한 작업 계획 및 크로스 플랫폼 일반화 능력이 필요하며, 장기 기억, 광범위한 행동 공간, 그리고 장기적 추론이 중요한 역할을 합니다. 더 중요한 것은, 작업 효율성은 아직 충분히 탐구되지 않은 차원이며, 모든 모델이 상당한 무효성을 겪고 있으며, 최종적으로 작업이 완료되더라도 지나친 중복 단계로 인해 진행이 더딘 현상이 나타납니다. 정확한 위치 파악, 효과적인 계획, 그리고 조기 중단 전략의 통합은 실제로 효율적이고 확장 가능한 GUI 자동화를 가능하게 하는 데 필수적입니다. 우리의 벤치마크 코드, 평가 데이터, 실행 환경은 https://github.com/open-compass/MMBench-GUI에서 공개될 예정입니다."
+    },
+    "summary": "1. MMBench-GUI는 GUI 에이전트의 핵심 기술을 평가하기 위한 다중 플랫폼 벤치마크로, 시각적 매핑의 정확성이 작업 성공에 중요한 역할을 한다.\n2. GUI 자동화를 위해 강력한 작업 계획과 크로스 플랫폼 범용화 능력이 필요하며, 모델은 효율성과 중복된 단계 개선이 필요하다.\n3. 정확한 위치 파악, 효과적인 계획, 그리고 조기 중단 전략의 통합이 효율적이고 확장 가능한 GUI 자동화를 실현하는 데 필수적이다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  }
+]

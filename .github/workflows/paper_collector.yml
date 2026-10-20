@@ -1,0 +1,91 @@
+name: Daily arXiv Paper Evaluation (OpenAI fallback)
+
+# 기본 일간 실행은 Claude 예약 에이전트(/daily-papers 스킬)가 수행한다.
+# 이 워크플로는 OPENAI_API_KEY 기반 수동 fallback으로만 남겨둔다.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write  # 저장소에 쓰기 권한
+  pages: write     # GitHub Pages 배포 권한
+  id-token: write  # OIDC 토큰 권한
+  issues: write    # 실패 시 이슈 생성 권한
+
+jobs:
+  collect-papers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run daily arXiv pipeline
+        id: collector
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          # 모델을 바꾸려면 리포지토리 변수로 지정 (기본: gpt-5-nano / gpt-5-mini)
+          OPENAI_SCREEN_MODEL: ${{ vars.OPENAI_SCREEN_MODEL }}
+          OPENAI_DEEP_MODEL: ${{ vars.OPENAI_DEEP_MODEL }}
+        run: |
+          chmod +x run_paper_collector.sh
+          ./run_paper_collector.sh
+        continue-on-error: true
+
+      - name: Check collector status
+        if: steps.collector.outcome == 'failure'
+        run: |
+          echo "::error::Paper evaluation failed. Check paper_collector.log for details."
+          cat paper_collector.log
+          exit 1
+
+      - name: Generate static site
+        run: python static_generator.py
+
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -f database/ static/ paper_collector.log || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update daily arXiv report [automated] $(date +%Y-%m-%d)" && git push)
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './static'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: 'Daily arXiv paper evaluation failed',
+                body: 'The automated arXiv paper evaluation failed. Please check the workflow run for details.'
+              });
+            } catch (error) {
+              console.log('Failed to create issue:', error.message);
+            }

@@ -1,0 +1,360 @@
+[
+  {
+    "title": "Green-VLA: Staged Vision-Language-Action Model for Generalist Robots",
+    "abstract": "We introduce Green-VLA, a staged Vision-Language-Action (VLA) framework for real-world deployment on the Green humanoid robot while maintaining generalization across diverse embodiments. Green-VLA follows a five stage curriculum: (L0) foundational VLMs, (L1) multimodal grounding, (R0) multi-embodiment pretraining, (R1) embodiment-specific adaptation, and (R2) reinforcement-learning (RL) policy alignment. We couple a scalable data-processing pipeline (3,000 hours of demonstrations) with temporal alignment and quality filtering, and use a unified, embodiment-aware action interface enabling a single policy to control humanoids, mobile manipulators, and fixed-base arms. At inference, the VLA controller is enhanced with episode-progress prediction, out-of-distribution detection, and joint-prediction-based guidance to improve safety and precise target selection. Experiments on Simpler BRIDGE WidowX and CALVIN ABC-D, as well as real-robot evaluations, show strong generalization and performance gains from RL alignment in success rate, robustness, and long-horizon efficiency.",
+    "authors": [
+      "I. Apanasevich",
+      "M. Artemyev",
+      "R. Babakyan",
+      "P. Fedotova",
+      "D. Grankin",
+      "E. Kupryashin",
+      "A. Misailidi",
+      "D. Nerus",
+      "A. Nutalapati",
+      "G. Sidorov",
+      "I. Efremov",
+      "M. Gerasyov",
+      "D. Pikurov",
+      "Y. Senchenko",
+      "S. Davidenko",
+      "D. Kulikov",
+      "M. Sultankin",
+      "K. Askarbek",
+      "O. Shamanin",
+      "D. Statovoy",
+      "E. Zalyaev",
+      "I. Zorin"
+    ],
+    "likes": 199,
+    "published_date": "Jan 31",
+    "url": "https://huggingface.co/papers/2602.00919",
+    "date_collected": "2026-02-06T07:12:03.882568+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "일반용 로봇을 위한 단계적 비전-언어-행동 모델인 Green-VLA",
+      "abstract": "우리는 Green 인류형 로봇에 실제 적용되는 동시에 다양한 구현체 사이에서 일반화를 유지하는 단계적 비전-언어-행동 (VLA) 프레임워크인 Green-VLA를 소개합니다. Green-VLA는 다섯 단계로 구성됩니다: (L0) 기초 VLMs, (L1) 다중 모달 그라운딩, (R0) 다중 구현체 사전 훈련, (R1) 구현체별 적응, 그리고 (R2) 강화 학습 정책 조정을 따릅니다. 실험 결과, Simpler BRIDGE WidowX 및 CALVIN ABC-D에서의 실험 결과 및 실제 로봇 평가는 강화 학습 정렬로부터의 성공률, 견고성 및 장기적인 효율성에서 강한 일반화와 성능 향상을 나타냅니다."
+    },
+    "summary": "1. Green-VLA는 다양한 구현체 간에 일반화를 유지하면서 현실 세계 배치를 위한 단계별 비전-언어-행동 프레임워크를 제안합니다.\n2. 실험 결과에서, Green-VLA는 강화 학습 정렬로 인한 성공률, 견고성 및 장기적 효율성에서 강한 일반화와 성능 향상을 보여줍니다.\n3. Green-VLA는 단일 정책으로 인간형 로봇, 이동형 조작기 및 고정베이스 팔을 제어하는 통일된, 구현체를 인식하는 행동 인터페이스를 사용합니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "ERNIE 5.0 Technical Report",
+    "abstract": "In this report, we introduce ERNIE 5.0, a natively autoregressive foundation model desinged for unified multimodal understanding and generation across text, image, video, and audio. All modalities are trained from scratch under a unified next-group-of-tokens prediction objective, based on an ultra-sparse mixture-of-experts (MoE) architecture with modality-agnostic expert routing. To address practical challenges in large-scale deployment under diverse resource constraints, ERNIE 5.0 adopts a novel elastic training paradigm. Within a single pre-training run, the model learns a family of sub-models with varying depths, expert capacities, and routing sparsity, enabling flexible trade-offs among performance, model size, and inference latency in memory- or time-constrained scenarios. Moreover, we systematically address the challenges of scaling reinforcement learning to unified foundation models, thereby guaranteeing efficient and stable post-training under ultra-sparse MoE architectures and diverse multimodal settings. Extensive experiments demonstrate that ERNIE 5.0 achieves strong and balanced performance across multiple modalities. To the best of our knowledge, among publicly disclosed models, ERNIE 5.0 represents the first production-scale realization of a trillion-parameter unified autoregressive model that supports both multimodal understanding and generation. To facilitate further research, we present detailed visualizations of modality-agnostic expert routing in the unified model, alongside comprehensive empirical analysis of elastic training, aiming to offer profound insights to the community.",
+    "authors": [
+      "Haifeng Wang",
+      "Hua Wu",
+      "Tian Wu",
+      "Yu Sun",
+      "Jing Liu",
+      "Dianhai Yu",
+      "Yanjun Ma",
+      "Jingzhou He",
+      "Zhongjun He",
+      "Dou Hong",
+      "Qiwen Liu",
+      "Shuohuan Wang",
+      "Junyuan Shang",
+      "Zhenyu Zhang",
+      "Yuchen Ding",
+      "Jinle Zeng",
+      "Jiabin Yang",
+      "Liang Shen",
+      "Ruibiao Chen",
+      "Weichong Yin",
+      "Siyu Ding",
+      "Dai Dai"
+    ],
+    "likes": 195,
+    "published_date": "Feb 4",
+    "url": "https://huggingface.co/papers/2602.04705",
+    "date_collected": "2026-02-06T07:12:03.884552+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "ERNIE 5.0 기술 보고서",
+      "abstract": "본 보고서에서는 텍스트, 이미지, 비디오, 오디오를 포함한 통합된 다중 모달 이해와 생성을 위해 설계된 ERNIE 5.0을 소개합니다. 모든 모달은 단일한 다음 토큰 그룹 예측 목적에 기반한 초 희소한 전문가 혼합 (MoE) 아키텍처를 통한 통합된 훈련을 받습니다."
+    },
+    "summary": "1. ERNIE 5.0은 다중 모달 이해와 생성을 위해 통합된 모델이며, 각각의 모달은 희소 MoE 아키텍처를 기반으로 훈련받아 성능, 모델 크기, 추론 지연 시간 사이의 유연한 균형을 이루는 새로운 탄력적 훈련 패러다임을 채택합니다.\n2. 연구는 대규모 배포에서의 실제적인 도전 과제를 해결하기 위해 ERNIE 5.0의 탄력적 훈련 패러다임을 도입하였으며, 훈련 중 다양한 하위 모델을 학습하여 메모리나 시간 제약 상황에서 성능과 모델 크기, 추론 지연 시간 사이의 유연한 교환을 가능하게 합니다.\n3. ERNIE 5.0은 다중 모달 세팅과 초 희소 MoE 아키텍처 하에서 강력하고 균형잡힌 성과를 거둬, 다중 모달 이해와 생성을 지원하는 조치 당 유니폼 모델의 실제 규모 구현으로 알려져 있습니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Kimi K2.5: Visual Agentic Intelligence",
+    "abstract": "We introduce Kimi K2.5, an open-source multimodal agentic model designed to advance general agentic intelligence. K2.5 emphasizes the joint optimization of text and vision so that two modalities enhance each other. This includes a series of techniques such as joint text-vision pre-training, zero-vision SFT, and joint text-vision reinforcement learning. Building on this multimodal foundation, K2.5 introduces Agent Swarm, a self-directed parallel agent orchestration framework that dynamically decomposes complex tasks into heterogeneous sub-problems and executes them concurrently. Extensive evaluations show that Kimi K2.5 achieves state-of-the-art results across various domains including coding, vision, reasoning, and agentic tasks. Agent Swarm also reduces latency by up to 4.5times over single-agent baselines. We release the post-trained Kimi K2.5 model checkpoint to facilitate future research and real-world applications of agentic intelligence.",
+    "authors": [
+      "Kimi Team",
+      "Tongtong Bai",
+      "Yifan Bai",
+      "Yiping Bao",
+      "S. H. Cai",
+      "Yuan Cao",
+      "Y. Charles",
+      "H. S. Che",
+      "Cheng Chen",
+      "Guanduo Chen",
+      "Huarong Chen",
+      "Jia Chen",
+      "Jiahao Chen",
+      "Jianlong Chen",
+      "Jun Chen",
+      "Kefan Chen",
+      "Liang Chen",
+      "Ruijue Chen",
+      "Xinhao Chen",
+      "Yanru Chen",
+      "Yanxu Chen",
+      "Yicun Chen"
+    ],
+    "likes": 193,
+    "published_date": "Feb 2",
+    "url": "https://huggingface.co/papers/2602.02276",
+    "date_collected": "2026-02-06T07:12:03.886522+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "키미 K2.5: 시각적 에이전트 인공지능",
+      "abstract": "키미 K2.5는 일반적인 에이전트 인공지능을 발전시키기 위해 설계된 오픈소스 다중모달 에이전트 모델입니다. K2.5는 텍스트와 비전의 공동 최적화를 강조하여 두 모달리티가 서로 보완되도록 합니다. 이는 텍스트-비전 공동 사전 훈련, 제로-비전 SFT, 그리고 텍스트-비전 공동 강화 학습과 같은 일련의 기술을 포함합니다. 이 다중모달 기반 위에, K2.5는 에이전트 스웜을 소개합니다. 이는 복잡한 작업을 이질적인 하위 문제로 동적으로 분해하고 동시에 실행하는 자기 지향 병렬 에이전트 조율 프레임워크입니다. 광범위한 평가 결과, 키미 K2.5는 코딩, 비전, 추론, 그리고 에이전트 작업을 포함한 다양한 분야에서 최고 수준의 성과를 달성합니다. 에이전트 스웜은 단일 에이전트 기준에 비해 지연 시간을 최대 4.5배 줄입니다. 우리는 향후 에이전트 인공지능의 연구와 실제 응용을 위해 사후 훈련된 키미 K2.5 모델 체크포인트를 공개합니다."
+    },
+    "summary": "1. 텍스트와 비전을 공동 최적화하여 서로 보완하는 키미 K2.5 모델이 소개되었습니다.\n2. 에이전트 스웜은 자기 지향 병렬 에이전트 조율 프레임워크로 복잡한 작업을 효율적으로 처리합니다.\n3. 키미 K2.5는 코딩, 비전, 추론 등 다양한 분야에서 최신 기술을 보여주며 단일 에이전트 기준에 비해 지연 시간을 대폭 줄였습니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models",
+    "abstract": "Multimodal large language models (MLLMs) have achieved remarkable success across a broad range of vision tasks. However, constrained by the capacity of their internal world knowledge, prior work has proposed augmenting MLLMs by ``reasoning-then-tool-call'' for visual and textual search engines to obtain substantial gains on tasks requiring extensive factual information. However, these approaches typically define multimodal search in a naive setting, assuming that a single full-level or entity-level image query and few text query suffices to retrieve the key evidence needed to answer the question, which is unrealistic in real-world scenarios with substantial visual noise. Moreover, they are often limited in the reasoning depth and search breadth, making it difficult to solve complex questions that require aggregating evidence from diverse visual and textual sources. Building on this, we propose Vision-DeepResearch, which proposes one new multimodal deep-research paradigm, i.e., performs multi-turn, multi-entity and multi-scale visual and textual search to robustly hit real-world search engines under heavy noise. Our Vision-DeepResearch supports dozens of reasoning steps and hundreds of engine interactions, while internalizing deep-research capabilities into the MLLM via cold-start supervision and RL training, resulting in a strong end-to-end multimodal deep-research MLLM. It substantially outperforming existing multimodal deep-research MLLMs, and workflows built on strong closed-source foundation model such as GPT-5, Gemini-2.5-pro and Claude-4-Sonnet. The code will be released in https://github.com/Osilly/Vision-DeepResearch.",
+    "authors": [
+      "Wenxuan Huang",
+      "Yu Zeng",
+      "Qiuchen Wang",
+      "Zhen Fang",
+      "Shaosheng Cao",
+      "Zheng Chu",
+      "Qingyu Yin",
+      "Shuang Chen",
+      "Zhenfei Yin",
+      "Lin Chen",
+      "Zehui Chen",
+      "Yao Hu",
+      "Philip Torr",
+      "Feng Zhao",
+      "Wanli Ouyang"
+    ],
+    "likes": 144,
+    "published_date": "Jan 29",
+    "url": "https://huggingface.co/papers/2601.22060",
+    "date_collected": "2026-02-06T07:12:03.888127+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "비전-깊이연구: 멀티모달 대형언어모델(Multimodal Large Language Models)의 깊은 연구 능력을 장려",
+      "abstract": "멀티모달 대형언어모델(MLLMs)은 다양한 비전 작업에서 놀라운 성과를 거두었습니다. 그러나 내부 세계지식의 제약으로 인해, 과거 연구들은 MLLMs를 강화하기 위해 시각 및 텍스트 검색 엔진에 대한 '추론 후 도구 호출'을 제안하여 방대한 사실 정보가 필요한 작업에서 상당한 이득을 얻었습니다. 그러나 이러한 접근 방식들은 일반적으로 멀티모달 검색을 소박한 설정에서 정의하며, 단일 전체 수준 또는 개체 수준 이미지 쿼리와 몇 가지 텍스트 쿼리만으로 문제의 해답에 필요한 주요 증거를 검색할 수 있다고 가정하여 현실적이지 않습니다."
+    },
+    "summary": "1. 멀티모달 대형언어모델(Multimodal Large Language Models)의 한계를 보완하기 위해 Vision-DeepResearch가 제안된다.\n2. Vision-DeepResearch는 멀티턴, 멀티엔티티 및 멀티스케일 비주얼 및 텍스트 검색을 수행하여 엔진의 복잡한 노이즈 하에도 강력한 결과를 얻는다.\n3. Vision-DeepResearch는 MLLM에 심층조사 능력을 내재화하여 기존 모델을 크게 능가하며 코드는 github에서 공개될 예정이다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models",
+    "abstract": "Multimodal Large Language Models (MLLMs) have advanced VQA and now support Vision-DeepResearch systems that use search engines for complex visual-textual fact-finding. However, evaluating these visual and textual search abilities is still difficult, and existing benchmarks have two major limitations. First, existing benchmarks are not visual search-centric: answers that should require visual search are often leaked through cross-textual cues in the text questions or can be inferred from the prior world knowledge in current MLLMs. Second, overly idealized evaluation scenario: On the image-search side, the required information can often be obtained via near-exact matching against the full image, while the text-search side is overly direct and insufficiently challenging. To address these issues, we construct the Vision-DeepResearch benchmark (VDR-Bench) comprising 2,000 VQA instances. All questions are created via a careful, multi-stage curation pipeline and rigorous expert review, designed to assess the behavior of Vision-DeepResearch systems under realistic real-world conditions. Moreover, to address the insufficient visual retrieval capabilities of current MLLMs, we propose a simple multi-round cropped-search workflow. This strategy is shown to effectively improve model performance in realistic visual retrieval scenarios. Overall, our results provide practical guidance for the design of future multimodal deep-research systems. The code will be released in https://github.com/Osilly/Vision-DeepResearch.",
+    "authors": [
+      "Yu Zeng",
+      "Wenxuan Huang",
+      "Zhen Fang",
+      "Shuang Chen",
+      "Yufan Shen",
+      "Yishuo Cai",
+      "Xiaoman Wang",
+      "Zhenfei Yin",
+      "Lin Chen",
+      "Zehui Chen",
+      "Shiting Huang",
+      "Yiming Zhao",
+      "Yao Hu",
+      "Philip Torr",
+      "Wanli Ouyang",
+      "Shaosheng Cao"
+    ],
+    "likes": 122,
+    "published_date": "Feb 2",
+    "url": "https://huggingface.co/papers/2602.02185",
+    "date_collected": "2026-02-06T07:12:03.889783+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "비전-심층연구 벤치마크: 다중모달 대형 언어 모델을 위한 시각적 및 텍스트 검색의 재고",
+      "abstract": "다중모달 대형 언어 모델(MLLMs)은 VQA를 발전시키고 현재는 복합적 시각-텍스트 사실 찾기를 위해 검색 엔진을 지원합니다. 그러나 이러한 시각적 및 텍스트 검색 능력을 평가하는 것은 여전히 어려우며, 기존 벤치마크에는 두 가지 주요한 한계가 있습니다. 기존 벤치마크는 시각적 검색 중심이 아닙니다: 시각적 검색이 필요한 답변이 종종 텍스트 질문의 교차적 단서를 통해 유출되거나 현재 MLLMs의 선험적 세계 지식에서 추론될 수 있습니다. 또한 지나치게 이상적화된 평가 시나리오가 있습니다."
+    },
+    "summary": "1. 다중모달 대형 언어 모델을 위한 Vision-DeepResearch 벤치마크 (VDR-Bench)는 현실적 조건에서 시각적-텍스트 시스템의 행동을 평가하기 위해 만들어졌습니다.\n2. 이 논문은 현재 MLLMs의 시각적 검색 능력이 부족한 점을 다루고, 간단한 다중 라운드 잘린 검색 워크플로우를 제안하여 모델 성능을 효과적으로 향상시키는 것을 제시합니다.\n3. 결과적으로, 이 연구는 미래 다중모달 심층 연구 시스템의 설계에 대한 실용적인 지침을 제공합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "PaperBanana: Automating Academic Illustration for AI Scientists",
+    "abstract": "Despite rapid advances in autonomous AI scientists powered by language models, generating publication-ready illustrations remains a labor-intensive bottleneck in the research workflow. To lift this burden, we introduce PaperBanana, an agentic framework for automated generation of publication-ready academic illustrations. Powered by state-of-the-art VLMs and image generation models, PaperBanana orchestrates specialized agents to retrieve references, plan content and style, render images, and iteratively refine via self-critique. To rigorously evaluate our framework, we introduce PaperBananaBench, comprising 292 test cases for methodology diagrams curated from NeurIPS 2025 publications, covering diverse research domains and illustration styles. Comprehensive experiments demonstrate that PaperBanana consistently outperforms leading baselines in faithfulness, conciseness, readability, and aesthetics. We further show that our method effectively extends to the generation of high-quality statistical plots. Collectively, PaperBanana paves the way for the automated generation of publication-ready illustrations.",
+    "authors": [
+      "Dawei Zhu",
+      "Rui Meng",
+      "Yale Song",
+      "Xiyu Wei",
+      "Sujian Li",
+      "Tomas Pfister",
+      "Jinsung Yoon"
+    ],
+    "likes": 116,
+    "published_date": "Jan 30",
+    "url": "https://huggingface.co/papers/2601.23265",
+    "date_collected": "2026-02-06T07:12:03.891094+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "AI 과학자를 위한 학술 그림 자동화: PaperBanana",
+      "abstract": "최신 VLMs와 이미지 생성 모델의 도움으로, PaperBanana는 전문 에이전트들을 활용하여 학술 그림을 자동으로 생성하는 프레임워크로, NeurIPS 2025 논문에서의 방법론 다이어그램에 대한 실험을 통해 우수한 성능을 입증하며, 출판에 적합한 그림 자동 생성의 길을 열었습니다."
+    },
+    "summary": "1. PaperBanana는 VLM과 이미지 생성 모델을 활용하여 학술 그림을 자동으로 생성함.\n2. PaperBananaBench를 활용한 실험 결과, PaperBanana는 다른 기준들에 비해 일관되게 우수한 성능을 보임.\n3. 이 연구는 높은 품질의 통계 플롯 생성으로 확장 가능성을 보여줌.",
+    "categories": [
+      "Computer Vision",
+      "LLM"
+    ]
+  },
+  {
+    "title": "FASA: Frequency-aware Sparse Attention",
+    "abstract": "The deployment of Large Language Models (LLMs) faces a critical bottleneck when handling lengthy inputs: the prohibitive memory footprint of the Key Value (KV) cache. To address this bottleneck, the token pruning paradigm leverages attention sparsity to selectively retain a small, critical subset of tokens. However, existing approaches fall short, with static methods risking irreversible information loss and dynamic strategies employing heuristics that insufficiently capture the query-dependent nature of token importance. We propose FASA, a novel framework that achieves query-aware token eviction by dynamically predicting token importance. FASA stems from a novel insight into RoPE: the discovery of functional sparsity at the frequency-chunk (FC) level. Our key finding is that a small, identifiable subset of \"dominant\" FCs consistently exhibits high contextual agreement with the full attention head. This provides a robust and computationally free proxy for identifying salient tokens. %making them a powerful and efficient proxy for token importance. Building on this insight, FASA first identifies a critical set of tokens using dominant FCs, and then performs focused attention computation solely on this pruned subset. % Since accessing only a small fraction of the KV cache, FASA drastically lowers memory bandwidth requirements and computational cost. Across a spectrum of long-context tasks, from sequence modeling to complex CoT reasoning, FASA consistently outperforms all token-eviction baselines and achieves near-oracle accuracy, demonstrating remarkable robustness even under constraint budgets. Notably, on LongBench-V1, FASA reaches nearly 100\\% of full-KV performance when only keeping 256 tokens, and achieves 2.56times speedup using just 18.9\\% of the cache on AIME24.",
+    "authors": [
+      "Yifei Wang",
+      "Yueqi Wang",
+      "Zhenrui Yue",
+      "Huimin Zeng",
+      "Yong Wang",
+      "Ismini Lourentzou",
+      "Zhengzhong Tu",
+      "Xiangxiang Chu",
+      "Julian McAuley"
+    ],
+    "likes": 100,
+    "published_date": "Feb 3",
+    "url": "https://huggingface.co/papers/2602.03152",
+    "date_collected": "2026-02-06T07:12:03.892478+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "FASA: 주파수-인식 희소 주의 (Sparse Attention)",
+      "abstract": "대형 언어 모델 (LLMs)을 배치할 때 긴 입력을 처리하는 데 있어서 열쇠-값 (KV) 캐시의 기억 공간이 문제가 됩니다. 이 병목 현상을 해결하기 위해 토큰 가지치기 패러다임은 주의 희소성을 활용하여 소수의 중요 토큰을 선택적으로 보존합니다. 그러나 기존 방법론은 정적인 방법이 정보 손실을 위험하게 하고, 동적인 전략은 토큰 중요성의 쿼리 종속성을 충분히 포착하지 못하는 휴리스틱을 사용해 미흡합니다. 우리는 FASA를 제안하는데, 이는 동적으로 토큰의 중요성을 예측하여 쿼리에 민감하게 토큰을 제거하는 혁신적인 프레임워크입니다. FASA는 RoPE에 대한 혁신적인 통찰로부터 나왔습니다: 주파수 청크 (FC) 수준의 기능 희소성의 발견. 우리의 주요 발견은 \"주요한\" FC들의 소수가 완전한 주의 헤드와 높은 맥락적 합의를 지속적으로 나타내는 것입니다. 이것은 강력하고 효율적인 토큰 중요성의 대리자를 제공합니다. 이 통찰을 기반으로 FASA는 우선 주요 FCs를 사용하여 중요한 토큰의 임계값 집합을 식별하고, 그런 다음 이 가지치기된 부분 집합에 대해서만 집중적인 주의 계산을 수행합니다. KV 캐시의 작은 부분에만 액세스하므로, FASA는 기억 대역폭 요구량과 계산 비용을 크게 줄입니다. 시퀀스 모델링부터 복잡한 CoT 추론까지의 다양한 장기적 맥락 작업에 걸쳐, FASA는 일관되게 모든 토큰 가지치기 기준을 능가하고 극도의 신뢰성을 보여 제한된 예산 하에서도 낮지 않은 정확도를 달성합니다. 특히 LongBench-V1에서 FASA는 256개의 토큰만 유지하는 경우에도 전체 KV 성능의 거의 100%에 도달하며, AIME24에서는 캐시의 18.9%만 사용해 2.56배의 가속을 달성합니다."
+    },
+    "summary": "1. FASA는 주파수-인식 희소 주의 방식으로 동적으로 토큰의 중요성을 예측하고 효율적으로 토큰을 제거하여 기억 공간 및 계산 비용을 절감합니다.\n2. FASA는 주요한 주파수 청크를 통해 중요한 토큰을 식별하고, 집중적인 주의 계산을 수행하여 다양한 장기적 맥락 작업에서 우수한 성능을 보입니다.\n3. 실험 결과에서 FASA는 모든 토큰 가지치기 기준을 능가하며, 낮은 예산 하에서도 뛰어난 성능을 보여 주목할 만한 견고성을 보입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "CodeOCR: On the Effectiveness of Vision Language Models in Code Understanding",
+    "abstract": "Large Language Models (LLMs) have achieved remarkable success in source code understanding, yet as software systems grow in scale, computational efficiency has become a critical bottleneck. Currently, these models rely on a text-based paradigm that treats source code as a linear sequence of tokens, which leads to a linear increase in context length and associated computational costs. The rapid advancement of Multimodal LLMs (MLLMs) introduces an opportunity to optimize efficiency by representing source code as rendered images. Unlike text, which is difficult to compress without losing semantic meaning, the image modality is inherently suitable for compression. By adjusting resolution, images can be scaled to a fraction of their original token cost while remaining recognizable to vision-capable models. To explore the feasibility of this approach, we conduct the first systematic study on the effectiveness of MLLMs for code understanding. Our experiments reveal that: (1) MLLMs can effectively understand code with substantial token reduction, achieving up to 8x compression; (2) MLLMs can effectively leverage visual cues such as syntax highlighting, improving code completion performance under 4x compression; and (3) Code-understanding tasks like clone detection exhibit exceptional resilience to visual compression, with some compression ratios even slightly outperforming raw text inputs. Our findings highlight both the potential and current limitations of MLLMs in code understanding, which points out a shift toward image-modality code representation as a pathway to more efficient inference.",
+    "authors": [
+      "Yuling Shi",
+      "Chaoxiang Xie",
+      "Zhensu Sun",
+      "Yeheng Chen",
+      "Chenxu Zhang",
+      "Longfei Yun",
+      "Chengcheng Wan",
+      "Hongyu Zhang",
+      "David Lo",
+      "Xiaodong Gu"
+    ],
+    "likes": 88,
+    "published_date": "Feb 2",
+    "url": "https://huggingface.co/papers/2602.01785",
+    "date_collected": "2026-02-06T07:12:03.893906+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "코드OCR: 코드 이해에 대한 비전 언어 모델의 효과성",
+      "abstract": "대형 언어 모델(LLM)은 소스 코드 이해에서 현저한 성공을 거두었으나, 소프트웨어 시스템의 규모가 커짐에 따라 계산 효율성은 중요한 병목 요인이 되었습니다. 현재 이러한 모델은 소스 코드를 토큰의 선형 시퀀스로 다루는 텍스트 기반 패러다임에 의존하며, 이는 맥락 길이와 관련된 계산 비용의 선형 증가로 이어집니다. 다중 모달(LMM)의 신속한 발전은 소스 코드를 렌더링된 이미지로 표현함으로써 효율성을 최적화할 수 있는 기회를 제공합니다. 텍스트를 그 의미를 잃지 않고 압축하기 어려운 것과는 달리, 이미지 형식은 기본적으로 압축하기에 적합합니다. 해상도를 조절함으로써 이미지는 원래 토큰 비용의 일부분으로 축소되면서도 시각 모델에게 인식 가능한 상태를 유지할 수 있습니다. 이 접근 방식의 탐색을 위해, 코드 이해에 대한 다중 모달 LLM의 효과성에 대한 첫 체계적인 연구를 수행하였습니다. 우리의 실험 결과는 다음과 같습니다: (1) MLLM은 상당한 토큰 축소로도 코드를 효과적으로 이해할 수 있어 최대 8배 압축을 달성하였습니다; (2) MLLM은 구문 강조와 같은 시각적 단서를 효과적으로 활용하여 4배 압축 이하에서도 코드 완성 성능을 향상시킬 수 있었습니다; (3) 복제 감지와 같은 코드 이해 작업은 시각적 압축에 대해 예외적으로 강인하며, 일부 압축 비율은 심지어 원시 텍스트 입력보다 약간 우수한 결과를 보여주기도 합니다. 우리의 연구 결과는 코드 이해에서의 MLLM의 잠재력과 현재 한계 모두를 강조하며, 이는 효율적 추론을 위한 경로로 이미지 형식의 코드 표현으로의 전환을 지적합니다."
+    },
+    "summary": "1. 다중 모달 LLM은 시각적 이미지로 코드를 효과적으로 이해하여 최대 8배의 압축을 달성할 수 있음.\n2. 시각적 단서를 활용함으로써, 코드 완성 성능을 향상시키는 것으로 확인됨.\n3. 복제 감지와 같은 코드 이해 작업은 시각적 압축에 강인하며, 일부 경우에는 텍스트 입력보다 우수한 결과를 보임.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Closing the Loop: Universal Repository Representation with RPG-Encoder",
+    "abstract": "Current repository agents encounter a reasoning disconnect due to fragmented representations, as existing methods rely on isolated API documentation or dependency graphs that lack semantic depth. We consider repository comprehension and generation to be inverse processes within a unified cycle: generation expands intent into implementation, while comprehension compresses implementation back into intent. To address this, we propose RPG-Encoder, a framework that generalizes the Repository Planning Graph (RPG) from a static generative blueprint into a unified, high-fidelity representation. RPG-Encoder closes the reasoning loop through three mechanisms: (1) Encoding raw code into the RPG that combines lifted semantic features with code dependencies; (2) Evolving the topology incrementally to decouple maintenance costs from repository scale, reducing overhead by 95.7%; and (3) Operating as a unified interface for structure-aware navigation. In evaluations, RPG-Encoder establishes state-of-the-art repository understanding on SWE-bench Verified with 93.7% Acc@5 and exceeds the best baseline by over 10% on SWE-bench Live Lite. These results highlight our superior fine-grained localization accuracy in complex codebases. Furthermore, it achieves 98.5% reconstruction coverage on RepoCraft, confirming RPG's high-fidelity capacity to mirror the original codebase and closing the loop between intent and implementation.",
+    "authors": [
+      "Jane Luo",
+      "Chengyu Yin",
+      "Xin Zhang",
+      "Qingtao Li",
+      "Steven Liu",
+      "Yiming Huang",
+      "Jie Wu",
+      "Hao Liu",
+      "Yangyu Huang",
+      "Yu Kang",
+      "Fangkai Yang",
+      "Ying Xin",
+      "Scarlett Li"
+    ],
+    "likes": 80,
+    "published_date": "Feb 2",
+    "url": "https://huggingface.co/papers/2602.02084",
+    "date_collected": "2026-02-06T07:12:03.895424+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "루프를 닫는다: RPG-인코더를 활용한 보편적 저장소 표현",
+      "abstract": "현재의 저장소 에이전트는 분할된 표현으로 추론적 연결 불일치를 겪고 있습니다. 기존 방법은 독립적인 API 문서 또는 의미적 심도가 부족한 의존성 그래프에 의존하고 있습니다. 저희는 저장소 이해와 생성을 통합된 주기 내에서 반대과정으로 간주합니다: 생성은 의도를 구현으로 확장하는 반면, 이해는 구현을 의도로 압축합니다. 이에 대응하기 위해, 우리는 RPG-인코더라는 프레임워크를 제안합니다. 이 프레임워크는 Repository Planning Graph (RPG)을 정적 생성 청사진에서 통합된, 고품질 표현으로 일반화합니다. RPG-인코더는 세 가지 메커니즘을 통해 추론 루프를 닫습니다: (1) 코드를 RPG로 변환하여 코드 의존성과 함께 추상화된 의미적 기능을 결합하는 인코딩; (2) 유지 비용을 저장소 규모로부터 분리하면서 토폴로지를 점진적으로 발전시켜, 오버헤드를 95.7% 줄이는 방식으로 분해; 및 (3) 구조 인식 탐색을 위한 통합된 인터페이스로 작동. 평가에서 RPG-인코더는 SWE-bench Verified에서 93.7%의 정확도로 최고 수준의 저장소 이해력을 확립하고, SWE-bench Live Lite에서 최상의 베이스라인을 10% 이상 초과합니다. 이러한 결과는 복잡한 코드베이스에서의 우수한 섬세한 지역화 정확성을 강조합니다. 또한, RepoCraft에서 98.5%의 복원 범위를 달성함으로써 RPG의 고품질 능력을 확인하고, 의도와 구현 사이의 루프를 닫습니다."
+    },
+    "summary": "1. RPG-인코더는 저장소 이해와 생성을 통합된 주기로 처리하여, 고품질 표현을 제공하며 추론 루프를 닫습니다.\n2. 새로운 프레임워크는 코드를 RPG로 변환하고 토폴로지를 점진적으로 발전시켜 유지 비용을 줄이며, 구조 인식 탐색을 위한 통합 인터페이스로 작동합니다.\n3. 실험에서 RPG-인코더는 SWE-bench Verified에서 최고 수준의 저장소 이해력을 보여주고, 복원 범위에서 뛰어난 성과를 거두며, 의도와 구현 사이의 루프를 닫습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Golden Goose: A Simple Trick to Synthesize Unlimited RLVR Tasks from Unverifiable Internet Text",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has become a cornerstone for unlocking complex reasoning in Large Language Models (LLMs). Yet, scaling up RL is bottlenecked by limited existing verifiable data, where improvements increasingly saturate over prolonged training. To overcome this, we propose Golden Goose, a simple trick to synthesize unlimited RLVR tasks from unverifiable internet text by constructing a multiple-choice question-answering version of the fill-in-the-middle task. Given a source text, we prompt an LLM to identify and mask key reasoning steps, then generate a set of diverse, plausible distractors. This enables us to leverage reasoning-rich unverifiable corpora typically excluded from prior RLVR data construction (e.g., science textbooks) to synthesize GooseReason-0.7M, a large-scale RLVR dataset with over 0.7 million tasks spanning mathematics, programming, and general scientific domains. Empirically, GooseReason effectively revives models saturated on existing RLVR data, yielding robust, sustained gains under continuous RL and achieving new state-of-the-art results for 1.5B and 4B-Instruct models across 15 diverse benchmarks. Finally, we deploy Golden Goose in a real-world setting, synthesizing RLVR tasks from raw FineWeb scrapes for the cybersecurity domain, where no prior RLVR data exists. Training Qwen3-4B-Instruct on the resulting data GooseReason-Cyber sets a new state-of-the-art in cybersecurity, surpassing a 7B domain-specialized model with extensive domain-specific pre-training and post-training. This highlights the potential of automatically scaling up RLVR data by exploiting abundant, reasoning-rich, unverifiable internet text.",
+    "authors": [
+      "Ximing Lu",
+      "David Acuna",
+      "Jaehun Jung",
+      "Jian Hu",
+      "Di Zhang",
+      "Shizhe Diao",
+      "Yunheng Zou",
+      "Shaokun Zhang",
+      "Brandon Cui",
+      "Mingjie Liu",
+      "Hyunwoo Kim",
+      "Prithviraj Ammanabrolu",
+      "Jan Kautz",
+      "Yi Dong",
+      "Yejin Choi"
+    ],
+    "likes": 79,
+    "published_date": "Jan 30",
+    "url": "https://huggingface.co/papers/2601.22975",
+    "date_collected": "2026-02-06T07:12:03.897064+09:00",
+    "week": "2026-W06",
+    "translation": {
+      "title": "황금 알: 확인할 수 없는 인터넷 텍스트에서 제한 없이 RLVR 작업을 합성하는 간단한 방법",
+      "abstract": "확인 가능한 보상(Verifiable Rewards)과 함께 한국어 대형 언어 모델(LLM)에서 복잡한 추론을 해제하는 계기로 사용되고 있는 Reinforcement Learning(강화 학습)이 있다. 그러나 RL 확장은 기존 확인 가능한 데이터에 한계로 인해 병목 현상을 보이며, 개선 사항이 점차 훈련 시간이 지남에 따라 포화된다. 이에 우리는 황금 알(Golden Goose)을 제안하여, 확인할 수 없는 인터넷 텍스트로부터 확인 가능한 RLVR 작업을 제한 없이 합성하는 간단한 방법으로, 중간 채우기(Multiple Choice Question-Answering) 작업의 버전을 만들어낸다. 원본 텍스트를 바탕으로 LLM에게 핵심 추론 단계를 식별하고 가리고, 다양하고 타당한 혼동 요소(set of diverse, plausible distractors)를 생성하도록 유도한다. 이를 통해, 우리는 이전 RLVR 데이터 구축에서 배제되었던 추론이 풍부한 확인할 수 없는 말뭉치(예: 과학 교과서)를 활용하여, 수학, 프로그래밍, 일반 과학 영역에 걸쳐 70만 개의 작업을 포함하는 대규모 RLVR 데이터 세트인 GooseReason-0.7M을 합성한다. 경험적으로, GooseReason은 기존 RLVR 데이터에 포화된 모델을 효과적으로 부활시키며, 지속적인 RL로 신뢰할만한 이득을 얻을 수 있으며, 15가지 다양한 벤치마크에서 15억과 40억 Instruct 모델에 대한 새로운 최고 성능을 달성한다. 끝으로, 우리는 확인 가능한 RLVR 데이터가 존재하지 않는 사이버 보안 영역의 원시 FineWeb 스크랩으로부터 RLVR 작업을 합성하기 위해 황금 알을 실제 환경에서 배치한다. 이 결과 생성된 데이터 GooseReason-Cyber에서 Qwen3-4B-Instruct를 훈련시켜, 도메인 전문화된 70억 모델을 웃돌며 사이버 보안 분야에서 새로운 최고 성과를 달성한다."
+    },
+    "summary": "1. 황금 알(Golden Goose)은 인터넷 텍스트에서 확인할 수 없는 내용을 활용하여 거대한 RLVR 데이터 세트를 합성하고, 기존 모델의 성능을 지속적으로 개선시킨다.\n2. GooseReason을 통해 더 많은 추론이 풍부한 데이터를 활용하여 수학, 프로그래밍 및 과학 분야를 포함한 다양한 벤치마크에서 새로운 최고 성과를 달성한다.\n3. 실제 사이버 보안 분야에서도 새로운 최고 성과를 달성하여, RLVR 작업을 생성하는 데 황금 알이 큰 잠재력을 보여준다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

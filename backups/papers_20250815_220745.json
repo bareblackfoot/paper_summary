@@ -1,0 +1,315 @@
+[
+  {
+    "title": "GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models",
+    "abstract": "We present GLM-4.5, an open-source Mixture-of-Experts (MoE) large language\nmodel with 355B total parameters and 32B activated parameters, featuring a\nhybrid reasoning method that supports both thinking and direct response modes.\nThrough multi-stage training on 23T tokens and comprehensive post-training with\nexpert model iteration and reinforcement learning, GLM-4.5 achieves strong\nperformance across agentic, reasoning, and coding (ARC) tasks, scoring 70.1% on\nTAU-Bench, 91.0% on AIME 24, and 64.2% on SWE-bench Verified. With much fewer\nparameters than several competitors, GLM-4.5 ranks 3rd overall among all\nevaluated models and 2nd on agentic benchmarks. We release both GLM-4.5 (355B\nparameters) and a compact version, GLM-4.5-Air (106B parameters), to advance\nresearch in reasoning and agentic AI systems. Code, models, and more\ninformation are available at https://github.com/zai-org/GLM-4.5.",
+    "authors": [
+      "GLM-4. 5 Team",
+      "Aohan Zeng",
+      "Xin Lv",
+      "Qinkai Zheng",
+      "Zhenyu Hou",
+      "Bin Chen",
+      "Chengxing Xie",
+      "Cunxiang Wang",
+      "Da Yin",
+      "Hao Zeng",
+      "Jiajie Zhang",
+      "Kedong Wang",
+      "Lucen Zhong",
+      "Mingdao Liu",
+      "Rui Lu",
+      "Shulin Cao",
+      "Xiaohan Zhang",
+      "Xuancheng Huang",
+      "Yao Wei",
+      "Yean Cheng",
+      "Yifan An",
+      "Yilin Niu"
+    ],
+    "likes": 134,
+    "published_date": "Aug 8",
+    "url": "https://huggingface.co/papers/2508.06471",
+    "date_collected": "2025-08-15T07:07:50.650272+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "GLM-4.5: 에이전틱, 추론 및 코딩 (ARC) Foundation 모델",
+      "abstract": "GLM-4.5는 총 355B의 파라미터와 32B의 활성화된 파라미터를 갖춘 오픈소스 Mixture-of-Experts (MoE) 대형 언어 모델로, 두 가지 모드를 지원하는 혼합 추론 방법을 특징으로 합니다. 23조 토큰에 대한 다단계 훈련과 전문가 모델 반복 및 강화 학습에 따른 포스트 트레이닝을 통해, GLM-4.5는 에이전틱, 추론 및 코딩 (ARC) 작업에서 강력한 성과를 달성하며, TAU-Bench에서 70.1%, AIME 24에서 91.0%, SWE-bench Verified에서 64.2%의 점수를 기록합니다. GLM-4.5는 몇 안 되는 경쟁 모델보다 적은 파라미터로 평가된 모든 모델 중 전반적으로 3위, 에이전틱 벤치마크에서 2위를 기록합니다. 우리는 추론 및 에이전틱 AI 시스템 연구를 진보시키기 위해 GLM-4.5 (355B 파라미터)와 소형 버전인 GLM-4.5-Air (106B 파라미터)를 공개합니다. 코드, 모델 및 자세한 정보는 https://github.com/zai-org/GLM-4.5에서 확인할 수 있습니다."
+    },
+    "summary": "1. GLM-4.5는 대형 언어 모델로, 에이전틱, 추론 및 코딩 작업에서 뛰어난 성과를 보이며, 혼합 추론 방법을 사용하여 다양한 모드를 지원합니다.\n2. 다단계 훈련과 전문가 모델 반복, 강화 학습을 통해 GLM-4.5는 적은 파라미터로 많은 경쟁 모델보다 우수한 결과를 달성하였습니다.\n3. GLM-4.5는 에이전틱 벤치마크에서 뛰어나며, GLM-4.5와 그 소형 버전인 GLM-4.5-Air를 공개함으로써 추론 및 에이전틱 AI 시스템 연구를 진전시키고자 합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability",
+    "abstract": "Large Language Model (LLM) based listwise ranking has shown superior\nperformance in many passage ranking tasks. With the development of Large\nReasoning Models, many studies have demonstrated that step-by-step reasoning\nduring test-time helps improve listwise ranking performance. However, due to\nthe scarcity of reasoning-intensive training data, existing rerankers perform\npoorly in many complex ranking scenarios and the ranking ability of\nreasoning-intensive rerankers remains largely underdeveloped. In this paper, we\nfirst propose an automated reasoning-intensive training data synthesis\nframework, which sources training queries and passages from diverse domains and\napplies DeepSeek-R1 to generate high-quality training labels. A\nself-consistency data filtering mechanism is designed to ensure the data\nquality. To empower the listwise reranker with strong reasoning ability, we\nfurther propose a two-stage post-training approach, which includes a cold-start\nsupervised fine-tuning (SFT) stage for reasoning pattern learning and a\nreinforcement learning (RL) stage for further ranking ability enhancement.\nDuring the RL stage, based on the nature of listwise ranking, we design a\nmulti-view ranking reward, which is more effective than a ranking metric-based\nreward. Extensive experiments demonstrate that our trained reasoning-intensive\nreranker ReasonRank outperforms existing baselines significantly and\nalso achieves much lower latency than pointwise reranker Rank1. Through\nfurther experiments, our ReasonRank has achieved state-of-the-art (SOTA)\nperformance 40.6 on the BRIGHT\nleaderboard\\footnote{https://brightbenchmark.github.io/.} Our codes are\navailable at https://github.com/8421BCD/ReasonRank.",
+    "authors": [
+      "Wenhan Liu",
+      "Xinyu Ma",
+      "Weiwei Sun",
+      "Yutao Zhu",
+      "Yuchen Li",
+      "Dawei Yin",
+      "Zhicheng Dou"
+    ],
+    "likes": 105,
+    "published_date": "Aug 9",
+    "url": "https://huggingface.co/papers/2508.07050",
+    "date_collected": "2025-08-15T07:07:50.651531+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "이유 랭크: 강력한 추론 능력으로 패싸지 랭킹 증강",
+      "abstract": "대규모 언어 모델 (Large Language Model, LLM)을 기반으로 한 목록형 랭킹은 많은 패싸지 랭킹 작업에서 우수한 성능을 보여주었습니다."
+    },
+    "summary": "1. 다양한 도메인에서 학습 쿼리 및 패싸지를 활용하는 데이터 합성 프레임워크를 제안하여 이유 랭크 모델을 훈련시킴.\n2. 이유 랭크 모델에 강력한 추론 능력을 부여하기 위해 냉동 시작 감독된 미세 조정 및 강화 학습 단계를 포함한 이차 포스트 트레이닝 방법 제안.\n3. 실험 결과, 이유 랭크 모델은 기존 기준선을 크게 능가하고 높은 성능을 달성하며, 또한 랭킹 능력을 증가시키는 동안 더 낮은 대기 시간을 달성함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "WebWatcher: Breaking New Frontier of Vision-Language Deep Research Agent",
+    "abstract": "Web agents such as Deep Research have demonstrated superhuman cognitive\nabilities, capable of solving highly challenging information-seeking problems.\nHowever, most research remains primarily text-centric, overlooking visual\ninformation in the real world. This makes multimodal Deep Research highly\nchallenging, as such agents require much stronger reasoning abilities in\nperception, logic, knowledge, and the use of more sophisticated tools compared\nto text-based agents. To address this limitation, we introduce WebWatcher, a\nmulti-modal Agent for Deep Research equipped with enhanced visual-language\nreasoning capabilities. It leverages high-quality synthetic multimodal\ntrajectories for efficient cold start training, utilizes various tools for deep\nreasoning, and further enhances generalization through reinforcement learning.\nTo better evaluate the capabilities of multimodal agents, we propose\nBrowseComp-VL, a benchmark with BrowseComp-style that requires complex\ninformation retrieval involving both visual and textual information.\nExperimental results show that WebWatcher significantly outperforms proprietary\nbaseline, RAG workflow and open-source agents in four challenging VQA\nbenchmarks, which paves the way for solving complex multimodal\ninformation-seeking tasks.",
+    "authors": [
+      "Xinyu Geng",
+      "Peng Xia",
+      "Zhen Zhang",
+      "Xinyu Wang",
+      "Qiuchen Wang",
+      "Ruixue Ding",
+      "Chenxi Wang",
+      "Jialong Wu",
+      "Yida Zhao",
+      "Kuan Li",
+      "Yong Jiang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Jingren Zhou"
+    ],
+    "likes": 102,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2508.05748",
+    "date_collected": "2025-08-15T07:07:50.653044+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "웹워처: 비전-언어 심층 연구 에이전트의 새로운 선도 무넺디기",
+      "abstract": "딥 리서치와 같은 웹 에이전트들은 초인적인 인지 능력을 보여주며, 매우 어려운 정보 탐색 문제를 해결할 수 있는데, 대부분의 연구는 주로 텍스트 중심이며, 실제 세계의 시각적 정보를 간과한다. 이는 멀티모달 딥 리서치를 매우 어렵게 만들어서, 해당 에이전트들은 텍스트 기반 에이전트와 비교해서 훨씬 강력한 인식, 논리, 지식 및 더 복잡한 도구 사용 능력이 필요하다. 이러한 한계를 해결하기 위해, 우리는 더 강화된 비전-언어 추론 능력을 갖춘 멀티모달 딥 리서치 에이전트인 웹워처를 소개한다. 이는 효율적인 초기 학습을 위해 고품질의 합성 멀티모달 경로를 활용하고, 심층 추론을 위한 다양한 도구를 활용하며, 강화학습을 통해 일반화를 더욱 향상시킨다. 멀티모달 에이전트의 능력을 더 잘 평가하기 위해, 시각적 및 텍스트 정보 모두를 포함하는 복잡한 정보 검색이 필요한 BrowseComp-VL 벤치마크를 제안한다. 실험 결과는 웹워처가 4가지 어려운 VQA 벤치마크에서 사유하는 방법을 열어주며, 비공개 베이스라인, RAG 워크플로 및 오픈 소스 에이전트들을 크게 넘어섰음을 보여준다."
+    },
+    "summary": "1. WebWatcher는 멀티모달 딥 리서치를 위한 비전-언어 추론 능력을 갖춘 에이전트로, 합성 멀티모달 경로를 활용하여 초기 학습을 진행하고, 강화학습을 통해 일반화를 향상시킨다.\n2. 멀티모달 에이전트 능력을 평가하기 위한 BrowseComp-VL 벤치마크를 제안하였으며, 실험 결과에서 WebWatcher가 다른 기준 모델들을 크게 능가하는 것을 확인할 수 있다.\n3. 이러한 연구는 복잡한 멀티모달 정보 탐색 작업을 해결하는 길을 열어주며, 심층 학습에서 멀티모달 접근법의 중요성을 강조한다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "WideSearch: Benchmarking Agentic Broad Info-Seeking",
+    "abstract": "From professional research to everyday planning, many tasks are bottlenecked\nby wide-scale information seeking, which is more repetitive than cognitively\ncomplex. With the rapid development of Large Language Models (LLMs), automated\nsearch agents powered by LLMs offer a promising solution to liberate humans\nfrom this tedious work. However, the capability of these agents to perform such\n\"wide-context\" collection reliably and completely remains largely unevaluated\ndue to a lack of suitable benchmarks. To bridge this gap, we introduce\nWideSearch, a new benchmark engineered to evaluate agent reliability on these\nlarge-scale collection tasks. The benchmark features 200 manually curated\nquestions (100 in English, 100 in Chinese) from over 15 diverse domains,\ngrounded in real user queries. Each task requires agents to collect large-scale\natomic information, which could be verified one by one objectively, and arrange\nit into a well-organized output. A rigorous five-stage quality control pipeline\nensures the difficulty, completeness, and verifiability of the dataset. We\nbenchmark over 10 state-of-the-art agentic search systems, including\nsingle-agent, multi-agent frameworks, and end-to-end commercial systems. Most\nsystems achieve overall success rates near 0\\%, with the best performer\nreaching just 5\\%. However, given sufficient time, cross-validation by multiple\nhuman testers can achieve a near 100\\% success rate. These results demonstrate\nthat present search agents have critical deficiencies in large-scale\ninformation seeking, underscoring urgent areas for future research and\ndevelopment in agentic search. Our dataset, evaluation pipeline, and benchmark\nresults have been publicly released at https://widesearch-seed.github.io/",
+    "authors": [
+      "Ryan Wong",
+      "Jiawei Wang",
+      "Junjie Zhao",
+      "Li Chen",
+      "Yan Gao",
+      "Long Zhang",
+      "Xuan Zhou",
+      "Zuo Wang",
+      "Kai Xiang",
+      "Ge Zhang",
+      "Wenhao Huang",
+      "Yang Wang",
+      "Ke Wang"
+    ],
+    "likes": 93,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.07999",
+    "date_collected": "2025-08-15T07:07:50.654522+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "WideSearch: 적용적 광범위 정보수집의 벤치마킹",
+      "abstract": "전문 연구부터 일상적 계획까지 많은 작업은 인지적으로 복잡한 것보다 반복적인 광범위한 정보수집으로 병목 현상을 겪습니다. 대형 언어 모델(LLM)의 급속한 발전으로 LLM 기반의 자동 검색 에이전트들은 이 지루한 작업에서 사람들을 해방시키는 유망한 솔루션을 제공합니다. 그러나 이러한 에이전트의 \"광맥락\" 수집 역량이 신뢰성 있고 완전하게 진행되는지는 적합한 벤치마크 부재로 대부분 평가되지 않았습니다. 본 논문은 이러한 공백을 메우기 위해 에이전트 신뢰성을 평가하기 위해 공항된 새로운 벤치마크인 WideSearch를 소개합니다."
+    },
+    "summary": "1. 대규모 정보수집 작업에서 현재 검색 에이전트들은 신뢰성 측면에서 심각한 결함을 보여주며, 미래 연구 및 개발을 위한 긴급한 영역을 강조합니다.\n2. WideSearch 벤치마크는 15가지 이상 다양한 도메인으로부터 언제든지 확인 가능한 대규모 원자 정보를 수집하고 체계적으로 정리하는데 에이전트들이 요구되는 200개의 수동으로 선별된 질문을 특징으로 합니다.\n3. 10개 이상의 최첨단 검색 시스템을 평가한 결과, 대다수의 시스템이 전반적인 성공률이 0%에 가깝고, 가장 우수한 수행자도 5%에 불과하며, 충분한 시간을 제공하면 다수의 인간 테스터에 의한 교차 확인으로 거의 100%의 성공률을 달성할 수 있음이 입증되었습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm\n  Bridging Foundation Models and Lifelong Agentic Systems",
+    "abstract": "Recent advances in large language models have sparked growing interest in AI\nagents capable of solving complex, real-world tasks. However, most existing\nagent systems rely on manually crafted configurations that remain static after\ndeployment, limiting their ability to adapt to dynamic and evolving\nenvironments. To this end, recent research has explored agent evolution\ntechniques that aim to automatically enhance agent systems based on interaction\ndata and environmental feedback. This emerging direction lays the foundation\nfor self-evolving AI agents, which bridge the static capabilities of foundation\nmodels with the continuous adaptability required by lifelong agentic systems.\nIn this survey, we provide a comprehensive review of existing techniques for\nself-evolving agentic systems. Specifically, we first introduce a unified\nconceptual framework that abstracts the feedback loop underlying the design of\nself-evolving agentic systems. The framework highlights four key components:\nSystem Inputs, Agent System, Environment, and Optimisers, serving as a\nfoundation for understanding and comparing different strategies. Based on this\nframework, we systematically review a wide range of self-evolving techniques\nthat target different components of the agent system. We also investigate\ndomain-specific evolution strategies developed for specialised fields such as\nbiomedicine, programming, and finance, where optimisation objectives are\ntightly coupled with domain constraints. In addition, we provide a dedicated\ndiscussion on the evaluation, safety, and ethical considerations for\nself-evolving agentic systems, which are critical to ensuring their\neffectiveness and reliability. This survey aims to provide researchers and\npractitioners with a systematic understanding of self-evolving AI agents,\nlaying the foundation for the development of more adaptive, autonomous, and\nlifelong agentic systems.",
+    "authors": [
+      "Jinyuan Fang",
+      "Yanwen Peng",
+      "Xi Zhang",
+      "Yingxu Wang",
+      "Xinhao Yi",
+      "Guibin Zhang",
+      "Yi Xu",
+      "Bin Wu",
+      "Siwei Liu",
+      "Zihao Li",
+      "Zhaochun Ren",
+      "Nikos Aletras",
+      "Xi Wang",
+      "Han Zhou",
+      "Zaiqiao Meng"
+    ],
+    "likes": 70,
+    "published_date": "Aug 10",
+    "url": "https://huggingface.co/papers/2508.07407",
+    "date_collected": "2025-08-15T07:07:50.656080+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "자기진화형 AI 에이전트의 포괄적 고찰: 기초 모델과 평생 에이전틱 시스템 연결",
+      "abstract": "최근 대형 언어 모델의 발전으로 복잡한 현실 과제 해결 능력을 갖춘 AI 에이전트에 대한 관심이 증가하고 있습니다. 그러나 대부분의 기존 에이전트 시스템은 배포 후 정적 상태로 남아 있는 수동적으로 설계된 설정에 의존하며, 동적이고 진화하는 환경에 적응하는 능력에 제한이 있습니다. 이에 최근 연구에서는 상호작용 데이터와 환경 피드백을 기반으로 에이전트 시스템을 자동으로 향상시키는 에이전트 진화 기법을 탐구해왔습니다. 이 신흥 방향은 자기진화형 AI 에이전트를 위한 기초 모델의 정적 능력과 평생 에이전틱 시스템에서 요구되는 지속적 적응성을 연결하는 기반을 마련하고 있습니다. 본 조사에서는 자기진화형 에이전틱 시스템에 대한 기존 기법의 포괄적 검토를 제공합니다."
+    },
+    "summary": "1. 기초 모델의 정적 능력과 평생 에이전틱 시스템에서 요구되는 적응성을 연결하는 자기진화형 AI 에이전트에 대한 포괄적 검토.\n2. 에이전트 시스템의 다양한 구성 요소에 대상화된 다양한 자기진화 기법의 체계적 검토.\n3. 자기진화형 에이전틱 시스템에 대한 평가, 안전성, 윤리 고려사항에 관한 전문 토론을 통한 효과성 및 신뢰성 확보.",
+    "categories": [
+      "LLM",
+      "인공지능",
+      "기계학습"
+    ]
+  },
+  {
+    "title": "Matrix-3D: Omnidirectional Explorable 3D World Generation",
+    "abstract": "Explorable 3D world generation from a single image or text prompt forms a\ncornerstone of spatial intelligence. Recent works utilize video model to\nachieve wide-scope and generalizable 3D world generation. However, existing\napproaches often suffer from a limited scope in the generated scenes. In this\nwork, we propose Matrix-3D, a framework that utilize panoramic representation\nfor wide-coverage omnidirectional explorable 3D world generation that combines\nconditional video generation and panoramic 3D reconstruction. We first train a\ntrajectory-guided panoramic video diffusion model that employs scene mesh\nrenders as condition, to enable high-quality and geometrically consistent scene\nvideo generation. To lift the panorama scene video to 3D world, we propose two\nseparate methods: (1) a feed-forward large panorama reconstruction model for\nrapid 3D scene reconstruction and (2) an optimization-based pipeline for\naccurate and detailed 3D scene reconstruction. To facilitate effective\ntraining, we also introduce the Matrix-Pano dataset, the first large-scale\nsynthetic collection comprising 116K high-quality static panoramic video\nsequences with depth and trajectory annotations. Extensive experiments\ndemonstrate that our proposed framework achieves state-of-the-art performance\nin panoramic video generation and 3D world generation. See more in\nhttps://matrix-3d.github.io.",
+    "authors": [
+      "Zhongqi Yang",
+      "Wenhang Ge",
+      "Yuqi Li",
+      "Jiaqi Chen",
+      "Haoyuan Li",
+      "Mengyin An",
+      "Fei Kang",
+      "Hua Xue",
+      "Baixin Xu",
+      "Yuyang Yin",
+      "Eric Li",
+      "Yang Liu",
+      "Yikai Wang",
+      "Hao-Xiang Guo",
+      "Yahui Zhou"
+    ],
+    "likes": 62,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.08086",
+    "date_collected": "2025-08-15T07:07:50.657630+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "Matrix-3D: 전방향 탐색 가능한 3D 세계 생성",
+      "abstract": "단일 이미지나 텍스트 프롬프트로부터 3D 탐색 가능한 세계 생성은 공간 지능의 중추를 형성합니다. 최근 연구는 비디오 모델을 활용하여 광범위하고 일반화 가능한 3D 세계 생성을 이루는데 있습니다. 그러나 기존 방법론은 생성된 장면의 범위에 제약을 받는 경우가 많습니다. 본 논문에서는 전방향 전경 표현을 활용하여 조건부 비디오 생성과 파노라마 3D 재구성을 결합한, 넓은 범위의 전체적으로 탐색 가능한 3D 세계 생성을 위한 Matrix-3D 프레임워크를 제안합니다. 우리는 먼저 장면 메쉬 렌더를 조건으로 사용하는 궤적 안내형 전방향 비디오 확산 모델을 훈련하여 고품질이며 기하학적으로 일관된 장면 비디오 생성을 가능하게 합니다. 또한, 생생한 훈련을 위해, 깊이와 궤적 주석이 포함된 116,000개의 고품질 정적 파노라마 비디오 시퀀스로 구성된 최초의 대규모 합성 데이터 세트 Matrix-Pano 데이터 세트도 소개합니다. 방대한 실험 결과는 우리의 제안 프레임워크가 파노라마 비디오 생성 및 3D 세계 생성에서 최첨단의 성과를 달성함을 보여줍니다. 더 많은 정보는 https://matrix-3d.github.io 에서 확인할 수 있습니다."
+    },
+    "summary": "1. 단일 이미지나 텍스트로부터 넓은 범위의 전방향 탐색 가능한 3D 세계를 생성하는 Matrix-3D 프레임워크를 제안함.\n2. 고품질이며 기하학적으로 일관된 장면 비디오 생성을 위해 장면 메쉬 렌더를 조건으로 사용하는 궤적 안내형 전방향 비디오 확산 모델을 훈련함.\n3. 최첨단의 성과를 보이는 Matrix-Pano 데이터 세트를 활용하여, 파노라마 비디오 생성과 3D 세계 생성에 있어서 우수한 성능을 달성함.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Omni-Effects: Unified and Spatially-Controllable Visual Effects\n  Generation",
+    "abstract": "Visual effects (VFX) are essential visual enhancements fundamental to modern\ncinematic production. Although video generation models offer cost-efficient\nsolutions for VFX production, current methods are constrained by per-effect\nLoRA training, which limits generation to single effects. This fundamental\nlimitation impedes applications that require spatially controllable composite\neffects, i.e., the concurrent generation of multiple effects at designated\nlocations. However, integrating diverse effects into a unified framework faces\nmajor challenges: interference from effect variations and spatial\nuncontrollability during multi-VFX joint training. To tackle these challenges,\nwe propose Omni-Effects, a first unified framework capable of generating\nprompt-guided effects and spatially controllable composite effects. The core of\nour framework comprises two key innovations: (1) LoRA-based Mixture of Experts\n(LoRA-MoE), which employs a group of expert LoRAs, integrating diverse effects\nwithin a unified model while effectively mitigating cross-task interference.\n(2) Spatial-Aware Prompt (SAP) incorporates spatial mask information into the\ntext token, enabling precise spatial control. Furthermore, we introduce an\nIndependent-Information Flow (IIF) module integrated within the SAP, isolating\nthe control signals corresponding to individual effects to prevent any unwanted\nblending. To facilitate this research, we construct a comprehensive VFX dataset\nOmni-VFX via a novel data collection pipeline combining image editing and\nFirst-Last Frame-to-Video (FLF2V) synthesis, and introduce a dedicated VFX\nevaluation framework for validating model performance. Extensive experiments\ndemonstrate that Omni-Effects achieves precise spatial control and diverse\neffect generation, enabling users to specify both the category and location of\ndesired effects.",
+    "authors": [
+      "Fangyuan Mao",
+      "Aiming Hao",
+      "Jintao Chen",
+      "Dongxia Liu",
+      "Xiaokun Feng",
+      "Jiashu Zhu",
+      "Meiqi Wu",
+      "Chubin Chen",
+      "Jiahong Wu",
+      "Xiangxiang Chu"
+    ],
+    "likes": 52,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.07981",
+    "date_collected": "2025-08-15T07:07:50.658962+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "옴니-이펙트: 통합 및 공간 제어 가능한 비주얼 이펙트 생성",
+      "abstract": "비주얼 이펙트(VFX)는 현대 영화 제작에 필수적인 시각적 향상 요소입니다. 비디오 생성 모델은 VFX 제작에 비용 효율적인 해결책을 제공하지만, 현재 방법은 효과별 LoRA 훈련에 제약을 받아 단일 효과 생성으로 제한됩니다. 이 기본 제한은 지정된 위치에서 여러 효과를 동시에 생성하는 공간적으로 제어 가능한 복합 효과가 필요한 응용 프로그램에 방해가 됩니다. 그러나 다양한 효과를 통합하는 것은 효과 변화와 공간 미제어성으로 인한 다중 VFX 공동 훈련 중 간섭과 어려움을 겪습니다. 이러한 도전에 대처하기 위해 우리는 첫 통합 프레임워크인 옴니-이펙트를 제안합니다."
+    },
+    "summary": "1. 옴니-이펙트는 여러 효과를 통합하는 LoRA-MoE 및 공간적 정보를 내포한 SAP를 핵심으로 하는 통합 프레임워크이다.\n2. 새로운 VFX 데이터셋 구축과 모델 성능 평가를 위한 전용 VFX 평가 프레임워크를 소개하여, 정확한 공간 제어와 다양한 효과 생성을 실현함.\n3. Omni-Effects는 사용자가 원하는 효과의 유형과 위치를 지정할 수 있도록 함.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Voost: A Unified and Scalable Diffusion Transformer for Bidirectional\n  Virtual Try-On and Try-Off",
+    "abstract": "Virtual try-on aims to synthesize a realistic image of a person wearing a\ntarget garment, but accurately modeling garment-body correspondence remains a\npersistent challenge, especially under pose and appearance variation. In this\npaper, we propose Voost - a unified and scalable framework that jointly learns\nvirtual try-on and try-off with a single diffusion transformer. By modeling\nboth tasks jointly, Voost enables each garment-person pair to supervise both\ndirections and supports flexible conditioning over generation direction and\ngarment category, enhancing garment-body relational reasoning without\ntask-specific networks, auxiliary losses, or additional labels. In addition, we\nintroduce two inference-time techniques: attention temperature scaling for\nrobustness to resolution or mask variation, and self-corrective sampling that\nleverages bidirectional consistency between tasks. Extensive experiments\ndemonstrate that Voost achieves state-of-the-art results on both try-on and\ntry-off benchmarks, consistently outperforming strong baselines in alignment\naccuracy, visual fidelity, and generalization.",
+    "authors": [
+      "Seungyong Lee",
+      "Jeong-gi Kwak"
+    ],
+    "likes": 47,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2508.04825",
+    "date_collected": "2025-08-15T07:07:50.659946+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "Voost: 통합 및 확장 가능한 이중 확산 트랜스포머를 통한 양방향 가상 착용 및 탈의",
+      "abstract": "가상 착용은 대상 의상을 입은 사람의 현실적인 이미지를 합성하는 것을 목표로 하지만 의상-신체 대응을 정확히 모델링하는 것은 자세와 외형 변화 하에 특히 어려운 과제입니다. 본 논문에서는 한 개의 확산 트랜스포머로 가상 착용 및 탈의를 함께 학습하는 통합 및 확장 가능한 프레임워크인 Voost를 제안합니다. 이중 작업을 모델링함으로써 Voost는 각 의상-인물 쌍이 양방향으로 감독할 수 있게 하며 생성 방향과 의상 카테고리에 유연하게 조건을 부여함으로써 작업별 네트워크, 보조 손실 또는 추가적 레이블 없이 의상-신체 관계 추론을 강화합니다. 게다가 해상도나 마스크 변화에 대한 강건성을 위한 주의 온도 스케일링 및 작업 간 이중 일관성을 활용한 자기 보정 샘플링 두 가지 추론 시간 기법을 소개합니다. 광범위한 실험 결과 Voost가 시험 및 탈의 벤치마크에서 최첨단 결과를 달성하며 정렬 정확도, 시각적 충실성 및 일반화 측면에서 강력한 베이스라인을 일관되게 능가하는 것을 보여줍니다."
+    },
+    "summary": "1. Voost는 가상 착용 및 탈의를 동시에 학습하는 확산 트랜스포머를 이용한 통합 및 확장 가능한 프레임워크로, 의상-인물 쌍이 양방향으로 감독받을 수 있고, 유연한 조건 설정을 통해 의상-신체 관계 추론을 강화합니다.\n2. Voost는 주의 온도 스케일링 및 자기 보정 샘플링과 같은 추론 시간 기법을 도입하여 해상도나 마스크 변화에 강건하며 작업 간 일관성을 활용합니다.\n3. 지속적인 실험으로 Voost가 최첨단 정렬 정확도, 시각적 충실성 및 일반화 능력을 갖춘 결과를 보여주며 강력한 베이스라인을 능가함을 입증합니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Story2Board: A Training-Free Approach for Expressive Storyboard\n  Generation",
+    "abstract": "We present Story2Board, a training-free framework for expressive storyboard\ngeneration from natural language. Existing methods narrowly focus on subject\nidentity, overlooking key aspects of visual storytelling such as spatial\ncomposition, background evolution, and narrative pacing. To address this, we\nintroduce a lightweight consistency framework composed of two components:\nLatent Panel Anchoring, which preserves a shared character reference across\npanels, and Reciprocal Attention Value Mixing, which softly blends visual\nfeatures between token pairs with strong reciprocal attention. Together, these\nmechanisms enhance coherence without architectural changes or fine-tuning,\nenabling state-of-the-art diffusion models to generate visually diverse yet\nconsistent storyboards. To structure generation, we use an off-the-shelf\nlanguage model to convert free-form stories into grounded panel-level prompts.\nTo evaluate, we propose the Rich Storyboard Benchmark, a suite of open-domain\nnarratives designed to assess layout diversity and background-grounded\nstorytelling, in addition to consistency. We also introduce a new Scene\nDiversity metric that quantifies spatial and pose variation across storyboards.\nOur qualitative and quantitative results, as well as a user study, show that\nStory2Board produces more dynamic, coherent, and narratively engaging\nstoryboards than existing baselines.",
+    "authors": [
+      "David Dinkevich",
+      "Matan Levy",
+      "Omri Avrahami",
+      "Dvir Samuel",
+      "Dani Lischinski"
+    ],
+    "likes": 39,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2508.09983",
+    "date_collected": "2025-08-15T07:07:50.661060+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "스토리2보드: 표현력 있는 스토리보드의 학습 필요 없는 접근",
+      "abstract": "자연어로부터 표현력 있는 스토리보드를 생성하는 학습 필요 없는 프레임워크인 Story2Board를 제안합니다. 기존 방법은 주로 주체의 신원에 초점을 맞추었지만, 공간 구성, 배경 진화, 서술 템포 등 시각적 스토리텔링의 핵심 측면을 간과합니다. 우리는 이를 해결하기 위해 두 가지 구성 요소인 잠재 패널 고정과 상호 주의 값 혼합으로 구성된 가벼운 일관성 프레임워크를 소개합니다. 이들 매커니즘은 구조 변경이나 파인 튜닝 없이 일관성을 향상시켜 최신 확산 모델이 시각적으로 다양하면서도 일관된 스토리보드를 생성할 수 있게 합니다. 생성을 구조화하기 위해 우리는 기본 언어 모델을 사용하여 자유 형식의 이야기를 기반 패널 수준 프롬프트로 변환합니다. 평가를 위해 레이아웃 다양성, 배경 중심 스토리텔링과 함께 일관성을 평가하기 위해 디자인된 오픈 도메인 내러티브 목록인 Rich Storyboard Benchmark를 제안합니다. 또한 스토리보드 간 공간 및 자세 변형을 측정하는 새로운 씬 다양성 측정 항목을 소개합니다. 우리의 질적 및 양적 결과 및 사용자 연구에 따르면, 기존 기준대비 Story2Board는 더 다이나믹하고 일관성 있으며 서술적으로 매력적인 스토리보드를 생성합니다."
+    },
+    "summary": "1. Story2Board는 학습이 필요 없는 프레임워크로, 시각적 스토리텔링 핵심 측면을 간과하는 기존 방법을 보완하여 일관성 있는 스토리보드를 생성합니다.\n2. 잠재 패널 고정과 상호 주의 값 혼합을 통해 구조 변경이나 파인 튜닝 없이 최신 모델이 다양하면서도 일관된 스토리보드를 생성할 수 있게 합니다.\n3. Rich Storyboard Benchmark를 통해 레이아웃 다양성과 배경 중심 스토리텔링, 그리고 일관성을 평가하며, 새로운 씬 다양성 측정 항목을 도입하여 새로운 차원의 스토리보드 평가를 제공합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Ten Turns: Unlocking Long-Horizon Agentic Search with Large-Scale\n  Asynchronous RL",
+    "abstract": "Recent advancements in LLM-based agents have demonstrated remarkable\ncapabilities in handling complex, knowledge-intensive tasks by integrating\nexternal tools. Among diverse choices of tools, search tools play a pivotal\nrole in accessing vast external knowledge. However, open-source agents still\nfall short of achieving expert-level Search Intelligence, the ability to\nresolve ambiguous queries, generate precise searches, analyze results, and\nconduct thorough exploration. Existing approaches fall short in scalability,\nefficiency, and data quality. For example, small turn limits in existing online\nRL methods, e.g. <=10, restrict complex strategy learning. This paper\nintroduces ASearcher, an open-source project for large-scale RL training of\nsearch agents. Our key contributions include: (1) Scalable fully asynchronous\nRL training that enables long-horizon search while maintaining high training\nefficiency. (2) A prompt-based LLM agent that autonomously synthesizes\nhigh-quality and challenging QAs, creating a large-scale QA dataset. Through RL\ntraining, our prompt-based QwQ-32B agent achieves substantial improvements,\nwith 46.7% and 20.8% Avg@4 gains on xBench and GAIA, respectively. Notably, our\nagent exhibits extreme long-horizon search, with tool calls exceeding 40 turns\nand output tokens exceeding 150k during training time. With a simple agent\ndesign and no external LLMs, ASearcher-Web-QwQ achieves Avg@4 scores of 42.1 on\nxBench and 52.8 on GAIA, surpassing existing open-source 32B agents. We\nopen-source our models, training data, and codes in\nhttps://github.com/inclusionAI/ASearcher.",
+    "authors": [
+      "Jiaxuan Gao",
+      "Wei Fu",
+      "Minyang Xie",
+      "Shusheng Xu",
+      "Chuyi He",
+      "Zhiyu Mei",
+      "Banghua Zhu",
+      "Yi Wu"
+    ],
+    "likes": 38,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.07976",
+    "date_collected": "2025-08-15T07:07:50.662378+09:00",
+    "week": "2025-W33",
+    "translation": {
+      "title": "열 번 이상의 긴 시야에서의 탐색 확장: 대규모 비동기 RL로",
+      "abstract": "LLM 기반 에이전트의 최근 발전은 외부 도구를 통합하여 복합적인 지식 중심 업무를 처리하는 놀라운 능력을 보여주고 있다. 다양한 도구 중에서 검색 도구는 방대한 외부 지식에 접근하는 데 중추적 역할을 한다. 그러나 오픈 소스 에이전트는 여전히 전문가 수준의 검색 지능, 모호한 질의 해결 능력, 정확한 검색 생성, 결과 분석 및 철저한 탐험 능력을 달성하지 못하고 있다. 이 논문은 검색 에이전트의 대규모 RL 훈련을 위한 ASearcher라는 오픈 소스 프로젝트를 소개한다. 핵심 기여 사항은 다음과 같다: (1) 긴 시야 탐색을 유지하면서 높은 훈련 효율성을 확보하는 확장 가능한 완전 비동기 RL 훈련. (2) 자율적으로 고품질 및 도전적인 QA를 합성하는 특수 키워드 기반 LLM 에이전트, 대규모 QA 데이터셋 생성. RL 훈련을 통해 우리의 특수 키워드 기반 QwQ-32B 에이전트는 상당한 개선을 달성하며, xBench와 GAIA에서 각각 46.7%와 20.8%의 Avg@4 향상을 보여준다. 특히, 우리의 에이전트는 훈련 중에 40번 이상의 도구 호출과 15만 토큰 이상의 출력 토큰을 갖는 극단적인 긴 시야 탐색을 보여준다. 간단한 에이전트 설계와 외부 LLM이 없는 ASearcher-Web-QwQ는 xBench에서 42.1, GAIA에서 52.8의 Avg@4 점수를 기록하여 기존의 오픈 소스 32B 에이전트를 능가한다. 우리는 모델, 훈련 데이터 및 코드를 https://github.com/inclusionAI/ASearcher에서 오픈 소스로 제공한다."
+    },
+    "summary": "1. ASearcher는 긴 시야 탐색을 가능케하는 확장 가능한 비동기 RL 훈련을 소개하며, 자동으로 고품질 QA를 생성하여 향상된 성능을 보여줌.\n2. 특수 키워드 기반 LLM 에이전트인 QwQ-32B는 xBench와 GAIA에서 상당한 성능 향상을 이루며, 극단적인 긴 시야 탐색 능력을 갖춤.\n3. ASearcher-Web-QwQ는 간단한 설계로 기존 32B 에이전트를 능가하는 성능을 보여주며, 오픈 소스로 제공됨.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  }
+]

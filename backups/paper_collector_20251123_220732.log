@@ -1,0 +1,127 @@
+=== Paper Collection Started at Sat Nov 22 22:07:24 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W48
+URL: https://huggingface.co/papers/week/2025-W48
+Found 10 papers in weekly view
+Fetching likes for: Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation
+Fetching likes for: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Fetching likes for: P1: Mastering Physics Olympiads with Reinforcement Learning
+Fetching likes for: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Fetching likes for: VIDEOP2R: Video Understanding from Perception to Reasoning
+Fetching likes for: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Fetching likes for: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Fetching likes for: DoPE: Denoising Rotary Position Embedding
+Fetching likes for: Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks
+Fetching likes for: AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models
+Selected top 10 papers by likes:
+1. Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation (176 likes)
+2. MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling (150 likes)
+3. P1: Mastering Physics Olympiads with Reinforcement Learning (127 likes)
+4. Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance (126 likes)
+5. VIDEOP2R: Video Understanding from Perception to Reasoning (104 likes)
+6. Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data (98 likes)
+7. Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models (93 likes)
+8. DoPE: Denoising Rotary Position Embedding (87 likes)
+9. Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks (69 likes)
+10. AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models (68 likes)
+Found abstract: This report introduces Kandinsky 5.0, a family of state-of-the-art foundation models for high-resolu...
+Processed paper: Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation
+Found abstract: We present MiroThinker v1.0, an open-source research agent designed to advance tool-augmented reason...
+Processed paper: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Found abstract: Recent progress in large language models (LLMs) has moved the frontier from puzzle-solving to scienc...
+Processed paper: P1: Mastering Physics Olympiads with Reinforcement Learning
+Found abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, but t...
+Processed paper: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Found abstract: Reinforcement fine-tuning (RFT), a two-stage framework consisting of supervised fine-tuning (SFT) an...
+Processed paper: VIDEOP2R: Video Understanding from Perception to Reasoning
+Found abstract: We present Uni-MoE 2.0 from the Lychee family. As a fully open-source omnimodal large model (OLM), i...
+Processed paper: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Found abstract: Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constra...
+Processed paper: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Found abstract: Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrap...
+Processed paper: DoPE: Denoising Rotary Position Embedding
+Found abstract: Video Models have achieved remarkable success in high-fidelity video generation with coherent motion...
+Processed paper: Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks
+Found abstract: We present AraLingBench: a fully human annotated benchmark for evaluating the Arabic linguistic comp...
+Processed paper: AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 176  ->  168
+Update date_collected: 2025-11-23T07:07:33.382123+09:00  ->  2025-11-22T07:08:03.233261+09:00
+
+Processing paper 2/10
+Title: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Paper already exists, checking if translation is complete...
+Update likes: 150  ->  146
+Update date_collected: 2025-11-23T07:07:33.384049+09:00  ->  2025-11-22T07:08:03.235132+09:00
+
+Processing paper 3/10
+Title: P1: Mastering Physics Olympiads with Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 127  ->  124
+Update date_collected: 2025-11-23T07:07:33.385938+09:00  ->  2025-11-22T07:08:03.236971+09:00
+
+Processing paper 4/10
+Title: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Paper already exists, checking if translation is complete...
+Update likes: 126  ->  122
+Update date_collected: 2025-11-23T07:07:33.387356+09:00  ->  2025-11-22T07:08:03.238342+09:00
+
+Processing paper 5/10
+Title: VIDEOP2R: Video Understanding from Perception to Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  101
+Update date_collected: 2025-11-23T07:07:33.388662+09:00  ->  2025-11-22T07:08:03.239598+09:00
+
+Processing paper 6/10
+Title: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Paper already exists, checking if translation is complete...
+Update likes: 98  ->  95
+Update date_collected: 2025-11-23T07:07:33.390106+09:00  ->  2025-11-22T07:08:03.241029+09:00
+
+Processing paper 7/10
+Title: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 93  ->  91
+Update date_collected: 2025-11-23T07:07:33.391346+09:00  ->  2025-11-22T07:08:03.242221+09:00
+
+Processing paper 8/10
+Title: DoPE: Denoising Rotary Position Embedding
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  87
+Update date_collected: 2025-11-23T07:07:33.392673+09:00  ->  2025-11-22T07:08:03.243452+09:00
+
+Processing paper 9/10
+Title: Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  69
+Update date_collected: 2025-11-23T07:07:33.394096+09:00  ->  2025-11-22T07:08:03.244830+09:00
+
+Processing paper 10/10
+Title: AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W48.json...
+
+Updating Notion database...
+Updating paper: Kandinsky 5.0: 이미지 및 비디오 생성을 위한 패밀리 기반 모델 (likes: 168 -> 176)
+Updating paper: MiroThinker: 모델, 맥락, 상호작용 확장을 통한 오픈소스 연구 에이전트의 성능한계 돌파 (likes: 146 -> 150)
+Updating paper: 물리 올림피아드를 통한 강화 학습의 성공 (likes: 124 -> 127)
+Updating paper: 간단한 산술이 최신 LLM 성능의 열쇠를 제공하는 수퍼-모델 (likes: 122 -> 126)
+Updating paper: 지각부터 추론까지 비디오 이해하기 (likes: 101 -> 104)
+Updating paper: Uni-MoE-2.0-Omni: 고급 MoE, 훈련 및 데이터로 언어 중심 옴니모달 대형 모델 확장 (likes: 95 -> 98)
+Updating paper: 어려운 곳에서 생각하라: 추론 언어 모델 향상을 위한 선택적 잠재적 반복 (likes: 91 -> 93)
+Paper already exists with same likes count: DoPE: Denoising Rotary Position Embedding
+Paper already exists with same likes count: 비디오를 통한 추론: 미로 해결 작업을 통해 비디오 모델의 추론 능력을 평가한 최초의 연구
+Updating paper: AraLingBench: 대형 언어 모델의 아랍어 언어 능력을 평가하기 위한 인간 주석된 벤치마크 (likes: 58 -> 68)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Nov 22 22:09:24 UTC 2025 ===
+

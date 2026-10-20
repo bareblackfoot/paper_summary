@@ -1,0 +1,288 @@
+[
+  {
+    "title": "SFT Conflicts, RL Coexists: A Theoretical and Empirical Analysis of Multi-Task Learning for LLMs",
+    "abstract": "Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) exhibit fundamentally different behaviors in enhancing multi-task reasoning for large language models (LLMs). Our preliminary experiments revealed a phenomenon: SFT suffers from severe task conflicts under multi-stage training, whereas RL enables stable coexistence across diverse tasks. Empirically, we trace this to the parameter level, observing that RL induces sparse and approximately orthogonal updates across tasks. We provide a theoretical explanation for this mechanism by analyzing multi-task gradient interference. Our results reveal a distinction: interference in SFT is norm-limited, scaling with the absolute gradient magnitude, whereas interference in RL is variance-limited, bounded by the gradient variance induced by advantage normalization and on-policy optimization. This small variance bound yields near-orthogonal optimization directions across tasks. Leveraging this insight, we propose Parallel-RL, a paradigm that decouples multi-task training, significantly improving efficiency and flexibility.",
+    "authors": [
+      "Kejian Zhu",
+      "Zhuoran Jin",
+      "Shangqing Tu",
+      "Hongbang Yuan",
+      "Yushi Bai",
+      "Kang Liu",
+      "Juanzi Li",
+      "Jun Zhao"
+    ],
+    "likes": 31,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2608.03573",
+    "date_collected": "2026-08-11T07:46:24.417236+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "SFT 충돌, RL 공존: LLM을 위한 다중 작업 학습의 이론적 및 경험적 분석",
+      "abstract": "지도된 세밀한 조정(Supervised Fine-Tuning, SFT)과 강화학습(Reinforcement Learning, RL)은 대형 언어 모델(Large Language Models, LLM)의 다중 작업 추론 개선에 있어 근본적으로 다른 행동을 보입니다. 우리의 예비 실험은 다중 단계 학습에 있어 SFT가 심각한 작업 충돌에 시달리는 현상을 보여주는 반면 RL은 다양한 작업 간 안정적인 공존을 가능케 합니다. 경험적으로, 우리는 이를 파라미터 수준에서 되추어 RL이 작업 간 희소하고 대략 직교적인 업데이트를 유도하는 것을 관찰했습니다. 우리는 다중 작업 기울기 간섭을 분석하여 이 메커니즘에 대한 이론적 설명을 제공합니다. 우리의 결과는 다음을 발견했습니다: SFT에서의 간섭은 절대 기울기 크기와 스케일을 한계로 하며, RL에서의 간섭은 이점 정규화와 온-폴리시 최적화에 의해 유발된 기울기 분산으로 한계를 맞습니다. 이 작은 분산 한계는 작업 간 거의 직교적인 최적화 방향을 제공합니다. 이 통찰을 활용하여 우리는 다중 작업 학습을 분리한 Parallel-RL을 제안하며 효율성과 유연성을 크게 향상시킵니다."
+    },
+    "summary": "1. SFT와 RL은 LLM의 다중 작업 추론 개선에 서로 다른 영향을 미치며, RL은 다양한 작업 간 안정적인 공존을 가능케 함.\n2. 이론적으로, RL은 작업 간 거의 직교적인 최적화 방향을 제공하는 반면, SFT는 작업 충돌을 일으키는 것으로 나타남.\n3. Parallel-RL은 다중 작업 학습을 분리하여 효율성과 유연성을 향상시키는 패러다임을 제안함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Beyond Simply Environment Scaling: Designing Effective Environment Distributions for Multimodal Agent Learning",
+    "abstract": "Recent works train agents by constructing large-scale multimodal environment pools. However, we find that simply increasing the number of multimodal environments does not always benefit. We further analyze the limitations in current multimodal environment distributions through a series of experiments. Based on these findings, we study how to build more effective training environment distributions from two dimensions: **diversity** and **difficulty structure**. For diversity, we propose **Ability-aware Environment Selection (AES)** to obtain diverse environment sets. For difficulty structure, we propose **Hierarchical Difficulty Curriculum (HDC)**, which organizes curriculum learning through two difficulty levels: harness weakening and state-scale progression. Experiments show that AES and HDC effectively improve multimodal agent training.",
+    "authors": [
+      "Kejian Zhu",
+      "Zhuoran Jin",
+      "Dongqi Huang",
+      "Hongbang Yuan",
+      "Yupu Hao",
+      "Kang Liu",
+      "Jun Zhao"
+    ],
+    "likes": 28,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2608.03571",
+    "date_collected": "2026-08-11T07:46:24.419969+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "단순 환경 스케일링을 넘어서: 멀티모달 에이전트 학습을 위한 효과적인 환경 분포 설계",
+      "abstract": "최근 연구들은 대규모 멀티모달 환경 풀을 구축하여 에이전트를 훈련합니다. 그러나 멀티모달 환경 수를 단순히 늘리는 것이 항상 유익하지는 않음을 발견했습니다. 본 연구는 일련의 실험을 통해 현재 멀티모달 환경 분포의 한계를 분석합니다. 이러한 결과를 바탕으로 **다양성** 및 **난이도 구조** 두 가지 차원에서 더 효과적인 훈련 환경 분포를 설계하는 방법을 연구합니다. 다양성 측면에서 우리는 **능력 인식 환경 선택 (AES)**을 제안하여 다양한 환경 세트를 얻습니다. 난이도 구조 측면에서는 **계층적 난이도 커리큘럼 (HDC)**을 제안하는데, 이는 두 가지 난이도 수준인 허점 약화와 상태 규모 진행을 통해 커리큘럼 학습을 구성합니다. 실험 결과 AES 및 HDC가 멀티모달 에이전트 훈련을 효과적으로 개선한다는 것을 보여줍니다."
+    },
+    "summary": "1. 단순히 환경 수를 늘리는 것보다 다양성과 난이도 구조에 초점을 둔 효과적인 멀티모달 에이전트 훈련 환경 분포 설계\n2. 다양성을 갖춘 환경 세트 획득을 위한 AES 및 허점 약화 및 상태 규모 진행을 통한 난이도 층위 구조화를 제안하는 HDC\n3. 실험 결과, AES와 HDC가 멀티모달 에이전트 훈련 효과를 향상시키는 것을 입증",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
+    "abstract": "World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics priors to action prediction, but existing methods require costly future generation at inference. We present SimWAM, a simple yet effective WAM that uses video generation purely as a training signal. It co-trains a pretrained video expert and a lightweight action expert with joint flow matching. An isolated attention mask keeps action prediction independent of future frames, allowing the video branch to be discarded after training and leaving a self-contained planner that directly predicts trajectories. Since the two experts share no parameters and interact only through a unified attention interface, the video backbone could be replaced and the action expert scaled independently without modifying the learning objective or inference pipeline. We further apply reinforcement learning to optimize a compositional driving reward beyond trajectory imitation. Our SimWAM achieves 91.5 PDMS on NAVSIM, surpasses state-of-the-art WAM-based planners with substantially lower latency, and transfers zero-shot to nuScenes. These results position SimWAM as a simple yet solid baseline that could readily benefit from advances in video generation for efficient autonomous driving. The code and model weights are available at https://github.com/H-EmbodVis/SimWAM/",
+    "authors": [
+      "Zongchuang Zhao",
+      "Xin Zhou",
+      "Tianyang Xu",
+      "Zhengyang Sun",
+      "Kaixuan Zhou",
+      "Honglin Li",
+      "Dingkang Liang",
+      "Xiang Bai"
+    ],
+    "likes": 22,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2608.07468",
+    "date_collected": "2026-08-11T07:46:24.422992+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "SimWAM: 자율 주행을 위한 간단한 세계 행동 모델",
+      "abstract": "세계-행동 모델(World-Action Models, WAMs)은 비디오 동적 사전을 행동 예측으로 전달하여 자율 주행을 개선하지만, 기존 방법은 추론 시 고품질 미래 생성을 요구합니다. 본 연구에서는 학습 신호로써 비디오 생성을 사용하는 간단하면서 효과적인 WAM인 SimWAM을 제안합니다. 사전 학습된 비디오 전문가와 가벼운 행동 전문가를 공동 flow matching으로 동시에 훈련시킵니다. 분리된 주의 마스크는 행동 예측을 미래 프레임과 독립적으로 유지함으로써 비디오 분기가 훈련 후 폐기되고 궤적을 직접 예측하는 독립된 플래너가 남게 합니다. 두 전문가는 매개 인터페이스를 통해만 상호작용하며 매개변수를 공유하지 않아 비디오 백본을 교체하거나 행동 전문가를 독립적으로 확장할 수 있습니다. 추론 파이프라인 또는 학습 목표를 수정하지 않고 결과적으로 기존의 지속적 학습(alarming)을 적용하여 합성운전 보상을 최적화합니다. SimWAM은 NAVSIM에서 91.5 PDMS를 달성하여 최신 기술을 통과하며 상당히 낮은 latency로 WAM 기반 계획자를 능가하고 zero-shot를 nuScenes로 전송합니다. 이러한 결과는 SimWAM을 간단하면서도 견고한 기준선으로 정렬하며 첨단 비디오 생성 기술의 발전을 통해 효율적인 자율 주행에 보탬이 될 수 있습니다. 코드 및 모델 가중치는 https://github.com/H-EmbodVis/SimWAM/에서 제공됩니다."
+    },
+    "summary": "1. SimWAM은 비디오 생성을 학습 신호로 활용하여 간단하면서도 효과적인 자율 주행 모델로, 미래 프레임 필요 없이 직접 궤적을 예측하며 다른 모델과 독립적으로 확장 가능합니다.\n2. 연구에서는 비디오 전문가와 행동 전문가를 함께 훈련시키는 방식을 제안하며, reinforcement learning을 사용하여 운전 보상을 최적화하였습니다.\n3. SimWAM은 NAVSIM에서 높은 성능을 보이며, 낮은 latency로 최신 기술을 능가하며 다른 데이터셋으로의 전이학습도 성공한 것으로 나타났습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "YOLO-PEFT: Parameter-Efficient Fine-Tuning on YOLO Family",
+    "abstract": "Generic parameter-efficient fine-tuning (PEFT) methods transferred from language models can fail silently on real-time detectors, whose heterogeneous operators and detection-specific components impose placement constraints absent from regular Transformer stacks. We propose YOLO-PEFT, a structure-aware framework that formulates adapter placement as an auditable constraint-planning problem. Given a detector graph, a PEFT request, and a resource budget, YOLO-PEFT assigns operator and semantic roles, evaluates explicit operator-validity, detector-semantic, graph-interface, and deployment predicates, records a reason code for each excluded module, and either emits a budgeted target-module plan or returns Refuse before training. Under the official VOC07+12 trainval-to-VOC07 test protocol, planner-selected RS-LoRA reaches 0.7138 and 0.7307 mAP50-95 on YOLO11s and YOLO12s, respectively, compared with 0.6428 and 0.6662 for Full-SFT. On RT-DETR-L, all seven evaluated LoRA-family configurations cross the predefined catastrophic threshold, supporting a calibrated Refuse-to-Full-SFT decision within the evaluated coverage. A controlled YOLO11 audit further shows that LoRA reduces peak training memory by 43.9 percent, although training takes 1.72 times longer. Within the evaluated detector families, placement policies, and calibration coverage, YOLO-PEFT replaces manual target-module trial and error with explicit, inspectable planning while preserving verified train-save-merge-export paths; refusal on unseen detector architectures remains an open validation problem. Project Page: github.com/Tencent/YOLO-Master",
+    "authors": [
+      "Xu Lin",
+      "WenJie Nie",
+      "Jinlong Peng",
+      "Weifu Fu",
+      "YueXiao Ma",
+      "Xiawu Zheng",
+      "Yong Liu"
+    ],
+    "likes": 15,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2608.07051",
+    "date_collected": "2026-08-11T07:46:24.426262+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "YOLO-PEFT: 파라미터 효율적인 파인 튜닝 기법",
+      "abstract": "언어 모델로부터 전이된 일반적인 파라미터 효율적인 파인 튜닝(PEFT) 방법은 실시간 탐지기에서 무음한 실패를 할 수 있는데, 이는 균질하지 않은 연산자와 감지 특정 구성 요소가 일반 Transformer 스택에는 없는 배치 제약을 가하기 때문입니다. 우리는 YOLO-PEFT를 제안하는데, 이는 어댑터 배치를 감사 가능한 제약 계획 문제로 정의하는 구조 인식 프레임워크입니다. 탐지기 그래프, PEFT 요청 및 자원 예산이 주어지면 YOLO-PEFT는 연산자 및 의미론적 역할을 할당하고 명시적인 연산자 유효성, 탐지기 의미론, 그래프 인터페이스 및 배포 문제 진술을 평가하여 각 제외된 모듈에 대한 이유 코드를 기록하고 훈련 전에 예산이 할당된 대상 모듈 계획을 생성하거나 거부를 반환합니다. 공식 VOC07+12 trainval-to-VOC07 테스트 프로토콜에 따르면, 플래너 선택된 RS-LoRA는 YOLO11s와 YOLO12s에서 각각 0.7138 및 0.7307 mAP50-95에 도달합니다. 이에 비해 Full-SFT는 각각 0.6428 및 0.6662로 나타냅니다. RT-DETR-L에 대해서는 모든 일곱 가지 평가된 LoRA-패밀리 설정이 사전에 정의된 재앙적 한계를 넘어, 평가 범위 내에서 균형 있는 거부-풀-SFT 결정을 지원합니다."
+    },
+    "summary": "1. YOLO-PEFT는 어댑터 배치를 명확하게 계획하여 파라미터 효율적인 파인 튜닝을 제공합니다.\n2. RS-LoRA는 YOLO11s와 YOLO12s에서 뛰어난 성능을 보이며, Full-SFT보다 우수한 결과를 얻습니다.\n3. YOLO-PEFT는 사전 정의된 재앙적 한계에 따라 거부 또는 풀-SFT 결정을 내리는 균형있는 방법을 제시합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
+    "abstract": "Deploying autonomous multimodal agents in continuous, real-world environments requires them to ingest unbounded audio-visual streams and maintain hour-scale memory. However, current evaluations predominantly rely on brief clips and multiple-choice formats. This design allows minimal baselines that process only the last four frames to match or surpass complex streaming models, while answer options also expose language shortcuts. We introduce StreamArena, a benchmark for hour-scale, interactive streaming video understanding. StreamArena contains 243 full-length videos averaging 88.8 minutes and 3,646 rigorously annotated, open-ended question-answer pairs that evaluate real-time perception, historical retrospection, proactive interaction, and multimodal tool utilization. Evaluation across diverse systems exposes a tension between continuous interaction and long-horizon multimodal comprehension. Methods that retain only recent frames cannot recover distant events, methods that convert past observations into text lose visual evidence, and methods that repeatedly compress visual memory struggle to preserve fine-grained details over time. We address this tension with StreamMind, a two-tier architecture that assigns latency-critical interaction and proactive monitoring to independently scheduled frontend workers, while backend workers asynchronously construct persistent multimodal memory and perform historical recall and external search. StreamMind outperforms existing streaming baselines across all four capabilities and reduces query-to-answer latency by reusing persistent state.",
+    "authors": [
+      "Xichen Zhang",
+      "Guankai Li",
+      "Yinghao Zhu",
+      "Shijian Wang",
+      "Sitong Wu",
+      "Shaozuo Yu",
+      "Meng Chu",
+      "Yuan Lu",
+      "Jiaya Jia"
+    ],
+    "likes": 14,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2608.05703",
+    "date_collected": "2026-08-11T07:46:24.429411+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "StreamArena: 지속적이고 상호작용적이며 장기간을 대비한 에이전틱 스트리밍 비디오 이해를 향하여",
+      "abstract": "자율적인 다중모달 에이전트를 실시간 환경에 배치하려면 무제한 오디오-시각 스트림을 수용하고 수십 시간에 이르는 기억을 유지해야 합니다. 그러나 현재의 평가는 대부분 간단한 클립과 객관식 형식에 의존하고 있습니다. 이런 설계는 최근 4장의 프레임만 처리하는 최소한의 베이스라인도 복잡한 스트리밍 모델을 뛰어넘거나 맞출 수 있게 하며, 선택지는 언어의 단축키를 노출시킵니다. 저희는 시간 규모의 상호작용적인 스트리밍 비디오 이해를 평가하는 243개의 평균 88.8분 길이의 완전한 비디오와 엄격히 주석이 달린 3,646개의 개방형 질문-답변 쌍을 포함한 StreamArena를 소개합니다. StreamArena는 실시간 인식, 과거 회상, 적극적 상호작용 및 다중모달 도구 활용을 평가합니다. 다양한 시스템 간 평가는 지속적 상호작용과 장기간 다중모달 이해 사이의 긴장을 드러냅니다. 최근 프레임만 유지하는 방법은 먼 사건을 회복할 수 없으며, 관찰된 과거를 텍스트로 변환하는 방법은 시각적 증거를 잃고, 시각적 기억을 반복적으로 압축하는 방법은 세밀한 세부사항을 시간이 지남에 따라 유지하기 어렵습니다. 저희는 이러한 긴장을 해결하기 위해 StreamMind를 소개합니다. StreamMind는 지연 시간이 중요한 상호작용 및 적극적 모니터링을 독립적으로 예약된 프론트엔드 워커에 할당하고, 백엔드 워커는 지속적인 다중모달 기억을 구성하고 역사적 복귀 및 외부 검색을 수행합니다. StreamMind는 네 가지 능력 모두에서 기존 스트리밍 베이스라인을 능가하며 지속적 상태를 재사용하여 쿼리-응답 지연 시간을 줄입니다."
+    },
+    "summary": "1. 자율적인 다중모달 에이전트를 현실적인 환경에 배치하기 위해 StreamArena라는 시간 규모의 상호작용적인 스트리밍 비디오 이해 벤치마크를 도입했습니다.\n2. 다양한 시스템 간 평가를 통해 저희는 지속적 상호작용과 장기간 다중모달 이해 사이의 긴장을 발견했습니다.\n3. StreamMind는 두 단계 아키텍처를 사용하여 기존 스트리밍 베이스라인을 능가하고 쿼리-응답 지연 시간을 줄입니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "DCAS: Decoupling CLI Agent Scaffolding to Internalize Planning across Scaffolds",
+    "abstract": "CLI-based software-engineering agents have matured rapidly, yet the open ecosystem has converged on a single training environment: trajectory datasets used to fine-tune open models are collected almost exclusively under OpenHands. Models fine-tuned on this data score well under OpenHands but degrade substantially when deployed under any non-training scaffold. Untrained base models do not show this divergence, indicating the gap is fine-tuning-induced and tied to the conventions of the training scaffold. We argue that a load-bearing scaffold-specific behavior is planning structure, in two senses this paper distinguishes: explicit planning, a pre-execution plan produced as a first-class artifact, and implicit planning, the structural conventions that shape execution throughout the agent loop. Under this hypothesis, closing the gap requires moving planning from a fixed scaffold artifact to a learned model capability. We introduce Decoupling CLI Agent Scaffolding (DCAS), a backend-substitution interception layer that routes API traffic between any CLI scaffold and any backend model without modifying the scaffold, enabling cross-scaffold evaluation and planning-aware trajectory collection. Using DCAS, a controlled plan-source intervention confirms planning quality is a high-leverage component, with gains exceeding the cross-scaffold drops we observe. A model fine-tuned on a small set of DCAS-collected planning-aware trajectories under a single scaffold gains consistently across non-training scaffolds, and the two senses of planning are empirically separable in training data.",
+    "authors": [
+      "Kishanthan Thangarajah",
+      "Boyuan Chen",
+      "Ahmed E. Hassan"
+    ],
+    "likes": 12,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2608.06113",
+    "date_collected": "2026-08-11T07:46:24.432361+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "DCAS: CLI 에이전트 구조를 분리하여 스캐폴드 간 계획 내재화",
+      "abstract": "CLI 기반 소프트웨어 엔지니어링 에이전트는 급속하게 성숙해졌지만, 오픈 생태계는 대부분의 트라젝토리 데이터셋이 모두 OpenHands 하에서 수집되는 단일 훈련 환경으로 수렴했다. 이 데이터로 세밀 조정된 모델은 OpenHands에서 잘 점수를 얻지만, 어떠한 훈련 스캐폴드가 아닌 환경에서 배치되면 심각하게 저하된다. 우리는 미세 조정된 기본 모델이 이러한 이탈을 보여주지 않는다는데, 이는 고도화된 것으로 그리고 훈련 스캐폴드의 관행에 묶인 fine-tuning 유발이라는 점을 나타낸다. 우리는 적재하는 스캐폴드-특정 동작이 계획 구조인 것을 주장하며, 이 논문은 명확한 계획과 암시적 계획이라는 두 가지 측면에서 구분한다. 하나는 실행 전 계획을 생산하는 명시적 계획이고 다른 하나는 실행을 형성하는 구조적 관행인 암시적 계획이다. 이 가설에 따르면 이격을 줄이려면 계획을 고정된 스캐폴드 아티팩트에서 학습된 모델 기능으로 이동해야 한다. 우리는 CLI 에이전트 스캐폴딩을 분리하는 DCAS (Decoupling CLI Agent Scaffolding)를 소개하며, 이는 스캐폴드를 수정하지 않고 CLI 스캐폴드와 백엔드 모델 사이의 API 트래픽을 경유하는 백엔드 대체 서층층이며, 스캐폴드 간 평가와 계획 인식 트라젝토리 수집을 가능하게 한다. DCAS를 사용하여 제어된 계획 소스 개입으로 계획 품질이 높은 효과를 낼 수 있는 것으로 확인되었으며, 우리가 관측한 스캐폴드 간 감소를 초과하는 이득을 얻었다. 단일 스캐폴드에서 DCAS로 수집된 계획 인지 트라젝토리의 작은 세트로 세밀 조정된 모델은 비훈련 스캐폴드에서 일관되게 이득을 얻으며, 훈련 데이터에서 계획의 두 가지 의미는 경험적으로 분리할 수 있다."
+    },
+    "summary": "1. 오픈 생태계가 일관적으로 사용하는 훈련 환경으로 인해 모델의 배치에서 성능이 저하되는 현상을 DCAS를 통해 컨트롤 가능한 계획 소스에 개입하여 개선함.\n2. CLI 에이전트 스캐폴딩을 분리하는 DCAS는 백엔드 모델과의 효율적인 API 트래픽 경유를 통해 스캐폴드 간 평가 및 계획 인식 트라젝토리 수집을 가능케 함.\n3. DCAS를 통해 수집된 계획 인지 트라젝토리로 세밀 조정된 모델의 성능을 일관되게 향상시킬 수 있으며, 훈련 데이터에서 계획의 두 가지 측면이 경험적으로 구분됨을 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+    "abstract": "Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Records are either sampled from a dependency graph that preserves correlated attributes or derived from human-authored profiles. We release a quality-filtered coreset of approximately 1 million personas, comprising 599,847 human-grounded and 400,000 synthetic records. Second, the MatrAIx Playground provides four environments in which diverse users evaluate and interact with digital products: Survey, AI Chatbot, Web, and App. Third, MatrAIx provides 1,010 application tasks spanning more than 25 domains, including Commerce, Software, Finance, and Healthcare. We conducted 18,189 evaluation trials across eight representative tasks. Persona agents were powered by three LLMs: Claude Opus 4.8, GPT 5.5, and Claude Haiku 4.5. The resulting feedback captures how decisions and preferences vary across persona backgrounds, including hesitation after a price increase, willingness to continue after an AI assistant fails, and latency tolerance. We conducted two main validation studies: First, a 400-trial controlled study evaluated persona adherence across ten behavioral attributes and all four environments. The declared behavior was expressed or correctly suppressed in 366 trials (91.5%). Second, human and LLM judges evaluated the extraction quality of human-grounded personas. Overall, MatrAIx provides an end-to-end infrastructure for evaluating AI systems and digital products with diverse simulated human users.",
+    "authors": [
+      "Xiaomin Li",
+      "Yuexing Hao",
+      "Jianheng Hou",
+      "Jintao Huang",
+      "Qianfeng Wen",
+      "Shirley Huang",
+      "Yifan Liu",
+      "Xiaoyi Liu",
+      "Yilan Fan",
+      "Yijun Wang",
+      "Koutian Wu",
+      "Ruoqi Gao",
+      "Muhammad Ahmed Mohsin",
+      "Jing Tang",
+      "Brihi Joshi",
+      "Heming Liu",
+      "Zheyuan Deng",
+      "Zonglin Di",
+      "Sankalp Jajee",
+      "Jiuyao Lu",
+      "Zhiwei Zhang",
+      "Saksham Kapoor"
+    ],
+    "likes": 12,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2608.04205",
+    "date_collected": "2026-08-11T07:46:24.436337+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "MatrAIx: 83억 개의 인격 에이전트로 세계를 시뮬레이션",
+      "abstract": "AI 시스템과 디지털 제품에 대한 인간 평가는 비용이 많이 소요되고 확장할 수 없으며 느리고 어렵습니다. 오프라인 평가는 보다 확장 가능하지만 종종 인간 다양성과 상호작용 행동을 추상화합니다. 따라서 우리는 다양한 사용자를 대상으로 AI 시스템과 디지털 제품을 시험하는 인구 규모의 시뮬레이션 사용자 평가 인프라인 MatrAIx를 소개합니다."
+    },
+    "summary": "1. MatrAIx는 83억 개의 인격 레코드를 포함하는 Persona 8B와 4가지 환경에서 다양한 사용자들이 디지털 제품을 평가하고 상호작용할 수 있는 MatrAIx Playground, 그리고 상업, 소프트웨어, 금융, 건강 등 25개 이상의 도메인에 걸쳐 1,010개의 응용 프로그램 작업을 제공합니다.\n2. 평가 실험에서는 세 가지 LLM 모델을 사용하여 결정과 선호도가 인격 배경에 따라 어떻게 다양해지는지를 파악했으며, 사용자들의 반응에서 가격 인상 후의 주저, AI 어시스턴트 오류 후 계속할 의지, 지연 허용도 등을 파악했습니다.\n3. MatrAIx는 다양한 환경에서 366건(91.5%)의 평가가 사용자 행동을 정확하게 반영했다는 400회 실험을 통해 Persona의 준수 여부를 평가하고, 인간 및 LLM 심사관들이 인간 기반 Persona의 추출 품질을 평가하는 검증 연구를 실시했습니다.",
+    "categories": [
+      "LLM",
+      "인공지능",
+      "다중모달"
+    ]
+  },
+  {
+    "title": "When Activation Oracles Learn Not to Read: Concept-Specific Blind Spots in Fine-Tuned Oracles",
+    "abstract": "Activation Oracles (AOs) are language models trained to answer natural-language questions about another model's internal activations. They offer a flexible interface for reading hidden information from model states, especially when relevant information is internally represented but absent or incomplete in visible behavior. However, AOs are themselves learned systems: their answers are shaped by training data, objectives, and learned reporting behavior, rather than being neutral readouts of represented information. We study this in a controlled Taboo Word Guessing setting, where subject models are fine-tuned to internally use a hidden concept while avoiding direct disclosure. Contrary to the expectation that an AO trained on such a subject becomes a specialist reader, we find that fine-tuned AOs can become concept-specific anti-readers: they selectively fail to recover the concept persistently present during their own training. This failure is not simply explained by absence of the concept from the subject or oracle representations: the target remains decodable inside the oracle, while LogitLens and layer-ablation analyses indicate that the failure arises in the AO readout pathway. Our results show that behavioral leakage, representation-level decodability, and AO-verbalizability can come apart, raising a reliability concern for learned interpretability interfaces.",
+    "authors": [
+      "Tobias Bersia",
+      "Tatiana Gaintseva"
+    ],
+    "likes": 10,
+    "published_date": "Jul 25",
+    "url": "https://huggingface.co/papers/2607.23379",
+    "date_collected": "2026-08-11T07:46:24.438986+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "읽지 않는 방법을 배우는 활성화 오라클: 파인튠 오라클의 개념별 맹점",
+      "abstract": "활성화 오라클 (Activation Oracles, AOs)는 다른 모델의 내부 활성화에 관한 자연어 질문에 답하는 방식으로 훈련된 언어 모델입니다. AOs는 모델 상태로부터 숨겨진 정보를 유연하게 읽는 인터페이스를 제공하며, 특히 관련 정보가 내부적으로 표현되지만 시각적 행동에서는 부족하거나 불완전한 경우에 유용합니다. 그러나 AOs는 그 자체로 학습된 시스템입니다: 그들의 답변은 훈련 데이터, 목적 및 학습된 보고 행동에 의해 형성되기 때문에 단순히 표현된 정보의 중립적인 출력이 아닙니다. 본 연구에서는 Taboo Word Guessing이라는 제어된 환경에서 연구를 수행하며, 주제 모델이 직접적인 공개를 피하면서 숨겨진 개념을 내부적으로 사용하도록 파인튠됩니다. 우리는 이러한 주제에 훈련된 AO가 전문 리더가 되는 것으로 기대되었지만, 파인튠된 AOs는 개념별 아이러니한 리더가 될 수 있음을 발견했습니다. 그들은 자신의 훈련 중에 지속적으로 존재하는 개념을 선택적으로 복구하지 못합니다. 이 실패는 단순히 주제나 오라클 표현에서 개념의 부재로 설명되지 않습니다.: 대상은 오라클 안에서 여전히 해독 가능한 반면, LogitLens 및 레이어 제거 분석은 이러한 실패가 AO의 출력 경로에서 발생한다고 나타냅니다. 결과는 행동적 유출, 표현 수준의 해독 가능성 및 AO-언어화가 분리될 수 있다는 점을 보여주며, 학습된 해석 인터페이스에 대한 신뢰성 우려를 제기합니다."
+    },
+    "summary": "1. 활성화 오라클은 모델 상태에서 정보를 읽는 유연한 인터페이스를 제공하나, 학습된 시스템이기 때문에 중립적인 정보 전달이 아닐 수 있음.\n2. Taboo Word Guessing 환경에서 연구한 결과, 파인튠된 활성화 오라클은 특정 개념을 복구하는 데 실패할 수 있음을 발견함.\n3. 실패는 주체나 오라클 표현에 개념이 없어서가 아닌, AO의 출력 경로에서 발생하며, 이는 학습된 해석 인터페이스에 신뢰성 문제를 제기함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss",
+    "abstract": "Small language models are often the only option for deployment under tight latency, cost, and on-premises constraints, but they are rarely trained from scratch: a compressed model is usually recovered through knowledge distillation (KD). This recovery step largely decides the final quality, yet it is expensive. We present a practitioner's study of how to make distillation training efficient, organised around two systems contributions. First, we show that offline KD (caching the teacher's top-K logits once and training the student against the cache) matches online distillation at near-identical training loss while removing the teacher from memory, running about 29\\% faster per iteration, and reaching up to 41\\% higher throughput on a single H200 GPU. Second, we introduce a fused, chunked KL loss that never materialises the full vocabulary-sized logit tensor, making peak memory linear in the sequence length. This removes the memory spike that otherwise caps context length and lets us train at four times the context (32{,}768 tokens) on a single GPU. A separate output-head-only toy benchmark isolates the loss kernel and confirms its memory and iteration-rate scaling from 4K to 256K tokens. Together these make large-scale healing and hundreds of ablations affordable. We also report supporting ablations on loss design and sequence packing. We release our chunked-loss implementation: https://github.com/CompactifAI/Full-Chunked-KL-Loss.",
+    "authors": [
+      "Bakbergen Ryskulov",
+      "Iker García-Ferrero",
+      "David Montero",
+      "David Jansen",
+      "Ali Hashemi",
+      "Jezabel R. Garcia",
+      "Antonio Tiene",
+      "Román Orús"
+    ],
+    "likes": 9,
+    "published_date": "Aug 4",
+    "url": "https://huggingface.co/papers/2608.03796",
+    "date_collected": "2026-08-11T07:46:24.441988+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "대규모 언어 모델을 위한 효율적인 지식 증류: 오프라인 상위-K 로짓 및 병합된 청크 KL 손실",
+      "abstract": "소형 언어 모델은 시간 제약, 비용, 현장 제한 조건 하에서 배포하기 위한 유일한 선택지가 되곤 하지만, 이들은 거의 항상 처음부터 훈련되지 않습니다: 압축된 모델은 보통 지식 증류(KD)를 통해 복원됩니다. 이 복원 단계는 최종 품질을 크게 결정하는데, 그 비용이 막대합니다. 본 연구는 증류 훈련을 효율적으로 만드는 방법에 대한 연구 결과를 제공하며, 두 가지 시스템 기여를 중심으로 조직되었습니다. 첫째, 우리는 오프라인 KD(선생님의 상위-K 로짓을 캐싱하고 이를 통해 학생을 훈련시키는 방식)이 온라인 증류와 거의 동일한 훈련 손실을 달성하면서도 선생님을 메모리에서 제거하여 한 번의 H200 GPU에서 약 29% 빠르게 실행되고 단일 GPU에서 최대 41% 더 높은 처리량을 달성할 수 있음을 보여줍니다. 둘째, 우리는 전체 어휘 크기의 로짓 텐서를 절대로 형성하지 않는 병합된 청크 KL 손실을 소개하여 메모리 피크를 시퀀스 길이에 선형적으로 만들어 줍니다. 이는 일반적으로 컨텍스트 길이를 제한하던 메모리 스파이크를 제거하고, 단일 GPU에서 32,768 토큰에 대해 4배의 컨텍스트(32,768 토큰)로 훈련할 수 있게 합니다. 별도의 출력 헤드 전용 장난감 벤치마크는 손실 커널을 격리시키고, 4K에서 256K 토큰으로의 메모리 및 이터레이션 속도 스케일링을 확인합니다. 이러한 결과들은 대규모 힐링 및 수백 가지의 제거 작업을 가능케 합니다. 또한, 손실 디자인 및 시퀀스 패킹에 대한 지원 제거 작업을 보고합니다. 우리는 우리의 청크드 손실 구현을 공개합니다: https://github.com/CompactifAI/Full-Chunked-KL-Loss."
+    },
+    "summary": "1. 오프라인 지식 증류는 온라인 증류와 거의 동일한 훈련 손실을 달성하면서 선생님의 메모리 비용을 줄이고 처리량을 증가시킵니다.\n2. 병합된 청크 KL 손실은 전체 어휘 크기의 로짓 텐서를 형성하지 않아도 되게 하여 메모리 효율을 높이고 대규모 훈련을 가능케 합니다.\n3. 이 연구는 대규모 힐링 및 다양한 실험을 가능하게 하는 손실 디자인 및 시퀀스 패킹 방법을 소개합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Reinforcement Learning with Evolving Rubrics as Rewards for Audio Reasoning",
+    "abstract": "Audio reasoning is essential for machine understanding of the acoustic world. Reinforcement learning with verifiable rewards can elicit such reasoning, yet existing reward designs are complementary in their limitations: outcome-based rewards supervise only the final answer and let the model reach it without attending to the audio, whereas process-based rewards score the reasoning itself but rely on coarse, hand-crafted, and fixed criteria that neither adapt to each question nor stay grounded in the acoustic evidence. Moreover, questions differ in what they demand, with some hinging on perception and others on multi-step reasoning, and any static criterion weakens as the policy improves. Supervising the reasoning process with fine-grained, audio-grounded, and adaptive rewards is therefore crucial, yet challenging since such rewards are impractical to design by hand for every sample. To this end, we introduce AudioRubrics, a reinforcement learning framework that supervises audio reasoning with self-evolving, audio-grounded rubric rewards. AudioRubrics synthesizes per-sample rubrics from the raw waveform and, conditioned on the model's own rollouts, regenerates and reweights criteria per group, supplying a continuous learning signal that keeps targeting the current policy's weaknesses as static criteria saturate. Comprehensive evaluations across three audio reasoning benchmarks reveal that AudioRubrics substantially outperforms a wide range of open-source and training-based baselines. Furthermore, our analysis shows that the gains scale with the capability of the rubric generator and judge, and AudioRubrics converges to a stable reasoning length that avoids both degenerate collapse and unbounded growth. The improvement in audio perception further demonstrates the effectiveness of anchoring supervision in the acoustic evidence. Our project page is available at https://audiorubrics.github.io.",
+    "authors": [
+      "Fangxu Yu",
+      "Tao Feng",
+      "Dehai Min",
+      "Zinan Lin",
+      "Weijia Xu",
+      "Michael Xu",
+      "Philip S. Yu",
+      "Ge Liu",
+      "Tianyi Zhou"
+    ],
+    "likes": 9,
+    "published_date": "Aug 3",
+    "url": "https://huggingface.co/papers/2608.02831",
+    "date_collected": "2026-08-11T07:46:24.445262+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "오디오 추론을 위한 진화하는 평가 기준을 보상으로 하는 강화 학습",
+      "abstract": "오디오 추론은 기계가 음향 세계를 이해하는 데 중요합니다. 검증 가능한 보상을 사용한 강화 학습은 이러한 추론을 유도할 수 있으나 기존의 보상 설계는 한계가 서로 보완적입니다. 결과 기반 보상은 최종 답변만 지도하고 모델이 오디오에 주의를 기울이지 않고 답변을 찾도록 하지만, 과정 기반 보상은 추론 자체를 평가하지만 고정 기준에 의존하여 모든 질문에 맞추거나 음향 근거를 갖지 않는다. 또한, 각 질문은 인식에 의존하는 것과 다단계 추론에 의존하는 것 등 요구 사항이 다르며 정적 기준은 정책이 개선됨에 따라 약화된다. 따라서 섬세하고 오디오 기반, 적응적 보상으로 추론 과정을 감독하는 것이 중요하지만 모든 샘플에 대해 수동으로 설계하기 어렵다. 이를 위해 우리는 AudioRubrics를 제안한다. 이는 오디오 기반 루브릭 보상으로 오디오 추론을 감독하는 강화 학습 프레임워크이다. AudioRubrics는 원시 파형에서 개별 샘플 루브릭을 합성하고 모델 자체의 롤아웃을 조건으로 두어 기준을 재생성하고 가중치를 조정하여 현재 정책의 약점을 계속 공략하는 연속적인 학습 신호를 제공한다. 세 가지 오디오 추론 벤치마크에서의 포괄적인 평가 결과, AudioRubrics가 다양한 오픈소스 및 교육 기반 기준보다 크게 우수함을 보여준다. 더 나아가, 분석 결과, 루브릭 생성기 및 심사위원의 기능성에 비례해 성능이 향상되며, AudioRubrics는 부전할 무너짐과 경계없는 성장을 피하면서 안정적인 추론 길이에 수렴한다. 오디오 인식 개선은 시작 부분이 음향 근거에 대한 효과적인 감독을 보여준다. 프로젝트 페이지는 https://audiorubrics.github.io에서 확인할 수 있습니다."
+    },
+    "summary": "1. 강화 학습을 이용한 AudioRubrics는 동적인 오디오 기반 평가 기준을 사용하여 오디오 추론을 향상시킵니다.\n2. 다양한 오픈소스와 교육 기반 기준을 능가하는 성능을 보여줌으로써 AudioRubrics가 오디오 추론에 효과적인 감독을 제공합니다.\n3. 오디오 기반 루브릭 보상을 통해 AudioRubrics는 안정적인 추론 길이에 수렴하며, 오디오 인식 능력을 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Audio",
+      "Other"
+    ]
+  }
+]

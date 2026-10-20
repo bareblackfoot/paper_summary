@@ -1,0 +1,149 @@
+=== Paper Collection Started at Sat Nov  1 22:06:58 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W45
+URL: https://huggingface.co/papers/week/2025-W45
+Found 10 papers in weekly view
+Fetching likes for: Scaling Latent Reasoning via Looped Language Models
+Fetching likes for: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Fetching likes for: ReCode: Unify Plan and Action for Universal Granularity Control
+Fetching likes for: InteractComp: Evaluating Search Agents With Ambiguous Queries
+Fetching likes for: The End of Manual Decoding: Towards Truly End-to-End Language Models
+Fetching likes for: JanusCoder: Towards a Foundational Visual-Programmatic Interface for
+  Code Intelligence
+Fetching likes for: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Fetching likes for: Tongyi DeepResearch Technical Report
+Fetching likes for: Video-Thinker: Sparking "Thinking with Videos" via Reinforcement
+  Learning
+Fetching likes for: Emu3.5: Native Multimodal Models are World Learners
+Selected top 10 papers by likes:
+1. Scaling Latent Reasoning via Looped Language Models (176 likes)
+2. Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations (166 likes)
+3. ReCode: Unify Plan and Action for Universal Granularity Control (116 likes)
+4. InteractComp: Evaluating Search Agents With Ambiguous Queries (94 likes)
+5. The End of Manual Decoding: Towards Truly End-to-End Language Models (90 likes)
+6. JanusCoder: Towards a Foundational Visual-Programmatic Interface for
+  Code Intelligence (90 likes)
+7. DeepAgent: A General Reasoning Agent with Scalable Toolsets (90 likes)
+8. Tongyi DeepResearch Technical Report (82 likes)
+9. Video-Thinker: Sparking "Thinking with Videos" via Reinforcement
+  Learning (79 likes)
+10. Emu3.5: Native Multimodal Models are World Learners (67 likes)
+Found abstract: Modern LLMs are trained to "think" primarily via explicit text generation,
+such as chain-of-thought ...
+Processed paper: Scaling Latent Reasoning via Looped Language Models
+Found abstract: Humans learn abstract concepts through multisensory synergy, and once formed,
+such representations c...
+Processed paper: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Found abstract: Real-world tasks require decisions at varying granularities, and humans excel
+at this by leveraging ...
+Processed paper: ReCode: Unify Plan and Action for Universal Granularity Control
+Found abstract: Language agents have demonstrated remarkable potential in web search and
+information retrieval. Howe...
+Processed paper: InteractComp: Evaluating Search Agents With Ambiguous Queries
+Found abstract: The "end-to-end" label for LLMs is a misnomer. In practice, they depend on a
+non-differentiable deco...
+Processed paper: The End of Manual Decoding: Towards Truly End-to-End Language Models
+Found abstract: The scope of neural code intelligence is rapidly expanding beyond text-based
+source code to encompas...
+Processed paper: JanusCoder: Towards a Foundational Visual-Programmatic Interface for
+  Code Intelligence
+Found abstract: Large reasoning models have demonstrated strong problem-solving abilities,
+yet real-world tasks ofte...
+Processed paper: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Found abstract: We present Tongyi DeepResearch, an agentic large language model, which is
+specifically designed for ...
+Processed paper: Tongyi DeepResearch Technical Report
+Found abstract: Recent advances in image reasoning methods, particularly "Thinking with
+Images", have demonstrated r...
+Processed paper: Video-Thinker: Sparking "Thinking with Videos" via Reinforcement
+  Learning
+Found abstract: We introduce Emu3.5, a large-scale multimodal world model that natively
+predicts the next state acro...
+Processed paper: Emu3.5: Native Multimodal Models are World Learners
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Scaling Latent Reasoning via Looped Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 176  ->  62
+Update date_collected: 2025-11-02T07:07:06.957372+09:00  ->  2025-11-01T07:07:57.472856+09:00
+
+Processing paper 2/10
+Title: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+  Representations
+Paper already exists, checking if translation is complete...
+Update likes: 166  ->  166
+Update date_collected: 2025-11-02T07:07:06.958835+09:00  ->  2025-11-01T07:07:57.460586+09:00
+
+Processing paper 3/10
+Title: ReCode: Unify Plan and Action for Universal Granularity Control
+Paper already exists, checking if translation is complete...
+Update likes: 116  ->  115
+Update date_collected: 2025-11-02T07:07:06.960374+09:00  ->  2025-11-01T07:07:57.462075+09:00
+
+Processing paper 4/10
+Title: InteractComp: Evaluating Search Agents With Ambiguous Queries
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  93
+Update date_collected: 2025-11-02T07:07:06.962260+09:00  ->  2025-11-01T07:07:57.463909+09:00
+
+Processing paper 5/10
+Title: The End of Manual Decoding: Towards Truly End-to-End Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  66
+Update date_collected: 2025-11-02T07:07:06.963575+09:00  ->  2025-11-01T07:07:57.471023+09:00
+
+Processing paper 6/10
+Title: JanusCoder: Towards a Foundational Visual-Programmatic Interface for
+  Code Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  88
+Update date_collected: 2025-11-02T07:07:06.964910+09:00  ->  2025-11-01T07:07:57.466630+09:00
+
+Processing paper 7/10
+Title: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  89
+Update date_collected: 2025-11-02T07:07:06.966303+09:00  ->  2025-11-01T07:07:57.465277+09:00
+
+Processing paper 8/10
+Title: Tongyi DeepResearch Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 82  ->  81
+Update date_collected: 2025-11-02T07:07:06.968238+09:00  ->  2025-11-01T07:07:57.468475+09:00
+
+Processing paper 9/10
+Title: Video-Thinker: Sparking "Thinking with Videos" via Reinforcement
+  Learning
+Paper already exists, checking if translation is complete...
+Update likes: 79  ->  78
+Update date_collected: 2025-11-02T07:07:06.969545+09:00  ->  2025-11-01T07:07:57.469758+09:00
+
+Processing paper 10/10
+Title: Emu3.5: Native Multimodal Models are World Learners
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W45.json...
+
+Updating Notion database...
+Updating paper: 잠재추론의 규모 조정을 통한 루프형 언어 모델 (Looped Language Models) 확장 (likes: 62 -> 176)
+Paper already exists with same likes count: Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial
+Updating paper: ReCode: 일반적인 세분성 제어를 위한 계획과 행동 통합 (likes: 115 -> 116)
+Updating paper: 모호한 쿼리로 검색 보조 에이전트 평가하기 (likes: 93 -> 94)
+Updating paper: 수동 디코딩의 종말: 진정한 엔드투엔드 언어 모델로 (likes: 66 -> 90)
+Updating paper: JanusCoder: 코드 지능을 위한 기반 시각-프로그래밍 인터페이스로 (likes: 88 -> 90)
+Updating paper: DeepAgent: 확장 가능한 도구 세트를 갖춘 일반적인 추론 에이전트 (likes: 89 -> 90)
+Updating paper: 동이 딥리서치 기술 보고서 (likes: 81 -> 82)
+Updating paper: 비디오-씽커: 강화학습을 통해 "비디오로 사고하기"를 일으키다 (likes: 78 -> 79)
+Creating new paper: Emu3.5: 네이티브 다중 모달 모델은 세계 학습자들이다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Nov  1 22:09:07 UTC 2025 ===
+

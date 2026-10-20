@@ -1,0 +1,335 @@
+[
+  {
+    "title": "Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation",
+    "abstract": "This report introduces Kandinsky 5.0, a family of state-of-the-art foundation models for high-resolution image and 10-second video synthesis. The framework comprises three core line-up of models: Kandinsky 5.0 Image Lite - a line-up of 6B parameter image generation models, Kandinsky 5.0 Video Lite - a fast and lightweight 2B parameter text-to-video and image-to-video models, and Kandinsky 5.0 Video Pro - 19B parameter models that achieves superior video generation quality. We provide a comprehensive review of the data curation lifecycle - including collection, processing, filtering and clustering - for the multi-stage training pipeline that involves extensive pre-training and incorporates quality-enhancement techniques such as self-supervised fine-tuning (SFT) and reinforcement learning (RL)-based post-training. We also present novel architectural, training, and inference optimizations that enable Kandinsky 5.0 to achieve high generation speeds and state-of-the-art performance across various tasks, as demonstrated by human evaluation. As a large-scale, publicly available generative framework, Kandinsky 5.0 leverages the full potential of its pre-training and subsequent stages to be adapted for a wide range of generative applications. We hope that this report, together with the release of our open-source code and training checkpoints, will substantially advance the development and accessibility of high-quality generative models for the research community.",
+    "authors": [
+      "Vladimir Arkhipkin",
+      "Vladimir Korviakov",
+      "Nikolai Gerasimenko",
+      "Denis Parkhomenko",
+      "Viacheslav Vasilev",
+      "Alexey Letunovskiy",
+      "Maria Kovaleva",
+      "Nikolai Vaulin",
+      "Ivan Kirillov",
+      "Lev Novitskiy",
+      "Denis Koposov",
+      "Nikita Kiselev",
+      "Alexander Varlamov",
+      "Dmitrii Mikhailov",
+      "Vladimir Polovnikov",
+      "Andrey Shutkin",
+      "Ilya Vasiliev",
+      "Julia Agafonova",
+      "Anastasiia Kargapoltseva",
+      "Anna Dmitrienko",
+      "Anastasia Maltseva",
+      "Anna Averchenkova"
+    ],
+    "likes": 184,
+    "published_date": "Nov 19",
+    "url": "https://huggingface.co/papers/2511.14993",
+    "date_collected": "2025-11-24T10:36:58.966612+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "Kandinsky 5.0: 이미지 및 비디오 생성을 위한 패밀리 기반 모델",
+      "abstract": "본 보고서는 고해상도 이미지 및 10초 비디오 합성을 위한 최신 패밀리 기반 모델인 Kandinsky 5.0을 소개합니다. 이 프레임워크는 Kandinsky 5.0 이미지 Lite - 60억 파라미터 이미지 생성 모델, Kandinsky 5.0 비디오 Lite - 빠르고 가벼운 20억 파라미터 텍스트에서 비디오 및 이미지에서 비디오로의 모델, 그리고 우수한 비디오 생성 품질을 달성하는 190억 파라미터 모델인 Kandinsky 5.0 비디오 Pro로 이루어진 코어 모델 라인업을 포함합니다. 우리는 다단계 훈련 파이프라인을 위한 데이터 큐레이션 라이프사이클인 데이터 수집, 처리, 필터링 및 클러스터링에 대한 종합적인 검토를 제공하며, 이는 광범위한 사전 훈련과 SFT(자기 지도 fine-tuning) 및 RL(강화 학습)-기반 후 훈련과 같은 품질 향상 기법을 포함합니다. 우리는 또한 Kandinsky 5.0이 다양한 작업에서 뛰어난 성능을 구현하고 빠른 생성 속도와 최신 기술을 가능하게 하는 혁신적인 아키텍처, 훈련 및 추론 최적화를 제시합니다. 대규모로 공개된 생성적 프레임워크인 Kandinsky 5.0은 사전 훈련과 이후 단계의 모든 잠재력을 활용하여 다양한 생성 애플리케이션에 적용될 수 있습니다. 이 보고서는 우리의 오픈 소스 코드 및 훈련 체크포인트 공개와 함께 고품질 생성 모델의 개발과 접근성을 현저히 향상시킬 것으로 기대합니다."
+    },
+    "summary": "1. Kandinsky 5.0은 이미지 및 비디오 생성을 위한 세 가지 핵심 모델로 구성되어 있습니다: 이미지 Lite, 비디오 Lite, 비디오 Pro.\n2. 데이터 수집부터 훈련에 이르기까지의 다단계 훈련 파이프라인을 통해 Kandinsky 5.0은 SFT 및 RL을 활용하여 품질 향상 기법을 적용하고 있습니다.\n3. Kandinsky 5.0은 높은 생성 속도와 다양한 작업에서 우수한 성능을 보이며, 공개적으로 이용 가능한 대규모 생성 프레임워크로써 다양한 응용 분야에 적합합니다.",
+    "categories": [
+      "Computer Vision",
+      "Generative Modeling"
+    ]
+  },
+  {
+    "title": "MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling",
+    "abstract": "We present MiroThinker v1.0, an open-source research agent designed to advance tool-augmented reasoning and information-seeking capabilities. Unlike previous agents that only scale up model size or context length, MiroThinker explores interaction scaling at the model level, systematically training the model to handle deeper and more frequent agent-environment interactions as a third dimension of performance improvement. Unlike LLM test-time scaling, which operates in isolation and risks degradation with longer reasoning chains, interactive scaling leverages environment feedback and external information acquisition to correct errors and refine trajectories. Through reinforcement learning, the model achieves efficient interaction scaling: with a 256K context window, it can perform up to 600 tool calls per task, enabling sustained multi-turn reasoning and complex real-world research workflows. Across four representative benchmarks-GAIA, HLE, BrowseComp, and BrowseComp-ZH-the 72B variant achieves up to 81.9%, 37.7%, 47.1%, and 55.6% accuracy respectively, surpassing previous open-source agents and approaching commercial counterparts such as GPT-5-high. Our analysis reveals that MiroThinker benefits from interactive scaling consistently: research performance improves predictably as the model engages in deeper and more frequent agent-environment interactions, demonstrating that interaction depth exhibits scaling behaviors analogous to model size and context length. These findings establish interaction scaling as a third critical dimension for building next-generation open research agents, complementing model capacity and context windows.",
+    "authors": [
+      "MiroMind Team",
+      "Song Bai",
+      "Lidong Bing",
+      "Carson Chen",
+      "Guanzheng Chen",
+      "Yuntao Chen",
+      "Zhe Chen",
+      "Ziyi Chen",
+      "Jifeng Dai",
+      "Xuan Dong",
+      "Yue Deng",
+      "Yunjie Fu",
+      "Junqi Ge",
+      "Chenxia Han",
+      "Tammy Huang",
+      "Zhenhang Huang",
+      "Jerry Jiao",
+      "Shilei Jiang",
+      "Tianyu Jiao",
+      "Xiaoqi Jian",
+      "Lei Lei",
+      "Ruilin Li"
+    ],
+    "likes": 151,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11793",
+    "date_collected": "2025-11-24T10:36:58.968488+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "MiroThinker: 모델, 맥락, 상호작용 확장을 통한 오픈소스 연구 에이전트의 성능한계 돌파",
+      "abstract": "MiroThinker v1.0은 도구를 활용한 추론과 정보 탐색 능력을 향상시키기 위해 설계된 오픈소스 연구 에이전트를 제시합니다. 기존의 에이전트는 모델 크기나 맥락 길이만 확장했다면, MiroThinker는 성능 향상의 세 번째 차원으로 모델 수준에서의 상호작용 확장을 탐구하며, 보다 깊고 더 자주 발생하는 에이전트-환경 상호작용을 처리할 수 있도록 체계적으로 모델을 훈련시킵니다. 상호작용 확장은 LLM 테스트 시간 확장과 달리 환경 피드백 및 외부 정보 획득을 통해 에러를 교정하고 궤적을 개선합니다. 강화 학습을 통해, 이 모델은 256K 맥락 윈도우를 사용하여 작업 당 최대 600회의 도구 호출을 수행할 수 있어 계속된 다중 턴 추론과 복잡한 현실 세계 연구 작업을 가능하게 합니다. GAIA, HLE, BrowseComp 및 BrowseComp-ZH의 네 가지 대표적인 벤치마크에서 72B 버전은 각각 81.9%, 37.7%, 47.1%, 55.6%의 정확도를 달성하여 이전 오픈소스 에이전트를 능가하고 GPT-5-high와 같은 상용 프로그램에 준하는 수준에 이릅니다. 분석 결과, MiroThinker는 상호작용 확장을 일관되게 이용함으로써 연구 성과가 예측 가능하게 향상되며, 모델이 보다 깊고 자주 발생하는 에이전트-환경 상호작용에 참여함에 따라 상호작용 깊이가 모델 크기와 맥락 길이와 유사한 확장 행동을 나타낸다는 것을 입증합니다. 이러한 결과는 상호작용 확장을 다음 세대의 오픈 연구 에이전트를 구축하기 위한 세 번째 중요한 차원으로 확립하며, 모델 용량과 맥락 창을 보완합니다."
+    },
+    "summary": "1. MiroThinker는 모델 수준의 상호작용 확장을 통해 오픈소스 연구 에이전트의 성능을 향상시키고, 다중 턴 추론과 복잡한 연구 작업을 수행할 수 있게 합니다.\n2. 72B 버전은 다양한 벤치마크에서 상용 프로그램에 준하는 높은 정확도를 달성하여 이전 오픈소스 에이전트를 능가합니다.\n3. 상호작용 확장은 모델 크기와 맥락 길이와 유사한 확장 행동을 보이며, 다음 세대의 오픈 연구 에이전트에 필수적인 차원이 될 수 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "P1: Mastering Physics Olympiads with Reinforcement Learning",
+    "abstract": "Recent progress in large language models (LLMs) has moved the frontier from puzzle-solving to science-grade reasoning-the kind needed to tackle problems whose answers must stand against nature, not merely fit a rubric. Physics is the sharpest test of this shift, which binds symbols to reality in a fundamental way, serving as the cornerstone of most modern technologies. In this work, we manage to advance physics research by developing large language models with exceptional physics reasoning capabilities, especially excel at solving Olympiad-level physics problems. We introduce P1, a family of open-source physics reasoning models trained entirely through reinforcement learning (RL). Among them, P1-235B-A22B is the first open-source model with Gold-medal performance at the latest International Physics Olympiad (IPhO 2025), and wins 12 gold medals out of 13 international/regional physics competitions in 2024/2025. P1-30B-A3B also surpasses almost all other open-source models on IPhO 2025, getting a silver medal. Further equipped with an agentic framework PhysicsMinions, P1-235B-A22B+PhysicsMinions achieves overall No.1 on IPhO 2025, and obtains the highest average score over the 13 physics competitions. Besides physics, P1 models also present great performance on other reasoning tasks like math and coding, showing the great generalibility of P1 series.",
+    "authors": [
+      "Jiacheng Chen",
+      "Qianjia Cheng",
+      "Fangchen Yu",
+      "Haiyuan Wan",
+      "Yuchen Zhang",
+      "Shenghe Zheng",
+      "Junchi Yao",
+      "Qingyang Zhang",
+      "Haonan He",
+      "Yun Luo",
+      "Yufeng Zhao",
+      "Futing Wang",
+      "Li Sheng",
+      "Chengxing Xie",
+      "Yuxin Zuo",
+      "Yizhuo Li",
+      "Wenxauan Zeng",
+      "Yulun Wu",
+      "Rui Huang",
+      "Dongzhan Zhou",
+      "Kai Chen",
+      "Yu Qiao"
+    ],
+    "likes": 128,
+    "published_date": "Nov 17",
+    "url": "https://huggingface.co/papers/2511.13612",
+    "date_collected": "2025-11-24T10:36:58.970361+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "물리 올림피아드를 통한 강화 학습의 성공",
+      "abstract": "최근 대형언어모델의 발전으로 문제 해결에서 과학적 추론으로의 전환이 이루어졌으며 이는 단순히 규정에 맞추는 것이 아니라 자연에 맞서야 하는 문제를 해결하기 위한 추론 능력이 필요하다. 이 연구에서는 물리학을 획기적인 방법으로 출발하여, 강화 학습을 통해 훈련된 대형언어모델을 개발함으로써 물리학 연구를 선도해왔다. 특히 올림피아드 수준의 물리 문제 해결 능력에서 뛰어난 성과를 거뒀다. P1은 물리 추론 모델의 일종으로 IPhO 2025에서 Gold-medal 성과를 낸 최초의 오픈 소스 모델 중 하나이며, 2024/2025년 13개 국제/지역 물리 대회에서 12개의 Gold medal을 획득했다. P1은 또한 수학과 코딩과 같은 다른 추론 작업에서도 우수한 성능을 보여주었다."
+    },
+    "summary": "1. 대형언어모델 P1은 강화 학습을 통해 훈련되어 과학적 추론 능력을 탁월하게 발휘하며, 물리학 올림피아드와 같은 문제 해결 대회에서 높은 성적을 거둡니다.\n2. P1-235B-A22B는 최근 국제 물리 올림피아드에서 금메달을 획득하고, 2024/2025년 13개 대회 중 12회의 금메달을 획득하였습니다.\n3. P1은 물리뿐만 아니라 수학과 코딩과 같은 문제 해결 작업에서도 우수한 성능을 보여주며, 다양한 분야에서의 활용 가능성을 확인시켰습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, but their training remains resource- and time-intensive, requiring massive compute power and careful orchestration of training procedures. Model souping-the practice of averaging weights from multiple models of the same architecture-has emerged as a promising pre- and post-training technique that can enhance performance without expensive retraining. In this paper, we introduce Soup Of Category Experts (SoCE), a principled approach for model souping that utilizes benchmark composition to identify optimal model candidates and applies non-uniform weighted averaging to maximize performance. Contrary to previous uniform-averaging approaches, our method leverages the observation that benchmark categories often exhibit low inter-correlations in model performance. SoCE identifies \"expert\" models for each weakly-correlated category cluster and combines them using optimized weighted averaging rather than uniform weights. We demonstrate that the proposed method improves performance and robustness across multiple domains, including multilingual capabilities, tool calling, and math and achieves state-of-the-art results on the Berkeley Function Calling Leaderboard.",
+    "authors": [
+      "Shalini Maiti",
+      "Amar Budhiraja",
+      "Bhavul Gauri",
+      "Gaurav Chaurasia",
+      "Anton Protopopov",
+      "Alexis Audran-Reiss",
+      "Michael Slater",
+      "Despoina Magka",
+      "Tatiana Shavrina",
+      "Roberta Raileanu",
+      "Yoram Bachrach"
+    ],
+    "likes": 126,
+    "published_date": "Nov 17",
+    "url": "https://huggingface.co/papers/2511.13254",
+    "date_collected": "2025-11-24T10:36:58.971734+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "간단한 산술이 최신 LLM 성능의 열쇠를 제공하는 수퍼-모델",
+      "abstract": "대형 언어 모델(LLM)은 다양한 분야에서 놀라운 능력을 보여주었지만, 그들의 훈련은 자원 및 시간이 많이 소모되는데, 이는 방대한 컴퓨팅 파워와 세밀한 훈련 절차의 조화가 필요합니다. 모델 수핑이란, 동일 아키텍처의 여러 모델로부터 가중치를 평균 내는 실천법이 등장하여 비싼 재훈련 없이도 성능을 향상시킬 수 있는 유망한 사전 및 사후 훈련 기술로 부상하였습니다. 본 논문에서는 카테고리 전문가의 수프(Soup Of Category Experts, SoCE)를 소개하며, 이는 최적의 모델 후보를 식별하기 위해 벤치마크 구성을 활용하고 최적 성능을 극대화하기 위해 비교적 가중 평균을 적용하는 원칙적인 방법론입니다. 우리의 방법은 이전에 사용된 균일한 평균 방식과는 대조적으로, 벤치마크 카테고리가 종종 모델 성능의 낮은 상호 상관 관계를 보인다는 관찰을 활용합니다. SoCE는 약하게 상관된 각 범주 클러스터에 대한 \"전문가\" 모델을 식별하고, 그들을 균일한 가중치가 아닌 최적화된 가중 평균을 사용하여 결합합니다. 제안된 방법이 다국어 기능, 도구 호출, 수학 등 다양한 분야에서 성능과 견고성을 개선하며 버클리 함수 호출 리더보드에서 최신 결과를 달성함을 증명하였습니다."
+    },
+    "summary": "1. LLM 훈련을 많은 자원과 시간을 필요로 하는 작업으로 보이지만, 모델 수프(SoCE)라는 새로운 기법을 도입하여 비용 대비 성능을 향상시킬 수 있음.\n2. SoCE는 벤치마크 구성을 활용하여 최적 모델 후보를 식별하고, 비등중한 가중 평균을 통해 이들을 결합하여 성능을 극대화함.\n3. 기존의 균일한 평균 방식과는 다르게, SoCE는 낮은 상호 상관 관계를 보이는 벤치마크 카테고리를 활용하여 \"전문가\" 모델을 식별하고, 최적화된 가중 평균을 통해 개선된 성능과 견고성을 보여줌.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "VIDEOP2R: Video Understanding from Perception to Reasoning",
+    "abstract": "Reinforcement fine-tuning (RFT), a two-stage framework consisting of supervised fine-tuning (SFT) and reinforcement learning (RL) has shown promising results on improving reasoning ability of large language models (LLMs). Yet extending RFT to large video language models (LVLMs) remains challenging. We propose VideoP2R, a novel process-aware video RFT framework that enhances video reasoning by modeling perception and reasoning as distinct processes. In the SFT stage, we develop a three-step pipeline to generate VideoP2R-CoT-162K, a high-quality, process-aware chain-of-thought (CoT) dataset for perception and reasoning. In the RL stage, we introduce a novel process-aware group relative policy optimization (PA-GRPO) algorithm that supplies separate rewards for perception and reasoning. Extensive experiments show that VideoP2R achieves state-of-the-art (SotA) performance on six out of seven video reasoning and understanding benchmarks. Ablation studies further confirm the effectiveness of our process-aware modeling and PA-GRPO and demonstrate that model's perception output is information-sufficient for downstream reasoning.",
+    "authors": [
+      "Yifan Jiang",
+      "Yueying Wang",
+      "Rui Zhao",
+      "Toufiq Parag",
+      "Zhimin Chen",
+      "Zhenyu Liao",
+      "Jayakrishnan Unnikrishnan"
+    ],
+    "likes": 104,
+    "published_date": "Nov 14",
+    "url": "https://huggingface.co/papers/2511.11113",
+    "date_collected": "2025-11-24T10:36:58.972982+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "지각부터 추론까지 비디오 이해하기",
+      "abstract": "보상 미세조정(RFT)은 감독 미세조정(SFT)과 강화 학습(RL)으로 구성된 두 단계 프레임워크로, 대규모 언어 모델(LLMs)의 추론 능력을 향상시키는 데 유망한 결과를 보여주었습니다. 그러나 RFT를 대규모 비디오 언어 모델(LVLMs)로 확장하는 것은 여전히 어려움을 겪고 있습니다. 본 논문에서는 지각과 추론을 별도의 프로세스로 모델링하여 비디오 추론을 향상시키는 혁신적인 비디오 RFT 프레임워크 VideoP2R을 제안합니다."
+    },
+    "summary": "1. VideoP2R은 감독 미세조정 단계에서 지각과 추론을 위한 고품질 프로세스 인식 CoT 데이터셋을 생성하고, 강화 학습 단계에서는 지각과 추론에 대해 별도 보상을 제공하는 신규 프로세스 인식 그룹 상대 정책 최적화 알고리즘 PA-GRPO를 도입합니다.\n2. VideoP2R은 일곱 가지 비디오 추론 및 이해 벤치마크 중에서 여섯 가지에서 최신 기술 성능을 달성하였으며, 기계적인 지각 출력이 하류 추론에 필요한 정보를 제공함을 보여주는 실험을 통해 효과적임이 입증되었습니다.\n3. 이 논문의 과정 인식 모델링과 PA-GRPO의 효과성이 추가적인 실험을 통해 확인되었고, 모델의 지각 결과가 하류 추론에 필요한 정보를 제공함이 입증되었습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data",
+    "abstract": "We present Uni-MoE 2.0 from the Lychee family. As a fully open-source omnimodal large model (OLM), it substantially advances Lychee's Uni-MoE series in language-centric multimodal understanding, reasoning, and generating. Based on the Qwen2.5-7B dense architecture, we build Uni-MoE-2.0-Omni from scratch through three core contributions: dynamic-capacity Mixture-of-Experts (MoE) design, a progressive training strategy enhanced with an iterative reinforcement strategy, and a carefully curated multimodal data matching technique. It is capable of omnimodal understanding, as well as generating images, text, and speech. Architecturally, our new MoE framework balances computational efficiency and capability for 10 cross-modal inputs using shared, routed, and null experts, while our Omni-Modality 3D RoPE ensures spatio-temporal cross-modality alignment in the self-attention layer. For training, following cross-modal pretraining, we use a progressive supervised fine-tuning strategy that activates modality-specific experts and is enhanced by balanced data composition and an iterative GSPO-DPO method to stabilise RL training and improve reasoning. Data-wise, the base model, trained on approximately 75B tokens of open-source multimodal data, is equipped with special speech and image generation tokens, allowing it to learn these generative tasks by conditioning its outputs on linguistic cues. Extensive evaluation across 85 benchmarks demonstrates that our model achieves SOTA or highly competitive performance against leading OLMs, surpassing Qwen2.5-Omni (trained with 1.2T tokens) on over 50 of 76 benchmarks. Key strengths include video understanding (+7% avg. of 8), omnimodallity understanding (+7% avg. of 4), and audiovisual reasoning (+4%). It also advances long-form speech processing (reducing WER by 4.2%) and leads in low-level image processing and controllable generation across 5 metrics.",
+    "authors": [
+      "Yunxin Li",
+      "Xinyu Chen",
+      "Shenyuan Jiang",
+      "Haoyuan Shi",
+      "Zhenyu Liu",
+      "Xuanyu Zhang",
+      "Nanhao Deng",
+      "Zhenran Xu",
+      "Yicheng Ma",
+      "Meishan Zhang",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "likes": 98,
+    "published_date": "Nov 16",
+    "url": "https://huggingface.co/papers/2511.12609",
+    "date_collected": "2025-11-24T10:36:58.974399+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "Uni-MoE-2.0-Omni: 고급 MoE, 훈련 및 데이터로 언어 중심 옴니모달 대형 모델 확장",
+      "abstract": "Lychee 패밀리의 Uni-MoE 2.0를 소개합니다. 옴니모달 대형 모델(OLM)로 완전한 오픈 소스인 Uni-MoE 시리즈를 언어 중심의 다중모달 이해, 추론 및 생성에서 높게 발전시켰습니다. Qwen2.5-7B 밀집 아키텍처를 기반으로, 우리는 Uni-MoE-2.0-Omni를 다음 세 가지 주요 기여로부터 처음부터 구축했습니다: 동적 용량 MoE 디자인, 반복 강화 전략으로 강화된 점진적 훈련 전략 및 신중히 고른 다중모달 데이터 매칭 기술을 포함합니다. 이는 옴니모달 이해와 이미지, 텍스트 및 음성 생성이 가능합니다. 아키텍처적으로, 새로운 MoE 프레임워크는 공유된, 경로 지정된, 널(빈) 전문가를 사용하여 10개의 교차 모달 입력에 대한 계산 효율성과 능력을 균형 있게 유지하며, 우리의 Omni-Modality 3D RoPE는 자가 주의 계층에서 시공간 교차 모달 정렬을 보장합니다. 훈련 측면에서, 교차 모달 사전 훈련 이후, 우리는 모달리티-특정 전문가를 활성화하는 점진적 지도 학습 세밀 조정 전략을 사용하며 균형 잡힌 데이터 구성과 반복 GSPO-DPO 방법에 의해 강화학습 훈련을 안정화하고 추론을 향상시킵니다. 데이터 측면에서, 약 75B 토큰의 오픈 소스 다중모달 데이터로 훈련된 기본 모델은 특별 음성 및 이미지 생성 토큰을 장착하여 이러한 생성 작업을 언어적 힌트에 의존하여 학습할 수 있습니다. 85가지 벤치마크에서의 광범위한 평가에서, 우리 모델이 주요 OLM 대비 SOTA 또는 높은 경쟁력을 보이며, 76개 벤치마크 중 50개 이상에서 Qwen2.5-Omni(1.2T 토큰으로 훈련)을 초과했습니다. 주요 강점은 비디오 이해(+8의 평균치), 옴니모달 이해(+4의 평균치) 및 각종 이유(+4%)를 향상시켰습니다. 또한 긴 형식의 음성 처리(4.2%의 WER 감소)를 발전시키고 5가지 지표에 걸쳐 저수준 이미지 처리 및 제어 가능한 생성에서 선도합니다."
+    },
+    "summary": "1. Uni-MoE-2.0-Omni는 MoE 디자인, 훈련 전략, 데이터 기술 등에서 기존 모델을 발전시켜 언어 중심의 옴니모달 이해와 생성 능력을 갖추었습니다.\n2. 새로운 MoE 프레임워크와 Omni-Modality 3D RoPE를 활용하여 10가지 교차 모달 입력에 대한 효율적이고 균형 잡힌 모델을 제공하며, 모달리티-특정 전문가를 활성화하는 훈련 전략을 사용했습니다.\n3. 약 75B 토큰의 다중모달 데이터로 훈련된 Uni-MoE-2.0-Omni는 다양한 생성 작업과 벤치마크에서 우수한 성능을 보이며, 비디오 이해, 옴니모달 이해, 음성 및 이미지 처리에 강점을 갖고 있습니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "N/A"
+    ]
+  },
+  {
+    "title": "Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models",
+    "abstract": "Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constraints, is crucial for real-world applications. Prior work proposes recurrent transformers, which allocate a fixed number of extra iterations per token to improve generation quality. After the first, standard forward pass, instead of verbalization, last-layer hidden states are fed back as inputs for additional iterations to refine token predictions. Yet we identify a latent overthinking phenomenon: easy token predictions that are already correct after the first pass are sometimes revised into errors in additional iterations. To address this, we propose Think-at-Hard (TaH), a dynamic latent thinking method that iterates deeper only at hard tokens. It employs a lightweight neural decider to trigger latent iterations only at tokens that are likely incorrect after the standard forward pass. During latent iterations, Low-Rank Adaptation (LoRA) modules shift the LLM objective from general next-token prediction to focused hard-token refinement. We further introduce a duo-causal attention mechanism that extends attention from the token sequence dimension to an additional iteration depth dimension. This enables cross-iteration information flow while maintaining full sequential parallelism. Experiments show that TaH boosts LLM reasoning performance across five challenging benchmarks while maintaining the same parameter count. Compared with baselines that iterate twice for all output tokens, TaH delivers 8.1-11.3% accuracy gains while exempting 94% of tokens from the second iteration. Against strong single-iteration Qwen3 models finetuned with the same data, it also delivers 4.0-5.0% accuracy gains. When allowing less than 3% additional parameters from LoRA and the iteration decider, the gains increase to 8.5-12.6% and 5.3-5.4%, respectively. Our code is available at https://github.com/thu-nics/TaH.",
+    "authors": [
+      "Tianyu Fu",
+      "Yichen You",
+      "Zekai Chen",
+      "Guohao Dai",
+      "Huazhong Yang",
+      "Yu Wang"
+    ],
+    "likes": 95,
+    "published_date": "Nov 11",
+    "url": "https://huggingface.co/papers/2511.08577",
+    "date_collected": "2025-11-24T10:36:58.975608+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "어려운 곳에서 생각하라: 추론 언어 모델 향상을 위한 선택적 잠재적 반복",
+      "abstract": "특히 매개변수 제약 조건 하에서 대규모 언어 모델(Large Language Models, LLMs)의 추론 능력을 향상하는 것은 실제 응용 분야에 중요합니다. 이전 연구에서는 추가 반복을 통해 생성 품질을 향상시키기 위해 각 토큰에 대한 고정된 횟수의 추가 반복을 할당하는 순환 트랜스포머를 제안합니다. 그러나 우리는 잠재적인 과다 생각 현상을 확인했습니다: 첫 번째 패스 후 이미 정확한 쉬운 토큰 예측이 때로는 추가 반복에서 잘못 수정됩니다. 이를 해결하기 위해 우리는 어려운 토큰에서만 더 깊게 반복하는 동적 잠재적 사고 방법인 Think-at-Hard (TaH)를 제안합니다. 이 방법은 표준 전진 패스 이후 추가 반복에서 Token의 예측을 미세 조정하기 위해 마지막 레이어 숨겨진 상태를 입력으로 사용합니다."
+    },
+    "summary": "1. 매개변수 수 제약 하에서 LLM의 추론 능력을 향상시키는 Think-at-Hard (TaH) 방법을 소개함.\n2. TaH는 쉬운 토큰보다는 어려운 토큰에서만 깊은 반복을 수행하여 LLM의 성능을 향상시킴.\n3. Experiments 결과, TaH는 추가 매개변수 비용 없이 LLM의 추론 성능을 향상시키며, 강한 단일 반복 모델보다 우수한 성능을 보임.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "DoPE: Denoising Rotary Position Embedding",
+    "abstract": "Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrapolation. We reinterpret the attention map with positional encoding as a noisy feature map, and propose Denoising Positional Encoding (DoPE), a training-free method based on truncated matrix entropy to detect outlier frequency bands in the feature map. Leveraging the noise characteristics of the feature map, we further reparameterize it with a parameter-free Gaussian distribution to achieve robust extrapolation. Our method theoretically reveals the underlying cause of the attention sink phenomenon and its connection to truncated matrix entropy. Experiments on needle-in-a-haystack and many-shot in-context learning tasks demonstrate that DoPE significantly improves retrieval accuracy and reasoning stability across extended contexts (up to 64K tokens). The results show that the denoising strategy for positional embeddings effectively mitigates attention sinks and restores balanced attention patterns, providing a simple yet powerful solution for improving length generalization. Our project page is Project: https://The-physical-picture-of-LLMs.github.io",
+    "authors": [
+      "Jing Xiong",
+      "Liyang Fan",
+      "Hui Shen",
+      "Zunhai Su",
+      "Min Yang",
+      "Lingpeng Kong",
+      "Ngai Wong"
+    ],
+    "likes": 88,
+    "published_date": "Nov 12",
+    "url": "https://huggingface.co/papers/2511.09146",
+    "date_collected": "2025-11-24T10:36:58.976826+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "DoPE: Denoising Rotary Position Embedding",
+      "abstract": "Transformer 모델의 Rotary Position Embedding (RoPE)은 길이 추정을 약화시키는 내재적인 한계를 가지고 있습니다. 우리는 위치 부호화로 해석된 어텐션 맵을 있는 그대로의 특성 맵으로 보고, 이상적인 주파수 대역을 감지하는 것을 목적으로 하는 자율 학습 없이 해당 특성 맵에서 이상치 주파수 대역을 감지하는 Denoising Positional Encoding (DoPE)를 제안합니다. 특성 맵의 소음 특성을 활용하여 무료 매개변수인 가우시안 분포로 다시 매개변수화하여 견고한 추정을 달성합니다. 저희 방법론은 어텐션 싱크 현상의 근본적인 원인과 그것과 잘려진 행렬 엔트로피의 연관성을 이론적으로 밝힙니다. '바늘 속에서 바늘 찾기' 및 많은 샷 인 콘텍스트 학습 작업에서의 실험 결과는 DoPE가 64K 토큰까지의 확장된 컨텍스트에서 검색 정확도와 추론 안정성을 크게 향상시킨다는 것을 보여줍니다. 결과는 위치 부호화에 대한 소음 제거 전략이 어텐션 싱크를 효과적으로 완화시키고 균형 잡힌 어텐션 패턴을 복원함을 보여주며, 길이 추정을 개선하는 간단하고 강력한 해결책을 제공합니다."
+    },
+    "summary": "1. RoPE의 한계를 극복하기 위해 DoPE를 제안하였는데, 이는 이상치 주파수 대역을 감지하는 무료 매개변수 방법으로 어텐션 맵을 재해석함.\n2. 실험 결과는 DoPE가 길이 추정을 향상시키고, 어텐션 싱크를 완화시키며, 균형 잡힌 어텐션 패턴을 복원함을 입증함.\n3. DoPE는 위치 부호화의 소음 제거 전략이므로, Transformer 모델에서의 추론 안정성과 검색 정확도를 향상시키는 강력한 기법임.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning",
+    "abstract": "Large Language Model (LLM) Agents, often trained with Reinforcement Learning (RL), are constrained by a dependency on human-curated data, limiting scalability and tethering AI to human knowledge. Existing self-evolution frameworks offer an alternative but are typically restricted by the model's inherent capabilities and single-round interactions, hindering the development of complex curricula involving tool use or dynamic reasoning. We introduce Agent0, a fully autonomous framework that evolves high-performing agents without external data through multi-step co-evolution and seamless tool integration. Agent0 establishes a symbiotic competition between two agents initialized from the same base LLM: a curriculum agent that proposes increasingly challenging frontier tasks, and an executor agent that learns to solve them. We integrate external tools to enhance the executor's problem-solving capacity; this improvement, in turn, pressures the curriculum agent to construct more complex, tool-aware tasks. Through this iterative process, Agent0 establishes a self-reinforcing cycle that continuously produces high-quality curricula. Empirically, Agent0 substantially boosts reasoning capabilities, improving the Qwen3-8B-Base model by 18% on mathematical reasoning and 24% on general reasoning benchmarks. Code is available at https://github.com/aiming-lab/Agent0.",
+    "authors": [
+      "Peng Xia",
+      "Kaide Zeng",
+      "Jiaqi Liu",
+      "Can Qin",
+      "Fang Wu",
+      "Yiyang Zhou",
+      "Caiming Xiong",
+      "Huaxiu Yao"
+    ],
+    "likes": 73,
+    "published_date": "Nov 20",
+    "url": "https://huggingface.co/papers/2511.16043",
+    "date_collected": "2025-11-24T10:36:58.978110+09:00",
+    "week": "2025-W48",
+    "translation": {
+      "title": "Agent0: 도구 통합 추론을 통해 0 데이터에서 자가진화 에이전트 해방",
+      "abstract": "대규모 언어 모델 (LLM) 에이전트는 종종 강화 학습 (RL)으로 훈련되며, 인간이 선별한 데이터에 의존하므로 확장 가능성에 제약이 생기고 AI를 인간 지식에 묶어두는 한계가 있습니다. 기존의 자체 진화 프레임워크는 대안을 제공하지만 일반적으로 모델의 내재적 능력과 단일 라운드 상호작용에 제한을 받아 도구 사용이나 동적 추론을 포함하는 복잡한 커리큘럼의 개발을 어렵게 만드는 한계가 있습니다. 본 논문에서는 외부 데이터 없이 고성능 에이전트를 발전시키는 완전 자동 프레임워크인 Agent0를 소개합니다. Agent0는 다단계 상호 진화와 매끄러운 도구 통합을 통해 초기화된 두 개의 에이전트 사이에 공생적 경쟁을 수립합니다."
+    },
+    "summary": "1. Agent0는 외부 데이터 없이 고성능 에이전트를 자연스럽게 발전시키는 도구 통합된 자가진화 프레임워크이다.\n2. 이 프레임워크는 두 개의 에이전트 간의 상호 진화를 통해 고도로 복잡한 커리큘럼을 구축하며, 외부 도구를 통합해 문제 해결 능력을 향상시킨다.\n3. Agent0는 수학적 추론과 일반적 추론 벤치마크에서 Qwen3-8B-Base 모델의 추론 능력을 상당히 향상시킨다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks",
+    "abstract": "Video Models have achieved remarkable success in high-fidelity video generation with coherent motion dynamics. Analogous to the development from text generation to text-based reasoning in language modeling, the development of video models motivates us to ask: Can video models reason via video generation? Compared with the discrete text corpus, video grounds reasoning in explicit spatial layouts and temporal continuity, which serves as an ideal substrate for spatial reasoning. In this work, we explore the reasoning via video paradigm and introduce VR-Bench -- a comprehensive benchmark designed to systematically evaluate video models' reasoning capabilities. Grounded in maze-solving tasks that inherently require spatial planning and multi-step reasoning, VR-Bench contains 7,920 procedurally generated videos across five maze types and diverse visual styles. Our empirical analysis demonstrates that SFT can efficiently elicit the reasoning ability of video model. Video models exhibit stronger spatial perception during reasoning, outperforming leading VLMs and generalizing well across diverse scenarios, tasks, and levels of complexity. We further discover a test-time scaling effect, where diverse sampling during inference improves reasoning reliability by 10--20%. These findings highlight the unique potential and scalability of reasoning via video for spatial reasoning tasks.",
+    "authors": [
+      "Cheng Yang",
+      "Haiyuan Wan",
+      "Yiran Peng",
+      "Xin Cheng",
+      "Zhaoyang Yu",
+      "Jiayi Zhang",
+      "Junchi Yu",
+      "Xinlei Yu",
+      "Xiawu Zheng",
+      "Dongzhan Zhou",
+      "Chenglin Wu"
+    ],
+    "likes": 70,
+    "published_date": "Nov 19",
+    "url": "https://huggingface.co/papers/2511.15065",
+    "date_collected": "2025-11-24T10:36:58.979474+09:00",
+    "week": "2025-W47",
+    "translation": {
+      "title": "비디오를 통한 추론: 미로 해결 작업을 통해 비디오 모델의 추론 능력을 평가한 최초의 연구",
+      "abstract": "비디오 모델은 일관된 동적 움직임을 가진 고품질 비디오 생성에서 주목할만한 성과를 얻었습니다. 언어 모델링에서 텍스트 생성에서 텍스트 기반 추론으로의 발전과 유사하게, 비디오 모델의 발전은 우리에게 다음과 같은 의문을 제기합니다: 비디오 생성을 통해 비디오 모델이 추론할 수 있을까요? 비디오가 이산 텍스트 말뭉치와 비교할 때, 비디오는 명시적인 공간 배열과 시간적 연속성을 기반으로 추론을 지원하여 공간 추론에 이상적인 기반이 됩니다. 본 연구에서는 비디오를 통한 추론 패러다임을 탐구하고 비디오 모델의 추론 능력을 체계적으로 평가하기 위해 설계된 포괄적인 벤치마크인 VR-Bench를 소개합니다. 공간 계획과 다단계 추론이 본성적으로 필요한 미로 해결 작업에 근거한 VR-Bench는 5가지 미로 유형과 다양한 시각적 스타일을 가진 7,920개의 절차적으로 생성된 비디오를 포함하고 있습니다. 우리의 경험적 분석은 SFT가 비디오 모델의 추론 능력을 효과적으로 유도할 수 있다는 것을 보여줍니다. 비디오 모델은 추론 중에 더 강한 공간 지각을 보여주며 선행 VLM을 앞설 뿐만 아니라 다양한 시나리오, 작업 및 복잡성 수준에 걸쳐 일반화 성능도 우수합니다. 또한, 추론 신뢰성을 향상시키기 위해 추론 중 다양한 샘플링이 가능하다는 테스트 타임 스케일링 효과를 발견했습니다."
+    },
+    "summary": "1. 비디오 모델을 통한 추론 능력을 평가하기 위한 첫 번째 벤치마크인 VR-Bench가 소개됨.\n2. VR-Bench는 미로 해결 작업에 기반하며 비디오 모델이 공간 계획과 다단계 추론을 수행하는 능력을 평가함.\n3. 연구 결과에 따르면 비디오 모델은 VLM보다 강한 공간 지각 능력을 보이며, 다양한 시나리오에서 일반화가 잘 됨.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  }
+]

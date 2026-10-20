@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Dec  2 22:08:03 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W49
+URL: https://huggingface.co/papers/week/2025-W49
+Found 10 papers in weekly view
+Fetching likes for: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+Fetching likes for: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+Fetching likes for: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Fetching likes for: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+Fetching likes for: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+Fetching likes for: How Far Are We from Genuinely Useful Deep Research Agents?
+Fetching likes for: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+Fetching likes for: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Fetching likes for: What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards
+Fetching likes for: Vision Bridge Transformer at Scale
+Selected top 10 papers by likes:
+1. From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence (177 likes)
+2. LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling (139 likes)
+3. Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer (101 likes)
+4. Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights (81 likes)
+5. Stabilizing Reinforcement Learning with LLMs: Formulation and Practices (49 likes)
+6. How Far Are We from Genuinely Useful Deep Research Agents? (44 likes)
+7. REASONEDIT: Towards Reasoning-Enhanced Image Editing Models (44 likes)
+8. DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning (43 likes)
+9. What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards (39 likes)
+10. Vision Bridge Transformer at Scale (38 likes)
+Found abstract: Large language models (LLMs) have fundamentally transformed automated software development by enabli...
+Processed paper: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+Found abstract: Large multimodal models (LMMs) have shown great potential for video reasoning with textual Chain-of-...
+Processed paper: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+Found abstract: The landscape of high-performance image generation models is currently dominated by proprietary syst...
+Processed paper: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Found abstract: Current multimodal models aim to transcend the limitations of single-modality representations by uni...
+Processed paper: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+Found abstract: This paper proposes a novel formulation for reinforcement learning (RL) with large language models, ...
+Processed paper: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+Found abstract: Deep Research Agents (DRAs) aim to automatically produce analyst-level reports through iterative inf...
+Processed paper: How Far Are We from Genuinely Useful Deep Research Agents?
+Found abstract: Recent advances in image editing models have shown remarkable progress. A common architectural desig...
+Processed paper: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+Found abstract: Large language models have made significant progress in mathematical reasoning, which serves as an i...
+Processed paper: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Found abstract: Recent video diffusion models can synthesize visually compelling clips, yet often violate basic phys...
+Processed paper: What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards
+Found abstract: We introduce Vision Bridge Transformer (ViBT), a large-scale instantiation of Brownian Bridge Models...
+Processed paper: Vision Bridge Transformer at Scale
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Paper already exists, checking if translation is complete...
+Update likes: 101  ->  71
+Update date_collected: 2025-12-03T07:08:12.617039+09:00  ->  2025-12-02T07:07:35.491303+09:00
+
+Processing paper 4/10
+Title: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: How Far Are We from Genuinely Useful Deep Research Agents?
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: REASONEDIT: Towards Reasoning-Enhanced Image Editing Models
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  38
+Update date_collected: 2025-12-03T07:08:12.622746+09:00  ->  2025-12-02T07:07:35.492961+09:00
+
+Processing paper 8/10
+Title: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  18
+Update date_collected: 2025-12-03T07:08:12.624048+09:00  ->  2025-12-02T07:07:35.498662+09:00
+
+Processing paper 9/10
+Title: What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Vision Bridge Transformer at Scale
+Paper already exists, checking if translation is complete...
+Update likes: 38  ->  31
+Update date_collected: 2025-12-03T07:08:12.626258+09:00  ->  2025-12-02T07:07:35.495755+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W49.json...
+
+Updating Notion database...
+Creating new paper: 코드 기반 모델부터 에이전트와 응용까지: 코드 인텔리전스의 실용 가이드
+Creating new paper: LongVT: 원생 도구 호출을 통한 "긴 비디오와 함께 생각" 유도
+Updating paper: Z-Image: 단일 스트림 확산 트랜스포머를 활용한 효율적인 이미지 생성 기반 모델 (likes: 71 -> 101)
+Creating new paper: Envision: 인과적 세계 과정 통찰을 위한 통합 이해 및 생성 벤치마킹
+Creating new paper: Reinforcement Learning 안정화를 위한 LLMs: 개념과 실제
+Creating new paper: 얼마나 깊이있게 유용한 심층 연구 에이전트에게서 멀리 떨어져 있나요?
+Updating paper: REASONEDIT: 이성 증진 이미지 편집 모델을 향하여 (likes: 38 -> 44)
+Updating paper: 딥시크수학-V2: 자기 검증 수학 추론을 향하여 (likes: 18 -> 43)
+Creating new paper: 비디오 생성에서 중력은 어떤가요? 검증 가능한 보상으로 사후 교육하는 뉴턴의 법칙(Post-Training Newton's Laws with Verifiable Rewards)
+Updating paper: 대규모 비전 브릿지 트랜스포머 (likes: 31 -> 38)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Dec  2 22:10:54 UTC 2025 ===
+

@@ -1,0 +1,127 @@
+=== Paper Collection Started at Fri May 29 22:36:24 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W22
+URL: https://huggingface.co/papers/week/2026-W22
+Found 10 papers in weekly view
+Fetching likes for: Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players
+Fetching likes for: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Fetching likes for: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Fetching likes for: LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding
+Fetching likes for: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Fetching likes for: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Fetching likes for: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Fetching likes for: AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security
+Fetching likes for: ProRL: Effective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient Estimation
+Fetching likes for: Macaron-A2UI: A Model for Generative UI in Personal Agents
+Selected top 10 papers by likes:
+1. Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players (283 likes)
+2. SkillOpt: Executive Strategy for Self-Evolving Agent Skills (201 likes)
+3. DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning (130 likes)
+4. LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding (117 likes)
+5. Rethinking Cross-Layer Information Routing in Diffusion Transformers (104 likes)
+6. Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models (103 likes)
+7. WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation (97 likes)
+8. AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security (81 likes)
+9. ProRL: Effective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient Estimation (78 likes)
+10. Macaron-A2UI: A Model for Generative UI in Personal Agents (77 likes)
+Found abstract: World models for interactive video generation have largely focused on single-agent settings, where f...
+Processed paper: Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players
+Found abstract: Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-...
+Processed paper: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Found abstract: Reinforcement Learning has become a standard paradigm for aligning Large Language Models with human ...
+Processed paper: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Found abstract: Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-toke...
+Processed paper: LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding
+Found abstract: Diffusion Transformers (DiTs) have become a de facto backbone of modern visual generation, and nearl...
+Processed paper: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Found abstract: We introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in sev...
+Processed paper: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Found abstract: Interactive world models are advancing rapidly, yet existing benchmarks cover only part of the requi...
+Processed paper: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Found abstract: Modern open-world agents such as OpenClaw exhibit powerful cross-environment execution capabilities ...
+Processed paper: AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security
+Found abstract: Proactive Recommender Systems (PRSs) aim to guide user preference shift toward target items by gener...
+Processed paper: ProRL: Effective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient Estimation
+Found abstract: As personal agents evolve to handle complex, user-centric tasks, static plain-text chat is rapidly b...
+Processed paper: Macaron-A2UI: A Model for Generative UI in Personal Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players
+Paper already exists, checking if translation is complete...
+Update likes: 283  ->  155
+Update date_collected: 2026-05-30T07:36:34.931933+09:00  ->  2026-05-29T07:38:05.449813+09:00
+
+Processing paper 2/10
+Title: SkillOpt: Executive Strategy for Self-Evolving Agent Skills
+Paper already exists, checking if translation is complete...
+Update likes: 201  ->  191
+Update date_collected: 2026-05-30T07:36:34.934782+09:00  ->  2026-05-29T07:38:05.447262+09:00
+
+Processing paper 3/10
+Title: DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 130  ->  129
+Update date_collected: 2026-05-30T07:36:34.937108+09:00  ->  2026-05-29T07:38:05.452123+09:00
+
+Processing paper 4/10
+Title: LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 117  ->  114
+Update date_collected: 2026-05-30T07:36:34.939863+09:00  ->  2026-05-29T07:38:05.454830+09:00
+
+Processing paper 5/10
+Title: Rethinking Cross-Layer Information Routing in Diffusion Transformers
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  102
+Update date_collected: 2026-05-30T07:36:34.942546+09:00  ->  2026-05-29T07:38:05.457500+09:00
+
+Processing paper 6/10
+Title: Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models
+Paper already exists, checking if translation is complete...
+Update likes: 103  ->  102
+Update date_collected: 2026-05-30T07:36:34.945668+09:00  ->  2026-05-29T07:38:05.460610+09:00
+
+Processing paper 7/10
+Title: WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation
+Paper already exists, checking if translation is complete...
+Update likes: 97  ->  96
+Update date_collected: 2026-05-30T07:36:34.948172+09:00  ->  2026-05-29T07:38:05.463095+09:00
+
+Processing paper 8/10
+Title: AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: ProRL: Effective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient Estimation
+Paper already exists, checking if translation is complete...
+Update likes: 78  ->  76
+Update date_collected: 2026-05-30T07:36:34.953965+09:00  ->  2026-05-29T07:38:05.468320+09:00
+
+Processing paper 10/10
+Title: Macaron-A2UI: A Model for Generative UI in Personal Agents
+Paper already exists, checking if translation is complete...
+Update likes: 77  ->  77
+Update date_collected: 2026-05-30T07:36:34.956576+09:00  ->  2026-05-29T07:38:05.465841+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W22.json...
+
+Updating Notion database...
+Updating paper: 게임마-월드: 두 명 이상의 플레이어를 위한 생성적 다중 에이전트 월드 모델링 (likes: 155 -> 283)
+Updating paper: SkillOpt: 진화 중인 에이전트 스킬을 위한 실행 전략 (likes: 191 -> 201)
+Updating paper: 다이내믹 분산 적응형 어드밴티지 최적화를 이용한 다중 보상 강화학습 (DVAO: Dynamic Variance-adaptive Advantage Optimization for Multi-reward Reinforcement Learning) (likes: 129 -> 130)
+Updating paper: LocateAnything: 빠르고 고품질의 시각-언어 접지를 위한 병렬 상자 디코딩 (likes: 114 -> 117)
+Updating paper: 확산 트랜스포머에서의 교차 계층 정보 라우팅 다시 생각하기 (likes: 102 -> 104)
+Updating paper: 렌즈: 핵심 텍스트-이미지 모델의 효율적인 훈련 방식 재고 (likes: 102 -> 103)
+Updating paper: WBench: 상호작용형 비디오 세계 모델 평가를 위한 포괄적인 다중 턴 벤치마크 (likes: 96 -> 97)
+Creating new paper: 에이전트 안전과 보안을 위한 경량 및 확장 가능한 정렬 프레임워크인 AgentDoG 1.5
+Updating paper: ProRL: 효과적인 보상 강화학습을 통한 적극적 추천 (likes: 76 -> 78)
+Paper already exists with same likes count: 개인 에이전트에서 생성 UI 모델인 Macaron-A2UI
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri May 29 22:37:58 UTC 2026 ===
+

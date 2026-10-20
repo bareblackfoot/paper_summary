@@ -1,0 +1,276 @@
+[
+  {
+    "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+    "abstract": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities. We introduce a \"levels x laws\" taxonomy organized along two axes. The first defines three capability levels: L1 Predictor, which learns one-step local transition operators; L2 Simulator, which composes them into multi-step, action-conditioned rollouts that respect domain laws; and L3 Evolver, which autonomously revises its own model when predictions fail against new evidence. The second identifies four governing-law regimes: physical, digital, social, and scientific. These regimes determine what constraints a world model must satisfy and where it is most likely to fail. Using this framework, we synthesize over 400 works and summarize more than 100 representative systems spanning model-based reinforcement learning, video generation, web and GUI agents, multi-agent social simulation, and AI-driven scientific discovery. We analyze methods, failure modes, and evaluation practices across level-regime pairs, propose decision-centric evaluation principles and a minimal reproducible evaluation package, and outline architectural guidance, open problems, and governance challenges. The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate.",
+    "authors": [
+      "Meng Chu",
+      "Xuan Billy Zhang",
+      "Kevin Qinghong Lin",
+      "Lingdong Kong",
+      "Jize Zhang",
+      "Teng Tu",
+      "Weijian Ma",
+      "Ziqi Huang",
+      "Senqiao Yang",
+      "Wei Huang",
+      "Yeying Jin",
+      "Zhefan Rao",
+      "Jinhui Ye",
+      "Xinyu Lin",
+      "Xichen Zhang",
+      "Qisheng Hu",
+      "Shuai Yang",
+      "Leyang Shen",
+      "Wei Chow",
+      "Yifei Dong",
+      "Fengyi Wu",
+      "Quanyu Long"
+    ],
+    "likes": 151,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22748",
+    "date_collected": "2026-04-28T07:24:01.135467+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "의지 있는 세계 모델링: 기초, 능력, 법칙, 그리고 그 너머",
+      "abstract": "AI 시스템이 텍스트 생성에서 상호작용을 통해 목표를 달성하는 데 진화함에 따라 환경 역학을 모델링하는 능력은 중요한 병목 현상이 됩니다. 물체를 조작하거나 소프트웨어를 탐색하거나 다른 요소들과 협력하거나 실험을 설계하는 에이전트들은 예측적인 환경 모델이 필요합니다. 그러나 세계 모델이라는 용어는 연구 커뮤니티마다 다른 의미를 지니고 있습니다. 본고서에서는 두 축을 따라 정리된 \"수준 x 법칙\" 분류법을 소개합니다."
+    },
+    "summary": "1. AI 시스템이 긴 여러 단계 상호작용에서 목표를 달성하기 위해 예측적 환경 모델이 중요하며, 이를 위해 \"수준\"이라는 능력 수준과 \"법칙\"이라는 규칙 체계를 소개합니다.\n2. 세 가지 능력 수준(L1 Predictor, L2 Simulator, L3 Evolver)과 네 가지 규칙 체계(물리, 디지털, 사회, 과학)를 정의하고, 모델 기반 강화학습, 비디오 생성, 웹/GUI 에이전트, 다중 에이전트 사회 시뮬레이션, AI 주도적 과학적 발견 등을 아우르는 100여 개 대표적인 시스템을 종합하여 분석했습니다.\n3. 결정 중심적 평가 원칙과 최소 재현 가능한 평가 패키지를 제안하고, 구조적 가이드, 미해결 문제, 그리고 지배 도약 도전 과제를 개요로 제시하여 이 분야의 커뮤니티 간 연결과 에이전트가 운영하는 환경을 시뮬레이션하고 궁극적으로 재편할 수 있는 세계 모델로의 길을 개척합니다.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Video Analysis and Generation via a Semantic Progress Function",
+    "abstract": "Transformations produced by image and video generation models often evolve in a highly non-linear manner: long stretches where the content barely changes are followed by sudden, abrupt semantic jumps. To analyze and correct this behavior, we introduce a Semantic Progress Function, a one-dimensional representation that captures how the meaning of a given sequence evolves over time. For each frame, we compute distances between semantic embeddings and fit a smooth curve that reflects the cumulative semantic shift across the sequence. Departures of this curve from a straight line reveal uneven semantic pacing. Building on this insight, we propose a semantic linearization procedure that reparameterizes (or retimes) the sequence so that semantic change unfolds at a constant rate, yielding smoother and more coherent transitions. Beyond linearization, our framework provides a model-agnostic foundation for identifying temporal irregularities, comparing semantic pacing across different generators, and steering both generated and real-world video sequences toward arbitrary target pacing.",
+    "authors": [
+      "Gal Metzer",
+      "Sagi Polaczek",
+      "Ali Mahdavi-Amiri",
+      "Raja Giryes",
+      "Daniel Cohen-Or"
+    ],
+    "likes": 36,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22554",
+    "date_collected": "2026-04-28T07:24:01.137060+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "시맨틱 진행 함수를 통한 비디오 분석과 생성",
+      "abstract": "이미지 및 비디오 생성 모델에 의해 생성된 변환은 종종 매우 비선형적인 방식으로 진화합니다. 내용이 거의 변하지 않는 장기간이 갑자기 갑작스럽게 나타나는 급격한 의미적 점프를 따릅니다. 이러한 행동을 분석하고 수정하기 위해, 우리는 시맨틱 진행 함수를 소개합니다. 이 함수는 특정 시퀀스의 의미가 어떻게 시간에 따라 진화하는지를 포착하는 일차원 표현입니다. 우리는 각 프레임에 대해 시맨틱 임베딩 간의 거리를 계산하고, 일련의 누적 시맨틱 변화를 반영하는 부드러운 곡선을 맞춥니다. 이러한 곡선이 직선에서 벗어나면 불규칙한 의미적 페이싱을 나타냅니다. 이 통찰력을 바탕으로, 우리는 의미적 선형화 절차를 제안합니다. 이 절차는 시퀀스를 다시 매개변수화(또는 재타이밍)하여 의미적 변화가 일정한 비율로 펼쳐지도록 만들어 부드럽고 더 일관된 전환을 도출합니다. 선형화를 넘어서, 우리의 프레임워크는 시간적 불규칙성을 식별하고, 다른 생성자들 간의 의미적 페이싱을 비교하며, 생성된 비디오와 실제 비디오 시퀀스를 임의의 목표 페이싱으로 이끄는 데에 모델에 중립적인 기초를 제공합니다."
+    },
+    "summary": "1. 이미지와 비디오 생성 모델에서 발생하는 변환은 비선형적이고, 의미적 점프가 있는 불규칙한 패턴을 보입니다.\n2. 제안된 시맨틱 진행 함수는 일련의 프레임에서 의미적 변화를 부드럽게 나타내는 방법을 제시합니다.\n3. 제안된 시맨틱 선형화 절차는 의미적 변화를 균일하게 만들어 부드럽고 일관된 비디오 전환을 도출하며, 모든 생성자들 간의 의미적 페이싱을 비교하고 비디오 시퀀스를 목표 페이싱으로 조정할 수 있습니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction",
+    "abstract": "Neural representations (NRs), such as neural fields and 3D Gaussians, effectively model volumetric data in computed tomography (CT) but suffer from severe artifacts under sparse-view settings. To address this, we propose DiffNR, a novel framework that enhances NR optimization with diffusion priors. At its core is SliceFixer, a single-step diffusion model designed to correct artifacts in degraded slices. We integrate specialized conditioning layers into the network and develop tailored data curation strategies to support model finetuning. During reconstruction, SliceFixer periodically generates pseudo-reference volumes, providing auxiliary 3D perceptual supervision to fix underconstrained regions. Compared to prior methods that embed CT solvers into time-consuming iterative denoising, our repair-and-augment strategy avoids frequent diffusion model queries, leading to better runtime performance. Extensive experiments show that DiffNR improves PSNR by 3.99 dB on average, generalizes well across domains, and maintains efficient optimization.",
+    "authors": [
+      "Shiyan Su",
+      "Ruyi Zha",
+      "Danli Shi",
+      "Hongdong Li",
+      "Xuelian Cheng"
+    ],
+    "likes": 26,
+    "published_date": "Apr 23",
+    "url": "https://huggingface.co/papers/2604.21518",
+    "date_collected": "2026-04-28T07:24:01.138626+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "희박-뷰 3D 단층촬영 재구축을 위한 확산 증진 신경 표현 최적화(DiffNR)",
+      "abstract": "신경 표현(NRs)은 컴퓨터 단층촬영(CT)의 부피 데이터를 효과적으로 모델링하지만 희소한 시야 설정 하에서 심각한 아티팩트를 겪는다. 본 논문에서는 이를 해결하기 위해 확산 선호사항과 결합된 NR 최적화를 제안하는 DiffNR 프레임워크를 제안한다. SliceFixer라는 단일 단계 확산 모델을 핵심으로, 약화된 슬라이스의 아티팩트를 수정하기 위해 설계되었다. 우리는 네트워크에 특화된 조건부 레이어를 통합하고 모델을 세밀하게 튜닝하기 위한 맞춤형 데이터 정리 전략을 개발했다. 재구성 중에 SliceFixer는 주기적으로 의사 참고 볼륨을 생성하여, 언더컨스트레인 지역을 수정하기 위해 보조 3D 지각적 감독을 제공한다. 이전 방법들이 CT 솔버를 시간이 많이 걸리는 반복적인 소음 제거로 통합하는 반면, 우리의 수리-증강 전략은 빈번한 확산 모델 조회를 피하며 더 나은 런타임 성능을 나타낸다. 광범위한 실험 결과, DiffNR은 평균 PSNR을 3.99 dB 향상시키고, 도메인을 넘어서 잘 일반화되며, 효율적인 최적화를 유지한다."
+    },
+    "summary": "1. 희소한 시야 설정 하에서 단층촬영 재구축시 발생하는 심각한 아티팩트를 개선하기 위해 확산 선호사항과 결합된 NR 최적화 프레임워크인 DiffNR을 소개합니다.\n2. 모델 내에 특별히 설계된 SliceFixer를 핵심으로 사용하여 약화된 슬라이스의 아티팩트를 수정하기 위한 단계적인 확산 모델을 제안하고, 네트워크에 조건부 레이어를 통합하며 모델 튜닝을 지원하기 위한 데이터 정리 전략을 개발합니다.\n3. SliceFixer는 주기적으로 의사 참고 볼륨을 생성하여 언더컨스트레인 지역을 수정함으로써, 빠른 런타임 성능을 보이며 PSNR을 높이고 효과적인 최적화를 유지합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "LLM Safety From Within: Detecting Harmful Content with Internal Representations",
+    "abstract": "Guard models are widely used to detect harmful content in user prompts and LLM responses. However, state-of-the-art guard models rely solely on terminal-layer representations and overlook the rich safety-relevant features distributed across internal layers. We present SIREN, a lightweight guard model that harnesses these internal features. By identifying safety neurons via linear probing and combining them through an adaptive layer-weighted strategy, SIREN builds a harmfulness detector from LLM internals without modifying the underlying model. Our comprehensive evaluation shows that SIREN substantially outperforms state-of-the-art open-source guard models across multiple benchmarks while using 250 times fewer trainable parameters. Moreover, SIREN exhibits superior generalization to unseen benchmarks, naturally enables real-time streaming detection, and significantly improves inference efficiency compared to generative guard models. Overall, our results highlight LLM internal states as a promising foundation for practical, high-performance harmfulness detection.",
+    "authors": [
+      "Difan Jiao",
+      "Yilun Liu",
+      "Ye Yuan",
+      "Zhenwei Tang",
+      "Linfeng Du",
+      "Haolun Wu",
+      "Ashton Anderson"
+    ],
+    "likes": 21,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18519",
+    "date_collected": "2026-04-28T07:24:01.140291+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "LLM 안전에 대한 안전장치: 내부 표현으로 유해 콘텐츠 감지하기",
+      "abstract": "가드 모델은 사용자 입력과 LLM 응답에서 유해 콘텐츠를 감지하는 데 널리 사용됩니다. 그러나 최첨단 가드 모델은 순전단층 표현에만 의존하며 내부층에 분산된 풍부한 안전 관련 기능을 간과합니다. 저희는 SIREN을 제시합니다. SIREN은 내부 기능을 활용하는 가벼운 가드 모델입니다. 선형 조사를 통해 안전한 뉴런을 식별하고 적응형 계층 가중 전략을 통해 이를 결합함으로써, SIREN은 기본 모델을 수정하지 않고 LLM 내부에서 유해성 감지기를 구축합니다. 저희의 포괄적인 평가는 SIREN이 여러 벤치마크에서 최첨단 오픈 소스 가드 모델보다 크게 성능을 뛰어넘는 것을 보여주며, 훈련 가능한 파라미터를 250배나 적게 사용합니다. 게다가 SIREN은 보지 못한 벤치마크에 대한 우수한 일반화를 보여주며, 실시간 스트리밍 감지를 자연스럽게 가능하게 하고 생성적 가드 모델에 비해 추론 효율성을 크게 향상시킵니다. 결국, 저희 결과는 LLM 내부 상태를 실용적이고 고성능으로 유해성 감지의 기반으로 한 것으로 강조합니다."
+    },
+    "summary": "1. SIREN은 LLM 내부 기능을 활용하여 유해 콘텐츠를 감지하는 가벼운 가드 모델이다.\n2. SIREN은 안전 뉴런을 식별하고 적응형 계층 가중 전략을 통해 이를 결합하여 유해성 감지기를 구축한다.\n3. SIREN은 최첨단 오픈 소스 가드 모델을 크게 능가하며, 적은 파라미터로 더 효율적인 유해성 감지를 실현한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "FlowAnchor: Stabilizing the Editing Signal for Inversion-Free Video Editing",
+    "abstract": "We propose FlowAnchor, a training-free framework for stable and efficient inversion-free, flow-based video editing. Inversion-free editing methods have recently shown impressive efficiency and structure preservation in images by directly steering the sampling trajectory with an editing signal. However, extending this paradigm to videos remains challenging, often failing in multi-object scenes or with increased frame counts. We identify the root cause as the instability of the editing signal in high-dimensional video latent spaces, which arises from imprecise spatial localization and length-induced magnitude attenuation. To overcome this challenge, FlowAnchor explicitly anchors both where to edit and how strongly to edit. It introduces Spatial-aware Attention Refinement, which enforces consistent alignment between textual guidance and spatial regions, and Adaptive Magnitude Modulation, which adaptively preserves sufficient editing strength. Together, these mechanisms stabilize the editing signal and guide the flow-based evolution toward the desired target distribution. Extensive experiments demonstrate that FlowAnchor achieves more faithful, temporally coherent, and computationally efficient video editing across challenging multi-object and fast-motion scenarios. The project page is available at https://cuc-mipg.github.io/FlowAnchor.github.io/.",
+    "authors": [
+      "Ze Chen",
+      "Lan Chen",
+      "Yuanhang Li",
+      "Qi Mao"
+    ],
+    "likes": 10,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22586",
+    "date_collected": "2026-04-28T07:24:01.141771+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "FlowAnchor: 비전환 프리 비디오 편집을 위한 편집 신호 안정화",
+      "abstract": "우리는 훈련 불필요한 안정적이고 효율적인 비전환, 플로우 기반 비디오 편집을 위한 FlowAnchor를 제안합니다. 최근 비전환 편집 방법은 편집 신호로 샘플링 경로를 직접 조정함으로써 이미지에서 효율성과 구조 보존을 인상적으로 보였습니다. 그러나 이 패러다임을 비디오로 확장하는 것은 여전히 산뜻한 문제로, 다중 객체 씬이나 증가된 프레임 수에서 종종 실패합니다. 우리는 이러한 도전의 근본 원인을 높은 차원의 비디오 잠재 공간에서의 편집 신호의 불안정성으로 확인하고, 이는 정확하지 않은 공간적 지역화와 길이로 인한 크기 약화에서 비롯됩니다. 이 도전을 극복하기 위해 FlowAnchor는 어디서 편집하고 얼마나 강하게 편집할 지를 명확히 고정시킵니다. 텍스트 가이드와 공간적 영역 간의 일관된 정렬을 강요하는 Spatial-aware Attention Refinement과 적응적으로 충분한 편집 강도를 보존하는 Adaptive Magnitude Modulation을 도입합니다. 이러한 메커니즘들이 편집 신호를 안정화시키고 원하는 대상 분포로의 플로우 기반 진화를 안내합니다. 광범위한 실험 결과는 FlowAnchor가 어려운 다중 객체 및 고속 이동 시나리오에서 보다 충실하고 시간적으로 일관되며 계산적으로 효율적인 비디오 편집을 실현한다는 것을 보여줍니다. 프로젝트 페이지는 https://cuc-mipg.github.io/FlowAnchor.github.io/에서 제공됩니다."
+    },
+    "summary": "1. FlowAnchor는 안정적이고 효율적인 비전환, 플로우 기반 비디오 편집을 위한 훈련 불필요한 프레임워크이다.\n2. 고차원 비디오 잠재 공간에서의 편집 신호의 불안정성 도전을 극복하기 위해 Spatial-aware Attention Refinement과 Adaptive Magnitude Modulation을 사용한다.\n3. 실험 결과는 FlowAnchor가 어려운 다중 객체 및 빠른 움직임 시나리오에서 더 충실하고 시간적으로 일관성 있게 비디오 편집을 달성한다는 것을 보여준다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Contexts are Never Long Enough: Structured Reasoning for Scalable Question Answering over Long Document Sets",
+    "abstract": "Real-world document question answering is challenging. Analysts must synthesize evidence across multiple documents and different parts of each document. However, any fixed LLM context window can be exceeded as document collections grow. A common workaround is to decompose documents into chunks and assemble answers from chunk-level outputs, but this introduces an aggregation bottleneck: as the number of chunks grows, systems must still combine and reason over an increasingly large body of extracted evidence. We present SLIDERS, a framework for question answering over long document collections through structured reasoning. SLIDERS extracts salient information into a relational database, enabling scalable reasoning over persistent structured state via SQL rather than concatenated text. To make this locally extracted representation globally coherent, SLIDERS introduces a data reconciliation stage that leverages provenance, extraction rationales, and metadata to detect and repair duplicated, inconsistent, and incomplete records. SLIDERS outperforms all baselines on three existing long-context benchmarks, despite all of them fitting within the context window of strong base LLMs, exceeding GPT-4.1 by 6.6 points on average. It also improves over the next best baseline by ~19 and ~32 points on two new benchmarks at 3.9M and 36M tokens, respectively.",
+    "authors": [
+      "Harshit Joshi",
+      "Priyank Shethia",
+      "Jadelynn Dao",
+      "Monica S. Lam"
+    ],
+    "likes": 9,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22294",
+    "date_collected": "2026-04-28T07:24:01.143199+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "한 문서 집합에 대한 확장 가능한 질문 응답을 위한 구조화된 추론: 문맥은 절대 충분하지 않습니다",
+      "abstract": "현실 세계 문서 질문 응답은 어렵습니다. 분석가들은 여러 문서와 각 문서의 다양한 부분에서 정보를 종합해야 합니다. 그러나 고정된 LLM(언어모델, Language Model) 문맥 창은 문서 집합이 커짐에 따라 초과될 수 있습니다. 문서를 청크로 분해하고 청크 수준의 출력에서 답변을 생성하는 일반적인 우회 방법이 있지만, 이는 집계 병목 현상을 도입합니다. 청크 수가 증가함에 따라 시스템은 여전히 추출된 증거 체계를 조합하고 추론해야 합니다. 저희는 SLIDERS를 제시하는데, 이는 구조화된 추론을 통해 긴 문서 집합에 대한 질문 응답을 수행하는 프레임워크입니다. SLIDERS는 형식적인 데이터베이스에 강조된 정보를 추출하여 SQL을 통해 연속된 텍스트가 아닌 영속적인 구조화된 상태에서 확장 가능한 추론을 가능케 합니다. 이 지역적으로 추출된 표현을 전역적으로 일관성 있게 만들기 위해 SLIDERS는 본토, 추출 근거 및 메타데이터를 활용한 데이터 조정 단계를 도입하여 중복, 일관성 없음 및 불완전 레코드를 감지하고 수정합니다. SLIDERS는 강력한 기존 LLM의 문맥 창 내에 들어가며, GPT-4.1을 평균 6.6 포인트 초과하는 벤치마크 3개에 대해 모든 베이스라인보다 우수한 성능을 보입니다. 또한 2개의 새로운 벤치마크에서 각각 3.9M 토큰과 36M 토큰에서 19포인트~32포인트 개선됩니다."
+    },
+    "summary": "1. 위기: 문서 집합이 커짐에 따라 제한된 문맥 윈도우가 초과될 수 있고, 기존 방법론은 집계 병목 현상을 도입합니다.\n2. 해결책: SLIDERS는 구조화된 추론을 통해 문서 집합에 대한 질문 응답을 가능케 하는 프레임워크로, 정보 추출과 데이터 조정을 통해 다양한 크기의 증거를 다룹니다.\n3. 성과: SLIDERS는 강력한 LLM 대비 세 벤치마크에서 우수한 성능을 보이며, 새로운 벤치마크에서도 이전 방법을 크게 능가합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "AgentSearchBench: A Benchmark for AI Agent Search in the Wild",
+    "abstract": "The rapid growth of AI agent ecosystems is transforming how complex tasks are delegated and executed, creating a new challenge of identifying suitable agents for a given task. Unlike traditional tools, agent capabilities are often compositional and execution-dependent, making them difficult to assess from textual descriptions alone. However, existing research and benchmarks typically assume well-specified functionalities, controlled candidate pools, or only executable task queries, leaving realistic agent search scenarios insufficiently studied. We introduce AgentSearchBench, a large-scale benchmark for agent search in the wild, built from nearly 10,000 real-world agents across multiple providers. The benchmark formalizes agent search as retrieval and reranking problems under both executable task queries and high-level task descriptions, and evaluates relevance using execution-grounded performance signals. Experiments reveal a consistent gap between semantic similarity and actual agent performance, exposing the limitations of description-based retrieval and reranking methods. We further show that lightweight behavioral signals, including execution-aware probing, can substantially improve ranking quality, highlighting the importance of incorporating execution signals into agent discovery. Our code is available at https://github.com/Bingo-W/AgentSearchBench.",
+    "authors": [
+      "Bin Wu",
+      "Arastun Mammadli",
+      "Xiaoyu Zhang",
+      "Emine Yilmaz"
+    ],
+    "likes": 9,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22436",
+    "date_collected": "2026-04-28T07:24:01.144672+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "에이전트 서치 벤치마크: 야생에서의 AI 에이전트 검색을 위한 벤치마크",
+      "abstract": "AI 에이전트 생태계의 급격한 성장으로 복잡한 작업을 위임하고 실행하는 방식이 변화하면서, 주어진 작업에 적합한 에이전트를 식별하는 새로운 도전이 생겼습니다. 기존의 도구들과 달리, 에이전트의 능력은 종종 구성적이고 실행에 따라 달라져 텍스트 설명만으로는 판단하기 어렵습니다. 그러나 기존 연구와 벤치마크는 보통 명확히 지정된 기능, 통제된 후보 풀, 또는 실행 가능한 작업 쿼리만을 가정하여 현실적인 에이전트 검색 시나리오를 충분히 연구하지 못하고 있습니다. 본 연구에서는 약 10,000개 가까운 실제 세계 에이전트를 포함한 대규모 에이전트 검색 벤치마크인 AgentSearchBench를 소개합니다. 이 벤치마크는 실행 가능한 작업 쿼리와 고수준 작업 설명을 통해 에이전트 검색을 검색 및 재랭킹 문제로 형식화하고 실행에 기반한 성능 신호를 사용하여 관련성을 평가합니다. 실험 결과는 의미론적 유사성과 실제 에이전트 성능 사이에 일관된 간극이 있음을 드러내며, 설명 기반의 검색 및 재랭킹 방법의 한계를 노출합니다. 또한 실행 인식 프로빙을 포함한 경량의 행동 신호가 순위 매기는 품질을 크게 향상시킬 수 있음을 보여주며, 에이전트 발견에 실행 신호를 통합하는 중요성을 강조합니다. 우리의 코드는 https://github.com/Bingo-W/AgentSearchBench에서 확인할 수 있습니다."
+    },
+    "summary": "1. AI 에이전트 검색의 새로운 도전이, 에이전트 능력의 복잡성에 대한 설명만으로 평가하기 어려워진 점을 지적합니다.\n2. AgentSearchBench는 실행 가능한 과제 쿼리와 고수준 과제 설명에 기반하여 에이전트 검색을 평가하고 있으며, 실행 신호를 활용하여 관련성을 평가합니다.\n3. 실험 결과는 설명에 기반한 순위 매기기 방법의 한계를 드러내며, 실행 신호를 활용한 경량의 행동 신호가 순위 품질을 향상시키는 것을 확인했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Building a Precise Video Language with Human-AI Oversight",
+    "abstract": "Video-language models (VLMs) learn to reason about the dynamic visual world through natural language. We introduce a suite of open datasets, benchmarks, and recipes for scalable oversight that enable precise video captioning. First, we define a structured specification for describing subjects, scenes, motion, spatial, and camera dynamics, grounded by hundreds of carefully defined visual primitives developed with professional video creators such as filmmakers. Next, to curate high-quality captions, we introduce CHAI (Critique-based Human-AI Oversight), a framework where trained experts critique and revise model-generated pre-captions into improved post-captions. This division of labor improves annotation accuracy and efficiency by offloading text generation to models, allowing humans to better focus on verification. Additionally, these critiques and preferences between pre- and post-captions provide rich supervision for improving open-source models (Qwen3-VL) on caption generation, reward modeling, and critique generation through SFT, DPO, and inference-time scaling. Our ablations show that critique quality in precision, recall, and constructiveness, ensured by our oversight framework, directly governs downstream performance. With modest expert supervision, the resulting model outperforms closed-source models such as Gemini-3.1-Pro. Finally, we apply our approach to re-caption large-scale professional videos (e.g., films, commercials, games) and fine-tune video generation models such as Wan to better follow detailed prompts of up to 400 words, achieving finer control over cinematography including camera motion, angle, lens, focus, point of view, and framing. Our results show that precise specification and human-AI oversight are key to professional-level video understanding and generation. Data and code are available on our project page: https://linzhiqiu.github.io/papers/chai/",
+    "authors": [
+      "Zhiqiu Lin",
+      "Chancharik Mitra",
+      "Siyuan Cen",
+      "Isaac Li",
+      "Yuhan Huang",
+      "Yu Tong Tiffany Ling",
+      "Hewei Wang",
+      "Irene Pi",
+      "Shihang Zhu",
+      "Ryan Rao",
+      "George Liu",
+      "Jiaxi Li",
+      "Ruojin Li",
+      "Yili Han",
+      "Yilun Du",
+      "Deva Ramanan"
+    ],
+    "likes": 8,
+    "published_date": "Apr 22",
+    "url": "https://huggingface.co/papers/2604.21718",
+    "date_collected": "2026-04-28T07:24:01.146762+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "인간-AI 감독을 통한 정확한 비디오 언어 구축",
+      "abstract": "비디오-언어 모델(VLMs)은 자연어를 통해 동적인 시각적 세계에 대해 추론하는 법을 배운다. 우리는 정확한 비디오 자막을 가능하게 하는 확장 가능한 감독을 위한 오픈 데이터셋, 벤치마크, 그리고 레시피를 소개한다. 먼저, 수백 개의 프로 비디오 크리에이터(예: 영화제작자)와 함께 개발된 세심하게 정의된 시각적 기본 요소에 근거한, 주제, 장면, 움직임, 공간, 그리고 카메라 동역학을 설명하기 위한 구조화된 명세를 정의한다. 다음으로, 고품질 자막을 취합하기 위해 훈련된 전문가들이 모델 생성된 사전 자막을 향상된 사후 자막으로 수정하는 'CHAI (Critique-based Human-AI Oversight)'를 소개한다. 이러한 업무 분담은 모델에 텍스트 생성을 완전히 맡겨 정확도와 효율성을 향상시키며, 인간은 확인에 더 집중할 수 있도록 한다. 또한 사전 자막과 사후 자막 간 비평 및 선호도는 CHAI를 통해 개선되는 오픈 소스 모델(Qwen3-VL)의 자막 생성, 보상 모델링, 비판 생성에 대한 풍부한 감독을 제공한다. 우리의 실험에서, 감독 프레임워크에 의해 보장된 비평의 정확도, 회상률, 그리고 건설성에 의해 하류 작업 성능이 직접 결정되는 것을 보여준다. 적은 전문가 감독을 통해 얻은 모델은 Gemini-3.1-Pro와 같은 클로즈드 소스 모델보다 우수한 성과를 보여준다. 마지막으로, 대규모 전문 비디오 (예: 영화, 광고, 게임)를 재자막하고, 카메라 움직임, 각도, 렌즈, 초점, 시점, 그리고 프레임에 대한 상세한 프롬프트를 따르도록 Wan과 같은 비디오 생성 모델을 세밀하게 제어하는 것에 모델을 선명하게 적용한다. 우리의 결과는 정확한 명세와 인간-AI 감독이 전문 수준의 비디오 이해와 생성에 중요하다는 것을 보여준다. 데이터와 코드는 우리 프로젝트 페이지에서 제공된다: https://linzhiqiu.github.io/papers/chai/"
+    },
+    "summary": "1. 비디오-언어 모델(VLMs)은 동적 비쥬얼 세계에 대한 자연어 추론을 학습한다.\n2. CHAI 프레임워크를 통해 인간-AI 감독을 도입하여 정확한 비디오 캡션을 가능하게 한다.\n3. 모델의 성과에 직접적인 영향을 미친다는 것을 보여주는 실험 결과를 제시한다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents",
+    "abstract": "The transition from stateless language model inference to persistent, multi session autonomous agents has revealed memory to be a primary architectural bottleneck in the deployment of production grade agentic systems. Existing methodologies largely depend on hybrid semantic graph architectures, which impose substantial computational overhead during both ingestion and retrieval. These systems typically require large language model mediated entity extraction, explicit graph schema maintenance, and multi query retrieval pipelines. This paper introduces Memanto, a universal memory layer for agentic artificial intelligence that challenges the prevailing assumption that knowledge graph complexity is necessary to achieve high fidelity agent memory. Memanto integrates a typed semantic memory schema comprising thirteen predefined memory categories, an automated conflict resolution mechanism, and temporal versioning. These components are enabled by Moorcheh's Information Theoretic Search engine, a no indexing semantic database that provides deterministic retrieval within sub ninety millisecond latency while eliminating ingestion delay. Through systematic benchmarking on the LongMemEval and LoCoMo evaluation suites, Memanto achieves state of the art accuracy scores of 89.8 percent and 87.1 percent respectively. These results surpass all evaluated hybrid graph and vector based systems while requiring only a single retrieval query, incurring no ingestion cost, and maintaining substantially lower operational complexity. A five stage progressive ablation study is presented to quantify the contribution of each architectural component, followed by a discussion of the implications for scalable deployment of agentic memory systems.",
+    "authors": [
+      "Seyed Moein Abtahi",
+      "Rasa Rahnema",
+      "Hetkumar Patel",
+      "Neel Patel",
+      "Majid Fekri",
+      "Tara Khani"
+    ],
+    "likes": 4,
+    "published_date": "Apr 23",
+    "url": "https://huggingface.co/papers/2604.22085",
+    "date_collected": "2026-04-28T07:24:01.148326+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "Memanto: 장기간 에이전트를 위한 정보이론적 검색을 사용한 타입별 의미적 기억",
+      "abstract": "상태 없는 언어 모델 추론에서 계속적인, 다중 세션 자율 에이전트로의 전환은 제품 등급의 에이전트 시스템 배포에서 기억이 주요 구조적 병목 현상임을 드러내었습니다. 기존 방법론은 주로 계산 부담이 큰 하이브리드 의미 그래프 아키텍처에 의존하며, 소화 및 검색 중에 상당한 계산 오버헤드를 부과합니다. 본 논문에서는 높은 신뢰도의 에이전트 기억을 달성하기 위해 지식 그래프 복잡성이 필요하다는 널리 퍼진 가정에 의문을 제기하는 에이전트용 범용 기억 계층인 Memanto를 제안합니다."
+    },
+    "summary": "1. Memanto는 13가지 사전 정의된 기억 범주로 이루어진 타입별 의미적 기억 스키마를 통합하며, 정보이론적 검색 엔진 Moorcheh를 활용하여 개발되었습니다.\n2. Memanto는 LongMemEval과 LoCoMo 평가 스위트를 통해 89.8%와 87.1%라는 최첨단 정확도 점수를 달성하였으며, 하이브리드 그래프 기반 및 벡터 기반 시스템을 뛰어넘습니다.\n3. Memanto는 단일 검색 쿼리만 필요로 하며 소화 비용 없이 낮은 운영 복잡성을 유지하면서, 모든 평가된 시스템을 뛰어넘습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Sessa: Selective State Space Attention",
+    "abstract": "Modern sequence modeling is dominated by two families: Transformers, whose self-attention can access arbitrary elements of the visible sequence, and structured state-space models, which propagate information through an explicit recurrent state. These mechanisms face different limitations on long contexts: when attention is diffuse, the influence of individual tokens is diluted across the effective support, while recurrent state propagation can lose long-range sensitivity unless information is actively preserved. As a result, both mechanisms face challenges in preserving and selectively retrieving information over long contexts. We propose Sessa, a decoder that places attention inside a recurrent feedback path. This creates many attention-based paths through which past tokens can influence future states, rather than relying on a single attention read or a single recurrent chain. We prove that, under explicit assumptions and matched regimes, Sessa admits power-law memory tails O(ell^{-β}) for 0 < β< 1, with slower decay than in the corresponding Transformer and Mamba-style baselines. We further give an explicit construction that achieves this power-law rate. Under the same assumptions, Sessa is the only model class among those considered that realizes flexible selective retrieval, including profiles whose influence does not decay with distance. Consistent with this theoretical advantage, across matched experiments, Sessa achieves the strongest performance on long-context benchmarks while remaining competitive with Transformer and Mamba-style baselines on short-context language modeling.",
+    "authors": [
+      "Liubomyr Horbatko"
+    ],
+    "likes": 4,
+    "published_date": "Apr 21",
+    "url": "https://huggingface.co/papers/2604.18580",
+    "date_collected": "2026-04-28T07:24:01.149593+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "Sessa: 선택적 상태 공간 주의",
+      "abstract": "현대 시퀀스 모델링은 Transformers와 구조화된 상태 공간 모델 두 가지 패밀리가 주도하고 있는데, 전자는 임의의 시퀀스 요소에 접근할 수 있는 self-attention을 사용하고, 후자는 명시적인 순환 상태를 통해 정보를 전파합니다. 그러나 장거리 문맥에서 서로 다른 제한을 가지고 있어, 정보 보존과 선택적 정보 검색에 어려움을 겪습니다. 이에 우리는 Sessa를 제안하는데, 이는 순환 피드백 경로 내에 주의를 배치하여 장거리 정보 관련성을 확보합니다."
+    },
+    "summary": "1. Sessa는 순환 피드백 경로 내에서 주의를 배치하여 과거 토큰이 미래 상태에 영향을 줄 수 있도록 하는 모델이다.\n2. 이 모델은 다른 기준과 명확한 가정 하에 점화식으로 데이터를 저장하는 데 있어 느린 감소 속도를 보여준다.\n3. Sessa는 장거리 문맥에서 강력한 성능을 보이며, 단일 주의 읽기나 단일 순환 체인에 의존하지 않는다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

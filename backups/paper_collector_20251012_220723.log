@@ -1,0 +1,157 @@
+=== Paper Collection Started at Sat Oct 11 22:06:36 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W42
+URL: https://huggingface.co/papers/week/2025-W42
+Found 10 papers in weekly view
+Fetching likes for: Less is More: Recursive Reasoning with Tiny Networks
+Fetching likes for: Agent Learning via Early Experience
+Fetching likes for: Apriel-1.5-15b-Thinker
+Fetching likes for: MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with
+  Holistic Platform and Adaptive Hybrid Policy Optimization
+Fetching likes for: Paper2Video: Automatic Video Generation from Scientific Papers
+Fetching likes for: Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models
+Fetching likes for: In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use
+Fetching likes for: Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer
+Fetching likes for: Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs
+Fetching likes for: MemMamba: Rethinking Memory Patterns in State Space Model
+Selected top 10 papers by likes:
+1. Less is More: Recursive Reasoning with Tiny Networks (289 likes)
+2. Agent Learning via Early Experience (150 likes)
+3. Apriel-1.5-15b-Thinker (105 likes)
+4. MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with
+  Holistic Platform and Adaptive Hybrid Policy Optimization (96 likes)
+5. Paper2Video: Automatic Video Generation from Scientific Papers (86 likes)
+6. Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models (82 likes)
+7. In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use (69 likes)
+8. Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer (66 likes)
+9. Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs (65 likes)
+10. MemMamba: Rethinking Memory Patterns in State Space Model (63 likes)
+Found abstract: Hierarchical Reasoning Model (HRM) is a novel approach using two small neural
+networks recursing at ...
+Processed paper: Less is More: Recursive Reasoning with Tiny Networks
+Found abstract: A long-term goal of language agents is to learn and improve through their own
+experience, ultimately...
+Processed paper: Agent Learning via Early Experience
+Found abstract: We present Apriel-1.5-15B-Thinker, a 15-billion parameter open-weights
+multimodal reasoning model th...
+Processed paper: Apriel-1.5-15b-Thinker
+Found abstract: While current Multimodal Large Language Models (MLLMs) have demonstrated
+proficiency in reasoning ta...
+Processed paper: MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with
+  Holistic Platform and Adaptive Hybrid Policy Optimization
+Found abstract: Academic presentation videos have become an essential medium for research
+communication, yet produci...
+Processed paper: Paper2Video: Automatic Video Generation from Scientific Papers
+Found abstract: Multi-LLM systems harness the complementary strengths of diverse Large
+Language Models, achieving pe...
+Processed paper: Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models
+Found abstract: Outcome-driven reinforcement learning has advanced reasoning in large
+language models (LLMs), but pr...
+Processed paper: In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use
+Found abstract: Visual tokenization remains a core challenge in unifying visual understanding
+and generation within ...
+Processed paper: Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer
+Found abstract: Tool-integrated reasoning has emerged as a key focus for enabling agentic
+applications. Among these,...
+Processed paper: Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs
+Found abstract: With the explosive growth of data, long-sequence modeling has become
+increasingly important in tasks...
+Processed paper: MemMamba: Rethinking Memory Patterns in State Space Model
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Less is More: Recursive Reasoning with Tiny Networks
+Paper already exists, checking if translation is complete...
+Update likes: 289  ->  247
+Update date_collected: 2025-10-12T07:06:46.088257+09:00  ->  2025-10-11T07:07:36.804107+09:00
+
+Processing paper 2/10
+Title: Agent Learning via Early Experience
+Paper already exists, checking if translation is complete...
+Update likes: 150  ->  120
+Update date_collected: 2025-10-12T07:06:46.090254+09:00  ->  2025-10-11T07:07:36.806057+09:00
+
+Processing paper 3/10
+Title: Apriel-1.5-15b-Thinker
+Paper already exists, checking if translation is complete...
+Update likes: 105  ->  105
+Update date_collected: 2025-10-12T07:06:46.092236+09:00  ->  2025-10-11T07:07:36.807969+09:00
+
+Processing paper 4/10
+Title: MM-HELIX: Boosting Multimodal Long-Chain Reflective Reasoning with
+  Holistic Platform and Adaptive Hybrid Policy Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 96  ->  89
+Update date_collected: 2025-10-12T07:06:46.093806+09:00  ->  2025-10-11T07:07:36.809488+09:00
+
+Processing paper 5/10
+Title: Paper2Video: Automatic Video Generation from Scientific Papers
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  83
+Update date_collected: 2025-10-12T07:06:46.094934+09:00  ->  2025-10-11T07:07:36.810579+09:00
+
+Processing paper 6/10
+Title: Cache-to-Cache: Direct Semantic Communication Between Large Language
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 82  ->  78
+Update date_collected: 2025-10-12T07:06:46.096214+09:00  ->  2025-10-11T07:07:36.811813+09:00
+
+Processing paper 7/10
+Title: In-the-Flow Agentic System Optimization for Effective Planning and Tool
+  Use
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  64
+Update date_collected: 2025-10-12T07:06:46.097602+09:00  ->  2025-10-11T07:07:36.814737+09:00
+
+Processing paper 8/10
+Title: Ming-UniVision: Joint Image Understanding and Generation with a Unified
+  Continuous Tokenizer
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  65
+Update date_collected: 2025-10-12T07:06:46.099253+09:00  ->  2025-10-11T07:07:36.813416+09:00
+
+Processing paper 9/10
+Title: Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and
+  Synthesis for SLMs
+Paper already exists, checking if translation is complete...
+Update likes: 65  ->  64
+Update date_collected: 2025-10-12T07:06:46.100369+09:00  ->  2025-10-11T07:07:36.815804+09:00
+
+Processing paper 10/10
+Title: MemMamba: Rethinking Memory Patterns in State Space Model
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W42.json...
+
+Updating Notion database...
+Updating paper: 더 적은 것이 더 좋다: 작은 네트워크로 재귀 추론하기 (likes: 247 -> 289)
+Updating paper: 초기 경험을 통한 에이전트 학습 (likes: 120 -> 150)
+Paper already exists with same likes count: Apriel-1.5-15B-Thinker
+Updating paper: MM-HELIX: 전체적인 플랫폼과 적응형 하이브리드 정책 최적화로 다중모달 장거리 반사 추론 강화 (likes: 89 -> 96)
+Updating paper: Paper2Video: 학문 논문으로부터의 자동 비디오 생성 (likes: 83 -> 86)
+Updating paper: 캐시-투-캐시: 대형 언어 모델 간 직접 의미적 통신 (likes: 78 -> 82)
+Updating paper: 효율적인 계획과 도구 사용을 위한 In-the-Flow 에이전트 시스템 최적화 (likes: 64 -> 69)
+Updating paper: Ming-UniVision: 통합된 연속형 토크나이저를 활용한 이미지 이해와 생성 (likes: 65 -> 66)
+Updating paper: Fathom-DeepResearch: SLMs를 위한 장거리 정보 검색 및 합성의 해제 (likes: 64 -> 65)
+Creating new paper: 메모리 패턴 재고: 상태 공간 모델에서
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Oct 11 22:08:40 UTC 2025 ===
+

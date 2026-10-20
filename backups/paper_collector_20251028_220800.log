@@ -1,0 +1,131 @@
+=== Paper Collection Started at Mon Oct 27 22:07:40 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W44
+URL: https://huggingface.co/papers/week/2025-W44
+Found 10 papers in weekly view
+Fetching likes for: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Fetching likes for: Video-As-Prompt: Unified Semantic Control for Video Generation
+Fetching likes for: Sample By Step, Optimize By Chunk: Chunk-Level GRPO For Text-to-Image
+  Generation
+Fetching likes for: WorldGrow: Generating Infinite 3D World
+Fetching likes for: From Denoising to Refining: A Corrective Framework for Vision-Language
+  Diffusion Model
+Fetching likes for: A Definition of AGI
+Fetching likes for: Reasoning with Sampling: Your Base Model is Smarter Than You Think
+Fetching likes for: Sparser Block-Sparse Attention via Token Permutation
+Fetching likes for: UI-Ins: Enhancing GUI Grounding with Multi-Perspective
+  Instruction-as-Reasoning
+Fetching likes for: Visual Diffusion Models are Geometric Solvers
+Selected top 10 papers by likes:
+1. DeepAgent: A General Reasoning Agent with Scalable Toolsets (59 likes)
+2. Video-As-Prompt: Unified Semantic Control for Video Generation (33 likes)
+3. Sample By Step, Optimize By Chunk: Chunk-Level GRPO For Text-to-Image
+  Generation (26 likes)
+4. WorldGrow: Generating Infinite 3D World (25 likes)
+5. From Denoising to Refining: A Corrective Framework for Vision-Language
+  Diffusion Model (24 likes)
+6. A Definition of AGI (23 likes)
+7. Reasoning with Sampling: Your Base Model is Smarter Than You Think (21 likes)
+8. Sparser Block-Sparse Attention via Token Permutation (20 likes)
+9. UI-Ins: Enhancing GUI Grounding with Multi-Perspective
+  Instruction-as-Reasoning (16 likes)
+10. Visual Diffusion Models are Geometric Solvers (13 likes)
+Found abstract: Large reasoning models have demonstrated strong problem-solving abilities,
+yet real-world tasks ofte...
+Processed paper: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Found abstract: Unified, generalizable semantic control in video generation remains a
+critical open challenge. Exist...
+Processed paper: Video-As-Prompt: Unified Semantic Control for Video Generation
+Found abstract: Group Relative Policy Optimization (GRPO) has shown strong potential for
+flow-matching-based text-to...
+Processed paper: Sample By Step, Optimize By Chunk: Chunk-Level GRPO For Text-to-Image
+  Generation
+Found abstract: We tackle the challenge of generating the infinitely extendable 3D world --
+large, continuous enviro...
+Processed paper: WorldGrow: Generating Infinite 3D World
+Found abstract: Discrete diffusion models have emerged as a promising direction for
+vision-language tasks, offering ...
+Processed paper: From Denoising to Refining: A Corrective Framework for Vision-Language
+  Diffusion Model
+Found abstract: The lack of a concrete definition for Artificial General Intelligence (AGI)
+obscures the gap between...
+Processed paper: A Definition of AGI
+Found abstract: Frontier reasoning models have exhibited incredible capabilities across a
+wide array of disciplines,...
+Processed paper: Reasoning with Sampling: Your Base Model is Smarter Than You Think
+Found abstract: Scaling the context length of large language models (LLMs) offers significant
+benefits but is comput...
+Processed paper: Sparser Block-Sparse Attention via Token Permutation
+Found abstract: GUI grounding, which maps natural-language instructions to actionable UI
+elements, is a core capabil...
+Processed paper: UI-Ins: Enhancing GUI Grounding with Multi-Perspective
+  Instruction-as-Reasoning
+Found abstract: In this paper we show that visual diffusion models can serve as effective
+geometric solvers: they ca...
+Processed paper: Visual Diffusion Models are Geometric Solvers
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: DeepAgent: A General Reasoning Agent with Scalable Toolsets
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Video-As-Prompt: Unified Semantic Control for Video Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Sample By Step, Optimize By Chunk: Chunk-Level GRPO For Text-to-Image
+  Generation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: WorldGrow: Generating Infinite 3D World
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: From Denoising to Refining: A Corrective Framework for Vision-Language
+  Diffusion Model
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: A Definition of AGI
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Reasoning with Sampling: Your Base Model is Smarter Than You Think
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Sparser Block-Sparse Attention via Token Permutation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: UI-Ins: Enhancing GUI Grounding with Multi-Perspective
+  Instruction-as-Reasoning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Visual Diffusion Models are Geometric Solvers
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W44.json...
+
+Updating Notion database...
+Creating new paper: DeepAgent: 확장 가능한 도구 세트를 갖춘 일반적인 추론 에이전트
+Creating new paper: 비디오-를-프롬프트: 비디오 생성을 위한 통합적 의미 제어
+Creating new paper: 단계별 샘플, 청크별 최적화: 텍스트-이미지 생성을 위한 청크 수준 GRPO
+Creating new paper: WorldGrow: 무한한 3D 세계 생성
+Creating new paper: 세발자동차를 위한 스테레오 시각 측정 센서
+Creating new paper: AGI의 정의
+Creating new paper: 샘플링을 통한 추론: 당신의 기본 모델은 생각보다 똑똑합니다
+Creating new paper: 토큰 순열을 통한 희소 블록 희소 주의
+Creating new paper: UI-Ins: 다중 관점을 활용한 GUI Grounding 강화
+Creating new paper: 시각 확산 모델은 기하학적 문제 해결자입니다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Oct 27 22:09:41 UTC 2025 ===
+

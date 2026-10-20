@@ -1,0 +1,151 @@
+=== Paper Collection Started at Wed Jun 18 22:07:31 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W25
+URL: https://huggingface.co/papers/week/2025-W25
+Found 10 papers in weekly view
+Fetching likes for: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Fetching likes for: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Fetching likes for: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Fetching likes for: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Fetching likes for: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Fetching likes for: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Fetching likes for: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Fetching likes for: Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+Fetching likes for: Scaling Test-time Compute for LLM Agents
+Fetching likes for: Effective Red-Teaming of Policy-Adherent Agents
+Selected top 10 papers by likes:
+1. MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention (206 likes)
+2. MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation (65 likes)
+3. Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning (63 likes)
+4. DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents (48 likes)
+5. Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback (46 likes)
+6. DoTA-RAG: Dynamic of Thought Aggregation RAG (40 likes)
+7. Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency (39 likes)
+8. Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning (38 likes)
+9. Scaling Test-time Compute for LLM Agents (36 likes)
+10. Effective Red-Teaming of Policy-Adherent Agents (36 likes)
+Found abstract: We introduce MiniMax-M1, the world's first open-weight, large-scale
+hybrid-attention reasoning model...
+Processed paper: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Found abstract: Recent advances in large language models (LLMs) have accelerated progress in
+financial NLP and appli...
+Processed paper: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Found abstract: Scientific discoveries increasingly rely on complex multimodal reasoning
+based on information-intens...
+Processed paper: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Found abstract: Deep Research Agents are a prominent category of LLM-based agents. By
+autonomously orchestrating mul...
+Processed paper: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Found abstract: Recent studies have shown LLMs possess some ability to improve their
+responses when given external f...
+Processed paper: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Found abstract: In this paper, we introduce DoTA-RAG (Dynamic-of-Thought Aggregation RAG), a
+retrieval-augmented gen...
+Processed paper: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Found abstract: Recent advances in large reasoning models have enabled complex, step-by-step
+reasoning but often int...
+Processed paper: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Found abstract: We introduce Ego-R1, a novel framework for reasoning over ultra-long (i.e.,
+in days and weeks) egoce...
+Processed paper: Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+Found abstract: Scaling test time compute has shown remarkable success in improving the
+reasoning abilities of large...
+Processed paper: Scaling Test-time Compute for LLM Agents
+Found abstract: Task-oriented LLM-based agents are increasingly used in domains with strict
+policies, such as refund...
+Processed paper: Effective Red-Teaming of Policy-Adherent Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Paper already exists, checking if translation is complete...
+Update likes: 206  ->  184
+Update date_collected: 2025-06-19T07:07:39.098772+09:00  ->  2025-06-18T07:07:34.867114+09:00
+
+Processing paper 2/10
+Title: MultiFinBen: A Multilingual, Multimodal, and Difficulty-Aware Benchmark
+  for Financial LLM Evaluation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  60
+Update date_collected: 2025-06-19T07:07:39.102822+09:00  ->  2025-06-18T07:07:34.869121+09:00
+
+Processing paper 4/10
+Title: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  42
+Update date_collected: 2025-06-19T07:07:39.104039+09:00  ->  2025-06-18T07:07:34.871510+09:00
+
+Processing paper 5/10
+Title: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  45
+Update date_collected: 2025-06-19T07:07:39.105278+09:00  ->  2025-06-18T07:07:34.870324+09:00
+
+Processing paper 6/10
+Title: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  35
+Update date_collected: 2025-06-19T07:07:39.106526+09:00  ->  2025-06-18T07:07:34.872690+09:00
+
+Processing paper 7/10
+Title: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Paper already exists, checking if translation is complete...
+Update likes: 39  ->  29
+Update date_collected: 2025-06-19T07:07:39.107764+09:00  ->  2025-06-18T07:07:34.879090+09:00
+
+Processing paper 8/10
+Title: Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 38  ->  32
+Update date_collected: 2025-06-19T07:07:39.109190+09:00  ->  2025-06-18T07:07:34.875335+09:00
+
+Processing paper 9/10
+Title: Scaling Test-time Compute for LLM Agents
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Effective Red-Teaming of Policy-Adherent Agents
+Paper already exists, checking if translation is complete...
+Update likes: 36  ->  35
+Update date_collected: 2025-06-19T07:07:39.112083+09:00  ->  2025-06-18T07:07:34.873931+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W25.json...
+
+Updating Notion database...
+Updating paper: 라이트닝 어텐션으로 효율적인 테스트 시간 연산 확장하는 MiniMax-M1 (likes: 184 -> 206)
+Creating new paper: 멀티핀벤: 금융 LLM 평가를 위한 다중언어, 다중모달, 난이도인식 벤치마크
+Updating paper: 과학자들의 첫 번째 시험: 지각, 이해, 추론을 통해 MLLM의 인지 능력 탐구 (likes: 60 -> 63)
+Updating paper: 깊은 연구 벤치마크: 깊은 연구 에이전트를 위한 포괄적인 벤치마크 (likes: 42 -> 48)
+Updating paper: 피드백 마찰: LLMs가 외부 피드백을 완전히 흡수하는 데 어려움을 겪다 (likes: 45 -> 46)
+Updating paper: 도타-랙: 생각 집합의 동적 (likes: 35 -> 40)
+Updating paper: 기다릴 필요 없어요! 사고 토큰 제거가 추론 효율성 향상 (likes: 29 -> 39)
+Updating paper: Ego-R1: 초장툴사고 연쇄를 통한 초장기 자아중심 비디오 추론 (likes: 32 -> 38)
+Creating new paper: LLM 에이전트들을 위한 시험 시간 계산 확장
+Updating paper: 정책 따르는 에이전트들의 효과적인 레드팀 구성 (likes: 35 -> 36)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 18 22:10:01 UTC 2025 ===
+

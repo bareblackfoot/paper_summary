@@ -1,0 +1,318 @@
+[
+  {
+    "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+    "abstract": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities. We introduce a \"levels x laws\" taxonomy organized along two axes. The first defines three capability levels: L1 Predictor, which learns one-step local transition operators; L2 Simulator, which composes them into multi-step, action-conditioned rollouts that respect domain laws; and L3 Evolver, which autonomously revises its own model when predictions fail against new evidence. The second identifies four governing-law regimes: physical, digital, social, and scientific. These regimes determine what constraints a world model must satisfy and where it is most likely to fail. Using this framework, we synthesize over 400 works and summarize more than 100 representative systems spanning model-based reinforcement learning, video generation, web and GUI agents, multi-agent social simulation, and AI-driven scientific discovery. We analyze methods, failure modes, and evaluation practices across level-regime pairs, propose decision-centric evaluation principles and a minimal reproducible evaluation package, and outline architectural guidance, open problems, and governance challenges. The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate.",
+    "authors": [
+      "Meng Chu",
+      "Xuan Billy Zhang",
+      "Kevin Qinghong Lin",
+      "Lingdong Kong",
+      "Jize Zhang",
+      "Teng Tu",
+      "Weijian Ma",
+      "Ziqi Huang",
+      "Senqiao Yang",
+      "Wei Huang",
+      "Yeying Jin",
+      "Zhefan Rao",
+      "Jinhui Ye",
+      "Xinyu Lin",
+      "Xichen Zhang",
+      "Qisheng Hu",
+      "Shuai Yang",
+      "Leyang Shen",
+      "Wei Chow",
+      "Yifei Dong",
+      "Fengyi Wu",
+      "Quanyu Long"
+    ],
+    "likes": 213,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22748",
+    "date_collected": "2026-05-01T07:25:28.374501+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "의지 있는 세계 모델링: 기초, 능력, 법칙, 그리고 그 너머",
+      "abstract": "AI 시스템이 텍스트 생성에서 상호작용을 통해 목표를 달성하는 데 진화함에 따라 환경 역학을 모델링하는 능력은 중요한 병목 현상이 됩니다. 물체를 조작하거나 소프트웨어를 탐색하거나 다른 요소들과 협력하거나 실험을 설계하는 에이전트들은 예측적인 환경 모델이 필요합니다. 그러나 세계 모델이라는 용어는 연구 커뮤니티마다 다른 의미를 지니고 있습니다. 본고서에서는 두 축을 따라 정리된 \"수준 x 법칙\" 분류법을 소개합니다."
+    },
+    "summary": "1. AI 시스템이 긴 여러 단계 상호작용에서 목표를 달성하기 위해 예측적 환경 모델이 중요하며, 이를 위해 \"수준\"이라는 능력 수준과 \"법칙\"이라는 규칙 체계를 소개합니다.\n2. 세 가지 능력 수준(L1 Predictor, L2 Simulator, L3 Evolver)과 네 가지 규칙 체계(물리, 디지털, 사회, 과학)를 정의하고, 모델 기반 강화학습, 비디오 생성, 웹/GUI 에이전트, 다중 에이전트 사회 시뮬레이션, AI 주도적 과학적 발견 등을 아우르는 100여 개 대표적인 시스템을 종합하여 분석했습니다.\n3. 결정 중심적 평가 원칙과 최소 재현 가능한 평가 패키지를 제안하고, 구조적 가이드, 미해결 문제, 그리고 지배 도약 도전 과제를 개요로 제시하여 이 분야의 커뮤니티 간 연결과 에이전트가 운영하는 환경을 시뮬레이션하고 궁극적으로 재편할 수 있는 세계 모델로의 길을 개척합니다.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Recursive Multi-Agent Systems",
+    "abstract": "Recursive or looped language models have recently emerged as a new scaling axis by iteratively refining the same model computation over latent states to deepen reasoning. We extend such scaling principle from a single model to multi-agent systems, and ask: Can agent collaboration itself be scaled through recursion? To this end, we introduce RecursiveMAS, a recursive multi-agent framework that casts the entire system as a unified latent-space recursive computation. RecursiveMAS connects heterogeneous agents as a collaboration loop through the lightweight RecursiveLink module, enabling in-distribution latent thoughts generation and cross-agent latent state transfer. To optimize our framework, we develop an inner-outer loop learning algorithm for iterative whole-system co-optimization through shared gradient-based credit assignment across recursion rounds. Theoretical analyses of runtime complexity and learning dynamics establish that RecursiveMAS is more efficient than standard text-based MAS and maintains stable gradients during recursive training. Empirically, we instantiate RecursiveMAS under 4 representative agent collaboration patterns and evaluate across 9 benchmarks spanning mathematics, science, medicine, search, and code generation. In comparison with advanced single/multi-agent and recursive computation baselines, RecursiveMAS consistently delivers an average accuracy improvement of 8.3%, together with 1.2times-2.4times end-to-end inference speedup, and 34.6%-75.6% token usage reduction. Code and Data are provided in https://recursivemas.github.io.",
+    "authors": [
+      "Xiyuan Yang",
+      "Jiaru Zou",
+      "Rui Pan",
+      "Ruizhong Qiu",
+      "Pan Lu",
+      "Shizhe Diao",
+      "Jindong Jiang",
+      "Hanghang Tong",
+      "Tong Zhang",
+      "Markus J. Buehler",
+      "Jingrui He",
+      "James Zou"
+    ],
+    "likes": 200,
+    "published_date": "Apr 28",
+    "url": "https://huggingface.co/papers/2604.25917",
+    "date_collected": "2026-05-01T07:25:28.376460+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "재귀적 다중 에이전트 시스템",
+      "abstract": "최근에 등장한 재귀 또는 루프된 언어 모델은 미시 상태를 통해 동일한 모델 계산을 반복적으로 개선하여 추론을 깊게 하는 새로운 확장 축으로 부상했습니다. 이러한 확장 원리를 단일 모델에서 다중 에이전트 시스템으로 확장하고자 했으며, 에이전트 협업 자체가 재귀적으로 확장될 수 있을까라는 질문을 제기합니다. 이를 위해 RecursiveMAS를 소개합니다. RecursiveMAS는 전체 시스템을 통일된 잠재 공간 재귀적 계산으로 투영하는 재귀적 다중 에이전트 프레임워크입니다. RecursiveMAS는 경량 RecursiveLink 모듈을 통해 이질적인 에이전트를 협업 루프로 연결하여 내부 분배 잠재적 생각 생성과 에이전트 간 잠재 상태 전송을 가능하게 합니다. 우리의 프레임워크를 최적화하기 위해 우리는 내부-외부 루프 학습 알고리즘을 개발하여 재귀 라운드 전체 시스템 공동 최적화를 위한 공유 그래디언트 기반 신용 할당을 구현했습니다. 재귀적 훈련 중 실행 시간 복잡성 및 학습 동역학의 이론적 분석에 따라, RecursiveMAS는 표준 텍스트 기반 MAS보다 효율적이며 재귀적 훈련 중 안정적인 그래디언트를 유지합니다. 실증적으로, 우리는 4가지의 대표적인 에이전트 협업 패턴 아래 RecursiveMAS를 구현하고 수학, 과학, 의학, 검색 및 코드 생성에 걸쳐 9개의 벤치마크를 평가했습니다. 고급 단일/다중 에이전트 및 재귀적 계산 기준과 비교하여, RecursiveMAS는 평균 정확도 향상률이 8.3%로 꾸준히 나타나며, 1.2배-2.4배의 종단 간 추론 가속과 34.6%-75.6% 토큰 사용량 감소로 이어집니다. 코드와 데이터는 https://recursivemas.github.io에서 제공됩니다."
+    },
+    "summary": "1. 재귀적 다중 에이전트 시스템은 다중 에이전트 협업을 재귀적으로 확장시키는 프레임워크로, 경량 RecursiveLink 모듈을 통해 에이전트 간 협업을 가능하게 합니다.\n2. 내부-외부 루프 학습 알고리즘을 통해 RecursiveMAS는 전체 시스템을 반복적으로 최적화하며, 표준 메소드보다 효율적이고 안정적인 그래디언트를 제공합니다.\n3. 실험 결과에 따르면 RecursiveMAS는 다양한 영역에서 성능을 검증받아, 정확도 향상과 추론 속도 향상, 토큰 사용량 감소를 보여주었습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+    "abstract": "Recent video foundation models demonstrate impressive visual synthesis but frequently suffer from geometric inconsistencies. While existing methods attempt to inject 3D priors via architectural modifications, they often incur high computational costs and limit scalability. We propose World-R1, a framework that aligns video generation with 3D constraints through reinforcement learning. To facilitate this alignment, we introduce a specialized pure text dataset tailored for world simulation. Utilizing Flow-GRPO, we optimize the model using feedback from pre-trained 3D foundation models and vision-language models to enforce structural coherence without altering the underlying architecture. We further employ a periodic decoupled training strategy to balance rigid geometric consistency with dynamic scene fluidity. Extensive evaluations reveal that our approach significantly enhances 3D consistency while preserving the original visual quality of the foundation model, effectively bridging the gap between video generation and scalable world simulation.",
+    "authors": [
+      "Weijie Wang",
+      "Xiaoxuan He",
+      "Youping Gu",
+      "Yifan Yang",
+      "Zeyu Zhang",
+      "Yefei He",
+      "Yanbo Ding",
+      "Xirui Hu",
+      "Donny Y. Chen",
+      "Zhiyuan He",
+      "Yuqing Yang",
+      "Bohan Zhuang"
+    ],
+    "likes": 112,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24764",
+    "date_collected": "2026-05-01T07:25:28.378274+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "3D 제약을 강화하는 World-R1: 텍스트에서 비디오 생성",
+      "abstract": "최근 비디오 기반 모델은 인상적인 시각적 합성을 보여주지만 종종 기하적 불일치에 시달립니다. 기존 방법은 3D 우선순위를 구조적 수정을 통해 주입하려 시도하지만, 이는 종종 높은 계산 비용을 초래하고 확장성을 제한합니다. 본 연구에서는 비디오 생성을 3D 제약과 일치시키기 위해 reinforcement learning을 통해 World-R1이라는 프레임워크를 제안합니다. 이 일치를 용이하게 하기 위해, 우리는 세계 시뮬레이션을 위해 특별히 제작된 순수 텍스트 데이터셋을 도입합니다. 우리는 Flow-GRPO를 활용하여 사전 훈련된 3D 기반 모델과 시각-언어 모델로부터의 피드백을 통해 모델을 최적화하여 구조적 일관성을 유지하면서 기존 아키텍처를 변경하지 않습니다. 우리는 주기적 분리된 훈련 전략을 사용하여 엄격한 기하학적 일관성과 동적 장면 유동성을 균형 있게 유지합니다. 광범위한 평가 결과, 우리의 방법은 비디오 생성과 확장 가능한 세계 시뮬레이션 간의 간격을 효과적으로 메우면서 3D 일관성을 크게 향상시킵니다."
+    },
+    "summary": "1. 3D 제약을 강조하여 텍스트에서 비디오를 생성하는 World-R1 프레임워크 제안\n2. 순수 텍스트 데이터셋을 활용하고, Flow-GRPO를 이용하여 모델 최적화\n3. 주기적으로 분리된 훈련 전략을 통해 3D 일관성을 향상시키고 시각적 품질 유지",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company",
+    "abstract": "Individual agent capabilities have advanced rapidly through modular skills and tool integrations, yet multi-agent systems remain constrained by fixed team structures, tightly coupled coordination logic, and session-bound learning. We argue that this reflects a deeper absence: a principled organisational layer that governs how a workforce of agents is assembled, governed, and improved over time, decoupled from what individual agents know. To fill this gap, we introduce OneManCompany (OMC), a framework that elevates multi-agent systems to the organisational level. OMC encapsulates skills, tools, and runtime configurations into portable agent identities called Talents, orchestrated through typed organisational interfaces that abstract over heterogeneous backends. A community-driven Talent Market enables on-demand recruitment, allowing the organisation to close capability gaps and reconfigure itself dynamically during execution. Organisational decision-making is operationalised through an Explore-Execute-Review (E^2R) tree search, which unifies planning, execution, and evaluation in a single hierarchical loop: tasks are decomposed top-down into accountable units and execution outcomes are aggregated bottom-up to drive systematic review and refinement. This loop provides formal guarantees on termination and deadlock freedom while mirroring the feedback mechanisms of human enterprises. Together, these contributions transform multi-agent systems from static, pre-configured pipelines into self-organising and self-improving AI organisations capable of adapting to open-ended tasks across diverse domains. Empirical evaluation on PRDBench shows that OMC achieves an 84.67% success rate, surpassing the state of the art by 15.48 percentage points, with cross-domain case studies further demonstrating its generality.",
+    "authors": [
+      "Zhengxu Yu",
+      "Yu Fu",
+      "Zhiyuan He",
+      "Yuxuan Huang",
+      "Lee Ka Yiu",
+      "Meng Fang",
+      "Weilin Luo",
+      "Jun Wang"
+    ],
+    "likes": 112,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22446",
+    "date_collected": "2026-05-01T07:25:28.379883+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "스킬에서 재능으로: 혼재된 에이전트를 현실 세상 기업으로 구성하기",
+      "abstract": "개별 에이전트의 능력은 모듈형 스킬과 도구 통합을 통해 급속히 발전했지만, 다중 에이전트 시스템은 여전히 고정된 팀 구조, 강하게 결합된 조정 논리, 그리고 세션에 제한된 학습으로 제약받고 있다. 저희는 이것이 보다 깊은 결핍을 반영한다고 주장합니다: 어떤 개별 에이전트가 알고 있는 것과 분리된, 에이전트 집단이 어떻게 구성, 통제, 시간이 흐름에 따라 개선되는 원칙적인 조직적 계층이다. 이 공백을 채우기 위해 우리는 OneManCompany (OMC)를 소개합니다."
+    },
+    "summary": "1. 에이전트를 \"재능(Talents)\"이라는 휴대 가능한 에이전트 신원으로 캡슐화하고, 타입화된 조직적 인터페이스를 통해 다양한 백엔드를 추상화하여 조정하는 OMC 프레임워크를 도입합니다.\n2. 탤런트 시장을 통해 요청에 따라 채용이 가능하게 하여 기능적 갭을 메우고 실행 중에 동적으로 재구성할 수 있는 기능을 제공합니다. \n3. 탐색-실행-검토(E^2R) 트리 서치를 통해 조직적 의사 결정을 연산화하는데, 이는 계획, 실행 및 평가를 단일 계층적 루프에서 통합합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Programming with Data: Test-Driven Data Engineering for Self-Improving LLMs from Raw Corpora",
+    "abstract": "Reliably transferring specialized human knowledge from text into large language models remains a fundamental challenge in artificial intelligence. Fine-tuning on domain corpora has enabled substantial capability gains, but the process operates without feedback: when a model fails on a domain task, there is no method to diagnose what is deficient in the training data, and the only recourse is to add more data indiscriminately. Here we show that when a structured knowledge representation extracted from the source corpus serves as the shared foundation for both training data and evaluation, the complete data-engineering lifecycle maps onto the software development lifecycle in a precise and operative way: training data becomes source code specifying what the model should learn, model training becomes compilation, benchmarking becomes unit testing, and failure-driven data repair becomes debugging. Under this correspondence, model failures decompose into concept-level gaps and reasoning-chain breaks that can be traced back to specific deficiencies in the data and repaired through targeted patches, with each repair cycle producing consistent improvements across model scales and architectures without degrading general capabilities. We formalize this principle as Programming with Data and instantiate it across sixteen disciplines spanning the natural sciences, engineering, biomedicine, and the social sciences, releasing a structured knowledge base, benchmark suite, and training corpus as open resources. By demonstrating that the relationship between training data and model behaviour is structurally traceable and systematically repairable, this work establishes a principled foundation for the reliable engineering of human expertise into language models.",
+    "authors": [
+      "Chenkai Pan",
+      "Xinglong Xu",
+      "Yuhang Xu",
+      "Yujun Wu",
+      "Siyuan Li",
+      "Jintao Chen",
+      "Conghui He",
+      "Jingxuan Wei",
+      "Cheng Tan"
+    ],
+    "likes": 78,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24819",
+    "date_collected": "2026-05-01T07:25:28.381581+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "데이터로 프로그래밍: 자연 코퍼스로부터 자가 진화하는 LLMs를 위한 테스트 주도 데이터 엔지니어링",
+      "abstract": "전문적인 인간 지식을 대규모 언어 모델로 신뢰성 있게 전이하는 것은 인공지능에서의 기본적인 과제입니다. 도메인 코퍼스에서의 미세 조정은 상당한 성능 향상을 가능케 했지만 이 과정은 피드백 없이 작동합니다. 모델이 도메인 작업에 실패할 때, 훈련 데이터의 미흡한 점을 진단할 수 있는 방법이 없으며 유일한 대책은 무차별적으로 더 많은 데이터를 추가하는 것 뿐입니다. 본 연구에서는 원본 코퍼스에서 추출한 구조화된 지식 표현이 훈련 데이터와 평가의 공통 기반으로 작용할 때, 전체 데이터 엔지니어링 주기가 소프트웨어 개발 주기에 정밀하고 운영적인 방식으로 대응함을 보여줍니다: 훈련 데이터는 모델이 배워야 할 내용을 지정하는 소스 코드가 되고, 모델 훈련은 컴파일이 되며, 벤치마킹은 유닛 테스트가 되고, 실패 주도 데이터 수리는 디버깅이 됩니다. 이 대응 관계 아래에서 모델 실패는 개념 수준의 갭과 추론 체인의 중단으로 분해되며, 이는 데이터의 특정 결핍점으로 거슬러 올라가 수정함으로써 대상 패치를 통해 복원될 수 있으며, 각 수정 주기는 모델 규모와 아키텍처를 훼손하지 않으면서 일관된 개선을 내놓습니다. 본 연구는 이 원칙을 데이터로 프로그래밍으로 체계화하고 자연과학, 공학, 생명의학, 사회과학을 포함한 16개 학문 분야 전반에 이를 실체화하여 구조화된 지식 기반, 벤치마크 스위트 및 훈련 코퍼스를 오픈 리소스로 공개합니다. 훈련 데이터와 모델 동작 사이의 관계가 구조적으로 추적 가능하고 체계적으로 복원 가능함을 시연함으로써 본 연구는 인간 전문성을 언어 모델에 신뢰성 있게 엔지니어링하기 위한 원칙적 기초를 확립합니다."
+    },
+    "summary": "1. 전문 지식을 언어 모델에 신뢰성 있게 전이하는 것은 인공지능 분야에서 중요한 과제입니다.\n2. 코퍼스에서 추출한 구조화된 지식 표현은 훈련 데이터와 평가 사이의 공통 기반으로 작용하여 모델 실패를 개념 수준의 갭으로 분해하고 수정할 수 있게 합니다.\n3. 데이터로 프로그래밍을 통해 훈련 데이터와 모델 동작 사이의 구조적 관계를 추적하고 체계적으로 복원함으로써 인간 전문성을 언어 모델에 실체화하는 원칙적 기초를 제공합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+    "abstract": "We present GLM-5V-Turbo, a step toward native foundation models for multimodal agents. As foundation models are increasingly deployed in real environments, agentic capability depends not only on language reasoning, but also on the ability to perceive, interpret, and act over heterogeneous contexts such as images, videos, webpages, documents, GUIs. GLM-5V-Turbo is built around this objective: multimodal perception is integrated as a core component of reasoning, planning, tool use, and execution, rather than as an auxiliary interface to a language model. This report summarizes the main improvements behind GLM-5V-Turbo across model design, multimodal training, reinforcement learning, toolchain expansion, and integration with agent frameworks. These developments lead to strong performance in multimodal coding, visual tool use, and framework-based agentic tasks, while preserving competitive text-only coding capability. More importantly, our development process offers practical insights for building multimodal agents, highlighting the central role of multimodal perception, hierarchical optimization, and reliable end-to-end verification.",
+    "authors": [
+      "V Team",
+      "Wenyi Hong",
+      "Xiaotao Gu",
+      "Ziyang Pan",
+      "Zhen Yang",
+      "Yuting Wang",
+      "Yue Wang",
+      "Yuanchang Yue",
+      "Yu Wang",
+      "Yanling Wang",
+      "Yan Wang",
+      "Xijun Liu",
+      "Wenmeng Yu",
+      "Weihan Wang",
+      "Wei Li",
+      "Shuaiqi Duan",
+      "Sheng Yang",
+      "Ruiliang Lv",
+      "Mingdao Liu",
+      "Lihang Pan",
+      "Ke Ning",
+      "Junhui Ji"
+    ],
+    "likes": 71,
+    "published_date": "Apr 29",
+    "url": "https://huggingface.co/papers/2604.26752",
+    "date_collected": "2026-05-01T07:25:28.383974+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "GLM-5V-Turbo: 멀티모달 에이전트를 위한 네이티브 기반 모델로",
+      "abstract": "GLM-5V-Turbo는 멀티모달 에이전트를 위한 네이티브 기반 모델을 향한 한 걸음으로, 언어 추론 능력뿐만 아니라 이미지, 비디오, 웹페이지, 문서, GUI 등 다양한 맥락을 인식, 해석, 작용할 수 있는 능력에 의존하는 에이전트 능력을 현실 환경에 점점 더 배치함에 따라, GLM-5V-Turbo는 멀티모달 인식을 추론, 계획, 도구 사용, 실행의 핵심 구성 요소로 통합하여 언어 모델의 보조 인터페이스로서가 아닌 목표로 구축되었습니다. 이 보고서는 GLM-5V-Turbo의 주요 개선 사항인 모델 설계, 멀티모달 훈련, 강화 학습, 툴체인 확장, 그리고 에이전트 프레임워크 통합을 개괄합니다. 이러한 발전은 멀티모달 코딩, 시각적 도구 사용, 그리고 프레임워크 기반 에이전트 작업에서 강력한 성능을 보여주며 경쟁력 있는 텍스트 기반 코딩 능력을 유지합니다. 더 중요한 것은, 우리의 개발 과정이 멀티모달 에이전트 구축에 대한 실용적인 통찰력을 제공하며 멀티모달 인식, 계층적 최적화, 그리고 신뢰할 수 있는 엔드-투-엔드 검증의 중요성을 강조합니다."
+    },
+    "summary": "1. GLM-5V-Turbo는 멀티모달 에이전트의 언어적 추론 능력뿐만 아니라 이미지, 비디오 등 다양한 맥락을 인식하여 작용할 수 있는 능력을 강조하며, 언어 모델의 보조 인터페이스가 아닌 핵심 구성 요소로서 멀티모달 인식을 통합합니다.\n2. GLM-5V-Turbo의 주된 개선 사항으로는 모델 설계, 멀티모달 훈련, 강화 학습, 툴체인 확장, 그리고 에이전트 프레임워크 통합이 포함되며, 이러한 발전은 멀티모달 코딩, 시각적 도구 사용, 그리고 프레임워크 기반 에이전트 작업에서 우수한 성능을 보여줍니다.\n3. GLM-5V-Turbo의 개발 과정은 멀티모달 에이전트 구축에 대한 실용적인 통찰력을 제공하며, 멀티모달 인식, 계층적 최적화, 그리고 신뢰할 수 있는 엔드-투-엔드 검증의 중요성을 강조합니다.",
+    "categories": [
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation",
+    "abstract": "Unified multimodal models typically rely on pretrained vision encoders and use separate visual representations for understanding and generation, creating misalignment between the two tasks and preventing fully end-to-end optimization from raw pixels. We introduce Tuna-2, a native unified multimodal model that performs visual understanding and generation directly based on pixel embeddings. Tuna-2 drastically simplifies the model architecture by employing simple patch embedding layers to encode visual input, completely discarding the modular vision encoder designs such as the VAE or the representation encoder. Experiments show that Tuna-2 achieves state-of-the-art performance in multimodal benchmarks, demonstrating that unified pixel-space modelling can fully compete with latent-space approaches for high-quality image generation. Moreover, while the encoder-based variant converges faster in early pretraining, Tuna-2's encoder-free design achieves stronger multimodal understanding at scale, particularly on tasks requiring fine-grained visual perception. These results show that pretrained vision encoders are not necessary for multimodal modelling, and end-to-end pixel-space learning offers a scalable path toward stronger visual representations for both generation and perception.",
+    "authors": [
+      "Zhiheng Liu",
+      "Weiming Ren",
+      "Xiaoke Huang",
+      "Shoufa Chen",
+      "Tianhong Li",
+      "Mengzhao Chen",
+      "Yatai Ji",
+      "Sen He",
+      "Jonas Schult",
+      "Belinda Zeng",
+      "Tao Xiang",
+      "Wenhu Chen",
+      "Ping Luo",
+      "Luke Zettlemoyer",
+      "Yuren Cong"
+    ],
+    "likes": 61,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24763",
+    "date_collected": "2026-05-01T07:25:28.385979+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "Tuna-2: 픽셀 임베딩이 시각 인코더를 능가하여 멀티모달 이해와 생성을 이끌어냅니다",
+      "abstract": "통합된 멀티모달 모델은 일반적으로 사전 학습된 시각 인코더에 의존하며 이해와 생성을 위해 별도의 시각적 표현을 사용하여 두 작업 사이에 불일치가 발생합니다. 본 논문에서는 픽셀 임베딩을 기반으로 직접 시각 이해와 생성을 수행하는 Tuna-2를 제안합니다. Tuna-2는 시각 입력을 인코딩하기 위해 간단한 패치 임베딩 레이어를 사용하여 모델 구조를 대폭 간소화하며 VAE나 표현 인코더와 같은 모듈화된 시각 인코더 설계를 완전히 버립니다. 실험 결과, Tuna-2가 멀티모달 벤치마크에서 최고 수준의 성능을 달성함을 보여주며, 픽셀 공간 모델링이 고품질 이미지 생성을 위한 잠재 공간 접근과 완벽하게 경쟁할 수 있음을 입증합니다. 또한, 인코더 기반 변형이 초기 사전 학습 단계에서 더 빨리 수렴하지만, Tuna-2의 인코더 없는 설계가 미세한 시각 지각을 요구하는 작업에 대해 광범위한 멀티모달 이해를 갖게 합니다. 이러한 결과들은 사전 학습된 시각 인코더가 멀티모달 모델링에 필수적이지 않으며, 로우 픽셀 공간 학습이 생성과 인식을 위한 더 강력한 시각적 표현으로의 확장 가능한 경로를 제공한다는 것을 보여줍니다."
+    },
+    "summary": "1. Tuna-2는 픽셀 임베딩을 기반으로 한 통합 멀티모달 모델로, 시각 이해와 생성을 직접 수행하여 다른 작업 간의 불일치를 최소화하고 최적화를 실현합니다.\n2. 실험 결과에 따르면 Tuna-2는 멀티모달 벤치마크에서 우수한 성능을 보여주며, 고품질 이미지 생성을 위해 잠재 공간 방식과 완벽하게 경쟁합니다.\n3. Tuna-2의 인코더 없는 설계는 미세한 시각 지각을 필요로 하는 작업에서 강력한 멀티모달 이해를 이루는 반면, 사전 학습된 시각 인코더를 사용할 필요가 없음을 입증합니다.",
+    "categories": [
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+    "abstract": "Current evaluations of spatial intelligence can be systematically invalid under modern vision-language model (VLM) settings. First, many benchmarks derive question-answer (QA) pairs from point-cloud-based 3D annotations originally curated for traditional 3D perception. When such annotations are treated as ground truth for video-based evaluation, reconstruction and annotation artifacts can miss objects that are clearly visible in the video, mislabel object identities, or corrupt geometry-dependent answers (e.g., size), yielding incorrect or ambiguous QA pairs. Second, evaluations often assume full-scene access, while many VLMs operate on sparsely sampled frames (e.g., 16-64), making many questions effectively unanswerable under the actual model inputs. We improve evaluation validity by introducing ReVSI, a benchmark and protocol that ensures each QA pair is answerable and correct under the model's actual inputs. To this end, we re-annotate objects and geometry across 381 scenes from 5 datasets to improve data quality, and regenerate all QA pairs with rigorous bias mitigation and human verification using professional 3D annotation tools. We further enhance evaluation controllability by providing variants across multiple frame budgets (16/32/64/all) and fine-grained object visibility metadata, enabling controlled diagnostic analyses. Evaluations of general and domain-specific VLMs on ReVSI reveal systematic failure modes that are obscured by prior benchmarks, yielding a more reliable and diagnostic assessment of spatial intelligence.",
+    "authors": [
+      "Yiming Zhang",
+      "Jiacheng Chen",
+      "Jiaqi Tan",
+      "Yongsen Mao",
+      "Wenhu Chen",
+      "Angel X. Chang"
+    ],
+    "likes": 60,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24300",
+    "date_collected": "2026-05-01T07:25:28.387435+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "VLM 3D 추론의 정확한 평가를 위한 시각적 공간 지능 평가 재구성 (Vision-Language Model, VLM)",
+      "abstract": "현재의 공간 지능 평가는 현대 시각-언어 모델 (VLM) 환경에서 체계적으로 부적합할 수 있습니다."
+    },
+    "summary": "1. 기존 3D 어노테이션에서 유도된 많은 기준들은 비디오 기반 평가를 위해 원래 전통적인 3D 인식을 위해 정리된 산점-클라우드 기반 3D 어노테이션에서 질문-답변 (QA) 쌍을 파생합니다.\n2. ReVSI는 각 QA 쌍이 모델의 실제 입력 하에서 답변 가능하고 정확한지를 보장하기 위한 벤치마크와 프로토콜을 제시하며, 이를 통해 기존의 벤치마크에 은폐된 체계적인 실패 모드를 밝혀냅니다.\n3. ReVSI는 5 개의 데이터 세트로부터 총 381 개의 장면을 획득하고, 엄격한 편향 완화 및 전문적인 3D 어노테이션 도구를 사용하여 QA 쌍을 모두 재생성하여 평가의 신뢰도를 높입니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Video Analysis and Generation via a Semantic Progress Function",
+    "abstract": "Transformations produced by image and video generation models often evolve in a highly non-linear manner: long stretches where the content barely changes are followed by sudden, abrupt semantic jumps. To analyze and correct this behavior, we introduce a Semantic Progress Function, a one-dimensional representation that captures how the meaning of a given sequence evolves over time. For each frame, we compute distances between semantic embeddings and fit a smooth curve that reflects the cumulative semantic shift across the sequence. Departures of this curve from a straight line reveal uneven semantic pacing. Building on this insight, we propose a semantic linearization procedure that reparameterizes (or retimes) the sequence so that semantic change unfolds at a constant rate, yielding smoother and more coherent transitions. Beyond linearization, our framework provides a model-agnostic foundation for identifying temporal irregularities, comparing semantic pacing across different generators, and steering both generated and real-world video sequences toward arbitrary target pacing.",
+    "authors": [
+      "Gal Metzer",
+      "Sagi Polaczek",
+      "Ali Mahdavi-Amiri",
+      "Raja Giryes",
+      "Daniel Cohen-Or"
+    ],
+    "likes": 59,
+    "published_date": "Apr 24",
+    "url": "https://huggingface.co/papers/2604.22554",
+    "date_collected": "2026-05-01T07:25:28.388911+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "시맨틱 진행 함수를 통한 비디오 분석과 생성",
+      "abstract": "이미지 및 비디오 생성 모델에 의해 생성된 변환은 종종 매우 비선형적인 방식으로 진화합니다. 내용이 거의 변하지 않는 장기간이 갑자기 갑작스럽게 나타나는 급격한 의미적 점프를 따릅니다. 이러한 행동을 분석하고 수정하기 위해, 우리는 시맨틱 진행 함수를 소개합니다. 이 함수는 특정 시퀀스의 의미가 어떻게 시간에 따라 진화하는지를 포착하는 일차원 표현입니다. 우리는 각 프레임에 대해 시맨틱 임베딩 간의 거리를 계산하고, 일련의 누적 시맨틱 변화를 반영하는 부드러운 곡선을 맞춥니다. 이러한 곡선이 직선에서 벗어나면 불규칙한 의미적 페이싱을 나타냅니다. 이 통찰력을 바탕으로, 우리는 의미적 선형화 절차를 제안합니다. 이 절차는 시퀀스를 다시 매개변수화(또는 재타이밍)하여 의미적 변화가 일정한 비율로 펼쳐지도록 만들어 부드럽고 더 일관된 전환을 도출합니다. 선형화를 넘어서, 우리의 프레임워크는 시간적 불규칙성을 식별하고, 다른 생성자들 간의 의미적 페이싱을 비교하며, 생성된 비디오와 실제 비디오 시퀀스를 임의의 목표 페이싱으로 이끄는 데에 모델에 중립적인 기초를 제공합니다."
+    },
+    "summary": "1. 이미지와 비디오 생성 모델에서 발생하는 변환은 비선형적이고, 의미적 점프가 있는 불규칙한 패턴을 보입니다.\n2. 제안된 시맨틱 진행 함수는 일련의 프레임에서 의미적 변화를 부드럽게 나타내는 방법을 제시합니다.\n3. 제안된 시맨틱 선형화 절차는 의미적 변화를 균일하게 만들어 부드럽고 일관된 비디오 전환을 도출하며, 모든 생성자들 간의 의미적 페이싱을 비교하고 비디오 시퀀스를 목표 페이싱으로 조정할 수 있습니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Large Language Models Explore by Latent Distilling",
+    "abstract": "Generating diverse responses is crucial for test-time scaling of large language models (LLMs), yet standard stochastic sampling mostly yields surface-level lexical variation, limiting semantic exploration. In this paper, we propose Exploratory Sampling (ESamp), a decoding approach that explicitly encourages semantic diversity during generation. ESamp is motivated by the well-known observation that neural networks tend to make lower-error predictions on inputs similar to those encountered before, and incur higher prediction error on novel ones. Building on this property, we train a lightweight Distiller at test time to predict deep-layer hidden representations of the LLM from its shallow-layer representations to model the LLM's depth-wise representation transitions. During decoding, the Distiller continuously adapts to the mappings induced by the current generation context. ESamp uses the prediction error as a novelty signal to reweight candidate token extensions conditioned on the current prefix, thereby biasing decoding toward less-explored semantic patterns. ESamp is implemented with an asynchronous training--inference pipeline, with less than 5% worst case overhead (1.2% in the optimized release). Empirical results show that ESamp significantly boosts the Pass@k efficiency of reasoning models, showing superior or comparable performance to strong stochastic and heuristic baselines. Notably, ESamp achieves robust generalization across mathematics, science, and code generation benchmarks and breaks the trade-off between diversity and coherence in creative writing. Our code has released at: https://github.com/LinesHogan/tLLM.",
+    "authors": [
+      "Yuanhao Zeng",
+      "Ao Lu",
+      "Lufei Li",
+      "Zheng Zhang",
+      "Yexin Li",
+      "Kan Ren"
+    ],
+    "likes": 52,
+    "published_date": "Apr 27",
+    "url": "https://huggingface.co/papers/2604.24927",
+    "date_collected": "2026-05-01T07:25:28.390439+09:00",
+    "week": "2026-W18",
+    "translation": {
+      "title": "대규모 언어 모델의 잠재적 정제를 통한 탐색 (Large Language Models Explore by Latent Distilling)",
+      "abstract": "다양한 응답 생성은 대규모 언어 모델(LLMs)의 확장에 중요하지만, 표준 확률적 샘플링은 주로 표면적인 어휘적 변이만을 제공하여 의미적 탐색을 제한합니다. 본 논문에서는 생성 중에 의미적 다양성을 명시적으로 장려하는 디코딩 접근 방식인 Exploratory Sampling (ESamp)을 제안합니다. ESamp은 신경망이 이전에 만난 입력에 대해 저오차 예측을 하고 새로운 입력에 대해서는 높은 예측 오차를 가지는 관찰을 기반으로 합니다. 이 특성을 기반으로, 우리는 LLM의 얕은 층 표현에서 깊은 층의 숨겨진 표현을 예측하는 것으로 LLM의 깊이별 표현 전이를 모델링하기 위해 테스트 시간에 가벼운 Distiller를 훈련시킵니다. 디코딩 과정에서 Distiller는 현재 생성 문맥에 의해 유도된 매핑에 지속적으로 적응합니다. ESamp는 예측 오차를 신규 신호로 사용하여 현재 접두어에 의존하는 후보 토큰 확장을 재가중화하여 디코딩을 덜 탐구된 의미적 패턴 쪽으로 바이어스합니다. ESamp는 동기화되지 않은 훈련-추론 파이프라인을 통해 구현되었으며 최악의 경우 5% 미만의 오버헤드를 갖습니다 (최적화된 버전에서 1.2%). 실험 결과에서 ESamp는 추론 모델의 Pass@k 효율성을 크게 향상시켜 강력한 확률적 및 휴리스틱 기준에 우수하거나 비슷한 성능을 보여줍니다. 특히, ESamp는 수학, 과학, 코드 생성 벤치마크를 통해 견고한 일반화를 달성하며 창의적 글쓰기에서 다양성과 논리성 사이의 Trade-off를 깨뜨립니다. 코드는 https://github.com/LinesHogan/tLLM 에서 공개되어 있습니다."
+    },
+    "summary": "1. 대규모 언어 모델이 생성하는 다양한 응답을 잠재적으로 다양하게 하기 위해 Exploratory Sampling (ESamp) 디코딩 방법을 제안함.\n2. ESamp은 예측 오차를 활용하여 의미적으로 적은 탐구된 패턴을 향해 디코딩할 후보 토큰들에 가중치를 다시 부여함.\n3. 실험 결과에서 ESamp는 강력한 패턴 및 휴리스틱 기준에 비해 Pass@k 효율성을 크게 향상시키며, 수학, 과학, 코드 생성 분야에서 강건한 일반화를 보임.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

@@ -1,0 +1,129 @@
+=== Paper Collection Started at Mon May 18 01:47:42 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W21
+URL: https://huggingface.co/papers/week/2026-W21
+Found 10 papers in weekly view
+Fetching likes for: MinT: Managed Infrastructure for Training and Serving Millions of LLMs
+Fetching likes for: Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers
+Fetching likes for: SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture
+Fetching likes for: MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents
+Fetching likes for: Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling
+Fetching likes for: MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image
+Fetching likes for: δ-mem: Efficient Online Memory for Large Language Models
+Fetching likes for: Qwen-Image-2.0 Technical Report
+Fetching likes for: Flow-OPD: On-Policy Distillation for Flow Matching Models
+Fetching likes for: AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation
+Selected top 10 papers by likes:
+1. MinT: Managed Infrastructure for Training and Serving Millions of LLMs (209 likes)
+2. Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers (183 likes)
+3. SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture (171 likes)
+4. MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents (141 likes)
+5. Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling (140 likes)
+6. MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image (134 likes)
+7. δ-mem: Efficient Online Memory for Large Language Models (112 likes)
+8. Qwen-Image-2.0 Technical Report (104 likes)
+9. Flow-OPD: On-Policy Distillation for Flow Matching Models (94 likes)
+10. AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation (89 likes)
+Found abstract: We present MindLab Toolkit (MinT), a managed infrastructure system for Low-Rank Adaptation (LoRA) po...
+Processed paper: MinT: Managed Infrastructure for Training and Serving Millions of LLMs
+Found abstract: Scaling Diffusion Transformers (DiTs) to hundreds of layers introduces a structural vulnerability: n...
+Processed paper: Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers
+Found abstract: Recent large vision-language models (VLMs) remain fundamentally constrained by a persistent dichotom...
+Processed paper: SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture
+Found abstract: As LLM-powered agents are increasingly deployed in edge-cloud environments, personalized memory has ...
+Processed paper: MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents
+Found abstract: Recent progress in reasoning models has substantially advanced long-horizon mathematical and scienti...
+Processed paper: Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling
+Found abstract: Tabular Foundation Models have recently established the state of the art in supervised tabular learn...
+Processed paper: MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image
+Found abstract: Large language models increasingly need to accumulate and reuse historical information in long-term ...
+Processed paper: δ-mem: Efficient Online Memory for Large Language Models
+Found abstract: We present Qwen-Image-2.0, an omni-capable image generation foundation model that unifies high-fidel...
+Processed paper: Qwen-Image-2.0 Technical Report
+Found abstract: Existing Flow Matching (FM) text-to-image models suffer from two critical bottlenecks under multi-ta...
+Processed paper: Flow-OPD: On-Policy Distillation for Flow Matching Models
+Found abstract: Few-step video generation has been significantly advanced by consistency distillation. However, the ...
+Processed paper: AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MinT: Managed Infrastructure for Training and Serving Millions of LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 209  ->  209
+Update date_collected: 2026-05-18T10:47:52.731758+09:00  ->  2026-05-18T07:23:54.245924+09:00
+
+Processing paper 2/10
+Title: Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers
+Paper already exists, checking if translation is complete...
+Update likes: 183  ->  183
+Update date_collected: 2026-05-18T10:47:52.733860+09:00  ->  2026-05-18T07:23:54.248055+09:00
+
+Processing paper 3/10
+Title: SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture
+Paper already exists, checking if translation is complete...
+Update likes: 171  ->  171
+Update date_collected: 2026-05-18T10:47:52.737103+09:00  ->  2026-05-18T07:23:54.251315+09:00
+
+Processing paper 4/10
+Title: MemPrivacy: Privacy-Preserving Personalized Memory Management for Edge-Cloud Agents
+Paper already exists, checking if translation is complete...
+Update likes: 141  ->  141
+Update date_collected: 2026-05-18T10:47:52.739493+09:00  ->  2026-05-18T07:23:54.253707+09:00
+
+Processing paper 5/10
+Title: Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling
+Paper already exists, checking if translation is complete...
+Update likes: 140  ->  140
+Update date_collected: 2026-05-18T10:47:52.742786+09:00  ->  2026-05-18T07:23:54.257011+09:00
+
+Processing paper 6/10
+Title: MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image
+Paper already exists, checking if translation is complete...
+Update likes: 134  ->  134
+Update date_collected: 2026-05-18T10:47:52.745451+09:00  ->  2026-05-18T07:23:54.259675+09:00
+
+Processing paper 7/10
+Title: δ-mem: Efficient Online Memory for Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  112
+Update date_collected: 2026-05-18T10:47:52.747924+09:00  ->  2026-05-18T07:23:54.262263+09:00
+
+Processing paper 8/10
+Title: Qwen-Image-2.0 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  104
+Update date_collected: 2026-05-18T10:47:52.751092+09:00  ->  2026-05-18T07:23:54.265448+09:00
+
+Processing paper 9/10
+Title: Flow-OPD: On-Policy Distillation for Flow Matching Models
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  94
+Update date_collected: 2026-05-18T10:47:52.753682+09:00  ->  2026-05-18T07:23:54.268258+09:00
+
+Processing paper 10/10
+Title: AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 89  ->  89
+Update date_collected: 2026-05-18T10:47:52.756055+09:00  ->  2026-05-18T07:23:54.270638+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W21.json...
+
+Updating Notion database...
+Paper already exists with same likes count: MinT: 수백만 개의 LLM을 위한 학습 및 서빙을 위한 관리되는 인프라
+Paper already exists with same likes count: 평균 모드 스크리밍: 1000층 확산 트랜스포머에 대한 평균-분산 분리 잔차
+Paper already exists with same likes count: SenseNova-U1: NEO-unify 아키텍처로 다중 모달 이해 및 생성 통합
+Paper already exists with same likes count: 에지-클라우드 에이전트를 위한 개인화된 메모리 관리의 개인정보 보호 (Privacy) 시스템인 MemPrivacy
+Paper already exists with same likes count: 단순하고 통합된 스케일링을 통해 금메달 수준의 올림피아드 추론 달성
+Paper already exists with same likes count: MulTaBench: 텍스트와 이미지를 활용한 다중 모달 탭러러닝의 벤치마킹
+Paper already exists with same likes count: 대량 언어 모델을 위한 효율적인 온라인 메모리
+Paper already exists with same likes count: Qwen-Image-2.0 기술 보고서
+Updating paper: Flow-OPD: On-Policy Distillation을 위한 플로우 매칭 모델 (likes: 93 -> 94)
+Updating paper: AnyFlow: Any-Step 비디오 확산 모델에 대한 온-폴리시 플로우 맵 축약 (likes: 87 -> 89)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May 18 01:48:19 UTC 2026 ===
+

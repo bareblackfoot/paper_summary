@@ -1,0 +1,163 @@
+=== Paper Collection Started at Sun Oct 26 22:07:34 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W44
+URL: https://huggingface.co/papers/week/2025-W44
+Found 10 papers in weekly view
+Fetching likes for: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Fetching likes for: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Fetching likes for: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Fetching likes for: Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning
+Fetching likes for: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Fetching likes for: World-in-World: World Models in a Closed-Loop World
+Fetching likes for: BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping
+Fetching likes for: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Fetching likes for: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Fetching likes for: Human-Agent Collaborative Paper-to-Page Crafting for Under $0.1
+Selected top 10 papers by likes:
+1. A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning (137 likes)
+2. Efficient Long-context Language Model Training by Core Attention
+  Disaggregation (108 likes)
+3. LightMem: Lightweight and Efficient Memory-Augmented Generation (101 likes)
+4. Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning (92 likes)
+5. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science (83 likes)
+6. World-in-World: World Models in a Closed-Loop World (80 likes)
+7. BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping (77 likes)
+8. OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM (73 likes)
+9. UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation (64 likes)
+10. Human-Agent Collaborative Paper-to-Page Crafting for Under $0.1 (63 likes)
+Found abstract: Test-time scaling seeks to improve the reasoning performance of large
+language models (LLMs) by addi...
+Processed paper: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Found abstract: We present core attention disaggregation (CAD), a technique that improves
+long-context large languag...
+Processed paper: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Found abstract: Despite their remarkable capabilities, Large Language Models (LLMs) struggle
+to effectively leverage...
+Processed paper: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Found abstract: In this technical report, we present the Ring-linear model series,
+specifically including Ring-mini-...
+Processed paper: Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning
+Found abstract: Autonomous data science, from raw data sources to analyst-grade deep research
+reports, has been a lo...
+Processed paper: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Found abstract: Generative world models (WMs) can now simulate worlds with striking visual
+realism, which naturally ...
+Processed paper: World-in-World: World Models in a Closed-Loop World
+Found abstract: Reinforcement learning (RL) has recently become the core paradigm for
+aligning and strengthening lar...
+Processed paper: BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping
+Found abstract: Advancing machine intelligence requires developing the ability to perceive
+across multiple modalitie...
+Processed paper: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Found abstract: Recent progress in text-to-image (T2I) generation underscores the importance
+of reliable benchmarks ...
+Processed paper: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Found abstract: In the quest for scientific progress, communicating research is as vital as
+the discovery itself. Ye...
+Processed paper: Human-Agent Collaborative Paper-to-Page Crafting for Under $0.1
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 137  ->  135
+Update date_collected: 2025-10-27T07:07:43.271478+09:00  ->  2025-10-26T07:06:56.421490+09:00
+
+Processing paper 2/10
+Title: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Paper already exists, checking if translation is complete...
+Update likes: 108  ->  104
+Update date_collected: 2025-10-27T07:07:43.272758+09:00  ->  2025-10-26T07:06:56.422831+09:00
+
+Processing paper 3/10
+Title: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Paper already exists, checking if translation is complete...
+Update likes: 101  ->  100
+Update date_collected: 2025-10-27T07:07:43.274095+09:00  ->  2025-10-26T07:06:56.424334+09:00
+
+Processing paper 4/10
+Title: Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 92  ->  90
+Update date_collected: 2025-10-27T07:07:43.275802+09:00  ->  2025-10-26T07:06:56.426219+09:00
+
+Processing paper 5/10
+Title: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Paper already exists, checking if translation is complete...
+Update likes: 83  ->  78
+Update date_collected: 2025-10-27T07:07:43.276873+09:00  ->  2025-10-26T07:06:56.429097+09:00
+
+Processing paper 6/10
+Title: World-in-World: World Models in a Closed-Loop World
+Paper already exists, checking if translation is complete...
+Update likes: 80  ->  79
+Update date_collected: 2025-10-27T07:07:43.278368+09:00  ->  2025-10-26T07:06:56.427866+09:00
+
+Processing paper 7/10
+Title: BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping
+Paper already exists, checking if translation is complete...
+Update likes: 77  ->  77
+Update date_collected: 2025-10-27T07:07:43.279998+09:00  ->  2025-10-26T07:06:56.430923+09:00
+
+Processing paper 8/10
+Title: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  73
+Update date_collected: 2025-10-27T07:07:43.281709+09:00  ->  2025-10-26T07:06:56.432816+09:00
+
+Processing paper 9/10
+Title: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  64
+Update date_collected: 2025-10-27T07:07:43.282970+09:00  ->  2025-10-26T07:06:56.434214+09:00
+
+Processing paper 10/10
+Title: Human-Agent Collaborative Paper-to-Page Crafting for Under $0.1
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  59
+Update date_collected: 2025-10-27T07:07:43.284208+09:00  ->  2025-10-26T07:06:56.435601+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W44.json...
+
+Updating Notion database...
+Updating paper: 내부 확률과 자기 일관성을 이어주는 LLM 추론에 관한 이론적 연구 (likes: 135 -> 137)
+Updating paper: 핵심 어텐션 분해를 통한 효율적인 장거리 문맥 언어 모델 훈련 (likes: 104 -> 108)
+Updating paper: 경량화 및 효율적인 메모리 보강 생성 (Memory-Augmented Generation) (likes: 100 -> 101)
+Updating paper: 모든 주의력이 중요합니다: 장기 맥락 추론을 위한 효율적인 하이브리드 아키텍처 (likes: 90 -> 92)
+Updating paper: DeepAnalyze: 자율 데이터 과학을 위한 에이전트형 대규모 언어 모델 (likes: 78 -> 83)
+Updating paper: 세계 속의 세계: 폐쇄적 루프 환경에서의 세계 모델 (likes: 79 -> 80)
+Paper already exists with same likes count: BAPO: 균형 잡힌 정책 최적화를 통한 LLM을 위한 오프-폴리시 강화 학습 안정화
+Paper already exists with same likes count: 옴니빈치: 옴니-모달 이해를 위한 아키텍처와 데이터 강화
+Paper already exists with same likes count: UniGenBench++: 텍스트에서 이미지로의 통일된 의미 평가 벤치마크
+Updating paper: $0.1 미만으로 하는 인간-에이전트 협업 Paper-to-Page 제작 (likes: 59 -> 63)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Oct 26 22:09:26 UTC 2025 ===
+

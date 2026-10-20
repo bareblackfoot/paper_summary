@@ -1,0 +1,153 @@
+=== Paper Collection Started at Tue Sep 30 22:07:39 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W40
+URL: https://huggingface.co/papers/week/2025-W40
+Found 10 papers in weekly view
+Fetching likes for: LongLive: Real-time Interactive Long Video Generation
+Fetching likes for: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Fetching likes for: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Fetching likes for: SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention
+Fetching likes for: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Fetching likes for: Variational Reasoning for Language Models
+Fetching likes for: ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models
+Fetching likes for: Language Models Can Learn from Verbal Feedback Without Scalar Rewards
+Fetching likes for: StableToken: A Noise-Robust Semantic Speech Tokenizer for Resilient
+  SpeechLLMs
+Fetching likes for: Multiplayer Nash Preference Optimization
+Selected top 10 papers by likes:
+1. LongLive: Real-time Interactive Long Video Generation (156 likes)
+2. EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning (112 likes)
+3. Quantile Advantage Estimation for Entropy-Safe Reasoning (108 likes)
+4. SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention (97 likes)
+5. MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing (90 likes)
+6. Variational Reasoning for Language Models (58 likes)
+7. ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models (58 likes)
+8. Language Models Can Learn from Verbal Feedback Without Scalar Rewards (57 likes)
+9. StableToken: A Noise-Robust Semantic Speech Tokenizer for Resilient
+  SpeechLLMs (57 likes)
+10. Multiplayer Nash Preference Optimization (51 likes)
+Found abstract: We present LongLive, a frame-level autoregressive (AR) framework for
+real-time and interactive long ...
+Processed paper: LongLive: Real-time Interactive Long Video Generation
+Found abstract: Training LLM agents in multi-turn environments with sparse rewards, where
+completing a single task r...
+Processed paper: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) strengthens LLM
+reasoning, but training often ...
+Processed paper: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Found abstract: In Diffusion Transformer (DiT) models, particularly for video generation,
+attention latency is a maj...
+Processed paper: SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention
+Found abstract: We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language
+model that achieves state-...
+Processed paper: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Found abstract: We introduce a variational reasoning framework for language models that
+treats thinking traces as la...
+Processed paper: Variational Reasoning for Language Models
+Found abstract: Peer review serves as a backbone of academic research, but in most AI
+conferences, the review qualit...
+Processed paper: ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models
+Found abstract: LLMs are often trained with RL from human or AI feedback, yet such methods
+typically compress nuance...
+Processed paper: Language Models Can Learn from Verbal Feedback Without Scalar Rewards
+Found abstract: Prevalent semantic speech tokenizers, designed to capture linguistic content,
+are surprisingly fragi...
+Processed paper: StableToken: A Noise-Robust Semantic Speech Tokenizer for Resilient
+  SpeechLLMs
+Found abstract: Reinforcement learning from human feedback (RLHF) has emerged as the standard
+paradigm for aligning ...
+Processed paper: Multiplayer Nash Preference Optimization
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: LongLive: Real-time Interactive Long Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 156  ->  128
+Update date_collected: 2025-10-01T07:07:48.324035+09:00  ->  2025-09-30T07:07:56.530658+09:00
+
+Processing paper 2/10
+Title: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  72
+Update date_collected: 2025-10-01T07:07:48.325376+09:00  ->  2025-09-30T07:07:56.534995+09:00
+
+Processing paper 3/10
+Title: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 108  ->  100
+Update date_collected: 2025-10-01T07:07:48.326532+09:00  ->  2025-09-30T07:07:56.531854+09:00
+
+Processing paper 4/10
+Title: SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  76
+Update date_collected: 2025-10-01T07:07:48.329847+09:00  ->  2025-09-30T07:07:56.533704+09:00
+
+Processing paper 6/10
+Title: Variational Reasoning for Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  51
+Update date_collected: 2025-10-01T07:07:48.331107+09:00  ->  2025-09-30T07:07:56.537983+09:00
+
+Processing paper 7/10
+Title: ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  54
+Update date_collected: 2025-10-01T07:07:48.332811+09:00  ->  2025-09-30T07:07:56.536721+09:00
+
+Processing paper 8/10
+Title: Language Models Can Learn from Verbal Feedback Without Scalar Rewards
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  48
+Update date_collected: 2025-10-01T07:07:48.334069+09:00  ->  2025-09-30T07:07:56.539258+09:00
+
+Processing paper 9/10
+Title: StableToken: A Noise-Robust Semantic Speech Tokenizer for Resilient
+  SpeechLLMs
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Multiplayer Nash Preference Optimization
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W40.json...
+
+Updating Notion database...
+Updating paper: 실시간 대화형 장긴 영상 생성 시스템 (likes: 128 -> 156)
+Updating paper: 엔트로피 정규화된 정책 최적화를 통한 LLM 에이전트들의 훈련 (likes: 72 -> 112)
+Updating paper: 엔트로피 안전 추론을 위한 분위수 이점 추정 (likes: 100 -> 108)
+Creating new paper: 확산 트랜스포머에서의 희소성을 넘어서: Featuning 가능한 희소-선형 어텐션을 통해
+Updating paper: MinerU2.5: 효율적인 고해상도 문서 구문 분석을 위한 분리된 Vision-Language 모델 (likes: 76 -> 90)
+Updating paper: 언어 모델을 위한 변수 추론 (likes: 51 -> 58)
+Updating paper: 리뷰스코어: 대형 언어 모델을 활용한 잘못된 피어 리뷰 탐지 (likes: 54 -> 58)
+Updating paper: 언어 모델이 스칼라 보상 없이 언어적 피드백으로부터 학습할 수 있다 (likes: 48 -> 57)
+Creating new paper: StableToken: 안정적인 의미 음성 토큰 분할기
+Creating new paper: 다중 플레이어 나시 선호도 최적화
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Sep 30 22:09:38 UTC 2025 ===
+

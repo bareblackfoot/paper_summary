@@ -1,0 +1,277 @@
+[
+  {
+    "title": "dLLM: Simple Diffusion Language Modeling",
+    "abstract": "Although diffusion language models (DLMs) are evolving quickly, many recent models converge on a set of shared components. These components, however, are distributed across ad-hoc research codebases or lack transparent implementations, making them difficult to reproduce or extend. As the field accelerates, there is a clear need for a unified framework that standardizes these common components while remaining flexible enough to support new methods and architectures.\n  To address this gap, we introduce dLLM, an open-source framework that unifies the core components of diffusion language modeling -- training, inference, and evaluation -- and makes them easy to customize for new designs. With dLLM, users can reproduce, finetune, deploy, and evaluate open-source large DLMs such as LLaDA and Dream through a standardized pipeline. The framework also provides minimal, reproducible recipes for building small DLMs from scratch with accessible compute, including converting any BERT-style encoder or autoregressive LM into a DLM. We also release the checkpoints of these small DLMs to make DLMs more accessible and accelerate future research.",
+    "authors": [
+      "Zhanhui Zhou",
+      "Lingjie Chen",
+      "Hanghang Tong",
+      "Dawn Song"
+    ],
+    "likes": 64,
+    "published_date": "Feb 26",
+    "url": "https://huggingface.co/papers/2602.22661",
+    "date_collected": "2026-03-03T07:12:32.031634+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "dLLM: 간단한 확산 언어 모델링",
+      "abstract": "확산 언어 모델링(DLMs)은 빠르게 발전하고 있지만, 최근 많은 모델들은 일련의 공통 구성 요소에 수렴한다. 하지만 이러한 구성 요소들은 ad-hoc 연구 코드베이스에 분산되어 있거나 투명한 실행을 위한 구현이 부족하여 재현하거나 확장하기 어려워진다. 분야가 가속화되면, 이러한 공통 구성 요소를 표준화하고 새로운 방법과 아키텍처를 지원할 수 있는 유연한 통합 프레임워크가 명백히 필요하다."
+    },
+    "summary": "1. dLLM은 확산 언어 모델링의 핵심 구성 요소를 통합하고 사용자 정의가 쉬운 오픈 소스 프레임워크이다.\n2. 사용자는 dLLM을 사용하여 오픈 소스 대규모 DLMs를 재현, 세밀 조정, 배포 및 평가할 수 있으며, BERT-style 인코더나 자기 회귀적 LM을 DLM으로 변환하는 최소한의 레시피를 제공받을 수 있다.\n3. 작은 DLMs의 체크포인트를 공개하여 DLMs의 접근성을 높이고 향후 연구를 가속화하는 한편, 유연성과 표준화를 동시에 유지한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Enhancing Spatial Understanding in Image Generation via Reward Modeling",
+    "abstract": "Recent progress in text-to-image generation has greatly advanced visual fidelity and creativity, but it has also imposed higher demands on prompt complexity-particularly in encoding intricate spatial relationships. In such cases, achieving satisfactory results often requires multiple sampling attempts. To address this challenge, we introduce a novel method that strengthens the spatial understanding of current image generation models. We first construct the SpatialReward-Dataset with over 80k preference pairs. Building on this dataset, we build SpatialScore, a reward model designed to evaluate the accuracy of spatial relationships in text-to-image generation, achieving performance that even surpasses leading proprietary models on spatial evaluation. We further demonstrate that this reward model effectively enables online reinforcement learning for the complex spatial generation. Extensive experiments across multiple benchmarks show that our specialized reward model yields significant and consistent gains in spatial understanding for image generation.",
+    "authors": [
+      "Zhenyu Tang",
+      "Chaoran Feng",
+      "Yufan Deng",
+      "Jie Wu",
+      "Xiaojie Li",
+      "Rui Wang",
+      "Yunpeng Chen",
+      "Daquan Zhou"
+    ],
+    "likes": 41,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24233",
+    "date_collected": "2026-03-03T07:12:32.033042+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "이미지 생성에서 보상 모델링을 통한 공간 이해 강화",
+      "abstract": "최근 텍스트-이미지 생성 분야의 발전으로 시각적인 현실성과 창의성이 크게 진전되었지만, 복잡한 공간 관계를 인코딩하는데 더 높은 요구가 생겼습니다. 이런 경우 성공적인 결과를 얻기 위해서는 종종 여러 번의 샘플링 시도가 필요합니다. 이러한 도전을 해결하기 위해, 현재의 이미지 생성 모델의 공간 이해력을 강화하는 새로운 방법을 제안합니다. 먼저 80,000개가 넘는 선호도 쌍을 가진 SpatialReward-Dataset을 만들었습니다. 이 데이터셋을 기반으로, 텍스트-이미지 생성의 공간 관계의 정확성을 평가하는 보상 모델인 SpatialScore를 구축하여, 공간 평가에서 선행하는 비공개 모델을 뛰어넘는 성과를 얻었습니다. 더 나아가 이 보상 모델이 복잡한 공간 생성을 위한 온라인 강화 학습을 효과적으로 가능케 한다는 것을 입증했습니다. 다양한 벤치마크 실험을 통해 우리의 특수화된 보상 모델이 이미지 생성에서 공간 이해력을 상당히 향상시키는 유의하고 일관된 성과를 낸다는 것을 보여주었습니다."
+    },
+    "summary": "1. 복잡한 공간 관계에 대한 이미지 생성에서의 공간 이해력을 강화하기 위해 SpatialReward-Dataset을 활용한 보상 모델을 도입하였다.\n2. SpatialScore 보상 모델은 텍스트-이미지 생성에서 공간 관계의 정확성을 평가하여 성과를 높였고, 온라인 강화 학습을 가능케 했다.\n3. 실험 결과, 특수화된 보상 모델이 이미지 생성에서 공간 이해력을 증진시킬 뿐만 아니라, 다양한 벤치마크에서 일관된 성과를 보였다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets",
+    "abstract": "The reliability of multilingual Large Language Model (LLM) evaluation is currently compromised by the inconsistent quality of translated benchmarks. Existing resources often suffer from semantic drift and context loss, which can lead to misleading performance metrics. In this work, we present a fully automated framework designed to address these challenges by enabling scalable, high-quality translation of datasets and benchmarks. We demonstrate that adapting test-time compute scaling strategies, specifically Universal Self-Improvement (USI) and our proposed multi-round ranking method, T-RANK, allows for significantly higher quality outputs compared to traditional pipelines. Our framework ensures that benchmarks preserve their original task structure and linguistic nuances during localization. We apply this approach to translate popular benchmarks and datasets into eight Eastern and Southern European languages (Ukrainian, Bulgarian, Slovak, Romanian, Lithuanian, Estonian, Turkish, Greek). Evaluations using both reference-based metrics and LLM-as-a-judge show that our translations surpass existing resources, resulting in more accurate downstream model assessment. We release both the framework and the improved benchmarks to facilitate robust and reproducible multilingual AI development.",
+    "authors": [
+      "Hanna Yukhymenko",
+      "Anton Alexandrov",
+      "Martin Vechev"
+    ],
+    "likes": 35,
+    "published_date": "Feb 25",
+    "url": "https://huggingface.co/papers/2602.22207",
+    "date_collected": "2026-03-03T07:12:32.034156+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "번역에서의 회복: 벤치마크와 데이터셋의 자동 번역을 위한 효율적인 파이프라인",
+      "abstract": "현재 다국어 대규모 언어 모델 (LLM) 평가의 신뢰성은 번역된 벤치마크의 일관성 없는 품질로 인해 저해되고 있습니다. 기존 자원들은 종종 의미 이탈과 문맥 손실을 겪어 잘못된 성능 측정으로 이어질 수 있습니다. 본 연구에서는 이러한 과제에 대응하기 위해 설계된 완전 자동화된 프레임워크를 제시합니다. 이 프레임워크는 확장 가능하고 고품질의 데이터셋과 벤치마크 번역을 가능하게 합니다. 우리는 테스트 시점의 계산 스케일링 전략을 조정하여 Universal Self-Improvement (USI) 및 우리가 제안하는 T-RANK 다중 랭킹 방법을 사용하면 기존 파이프라인에 비해 훨씬 더 높은 품질의 출력을 얻을 수 있음을 입증합니다. 우리의 프레임워크는 벤치마크가 로컬라이징하는 동안 원래의 작업 구조와 언어적 뉘앙스를 보존하도록 보장합니다. 이 접근법을 적용하여 인기 있는 벤치마크와 데이터셋을 우크라이나어, 불가리어, 슬로바키아어, 루마니아어, 리투아니아어, 에스토니아어, 터키어, 그리스어 등 8가지 동유럽 및 남부 유럽어로 번역합니다. 참조 기반 메트릭 및 LLM을 평가자로 사용한 검증 결과, 우리의 번역이 기존 자원을 능가하여 더 정확한 하위 모델 평가를 제공함이 입증됩니다. 우리는 이 프레임워크와 개선된 벤치마크를 공개하여 견고하고 재현 가능한 다국어 인공지능(AI) 개발을 촉진합니다."
+    },
+    "summary": "1. 다국어 대규모 언어 모델(Large Language Model, LLM) 평가의 신뢰성 향상을 위해 벤치마크와 데이터셋 자동 번역을 위한 완전 자동화된 프레임워크를 제시.\n2. Universal Self-Improvement (USI) 및 T-RANK 다중 랭킹 방법을 적용하여 기존 파이프라인에 비해 고품질 번역을 실현하고 벤치마크의 구조와 뉘앙스 보존.\n3. 8가지 동유럽 및 남부 유럽어로의 번역을 통해 기존 자원을 능가하는 정확한 하위 모델 평가를 제공하여 다국어 AI 개발을 지원.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+    "abstract": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting.",
+    "authors": [
+      "Weinan Dai",
+      "Hanlin Wu",
+      "Qiying Yu",
+      "Huan-ang Gao",
+      "Jiahao Li",
+      "Chengquan Jiang",
+      "Weiqiang Lou",
+      "Yufan Song",
+      "Hongli Yu",
+      "Jiaze Chen",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Jingjing Liu",
+      "Mingxuan Wang",
+      "Xin Liu",
+      "Hao Zhou"
+    ],
+    "likes": 32,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24286",
+    "date_collected": "2026-03-03T07:12:32.035877+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "CUDA 에이전트: 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습",
+      "abstract": "GPU 커널 최적화는 현대 딥러닝에서 기본적이지만 심층적인 하드웨어 전문 지식이 필요한 고도로 전문화된 작업이다. 대체로 프로그래밍에서 강력한 성능을 보이더라도 대규모 언어 모델은 torch.compile과 같은 컴파일러 기반 시스템에 비해 CUDA 커널 생성에서 경쟁력을 갖지 못한다. 기존의 CUDA 코드 생성 접근법은 학습이 필요 없는 정제를 의존하거나 고정된 다중 실행-피드백 루프 내에서 모델을 세밀하게 조정하지만, 이러한 패러다임은 모델의 본질적인 CUDA 최적화 능력을 근본적으로 개선하지 못해 성능 향상이 한계에 머무른다. 본 연구는 대규모 에이전트 강화학습 시스템인 CUDA 에이전트를 제시한다. 이 시스템은 확장 가능한 데이터 합성 파이프라인, 신뢰할 수 있는 보상 신호를 제공하기 위한 스킬 증진형 CUDA 개발 환경, 안정적인 훈련을 위한 강화학습 알고리즘 기술을 통해 CUDA 커널 전문 지식을 발전시킨다. CUDA 에이전트는 KernelBench에서 최상의 결과를 달성하여 KernelBench Level-1, Level-2 및 Level-3 분할에서 torch.compile보다 각각 100%, 100% 및 92% 빠른 속도를 제공하며, Claude Opus 4.5 및 Gemini 3 Pro와 같은 최강의 프로프리토리 모델을 가장 어려운 Level-3 설정에서 약 40% 능가한다."
+    },
+    "summary": "1. 현대 딥러닝에서 중요한 GPU 커널 최적화를 위해 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습인 CUDA 에이전트가 소개됨.\n2. CUDA 에이전트는 데이터 합성 파이프라인, CUDA 개발 환경, 강화학습 알고리즘 등을 통해 신뢰할 수 있는 보상 신호를 사용하여 CUDA 커널 전문 지식을 개발함.\n3. CUDA 에이전트는 KernelBench에서 torch.compile보다 빠른 속도를 제공하며, 다른 상용 모델보다 뛰어난 결과를 보임.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Mode Seeking meets Mean Seeking for Fast Long Video Generation",
+    "abstract": "Scaling video generation from seconds to minutes faces a critical bottleneck: while short-video data is abundant and high-fidelity, coherent long-form data is scarce and limited to narrow domains. To address this, we propose a training paradigm where Mode Seeking meets Mean Seeking, decoupling local fidelity from long-term coherence based on a unified representation via a Decoupled Diffusion Transformer. Our approach utilizes a global Flow Matching head trained via supervised learning on long videos to capture narrative structure, while simultaneously employing a local Distribution Matching head that aligns sliding windows to a frozen short-video teacher via a mode-seeking reverse-KL divergence. This strategy enables the synthesis of minute-scale videos that learns long-range coherence and motions from limited long videos via supervised flow matching, while inheriting local realism by aligning every sliding-window segment of the student to a frozen short-video teacher, resulting in a few-step fast long video generator. Evaluations show that our method effectively closes the fidelity-horizon gap by jointly improving local sharpness, motion and long-range consistency. Project website: https://primecai.github.io/mmm/.",
+    "authors": [
+      "Shengqu Cai",
+      "Weili Nie",
+      "Chao Liu",
+      "Julius Berner",
+      "Lvmin Zhang",
+      "Nanye Ma",
+      "Hansheng Chen",
+      "Maneesh Agrawala",
+      "Leonidas Guibas",
+      "Gordon Wetzstein",
+      "Arash Vahdat"
+    ],
+    "likes": 23,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24289",
+    "date_collected": "2026-03-03T07:12:32.037427+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "모드 탐색과 평균 탐색을 결합한 빠른 장시간 비디오 생성",
+      "abstract": "짧은 비디오 데이터는 풍부하고 고품질이지만, 일관된 장시간 데이터는 한정적이며 특정 영역에 국한됩니다. 이에 우리는 모드 탐색과 평균 탐색을 결합한 훈련 패러다임을 제안하여, 지역적 신뢰도를 장기 일관성으로부터 분리합니다. 제안하는 방법은 Decoupled Diffusion Transformer를 통해 통합된 표현을 기반으로 전달 성격별 지역적 신뢰도를 분리합니다. 우리의 방법은 글로벌 Flow Matching 헤드를 활용해 장시간 비디오의 서사 구조를 캡처하는 데에 사용되며, 동시에 지역적 분포 일치 헤드를 사용하여 슬라이딩 윈도우를 얼어 있는 짧은 비디오 교사에 모드 탐색 역-KL 발산을 통해 정렬합니다. 이 전략은 분단된 단말로부터 장거리 일관성 및 동작을 학습할 수 있는 분들 시퀀스 학습을 통해 소수의 장시간 비디오에서 신뢰성을 상속받는 일부 스텝 빠른 장시간 비디오 생성기를 가능케 합니다. 평가에서 우리의 방법은 지역적 선명성, 움직임 및 장거리 일관성을 함께 향상시키며, 신뢰도 지평선 격차를 효과적으로 줄인다는 것을 보여줍니다. 프로젝트 웹사이트: https://primecai.github.io/mmm/."
+    },
+    "summary": "1. 단기 비디오 데이터가 풍부하지만 장기 일관성이 부족한 문제를 해결하기 위해 모드 탐색과 평균 탐색을 결합한 훈련 패러다임을 제안합니다.\n2. 글로벌 Flow Matching과 지역적 Distribution Matching을 활용하여 장시간 비디오의 서사 구조를 캡처하고, 짧은 비디오 교사에 학습하여 지역적 현실감을 유지합니다.\n3. 제안된 전략은 소수의 장시간 비디오에서 장거리 일관성과 움직임을 학습하여 장시간 비디오 생성 속도를 높이고, 지역적 선명성과 일관성을 향상시키는 것으로 확인되었습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "LK Losses: Direct Acceptance Rate Optimization for Speculative Decoding",
+    "abstract": "Speculative decoding accelerates autoregressive large language model (LLM) inference by using a lightweight draft model to propose candidate tokens that are then verified in parallel by the target model. The speedup is significantly determined by the acceptance rate, yet standard training minimizes Kullback-Leibler (KL) divergence as a proxy objective. While KL divergence and acceptance rate share the same global optimum, small draft models, having limited capacity, typically converge to suboptimal solutions where minimizing KL does not guarantee maximizing acceptance rate. To address this issue, we propose LK losses, special training objectives that directly target acceptance rate. Comprehensive experiments across four draft architectures and six target models, ranging from 8B to 685B parameters, demonstrate consistent improvements in acceptance metrics across all configurations compared to the standard KL-based training. We evaluate our approach on general, coding and math domains and report gains of up to 8-10% in average acceptance length. LK losses are easy to implement, introduce no computational overhead and can be directly integrated into any existing speculator training framework, making them a compelling alternative to the existing draft training objectives.",
+    "authors": [
+      "Alexander Samarin",
+      "Sergei Krutikov",
+      "Anton Shevtsov",
+      "Sergei Skvortsov",
+      "Filipp Fisin",
+      "Alexander Golubev"
+    ],
+    "likes": 15,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.23881",
+    "date_collected": "2026-03-03T07:12:32.038667+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "LK 손실: 과감한 디코딩을 위한 직접 수락률 최적화",
+      "abstract": "과감한 디코딩은 경량 초안 모델을 활용하여 후보 토큰을 제안하고 이후 대상 모델에서 병렬로 확인함으로써 자가회귀 대형 언어 모델 (LLM) 추론을 가속화합니다. 속도 향상은 수락률에 크게 영향을 받지만 표준 훈련은 일반적으로 Kullback-Leibler (KL) 다이버전스를 간접 목적으로 최소화합니다. KL 다이버전스와 수락률은 전역 최적점을 공유하지만 용량이 제한된 작은 초안 모델은 일반적으로 KL을 최소화해도 수락률을 극대화하지 않는 부적합한 솔루션으로 수렴합니다. 이 문제를 해결하기 위해 우리는 수용률을 직접 목표로 삼는 특수 훈련 목표인 LK 손실을 제안합니다. 8B에서 685B까지의 매개변수 범위 내 네 가지 초안 아키텍처와 여섯 가지 대상 모델을 대상으로 한 포괄적인 실험 결과는 표준 KL 기반 훈련과 비교하여 모든 구성에서 수용률 메트릭에서 일관된 향상을 보여줍니다. 우리는 일반, 코딩 및 수학 도메인에서 접근을 평가하고 평균 수용 길이에서 최대 8-10%의 이점을 보고합니다. LK 손실은 구현하기 쉽고 계산 오버헤드를 도입하지 않으며 기존의 초안 훈련 목적에 직접 통합할 수 있어 존재하는 초안 훈련 목적에 대한 매력적인 대안입니다."
+    },
+    "summary": "1. 과감한 디코딩은 대형 언어 모델 추론 속도를 높이기 위해 경량 초안 모델을 활용하며, LK 손실은 수락률을 직접 목표로 삼는 특수 훈련 목표입니다.\n2. 작은 초안 모델은 KL을 최소화해도 수락률을 극대화하지 못할 가능성이 있으며, LK 손실을 도입함으로써 향상된 수용메트릭을 실현할 수 있음을 실험을 통해 입증하였습니다.\n3. LK 손실은 구현이 용이하며 기존의 초안 훈련 방법에 직접 통합할 수 있는 메리트가 있어, 기존의 초안 훈련 목적과 비교하여 향상된 결과를 나타냅니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "CiteAudit: You Cited It, But Did You Read It? A Benchmark for Verifying Scientific References in the LLM Era",
+    "abstract": "Scientific research relies on accurate citation for attribution and integrity, yet large language models (LLMs) introduce a new risk: fabricated references that appear plausible but correspond to no real publications. Such hallucinated citations have already been observed in submissions and accepted papers at major machine learning venues, exposing vulnerabilities in peer review. Meanwhile, rapidly growing reference lists make manual verification impractical, and existing automated tools remain fragile to noisy and heterogeneous citation formats and lack standardized evaluation. We present the first comprehensive benchmark and detection framework for hallucinated citations in scientific writing. Our multi-agent verification pipeline decomposes citation checking into claim extraction, evidence retrieval, passage matching, reasoning, and calibrated judgment to assess whether a cited source truly supports its claim. We construct a large-scale human-validated dataset across domains and define unified metrics for citation faithfulness and evidence alignment. Experiments with state-of-the-art LLMs reveal substantial citation errors and show that our framework significantly outperforms prior methods in both accuracy and interpretability. This work provides the first scalable infrastructure for auditing citations in the LLM era and practical tools to improve the trustworthiness of scientific references.",
+    "authors": [
+      "Zhengqing Yuan",
+      "Kaiwen Shi",
+      "Zheyuan Zhang",
+      "Lichao Sun",
+      "Nitesh V. Chawla",
+      "Yanfang Ye"
+    ],
+    "likes": 15,
+    "published_date": "Feb 26",
+    "url": "https://huggingface.co/papers/2602.23452",
+    "date_collected": "2026-03-03T07:12:32.039905+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "논문 인용 검증: 인용은 했지만, 직접 읽었나요? LLM 시대의 과학 참고문헌 확인을 위한 벤치마크",
+      "abstract": "과학 연구는 정확한 인용을 통해 신원과 진실성을 유지하는데 의존하지만, 대형 언어 모델(LLM)은 새로운 위험을 도입합니다: 현실적으로 보이지만 실제 발행물과 일치하지 않는 전조된 참고문헌. 이러한 환각된 인용은 이미 주요 기계 학습 학회의 논문 제출 및 수락된 논문에서 관찰되어 피어 리뷰의 취약성을 드러내고 있습니다. 한편, 급속히 증가하는 참고문헌 목록은 수동 검증이 현실적으로 불가능하게 하며, 기존의 자동화 도구들은 잡음이 많고 이질적인 인용 형식에 취약하며 표준화된 평가가 부족합니다. 우리는 과학 글쓰기에서 환각된 인용에 대한 첫 종합적인 벤치마크와 탐지 프레임워크를 제공합니다. 우리의 다중 에이전트 검증 파이프라인은 인용 확인을 주장 추출, 증거 검색, 단락 일치, 추론 및 보정된 판단 단계로 분해하여 인용된 소스가 실제로 자신의 주장을 지지하는지를 평가합니다. 우리는 영역에 걸쳐 인간이 검증한 대규모 데이터셋을 구축하고 인용 정확성 및 증거 정렬을 위한 통합 메트릭을 정의합니다. 최신 LLM을 사용한 실험 결과는 상당한 인용 오류를 보여주며, 우리의 프레임워크가 이전 방법들보다 정확도와 해석 가능성 측면에서 획기적으로 우월함을 입증합니다. 본 연구는 LLM 시대의 인용 검토를 위한 첫 확장 가능한 인프라를 제공하고 과학 참고문헌의 신뢰성을 향상시키는 실용적 도구를 제공합니다."
+    },
+    "summary": "1. LLM 시대의 과학 논문에서 발생하는 환각된 인용에 대한 종합적인 벤치마크와 탐지 프레임워크를 제시합니다.\n2. 다중 에이전트 검증 파이프라인을 활용하여 인용 확인을 주장 추출, 증거 검색, 단락 일치, 추론, 보정된 판단 단계로 구성하여 인용된 소스의 신뢰성을 평가합니다.\n3. 실험 결과는 최신 LLM을 사용한 인용 오류의 상당함을 보여주며, 본 벤치마크와 프레임워크는 정확도와 해석 가능성 측면에서 이전 방법보다 우수함을 입증합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Compositional Generalization Requires Linear, Orthogonal Representations in Vision Embedding Models",
+    "abstract": "Compositional generalization, the ability to recognize familiar parts in novel contexts, is a defining property of intelligent systems. Although modern models are trained on massive datasets, they still cover only a tiny fraction of the combinatorial space of possible inputs, raising the question of what structure representations must have to support generalization to unseen combinations. We formalize three desiderata for compositional generalization under standard training (divisibility, transferability, stability) and show they impose necessary geometric constraints: representations must decompose linearly into per-concept components, and these components must be orthogonal across concepts. This provides theoretical grounding for the Linear Representation Hypothesis: the linear structure widely observed in neural representations is a necessary consequence of compositional generalization. We further derive dimension bounds linking the number of composable concepts to the embedding geometry. Empirically, we evaluate these predictions across modern vision models (CLIP, SigLIP, DINO) and find that representations exhibit partial linear factorization with low-rank, near-orthogonal per-concept factors, and that the degree of this structure correlates with compositional generalization on unseen combinations. As models continue to scale, these conditions predict the representational geometry they may converge to. Code is available at https://github.com/oshapio/necessary-compositionality.",
+    "authors": [
+      "Arnas Uselis",
+      "Andrea Dittadi",
+      "Seong Joon Oh"
+    ],
+    "likes": 14,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24264",
+    "date_collected": "2026-03-03T07:12:32.040989+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "시각 임베딩 모델에서 조합적 일반화에는 선형 및 직교적 표현이 필요합니다",
+      "abstract": "조합적 일반화는 새로운 맥락에서 익숙한 부분을 인식하는 능력으로, 지능적 시스템의 정의적 특성입니다. 현대 모델은 방대한 데이터셋으로 훈련되지만 가능한 입력의 조합 공간의 소수만을 포함하여 이는 보편화를 지원하기 위해 표현이 가져야 하는 구조적 특성에 대한 의문을 제기합니다. 우리는 조합적 일반화에 대한 세 가지 원칙을 공식화하고 (분할성, 이전성, 안정성), 일반적 훈련에서 이러한 원칙이 필요로 하는 기하학적 제약을 보여줍니다: 표현은 개념별 구성 요소로 선형적으로 분해돼야 하며, 이러한 요소들은 개념 간에 직교해야 합니다. 이는 선형 표현 가설에 대한 이론적 근거를 제공합니다: 신경 표현에서 보편적으로 관찰되는 선형 구조는 조합적 일반화의 필수적 결과입니다. 더 나아가, 우리는 함께 결합 가능한 개념 수와 임베딩 지오메트리를 연결하는 차원 제한을 유도합니다. 경험적으로, 우리는 현대 시각 모델 (CLIP, SigLIP, DINO)에서 이러한 예측들을 평가하고 표현이 저차원, 거의 직교인 개념별 요소로 부분적 선형 분해를 보이며, 이러한 구조의 정도가 새로운 조합에 대한 조합적 일반화와 상관관계가 있음을 발견합니다. 모델이 계속 확장됨에 따라 이러한 조건들이 수렴할 표현 지오메트리를 예측합니다. 코드는 https://github.com/oshapio/necessary-compositionality에서 제공됩니다."
+    },
+    "summary": "1. 조합적 일반화에 필요한 조건으로 선형 및 직교적 표현이 중요합니다.\n2. 선형 표현 가설에 따르면 신경 표현의 선형 구조는 조합적 일반화의 필수적 결과입니다.\n3. 현대 시각 모델에서는 개념별 저차원, 거의 직교인 표현이 조합적 일반화와 관련이 있음을 발견했습니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "InfoNCE Induces Gaussian Distribution",
+    "abstract": "Contrastive learning has become a cornerstone of modern representation learning, allowing training with massive unlabeled data for both task-specific and general (foundation) models. A prototypical loss in contrastive training is InfoNCE and its variants. In this work, we show that the InfoNCE objective induces Gaussian structure in representations that emerge from contrastive training. We establish this result in two complementary regimes. First, we show that under certain alignment and concentration assumptions, projections of the high-dimensional representation asymptotically approach a multivariate Gaussian distribution. Next, under less strict assumptions, we show that adding a small asymptotically vanishing regularization term that promotes low feature norm and high feature entropy leads to similar asymptotic results. We support our analysis with experiments on synthetic and CIFAR-10 datasets across multiple encoder architectures and sizes, demonstrating consistent Gaussian behavior. This perspective provides a principled explanation for commonly observed Gaussianity in contrastive representations. The resulting Gaussian model enables principled analytical treatment of learned representations and is expected to support a wide range of applications in contrastive learning.",
+    "authors": [
+      "Roy Betser",
+      "Eyal Gofer",
+      "Meir Yossef Levi",
+      "Guy Gilboa"
+    ],
+    "likes": 9,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24012",
+    "date_collected": "2026-03-03T07:12:32.042216+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "InfoNCE는 가우시안 분포를 유도합니다",
+      "abstract": "대조적 학습은 현대 표현 학습의 기본 요소가 되었으며, 과제별 및 일반적 (기반) 모델에 대한 대규모 레이블되지 않은 데이터의 학습을 가능하게 합니다. 대조 학습의 대표적인 손실 함수는 InfoNCE와 그 변형들입니다. 본 연구에서 우리는 InfoNCE 목표가 대조적 학습에서 나타나는 표현에 가우시안 구조를 유도한다는 것을 보여줍니다. 우리는 이 결과를 두 가지 보완적인 지표에서 입증합니다. 첫째, 특정 정렬 및 집중 가정 하에 높은 차원의 표현의 투영이 다변량 가우시안 분포에 점근적으로 수렴함을 보여줍니다. 그 다음, 덜 엄격한 가정 하에, 저 특성 벡터 크기와 높은 특성 엔트로피를 촉진하는 작은 점근적 소멸 정규화 용어를 추가하면 유사한 점근적 결과를 얻게 됩니다. CIFAR-10 데이터셋에서 합성 및 실험을 통해 이 분석을 뒷받침하며, 여러 인코더 구조 및 크기에 걸쳐 일관된 가우시안 행동을 보여줍니다. 이 관점은 대조적 표현에서 자주 관측되는 가우스성에 대한 원칙적인 설명을 제공합니다. 얻어지는 가우시안 모델은 학습된 표현의 원칙적인 해석을 가능하게 하며, 대조적 학습의 다양한 응용을 지원할 것으로 기대됩니다."
+    },
+    "summary": "1. InfoNCE 목표는 대조적 학습에서 가우시안 구조를 유도합니다.\n2. 고차원 표현의 투영은 다변량 가우시안 분포에 수렴합니다.\n3. 작은 정규화 용어를 추가하면 낮은 특성 벡터 크기와 높은 특성 엔트로피를 촉진하여 유사한 가우시안 결과를 얻습니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Accelerating Masked Image Generation by Learning Latent Controlled Dynamics",
+    "abstract": "Masked Image Generation Models (MIGMs) have achieved great success, yet their efficiency is hampered by the multiple steps of bi-directional attention. In fact, there exists notable redundancy in their computation: when sampling discrete tokens, the rich semantics contained in the continuous features are lost. Some existing works attempt to cache the features to approximate future features. However, they exhibit considerable approximation error under aggressive acceleration rates. We attribute this to their limited expressivity and the failure to account for sampling information. To fill this gap, we propose to learn a lightweight model that incorporates both previous features and sampled tokens, and regresses the average velocity field of feature evolution. The model has moderate complexity that suffices to capture the subtle dynamics while keeping lightweight compared to the original base model. We apply our method, MIGM-Shortcut, to two representative MIGM architectures and tasks. In particular, on the state-of-the-art Lumina-DiMOO, it achieves over 4x acceleration of text-to-image generation while maintaining quality, significantly pushing the Pareto frontier of masked image generation. The code and model weights are available at https://github.com/Kaiwen-Zhu/MIGM-Shortcut.",
+    "authors": [
+      "Kaiwen Zhu",
+      "Quansheng Zeng",
+      "Yuandong Pu",
+      "Shuo Cao",
+      "Xiaohui Li",
+      "Yi Xin",
+      "Qi Qin",
+      "Jiayang Li",
+      "Yu Qiao",
+      "Jinjin Gu",
+      "Yihao Liu"
+    ],
+    "likes": 8,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.23996",
+    "date_collected": "2026-03-03T07:12:32.043629+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "숨겨진 이미지 생성의 속도 향상을 위한 잠재 제어 동적 학습",
+      "abstract": "숨겨진 이미지 생성 모델(Masked Image Generation Models, MIGMs)은 큰 성공을 거두었지만, 그 효율성은 양방향 주의력의 여러 단계로 인해 제약을 받고 있습니다. 실제로, 이러한 계산에서 현저한 중복이 존재합니다: 이산 토큰을 샘플링할 때 연속적인 특징에 있는 풍부한 의미가 손실됩니다. 기존 작업 중 일부는 피쳐를 캐시하여 미래 피쳐를 근사하려고 시도합니다. 그러나 이들은 공격적인 가속 속도 하에서 상당한 근사 오차를 나타냅니다. 우리는 이것을 그들의 제한된 표현과 샘플링 정보를 고려하지 못한 실패로 귀속합니다. 이 간극을 메우기 위해, 우리는 이전 피쳐와 샘플링된 토큰을 모두 통합하고 피쳐 진화의 평균 속도장을 회귀하는 가벼운 모델을 학습하는 것을 제안합니다. 이 모델은 가볍고 원래의 기본 모델에 비해 가벼운 복잡성을 가지며 섬세한 동적을 포착하는 데 충분합니다. 우리는 우리의 방법, MIGM-Shortcut을 두 가지 대표적인 MIGM 아키텍처와 작업에 적용했습니다. 특히, 최신 Lumina-DiMOO에서 텍스트에서 이미지 생성의 4배 이상의 가속을 달성하면서 품질을 유지하여 숨겨진 이미지 생성의 Pareto 경계를 중요하게 앞당기고 있습니다. 코드와 모델 가중치는 https://github.com/Kaiwen-Zhu/MIGM-Shortcut에서 제공됩니다."
+    },
+    "summary": "1. 기존 모델의 한계를 극복하기 위해 이전 피쳐와 샘플링된 토큰을 고려하여 평균 속도장 회귀를 수행하는 가벼운 모델인 MIGM-Shortcut을 제안합니다.\n2. MIGM-Shortcut은 텍스트에서 이미지 생성의 가속을 4배 이상 달성하면서 품질을 유지하여, 숨겨진 이미지 생성의 Pareto 경계를 중요하게 개선합니다.\n3. 연구는 상당한 근사 오차를 일으키는 기존 방법의 한계를 극복하고, 가볍고 섬세한 동적을 포착하는 모델의 중요성을 제시합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Mar 23 22:13:56 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W13
+URL: https://huggingface.co/papers/week/2026-W13
+Found 10 papers in weekly view
+Fetching likes for: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Fetching likes for: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Fetching likes for: TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation
+Fetching likes for: ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models
+Fetching likes for: FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow
+Fetching likes for: LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation
+Fetching likes for: The Y-Combinator for LLMs: Solving Long-Context Rot with λ-Calculus
+Fetching likes for: Hyperagents
+Fetching likes for: Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck
+Fetching likes for: A Subgoal-driven Framework for Improving Long-Horizon LLM Agents
+Selected top 10 papers by likes:
+1. HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning (94 likes)
+2. Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models (83 likes)
+3. TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation (42 likes)
+4. ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models (25 likes)
+5. FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow (24 likes)
+6. LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation (21 likes)
+7. The Y-Combinator for LLMs: Solving Long-Context Rot with λ-Calculus (21 likes)
+8. Hyperagents (15 likes)
+9. Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck (13 likes)
+10. A Subgoal-driven Framework for Improving Long-Horizon LLM Agents (12 likes)
+Found abstract: VLMs show strong multimodal capabilities, but they still struggle with fine-grained vision-language ...
+Processed paper: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Found abstract: Distilled autoregressive (AR) video models enable efficient streaming generation but frequently misa...
+Processed paper: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Found abstract: Vision-language models (VLMs) have shown promise in earth observation (EO), yet they struggle with t...
+Processed paper: TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation
+Found abstract: Effective collaboration begins with knowing when to ask for help. For example, when trying to identi...
+Processed paper: ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models
+Found abstract: Scene generation has extensive industrial applications, demanding both high realism and precise cont...
+Processed paper: FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow
+Found abstract: Recent advances in diffusion models have significantly improved text-to-video generation, enabling p...
+Processed paper: LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation
+Found abstract: LLMs are increasingly used as general-purpose reasoners, but long inputs remain bottlenecked by a fi...
+Processed paper: The Y-Combinator for LLMs: Solving Long-Context Rot with λ-Calculus
+Found abstract: Self-improving AI systems aim to reduce reliance on human engineering by learning to improve their o...
+Processed paper: Hyperagents
+Found abstract: Chain-of-Thought (CoT) prompting improves LLM accuracy on complex tasks but often increases token us...
+Processed paper: Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck
+Found abstract: Large language model (LLM)-based agents have emerged as powerful autonomous controllers for digital ...
+Processed paper: A Subgoal-driven Framework for Improving Long-Horizon LLM Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: The Y-Combinator for LLMs: Solving Long-Context Rot with λ-Calculus
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Hyperagents
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: A Subgoal-driven Framework for Improving Long-Horizon LLM Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W13.json...
+
+Updating Notion database...
+Creating new paper: HopChain: 일반화 가능한 비전-언어 추론을 위한 다중 점프 데이터 합성
+Creating new paper: 아스트롤라브: 정제된 자기회귀 비디오 모델을 위한 전진 과정 강화학습
+Creating new paper: TerraScope: 지구 관측을 위한 픽셀 기반 시각적 추론
+Creating new paper: ProactiveBench: 다중모달 대형언어모델의 선행적 행동 평가 벤치마크
+Creating new paper: 플로우신: 다중 모달 그래프 정리 흐름으로 일관된 실내 장면 생성
+Creating new paper: LumosX: 사람들의 특성과 관련된 모든 신원을 연결하여 맞춤형 비디오 생성
+Creating new paper: LLM을 위한 Y-Combinator: λ-계산법으로 장문맥 회전 문제 해결하기
+Creating new paper: 하이퍼에이전트
+Creating new paper: 추론을 압축으로 바라보기: 조건부 정보 병목을 통한 예산 강제화 통합
+Creating new paper: 장기 시계획 LLM 에이전트 개선을 위한 하위목표 주도형 프레임워크
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Mar 23 22:16:30 UTC 2026 ===
+

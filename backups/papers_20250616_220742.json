@@ -1,0 +1,213 @@
+[
+  {
+    "title": "Aligned Novel View Image and Geometry Synthesis via Cross-modal\n  Attention Instillation",
+    "abstract": "We introduce a diffusion-based framework that performs aligned novel view\nimage and geometry generation via a warping-and-inpainting methodology. Unlike\nprior methods that require dense posed images or pose-embedded generative\nmodels limited to in-domain views, our method leverages off-the-shelf geometry\npredictors to predict partial geometries viewed from reference images, and\nformulates novel-view synthesis as an inpainting task for both image and\ngeometry. To ensure accurate alignment between generated images and geometry,\nwe propose cross-modal attention distillation, where attention maps from the\nimage diffusion branch are injected into a parallel geometry diffusion branch\nduring both training and inference. This multi-task approach achieves\nsynergistic effects, facilitating geometrically robust image synthesis as well\nas well-defined geometry prediction. We further introduce proximity-based mesh\nconditioning to integrate depth and normal cues, interpolating between point\ncloud and filtering erroneously predicted geometry from influencing the\ngeneration process. Empirically, our method achieves high-fidelity\nextrapolative view synthesis on both image and geometry across a range of\nunseen scenes, delivers competitive reconstruction quality under interpolation\nsettings, and produces geometrically aligned colored point clouds for\ncomprehensive 3D completion. Project page is available at\nhttps://cvlab-kaist.github.io/MoAI.",
+    "authors": [
+      "Min-Seop Kwak",
+      "Junho Kim",
+      "Sangdoo Yun",
+      "Dongyoon Han",
+      "Taekyoung Kim",
+      "Seungryong Kim",
+      "Jin-Hwa Kim"
+    ],
+    "likes": 21,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11924",
+    "date_collected": "2025-06-16T07:59:43.341087",
+    "week": "2025-W25",
+    "translation": {
+      "title": "교차 모달 주의 주입을 통한 정렬된 신규 뷰 이미지 및 기하학 합성",
+      "abstract": "우리는 왜곡 및 보충 방법론을 통해 정렬된 신규 뷰 이미지 및 기하학 생성을 수행하는 확산 기반 프레임워크를 소개합니다. 기존 방법과 달리 밀도 있는 포즈 이미지나 도메인 내 뷰에 한정된 포즈 임베디드 생성 모델이 필요한 대신, 우리의 방법은 오프더셀프 기하학 예측기를 활용하여 참조 이미지에서 본 부분 기하학을 예측하고 이미지와 기하학 모두를 보충 작업으로 새로운 뷰 합성을 공식화합니다. 생성된 이미지 및 기하학 간 정확한 정렬을 보장하기 위해 우리는 교차 모달 주의 주입을 제안합니다. 여기서 이미지 확산 분기의 주의 맵이 훈련 및 추론 중에 병렬 기하확산 분기로 주입됩니다. 이 다중 작업 접근 방식은 기하적으로 견고한 이미지 합성과 명확하게 정의된 기하학 예측을 가능하게 하며, 깊이 및 법선 정보를 통합한 근접 기반의 메쉬 조건부를 소개합니다."
+    },
+    "summary": "1. 새로운 뷰 이미지 및 기하학을 생성하기 위해 왜곡 및 보충 방법론을 사용하는 확산 기반 프레임워크를 도입하였다.\n2. 교차 모달 주의 주입을 통해 이미지와 기하학 간 정렬을 보장하며, 다중 작업 접근 방식을 사용하여 기하적으로 견고한 이미지 합성과 명확하게 정의된 기하학 예측을 달성하였다.\n3. 경험적으로, 우리의 방법은 다양한 보지에서 높은 충실도의 추론적 뷰 합성을 이끌어내고, 보간 설정에서 경쟁력 있는 재구성 품질을 제공하며, 3D 완성을 위해 기하학적으로 정렬된 컬러 포인트 클라우드를 생성한다."
+  },
+  {
+    "title": "Effective Red-Teaming of Policy-Adherent Agents",
+    "abstract": "Task-oriented LLM-based agents are increasingly used in domains with strict\npolicies, such as refund eligibility or cancellation rules. The challenge lies\nin ensuring that the agent consistently adheres to these rules and policies,\nappropriately refusing any request that would violate them, while still\nmaintaining a helpful and natural interaction. This calls for the development\nof tailored design and evaluation methodologies to ensure agent resilience\nagainst malicious user behavior. We propose a novel threat model that focuses\non adversarial users aiming to exploit policy-adherent agents for personal\nbenefit. To address this, we present CRAFT, a multi-agent red-teaming system\nthat leverages policy-aware persuasive strategies to undermine a\npolicy-adherent agent in a customer-service scenario, outperforming\nconventional jailbreak methods such as DAN prompts, emotional manipulation, and\ncoercive. Building upon the existing tau-bench benchmark, we introduce\ntau-break, a complementary benchmark designed to rigorously assess the agent's\nrobustness against manipulative user behavior. Finally, we evaluate several\nstraightforward yet effective defense strategies. While these measures provide\nsome protection, they fall short, highlighting the need for stronger,\nresearch-driven safeguards to protect policy-adherent agents from adversarial\nattacks",
+    "authors": [
+      "Itay Nakash",
+      "George Kour",
+      "Koren Lazar",
+      "Matan Vetzler",
+      "Guy Uziel",
+      "Ateret Anaby-Tavor"
+    ],
+    "likes": 7,
+    "published_date": "Jun 11",
+    "url": "https://huggingface.co/papers/2506.09600",
+    "date_collected": "2025-06-16T07:59:43.342297",
+    "week": "2025-W25",
+    "translation": {
+      "title": "정책 따르는 에이전트들의 효과적인 레드팀 구성",
+      "abstract": "엄격한 정책이 적용되는 환불 자격 또는 취소 규칙과 같은 도메인에서 과업 중심의 LLM 기반 에이전트들이 점점 더 많이 사용되고 있습니다. 도전 과제는 이러한 규칙과 정책을 일관되게 준수하고, 그러한 정책을 위반할 요청을 거부하면서도 도움이 되고 자연스러운 상호작용을 유지하는 것에 있습니다. 이는 악의적 사용자 행위에 대비하여 에이전트의 탄력성을 보장하기 위해 맞춤형 설계 및 평가 방법론의 개발을 요구합니다. 우리는 정책 따르는 에이전트를 개인적 이익을 위해 악용하려는 적대적 사용자에 초점을 맞춘 새로운 위협 모델을 제안합니다. 이에 대응하여 우리는 고객 서비스 시나리오에서 정책을 인식하는 설득 전략을 활용하는 CRAFT를 제시합니다. 이는 DAN 프롬프트, 감정 조작 및 강제력과 같은 전통적인 탈옥 방법을 능가합니다. 기존 tau-bench 벤치마크를 기반으로 하여, 조작적 사용자 행위에 대한 에이전트의 견고성을 철저하게 평가하기 위하여 tau-break라는 보완적인 벤치마크를 소개합니다. 마지막으로, 여러 간단하면서도 효과적인 방어 전략을 평가합니다. 이러한 조치들은 일부 보호를 제공하지만 부족하며, 정책 따르는 에이전트를 적대적 공격으로부터 보호하기 위해 더 강력한 연구 기반 보안장치의 필요성을 강조합니다."
+    },
+    "summary": "1. 정책을 준수하고 도움적인 상호작용을 유지하는 과제에 효과적으로 대처하기 위한 CRAFT 제안\n2. 악의적 사용자들이 정책 따르는 에이전트를 악용하는 위협 모델 도입\n3. Manipulative 사용자 행위에 대한 에이전트의 견고성을 평가하기 위한 tau-break 벤치마크 도입 및 강력한 방어 전략 필요성 강조"
+  },
+  {
+    "title": "The Diffusion Duality",
+    "abstract": "Uniform-state discrete diffusion models hold the promise of fast text\ngeneration due to their inherent ability to self-correct. However, they are\ntypically outperformed by autoregressive models and masked diffusion models. In\nthis work, we narrow this performance gap by leveraging a key insight:\nUniform-state diffusion processes naturally emerge from an underlying Gaussian\ndiffusion. Our method, Duo, transfers powerful techniques from Gaussian\ndiffusion to improve both training and sampling. First, we introduce a\ncurriculum learning strategy guided by the Gaussian process, doubling training\nspeed by reducing variance. Models trained with curriculum learning surpass\nautoregressive models in zero-shot perplexity on 3 of 7 benchmarks. Second, we\npresent Discrete Consistency Distillation, which adapts consistency\ndistillation from the continuous to the discrete setting. This algorithm\nunlocks few-step generation in diffusion language models by accelerating\nsampling by two orders of magnitude. We provide the code and model checkpoints\non the project page: http://s-sahoo.github.io/duo",
+    "authors": [
+      "Subham Sekhar Sahoo",
+      "Justin Deschenaux",
+      "Aaron Gokaslan",
+      "Guanghan Wang",
+      "Justin Chiu",
+      "Volodymyr Kuleshov"
+    ],
+    "likes": 5,
+    "published_date": "Jun 12",
+    "url": "https://huggingface.co/papers/2506.10892",
+    "date_collected": "2025-06-16T07:59:43.343464",
+    "week": "2025-W25",
+    "translation": {
+      "title": "확산 이중성",
+      "abstract": "균일 상태 이산 확산 모델은 자가 수정 능력으로 빠른 텍스트 생성을 약속하지만, 자동 회귀 모델과 가려진(diffusion) 모델에 밀려 성능면에서 획일하다. 본 연구에서는 핵심 통찰을 활용하여 이러한 성능 차이를 줄입니다. 균일 상태 확산 과정은 근본적으로 기저 가우시안 확산에서 자연스럽게 나타났습니다. 우리의 방법인 Duo는 가우시안 확산에서 강력한 기술을 전이하여 훈련 및 샘플링을 모두 개선했습니다. 먼저, 가우시안 프로세스에 따라 지도된 커리큘럼 학습 전략을 소개하여 분산을 줄여 훈련 속도를 두 배로 높였습니다. 이 방법으로 훈련된 모델은 7개 벤치마크 중 3개에서 영제로 퍼플렉서티(perplexity)에서 자동 회귀 모델을 능가했습니다. 그리고 둘째로, 우리는 이산적인 일관성 증류를 제시하여 연속적에서 이산적으로 일관성 증류를 적용했습니다. 이 알고리즘은 샘플링을 두 단계 가속화시켜 확산 언어 모델에서 소수 단계 생성을 해금했습니다. 프로젝트 페이지에서 코드 및 모델 체크포인트를 제공합니다: http://s-sahoo.github.io/duo"
+    },
+    "summary": "1. 커리큘럼 학습 전략을 활용하여 훈련 속도를 높임으로써 자동 회귀 모델을 퍼플렉서티에서 능가했습니다.\n2. 이산적인 일관성 증류를 통해 확산 언어 모델에서 소수 단계 생성을 가능하게 하여 샘플링 속도를 상당히 향상시켰습니다.\n3. 가우시안 확산 기술을 활용하여 모델의 훈련 및 샘플링을 개선하여 성능 차이를 줄였습니다."
+  },
+  {
+    "title": "LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive\n  Programming?",
+    "abstract": "Recent reports claim that large language models (LLMs) now outperform elite\nhumans in competitive programming. Drawing on knowledge from a group of\nmedalists in international algorithmic contests, we revisit this claim,\nexamining how LLMs differ from human experts and where limitations still\nremain. We introduce LiveCodeBench Pro, a benchmark composed of problems from\nCodeforces, ICPC, and IOI that are continuously updated to reduce the\nlikelihood of data contamination. A team of Olympiad medalists annotates every\nproblem for algorithmic categories and conducts a line-by-line analysis of\nfailed model-generated submissions. Using this new data and benchmark, we find\nthat frontier models still have significant limitations: without external\ntools, the best model achieves only 53% pass@1 on medium-difficulty problems\nand 0% on hard problems, domains where expert humans still excel. We also find\nthat LLMs succeed at implementation-heavy problems but struggle with nuanced\nalgorithmic reasoning and complex case analysis, often generating confidently\nincorrect justifications. High performance appears largely driven by\nimplementation precision and tool augmentation, not superior reasoning.\nLiveCodeBench Pro thus highlights the significant gap to human grandmaster\nlevels, while offering fine-grained diagnostics to steer future improvements in\ncode-centric LLM reasoning.",
+    "authors": [
+      "Zihan Zheng",
+      "Zerui Cheng",
+      "Zeyu Shen",
+      "Shang Zhou",
+      "Kaiyuan Liu",
+      "Hansen He",
+      "Dongruixuan Li",
+      "Stanley Wei",
+      "Hangyi Hao",
+      "Jianzhu Yao",
+      "Peiyao Sheng",
+      "Zixuan Wang",
+      "Wenhao Chai",
+      "Aleksandra Korolova",
+      "Peter Henderson",
+      "Sanjeev Arora",
+      "Pramod Viswanath",
+      "Jingbo Shang",
+      "Saining Xie"
+    ],
+    "likes": 3,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11928",
+    "date_collected": "2025-06-16T07:59:43.345184",
+    "week": "2025-W25",
+    "translation": {
+      "title": "LiveCodeBench Pro: 올림피아드 메달리스트들은 경쟁 프로그래밍에서 LLMs를 어떻게 판단하는가?",
+      "abstract": "최근 보고서에 따르면 대형 언어 모델(Large Language Models, LLMs)이 현재 경쟁 프로그래밍에서 정상급 인간을 제치고 있다고 주장됩니다. 국제 알고리즘 대회 메달리스트 그룹의 지식을 바탕으로, 우리는 LLMs가 어떻게 인간 전문가들과 다르며 어디에서 제한이 여전히 존재하는지를 재검토합니다. 우리는 Codeforces, ICPC, IOI의 문제로 구성된 LiveCodeBench Pro를 소개합니다. 데이터 오염 가능성을 줄이기 위해 지속적으로 업데이트되는 이 벤치마크에서 올림피아드 메달리스트 팀이 알고리즘 범주에 대해 각 문제를 주석을 달고, 실패한 모델 생성 제출물의 행별 분석을 실시합니다. 이 새로운 데이터와 벤치마크를 사용하여, 우리는 현재의 최첨단 모델이 중간 난이도 문제에서만 53%의 pass@1을 달성하고 어려운 문제에서는 0%에 그친다는 것을 알게 됩니다. 이는 전문가 인간이 여전히 뛰어난 영역입니다. 또한 LLMs가 구현 중심 문제에서 성공하는 반면, 세심한 알고리즘적 추론과 복잡한 사례 분석에 어려움을 겪는 것을 발견하며, 종종 자신있게 잘못된 근거를 제시합니다. 높은 성능은 주로 구현 정밀도와 도구 보강에 의해 이루어지며, 우수한 추론이 아닙니다. LiveCodeBench Pro는 인간 그랜드마스터 수준까지의 상당한 간극을 강조하면서, 코드 중심 LLM 추론의 미래 개선을 이끌어내는 정밀한 진단을 제시합니다."
+    },
+    "summary": "1. 최신 보고서에 따르면 대형 언어 모델인 LLMs가 경쟁 프로그래밍에서 인간을 능가하고 있지만, 올림피아드 메달리스트들의 연구를 통해 그것이 어떻게 인간 전문가들과 다른지, 아직도 존재하는 한계는 어디에 있는지 재조명하고 있다.\n2. LiveCodeBench Pro는 Codeforces, ICPC, IOI의 문제로 구성된 벤치마크로, 올림피아드 메달리스트들이 알고리즘 범주를 주석 달고 모델 생성 제출물의 행별 분석을 실시하며, 최첨단 모델이 왜 여전히 한계를 가지고 있는지 밝혀냈다.\n3. LLMs는 구현이 많이 필요한 문제에서 성공하지만, 세밀한 알고리즘적 이유와 복잡한 케이스 분석에 어려움을 겪고 있으며, 높은 성능은 주로 구현 정밀도와 도구 보강에 의해 이루어지고 있음을 발견했다."
+  },
+  {
+    "title": "A High-Quality Dataset and Reliable Evaluation for Interleaved\n  Image-Text Generation",
+    "abstract": "Recent advancements in Large Multimodal Models (LMMs) have significantly\nimproved multimodal understanding and generation. However, these models still\nstruggle to generate tightly interleaved image-text outputs, primarily due to\nthe limited scale, quality and instructional richness of current training\ndatasets. To address this, we introduce InterSyn, a large-scale multimodal\ndataset constructed using our Self-Evaluation with Iterative Refinement (SEIR)\nmethod. InterSyn features multi-turn, instruction-driven dialogues with tightly\ninterleaved imagetext responses, providing rich object diversity and rigorous\nautomated quality refinement, making it well-suited for training\nnext-generation instruction-following LMMs. Furthermore, to address the lack of\nreliable evaluation tools capable of assessing interleaved multimodal outputs,\nwe introduce SynJudge, an automatic evaluation model designed to quantitatively\nassess multimodal outputs along four dimensions: text content, image content,\nimage quality, and image-text synergy.\n  Experimental studies show that the SEIR method leads to substantially higher\ndataset quality compared to an otherwise identical process without refinement.\n  Moreover, LMMs trained on InterSyn achieve uniform performance gains across\nall evaluation metrics, confirming InterSyn's utility for advancing multimodal\nsystems.",
+    "authors": [
+      "Yukang Feng",
+      "Jianwen Sun",
+      "Chuanhao Li",
+      "Zizhen Li",
+      "Jiaxin Ai",
+      "Fanrui Zhang",
+      "Yifan Chang",
+      "Sizhuo Zhou",
+      "Shenglin Zhang",
+      "Yu Dai",
+      "Kaipeng Zhang"
+    ],
+    "likes": 3,
+    "published_date": "Jun 11",
+    "url": "https://huggingface.co/papers/2506.09427",
+    "date_collected": "2025-06-16T07:59:43.346549",
+    "week": "2025-W25",
+    "translation": {
+      "title": "고품질 데이터셋과 신뢰성 있는 평가를 위한 교차 이미지-텍스트 생성",
+      "abstract": "최근 대규모 다중모달 모델(LMMs)의 발전은 이미지와 텍스트의 이해와 생성을 현저히 향상시켰다. 그러나 이러한 모델들은 여전히 제한된 규모, 품질 및 교육적 풍부함으로 인해 이미지와 텍스트가 견고하게 교차되는 출력물을 생성하는 데 어려움을 겪고 있다. 이를 해결하기 위해 우리는 자가-평가와 반복적 개선(SEIR) 방법을 사용하여 구축된 대규모 다중모달 데이터셋인 InterSyn을 소개한다. InterSyn은 다중 회전, 지시에 따른 대화를 특징으로 하는 이미지와 텍스트가 견고하게 교차되는 응답을 제공하여 풍부한 객체 다양성과 엄격한 자동화된 품질 개선을 제공하며, 다음 세대의 지시 따르기 LMMs를 훈련하기에 적합하다. 또한, 교차되는 다중모달 출력물을 정량적으로 평가할 수 있는 신뢰할 만한 평가 도구의 부족을 해결하기 위해 우리는 텍스트 내용, 이미지 내용, 이미지 품질 및 이미지-텍스트 시너지 네 가지 차원에서 다중모달 출력물을 양적으로 평가하기 위해 설계된 자동 평가 모델인 SynJudge를 소개한다."
+    },
+    "summary": "1. InterSyn은 SEIR 방법을 통해 구축된 대규모 다중모달 데이터셋으로, 이미지와 텍스트가 견고하게 교차되는 대화를 제공하여 다음 세대의 LMMs 훈련에 적합하다.\n2. SynJudge는 텍스트 내용, 이미지 내용, 이미지 품질, 이미지-텍스트 시너지 네 가지 차원에서 다중모달 출력물을 양적으로 평가하기 위한 자동 평가 모델로, InterSyn의 신뢰성 있는 평가를 가능하게 한다.\n3. 실험 연구 결과는 SEIR 방법을 통해 InterSyn에서 훈련된 LMMs가 모든 평가 메트릭에서 균일한 성능 향상을 보여 다중모달 시스템의 발전에 기여함을 입증한다."
+  },
+  {
+    "title": "SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation\n  via Skill Blending",
+    "abstract": "Humanoid robots hold significant potential in accomplishing daily tasks\nacross diverse environments thanks to their flexibility and human-like\nmorphology. Recent works have made significant progress in humanoid whole-body\ncontrol and loco-manipulation leveraging optimal control or reinforcement\nlearning. However, these methods require tedious task-specific tuning for each\ntask to achieve satisfactory behaviors, limiting their versatility and\nscalability to diverse tasks in daily scenarios. To that end, we introduce\nSkillBlender, a novel hierarchical reinforcement learning framework for\nversatile humanoid loco-manipulation. SkillBlender first pretrains\ngoal-conditioned task-agnostic primitive skills, and then dynamically blends\nthese skills to accomplish complex loco-manipulation tasks with minimal\ntask-specific reward engineering. We also introduce SkillBench, a parallel,\ncross-embodiment, and diverse simulated benchmark containing three embodiments,\nfour primitive skills, and eight challenging loco-manipulation tasks,\naccompanied by a set of scientific evaluation metrics balancing accuracy and\nfeasibility. Extensive simulated experiments show that our method significantly\noutperforms all baselines, while naturally regularizing behaviors to avoid\nreward hacking, resulting in more accurate and feasible movements for diverse\nloco-manipulation tasks in our daily scenarios. Our code and benchmark will be\nopen-sourced to the community to facilitate future research. Project page:\nhttps://usc-gvl.github.io/SkillBlender-web/.",
+    "authors": [
+      "Yuxuan Kuang",
+      "Haoran Geng",
+      "Amine Elhafsi",
+      "Tan-Dzung Do",
+      "Pieter Abbeel",
+      "Jitendra Malik",
+      "Marco Pavone",
+      "Yue Wang"
+    ],
+    "likes": 2,
+    "published_date": "Jun 11",
+    "url": "https://huggingface.co/papers/2506.09366",
+    "date_collected": "2025-06-16T07:59:43.347780",
+    "week": "2025-W25",
+    "translation": {
+      "title": "유연한 인간형 로봇의 완전히 몸 전체를 활용한 동작-조작을 위한 SkillBlender",
+      "abstract": "유연성과 인간과 유사한 형태학으로, 인간형 로봇은 다양한 환경에서 일상적인 작업을 수행하는 데 상당한 잠재력을 지니고 있다. 최근 연구들은 최적 제어나 강화 학습을 활용하여 인간형 로봇의 전신 제어와 동시 조작에 상당한 진전을 이뤘다. 그러나 이러한 방법은 각 작업마다 세심한 작업별 튜닝이 필요하여, 다양한 상황에서의 다양한 작업에 대한 유연성과 확장 가능성이 제한된다. 이에 우리는 이러한 한계를 극복하기 위해 SkillBlender를 소개한다. 이는 다양한 인간형 로봇의 동작-조작을 위한 새로운 계층적 강화 학습 프레임워크이다. SkillBlender는 먼저 목적 조건부 작업에 중립적인 원시 기술을 사전 훈련하고, 이후 이러한 기술을 동적으로 혼합하여 복잡한 동작-조작 작업을 최소한의 작업별 보상 엔지니어링으로 성취한다."
+    },
+    "summary": "1. SkillBlender는 인간형 로봇의 다양한 동작-조작을 위해 강화 학습을 활용하며, 복잡한 작업을 최소한의 작업별 보상으로 성취하는 계층적 프레임워크이다.\n2. SkillBlender는 강화 학습을 통해 사전 훈련된 기본 기술을 동적으로 혼합하여 다양한 작업을 수행하며, 기존 방법을 획기적으로 능가하며 보상 해킹을 회피하는 행동을 정규화한다.\n3. SkillBlender는 과학적 평가 지표를 포함한 병렬, 다양한 시뮬레이션 벤치마크인 SkillBench를 제시하여, 다양한 인간형 로봇 작업에 대한 정확성과 실현 가능성을 균형 있게 고려한다."
+  },
+  {
+    "title": "Detecting Harmful Memes with Decoupled Understanding and Guided CoT\n  Reasoning",
+    "abstract": "Detecting harmful memes is essential for maintaining the integrity of online\nenvironments. However, current approaches often struggle with resource\nefficiency, flexibility, or explainability, limiting their practical deployment\nin content moderation systems. To address these challenges, we introduce\nU-CoT+, a novel framework for harmful meme detection. Instead of relying solely\non prompting or fine-tuning multimodal models, we first develop a high-fidelity\nmeme-to-text pipeline that converts visual memes into detail-preserving textual\ndescriptions. This design decouples meme interpretation from meme\nclassification, thus avoiding immediate reasoning over complex raw visual\ncontent and enabling resource-efficient harmful meme detection with general\nlarge language models (LLMs). Building on these textual descriptions, we\nfurther incorporate targeted, interpretable human-crafted guidelines to guide\nmodels' reasoning under zero-shot CoT prompting. As such, this framework allows\nfor easy adaptation to different harmfulness detection criteria across\nplatforms, regions, and over time, offering high flexibility and\nexplainability. Extensive experiments on seven benchmark datasets validate the\neffectiveness of our framework, highlighting its potential for explainable and\nlow-resource harmful meme detection using small-scale LLMs. Codes and data are\navailable at: https://anonymous.4open.science/r/HMC-AF2B/README.md.",
+    "authors": [
+      "Fengjun Pan",
+      "Anh Tuan Luu",
+      "Xiaobao Wu"
+    ],
+    "likes": 2,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2506.08477",
+    "date_collected": "2025-06-16T07:59:43.348798",
+    "week": "2025-W25",
+    "translation": {
+      "title": "해로운 미미 탐지를 위한 이해와 안내된 CoT 추론의 분리",
+      "abstract": "해로운 미미를 탐지하는 것은 온라인 환경의 진정성을 유지하는 데 중요합니다. 그러나 현재의 방법은 자원 효율성, 융통성 또는 설명 가능성에서 종종 어려움을 겪어 콘텐츠 모니터링 시스템에 실제로 적용되는 것을 제한합니다. 이러한 도전에 대처하기 위해 우리는 해로운 미미 탐지를 위한 혁신적인 U-CoT+ 프레임워크를 소개합니다. 이 프레임워크는 시각적 미미를 자세한 텍스트 설명으로 변환하는 고정도의 미미-텍스트 파이프라인을 먼저 개발하여 시각적 콘텐츠로부터의 즉각적인 추론을 피하고 자원 효율적인 해로운 미미 탐지를 가능하게 하여 일반적인 큰 언어 모델(LLMs)을 활용합니다. 이 텍스트 설명을 기반으로 우리는 제로샷 CoT 안내 아래 모델의 추론을 이끌어내는 표적화된 해석 가능한 인간이 작성한 지침을 추가로 통합합니다. 이러한 프레임워크는 다양한 플랫폼, 지역 및 시간에 걸쳐 다양한 해로움 감지 기준에 쉽게 적응할 수 있어 높은 융통성과 설명 가능성을 제공합니다. 일곱 개의 벤치마크 데이터셋에 대한 광범위한 실험은 우리의 프레임워크의 효과를 검증하며, 소규모 LLMs를 활용한 설명 가능하고 자원 효율적인 해로운 미미 탐지의 잠재력을 강조합니다. 코드와 데이터는 다음 링크에서 확인할 수 있습니다: https://anonymous.4open.science/r/HMC-AF2B/README.md."
+    },
+    "summary": "1. 시각적 미미를 텍스트로 변환하여 즉각적인 복잡한 추론을 피하고 자원 효율적인 해로운 미미 탐지가 가능한 U-CoT+ 프레임워크가 소개되었습니다.\n2. 인간이 작성한 가이드라인을 활용하여 모델의 추론을 안내함으로써 다양한 플랫폼과 지역에서 쉽게 적응할 수 있는 프레임워크가 제안되었습니다.\n3. 소규모 언어 모델을 사용하여 설명 가능하고 자원 효율적인 해로운 미미 탐지의 잠재력을 입증하는 광범위한 실험이 수행되었습니다."
+  },
+  {
+    "title": "Configurable Preference Tuning with Rubric-Guided Synthetic Data",
+    "abstract": "Models of human feedback for AI alignment, such as those underpinning Direct\nPreference Optimization (DPO), often bake in a singular, static set of\npreferences, limiting adaptability. This paper challenges the assumption of\nmonolithic preferences by introducing Configurable Preference Tuning (CPT), a\nnovel framework for endowing language models with the ability to dynamically\nadjust their behavior based on explicit, human-interpretable directives. CPT\nleverages synthetically generated preference data, conditioned on system\nprompts derived from structured, fine-grained rubrics that define desired\nattributes like writing style. By fine-tuning with these rubric-guided\npreferences, the LLM learns to modulate its outputs at inference time in\nresponse to the system prompt, without retraining. This approach not only\noffers fine-grained control but also provides a mechanism for modeling more\nnuanced and context-dependent human feedback. Several experimental artifacts,\nsuch as training code, generated datasets and fine-tuned models are released at\nhttps://github.com/vicgalle/configurable-preference-tuning",
+    "authors": [
+      "Víctor Gallego"
+    ],
+    "likes": 1,
+    "published_date": "Jun 13",
+    "url": "https://huggingface.co/papers/2506.11702",
+    "date_collected": "2025-06-16T07:59:43.349698",
+    "week": "2025-W25",
+    "translation": {
+      "title": "루브릭 안내 구성 가능한 선호도 조정",
+      "abstract": "AI 정렬을 위한 인간 피드백 모델(DPO를 기반으로 하는 것 등)은 종종 하나의 고정된 선호도만을 내재시켜 융통성을 제한한다. 본 논문은 독창적인 Configurable Preference Tuning (CPT) 프레임워크를 소개함으로써 통일적인 선호도 가정에 도전하며, 언어 모델이 명시적이고 인간이 해석 가능한 지침에 기반하여 행동을 동적으로 조절할 수 있는 능력을 부여한다. CPT는 시스템 프롬프트에 의도된 글쓰기 스타일과 같은 속성을 정의하는 구조화된 고해상도 루브릭으로 유도된 합성 선호도 데이터를 활용한다. 루브릭 안내 선호도로 미세조정하는 과정을 통해 LLM은 재훈련 없이 시스템 프롬프트에 대응하여 추론 시 출력을 조절하는 방법을 습득한다. 이 방법은 미세한 제어 뿐만 아니라 미묘하고 맥락에 의존하는 인간 피드백을 모델링하는 메커니즘을 제공한다. 교육 코드, 생성된 데이터셋, 미세조정된 모델 등 몇 가지 실험 자료는 https://github.com/vicgalle/configurable-preference-tuning에서 제공된다."
+    },
+    "summary": "1. Configurable Preference Tuning (CPT)은 언어 모델이 인간이 이해할 수 있는 지침에 따라 동적으로 행동을 조절할 수 있게 해주는 새로운 프레임워크이다.\n2. CPT는 구조화된 루브릭으로부터 파생된 시스템 프롬프트에 의해 조건화된 합성 선호도 데이터를 활용하여 미세조정을 통해 모델의 출력을 추론 시에 조절할 수 있도록 한다.\n3. 이 방법은 미세한 제어를 제공할 뿐만 아니라 보다 미묘하고 맥락에 의존적인 인간 피드백을 모델링하는 메커니즘을 제공한다."
+  },
+  {
+    "title": "Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity\n  Dilemma of Embeddings",
+    "abstract": "This work focuses on an observed limitation of text encoders: embeddings may\nnot be able to recognize fine-grained entities or events within the semantics,\nresulting in failed dense retrieval on even simple cases. To examine such\nbehaviors, we first introduce a new evaluation dataset in Chinese, named\nCapRetrieval, whose passages are image captions, and queries are phrases\ninquiring entities or events in various forms. Zero-shot evaluation suggests\nthat encoders may fail on these fine-grained matching, regardless of training\nsources or model sizes. Aiming for enhancement, we proceed to finetune encoders\nwith our proposed data generation strategies, which obtains the best\nperformance on CapRetrieval. Within this process, we further identify an issue\nof granularity dilemma, a challenge for embeddings to express fine-grained\nsalience while aligning with overall semantics. Our dataset, code and models in\nthis work are publicly released at https://github.com/lxucs/CapRetrieval.",
+    "authors": [
+      "Liyan Xu",
+      "Zhenlin Su",
+      "Mo Yu",
+      "Jiangnan Li",
+      "Fandong Meng",
+      "Jie Zhou"
+    ],
+    "likes": 0,
+    "published_date": "Jun 10",
+    "url": "https://huggingface.co/papers/2506.08592",
+    "date_collected": "2025-06-16T07:59:43.350824",
+    "week": "2025-W25",
+    "translation": {
+      "title": "밀집 검색기는 간단한 쿼리에서 실패할 수 있다: 임베딩의 미세한 세분화 딜레마 해결",
+      "abstract": "본 연구는 텍스트 인코더의 한계에 초점을 맞추고, 임베딩이 의미론적으로 세분된 개체나 사건을 인식하지 못할 수 있어 심지어 간단한 경우에도 밀집 검색에 실패할 수 있다는 관찰된 제한을 다룬다. 이러한 행동을 조사하기 위해 먼저 'CapRetrieval'이라는 중국어 평가 데이터셋을 도입하며, 해당 데이터셋은 이미지 캡션으로 이루어진 문단과 각종 형태로 개체나 사건을 조회하는 구절들로 이루어진 쿼리를 가지고 있다. 제로샷 평가는 인코더가 이러한 미세한 일치에 대해 실패할 수 있음을 나타내는데, 이는 훈련 소스나 모델 크기와는 관계 없다. 성능 향상을 목표로, 제안된 데이터 생성 전략을 사용하여 인코더를 파인튜닝하며, 이로써 'CapRetrieval'에서 최상의 성능을 얻을 수 있었다. 이 과정에서 우리는 임베딩이 전반적인 의미론과 일치하면서도 미세한 세분성을 표현하는 데 어려움을 겪는 세분화 딜레마 문제를 식별하였다. 본 논문의 데이터셋, 코드 및 모델은 https://github.com/lxucs/CapRetrieval에서 공개되었다."
+    },
+    "summary": "1. 텍스트 인코더의 한계로 인해 밀집 검색에서 심지어 간단한 경우에도 실패할 수 있음이 관찰됨.\n2. 'CapRetrieval' 데이터셋을 통해 인코더가 미세한 세분화에 실패할 수 있다는 것을 확인하고, 그에 대한 대응책으로 데이터 생성 전략을 제안하고 성능 향상을 달성함.\n3. 임베딩의 세분화 딜레마 문제를 식별하며, 미세한 세분성을 표현하면서 전반적인 의미론과 일치시키는 것이 어려운 과제로 나타남."
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "title": "From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence",
+    "abstract": "Large language models (LLMs) have fundamentally transformed automated software development by enabling direct translation of natural language descriptions into functional code, driving commercial adoption through tools like Github Copilot (Microsoft), Cursor (Anysphere), Trae (ByteDance), and Claude Code (Anthropic). While the field has evolved dramatically from rule-based systems to Transformer-based architectures, achieving performance improvements from single-digit to over 95\\% success rates on benchmarks like HumanEval. In this work, we provide a comprehensive synthesis and practical guide (a series of analytic and probing experiments) about code LLMs, systematically examining the complete model life cycle from data curation to post-training through advanced prompting paradigms, code pre-training, supervised fine-tuning, reinforcement learning, and autonomous coding agents. We analyze the code capability of the general LLMs (GPT-4, Claude, LLaMA) and code-specialized LLMs (StarCoder, Code LLaMA, DeepSeek-Coder, and QwenCoder), critically examining the techniques, design decisions, and trade-offs. Further, we articulate the research-practice gap between academic research (e.g., benchmarks and tasks) and real-world deployment (e.g., software-related code tasks), including code correctness, security, contextual awareness of large codebases, and integration with development workflows, and map promising research directions to practical needs. Last, we conduct a series of experiments to provide a comprehensive analysis of code pre-training, supervised fine-tuning, and reinforcement learning, covering scaling law, framework selection, hyperparameter sensitivity, model architectures, and dataset comparisons.",
+    "authors": [
+      "Jian Yang",
+      "Xianglong Liu",
+      "Weifeng Lv",
+      "Ken Deng",
+      "Shawn Guo",
+      "Lin Jing",
+      "Yizhi Li",
+      "Shark Liu",
+      "Xianzhen Luo",
+      "Yuyu Luo",
+      "Changzai Pan",
+      "Ensheng Shi",
+      "Yingshui Tan",
+      "Renshuai Tao",
+      "Jiajun Wu",
+      "Xianjie Wu",
+      "Zhenhe Wu",
+      "Daoguang Zan",
+      "Chenchen Zhang",
+      "Wei Zhang",
+      "He Zhu",
+      "Terry Yue Zhuo"
+    ],
+    "likes": 235,
+    "published_date": "Nov 23",
+    "url": "https://huggingface.co/papers/2511.18538",
+    "date_collected": "2025-12-06T07:08:09.418593+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "코드 기반 모델부터 에이전트와 응용까지: 코드 인텔리전스의 실용 가이드",
+      "abstract": "대형 언어 모델(LLMs)은 자연어 설명을 기능적 코드로 직접 번역하는 것을 가능케함으로써 자동 소프트웨어 개발을 근본적으로 변형시켰다. 이에 따라 Github Copilot(Microsoft), Cursor(Anysphere), Trae(ByteDance), Claude Code(Anthropic)와 같은 도구를 통한 상업적 채택이 진행되었다. 이 분야는 규칙 기반 시스템에서 Transformer 기반 아키텍처로 크게 발전해 왔으며, HumanEval과 같은 벤치마크에서 성공률이 95% 이상까지 개선되었다. 본 연구에서는 코드 LLMs에 대한 종합적인 합성과 실용적 가이드(분석 및 실험의 연속)를 제공하며, 데이터 큐레이션부터 사후 훈련까지 전체 모델 수명 주기를 체계적으로 조사한다. 또한, 일반 LLMs(GPT-4, Claude, LLaMA)와 코드 전문 LLMs(StarCoder, Code LLaMA, DeepSeek-Coder, QwenCoder)의 코드 능력을 분석하며, 적합성 향상을 위한 전반적인 기법, 설계 결정 및 트레이드오프를 비판적으로 조명한다. 더불어, 학계 연구(벤치마크 및 작업 등)와 실제 배포 간의 연구-실무 격차를 다루며, 코드 정확성, 보안, 대규모 코드베이스의 문맥 인식, 개발 워크플로우 통합 및 약점에 대응하는 유망한 연구 방향을 제시한다. 마지막으로, 코드 사전 훈련, 감독형 미세 조정 및 강화 학습 등의 포괄적인 분석을 제공하기 위한 일련의 실험을 실시하며, 스케일링 법칙, 프레임워크 선택, 하이퍼파라미터 민감도, 모델 아키텍처, 데이터셋 비교를 다룬다."
+    },
+    "summary": "1. 대형 언어 모델은 자연어 설명을 코드로 변환하여 소프트웨어 개발을 혁신시키는데, 이를 통해 한 번에 95% 이상의 성공률을 달성하는 등 성능을 크게 향상시켰다.\n2. 코드 LLMs의 전반적인 모델 수명 주기를 체계적으로 조사하며, 모델 사전 훈련, 감독형 미세 조정, 강화 학습, 자율 코딩 에이전트 등을 포함한 다양한 패러다임을 분석하고 실용적 가이드를 제시한다.\n3. 학계 연구와 실제 산업 현장 사이의 연구-실무 격차를 다루며, 코드의 정확성, 보안, 대규모 코드베이스의 문맥 인식, 개발 워크플로우 통합과 같은 실전적 문제들을 탐구하고 해결책을 모색한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+    "abstract": "We introduce DeepSeek-V3.2, a model that harmonizes high computational efficiency with superior reasoning and agent performance. The key technical breakthroughs of DeepSeek-V3.2 are as follows: (1) DeepSeek Sparse Attention (DSA): We introduce DSA, an efficient attention mechanism that substantially reduces computational complexity while preserving model performance in long-context scenarios. (2) Scalable Reinforcement Learning Framework: By implementing a robust reinforcement learning protocol and scaling post-training compute, DeepSeek-V3.2 performs comparably to GPT-5. Notably, our high-compute variant, DeepSeek-V3.2-Speciale, surpasses GPT-5 and exhibits reasoning proficiency on par with Gemini-3.0-Pro, achieving gold-medal performance in both the 2025 International Mathematical Olympiad (IMO) and the International Olympiad in Informatics (IOI). (3) Large-Scale Agentic Task Synthesis Pipeline: To integrate reasoning into tool-use scenarios, we developed a novel synthesis pipeline that systematically generates training data at scale. This methodology facilitates scalable agentic post-training, yielding substantial improvements in generalization and instruction-following robustness within complex, interactive environments.",
+    "authors": [
+      "DeepSeek-AI",
+      "Aixin Liu",
+      "Aoxue Mei",
+      "Bangcai Lin",
+      "Bing Xue",
+      "Bingxuan Wang",
+      "Bingzheng Xu",
+      "Bochao Wu",
+      "Bowei Zhang",
+      "Chaofan Lin",
+      "Chen Dong",
+      "Chengda Lu",
+      "Chenggang Zhao",
+      "Chengqi Deng",
+      "Chenhao Xu",
+      "Chong Ruan",
+      "Damai Dai",
+      "Daya Guo",
+      "Dejian Yang",
+      "Deli Chen",
+      "Erhang Li",
+      "Fangqi Zhou"
+    ],
+    "likes": 162,
+    "published_date": "Dec 2",
+    "url": "https://huggingface.co/papers/2512.02556",
+    "date_collected": "2025-12-06T07:08:09.420804+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "딥시크-V3.2: 오픈 대형 언어 모델의 선두를 달리다",
+      "abstract": "고성능 추론과 에이전트 성능을 조화롭게 보장하는 고효율 계산 딥시크-V3.2 모델을 소개합니다. 딥시크-V3.2의 주요 기술적 돌파구는 다음과 같습니다: (1) 딥시크 희소 어텐션 (DSA): 딥시크 희소 어텐션은 장거리 문맥 시나리오에서 모델 성능을 유지하면서 계산 복잡성을 크게 줄이는 효율적인 어텐션 메커니즘입니다. (2) 확장 가능한 강화 학습 프레임워크: 견고한 강화 학습 프로토콜을 구현하고 사후 훈련 컴퓨팅을 확장함으로써 딥시크-V3.2는 GPT-5와 유사한 성능을 발휘합니다. 특히 높은 컴퓨팅 변형인 딥시크-V3.2-스페셜은 GPT-5를 능가하며 Gemini-3.0-Pro와 미술 체계적인 활용의 합리성을 보여줌으로써 2025년 국제 수학 올림피아드 (IMO) 및 국제 정보올림피아드 (IOI)에서 금메달 수준의 성과를 달성했습니다. (3) 대규모 에이전트 작업 합성 파이프라인: 수많은 학습 자료를 체계적으로 생성하는 혁신적인 합성 파이프라인을 개발하여 추론을 도구 사용 시나리오에 통합했습니다. 이 방법론은 규모 있는 에이전트 사후 훈련을 용이하게 하여 복잡하고 상호작용적인 환경 내에서의 일반화 및 지침 따르기 강인성을 상당히 향상시킵니다."
+    },
+    "summary": "1. 딥시크-V3.2의 기술적 돌파구로는 희소 어텐션 메커니즘인 DSA를 소개하며, 장거리 문맥에서도 모델 성능을 유지합니다.\n2. 강화 학습 프레임워크 확장을 통해 딥시크-V3.2는 GPT-5와 비교 가능한 성능을 보이며, 고성능 변형인 딥시크-V3.2-스페셜은 GPT-5를 능가하여 국제 올림피아드에서 최상의 성과를 달성합니다.\n3. 대규모 에이전트 작업 합성 파이프라인의 도입으로 인해 딥시크-V3.2는 복잡한 환경에서의 일반화 및 지침 따르기 강인성을 크게 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "LongVT: Incentivizing \"Thinking with Long Videos\" via Native Tool Calling",
+    "abstract": "Large multimodal models (LMMs) have shown great potential for video reasoning with textual Chain-of-Thought. However, they remain vulnerable to hallucinations, especially when processing long-form videos where evidence is sparse and temporally dispersed. Inspired by how humans comprehend long videos - by first skimming globally and then examining relevant clips for details - we introduce LongVT, an end-to-end agentic framework that enables \"Thinking with Long Videos\" via interleaved Multimodal Chain-of-Tool-Thought. Specifically, we exploit LMMs' inherent temporal grounding ability as a native video cropping tool to zoom in on a specific video clip and resample finer-grained video frames. This global-to-local reasoning loop continues until answers are grounded in retrieved visual evidence. Given the scarcity of fine-grained question-answering (QA) data for the long video reasoning task, we curate and will release a data suite named VideoSIAH to facilitate both training and evaluation. Specifically, our training dataset consists of 247.9K samples for tool-integrated cold-start supervised fine-tuning, 1.6K samples for agentic reinforcement learning, and 15.4K samples for agentic reinforcement fine-tuning, respectively. Our evaluation benchmark consists of 1,280 QA pairs that are carefully curated through a semi-automatic data pipeline with human-in-the-loop validation. With a meticulously designed three-stage training strategy and extensive empirical validation, LongVT consistently outperforms existing strong baselines across four challenging long-video understanding and reasoning benchmarks. Our codes, data, and model checkpoints are publicly available at https://github.com/EvolvingLMMs-Lab/LongVT .",
+    "authors": [
+      "Zuhao Yang",
+      "Sudong Wang",
+      "Kaichen Zhang",
+      "Keming Wu",
+      "Sicong Leng",
+      "Yifan Zhang",
+      "Chengwei Qin",
+      "Shijian Lu",
+      "Xingxuan Li",
+      "Lidong Bing"
+    ],
+    "likes": 148,
+    "published_date": "Nov 25",
+    "url": "https://huggingface.co/papers/2511.20785",
+    "date_collected": "2025-12-06T07:08:09.422217+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "LongVT: 원생 도구 호출을 통한 \"긴 비디오와 함께 생각\" 유도",
+      "abstract": "대형 다중모달 모델(LMMs)은 텍스트 Chain-of-Thought와 함께 비디오 추론에 막대한 잠재력을 보여주었습니다. 그러나 특히 증거가 희박하고 시간적으로 분산된 긴 비디오를 처리할 때 환영증에 취약합니다. 우리는 인간이 긴 비디오를 이해하는 방식에서 영감을 받아, 글로벌로 빠르게 훑어보고 관련 클립을 자세히 살펴보는 방식으로 \"긴 비디오와 함께 생각\"을 가능케 하는 LongVT를 소개합니다. 이전체에 걸쳐 다중모달 Chain-of-Tool-Thought를 교차시키면서 이루어지는 종단 간섭 프레임워크로, 특히 LMMs의 고유한 시간적 기반 능력을 이용하여 원생 비디오 자르기 도구로 특정 비디오 클립을 확대하고 더 세분화된 비디오 프레임을 재샘플링 합니다. 이러한 글로벌로부터 로컬로 이어지는 추론 루프는 답이 검색된 시각적 증거에 근거할 때까지 계속됩니다. 저희는 긴 비디오 추론 작업을 위한 세밀한 질의응답(QA) 데이터의 부족함을 고려하여 VideoSIAH라는 데이터 스위트를 공개할 계획입니다."
+    },
+    "summary": "1. LongVT는 긴 비디오의 이해와 추론을 위해 고안된 종단 간섭 프레임워크로, 글로벌로부터 로컬까지 다중모달 추론 루프를 통해 시각적 증거를 기반으로 답을 도출합니다.\n2. VideoSIAH 데이터 스위트는 LongVT의 학습과 평가를 용이하게 하기 위해 고안된 데이터로, 다양한 학습 및 평가 샘플을 제공합니다.\n3. LongVT는 세밀하게 설계된 세 단계의 훈련 전략과 넓은 경험적 검증을 통해 기존 강력한 기준선을 꾸준히 능가하며, 네 가지 어려운 긴 비디오 이해 및 추론 벤치마크에서 일관된 결과를 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer",
+    "abstract": "The landscape of high-performance image generation models is currently dominated by proprietary systems, such as Nano Banana Pro and Seedream 4.0. Leading open-source alternatives, including Qwen-Image, Hunyuan-Image-3.0 and FLUX.2, are characterized by massive parameter counts (20B to 80B), making them impractical for inference, and fine-tuning on consumer-grade hardware. To address this gap, we propose Z-Image, an efficient 6B-parameter foundation generative model built upon a Scalable Single-Stream Diffusion Transformer (S3-DiT) architecture that challenges the \"scale-at-all-costs\" paradigm. By systematically optimizing the entire model lifecycle -- from a curated data infrastructure to a streamlined training curriculum -- we complete the full training workflow in just 314K H800 GPU hours (approx. $630K). Our few-step distillation scheme with reward post-training further yields Z-Image-Turbo, offering both sub-second inference latency on an enterprise-grade H800 GPU and compatibility with consumer-grade hardware (<16GB VRAM). Additionally, our omni-pre-training paradigm also enables efficient training of Z-Image-Edit, an editing model with impressive instruction-following capabilities. Both qualitative and quantitative experiments demonstrate that our model achieves performance comparable to or surpassing that of leading competitors across various dimensions. Most notably, Z-Image exhibits exceptional capabilities in photorealistic image generation and bilingual text rendering, delivering results that rival top-tier commercial models, thereby demonstrating that state-of-the-art results are achievable with significantly reduced computational overhead. We publicly release our code, weights, and online demo to foster the development of accessible, budget-friendly, yet state-of-the-art generative models.",
+    "authors": [
+      "Z-Image Team",
+      "Huanqia Cai",
+      "Sihan Cao",
+      "Ruoyi Du",
+      "Peng Gao",
+      "Steven Hoi",
+      "Shijie Huang",
+      "Zhaohui Hou",
+      "Dengyang Jiang",
+      "Xin Jin",
+      "Liangchen Li",
+      "Zhen Li",
+      "Zhong-Yu Li",
+      "David Liu",
+      "Dongyang Liu",
+      "Junhan Shi",
+      "Qilong Wu",
+      "Feng Yu",
+      "Chi Zhang",
+      "Shifeng Zhang",
+      "Shilin Zhou"
+    ],
+    "likes": 141,
+    "published_date": "Nov 27",
+    "url": "https://huggingface.co/papers/2511.22699",
+    "date_collected": "2025-12-06T07:08:09.424063+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "Z-Image: 단일 스트림 확산 트랜스포머를 활용한 효율적인 이미지 생성 기반 모델",
+      "abstract": "현재 고성능 이미지 생성 모델 영역은 Nano Banana Pro와 Seedream 4.0과 같은 사유 소유 시스템에 의해 주도되고 있다. Qwen-Image, Hunyuan-Image-3.0, FLUX.2를 포함한 주요 오픈 소스 대안들은 방대한 매개변수 수(20B에서 80B)로 특징 지어져 있어 추론 및 소비자용 하드웨어에서의 미세 조정에 적합하지 않다. 이러한 공백을 해결하기 위해 우리는 \"모든 비용으로 규모를 키우는\" 패러다임에 도전하며 효율적인 6B-매개변수 기반 생성 모델인 Z-Image를 제안한다. 이 모델은 Scalable Single-Stream Diffusion Transformer(S3-DiT) 아키텍처를 기반으로 하고 있다. 우리는 교육용 데이터 인프라부터 단순화된 교육 과정까지 전반적으로 최적화하여 전체 교육 워크플로우를 단 314K H800 GPU 시간(약 $630K)에 완료했다. 보상 포스트 교육을 통한 몇 단계의 정제 체계는 엔터프라이즈급 H800 GPU에서 초당 이하의 추론 대기 시간과 소비자용 하드웨어(<16GB VRAM) 호환성을 제공하는 Z-Image-Turbo를 얻게 했다. 또한 우리의 omni-pre-training 패러다임은 Z-Image-Edit의 효율적인 교육을 가능케 하며, 이는 인상적인 지시 따르기 능력을 가진 편집 모델이다. 질적, 양적 실험 모두 우리 모델이 다양한 차원에서 주요 경쟁 모델과 유사하거나 능가하는 성능을 달성한다는 점을 보여준다. 특히 Z-Image는 사실적 이미지 생성 및 양언 텍스트 렌더링 분야에서 탁월한 능력을 보여주어 최고 수준의 상용 모델과 견줄만한 결과물을 제공함으로써, 최신 결과를 상당히 줄인 계산적 부담으로 달성 가능함을 입증한다. 우리는 코드, 가중치, 온라인 데모를 공개하여 접근성 있고 예산 친화적이면서 최신 기술을 채택한 생성 모델의 발전을 촉진한다."
+    },
+    "summary": "1. Z-Image는 효율적인 6B-매개변수 기반 생성 모델로, Scalable Single-Stream Diffusion Transformer(S3-DiT) 아키텍처를 활용하여 \"모든 비용으로 규모를 키우는\" 패러다임에 도전한다.\n2. 몇 단계의 정제 과정과 보상 포스트 교육을 통해 Z-Image-Turbo는 엔터프라이즈급 H800 GPU에서 초당 이하의 추론 대기 시간과 소비자용 하드웨어 호환성을 제공한다.\n3. Z-Image는 사실적 이미지 생성 및 양언 텍스트 렌더링 분야에서 탁월한 성능을 보이며, 다양한 차원에서 주요 경쟁 모델과 비교해 우수한 결과물을 제시한다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "DAComp: Benchmarking Data Agents across the Full Data Intelligence Lifecycle",
+    "abstract": "Real-world enterprise data intelligence workflows encompass data engineering that turns raw sources into analytical-ready tables and data analysis that convert those tables into decision-oriented insights. We introduce DAComp, a benchmark of 210 tasks that mirrors these complex workflows. Data engineering (DE) tasks require repository-level engineering on industrial schemas, including designing and building multi-stage SQL pipelines from scratch and evolving existing systems under evolving requirements. Data analysis (DA) tasks pose open-ended business problems that demand strategic planning, exploratory analysis through iterative coding, interpretation of intermediate results, and the synthesis of actionable recommendations. Engineering tasks are scored through execution-based, multi-metric evaluation. Open-ended tasks are assessed by a reliable, experimentally validated LLM-judge, which is guided by hierarchical, meticulously crafted rubrics. Our experiments reveal that even state-of-the-art agents falter on DAComp. Performance on DE tasks is particularly low, with success rates under 20%, exposing a critical bottleneck in holistic pipeline orchestration, not merely code generation. Scores on DA tasks also average below 40%, highlighting profound deficiencies in open-ended reasoning and demonstrating that engineering and analysis are distinct capabilities. By clearly diagnosing these limitations, DAComp provides a rigorous and realistic testbed to drive the development of truly capable autonomous data agents for enterprise settings. Our data and code are available at https://da-comp.github.io",
+    "authors": [
+      "Fangyu Lei",
+      "Jinxiang Meng",
+      "Yiming Huang",
+      "Junjie Zhao",
+      "Yitong Zhang",
+      "Jianwen Luo",
+      "Xin Zou",
+      "Ruiyi Yang",
+      "Wenbo Shi",
+      "Yan Gao",
+      "Shizhu He",
+      "Zuo Wang",
+      "Qian Liu",
+      "Yang Wang",
+      "Ke Wang",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "likes": 119,
+    "published_date": "Dec 3",
+    "url": "https://huggingface.co/papers/2512.04324",
+    "date_collected": "2025-12-06T07:08:09.425822+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "DAComp: 완전한 데이터 인텔리전스 수명주기 전반에 걸친 데이터 에이전트의 벤치마킹",
+      "abstract": "현실 세계의 기업 데이터 인텔리전스 워크플로우는 원시 소스를 분석용 테이블로 변환하는 데이터 엔지니어링과 이러한 테이블을 의사 결정 지향적인 통찰로 변환하는 데이터 분석을 포함합니다. 우리는 이러한 복잡한 워크플로를 반영하는 210가지 작업의 벤치마킹인 DAComp를 소개합니다. 데이터 엔지니어링(DE) 작업은 산업 스키마 수준의 엔지니어링이 필요하며, 마이그레이션 및 기존 시스템을 진화시키는 다단계 SQL 파이프라인 설계 및 구축이 포함됩니다. 데이터 분석(DA) 작업은 전략적 계획, 반복적 코딩을 통한 탐색적 분석, 중간 결과 해석 및 실행 가능한 권고사항의 종합을 요구하는 미정문제를 제시합니다. 엔지니어링 작업은 실행 기반 다중 측정평가를 통해 점수가 부여됩니다. 개방형 작업은 계층적이고 섬세하게 설계된 평가 척도에 따라 유일한, 실험적으로 검증된 LLM 판단기를 통해 평가됩니다. 실험 결과, 최첨단 에이전트조차 DAComp에서 실수하는 것으로 나타났습니다. DE 작업 성공률이 특히 낮아, DE 작업 성능은 20% 미만에 불과하며, 코드 생성에 그치는 것이 아니라 종합적인 파이프라인 조율에서 중대한 병목 현상을 드러냅니다. DA 작업 점수는 평균 40% 미만으로, 미정문제에 대한 문제 해결 능력의 결여를 강조하며, 엔지니어링과 분석이 다른 능력임을 입증합니다. 이러한 한계를 명확히 진단함으로써, DAComp는 기업 설정을 위한 진정으로 능력 있는 자율 데이터 에이전트의 개발을 촉진하기 위한 엄격하고 현실적인 시험대를 제공합니다. 데이터 및 코드는 https://da-comp.github.io에서 제공됩니다."
+    },
+    "summary": "1. DAComp는 데이터 엔지니어링과 데이터 분석의 작업을 둘 다 포함하는 210가지 작업에 대한 벤치마킹을 제공하며, 심층적인 평가를 통해 현재의 데이터 에이전트들이 업무에 어려움을 겪고 있다는 것을 보여줍니다.\n2. 데이터 엔지니어링 작업의 성공률은 20% 미만으로 낮은데, 이는 데이터 파이프라인을 조율하는 데 있어 중대한 병목 현상이 있다는 것을 나타냅니다.\n3. 데이터 분석 작업의 점수 역시 40% 미만으로 낮으며, 엔지니어링과 분석이 각각 다른 역량이라는 사실을 드러내며, 오픈엔딩로직의 한계를 확인하였습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Live Avatar: Streaming Real-time Audio-Driven Avatar Generation with Infinite Length",
+    "abstract": "Existing diffusion-based video generation methods are fundamentally constrained by sequential computation and long-horizon inconsistency, limiting their practical adoption in real-time, streaming audio-driven avatar synthesis. We present Live Avatar, an algorithm-system co-designed framework that enables efficient, high-fidelity, and infinite-length avatar generation using a 14-billion-parameter diffusion model. Our approach introduces Timestep-forcing Pipeline Parallelism (TPP), a distributed inference paradigm that pipelines denoising steps across multiple GPUs, effectively breaking the autoregressive bottleneck and ensuring stable, low-latency real-time streaming. To further enhance temporal consistency and mitigate identity drift and color artifacts, we propose the Rolling Sink Frame Mechanism (RSFM), which maintains sequence fidelity by dynamically recalibrating appearance using a cached reference image. Additionally, we leverage Self-Forcing Distribution Matching Distillation to facilitate causal, streamable adaptation of large-scale models without sacrificing visual quality. Live Avatar demonstrates state-of-the-art performance, reaching 20 FPS end-to-end generation on 5 H800 GPUs, and, to the best of our knowledge, is the first to achieve practical, real-time, high-fidelity avatar generation at this scale. Our work establishes a new paradigm for deploying advanced diffusion models in industrial long-form video synthesis applications.",
+    "authors": [
+      "Yubo Huang",
+      "Hailong Guo",
+      "Fangtai Wu",
+      "Shifeng Zhang",
+      "Shijie Huang",
+      "Qijun Gan",
+      "Lin Liu",
+      "Sirui Zhao",
+      "Enhong Chen",
+      "Jiaming Liu",
+      "Steven Hoi"
+    ],
+    "likes": 111,
+    "published_date": "Dec 4",
+    "url": "https://huggingface.co/papers/2512.04677",
+    "date_collected": "2025-12-06T07:08:09.427282+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "라이브 아바타: 무한 길이의 실시간 오디오 기반 아바타 생성 스트리밍",
+      "abstract": "기존의 확산 기반 비디오 생성 방법은 순차 계산과 장기 불일치로 실시간 스트리밍 오디오 기반 아바타 합성에서 실용적인 채택을 제약받고 있다. 본 연구에서는 140억 개 파라미터 확산 모델을 활용해 효율적이고 고품질의 무한 길이 아바타 생성을 가능케 하는 라이브 아바타를 제시한다. Timestep-forcing Pipeline Parallelism (TPP)을 소개하여 자동 회귀 병목 현상을 극복하고 안정적이고 낮은 지연의 실시간 스트리밍을 실현한다. Rolling Sink Frame Mechanism (RSFM)을 제안하여 일관성을 강화하고 신원 이탈 현상과 색 고정의 문제를 완화한다. 또한 Self-Forcing Distribution Matching Distillation을 활용하여 시각적 품질을 희생하지 않고 대규모 모델의 인과적이고 연속적인 적응을 지원한다. 라이브 아바타는 5대의 H800 GPU에서 20 FPS의 최고 성능을 보여주며 이 규모에서 실용적이고 고품질의 실시간 아바타 생성을 성공적으로 이룩한다. 본 연구는 산업용 장편 비디오 합성 응용에 고급 확산 모델을 배치하는 새로운 패러다임을 제시한다."
+    },
+    "summary": "1. 라이브 아바타는 실시간 스트리밍 오디오 기반 아바타 생성을 위해 TPP 및 RSFM과 같은 기술을 활용하여 무한 길이의 고품질 아바타를 생성하는 알고리즘-시스템 공동 설계 프레임워크이다.\n2. TPP는 다중 GPU를 활용하여 자동 회귀 병목을 극복하고 안정적이고 낮은 지연의 실시간 스트리밍을 가능케 한다.\n3. RSFM은 시퀀스 일관성을 강화하고 신원 이탈 및 색 고정 문제를 완화하며, Self-Forcing Distribution Matching Distillation은 대규모 모델의 연속적이고 안정적인 적응을 지원한다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Qwen3-VL Technical Report",
+    "abstract": "We introduce Qwen3-VL, the most capable vision-language model in the Qwen series to date, achieving superior performance across a broad range of multimodal benchmarks. It natively supports interleaved contexts of up to 256K tokens, seamlessly integrating text, images, and video. The model family includes both dense (2B/4B/8B/32B) and mixture-of-experts (30B-A3B/235B-A22B) variants to accommodate diverse latency-quality trade-offs. Qwen3-VL delivers three core pillars: (i) markedly stronger pure-text understanding, surpassing comparable text-only backbones in several cases; (ii) robust long-context comprehension with a native 256K-token window for both text and interleaved multimodal inputs, enabling faithful retention, retrieval, and cross-referencing across long documents and videos; and (iii) advanced multimodal reasoning across single-image, multi-image, and video tasks, demonstrating leading performance on comprehensive evaluations such as MMMU and visual-math benchmarks (e.g., MathVista and MathVision). Architecturally, we introduce three key upgrades: (i) an enhanced interleaved-MRoPE for stronger spatial-temporal modeling across images and video; (ii) DeepStack integration, which effectively leverages multi-level ViT features to tighten vision-language alignment; and (iii) text-based time alignment for video, evolving from T-RoPE to explicit textual timestamp alignment for more precise temporal grounding. Under comparable token budgets and latency constraints, Qwen3-VL achieves superior performance in both dense and Mixture-of-Experts (MoE) architectures. We envision Qwen3-VL serving as a foundational engine for image-grounded reasoning, agentic decision-making, and multimodal code intelligence in real-world workflows.",
+    "authors": [
+      "Shuai Bai",
+      "Yuxuan Cai",
+      "Ruizhe Chen",
+      "Keqin Chen",
+      "Xionghui Chen",
+      "Zesen Cheng",
+      "Lianghao Deng",
+      "Wei Ding",
+      "Chang Gao",
+      "Chunjiang Ge",
+      "Wenbin Ge",
+      "Zhifang Guo",
+      "Qidong Huang",
+      "Jie Huang",
+      "Fei Huang",
+      "Binyuan Hui",
+      "Shutong Jiang",
+      "Zhaohai Li",
+      "Mingsheng Li",
+      "Mei Li",
+      "Kaixin Li",
+      "Zicheng Lin"
+    ],
+    "likes": 105,
+    "published_date": "Nov 26",
+    "url": "https://huggingface.co/papers/2511.21631",
+    "date_collected": "2025-12-06T07:08:09.429218+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "Qwen3-VL 기술 보고서",
+      "abstract": "본 보고서는 Qwen 시리즈 중 가장 뛰어난 비전-언어 모델인 Qwen3-VL을 소개합니다. 다양한 멀티모달 벤치마크에서 우수한 성능을 달성하며 최대 256,000토큰의 상호작용하는 문맥을 자연스럽게 지원하며 텍스트, 이미지, 비디오를 통합하고 있습니다. 이 모델은 밀도형(2B/4B/8B/32B)과 전문가 혼합형(30B-A3B/235B-A22B)의 두 가지 변형을 포함하여 다양한 지연-품질의 균형을 고려하고 있습니다. Qwen3-VL은 세 가지 핵심을 제공합니다: (i) 현저히 강화된 순수 텍스트 이해, 몇몇 경우에는 유사한 텍스트 기반 백본보다 뛰어난 성능을 보입니다; (ii) 텍스트 및 상호작용하는 멀티모달 입력에 네이티브 256,000토큰의 창을 제공하여 장문 문서 및 비디오에서 신뢰성 있게 보존, 검색 및 교차 참조를 가능케 하는 강력한 장문 문맥 이해; (iii) 단일 이미지, 다중 이미지, 비디오 작업에 걸쳐 고급 멀티모달 추론을 행하며 MMMU 및 비주얼-수학 벤치마크(예: MathVista 및 MathVision)에서 선도적인 성능을 보입니다. 구조적으로 우리는 세 가지 주요 업그레이드를 소개합니다: (i) 이미지 및 비디오에 걸쳐 강력한 공간-시간적 모델링을 위한 향상된 상호작용형 MRoPE; (ii) 다중 수준의 ViT 특징을 효과적으로 활용하여 비전-언어 정렬을 강화하는 DeepStack 통합; (iii) 비디오를 위한 텍스트 기반 시간 맞춤, T-RoPE에서 명확한 텍스트 기반 타임스탬프 맞춤으로 발전하여 보다 정확한 시간적 기반을 제공합니다. 비슷한 토큰 예산과 지연 제약에서, Qwen3-VL은 밀도형 및 전문가 혼합형 아키텍처 모두에서 우수한 성능을 보입니다. 우리는 Qwen3-VL이 실제 업무 흐름에서 이미지 기반 추론, 의사 결정, 및 멀티모달 코드 지능을 위한 기초 엔진으로 사용될 것을 기대합니다."
+    },
+    "summary": "1. Qwen3-VL은 기존 텍스트만을 다루는 기반 모델보다 강화된 순수 텍스트 이해를 제공합니다.\n2. 256,000토큰의 창을 통해 Qwen3-VL은 장문 문서와 비디오의 신뢰성 있는 보존, 검색, 교참을 가능케 하는 강력한 장문 문맥 이해를 제공합니다.\n3. Qwen3-VL은 여러 이미지, 비디오 작업에서 선도적인 멀티모달 추론을 제공하며 다양한 평가에서 우수한 성능을 보입니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration",
+    "abstract": "Large language models are powerful generalists, yet solving deep and complex problems such as those of the Humanity's Last Exam (HLE) remains both conceptually challenging and computationally expensive. We show that small orchestrators managing other models and a variety of tools can both push the upper bound of intelligence and improve efficiency in solving difficult agentic tasks. We introduce ToolOrchestra, a method for training small orchestrators that coordinate intelligent tools. ToolOrchestra explicitly uses reinforcement learning with outcome-, efficiency-, and user-preference-aware rewards. Using ToolOrchestra, we produce Orchestrator, an 8B model that achieves higher accuracy at lower cost than previous tool-use agents while aligning with user preferences on which tools are to be used for a given query. On HLE, Orchestrator achieves a score of 37.1%, outperforming GPT-5 (35.1%) while being 2.5x more efficient. On tau2-Bench and FRAMES, Orchestrator surpasses GPT-5 by a wide margin while using only about 30% of the cost. Extensive analysis shows that Orchestrator achieves the best trade-off between performance and cost under multiple metrics, and generalizes robustly to unseen tools. These results demonstrate that composing diverse tools with a lightweight orchestration model is both more efficient and more effective than existing methods, paving the way for practical and scalable tool-augmented reasoning systems.",
+    "authors": [
+      "Hongjin Su",
+      "Shizhe Diao",
+      "Ximing Lu",
+      "Mingjie Liu",
+      "Jiacheng Xu",
+      "Xin Dong",
+      "Yonggan Fu",
+      "Peter Belcak",
+      "Hanrong Ye",
+      "Hongxu Yin",
+      "Yi Dong",
+      "Evelina Bakhturina",
+      "Tao Yu",
+      "Yejin Choi",
+      "Jan Kautz",
+      "Pavlo Molchanov"
+    ],
+    "likes": 94,
+    "published_date": "Nov 26",
+    "url": "https://huggingface.co/papers/2511.21689",
+    "date_collected": "2025-12-06T07:08:09.430915+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "ToolOrchestra: 효율적인 모델과 도구 조율을 통한 지능 향상",
+      "abstract": "대형 언어 모델은 강력한 일반화 능력을 갖추고 있지만, 인류의 마지막 시험(HLE)과 같은 심층적이고 복잡한 문제를 해결하는 것은 개념적으로 어렵고 계산적으로 비용이 많이 들어간다. 본 연구에서는 다른 모델들과 다양한 도구를 관리하는 작은 '오케스트레이터'가 상상력의 상한선을 끌어올리고 어려운 에이전트 작업을 해결하는 효율성을 향상시킬 수 있는 것을 보여준다. 'ToolOrchestra'라는 방법을 소개하며, 이는 지능적인 도구들을 조율하는 작은 오케스트레이터를 훈련하는 방법이다. ToolOrchestra는 효과, 효율성 및 사용자 선호도를 고려한 보상을 사용하는 강화 학습을 명시적으로 활용한다. ToolOrchestra를 이용해 우리는 'Orchestrator'라는 8B 모델을 만들었는데, 이는 이전 도구 사용 에이전트들보다 더 낮은 비용으로 더 높은 정확도를 달성하면서 사용자 선호에 부합하는 도구들이 주어진 질의에 사용되도록 한다. HLE에서 Orchestrator는 37.1%의 점수를 기록하며, GPT-5(35.1%)를 능가하여 2.5배 더 효율적이다. tau2-Bench와 FRAMES에서, Orchestrator는 비용의 약 30%만을 사용하면서 GPT-5를 크게 앞서간다. 다양한 분석 결과, Orchestrator는 다중 지표에 대해 성능과 비용 사이의 최상의 균형을 이루며, 새로운 도구에 대해 견고하게 일반화되는 것을 보여준다. 이러한 결과들은 가벼운 오케스트레이션 모델과 다양한 도구를 결합하는 것이 기존 방법보다 효율적이고 효과적임을 보여주며, 실용적이고 확장 가능한 도구 보완 추론 시스템을 위한 길을 열어준다."
+    },
+    "summary": "1. 작은 '오케스트레이터'를 이용한 지능 향상 방법 소개\n2. 'Orchestrator' 모델이 이전 방법보다 더 효율적이고 정확하게 도구들을 활용하여 무엇보다도 사용자 선호를 따르며, 다양한 작업에서 뛰어난 성능을 보임\n3. Orchestrator가 성능과 비용 사이에서 최상의 균형을 이루며, 새로운 도구에 대해서도 견고하게 적용됨",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights",
+    "abstract": "Current multimodal models aim to transcend the limitations of single-modality representations by unifying understanding and generation, often using text-to-image (T2I) tasks to calibrate semantic consistency. However, their reliance on static, single-image generation in training and evaluation leads to overfitting to static pattern matching and semantic fusion, while fundamentally hindering their ability to model dynamic processes that unfold over time. To address these constraints, we propose Envision-a causal event progression benchmark for chained text-to-multi-image generation. Grounded in world knowledge and structured by spatiotemporal causality, it reorganizes existing evaluation dimensions and includes 1,000 four-stage prompts spanning six scientific and humanities domains. To transition evaluation from single images to sequential frames and assess whether models truly internalize world knowledge while adhering to causal-temporal constraints, we introduce Envision-Score, a holistic metric integrating multi-dimensional consistency, physicality, and aesthetics. Comprehensive evaluation of 15 models (10 specialized T2I models, 5 unified models) uncovers: specialized T2I models demonstrate proficiency in aesthetic rendering yet lack intrinsic world knowledge. Unified multimodal models bridge this gap, consistently outperforming specialized counterparts in causal narrative coherence. However, even these unified architectures remain subordinate to closed-source models and struggle to overcome the core challenge of spatiotemporal consistency. This demonstrates that a focus on causally-isolated single images impedes multi-frame reasoning and generation, promoting static pattern matching over dynamic world modeling-ultimately limiting world knowledge internalization, generation.",
+    "authors": [
+      "Juanxi Tian",
+      "Siyuan Li",
+      "Conghui He",
+      "Lijun Wu",
+      "Cheng Tan"
+    ],
+    "likes": 87,
+    "published_date": "Dec 1",
+    "url": "https://huggingface.co/papers/2512.01816",
+    "date_collected": "2025-12-06T07:08:09.432118+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "Envision: 인과적 세계 과정 통찰을 위한 통합 이해 및 생성 벤치마킹",
+      "abstract": "현재의 다중모달 모델은 단일 모달 표현의 한계를 넘어서 이해와 생성을 통합하는 데 주로 텍스트-이미지 (T2I) 작업을 사용하여 의미 일관성을 보정합니다. 그러나, 훈련 및 평가에서 정적인 단일 이미지 생성에 의존하는 이들은 정적 패턴 일치와 의미 융합에 과적합되어 시간이 경과되며 펼쳐지는 동적 과정을 모델링하는 능력을 본질적으로 방해합니다. 이러한 제한을 해결하기 위해 우리는 시간순으로 상호작용하는 텍스트-다중 이미지 생성을위한 인과 관계 이벤트 진행 벤치마킹인 Envision을 제안합니다. 세계적인 지식에 기반하고 시공간 인과 관계에 의해 구조화된 이는 기존의 평가 차원을 재조직하고 6가지 과학 및 인문학 영역에 걸쳐 1,000개의 4단계 프롬프트를 포함합니다."
+    },
+    "summary": "1. 다중모달 모델의 한계를 극복하고 동적 과정을 모델링하기 위해 Envision이라는 인과적 이벤트 진행 벤치마크가 소개되었습니다.\n2. Envision-Score를 통해 단일 이미지에서 연속된 프레임으로 평가 전환되었으며, 모델이 세계 지식을 실제로 내포하고 인과-시간 제약을 준수하는지 평가하기 위한 종합 메트릭스입니다.\n3. 특수 T2I 모델과 통합 모델을 포함한 15개 모델의 종합 평가 결과는 통합 모델이 인과적 이야기 일관성에서 전문화된 동료를 지속적으로 능가한다는 것을 밝혀냈습니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Stabilizing Reinforcement Learning with LLMs: Formulation and Practices",
+    "abstract": "This paper proposes a novel formulation for reinforcement learning (RL) with large language models, explaining why and under what conditions the true sequence-level reward can be optimized via a surrogate token-level objective in policy gradient methods such as REINFORCE. Specifically, through a first-order approximation, we show that this surrogate becomes increasingly valid only when both the training-inference discrepancy and policy staleness are minimized. This insight provides a principled explanation for the crucial role of several widely adopted techniques in stabilizing RL training, including importance sampling correction, clipping, and particularly Routing Replay for Mixture-of-Experts (MoE) models. Through extensive experiments with a 30B MoE model totaling hundreds of thousands of GPU hours, we show that for on-policy training, the basic policy gradient algorithm with importance sampling correction achieves the highest training stability. When off-policy updates are introduced to accelerate convergence, combining clipping and Routing Replay becomes essential to mitigate the instability caused by policy staleness. Notably, once training is stabilized, prolonged optimization consistently yields comparable final performance regardless of cold-start initialization. We hope that the shared insights and the developed recipes for stable RL training will facilitate future research.",
+    "authors": [
+      "Chujie Zheng",
+      "Kai Dang",
+      "Bowen Yu",
+      "Mingze Li",
+      "Huiqiang Jiang",
+      "Junrong Lin",
+      "Yuqiong Liu",
+      "An Yang",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ],
+    "likes": 74,
+    "published_date": "Dec 1",
+    "url": "https://huggingface.co/papers/2512.01374",
+    "date_collected": "2025-12-06T07:08:09.433549+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "Reinforcement Learning 안정화를 위한 LLMs: 개념과 실제",
+      "abstract": "본 논문은 고차언어모델과 함께 한 reinforcement learning (RL)을 위한 새로운 개념을 제안하며, REINFORCE와 같은 정책 기울기 방법에서 어떤 조건 하에 실제 시퀀스 수준 보상이 대리 토큰 수준 목적을 통해 최적화될 수 있는지에 대해 설명합니다. 특히, 일차 근사를 통해, 훈련-추론 불일치와 정책 오래됨을 최소화할 때에만 이 대리가 점점 더 유효해진다는 것을 보여줍니다. 이 통찰력은 RL 훈련을 안정화하기 위해 널리 채택된 기법들의 핵심 역할에 대한 원칙적 설명을 제공합니다."
+    },
+    "summary": "1. RL 훈련 안정성을 높이는 데 중요한 기법으로 importance sampling correction, clipping, Routing Replay가 있으며, 이들은 훈련-추론 불일치와 정책 오래됨을 최소화하는 데 중요한 역할을 함.\n2. GPU 수백만 시간에 걸쳐 30B MoE 모델을 활용한 실험에서 importance sampling correction을 사용한 기본 정책 기울기 알고리즘이 on-policy 훈련에서 가장 높은 안정성을 달성함.\n3. Off-policy 업데이트를 도입하여 수렴을 가속화할 때, policy 오래됨으로 인한 불안정성을 완화하기 위해 clipping과 Routing Replay를 함께 결합하는 것이 필수적이며, 안정성이 확보된 후에는 초기화에 상관없이 최종 성능이 일관되게 나타남.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  }
+]

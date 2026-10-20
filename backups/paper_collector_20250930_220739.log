@@ -1,0 +1,143 @@
+=== Paper Collection Started at Mon Sep 29 22:07:48 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W40
+URL: https://huggingface.co/papers/week/2025-W40
+Found 10 papers in weekly view
+Fetching likes for: LongLive: Real-time Interactive Long Video Generation
+Fetching likes for: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Fetching likes for: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Fetching likes for: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Fetching likes for: ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models
+Fetching likes for: Variational Reasoning for Language Models
+Fetching likes for: Language Models Can Learn from Verbal Feedback Without Scalar Rewards
+Fetching likes for: CapRL: Stimulating Dense Image Caption Capabilities via Reinforcement
+  Learning
+Fetching likes for: MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial
+  Reasoning
+Fetching likes for: No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM
+  Reinforcement Learning via Entropy-Guided Advantage Shaping
+Selected top 10 papers by likes:
+1. LongLive: Real-time Interactive Long Video Generation (128 likes)
+2. Quantile Advantage Estimation for Entropy-Safe Reasoning (100 likes)
+3. MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing (76 likes)
+4. EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning (72 likes)
+5. ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models (54 likes)
+6. Variational Reasoning for Language Models (51 likes)
+7. Language Models Can Learn from Verbal Feedback Without Scalar Rewards (48 likes)
+8. CapRL: Stimulating Dense Image Caption Capabilities via Reinforcement
+  Learning (28 likes)
+9. MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial
+  Reasoning (27 likes)
+10. No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM
+  Reinforcement Learning via Entropy-Guided Advantage Shaping (27 likes)
+Found abstract: We present LongLive, a frame-level autoregressive (AR) framework for
+real-time and interactive long ...
+Processed paper: LongLive: Real-time Interactive Long Video Generation
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) strengthens LLM
+reasoning, but training often ...
+Processed paper: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Found abstract: We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language
+model that achieves state-...
+Processed paper: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Found abstract: Training LLM agents in multi-turn environments with sparse rewards, where
+completing a single task r...
+Processed paper: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Found abstract: Peer review serves as a backbone of academic research, but in most AI
+conferences, the review qualit...
+Processed paper: ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models
+Found abstract: We introduce a variational reasoning framework for language models that
+treats thinking traces as la...
+Processed paper: Variational Reasoning for Language Models
+Found abstract: LLMs are often trained with RL from human or AI feedback, yet such methods
+typically compress nuance...
+Processed paper: Language Models Can Learn from Verbal Feedback Without Scalar Rewards
+Found abstract: Image captioning is a fundamental task that bridges the visual and linguistic
+domains, playing a cri...
+Processed paper: CapRL: Stimulating Dense Image Caption Capabilities via Reinforcement
+  Learning
+Found abstract: The ability of robots to interpret human instructions and execute
+manipulation tasks necessitates th...
+Processed paper: MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial
+  Reasoning
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) is a powerful framework
+for improving the reas...
+Processed paper: No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM
+  Reinforcement Learning via Entropy-Guided Advantage Shaping
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: LongLive: Real-time Interactive Long Video Generation
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: ReviewScore: Misinformed Peer Review Detection with Large Language
+  Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Variational Reasoning for Language Models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Language Models Can Learn from Verbal Feedback Without Scalar Rewards
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: CapRL: Stimulating Dense Image Caption Capabilities via Reinforcement
+  Learning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial
+  Reasoning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM
+  Reinforcement Learning via Entropy-Guided Advantage Shaping
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W40.json...
+
+Updating Notion database...
+Creating new paper: 실시간 대화형 장긴 영상 생성 시스템
+Creating new paper: 엔트로피 안전 추론을 위한 분위수 이점 추정
+Creating new paper: MinerU2.5: 효율적인 고해상도 문서 구문 분석을 위한 분리된 Vision-Language 모델
+Creating new paper: 엔트로피 정규화된 정책 최적화를 통한 LLM 에이전트들의 훈련
+Creating new paper: 리뷰스코어: 대형 언어 모델을 활용한 잘못된 피어 리뷰 탐지
+Creating new paper: 언어 모델을 위한 변수 추론
+Creating new paper: 언어 모델이 스칼라 보상 없이 언어적 피드백으로부터 학습할 수 있다
+Creating new paper: CapRL: 보상기반 강화학습을 통한 밀도 높은 이미지 캡션 능력 제고
+Creating new paper: MesaTask: 작업 주도형 3D 공간 추론을 통한 테이블탑 장면 생성 방향
+Creating new paper: Prompt가 남긴 것이 없다: LLM에서 Zero-Variance Prompts를 활용한 강화 학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Sep 29 22:09:30 UTC 2025 ===
+

@@ -1,0 +1,153 @@
+=== Paper Collection Started at Mon Nov 10 01:36:24 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W46
+URL: https://huggingface.co/papers/week/2025-W46
+Found 10 papers in weekly view
+Fetching likes for: Thinking with Video: Video Generation as a Promising Multimodal
+  Reasoning Paradigm
+Fetching likes for: Diffusion Language Models are Super Data Learners
+Fetching likes for: VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual
+  Representation
+Fetching likes for: Don't Blind Your VLA: Aligning Visual Representations for OOD
+  Generalization
+Fetching likes for: V-Thinker: Interactive Thinking with Images
+Fetching likes for: Every Activation Boosted: Scaling General Reasoner to 1 Trillion Open
+  Language Foundation
+Fetching likes for: ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning
+Fetching likes for: OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows
+Fetching likes for: Scaling Agent Learning via Experience Synthesis
+Fetching likes for: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats
+Selected top 10 papers by likes:
+1. Thinking with Video: Video Generation as a Promising Multimodal
+  Reasoning Paradigm (162 likes)
+2. Diffusion Language Models are Super Data Learners (95 likes)
+3. VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual
+  Representation (95 likes)
+4. Don't Blind Your VLA: Aligning Visual Representations for OOD
+  Generalization (88 likes)
+5. V-Thinker: Interactive Thinking with Images (81 likes)
+6. Every Activation Boosted: Scaling General Reasoner to 1 Trillion Open
+  Language Foundation (80 likes)
+7. ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning (78 likes)
+8. OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows (70 likes)
+9. Scaling Agent Learning via Experience Synthesis (64 likes)
+10. INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats (63 likes)
+Found abstract: "Thinking with Text" and "Thinking with Images" paradigm significantly
+improve the reasoning ability...
+Processed paper: Thinking with Video: Video Generation as a Promising Multimodal
+  Reasoning Paradigm
+Found abstract: Under strictly controlled pre-training settings, we observe a Crossover: when
+unique data is limited...
+Processed paper: Diffusion Language Models are Super Data Learners
+Found abstract: Code has emerged as a precise and executable medium for reasoning and action
+in the agent era. Yet, ...
+Processed paper: VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual
+  Representation
+Found abstract: The growing success of Vision-Language-Action (VLA) models stems from the
+promise that pretrained Vi...
+Processed paper: Don't Blind Your VLA: Aligning Visual Representations for OOD
+  Generalization
+Found abstract: Empowering Large Multimodal Models (LMMs) to deeply integrate image
+interaction with long-horizon re...
+Processed paper: V-Thinker: Interactive Thinking with Images
+Found abstract: We introduce Ling 2.0, a series reasoning-oriented language foundation built
+upon the principle that...
+Processed paper: Every Activation Boosted: Scaling General Reasoner to 1 Trillion Open
+  Language Foundation
+Found abstract: Multimodal reasoning requires iterative coordination between language and
+vision, yet it remains unc...
+Processed paper: ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning
+Found abstract: Computer-using agents powered by Vision-Language Models (VLMs) have
+demonstrated human-like capabili...
+Processed paper: OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows
+Found abstract: While reinforcement learning (RL) can empower large language model (LLM)
+agents by enabling self-imp...
+Processed paper: Scaling Agent Learning via Experience Synthesis
+Found abstract: Modern AI hardware, such as Nvidia's Blackwell architecture, is increasingly
+embracing low-precision...
+Processed paper: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Thinking with Video: Video Generation as a Promising Multimodal
+  Reasoning Paradigm
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Diffusion Language Models are Super Data Learners
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual
+  Representation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Don't Blind Your VLA: Aligning Visual Representations for OOD
+  Generalization
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: V-Thinker: Interactive Thinking with Images
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Every Activation Boosted: Scaling General Reasoner to 1 Trillion Open
+  Language Foundation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: ThinkMorph: Emergent Properties in Multimodal Interleaved
+  Chain-of-Thought Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 78  ->  54
+Update date_collected: 2025-11-10T10:36:33.439419+09:00  ->  2025-11-04T07:08:16.728324+09:00
+
+Processing paper 8/10
+Title: OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid
+  Validation in Realistic Workflows
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  59
+Update date_collected: 2025-11-10T10:36:33.440790+09:00  ->  2025-11-04T07:08:16.727050+09:00
+
+Processing paper 9/10
+Title: Scaling Agent Learning via Experience Synthesis
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization
+  Formats
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  46
+Update date_collected: 2025-11-10T10:36:33.443629+09:00  ->  2025-11-04T07:08:16.729820+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W46.json...
+
+Updating Notion database...
+Updating paper: 동영상을 통한 사고: 약속된 다중모달 추론 패러다임으로서의 동영상 생성 (likes: 160 -> 162)
+Paper already exists with same likes count: 확산 언어 모델은 슈퍼 데이터 학습자들이다
+Paper already exists with same likes count: VCode: SVG를 기호적 시각 표현으로 하는 멀티모달 코딩 벤치마크
+Paper already exists with same likes count: 당신의 VLA를 잃지 마세요: OOD 일반화를 위한 시각적 표현 정렬
+Paper already exists with same likes count: 이미지와 상호작용하는 V-Thinker: 대화형 사고
+Paper already exists with same likes count: 모든 활성화가 촉진된다: 1조 오픈 언어 기초로 범용 추론기를 확장하기
+Paper already exists with same likes count: ThinkMorph: 다중 모달 교차체인 사고 추론에서의 신생 속성
+Paper already exists with same likes count: OS-Sentinel: 혼합 검증을 통한 안전 강화 모바일 GUI 에이전트로
+Updating paper: 경험 합성을 통한 에이전트 학습 확장 (likes: 63 -> 64)
+Paper already exists with same likes count: INT 대 FP: 소수점 저비트 양자화 형식의 포괄적 연구
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Nov 10 01:37:52 UTC 2025 ===
+

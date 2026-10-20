@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Apr 21 22:21:11 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W17
+URL: https://huggingface.co/papers/week/2026-W17
+Found 10 papers in weekly view
+Fetching likes for: Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation
+Fetching likes for: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Fetching likes for: OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation
+Fetching likes for: Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
+Fetching likes for: OpenGame: Open Agentic Coding for Games
+Fetching likes for: Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips
+Fetching likes for: PersonaVLM: Long-Term Personalized Multimodal LLMs
+Fetching likes for: Qwen3.5-Omni Technical Report
+Fetching likes for: MultiWorld: Scalable Multi-Agent Multi-View Video World Models
+Fetching likes for: EasyVideoR1: Easier RL for Video Understanding
+Selected top 10 papers by likes:
+1. Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation (86 likes)
+2. Elucidating the SNR-t Bias of Diffusion Probabilistic Models (69 likes)
+3. OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation (65 likes)
+4. Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence (60 likes)
+5. OpenGame: Open Agentic Coding for Games (49 likes)
+6. Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips (46 likes)
+7. PersonaVLM: Long-Term Personalized Multimodal LLMs (42 likes)
+8. Qwen3.5-Omni Technical Report (40 likes)
+9. MultiWorld: Scalable Multi-Agent Multi-View Video World Models (35 likes)
+10. EasyVideoR1: Easier RL for Video Understanding (32 likes)
+Found abstract: Few-step generation has been a long-standing goal, with recent one-step generation methods exemplifi...
+Processed paper: Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation
+Found abstract: Diffusion Probabilistic Models have demonstrated remarkable performance across a wide range of gener...
+Processed paper: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Found abstract: Chain-of-Thought (CoT) reasoning has become a powerful driver of trajectory prediction in VLA-based ...
+Processed paper: OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation
+Found abstract: Large language models are increasingly expected to serve as general-purpose agents that interact wit...
+Processed paper: Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
+Found abstract: Game development sits at the intersection of creative design and intricate software engineering, dem...
+Processed paper: OpenGame: Open Agentic Coding for Games
+Found abstract: Deep Neural Networks (DNNs) can be catastrophically disrupted by flipping only a handful of paramete...
+Processed paper: Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips
+Found abstract: Multimodal Large Language Models (MLLMs) serve as daily assistants for millions. However, their abil...
+Processed paper: PersonaVLM: Long-Term Personalized Multimodal LLMs
+Found abstract: In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Represe...
+Processed paper: Qwen3.5-Omni Technical Report
+Found abstract: Video world models have achieved remarkable success in simulating environmental dynamics in response...
+Processed paper: MultiWorld: Scalable Multi-Agent Multi-View Video World Models
+Found abstract: Reinforcement learning from verifiable rewards (RLVR) has demonstrated remarkable effectiveness in i...
+Processed paper: EasyVideoR1: Easier RL for Video Understanding
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  67
+Update date_collected: 2026-04-22T07:21:21.158390+09:00  ->  2026-04-21T07:22:30.089267+09:00
+
+Processing paper 3/10
+Title: OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: OpenGame: Open Agentic Coding for Games
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  38
+Update date_collected: 2026-04-22T07:21:21.165953+09:00  ->  2026-04-21T07:22:30.090829+09:00
+
+Processing paper 7/10
+Title: PersonaVLM: Long-Term Personalized Multimodal LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  32
+Update date_collected: 2026-04-22T07:21:21.167369+09:00  ->  2026-04-21T07:22:30.092528+09:00
+
+Processing paper 8/10
+Title: Qwen3.5-Omni Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  21
+Update date_collected: 2026-04-22T07:21:21.168874+09:00  ->  2026-04-21T07:22:30.095458+09:00
+
+Processing paper 9/10
+Title: MultiWorld: Scalable Multi-Agent Multi-View Video World Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: EasyVideoR1: Easier RL for Video Understanding
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W17.json...
+
+Updating Notion database...
+Creating new paper: 텍스트를 통한 한 단계 이미지 생성 확장: 판별적 텍스트 표현을 통해
+Updating paper: 확산 확률 모델의 SNR-t 편향 해석 (likes: 67 -> 69)
+Creating new paper: 비전-언어 설명을 통한 일단계 은닉 추론과 계획 (OneVL)
+Creating new paper: Agent-World: 진화하는 일반 에이전트 지능을 위한 실제 환경 합성의 확장
+Creating new paper: OpenGame: 게임을 위한 오픈 에이전트 코딩
+Updating paper: 데이터나 최적화 없이 최대 뇌 손상: 부호 비트 뒤집기를 통한 신경망 교란 (likes: 38 -> 46)
+Updating paper: PersonaVLM: 장기 개인화된 멀티모달 LLMs (likes: 32 -> 42)
+Updating paper: Qwen3.5-Omni 기술 보고서 (likes: 21 -> 40)
+Creating new paper: 멀티월드: 확장 가능한 다중 에이전트 다중-뷰 비디오 월드 모델 (Multi-World: Scalable Multi-Agent Multi-View Video World Models)
+Creating new paper: EasyVideoR1: 비디오 이해를 위한 보다 쉬운 강화 학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Apr 21 22:22:55 UTC 2026 ===
+

@@ -1,0 +1,119 @@
+=== Paper Collection Started at Wed Aug  5 23:08:03 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W32
+URL: https://huggingface.co/papers/week/2026-W32
+Found 10 papers in weekly view
+Fetching likes for: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks
+Fetching likes for: LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks
+Fetching likes for: Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs
+Fetching likes for: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Fetching likes for: Mental World Modeling
+Fetching likes for: DAPD: Dual-Anchored Policy Distillation
+Fetching likes for: MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations
+Fetching likes for: JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion
+Fetching likes for: AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling
+Fetching likes for: Hunyuan3D-Buffalo 1.0: A Unified Multimodal Model for Scalable 3D Generation, Understanding, and Editing
+Selected top 10 papers by likes:
+1. SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks (144 likes)
+2. LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks (144 likes)
+3. Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs (137 likes)
+4. From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement (97 likes)
+5. Mental World Modeling (96 likes)
+6. DAPD: Dual-Anchored Policy Distillation (88 likes)
+7. MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations (83 likes)
+8. JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion (77 likes)
+9. AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling (73 likes)
+10. Hunyuan3D-Buffalo 1.0: A Unified Multimodal Model for Scalable 3D Generation, Understanding, and Editing (71 likes)
+Found abstract: Speech and audio generation is often needed in animation dubbing, audio drama, movies, advertising, ...
+Processed paper: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks
+Found abstract: Large language model (LLM) agents increasingly undertake long-horizon tasks that require sustained r...
+Processed paper: LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks
+Found abstract: Recent Vision-Language-Action (VLA) models for autonomous driving (AD) increasingly utilize chain-of...
+Processed paper: Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-orient...
+Processed paper: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Found abstract: World models enable a predictive substrate for planning and action, yet existing formulations merely...
+Processed paper: Mental World Modeling
+Found abstract: On-policy (self) distillation (OPSD) is increasingly adopted for language-model post-training. It st...
+Processed paper: DAPD: Dual-Anchored Policy Distillation
+Found abstract: Large language model agents are increasingly evaluated as autonomous tool users, yet most benchmarks...
+Processed paper: MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations
+Found abstract: Real-time video editing requires low-latency causal generation with bounded computational resources ...
+Processed paper: JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion
+Found abstract: Language remains an outlier in generative modeling: while images, video, and audio are increasingly ...
+Processed paper: AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling
+Found abstract: Recent advances in image generation have demonstrated the potential of unified multimodal models tha...
+Processed paper: Hunyuan3D-Buffalo 1.0: A Unified Multimodal Model for Scalable 3D Generation, Understanding, and Editing
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 144  ->  140
+Update date_collected: 2026-08-06T08:08:12.610291+09:00  ->  2026-08-05T08:09:52.735203+09:00
+
+Processing paper 2/10
+Title: LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks
+Paper already exists, checking if translation is complete...
+Update likes: 144  ->  126
+Update date_collected: 2026-08-06T08:08:12.613364+09:00  ->  2026-08-05T08:09:52.736732+09:00
+
+Processing paper 3/10
+Title: Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Paper already exists, checking if translation is complete...
+Update likes: 97  ->  89
+Update date_collected: 2026-08-06T08:08:12.619888+09:00  ->  2026-08-05T08:09:52.739803+09:00
+
+Processing paper 5/10
+Title: Mental World Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 96  ->  93
+Update date_collected: 2026-08-06T08:08:12.622714+09:00  ->  2026-08-05T08:09:52.738132+09:00
+
+Processing paper 6/10
+Title: DAPD: Dual-Anchored Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 88  ->  54
+Update date_collected: 2026-08-06T08:08:12.625595+09:00  ->  2026-08-05T08:09:52.742655+09:00
+
+Processing paper 7/10
+Title: MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Hunyuan3D-Buffalo 1.0: A Unified Multimodal Model for Scalable 3D Generation, Understanding, and Editing
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W32.json...
+
+Updating Notion database...
+Updating paper: SwanTale: 통합된 다화자 음성 및 오디오 생성을 위한 지시 및 제로샷 작업 (likes: 140 -> 144)
+Updating paper: Real-World 작업용 장기 고려 에이전트 발전을 위한 LongHorizon-Harness (likes: 126 -> 144)
+Creating new paper: 자율 주행 VLM에서 검증 가능한 추론을 위한 미래 궤적의 연기된 노출
+Updating paper: RLVR에서 RLSVR로: 과제 변환이 열린 마음의 LLM 자가 향상을 유도합니다 (likes: 89 -> 97)
+Updating paper: 정신적 세계 모델링 (likes: 93 -> 96)
+Updating paper: 이중 앵커 정책 증류(Dual-Anchored Policy Distillation) (likes: 54 -> 88)
+Creating new paper: MerchantBench: 전자 상거래 운영에서 장기 일관성을 위한 LLM 에이전트를 평가하는 벤치마크
+Creating new paper: JoyAI-Video-Edit: 실시간 오픈 엔드 비디오 편집을 위한 자기 회귀 확산 기반 시스템
+Creating new paper: AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling
+Creating new paper: 훈원3D-버팔로 1.0: 확장 가능한 3D 생성, 이해 및 편집을 위한 통합 다중 모달 모델
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Aug  5 23:09:27 UTC 2026 ===
+

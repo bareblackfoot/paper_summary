@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤗 Hugging Face Papers - Top 10</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-00XPL3BFL6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-00XPL3BFL6');
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤗</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hf-logo {
+            font-size: 3em;
+            margin-right: 15px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            flex: none;
+        }
+
+        .week-nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        /* 카테고리 필터 섹션 */
+        .filter-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* 주차 선택 섹션 */
+        .week-selector {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .week-selector-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .week-selector-content {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .week-dropdown {
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            background: white;
+            color: #333;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }
+
+        .week-dropdown:hover {
+            border-color: #667eea;
+        }
+
+        .week-dropdown:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .current-week-indicator {
+            padding: 8px 16px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        .week-navigation {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .nav-button {
+            padding: 6px 16px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .nav-button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #764ba2, #667eea);
+            color: #fff;
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .category-filter {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            background: white;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .category-filter:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .category-filter.active {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .clear-filters {
+            padding: 8px 16px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .clear-filters:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .filter-count {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .paper-grid {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+
+        .paper-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .paper-rank {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1em;
+            box-shadow: 0 4px 12px rgba(238, 90, 36, 0.4);
+        }
+
+        .paper-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        .paper-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .paper-title a:hover {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .paper-subtitle {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+
+        /* 카테고리 태그 */
+        .paper-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .category-tag {
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            color: #667eea;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            border: 1px solid #667eea30;
+        }
+
+        .paper-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #666;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .upvotes {
+            background: linear-gradient(45deg, #ff5722, #e91e63);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+
+        .authors {
+            color: #607d8b;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .authors-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .paper-date {
+            color: #ff9800;
+            font-size: 0.85em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .korean-title {
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .korean-summary {
+            background: linear-gradient(135deg, #4caf5015, #81c78415);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #4caf50;
+        }
+
+        .korean-summary h4 {
+            background: linear-gradient(45deg, #4caf50, #81c784);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+
+        .korean-summary p {
+            color: #555;
+            line-height: 1.6;
+            word-break: keep-all;
+        }
+
+        .abstract {
+            background: linear-gradient(135deg, #f5f7ff 0%, #f0f2ff 100%);
+            border-left: 4px solid #6366f1;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+        }
+
+        .abstract-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: #4f46e5;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .abstract-title i {
+            font-size: 1.25rem;
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .abstract-title span {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .abstract p {
+            color: #4a5568;
+            line-height: 1.7;
+            margin: 0;
+            font-size: 0.95rem;
+            word-break: keep-all;
+        }
+
+        .paper-link {
+            display: inline-flex;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+        }
+
+        .paper-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* 태블릿 화면 (768px 이하) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 25px 20px;
+                margin-bottom: 25px;
+            }
+
+            .header-title-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .week-nav-buttons {
+                position: static;
+                transform: none;
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1.1em;
+            }
+
+            .stats {
+                gap: 20px;
+            }
+
+            .filter-section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .week-selector {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .week-selector-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+
+            .week-selector-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .week-dropdown {
+                width: 100%;
+                min-width: auto;
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+
+            .week-navigation {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .nav-button {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .current-week-indicator {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .category-filters {
+                gap: 8px;
+            }
+
+            .category-filter {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+
+            .paper-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .paper-card {
+                padding: 20px;
+            }
+
+            .paper-title {
+                font-size: 1.2em;
+            }
+
+            .paper-meta {
+                gap: 12px;
+            }
+        }
+
+        /* 작은 모바일 화면 (480px 이하) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+                border-radius: 15px;
+            }
+
+            .header-title-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hf-logo {
+                font-size: 2.5em;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .header p {
+                font-size: 1em;
+                margin-top: 8px;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+            }
+
+            .stat-item {
+                padding: 12px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+            }
+
+            .stat-number {
+                font-size: 1.8em;
+            }
+
+            .filter-section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .filter-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+
+            .category-filters {
+                gap: 6px;
+            }
+
+            .category-filter {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
+
+            .paper-card {
+                padding: 18px;
+                margin: 0;
+                border-radius: 12px;
+            }
+
+            .paper-rank {
+                width: 30px;
+                height: 30px;
+                font-size: 0.9em;
+                top: -8px;
+                left: 15px;
+            }
+
+            .paper-title {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+                margin-top: 8px;
+                line-height: 1.3;
+            }
+
+            .paper-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
+            .meta-item {
+                width: 100%;
+            }
+
+            .authors {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .authors-text {
+                white-space: normal;
+                word-break: break-word;
+            }
+
+            .upvotes {
+                padding: 8px 14px;
+                font-size: 0.9em;
+            }
+
+            .paper-date {
+                font-size: 0.8em;
+            }
+
+            .korean-summary {
+                padding: 12px;
+                margin: 12px 0;
+            }
+
+            .korean-summary h4 {
+                font-size: 0.9em;
+                margin-bottom: 6px;
+            }
+
+            .korean-summary p {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+
+            .abstract {
+                padding: 1rem;
+                margin: 0.8rem 0;
+            }
+
+            .abstract-title {
+                font-size: 1em;
+                gap: 0.5rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .abstract p {
+                font-size: 0.9em;
+                line-height: 1.6;
+            }
+
+            .paper-link {
+                padding: 10px 16px;
+                font-size: 0.85em;
+                margin-top: 12px;
+                border-radius: 20px;
+            }
+
+            .paper-subtitle {
+                font-size: 0.85em;
+                margin-bottom: 12px;
+            }
+        }
+
+        /* 매우 작은 모바일 화면 (360px 이하) */
+        @media (max-width: 360px) {
+            .container {
+                padding: 8px;
+            }
+
+            .header {
+                padding: 15px 12px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+                word-break: keep-all;
+            }
+
+            .paper-card {
+                padding: 15px;
+            }
+
+            .paper-title {
+                font-size: 1em;
+                line-height: 1.3;
+            }
+
+            .korean-summary {
+                padding: 10px;
+            }
+
+            .abstract {
+                padding: 0.8rem;
+            }
+
+            .abstract-title {
+                font-size: 0.95em;
+            }
+
+            .abstract p {
+                font-size: 0.85em;
+            }
+        }
+
+        /* 터치 인터페이스를 위한 개선 */
+        @media (hover: none) {
+            .paper-card {
+                transform: none !important;
+                transition: background-color 0.3s ease;
+            }
+
+            .paper-card:active {
+                background-color: rgba(255, 255, 255, 0.98);
+            }
+
+            .paper-title a {
+                padding: 8px 0;
+                display: block;
+            }
+
+            .paper-link {
+                padding: 14px 20px;
+                min-height: 44px;
+            }
+        }
+
+        /* 고해상도 화면 대응 */
+        @media (min-width: 1400px) {
+            .paper-grid {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+        }
+
+        /* 가로 모드 모바일 대응 */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .header {
+                padding: 20px;
+            }
+
+            .stats {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .paper-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-title-row">
+                <div class="hf-logo">🤗</div>
+                <h1>Hugging Face Papers</h1>
+            </div>
+            <p id="week-desc" style="margin-top:18px; font-size:1.2em; color:#666;">
+                {% if current_week == 'latest' %}
+                    {{ current_week_str }} ({{ week_range }}) 상위 10개 논문
+                {% else %}
+                    {{ current_week }} ({{ week_range }}) 상위 10개 논문
+                {% endif %}
+            </p>
+            <div class="week-nav-buttons">
+                <a href="#" class="nav-button" id="prev-week" onclick="navigateWeek(-1)">
+                    <i class="fas fa-chevron-left"></i> 이전 주
+                </a>
+                <a href="#" class="nav-button" id="next-week" onclick="navigateWeek(1)">
+                    다음 주 <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            
+
+        </div>
+
+        <!-- 카테고리 필터 섹션 -->
+        <div class="filter-section">
+            <div class="filter-title">
+                <i class="fas fa-filter"></i>
+                카테고리별 필터
+            </div>
+            <div class="category-filters" id="category-filters">
+                <!-- 카테고리 필터 버튼들이 JavaScript로 동적 생성됩니다 -->
+            </div>
+            <div class="filter-controls">
+                <button class="clear-filters" onclick="clearAllFilters()">
+                    <i class="fas fa-times"></i> 모든 필터 해제
+                </button>
+                <div class="filter-count" id="filter-count">
+                    전체 {{ papers|length }}개 논문 표시 중
+                </div>
+            </div>
+        </div>
+
+        <div class="paper-grid" id="paper-grid">
+            {% for paper in papers %}
+            <div class="paper-card" data-categories="{{ paper.categories|join(',') if paper.categories else '기타' }}">
+                <div class="paper-rank">{{ loop.index }}</div>
+                
+                <h2 class="paper-title">
+                    <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
+                </h2>
+                <div class="paper-subtitle">{{ paper.translation.title }}</div>
+
+                <!-- 카테고리 태그 -->
+                {% if paper.categories %}
+                <div class="paper-categories">
+                    {% for category in paper.categories %}
+                    <span class="category-tag">{{ category }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <div class="upvotes">
+                            <i class="fas fa-heart"></i>
+                            {{ paper.likes }}
+                        </div>
+                    </div>
+                    <div class="meta-item authors">
+                        <i class="fas fa-users"></i>
+                        {% if paper.authors %}
+                            {{ paper.authors|join(', ') }}
+                        {% else %}
+                            No authors found
+                        {% endif %}
+                    </div>
+                    {% if paper.published_date %}
+                    <div class="meta-item paper-date">
+                        <i class="far fa-calendar-alt"></i>
+                        {{ paper.published_date }}
+                    </div>
+                    {% endif %}
+                </div>
+
+                {% if paper.summary %}
+                <div class="korean-summary">
+                    <h4><i class="fas fa-lightbulb"></i> 핵심 요약</h4>
+                    <p style="white-space: pre-line">{{ paper.summary }}</p>
+                </div>
+                {% endif %}
+
+                {% if paper.translation.abstract %}
+                <div class="abstract">
+                    <div class="abstract-title">
+                        <i class="fas fa-book-open"></i>
+                        <span>Abstract</span>
+                    </div>
+                    <p>{{ paper.translation.abstract }}</p>
+                </div>
+                {% endif %}
+
+                <a href="{{ paper.url }}" target="_blank" class="paper-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    논문 보기
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        // 모든 카테고리 수집
+        const papers = {{ papers|tojson }};
+        const allCategories = new Set();
+        
+        papers.forEach(paper => {
+            if (paper.categories) {
+                paper.categories.forEach(category => allCategories.add(category));
+            } else {
+                allCategories.add('기타');
+            }
+        });
+
+        // 카테고리 필터 버튼 생성
+        const categoryFiltersContainer = document.getElementById('category-filters');
+        allCategories.forEach(category => {
+            const filterButton = document.createElement('button');
+            filterButton.className = 'category-filter';
+            filterButton.textContent = category;
+            filterButton.onclick = () => toggleFilter(category);
+            categoryFiltersContainer.appendChild(filterButton);
+        });
+
+        let activeFilters = new Set();
+
+        function toggleFilter(category) {
+            const button = event.target;
+            if (activeFilters.has(category)) {
+                activeFilters.delete(category);
+                button.classList.remove('active');
+            } else {
+                activeFilters.add(category);
+                button.classList.add('active');
+            }
+            filterPapers();
+        }
+
+        function clearAllFilters() {
+            activeFilters.clear();
+            document.querySelectorAll('.category-filter').forEach(button => {
+                button.classList.remove('active');
+            });
+            filterPapers();
+        }
+
+        function filterPapers() {
+            const paperCards = document.querySelectorAll('.paper-card');
+            let visibleCount = 0;
+
+            paperCards.forEach(card => {
+                const cardCategories = card.dataset.categories.split(',').map(cat => cat.trim());
+                
+                if (activeFilters.size === 0) {
+                    // 필터가 없으면 모든 카드 표시
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    // 선택된 카테고리와 겹치는지 확인
+                    const hasMatchingCategory = cardCategories.some(cat => activeFilters.has(cat));
+                    card.style.display = hasMatchingCategory ? 'block' : 'none';
+                    if (hasMatchingCategory) visibleCount++;
+                }
+            });
+
+            // 필터 카운트 업데이트
+            document.getElementById('filter-count').textContent = 
+                `${visibleCount}개 논문 표시 중`;
+            
+            // 총 논문 수 업데이트
+            document.getElementById('total-papers').textContent = visibleCount;
+        }
+
+        // 주차 네비게이션 기능
+        const availableWeeks = {{ available_weeks|tojson }};
+        const currentWeek = "{{ current_week }}";
+
+        // 주차에서 연도와 주차 번호 추출하는 함수
+        function parseWeek(weekStr) {
+            const match = weekStr.match(/(\d{4})-W(\d{2})/);
+            if (match) {
+                return {
+                    year: parseInt(match[1]),
+                    week: parseInt(match[2])
+                };
+            }
+            return null;
+        }
+
+        // 주차 문자열 생성하는 함수
+        function createWeekStr(year, week) {
+            return `${year}-W${week.toString().padStart(2, '0')}`;
+        }
+
+        // 주차 네비게이션 함수
+        function navigateWeek(direction) {
+            let targetWeek;
+            
+            if (currentWeek === 'latest') {
+                // 현재 최신 주차에서 (현재 주차 계산 사용)
+                const currentWeekStr = "{{ current_week_str }}";
+                const currentWeekInfo = parseWeek(currentWeekStr);
+                
+                if (!currentWeekInfo) {
+                    alert('현재 주차를 계산할 수 없습니다.');
+                    return;
+                }
+                
+                if (direction === -1) {
+                    // 이전 주로: 현재 주차 - 1
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    
+                    targetWeek = createWeekStr(prevYear, prevWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                } else {
+                    // 다음 주로: 현재 주차 + 1
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    
+                    targetWeek = createWeekStr(nextYear, nextWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                }
+            } else {
+                // 특정 주차에서
+                const currentWeekInfo = parseWeek(currentWeek);
+                if (!currentWeekInfo) {
+                    alert('현재 주차 형식이 올바르지 않습니다.');
+                    return;
+                }
+                
+                if (direction === -1) {
+                    // 이전 주로: 현재 주차 - 1
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52; // 대략적인 연간 주차 수
+                    }
+                    
+                    targetWeek = createWeekStr(prevYear, prevWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                } else {
+                    // 다음 주로: 현재 주차 + 1
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    
+                    targetWeek = createWeekStr(nextYear, nextWeek);
+                    
+                    // 해당 주차가 실제로 존재하는지 확인
+                    if (!availableWeeks.includes(targetWeek)) {
+                        alert('해당 주차의 데이터가 없습니다.');
+                        return;
+                    }
+                }
+            }
+            
+            // 목표 주차로 이동 - 최신 주차는 메인 페이지로, 나머지는 주차별 페이지로
+            const isLocalhost = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+            
+            // 최신 주차(availableWeeks[0])인지 확인
+            if (targetWeek === availableWeeks[0]) {
+                // 최신 주차는 메인 페이지로 이동
+                if (isLocalhost) {
+                    window.location.href = `/static/index.html`;
+                } else {
+                    window.location.href = `/paper_summary/index.html`;
+                }
+            } else {
+                // 이전 주차들은 주차별 페이지로 이동
+                if (isLocalhost) {
+                    window.location.href = `/static/week/${targetWeek}/index.html`;
+                } else {
+                    window.location.href = `/paper_summary/week/${targetWeek}/index.html`;
+                }
+            }
+        }
+
+        // 네비게이션 버튼 상태 업데이트
+        function updateNavigationButtons() {
+            const prevButton = document.getElementById('prev-week');
+            const nextButton = document.getElementById('next-week');
+            
+            if (currentWeek === 'latest') {
+                // 최신 주차에서 (현재 주차 계산 사용)
+                const currentWeekStr = "{{ current_week_str }}";
+                const currentWeekInfo = parseWeek(currentWeekStr);
+                
+                if (!currentWeekInfo) {
+                    prevButton.disabled = true;
+                    nextButton.disabled = true;
+                } else {
+                    // 이전 주차 확인
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    const prevWeekStr = createWeekStr(prevYear, prevWeek);
+                    prevButton.disabled = !availableWeeks.includes(prevWeekStr);
+                    
+                    // 다음 주차 확인
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    const nextWeekStr = createWeekStr(nextYear, nextWeek);
+                    nextButton.disabled = !availableWeeks.includes(nextWeekStr);
+                }
+            } else {
+                // 특정 주차에서
+                const currentWeekInfo = parseWeek(currentWeek);
+                if (!currentWeekInfo) {
+                    prevButton.disabled = true;
+                    nextButton.disabled = true;
+                } else {
+                    // 이전 주차 확인
+                    let prevWeek = currentWeekInfo.week - 1;
+                    let prevYear = currentWeekInfo.year;
+                    if (prevWeek < 1) {
+                        prevYear--;
+                        prevWeek = 52;
+                    }
+                    const prevWeekStr = createWeekStr(prevYear, prevWeek);
+                    prevButton.disabled = !availableWeeks.includes(prevWeekStr);
+                    
+                    // 다음 주차 확인
+                    let nextWeek = currentWeekInfo.week + 1;
+                    let nextYear = currentWeekInfo.year;
+                    if (nextWeek > 52) {
+                        nextYear++;
+                        nextWeek = 1;
+                    }
+                    const nextWeekStr = createWeekStr(nextYear, nextWeek);
+                    nextButton.disabled = !availableWeeks.includes(nextWeekStr);
+                }
+            }
+        }
+        updateNavigationButtons();
+    </script>
+</body>
+</html> 

@@ -1,0 +1,149 @@
+=== Paper Collection Started at Tue Jun 17 22:07:26 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W25
+URL: https://huggingface.co/papers/week/2025-W25
+Found 10 papers in weekly view
+Fetching likes for: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Fetching likes for: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Fetching likes for: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Fetching likes for: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Fetching likes for: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Fetching likes for: Effective Red-Teaming of Policy-Adherent Agents
+Fetching likes for: Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+Fetching likes for: Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation
+Fetching likes for: The Diffusion Duality
+Fetching likes for: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Selected top 10 papers by likes:
+1. MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention (184 likes)
+2. Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning (60 likes)
+3. Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback (45 likes)
+4. DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents (42 likes)
+5. DoTA-RAG: Dynamic of Thought Aggregation RAG (35 likes)
+6. Effective Red-Teaming of Policy-Adherent Agents (35 likes)
+7. Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning (32 likes)
+8. Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation (31 likes)
+9. The Diffusion Duality (30 likes)
+10. Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency (29 likes)
+Found abstract: We introduce MiniMax-M1, the world's first open-weight, large-scale
+hybrid-attention reasoning model...
+Processed paper: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Found abstract: Scientific discoveries increasingly rely on complex multimodal reasoning
+based on information-intens...
+Processed paper: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Found abstract: Recent studies have shown LLMs possess some ability to improve their
+responses when given external f...
+Processed paper: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Found abstract: Deep Research Agents are a prominent category of LLM-based agents. By
+autonomously orchestrating mul...
+Processed paper: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Found abstract: In this paper, we introduce DoTA-RAG (Dynamic-of-Thought Aggregation RAG), a
+retrieval-augmented gen...
+Processed paper: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Found abstract: Task-oriented LLM-based agents are increasingly used in domains with strict
+policies, such as refund...
+Processed paper: Effective Red-Teaming of Policy-Adherent Agents
+Found abstract: We introduce Ego-R1, a novel framework for reasoning over ultra-long (i.e.,
+in days and weeks) egoce...
+Processed paper: Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+Found abstract: We introduce a diffusion-based framework that performs aligned novel view
+image and geometry generat...
+Processed paper: Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation
+Found abstract: Uniform-state discrete diffusion models hold the promise of fast text
+generation due to their inhere...
+Processed paper: The Diffusion Duality
+Found abstract: Recent advances in large reasoning models have enabled complex, step-by-step
+reasoning but often int...
+Processed paper: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning
+  Attention
+Paper already exists, checking if translation is complete...
+Update likes: 184  ->  116
+Update date_collected: 2025-06-18T07:07:34.867114+09:00  ->  2025-06-17T13:50:41.823750+09:00
+
+Processing paper 2/10
+Title: Scientists' First Exam: Probing Cognitive Abilities of MLLM via
+  Perception, Understanding, and Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 60  ->  14
+Update date_collected: 2025-06-18T07:07:34.869121+09:00  ->  2025-06-17T13:50:52.993843+09:00
+
+Processing paper 3/10
+Title: Feedback Friction: LLMs Struggle to Fully Incorporate External Feedback
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  39
+Update date_collected: 2025-06-18T07:07:34.870324+09:00  ->  2025-06-17T13:50:42.535886+09:00
+
+Processing paper 4/10
+Title: DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: DoTA-RAG: Dynamic of Thought Aggregation RAG
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Effective Red-Teaming of Policy-Adherent Agents
+Paper already exists, checking if translation is complete...
+Update likes: 35  ->  33
+Update date_collected: 2025-06-18T07:07:34.873931+09:00  ->  2025-06-17T13:50:52.959114+09:00
+
+Processing paper 7/10
+Title: Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Aligned Novel View Image and Geometry Synthesis via Cross-modal
+  Attention Instillation
+Paper already exists, checking if translation is complete...
+Update likes: 31  ->  29
+Update date_collected: 2025-06-18T07:07:34.876613+09:00  ->  2025-06-17T13:50:52.966640+09:00
+
+Processing paper 9/10
+Title: The Diffusion Duality
+Paper already exists, checking if translation is complete...
+Update likes: 30  ->  28
+Update date_collected: 2025-06-18T07:07:34.877839+09:00  ->  2025-06-17T13:50:52.973576+09:00
+
+Processing paper 10/10
+Title: Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves
+  Reasoning Efficiency
+Paper already exists, checking if translation is complete...
+Update likes: 29  ->  12
+Update date_collected: 2025-06-18T07:07:34.879090+09:00  ->  2025-06-17T13:50:53.007394+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W25.json...
+
+Updating Notion database...
+Updating paper: 라이트닝 어텐션으로 효율적인 테스트 시간 연산 확장하는 MiniMax-M1 (likes: 116 -> 184)
+Updating paper: 과학자들의 첫 번째 시험: 지각, 이해, 추론을 통해 MLLM의 인지 능력 탐구 (likes: 14 -> 60)
+Updating paper: 피드백 마찰: LLMs가 외부 피드백을 완전히 흡수하는 데 어려움을 겪다 (likes: 39 -> 45)
+Creating new paper: 깊은 연구 벤치마크: 깊은 연구 에이전트를 위한 포괄적인 벤치마크
+Creating new paper: 도타-랙: 생각 집합의 동적
+Updating paper: 정책 따르는 에이전트들의 효과적인 레드팀 구성 (likes: 33 -> 35)
+Creating new paper: Ego-R1: 초장툴사고 연쇄를 통한 초장기 자아중심 비디오 추론
+Updating paper: 교차 모달 주의 주입을 통한 정렬된 신규 뷰 이미지 및 기하학 합성 (likes: 29 -> 31)
+Updating paper: 확산 이중성 (likes: 28 -> 30)
+Updating paper: 기다릴 필요 없어요! 사고 토큰 제거가 추론 효율성 향상 (likes: 12 -> 29)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jun 17 22:09:47 UTC 2025 ===
+

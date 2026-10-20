@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Jan 19 22:08:41 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W04
+URL: https://huggingface.co/papers/week/2026-W04
+Found 10 papers in weekly view
+Fetching likes for: Your Group-Relative Advantage Is Biased
+Fetching likes for: The Poisoned Apple Effect: Strategic Manipulation of Mediated Markets via Technology Expansion of AI Agents
+Fetching likes for: Unlocking Implicit Experience: Synthesizing Tool-Use Trajectories from Text
+Fetching likes for: RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
+Fetching likes for: When Personalization Misleads: Understanding and Mitigating Hallucinations in Personalized LLMs
+Fetching likes for: ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models
+Fetching likes for: BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search
+Fetching likes for: FrankenMotion: Part-level Human Motion Generation and Composition
+Fetching likes for: Entropy Sentinel: Continuous LLM Accuracy Monitoring from Decoding Entropy Traces in STEM
+Fetching likes for: ProFit: Leveraging High-Value Signals in SFT via Probability-Guided Token Selection
+Selected top 10 papers by likes:
+1. Your Group-Relative Advantage Is Biased (94 likes)
+2. The Poisoned Apple Effect: Strategic Manipulation of Mediated Markets via Technology Expansion of AI Agents (38 likes)
+3. Unlocking Implicit Experience: Synthesizing Tool-Use Trajectories from Text (30 likes)
+4. RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation (25 likes)
+5. When Personalization Misleads: Understanding and Mitigating Hallucinations in Personalized LLMs (21 likes)
+6. ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models (18 likes)
+7. BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search (12 likes)
+8. FrankenMotion: Part-level Human Motion Generation and Composition (10 likes)
+9. Entropy Sentinel: Continuous LLM Accuracy Monitoring from Decoding Entropy Traces in STEM (10 likes)
+10. ProFit: Leveraging High-Value Signals in SFT via Probability-Guided Token Selection (9 likes)
+Found abstract: Reinforcement Learning from Verifier Rewards (RLVR) has emerged as a widely used approach for post-t...
+Processed paper: Your Group-Relative Advantage Is Biased
+Found abstract: The integration of AI agents into economic markets fundamentally alters the landscape of strategic i...
+Processed paper: The Poisoned Apple Effect: Strategic Manipulation of Mediated Markets via Technology Expansion of AI Agents
+Found abstract: Enabling Large Language Models (LLMs) to effectively utilize tools in multi-turn interactions is ess...
+Processed paper: Unlocking Implicit Experience: Synthesizing Tool-Use Trajectories from Text
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has driven substantial progress in reasoning-i...
+Processed paper: RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
+Found abstract: Personalized large language models (LLMs) adapt model behavior to individual users to enhance user s...
+Processed paper: When Personalization Misleads: Understanding and Mitigating Hallucinations in Personalized LLMs
+Found abstract: Vision-Language-Action (VLA) models have emerged as essential generalist robot policies for diverse ...
+Processed paper: ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models
+Found abstract: RL-based agentic search enables LLMs to solve complex questions via dynamic planning and external se...
+Processed paper: BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search
+Found abstract: Human motion generation from text prompts has made remarkable progress in recent years. However, exi...
+Processed paper: FrankenMotion: Part-level Human Motion Generation and Composition
+Found abstract: Deploying LLMs raises two coupled challenges: (1) monitoring - estimating where a model underperform...
+Processed paper: Entropy Sentinel: Continuous LLM Accuracy Monitoring from Decoding Entropy Traces in STEM
+Found abstract: Supervised fine-tuning (SFT) is a fundamental post-training strategy to align Large Language Models ...
+Processed paper: ProFit: Leveraging High-Value Signals in SFT via Probability-Guided Token Selection
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Your Group-Relative Advantage Is Biased
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: The Poisoned Apple Effect: Strategic Manipulation of Mediated Markets via Technology Expansion of AI Agents
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Unlocking Implicit Experience: Synthesizing Tool-Use Trajectories from Text
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: When Personalization Misleads: Understanding and Mitigating Hallucinations in Personalized LLMs
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: FrankenMotion: Part-level Human Motion Generation and Composition
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Entropy Sentinel: Continuous LLM Accuracy Monitoring from Decoding Entropy Traces in STEM
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: ProFit: Leveraging High-Value Signals in SFT via Probability-Guided Token Selection
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W04.json...
+
+Updating Notion database...
+Creating new paper: 그룹 상대적 우위는 편향되어 있습니다
+Creating new paper: 인공 지능 에이전트 기술 확장을 통한 매개시장의 전략적 조작: 독사과효과(The Poisoned Apple Effect)
+Creating new paper: 암묵 경험 해제: 텍스트로부터 도구 사용 궤적 합성
+Creating new paper: 루브릭허브: 자동 코스 투 파인 생성을 통한 포괄적이고 고도구별 루브릭 데이터셋
+Creating new paper: 개인화 모델이 오해를 일으킬 때: 개인화 LLM의 환각 이해와 완화
+Creating new paper: ACoT-VLA: 시각-언어-행동 모델을 위한 행동 사슬-의사결정
+Creating new paper: 신뢰성 있는 에이전트 검색을 위한 경계 인식 정책 최적화 (BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search)
+Creating new paper: FrankenMotion: 부분 수준 인간 동작 생성과 합성
+Creating new paper: 엔트로피 감시자: STEM에서 디코딩 엔트로피 트레이스로부터 지속적인 LLM 정확도 모니터링
+Creating new paper: ProFit: 확률 가이드 토큰 선택을 통해 SFT에서 고 가치 신호 활용
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jan 19 22:10:52 UTC 2026 ===
+

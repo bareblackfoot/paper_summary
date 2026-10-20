@@ -1,0 +1,109 @@
+=== Paper Collection Started at Tue Feb  3 22:13:28 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W06
+URL: https://huggingface.co/papers/week/2026-W06
+Found 10 papers in weekly view
+Fetching likes for: Green-VLA: Staged Vision-Language-Action Model for Generalist Robots
+Fetching likes for: Kimi K2.5: Visual Agentic Intelligence
+Fetching likes for: Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models
+Fetching likes for: Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models
+Fetching likes for: Closing the Loop: Universal Repository Representation with RPG-Encoder
+Fetching likes for: UniReason 1.0: A Unified Reasoning Framework for World Knowledge Aligned Image Generation and Editing
+Fetching likes for: Golden Goose: A Simple Trick to Synthesize Unlimited RLVR Tasks from Unverifiable Internet Text
+Fetching likes for: PaperBanana: Automating Academic Illustration for AI Scientists
+Fetching likes for: ASTRA: Automated Synthesis of agentic Trajectories and Reinforcement Arenas
+Fetching likes for: Quartet II: Accurate LLM Pre-Training in NVFP4 by Improved Unbiased Gradient Estimation
+Selected top 10 papers by likes:
+1. Green-VLA: Staged Vision-Language-Action Model for Generalist Robots (171 likes)
+2. Kimi K2.5: Visual Agentic Intelligence (143 likes)
+3. Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models (124 likes)
+4. Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models (107 likes)
+5. Closing the Loop: Universal Repository Representation with RPG-Encoder (75 likes)
+6. UniReason 1.0: A Unified Reasoning Framework for World Knowledge Aligned Image Generation and Editing (68 likes)
+7. Golden Goose: A Simple Trick to Synthesize Unlimited RLVR Tasks from Unverifiable Internet Text (67 likes)
+8. PaperBanana: Automating Academic Illustration for AI Scientists (59 likes)
+9. ASTRA: Automated Synthesis of agentic Trajectories and Reinforcement Arenas (53 likes)
+10. Quartet II: Accurate LLM Pre-Training in NVFP4 by Improved Unbiased Gradient Estimation (48 likes)
+Found abstract: We introduce Green-VLA, a staged Vision-Language-Action (VLA) framework for real-world deployment on...
+Processed paper: Green-VLA: Staged Vision-Language-Action Model for Generalist Robots
+Found abstract: We introduce Kimi K2.5, an open-source multimodal agentic model designed to advance general agentic ...
+Processed paper: Kimi K2.5: Visual Agentic Intelligence
+Found abstract: Multimodal large language models (MLLMs) have achieved remarkable success across a broad range of vi...
+Processed paper: Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models
+Found abstract: Multimodal Large Language Models (MLLMs) have advanced VQA and now support Vision-DeepResearch syste...
+Processed paper: Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models
+Found abstract: Current repository agents encounter a reasoning disconnect due to fragmented representations, as exi...
+Processed paper: Closing the Loop: Universal Repository Representation with RPG-Encoder
+Found abstract: Unified multimodal models often struggle with complex synthesis tasks that demand deep reasoning, an...
+Processed paper: UniReason 1.0: A Unified Reasoning Framework for World Knowledge Aligned Image Generation and Editing
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has become a cornerstone for unlocking complex...
+Processed paper: Golden Goose: A Simple Trick to Synthesize Unlimited RLVR Tasks from Unverifiable Internet Text
+Found abstract: Despite rapid advances in autonomous AI scientists powered by language models, generating publicatio...
+Processed paper: PaperBanana: Automating Academic Illustration for AI Scientists
+Found abstract: Large language models (LLMs) are increasingly used as tool-augmented agents for multi-step decision ...
+Processed paper: ASTRA: Automated Synthesis of agentic Trajectories and Reinforcement Arenas
+Found abstract: The NVFP4 lower-precision format, supported in hardware by NVIDIA Blackwell GPUs, promises to allow,...
+Processed paper: Quartet II: Accurate LLM Pre-Training in NVFP4 by Improved Unbiased Gradient Estimation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Green-VLA: Staged Vision-Language-Action Model for Generalist Robots
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Kimi K2.5: Visual Agentic Intelligence
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Closing the Loop: Universal Repository Representation with RPG-Encoder
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: UniReason 1.0: A Unified Reasoning Framework for World Knowledge Aligned Image Generation and Editing
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Golden Goose: A Simple Trick to Synthesize Unlimited RLVR Tasks from Unverifiable Internet Text
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: PaperBanana: Automating Academic Illustration for AI Scientists
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: ASTRA: Automated Synthesis of agentic Trajectories and Reinforcement Arenas
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Quartet II: Accurate LLM Pre-Training in NVFP4 by Improved Unbiased Gradient Estimation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W06.json...
+
+Updating Notion database...
+Creating new paper: 일반용 로봇을 위한 단계적 비전-언어-행동 모델인 Green-VLA
+Creating new paper: 키미 K2.5: 시각적 에이전트 인공지능
+Creating new paper: 비전-깊이연구: 멀티모달 대형언어모델(Multimodal Large Language Models)의 깊은 연구 능력을 장려
+Creating new paper: 비전-심층연구 벤치마크: 다중모달 대형 언어 모델을 위한 시각적 및 텍스트 검색의 재고
+Creating new paper: 루프를 닫는다: RPG-인코더를 활용한 보편적 저장소 표현
+Creating new paper: 통합된 추론 프레임워크 UniReason 1.0: 세계 지식에 맞춘 이미지 생성과 편집을 위한 통합된 추론 프레임워크
+Creating new paper: 황금 알: 확인할 수 없는 인터넷 텍스트에서 제한 없이 RLVR 작업을 합성하는 간단한 방법
+Creating new paper: AI 과학자를 위한 학술 그림 자동화: PaperBanana
+Creating new paper: ASTRA: 자발적 궤적 및 강화 학습 환경의 자동 시험
+Creating new paper: Quartet II: 향상된 편향되지 않은 기울기 추정을 통한 NVFP4에서 정확한 LLM 사전 훈련
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Feb  3 22:15:56 UTC 2026 ===
+

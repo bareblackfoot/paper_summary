@@ -1,0 +1,127 @@
+=== Paper Collection Started at Sat Apr  4 22:12:11 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W15
+URL: https://huggingface.co/papers/week/2026-W15
+Found 10 papers in weekly view
+Fetching likes for: CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence
+Fetching likes for: FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization
+Fetching likes for: ClawKeeper: Comprehensive Safety Protection for OpenClaw Agents Through Skills, Plugins, and Watchers
+Fetching likes for: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Fetching likes for: DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models
+Fetching likes for: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Fetching likes for: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Fetching likes for: LongCat-Next: Lexicalizing Modalities as Discrete Tokens
+Fetching likes for: The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook
+Fetching likes for: Generative World Renderer
+Selected top 10 papers by likes:
+1. CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence (330 likes)
+2. FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization (313 likes)
+3. ClawKeeper: Comprehensive Safety Protection for OpenClaw Agents Through Skills, Plugins, and Watchers (174 likes)
+4. ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling (153 likes)
+5. DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models (152 likes)
+6. Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models (151 likes)
+7. TAPS: Task Aware Proposal Distributions for Speculative Sampling (140 likes)
+8. LongCat-Next: Lexicalizing Modalities as Discrete Tokens (131 likes)
+9. The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook (114 likes)
+10. Generative World Renderer (85 likes)
+Found abstract: The convergence of low-altitude economies, embodied intelligence, and air-ground cooperative systems...
+Processed paper: CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence
+Found abstract: We present Future-KL Influenced Policy Optimization (FIPO), a reinforcement learning algorithm desig...
+Processed paper: FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization
+Found abstract: OpenClaw has rapidly established itself as a leading open-source autonomous agent runtime, offering ...
+Processed paper: ClawKeeper: Comprehensive Safety Protection for OpenClaw Agents Through Skills, Plugins, and Watchers
+Found abstract: Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional ar...
+Processed paper: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Found abstract: Data-centric training has emerged as a promising direction for improving large language models (LLMs...
+Processed paper: DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models
+Found abstract: Video world models have shown immense potential in simulating the physical world, yet existing memor...
+Processed paper: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Found abstract: Speculative decoding accelerates autoregressive generation by letting a lightweight draft model prop...
+Processed paper: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Found abstract: The prevailing Next-Token Prediction (NTP) paradigm has driven the success of large language models ...
+Processed paper: LongCat-Next: Lexicalizing Modalities as Discrete Tokens
+Found abstract: Latent space is rapidly emerging as a native substrate for language-based models. While modern syste...
+Processed paper: The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook
+Found abstract: Scaling generative inverse and forward rendering to real-world scenarios is bottlenecked by the limi...
+Processed paper: Generative World Renderer
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 330  ->  302
+Update date_collected: 2026-04-05T07:12:21.170072+09:00  ->  2026-04-04T07:14:24.033028+09:00
+
+Processing paper 2/10
+Title: FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 313  ->  308
+Update date_collected: 2026-04-05T07:12:21.171864+09:00  ->  2026-04-04T07:14:24.031580+09:00
+
+Processing paper 3/10
+Title: ClawKeeper: Comprehensive Safety Protection for OpenClaw Agents Through Skills, Plugins, and Watchers
+Paper already exists, checking if translation is complete...
+Update likes: 174  ->  169
+Update date_collected: 2026-04-05T07:12:21.173602+09:00  ->  2026-04-04T07:14:24.034746+09:00
+
+Processing paper 4/10
+Title: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Paper already exists, checking if translation is complete...
+Update likes: 153  ->  151
+Update date_collected: 2026-04-05T07:12:21.175196+09:00  ->  2026-04-04T07:14:24.036358+09:00
+
+Processing paper 5/10
+Title: DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 152  ->  138
+Update date_collected: 2026-04-05T07:12:21.177618+09:00  ->  2026-04-04T07:14:24.040310+09:00
+
+Processing paper 6/10
+Title: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Paper already exists, checking if translation is complete...
+Update likes: 151  ->  147
+Update date_collected: 2026-04-05T07:12:21.179177+09:00  ->  2026-04-04T07:14:24.037919+09:00
+
+Processing paper 7/10
+Title: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Paper already exists, checking if translation is complete...
+Update likes: 140  ->  137
+Update date_collected: 2026-04-05T07:12:21.180595+09:00  ->  2026-04-04T07:14:24.041710+09:00
+
+Processing paper 8/10
+Title: LongCat-Next: Lexicalizing Modalities as Discrete Tokens
+Paper already exists, checking if translation is complete...
+Update likes: 131  ->  127
+Update date_collected: 2026-04-05T07:12:21.182998+09:00  ->  2026-04-04T07:14:24.044097+09:00
+
+Processing paper 9/10
+Title: The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook
+Paper already exists, checking if translation is complete...
+Update likes: 114  ->  97
+Update date_collected: 2026-04-05T07:12:21.185377+09:00  ->  2026-04-04T07:14:24.046466+09:00
+
+Processing paper 10/10
+Title: Generative World Renderer
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W15.json...
+
+Updating Notion database...
+Updating paper: CARLA-Air: CARLA 세계 안에서 드론을 조종하라 -- 공중-지상 융합 인텔리전스를 위한 통합 인프라 (likes: 302 -> 330)
+Updating paper: FIPO: 미래-KL 영향을 받은 정책 최적화를 통한 심층 추론 유도 (likes: 308 -> 313)
+Updating paper: ClawKeeper: Skills, Plugins, 및 Watchers를 통한 개방형 Claw 에이전트의 포괄적인 안전 보호 (likes: 169 -> 174)
+Updating paper: ShotStream: 대화형 이야기 만들기를 위한 스트리밍 멀티샷 비디오 생성 (likes: 151 -> 153)
+Updating paper: 데이터플렉스: 대용량 언어 모델의 데이터 중심 동적 훈련을 위한 통합 프레임워크 (likes: 138 -> 152)
+Updating paper: 시야 밖, 그러나 마음속에: 동적 비디오 월드 모델을 위한 하이브리드 메모리 (likes: 147 -> 151)
+Updating paper: TAPS: Task Aware Proposal Distributions for Speculative Sampling (likes: 137 -> 140)
+Updating paper: LongCat-Next: 모달리티를 이산 토큰으로 표현하기 (likes: 127 -> 131)
+Updating paper: 잠재 공간: 기반, 발전, 메커니즘, 능력, 전망 (likes: 97 -> 114)
+Creating new paper: 생성적 세계 렌더러
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Apr  4 22:14:37 UTC 2026 ===
+

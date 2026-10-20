@@ -1,0 +1,264 @@
+[
+  {
+    "title": "VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training",
+    "abstract": "Training stability remains a central challenge in reinforcement learning (RL) for large language models (LLMs). Policy staleness, asynchronous training, and mismatches between training and inference engines all cause the behavior policy to diverge from the current policy, risking training collapse. Importance sampling provides a principled correction for this distribution shift but suffers from high variance; existing remedies such as token-level clipping and sequence-level normalization lack a unified theoretical foundation. We propose Variational sEquence-level Soft Policy Optimization (VESPO). By incorporating variance reduction into a variational formulation over proposal distributions, VESPO derives a closed-form reshaping kernel that operates directly on sequence-level importance weights without length normalization. Experiments on mathematical reasoning benchmarks show that VESPO maintains stable training under staleness ratios up to 64x and fully asynchronous execution, and delivers consistent gains across both dense and Mixture-of-Experts models. Code is available at https://github.com/FloyedShen/VESPO",
+    "authors": [
+      "Guobin Shen",
+      "Chenxiao Zhao",
+      "Xiang Cheng",
+      "Lei Huang",
+      "Xing Yu"
+    ],
+    "likes": 158,
+    "published_date": "Feb 11",
+    "url": "https://huggingface.co/papers/2602.10693",
+    "date_collected": "2026-02-24T07:21:28.157680+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "VESPO: 안정적인 오프-폴리시 LLM 훈련을 위한 변이적 시퀀스-레벨 소프트 정책 최적화",
+      "abstract": "대형 언어 모델(LLM)에 대한 강화 학습(RL)에서 훈련 안정성은 여전히 중요한 과제입니다. 정책 오래됨, 비동기 훈련, 그리고 훈련과 추론 엔진 간 불일치로 인해 행위 정책이 현재 정책에서 벗어나면서 훈련이 붕괴할 위험이 있습니다. 중요도 샘플링은 이 분포 변이를 교정하는 원칙적인 방법을 제공하지만, 고분산에 시달립니다. 기존의 해결책인 토큰-레벨 클리핑 및 시퀀스-레벨 정규화는 통일된 이론적 기반을 가지고 있지 않습니다. 우리는 변이적 시퀀스-레벨 소프트 정책 최적화(VESPO)를 제안합니다. VESPO는 제안 분포에 대한 변이 감소를 통합하여, 길이 정규화 없이도 시퀀스-레벨 중요도 가중치에 직접 작용하는 닫힌 형태의 재구성 커널을 유도합니다. 수학적 추론 벤치마크 실험 결과, VESPO는 정책 오래됨 비율이 최대 64배이고 완전 비동기 실행 하에서 안정적인 훈련을 유지하며, 밀집 및 전문가 모델에서 일관된 이득을 제공합니다. 소스 코드는 https://github.com/FloyedShen/VESPO 에서 사용할 수 있습니다."
+    },
+    "summary": "1. 강화 학습에서의 대형 언어 모델(LLM) 훈련 안정성은 중요한 이슈이며, 기존 해결책의 한계가 존재하는데, VESPO는 이를 개선하기 위해 변이적 소프트 정책 최적화를 제안합니다.\n2. VESPO는 제안 분포에서 변이 감소를 통합하여 중요도 가중치에 영향을 미치는 재구성 커널을 유도하며, 길이 정규화를 필요로 하지 않는다는 특징이 있습니다.\n3. 실험 결과, VESPO는 정책 오래됨 비율이 높고 비동기 실행 조건에서도 안정적인 훈련을 유지하며, 밀집 모델 및 전문가 모델에서 일관된 성과 향상을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Does Your Reasoning Model Implicitly Know When to Stop Thinking?",
+    "abstract": "Recent advancements in large reasoning models (LRMs) have greatly improved their capabilities on complex reasoning tasks through Long Chains of Thought (CoTs). However, this approach often results in substantial redundancy, impairing computational efficiency and causing significant delays in real-time applications. Recent studies show that longer reasoning chains are frequently uncorrelated with correctness and can even be detrimental to accuracy. In a further in-depth analysis of this phenomenon, we surprisingly uncover and empirically verify that LRMs implicitly know the appropriate time to stop thinking, while this capability is obscured by current sampling paradigms. Motivated by this, we introduce SAGE (Self-Aware Guided Efficient Reasoning), a novel sampling paradigm that unleashes this efficient reasoning potential. Furthermore, integrating SAGE as mixed sampling into group-based reinforcement learning (SAGE-RL) enables SAGE-RL to effectively incorporate SAGE-discovered efficient reasoning patterns into standard pass@1 inference, markedly enhancing both the reasoning accuracy and efficiency of LRMs across multiple challenging mathematical benchmarks.",
+    "authors": [
+      "Zixuan Huang",
+      "Xin Xia",
+      "Yuxi Ren",
+      "Jianbin Zheng",
+      "Xuanda Wang",
+      "Zhixia Zhang",
+      "Hongyan Xie",
+      "Songshi Liang",
+      "Zehao Chen",
+      "Xuefeng Xiao",
+      "Fuzhen Zhuang",
+      "Jianxin Li",
+      "Yikun Ban",
+      "Deqing Wang"
+    ],
+    "likes": 94,
+    "published_date": "Feb 9",
+    "url": "https://huggingface.co/papers/2602.08354",
+    "date_collected": "2026-02-24T07:21:28.159224+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "추론 모델이 암묵적으로 생각을 멈출 때를 아는가?",
+      "abstract": "최근 대규모 추론 모델(LRMs)의 발전으로 Long Chains of Thought(CoTs)를 통해 복잡한 추론 과제에 대한 능력이 크게 향상되었으나, 이 방법은 종종 상당한 중복을 초래하여 계산 효율성을 저해하고 실시간 응용에서 상당한 지연을 유발합니다. 최근 연구 결과는 더 긴 추론 체인이 종종 정확성과 무관하며 정확도에도 해를 끼칠 수 있음을 보여줍니다. 이 현상에 대한 추가 깊이 있는 분석을 통해, LRMs이 생각을 멈출 적절한 시기를 암묵적으로 안다는 것을 발견하고 경험적으로 검증합니다. 현재 샘플링 패러다임에 의해 이 능력이 가려져 있습니다. 이를 동기로, 효율적인 추론 잠재력을 풀어낼 새로운 샘플링 패러다임인 SAGE(Self-Aware Guided Efficient Reasoning)를 소개합니다. 게다가 SAGE를 그룹 기반 강화 학습(SAGE-RL)에 혼합 샘플링으로 통합함으로써, SAGE-RL이 효율적인 추론 패턴을 표준 pass@1 추론에 효과적으로 통합하여 다양한 어려운 수학 벤치마크에서 LRMs의 추론 정확도와 효율성을 현저히 향상시킵니다."
+    },
+    "summary": "1. 대규모 추론 모델은 생각을 멈출 적절한 시기를 암묵적으로 안다.\n2. SAGE 샘플링 패러다임을 도입하여 LRMs의 효율적인 추론 잠재력을 활용하고, SAGE-RL을 통해 이를 표준 pass@1 추론에 효과적으로 통합합니다.\n3. 이로 인해 LRMs는 여러 어려운 수학 벤치마크에서 추론 정확도와 효율성이 현저히 향상됩니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Generated Reality: Human-centric World Simulation using Interactive Video Generation with Hand and Camera Control",
+    "abstract": "Extended reality (XR) demands generative models that respond to users' tracked real-world motion, yet current video world models accept only coarse control signals such as text or keyboard input, limiting their utility for embodied interaction. We introduce a human-centric video world model that is conditioned on both tracked head pose and joint-level hand poses. For this purpose, we evaluate existing diffusion transformer conditioning strategies and propose an effective mechanism for 3D head and hand control, enabling dexterous hand--object interactions. We train a bidirectional video diffusion model teacher using this strategy and distill it into a causal, interactive system that generates egocentric virtual environments. We evaluate this generated reality system with human subjects and demonstrate improved task performance as well as a significantly higher level of perceived amount of control over the performed actions compared with relevant baselines.",
+    "authors": [
+      "Linxi Xie",
+      "Lisong C. Sun",
+      "Ashley Neall",
+      "Tong Wu",
+      "Shengqu Cai",
+      "Gordon Wetzstein"
+    ],
+    "likes": 17,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18422",
+    "date_collected": "2026-02-24T07:21:28.160397+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "생성된 현실: 손과 카메라 제어를 통한 상호작용형 비디오 생성을 활용한 인간 중심의 세계 시뮬레이션",
+      "abstract": "확장현실(XR)은 사용자의 추적된 현실 움직임에 대응하는 생성 모델을 요구하지만 현재의 비디오 세계 모델은 텍스트나 키보드 입력과 같은 약한 제어 신호만 수용하여 실제 상호작용에 제약을 가하고 있습니다. 우리는 추적된 머리 자세와 관절 수준의 손 자세에 의존하는 인간 중심의 비디오 세계 모델을 제안합니다. 이를 위해 기존의 확산 트랜스포머 조건화 전략을 평가하고 3D 머리와 손 제어를 위한 효과적인 메커니즘을 제안합니다. 이를 통해 이 전략을 활용하여 양방향 비디오 확산 모델 트레이너를 훈련시키고 경과적, 상호작용적 시스템으로 정제하여 자기 중심 가상 환경을 생성합니다. 우리는 이 생성된 현실 시스템을 테스트하여 과제 수행 성능이 향상되었으며 수행된 동작에 대한 지속적인 제어 수준이 관련 기준과 비교하여 상당히 높아졌음을 보여줍니다."
+    },
+    "summary": "1. XR을 위한 다양한 손과 카메라 제어를 활용한 사용자 중심의 비디오 세계 모델을 소개하였으며, 3D 머리와 손 제어를 가능케 하는 효과적인 메커니즘을 제안하였습니다.\n2. 제안된 전략을 통해 훈련된 양방향 비디오 확산 모델을 경과적, 상호작용적 시스템으로 변환하여 자기 중심 가상 환경을 생성함으로써 과제 수행 성능 향상을 입증하였습니다.\n3. 실험 결과, 이러한 생성된 현실 시스템이 사용자들에게 향상된 과제 수행 성능과 수행된 동작에 대한 높은 제어 수준을 제공하는 것을 시연하였습니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Decoding as Optimisation on the Probability Simplex: From Top-K to Top-P (Nucleus) to Best-of-K Samplers",
+    "abstract": "Decoding sits between a language model and everything we do with it, yet it is still treated as a heuristic knob-tuning exercise. We argue decoding should be understood as a principled optimisation layer: at each token, we solve a regularised problem over the probability simplex that trades off model score against structural preferences and constraints. This single template recovers greedy decoding, Softmax sampling, Top-K, Top-P, and Sparsemax-style sparsity as special cases, and explains their common structure through optimality conditions. More importantly, the framework makes it easy to invent new decoders without folklore. We demonstrate this by designing Best-of-K (BoK), a KL-anchored coverage objective aimed at multi-sample pipelines (self-consistency, reranking, verifier selection). BoK targets the probability of covering good alternatives within a fixed K-sample budget and improves empirical performance. We show that such samples can improve accuracy by, for example, +18.6% for Qwen2.5-Math-7B on MATH500 at high sampling temperatures.",
+    "authors": [
+      "Xiaotong Ji",
+      "Rasul Tutunov",
+      "Matthieu Zimmer",
+      "Haitham Bou-Ammar"
+    ],
+    "likes": 8,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18292",
+    "date_collected": "2026-02-24T07:21:28.161478+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "확률 심플렉스에서의 최적화로서의 디코딩: Top-K에서 Top-P (핵)로 최고-K 샘플러까지",
+      "abstract": "디코딩은 언어 모델과 그와 함께 하는 모든 작업 사이에 위치하지만 여전히 어떤 휴리스틱 조정 연습으로 취급됩니다. 각 토큰에서, 우리는 모델 점수와 구조적 기호 및 제약 조건의 균형을 맞추기 위해 확률 심플렉스 상에서 정규화된 문제를 해결합니다. 이 단일 템플릿은 탐욕식 디코딩, 소프트맥스 샘플링, Top-K, Top-P, 그리고 Sparsemax 스타일의 희소성을 특수 경우로 복원하며, 최적성 조건을 통해 그들의 공통 구조를 설명합니다. 더 중요한 것은, 이 프레임워크가 기존의 전승 없이 새로운 디코더를 개발하는 것을 용이하게 합니다. 우리는 다중 샘플 파이프라인 (자일성, 재순위, 검증기 선택)을 위한 KL-고정 커버리지 목적을 가리키는 Best-of-K (BoK)를 설계함으로써 이를 입증합니다. BoK는 일정한 K-샘플 예산 내에서 좋은 대안을 포함하는 확률을 대상으로 하며 경험적인 성능을 개선시킵니다. 이러한 샘플들은 예를 들어 MATH500의 Qwen2.5-Math-7B에서 높은 샘플 온도에서 +18.6% 정확도를 향상시킬 수 있다는 것을 보여줍니다."
+    },
+    "summary": "1. 디코딩은 모델 점수와 구조적 기호 및 제약 조건을 균형 있게 맞추는 최적화 과정으로 여겨져야 합니다.\n2. 새로운 Top-K, Top-P, Sparsemax 스타일의 디코더를 쉽게 발명할 수 있는 프레임워크를 제안합니다.\n3. Best-of-K (BoK) 디코더는 다중 샘플 파이프라인을 위한 새로운 목적 함수로, 좋은 대안을 효율적으로 다룰 수 있음을 입증했습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Spanning the Visual Analogy Space with a Weight Basis of LoRAs",
+    "abstract": "Visual analogy learning enables image manipulation through demonstration rather than textual description, allowing users to specify complex transformations difficult to articulate in words. Given a triplet {a, a', b}, the goal is to generate b' such that a : a' :: b : b'. Recent methods adapt text-to-image models to this task using a single Low-Rank Adaptation (LoRA) module, but they face a fundamental limitation: attempting to capture the diverse space of visual transformations within a fixed adaptation module constrains generalization capabilities. Inspired by recent work showing that LoRAs in constrained domains span meaningful, interpolatable semantic spaces, we propose LoRWeB, a novel approach that specializes the model for each analogy task at inference time through dynamic composition of learned transformation primitives, informally, choosing a point in a \"space of LoRAs\". We introduce two key components: (1) a learnable basis of LoRA modules, to span the space of different visual transformations, and (2) a lightweight encoder that dynamically selects and weighs these basis LoRAs based on the input analogy pair. Comprehensive evaluations demonstrate our approach achieves state-of-the-art performance and significantly improves generalization to unseen visual transformations. Our findings suggest that LoRA basis decompositions are a promising direction for flexible visual manipulation. Code and data are in https://research.nvidia.com/labs/par/lorweb",
+    "authors": [
+      "Hila Manor",
+      "Rinon Gal",
+      "Haggai Maron",
+      "Tomer Michaeli",
+      "Gal Chechik"
+    ],
+    "likes": 8,
+    "published_date": "Feb 17",
+    "url": "https://huggingface.co/papers/2602.15727",
+    "date_collected": "2026-02-24T07:21:28.162636+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "LoRA 기반의 가중치 기반 시각 유추 공간 확장",
+      "abstract": "시각적 유추 학습은 텍스트 설명 대신 이미지 조작을 가능케 하며, 복잡한 변형을 단언하기 어려운 사용자가 단서를 통해 명시할 수 있습니다. 주어진 삼쌍 {a, a', b}에서의 목표는 a : a' :: b : b'를 만족하는 b'를 생성하는 것입니다. 최근 방법은 단일 저랭크 적응 (LoRA) 모듈을 사용하여 이 작업에 텍스트-이미지 모델을 적응시키지만, 해당 방법은 시각적 변형의 다양한 공간을 포착하려는 시도로 일정한 적응 모듈 내에 제한되어 일반화 능력을 제약합니다. 우리는 LoRA가 의미 있는, 보간 가능한 의미 공간을 구성하는 제한된 영역에서 작동하는 것을 최근 연구에서 보여준 영감을 받아, LoRA 기반 가중치 (LoRWeB)를 제안합니다. 이는 학습된 변형 기본 요소의 동적 구성을 통해 추론 시 각 유추 작업에 모델을 특화시키는 형태로, \"LoRA 공간\"의 한 점을 선택합니다. 우리는 두 가지 주요 구성 요소를 소개합니다: (1) 다양한 시각적 변형 공간을 구성하기 위한 학습 가능한 LoRA 모듈의 기초, 그리고 (2) 입력 유추 쌍에 기반하여 이러한 기초 LoRA를 동적으로 선택하고 가중치 부여하는 가벼운 인코더. 철저한 평가에서 우리의 방법이 최고 성능을 달성하고, 보이지 않는 시각적 변형에 대한 일반화를 현저히 향상시킨다는 것을 보여줍니다. 우리의 연구 결과는 유연한 시각 조작에 LoRA 기초 분해가 유망한 방향임을 시사합니다. 코드와 데이터는 https://research.nvidia.com/labs/par/lorweb 에 있습니다."
+    },
+    "summary": "1. 시각적 유추 학습은 복잡한 이미지 변형을 사용자가 단서로 명시할 수 있는 방법을 제공합니다.\n2. LoRWeB는 학습 가능한 기초 LoRA 모듈과 가중치를 사용하여 각 유추 작업에 모델을 특화시키는 새로운 방법을 제안합니다.\n3. 실험 결과는 LoRWeB 방법이 최신 기술 수준의 성능을 달성하고 보이지 않는 시각적 변형에 대한 일반화를 현저히 향상시킨다는 것을 보여줍니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "EgoPush: Learning End-to-End Egocentric Multi-Object Rearrangement for Mobile Robots",
+    "abstract": "Humans can rearrange objects in cluttered environments using egocentric perception, navigating occlusions without global coordinates. Inspired by this capability, we study long-horizon multi-object non-prehensile rearrangement for mobile robots using a single egocentric camera. We introduce EgoPush, a policy learning framework that enables egocentric, perception-driven rearrangement without relying on explicit global state estimation that often fails in dynamic scenes. EgoPush designs an object-centric latent space to encode relative spatial relations among objects, rather than absolute poses. This design enables a privileged reinforcement-learning (RL) teacher to jointly learn latent states and mobile actions from sparse keypoints, which is then distilled into a purely visual student policy. To reduce the supervision gap between the omniscient teacher and the partially observed student, we restrict the teacher's observations to visually accessible cues. This induces active perception behaviors that are recoverable from the student's viewpoint. To address long-horizon credit assignment, we decompose rearrangement into stage-level subproblems using temporally decayed, stage-local completion rewards. Extensive simulation experiments demonstrate that EgoPush significantly outperforms end-to-end RL baselines in success rate, with ablation studies validating each design choice. We further demonstrate zero-shot sim-to-real transfer on a mobile platform in the real world. Code and videos are available at https://ai4ce.github.io/EgoPush/.",
+    "authors": [
+      "Boyuan An",
+      "Zhexiong Wang",
+      "Yipeng Wang",
+      "Jiaqi Li",
+      "Sihang Li",
+      "Jing Zhang",
+      "Chen Feng"
+    ],
+    "likes": 5,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18071",
+    "date_collected": "2026-02-24T07:21:28.163859+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "이고푸시: 이고센트릭 다중 물체 재배치 학습을 통한 이동로봇",
+      "abstract": "인간은 이고센트릭 인식을 사용하여 물체를 재배치하며 전염된 환경에서 전염을 운행할 수 있습니다. 이 능력에서 영감을 받아 단일 이고센트릭 카메라를 사용하여 이동로봇을 위한 장기간 다중 물체 비잡취식 재배치를 연구합니다. 우리는 명시적 전역 상태 추정에 의존하지 않고 이고센트릭, 인식 주도 재배치를 가능하게 하는 이고푸시(policy learning framework)를 제안합니다. 이고푸시는 물체중심적 잠재 공간을 설계하여 물체 사이의 상대적 공간 관계를 인코딩하며, 절대적 자세를 사용하지 않습니다. 이 설계는 희생 강화 학습(RL) 교사가 희소한 키포인트로부터 잠재 상태와 이동 행동을 공동으로 학습하도록 하며, 그것은 순수하게 시각적인 학생 정책으로 정제됩니다. 강사와 부분적으로 관측된 학생 사이의 지도 간격을 줄이기 위해 우리는 강사의 관찰을 시각적으로 접근 가능한 단서로 제한합니다. 이는 학생의 관점에서 복구할 수 있는 적극적 인식 행동을 유도합니다. 장기간 신용 할당을 다루기 위해 우리는 완료 보상을 시간적으로 감소된, 단계별 하부 문제로 분해합니다. 광범위한 시뮬레이션 실험에서 이고푸시가 성공률에서 최종적으로 RL 베이스라인을 크게 능가함을 보여주며, 각 설계 선택을 검증하는 축소 연구를 실시합니다. 우리는 또한 실제 세계의 모바일 플랫폼에서 제로샷(sim-to-real transfer) 시뮬레이션 결과를 보여줍니다. 코드 및 비디오는 https://ai4ce.github.io/EgoPush/에서 제공됩니다."
+    },
+    "summary": "1. 이고푸시는 이고센트릭 인식을 활용하여 이동로봇의 다중 물체 재배치를 가능케 하는 정책 학습 프레임워크이다.\n2. 학습된 이고푸시는 희소한 키포인트로부터 물체 간의 상대적인 공간 관계를 인코딩하며, 고쳐진 RL 선생님 정책으로 만들어진다.\n3. 시뮬레이션 실험을 통해 이고푸시가 다른 베이스라인 모델들보다 뛰어난 성과를 보이며, 실제 세계에서의 시연도 성공적으로 이뤄진다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SARAH: Spatially Aware Real-time Agentic Humans",
+    "abstract": "As embodied agents become central to VR, telepresence, and digital human applications, their motion must go beyond speech-aligned gestures: agents should turn toward users, respond to their movement, and maintain natural gaze. Current methods lack this spatial awareness. We close this gap with the first real-time, fully causal method for spatially-aware conversational motion, deployable on a streaming VR headset. Given a user's position and dyadic audio, our approach produces full-body motion that aligns gestures with speech while orienting the agent according to the user. Our architecture combines a causal transformer-based VAE with interleaved latent tokens for streaming inference and a flow matching model conditioned on user trajectory and audio. To support varying gaze preferences, we introduce a gaze scoring mechanism with classifier-free guidance to decouple learning from control: the model captures natural spatial alignment from data, while users can adjust eye contact intensity at inference time. On the Embody 3D dataset, our method achieves state-of-the-art motion quality at over 300 FPS -- 3x faster than non-causal baselines -- while capturing the subtle spatial dynamics of natural conversation. We validate our approach on a live VR system, bringing spatially-aware conversational agents to real-time deployment. Please see https://evonneng.github.io/sarah/ for details.",
+    "authors": [
+      "Evonne Ng",
+      "Siwei Zhang",
+      "Zhang Chen",
+      "Michael Zollhoefer",
+      "Alexander Richard"
+    ],
+    "likes": 4,
+    "published_date": "Feb 20",
+    "url": "https://huggingface.co/papers/2602.18432",
+    "date_collected": "2026-02-24T07:21:28.164981+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "공간인식 실시간 에이전틱 인간 SARAH",
+      "abstract": "존재하는 에이전트들의 동작이 화상 현실, 원격 참여, 디지털 인간 어플리케이션에서 중요해지면서, 그들의 움직임은 단순 소통을 넘어서야 합니다: 에이전트들은 사용자 쪽을 향해 회전하고, 사용자의 동작에 반응하며, 자연스러운 시선을 유지해야 합니다. 현재의 방법론은 이러한 공간적 인식을 갖지 않고 있습니다. 저희는 첫 번째 실시간, 완전한 인과적 방법으로 공간인식 대화 동작을 제시하여, 스트리밍 VR 헤드셋에서 적용할 수 있게 하였습니다. 사용자의 위치와 이원적 오디오를 제공하면, 우리의 방법론은 사용자에게 대응하는 동작을 생성하면서 에이전트를 사용자에 맞게 정렬합니다. 우리의 아키텍처는 사용자의 궤적과 오디오를 조건으로 둔 흐름 매칭 모델과 스트리밍 추론을 위한 간섭형 트랜스포머 기반 VAE를 결합하였습니다. 변화하는 시선 선호도를 지원하기 위해, 우리는 분류기 없는 지도를 통해 학습과 제어를 분리하는 시선 점수 메커니즘을 도입하였습니다: 모델은 데이터로부터 자연스러운 공간적 정렬을 포착하며, 사용자는 추론 시간에 눈동자 접촉 강도를 조절할 수 있습니다. Embody 3D 데이터셋에서 우리의 방법은 최신 기술의 동작 품질을 달성하며, 자연스러운 대화의 섬세한 공간적 역학을 캡처합니다. 우리는 실시간 VR 시스템에서 우리의 방법론을 검증하였으며, 공간인식 대화 에이전트를 실시간 배포했습니다. 자세한 내용은 https://evonneng.github.io/sarah/를 참조하세요."
+    },
+    "summary": "1. 에이전트의 공간적 의식이 필요한 움직임이 중요하며, 실시간으로 사용자에게 반응하고 자연스러운 시선을 유지할 수 있는 방법 제안.\n2. 사용자의 위치와 이원적 오디오를 활용하여 대화 동작을 생성하고 에이전트의 위치를 조절하는 인과적 방법론 소개.\n3. 시선 점수 메커니즘을 통해 사용자가 눈동자 접촉 강도를 제어하며, 자연스러운 대화 공간적 역학을 성공적으로 캡처함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "VidEoMT: Your ViT is Secretly Also a Video Segmentation Model",
+    "abstract": "Existing online video segmentation models typically combine a per-frame segmenter with complex specialized tracking modules. While effective, these modules introduce significant architectural complexity and computational overhead. Recent studies suggest that plain Vision Transformer (ViT) encoders, when scaled with sufficient capacity and large-scale pre-training, can conduct accurate image segmentation without requiring specialized modules. Motivated by this observation, we propose the Video Encoder-only Mask Transformer (VidEoMT), a simple encoder-only video segmentation model that eliminates the need for dedicated tracking modules. To enable temporal modeling in an encoder-only ViT, VidEoMT introduces a lightweight query propagation mechanism that carries information across frames by reusing queries from the previous frame. To balance this with adaptability to new content, it employs a query fusion strategy that combines the propagated queries with a set of temporally-agnostic learned queries. As a result, VidEoMT attains the benefits of a tracker without added complexity, achieving competitive accuracy while being 5x--10x faster, running at up to 160 FPS with a ViT-L backbone. Code: https://www.tue-mps.org/videomt/",
+    "authors": [
+      "Narges Norouzi",
+      "Idil Esen Zulfikar",
+      "Niccol`o Cavagnero",
+      "Tommie Kerssies",
+      "Bastian Leibe",
+      "Gijs Dubbelman",
+      "Daan de Geus"
+    ],
+    "likes": 2,
+    "published_date": "Feb 19",
+    "url": "https://huggingface.co/papers/2602.17807",
+    "date_collected": "2026-02-24T07:21:28.166176+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "VidEoMT: 당신의 ViT는 비디오 세분화 모델일 수도 있습니다",
+      "abstract": "기존 온라인 비디오 세분화 모델은 일반적으로 단순한 프레임별 세분기와 복잡한 전용 추적 모듈을 결합합니다. 효과적이지만 이러한 모듈은 상당한 구조적 복잡성과 계산 비용을 도입합니다. 최근 연구는 충분한 용량과 대규모 사전 훈련으로 확장된 피드 메커니즘(Vision Transformer, ViT) 인코더가 전용 모듈 없이도 정확한 이미지 세분화를 수행할 수 있다는 것을 제안합니다. 이 관측을 토대로, 우리는 전용 추적 모듈이 필요 없는 단순한 인코더 전용 비디오 세분화 모델인 VidEoMT를 제안합니다. 인코더 전용 ViT에서 시간적 모델링을 가능하게 하기 위해, VidEoMT는 이전 프레임의 쿼리를 재사용하여 프레임 간 정보를 전달하는 가벼운 쿼리 전파 메커니즘을 도입합니다. 이를 새로운 콘텐츠에 적응하기 위해, 전파된 쿼리와 일련의 시간에 무관한 학습된 쿼리를 결합하는 쿼리 퓨전 전략을 채택합니다. 그 결과, VidEoMT는 복잡성 없이도 추적기의 이점을 얻으며, ViT-L 백본을 사용하여 160 FPS까지 실행되면서 경쟁력 있는 정확도를 달성합니다. 코드: https://www.tue-mps.org/videomt/"
+    },
+    "summary": "1. VidEoMT는 전용 추적 모듈 없이 시간적 모델링을 가능케 하는 단순한 인코더 전용 비디오 세분화 모델이다.\n2. VidEoMT는 이전 프레임의 쿼리를 재사용하고 새로운 콘텐츠에 적응하기 위해 쿼리 퓨전 전략을 사용한다.\n3. VidEoMT는 ViT-L 백본을 사용하여 160 FPS로 실행되면서 경쟁력 있는 정확도를 보여준다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "DeepVision-103K: A Visually Diverse, Broad-Coverage, and Verifiable Mathematical Dataset for Multimodal Reasoning",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has been shown effective in enhancing the visual reflection and reasoning capabilities of Large Multimodal Models (LMMs). However, existing datasets are predominantly derived from either small-scale manual construction or recombination of prior resources, which limits data diversity and coverage, thereby constraining further gains in model performance. To this end, we introduce DeepVision-103K, a comprehensive dataset for RLVR training that covers diverse K12 mathematical topics, extensive knowledge points, and rich visual elements. Models trained on DeepVision achieve strong performance on multimodal mathematical benchmarks, and generalize effectively to general multimodal reasoning tasks. Further analysis reveals enhanced visual perception, reflection and reasoning capabilities in trained models, validating DeepVision's effectiveness for advancing multimodal reasoning. Data: https://huggingface.co/datasets/skylenage/DeepVision-103K{this url}.",
+    "authors": [
+      "Haoxiang Sun",
+      "Lizhen Xu",
+      "Bing Zhao",
+      "Wotao Yin",
+      "Wei Wang",
+      "Boyu Yang",
+      "Rui Wang",
+      "Hu Wei"
+    ],
+    "likes": 2,
+    "published_date": "Feb 18",
+    "url": "https://huggingface.co/papers/2602.16742",
+    "date_collected": "2026-02-24T07:21:28.167380+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "DeepVision-103K: 다양하고 폭넓은 범위의 검증 가능한 수학 데이터셋으로서의 Multimodal Reasoning을 위한 뎁비전-103K",
+      "abstract": "검증 가능 보상(Reinforcement Learning with Verifiable Rewards, RLVR)은 대규모 다중모달 모델(Large Multimodal Models, LMMs)의 시각적 사고와 추론 능력을 향상시키는 데 효과적임이 입증되었습니다. 그러나 기존 데이터셋은 주로 소규모 수동 구축이나 이전 자원을 재구성한 것으로, 데이터 다양성과 범위에 제한이 있어 모델 성능 향상을 제약하고 있습니다. 이에 우리는 RLVR 훈련을 위한 포괄적인 데이터셋인 DeepVision-103K를 소개합니다. 이 데이터셋은 K12 수학 주제, 포괄적인 지식 요소, 풍부한 시각적 요소를 다룹니다. DeepVision에서 훈련된 모델은 다중모달 수학 벤치마크에서 우수한 성능을 보이며, 일반 다중모달 추론 작업에 효과적으로 일반화됩니다. 추가 분석 결과, 훈련된 모델에서 시각적 지각, 사고 및 추론 능력이 향상되어 DeepVision의 다중모달 추론 선행능력을 검증합니다. 데이터: https://huggingface.co/datasets/skylenage/DeepVision-103K{이 URL}"
+    },
+    "summary": "1. 검증 가능 보상을 활용한 다중모달 모델 훈련은 시각적 사고 능력을 향상시키고, 기존 데이터셋의 한계를 극복하는 뎁비전-103K 데이터셋이 소개됨.\n2. DeepVision 훈련된 모델은 다중모달 수학 벤치마크에서 강력한 성능을 보이며, 다양한 시각적 요소를 포함한 다양한 주제를 다룹니다.\n3. 연구 결과는 DeepVision이 다중모달 추론 분야를 발전시키는 데 효과적이며, 모델들의 시각적 인식과 추론 능력을 향상시킨다는 점을 확인합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Avey-B",
+    "abstract": "Compact pretrained bidirectional encoders remain the backbone of industrial NLP under tight compute and memory budgets. Their effectiveness stems from self-attention's ability to deliver high-quality bidirectional contextualization with sequence-level parallelism, as popularized by BERT-style architectures. Recently, Avey was introduced as an autoregressive, attention-free alternative that naturally admits an encoder-only adaptation. In this paper, we reformulate Avey for the encoder-only paradigm and propose several innovations to its architecture, including decoupled static and dynamic parameterizations, stability-oriented normalization, and neural compression. Results show that this reformulated architecture compares favorably to four widely used Transformer-based encoders, consistently outperforming them on standard token-classification and information-retrieval benchmarks while scaling more efficiently to long contexts.",
+    "authors": [
+      "Devang Acharya",
+      "Mohammad Hammoud"
+    ],
+    "likes": 2,
+    "published_date": "Feb 17",
+    "url": "https://huggingface.co/papers/2602.15814",
+    "date_collected": "2026-02-24T07:21:28.168353+09:00",
+    "week": "2026-W09",
+    "translation": {
+      "title": "Avey-B",
+      "abstract": "소형 사전 훈련된 양방향 인코더는 계산 및 메모리 제약 하에서 산업용 자연어 처리의 중추 역할을 한다. 이들의 효과성은 BERT 스타일 아키텍처에서 인기를 얻었던 자기 주의 능력으로 인해 얻어진 양방향 문맥화를 시퀀스 수준 병렬처리로 전달할 수 있는 능력에서 비롯된다. 최근 Avey가 도입되었는데, 이는 인코더 전용 적응을 자연스럽게 허용하는 자기 회귀적이고 주의력이 없는 대체물이다. 본 논문에서는 Avey를 인코더 전용 패러다임을 재정의하고, 정적 및 동적 파라미터 분리, 안정성 지향 정규화, 신경 압축 등을 포함한 구조적 혁신 몇 가지를 제안한다. 결과는 이 재정의된 아키텍처가 네 개의 널리 사용되는 Transformer 기반 인코더들과 유사한 성능을 보이며, 일정한 토큰 분류 및 정보 검색 벤치마크에서 계속해서 우수한 성과를 보이며 장문 문맥에 효과적으로 확장된다."
+    },
+    "summary": "1. 산업용 자연어 처리를 위해 핵심적인 양방향 인코더는 BERT 스타일의 아키텍처에서 널리 사용되고 있는데, Avey는 이와는 다른 인코더-전용 대안으로 최근 소개되었다.\n2. Avey를 인코더-전용 패러다임으로 새롭게 재정의하면서, 정적 및 동적 파라미터 분리, 안정성 중심 정규화, 신경 압축 등의 구조적 혁신을 제안하였다.\n3. 연구 결과는 이 재정의된 아키텍처가 표준 토큰 분류 및 정보 검색 벤치마크에서 다른 Transformer 기반 인코더들을 능가하며, 장문 문맥에 효과적으로 확장됨을 보여준다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

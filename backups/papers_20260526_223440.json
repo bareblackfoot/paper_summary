@@ -1,0 +1,327 @@
+[
+  {
+    "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+    "abstract": "Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, none of which behaves like a deep-learning optimizer for the skill, and none of which reliably improves over its starting point under feedback. We argue the skill should instead be trained as the external state of a frozen agent, with the same discipline that makes weight-space optimization reproducible. SkillOpt is, to our knowledge, the first systematic controllable text-space optimizer for agent skills: a separate optimizer model turns scored rollouts into bounded add/delete/replace edits on a single skill document, and an edit is accepted only when it strictly improves a held-out validation score. A textual learning-rate budget, rejected-edit buffer, and epoch-wise slow/meta update make skill training stable while adding zero inference-time model calls at deployment. Across six benchmarks, seven target models, and three execution harnesses (direct chat, Codex, Claude Code), SkillOpt is best or tied on all 52 evaluated (model, benchmark, harness) cells and beats every per-cell competitor among human, one-shot LLM, Trace2Skill, TextGrad, GEPA, and EvoSkill skills. On GPT-5.5 it lifts the average no-skill accuracy by +23.5 points in direct chat, by +24.8 inside the Codex agentic loop, and by +19.1 inside Claude Code. Transfer experiments further show that optimized skill artifacts retain value when moved across model scales, between Codex and Claude Code execution environments, and to a nearby math benchmark without further optimization.",
+    "authors": [
+      "Yifan Yang",
+      "Ziyang Gong",
+      "Weiquan Huang",
+      "Qihao Yang",
+      "Ziwei Zhou",
+      "Zisu Huang",
+      "Yan Li",
+      "Xuemei Gao",
+      "Qi Dai",
+      "Bei Liu",
+      "Kai Qiu",
+      "Yuqing Yang",
+      "Dongdong Chen",
+      "Xue Yang",
+      "Chong Luo"
+    ],
+    "likes": 152,
+    "published_date": "May 22",
+    "url": "https://huggingface.co/papers/2605.23904",
+    "date_collected": "2026-05-26T07:29:22.858931+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "SkillOpt: 진화 중인 에이전트 스킬을 위한 실행 전략",
+      "abstract": "현재의 에이전트 스킬은 수동으로 제작되거나 일회성으로 생성되거나 느슨하게 제어된 자체 수정을 통해 진화되는데, 이는 스킬에 대한 딥 러닝 최적화기와 같이 작동하지 않으며, 피드백에 따라 시작점을 신뢰할 수 있는 방식으로 개선하지 못합니다. 본 논문은 스킬을 외부 상태로 냉동된 에이전트의 훈련으로 대체해야 하며, 이는 가중치 공간 최적화를 재현 가능하게 하는 훈련 기술을 갖춰야 합니다. SkillOpt는 우리의 알고 있는 바로는 에이전트 스킬에 대한 첫 번째 체계적이고 조절 가능한 텍스트 공간 최적화기로, 별도의 최적화 모델이 점수 매겨진 롤아웃을 단일 스킬 문서에 대한 추가/삭제/대체 편집으로 변환시키며, 편집은 보류된 검증 점수를 엄격히 개선할 때에만 수용됩니다. 텍스트 학습 속도 예산, 거부된 편집 버퍼 및 에폭별로 느린/메타 업데이트는 스킬 훈련을 안정적으로 만들며, 배포 시에 제로 추론 시간 모델 호출을 추가합니다. 6개 벤치마크, 7개 대상 모델 및 3개 실행 도구(Direct Chat, Codex, Claude Code) 전반에서 SkillOpt는 모든 52개 cell에서 최고이거나 타이를 차지하며, 인간, 일회성 LLM, Trace2Skill, TextGrad, GEPA, EvoSkill 스킬 중에서 모든 cell 별 경쟁 상대를 이겨냅니다. GPT-5.5에서는 Direct Chat에서 평균 스킬 미평가 정확도를 +23.5 점, Codex 안에서 +24.8 점, Claude Code 안에서 +19.1 점 향상시킵니다. 이적 실험은 최적화된 스킬 아티팩트가 모델 스케일 간, Codex와 Claude Code 실행 환경 간, 그리고 더 나은 최적화 없이 인접한 수학 벤치마크로 이동할 때 가치를 유지함을 보여줍니다."
+    },
+    "summary": "1. 에이전트 스킬을 최적화하기 위한 새로운 텍스트 공간 최적화기인 SkillOpt를 제안하며, 외부 상태로 훈련된 냉동 에이전트를 활용하여 자체 진화하는 스킬을 유지보수 가능하고 안정적으로 수행합니다.\n2. SkillOpt는 validation score를 엄격히 향상시키는 편집만 수용하며, 최적화된 스킬 아티팩트는 모델 스케일 간 이동 시 가치를 유지합니다.\n3. 실험 결과에서 SkillOpt는 여러 벤치마크와 실행 도구에서 인간 및 다른 스킬 최적화 모델들을 이기고, 스킬 미평가 정확도를 상당히 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Rethinking Cross-Layer Information Routing in Diffusion Transformers",
+    "abstract": "Diffusion Transformers (DiTs) have become a de facto backbone of modern visual generation, and nearly every major axis of their design -- tokenization, attention, conditioning, objectives, and latent autoencoders -- has been extensively revisited. The residual stream that governs how information accumulates across layers, however, has been directly inherited from the original Transformer. In this paper, we present a systematic empirical analysis of cross-layer information flow in DiTs, jointly along depth and denoising timestep, and identify three concrete symptoms of traditional residual addition, namely monotonic forward magnitude inflation, sharp backward gradient decay, and pronounced block-wise redundancy. Motivated by this diagnosis, we propose Diffusion-Adaptive Routing (DAR), a drop-in residual replacement that performs learnable, timestep-adaptive, and non-incremental aggregation over the history of sublayer outputs. Moreover, the proposed DAR is compatible with many modern Transformer enhancement methods, such as REPA. On ImageNet 256times256, DAR improves SiT-XL/2 by 2.11 FID (7.56 vs.\\ 9.67) and matches the baseline's converged quality with 8.75times fewer training iterations. Stacked on top of REPA, it yields a 2times training acceleration in the early stage, suggesting cross-layer information routing as an underexplored design axis in diffusion modeling, one that operates orthogonally to existing representation-alignment objectives. Beyond pretraining, DAR can also be applied during the fine-tuning stage of large-scale T2I models and preserves high-frequency details during Distribution Matching Distillation.",
+    "authors": [
+      "Chao Xu",
+      "Maohua Li",
+      "Qirui Li",
+      "Yixuan Xu",
+      "Yanke Zhou",
+      "Yunhe Li",
+      "Cuifeng Shen",
+      "Hanlin Tang",
+      "Kan Liu",
+      "Tao Lan",
+      "Lin Qu",
+      "Shao-Qun Zhang"
+    ],
+    "likes": 90,
+    "published_date": "May 20",
+    "url": "https://huggingface.co/papers/2605.20708",
+    "date_collected": "2026-05-26T07:29:22.861453+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "확산 트랜스포머에서의 교차 계층 정보 라우팅 다시 생각하기",
+      "abstract": "확산 트랜스포머(Diffusion Transformers, DiTs)는 현대 시각적 생성의 핵심 구조가 되어 왔으며, 그 설계의 거의 모든 주요 부분인 토큰화, 어텐션, 적응, 목적 및 잠재 오토인코더는 깊이 다시 검토되었습니다. 그러나 정보가 계층을 통해 어떻게 축적되는지를 조절하는 잔여 스트림은 원래의 트랜스포머로부터 직접 상속되었습니다. 본 논문에서는 DiTs에서 교차 계층 정보 흐름을 심층 및 노이즈 제거 타임스텝을 통해 공동으로 분석하고, 전통적인 잔여 추가의 세 가지 구체적인 증상, 즉 단조롭게 전진하는 크기 팽창, 선명하게 감소하는 역방향 기울기, 그리고 뚜렷한 블록 단위 중복을 확인했습니다. 이 진단을 받아들여, 우리는 Diffusion-Adaptive Routing (DAR)을 제안합니다. 이는 이전 서브레이어 출력의 히스토리에 걸쳐 학습 가능한, 시간대 적응형 및 비증분적인 집합을 수행하는 잔여 대체물입니다. 더욱이, 제안된 DAR은 REPA와 같은 여러 현대 트랜스포머 향상 방법과 호환됩니다. ImageNet 256x256에서 DAR은 SiT-XL/2를 2.11 FID점 개선하며(7.56 대 9.67), 교육 반복 회수를 8.75배 줄이면서 베이스라인 수렴 품질과 일치시킵니다. REPA 위에 적용하면 초기 단계에서 2배 더 빠른 교육을 제공하며, 이는 확산 모델링에서 과소개발된 설계 축 중 하나로 선형적으로 작동하는 교차 계층 정보 라우팅을 제안합니다. 사전 교육 이상으로, DAR은 대규모 T2I 모델의 세밀한 조정 단계에서도 적용할 수 있으며 분배 일치 증류 중에 고주파수 세부 정보를 보존합니다."
+    },
+    "summary": "1. 확산 트랜스포머에서의 교차 계층 정보 라우팅 문제에 대한 시스템적 분석을 통해, 전통적인 잔여 추가 방식의 세 가지 구체적인 문제를 도출하고, 이에 기반한 Diffusion-Adaptive Routing (DAR)을 제안합니다.\n2. DAR은 경험적 분석 결과를 바탕으로 잔여 대체물로, 시간대 적응형 집합을 수행하여 기존 설계 방식에 비하여 성능 향상을 이루어내며, REPA와 호환됨을 입증합니다.\n3. DAR은 ImageNet에서 더 빠른 교육 속도와 성능 향상을 보여주면서, 확산 모델링에서의 교차 계층 정보 라우팅의 중요성을 강조하고, 고주파수 세부 정보 보존에도 효과적입니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Lens: Rethinking Training Efficiency for Foundational Text-to-Image Models",
+    "abstract": "We introduce Lens, a 3.8B-parameter T2I model that achieves performance competitive with, and in several cases surpassing, state-of-the-art models with more than 6B parameters across various benchmarks, while requiring significantly less training compute. For example, Lens requires only about 19.3% of the training compute used by Z-Image. The training efficiency of Lens stems from two key strategies beyond its compact model size. First, we maximize data information density per training batch by (i) training on Lens-800M, a dataset of 800M densely captioned image-text pairs whose captions are generated by GPT-4.1 and contain approximately 109 words on average, providing richer semantic supervision than conventional short captions, and (ii) constructing each batch from images with multiple resolutions and diverse aspect ratios, thereby enlarging the effective visual coverage of each optimization step. Second, we improve convergence speed through careful architectural choices, including adopting a semantic VAE that provides better latent representations and employing a strong language encoder that accelerates optimization while enabling multilingual generalization from English-only training data. After pre-training, we apply RL with taxonomy-driven prompts (Lens-RL-8K) and structured reward rubrics to suppress artifacts and improve visual quality, a reasoner module with training-free system prompt search to better align user requests with the model, and distillation-based acceleration for 4-step inference. Through efficient training and systematic optimization, Lens generalizes to arbitrary aspect ratios from 1:2 to 2:1 and resolutions up to 1440^2, and supports prompts in several commonly used languages. Thanks to its compact size, Lens generates a 1024^2 image in 3.15 seconds on a single NVIDIA H100 GPU, while its distilled turbo version performs 4-step generation in 0.84 seconds.",
+    "authors": [
+      "Dong Chen",
+      "Fangyun Wei",
+      "Ziyu Wan",
+      "Dongdong Chen",
+      "Jiawei Zhang",
+      "Jinjing Zhao",
+      "Sirui Zhang",
+      "Yang Yue",
+      "Zhiyang Liang",
+      "Baining Guo",
+      "Chong Luo",
+      "Jianmin Bao",
+      "Ji Li",
+      "Lei Shi",
+      "Qinhong Yang",
+      "Xiuyu Wu",
+      "Xuelu Feng",
+      "Yan Lu",
+      "Yanchen Dong",
+      "Yitong Wang",
+      "Yunuo Chen"
+    ],
+    "likes": 89,
+    "published_date": "May 20",
+    "url": "https://huggingface.co/papers/2605.21573",
+    "date_collected": "2026-05-26T07:29:22.864381+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "렌즈: 핵심 텍스트-이미지 모델의 효율적인 훈련 방식 재고",
+      "abstract": "Lens는 3.8B-파라미터 T2I 모델로, 다양한 벤치마크에서 6B-파라미터를 가진 최신 모델과 경쟁력 있는 성능을 보여주며, Z-Image보다 약 19.3%만의 훈련 계산량으로 훈련이 가능합니다. Lens의 훈련 효율성은 model 크기 외에도 두 가지 주요 전략에서 비롯됩니다."
+    },
+    "summary": "1. Lens는 적은 파라미터로 높은 성능을 발휘하며, 데이터 정보 밀도를 최적화한 훈련 배치와 수렴 속도 향상을 통해 효율적인 훈련을 실현합니다.\n2. Lens-800M 데이터셋에서의 훈련과 각 배치의 다양한 해상도 및 종횡비 이미지를 활용하여 시각적 정보를 효율적으로 다룹니다.\n3. RL을 적용한 후, 다양한 언어로의 프롬프트 지원과 이미지 생성 가속화를 통해 Lens는 빠르고 효율적인 모델로 발전합니다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "SciAtlas: A Large-Scale Knowledge Graph for Automated Scientific Research",
+    "abstract": "The exponential growth of global academic output has confronted researchers and AI agents with an unprecedented ``information explosion,'' where fragmented and unstructured knowledge organization impedes deep interdisciplinary integration. Current academic retrieval tools predominantly rely on superficial keyword matching or vector-space semantic retrieval, which lack the topological reasoning capabilities required to navigate complex logical connections. Agentic deep-research-based frameworks are often prone to logical hallucinations and consuming high inference costs. To bridge this gap, in this report, we introduce SciAtlas, a large-scale, multi-disciplinary, heterogeneous academic resource knowledge graph designed as a panoramic scientific evolution network. By integrating over 43M papers from 26 disciplines, and a total of 157M entities and 3B triplets, SciAtlas provides a structured topological cognitive substrate that dismantles disciplinary barriers and furnishes AI agents with a global perspective. Furthermore, we develop a neuro-symbolic retrieval algorithm featuring tri-path collaborative recall and graph reranking, achieving a seamless transition from simple semantic matching to deterministic association discovery. We also present key application directions of SciAtlas, including literature review, automated research trend synthesis, idea positioning, and academic trajectory exploration, to demonstrate that SciAtlas can serve as an effective ``cognitive map'' to empower the full loop of automated scientific research while significantly reducing reasoning costs. We have released the interfaces for KG retrieval and various downstream tasks in our GitHub repo.",
+    "authors": [
+      "Shuofei Qiao",
+      "Yunxiang Wei",
+      "Jiazheng Fan",
+      "Bin Wu",
+      "Busheng Zhang",
+      "Mengru Wang",
+      "Yuqi Zhu",
+      "Ningyu Zhang",
+      "Keyan Ding",
+      "Qiang Zhang",
+      "Huajun Chen"
+    ],
+    "likes": 45,
+    "published_date": "May 20",
+    "url": "https://huggingface.co/papers/2605.22878",
+    "date_collected": "2026-05-26T07:29:22.866795+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "SciAtlas: 자동화된 과학 연구를 위한 대규모 지식 그래프",
+      "abstract": "글로벌 학술 산출물의 지수적 성장은 연구자와 AI 에이전트들에게 이전에 없던 \"정보 폭발\"에 직면하게 하였습니다. 파편화되고 구조화되지 않은 지식 구조는 심층적인 학제적 통합을 방해하며, 현재의 학술 정보 검색 도구는 대부분 표면적인 키워드 매칭이나 벡터 공간 의미 검색에 의존하고 있습니다. 이는 복잡한 논리적 연결을 탐색하는 데 필요한 위상적 추론 능력이 부족합니다."
+    },
+    "summary": "1. SciAtlas는 26개 학문 분야에서 43백만 건 이상의 논문과 1억 5700만 개 이상의(entity) 및 30억 개(triplets)의 요소를 통합한 대규모, 다학제적, 이변 있다면 네트워크로 설계된 학술 자원 지식 그래프입니다.\n2. 주요 응용 방향으로는 문헌 검토, 자동화된 연구 트렌드 종합, 아이디어 위치 결정, 학술 궤적 탐색 등이 있으며, SciAtlas는 자동화된 과학 연구의 완전한 루프를 강화하고 추론 비용을 크게 줄일 수 있는 \"인지 지도\"로 작용할 수 있음을 입증합니다.\n3. SciAtlas는 단순 의미 매칭에서 결정론적 연관 발견으로의 원활한 전환을 달성하는 tri-path 협력 회상(collaborative recall) 및 그래프 재랭킹을 특징으로 하는 신경 심호익 검색 알고리즘을 개발합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "StepAudio 2.5 Technical Report",
+    "abstract": "Unified audio-language modeling has emerged as a prominent trend in modern speech systems, promising to bring the reasoning capabilities of large language models to auditory tasks. However, existing unified foundations often struggle to match the depth of specialized systems across automatic speech recognition (ASR), text-to-speech synthesis (TTS), and realtime spoken interaction. Bridging this gap remains an open challenge. This report presents StepAudio 2.5, a unified audio-language foundation model that matches or exceeds specialized systems across all three capabilities. Rather than treating these tasks as architecturally distinct, we operate on the premise that once text and audio share a multimodal representational space, task specialization becomes a matter of operational regimes: data construction, optimization targets, and decoding constraints. Guided by this insight, we advance the post-training paradigm from standard supervised learning to task-tailored Reinforcement Learning from Human Feedback (RLHF), using it as the primary mechanism to define complex optimization targets. We leverage this RLHF-centric alignment, alongside specialized decoding, to shape a shared backbone into three distinct operational modes. Concretely, the ASR branch advances transcription efficiency via verifiable multi-token decoding; the TTS branch achieves controllable, expressive synthesis through preference-based RLHF and context-rich supervision; and the Realtime branch realizes low-latency, persona-consistent dialogue via generative reward modeling within an RLHF framework. On standard benchmarks, StepAudio 2.5 achieves state-of-the-art results across ASR, TTS, and Realtime, demonstrating that a singular audio-language foundation can successfully internalize the distinct deployment objectives of speech understanding, generation, and live interaction.",
+    "authors": [
+      "Bin Lin",
+      "Bo Zhao",
+      "Boyong Wu",
+      "Chao Yan",
+      "Chen Wu",
+      "Cheng Yi",
+      "Chengyuan Yao",
+      "Daijiao Liu",
+      "Fei Tian",
+      "Feng Tian",
+      "Haiyang Sun",
+      "Haoyang Zhang",
+      "Jiangjie Zhen",
+      "Jinglan Gong",
+      "Jun Chen",
+      "Li Xie",
+      "Peilin Li",
+      "Peng Yang",
+      "Pengfei Tan",
+      "Qingjian Lin",
+      "Runze Li",
+      "Shenghua Hu"
+    ],
+    "likes": 37,
+    "published_date": "May 22",
+    "url": "https://huggingface.co/papers/2605.23463",
+    "date_collected": "2026-05-26T07:29:22.869736+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "StepAudio 2.5 기술 보고서",
+      "abstract": "통합 오디오-언어 모델링은 현대 음성 시스템에서 두드러진 추세로 등장했으며, 대규모 언어 모델의 추론 능력을 청각 작업에 가져다줄 것을 약속합니다. 그러나 기존의 통합 기반은 자동 음성 인식(ASR), 텍스트 음성 합성(TTS), 그리고 실시간 음성 상호작용을 모두 수행하는 특화된 시스템의 깊이를 맞추기 어렵습니다. 이 불일치를 줄이는 것은 여전히 열린 과제입니다. 본 보고서는 StepAudio 2.5를 소개하는데, 이는 세 능력 모두에서 특화된 시스템을 능가하는 통합 오디오-언어 기반 모델입니다. 이러한 작업들을 구조적으로 명확하게 구분하지 않고, 텍스트와 오디오가 다중 모달 표현 공간을 공유할 때 작업 특화가 작동 체제, 최적화 대상, 디코딩 제약의 문제가 됩니다."
+    },
+    "summary": "1. StepAudio 2.5는 ASR, TTS, 그리고 Realtime 작업에서 특화된 시스템을 능가하거나 필요한 수준으로 맞추는 통합 오디오-언어 기반 모델이다.\n2. 텍스트와 오디오가 다중 모달 공간을 공유할 때, StepAudio 2.5는 운영 체제: 데이터 구성, 최적화 대상, 디코딩 제약을 고려하는 방식으로 세 작업을 구현한다.\n3. StepAudio 2.5에서 ASR 분기는 다중 토큰 디코딩을 통해 전사 효율성을 향상시키고, TTS 분기는 선호 중심의 RLHF 및 컨텍스트 풍부한 감독을 통해 제어 가능하고 표현력 있는 합성을 달성하며, Realtime 분기는 인공 판단 모델링을 통해 실시간 대화를 구현한다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Audio"
+    ]
+  },
+  {
+    "title": "See What I Mean: Aligning Vision and Language Representations for Video Fine-grained Object Understanding",
+    "abstract": "We present SWIM (See What I Mean), a novel training strategy that aligns vision and language representations to enable fine-grained object understanding solely from textual prompts. Unlike existing approaches that require explicit visual prompts, such as masks or points, SWIM leverages mask supervision only during training to guide cross-modal attention, allowing the model to automatically attend to the user-specified object at inference. Our cross-attention analysis of pretrained multimodal large languagemodels (MLLMs) reveals a systematic discrepancy: Attribute words produce sharp, localized activations in the visual modality, whereas object nouns yield diffuse and scattered patterns due to semantic reference bias and distributed high-level representations. To address this misalignment, we construct NL-Refer, an enriched dataset, in which each object mask is paired with a precise natural language referring expression. SWIM extracts multi-layer cross-attention maps from object nouns and enforces spatial consistency with ground-truth masks. Experimental results demonstrate that SWIM substantially improves text-visual alignment and achieves superior performance over visual-prompt-based methods on fine-grained object understanding benchmarks. The code and data are available at https://github.com/HumanMLLM/SWIM{https://github.com/HumanMLLM/SWIM}.",
+    "authors": [
+      "Boyuan Sun",
+      "Bowen Yin",
+      "Yuanming Li",
+      "Xihan Wei",
+      "Qibin Hou"
+    ],
+    "likes": 28,
+    "published_date": "May 18",
+    "url": "https://huggingface.co/papers/2605.18018",
+    "date_collected": "2026-05-26T07:29:22.871834+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "무엇을 보라는거니: 비디오 세세한 물체 이해를 위한 시각과 언어 표현 조정",
+      "abstract": "본 연구에서는 SWIM(See What I Mean)이라는 비전과 언어 표현을 조율하는 혁신적인 훈련 전략을 제시하여 텍스트 프롬프트만을 통해 세세한 물체 이해를 가능케 합니다. 기존의 방법과 달리 목적하는 물체를 자동으로 주목하도록 하는 SWIM은 훈련 중에만 마스크 지도를 활용하며, 사전에 시각적 프롬프트(마스크 또는 점)를 요구하지 않습니다. 사전 훈련된 다중 모달 대 언어 모델(MLLM)의 교차 주의 분석 결과, SWIM은 객체 명사는 의미 참조 편향 및 분산된 고수준 표현으로 인해 확산 및 분산패턴을 보이는 반면, 속성어는 시각 모드에서 날카롭고 국부화된 활성화를 생성함을 보여줍니다. 이 불일치를 해소하기 위해, NL-Refer라는 풍부한 데이터셋을 구축하고, SWIM은 객체 명사에서 다층 교차 주의 지도를 추출하고 GT 마스크와 공간 일관성을 강조합니다. 실험 결과는 SWIM이 텍스트-시각이 정렬을 크게 향상시키고 세세한 물체 이해 벤치마크에서 시각 프롬프트 기반 방법보다 우수한 성능을 달성함을 보여줍니다. 코드와 데이터는 https://github.com/HumanMLLM/SWIM{https://github.com/HumanMLLM/SWIM}에서 제공됩니다."
+    },
+    "summary": "1. SWIM은 텍스트 프롬프트를 통해 세세한 물체 이해를 가능케 하는 비전과 언어 표현을 조율하는 새로운 훈련 전략을 제시합니다.\n2. NL-Refer 데이터셋을 활용하여 SWIM은 객체 명사에서 교차 주의 지도를 추출하고 공간 일관성을 강조하여 텍스트-시각 정렬을 향상시킵니다.\n3. 실험 결과는 SWIM이 시각 프롬프트 기반 방법보다 우수한 성능을 보여주며, 세세한 물체 이해 벤치마크에서 뛰어난 성과를 달성함을 입증합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills",
+    "abstract": "Language agents increasingly improve by reusing skills -- structured procedural artifacts distilled from past experience. In particular, domain-level and model-generated skills are especially promising. They offer fast adaptation within a domain by encoding domain-specific recurring procedures, and they scale beyond labor-intensive hand-crafting. However, while extraction methods continue to proliferate, understanding remains limited, with no comprehensive study spanning the full skill lifecycle -- experience generation, skill extraction, and skill consumption -- to ask whether such skills actually work, when they work, and what makes them succeed or fail. To close this gap, we build a utility-grounded evaluation framework that provides systematic experimental results across extractors and target agents, covering five diverse agentic task domains. We find that model-generated skills are beneficial on average but exhibit non-trivial negative transfer, and that neither extractors nor targets behave uniformly. A model can be a strong extractor yet a weak consumer, or vice versa, with skill utility independent of model scale or baseline task strength. To explain these patterns, we then dissect each lifecycle stage in depth, analyzing how experience composition shapes skill quality, what properties characterize useful skills, and how the same skill transfers across different consumers. Finally, we translate these findings into a concrete meta-skill that guides skill extraction toward the features tied to actual utility, which consistently improves skill quality across domains and substantially reduces negative transfer.",
+    "authors": [
+      "Zisu Huang",
+      "Jingwen Xu",
+      "Yifan Yang",
+      "Ziyang Gong",
+      "Qihao Yang",
+      "Muzhao Tian",
+      "Xiaohua Wang",
+      "Changze Lv",
+      "Xuemei Gao",
+      "Qi Dai",
+      "Bei Liu",
+      "Kai Qiu",
+      "Xue Yang",
+      "Dongdong Chen",
+      "Xiaoqing Zheng",
+      "Chong Luo"
+    ],
+    "likes": 22,
+    "published_date": "May 22",
+    "url": "https://huggingface.co/papers/2605.23899",
+    "date_collected": "2026-05-26T07:29:22.874464+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "원시 경험으로부터 기술 소비로: 모델 생성 요소 기술의 체계적 연구",
+      "abstract": "언어 요소들은 점차 과거 경험으로부터 추출된 구조화된 절차적 아티팩트인 기술을 재활용함으로써 개선되고 있다. 특히 도메인 수준과 모델 생성 기술은 매우 유망하다. 이들은 도메인 내에서 빠른 적응을 제공하여 도메인별 반복 절차를 인코딩하며, 수고로운 수작업 제작을 넘어서 규모를 확대할 수 있다. 그러나 추출 방법은 계속해서 증가하고 있지만, 이해는 여전히 제한되어 있으며, 완전한 스킬 생애주기를 아우르는 포괄적인 연구는 없다. 그러한 스킬이 실제로 작동하는가, 언제 작동하는가, 그리고 성공하거나 실패하는 것은 무엇인지 알아보기 위해 우리는 유용성 중심의 평가 프레임워크를 구축하였다."
+    },
+    "summary": "1. 모델 생성 기술은 평균적으로 유익하지만 중요한 부정적 전이를 보이며, 추출기와 대상 에이전트가 일관되게 작동하지 않는다.\n2. 경험 구성이 기술 품질을 결정하고, 어떤 특성이 유용한 기술을 특징짓는지, 똑같은 기술이 다른 소비자에게 어떻게 전이되는지를 분석한다.\n3. 실질적인 유용성과 관련된 기능으로 동일한 기술을 다양한 도메인에 걸쳐 향상시키고 부정적 전이를 크게 줄이는 메타 기술을 개발한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion",
+    "abstract": "Most practical high-resolution text-to-image systems, including latent diffusion and autoregressive models, perform generation in a compact latent space, and a decoder maps the generated latents back to pixels. Yet the latent-to-pixel decoder is reconstruction-oriented, optimized to invert the encoder rather than synthesize more details, and becomes increasingly costly at megapixel scale. This drawback calls for a more expressive and efficient decoding paradigm. Motivated by recent progress in scalable pixel-space diffusion, we introduce PiD, a Pixel diffusion Decoder that reformulates latent decoding as conditional pixel diffusion, unifying decoding and upsampling into one generative module. By denoising directly in high-resolution pixel space, PiD synthesizes 4times and even 8times upscaled images with low latency. For latent conditioning, a lightweight sigma-aware adapter injects noise-corrupted latents into the pixel diffusion backbone, enabling PiD to decode partially denoised latents and terminate the latent diffusion process early. To further improve efficiency, we distill the model using DMD2, reducing inference to just 4 steps. PiD applies to both conventional VAE latents and semantic latents (e.g., SigLIP, DINOv2) used in recent RAE-based models. PiD decodes latents of 512 times 512 images into 2048 times 2048 pixels in under 1 second with 13 GB peak memory on a consumer RTX 5090, and as fast as 210 ms on a GB200 GPU, about 6times faster than cascaded diffusion-based super-resolution pipelines with better visual fidelity.",
+    "authors": [
+      "Yifan Lu",
+      "Qi Wu",
+      "Jay Zhangjie Wu",
+      "Zian Wang",
+      "Huan Ling",
+      "Sanja Fidler",
+      "Xuanchi Ren"
+    ],
+    "likes": 21,
+    "published_date": "May 22",
+    "url": "https://huggingface.co/papers/2605.23902",
+    "date_collected": "2026-05-26T07:29:22.876602+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "PiD: 빠르고 고해상도의 잠재 디코딩과 픽셀 확산",
+      "abstract": "대부분의 고해상도 텍스트-이미지 시스템은 잠재 확산과 자기 회귀 모델을 포함해 조밀한 잠재 공간에서 생성을 수행하며, 디코더는 생성된 잠재를 픽셀로 다시 매핑합니다. 그러나 잠재-픽셀 디코더는 재구성 중심이며, 더 많은 세부 정보를 합성하기보다는 인코더를 역으로 변환하기 위해 최적화되어 방대한 픽셀 규모에서 점점 더 비용이 증가합니다. 이러한 단점은 더 표현력이 풍부하고 효율적인 디코딩 패러다임이 필요함을 요구합니다. 최근 확장 가능한 픽셀 공간 확산의 발전을 바탕으로, 우리는 PiD, 조건부 픽셀 확산으로 잠재 디코딩을 재정의하는 Pixel diffusion Decoder를 소개합니다."
+    },
+    "summary": "1. PiD는 조건부 픽셀 확산을 통해 높은 해상도의 이미지를 빠르게 합성하는데 사용되며, 잠재 디코딩과 업샘플링을 통합하는 효율적인 생성 모듈로 작용합니다.\n2. 이 모델은 4배 또는 8배로 확대된 이미지를 낮은 대기 시간으로 합성하며, 가벼운 시그마-인식 어댑터를 사용하여 잠재를 낮은 해상도로 디코딩하고 조기 잠재 확산 프로세스를 종료할 수 있습니다.\n3. PiD는 VAE 잠재와 최근 RAE 기반 모델에서 사용되는 의미있는 잠재 (예: SigLIP, DINOv2)에 적용할 수 있으며, 소비자 RTX 5090에서 512 × 512 이미지의 잠재를 2048 × 2048 픽셀로 1초 미만에 합성함으로써 시각적 신뢰성이 더 높은 기능을 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "PhotoFlow: Agentic 3D Virtual Photography Missions",
+    "abstract": "Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters, and render the final photograph. Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that remain hard to evaluate together: complex 3D spatial understanding and abstract aesthetic judgment. We introduce PhotoFlow, a Director-Reviewer-Reflector agent for closed-loop camera search. The Director builds a soft photographic blueprint and proposes diverse candidate cameras; the Reviewer combines rule checks, visual critique, and pairwise incumbent selection; and the Reflector converts failures into region memory, dead-zone suppression, and high-explore relocation. We also introduce VPhotoBench, a benchmark of 47 open-license Blender scenes and 141 language-conditioned photography missions spanning subject placement, relational composition, and atmosphere/style. On held-out experiments, PhotoFlow achieves the strongest external quality-alignment composite and success rate among one-shot prediction, single-chain reflection, anchor-bank selection, and random search under a six-round rendering budget. To our knowledge, this is the first work to make language-conditioned virtual photography in arbitrary Blender scenes an executable agent task, and our results show that an LLM-centered spatial agent can already produce strong photographs in a setting designed to challenge both 3D reasoning and aesthetic choice.",
+    "authors": [
+      "Jiarui Guo",
+      "Haojia Wei",
+      "Yiming Zhang",
+      "Yifei Liu",
+      "Yuning Gong",
+      "Hongjie Zhang",
+      "Xue Yang",
+      "Zhihang Zhong"
+    ],
+    "likes": 20,
+    "published_date": "May 22",
+    "url": "https://huggingface.co/papers/2605.23771",
+    "date_collected": "2026-05-26T07:29:22.878869+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "사진플로우: 주체적 3D 가상 사진 촬영 미션",
+      "abstract": "가상 사진촬영은 에이전트에게 사전 선택된 카메라 포지션이나 참조 이미지 없이 준비된 3D 장면에 진입하고, 장면 정보와 언어 의도로 적절한 샷을 유추하고 실행 가능한 카메라 매개변수를 선택하여 최종 사진을 렌더링합니다. 최근의 시각-언어 모델의 발전으로 이러한 공간 에이전트가 점점 더 현실적으로 가능해지고 있지만, 이 작업은 복잡한 3D 공간 이해와 추상적인 미적 판단이 어려운 두 가지 능력을 함께 평가하기 어렵습니다. 우리는 클로즈드루프 카메라 탐색을 위한 디렉터-리뷰어-리플렉터 에이전트인 사진플로우를 소개합니다. 디렉터는 부드러운 사진 청사진을 구축하고 다양한 후보 카메라를 제안합니다; 리뷰어는 규칙 검사, 시각적 비평 및 순위 결정을 결합하고; 리플렉터는 실패를 영역 메모리, 데드존 억제 및 고탐색 재배치로 전환합니다. 또한 서브젝트 배치, 관계적 구성 및 분위기/스타일을 포함한 141가지 언어 조건의 사진촬영 미션을 제공하는 47개의 오픈 라이센스 블렌더 장면과 함께 VPhotoBench를 소개합니다. 보유 실험에서 사진플로우는 6라운드 렌더링 예산하에 원샷 예측, 단일체인 리플렉션, 앵커-뱅크 선택 및 랜덤 탐색 중에서 가장 강한 외부 품질 조화 복합 및 성공률을 달성합니다. 우리의 지식으로는 이것이 임의의 블렌더 장면에서 언어 조건에 따른 가상 사진촬영을 실행 가능한 에이전트 작업으로 만드는 첫 작업이며, 우리의 결과는 LLM 중심 공간 에이전트가 이미 3D 추론과 미적 선택을 모두 도전하는 환경에서 강력한 사진을 생산할 수 있다는 것을 보여줍니다."
+    },
+    "summary": "1. 최근의 시각-언어 모델 발전으로 가능해진 가상 사진촬영 작업은 3D 공간 이해와 미적 판단이 어려운 능력을 함께 평가합니다.\n2. 사진플로우에는 디렉터, 리뷰어, 리플렉터 에이전트로 구성되어 있으며, 다양한 후보 카메라 제안 및 실패 대응 기능을 수행합니다.\n3. VPhotoBench를 통해 제공하는 미션은 서브젝트 배치, 관계적 구성, 분위기/스타일 등 다양한 언어 조건에서의 사진촬영을 포함하며, 사진플로우는 강한 외부 품질 조화와 성공률을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis",
+    "abstract": "Spatio-temporal reasoning is a core capability for Multimodal Large Language Models (MLLMs) operating in the real world. As such, evaluating it precisely has become an essential challenge. However, existing spatio-temporal reasoning benchmark datasets primarily rely on static image sets or passively curated video data, which limits the evaluation of fine-grained reasoning capabilities. In this paper, we introduce VGenST-Bench, a video benchmark that employs generative models to actively synthesize highly controlled and diverse evaluation scenarios. To construct VGenST-Bench, we propose a multi-agent pipeline incorporating a human quality control stage, ensuring the quality of all generated videos and QA pairs. We establish a comprehensive 3x2x2 video taxonomy, encompassing Spatial Scale, Perspective, and Scene Dynamics to span diverse scenarios. Furthermore, we design a hierarchical task suite that decouples low-level visual perception from high-level spatio-temporal reasoning. By shifting the paradigm from passive curation to active synthesis, VGenST-Bench enables fine-grained diagnosis of spatio-temporal understanding in MLLMs.",
+    "authors": [
+      "Jinho Park",
+      "Youbin Kim",
+      "Hogun Park",
+      "Eunbyung Park"
+    ],
+    "likes": 20,
+    "published_date": "May 21",
+    "url": "https://huggingface.co/papers/2605.22570",
+    "date_collected": "2026-05-26T07:29:22.880917+09:00",
+    "week": "2026-W22",
+    "translation": {
+      "title": "VGenST-Bench: 활동적 비디오 합성을 통한 시공간 추론용 벤치마크",
+      "abstract": "시공간 추론은 실제 세계에서 작동하는 다중모달 대형 언어 모델(MLLMs)의 핵심 능력입니다. 현재, 이를 정확히 평가하는 것이 중요한 과제가 되었습니다. 그러나 기존의 시공간 추론 벤치마크 데이터셋은 주로 정적 이미지 집합이나 수동으로 성정된 비디오 데이터에 의존하기 때문에 미세한 추론 능력을 평가하기에 제약이 있습니다. 본 논문에서는 활동적으로 다양한 평가 시나리오를 생성하기 위해 생성 모델을 활용하는 비디오 벤치마크인 VGenST-Bench를 소개합니다. VGenST-Bench를 구축하기 위해 인간 품질 관리 단계를 포함하는 다중 에이전트 파이프라인을 제안하며, 모든 생성된 비디오와 QA 쌍의 품질을 보장합니다. 우리는 다양한 시나리오를 포괄하는 공간 스케일, 시점, 장면 역동성을 포함하는 포괠적 3x2x2 비디오 분류법을 제정하였습니다. 더불어 저수준 시각 지각과 고수준 시공간 추론을 분리하는 계층적 작업 모음을 설계하였습니다. 수동 선별에서 활동적 합성으로 패러다임을 전환함으로써, VGenST-Bench는 MLLMs에서 시공간 이해의 미세한 진단을 가능하게 합니다."
+    },
+    "summary": "1. 다중모달 대형 언어 모델에 대한 시공간 추론 능력을 평가하기 위해 활동적 비디오 합성을 활용한 VGenST-Bench 벤치마크를 도입하였습니다.\n2. 인간 품질 관리 단계를 포함하는 다중 에이전트 파이프라인을 통해 다양한 평가 시나리오를 생성하였고, 공간 스케일, 시점, 장면 역동성을 다룬 포괠적 3x2x2 비디오 분류법을 제정하였습니다.\n3. VGenST-Bench는 저수준 시각 지각과 고수준 시공간 추론을 분리하는 계층적 작업 모음을 통해 MLLMs의 시공간 이해를 세밀하게 진단할 수 있게 합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+=== Paper Collection Started at Mon Apr 27 01:42:11 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W18
+URL: https://huggingface.co/papers/week/2026-W18
+Found 2 papers in weekly view
+Fetching likes for: Learning Evidence Highlighting for Frozen LLMs
+Fetching likes for: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+Selected top 10 papers by likes:
+1. Learning Evidence Highlighting for Frozen LLMs (0 likes)
+2. Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond (0 likes)
+Found abstract: Large Language Models (LLMs) can reason well, yet often miss decisive evidence when it is buried in ...
+Processed paper: Learning Evidence Highlighting for Frozen LLMs
+Found abstract: As AI systems move from generating text to accomplishing goals through sustained interaction, the ab...
+Processed paper: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+Collected top 2 papers. Starting summary generation...
+
+Processing paper 1/2
+Title: Learning Evidence Highlighting for Frozen LLMs
+Generating Korean translation and summary...
+
+Processing paper 2/2
+Title: Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond
+Generating Korean translation and summary...
+
+Processed 2 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W18.json...
+
+Updating Notion database...
+Creating new paper: Frozen LLMs를 위한 증거 강조 학습
+Creating new paper: 의지 있는 세계 모델링: 기초, 능력, 법칙, 그리고 그 너머
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Apr 27 01:42:34 UTC 2026 ===
+

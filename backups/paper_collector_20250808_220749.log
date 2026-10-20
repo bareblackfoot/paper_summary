@@ -1,0 +1,153 @@
+=== Paper Collection Started at Thu Aug  7 22:08:15 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W32
+URL: https://huggingface.co/papers/week/2025-W32
+Found 10 papers in weekly view
+Fetching likes for: Qwen-Image Technical Report
+Fetching likes for: VeriGUI: Verifiable Long-Chain GUI Dataset
+Fetching likes for: Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens
+Fetching likes for: Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference
+Fetching likes for: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Fetching likes for: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Fetching likes for: Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation
+Fetching likes for: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Fetching likes for: Efficient Agents: Building Effective Agents While Reducing Cost
+Fetching likes for: PixNerd: Pixel Neural Field Diffusion
+Selected top 10 papers by likes:
+1. Qwen-Image Technical Report (143 likes)
+2. VeriGUI: Verifiable Long-Chain GUI Dataset (116 likes)
+3. Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens (107 likes)
+4. Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference (91 likes)
+5. Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training (73 likes)
+6. Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models (58 likes)
+7. Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation (50 likes)
+8. SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension (48 likes)
+9. Efficient Agents: Building Effective Agents While Reducing Cost (48 likes)
+10. PixNerd: Pixel Neural Field Diffusion (46 likes)
+Found abstract: We present Qwen-Image, an image generation foundation model in the Qwen
+series that achieves signifi...
+Processed paper: Qwen-Image Technical Report
+Found abstract: Recent studies have delved into constructing autonomous agents capable of
+performing complex Graphic...
+Processed paper: VeriGUI: Verifiable Long-Chain GUI Dataset
+Found abstract: Chain-of-Thought (CoT) prompting has been shown to improve Large Language
+Model (LLM) performance on...
+Processed paper: Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens
+Found abstract: We present Seed Diffusion Preview, a large-scale language model based on
+discrete-state diffusion, o...
+Processed paper: Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference
+Found abstract: General AI Agents are increasingly recognized as foundational frameworks for
+the next generation of ...
+Processed paper: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Found abstract: Diffusion Large Language Models (DLLMs) are emerging as a powerful
+alternative to the dominant Autor...
+Processed paper: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Found abstract: We introduce Skywork UniPic, a 1.5 billion-parameter autoregressive model
+that unifies image underst...
+Processed paper: Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation
+Found abstract: Retrieval-augmented generation (RAG) over long documents typically involves
+splitting the text into ...
+Processed paper: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Found abstract: The remarkable capabilities of Large Language Model (LLM)-driven agents have
+enabled sophisticated s...
+Processed paper: Efficient Agents: Building Effective Agents While Reducing Cost
+Found abstract: The current success of diffusion transformers heavily depends on the
+compressed latent space shaped ...
+Processed paper: PixNerd: Pixel Neural Field Diffusion
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Qwen-Image Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 143  ->  128
+Update date_collected: 2025-08-08T07:08:24.097867+09:00  ->  2025-08-07T07:08:32.492641+09:00
+
+Processing paper 2/10
+Title: VeriGUI: Verifiable Long-Chain GUI Dataset
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed
+  Inference
+Paper already exists, checking if translation is complete...
+Update likes: 91  ->  61
+Update date_collected: 2025-08-08T07:08:24.102878+09:00  ->  2025-08-07T07:08:32.496022+09:00
+
+Processing paper 5/10
+Title: Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent
+  Foundation Models Training
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  71
+Update date_collected: 2025-08-08T07:08:24.104369+09:00  ->  2025-08-07T07:08:32.494159+09:00
+
+Processing paper 6/10
+Title: Beyond Fixed: Variable-Length Denoising for Diffusion Large Language
+  Models
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  53
+Update date_collected: 2025-08-08T07:08:24.105537+09:00  ->  2025-08-07T07:08:32.497195+09:00
+
+Processing paper 7/10
+Title: Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding
+  and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  42
+Update date_collected: 2025-08-08T07:08:24.107112+09:00  ->  2025-08-07T07:08:32.501202+09:00
+
+Processing paper 8/10
+Title: SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic
+  Association and Long Story Comprehension
+Paper already exists, checking if translation is complete...
+Update likes: 48  ->  46
+Update date_collected: 2025-08-08T07:08:24.108405+09:00  ->  2025-08-07T07:08:32.498501+09:00
+
+Processing paper 9/10
+Title: Efficient Agents: Building Effective Agents While Reducing Cost
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: PixNerd: Pixel Neural Field Diffusion
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  45
+Update date_collected: 2025-08-08T07:08:24.111095+09:00  ->  2025-08-07T07:08:32.499631+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W32.json...
+
+Updating Notion database...
+Updating paper: Qwen-Image 기술 보고서 (likes: 128 -> 143)
+Creating new paper: VeriGUI: 검증 가능한 장기 체인 GUI 데이터셋
+Creating new paper: 큰 언어 모델의 사고 연쇄 추론, 신기림인가? 데이터 분포 렌즈 관점
+Updating paper: 씨드 디퓨전: 고속 추론을 지원하는 대규모 디퓨전 언어 모델 (likes: 61 -> 91)
+Updating paper: 인지적 커널-프로: 심층 연구 에이전트 및 에이전트 기반 모델 훈련을 위한 프레임워크 (likes: 71 -> 73)
+Updating paper: 고정이 넘어, 변수 길이 디노이징을 통한 확산 대형 언어 모델 (likes: 53 -> 58)
+Updating paper: 스카이워크 유니픽: 시각 이해와 생성을 위한 통일된 자기회귀 모델 (likes: 42 -> 50)
+Updating paper: SitEmb-v1.5: 의미 연관 및 장편 이해를 위한 개선된 컨텍스트 인식 밀집 검색 (likes: 46 -> 48)
+Creating new paper: 효율적인 에이전트: 비용 절감과 효율성 구축
+Updating paper: 픽셀 신경장 필드 확산 (likes: 45 -> 46)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Aug  7 22:10:23 UTC 2025 ===
+

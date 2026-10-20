@@ -1,0 +1,256 @@
+[
+  {
+    "title": "Elucidating the SNR-t Bias of Diffusion Probabilistic Models",
+    "abstract": "Diffusion Probabilistic Models have demonstrated remarkable performance across a wide range of generative tasks. However, we have observed that these models often suffer from a Signal-to-Noise Ratio-timestep (SNR-t) bias. This bias refers to the misalignment between the SNR of the denoising sample and its corresponding timestep during the inference phase. Specifically, during training, the SNR of a sample is strictly coupled with its timestep. However, this correspondence is disrupted during inference, leading to error accumulation and impairing the generation quality. We provide comprehensive empirical evidence and theoretical analysis to substantiate this phenomenon and propose a simple yet effective differential correction method to mitigate the SNR-t bias. Recognizing that diffusion models typically reconstruct low-frequency components before focusing on high-frequency details during the reverse denoising process, we decompose samples into various frequency components and apply differential correction to each component individually. Extensive experiments show that our approach significantly improves the generation quality of various diffusion models (IDDPM, ADM, DDIM, A-DPM, EA-DPM, EDM, PFGM++, and FLUX) on datasets of various resolutions with negligible computational overhead. The code is at https://github.com/AMAP-ML/DCW.",
+    "authors": [
+      "Meng Yu",
+      "Lei Sun",
+      "Jianhao Zeng",
+      "Xiangxiang Chu",
+      "Kun Zhan"
+    ],
+    "likes": 67,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.16044",
+    "date_collected": "2026-04-21T07:22:30.089267+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "확산 확률 모델의 SNR-t 편향 해석",
+      "abstract": "확산 확률 모델은 다양한 생성 과제에서 놀라운 성능을 보여주고 있습니다. 그러나 이러한 모델들은 종종 신호 대 잡음 비율-타임스텝 (SNR-t) 편향 문제를 겪고 있는 것으로 관찰되었습니다. 이 편향은 추론 단계에서 잡음 제거 샘플의 SNR과 해당 타임스텝 간의 불일치를 가리킵니다. 훈련 과정에서 샘플의 SNR은 엄격히 해당 타임스텝과 결합됩니다. 그러나 추론 중에 이 대응이 방해를 받아 오류가 누적되고 생성 품질이 저하됩니다. 우리는 이 현상을 입증하기 위해 포괄적인 경험적 증거와 이론적 분석을 제시하고 이 SNR-t 편향을 완화하기 위한 간단하면서 효과적인 차별적 수정 방법을 제안합니다. 확산 모델이 일반적으로 역 잡음 프로세스에서 고주파 세부 사항에 집중하기 전에 저주파 구성 요소를 재구성하는 경향이 있다는 점을 인지하고, 샘플을 각각의 다양한 주파수 구성 요소로 분해하고 각 구성 요소에 차별적 수정을 적용합니다. 광범위한 실험 결과는 우리의 방법이 다양한 해상도 데이터셋 (IDDPM, ADM, DDIM, A-DPM, EA-DPM, EDM, PFGM++ 및 FLUX)에서 무시할 만한 계산 부담으로 생성 품질을 현저히 향상시킨다는 것을 보여줍니다. 코드는 https://github.com/AMAP-ML/DCW 에서 확인할 수 있습니다."
+    },
+    "summary": "1. 확산 확률 모델은 SNR-t 편향 문제로 인해 생성 품질이 손상될 수 있는데, 이를 완화하기 위해 차별적 수정 방법을 제안하고 이를 통해 생성 품질을 현저히 향상시킬 수 있다.\n2. 차별적 수정은 각 주파수 구성 요소에 개별적으로 적용되며, 샘플을 재구성하는 절차에 있어 높은 주파수 세부 사항에 초점을 맞추는 전략을 변경함으로써 생성 품질을 개선할 수 있다.\n3. 실험 결과는 제안된 방법이 다양한 해상도 데이터셋에서 확산 모델의 생성 품질을 향상시키는 데 효과적임을 입증하고 있다.",
+    "categories": [
+      "LLM",
+      "Generative Modeling",
+      "Other"
+    ]
+  },
+  {
+    "title": "Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips",
+    "abstract": "Deep Neural Networks (DNNs) can be catastrophically disrupted by flipping only a handful of parameter bits. We introduce Deep Neural Lesion (DNL), a data-free and optimizationfree method that locates critical parameters, and an enhanced single-pass variant, 1P-DNL, that refines this selection with one forward and backward pass on random inputs. We show that this vulnerability spans multiple domains, including image classification, object detection, instance segmentation, and reasoning large language models. In image classification, flipping just two sign bits in ResNet-50 on ImageNet reduces accuracy by 99.8%. In object detection and instance segmentation, one or two sign flips in the backbone collapse COCO detection and mask AP for Mask R-CNN and YOLOv8-seg models. In language modeling, two sign flips into different experts reduce Qwen3-30B-A3B-Thinking from 78% to 0% accuracy. We also show that selectively protecting a small fraction of vulnerable sign bits provides a practical defense against such attacks.",
+    "authors": [
+      "Ido Galil",
+      "Moshe Kimhi",
+      "Ran El-Yaniv"
+    ],
+    "likes": 38,
+    "published_date": "Apr 16",
+    "url": "https://huggingface.co/papers/2502.07408",
+    "date_collected": "2026-04-21T07:22:30.090829+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "데이터나 최적화 없이 최대 뇌 손상: 부호 비트 뒤집기를 통한 신경망 교란",
+      "abstract": "깊은 신경망(DNNs)은 소수의 매개변수 비트만 뒤집어도 재앙을 초래할 수 있습니다. 우리는 결정적 매개변수를 찾아내는 데이터 없이, 최적화 없이 작동하는 Deep Neural Lesion (DNL) 방법을 소개하고, 이를 개선한 1P-DNL을 소개합니다. ResNet-50의 이미지넷에 대해 두 개의 부호 비트만 뒤집으면 정확도가 99.8% 감소하는 등 다양한 분야에 취약점이 존재함을 보입니다."
+    },
+    "summary": "1. 데이터나 최적화 없이도 신경망을 교란시킬 수 있는 Deep Neural Lesion (DNL) 방법을 소개했다.\n2. ResNet-50의 이미지 분류에서 두 개의 부호 비트를 뒤집으면 정확도가 99.8%까지 감소하는 취약점을 확인했다.\n3. 취약한 부호 비트의 작은 부분만 보호하는 것이 이러한 공격에 대한 실용적 방어 수단을 제공한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "PersonaVLM: Long-Term Personalized Multimodal LLMs",
+    "abstract": "Multimodal Large Language Models (MLLMs) serve as daily assistants for millions. However, their ability to generate responses aligned with individual preferences remains limited. Prior approaches enable only static, single-turn personalization through input augmentation or output alignment, and thus fail to capture users' evolving preferences and personality over time (see Fig.1). In this paper, we introduce PersonaVLM, an innovative personalized multimodal agent framework designed for long-term personalization. It transforms a general-purpose MLLM into a personalized assistant by integrating three key capabilities: (a) Remembering: It proactively extracts and summarizes chronological multimodal memories from interactions, consolidating them into a personalized database. (b) Reasoning: It conducts multi-turn reasoning by retrieving and integrating relevant memories from the database. (c) Response Alignment: It infers the user's evolving personality throughout long-term interactions to ensure outputs remain aligned with their unique characteristics. For evaluation, we establish Persona-MME, a comprehensive benchmark comprising over 2,000 curated interaction cases, designed to assess long-term MLLM personalization across seven key aspects and 14 fine-grained tasks. Extensive experiments validate our method's effectiveness, improving the baseline by 22.4% (Persona-MME) and 9.8% (PERSONAMEM) under a 128k context, while outperforming GPT-4o by 5.2% and 2.0%, respectively. Project page: https://PersonaVLM.github.io.",
+    "authors": [
+      "Chang Nie",
+      "Chaoyou Fu",
+      "Yifan Zhang",
+      "Haihua Yang",
+      "Caifeng Shan"
+    ],
+    "likes": 32,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2604.13074",
+    "date_collected": "2026-04-21T07:22:30.092528+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "PersonaVLM: 장기 개인화된 멀티모달 LLMs",
+      "abstract": "멀티모달 대형 언어 모델(MLLMs)은 수백만 명의 사용자를 위한 일상적인 보조 역할을 합니다. 그러나 개인의 선호도와 일치하는 응답을 생성하는 능력은 제한적입니다. 이전 방법론은 입력 보강 또는 출력 정렬을 통해 정적인, 단일 턴의 개인화만을 가능케 하고 있어 사용자의 시간 경과에 따라 변화하는 선호도와 성격을 파악하지 못합니다. 본 논문에서는 장기 개인화를 위해 설계된 혁신적인 개인화 멀티모달 에이전트 프레임워크인 PersonaVLM을 소개합니다. 이는 세 가지 핵심 능력을 통합하여 범용 MLLM을 개인화된 보조 역할로 변환합니다: (a) 기억: 상호작용에서 시간적 멀티모달 기억을 선제적으로 추출하고 요약하여 개인화된 데이터베이스로 통합합니다. (b) 추론: 데이터베이스에서 관련 기억을 검색하고 통합함으로써 멀티턴 추론을 수행합니다. (c) 응답 정렬: 사용자의 시간 경과에 따라 변화하는 성격을 추론하여 출력이 그들의 독특한 특성과 일치하도록 보장합니다. 평가를 위해 Persona-MME을 설정하며, 이는 장기 MLLM 개인화를 7가지 핵심 측면과 14가지 세부 작업에 걸쳐평가하기 위해 2,000개 이상의 고안된 상호작용 사례로 구성되었습니다. 광범위한 실험은 우리 방법의 효과를 검증하며, 기준을 22.4% (Persona-MME) 및 9.8% (PERSONAMEM) 향상시키고, 128k 컨텍스트에서 각각 5.2%, 2.0%의 성능 개선을 이루어내어 GPT-4o를 앞섭니다. 프로젝트 페이지: https://PersonaVLM.github.io."
+    },
+    "summary": "1. PersonaVLM은 멀티모달 대형 언어 모델을 장기적으로 개인화된 보조 역할로 변환시키기 위해 기억, 추론, 응답 정렬 세 가지 능력을 통합한 개인화된 에이전트 프레임워크입니다.\n2. Persona-MME을 통한 실험에서 PersonaVLM은 기준을 22.4%와 9.8% 향상시키고, GPT-4o를 각각 5.2%와 2.0% 능가하며 장기 MLLM 개인화의 효과적임을 입증했습니다.\n3. 평가를 위해 2,000개 이상의 인터랙션 케이스를 포함하는 Persona-MME을 만들어 개인화된 MLLM의 장기 개인화를 다양한 측면과 세부 작업에 걸쳐 평가하였습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems",
+    "abstract": "Retrieval-Augmented Generation (RAG) systems critically depend on effective document chunking strategies to balance retrieval quality, latency, and operational cost. Traditional chunking approaches, such as fixed-size, rule-based, or fully agentic chunking, often suffer from high token consumption, redundant text generation, limited scalability, and poor debuggability, especially for large-scale web content ingestion. In this paper, we propose Web Retrieval-Aware Chunking (W-RAC), a novel, cost-efficient chunking framework designed specifically for web-based documents. W-RAC decouples text extraction from semantic chunk planning by representing parsed web content as structured, ID-addressable units and leveraging large language models (LLMs) only for retrieval-aware grouping decisions rather than text generation. This significantly reduces token usage, eliminates hallucination risks, and improves system observability.Experimental analysis and architectural comparison demonstrate that W-RAC achieves comparable or better retrieval performance than traditional chunking approaches while reducing chunking-related LLM costs by an order of magnitude.",
+    "authors": [
+      "Uday Allu",
+      "Sonu Kedia",
+      "Tanmay Odapally",
+      "Biddwan Ahmed"
+    ],
+    "likes": 22,
+    "published_date": "Jan 8",
+    "url": "https://huggingface.co/papers/2604.04936",
+    "date_collected": "2026-04-21T07:22:30.094098+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "효율적이고 경제적인 검색 증강 생성 시스템을 위한 웹 검색 인식 청킹 (W-RAC)",
+      "abstract": "검색 증강 생성 (RAG) 시스템은 검색 품질, 대기 시간 및 운영 비용을 균형있게 유지하기 위해 효과적인 문서 청킹 전략에 중대하게 의존합니다. 본 논문에서 우리는 웹 기반 문서를 위해 특별히 설계된 혁신적인 비용 효율적인 청킹 프레임워크인 웹 검색 인식 청킹 (W-RAC)을 제안합니다. W-RAC은 구문 분석된 웹 콘텐츠를 구조화된 ID-주소 지정 가능한 단위로 표현하고 대규모 언어 모델 (LLM)을 텍스트 생성이 아닌 검색 인식 그룹화 결정에 활용하여 토큰 사용량을 크게 줄이고 환각 위험을 제거하며 시스템 관측 가능성을 향상시킵니다. 실험 분석 결과와 구조적 비교는 W-RAC이 전통적인 청킹 방법에 비해 비슷하거나 더 나은 검색 성능을 달성하면서 청킹 관련 LLM 비용을 한 차원 낮출 수 있다는 것을 입증합니다."
+    },
+    "summary": "1. 검색 증강 생성 시스템은 효과적인 문서 청킹 전략에 필수적이며, W-RAC은 웹 문서에 특화된 비용 효율적인 청킹 프레임워크로 제안됨.\n2. W-RAC은 텍스트 추출과 의미 청킹 계획을 분리함으로써 검색 인식 그룹화 결정에 대규모 언어 모델을 활용하여 시스템 성능을 향상시키고 비용을 절감함.\n3. 실험 분석 결과와 구조적 비교에 따르면 W-RAC은 전통적인 청킹 방법에 비해 비슷하거나 더 나은 검색 성능을 보여주며, 관련 비용을 크게 줄일 수 있다.",
+    "categories": [
+      "LLM",
+      "Information Retrieval",
+      "Other"
+    ]
+  },
+  {
+    "title": "Qwen3.5-Omni Technical Report",
+    "abstract": "In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Representing a significant evolution over its predecessor, Qwen3.5-Omni scales to hundreds of billions of parameters and supports a 256k context length. By leveraging a massive dataset comprising heterogeneous text-vision pairs and over 100 million hours of audio-visual content, the model demonstrates robust omni-modality capabilities. Qwen3.5-Omni-plus achieves SOTA results across 215 audio and audio-visual understanding, reasoning, and interaction subtasks and benchmarks, surpassing Gemini-3.1 Pro in key audio tasks and matching it in comprehensive audio-visual understanding. Architecturally, Qwen3.5-Omni employs a Hybrid Attention Mixture-of-Experts (MoE) framework for both Thinker and Talker, enabling efficient long-sequence inference. The model facilitates sophisticated interaction, supporting over 10 hours of audio understanding and 400 seconds of 720P video (at 1 FPS). To address the inherent instability and unnaturalness in streaming speech synthesis, often caused by encoding efficiency discrepancies between text and speech tokenizers, we introduce ARIA. ARIA dynamically aligns text and speech units, significantly enhancing the stability and prosody of conversational speech with minimal latency impact. Furthermore, Qwen3.5-Omni expands linguistic boundaries, supporting multilingual understanding and speech generation across 10 languages with human-like emotional nuance. Finally, Qwen3.5-Omni exhibits superior audio-visual grounding capabilities, generating script-level structured captions with precise temporal synchronization and automated scene segmentation. Remarkably, we observed the emergence of a new capability in omnimodal models: directly performing coding based on audio-visual instructions, which we call Audio-Visual Vibe Coding.",
+    "authors": [
+      "Qwen Team"
+    ],
+    "likes": 21,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.15804",
+    "date_collected": "2026-04-21T07:22:30.095458+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "Qwen3.5-Omni 기술 보고서",
+      "abstract": "본 연구에서는 Qwen-Omni 모델 패밀리의 최신 발전인 Qwen3.5-Omni를 제안합니다. 이전 버전 대비 혁신적 발전을 이룬 Qwen3.5-Omni는 수백 억 개의 매개변수로 확장되어 256k 컨텍스트 길이를 지원합니다. 이 모델은 다양한 텍스트-비전 쌍과 1억 시간 이상의 오디오-비주얼 콘텐츠로 구성된 거대한 데이터셋을 활용하여 견고한 omni-모달리티 능력을 보여줍니다."
+    },
+    "summary": "1. Qwen3.5-Omni는 수천억 개의 매개변수와 256k 컨텍스트 길이를 지원하며, 다양한 텍스트-비전 쌍과 오디오-비주얼 콘텐츠로 훈련되어 강력한 omni-모달리티 능력을 갖추고 있습니다.\n2. Qwen3.5-Omni는 Hybrid Attention MoE 프레임워크를 사용하여 효율적인 순서 긴추론을 지원하며, ARIA를 도입하여 대화형 음성 합성의 안정성과 운율성을 향상시킵니다.\n3. 이 모델은 다국어 이해와 감정적 어조를 가진 음성 생성을 지원하며, 오디오-비주얼 그라운딩 능력을 확장하여 정확한 구조적 캡션과 자동 장면 분할을 수행하며, 오디오-비주얼 지침을 바탕으로 코딩을 직접 수행하는 새로운 능력을 발휘합니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning",
+    "abstract": "Parallel reasoning enhances Large Reasoning Models (LRMs) but incurs prohibitive costs due to futile paths caused by early errors. To mitigate this, path pruning at the prefix level is essential, yet existing research remains fragmented without a standardized framework. In this work, we propose the first systematic taxonomy of path pruning, categorizing methods by their signal source (internal vs. external) and learnability (learnable vs. non-learnable). This classification reveals the unexplored potential of learnable internal methods, motivating our proposal of STOP (Super TOken for Pruning). Extensive evaluations across LRMs ranging from 1.5B to 20B parameters demonstrate that STOP achieves superior effectiveness and efficiency compared to existing baselines. Furthermore, we rigorously validate the scalability of STOP under varying compute budgets - for instance, boosting GPT-OSS-20B accuracy on AIME25 from 84% to nearly 90% under fixed compute budgets. Finally, we distill our findings into formalized empirical guidelines to facilitate optimal real-world deployment. Code, data and models are available at https://bijiaxihh.github.io/STOP",
+    "authors": [
+      "Jiaxi Bi",
+      "Tongxu Luo",
+      "Wenyu Du",
+      "Zhengyang Tang",
+      "Benyou Wang"
+    ],
+    "likes": 18,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.16029",
+    "date_collected": "2026-04-21T07:22:30.097057+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "손실을 줄이세요! 효율적인 병렬 추론을 위해 일찍 가지치기 학습하기",
+      "abstract": "병렬 추론은 대규모 추론 모델(LLM)을 향상시키지만 초기 오류로 발생하는 헛된 경로로 인해 비용이 급증합니다. 이를 완화하기 위해 접두어 수준에서의 경로 가지치기가 중요하지만, 표준화된 프레임워크 없이 기존 연구는 단편적입니다. 본 연구에서는 경로 가지치기에 대한 첫 번째 체계적인 분류법을 제안하며, 내부적 vs. 외부적 신호 출처 및 학습 가능성에 따라 방법을 분류합니다. 이 분류는 학습 가능한 내부적 방법의 미개척된 잠재력을 드러내며, 우리의 STOP (Super TOken for Pruning) 제안을 동기부여합니다. 1.5B에서 20B 매개변수를 가진 LRM까지 다양한 평가를 통해 STOP이 기존 기준선에 비해 우수한 효과와 효율성을 달성하는 것을 보여줍니다. 또한, 고정된 컴퓨팅 예산 하에서 GPT-OSS-20B 정확도를 AIME25에서 84%에서 거의 90%로 향상시키는 STOP의 확장성을 엄격하게 검증합니다. 마지막으로, 형식화된 경험적 지침을 통해 결과를 요약하여 최적의 실제 세계 배포를 용이하게 합니다. 코드, 데이터 및 모델은 https://bijiaxihh.github.io/STOP에서 사용 가능합니다."
+    },
+    "summary": "1. 병렬 추론을 개선하기 위해 체계적인 경로 가지치기 분류체계 도입\n2. 학습 가능한 내부 방법의 잠재력을 탐색하고 STOP 방법론 제안\n3. 다양한 평가를 통해 STOP이 효율적이고 효과적임을 입증하고 실용적인 가이드라인 제시",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "(1D) Ordered Tokens Enable Efficient Test-Time Search",
+    "abstract": "Tokenization is a key component of autoregressive (AR) generative models, converting raw data into more manageable units for modeling. Commonly, tokens describe local information, such as regions of pixels in images or word pieces in text, and AR generation predicts these tokens in a fixed order. A worthwhile question is whether token structures affect the ability to steer the generation through test-time search, where multiple candidate generations are explored and evaluated by a verifier. Using image generation as our testbed, we hypothesize that recent 1D ordered tokenizers with coarse-to-fine structure can be more amenable to search than classical 2D grid structures. This is rooted in the fact that the intermediate states in coarse-to-fine sequences carry semantic meaning that verifiers can reliably evaluate, enabling effective steering during generation.\n  Through controlled experiments, we find that AR models trained on coarse-to-fine ordered tokens exhibit improved test-time scaling behavior compared to grid-based counterparts. Moreover, we demonstrate that, thanks to the ordered structure, pure test-time search over token sequences (i.e., without training an AR model) can perform training-free text-to-image generation when guided by an image-text verifier. Beyond this, we systematically study how classical search algorithms (best-of-N, beam search, lookahead search) interact with different token structures, as well as the role of different verifiers and AR priors. Our results highlight the impact of token structure on inference-time scalability and provide practical guidance for test-time scaling in AR models.",
+    "authors": [
+      "Zhitong Gao",
+      "Parham Rezaei",
+      "Ali Cy",
+      "Mingqiao Ye",
+      "Nataša Jovanović",
+      "Jesse Allardice",
+      "Afshin Dehghan",
+      "Amir Zamir",
+      "Roman Bachmann",
+      "Oğuzhan Fatih Kar"
+    ],
+    "likes": 12,
+    "published_date": "Apr 16",
+    "url": "https://huggingface.co/papers/2604.15453",
+    "date_collected": "2026-04-21T07:22:30.098954+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "(1D) 순서화된 토큰이 효율적인 테스트 시간 검색을 가능케 합니다",
+      "abstract": "토큰화는 자기회귀 생성 모델의 핵심 요소로, 원시 데이터를 모델링하기 좋은 단위로 변환합니다. 일반적으로 토큰은 이미지의 픽셀 영역이나 텍스트의 단어 부분과 같이 로컬 정보를 설명하며, 자기회귀 생성은 이러한 토큰을 고정된 순서로 예측합니다. 우리의 연구 목표는 1D 순서화된 토크나이저가 테스트 시간 검색을 효과적으로 할 수 있는지에 대한 의문입니다. 우리는 이미지 생성을 사용하여 1D 순서화된 토큰 생성기가 고전적인 2D 그리드 구조보다 검색에 더 적합할 수 있다는 가설을 세우고 있습니다. 이는 고전-세분 순차열의 중간 상태가 검증자가 신뢰성 있게 평가할 수 있는 의미를 내포하고 있어, 생성 과정 중 효과적인 조절을 가능하게 합니다. 실험 결과, 1D 순서화된 토큰으로 훈련된 자기회귀 모델이 그리드 기반 모델에 비해 더 나은 테스트 시간 확장 특성을 보여주는 것을 발견하였습니다. 또한, 순서화된 구조 덕분에, 토큰 시퀀스 상의 순수한 테스트 시간 검색 (즉, 자기회귀 모델을 훈련시키지 않고)이 이미지-텍스트 검증기에 의해 이끌어지면 훈련과정이 필요하지 않는 텍스트-이미지 생성이 가능합니다. 우리는 또한 어떤 토큰 구조가 추론시 확장 가능성에 미치는 영향을 체계적으로 연구하며, 자기회귀 모델의 테스트 시간 확장을 위한 실용적 지침을 제시합니다."
+    },
+    "summary": "1. 1D 순서화된 토큰 생성기는 이미지 생성에서 검색 가능성을 개선시키며, 자기회귀 모델의 테스트 시간 스케일링 행동을 향상시킵니다.\n2. 분석 결과, 순서화된 구조로 훈련된 자기회귀 모델이 그리드 기반 모델에 비해 테스트 시간 검색에서 우수한 성과를 보이며, 훈련 없는 텍스트-이미지 생성이 가능합니다.\n3. 테스트 시간 스케일링을 위한 고전적 검색 알고리즘과 토큰 구조의 상호작용, 다양한 검증자 및 자기회귀 사전의 역할을 체계적으로 연구한 결과, 토큰 구조가 추론 시 확장성에 미치는 영향을 강조하며 자기회귀 모델의 테스트 시간 확장에 대한 실용적인 지침을 제공합니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Where does output diversity collapse in post-training?",
+    "abstract": "Post-trained language models produce less varied outputs than their base counterparts. This output diversity collapse undermines inference-time scaling methods that rely on varied samples, and risks homogenizing model outputs on creative and value-laden tasks. Prior work attributes collapse to specific post-training methods, without separating the role of training data composition from the method, or the generation format from the model weights. We trace output diversity through three parallel post-training lineages of Olmo 3, Think (chain-of-thought distillation), Instruct (broad multi-source data), and RL-Zero, across 15 tasks and four text diversity metrics. We find that the location of collapse co-varies with data composition: the Think lineage loses most semantic diversity at supervised fine-tuning, and the effect of DPO is larger in Instruct than in Think. Suppressing chain-of-thought reasoning at inference in Think models drops accuracy on hard tasks, yet leaves answer-level diversity unchanged, showing that the collapse is embedded in the model weights by training data, not imposed by the generation format. Decomposing diversity loss on six verifiable tasks into a quality-control component (removal of incorrect outputs) and a residual component (genuine narrowing among correct outputs) reveals that the split is task-dependent, and Think models retain more correct-answer diversity than Instruct despite collapsing more in aggregate. Our results indicate that diversity collapse is determined during training by data composition and cannot be addressed at inference time alone.",
+    "authors": [
+      "Constantinos Karouzos",
+      "Xingwei Tan",
+      "Nikolaos Aletras"
+    ],
+    "likes": 9,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.16027",
+    "date_collected": "2026-04-21T07:22:30.100424+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "훈련 이후 출력 다양성이 어디서 붕괴되나요?",
+      "abstract": "훈련 이후 언어 모델은 기본 모델에 비해 다양성이 적은 출력물을 생성합니다. 이 출력 다양성 붕괴는 다양한 샘플에 의존하는 추론 시간 확장 방법을 약화시키며, 창의적이고 가치가 있는 작업에 대한 모델 출력의 균일화를 위험에 빠뜨립니다. 이전 연구는 특정 훈련 이후 방법에 붕괴를 귀속시켰지만, 훈련 데이터 구성과 방법의 역할, 생성 형식과 모델 가중치를 분리해낼 수 없었습니다. 우리는 15가지 작업과 네 가지 텍스트 다양성 측정치에 걸쳐 Olmo 3, Think (chain-of-thought distillation), Instruct (broad multi-source data), RL-Zero의 세 가지 병렬 후훈련 계통을 통해 출력 다양성을 추적합니다."
+    },
+    "summary": "1. 후훈련된 모델의 출력 다양성 붕괴는 훈련 데이터 구성과 밀접하게 관련되며, 추론 시간에만 해결할 수 없음을 보여줍니다.\n2. Think 모델은 단서 체인 추론 억제로 어려운 작업 정확도가 감소하지만, 답변 수준 다양성은 변하지 않음을 확인합니다.\n3. 출력 다양성 손실은 잘못된 출력 제거 및 올바른 출력 감소 사이의 구성 요소로 분해되며, 작업에 따라 다양성 손실이 다릅니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Repurposing 3D Generative Model for Autoregressive Layout Generation",
+    "abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available at https://github.com/fenghora/LaviGen.",
+    "authors": [
+      "Haoran Feng",
+      "Yifan Niu",
+      "Zehuan Huang",
+      "Yang-Tian Sun",
+      "Chunchao Guo",
+      "Yuxin Peng",
+      "Lu Sheng"
+    ],
+    "likes": 9,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.16299",
+    "date_collected": "2026-04-21T07:22:30.102158+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "3D 생성 모델 재활용을 통한 자기회귀 레이아웃 생성",
+      "abstract": "우리는 3D 생성 모델을 활용하여 3D 레이아웃 생성하는 LaviGen을 소개합니다. 텍스트 설명에서 객체 레이아웃을 추론하는 기존 방법과 달리, LaviGen은 본래의 3D 공간에서 직접 작동하며, 레이아웃 생성을 객체들 간의 기하학적 관계와 물리적 제약을 명시적으로 모델링하는 자기회귀 과정으로 구성하여 일관된 및 물리적으로 타당한 3D 장면을 생성합니다. 이 프로세스를 더 개선하기 위해, 우리는 장면, 객체, 지시 정보를 통합하는 적응형 3D 확산 모델을 제안하고 효율성과 공간적 정확도를 향상시키기 위해 양방향 자가전개 풀어쓰기 기법을 도입합니다. LayoutVLM 벤치마크에서의 광범위한 실험 결과, LaviGen은 최첨단 기술보다 19% 높은 물리적 타당성과 65% 빠른 연산 속도를 달성합니다. 우리의 코드는 https://github.com/fenghora/LaviGen에서 공개되어 있습니다."
+    },
+    "summary": "1. LaviGen은 3D 공간에서 작동하여 객체들 간의 관계와 제약을 명시적으로 모델링하는 자기회귀 과정을 통해 일관된 3D 장면을 생성합니다.\n2. 적응형 3D 확산 모델을 활용한 LaviGen은 공간적 정확도와 효율성을 향상시키기 위해 양방향 자가전개 풀어쓰기 기법을 도입합니다.\n3. LayoutVLM 벤치마크 실험에서 LaviGen은 최상의 물리적 타당성을 가진 3D 레이아웃 생성 성능을 보이며 연산 속도도 빠릅니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies",
+    "abstract": "Large language models have demonstrated strong performance on general-purpose programming tasks, yet their ability to generate executable algorithmic trading strategies remains underexplored. Unlike standard code benchmarks, trading-strategy generation requires simultaneous mastery of domain-specific financial logic, knowledge of a specialized API, and the ability to produce code that is not only syntactically correct but also leads to actual trades on historical data. In this work, we present QuantCode-Bench, a benchmark for the systematic evaluation of modern LLMs in generating strategies for the Backtrader framework from textual descriptions in English. The benchmark contains 400 tasks of varying difficulty collected from Reddit, TradingView, StackExchange, GitHub, and synthetic sources. Evaluation is conducted through a multi-stage pipeline that checks syntactic correctness, successful backtest execution, the presence of trades, and semantic alignment with the task description using an LLM judge. We compare state-of-the-art models in two settings: single-turn, where the strategy must be generated correctly on the first attempt, and agentic multi-turn, where the model receives iterative feedback and may repair its errors. We analyze the failure modes across different stages of the pipeline and show that the main limitations of current models are not related to syntax, but rather to the correct operationalization of trading logic, proper API usage, and adherence to task semantics. These findings suggest that trading strategy generation constitutes a distinct class of domain-specific code generation tasks in which success requires not only technical correctness, but also alignment between natural-language descriptions, financial logic, and the observable behavior of the strategy on data.",
+    "authors": [
+      "Alexey Khoroshilov",
+      "Alexey Chernysh",
+      "Orkhan Ekhtibarov",
+      "Nini Kamkia",
+      "Dmitry Zmitrovich"
+    ],
+    "likes": 5,
+    "published_date": "Apr 16",
+    "url": "https://huggingface.co/papers/2604.15151",
+    "date_collected": "2026-04-21T07:22:30.103719+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "대규모 언어 모델의 실행 가능한 알고리즘 거래 전략 생성 능력을 평가하는 벤치마크: QuantCode-Bench",
+      "abstract": "대규모 언어 모델은 일반 프로그래밍 작업에서 뛰어난 성능을 보여주었지만 실행 가능한 알고리즘 거래 전략 생성 능력은 잘 알려지지 않았습니다. 이 연구에서는 QuantCode-Bench를 제시하여 현대적인 LLM이 영어 텍스트 설명에서 Backtrader 프레임워크에 전략을 생성하는 능력을 체계적으로 평가하는 벤치마크를 제시합니다."
+    },
+    "summary": "1. 대규모 언어 모델을 사용하여 알고리즘 거래 전략을 생성하는 능력을 평가하는 QuantCode-Bench라는 벤치마크를 도입했으며, 이는 금융 논리, 특수 API 지식, 실행 가능한 거래와 과거 데이터에 대한 이해를 동시에 요구합니다.\n2. 평가는 문법적 정확성, 성공적인 백테스트 실행, 거래 존재 여부 및 과제 설명과의 의미적 일치를 확인하는 다단계 파이프라인을 통해 이루어지며, 현재 모델의 주요 한계는 구문이 아닌 거래 논리, API 사용 및 과제 의미에 대한 맞춤이 필요함을 밝히고 있습니다.\n3. 현재 모델의 실패 모드를 분석한 결과, 거래 전략 생성은 기술적 정확성 뿐 아니라 자연어 설명, 금융 논리 및 전략의 데이터에서의 실제 동작 사이의 일치 효과를 요구하는 독특한 도메인별 코드 생성 작업으로 판단됩니다.",
+    "categories": [
+      "LLM",
+      "금융분야",
+      "기술적 자연어 처리"
+    ]
+  }
+]

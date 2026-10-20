@@ -1,0 +1,247 @@
+[
+  {
+    "title": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
+    "abstract": "World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics priors to action prediction, but existing methods require costly future generation at inference. We present SimWAM, a simple yet effective WAM that uses video generation purely as a training signal. It co-trains a pretrained video expert and a lightweight action expert with joint flow matching. An isolated attention mask keeps action prediction independent of future frames, allowing the video branch to be discarded after training and leaving a self-contained planner that directly predicts trajectories. Since the two experts share no parameters and interact only through a unified attention interface, the video backbone could be replaced and the action expert scaled independently without modifying the learning objective or inference pipeline. We further apply reinforcement learning to optimize a compositional driving reward beyond trajectory imitation. Our SimWAM achieves 91.5 PDMS on NAVSIM, surpasses state-of-the-art WAM-based planners with substantially lower latency, and transfers zero-shot to nuScenes. These results position SimWAM as a simple yet solid baseline that could readily benefit from advances in video generation for efficient autonomous driving. The code and model weights are available at https://github.com/H-EmbodVis/SimWAM/",
+    "authors": [
+      "Zongchuang Zhao",
+      "Xin Zhou",
+      "Tianyang Xu",
+      "Zhengyang Sun",
+      "Kaixuan Zhou",
+      "Honglin Li",
+      "Dingkang Liang",
+      "Xiang Bai"
+    ],
+    "likes": 5,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2608.07468",
+    "date_collected": "2026-08-10T12:12:53.297048+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "SimWAM: 자율 주행을 위한 간단한 세계 행동 모델",
+      "abstract": "세계-행동 모델(World-Action Models, WAMs)은 비디오 동적 사전을 행동 예측으로 전달하여 자율 주행을 개선하지만, 기존 방법은 추론 시 고품질 미래 생성을 요구합니다. 본 연구에서는 학습 신호로써 비디오 생성을 사용하는 간단하면서 효과적인 WAM인 SimWAM을 제안합니다. 사전 학습된 비디오 전문가와 가벼운 행동 전문가를 공동 flow matching으로 동시에 훈련시킵니다. 분리된 주의 마스크는 행동 예측을 미래 프레임과 독립적으로 유지함으로써 비디오 분기가 훈련 후 폐기되고 궤적을 직접 예측하는 독립된 플래너가 남게 합니다. 두 전문가는 매개 인터페이스를 통해만 상호작용하며 매개변수를 공유하지 않아 비디오 백본을 교체하거나 행동 전문가를 독립적으로 확장할 수 있습니다. 추론 파이프라인 또는 학습 목표를 수정하지 않고 결과적으로 기존의 지속적 학습(alarming)을 적용하여 합성운전 보상을 최적화합니다. SimWAM은 NAVSIM에서 91.5 PDMS를 달성하여 최신 기술을 통과하며 상당히 낮은 latency로 WAM 기반 계획자를 능가하고 zero-shot를 nuScenes로 전송합니다. 이러한 결과는 SimWAM을 간단하면서도 견고한 기준선으로 정렬하며 첨단 비디오 생성 기술의 발전을 통해 효율적인 자율 주행에 보탬이 될 수 있습니다. 코드 및 모델 가중치는 https://github.com/H-EmbodVis/SimWAM/에서 제공됩니다."
+    },
+    "summary": "1. SimWAM은 비디오 생성을 학습 신호로 활용하여 간단하면서도 효과적인 자율 주행 모델로, 미래 프레임 필요 없이 직접 궤적을 예측하며 다른 모델과 독립적으로 확장 가능합니다.\n2. 연구에서는 비디오 전문가와 행동 전문가를 함께 훈련시키는 방식을 제안하며, reinforcement learning을 사용하여 운전 보상을 최적화하였습니다.\n3. SimWAM은 NAVSIM에서 높은 성능을 보이며, 낮은 latency로 최신 기술을 능가하며 다른 데이터셋으로의 전이학습도 성공한 것으로 나타났습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows",
+    "abstract": "Recent systems for optimizing prompts, programs, and ML workflows typically rely on explicit outer-loop controllers such as evolutionary search, bandits, or textual-gradient methods. We ask a fundamentally different question: how much of this search policy can be internalized by a single tool-using agent? We present ReASearch, a unified framework for reasoning-driven optimization in which the agent autonomously decides what to evaluate, how to diagnose failures, which edits to make, and when to verify or restart. Rather than serving only as a proposal generator guided by hand-designed heuristics, the agent actively analyzes outcomes, allocates budget, and refines its strategy over long horizons through persistent memory. With a shared agent loop and domain-specific tools, ReASearch instantiates the exact same scaffold to optimize prompts, programs, and ML workflows. Across 14 diverse tasks, it is competitive with and mostly better than specialized optimization systems, achieving gains of 2% to 40% over strong domain-specific baselines, and in some cases discovering solutions that improve on prior human best-known results. Crucially, we observe that complex search behaviors, which are typically implemented by explicit controllers, emerge naturally from the agent's reasoning process.",
+    "authors": [
+      "Junbo Li",
+      "Boyi Liu",
+      "Canwen Xu",
+      "Yite Wang",
+      "Yuxiong He",
+      "Zhangyang Wang",
+      "Qiang Liu",
+      "Zhewei Yao"
+    ],
+    "likes": 2,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2608.06714",
+    "date_collected": "2026-08-10T12:12:53.300254+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "옵티마이저는 에이전트다: 프롬프트, 프로그램, 및 기계 학습 워크플로우를 가로지르는 추론 주도 검색",
+      "abstract": "최근에 프롬프트, 프로그램, 및 기계 학습 워크플로우를 최적화하는 시스템들은 주로 진화적 검색, 밴딧, 또는 텍스트 기울기 방법과 같은 명시적 외부 루프 컨트롤러에 의존합니다. 우리는 근본적으로 다른 질문을 제기합니다: 단일 도구 사용 에이전트가 얼마나 이러한 검색 정책을 내부화할 수 있는가? 우리는 ReASearch를 제시하여, 에이전트가 자율적으로 무엇을 평가해야 하는지, 어떻게 실패를 진단해야 하는지, 어떤 수정을 해야 하는지, 언제 검증하거나 다시 시작해야 하는지를 결정합니다. 이 에이전트는 손으로 설계된 휴리스틱에 이끌리는 제안 생성기로만 작동하는 대신, 결과를 능동적으로 분석하고 예산을 할당하며, 오랜 시계를 통해 영속적인 기억을 통해 전략을 개선합니다. ReASearch는 공유 에이전트 루프와 도메인 특화 도구를 통해 동일한 골조를 구현하여 프롬프트, 프로그램, 및 기계 학습 워크플로우를 최적화합니다. 14가지 다양한 작업을 통해, 도메인 별 최적화 시스템과 경쟁력이 있으며, 강력한 도메인별 기준선을 통해 2%에서 40%의 이득을 얻으며, 일부 경우 이전 인간의 최고 결과를 개선하는 솔루션을 발견합니다. 이 중요한 것은 복잡한 검색 행동이 일반적으로 명시적 컨트롤러에 의해 구현되는데, 이러한 행동들이 에이전트의 추론 과정에서 자연스럽게 발생한다는 것을 관찰합니다."
+    },
+    "summary": "1. ReASearch는 단일 에이전트가 독립적으로 평가할 대상을 결정하고, 실패를 진단하며, 수정을 수행하고, 검증하거나 다시 시작할 시기를 결정하는 추론 주도 최적화 통합 프레임워크이다.\n2. ReASearch는 프롬프트, 프로그램, 및 기계 학습 워크플로우를 최적화하기 위한 동일한 구조를 활용하여 다양한 작업에서 경쟁력이 있으며, 이전의 최고 결과보다 낫거나 더 나은 솔루션을 발견한다.\n3. 에이전트의 추론 과정에서 복잡한 검색 행동들이 명시적 컨트롤러 대신 자연스럽게 발생함을 관찰할 수 있다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Modular TTT: Rethinking Test-Time Training as Composable Modules",
+    "abstract": "Test-time training (TTT) views sequence modeling as an online learning problem in which fast weights are updated by an internal learning rule. Despite the growing number of TTT variants, existing approaches typically hard-code each variant separately, which makes it difficult to design new TTT methods and to isolate the role of each component. To address this, we propose Modular TTT, a framework that represents the inner learner as a directed acyclic graph and exposes the fast-weight network, loss function, learning rate, weight decay, and normalization as explicit design dimensions. Modular TTT automatically composes primitive-level train-view forward, train-view backward, and causal query-view rules into the full graph-level TTT computation, including the fast-weight state transition. Using Modular TTT, we systematically ablate the components of TTT and find that small learning-rate initialization, weight decay, and a single-layer nonlinearity improve performance, while MSE and inner-product losses perform similarly. Deeper fast-weight networks and normalization tend to hurt performance because they induce excessively large activations, while residual connections and gating provide little measurable benefit. Guided by these findings, we train the best resulting variant as 410M- and 1.45B-parameter models on 100B tokens, and observe training loss and benchmark performance comparable to Gated DeltaNet.",
+    "authors": [
+      "Bohao Tang",
+      "Zhen Qin",
+      "Yuqi Pan",
+      "Zheng Li",
+      "Pengfei Liu",
+      "Ya Zhang"
+    ],
+    "likes": 2,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2608.07110",
+    "date_collected": "2026-08-10T12:12:53.303252+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "모듈형 TTT: 테스트 시간 훈련을 조립 가능한 모듈로 바라보기",
+      "abstract": "테스트 시간 훈련(TTT)은 시퀀스 모델링을 온라인 학습 문제로 취급하며 빠른 가중치를 내부 학습 규칙에 따라 업데이트하는 방식입니다. 기존의 다양한 TTT 변형에도 불구하고, 기존 접근 방식은 일반적으로 각 변형을 별도로 하드코딩하여 새로운 TTT 방법을 설계하고 각 구성 요소의 역할을 분리하는 것이 어렵게 만듭니다. 이에 우리는 내부 학습자를 방향성 비순환 그래프로 나타내고 빠른 가중치 네트워크, 손실 함수, 학습률, 가중치 감쇠 및 정규화를 명시적으로 설계 차원으로 노출하는 '모듈형 TTT'를 제안합니다. 모듈형 TTT는 기본 수준의 훈련-뷰 순방향, 훈련-뷰 역방향 및 인과 쿼리-뷰 규칙을 자동으로 전체 그래프 수준 TTT 계산으로 구성하며, 빠른 가중치 상태 전이를 포함합니다. 모듈형 TTT를 사용하여 우리는 TTT의 구성 요소를 체계적으로 제거하고 작은 학습률 초기화, 가중치 감쇠 및 단일층 비선형성이 성능을 향상시키는 반면 MSE 및 내적 손실은 유사한 성능을 낸다는 것을 발견했습니다. 더 깊은 빠른 가중치 네트워크와 정규화는 과도하게 큰 활성화를 유도하여 성능에 악영향을 미칩니다. 반면 잔여 연결과 게이팅은 측정 가능한 혜택을 제공하지 않습니다. 이러한 발견을 바탕으로 우리는 가장 우수한 결과를 얻는 변수를 100B 토큰에 대해 410M 및 1.45B 파라미터 모델로 훈련시키고, Gated DeltaNet과 유사한 훈련 손실 및 벤치마크 성능을 관찰했습니다."
+    },
+    "summary": "1. Modular TTT는 내부 학습자를 그래프로 나타내고 빠른 가중치 네트워크, 손실 함수, 학습률 등을 명시적으로 설계 차원으로 노출시켜 TTT 구성요소를 분리하며 성능을 향상시킵니다.\n2. TTT의 구성 요소를 실험적으로 제거한 결과, 작은 학습률 초기화, 가중치 감쇠, 단일층 비선형성이 성능을 향상시키는 반면, 더 깊은 네트워크와 정규화는 악영향을 줄 수 있음을 확인했습니다.\n3. 이러한 결론을 바탕으로 최적화된 변수를 훈련시킨 Modular TTT 모델은 Gated DeltaNet과 비슷한 성능을 보여주며 410M- 및 1.45B-파라미터 모델로 훈련되었다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
+    "abstract": "Deploying autonomous multimodal agents in continuous, real-world environments requires them to ingest unbounded audio-visual streams and maintain hour-scale memory. However, current evaluations predominantly rely on brief clips and multiple-choice formats. This design allows minimal baselines that process only the last four frames to match or surpass complex streaming models, while answer options also expose language shortcuts. We introduce StreamArena, a benchmark for hour-scale, interactive streaming video understanding. StreamArena contains 243 full-length videos averaging 88.8 minutes and 3,646 rigorously annotated, open-ended question-answer pairs that evaluate real-time perception, historical retrospection, proactive interaction, and multimodal tool utilization. Evaluation across diverse systems exposes a tension between continuous interaction and long-horizon multimodal comprehension. Methods that retain only recent frames cannot recover distant events, methods that convert past observations into text lose visual evidence, and methods that repeatedly compress visual memory struggle to preserve fine-grained details over time. We address this tension with StreamMind, a two-tier architecture that assigns latency-critical interaction and proactive monitoring to independently scheduled frontend workers, while backend workers asynchronously construct persistent multimodal memory and perform historical recall and external search. StreamMind outperforms existing streaming baselines across all four capabilities and reduces query-to-answer latency by reusing persistent state.",
+    "authors": [
+      "Xichen Zhang",
+      "Guankai Li",
+      "Yinghao Zhu",
+      "Shijian Wang",
+      "Sitong Wu",
+      "Shaozuo Yu",
+      "Meng Chu",
+      "Yuan Lu",
+      "Jiaya Jia"
+    ],
+    "likes": 2,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2608.05703",
+    "date_collected": "2026-08-10T12:12:53.306487+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "StreamArena: 지속적이고 상호작용적이며 장기간을 대비한 에이전틱 스트리밍 비디오 이해를 향하여",
+      "abstract": "자율적인 다중모달 에이전트를 실시간 환경에 배치하려면 무제한 오디오-시각 스트림을 수용하고 수십 시간에 이르는 기억을 유지해야 합니다. 그러나 현재의 평가는 대부분 간단한 클립과 객관식 형식에 의존하고 있습니다. 이런 설계는 최근 4장의 프레임만 처리하는 최소한의 베이스라인도 복잡한 스트리밍 모델을 뛰어넘거나 맞출 수 있게 하며, 선택지는 언어의 단축키를 노출시킵니다. 저희는 시간 규모의 상호작용적인 스트리밍 비디오 이해를 평가하는 243개의 평균 88.8분 길이의 완전한 비디오와 엄격히 주석이 달린 3,646개의 개방형 질문-답변 쌍을 포함한 StreamArena를 소개합니다. StreamArena는 실시간 인식, 과거 회상, 적극적 상호작용 및 다중모달 도구 활용을 평가합니다. 다양한 시스템 간 평가는 지속적 상호작용과 장기간 다중모달 이해 사이의 긴장을 드러냅니다. 최근 프레임만 유지하는 방법은 먼 사건을 회복할 수 없으며, 관찰된 과거를 텍스트로 변환하는 방법은 시각적 증거를 잃고, 시각적 기억을 반복적으로 압축하는 방법은 세밀한 세부사항을 시간이 지남에 따라 유지하기 어렵습니다. 저희는 이러한 긴장을 해결하기 위해 StreamMind를 소개합니다. StreamMind는 지연 시간이 중요한 상호작용 및 적극적 모니터링을 독립적으로 예약된 프론트엔드 워커에 할당하고, 백엔드 워커는 지속적인 다중모달 기억을 구성하고 역사적 복귀 및 외부 검색을 수행합니다. StreamMind는 네 가지 능력 모두에서 기존 스트리밍 베이스라인을 능가하며 지속적 상태를 재사용하여 쿼리-응답 지연 시간을 줄입니다."
+    },
+    "summary": "1. 자율적인 다중모달 에이전트를 현실적인 환경에 배치하기 위해 StreamArena라는 시간 규모의 상호작용적인 스트리밍 비디오 이해 벤치마크를 도입했습니다.\n2. 다양한 시스템 간 평가를 통해 저희는 지속적 상호작용과 장기간 다중모달 이해 사이의 긴장을 발견했습니다.\n3. StreamMind는 두 단계 아키텍처를 사용하여 기존 스트리밍 베이스라인을 능가하고 쿼리-응답 지연 시간을 줄입니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Uncertainty-Aware World Model for Aerial Image-Goal Navigation",
+    "abstract": "Aerial image-goal navigation requires an unmanned aerial vehicle (UAV) to reach a target location specified by a goal image. Existing world-model-based methods rank candidate trajectories using predicted futures, but typically rely on only one or a few point predictions, which is inadequate for large-scale outdoor environments with substantial future-state uncertainty. To address this limitation, we propose the Uncertainty-Aware Navigation World Model (UA-NWM), an efficient latent world model for aerial image-goal navigation, which formulates trajectory scoring as conditional out-of-distribution detection. UA-NWM represents plausible futures with an uncertainty subspace and decomposes the prediction--goal discrepancy into uncertainty-explainable and unexplainable components. Only the unexplainable residual is used for scoring, enabling robust selection without multiple future samples. Extensive experiments demonstrate that UA-NWM consistently outperforms existing navigation world models while maintaining low inference latency. Real-world UAV experiments further validate its practical applicability. Project page: https://duryi.github.io/UA-NWM-Project-Page",
+    "authors": [
+      "Deyi Zhu",
+      "Haoyu Fan",
+      "Yinan Zhu",
+      "Weichen Zhang",
+      "Shilin Ma",
+      "Xinlei Chen",
+      "Yansong Tang"
+    ],
+    "likes": 2,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2608.05597",
+    "date_collected": "2026-08-10T12:12:53.309407+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "불확실성 인식형 항공 영상-목표 네비게이션 모델",
+      "abstract": "항공 영상-목표 네비게이션은 무인 항공기(UAV)가 목표 이미지로 지정된 대상 위치에 도달해야 하는 것을 요구합니다. 기존의 세계 모델 기반 방법은 예측된 미래를 사용하여 후보 궤적을 순위 매기지만, 일반적으로 미래 상태 불확실성이 큰 대규모 야외 환경에서는 한 개 또는 몇 개의 점 예측에만 의존하는데, 이는 충분하지 않습니다. 이 한계를 해결하기 위해 우리는 불확실성을 고려한 네비게이션 세계 모델(UA-NWM)을 제안합니다. 이 모델은 높은 추론 속도를 유지하면서 공액 이미지-목표 네비게이션을 위한 효율적인 잠재 공간 모델로 궤적 점수화를 조건부로 분포 밖 감지로 정의합니다. UA-NWM은 불확실성 하위 공간으로 가능한 미래를 표현하고 예측-목표 불일치를 불확실성 설명 가능 및 설명 불가능 부분으로 분해합니다. 설명 불가능 잔차만이 점수화에 사용되어 여러 미래 샘플 없이도 강력한 선택이 가능하게 합니다. 광범위한 실험 결과 UA-NWM이 기존의 네비게이션 세계 모델들을 일관되게 능가하면서 추론 대기 시간을 낮춘다는 것을 보여줍니다. 실제 UAV 실험은 그것의 실용성을 더욱 확증합니다. 프로젝트 페이지: https://duryi.github.io/UA-NWM-Project-Page"
+    },
+    "summary": "1. UA-NWM은 공액 이미지-목표 네비게이션을 위한 불확실성을 고려한 효율적인 모델로, 미래의 불확실성을 설명 가능과 설명 불가능 부분으로 분해해 강력한 선택을 가능하게 합니다.\n2. 기존 네비게이션 모델을 능가하면서도 추론 속도를 유지하는 UA-NWM은 실외 환경에서 효과적으로 작동하며, 실제 UAV 실험을 통해 실용성을 입증합니다.\n3. UA-NWM은 후보 궤적 순위를 결정할 때 여러 미래 샘플을 필요로하지 않고, 미래 상태의 불확실성을 고려하여 높은 정확도를 유지합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "Skaling: Chinchilla's Exponents Meet Kaplan's Coupling",
+    "abstract": "Neural scaling laws are foundational for language model development, yet standard formulations systematically under- and overestimate loss at data-scarce and overtraining extremes. This failure originates in the underlying assumption that model size and training data impact the loss independently. To address this, we introduce the Skaling law, a generalized functional form that couples model capacity and data through a single interaction exponent. This simple extension reduces the Mean Absolute Percentage Error (MAPE) by 1.5-3x across both interpolation and extrapolation regimes. When paired with a sparse grid strategy restricted to low-compute regimes, the Skaling law achieves accurate full-grid extrapolation using approximately 10x less compute than uniform sweeps. By enabling reliable performance prediction from small-scale experiments, the Skaling law provides a more robust and resource-efficient framework for allocating compute budgets in next-generation model training.",
+    "authors": [
+      "Mathurin Videau",
+      "Badr Youbi-Idrissi",
+      "David Lopez-Paz",
+      "Kartik Ahuja"
+    ],
+    "likes": 1,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2608.07222",
+    "date_collected": "2026-08-10T12:12:53.312102+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "스켈링: 친칠라의 지수가 카플란의 결합을 만나다",
+      "abstract": "신경 스케일링 법칙은 언어 모델 개발에 기초적이나, 표준 공식은 데이터 부족과 과적합의 극단에서 손실을 과소평가와 과대평가한다. 이 실패는 모델 크기와 훈련 데이터가 손실에 독립적으로 영향을 미친다는 가정에서 비롯된다. 이에 우리는 스켈링 법칙을 소개하는데, 모델 용량과 데이터를 단일 상호작용 지수를 통해 결합하는 일반화된 기능 형식이다. 이 간단한 확장은 산간과 사간극에서 MAPE(Mean Absolute Percentage Error)를 1.5배에서 3배 감소시킨다. 저 계산 영역에 제약된 희소 그리드 전략과 결합하면, 스켈링 법칙은 균일한 스윕보다 약 10배 적은 계산을 사용하여 정확한 전체 그리드 추정을 달성한다. 소규모 실험으로 신뢰성있는 성능 예측을 가능하게 함으로써, 스켈링 법칙은 다음 세대 모델 훈련에 계산 예산을 할당하는 더 견고하고 자원 효율적인 프레임워크를 제공한다."
+    },
+    "summary": "1. 표준적인 모델 손실 예측의 문제점을 해결하기 위해 스켈링 법칙을 도입하여 모델 용량과 데이터를 하나의 상호작용 지수로 결합함.\n2. 스켈링 법칙은 균일한 스윕보다 적은 계산으로 정확한 전체 그리드 추정을 달성하며 MAPE를 1.5배에서 3배 감소시킴.\n3. 소규모 실험을 통해 신뢰성 있는 성능 예측을 가능케 하며, 다음 세대 모델 훈련에 자원을 효과적으로 할당하는 더 견고한 프레임워크를 제공함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Characterizing the Quality Profile of AI-Generated C++ in Production",
+    "abstract": "The widespread integration of AI coding assistants offers undeniable boosts to engineering velocity. Yet, recent studies point to a growing trade-off, revealing persistent challenges with code quality and maintainability. Industry leaders, including frontier AI labs, echo these concerns. As large language models are increasingly relied upon to author production code, understanding their impact on shipped software quality has become a critical priority. However, assessing these effects in industrial workflows remains difficult due to observability barriers. We study the impact of AI-generated code on production quality within a large enterprise operating global products relied upon by billions of users daily. Driven by this scale and user trust, the organization values code quality and has built thorough observability for every line of code deployed into production, enabling us to overcome measurement barriers to assess these effects.\n  This study presents a large-scale empirical analysis of AI-generated C++ code from April 2025 to April 2026, tracking 3.52 million code changes across this enterprise's brownfield codebase. The core purpose is to understand the quality, performance, and maintenance characteristics of AI-generated code compared to human-written code in a production environment at scale. We find that AI-generated C++ code has a distinct quality profile, showing higher rates of interface and coupling burdens, copy and allocation overheads, and a reliance on explicit loops over optimized standard APIs. These issues translate into tangible downstream costs, including increased review effort and a 5-8% increase in compute resource consumption. However, we demonstrate that providing models with targeted, taxonomy-informed feedback can mitigate these effects, leading to an 11.1% reduction in targeted static analysis warnings and improved computational efficiency.",
+    "authors": [
+      "Michael Tran",
+      "Fred Lewis",
+      "Kun Yang",
+      "Saksham Thakur",
+      "Aditya Kini",
+      "Aditya Patil",
+      "Milad Hashemi",
+      "Parthasarathy Ranganathan"
+    ],
+    "likes": 1,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2608.06640",
+    "date_collected": "2026-08-10T12:12:53.315505+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "제품 생산에서 AI가 생성한 C++의 품질 프로필",
+      "abstract": "AI 코딩 어시스턴트의 널리 통합은 엔지니어링 속도를 높이는 것은 부정할 수 없습니다. 그러나 최근 연구들은 코드 품질과 유지보수에 대한 지속적인 어려움을 드러내며 증가하는 절충 사항을 가리킵니다. 선두 AI 연구소를 포함한 산업 지도자들도 이러한 우려를 반복하고 있습니다. 대규모 언어 모델이 제품 코드를 집필하기 위해 점점 더 많이 의존함에 따라, 출하된 소프트웨어 품질에 미치는 영향을 이해하는 것이 중요한 우선 순위가 되었습니다. 그러나 산업적인 워크플로우에서 이러한 효과를 평가하는 것은 가시성 장벽으로 인해 여전히 어렵습니다. 본 연구는 많은 사용자들이 매일 의존하고 있는 글로벌 제품을 운영하는 대규모 기업 내에서 AI가 생성한 코드가 제품 품질에 미치는 영향을 연구합니다. 이 조직은 이 규모와 사용자 신뢰로 인해 코드 품질을 중요시하며, 생산 환경에 배포된 모든 코드 라인에 대한 철저한 가시성을 갖추어 이러한 효과를 평가할 수 있도록 하였습니다."
+    },
+    "summary": "1. 대규모 기업의 AI가 생성한 C++ 코드의 품질, 성능, 유지보수 특성을 인간이 작성한 코드와 비교하여 연구함.\n2. AI가 생성한 C++ 코드는 인터페이스 및 결합 부담, 복사 및 할당 오버헤드, 최적화된 표준 API 대신 명시적 루프에 의존하는 독특한 품질 프로필을 보임.\n3. 목표로 한, 분류학에 기초한 피드백을 제공하면 AI가 생성한 코드의 하류 비용을 완화할 수 있음을 입증하고 계산 효율성을 개선함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Douyin Multimodal Embedding Model Technical Report",
+    "abstract": "Multimodal representation learning is a cornerstone of modern AI. By encoding multimodal queries and targets into vectors, it powers industrial search and recommendation and underpins modern agents. Real-world platforms with complex modalities and massive-scale content, such as Douyin, Xiaohongshu, and YouTube, demand both efficiency under billion-scale indexing and fine-grained discrimination for hard matching. Existing MLLM embedding models rarely satisfy both. Contrastive models are efficient but rely on pair-level supervision too coarse for fine-grained distinctions, while CoT-based models improve discrimination through explicit generation impractical to serve online. We present Douyin Multimodal Embedding (DME), a model trained in two stages to combine both strengths. Stage 1 performs large-scale contrastive pre-training that establishes a unified multimodal embedding space with broad modality and task coverage. Stage 2 supplements semantic sufficiency, the property that an embedding is grounded in retrieval-relevant evidence and preserves fine-grained counterpart-side semantics, via two mechanisms. Evidence-Grounded Typed Latent Reasoning organizes retrieval evidence through hidden-space latent reasoning, and Cross-Conditional Reconstruction enforces counterpart-side semantics through cross-directional autoregressive reconstruction. Both act only during training and add only marginal query-side overhead, so DME serves as efficiently as a standard contrastive encoder. On MMEB-v2, DME reaches state-of-the-art results at comparable scales for its 2B and 9B variants (74.8 and 78.4), with especially strong video and visual-document tasks. In production, DME delivers a 2.92% relative gain on Douyin's in-house offline evaluation set, is deployed across Douyin scenarios such as generative, image, and AI search, and yields a 0.1% Lifetime (LT) gain in online A/B testing on Douyin search.",
+    "authors": [
+      "Haonan Chen",
+      "Chu Li",
+      "Zhicheng Wang",
+      "Yuanwei Liu",
+      "Yuanjiang Wang",
+      "Shaohua Jiang",
+      "Zhicheng Dou"
+    ],
+    "likes": 1,
+    "published_date": "Aug 3",
+    "url": "https://huggingface.co/papers/2608.02148",
+    "date_collected": "2026-08-10T12:12:53.318756+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "Douyin 다중모달 임베딩 모델 기술 보고서",
+      "abstract": "다중모달 표현 학습은 현대 AI의 핵심입니다. 다양한 모달 쿼리와 대상을 벡터로 인코딩하여 산업 검색 및 추천을 뒷받침하며, 현대 에이전트의 기초를 이룹니다."
+    },
+    "summary": "1. 다중모달 쿼리와 대상을 벡터로 인코딩하여 산업 검색과 추천을 강화하고, 현대 에이전트를 지원하는 Douyin 다중모달 임베딩 (DME) 모델이 소개되었습니다.\n2. DME는 대규모 대조 사전 훈련을 통해 일관된 다중모달 임베딩 공간을 설정하고, 의미적 충분성을 보조하기 위한 메커니즘을 도입합니다.\n3. DME는 MMEB-v2의 2B 및 9B 변형에서 최첨단 결과를 보여주며, 특히 강력한 비디오 및 시각적 문서 작업을 수행합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Addressable Memory for Video World Models",
+    "abstract": "We study visual persistence in interactive video world models. These models rely on a Key-Value (KV) cache as a growing visual memory to carry forward previously generated frames. However, we find that models can no longer reliably address stored content once rollouts extend beyond the training horizon, because temporal Rotary Positional Embeddings (RoPE) offsets then fall outside the range seen during training and the model struggles to retrieve the relevant visual information through attention. Moreover, naively compressing the cache in the RoPE-rotated space corrupts memory by averaging together incompatible positional phases. To address this, we propose WorldTrace, a training-free memory framework for long-horizon visual persistence. WorldTrace keeps compressed memory addressable by assigning each summary slot a distinct, in-distribution virtual position. Within this addressable cache, we study two memory compression approaches: WorldTrace-Field compresses history for temporal coherence, while WorldTrace-Landmark stores verbatim scene traces at detected transitions for episodic recall. We further introduce LoopBench, a benchmark evaluating whether a compressed cache can reconstruct a previously visited scene after a long detour. WorldTrace-Field improves temporal consistency by +15.5%, and WorldTrace-Landmark improves episodic recall by +19.5% on LoopBench, extending visually persistent generation without retraining.",
+    "authors": [
+      "Xindi Wu",
+      "Sven Elflein",
+      "James Lucas",
+      "Olga Russakovsky",
+      "Laura Leal-Taixé",
+      "Despoina Paschalidou",
+      "Jonathan Lorraine",
+      "Aljoša Ošep"
+    ],
+    "likes": 0,
+    "published_date": "Aug 7",
+    "url": "https://huggingface.co/papers/2608.07408",
+    "date_collected": "2026-08-10T12:12:53.321934+09:00",
+    "week": "2026-W33",
+    "translation": {
+      "title": "비디오 월드 모델을 위한 주소 지정 가능한 메모리",
+      "abstract": "우리는 상호작용하는 비디오 월드 모델에서 시각적 지속성을 연구합니다. 이러한 모델은 이전에 생성된 프레임을 전달하는 데 성장하는 시각적 메모리로서 Key-Value (KV) 캐시에 의존합니다. 그러나 모델이 훈련 지평선을 초과한 롤아웃의 경우, 시간적 회전 포지셔널 임베딩(RoPE) 오프셋이 훈련 중 볼 수 있었던 범위를 벗어나며 모델이 주의를 통해 관련된 시각적 정보를 검색하는 데 어려움을 겪는 것으로 발견되었습니다. 더구나, RoPE-회전된 공간에서 캐시를 단순 압축하는 것은 호환되지 않는 위치 상태를 평균화하여 메모리를 훼손합니다. 이를 해결하기 위해, 우리는 WorldTrace를 제안합니다. 이는 장기간 시각적 지속성을 위한 훈련 필요 없는 메모리 프레임워크입니다. WorldTrace는 각 요약 슬롯에 구별되는 분포 내 가상 위치를 할당함으로써 압축된 메모리를 주소 지정 가능하게 유지합니다. 이 주소 지정 가능한 캐시 내에서 WorldTrace-Field는 임시 일관성을 향상시키기 위해 역사를 압축하며, WorldTrace-Landmark는 에피소드 기억을 위해 검출된 전환 지점에서 정확한 씬 추적을 저장합니다. 우리는 또 LoopBench를 소개하며, 이는 압축된 캐시가 장거리 우회 후 이전에 방문한 씬을 재구성할 수 있는지를 평가하는 벤치마크입니다. LoopBench에서 WorldTrace-Field는 임시 일관성을 15.5% 향상시키고, WorldTrace-Landmark는 에피소드 기억을 19.5% 향상시켜 다시 훈련하지 않고 시각적으로 지속 가능한 생성을 확장합니다."
+    },
+    "summary": "1. 시각적 지속성을 위해 훈련 필요 없는 메모리 프레임워크인 WorldTrace를 제안하였으며, 압축된 메모리를 주소 지정 가능하게 하는 방법을 소개하였습니다.\n2. WorldTrace-Field는 역사를 압축하여 임시적 일관성을 향상시키고, WorldTrace-Landmark는 전환 지점에서 씬 추적을 저장하여 에피소드 기억을 향상시킵니다.\n3. LoopBench를 통해 WorldTrace-Field는 임시 일관성을 15.5% 향상시키고, WorldTrace-Landmark는 에피소드 기억을 19.5% 향상시켜 시각적으로 지속 가능한 생성을 확장할 수 있음이 확인되었습니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  }
+]

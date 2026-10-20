@@ -1,0 +1,123 @@
+=== Paper Collection Started at Wed Jan  7 22:08:16 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W02
+URL: https://huggingface.co/papers/week/2026-W02
+Found 10 papers in weekly view
+Fetching likes for: NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos
+Fetching likes for: Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization
+Fetching likes for: InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields
+Fetching likes for: K-EXAONE Technical Report
+Fetching likes for: Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits
+Fetching likes for: NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation
+Fetching likes for: Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation
+Fetching likes for: MOSS Transcribe Diarize: Accurate Transcription with Speaker Diarization
+Fetching likes for: Avatar Forcing: Real-Time Interactive Head Avatar Generation for Natural Conversation
+Fetching likes for: LTX-2: Efficient Joint Audio-Visual Foundation Model
+Selected top 10 papers by likes:
+1. NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos (102 likes)
+2. Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization (100 likes)
+3. InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields (71 likes)
+4. K-EXAONE Technical Report (64 likes)
+5. Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits (59 likes)
+6. NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation (50 likes)
+7. Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation (50 likes)
+8. MOSS Transcribe Diarize: Accurate Transcription with Speaker Diarization (45 likes)
+9. Avatar Forcing: Real-Time Interactive Head Avatar Generation for Natural Conversation (45 likes)
+10. LTX-2: Efficient Joint Audio-Visual Foundation Model (38 likes)
+Found abstract: In this paper, we propose NeoVerse, a versatile 4D world model that is capable of 4D reconstruction,...
+Processed paper: NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos
+Found abstract: Existing Large Language Model (LLM) agent frameworks face two significant challenges: high configura...
+Processed paper: Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization
+Found abstract: Existing depth estimation methods are fundamentally limited to predicting depth on discrete image gr...
+Processed paper: InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields
+Found abstract: This technical report presents K-EXAONE, a large-scale multilingual language model developed by LG A...
+Processed paper: K-EXAONE Technical Report
+Found abstract: Large language models (LLMs) generate fluent and complex outputs but often fail to recognize their o...
+Processed paper: Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits
+Found abstract: We present NextFlow, a unified decoder-only autoregressive transformer trained on 6 trillion interle...
+Processed paper: NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation
+Found abstract: Multimodal Large Language Models (MLLMs) have made remarkable progress in video understanding. Howev...
+Processed paper: Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation
+Found abstract: Speaker-Attributed, Time-Stamped Transcription (SATS) aims to transcribe what is said and to precise...
+Processed paper: MOSS Transcribe Diarize: Accurate Transcription with Speaker Diarization
+Found abstract: Talking head generation creates lifelike avatars from static portraits for virtual communication and...
+Processed paper: Avatar Forcing: Real-Time Interactive Head Avatar Generation for Natural Conversation
+Found abstract: Recent text-to-video diffusion models can generate compelling video sequences, yet they remain silen...
+Processed paper: LTX-2: Efficient Joint Audio-Visual Foundation Model
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  100
+Update date_collected: 2026-01-08T07:08:25.430066+09:00  ->  2026-01-07T07:08:37.884121+09:00
+
+Processing paper 2/10
+Title: Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 100  ->  98
+Update date_collected: 2026-01-08T07:08:25.431757+09:00  ->  2026-01-07T07:08:37.885808+09:00
+
+Processing paper 3/10
+Title: InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: K-EXAONE Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  44
+Update date_collected: 2026-01-08T07:08:25.434960+09:00  ->  2026-01-07T07:08:37.893080+09:00
+
+Processing paper 5/10
+Title: Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  45
+Update date_collected: 2026-01-08T07:08:25.435976+09:00  ->  2026-01-07T07:08:37.891231+09:00
+
+Processing paper 6/10
+Title: NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  45
+Update date_collected: 2026-01-08T07:08:25.437843+09:00  ->  2026-01-07T07:08:37.889072+09:00
+
+Processing paper 7/10
+Title: Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  46
+Update date_collected: 2026-01-08T07:08:25.439147+09:00  ->  2026-01-07T07:08:37.887144+09:00
+
+Processing paper 8/10
+Title: MOSS Transcribe Diarize: Accurate Transcription with Speaker Diarization
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Avatar Forcing: Real-Time Interactive Head Avatar Generation for Natural Conversation
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  45
+Update date_collected: 2026-01-08T07:08:25.442185+09:00  ->  2026-01-07T07:08:37.890226+09:00
+
+Processing paper 10/10
+Title: LTX-2: Efficient Joint Audio-Visual Foundation Model
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W02.json...
+
+Updating Notion database...
+Updating paper: NeoVerse: in-the-wild 단일 카메라 비디오로 4D 세계 모델 강화 (likes: 100 -> 102)
+Updating paper: Youtu-Agent: 자동 생성과 하이브리드 정책 최적화로 에이전트 생산성 확장 (likes: 98 -> 100)
+Creating new paper: InfiniDepth: 임의 해상도 및 세밀한 깊이 추정에 대한 신경망 임시 필드를 활용한 방법
+Updating paper: K-EXAONE 기술 보고서 (likes: 44 -> 64)
+Updating paper: LLM이 자신의 실패를 예측할 수 있을까? 내부 회로를 통한 자가인식 (likes: 45 -> 59)
+Updating paper: 다음 플로우: 통합 순차 모델링이 다중 모달 이해와 생성을 활성화 (likes: 45 -> 50)
+Updating paper: 환각을 다스리다: 반사실적 비디오 생성을 통해 MLLM의 비디오 이해력 강화 (likes: 46 -> 50)
+Creating new paper: MOSS Transcribe Diarize: 정확한 전사와 화자 구분
+Paper already exists with same likes count: 자연 대화를 위한 실시간 대화식 헤드 아바타 생성
+Creating new paper: 효율적인 결합형 음향-시각 기초 모델 LTX-2
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jan  7 22:09:53 UTC 2026 ===
+

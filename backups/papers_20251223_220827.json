@@ -1,0 +1,329 @@
+[
+  {
+    "title": "Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows",
+    "abstract": "Despite advances in scientific AI, a coherent framework for Scientific General Intelligence (SGI)-the ability to autonomously conceive, investigate, and reason across scientific domains-remains lacking. We present an operational SGI definition grounded in the Practical Inquiry Model (PIM: Deliberation, Conception, Action, Perception) and operationalize it via four scientist-aligned tasks: deep research, idea generation, dry/wet experiments, and experimental reasoning. SGI-Bench comprises over 1,000 expert-curated, cross-disciplinary samples inspired by Science's 125 Big Questions, enabling systematic evaluation of state-of-the-art LLMs. Results reveal gaps: low exact match (10--20%) in deep research despite step-level alignment; ideas lacking feasibility and detail; high code executability but low execution result accuracy in dry experiments; low sequence fidelity in wet protocols; and persistent multimodal comparative-reasoning challenges. We further introduce Test-Time Reinforcement Learning (TTRL), which optimizes retrieval-augmented novelty rewards at inference, enhancing hypothesis novelty without reference answer. Together, our PIM-grounded definition, workflow-centric benchmark, and empirical insights establish a foundation for AI systems that genuinely participate in scientific discovery.",
+    "authors": [
+      "Wanghan Xu",
+      "Yuhao Zhou",
+      "Yifan Zhou",
+      "Qinglong Cao",
+      "Shuo Li",
+      "Jia Bu",
+      "Bo Liu",
+      "Yixin Chen",
+      "Xuming He",
+      "Xiangyu Zhao",
+      "Xiang Zhuang",
+      "Fengxiang Wang",
+      "Zhiwang Zhou",
+      "Qiantai Feng",
+      "Wenxuan Huang",
+      "Jiaqi Wei",
+      "Hao Wu",
+      "Yuejin Yang",
+      "Guangshuai Wang",
+      "Sheng Xu",
+      "Ziyan Huang",
+      "Xinyao Liu"
+    ],
+    "likes": 78,
+    "published_date": "Dec 18",
+    "url": "https://huggingface.co/papers/2512.16969",
+    "date_collected": "2025-12-23T07:08:21.386265+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "LLMs와 과학자 맞춤 워크플로우로 과학 일반 지능 탐구",
+      "abstract": "과학적 AI의 발전에도 불구하고 과학적 일반 지능(SGI)에 대한 일관된 프레임워크가 부족합니다. 우리는 실용적 탐구 모델 (PIM: 숙고, 이해, 행동, 지각)에 근거한 운영 SGI 정의를 제시하고 이를 실현하기 위해 4가지 과학자 맞춤 작업으로 구체화했습니다. SGI-Bench는 Science의 125개 큰 질문에서 영감을 받은 1,000개 이상의 전문가 선별 교차 학제적 샘플을 포함하며, 최신 LLMs의 체계적 평가를 가능케 합니다. 결과는 다음과 같은 공백을 드러냅니다: 깊은 연구에서의 낮은 정확 일치(10-20%), 아이디어의 실행 가능성 및 세부사항 부족, 건조/습식 실험에서의 코드 실행 가능성은 높지만 실행 결과 정확도는 낮음, 습식 프로토콜에서 시퀀스의 충실도가 낮으며, 지속적인 다중 모달 비교 추론 도전. 우리는 또한 추론에 있어 검색 보충 도출 독창성 보상을 최적화하는 Test-Time Reinforcement Learning (TTRL)을 소개하였습니다. 이는 참조 답변 없이 가설의 독창성을 향상시켜줍니다. 우리의 PIM에 근거한 정의, 워크플로우 중심의 벤치마크 및 경험적 통찰력은 과학적 발견에 참여하는 AI 시스템을 실제로 세우는 기반을 확립합니다."
+    },
+    "summary": "1. 과학 일반 지능(SGI)에 초점을 맞춘 새로운 정의와 네 가지 과학자 맞춤 작업을 통해 최신 LLMs의 시스템적 평가를 가능케 합니다.\n2. 결과는 깊은 연구에서의 정확 일치 부족, 아이디어의 실행 가능성 부족, 실험 실행 결과의 정확도 낮음 등을 보여주며, 다중 모달 비교 추론 도전도 소개합니다.\n3. Test-Time Reinforcement Learning (TTRL)은 추론 시 검색 보충 도출 독창성 보상을 최적화해 가설의 독창성을 향상시키는 방법을 제시합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence",
+    "abstract": "Robotic generalization relies on physical intelligence: the ability to reason about state changes, contact-rich interactions, and long-horizon planning under egocentric perception and action. However, most VLMs are trained primarily on third-person data, creating a fundamental viewpoint mismatch for humanoid robots. Scaling robot egocentric data collection remains impractical due to high cost and limited diversity, whereas large-scale human egocentric videos offer a scalable alternative that naturally capture rich interaction context and causal structure. The key challenge is to convert raw egocentric videos into structured and reliable embodiment training supervision. Accordingly, we propose an Egocentric2Embodiment translation pipeline that transforms first-person videos into multi-level, schema-driven VQA supervision with enforced evidence grounding and temporal consistency, enabling the construction of the Egocentric2Embodiment dataset (E2E-3M) at scale. An egocentric-aware embodied brain, termed PhysBrain, is obtained by training on the E2E-3M dataset. PhysBrain exhibits substantially improved egocentric understanding, particularly for planning on EgoThink. It provides an egocentric-aware initialization that enables more sample-efficient VLA fine-tuning and higher SimplerEnv success rates (53.9\\%), demonstrating effective transfer from human egocentric supervision to downstream robot control.",
+    "authors": [
+      "Xiaopeng Lin",
+      "Shijie Lian",
+      "Bin Yu",
+      "Ruoqi Yang",
+      "Changti Wu",
+      "Yuzhuo Miao",
+      "Yurun Jin",
+      "Yukun Shi",
+      "Cong Huang",
+      "Bojun Cheng",
+      "Kai Chen"
+    ],
+    "likes": 63,
+    "published_date": "Dec 18",
+    "url": "https://huggingface.co/papers/2512.16793",
+    "date_collected": "2025-12-23T07:08:21.387668+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "PhysBrain: 인간 내적 데이터, 시각 언어 모델로부터 물리적 지능으로의 다리 역할",
+      "abstract": "로봇의 일반화는 물리적 지능에 의존하는데, 이는 자아중심적 지각과 행동에서 상태 변화, 접촉 중심적 상호작용, 장기 기획에 대한 추론 능력을 말합니다. 그러나 대부분의 VLM(시각 언어 모델)은 주로 삼인칭 데이터로 훈련되어, 인간형 로봇에게 기본적인 시점 불일치를 초래합니다. 로봇 자아중심적 데이터 수집의 확장은 높은 비용과 제한된 다양성 때문에 실용적이지 않은 반면, 대규모 인간 내적 비디오는 풍부한 상호작용 맥락과 인과 구조를 자연스럽게 포착할 수 있는 확장 가능한 대안을 제공합니다. 주요 도전 과제는 원시적인 자아중심 비디오를 구조화되고 신뢰성 있는 실체 훈련 지도로 변환하는 것입니다. 이에 따라, 우리는 일인칭 비디오를 다중 수준의 스키마 주도 VQA 지도로 변환하는 Egocentric2Embodiment 번역 파이프라인을 제안합니다. 이는 증거 근거화와 시간적 일관성이 강화된 지도와 함께 자연스러운 상호작용 구조를 캡처하는 Egocentric2Embodiment 데이터셋(E2E-3M)의 구축을 가능하게 합니다. E2E-3M 데이터셋으로 훈련되는 Egocentric인식을 고려한 에메바디드 브레인(PhysBrain)은 상당히 향상된 자아중심적 이해를 나타냅니다. 특히 EgoThink에서 기획에 관한 효과적인 이니셜라이제이션을 제공합니다. 인간 내적 지도로부터 다양한 로봇 제어로의 효과적인 전이를 입증하기 위해, VLA 재 fine-tuning에서 더 많은 표본 효율성과 더 높은 SimplerEnv 성공률(53.9%)을 실현합니다."
+    },
+    "summary": "1. 로봇의 물리적 지능을 위해 인간 내적 비디오를 활용한 새로운 학습 방법을 제안합니다.\n2. Egocentric2Embodiment 번역 파이프라인을 통해 E2E-3M 데이터셋을 만들고, 이를 활용한 Egocentric인식을 고려한 에메바디드 브레인(PhysBrain)을 제안합니다.\n3. 인간 내적 지도로부터 로봇 제어로의 효과적인 전이를 증명하며, 높은 성공률을 도출합니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "When Reasoning Meets Its Laws",
+    "abstract": "Despite the superior performance of Large Reasoning Models (LRMs), their reasoning behaviors are often counterintuitive, leading to suboptimal reasoning capabilities. To theoretically formalize the desired reasoning behaviors, this paper presents the Laws of Reasoning (LoRe), a unified framework that characterizes intrinsic reasoning patterns in LRMs. We first propose compute law with the hypothesis that the reasoning compute should scale linearly with question complexity. Beyond compute, we extend LoRe with a supplementary accuracy law. Since the question complexity is difficult to quantify in practice, we examine these hypotheses by two properties of the laws, monotonicity and compositionality. We therefore introduce LoRe-Bench, a benchmark that systematically measures these two tractable properties for large reasoning models. Evaluation shows that most reasoning models exhibit reasonable monotonicity but lack compositionality. In response, we develop an effective finetuning approach that enforces compute-law compositionality. Extensive empirical studies demonstrate that better compliance with compute laws yields consistently improved reasoning performance on multiple benchmarks, and uncovers synergistic effects across properties and laws. Project page: https://lore-project.github.io/",
+    "authors": [
+      "Junyu Zhang",
+      "Yifan Sun",
+      "Tianang Leng",
+      "Jingyan Shen",
+      "Liu Ziyin",
+      "Paul Pu Liang",
+      "Huan Zhang"
+    ],
+    "likes": 48,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17901",
+    "date_collected": "2025-12-23T07:08:21.388893+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "추론과 그의 법칙",
+      "abstract": "대용량 추론 모델(LRMs)의 우수한 성능에도 불구하고, 그들의 추론 행위는 종종 직관에 반하는데, 이는 최적의 추론 능력을 제한한다. 이 논문은 원하는 추론 행위를 이론적으로 형식화하기 위해 추론의 법칙(LoRe)이라는 내재 추론 패턴을 특징화하는 통합된 프레임워크를 제안한다. 먼저, 우리는 추론 연산이 질문 복잡도와 선형적으로 상관될 것이라는 가설을 내세워 계산법을 제안한다. 계산 외에도, 우리는 부가 정확도 법칙을 LoRe에 추가한다. 실제로 질문의 복잡도를 어렵게 정량화하기 때문에, 우리는 두 법칙의 성질인 단조성과 합성성으로 이러한 가설을 검토한다. 따라서 우리는 대용량 추론 모델을 위해 이 두 가시적인 성질을 체계적으로 측정하는 벤치마크인 LoRe-Bench를 소개한다. 평가 결과, 대부분의 추론 모델이 합리적인 단조성을 보이지만 합성성이 부족하다. 이에 대응하여, 추론 연산 법칙 합성성을 강화하는 효과적인 세부조정 접근 방식을 개발한다. 광범위한 경험적 연구는 계산 법칙 준수가 여러 벤치마크에 걸쳐 꾸준히 향상된 추론 성능을 제공하며, 성질과 법칙 간의 상호작용 효과를 밝혀낸다. 프로젝트 페이지: https://lore-project.github.io/"
+    },
+    "summary": "1. 대용량 추론 모델의 내재 추론 패턴을 특징화하는 추론의 법칙(LoRe) 프레임워크를 제안함.\n2. LoRe를 이용해 계산법과 정확도 법칙을 제안하고, 추론 모델의 성질인 단조성과 합성성을 검토하는 LoRe-Bench 벤치마크를 도입함.\n3. 추론 연산 법칙 합성성을 강화하는 효과적인 세부조정 접근 방식을 개발하고, 계산법 준수가 추론 성능 향상을 가져오며 성질과 법칙 간 상호작용 효과를 발견함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience",
+    "abstract": "Large language models have recently made significant progress to generate rigorous mathematical proofs. In contrast, utilizing LLMs for theorem proving in formal languages (such as Lean) remains challenging and computationally expensive, particularly when addressing problems at the undergraduate level and beyond. In this work, we present Seed-Prover 1.5, a formal theorem-proving model trained via large-scale agentic reinforcement learning, alongside an efficient test-time scaling (TTS) workflow. Through extensive interactions with Lean and other tools, the model continuously accumulates experience during the RL process, substantially enhancing the capability and efficiency of formal theorem proving. Furthermore, leveraging recent advancements in natural language proving, our TTS workflow efficiently bridges the gap between natural and formal languages. Compared to state-of-the-art methods, Seed-Prover 1.5 achieves superior performance with a smaller compute budget. It solves 88\\% of PutnamBench (undergraduate-level), 80\\% of Fate-H (graduate-level), and 33\\% of Fate-X (PhD-level) problems. Notably, using our system, we solved 11 out of 12 problems from Putnam 2025 within 9 hours. Our findings suggest that scaling learning from experience, driven by high-quality formal feedback, holds immense potential for the future of formal mathematical reasoning.",
+    "authors": [
+      "Jiangjie Chen",
+      "Wenxiang Chen",
+      "Jiacheng Du",
+      "Jinyi Hu",
+      "Zhicheng Jiang",
+      "Allan Jie",
+      "Xiaoran Jin",
+      "Xing Jin",
+      "Chenggang Li",
+      "Wenlei Shi",
+      "Zhihong Wang",
+      "Mingxuan Wang",
+      "Chenrui Wei",
+      "Shufa Wei",
+      "Huajian Xin",
+      "Fan Yang",
+      "Weihao Gao",
+      "Zheng Yuan",
+      "Tianyang Zhan",
+      "Zeyu Zheng",
+      "Tianxi Zhou",
+      "Thomas Hanwen Zhu"
+    ],
+    "likes": 37,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17260",
+    "date_collected": "2025-12-23T07:08:21.390725+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "Seed-Prover 1.5: 학부 수준 이상의 정리 증명 마스터링을 향한 경험 학습",
+      "abstract": "최근 대형 언어 모델은 엄격한 수학적 증명 생성에 상당한 진전을 이루었습니다. 그러나 Lean과 같은 형식 언어에서 LLMs를 이용한 정리 증명은 여전히 어렵고 계산적으로 비용이 많이 드는데, 특히 학부 수준 이상의 문제를 다룰 때 입니다. 본 연구에서는 대규모 적극적 강화 학습을 통해 훈련된 형식적 정리 증명 모델인 Seed-Prover 1.5와 효율적인 테스트 시간 확장(TTS) 워크플로우를 제안합니다. Lean 및 기타 도구와의 폭넓은 상호작용을 통해 모델은 RL 프로세스 중 지속적으로 경험을 축적하여 형식적 정리 증명의 능력과 효율성을 크게 향상시킵니다. 또한 최근의 자연어 증명 기술 향상을 활용하여 우리의 TTS 워크플로우는 자연어와 형식 언어 사이의 간극을 효율적으로 교량합니다. 최신 기술들과 비교했을 때, Seed-Prover 1.5는 작은 계산 예산으로 우수한 성능을 발휘합니다. 학부 수준의 PutnamBench 문제의 88%, 대학원 수준인 Fate-H의 80%, 박사 수준인 Fate-X의 33%를 해결합니다. 특히 우리 시스템을 사용하여 Putnam 2025 문제 중 12개 중 11개를 9시간 내에 해결했습니다. 우리의 발견은 고품질의 형식적 피드백에 의한 경험 학습 스케일링이 형식 수학적 추론의 미래에 엄청난 잠재력을 가지고 있다는 것을 시사합니다."
+    },
+    "summary": "1. Seed-Prover 1.5는 대학 수준 이상의 문제를 다루는 형식적 정리 증명 모델로, 강화 학습을 통해 학습하며, 자연어와 형식 언어 사이의 간극을 효과적으로 교량합니다.\n2. 모델은 Lean과의 상호작용을 통해 경험을 축적하며, 작은 계산 예산으로 우수한 성능을 발휘하여 학부 및 대학원 수준의 다양한 문제를 해결합니다.\n3. Seed-Prover 1.5의 연구 결과는 고품질의 형식적 피드백을 기반으로 한 경험 학습이 형식 수학적 추론 분야에서 미래의 잠재력을 갖는다는 점을 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing",
+    "abstract": "Modern Latent Diffusion Models (LDMs) typically operate in low-level Variational Autoencoder (VAE) latent spaces that are primarily optimized for pixel-level reconstruction. To unify vision generation and understanding, a burgeoning trend is to adopt high-dimensional features from representation encoders as generative latents. However, we empirically identify two fundamental obstacles in this paradigm: (1) the discriminative feature space lacks compact regularization, making diffusion models prone to off-manifold latents that lead to inaccurate object structures; and (2) the encoder's inherently weak pixel-level reconstruction hinders the generator from learning accurate fine-grained geometry and texture. In this paper, we propose a systematic framework to adapt understanding-oriented encoder features for generative tasks. We introduce a semantic-pixel reconstruction objective to regularize the latent space, enabling the compression of both semantic information and fine-grained details into a highly compact representation (96 channels with 16x16 spatial downsampling). This design ensures that the latent space remains semantically rich and achieves state-of-the-art image reconstruction, while remaining compact enough for accurate generation. Leveraging this representation, we design a unified Text-to-Image (T2I) and image editing model. Benchmarking against various feature spaces, we demonstrate that our approach achieves state-of-the-art reconstruction, faster convergence, and substantial performance gains in both T2I and editing tasks, validating that representation encoders can be effectively adapted into robust generative components.",
+    "authors": [
+      "Shilong Zhang",
+      "He Zhang",
+      "Zhifei Zhang",
+      "Chongjian Ge",
+      "Shuchen Xue",
+      "Shaoteng Liu",
+      "Mengwei Ren",
+      "Soo Ye Kim",
+      "Yuqian Zhou",
+      "Qing Liu",
+      "Daniil Pakhomov",
+      "Kai Zhang",
+      "Zhe Lin",
+      "Ping Luo"
+    ],
+    "likes": 29,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17909",
+    "date_collected": "2025-12-23T07:08:21.392277+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "의미와 재구성 둘 다 중요합니다: 텍스트-이미지 생성과 편집을 위한 표현 인코더 개선하기",
+      "abstract": "현대 잠재 확산 모델(LDMs)은 주로 픽셀 수준 재구성에 최적화된 낮은 수준의 변이형 오토인코더(VAE) 잠재 공간에서 작동합니다. 시각 생성과 이해를 통합하기 위해, 표현 인코더에서 고차원 특징을 생성 잠재로 채택하는 추세가 있다. 그러나 우리는 이 패러다임에서 두 가지 기본적인 장애물을 경험적으로 확인했습니다: (1) 판별적 특징 공간은 조밀한 정규화가 없어 확산 모델을 off-manifold 잠재로 만들어 물체 구조의 부정확함으로 이어지게 합니다; (2) 인코더의 본질적으로 약한 픽셀 수준 재구성은 생성기가 정확한 미세 지오메트리와 질감 학습을 방해합니다. 본 논문에서는 이해 중심의 인코더 특징을 생성 작업에 적응시키기 위한 체계적인 프레임워크를 제안합니다. 우리는 잠재 공간을 정규화하기 위한 의미-픽셀 재구성 목적을 도입하여 의미 정보와 미세한 세부 사항을 매우 조밀한 표현(16x16 공간 다운샘플링이며 96개 채널)으로 압축할 수 있게 합니다. 이 디자인은 잠재 공간이 의미적으로 풍부하게 유지되며 최첨단 이미지 재구성을 달성하면서도 생성에 충분히 조밀해진다는 것을 보장합니다. 이 표현을 활용하여 통합된 텍스트-이미지 (T2I) 및 이미지 편집 모델을 설계했습니다. 다양한 특징 공간에 대한 벤치마킹을 통해 우리의 접근 방식이 최첨단 재구성, 빠른 수렴 및 T2I 및 편집 작업 모두에서 상당한 성능 향상을 달성함을 입증하며, 표현 인코더가 강력한 생성 구성 요소로 효과적으로 적응될 수 있다고 확인합니다."
+    },
+    "summary": "1. 미세한 구조와 질감을 정확히 학습하기 위한 의미-픽셀 재구성 목표를 도입하여 표현 인코더 특징을 생성 작업에 적응하는 시스템적인 프레임워크를 제안합니다.\n2. 제안된 디자인은 잠재 공간이 의미적으로 풍부하고 최첨단 이미지 재구성을 달성하면서도 충분히 조밀하게 유지되도록 합니다.\n3. 텍스트-이미지 생성과 편집 작업에서 우수한 성능 향상을 보이며, 표현 인코더를 강력한 생성 구성 요소로 효과적으로 적응할 수 있다는 점을 확인합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation",
+    "abstract": "Despite advances in Multimodal LLMs (MLLMs), their ability to reason over 3D structures and temporal dynamics remains limited, constrained by weak 4D perception and temporal understanding. Existing 3D and 4D Video Question Answering (VQA) benchmarks also emphasize static scenes and lack region-level prompting. We tackle these issues by introducing: (a) 4D-RGPT, a specialized MLLM designed to capture 4D representations from video inputs with enhanced temporal perception; (b) Perceptual 4D Distillation (P4D), a training framework that transfers 4D representations from a frozen expert model into 4D-RGPT for comprehensive 4D perception; and (c) R4D-Bench, a benchmark for depth-aware dynamic scenes with region-level prompting, built via a hybrid automated and human-verified pipeline. Our 4D-RGPT achieves notable improvements on both existing 4D VQA benchmarks and the proposed R4D-Bench benchmark.",
+    "authors": [
+      "Chiao-An Yang",
+      "Ryo Hachiuma",
+      "Sifei Liu",
+      "Subhashree Radhakrishnan",
+      "Raymond A. Yeh",
+      "Yu-Chiang Frank Wang",
+      "Min-Hung Chen"
+    ],
+    "likes": 28,
+    "published_date": "Dec 18",
+    "url": "https://huggingface.co/papers/2512.17012",
+    "date_collected": "2025-12-23T07:08:21.393600+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "4D-RGPT: 영역 수준 4차원 이해를 향하여 인지적 증류를 통해",
+      "abstract": "다양한 다중 모달 LLMs(Multimodal LLMs)의 발전에도 불구하고, 이들은 3차원 구조 및 시간적 역동성을 추론하는 능력이 한계적이며 약한 4차원 인식과 시간에 대한 이해로 제한되어 있습니다. 기존의 3D 및 4D 비디오 질문 응답(VQA) 벤치마크도 정적인 장면을 강조하고 영역 수준의 프롬프팅이 부족합니다. 저희는 이 문제들에 접근하기 위해 다음을 소개합니다: (a) 영상 입력으로부터 개선된 시간적 인식을 갖춘 4차원 표현을 포착하기 위해 설계된 특수화된 MLLM인 4D-RGPT; (b) 4차원 표현을 동결된 전문가 모델로부터 4D-RGPT로 포괄적인 4차원 인식을 전이시키는 훈련 프레임워크인 인지적 4D 증류(P4D); 그리고 (c) 영역 수준 프롬프팅이 포함된 깊이 인식 동적 장면을 위한 벤치마크인 R4D-Bench를 자동화 및 인간 검증된 혼합 파이프라인을 통해 구축했습니다. 우리의 4D-RGPT는 기존의 4D VQA 벤치마크와 제안된 R4D-Bench 벤치마크 모두에서 주목할만한 개선을 이루었습니다."
+    },
+    "summary": "1. 다양한 다중 모달 LLMs의 한계를 극복하기 위해 4D-RGPT가 개발되었으며, 시간적 지각을 향상시킨 4D 표현을 캡처합니다.\n2. 4D-RGPT로 4D 표현을 포괄적으로 얻기 위해 동결된 전문가 모델로부터 4차원 인식을 전이시키는 훈련 프레임워크인 P4D를 소개합니다.\n3. R4D-Bench는 영역 수준 프롬프팅을 포함한 깊이 인식 동적 장면을 위한 벤치마크로, 자동화 및 인간 검증된 방식으로 구축되었으며, 4D-RGPT는 기존의 4D VQA 벤치마크와 R4D-Bench 벤치마크에서 현저한 성능 향상을 달성했습니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Are We on the Right Way to Assessing LLM-as-a-Judge?",
+    "abstract": "LLM-as-a-Judge has been widely adopted as an evaluation method and served as supervised rewards in model training. However, existing benchmarks for LLM-as-a-Judge are mainly relying on human-annotated ground truth, which introduces human bias that undermines the assessment of reliability and imposes scalability constraints. To overcome these limitations, we introduce Sage, a novel evaluation suite that assesses the quality of LLM judges without necessitating any human annotation. Inspired by axioms of rational choice theory, Sage introduces two new lenses for measuring LLM-as-a-Judge: local self-consistency (pair-wise preference stability) and global logical consistency (transitivity across a full set of preferences). We curate a dataset of 650 questions by combining structured benchmark problems with real-world user queries. Our experiments demonstrate both the stability of our metrics and their high correlation with supervised benchmarks like LLMBar and RewardBench2, confirming Sage's reliability as an evaluation suite for the robustness and accuracy of LLM-as-a-Judge. Based on Sage, we reveal that current state-of-the-art LLMs exhibit significant reliability problems when acting as judges in both scoring and pairwise settings; even the top-performing models, Gemini-2.5-Pro and GPT-5, fail to maintain consistent preferences in nearly a quarter of difficult cases. We attribute this to a new phenomenon called situational preference, which explains why explicit rubrics or criteria can help the model judge consistently across answer pairs. Our further analysis shows that finetuned LLM-as-a-Judge is a feasible method to boost performance, and the panel-based judge as well as deep reasoning can enhance the judging consistency. We also find substantial inconsistency in human judgments, which indicates that human annotation may not be a reliable gold standard.",
+    "authors": [
+      "Yuanning Feng",
+      "Sinan Wang",
+      "Zhengxiang Cheng",
+      "Yao Wan",
+      "Dongping Chen"
+    ],
+    "likes": 21,
+    "published_date": "Dec 17",
+    "url": "https://huggingface.co/papers/2512.16041",
+    "date_collected": "2025-12-23T07:08:21.394754+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "LLM 심사자로서의 평가 방법이 올바른가?",
+      "abstract": "LLM 심사자는 모델 훈련 중 지도 보상으로 널리 사용되어왔다. 그러나 기존 LLM 심사자에 대한 벤치마크는 주로 인간이 주석 달린 진실을 의존하며, 이는 신뢰성 평가에 인간 편향을 도입하고 확장 가능성 제약을 부과한다. 이러한 한계를 극복하기 위해 우리는 Sage라는 새로운 평가 스위트를 소개한다. 이는 어떠한 인간 주석도 필요로 하지 않고 LLM 심사자의 품질을 평가한다. Sage는 합리적 선택 이론의 원리에서 영감을 받아 LLM 심사자를 측정하는 두 가지 새로운 렌즈, 지역 자기 일관성(쌍별 선호 안정성)과 전역 논리 일관성(전체 선호도 집합 내에서 이동 가능),를 소개한다."
+    },
+    "summary": "1. Sage는 인간 주석 없이 LLM 심사자 평가 스위트로, 지역 자기 일관성과 전역 논리 일관성을 도입하여 LLM 심사자의 품질을 평가한다.\n2. 현재 최고 수준의 LLM들도 어려운 경우의 대부분에서 일관된 선호도를 유지하지 못하는 등, LLM 심사자의 신뢰성 문제가 있음을 보여준다.\n3. Situational preference라는 새로운 현상에 따라 명확한 기준이 모델이 답 쌍을 일관되게 심사하는 데 도움이 될 수 있다는 것을 밝혀냈다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "RadarGen: Automotive Radar Point Cloud Generation from Cameras",
+    "abstract": "We present RadarGen, a diffusion model for synthesizing realistic automotive radar point clouds from multi-view camera imagery. RadarGen adapts efficient image-latent diffusion to the radar domain by representing radar measurements in bird's-eye-view form that encodes spatial structure together with radar cross section (RCS) and Doppler attributes. A lightweight recovery step reconstructs point clouds from the generated maps. To better align generation with the visual scene, RadarGen incorporates BEV-aligned depth, semantic, and motion cues extracted from pretrained foundation models, which guide the stochastic generation process toward physically plausible radar patterns. Conditioning on images makes the approach broadly compatible, in principle, with existing visual datasets and simulation frameworks, offering a scalable direction for multimodal generative simulation. Evaluations on large-scale driving data show that RadarGen captures characteristic radar measurement distributions and reduces the gap to perception models trained on real data, marking a step toward unified generative simulation across sensing modalities.",
+    "authors": [
+      "Tomer Borreda",
+      "Fangqiang Ding",
+      "Sanja Fidler",
+      "Shengyu Huang",
+      "Or Litany"
+    ],
+    "likes": 16,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17897",
+    "date_collected": "2025-12-23T07:08:21.395896+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "RadarGen: 카메라에서 자동차 레이다 포인트 클라우드 생성",
+      "abstract": "본 연구에서는 RadarGen이라는 확산 모델을 제시하여, 다중 시점 카메라 영상에서 현실적인 자동차 레이다 포인트 클라우드를 합성합니다. RadarGen은 레이다 측정값을 공간 구조와 레이다 단면적(RCS) 및 도플러 속성을 인코딩하는 새끼 조망 형태로 표현하여, 이미지-잠재 확산을 레이다 영역에 효율적으로 적응시킵니다. 경량의 회복 단계는 생성된 맵으로부터 포인트 클라우드를 재구성합니다. RadarGen은 사전 교육된 기본 모델에서 추출된 BEV-정렬된 깊이, 의미론적 및 모션 힌트를 통합하여, 시각적 장면과의 생성을 더 잘 정렬시킵니다. 이는 확산 모델의 랜덤 생성 과정을 물리적으로 타당한 레이다 패턴으로 이끌어 줍니다. 이미지에 대한 조건 설정은 기본적으로 기존 비주얼 데이터셋 및 시뮬레이션 프레임워크와 넓게 호환되도록 하며, 다중모달 생성 시뮬레이션을 위한 확장 가능한 방향을 제공합니다. 대규모 주행 데이터에 대한 평가 결과, RadarGen은 특징적인 레이다 측정 분포를 포착하고, 실제 데이터로 훈련된 인식 모델에 대한 간격을 줄임으로써, 감지 모델 간의 통합 생성 시뮬레이션으로 한 걸음 나아가는 것을 보여줍니다."
+    },
+    "summary": "1. RadarGen은 다중 시점 카메라 영상에서 현실적인 자동차 레이다 포인트 클라우드를 합성하기 위한 확산 모델을 제시한다.\n2. 레이다 측정값을 새끼 조망 형태로 표현하여 공간 구조와 레이다 단면적(RCS) 및 도플러 속성을 인코딩한다.\n3. BEV-정렬된 깊이, 의미론적 및 모션 힌트를 활용하여 시각적 장면과의 생성을 더 잘 정렬시켜 랜덤 생성 과정을 물리적으로 타당한 레이다 패턴으로 이끈다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "GroundingME: Exposing the Visual Grounding Gap in MLLMs through Multi-Dimensional Evaluation",
+    "abstract": "Visual grounding, localizing objects from natural language descriptions, represents a critical bridge between language and vision understanding. While multimodal large language models (MLLMs) achieve impressive scores on existing benchmarks, a fundamental question remains: can MLLMs truly ground language in vision with human-like sophistication, or are they merely pattern-matching on simplified datasets? Current benchmarks fail to capture real-world complexity where humans effortlessly navigate ambiguous references and recognize when grounding is impossible. To rigorously assess MLLMs' true capabilities, we introduce GroundingME, a benchmark that systematically challenges models across four critical dimensions: (1) Discriminative, distinguishing highly similar objects, (2) Spatial, understanding complex relational descriptions, (3) Limited, handling occlusions or tiny objects, and (4) Rejection, recognizing ungroundable queries. Through careful curation combining automated generation with human verification, we create 1,005 challenging examples mirroring real-world complexity. Evaluating 25 state-of-the-art MLLMs reveals a profound capability gap: the best model achieves only 45.1% accuracy, while most score 0% on rejection tasks, reflexively hallucinating objects rather than acknowledging their absence, raising critical safety concerns for deployment. We explore two strategies for improvements: (1) test-time scaling selects optimal response by thinking trajectory to improve complex grounding by up to 2.9%, and (2) data-mixture training teaches models to recognize ungroundable queries, boosting rejection accuracy from 0% to 27.9%. GroundingME thus serves as both a diagnostic tool revealing current limitations in MLLMs and a roadmap toward human-level visual grounding.",
+    "authors": [
+      "Rang Li",
+      "Lei Li",
+      "Shuhuai Ren",
+      "Hao Tian",
+      "Shuhao Gu",
+      "Shicheng Li",
+      "Zihao Yue",
+      "Yudong Wang",
+      "Wenhan Ma",
+      "Zhe Yang",
+      "Jingyuan Ma",
+      "Zhifang Sui",
+      "Fuli Luo"
+    ],
+    "likes": 14,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17495",
+    "date_collected": "2025-12-23T07:08:21.397366+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "GroundingME: 다중 차원 평가를 통해 MLLM에서 시각적 그라운딩 간극 노출하기",
+      "abstract": "시각적 그라운딩은 자연어 설명으로부터 객체를 지역화하는 것으로, 언어와 시각 이해 간의 중요한 다리를 형성합니다. 다중 모달 대형 언어 모델(MLLMs)은 기존의 벤치마크에서 인상적인 점수를 달성하지만, MLLMs가 언어를 인간과 유사한 세련됨으로 시각에 덧대는 것이 가능한지, 아니면 단순화된 데이터셋에서 패턴 매칭을 하고 있는지에 대한 근본적인 질문이 남아 있습니다."
+    },
+    "summary": "1. MLLMs의 실제 시각 그라운딩 능력을 평가하기 위해 새로운 벤치마크 'GroundingME' 도입.\n2. 현재 모델들은 고도로 유사한 객체를 구별하거나 문맥적 설명을 이해하는 것에 한계가 있음을 밝혀냄.\n3. 새로운 벤치마크로 모델의 안전 문제와 복잡한 시각 그라운딩 개선 전략을 논의함.",
+    "categories": [
+      "LLM",
+      "Multi-modal",
+      "Other"
+    ]
+  },
+  {
+    "title": "An Anatomy of Vision-Language-Action Models: From Modules to Milestones and Challenges",
+    "abstract": "Vision-Language-Action (VLA) models are driving a revolution in robotics, enabling machines to understand instructions and interact with the physical world. This field is exploding with new models and datasets, making it both exciting and challenging to keep pace with. This survey offers a clear and structured guide to the VLA landscape. We design it to follow the natural learning path of a researcher: we start with the basic Modules of any VLA model, trace the history through key Milestones, and then dive deep into the core Challenges that define recent research frontier. Our main contribution is a detailed breakdown of the five biggest challenges in: (1) Representation, (2) Execution, (3) Generalization, (4) Safety, and (5) Dataset and Evaluation. This structure mirrors the developmental roadmap of a generalist agent: establishing the fundamental perception-action loop, scaling capabilities across diverse embodiments and environments, and finally ensuring trustworthy deployment-all supported by the essential data infrastructure. For each of them, we review existing approaches and highlight future opportunities. We position this paper as both a foundational guide for newcomers and a strategic roadmap for experienced researchers, with the dual aim of accelerating learning and inspiring new ideas in embodied intelligence. A live version of this survey, with continuous updates, is maintained on our https://suyuz1.github.io/Survery/{project page}.",
+    "authors": [
+      "Chao Xu",
+      "Suyu Zhang",
+      "Yang Liu",
+      "Baigui Sun",
+      "Weihong Chen",
+      "Bo Xu",
+      "Qi Liu",
+      "Juncheng Wang",
+      "Shujun Wang",
+      "Shan Luo",
+      "Jan Peters",
+      "Athanasios V. Vasilakos",
+      "Stefanos Zafeiriou",
+      "Jiankang Deng"
+    ],
+    "likes": 13,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11362",
+    "date_collected": "2025-12-23T07:08:21.398883+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "시각-언어-행동 모델 해부학: 모듈부터 이정표와 도전까지",
+      "abstract": "시각-언어-행동(Vision-Language-Action, VLA) 모델은 로봇학 분야에서 혁명을 일으키며 기계가 명령을 이해하고 물리적 세계와 상호작용할 수 있도록 합니다. 이 분야는 새로운 모델과 데이터셋으로 폭발적으로 성장하고 있어 따라가기는 흥미롭고 도전적입니다. 본 조사는 VLA 분야에 대한 명확하고 체계적인 안내서를 제공합니다. 연구자의 자연스러운 학습 경로를 따라 설계했습니다: 어떤 VLA 모델이든 기본 모듈부터 시작하여 주요 이정표를 통해 역사를 추적한 후 최근 연구 경계를 정의하는 핵심 도전에 심층적으로 파고들었습니다. 저희의 주요 기여는 (1) 표현, (2) 실행, (3) 일반화, (4) 안전성 및 (5) 데이터셋 및 평가라는 다섯 가지 주요 도전의 자세한 분석입니다. 이 구조는 전문가 에이전트의 발전 로드맵과 유사합니다: 기본 지각-행동 루프를 확립하고 다양한 구현과 환경에 걸쳐 기능을 확장하며 필수적인 데이터 인프라의 지원 아래 신뢰할 수 있는 배포를 보장합니다. 각각에 대해 기존 접근 방식을 검토하고 미래의 기회를 강조합니다. 본 논문은 입문자를 위한 기초 안내서로서와 경험 많은 연구자를 위한 전략적 로드맵으로 위치시키며, 상호작용 지능 분야에서의 학습 가속화와 새로운 아이디어 영감 제공을 겸했습니다. https://suyuz1.github.io/Survery/{프로젝트 페이지}를 통해 계속 업데이트되는 이 조사의 라이브 버전이 유지됩니다."
+    },
+    "summary": "1. VLA 모델의 모듈, 이정표, 도전의 구조적 안내서 제공\n2. 다섯 가지 핵심 도전: 표현, 실행, 일반화, 안전성, 데이터셋 및 평가\n3. 전문가 에이전트의 발전 과정을 모사한 연구로, 신뢰할 수 있는 배포 기능과 미래 기회 강조",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

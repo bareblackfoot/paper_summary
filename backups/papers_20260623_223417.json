@@ -1,0 +1,269 @@
+[
+  {
+    "title": "PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models",
+    "abstract": "Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding tasks. However, most existing MLLMs rely on autoregressive generation, which limits their efficiency for perception tasks that require captioning multiple regions. In this work, we propose PerceptionDLM, a multimodal diffusion language model optimized for efficient parallel region perception. Built upon PerceptionDLM-Base, a strong foundational baseline that achieves state-of-the-art performance among open-source diffusion MLLMs, our architecture fully leverages the parallel decoding nature of DLMs. Specifically, we introduce efficient prompting and structured attention masking to enable simultaneous perception of multiple masked regions, allowing the model to generate region descriptions in parallel at both the sequence and token levels. This design significantly improves inference efficiency compared with existing approaches that process regions sequentially. To systematically evaluate the parallelism property of visual perception capability for DLMs, we construct a new Parallel Detailed Localized Captioning Benchmark (ParaDLC-Bench) by scaling the DLC-Bench to include multiple region masks per image, enabling joint evaluation of both caption quality and inference efficiency. Experiments demonstrate that PerceptionDLM maintains competitive performance in region captioning while achieving substantial speed improvements for multi-region perception tasks. Our results highlight the potential of multimodal diffusion language models for efficient, parallel visual perception. To the best of our knowledge, we are the first to achieve parallel region caption and perception by leveraging the advantages of diffusion language models. Code, models, and datasets are released.",
+    "authors": [
+      "Yueyi Sun",
+      "Yuhao Wang",
+      "Jason Li",
+      "Ye Tian",
+      "Tao Zhang",
+      "Jacky Mai",
+      "Yihan Wang",
+      "Haochen Wang",
+      "Jinbin Bai",
+      "Ling Yang",
+      "Yunhai Tong"
+    ],
+    "likes": 50,
+    "published_date": "Jun 17",
+    "url": "https://huggingface.co/papers/2606.19534",
+    "date_collected": "2026-06-23T07:39:47.011303+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "PerceptionDLM: 병렬 영역 인식을 위한 다중모달 확산 언어 모델",
+      "abstract": "다중모달 대형 언어 모델(MLLMs)은 시각 이해 작업에서 놀라운 진전을 이루었습니다. 그러나 기존 대부분의 MLLMs는 자기회귀 생성에 의존하여 여러 영역 설명이 필요한 인식 작업에 있어 효율성이 제한되는 문제가 있습니다. 본 연구에서는 효율적인 병렬 영역 인식을 위한 다중모달 확산 언어 모델인 PerceptionDLM을 제안합니다."
+    },
+    "summary": "1. PerceptionDLM은 다중 영역을 동시에 인식하며 순차적 처리보다 효율적인 병렬 처리를 가능케 하는 언어 모델이다.\n2. 기존 방법들과 비교했을 때, PerceptionDLM은 영역 설명에 대한 성능을 유지하면서 다중 영역 인식 작업의 추론 효율을 상당히 향상시킨다.\n3. 시스템적으로 DLM(Diffusion Language Models)의 시각 인식 능력의 병렬성 속성을 평가하는 새로운 벤치마크를 구축하고, 이를 통해 PerceptionDLM의 잠재력을 강조한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision",
+    "abstract": "Personalized presentation generation requires more than conditioning on a current prompt or template: agents must preserve stable user preferences across tasks, retain newly introduced preferences and constraints during multi-turn revision, and carry out local edits reliably. We propose MemSlides, a hierarchical memory framework for personalized presentation agents that separates long-term memory from working memory and further divides long-term memory into user profile memory and tool memory. User profile memory stores intent-conditioned profiles for round-0 personalization, working memory carries active preferences and session constraints across revision rounds, and tool memory stores reusable execution experience for reliable localized editing. MemSlides pairs this memory design with scoped slide-local revision, so targeted updates act on the smallest affected region instead of repeatedly regenerating the full deck. In controlled experiments, user profile memory improves persona-alignment judgments on a multi-persona, multi-intent profile bank, tool-memory injection improves closed-loop modify behavior in diagnostic matched-pair settings, and qualitative cases illustrate working memory's ability to carryover preferences. Taken together, these results suggest that effective personalization in presentation authoring depends on separating persistent user profiles, session-level working memory, and reusable execution experience across generation and localized revision.",
+    "authors": [
+      "Ye Jin",
+      "Yangyang Xu",
+      "Jun Zhu",
+      "Yibo Yang"
+    ],
+    "likes": 14,
+    "published_date": "Jun 15",
+    "url": "https://huggingface.co/papers/2606.17162",
+    "date_collected": "2026-06-23T07:39:47.013494+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "MemSlides: 사용자 지향 프레젠테이션 슬라이드 생성을 위한 계층적 메모리 주도 에이전트 프레임워크",
+      "abstract": "개인화된 프레젠테이션 생성은 현재 프롬프트나 템플릿에만 의존하는 것 이상을 필요로 합니다. 에이전트는 과업을 포함한 사용자 선호도를 안정적으로 유지하고, 다중 턴 수정 중에 새로운 선호도와 제약 사항을 보존하며 지역적 수정을 신뢰성 있게 수행해야 합니다. 우리는 MemSlides를 제안합니다. 이는 사용자 지향 프레젠테이션 에이전트를 위한 계층적 메모리 프레임워크로, 장기 기억을 작업 기억과 사용자 프로필 기억으로 나눈다. 사용자 프로필 기억은 라운드-0 개인화를 위한 의도 조건화 프로필을 저장하며, 작업 기억은 수정 라운드 전반에 걸쳐 활성 선호도와 세션 제약 사항을 운반하고, 도구 기억은 신뢰할 수 있는 지역적 편집을 위해 재사용 가능한 실행 경험을 저장합니다. MemSlides는 이 메모리 디자인을 스코프가 지정된 슬라이드 지역 수정과 함께 제공하여 대상 업데이트가 전체 덱을 반복 생성하는 것 대신 최소 영향 영역에 작용하도록 합니다. 제어 실험에서 사용자 프로필 기억은 다중 페르소나, 다중 의도 프로필 벤크에서 페르소나 정렬 판단을 개선시키며, 도구 기억의 주입은 진단 매치 페어 환경에서 닫힌 루프 수정 행동을 개선시킵니다. 질적 케이스는 작업 기억이 선호도를 연속적으로 운반하는 능력을 보여줍니다. 이러한 결과는 프레젠테이션 작성에서의 효과적인 개인화는 생성과 지역적 수정 내에서 지속적인 사용자 프로필, 세션 수준의 작업 기억, 재사용 가능한 실행 경험을 분리하는 데 달려있음을 제안합니다."
+    },
+    "summary": "1. MemSlides는 사용자 프로필 메모리, 작업 메모리, 도구 메모리로 구성된 계층적 메모리 프레임워크를 제안하며, 지역 수정과 함께 작동하여 자세한 프레젠테이션 슬라이드 개인화를 향상시킵니다.\n2. 제어 실험에서 사용자 프로필 메모리는 페르소나 정렬 판단을 향상시키고, 도구 메모리는 닫힌 루프 수정 행동을 향상시킵니다.\n3. MemSlides는 프레젠테이션 작성에서 효과적인 개인화를 위해 사용자 프로필, 작업 메모리, 재사용 경험을 분리하여 유지하는 것이 중요함을 시사합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
+    "abstract": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GateMem, a benchmark for multi-principal shared-memory agents. GateMem jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, structured judging, and leak-target annotations. Across diverse baselines and backbone models, no method simultaneously achieves strong utility, robust access control, and reliable forgetting. Long-context prompting often yields the best governance score at high token cost, while retrieval-based and external-memory methods reduce cost yet still leak unauthorized or deleted information. These results show current memory agents remain far from reliable shared institutional deployment.",
+    "authors": [
+      "Zhe Ren",
+      "Yibo Yang",
+      "Yimeng Chen",
+      "Zijun Zhao",
+      "Benshuo Fu",
+      "Zhihao Shu",
+      "Bingjie Zhang",
+      "Yangyang Xu",
+      "Dandan Guo",
+      "Shuicheng Yan"
+    ],
+    "likes": 13,
+    "published_date": "Jun 17",
+    "url": "https://huggingface.co/papers/2606.18829",
+    "date_collected": "2026-06-23T07:39:47.015874+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "GateMem: 멀티-프린시펄 공유-메모리 에이전트의 메모리 거버넌스 평가",
+      "abstract": "LLM(Large Language Model) 에이전트들에 대한 메모리 벤치마크는 주로 단일 사용자 환경을 가정하여, 병원, 직장, 대학교, 가정 등에서의 공유 보조 기기들에 대한 연구가 부족합니다. 이러한 배치 환경에서는 다수의 주체가 공통 메모리 풀에 쓰고, 역할, 범위, 관계에 따라 쿼리를 수행하므로 메모리 품질은 회상 뿐만 아니라 거버넌스도 필요합니다. 우리는 멀티-프린시펄 공유-메모리 에이전트를 위한 벤치마크인 GateMem을 소개합니다. GateMem은 합법적인 장기적 요청의 유틸리티, 상태 업데이트, 맥락적 승인 경계를 통한 액세스 제어, 명시적 삭제 요청 후 에이전트가 직면하는 능동적 잊음 기능 등을 공동으로 평가합니다. 이는 의료, 사무실, 교육, 가정 분야에 걸쳐 있으며, 장기 다자간 에피소드, 점증적 메모리 주입, 숨은 체크포인트, 구조화된 심사, 누출 대상 주석 등을 포함합니다. 다양한 베이스라인과 기본 모델을 통해, 어떤 방법도 강력한 유틸리티, 견고한 액세스 제어, 신뢰할만한 잊음을 동시에 달성하지 못합니다. 장기적 문맥의 프롬프팅은 종종 높은 토큰 비용으로 최상의 거버넌스 점수를 얻지만, 회수 기반 및 외부 메모리 방법은 비용을 줄이지만 여전히 불법 정보 누출이나 삭제된 정보를 유출합니다. 이러한 결과는 현재의 메모리 에이전트들이 신뢰할만한 공유 기관 배치로부터 아직 멀었다는 것을 보여줍니다."
+    },
+    "summary": "1. GateMem은 멀티-프린시펄 공유-메모리 에이전트를 위한 벤치마크로, 장기적 요청의 유틸리티, 액세스 제어, 능동적 잊음을 평가합니다.\n2. 다양한 베이스라인과 모델을 실험한 결과, 현재의 메모리 에이전트들은 강력한 유틸리티, 견고한 액세스 제어, 신뢰할만한 잊음을 동시에 달성하지 못함을 보여줍니다.\n3. 장기적 문맥의 프롬프팅 방법이 높은 토큰 비용으로 최상의 거버넌스 점수를 얻지만, 회수 기반 및 외부 메모리 방법은 불법 정보 누출이나 삭제된 정보를 여전히 유출하는 한계가 있습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models",
+    "abstract": "While reasoning on autoregressive (AR) models is often performed by chain-of-thought reasoning and reflection, their refinement of previous outputs still relies on fully sequential generation, even when only local edits are needed. In contrast, the masking mechanism in Mask Diffusion Models (MDMs) naturally supports explicit local edits on previous outputs, allowing selective refinement without discarding previous answers and generating another from scratch. While this property more closely aligns with how humans correct mistakes by iterative local refinement, existing MDMs do not support multi-turn masking and denoising. We propose Reflective Masking (RM), which elicits such an intrinsic reasoning capability in MDMs via lightweight post-training. RM provides a native test-time scaling, where an MDM iteratively revisits and revises its prior outputs based on evolving context. To exploit insights from previous turns like AR reasoning, we further introduce History Reference, a parameter-free mechanism that leverages intermediate denoising states during revision. Our approach requires no architectural changes and is easily applicable to existing MDMs. Across diverse tasks and modalities, including text generation, Sudoku, and image editing, Reflective Masking consistently outperforms standard masking-based baselines and demonstrates strong generality, positioning RM as a fundamental primitive for reasoning on MDMs.",
+    "authors": [
+      "Yanming Zhang",
+      "Yihan Bian",
+      "Jingyuan Qi",
+      "Yuguang Yao",
+      "Lifu Huang",
+      "Tianyi Zhou"
+    ],
+    "likes": 9,
+    "published_date": "Jun 15",
+    "url": "https://huggingface.co/papers/2606.16700",
+    "date_collected": "2026-06-23T07:39:47.018132+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "다중 턴 반사 마스킹이 마스크 확산 모델에서 추론을 유발한다",
+      "abstract": "자기 회귀(AR) 모델에서의 추론은 주로 사고 체계 추론과 반성에 의해 수행되지만, 이전 출력물의 개선은 지역적 편집만 필요한 경우에도 완전히 순차적 생성에 의존한다. 반면, 마스크 확산 모델(MDMs)의 마스킹 메커니즘은 이전 출력물에 대한 명시적인 지역적 편집을 자연스럽게 지원하며, 이전 답변을 폐기하지 않고 다시 처음부터 생성하지 않고도 선택적 개선이 가능하다. 이러한 특성은 인간이 오류를 반복적인 지역적 개선을 통해 수정하는 방식과 더 가까워지며, 기존 MDMs는 다중 턴 마스킹과 노이즈 제거를 지원하지 않는다. 우리는 Reflective Masking (RM)을 제안하는데, 이는 경량의 사후 훈련을 통해 MDMs에서 이러한 본질적인 추론 능력을 유도한다. RM은 원래의 테스트 시간 스케일링을 제공하여 MDM이 진화하는 맥락에 기반하여 반복적으로 이전 출력물을 검토 및 수정한다. 우리는 AR 추론과 같은 이전 턴에서 얻은 통찰을 활용하기 위해 중간 노이즈 제거 상태를 활용하는 파라미터 무료 메커니즘인 History Reference를 소개한다. 우리의 방법론은 구조 변경이 필요하지 않으며 기존 MDMs에 쉽게 적용할 수 있다. 텍스트 생성, 숫자 퍼즐, 이미지 편집을 포함한 다양한 작업과 모달리티를 통해 Reflective Masking은 일관되게 표준 마스킹 기반 기준선을 능가하고 강한 일반성을 보여주며, MDMs에서 추론에 대한 기본적인 원시로서 RM을 위치시킨다."
+    },
+    "summary": "1. 마스크 확산 모델(MDMs)에서 반사 마스킹(RM)은 다중 턴 마스킹과 노이즈 제거를 지원하여 이전 출력물을 반복적으로 개선하고 올바르게 수정함.\n2. RM은 테스트 시간 스케일링을 통해 MDM이 진화하는 맥락에 따라 출력물을 검토하고 수정함.\n3. History Reference는 중간 노이즈 제거 상태를 활용하여 이전 턴의 통찰을 활용함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG",
+    "abstract": "Retrieval-augmented generation (RAG) systems must balance retrieval granularity with contextual coherence, a challenge that existing methods address through LLM-guided chunking, single-level context expansion, or hierarchical summarization. These approaches variously depend on costly LLM calls during indexing or retrieval, limit context aggregation to a single granularity level, or introduce information loss through summarization. We present SproutRAG, an attention-guided hierarchical RAG framework that addresses this trade-off by organizing sentence-level chunks into progressively larger but semantically coherent units, using learned inter-sentence attention to construct a binary chunking tree. Unlike prior approaches that rely on external LLMs, fixed context expansion, or lossy summarization, SproutRAG learns which attention heads and layers best capture semantic document structure, enabling multi-granularity retrieval without additional LLM calls or compressed summaries. At retrieval time, SproutRAG uses hierarchical beam search to retrieve candidates at multiple granularities, capturing multi-sentence relevance beyond flat retrieval. The framework is trained end-to-end with a joint objective that improves both embeddings and tree structure. Experiments across four benchmarks spanning scientific, legal, and open-domain settings demonstrate that SproutRAG improves information efficiency (IE) by 6.1% on average over the strongest baseline. Code is available on https://github.com/AmirAbaskohi/SproutRAG.",
+    "authors": [
+      "Amirhossein Abaskohi",
+      "Issam H. Laradji",
+      "Peter West",
+      "Giuseppe Carenini"
+    ],
+    "likes": 8,
+    "published_date": "Jun 16",
+    "url": "https://huggingface.co/papers/2606.18381",
+    "date_collected": "2026-06-23T07:39:47.020273+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "주의력 안내형 트리 검색과 점진적 임베딩을 활용한 장문 문서용 SproutRAG",
+      "abstract": "검색 증강 생성 (Retrieval-augmented generation, RAG) 시스템은 검색 정밀도와 문맥 일관성을 균형 있게 유지해야 하는데, 기존 방법들은 LLM(언어 모델 모듈) 안내의 청킹, 단일 수준 문맥 확장, 계층적 요약을 통해 이러한 과제에 대처한다. 우리는 이러한 Trade-off를 해결하기 위해 문장 수준 청크를 점진적으로 확장시키고 의미론적으로 일관된 단위로 구성하는 주의력 안내형 계층 RAG 프레임워크인 SproutRAG를 제안한다."
+    },
+    "summary": "1. SproutRAG는 문장 수준 청크를 점진적으로 확장시켜 의미론적으로 일관된 단위로 구성하며, 문맥 적합성을 향상시킨다.\n2. 외부 LLM에 의존하지 않고, 고정된 문맥 확장 없이 다중 수준 검색을 가능하게 하며, 연산 비용을 줄인다.\n3. SproutRAG는 학습된 주의력을 통해 문서 구조를 캡처하고 다중 문장 관련성을 잡아내어 정보 효율성을 향상시킨다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval",
+    "abstract": "Retrieval-augmented generation (RAG) systems depend critically on how documents are chunked and searched. Fine-grained chunks can improve retrieval precision but expand the search space, increasing latency and cost; larger chunks reduce the number of candidates but make dense similarity less reliable, as the representation for each chunk mixes multiple topics and introduces more semantic noise. This trade-off becomes especially limiting in deep research tasks, where retrieval must be both fast and precise across large, heterogeneous corpora. We introduce MCompassRAG, a metadata-guided retrieval framework that uses topic-level signals as a semantic compass for selecting relevant evidence. Instead of relying only on cosine similarity between queries and noisy chunk embeddings, MCompassRAG enriches chunk representations with topic metadata in the same embedding space and trains a lightweight retriever through LLM-teacher distillation. At inference time, MCompassRAG performs topic-aware retrieval without additional LLM calls, improving both efficiency and evidence quality. Across six complex retrieval benchmarks, MCompassRAG improves information efficiency (IE) by 8.24% on average with over 5 times lower latency than the strongest efficient RAG baselines. Code is available on https://github.com/AmirAbaskohi/MCompassRAG.",
+    "authors": [
+      "Amirhossein Abaskohi",
+      "Raymond Li",
+      "Gaetano Cimino",
+      "Peter West",
+      "Giuseppe Carenini",
+      "Issam H. Laradji"
+    ],
+    "likes": 8,
+    "published_date": "Jun 16",
+    "url": "https://huggingface.co/papers/2606.18508",
+    "date_collected": "2026-06-23T07:39:47.022526+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "MCompassRAG: 문단 수준 검색을 위한 주제 메타데이터로서의 의미적 나침반",
+      "abstract": "검색 보강 생성 (RAG) 시스템은 문서가 어떻게 조각화되고 검색되는지가 중요합니다. 미세한 청크는 검색 정밀도를 향상시킬 수 있지만 검색 공간을 확장하여 지연 시간과 비용을 증가시킵니다. 반면 더 큰 청크는 후보자 수를 줄이지만 각 청크의 표현이 여러 주제를 혼합하고 더 많은 의미적 잡음을 도입하기 때문에 밀도 기반 유사성이 덜 신뢰할 수 있습니다. 이러한 트레이드오프는 검색이 커다란 이질적 말뭉치 전반에 대해 신속하고 정확해야 하는 심층 연구 작업에서 특히 제한적입니다. MCompassRAG를 제안합니다. 이는 주제 수준 신호를 의미적 나침반으로 사용하여 관련 증거물을 선택하는 메타데이터 지원 검색 프레임워크입니다. 쿼리와 잡음이 있는 청크 임베딩 간의 코사인 유사성에만 의존하는 대신, MCompassRAG는 주제 메타데이터로 청크 표현을 풍부하게 하고 LLM-교사 가르침을 통해 가벼운 검색기를 교육합니다. 추론 시, MCompassRAG는 추가 LLM 호출 없이 주제 인식 검색을 수행하여 효율성과 증거 품질을 개선합니다. 6개 복잡한 검색 벤치마크에서 MCompassRAG는 강력한 효율적인 RAG 기준보다 평균 정보 효율성 (IE)을 8.24% 향상시키며 5배 이상 낮은 지연 시간을 달성합니다. 코드는 https://github.com/AmirAbaskohi/MCompassRAG 에서 사용 가능합니다."
+    },
+    "summary": "1. MCompassRAG는 주제 메타데이터를 활용하여 문단 수준 검색에서 신속하고 정확한 증거 선택을 개선하는 검색 프레임워크입니다.\n2. 기존 RAG 시스템의 한계를 극복하기 위해 청크 표현에 주제 메타데이터를 추가하고 LLM-teacher distillation을 통해 경량 검색기를 교육합니다.\n3. MCompassRAG는 효율성과 증거 품질을 향상시키며 가장 효율적인 RAG 기준보다 정보 효율성을 평균 8.24% 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "정보검색"
+    ]
+  },
+  {
+    "title": "BrainG3N: A Dual-Purpose Tokenizer for Controllable 3D Brain MRI Generation",
+    "abstract": "Three-dimensional (3D) brain MRI is central to clinical neurology and neuro-oncology, where generative models could augment under-represented cohorts, simulate disease trajectories, and support privacy-preserving data sharing. Latent diffusion has been the go-to solution for modeling imaging data, but it places two competing demands on the tokenizer: encoder embeddings must retain the clinical information that downstream tasks act on, and the decoder must reconstruct anatomically faithful volumes. Existing reconstruction-driven tokenizers achieve the second at the expense of the first. To address this, we introduce a fully volumetric masked-autoencoder (MAE) based tokenizer for 3D brain MRI latent diffusion, decoupling encoder and decoder: a frozen 3D MAE encoder produces clinically informative embeddings, while a dedicated CNN decoder reconstructs voxels from a linear projection of those embeddings. We pretrain the encoder on 35,309 volumes from 18 public cohorts spanning four modalities, ten disease categories, and 200+ acquisition sites, and demonstrate its dual utility in two settings. First, on a 23-task linear-probing benchmark, the encoder outperforms or matches SOTA models (i.e., BrainIAC, BrainSegFounder, and MedicalNet) on 21 of 23 tasks. Second, a conditional diffusion transformer (DiT) trained on these clinically informative embeddings supports both conditional generation across six variables and patient-specific longitudinal forecasting. Together these results establish a single 3D brain-MRI embedding space capable of both downstream clinical tasks and controllable generation.",
+    "authors": [
+      "Max Van Puyvelde",
+      "Ibrahim Gulluk",
+      "Wim Van Criekinge",
+      "Olivier Gevaert"
+    ],
+    "likes": 7,
+    "published_date": "Jun 17",
+    "url": "https://huggingface.co/papers/2606.19651",
+    "date_collected": "2026-06-23T07:39:47.024645+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "BrainG3N: 조절 가능한 3차원 뇌 MRI 생성을 위한 이중용도 토크나이저",
+      "abstract": "3차원 뇌 MRI는 임상 신경학과 신경종양학에 중요하며, 생성 모델은 소수 집단의 보완, 질병 경로 시뮬레이션, 개인정보 보호를 지원할 수 있습니다. 잠재 확산은 이미지 데이터 모델링에 대한 해결책으로 사용되어 왔지만, 인코더 임베딩은 임상 정보 유지와 해부학적으로 정확한 볼륨 재구성이라는 두 가지 요구에 부합해야 합니다. 기존 재구성 중심 토크나이저는 전자를 희생하고 있습니다. 우리는 이를 해결하기 위해, 3차원 뇌 MRI 잠재 확산을 위한 완전한 체적 마스크된 오토인코더(MAE) 기반 토크나이저를 소개합니다."
+    },
+    "summary": "1. 3차원 뇌 MRI 생성을 위한 효율적인 토크나이저인 BrainG3N 도입.\n2. 35,309개의 볼륨으로 인코더 사전 훈련하고, 임상 정보 유지와 볼륨 재구성을 위한 새로운 방법론 소개.\n3. 클리니컬 업무 및 조절 가능한 생성 모두 가능한 단일 3차원 뇌 MRI 임베딩 공간 입증.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents",
+    "abstract": "To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past interactions. Existing long-term memory benchmarks mainly evaluate language-centric retrieval and question answering, while embodied benchmarks often focus on short-horizon task execution without testing long-term memory use in dynamic environments. We introduce WorldLines, a project-driven benchmark for long-horizon embodied household assistance. It constructs temporally extended household traces with dialogues, actions, execution feedback, object and device state changes, and converts them into evidence-linked samples for Memory QA and Embodied Task Planning. We further propose ObsMem, an observer-grounded memory framework that maintains visibility-aware memories and action-native state trails for state-aware decisions. Experiments reveal persistent challenges in partial observability, overwritten world states, and translating long-term memory into embodied plans, while ObsMem offers a stronger reference architecture for this setting.",
+    "authors": [
+      "Yehang Zhang",
+      "Jianchong Su",
+      "Haojian Huang",
+      "Yifan Chang",
+      "Tianhao Zhou",
+      "Xinli Xu",
+      "Yingjie Xu",
+      "Yinchuan Li",
+      "Zexi Li",
+      "Ying-Cong Chen"
+    ],
+    "likes": 3,
+    "published_date": "Jun 17",
+    "url": "https://huggingface.co/papers/2606.18847",
+    "date_collected": "2026-06-23T07:39:47.027041+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "WorldLines: 벤치마킹과 장기 기억을 갖는 몸을 가진 에이전트 모델링",
+      "abstract": "실제 가정에서 사람을 장기간 도우려면, 몸을 가진 에이전트는 사용자의 루틴, 세계 상태, 과거 상호 작용을 기억해야 합니다. 기존의 장기 기억 벤치마크는 주로 언어 중심의 정보 검색과 질문에 대한 평가를 하지만, 몸을 가진 벤치마크는 주로 단기 과제 실행에 초점을 두고 있어 동적 환경에서의 장기 기억 사용을 검증하지 않습니다. 우리는 WorldLines를 소개합니다. 이는 장기간 가정 내 도우미를 위한 프로젝트 주도형 벤치마크로, 대화, 행동, 실행 피드백, 물품 및 장치 상태 변경을 가진 시간적으로 확장된 가정 흔적을 생성하고, 이를 증거에 연결된 샘플로 변환하여 기억 기반 질의응답과 몸을 가진 과제 계획을 수행합니다. 더불어, 우리는 ObsMem을 제안합니다. 이는 가시성을 고려하는 기억 형태와 상태 인식 결정을 위한 액션 기반 상태 트레일을 유지하는 관찰자 기반 기억 프레임워크입니다. 실험 결과는 부분 관측가능성, 덮어씌워진 세계 상태, 장기 기억을 몸이 있는 계획으로 변환하는 것에 대한 지속적인 도전 과제를 보여주었으며, ObsMem은 이러한 환경에 더 강력한 참조 아키텍처를 제공합니다."
+    },
+    "summary": "1. 실제 가정에서 사용되는 몸을 가진 에이전트는 사용자의 루틴, 세계 상태 및 과거 상호작용을 기억해야 합니다.\n2. WorldLines는 장기간 가정 내 도우미를 위한 벤치마크로, 시간적으로 확장된 가정 흔적을 생성하여 기억 기반 질의응답과 과제 계획을 평가합니다.\n3. ObsMem은 관찰자 기반 기억 프레임워크로, 상태 인식 결정을 위해 가시성을 고려하는 액션 기반 상태 트레일을 제공합니다.",
+    "categories": [
+      "Multimodal",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning",
+    "abstract": "Generalist vision-language-action systems need object-centric 3D evidence and reusable manipulation experience to plan reliable robot trajectories. GeneralVLA provides a hierarchical interface for converting language and RGB-D observations into 3D end-effector paths, but two bottlenecks remain. First, monocular SAM3D-style object reconstruction can hallucinate pose and unseen geometry, while manipulation benefits from stable object shape when calibrated multi-view observations are available. Second, the original KnowledgeBank mainly retrieves semantically similar snippets and appends new knowledge, which makes it difficult to control memory quality, conflicts, confidence, and geometric relevance. To address the first challenge, we introduce GeoFuse-MV3D, a geometry-prior-guided MV-SAM3D reconstruction branch that verifies external geometry cues with input-view masks, applies soft visual-hull support, performs axis-wise refinement, and fuses only geometry while preserving appearance. To address the second challenge, we upgrade KnowledgeBank into a governed long-term memory system with explicit quality, confidence, lifecycle, verifier, and conflict metadata, together with precision-oriented retrieval. Finally, we evaluate the reconstruction branch on GSO-30 and the memory module on Terminal-Bench 2.0 and SWE-Bench Verified; GeoFuse-MV3D improves over the MV-SAM3D baseline by reducing CD and LPIPS by 2.20% and 2.02% while increasing PSNR and SSIM by 2.36% and 1.03%, and KnowledgeBank improves over ReasoningBank by 4.53% on Terminal-Bench SR and 3.73% on SWE-Bench resolve rate, while reducing AS by 4.95% and 5.65%, respectively. Code: https://github.com/AIGeeksGroup/GeneralVLA-2. Website: https://aigeeksgroup.github.io/GeneralVLA-2.",
+    "authors": [
+      "Haoyu Wang",
+      "Guoqing Ma",
+      "Zeyu Zhang",
+      "Yandong Guo",
+      "Boxin Shi",
+      "Hao Tang"
+    ],
+    "likes": 3,
+    "published_date": "Jun 16",
+    "url": "https://huggingface.co/papers/2606.17480",
+    "date_collected": "2026-06-23T07:39:47.029247+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "일반적인 VLA-2: 기하학적인 재구성과 제어된 메모리를 위한 로봇 계획",
+      "abstract": "일반적인 비전-언어-행동 시스템은 신뢰할 수 있는 로봇 궤도를 계획하기 위해 객체 중심의 3D 증거와 재사용 가능한 조작 경험이 필요합니다. GeneralVLA는 언어와 RGB-D 관측을 3D 엔드-이펙터 경로로 변환하기 위한 계층적 인터페이스를 제공하지만 두 가지 병목 현상이 남아 있습니다. 첫째, 단안 SAM3D 스타일의 객체 재구성은 자세와 보이지 않는 기하학을 가상으로 형성할 수 있으며, 조작은 보정된 다중 뷰 관측이 있는 경우 안정적인 객체 모양에서 혜택을 받습니다. 둘째로, 원래의 KnowledgeBank는 주로 의미적으로 유사한 단편을 검색하고 새로운 지식을 추가하여 기존의 지식 품질, 충돌, 확신 및 기하학적 관련성을 제어하기 어렵게 만듭니다. 이 두 가지 도전에 대처하기 위해 우리는 GeoFuse-MV3D를 소개합니다."
+    },
+    "summary": "1. GeoFuse-MV3D는 기하학 우선 안내 MV-SAM3D 재구성 분기를 소개하여 외부 기하학 단서를 입력 뷰 마스크와 확인하고, 소프트 비주얼 헐 지원을 적용하고, 축별 세밀화를 수행하며, 외관을 보존하면서 기하학만 퓨즈합니다.\n2. KnowledgeBank는 표현 겸과된 장기 기억 시스템으로 업그레이드되었으며 명시적인 품질, 확신, 수명주기, 확인자 및 충돌 메타데이터를 갖추고 정밀 지향 검색을 수행합니다.\n3. GeoFuse-MV3D는 GSO-30에서 MV-SAM3D 기준에 비해 CD와 LPIPS를 각각 2.20%와 2.02% 줄이고, PSNR과 SSIM은 각각 2.36%와 1.03% 증가시키며, KnowledgeBank는 Terminal-Bench SR에서 ReasoningBank보다 4.53%, SWE-Bench에서 3.73%의 해결율 향상을 보여주면서 AS를 각각 4.95%와 5.65% 줄였습니다.",
+    "categories": [
+      "Robotics",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SpatialAvatar-0: High-Quality 4D Head Avatar with Multi-Stage Reconstruction",
+    "abstract": "High-quality 4D head avatars from one or a few source portraits are central to telepresence, AR/VR, and digital-human interaction. 3D Gaussian Splatting (3DGS) has emerged as the dominant representation, with two complementary regimes (generalizable feed-forward predictors and per-subject refiners) maturing in parallel. However, existing feed-forward predictors are trained on a single dataset family with a hard-coded source count, inheriting the corresponding domain bias. Per-subject refiners require 300K--600K iterations and rely on adaptive densification that destroys upstream Gaussian layouts, preventing the two regimes from sharing a representation end-to-end. To bridge both regimes we propose SpatialAvatar-0 on a shared FLAME-mesh-bound Gaussian representation: a feed-forward generator with a parameter-free K-source mean-pool and a monocular-temporal to multi-view-spatial two-phase schedule that anchors against identity-prior collapse onto the smaller multi-view set. We further introduce a 10K-iter layout-preserving per-subject refinement loop that freezes the FLAME-binding and Gaussian count and replaces densification with a three-component anti-spike regularization. On VFHQ/HDTF cross-domain zero-shot we surpass the in-domain leader GAGAvatar by +1.5 dB PSNR despite never training on either test domain, and on the SplattingAvatar monocular benchmark we lead every reported metric, surpassing the 300K-iter GeoAvatar by +1.3 dB PSNR at up to 60x shorter per-subject schedule than common SOTA baselines. Website: https://spatialwalk.github.io/SpatialAvatar-0.",
+    "authors": [
+      "Yiran Wang",
+      "Zeyu Zhang",
+      "Yuanming Li",
+      "Ziming Wang",
+      "Yang Zhao"
+    ],
+    "likes": 3,
+    "published_date": "Jun 14",
+    "url": "https://huggingface.co/papers/2606.15659",
+    "date_collected": "2026-06-23T07:39:47.031368+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "공간 아바타-0: 고품질 4D 머리 아바타와 다단계 재구성",
+      "abstract": "하나 또는 몇 개의 원본 초상화로부터 고품질 4D 머리 아바타는 원격 참여, 확장현실(AR)/가상현실(VR) 및 디지털 인간 상호작용에 중요합니다. 3차원 가우스 스플래팅(3DGS)이 주요 표현 방식으로 등장했으며 일반화 가능한 피드포워드 예측기와 특정 주체에 대한 정제기 모두 성숙해졌습니다. 그러나 기존의 피드포워드 예측기는 특정 데이터셋 계열에 훈련되어 하드 코딩된 소스 개수를 상속하여 해당 도메인 편향을 갖습니다."
+    },
+    "summary": "1. 피드포워드 예측기와 특정 주체 정제기 사이의 표현 공유를 위해 SpatialAvatar-0를 제안합니다.\n2. FLAME-메쉬-바운드 가우스 표현을 사용하여 공유 제너레이터를 구축했고, 파라미터가 없는 K-소스 평균 풀 및 다단계 스케줄링을 도입했습니다.\n3. VFHQ/HDTF 교차 도메인 제로샷에서 뛰어난 성과를 달성하고 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  }
+]

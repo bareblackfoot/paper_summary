@@ -1,0 +1,127 @@
+=== Paper Collection Started at Mon Dec 15 01:37:16 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W51
+URL: https://huggingface.co/papers/week/2025-W51
+Found 10 papers in weekly view
+Fetching likes for: Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
+Fetching likes for: T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground
+Fetching likes for: Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform
+Fetching likes for: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Fetching likes for: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Fetching likes for: StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation
+Fetching likes for: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Fetching likes for: Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality
+Fetching likes for: OmniPSD: Layered PSD Generation with Diffusion Transformer
+Fetching likes for: OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory
+Selected top 10 papers by likes:
+1. Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance (121 likes)
+2. T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground (75 likes)
+3. Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform (73 likes)
+4. Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning (71 likes)
+5. TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows (68 likes)
+6. StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation (66 likes)
+7. Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs (55 likes)
+8. Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality (46 likes)
+9. OmniPSD: Layered PSD Generation with Diffusion Transformer (43 likes)
+10. OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory (43 likes)
+Found abstract: We present Wan-Move, a simple and scalable framework that brings motion control to video generative ...
+Processed paper: Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
+Found abstract: We introduce T-pro 2.0, an open-weight Russian LLM for hybrid reasoning and efficient inference. The...
+Processed paper: T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground
+Found abstract: Neural rendering, particularly 3D Gaussian Splatting (3DGS), has evolved rapidly and become a key co...
+Processed paper: Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform
+Found abstract: We introduce Native Parallel Reasoner (NPR), a teacher-free framework that enables Large Language Mo...
+Processed paper: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Found abstract: Recent advances in large multi-modal generative models have demonstrated impressive capabilities in ...
+Processed paper: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Found abstract: The growing adoption of XR devices has fueled strong demand for high-quality stereo video, yet its p...
+Processed paper: StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation
+Found abstract: Rotary Position Embeddings (RoPE) have become a standard for encoding sequence order in Large Langua...
+Processed paper: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Found abstract: Video face swapping is crucial in film and entertainment production, where achieving high fidelity a...
+Processed paper: Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality
+Found abstract: Recent advances in diffusion models have greatly improved image generation and editing, yet generati...
+Processed paper: OmniPSD: Layered PSD Generation with Diffusion Transformer
+Found abstract: Storytelling in real-world videos often unfolds through multiple shots -- discontinuous yet semantic...
+Processed paper: OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
+Paper already exists, checking if translation is complete...
+Update likes: 121  ->  121
+Update date_collected: 2025-12-15T10:37:25.837982+09:00  ->  2025-12-15T07:07:50.366169+09:00
+
+Processing paper 2/10
+Title: T-pro 2.0: An Efficient Russian Hybrid-Reasoning Model and Playground
+Paper already exists, checking if translation is complete...
+Update likes: 75  ->  74
+Update date_collected: 2025-12-15T10:37:25.839494+09:00  ->  2025-12-15T07:07:50.367644+09:00
+
+Processing paper 3/10
+Title: Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  73
+Update date_collected: 2025-12-15T10:37:25.841420+09:00  ->  2025-12-15T07:07:50.369328+09:00
+
+Processing paper 4/10
+Title: Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  71
+Update date_collected: 2025-12-15T10:37:25.842729+09:00  ->  2025-12-15T07:07:50.370515+09:00
+
+Processing paper 5/10
+Title: TwinFlow: Realizing One-step Generation on Large Models with Self-adversarial Flows
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  68
+Update date_collected: 2025-12-15T10:37:25.843837+09:00  ->  2025-12-15T07:07:50.371515+09:00
+
+Processing paper 6/10
+Title: StereoWorld: Geometry-Aware Monocular-to-Stereo Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  66
+Update date_collected: 2025-12-15T10:37:25.845199+09:00  ->  2025-12-15T07:07:50.372729+09:00
+
+Processing paper 7/10
+Title: Beyond Real: Imaginary Extension of Rotary Position Embeddings for Long-Context LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 55  ->  55
+Update date_collected: 2025-12-15T10:37:25.846475+09:00  ->  2025-12-15T07:07:50.373882+09:00
+
+Processing paper 8/10
+Title: Preserving Source Video Realism: High-Fidelity Face Swapping for Cinematic Quality
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  46
+Update date_collected: 2025-12-15T10:37:25.847887+09:00  ->  2025-12-15T07:07:50.375081+09:00
+
+Processing paper 9/10
+Title: OmniPSD: Layered PSD Generation with Diffusion Transformer
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory
+Paper already exists, checking if translation is complete...
+Update likes: 43  ->  43
+Update date_collected: 2025-12-15T10:37:25.850507+09:00  ->  2025-12-15T07:07:50.376477+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W51.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 원-무브: 잠재 경로 안내를 통한 움직임 제어형 비디오 생성
+Updating paper: T-pro 2.0: 효율적인 러시아어 하이브리드 추론 모델 및 플레이그라운드 (likes: 74 -> 75)
+Paper already exists with same likes count: 미래지향적: 웹GPU 기술을 기반으로 한 가우시안 스플래팅 플랫폼에 구축된 세계 모델 플랫폼
+Paper already exists with same likes count: 본능적 병렬 추론자: 자가 증류 강화 학습을 통한 병렬 추론 (Native Parallel Reasoner: Reasoning in Parallelism via Self-Distilled Reinforcement Learning)
+Paper already exists with same likes count: TwinFlow: 자가 적대적 플로우를 활용한 대규모 모델에서의 일단계 생성 실현
+Paper already exists with same likes count: 스테레오월드: 지오메트리 인식 단안-스테레오 비디오 생성
+Paper already exists with same likes count: 실제를 넘어선다: 장문맥 대언어모델을 위한 회전 위치 임베딩의 허구 확장
+Paper already exists with same likes count: 소스 비디오 현실감 보존: 시네마틱 퀄리티를 위한 고품질 얼굴 스왑
+Creating new paper: OmniPSD: Layered PSD Generation with Diffusion Transformer
+Paper already exists with same likes count: 일문일답식 메모리를 이용한 일관된 다중 샷 비디오 생성
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Dec 15 01:37:59 UTC 2025 ===
+

@@ -1,0 +1,286 @@
+[
+  {
+    "title": "A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges\n  in Russian Speech Generative Models",
+    "abstract": "Russian speech synthesis presents distinctive challenges, including vowel\nreduction, consonant devoicing, variable stress patterns, homograph ambiguity,\nand unnatural intonation. This paper introduces Balalaika, a novel dataset\ncomprising more than 2,000 hours of studio-quality Russian speech with\ncomprehensive textual annotations, including punctuation and stress markings.\nExperimental results show that models trained on Balalaika significantly\noutperform those trained on existing datasets in both speech synthesis and\nenhancement tasks. We detail the dataset construction pipeline, annotation\nmethodology, and results of comparative evaluations.",
+    "authors": [
+      "Kirill Borodin",
+      "Nikita Vasiliev",
+      "Vasiliy Kudryavtsev",
+      "Maxim Maslov",
+      "Mikhail Gorodnichev",
+      "Oleg Rogov",
+      "Grach Mkrtchian"
+    ],
+    "likes": 41,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2507.13563",
+    "date_collected": "2025-07-22T07:08:23.251396+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "러시아어 발화 생성 모델의 음운론적 및 어굴적 과제 해결을 위한 데이터 중심 프레임워크",
+      "abstract": "러시아어 음성 합성은 모음 축약, 자음 무성화, 가변적인 강세 패턴, 동형어 모호성, 비자연스러운 억양 등 독특한 과제를 안고 있습니다. 본 논문은 Balalaika라는 새로운 데이터셋을 소개하는데, 이는 2,000시간 이상의 스튜디오급 러시아어 음성을 포함하며 구두 및 강세 표시를 포함한 포괄적인 텍스트 주석이 제공됩니다. 실험 결과는 Balalaika로 훈련된 모델이 음성 합성 및 향상 작업 모두에서 기존 데이터셋으로 훈련된 모델을 크게 능가한다는 것을 보여줍니다. 데이터셋 구축 파이프라인, 주석 방법론, 비교 평가 결과를 자세히 설명합니다."
+    },
+    "summary": "1. Balalaika는 2,000시간 이상의 러시아어 음성을 갖추고, 텍스트 주석에 구두 및 강세 표시를 포함한 데이터셋으로, 음성 합성 및 향상 작업에서 우수한 성과를 보여줌.\n2. Balalaika로 훈련된 모델은 기존 데이터셋으로 훈련된 모델보다 효율적이며, 음성 생성 작업에서 우수한 성능을 발휘.\n3. 연구는 데이터셋 구축 파이프라인, 주석 방법론, 비교 평가 결과 등을 자세히 다룸.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Devil behind the mask: An emergent safety vulnerability of Diffusion\n  LLMs",
+    "abstract": "Diffusion-based large language models (dLLMs) have recently emerged as a\npowerful alternative to autoregressive LLMs, offering faster inference and\ngreater interactivity via parallel decoding and bidirectional modeling.\nHowever, despite strong performance in code generation and text infilling, we\nidentify a fundamental safety concern: existing alignment mechanisms fail to\nsafeguard dLLMs against context-aware, masked-input adversarial prompts,\nexposing novel vulnerabilities. To this end, we present DIJA, the first\nsystematic study and jailbreak attack framework that exploits unique safety\nweaknesses of dLLMs. Specifically, our proposed DIJA constructs adversarial\ninterleaved mask-text prompts that exploit the text generation mechanisms of\ndLLMs, i.e., bidirectional modeling and parallel decoding. Bidirectional\nmodeling drives the model to produce contextually consistent outputs for masked\nspans, even when harmful, while parallel decoding limits model dynamic\nfiltering and rejection sampling of unsafe content. This causes standard\nalignment mechanisms to fail, enabling harmful completions in alignment-tuned\ndLLMs, even when harmful behaviors or unsafe instructions are directly exposed\nin the prompt. Through comprehensive experiments, we demonstrate that DIJA\nsignificantly outperforms existing jailbreak methods, exposing a previously\noverlooked threat surface in dLLM architectures. Notably, our method achieves\nup to 100% keyword-based ASR on Dream-Instruct, surpassing the strongest prior\nbaseline, ReNeLLM, by up to 78.5% in evaluator-based ASR on JailbreakBench and\nby 37.7 points in StrongREJECT score, while requiring no rewriting or hiding of\nharmful content in the jailbreak prompt. Our findings underscore the urgent\nneed for rethinking safety alignment in this emerging class of language models.\nCode is available at https://github.com/ZichenWen1/DIJA.",
+    "authors": [
+      "Zichen Wen",
+      "Jiashu Qu",
+      "Dongrui Liu",
+      "Zhiyuan Liu",
+      "Ruixi Wu",
+      "Yicun Yang",
+      "Xiangqi Jin",
+      "Haoyun Xu",
+      "Xuyang Liu",
+      "Weijia Li",
+      "Chaochao Lu",
+      "Jing Shao",
+      "Conghui He",
+      "Linfeng Zhang"
+    ],
+    "likes": 39,
+    "published_date": "Jul 15",
+    "url": "https://huggingface.co/papers/2507.11097",
+    "date_collected": "2025-07-22T07:08:23.253005+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "가림막 뒤의 악마: Diffusion LLMs의 신생 안전 취약성",
+      "abstract": "확산 기반 대형 언어 모델(dLLMs)은 최근 방향성 자기 회귀 LLM에 대한 강력한 대안으로 나타났으며, 병렬 디코딩과 양방향 모델링을 통해 더 빠른 추론과 상호작용성을 제공합니다. 그러나 코드 생성과 텍스트 채움에서 강력한 성능을 보이더라도, 기존의 정렬 메커니즘이 dLLMs를 context-aware한 가려진 입력 적대적 프롬프트에 대해 안전하게 보호하지 못한다는 근본적인 안전 문제를 확인했습니다. 이에 DIJA를 제시하여, dLLMs의 고유한 안전 약점을 이용하는 첫 번째 체계적인 연구 및 탈옥 공격 프레임워크를 제시합니다. 구체적으로, 우리가 제안하는 DIJA는 dLLMs의 텍스트 생성 기구를 악용하는 적대적 교차 혼합 가림막-텍스트 프롬프트를 구축합니다. 양방향 모델링은 가려진 영역에 대해 문맥상 일관된 출력을 생성하도록 모델을 이끕니다. 이는 안전하지 않은 내용의 동적 필터링 및 거부 샘플링을 제한하는 병렬 디코딩으로 표준 정렬 메커니즘의 실패를 유발합니다. 이는 유해한 완성물이 정렬 조정된 dLLMs에서 발생할 수 있도록 하는데, 유해한 행동 또는 안전하지 않은 명령이 직접 노출되는 경우라도 그렇습니다. 포괄적인 실험을 통해, DIJA가 기존의 탈옥 방법을 현저히 능가하여 dLLM 구조에서 이전에 간과된 위협 표면을 드러냅니다. 특히, 저희 방법은 Dream-Instruct에서 100%의 키워드 기반 ASR을 달성하여, JailbreakBench의 평가자 기반 ASR에서 최강의 이전 기준인 ReNeLLM을 최대 78.5% 능가하며, StrongREJECT 점수에서 37.7포인트로 우세한 결과를 거뒀습니다. 이는 유해한 콘텐츠의 재작성이나 숨김을 요구하지 않고도 이런 장벽 프롬프트에서 가능합니다. 우리의 연구 결과는 이 신생 언어 모델 분야에서의 안전 정렬에 대한 긴급한 재고요구를 강조합니다. 코드는 https://github.com/ZichenWen1/DIJA에서 확인할 수 있습니다."
+    },
+    "summary": "1. dLLM에서 존재하는 새로운 취약점을 드러내는 DIJA 시스템 소개\n2. DIJA는 dLLMs의 고유한 안전 약점을 이용한 임의 프롬프트 공격 방법 제시\n3. DIJA는 기존 방법보다 더 강력한 성능을 보이며, dLLMs의 안전 문제를 재고하고 해결",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Franca: Nested Matryoshka Clustering for Scalable Visual Representation\n  Learning",
+    "abstract": "We present Franca (pronounced Fran-ka): free one; the first fully open-source\n(data, code, weights) vision foundation model that matches and in many cases\nsurpasses the performance of state-of-the-art proprietary models, e.g., DINOv2,\nCLIP, SigLIPv2, etc. Our approach is grounded in a transparent training\npipeline inspired by Web-SSL and uses publicly available data: ImageNet-21K and\na subset of ReLAION-2B. Beyond model release, we tackle critical limitations in\nSSL clustering methods. While modern models rely on assigning image features to\nlarge codebooks via clustering algorithms like Sinkhorn-Knopp, they fail to\naccount for the inherent ambiguity in clustering semantics. To address this, we\nintroduce a parameter-efficient, multi-head clustering projector based on\nnested Matryoshka representations. This design progressively refines features\ninto increasingly fine-grained clusters without increasing the model size,\nenabling both performance and memory efficiency. Additionally, we propose a\nnovel positional disentanglement strategy that explicitly removes positional\nbiases from dense representations, thereby improving the encoding of semantic\ncontent. This leads to consistent gains on several downstream benchmarks,\ndemonstrating the utility of cleaner feature spaces. Our contributions\nestablish a new standard for transparent, high-performance vision models and\nopen a path toward more reproducible and generalizable foundation models for\nthe broader AI community. The code and model checkpoints are available at\nhttps://github.com/valeoai/Franca.",
+    "authors": [
+      "Shashanka Venkataramanan",
+      "Valentinos Pariza",
+      "Mohammadreza Salehi",
+      "Lukas Knobel",
+      "Spyros Gidaris",
+      "Elias Ramzi",
+      "Andrei Bursuc",
+      "Yuki M. Asano"
+    ],
+    "likes": 14,
+    "published_date": "Jul 18",
+    "url": "https://huggingface.co/papers/2507.14137",
+    "date_collected": "2025-07-22T07:08:23.254262+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "Franca: 확장 가능한 시각적 표현 학습을 위한 중첩된 마트료시카 클러스터링",
+      "abstract": "Franca (프랑카라 발음함): 자유로운(무료) 일(free one); DINOv2, CLIP, SigLIPv2 등의 최신 전용 모델과 성능 면에서 부합하거나 우수한 첫 번째 완전 오픈 소스 비전 기반 모델을 제시합니다. 우리의 접근 방식은 Web-SSL에서 영감을 받은 투명한 훈련 파이프라인에 기반하며, ImageNet-21K 및 ReLAION-2B의 일부를 활용한 공개 데이터를 사용합니다. 당장의 모델들이 이미지 특성을 Sinkhorn-Knopp와 같은 클러스터링 알고리즘을 통해 대규모 코드북에 할당하는 데 의존한다면, 우리는 클러스터링 의미론의 내재적인 모호함을 고려하지 않아 실패한다는 주요한 한계에 대응합니다. 이를 해결하기 위해 증가하는 세부 클러스터로 특성을 점진적으로 정제하는 파라미터 효율적인 다중 헤드 클러스터링 프로젝터를 소개합니다. 또한 더 나아가 밀집(Dense) 표현에서 위치 편향을 명시적으로 제거하는 혁신적인 위치적 역편 구속 전략을 제안하여 의미 주석의 인코딩을 향상시킵니다."
+    },
+    "summary": "1. Franca는 최신 전용 모델들을 능가하며 투명하고 성능이 뛰어난 비전 모델로, 클러스터링 의미론의 모호성 문제를 해결하기 위해 중첩된 Matryoshka 표현을 기반으로 하는 다중 헤드 클러스터링 프로젝터를 도입했다.\n2. 새로운 위치적 역편 구속 전략을 이용하여 밀집 표현에서의 위치 편향을 제거하여 의미 주석의 인코딩을 개선했고, 이는 다양한 하류 벤치마크에서 일관된 성과 향상을 이끌었다.\n3. Franca는 투명하고 고성능 비전 모델의 새로운 기준을 제시하여 보다 재현 가능하고 일반화 가능한 기반 모델의 길을 열어준다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal\n  Large Language Models",
+    "abstract": "This paper focuses on monolithic Multimodal Large Language Models (MLLMs),\nwhich integrate visual encoding and language decoding into a single model.\nExisting structures and pre-training strategies for monolithic MLLMs often\nsuffer from unstable optimization and catastrophic forgetting. To address these\nchallenges, our key idea is to embed a new visual parameter space into a\npre-trained LLM, enabling stable learning of visual knowledge from noisy data\nvia delta tuning. Based on this principle, we first introduce Mono-InternVL, an\nadvanced monolithic MLLM that incorporates a set of visual experts through a\nmultimodal mixture-of-experts architecture. In addition, we design an\ninnovative Endogenous Visual Pre-training (EViP) for Mono-InternVL to maximize\nits visual capabilities via progressive learning. Mono-InternVL achieves\ncompetitive performance against existing MLLMs but also leads to relatively\nexpensive data cost. Therefore, we further present Mono-InternVL-1.5, a cheaper\nand stronger monolithic MLLM equipped with an improved EViP (EViP++). EViP++\nintroduces additional visual attention experts to Mono-InternVL-1.5 and\nre-organizes the pre-training process in an efficient manner. During inference,\nit includes a fused CUDA kernel to speed up its MoE operations. With these\ndesigns, Mono-InternVL-1.5 significantly reduces training and inference costs,\nwhile still maintaining competitive performance with Mono-InternVL. To evaluate\nour approach, we conduct extensive experiments across 15 benchmarks. Results\ndemonstrate that Mono-InternVL outperforms existing monolithic MLLMs on 12 out\nof 15 benchmarks, e.g., +114-point improvement over Emu3 on OCRBench. Compared\nto its modular counterpart, i.e., InternVL-1.5, Mono-InternVL-1.5 achieves\nsimilar multimodal performance while reducing first-token latency by up to 69%.\nCode and models are released at https://github.com/OpenGVLab/Mono-InternVL.",
+    "authors": [
+      "Gen Luo",
+      "Wenhan Dou",
+      "Wenhao Li",
+      "Zhaokai Wang",
+      "Xue Yang",
+      "Changyao Tian",
+      "Hao Li",
+      "Weiyun Wang",
+      "Wenhai Wang",
+      "Xizhou Zhu",
+      "Yu Qiao",
+      "Jifeng Dai"
+    ],
+    "likes": 9,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2507.12566",
+    "date_collected": "2025-07-22T07:08:23.255705+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "Mono-InternVL-1.5: 더 저렴하고 빠른 모놀리식 다중모달 대형 언어 모델을 향하여",
+      "abstract": "본 논문은 시각 부호화와 언어 디코딩을 하나의 모델로 통합하는 모놀리식 다중모달 대형 언어 모델(Monomothic Multimodal Large Language Models, MLLMs)에 초점을 맞춥니다. 기존의 모놀리식 MLLMs에 대한 구조와 사전 훈련 전략은 종종 불안정한 최적화와 재앙적인 잊혀짐에 시달립니다. 이러한 도전에 대처하기 위해 우리의 주요 아이디어는 새로운 시각적 매개 변수 공간을 사전 훈련된 대형 언어 모델(LLM)에 포함시켜 노이즈 데이터로부터 시각적 지식을 안정적으로 학습할 수 있도록 하는 것입니다. 이 원칙에 따라, 먼저 시각 전문가들의 집합을 다중모달 전문가 혼합 구조를 통합하는 Monolithic MLLM인 Mono-InternVL을 소개합니다. 게다가 Mono-InternVL을 위한 혁신적인 내생적 시각 사전 훈련(EViP)을 설계하여 EViP++ 향상된 Mono-InternVL을 제안합니다."
+    },
+    "summary": "1. Mono-InternVL은 시각적 전문가들을 포함하는 혁신적인 다중모달 MLLM으로, 안정적인 시각적 지식 학습을 가능케 합니다.\n2. EViP++를 도입한 Mono-InternVL-1.5는 저렴하고 강력한 모놀리식 MLLM으로, 효율적인 사전 훈련 과정을 통해 학습 및 추론 비용을 크게 줄입니다.\n3. Mono-InternVL-1.5은 높은 성능을 유지하면서도 학습 및 추론 비용을 현저히 낮추었으며, 모듈화된 InternVL-1.5와 비교하여 다중모달 성능을 유지하면서 첫 번째 토큰 대기 시간을 최대 69%로 줄였습니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "CSD-VAR: Content-Style Decomposition in Visual Autoregressive Models",
+    "abstract": "Disentangling content and style from a single image, known as content-style\ndecomposition (CSD), enables recontextualization of extracted content and\nstylization of extracted styles, offering greater creative flexibility in\nvisual synthesis. While recent personalization methods have explored the\ndecomposition of explicit content style, they remain tailored for diffusion\nmodels. Meanwhile, Visual Autoregressive Modeling (VAR) has emerged as a\npromising alternative with a next-scale prediction paradigm, achieving\nperformance comparable to that of diffusion models. In this paper, we explore\nVAR as a generative framework for CSD, leveraging its scale-wise generation\nprocess for improved disentanglement. To this end, we propose CSD-VAR, a novel\nmethod that introduces three key innovations: (1) a scale-aware alternating\noptimization strategy that aligns content and style representation with their\nrespective scales to enhance separation, (2) an SVD-based rectification method\nto mitigate content leakage into style representations, and (3) an Augmented\nKey-Value (K-V) memory enhancing content identity preservation. To benchmark\nthis task, we introduce CSD-100, a dataset specifically designed for\ncontent-style decomposition, featuring diverse subjects rendered in various\nartistic styles. Experiments demonstrate that CSD-VAR outperforms prior\napproaches, achieving superior content preservation and stylization fidelity.",
+    "authors": [
+      "Quang-Binh Nguyen",
+      "Minh Luu",
+      "Quang Nguyen",
+      "Anh Tran",
+      "Khoi Nguyen"
+    ],
+    "likes": 7,
+    "published_date": "Jul 18",
+    "url": "https://huggingface.co/papers/2507.13984",
+    "date_collected": "2025-07-22T07:08:23.256819+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "CSD-VAR: 비주얼 자기회귀 모델에서 콘텐츠-스타일 분해",
+      "abstract": "단일 이미지에서 콘텐츠와 스타일을 분리하는 콘텐츠-스타일 분해(CSD)는 추출된 콘텐츠의 재맥락화와 스타일의 스타일화를 가능케 하여 시각적 종합물 생성에서 큰 창의적 융통성을 제공합니다. 이 연구에서는 CSD-VAR이라는 새로운 방법을 소개합니다. 이 방법은 VAR을 콘텐츠-스타일 분해를 위한 생성적 프레임워크로 탐구하며, scale-wise 생성 과정을 활용하여 분리를 향상시킵니다."
+    },
+    "summary": "1. Visual Autoregressive Modeling (VAR)은 scale-wise 생성 프로세스를 활용하여 콘텐츠와 스타일을 보다 잘 분리하며, CSD-VAR은 이를 위한 새로운 방법론으로 적용됩니다.\n2. CSD-VAR은 콘텐츠와 스타일 표현을 각각의 scale에 맞게 조정하여 분리 향상을 위한 scale-aware 교대 최적화 전략을 제안합니다.\n3. CSD-VAR은 기존 방법을 능가하여 콘텐츠 보존 및 스타일화의 충실도를 향상시키는 것을 실험적으로 입증합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Inverse Reinforcement Learning Meets Large Language Model Post-Training:\n  Basics, Advances, and Opportunities",
+    "abstract": "In the era of Large Language Models (LLMs), alignment has emerged as a\nfundamental yet challenging problem in the pursuit of more reliable,\ncontrollable, and capable machine intelligence. The recent success of reasoning\nmodels and conversational AI systems has underscored the critical role of\nreinforcement learning (RL) in enhancing these systems, driving increased\nresearch interest at the intersection of RL and LLM alignment. This paper\nprovides a comprehensive review of recent advances in LLM alignment through the\nlens of inverse reinforcement learning (IRL), emphasizing the distinctions\nbetween RL techniques employed in LLM alignment and those in conventional RL\ntasks. In particular, we highlight the necessity of constructing neural reward\nmodels from human data and discuss the formal and practical implications of\nthis paradigm shift. We begin by introducing fundamental concepts in RL to\nprovide a foundation for readers unfamiliar with the field. We then examine\nrecent advances in this research agenda, discussing key challenges and\nopportunities in conducting IRL for LLM alignment. Beyond methodological\nconsiderations, we explore practical aspects, including datasets, benchmarks,\nevaluation metrics, infrastructure, and computationally efficient training and\ninference techniques. Finally, we draw insights from the literature on\nsparse-reward RL to identify open questions and potential research directions.\nBy synthesizing findings from diverse studies, we aim to provide a structured\nand critical overview of the field, highlight unresolved challenges, and\noutline promising future directions for improving LLM alignment through RL and\nIRL techniques.",
+    "authors": [
+      "Hao Sun",
+      "Mihaela van der Schaar"
+    ],
+    "likes": 6,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2507.13158",
+    "date_collected": "2025-07-22T07:08:23.257796+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "역강화 학습이 대형 언어 모델 사후 훈련과 만나다: 기본, 발전, 그리고 기회",
+      "abstract": "대형 언어 모델(LLM) 시대에 있어 정렬은 더 안정적이고 제어 가능하며 능력 있는 기계 지능을 위한 중요하고 동시에 어려운 문제로 부각되었습니다. 최근 추론 모델과 대화형 AI 시스템의 성공은 강화 학습(RL)이 이러한 시스템을 향상시키는 데 중요한 역할을 한다는 점을 강조하며, RL과 LLM 정렬의 교차점에서의 연구에 대한 증가된 관심을 유발했습니다. 본 논문은 역강화 학습(IRL) 시각을 통해 LLM 정렬의 최근 발전을 포괄적으로 검토하며, LLM 정렬에서 사용되는 RL 기술과 전통적인 RL 작업에서 사용되는 기술 사이의 차이를 강조합니다. 특히, 우리는 인간 데이터로부터 신경 보상 모델을 구성하는 필요성을 강조하고 이러한 패러다임 변화의 형식적 및 실용적 영향에 대해 논의합니다. 우리는 RL에 대한 기본적인 개념을 소개하여 해당 분야에 익숙하지 않은 독자들에게 기초를 제공합니다. 그 후 최근의 이 연구 계획에 대한 발전을 살펴보며, LLM 정렬을 위한 IRL 수행에 대한 주요 도전과 기회를 논의합니다. 방법론적 고려 사항 이상으로, 우리는 데이터셋, 벤치마크, 평가 지표, 인프라, 그리고 계산적으로 효율적인 훈련 및 추론 기술을 포함한 실용적 측면을 탐구합니다. 마지막으로, 우리는 보상이 희소한 RL에 대한 문헌으로부터 통찰을 얻어 미해결된 문제와 잠재적인 연구 방향을 식별합니다. 다양한 연구에서 발견한 결과를 종합하여, 우리는 이 분야에 대한 체계적이고 비판적인 개요를 제공하고 미해결된 도전과 RL 및 IRL 기술을 통해 LLM 정렬을 개선하기 위한 유망한 미래 방향을 개요화하려 합니다."
+    },
+    "summary": "1. 대형 언어 모델(Large Language Models, LLM) 시대에는 정렬이 신뢰성이 더 높고 제어 가능하며 더 능률적인 기계 학습을 위한 중요한 문제로 부각되었고, 강화 학습이 이를 향상시키는 데 핵심적으로 작용함.\n2. 역강화 학습(Inverse Reinforcement Learning, IRL)을 통해 대형 언어 모델 정렬의 최근 발전을 종합적으로 검토하였으며, 인간 데이터로부터 신경 보상 모델을 구축하는 필요성과 그러한 패러다임 변화의 형식적, 실용적 영향에 주목함.\n3. 실용적 측면뿐만 아니라 데이터셋, 벤치마크, 평가 지표, 인프라, 효율적인 훈련 및 추론 기술 등을 살펴보며, sparse-reward 강화 학습에 대한 문헌에서 결과를 종합하여 LLM 정렬을 향상시키는 미래 방향을 제시함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "RedOne: Revealing Domain-specific LLM Post-Training in Social Networking\n  Services",
+    "abstract": "As a primary medium for modern information dissemination, social networking\nservices (SNS) have experienced rapid growth, which has proposed significant\nchallenges for platform content management and interaction quality improvement.\nRecently, the development of large language models (LLMs) has offered potential\nsolutions but existing studies focus on isolated tasks, which not only\nencounter diminishing benefit from the data scaling within individual scenarios\nbut also fail to flexibly adapt to diverse real-world context. To address these\nchallenges, we introduce RedOne, a domain-specific LLM designed to break the\nperformance bottleneck of single-task baselines and establish a comprehensive\nfoundation for the SNS. RedOne was developed through a three-stage training\nstrategy consisting of continue pretraining, supervised fine-tuning, and\npreference optimization, using a large-scale real-world dataset. Through\nextensive experiments, RedOne maintains strong general capabilities, and\nachieves an average improvement up to 14.02% across 8 major SNS tasks and 7.56%\nin SNS bilingual evaluation benchmark, compared with base models. Furthermore,\nthrough online testing, RedOne reduced the exposure rate in harmful content\ndetection by 11.23% and improved the click page rate in post-view search by\n14.95% compared with single-tasks finetuned baseline models. These results\nestablish RedOne as a robust domain-specific LLM for SNS, demonstrating\nexcellent generalization across various tasks and promising applicability in\nreal-world scenarios.",
+    "authors": [
+      "Fei Zhao",
+      "Chonggang Lu",
+      "Yue Wang",
+      "Zheyong Xie",
+      "Ziyan Liu",
+      "Haofu Qian",
+      "JianZhao Huang",
+      "Fangcheng Shi",
+      "Zijie Meng",
+      "Hongcheng Guo",
+      "Mingqian He",
+      "Xinze Lyu",
+      "Yiming Lu",
+      "Ziyang Xiang",
+      "Zheyu Ye",
+      "Chengqiang Lu",
+      "Zhe Xu",
+      "Yi Wu",
+      "Yao Hu",
+      "Yan Gao",
+      "Jun Fan",
+      "Xiaolong Jiang"
+    ],
+    "likes": 4,
+    "published_date": "Jul 13",
+    "url": "https://huggingface.co/papers/2507.10605",
+    "date_collected": "2025-07-22T07:08:23.259635+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "RedOne: 소셜 네트워킹 서비스에서 도메인 특화 LLM 사후 훈련 공개",
+      "abstract": "현대 정보 전파의 주요 매체인 소셜 네트워킹 서비스(SNS)가 급격한 성장을 경험함에 따라, 플랫폼 콘텐츠 관리와 상호작용 품질 향상에 중요한 도전 과제가 제기되었습니다. 대규모 언어 모델(LLM)의 개발은 단일 작업의 성능 병목 현상을 극복하고 SNS를 위한 포괄적인 기초를 마련하기 위한 잠재력을 제공했지만, 기존 연구는 분리된 작업에 집중하여 데이터 스케일링의 한계와 다양한 현실 세계 맥락에 유연하게 적응하지 못하는 문제가 있었습니다. 이러한 과제에 대응하기 위해 우리는 RedOne을 소개합니다. RedOne은 단일 작업 기준의 성능 병목 현상을 깨기 위해 설계된 소셜 네트워킹 서비스를 위한 도메인 특화 LLM으로, 계속적인 사전 훈련, 지도형 미세 조정, 및 선호도 최적화로 구성된 세 단계 훈련 전략을 사용하여 대규모 실제 데이터셋을 활용하여 개발되었습니다. 더불어, RedOne은 8가지 주요 SNS 작업과 SNS 이중 평가 참조 벤치마크에서 평균적으로 14.02%의 향상과 7.56%의 성능 향상을 달성하는 대조적 베이스 모델 대비 효과적인 성능을 유지했습니다. 또한, 온라인 테스트를 통해 RedOne은 유해 콘텐츠 감지 시 노출률을 11.23% 감소시키고, 단일 작업 미세조정 기준 모델 대비 포스트 조회 검색에서 클릭 페이지 비율을 14.95% 향상시켰습니다. 이러한 결과들은 RedOne을 SNS를 위한 견고한 도메인 특화 LLM으로 확립하며, 다양한 작업에서 우수한 일반화 능력을 제공하고 실제 시나리오에서의 유망한 적용 가능성을 입증합니다."
+    },
+    "summary": "1. RedOne은 단일 작업 기준의 성능 병목 현상을 깨며, SNS의 다양한 작업에 강한 일반화 능력을 보여주며 향상된 성능을 제공합니다.\n2. RedOne은 선호도 최적화를 통해 유해 콘텐츠 감지의 노출률을 줄이고 포스트 조회 검색에서 클릭 페이지 비율을 향상시키는 효과를 나타냅니다.\n3. 소셜 네트워킹 서비스를 위한 RedOne은 강력한 기반을 제공하며, 실제 시나리오에서 유망한 적용 가능성을 갖는 도메인 특화 LLM로 입증되었습니다.",
+    "categories": [
+      "LLM",
+      "소셜 네트워킹 서비스",
+      "언어 모델"
+    ]
+  },
+  {
+    "title": "Mitigating Object Hallucinations via Sentence-Level Early Intervention",
+    "abstract": "Multimodal large language models (MLLMs) have revolutionized cross-modal\nunderstanding but continue to struggle with hallucinations - fabricated content\ncontradicting visual inputs. Existing hallucination mitigation methods either\nincur prohibitive computational costs or introduce distribution mismatches\nbetween training data and model outputs. We identify a critical insight:\nhallucinations predominantly emerge at the early stages of text generation and\npropagate through subsequent outputs. To address this, we propose **SENTINEL**\n(**S**entence-level **E**arly i**N**tervention **T**hrough **IN**-domain\npr**E**ference **L**earning), a framework that eliminates dependency on human\nannotations. Specifically, we first bootstrap high-quality in-domain preference\npairs by iteratively sampling model outputs, validating object existence\nthrough cross-checking with two open-vocabulary detectors, and classifying\nsentences into hallucinated/non-hallucinated categories. Subsequently, we use\ncontext-coherent positive samples and hallucinated negative samples to build\ncontext-aware preference data iteratively. Finally, we train models using a\ncontext-aware preference loss (C-DPO) that emphasizes discriminative learning\nat the sentence level where hallucinations initially manifest. Experimental\nresults show that SENTINEL can reduce hallucinations by over 90\\% compared to\nthe original model and outperforms the previous state-of-the-art method on both\nhallucination benchmarks and general capabilities benchmarks, demonstrating its\nsuperiority and generalization ability. The models, datasets, and code are\navailable at https://github.com/pspdada/SENTINEL.",
+    "authors": [
+      "Shangpin Peng",
+      "Senqiao Yang",
+      "Li Jiang",
+      "Zhuotao Tian"
+    ],
+    "likes": 3,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2507.12455",
+    "date_collected": "2025-07-22T07:08:23.260688+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "객체 환각 완화를 위한 문장 수준 조기 개입",
+      "abstract": "다중 모달 대형 언어 모델(MLLMs)은 크로스 모달 이해를 혁신적으로 바꿨지만, 시각적 입력과 모순되는 가공된 콘텐츠인 환각에 여전히 어려움을 겪고 있습니다. 기존의 환각 완화 방법은 계산 비용이 너무 높거나 훈련 데이터와 모델 출력 간 분포 불일치를 유발합니다. 우리는 중요한 통찰력을 발견했습니다: 환각은 주로 텍스트 생성 초기 단계에서 발생하고, 이후 출력으로 전파됩니다. 이를 해결하기 위해 **SENTINEL**(**S**entence-level **E**arly i**N**tervention **T**hrough **IN**-domain pr**E**ference **L**earning)이라는 사람 주석에 의존하지 않는 프레임워크를 제안합니다. 구체적으로, 먼저 모델 출력을 반복적으로 샘플링하고, 두 개의 오픈 어휘 검출기와 교차 확인을 통해 객체 존재를 확인하고, 문장을 환각/비환각 범주로 분류하여 고품질 인도메인 선호도 쌍을 부트스트랩합니다. 이후, 문맥 일치하는 양성 샘플과 환각적인 음성 샘플을 사용하여 문맥 인식 선호도 데이터를 반복적으로 구축합니다. 마지막으로, 최종 목적에 맞는 선호도 손실(C-DPO)을 사용하여 모델을 훈련시켜, 환각이 초기에 나타나는 문장 수준에서 차별적 학습을 강조합니다. 실험 결과는 SENTINEL이 원래 모델에 비해 환각을 90% 이상 줄일 수 있으며, 이전 최첨단 방법과 일반 능력 벤치마크에서 뛰어난 성과를 보여줌으로써 그 우수성과 일반화 능력을 입증합니다. 모델, 데이터셋, 코드는 https://github.com/pspdada/SENTINEL에서 제공됩니다."
+    },
+    "summary": "1. 다중 모달 대형 언어 모델이 객체 환각과 같은 문제에 직면하는데, 이를 해결하기 위해 사람 주석에 의존하지 않는 **SENTINEL** 프레임워크를 제안함.\n2. **SENTINEL**은 객체 환각을 90% 이상 줄이고, 과거 최첨단 방법보다 우수하며, 일반 능력 벤치마크에서 우수한 성과를 보이는 것이 실험 결과로 나타남.\n3. 모델은 텍스트 생성 초기 단계에서 발생하는 환각에 초점을 맞춘 문장 수준에서의 차별적 학습을 강조하는 C-DPO를 사용하여 훈련됨.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "The Generative Energy Arena (GEA): Incorporating Energy Awareness in\n  Large Language Model (LLM) Human Evaluations",
+    "abstract": "The evaluation of large language models is a complex task, in which several\napproaches have been proposed. The most common is the use of automated\nbenchmarks in which LLMs have to answer multiple-choice questions of different\ntopics. However, this method has certain limitations, being the most\nconcerning, the poor correlation with the humans. An alternative approach, is\nto have humans evaluate the LLMs. This poses scalability issues as there is a\nlarge and growing number of models to evaluate making it impractical (and\ncostly) to run traditional studies based on recruiting a number of evaluators\nand having them rank the responses of the models. An alternative approach is\nthe use of public arenas, such as the popular LM arena, on which any user can\nfreely evaluate models on any question and rank the responses of two models.\nThe results are then elaborated into a model ranking. An increasingly important\naspect of LLMs is their energy consumption and, therefore, evaluating how\nenergy awareness influences the decisions of humans in selecting a model is of\ninterest. In this paper, we present GEA, the Generative Energy Arena, an arena\nthat incorporates information on the energy consumption of the model in the\nevaluation process. Preliminary results obtained with GEA are also presented,\nshowing that for most questions, when users are aware of the energy\nconsumption, they favor smaller and more energy efficient models. This suggests\nthat for most user interactions, the extra cost and energy incurred by the more\ncomplex and top-performing models do not provide an increase in the perceived\nquality of the responses that justifies their use.",
+    "authors": [
+      "Carlos Arriaga",
+      "Gonzalo Martínez",
+      "Eneko Sendin",
+      "Javier Conde",
+      "Pedro Reviriego"
+    ],
+    "likes": 1,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2507.13302",
+    "date_collected": "2025-07-22T07:08:23.261816+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "에너지 인식을 통합한 대형 언어 모델 (LLM) 평가에서의 생성 에너지 아레나 (GEA)",
+      "abstract": "대규모 언어 모델의 평가는 복잡한 작업으로, 여러 방법이 제안되었습니다. 가장 흔한 방법은 자동화된 벤치마크를 사용하는 것인데, 이는 LLMs가 다양한 주제의 객관식 문제에 답하는 방식입니다. 하지만 이 방법에는 인간들과의 상관관계가 낮다는 한계가 있습니다. 대안적 접근법은 인간들이 LLMs를 평가하도록 하는 것인데, 이는 모델을 평가해야 하는 수가 많아져 확장성 문제가 발생합니다. 본 논문에서는 에너지 소비에 대한 정보를 평가 프로세스에 통합한 \"GEA, 생성 에너지 아레나\"를 제안합니다."
+    },
+    "summary": "1. 대형 언어 모델 평가는 일반적으로 자동화된 벤치마크를 사용하나, 이에는 인간과의 상관관계가 부족한 문제가 있다.\n2. 사용자가 에너지 소비를 인식할 때, 대체로 작고 더 효율적인 모델을 선호하는 경향이 있다.\n3. 생성 에너지 아레나(GEA)는 에너지 소비 정보를 고려한 모델 평가 과정을 제시하며, 예비 결과는 더 효율적인 모델의 선택을 촉진함을 나타낸다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Quantitative Risk Management in Volatile Markets with an Expectile-Based\n  Framework for the FTSE Index",
+    "abstract": "This research presents a framework for quantitative risk management in\nvolatile markets, specifically focusing on expectile-based methodologies\napplied to the FTSE 100 index. Traditional risk measures such as Value-at-Risk\n(VaR) have demonstrated significant limitations during periods of market\nstress, as evidenced during the 2008 financial crisis and subsequent volatile\nperiods. This study develops an advanced expectile-based framework that\naddresses the shortcomings of conventional quantile-based approaches by\nproviding greater sensitivity to tail losses and improved stability in extreme\nmarket conditions. The research employs a dataset spanning two decades of FTSE\n100 returns, incorporating periods of high volatility, market crashes, and\nrecovery phases. Our methodology introduces novel mathematical formulations for\nexpectile regression models, enhanced threshold determination techniques using\ntime series analysis, and robust backtesting procedures. The empirical results\ndemonstrate that expectile-based Value-at-Risk (EVaR) consistently outperforms\ntraditional VaR measures across various confidence levels and market\nconditions. The framework exhibits superior performance during volatile\nperiods, with reduced model risk and enhanced predictive accuracy. Furthermore,\nthe study establishes practical implementation guidelines for financial\ninstitutions and provides evidence-based recommendations for regulatory\ncompliance and portfolio management. The findings contribute significantly to\nthe literature on financial risk management and offer practical tools for\npractitioners dealing with volatile market environments.",
+    "authors": [
+      "Abiodun Finbarrs Oketunji"
+    ],
+    "likes": 1,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2507.13391",
+    "date_collected": "2025-07-22T07:08:23.262707+09:00",
+    "week": "2025-W30",
+    "translation": {
+      "title": "변동성 시장에서의 기대값 기반 틀을 활용한 FTSE 지수에 대한 양적 위험 관리",
+      "abstract": "본 연구는 변동성 시장에서의 양적 위험 관리를 위한 틀을 제시하며, 특히 FTSE 100 지수에 적용된 기대값 기반 방법론에 초점을 맞춥니다. 2008년 금융 위기 및 이후의 변동성이 심한 시기에서 가치 위험 (VaR) 같은 전통적인 위험 측정 방법이 상당한 한계를 보였습니다. 이 연구는 기존 분위수 기반 접근 방식의 단점을 해결하기 위해 꼬리 손실에 대한 보다 큰 민감성과 극단적 시장 조건에서의 개선된 안정성을 제공하는 첨단 기대값 기반 틀을 개발했습니다."
+    },
+    "summary": "1. 전통적인 가치 위험 측정 방법에는 한계가 있었던데 반해, 기대값 기반 위험 측정 방법은 꼬리 손실에 대해 보다 세심한 대응을 제공하며 극한 시장 조건에서 안정성을 향상시킵니다.\n2. FTSE 100 수익률을 포함한 2년간의 데이터세트를 이용하여 개발된 기대값 회귀 모델과 시계열 분석을 통한 임계값 결정 기술을 사용했습니다.\n3. 연구 결과는 기대값 기반 가치 위험이 다양한 신뢰수준과 시장 조건에서 전통적인 VaR 측정 방법을 꾸준히 앞섰음을 입증하며 변동성이 높은 기간 동안 우수한 성능을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+=== Paper Collection Started at Sat May  9 22:21:19 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W20
+URL: https://huggingface.co/papers/week/2026-W20
+Found 10 papers in weekly view
+Fetching likes for: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Fetching likes for: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Fetching likes for: Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation
+Fetching likes for: RLDX-1 Technical Report
+Fetching likes for: ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration
+Fetching likes for: Stream-T1: Test-Time Scaling for Streaming Video Generation
+Fetching likes for: OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents
+Fetching likes for: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Fetching likes for: HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation
+Fetching likes for: Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction
+Selected top 10 papers by likes:
+1. MolmoAct2: Action Reasoning Models for Real-world Deployment (266 likes)
+2. From Context to Skills: Can Language Models Learn from Context Skillfully? (145 likes)
+3. Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation (117 likes)
+4. RLDX-1 Technical Report (101 likes)
+5. ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration (99 likes)
+6. Stream-T1: Test-Time Scaling for Streaming Video Generation (98 likes)
+7. OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents (92 likes)
+8. UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors (80 likes)
+9. HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation (69 likes)
+10. Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction (66 likes)
+Found abstract: Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but to...
+Processed paper: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Found abstract: Many real-world tasks require language models (LMs) to reason over complex contexts that exceed thei...
+Processed paper: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Found abstract: Distillation-based acceleration has become foundational for making autoregressive streaming video di...
+Processed paper: Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation
+Found abstract: While Vision-Language-Action models (VLAs) have shown remarkable progress toward human-like generali...
+Processed paper: RLDX-1 Technical Report
+Found abstract: This report describes ARIS (Auto-Research-in-sleep), an open-source research harness for autonomous ...
+Processed paper: ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration
+Found abstract: While Test-Time Scaling (TTS) offers a promising direction to enhance video generation without the s...
+Processed paper: Stream-T1: Test-Time Scaling for Streaming Video Generation
+Found abstract: Deep search has become a crucial capability for frontier multimodal agents, enabling models to solve...
+Processed paper: OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents
+Found abstract: Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimoda...
+Processed paper: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Found abstract: Driving world models serve as a pivotal technology for autonomous driving by simulating environmenta...
+Processed paper: HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation
+Found abstract: Modern retrieval systems, whether lexical or semantic, expose a corpus through a fixed similarity in...
+Processed paper: Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MolmoAct2: Action Reasoning Models for Real-world Deployment
+Paper already exists, checking if translation is complete...
+Update likes: 266  ->  261
+Update date_collected: 2026-05-10T07:21:29.593187+09:00  ->  2026-05-09T07:27:04.243235+09:00
+
+Processing paper 2/10
+Title: From Context to Skills: Can Language Models Learn from Context Skillfully?
+Paper already exists, checking if translation is complete...
+Update likes: 145  ->  144
+Update date_collected: 2026-05-10T07:21:29.595118+09:00  ->  2026-05-09T07:27:04.245222+09:00
+
+Processing paper 3/10
+Title: Stream-R1: Reliability-Perplexity Aware Reward Distillation for Streaming Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 117  ->  116
+Update date_collected: 2026-05-10T07:21:29.596718+09:00  ->  2026-05-09T07:27:04.246863+09:00
+
+Processing paper 4/10
+Title: RLDX-1 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 101  ->  96
+Update date_collected: 2026-05-10T07:21:29.599082+09:00  ->  2026-05-09T07:27:04.252430+09:00
+
+Processing paper 5/10
+Title: ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration
+Paper already exists, checking if translation is complete...
+Update likes: 99  ->  97
+Update date_collected: 2026-05-10T07:21:29.600482+09:00  ->  2026-05-09T07:27:04.249953+09:00
+
+Processing paper 6/10
+Title: Stream-T1: Test-Time Scaling for Streaming Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 98  ->  97
+Update date_collected: 2026-05-10T07:21:29.602055+09:00  ->  2026-05-09T07:27:04.248516+09:00
+
+Processing paper 7/10
+Title: OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents
+Paper already exists, checking if translation is complete...
+Update likes: 92  ->  88
+Update date_collected: 2026-05-10T07:21:29.603813+09:00  ->  2026-05-09T07:27:04.254257+09:00
+
+Processing paper 8/10
+Title: UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors
+Paper already exists, checking if translation is complete...
+Update likes: 80  ->  80
+Update date_collected: 2026-05-10T07:21:29.605547+09:00  ->  2026-05-09T07:27:04.256061+09:00
+
+Processing paper 9/10
+Title: HERMES++: Toward a Unified Driving World Model for 3D Scene Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  69
+Update date_collected: 2026-05-10T07:21:29.607103+09:00  ->  2026-05-09T07:27:04.257692+09:00
+
+Processing paper 10/10
+Title: Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W20.json...
+
+Updating Notion database...
+Updating paper: 실제 선발을 위한 액션 추론 모델 MolmoAct2 (likes: 261 -> 266)
+Updating paper: 문맥으로부터 기술까지: 언어 모델이 문맥에서 기술을 잘 배울 수 있을까? (likes: 144 -> 145)
+Updating paper: 스트림-R1: 스트리밍 비디오 생성을 위한 신뢰성-복잡도 인지 보상 증류 (likes: 116 -> 117)
+Updating paper: RLDX-1 기술 보고서 (likes: 96 -> 101)
+Updating paper: ARIS: 자율 연구를 위한 적대적 다중 에이전트 협업을 통한 자동 연구 (likes: 97 -> 99)
+Updating paper: 스트림-T1: 스트리밍 비디오 생성을 위한 테스트 시간 스케일링 (likes: 97 -> 98)
+Updating paper: 오픈서치-VL: 전선 멀티모달 검색 에이전트를 위한 오픈 레시피 (likes: 88 -> 92)
+Paper already exists with same likes count: 유니비디엑스: 확산 사전을 통한 다목적 비디오 생성을 위한 통합된 다중 모달 프레임워크
+Paper already exists with same likes count: HERMES++: 3차원 장면 이해와 생성을 위한 통합 운전 세계 모델로
+Creating new paper: 의미 유사성 넘어서: 직접 말뭉치 상호작용을 통한 에이젠틱 검색 재고
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat May  9 22:23:00 UTC 2026 ===
+

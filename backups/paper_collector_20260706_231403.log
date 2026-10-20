@@ -1,0 +1,129 @@
+=== Paper Collection Started at Mon Jul  6 01:41:36 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W28
+URL: https://huggingface.co/papers/week/2026-W28
+Found 10 papers in weekly view
+Fetching likes for: Orca: The World is in Your Mind
+Fetching likes for: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Fetching likes for: Dockerless: Environment-Free Program Verifier for Coding Agents
+Fetching likes for: DOPD: Dual On-policy Distillation
+Fetching likes for: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Fetching likes for: Program-as-Weights: A Programming Paradigm for Fuzzy Functions
+Fetching likes for: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Fetching likes for: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Fetching likes for: Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models
+Fetching likes for: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Selected top 10 papers by likes:
+1. Orca: The World is in Your Mind (233 likes)
+2. Agentic Abstention: Do Agents Know When to Stop Instead of Act? (143 likes)
+3. Dockerless: Environment-Free Program Verifier for Coding Agents (105 likes)
+4. DOPD: Dual On-policy Distillation (96 likes)
+5. Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent (88 likes)
+6. Program-as-Weights: A Programming Paradigm for Fuzzy Functions (83 likes)
+7. LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing (81 likes)
+8. BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding (74 likes)
+9. Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models (69 likes)
+10. Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs (58 likes)
+Found abstract: We introduce Orca, an initial instantiation of a general world foundation model. Orca learns a unifi...
+Processed paper: Orca: The World is in Your Mind
+Found abstract: LLM agents are expected to act over multiple turns, using search, browsing interfaces, and terminal ...
+Processed paper: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Found abstract: Program verifiers play a central role in training coding agents, including selecting trajectories fo...
+Processed paper: Dockerless: Environment-Free Program Verifier for Coding Agents
+Found abstract: On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajec...
+Processed paper: DOPD: Dual On-policy Distillation
+Found abstract: We introduce Agents-A1, a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level...
+Processed paper: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Found abstract: Many everyday programming tasks resist clean rule-based implementation, such as alerting on importan...
+Processed paper: Program-as-Weights: A Programming Paradigm for Fuzzy Functions
+Found abstract: Streaming video editing has made rapid progress, yet practical deployment is still limited by two co...
+Processed paper: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Found abstract: Speculative decoding accelerates inference by using a lightweight draft model to generate candidate ...
+Processed paper: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Found abstract: Embodied Vision-Language-Action (VLA) models are typically obtained by fine-tuning powerful pretrain...
+Processed paper: Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models
+Found abstract: We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprisin...
+Processed paper: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Orca: The World is in Your Mind
+Paper already exists, checking if translation is complete...
+Update likes: 233  ->  233
+Update date_collected: 2026-07-06T10:41:44.919895+09:00  ->  2026-07-06T08:08:42.247116+09:00
+
+Processing paper 2/10
+Title: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Paper already exists, checking if translation is complete...
+Update likes: 143  ->  143
+Update date_collected: 2026-07-06T10:41:44.922011+09:00  ->  2026-07-06T08:08:42.249326+09:00
+
+Processing paper 3/10
+Title: Dockerless: Environment-Free Program Verifier for Coding Agents
+Paper already exists, checking if translation is complete...
+Update likes: 105  ->  105
+Update date_collected: 2026-07-06T10:41:44.924619+09:00  ->  2026-07-06T08:08:42.252093+09:00
+
+Processing paper 4/10
+Title: DOPD: Dual On-policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 96  ->  96
+Update date_collected: 2026-07-06T10:41:44.927358+09:00  ->  2026-07-06T08:08:42.254978+09:00
+
+Processing paper 5/10
+Title: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Paper already exists, checking if translation is complete...
+Update likes: 88  ->  88
+Update date_collected: 2026-07-06T10:41:44.930448+09:00  ->  2026-07-06T08:08:42.258249+09:00
+
+Processing paper 6/10
+Title: Program-as-Weights: A Programming Paradigm for Fuzzy Functions
+Paper already exists, checking if translation is complete...
+Update likes: 83  ->  83
+Update date_collected: 2026-07-06T10:41:44.932649+09:00  ->  2026-07-06T08:08:42.260610+09:00
+
+Processing paper 7/10
+Title: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Paper already exists, checking if translation is complete...
+Update likes: 81  ->  81
+Update date_collected: 2026-07-06T10:41:44.934761+09:00  ->  2026-07-06T08:08:42.262867+09:00
+
+Processing paper 8/10
+Title: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  73
+Update date_collected: 2026-07-06T10:41:44.937269+09:00  ->  2026-07-06T08:08:42.265182+09:00
+
+Processing paper 9/10
+Title: Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  69
+Update date_collected: 2026-07-06T10:41:44.939824+09:00  ->  2026-07-06T08:08:42.267856+09:00
+
+Processing paper 10/10
+Title: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  58
+Update date_collected: 2026-07-06T10:41:44.941845+09:00  ->  2026-07-06T08:08:42.269988+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W28.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 의도적 절제: 에이전트들은 행동을 멈출 때를 알까?
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 파라미터를 확장하지 않고 수평을 넓히다: 35B 에이전트로 조 야 니언 파라미터 성능 달성
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 실시간 확산 기반 스트리밍 비디오 편집을 향하여
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 73 -> 74)
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul  6 01:42:05 UTC 2026 ===
+

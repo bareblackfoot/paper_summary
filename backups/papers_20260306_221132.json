@@ -1,0 +1,319 @@
+[
+  {
+    "title": "Utonia: Toward One Encoder for All Point Clouds",
+    "abstract": "We dream of a future where point clouds from all domains can come together to shape a single model that benefits them all. Toward this goal, we present Utonia, a first step toward training a single self-supervised point transformer encoder across diverse domains, spanning remote sensing, outdoor LiDAR, indoor RGB-D sequences, object-centric CAD models, and point clouds lifted from RGB-only videos. Despite their distinct sensing geometries, densities, and priors, Utonia learns a consistent representation space that transfers across domains. This unification improves perception capability while revealing intriguing emergent behaviors that arise only when domains are trained jointly. Beyond perception, we observe that Utonia representations can also benefit embodied and multimodal reasoning: conditioning vision-language-action policies on Utonia features improves robotic manipulation, and integrating them into vision-language models yields gains on spatial reasoning. We hope Utonia can serve as a step toward foundation models for sparse 3D data, and support downstream applications in AR/VR, robotics, and autonomous driving.",
+    "authors": [
+      "Yujia Zhang",
+      "Xiaoyang Wu",
+      "Yunhan Yang",
+      "Xianzhe Fan",
+      "Han Li",
+      "Yuechen Zhang",
+      "Zehao Huang",
+      "Naiyan Wang",
+      "Hengshuang Zhao"
+    ],
+    "likes": 132,
+    "published_date": "Mar 3",
+    "url": "https://huggingface.co/papers/2603.03283",
+    "date_collected": "2026-03-06T07:12:49.628304+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "Utonia: 모든 포인트 클라우드를 위한 하나의 인코더로",
+      "abstract": "우리는 모든 도메인에서 나온 포인트 클라우드가 함께 모여 이젠 그들 모두에게 이익을 주는 단일 모델을 형성하는 미래를 꿈꾼다. 이 목표를 향해 우리는 Utonia를 제시한다. Utonia는 원격 감지, 실외 LiDAR, 실내 RGB-D 시퀀스, 객체 중심의 CAD 모델, 그리고 RGB 비디오로부터 추출된 포인트 클라우드를 아우르는 다양한 도메인 간에 하나의 자가 지도된 포인트 트랜스포머 인코더를 훈련하는 첫 번째 단계다."
+    },
+    "summary": "1. Utonia는 다양한 도메인의 포인트 클라우드에 대해 하나의 인코더로 일관된 표현 공간을 학습하여, 도메인 간 전이를 가능하게 하며, 독특한 행동 양식을 드러낸다.\n2. Utonia의 표현은 인공지능 로봇 조작력 향상과 시각-언어 모델에서 공간 추론 개선에 도움이 되는 것으로 나타났다.\n3. Utonia는 희박한 3D 데이터에 대한 기반 모델로 나아가며, AR/VR, 로봇 공학, 자율주행차 등의 하위 응용품들을 지원할 수 있을 것을 희망한다.",
+    "categories": [
+      "Multimodal",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "From Scale to Speed: Adaptive Test-Time Scaling for Image Editing",
+    "abstract": "Image Chain-of-Thought (Image-CoT) is a test-time scaling paradigm that improves image generation by extending inference time. Most Image-CoT methods focus on text-to-image (T2I) generation. Unlike T2I generation, image editing is goal-directed: the solution space is constrained by the source image and instruction. This mismatch causes three challenges when applying Image-CoT to editing: inefficient resource allocation with fixed sampling budgets, unreliable early-stage verification using general MLLM scores, and redundant edited results from large-scale sampling. To address this, we propose ADaptive Edit-CoT (ADE-CoT), an on-demand test-time scaling framework to enhance editing efficiency and performance. It incorporates three key strategies: (1) a difficulty-aware resource allocation that assigns dynamic budgets based on estimated edit difficulty; (2) edit-specific verification in early pruning that uses region localization and caption consistency to select promising candidates; and (3) depth-first opportunistic stopping, guided by an instance-specific verifier, that terminates when intent-aligned results are found. Extensive experiments on three SOTA editing models (Step1X-Edit, BAGEL, FLUX.1 Kontext) across three benchmarks show that ADE-CoT achieves superior performance-efficiency trade-offs. With comparable sampling budgets, ADE-CoT obtains better performance with more than 2x speedup over Best-of-N.",
+    "authors": [
+      "Xiangyan Qu",
+      "Zhenlong Yuan",
+      "Jing Tang",
+      "Rui Chen",
+      "Datao Tang",
+      "Meng Yu",
+      "Lei Sun",
+      "Yancheng Bai",
+      "Xiangxiang Chu",
+      "Gaopeng Gou",
+      "Gang Xiong",
+      "Yujun Cai"
+    ],
+    "likes": 130,
+    "published_date": "Feb 24",
+    "url": "https://huggingface.co/papers/2603.00141",
+    "date_collected": "2026-03-06T07:12:49.629734+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "스케일에서 속도로: 이미지 편집을 위한 적응형 테스트 타임 스케일링",
+      "abstract": "이미지 체인-오브-사고 (Image-CoT)는 추론 시간을 확장하여 이미지 생성을 개선하는 테스트 타임 스케일링 패러다임입니다. 대부분의 Image-CoT 방법은 텍스트-이미지(T2I) 생성에 초점을 맞춥니다. T2I 생성과 달리 이미지 편집은 목표 지향적이며, 소스 이미지와 명령에 의해 해결 공간이 제약됩니다. 이러한 불일치로 인해 Image-CoT를 편집에 적용할 때 세 가지 도전 과제가 발생합니다: 고정된 샘플링 예산으로 인한 비효율적인 자원 할당, 일반 MLLM 점수를 사용한 신뢰할 수 없는 초기 단계 검증, 그리고 대규모 샘플링으로 인한 중복된 편집 결과. 이를 해결하기 위해 우리는 ADE-CoT(ADaptive Edit-CoT)를 제안합니다. 이는 편집 효율성과 성능을 향상시키기 위한 온디맨드 테스트 타임 스케일링 프레임워크입니다. ADE-CoT은 세 가지 주요 전략을 통합합니다: (1) 추정된 편집 난이도에 기반한 동적 예산 할당을 하는 난이도 인식 자원 할당; (2) 지역화 및 캡션 일관성을 사용한 초기 가지치기에서의 편집별 검증; 그리고 (3) 인스턴스별 검증기에 의해 안내되는 깊이 우선 기회 중단으로, 의도에 부합하는 결과가 발견되면 종료됩니다. 세 개의 SOTA 편집 모델 (Step1X-Edit, BAGEL, FLUX.1 Kontext)에 대한 광범위한 실험 결과는 ADE-CoT이 우수한 성능-효율 균형을 달성함을 보여줍니다. 비교 가능한 샘플링 예산으로, ADE-CoT은 Best-of-N 대비 2배 이상 속도 향상을 달성합니다."
+    },
+    "summary": "1. ADE-CoT는 편집 효율성과 성능을 향상시키기 위한 동적 예산 할당, 초기 단계 검증, 중복된 결과 방지를 위한 전략을 통합한 온디맨드 테스트 타임 스케일링 프레임워크이다.\n2. 실험 결과는 ADE-CoT이 세 SOTA 편집 모델에서 우수한 성능-효율 균형을 보여주며, 비교 가능한 샘플링 예산으로 최적의 결과를 달성한다.\n3. ADE-CoT은 편집 과정에서 발생하는 문제점을 해결함으로써 이미지 편집 분야에서 혁신적인 성과를 보여주고 있다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens",
+    "abstract": "OmniLottie is a versatile framework that generates high quality vector animations from multi-modal instructions. For flexible motion and visual content control, we focus on Lottie, a light weight JSON formatting for both shapes and animation behaviors representation. However, the raw Lottie JSON files contain extensive invariant structural metadata and formatting tokens, posing significant challenges for learning vector animation generation. Therefore, we introduce a well designed Lottie tokenizer that transforms JSON files into structured sequences of commands and parameters representing shapes, animation functions and control parameters. Such tokenizer enables us to build OmniLottie upon pretrained vision language models to follow multi-modal interleaved instructions and generate high quality vector animations. To further advance research in vector animation generation, we curate MMLottie-2M, a large scale dataset of professionally designed vector animations paired with textual and visual annotations. With extensive experiments, we validate that OmniLottie can produce vivid and semantically aligned vector animations that adhere closely to multi modal human instructions.",
+    "authors": [
+      "Yiying Yang",
+      "Wei Cheng",
+      "Sijin Chen",
+      "Honghao Fu",
+      "Xianfang Zeng",
+      "Yujun Cai",
+      "Gang Yu",
+      "Xingjun Ma"
+    ],
+    "likes": 126,
+    "published_date": "Mar 2",
+    "url": "https://huggingface.co/papers/2603.02138",
+    "date_collected": "2026-03-06T07:12:49.630952+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "OmniLottie: 매개변수화된 Lottie 토큰을 통해 벡터 애니메이션 생성하기",
+      "abstract": "OmniLottie는 다중 모달 명령에서 고품질의 벡터 애니메이션을 생성하는 다재다능한 프레임워크입니다. 유연한 모션과 시각적 콘텐츠 제어를 위해 모양과 애니메이션 동작을 위한 경량 JSON 형식인 Lottie에 초점을 맞췄습니다. 그러나 원시 Lottie JSON 파일에는 방대한 변하지 않는 구조적 메타데이터와 포매팅 토큰이 포함되어 있어 벡터 애니메이션 생성에 상당한 어려움을 제기합니다. 따라서 우리는 JSON 파일을 명령과 파라미터의 구조화된 시퀀스로 변환하는 잘 설계된 Lottie 토크나이저를 소개합니다."
+    },
+    "summary": "1. OmniLottie는 Lottie 토큰화를 통해 벡터 애니메이션 생성을 위한 구조화된 명령 및 파라미터 시퀀스를 만들어 냅니다.\n2. MMLottie-2M 데이터 세트를 사용하여 Multi-modal 인터리브된 지침을 따르고 고품질의 벡터 애니메이션을 생성하는데 활용됩니다.\n3. OmniLottie는 다양한 실험을 통해 다중 모달 인간 지침에 밀접하게 부합하는 생생하고 의미론적으로 일치하는 벡터 애니메이션을 생성할 수 있는 것을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "dLLM: Simple Diffusion Language Modeling",
+    "abstract": "Although diffusion language models (DLMs) are evolving quickly, many recent models converge on a set of shared components. These components, however, are distributed across ad-hoc research codebases or lack transparent implementations, making them difficult to reproduce or extend. As the field accelerates, there is a clear need for a unified framework that standardizes these common components while remaining flexible enough to support new methods and architectures.\n  To address this gap, we introduce dLLM, an open-source framework that unifies the core components of diffusion language modeling -- training, inference, and evaluation -- and makes them easy to customize for new designs. With dLLM, users can reproduce, finetune, deploy, and evaluate open-source large DLMs such as LLaDA and Dream through a standardized pipeline. The framework also provides minimal, reproducible recipes for building small DLMs from scratch with accessible compute, including converting any BERT-style encoder or autoregressive LM into a DLM. We also release the checkpoints of these small DLMs to make DLMs more accessible and accelerate future research.",
+    "authors": [
+      "Zhanhui Zhou",
+      "Lingjie Chen",
+      "Hanghang Tong",
+      "Dawn Song"
+    ],
+    "likes": 114,
+    "published_date": "Feb 26",
+    "url": "https://huggingface.co/papers/2602.22661",
+    "date_collected": "2026-03-06T07:12:49.632024+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "dLLM: 간단한 확산 언어 모델링",
+      "abstract": "확산 언어 모델링(DLMs)은 빠르게 발전하고 있지만, 최근 많은 모델들은 일련의 공통 구성 요소에 수렴한다. 하지만 이러한 구성 요소들은 ad-hoc 연구 코드베이스에 분산되어 있거나 투명한 실행을 위한 구현이 부족하여 재현하거나 확장하기 어려워진다. 분야가 가속화되면, 이러한 공통 구성 요소를 표준화하고 새로운 방법과 아키텍처를 지원할 수 있는 유연한 통합 프레임워크가 명백히 필요하다."
+    },
+    "summary": "1. dLLM은 확산 언어 모델링의 핵심 구성 요소를 통합하고 사용자 정의가 쉬운 오픈 소스 프레임워크이다.\n2. 사용자는 dLLM을 사용하여 오픈 소스 대규모 DLMs를 재현, 세밀 조정, 배포 및 평가할 수 있으며, BERT-style 인코더나 자기 회귀적 LM을 DLM으로 변환하는 최소한의 레시피를 제공받을 수 있다.\n3. 작은 DLMs의 체크포인트를 공개하여 DLMs의 접근성을 높이고 향후 연구를 가속화하는 한편, 유연성과 표준화를 동시에 유지한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Helios: Real Real-Time Long Video Generation Model",
+    "abstract": "We introduce Helios, the first 14B video generation model that runs at 19.5 FPS on a single NVIDIA H100 GPU and supports minute-scale generation while matching the quality of a strong baseline. We make breakthroughs along three key dimensions: (1) robustness to long-video drifting without commonly used anti-drifting heuristics such as self-forcing, error-banks, or keyframe sampling; (2) real-time generation without standard acceleration techniques such as KV-cache, sparse/linear attention, or quantization; and (3) training without parallelism or sharding frameworks, enabling image-diffusion-scale batch sizes while fitting up to four 14B models within 80 GB of GPU memory. Specifically, Helios is a 14B autoregressive diffusion model with a unified input representation that natively supports T2V, I2V, and V2V tasks. To mitigate drifting in long-video generation, we characterize typical failure modes and propose simple yet effective training strategies that explicitly simulate drifting during training, while eliminating repetitive motion at its source. For efficiency, we heavily compress the historical and noisy context and reduce the number of sampling steps, yielding computational costs comparable to -- or lower than -- those of 1.3B video generative models. Moreover, we introduce infrastructure-level optimizations that accelerate both inference and training while reducing memory consumption. Extensive experiments demonstrate that Helios consistently outperforms prior methods on both short- and long-video generation. We plan to release the code, base model, and distilled model to support further development by the community.",
+    "authors": [
+      "Shenghai Yuan",
+      "Yuanyang Yin",
+      "Zongjian Li",
+      "Xinwei Huang",
+      "Xiao Yang",
+      "Li Yuan"
+    ],
+    "likes": 104,
+    "published_date": "Mar 4",
+    "url": "https://huggingface.co/papers/2603.04379",
+    "date_collected": "2026-03-06T07:12:49.633169+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "헬리오스: 실시간 장거리 비디오 생성 모델",
+      "abstract": "본 연구에서는 싱글 NVIDIA H100 GPU에서 초당 19.5프레임을 지원하며 강력한 베이스라인과 동등한 품질을 유지하는 첫 번째 140억 개 비디오 생성 모델인 헬리오스를 소개한다. 우리는 세 가지 핵심 차원에서 획기적인 진전을 이루었는데, (1) 노출 주기 방지를 위해 일반적으로 사용되는 자가 강제, 오류 뱅크 또는 키프레임 샘플링과 같은 방법을 사용하지 않고 비디오 드리프팅에 강건하며, (2) KV-cache, 희소/선형 어텐션 또는 양자화와 같은 표준 가속 기술 없이 실시간 생성을 지원하며, (3) 병렬화 또는 샤딩 프레임워크 없이 훈련을 할 수 있어 이미지 확산 규모의 배치 크기와 80GB의 GPU 메모리 내에서 140억 개 모델을 최대 4개까지 맞출 수 있다. 구체적으로, 헬리오스는 140억 자기 회귀 확산 모델로 통합된 입력 표현을 갖추어 T2V, I2V, V2V 작업을 네이티브로 지원한다. 장거리 비디오 생성 시 드리프팅을 완화하기 위해 일반적인 실패 모드를 특성화하고 훈련 중 드리프팅을 명시적으로 시뮬레이션하면서 반복적 동작을 초기에 제거하는 간단하면서 효과적인 훈련 전략을 제안한다. 효율성을 위해, 역사적이고 노이지한 맥락을 크게 압축하고 샘플링 단계 수를 줄여 계산 비용을 13억 비디오 생성 모델과 비교 가능하거나 낮출 수 있도록 설계한다. 게다가 推론 및 훈련을 가속화하고 메모리 소모를 줄이는 인프라 수준 최적화를 도입한다. 광범위한 실험에서 헬리오스가 짧은 비디오와 장거리 비디오 생성 양쪽에서 이전 방법을 일관되게 능가함을 보여준다. 우리는 코드, 기본모델 및 압축된 모델을 공개하여 커뮤니티의 추가 발전을 지원할 계획이다."
+    },
+    "summary": "1. 헬리오스는 140억 개 비디오 생성 모델로, 실시간 생성과 동시에 장거리 비디오 생성에 강점을 지니며, 훈련 시에 드리프팅을 명시적으로 시뮬레이션하는 훈련 전략을 제안한다.\n2. 효율성을 높이기 위해 역사적이고 노이지한 맥락을 압축하고 샘플링 단계 수를 줄여 계산 비용을 13억 개 모델보다 낮추는 인프라 수준 최적화를 도입한다.\n3. 헬리오스는 짧은 비디오와 장거리 비디오 생성에서 이전 방법을 일관되게 능가하며, 코드와 모델을 공개하여 커뮤니티의 발전을 지원한다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "T2S-Bench & Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning",
+    "abstract": "Think about how human handles complex reading tasks: marking key points, inferring their relationships, and structuring information to guide understanding and responses. Likewise, can a large language model benefit from text structure to enhance text-processing performance? To explore it, in this work, we first introduce Structure of Thought (SoT), a prompting technique that explicitly guides models to construct intermediate text structures, consistently boosting performance across eight tasks and three model families. Building upon this insight, we present T2S-Bench, the first benchmark designed to evaluate and improve text-to-structure capabilities of models. T2S-Bench includes 1.8K samples across 6 scientific domains and 32 structural types, rigorously constructed to ensure accuracy, fairness, and quality. Evaluation on 45 mainstream models reveals substantial improvement potential: the average accuracy on the multi-hop reasoning task is only 52.1%, and even the most advanced model achieves 58.1% node accuracy in end-to-end extraction. Furthermore, on Qwen2.5-7B-Instruct, SoT alone yields an average +5.7% improvement across eight diverse text-processing tasks, and fine-tuning on T2S-Bench further increases this gain to +8.6%. These results highlight the value of explicit text structuring and the complementary contributions of SoT and T2S-Bench. Dataset and eval code have been released at https://t2s-bench.github.io/T2S-Bench-Page/.",
+    "authors": [
+      "Qinsi Wang",
+      "Hancheng Ye",
+      "Jinhee Kim",
+      "Jinghan Ke",
+      "Yifei Wang",
+      "Martin Kuo",
+      "Zishan Shao",
+      "Dongting Li",
+      "Yueqian Lin",
+      "Ting Jiang",
+      "Chiyue Wei",
+      "Qi Qian",
+      "Wei Wen",
+      "Helen Li",
+      "Yiran Chen"
+    ],
+    "likes": 91,
+    "published_date": "Mar 4",
+    "url": "https://huggingface.co/papers/2603.03790",
+    "date_collected": "2026-03-06T07:12:49.634592+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "T2S-Bench & Structure-of-Thought: 벤치마킹과 포괄적인 텍스트 구조 추론을 위한 텍스트-구조 변환 벤치마킹과 프롬프팅",
+      "abstract": "사람이 복잡한 읽기 작업을 어떻게 다루는지 상상해보십시오: 주요 요소를 표시하고, 그들의 관계를 추론하며, 정보를 구조화하여 이해와 응답을 이끕니다. 마찬가지로, 대형 언어 모델이 텍스트 구조를 활용하여 텍스트 처리 성능을 향상시킬 수 있을까요? 본 연구에서는 이를 탐구하기 위해 먼저 중간 텍스트 구조를 구성하는 모델에 명시적으로 안내하는 프롬프팅 기술인 Structure of Thought (SoT)을 소개함으로써 8가지 작업과 3가지 모델 패밀리를 통해 일관되게 성능을 높이는 방법을 제시합니다. 이 통찰력을 기반으로, T2S-Bench를 소개하는데, 이는 모델의 텍스트-구조 능력을 평가하고 개선하기 위해 설계된 최초의 벤치마크입니다. T2S-Bench는 6가지 과학적 분야와 32가지 구조 유형을 포괄하는 1,800개의 샘플을 포함하며, 정확성, 공정성 및 품질을 보장하기 위해 엄격하게 구성되었습니다. 45개의 주류 모델에 대한 평가 결과, 다중 점프 추론 작업에서 평균 정확도는 52.1%로, 심지어 가장 고급 모델도 끝-끝 추출에서 58.1% 노드 정확도를 달성합니다. 또한, Qwen2.5-7B-Instruct에서, SoT만으로도 다양한 텍스트 처리 작업에서 평균 +5.7% 향상을 보이며, T2S-Bench에서의 파인튜닝은 이 향상을 +8.6%로 증가시킵니다. 이러한 결과는 명시적 텍스트 구조화의 가치와 SoT 및 T2S-Bench의 보완적인 기여를 강조합니다. 데이터셋과 평가 코드는 https://t2s-bench.github.io/T2S-Bench-Page/에서 제공됩니다."
+    },
+    "summary": "1. Structure of Thought (SoT)은 중간 텍스트 구조를 구성하는 모델에 명시적으로 안내하여 성능을 일관되게 향상시킵니다.\n2. T2S-Bench는 모델의 텍스트-구조 능력을 평가하고 개선하기 위한 첫 번째 벤치마크로, 1,800개의 샘플과 다양한 구조 유형을 포함합니다.\n3. SoT를 통한 향상은 다양한 텍스트 처리 작업에서 평균 +5.7%이며, T2S-Bench의 파인튜닝은 이 향상을 +8.6%까지 높입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Heterogeneous Agent Collaborative Reinforcement Learning",
+    "abstract": "We introduce Heterogeneous Agent Collaborative Reinforcement Learning (HACRL), a new learning paradigm that addresses the inefficiencies of isolated on-policy optimization. HACRL enables collaborative optimization with independent execution: heterogeneous agents share verified rollouts during training to mutually improve, while operating independently at inference time. Unlike LLM-based multi-agent reinforcement learning (MARL), HACRL does not require coordinated deployment, and unlike on-/off-policy distillation, it enables bidirectional mutual learning among heterogeneous agents rather than one-directional teacher-to-student transfer. Building on this paradigm, we propose HACPO, a collaborative RL algorithm that enables principled rollout sharing to maximize sample utilization and cross-agent knowledge transfer. To mitigate capability discrepancies and policy distribution shifts, HACPO introduces four tailored mechanisms with theoretical guarantees on unbiased advantage estimation and optimization correctness. Extensive experiments across diverse heterogeneous model combinations and reasoning benchmarks show that HACPO consistently improves all participating agents, outperforming GSPO by an average of 3.3\\% while using only half the rollout cost.",
+    "authors": [
+      "Zhixia Zhang",
+      "Zixuan Huang",
+      "Xin Xia",
+      "Deqing Wang",
+      "Fuzhen Zhuang",
+      "Shuai Ma",
+      "Ning Ding",
+      "Yaodong Yang",
+      "Jianxin Li",
+      "Yikun Ban"
+    ],
+    "likes": 91,
+    "published_date": "Mar 3",
+    "url": "https://huggingface.co/papers/2603.02604",
+    "date_collected": "2026-03-06T07:12:49.635861+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "이종 에이전트 협력 강화학습",
+      "abstract": "이종 에이전트 협력 강화학습(Heterogeneous Agent Collaborative Reinforcement Learning, HACRL)은 고립된 온 정책 최적화의 비효율성을 해결하는 새로운 학습 패러다임입니다. 이 방법은 상호 개선을 위해 이종 에이전트들이 훈련 중 확인된 롤아웃을 공유하면서 독립적으로 작동하는 협력적 최적화를 가능하게 합니다. LLM 기반의 다중 에이전트 강화학습(Multi-Agent Reinforcement Learning, MARL)과는 달리 HACRL은 조정된 배치가 필요하지 않으며 온/오프 정책 증류와 달리 이종 에이전트 간의 일방향 교사-학생 전송이 아닌 양방향 상호 학습을 가능하게 합니다."
+    },
+    "summary": "1. 이종 에이전트 협력 강화학습은 이종 에이전트들이 훈련 중 롤아웃을 공유하면서 협력적으로 최적화되는 학습 방법이며, 이는 다중 에이전트 강화학습과는 다른 효과를 가져옵니다.\n2. HACRL을 기반으로 한 HACPO 알고리즘은 롤아웃 공유를 통해 샘플 이용률을 최대화하고 에이전트 간 지식 전이를 달성하는 협력 강화학습 알고리즘입니다.\n3. 실험 결과, HACPO는 다양한 이종 모델 조합 및 추론 벤치마크에서 GSPO보다 롤아웃 비용의 절반만 사용하면서 모든 참여하는 에이전트를 꾸준히 개선시켜 성능을 향상시킵니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "UniG2U-Bench: Do Unified Models Advance Multimodal Understanding?",
+    "abstract": "Unified multimodal models have recently demonstrated strong generative capabilities, yet whether and when generation improves understanding remains unclear. Existing benchmarks lack a systematic exploration of the specific tasks where generation facilitates understanding. To this end, we introduce UniG2U-Bench, a comprehensive benchmark categorizing generation-to-understanding (G2U) evaluation into 7 regimes and 30 subtasks, requiring varying degrees of implicit or explicit visual transformations. Extensive evaluation of over 30 models reveals three core findings: 1) Unified models generally underperform their base Vision-Language Models (VLMs), and Generate-then-Answer (GtA) inference typically degrades performance relative to direct inference. 2) Consistent enhancements emerge in spatial intelligence, visual illusions, or multi-round reasoning subtasks, where enhanced spatial and shape perception, as well as multi-step intermediate image states, prove beneficial. 3) Tasks with similar reasoning structures and models sharing architectures exhibit correlated behaviors, suggesting that generation-understanding coupling induces class-consistent inductive biases over tasks, pretraining data, and model architectures. These findings highlight the necessity for more diverse training data and novel paradigms to fully unlock the potential of unified multimodal modeling.",
+    "authors": [
+      "Zimo Wen",
+      "Boxiu Li",
+      "Wanbo Zhang",
+      "Junxiang Lei",
+      "Xiaoyu Chen",
+      "Yijia Fan",
+      "Qi Zhang",
+      "Yujiang Wang",
+      "Lili Qiu",
+      "Bo Li",
+      "Ziwei Liu",
+      "Caihua Shan",
+      "Yifan Yang",
+      "Yifei Shen"
+    ],
+    "likes": 78,
+    "published_date": "Mar 3",
+    "url": "https://huggingface.co/papers/2603.03241",
+    "date_collected": "2026-03-06T07:12:49.637276+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "통합 모델이 다중모달 이해를 진전시키는가? - UniG2U-Bench",
+      "abstract": "최근 통합 다중모달 모델은 강력한 생성 능력을 증명했지만, 생성이 이해를 진전시키는지 여부는 여전히 명확하지 않다. 기존의 평가 기준은 생성이 이해를 촉진하는 특정 작업들을 체계적으로 탐구하지 못했다. 이에 우리는 생성으로 이해 평가(G2U)를 7가지 체제와 30개 하위 작업으로 분류하는 포괄적인 UniG2U-Bench를 소개한다. 이 벤치마크는 내포적 또는 명시적 시각적 변환의 정도에 따라 다양한 수준의 작업을 필요로 한다. 30개 이상의 모델을 철저히 평가한 결과, 세 가지 핵심 결과가 도출되었다: 1) 통합 모델은 일반적으로 기본 비전-언어 모델(VLMs)보다 성능이 떨어지며 생성 후 답변(GtA) 추론은 직접 추론에 비해 성능을 저하시킨다. 2) 공간 지각, 시각적 환상 또는 다중 라운드 추론 하위 작업에서 일관된 향상이 나타나는데, 개선된 공간 및 형태 지각 및 다단계 중간 이미지 상태가 유용하다. 3) 유사한 추론 구조 및 아키텍처를 공유하는 모델들이 상호 상관된 행동을 나타내며, 생성-이해 결합은 작업, 사전 학습 데이터 및 모델 아키텍처에 대한 클래스 일관적 귀납 편향을 초래한다. 이러한 결과는 통합 다중모달 모델링의 잠재력을 완전히 개방하기 위해 보다 다양한 학습 데이터와 새로운 패러다임의 필요성을 강조한다."
+    },
+    "summary": "1. 통합 모델은 기본 비전-언어 모델보다 성능이 나쁘며, 생성 후 답변 방식은 직접 추론보다 성능을 떨어뜨립니다.\n2. 공간 지각, 시각적 환상, 혹은 다중 라운드 추론과 같은 하위 작업에서 일관된 향상이 나타납니다.\n3. 비슷한 추론 구조와 아키텍처를 공유하는 모델들은 상호 연관된 행동을 보이며, 생성과 이해의 결합은 작업, 사전 학습 데이터, 모델 아키텍처에 대한 일관된 귀납적 편향을 초래합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+    "abstract": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting.",
+    "authors": [
+      "Weinan Dai",
+      "Hanlin Wu",
+      "Qiying Yu",
+      "Huan-ang Gao",
+      "Jiahao Li",
+      "Chengquan Jiang",
+      "Weiqiang Lou",
+      "Yufan Song",
+      "Hongli Yu",
+      "Jiaze Chen",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Jingjing Liu",
+      "Mingxuan Wang",
+      "Xin Liu",
+      "Hao Zhou"
+    ],
+    "likes": 74,
+    "published_date": "Feb 27",
+    "url": "https://huggingface.co/papers/2602.24286",
+    "date_collected": "2026-03-06T07:12:49.638798+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "CUDA 에이전트: 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습",
+      "abstract": "GPU 커널 최적화는 현대 딥러닝에서 기본적이지만 심층적인 하드웨어 전문 지식이 필요한 고도로 전문화된 작업이다. 대체로 프로그래밍에서 강력한 성능을 보이더라도 대규모 언어 모델은 torch.compile과 같은 컴파일러 기반 시스템에 비해 CUDA 커널 생성에서 경쟁력을 갖지 못한다. 기존의 CUDA 코드 생성 접근법은 학습이 필요 없는 정제를 의존하거나 고정된 다중 실행-피드백 루프 내에서 모델을 세밀하게 조정하지만, 이러한 패러다임은 모델의 본질적인 CUDA 최적화 능력을 근본적으로 개선하지 못해 성능 향상이 한계에 머무른다. 본 연구는 대규모 에이전트 강화학습 시스템인 CUDA 에이전트를 제시한다. 이 시스템은 확장 가능한 데이터 합성 파이프라인, 신뢰할 수 있는 보상 신호를 제공하기 위한 스킬 증진형 CUDA 개발 환경, 안정적인 훈련을 위한 강화학습 알고리즘 기술을 통해 CUDA 커널 전문 지식을 발전시킨다. CUDA 에이전트는 KernelBench에서 최상의 결과를 달성하여 KernelBench Level-1, Level-2 및 Level-3 분할에서 torch.compile보다 각각 100%, 100% 및 92% 빠른 속도를 제공하며, Claude Opus 4.5 및 Gemini 3 Pro와 같은 최강의 프로프리토리 모델을 가장 어려운 Level-3 설정에서 약 40% 능가한다."
+    },
+    "summary": "1. 현대 딥러닝에서 중요한 GPU 커널 최적화를 위해 고성능 CUDA 커널 생성을 위한 대규모 에이전트 강화학습인 CUDA 에이전트가 소개됨.\n2. CUDA 에이전트는 데이터 합성 파이프라인, CUDA 개발 환경, 강화학습 알고리즘 등을 통해 신뢰할 수 있는 보상 신호를 사용하여 CUDA 커널 전문 지식을 개발함.\n3. CUDA 에이전트는 KernelBench에서 torch.compile보다 빠른 속도를 제공하며, 다른 상용 모델보다 뛰어난 결과를 보임.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Beyond Language Modeling: An Exploration of Multimodal Pretraining",
+    "abstract": "The visual world offers a critical axis for advancing foundation models beyond language. Despite growing interest in this direction, the design space for native multimodal models remains opaque. We provide empirical clarity through controlled, from-scratch pretraining experiments, isolating the factors that govern multimodal pretraining without interference from language pretraining. We adopt the Transfusion framework, using next-token prediction for language and diffusion for vision, to train on diverse data including text, video, image-text pairs, and even action-conditioned video. Our experiments yield four key insights: (i) Representation Autoencoder (RAE) provides an optimal unified visual representation by excelling at both visual understanding and generation; (ii) visual and language data are complementary and yield synergy for downstream capabilities; (iii) unified multimodal pretraining leads naturally to world modeling, with capabilities emerging from general training; and (iv) Mixture-of-Experts (MoE) enables efficient and effective multimodal scaling while naturally inducing modality specialization. Through IsoFLOP analysis, we compute scaling laws for both modalities and uncover a scaling asymmetry: vision is significantly more data-hungry than language. We demonstrate that the MoE architecture harmonizes this scaling asymmetry by providing the high model capacity required by language while accommodating the data-intensive nature of vision, paving the way for truly unified multimodal models.",
+    "authors": [
+      "Shengbang Tong",
+      "David Fan",
+      "John Nguyen",
+      "Ellis Brown",
+      "Gaoyue Zhou",
+      "Shengyi Qian",
+      "Boyang Zheng",
+      "Théophane Vallaeys",
+      "Junlin Han",
+      "Rob Fergus",
+      "Naila Murray",
+      "Marjan Ghazvininejad",
+      "Mike Lewis",
+      "Nicolas Ballas",
+      "Amir Bar",
+      "Michael Rabbat",
+      "Jakob Verbeek",
+      "Luke Zettlemoyer",
+      "Koustuv Sinha",
+      "Yann LeCun",
+      "Saining Xie"
+    ],
+    "likes": 65,
+    "published_date": "Mar 3",
+    "url": "https://huggingface.co/papers/2603.03276",
+    "date_collected": "2026-03-06T07:12:49.640510+09:00",
+    "week": "2026-W10",
+    "translation": {
+      "title": "언어 모델링을 넘어서: 다중 모달 사전훈련의 탐구",
+      "abstract": "시각 세계는 언어를 넘어서 선도 모델을 발전시키는 중요한 방향을 제공합니다. 이 방향에 대한 관심이 증가함에도 불구하고, 본래의 다중 모달 모델의 설계 공간은 불투명합니다. 우리는 언어 사전훈련의 간섭 없이 다중 모달 사전훈련을 지배하는 요인들을 격리시키는 조절된 실험을 통해 경험적으로 명확성을 제공합니다. 우리는 다양한 데이터를 활용하기 위해 전이 (Transfusion) 프레임워크를 채택하였는데, 이는 다음 토큰 예측을 위해 언어를 사용하고 시각을 위해 확산을 사용합니다. 우리의 실험은 네 가지 주요 통찰을 제공합니다: (i) 표현 자동 인코더 (RAE)는 시각 이해와 생성 모두에서 뛰어난 일원화된 시각적 표현을 제공합니다; (ii) 시각 및 언어 데이터는 보완적이며, 하류 기능에 대한 시너지를 발휘합니다; (iii) 통합된 다중 모달 사전훈련은 자연스럽게 세계 모델링으로 이어지며, 일반적 훈련에서 기능이 나타납니다; 그리고 (iv) 전문가 집합 (MoE)은 효율적이고 효과적인 다중 모달 확장을 가능하게 하며, 자연스럽게 양식 특수화를 유도합니다. IsoFLOP 분석을 통해, 양식에 대한 확장 법칙을 계산하고 시감적인 불균형을 발견합니다: 시감은 언어보다 훨씬 많은 데이터를 필요로 합니다. MoE 아키텍처가 이 확장 불균형을 조화시킨다는 것을 시연합니다. 이는 언어에 필요한 높은 모델 용량을 제공하면서 시각의 데이터 집약적인 성격을 수용하여 실제로 통합된 다중 모달 모델의 길을 열어줍니다."
+    },
+    "summary": "1. 표현 자동 인코더 (RAE)는 시각 이해와 생성에 뛰어난 통합된 시각적 표현을 제공합니다.\n2. 시각 및 언어 데이터는 상호 보완적이며, 하류 능력에 대한 시너지를 발휘합니다.\n3. 통합된 다중 모달 사전훈련은 세계 모델링으로 자연스럽게 이어지며, MoE는 효과적인 다중 모달 확장을 가능하게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

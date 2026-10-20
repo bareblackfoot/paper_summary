@@ -1,0 +1,121 @@
+=== Paper Collection Started at Tue Dec 23 22:08:27 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W52
+URL: https://huggingface.co/papers/week/2025-W52
+Found 10 papers in weekly view
+Fetching likes for: DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI
+Fetching likes for: Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows
+Fetching likes for: PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence
+Fetching likes for: Robust-R1: Degradation-Aware Reasoning for Robust Visual Understanding
+Fetching likes for: The Prism Hypothesis: Harmonizing Semantic and Pixel Representations via Unified Autoencoding
+Fetching likes for: When Reasoning Meets Its Laws
+Fetching likes for: Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience
+Fetching likes for: Region-Constraint In-Context Generation for Instructional Video Editing
+Fetching likes for: Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing
+Fetching likes for: 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation
+Selected top 10 papers by likes:
+1. DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI (155 likes)
+2. Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows (94 likes)
+3. PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence (66 likes)
+4. Robust-R1: Degradation-Aware Reasoning for Robust Visual Understanding (53 likes)
+5. The Prism Hypothesis: Harmonizing Semantic and Pixel Representations via Unified Autoencoding (51 likes)
+6. When Reasoning Meets Its Laws (50 likes)
+7. Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience (45 likes)
+8. Region-Constraint In-Context Generation for Instructional Video Editing (38 likes)
+9. Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing (34 likes)
+10. 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation (34 likes)
+Found abstract: The rapidly growing demand for high-quality data in Large Language Models (LLMs) has intensified the...
+Processed paper: DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI
+Found abstract: Despite advances in scientific AI, a coherent framework for Scientific General Intelligence (SGI)-th...
+Processed paper: Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows
+Found abstract: Robotic generalization relies on physical intelligence: the ability to reason about state changes, c...
+Processed paper: PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence
+Found abstract: Multimodal Large Language Models struggle to maintain reliable performance under extreme real-world ...
+Processed paper: Robust-R1: Degradation-Aware Reasoning for Robust Visual Understanding
+Found abstract: Deep representations across modalities are inherently intertwined. In this paper, we systematically ...
+Processed paper: The Prism Hypothesis: Harmonizing Semantic and Pixel Representations via Unified Autoencoding
+Found abstract: Despite the superior performance of Large Reasoning Models (LRMs), their reasoning behaviors are oft...
+Processed paper: When Reasoning Meets Its Laws
+Found abstract: Large language models have recently made significant progress to generate rigorous mathematical proo...
+Processed paper: Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience
+Found abstract: The In-context generation paradigm recently has demonstrated strong power in instructional image edi...
+Processed paper: Region-Constraint In-Context Generation for Instructional Video Editing
+Found abstract: Modern Latent Diffusion Models (LDMs) typically operate in low-level Variational Autoencoder (VAE) l...
+Processed paper: Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing
+Found abstract: Despite advances in Multimodal LLMs (MLLMs), their ability to reason over 3D structures and temporal...
+Processed paper: 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  78
+Update date_collected: 2025-12-24T07:08:35.707564+09:00  ->  2025-12-23T07:08:21.386265+09:00
+
+Processing paper 3/10
+Title: PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  63
+Update date_collected: 2025-12-24T07:08:35.708993+09:00  ->  2025-12-23T07:08:21.387668+09:00
+
+Processing paper 4/10
+Title: Robust-R1: Degradation-Aware Reasoning for Robust Visual Understanding
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: The Prism Hypothesis: Harmonizing Semantic and Pixel Representations via Unified Autoencoding
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: When Reasoning Meets Its Laws
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  48
+Update date_collected: 2025-12-24T07:08:35.712725+09:00  ->  2025-12-23T07:08:21.388893+09:00
+
+Processing paper 7/10
+Title: Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience
+Paper already exists, checking if translation is complete...
+Update likes: 45  ->  37
+Update date_collected: 2025-12-24T07:08:35.714586+09:00  ->  2025-12-23T07:08:21.390725+09:00
+
+Processing paper 8/10
+Title: Region-Constraint In-Context Generation for Instructional Video Editing
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  29
+Update date_collected: 2025-12-24T07:08:35.717358+09:00  ->  2025-12-23T07:08:21.392277+09:00
+
+Processing paper 10/10
+Title: 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  28
+Update date_collected: 2025-12-24T07:08:35.718603+09:00  ->  2025-12-23T07:08:21.393600+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W52.json...
+
+Updating Notion database...
+Creating new paper: 데이터 플로우: 데이터 중심 AI 시대의 통합 데이터 준비와 워크플로 자동화를 위한 LLM 주도 프레임워크
+Updating paper: LLMs와 과학자 맞춤 워크플로우로 과학 일반 지능 탐구 (likes: 78 -> 94)
+Updating paper: PhysBrain: 인간 내적 데이터, 시각 언어 모델로부터 물리적 지능으로의 다리 역할 (likes: 63 -> 66)
+Creating new paper: 강인한 시각 이해를 위한 강인한 이유 추론
+Creating new paper: 프리즘 가설: 통합된 오토인코더를 통해 의미론적 및 픽셀 표현 조화시키기
+Updating paper: 추론과 그의 법칙 (likes: 48 -> 50)
+Updating paper: Seed-Prover 1.5: 학부 수준 이상의 정리 증명 마스터링을 향한 경험 학습 (likes: 37 -> 45)
+Creating new paper: 지역 제약 조건을 고려한 지시 영상 편집을 위한 내용 생성 (Region-Constraint In-Context Generation for Instructional Video Editing)
+Updating paper: 의미와 재구성 둘 다 중요합니다: 텍스트-이미지 생성과 편집을 위한 표현 인코더 개선하기 (likes: 29 -> 34)
+Updating paper: 4D-RGPT: 영역 수준 4차원 이해를 향하여 인지적 증류를 통해 (likes: 28 -> 34)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Dec 23 22:10:11 UTC 2025 ===
+

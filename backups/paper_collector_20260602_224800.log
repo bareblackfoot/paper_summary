@@ -1,0 +1,111 @@
+=== Paper Collection Started at Mon Jun  1 22:47:03 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W23
+URL: https://huggingface.co/papers/week/2026-W23
+Found 10 papers in weekly view
+Fetching likes for: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Fetching likes for: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Fetching likes for: Trust-Region Behavior Blending for On-Policy Distillation
+Fetching likes for: Representation Forcing for Bottleneck-Free Unified Multimodal Models
+Fetching likes for: SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue
+Fetching likes for: Mellum2 Technical Report
+Fetching likes for: LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards
+Fetching likes for: Function2Scene: 3D Indoor Scene Layout from Functional Specifications
+Fetching likes for: GGT-100K: Generative Ground Truth for Generalizable Real-World Image Restoration
+Fetching likes for: Towards Streaming Synchronized Spatial Audio Generation via Autoregressive Diffusion Transformer
+Selected top 10 papers by likes:
+1. GrepSeek: Training Search Agents for Direct Corpus Interaction (83 likes)
+2. COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation (70 likes)
+3. Trust-Region Behavior Blending for On-Policy Distillation (51 likes)
+4. Representation Forcing for Bottleneck-Free Unified Multimodal Models (42 likes)
+5. SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue (36 likes)
+6. Mellum2 Technical Report (34 likes)
+7. LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards (31 likes)
+8. Function2Scene: 3D Indoor Scene Layout from Functional Specifications (31 likes)
+9. GGT-100K: Generative Ground Truth for Generalizable Real-World Image Restoration (30 likes)
+10. Towards Streaming Synchronized Spatial Audio Generation via Autoregressive Diffusion Transformer (27 likes)
+Found abstract: Large Language Model (LLM) search agents have shown strong promise for knowledge-intensive language ...
+Processed paper: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Found abstract: LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded ...
+Processed paper: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Found abstract: On-policy distillation (OPD) trains a student on prefixes sampled from its own policy while matching...
+Processed paper: Trust-Region Behavior Blending for On-Policy Distillation
+Found abstract: Unified multimodal models (UMMs) aim to handle perception and generation in a single model. Yet exis...
+Processed paper: Representation Forcing for Bottleneck-Free Unified Multimodal Models
+Found abstract: Zero-shot text-to-speech (TTS) has improved substantially for single-speaker synthesis, yet expressi...
+Processed paper: SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue
+Found abstract: We present Mellum 2, an open-weight 12B-parameter Mixture-of-Experts (MoE) language model with 2.5B ...
+Processed paper: Mellum2 Technical Report
+Found abstract: Long-context reasoning remains a central challenge for large language models, which often fail to lo...
+Processed paper: LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards
+Found abstract: Most text-driven 3D indoor scene synthesis methods generate rooms from object-centric prompts, askin...
+Processed paper: Function2Scene: 3D Indoor Scene Layout from Functional Specifications
+Found abstract: Real-world image restoration (IR) is bottlenecked by the scarcity of high-quality paired training da...
+Processed paper: GGT-100K: Generative Ground Truth for Generalizable Real-World Image Restoration
+Found abstract: Real-time and accurate spatial audio generation is pivotal for delivering an immersive experience. H...
+Processed paper: Towards Streaming Synchronized Spatial Audio Generation via Autoregressive Diffusion Transformer
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: GrepSeek: Training Search Agents for Direct Corpus Interaction
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Trust-Region Behavior Blending for On-Policy Distillation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Representation Forcing for Bottleneck-Free Unified Multimodal Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Mellum2 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Function2Scene: 3D Indoor Scene Layout from Functional Specifications
+Paper already exists, checking if translation is complete...
+Update likes: 31  ->  1
+Update date_collected: 2026-06-02T07:47:11.883415+09:00  ->  2026-06-01T10:53:27.863204+09:00
+
+Processing paper 9/10
+Title: GGT-100K: Generative Ground Truth for Generalizable Real-World Image Restoration
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Towards Streaming Synchronized Spatial Audio Generation via Autoregressive Diffusion Transformer
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W23.json...
+
+Updating Notion database...
+Creating new paper: GrepSeek: 직접 말뭉치 상호작용을 위한 검색 에이전트 훈련
+Creating new paper: COLLEAGUE.SKILL: 전문가 지식 증류를 통한 자동 AI 기술 생성
+Creating new paper: Trust-Region Behavior Blending를 위한 신뢰 영역 행동 혼합
+Creating new paper: 병목 현상 없는 통합 다중모달 모델을 위한 표현 강제
+Creating new paper: SwanVoice: 표현력 있는 장문형 제로샷 음성 합성 (Zero-Shot Speech Synthesis) 모노로그 및 대화용
+Creating new paper: Mellum2 기술 보고서
+Creating new paper: LongTraceRL: 탐색 에이전트 궤적에서 루브릭 보상과 함께 장기 문맥 추론 학습하기
+Updating paper: 기능2장면: 기능 사양에서 3D 실내 공간 배치 (likes: 1 -> 31)
+Creating new paper: 일반화 가능한 실제 세계 이미지 복원을 위한 생성적 실측 기초 모델 (GGT-100K)
+Creating new paper: 자율 확산 트랜스포머를 통한 스트리밍 동기화 공간 오디오 생성 방향
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun  1 22:48:50 UTC 2026 ===
+

@@ -1,0 +1,129 @@
+=== Paper Collection Started at Thu Jul 23 23:03:30 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W30
+URL: https://huggingface.co/papers/week/2026-W30
+Found 10 papers in weekly view
+Fetching likes for: ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU
+Fetching likes for: RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model
+Fetching likes for: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Fetching likes for: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Fetching likes for: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Fetching likes for: DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines
+Fetching likes for: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Fetching likes for: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Fetching likes for: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Fetching likes for: Loop the Loopies!
+Selected top 10 papers by likes:
+1. ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU (200 likes)
+2. RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model (191 likes)
+3. TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs (161 likes)
+4. RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM (140 likes)
+5. RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources (137 likes)
+6. DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines (123 likes)
+7. DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment (87 likes)
+8. EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World (85 likes)
+9. SWE-Pruner Pro: The Coder LLM Already Knows What to Prune (74 likes)
+10. Loop the Loopies! (70 likes)
+Found abstract: We present ABot-World-0, an action-conditioned video world model for real-time, long-horizon closed-...
+Processed paper: ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU
+Found abstract: We present RynnBrain 1.1, a family of embodied foundation models spanning 2B, 9B, and 122B-A10B scal...
+Processed paper: RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model
+Found abstract: Video multimodal large language models (MLLMs) can describe what happens in a video, but rarely iden...
+Processed paper: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Found abstract: Graph retrieval-augmented generation (GraphRAG) enhances large language models with structured knowl...
+Processed paper: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Found abstract: Skills are a useful abstraction for software agents, turning human and agent experience into reusabl...
+Processed paper: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Found abstract: Large language models (LLMs) are increasingly used to automate data-processing workflows, yet coding...
+Processed paper: DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines
+Found abstract: Training tool-use agents to improve from their own experience remains challenging, as supervised fin...
+Processed paper: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Found abstract: This paper introduces EvolvingWorld, a framework and benchmark for character and world co-evolution ...
+Processed paper: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Found abstract: Pruning long context for coding agents has been a vital technology for efficient context management....
+Processed paper: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Found abstract: We present Loopie, the most powerful looped Transformer to date. The Loopie series consists of two M...
+Processed paper: Loop the Loopies!
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU
+Paper already exists, checking if translation is complete...
+Update likes: 200  ->  165
+Update date_collected: 2026-07-24T08:03:39.825389+09:00  ->  2026-07-23T08:10:12.231652+09:00
+
+Processing paper 2/10
+Title: RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 191  ->  186
+Update date_collected: 2026-07-24T08:03:39.829437+09:00  ->  2026-07-23T08:10:12.228671+09:00
+
+Processing paper 3/10
+Title: TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 161  ->  157
+Update date_collected: 2026-07-24T08:03:39.833138+09:00  ->  2026-07-23T08:10:12.234182+09:00
+
+Processing paper 4/10
+Title: RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM
+Paper already exists, checking if translation is complete...
+Update likes: 140  ->  138
+Update date_collected: 2026-07-24T08:03:39.836330+09:00  ->  2026-07-23T08:10:12.236558+09:00
+
+Processing paper 5/10
+Title: RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources
+Paper already exists, checking if translation is complete...
+Update likes: 137  ->  137
+Update date_collected: 2026-07-24T08:03:39.839760+09:00  ->  2026-07-23T08:10:12.238902+09:00
+
+Processing paper 6/10
+Title: DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines
+Paper already exists, checking if translation is complete...
+Update likes: 123  ->  120
+Update date_collected: 2026-07-24T08:03:39.842946+09:00  ->  2026-07-23T08:10:12.241142+09:00
+
+Processing paper 7/10
+Title: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  86
+Update date_collected: 2026-07-24T08:03:39.846183+09:00  ->  2026-07-23T08:10:12.243347+09:00
+
+Processing paper 8/10
+Title: EvolvingWorld: An Open-Schema Framework for Co-Evolving Role-Play Agents and World Model in Interactive Literary World
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  83
+Update date_collected: 2026-07-24T08:03:39.849242+09:00  ->  2026-07-23T08:10:12.245425+09:00
+
+Processing paper 9/10
+Title: SWE-Pruner Pro: The Coder LLM Already Knows What to Prune
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  71
+Update date_collected: 2026-07-24T08:03:39.852323+09:00  ->  2026-07-23T08:10:12.247533+09:00
+
+Processing paper 10/10
+Title: Loop the Loopies!
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  67
+Update date_collected: 2026-07-24T08:03:39.855168+09:00  ->  2026-07-23T08:10:12.249446+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W30.json...
+
+Updating Notion database...
+Updating paper: 단일 데스크탑 GPU에서 무한한 상호작용 월드 롤아웃을 위한 ABot-World-0 (likes: 165 -> 200)
+Updating paper: RynnBrain 1.1: 더 강력하고 일반화된 신체화된 기반 모델을 향해 (likes: 186 -> 191)
+Updating paper: TimeLens2: 멀티모달 LLM을 활용한 다목적 비디오 시간 기준화 (likes: 157 -> 161)
+Updating paper: RAGU: 소형 도메인 적응 LLM을 갖춘 다단계 GraphRAG 엔진 (likes: 138 -> 140)
+Paper already exists with same likes count: RESOURCE2SKILL: 인간이 만든 다중 모달 자원으로부터 실행 가능한 에이전트 스킬 추출
+Updating paper: DataFlow-Harness: 편집 가능한 LLM 데이터 파이프라인을 구축하기 위한 기반이 되는 코드 에이전트 플랫폼 (likes: 120 -> 123)
+Updating paper: DeepSearch-World: 베리파이어 환경에서 깊이 탐색 에이전트들을 위한 자기 증류 (likes: 86 -> 87)
+Updating paper: 진화하는 세상: 상호작용적인 문학 세계에서 역할 연기 에이전트와 세계 모델의 공동 진화를 위한 오픈 스키마 프레임워크 (likes: 83 -> 85)
+Updating paper: SWE-Pruner Pro: 코더 LLM이 이미 무엇을 다듬어야 하는지 알고 있습니다 (likes: 71 -> 74)
+Updating paper: 루프 더 루피! (likes: 67 -> 70)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jul 23 23:04:28 UTC 2026 ===
+

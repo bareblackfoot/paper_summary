@@ -1,0 +1,296 @@
+[
+  {
+    "title": "AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs",
+    "abstract": "In this paper, we introduce a novel learning paradigm for adaptive Large\nLanguage Model (LLM) agents that eliminates the need for fine-tuning the\nunderlying LLMs. Existing approaches are often either rigid, relying on static,\nhandcrafted reflection workflows, or computationally intensive, requiring\ngradient updates of LLM model parameters. In contrast, our method enables\nlow-cost continual adaptation via memory-based online reinforcement learning.\nWe formalise this as a Memory-augmented Markov Decision Process (M-MDP),\nequipped with a neural case-selection policy to guide action decisions. Past\nexperiences are stored in an episodic memory, either differentiable or\nnon-parametric. The policy is continually updated based on environmental\nfeedback through a memory rewriting mechanism, whereas policy improvement is\nachieved through efficient memory reading (retrieval). We instantiate our agent\nmodel in the deep research setting, namely AgentFly, which attains top-1 on\nGAIA validation (87.88% Pass@3) and 79.40% on the test set. It reaches\n66.6% F1 and 80.4% PM on the DeepResearcher dataset, outperforming the\nstate-of-the-art training-based method, while case-based memory adds 4.7% to\n9.6% absolute points on out-of-distribution tasks. Our approach offers a\nscalable and efficient pathway for developing generalist LLM agents capable of\ncontinuous, real-time learning without gradient updates, advancing machine\nlearning towards open-ended skill acquisition and deep research scenarios. The\ncode is available at https://github.com/Agent-on-the-Fly/AgentFly.",
+    "authors": [
+      "Huichi Zhou",
+      "Yihang Chen",
+      "Siyuan Guo",
+      "Xue Yan",
+      "Kin Hei Lee",
+      "Zihan Wang",
+      "Ka Yiu Lee",
+      "Guchun Zhang",
+      "Kun Shao",
+      "Linyi Yang",
+      "Jun Wang"
+    ],
+    "likes": 52,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16153",
+    "date_collected": "2025-08-26T07:08:07.687128+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "AgentFly: LLM 에이전트 파인튜닝에 파인튜닝 없이",
+      "abstract": "본 논문에서는 기존의 정적이거나 계산량이 많은 Large Language Model (LLM) 에이전트 파인튜닝 방법을 제거하는 새로운 학습 패러다임을 소개합니다. 저희 방법은 저비용의 지속적 적응을 가능케 하며, 메모리 기반 온라인 강화학습을 통해 이루어집니다. 이를 Markov Decision Process (M-MDP)와 신경 케이스 선택 정책으로 형식화하고, 환경 피드백에 근거해 정책을 지속적으로 업데이트하며 메모리 읽기로 정책 향상을 이룹니다. AgentFly로 구현한 모델은 GAIA 검증에서 1위를 차지하고 DeepResearcher 데이터셋에서 최첨단 학습 기반 방법을 능가합니다. 또한, 케이스 기반 메모리는 분야를 넘어 성과를 높입니다."
+    },
+    "summary": "1. 파인튜닝 없이 LLM 에이전트를 파인튜닝하는 새로운 학습 패러다임 소개\n2. 메모리 기반 온라인 강화학습을 통한 저렴한 지속적 적응 가능\n3. AgentFly 모델이 다양한 데이터셋에서 우수한 성과를 보이며, 케이스 기반 메모리가 성능 향상에 긍정적인 영향을 미침",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for\n  Long-Horizon Tasks",
+    "abstract": "Language-guided long-horizon mobile manipulation has long been a grand\nchallenge in embodied semantic reasoning, generalizable manipulation, and\nadaptive locomotion. Three fundamental limitations hinder progress: First,\nalthough large language models have improved spatial reasoning and task\nplanning through semantic priors, existing implementations remain confined to\ntabletop scenarios, failing to address the constrained perception and limited\nactuation ranges of mobile platforms. Second, current manipulation strategies\nexhibit insufficient generalization when confronted with the diverse object\nconfigurations encountered in open-world environments. Third, while crucial for\npractical deployment, the dual requirement of maintaining high platform\nmaneuverability alongside precise end-effector control in unstructured settings\nremains understudied.\n  In this work, we present ODYSSEY, a unified mobile manipulation framework for\nagile quadruped robots equipped with manipulators, which seamlessly integrates\nhigh-level task planning with low-level whole-body control. To address the\nchallenge of egocentric perception in language-conditioned tasks, we introduce\na hierarchical planner powered by a vision-language model, enabling\nlong-horizon instruction decomposition and precise action execution. At the\ncontrol level, our novel whole-body policy achieves robust coordination across\nchallenging terrains. We further present the first benchmark for long-horizon\nmobile manipulation, evaluating diverse indoor and outdoor scenarios. Through\nsuccessful sim-to-real transfer, we demonstrate the system's generalization and\nrobustness in real-world deployments, underscoring the practicality of legged\nmanipulators in unstructured environments. Our work advances the feasibility of\ngeneralized robotic assistants capable of complex, dynamic tasks. Our project\npage: https://kaijwang.github.io/odyssey.github.io/",
+    "authors": [
+      "Kaijun Wang",
+      "Liqin Lu",
+      "Mingyu Liu",
+      "Jianuo Jiang",
+      "Zeju Li",
+      "Bolin Zhang",
+      "Wancai Zheng",
+      "Xinyi Yu",
+      "Hao Chen",
+      "Chunhua Shen"
+    ],
+    "likes": 34,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.08240",
+    "date_collected": "2025-08-26T07:08:07.688515+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "오딧세이: 장기간 작업을 위한 오픈 월드 사분다리 탐험과 조작",
+      "abstract": "언어 안내 기반의 장기간 이동 조작은 존재하는 의미론적 추론, 일반적인 조작, 적응형 이동에서 오랫동안 거대한 도전 과제였습니다. 이 연구에서는 이러한 제한을 극복하기 위해 유연한 네 다리로봇에 조작장치를 갖춘 통합 모바일 조작 프레임워크인 오딧세이를 제시합니다."
+    },
+    "summary": "1. 대규모 언어 모델은 공간 추론 및 작업 계획을 개선했지만 기존 구현은 탁상 시나리오에 국한되어 이동 플랫폼의 제약된 지각 및 제한된 실행 범위에 대응하지 못합니다.\n2. 현재의 조작 전략은 오픈 월드 환경에서 다양한 객체 구성에 직면했을 때 불충분한 일반화를 보입니다.\n3. 무구조 환경에서 높은 플랫폼 기동성을 유지하면서 정밀한 종단단제제 제어를 유지해야 하는 이중 요구 사항은 아직 연구되지 않은 상태입니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains\n  RLVR",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently emerged as\na key paradigm for post-training Large Language Models (LLMs), particularly for\ncomplex reasoning tasks. However, vanilla RLVR training has been shown to\nimprove Pass@1 performance at the expense of policy entropy, leading to reduced\ngeneration diversity and limiting the Pass@k performance, which typically\nrepresents the upper bound of LLM reasoning capability. In this paper, we\nsystematically analyze the policy's generation diversity from the perspective\nof training problems and find that augmenting and updating training problems\nhelps mitigate entropy collapse during training. Based on these observations,\nwe propose an online Self-play with Variational problem Synthesis (SvS)\nstrategy for RLVR training, which uses the policy's correct solutions to\nsynthesize variational problems while ensuring their reference answers remain\nidentical to the originals. This self-improving strategy effectively maintains\npolicy entropy during training and substantially improves Pass@k compared with\nstandard RLVR, sustaining prolonged improvements and achieving absolute gains\nof 18.3% and 22.8% in Pass@32 performance on the competition-level AIME24 and\nAIME25 benchmarks. Experiments on 12 reasoning benchmarks across varying model\nsizes from 3B to 32B consistently demonstrate the generalizability and\nrobustness of SvS.",
+    "authors": [
+      "Xiao Liang",
+      "Zhongzhi Li",
+      "Yeyun Gong",
+      "Yelong Shen",
+      "Ying Nian Wu",
+      "Zhijiang Guo",
+      "Weizhu Chen"
+    ],
+    "likes": 27,
+    "published_date": "Aug 19",
+    "url": "https://huggingface.co/papers/2508.14029",
+    "date_collected": "2025-08-26T07:08:07.689731+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "Pass@1 이상: 변이 문제 합성과 함께하는 Self-Play가 지속시키는 RLVR",
+      "abstract": "강인한 언어 모델 (LLM) 후 훈련을 위한 강화 학습 및 검증 가능 보상 (RLVR)는 최근에 복잡한 추론 작업을 위한 핵심 패러다임으로 등장했습니다. 그러나 기본 RLVR 훈련은 Pass@1 성능을 향상시켰지만, 정책 엔트로피를 희생하여 생성 다양성을 줄이고 일반적으로 LLM 추론 능력의 상한을 나타내는 Pass@k 성능 제한을 유발하였습니다. 이 논문에서는 훈련 문제 관점에서 정책의 생성 다양성을 체계적으로 분석하여 훈련 문제를 보강하고 업데이트하는 것이 엔트로피 붕괴를 완화하는 데 도움이 된다는 것을 발견했습니다. 이러한 관찰에 기초하여 RLVR 훈련을 위한 Self-play with Variational problem Synthesis (SvS) 전략을 제안합니다."
+    },
+    "summary": "1. Pass@k 성능을 획기적으로 향상시키는 RLVR 훈련 전략으로, 문제의 다양성을 유지하고 개선하는 Self-play with Variational problem Synthesis (SvS)가 소개되었습니다.\n2. SvS는 정책의 옳은 해결책을 활용하여 변이 문제를 합성하고, 원본과 동일한 해답을 보장하는 자기 개선 전략을 구현하여 훈련 중에 정책 엔트로피를 효과적으로 유지하며, 표준 RLVR 대비 Pass@k 성능을 크게 향상시켰습니다.\n3. 실험 결과는 SvS가 AIME24 및 AIME25의 경쟁 수준 벤치마크에서 Pass@32 성능의 절대 증가율을 18.3% 및 22.8% 달성하며, 3B에서 32B까지 다양한 모델 크기를 대상으로 하는 12개 추론 벤치마크에서 일관되게 일반화되고 견고함을 보여주었습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "EgoTwin: Dreaming Body and View in First Person",
+    "abstract": "While exocentric video synthesis has achieved great progress, egocentric\nvideo generation remains largely underexplored, which requires modeling\nfirst-person view content along with camera motion patterns induced by the\nwearer's body movements. To bridge this gap, we introduce a novel task of joint\negocentric video and human motion generation, characterized by two key\nchallenges: 1) Viewpoint Alignment: the camera trajectory in the generated\nvideo must accurately align with the head trajectory derived from human motion;\n2) Causal Interplay: the synthesized human motion must causally align with the\nobserved visual dynamics across adjacent video frames. To address these\nchallenges, we propose EgoTwin, a joint video-motion generation framework built\non the diffusion transformer architecture. Specifically, EgoTwin introduces a\nhead-centric motion representation that anchors the human motion to the head\njoint and incorporates a cybernetics-inspired interaction mechanism that\nexplicitly captures the causal interplay between video and motion within\nattention operations. For comprehensive evaluation, we curate a large-scale\nreal-world dataset of synchronized text-video-motion triplets and design novel\nmetrics to assess video-motion consistency. Extensive experiments demonstrate\nthe effectiveness of the EgoTwin framework.",
+    "authors": [
+      "Jingqiao Xiu",
+      "Fangzhou Hong",
+      "Yicong Li",
+      "Mengze Li",
+      "Wentao Wang",
+      "Sirui Han",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "likes": 14,
+    "published_date": "Aug 18",
+    "url": "https://huggingface.co/papers/2508.13013",
+    "date_collected": "2025-08-26T07:08:07.690973+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "자아쌍: 일인칭 시점의 몸과 시야를 꿈꾸다",
+      "abstract": "외부에서의 비디오 합성 기술은 큰 발전을 이루었지만, 자아중심 비디오 생성은 여전히 충분히 탐구되지 않았는데, 이는 착용자의 몸의 움직임에 의해 유발되는 카메라 이동 패턴과 함께 일인칭 시점 콘텐츠를 모델링하는 것을 필요로 합니다. 이 간극을 메우기 위해 우리는 결합된 자아중심 비디오와 인간 모션 생성의 독창적인 과제를 제안하는데, 이것은 다음 두 가지 주요 도전에 의해 특징지어집니다: 1) 시점 조정: 생성된 비디오의 카메라 궤적은 인간 모션에서 파생된 머리 궤적과 정확하게 일치해야 합니다; 2) 인과적 상호작용: 합성된 인간 모션은 인접 비디오 프레임 간의 관측된 시각적 동역학과 인과적으로 일치하여야 합니다. 이러한 도전에 대응하기 위해 우리는 확산 트랜스포머 아키텍처를 기반으로 한 결합된 비디오-모션 생성 프레임워크인 자아쌍을 제안합니다. 구체적으로 자아쌍은 머리 중심적 모션 표현을 도입하여 인간 모션을 머리 관절에 고정시키고 비디오와 모션 간의 인과적 상호작용을 명시적으로 포착하는 사이버네틱스에 영감을 받은 상호작용 메커니즘을 수용합니다. 체계적인 평가를 위해 우리는 대규모 실제 세계 데이터셋을 동기화된 텍스트-비디오-모션 세트로 구성하고 비디오-모션 일관성을 평가하기 위한 새로운 지표를 설계합니다. 포괄적인 실험은 자아쌍 프레임워크의 효과를 입증합니다."
+    },
+    "summary": "1. 자아쌍은 일인칭 비디오와 인간 모션을 동시에 생성하는데, 머리 기반 모션 표현과 비디오-모션 간의 인과적 상호작용 메커니즘을 활용하여 시점 조정과 인과적 상호작용 도전에 대처합니다.\n2. 대규모 데이터셋과 새로운 평가 메트릭을 활용하여 자아쌍 프레임워크의 효과를 실험적으로 입증합니다.\n3. 확산 트랜스포머 아키텍처를 기반으로 한 자아쌍은 일인칭 시점 콘텐츠 생성 분야에서 효과적임을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "CRISP: Persistent Concept Unlearning via Sparse Autoencoders",
+    "abstract": "As large language models (LLMs) are increasingly deployed in real-world\napplications, the need to selectively remove unwanted knowledge while\npreserving model utility has become paramount. Recent work has explored sparse\nautoencoders (SAEs) to perform precise interventions on monosemantic features.\nHowever, most SAE-based methods operate at inference time, which does not\ncreate persistent changes in the model's parameters. Such interventions can be\nbypassed or reversed by malicious actors with parameter access. We introduce\nCRISP, a parameter-efficient method for persistent concept unlearning using\nSAEs. CRISP automatically identifies salient SAE features across multiple\nlayers and suppresses their activations. We experiment with two LLMs and show\nthat our method outperforms prior approaches on safety-critical unlearning\ntasks from the WMDP benchmark, successfully removing harmful knowledge while\npreserving general and in-domain capabilities. Feature-level analysis reveals\nthat CRISP achieves semantically coherent separation between target and benign\nconcepts, allowing precise suppression of the target features.",
+    "authors": [
+      "Tomer Ashuach",
+      "Dana Arad",
+      "Aaron Mueller",
+      "Martin Tutek",
+      "Yonatan Belinkov"
+    ],
+    "likes": 11,
+    "published_date": "Aug 19",
+    "url": "https://huggingface.co/papers/2508.13650",
+    "date_collected": "2025-08-26T07:08:07.692087+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "CRISP: 희소 오토인코더를 통한 영구 개념 언러닝",
+      "abstract": "대형 언어 모델(LLM)이 실제 응용 프로그램에서 점점 더 많이 사용되는 가운데, 모델의 유틸리티를 보존하면서 불필요한 지식을 선택적으로 제거하는 필요성이 중요해지고 있습니다. 최근 연구에서는 희소 오토인코더(SAE)를 사용하여 단의미적 특징에 정밀한 개입을 수행하였습니다. 그러나 대부분의 SAE 기반 방법은 추론 시에 작동하여 모델 파라미터에 영속적인 변화를 만들지 않습니다. 이런 개입은 악의적인 사용자에 의해 우회되거나 되돌릴 수 있습니다. 본 연구에서는 SAE를 이용한 영구적인 개념 언러닝을 위한 파라미터 효율적인 방법인 CRISP를 제안합니다. CRISP는 여러 계층에서 중요한 SAE 특징을 자동으로 식별하고 그들의 활성화를 억제합니다. 두 개의 LLM을 사용하여 실험을 진행하고, WMDP 벤치마크로부터 안전성이 중요한 언러닝 작업에서 이전 접근 방법들보다 우수한 성능을 보여주었으며, 해로운 지식을 제거하고 일반적이고 도메인 내 능력을 보존했습니다. 특징 수준의 분석을 통해 CRISP가 목표 및 양호한 개념 사이에 의미론적으로 일관된 분리를 달성하여 목표 특징의 정확한 억제를 허용합니다."
+    },
+    "summary": "1. 대형 언어 모델이 증가함에 따라 모델 유틸리티를 유지하면서 불필요한 지식을 제거하는 필요성이 증가하고 있는데, CRISP는 희소 오토인코더를 사용하여 이를 수행하는 영구 개념 언러닝 방법이다.\n2. CRISP는 모델의 파라미터를 영구적으로 변경함으로써 이전 방법들의 한계를 극복하며, 특정 기술적 기법을 통해 안전한 언러닝 작업을 수행한다.\n3. 실험 결과를 통해 CRISP는 해로운 지식을 효과적으로 제거하고 목표 및 양호한 개념을 정확히 분리하며, 모델의 능력을 보존하는 것을 확인할 수 있다.",
+    "categories": [
+      "LLM",
+      "기타"
+    ]
+  },
+  {
+    "title": "Selective Contrastive Learning for Weakly Supervised Affordance\n  Grounding",
+    "abstract": "Facilitating an entity's interaction with objects requires accurately\nidentifying parts that afford specific actions. Weakly supervised affordance\ngrounding (WSAG) seeks to imitate human learning from third-person\ndemonstrations, where humans intuitively grasp functional parts without needing\npixel-level annotations. To achieve this, grounding is typically learned using\na shared classifier across images from different perspectives, along with\ndistillation strategies incorporating part discovery process. However, since\naffordance-relevant parts are not always easily distinguishable, models\nprimarily rely on classification, often focusing on common class-specific\npatterns that are unrelated to affordance. To address this limitation, we move\nbeyond isolated part-level learning by introducing selective prototypical and\npixel contrastive objectives that adaptively learn affordance-relevant cues at\nboth the part and object levels, depending on the granularity of the available\ninformation. Initially, we find the action-associated objects in both\negocentric (object-focused) and exocentric (third-person example) images by\nleveraging CLIP. Then, by cross-referencing the discovered objects of\ncomplementary views, we excavate the precise part-level affordance clues in\neach perspective. By consistently learning to distinguish affordance-relevant\nregions from affordance-irrelevant background context, our approach effectively\nshifts activation from irrelevant areas toward meaningful affordance cues.\nExperimental results demonstrate the effectiveness of our method. Codes are\navailable at github.com/hynnsk/SelectiveCL.",
+    "authors": [
+      "WonJun Moon",
+      "Hyun Seok Seong",
+      "Jae-Pil Heo"
+    ],
+    "likes": 10,
+    "published_date": "Aug 11",
+    "url": "https://huggingface.co/papers/2508.07877",
+    "date_collected": "2025-08-26T07:08:07.693104+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "약한 지도 하에서의 거치 가능성을 위한 선택적 대조적 학습",
+      "abstract": "물체와 상호작용을 위해서는 특정 행동을 제공하는 부분을 정확하게 식별해야 합니다. 약한 지도 하에서의 거치 가능성을 확립(WSAG)은 픽셀 수준의 주석이 필요하지 않은 상황에서 인간이 기능적인 부분을 직관적으로 이해하는 것을 모방하려 합니다. 우리는 이를 위해 서로 다른 관점의 이미지를 통해 공유된 분류기를 사용하여 거치를 학습하고, 부분 발견 과정을 포함하는 적요 전략을 적용합니다. 그러나 거치 관련 부분이 항상 쉽게 구별되지 않기 때문에 모델은 주로 분류에 의존하며 종종 거치와 관련 없는 일반적인 클래스별 패턴에 초점을 맞춥니다. 이 한계를 해결하기 위해 선택적 원형 및 픽셀 대조적 목표를 도입하여 일률적으로 각 관점의 정보 세분도에 따라 부분 및 물체 수준에서 거치 관련 단서를 적응적으로 학습합니다. 우리의 방식은 관련성 있는 거치 영역을 적절하게 학습하여 활성화를 효과적으로 관련 없는 영역에서 의미 있는 거치 단서로 옮깁니다. 실험 결과는 우리의 방법의 효과성을 입증합니다. 코드는 github.com/hynnsk/SelectiveCL에서 사용할 수 있습니다."
+    },
+    "summary": "1. 약한 지도 하에서의 거치 가능성 확립(WSAG)을 위한 선택적 대조적 학습은 인간 학습을 모방하여 상호작용에 필요한 부분을 정확하게 식별하고 픽셀 수준의 주석 없이 효과적인 거치 학습을 가능하게 합니다.\n2. 모델은 선택적인 원형 및 픽셀 대조적 목표를 도입하여 부분 및 물체 수준에서 거치 관련 단서를 적응적으로 학습하며, 관련 없는 영역과 관련 영역 사이의 활성화를 효과적으로 전환합니다.\n3. CLIP를 활용하여 첫 번째(자가 중심) 및 세 번째 인겨(예시) 이미지에서 행동 관련 물체를 찾은 후, 상호 보완적인 관점의 각 이미지에서 정확한 부분 수준의 거치 단서를 추출합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "AetherCode: Evaluating LLMs' Ability to Win In Premier Programming\n  Competitions",
+    "abstract": "Competitive programming has emerged as a critical benchmark for evaluating\nthe reasoning and coding capabilities of Large Language Models (LLMs). Despite\nimpressive progress on existing benchmarks, we argue that current evaluations\noverstate model proficiency, masking a substantial gap between LLMs and elite\nhuman programmers. This gap arises from two key limitations: insufficient\ndifficulty and scope of benchmark problems, and evaluation bias from\nlow-quality test cases. To address these shortcomings, we present AetherCode, a\nnew benchmark that draws problems from premier programming competitions such as\nIOI and ICPC, offering broader coverage and higher difficulty. AetherCode\nfurther incorporates comprehensive, expert-validated test suites built through\na hybrid of automated generation and human curation, ensuring rigorous and\nreliable assessment. By combining challenging problem design with robust\nevaluation, AetherCode provides a more faithful measure of LLM capabilities and\nsets a new standard for future research in code reasoning.",
+    "authors": [
+      "Zihan Wang",
+      "Jiaze Chen",
+      "Zhicheng Liu",
+      "Markus Mak",
+      "Yidi Du",
+      "Geonsik Moon",
+      "Luoqi Xu",
+      "Aaron Tua",
+      "Kunshuo Peng",
+      "Jiayi Lu",
+      "Mingfei Xia",
+      "Boqian Zou",
+      "Chenyang Ran",
+      "Guang Tian",
+      "Shoutai Zhu",
+      "Yeheng Duan",
+      "Zhenghui Kang",
+      "Zhenxing Lin",
+      "Shangshu Li",
+      "Qiang Luo",
+      "Qingshen Long",
+      "Zhiyong Chen"
+    ],
+    "likes": 9,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16402",
+    "date_collected": "2025-08-26T07:08:07.695002+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "에테르코드: LLM의 프리미어 프로그래밍 대회에서의 우승 능력 평가",
+      "abstract": "경쟁 프로그래밍은 대형 언어 모델(Large Language Models, LLMs)의 추론 및 코딩 능력을 평가하는 중요한 기준으로 부상했습니다. 기존 벤치마크에 대한 인상적인 진전에도 불구하고, 현재 평가는 모델의 능숙성을 과대평가하며, LLMs와 우수한 인간 프로그래머 간의 상당한 간극을 숨기고 있다는 주장을 합니다. 이 간극은 두 가지 주요 제한으로부터 발생하는데, 벤치마크 문제의 부족한 난이도와 범위, 그리고 저품질 테스트 케이스로 인한 평가 편향입니다. 이러한 결함을 해결하기 위해 최고 프로그래밍 대회인 IOI와 ICPC 등에서 문제를 얻는 새로운 벤치마크인 에테르코드를 제시합니다. 에테르코드는 더 넓은 범위와 높은 난이도를 제공하며, 자동 생성과 인간 큐레이션의 혼합을 통해 구축된 종합적이고 전문가가 확인한 테스트 스위트를 포함하여 엄격하고 신뢰할 수 있는 평가를 보장합니다. 도전적인 문제 설계와 견고한 평가를 결합함으로써, 에테르코드는 LLM의 능력을 더 충실하게 측정하고 코드 추론 연구에 대한 새로운 기준을 제시합니다."
+    },
+    "summary": "1. 경쟁 프로그래밍은 LLM의 추론과 코딩 능력 평가에 중요한 역할을 하는데, 기존 평가 방법은 모델의 실력을 과대평가하고 있으며, LLMs와 우수한 프로그래머 사이에 상당한 차이를 가립니다.\n2. 에테르코드는 IOI와 ICPC 등 프리미어 프로그래밍 대회에서 문제를 가져와 더 넓은 범위와 높은 난이도를 제공하며, 자동 생성과 인간 큐레이션을 통해 구축된 테스트 스위트를 사용합니다.\n3. 도전적인 문제 설계와 신뢰할 수 있는 평가를 결합한 에테르코드는 LLM의 능력을 보다 충실히 측정하고, 코드 추론 연구에 새로운 표준을 제시합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Do What? Teaching Vision-Language-Action Models to Reject the Impossible",
+    "abstract": "Recently, Vision-Language-Action (VLA) models have demonstrated strong\nperformance on a range of robotic tasks. These models rely on multimodal\ninputs, with language instructions playing a crucial role -- not only in\npredicting actions, but also in robustly interpreting user intent, even when\nthe requests are impossible to fulfill. In this work, we investigate how VLAs\ncan recognize, interpret, and respond to false-premise instructions: natural\nlanguage commands that reference objects or conditions absent from the\nenvironment. We propose Instruct-Verify-and-Act (IVA), a unified framework that\n(i) detects when an instruction cannot be executed due to a false premise, (ii)\nengages in language-based clarification or correction, and (iii) grounds\nplausible alternatives in perception and action. Towards this end, we construct\na large-scale instruction tuning setup with structured language prompts and\ntrain a VLA model capable of handling both accurate and erroneous requests. Our\napproach leverages a contextually augmented, semi-synthetic dataset containing\npaired positive and false-premise instructions, enabling robust detection and\nnatural language correction. Our experiments show that IVA improves false\npremise detection accuracy by 97.56% over baselines, while increasing\nsuccessful responses in false-premise scenarios by 50.78%.",
+    "authors": [
+      "Wen-Han Hsieh",
+      "Elvis Hsieh",
+      "Dantong Niu",
+      "Trevor Darrell",
+      "Roei Herzig",
+      "David M. Chan"
+    ],
+    "likes": 5,
+    "published_date": "Aug 22",
+    "url": "https://huggingface.co/papers/2508.16292",
+    "date_collected": "2025-08-26T07:08:07.696145+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "불가능한 것 거부하는 비전-언어-행동 모델 교육",
+      "abstract": "최근에 비전-언어-행동(Vision-Language-Action, VLA) 모델은 다양한 로봇 작업에서 강력한 성능을 보여주었습니다. 이러한 모델은 다중 모달 입력에 의존하며, 언어 지침은 행동을 예측할 뿐만 아니라 사용자 의도를 강력하게 해석하는 데 중요한 역할을 합니다. 심지어 요청이 불가능할 때도요. 본 연구에서는 VLAs가 false-premise 지시어에 어떻게 반응하는지 조사합니다. 이는 환경에 존재하지 않는 객체나 조건을 참조하는 자연어 명령입니다. 우리는 IVA(지시-검증-행동)를 제안하여 이를 구현했습니다."
+    },
+    "summary": "1. VLA 모델은 false-premise 지시어를 검출하고 수정 후 행동을 취하도록 지시하는 통합 프레임워크인 IVA를 제안합니다.\n2. 실험 결과, IVA는 false-premise 검출 정확도를 97.56% 향상시키고, false-premise 시나리오에서의 성공적인 응답률을 50.78% 향상시킵니다.\n3. 대규모 지시어 튜닝 설정에서 VLA 모델을 훈련하여 정확하고 잘못된 요청을 다룰 수 있게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "End-to-End Agentic RAG System Training for Traceable Diagnostic\n  Reasoning",
+    "abstract": "Accurate diagnosis with medical large language models is hindered by\nknowledge gaps and hallucinations. Retrieval and tool-augmented methods help,\nbut their impact is limited by weak use of external knowledge and poor\nfeedback-reasoning traceability. To address these challenges, We introduce\nDeep-DxSearch, an agentic RAG system trained end-to-end with reinforcement\nlearning (RL) that enables steer tracebale retrieval-augmented reasoning for\nmedical diagnosis. In Deep-DxSearch, we first construct a large-scale medical\nretrieval corpus comprising patient records and reliable medical knowledge\nsources to support retrieval-aware reasoning across diagnostic scenarios. More\ncrutially, we frame the LLM as the core agent and the retrieval corpus as its\nenvironment, using tailored rewards on format, retrieval, reasoning structure,\nand diagnostic accuracy, thereby evolving the agentic RAG policy from\nlarge-scale data through RL.\n  Experiments demonstrate that our end-to-end agentic RL training framework\nconsistently outperforms prompt-engineering and training-free RAG approaches\nacross multiple data centers. After training, Deep-DxSearch achieves\nsubstantial gains in diagnostic accuracy, surpassing strong diagnostic\nbaselines such as GPT-4o, DeepSeek-R1, and other medical-specific frameworks\nfor both common and rare disease diagnosis under in-distribution and\nout-of-distribution settings. Moreover, ablation studies on reward design and\nretrieval corpus components confirm their critical roles, underscoring the\nuniqueness and effectiveness of our approach compared with traditional\nimplementations. Finally, case studies and interpretability analyses highlight\nimprovements in Deep-DxSearch's diagnostic policy, providing deeper insight\ninto its performance gains and supporting clinicians in delivering more\nreliable and precise preliminary diagnoses. See\nhttps://github.com/MAGIC-AI4Med/Deep-DxSearch.",
+    "authors": [
+      "Qiaoyu Zheng",
+      "Yuze Sun",
+      "Chaoyi Wu",
+      "Weike Zhao",
+      "Pengcheng Qiu",
+      "Yongguo Yu",
+      "Kun Sun",
+      "Yanfeng Wang",
+      "Ya Zhang",
+      "Weidi Xie"
+    ],
+    "likes": 5,
+    "published_date": "Aug 21",
+    "url": "https://huggingface.co/papers/2508.15746",
+    "date_collected": "2025-08-26T07:08:07.697482+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "End-to-End 에이전트 RAG 시스템 학습을 통한 추적 가능한 진단 추론",
+      "abstract": "의학적 대규모 언어 모델을 사용한 정확한 진단은 지식 결여와 환각으로 어렵습니다. 정보 검색과 도구 보조 방법은 도움이 되지만, 외부 지식의 부족한 활용과 부족한 피드백 추론의 추적성으로 인해 영향이 제한됩니다. 이러한 도전에 대처하기 위해 우리는 강화 학습을 통해 end-to-end로 훈련된 에이전트 RAG 시스템인 Deep-DxSearch를 소개합니다. 이 시스템은 의료 진단을 위해 추적 가능한 검색 보조 추론을 가능케 합니다. Deep-DxSearch에서는 환자 기록과 신뢰할 수 있는 의료 지식 소스로 구성된 대규모 의료 검색 말뭉치를 먼저 구축하여 진단 시나리오 전체에 걸쳐 검색 인식 추론을 지원합니다. 특히, 우리는 LLM을 중심적인 에이전트로 프레임하고 검색 말뭉치를 그 환경으로 사용하여 형식, 검색, 추론 구조 및 진단 정확도에 대한 맞춤형 보상을 사용하여 대규모 데이터를 통해 에이전트 RAG 정책을 계승하는 방식으로 발전시킵니다."
+    },
+    "summary": "1. 의학적 진단을 위해 end-to-end로 강화 학습으로 훈련된 에이전트 RAG 시스템인 Deep-DxSearch 소개\n2. 대규모 의료 정보 검색 말뭉치를 활용하여 진단 시나리오 전체에 걸친 검색 인식 추론 지원\n3. 심층 분석 및 해석 가능성 분석을 통해 Deep-DxSearch의 진단 정책 개선을 확인하고 의료진이 더 신뢰할 만하고 정확한 초기 진단을 제공하는 데 도움",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Medical"
+    ]
+  },
+  {
+    "title": "TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated\n  Prefill \\& Decode Inference",
+    "abstract": "Multi-Head Latent Attention (MLA), introduced in DeepSeek-V2, compresses\nkey-value states into a low-rank latent vector, caching only this vector to\nreduce memory. In tensor parallelism (TP), however, attention heads are\ncomputed across multiple devices, and each device must load the full cache,\neroding the advantage of MLA over Grouped Query Attention (GQA). We propose\nTensor-Parallel Latent Attention (TPLA): a scheme that partitions both the\nlatent representation and each head's input dimension across devices, performs\nattention independently per shard, and then combines results with an\nall-reduce. TPLA preserves the benefits of a compressed KV cache while\nunlocking TP efficiency. Unlike Grouped Latent Attention (GLA), every head in\nTPLA still leverages the full latent representation, maintaining stronger\nrepresentational capacity. TPLA is drop-in compatible with models pre-trained\nusing MLA: it supports MLA-style prefilling and enables efficient\ntensor-parallel decoding without retraining. Applying simple orthogonal\ntransforms -- e.g., the Hadamard transform or PCA -- before TP slicing further\nmitigates cross-shard interference, yielding minimal accuracy degradation. By\nreducing the per-device KV cache for DeepSeek-V3 and Kimi-K2, we achieve 1.79x\nand 1.93x speedups, respectively, at a 32K-token context length while\nmaintaining performance on commonsense and LongBench benchmarks. TPLA can be\nimplemented with FlashAttention-3, enabling practical end-to-end acceleration.",
+    "authors": [
+      "Xiaojuan Tang",
+      "Fanxu Meng",
+      "Pingzhi Tang",
+      "Yuxuan Wang",
+      "Di Yin",
+      "Xing Sun",
+      "Muhan Zhang"
+    ],
+    "likes": 5,
+    "published_date": "Aug 21",
+    "url": "https://huggingface.co/papers/2508.15881",
+    "date_collected": "2025-08-26T07:08:07.698681+09:00",
+    "week": "2025-W35",
+    "translation": {
+      "title": "TPLA: 텐서 병렬 잠재 어텐션을 활용한 효율적인 분리형 채우기 & 디코딩 추론",
+      "abstract": "딥시크-V2에서 소개된 Multi-Head 잠재 어텐션(MLA)은 key-value 상태를 저랭크 잠재 벡터로 압축하여 이 벡터만 캐싱하여 메모리를 줄입니다. 그러나 텐서 병렬성(TP)에서는 어텐션 헤드가 여러 장치를 통해 계산되어 각 장치가 전체 캐시를 로드해야 해서 MLA의 장점을 상실합니다. 본 논문에서는 TPLA를 제안합니다. TPLA는 잠재 표현과 각 헤드의 입력 차원을 장치 간에 분할하고, 각 shard마다 독립적으로 어텐션을 수행한 후 all-reduce로 결과를 결합합니다. TPLA는 압축된 KV 캐시의 장점을 유지하면서 TP 효율성을 발휘합니다."
+    },
+    "summary": "1. DeepSeek-V2에서 소개된 MLA를 개선한 TPLA는 TP에서 효율적으로 어텐션을 수행하여 메모리를 절약하고 성능을 향상시킵니다.\n2. TPLA는 GLA와 달리 각 헤드가 전체 잠재 표현을 활용하여 더 강력한 표현 능력을 제공합니다.\n3. TPLA는 MLA를 사용한 모델에 쉽게 적용할 수 있으며, 텐서 병렬 디코딩을 효율적으로 지원하여 시간적 가속을 실현합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

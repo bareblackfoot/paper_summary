@@ -1,0 +1,159 @@
+=== Paper Collection Started at Thu Oct 23 22:07:38 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W43
+URL: https://huggingface.co/papers/week/2025-W43
+Found 10 papers in weekly view
+Fetching likes for: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Fetching likes for: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Fetching likes for: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Fetching likes for: Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning
+Fetching likes for: World-in-World: World Models in a Closed-Loop World
+Fetching likes for: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Fetching likes for: BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping
+Fetching likes for: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Fetching likes for: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Fetching likes for: PICABench: How Far Are We from Physically Realistic Image Editing?
+Selected top 10 papers by likes:
+1. A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning (133 likes)
+2. LightMem: Lightweight and Efficient Memory-Augmented Generation (95 likes)
+3. Efficient Long-context Language Model Training by Core Attention
+  Disaggregation (90 likes)
+4. Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning (73 likes)
+5. World-in-World: World Models in a Closed-Loop World (72 likes)
+6. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science (68 likes)
+7. BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping (67 likes)
+8. OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM (66 likes)
+9. UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation (63 likes)
+10. PICABench: How Far Are We from Physically Realistic Image Editing? (58 likes)
+Found abstract: Test-time scaling seeks to improve the reasoning performance of large
+language models (LLMs) by addi...
+Processed paper: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Found abstract: Despite their remarkable capabilities, Large Language Models (LLMs) struggle
+to effectively leverage...
+Processed paper: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Found abstract: We present core attention disaggregation (CAD), a technique that improves
+long-context large languag...
+Processed paper: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Found abstract: In this technical report, we present the Ring-linear model series,
+specifically including Ring-mini-...
+Processed paper: Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning
+Found abstract: Generative world models (WMs) can now simulate worlds with striking visual
+realism, which naturally ...
+Processed paper: World-in-World: World Models in a Closed-Loop World
+Found abstract: Autonomous data science, from raw data sources to analyst-grade deep research
+reports, has been a lo...
+Processed paper: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Found abstract: Reinforcement learning (RL) has recently become the core paradigm for
+aligning and strengthening lar...
+Processed paper: BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping
+Found abstract: Advancing machine intelligence requires developing the ability to perceive
+across multiple modalitie...
+Processed paper: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Found abstract: Recent progress in text-to-image (T2I) generation underscores the importance
+of reliable benchmarks ...
+Processed paper: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Found abstract: Image editing has achieved remarkable progress recently. Modern editing
+models could already follow ...
+Processed paper: PICABench: How Far Are We from Physically Realistic Image Editing?
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 133  ->  131
+Update date_collected: 2025-10-24T07:07:47.062578+09:00  ->  2025-10-23T07:07:01.392812+09:00
+
+Processing paper 2/10
+Title: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Paper already exists, checking if translation is complete...
+Update likes: 95  ->  81
+Update date_collected: 2025-10-24T07:07:47.064087+09:00  ->  2025-10-23T07:07:01.394368+09:00
+
+Processing paper 3/10
+Title: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  54
+Update date_collected: 2025-10-24T07:07:47.065417+09:00  ->  2025-10-23T07:07:01.403618+09:00
+
+Processing paper 4/10
+Title: Every Attention Matters: An Efficient Hybrid Architecture for
+  Long-Context Reasoning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: World-in-World: World Models in a Closed-Loop World
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  63
+Update date_collected: 2025-10-24T07:07:47.069416+09:00  ->  2025-10-23T07:07:01.397351+09:00
+
+Processing paper 6/10
+Title: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  64
+Update date_collected: 2025-10-24T07:07:47.070607+09:00  ->  2025-10-23T07:07:01.395585+09:00
+
+Processing paper 7/10
+Title: BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via
+  Balanced Policy Optimization with Adaptive Clipping
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  61
+Update date_collected: 2025-10-24T07:07:47.074354+09:00  ->  2025-10-23T07:07:01.399325+09:00
+
+Processing paper 9/10
+Title: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  59
+Update date_collected: 2025-10-24T07:07:47.075751+09:00  ->  2025-10-23T07:07:01.400759+09:00
+
+Processing paper 10/10
+Title: PICABench: How Far Are We from Physically Realistic Image Editing?
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  57
+Update date_collected: 2025-10-24T07:07:47.077210+09:00  ->  2025-10-23T07:07:01.402271+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W43.json...
+
+Updating Notion database...
+Updating paper: 내부 확률과 자기 일관성을 이어주는 LLM 추론에 관한 이론적 연구 (likes: 131 -> 133)
+Updating paper: 경량화 및 효율적인 메모리 보강 생성 (Memory-Augmented Generation) (likes: 81 -> 95)
+Updating paper: 핵심 어텐션 분해를 통한 효율적인 장거리 문맥 언어 모델 훈련 (likes: 54 -> 90)
+Creating new paper: 모든 주의력이 중요합니다: 장기 맥락 추론을 위한 효율적인 하이브리드 아키텍처
+Updating paper: 세계 속의 세계: 폐쇄적 루프 환경에서의 세계 모델 (likes: 63 -> 72)
+Updating paper: DeepAnalyze: 자율 데이터 과학을 위한 에이전트형 대규모 언어 모델 (likes: 64 -> 68)
+Creating new paper: BAPO: 균형 잡힌 정책 최적화를 통한 LLM을 위한 오프-폴리시 강화 학습 안정화
+Updating paper: 옴니빈치: 옴니-모달 이해를 위한 아키텍처와 데이터 강화 (likes: 61 -> 66)
+Updating paper: UniGenBench++: 텍스트에서 이미지로의 통일된 의미 평가 벤치마크 (likes: 59 -> 63)
+Updating paper: PICABench: 물리적으로 현실적인 이미지 편집은 얼마나 멀리 왔는가? (likes: 57 -> 58)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Oct 23 22:09:49 UTC 2025 ===
+

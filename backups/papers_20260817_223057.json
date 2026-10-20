@@ -1,0 +1,159 @@
+[
+  {
+    "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+    "abstract": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
+    "authors": [
+      "Yiwei Li",
+      "Wanli Yang",
+      "Hexiang Tan",
+      "Xiangzhou Huang",
+      "Zhengyu Chen",
+      "Ziran Li",
+      "Borun Chen",
+      "Shanglin Lei",
+      "Huaisheng Zhu",
+      "Hao Tian",
+      "Fei Sun",
+      "Xunliang Cai",
+      "Jingang Wang"
+    ],
+    "likes": 9,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2608.13417",
+    "date_collected": "2026-08-17T11:20:48.391919+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "최종 점수를 넘어서: 장기간 AI 연구 및 개발을 위한 에이전트의 체계적 평가",
+      "abstract": "자율 에이전트들은 장기간 실험을 통해 모델, 시스템 및 기술적 유물을 향상시키는 능력을 점차 향상시키고 있습니다. 그러나 현재 이 능력의 상태를 이해하기 위해서는 최종 점수를 넘어간 평가가 필수적입니다. 최종 점수는 진전이 어디서 나타나거나 상실되는 지를 밝혀주지 않을 뿐만 아니라 쌓인 경험이 나중의 결정을 개선하는 지 여부를 나타내지도 않습니다. 이에, 새로운 프레임워크를 기반으로 Solution Framing, Execution, Feedback Control을 통해 36가지 장기간 과제에 대한 일곱 가지 최첨단 모델의 체계적 평가를 제시합니다. 현재 에이전트들은 완전히 자율 연구자보다는 공학적 최적화자처럼 작동하는 것으로 나타났습니다. 그들은 실용적인 해결책을 구상하고 실행할 수 있지만, 그들의 성과는 실행마다 상당히 다양하며, 가장 강력한 해결책들은 주로 수립된 기술을 적응하거나 결합하는 것이고, 본질적인 방법론적 신뢰가 드문 것으로 나타났습니다. 구체적인 방향성을 제시하여 모델 훈련, 추론 시간 전략, 경험 관리 및 해리스 디자인을 개선하기 위한 구체적 방향을 제안합니다."
+    },
+    "summary": "1. 현재 AI 에이전트들은 공학적인 최적화자로서 작동하며, 기존 기술을 적응하거나 결합하는 것이 주를 이루고, 혁신적인 방법은 드물하다.\n2. 에이전트의 성과는 실행마다 크게 다양하며, 경험의 재사용은 후속 결정을 돕거나 오도할 수 있다.\n3. 성과는 다양한 요소에 의해 형성되는데, 이는 비슷한 최종 결과 뒤에는 다른 프로세스 병목 현상과 결정을 돕거나 오도할 수 있는 경험의 재사용, 그리고 성과 안정성에 영향을 미치는 해리스 디자인이 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
+    "abstract": "Interactive game world models typically autoregress visual observations directly in pixel or latent space, forcing structured properties such as pose, geometry, and occlusion to be implicitly maintained by the same generative sequence. Over long horizons, errors in these latent world properties accumulate, making consistency and controllability fragile. We explicitly model the evolving world state, delegate exact geometric computation to a fixed, zero-parameter renderer, and leave the neural model to synthesize appearance. We instantiate this idea as Marionette, a world model for interactive games with articulated characters. First, a two-stage autoregressive dynamics model predicts an explicit and interpretable 276-dimensional 3D world state comprising multi-entity articulated skeletons, metric root trajectories, and rotations. Second, a zero-parameter graphics bridge converts the predicted state into pose-control videos, computing world-space geometry and occlusion in closed form. Third, a control-conditioned video-diffusion observation model synthesizes photorealistic RGB observations from the resulting structured controls. Our experiments establish two properties of Marionette. First, the predicted world state is directly controllable. Forcing a mismatched action stream changes root-aligned joint error by 31% across 48 held-out segments. Second, long-horizon behaviour is determined in the state, and can be repaired there. Left free, the two generated characters drift to 21.2 m apart (recorded sessions stay near 5 m) and a third of frames show ground penetration. Two rules imposed on the explicit state, a terrain collider and a separation cap, cut penetration by 66% and keep the pair engaged, with no change to the observation model. Routing appearance through the predicted state costs no fidelity we can detect, at an FVD of 831 against 799 for recorded pose.",
+    "authors": [
+      "Zian Meng",
+      "Zhen Li",
+      "Chuanhao Li",
+      "Qiang Li",
+      "Kaipeng Zhang"
+    ],
+    "likes": 2,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14530",
+    "date_collected": "2026-08-17T11:20:48.393827+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "마리오넷: 세계 상태 예측, 기하학 렌더링, 외형 그리기",
+      "abstract": "대화형 게임 세계 모델은 일반적으로 시각적 관측을 픽셀이나 잠재 공간에서 직접 자동 회귀함으로써 자세, 기하학, 가려짐과 같은 구조화된 특성을 동시에 유지해야 하므로 장기적으로는 잠재 세계 속성의 오차가 누적되기 쉽습니다. 우리는 변화하는 세계 상태를 명시적으로 모델링하고 정확한 기하학적 계산을 고정된, 제로 파라미터 렌더러에 위임하고 신경 모델은 외형을 합성하도록 했습니다. 이를 '마리오넷'이라는 상호작용적 게임을 위한 세계 모델로 구현했습니다."
+    },
+    "summary": "1. 마리오넷은 세계 상태를 명시적으로 모델링하고 고정된 렌더러를 사용하여 기하학 계산을 처리하며 신경 모델은 외형을 합성합니다.\n2. 두 단계의 자동 회귀 동역학 모델은 명시적이고 해석 가능한 3D 세계 상태를 예측하며, 그래픽스 브리지는 예측된 상태를 제어할 수 있는 비디오로 변환합니다.\n3. 마리오넷의 실험에서 세계 상태는 직접 제어 가능하며 장기적인 행동은 상태에서 결정되어 복구 가능함이 입증되었습니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "SPARGen: Unifying Spatial Perception and Reasoning through Native Multimodal Generation",
+    "abstract": "Spatial perception and reasoning from visual observations require recovering geometric structure, establishing correspondences, and understanding spatial relations. Existing approaches typically address these capabilities separately using task-specific architectures or external geometric modules, limiting knowledge transfer among complementary representations of the same physical scene. We introduce SPARGen, a unified multimodal framework that casts 3D reconstruction, dense correspondence, and spatial reasoning as instruction-conditioned generation tasks. SPARGen serializes compact structured and linguistic outputs as token sequences while generating dense geometric fields in image-aligned forms, enabling spatial supervision to jointly shape shared representations within a native multimodal generative model. Experiments across benchmarks for 3D reconstruction, correspondence, and spatial reasoning show that SPARGen achieves competitive performance across heterogeneous spatial tasks within a single native multimodal generative framework.",
+    "authors": [
+      "Jinsheng Quan",
+      "Jianhua Li",
+      "Siyi Xie",
+      "Xuanke Shi",
+      "Kewang Deng",
+      "Zukai Chen",
+      "Feifei Shao",
+      "Lei Yang",
+      "Quan Wang",
+      "Yawei Luo"
+    ],
+    "likes": 0,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14138",
+    "date_collected": "2026-08-17T11:20:48.395899+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "SPARGen: 공간 지각과 추론을 통한 네이티브 다중 모달 생성 통합",
+      "abstract": "시각적 관측으로부터의 공간 지각과 추론은 기하학적 구조 복원, 대응 관계 설정, 공간적 관계 파악을 필요로 합니다. 기존 접근 방식은 일반적으로 이러한 능력을 각각 작업별 아키텍처 또는 외부 기하 모듈을 사용하여 처리하며, 동일한 물리적 장면의 보완적 표현 간의 지식 전송을 제한합니다. 우리는 SPARGen을 소개합니다. 이는 3D 재구성, 밀도 대응, 공간적 추론을 명령 조건 생성 작업으로 캐스팅하는 통합된 다중 모달 프레임워크입니다. SPARGen은 밀도 기하학적 필드를 이미지 정렬 형태로 생성하면서 구조화된 밀도와 언어적 출력을 토큰 시퀀스로 직렬화하며, 원래의 네이티브 다중 모달 생성 모델 내에서 공유 표현을 공동으로 형성하는 공간 지도를 지원합니다. 3D 재구성, 대응, 공간 추론 벤치마크를 통한 실험 결과, SPARGen은 단일 네이티브 다중 모달 생성 프레임워크 내에서 이질적인 공간 작업에서 경쟁력 있는 성능을 보입니다."
+    },
+    "summary": "1. SPARGen은 3D 재구성, 밀도 대응, 공간 추론을 하나의 다중 모달 프레임워크로 통합하며, 공간적 지도가 공유 표현을 형성하도록 지원합니다.\n2. 이 모델은 시각적 관측으로부터의 공간적 지각과 추론에 필요한 다양한 능력을 효과적으로 단일 모델 내에서 다루어줍니다.\n3. SPARGen은 다양한 공간 작업에서 경쟁력 있는 성능을 보여주며, 효율적인 지식 전송을 가능케 합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+    "abstract": "We introduce Mobius-v0, an architecture that comprises a globally shared Memory (FFN) that stores knowledge vectors and multiple Reasoners (Self-Attn) that iteratively achieve compositional reasoning. Using hidden states as cache and carrier, reasoners repeatedly query memory for required knowledge-vectors, while the knowledge is transmitted back to reasoning operators. Through this knowledge-reasoning-separation architecture, Mobius achieves better knowledge compression and reasoning efficiency. Built upon Mobius-v0 architecture: 1) Our 7B model trained-from-scratch achieves similar downstream score as a 7B Transformer baseline with 62.6% of baseline's training data. 2) Our Intern-S2-Mobius, continually-pretrained from Qwen3.5-35B, achieves similar downstream score while delivering nearly 4x end-to-end inference speedup.",
+    "authors": [
+      "Kai Chen",
+      "Jifeng Ding",
+      "Ning Ding",
+      "Jiaye Ge",
+      "Lixin Gu",
+      "Yicheng Gu",
+      "Qipeng Guo",
+      "Ermo Hua",
+      "Haian Huang",
+      "Haozheng Hou",
+      "Jie Hou",
+      "Xiangyu Hong",
+      "Che Jiang",
+      "Minxi Jin",
+      "Cheng Liang",
+      "Dahua Lin",
+      "Dawei Liu",
+      "Kuikun Liu",
+      "Chengqi Lv",
+      "Haijun Lv",
+      "Han Lv",
+      "Ningsheng Ma"
+    ],
+    "likes": 0,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2608.14290",
+    "date_collected": "2026-08-17T11:20:48.398490+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "Intern-S2-Mobius: 지식과 추론을 분리한 기초 모델",
+      "abstract": "본 연구에서는 지식 벡터를 저장하는 글로벌 공유 메모리(FFN)과 복합적 추론을 반복적으로 수행하는 여러 Reasoner(Self-Attn)로 구성된 Mobius-v0 아키텍처를 제안합니다. Reasoner는 숨겨진 상태를 캐시 및 전송 매개체로 사용하여 필요한 지식 벡터를 메모리에서 반복적으로 조회하고, 해당 지식이 추론 연산자로 전달됩니다. 이 지식-추론 분리 아키텍처를 통해 Mobius는 더 나은 지식 압축과 추론 효율성을 달성합니다. Mobius-v0 아키텍처를 기반으로: 1) 우리의 7B 모델은 7B Transformer 기준의 62.6% 훈련 데이터로부터 동등한 하류 점수를 달성합니다. 2) Qwen3.5-35B로부터 지속적으로 사전 훈련된 Intern-S2-Mobius는 거의 4배의 종단 간 추론 가속화를 제공하면서 동등한 하류 점수를 달성합니다."
+    },
+    "summary": "1. Mobius-v0 아키텍처는 지식 벡터를 저장하는 메모리와 복합적 추론을 수행하는 Reasoner로 구성되어 있습니다. 이를 통해 지식과 추론을 효율적으로 분리하여 지식 압축과 추론 효율성을 향상시킵니다.\n2. 7B 모델은 7B Transformer 기준의 훈련 데이터의 62.6%만 사용하여 동등한 결과를 달성하며, Intern-S2-Mobius는 사전 훈련으로 동등한 성과를 얻으며 추론 속도를 거의 4배 향상시킵니다.\n3. Mobius 아키텍처는 지식과 추론의 분리를 중요시하며, 효율적인 지식 검색과 활용을 통해 더 효율적인 추론을 실현합니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "Dion3: Full-Stack Orthogonal Updates",
+    "abstract": "The Muon optimizer incurs a significant overhead cost due to its cubic-time Newton-Schulz orthogonalization step. When weights are sharded, communication overhead compounds this computational cost, eroding the benefits of Muon in many settings. We present Dion3, a revision of Muon that targets this overhead at every level of the stack. Our Gram Newton-Schulz algorithm reduces the FLOP cost of orthogonalization, our CuteDSL kernels accelerate it by exploiting symmetry, and our megabatching strategy reduces communication overhead. Moreover, we propose a simple change to the update rule that cuts costs even further: selecting only a fraction of the momentum matrix's rows to orthogonalize at each step. This update rule improves on Dion (another \"compressed\" version of Muon), in both speed and performance. Overall, Dion3 matches or improves on the loss achieved by Muon but reduces optimizer step time by up to 6x. Dion3 is available via the dion package (https://github.com/microsoft/dion) as a drop-in replacement for Muon.",
+    "authors": [
+      "Noah Amsel",
+      "Jack Zhang",
+      "Kwangjun Ahn",
+      "Ali Naeimi",
+      "Austin Feng",
+      "Berlin Chen",
+      "Tri Dao",
+      "John Langford"
+    ],
+    "likes": 0,
+    "published_date": "Aug 12",
+    "url": "https://huggingface.co/papers/2608.11612",
+    "date_collected": "2026-08-17T11:20:48.400513+09:00",
+    "week": "2026-W34",
+    "translation": {
+      "title": "Dion3: 전체 스택 교차 업데이트",
+      "abstract": "뮤온 최적화기는 세제곱 시간의 뉴턴-슐츠 직교화 단계로 인한 상당한 오버헤드 비용을 발생합니다. 가중치가 분할되면 통신 오버헤드가 이 계산 비용을 더욱 악화시켜서 많은 환경에서 뮤온의 이점을 침식시킵니다. 본 논문에서는 이러한 오버헤드를 스택의 모든 수준에서 대상으로 하는 뮤온의 개정인 Dion3을 제안합니다. 우리의 그램 뉴턴-슐츠 알고리즘은 직교화의 FLOP 비용을 줄이고, CuteDSL 커널은 대칭을 활용하여 가속화하며, 메가배치 전략은 통신 오버헤드를 줄입니다. 더 나아가, 매 단계에서 모멘텀 행렬의 일부 행만을 선택하여 직교화하는 간단한 업데이트 규칙을 제안합니다. 이 업데이트 규칙은 Dion(또 다른 \"압축\" 버전)보다 속도와 성능 면에서 개선되었습니다. 전반적으로 Dion3은 뮤온으로 달성한 손실과 일치하거나 개선하면서 옵티마이저 단계 시간을 최대 6배로 줄였습니다. Dion3은 Muon의 대체 품으로서 dion 패키지(https://github.com/microsoft/dion)를 통해 사용할 수 있습니다."
+    },
+    "summary": "1. Dion3은 Muon의 오버헤드를 감소시키기 위해 여러 수준에서 작동하는 그램 뉴턴-슐츠클 알고리즘, CuteDSL 커널, 그리고 메가배치 전략을 제안합니다.\n2. 모멘텀 행렬의 특정 행만을 선택해 직교화하는 간단한 업데이트 규칙을 통해 Dion3은 Dion보다 속도와 성능 면에서 개선되었습니다.\n3. Dion3은 Muon보다 낮은 옵티마이저 단계 시간을 제공하면서도 Muon의 달성한 손실과 동등하거나 더 나은 결과를 보입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

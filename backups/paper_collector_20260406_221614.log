@@ -1,0 +1,37 @@
+=== Paper Collection Started at Mon Apr  6 01:41:23 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W15
+URL: https://huggingface.co/papers/week/2026-W15
+Found 2 papers in weekly view
+Fetching likes for: CoME-VL: Scaling Complementary Multi-Encoder Vision-Language Learning
+Fetching likes for: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Selected top 10 papers by likes:
+1. CoME-VL: Scaling Complementary Multi-Encoder Vision-Language Learning (0 likes)
+2. InCoder-32B-Thinking: Industrial Code World Model for Thinking (0 likes)
+Found abstract: Recent vision-language models (VLMs) typically rely on a single vision encoder trained with contrast...
+Processed paper: CoME-VL: Scaling Complementary Multi-Encoder Vision-Language Learning
+Found abstract: Industrial software development across chip design, GPU optimization, and embedded systems lacks exp...
+Processed paper: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Collected top 2 papers. Starting summary generation...
+
+Processing paper 1/2
+Title: CoME-VL: Scaling Complementary Multi-Encoder Vision-Language Learning
+Generating Korean translation and summary...
+
+Processing paper 2/2
+Title: InCoder-32B-Thinking: Industrial Code World Model for Thinking
+Generating Korean translation and summary...
+
+Processed 2 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W15.json...
+
+Updating Notion database...
+Creating new paper: 보완적 다중 인코더 비전-언어 학습의 확장 (Scaling Complementary Multi-Encoder Vision-Language Learning)
+Creating new paper: 산업 코드 세계 모델을 위한 인코더-32B-사고력
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Apr  6 01:41:53 UTC 2026 ===
+

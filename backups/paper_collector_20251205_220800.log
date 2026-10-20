@@ -1,0 +1,127 @@
+=== Paper Collection Started at Thu Dec  4 22:07:06 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W49
+URL: https://huggingface.co/papers/week/2025-W49
+Found 10 papers in weekly view
+Fetching likes for: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+Fetching likes for: DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models
+Fetching likes for: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+Fetching likes for: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Fetching likes for: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+Fetching likes for: Qwen3-VL Technical Report
+Fetching likes for: ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+Fetching likes for: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+Fetching likes for: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Fetching likes for: MultiShotMaster: A Controllable Multi-Shot Video Generation Framework
+Selected top 10 papers by likes:
+1. From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence (230 likes)
+2. DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models (150 likes)
+3. LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling (148 likes)
+4. Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer (132 likes)
+5. Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights (86 likes)
+6. Qwen3-VL Technical Report (84 likes)
+7. ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration (83 likes)
+8. Stabilizing Reinforcement Learning with LLMs: Formulation and Practices (70 likes)
+9. DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning (61 likes)
+10. MultiShotMaster: A Controllable Multi-Shot Video Generation Framework (55 likes)
+Found abstract: Large language models (LLMs) have fundamentally transformed automated software development by enabli...
+Processed paper: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+Found abstract: We introduce DeepSeek-V3.2, a model that harmonizes high computational efficiency with superior reas...
+Processed paper: DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models
+Found abstract: Large multimodal models (LMMs) have shown great potential for video reasoning with textual Chain-of-...
+Processed paper: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+Found abstract: The landscape of high-performance image generation models is currently dominated by proprietary syst...
+Processed paper: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Found abstract: Current multimodal models aim to transcend the limitations of single-modality representations by uni...
+Processed paper: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+Found abstract: We introduce Qwen3-VL, the most capable vision-language model in the Qwen series to date, achieving ...
+Processed paper: Qwen3-VL Technical Report
+Found abstract: Large language models are powerful generalists, yet solving deep and complex problems such as those ...
+Processed paper: ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+Found abstract: This paper proposes a novel formulation for reinforcement learning (RL) with large language models, ...
+Processed paper: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+Found abstract: Large language models have made significant progress in mathematical reasoning, which serves as an i...
+Processed paper: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Found abstract: Current video generation techniques excel at single-shot clips but struggle to produce narrative mul...
+Processed paper: MultiShotMaster: A Controllable Multi-Shot Video Generation Framework
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: From Code Foundation Models to Agents and Applications: A Practical Guide to Code Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 230  ->  209
+Update date_collected: 2025-12-05T07:07:15.613230+09:00  ->  2025-12-04T07:08:47.841134+09:00
+
+Processing paper 2/10
+Title: DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 150  ->  99
+Update date_collected: 2025-12-05T07:07:15.615259+09:00  ->  2025-12-04T07:08:47.846212+09:00
+
+Processing paper 3/10
+Title: LongVT: Incentivizing "Thinking with Long Videos" via Native Tool Calling
+Paper already exists, checking if translation is complete...
+Update likes: 148  ->  146
+Update date_collected: 2025-12-05T07:07:15.616716+09:00  ->  2025-12-04T07:08:47.842524+09:00
+
+Processing paper 4/10
+Title: Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer
+Paper already exists, checking if translation is complete...
+Update likes: 132  ->  123
+Update date_collected: 2025-12-05T07:07:15.618611+09:00  ->  2025-12-04T07:08:47.844327+09:00
+
+Processing paper 5/10
+Title: Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  84
+Update date_collected: 2025-12-05T07:07:15.619847+09:00  ->  2025-12-04T07:08:47.847367+09:00
+
+Processing paper 6/10
+Title: Qwen3-VL Technical Report
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+Paper already exists, checking if translation is complete...
+Update likes: 83  ->  51
+Update date_collected: 2025-12-05T07:07:15.623573+09:00  ->  2025-12-04T07:08:47.851710+09:00
+
+Processing paper 8/10
+Title: Stabilizing Reinforcement Learning with LLMs: Formulation and Practices
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  64
+Update date_collected: 2025-12-05T07:07:15.625037+09:00  ->  2025-12-04T07:08:47.848734+09:00
+
+Processing paper 9/10
+Title: DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  51
+Update date_collected: 2025-12-05T07:07:15.626439+09:00  ->  2025-12-04T07:08:47.850076+09:00
+
+Processing paper 10/10
+Title: MultiShotMaster: A Controllable Multi-Shot Video Generation Framework
+Paper already exists, checking if translation is complete...
+Update likes: 55  ->  49
+Update date_collected: 2025-12-05T07:07:15.627895+09:00  ->  2025-12-04T07:08:47.853091+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W49.json...
+
+Updating Notion database...
+Updating paper: 코드 기반 모델부터 에이전트와 응용까지: 코드 인텔리전스의 실용 가이드 (likes: 209 -> 230)
+Updating paper: 딥시크-V3.2: 오픈 대형 언어 모델의 선두를 달리다 (likes: 99 -> 150)
+Updating paper: LongVT: 원생 도구 호출을 통한 "긴 비디오와 함께 생각" 유도 (likes: 146 -> 148)
+Updating paper: Z-Image: 단일 스트림 확산 트랜스포머를 활용한 효율적인 이미지 생성 기반 모델 (likes: 123 -> 132)
+Updating paper: Envision: 인과적 세계 과정 통찰을 위한 통합 이해 및 생성 벤치마킹 (likes: 84 -> 86)
+Creating new paper: Qwen3-VL 기술 보고서
+Updating paper: ToolOrchestra: 효율적인 모델과 도구 조율을 통한 지능 향상 (likes: 51 -> 83)
+Updating paper: Reinforcement Learning 안정화를 위한 LLMs: 개념과 실제 (likes: 64 -> 70)
+Updating paper: 딥시크수학-V2: 자기 검증 수학 추론을 향하여 (likes: 51 -> 61)
+Updating paper: 다중 샷 마스터: 제어 가능한 다중 샷 비디오 생성 프레임워크 (likes: 49 -> 55)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Dec  4 22:09:43 UTC 2025 ===
+

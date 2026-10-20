@@ -1,0 +1,131 @@
+=== Paper Collection Started at Mon Sep  8 22:07:28 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W37
+URL: https://huggingface.co/papers/week/2025-W37
+Found 10 papers in weekly view
+Fetching likes for: Why Language Models Hallucinate
+Fetching likes for: Symbolic Graphics Programming with Large Language Models
+Fetching likes for: Set Block Decoding is a Language Model Inference Accelerator
+Fetching likes for: WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning
+Fetching likes for: LatticeWorld: A Multimodal Large Language Model-Empowered Framework for
+  Interactive Complex World Generation
+Fetching likes for: LuxDiT: Lighting Estimation with Video Diffusion Transformer
+Fetching likes for: WinT3R: Window-Based Streaming Reconstruction with Camera Token Pool
+Fetching likes for: MedVista3D: Vision-Language Modeling for Reducing Diagnostic Errors in
+  3D CT Disease Detection, Understanding and Reporting
+Fetching likes for: On Robustness and Reliability of Benchmark-Based Evaluation of LLMs
+Fetching likes for: U-ARM : Ultra low-cost general teleoperation interface for robot
+  manipulation
+Selected top 10 papers by likes:
+1. Why Language Models Hallucinate (71 likes)
+2. Symbolic Graphics Programming with Large Language Models (28 likes)
+3. Set Block Decoding is a Language Model Inference Accelerator (24 likes)
+4. WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning (8 likes)
+5. LatticeWorld: A Multimodal Large Language Model-Empowered Framework for
+  Interactive Complex World Generation (6 likes)
+6. LuxDiT: Lighting Estimation with Video Diffusion Transformer (6 likes)
+7. WinT3R: Window-Based Streaming Reconstruction with Camera Token Pool (3 likes)
+8. MedVista3D: Vision-Language Modeling for Reducing Diagnostic Errors in
+  3D CT Disease Detection, Understanding and Reporting (3 likes)
+9. On Robustness and Reliability of Benchmark-Based Evaluation of LLMs (2 likes)
+10. U-ARM : Ultra low-cost general teleoperation interface for robot
+  manipulation (1 likes)
+Found abstract: Like students facing hard exam questions, large language models sometimes
+guess when uncertain, prod...
+Processed paper: Why Language Models Hallucinate
+Found abstract: Large language models (LLMs) excel at program synthesis, yet their ability to
+produce symbolic graph...
+Processed paper: Symbolic Graphics Programming with Large Language Models
+Found abstract: Autoregressive next token prediction language models offer powerful
+capabilities but face significan...
+Processed paper: Set Block Decoding is a Language Model Inference Accelerator
+Found abstract: Recent advances in Multimodal Large Language Models (MLLMs) have demonstrated
+impressive capabilitie...
+Processed paper: WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning
+Found abstract: Recent research has been increasingly focusing on developing 3D world models
+that simulate complex r...
+Processed paper: LatticeWorld: A Multimodal Large Language Model-Empowered Framework for
+  Interactive Complex World Generation
+Found abstract: Estimating scene lighting from a single image or video remains a longstanding
+challenge in computer ...
+Processed paper: LuxDiT: Lighting Estimation with Video Diffusion Transformer
+Found abstract: We present WinT3R, a feed-forward reconstruction model capable of online
+prediction of precise camer...
+Processed paper: WinT3R: Window-Based Streaming Reconstruction with Camera Token Pool
+Found abstract: Radiologic diagnostic errors-under-reading errors, inattentional blindness,
+and communication failur...
+Processed paper: MedVista3D: Vision-Language Modeling for Reducing Diagnostic Errors in
+  3D CT Disease Detection, Understanding and Reporting
+Found abstract: Large Language Models (LLMs) effectiveness is usually evaluated by means of
+benchmarks such as MMLU,...
+Processed paper: On Robustness and Reliability of Benchmark-Based Evaluation of LLMs
+Found abstract: We propose U-Arm, a low-cost and rapidly adaptable leader-follower
+teleoperation framework designed ...
+Processed paper: U-ARM : Ultra low-cost general teleoperation interface for robot
+  manipulation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Why Language Models Hallucinate
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Symbolic Graphics Programming with Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Set Block Decoding is a Language Model Inference Accelerator
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: LatticeWorld: A Multimodal Large Language Model-Empowered Framework for
+  Interactive Complex World Generation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: LuxDiT: Lighting Estimation with Video Diffusion Transformer
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: WinT3R: Window-Based Streaming Reconstruction with Camera Token Pool
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: MedVista3D: Vision-Language Modeling for Reducing Diagnostic Errors in
+  3D CT Disease Detection, Understanding and Reporting
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: On Robustness and Reliability of Benchmark-Based Evaluation of LLMs
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: U-ARM : Ultra low-cost general teleoperation interface for robot
+  manipulation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W37.json...
+
+Updating Notion database...
+Creating new paper: 왜 언어 모델은 환각하는가
+Creating new paper: Symbolic Graphics Programming with Large Language Models (대규모 언어 모델과 상징적 그래픽 프로그래밍)
+Creating new paper: Set Block Decoding는 언어 모델 추론 가속화기
+Creating new paper: WildScore: 야외에서의 기호 음악 추론에 대한 MLLM 벤치마킹
+Creating new paper: LatticeWorld: 대화형 복잡한 세계 생성을 위한 멀티모달 대형 언어 모델 기반의 프레임워크
+Creating new paper: LuxDiT: 비디오 확산 트랜스포머를 이용한 조명 추정
+Creating new paper: 윈터: 윈도우 기반 스트리밍 재구성과 카메라 토큰 풀로의 접근
+Creating new paper: MedVista3D: 3D CT 질병 감지, 이해 및 보고를 위한 질병 진단 오류 감소를 위한 비전-언어 모델링
+Creating new paper: LLM의 강인성과 신뢰성에 관한 벤치마크 기반 평가
+Creating new paper: U-ARM: 저렴한 비용으로 제작된 로봇 조작을 위한 인터페이스
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Sep  8 22:09:50 UTC 2025 ===
+

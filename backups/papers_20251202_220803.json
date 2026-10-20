@@ -1,0 +1,311 @@
+[
+  {
+    "title": "Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer",
+    "abstract": "The landscape of high-performance image generation models is currently dominated by proprietary systems, such as Nano Banana Pro and Seedream 4.0. Leading open-source alternatives, including Qwen-Image, Hunyuan-Image-3.0 and FLUX.2, are characterized by massive parameter counts (20B to 80B), making them impractical for inference, and fine-tuning on consumer-grade hardware. To address this gap, we propose Z-Image, an efficient 6B-parameter foundation generative model built upon a Scalable Single-Stream Diffusion Transformer (S3-DiT) architecture that challenges the \"scale-at-all-costs\" paradigm. By systematically optimizing the entire model lifecycle -- from a curated data infrastructure to a streamlined training curriculum -- we complete the full training workflow in just 314K H800 GPU hours (approx. $630K). Our few-step distillation scheme with reward post-training further yields Z-Image-Turbo, offering both sub-second inference latency on an enterprise-grade H800 GPU and compatibility with consumer-grade hardware (<16GB VRAM). Additionally, our omni-pre-training paradigm also enables efficient training of Z-Image-Edit, an editing model with impressive instruction-following capabilities. Both qualitative and quantitative experiments demonstrate that our model achieves performance comparable to or surpassing that of leading competitors across various dimensions. Most notably, Z-Image exhibits exceptional capabilities in photorealistic image generation and bilingual text rendering, delivering results that rival top-tier commercial models, thereby demonstrating that state-of-the-art results are achievable with significantly reduced computational overhead. We publicly release our code, weights, and online demo to foster the development of accessible, budget-friendly, yet state-of-the-art generative models.",
+    "authors": [
+      "Z-Image Team",
+      "Huanqia Cai",
+      "Sihan Cao",
+      "Ruoyi Du",
+      "Peng Gao",
+      "Steven Hoi",
+      "Shijie Huang",
+      "Zhaohui Hou",
+      "Dengyang Jiang",
+      "Xin Jin",
+      "Liangchen Li",
+      "Zhen Li",
+      "Zhong-Yu Li",
+      "David Liu",
+      "Dongyang Liu",
+      "Junhan Shi",
+      "Qilong Wu",
+      "Feng Yu",
+      "Chi Zhang",
+      "Shifeng Zhang",
+      "Shilin Zhou"
+    ],
+    "likes": 71,
+    "published_date": "Nov 27",
+    "url": "https://huggingface.co/papers/2511.22699",
+    "date_collected": "2025-12-02T07:07:35.491303+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "Z-Image: 단일 스트림 확산 트랜스포머를 활용한 효율적인 이미지 생성 기반 모델",
+      "abstract": "현재 고성능 이미지 생성 모델 영역은 Nano Banana Pro와 Seedream 4.0과 같은 사유 소유 시스템에 의해 주도되고 있다. Qwen-Image, Hunyuan-Image-3.0, FLUX.2를 포함한 주요 오픈 소스 대안들은 방대한 매개변수 수(20B에서 80B)로 특징 지어져 있어 추론 및 소비자용 하드웨어에서의 미세 조정에 적합하지 않다. 이러한 공백을 해결하기 위해 우리는 \"모든 비용으로 규모를 키우는\" 패러다임에 도전하며 효율적인 6B-매개변수 기반 생성 모델인 Z-Image를 제안한다. 이 모델은 Scalable Single-Stream Diffusion Transformer(S3-DiT) 아키텍처를 기반으로 하고 있다. 우리는 교육용 데이터 인프라부터 단순화된 교육 과정까지 전반적으로 최적화하여 전체 교육 워크플로우를 단 314K H800 GPU 시간(약 $630K)에 완료했다. 보상 포스트 교육을 통한 몇 단계의 정제 체계는 엔터프라이즈급 H800 GPU에서 초당 이하의 추론 대기 시간과 소비자용 하드웨어(<16GB VRAM) 호환성을 제공하는 Z-Image-Turbo를 얻게 했다. 또한 우리의 omni-pre-training 패러다임은 Z-Image-Edit의 효율적인 교육을 가능케 하며, 이는 인상적인 지시 따르기 능력을 가진 편집 모델이다. 질적, 양적 실험 모두 우리 모델이 다양한 차원에서 주요 경쟁 모델과 유사하거나 능가하는 성능을 달성한다는 점을 보여준다. 특히 Z-Image는 사실적 이미지 생성 및 양언 텍스트 렌더링 분야에서 탁월한 능력을 보여주어 최고 수준의 상용 모델과 견줄만한 결과물을 제공함으로써, 최신 결과를 상당히 줄인 계산적 부담으로 달성 가능함을 입증한다. 우리는 코드, 가중치, 온라인 데모를 공개하여 접근성 있고 예산 친화적이면서 최신 기술을 채택한 생성 모델의 발전을 촉진한다."
+    },
+    "summary": "1. Z-Image는 효율적인 6B-매개변수 기반 생성 모델로, Scalable Single-Stream Diffusion Transformer(S3-DiT) 아키텍처를 활용하여 \"모든 비용으로 규모를 키우는\" 패러다임에 도전한다.\n2. 몇 단계의 정제 과정과 보상 포스트 교육을 통해 Z-Image-Turbo는 엔터프라이즈급 H800 GPU에서 초당 이하의 추론 대기 시간과 소비자용 하드웨어 호환성을 제공한다.\n3. Z-Image는 사실적 이미지 생성 및 양언 텍스트 렌더링 분야에서 탁월한 성능을 보이며, 다양한 차원에서 주요 경쟁 모델과 비교해 우수한 결과물을 제시한다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "REASONEDIT: Towards Reasoning-Enhanced Image Editing Models",
+    "abstract": "Recent advances in image editing models have shown remarkable progress. A common architectural design couples a multimodal large language model (MLLM) encoder with a diffusion decoder, as seen in systems such as Step1X-Edit and Qwen-Image-Edit, where the MLLM encodes both the reference image and the instruction but remains frozen during training. In this work, we demonstrate that unlocking the reasoning capabilities of MLLM can further push the boundaries of editing models. Specifically, we explore two reasoning mechanisms, thinking and reflection, which enhance instruction understanding and editing accuracy. Based on that, our proposed framework enables image editing in a thinking-editing-reflection loop: the thinking mechanism leverages the world knowledge of MLLM to interpret abstract instructions, while the reflection reviews editing results, automatically corrects unintended manipulations, and identifies the stopping round. Extensive experiments demonstrate that our reasoning approach achieves significant performance gains, with improvements of ImgEdit (+4.3%), GEdit (+4.7%), and Kris (+8.2%) when initializing our DiT from the Step1X-Edit (ReasonEdit-S), and also outperforms previous open-source methods on both GEdit and Kris when integrated with Qwen-Image-Edit (ReasonEdit-Q).",
+    "authors": [
+      "Fukun Yin",
+      "Shiyu Liu",
+      "Yucheng Han",
+      "Zhibo Wang",
+      "Peng Xing",
+      "Rui Wang",
+      "Wei Cheng",
+      "Yingming Wang",
+      "Aojie Li",
+      "Zixin Yin",
+      "Pengtao Chen",
+      "Xiangyu Zhang",
+      "Daxin Jiang",
+      "Xianfang Zeng",
+      "Gang Yu"
+    ],
+    "likes": 38,
+    "published_date": "Nov 27",
+    "url": "https://huggingface.co/papers/2511.22625",
+    "date_collected": "2025-12-02T07:07:35.492961+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "REASONEDIT: 이성 증진 이미지 편집 모델을 향하여",
+      "abstract": "이미지 편집 모델의 최근 발전은 놀라운 진전을 보여주고 있습니다. Step1X-Edit와 Qwen-Image-Edit와 같은 시스템에서 볼 수 있는, 다양한 언어 모델 (MLLM) 인코더와 확산 디코더가 결합된 일반적인 구조적 설계는 MLLM이 참조 이미지와 지시를 모두 인코딩하지만 훈련 중에는 얼어붙은 채로 있다는 점입니다. 본 연구에서는 MLLM의 추론 능력을 해제하면 편집 모델의 한계를 더욱 뛰어넘을 수 있다는 것을 보입니다. 구체적으로, 우리는 추론 메커니즘인 사고와 반성을 탐구하며 지시 이해와 편집 정확도를 향상시킵니다. 이에 따라, 우리의 제안된 프레임워크는 사고-편집-반성 루프에서 이미지 편집을 가능하게 합니다: 사고 메커니즘은 MLLM의 세계적 지식을 활용하여 추상적 지시를 해석하며, 반성은 편집 결과를 검토하고 의도하지 않은 조작을 자동으로 수정하며 중단 점을 식별합니다. 포괄적인 실험 결과는 우리의 추론 접근 방식이 ImgEdit (+4.3%), GEdit (+4.7%), 및 Kris (+8.2%)의 성능 향상을 달성하며, Step1X-Edit (ReasonEdit-S)로부터 우리의 DiT를 초기화할 때 이전의 오픈 소스 방법들보다 GEdit와 Kris에서 우수한 성과를 보인다는 것을 보여줍니다."
+    },
+    "summary": "1. 이미지 편집 모델의 최근 진전은 대규모 언어 모델 (MLLM) 인코더와 확산 디코더를 결합한 구조를 사용하는 것으로, 이 연구는 MLLM의 추론 능력을 활용하여 편집 모델의 성능을 향상시키는 것을 증명하며 사고와 반성 메커니즘을 도입하여 지시 이해와 편집 정확도를 향상시킵니다.\n2. 제안된 프레임워크는 이미지 편집을 사고-편집-반성 루프에서 가능하게 하며, 사고는 MLLM의 세계적 지식을 활용하여 추상적 지시를 해석하고, 반성은 편집 결과를 검토하고 의도하지 않은 조작을 자동으로 수정하여 성능을 향상시킵니다.\n3. 실험 결과는 우리의 추론 접근 방식이 다양한 편집 작업에서 성능 향상을 달성하며, 이전의 방법들보다 우수한 성과를 보이므로 이미지 편집 모델 개선에 유효하다는 것을 나타냅니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement",
+    "abstract": "Recently, multi-person video generation has started to gain prominence. While a few preliminary works have explored audio-driven multi-person talking video generation, they often face challenges due to the high costs of diverse multi-person data collection and the difficulty of driving multiple identities with coherent interactivity. To address these challenges, we propose AnyTalker, a multi-person generation framework that features an extensible multi-stream processing architecture. Specifically, we extend Diffusion Transformer's attention block with a novel identity-aware attention mechanism that iteratively processes identity-audio pairs, allowing arbitrary scaling of drivable identities. Besides, training multi-person generative models demands massive multi-person data. Our proposed training pipeline depends solely on single-person videos to learn multi-person speaking patterns and refines interactivity with only a few real multi-person clips. Furthermore, we contribute a targeted metric and dataset designed to evaluate the naturalness and interactivity of the generated multi-person videos. Extensive experiments demonstrate that AnyTalker achieves remarkable lip synchronization, visual quality, and natural interactivity, striking a favorable balance between data costs and identity scalability.",
+    "authors": [
+      "Zhizhou Zhong",
+      "Yicheng Ji",
+      "Zhe Kong",
+      "Yiying Liu",
+      "Jiarui Wang",
+      "Jiasun Feng",
+      "Lupeng Liu",
+      "Xiangyi Wang",
+      "Yanjia Li",
+      "Yuqing She",
+      "Ying Qin",
+      "Huan Li",
+      "Shuiyang Mao",
+      "Wei Liu",
+      "Wenhan Luo"
+    ],
+    "likes": 32,
+    "published_date": "Nov 28",
+    "url": "https://huggingface.co/papers/2511.23475",
+    "date_collected": "2025-12-02T07:07:35.494597+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "AnyTalker: 상호작용 정제 기능을 갖춘 다수의 사람들이 대화하는 비디오 생성의 확장",
+      "abstract": "최근, 다수의 사람들이 등장하는 비디오 생성이 주목받고 있습니다. 오디오를 기반으로 하는 다수의 사람들이 이야기하는 비디오 생성에 대한 초기 연구가 몇몇 진행되었지만, 다양한 다인 데이터 수집의 높은 비용과 일관된 상호작용을 가진 다중 신원을 구동하는 어려움으로 인해 도전에 직면합니다. 이러한 도전을 해결하기 위해 우리는 상호 확장 가능한 다중 사람 생성 프레임워크인 AnyTalker를 제안합니다. 특히, 우리는 직관적인 다중 스트림 처리 아키텍처를 갖춘 Diffusion Transformer의 어텐션 블록을 신원 인식 어텐션 메커니즘으로 확장하여 구현합니다. 이는 신원-오디오 쌍을 반복적으로 처리하여 구동 가능한 신원을 임의로 확장할 수 있게 합니다. 뿐만 아니라, 다인 생성 모델 학습에는 대규모 다인 데이터가 필요합니다. 우리의 제안된 학습 파이프라인은 다인 비디오만을 사용하여 다인 발화 패턴을 학습하고, 실제 다인 클립을 몇 개만 사용하여 상호작용을 정제합니다. 더 나아가, 생성된 다인 비디오의 자연스러움과 상호작용을 평가하기 위해 설계된 목표 지표 및 데이터셋을 제공합니다. 광범위한 실험 결과 AnyTalker가 차별화된 입술 동기화, 시각적 품질, 자연스러운 상호작용을 달성하며 데이터 비용과 신원 확장성 사이의 유리한 균형을 보여줍니다."
+    },
+    "summary": "1. AnyTalker는 다중 신원 인식 어텐션 메커니즘을 특징으로 하는 다수의 사람들이 대화하는 비디오 생성 프레임워크를 제안합니다.\n2. 모델 학습에는 대규모 다인 데이터가 필요하며, AnyTalker는 단일인 비디오만을 사용하여 다인 발화 패턴을 학습하고 상호작용을 개선합니다.\n3. AnyTalker는 생성된 다인 비디오의 입술 동기화, 시각적 품질, 상호작용 자연스러움에서 우수한 성과를 보이며 데이터 비용과 신원 확장성 사이에서 이상적인 균형을 유지합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Vision Bridge Transformer at Scale",
+    "abstract": "We introduce Vision Bridge Transformer (ViBT), a large-scale instantiation of Brownian Bridge Models designed for conditional generation. Unlike traditional diffusion models that transform noise into data, Bridge Models directly model the trajectory between inputs and outputs, creating an efficient data-to-data translation paradigm. By scaling these models to 20B and 1.3B parameters, we demonstrate their effectiveness for image and video translation tasks. To support this scale, we adopt a Transformer architecture and propose a variance-stabilized velocity-matching objective for robust training. Together, these advances highlight the power of scaling Bridge Models for instruction-based image editing and complex video translation.",
+    "authors": [
+      "Zhenxiong Tan",
+      "Zeqing Wang",
+      "Xingyi Yang",
+      "Songhua Liu",
+      "Xinchao Wang"
+    ],
+    "likes": 31,
+    "published_date": "Nov 28",
+    "url": "https://huggingface.co/papers/2511.23199",
+    "date_collected": "2025-12-02T07:07:35.495755+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "대규모 비전 브릿지 트랜스포머",
+      "abstract": "우리는 조건적 생성을 위해 설계된 브라운 잡음 모델의 대규모 버전인 비전 브릿지 트랜스포머(Vision Bridge Transformer, ViBT)를 소개합니다. 잡음을 데이터로 변환하는 기존 확산 모델과 달리, 브릿지 모델은 입력과 출력 사이의 궤적을 직접 모델링하여 효율적인 데이터 간 번역 패러다임을 구축합니다. 우리는 이러한 모델을 20B와 1.3B 매개변수로 확장시킴으로써 이미지 및 비디오 번역 작업에 대한 효과를 입증합니다. 이러한 규모를 지원하기 위해 트랜스포머 아키텍처를 채택하고 튼튼한 훈련을 위해 분산 안정화 속도 일치 목적을 제안합니다. 이러한 발전은 지침 기반 이미지 편집과 복잡한 비디오 번역을 위해 브릿지 모델의 규모 확장의 능력을 강조합니다."
+    },
+    "summary": "1. 브릿지 모델은 입력과 출력 간의 궤적을 모델링하여 데이터 간 번역을 효율적으로 수행합니다.\n2. 20B와 1.3B 파라미터로 확장된 ViBT 모델은 이미지 및 비디오 번역 작업에서 효과적입니다.\n3. Transformer 아키텍처와 분산 안정화 속도 일치 목적을 도입함으로써 브릿지 모델의 확장된 규모의 강점을 부각시킵니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Architecture Decoupling Is Not All You Need For Unified Multimodal Model",
+    "abstract": "Unified multimodal models for image generation and understanding represent a significant step toward AGI and have attracted widespread attention from researchers. The main challenge of this task lies in the difficulty in establishing an optimal training paradigm due to inherent conflicting targets in understanding and generation tasks. To alleviate these conflicts and pursue higher performance, many researchers adopt varying degrees of model decoupling (e.g., Double image encoders, MOE/MOT architecture, or frozen MLLM). However, excessive model decoupling can lead to the loss of interleave generation ability, undermining the original intent of unified models. In this work, we aim to explore how to mitigate task conflicts without resorting to model decoupling. Firstly, we analyze why decoupling alleviates conflicts by studying the cross-modal attention behavior of models. We observe that model decoupling essentially drives models toward task-specific multimodal interaction patterns, as seen in Qwen-VL and HunyuanImage, and that the more thorough the decoupling, the more consistent the behavior becomes. Motivated by this observation, we propose Attention Interaction Alignment (AIA) loss, which explicitly learns Task-Specific multimodal interaction patterns during training. To demonstrate the generalizability of our AIA loss, we apply it to Emu3 and Janus-Pro during SFT and post-training stage respectively. Without bells and whistles, AIA not only refines cross-modal attention patterns, but also boosts both generation and understanding performance.",
+    "authors": [
+      "Dian Zheng",
+      "Manyuan Zhang",
+      "Hongyu Li",
+      "Kai Zou",
+      "Hongbo Liu",
+      "Ziyu Guo",
+      "Kaituo Feng",
+      "Yexin Liu",
+      "Ying Luo",
+      "Yan Feng",
+      "Peng Pei",
+      "Xunliang Cai",
+      "Hongsheng Li"
+    ],
+    "likes": 23,
+    "published_date": "Nov 27",
+    "url": "https://huggingface.co/papers/2511.22663",
+    "date_collected": "2025-12-02T07:07:35.497296+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "통합된 다중 모달 모델에 있어서 아키텍처의 격리는 모든 것이 아니다",
+      "abstract": "이미지 생성 및 이해를 위한 통합된 다중 모달 모델은 강인공지능(AIG)으로의 중요한 한 걸음을 나아가며 연구자들로부터 광범위한 관심을 끌고 있다. 이 작업의 주요 도전 과제는 이해와 생성 작업 사이에 내재된 상충하는 목표로 인해 최적의 교육 패러다임을 수립하는 어려움에 있다. 이러한 충돌을 완화하고 더 높은 성능을 추구하기 위해 많은 연구자가 다양한 정도의 모델 격리(예: 이중 이미지 인코더, MOE/MOT 아키텍처 또는 동결된 MLLM)를 채택하고 있다. 그러나 지나친 모델 격리는 일찍이 통합된 모델의 본래 의도를 약화시키는 교차 생성 능력의 손실로 이어질 수 있다. 본 연구에서는 모델 격리에 의존하지 않고 작업 충돌을 어떻게 완화할지 탐구하고자 한다. 먼저, 모델 간의 교차 모달 주의 행동을 연구함으로써 왜 격리가 충돌을 완화하는지 분석한다. 우리는 모델 격리가 본질적으로 모델을 작업별 다중 모달 상호작용 패턴으로 이끌며, Qwen-VL 및 HunyuanImage에서 관찰되는 것처럼, 격리가 더 철저할수록 행동이 더 일관되어짐을 관찰한다. 이 관찰을 바탕으로 우리는 Attention Interaction Alignment (AIA) 손실을 제안하며, 이는 교육 중에 명확하게 작업별 다중 모달 상호작용 패턴을 학습한다. 우리의 AIA 손실의 적용 가능성을 입증하기 위해 SFT 및 후기 교육 단계에서 Emu3 및 Janus-Pro에 적용한다. AIA는 교차 모달 주의 패턴을 정제할 뿐만 아니라 생성과 이해 능력을 높이는데 도움이 된다."
+    },
+    "summary": "1. 모델 격리를 피하면서 작업 충돌을 완화하기 위해 Attention Interaction Alignment (AIA) 손실을 제안함.\n2. AIA는 교육 중에 명확하게 작업별 다중 모달 상호작용 패턴을 학습하여 생성 및 이해 성능을 향상시킴.\n3. AIA의 적용을 통해 Emu3 및 Janus-Pro에서 교차 모달 주의 패턴을 개선하고 성능을 향상시킴.",
+    "categories": [
+      "Multimodal",
+      "LLM"
+    ]
+  },
+  {
+    "title": "DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning",
+    "abstract": "Large language models have made significant progress in mathematical reasoning, which serves as an important testbed for AI and could impact scientific research if further advanced. By scaling reasoning with reinforcement learning that rewards correct final answers, LLMs have improved from poor performance to saturating quantitative reasoning competitions like AIME and HMMT in one year. However, this approach faces fundamental limitations. Pursuing higher final answer accuracy doesn't address a key issue: correct answers don't guarantee correct reasoning. Moreover, many mathematical tasks like theorem proving require rigorous step-by-step derivation rather than numerical answers, making final answer rewards inapplicable. To push the limits of deep reasoning, we believe it is necessary to verify the comprehensiveness and rigor of mathematical reasoning. Self-verification is particularly important for scaling test-time compute, especially for open problems without known solutions. Towards self-verifiable mathematical reasoning, we investigate how to train an accurate and faithful LLM-based verifier for theorem proving. We then train a proof generator using the verifier as the reward model, and incentivize the generator to identify and resolve as many issues as possible in their own proofs before finalizing them. To maintain the generation-verification gap as the generator becomes stronger, we propose to scale verification compute to automatically label new hard-to-verify proofs, creating training data to further improve the verifier. Our resulting model, DeepSeekMath-V2, demonstrates strong theorem-proving capabilities, achieving gold-level scores on IMO 2025 and CMO 2024 and a near-perfect 118/120 on Putnam 2024 with scaled test-time compute.",
+    "authors": [
+      "Zhihong Shao",
+      "Yuxiang Luo",
+      "Chengda Lu",
+      "Z. Z. Ren",
+      "Jiewen Hu",
+      "Tian Ye",
+      "Zhibin Gou",
+      "Shirong Ma",
+      "Xiaokang Zhang"
+    ],
+    "likes": 18,
+    "published_date": "Nov 27",
+    "url": "https://huggingface.co/papers/2511.22570",
+    "date_collected": "2025-12-02T07:07:35.498662+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "딥시크수학-V2: 자기 검증 수학 추론을 향하여",
+      "abstract": "대형 언어 모델은 수학적 추론에서 상당한 진전을 이룩했으며, 이는 인공지능의 중요한 시험대이자 과학 연구에 영향을 줄 수 있는 요점이다. 최종 정답을 보상하는 강화 학습으로 추론을 확장함으로써, 대형 언어 모델은 1년 만에 AIME와 HMMT와 같은 양적 추론 대회에서 무형적인 성능에서 포화 상태에 이른다. 그러나 이 방법은 근본적인 한계에 직면하고 있다. 높은 최종 정확도를 추구하는 것은 올바른 추론을 보장해주지 않는다. 또한, 정답이 아닌 첨삭한 리유님외 나에게 일반 쪽의 절차적 설정을 요구하는 수학적 작업은 여러 번재의 경우에 이번 정답이 가장 큰 기준을 세우질 않는다. 딥 추론의 한계를 더욱 내밀게하여 수학적 추론의 포용력과 엄격성을 검증하는 것이 필요하다고 믿는다. 자가 검토는 알려지지 않은 솔루션 없이 시행되는 문제에 대해 특히 중요하다. 이와 같이 자기 검증 수학적 추론을 향하여, 우리는 정확하고 충실한 대책 모델을 훈련시키는 방법을 조사한다. 그런 다음 보상 모델로써 대책 생성기를 훈련시키고, 제너레이터가 자신의 증거에서 가능한 많은 문제를 확인하고 해결할 수 있도록 장려한다. 이와 같이 제너레이터가 더욱 강력해짐에 따라 생성 검증 간격을 유지하기 위해, 새로운 어렵게 확인할 수 있는 증명을 자동으로 표시하기 위해 확인 컴퓨팅을 확장하여 신규 교육 데이터를 만들어 변화기를 더욱 개선시킨다. 우리의 결과 모델인 딥시크수학-V2는 강한 정리 능력을 보여주며, IMO 2025 및 CMO 2024에서 금상 수준의 점수를 얻었으며, Putnam 2024에서는 준완벽한 점수 118/120을 얻었다."
+    },
+    "summary": "1. 대형 언어 모델을 활용한 증명 검증을 통해 수학적 추론을 개선하는 딥시크수학-V2가 개발되었다.\n2. 최종 답변 정확도의 한계를 넘어서, 올바른 수학적 추론의 포용성과 엄격성을 검증하기 위해 자가 검토가 중요하다는 것을 연구하였다.\n3. 증명 생성기를 훈련시키는 과정에서 이를 검증하기 위한 모델을 사용하여 증명의 문제점을 식별하고 해결하면서 수학적 추론을 개선하였다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DiP: Taming Diffusion Models in Pixel Space",
+    "abstract": "Diffusion models face a fundamental trade-off between generation quality and computational efficiency. Latent Diffusion Models (LDMs) offer an efficient solution but suffer from potential information loss and non-end-to-end training. In contrast, existing pixel space models bypass VAEs but are computationally prohibitive for high-resolution synthesis. To resolve this dilemma, we propose DiP, an efficient pixel space diffusion framework. DiP decouples generation into a global and a local stage: a Diffusion Transformer (DiT) backbone operates on large patches for efficient global structure construction, while a co-trained lightweight Patch Detailer Head leverages contextual features to restore fine-grained local details. This synergistic design achieves computational efficiency comparable to LDMs without relying on a VAE. DiP is accomplished with up to 10times faster inference speeds than previous method while increasing the total number of parameters by only 0.3%, and achieves an 1.79 FID score on ImageNet 256times256.",
+    "authors": [
+      "Zhennan Chen",
+      "Junwei Zhu",
+      "Xu Chen",
+      "Jiangning Zhang",
+      "Xiaobin Hu",
+      "Hanzhen Zhao",
+      "Chengjie Wang",
+      "Jian Yang",
+      "Ying Tai"
+    ],
+    "likes": 18,
+    "published_date": "Nov 24",
+    "url": "https://huggingface.co/papers/2511.18822",
+    "date_collected": "2025-12-02T07:07:35.499994+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "DiP: 픽셀 공간에서 확산 모델 다루기",
+      "abstract": "확산 모델은 생성 품질과 계산 효율성 사이의 기본적인 상충 관계에 직면합니다. 잠재 확산 모델(Latent Diffusion Models, LDMs)은 효율적인 해결책을 제공하지만 정보 손실과 엔드 투 엔드 훈련의 어려움을 겪습니다. 이와 대조적으로, 기존의 픽셀 공간 모델은 VAE를 우회하지만 고해상도 합성에 계산적으로 어려움이 있습니다. 이러한 딜레마를 해결하기 위해, 우리는 효율적인 픽셀 공간 확산 프레임워크인 DiP를 제안합니다. DiP는 생성을 전역과 지역 단계로 분리합니다: 확산 트랜스포머(Diffusion Transformer, DiT) 백본은 효율적인 전역 구조 구축을 위해 대규모 패치에서 작동하고, 공동 훈련된 가벼운 패치 디테일러 헤드는 문맥적 기능을 활용하여 세부적인 지역 세부사항을 복원합니다. 이 시너지적인 디자인은 VAE에 의존하지 않으면서 LDM과 유사한 계산 효율성을 달성합니다. DiP는 이전 방법보다 최대 10배 빠른 추론 속도로 수행되며, 총 매개변수 수는 0.3%만 증가시킴으로써 ImageNet 256x256에서 1.79 FID 점수를 달성합니다."
+    },
+    "summary": "1. 확산 모델은 생성 품질과 계산 효율성 사이의 상충 관계를 가지고 있으나, DiP는 LDM과 유사한 계산 효율성을 가지면서도 VAE에 의존하지 않는다.\n2. DiP는 생성을 전역과 지역 단계로 나누어, 확산 트랜스포머와 가벼운 패치 디테일러 헤드를 활용하여 픽셀 공간에서 효율적인 구조 구축과 지역 세부사항 복원을 동시에 수행한다.\n3. DiP는 빠른 추론 속도와 적은 매개변수 증가로 ImageNet 256x256에서 높은 FID 점수를 달성하며, 이전 방법보다 10배 빠른 속도를 보여준다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "DualVLA: Building a Generalizable Embodied Agent via Partial Decoupling of Reasoning and Action",
+    "abstract": "To build a generalizable Vision-Language-Action (VLA) model with strong reasoning ability, a common strategy is to first train a specialist VLA on robot demonstrations to acquire reliable manipulation skills, and then incorporate mixed annotated robot data together with multimodal data to restore broader reasoning capabilities. However, we observe that the resulting reasoning VLA often suffers from degraded action performance compared to the specialist model before fine-tuning, a phenomenon we refer to as action degeneration. To address this issue, we propose DualVLA, which enhances action performance through carefully designed post-training while still preserving reasoning capability. We first introduce a dual-layer data pruning method that removes redundant embodied reasoning, preventing it from adversely influencing action learning. To further strengthen action generation, we design a dual-teacher adaptive distillation strategy that assigns different supervision signals to different data domains while maintaining reasoning ability. To fill the evaluation gap for generalist VLAs, we also propose VLA Score, which decouples VLA capability into reasoning, intention, action, and alignment dimensions for a more fine-grained assessment. Experiments show that DualVLA achieves an average success rate of 61.0 in SimplerEnv and an average score of 65.4 across eight competitive multimodal benchmarks, demonstrating a stronger balance between precise action execution and multimodal understanding. Project Website: https://costaliya.github.io/DualVLA/.",
+    "authors": [
+      "Zhen Fang",
+      "Zhuoyang Liu",
+      "Jiaming Liu",
+      "Hao Chen",
+      "Yu Zeng",
+      "Shiting Huang",
+      "Zehui Chen",
+      "Lin Chen",
+      "Shanghang Zhang",
+      "Feng Zhao"
+    ],
+    "likes": 16,
+    "published_date": "Nov 27",
+    "url": "https://huggingface.co/papers/2511.22134",
+    "date_collected": "2025-12-02T07:07:35.501395+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "DualVLA: 추론과 행동의 부분적 분리를 통해 일반화 가능한 신체화 에이전트 구축",
+      "abstract": "강력한 추론 능력을 갖춘 일반화 가능한 Vision-Language-Action (VLA) 모델을 구축하기 위한 공통 전략은 먼저 전문적인 VLA를 로봇 데모에서 훈련하여 신뢰할 수 있는 조작 기술을 습득한 후 혼합된 주석이 있는 로봇 데이터와 다중 모달 데이터를 통합하여 보다 넓은 추론 능력을 복원하는 것입니다. 그러나 평가 결과, 특수 모델을 세밀하게 조정하기 전에 일반화된 추론 VLA는 종종 행동 성능이 저하되는 현상인 \"행동 강화\"를 관찰합니다. 이 문제를 해결하기 위해 우리는 추론 능력은 유지하면서 행동 성능을 향상시키는 DualVLA를 제안합니다. 우리는 먼저 중복된 몸체 추론을 제거하는 이중 계층 데이터 가지치기 방법을 소개하여 행동 학습에 악영향을 미치지 않도록 합니다. 또한, 행동 생성을 강화하기 위해 서로 다른 데이터 도메인에 서로 다른 지도 신호를 할당하는 이중 교사 적응 증류 전략을 설계합니다. 일반주의자 VLA를 평가하기 위한 간격을 채우기 위해, 우리는 본질, 의도, 행위 및 조정 차원으로 VLA 능력을 분리하는 VLA 점수를 제안합니다. 실험 결과, DualVLA는 SimplerEnv에서 평균 성공률 61.0 및 여덟 가지 경쟁적 다중 모달 벤치마크 전체 평균 점수 65.4를 달성하여 정확한 행동 실행과 다중 모달 이해 사이의 더 강력한 균형을 보여줍니다. 프로젝트 웹사이트: https://costaliya.github.io/DualVLA/."
+    },
+    "summary": "1. 행동 강화 현상 해결을 위해 DualVLA는 이중 계층 데이터 가지치기와 이중 교사 적응 증류 전략을 도입하여 행동 성능을 향상시키면서도 추론 능력을 보존합니다.\n2. 일반화 VLA를 위해 VLA 점수를 제안하여 추론, 의도, 행동, 조정 차원별로 VLA 능력을 세밀하게 측정합니다.\n3. 실험 결과, DualVLA는 SimplerEnv에서 뛰어난 성과를 보이며, 다중 모달 벤치마크에서도 강한 균형을 보여줌.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models",
+    "abstract": "This work explores the challenge of building ``Machines that Can Remember'', framing long-term memory as the problem of efficient ultra-long context modeling. We argue that this requires three key properties: sparsity, random-access flexibility, and length generalization. To address ultra-long-context modeling, we leverage Hierarchical Sparse Attention (HSA), a novel attention mechanism that satisfies all three properties. We integrate HSA into Transformers to build HSA-UltraLong, which is an 8B-parameter MoE model trained on over 8 trillion tokens and is rigorously evaluated on different tasks with in-domain and out-of-domain context lengths to demonstrate its capability in handling ultra-long contexts. Results show that our model performs comparably to full-attention baselines on in-domain lengths while achieving over 90\\% accuracy on most in-context retrieval tasks with contexts up to 16M. This report outlines our experimental insights and open problems, contributing a foundation for future research in ultra-long context modeling.",
+    "authors": [
+      "Xiang Hu",
+      "Zhanchao Zhou",
+      "Ruiqi Liang",
+      "Zehuan Li",
+      "Wei Wu",
+      "Jianguo Li"
+    ],
+    "likes": 14,
+    "published_date": "Nov 28",
+    "url": "https://huggingface.co/papers/2511.23319",
+    "date_collected": "2025-12-02T07:07:35.502630+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "모든 토큰이 중요합니다: 대형 언어 모델에서 16M 초장기 맥락의 일반화",
+      "abstract": "본 연구는 \"기억할 수 있는 기계\"를 구축하는 과제를 탐구하며, 장기 기억을 효율적으로 모델링하는 문제로 긴 초장기 맥락을 설정합니다. 저희는 이를 위해 희소성, 임의 접근 유연성, 및 길이 일반화라는 세 가지 핵심 속성이 필요하다고 주장합니다. 우리는 이를 해결하기 위해 계층적 희소 주의(Hierarchical Sparse Attention, HSA)을 활용하며, 이는 세 가지 속성을 모두 충족하는 새로운 주의 메커니즘입니다. 우리는 HSA를 Transformer에 통합하여 8조 토큰 이상을 학습한 8조 파라미터 MoE 모델인 HSA-UltraLong을 구축했으며, 이 모델은 다양한 작업에서 도메인 내 및 도메인 외 맥락 길이에 대한 엄격한 평가를 통해 초장기 맥락을 처리하는 능력을 입증했습니다. 결과는 우리 모델이 도메인 내 길이에서 전체 주의 기준선(해당 도메인 내 작업에 대해 90% 이상의 정확도를 달성한 16M 까지의 맥락에서)과 비교 가능한 수행을 보이며, 맥락을 효과적으로 처리하는 능력을 보여줍니다. 본 보고서는 초장기 맥락 모델링에 대한 향후 연구의 기초를 제공하며, 실험적 통찰력 및 열린 문제를 제시합니다."
+    },
+    "summary": "1. 장기 기억을 효율적으로 모델링하기 위한 세 가지 필수 속성인 희소성, 임의 접근 유연성, 및 길이 일반화를 갖는 Hierarchical Sparse Attention(HSA)을 활용한 HSA-UltraLong 모델이 개발되었다.\n2. HSA-UltraLong 모델은 8조 개 이상의 토큰을 훈련한 MoE 모델로, 16M까지의 맥락을 처리하는 능력을 실험을 통해 입증하였으며, 이는 전체 주의 모델과 비교 가능한 성능을 보였다.\n3. 본 보고서는 초장기 맥락 모델링에 대한 실험 결과와 미해결된 문제를 제시하여, 향후의 연구를 위한 기초를 마련하였다.",
+    "categories": [
+      "Multimodal",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Adversarial Flow Models",
+    "abstract": "We present adversarial flow models, a class of generative models that unifies adversarial models and flow models. Our method supports native one-step or multi-step generation and is trained using the adversarial objective. Unlike traditional GANs, where the generator learns an arbitrary transport plan between the noise and the data distributions, our generator learns a deterministic noise-to-data mapping, which is the same optimal transport as in flow-matching models. This significantly stabilizes adversarial training. Also, unlike consistency-based methods, our model directly learns one-step or few-step generation without needing to learn the intermediate timesteps of the probability flow for propagation. This saves model capacity, reduces training iterations, and avoids error accumulation. Under the same 1NFE setting on ImageNet-256px, our B/2 model approaches the performance of consistency-based XL/2 models, while our XL/2 model creates a new best FID of 2.38. We additionally show the possibility of end-to-end training of 56-layer and 112-layer models through depth repetition without any intermediate supervision, and achieve FIDs of 2.08 and 1.94 using a single forward pass, surpassing their 2NFE and 4NFE counterparts.",
+    "authors": [
+      "Shanchuan Lin",
+      "Ceyuan Yang",
+      "Zhijie Lin",
+      "Hao Chen",
+      "Haoqi Fan"
+    ],
+    "likes": 14,
+    "published_date": "Nov 27",
+    "url": "https://huggingface.co/papers/2511.22475",
+    "date_collected": "2025-12-02T07:07:35.503835+09:00",
+    "week": "2025-W49",
+    "translation": {
+      "title": "적대적 플로우 모델",
+      "abstract": "저희는 적대적 플로우 모델을 제안하는데, 이는 적대적 모델과 플로우 모델을 통합한 생성 모델의 한 유형입니다. 우리의 방법은 네이티브한 한 단계 또는 다단계 생성을 지원하며 적대적 목적을 사용하여 훈련됩니다. 제너레이터가 임의의 운반 계획이 아닌 결정론적인 노이즈-데이터 매핑을 학습하는 기존 GAN과 달리, 저희 제너레이터는 플로우 매칭 모델과 동일한 최적 운반을 학습합니다. 이는 적대적 훈련을 크게 안정화시킵니다."
+    },
+    "summary": "1. 적대적 플로우 모델은 적대적 모델과 플로우 모델을 통합하여 생성 모델을 제공하며, 임의의 운반 계획이 아닌 결정론적인 노이즈-데이터 매핑을 학습하여 안정성을 높입니다.\n2. 기존 방법들과 다르게, 이 모델은 중간 단계의 확률 흐름을 학습할 필요 없이 한 단계나 몇 단계의 생성을 직접 학습하여 모델 용량을 줄이고 훈련 반복을 줄이며 오류 누적을 피합니다.\n3. ImageNet-256px에서 우리의 모델은 일정 규모에서 XL/2 모델의 성능에 근접하며, XL/2 모델은 새로운 최고 FID 값인 2.38을 달성합니다.",
+    "categories": [
+      "Generative Modeling",
+      "Computer Vision"
+    ]
+  }
+]

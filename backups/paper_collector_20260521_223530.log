@@ -1,0 +1,123 @@
+=== Paper Collection Started at Wed May 20 22:36:36 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W21
+URL: https://huggingface.co/papers/week/2026-W21
+Found 10 papers in weekly view
+Fetching likes for: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Fetching likes for: Code as Agent Harness
+Fetching likes for: PhysBrain 1.0 Technical Report
+Fetching likes for: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Fetching likes for: MMSkills: Towards Multimodal Skills for General Visual Agents
+Fetching likes for: LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation
+Fetching likes for: When Vision Speaks for Sound
+Fetching likes for: Active Learners as Efficient PRP Rerankers
+Fetching likes for: Lance: Unified Multimodal Modeling by Multi-Task Synergy
+Fetching likes for: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Selected top 10 papers by likes:
+1. CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence (257 likes)
+2. Code as Agent Harness (174 likes)
+3. PhysBrain 1.0 Technical Report (137 likes)
+4. SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution (117 likes)
+5. MMSkills: Towards Multimodal Skills for General Visual Agents (114 likes)
+6. LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation (101 likes)
+7. When Vision Speaks for Sound (86 likes)
+8. Active Learners as Efficient PRP Rerankers (78 likes)
+9. Lance: Unified Multimodal Modeling by Multi-Task Synergy (67 likes)
+10. Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information (61 likes)
+Found abstract: Multimodal Large Language Models (MLLMs) have significantly advanced document understanding, yet cur...
+Processed paper: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Found abstract: Recent large language models (LLMs) have demonstrated strong capabilities in understanding and gener...
+Processed paper: Code as Agent Harness
+Found abstract: Vision-language-action models have advanced rapidly, but robot trajectories alone provide limited co...
+Processed paper: PhysBrain 1.0 Technical Report
+Found abstract: Long-horizon LLM agents leave traces that could become reusable experience, but raw trajectories are...
+Processed paper: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Found abstract: Reusable skills have become a core substrate for improving agent capabilities, yet most existing ski...
+Processed paper: MMSkills: Towards Multimodal Skills for General Visual Agents
+Found abstract: We present LongLive-2.0, an NVFP4-based parallel infrastructure throughout the full training and inf...
+Processed paper: LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation
+Found abstract: Despite rapid progress in video-capable MLLMs, we find that their apparent audio understanding in vi...
+Processed paper: When Vision Speaks for Sound
+Found abstract: Pairwise Ranking Prompting (PRP) elicits pairwise preference judgments from an LLM, which are then a...
+Processed paper: Active Learners as Efficient PRP Rerankers
+Found abstract: We present Lance, a lightweight native unified model supporting multimodal understanding, generation...
+Processed paper: Lance: Unified Multimodal Modeling by Multi-Task Synergy
+Found abstract: On-policy self-distillation, where a student is pulled toward a copy of itself conditioned on privil...
+Processed paper: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 257  ->  252
+Update date_collected: 2026-05-21T07:36:45.049948+09:00  ->  2026-05-20T07:34:29.878552+09:00
+
+Processing paper 2/10
+Title: Code as Agent Harness
+Paper already exists, checking if translation is complete...
+Update likes: 174  ->  127
+Update date_collected: 2026-05-21T07:36:45.053307+09:00  ->  2026-05-20T07:34:29.884750+09:00
+
+Processing paper 3/10
+Title: PhysBrain 1.0 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 137  ->  135
+Update date_collected: 2026-05-21T07:36:45.056171+09:00  ->  2026-05-20T07:34:29.881405+09:00
+
+Processing paper 4/10
+Title: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Paper already exists, checking if translation is complete...
+Update likes: 117  ->  111
+Update date_collected: 2026-05-21T07:36:45.058536+09:00  ->  2026-05-20T07:34:29.887107+09:00
+
+Processing paper 5/10
+Title: MMSkills: Towards Multimodal Skills for General Visual Agents
+Paper already exists, checking if translation is complete...
+Update likes: 114  ->  110
+Update date_collected: 2026-05-21T07:36:45.061267+09:00  ->  2026-05-20T07:34:29.889870+09:00
+
+Processing paper 6/10
+Title: LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 101  ->  90
+Update date_collected: 2026-05-21T07:36:45.064297+09:00  ->  2026-05-20T07:34:29.892881+09:00
+
+Processing paper 7/10
+Title: When Vision Speaks for Sound
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Active Learners as Efficient PRP Rerankers
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Lance: Unified Multimodal Modeling by Multi-Task Synergy
+Paper already exists, checking if translation is complete...
+Update likes: 67  ->  61
+Update date_collected: 2026-05-21T07:36:45.072331+09:00  ->  2026-05-20T07:34:29.895751+09:00
+
+Processing paper 10/10
+Title: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W21.json...
+
+Updating Notion database...
+Updating paper: 신뢰할 수 있는 문서 지능을 위한 근거 소속성 벤치마킹 (likes: 252 -> 257)
+Updating paper: 코드를 에이전트 하네스로 (likes: 127 -> 174)
+Updating paper: PhysBrain 1.0 기술 보고서 (likes: 135 -> 137)
+Updating paper: SkillsVote: 에이전트 스킬의 수집부터 권장, 진화까지의 라이프사이클 지도 (likes: 111 -> 117)
+Updating paper: MMSkills: 일반 시각 에이전트를 위한 다중모달 스킬로 향하는 (likes: 110 -> 114)
+Updating paper: LongLive-2.0: 장영상 생성을 위한 NVFP4 병렬 인프라 (likes: 90 -> 101)
+Creating new paper: 시각이 소리를 대변할 때
+Creating new paper: 효율적인 PRP 재랭킹을 위한 액티브 러너
+Updating paper: Lance: 다중 작업 시너지를 통한 통합 다중 모달 모델링 (likes: 61 -> 67)
+Creating new paper: 'Anti-Self-Distillation을 통한 추론 강화학습을 위한 점별 상호 정보량 분석'
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed May 20 22:38:24 UTC 2026 ===
+

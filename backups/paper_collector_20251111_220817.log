@@ -1,0 +1,117 @@
+=== Paper Collection Started at Mon Nov 10 22:08:25 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W46
+URL: https://huggingface.co/papers/week/2025-W46
+Found 9 papers in weekly view
+Fetching likes for: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Fetching likes for: DeepEyesV2: Toward Agentic Multimodal Model
+Fetching likes for: Visual Spatial Tuning
+Fetching likes for: VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks
+Fetching likes for: Dense Motion Captioning
+Fetching likes for: Towards Mitigating Hallucinations in Large Vision-Language Models by
+  Refining Textual Embeddings
+Fetching likes for: Jailbreaking in the Haystack
+Fetching likes for: HAFixAgent: History-Aware Automated Program Repair Agent
+Fetching likes for: CritiCal: Can Critique Help LLM Uncertainty or Confidence Calibration?
+Selected top 10 papers by likes:
+1. Too Good to be Bad: On the Failure of LLMs to Role-Play Villains (31 likes)
+2. DeepEyesV2: Toward Agentic Multimodal Model (27 likes)
+3. Visual Spatial Tuning (23 likes)
+4. VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks (18 likes)
+5. Dense Motion Captioning (4 likes)
+6. Towards Mitigating Hallucinations in Large Vision-Language Models by
+  Refining Textual Embeddings (4 likes)
+7. Jailbreaking in the Haystack (1 likes)
+8. HAFixAgent: History-Aware Automated Program Repair Agent (1 likes)
+9. CritiCal: Can Critique Help LLM Uncertainty or Confidence Calibration? (1 likes)
+Found abstract: Large Language Models (LLMs) are increasingly tasked with creative
+generation, including the simulat...
+Processed paper: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Found abstract: Agentic multimodal models should not only comprehend text and images, but
+also actively invoke exter...
+Processed paper: DeepEyesV2: Toward Agentic Multimodal Model
+Found abstract: Capturing spatial relationships from visual inputs is a cornerstone of
+human-like general intelligen...
+Processed paper: Visual Spatial Tuning
+Found abstract: LLMs can perform multi-step reasoning through Chain-of-Thought (CoT), but
+they cannot reliably verif...
+Processed paper: VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks
+Found abstract: Recent advances in 3D human motion and language integration have primarily
+focused on text-to-motion...
+Processed paper: Dense Motion Captioning
+Found abstract: In this work, we identify an inherent bias in prevailing LVLM architectures
+toward the language moda...
+Processed paper: Towards Mitigating Hallucinations in Large Vision-Language Models by
+  Refining Textual Embeddings
+Found abstract: Recent advances in long-context language models (LMs) have enabled
+million-token inputs, expanding t...
+Processed paper: Jailbreaking in the Haystack
+Found abstract: Automated program repair (APR) has recently shifted toward large language
+models and agent-based sys...
+Processed paper: HAFixAgent: History-Aware Automated Program Repair Agent
+Found abstract: Accurate confidence calibration in Large Language Models (LLMs) is critical
+for safe use in high-sta...
+Processed paper: CritiCal: Can Critique Help LLM Uncertainty or Confidence Calibration?
+Collected top 9 papers. Starting summary generation...
+
+Processing paper 1/9
+Title: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Generating Korean translation and summary...
+
+Processing paper 2/9
+Title: DeepEyesV2: Toward Agentic Multimodal Model
+Generating Korean translation and summary...
+
+Processing paper 3/9
+Title: Visual Spatial Tuning
+Generating Korean translation and summary...
+
+Processing paper 4/9
+Title: VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical
+  Consistency Checks
+Generating Korean translation and summary...
+
+Processing paper 5/9
+Title: Dense Motion Captioning
+Generating Korean translation and summary...
+
+Processing paper 6/9
+Title: Towards Mitigating Hallucinations in Large Vision-Language Models by
+  Refining Textual Embeddings
+Generating Korean translation and summary...
+
+Processing paper 7/9
+Title: Jailbreaking in the Haystack
+Generating Korean translation and summary...
+
+Processing paper 8/9
+Title: HAFixAgent: History-Aware Automated Program Repair Agent
+Generating Korean translation and summary...
+
+Processing paper 9/9
+Title: CritiCal: Can Critique Help LLM Uncertainty or Confidence Calibration?
+Generating Korean translation and summary...
+
+Processed 9 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W46.json...
+
+Updating Notion database...
+Creating new paper: 너무나 선하다가 나쁠 수밖에 없는: LLM들이 악당 역할하기 위해서 실패하는 이유
+Creating new paper: DeepEyesV2: 대화형 다중모달 모델로
+Creating new paper: 시각적 공간 튜닝
+Creating new paper: VeriCoT: 논리 일관성 확인을 통한 신경-기호 연쇄 사고 유효성 검증
+Creating new paper: 밀도 있는 동작 캡션 작업
+Creating new paper: 대규모 시각-언어 모델에서 환각 완화를 위한 텍스트 임베딩 개선 방향
+Creating new paper: 할미쏘기: 헛간 속의 해킹
+Creating new paper: HAFixAgent: 역사를 고려한 자동 프로그램 수리 에이전트
+Creating new paper: CritiCal: 크리티크가 LLM 불확실성 또는 확신 보정에 도움이 될까?
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Nov 10 22:10:13 UTC 2025 ===
+

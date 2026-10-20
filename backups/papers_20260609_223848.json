@@ -1,0 +1,298 @@
+[
+  {
+    "title": "Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings",
+    "abstract": "Large language models exhibit impressive zero-shot capabilities across a wide range of downstream tasks. However, they struggle to function as off-the-shelf embedding models, leading to suboptimal performance on massive text embedding benchmarks. In this paper, we identify a potential cause underlying this deficiency. Our motivation stems from an unexpected observation: text embeddings tend to align with frequent but uninformative tokens when projected onto the vocabulary space. We argue that this excessive expression of high-frequency tokens suppresses the model's ability to capture nuanced semantics. To address this, we introduce EmbedFilter, a simple linear transformation designed to refine text embeddings derived from LLMs directly. Specifically, we uncover that the unembedding matrix within LLMs encodes a latent space that is actively writing these frequent tokens into embedding space. By filtering out this subspace, EmbedFilter suppress the influence of high-frequency tokens, thereby enhancing semantic representations. As a compelling byproduct, this enables an inherent dimensionality reduction, lowering index storage and speedup retrieval while fully preserving the refined embedding quality. Our experiments across multiple LLM backbones demonstrate that LLMs equipped with EmbedFilter achieve superior zero-shot downstream performance even with significantly reduced embedding dimensions. We hope our findings provide deeper insights into the mechanisms of LLM-based representations and inspire more principled designs to improve text embeddings training. Our code is available at https://github.com/CentreChen/EmbFilter.",
+    "authors": [
+      "Songhao Wu",
+      "Zhongxin Chen",
+      "Yuxuan Liu",
+      "Heng Cui",
+      "Cong Li",
+      "Rui Yan"
+    ],
+    "likes": 69,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2606.07502",
+    "date_collected": "2026-06-09T07:38:09.800327+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "텍스트 임베딩을 위한 숨겨진 특징 렌즈인 당신의 비임베딩 행렬",
+      "abstract": "대규모 언어 모델은 다양한 하위 작업에서 인상적인 제로샷 능력을 보여줍니다. 그러나 오프더셸프(기존 데이터로 학습된 embedding을 그대로 사용하는 것)임베딩 모델로써 작동하는 것이 어려워 대규모 텍스트 임베딩 벤치마크에서 최적의 성능을 낼 수 없습니다. 본 논문에서는 이 결핍의 잠재적인 원인을 확인합니다. 우리의 동기는 예상치 못한 관찰에서 유래합니다: 텍스트 임베딩은 어휘 공간에 투사될 때 빈번하지만 정보를 제공하지 않는 토큰과 일치하는 경향이 있습니다. 우리는 이러한 고빈도 토큰의 지나친 표현이 모델이 미묘한 의미를 포착하는 능력을 억제한다고 주장합니다. 이를 해결하기 위해, 우리는 LLMs(대규모 언어 모델)로부터 유도된 텍스트 임베딩을 개선하기 위해 설계된 간단한 선형 변환인 EmbedFilter를 소개합니다. 구체적으로, LLMs 내부의 비임베딩 행렬이 임베딩 공간으로 빈번한 토큰을 쓰기 위한 잠재 공간을 인코딩한다는 것을 발견합니다. 이 하부 공간을 걸러내면 EmbedFilter는 고빈도 토큰의 영향을 억제하여 의미 표현을 강화합니다. 독창적 부산물로 그렇게 함으로써 내재적 차원 축소를 가능하게 하여, 개선된 임베딩 품질을 완전히 보존하면서 인덱스 저장을 줄이고 검색 속도를 가속화합니다. 다양한 LLM 백본을 대상으로 한 실험은 EmbedFilter가 적은 임베딩 차원으로도 우수한 제로샷 하위 작업 성능을 달성한다는 것을 보여줍니다. 우리는 본 연구 결과가 LLM 기반 표현의 메커니즘에 대해 보다 깊은 통찰력을 제공하고, 텍스트 임베딩 학습을 개선하기 위한 보다 원칙적인 설계를 영감을 주기를 희망합니다. 우리의 코드는 https://github.com/CentreChen/EmbFilter에서 사용할 수 있습니다."
+    },
+    "summary": "1. 대규모 언어 모델의 임베딩은 고빈도 토큰과 너무 일치하여 세부 의미를 잡아내기 어렵다.\n2. EmbedFilter를 사용하면 임베딩 차원을 줄이면서도 고빈도 토큰의 부정적 영향을 억제하고 의미 표현을 향상시킬 수 있다.\n3. EmbedFilter를 적용한 대규모 언어 모델은 향상된 성능을 보이며, 연구 결과는 텍스트 임베딩 훈련을 개선하는데 중요한 역할을 할 수 있다.",
+    "categories": [
+      "LLM",
+      "Text Embeddings"
+    ]
+  },
+  {
+    "title": "SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations",
+    "abstract": "Evaluating LLM mediators remains challenging, as mediation unfolds as a real-time trajectory shaped by disputants' shifting emotions, intentions, and context. Existing testbeds rely on a few expert-authored domains, vary mainly strategic posture, and score every turn against every topic, introducing off-topic noise. We introduce SoCRATES, a benchmark for evaluating proactive LLM mediators in realistic, multi-domain testbeds. It constructs scenarios from real conflicts through an agentic pipeline across eight domains, probes five socio-cognitive adaptation axes (strategic posture, party composition, history length, emotional reactivity, and cultural identity), and scores each topic only on the turns that advance it via a topic-localized evaluator. The evaluator reaches 0.82 alignment with human experts, more than doubling a per-turn baseline. Benchmarking eight frontier LLMs, we find that even the strongest mediator closes only about a third of the unmediated consensus gap under diverse and realistic testbeds, with performance varying sharply by socio-cognitive axis, highlighting that progress lies in social adaptation to diverse conditions.",
+    "authors": [
+      "Taewon Yun",
+      "Hyeonseong Park",
+      "Jeonghwan Choi",
+      "Hayoon Park",
+      "Yeeun Choi",
+      "Hwanjun Song"
+    ],
+    "likes": 42,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2606.05563",
+    "date_collected": "2026-06-09T07:38:09.802615+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "다양한 도메인과 사회인지적 변이를 고려한 신뢰할 수 있는 프로액티브 LLM 중재의 자동평가를 향하여 (Proactive LLM Mediation의 Reliable Automated Evaluation을 위한 SoCRATES)",
+      "abstract": "LLM 중개자의 평가는 분쟁 당사자의 감정, 의도 및 맥락에 따라 실시간으로 형성되기 때문에 여전히 도전적입니다. 기존 실험 환경은 소수의 전문가가 작성한 도메인에 의존하며, 주로 전략적 태도가 다양하며 모든 턴을 모든 주제에 대해 점수화하면서 부적절한 내용을 도입합니다. 본 논문에서는 8가지 도메인을 포괄하는 현실적이고 다양한 테스트베드에서 프로액티브 LLM 중개자를 평가하기 위한 벤치마킹인 SoCRATES를 소개합니다. 이는 실제 분쟁 상황에서 시나리오를 구성하며 다섯 가지 사회인지적 적응 축(전략적 태도, 당사자 구성, 역사적 길이, 감정적 반응성, 문화적 정체성)를 조사하고, 각 주제를 주제별 평가자를 통해 이를 진행시키는 턴에 대해서만 점수화합니다. 평가자는 인간 전문가와 0.82의 일치를 보이며, 턴 당 기준선보다 두 배 이상의 결과를 달성합니다. 8가지 선진 LLM을 벤치마킹한 결과, 심지어 가장 강력한 중재자도 다양하고 현실적인 테스트베드에서 미중재적 합의 격차의 약 삼분의 일만 닫을 뿐이며, 성능은 사회인지적 축에 따라 급격하게 다양하기 때문에 진전은 다양한 조건에 대해 사회적 적응에 있음을 확인합니다."
+    },
+    "summary": "1. LLM 중재자의 평가는 실시간으로 변화하는 분쟁 당사자의 감정, 의도 및 맥락에 대한 고려가 필요하며, 이에 대해 SoCRATES가 실제적인 테스트베드에서 효율적인 평가를 제공한다.\n2. SoCRATES는 실제 분쟁 상황에서 시나리오를 활용하고 다섯 가지 사회인지적 적응 축을 고려하여 주제를 진행시키는 턴에 집중적으로 평가하며, 이러한 접근은 인간 전문가와 높은 일치도를 보인다.\n3. 8가지 선진 LLM을 평가한 결과, 현실적이고 다양한 테스트베드에서 심지어 가장 우수한 중재자도 일부 미중재적 합의 격차만을 해소할 뿐이며, 성능은 사회인지적 축에 의해 강하게 영향을 받음을 보여준다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "GENEB: Why Genomic Models Are Hard to Compare",
+    "abstract": "Progress in genomic foundation models is difficult to assess due to fragmented benchmarks, incompatible evaluation protocols, and task-specific reporting. As a result, claims of superiority or generality across models are often not directly comparable. We introduce GENEB, a large-scale diagnostic benchmark that evaluates frozen representations from 40 genomic foundation models across 100 tasks spanning 13 functional categories under a unified probing-based protocol, including few-shot regimes. GENEB enables controlled comparison across model scale, architecture, tokenization, and pretraining data while explicitly exposing task-level trade-offs. Our analysis shows that aggregate leaderboards are unstable: model rankings vary sharply across task categories, scale provides only modest and inconsistent gains, and architectural and pretraining alignment frequently outweigh parameter count. These results highlight limitations of current evaluation practices and position GENEB as a reference framework for principled comparison and category-aware model selection in genomic machine learning.",
+    "authors": [
+      "Daria Ledneva",
+      "Mikhail Nuridinov",
+      "Denis Kuznetsov"
+    ],
+    "likes": 42,
+    "published_date": "Jun 3",
+    "url": "https://huggingface.co/papers/2606.04525",
+    "date_collected": "2026-06-09T07:38:09.804675+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "유전체 모델의 비교가 어려운 이유",
+      "abstract": "유전체 기반 모델의 발전은 분리된 기준, 호환되지 않는 평가 프로토콜, 그리고 과제별 보고로 인해 평가하기 어려웠습니다. 다양한 제한 프로토콜 하에 40개 유전체 기반 모델의 100가지 과제에 걸친 동결된 표현을 평가하는 대규모 진단 벤치마크인 GENEB를 소개합니다."
+    },
+    "summary": "1. GENEB는 40개의 유전체 모델에서 100가지 과제에 걸친 동결된 표현을 평가하여, 모델 규모, 아키텍처, 토큰화, 사전 학습 데이터를 가로지르는 제어된 비교를 가능하게 합니다.\n2. 결과 분석에 따르면, 모델 랭킹은 과제 범주에 따라 뚜렷하게 변동되며, 규모는 일관성 없는 이득만을 제공하며, 아키텍처 및 사전 학습 정렬이 자주 매개변수 수를 초과합니다.\n3. GENEB는 현재의 평가 방법의 한계를 강조하고, 유전체 기계 학습에서 원칙적인 비교 및 범주 인식 모델 선택을 위한 참조 프레임워크로 위치시킵니다.",
+    "categories": [
+      "LLM",
+      "Machine Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "MMAE: A Massive Multitask Audio Editing Benchmark",
+    "abstract": "We introduce MMAE, a Massive Multitask Audio Editing benchmark, serving as the first comprehensive evaluation testbed designed for general-purpose instruction-based audio editing. Spurred by the shift toward intelligent creation, interactive editing has rapidly expanded from visual domains, pioneered by models like Nano-banana 2 for images and Gemini-Omni for video, into audio. However, the current evaluation infrastructure lags severely, remaining highly fragmented and restricted to specific subdomains or basic operations. Unlike existing benchmarks that are limited in scope, MMAE extends to a broad spectrum of real-world scenarios, encompassing 7 distinct audio modalities, including sound, speech, music, and their mixtures. Furthermore, we establish a comprehensive taxonomy spanning 6 levels of task complexity, from basic modifications to multi-hop reasoning and multi-round editing, 2 levels of granularity, and 8 distinct operation types. Meticulously curated through human-agent collaboration, MMAE comprises 2,000 high-fidelity samples paired with a pioneering rubric-based evaluation framework. By decomposing free-form tasks into 17,741 verifiable criteria, this robust rubric-based paradigm enables a precise, multi-dimensional assessment of both instruction following and context consistency. Our extensive evaluation of leading models reveals that current systems remain far from achieving reliable edits. Strikingly, the Exact Match Rate (EMR) consistently falls below 5% and plummets to an absolute 0% in complex, mixed-modality tasks, exposing critical bottlenecks in precise execution and structural robustness. We hope MMAE will serve as a catalyst for future advances in the intelligent creation community, providing a clear diagnostic roadmap and establishing a standardized, long-lasting evaluation paradigm for next-generation audio editing systems.",
+    "authors": [
+      "Ziyang Ma",
+      "Ruiqi Yan",
+      "Ruiyang Xu",
+      "Jie Fang",
+      "Zhikang Niu",
+      "Yi-Wen Chao",
+      "Wenming Tu",
+      "Tianrui Wang",
+      "Auden",
+      "Qi Chen",
+      "Wenxi Chen",
+      "Jiaying Chi",
+      "Yanru Huo",
+      "Zixuan Jiang",
+      "Xiquan Li",
+      "Yalin Li",
+      "Junxi Liu",
+      "Minghao Liu",
+      "Binghao Qiang",
+      "Yijia Shan",
+      "Zheshu Song",
+      "Tian Tan"
+    ],
+    "likes": 39,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2606.07229",
+    "date_collected": "2026-06-09T07:38:09.807665+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "**MMAE: 대규모 멀티태스크 오디오 편집 벤치마크**",
+      "abstract": "저희는 MMAE를 소개합니다. 이는 일반적인 명령 기반 오디오 편집을위한 최초의 체계적인 평가 벤치마크로, 지능적인 창작으로의 이동에 촉발된 상황에서 시작된 상호작용적 편집이 이미지의 Nano-banana 2 및 비디오의 Gemini-Omni에서 개척되어 영역을 확장한 오디오로 확대되었습니다."
+    },
+    "summary": "1. MMAE는 일반적인 명령 기반 오디오 편집을 위한 대규모 평가 벤치마크로 설계되었으며, 7가지 다양한 오디오 모드 및 6단계의 작업 복잡도를 포함합니다.\n2. 기존의 벤치마크와 달리 MMAE는 진정한 다양한 현실 시나리오를 다루며, 인간-에이전트 협력을 통해 2,000개의 고품질 샘플과 혁신적인 기준 기반 평가 프레임워크를 보유하고 있습니다.\n3. 선두 모델에 대한 평가 결과는 현재 시스템이 신뢰할 만한 편집을 달성하기에는 아직 멀었다는 점을 드러내며, 복합적인 작업에서는 0%에 이를 정확도 기록하여 정확한 실행과 구조적 강인성에서 중대한 병목 현상을 보여줍니다.",
+    "categories": [
+      "Audio",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "AnchorWorld: Embodied Egocentric World Simulation with View-based Evolution Customization",
+    "abstract": "Despite being a pivotal frontier, interactive world modeling remains underexplored in terms of the versatile controllability required by practical scenarios. To bridge this gap, we present AnchorWorld, a framework that advances egocentric simulation through enhanced interaction integrity and a flexible mechanism for world customization. First, we utilize 3D human motion as the primary interaction modality. To complement the out-of-view or truncated body parts in egocentric views, we introduce an auxiliary training supervision that incorporates exogenous viewpoints decoupled from the agent's first-person sensorium. It allows the model to observe the agent's full-body positioning relative to the environment, facilitating a more robust spatial grounding of human-world interactions. Furthermore, we propose a simple yet effective mechanism for customizing self-evolving worlds. This is achieved by defining anchor views within a unified world coordinate system, coupled with textual descriptions dictating the dynamic evolution of local scenes. Experimental results show that AnchorWorld significantly outperforms state-of-the-art baselines, while ablation studies validate the effectiveness of our key designs. Notably, our customization scheme exhibits promising spatio-temporal geometric consistency and adheres strictly to the prescribed evolutionary dynamics.",
+    "authors": [
+      "Yu Li",
+      "Menghan Xia",
+      "Gongye Liu",
+      "Xintao Wang",
+      "Conglang Zhang",
+      "Lei Ke",
+      "Yuxuan Lin",
+      "Ruihang Chu",
+      "Pengfei Wan",
+      "Kun Gai",
+      "Yujiu Yang"
+    ],
+    "likes": 24,
+    "published_date": "Jun 5",
+    "url": "https://huggingface.co/papers/2606.07326",
+    "date_collected": "2026-06-09T07:38:09.810175+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "앵커월드: 시각 기반 진화 맞춤화를 통한 몸속 세계 시뮬레이션",
+      "abstract": "상호작용적 세계 모델링은 여전히 실무 시나리오에서 요구되는 다재다능한 가용성면에서 탐구되지 않은 중요한 분야이다. 이 간극을 메우기 위해, 우리는 앵커월드를 제시하는데, 이는 강화된 상호작용 무결성과 유연한 세계 맞춤화 메커니즘을 통해 시각 중심 시뮬레이션을 발전시키는 프레임워크이다. 우선, 우리는 3D 인간 동작을 주요 상호작용 방식으로 활용한다. ..."
+    },
+    "summary": "1. AnchorWorld는 egocentric 시뮬레이션을 향상시키기 위한 프레임워크로, 3D 인간 동작을 활용하여 보완적인 훈련 감독을 도입하여 모델이 환경과의 상호작용을 보다 견고하게 기반 지을 수 있도록 한다.\n2. 또한, 자체 진화하는 세계에 대한 사용자 정의 메커니즘을 제안하여, 텍스트 설명을 통해 지역 장면의 동적 진화를 결정한다.\n3. 실험 결과는 AnchorWorld가 최첨단 기준선을 크게 능가함을 보여주며, 제안된 주요 설계의 효과를 검증하는 삭제 연구가 효과적임을 입증한다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Direct 3D-Aware Object Insertion via Decomposed Visual Proxies",
+    "abstract": "Object insertion aims to seamlessly composite a reference object into a specified region of a background image. Recent diffusion-based methods achieve high visual quality but formulate insertion as a simple 2D inpainting task, providing no explicit control over the object's 3D pose and limiting their practical applicability. We propose DIRECT (Decomposed Injection for Reference Composition and Target-integration), a novel framework that integrates interactive pose manipulation with high-fidelity 2D image synthesis to enable pose-controllable object insertion. Our method decomposes the insertion conditions into three complementary components: appearance guidance capturing visual details from the reference object, geometry guidance derived from the user-adjusted 3D proxy, and context guidance from the target background. By injecting them through separate pathways, DIRECT avoids feature entanglement and simultaneously preserves reference appearance, follows the user-specified pose, and adapts the object to the target scene. We also introduce an automated data construction pipeline to improve the diversity and quality of training data. Experiments show that DIRECT outperforms previous methods in both geometric controllability and visual quality.",
+    "authors": [
+      "Jingbo Gong",
+      "Yikai Wang",
+      "Yushi Lan",
+      "Yuhao Wan",
+      "Ziheng Ouyang",
+      "Rui Zhao",
+      "Ming-Ming Cheng",
+      "Qibin Hou",
+      "Chen Change Loy"
+    ],
+    "likes": 22,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2606.06601",
+    "date_collected": "2026-06-09T07:38:09.812555+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "3D 인식 물체 삽입을 위한 직접적인 접근 방식: 분해된 시각적 프록시를 통해",
+      "abstract": "물체 삽입은 배경 이미지의 특정 영역에 참조 물체를 자연스럽게 합성하는 것을 목표로 합니다. 최근 확산 기반 방법은 높은 시각적 품질을 달성하지만 삽입을 단순한 2D inpainting 작업으로 정의하여 물체의 3D 자세에 대한 명시적인 제어를 제공하지 않아 실용성이 제한됩니다. 저희는 DIRECT (Decomposed Injection for Reference Composition and Target-integration)라는 새로운 프레임워크를 제안합니다. 이는 인터랙티브한 자세 조작을 사용하여 높은 품질의 2D 이미지 합성과 결합하여 자세 제어 가능한 물체 삽입을 가능하게 합니다. 저희 방법은 삽입 조건을 세 가지 보조 요소로 분해합니다: 참조 물체의 시각적 세부 사항을 캡처하는 외형 가이드, 사용자 조정된 3D 프록시에서 유도된 기하학적 가이드, 그리고 대상 배경으로부터의 컨텍스트 가이드. 이들을 별도의 경로를 통해 주입함으로써, DIRECT는 피처 엉팀을 피하고 동시에 참조 외형을 보존하며 사용자가 지정한 자세를 따르고 물체를 대상 장면에 적응시킵니다. 또한 훈련 데이터의 다양성과 품질을 향상시키기 위한 자동화된 데이터 구축 파이프라인을 소개합니다. 실험 결과, DIRECT는 기하학적 제어 가능성과 시각적 품질 모두에서 이전 방법을 능가합니다."
+    },
+    "summary": "1. 물체 삽입을 위해 참조 물체의 시각적 세부 사항, 3D 프록시, 대상 배경으로부터의 가이드를 통해 자세 조작이 가능한 새로운 프레임워크인 DIRECT를 제안합니다.\n2. DIRECT는 서로 다른 경로를 통해 주입하여 참조 외형을 보존하고 사용자가 지정한 자세를 따르며 물체를 대상 장면에 적응시킵니다.\n3. 실험 결과, DIRECT는 기하학적 제어 가능성과 시각적 품질 측면에서 이전 방법을 능가함을 보여줍니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Robots Need More than VLA and World Models",
+    "abstract": "Generalist robot intelligence is often framed as a policy-scaling problem: collect more robot demonstrations, train larger Vision-Language-Action (VLA) models, and expect broader generalisation. In this position paper, we argue that this framing is incomplete. The central bottleneck is not only policy learning, but the absence of mechanisms that convert the world's abundant unstructured behavioural data into grounded robot supervision. Human motion, internet video, simulation rollouts, and interactive demonstrations contain rich information about tasks, goals, contacts, failures, and physical constraints, yet most of this information is not directly usable by robot policies because it lacks embodiment-specific action labels, task semantics, and reward structure. We identify four missing components for the next generation of robotics: data interfaces for autolabelling unstructured behaviour, embodiment interfaces for retargeting human motion to robot actions, world-model interfaces for physics-grounded 3D reasoning, and reward interfaces for inferring task progress and success from video and language. We survey recent progress in robot foundation models, cross-embodiment datasets, learning from video, world models, and reward modelling, and propose a research agenda for building robotics systems that can learn not only from robot demonstrations, but from the broader physical world.",
+    "authors": [
+      "Elis Karcini",
+      "Faisal Mehrban",
+      "Quang Nguyen",
+      "Mac Schwager",
+      "Arash Ajoudani",
+      "Cesar Cadena",
+      "Jan Peters",
+      "Marco Hutter",
+      "Haitham Bou-Ammar"
+    ],
+    "likes": 20,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2606.06556",
+    "date_collected": "2026-06-09T07:38:09.814918+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "로봇은 VLA와 세계 모델 이상이 필요하다",
+      "abstract": "일반적인 로봇 지능은 더 많은 로봇 데모 수집, 더 큰 Vision-Language-Action(VLA) 모델 훈련을 통해 보다 넓은 일반화를 기대하는 정책 확장 문제로 자주 제시된다. 본 포지션 논문에서는 이러한 제안이 불완전하다고 주장한다. 본질적 병목은 정책 학습뿐만 아니라, 세계의 풍부한 구조화되지 않은 행동 데이터를 실제 로봇 감독으로 변환하는 메커니즘의 부재에 있다. (중략)"
+    },
+    "summary": "1. 일반적인 로봇 지능의 본질적 병목은 정책 학습뿐만 아니라, 세계의 풍부한 구조화되지 않은 행동 데이터를 실제 로봇 감독으로 변환하는 메커니즘의 부재이다.\n2. 다음 세대 로봇을 위해 필요한 네 가지 부재된 구성 요소는 자동 레이블링을 위한 데이터 인터페이스, 인간 동작을 로봇 동작으로 재조정하는 존재 인터페이스, 물리적으로 근거를 둔 3D 추론을 위한 세계 모델 인터페이스 및 비디오와 언어에서 임무 진행 상황과 성공을 추론하기 위한 보상 인터페이스이다.\n3. 로봇 기초 모델, 다양한 인간 형상 데이터셋, 비디오 학습, 세계 모델 및 보상 모델링에서의 최근 진전을 살펴보고, 로봇 시스템을 구축하기 위한 연구 계획을 제안한다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents",
+    "abstract": "Existing benchmarks evaluate Tool-Integrated Reasoning (TIR) in LLMs on idealized ''happy paths'', largely overlooking real-world tool failures. We introduce ToolMaze, a benchmark for dynamic path discovery and error recovery in TIR agents. To separate systematic replanning from blind trial-and-error, ToolMaze adopts a two-dimensional design: DAG-based topological complexity and a 2 times 2 taxonomy of tool perturbations (explicit/implicit, transient/permanent). Evaluations show that perturbations degrade performance across nearly all models, with the sharpest drops under implicit semantic failures. Driven by systemic over-trust in corrupted outputs, Perturbation Recovery Rate (PRR) plummets by around 37\\% in these scenarios, while complex topologies trap agents in futile trial-and-error loops. Crucially, agentic fault-tolerance improves with model scale 3.66times slower than basic task execution, highlighting dynamic replanning as a distinct bottleneck unaddressed by model scaling or prompting. Data and code are available at https://github.com/Zhudongsheng75/ToolMaze.",
+    "authors": [
+      "Dongsheng Zhu",
+      "Xuchen Ma",
+      "Yucheng Shen",
+      "Xiang Li",
+      "Yukun Zhao",
+      "Shuaiqiang Wang",
+      "Lingyong Yan",
+      "Dawei Yin"
+    ],
+    "likes": 18,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2606.05806",
+    "date_collected": "2026-06-09T07:38:09.817284+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "도구의 실패 시: LLM 에이전트의 동적 재계획과 이상 복구 벤치마킹",
+      "abstract": "기존 벤치마크는 이상적인 \"행복한 경로\"에서 LLM의 도구 통합 추론 (TIR)을 평가하며 현실 세계의 도구 실패를 크게 무시합니다. 우리는 TIR 에이전트의 동적 경로 발견과 오류 복구를 위한 벤치마크인 ToolMaze를 소개합니다. 시스템적인 재계획과 맹목적인 시행착오를 분리하기 위해 ToolMaze는 DAG 기반의 위상 복잡성과 도구 교란의 2차원 설계를 채택합니다. 평가 결과, 교란은 거의 모든 모델에서 성능을 저하시키며, 암시적 의미 오류에서 가장 급격한 하락이 나타납니다. 오염된 출력물에 대한 체계적인 신뢰로 인한 성능하락으로 인해 이러한 시나리오에서의 교란 복구율(PRR)은 약 37% 하락하며, 복잡한 위상은 에이전트들을 무의미한 시행착오 루프에 갇히게 합니다. 중요한 점은, 모델 규모에 따른 에이전트의 결함 허용성이 기본 작업 수행보다 약 3.66배 느리게 향상되어, 동적 재계획이 모델 규모 확장이나 프롬프트 처리로 해결되지 않는 별도의 병목 현상임을 강조합니다. 데이터와 코드는 https://github.com/Zhudongsheng75/ToolMaze에서 확인할 수 있습니다."
+    },
+    "summary": "1. 기존 벤치마크는 LLM 에이전트의 도구 통합 추론을 평가할 때 실제 도구 실패를 무시하고 있으며, ToolMaze는 이러한 실패에 대응하는 동적 재계획과 오류 복구를 위한 새로운 벤치마크를 제시한다.\n2. ToolMaze는 DAG 기반의 위상 복잡성과 도구 교란의 2차원 설계를 통해 체계적인 재계획과 무작위 시행착오를 분리한다.\n3. 평가 결과, 도구의 교란은 대부분 모델에서 성능을 저하시키고, 복잡한 위상은 에이전트들이 무의미한 시행착오 루프에 갇히게 한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "OpenSkill: Open-World Self-Evolution for LLM Agents",
+    "abstract": "Self-evolving agents requires adaptation after deployment, but existing approaches assume a usable learning loop, such as curated skills, successful trajectories, or verifier signals. Real open-world deployments may provide none of these, offering only a task prompt. In this work, we study open-world self-evolution, where an agent must build both its skills and its own verification signals from scratch, using open-world resources but no target-task supervision. We propose OpenSkill, a framework that bootstraps this loop: it acquires grounded knowledge and verification anchors from documentation, repositories, and the web, synthesizes them into transferable skills, and refines those skills against self-built virtual tasks grounded in the anchors rather than in target answers. The open world thus supplies both the knowledge to be learned and a supervision-independent practice environment, with target-task supervision reserved for final evaluation. Across three benchmarks and two target agents, OpenSkill attains the best automated pass rate while satisfying the no-supervision constraint. Analysis shows its skills transfer across models without model-specific adaptation, and its self-built verifier aligns with ground-truth outcomes despite never accessing them.",
+    "authors": [
+      "Zhiling Yan",
+      "Dingjie Song",
+      "Hanrong Zhang",
+      "Wei Liang",
+      "Yuxuan Zhang",
+      "Yutong Dai",
+      "Lifang He",
+      "Philip S. Yu",
+      "Ran Xu",
+      "Xiang Li",
+      "Lichao Sun"
+    ],
+    "likes": 17,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2606.06741",
+    "date_collected": "2026-06-09T07:38:09.819900+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "오픈스킬: LLM 에이전트를 위한 오픈 월드 자기 진화",
+      "abstract": "자기 진화하는 에이전트는 배포 후 적응이 필요하지만, 기존 방법론은 가공된 기술, 성공적 경로, 또는 검증 신호와 같은 사용 가능한 학습 루프를 가정합니다. 실제 오픈 월드 배포는 이러한 것 중 하나도 제공하지 않을 수 있으며, 오직 과제 프롬프트만을 제공할 수 있습니다."
+    },
+    "summary": "1. 오픈 월드 자기 진화를 연구하여 에이전트가 기술과 검증 신호를 처음부터 구축해야 하는 프레임워크인 OpenSkill을 제안합니다.\n2. OpenSkill은 문서, 저장소 및 웹에서 확보한 이해 가능한 지식과 검증 기준을 이용하여 전가 가능한 기술로 합성하고, 그러한 기술을 정제함으로써 목표 답변이 아닌 기초에 정립된 자체 구축 가상 과제에 대해 기술을 완벽하게 합니다.\n3. OpenSkill은 모델별 적응 없이 스킬이 전가되며, 목표 작업 감독이 최종 평가를 위해 예약된 반면, 자체 구축 검증기는 접근하지 않은 상태에도 실제 결과와 일치합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents",
+    "abstract": "Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over long-term interactions. As these memories grow, they may reinforce one another, diverge across contexts, or directly conflict, making correct assistance depend on memory relations rather than isolated recall. Existing long-term memory benchmarks rarely probe how agents preserve and utilize such relations during downstream tasks. To address this gap, we introduce SubtleMemory, a benchmark for fine-grained relational memory discrimination in long-running AI agents. SubtleMemory constructs relation-controlled latent semantic artifacts whose variants instantiate complementary, nuanced, or contradictory relations, and embeds them into realistic user-agent histories, requiring agents to recover distributed relational structures during later queries and instructions. The benchmark contains 1,522 evaluation instances over 10 long histories, grounded in 1,090 relation-controlled memory-variant sets and spanning user-related and non-user-related queries. Evaluating six standalone memory systems, two Claw-style agents with native memory modules, and three Claw-style agents with plugin memory modules, we find that current systems remain weak on fine-grained relational memory discrimination. We further introduce diagnostic protocols that reveal distinct capability profiles across memory preservation, retrieval, and downstream reasoning stages.",
+    "authors": [
+      "Wenxuan Wang",
+      "Haoyu Sun",
+      "Fukuan Hou",
+      "Mingyang Song",
+      "Weinan Zhang",
+      "Yu Cheng",
+      "Yang Yang"
+    ],
+    "likes": 17,
+    "published_date": "Jun 4",
+    "url": "https://huggingface.co/papers/2606.05761",
+    "date_collected": "2026-06-09T07:38:09.822169+09:00",
+    "week": "2026-W24",
+    "translation": {
+      "title": "SubtleMemory: 긴 시간 대 AI 에이전트에서 세밀한 관계 기억 식별을 위한 벤치마크",
+      "abstract": "OpenClaw와 같은 지속적인 AI 어시스턴트들은 장기간 상호작용 중에 관련된 기억들의 큰 집합을 축적합니다. 이러한 기억들은 늘어남에 따라 상호 강화되기도 하고 문맥에 따라 다르게 나타날 수도 있으며 직접적으로 충돌할 수도 있어 올바른 어시스턴스는 고립된 회상이 아닌 기억 관계에 의존하게 됩니다. 기존의 장기 기억 벤치마크들은 에이전트가 하류 작업 중에 이러한 관계를 보존하고 활용하는 방식을 드물게 조사합니다. 이러한 공백을 해결하기 위해 우리는 SubtleMemory라는 긴 시간 대 AI 에이전트에서 세밀한 관계 기억 식별을 위한 벤치마크를 소개합니다. SubtleMemory는 관계를 제어하는 잠재적 의미적 유물들을 구성하며 이들의 변형은 보완적인, 미묘한 또는 모순적인 관계를 구현하고 있으며, 그것들을 현실적인 사용자-에이전트 이력에 포함시켜 후속 쿼리와 지시 중에 분산된 관계 구조를 복구하도록 요구합니다. 이 벤치마크에는 10개의 긴 이력에 걸친 1,522개의 평가 인스턴스가 있으며, 1,090개의 관계를 제어하는 기억 변형 세트에 근거하여 사용자 관련 및 비사용자 관련 쿼리를 포괄합니다. 6개의 독립형 메모리 시스템, 연결 메모리 모듈이 포함된 두 Claw-style 에이전트 및 플러그인 메모리 모듈이 포함된 세 Claw-style 에이전트를 평가한 결과, 현재 시스템들이 세밀한 관계 기억 식별에서 약점을 보임을 발견하였으며, 기억 보존, 검색 및 하류 추론 단계 사이에서 구별되는 능력 프로필을 밝히기 위한 진단 프로토콜을 소개합니다."
+    },
+    "summary": "1. 다양한 관계를 가진 세밀한 기억을 인식하고 활용하는 것이 어려운 과제이다.\n2. SubtleMemory 벤치마크는 관계를 제어하는 기억 변형을 활용하여 세밀한 관계 기억 식별 능력을 측정한다.\n3. 기존 시스템은 현재 세밀한 관계 기억 식별에서 약점을 보이며, 기억 보존, 검색, 추론 단계에서 서로 다른 능력 프로필을 보여준다.",
+    "categories": [
+      "LLM",
+      "AI",
+      "Other"
+    ]
+  }
+]

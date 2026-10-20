@@ -1,0 +1,130 @@
+=== Paper Collection Started at Thu Jul  2 22:27:37 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W27
+URL: https://huggingface.co/papers/week/2026-W27
+Found 10 papers in weekly view
+Fetching likes for: Orca: The World is in Your Mind
+Fetching likes for: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Fetching likes for: Dockerless: Environment-Free Program Verifier for Coding Agents
+Fetching likes for: DOPD: Dual On-policy Distillation
+Fetching likes for: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Fetching likes for: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Fetching likes for: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Fetching likes for: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Fetching likes for: Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models
+Fetching likes for: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Selected top 10 papers by likes:
+1. Orca: The World is in Your Mind (193 likes)
+2. Agentic Abstention: Do Agents Know When to Stop Instead of Act? (137 likes)
+3. Dockerless: Environment-Free Program Verifier for Coding Agents (97 likes)
+4. DOPD: Dual On-policy Distillation (89 likes)
+5. Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent (81 likes)
+6. LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing (78 likes)
+7. BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding (68 likes)
+8. Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs (55 likes)
+9. Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models (54 likes)
+10. PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation (49 likes)
+Found abstract: We introduce Orca, an initial instantiation of a general world foundation model. Orca learns a unifi...
+Processed paper: Orca: The World is in Your Mind
+Found abstract: LLM agents are expected to act over multiple turns, using search, browsing interfaces, and terminal ...
+Processed paper: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Found abstract: Program verifiers play a central role in training coding agents, including selecting trajectories fo...
+Processed paper: Dockerless: Environment-Free Program Verifier for Coding Agents
+Found abstract: On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajec...
+Processed paper: DOPD: Dual On-policy Distillation
+Found abstract: We introduce Agents-A1, a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level...
+Processed paper: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Found abstract: Streaming video editing has made rapid progress, yet practical deployment is still limited by two co...
+Processed paper: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Found abstract: Speculative decoding accelerates inference by using a lightweight draft model to generate candidate ...
+Processed paper: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Found abstract: We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprisin...
+Processed paper: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Found abstract: Embodied Vision-Language-Action (VLA) models are typically obtained by fine-tuning powerful pretrain...
+Processed paper: Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models
+Found abstract: Video generation models have emerged as a promising paradigm for embodied world simulation. However,...
+Processed paper: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Orca: The World is in Your Mind
+Paper already exists, checking if translation is complete...
+Update likes: 193  ->  176
+Update date_collected: 2026-07-03T07:27:46.928143+09:00  ->  2026-07-02T07:35:49.466804+09:00
+
+Processing paper 2/10
+Title: Agentic Abstention: Do Agents Know When to Stop Instead of Act?
+Paper already exists, checking if translation is complete...
+Update likes: 137  ->  129
+Update date_collected: 2026-07-03T07:27:46.930363+09:00  ->  2026-07-02T07:35:49.469145+09:00
+
+Processing paper 3/10
+Title: Dockerless: Environment-Free Program Verifier for Coding Agents
+Paper already exists, checking if translation is complete...
+Update likes: 97  ->  86
+Update date_collected: 2026-07-03T07:27:46.933131+09:00  ->  2026-07-02T07:35:49.472046+09:00
+
+Processing paper 4/10
+Title: DOPD: Dual On-policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 89  ->  75
+Update date_collected: 2026-07-03T07:27:46.936010+09:00  ->  2026-07-02T07:35:49.475096+09:00
+
+Processing paper 5/10
+Title: Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+Paper already exists, checking if translation is complete...
+Update likes: 81  ->  73
+Update date_collected: 2026-07-03T07:27:46.939254+09:00  ->  2026-07-02T07:35:49.480872+09:00
+
+Processing paper 6/10
+Title: LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+Paper already exists, checking if translation is complete...
+Update likes: 78  ->  75
+Update date_collected: 2026-07-03T07:27:46.941530+09:00  ->  2026-07-02T07:35:49.477492+09:00
+
+Processing paper 7/10
+Title: BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  67
+Update date_collected: 2026-07-03T07:27:46.943916+09:00  ->  2026-07-02T07:35:49.483295+09:00
+
+Processing paper 8/10
+Title: Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 55  ->  52
+Update date_collected: 2026-07-03T07:27:46.946049+09:00  ->  2026-07-02T07:35:49.485547+09:00
+
+Processing paper 9/10
+Title: Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models
+Generating Korean translation and summary...
+Summary generation error (attempt 1/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 2/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Summary generation error (attempt 3/3): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+Processing paper 10/10
+Title: PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  49
+Update date_collected: 2026-07-03T07:27:46.951587+09:00  ->  2026-07-02T07:35:49.488463+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W27.json...
+
+Updating Notion database...
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 176 -> 193)
+Updating paper: 의도적 절제: 에이전트들은 행동을 멈출 때를 알까? (likes: 129 -> 137)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 86 -> 97)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 75 -> 89)
+Updating paper: 파라미터를 확장하지 않고 수평을 넓히다: 35B 에이전트로 조 야 니언 파라미터 성능 달성 (likes: 73 -> 81)
+Updating paper: 실시간 확산 기반 스트리밍 비디오 편집을 향하여 (likes: 75 -> 78)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 67 -> 68)
+Updating paper: 숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리 (likes: 52 -> 55)
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jul  2 22:28:54 UTC 2026 ===
+

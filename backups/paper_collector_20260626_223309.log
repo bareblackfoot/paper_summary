@@ -1,0 +1,125 @@
+=== Paper Collection Started at Thu Jun 25 22:37:11 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W26
+URL: https://huggingface.co/papers/week/2026-W26
+Found 10 papers in weekly view
+Fetching likes for: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Fetching likes for: Qwen-AgentWorld: Language World Models for General Agents
+Fetching likes for: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Fetching likes for: Are We Ready For An Agent-Native Memory System?
+Fetching likes for: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Fetching likes for: OpenRath: Session-Centered Runtime State for Agent Systems
+Fetching likes for: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Fetching likes for: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Fetching likes for: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Fetching likes for: DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation
+Selected top 10 papers by likes:
+1. MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision (115 likes)
+2. Qwen-AgentWorld: Language World Models for General Agents (112 likes)
+3. PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems (90 likes)
+4. Are We Ready For An Agent-Native Memory System? (87 likes)
+5. EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions (76 likes)
+6. OpenRath: Session-Centered Runtime State for Agent Systems (73 likes)
+7. DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams (70 likes)
+8. Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention (63 likes)
+9. PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models (61 likes)
+10. DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation (55 likes)
+Found abstract: Personalized presentation generation requires more than conditioning on a current prompt or template...
+Processed paper: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Found abstract: A world model predicts environment dynamics based on current observations and actions, serving as a ...
+Processed paper: Qwen-AgentWorld: Language World Models for General Agents
+Found abstract: LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering...
+Processed paper: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Found abstract: Memory for large language model (LLM) agents has rapidly evolved from simple retrieval-augmented mec...
+Processed paper: Are We Ready For An Agent-Native Memory System?
+Found abstract: Enterprise agents increasingly operate inside workspaces: they read heterogeneous files, invoke tool...
+Processed paper: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Found abstract: Modern agent systems often suffer from fragmented runtime state: transcripts, tool effects, memory e...
+Processed paper: OpenRath: Session-Centered Runtime State for Agent Systems
+Found abstract: Massive unstructured multimodal streams suffer from high "data entropy," impeding both efficient hum...
+Processed paper: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Found abstract: Self-attention is central to Transformer performance and is often the most expensive part of the Tra...
+Processed paper: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Found abstract: Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding t...
+Processed paper: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Found abstract: Open domain subject-driven text-to-video (S2V) generation has drawn significant interest in academia...
+Processed paper: DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Paper already exists, checking if translation is complete...
+Update likes: 115  ->  69
+Update date_collected: 2026-06-26T07:37:20.299859+09:00  ->  2026-06-25T07:34:07.446967+09:00
+
+Processing paper 2/10
+Title: Qwen-AgentWorld: Language World Models for General Agents
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  85
+Update date_collected: 2026-06-26T07:37:20.303263+09:00  ->  2026-06-25T07:34:07.437410+09:00
+
+Processing paper 3/10
+Title: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  85
+Update date_collected: 2026-06-26T07:37:20.306110+09:00  ->  2026-06-25T07:34:07.440254+09:00
+
+Processing paper 4/10
+Title: Are We Ready For An Agent-Native Memory System?
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Paper already exists, checking if translation is complete...
+Update likes: 76  ->  71
+Update date_collected: 2026-06-26T07:37:20.311284+09:00  ->  2026-06-25T07:34:07.442661+09:00
+
+Processing paper 6/10
+Title: OpenRath: Session-Centered Runtime State for Agent Systems
+Paper already exists, checking if translation is complete...
+Update likes: 73  ->  70
+Update date_collected: 2026-06-26T07:37:20.313567+09:00  ->  2026-06-25T07:34:07.444804+09:00
+
+Processing paper 7/10
+Title: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  68
+Update date_collected: 2026-06-26T07:37:20.316126+09:00  ->  2026-06-25T07:34:07.449422+09:00
+
+Processing paper 8/10
+Title: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Paper already exists, checking if translation is complete...
+Update likes: 63  ->  59
+Update date_collected: 2026-06-26T07:37:20.318338+09:00  ->  2026-06-25T07:34:07.451491+09:00
+
+Processing paper 9/10
+Title: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  58
+Update date_collected: 2026-06-26T07:37:20.321044+09:00  ->  2026-06-25T07:34:07.454027+09:00
+
+Processing paper 10/10
+Title: DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W26.json...
+
+Updating Notion database...
+Updating paper: MemSlides: 사용자 지향 프레젠테이션 슬라이드 생성을 위한 계층적 메모리 주도 에이전트 프레임워크 (likes: 69 -> 115)
+Updating paper: 일반 에이전트를 위한 언어 월드 모델인 Qwen-AgentWorld (likes: 85 -> 112)
+Updating paper: PlanBench-XL: 대규모 도구 생태계에서 LLM 도구 사용 에이전트의 장기 계획 평가 (likes: 85 -> 90)
+Creating new paper: 에이전트-네이티브 메모리 시스템에 준비된 우리는?
+Updating paper: 기업 작업 세션에서 에이전트들을 벤치마킹하는 EnterpriseClawBench (likes: 71 -> 76)
+Updating paper: OpenRath: 에이전트 시스템을 위한 세션 중심 런타임 상태 (likes: 70 -> 73)
+Updating paper: 데이터클로우0: 원시 스트림으로부터 다양한 유형의 데이터를 개체적으로 조정 (likes: 68 -> 70)
+Updating paper: 그룹화된 쿼리 전문가: GQA Self-Attention의 전문가 혼합 (likes: 59 -> 63)
+Updating paper: PerceptionDLM: 병렬 영역 인식을 위한 다중모달 확산 언어 모델 (likes: 58 -> 61)
+Creating new paper: 도메인셔틀: 자유형식 오픈도메인 서브젝트 주도 텍스트-비디오 생성
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jun 25 22:39:04 UTC 2026 ===
+

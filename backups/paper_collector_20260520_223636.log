@@ -1,0 +1,119 @@
+=== Paper Collection Started at Tue May 19 22:34:17 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W21
+URL: https://huggingface.co/papers/week/2026-W21
+Found 10 papers in weekly view
+Fetching likes for: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Fetching likes for: PhysBrain 1.0 Technical Report
+Fetching likes for: Code as Agent Harness
+Fetching likes for: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Fetching likes for: MMSkills: Towards Multimodal Skills for General Visual Agents
+Fetching likes for: LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation
+Fetching likes for: Lance: Unified Multimodal Modeling by Multi-Task Synergy
+Fetching likes for: FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization
+Fetching likes for: Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation
+Fetching likes for: AI for Auto-Research: Roadmap & User Guide
+Selected top 10 papers by likes:
+1. CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence (252 likes)
+2. PhysBrain 1.0 Technical Report (135 likes)
+3. Code as Agent Harness (127 likes)
+4. SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution (111 likes)
+5. MMSkills: Towards Multimodal Skills for General Visual Agents (110 likes)
+6. LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation (90 likes)
+7. Lance: Unified Multimodal Modeling by Multi-Task Synergy (61 likes)
+8. FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization (54 likes)
+9. Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation (51 likes)
+10. AI for Auto-Research: Roadmap & User Guide (50 likes)
+Found abstract: Multimodal Large Language Models (MLLMs) have significantly advanced document understanding, yet cur...
+Processed paper: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Found abstract: Vision-language-action models have advanced rapidly, but robot trajectories alone provide limited co...
+Processed paper: PhysBrain 1.0 Technical Report
+Found abstract: Recent large language models (LLMs) have demonstrated strong capabilities in understanding and gener...
+Processed paper: Code as Agent Harness
+Found abstract: Long-horizon LLM agents leave traces that could become reusable experience, but raw trajectories are...
+Processed paper: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Found abstract: Reusable skills have become a core substrate for improving agent capabilities, yet most existing ski...
+Processed paper: MMSkills: Towards Multimodal Skills for General Visual Agents
+Found abstract: We present LongLive-2.0, an NVFP4-based parallel infrastructure throughout the full training and inf...
+Processed paper: LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation
+Found abstract: We present Lance, a lightweight native unified model supporting multimodal understanding, generation...
+Processed paper: Lance: Unified Multimodal Modeling by Multi-Task Synergy
+Found abstract: Human-centric video customization, particularly at the garment level, has shown significant commerci...
+Processed paper: FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization
+Found abstract: On-policy distillation (OPD) has emerged as an efficient post-training paradigm for large language m...
+Processed paper: Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation
+Found abstract: AI-assisted research is crossing a threshold: fully automated systems can now generate research pape...
+Processed paper: AI for Auto-Research: Roadmap & User Guide
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 252  ->  161
+Update date_collected: 2026-05-20T07:34:29.878552+09:00  ->  2026-05-19T07:28:00.978606+09:00
+
+Processing paper 2/10
+Title: PhysBrain 1.0 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 135  ->  129
+Update date_collected: 2026-05-20T07:34:29.881405+09:00  ->  2026-05-19T07:28:00.981783+09:00
+
+Processing paper 3/10
+Title: Code as Agent Harness
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: SkillsVote: Lifecycle Governance of Agent Skills from Collection, Recommendation to Evolution
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: MMSkills: Towards Multimodal Skills for General Visual Agents
+Paper already exists, checking if translation is complete...
+Update likes: 110  ->  99
+Update date_collected: 2026-05-20T07:34:29.889870+09:00  ->  2026-05-19T07:28:00.984789+09:00
+
+Processing paper 6/10
+Title: LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Lance: Unified Multimodal Modeling by Multi-Task Synergy
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  52
+Update date_collected: 2026-05-20T07:34:29.898302+09:00  ->  2026-05-19T07:28:00.987621+09:00
+
+Processing paper 9/10
+Title: Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 51  ->  49
+Update date_collected: 2026-05-20T07:34:29.901042+09:00  ->  2026-05-19T07:28:00.990669+09:00
+
+Processing paper 10/10
+Title: AI for Auto-Research: Roadmap & User Guide
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W21.json...
+
+Updating Notion database...
+Updating paper: 신뢰할 수 있는 문서 지능을 위한 근거 소속성 벤치마킹 (likes: 161 -> 252)
+Updating paper: PhysBrain 1.0 기술 보고서 (likes: 129 -> 135)
+Creating new paper: 코드를 에이전트 하네스로
+Creating new paper: SkillsVote: 에이전트 스킬의 수집부터 권장, 진화까지의 라이프사이클 지도
+Updating paper: MMSkills: 일반 시각 에이전트를 위한 다중모달 스킬로 향하는 (likes: 99 -> 110)
+Creating new paper: LongLive-2.0: 장영상 생성을 위한 NVFP4 병렬 인프라
+Creating new paper: Lance: 다중 작업 시너지를 통한 통합 다중 모달 모델링
+Updating paper: 패션카멜레온: 실시간 및 상호작용적인 인간-의복 비디오 커스터마이제이션을 향하여 (likes: 52 -> 54)
+Updating paper: 예측 학습: 정책 증류의 효율성 해부 (likes: 49 -> 51)
+Creating new paper: 자동 연구용 AI: 로드맵 & 사용자 가이드
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue May 19 22:36:14 UTC 2026 ===
+

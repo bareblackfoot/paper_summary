@@ -1,0 +1,147 @@
+=== Paper Collection Started at Mon Sep  1 22:07:03 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W36
+URL: https://huggingface.co/papers/week/2025-W36
+Found 10 papers in weekly view
+Fetching likes for: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Fetching likes for: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Fetching likes for: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Fetching likes for: Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation
+Fetching likes for: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Fetching likes for: TalkVid: A Large-Scale Diversified Dataset for Audio-Driven Talking Head
+  Synthesis
+Fetching likes for: Think in Games: Learning to Reason in Games via Reinforcement Learning
+  with Large Language Models
+Fetching likes for: TiKMiX: Take Data Influence into Dynamic Mixture for Language Model
+  Pre-training
+Fetching likes for: UItron: Foundational GUI Agent with Advanced Perception and Planning
+Fetching likes for: Efficient Code Embeddings from Code Generation Models
+Selected top 10 papers by likes:
+1. R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning (82 likes)
+2. EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control (54 likes)
+3. A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code (46 likes)
+4. Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation (31 likes)
+5. A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers (14 likes)
+6. TalkVid: A Large-Scale Diversified Dataset for Audio-Driven Talking Head
+  Synthesis (14 likes)
+7. Think in Games: Learning to Reason in Games via Reinforcement Learning
+  with Large Language Models (9 likes)
+8. TiKMiX: Take Data Influence into Dynamic Mixture for Language Model
+  Pre-training (7 likes)
+9. UItron: Foundational GUI Agent with Advanced Perception and Planning (6 likes)
+10. Efficient Code Embeddings from Code Generation Models (5 likes)
+Found abstract: Multimodal Large Language Models (MLLMs) equipped with step-by-step thinking
+capabilities have demon...
+Processed paper: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Found abstract: The human ability to seamlessly perform multimodal reasoning and physical
+interaction in the open wo...
+Processed paper: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Found abstract: The increasing adoption of large language models (LLMs) in software
+engineering necessitates rigorou...
+Processed paper: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Found abstract: Scaling laws have validated the success and promise of large-data-trained
+models in creative generat...
+Processed paper: Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation
+Found abstract: Scientific Large Language Models (Sci-LLMs) are transforming how knowledge is
+represented, integrate...
+Processed paper: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Found abstract: Audio-driven talking head synthesis has achieved remarkable photorealism, yet
+state-of-the-art (SOTA...
+Processed paper: TalkVid: A Large-Scale Diversified Dataset for Audio-Driven Talking Head
+  Synthesis
+Found abstract: Large language models (LLMs) excel at complex reasoning tasks such as
+mathematics and coding, yet th...
+Processed paper: Think in Games: Learning to Reason in Games via Reinforcement Learning
+  with Large Language Models
+Found abstract: The data mixture used in the pre-training of a language model is a
+cornerstone of its final performa...
+Processed paper: TiKMiX: Take Data Influence into Dynamic Mixture for Language Model
+  Pre-training
+Found abstract: GUI agent aims to enable automated operations on Mobile/PC devices, which is
+an important task towar...
+Processed paper: UItron: Foundational GUI Agent with Advanced Perception and Planning
+Found abstract: jina-code-embeddings is a novel code embedding model suite designed to
+retrieve code from natural la...
+Processed paper: Efficient Code Embeddings from Code Generation Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs
+  via Bi-Mode Annealing and Reinforce Learning
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for
+  General Robot Control
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: A.S.E: A Repository-Level Benchmark for Evaluating Security in
+  AI-Generated Code
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: A Survey of Scientific Large Language Models: From Data Foundations to
+  Agent Frontiers
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: TalkVid: A Large-Scale Diversified Dataset for Audio-Driven Talking Head
+  Synthesis
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Think in Games: Learning to Reason in Games via Reinforcement Learning
+  with Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: TiKMiX: Take Data Influence into Dynamic Mixture for Language Model
+  Pre-training
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: UItron: Foundational GUI Agent with Advanced Perception and Planning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Efficient Code Embeddings from Code Generation Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W36.json...
+
+Updating Notion database...
+Creating new paper: MLLM에서 양상 결합 앤닐링과 강화 학습을 통해 일반용 자동 사고 능력을 장려하는 R-4B
+Creating new paper: EmbodiedOneVision: 일반 로봇 제어를 위한 간섭된 비전-텍스트-행동 사전학습
+Creating new paper: A.S.E: AI 생성 코드 보안 평가를 위한 저장소 수준 벤치마크
+Creating new paper: Droplet3D: 비디오로부터 유래된 상식 우선순위가 3D 생성을 용이하게 합니다
+Creating new paper: 과학적 대규모 언어 모델 조사: 데이터 기초부터 에이전트 전선까지
+Creating new paper: TalkVid: 오디오 주도 토킹 헤드 합성을 위한 대규모 다양한 데이터셋
+Creating new paper: 게임 속 사고: 대형 언어 모델을 활용한 강화 학습을 통한 게임 안에서 추론하는 법
+Creating new paper: TiKMiX: 언어 모델 사전 훈련을 위한 동적 혼합에서 데이터 영향 수용
+Creating new paper: UItron: 진보된 지각과 계획 능력을 갖춘 기초 GUI 에이전트
+Creating new paper: 코드 생성 모델로부터 효율적인 코드 임베딩
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Sep  1 22:09:25 UTC 2025 ===
+

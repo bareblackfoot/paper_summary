@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Mar  9 22:12:26 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W11
+URL: https://huggingface.co/papers/week/2026-W11
+Found 10 papers in weekly view
+Fetching likes for: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Fetching likes for: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Fetching likes for: Planning in 8 Tokens: A Compact Discrete Tokenizer for Latent World Model
+Fetching likes for: WildActor: Unconstrained Identity-Preserving Video Generation
+Fetching likes for: Progressive Residual Warmup for Language Model Pretraining
+Fetching likes for: RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies
+Fetching likes for: Reasoning Models Struggle to Control their Chains of Thought
+Fetching likes for: FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling
+Fetching likes for: HiMAP-Travel: Hierarchical Multi-Agent Planning for Long-Horizon Constrained Travel
+Fetching likes for: Dynamic Chunking Diffusion Transformer
+Selected top 10 papers by likes:
+1. Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders (72 likes)
+2. BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning (50 likes)
+3. Planning in 8 Tokens: A Compact Discrete Tokenizer for Latent World Model (22 likes)
+4. WildActor: Unconstrained Identity-Preserving Video Generation (16 likes)
+5. Progressive Residual Warmup for Language Model Pretraining (15 likes)
+6. RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies (15 likes)
+7. Reasoning Models Struggle to Control their Chains of Thought (13 likes)
+8. FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling (7 likes)
+9. HiMAP-Travel: Hierarchical Multi-Agent Planning for Long-Horizon Constrained Travel (6 likes)
+10. Dynamic Chunking Diffusion Transformer (5 likes)
+Found abstract: Vision Language Model (VLM) development has largely relied on scaling model size, which hinders depl...
+Processed paper: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Found abstract: Proximal constraints are fundamental to the stability of the Large Language Model reinforcement lear...
+Processed paper: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Found abstract: World models provide a powerful framework for simulating environment dynamics conditioned on actions...
+Processed paper: Planning in 8 Tokens: A Compact Discrete Tokenizer for Latent World Model
+Found abstract: Production-ready human video generation requires digital actors to maintain strictly consistent full...
+Processed paper: WildActor: Unconstrained Identity-Preserving Video Generation
+Found abstract: Transformer architectures serve as the backbone for most modern Large Language Models, therefore the...
+Processed paper: Progressive Residual Warmup for Language Model Pretraining
+Found abstract: Memory is critical for long-horizon and history-dependent robotic manipulation. Such tasks often inv...
+Processed paper: RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies
+Found abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting misbehaviors and understanding t...
+Processed paper: Reasoning Models Struggle to Control their Chains of Thought
+Found abstract: Long-context modeling is a pivotal capability for Large Language Models, yet the quadratic complexit...
+Processed paper: FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling
+Found abstract: Sequential LLM agents fail on long-horizon planning with hard constraints like budgets and diversity...
+Processed paper: HiMAP-Travel: Hierarchical Multi-Agent Planning for Long-Horizon Constrained Travel
+Found abstract: Diffusion Transformers process images as fixed-length sequences of tokens produced by a static patch...
+Processed paper: Dynamic Chunking Diffusion Transformer
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Planning in 8 Tokens: A Compact Discrete Tokenizer for Latent World Model
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: WildActor: Unconstrained Identity-Preserving Video Generation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Progressive Residual Warmup for Language Model Pretraining
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Reasoning Models Struggle to Control their Chains of Thought
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: HiMAP-Travel: Hierarchical Multi-Agent Planning for Long-Horizon Constrained Travel
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Dynamic Chunking Diffusion Transformer
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W11.json...
+
+Updating Notion database...
+Creating new paper: 펭귄-VL: LLM 기반 비전 인코더의 효율 한계 탐구
+Creating new paper: BandPO: 신뢰 영역과 비율 클리핑을 연결하는 확률 인식한 경계를 통한 LLM 강화 학습
+Creating new paper: 8 토큰에서의 계획: 잠재 세계 모델을 위한 간결한 이산 토크나이저
+Creating new paper: 와일드액터: 제약 없는 동영상 생성을 위한 신원 보존 (Identity-Preserving) 기술
+Creating new paper: 언어 모델 사전훈련을 위한 점진적 잔여 웜업
+Creating new paper: 로보MME: 로봇 종합정책의 기억을 벤치마킹하고 이해하기
+Creating new paper: 사고 연쇄를 통제하는 추론 모델의 어려움
+Creating new paper: FlashPrefill: 초고속 장기 컨텍스트 프리핑을 위한 즉각적인 패턴 발견과 임계값 설정
+Creating new paper: HiMAP-Travel: 장기간 제약 여행을 위한 계층적 다중 에이전트 계획
+Creating new paper: 동적 청킹 확산 트랜스포머
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Mar  9 22:15:00 UTC 2026 ===
+

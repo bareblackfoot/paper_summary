@@ -1,0 +1,100 @@
+=== Paper Collection Started at Mon Aug 10 03:12:44 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W33
+URL: https://huggingface.co/papers/week/2026-W33
+Found 9 papers in weekly view
+Fetching likes for: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Fetching likes for: The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows
+Fetching likes for: Modular TTT: Rethinking Test-Time Training as Composable Modules
+Fetching likes for: StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding
+Fetching likes for: Uncertainty-Aware World Model for Aerial Image-Goal Navigation
+Fetching likes for: Skaling: Chinchilla's Exponents Meet Kaplan's Coupling
+Fetching likes for: Characterizing the Quality Profile of AI-Generated C++ in Production
+Fetching likes for: Douyin Multimodal Embedding Model Technical Report
+Fetching likes for: Addressable Memory for Video World Models
+Selected top 10 papers by likes:
+1. SimWAM: A Simple World Action Model for End-to-End Autonomous Driving (5 likes)
+2. The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows (2 likes)
+3. Modular TTT: Rethinking Test-Time Training as Composable Modules (2 likes)
+4. StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding (2 likes)
+5. Uncertainty-Aware World Model for Aerial Image-Goal Navigation (2 likes)
+6. Skaling: Chinchilla's Exponents Meet Kaplan's Coupling (1 likes)
+7. Characterizing the Quality Profile of AI-Generated C++ in Production (1 likes)
+8. Douyin Multimodal Embedding Model Technical Report (1 likes)
+9. Addressable Memory for Video World Models (0 likes)
+Found abstract: World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics prio...
+Processed paper: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Found abstract: Recent systems for optimizing prompts, programs, and ML workflows typically rely on explicit outer-l...
+Processed paper: The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows
+Found abstract: Test-time training (TTT) views sequence modeling as an online learning problem in which fast weights...
+Processed paper: Modular TTT: Rethinking Test-Time Training as Composable Modules
+Found abstract: Deploying autonomous multimodal agents in continuous, real-world environments requires them to inges...
+Processed paper: StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding
+Found abstract: Aerial image-goal navigation requires an unmanned aerial vehicle (UAV) to reach a target location sp...
+Processed paper: Uncertainty-Aware World Model for Aerial Image-Goal Navigation
+Found abstract: Neural scaling laws are foundational for language model development, yet standard formulations syste...
+Processed paper: Skaling: Chinchilla's Exponents Meet Kaplan's Coupling
+Found abstract: The widespread integration of AI coding assistants offers undeniable boosts to engineering velocity....
+Processed paper: Characterizing the Quality Profile of AI-Generated C++ in Production
+Found abstract: Multimodal representation learning is a cornerstone of modern AI. By encoding multimodal queries and...
+Processed paper: Douyin Multimodal Embedding Model Technical Report
+Found abstract: We study visual persistence in interactive video world models. These models rely on a Key-Value (KV)...
+Processed paper: Addressable Memory for Video World Models
+Collected top 9 papers. Starting summary generation...
+
+Processing paper 1/9
+Title: SimWAM: A Simple World Action Model for End-to-End Autonomous Driving
+Generating Korean translation and summary...
+
+Processing paper 2/9
+Title: The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows
+Generating Korean translation and summary...
+
+Processing paper 3/9
+Title: Modular TTT: Rethinking Test-Time Training as Composable Modules
+Generating Korean translation and summary...
+
+Processing paper 4/9
+Title: StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding
+Generating Korean translation and summary...
+
+Processing paper 5/9
+Title: Uncertainty-Aware World Model for Aerial Image-Goal Navigation
+Generating Korean translation and summary...
+
+Processing paper 6/9
+Title: Skaling: Chinchilla's Exponents Meet Kaplan's Coupling
+Generating Korean translation and summary...
+
+Processing paper 7/9
+Title: Characterizing the Quality Profile of AI-Generated C++ in Production
+Generating Korean translation and summary...
+
+Processing paper 8/9
+Title: Douyin Multimodal Embedding Model Technical Report
+Generating Korean translation and summary...
+
+Processing paper 9/9
+Title: Addressable Memory for Video World Models
+Generating Korean translation and summary...
+
+Processed 9 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W33.json...
+
+Updating Notion database...
+Creating new paper: SimWAM: 자율 주행을 위한 간단한 세계 행동 모델
+Creating new paper: 옵티마이저는 에이전트다: 프롬프트, 프로그램, 및 기계 학습 워크플로우를 가로지르는 추론 주도 검색
+Creating new paper: 모듈형 TTT: 테스트 시간 훈련을 조립 가능한 모듈로 바라보기
+Creating new paper: StreamArena: 지속적이고 상호작용적이며 장기간을 대비한 에이전틱 스트리밍 비디오 이해를 향하여
+Creating new paper: 불확실성 인식형 항공 영상-목표 네비게이션 모델
+Creating new paper: 스켈링: 친칠라의 지수가 카플란의 결합을 만나다
+Creating new paper: 제품 생산에서 AI가 생성한 C++의 품질 프로필
+Creating new paper: Douyin 다중모달 임베딩 모델 기술 보고서
+Creating new paper: 비디오 월드 모델을 위한 주소 지정 가능한 메모리
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Aug 10 03:14:26 UTC 2026 ===
+

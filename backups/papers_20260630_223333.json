@@ -1,0 +1,299 @@
+[
+  {
+    "title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+    "abstract": "Video generation models have emerged as a promising paradigm for embodied world simulation. However, both general-domain video generators and robot-specific data fine-tuned models can still produce physically implausible manipulations, including discontinuous motion trajectories and inconsistent robot-object interactions, which limits their reliability as world simulators. Through extensive experiments, we find that such physical instability mainly arises from two factors: deformation of moving objects and implausible spatio-temporal correlations among interacting entities, particularly during contact. Building on this observation, we propose PhysisForcing, a scalable training framework that strengthens physical consistency by focusing supervision on physics-informative regions through joint optimization of pixel-level and semantic-level features. The framework consists of a pixel-level trajectory alignment loss, which supervises DiT features using reference point trajectories, and a semantic-level relational alignment loss, which aligns DiT features with inter-region relations extracted from a frozen video understanding encoder. Extensive experiments on R-Bench, PAI-Bench, and EZS-Bench show that PhysisForcing consistently improves embodied video generation over strong baselines, improving the Wan2.2-I2V-A14B and Cosmos3-Nano base models on R-Bench by 22.3\\% and 9.2\\% (7.1\\% and 3.7\\% over vanilla finetuning), with the Cosmos3-Nano variant attaining the best overall score. Beyond generation, as a world model under the WorldArena action-planner protocol it raises the closed-loop success rate from 16.0\\% to 24.0\\% and further improves downstream policy success, indicating that physically aligned video models yield stronger representations for robotic manipulation.",
+    "authors": [
+      "Peiwen Zhang",
+      "Yufan Deng",
+      "Shangkun Sun",
+      "Juncheng Ma",
+      "Duomin Wang",
+      "Jonas Du",
+      "Zilin Pan",
+      "Ye Huang",
+      "Hao Liang",
+      "Songyan Huang",
+      "Ruihua Zhang",
+      "Enze Xie",
+      "Ming-Yu Liu",
+      "Daquan Zhou"
+    ],
+    "likes": 39,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28128",
+    "date_collected": "2026-06-30T07:29:40.695795+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "로봇 조작을 위한 물리 강화 세계 시뮬레이터: PhysisForcing",
+      "abstract": "비디오 생성 모델은 행위 세계 시뮬레이션에서 융합하는 유망한 패러다임으로 부상했다. 그러나, 일반 영역 비디오 생성기와 로봇 특정 데이터 미세 조정 모델 모두 불연속한 움직임 궤적과 일관성 없는 로봇-물체 상호작용을 포함한 물리적으로 그럴듯하지 않은 조작을 여전히 생성할 수 있어, 이는 그들을 세계 시뮬레이터로서의 신뢰성을 제한한다. 광범위한 실험을 통해 물리적 불안정성이 주로 이동 물체의 변형과 접촉 시간 동안 이동 엔티티들 간의 불가능한 시공간 상관성에서 비롯되는 것을 발견한다. 이 관찰을 기반으로 우리는 PhysisForcing이라는 확장 가능한 훈련 프레임워크를 제안한다."
+    },
+    "summary": "1. 물리적 불일치로 인한 영상 생성 모델의 한계를 극복하기 위해 PhysisForcing 훈련 프레임워크를 도입하였다.\n2. PhysisForcing은 물리적 일관성을 강화하기 위해 픽셀 수준의 궤적 정렬 손실과 의미 수준의 관계 정렬 손실을 결합한 것으로, 기존 벤치마크 모델들을 향상시킨다.\n3. 실험 결과는 PhysisForcing이 로봇 조작을 위한 더 강력한 표현을 제공하며, WorldArena 행동 계획자 프로토콜에서 닫힌 루프 성공률을 향상시킨다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs",
+    "abstract": "We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprising metrics that are independent of downstream benchmark scores and reveal representational failures that benchmark accuracy masks. Existing evaluations conflate representation quality with model capacity. Therefore, failures cannot be attributed to the representation rather than to the model that processes it. We formalize four functional axioms (Causality, Minimality, Separability, and Stability) and define a quantitative measure for each, computed directly on the representation independently of downstream accuracy. We audit open-weight LLMs across 23 reasoning tasks (e.g., Spatial Reasoning, Factual QA). We find that no candidate satisfies all four axioms simultaneously, that the representations distinguish task type reliably but cannot distinguish between two questions within the same task, and that the representations encode little information beyond what is already present in the input embedding. The failure is consistent across dense, reasoning-distilled, and RL-trained model families, indicating that the gap is structural rather than a property of model size or training procedure.",
+    "authors": [
+      "Fahd Seddik",
+      "Fatemeh Fard"
+    ],
+    "likes": 36,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2606.27378",
+    "date_collected": "2026-06-30T07:29:40.698067+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리",
+      "abstract": "우리는 LLMs에서의 숨은 생각 표현에 대한 공리적 평가 프레임워크를 소개합니다. 이는 하류 벤치마크 점수와 독립적인 측정 항목으로 구성되어 있으며, 벤치마크 정확도가 가리는 표현적 실패를 드러냅니다. 기존 평가는 표현 품질과 모델 용량을 혼동시키고 있습니다. 따라서 실패는 표현에 아니라 그것을 처리하는 모델에 속합니다. 우리는 네 가지 기능적 공리 (인과관계, 최소성, 분리성, 안정성)을 형식화하고, 각각의 양을 정의하며, 하류 정확도와 독립적으로 표현에 직접 계산됩니다. 우리는 23가지 추론 작업 (예: 공간적 추론, 사실 기반 질문응답) 전체에서 오픈 웨이트 LLMs를 감사합니다. 우리는 어떠한 후보도 동시에 네 가지 공리를 모두 만족시키지 않음을 발견하며, 표현은 작업 유형을 신뢰할 수 있게 구별하지만 동일 작업 내에서 두 가지 질문을 구별할 수 없으며, 입력 임베딩에 이미 존재하는 정보를 거의 인코딩합니다. 실패는 밀집, 추론 축약, RL 훈련된 모델 패밀리 전반에 걸쳐 일관되며, 이는 갭이 모델 크기나 훈련 절차의 특성이 아닌 구조적인 것임을 나타냅니다."
+    },
+    "summary": "1. LLMs에서의 생각 표현에 대한 평가 프레임워크 소개\n2. 네 가지 기능적 공리 형식화하고 각각 양적 측정 제시\n3. 다양한 추론 작업에서 오픈 웨이트 LLMs를 통한 실험 결과 및 표현적 실패의 일관성",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots",
+    "abstract": "We study whether we can learn novel manipulation skills from human actions to a bi-manual robot with parallel grippers. Human action data is cheap, abundant, and diverse, making it one of the most promising resources for scaling up robot learning. Yet transferring skills from humans to robots remains hard: most prior work treats humans as just another bi-manual 6DoF embodiment, where hand-pose estimates are noisy and the contact patterns of human fingers differ fundamentally from those of a parallel gripper. We argue that learning rotation-inclusive action signals from human data is therefore sub-optimal, and instead propose a bridging action representation: the relative wrist translation within the initial head-camera frame, an action space shared by humans and robots. To handle the potential absence of certain action components in different embodiments, we build a π_0-like vision-language-action model with interleaved action tokens and attention masking. On a suite of novel bi-manual manipulation tasks, our bridging action transfers human manipulation knowledge to robots far more effectively than noisy 6DoF human actions and scales with the amount of human data.",
+    "authors": [
+      "Sijin Chen",
+      "Kaixuan Jiang",
+      "Haixin Shi",
+      "Yanhui Wang",
+      "Weiheng Zhong",
+      "Haosheng Li",
+      "Bo Jiang",
+      "Yuxiao Liu",
+      "Xihui Liu"
+    ],
+    "likes": 32,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28133",
+    "date_collected": "2026-06-30T07:29:40.700880+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "인간으로부터 로봇으로의 조작 기술 전이를 위한 다리 역할로서의 번역",
+      "abstract": "본 연구에서는 이원례 그리퍼를 가진 이중손 로봇에게서 새로운 조작 기술을 인간의 행동으로부터 배울 수 있는지 조사합니다. 인간 행동 데이터는 저렴하고 풍부하며 다양하여, 로봇 학습 확장에 있어서 가장 유망한 자원 중 하나로 여겨집니다. 그러나 인간으로부터 로봇으로 기술을 전이하는 것은 여전히 어렵습니다. 대부분의 이전 연구들은 인간을 다른 이원례 6DoF 구현체로만 다루어 왔는데, 손의 포즈 추정은 노이즈가 심하고 인간 손가락의 접촉 패턴은 이중손 그리퍼와 근본적으로 다릅니다. 저희는 인간 데이터로부터 회전 포함된 조작 신호를 학습하는 것이 부적절하다고 주장하며, 대신 다리 역할 표현을 제안합니다: 초기 머리-카메라 프레임 내 상대적인 손목 이동, 인간과 로봇이 공유하는 행동 공간. 다양한 실현체에서 일부 행동 구성요소가 없을 수 있는 가능성에 대처하기 위해, 우리는 상호 작용하는 명령 토큰과 주의 마스킹이 삽입된 π_0 유사한 비전-언어-행동 모델을 구축합니다. 새로운 이원례 조작 과제 모음에서, 우리의 다리 역할은 노이즈가 있는 6DoF 인간 행동보다 훨씬 효과적으로 인간 조작 지식을 로봇에게 전이시키며, 인간 데이터 양에 따라 확장됩니다."
+    },
+    "summary": "1. 인간 행동 데이터로부터 이중손 로봇에 조작 기술을 효과적으로 전이하는 다리 역할 표현을 제안함.\n2. 인간과 로봇이 공유하는 상대적인 손목 이동을 기준으로 하는 명령 모델을 구축하여 인간 데이터 양에 따라 확장.\n3. 6DoF 인간 행동 대신 다리 역할 표현이 로봇 학습에 더욱 효과적이며, 다양한 이원례 조작 과제에서 검증함.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Qwen-Image-2.0-RL Technical Report",
+    "abstract": "We present Qwen-Image-2.0-RL, a post-training pipeline that applies reinforcement learning from human feedback (RLHF) and on-policy distillation (OPD) to improve both the visual quality and instruction-following capability of the Qwen-Image-2.0 diffusion model. To provide reliable reward signals, we construct task-specific composite reward models by fine-tuning vision-language models with a pointwise scoring paradigm and chain-of-thought reasoning. For text-to-image generation, the reward models cover alignment, aesthetics, and portrait fidelity dimensions. For image editing tasks, the reward system addresses instruction-following accuracy and face identity preservation. Building on this reward system, we develop a scalable GRPO-based RL training framework, incorporating a hybrid classifier-free guidance (CFG) strategy to preserve pre-trained knowledge, prompt curation via intra-group reward range filtering, and per-category reward weight calibration. To merge the task-specialized RL policies for T2I and editing, we propose on-policy distillation as the final training stage, which consolidates multiple teachers into a single student model through trajectory-level velocity matching. Extensive evaluation shows that Qwen-Image-2.0-RL achieves 57.84 overall score on Qwen-Image-Bench (+2.61 over the base model), Elo ratings of 1193 in text-to-image arena (+78) and 1349 in image edit arena (+93), demonstrating consistent gains in aesthetic quality, prompt adherence, and editing accuracy.",
+    "authors": [
+      "Yixian Xu",
+      "Kaiyuan Gao",
+      "Yuxiang Chen",
+      "Yilei Chen",
+      "Zecheng Tang",
+      "Zihao Liu",
+      "Zikai Zhou",
+      "Deqing Li",
+      "Hao Meng",
+      "Kuan Cao",
+      "Jiahao Li",
+      "Jie Zhang",
+      "Liang Peng",
+      "Lihan Jiang",
+      "Ningyuan Tang",
+      "Shengming Yin",
+      "Tianhe Wu",
+      "Xiaoyue Chen",
+      "Yan Shu",
+      "Yanran Zhang",
+      "Yi Wang",
+      "Yu Wu"
+    ],
+    "likes": 27,
+    "published_date": "Jun 25",
+    "url": "https://huggingface.co/papers/2606.27608",
+    "date_collected": "2026-06-30T07:29:40.703995+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "Qwen-Image-2.0-RL 기술 보고서",
+      "abstract": "본 보고서에서는 Qwen-Image-2.0 확산 모델의 시각적 품질과 지시어 준수 능력을 향상시키기 위해 인간 피드백을 통한 강화 학습(RLHF)과 정책 내림술(OPD)을 적용하는 사후 훈련 파이프라인인 Qwen-Image-2.0-RL을 제시합니다."
+    },
+    "summary": "1. 사후 훈련 파이프라인인 Qwen-Image-2.0-RL은 강화 학습과 정책 내림술을 적용하여 시각적 품질과 지시어 준수 능력을 향상시킴.\n2. 신뢰할 수 있는 보상 신호를 제공하기 위해 과업별 복합 보상 모델을 구축하고, 텍스트-이미지 생성 및 이미지 편집 작업에 대한 보상 시스템을 발전시킴.\n3. Qwen-Image-2.0-RL은 시험 결과에서 미적 품질, 지시어 준수, 편집 정확도 등에서 일관된 향상을 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MultiHashFormer: Hash-based Generative Language Models",
+    "abstract": "Language models (LMs) represent tokens using embedding matrices that scale linearly with the vocabulary size. To constrain the parameter footprint, prior work proposes hashing many tokens into a single vector within encoder-only models. While this offers parameter efficiency, many-to-one collisions prevent its use in causal LMs. In this paper, we propose MultiHashFormer, a new framework that allows hash-based autoregression. Each token is represented as a unique hash signature, a short sequence of discrete hash IDs, generated by multiple independent hash functions. A Hash Encoder compresses this signature into a single latent vector for processing by a Transformer decoder. Then, a Hash Decoder generates the hash signature of the next token, which is then mapped back to text. We evaluate our approach at the 100M, 1B and 3B parameter scales, demonstrating that MultiHashFormer consistently outperforms standard Transformer LMs across multiple benchmarks. Furthermore, we show that our model handles multilingual vocabulary expansion with a constant parameter footprint without any modifications.",
+    "authors": [
+      "Huiyin Xue",
+      "Atsuki Yamaguchi",
+      "Nikolaos Aletras"
+    ],
+    "likes": 16,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28057",
+    "date_collected": "2026-06-30T07:29:40.706023+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "멀티해시포머: 해시 기반 생성 언어 모델",
+      "abstract": "언어 모델(Language Models, LMs)은 어휘 크기에 선형적으로 확장되는 임베딩 행렬을 통해 토큰을 표현합니다. 파라미터 풋프린트를 제한하기 위해 이전 연구에서는 인코더만을 사용하는 모델에서 여러 토큰을 하나의 벡터로 해싱하는 방법을 제안했습니다. 이러한 방법은 파라미터를 효율적으로 사용할 수 있지만, 다수 대 일 충돌로 인해 인과적 언어 모델에서의 사용을 방해했습니다. 본 논문에서는 멀티해시포머를 제안합니다. 이는 해시 기반의 자기 회귀를 가능하게 하는 새로운 프레임워크입니다. 각 토큰은 다수의 독립적 해시 함수에 의해 생성된 각기 다른 해시 ID들의 짧은 연속으로 이루어진 고유한 해시 시그니처로 표현됩니다. 해시 인코더는 이 시그니처를 압축하여 변압기 디코더가 처리할 단일 잠재 벡터로 전달합니다. 그런 다음 해시 디코더는 다음 토큰의 해시 시그니처를 생성하고, 이를 다시 텍스트로 매핑합니다. 우리는 100M, 1B, 3B 파라미터 규모에서 우리의 방법을 평가하며, 멀티해시포머가 여러 기준에서 표준 변압기 LMs보다 일관되게 우수한 성능을 보여줍니다. 더불어 다국어 어휘 확장을 다루는 모델이 수정 없이 일정한 파라미터 풋프린트로 처리함을 보여줍니다."
+    },
+    "summary": "1. 언어 모델에서의 해시 기반의 새로운 프레임워크인 멀티해시포머를 제안하였으며, 각 토큰은 고유한 해시 시그니처로 표현되며 해시 인코더와 해시 디코더를 활용하여 자기 회귀를 가능케 합니다.\n2. 멀티해시포머는 표준 변압기 LMs를 여러 벤치마크에서 consistently(일관되게) 능가하며, 다국어 어휘의 확장도 일정한 파라미터로 처리하는 능력을 보여줍니다.\n3. 연구결과, 멀티해시포머는 다양한 규모의 모델에서 효과적으로 사용되며, 다수의 해시 충돌을 피하면서도 높은 성능을 유지합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning",
+    "abstract": "Vision-language models (VLMs) are increasingly deployed in consumer, medical, financial, and enterprise applications. This broad deployment expands the safety surface: risks can arise from multimodal question answering, assistant responses, and cross-modal composition, while moderation policies may vary across products, regions, and deployment stages. Most existing guardrails either rely on fixed taxonomies or target only a narrow set of interaction settings, which limits their adaptability when safety rules change at deployment time. We present SingGuard, a policy-adaptive multimodal guardrail model family for safety assessment in multimodal conversations. SingGuard treats the active policy as a runtime input: given natural-language rules, it checks the target content against the active policy rule by rule and predicts both the safety label and the triggered rule. To balance efficiency and interpretability, SingGuard supports fast, hybrid, and slow inference regimes along a fast-to-slow reasoning spectrum, ranging from direct safety judgments to policy-grounded deliberation. We further optimize this behavior with fast--slow decoupled reinforcement learning. We also introduce SingGuard-Bench, a multimodal guardrail benchmark with 56{,}340 examples spanning 80+ fine-grained risk types across multimodal QA, adversarial attack, and dynamic-rule evaluation settings, including cross-modal joint-risk cases where each modality is harmless in isolation but their composition implies unsafe intent. Across six benchmark families (35 datasets), SingGuard achieves state-of-the-art average F1 in every family. Dynamic-rule evaluation further shows improved policy-following accuracy from 0.6465 to 0.7415 under runtime policy shifts. Our code is available at https://github.com/inclusionAI/Sing-Guard.",
+    "authors": [
+      "SingGuard Team"
+    ],
+    "likes": 11,
+    "published_date": "Jun 22",
+    "url": "https://huggingface.co/papers/2606.22873",
+    "date_collected": "2026-06-30T07:29:40.707970+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "싱가드: 정책 적응형 다중 모달 LLM 가드레일과 동적 추론",
+      "abstract": "비전-언어 모델(VLMs)은 소비자, 의료, 금융, 기업 애플리케이션에서 점점 더 많이 사용되고 있습니다. 이와 같은 폭넓은 배치는 다중 모달 질문 응답, 어시스턴트 응답, 교차 모달 구성으로 인한 위험을 증가시킵니다. 대부분의 기존 가드레일은 고정된 분류법에 의존하거나 특정 상호작용 환경에만 초점을 맞추어 동작시간에 안전 규칙이 변경될 때 적응성이 제한됩니다. 본 연구에서는 싱가드를 소개합니다. 이는 다중 모달 대화에서 안전 평가를 위한 정책 적응형 다중 모달 가드레일 모델로, 런타임 입력의 활성 정책을 처리합니다."
+    },
+    "summary": "1. SingGuard는 다중 모달 대화에서 안전 평가를 위한 정책 적응형 가드레일 모델로, 런타임 입력의 활성 정책을 사용하여 대상 콘텐츠를 여러 규칙에 따라 체크하고 안전 레이블 및 유발된 규칙을 예측합니다.\n2. SingGuard는 빠른, 혼합, 느린 추론 체계를 지원하여 효율성과 해석가능성을 균형있게 제공합니다. 빠른-느린 분리 강화학습을 통해 이러한 동작을 최적화합니다.\n3. SingGuard는 80여 개 이상의 섬세한 위험 유형을 포함한 56,340개의 예시로 이루어진 다중 모달 가드레일 벤치마크인 SingGuard-Bench를 소개하며, 여섯 가지 패밀리(35 데이터셋)에서 최첨단 평균 F1을 달성합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "The Tatoxa System for Text Detoxification in Low-Resource Languages: The Case of Tatar",
+    "abstract": "Text detoxification, the automated detection and mitigation of abusive and harmful content, is essential for ensuring the safety of online communities and protecting users. However, low resource languages such as Tatar have received little research attention. In this paper we present Tatoxa, a novel state-of-the-art system for text detoxification in the Tatar language. Comparative experiments show that the proposed approach outperforms existing open source and proprietary commercial LLMs on key quality metrics. We also introduce a new dataset for text detoxification in Tatar, designed for fine tuning and evaluation in low resource settings. Finally, cross lingual transfer experiments indicate that transfer from other languages, including the culturally close Russian, performs significantly worse than training on native Tatar data even when a large Russian corpus is available.",
+    "authors": [
+      "Ilseyar Alimova",
+      "Bogdan Monogov",
+      "Artyom Mazur",
+      "Daniil Antonov",
+      "Vsevolod Karimov",
+      "Vitaliy Egorov",
+      "Bulat Khakimov",
+      "Alexander Panchenko"
+    ],
+    "likes": 9,
+    "published_date": "Jun 24",
+    "url": "https://huggingface.co/papers/2606.26015",
+    "date_collected": "2026-06-30T07:29:40.710468+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "저자원 언어에서의 텍스트 독성 완화를 위한 타톡사(Tatoxa) 시스템: 타타르어 사례",
+      "abstract": "온라인 커뮤니티의 안전과 사용자 보호를 위해 텍스트 독성 완화, 악의적이고 해로운 콘텐츠의 자동 감지와 완화는 중요합니다. 그러나 타타르어와 같은 저자원 언어는 적은 연구 주목을 받았습니다. 본 논문에서는 타타르어에 대한 새로운 최신 시스템인 타톡사(Tatoxa)를 제안합니다. 비교 실험 결과는 제안한 방법이 기존 공개 및 상용 LLMs를 대비하여 주요 품질 지표에서 우수한 성과를 보임을 보여줍니다. 또한, 저자원 환경에서의 세밀한 조정과 평가를 위해 설계된 새로운 타타르어 텍스트 독성 완화 데이터셋을 소개합니다. 마지막으로, 문화적으로 가까운 러시아어를 비롯한 다른 언어에서의 전이 실험 결과, 큰 러시아어 말뭉치가 제공되더라도 모국어인 타타르어 데이터에서 훈련하는 것이 더 우수한 결과를 보임을 보여줍니다."
+    },
+    "summary": "1. 저자원 언어인 타타르어에 대한 텍스트 독성 완화 시스템인 타톡사(Tatoxa)가 소개됨. \n2. 실험 결과, 타톡사 방법은 기존 LLMs 대비 주요 품질 지표에서 우수한 성과를 보임.\n3. 새로운 타타르어 텍스트 독성 완화 데이터셋과 다른 언어로부터의 전이 학습 실험 결과도 소개됨.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems",
+    "abstract": "Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for solving complex tasks through role specialization and structured interaction. However, their performance is often limited by miscoordination and, more fundamentally, the lack of fine-grained credit assignment across agents. Existing approaches typically rely on coarse-grained feedback, making it difficult to identify which agents or interaction steps are responsible for errors. We propose Gradient-Based Connections (GBC), an approach for fine-grained attribution and optimization of multi-agent systems. GBC models a MAS as a computational graph and introduces gradient-based connection weights to quantify the influence of each agent's output on downstream agents at the token level. By constructing an attribution graph and propagating task-specific loss signals backward, our method enables precise identification of error sources and targeted prompt optimization. We further develop AgentChord, an efficient implementation that leverages prefix-based gradient computation. Experiments on MultiWOZ and τ-bench show that GBC improves multi-agent performance and outperforms strong single-agent and multi-agent baselines, and higher attribution quality is associated with greater optimization effectiveness. Code is available at: https://github.com/yxc-cyber/AgentChord.",
+    "authors": [
+      "Xiaocheng Yang",
+      "Abdulrahman Alrabah",
+      "Dilek Hakkani-Tür",
+      "Gokhan Tur"
+    ],
+    "likes": 8,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28187",
+    "date_collected": "2026-06-30T07:29:40.712559+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "GBC: 그라디언트 기반 연결로 다중 에이전트 시스템 최적화하기",
+      "abstract": "대형 언어 모델(LLM)에 기반을 둔 다중 에이전트 시스템(MAS)은 역할 특화와 구조적 상호작용을 통해 복잡한 작업을 해결하는 유망한 프레임워크를 제공합니다. 그러나 그들의 성능은 종종 불일치로 제한되며, 더 근본적으로는 에이전트 간의 세심한 신용 할당 부족으로 인해 제한됩니다. 우리는 그라디언트 기반 연결(GBC)이라는 다중 에이전트 시스템에 대한 세밀한 속성과 최적화를 위한 방법을 제안합니다."
+    },
+    "summary": "1. 다중 에이전트 시스템의 세밀한 속성을 추적하여 최적화하는 GBC 모델을 제안합니다.\n2. 에이전트 간의 신용 할당 부족 문제를 해결하기 위해 그라디언트 기반의 연결 가중치를 도입합니다.\n3. 실험 결과는 GBC가 다중 에이전트 성능을 향상시키고 강력한 단일 에이전트 및 다중 에이전트 기준을 능가함을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Multi-Agent Systems",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "ProMSA:Progressive Multimodal Search Agents for Knowledge-Based Visual Question Answering",
+    "abstract": "Knowledge-based Visual Question Answering (KB-VQA) requires models to combine image understanding with external knowledge. Most prior methods use a fixed retrieve-then-generate pipeline with a pre-selected retriever and a static top-k setting, which is not adaptive during reasoning. We propose ProMSA, a progressive multimodal search agent for KB-VQA. Given an image-question pair, the agent iteratively chooses image search, text search, or stop, under explicit tool-call budgets and with deduplication to avoid redundant retrieval. For training, we first use rejection-sampling SFT to learn valid tool-use formats, then optimize the agent with TN-GSPO, a sequence-level RL objective that normalizes updates by both generation length and tool-interaction depth. Experiments on E-VQA and InfoSeek show consistent gains over strong RAG and agent baselines, and improved retrieval and end-to-end accuracy. The code is available at https://github.com/DingWu1021/Promsa.",
+    "authors": [
+      "ZhengXian Wu",
+      "Hangrui Xu",
+      "Kai Shi",
+      "Zhuohong Chen",
+      "Yunyao Yu",
+      "Chuanrui Zhang",
+      "Zirui Liao",
+      "Jun Yang",
+      "Zhenyu Yang",
+      "Haonan Lu",
+      "Haoqian Wang"
+    ],
+    "likes": 7,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.27974",
+    "date_collected": "2026-06-30T07:29:40.715058+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "ProMSA:Progressive Multimodal Search Agents를 활용한 기반 지식 시각 질의 응답 기법",
+      "abstract": "기반 지식 시각 질의 응답(Knowledge-based Visual Question Answering, KB-VQA)은 이미지 이해와 외부 지식을 결합하는 모델을 요구합니다. 대부분의 이전 방법은 사전 선택된 검색기(retriever)와 정적인 상위 k(k=top) 설정을 사용하는 고정된 검색 후 생성(pipeline) 방식을 사용하는데, 이는 추론 중에 적응이 안 되는 단점이 있습니다. 본 논문에서는 KB-VQA를 위한 Progressive Multimodal Search Agent인 ProMSA를 제안합니다. 이미지-질의 쌍이 주어지면, 에이전트는 명시적 툴 호출 예산 하에서 중복 검색을 피하기 위해 이미지 검색, 텍스트 검색 또는 중지(stop)를 순차적으로 선택합니다. 훈련을 위해 먼저 거부-샘플링 SFT를 사용하여 유효한 툴 사용 형식을 학습하고, 그 후 TN-GSPO를 통해 에이전트를 최적화합니다. TN-GSPO는 생성 길이와 툴 상호작용의 깊이에 따라 업데이트를 정규화하는 시퀀스 수준의 강화학습(RL) 목적입니다. E-VQA와 InfoSeek에서의 실험은 강력한 RAG 및 에이전트 기준에 비해 일관된 이득과 개선된 검색 및 엔드-투-엔드 정확도를 보여줍니다. 코드는 https://github.com/DingWu1021/Promsa에서 이용 가능합니다."
+    },
+    "summary": "1. ProMSA는 KB-VQA를 위한 Progressive Multimodal Search Agent로, 이미지 이해와 외부 지식 결합을 효과적으로 수행할 수 있습니다.\n2. 훈련 단계에서는 TN-GSPO를 사용하여 에이전트를 최적화하며, 추론 중에 적응적인 검색 전략을 채택합니다.\n3. 실험 결과는 ProMSA가 강력한 RAG와 에이전트와 비교하여 검색 및 정확도에서 일관된 개선을 보여줌으로써 그 효과적임을 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+    "abstract": "Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene construction from a video. SimFoundry generates sim-ready digital twins and supports object, scene, and task editing, enabling the automated generation of diverse digital cousins: affordance-preserving variations of reconstructed real-world scenes. Policies trained on SimFoundry data transfer zero-shot to challenging real tasks involving multi-step manipulation, articulated object interaction, and bimanual interaction, and its digital cousins (variations of the original scene, objects, and tasks) facilitate generalization to new real-world conditions. Across 7 manipulation tasks and 5 policy architectures, SimFoundry simulation evaluations strongly predict real-world performance, with mean Pearson correlation 0.911 and mean maximum ranking violation 0.018. When evaluating sim-trained policies zero-shot in the real world, policies trained with object, scene, and task cousins in simulation show average task success rate improvements of 17%, 21%, and 40%, respectively. Additional details at https://research.nvidia.com/labs/gear/simfoundry/ .",
+    "authors": [
+      "Nadun Ranawaka",
+      "Josiah Wong",
+      "Wei-Lin Pai",
+      "Wei-Teng Chu",
+      "Tianyuan Dai",
+      "Masoud Moghani",
+      "Hang Yin",
+      "Yunfan Jiang",
+      "Wesley Durbano",
+      "Brandon Huynh",
+      "Yu Fang",
+      "Linxi Fan",
+      "Danfei Xu",
+      "Ruohan Zhang",
+      "Li Fei-Fei",
+      "Bowen Wen",
+      "Ajay Mandlekar",
+      "Yuke Zhu"
+    ],
+    "likes": 6,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28276",
+    "date_collected": "2026-06-30T07:29:40.718351+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "SimFoundry: 정책 학습 및 평가를 위한 모듈화 및 자동화된 장면 생성",
+      "abstract": "실제 세계에서 로봇 정책을 훈련하고 평가하는 것은 비용이 많이 들며 확장하기 어렵습니다. 우리는 SimFoundry를 소개합니다. SimFoundry는 비디오에서 제로샷(알지 못하는 데이터에 대한 예측 능력) 실제-가상 장면 구성을 위한 모듈화 및 자동화된 시스템입니다. SimFoundry는 sim-ready 디지털 트윈을 생성하고 객체, 장면 및 작업 편집을 지원하여, 재구성된 실제 세계 장면의 인식 보존 변형인 다양한 디지털 사촌의 자동 생성을 가능하게 합니다. SimFoundry로 훈련된 정책은 다중 단계 조작, 인공물과 대화하는 객체 상호작용, 이중 손으로 상호작용하는 도전적인 실제 작업으로 제로샷 전송되며, 그 디지털 사촌들(원래 장면, 객체 및 작업의 변형)은 새로운 실제 세계 조건에 대한 일반화를 용이하게 합니다. 7가지 조작 작업과 5가지 정책 아키텍처에서 SimFoundry 시뮬레이션 평가는 실제 성능을 강하게 예측하며, 평균 피어슨 상관관계가 0.911이고 평균 최대 순위 위배가 0.018입니다. 실제 세계에서 제로샷으로 훈련된 정책을 평가할 때, 시뮬레이션에서 객체, 장면 및 작업 사촌과 함께 훈련된 정책은 각각 17%, 21%, 40%의 평균 작업 성공률 향상을 보여줍니다."
+    },
+    "summary": "1. SimFoundry는 실제-가상 장면 생성을 위한 모듈화 및 자동화된 시스템으로, 실제 세계에서 제로샷으로 훈련된 정책을 도와 각종 디지털 사촌을 생성하여 새로운 조건에 대한 일반화를 용이하게 합니다.\n2. SimFoundry 시뮬레이션 평가는 다양한 작업에서 실제 성능을 강하게 예측하며, 시뮬레이션에서 훈련된 정책이 실제 세계에서 높은 성공률을 보이는 것을 입증합니다.\n3. 시뮬레이션에서 객체, 장면, 작업 사촌과 함께 훈련된 정책은 평균 작업 성공률을 크게 향상시키는데, 객체 사촌은 17%, 장면 사촌은 21%, 작업 사촌은 40%의 성능 향상을 보입니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

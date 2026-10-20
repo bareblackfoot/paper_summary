@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Feb 16 22:11:38 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W08
+URL: https://huggingface.co/papers/week/2026-W08
+Found 10 papers in weekly view
+Fetching likes for: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Fetching likes for: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Fetching likes for: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Fetching likes for: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Fetching likes for: OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence
+Fetching likes for: CoPE-VideoLM: Codec Primitives For Efficient Video Language Models
+Fetching likes for: GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics
+Fetching likes for: SemanticMoments: Training-Free Motion Similarity via Third Moment Features
+Fetching likes for: What does RL improve for Visual Reasoning? A Frankenstein-Style Analysis
+Fetching likes for: RLinf-Co: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models
+Selected top 10 papers by likes:
+1. Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs (196 likes)
+2. SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise (131 likes)
+3. MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs (54 likes)
+4. Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception (50 likes)
+5. OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence (38 likes)
+6. CoPE-VideoLM: Codec Primitives For Efficient Video Language Models (19 likes)
+7. GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics (16 likes)
+8. SemanticMoments: Training-Free Motion Similarity via Third Moment Features (15 likes)
+9. What does RL improve for Visual Reasoning? A Frankenstein-Style Analysis (12 likes)
+10. RLinf-Co: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models (9 likes)
+Found abstract: The diversity of post-training data is critical for effective downstream performance in large langua...
+Processed paper: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Found abstract: Spoken query retrieval is an important interaction mode in modern information retrieval. However, ex...
+Processed paper: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Found abstract: We present MedXIAOHE, a medical vision-language foundation model designed to advance general-purpose...
+Processed paper: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Found abstract: Multimodal Large Language Models (MLLMs) excel at broad visual understanding but still struggle with...
+Processed paper: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Found abstract: Hypothesis. Artificial general intelligence is, at its core, a compression problem. Effective compre...
+Processed paper: OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence
+Found abstract: Video Language Models (VideoLMs) empower AI systems to understand temporal dynamics in videos. To fi...
+Processed paper: CoPE-VideoLM: Codec Primitives For Efficient Video Language Models
+Found abstract: This paper presents GeoAgent, a model capable of reasoning closely with humans and deriving fine-gra...
+Processed paper: GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics
+Found abstract: Retrieving videos based on semantic motion is a fundamental, yet unsolved, problem. Existing video r...
+Processed paper: SemanticMoments: Training-Free Motion Similarity via Third Moment Features
+Found abstract: Reinforcement learning (RL) with verifiable rewards has become a standard post-training stage for bo...
+Processed paper: What does RL improve for Visual Reasoning? A Frankenstein-Style Analysis
+Found abstract: Simulation offers a scalable and low-cost way to enrich vision-language-action (VLA) training, reduc...
+Processed paper: RLinf-Co: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: CoPE-VideoLM: Codec Primitives For Efficient Video Language Models
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: SemanticMoments: Training-Free Motion Similarity via Third Moment Features
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: What does RL improve for Visual Reasoning? A Frankenstein-Style Analysis
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: RLinf-Co: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W08.json...
+
+Updating Notion database...
+Creating new paper: 적은 양이 충분하다: LLM의 특징 공간에서 다양한 데이터 합성하기
+Creating new paper: 음향 잡음 하에서의 말로 된 질의 검색에 대한 강인성 평가 벤치마크인 SQuTR
+Creating new paper: MedXIAOHE: 의료용 MLLM 구축을 위한 포괄적인 레시피
+Creating new paper: 줌 없이 줌: 세세한 다중모달 지각을 위한 영역-이미지 증류
+Creating new paper: 원비전-인코더: 코덱-일치 희박성, 다중모달 지능을 위한 기초 원리
+Creating new paper: CoPE-VideoLM: 비디오 언어 모델을 위한 코덱 기본 요소
+Creating new paper: 지오에이전트: 강화된 지리적 특성으로 어디서든지 지리 위치 파악 학습하기
+Creating new paper: 의미적인 순간: 제 3 모멘트 피쳐를 통한 학습 불필요한 움직임 유사성
+Creating new paper: 시각 추론을 위해 강화학습이 무엇을 개선하는가? 프랑켄슈타인 스타일 분석
+Creating new paper: RLinf-Co: 시뮬레이션-실제 공동 교육을 위한 강화 학습 기반 VLA 모델용 교육 방법
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Feb 16 22:13:38 UTC 2026 ===
+

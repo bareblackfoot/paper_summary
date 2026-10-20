@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Baichuan-M3: Modeling Clinical Inquiry for Reliable Medical Decision-Making",
+    "abstract": "We introduce Baichuan-M3, a medical-enhanced large language model engineered to shift the paradigm from passive question-answering to active, clinical-grade decision support. Addressing the limitations of existing systems in open-ended consultations, Baichuan-M3 utilizes a specialized training pipeline to model the systematic workflow of a physician. Key capabilities include: (i) proactive information acquisition to resolve ambiguity; (ii) long-horizon reasoning that unifies scattered evidence into coherent diagnoses; and (iii) adaptive hallucination suppression to ensure factual reliability. Empirical evaluations demonstrate that Baichuan-M3 achieves state-of-the-art results on HealthBench, the newly introduced HealthBench-Hallu and ScanBench, significantly outperforming GPT-5.2 in clinical inquiry, advisory and safety. The models are publicly available at https://huggingface.co/collections/baichuan-inc/baichuan-m3.",
+    "authors": [
+      "Baichuan-M3 Team",
+      "Chengfeng Dou",
+      "Fan Yang",
+      "Fei Li",
+      "Jiyuan Jia",
+      "Qiang Ju",
+      "Shuai Wang",
+      "Tianpeng Li",
+      "Xiangrong Zeng",
+      "Yijie Zhou",
+      "Hongda Zhang",
+      "Jinyang Tai",
+      "Linzhuang Sun",
+      "Peidong Guo",
+      "Yichuan Mo",
+      "Xiaochuan Wang",
+      "Hengfu Cui",
+      "Zhishou Zhang"
+    ],
+    "likes": 54,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.06570",
+    "date_collected": "2026-02-10T07:17:21.062961+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "Baichuan-M3: 의학 결정 지원을 위한 신뢰성 있는 의료 의사 결정 모델링",
+      "abstract": "Baichuan-M3은 수동 질문-답변에서 능동적이고 임상 수준의 결정 지원으로 패러다임을 전환하는 의료 강화 대형 언어 모델로, 개방적 상담의 한계를 극복하기 위해 의사의 체계적인 업무 흐름을 모델링하기 위한 전문화된 훈련 파이프라인을 활용합니다. 주요 기능으로는 (i) 모호성 해소를 위한 선제적 정보 획득, (ii) 흩어진 증거를 일관된 진단으로 통합하는 장기면 추론, (iii) 사실적 신빙성을 보장하기 위한 적응적 환각 억제가 포함됩니다. 경험적 평가 결과, Baichuan-M3은 HealthBench, HealthBench-Hallu 및 ScanBench에서 GPT-5.2를 크게 능가하는 최첨단 결정, 자문 및 안전성 결과를 도출합니다. 해당 모델은 https://huggingface.co/collections/baichuan-inc/baichuan-m3에서 공개됩니다."
+    },
+    "summary": "1. Baichuan-M3은 수동적인 질문에 응답하는 것을 넘어 활동적이고 임상 수준의 의사 결정 지원 모델로, 의사의 업무 흐름을 모방하여 의학 상담에서 업무 효율성을 향상시키는 데 주력합니다.\n2. 모델의 주요 기능으로는 모호성 해소를 위한 선제적 정보 획득, 흩어진 증거를 일관된 진단으로 통합하는 장기면 추론, 그리고 사실적 신빙성을 보장하기 위한 적응적 환각 억제가 있습니다.\n3. Baichuan-M3은 HealthBench와 같은 데이터셋에서 GPT-5.2를 능가하는 결과를 얻어내어 의료 분야에서 최신 기술을 보여주고 있습니다.",
+    "categories": [
+      "LLM",
+      "Medical"
+    ]
+  },
+  {
+    "title": "F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is commonly based on group sampling to estimate advantages and stabilize policy updates. In practice, large group sizes are not feasible due to computational limits, which biases learning toward trajectories that are already likely. Smaller groups often miss rare-correct trajectories while still containing mixed rewards, concentrating probability on common solutions. We derive the probability that updates miss rare-correct modes as a function of group size, showing non-monotonic behavior, and characterize how updates redistribute mass within the correct set, revealing that unsampled-correct mass can shrink even as total correct mass grows. Motivated by this analysis, we propose a difficulty-aware advantage scaling coefficient, inspired by Focal loss, that down-weights updates on high-success prompts. The lightweight modification can be directly integrated into any group-relative RLVR algorithm such as GRPO, DAPO, and CISPO. On Qwen2.5-7B across in-domain and out-of-domain benchmarks, our method improves pass@256 from 64.1 rightarrow 70.3 (GRPO), 69.3 rightarrow 72.5 (DAPO), and 73.2 rightarrow 76.8 (CISPO), while preserving or improving pass@1, without increasing group size or computational cost.",
+    "authors": [
+      "Daniil Plyusov",
+      "Alexey Gorbatovski",
+      "Boris Shaposhnikov",
+      "Viacheslav Sinii",
+      "Alexey Malakhov",
+      "Daniil Gavrilov"
+    ],
+    "likes": 53,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.06717",
+    "date_collected": "2026-02-10T07:17:21.064182+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "F-GRPO: 정반대를 배우지만 드문 경우를 잊지 마세요",
+      "abstract": "검증 가능한 보상(Verifiable Rewards)을 이용한 강화 학습(Reinforcement Learning)은 주로 그룹 샘플링을 기반으로 하여 이점을 추정하고 정책 업데이트를 안정화합니다. 하지만 실무에서 컴퓨팅 한계로 큰 그룹 크기를 사용할 수 없어 이미 일어날 만한 경로에 학습이 편향되는 문제가 있습니다. 작은 그룹은 드문 올바른 경로를 놓치면서도 혼합된 보상을 포함하고 공통적인 해법에 확률을 집중합니다. 우리는 그룹 크기의 함수로 업데이트가 드문 올바른 모드를 놓치는 확률을 유도하며, 업데이트가 올바른 세트 내에서 질량을 재분배하는 방식을 특성화하여, 비모노토닉 행동을 보여줍니다. 이 분석에 기반해, 높은 성공 프롬프트에서 업데이트를 가중치를 감소시키는 Focal Loss에 영감을 받은 어려움 인식적 이점 조정 계수를 제안합니다. 이 가벼운 수정은 GRPO, DAPO, CISPO와 같은 모든 그룹 상대적 RLVR 알고리즘에 직접 통합할 수 있습니다. 도메인 내 및 도메인 외 벤치마크에서, 우리의 방법은 그룹 크기나 계산 비용을 증가시키지 않으면서 pass@256를 64.1에서 70.3(GrPO), 69.3에서 72.5(DAPO), 73.2에서 76.8(CISPO)로 향상시키고, pass@1을 유지하거나 개선합니다."
+    },
+    "summary": "1. 강화 학습에서 그룹 샘플링을 통한 이점 추정과 정책 업데이트 안정화가 중요한데, 컴퓨팅 제한으로 인해 큰 그룹 크기를 사용할 수 없는 문제가 있음.\n2. 작은 그룹은 드문 올바른 경로를 놓치면서도 혼합된 보상을 포함하고 공통적인 해법에 확률을 집중하여 문제 발생.\n3. 어려움 인식적 이점 조정 계수를 제안하여 높은 성공 프롬프트에서 업데이트를 가중치를 감소시키는 방법은 pass@256 를 향상시키면서 그룹 크기나 계산 비용을 증가시키지 않음.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "OdysseyArena: Benchmarking Large Language Models For Long-Horizon, Active and Inductive Interactions",
+    "abstract": "The rapid advancement of Large Language Models (LLMs) has catalyzed the development of autonomous agents capable of navigating complex environments. However, existing evaluations primarily adopt a deductive paradigm, where agents execute tasks based on explicitly provided rules and static goals, often within limited planning horizons. Crucially, this neglects the inductive necessity for agents to discover latent transition laws from experience autonomously, which is the cornerstone for enabling agentic foresight and sustaining strategic coherence. To bridge this gap, we introduce OdysseyArena, which re-centers agent evaluation on long-horizon, active, and inductive interactions. We formalize and instantiate four primitives, translating abstract transition dynamics into concrete interactive environments. Building upon this, we establish OdysseyArena-Lite for standardized benchmarking, providing a set of 120 tasks to measure an agent's inductive efficiency and long-horizon discovery. Pushing further, we introduce OdysseyArena-Challenge to stress-test agent stability across extreme interaction horizons (e.g., > 200 steps). Extensive experiments on 15+ leading LLMs reveal that even frontier models exhibit a deficiency in inductive scenarios, identifying a critical bottleneck in the pursuit of autonomous discovery in complex environments. Our code and data are available at https://github.com/xufangzhi/Odyssey-Arena",
+    "authors": [
+      "Fangzhi Xu",
+      "Hang Yan",
+      "Qiushi Sun",
+      "Jinyang Wu",
+      "Zixian Huang",
+      "Muye Huang",
+      "Jingyang Gong",
+      "Zichen Ding",
+      "Kanzhi Cheng",
+      "Yian Wang",
+      "Xinyu Che",
+      "Zeyi Sun",
+      "Jian Zhang",
+      "Zhangyue Yin",
+      "Haoran Luo",
+      "Xuanjing Huang",
+      "Ben Kao",
+      "Jun Liu",
+      "Qika Lin"
+    ],
+    "likes": 51,
+    "published_date": "Feb 5",
+    "url": "https://huggingface.co/papers/2602.05843",
+    "date_collected": "2026-02-10T07:17:21.065878+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "오디세이아레나: 장기적, 능동적이며 귀납적 상호작용을 위한 대규모 언어 모델 벤치마킹",
+      "abstract": "대규모 언어 모델(LLMs)의 급속한 발전은 복잡한 환경을 탐색할 수 있는 자율 에이전트의 개발을 가속화했다. 그러나 기존 평가는 대부분 추론적 패러다임을 채택하여, 에이전트가 명시적으로 제공된 규칙과 정적 목표에 따라 작업을 수행하며 종종 한정된 계획 수행 범위 내에서 이루어진다. 중요한 점은 에이전트가 경험으로부터 잠재적인 전이 법칙을 자율적으로 발견해야 하는 귀납적 필수성을 무시한다는 점인데, 이는 에이전트의 선행견지를 가능하게 하고 전략적 일관성을 유지하는 기반이 된다. 이것을 극복하기 위해 우리는 오디세이아레나를 소개하는데, 이는 에이전트 평가를 장기적, 능동적, 그리고 귀납적 상호작용에 중점을 둔다. 추상적인 전이 동역학을 구체적인 상호작용 환경으로 번역하는 네 가지 원시 요소를 형식화하고 실체화한다. 이를 기반으로 우리는 표준화된 벤치마킹을 위한 오디세이아레나-라이트를 확립하여, 에이전트의 귀납적 효율성과 장기적 발견을 측정하는 120가지 작업 세트를 제공한다. 더 나아가 우리는 상호작용 범위가 극단적으로 긴(예: > 200 단계) 경우 에이전트의 안정성을 스트레스 테스트하는 오디세이아레나-챌린지를 도입한다. 15개 이상의 주요 LLM에 대한 방대한 실험 결과는, 최첨단 모델조차 귀납적 시나리오에서 결핍을 보여줌으로써 복합 환경에서의 자율적 발견 추구에서 핵심 병목 현상을 식별한다. 우리의 코드와 데이터는 https://github.com/xufangzhi/Odyssey-Arena 에서 사용할 수 있다."
+    },
+    "summary": "1. 대규모 언어 모델의 발전으로 복잡 환경에서 탐색이 가능한 자율 에이전트 개발이 가속화되고 있으나, 기존 평가 방식은 귀납적 상호작용의 필수성을 간과하고 있다.\n2. 오디세이아레나는 장기적, 능동적, 그리고 귀납적 상호작용에 중점을 둔 에이전트 평가를 소개하며, 표준화된 벤치마킹을 위한 작업 세트를 제공한다.\n3. 실험 결과는 선행 모델들도 귀납적 시나리오에서 결핍을 보여주어, 복합 환경에서의 자율적 발견에 대한 병목 현상이 존재함을 밝힌다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders",
+    "abstract": "Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, including environmental noises and paralinguistic sounds (e.g. laughter, whispering) and disentangle them effectively, requiring removal of only 19-27% of features to erase a concept. Feature steering reduces Whisper's false speech detections by 70% with negligible WER increase, demonstrating real-world applicability. Finally, we find SAE features correlated with human EEG activity during speech perception, indicating alignment with human neural processing. The code and checkpoints are available at https://github.com/audiosae/audiosae_demo.",
+    "authors": [
+      "Georgii Aparin",
+      "Tasnima Sadekova",
+      "Alexey Rukhovich",
+      "Assel Yermekova",
+      "Laida Kushnareva",
+      "Vadim Popov",
+      "Kristian Kuznetsov",
+      "Irina Piontkovskaya"
+    ],
+    "likes": 49,
+    "published_date": "Feb 4",
+    "url": "https://huggingface.co/papers/2602.05027",
+    "date_collected": "2026-02-10T07:17:21.067146+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "오디오 처리 모델 이해를 위한 Sparse AutoEncoders 활용에 대한 연구",
+      "abstract": "Sparse Autoencoders (SAEs)는 신경 표현을 해석하는 데 강력한 도구이지만, 오디오 분야에서의 활용은 아직 탐구되지 않았습니다. Whisper와 HuBERT의 모든 인코더 레이어를 SAE로 훈련시키고, 그 안정성, 해석 가능성을 평가하며, 실용성을 보입니다. 랜덤 시드 간 50% 이상의 특징이 일관 유지되며, 재구성 품질은 유지됩니다. SAE 특징은 일반적인 음향 및 의미 정보뿐만 아니라 환경 소음,언어학적 소리(예: 웃음,속삭임) 등 특정 이벤트도 효과적으로 잡아내며, 개념을 지우기 위해 특징의 19-27%만 제거하면 충분합니다. 특징 제어는 Whisper의 잘못된 음성 감지를 70% 줄이고, 무시할 수 있는 WER 증가로, 실제 성능을 입증합니다. 마지막으로, 우리는 SAE 특징이 언어 인식 중 인간의 EEG 활동과 관련이 있음을 발견하여, 인간 신경 처리와 일치함을 보여줍니다. 코드 및 체크포인트는 https://github.com/audiosae/audiosae_demo 에서 확인할 수 있습니다."
+    },
+    "summary": "1. Sparse AutoEncoders(SAEs)를 이용한 오디오 처리 모델 해석에 대한 연구\n2. SAE 특징은 음향 및 의미 정보뿐만 아니라 환경 소음,언어학적 소리 등을 효과적으로 잡아내어 개념을 지울 때 19-27%의 특징만 제거하면 충분함\n3. SAE 특징은 Whisper의 잘못된 음성 감지를 70% 줄이는 효과를 보이고, 인간의 EEG 활동과 관련이 있어 인간의 신경 처리와 일치함을 보여줌",
+    "categories": [
+      "Audio"
+    ]
+  },
+  {
+    "title": "On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models",
+    "abstract": "Entropy serves as a critical metric for measuring the diversity of outputs generated by large language models (LLMs), providing valuable insights into their exploration capabilities. While recent studies increasingly focus on monitoring and adjusting entropy to better balance exploration and exploitation in reinforcement fine-tuning (RFT), a principled understanding of entropy dynamics during this process is yet to be thoroughly investigated. In this paper, we establish a theoretical framework for analyzing the entropy dynamics during the RFT process, which begins with a discriminant expression that quantifies entropy change under a single logit update. This foundation enables the derivation of a first-order expression for entropy change, which can be further extended to the update formula of Group Relative Policy Optimization (GRPO). The corollaries and insights drawn from the theoretical analysis inspire the design of entropy control methods, and also offer a unified lens for interpreting various entropy-based methods in existing studies. We provide empirical evidence to support the main conclusions of our analysis and demonstrate the effectiveness of the derived entropy-discriminator clipping methods. This study yields novel insights into RFT training dynamics, providing theoretical support and practical strategies for optimizing the exploration-exploitation balance during LLM fine-tuning.",
+    "authors": [
+      "Shumin Wang",
+      "Yuexiang Xie",
+      "Wenhao Zhang",
+      "Yuchang Sun",
+      "Yanxi Chen",
+      "Yaliang Li",
+      "Yanyong Zhang"
+    ],
+    "likes": 45,
+    "published_date": "Feb 3",
+    "url": "https://huggingface.co/papers/2602.03392",
+    "date_collected": "2026-02-10T07:17:21.068359+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "대형 언어 모델의 강화 세밀 조정 과정에서의 엔트로피 역학에 관하여",
+      "abstract": "엔트로피는 대형 언어 모델이 생성하는 다양한 출력물의 다양성을 측정하는 중요한 지표로 작용하며, 탐사 능력을 평가하는 데 유용한 통찰을 제공합니다. 최근 연구들은 강화 학습 세밀 조정 (RFT)에서 엔트로피를 모니터링하고 조정하여 탐사와 활용의 균형을 더 잘 유지하려고 노력하지만, 이 과정에서의 엔트로피 역학에 대한 원리적 이해는 아직 철저히 조사되지 않았습니다. 본 논문에서는 RFT 과정 중 엔트로피 역학을 분석하기 위한 이론적 기반을 수립합니다. 이는 한 개의 로짓 업데이트에서 엔트로피 변화를 양적화하는 판별식 식으로 시작합니다. 이 바탕을 토대로 엔트로피 변화의 일차식 표현이 유도될 수 있으며, 이는 Group Relative Policy Optimization (GRPO)의 업데이트 공식으로 확장될 수 있습니다. 이론적 분석에서 파생된 함의와 통찰은 엔트로피 제어 방법의 설계를 영감주며, 기존 연구에서 다양한 엔트로피 기반 방법을 해석하는 통일된 렌즈를 제시합니다. 우리의 분석 주요 결론을 지원하는 경험적 증거를 제시하고, 유도된 엔트로피 판별자 클리핑 방법의 효과를 증명합니다. 본 연구는 RFT 훈련 역학에 새로운 통찰을 제공하며, LLM 세밀 조정 과정에서 탐사와 활용의 균형을 최적화하기 위한 이론적 지원과 실용적 전략을 제시합니다."
+    },
+    "summary": "1. 대형 언어 모델의 강화 세밀 조정 과정에서 엔트로피 역학을 분석하기 위한 이론적 기반을 수립하였습니다.\n2. 연구는 엔트로피 변화에 대한 일차식 표현을 유도하고, GRPO의 업데이트 공식으로 확장할 수 있음을 제시했습니다.\n3. 이론적 분석에서 얻은 결과를 토대로 엔트로피 제어 방법의 설계를 영감주며, 다양한 기존 연구의 엔트로피 기반 방법들을 해석하는 통일된 렌즈를 제시했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "MSign: An Optimizer Preventing Training Instability in Large Language Models via Stable Rank Restoration",
+    "abstract": "Training instability remains a critical challenge in large language model (LLM) pretraining, often manifesting as sudden gradient explosions that waste significant computational resources. We study training failures in a 5M-parameter NanoGPT model scaled via μP, identifying two key phenomena preceding collapse: (1) rapid decline in weight matrix stable rank (ratio of squared Frobenius norm to squared spectral norm), and (2) increasing alignment between adjacent layer Jacobians. We prove theoretically that these two conditions jointly cause exponential gradient norm growth with network depth. To break this instability mechanism, we propose MSign, a new optimizer that periodically applies matrix sign operations to restore stable rank. Experiments on models from 5M to 3B parameters demonstrate that MSign effectively prevents training failures with a computational overhead of less than 7.0%.",
+    "authors": [
+      "Lianhai Ren",
+      "Yucheng Ding",
+      "Xiao Liu",
+      "Qianxiao Li",
+      "Peng Cheng",
+      "Yeyun Gong"
+    ],
+    "likes": 29,
+    "published_date": "Feb 2",
+    "url": "https://huggingface.co/papers/2602.01734",
+    "date_collected": "2026-02-10T07:17:21.069568+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "MSign: 대규모 언어 모델에서 훈련 불안정성 방지를 위한 옵티마이저 (Optimizer)인 MSign",
+      "abstract": "대규모 언어 모델 (LLM) 사전훈련에서 훈련 불안정성은 여전히 중요한 과제로 남아 있습니다. 종종 급격한 기울기 폭발로 나타나며 상당한 컴퓨팅 자원을 낭비합니다. 이 연구에서는 5백만 파라미터 NanoGPT 모델의 훈련 실패를 μP를 통해 스케일링한 경우를 조사하며, 붕괴 이전에 나타나는 두 가지 주요 현상을 확인했습니다: 첫째, 가중치 행렬 안정 순위(제곱 프로베니우스 노름 대 제곱 스펙트럼 노름)의 급격한 감소, 그리고 둘째, 인접 층 야코비안 (Jacobian) 사이의 정렬 증가. 우리는 이 두 조건이 결합되어 신경망 깊이에 따라 지수적인 기울기 놈 증가를 불러일으킨다는 이론적 증명을 제시했습니다. 이 불안정성 메커니즘을 깨기 위해 매트릭스 사인 작업을 주기적으로 적용하여 안정 순위를 복원하는 새로운 옵티마이저인 MSign을 제안합니다. 5백만부터 30억 파라미터까지의 모델에 대한 실험은 MSign이 훈련 실패를 효과적으로 방지하며, 계산적 부담이 7.0% 미만임을 보여줍니다."
+    },
+    "summary": "1. 대규모 언어 모델 사전훈련에서 발생하는 훈련 불안정성은 기울기 폭발로 나타나는데, 이를 막기 위해 안정 순위를 복원하는 MSign 옵티마이저를 제안.\n2. NanoGPT 모델에서 실험을 통해, 가중치 행렬 안정 순위의 급격한 감소와 인접 층 야코비안의 정렬 증가가 신경망 깊이별 지수적인 기울기 증가를 유발한다는 이론적 증명을 함.\n3. 5백만부터 30억 파라미터까지의 모델 실험 결과, MSign이 훈련 실패를 효과적으로 방지하며, 낮은 계산 비용을 가짐을 확인.",
+    "categories": [
+      "LLM",
+      "Optimizer",
+      "Theoretical Analysis"
+    ]
+  },
+  {
+    "title": "Pisets: A Robust Speech Recognition System for Lectures and Interviews",
+    "abstract": "This work presents a speech-to-text system \"Pisets\" for scientists and journalists which is based on a three-component architecture aimed at improving speech recognition accuracy while minimizing errors and hallucinations associated with the Whisper model. The architecture comprises primary recognition using Wav2Vec2, false positive filtering via the Audio Spectrogram Transformer (AST), and final speech recognition through Whisper. The implementation of curriculum learning methods and the utilization of diverse Russian-language speech corpora significantly enhanced the system's effectiveness. Additionally, advanced uncertainty modeling techniques were introduced, contributing to further improvements in transcription quality. The proposed approaches ensure robust transcribing of long audio data across various acoustic conditions compared to WhisperX and the usual Whisper model. The source code of \"Pisets\" system is publicly available at GitHub: https://github.com/bond005/pisets.",
+    "authors": [
+      "Ivan Bondarenko",
+      "Daniil Grebenkin",
+      "Oleg Sedukhin",
+      "Mikhail Klementev",
+      "Roman Derunets",
+      "Lyudmila Budneva"
+    ],
+    "likes": 29,
+    "published_date": "Jan 26",
+    "url": "https://huggingface.co/papers/2601.18415",
+    "date_collected": "2026-02-10T07:17:21.070749+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "Pisets: 강의와 인터뷰를 위한 견고한 음성 인식 시스템",
+      "abstract": "본 연구는 과학자와 저널리스트를 위한 \"Pisets\"라는 음성-텍스트 시스템을 제시하며, 이는 Whisper 모델과 관련된 오류 및 환각을 최소화하고 음성 인식 정확도를 향상시키기 위한 세 가지 구성 요소 아키텍처에 기반을 두고 있습니다. 이 아키텍처는 Wav2Vec2를 사용한 주요 인식, Audio Spectrogram Transformer (AST)를 통한 거짓 양성 필터링, Whisper를 통한 최종 음성 인식으로 구성되어 있습니다. 커리큘럼 학습 방법론의 구현과 다양한 러시아어 음성 말뭉치의 활용은 시스템의 효과를 높였습니다. 또한 더 나은 전사 품질에 기여하는 고급 불확실성 모델링 기술이 도입되었습니다. 제안된 방법은 WhisperX 및 일반 Whisper 모델에 비해 다양한 음향 조건에서 장기 오디오 데이터의 견고한 전사를 보장합니다. \"Pisets\" 시스템의 소스 코드는 GitHub에서 공개적으로 제공됩니다: https://github.com/bond005/pisets."
+    },
+    "summary": "1. \"Pisets\"는 과학자와 저널리스트를 위한 음성-텍스트 시스템으로, 오류를 최소화하고 음성 인식 정확도를 높이는 데 초점을 맞춘 세 가지 구성 요소 아키텍처를 기반으로 함.\n2. 커리큘럼 학습 및 다양한 러시아어 음성 말뭉치의 활용이 시스템의 효과를 크게 향상시켰으며, 고급 불확실성 모델링 기술이 전사 품질을 더욱 향상시켰음.\n3. \"Pisets\" 시스템은 WhisperX 및 Whisper 모델에 비해 다양한 음향 조건에서 장기 오디오 데이터의 견고한 전사를 보장함.",
+    "categories": [
+      "Audio",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+    "abstract": "Being able to simulate the outcomes of actions in varied environments will revolutionize the development of generalist agents at scale. However, modeling these world dynamics, especially for dexterous robotics tasks, poses significant challenges due to limited data coverage and scarce action labels. As an endeavor towards this end, we introduce DreamDojo, a foundation world model that learns diverse interactions and dexterous controls from 44k hours of egocentric human videos. Our data mixture represents the largest video dataset to date for world model pretraining, spanning a wide range of daily scenarios with diverse objects and skills. To address the scarcity of action labels, we introduce continuous latent actions as unified proxy actions, enhancing interaction knowledge transfer from unlabeled videos. After post-training on small-scale target robot data, DreamDojo demonstrates a strong understanding of physics and precise action controllability. We also devise a distillation pipeline that accelerates DreamDojo to a real-time speed of 10.81 FPS and further improves context consistency. Our work enables several important applications based on generative world models, including live teleoperation, policy evaluation, and model-based planning. Systematic evaluation on multiple challenging out-of-distribution (OOD) benchmarks verifies the significance of our method for simulating open-world, contact-rich tasks, paving the way for general-purpose robot world models.",
+    "authors": [
+      "Shenyuan Gao",
+      "William Liang",
+      "Kaiyuan Zheng",
+      "Ayaan Malik",
+      "Seonghyeon Ye",
+      "Sihyun Yu",
+      "Wei-Cheng Tseng",
+      "Yuzhu Dong",
+      "Kaichun Mo",
+      "Chen-Hsuan Lin",
+      "Qianli Ma",
+      "Seungjun Nah",
+      "Loic Magne",
+      "Jiannan Xiang",
+      "Yuqi Xie",
+      "Ruijie Zheng",
+      "Dantong Niu",
+      "You Liang Tan",
+      "K. R. Zentner",
+      "George Kurian",
+      "Suneel Indupuru",
+      "Pooya Jannaty"
+    ],
+    "likes": 21,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.06949",
+    "date_collected": "2026-02-10T07:17:21.072640+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "드림도조: 대규모 인간 비디오로부터 일반화된 로봇 세계 모델",
+      "abstract": "다양한 환경에서 행동 결과를 시뮬레이션할 수 있는 능력은 대규모 일반화된 에이전트 개발을 혁신할 것입니다. 그러나 이러한 세계 역학을 모델링하는 것은 특히 미묘한 로보틱 작업에 대해 데이터 커버리지가 부족하고 행동 라벨이 드문다는 중요한 도전점을 제기합니다. 이 목표를 위한 노력으로 우리는 44,000시간의 자아 중심적 인간 비디오로부터 다양한 상호작용과 미묘한 제어를 학습하는 기초 세계 모델인 드림도조를 소개합니다. 우리의 데이터 믹스는 다양한 객체와 기술로 매일 다양한 시나리오를 포괄하는, 세계 모델 사전 학습을 위한 오늘날까지 가장 큰 비디오 데이터셋을 대표합니다. 행동 라벨 부족을 해결하기 위해 우리는 연속 잠재 행동을 통합된 프록시 행동으로 소개하여, 라벨이 없는 비디오로부터 상호작용 지식 전달을 향상시킵니다. 소규모 대상 로봇 데이터를 후상태 학습한 이후, 드림도조는 물리학에 대한 강력한 이해와 정확한 행동 제어성을 보입니다. 또한, 우리는 드림도조를 10.81 FPS의 실시간 속도로 가속화하고 추가적으로 컨텍스트 일관성을 향상시키는 증류 파이프라인을 개발합니다. 우리의 작업은 생성적 세계 모델을 기반으로 하는 라이브 원격 조종, 정책 평가, 그리고 모델 기반 계획을 포함한 여러 중요한 응용 프로그램들을 가능하게 합니다. 다양한 어려운 분포 (OOD) 벤치마크에서의 체계적인 평가는 우리의 방법이 오픈 환경, 접촉 풍부한 작업을 시뮬레이션하는 데 의미가 있다는 것을 확인하며, 일반 목적의 로봇 세계 모델을 개척하는 길을 엽니다."
+    },
+    "summary": "1. 드림도조는 대규모 인간 비디오 데이터로부터 학습된 로봇 세계 모델로, 다양한 객체와 기술을 포함한 일상 시나리오를 다루며 물리학과 행동 제어에 강한 이해력을 보입니다.\n2. 라벨이 부족한 비디오에서 상호작용 지식 전달을 향상시키기 위해 드림도조는 연속 잠재 행동을 도입하며, 소규모 대상 로봇 데이터로 후상태 학습합니다.\n3. 드림도조는 실시간 속도로 가속화되고 컨텍스트 일관성이 향상된 증류 파이프라인을 통해 라이브 원격 조종, 정책 평가, 모델 기반 계획과 같은 중요한 응용 프로그램을 가능하게 합니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Self-Improving World Modelling with Latent Actions",
+    "abstract": "Internal modelling of the world -- predicting transitions between previous states X and next states Y under actions Z -- is essential to reasoning and planning for LLMs and VLMs. Learning such models typically requires costly action-labelled trajectories. We propose SWIRL, a self-improvement framework that learns from state-only sequences by treating actions as a latent variable and alternating between Forward World Modelling (FWM) P_θ(Y|X,Z) and an Inverse Dynamics Modelling (IDM) Q_φ(Z|X,Y). SWIRL iterates two phases: (1) Variational Information Maximisation, which updates the FWM to generate next states that maximise conditional mutual information with latent actions given prior states, encouraging identifiable consistency; and (2) ELBO Maximisation, which updates the IDM to explain observed transitions, effectively performing coordinate ascent. Both models are trained with reinforcement learning (specifically, GRPO) with the opposite frozen model's log-probability as a reward signal. We provide theoretical learnability guarantees for both updates, and evaluate SWIRL on LLMs and VLMs across multiple environments: single-turn and multi-turn open-world visual dynamics and synthetic textual environments for physics, web, and tool calling. SWIRL achieves gains of 16% on AURORABench, 28% on ByteMorph, 16% on WorldPredictionBench, and 14% on StableToolBench.",
+    "authors": [
+      "Yifu Qiu",
+      "Zheng Zhao",
+      "Waylon Li",
+      "Yftah Ziser",
+      "Anna Korhonen",
+      "Shay B. Cohen",
+      "Edoardo M. Ponti"
+    ],
+    "likes": 19,
+    "published_date": "Feb 5",
+    "url": "https://huggingface.co/papers/2602.06130",
+    "date_collected": "2026-02-10T07:17:21.073897+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "잠재 행동을 활용한 자기 개선형 세계 모델링(Self-Improving World Modelling with Latent Actions)",
+      "abstract": "세계의 내부 모델링 -- 이전 상태 X와 다음 상태 Y 사이의 전이를 행동 Z에 따라 예측하는 것 -- 은 LLMs와 VLMs에 대한 추론과 계획에 중요하다. 이러한 모델 학습은 일반적으로 비용이 많이 드는 행동 주석 경로가 필요하다. 저희는 SWIRL이라는 자기 개선 프레임워크를 제안하는데, 이는 행동을 잠재 변수로 처리하고 순방향 세계 모델링(FWM) P_θ(Y|X,Z)와 역동력 모델링(IDM) Q_φ(Z|X,Y)을 번갈아가며 수행한다. SWIRL은 Variational Information Maximisation 단계와 ELBO Maximisation 단계를 반복하며 훈련되는데, 이는 각각 FWM을 갱신하여 잠재 행동의 조건부 상호 정보량을 최대화하는 다음 상태를 생성하여 이전 상태에 대한 일관성을 촉진하고, 관찰된 전이를 설명하는 IDM을 갱신하여 Coordiate Ascent를 수행한다. 두 모델은 서로의 로그 확률을 보상 신호로 사용하여 강화 학습(특히 GRPO)으로 훈련된다. 우리는 두 업데이트에 대한 이론적으로 보증할 수 있는 학습 가능성을 제시하고 SWIRL을 실제로 평가한다. SWIRL은 여러 환경에서 LLMs와 VLMs에 대해 성능을 향상시키며, AURORABench에서 16%, ByteMorph에서 28%, WorldPredictionBench에서 16%, 그리고 StableToolBench에서 14%의 향상을 이룩한다."
+    },
+    "summary": "1. SWIRL은 행동 주석 경로 없이 상태 순서만으로 학습하는 자기 개선형 세계 모델링 프레임워크이다.\n2. SWIRL은 Variational Information Maximisation과 ELBO Maximisation을 번갈아가며 행하며, 서로를 통해 FWM과 IDM을 업데이트하여 강화 학습 기반으로 훈련된다.\n3. 실험 결과, SWIRL은 다양한 환경에서 LLMs와 VLMs에서 성능을 향상시키며, AURORABench, ByteMorph, WorldPredictionBench, 그리고 StableToolBench에서 각각 14%~28%의 성능 개선을 보인다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Judging What We Cannot Solve: A Consequence-Based Approach for Oracle-Free Evaluation of Research-Level Math",
+    "abstract": "Recent progress in reasoning models suggests that generating plausible attempts for research-level mathematics may be within reach, but verification remains a bottleneck, consuming scarce expert time. We hypothesize that a meaningful solution should contain enough method-level information that, when applied to a neighborhood of related questions, it should yield better downstream performance than incorrect solutions. Building on this idea, we propose Consequence-Based Utility, an oracle-free evaluator that scores each candidate by testing its value as an in-context exemplar in solving related yet verifiable questions. Our approach is evaluated on an original set of research-level math problems, each paired with one expert-written solution and nine LLM-generated solutions. Notably, Consequence-Based Utility consistently outperforms reward models, generative reward models, and LLM judges on ranking quality. Specifically, for GPT-OSS-120B, it improves Acc@1 from 67.2 to 76.3 and AUC from 71.4 to 79.6, with similarly large AUC gains on GPT-OSS-20B (69.0 to 79.2). Furthermore, compared to LLM-Judges, it also exhibits a larger solver-evaluator gap, maintaining a stronger correct-wrong separation even on instances where the underlying solver often fails to solve.",
+    "authors": [
+      "Guijin Son",
+      "Donghun Yang",
+      "Hitesh Laxmichand Patel",
+      "Hyunwoo Ko",
+      "Amit Agarwal",
+      "Sunghee Ahn",
+      "Kyong-Ha Lee",
+      "Youngjae Yu"
+    ],
+    "likes": 16,
+    "published_date": "Feb 6",
+    "url": "https://huggingface.co/papers/2602.06291",
+    "date_collected": "2026-02-10T07:17:21.075167+09:00",
+    "week": "2026-W07",
+    "translation": {
+      "title": "우리가 해결할 수 없는 것을 판단하는 법: 연구 수준 수학의 오라클 없는 평가를 위한 결과 중심 접근",
+      "abstract": "최근 추론 모델의 발전은 연구 수준의 수학에 대한 합리적인 시도를 생성하는 것이 가능할 수 있지만, 확인은 희귀한 전문가 시간을 소비하는 병목 현상으로 남아있다. 우리는 의미 있는 해결책은 관련 질문 집합을 해결하는 데 적용될 때 잘못된 해결책보다 더 나은 결과를 가져야 한다는 가설을 세웠다. 이 아이디어를 발전시켜, 우리는 결과 중심 유틸리티를 제안하는데, 이는 각 후보를 평가하여 관련성 있는 질문을 해결할 때 인문학적인 방법론을 테스트함으로써 가치를 측정한다. 우리의 접근법은 원래의 연구 수준 수학 문제 집합에서 검증되었으며, 각 문제는 전문가가 작성한 해법 및 LLM이 생성한 해법을 함께 제공하고 있다. 특히 결과 중심 유틸리티는 순위 품질에서 보상 모델, 생성 보상 모델 및 LLM 판단을 일관되게 능가함을 입증했다."
+    },
+    "summary": "1. 연구 수준 수학 문제를 효율적으로 평가하기 위해 결과 중심 유틸리티를 제안하였으며, 이는 오라클 없이 후보 솔루션의 가치를 측정하여 순위 매기는 방법이다.\n2. 제안된 방법은 다양한 문제에 적용할 때 잘못된 해결책보다 더 나은 성능을 보이며, 기존 모델들보다 높은 순위 품질을 보여준다.\n3. 연구에서 GPT-OSS-120B와 GPT-OSS-20B에서 결과 중심 유틸리티는 정확도 및 AUC에서 상당한 개선을 보였으며, LLM 판단과 비교했을 때 더 큰 해결사-평가자 간격을 유지한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

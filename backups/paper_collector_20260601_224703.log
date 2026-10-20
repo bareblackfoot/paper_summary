@@ -1,0 +1,46 @@
+=== Paper Collection Started at Mon Jun  1 01:53:23 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W23
+URL: https://huggingface.co/papers/week/2026-W23
+Found 3 papers in weekly view
+Fetching likes for: LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis
+Fetching likes for: Hide-and-Seek in Trajectories: Discovering Failure Signals for VLA Runtime Monitoring
+Fetching likes for: Function2Scene: 3D Indoor Scene Layout from Functional Specifications
+Selected top 10 papers by likes:
+1. LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis (3 likes)
+2. Hide-and-Seek in Trajectories: Discovering Failure Signals for VLA Runtime Monitoring (2 likes)
+3. Function2Scene: 3D Indoor Scene Layout from Functional Specifications (1 likes)
+Found abstract: Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated o...
+Processed paper: LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis
+Found abstract: Vision-Language-Action (VLA) models enable robots to follow natural language instructions and genera...
+Processed paper: Hide-and-Seek in Trajectories: Discovering Failure Signals for VLA Runtime Monitoring
+Found abstract: Most text-driven 3D indoor scene synthesis methods generate rooms from object-centric prompts, askin...
+Processed paper: Function2Scene: 3D Indoor Scene Layout from Functional Specifications
+Collected top 3 papers. Starting summary generation...
+
+Processing paper 1/3
+Title: LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis
+Generating Korean translation and summary...
+
+Processing paper 2/3
+Title: Hide-and-Seek in Trajectories: Discovering Failure Signals for VLA Runtime Monitoring
+Generating Korean translation and summary...
+
+Processing paper 3/3
+Title: Function2Scene: 3D Indoor Scene Layout from Functional Specifications
+Generating Korean translation and summary...
+
+Processed 3 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W23.json...
+
+Updating Notion database...
+Creating new paper: LongDS-Bench: Long-Horizon Agentic Data Analysis 실패에 관한 연구
+Creating new paper: 트라젝토리에서 숨바꼭질: VLA 실행 모니터링을 위한 실패 신호 발견
+Creating new paper: 기능2장면: 기능 사양에서 3D 실내 공간 배치
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun  1 01:53:50 UTC 2026 ===
+

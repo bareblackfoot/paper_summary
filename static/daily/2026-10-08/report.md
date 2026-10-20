@@ -1,0 +1,1356 @@
+# 오늘의 arXiv Top 15 — 2026-10-08 (목)
+
+> 대상: cs.CV, cs.LG, cs.RO, cs.CL, cs.AI 의 **New submissions 전수 평가**
+> (cross-list, replacement 제외 · 여러 목록에 중복된 논문은 1편으로 병합)
+
+**신규 논문 수: 전체 625편 → 중복 제거 후 625편 (이번 평가 대상 625편)**
+
+| 카테고리 | New submissions |
+|---|---|
+| cs.CV | 155 |
+| cs.LG | 202 |
+| cs.RO | 93 |
+| cs.CL | 65 |
+| cs.AI | 110 |
+
+*1차 스크리닝: 전체 625편을 제목/초록 기반으로 채점(Claude (scheduled agent)) → 상위 15편은 arXiv 원문을 내려받아 정밀 리뷰(Claude (scheduled agent)) 후 최종 점수 산정.*
+
+---
+
+## Top 15
+
+### 1. [83점] DSReg: Provably Recovering Individual World Latents without Reconstruction
+
+- **분야**: World Model · **robotics relevance**: 7/10
+- **arXiv**: [2610.09457](https://arxiv.org/abs/2610.09457) ([PDF](https://arxiv.org/pdf/2610.09457))
+- **저자**: Yujia Zheng, David Klindt, Randall Balestriero, Bernhard Schölkopf
+- **카테고리**: Machine Learning (cs.LG) · 신규 목록 게재: cs.LG
+- **Comments**: Project page: this https URL
+- **원문 검토**: PDF 전문 · 1차 스크리닝 68점
+
+> 💡 JEPA 기반 world model은 reconstruction 없이 latent state를 선형 변환까지만 식별해 개별 latent가 서로 섞인 채로 남음. DSReg는 각 latent가 관측 변수에 남기는 dependency footprint(Jacobian의 0이 아닌 자리)가 서로 다르다는 조건(Structural Diversity)만으로 post-hoc rotation을 찾아 개별 world latent를 signed permutation까지 복원함.
+
+**Core innovation & methodology**
+
+- reconstruction·decoder·label 없이 개별 world latent를 복원하는 첫 식별성 결과임. LeJEPA가 주는 linear identifiability(회전까지만 식별)를 그대로 쓰고 그 위에 post-hoc rotation을 추가함.
+- latent 분포(등방 Gaussian)는 회전해도 그대로라 식별 신호가 될 수 없음. 대신 관측값이 latent에 의존하는 방식(dependency Jacobian)에서 회전에 민감한 신호를 가져오는 것이 핵심 아이디어임.
+- DSReg는 whitening된 representation에서 회전 R을 탐색 변수로 두고, m개의 anchor에서 local ridge regression으로 Jacobian을 추정해 그 support의 L1 sparsity를 최소화함(식 4). encoder 재학습 없이 기존 checkpoint에 바로 붙임.
+- Structural Diversity는 서로 다른 latent의 dependency footprint가 겹치지 않아야 한다는 조건뿐이며, global latent가 모든 관측변수에 걸쳐있는 nested footprint 상황(기존 조건은 실패하는 경우)도 식별 가능함을 증명함(Theorem 2).
+
+**Novelty vs. prior works**
+
+- 가장 가까운 선행연구 LeJEPA(Klindt et al., 2026)는 linear identifiability(회전까지)만 보장함. DSReg는 그 위에 구조적 조건과 post-hoc 알고리즘을 얹어 component-wise 식별로 끌어올린 것이 본질적 차이임.
+- nonlinear ICA 계열의 구조 조건(Zheng et al. 2022의 Structural Sparsity, Ng et al. 2023의 Structural Variability)은 전부 reconstruction·decoder를 전제로 함. DSReg는 reconstruction 없이도 이보다 엄밀히 약한 조건(Proposition 1)으로 식별을 증명한 것이 novelty의 핵심임.
+- 다만 이론 전제(Gaussian latent, stationary transition, LeJEPA의 linear identifiability 성립)가 강함. 전제가 불완전한 quarter-orientation dSprites 실험에서는 복원 성능이 전제가 만드는 ceiling(dense R2≈0.53)에 그대로 묶임 — 저자도 명시함.
+
+**Benchmark results**
+
+- 학습된 encoder(Visual factors, Object scenes, latent dim 8)에서 latent MCC(Mean Correlation Coefficient)가 LeJEPA 0.625→DSReg 0.958, 0.591→0.961로 올라 supervised Procrustes oracle 수준에 도달함(Table 3).
+- 같은 벤치마크에서 dense R2는 0.918/0.924로 변화 없음 — 정보량은 그대로 두고 개별 latent만 풀어낸다는 주장을 뒷받침함.
+- 외부 renderer Gaussian 3DShapes에서 MCC 0.640→0.921, DCI 0.298→0.901, MIG 0.069→0.419로 개선되고 β-VAE/β-TCVAE(MCC 0.27대)를 능가함(Table 4).
+- sparse-use probe 6개(TwoRoom/PushT/FetchSlide editing, sparse MPC, rollout, transition-surprise) 전부에서 DSReg가 LeJEPA를 이김. PushT sparse control error가 1.45→1.10으로 줌(Table 6).
+- ablation에서 PCA/Varimax/FastICA 같은 latent-only rotation은 등방 Gaussian의 회전 불변성 때문에 전혀 식별하지 못함(MCC 0.62~0.65, Table 5). 모든 실험이 simulation·rendering 기반이고 real-robot 검증은 없음 — 저자가 직접 명시한 한계임.
+
+**Top-tier conference 적합성 — 76/100 · 추천 venue: NeurIPS**
+
+식별성 이론(Theorem 2, 3)과 조건의 strictly weaker 증명(Proposition 1)이 탄탄하고, 합성 benchmark·학습된 encoder·외부 renderer까지 일관된 실험으로 뒷받침해 self-supervised learning/identifiability 커뮤니티에서 임팩트가 클 것으로 보임. 다만 전제가 Gaussian latent world와 LeJEPA의 linear identifiability에 강하게 의존하고 real-robot 검증이 전혀 없어, CoRL/RSS 같은 embodied venue보다 NeurIPS/ICLR 같은 representation learning 중심 venue가 더 맞음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- world model의 individual latent 복원은 failure detection·recovery나 counterfactual reasoning에서 '어느 factor가 원인인지'를 짚어내는 데 바로 쓸 수 있음. transition-surprise monitor probe 결과가 이를 보여줌.
+- object-centric 3D/4D representation·scene graph 연구에, reconstruction 없이 개별 object attribute를 분리하는 방법으로 적용 가능함 — 3DGS 기반 world model에 decoder-free component-wise probe를 붙이는 방향.
+- VLA/manipulation에서 latent state로 controller를 만들 때 DSReg rotation을 붙이면 '한 latent = 한 물리 factor'가 되어 sparse intervention·targeted correction이 가능해짐. 본문의 cup·knife 예시가 이 문제를 직접 가리킴.
+
+---
+
+### 2. [82점] RoboJEPA: Scaling Robotic Latent World Models
+
+- **분야**: World Model · **robotics relevance**: 9/10
+- **arXiv**: [2610.10515](https://arxiv.org/abs/2610.10515) ([PDF](https://arxiv.org/pdf/2610.10515))
+- **저자**: Artem Zholus, Nicolas Beltran-Velez, Jianhao Yuan, Sarath Chandar, Tushar Nagarajan, Daniel Severo, Koustuv Sinha, Michal Drozdzal 외 4명
+- **카테고리**: Artificial Intelligence (cs.AI) · 신규 목록 게재: cs.AI
+- **원문 검토**: PDF 전문 · 1차 스크리닝 65점
+
+> 💡 RoboJEPA는 frozen V-JEPA 2.1 encoder 위에 action-conditioned latent predictor를 22M부터 8B까지 8개 크기로 학습해서 로봇 world model 최초로 compute scaling law를 실측함. forward-prediction L1 오차가 2차 power law를 따르고 이 오차가 줄수록 real-robot·시뮬레이션 planning 성공률도 함께 개선돼서, 이미지 goal 하나로 zero-shot 로봇 에이전트를 compute 투자량에 따라 예측 가능하게 개선할 수 있음을 보임.
+
+**Core innovation & methodology**
+
+- 12개 embodiment·26개 action space·23개 public dataset(총 15,022시간 비디오)을 하나의 토큰 시퀀스로 통일해, 가변 view 수·해상도·proprioception을 다루는 action-conditioned world model(RoboJEPA)을 22M~8B까지 8개 크기로 학습함.
+- forward-prediction L1 오차가 L(C)=E+AC^(α−γlnC) 형태의 2차 power law를 따름을 보이고, 22M~2B로 fit한 뒤 4B·8B에서 실제로 맞는지 검증하는 held-out extrapolation 절차를 세움.
+- teacher-forcing loss와, 더 짧은 prefix에서 KV-cache로 autoregressive rollout해서 같은 target을 맞히는 rollout loss를 함께 써서 긴 horizon에서 오차 누적을 줄임.
+- goal 이미지 하나만 encoding해서 latent space에서 CEM으로 action sequence를 search하는 receding-horizon planning으로, task-specific policy 없이 zero-shot robot agent를 구현함.
+
+**Novelty vs. prior works**
+
+- 기존 latent world model(V-JEPA2-AC, Hafner et al. 의 Dreamer 계열, Zhang et al.)은 단일 스케일에서만 학습돼서 크기·데이터·compute와 품질의 관계가 특성화되지 않았는데, 이 논문은 그 관계를 로봇 world model에서 처음 정량화함.
+- video 생성모델 scaling(Genie류)이나 policy scaling(π0.5 등)과 달리 representation encoder는 고정하고 dynamics predictor만 스케일링해서, world model 자체의 compute-optimal frontier를 분리해 측정한 점이 가장 가까운 연구들과의 본질적 차이임.
+- 다만 predictor architecture 자체는 V-JEPA2-AC 레시피의 확장(토큰화, factorized RoPE, timestep-causal local attention)이라 구조적 novelty는 제한적이고, 핵심 기여는 새 architecture가 아니라 scaling law라는 empirical science 쪽에 있음.
+
+**Benchmark results**
+
+- DROID(real Franka) holdout에서 2차 power law의 4B/8B extrapolation 오차는 0.6×10⁻³, RoboCasa(sim)에서는 1.4×10⁻³임. 둘 다 1차 power law(2.0, 3.7×10⁻³) 대비 2~3배 낮고 BNSL·UNSL보다도 낮음.
+- RoboCasa greedy task에서는 end-effector 3D reach 능력이 약 10²⁰ FLOPs(50M~100M 모델)에서, object를 쥔 채 reach하는 능력은 약 3×10²⁰ FLOPs에서 나타남.
+- non-greedy task(obstacle-reach, object-push)는 기본 K=2 rollout 학습으로는 scaling이 안 깨져서 300M이 1B보다 나은 역전 현상이 생기고, K=10 long-horizon cooldown을 추가해야 10²¹~10²² FLOPs 구간에서 예측 가능한 scaling이 복원됨.
+- 실로봇 DROID 3개 task에서 RoboJEPA-8B success rate는 Grasp 67%, Object Lift 50%, Pick and Place 27%이고, VLA baseline π0.5는 Pick and Place 53%, Object Lift 0%로 task별 편차가 훨씬 큼.
+- 저자도 명시하듯 RoboJEPA(image goal, pretrain)와 π0-FAST/π0.5(text instruction, DROID finetune)는 goal 지정 방식과 학습 방식이 달라 직접 비교가 아니라 contextual reference이고, RoboJEPA는 가장 어려운 Pick and Place에서 π0.5보다 낮음.
+
+**Top-tier conference 적합성 — 82/100 · 추천 venue: CoRL**
+
+로봇 world model의 compute scaling law를 real-robot·sim 양쪽에서 처음 실측하고, 50,000편 이상의 평가 episode와 8B 체크포인트·학습·배포 코드를 공개하는 실험적 완결성이 강점임. 다만 predictor architecture 자체는 V-JEPA2-AC 확장에 가깝고, 12개 embodiment 학습이 실제로 어떤 이득을 주는지에 대한 ablation이 본문에서 확인 불가하며, 가장 어려운 real task(Pick and Place)에서는 VLA baseline보다 낮아 reject risk로 작용할 수 있음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- scaling law 측정 틀을 그대로 가져와서, world model 기반 failure detection·recovery의 복구 성공률이 compute에 따라 어떻게 scaling되는지 측정하는 실험 설계로 쓸 수 있음.
+- K=2로 학습한 모델이 non-greedy task에서 scaling을 잃고 K=10 cooldown으로 회복된다는 결과는, test-time optimization/inference-time planning 연구에서 training-eval horizon mismatch를 점검할 체크리스트로 바로 쓸 수 있음.
+- goal 이미지 하나로 보조 subgoal 없이 CEM planning하는 설정은 우리 lab의 counterfactual/long-horizon planning 연구에서 비교할 간단한 baseline으로 활용 가능함.
+
+---
+
+### 3. [78점] An Informational Curse of Horizon in Goal-Conditioned Policy Learning
+
+- **분야**: RL · **robotics relevance**: 8/10
+- **arXiv**: [2610.09247](https://arxiv.org/abs/2610.09247) ([PDF](https://arxiv.org/pdf/2610.09247))
+- **저자**: John L. Zhou, Yuxuan Dong, Jonathan C. Kao
+- **카테고리**: Machine Learning (cs.LG) · 신규 목록 게재: cs.LG
+- **Comments**: 25 pages, 11 figures
+- **원문 검토**: PDF 전문 · 1차 스크리닝 70점
+
+> 💡 goal-conditioned policy를 hindsight relabeling으로 학습할 때 relabeling horizon이 길어지면 action과 goal 사이의 조건부 상호정보량이 줄어들어 가까운 goal조차 잘 못 맞히는 informational curse of horizon이 생김을 보임. short-horizon teacher policy의 state Jacobian을 long-horizon student policy에 distillation하는 Sobolev bootstrapping을 제안해 OGBench의 combinatorial manipulation task에서 성능을 크게 올림.
+
+**Core innovation & methodology**
+
+- oracle planner로 평가 시 제공하는 subgoal 거리(Hplan)를 training horizon(Htrain), evaluation horizon(Heval)과 분리해, 더 어려운 task라서 실패하는 것과 goal conditioning 자체가 약해져서 실패하는 것을 구분하는 controlled 실험 설계를 세움.
+- 표준 hindsight relabeling에서 action과 goal 사이의 조건부 상호정보량 I(A;G|S)가 relabeling horizon에 대해 non-increasing함을 이론적으로 증명함.
+- 정책의 state/goal에 대한 input Jacobian을 (고정분산 Gaussian 정책의) Fisher information과 연결해, horizon이 길어지면 정책의 민감도가 goal에서 state로 전역적으로 옮겨가는 현상을 측정함.
+- 이 관찰을 바탕으로 short-horizon teacher 정책의 state Jacobian을 long-horizon student 정책에 distillation하는 Sobolev bootstrapping 목적함수를 제안하고, SAW에 적용한 S2AW로 구현함.
+
+**Novelty vs. prior works**
+
+- 기존 curse of horizon 연구(Park et al. 2025 등)는 value learning의 bias 누적과 advantage estimate noise에 초점을 맞췄는데, 이 논문은 goal relabeling이 만드는 정보량 감소라는 별도 원인을 실험적으로 분리해 보인 점이 핵심 기여임.
+- 방법론인 Sobolev bootstrapping은 Sobolev training(Czarnecki et al. 2017)의 input gradient distillation과 policy bootstrapping(Zhou & Kao 2025의 SAW, Chane-Sane et al.의 RIS)을 결합한 것으로, 알고리즘 자체의 신규성은 두 기존 아이디어의 조합 수준에 가까움.
+- novelty의 무게중심은 새 알고리즘보다 horizon이 policy 내부의 민감도 구조를 어떻게 바꾸는지를 MI와 Jacobian으로 진단한 분석 쪽에 있음.
+
+**Benchmark results**
+
+- OGBench(Park et al. 2024) 16개 locomotion/manipulation task에서 S2AW가 baseline SAW 대비 cube-double 40%에서 57%, cube-triple 4%에서 30%, puzzle-4x4 26%에서 41%로 개선함.
+- GCBC/GCFBC는 training horizon이 길어질수록 평가용 Hplan을 고정해도 성능이 급락하지만, GCIQL/GCFQL 같은 RL objective는 완화된 정도로만 영향받음(Figure 1).
+- distractor object가 있는 단일 pick-and-place 평가(cube-triple-task1, cube-quadruple-task1)에서 naive ℓ1/ℓ2 Jacobian penalty는 소폭 개선에 그치지만 S2AW는 각각 13%에서 74%, 6%에서 35%로 크게 개선함(Table 2).
+- antmaze-giant 등 long-horizon locomotion에서도 개선을 보였으나 저자 스스로 architecture 차이가 섞여 있을 수 있다고 밝힘(Appendix H.1).
+- 모든 결과가 OGBench offline GCRL 시뮬레이션 기준이며, real-robot 검증은 본문에서 확인 불가.
+
+**Top-tier conference 적합성 — 72/100 · 추천 venue: NeurIPS**
+
+이론적 MI decay bound, oracle planner를 이용한 controlled 실험, Jacobian 기반 진단, 실제 성능 개선 방법까지 하나의 narrative로 깔끔하게 엮은 점이 강점이고 이런 완결성이 top-tier venue에서 선호됨. 다만 전부 OGBench offline GCRL 시뮬레이션에 한정되고 real-robot 검증이 없으며, Sobolev bootstrapping 자체는 기존 기법(Sobolev training, policy bootstrapping)의 조합이라 reject risk는 novelty 자체보다 contribution 범위의 협소함에 있음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- goal/language-conditioned VLA policy도 동일하게 hindsight-style relabeling과 long-horizon goal을 쓰므로, input Jacobian으로 goal 민감도 collapse를 진단하는 방법을 VLA failure diagnosis에 그대로 적용해볼 수 있음.
+- Hplan을 분리해 평가하는 oracle-planner 설계는 test-time optimization/planning 연구에서 policy 실패 원인을 task 난이도와 conditioning 약화로 나눠 보는 진단 도구로 쓸 수 있음.
+- short-horizon teacher distillation 아이디어는 skill chaining이나 robot memory에서 장기 subgoal 정책이 근거리 subgoal 정보를 잃는 문제의 regularizer로 확장할 수 있음.
+
+---
+
+### 4. [76점] Q-Learning with Scalar Adjoint Matching
+
+- **분야**: RL · **robotics relevance**: 7/10
+- **arXiv**: [2610.10437](https://arxiv.org/abs/2610.10437) ([PDF](https://arxiv.org/pdf/2610.10437))
+- **저자**: Yonghoon Dong, Minsung Yoon, Jaehyuk Kim, Jungwoo Park, Changyeon Kim, Jinwoo Shin
+- **카테고리**: Machine Learning (cs.LG) · 신규 목록 게재: cs.LG
+- **원문 검토**: PDF 전문 · 1차 스크리닝 62점
+
+> 💡 flow policy를 critic으로 fine-tuning하는 adjoint matching은 매 flow step마다 vector-Jacobian product를 계산해 비용이 큰데, pretrained policy의 velocity Jacobian이 대각 성분에 집중한다는 관찰로 이를 스칼라 근사로 대체하고 policy가 생성한 action에서 critic 값을 누르는 value penalty를 더해 SQAM을 제안함. OGBench 50 task 중 가장 어려운 4개 domain에서 최강 baseline보다 18~35%p 높은 성공률을 냈고, real bimanual robot에서 VLA policy fine-tuning에도 적용해 SFT 대비 개선을 보임.
+
+**Core innovation & methodology**
+
+- adjoint matching은 critic의 gradient를 final action에서 각 flow step까지 역전파하는데, 매 step마다 velocity Jacobian과의 vector-Jacobian product(VJP)가 필요해 flow step 수·policy 크기에 비례해 비용이 커짐.
+- pretrained flow policy의 batch-averaged velocity Jacobian을 측정해 대각 성분에 집중되어 있음을 관찰하고, 이를 scalar 곱하기 identity(isotropic Jacobian)로 근사함.
+- 이 근사 아래 lean adjoint ODE가 closed form으로 풀려(Proposition 1), final action에서의 critic gradient를 flow time τ로 스케일한 것(scalar adjoint, −τ∇aQ(s,a))만 남고 VJP가 완전히 제거됨.
+- scalar adjoint는 critic gradient를 policy-generated action a_π에서 직접 쓰기 때문에 critic 오차에 취약하다는 점을 발견, a_π에서의 critic 값을 dataset action 대비 누르는 value penalty를 추가해 SQAM을 완성함.
+
+**Novelty vs. prior works**
+
+- 제안의 뼈대인 adjoint matching 자체는 Domingo-Enrich et al. 2025, 직접 비교 대상인 QAM/TRQAM은 2026년 동시기 연구(Li and Levine 2026; Dong et al. 2026c, 저자 일부 중복)로, SQAM은 이 계열의 핵심 비용(VJP)을 scalar 근사로 제거하는 후속 개선에 해당함.
+- 근사의 타당성은 '대각 성분이 크다'는 경험적 관찰(Figure 2)에 의존하며 일반적 조건에서 성립을 증명하진 않음 — 저자도 manipulation domain에서 exact adjoint와의 각도 차가 커 근사가 덜 맞는다고 인정함.
+- value penalty는 CQL의 policy-action penalty를 critic loss가 아니라 actor update가 이미 뽑은 단일 action에 적용한 변형으로, in-sample(IQL)·거리 기반(ReBRAC) regularizer와 차별점은 명확하나 완전히 새로운 regularization 원리는 아님.
+
+**Benchmark results**
+
+- OGBench 50 task 전체 평균(offline, 1M step, 8 seed): SQAM 75% vs 최강 baseline TRQAM 68%.
+- 가장 어려운 4개 domain(antmaze-giant, humanoidmaze-large, cube-triple, cube-quadruple)에서 TRQAM 대비 각각 21, 18, 22, 35%p 높은 성공률. cube-quadruple은 TRQAM 19% vs SQAM 54%로 격차가 가장 큼.
+- scalar adjoint만 쓰면 두 manipulation domain(cube-triple/quadruple)에서 성능이 낮고, value penalty를 더해야 개선되는 것을 ablation으로 확인(Figure 5, 6).
+- value penalty coefficient는 기본 c=0.3, 단 cube-double에서는 c를 키우면 offline 성능이 떨어져 penalty를 끔.
+- real bimanual robot 3개 task(비닐백 뒤집기/빨대 꽂기/과일 담고 뚜껑 닫기)에서 30 episode 기준 SQAM(offline→online) 성공 25/30, 15/30, 13/30으로 SFT(15/30, 7/30, 4/30)를 상회. EXPO-FT(residual fine-tuning)는 같은 세팅에서 개선 못함(15/30, 0/30, 3/30).
+
+**Top-tier conference 적합성 — 75/100 · 추천 venue: NeurIPS**
+
+OGBench 50개 task를 8 seed로 돌리고 real bimanual robot VLA fine-tuning까지 붙인 실험 규모와, closed-form 유도(Proposition 1)를 갖춘 구성은 top-tier ML venue 수준의 증거를 갖춤. 다만 핵심 기여가 동시기 adjoint matching 계열(QAM, TRQAM) 위에 올라간 근사·regularization 조합이라 완전히 새로운 problem formulation은 아니며, 근사가 깨지는 manipulation domain에서는 추가 regularizer가 필수라는 점이 rejection risk로 작용할 수 있음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- VLA policy를 RL로 fine-tuning할 때 adjoint matching류의 계산 비용 문제를 다룬 연구라, 누리랩의 VLA test-time optimization/fine-tuning 작업에서 직접 비교할 baseline으로 쓸 수 있음.
+- critic이 policy-generated action에서 부정확하면 업데이트가 틀어진다는 분석은 failure detection·recovery에서 critic/value 신뢰도를 다루는 문제와 맞닿아 있음.
+- flow/diffusion 기반 policy나 world model의 VJP 비용을 scalar 근사로 줄이는 아이디어는, 큰 VLA·world model의 inference-time 최적화 비용을 줄이는 방향으로 확장해볼 만함.
+
+---
+
+### 5. [75점] Juno: Taming Predictive Latents for Vision-Language-Action Models
+
+- **분야**: VLA · **robotics relevance**: 9/10
+- **arXiv**: [2610.09940](https://arxiv.org/abs/2610.09940) ([PDF](https://arxiv.org/pdf/2610.09940))
+- **저자**: Yuchen Zhu, Chenyi Xu, Yulin Zhang, Gang Xu, Wentao Zhu
+- **카테고리**: Robotics (cs.RO) · 신규 목록 게재: cs.RO
+- **Comments**: Project Page: this https URL
+- **원문 검토**: PDF 전문 · 1차 스크리닝 65점
+
+> 💡 하나의 action-conditioned JEPA로 VLA의 pretraining·policy 학습·배포 적응을 모두 엮은 프레임워크 Juno를 제안함. SimplerEnv 평균 성공률을 60.9%에서 68.5%로, test-time adaptation까지 쓰면 72.7%로 올리고, 실로봇에서는 배경·높이·물체가 바뀌어 baseline이 0%로 무너지는 상황에서도 70% 이상을 유지함.
+
+**Core innovation & methodology**
+
+- 하나의 action-conditioned JEPA(LeWM 기반, ViT-Tiny 약 15M)를 representation backbone·predictive teacher·dynamics model 세 역할로 동시에 씀.
+- pretraining에서는 dynamic CLS loss로 patch 수준 motion 변화를 글로벌 CLS 토큰에 distill함. frozen patch supervisor를 두는 2단계 학습으로 CLS가 local interaction에 둔감한 문제를 보완함.
+- policy 학습에서는 JEPA patch feature를 VLA visual token에 cross-attention으로 fusion하고, Mixture-of-Transformers 구조의 decoupled reasoning branch(학습 가능한 query 8개)가 future JEPA latent를 distill하면서 동시에 flow-matching action decoder를 조건화함.
+- 배포 단계에서는 실패 rollout도 dynamics 학습에는 쓰되 policy 재학습에는 verified success만 쓰는 비대칭 test-time adaptation(Juno-TTT)을 씀. world model을 먼저 적응시키고 teacher를 고정한 뒤 LoRA로 policy를 재정렬함.
+
+**Novelty vs. prior works**
+
+- VLA-JEPA·FLARE·FutureVLA 등 future-latent alignment 계열은 미래 상태와 policy state를 맞추는 데 집중하지만, 그 state가 실제로 action으로 디코딩 가능한지는 검증하지 않음. Juno는 alignment gradient와 action gradient를 같은 reasoning branch에 동시에 흘려 이 문제를 다룸.
+- TTT-VLA·VANE 등 기존 test-time adaptation은 frozen teacher가 신뢰 가능하다고 가정하는데, Juno는 teacher(world model)를 먼저 적응시킨 뒤 policy를 재정렬하는 2단계 비대칭 구조로 이 가정을 깨뜨림. 논문에서 가장 독창적인 기여로 보임.
+- 다만 개별 구성요소(JEPA pretraining, MoT decoupling, LoRA 기반 TTT)는 각각 기존 기법의 조합이라, representation이나 architecture 자체의 새로움보다는 세 단계를 하나의 JEPA로 엮는 systems-level integration에 novelty가 있음.
+
+**Benchmark results**
+
+- SimplerEnv(WidowX, 4 task): 평균 성공률 60.9%(Qwen3GR00T)에서 68.5%(Juno, +7.6pt)로, 가장 강한 prior인 VLA-JEPA(57.3%) 대비도 +11.2pt. Juno-TTT는 72.7%까지 올림.
+- RoboCasa-GR1(24 task, GR1 embodiment): Juno 59.6% vs Qwen3GR00T 47.8%(+11.8pt). 24개 중 21개 task에서 baseline보다 높고 16개 task에서 비교한 모든 baseline 중 최고 성능이나, 2개 task는 baseline이 최대 6pt 더 높음.
+- 실로봇(AgileX ALOHA형 플랫폼, cube-to-bowl 단일 task, 조건당 20 trial, policy는 frozen): in-domain 100%(Juno) vs 40%(baseline), background shift 75% vs 0%, height shift 70% vs 0%, height+object shift 70% vs 0%. baseline은 OOD 세 조건 모두 0%로 붕괴함.
+- 실로봇 TTT: Gaussian noise 조건에서 40%(frozen Juno)→65%(Juno-TTT), dynamic lighting 조건에서 55%→70%. 조건당 40개 deployment rollout으로 offline 적응함.
+- Ablation(SimplerEnv, full model 68.5%): fusion 단독 제거 시 53.9%로 base VLA(60.9%)보다도 낮아짐. L_align 제거 시 60.8%로 base VLA와 거의 같아져, future prediction이 action 생성에 직접 연결되지 않으면 이득이 없음을 보임.
+
+**Top-tier conference 적합성 — 72/100 · 추천 venue: CoRL**
+
+SimplerEnv·RoboCasa 두 sim benchmark와 real robot까지 갖춘 실험 구성이 강점이고, OOD shift에서 baseline이 0%로 무너지는 대비가 인상적임. 다만 실로봇 task가 cube-to-bowl 한 가지뿐이고 비교 baseline이 Qwen3GR00T 계열에 집중돼 있어, 리뷰어가 real-world generalization의 폭을 더 요구할 위험이 있음. VLA·world model·TTT를 묶는 systems 논문으로 CoRL에 잘 맞고, oral보다는 포스터·스포트라이트급으로 판단함.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- Juno-TTT의 '실패 rollout은 policy target으로 못 쓰지만 dynamics 학습에는 쓴다'는 비대칭 원칙은 failure detection·recovery 연구에 바로 가져올 만함. 실패를 버리지 않고 world model 보정에 재활용하는 방식임.
+- test-time optimization 프로젝트에서 frozen teacher 신뢰성 문제를 다룰 때, teacher를 먼저 적응시키고 policy를 나중에 맞추는 2단계 구조를 baseline으로 참고할 수 있음.
+- JEPA patch feature를 VLA visual token에 fusion하는 방식은 object-centric 3D/4D representation 프로젝트에서 예측 가능한 local feature를 policy perception에 넣는 설계로 응용 가능함.
+
+---
+
+### 6. [72점] Video Prediction Policy 2: Predict Better, Act Better
+
+- **분야**: VLA · **robotics relevance**: 10/10
+- **arXiv**: [2610.10270](https://arxiv.org/abs/2610.10270) ([PDF](https://arxiv.org/pdf/2610.10270))
+- **저자**: Yanjiang Guo, Haodong Yan, Zhide Zhong, Zhongru Zhang, Qingyuan Yang, Qingzhou Lu, Xiaoyu Chen, Yen-Jen Wang 외 10명
+- **카테고리**: Computer Vision and Pattern Recognition (cs.CV) · 신규 목록 게재: cs.CV
+- **원문 검토**: PDF 전문 · 1차 스크리닝 70점
+
+> 💡 VPP2는 비디오 파운데이션 모델을 디테일 캡션으로 이벤트 단위(subtask 전체)부터 재학습하고 그 위에 MoT(Mixture-of-Transformers) 구조 action expert를 붙인 world action model(WAM)임. real-world ALOHA zero-shot에서 최강 baseline보다 18.5%p 높은 성공률을 냈고 LIBERO-Pro·LIBERO-OOD·RoboDojo 평균에서 모두 최고 성능을 기록했으나 RoboDojo Memory 차원은 열위임.
+
+**Core innovation & methodology**
+
+- 짧은 instruction-action chunk 매핑이 데이터가 커질수록 다중모드·불안정해진다는 문제를 진단하고, 디테일 캡션과 subtask 전체(event) 단위 비디오 예측으로 semantic-trajectory 매핑을 안정화하는 접근을 제시함.
+- 3단계 학습: (1) Wan2.1-I2V-14B를 이벤트 단위로 continued pretraining, (2) 고정 chunk 예측 후 consistency distillation으로 single-step 생성 압축, (3) action expert를 MoT 구조로 video latent에 붙여 implicit inverse dynamics 학습.
+- robot/human/general video 20여 embodiment를 모아 VLM으로 end-effector·대상 물체·카메라뷰를 명시한 디테일 캡션을 생성하고, bimanual egocentric 데이터(전체의 80% 이상)의 workspace·end-effector 좌표계를 정렬해 action space를 통일함.
+- 추론 시 고수준 VLM planner(Qwen3-VL/Seed 계열)가 open-ended instruction을 subtask로 분해해 VPP2에 넘기는 계층 구조를 사용함.
+
+**Novelty vs. prior works**
+
+- 가장 가까운 prior work는 같은 저자 계열 VPP(Hu et al. 2024)와 Wan2.1 기반 LVP(Chen et al. 2025)임. VPP2는 디테일 캡션 기반 event-level pretraining과 fixed-horizon distillation을 추가해 LVP보다 instruction-following 성공률을 크게 높임(human 0.62→0.80, robot 0.46→0.90).
+- 핵심 기법(flow matching, consistency distillation, MoT, LoRA)은 모두 기존 방법을 그대로 가져다 씀. novelty는 새 architecture나 objective가 아니라 '이벤트 단위 예측+디테일 캡션이 instruction-trajectory 매핑의 불확실성을 줄인다'는 데이터·커리큘럼 설계 인사이트에 있음.
+- 그만큼 novelty는 제한적임. 사실상 대규모 데이터 큐레이션과 학습 커리큘럼 조합을 통한 시스템 레벨 기여이고, 새로운 learning paradigm이나 representation은 아님.
+
+**Benchmark results**
+
+- 비디오 예측 instruction-following(GPT 평가, human/robot 각 50쌍): VPP2 0.80/0.90으로 Cosmos3-64B(0.70/0.78)를 앞서고 Wan2.1-14B(0.32/0.04)·LVP(0.62/0.46)를 크게 앞섬.
+- Fixed-Step ablation(이벤트 단위 pretraining 제거, chunk 예측만 수행)은 0.48/0.42로 급락함. event-level pretraining이 일반화 성능의 핵심 요인임을 보여줌.
+- real-world ALOHA zero-shot(학습 embodiment에서 미학습 task 조합 10개 category 평가): VPP2 평균 58.5%로 π0.5(40.0%)·Fast-WAM-14B(20.5%)를 앞서고 10개 중 9개 category에서 1위임.
+- LIBERO 4종 suite로만 학습 후 LIBERO-Pro/OOD 평가: LIBERO-ID 98.8%는 baseline(94~98.6%)과 비슷하나, LIBERO-Pro 45.0%(최강 baseline π0.5 11.0%)·LIBERO-OOD 63.9%(Temporal Ratio 59.4%)로 generalization 격차를 크게 줄임.
+- RoboDojo(42개 bimanual sim task, 5개 capability 차원)에서 평균 score 35.51·성공률 29.47%로 GPT-6-Astra(28.97/22.48%)를 포함해 SOTA를 기록했지만, Memory 차원 성공률은 4.50%로 GPT-6-Astra(38.67%)에 크게 못 미침.
+
+**Top-tier conference 적합성 — 68/100 · 추천 venue: CoRL**
+
+real-robot zero-shot 평가와 세 가지 generalization 벤치마크(LIBERO-Pro, LIBERO-OOD, RoboDojo)에서 강한 baseline들을 큰 차이로 제친 실험적 증거가 강해 CoRL/RSS 수준 리뷰어에게 설득력 있음. 다만 핵심 기법이 flow matching·consistency distillation·MoT 등 기존 방법의 조합이라 architecture/paradigm novelty는 약하고, RoboDojo Memory 차원에서 드러난 약점이 generalization 주장의 일관성을 흔들 수 있어 rejection risk로 작용함.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- 짧은 chunk 단위 정책의 다중모드 매핑 문제를 event 전체 재예측으로 줄인다는 진단은 우리 lab의 failure detection·recovery 연구에 적용 가능함. 정책 실패 시 event 단위로 재예측·재계획하는 test-time 재진단 모듈로 확장할 수 있음.
+- action expert가 frozen video DiT의 video latent(KV cache)에 conditioning하는 구조는, video 예측은 고정한 채 action만 inference-time에 재최적화하는 test-time optimization 설계의 참고 사례가 됨.
+- RoboDojo Memory 차원에서의 약점은 robot memory 연구 주제와 직결됨. 짧은 video chunk에 의존하는 WAM이 장기 기억이 필요한 task에서 구조적으로 약하다는 반증 사례로 인용할 수 있음.
+
+---
+
+### 7. [71점] SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation
+
+- **분야**: World Model · **robotics relevance**: 7/10
+- **arXiv**: [2610.08941](https://arxiv.org/abs/2610.08941) ([PDF](https://arxiv.org/pdf/2610.08941))
+- **저자**: Yunheng Liu, Ziqi Cai, Siqi Yang, Yimu Wang, Minggui Teng, Jiaming Tan, Shuchen Weng, Erwin Wu 외 2명
+- **카테고리**: Computer Vision and Pattern Recognition (cs.CV) · 신규 목록 게재: cs.CV
+- **Comments**: Project page: this https URL
+- **원문 검토**: PDF 전문 · 1차 스크리닝 62점
+
+> 💡 SPW-Nav는 언어 지시를 받아 하나의 파노라마에서 2K 해상도 360도 영상을 1분 길이로 실시간 스트리밍 생성하는 panoramic world model임. 회전을 구면 리샘플링으로 정확히 처리하고 translation만 생성하게 분리하는 spherical rotation decoupling과, pose를 직전 chunk 기준으로 고정하는 pose-aligned conditioning으로 기존 panoramic generator보다 카메라 추종 정확도와 영상 품질을 모두 높임.
+
+**Core innovation & methodology**
+
+- 파노라마는 이미 모든 방향을 담고 있어 회전은 생성이 필요 없다는 점에 착안해, 회전은 구면 리샘플링으로 정확히 처리하고 video backbone은 translation만 모델링하게 분리함 (spherical rotation decoupling, SRD).
+- 매 pose를 world frame이 아니라 직전 chunk의 첫 프레임 기준으로 표현해, navigation이 얼마나 길어져도 pose 입력이 학습 분포 범위 안에 머물게 함 (pose-aligned conditioning, PAC).
+- Qwen3-VL-8B 기반 vision-language backbone이 직전에 생성된 파노라마 안에서 지시를 해석해 displacement 또는 bounding box 목표로 바꾸고 카메라 trajectory로 변환함 — '문 쪽으로 걸어가라'처럼 장면 내용을 참조하는 지시까지 처리함.
+- 고노이즈 구간(비율 0.9~0.98)에 학습을 집중시키는 noise-tail trajectory learning과, 지시된 이동과 반대 방향을 대조해 방향 신호를 증폭하는 opposite-trajectory guidance로 translation 추종을 강화하고, multi-term memory와 2-step distillation으로 1분 길이 스트림을 26.6 FPS로 생성함.
+
+**Novelty vs. prior works**
+
+- 기존 panoramic generator(CamPVG, OmniRoam, PanoWorld)는 사전 정의된 trajectory만 따르고, interactive world model(Genie, Matrix-Game, NWM)은 키보드 입력 같은 low-level action으로 주로 perspective view만 다룸 — SPW-Nav는 언어 지시를 생성된 장면 내용에 맞춰 해석하는 첫 panoramic world model이라는 problem formulation 자체가 새로움.
+- SRD는 '파노라마에서 회전은 생성이 필요 없다'를 수학적으로 증명(논문 Proposition 1)하고 이를 그대로 아키텍처에 반영한 것으로, panorama의 구조적 특성을 이용한 formulation임.
+- 반면 pose-aligned conditioning·noise-tail learning·opposite-trajectory guidance는 기존 diffusion distillation·guidance 기법을 navigation 조건에 맞게 응용한 것이라 novelty는 SRD보다 제한적임.
+
+**Benchmark results**
+
+- 언어 지시 기반 navigation(SPW-NavBench, 100 clip)에서 TDE(지시 방향과 실제 이동 방향의 오차, 단위: 도) 56.66도로 최고 baseline PanoWorld 계열(62~63도대)보다 낮고, RE(회전 오차) 3.02도는 baseline 중 최저인 12.99도의 4분의 1 이하임. FVD도 351.6으로 최저(최고 baseline 628.8)임.
+- GT trajectory를 직접 받는 camera-controlled 설정에서도 RE 1.84도로 PanoWorld-A.(13.62도)의 7분의 1 이하이고 FVD 308.0으로 전 항목 최고지만, ATE(절대 궤적 오차)·MA(mapping accuracy)는 고정 해상도(960x480)에 특화된 PanoWorld-A.가 더 좋음 — 저자도 specialization과 generality의 trade-off로 설명함.
+- vision-language backbone 단독 평가에서 held-out scene 기준 explicit instruction 정확도는 fine-tuning 후 0.925(이전 0.663), goal instruction은 0.692(이전 0.154)로 오름. 파노라마를 빼면 goal 정확도가 0으로 떨어져 텍스트만으로 추측하지 않음을 보임.
+- 20개 scene에서 닫힌 경로(12 chunk) 실험 결과 closure rotation error 1.62도로 2위 HunyuanWorld-Voyager(8.91도, perspective 기준)보다 크게 낮으나, memory gain은 0.173으로 Matrix-Game 3.0(0.249, perspective 기준)보다 낮음 — 먼 과거 revisit의 appearance 일치는 아직 완전하지 않음.
+- ablation에서 OTG 제거 시 TDE가 24.30도에서 43.53도로, NTL 제거 시 RE가 1.84도에서 26.58도로 악화돼 두 요소 모두 translation 추종에 필수임을 확인함. 모두 sim 렌더링(Habitat)과 real outdoor 영상(MUGEN) 기반 평가이고 real-robot 검증은 없음.
+
+**Top-tier conference 적합성 — 65/100 · 추천 venue: CVPR**
+
+구면 회전을 수학적으로 정확히 처리하는 formulation과 다수 baseline(NWM, CubeComposer, OmniRoam, PanoWorld, Matrix-Game 3.0 등) 대비 일관된 카메라 추종·영상 품질 우위, 두꺼운 ablation으로 CVPR 수준의 기여는 있음. 다만 평가가 video generation 품질과 카메라 추종 지표에 머물고 실제 policy 학습이나 real-robot 효과는 보이지 않아, oral보다는 regular accept 가능성이 높음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- '생성된 장면의 내용을 기준으로 언어 지시를 해석'하는 문제 설정은 VLN policy의 sim 데이터 증강이나 test-time rollout 시뮬레이터로 확장할 수 있음.
+- SRD처럼 '기하학적으로 생성이 필요 없는 부분을 생성 대상에서 제외'하는 아이디어는 manipulation world model에서 gripper pose 같은 명시적 기하 요소를 생성에서 분리하는 데도 적용해볼 만함.
+- multi-term memory와 few-step distillation으로 실시간 스트리밍을 유지하는 구조는 robot memory·long-horizon rollout 기반 test-time planning 연구에 참고할 수 있음.
+
+---
+
+### 8. [70점] World Models Dream of Success: Diagnosing and Repairing Failure Insensitivity in Robot World Models
+
+- **분야**: World Model · **robotics relevance**: 10/10
+- **arXiv**: [2610.09134](https://arxiv.org/abs/2610.09134) ([PDF](https://arxiv.org/pdf/2610.09134))
+- **저자**: Jiuyi Xu, Xiao Hu, Meida Chen, Peng Gao, Yang Ye, Yangming Shi
+- **카테고리**: Robotics (cs.RO) · 신규 목록 게재: cs.RO
+- **Comments**: 23 pages, 4 figures, 12 tables
+- **원문 검토**: PDF 전문 · 1차 스크리닝 68점
+
+> 💡 공개된 robot world model(Cosmos Policy, Ctrl-World 계열) 네 체크포인트가 action을 바꿔도 비슷한 성공 예측을 내는 failure insensitivity를 가진다는 것을 진단함. 성공 시연에 severity grid(섭동 강도를 단계별로 배열한 grid)로 섭동을 주고 실행으로 결과를 검증한 counterfactual replay로 fine-tuning하는 CureWM을 제안해, LIBERO에서 value optimism을 79.55%에서 30.17%로, 실제 Franka 로봇에서 success-like 오판을 90%에서 33%로 낮춤.
+
+**Core innovation & methodology**
+
+- 같은 context에서 성공 action과 실패 action에 비슷한 value를 주는 현상을 failure insensitivity로 정의함. optimism(실패에 높은 값을 주는 것)과는 분리되는 별도 현상으로 구분함.
+- CureWM은 성공 시연의 approach/grasp/carry/place 구간에 severity grid로 섭동을 가해 대안 action을 생성함.
+- 생성된 action을 시뮬레이션·하드웨어에서 실제 실행해 성공·실패를 검증하고, 검증된 replay만 training에 씀.
+- released model의 architecture와 training objective는 그대로 두고, 검증된 replay를 기존 training data에 합쳐 fine-tuning만 함.
+
+**Novelty vs. prior works**
+
+- 실패 데이터를 학습에 넣는 것 자체는 새롭지 않음 (Dex-Net, HER, CoDA, AHA, 동시 연구 FACT 등 선행 다수). 저자도 이를 novelty로 주장하지 않음.
+- 차별점은 같은 context에서의 action contrast와 실행 검증 라벨을 결합해, architecture·objective를 바꾸지 않고 released checkpoint를 고치는 repair recipe라는 점임.
+- 동시 연구 FACT는 world-action model 자체를 새로 설계하고 failure-aware masking을 추가하는 반면, CureWM은 데이터 구성만으로 기존 모델을 고쳐 적용 범위가 더 넓음.
+
+**Benchmark results**
+
+- LIBERO-Goal held-out 484개 실패에서 value optimism이 baseline 79.55%에서 CureWM 30.17%로 떨어지고 AUROC는 0.495에서 0.743으로 오름. 단 성공 replay의 false-positive rate도 31.0%에서 38.0%로 늘어남.
+- counterfactual 학습 없이 transfer한 LIBERO-Spatial/Object AUROC는 0.522/0.466에서 0.629/0.587로 개선되지만, LIBERO-10은 0.493으로 chance 수준에 머묾.
+- failure 개수·성공 replay·training step을 맞춘 matched 비교에서 counterfactual failure의 success-failure value gap은 0.124로, fresh policy failure의 0.014보다 큼.
+- 실제 Franka 로봇 cup pick-and-place 두 차례 반복 평가에서 success-like 오판률이 baseline 90%에서 CureWM 33%(평균)로 줄고, failure-detection AUROC는 0.67에서 0.90으로 오름. 3인 blind human rating도 같은 방향(adapted 8/15 vs CureWM 0/15 오판)을 지지함.
+- robot task success는 LIBERO 평균 96.80%(baseline)에서 96.55%(CureWM)로 거의 그대로이고, RoboCasa grasp-replay 학습은 OpenDrawer/CloseDoubleDoor 성공률을 28/30·30/30에서 17/30·23/30으로 떨어뜨리는 repair-control trade-off를 보임.
+
+**Top-tier conference 적합성 — 60/100 · 추천 venue: CoRL**
+
+실행 검증 counterfactual replay로 공개 world model의 failure insensitivity를 고치는 실용적 repair 방법이고, 시뮬레이션과 실제 로봇 양쪽에서 discrimination 개선을 일관되게 보여 증거가 탄탄함. architecture·objective는 바꾸지 않는 데이터 레시피 수준 기여이고 robot task success는 개선되지 않거나 trade-off를 보여 top-tier oral보다는 CoRL/RSS 급 regular paper에 맞음. false-positive rate 상승과 LIBERO-10 transfer 실패, hardware 평가가 두 물체·한 로봇에 그치는 점이 rejection risk임.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- failure detection·diagnosis와 world model을 직접 묶은 연구라 우리 lab의 failure detection/recovery 주제와 바로 연결됨. severity grid 섭동 + 실행 검증 construction을 다른 world model repair에도 재사용할 수 있음.
+- world model을 policy evaluation·planning에 쓸 때 success-like 오판이 치명적이라는 점을 수치로 보여줌. test-time optimization/inference-time planning 연구에서 value optimism·success-failure gap을 진단 지표로 채택할 수 있음.
+- Appendix B의 단일 action 관측 proposition은 causal confusion in imitation learning과 연결되는 이론적 근거로, counterfactual reasoning 연구의 motivation으로 참고할 만함.
+
+---
+
+### 9. [68점] Beyond Policy Support: Interaction Constrained Offline Reinforcement Learning for Autonomous Driving
+
+- **분야**: Offline RL (Autonomous Driving) · **robotics relevance**: 7/10
+- **arXiv**: [2610.09763](https://arxiv.org/abs/2610.09763) ([PDF](https://arxiv.org/pdf/2610.09763))
+- **저자**: Mahmoud Selim, Cristina Cipriani, Karl Henrik Johansson
+- **카테고리**: Machine Learning (cs.LG) · 신규 목록 게재: cs.LG
+- **원문 검토**: PDF 전문 · 1차 스크리닝 62점
+
+> 💡 오프라인 RL에서 ego 궤적이 주변 차량과의 joint 분포에서는 지지받지 못하는 현상을 interaction distribution shift(IDS)로 새로 정의하고, joint classifier와 ego classifier의 logit 차이로 이를 contrastive하게 추정해 policy 학습에 제약으로 거는 ICDP를 제안함. nuPlan·InterPlan closed-loop 평가에서 behavior cloning과 unconstrained offline RL 대비, 특히 주변 차량이 반응하는 reactive 시나리오에서 성능이 개선됨을 보이고, 실제 트럭 주행에서는 추월·추종 사례를 정성적으로 확인함.
+
+**Core innovation & methodology**
+
+- joint-support degradation을 ego-support 항과 interaction-support 항(IDS)으로 정확히 분해하는 식을 유도함. p(τe,τa|s)=p(τe|s)p(τa|s,τe) 조건부 분해를 이용함.
+- IDS를 구하려면 원래 고차원 joint density나 주변 agent 반응 예측이 필요하지만, 같은 policy 후보 궤적을 써서 학습한 joint classifier와 ego classifier의 logit 차이(residual interaction score)로 density 추정 없이 복원함. Theorem 1로 이 복원이 population-optimal 수준에서 정확함을 증명함.
+- diffusion policy와 chunk-level critic ensemble(lower-confidence-bound pessimism)에 ego-support penalty와 interaction-support penalty를 behavior-cloning loss와 함께 더해 Noisy-Space Policy Gradient로 학습함.
+- surrounding agent는 예측 대상이 아니라 관측된 context로만 쓰여서, reactive simulator나 world model rollout 없이 학습이 끝남.
+
+**Novelty vs. prior works**
+
+- 기존 offline RL의 support 제약(CQL, IQL, diffusion 기반 behavior-regularization 등)은 모두 ego action space에서만 지지를 보는데, ICDP는 상호작용 자체의 joint support를 보는 축을 새로 추가함. 이게 핵심 novelty임.
+- intent inference 기반 interaction-aware RL이나 CoMADICE 같은 offline multi-agent RL은 surrounding agent를 학습 대상으로 다루는데, ICDP는 ego policy만 최적화하면서 interaction support를 ego-support와 분리해서 본다는 점이 다름.
+- contrastive density-ratio 자체는 OOD·support 추정에서 이미 쓰이던 기법이라 추정 기법의 novelty는 제한적임. novelty는 추정 기법보다 IDS라는 problem formulation과 분해 정리(Theorem 1)에 있음.
+
+**Benchmark results**
+
+- nuPlan Val14/Test14-Hard/Test14-Random closed-loop 전 항목에서 ICDP가 1위를 기록함. Test14-Hard에서 non-reactive 78.34, reactive 72.87로 기존 최고인 Flow Planner의 76.47/70.42를 앞섬.
+- 동일 backbone 통제 실험에서 reactive 기준으로 ICDP가 BC(68.21→72.87, 82.71→86.34)와 unconstrained offline RL(70.07, 83.02) 대비 Test14-Hard·Test14-Random 모두에서 더 높음. 단 non-reactive에서는 unconstrained RL과 차이가 작거나 일부 열세임.
+- InterPlan에서 overall 62.7로 최고지만 Nudge 카테고리는 51.8로 Flow Planner(72.96)·PLUTO(71.56)보다 크게 낮아, interaction 특화 claim에 부분적 반례가 있음.
+- surrounding agent 수를 16에서 48로 늘리면 평균 closed-loop score가 개선되고, 64로 더 늘리면 82.40에서 81.97로 소폭 하락함.
+- 실제 트럭 주행 실험은 추월·선행차 추종, 곡선 도로 단독 주행 사례를 정성적으로만 보여줌. 충돌률·성공률 등 정량 지표는 본문에서 확인 불가.
+
+**Top-tier conference 적합성 — 60/100 · 추천 venue: CoRL**
+
+joint-support 분해와 contrastive 복원을 이론적으로 정리하고 nuPlan 표준 benchmark에서 강한 diffusion/flow 기반 baseline을 전부 앞선다는 점에서 설득력이 있음. 다만 real-robot 실험이 정량 지표 없는 정성 사례뿐이고 InterPlan Nudge 카테고리에서는 기존 방법보다 낮아, interaction 강건성 주장이 전 시나리오에서 일관되지 않는다는 rejection risk가 있음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- interaction distribution shift 개념은 사람이나 다른 로봇과 상호작용하는 manipulation offline RL/IL 세팅(양팔 협업, handover)에 그대로 옮길 수 있음. ego action이 상대방 state와의 joint support를 잃는 경우를 잡아내는 데 쓸 수 있음.
+- surrounding agent를 예측하지 않고 contrastive classifier만으로 interaction 지지도를 판별하는 방식은 world model 없이 상호작용 붕괴를 감지하는 failure detection 아이디어로 참고할 만함.
+- diffusion policy + critic ensemble + support penalty 조합은 test-time guidance 연구에서 action 생성에 지지도 제약을 거는 템플릿으로 참고 가능함.
+
+---
+
+### 10. [64점] PAIR: Bridging Perception and Action in Vision-Language-Action Models
+
+- **분야**: VLA · **robotics relevance**: 9/10
+- **arXiv**: [2610.09016](https://arxiv.org/abs/2610.09016) ([PDF](https://arxiv.org/pdf/2610.09016))
+- **저자**: Kaixi Feng, Guoheng Sun, Ang li
+- **카테고리**: Artificial Intelligence (cs.AI) · 신규 목록 게재: cs.AI
+- **원문 검토**: PDF 전문 · 1차 스크리닝 65점
+
+> 💡 VLA 정책이 visual-language 표현을 action 표현으로 바꾸는 전환을 final action loss 하나로만 암묵적으로 학습하는 문제를 지적하고, 그 중간 표현을 명시적으로 학습하는 PAIR를 제안함. masked action autoencoder로 얻은 action latent token에 perception에서 뽑은 bridge token을 정렬시켜 action token 맨 앞에 주입하는 방식으로 OpenVLA-OFT·VLA-Adapter 두 backbone을 LIBERO·LIBERO-Plus·CALVIN·실로봇 7개 task에서 모두 개선함.
+
+**Core innovation & methodology**
+
+- perception-action representation gap을 문제로 설정함 — VLA가 visual-language 의미를 executable action 의미로 바꾸는 전환을 final action loss로만 암묵적으로 학습한다는 한계를 지적함.
+- masked action autoencoder: expert action chunk를 랜덤 마스킹과 가우시안 노이즈로 손상시킨 뒤 self-attention encoder로 horizon당 하나씩인 action latent token으로 복원하게 학습해, action의 시간 구조를 담은 latent를 얻고 이후 freeze함.
+- bridge module: learnable query가 cross-attention으로 visual-language token에서 task-relevant feature를 뽑고 self-attention으로 horizon 순서에 맞춰 정리해 bridge token을 만들고, 이를 action latent token과 cosine 정렬 loss로 맞춤.
+- bridge injection: bridge token을 action token 공간으로 projection한 뒤 tanh 기반 gate로 가중해 action expert 맨 앞 action token에 더해 넣어, refinement가 이미 action-aware한 상태에서 시작하게 함. inference 때는 autoencoder 없이 bridge module만 관측·지시에서 바로 bridge token을 만듬.
+
+**Novelty vs. prior works**
+
+- 기존 intermediate representation 계열(motion trace, affordance, geometry 등)은 물리적 의미를 미리 고정해 그걸 예측하게 하는데, PAIR는 특정 물리적 의미를 지정하지 않고 perception과 expert action 양쪽에서 학습된 표현을 쓴다는 점이 차이임. 다만 이 자체가 새로운 패러다임은 아니고 선행 계열의 변형임.
+- 가장 근접한 선행연구는 LARA(latent visual dynamics를 action expert 중간 feature에 정렬)로, PAIR는 action 쪽 latent를 autoencoder로 별도 학습해 거기에 perception feature를 맞추고 이를 action expert 진입 전에 주입한다는 점에서 정렬 대상·주입 위치가 다름. 결국 둘 다 "perception-action 표현 정렬 + 보조 loss" 계열이라 차별성이 architecture 디테일 수준에 머무름.
+- 새 problem formulation이나 학습 paradigm이라기보다는 두 backbone(OpenVLA-OFT, VLA-Adapter)에 꽂는 plug-in 모듈 수준이라 novelty는 제한적임.
+
+**Benchmark results**
+
+- LIBERO: VLA-Adapter 평균 success 97.3%→98.4%, 네 suite 전부 개선(Spatial/Goal +1.4p, Long +1.2p, Object +0.4p).
+- LIBERO-Plus(zero-shot OOD, 7개 perturbation): VLA-Adapter 전체 59.1%→64.2%, camera viewpoint +8.1p·robot initial state +7.8p·sensor noise +6.7p가 가장 큰 개선, language perturbation은 +0.5p로 가장 작음.
+- CALVIN ABC→D: 평균 완료 sequence length가 OpenVLA-OFT 4.28→4.40, VLA-Adapter 4.42→4.53. 5-task 연속 success는 각각 +3.9p/+3.7p로, 단일 task success 개선(+0.7p/+0.1p)보다 long-horizon에서 효과가 큼.
+- 실로봇 UF850 7개 task(과제당 20 trial, 총 140 trial): OpenVLA-OFT 평균 51.4%→65.0%(+13.6p), water pouring에서 +20p로 최대 개선, 7개 task 전부에서 개선됨.
+- ablation(LIBERO, VLA-Adapter): injection 위치는 시작(98.4%)이 끝(97.4%)·중간(97.9%)·전체 layer(97.6%)보다 나음. alignment target은 raw action(97.1%)보다 학습된 action latent token(98.4%)이 더 나음.
+
+**Top-tier conference 적합성 — 60/100 · 추천 venue: CoRL**
+
+LIBERO·LIBERO-Plus·CALVIN 세 benchmark와 실로봇 7-task 140 trial을 모두 다루고, injection 위치·alignment target·injection 세기·autoencoder noise까지 ablation과 representation 분석(linear probe, R2, RSA)을 갖춰 실험적 증거는 두꺼움. 다만 두 backbone에 붙이는 보조 모듈 수준이라 conceptual novelty가 크지 않고 저자 3인·단일기관(UMD)이라, reviewer가 incremental engineering으로 볼 위험이 있음. CoRL full paper 수준은 되나 oral/highlight급 impact로 보이진 않음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- bridge token이 action expert 진입 전부터 action 정보를 R2 0.878로 담고 있다는 분석(baseline은 마지막 block에서야 0.844)은 "action-ready" 중간 표현이 무너지는 지점을 failure 예측 신호로 쓸 수 있는지 검토할 만함.
+- masked action autoencoder로 action chunk를 복원하는 구조는 test-time에 현재 관측이 expert action 구조에서 얼마나 벗어났는지를 복원 오차로 재는 test-time monitoring 아이디어로 재활용 가능함.
+- perception feature를 action latent에 정렬시키는 방식은 world model의 latent dynamics와 유사해서, perception 쪽 입력을 object-centric 3D·scene graph 표현으로 바꿔 bridge module에 넣는 실험으로 확장해볼 만함.
+
+---
+
+### 11. [64점] EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution
+
+- **분야**: VLA / Manipulation (Agentic Harness) · **robotics relevance**: 9/10
+- **arXiv**: [2610.10498](https://arxiv.org/abs/2610.10498) ([PDF](https://arxiv.org/pdf/2610.10498))
+- **저자**: Python Song, Zhixuan Liang, Kelsey Fu, Mengdi Wang, Junfeng Yang, Shilong Liu
+- **카테고리**: Artificial Intelligence (cs.AI) · 신규 목록 게재: cs.AI
+- **원문 검토**: PDF 전문 · 1차 스크리닝 60점
+
+> 💡 고정된 VLA 파라미터는 그대로 두고 harness(code, skill, memory)만 physical trial로 진화시키는 방법임. 다음 trial을 Value-of-Information 기준으로 골라, 시너지가 있을 때 code와 skill을 함께 갱신해 RoboCasa365 77.0%, LIBERO-Pro 86.8%, 실로봇 71.3% 성공률을 달성함.
+
+**Core innovation & methodology**
+
+- Hypothesis Graph: code·skill 수정안을 노드로 두고 Beta-prior 기반 confidence로 지지/반박 증거를 누적함. refines edge로 개선 이력을 추적함.
+- Value-of-Information Experiment Selection: 각 experiment가 구별 가능한 hypothesis 집합을 선언하고, 기대 entropy 감소량을 실행 cost로 나눈 VOI가 최대인 trial을 다음 physical episode로 고름.
+- Code-Skill Co-Evolution: 같은 초기 상태에서 code-only, skill-only, joint 실행의 success rate를 비교해 joint gain을 재고, 양의 시너지가 있으면 works-with edge로 남겨 둘을 같이 갱신함.
+- Reward-Grounded Memory Learning: M1(원시 trajectory)-M2(hypothesis graph)-M3(증류된 규칙) 계층 메모리에서 retain/merge/abstract/compress/forget/skip 행동을 PPO로 학습함. reward를 다음 episode의 success 상승·uncertainty 감소·cost로 정의해 메모리 보존 여부를 실제 효용에 묶음.
+
+**Novelty vs. prior works**
+
+- 가장 가까운 prior work인 Harness VLA·Zetta·CaP-X도 frozen VLA 주변에서 code·skill을 자가진화시키지만 다음 trial을 무엇으로 할지 명시적으로 고르지 않고 proposal-and-execution을 반복함. 이 논문은 trial 선택을 Bayesian hypothesis testing과 value-of-information으로 명시적 최적화 문제로 바꾼 점이 차이임.
+- code와 skill을 따로 진화시키던 기존 방식과 달리 joint gain을 직접 측정해 같이 갱신할지를 데이터로 판정함. 다만 VOI·Bayesian experimental design 자체는 기존 통계 기법이라 novelty는 새 이론이 아니라 로봇 harness 문제에 맞춘 formulation에 있음.
+- 비교 대상인 Harness VLA, Zetta가 모두 2026년 거의 동시기에 나온 매우 가까운 concurrent work여서, 본질적 차이가 hypothesis graph 구조와 RL 기반 memory curation 같은 설계 디테일 수준에 머물 위험이 있음.
+
+**Benchmark results**
+
+- RoboCasa365 overall 77.0%(Atomic-Seen 94.4%, Composite-Seen 63.1%, Composite-Unseen 71.3%)로 best baseline Harness VLA 63.6%(Composite-Unseen 40.1%) 대비 크게 앞섬.
+- LIBERO-Pro overall 86.8%로 Harness VLA 72.1%, Zetta 71.1%를 상회함. 다만 Goal-T cell에서는 Zetta 92.5%가 이 방법 78.0%보다 높아 전 구간 우위는 아님.
+- 실로봇 SO-101·SmolVLA 실험에서 overall success가 SmolVLA 단독 46.0%에서 harness 결합 71.3%로 오름. 5 task 중 Glasses Bridge Grasp은 60.0%에서 56.7%로 오히려 떨어짐.
+- ablation에서 Code-Skill Co-Evolution은 Composite-Unseen 71.3%로 Skill-only 55.6%를 앞섬. Code-only의 Composite-Unseen 수치는 본문에서 확인 불가.
+- Reward-Grounded Memory Learning ablation에서 Composite-Unseen success가 retrieval-based 61.7%, PPO+task reward only 65.2%에서 full method 71.3%로 오름(learning AUC도 0.556→0.589→0.635).
+
+**Top-tier conference 적합성 — 60/100 · 추천 venue: CoRL**
+
+Hypothesis-guided active experiment selection과 reward-grounded memory curation을 결합한 완성도 높은 시스템 논문이고, 두 sim 벤치마크와 zero-shot real-robot 검증까지 갖춰 CoRL 실험 기준에는 부합함. 다만 핵심 novelty가 Harness VLA·Zetta 등 거의 동시기 concurrent harness 대비 formulation 차이에 머물고, 실로봇 5 task 중 1개는 성능이 떨어져 reviewer가 incremental engineering으로 볼 rejection risk가 있음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- VOI 기반 experiment selection은 test-time optimization과 active perception에 바로 적용 가능함. 어떤 trial이 가장 정보량이 큰지 판단하는 틀을 failure-recovery 실험 설계에 가져올 수 있음.
+- reward-grounded memory learning(M1-M2-M3 계층, RL로 retain/forget 학습)은 로봇 memory 연구에 참고할 설계임. 단순 retrieval이 아니라 나중에 도움 되는지로 메모리를 학습시킴.
+- Code-Skill Co-Evolution의 joint-gain 측정 방식은 skill chaining·long-horizon planning에서 두 요소를 같이 바꿔야 하는지를 판정하는 데 쓸 수 있음.
+
+---
+
+### 12. [64점] TERRA: Learning Transportable Latent Actions through Temporal Effect Representation and Relational Alignment
+
+- **분야**: VLA · **robotics relevance**: 8/10
+- **arXiv**: [2610.09509](https://arxiv.org/abs/2610.09509) ([PDF](https://arxiv.org/pdf/2610.09509))
+- **저자**: Tianxingjian Ding, Mubarak Shah, Yu Tian
+- **카테고리**: Computer Vision and Pattern Recognition (cs.CV) · 신규 목록 게재: cs.CV
+- **Comments**: Preprint. Code and project page coming soon
+- **원문 검토**: PDF 전문 · 1차 스크리닝 62점
+
+> 💡 끝점 차이만 쓰면 속도가 다른 동작을 같은 latent로 묶고 전체 시퀀스를 다 쓰면 잡음이 낀다는 문제에서, TERRA는 net component와 저차 dynamics component(A1)만 남기는 temporal effect 표현을 제안함. 여기에 다른 초기 상태로 latent를 디코딩했을 때 원래 효과 방향을 유지시키는 Effect-Anchored Transport(EAT)를 더해, 같은 pretraining 규모로 재학습한 UniVLA*보다 action NMSE가 낮고 LIBERO 평균 성공률도 93.4%로 91.8%보다 높음.
+
+**Core innovation & methodology**
+
+- 전환(transition)을 net component(누적 feature 변화)와 저차 dynamics component A1(DCT, Discrete Cosine Transform 첫 non-constant mode, 구간 내 변화 추이)으로 압축한 temporal effect로 표현함.
+- 이 effect만 입력으로 받는 latent tokenizer를 조건부 decoder와 self-reconstruction으로 학습하되, decoder는 전체 증가량 시퀀스를 복원하게 함.
+- Effect-Anchored Transport(EAT)는 같은 데이터 소스의 다른 초기 상태에서 donor latent를 디코딩하고, 생성된 효과 방향을 donor가 원래 관찰된 효과 방향에 cosine loss로 앵커링함.
+- effect anchoring, EMA target 기반 relative-effect consistency, MMD로 분포를 맞추는 transition-distribution matching, BYOL식 nuisance invariance 네 가지 loss를 결합해 추가 네트워크 없이 같은 decoder로 transport를 정규화함.
+
+**Novelty vs. prior works**
+
+- CoMo(frame-pair feature 차이로 continuous latent motion 학습)와 핵심 차이는 끝점 차이에 저차 dynamics component를 더한 것인데, encoder-decoder 구조 자체는 유사해 표현 쪽 novelty는 제한적임.
+- UniVLA·LAPA 같은 discrete task-centric latent와 달리 continuous latent를 쓰고, 재구성(reconstruction)만으로는 못 잡는 cross-context 일관성을 별도 loss(EAT)로 직접 강제한다는 problem framing이 가장 새로운 지점임.
+- 다만 EAT를 구성하는 개별 기법(BYOL invariance, EMA target network, MMD distribution matching)은 모두 기존 self-supervised learning 기법의 재조합이라, 새로운 학습 원리라기보다 새로운 적용·조합으로 보는 게 맞음.
+
+**Benchmark results**
+
+- 같은 pretraining 규모에서 재학습한 UniVLA* 대비 LIBERO 평균 성공률 93.4% vs 91.8%, 네 suite 모두 TERRA가 높고 Object(+2.6)·Long(+1.9)에서 격차가 가장 큼.
+- LAPA 65.7·Diffusion Policy 72.4·Octo 75.1·OpenVLA 76.5는 원래 논문의 다른 protocol 수치라 TERRA·UniVLA*와 직접 비교는 불가능함.
+- frozen linear reader로 잰 action NMSE(낮을수록 좋음)는 TERRA .723, UniVLA* .785, LAPA-style baseline .819로 clean 상태에서 가장 낮음.
+- 같은 15k step 예산에서 reconstruction만 추가하면 action NMSE가 .807에서 .784로 거의 안 줄지만 EAT를 쓰면 .723까지 떨어져, 성능 향상 대부분이 추가 학습량이 아니라 EAT 자체에서 나옴.
+- transport 평가에서 donor-recipient 거리가 가장 먼 구간으로 갈 때 action NMSE 증가량이 reconstruction-only +.267, EAT(invariance 제외) +.136, full EAT +.087로 3배 가까이 줄고, 29개 pretraining source 중 22개에서 EAT가 더 나음.
+
+**Top-tier conference 적합성 — 58/100 · 추천 venue: CoRL**
+
+ablation과 transport diagnostic(거리별 quartile, source별 breakdown)이 꼼꼼해 리뷰어가 요구할 증거를 대부분 갖춤. 다만 평가가 LIBERO 한 benchmark와 matched-scale UniVLA* 비교 하나에 의존하고 실로봇 검증이 없어 top-tier full paper의 oral·highlight보다는 CoRL/RSS 수준의 solid poster에 더 맞음. transport가 같은 data source(동일 embodiment·카메라) 안에서만 성립한다는 한계도 저자가 직접 인정함.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- latent를 다른 초기 상태로 옮겨도 같은 효과를 유지시키는 EAT 아이디어는 실패 복구(failure recovery) 상황에서 recovery policy가 비슷한 effect를 다른 상태에서 재현하도록 하는 regularizer로 바로 가져다 쓸 수 있음.
+- net+dynamics로 나누는 temporal effect 분해는 world model의 action-conditioned rollout에서 변화가 구간 내에서 어떻게 전개되는지를 압축해 넣는 입력으로 활용 가능함.
+- effect-anchoring과 relative-effect consistency 조합은 시점이 바뀌어도 object-centric 3D/4D representation의 feature 변화 방향을 유지시키는 정규화 항으로 확장해볼 만함.
+
+---
+
+### 13. [60점] TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning
+
+- **분야**: Manipulation · **robotics relevance**: 9/10
+- **arXiv**: [2610.10288](https://arxiv.org/abs/2610.10288) ([PDF](https://arxiv.org/pdf/2610.10288))
+- **저자**: Dayou Li, Hao Wang, Qianqian Yang, Zihao Zhu, Haoquan Fang, Ziyao Zeng, Yan Han, Zihan Wang 외 18명
+- **카테고리**: Computer Vision and Pattern Recognition (cs.CV) · 신규 목록 게재: cs.CV
+- **Comments**: Project page: this https URL
+- **원문 검토**: PDF 전문 · 1차 스크리닝 62점
+
+> 💡 TouchScale은 head RGB-D, 양손 wrist RGB, 양손 tactile glove(880 taxel/hand, taxel=촉각 센서 단위)로 구성된 통일 wearable 장비 하나로 500시간, 약 87K episode를 수집한 human visual-tactile dataset임. 이 데이터로 학습하면 unseen tactile sensor로의 zero-shot contact 예측, action recognition용 visual representation, real-world contact-rich manipulation(평균 성공률 22.5%→57.5%) 전 영역에서 기존 소규모 tactile dataset보다 나은 성능을 보임.
+
+**Core innovation & methodology**
+
+- 동일 센서 세대·동일 동기화 파이프라인으로 500시간을 수집한 human visual-tactile dataset임. 기존 최대 규모(DeskTask-Tac 37.2h, EgoTouch 20h)보다 한 자릿수 이상 큼.
+- 2K task description, 800개 이상 scene configuration, 1.5k개 이상 object, 참가자 약 20명으로 다양성을 확보함. action annotation 없이 natural-language instruction만으로 수집해 반복 scale-up이 가능한 collection paradigm을 제시함.
+- VLM(Gemini 3.7 Flash)으로 wrist video만 보고 contact/release 구간을 먼저 추정한 뒤 tactile 신호와 대조하는 자동 품질검증(QC) pipeline을 적용함.
+- robot action label 없이 vision-to-tactile future prediction만으로 N0-VTLA를 mid-training해 human hand와 robot action space 간 retargeting을 거치지 않는 활용법을 제시함.
+
+**Novelty vs. prior works**
+
+- novelty는 architecture나 learning objective가 아니라 데이터 규모·일관성에 있음. tactile prediction은 기존 TouchAnything, robot policy는 기존 N0-VTLA를 그대로 사용하고 데이터만 교체함.
+- EgoTouch·OpenTouch·FEEL 등 선행 visual-tactile dataset은 20~37시간대에 머물고 여러 센서·프로토콜을 섞어 scale 효과를 분리하기 어려웠는데, TouchScale은 센서·수집절차를 고정해 scale 단독 효과를 isolate했다는 점이 차별점임.
+- 단, 이 isolate된 scaling 효과 자체가 더 큰 모델에 더 많은 데이터를 넣는 통상적 scale-up 결과와 본질적으로 다른 새 현상은 아님. 데이터 contribution으로서의 가치가 중심이고 방법론적 novelty는 제한적임.
+
+**Benchmark results**
+
+- zero-shot tactile prediction(TouchAnything 모델, EgoTactile 평가): 16h 규모 TouchScale 학습 시 cIoU 0.181·vIoU 0.243으로 EgoTouch 16h 학습(cIoU 0.134·vIoU 0.185) 대비 각각 35.1%, 31.4% 상승함. full TouchScale 사용 시 cIoU 0.383까지 상승함(10% 사용 시 0.311).
+- action recognition(Hiera-B pretrain 후 MECCANO/SSv2/Ego-Exo4D 평균): TouchScale linear probe 24.45%·FT 49.62%로 OpenTouch(22.97/48.28), EgoTouch(8.99/21.75), FEEL(7.85/13.29) 대비 최고 수치임.
+- real-robot manipulation(N0-VTLA, xArm6+BrainCo Revo2 hand, 4개 contact-rich task·task당 20 trial): TouchScale mid-training 적용 시 평균 성공률 22.5%→57.5%(Soft/Hard Sorting 10→60%, Bottle-Cap Removal 40→70%, Test-Tube Transfer 30→60%, Whiteboard Wipe 10→40%).
+- mid-training 데이터 scaling: 20%→100% 사용 시 로봇 평균 성공률 30.0%→57.5%로 상승하나, 같은 구간에서 future-tactile prediction accuracy는 2.87%→3.31%로 증가폭이 작음(mid-training 없음(0.18%) 대비 증가폭이 20%→100% 구간 증가폭보다 훨씬 큼).
+- tactile-action 상관: TouchScale mid-training 후 future-tactile error와 action error 간 상관은 약하게 존재(r=0.119, p=0.020), baseline은 상관 없음(r=0.003, p=0.953) — 논문도 이를 "weak" association으로 명시함.
+
+**Top-tier conference 적합성 — 58/100 · 추천 venue: CoRL**
+
+500시간 규모·단일 센싱 파이프라인·4개 실제 로봇 task에서의 명확한 성공률 개선(22.5%→57.5%)이라는 실증 강도는 CoRL/RSS급 dataset+robot learning 세션에 적합함. 다만 핵심 방법(TouchAnything, N0-VTLA)이 모두 기존 연구 그대로이고 로봇 평가가 플랫폼 1종·task 4개에 머물고, 핵심 성공률 개선(22.5%→57.5%)과 별개인 보조 분석(future-tactile correlation)은 약함(r=0.119), top-tier full oral보다는 dataset/benchmark track 또는 poster 수준 risk가 있음.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- action label 없는 human tactile data를 vision-to-tactile mid-training에만 쓰고 robot post-training을 분리하는 방식은, 누리랩에서 human demonstration을 VLA pretraining에 쓸 때 hand-to-robot retargeting 없이 scale만 늘리는 대안 recipe로 참고할 수 있음.
+- future-tactile prediction을 일종의 tactile world model로 쓴 설계는 failure detection·recovery 연구에서 contact 상태를 미리 예측해 이상 감지에 쓰는 아이디어로 확장 가능함.
+- 공개 예정인 500시간 데이터(3D 재구성 object 포함)는 object-centric 3D representation이나 tactile 기반 scene understanding 연구의 pretraining corpus로 바로 활용 가능함.
+
+---
+
+### 14. [60점] Event-Aligned Visual Action Reasoning for World Action Models
+
+- **분야**: World Model · **robotics relevance**: 9/10
+- **arXiv**: [2610.09427](https://arxiv.org/abs/2610.09427) ([PDF](https://arxiv.org/pdf/2610.09427))
+- **저자**: Xiaomeng Yang, Yushu Wu, Yi Gao, Yuhao Lei, Xuan Zhang, Pu Zhao, Yanzhi Wang
+- **카테고리**: Computer Vision and Pattern Recognition (cs.CV) · 신규 목록 게재: cs.CV
+- **Comments**: Project Page: this https URL
+- **원문 검토**: PDF 전문 · 1차 스크리닝 65점
+
+> 💡 World-action model(WAM)이 visual-action chunk를 만들 때 균일한 시간 간격이 아니라 interaction event(grasp, release 등) 경계에 맞춰 나누게 함. evidence phase는 세밀하게 남기고 transition·support phase는 압축해서, DOMINO에서 LingBot-VA 대비 success rate를 10.26%p 올렸음.
+
+**Core innovation & methodology**
+
+- 데모를 interaction event와 transition event로 나누고, interaction 안에서도 변화가 실제로 보이는 evidence phase와 그 전후의 support phase를 구분하는 taxonomy를 정의함
+- 이 taxonomy로 visual-action chunk 경계를 event 경계에 맞추고, evidence phase는 subsampling 없이 보존하고 support·transition은 압축하는 chunk 생성 알고리즘(Algorithm 1)을 제안함
+- event/evidence 경계는 시뮬레이터 contact·state detector와 LLM(Claude Opus 5)이 작성한 task별 event spec으로 오프라인에서 얻음 — 학습 중에만 쓰고 추론 시에는 쓰지 않음
+- chunk 길이를 맞추려 반복(padding)된 action을 추론 시 건너뛰기 위해, 각 action group이 실제 observation인지 padding인지 예측하는 execution validity head를 추가함 (binary classification, loss weight 0.1)
+
+**Novelty vs. prior works**
+
+- 가장 가까운 baseline인 LingBot-VA(Li et al. 2026a), Fast-WAM, ImageWAM은 모두 architecture·video-action 결합 방식을 바꾸는 쪽이었고, chunk의 시간 구조 자체는 episode 위에서 균일하게 고정함. 이 논문은 architecture는 그대로 두고 training supervision의 시간 분할 방식만 바꾼 것이라 모델 구조 차원의 novelty는 제한적임
+- 관련연구에서 인용된 Wall-WM(Li et al. 2026b, "world action modeling at the event joints")도 event 기반 trajectory 구조화를 다루는데, 이 논문과 직접 수치 비교는 본문에서 확인 불가해서 두 방법의 본질적 차이가 명확하지 않음
+- execution validity head 자체는 단순한 보조 classification head지만, ablation에서 SR 39.11%→42.83%로 기여가 확인되어 아이디어는 작아도 효과는 검증됨
+
+**Benchmark results**
+
+- DOMINO: SR 32.57%→42.83%(LingBot-VA 대비 +10.26%p), MS 45.55→55.92
+- RoboTwin 2.0: 평균 SR 92.30%로 LingBot-VA(원 논문 92.24%, 재평가 91.21%) 대비 소폭 우위지만, ImageWAM(93.38%)·Fast-WAM(91.83%) 대비는 저자도 "competitive" 수준이라고만 표현함
+- DOMINO Level1→Level2/3 zero-shot transfer(10-task subset): L2 SR 29.4%(LingBot-VA 16.9%), L3 SR 9.7%(LingBot-VA 6.8%)로 target-level adaptation 없이 최고 성능
+- ablation(동일 slot budget): Episode Uniform 29.17%→Event Uniform(경계만 맞춤) 39.60%→evidence까지 보존한 Event-aligned 42.83%, interaction evidence 보존이 성능 기여의 핵심으로 확인됨
+- 실행 효율: 동일 성공 episode 738개 기준 평균 action command 167.18→106.46개, visual rollout 요청 6.22→4.49회로 감소
+- 실로봇 실험을 본문에서 언급(Sec. C.1)하나 구체적 수치는 제공된 텍스트에서 확인 불가
+
+**Top-tier conference 적합성 — 52/100 · 추천 venue: CoRL**
+
+DOMINO에서 큰 개선과 체계적인 ablation(granularity·evidence placement·context budget 분리 검증), level 간 zero-shot transfer까지 갖춰 로봇학습 venue 투고 수준의 실험 완성도는 있음. 다만 event/evidence 경계를 시뮬레이터 detector와 LLM이 작성한 task별 spec에서 오프라인으로 얻는 구조라 annotation 의존성이 크고, RoboTwin에서는 기존 baseline을 못 넘는 수준이라 top-tier oral보다는 CoRL/ICRA 포스터급 accept에 가까움.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- visual imagination을 task 구조에 맞춰 불균등하게 배분한다는 아이디어는 test-time optimization에도 적용 가능함 — critical event 구간에서만 rollout을 더 돌리는 식의 inference-time budget 할당으로 확장할 수 있음
+- execution validity head는 action이 유효한지 아닌지를 매 스텝 판단하는 신호라, failure detection·recovery 쪽에서 action 중단·재시도 트리거로 재활용할 여지가 있음
+- event 경계를 시뮬레이터 state에서만 얻는 것이 핵심 한계이므로, raw video에서 interaction event를 스스로 찾는 self-supervised event segmentation을 붙이면 실로봇 적용 가능성을 본질적으로 높이는 방향이 됨 — 학생 연구 주제로 이 gap을 다루면 차별화 가능
+
+---
+
+### 15. [58점] Sparse Planning in Visual World Models via Cost Gradients
+
+- **분야**: World Model / Test-Time Planning · **robotics relevance**: 8/10
+- **arXiv**: [2610.10274](https://arxiv.org/abs/2610.10274) ([PDF](https://arxiv.org/pdf/2610.10274))
+- **저자**: Yingchen Xu, Edward Grefenstette
+- **카테고리**: Machine Learning (cs.LG) · 신규 목록 게재: cs.LG
+- **Comments**: Accepted at NeurIPS 2026. 20 pages, 6 figures, 8 tables. Project page and demos: this https URL
+- **원문 검토**: PDF 전문 · 1차 스크리닝 62점
+
+> 💡 토큰 기반 visual world model planning에서 CEM이 매 iteration마다 전체 spatial token을 반복 처리하는 비용을, planning cost의 gradient norm으로 token을 선별하는 COSTGRAD로 줄임. AdaLN 기반 predictor에서 token 50%만 쓰고도 4개 continuous-control benchmark 중 3개에서 full-token 성능을 유지·초과했고, CEM iteration까지 절반으로 줄이면 5.2배 속도 향상을 얻음.
+
+**Core innovation & methodology**
+
+- planning cost(현재 observation의 1-step 예측을 goal encoding과 비교한 L2 거리)의 gradient norm으로 spatial token 중요도를 매김. prediction loss 기반 attention·gradient와 달리 downstream control objective에서 직접 중요도를 유도함.
+- zero-action probe로 forward·backward 1회만 돌려 top-K token을 고르고, 이후 CEM search 전체(300 candidate × 30 iteration)를 그 subset에서만 수행함. predictor는 재학습 없이 고정함.
+- 선택된 token은 context·goal에서 같은 위치를 유지하고 매 환경 step마다 재선택함. CEM 자체는 그 subset 위에서 독자적으로 action을 탐색함.
+- AdaLN-conditioned predictor와 depth·head·학습 데이터를 맞춘 matched concat predictor를 비교해, token 제거가 action-conditioning pathway에 주는 drift(KL divergence로 측정)가 architecture에 따라 반대 방향으로 나타남을 보임.
+
+**Novelty vs. prior works**
+
+- 가장 가까운 prior work인 Sparse Imagination(Chun et al. 2025)은 sparse training과 random token selection을 결합하는데, 이 논문은 학습 없이 고정 predictor에서 planning objective 기반으로 token을 뽑는 쪽이라 접근이 다름. 저자도 두 방법을 상호보완적이라 규정함.
+- 동시기 연구 Scope-WM(Li et al. 2026)은 prediction-loss sensitivity를 학습된 selector로 distill하는데, 이 논문은 재학습 없이 매 planning step마다 현재 goal에 대한 gradient를 직접 계산함 — 학습 불필요가 핵심 차이임.
+- novelty는 "gradient saliency로 token을 고른다"는 아이디어 자체보다 selector와 action-conditioning architecture의 호환성을 실증적으로 드러낸 데 있음. gradient 기반 중요도 추정과 objective mismatch 문헌의 조합이라 formulation 자체의 새로움은 제한적임.
+
+**Benchmark results**
+
+- 50% token, AdaLN-Zero predictor 기준 PointMaze/Wall/PushT/MetaWorld 4개 환경 중 3개(Wall +7.3pp, PushT +2.8pp, MetaWorld +6.9pp)에서 Full(256 token) 대비 우위, PointMaze는 -2.0pp로 noise 범위 내임. 평균 +3.8pp.
+- 동일 조건에서 PredAttn(attention 기반)은 평균 12.1pp, Random은 19.2pp COSTGRAD보다 낮음 — 단순 sparsification 효과가 아니라 selector 품질 차이임을 보여줌.
+- Wall에서 token 50% + CEM iteration 절반(15회)으로 Full 대비 약 5.2배 속도(약 17초 vs 88.6초, H100 1장 기준)를 내면서도 성공률은 더 높음(92.0% vs 84.7%).
+- matched concat predictor에서는 COSTGRAD가 Random과 차이 없음(Wall -0.1±4.9pp, PointMaze +2.0±4.5pp)이고 Full보다 오히려 -5.1pp 낮음 — AdaLN에서의 이득이 architecture 의존적임.
+- 25% 미만 token에서는 모든 sparse 방법이 급격히 성능 저하함. 평가는 시뮬레이션 4개 toy 환경, DINOv2 ViT-S/14 인코더 1종, CEM 플래너 1종에 한정되고 real-robot 검증은 없음.
+
+**Top-tier conference 적합성 — 55/100 · 추천 venue: NeurIPS**
+
+token 선택을 planning cost gradient로 직접 유도하고 architecture 호환성까지 다룬 분석이 꼼꼼해 다수 seed·ablation으로 technical conviction은 높음. 다만 4개 toy 시뮬레이션 환경과 단일 encoder·planner에 한정되고 real-robot 검증이 전혀 없어 impact가 제한적임. formulation 자체는 기존 token pruning·saliency 기법을 planning에 적용한 수준이라 oral·highlight보다는 포스터급 contribution으로 보임.
+
+**추천 이유 & 누리랩 연구와의 연결점**
+
+- test-time optimization/inference-time planning 범주에 직접 해당함. VLA나 manipulation policy의 inference 단계에서 CEM 유사 action search를 쓰는 경우 동일한 gradient 기반 token selection을 적용할 수 있음.
+- action-conditioning architecture(AdaLN vs concat)에 따라 sparse selector 효과가 반대로 나타난다는 발견은, test-time 개입이 모델 architecture에 얼마나 안정적인지 점검할 때 참고할 만함.
+- object-centric 3D representation이나 scene graph 기반 world model에 COSTGRAD의 goal-conditioned gradient selection을 결합해, 중요 object·영역만 추적하는 active perception 파이프라인으로 확장할 수 있음.
+
+---
+
+## 오늘의 핵심 연구 트렌드 종합
+
+- **World-action model(WAM)이 조작 정책의 주류 설계로 정착함** — [VPP2](https://arxiv.org/abs/2610.10270), [Juno](https://arxiv.org/abs/2610.09940), [Event-Aligned Visual Action Reasoning](https://arxiv.org/abs/2610.09427), [World Models Dream of Success](https://arxiv.org/abs/2610.09134) 네 편 모두 비디오 기반 world model에 action expert를 붙이는 구조를 씀. 각각 이벤트 단위 학습, test-time adaptation, chunk 경계, failure 데이터 중 한 지점에 집중함. 개별 architecture보다 데이터·커리큘럼·학습 레시피 경쟁으로 넘어가는 모습임.
+- **World model을 "왜 되는지" 정량화하는 empirical science가 등장함** — [RoboJEPA](https://arxiv.org/abs/2610.10515)가 로봇 world model 최초로 compute scaling law를 실측하고, [DSReg](https://arxiv.org/abs/2610.09457)가 reconstruction 없이 개별 world latent를 복원하는 식별성 조건을 증명함. 둘 다 새 architecture가 아니라 기존 틀의 한계를 이론·실측으로 짚은 쪽임.
+- **VLA의 perception-action 전환을 명시적 중간 표현으로 메우려는 시도가 이어짐** — [PAIR](https://arxiv.org/abs/2610.09016)가 bridge token(action latent autoencoder로 학습)으로, [TERRA](https://arxiv.org/abs/2610.09509)가 temporal effect 표현으로 final action loss 하나에만 의존하던 암묵적 학습을 보완함. 둘 다 기존 backbone에 꽂는 plug-in 수준이라 novelty는 제한적이나 효과는 일관됨.
+- **Failure를 버리지 않고 학습 신호로 재활용하는 방향이 강화됨** — [World Models Dream of Success](https://arxiv.org/abs/2610.09134)의 CureWM은 failure insensitivity를 진단해 released checkpoint를 counterfactual replay로 고치고, Juno의 test-time training(TTT)은 실패 rollout을 policy target에서는 빼되 dynamics 학습에는 남김. "성공만 학습한다"는 전제를 깨는 쪽으로 수렴함.
+- **Inference-time 비용을 줄이는 근사가 planning·RL fine-tuning 양쪽에서 나옴** — [COSTGRAD](https://arxiv.org/abs/2610.10274)는 token 50%만으로 CEM planning 성능을 유지하고 iteration까지 줄이면 5.2배 빠르게 만들고, [SQAM](https://arxiv.org/abs/2610.10437)은 adjoint matching의 vector-Jacobian product를 scalar 근사로 제거함. 둘 다 재학습 없이 기존 predictor/policy에 바로 적용 가능하다는 공통점이 있음.
+- **Goal/relabeling 기반 학습의 정보이론적 한계를 진단하는 연구가 나옴** — [Informational Curse of Horizon](https://arxiv.org/abs/2610.09247)이 hindsight relabeling horizon이 길어질수록 action-goal 상호정보량이 줄어든다는 것을 증명함. VLA의 language/goal conditioning 약화 문제에도 같은 진단 틀을 적용할 수 있음.
+
+## 유망 연구 방향 및 프로젝트 제안
+
+**World model compute scaling과 failure recovery 성공률의 관계 측정**
+- research question: world model 기반 counterfactual replay repair(CureWM 방식)의 복구 성공률이 predictor 크기·학습 compute에 따라 scaling law를 따르는가, 아니면 특정 규모 이상에서 수렴하는가.
+- 접근·novelty: [RoboJEPA](https://arxiv.org/abs/2610.10515)의 scaling law 측정 틀(여러 크기 predictor 학습 + held-out extrapolation)과 [World Models Dream of Success](https://arxiv.org/abs/2610.09134)의 failure insensitivity 진단·repair를 결합해, "복구도 scale이 되는가"를 처음으로 측정함.
+- 왜 지금·경쟁 prior works: 오늘 두 논문이 각각 scaling과 failure repair를 다뤘지만 결합한 연구는 없음. FACT(동시 연구)는 architecture를 새로 설계하는 쪽이라 scaling 질문과 독립적임.
+- risk·target venue: scaling 실험 자체가 compute-heavy하고, 복구가 scale 안 한다는 negative 결과가 나올 위험이 있음. 다만 negative 결과도 "world model repair는 구조 문제"라는 주장을 뒷받침하는 기여가 됨. target: CoRL/RSS.
+
+**실패 원인 진단을 위한 world latent 식별성 활용**
+- research question: DSReg처럼 reconstruction 없이 분리한 individual world latent를 실제 조작 실패의 원인 factor 짚기(어느 object·속성이 실패를 유발했는지)에 쓸 수 있는가.
+- 접근·novelty: [DSReg](https://arxiv.org/abs/2610.09457)의 post-hoc rotation을 실로봇 manipulation world model(예: RoboJEPA, CureWM의 backbone)에 붙여, 실패 직전 latent의 어느 component가 비정상인지 probe로 짚어내는 diagnostic 모듈을 설계함.
+- 왜 지금·경쟁 prior works: DSReg는 시뮬레이션(3DShapes, dSprites)에만 검증했고 실로봇 failure diagnosis 적용은 다루지 않음. counterfactual reasoning·causal confusion 문헌과 직접 연결되는 빈 틈임.
+- risk·target venue: DSReg의 식별성 보장이 Gaussian latent·stationary transition 같은 강한 전제에 의존해, 실제 로봇 데이터에서 전제가 깨지면 성능이 일정 수준에서 더 못 오를 위험이 있음(논문도 quarter-orientation dSprites에서 이를 보임). target: CoRL/NeurIPS.
+
+**VLA 중간 표현 붕괴를 test-time failure 신호로 쓰기**
+- research question: PAIR의 bridge token이나 TERRA의 temporal effect latent가 정상 범위를 벗어나는 지점을 policy 실패의 선행 신호로 쓸 수 있는가.
+- 접근·novelty: PAIR는 bridge token이 action expert 진입 전부터 action 정보를 담는다는 분석(R2 0.878)만 보였을 뿐 이를 모니터링에 쓰지 않음. 이 표현의 실시간 이상 탐지 가능성을 검증하는 것이 새로운 지점임.
+- 왜 지금·경쟁 prior works: PAIR·TERRA 모두 2026년 10월 공개된 최신 논문이라 후속 활용 연구가 아직 없음. 기존 failure detection은 대부분 action/value 레벨에서만 봄.
+- risk·target venue: bridge token이 final action loss로만 학습돼 failure와 상관이 약할 가능성이 있음(두 저자 모두 이 분석을 직접 하지 않음). 사전 pilot 실험으로 상관 여부를 먼저 확인해야 함. target: CoRL.
+
+**Event-Aligned Visual Action Reasoning의 self-supervised 확장**
+- research question: Event-Aligned Visual Action Reasoning이 시뮬레이터 contact detector에 의존하는 event/evidence 경계를 raw video에서 self-supervised로 찾을 수 있는가 — 가능하면 실로봇 데이터에 바로 적용 가능해짐.
+- 접근·novelty: [Event-Aligned Visual Action Reasoning](https://arxiv.org/abs/2610.09427)이 직접 명시한 한계(event 경계가 학습 중에만 쓰이고 시뮬레이터 state·LLM annotation에 의존)를 그대로 research gap으로 가져감. motion/contact cue 기반 unsupervised event segmentation을 붙이는 것이 핵심 novelty.
+- 왜 지금·경쟁 prior works: 관련연구로 인용된 Wall-WM(Event-Aligned 논문이 인용한 선행연구)도 event 기반 구조화를 다루나 직접 수치 비교가 본문에서 확인 안 됨 — 두 접근의 차이를 명확히 하는 것 자체도 기여가 됨.
+- risk·target venue: self-supervised segmentation 품질이 낮으면 evidence phase 보존 효과가 사라져 성능 개선이 안 나올 위험이 큼. 학생 연구 주제로 적합. target: CoRL/ICRA.
+
+## 오늘 반드시 읽어야 할 논문
+
+- [DSReg: Provably Recovering Individual World Latents without Reconstruction](https://arxiv.org/abs/2610.09457) — reconstruction 없이 world latent를 component 단위로 복원하는 첫 식별성 결과임. 오늘 스크리닝 최고점(83).
+- [RoboJEPA: Scaling Robotic Latent World Models](https://arxiv.org/abs/2610.10515) — 로봇 world model 최초의 compute scaling law 실측 결과임. venue 적합성도 오늘 최고(82).
+- [An Informational Curse of Horizon in Goal-Conditioned Policy Learning](https://arxiv.org/abs/2610.09247) — hindsight relabeling horizon과 action-goal 상호정보량 감소를 이론으로 연결한 진단 연구.
+- [Q-Learning with Scalar Adjoint Matching](https://arxiv.org/abs/2610.10437) — adjoint matching의 VJP 비용을 scalar 근사로 제거, 실제 양팔 로봇 VLA fine-tuning까지 검증.
+- [Juno: Taming Predictive Latents for Vision-Language-Action Models](https://arxiv.org/abs/2610.09940) — 하나의 JEPA로 pretraining·policy·test-time adaptation을 엮고, 실패 rollout을 dynamics 학습에만 재활용하는 비대칭 TTT 설계.
+- [Video Prediction Policy 2: Predict Better, Act Better](https://arxiv.org/abs/2610.10270) — 이벤트 단위 비디오 예측으로 instruction-trajectory 매핑을 안정화함. real-world ALOHA zero-shot에서 baseline보다 18.5%p 높은 성공률을 보임.
+- [SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation](https://arxiv.org/abs/2610.08941) — 회전을 구면 리샘플링으로 분리해 생성 부담을 줄인 첫 interactive panoramic world model.
+- [World Models Dream of Success: Diagnosing and Repairing Failure Insensitivity in Robot World Models](https://arxiv.org/abs/2610.09134) — 공개된 robot world model이 성공·실패 action을 구분 못 하는 현상을 진단하고 실로봇에서 검증까지 한 repair 레시피.
+
+---
+
+<details>
+<summary><strong>전체 1차 스크리닝 결과 (625편, 점수순)</strong></summary>
+
+<table><thead><tr><th>#</th><th>제목</th><th>점수</th><th>Robotics</th><th>분야</th><th>한 줄 근거</th></tr></thead><tbody>
+<tr><td>1</td><td><a href='https://arxiv.org/abs/2610.10270'>Video Prediction Policy 2: Predict Better, Act Better</a></td><td>70</td><td>10</td><td>VLA</td><td>video foundation model을 조작에 특화된 single-step visual planner로 distill하고 MoT로 inverse dynamics를 학습하는 world-action model(VPP2), real-world ALOHA·LIBERO-Pro/OOD에서 강한 zero-shot 성능으로 VLA·world model 우선주제에 정확히 부합하는 최상위 기여</td></tr>
+<tr><td>2</td><td><a href='https://arxiv.org/abs/2610.09247'>An Informational Curse of Horizon in Goal-Conditioned Policy Learning</a></td><td>70</td><td>8</td><td>RL</td><td>goal relabeling horizon이 길어질수록 action-goal 상호정보량이 줄어 BC 정책이 퇴화하는 informational curse of horizon을 규명하고 combinatorial manipulation task에서 short-horizon policy의 Jacobian을 distillation해 성능을 개선한 연구로 goal-conditioned manipulation·RL/IL에 직접적 기여가 있음</td></tr>
+<tr><td>3</td><td><a href='https://arxiv.org/abs/2610.09134'>World Models Dream of Success: Diagnosing and Repairing Failure Insensitivity in Robot World Models</a></td><td>68</td><td>10</td><td>World Model</td><td>released robot world model이 action 변화에 둔감하고 실패를 성공처럼 예측하는 문제를 진단하고, counterfactual failure로 fine-tuning해 optimism을 80%에서 30~43%로 낮춤, LIBERO와 실제 로봇팔 양쪽에서 검증된 world model·failure detection 결합 우선주제 논문</td></tr>
+<tr><td>4</td><td><a href='https://arxiv.org/abs/2610.09457'>DSReg: Provably Recovering Individual World Latents without Reconstruction</a></td><td>68</td><td>7</td><td>World Model</td><td>LeJEPA의 linear identifiability 위에서 reconstruction 없이도 structural diversity 조건만으로 개별 world latent를 signed permutation까지 복원 가능함을 증명한 첫 fully identifiable JEPA로 object-centric world model 표현학습에 실질적 기여가 큼</td></tr>
+<tr><td>5</td><td><a href='https://arxiv.org/abs/2610.09427'>Event-Aligned Visual Action Reasoning for World Action Models</a></td><td>65</td><td>9</td><td>World Model</td><td>world-action model의 시각적 예측을 interaction event에 맞춰 정렬하고 실행 유효성 헤드 도입, world model·VLA 핵심주제에 정확히 부합하며 DOMINO·RoboTwin에서 성능 향상과 레벨 간 transfer까지 입증</td></tr>
+<tr><td>6</td><td><a href='https://arxiv.org/abs/2610.09940'>Juno: Taming Predictive Latents for Vision-Language-Action Models</a></td><td>65</td><td>9</td><td>VLA</td><td>action-conditioned JEPA 하나로 pretraining·policy 학습·배포 적응을 통합한 Juno, SimplerEnv에서 최강 baseline 대비 성공률 향상 및 test-time adaptation으로 72.7%까지 도달, 배경·높이·물체가 바뀌어도 real robot에서 baseline이 0%로 붕괴하는 조건에서 70% 이상 유지</td></tr>
+<tr><td>7</td><td><a href='https://arxiv.org/abs/2610.09016'>PAIR: Bridging Perception and Action in Vision-Language-Action Models</a></td><td>65</td><td>9</td><td>VLA</td><td>perception과 action 사이 공유 latent representation을 학습해 continuous-action VLA를 개선, LIBERO·CALVIN·실로봇 7개 태스크에서 OpenVLA-OFT 성공률을 51.4%에서 65.0%로 끌어올림.</td></tr>
+<tr><td>8</td><td><a href='https://arxiv.org/abs/2610.10515'>RoboJEPA: Scaling Robotic Latent World Models</a></td><td>65</td><td>9</td><td>World Model</td><td>JEPA 기반 로봇 latent world model의 scaling law를 실측하고 12개 embodiment·실로봇 zero-shot 배포까지 입증한 world model·manipulation 핵심 연구임.</td></tr>
+<tr><td>9</td><td><a href='https://arxiv.org/abs/2610.10288'>TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning</a></td><td>62</td><td>9</td><td>Manipulation</td><td>500시간 규모 시각-촉각 데이터셋으로 로봇 조작 성공률을 22.5%에서 57.5%로 끌어올림, tactile perception·manipulation 우선주제에 직접 부합하는 대규모 실측 데이터 기여</td></tr>
+<tr><td>10</td><td><a href='https://arxiv.org/abs/2610.09509'>TERRA: Learning Transportable Latent Actions through Temporal Effect Representation and Relational Alignment</a></td><td>62</td><td>8</td><td>VLA</td><td>시각 전환을 temporal effect로 압축하고 다른 상태로 transport해도 의미가 유지되는 latent action 학습, VLA pretraining(UniVLA·LAPA 대비) 및 LIBERO에서 검증된 새로운 representation·transport 기법으로 우선주제에 강하게 부합</td></tr>
+<tr><td>11</td><td><a href='https://arxiv.org/abs/2610.10274'>Sparse Planning in Visual World Models via Cost Gradients</a></td><td>62</td><td>8</td><td>World Model</td><td>token 기반 world model에서 planning cost의 gradient로 공간 토큰 중요도를 매겨 goal-conditioned 연속제어 planning을 50% sparsity에서도 성능 유지하며 2.6배 가속한 COSTGRAD로 world model 기반 test-time planning에 새로운 효율화 원리를 제시하고 architecture별 실패 모드까지 분석함</td></tr>
+<tr><td>12</td><td><a href='https://arxiv.org/abs/2610.08941'>SPW-Nav: A Streaming Panoramic World Model for Language-Guided Navigation</a></td><td>62</td><td>7</td><td>World Model</td><td>언어 지시 기반 스트리밍 파노라마 world model로 네비게이션 지원, world model·VLN 우선주제에 부합하고 구면 회전 분리 등 formulation 신규성 있음</td></tr>
+<tr><td>13</td><td><a href='https://arxiv.org/abs/2610.09763'>Beyond Policy Support: Interaction Constrained Offline Reinforcement Learning for Autonomous Driving</a></td><td>62</td><td>7</td><td>RL</td><td>offline RL에서 ego 궤적이 주변 agent와의 joint 분포에서 벗어나는 interaction distribution shift를 정의하고 contrastive density-ratio로 보정하는 ICDP를 제안해 nuPlan·실제 트럭 주행에서 상호작용 critical 시나리오 성능을 개선한 연구로 자율주행 offline RL에 새로운 problem formulation을 제시함</td></tr>
+<tr><td>14</td><td><a href='https://arxiv.org/abs/2610.10437'>Q-Learning with Scalar Adjoint Matching</a></td><td>62</td><td>7</td><td>RL</td><td>flow policy의 value gradient 전파를 scalar adjoint로 근사해 비용을 줄이고 real bimanual robot VLA fine-tuning까지 검증, OGBench 최고 난이도 도메인에서 큰 성능 향상을 보여 test-time optimization·RL 우선주제와 직결됨</td></tr>
+<tr><td>15</td><td><a href='https://arxiv.org/abs/2610.10498'>EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</a></td><td>60</td><td>9</td><td>Manipulation</td><td>가설기반 fast-slow 아키텍처로 실로봇 조작 성능을 자가진화시켜 RoboCasa365·LIBERO-Pro·실로봇에서 큰 향상(실로봇 71.3% 성공률)을 보여 failure-driven learning·test-time optimization·manipulation 우선주제에 정확히 부합함.</td></tr>
+<tr><td>16</td><td><a href='https://arxiv.org/abs/2610.09514'>STRIKE: Learning Visual State Transitions for Physical World Modeling</a></td><td>60</td><td>8</td><td>World Model</td><td>dense video 생성과 분리해 visual state transition을 먼저 학습하고 재귀적으로 적용하는 world model, manipulation-video(RoboTwin2.0) 포함 물리 일관성 입증으로 world model 우선주제에 강하게 부합</td></tr>
+<tr><td>17</td><td><a href='https://arxiv.org/abs/2610.08995'>PhysEvo: Astra Can Act, Let It</a></td><td>58</td><td>9</td><td>Manipulation</td><td>고정된 frozen model 주변에서 meta-agent가 스킬·도구를 자가진단·수정하는 physical recursive self-improvement, RoboDojo 42 task와 real AgileX PiPER 5 task에서 baseline 대비 큰 성공률 향상으로 test-time optimization 우선주제에 부합</td></tr>
+<tr><td>18</td><td><a href='https://arxiv.org/abs/2610.10528'>Long-WAM: Scaling the Context of World-Action Models</a></td><td>58</td><td>9</td><td>World Model</td><td>autoregressive video 사전학습이 world-action model의 긴 context 활용을 결정짓는다는 핵심 발견과 함께 streaming·비동기 실행으로 RTX5090 등 하드웨어에 배포, 동적 cup stacking에서 pi0.5와 FastWAM이 0/20인 과제를 95% 성공</td></tr>
+<tr><td>19</td><td><a href='https://arxiv.org/abs/2610.09518'>ActiveLang: Active Open-Vocabulary 3D Mapping with Semantic-Uncertainty-Guided Exploration</a></td><td>58</td><td>8</td><td>Embodied AI</td><td>dual-Gaussian 표현에서 semantic uncertainty로 탐사 경로를 정하는 active open-vocab 3D 매핑, active perception·scene mapping 우선주제에 직접 부합하고 로봇 시스템으로 평가</td></tr>
+<tr><td>20</td><td><a href='https://arxiv.org/abs/2610.10538'>Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos</a></td><td>58</td><td>8</td><td>Embodied AI</td><td>에고센트릭 비디오에서 물체 위치·이력·맥락을 함께 유지하는 persistent 3D object memory(Ledger), robot memory 우선주제에 직접 부합하며 여러 벤치마크에서 큰 정확도 향상</td></tr>
+<tr><td>21</td><td><a href='https://arxiv.org/abs/2610.08802'>SAFE: Unified Slip and Fracture Detection with Low-Cost Acoustic Sensing in Robotic Grasping</a></td><td>58</td><td>8</td><td>Manipulation</td><td>PVDF 음향센서 두 개와 motor proprioception만으로 slip·fracture를 통합 분류하는 저가 센싱, 46회 실제 로봇 그라스핑 trial에서 91.3% 성공률로 failure-aware grasp 우선주제에 부합</td></tr>
+<tr><td>22</td><td><a href='https://arxiv.org/abs/2610.08978'>S2Tok: Streaming 3D Gaussian Reconstruction with Persistent Spatial Tokens</a></td><td>58</td><td>6</td><td>3D Vision</td><td>스트리밍 3D Gaussian 재구성에 persistent spatial token과 admission module 도입, object-centric 3D/4D representation 우선주제에 부합하는 새 online reconstruction formulation</td></tr>
+<tr><td>23</td><td><a href='https://arxiv.org/abs/2610.10087'>Multi-Agent Coordination via Support-Preserving Distillation</a></td><td>56</td><td>6</td><td>Manipulation</td><td>offline multi-agent RL에서 flow 기반 teacher가 노이즈-모드를 잘못 매칭해 생기는 모드 붕괴를 optimal transport로 사전 교정하는 MoSDOT을 제안해 multi-robot coordination 벤치마크에서 라우팅 일관성을 개선한 연구로 생성적 정책 distillation에 새로운 관찰과 해법을 제시함</td></tr>
+<tr><td>24</td><td><a href='https://arxiv.org/abs/2610.09144'>DIVA: Dual-Space Intent-Aware Visual Attenuation for Vision-Language-Action Policies</a></td><td>55</td><td>9</td><td>VLA</td><td>task intent 기반으로 visual token을 anchor-then-attenuate하는 VLA 모듈로 LIBERO 성공률 향상과 실환경 perturbation 강건성을 보임.</td></tr>
+<tr><td>25</td><td><a href='https://arxiv.org/abs/2610.09455'>RLHND: Video Foundation Models as Physically Grounded Hand Trackers for Robot Learning</a></td><td>55</td><td>8</td><td>Manipulation</td><td>비디오 foundation model을 손 추적기로 전용해 pose와 접촉·힘을 동시 예측, human video로 robot manipulation 학습에 직접 활용(실로봇 실험 포함)되는 강한 fit</td></tr>
+<tr><td>26</td><td><a href='https://arxiv.org/abs/2610.09130'>FlashNeRD: Performance-First Contact-Rich Neural Robot Dynamics</a></td><td>55</td><td>8</td><td>World Model</td><td>collision detection은 analytical로 유지하고 contact-rich dynamics만 학습해 NeRD 대비 55배 가속, DIAL-MPC 결합으로 locomotion·manipulation policy 학습 속도까지 향상시킨 world model 기여</td></tr>
+<tr><td>27</td><td><a href='https://arxiv.org/abs/2610.09170'>Beyond Reconstruction: What Matters in Action Tokenization for Robot Policies?</a></td><td>55</td><td>8</td><td>VLA</td><td>action tokenizer가 reconstruction만으로는 충분치 않고 downstream predictability·robustness가 중요함을 보이고 이를 반영한 ProAct 제안, LIBERO·RoboTwin과 real-world VLA에서 각각 11.3%p·36.7%p 향상</td></tr>
+<tr><td>28</td><td><a href='https://arxiv.org/abs/2610.09228'>Co-Evolving Robot Orchestrators and Policies through Deployment</a></td><td>55</td><td>8</td><td>VLA</td><td>VLM orchestrator와 VLA policy가 배포 중 서로의 실패 데이터로 co-evolve하는 Robo-COP 제안, 시뮬레이션 10 task와 real-world 3 task 모두에서 frozen policy 대비 큰 성공률 향상으로 test-time optimization 우선주제에 부합</td></tr>
+<tr><td>29</td><td><a href='https://arxiv.org/abs/2610.09496'>Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models</a></td><td>55</td><td>8</td><td>VLA</td><td>VLA가 미실현 state를 실현된 것처럼 행동하는 state hallucination을 sparse autoencoder로 해석하고 관련 feature만 선택적으로 unlearn하는 SOUL, sim·real 모두에서 실패 감소와 기존 능력 유지를 동시에 달성</td></tr>
+<tr><td>30</td><td><a href='https://arxiv.org/abs/2610.09734'>ΔWAM: Distilling Action Tangent Fields into World Action Models</a></td><td>55</td><td>8</td><td>World Model</td><td>world action model의 supervision을 action이 미래를 바꾸는 방향에 집중시키는 local Taylor expansion 기반 Action Tangent Field 제안, 대규모 embodied pretraining 없이도 LIBERO-Plus·RoboTwin 분포 변화에서 pretrained policy보다 강건함</td></tr>
+<tr><td>31</td><td><a href='https://arxiv.org/abs/2610.09943'>Many Ways to Succeed: Diversity-Driven RL Fine-Tuning for VLA Generalization</a></td><td>55</td><td>8</td><td>VLA</td><td>RL fine-tuning이 성공 경로의 다양성을 넓힌다는 분석에서 출발해 success-conditioned diversity를 명시적 보상으로 쓰는 DRIVE, real dual-arm AgileX에서 OOD 성공률을 64.1%에서 73.3%로 향상</td></tr>
+<tr><td>32</td><td><a href='https://arxiv.org/abs/2610.09195'>StableGrasp: Reconstructing Physically Stable Human Hand Grasps from Single Images</a></td><td>55</td><td>7</td><td>Manipulation</td><td>단일 이미지에서 물리적으로 안정적인 human grasp을 differentiable simulation으로 복원, manipulation 우선주제에 직접 부합하고 사람 그랩 데이터를 로봇에 활용 가능한 formulation</td></tr>
+<tr><td>33</td><td><a href='https://arxiv.org/abs/2610.09418'>Spatial Latent Reasoning for Embodied Reference Understanding</a></td><td>55</td><td>7</td><td>Embodied AI</td><td>포인팅 제스처 기반 embodied reference understanding에 순서화된 spatial-visual latent state 도입, embodied spatial reasoning 우선주제에 직접 부합하고 여러 VLM 백본에서 큰 개선 확인</td></tr>
+<tr><td>34</td><td><a href='https://arxiv.org/abs/2610.08989'>LASER: Latent Space Adjoint Matching for Support-Constrained Entropy-Regularized Offline RL</a></td><td>55</td><td>7</td><td>RL</td><td>flow policy의 latent space에서 entropy 정규화된 adjoint matching으로 offline RL을 수행하는 LASER, OOD action 억제라는 offline RL 핵심 문제에 새 paradigm을 적용하고 OGBench 40개 과제에서 SOTA</td></tr>
+<tr><td>35</td><td><a href='https://arxiv.org/abs/2610.08863'>Trajectory Planning without Trajectory Data: A Manifold-Guided Approach</a></td><td>55</td><td>7</td><td>Manipulation</td><td>trajectory 데이터 없이 state-space manifold만으로 planning하는 Ariadne 제안, dual-arm 고차원 planning까지 trajectory-supervised 방법과 경쟁력 있는 새로운 problem formulation (NeurIPS 2026)</td></tr>
+<tr><td>36</td><td><a href='https://arxiv.org/abs/2610.09508'>Safe on Average, Unsafe in the Tail: When Is the Episodic-Cost Tail Controllable?</a></td><td>55</td><td>5</td><td>RL</td><td>평균비용만으로는 가려지는 episodic-cost tail 위험을 CVaR로 정의해 navigation·locomotion task에서 tail-safe 여부를 평가한 연구로 safe RL에 실질적 문제의식을 던지나 새 알고리즘 제안보다 진단 중심임</td></tr>
+<tr><td>37</td><td><a href='https://arxiv.org/abs/2610.09108'>Convex-Concave Reinforcement Learning</a></td><td>55</td><td>4</td><td>RL</td><td>policy gradient를 log-density-ratio 좌표의 DC program으로 재구성해 NPG·TRPO·PPO·AWR을 통합하는 새로운 정책최적화 틀로 RL 이론에 실질적 기여가 있으나 로봇 실험은 없음</td></tr>
+<tr><td>38</td><td><a href='https://arxiv.org/abs/2610.10013'>Scalable Patch-Level Self-Supervised Learning</a></td><td>55</td><td>3</td><td>CV</td><td>multi-view 정보를 patch 단위로 정렬하는 정보이론적 SSL(JEM)을 7B까지 확장해 DINOv3를 능가, 로보틱스 특화는 아니지만 향후 VLA perception backbone에 쓰일 수 있는 견실한 표현학습 기여</td></tr>
+<tr><td>39</td><td><a href='https://arxiv.org/abs/2610.09221'>Consistent Distribution Matching for Data-Free Diffusion Distillation</a></td><td>55</td><td>2</td><td>Video</td><td>teacher-student 하나의 네트워크로 분포매칭을 학습하는 데이터 없는 diffusion distillation으로 1-step 생성에서 SOTA FID를 보여 world model 등 생성모델 가속에 참고될 수 있음</td></tr>
+<tr><td>40</td><td><a href='https://arxiv.org/abs/2610.09254'>RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer</a></td><td>52</td><td>8</td><td>Video</td><td>simulated depth·robot mask를 조건으로 photorealistic robot video를 생성해 sim-to-real visual gap을 메우는 RoboRender, pick-and-place 등 실제 과제에서 raw sim 대비 7.1배 성공률 향상</td></tr>
+<tr><td>41</td><td><a href='https://arxiv.org/abs/2610.09369'>Immiscible Diffusion Policy: Preserving Multimodal Robot Actions through Label-Free Noise Assignment</a></td><td>52</td><td>8</td><td>Manipulation</td><td>action-noise pairing이 diffusion policy의 multimodal collapse를 유발한다는 분석과 label-free noise assignment로 해결하는 Immiscible Diffusion Policy, 5개 sim과 2개 real humanoid task에서 modality 보존 크게 향상</td></tr>
+<tr><td>42</td><td><a href='https://arxiv.org/abs/2610.10462'>FoldBack: Self-Correcting Masked Generative Policy for Long-Horizon Garment Folding</a></td><td>52</td><td>8</td><td>Manipulation</td><td>grasp 실패를 pick-and-place 이벤트와 맞춰 감지·rollback·재시도하는 self-correcting masked generative policy FoldBack, 실제 옷 33개 대상 장기 수평 접기에서 baseline 대비 성공률 거의 두 배</td></tr>
+<tr><td>43</td><td><a href='https://arxiv.org/abs/2610.09305'>Kuration SDK: Addressing the Virtual2Real Gap via Data Curation</a></td><td>52</td><td>6</td><td>World Model</td><td>FVD·LPIPS 같은 지표가 action-conditioned world model의 실제 playability와 괴리되는 virtual2real gap을 밝히고 오픈소스 data curation SDK로 원인을 진단한 연구로 로봇 world model 평가에 직접 참고할 만함</td></tr>
+<tr><td>44</td><td><a href='https://arxiv.org/abs/2610.10273'>A Closed-Loop Non-Asymptotic Convergence Analysis of PPO with Learned Critics and Clipping</a></td><td>52</td><td>4</td><td>RL</td><td>PPO-Clip을 actor-critic 폐루프로 보고 critic 추정오차·clipping·배치재사용의 비접근적 결합 오차 한계를 증명한 이론 연구로 로봇학습에 널리 쓰이는 PPO의 튜닝 이해에 기여함</td></tr>
+<tr><td>45</td><td><a href='https://arxiv.org/abs/2610.09411'>Shared Geometry As A Rosetta Stone: Cross-Modal Alignment Without Paired Data</a></td><td>52</td><td>2</td><td>Multimodal</td><td>페어 데이터 없이 Wasserstein Procrustes만으로 서로 다른 모달 임베딩을 정렬할 수 있음을 보여 Platonic Representation Hypothesis를 뒷받침한 연구로 representation learning에 일반적 가치가 있으나 로봇 적용은 없음</td></tr>
+<tr><td>46</td><td><a href='https://arxiv.org/abs/2610.09759'>Unrolled Flow Models for Reasoning</a></td><td>52</td><td>2</td><td>LG</td><td>flow model이 자신의 latent rollout을 통해 단계별로 추론을 쌓도록 학습시켜 그래프 도달성·Sudoku·Maze에서 integration step 증가가 실제로 성능을 높이게 만든 연구로 flow 기반 추론·test-time 계산에 새로운 학습 원리를 제시함</td></tr>
+<tr><td>47</td><td><a href='https://arxiv.org/abs/2610.08970'>HULK: Learning Whole-Body Forceful Loco-Manipulation for Humanoids</a></td><td>50</td><td>8</td><td>Manipulation</td><td>MPC로 guide한 teacher를 distill해 humanoid의 forceful whole-body loco-manipulation을 학습, capture-point barrier function으로 10kg 하중에서도 균형 유지해 real G1 검증</td></tr>
+<tr><td>48</td><td><a href='https://arxiv.org/abs/2610.09117'>Workhorse: Learning Robust Whole-Body Humanoid Loco-Manipulation from Human Data</a></td><td>50</td><td>8</td><td>Manipulation</td><td>로봇 없이 수집한 human demonstration으로 visual planner와 whole-body tracker를 분리 학습, real G1에서 박스 분류·캐치·등반까지 수행하고 교란 복구도 시연</td></tr>
+<tr><td>49</td><td><a href='https://arxiv.org/abs/2610.09178'>CAP: Codebook-Aligned Prediction for Tokenized Robot Policies</a></td><td>50</td><td>8</td><td>VLA</td><td>action tokenizer의 codebook 구조를 policy의 class prototype으로 재사용하는 CAP 제안, 4개 quantizer·3개 sim benchmark·2개 real robot task에서 token classification head 대비 일관된 성공률 향상</td></tr>
+<tr><td>50</td><td><a href='https://arxiv.org/abs/2610.09309'>Predicted Futures Are Not Enough: Learning Executable Goals for Robot Manipulation</a></td><td>50</td><td>8</td><td>World Model</td><td>3D trace world model의 예측에서 실행 가능한 terminal goal(SE(3))을 명시적으로 추출하는 Entity-Level Goal Readout, real Franka에서 분포 외 목표에도 closed-loop 성공률 유지</td></tr>
+<tr><td>51</td><td><a href='https://arxiv.org/abs/2610.10079'>RealtimeWAM: How Fast Can I Run My World Action Model?</a></td><td>50</td><td>8</td><td>World Model</td><td>observation 처리와 예측을 중첩 실행하고 안정적 영역의 feature·residual을 재사용해 world action model 추론을 가속하는 RealtimeWAM, RTX 4090에서 최대 10.67배 속도 향상과 real-world 성공률 개선을 동시 달성</td></tr>
+<tr><td>52</td><td><a href='https://arxiv.org/abs/2610.10388'>RoboQuest: Generalist Physical Agents that Search, Inspect and Test</a></td><td>50</td><td>8</td><td>Embodied AI</td><td>task 수행 전 상호작용으로 필요한 정보를 능동 탐색해야 하는 RoboQuest 벤치마크, 최고 agent도 23% 성공에 그치고 조기 탐색 중단이 주요 실패 원인임을 규명해 active perception 공백을 드러냄</td></tr>
+<tr><td>53</td><td><a href='https://arxiv.org/abs/2610.10453'>RFPO: Rectified Flow Policy Optimization for Embodied Control</a></td><td>50</td><td>8</td><td>RL</td><td>few-step flow policy 실행 시 발생하는 discretization gap을 reward-aware reflow로 보정하는 RFPO, Go2·Spot·H1·G1 등 4개 플랫폼에서 64-step 대비 2.4% 이내 성능으로 one-step 실행과 real robot 안정성 확보</td></tr>
+<tr><td>54</td><td><a href='https://arxiv.org/abs/2610.10526'>Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models</a></td><td>50</td><td>8</td><td>VLA</td><td>VLA가 instruction 표현 하나 바꾸는 것만으로 성공률이 수십%p 흔들린다는 문제를 정량화하고, 재학습 없이 LLM이 배운 rephrasing 규칙으로 완화, 12개 held-out task에서 16~27% 상대적 향상</td></tr>
+<tr><td>55</td><td><a href='https://arxiv.org/abs/2610.08960'>Directed Temporal Representations for Offline Visual Control</a></td><td>50</td><td>7</td><td>World Model</td><td>offline visual control을 위해 temporal reachability에 맞춘 directed quasimetric representation을 world model 위에 학습, world model 기반 goal-conditioned control이라는 우선주제에 부합하는 견실한 기여</td></tr>
+<tr><td>56</td><td><a href='https://arxiv.org/abs/2610.09785'>UltraWorld: Learning Interactive Ultrasound World Models from Untracked Clinical Videos with Acoustic Sampling Map</a></td><td>50</td><td>6</td><td>World Model</td><td>임상 초음파 비디오로부터 action-observation을 self-distill해 probe 동작을 따르는 interactive world model, world model 우선주제에 부합하고 closed-loop 로봇 스캐닝 평가까지 수행</td></tr>
+<tr><td>57</td><td><a href='https://arxiv.org/abs/2610.10302'>Continual Graph Multi-Agent Reinforcement Learning</a></td><td>50</td><td>5</td><td>RL</td><td>그래프로 표현된 과제 구조를 frozen encoder로 보존해 continual multi-agent RL의 망각을 줄이는 FROG와 새 benchmark GRAFO를 제시한 연구로 formation control 등 multi-robot 과제에 직접 적용 가능함</td></tr>
+<tr><td>58</td><td><a href='https://arxiv.org/abs/2610.10014'>A Drosophila Whole-Connectome Network Can Learn Human-Designed Cognitive Tasks</a></td><td>50</td><td>2</td><td>LG</td><td>초파리 전체 connectome의 고정 배선을 그대로 artificial network의 재귀 구조로 써서 산술·관계언어 과제를 학습시켜 rewiring 대조군보다 우수함을 보인 생물학적 wiring의 재사용 가능성을 입증한 흥미로운 연구나 로봇 적용은 없음</td></tr>
+<tr><td>59</td><td><a href='https://arxiv.org/abs/2610.08862'>CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks</a></td><td>48</td><td>8</td><td>Embodied AI</td><td>진행 중인 household task에 새 instruction을 구조보존적으로 통합하는 continual instruction reconciliation 프레임워크, Unitree G1 실제 실험에서 baseline 대비 30%p 향상</td></tr>
+<tr><td>60</td><td><a href='https://arxiv.org/abs/2610.10409'>RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments</a></td><td>48</td><td>8</td><td>Embodied AI</td><td>manipulation부터 driving까지 84개 과제·다양한 embodiment로 물리세계 agent 능력을 측정하는 RobotWorld, perception·control 서브스킬은 구성되나 상태 추적·복구 실패로 조합이 깨진다는 실패 분석 제공</td></tr>
+<tr><td>61</td><td><a href='https://arxiv.org/abs/2610.10465'>LLA-MPPI: Rapidly Adaptive Whole-body Control of Legged Robots with GPU-Accelerated Parallel Simulations</a></td><td>48</td><td>8</td><td>RL</td><td>GPU 병렬 contact 시뮬레이터 bank 중 최근 모션을 가장 잘 설명하는 것을 선택해 whole-body MPPI를 적용하는 LLA-MPPI, offline training 없이 real Go2에서 하중 추가·다리 고장·물체 push 중에도 적응</td></tr>
+<tr><td>62</td><td><a href='https://arxiv.org/abs/2610.09335'>SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models</a></td><td>48</td><td>8</td><td>World Model</td><td>UAV 객체탐색에 공간적 value를 결합한 world model 기반 imagination 플래닝으로 world model·navigation 우선주제에 직접 부합하며 성공률 23.8%로 SOTA를 달성함.</td></tr>
+<tr><td>63</td><td><a href='https://arxiv.org/abs/2610.10181'>Argos: Adapt Rich Geometric Priors for Generalizable Online Scene-Change-Detection</a></td><td>48</td><td>7</td><td>Embodied AI</td><td>geometric foundation model의 implicit 3D 지식을 적응시켜 scene change detection과 3D 재구성을 동시에 수행하는 Argos-SLAM, scene mapping·active perception 우선주제에 부합하는 실시간 로봇 시스템</td></tr>
+<tr><td>64</td><td><a href='https://arxiv.org/abs/2610.09358'>COOL: Curiosity-Driven Object Ownership Learning for Personalized Robotic Assistance</a></td><td>48</td><td>7</td><td>Embodied AI</td><td>장기 행동 관찰로부터 물건 소유권을 추론하고 curiosity 기반으로 메모리를 갱신하는 COOL, CoRL 2026 accepted로 personalized robot assistance라는 새 problem formulation 제시</td></tr>
+<tr><td>65</td><td><a href='https://arxiv.org/abs/2610.09454'>RobotAPO: Adversarial Physics Preference Optimization for Robotic Manipulation Video Generation</a></td><td>48</td><td>7</td><td>Video</td><td>물리 법칙 위반을 adversarial preference로 벌하는 RobotAPO로 manipulation video 생성의 물리 일관성을 높이고, real robot replay에서 task 성공률 37.4% 상대적 향상</td></tr>
+<tr><td>66</td><td><a href='https://arxiv.org/abs/2610.09533'>Contact-Aware Imitation Learning Through Contact Factorization</a></td><td>48</td><td>7</td><td>Manipulation</td><td>접촉력을 task 의도와 환경 의존적 contact factor로 분리하는 FACE, 표면·형상이 바뀌어도 policy 재학습 없이 real robot에서 일반화 성능 검증</td></tr>
+<tr><td>67</td><td><a href='https://arxiv.org/abs/2610.09573'>Point It, Strike It: Direction-Conditioned Dynamic Manipulation of Deformable Linear Objects</a></td><td>48</td><td>7</td><td>Manipulation</td><td>rope tip의 도착 방향까지 지정하는 direction-conditioned dynamic manipulation 문제를 제기하고, 2만배 가속한 DLO 시뮬레이터와 warm-start 기반 TRACE/RECAP로 real robot에서 방향 포함 목표 성공률을 50%에서 79%로 향상</td></tr>
+<tr><td>68</td><td><a href='https://arxiv.org/abs/2610.10178'>Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding</a></td><td>48</td><td>7</td><td>VLA</td><td>activation/attribution patching으로 pi0.5와 GR00T N1.7의 language grounding을 분석, 두 모델이 directional language와 빈 instruction에만 민감하다는 상반된 내부 메커니즘을 규명</td></tr>
+<tr><td>69</td><td><a href='https://arxiv.org/abs/2610.10479'>Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies</a></td><td>48</td><td>7</td><td>3D Vision</td><td>workspace 비디오로 장면을 재구성하고 같은 agent가 policy까지 개발해 real robot에 연결하는 Agentic RSR, 18개 재구성 장면에서 real 성공률이 sim 성공률의 80%를 유지</td></tr>
+<tr><td>70</td><td><a href='https://arxiv.org/abs/2610.10534'>RoboPrompt: Intuitive Robot Policy Steering with Sparse Human Input</a></td><td>48</td><td>7</td><td>Manipulation</td><td>그려진 궤적·점·방향 같은 sparse human input을 noise space에서 조정해 기존 policy 구조를 바꾸지 않고 steer하는 RoboPrompt, DAgger 반복 후 pi0.5 평균 성공률 15.5%p 향상과 개입 횟수 감소</td></tr>
+<tr><td>71</td><td><a href='https://arxiv.org/abs/2610.09535'>WAPR: A Foundation Model for Wide-Angle Refinement in Unseen Object Pose Estimation</a></td><td>48</td><td>6</td><td>Manipulation</td><td>넓은 각도 오차까지 보정하는 unseen object pose refinement foundation model, manipulation을 위한 6D pose estimation 벤치마크(BOP)에서 SOTA</td></tr>
+<tr><td>72</td><td><a href='https://arxiv.org/abs/2610.10322'>From Digital Human Interactions to Physics-Based Humanoid Skills: Physics-Grounded Post-Training of Interaction Generators</a></td><td>48</td><td>6</td><td>RL</td><td>물리 시뮬레이션 롤아웃에서 얻은 preference로 humanoid interaction generator와 tracking policy를 공동 조정, humanoid 로봇 스킬의 물리적 타당성을 DPO로 정렬하는 RL/IL 관련 기여</td></tr>
+<tr><td>73</td><td><a href='https://arxiv.org/abs/2610.10390'>Explicit Geometric Chain-of-Thought for Vision-Language-Action in Autonomous Driving</a></td><td>48</td><td>6</td><td>VLA</td><td>2D에서 먼저 그라운딩하고 3D foundation model의 localized geometry를 끌어와 궤적을 생성하는 geometric chain-of-thought VLA(GeoCoTDrive), 자율주행 planning에 VLA 우선주제를 직접 적용하고 안전성 지표 개선</td></tr>
+<tr><td>74</td><td><a href='https://arxiv.org/abs/2610.09438'>Controllable Crowd Generation through World-Model Planning</a></td><td>48</td><td>5</td><td>World Model</td><td>world model 기반 planning을 군중 시뮬레이션에 적용해 런타임 제어 가능하게 함, 로봇 네비게이션 응용 언급되나 핵심은 보행자 시뮬레이션</td></tr>
+<tr><td>75</td><td><a href='https://arxiv.org/abs/2610.09517'>It Is Not Seeing the Hazard: A Frozen Vision-Language Safety Score Measures Its Caption Bank</a></td><td>48</td><td>5</td><td>RL</td><td>frozen VLM 기반 안전 reward가 실제로는 위험을 보는 게 아니라 caption bank와의 유사도만 측정한다는 것을 통제 실험으로 폭로, VLM reward를 쓰는 안전·RL 연구에 중요한 경고</td></tr>
+<tr><td>76</td><td><a href='https://arxiv.org/abs/2610.09720'>DynStream: Online Streaming 4D Gaussian Reconstruction of Dynamic Worlds from Unposed Video</a></td><td>48</td><td>4</td><td>3D Vision</td><td>unposed 비디오에서 온라인으로 4D Gaussian을 점진 융합하는 스트리밍 재구성, object-centric 4D representation 우선주제에 해당하는 견실한 3D vision 기여</td></tr>
+<tr><td>77</td><td><a href='https://arxiv.org/abs/2610.09124'>Spatial Induction Heads: In-Context Learning of Multidimensional Cellular Automata</a></td><td>48</td><td>3</td><td>World Model</td><td>다차원 cellular automata에서 spatial routing을 수행하는 induction head 메커니즘을 규명한 이론 연구로 공간 표현 설계에 시사점이 있으나 직접적인 로봇 적용은 없음</td></tr>
+<tr><td>78</td><td><a href='https://arxiv.org/abs/2610.09194'>Patient, Place, Prior (P$^3$): What Counts as Personalization in Medical World Models?</a></td><td>48</td><td>3</td><td>World Model</td><td>환자별 world model 개인화가 실제 근거가 있는지 감사하는 P3 틀과 Cancer JEPA로 world model claim 검증 방법론에 참고할 만함</td></tr>
+<tr><td>79</td><td><a href='https://arxiv.org/abs/2610.10210'>OrthoGen: A Generative Orthogonal Learner for Time-Varying Treatments</a></td><td>48</td><td>2</td><td>RL</td><td>시간가변 처치에서 조건부 분포적 potential outcome을 생성모델로 재귀 추정하는 Neyman-orthogonal 학습기 OrthoGen으로 counterfactual reasoning 방법론에 기여하나 의료 도메인이며 robotics 적용은 없음</td></tr>
+<tr><td>80</td><td><a href='https://arxiv.org/abs/2610.09709'>Pretraining Shapes Spectral Structure: Architecture- and Strategy-Conditional Prediction of OOD Robustness in Foundation Models</a></td><td>46</td><td>2</td><td>Representation Learning</td><td>사전학습 가중치의 스펙트럴 농도만으로 target 데이터 없이 OOD robustness 방향을 예측할 수 있음을 116개 모델·7개 모달리티로 보인 진단 도구로 foundation model 선택 일반에 유용하나 robotics 특화는 아님</td></tr>
+<tr><td>81</td><td><a href='https://arxiv.org/abs/2610.10213'>Edge Accuracy Is Not Enough: Why Dynamics-Learned Structure Fails to Transfer to Inverse Problems</a></td><td>46</td><td>2</td><td>LG</td><td>forward 시뮬레이션에서 학습한 관계 구조가 edge accuracy 조건을 만족해도 inverse problem 전이에는 체계적으로 실패함을 가스누출·음향 역위치추정에서 보인 비판적 연구로 구조 전이 가정에 경고를 주며 transferability 검정 도구도 제시함</td></tr>
+<tr><td>82</td><td><a href='https://arxiv.org/abs/2610.10299'>Shared Gaussianization: What Gaussian Regularizers Certify About Contrastive Learning, and What They Miss</a></td><td>46</td><td>2</td><td>Representation Learning</td><td>LeJEPA의 SIGReg가 InfoNCE 최적해에서만 정확히 소실하며 그 근방에서 nuisance 제거를 보장하는 조건을 증명한 이론 연구로 world model 학습에 쓰이는 분포매칭 정규화 설계에 참고할 만함</td></tr>
+<tr><td>83</td><td><a href='https://arxiv.org/abs/2610.09866'>MUNITE: Unified Multimodal Latent Inference for Any-to-Any Multimodal Generation</a></td><td>46</td><td>1</td><td>Multimodal</td><td>인코딩과 생성을 관측 정도가 다른 동일 추론문제로 보는 conditional flow 기반 any-to-any 멀티모달 생성 MUNITE로 개념은 새롭지만 toy 규모 벤치마크에서만 검증됨</td></tr>
+<tr><td>84</td><td><a href='https://arxiv.org/abs/2610.10283'>Temporal Visuo-Tactile Learning for Dexterous Grasp Stability</a></td><td>45</td><td>8</td><td>Manipulation</td><td>200개 물체·1만회 grasp으로 고해상도 동적 tactile이 grasp stability 예측에 미치는 영향을 체계적으로 분석, 학습한 stability gate를 real robot regrasping에 적용해 성공률 10.5%p 향상</td></tr>
+<tr><td>85</td><td><a href='https://arxiv.org/abs/2610.08870'>From Wearable Interfaces to Dexterous Policies: Contact Shifts and Tactile Representations</a></td><td>45</td><td>7</td><td>Manipulation</td><td>wearable exoskeleton interface의 기하 구조가 기록되는 tactile·contact 패턴과 policy 성능에 영향을 준다는 실증 분석, 데이터 수집 하드웨어 자체를 학습 파이프라인의 일부로 재정의</td></tr>
+<tr><td>86</td><td><a href='https://arxiv.org/abs/2610.09055'>MimicX: Policy-in-the-Loop Supervision Refinement for Video-Driven Humanoid Motion Tracking</a></td><td>45</td><td>7</td><td>Embodied AI</td><td>비디오 기반 humanoid motion tracking에서 실행 실패를 분석해 supervision과 curriculum을 policy-in-the-loop로 개선, tracking error 25.7% 감소·execution horizon 255.6% 증가</td></tr>
+<tr><td>87</td><td><a href='https://arxiv.org/abs/2610.09291'>Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction</a></td><td>45</td><td>7</td><td>Manipulation</td><td>scene interaction과 dexterous manipulation을 하나의 policy로 통합하는 whole-body control, task·phase별 observation mask와 cross-task curriculum으로 장기 과제 수행</td></tr>
+<tr><td>88</td><td><a href='https://arxiv.org/abs/2610.09451'>TempoBridge: Language-Guided Tempo Control for Vision-Language-Action Policies</a></td><td>45</td><td>7</td><td>VLA</td><td>frozen VLA representation에서 tempo 신호를 추출해 언어로 실행 속도를 조절하는 TempoBridge, 추가 demonstration·fine-tuning 없이 LIBERO tempo 성공률을 52.6%에서 89.7%로 향상</td></tr>
+<tr><td>89</td><td><a href='https://arxiv.org/abs/2610.09479'>Precise SE(3) End-Effector Tracking in Whole-Body Humanoid Control</a></td><td>45</td><td>7</td><td>Manipulation</td><td>geometric admittance control과 residual RL을 결합해 humanoid whole-body 상황에서 end-effector pose를 정밀 추적하는 ResGAC, real G1 peg-in-hole에서 SONIC 대비 90% vs 50% 성공률</td></tr>
+<tr><td>90</td><td><a href='https://arxiv.org/abs/2610.09696'>RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies</a></td><td>45</td><td>7</td><td>Manipulation</td><td>human demonstration의 timing이 로봇에 그대로 전이되지 않는 문제를 contact 예측 기반 retiming으로 해결하는 RoboPace, policy 재학습 없이 real dual-arm에서 속도와 신뢰성을 동시에 확보</td></tr>
+<tr><td>91</td><td><a href='https://arxiv.org/abs/2610.09718'>YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding</a></td><td>45</td><td>7</td><td>VLA</td><td>contact-object segmentation과 VLM으로 demonstration에 세밀한 상호작용 의미를 자동 주석하는 YUBI-STAG와 경량화한 YUBI-VLM, bimanual VLA의 instruction following 성능 향상</td></tr>
+<tr><td>92</td><td><a href='https://arxiv.org/abs/2610.10421'>AirGroundVLN: A Large-Scale Benchmark for Goal-Oriented Air-Ground Collaborative Vision-and-Language Navigation</a></td><td>45</td><td>7</td><td>Navigation</td><td>공중-지상 협업 VLN을 위한 대규모 벤치마크 AirGroundVLN과 시공간 공유 메모리·지역-국소 계획을 결합한 AG-CoNAV, 10,281 episode 규모의 체계적 평가</td></tr>
+<tr><td>93</td><td><a href='https://arxiv.org/abs/2610.09652'>MeshSIPP: Efficient Lattice Planning in Dynamic Environment</a></td><td>45</td><td>7</td><td>Navigation</td><td>동적 환경에서 primitive를 묶어 처리하는 SIPP 기반 lattice planner로 완전성·최적성을 증명하고 ROS2 실시간 시뮬레이션에서 3배 가속을 보임.</td></tr>
+<tr><td>94</td><td><a href='https://arxiv.org/abs/2610.09068'>GUARD: Geometric Uncertainty-Aware Point Cloud Denoising and Segmentation for Robotic Hard Disk Drive Disassembly</a></td><td>45</td><td>6</td><td>Manipulation</td><td>HDD 분해 로봇을 위한 point cloud 기하 불확실성 기반 필터링·세그멘테이션, 로봇 조작 전처리로 실용적이나 방법 자체는 기존 모듈 결합에 가까움</td></tr>
+<tr><td>95</td><td><a href='https://arxiv.org/abs/2610.09534'>KASALv2: Fully Automatic 3D Rotational Symmetry Classification and Axis Localization</a></td><td>45</td><td>6</td><td>Manipulation</td><td>완전 자동 3D 회전 대칭 분류·축 추정, 이를 FoundationPose에 적용해 6D pose 정확도 개선, manipulation을 위한 pose estimation에 실질적 도움</td></tr>
+<tr><td>96</td><td><a href='https://arxiv.org/abs/2610.10438'>ECHO: Embodied Camera Observations of Human Object Carrying</a></td><td>45</td><td>6</td><td>Embodied AI</td><td>사람이 물건을 어디로 옮기는지 관찰해 맥락적 목적지를 예측하는 ECHO 데이터셋·과제, embodied assistant의 공간 추론에 직접 연관되는 새로운 벤치마크</td></tr>
+<tr><td>97</td><td><a href='https://arxiv.org/abs/2610.09350'>Learning Unknown Constraints without Unsafe Data via Optimality and Counterfactual Regularization</a></td><td>45</td><td>6</td><td>RL</td><td>학습된 dynamics와 KKT 최적성 조건을 결합해 위험한 탐색 없이 unknown constraint를 복원하는 CF-KKT, offline ICRL 대비 안전성·데이터 효율성 개선</td></tr>
+<tr><td>98</td><td><a href='https://arxiv.org/abs/2610.09444'>LighTROcc: Lightweight 4D Occupancy Forecasting via Instance-Centric 3D Gaussians</a></td><td>45</td><td>5</td><td>3D Vision</td><td>instance-centric 3D Gaussian으로 경량 4D occupancy 예측, 자율주행 지각·예측 기여로 object-centric 표현 우선주제와 일부 연결</td></tr>
+<tr><td>99</td><td><a href='https://arxiv.org/abs/2610.10408'>Rubix: Global Correspondence-Free Point Set Alignment through Assignment Geometry</a></td><td>45</td><td>5</td><td>3D Vision</td><td>Procrustes-Wasserstein 정합을 permutation polygon으로 전역 최적화하는 이론적 결과(Rubix), 포인트셋 정합이라는 로봇 SLAM·localization에 쓰일 수 있는 일반화된 이론·도구 기여</td></tr>
+<tr><td>100</td><td><a href='https://arxiv.org/abs/2610.09205'>Do Vision Models Learn Physical Constraints or Rendering Shortcuts? A Counterfactual Benchmark for Grounded Physical Consistency</a></td><td>45</td><td>4</td><td>World Model</td><td>이미지 편집이 물리 법칙(그림자·반사 등)을 깨는지 진단하는 counterfactual 벤치마크, counterfactual reasoning 우선주제와 연결되고 VLM의 물리 이해 한계를 보여줌</td></tr>
+<tr><td>101</td><td><a href='https://arxiv.org/abs/2610.09430'>SkillCycle: Co-Evolving Agent Policies and Skill Banks</a></td><td>45</td><td>4</td><td>RL</td><td>skill bank와 policy를 번갈아 업데이트하는 co-evolution 프레임워크, WebShop/ALFWorld 텍스트 에이전트의 skill chaining에 해당하나 물리 로봇은 아님</td></tr>
+<tr><td>102</td><td><a href='https://arxiv.org/abs/2610.10062'>Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents</a></td><td>45</td><td>4</td><td>LG</td><td>tool-using agent가 silent failure를 인식 못하는 현상을 fault injection으로 정량화한 연구로 failure detection·recovery 우선주제에 직접 부합하는 체계적 실증 연구임.</td></tr>
+<tr><td>103</td><td><a href='https://arxiv.org/abs/2610.09560'>World Potential Model: Pretrained World Knowledge as Progress Potentials</a></td><td>45</td><td>3</td><td>World Model</td><td>pretrained world knowledge를 progress potential로 써서 별도 process reward 없이 장기 agent를 학습, world model·실패감지 우선주제와 연결되나 텍스트 환경(ALFWorld)에 국한됨.</td></tr>
+<tr><td>104</td><td><a href='https://arxiv.org/abs/2610.09313'>Why VLMs Miss Small Objects, and When Zooming In Is Safe</a></td><td>45</td><td>2</td><td>Multimodal</td><td>VLM이 작은 물체를 놓치는 이유를 토큰 예산 이론으로 설명, recall-cost frontier 이론이 흥미롭고 일반화 가능하나 로보틱스 직접 연관은 약함</td></tr>
+<tr><td>105</td><td><a href='https://arxiv.org/abs/2610.09186'>The Dichotomy Between Pattern Recognition and Step-by-Step Reasoning</a></td><td>45</td><td>1</td><td>NLP</td><td>토큰 의존 범위에 따라 패턴인식과 단계적 추론을 구분하는 De Bruijn 그래프 이론으로 추론 일반화에 통찰을 주나 robotics 적용은 없음</td></tr>
+<tr><td>106</td><td><a href='https://arxiv.org/abs/2610.09597'>COPC: Coupled Off-Policy Correction for Asynchronous LLM Reinforcement Learning</a></td><td>44</td><td>2</td><td>RL</td><td>비동기 RL에서 advantage staleness와 policy staleness를 동시에 보정하는 COPC로 token-integrated reasoning에서 성능을 올렸으나 LLM post-training 특화 연구임</td></tr>
+<tr><td>107</td><td><a href='https://arxiv.org/abs/2610.10118'>YANchor-4B: Effective Long-Horizon Reasoning in O(N) Time with O(1) Memory</a></td><td>44</td><td>2</td><td>NLP</td><td>O(N) 시간·O(1) 메모리로 핵심 정보를 anchor로 보존하는 recurrent 메모리 기법 YANchor-4B로 긴 수학추론 성능을 높였으나 LLM 텍스트 추론 특화이며 robot memory에는 간접적으로만 참고됨</td></tr>
+<tr><td>108</td><td><a href='https://arxiv.org/abs/2610.10245'>MorphCL: Morphological Contrastive Learning for Inertial-based Human Activity Recognition</a></td><td>44</td><td>2</td><td>Representation Learning</td><td>모션 프리미티브 기반 구조-인식 그룹핑으로 IMU 자기지도학습의 전역 구조를 포착한 MorphCL로 기존 foundation model보다 4600배 적은 데이터로 성능을 맞춘 결과가 인상적이나 웨어러블 HAR 도메인이며 robotics 직접 적용은 아님</td></tr>
+<tr><td>109</td><td><a href='https://arxiv.org/abs/2610.09355'>Multimodal LLMs Can Learn to Read Brain Signals: A Vision--Language Model for Unified Multi-Task EEG Decoding</a></td><td>44</td><td>1</td><td>Multimodal</td><td>EEG를 이미지로 인코딩해 범용 VLM에 넣어 multi-task 디코딩을 수행하는 아이디어로 멀티모달 전이에는 흥미롭지만 로봇 적용은 없음</td></tr>
+<tr><td>110</td><td><a href='https://arxiv.org/abs/2610.09471'>When Should an In-Context Learner Expand Its Hypothesis Space?</a></td><td>44</td><td>1</td><td>LG</td><td>실패를 구조적 증거로, 증거를 확장가치로 바꾸는 과정을 규범적으로 분석하고 transformer·LLM이 이를 어떻게 못 하는지 보인 meta-learning 이론 연구로 일반성은 있으나 robotics 적용은 없음</td></tr>
+<tr><td>111</td><td><a href='https://arxiv.org/abs/2610.08800'>A Review Of Robotic World Models For Dynamic Environments Based On Factor And Scene Graphs</a></td><td>42</td><td>9</td><td>World Model</td><td>factor graph와 scene graph 기반 동적 환경 robot world model을 종합 정리한 survey, 새 방법론 제시는 아니지만 world model 우선주제를 포괄적으로 다룸</td></tr>
+<tr><td>112</td><td><a href='https://arxiv.org/abs/2610.09224'>Fast Planning for Multi-object Multi-target Throwing</a></td><td>42</td><td>7</td><td>Manipulation</td><td>다지(multi-fingered) hand로 여러 물체를 한 번에 던지는 multi-object multi-target throwing 플래닝, 5ms 내 재계획으로 real robot에서 29% 시간 단축</td></tr>
+<tr><td>113</td><td><a href='https://arxiv.org/abs/2610.09302'>Adaptive Risk-Certified Event-Triggered Replanning for Dynamic Navigation</a></td><td>42</td><td>7</td><td>Navigation</td><td>conformal하게 calibrate한 barrier risk를 early-warning으로 써서 동적 navigation에서 replanning 시점을 결정하는 CERT-Replan, 비정상(non-stationary) 환경에서 충돌 83.3% 감소</td></tr>
+<tr><td>114</td><td><a href='https://arxiv.org/abs/2610.10125'>Lifelong small-object navigation in changing object layouts: a benchmark and method</a></td><td>42</td><td>7</td><td>Navigation</td><td>작은 물체가 재배치되는 환경에서의 lifelong navigation을 정식화하고 viewpoint-anchored memory로 재검증하는 IVAM-Nav, 새 벤치마크(LiSoNav-Eval)와 함께 기존 방법 대비 우수한 성능</td></tr>
+<tr><td>115</td><td><a href='https://arxiv.org/abs/2610.10198'>Benchmarking Behavioral Steerability in Behavior Foundation Models</a></td><td>42</td><td>7</td><td>Embodied AI</td><td>humanoid behavior foundation model이 사용자 의도대로 steer 가능한지를 조건·제약·조합 3단계로 체계화한 RoboSteer 벤치마크, 9개 기존 BFM에 대한 대규모 실증 비교</td></tr>
+<tr><td>116</td><td><a href='https://arxiv.org/abs/2610.10489'>HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion</a></td><td>42</td><td>7</td><td>Embodied AI</td><td>human motion data로 학습한 natural locomotion prior를 multi-task RL로 넓혀 steerable하고 robust하게 만드는 HuMBLE, Atlas R1·D1·G1 세 휴머노이드에서 실환경 검증</td></tr>
+<tr><td>117</td><td><a href='https://arxiv.org/abs/2610.09462'>TMT: Runtime Backdoor Detection for Vision-Language-Action Policies on Unseen Tasks</a></td><td>42</td><td>6</td><td>VLA</td><td>VLA policy의 backdoor 활성화를 token manifold와 latent transition으로 runtime에 탐지하는 TMT, 보지 못한 task에서도 10개 baseline 대비 SOTA 탐지 성능</td></tr>
+<tr><td>118</td><td><a href='https://arxiv.org/abs/2610.09695'>Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving?</a></td><td>42</td><td>6</td><td>CV</td><td>VFM target 선택과 auxiliary perception supervision이 end-to-end 자율주행 성능에 어떻게 영향을 주는지 체계적으로 분석, NAVSIM v2에서 기존 방법 대비 1.9점 이상 향상</td></tr>
+<tr><td>119</td><td><a href='https://arxiv.org/abs/2610.09977'>Decoding Neural Population Dynamics through Robotic Analog</a></td><td>42</td><td>6</td><td>Embodied AI</td><td>인공 근육·RL controller로 구현한 생체모사 로봇 analog로 motor cortex의 rotational neural dynamics와 움직임의 인과관계를 규명, primate 데이터로도 확인된 흥미로운 신경과학-로보틱스 연결 연구</td></tr>
+<tr><td>120</td><td><a href='https://arxiv.org/abs/2610.08917'>CARE: Certifying Acceleration for Vision-Language-Action Inference</a></td><td>42</td><td>6</td><td>VLA</td><td>VLA 가속이 유발하는 실패를 paired rollout으로 정의하고 통계적으로 보장된 가속기만 선택하는 CARE, OpenVLA-OFT에서 9~10.8배 속도 향상을 95% 신뢰도로 보장하며 성공률 손상을 통제</td></tr>
+<tr><td>121</td><td><a href='https://arxiv.org/abs/2610.09513'>OmniCam: Omni-Camera Trajectory Generation via Geometry-Grounded Pose Token Learning</a></td><td>42</td><td>5</td><td>3D Vision</td><td>파노라마와 언어로 카메라 트래젝토리를 생성하는 geometry-grounded 모델, 로봇 active perception 응용 실험 포함되나 핵심은 비디오/뷰 생성</td></tr>
+<tr><td>122</td><td><a href='https://arxiv.org/abs/2610.09761'>PARC-Loc: Text-to-Point-Cloud Localization with Partial Assignment and Relational Consistency</a></td><td>42</td><td>5</td><td>Navigation</td><td>언어로 도시 규모 포인트클라우드에서 위치를 찾는 localization, navigation·embodied spatial reasoning과 연관되는 relational consistency 기반 개선</td></tr>
+<tr><td>123</td><td><a href='https://arxiv.org/abs/2610.10197'>VolCo: Volumetric Contact for High-Fidelity Human Grasp Generation</a></td><td>42</td><td>5</td><td>Manipulation</td><td>volumetric contact 표현으로 penetration을 줄인 고품질 human grasp 생성(VolCoDiff), grasp synthesis가 manipulation 우선주제와 연결되나 사람 손 모션 생성에 한정</td></tr>
+<tr><td>124</td><td><a href='https://arxiv.org/abs/2610.09285'>LeCuration: A Tiny World Model as a Data Curation Multi-Tool</a></td><td>42</td><td>5</td><td>World Model</td><td>CS:GO 게임플레이에 LeWM 기반 작은 world model을 적용해 이상탐지·클러스터링용 data curation 도구로 쓴 proof-of-concept이나 정량적 성능 지표가 아직 없어 근거가 약함</td></tr>
+<tr><td>125</td><td><a href='https://arxiv.org/abs/2610.09173'>RDGSplat: Render-Dedicated Geometry for Novel View Synthesis</a></td><td>42</td><td>3</td><td>3D Vision</td><td>frozen 3D foundation model에서 렌더링 전용 geometry를 별도 디코딩해 novel view synthesis 개선, 3D vision 기여이나 로보틱스 직접 연관은 약함</td></tr>
+<tr><td>126</td><td><a href='https://arxiv.org/abs/2610.09407'>Noise, Denoise, Correct: MCMC Posterior Sampling with Diffusion Priors in Three Steps</a></td><td>42</td><td>1</td><td>Video</td><td>SDEdit 제안을 MCMC로 보정해 비선형·비미분 forward model에서도 exact posterior sampling을 얻는 diffusion waltz로 inverse problem 일반에 유용하나 robotics 적용은 없음</td></tr>
+<tr><td>127</td><td><a href='https://arxiv.org/abs/2610.08927'>Can AI Agents Make Open-Ended Scientific Discovery? Evidence from Station</a></td><td>42</td><td>1</td><td>LG</td><td>오픈월드 멀티에이전트 환경에서 과거 ICLR 논문의 발견을 재현하는 open-ended 과학 발견 평가로 로봇과 무관하나 연구 자동화 임팩트가 큼.</td></tr>
+<tr><td>128</td><td><a href='https://arxiv.org/abs/2610.09179'>LayerRoPE: Dynamic Depth-wise Magnitude &amp; Angular Superposition</a></td><td>42</td><td>0</td><td>LG</td><td>depth에 따른 residual norm 증가를 RoPE 유사 위치부호화로 재해석한 LayerRoPE로 아키텍처 통찰은 있으나 robotics와 무관함</td></tr>
+<tr><td>129</td><td><a href='https://arxiv.org/abs/2610.09889'>Identifiability of a dissipative knowledge-dynamics model: exact recovery under designed excitation, degeneration on observational data</a></td><td>42</td><td>0</td><td>LG</td><td>지식 습득-망각 동역학 모델의 식별가능성을 설계된 자극 하에서만 증명하고 관측 데이터에서는 퇴화함을 네 가지 통제실험으로 반박한 방법론적으로 엄격한 연구이나 robotics와 무관함</td></tr>
+<tr><td>130</td><td><a href='https://arxiv.org/abs/2610.10510'>Factorized Tactile Representation and Control for Sim-to-Real Manipulation</a></td><td>40</td><td>7</td><td>Manipulation</td><td>접촉 응답을 geometry·force·시간 변화로 분해해 mask별로 재학습 없이 전환되는 Tactile Gated Policy, real adversarial peg insertion에서 비분해 표현 대비 35% 향상</td></tr>
+<tr><td>131</td><td><a href='https://arxiv.org/abs/2610.09777'>On-Demand Robotic Assembly via Differentiable Geometric Part Repair</a></td><td>40</td><td>6</td><td>Manipulation</td><td>생성 AI로 설계를 만들고 graph attention network surrogate로 조립 가능성을 differentiable하게 복구하는 로봇 조립 파이프라인, 두 UR5e로 실제 조립까지 시연</td></tr>
+<tr><td>132</td><td><a href='https://arxiv.org/abs/2610.09967'>Borrowed Eyes: Markerless Nano-UAV Flight with an Active Quadruped Observer</a></td><td>40</td><td>6</td><td>Robotics</td><td>quadruped 로봇이 arm-mounted camera로 nano-UAV를 추적·localize하는 협업 시스템, perception-aware NMPC로 가시성을 유지하며 real test에서 평균 59mm 오차 달성</td></tr>
+<tr><td>133</td><td><a href='https://arxiv.org/abs/2610.09294'>RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment</a></td><td>40</td><td>6</td><td>Embodied AI</td><td>실시간 제약 하 embodied agent 안전성 벤치마크로 추론 지연이 충돌을 12배 늘린다는 결과가 embodied safety에 중요한 시사점을 줌.</td></tr>
+<tr><td>134</td><td><a href='https://arxiv.org/abs/2610.09417'>trACT: temporal revelation Airborne Camera Trap</a></td><td>40</td><td>5</td><td>Embodied AI</td><td>맹금류의 시각 안정화를 모사한 드론 기반 motion anomaly 탐지 카메라 트랩, 공중 로봇 active sensing 응용이나 방법 자체는 기존 모듈 결합</td></tr>
+<tr><td>135</td><td><a href='https://arxiv.org/abs/2610.10512'>Video-Conditioned Generative Joint 2D-3D Hand Motion Recovery</a></td><td>40</td><td>4</td><td>3D Vision</td><td>occlusion에 강인하게 2D-3D hand motion을 동시 생성하는 비디오 조건 생성모델(JoHan), 손 추적이 human-video-to-robot 학습에 쓰일 수 있는 manipulation 인접 기여</td></tr>
+<tr><td>136</td><td><a href='https://arxiv.org/abs/2610.09746'>Flow-of-Thought: A Framework for Visual Reasoning</a></td><td>40</td><td>3</td><td>Multimodal</td><td>시각적 스케치를 중간 추론 단계로 사용하는 Flow-of-Thought, 공간 추론 개선이 embodied spatial reasoning과 개념적으로 연결되나 평가는 퍼즐 과제에 한정</td></tr>
+<tr><td>137</td><td><a href='https://arxiv.org/abs/2610.09780'>Relational Abstractions for Spatial Reasoning with Diffusion Models</a></td><td>40</td><td>3</td><td>CV</td><td>object-centric relation abstraction을 diffusion에 주입해 논리적 퍼즐 제약을 만족시키는 생성, 새로운 representation이지만 평가가 퍼즐 도메인에 한정됨</td></tr>
+<tr><td>138</td><td><a href='https://arxiv.org/abs/2610.10250'>Logarithmic Regret via Passive Change Detection in Piecewise-Stationary Self-Tuning Regulation</a></td><td>40</td><td>3</td><td>RL</td><td>플랜트 변화 시점이 불확실한 self-tuning regulation에서 로그 regret을 증명한 PIECE-CD로 적응제어 이론에 기여하나 실제 로봇 실험은 없음</td></tr>
+<tr><td>139</td><td><a href='https://arxiv.org/abs/2610.09116'>SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code</a></td><td>40</td><td>2</td><td>3D Vision</td><td>3DGS 논문을 코드로 변환하는 멀티에이전트 시스템, paper-to-code 자동화라는 흥미로운 메타 연구지만 로보틱스와 직접 관련 없음</td></tr>
+<tr><td>140</td><td><a href='https://arxiv.org/abs/2610.09048'>Towards Financial World Modeling</a></td><td>40</td><td>2</td><td>World Model</td><td>금융 시장용 world model 표현학습 벤치마크로 world model 평가 방법론은 참고할 만하나 로봇 도메인과는 거리가 있음</td></tr>
+<tr><td>141</td><td><a href='https://arxiv.org/abs/2610.09230'>Symmetry-Informed Causal Partial Identification</a></td><td>40</td><td>2</td><td>LG</td><td>데이터 대칭성을 제약으로 활용해 partial identification 구간을 좁히는 causal inference 연구로 counterfactual reasoning 도구로서 일반적 가치가 있음</td></tr>
+<tr><td>142</td><td><a href='https://arxiv.org/abs/2610.09107'>Constraint Tree Exploration for Learning from Language Feedback</a></td><td>40</td><td>2</td><td>RL</td><td>언어 피드백으로부터 제약을 탐색하는 TRACE 알고리즘으로 language feedback 기반 learning 우선주제와 직접 연결되고 이론적 보장도 제시함.</td></tr>
+<tr><td>143</td><td><a href='https://arxiv.org/abs/2610.09120'>The Deceptive Bandit Problem: Exploratory Coupling and the Fragility of Multi-Agent Learning</a></td><td>40</td><td>1</td><td>RL</td><td>bandit 학습에서 상대 agent의 탐색 정보를 악용하는 deceptive Nash equilibrium 이론으로 multi-agent 보안 문제에 한정됨</td></tr>
+<tr><td>144</td><td><a href='https://arxiv.org/abs/2610.09281'>Twist Flow for Inverse Problems</a></td><td>40</td><td>1</td><td>Video</td><td>joint twist-flow로 다봉 posterior를 보존하는 inverse problem 생성모델로 영상 복원·탐사에 적용되나 로봇 지각과 직접 연결은 없음</td></tr>
+<tr><td>145</td><td><a href='https://arxiv.org/abs/2610.09611'>Sequential Pretraining Favors Large Models</a></td><td>40</td><td>1</td><td>LG</td><td>순차적 pretraining에서 작은 모델이 초기 분포에 과적합되는 primacy bias를 정의하고 Exposure Therapy로 완화한 연구로 foundation model 학습 일반에 통찰이 있음</td></tr>
+<tr><td>146</td><td><a href='https://arxiv.org/abs/2610.09824'>Homogenization in Multi-Agent Systems</a></td><td>40</td><td>1</td><td>RL</td><td>multi-agent 시스템이 상호작용을 통해 행동이 동질화되는 위험을 코드생성·채용·peer review에서 정량화한 연구로 multi-robot 시스템에도 시사점이 있으나 직접 실험은 아님</td></tr>
+<tr><td>147</td><td><a href='https://arxiv.org/abs/2610.09566'>Targeted Modality Dropout for Real-Robot Manipulation Robust to Intermittent Vision Loss</a></td><td>38</td><td>7</td><td>Manipulation</td><td>attention으로 추정한 modality 의존도 중 가장 우세한 modality를 선택적으로 drop시켜 vision 손실에 강건하게 만든 TMD, real bimanual robot에서 vision loss 시 성공률 유지</td></tr>
+<tr><td>148</td><td><a href='https://arxiv.org/abs/2610.10384'>OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework</a></td><td>38</td><td>7</td><td>Manipulation</td><td>VLA·WAM·VTLA policy를 sim과 real 양쪽에서 평가할 수 있는 visuo-tactile 벤치마크 OpenViTac과 tactile augmentation 프레임워크 OpenVTLA, 인프라 기여</td></tr>
+<tr><td>149</td><td><a href='https://arxiv.org/abs/2610.08852'>Autonomous Droplet Navigation via Model-Based Reinforcement Learning: Zero-Shot Transfer and Emergent Dynamics</a></td><td>38</td><td>6</td><td>RL</td><td>표면장력 제어가 어려운 액체 droplet을 model-based RL로 조작, 50~150 episode만으로 zero-shot 전이와 depinning 전략 발견이 흥미롭지만 soft-matter niche 도메인</td></tr>
+<tr><td>150</td><td><a href='https://arxiv.org/abs/2610.09283'>LACE-CRAFT: Robot Co-Design with Actor Inheritance and Blackboard Collaboration</a></td><td>38</td><td>6</td><td>RL</td><td>로봇 형태(morphology)와 policy를 함께 설계하는 co-design에서 actor 파라미터를 상속해 학습을 재활용하는 LACE-CRAFT, 5개 locomotion benchmark에서 기존 방법 대비 성능 향상</td></tr>
+<tr><td>151</td><td><a href='https://arxiv.org/abs/2610.09118'>TopoCurve: Geometry-Aware Topology Reasoning via Bézier Curves in Autonomous Driving</a></td><td>38</td><td>3</td><td>CV</td><td>Bezier curve 기반 차선 topology reasoning, 자율주행 SOTA지만 기존 topology reasoning의 표현만 바꾼 수준</td></tr>
+<tr><td>152</td><td><a href='https://arxiv.org/abs/2610.09853'>DeltaSplat: Iterative Gaussian Refinement for Pose-Free Feed-Forward 3D Gaussian Splatting</a></td><td>38</td><td>3</td><td>3D Vision</td><td>pose-free feed-forward 3DGS에 반복적 Gaussian 보정 모듈을 추가해 카메라 오차 전파를 완화, 경량 모듈 추가에 가까운 novel view synthesis 개선</td></tr>
+<tr><td>153</td><td><a href='https://arxiv.org/abs/2610.10116'>A Probabilistic Perspective on Wasserstein-Based Evidential Uncertainty for Out-of-Distribution Segmentation</a></td><td>38</td><td>3</td><td>CV</td><td>Wasserstein 기반 evidential uncertainty로 단일 forward pass에서 OOD segmentation, 자율주행 안전성에 유용한 효율적 불확실성 정량화 기법</td></tr>
+<tr><td>154</td><td><a href='https://arxiv.org/abs/2610.10539'>Tetris3D: 3D Scene Generation With Objects That Fit Together</a></td><td>38</td><td>3</td><td>3D Vision</td><td>물체 간 기하·물리적 양립성을 명시적으로 조건화한 3D 장면 생성(Tetris3D), object-centric 장면 생성 기여로 로봇 시뮬레이션 자산 생성에 간접 활용 가능</td></tr>
+<tr><td>155</td><td><a href='https://arxiv.org/abs/2610.08959'>GraphOPD: Graph-Augmented On-Policy Distillation for LLM Agents</a></td><td>38</td><td>3</td><td>RL</td><td>환경의 상태변화 기록으로 의존성 그래프를 만들어 on-policy distillation을 보정하는 GraphOPD, ALFWorld/WebShop 텍스트 에이전트의 long-horizon credit assignment에 해당하나 물리 로봇은 아님</td></tr>
+<tr><td>156</td><td><a href='https://arxiv.org/abs/2610.09174'>Context-aware Attention-based Gaussian Mixture Models for Vehicular Trajectory Prediction</a></td><td>38</td><td>3</td><td>Navigation</td><td>attention 기반 Gaussian mixture로 차량 궤적을 예측하는 연구로 navigation과 관련되나 기존 raster 기법의 경량화 수준 개선임</td></tr>
+<tr><td>157</td><td><a href='https://arxiv.org/abs/2610.09440'>Mixture of Layers: Dynamic Layer Routing for Visual Reasoning</a></td><td>38</td><td>2</td><td>Multimodal</td><td>쿼리에 따라 비전 인코더 레이어를 동적으로 선택하는 MoL, fine-grained visual reasoning 개선이나 로보틱스 특화 아님</td></tr>
+<tr><td>158</td><td><a href='https://arxiv.org/abs/2610.09928'>Do Generative Priors Align with Human Naturalness Perception?</a></td><td>38</td><td>2</td><td>Multimodal</td><td>생성모델의 native prediction error가 인간의 자연스러움 판단(Thatcher effect 등)과 상관된다는 발견, world model의 물리적 사실성 평가와 개념적으로 연결되나 직접적 로보틱스 기여는 아님</td></tr>
+<tr><td>159</td><td><a href='https://arxiv.org/abs/2610.08963'>On KL-Regularized Policy Optimization</a></td><td>38</td><td>2</td><td>RL</td><td>KL 정규화를 sampler에 anchor해 importance weight 없이 비동기 RL을 학습하는 KLPO, critic-free policy optimization의 통합 이론으로 일반 RL 기여이나 로보틱스 특화는 아님</td></tr>
+<tr><td>160</td><td><a href='https://arxiv.org/abs/2610.08991'>REFIT: Recognize, Fix, and Test Wearable Sensor Placement Shifts without Labels</a></td><td>38</td><td>2</td><td>Multimodal</td><td>착용형 센서 위치 변화에 대한 라벨 없는 test-time 보정 기법이나 로봇 정책과는 무관한 HAR 도메인 문제임</td></tr>
+<tr><td>161</td><td><a href='https://arxiv.org/abs/2610.09056'>A Geometry-Based Capacity Theory for Finite-Feature Associative Memory</a></td><td>38</td><td>2</td><td>LG</td><td>압축된 연상 기억의 용량 한계를 기하학적으로 분석한 이론 연구로 robot memory와는 개념적으로만 연결됨</td></tr>
+<tr><td>162</td><td><a href='https://arxiv.org/abs/2610.09136'>Directional Evidence Guided Search-Space Reduction for Exact DAG Learning</a></td><td>38</td><td>2</td><td>LG</td><td>방향성 증거로 탐색 공간을 줄이는 exact DAG 학습 기법으로 causal reasoning 도구로서 일반적 가치는 있으나 로봇 적용은 없음</td></tr>
+<tr><td>163</td><td><a href='https://arxiv.org/abs/2610.09858'>Training Advisors for LLM Agents from Task Outcomes</a></td><td>38</td><td>2</td><td>NLP</td><td>outcome 기반 RL로 학습한 critic이 여러 베이스모델에 전이되는 language feedback 학습이나 로봇 전이는 미검증임.</td></tr>
+<tr><td>164</td><td><a href='https://arxiv.org/abs/2610.09863'>Global Average Precision for Representation Learning</a></td><td>38</td><td>1</td><td>LG</td><td>모든 query-candidate 쌍을 한 리스트로 랭킹하는 global AP 미분가능 surrogate(gSAP), InfoNCE를 대체 가능한 일반화 가능한 손실함수 기여</td></tr>
+<tr><td>165</td><td><a href='https://arxiv.org/abs/2610.09679'>CERO: Where and When to Allocate Rollouts for RL Post-Training</a></td><td>38</td><td>1</td><td>RL</td><td>전체 학습 horizon에 걸쳐 rollout 예산을 primal-dual로 배분하는 CERO로 수학 추론 RL post-training 효율을 높였으나 LLM 특화 연구임</td></tr>
+<tr><td>166</td><td><a href='https://arxiv.org/abs/2610.09782'>AdaPS-LiNGAM: Adaptive Predecessor Selection for Linear Non-Gaussian Acyclic Models under Small-Sample Settings</a></td><td>38</td><td>1</td><td>LG</td><td>표본이 변수 수보다 적을 때 LiNGAM의 causal order 추정이 퇴화함을 보이고 adaptive predecessor selection으로 보완한 연구로 causal discovery 일반에 기여하나 robotics 적용 없음</td></tr>
+<tr><td>167</td><td><a href='https://arxiv.org/abs/2610.09914'>RollVerify: Bridging Efficiency and Accuracy in Long-Tail Rollout Reinforcement Learning</a></td><td>38</td><td>1</td><td>RL</td><td>partial rollout의 off-policy 편차를 OPS 지표로 측정해 무효 suffix를 자르는 RollVerify로 수학·코드 추론 RL 효율을 높인 연구로 LLM 특화임</td></tr>
+<tr><td>168</td><td><a href='https://arxiv.org/abs/2610.10037'>Matching of signal, noise and hardware timescales for filtering and forecasting of correlated noise signals</a></td><td>38</td><td>1</td><td>Multimodal</td><td>물리 저장소 컴퓨팅에서 노이즈 상관시간과 저장소 메모리·예측 horizon의 관계를 규명한 하드웨어 연구로 신호처리 응용이며 robotics 적용은 아님</td></tr>
+<tr><td>169</td><td><a href='https://arxiv.org/abs/2610.10174'>A Unified Information-Theoretic Approach to Constrained Multi-Fidelity Multi-Objective Bayesian Optimization</a></td><td>38</td><td>1</td><td>LG</td><td>multi-fidelity multi-objective Bayesian optimization을 정보이론적으로 통합한 획득함수로 로봇 설계 탐색에 활용될 여지는 있으나 일반 BO 방법론 연구임</td></tr>
+<tr><td>170</td><td><a href='https://arxiv.org/abs/2610.09876'>Think Before You Paint: Recursive Latent Reasoning for Diffusion Models</a></td><td>38</td><td>1</td><td>Video</td><td>작은 recursive network가 diffusion model을 제어해 symbolic supervision 없이 Sudoku·maze 등 시각적 추론을 수행하며, 생성모델에 새로운 추론 메커니즘을 제공함.</td></tr>
+<tr><td>171</td><td><a href='https://arxiv.org/abs/2610.10298'>Physics-Aligned Electronic Ground-State Learning Improves Generalization</a></td><td>38</td><td>0</td><td>LG</td><td>KS-DFT 물리제약을 정렬한 ground-state descriptor 학습으로 분자 외삽 성능을 크게 높인 연구로 화학물리 응용이며 robotics와 무관함</td></tr>
+<tr><td>172</td><td><a href='https://arxiv.org/abs/2610.09074'>TAP: Efficient Long-Horizon Agent Pruning via Trajectory-Anchored Recovery</a></td><td>36</td><td>3</td><td>Embodied AI</td><td>ALFWorld·WebShop 등 long-horizon agent의 FFN pruning 및 on-policy recovery 기법으로 embodied task에 적용되나 효율화 engineering 성격이 강함</td></tr>
+<tr><td>173</td><td><a href='https://arxiv.org/abs/2610.09473'>MORA: Modeling Observed Changes for Drift-Robust Time-Series Anomaly Detection</a></td><td>36</td><td>2</td><td>Multimodal</td><td>짧은-긴 구간 재구성 차이로 drift와 anomaly를 구분하는 시계열 이상탐지 기법으로 failure detection과 개념적으로 닿아있으나 산업 모니터링 도메인임</td></tr>
+<tr><td>174</td><td><a href='https://arxiv.org/abs/2610.10018'>Oscillatory Neural Dynamics over Sheaves</a></td><td>36</td><td>1</td><td>LG</td><td>sheaf 기반 그래프에서 2차 파동 동역학으로 장거리 전파를 보장하는 ONDA로 GNN bottleneck 문제를 다루나 scene graph 등 로봇 표현과 직접 연결은 없음</td></tr>
+<tr><td>175</td><td><a href='https://arxiv.org/abs/2610.10239'>ProtocolMatch: Protocol-Dependent Model Selection for Scientific Dynamics Forecasting</a></td><td>36</td><td>1</td><td>LG</td><td>관측 이력·rollout 피드백·물리 목적에 따라 forecaster 선택이 달라짐을 양자 스핀 동역학에서 보인 protocol 평가 프레임워크로 world model 선택 논의에 간접적으로만 참고됨</td></tr>
+<tr><td>176</td><td><a href='https://arxiv.org/abs/2610.10246'>Stationary Bias and Extrapolation in Nonlinear Two-Timescale Stochastic Approximation</a></td><td>36</td><td>1</td><td>RL</td><td>외생적 Markov chain이 있는 비선형 two-timescale stochastic approximation의 정상상태 편향을 1차 전개로 규명한 이론 연구로 TD 학습 일반에 통찰이 있으나 robotics 적용은 없음</td></tr>
+<tr><td>177</td><td><a href='https://arxiv.org/abs/2610.09250'>Efficient Best-of-N policy evaluation for inference-time alignment</a></td><td>36</td><td>0</td><td>RL</td><td>로그로부터 likelihood 없이 Best-of-N 정책가치를 평가하는 doubly robust 추정기로 LLM alignment 평가에 한정됨</td></tr>
+<tr><td>178</td><td><a href='https://arxiv.org/abs/2610.09587'>Collaborative Reasoning Distillation via Cross-Feedback and Coherent Curation</a></td><td>36</td><td>0</td><td>NLP</td><td>복수 teacher가 서로 비판하며 작은 모델에 추론능력을 distill하는 CRD 기법으로 LLM reasoning에 한정됨</td></tr>
+<tr><td>179</td><td><a href='https://arxiv.org/abs/2610.09647'>When Rank Rises as LLMs Degrade</a></td><td>36</td><td>0</td><td>LG</td><td>rank 기반 representation health 지표가 post-training 손상을 오판할 수 있음을 보인 진단 연구로 robotics와 무관함</td></tr>
+<tr><td>180</td><td><a href='https://arxiv.org/abs/2610.09804'>BoT-GRPO: Efficient Process-Reward RL for Reasoning via Bag-of-Token Aggregation</a></td><td>36</td><td>0</td><td>RL</td><td>token-level reward를 길이에 불변하게 집계하는 BoT-GRPO로 코드생성·수학추론 RL 효율을 높인 연구로 LLM 특화임</td></tr>
+<tr><td>181</td><td><a href='https://arxiv.org/abs/2610.09958'>Force without transmission: a depth-induced rank collapse that no loss on the representation reopens</a></td><td>36</td><td>0</td><td>LG</td><td>skip connection을 약화해 생긴 rank collapse가 gradient 경로 차단 때문이며 손실항 세기로는 복구되지 않음을 보인 메커니즘 분석 연구로 robotics와 무관함</td></tr>
+<tr><td>182</td><td><a href='https://arxiv.org/abs/2610.10203'>How to train your model organism</a></td><td>36</td><td>0</td><td>NLP</td><td>해석가능성 평가용 model organism을 단일 목표가 아닌 세 가지 목표로 검증해야 한다고 주장한 방법론 연구로 robotics와 무관함</td></tr>
+<tr><td>183</td><td><a href='https://arxiv.org/abs/2610.08933'>Toward Evidence-Driven Human-Agent-Robot Teaming for Earth-Independent Anomaly Triage</a></td><td>35</td><td>6</td><td>Embodied AI</td><td>심우주 환경에서 human-agent-robot 협업으로 anomaly triage를 수행하는 architecture, ISS 암모니아 오경보 사례 기반 hardware-in-the-loop 프로토타입</td></tr>
+<tr><td>184</td><td><a href='https://arxiv.org/abs/2610.09207'>Belief-Space Planning with Planner-Conditioned Estimator Error under Intermittent Observations</a></td><td>35</td><td>6</td><td>Navigation</td><td>belief-space planner가 자신이 접근 못하는 planner 정보를 반영해 estimator 오차를 예측·보정하는 기법, VTOL 함상 착륙 시뮬레이션에서 covariance-only 대비 예측 정확도 향상</td></tr>
+<tr><td>185</td><td><a href='https://arxiv.org/abs/2610.09520'>Not All Uncertainty Matters: Simulation-in-the-Loop Fast-Slow Reasoning for Decision-Critical Autonomous Driving System</a></td><td>35</td><td>6</td><td>Navigation</td><td>planner를 uncertainty 평가에 내장해 cloud VLM 호출이 planning cost를 실제로 줄이는지 판단하는 SIGMA, CARLA에서 불필요한 cloud 호출 50% 감소</td></tr>
+<tr><td>186</td><td><a href='https://arxiv.org/abs/2610.09781'>End-to-End Autonomous Generation of Human Assembly Plans</a></td><td>35</td><td>6</td><td>Manipulation</td><td>CAD 메시만으로 DfA 원칙 기반 조립 순서·매뉴얼·도구 목록을 자동 생성, 136개 조립에서 baseline 대비 가상 조립시간 35% 단축</td></tr>
+<tr><td>187</td><td><a href='https://arxiv.org/abs/2610.10020'>Tactile Reconstruction of Contact Task Frames and Forces for Hybrid Force/Motion Control</a></td><td>35</td><td>6</td><td>Manipulation</td><td>soft optical tactile sensor 이미지 하나로 contact force와 task frame을 실시간 추정해 hybrid force/motion control에 쓰는 방법, real UR10에서 touch만으로 접촉력 제어 시연</td></tr>
+<tr><td>188</td><td><a href='https://arxiv.org/abs/2610.10065'>Distributed Motion Planning for Multi-Robot Systems under Topological Constraints</a></td><td>35</td><td>6</td><td>Navigation</td><td>topological braid 제약을 winding number로 연속화해 distributed MPC로 추적하는 multi-robot motion planning, 실제 로봇 실험으로 실행 속도·제어 비용 개선 확인</td></tr>
+<tr><td>189</td><td><a href='https://arxiv.org/abs/2610.10470'>CMP-IRRT*: A Perception-Assisted Height-Adaptive Planner for Quadruped Robots</a></td><td>35</td><td>6</td><td>Navigation</td><td>RGB에서 추정한 높이맵으로 낮은 장애물은 통과하도록 허용하는 height-adaptive Informed RRT* 플래너, real Go2로 bypass·traverse 행동 시연</td></tr>
+<tr><td>190</td><td><a href='https://arxiv.org/abs/2610.10472'>Robotic Boomerang Throwing via Model-Based Release Design</a></td><td>35</td><td>6</td><td>Manipulation</td><td>사람 던지기를 모방하지 않고 release 상태만 모델링해 6-DoF manipulator로 돌아오는 부메랑을 던진 첫 사례, 공기역학 모델 기반의 흥미로운 problem formulation이나 범용성은 제한적</td></tr>
+<tr><td>191</td><td><a href='https://arxiv.org/abs/2610.09034'>Shared-Roadmap Generation and Evaluator for Multi-Agent Path Planning Using Heterogeneous Graph Neural Network</a></td><td>35</td><td>6</td><td>Navigation</td><td>heterogeneous GNN으로 멀티에이전트 roadmap을 생성·평가하는 연구로 경로계획에 직접 연결되나 novelty는 엔지니어링 수준임.</td></tr>
+<tr><td>192</td><td><a href='https://arxiv.org/abs/2610.10090'>Temporal Residual Bottleneck for Robust Asynchronous Collaborative Perception</a></td><td>35</td><td>4</td><td>Navigation</td><td>비동기 협력 지각에서 지연된 feature를 temporal residual로 보정, 자율주행 협력 지각의 강인성 개선이나 모듈 추가 수준</td></tr>
+<tr><td>193</td><td><a href='https://arxiv.org/abs/2610.10400'>Self-correction Optimization for Interleaved Multimodal Generation</a></td><td>35</td><td>3</td><td>Multimodal</td><td>classifier-free guidance를 self-correction 신호로 활용하는 training-free interleaved 생성, 로봇 조작 비디오 모델링 확장을 언급하나 핵심은 멀티모달 생성 문제</td></tr>
+<tr><td>194</td><td><a href='https://arxiv.org/abs/2610.10367'>Temporally Interpretable Differentiable Decision Trees</a></td><td>35</td><td>3</td><td>RL</td><td>action chunking으로 differentiable decision tree의 시간적 해석가능성을 높인 연구, 해석가능 정책이라는 점에서 robotics와 약하게 연결됨</td></tr>
+<tr><td>195</td><td><a href='https://arxiv.org/abs/2610.08966'>Humanity&#x27;s Sixth Sense: Benchmarking Intuitive Visual Reasoning in Multimodal Models</a></td><td>35</td><td>3</td><td>Multimodal</td><td>인간의 직관적 시각추론을 측정하는 벤치마크로 embodied spatial reasoning과 느슨히 연결되나 로봇 실험은 없음.</td></tr>
+<tr><td>196</td><td><a href='https://arxiv.org/abs/2610.09031'>Beyond Explanation: Debugging Medical Imaging Models via Concept Intervention</a></td><td>35</td><td>2</td><td>CV</td><td>concept bottleneck으로 의료 영상 모델을 디버깅, counterfactual intervention 아이디어는 있으나 의료 도메인 한정</td></tr>
+<tr><td>197</td><td><a href='https://arxiv.org/abs/2610.09032'>Shape-Bayes: Bayesian Inference of Structured Shapes under Visual Ambiguity</a></td><td>35</td><td>2</td><td>3D Vision</td><td>얼굴 형태 추정에 Bayesian shape posterior 도입해 occlusion 강인성 확보, 3D representation이나 얼굴 특화라 로보틱스 연관 약함</td></tr>
+<tr><td>198</td><td><a href='https://arxiv.org/abs/2610.09700'>What Makes Synthetic Hard Negatives Work in Vision-Language Pretraining?</a></td><td>35</td><td>2</td><td>Multimodal</td><td>VL pretraining용 synthetic hard negative의 실패 모드를 분석하고 intra-modal 방식(SNAP) 제안, representation learning 개선이나 로보틱스 직접 연관 약함</td></tr>
+<tr><td>199</td><td><a href='https://arxiv.org/abs/2610.10183'>VideoEvolve: Co-Evolving Memory and Retrieval for Long Video Understanding</a></td><td>35</td><td>2</td><td>Video</td><td>긴 비디오 이해를 위해 memory와 retrieval을 agentic RL로 공진화시키는 프레임워크, robot memory 개념과 유사하나 비디오 QA 도메인에 한정</td></tr>
+<tr><td>200</td><td><a href='https://arxiv.org/abs/2610.08816'>The Cost of Long Memory: State, Context, and Stability Complexity in Sequence Models</a></td><td>35</td><td>2</td><td>LG</td><td>장기 메모리를 갖는 시퀀스 모델의 state 복잡도에 대한 이론적 상한·하한 증명, world model의 메모리 설계에 시사점은 있으나 추상적인 일반 시퀀스모델 이론</td></tr>
+<tr><td>201</td><td><a href='https://arxiv.org/abs/2610.09218'>RLDISCOVER: LLM-driven co-evolution of reinforcement learning algorithms</a></td><td>35</td><td>2</td><td>RL</td><td>LLM이 SAC·PPO·DQN 알고리즘 구성요소를 공진화시켜 발견하는 self-evolution 프레임워크로 RL 우선주제와 연결되고 성능 향상폭이 큼.</td></tr>
+<tr><td>202</td><td><a href='https://arxiv.org/abs/2610.08954'>RACER: Reflective Agent Coupling Query Interpretation and Tool-Based Retrieval for Frame Selection in Long Video Understanding</a></td><td>35</td><td>1</td><td>Video</td><td>장시간 비디오 프레임 선택을 query reformulation과 retrieval로 분해한 training-free 에이전트, video understanding 개선이나 로보틱스 연관 약함</td></tr>
+<tr><td>203</td><td><a href='https://arxiv.org/abs/2610.09841'>ORCA: Hunting Compositional Failures in Text-to-Image Diffusion</a></td><td>35</td><td>1</td><td>CV</td><td>diffusion transformer latent를 저랭크 시각 subspace에 정렬시켜 compositional binding을 개선하는 ORCA, 생성모델의 이론적 기여이나 로보틱스 연관 약함</td></tr>
+<tr><td>204</td><td><a href='https://arxiv.org/abs/2610.10305'>How Do Transformers Learn to Represent Symmetries?</a></td><td>35</td><td>1</td><td>LG</td><td>Transformer가 point cloud 대칭성을 augmentation으로 학습하는 기제를 분석한 해석가능성 연구, robotics 직접 연관성은 낮음</td></tr>
+<tr><td>205</td><td><a href='https://arxiv.org/abs/2610.09571'>How Do LLMs Change Predictions Under Negation?</a></td><td>35</td><td>1</td><td>NLP</td><td>negation 처리 실패를 attention head·MLP 단위로 분석한 메커니즘 연구로 일반화 통찰은 있으나 로보틱스 적용성은 낮음.</td></tr>
+<tr><td>206</td><td><a href='https://arxiv.org/abs/2610.09090'>Tucker Bottleneck Attention for Multi-Dimensional Sequence Modeling</a></td><td>34</td><td>1</td><td>Video</td><td>Tucker 분해 기반 저랭크 attention으로 비디오 예측·날씨 예측 효율을 높인 연구로 robotics 적용은 간접적임</td></tr>
+<tr><td>207</td><td><a href='https://arxiv.org/abs/2610.09559'>UniCSI Towards a Universal Wi-Fi CSI Encoder for Ubiquitous Human Sensing</a></td><td>34</td><td>1</td><td>Multimodal</td><td>이종 Wi-Fi CSI 설정을 하나의 foundation encoder로 통합하는 물리 기반 토크나이저로 human sensing 전이에는 참고될 수 있으나 robotics 적용 없음</td></tr>
+<tr><td>208</td><td><a href='https://arxiv.org/abs/2610.09563'>EvoSignal: LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs</a></td><td>34</td><td>1</td><td>RL</td><td>LLM 기반 진화 탐색으로 교통신호 제어 프로그램을 모듈화해 개선하는 연구로 제어정책 설계에는 참고되나 robotics 직접 적용은 아님</td></tr>
+<tr><td>209</td><td><a href='https://arxiv.org/abs/2610.09848'>Stream-Based Active Learning with Cooperative Neural Networks for Data-Efficient Partial Inverse Design: An Automotive Glass Run Channel Case Study</a></td><td>34</td><td>1</td><td>LG</td><td>Monte Carlo dropout 불확실성으로 레이블링할 샘플을 고르는 stream 기반 능동학습 CoNN-AL로 자동차 부품 역설계 문제에 적용된 산업 응용 연구임</td></tr>
+<tr><td>210</td><td><a href='https://arxiv.org/abs/2610.09058'>Learning Cross-Model Activation Alignments with Explicit Many-to-Many Layer Maps</a></td><td>34</td><td>0</td><td>NLP</td><td>서로 다른 LLM 간 layer activation 정렬을 학습하는 해석가능성 연구로 robotics와 무관함</td></tr>
+<tr><td>211</td><td><a href='https://arxiv.org/abs/2610.09196'>Exact Dynamics and Finite-Sample Trajectory Recovery of Linear Recursive Feature Machines</a></td><td>34</td><td>0</td><td>LG</td><td>선형 recursive feature machine의 학습 동역학과 표본복잡도를 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>212</td><td><a href='https://arxiv.org/abs/2610.09212'>CurveTQ: Rotation-Free Trellis Quantization of LLM Weights via Curvature-Weighted Search</a></td><td>34</td><td>0</td><td>LG</td><td>회전 없이 Hessian 곡률을 반영한 2비트 trellis 양자화 기법으로 LLM 압축 engineering에 해당함</td></tr>
+<tr><td>213</td><td><a href='https://arxiv.org/abs/2610.09229'>Conditional Accuracy Profiles: Diagnosing LLM Judges across Deployment Conditions</a></td><td>34</td><td>0</td><td>NLP</td><td>LLM judge의 조건별 정확도를 분해하는 진단 프레임워크로 평가방법론 연구이며 robotics와 무관함</td></tr>
+<tr><td>214</td><td><a href='https://arxiv.org/abs/2610.09311'>Denoising Blocks, Not Tokens: Efficient Compressed Continuous Diffusion with Branching Token Realization</a></td><td>34</td><td>0</td><td>NLP</td><td>토큰 대신 블록 단위로 노이즈를 제거하는 압축 latent diffusion LM으로 텍스트 생성 효율화 연구임</td></tr>
+<tr><td>215</td><td><a href='https://arxiv.org/abs/2610.09409'>Stability and Diversity of Networked Self-Consuming Generative Ecosystems</a></td><td>34</td><td>0</td><td>LG</td><td>여러 생성모델이 서로의 synthetic data를 재학습하는 네트워크 self-consuming 동역학을 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>216</td><td><a href='https://arxiv.org/abs/2610.09476'>CHASE: Channel-Aligned Structure Exploitation for Geometry-Aware Model Engineering</a></td><td>34</td><td>0</td><td>LG</td><td>스펙트럴 정렬 구조를 활용해 KV-cache 압축·pruning·model merging을 통합한 CHASE 프레임워크로 LLM engineering에 해당함</td></tr>
+<tr><td>217</td><td><a href='https://arxiv.org/abs/2610.09620'>The Identifiability and Observability of Deep Normalized Attention</a></td><td>34</td><td>0</td><td>LG</td><td>normalized attention의 식별가능성과 관측가능성을 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>218</td><td><a href='https://arxiv.org/abs/2610.09621'>When does a network&#x27;s training history predict its future learning better than its current state? Evidence from a response probe and a forecasting screen</a></td><td>34</td><td>0</td><td>LG</td><td>네트워크의 학습 이력이 현재 상태보다 미래 학습을 더 잘 예측하는지 검증한 실험 연구로 plasticity 이론에는 기여하나 robotics 적용 없음</td></tr>
+<tr><td>219</td><td><a href='https://arxiv.org/abs/2610.09760'>Leaner Transformers Can Easily Learn to Cluster</a></td><td>34</td><td>0</td><td>LG</td><td>transformer가 k-means Lloyd 알고리즘을 더 작은 임베딩으로 수행하도록 하는 이론 구성과 학습 분석으로 robotics와 무관함</td></tr>
+<tr><td>220</td><td><a href='https://arxiv.org/abs/2610.09827'>Dual-QK: Sharp Queries and Flat Keys for Prunable 2-bit KV Caches</a></td><td>34</td><td>0</td><td>LG</td><td>query와 key에 서로 다른 비직교 변환을 적용해 2비트 KV-cache 양자화와 채널 pruning을 동시에 개선한 Dual-QK로 LLM serving engineering에 해당함</td></tr>
+<tr><td>221</td><td><a href='https://arxiv.org/abs/2610.09838'>Fully Interpretable Minimal Transformers: From Geometry to Algorithm</a></td><td>34</td><td>0</td><td>LG</td><td>임베딩 차원 2로 제한한 transformer의 내부 기하를 전부 시각화해 알고리즘으로 읽어내는 해석가능성 교육 도구로 robotics와 무관함</td></tr>
+<tr><td>222</td><td><a href='https://arxiv.org/abs/2610.09919'>Eigenvalues of the Hessian in Deep Learning: The Origin of Symmetry and Its Breaking</a></td><td>34</td><td>0</td><td>LG</td><td>숨겨진 대칭 참조점에서 벗어남이 Hessian 스펙트럼의 bulk-outlier 구조를 만든다는 이론을 세 가지 아키텍처로 설명한 연구로 robotics와 무관함</td></tr>
+<tr><td>223</td><td><a href='https://arxiv.org/abs/2610.10122'>What Can a Gaussian Process Design Test</a></td><td>34</td><td>0</td><td>LG</td><td>Gaussian process 설계가 관측 전에 이미 어떤 모순을 검증할 수 있는지 Gale duality로 규명한 실험설계 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>224</td><td><a href='https://arxiv.org/abs/2610.10227'>From Prompts to Trees: Effective LLM-Guided Tree Generation for Few-Shot Tabular Classification</a></td><td>34</td><td>0</td><td>NLP</td><td>LLM이 규칙을 생성하고 그 규칙을 트리로 조직화해 few-shot 표형 분류를 해석가능하게 만든 방법으로 robotics와 무관함</td></tr>
+<tr><td>225</td><td><a href='https://arxiv.org/abs/2610.10276'>PatchBench: Measuring Collateral Damage in Activation Patching</a></td><td>34</td><td>0</td><td>NLP</td><td>jailbreak 패치가 인접한 유해·무해 변형에 어떻게 반응하는지 측정하는 PatchBench로 LLM 안전성 평가 벤치마크이며 robotics와 무관함</td></tr>
+<tr><td>226</td><td><a href='https://arxiv.org/abs/2610.09115'>From Uncertainty to Action: Learning to Steer LLM Agents</a></td><td>33</td><td>3</td><td>LG</td><td>불확실성 신호로 agent를 언제 어떻게 조정할지 학습하는 모니터로 failure detection 아이디어에 참고 가치가 있음.</td></tr>
+<tr><td>227</td><td><a href='https://arxiv.org/abs/2610.09639'>On-Policy Distillation Teaches New Skills but Not New Knowledge</a></td><td>33</td><td>1</td><td>NLP</td><td>on-policy distillation이 지식이 아니라 compositional skill만 전달한다는 분석으로 test-time optimization에 참고될 통찰임.</td></tr>
+<tr><td>228</td><td><a href='https://arxiv.org/abs/2610.09835'>A Deafening Silence: Catastrophic Forgetting Lives in the Output Embeddings of Tokens the Data Never Speaks</a></td><td>33</td><td>0</td><td>NLP</td><td>catastrophic forgetting이 미등장 토큰의 output embedding에 집중된다는 분석과 옵티마이저 수정 제안으로 일반화 가능한 학습 통찰임.</td></tr>
+<tr><td>229</td><td><a href='https://arxiv.org/abs/2610.08812'>Taming an End-to-End Autonomous Driving Policy for Urban Navigation of Quadruped Robots</a></td><td>32</td><td>7</td><td>Navigation</td><td>자율주행 trajectory planner를 quadruped 도심 navigation에 goal-conditioned로 확장, TartanGround sim 학습만으로 real-world zero-shot 전이 시도</td></tr>
+<tr><td>230</td><td><a href='https://arxiv.org/abs/2610.09857'>Towards Accurate End-Effector Localization for UMI-Style Robotic Manipulation Teaching</a></td><td>32</td><td>6</td><td>Manipulation</td><td>UMI 스타일 demonstration 수집을 위한 end-effector localization 벤치마크(MILD)와 AprilTag 보강 VIO(AprilVINS) 제안, 기존 SLAM 대비 조작 특화 평가 공백을 메움</td></tr>
+<tr><td>231</td><td><a href='https://arxiv.org/abs/2610.10297'>Energy-Efficient Gait Adaptation via Hierarchical Reinforcement Learning for Quadrupedal Locomotion Across Diverse Terrains</a></td><td>32</td><td>6</td><td>RL</td><td>joint-level 모션 실행과 cost-of-transport 최소화를 분리한 hierarchical RL로 quadruped gait를 지형별로 적응, real AlienGo zero-shot 배치로 검증했으나 efficiency 중심 기여</td></tr>
+<tr><td>232</td><td><a href='https://arxiv.org/abs/2610.09764'>AeroEval: Staged Program and Execution Validation for AI-Generated Drone Missions</a></td><td>32</td><td>5</td><td>Robotics</td><td>LLM 생성 드론 미션 코드를 프로그램·실행 양 단계에서 검증하는 AeroEval, navigation 성공률을 55%에서 95%로 끌어올린 middleware 성격 기여</td></tr>
+<tr><td>233</td><td><a href='https://arxiv.org/abs/2610.09579'>Gradient-Based Trajectory Optimisation over Continuous Poses for Sparse-View Cone-Beam CT</a></td><td>32</td><td>3</td><td>3D Vision</td><td>희소뷰 CBCT를 위한 연속 포즈 trajectory 최적화, 로봇 CT 벤치에서 실행했으나 의료 영상 획득 설계가 핵심</td></tr>
+<tr><td>234</td><td><a href='https://arxiv.org/abs/2610.09873'>Bringing BNNs to Fast Event Processing</a></td><td>32</td><td>3</td><td>CV</td><td>이벤트 카메라 데이터에 binary neural network를 적용하는 polar-wise binary encoding, 효율화 중심이고 로봇 지각에 새 원리는 제공 안 함</td></tr>
+<tr><td>235</td><td><a href='https://arxiv.org/abs/2610.08815'>Bounded Autonomy and Verifiable Safety for Agentic AI Enabled Automation</a></td><td>32</td><td>3</td><td>LG</td><td>SME 제약을 anchor로 두고 위험도에 따라 자율성을 낮추는 bounded autonomy 안전 프레임워크, 산업제어 시뮬레이션 검증이라 물리 로봇 실증은 아니나 안전-critical 자동화에 연관</td></tr>
+<tr><td>236</td><td><a href='https://arxiv.org/abs/2610.09502'>RT-DETR-World: Transferring Rich LLM Semantics to Real-Time Open-Vocabulary Detection</a></td><td>32</td><td>2</td><td>CV</td><td>LLM semantic을 distillation해 real-time open-vocab 검출기를 보강, 검출기 개선이라 로봇 지각 스택에 간접적으로만 연관</td></tr>
+<tr><td>237</td><td><a href='https://arxiv.org/abs/2610.09791'>Counterfactual Route Optimization for Gaussian Head Avatar Modeling</a></td><td>32</td><td>2</td><td>3D Vision</td><td>counterfactual lookahead로 상태별 최적 업데이트 방향을 찾는 head avatar 최적화, counterfactual reasoning을 최적화 스케줄링에 적용했으나 아바타 도메인 한정</td></tr>
+<tr><td>238</td><td><a href='https://arxiv.org/abs/2610.10156'>HeiCo-FOCUS: A Clinically Grounded Dataset for Long-Context Video Understanding</a></td><td>32</td><td>2</td><td>Video</td><td>수술 영상에서 장시간 temporal consistency를 평가하는 임상 벤치마크, 수술 도메인 VQA라 직접적 로봇 제어와는 거리 있음</td></tr>
+<tr><td>239</td><td><a href='https://arxiv.org/abs/2610.10286'>$Δ$Representation: Geometry Supervised Representation Learning of Phenotypes via Counterfactual Reasoning for Medical VLMs</a></td><td>32</td><td>2</td><td>Multimodal</td><td>병변 표현을 정상 해부 표현과의 counterfactual increment로 모델링, counterfactual reasoning 활용이나 의료 VLM 도메인 한정</td></tr>
+<tr><td>240</td><td><a href='https://arxiv.org/abs/2610.10395'>Executing Causal Structure Learning with Linear-Attention Transformers</a></td><td>32</td><td>2</td><td>LG</td><td>causal structure learning 알고리즘을 linear-attention transformer로 정확히 실행시키는 구성적 증명, causal reasoning 우선주제와 연결되나 robot 적용 없음</td></tr>
+<tr><td>241</td><td><a href='https://arxiv.org/abs/2610.10091'>ExperienceIndex: Artifact-Grounded Memory</a></td><td>32</td><td>2</td><td>LG</td><td>artifact 기반 agent memory로 문서 reasoning을 재사용하는 연구로 robot memory 설계 참고는 되나 로봇 도메인은 아님.</td></tr>
+<tr><td>242</td><td><a href='https://arxiv.org/abs/2610.09802'>DisParQ: Self-Supervised Part Concepts for Interpretable Vision Foundation Models</a></td><td>32</td><td>1</td><td>CV</td><td>frozen self-supervised backbone에서 part 단위 discrete concept을 비지도로 학습, 해석가능 표현학습 기여로 로보틱스 연관 약함</td></tr>
+<tr><td>243</td><td><a href='https://arxiv.org/abs/2610.09849'>Hard, Yet Reducible: Controlled Forward Transfer for Synthetic Degradation Curation</a></td><td>32</td><td>1</td><td>CV</td><td>clean-control로 보정한 degradation gap(cRDG)으로 synthetic degradation 데이터를 선별하는 원칙적 방법, dense prediction 일반화 도구이나 로보틱스 특화 아님</td></tr>
+<tr><td>244</td><td><a href='https://arxiv.org/abs/2610.10524'>GRACE: Generation-aware latent compression for efficient video generation</a></td><td>32</td><td>1</td><td>Video</td><td>사전학습된 DiT와 호환되게 비디오 오토인코더를 압축하는 GRACE, 생성 효율화 기여로 로보틱스 무관</td></tr>
+<tr><td>245</td><td><a href='https://arxiv.org/abs/2610.09684'>From Pareto to Preference: Personalized Test-Time Scaling via Amortized Agentic Policy Discovery</a></td><td>32</td><td>1</td><td>NLP</td><td>test-time scaling을 사용자별 다목적 요구에 맞추는 amortized policy discovery로 test-time optimization 주제와 연결되나 로봇 적용은 없음.</td></tr>
+<tr><td>246</td><td><a href='https://arxiv.org/abs/2610.08902'>Agent Plasticity: Measuring Self-Improvement Through Experience</a></td><td>32</td><td>1</td><td>LG</td><td>agent가 경험을 통해 자기개선하는 효율을 측정하는 plasticity 지표로 test-time optimization 평가에 참고 가치가 있음.</td></tr>
+<tr><td>247</td><td><a href='https://arxiv.org/abs/2610.09670'>Quasi-Binarized Autoencoders: An Architecture-Independent Information Bottleneck for Medical Image Anomaly Detection</a></td><td>32</td><td>0</td><td>CV</td><td>정보이론적 bottleneck을 갖는 binarizing layer로 이상탐지 identity collapse 방지, 의료 영상 이상탐지에 한정된 적용</td></tr>
+<tr><td>248</td><td><a href='https://arxiv.org/abs/2610.10303'>On the Necessity of Attention-FFN Split in Vision Transformers</a></td><td>32</td><td>0</td><td>CV</td><td>ViT의 Attention-FFN 분리가 필수적인지 검증하는 아키텍처 분석(uViT), 일반 ViT 과학으로 로보틱스 무관</td></tr>
+<tr><td>249</td><td><a href='https://arxiv.org/abs/2610.10497'>QuadTok: Quadtree Visual Tokenizer for Autoregressive Image Generation</a></td><td>32</td><td>0</td><td>CV</td><td>quadtree 구조로 이미지 영역별 토큰 수를 동적 할당하는 autoregressive 이미지 생성, 토큰화 효율화 기여로 로보틱스 무관</td></tr>
+<tr><td>250</td><td><a href='https://arxiv.org/abs/2610.08823'>HCPN-GCN: Scaling Hierarchical Prototype Networks with Cone Geometry for Continual Graph Learning</a></td><td>32</td><td>0</td><td>LG</td><td>cone geometry 프로토타입으로 continual graph learning의 forgetting을 줄이는 HCPN-GCN, 일반 그래프 학습 기여로 로보틱스 무관</td></tr>
+<tr><td>251</td><td><a href='https://arxiv.org/abs/2610.08975'>The Best Optimizer Depends on Batch Size</a></td><td>32</td><td>0</td><td>LG</td><td>배치 크기에 따라 최적 optimizer가 달라진다는 실증 연구, LLM 사전학습 최적화에 대한 통찰이나 로보틱스 무관</td></tr>
+<tr><td>252</td><td><a href='https://arxiv.org/abs/2610.09025'>SPIN: Shadow Predictive Indexer for Sparse Attention</a></td><td>32</td><td>0</td><td>LG</td><td>sparse attention indexer의 추론 오버헤드를 줄이는 LLM serving 최적화로 robotics 적용점 없음</td></tr>
+<tr><td>253</td><td><a href='https://arxiv.org/abs/2610.09051'>A Self-Pruning Transformer: Extreme KV-Cache Compression with Universal Attention</a></td><td>32</td><td>0</td><td>LG</td><td>RoPE 대체 decay 메커니즘으로 KV-cache를 압축하는 LLM 추론 효율화 연구임</td></tr>
+<tr><td>254</td><td><a href='https://arxiv.org/abs/2610.09092'>MaRK: Markov-adapted Recurrent Kernels for Dynamic Operator Conditioning in State Space Models</a></td><td>32</td><td>0</td><td>LG</td><td>frozen SSM의 recurrence 파라미터를 context로 조절하는 diffusion 적응 기법으로 robotics 적용 없음</td></tr>
+<tr><td>255</td><td><a href='https://arxiv.org/abs/2610.09145'>Noise Your Prompt: Noising Conditioning Tokens in Continuous Diffusion Language Models</a></td><td>32</td><td>0</td><td>NLP</td><td>continuous diffusion 언어모델 학습 시 conditioning 토큰에도 노이즈를 주는 단순 변형으로 조합 추론 과제 일반화를 개선하나 robotics 연관 없음</td></tr>
+<tr><td>256</td><td><a href='https://arxiv.org/abs/2610.09206'>An Accuracy--Information Tradeoff for Loss-Difference Conditional Mutual Information</a></td><td>32</td><td>0</td><td>LG</td><td>손실차이 조건부 상호정보량의 정확도-정보 trade-off를 증명한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>257</td><td><a href='https://arxiv.org/abs/2610.09255'>The Symbol of the Surrogate: Measuring Numerical Provenance in Neural PDE Solvers</a></td><td>32</td><td>0</td><td>LG</td><td>신경망 PDE surrogate가 solver의 수치오차까지 모방함을 보이는 Fourier-symbol 진단 도구로 robotics와 무관함</td></tr>
+<tr><td>258</td><td><a href='https://arxiv.org/abs/2610.09342'>Shared Low-rank Basis Factorization for Data-free Mixture-of-Experts Compression</a></td><td>32</td><td>0</td><td>LG</td><td>data-free weight reconstruction으로 MoE를 압축하는 SLBF 기법으로 LLM serving 효율화에 그침</td></tr>
+<tr><td>259</td><td><a href='https://arxiv.org/abs/2610.09356'>Global Exponential Convergence of Two-Layer Linear Network Training</a></td><td>32</td><td>0</td><td>LG</td><td>wide two-layer linear network의 전역 지수 수렴을 증명한 최적화 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>260</td><td><a href='https://arxiv.org/abs/2610.09415'>Self-Consuming Generative Models with Co-Evolving Human Preferences</a></td><td>32</td><td>0</td><td>LG</td><td>사용자 선호와 생성모델이 공진화하는 self-consuming loop의 장기 동역학을 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>261</td><td><a href='https://arxiv.org/abs/2610.09510'>Physics-Informed Neural Plasticity: PDE Solvers That Reshape Themselves</a></td><td>32</td><td>0</td><td>LG</td><td>PDE solver의 표현 용량을 학습 중 재배치하는 plasticity 기법으로 robotics와 무관함</td></tr>
+<tr><td>262</td><td><a href='https://arxiv.org/abs/2610.09604'>Lightweight and Versatile Learned Optimization by Recombination of Gradient History</a></td><td>32</td><td>0</td><td>LG</td><td>gradient history를 시간대별 평균으로 재조합하는 경량 learned optimizer로 robotics와 무관함</td></tr>
+<tr><td>263</td><td><a href='https://arxiv.org/abs/2610.09633'>Coding-Agent Benchmarks Should Match Their Users&#x27; Task Flows</a></td><td>32</td><td>0</td><td>NLP</td><td>실제 개발자-agent 상호작용 세션을 분석해 코딩 벤치마크의 상호작용 분포가 비현실적임을 보인 연구로 robotics와 무관함</td></tr>
+<tr><td>264</td><td><a href='https://arxiv.org/abs/2610.09994'>Temporal Predictive Multiplicity: Equally Accurate Time Series Models Yield Different Forecast Trajectories</a></td><td>32</td><td>0</td><td>LG</td><td>성능이 비슷한 시계열 모델들이 전체 forecast trajectory 수준에서는 크게 다를 수 있음을 보인 predictive multiplicity 분석으로 robotics와 무관함</td></tr>
+<tr><td>265</td><td><a href='https://arxiv.org/abs/2610.10068'>Efficient Provably Private Classification with a Tabular Foundation Model</a></td><td>32</td><td>0</td><td>LG</td><td>표형 foundation model에 in-context로 차등정보보호 요약을 학습시킨 PrivTab으로 개인정보보호 분류 문제에 한정됨</td></tr>
+<tr><td>266</td><td><a href='https://arxiv.org/abs/2610.10105'>CAFE+FNO: Fourier Kernel Generation via Multiplicative Feature Composition</a></td><td>32</td><td>0</td><td>LG</td><td>Fourier-Chebyshev 특징을 곱셈적으로 결합해 FNO 커널을 생성하는 CAFE+FNO로 PDE 연산자학습 engineering에 해당함</td></tr>
+<tr><td>267</td><td><a href='https://arxiv.org/abs/2610.10186'>Pre-training of Bayesian Optimization Algorithm through Bayesian Optimization</a></td><td>32</td><td>0</td><td>LG</td><td>Bayesian optimization의 하이퍼파라미터를 또 다른 BO로 선택하는 meta-BO 프레임워크로 robotics와 무관함</td></tr>
+<tr><td>268</td><td><a href='https://arxiv.org/abs/2610.10218'>Finite-Sample Approximation of Hessian-Guided Perturbed Wasserstein Gradient Flows</a></td><td>32</td><td>0</td><td>LG</td><td>Hessian 기반 perturbed Wasserstein gradient flow의 유한 입자 근사 오차를 성장하는 시간horizon에서 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>269</td><td><a href='https://arxiv.org/abs/2610.10301'>Revisiting Explainable AI through Model-Independent Concept Dictionaries</a></td><td>32</td><td>0</td><td>CV</td><td>사전 정의된 해석가능 dictionary로 모델 예측을 입력 도메인에서 귀속시키는 DictXAI로 robotics와 무관함</td></tr>
+<tr><td>270</td><td><a href='https://arxiv.org/abs/2610.08807'>Context-Aware Adaptive Pesticide Spraying for Agricultural Robots under Changing Weather and Terrain Using Vision-Language Models</a></td><td>30</td><td>6</td><td>Robotics</td><td>VLM 기반 농업 로봇 농약 분사 적응 프레임워크, crop row 검출 정확도 30% 향상이나 공학적 적용 위주로 novelty는 제한적</td></tr>
+<tr><td>271</td><td><a href='https://arxiv.org/abs/2610.09165'>geodex: A Library for Motion Planning on Riemannian Manifolds</a></td><td>30</td><td>6</td><td>Manipulation</td><td>Riemannian manifold 기반 motion planning을 위한 오픈소스 C++ 라이브러리, 방법론적 novelty보다 도구 기여에 가까움</td></tr>
+<tr><td>272</td><td><a href='https://arxiv.org/abs/2610.09327'>MCFR: A Mask-Guided Coarse-to-Fine Regression Framework for Robust Multi-Variant Board-to-Board Connector Assembly</a></td><td>30</td><td>6</td><td>Manipulation</td><td>mask 기반 coarse-to-fine regression으로 다품종 board-to-board connector 조립 정확도를 높인 산업용 매니퓰레이션, 실제 insertion 성공률 99.25%이나 기여는 engineering 수준</td></tr>
+<tr><td>273</td><td><a href='https://arxiv.org/abs/2610.09536'>MagCilia: A Compact Magnetociliary Tactile Sensor with 3D Force Sensing for Robotic Contact Perception and Grasping Feedback</a></td><td>30</td><td>6</td><td>Manipulation</td><td>유연 magnetic-cilia 구조와 Hall sensor로 3D 접촉력을 측정하는 저가 촉각센서, surface 분류 99.39% 정확도 등 하드웨어 중심 기여</td></tr>
+<tr><td>274</td><td><a href='https://arxiv.org/abs/2610.09590'>Learning Situation-Conditioned Thinking Policies for Long-Term LLM Agents</a></td><td>30</td><td>4</td><td>RL</td><td>장기 agent의 reasoning 경험을 situation 조건부 정책으로 압축하는 memory 프레임워크로 cs.RO 태그를 달았으나 F1 1.000 등 수치가 과도하게 완벽해 검증이 필요함.</td></tr>
+<tr><td>275</td><td><a href='https://arxiv.org/abs/2610.09683'>System Switch: When Should a Fast Decision Model Stop and Think?</a></td><td>30</td><td>4</td><td>RL</td><td>빠른 정책과 느린 reasoning 모델 간 전환 시점을 학습하는 dual-process agent로 로봇 플래너 적용이 언급되나 closed-loop 실험은 목표 달성에 실패함.</td></tr>
+<tr><td>276</td><td><a href='https://arxiv.org/abs/2610.08826'>PanoPed: Beyond Bounding Boxes for Sim-to-Real Panoramic Pedestrian Tracking</a></td><td>30</td><td>3</td><td>CV</td><td>파노라마 보행자 추적에 소형 각도 로컬라이제이션 헤드 추가, 로봇 탑재 카메라 언급되나 개선폭 작은 incremental 기여</td></tr>
+<tr><td>277</td><td><a href='https://arxiv.org/abs/2610.10196'>HuLiGen: Human LiDAR Generation from Parametric Body Models</a></td><td>30</td><td>3</td><td>3D Vision</td><td>파라메트릭 인체 모델에서 human LiDAR 포인트클라우드를 생성하는 flow-matching 모델, 합성 데이터로 LiDAR 기반 pose estimation을 개선하나 로봇 자체 과제는 아님</td></tr>
+<tr><td>278</td><td><a href='https://arxiv.org/abs/2610.09511'>LiG-DETR: Local-in-Global Reassembly in Latent Space for Aerial Object Detection</a></td><td>30</td><td>2</td><td>CV</td><td>항공 영상에서 local-global feature를 재조립하는 DETR 변형, 검출 성능 개선 위주의 엔지니어링 기여</td></tr>
+<tr><td>279</td><td><a href='https://arxiv.org/abs/2610.10391'>MOTIP2: Spatial Priors for End-to-End Multi-Object Tracking</a></td><td>30</td><td>2</td><td>CV</td><td>spatial prior(ID switch bias, 거리가중 손실, anchor)를 end-to-end tracker에 넣은 MOTIP2, MOT 벤치마크 SOTA지만 기존 트래커에 모듈을 더한 수준</td></tr>
+<tr><td>280</td><td><a href='https://arxiv.org/abs/2610.10379'>Continual Learning without Continual Training</a></td><td>30</td><td>2</td><td>LG</td><td>continual training 대신 PFN 기반 in-context Bayesian inference로 continual learning을 수행, robot memory와 개념적으로 연결 가능하나 실험은 비robotics 도메인</td></tr>
+<tr><td>281</td><td><a href='https://arxiv.org/abs/2610.09015'>Personalize at Test Time: Learning User Preferences for Image Generation</a></td><td>30</td><td>1</td><td>Multimodal</td><td>이미지 생성 개인화를 위한 test-time reward 학습, test-time optimization이라는 이름은 맞지만 실제로는 생성 개인화 문제라 로봇과 거리 있음</td></tr>
+<tr><td>282</td><td><a href='https://arxiv.org/abs/2610.09200'>StyleFields: Multi-Scale AdaIN-Modulated Implicit SDFs for Coarse-to-Fine 3D Shape Reconstruction and Editing</a></td><td>30</td><td>1</td><td>3D Vision</td><td>DeepSDF 기반 coarse-to-fine 3D shape 재구성·편집, 자동차 디자인 응용이나 로보틱스와는 거리 있는 generic 3D generative 기여</td></tr>
+<tr><td>283</td><td><a href='https://arxiv.org/abs/2610.09330'>CRT-HMAR: Causal Requirement Tracing-Guided Hierarchical Multi-Agent Regulation for Open-Task-Aware Infrared-Visible Image Fusion</a></td><td>30</td><td>1</td><td>CV</td><td>causal intervention으로 task 요구를 추정해 IR-VIS 영상융합을 open-task화, causal reasoning 활용이나 영상융합 도메인 한정</td></tr>
+<tr><td>284</td><td><a href='https://arxiv.org/abs/2610.09550'>Visual Evidence Under Cross-Examination: Evaluating and Controlling Decision-Level Evidence Use in Vision-Language Models</a></td><td>30</td><td>1</td><td>Multimodal</td><td>VLM이 제시한 시각적 근거가 실제로 정답 후보에 기여하는지 평가하는 벤치마크, 해석가능성 연구로 로보틱스 연관 약함</td></tr>
+<tr><td>285</td><td><a href='https://arxiv.org/abs/2610.10342'>Position Forcing: Self-Conditioning 3D Generation</a></td><td>30</td><td>1</td><td>3D Vision</td><td>VecSet 토큰의 위치를 점진적으로 복원해 피드백하는 self-conditioning 3D 생성(Position Forcing), 3D 생성 품질 개선이나 로보틱스 직접 연관 약함</td></tr>
+<tr><td>286</td><td><a href='https://arxiv.org/abs/2610.08811'>KVFetch: Temporal Prefetching for the Missing Half of KV Cache Compression</a></td><td>30</td><td>1</td><td>NLP</td><td>시퀀셜 접근을 지원하는 KV cache prefetching(KVFetch), LLM 추론 인프라 기여로 로보틱스와는 간접적 연관</td></tr>
+<tr><td>287</td><td><a href='https://arxiv.org/abs/2610.08969'>Work While They Sleep: Exploiting Evaluation Latency for Fully Bayesian Optimization</a></td><td>30</td><td>1</td><td>LG</td><td>평가 지연 시간을 활용해 fully Bayesian optimization을 실용화하는 ELF-BO, 범용 최적화 도구로 로보틱스 무관</td></tr>
+<tr><td>288</td><td><a href='https://arxiv.org/abs/2610.10326'>Average-Reward Reinforcement Learning for Multichain MDPs: A Hierarchical Decomposition Approach</a></td><td>30</td><td>1</td><td>RL</td><td>multichain MDP용 average-reward RL 이론 연구로 model-free gain-optimal 알고리즘 제시, RL 이론 기여지만 robotics 적용 사례 없음</td></tr>
+<tr><td>289</td><td><a href='https://arxiv.org/abs/2610.09665'>SAPD: Step-Aligned Privileged Distillation</a></td><td>30</td><td>1</td><td>NLP</td><td>demonstration만으로 step-aligned 분포적 supervision을 만드는 off-policy distillation이나 로봇 도메인 검증은 없음.</td></tr>
+<tr><td>290</td><td><a href='https://arxiv.org/abs/2610.09450'>Iris-3B: Going Beyond the Latent with Pixel-Space Diffusion Training, Conversion and Fine-Tuning</a></td><td>30</td><td>0</td><td>CV</td><td>pixel-space diffusion이 latent 방식보다 낫지 않다는 negative result 연구, 스케일업 실험 위주라 로보틱스 무관</td></tr>
+<tr><td>291</td><td><a href='https://arxiv.org/abs/2610.09498'>SpatialUQ: Post-Hoc Uncertainty Quantification from Spatial Consistency in Black-Box Vision Models</a></td><td>30</td><td>0</td><td>CV</td><td>공간 crop 간 예측 일관성으로 black-box 비전 모델 불확실성 추정, 임상 도메인 한정이나 일반화 가능한 post-hoc 방법</td></tr>
+<tr><td>292</td><td><a href='https://arxiv.org/abs/2610.09003'>Algorithmic Scratchpads and Curriculum Staging for Arithmetic Reasoning in Tiny Transformers</a></td><td>30</td><td>0</td><td>LG</td><td>작은 transformer의 산술 추론 메커니즘 분석으로 흥미롭지만 로봇학습과 관련성 없음</td></tr>
+<tr><td>293</td><td><a href='https://arxiv.org/abs/2610.09020'>Neighborhood Smoothing for Calibration</a></td><td>30</td><td>0</td><td>LG</td><td>representation 공간 인접성 기반 calibration 정규화 기법으로 일반 분류 문제에 한정됨</td></tr>
+<tr><td>294</td><td><a href='https://arxiv.org/abs/2610.09096'>Are We Really Benchmarking Forecasting Models? The Impact of Preprocessing on Time Series Performance</a></td><td>30</td><td>0</td><td>LG</td><td>시계열 예측 벤치마크의 전처리 편향을 드러낸 비판적 분석으로 robotics와 무관함</td></tr>
+<tr><td>295</td><td><a href='https://arxiv.org/abs/2610.09126'>Domain-informed Adaptive Sampling for Generalizable PINNs in Metal Additive Manufacturing via Conditional Flow Matching</a></td><td>30</td><td>0</td><td>LG</td><td>금속 적층제조 열모델링을 위한 PINN의 적응적 collocation 샘플링 기법으로 robotics와 무관함</td></tr>
+<tr><td>296</td><td><a href='https://arxiv.org/abs/2610.09183'>Q-PACE: Dynamic Precision Allocation for Quantization-Aware Training</a></td><td>30</td><td>0</td><td>LG</td><td>레이어별 curvature 기반 혼합정밀도 학습 기법으로 LLM 양자화 효율화에 그침</td></tr>
+<tr><td>297</td><td><a href='https://arxiv.org/abs/2610.09340'>Benign Overfitting under Heterogeneous Input Fusion</a></td><td>30</td><td>0</td><td>LG</td><td>이질적 입력 결합 시 benign overfitting이 깨질 수 있음을 보인 통계 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>298</td><td><a href='https://arxiv.org/abs/2610.09525'>Align Before You Combine: Reference Space Calibration for Supervision Without Ground Truth</a></td><td>30</td><td>0</td><td>LG</td><td>정답 라벨 없이 여러 scorer를 정렬하는 calibration-first 프레임워크로 robotics와 무관함</td></tr>
+<tr><td>299</td><td><a href='https://arxiv.org/abs/2610.09577'>Online Resource Allocation with an Endogenous Markov State: Fewer LP Solves Earn More</a></td><td>30</td><td>0</td><td>RL</td><td>내생적 Markov 상태를 가진 온라인 자원배분에서 재최적화 빈도와 regret의 관계를 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>300</td><td><a href='https://arxiv.org/abs/2610.09609'>Decoupled Optimization for Teacher-Student Semi-Supervised Learning via a Pioneer Student</a></td><td>30</td><td>0</td><td>LG</td><td>teacher-student 반지도학습에서 파라미터 결합 문제를 보조 branch로 해소하는 Pioneer Student 기법으로 robotics와 무관함</td></tr>
+<tr><td>301</td><td><a href='https://arxiv.org/abs/2610.09675'>Gauss-Newton Accuracy and Indefinite Hessians: Uniform Coexistence in Low-Cost Sets</a></td><td>30</td><td>0</td><td>LG</td><td>ridge-regularized nonlinear least squares에서 Gauss-Newton 곡률 오차와 비정부호 Hessian의 공존을 증명한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>302</td><td><a href='https://arxiv.org/abs/2610.09715'>EC-EarthFlow: Probabilistic emulation of daily transient global climate model simulations with flow matching</a></td><td>30</td><td>0</td><td>LG</td><td>flow matching으로 기후모델 시뮬레이션을 에뮬레이션하는 EC-EarthFlow로 기후과학 응용에 그침</td></tr>
+<tr><td>303</td><td><a href='https://arxiv.org/abs/2610.09768'>Fluctuations of Nonlinear Observables in Mean Field Neural Network Training</a></td><td>30</td><td>0</td><td>LG</td><td>mean field neural network 학습의 nonlinear observable 변동을 함수적 delta method로 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>304</td><td><a href='https://arxiv.org/abs/2610.09844'>For Those Who Believe in Faithfulness: Optimizing the Area Under Insertion and Deletion Curves for Ranking Relative Feature Importance</a></td><td>30</td><td>0</td><td>CV</td><td>insertion/deletion curve의 area를 직접 최적화하는 attribution 손실 Ra-NEM으로 XAI 충실도를 개선한 연구로 robotics와 무관함</td></tr>
+<tr><td>305</td><td><a href='https://arxiv.org/abs/2610.09877'>Layerwise Error Attribution for Fast and Robust Mixed-Precision Post-Training Quantization</a></td><td>30</td><td>0</td><td>LG</td><td>propagated error와 local perturbation을 분리한 probabilistic 레이어별 분석으로 mixed-precision 양자화 할당을 빠르고 견고하게 만든 연구로 engineering 성격이 강함</td></tr>
+<tr><td>306</td><td><a href='https://arxiv.org/abs/2610.09929'>Expected Sample Complexity in Multi-Armed Bandits</a></td><td>30</td><td>0</td><td>RL</td><td>multi-armed bandit의 기대 표본복잡도를 새 ACE 틀로 분석한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>307</td><td><a href='https://arxiv.org/abs/2610.09969'>TR-PTQ: High-Accuracy Integer-Only Transformer Post Training Quantization via Taylor Region Reformulation</a></td><td>30</td><td>0</td><td>LG</td><td>LayerNorm과 GELU의 구조적 오차원을 Taylor region 근사로 정수연산화한 TR-PTQ로 transformer 양자화 engineering에 해당함</td></tr>
+<tr><td>308</td><td><a href='https://arxiv.org/abs/2610.10000'>Beyond Reward Suppression: Near-Optimal Offline Attacks on Warm-Start Bandits with Bounded Rewards</a></td><td>30</td><td>0</td><td>RL</td><td>warm-start bandit에서 target arm을 직접 승격시키는 공격이 최적 비용임을 증명한 adversarial bandit 연구로 robotics와 무관함</td></tr>
+<tr><td>309</td><td><a href='https://arxiv.org/abs/2610.10085'>Activation-Aware Weight Tensorization: A Calibration-Time Preconditioner for Tensor-Network LLM Compression</a></td><td>30</td><td>0</td><td>LG</td><td>activation 분포를 반영한 대각 전처리로 텐서망 LLM 압축의 함수적 오차를 줄인 AWT로 engineering 개선임</td></tr>
+<tr><td>310</td><td><a href='https://arxiv.org/abs/2610.10199'>Robust Decentralized Fairness Auditing</a></td><td>30</td><td>0</td><td>NLP</td><td>분산된 복수 auditor가 LLM 공정성을 감사할 때 fairwashing 공격에 견고한 Auditopus로 robotics와 무관함</td></tr>
+<tr><td>311</td><td><a href='https://arxiv.org/abs/2610.09488'>SiGNgapore - An Interactive Dataset for Sign-based Visual Navigation</a></td><td>28</td><td>6</td><td>Navigation</td><td>맵 없는 navigation을 위한 sign-centric 데이터셋 SiGNgapore 제공, 56개 장기 navigation mission과 scene graph 포함한 벤치마크 성격 기여</td></tr>
+<tr><td>312</td><td><a href='https://arxiv.org/abs/2610.10382'>Semantic-Aware Predictive Mapping for Exploration and Navigation</a></td><td>28</td><td>6</td><td>Navigation</td><td>door 같은 semantic cue가 occupancy map의 모호한 영역 예측을 개선하는지 검증한 좁은 범위 연구, door 영역에서는 뚜렷한 개선이나 전체 지도 성능은 유사</td></tr>
+<tr><td>313</td><td><a href='https://arxiv.org/abs/2610.09710'>SpikingVLA: Asynchronous Spiking Vision-Language-Action Models</a></td><td>28</td><td>6</td><td>VLA</td><td>ANN-to-SNN 변환으로 spiking VLA 추론을 가속하는 연구로 VLA지만 경량화·efficiency 중심의 incremental 기여임.</td></tr>
+<tr><td>314</td><td><a href='https://arxiv.org/abs/2610.09150'>A Unified Kinematic Representation Enables Reusable Biological Joint Moment Estimation</a></td><td>28</td><td>5</td><td>Robotics</td><td>오픈소스 biomechanics 데이터로만 학습한 joint moment estimator가 여러 exoskeleton 플랫폼에 전이됨을 보인 연구, 응용 중심 기여</td></tr>
+<tr><td>315</td><td><a href='https://arxiv.org/abs/2610.10039'>Video-to-Model: Automatic Modeling of Deformable Linear Objects</a></td><td>28</td><td>5</td><td>Manipulation</td><td>비디오만으로 봉합사 같은 deformable linear object의 CBF-CLF-QP 모델 파라미터를 자동 추정하는 video-to-model 프레임워크</td></tr>
+<tr><td>316</td><td><a href='https://arxiv.org/abs/2610.10281'>Making Task Abstractions Executable: Control-Aware Layout Repair for a Fixed Controller</a></td><td>28</td><td>5</td><td>Manipulation</td><td>고정된 controller를 바꾸지 않고 layout만 수정해 task abstraction을 실행 가능하게 만드는 affine 제약 기반 repair, 3개 task abstraction에서 형식적 검증 위주의 좁은 범위 연구</td></tr>
+<tr><td>317</td><td><a href='https://arxiv.org/abs/2610.08822'>A Vehicle-Integrated Approach to Digital Twin Deployment for Bridges Through Drive-By Sensing</a></td><td>28</td><td>3</td><td>LG</td><td>차량 탑재 센서로 다리 상태를 추정하는 digital twin(FNO surrogate+베이지안 최적화), 인프라 모니터링 도메인으로 로보틱스와는 센싱 플랫폼 수준의 간접 연관</td></tr>
+<tr><td>318</td><td><a href='https://arxiv.org/abs/2610.09800'>Beyond Masks and Trajectories: Flow-Guided Latent Action Injection for Stable Surgical Video Generation</a></td><td>28</td><td>2</td><td>Video</td><td>optical flow에서 학습한 latent action으로 surgical video 생성을 제어, latent action 용어는 쓰였으나 로봇 제어가 아닌 영상 생성 문제</td></tr>
+<tr><td>319</td><td><a href='https://arxiv.org/abs/2610.09008'>Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory</a></td><td>28</td><td>2</td><td>LG</td><td>LLM 장기 memory에 discourse ownership을 보존하는 commit rule로 robot memory 설계에 아이디어로 참고 가능함.</td></tr>
+<tr><td>320</td><td><a href='https://arxiv.org/abs/2610.09937'>Where Can a Decision Model Diagnose HVAC Faults? Reasoning Demand, Physical Representation, and Robustness Under Shift</a></td><td>28</td><td>2</td><td>LG</td><td>HVAC 고장진단에서 decision model이 어떤 조건에서 작동하는지 분석한 연구로 failure diagnosis 주제와 연결되나 로봇과는 무관함.</td></tr>
+<tr><td>321</td><td><a href='https://arxiv.org/abs/2610.10120'>RewardWeaver: Long-Horizon Interactive Learning for Language Agents via Self-Evolving Reward Adaptation</a></td><td>28</td><td>2</td><td>RL</td><td>장기 interaction에서 capability bottleneck에 따라 process reward를 자가진화시키는 프레임워크임.</td></tr>
+<tr><td>322</td><td><a href='https://arxiv.org/abs/2610.09242'>Pooling Representation Autoencoders for Efficient Diffusion</a></td><td>28</td><td>1</td><td>CV</td><td>representation autoencoder의 토큰 풀링으로 diffusion 가속, efficiency 기여이나 로보틱스에 새 원리 제공 안 함</td></tr>
+<tr><td>323</td><td><a href='https://arxiv.org/abs/2610.10491'>Insights from Autoresearch for Solar Panel Segmentation</a></td><td>28</td><td>1</td><td>LG</td><td>LLM 코더가 1시간 GPU 예산 내에서 학습 코드를 수정하는 AutoResearch 프로토콜을 솔라패널 분할에 적용, 자동 연구 파이프라인 개념은 흥미롭지만 로보틱스 직접 연관은 없음</td></tr>
+<tr><td>324</td><td><a href='https://arxiv.org/abs/2610.10366'>Koopman Observers for Diffusion Acceleration: Correcting Feature Forecasts with Shallow Measurements</a></td><td>28</td><td>1</td><td>CV</td><td>diffusion sampling 가속을 위한 Koopman 기반 feature forecast 보정, 생성모델 inference 효율화로 robotics는 간접적</td></tr>
+<tr><td>325</td><td><a href='https://arxiv.org/abs/2610.09239'>The Winner&#x27;s Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules</a></td><td>28</td><td>1</td><td>LG</td><td>LLM self-improvement 루프에서 선택 노이즈로 인한 winner&#x27;s curse를 정량화한 연구로 test-time optimization 평가 방법론에 참고됨.</td></tr>
+<tr><td>326</td><td><a href='https://arxiv.org/abs/2610.10513'>SciExam for ENSO: Can AI Agents Build Climate Models?</a></td><td>28</td><td>1</td><td>LG</td><td>AI agent가 ENSO 기후모델을 구축해 발행된 모델보다 나은 성능을 내는 open-ended 과학 벤치마크임.</td></tr>
+<tr><td>327</td><td><a href='https://arxiv.org/abs/2610.09392'>Quantifying Volumetric Risk: Class-Aware Asymmetric Weighted Conformal Prediction for 3D Medical Image Segmentation</a></td><td>28</td><td>0</td><td>CV</td><td>클래스별 비대칭 가중 conformal prediction으로 3D 분할 불확실성을 정량화, 의료 안전성 기여로 도메인 한정</td></tr>
+<tr><td>328</td><td><a href='https://arxiv.org/abs/2610.09408'>TiTok: Audio-Visual LLM for Multi-Segment Temporal Grounding</a></td><td>28</td><td>0</td><td>Video</td><td>오디오-비주얼 LLM으로 다중 구간 temporal grounding, count miscalibration 해결에 RL reward 설계했으나 로보틱스 연관 약함</td></tr>
+<tr><td>329</td><td><a href='https://arxiv.org/abs/2610.09807'>Concentration, Not Uncertainty: Why Targeted Synthetic Data Doesn&#x27;t Help Camouflaged Object Detection</a></td><td>28</td><td>0</td><td>CV</td><td>camouflage object detection에서 synthetic data 타겟팅이 실제론 uncertainty가 아니라 budget 집중 효과였음을 보인 negative result, 방법론적으로 흥미롭지만 좁은 도메인</td></tr>
+<tr><td>330</td><td><a href='https://arxiv.org/abs/2610.10133'>HarnessIR: Harnessing Multimodal Foundation Models for Universal Real-World Image Restoration</a></td><td>28</td><td>0</td><td>CV</td><td>multimodal foundation model을 단일 패스 restoration executor로 활용하는 에이전트 프레임워크, 범용 이미지 복원 기여로 로보틱스 무관</td></tr>
+<tr><td>331</td><td><a href='https://arxiv.org/abs/2610.10266'>LoomSC: Scalable Deep Subspace Clustering with Projector Factorization and Exact Spectral Reduction</a></td><td>28</td><td>0</td><td>LG</td><td>projector factorization과 exact spectral reduction으로 subspace clustering을 선형 시간으로 확장, 일반 ML 클러스터링 기여로 로보틱스 무관</td></tr>
+<tr><td>332</td><td><a href='https://arxiv.org/abs/2610.10306'>One-Shot Adaptive Segmentation For Scientific Images</a></td><td>28</td><td>0</td><td>CV</td><td>단일 참조 이미지로 DINOv3+SAM을 특화하는 one-shot scientific image segmentation, 과학영상 도메인 범용 툴</td></tr>
+<tr><td>333</td><td><a href='https://arxiv.org/abs/2610.10343'>Real-Time Joint Audio-Video Generation by Parallel Adapter Composition</a></td><td>28</td><td>0</td><td>Video</td><td>causal adapter와 few-step adapter를 직교 가중치로 병렬 합성해 실시간 오디오-비디오 생성, 생성 효율화 기여로 로보틱스 무관</td></tr>
+<tr><td>334</td><td><a href='https://arxiv.org/abs/2610.10429'>SGF+: Decoupling Gradient Flows for Autoregressive Video Generation</a></td><td>28</td><td>0</td><td>Video</td><td>context 작성과 denoising에 별도 파라미터를 부여해 autoregressive 비디오 생성의 장시간 일관성을 개선, 생성모델 아키텍처 기여로 로보틱스 무관</td></tr>
+<tr><td>335</td><td><a href='https://arxiv.org/abs/2610.10457'>MORCA: Offline-to-Online Reinforcement Learning for Adaptive Cache Reuse in Video Diffusion Acceleration</a></td><td>28</td><td>0</td><td>LG</td><td>오프라인→온라인 RL로 video diffusion의 캐시 재사용을 학습하는 MORCA, 생성 가속화 기여로 로보틱스 무관</td></tr>
+<tr><td>336</td><td><a href='https://arxiv.org/abs/2610.08820'>Task-Oriented Key-Layer KV Communication for Efficient Latent Multi-Agent Collaboration</a></td><td>28</td><td>0</td><td>NLP</td><td>receiver 과업 충분성 기준으로 핵심 레이어만 전송하는 멀티에이전트 LLM latent 통신(KITE), LLM 인프라 효율화 기여로 로보틱스 무관</td></tr>
+<tr><td>337</td><td><a href='https://arxiv.org/abs/2610.09004'>Removing Information Content Does Not Certify Tamper Resistance in Open-Weight Models</a></td><td>28</td><td>0</td><td>LG</td><td>공개 가중치 모델의 tamper resistance 인증 한계를 다룬 보안 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>338</td><td><a href='https://arxiv.org/abs/2610.09040'>ORACLE: Optimizer-Relative Alignment for Constrained LEarning</a></td><td>28</td><td>0</td><td>LG</td><td>optimizer의 실제 업데이트 기하에서 제약 정합성을 평가하는 ORACLE로 PDE 최적화 제약처리 기법이며 robotics와 무관함</td></tr>
+<tr><td>339</td><td><a href='https://arxiv.org/abs/2610.09052'>BeatFlow-ECG: Rectified Flow for ECG Reconstruction from Indirect Wearable Signals</a></td><td>28</td><td>0</td><td>Multimodal</td><td>PPG·IMU로부터 ECG를 복원하는 rectified flow 모델로 로봇 문제와 무관함</td></tr>
+<tr><td>340</td><td><a href='https://arxiv.org/abs/2610.09059'>EDiS: Edge Disjoint Subgraph Sparsification Framework for Graph Neural Networks</a></td><td>28</td><td>0</td><td>LG</td><td>GNN sparse training을 위한 edge-disjoint subgraph 캐싱 기법으로 incremental engineering에 해당함</td></tr>
+<tr><td>341</td><td><a href='https://arxiv.org/abs/2610.09091'>FedRSPO+: A Heterogeneity-aware Algorithm for Decision-focused Federated Learning</a></td><td>28</td><td>0</td><td>LG</td><td>연합학습 환경의 decision-focused learning 이질성 문제를 다룬 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>342</td><td><a href='https://arxiv.org/abs/2610.09122'>Are Parameter-Efficient Fine-tuning Methods Really Different?</a></td><td>28</td><td>0</td><td>NLP</td><td>LoRA 계열 PEFT 기법들의 스펙트럼 보존 효과를 비교 분석한 연구로 robotics와 무관함</td></tr>
+<tr><td>343</td><td><a href='https://arxiv.org/abs/2610.09272'>Evaluating Trajectory Features for Routing Final-Layer Attention</a></td><td>28</td><td>0</td><td>NLP</td><td>최종층 attention 라우팅을 위한 trajectory feature들이 실제로는 이득이 없음을 보인 음성 결과 연구로 robotics와 무관함</td></tr>
+<tr><td>344</td><td><a href='https://arxiv.org/abs/2610.09282'>Self-attention summary networks for subsurface velocity-model building from common-image gathers</a></td><td>28</td><td>0</td><td>Video</td><td>지하 속도모델 복원을 위한 self-attention 요약망으로 지구물리 응용에 한정됨</td></tr>
+<tr><td>345</td><td><a href='https://arxiv.org/abs/2610.09297'>Node-level Graph Neural Architecture Search Framework</a></td><td>28</td><td>0</td><td>LG</td><td>노드별로 다른 convolution을 탐색하는 GNN architecture search 기법으로 robotics와 무관함</td></tr>
+<tr><td>346</td><td><a href='https://arxiv.org/abs/2610.09425'>What a Reporting Convention Hides: A Matched-Budget Audit of Quantum Natural Gradient with an Exactly Computed Metric</a></td><td>28</td><td>0</td><td>LG</td><td>양자 자연기울기 최적화의 보고 관행이 숨기는 비용 편향을 측정한 벤치마킹 연구로 robotics와 무관함</td></tr>
+<tr><td>347</td><td><a href='https://arxiv.org/abs/2610.09433'>An extended deep energy method for thermo-mechanical crack propagation</a></td><td>28</td><td>0</td><td>LG</td><td>열-기계적 균열 전파를 위한 deep energy method로 재료공학 시뮬레이션에 한정됨</td></tr>
+<tr><td>348</td><td><a href='https://arxiv.org/abs/2610.09456'>GeoPrior-Mamba: Structured Process Priors with Mamba for Fine-Resolution XCO2 Reconstruction</a></td><td>28</td><td>0</td><td>LG</td><td>언어모델 기반 process prior로 XCO2 복원을 돕는 Mamba 모델로 기후과학 응용에 그침</td></tr>
+<tr><td>349</td><td><a href='https://arxiv.org/abs/2610.09519'>Differential Refresh Policies for Models Trained on Lagging Data Snapshots: From a Single-Age Equivalence Limit to an Optimal Per-Segment Allocation</a></td><td>28</td><td>0</td><td>LG</td><td>데이터 staleness를 세그먼트별로 차등 관리하는 모델 재학습 스케줄링 이론으로 production ML ops 문제에 한정됨</td></tr>
+<tr><td>350</td><td><a href='https://arxiv.org/abs/2610.09549'>CircuitGate: Logic-Consistent Circuit-Level Functional Modeling for And-Inverter Graphs</a></td><td>28</td><td>0</td><td>LG</td><td>AIG 회로의 기능적 의존성을 모델링하는 circuit-level 표현학습으로 EDA 응용에 그침</td></tr>
+<tr><td>351</td><td><a href='https://arxiv.org/abs/2610.09651'>Closed-Form Noise Calibration Against Membership Inference for Random-Allocation DP-SGD</a></td><td>28</td><td>0</td><td>LG</td><td>random-allocation DP-SGD의 membership inference 공격 성공률을 닫힌 형태로 보정한 연구로 robotics와 무관함</td></tr>
+<tr><td>352</td><td><a href='https://arxiv.org/abs/2610.09692'>Few-Shot Learning for Personalised Automated Pain Assessment</a></td><td>28</td><td>0</td><td>Multimodal</td><td>few-shot meta-learning으로 개인화된 통증 평가를 수행한 연구로 의료 응용에 그침</td></tr>
+<tr><td>353</td><td><a href='https://arxiv.org/abs/2610.09916'>NeuralZip: Reusable Setup for Fast Lossless Compression</a></td><td>28</td><td>0</td><td>LG</td><td>지수 분포 통계를 재사용 가능한 설정으로 사전계산해 무손실 압축을 빠르게 하는 NeuralZip으로 engineering 성격임</td></tr>
+<tr><td>354</td><td><a href='https://arxiv.org/abs/2610.09946'>Learning Traffic Flow Dynamics with Stochastic Physics-Informed Neural Cellular Automata</a></td><td>28</td><td>0</td><td>LG</td><td>차량 보존을 강제하는 physics-informed neural cellular automaton으로 교통흐름을 학습한 연구로 robotics와 무관함</td></tr>
+<tr><td>355</td><td><a href='https://arxiv.org/abs/2610.09993'>Efficient Patch-Based Anomaly Detection Fused with Diffusion Driven Generative Modeling for Semiconductor Wafer Bin Map Open Set Anomaly Detection</a></td><td>28</td><td>0</td><td>CV</td><td>patch 기반 student-teacher 탐지와 diffusion 재구성을 결합한 반도체 wafer 이상탐지로 산업 응용에 그침</td></tr>
+<tr><td>356</td><td><a href='https://arxiv.org/abs/2610.10057'>WxFM-XL: Adapting Univariate Foundation Models to Multi-Station Weather Forecasting</a></td><td>28</td><td>0</td><td>LG</td><td>단변량 시계열 foundation model을 다중 관측소 날씨예측에 맞게 적응시킨 WxFM-XL로 응용 engineering에 그침</td></tr>
+<tr><td>357</td><td><a href='https://arxiv.org/abs/2610.10128'>m-Set Adversarial Bandits with Winner Feedback</a></td><td>28</td><td>0</td><td>RL</td><td>m-set adversarial bandit의 효용·피드백 조합별 regret 상하한을 증명한 이론 연구로 robotics와 무관함</td></tr>
+<tr><td>358</td><td><a href='https://arxiv.org/abs/2610.10222'>Evaluating Sequence Assembly Strategies for Differentially Private Synthetic Time-Series Forecasting</a></td><td>28</td><td>0</td><td>LG</td><td>차등정보보호 합성 시계열을 이어붙이는 조립 전략이 forecaster별로 다른 효용을 준다는 실증 연구로 robotics와 무관함</td></tr>
+<tr><td>359</td><td><a href='https://arxiv.org/abs/2610.10260'>PairAudit: Guiding Human Review with Graph Tokens under Distribution Shift</a></td><td>28</td><td>0</td><td>LG</td><td>그래프 토큰으로 예측 패턴의 이상치를 찾아 사람 검토 우선순위를 조정하는 PairAudit로 침입탐지 보안 응용에 한정됨</td></tr>
+<tr><td>360</td><td><a href='https://arxiv.org/abs/2610.09489'>Goldsmith: Gold-Loss-Guided Definition Optimization with an Agentic Annotation Harness</a></td><td>28</td><td>0</td><td>NLP</td><td>LLM 기반 annotation 가이드라인 최적화 파이프라인으로 새로운 적용 영역이지만 로보틱스와 무관함.</td></tr>
+<tr><td>361</td><td><a href='https://arxiv.org/abs/2610.08830'>MoR-MLLM: Mixture of Recursions for Efficient Multimodal Large Language Models</a></td><td>27</td><td>1</td><td>Multimodal</td><td>MLLM 효율화를 위한 mixture-of-recursions 적용, efficiency 중심이고 로봇 문제에 새 원리 제공 안 함</td></tr>
+<tr><td>362</td><td><a href='https://arxiv.org/abs/2610.09109'>Breaking Adversarial Transferability in Fine-Tuned Speech Recognition</a></td><td>26</td><td>0</td><td>NLP</td><td>fine-tuned ASR 모델 간 adversarial transfer를 막는 방어 기법으로 robotics와 무관함</td></tr>
+<tr><td>363</td><td><a href='https://arxiv.org/abs/2610.09654'>DSTNet: Dynamic Spectral Trajectory Network for Causal Multi-Horizon Financial Forecasting</a></td><td>26</td><td>0</td><td>LG</td><td>causal wavelet 기반 다중horizon 금융예측 모델로 금융 도메인에 한정됨</td></tr>
+<tr><td>364</td><td><a href='https://arxiv.org/abs/2610.09752'>SoftSEEPS improves ML-based precipitation forecasting</a></td><td>26</td><td>0</td><td>LG</td><td>SEEPS 점수를 미분가능하게 근사해 강수예측 학습에 직접 쓰는 SoftSEEPS로 날씨예측 응용에 한정됨</td></tr>
+<tr><td>365</td><td><a href='https://arxiv.org/abs/2610.09757'>EntroPrefill: Renyi-Guided Context Pruning with Conditional Stability Guarantees for Retrieval-Augmented Generation</a></td><td>26</td><td>0</td><td>NLP</td><td>RAG context pruning의 이론적 안정성 보장을 제시하나 실험 결과가 전혀 없는 순수 이론 연구임</td></tr>
+<tr><td>366</td><td><a href='https://arxiv.org/abs/2610.09792'>A Proof-of-Concept Study of Weakly Supervised Labeling of Fine-Grained EEG Components for Artifact Attenuation</a></td><td>26</td><td>0</td><td>Multimodal</td><td>EEG의 EMG artifact를 weakly supervised로 세분화 탐지하는 연구로 robotics와 무관함</td></tr>
+<tr><td>367</td><td><a href='https://arxiv.org/abs/2610.09187'>Embedded Evaluation of Task Admission Coalescing in Decentralized Multi-Robot Systems</a></td><td>25</td><td>5</td><td>Robotics</td><td>decentralized multi-robot task allocator에서 admission coalescing의 계산-지연 trade-off를 대규모 실측, 시스템 엔지니어링 성격의 실증 연구</td></tr>
+<tr><td>368</td><td><a href='https://arxiv.org/abs/2610.09588'>Adaptive Code Generation for Controlling Robots</a></td><td>25</td><td>5</td><td>Robotics</td><td>LLM이 제약된 로봇 라이브러리 코드를 생성하고 VLM이 의미 접지를 제공하는 adaptive code generation 프레임워크, 아키텍처 통합 수준의 기여</td></tr>
+<tr><td>369</td><td><a href='https://arxiv.org/abs/2610.10180'>Design of a Fully Actuated 4-DOF Robotic Finger With Joint-Specific Hybrid Remote Actuation</a></td><td>25</td><td>5</td><td>Robotics</td><td>joint별로 다른 remote actuation 방식을 쓰는 4-DOF 로봇 손가락 설계, 하드웨어 기구설계 중심 기여</td></tr>
+<tr><td>370</td><td><a href='https://arxiv.org/abs/2610.10346'>Hall Effect-Based Tactile Force Detection Sensor for Robot-Assisted Minimally Invasive Surgery</a></td><td>25</td><td>5</td><td>Manipulation</td><td>수술 로봇 grasper용 Hall effect 기반 소형 3축 force 센서, phantom·porcine tissue 검증 위주의 하드웨어 기여</td></tr>
+<tr><td>371</td><td><a href='https://arxiv.org/abs/2610.10387'>NeRFifyMesh: Optimizing Neural Radiance Fields from Textured Meshes for Robotics Scene Building</a></td><td>25</td><td>5</td><td>3D Vision</td><td>기존 textured mesh를 카메라 렌더링 없이 point 기반 radiance field로 변환해 NeRF robotics scene을 만드는 파이프라인, 도구적 기여</td></tr>
+<tr><td>372</td><td><a href='https://arxiv.org/abs/2610.09466'>LLM-Enabled UAV Dispatch: A System-Level Survey and Taxonomy</a></td><td>25</td><td>5</td><td>Navigation</td><td>LLM 기반 UAV dispatch 시스템을 체계화한 서베이로 새로운 방법 제안은 없음.</td></tr>
+<tr><td>373</td><td><a href='https://arxiv.org/abs/2610.10015'>What the Sleeve Feels: Explainable Machine Learning for Textile Pressure-Based Postural Screening</a></td><td>25</td><td>3</td><td>CV</td><td>압력센서 슬리브로 자세를 분류하는 해석가능 ML로 tactile perception과 느슨히 연결되나 로봇이 아닌 인체 착용형 적용임.</td></tr>
+<tr><td>374</td><td><a href='https://arxiv.org/abs/2610.08825'>Autonomous Driving Research Requires a Community-Driven Data Paradigm</a></td><td>25</td><td>2</td><td>CV</td><td>자율주행 데이터셋 파편화 문제를 지적하는 포지션 페이퍼, 기술적 기여 없음</td></tr>
+<tr><td>375</td><td><a href='https://arxiv.org/abs/2610.09274'>Hardware-aware Calibrated Clustered Attention for Efficient Visual Geometric Transformers</a></td><td>25</td><td>2</td><td>3D Vision</td><td>VGGT의 global attention을 clustered attention으로 가속, 하드웨어 최적화 위주 엔지니어링 기여</td></tr>
+<tr><td>376</td><td><a href='https://arxiv.org/abs/2610.08819'>HydroSphere: A Framework for Governed, Self-Healing Wastewater Infrastructure</a></td><td>25</td><td>2</td><td>RL</td><td>수처리 인프라를 위한 거버넌스형 자가복구 프레임워크(예측+RL 투약+이상탐지), 산업 제어 응용으로 로보틱스 직접 연관 약함</td></tr>
+<tr><td>377</td><td><a href='https://arxiv.org/abs/2610.10332'>Learning to Act with Task Progress: Distilling Small Agents from Compact Teacher Supervision</a></td><td>25</td><td>2</td><td>Embodied AI</td><td>ALFWorld에서 task progress label로 소형 agent를 distillation하나 텍스트 기반이라 실로봇 검증은 없음.</td></tr>
+<tr><td>378</td><td><a href='https://arxiv.org/abs/2610.10071'>HGP:An on-device personalized agent memory via hybrid graph storage</a></td><td>25</td><td>2</td><td>LG</td><td>온디바이스 개인화 agent memory를 hybrid graph로 저장하는 프레임워크로 robot memory 설계에 참고 가능함.</td></tr>
+<tr><td>379</td><td><a href='https://arxiv.org/abs/2610.09478'>InstanceBench: Diagnosing Referential Reasoning and Target Identity in Referring Expression Segmentation</a></td><td>25</td><td>1</td><td>Multimodal</td><td>referring expression segmentation의 instance-level 추론을 진단하는 벤치마크, 일반 비전 벤치마크로 로보틱스 연관 약함</td></tr>
+<tr><td>380</td><td><a href='https://arxiv.org/abs/2610.09458'>Right Number, Wrong State? Measuring Cross-Jurisdiction Substitution in LLM Recall of State Policy</a></td><td>25</td><td>1</td><td>NLP</td><td>주정부 정책 수치 암기 오류를 측정하는 벤치마크로 robotics와 무관함.</td></tr>
+<tr><td>381</td><td><a href='https://arxiv.org/abs/2610.09125'>Depth-to-RGB: Repurposing a Frozen Depth Estimator for Geometry-Guided Compositing</a></td><td>25</td><td>0</td><td>CV</td><td>compositing용 frozen depth estimator를 reference-conditioned하게 미세조정, 이미지 합성 문제로 로보틱스 무관</td></tr>
+<tr><td>382</td><td><a href='https://arxiv.org/abs/2610.09253'>PhyDiCT: Plug-and-Play CT Reconstruction from Sparse X-Rays via Differentiable Rendering and Strong Priors</a></td><td>25</td><td>0</td><td>CV</td><td>희소 X-ray에서 diffusion prior로 training-free CT 재구성, 의료 도메인</td></tr>
+<tr><td>383</td><td><a href='https://arxiv.org/abs/2610.09326'>VIS-Ground: Video Interactive Storytelling with Contextual Grounding</a></td><td>25</td><td>0</td><td>Video</td><td>뷰어 개입이 있는 비디오 스토리텔링의 contextual grounding 정식화, 생성형 비디오 문제로 로보틱스 무관</td></tr>
+<tr><td>384</td><td><a href='https://arxiv.org/abs/2610.09376'>Unified Multi-plane Autoregressive Diffusion for 3D Multi-contrast MRI Synthesis</a></td><td>25</td><td>0</td><td>CV</td><td>multi-plane autoregressive diffusion으로 3D MRI 모달리티 합성, 의료 도메인 효율화 기여</td></tr>
+<tr><td>385</td><td><a href='https://arxiv.org/abs/2610.09492'>Gaussian Material Fields for Volumetric Multi-Energy CT Decomposition</a></td><td>25</td><td>0</td><td>3D Vision</td><td>공유 Gaussian geometry로 multi-energy CT 물질 분해, 의료 3D 재구성</td></tr>
+<tr><td>386</td><td><a href='https://arxiv.org/abs/2610.09723'>MeshCarve: Artisan Mesh Generation with Flow Matching in Compact Latent Spaces</a></td><td>25</td><td>0</td><td>3D Vision</td><td>flow matching으로 압축 latent에서 artisan mesh를 생성, 3D 생성 기여로 로보틱스 무관</td></tr>
+<tr><td>387</td><td><a href='https://arxiv.org/abs/2610.09941'>Purifying Backdoored Large Vision-Language Models by Removing Hijacked Directions</a></td><td>25</td><td>0</td><td>Multimodal</td><td>backdoor weight update 방향을 직교 투영으로 제거하는 LVLM 정화 기법, 보안 연구로 로보틱스 무관</td></tr>
+<tr><td>388</td><td><a href='https://arxiv.org/abs/2610.10238'>Geometry-Supervised Visual Representation Learning for Multi-Phenotype Lesion Interpretation in Medical VLMs</a></td><td>25</td><td>0</td><td>Multimodal</td><td>해부학적 계층을 기하적으로 지도하는 representation learning으로 의료 VLM의 다중 phenotype 병변 해석 개선, 의료 도메인으로 로보틱스 무관</td></tr>
+<tr><td>389</td><td><a href='https://arxiv.org/abs/2610.10335'>When to Unpair: Regulating Pairing Dependence in Medical Visual In-Context Learning</a></td><td>25</td><td>0</td><td>Multimodal</td><td>의료 visual in-context learning의 pairing 의존성을 진단하고 늦은 unpairing curriculum으로 완화, 의료 ICL 방법론</td></tr>
+<tr><td>390</td><td><a href='https://arxiv.org/abs/2610.10396'>Gaussian Density Splatting Network</a></td><td>25</td><td>0</td><td>CV</td><td>군중 수 세기를 연속 2D Gaussian 중첩으로 모델링하는 GDSNet, 응용 특화 문제로 로보틱스 무관</td></tr>
+<tr><td>391</td><td><a href='https://arxiv.org/abs/2610.10423'>GraphRectify: Graph-Based Transfer of Adversarial Example Detectors Across Neural Networks</a></td><td>25</td><td>0</td><td>CV</td><td>서로 다른 classifier backbone 간 adversarial detector를 그래프로 전이, 보안 연구로 로보틱스 무관</td></tr>
+<tr><td>392</td><td><a href='https://arxiv.org/abs/2610.09141'>A Cognitive-Aware QML-CRL Framework for Detecting Affinity and Romance-Investment Fraud</a></td><td>25</td><td>0</td><td>NLP</td><td>양자-고전 하이브리드 회로로 연애 투자 사기 대화를 탐지하는 연구로 robotics와 무관함</td></tr>
+<tr><td>393</td><td><a href='https://arxiv.org/abs/2610.10310'>RSIGym: A Flexible Environment for Recursive Self-Improvement</a></td><td>25</td><td>0</td><td>LG</td><td>recursive self-improvement를 위한 agent 연구 인프라 환경 제공, SWE-bench·수학 등 코딩 중심이라 robotics와 거리가 멈</td></tr>
+<tr><td>394</td><td><a href='https://arxiv.org/abs/2610.10394'>Kernel Autoresearch for Open-Ended Model Discovery</a></td><td>25</td><td>0</td><td>LG</td><td>coding agent가 커널을 설계하는 open-ended model discovery 프레임워크, ML 커널 설계 도구로 robotics 무관</td></tr>
+<tr><td>395</td><td><a href='https://arxiv.org/abs/2610.09087'>U-Space: Uncovering When and Why Uncertainty Arises in Language Models</a></td><td>25</td><td>0</td><td>NLP</td><td>LLM의 불확실성이 언제 어디서 발생하는지 해석 가능한 저차원 subspace로 포착하는 U-Space, 생성 길이에 의존하지 않는 신뢰도 추정이 흥미롭지만 robotics 무관</td></tr>
+<tr><td>396</td><td><a href='https://arxiv.org/abs/2610.09788'>Judging in Latent Space: Efficient Generative Reward Modeling via Semantics-Preserving Compression</a></td><td>25</td><td>0</td><td>NLP</td><td>latent space에서 reward 평가를 압축해 추론 비용을 줄이는 효율화 중심 기여임.</td></tr>
+<tr><td>397</td><td><a href='https://arxiv.org/abs/2610.10049'>The Long Road to the Same Answer: Cognitive Bias Under Escalating Reasoning Budgets in Large Language Models</a></td><td>25</td><td>0</td><td>NLP</td><td>reasoning 토큰을 늘려도 인간형 cognitive bias가 줄지 않는다는 실험 분석임.</td></tr>
+<tr><td>398</td><td><a href='https://arxiv.org/abs/2610.09375'>From Retrieval to Customer Context: Evaluating Frontier-Model Systems for Voice-of-Customer Analysis</a></td><td>24</td><td>0</td><td>NLP</td><td>고객 피드백을 그래프로 구조화해 agent 분석 품질을 높인 산업 응용 연구로 robotics와 무관함</td></tr>
+<tr><td>399</td><td><a href='https://arxiv.org/abs/2610.09631'>Fast and Robust Teach-and-Repeat Navigation Using MixVPR Visual Place Recognition*</a></td><td>22</td><td>5</td><td>Navigation</td><td>MixVPR 기반 경량 teach-and-repeat navigation 시스템, 효율성 중심의 응용 엔지니어링 기여</td></tr>
+<tr><td>400</td><td><a href='https://arxiv.org/abs/2610.09690'>NAViLoss: An Underwater Navigation-Aware Dual-Residual Objective for Physics-Consistent Learning</a></td><td>22</td><td>5</td><td>Navigation</td><td>DVL 기반 AUV 속도 추정에 navigation-aware·uncertainty-aware loss를 도입한 NAViLoss, 44% 정확도 향상이나 손실함수 설계 수준의 기여</td></tr>
+<tr><td>401</td><td><a href='https://arxiv.org/abs/2610.09828'>Enhancing Robotic Perception and Adaptability through Sensor Fusion and Origami-Inspired Designs</a></td><td>22</td><td>5</td><td>Robotics</td><td>origami 휠로 LiDAR 시야각을 능동 조절하는 저가 소형 이동로봇 설계, 하드웨어 통합 중심 기여</td></tr>
+<tr><td>402</td><td><a href='https://arxiv.org/abs/2610.09280'>Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation</a></td><td>22</td><td>4</td><td>RL</td><td>2D에서 co-evolved된 communication이 3D physics 시뮬레이터로 전이되는지 분석한 진화로보틱스 연구, niche하고 robotics 직접 적용은 제한적</td></tr>
+<tr><td>403</td><td><a href='https://arxiv.org/abs/2610.10359'>MultiFly: A Real-World Multimodal Aerial Dataset with Annotation-Efficient Label Transfer and Cross-Modal Semantic Consistency</a></td><td>22</td><td>4</td><td>3D Vision</td><td>RGB 115장만 수동 주석하고 기하 정보로 thermal·LiDAR·radar에 label을 전파하는 UAV 멀티모달 데이터셋, 벤치마크 제공 위주로 방법적 novelty는 제한적</td></tr>
+<tr><td>404</td><td><a href='https://arxiv.org/abs/2610.09127'>CADFather: Autonomous CAD Reconstruction through Coordinated Tool Use</a></td><td>22</td><td>2</td><td>3D Vision</td><td>3D mesh에서 CAD 프로그램을 복원하는 agentic 도구 오케스트레이션으로 3D reconstruction과 느슨히 연결됨.</td></tr>
+<tr><td>405</td><td><a href='https://arxiv.org/abs/2610.09146'>Frozen Models, Evolving Expertise: Model-Agnostic Learning from Deployment Experience for Multimodal Medical AI</a></td><td>22</td><td>2</td><td>Multimodal</td><td>배치 후 frozen VLM이 case별 경험으로 학습하는 모델-무관 프레임워크로 의료 중심이라 로봇 전이는 미검증임.</td></tr>
+<tr><td>406</td><td><a href='https://arxiv.org/abs/2610.10265'>Stale, Misattributed, or Late: Where Personal Memory Fails Before Generation</a></td><td>22</td><td>2</td><td>LG</td><td>개인화 agent memory가 생성 전 단계에서 오래된 값·오귀속으로 실패하는 지점을 분석해 robot memory 설계에 참고 가치가 있음.</td></tr>
+<tr><td>407</td><td><a href='https://arxiv.org/abs/2610.09252'>Adaptive Visual Token Reduction for Accelerated Image Understanding</a></td><td>22</td><td>1</td><td>Multimodal</td><td>명령어 기반 visual token reduction으로 LVLM 추론 가속, incremental efficiency 기여</td></tr>
+<tr><td>408</td><td><a href='https://arxiv.org/abs/2610.09343'>TileSkipper: Region-Adaptive Tile Pruning for 3D Gaussian Splatting</a></td><td>22</td><td>1</td><td>3D Vision</td><td>3DGS 타일 렌더링에 per-Gaussian cutoff 정책을 적용한 속도 최적화, 렌더링 엔지니어링 기여</td></tr>
+<tr><td>409</td><td><a href='https://arxiv.org/abs/2610.09426'>RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement</a></td><td>22</td><td>1</td><td>LG</td><td>연구논문을 재현 가능한 self-improvement 환경으로 변환하는 멀티에이전트 파이프라인임.</td></tr>
+<tr><td>410</td><td><a href='https://arxiv.org/abs/2610.09558'>DrugTargetWorld: A Synthetic Biobank for Training and Benchmarking AI Scientists</a></td><td>22</td><td>1</td><td>LG</td><td>약물 타겟 발견용 인과구조 기반 synthetic biobank 환경으로 로봇과 무관하나 AI scientist 평가 설계는 참고 가치가 있음.</td></tr>
+<tr><td>411</td><td><a href='https://arxiv.org/abs/2610.09832'>SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles</a></td><td>22</td><td>1</td><td>RL</td><td>skill의 생애주기(trial-active-stable-retired)를 두어 agent와 공진화시키는 RL 방법임.</td></tr>
+<tr><td>412</td><td><a href='https://arxiv.org/abs/2610.10164'>UniSkill: Learning Actor-Aligned Skill Proposals for an Evolving Policy</a></td><td>22</td><td>1</td><td>RL</td><td>진화하는 정책에 맞춰 skill 제안을 actor-aligned 방식으로 학습한 연구임.</td></tr>
+<tr><td>413</td><td><a href='https://arxiv.org/abs/2610.10507'>RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing</a></td><td>22</td><td>1</td><td>LG</td><td>증거를 단순 검색이 아니라 계산·합성으로 능동적으로 구성하는 RAG 프레임워크임.</td></tr>
+<tr><td>414</td><td><a href='https://arxiv.org/abs/2610.08813'>Pre-training, Reasoning, Benchmarking: X-ray Report Generation on CheXpert Plus Dataset</a></td><td>22</td><td>0</td><td>Multimodal</td><td>X-ray 리포트 생성 벤치마크와 파이프라인 구축, 의료 영상 도메인이라 로보틱스 연관성 낮음</td></tr>
+<tr><td>415</td><td><a href='https://arxiv.org/abs/2610.09317'>SAREO-FM: Decoupled Semantic Supervision for SAR-EO Foundation Models</a></td><td>22</td><td>0</td><td>Multimodal</td><td>SAR-EO 파운데이션 모델의 modality-semantic 토큰 분리 설계, 원격탐사 도메인으로 로보틱스 무관</td></tr>
+<tr><td>416</td><td><a href='https://arxiv.org/abs/2610.09328'>Visual Jev Rewards: Reference-Bound Verification for Multi-Subject Image Generation</a></td><td>22</td><td>0</td><td>Multimodal</td><td>다중 피사체 이미지 생성을 위한 reference-bound reward 모델, 생성 품질 reward 설계라 로보틱스 무관</td></tr>
+<tr><td>417</td><td><a href='https://arxiv.org/abs/2610.09329'>GRC-Net: Global Representation Consistency Network for Unsupervised Multimodal Anomaly Detection</a></td><td>22</td><td>0</td><td>CV</td><td>멀티모달 이상탐지에 global attention consistency 추가, 산업검사 도메인의 incremental 모듈 기여</td></tr>
+<tr><td>418</td><td><a href='https://arxiv.org/abs/2610.09363'>Closing the Loop on Contrail Avoidance with Satellite Verification</a></td><td>22</td><td>0</td><td>CV</td><td>비행 항적운 회피 검증용 소형 diffusion 분할 모델, 기후 도메인으로 로보틱스 무관</td></tr>
+<tr><td>419</td><td><a href='https://arxiv.org/abs/2610.09383'>PPCAR-Net: Projection-Refined Parametric 3D Coronary Artery Reconstruction from Sparse X-ray Angiographic Views</a></td><td>22</td><td>0</td><td>CV</td><td>희소뷰 X-ray에서 관상동맥을 중심선-반경 파라미터로 직접 재구성, 의료 도메인</td></tr>
+<tr><td>420</td><td><a href='https://arxiv.org/abs/2610.09397'>One Frame, Full Heartbeat: ECG-Free Cardiac Cine MRI Synthesis via Phase-Conditioned Flow Matching</a></td><td>22</td><td>0</td><td>CV</td><td>LV 영역 곡선 기반 phase 추정으로 ECG 없는 심장 MRI 시퀀스 합성, 의료 도메인</td></tr>
+<tr><td>421</td><td><a href='https://arxiv.org/abs/2610.09677'>A Multi-Source Ultrasound Benchmark Revealing the Limits of Contemporary Self-Supervised Anomaly Detection Methods</a></td><td>22</td><td>0</td><td>CV</td><td>다출처 초음파 이상탐지 벤치마크, 기존 self-supervised 방법들의 한계를 드러내는 분석 위주</td></tr>
+<tr><td>422</td><td><a href='https://arxiv.org/abs/2610.09784'>CIRSeg: Coarse-to-Fine Intensity-Robust Liver Segmentation with Source-Free Continual Test-Time Adaptation</a></td><td>22</td><td>0</td><td>CV</td><td>coarse-to-fine cascade와 source-free TTA로 간 MRI 분할 강인성 확보, 의료 도메인</td></tr>
+<tr><td>423</td><td><a href='https://arxiv.org/abs/2610.09860'>DeepTopoClustering: Unsupervised Derivation of Surface Process Taxonomy from 4D Point Clouds for Topographic Monitoring</a></td><td>22</td><td>0</td><td>CV</td><td>4D 포인트클라우드에서 지형 변화 taxonomy를 비지도로 도출, 지형 모니터링 도메인으로 로보틱스 무관</td></tr>
+<tr><td>424</td><td><a href='https://arxiv.org/abs/2610.09875'>SANet: Selective Attention Network for Infrared Small Target Detection</a></td><td>22</td><td>0</td><td>CV</td><td>적외선 소형 표적 탐지를 위한 selective attention fusion, 감시 응용의 incremental 모듈 기여</td></tr>
+<tr><td>425</td><td><a href='https://arxiv.org/abs/2610.10324'>Performance at What Cost? A Sustainability-Aware Performance Index for Cell and Nucleus Instance Segmentation</a></td><td>22</td><td>0</td><td>CV</td><td>성능과 에너지·모델 크기를 함께 평가하는 세포 분할 지속가능성 지표(SAPI), 의료 영상 벤치마킹 방법론으로 로보틱스 무관</td></tr>
+<tr><td>426</td><td><a href='https://arxiv.org/abs/2610.10436'>Detecting Adversarial Images through Response Profiles of Vision-Language Models</a></td><td>22</td><td>0</td><td>Multimodal</td><td>다양한 semantic prompt에 대한 응답 패턴으로 VLM의 adversarial 이미지를 탐지, 보안 연구로 로보틱스 무관</td></tr>
+<tr><td>427</td><td><a href='https://arxiv.org/abs/2610.08810'>Transferability and operational reliability of a Prithvi crop classification foundation model under phenological and geographic shift across three continents</a></td><td>22</td><td>0</td><td>LG</td><td>작물 분류 foundation model의 대륙 간 전이성을 평가, 지리공간 도메인으로 로보틱스 무관</td></tr>
+<tr><td>428</td><td><a href='https://arxiv.org/abs/2610.08817'>DenoFlow: Flow Matching for SSVEP Denoising under Real Physiological Artifacts</a></td><td>22</td><td>0</td><td>LG</td><td>flow matching으로 SSVEP EEG를 디노이징, BCI 신호처리 도메인으로 로보틱스 무관</td></tr>
+<tr><td>429</td><td><a href='https://arxiv.org/abs/2610.08818'>Just for FUNS: LLM-Guided Spatio-Temporal Graph Node Generation for Forecasting Unobserved Node States</a></td><td>22</td><td>0</td><td>LG</td><td>관측되지 않은 노드 상태를 LLM semantic으로 보완해 예측하는 spatio-temporal graph 생성, 교통예측 도메인으로 로보틱스 무관</td></tr>
+<tr><td>430</td><td><a href='https://arxiv.org/abs/2610.09063'>Multi-Label Topic Assignment via LLM Distillation: A Comparative Analysis of Generative vs. Discriminative Student Models</a></td><td>22</td><td>0</td><td>NLP</td><td>이커머스 다중 레이블 토픽 분류를 위한 LLM distillation 비교 연구로 산업 적용 중심임</td></tr>
+<tr><td>431</td><td><a href='https://arxiv.org/abs/2610.09306'>MovieSTAGE: Scene, Transition, and Global Encoding for Movie-fMRI ADHD Classification</a></td><td>22</td><td>0</td><td>CV</td><td>영화 시청 fMRI로 ADHD를 분류하는 신경과학 응용 연구로 robotics와 무관함</td></tr>
+<tr><td>432</td><td><a href='https://arxiv.org/abs/2610.09551'>A Framework for the Systematic Review of ML Assets in AI Registries</a></td><td>22</td><td>0</td><td>LG</td><td>ML 자산 레지스트리를 체계적으로 검토하는 방법론 제안으로 메타연구 성격임</td></tr>
+<tr><td>433</td><td><a href='https://arxiv.org/abs/2610.09927'>KGATE : a Knowledge Graph Embedding Training Environment</a></td><td>22</td><td>0</td><td>LG</td><td>지식그래프 임베딩 오토인코더를 조립식으로 구성하는 학습 환경 라이브러리로 도구 공개 논문임</td></tr>
+<tr><td>434</td><td><a href='https://arxiv.org/abs/2610.10304'>SemanticFold: Latent Sequence Compression SeparatesLanguage Modeling, Decodability, and Reasoning</a></td><td>22</td><td>0</td><td>NLP</td><td>LLM prefix의 latent 압축이 NLL·decodability·reasoning에 서로 다른 방향으로 영향을 준다는 분석이나 robotics와 무관함</td></tr>
+<tr><td>435</td><td><a href='https://arxiv.org/abs/2610.10447'>A Good Self-Teacher Meets the Student Where They Are: Joint On-Policy Learning and Teaching</a></td><td>22</td><td>0</td><td>LG</td><td>privileged self-teacher와 student를 동시 학습시키는 on-policy distillation 방법, 수학·코딩·도구사용 중심으로 robotics 무관</td></tr>
+<tr><td>436</td><td><a href='https://arxiv.org/abs/2610.10536'>Decoupling Exploration from Optimization in RLVR</a></td><td>22</td><td>0</td><td>RL</td><td>novelty bonus로 탐색하는 explorer policy와 student policy를 분리한 RLVR 프레임워크, 수학 reasoning 중심으로 robotics 무관</td></tr>
+<tr><td>437</td><td><a href='https://arxiv.org/abs/2610.08840'>Beyond the Sycophancy Score: How Task, Model, and Pressure Shape LLM Yielding</a></td><td>22</td><td>0</td><td>NLP</td><td>LLM sycophancy가 task·pressure·model에 따라 어떻게 달라지는지 10만 건 규모로 분석, LLM 행동 특성 연구로 robotics 무관</td></tr>
+<tr><td>438</td><td><a href='https://arxiv.org/abs/2610.08887'>Steering Follows Geometry, Not Labels: Emotion Directions in a Full-Duplex Speech Model</a></td><td>22</td><td>0</td><td>NLP</td><td>full-duplex 음성모델 Moshi의 residual stream에서 감정 방향을 활성화 steering으로 조작, 음성 대화 모델 해석 연구로 robotics 무관</td></tr>
+<tr><td>439</td><td><a href='https://arxiv.org/abs/2610.09384'>The Persona Hierarchy Model: Understanding Contextual Generalization in Fine-Tuning LLMs</a></td><td>22</td><td>0</td><td>NLP</td><td>fine-tuning된 behavior가 context를 넘어 일반화되는 정도를 persona hierarchy로 설명하는 이론, robotics 무관</td></tr>
+<tr><td>440</td><td><a href='https://arxiv.org/abs/2610.09398'>IVG-UAV: An Intelligent Voice-Guided UAV System for Autonomous Ripe Fruit Harvesting with Vision-Based Classification and Adaptive Path Planning</a></td><td>20</td><td>5</td><td>Robotics</td><td>음성·VLM·vision 기반 UAV 과일 수확 시스템, Gazebo 시뮬레이션에서만 검증된 통합 시스템 성격의 연구</td></tr>
+<tr><td>441</td><td><a href='https://arxiv.org/abs/2610.09645'>Design optimization of tendon-driven robots considering tendon wrapping and shortcut</a></td><td>20</td><td>4</td><td>Robotics</td><td>tendon-driven arm의 torque-두께 trade-off를 NSGA-II로 최적화하는 설계 연구, 기계 설계 최적화에 가까움</td></tr>
+<tr><td>442</td><td><a href='https://arxiv.org/abs/2610.09021'>Not Every Call Needs a Frontier Model: Per-Call-Site Evaluation of Small Language Models in a Deployed Agentic Home-Automation System</a></td><td>20</td><td>2</td><td>Embodied AI</td><td>가정용 agentic 시스템에서 call-site별 소형 LM 라우팅을 평가한 효율화·엔지니어링 중심 연구임.</td></tr>
+<tr><td>443</td><td><a href='https://arxiv.org/abs/2610.09821'>Efficient 3D Gaussian Head Avatars for Edge Devices</a></td><td>20</td><td>1</td><td>3D Vision</td><td>edge device용 경량 3D Gaussian head avatar 생성기, 효율화 중심의 생성 모델 기여로 로보틱스 무관</td></tr>
+<tr><td>444</td><td><a href='https://arxiv.org/abs/2610.08792'>A Bayesian Mirror Architecture for Emergent Consciousness: Circular Hierarchies, Self-Manifolds, and Hybrid Event-Self Binding</a></td><td>20</td><td>1</td><td>LG</td><td>순환적 자기참조 구조로 의식을 정의하는 Bayesian Mirror Architecture, 수학적 formalism은 있으나 실험적 검증이 전혀 없는 순수 이론 논문</td></tr>
+<tr><td>445</td><td><a href='https://arxiv.org/abs/2610.09733'>Bridge Routing Heads: Where Multilingual Multi-hop Reasoning Lives in LLMs</a></td><td>20</td><td>1</td><td>NLP</td><td>다국어 multi-hop reasoning을 담당하는 attention head를 특정한 메커니즘 해석 연구임.</td></tr>
+<tr><td>446</td><td><a href='https://arxiv.org/abs/2610.10179'>Beyond Outcome Rewards: Constructing and Assigning Retrieval Credit for Search Agents</a></td><td>20</td><td>1</td><td>NLP</td><td>search agent RLVR에서 retrieval 단계별 credit assignment를 설계한 연구임.</td></tr>
+<tr><td>447</td><td><a href='https://arxiv.org/abs/2610.10426'>CoTrace: Data Recipes for Training Terminal Agents with Harness-Model Co-Evolution</a></td><td>20</td><td>1</td><td>NLP</td><td>harness-model co-evolution으로 terminal agent를 학습하는 데이터 레시피 연구임.</td></tr>
+<tr><td>448</td><td><a href='https://arxiv.org/abs/2610.08875'>An Empirical Study of Agent Skills&#x27; Downstream Utility</a></td><td>20</td><td>1</td><td>LG</td><td>Agent Skill의 실제 downstream 유용성을 87개 태스크로 실증 분석한 연구임.</td></tr>
+<tr><td>449</td><td><a href='https://arxiv.org/abs/2610.09197'>FreeEvolve: Learning to Evolve Beyond Fixed Loops</a></td><td>20</td><td>1</td><td>LG</td><td>agent evolver의 탐색 루프 자체를 학습 가능한 skill로 자동화한 연구임.</td></tr>
+<tr><td>450</td><td><a href='https://arxiv.org/abs/2610.09215'>AGAR: a reinforcement learning substrate for LLM program evolution</a></td><td>20</td><td>1</td><td>RL</td><td>LLM program evolution을 MDP로 재formalize해 RL estimator를 적용한 연구임.</td></tr>
+<tr><td>451</td><td><a href='https://arxiv.org/abs/2610.09219'>CM-DPO: Constraint-Margin Direct Preference Optimization for LLM Planning</a></td><td>20</td><td>1</td><td>RL</td><td>제약 위반 정도를 반영한 margin 기반 DPO로 planning 성능을 개선한 연구임.</td></tr>
+<tr><td>452</td><td><a href='https://arxiv.org/abs/2610.09348'>Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA</a></td><td>20</td><td>1</td><td>LG</td><td>장기 memory QA에서 relevance 대신 sufficiency 기준으로 memory set을 구성하는 연구임.</td></tr>
+<tr><td>453</td><td><a href='https://arxiv.org/abs/2610.09484'>MIMESIS: Learning User Simulators as Training Environments for Interactive Agents</a></td><td>20</td><td>1</td><td>LG</td><td>실제 사용자 행동을 모사하는 user simulator로 interactive agent를 훈련한 연구임.</td></tr>
+<tr><td>454</td><td><a href='https://arxiv.org/abs/2610.10042'>Learning to Accumulate Knowledge with Mutual Information</a></td><td>20</td><td>1</td><td>LG</td><td>mutual information 신호로 agent의 knowledge bank 중복을 줄이는 curator를 학습한 연구임.</td></tr>
+<tr><td>455</td><td><a href='https://arxiv.org/abs/2610.10088'>SkillSandbox: Skill Verification via Dynamic Scenario Synthesis</a></td><td>20</td><td>1</td><td>LG</td><td>agent가 distill한 skill의 재사용 가능성을 동적 시나리오 합성으로 검증한 연구임.</td></tr>
+<tr><td>456</td><td><a href='https://arxiv.org/abs/2610.10478'>Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models</a></td><td>20</td><td>1</td><td>LG</td><td>post-training 전 base model의 coding agent 잠재력을 예측하는 스크리닝 지표 연구임.</td></tr>
+<tr><td>457</td><td><a href='https://arxiv.org/abs/2610.08936'>VCR-Bench: A Modular Open-Source Benchmark for Video Classification Robustness</a></td><td>20</td><td>0</td><td>CV</td><td>비디오 분류 로버스트니스 평가용 오픈소스 벤치마크, 새로운 방법론 없음</td></tr>
+<tr><td>458</td><td><a href='https://arxiv.org/abs/2610.08944'>One-Slide Calibration of Pathology Foundation Models</a></td><td>20</td><td>0</td><td>Multimodal</td><td>병리 파운데이션 모델의 스캐너 변동 보정 기법, 의료 도메인이라 로보틱스와 무관</td></tr>
+<tr><td>459</td><td><a href='https://arxiv.org/abs/2610.08983'>Zero-Shot Brain MRI Inpainting with 2.5D Unconditional Flow Priors</a></td><td>20</td><td>0</td><td>Multimodal</td><td>뇌 MRI zero-shot inpainting용 2.5D flow prior, 의료 도메인이라 로보틱스 무관</td></tr>
+<tr><td>460</td><td><a href='https://arxiv.org/abs/2610.09071'>OverLay++: Dense-Overlap Layout-to-Image Generation Dataset</a></td><td>20</td><td>0</td><td>CV</td><td>overlap 밀집 장면을 위한 layout-to-image 데이터셋 확충, 데이터셋 기여 위주로 로보틱스 무관</td></tr>
+<tr><td>461</td><td><a href='https://arxiv.org/abs/2610.09085'>Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend</a></td><td>20</td><td>0</td><td>CV</td><td>GIS에서 지리공간 모델을 여러 backend에서 서빙하는 인터랙티브 시스템, 엔지니어링 툴이라 연구 novelty 낮음</td></tr>
+<tr><td>462</td><td><a href='https://arxiv.org/abs/2610.09185'>One Frame, Full Heartbeat: ECG-Free 4D Cardiac Cine MRI Synthesis via Radial-Decomposed Flow Matching</a></td><td>20</td><td>0</td><td>Multimodal</td><td>ECG 없이 단일 프레임에서 4D 심장 MRI 합성, 의료 도메인으로 로보틱스 무관</td></tr>
+<tr><td>463</td><td><a href='https://arxiv.org/abs/2610.09344'>Do Image Editors Follow Depth-Dependent Blur and Aperture Response? A Rendered-Ground-Truth Pilot Audit</a></td><td>20</td><td>0</td><td>CV</td><td>이미지 에디터의 조리개 블러 물리적 정확성을 렌더링 오라클로 검증한 감사 연구</td></tr>
+<tr><td>464</td><td><a href='https://arxiv.org/abs/2610.09441'>TIRA: Tumor Immune Representation Adaptation for Zero-Shot Cross-Cancer MSI and TMB Prediction</a></td><td>20</td><td>0</td><td>CV</td><td>종양 면역 공간 topology로 MSI/TMB zero-shot 예측 일반화, 의료 도메인</td></tr>
+<tr><td>465</td><td><a href='https://arxiv.org/abs/2610.09755'>Diffusion-Generated Image Watermarking: A Two-Axis Taxonomy and Three Protocol-Bounded Case Studies</a></td><td>20</td><td>0</td><td>CV</td><td>diffusion 워터마킹 방법들을 2축으로 분류한 taxonomy와 사례연구, 서베이성 기여로 로보틱스 무관</td></tr>
+<tr><td>466</td><td><a href='https://arxiv.org/abs/2610.09907'>FedSSMCoOp: SSM Encoders for light-weight Federated Prompt Learning for Few-shot Classification</a></td><td>20</td><td>0</td><td>Multimodal</td><td>SSM 인코더 기반 federated few-shot prompt learning, 의료 영상 federated learning 적용</td></tr>
+<tr><td>467</td><td><a href='https://arxiv.org/abs/2610.10163'>Beyond Anonymous Captions: Grounding Character Identity in Video Captioning and Question Answering</a></td><td>20</td><td>0</td><td>Video</td><td>등장인물 identity를 명시적으로 그라운딩한 비디오 캡셔닝·QA, 로보틱스 무관</td></tr>
+<tr><td>468</td><td><a href='https://arxiv.org/abs/2610.10225'>Masked Feature Encoding for Large-Scale Whole Slide Image Representation</a></td><td>20</td><td>0</td><td>CV</td><td>feature-space masking으로 WSI representation의 slide 내 분산을 억제하는 MIL 기법, 병리 영상 분석 도메인으로 로보틱스 무관</td></tr>
+<tr><td>469</td><td><a href='https://arxiv.org/abs/2610.10311'>Fault-tolerant foundation models</a></td><td>20</td><td>0</td><td>LG</td><td>불량 하드웨어에서도 LLM이 fault-tolerant하게 학습된다는 스케일링 법칙 연구, robotics 적용 없음</td></tr>
+<tr><td>470</td><td><a href='https://arxiv.org/abs/2610.10317'>Thinking in Depth: Retrospective Inference for Tabular Foundation Models</a></td><td>20</td><td>0</td><td>LG</td><td>tabular foundation model의 depth별 예측 정제를 재구성한 아키텍처, robotics 관련성 없음</td></tr>
+<tr><td>471</td><td><a href='https://arxiv.org/abs/2610.10422'>Which Rollout Taught It That? BehaviorTrace and the Limits of Training-Data Attribution in Online RL</a></td><td>20</td><td>0</td><td>RL</td><td>RLVR fine-tuning에서 특정 rollout의 행동 기여를 추적하는 attribution 방법의 한계 분석, LLM RL 연구로 robotics 무관</td></tr>
+<tr><td>472</td><td><a href='https://arxiv.org/abs/2610.10440'>Seq-Flow: Efficient Probabilistic Forecasting with Self-Rollout Error Control</a></td><td>20</td><td>0</td><td>LG</td><td>순차 예측 업데이트를 위한 조건부 flow 모델(Seq-Flow)과 self-rollout 학습, 입자가속기·유체 예측 도메인으로 robotics 무관</td></tr>
+<tr><td>473</td><td><a href='https://arxiv.org/abs/2610.08833'>CoDR: Training-Free Confidence-Drift Remasking for Diffusion Language Models</a></td><td>20</td><td>0</td><td>NLP</td><td>masked diffusion LM에서 confidence drift를 감지해 토큰을 재마스킹하는 training-free 샘플러, robotics 무관</td></tr>
+<tr><td>474</td><td><a href='https://arxiv.org/abs/2610.09569'>RELATE: An Evaluation Framework for measuring Relational Orientation of Large Language Models</a></td><td>20</td><td>0</td><td>NLP</td><td>LLM 감정지원 대화의 관계지향성을 측정하는 평가 프레임워크로 robotics와 무관함.</td></tr>
+<tr><td>475</td><td><a href='https://arxiv.org/abs/2610.09607'>Which Language Should a Skeleton Speak? Language Choices in Multilingual Reasoning</a></td><td>20</td><td>0</td><td>NLP</td><td>다국어 reasoning에서 skeleton 언어 선택 효과를 실험한 연구로 로보틱스와 무관함.</td></tr>
+<tr><td>476</td><td><a href='https://arxiv.org/abs/2610.09772'>Decoupling Logic from Persona: Structural Immunity of Edge LLM Agents to Context Pollution</a></td><td>20</td><td>0</td><td>NLP</td><td>엣지 LLM 에이전트에서 논리와 페르소나를 분리하는 아키텍처로 응용 엔지니어링 성격이 강함.</td></tr>
+<tr><td>477</td><td><a href='https://arxiv.org/abs/2610.09795'>MIRROR: From Imitation to Internalization in LLM Personalization</a></td><td>20</td><td>0</td><td>NLP</td><td>LLM 개인화에서 모방 대신 선호 내재화를 수행하는 self-distillation 기법임.</td></tr>
+<tr><td>478</td><td><a href='https://arxiv.org/abs/2610.10114'>Mechanics of Long-Context Hybrid Models Part 1.1: From Hybrid Attention to Hybrid Position</a></td><td>20</td><td>0</td><td>LG</td><td>hybrid attention·position 조합의 긴 컨텍스트 외삽 메커니즘 분석임.</td></tr>
+<tr><td>479</td><td><a href='https://arxiv.org/abs/2610.10455'>PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs</a></td><td>20</td><td>0</td><td>NLP</td><td>hallucination 이후 reasoning 궤적을 행동적으로 분류하는 벤치마크임.</td></tr>
+<tr><td>480</td><td><a href='https://arxiv.org/abs/2610.10533'>EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory</a></td><td>20</td><td>0</td><td>NLP</td><td>conditional memory 구조에서 factual knowledge를 decoupled로 업데이트하는 기법임.</td></tr>
+<tr><td>481</td><td><a href='https://arxiv.org/abs/2610.08901'>Sequential Probabilistic Uncertainty Estimation for Parallel Multi-Agent Reasoning Systems</a></td><td>20</td><td>0</td><td>LG</td><td>병렬 멀티에이전트 reasoning의 불확실성 추정 기법임.</td></tr>
+<tr><td>482</td><td><a href='https://arxiv.org/abs/2610.08993'>Verify Less, Evolve More: Training Idea-Level Critics for Verification-Efficient ML Evolving Agents</a></td><td>20</td><td>0</td><td>LG</td><td>ML 개선안 평가를 idea-level critic으로 대체해 검증 비용을 줄이는 연구임.</td></tr>
+<tr><td>483</td><td><a href='https://arxiv.org/abs/2610.09139'>Breaking the Space Barrier and its Application to Language Model Inference</a></td><td>20</td><td>0</td><td>LG</td><td>구조화 출력 제약 생성의 이론적 공간복잡도 분석과 추론 가속 연구임.</td></tr>
+<tr><td>484</td><td><a href='https://arxiv.org/abs/2610.09159'>SpecGuard: Proving a Task Is Broken Before the Agent Cheats</a></td><td>20</td><td>0</td><td>LG</td><td>코딩 에이전트의 task-test 충돌을 Lean으로 형식 증명해 사전 차단하는 연구임.</td></tr>
+<tr><td>485</td><td><a href='https://arxiv.org/abs/2610.09164'>Training Language Models To Be Coherent Decision-Makers</a></td><td>20</td><td>0</td><td>LG</td><td>belief 유지와 효용 최대화를 함께 수행하도록 LLM 의사결정을 학습시킨 연구임.</td></tr>
+<tr><td>486</td><td><a href='https://arxiv.org/abs/2610.09188'>From Probabilities to Decisions: Search and Multi-Teacher Distillation with Jev</a></td><td>20</td><td>0</td><td>LG</td><td>확률전용 평가모델 Jev를 체스 탐색·재순위화에 결합한 distillation 연구임.</td></tr>
+<tr><td>487</td><td><a href='https://arxiv.org/abs/2610.09401'>Let the Library Speak: Self-Advertised Method Selection for Formal Proving</a></td><td>20</td><td>0</td><td>LG</td><td>정리 증명에서 방법의 적용가능성을 self-advertisement로 평가해 검색을 개선한 연구임.</td></tr>
+<tr><td>488</td><td><a href='https://arxiv.org/abs/2610.09416'>Efficient Reasoning with Flow Language Models</a></td><td>20</td><td>0</td><td>LG</td><td>flow language model의 연속상태가 reasoning 효율에 기여함을 분석한 연구임.</td></tr>
+<tr><td>489</td><td><a href='https://arxiv.org/abs/2610.09600'>SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models</a></td><td>20</td><td>0</td><td>LG</td><td>LLM 안전 alignment의 refusal circuit 진화를 추적하고 해당 circuit에만 업데이트를 제한한 연구임.</td></tr>
+<tr><td>490</td><td><a href='https://arxiv.org/abs/2610.09624'>How Do Agentic LLMs Decide to Call Tools? A Tool-Call Vector Shaped by Suppression</a></td><td>20</td><td>0</td><td>LG</td><td>agentic LLM의 tool-call 결정을 담당하는 내부 벡터를 메커니즘적으로 규명한 연구임.</td></tr>
+<tr><td>491</td><td><a href='https://arxiv.org/abs/2610.09681'>Cost-Efficient Theorem Proving via Agent Orchestration in Program Verification</a></td><td>20</td><td>0</td><td>LG</td><td>프로그램 검증에서 비용 효율적 정리증명 agent 오케스트레이션 연구임.</td></tr>
+<tr><td>492</td><td><a href='https://arxiv.org/abs/2610.09769'>From Expert-Guided Proof Search to Automated Open-Problem Solving</a></td><td>20</td><td>0</td><td>NLP</td><td>멀티에이전트 정리증명 시스템으로 열린 수학문제 200개를 해결한 연구임.</td></tr>
+<tr><td>493</td><td><a href='https://arxiv.org/abs/2610.09856'>Self-Evolve With a Reference:Anchored Training of Tool-Integrated Agents</a></td><td>20</td><td>0</td><td>LG</td><td>frozen 이전 iteration executor를 historical reference로 써서 self-evolving agent 학습을 안정화한 연구임.</td></tr>
+<tr><td>494</td><td><a href='https://arxiv.org/abs/2610.09890'>Outperformance Inverse Optimization: Learning Objective Functions that Outperform Agent Decisions</a></td><td>20</td><td>0</td><td>LG</td><td>관측된 행동을 능가하는 해를 유도하는 outperformance inverse optimization 이론 연구임.</td></tr>
+<tr><td>495</td><td><a href='https://arxiv.org/abs/2610.10405'>Reasoning-Token Spikes Under Prompted Untruthful Responding in Large Language Models</a></td><td>20</td><td>0</td><td>NLP</td><td>거짓 응답을 지시받았을 때 reasoning 토큰 수가 변하는 현상을 탐지 신호로 제안한 연구임.</td></tr>
+<tr><td>496</td><td><a href='https://arxiv.org/abs/2610.10352'>The Handover Problem: Governing Autonomy Transitions in Human-AI Collaboration</a></td><td>18</td><td>2</td><td>LG</td><td>human-AI 협업에서 자율성 전환 시점을 governance 지표로 공식화한 연구임.</td></tr>
+<tr><td>497</td><td><a href='https://arxiv.org/abs/2610.08900'>Humanize: Judgement Engineering for Agentic Coding</a></td><td>18</td><td>1</td><td>LG</td><td>멀티에이전트 코딩 워크플로우 judgement engineering 사례 보고로 통제 비교는 없음.</td></tr>
+<tr><td>498</td><td><a href='https://arxiv.org/abs/2610.09237'>Trajectory Abstraction for the Science of Language Agent Behavior</a></td><td>18</td><td>1</td><td>LG</td><td>language agent 행동을 과학적으로 분석하기 위한 trajectory abstraction 방법론임.</td></tr>
+<tr><td>499</td><td><a href='https://arxiv.org/abs/2610.09077'>DISRQAD: Diffusion Image Super-Resolution Quality Assessment Dataset and Benchmark</a></td><td>18</td><td>0</td><td>CV</td><td>diffusion 기반 super-resolution 품질평가 데이터셋, 로보틱스 무관</td></tr>
+<tr><td>500</td><td><a href='https://arxiv.org/abs/2610.09217'>A Deterministic Evidence Layer for Vision-Language Autism Screening from Naturalistic Home Video</a></td><td>18</td><td>0</td><td>Multimodal</td><td>가정 비디오 기반 자폐 스크리닝, 의료 도메인이라 로보틱스 무관</td></tr>
+<tr><td>501</td><td><a href='https://arxiv.org/abs/2610.09223'>PVSync: A Unified Lip-Sync Expert for Timing and Articulation</a></td><td>18</td><td>0</td><td>Video</td><td>립싱크 타이밍·조음을 함께 평가하는 통합 모델, 로보틱스 무관</td></tr>
+<tr><td>502</td><td><a href='https://arxiv.org/abs/2610.09275'>EM-SNN: Efficiently Modulated Spiking Neural Network for Remote Sensing Image Dehazing</a></td><td>18</td><td>0</td><td>CV</td><td>spiking network 기반 원격탐사 영상 디헤이징, 효율화 목적의 도메인 특화 기여</td></tr>
+<tr><td>503</td><td><a href='https://arxiv.org/abs/2610.09459'>An Invariant Tangent-Angle Descriptor and a Band U-Net for 2D Fragment Adjacency Prediction</a></td><td>18</td><td>0</td><td>CV</td><td>2D 조각 인접성 예측에 회전 불변 tangent-angle descriptor 적용, 퍼즐 복원 도메인으로 로보틱스 무관</td></tr>
+<tr><td>504</td><td><a href='https://arxiv.org/abs/2610.09598'>STORK: Spatio-Temporal Observation of uterine contRactions via neural networKs</a></td><td>18</td><td>0</td><td>CV</td><td>태아 MRI에서 자궁 수축을 약지도로 탐지하는 다중 인스턴스 학습, 의료 도메인</td></tr>
+<tr><td>505</td><td><a href='https://arxiv.org/abs/2610.09702'>Latent Watermarks under Generative Editing: A Benchmark and Analysis of Detection Survival</a></td><td>18</td><td>0</td><td>CV</td><td>생성 편집 후에도 살아남는 latent watermark 벤치마크, 로보틱스 무관</td></tr>
+<tr><td>506</td><td><a href='https://arxiv.org/abs/2610.09823'>UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation</a></td><td>18</td><td>0</td><td>CV</td><td>밀집 텍스트 렌더링 평가용 이중언어 벤치마크, 로보틱스 무관</td></tr>
+<tr><td>507</td><td><a href='https://arxiv.org/abs/2610.09830'>MOTIF: Person-of-Interest Deepfake Detection Beyond 3DMM Coefficients</a></td><td>18</td><td>0</td><td>CV</td><td>3DMM 계수를 분해해 POI 딥페이크 탐지에 기여하는 분석, 로보틱스 무관</td></tr>
+<tr><td>508</td><td><a href='https://arxiv.org/abs/2610.09952'>MSU Team at the Explainable Deepfake Detection Challenge 2026: Grounded Artifact Evidence for Deepfake Detection</a></td><td>18</td><td>0</td><td>CV</td><td>딥페이크 탐지·설명 챌린지 제출 리포트, 로보틱스 무관</td></tr>
+<tr><td>509</td><td><a href='https://arxiv.org/abs/2610.10003'>Perceptually Aligned Evaluation of Style Transfer</a></td><td>18</td><td>0</td><td>CV</td><td>스타일 전이 평가를 위한 human preference 기반 학습된 평가지표, 로보틱스 무관</td></tr>
+<tr><td>510</td><td><a href='https://arxiv.org/abs/2610.10012'>Playing with Kruskal: algorithms for flat and hierarchical watershed cuts</a></td><td>18</td><td>0</td><td>CV</td><td>watershed 분할 알고리즘들을 집대성한 리뷰성 논문, 새로운 기여 없음</td></tr>
+<tr><td>511</td><td><a href='https://arxiv.org/abs/2610.10047'>AdSpark: A Large-Scale Dataset and Benchmark for Product-Centric Advertisement Video Generation</a></td><td>18</td><td>0</td><td>Video</td><td>광고 영상 생성을 위한 대규모 데이터셋·벤치마크, 로보틱스 무관</td></tr>
+<tr><td>512</td><td><a href='https://arxiv.org/abs/2610.10066'>From Pixel to Coding: Evaluating the Figure Reproduction Capabilities of MLLMs</a></td><td>18</td><td>0</td><td>Multimodal</td><td>MLLM의 그림-코드 재현 능력을 평가하는 벤치마크, 로보틱스 무관</td></tr>
+<tr><td>513</td><td><a href='https://arxiv.org/abs/2610.10160'>BagDINO: Multi-View Baggage Re-Identification with DINOv3</a></td><td>18</td><td>0</td><td>CV</td><td>DINOv3에 LoRA를 적용한 수하물 재인식, 로보틱스 무관</td></tr>
+<tr><td>514</td><td><a href='https://arxiv.org/abs/2610.10334'>How Private is Private? A Comparative Study for Face De-Identification</a></td><td>18</td><td>0</td><td>CV</td><td>얼굴 비식별화 평가를 통일하는 벤치마크와 지표, 프라이버시 도메인으로 로보틱스 무관</td></tr>
+<tr><td>515</td><td><a href='https://arxiv.org/abs/2610.10473'>Label-free cell counting and viability prediction with brightfield imaging and deep learning</a></td><td>18</td><td>0</td><td>CV</td><td>염색 없이 brightfield 영상으로 세포 생존율을 예측하는 AI 소프트웨어, 바이오 도메인으로 로보틱스 무관</td></tr>
+<tr><td>516</td><td><a href='https://arxiv.org/abs/2610.08977'>SNR-Gated LSTM-Conditioned Diffusion Model for MIMO Channel Estimation</a></td><td>18</td><td>0</td><td>LG</td><td>LSTM 조건화 diffusion으로 MIMO 채널을 추정, 무선통신 도메인으로 로보틱스 무관</td></tr>
+<tr><td>517</td><td><a href='https://arxiv.org/abs/2610.10349'>AutoAdapt: Automatic Domain Discovery Enables Low-Cost Extensibility</a></td><td>18</td><td>0</td><td>LG</td><td>LoRA adapter 기반 도메인 자동 발견·확장 프레임워크, instruction-tuned LLM 도메인 적응 문제로 robotics와 무관함</td></tr>
+<tr><td>518</td><td><a href='https://arxiv.org/abs/2610.08858'>LRCC: Generalizing Low-Rank Compression with Conditional Computation</a></td><td>18</td><td>0</td><td>LG</td><td>저랭크 압축에 token-wise 조건부 라우팅을 추가한 LLM 경량화 기법, robotics 무관</td></tr>
+<tr><td>519</td><td><a href='https://arxiv.org/abs/2610.09111'>Same Text, Different Prediction: Serving-Context Nondeterminism in Text Classifiers</a></td><td>18</td><td>0</td><td>NLP</td><td>batch 구성 등 serving context가 텍스트 분류기 예측을 바꿀 수 있음을 보인 재현성 연구, robotics 무관</td></tr>
+<tr><td>520</td><td><a href='https://arxiv.org/abs/2610.09163'>ToolRACER: A Robust Agentic Conversation Emulation Resource for Agent Training and Evaluation</a></td><td>18</td><td>0</td><td>NLP</td><td>비협조적 사용자 행동까지 포함한 멀티턴 tool-calling 대화 데이터 생성 파이프라인, robotics 무관</td></tr>
+<tr><td>521</td><td><a href='https://arxiv.org/abs/2610.10058'>Cache the Encoder Within:Compact, Reusable Memory across LLM Queries</a></td><td>18</td><td>0</td><td>NLP</td><td>LLM 쿼리 간 재사용 가능한 encoder 캐시 압축 기법으로 효율화 중심 기여임.</td></tr>
+<tr><td>522</td><td><a href='https://arxiv.org/abs/2610.09013'>Enabling Dynamic Computation in Looped LMs</a></td><td>18</td><td>0</td><td>LG</td><td>looped LM의 동적 계산을 위한 KV 캐싱 전략으로 효율화 중심 기여임.</td></tr>
+<tr><td>523</td><td><a href='https://arxiv.org/abs/2610.09193'>Bookkeeping, Composition, or Unreachable Gold? Reading MemoryAgentBench&#x27;s Conflict-Resolution Scores Against a Frozen Last-Write Resolver</a></td><td>18</td><td>0</td><td>LG</td><td>MemoryAgentBench의 conflict resolution 점수를 zero-learning resolver로 재해석한 비판 연구임.</td></tr>
+<tr><td>524</td><td><a href='https://arxiv.org/abs/2610.09243'>We Query, Therefore We Compute: On Oracle Computation beyond the Machine, with an Application to Agents</a></td><td>18</td><td>0</td><td>LG</td><td>LLM을 oracle로 보는 추상 기계 이론과 OS 유사 agentic 시스템 설계 연구임.</td></tr>
+<tr><td>525</td><td><a href='https://arxiv.org/abs/2610.09360'>TopoGraphRAG-Bench: Evaluating Multimodal GraphRAG on Layout-Grounded Evidence Reasoning</a></td><td>18</td><td>0</td><td>Multimodal</td><td>layout 기반 문서의 multimodal GraphRAG 평가 벤치마크임.</td></tr>
+<tr><td>526</td><td><a href='https://arxiv.org/abs/2610.09493'>The Attribution Blind Spot: Layerwise Trajectory Diagnostics for Source Reliance in Retrieval-Augmented Language Models</a></td><td>18</td><td>0</td><td>NLP</td><td>RAG 모델의 source reliance를 layerwise latent trajectory로 진단한 연구임.</td></tr>
+<tr><td>527</td><td><a href='https://arxiv.org/abs/2610.09872'>LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets</a></td><td>18</td><td>0</td><td>LG</td><td>실시간 금융시장에서 LLM agent 능력을 outcome과 분리해 진단하는 벤치마크임.</td></tr>
+<tr><td>528</td><td><a href='https://arxiv.org/abs/2610.09973'>From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents</a></td><td>18</td><td>0</td><td>LG</td><td>jailbreaking을 기대 유해성과 목표우도 최적화 간 수학적으로 통합한 재구성 연구임.</td></tr>
+<tr><td>529</td><td><a href='https://arxiv.org/abs/2610.10358'>Open-MMUnlearning: Unifying Methods and Evaluation for MLLM Unlearning</a></td><td>18</td><td>0</td><td>Multimodal</td><td>멀티모달 LLM unlearning 방법·평가를 통합한 오픈소스 프레임워크임.</td></tr>
+<tr><td>530</td><td><a href='https://arxiv.org/abs/2610.09315'>ClimbLab: MATLAB Simulation Platform for Legged Climbing Robotics</a></td><td>15</td><td>4</td><td>Robotics</td><td>legged climbing robot을 위한 MATLAB 시뮬레이션 플랫폼, 2021년 CLAWAR 논문의 재게재 성격으로 novelty는 낮음</td></tr>
+<tr><td>531</td><td><a href='https://arxiv.org/abs/2610.08793'>Adaptive Workflow Intelligence: A Cognitive Architecture for Context-Driven Enterprise Automation</a></td><td>15</td><td>1</td><td>Embodied AI</td><td>기업 워크플로우용 PCAR 인지 아키텍처로 시뮬레이션 평가뿐이고 로봇과는 무관함.</td></tr>
+<tr><td>532</td><td><a href='https://arxiv.org/abs/2610.09037'>When the Governor Becomes the Disturbance: Control-Generated Disturbance and Cost-Aware Backoff in Governed Tool-Using Agents</a></td><td>15</td><td>1</td><td>LG</td><td>tool 사용 에이전트에서 governor의 개입이 오히려 방해가 되는 현상과 완화책을 다룬 연구임.</td></tr>
+<tr><td>533</td><td><a href='https://arxiv.org/abs/2610.10184'>Agentic AI-Assisted Modeling for Production Scheduling: Assessment in Constraint Programming</a></td><td>15</td><td>1</td><td>LG</td><td>생산 스케줄링용 제약계획 모델을 LLM agent로 자동 생성하는 평가 연구임.</td></tr>
+<tr><td>534</td><td><a href='https://arxiv.org/abs/2610.09191'>R-CNN-Based Chess Position Recognition</a></td><td>15</td><td>0</td><td>CV</td><td>R-CNN 기반 체스판 인식, 로보틱스 응용 가능성 거의 없는 순수 인식 과제</td></tr>
+<tr><td>535</td><td><a href='https://arxiv.org/abs/2610.09439'>InscriptionOCR: A Dataset and Method for Understanding Inscriptions</a></td><td>15</td><td>0</td><td>NLP</td><td>고대 브라흐미 문자 OCR·번역 파이프라인과 데이터셋, 로보틱스 무관</td></tr>
+<tr><td>536</td><td><a href='https://arxiv.org/abs/2610.09449'>From Global Alignment to Local Grounding: Zero-Shot Chinese Character Recognition with Radical Verification</a></td><td>15</td><td>0</td><td>CV</td><td>중국어 문자 zero-shot 인식에 radical 검증 모듈 추가, 로보틱스 무관</td></tr>
+<tr><td>537</td><td><a href='https://arxiv.org/abs/2610.09614'>Identity-Duplication Auditing in National-Scale Neuroimaging Repositories</a></td><td>15</td><td>0</td><td>CV</td><td>신경영상 레포지토리의 중복 피험자 식별 파이프라인, 데이터 위생 문제로 로보틱스 무관</td></tr>
+<tr><td>538</td><td><a href='https://arxiv.org/abs/2610.09706'>Enhancing Multi-Region Stylization with Interior-Guided Boundary Repair</a></td><td>15</td><td>0</td><td>CV</td><td>영역별 스타일 전이 경계 아티팩트를 보간으로 복원, 로보틱스 무관</td></tr>
+<tr><td>539</td><td><a href='https://arxiv.org/abs/2610.09726'>Beyond Group Splits: Specimen-Level Cross-Validation and Visual Attribution for Remaining-Shelf-Life Regression in Climacteric Fruit</a></td><td>15</td><td>0</td><td>CV</td><td>아보카도 유통기한 회귀에서 specimen 단위 교차검증의 중요성을 지적, 농업 응용으로 로보틱스 무관</td></tr>
+<tr><td>540</td><td><a href='https://arxiv.org/abs/2610.09742'>SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Foul Videos</a></td><td>15</td><td>0</td><td>Video</td><td>심판 판정 참고를 위한 축구 파울 영상 retrieval 벤치마크, 로보틱스 무관</td></tr>
+<tr><td>541</td><td><a href='https://arxiv.org/abs/2610.08809'>Beyond Baseline Severity: Temporal and Disease-Specific Predictors of Depression Outcomes Following Mindfulness Interventions</a></td><td>15</td><td>0</td><td>LG</td><td>마음챙김 중재 후 우울증 결과를 예측하는 해석가능 ML 분석, 임상 도메인으로 로보틱스 무관</td></tr>
+<tr><td>542</td><td><a href='https://arxiv.org/abs/2610.08882'>FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks</a></td><td>15</td><td>0</td><td>NLP</td><td>금융 과제를 위한 LoRA 어댑테이션 연구, 로보틱스 무관</td></tr>
+<tr><td>543</td><td><a href='https://arxiv.org/abs/2610.10314'>PoreML: A Data-Driven Framework for Learning Multiphase Flow in Porous Media</a></td><td>15</td><td>0</td><td>LG</td><td>다공성 매체 다상 유동 예측용 데이터셋·시뮬레이터 프레임워크, robotics와 무관한 유체역학 도메인</td></tr>
+<tr><td>544</td><td><a href='https://arxiv.org/abs/2610.10368'>Input-Blind Controls Produce Substantial Oracle Headroom for Layer Programs in Multiple-Choice Evaluation</a></td><td>15</td><td>0</td><td>LG</td><td>layer-skipping adaptive computation의 oracle headroom이 input-blind control로도 재현된다는 비판적 분석, robotics 무관</td></tr>
+<tr><td>545</td><td><a href='https://arxiv.org/abs/2610.10381'>ResidualQuant: KV Cache Quantization for Looped Transformers with 2-Bit Residuals</a></td><td>15</td><td>0</td><td>LG</td><td>looped Transformer의 KV cache를 2-bit residual로 압축하는 기법, 순수 efficient inference로 robotics 무관</td></tr>
+<tr><td>546</td><td><a href='https://arxiv.org/abs/2610.10398'>Cross-Domain Pretraining for Steady-State Neural CFD Surrogates</a></td><td>15</td><td>0</td><td>LG</td><td>CFD surrogate의 cross-domain pretraining 효과 분석, robotics와 무관한 유체역학 시뮬레이션 연구</td></tr>
+<tr><td>547</td><td><a href='https://arxiv.org/abs/2610.10411'>Training Parallel Speculative Draft Models by Directly Minimizing Expected Decoding Rounds</a></td><td>15</td><td>0</td><td>NLP</td><td>speculative decoding draft model을 expected decoding round 목표로 직접 학습, LLM 추론 가속 연구로 robotics 무관</td></tr>
+<tr><td>548</td><td><a href='https://arxiv.org/abs/2610.10460'>Composing What Each Teacher Learned: Multi-Teacher On-Policy Distillation through Teacher-Relative Shifts</a></td><td>15</td><td>0</td><td>NLP</td><td>multi-teacher on-policy distillation에서 teacher-relative shift를 전달하는 기법, LLM post-training 연구로 robotics 무관</td></tr>
+<tr><td>549</td><td><a href='https://arxiv.org/abs/2610.10499'>Oracle-Efficient and Parameter-Free Agnostic Smoothed Online Learning</a></td><td>15</td><td>0</td><td>LG</td><td>agnostic smoothed online learning에서 parameter-free oracle-efficient 알고리즘 제시, 이론 연구로 robotics 무관</td></tr>
+<tr><td>550</td><td><a href='https://arxiv.org/abs/2610.10519'>Why Forget-Only Unlearning Needs Memorization</a></td><td>15</td><td>0</td><td>LG</td><td>forget-only unlearning이 성립하려면 memorization이 필요함을 보이는 이론 연구, robotics 무관</td></tr>
+<tr><td>551</td><td><a href='https://arxiv.org/abs/2610.10520'>Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs</a></td><td>15</td><td>0</td><td>LG</td><td>GNN-to-MLP distillation에서 curvature 기반 spectral 정렬 기법, robotics 무관</td></tr>
+<tr><td>552</td><td><a href='https://arxiv.org/abs/2610.08794'>Tokka-Bench: Evaluating Tokenizers Across 100 Natural and 20 Programming Languages</a></td><td>15</td><td>0</td><td>NLP</td><td>100개 자연어·20개 프로그래밍 언어에 대한 tokenizer 평가 프레임워크, robotics와 무관한 benchmark 인프라 논문</td></tr>
+<tr><td>553</td><td><a href='https://arxiv.org/abs/2610.08827'>Child ASR Adaptation with Adult Retention: An Empirical Study</a></td><td>15</td><td>0</td><td>NLP</td><td>아동 음성 ASR 적응과 성인 성능 유지의 trade-off를 비교 연구, robotics 무관</td></tr>
+<tr><td>554</td><td><a href='https://arxiv.org/abs/2610.08829'>Emo-Jev: Probabilistic Reasoning for Emotion Classification with Jev</a></td><td>15</td><td>0</td><td>NLP</td><td>질문 분해 기반 확률적 추론으로 감정 분류를 수행하는 training-free 프레임워크, robotics 무관</td></tr>
+<tr><td>555</td><td><a href='https://arxiv.org/abs/2610.08842'>Beyond Risk Prediction: Evidence Grounding and Psychosocial Factor Verification for Explainable Suicide Risk Assessment</a></td><td>15</td><td>0</td><td>NLP</td><td>자살 위험 평가에 증거 근거와 심리사회적 요인 검증을 추가한 설명가능 프레임워크, robotics 무관</td></tr>
+<tr><td>556</td><td><a href='https://arxiv.org/abs/2610.09033'>Quad-State Safety Evaluation of Open-Weight Large Language Models on Non-Canonical Inputs</a></td><td>15</td><td>0</td><td>NLP</td><td>이모지·인코딩 등 비정형 입력에서 LLM 안전성을 4단계로 평가한 벤치마크, robotics 무관</td></tr>
+<tr><td>557</td><td><a href='https://arxiv.org/abs/2610.09321'>Dialect-Robust Speech Language Models with Synthetic Pseudo-Dialect Augmentation</a></td><td>15</td><td>0</td><td>NLP</td><td>실제 방언 음성 없이 LLM 생성 텍스트와 TTS로 pseudo-dialect를 합성해 speech LM을 강건화, robotics 무관</td></tr>
+<tr><td>558</td><td><a href='https://arxiv.org/abs/2610.09346'>OnlineQAT: On-Policy Distillation for Ultra-Low-Bit Large Language Models</a></td><td>15</td><td>0</td><td>LG</td><td>저비트 LLM 양자화 복구에 on-policy distillation을 적용한 OnlineQAT, robotics 무관</td></tr>
+<tr><td>559</td><td><a href='https://arxiv.org/abs/2610.09372'>Expert Coupling in MoE Pretraining: Reducing All-to-All Overhead with Correlated Placement and Token Shuffling</a></td><td>15</td><td>0</td><td>LG</td><td>MoE 학습에서 expert 배치와 token shuffling으로 all-to-all 통신을 줄이는 시스템 최적화, robotics 무관</td></tr>
+<tr><td>560</td><td><a href='https://arxiv.org/abs/2610.09396'>ARCS: Towards Precise Text-to-SQL via Structured Disambiguation</a></td><td>15</td><td>0</td><td>NLP</td><td>text-to-SQL에서 모호성을 구조화된 상호작용으로 해소하는 새 벤치마크 ARCS, robotics 무관</td></tr>
+<tr><td>561</td><td><a href='https://arxiv.org/abs/2610.09464'>BanglaRhet: Benchmarking Classical and Transformer Models for Rhetorical and Persuasion Detection in Bangla Political Speech</a></td><td>15</td><td>0</td><td>NLP</td><td>방글라어 정치연설 수사법 탐지 벤치마크로 단순 분류 벤치마킹에 그침.</td></tr>
+<tr><td>562</td><td><a href='https://arxiv.org/abs/2610.09529'>A Comparative Study of Evaluation Metrics for Long-Document Financial Narrative Summarization with Transformers</a></td><td>15</td><td>0</td><td>NLP</td><td>재무보고서 요약 평가지표 비교 연구로 방법론 기여가 작음.</td></tr>
+<tr><td>563</td><td><a href='https://arxiv.org/abs/2610.09660'>Rubric Spans are Label Representations: Joint LLM Encoding for Short Answer Scoring</a></td><td>15</td><td>0</td><td>NLP</td><td>rubric 조건부 단답 채점 프레임워크로 교육 응용 벤치마크에 가까움.</td></tr>
+<tr><td>564</td><td><a href='https://arxiv.org/abs/2610.09671'>InsClaimBench: Benchmarking Insurance Claim Adjudication Across the Decision Chain</a></td><td>15</td><td>0</td><td>NLP</td><td>보험 청구 심사 의사결정 체인 벤치마크로 도메인 특화 평가에 그침.</td></tr>
+<tr><td>565</td><td><a href='https://arxiv.org/abs/2610.09976'>EASE: Entropy-Adaptive Distribution Shaping for Evading AI-generated Text Detectors</a></td><td>15</td><td>0</td><td>NLP</td><td>AI 생성 텍스트 탐지기를 우회하는 디코딩 기법으로 로보틱스와 무관함.</td></tr>
+<tr><td>566</td><td><a href='https://arxiv.org/abs/2610.10138'>LLM4Impact: Integrating Heterogeneous Information for Scientific Impact Prediction</a></td><td>15</td><td>0</td><td>NLP</td><td>논문 영향력 예측을 위한 이질적 정보 통합 모델임.</td></tr>
+<tr><td>567</td><td><a href='https://arxiv.org/abs/2610.10154'>HySPE: Positional Encoding via Symplectic Dual Shears</a></td><td>15</td><td>0</td><td>LG</td><td>RoPE의 hyperbolic 변형 positional encoding으로 소규모 실험만 수행함.</td></tr>
+<tr><td>568</td><td><a href='https://arxiv.org/abs/2610.10232'>LLM Persuasion Is in the Eye of the Evaluation</a></td><td>15</td><td>0</td><td>NLP</td><td>LLM 설득력 평가 방법 간 낮은 일치도를 보이는 메타 평가 연구임.</td></tr>
+<tr><td>569</td><td><a href='https://arxiv.org/abs/2610.10508'>Your Prompt Should Do More: Effects of Retrieval Instructions in Embedding Models</a></td><td>15</td><td>0</td><td>NLP</td><td>임베딩 모델이 retrieval instruction을 잘 따르지 못하는 원인 분석 연구임.</td></tr>
+<tr><td>570</td><td><a href='https://arxiv.org/abs/2610.08808'>Accelerating Floating-Point Satisfiability Solving via Gradient Normalization</a></td><td>15</td><td>0</td><td>LG</td><td>floating-point SMT solving에 multi-task gradient normalization을 적용한 연구임.</td></tr>
+<tr><td>571</td><td><a href='https://arxiv.org/abs/2610.08814'>Route-Verify-Vote: Procedure-Conditioned Self-Consistency for Mixed-Domain Reasoning</a></td><td>15</td><td>0</td><td>NLP</td><td>mixed-domain reasoning용 procedure-conditioned self-consistency 프레임워크임.</td></tr>
+<tr><td>572</td><td><a href='https://arxiv.org/abs/2610.08967'>Socio-Foundation: A Model for Generalizable Individual Behavior Simulation via Hierarchical Capability Distillation</a></td><td>15</td><td>0</td><td>NLP</td><td>개인 행동 시뮬레이션용 capability distillation 프레임워크임.</td></tr>
+<tr><td>573</td><td><a href='https://arxiv.org/abs/2610.09002'>Learning to Report Unsafe Tasks in a Multi-Agent Game</a></td><td>15</td><td>0</td><td>LG</td><td>공유 보상 멀티에이전트 게임에서 불안전 작업 신고를 학습시키는 감사 조건 분석임.</td></tr>
+<tr><td>574</td><td><a href='https://arxiv.org/abs/2610.09057'>Epistemic Uncertainty-Aware Defect Detection for Quality Control in Medical Device Manufacturing</a></td><td>15</td><td>0</td><td>LG</td><td>의료기기 제조 결함탐지에 epistemic uncertainty 기반 reject 전략을 적용한 연구임.</td></tr>
+<tr><td>575</td><td><a href='https://arxiv.org/abs/2610.09088'>RippleCP: Measuring Counterfactual Checkpoint Advantage in Coding Agents</a></td><td>15</td><td>0</td><td>LG</td><td>코딩 에이전트 체크포인트의 counterfactual 가치를 측정하는 지표임.</td></tr>
+<tr><td>576</td><td><a href='https://arxiv.org/abs/2610.09112'>GeoNatureAgent (GNA): A Framework and Benchmark for Pre-Production Evaluation of Tool-Using Agents on Geospatial and Environmental Tasks</a></td><td>15</td><td>0</td><td>LG</td><td>지리공간 tool-using agent의 사전배치 평가 프레임워크임.</td></tr>
+<tr><td>577</td><td><a href='https://arxiv.org/abs/2610.09142'>Finding Blind Spots in AppWorld and WorkArena Task Verifiers</a></td><td>15</td><td>0</td><td>LG</td><td>AppWorld·WorkArena 태스크 verifier의 결함을 mutation testing으로 탐지한 연구임.</td></tr>
+<tr><td>578</td><td><a href='https://arxiv.org/abs/2610.09202'>Few Bits, One Law: Toward W2A4KV2</a></td><td>15</td><td>0</td><td>LG</td><td>weight·activation·KV cache를 동시에 extreme low-bit로 양자화하는 효율화 기법임.</td></tr>
+<tr><td>579</td><td><a href='https://arxiv.org/abs/2610.09296'>The AI Evaluation Ecosystem</a></td><td>15</td><td>0</td><td>LG</td><td>AI 평가 생태계를 에이전트 기반 시뮬레이션으로 모델링한 연구임.</td></tr>
+<tr><td>580</td><td><a href='https://arxiv.org/abs/2610.09374'>DUDA-Bench: Benchmarking LLM Agents on Multimodal Data-Driven Urban Diagnosis</a></td><td>15</td><td>0</td><td>LG</td><td>도시진단 multimodal agent 워크플로우 벤치마크임.</td></tr>
+<tr><td>581</td><td><a href='https://arxiv.org/abs/2610.09495'>Cognitive Schemas, Laws and Tasks</a></td><td>15</td><td>0</td><td>LG</td><td>지식기반 문제해결을 위한 cognitive schema의 구조적 프레임워크임.</td></tr>
+<tr><td>582</td><td><a href='https://arxiv.org/abs/2610.09497'>Ream: Unfolding Mutual Awareness in Human-Agent Workspaces</a></td><td>15</td><td>0</td><td>LG</td><td>문헌리뷰에서 인간-agent 상호 awareness를 지원하는 workspace 도구임.</td></tr>
+<tr><td>583</td><td><a href='https://arxiv.org/abs/2610.09554'>Reliability of LLM Judges for Evaluating Entity Alignment</a></td><td>15</td><td>0</td><td>NLP</td><td>entity alignment 평가에서 LLM judge의 anchor bias를 밝힌 연구임.</td></tr>
+<tr><td>584</td><td><a href='https://arxiv.org/abs/2610.09667'>Shared and structured inputs undermine collective random choice by reasoning AI agents</a></td><td>15</td><td>0</td><td>LG</td><td>reasoning agent의 random selection이 공유 식별자에 의해 편향됨을 밝힌 연구임.</td></tr>
+<tr><td>585</td><td><a href='https://arxiv.org/abs/2610.09693'>A Tale of Two Error Categories: Exploring Concealed Trade-Offs in the Errors of Automated Judges in Evaluation of Uncertainty Quantifiers</a></td><td>15</td><td>0</td><td>NLP</td><td>불확실성 정량화 평가에서 automated judge 오류의 trade-off를 분석한 연구임.</td></tr>
+<tr><td>586</td><td><a href='https://arxiv.org/abs/2610.09896'>NL2Hull: A Natural Language-Driven Constrained Ship Design Decision Framework</a></td><td>15</td><td>0</td><td>LG</td><td>자연어 기반 선박 선형 설계 의사결정 프레임워크임.</td></tr>
+<tr><td>587</td><td><a href='https://arxiv.org/abs/2610.09944'>AgentTime: Can Agents Estimate and Control Their Own Runtime?</a></td><td>15</td><td>0</td><td>LG</td><td>agent가 요청된 작업시간을 스스로 추정·제어할 수 있는지 평가하는 벤치마크임.</td></tr>
+<tr><td>588</td><td><a href='https://arxiv.org/abs/2610.09964'>Successive Training Stages and Large Language Model Persuasion: Effects of Misalignment, Supervised Fine-Tuning, and Preference Optimization</a></td><td>15</td><td>0</td><td>NLP</td><td>post-training 단계별로 LLM 설득력이 어떻게 변하는지 인간실험으로 측정한 연구임.</td></tr>
+<tr><td>589</td><td><a href='https://arxiv.org/abs/2610.10256'>OOM-RL II: Reality Is an Oracle, Not a Debugger Provenance-Constrained Diagnosis in Continually Evolving Agent-Engineered Systems</a></td><td>15</td><td>0</td><td>LG</td><td>agent가 설계한 퀀트 트레이딩 시스템의 outcome-diagnosis gap을 사례분석한 연구임.</td></tr>
+<tr><td>590</td><td><a href='https://arxiv.org/abs/2610.10285'>AI Safety Considerations for Agents With Limited Time to Act</a></td><td>15</td><td>0</td><td>LG</td><td>제한된 시간 내 행동해야 하는 agent의 안전성 이론적 한계를 증명한 연구임.</td></tr>
+<tr><td>591</td><td><a href='https://arxiv.org/abs/2610.10407'>SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions</a></td><td>15</td><td>0</td><td>LG</td><td>옵션 내재 분포를 활용한 주식옵션 트레이딩 agent 연구임.</td></tr>
+<tr><td>592</td><td><a href='https://arxiv.org/abs/2610.10444'>RunningTab: Direct Workspace Interaction with Environment-Side Tabs</a></td><td>15</td><td>0</td><td>LG</td><td>workspace 파일 작업에서 요구사항 추적용 environment-side tab 도구임.</td></tr>
+<tr><td>593</td><td><a href='https://arxiv.org/abs/2610.10506'>Validity Without Ground Truth: What Stated-Preference Economics Offers the Evaluation of Language Models</a></td><td>15</td><td>0</td><td>NLP</td><td>ground truth 없는 LLM 평가에 stated-preference 경제학의 타당성 틀을 적용한 연구임.</td></tr>
+<tr><td>594</td><td><a href='https://arxiv.org/abs/2610.10201'>GAGR-Lab: Evaluating Joint Spatial-Geometric and Analytic Function Reasoning</a></td><td>13</td><td>2</td><td>3D Vision</td><td>공간-기하 및 함수추론을 평가하는 프레임워크이나 pilot 실험에서 목표 적중이 0건으로 실질 성과가 없음.</td></tr>
+<tr><td>595</td><td><a href='https://arxiv.org/abs/2610.09000'>How Fragile Is On-Device Language Model Safety? Localizing Safety-Critical Parameters for Sparse Fault Analysis</a></td><td>13</td><td>0</td><td>LG</td><td>on-device SLM의 안전 관련 파라미터 취약성을 분석한 연구임.</td></tr>
+<tr><td>596</td><td><a href='https://arxiv.org/abs/2610.10323'>HAN-Mamba: Hierarchical Selective State Space Networks for Multi-Scale Financial Volatility Forecasting</a></td><td>12</td><td>0</td><td>LG</td><td>금융 변동성 예측용 Mamba 기반 hierarchical 모델, 순수 efficiency·domain-specific 기여로 robotics 무관</td></tr>
+<tr><td>597</td><td><a href='https://arxiv.org/abs/2610.10361'>ORDERS: An Empirical Study of Norm-Rank Aggregation for Personalized Federated Learning</a></td><td>12</td><td>0</td><td>LG</td><td>personalized federated learning의 server weighting rule 실증 연구, robotics 관련성 없음</td></tr>
+<tr><td>598</td><td><a href='https://arxiv.org/abs/2610.10385'>OrBIT: Structure-Guided Embedding Compression</a></td><td>12</td><td>0</td><td>LG</td><td>LLM embedding table을 orbit geometry로 압축하는 기법, robotics 관련성 없음</td></tr>
+<tr><td>599</td><td><a href='https://arxiv.org/abs/2610.10483'>Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion</a></td><td>12</td><td>0</td><td>LG</td><td>two-level softmax 샘플링의 cluster 편향을 보정하는 기법, robotics와 무관한 추천/IR 알고리즘 연구</td></tr>
+<tr><td>600</td><td><a href='https://arxiv.org/abs/2610.08828'>When Forgetting Looks Like Improvement: Metric Masking in Streaming Diarizer Adaptation and the Price of Rehearsal</a></td><td>12</td><td>0</td><td>NLP</td><td>streaming diarizer 적응이 탐지는 개선해도 화자 식별 일관성을 해친다는 분석, robotics 무관</td></tr>
+<tr><td>601</td><td><a href='https://arxiv.org/abs/2610.08835'>Leveraging LLM-Generated Explanations for Detecting Emotionally Rewritten Fake News</a></td><td>12</td><td>0</td><td>NLP</td><td>LLM이 생성한 설명을 활용해 감정 재작성된 가짜뉴스를 탐지하는 기법, robotics 무관</td></tr>
+<tr><td>602</td><td><a href='https://arxiv.org/abs/2610.08879'>Tiny-Scale Chinese BERT Pretraining: A Controlled Comparison of MLM, WWM, and MacBERT Strategies</a></td><td>12</td><td>0</td><td>NLP</td><td>초소형 중국어 BERT에서 MLM·WWM·MacBERT 전략을 통제 비교한 연구, robotics 무관</td></tr>
+<tr><td>603</td><td><a href='https://arxiv.org/abs/2610.09152'>sk-bench: A Native-First Benchmark for Evaluating Large Language Models in Slovak</a></td><td>12</td><td>0</td><td>NLP</td><td>슬로바키아어 네이티브 LLM 벤치마크 sk-bench 제공, robotics 무관</td></tr>
+<tr><td>604</td><td><a href='https://arxiv.org/abs/2610.09209'>Multi-Objective Aligned Small Language Model Framework for SUD Patient Dialogue Generation</a></td><td>12</td><td>0</td><td>NLP</td><td>약물사용장애 환자 대화 생성을 위한 인지상태 정렬 소형 언어모델 프레임워크, 임상 NLP 응용으로 robotics 무관</td></tr>
+<tr><td>605</td><td><a href='https://arxiv.org/abs/2610.09446'>Arctic Questions, Missing Answers: A Dataset and Benchmark for LLM Abstention in Arctic Science</a></td><td>12</td><td>0</td><td>NLP</td><td>북극 과학 분야에서 LLM의 abstention(답변 보류) 민감도를 평가하는 데이터셋, robotics 무관</td></tr>
+<tr><td>606</td><td><a href='https://arxiv.org/abs/2610.09661'>Alice: A Large-Scale German Benchmark for Rubric-Based Multi-Dimensional Automatic Short Answer Scoring</a></td><td>12</td><td>0</td><td>NLP</td><td>독일어 단답 채점 벤치마크 구축으로 incremental한 기여임.</td></tr>
+<tr><td>607</td><td><a href='https://arxiv.org/abs/2610.10145'>InterView-C: A Synchronized Multimodal Corpus of VR Avatar-Mediated Survey Interviews</a></td><td>12</td><td>0</td><td>Multimodal</td><td>VR 아바타 인터뷰 멀티모달 코퍼스 구축으로 언어학 자원에 해당함.</td></tr>
+<tr><td>608</td><td><a href='https://arxiv.org/abs/2610.08923'>AdaGuard: Enhancing Safety and Policy Compliance with Reasoning-Enabled LLM-As-A-Judge Guardrails</a></td><td>12</td><td>0</td><td>LG</td><td>적응형 reasoning 가드레일 LLM-judge 프레임워크임.</td></tr>
+<tr><td>609</td><td><a href='https://arxiv.org/abs/2610.09026'>BEACON-SP: Ontology-Grounded GraphRAG Framework for Clinical Suicide Risk Assessment</a></td><td>12</td><td>0</td><td>NLP</td><td>자살위험 평가용 ontology 기반 GraphRAG 임상 의사결정 지원 연구임.</td></tr>
+<tr><td>610</td><td><a href='https://arxiv.org/abs/2610.09119'>Which Buildings Are Artificial Intelligence-Ready? A Measurement-Based Assessment Framework for AI Question Answering and Actuation</a></td><td>12</td><td>0</td><td>LG</td><td>건물의 AI 준비도를 knowledge graph 기반으로 측정하는 프레임워크임.</td></tr>
+<tr><td>611</td><td><a href='https://arxiv.org/abs/2610.09377'>From Plausible Hierarchies to Useful Taxonomies: Evaluating Agentic Harnesses on Customer Feedback</a></td><td>12</td><td>0</td><td>NLP</td><td>고객 피드백 taxonomy 생성의 실사용성 평가 지표 연구임.</td></tr>
+<tr><td>612</td><td><a href='https://arxiv.org/abs/2610.09589'>Dual- versus Single-Suggestion AI Support for Radiographic Interpretation in Residents: Randomized Multireader Study</a></td><td>12</td><td>0</td><td>LG</td><td>방사선 판독에서 복수 AI 제안이 단일 제안보다 나은지 비교한 임상 연구임.</td></tr>
+<tr><td>613</td><td><a href='https://arxiv.org/abs/2610.09644'>Automatically Building and Updating a Knowledge Graph of MLIP Models</a></td><td>12</td><td>0</td><td>LG</td><td>MLIP 모델에 대한 지식그래프를 LLM으로 자동 구축한 연구임.</td></tr>
+<tr><td>614</td><td><a href='https://arxiv.org/abs/2610.10383'>Boosting and the Expressive Power of Simple Weak Learners via the $γ$-VC Dimension</a></td><td>10</td><td>0</td><td>LG</td><td>gamma-VC dimension을 통한 boosting 샘플 복잡도 이론 연구, robotics와 무관한 이론 논문</td></tr>
+<tr><td>615</td><td><a href='https://arxiv.org/abs/2610.10459'>NeuralBES: A Differentiable, Control-Aware Emulator for Scalable Building Energy Modeling</a></td><td>10</td><td>0</td><td>LG</td><td>건물 에너지 시뮬레이션을 위한 differentiable RC 열모델 emulator, robotics와 무관함</td></tr>
+<tr><td>616</td><td><a href='https://arxiv.org/abs/2610.08851'>QuanLing: Cross-Branch Validation of Language Distance Quantification on Western Romance</a></td><td>10</td><td>0</td><td>NLP</td><td>서로망스 언어군 간 거리를 사전학습 언어모델로 정량화한 언어학 연구, robotics 무관</td></tr>
+<tr><td>617</td><td><a href='https://arxiv.org/abs/2610.09756'>Shaer: Controlled Arabic Poetry Generation with Meter Subform and Semantic Conditioning</a></td><td>10</td><td>0</td><td>NLP</td><td>아랍어 고전시 생성 제어 프레임워크로 로보틱스와 무관함.</td></tr>
+<tr><td>618</td><td><a href='https://arxiv.org/abs/2610.09934'>Itgan at NADI 2026 shared task: Parameter-Efficient Whisper Adaptation for Robust, Mixed-Dialect and Code-Switched Arabic ASR</a></td><td>10</td><td>0</td><td>NLP</td><td>아랍어 방언 ASR용 Whisper LoRA 적응 대회 리포트로 엔지니어링 기여임.</td></tr>
+<tr><td>619</td><td><a href='https://arxiv.org/abs/2610.10318'>Nobody Truly Agrees on Sentiment: Humans, Bespoke Tools, and LLMs Struggle with Social Media Texts</a></td><td>10</td><td>0</td><td>NLP</td><td>소셜미디어 감정분석에서 인간과 LLM 간 합의가 낮음을 보이는 평가 연구임.</td></tr>
+<tr><td>620</td><td><a href='https://arxiv.org/abs/2610.10378'>Document-Level Text Simplification in Estonian Using Large Language Models</a></td><td>10</td><td>0</td><td>NLP</td><td>에스토니아어 문서 단순화에 대한 LLM 평가 연구임.</td></tr>
+<tr><td>621</td><td><a href='https://arxiv.org/abs/2610.08878'>How Could AI Eliminate Humanity? A Failure-Mode Analysis of Civilizational Risk</a></td><td>10</td><td>0</td><td>AI</td><td>AI로 인한 인류 멸종 경로를 분류한 비실증적 에세이임.</td></tr>
+<tr><td>622</td><td><a href='https://arxiv.org/abs/2610.09007'>Sigma-Hunter: A Domain-Specific Language Model for Threat Hunting and Detection Engineering</a></td><td>10</td><td>0</td><td>NLP</td><td>위협 탐지용 Sigma 규칙 생성 도메인 특화 LLM 연구임.</td></tr>
+<tr><td>623</td><td><a href='https://arxiv.org/abs/2610.09039'>From High Recall to High Utility: Dataset-Adaptive Post-Processing of LLM-Generated Customer Intents</a></td><td>10</td><td>0</td><td>NLP</td><td>고객 의도 추출 후처리 아키텍처로 엔터프라이즈 응용 성격이 강함.</td></tr>
+<tr><td>624</td><td><a href='https://arxiv.org/abs/2610.09053'>Justice After Identity: Large Language Models and the View from Everywhere</a></td><td>10</td><td>0</td><td>AI</td><td>LLM의 도덕 판단과 Rawls적 원초적 입장을 비교한 철학적 연구임.</td></tr>
+<tr><td>625</td><td><a href='https://arxiv.org/abs/2610.10092'>I would rather quit NLP than read another paper like this: The rise of antithesis in NLP papers</a></td><td>8</td><td>0</td><td>NLP</td><td>LLM이 논문에 &#x27;rather than&#x27; 과용을 유발한다는 메타 관찰로 연구 기여가 작음.</td></tr>
+</tbody></table>
+
+</details>

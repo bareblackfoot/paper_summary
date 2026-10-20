@@ -1,0 +1,155 @@
+=== Paper Collection Started at Wed Oct 15 22:06:47 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W42
+URL: https://huggingface.co/papers/week/2025-W42
+Found 10 papers in weekly view
+Fetching likes for: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Fetching likes for: Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model
+Fetching likes for: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Fetching likes for: Diffusion Transformers with Representation Autoencoders
+Fetching likes for: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Fetching likes for: DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation
+Fetching likes for: Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training
+Fetching likes for: Scaling Language-Centric Omnimodal Representation Learning
+Fetching likes for: KORMo: Korean Open Reasoning Model for Everyone
+Fetching likes for: AutoPR: Let's Automate Your Academic Promotion!
+Selected top 10 papers by likes:
+1. QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs (133 likes)
+2. Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model (131 likes)
+3. D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI (123 likes)
+4. Diffusion Transformers with Representation Autoencoders (117 likes)
+5. Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation (107 likes)
+6. DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation (90 likes)
+7. Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training (89 likes)
+8. Scaling Language-Centric Omnimodal Representation Learning (81 likes)
+9. KORMo: Korean Open Reasoning Model for Everyone (59 likes)
+10. AutoPR: Let's Automate Your Academic Promotion! (46 likes)
+Found abstract: We propose QeRL, a Quantization-enhanced Reinforcement Learning framework for
+large language models ...
+Processed paper: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Found abstract: Vision-language-action (VLA) models have recently shown strong potential in
+enabling robots to follo...
+Processed paper: Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model
+Found abstract: Large language models leverage internet-scale text data, yet embodied AI
+remains constrained by the ...
+Processed paper: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Found abstract: Latent generative modeling, where a pretrained autoencoder maps pixels into a
+latent space for the d...
+Processed paper: Diffusion Transformers with Representation Autoencoders
+Found abstract: Camera-centric understanding and generation are two cornerstones of spatial
+intelligence, yet they a...
+Processed paper: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Found abstract: Large language models (LLMs) have substantially advanced machine translation
+(MT), yet their effecti...
+Processed paper: DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation
+Found abstract: Pixel-space generative models are often more difficult to train and generally
+underperform compared ...
+Processed paper: Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training
+Found abstract: Recent multimodal embedding approaches leveraging multimodal large language
+models (MLLMs) fine-tune...
+Processed paper: Scaling Language-Centric Omnimodal Representation Learning
+Found abstract: This work presents the first large-scale investigation into constructing a
+fully open bilingual larg...
+Processed paper: KORMo: Korean Open Reasoning Model for Everyone
+Found abstract: As the volume of peer-reviewed research surges, scholars increasingly rely on
+social platforms for d...
+Processed paper: AutoPR: Let's Automate Your Academic Promotion!
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 133  ->  98
+Update date_collected: 2025-10-16T07:06:56.885790+09:00  ->  2025-10-15T07:08:16.491196+09:00
+
+Processing paper 2/10
+Title: Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Paper already exists, checking if translation is complete...
+Update likes: 123  ->  119
+Update date_collected: 2025-10-16T07:06:56.888432+09:00  ->  2025-10-15T07:08:16.489739+09:00
+
+Processing paper 4/10
+Title: Diffusion Transformers with Representation Autoencoders
+Paper already exists, checking if translation is complete...
+Update likes: 117  ->  85
+Update date_collected: 2025-10-16T07:06:56.889547+09:00  ->  2025-10-15T07:08:16.493438+09:00
+
+Processing paper 5/10
+Title: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 107  ->  92
+Update date_collected: 2025-10-16T07:06:56.890864+09:00  ->  2025-10-15T07:08:16.492412+09:00
+
+Processing paper 6/10
+Title: DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Scaling Language-Centric Omnimodal Representation Learning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: KORMo: Korean Open Reasoning Model for Everyone
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  54
+Update date_collected: 2025-10-16T07:06:56.896142+09:00  ->  2025-10-15T07:08:16.494787+09:00
+
+Processing paper 10/10
+Title: AutoPR: Let's Automate Your Academic Promotion!
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  43
+Update date_collected: 2025-10-16T07:06:56.897638+09:00  ->  2025-10-15T07:08:16.497230+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W42.json...
+
+Updating Notion database...
+Updating paper: QeRL: 효율 이상을 넘어서 -- 양자화 강화 학습을 통한 대규모 언어 모델(Large Language Models, LLMs)에 대한 연구 (likes: 98 -> 133)
+Creating new paper: 공간 강제: 비주류 공간 표현 조정을 위한 시각-언어-행동 모델 (Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model)
+Updating paper: 데스크톱 데이터에서 비전-행동 사전학습 확장하여 실체화된 AI로의 이전을 위한 D2E (likes: 119 -> 123)
+Updating paper: 표현 자동인코더와 함께 하는 확산 트랜스포머 (likes: 85 -> 117)
+Updating paper: 카메라와 함께하는 사고: 카메라 중심의 이해 및 생성을 위한 통합적 다중 모달 모델 (likes: 92 -> 107)
+Creating new paper: DITING: 웹 소설 번역의 벤치마킹을 위한 멀티 에이전트 평가 프레임워크
+Creating new paper: 자가지도를 통한 픽셀 공간 생성 모델링의 종단 간 진보
+Creating new paper: 언어 중심 옴니모달 표현 학습의 확장
+Updating paper: 모두를 위한 한국어 오픈 추론 모델 KORMo (likes: 54 -> 59)
+Updating paper: 자동 PR: 학술 승진을 자동화합시다! (likes: 43 -> 46)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Oct 15 22:09:01 UTC 2025 ===
+

@@ -1,0 +1,123 @@
+=== Paper Collection Started at Thu Nov 20 22:08:05 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W47
+URL: https://huggingface.co/papers/week/2025-W47
+Found 10 papers in weekly view
+Fetching likes for: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Fetching likes for: Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation
+Fetching likes for: P1: Mastering Physics Olympiads with Reinforcement Learning
+Fetching likes for: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Fetching likes for: VIDEOP2R: Video Understanding from Perception to Reasoning
+Fetching likes for: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Fetching likes for: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Fetching likes for: DoPE: Denoising Rotary Position Embedding
+Fetching likes for: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Fetching likes for: Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks
+Selected top 10 papers by likes:
+1. MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling (141 likes)
+2. Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation (123 likes)
+3. P1: Mastering Physics Olympiads with Reinforcement Learning (122 likes)
+4. Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance (117 likes)
+5. VIDEOP2R: Video Understanding from Perception to Reasoning (98 likes)
+6. Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data (94 likes)
+7. Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models (88 likes)
+8. DoPE: Denoising Rotary Position Embedding (87 likes)
+9. Part-X-MLLM: Part-aware 3D Multimodal Large Language Model (67 likes)
+10. Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks (66 likes)
+Found abstract: We present MiroThinker v1.0, an open-source research agent designed to advance tool-augmented reason...
+Processed paper: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Found abstract: This report introduces Kandinsky 5.0, a family of state-of-the-art foundation models for high-resolu...
+Processed paper: Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation
+Found abstract: Recent progress in large language models (LLMs) has moved the frontier from puzzle-solving to scienc...
+Processed paper: P1: Mastering Physics Olympiads with Reinforcement Learning
+Found abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, but t...
+Processed paper: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Found abstract: Reinforcement fine-tuning (RFT), a two-stage framework consisting of supervised fine-tuning (SFT) an...
+Processed paper: VIDEOP2R: Video Understanding from Perception to Reasoning
+Found abstract: We present Uni-MoE 2.0 from the Lychee family. As a fully open-source omnimodal large model (OLM), i...
+Processed paper: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Found abstract: Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constra...
+Processed paper: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Found abstract: Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrap...
+Processed paper: DoPE: Denoising Rotary Position Embedding
+Found abstract: We introduce Part-X-MLLM, a native 3D multimodal large language model that unifies diverse 3D tasks ...
+Processed paper: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Found abstract: Video Models have achieved remarkable success in high-fidelity video generation with coherent motion...
+Processed paper: Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Paper already exists, checking if translation is complete...
+Update likes: 141  ->  136
+Update date_collected: 2025-11-21T07:08:14.885598+09:00  ->  2025-11-20T07:08:12.099647+09:00
+
+Processing paper 2/10
+Title: Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: P1: Mastering Physics Olympiads with Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 122  ->  119
+Update date_collected: 2025-11-21T07:08:14.889556+09:00  ->  2025-11-20T07:08:12.101542+09:00
+
+Processing paper 4/10
+Title: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Paper already exists, checking if translation is complete...
+Update likes: 117  ->  101
+Update date_collected: 2025-11-21T07:08:14.890974+09:00  ->  2025-11-20T07:08:12.102934+09:00
+
+Processing paper 5/10
+Title: VIDEOP2R: Video Understanding from Perception to Reasoning
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  93
+Update date_collected: 2025-11-21T07:08:14.893675+09:00  ->  2025-11-20T07:08:12.104369+09:00
+
+Processing paper 7/10
+Title: Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 88  ->  52
+Update date_collected: 2025-11-21T07:08:14.894865+09:00  ->  2025-11-20T07:08:12.110940+09:00
+
+Processing paper 8/10
+Title: DoPE: Denoising Rotary Position Embedding
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  86
+Update date_collected: 2025-11-21T07:08:14.896086+09:00  ->  2025-11-20T07:08:12.105605+09:00
+
+Processing paper 9/10
+Title: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Paper already exists, checking if translation is complete...
+Update likes: 67  ->  65
+Update date_collected: 2025-11-21T07:08:14.897375+09:00  ->  2025-11-20T07:08:12.106930+09:00
+
+Processing paper 10/10
+Title: Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W47.json...
+
+Updating Notion database...
+Updating paper: MiroThinker: 모델, 맥락, 상호작용 확장을 통한 오픈소스 연구 에이전트의 성능한계 돌파 (likes: 136 -> 141)
+Creating new paper: Kandinsky 5.0: 이미지 및 비디오 생성을 위한 패밀리 기반 모델
+Updating paper: 물리 올림피아드를 통한 강화 학습의 성공 (likes: 119 -> 122)
+Updating paper: 간단한 산술이 최신 LLM 성능의 열쇠를 제공하는 수퍼-모델 (likes: 101 -> 117)
+Creating new paper: 지각부터 추론까지 비디오 이해하기
+Updating paper: Uni-MoE-2.0-Omni: 고급 MoE, 훈련 및 데이터로 언어 중심 옴니모달 대형 모델 확장 (likes: 93 -> 94)
+Updating paper: 어려운 곳에서 생각하라: 추론 언어 모델 향상을 위한 선택적 잠재적 반복 (likes: 52 -> 88)
+Updating paper: DoPE: Denoising Rotary Position Embedding (likes: 86 -> 87)
+Updating paper: Part-X-MLLM: 파트-인식 3D 다중 모달 대형 언어 모델 (likes: 65 -> 67)
+Creating new paper: 비디오를 통한 추론: 미로 해결 작업을 통해 비디오 모델의 추론 능력을 평가한 최초의 연구
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Nov 20 22:10:00 UTC 2025 ===
+

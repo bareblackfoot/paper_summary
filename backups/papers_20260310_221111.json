@@ -1,0 +1,266 @@
+[
+  {
+    "title": "Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders",
+    "abstract": "Vision Language Model (VLM) development has largely relied on scaling model size, which hinders deployment on compute-constrained mobile and edge devices such as smartphones and robots. In this work, we explore the performance limits of compact (e.g., 2B and 8B) VLMs. We challenge the prevailing practice that state-of-the-art VLMs must rely on vision encoders initialized via massive contrastive pretraining (e.g., CLIP/SigLIP). We identify an objective mismatch: contrastive learning, optimized for discrimination, enforces coarse and category-level invariances that suppress fine-grained visual cues needed for dense captioning and complex VLM reasoning. To address this issue, we present Penguin-VL, whose vision encoder is initialized from a text-only LLM. Our experiments reveal that Penguin-Encoder serves as a superior alternative to traditional contrastive pretraining, unlocking a higher degree of visual fidelity and data efficiency for multimodal understanding. Across various image and video benchmarks, Penguin-VL achieves performance comparable to leading VLMs (e.g., Qwen3-VL) in mathematical reasoning and surpasses them in tasks such as document understanding, visual knowledge, and multi-perspective video understanding. Notably, these gains are achieved with a lightweight architecture, demonstrating that improved visual representation rather than model scaling is the primary driver of performance. Our ablations show that Penguin-Encoder consistently outperforms contrastive-pretrained encoders, preserving fine-grained spatial and temporal cues that are critical for dense perception and complex reasoning. This makes it a strong drop-in alternative for compute-efficient VLMs and enables high performance in resource-constrained settings. Code: https://github.com/tencent-ailab/Penguin-VL",
+    "authors": [
+      "Boqiang Zhang",
+      "Lei Ke",
+      "Ruihan Yang",
+      "Qi Gao",
+      "Tianyuan Qu",
+      "Rossell Chen",
+      "Dong Yu",
+      "Leoweiliang"
+    ],
+    "likes": 72,
+    "published_date": "Mar 6",
+    "url": "https://huggingface.co/papers/2603.06569",
+    "date_collected": "2026-03-10T07:12:45.803184+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "펭귄-VL: LLM 기반 비전 인코더의 효율 한계 탐구",
+      "abstract": "비전 언어 모델(Vision Language Model, VLM) 개발은 주로 모델 크기를 확장하는 데 의존해왔으나, 스마트폰과 로봇과 같은 컴퓨팅 제약이 있는 모바일 및 엣지 장치에 배포가 제한되는 문제를 안고 있습니다. 본 논문에서는 소형(예: 2B 및 8B) VLM의 성능 한계를 탐구합니다. 최신 VLM은 대규모 대조적 사전 훈련으로 초기화된 비전 인코더에 의존해야 한다는 관행에 도전합니다. 또한, 저희는 대조적 학습이 주로 차별화에 최적화되어 세밀한 캡셔닝과 복잡한 VLM 추론에 필요한 밀도 있는 시각적 단서를 억제하는 범주 및 수준에 대한 불일치를 확인합니다. 이 문제를 해결하기 위해, 우리는 텍스트만을 사용한 LLM에서 초기화된 비전 인코더인 펭귄-VL을 제안합니다."
+    },
+    "summary": "1. Penguin-VL은 대규모 대조적 사전 훈련을 대체하는 초경량 구조로, 세밀한 시각적 정보 보존과 데이터 효율성 향상을 실현하여 다양한 이미지 및 비디오 벤치마크에서 수학적 추론에서 최첨단 VLM(Qwen3-VL)과 유사한 성능을 달성하고, 문서 이해, 시각적 지식, 다각적 비디오 이해 작업에서 초월하는 결과를 얻었습니다.\n2. 펭귄-인코더는 세밀한 공간적 및 시간적 단서를 유지함으로써 밀도 있는 지각 및 복잡한 추론에 중요한 원소를 보존하며, 계산 효율적인 VLM에 강력한 대안이 됩니다.\n3. 모델의 규모 확장보다 개선된 시각적 표현이 성능의 주요 요소임을 보여주는데, 이는 경량 아키텍처를 통해 달성되었습니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning",
+    "abstract": "Proximal constraints are fundamental to the stability of the Large Language Model reinforcement learning. While the canonical clipping mechanism in PPO serves as an efficient surrogate for trust regions, we identify a critical bottleneck: fixed bounds strictly constrain the upward update margin of low-probability actions, disproportionately suppressing high-advantage tail strategies and inducing rapid entropy collapse. To address this, we introduce Band-constrained Policy Optimization (BandPO). BandPO replaces canonical clipping with Band, a unified theoretical operator that projects trust regions defined by f-divergences into dynamic, probability-aware clipping intervals. Theoretical analysis confirms that Band effectively resolves this exploration bottleneck. We formulate this mapping as a convex optimization problem, guaranteeing a globally optimal numerical solution while deriving closed-form solutions for specific divergences. Extensive experiments across diverse models and datasets demonstrate that BandPO consistently outperforms canonical clipping and Clip-Higher, while robustly mitigating entropy collapse.",
+    "authors": [
+      "Yuan Li",
+      "Bo Wang",
+      "Yufei Gao",
+      "Yuqian Yao",
+      "Xinyuan Wang",
+      "Zhangyue Yin",
+      "Xipeng Qiu"
+    ],
+    "likes": 50,
+    "published_date": "Mar 5",
+    "url": "https://huggingface.co/papers/2603.04918",
+    "date_collected": "2026-03-10T07:12:45.804450+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "BandPO: 신뢰 영역과 비율 클리핑을 연결하는 확률 인식한 경계를 통한 LLM 강화 학습",
+      "abstract": "근접 제약은 대형 언어 모델 강화 학습의 안정성에 기초합니다. PPO의 정형 클리핑 메커니즘은 신뢰 영역에 대한 효과적인 대리자 역할을 하지만, 우리는 중요한 병목 현상을 발견했습니다: 고정된 경계는 낮은 확률 행동의 상승 업데이트 여유를 엄격하게 제한하여 높은 이득을 얻는 전략들을 과도하게 억제하고 빠른 엔트로피 붕괴를 유발합니다. 이를 해결하기 위해 우리는 Band-constrained Policy Optimization (BandPO)를 도입했습니다. BandPO는 기본 클리핑을 Band로 바꾸어 동적인, 확률 인식한 클리핑 간격으로 f-다이버전스로 정의된 신뢰 영역을 프로젝션하는 통합 이론적 오퍼레이터인 Band를 도입했습니다. 이론적 분석은 Band가 이 탐사 병목 현상을 효과적으로 해결한다는 것을 확인합니다. 우리는 이 매핑을 볼록 최적화 문제로 정의하고, 특정 다이버전스에 대해 폐쇄형 해를 도출하면서 전역 최적 수치해를 보장합니다. 다양한 모델과 데이터셋에서 수행된 포괄적인 실험은 BandPO가 정형 클리핑과 Clip-Higher를 일관되게 능가하면서 엔트로피 붕괴를 견고하게 완화한다는 것을 보여줍니다."
+    },
+    "summary": "1. 고전적인 클리핑 매커니즘의 한계를 해결하기 위해 Band-constrained Policy Optimization (BandPO) 도입.\n2. BandPO는 f-다이버전스로 정의된 신뢰 영역을 동적인, 확률 인식한 클리핑 간격으로 프로젝션하여 탐사 병목 현상을 효과적으로 해결.\n3. BandPO는 다양한 실험에서 일관된 우수성을 보이며 엔트로피 붕괴를 견고하게 완화함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Planning in 8 Tokens: A Compact Discrete Tokenizer for Latent World Model",
+    "abstract": "World models provide a powerful framework for simulating environment dynamics conditioned on actions or instructions, enabling downstream tasks such as action planning or policy learning. Recent approaches leverage world models as learned simulators, but its application to decision-time planning remains computationally prohibitive for real-time control. A key bottleneck lies in latent representations: conventional tokenizers encode each observation into hundreds of tokens, making planning both slow and resource-intensive. To address this, we propose CompACT, a discrete tokenizer that compresses each observation into as few as 8 tokens, drastically reducing computational cost while preserving essential information for planning. An action-conditioned world model that occupies CompACT tokenizer achieves competitive planning performance with orders-of-magnitude faster planning, offering a practical step toward real-world deployment of world models.",
+    "authors": [
+      "Dongwon Kim",
+      "Gawon Seo",
+      "Jinsung Lee",
+      "Minsu Cho",
+      "Suha Kwak"
+    ],
+    "likes": 22,
+    "published_date": "Mar 5",
+    "url": "https://huggingface.co/papers/2603.05438",
+    "date_collected": "2026-03-10T07:12:45.805582+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "8 토큰에서의 계획: 잠재 세계 모델을 위한 간결한 이산 토크나이저",
+      "abstract": "세계 모델은 동작이나 지시에 의존하는 환경 역학을 시뮬레이션하는 강력한 프레임워크를 제공하여 행동 계획이나 정책 학습과 같은 하류 작업을 가능케 합니다. 최근 접근법은 세계 모델을 학습된 시뮬레이터로 활용하고 있지만, 결정 시간 계획에 대한 응용은 실시간 제어에 있어 계산적으로 허용되지 않는 상황입니다. 주요 병목은 잠재 표현에 있습니다: 전통적인 토크나이저는 각 관측을 수백 개의 토큰으로 인코딩하므로 계획이 느리고 리소스를 많이 사용합니다. 이를 해결하기 위해 우리는 CompACT를 제안합니다. CompACT는 각 관측을 8개의 토큰으로 압축하는 이산 토크나이저로, 계획에 필수적인 정보를 보존하면서 계산 비용을 크게 줄입니다. CompACT 토크나이저를 채용한 행동-조건부 세계 모델은 주문 수십 배 빠른 계획으로 경쟁력 있는 성능을 달성하여 세계 모델의 현실 세계 배치로의 실용적인 한 걸음을 제공합니다."
+    },
+    "summary": "1. 세계 모델은 행동 계획이나 정책 학습과 같은 작업에 강력한 프레임워크를 제공합니다.\n2. 기존의 토크나이저로는 계획이 느리고 리소스를 많이 사용하지만, CompACT는 8개의 토큰으로 관측을 압축하여 계산 비용을 크게 절감합니다.\n3. CompACT 토크나이저를 사용한 행동-조건부 세계 모델은 주문 수십 배 빠른 계획을 통해 실용적인 세계 모델의 배치를 가능케 합니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "WildActor: Unconstrained Identity-Preserving Video Generation",
+    "abstract": "Production-ready human video generation requires digital actors to maintain strictly consistent full-body identities across dynamic shots, viewpoints and motions, a setting that remains challenging for existing methods. Prior methods often suffer from face-centric behavior that neglects body-level consistency, or produce copy-paste artifacts where subjects appear rigid due to pose locking. We present Actor-18M, a large-scale human video dataset designed to capture identity consistency under unconstrained viewpoints and environments. Actor-18M comprises 1.6M videos with 18M corresponding human images, covering both arbitrary views and canonical three-view representations. Leveraging Actor-18M, we propose WildActor, a framework for any-view conditioned human video generation. We introduce an Asymmetric Identity-Preserving Attention mechanism coupled with a Viewpoint-Adaptive Monte Carlo Sampling strategy that iteratively re-weights reference conditions by marginal utility for balanced manifold coverage. Evaluated on the proposed Actor-Bench, WildActor consistently preserves body identity under diverse shot compositions, large viewpoint transitions, and substantial motions, surpassing existing methods in these challenging settings.",
+    "authors": [
+      "Qin Guo",
+      "Tianyu Yang",
+      "Xuanhua He",
+      "Fei Shen",
+      "Yong Zhang",
+      "Zhuoliang Kang",
+      "Xiaoming Wei",
+      "Dan Xu"
+    ],
+    "likes": 16,
+    "published_date": "Feb 28",
+    "url": "https://huggingface.co/papers/2603.00586",
+    "date_collected": "2026-03-10T07:12:45.806833+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "와일드액터: 제약 없는 동영상 생성을 위한 신원 보존 (Identity-Preserving) 기술",
+      "abstract": "제작용 인간 영상 생성은 동적 촬영, 시야 및 동작에서 엄격하게 일관된 전신 신원을 유지해야 하며, 기존 방법에 대한 이러한 설정은 여전히 어렵습니다. 이전 방법은 주로 얼굴 중심의 행동에만 초점을 맞추어 신체 수준의 일관성을 간과하거나 포즈 고정으로 인해 주제가 뻔뻔한 복사-붙여넣기 아티팩트가 발생하는 경우가 많았습니다. 본 논문에서는 캐릭터-18M(Actor-18M)이라는 대규모 인간 비디오 데이터셋을 제안합니다. Actor-18M은 제약이 없는 시야 및 환경에서 신원 일관성을 기록하기 위해 설계된 1.6백만 개의 비디오와 1800만 개의 해당 인간 이미지로 구성되어 있으며 임의적인 관점과 표준적인 삼면 표현을 모두 포함하고 있습니다. Actor-18M을 활용하여 우리는 와일드액터(WildActor)를 제안합니다. 이는 어떠한 시야에 따라 조건이 주어지는 인간 비디오 생성을 위한 구조입니다. 우리는 비대칭적인 신원 보존 주의(Asymmetric Identity-Preserving Attention) 메커니즘과 시야 적응적 몬테칼로 샘플링 전략을 결합한 뷰포인트-적응적 몬테칼로 샘플링 전략을 제안합니다. 이는 주관적 가치에 따라 참조 조건을 균형 잡힌 마니폴드 커버리지를 위해 반복적으로 재가중치화합니다. 제안된 Actor-Bench에서 평가한 결과, WildActor는 다양한 촬영 구성, 대규모 시점 전환 및 상당한 동작에서도 신체 신원을 일관적으로 유지하며, 이러한 어려운 환경에서 기존 방법을 능가하였습니다."
+    },
+    "summary": "1. 인간 영상 생성을 위한 새로운 데이터셋인 Actor-18M을 소개하고, 이를 활용한 와일드액터 프레임워크를 제안함.\n2. 와일드액터는 Asymmetric Identity-Preserving Attention 메커니즘과 Viewpoint-Adaptive Monte Carlo Sampling 전략을 결합하여, 다양한 조건에 따라 인간 비디오를 생성함.\n3. 제안된 Actor-Bench에서의 평가를 통해, WildActor가 복잡한 환경에서 기존 방법을 능가하며 신체 신원을 일관적으로 유지하는 것을 입증함.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Progressive Residual Warmup for Language Model Pretraining",
+    "abstract": "Transformer architectures serve as the backbone for most modern Large Language Models, therefore their pretraining stability and convergence speed are of central concern. Motivated by the logical dependency of sequentially stacked layers, we propose Progressive Residual Warmup (ProRes) for language model pretraining. ProRes implements an \"early layer learns first\" philosophy by multiplying each layer's residual with a scalar that gradually warms up from 0 to 1, with deeper layers taking longer warmup steps. In this way, deeper layers wait for early layers to settle into a more stable regime before contributing to learning. We demonstrate the effectiveness of ProRes through pretraining experiments across various model scales, as well as normalization and initialization schemes. Comprehensive analysis shows that ProRes not only stabilizes pretraining but also introduces a unique optimization trajectory, leading to faster convergence, stronger generalization and better downstream performance. Our code is available at https://github.com/dandingsky/ProRes.",
+    "authors": [
+      "Tianhao Chen",
+      "Xin Xu",
+      "Lu Yin",
+      "Hao Chen",
+      "Yang Wang",
+      "Shizhe Diao",
+      "Can Yang"
+    ],
+    "likes": 15,
+    "published_date": "Mar 5",
+    "url": "https://huggingface.co/papers/2603.05369",
+    "date_collected": "2026-03-10T07:12:45.808036+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "언어 모델 사전훈련을 위한 점진적 잔여 웜업",
+      "abstract": "Transformer 아키텍처는 대부분의 최신 대규모 언어 모델의 기반을 이루며, 그들의 사전훈련 안정성과 수렴 속도는 중요한 관심사입니다. 순차적으로 쌓인 레이어의 논리적 의존에 주목하여, 우리는 언어 모델 사전훈련을 위한 ProRes(Progressive Residual Warmup)를 제안합니다. ProRes는 각 레이어의 잔여값(residual)에 점진적으로 0에서 1로 올라가는 스칼라를 곱하여 \"얕은 레이어가 먼저 학습한다\"는 철학을 구현합니다. 이러한 방식으로, 깊은 레이어는 초기 레이어가 더 안정적인 상태로 돌입한 후 학습에 기여하도록 대기합니다. 우리는 ProRes의 효과를 다양한 모델 규모, 정규화, 초기화 체계를 거친 사전훈련 실험을 통해 입증합니다. 포괄적인 분석에 의하면, ProRes는 사전훈련을 안정화시키는데 그치지 않고 빠른 수렴, 강력한 일반화, 향상된 하향 작업 성능으로 이어지는 독특한 최적화 궤적을 제공합니다. 우리의 코드는 https://github.com/dandingsky/ProRes에서 확인할 수 있습니다."
+    },
+    "summary": "1. ProRes는 얕은 레이어부터 학습을 시작하고 깊은 레이어가 안정화된 후에 기여함으로써 언어 모델 사전훈련의 안정성과 수렴 속도를 향상시킵니다.\n2. ProRes는 다양한 모델 규모에서 실험을 통해 안정성을 입증하며, 더 빠른 수렴과 강력한 일반화를 이끌어냅니다.\n3. ProRes는 사전훈련 최적화 궤적을 개선하여 하향 작업 성능을 향상시키는 독특한 기능을 제공합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies",
+    "abstract": "Memory is critical for long-horizon and history-dependent robotic manipulation. Such tasks often involve counting repeated actions or manipulating objects that become temporarily occluded. Recent vision-language-action (VLA) models have begun to incorporate memory mechanisms; however, their evaluations remain confined to narrow, non-standardized settings. This limits their systematic understanding, comparison, and progress measurement. To address these challenges, we introduce RoboMME: a large-scale standardized benchmark for evaluating and advancing VLA models in long-horizon, history-dependent scenarios. Our benchmark comprises 16 manipulation tasks constructed under a carefully designed taxonomy that evaluates temporal, spatial, object, and procedural memory. We further develop a suite of 14 memory-augmented VLA variants built on the π0.5 backbone to systematically explore different memory representations across multiple integration strategies. Experimental results show that the effectiveness of memory representations is highly task-dependent, with each design offering distinct advantages and limitations across different tasks. Videos and code can be found at our website https://robomme.github.io.",
+    "authors": [
+      "Yinpei Dai",
+      "Hongze Fu",
+      "Jayjun Lee",
+      "Yuejiang Liu",
+      "Haoran Zhang",
+      "Jianing Yang",
+      "Chelsea Finn",
+      "Nima Fazeli",
+      "Joyce Chai"
+    ],
+    "likes": 15,
+    "published_date": "Mar 4",
+    "url": "https://huggingface.co/papers/2603.04639",
+    "date_collected": "2026-03-10T07:12:45.809324+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "로보MME: 로봇 종합정책의 기억을 벤치마킹하고 이해하기",
+      "abstract": "기억은 장거리 및 과거 의존적 로봇 조작에 중요합니다. 이러한 작업들은 종종 반복된 행동을 세는 것이나 일시적으로 가려진 물체를 다루는 것을 포함합니다. 최근의 비전-언어-행동 (VLA) 모델들은 기억 메커니즘을 점차 도입하기 시작했지만, 그 평가는 좁은 표준화되지 않은 환경에 한정되어 있습니다. 이는 이러한 모델들의 체계적인 이해, 비교, 및 진전 측정을 제한합니다. 이러한 도전에 대처하기 위해 우리는 RoboMME를 소개합니다: 장거리, 과거 의존적 시나리오에서 VLA 모델들을 평가하고 발전시키기 위한 대규모 표준화된 벤치마크입니다. 우리의 벤치마크는 시간적, 공간적, 물체적, 및 절차적 기억을 평가하는 주의 깊게 설계된 분류법 하에 구축된 16가지 조작 작업으로 이루어져 있습니다. 우리는 π0.5 백본을 기반으로 다양한 기억 표현을 체계적으로 탐색하기 위해 14가지 기억을 강화한 VLA 변형군을 개발했습니다. 실험 결과는 기억 표현의 효과가 과업에 따라 크게 종속되며, 각 설계가 다른 작업들에 대해 각각 독특한 장점과 한계를 제공함을 보여줍니다. 비디오와 코드는 우리 웹사이트 https://robomme.github.io에서 찾을 수 있습니다."
+    },
+    "summary": "1. 기억은 장거리 및 과거 의존적 로봇 조작에서 중요하며, RoboMME는 VLA 모델 평가 및 발전을 위한 대규모 벤치마크로 설계되었습니다.\n2. 벤치마크는 시간, 공간, 물체, 및 절차적 기억을 평가하는 16가지 조작 작업으로 이루어져 있으며, 14가지의 기억을 강화한 VLA 모델 변형군을 포함합니다.\n3. 실험 결과는 기억 표현의 효과가 작업에 따라 달라지며, 각 기억 설계가 서로 다른 작업에서 독특한 장점과 한계를 보여줍니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Reasoning Models Struggle to Control their Chains of Thought",
+    "abstract": "Chain-of-thought (CoT) monitoring is a promising tool for detecting misbehaviors and understanding the motivations of modern reasoning models. However, if models can control what they verbalize in their CoT, it could undermine CoT monitorability. To measure this undesirable capability -- CoT controllability -- we introduce the CoT-Control evaluation suite, which includes tasks that require models to solve problems while adhering to CoT instructions, e.g., reasoning about a genetics question without using the word 'chromosome'. We show that reasoning models possess significantly lower CoT controllability than output controllability; for instance, Claude Sonnet 4.5 can control its CoT only 2.7% of the time but 61.9% when controlling its final output. We also find that CoT controllability is higher for larger models and decreases with more RL training, test-time compute, and increased problem difficulty. CoT controllability failures extend even to situations in which models are given incentives (as opposed to direct requests) to evade CoT monitors, although models exhibit slightly higher controllability when they are told they are being monitored. Similarly, eliciting controllability by adversarially optimizing prompts does not meaningfully increase controllability. Our results leave us cautiously optimistic that CoT controllability is currently unlikely to be a failure mode of CoT monitorability. However, the mechanism behind low controllability is not well understood. Given its importance for maintaining CoT monitorability, we recommend that frontier labs track CoT controllability in future models.",
+    "authors": [
+      "Chen Yueh-Han",
+      "Robert McCarthy",
+      "Bruce W. Lee",
+      "He He",
+      "Ian Kivlichan",
+      "Bowen Baker",
+      "Micah Carroll",
+      "Tomek Korbak"
+    ],
+    "likes": 13,
+    "published_date": "Mar 5",
+    "url": "https://huggingface.co/papers/2603.05706",
+    "date_collected": "2026-03-10T07:12:45.810611+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "사고 연쇄를 통제하는 추론 모델의 어려움",
+      "abstract": "사고 연쇄(CoT) 모니터링은 현대 추론 모델의 잘못된 행동을 감지하고 동기를 이해하기 위한 유망한 도구입니다. 그러나 모델이 CoT에서 어떤 것을 언어화할지 제어할 수 있다면, 이는 CoT 모니터링을 약화시킬 수 있습니다. 우리는 이러한 바람직하지 않은 능력인 CoT 통제성을 측정하기 위해 CoT-Control 평가 스위트를 소개합니다. 이것은 모델이 CoT 지시에 따라 문제를 해결해야 하는 작업들을 포함하고 있습니다. 예를 들어, '염색체'라는 단어를 사용하지 않고 유전 문제에 대해 추론하는 작업 등입니다. 우리는 추론 모델이 최종 출력을 제어하는 것보다 CoT 통제성이 현저히 낮음을 보여줍니다. 예를 들어 클로드 소네 4.5는 CoT를 2.7%만 제어할 수 있지만, 최종 출력을 61.9% 제어할 수 있습니다. 우리는 또한 CoT 통제성이 더 큰 모델에서 더 높고, 강화 학습 훈련, 테스트 시간 계산, 문제 난이도 증가와 함께 줄어든다는 것을 발견했습니다. CoT 통제성 실패는 모델이 CoT 모니터를 회피하기 위해 인센티브를 받을 때에도 발생하며, 모델은 감시를 받고 있는지 알려줄 때에는 약간 더 높은 통제성을 보입니다. 마찬가지로, 적대적으로 프롬프트를 최적화하여 통제성을 유도해도 별다른 통제성 증가를 보이지 않습니다. 우리의 결과는 현재 CoT 통제성이 CoT 모니터링에 실패할 가능성이 현실적으로 낮을 수 있다는 점에 조심스럽게 긍정적인 시각을 제공합니다. 그러나 통제성이 낮은 메커니즘은 잘 이해되지 않고 있습니다. CoT 모니터링을 유지하는 데 중요한 이유로, 미래 모델에서 CoT 통제성을 추적하는 것을 권장합니다."
+    },
+    "summary": "1. 현재 추론 모델은 최종 출력을 통제하는 능력보다 사고 연쇄를 통제하는 능력이 낮은 것으로 나타났습니다.\n2. CoT 통제성은 모델의 크기가 커질수록 높아지지만 강화 학습 훈련, 테스트 시간 계산, 문제 난이도 증가에 따라 낮아집니다.\n3. CoT 통제성을 유지하는 데 중요한데, 최근 모델에서 이를 추적하는 것이 권장됩니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling",
+    "abstract": "Long-context modeling is a pivotal capability for Large Language Models, yet the quadratic complexity of attention remains a critical bottleneck, particularly during the compute-intensive prefilling phase. While various sparse attention mechanisms have been explored, they typically suffer from either significant search latency or insufficient sparsity. In this paper, we propose FlashPrefill, a framework enabling ultra-fast prefilling via instantaneous pattern discovery and thresholding. FlashPrefill leverages a fast block-searching technique to simultaneously locate dynamic vertical, slash, and block-sparse attention patterns. Crucially, it introduces a dynamic thresholding mechanism that bypasses the prohibitive overhead of sorting or accumulating attention scores while effectively eliminating the long-tail distribution to enhance sparsity. Extensive evaluations demonstrate that FlashPrefill achieves a substantial leap in efficiency, delivering an unprecedented 27.78x speedup on 256K sequences. Notably, unlike existing methods that incur efficiency degradation on shorter contexts, FlashPrefill maintains a 1.71x speedup even at a 4K context length, demonstrating its robustness and practical utility across varying sequence scales.",
+    "authors": [
+      "Qihang Fan",
+      "Huaibo Huang",
+      "Zhiying Wu",
+      "Juqiu Wang",
+      "Bingning Wang",
+      "Ran He"
+    ],
+    "likes": 7,
+    "published_date": "Mar 6",
+    "url": "https://huggingface.co/papers/2603.06199",
+    "date_collected": "2026-03-10T07:12:45.811792+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "FlashPrefill: 초고속 장기 컨텍스트 프리핑을 위한 즉각적인 패턴 발견과 임계값 설정",
+      "abstract": "장기 컨텍스트 모델링은 대규모 언어 모델에 중요한 능력이나 주목해야 할 점은 주로 연산 집약적인 프리핑 단계에서 커넥션의 이차 복잡도가 병목이 된다는 것이다. 다양한 희소 어텐션 메커니즘이 연구되어 왔지만, 일반적으로 검색 지연 또는 불충분한 희소성 등의 문제가 있다. 본 논문에서는 FlashPrefill이라는 프레임워크를 제안하는데, 이는 즉각적인 패턴 발견과 임계값 설정을 통해 초고속 프리핑을 가능하게 한다. FlashPrefill은 동적 수직, 슬래시 및 블록-희소 어텐션 패턴을 동시에 찾아내기 위한 빠른 블록 탐색 기술을 활용한다. 또한, 긴 꼬리 분포를 제거하고 희소성을 향상시키는 동적 임계값 메커니즘을 도입하여 어텐션 점수를 정렬하거나 누적하는 번거로움을 피한다. 광범위한 평가 결과 FlashPrefill은 256K 시퀀스에서 이례적인 27.78배 속도 향상을 실현하였다. 특히, 기존 방법들과 달리 짧은 컨텍스트에서도 효율성이 떨어지는 문제를 해결하여 4K 컨텍스트 길이에서도 1.71배 속도 향상을 유지하며 증명하였다."
+    },
+    "summary": "1. FlashPrefill은 연산 집약적인 언어 모델의 프리핑 단계에서 초고속을 위해 패턴 발견과 임계값 설정을 결합한 프레임워크이다.\n2. 동적 수직, 슬래시, 블록-희소 어텐션 패턴을 동시에 찾아내며, 긴 꼬리 분포를 제거하여 희소성을 향상시킨다.\n3. FlashPrefill은 256K 시퀀스에서 이례적인 27.78배 속도 향상을 보이며, 짧은 컨텍스트에서도 효율성을 유지하는 특징을 갖는다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "HiMAP-Travel: Hierarchical Multi-Agent Planning for Long-Horizon Constrained Travel",
+    "abstract": "Sequential LLM agents fail on long-horizon planning with hard constraints like budgets and diversity requirements. As planning progresses and context grows, these agents drift from global constraints. We propose HiMAP-Travel, a hierarchical multi-agent framework that splits planning into strategic coordination and parallel day-level execution. A Coordinator allocates resources across days, while Day Executors plan independently in parallel. Three key mechanisms enable this: a transactional monitor enforcing budget and uniqueness constraints across parallel agents, a bargaining protocol allowing agents to reject infeasible sub-goals and trigger re-planning, and a single policy trained with GRPO that powers all agents through role conditioning. On TravelPlanner, HiMAP-Travel with Qwen3-8B achieves 52.78% validation and 52.65% test Final Pass Rate (FPR). In a controlled comparison with identical model, training, and tools, it outperforms the sequential DeepTravel baseline by +8.67~pp. It also surpasses ATLAS by +17.65~pp and MTP by +10.0~pp. On FlexTravelBench multi-turn scenarios, it achieves 44.34% (2-turn) and 37.42% (3-turn) FPR while reducing latency 2.5x through parallelization.",
+    "authors": [
+      "The Viet Bui",
+      "Wenjun Li",
+      "Yong Liu"
+    ],
+    "likes": 6,
+    "published_date": "Mar 5",
+    "url": "https://huggingface.co/papers/2603.04750",
+    "date_collected": "2026-03-10T07:12:45.812828+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "HiMAP-Travel: 장기간 제약 여행을 위한 계층적 다중 에이전트 계획",
+      "abstract": "일련의 LLM 에이전트는 예산 및 다양성 요구 사항과 같은 강력한 제약 조건을 가진 장기간 계획에서 실패한다. 계획이 진행되고 맥락이 커짐에 따라 이러한 에이전트들은 전역 제약에서 벗어나게 된다. 우리는 계층적으로 구성된 다중 에이전트 프레임워크인 HiMAP-Travel을 제안한다. 이 프레임워크는 전략적 조정과 병렬 일별 실행으로 계획을 분할한다. 조정자는 일별로 자원을 할당하고, 일별 행정자는 병렬로 독립적으로 계획을 수립한다. 세 가지 주요 메커니즘을 통해 이를 가능하게 한다: 병렬 에이전트 사이의 예산 및 고유성 제약 조건을 확신하는 트랜잭션 모니터, 불가능한 하위 목표를 거부하고 재계획을 유도할 수 있는 거래 프로토콜, 모든 에이전트를 역할 조건부로 구동하는 GRPO로 훈련된 단일 정책. TravelPlanner에서 Qwen3-8B를 사용한 HiMAP-Travel은 52.78%의 검증 및 52.65%의 테스트 최종 합격률(FPR)을 달성한다. 동일한 모델, 훈련 및 도구를 사용한 대조적 비교에서 순차 DeepTravel 베이스라인을 +8.67~pp 이상 능가한다. 또한 ATLAS보다 +17.65~pp, MTP보다 +10.0~pp의 결과를 보인다. FlexTravelBench의 다다움 시나리오에서는 44.34% (2-회전) 및 37.42% (3-회전) FPR을 달성하며 병렬화를 통해 대기 시간을 2.5배 줄인다."
+    },
+    "summary": "1. 장기간 계획에서 예산 및 고유성 제약 조건을 갖는 다중 에이전트 계획의 문제를 해결하기 위해 계층적 다중 에이전트 프레임워크인 HiMAP-Travel을 제안하였다.\n2. HiMAP-Travel은 전략적 조정과 병렬 일별 실행을 통해 계획을 나누고, 거래 모니터, 거래 프로토콜, 및 GRPO로 훈련된 단일 정책을 통해 효율적인 계획을 실현한다.\n3. HiMAP-Travel은 기존 모델들보다 우수한 성능을 보여주며, 대기 시간을 줄이면서 다양한 시나리오에서 뛰어난 결과를 얻었다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Dynamic Chunking Diffusion Transformer",
+    "abstract": "Diffusion Transformers process images as fixed-length sequences of tokens produced by a static patchify operation. While effective, this design spends uniform compute on low- and high-information regions alike, ignoring that images contain regions of varying detail and that the denoising process progresses from coarse structure at early timesteps to fine detail at late timesteps. We introduce the Dynamic Chunking Diffusion Transformer (DC-DiT), which augments the DiT backbone with a learned encoder-router-decoder scaffold that adaptively compresses the 2D input into a shorter token sequence in a data-dependent manner using a chunking mechanism learned end-to-end with diffusion training. The mechanism learns to compress uniform background regions into fewer tokens and detail-rich regions into more tokens, with meaningful visual segmentations emerging without explicit supervision. Furthermore, it also learns to adapt its compression across diffusion timesteps, using fewer tokens at noisy stages and more tokens as fine details emerge. On class-conditional ImageNet 256{times}256, DC-DiT consistently improves FID and Inception Score over both parameter-matched and FLOP-matched DiT baselines across 4{times} and 16{times} compression, showing this is a promising technique with potential further applications to pixel-space, video and 3D generation. Beyond accuracy, DC-DiT is practical: it can be upcycled from pretrained DiT checkpoints with minimal post-training compute (up to 8{times} fewer training steps) and composes with other dynamic computation methods to further reduce generation FLOPs.",
+    "authors": [
+      "Akash Haridas",
+      "Utkarsh Saxena",
+      "Parsa Ashrafi Fashi",
+      "Mehdi Rezagholizadeh",
+      "Vikram Appia",
+      "Emad Barsoum"
+    ],
+    "likes": 5,
+    "published_date": "Mar 6",
+    "url": "https://huggingface.co/papers/2603.06351",
+    "date_collected": "2026-03-10T07:12:45.814004+09:00",
+    "week": "2026-W11",
+    "translation": {
+      "title": "동적 청킹 확산 트랜스포머",
+      "abstract": "확산 트랜스포머는 정적 패치 작업에 의해 생성된 고정 길이의 토큰 시퀀스로 이미지를 처리합니다. 효과적이지만, 이 설계는 이미지가 다양한 세부 사항을 포함하고 노이즈 제거 과정이 초기 타임스텝에서의 굵은 구조부터 늦은 타임스텝에서의 세부사항으로 진행된다는 점을 무시하여 낮은 및 높은 정보 영역에 균일한 컴퓨팅을 소비합니다. 우리는 동적 청킹 확산 트랜스포머 (DC-DiT)를 소개합니다. 이는 DiT 백본에 학습된 인코더-라우터-디코더 구조를 추가하여 데이터 종속적인 방식으로 2D 입력을 짧은 토큰 시퀀스로 자유자재로 압축하는 청킹 메커니즘을 확산 훈련 중에 끝까지 학습합니다. 이 메커니즘은 균일한 배경 영역을 더 적은 토큰으로, 상세한 리치 영역을 더 많은 토큰으로 압축하는 방법을 학습하며 명시적 지도 없이 의미 있는 시각적 분할이 나타납니다. 더불어, 이는 확산 타임스텝을 통해 압축을 조정하며, 노이즈가 많은 단계에서는 더 적은 토큰을 사용하고 세부 사항이 나타날 때는 더 많은 토큰을 사용합니다. Class-conditional ImageNet 256{times}256에서, DC-DiT는 4{times}와 16{times} 압축을 통해 매개변수 일치 및 FLOP 일치 DiT 기준에 비해 일관적으로 FID 및 Inception Score를 개선하며, 이는 이 기술이 더 많은 응용 가능성을 갖는 유망한 기술임을 보여줍니다. 높은 정확도 외에도, DC-DiT는 실용적입니다: 사전 훈련된 DiT 체크포인트에서 최소한의 추가 훈련 컴퓨팅으로 업사이클링할 수 있으며, 다른 동적 계산 방법과 결합하여 생성 FLOP를 더욱 줄일 수 있습니다."
+    },
+    "summary": "1. Dynamic Chunking Diffusion Transformer (DC-DiT)는 이미지 처리를 위해 2D 입력을 청킹 메커니즘을 사용하여 자동으로 토큰 시퀀스로 압축하는 방법을 학습하여 시각적 분할을 명시적 감독 없이 구현하며, 세부 사항이 나타나는 단계에서 많은 토큰을 사용합니다.\n2. DC-DiT는 Class-conditional ImageNet 256{times}256에서 FID 및 Inception Score를 개선하고, 매개변수 및 FLOP 일치 DiT 기준에 비해서도 성능을 향상시키는 것으로 나타났으며, 픽셀 공간, 비디오 및 3D 생성과 같은 더 많은 응용 가능성을 갖는 유망한 기술이다.\n3. DC-DiT는 추가 훈련 단계를 최대 8배 줄이면서 사전 훈련된 DiT 체크포인트를 업사이클링할 수 있고, 다른 동적 계산 방법과 결합하여 생성 FLOP를 더욱 줄이는 실용적인 특징을 가지고 있다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  }
+]

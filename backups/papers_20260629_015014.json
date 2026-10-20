@@ -1,0 +1,306 @@
+[
+  {
+    "title": "MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision",
+    "abstract": "Personalized presentation generation requires more than conditioning on a current prompt or template: agents must preserve stable user preferences across tasks, retain newly introduced preferences and constraints during multi-turn revision, and carry out local edits reliably. We propose MemSlides, a hierarchical memory framework for personalized presentation agents that separates long-term memory from working memory and further divides long-term memory into user profile memory and tool memory. User profile memory stores intent-conditioned profiles for round-0 personalization, working memory carries active preferences and session constraints across revision rounds, and tool memory stores reusable execution experience for reliable localized editing. MemSlides pairs this memory design with scoped slide-local revision, so targeted updates act on the smallest affected region instead of repeatedly regenerating the full deck. In controlled experiments, user profile memory improves persona-alignment judgments on a multi-persona, multi-intent profile bank, tool-memory injection improves closed-loop modify behavior in diagnostic matched-pair settings, and qualitative cases illustrate working memory's ability to carryover preferences. Taken together, these results suggest that effective personalization in presentation authoring depends on separating persistent user profiles, session-level working memory, and reusable execution experience across generation and localized revision.",
+    "authors": [
+      "Ye Jin",
+      "Yangyang Xu",
+      "Jun Zhu",
+      "Yibo Yang"
+    ],
+    "likes": 159,
+    "published_date": "Jun 15",
+    "url": "https://huggingface.co/papers/2606.17162",
+    "date_collected": "2026-06-29T07:28:44.323726+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "MemSlides: 사용자 지향 프레젠테이션 슬라이드 생성을 위한 계층적 메모리 주도 에이전트 프레임워크",
+      "abstract": "개인화된 프레젠테이션 생성은 현재 프롬프트나 템플릿에만 의존하는 것 이상을 필요로 합니다. 에이전트는 과업을 포함한 사용자 선호도를 안정적으로 유지하고, 다중 턴 수정 중에 새로운 선호도와 제약 사항을 보존하며 지역적 수정을 신뢰성 있게 수행해야 합니다. 우리는 MemSlides를 제안합니다. 이는 사용자 지향 프레젠테이션 에이전트를 위한 계층적 메모리 프레임워크로, 장기 기억을 작업 기억과 사용자 프로필 기억으로 나눈다. 사용자 프로필 기억은 라운드-0 개인화를 위한 의도 조건화 프로필을 저장하며, 작업 기억은 수정 라운드 전반에 걸쳐 활성 선호도와 세션 제약 사항을 운반하고, 도구 기억은 신뢰할 수 있는 지역적 편집을 위해 재사용 가능한 실행 경험을 저장합니다. MemSlides는 이 메모리 디자인을 스코프가 지정된 슬라이드 지역 수정과 함께 제공하여 대상 업데이트가 전체 덱을 반복 생성하는 것 대신 최소 영향 영역에 작용하도록 합니다. 제어 실험에서 사용자 프로필 기억은 다중 페르소나, 다중 의도 프로필 벤크에서 페르소나 정렬 판단을 개선시키며, 도구 기억의 주입은 진단 매치 페어 환경에서 닫힌 루프 수정 행동을 개선시킵니다. 질적 케이스는 작업 기억이 선호도를 연속적으로 운반하는 능력을 보여줍니다. 이러한 결과는 프레젠테이션 작성에서의 효과적인 개인화는 생성과 지역적 수정 내에서 지속적인 사용자 프로필, 세션 수준의 작업 기억, 재사용 가능한 실행 경험을 분리하는 데 달려있음을 제안합니다."
+    },
+    "summary": "1. MemSlides는 사용자 프로필 메모리, 작업 메모리, 도구 메모리로 구성된 계층적 메모리 프레임워크를 제안하며, 지역 수정과 함께 작동하여 자세한 프레젠테이션 슬라이드 개인화를 향상시킵니다.\n2. 제어 실험에서 사용자 프로필 메모리는 페르소나 정렬 판단을 향상시키고, 도구 메모리는 닫힌 루프 수정 행동을 향상시킵니다.\n3. MemSlides는 프레젠테이션 작성에서 효과적인 개인화를 위해 사용자 프로필, 작업 메모리, 재사용 경험을 분리하여 유지하는 것이 중요함을 시사합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Qwen-AgentWorld: Language World Models for General Agents",
+    "abstract": "A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further push the boundaries of general agents. (i) We first focus on building foundation models for agentic environment simulation. We introduce Qwen-AgentWorld-35B-A3B and Qwen-AgentWorld-397B-A17B, the first language world models capable of simulating agentic environments covering 7 domains via long chain-of-thought reasoning. Leveraging more than 10M environment interaction trajectories of 7 domains in real-world environments, we develop Qwen-AgentWorld through a three-stage training pipeline: CPT injects general-purpose world modeling capabilities from the state transition dynamics and augmented professional corpora, SFT activates next-state-prediction reasoning, and RL sharpens simulation fidelity through a tailored framework with hybrid rubric-and-rule rewards. To evaluate language world models, we present AgentWorldBench, a comprehensive benchmark constructed from real-world interactions of 5 frontier models on 9 established benchmarks. Empirical results demonstrate that Qwen-AgentWorld significantly outperforms existing frontier models. (ii) Beyond foundation models, we further investigate two complementary paradigms through which world modeling enhances general agents. First, as a decoupled environment simulator, Qwen-AgentWorld supports scalable and controllable simulation of thousands of real-world environments for agentic RL, yielding gains that surpass real-environment training alone. Second, as a unified agent foundation model, world-model training acts as a highly effective warm-up that improves downstream performance across 7 agentic benchmarks. Code: https://github.com/QwenLM/Qwen-AgentWorld",
+    "authors": [
+      "Yuxin Zuo",
+      "Zikai Xiao",
+      "Li Sheng",
+      "Fei Huang",
+      "Jianhong Tu",
+      "Yuxuan Liu",
+      "Tianyi Tang",
+      "Xiaomeng Hu",
+      "Yang Su",
+      "Qingfeng Lan",
+      "Yantao Liu",
+      "Qin Zhu",
+      "Yinger Zhang",
+      "Bowen Yu",
+      "Haiquan Zhao",
+      "Haiyang Xu",
+      "Jianxin Yang",
+      "Jiayang Cheng",
+      "Junyang Wang",
+      "Lianghao Deng",
+      "Mingfeng Xue",
+      "Tianyi Bai"
+    ],
+    "likes": 137,
+    "published_date": "Jun 23",
+    "url": "https://huggingface.co/papers/2606.24597",
+    "date_collected": "2026-06-29T07:28:44.327023+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "일반 에이전트를 위한 언어 월드 모델인 Qwen-AgentWorld",
+      "abstract": "월드 모델은 현재 관측과 행동에 기반하여 환경 동태를 예측하는데, 추론과 계획에 대한 핵심 인지 메커니즘으로 작용합니다. 본 연구에서는 언어 모델에 기반한 월드 모델링이 일반 에이전트의 한계를 더욱 넓힐 수 있는지를 조사했습니다. (이하 생략)"
+    },
+    "summary": "1. Qwen-AgentWorld는 7개 도메인을 포괄하는 에이전트 환경 시뮬레이션을 가능케 하는 첫 언어 월드 모델로, 10백만 건 이상의 환경 상호작용 경로를 통해 3단계의 훈련 파이프라인을 통해 개발되었으며, 기존 모델을 현저히 능가하는 실험 결과를 보여줍니다.\n2. Qwen-AgentWorld는 분리된 환경 시뮬레이터로서 실제 환경 훈련을 뛰어넘는 agentic RL을 위한 천 개의 실제 환경의 확장 가능하고 제어 가능한 시뮬레이션을 지원합니다.\n3. 월드 모델 훈련은 7개의 에이전트 벤치마크 전반적인 성능을 향상시키는 매우 효과적인 웜업 역할로 작용합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Are We Ready For An Agent-Native Memory System?",
+    "abstract": "Memory for large language model (LLM) agents has rapidly evolved from simple retrieval-augmented mechanisms into a data management system that supports persistent information storage, retrieval, update, consolidation, and dynamic lifecycle governance throughout agent execution. Despite this evolution, existing evaluations still benchmark agent memory mainly through end-to-end task success metrics (e.g., F1, BLEU), while treating the underlying system as a monolithic black box. As a result, critical system-level concerns, including operational costs, architectural trade-offs across memory modules, and robustness under dynamic knowledge updates, remain insufficiently explored. In this paper, we present a systematic experimental study of agent memory from a data management perspective. We propose an analytical framework that decomposes agent memory into four core modules: memory representation and storage, extraction, retrieval and routing, and maintenance. Under this framework, we evaluate 12 representative memory systems and two reference baselines across five benchmark workloads spanning 11 datasets. Our extensive end-to-end evaluation shows that no single architecture dominates across all scenarios; instead, effectiveness depends heavily on how well the memory structure aligns with the workload bottleneck. Furthermore, through fine-grained ablation studies, we quantify their individual effects on representation fidelity, retrieval precision, update correctness, and long-horizon stability. Finally, we reveal cost-performance trade-offs under realistic workloads, showing localized maintenance is more cost-efficient than global reorganization. Based on these findings, we identify promising directions towards building truly agent-native memory systems. The code is publicly available at https://github.com/OpenDataBox/MemoryData.",
+    "authors": [
+      "Wei Zhou",
+      "Xuanhe Zhou",
+      "Shaokun Han",
+      "Hongming Xu",
+      "Guoliang Li",
+      "Zhiyu Li",
+      "Feiyu Xiong",
+      "Fan Wu"
+    ],
+    "likes": 105,
+    "published_date": "Jun 23",
+    "url": "https://huggingface.co/papers/2606.24775",
+    "date_collected": "2026-06-29T07:28:44.329513+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "에이전트-네이티브 메모리 시스템에 준비된 우리는?",
+      "abstract": "대형 언어 모델 (LLM) 에이전트의 메모리는 단순한 검색 보조 메커니즘에서 시작하여 에이전트 실행 전체 기간 동안 지속적인 정보 저장, 검색, 업데이트, 정합화 및 동적 라이프사이클 관리를 지원하는 데이터 관리 시스템으로 신속히 발전해왔다. 그러나 현행 평가는 아직도 기존 시스템을 단일한 블랙박스로 취급하면서 주로 최종 작업 성공 측정 항목 (예: F1, BLEU)을 통해 에이전트 메모리를 벤치마킹한다. 결과적으로 운영 비용, 메모리 모듈 간의 구조적 트레이드오프, 동적 지식 업데이트 시의 강건성 등에 대한 중요한 시스템 수준 고려 사항이 충분히 탐색되지 않은 채 남아 있다. 본 논문에서는 데이터 관리 관점에서 에이전트 메모리를 체계적으로 실험적으로 연구하고 있다. 우리는 에이전트 메모리를 메모리 표현 및 저장, 추출, 검색 및 라우팅, 유지관리 네 가지 핵심 모듈로 분해하는 분석적 프레임워크를 제안한다. 이 프레임워크에서 우리는 11개의 데이터셋을 사용한 다섯 개의 벤치마크 작업을 포괄하는 12개 대표적인 메모리 시스템과 두 개의 기준선을 평가한다. 우리의 광범위한 최종 평가 결과 단일 아키텍처가 모든 시나리오에서 우세하지 않음을 보여주며, 효과는 메모리 구조가 작업 병목 현상과 얼마나 잘 일치하는지에 크게 의존함을 보여준다. 더불어 세밀한 삭제 실험을 통해 표현 정확도, 검색 정밀도, 업데이트 정확성 및 장기 안정성에 대한 개별 효과를 양적으로 구체화한다. 마지막으로 현실적인 작업 부하 조건 하에 비용-성능 트레이드오프를 밝혀 메모리의 지역화된 유지관리가 전체적 재조직보다 비용 효율적임을 보여준다. 이러한 결과를 바탕으로 우리는 진정한 에이전트-네이티브 메모리 시스템 구축 방향을 찾아내고 있다. 코드는 https://github.com/OpenDataBox/MemoryData에서 공개되어 있다."
+    },
+    "summary": "1. 대형 언어 모델 에이전트의 메모리는 검색 및 라우팅, 추출, 정상 유지, 프레젠테이션 통합과 같은 다양한 핵심 모듈로 구성된 시스템으로 발전해왔으며, 단일 설계가 모든 시나리오에서 효과적이지 않고 메모리 구조가 작업 부하와 어떻게 일치하는지에 따라 성능이 달라짐을 보여주고 있다.\n2. 에이전트 메모리 구조의 개별 구성 요소가 표현 정확성, 검색 정확성, 업데이트 정확성 및 장기 안정성에 미치는 영향을 분석하는 실험을 통해, 메모리의 세부 특성에 대한 양적 결과를 확인하고 있다.\n3. 현실적인 작업 부하 조건 하에서 지역화된 유지관리가 전체적 재조직보다 비용 효율적임을 밝혀, 에이전트-네이티브 메모리 시스템 구축에 유망한 방향을 제시하고 있다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Wan-Streamer v0.1: End-to-end Real-time Interactive Foundation Models",
+    "abstract": "We present Wan-Streamer, a native-streaming, end-to-end interactive foundation model designed from the ground up for real-time, low-latency, full-duplex audio-visual interaction. Wan-Streamer seamlessly models language, audio, and video as both input and output within a single Transformer, where the sequence is represented as interleaved visual, audio, and text input tokens together with visual, audio, and text output tokens, coordinated by block-causal attention for incremental streaming. Unlike cascaded interactive systems that rely on separate VAD, ASR, language, TTS, audio-driven animation, or video-generation modules, Wan-Streamer does not rely on external language, speech, avatar, or video-generation modules: perception, reasoning, generation, response timing, turn management, and cross-modal synchronization are learned jointly within one unified model, reducing pipeline latency and error accumulation. To support natural audio-visual responsiveness, we redesign the entire stack around streamability, including causal encoders, causal decoders, block-causal attention, and low-latency multimodal token scheduling, enabling streaming units as short as 160 ms at 25 fps. Wan-Streamer achieves approximately 200 ms model-side response latency and approximately 550 ms total interaction latency when combined with 350 ms bidirectional network latency, supporting sub-second duplex audio-visual communication. These results position Wan-Streamer as a unified, end-to-end, multimodal interactive foundation model for low-latency streaming interaction.",
+    "authors": [
+      "Lianghua Huang",
+      "Zhifan Wu",
+      "Wei Wang",
+      "Yupeng Shi",
+      "Mengyang Feng",
+      "Junjie He",
+      "Chenwei Xie",
+      "Yu Liu",
+      "Jingren Zhou",
+      "Ang Wang",
+      "Bang Zhang",
+      "Baole Ai",
+      "Chen Liang",
+      "Cheng Yu",
+      "Chongyang Zhong",
+      "Jinwei Qi",
+      "Kai Zhu",
+      "Pandeng Li",
+      "Peng Zhang",
+      "Wenyuan Zhang",
+      "Xinhua Cheng",
+      "Yitong Huang"
+    ],
+    "likes": 95,
+    "published_date": "Jun 23",
+    "url": "https://huggingface.co/papers/2606.25041",
+    "date_collected": "2026-06-29T07:28:44.332783+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "Wan-Streamer v0.1: 실시간 대화식 엔드투엔드 기반 모델",
+      "abstract": "Wan-Streamer는 실시간, 저지연, 풀 더플렉스 오디오-비주얼 상호작용을 위해 초안부터 설계된 엔드투엔드 대화식 기반 모델입니다. Wan-Streamer는 언어, 오디오, 비디오를 단일 트랜스포머 내에서 입력과 출력으로 모델링하며 시각, 오디오, 텍스트 입력 토큰과 시각, 오디오, 텍스트 출력 토큰이 교차되어 표현되는 방식으로 작동합니다."
+    },
+    "summary": "1. Wan-Streamer는 실시간 오디오-비주얼 상호작용을 위해 설계된 엔드투엔드 모델로, 다양한 모듈에 의존하지 않고 통합적으로 언어, 음성, 생성 및 동기화 기능을 통해 저지연 및 오류 누적을 감소시킵니다.\n2. 전체 시스템이 스트림 가능성을 중심으로 재설계되어 관련 기능들이 짧은 스트림 가능한 단위를 지원하며, 모델 측 응답 지연시간은 약 200ms이고 총 상호작용 지연시간은 약 550ms입니다.\n3. Wan-Streamer는 저지연 스트리밍 상호작용을 위한 통합적이고 엔드투엔드, 다중모달 대화식 기반 모델로 위치하게 됩니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+    "abstract": "LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring implicit sub-goals, and adapting to dynamic environments over long horizons. However, existing benchmarks rarely evaluate planning under retrieval-limited tool visibility. To address this gap, we introduce PlanBench-XL, an interactive benchmark of 327 retail tasks over 1,665 tools that tests whether agents can iteratively retrieve usable tools, invoke them to uncover intermediate evidence for subsequent calls toward the final goal. PlanBench-XL further features an optional blocking mechanism that simulates real-world unpredictability through missing, failing, or distracting tool functions, forcing agents to detect disrupted paths and adapt at runtime. Experiments on ten leading LLMs show that massive-tool planning remains challenging: while GPT-5.4 achieves 51.90% accuracy in block-free settings, it collapses to 11.36% under the most severe blocking condition. Further analysis shows that agents are especially vulnerable when failures lack explicit error signals or when recovery requires longer alternative tool-use paths. These results establish PlanBench-XL as a testbed for diagnosing agentic planning failures and highlight the need for robust adaptive planning in long-horizon tasks with large, imperfect tool environments.",
+    "authors": [
+      "Jiayu Liu",
+      "Qihan Lin",
+      "Cheng Qian",
+      "Rui Wang",
+      "Emre Can Acikgoz",
+      "Xiaocheng Yang",
+      "Jiateng Liu",
+      "Zhenhailong Wang",
+      "Xiusi Chen",
+      "Heng Ji",
+      "Dilek Hakkani-Tür"
+    ],
+    "likes": 95,
+    "published_date": "Jun 21",
+    "url": "https://huggingface.co/papers/2606.22388",
+    "date_collected": "2026-06-29T07:28:44.335415+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "PlanBench-XL: 대규모 도구 생태계에서 LLM 도구 사용 에이전트의 장기 계획 평가",
+      "abstract": "LLM 에이전트들은 점차 대규모 도구 생태계에서 활동하며 현실 세계 작업에서는 관련 도구 발견, 암시적 하위 목표 추론 및 장기적 환경 적응을 요구합니다. 그러나 기존의 벤치마크는 검색 제한된 도구 가시성 하에서의 계획을 거의 평가하지 않습니다. 이 공백을 해결하기 위해 1,665개의 도구를 활용한 327개의 소매 작업을 테스트하는 상호작용 벤치마크 인 PlanBench-XL을 소개합니다. 여기서 에이전트가 도구를 반복적으로 검색하고, 그들을 호출하여 마지막 목표로 향하는 중간 증거를 찾는지 확인합니다. PlanBench-XL은 또한 실제 세계의 불확실성을 모의하는 선택적 차단 메커니즘을 제공하며, 이를 통해 실패, 미실시 또는 정신 산만한 도구 기능을 통해 경로가 방해되었을 때 에이전트들이 런타임에서 이를 감지하고 적응해야 합니다. 주요 LLM 10개에 대한 실험 결과는 대규모 도구 계획이 여전히 어려움을 지님을 보여줍니다: GPT-5.4는 차단이 없는 상황에서 51.90%의 정확도를 달성하지만, 가장 심한 차단 조건에서는 11.36%로 떨어집니다. 추가 분석 결과, 실패가 명시적인 오류 신호가 없거나 회복에 더 긴 대체 도구 사용 경로가 필요한 경우, 에이전트는 특히 취약합니다. 이러한 결과는 PlanBench-XL을 계획 실패 진단을 위한 시험대로 확립하고, 대규모이며 불완전한 도구 환경에서의 장기적 작업에서 강력한 적응적 계획이 필요함을 강조합니다."
+    },
+    "summary": "1. PlanBench-XL은 대규모 도구 계획이 여전히 어려움을 지닌다는 실험 결과를 도출하며, 특히 GPT-5.4가 가장 심한 차단 조건 하에서 11.36%의 정확도에 빠짐을 확인합니다.\n2. 실패가 명시적인 오류 신호가 없거나 회복에 더 긴 대체 도구 사용 경로가 필요할 때, 에이전트들은 특히 취약함이 밝혀졌습니다.\n3. PlanBench-XL은 계획 실패 진단을 위한 시험대로 확립되었으며, 대규모이며 불완전한 도구 환경에서 강력한 적응적 계획의 필요성을 강조합니다.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+    "abstract": "Enterprise agents increasingly operate inside workspaces: they read heterogeneous files, invoke tools, and deliver business artifacts. We introduce EnterpriseClawBench, an enterprise agent benchmark constructed from proprietary, real-world agent sessions. Starting from a large archive of workplace sessions, the EnterpriseClawBench produces 852 reproducible tasks, each paired with recovered fixtures, rewritten prompts, role classes, skill subclasses, hard rules, and semantic rubrics. Because the sessions contain internal enterprise content, we do not release the benchmark data; instead, our reusable contribution is the construction and evaluation protocol. On EnterpriseClawBench, the best configuration reaches only 0.663 (Codex with GPT-5.5). These results show that enterprise agent evaluation must report harness--model combinations, artifact delivery, visual quality, cost, runtime, and skill-transfer behavior, rather than collapsing performance into a single score. Code: https://github.com/FrontisAI/EnterpriseClawBench",
+    "authors": [
+      "Jincheng Zhong",
+      "Weizhi Wang",
+      "Che Jiang",
+      "Kai Tian",
+      "Zhenzhao Yuan",
+      "Junlin Yang",
+      "Dianqiao Lei",
+      "Kaiyan Zhang"
+    ],
+    "likes": 79,
+    "published_date": "Jun 22",
+    "url": "https://huggingface.co/papers/2606.23654",
+    "date_collected": "2026-06-29T07:28:44.337908+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "기업 작업 세션에서 에이전트들을 벤치마킹하는 EnterpriseClawBench",
+      "abstract": "기업 에이전트들은 점점 작업공간 내에서 활동하는데 있어 다양한 파일을 읽고, 도구를 실행하고, 비즈니스 자산을 전달합니다. 우리는 전사적인 진영에서 생성된 실제 에이전트 세션으로 이루어진 기업 에이전트 벤치마크인 EnterpriseClawBench를 소개합니다. 이 벤치마크는 대규모의 작업 세션 아카이브를 기반으로 852가지 재현 가능한 작업을 생성하는데, 각각은 복구된 피스쳐, 다시 작성된 프롬프트, 역할 클래스, 기술 하위 클래스, 강한 규칙 및 의미론적 평가 지표와 함께 제공됩니다. 세션에는 내부 기업 콘텐츠가 포함되어 있기 때문에 벤치마크 데이터는 공개되지 않으며, 재사용 가능한 기여물은 구축 및 평가 프로토콜입니다. EnterpriseClawBench에서 최고 설정은 Codex with GPT-5.5로 0.663에 불과합니다. 이 결과는 기업 에이전트 평가가 단일 점수로의 성능 평가보다는 하드웨어-모델 조합, 자산 전달, 시각적 품질, 비용, 실행 시간 및 기술 이전 행동을 보고해야 함을 보여줍니다. 코드: https://github.com/FrontisAI/EnterpriseClawBench"
+    },
+    "summary": "1. EnterpriseClawBench는 작업 세션을 기반으로 852가지 재현 가능한 작업을 제공하며, 벤치마크 데이터는 공개되지 않지만 평가 프로토콜은 재사용 가능합니다.\n2. 기업 에이전트 평가는 단일 점수가 아닌 하드웨어-모델 조합, 자산 전달, 시각적 품질, 비용, 실행 시간 및 기술 이전 행동을 보고해야 합니다.\n3. 최고 설정에서도 EnterpriseClawBench의 결과는 Codex with GPT-5.5로 0.663에 불과합니다.",
+    "categories": [
+      "Other"
+    ]
+  },
+  {
+    "title": "OpenRath: Session-Centered Runtime State for Agent Systems",
+    "abstract": "Modern agent systems often suffer from fragmented runtime state: transcripts, tool effects, memory events, workspace placement, branch provenance, and replay evidence are recorded separately and become difficult to inspect or reproduce. OpenRath addresses this issue with a PyTorch-like programming model for multi-agent, multi-session systems. The analogy concerns the role of a central first-class runtime abstraction, not tensor computation. Its core abstraction is Session, the runtime value passed between agents and workflows. A Session is branchable, inspectable, replayable, backend-aware, and composable. It records conversation chunks, sandbox placement, lineage metadata, token usage, pending work, and tool evidence, while defining where memory interactions enter the runtime record. Since this state is carried by the same value used in program execution, fork, merge, and replay become explicit runtime operations rather than states reconstructed from external traces. OpenRath further defines Sandbox, Tool, Agent, Memory, Workflow, and Selector, with Selector turning control flow into runtime-routed decisions. This report presents the programming model, architecture, audited milestones, and evidence protocol. Its claims are limited to controlled runtime properties, while broad quantitative comparisons, live-provider quality, optional-backend availability, and memory quality are left for follow-on evaluation. The central thesis is that Session provides agent systems with a first-class runtime value for auditable composition.",
+    "authors": [
+      "Fukang Wen",
+      "Zhijie Wang",
+      "Ruilin Xu"
+    ],
+    "likes": 76,
+    "published_date": "Jun 17",
+    "url": "https://huggingface.co/papers/2606.19409",
+    "date_collected": "2026-06-29T07:28:44.340105+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "OpenRath: 에이전트 시스템을 위한 세션 중심 런타임 상태",
+      "abstract": "현대적인 에이전트 시스템은 종종 단편화된 런타임 상태로 인해 문제가 발생합니다: 대화 내용, 도구 효과, 메모리 이벤트, 작업 공간 배치, 가치 출처 등이 각각 기록되어 검사나 재현이 어려워집니다. OpenRath는 PyTorch와 유사한 프로그래밍 모델을 제공하여 다중 에이전트, 다중 세션 시스템에 대응합니다. 핵심 개념은 텐서 계산이 아닌 중앙의 일등급 런타임 추상화 역할을 하는 세션(Session)입니다. 세션은 에이전트들과 워크플로우 사이에 전달되는 런타임 값으로, 분기 가능하고 검사 가능하며 재생 가능하며 백엔드를 인식하며 조합 가능합니다. 대화 청크, 샌드박스 배치, 계보 메타데이터, 토큰 사용, 대기 작업, 도구 증거를 기록하면서 메모리 상호 작용이 런타임 레코드에 들어가는 위치를 정의합니다. 이 상태는 프로그램 실행에서 사용되는 값에 의해 전달되기 때문에 포크, 머지, 재생은 외부 추적에서 재구성되는 상태가 아니라 명시적인 런타임 작업이 됩니다. OpenRath는 더 나아가, 샌드박스, 도구, 에이전트, 메모리, 워크플로우, 셀렉터를 정의하며 동시에 셀렉터는 제어 흐름을 런타임 경로 결정으로 바꿉니다. 이 보고서는 프로그래밍 모델, 아키텍처, 검증된 이정표, 증거 프로토콜을 제시합니다. 이 주장은 통제된 런타임 특성에 한정되어 있으며, 브로드한 양적 비교, 라이브 제공업체 품질, 선택적 백엔드 가용성, 메모리 품질은 후속 평가를 위해 남겨 두었습니다. 중심 주장은 세션이 에이전트 시스템에 감사할 수 있는 구성을 위한 일등급 런타임 값이 된다는 것입니다."
+    },
+    "summary": "1. OpenRath는 에이전트 시스템에서 런타임 상태의 단편화 문제를 세션(Session)을 통해 해결하는 프로그래밍 모델을 제안합니다.\n2. 세션은 분기 가능하고 검사 가능하며 재생 가능하며 백엔드를 인식하며 조합 가능한 런타임 값으로, 에이전트 간 대화, 샌드박스 배치, 메모리 상호작용 등을 기록합니다.\n3. OpenRath는 세션을 중심으로 샌드박스, 도구, 에이전트, 메모리, 워크플로우, 셀렉터를 정의하여 제어 흐름을 런타임 기준으로 결정하는 프로그래밍 모델을 제시하며, 런타임 특성으로의 한정된 주장을 내놓습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention",
+    "abstract": "Self-attention is central to Transformer performance and is often the most expensive part of the Transformer at long context lengths because its pairwise token interactions scale quadratically with sequence length. Standard dense attention also applies the same set of attention heads to every token regardless of token difficulty or information content. This uniform activation can waste compute, especially as sequences grow longer and attention cost increases rapidly. We propose Grouped Query Experts (GQE), a mixture-of-experts layer on top of grouped-query attention (GQA). Within each GQA group, a router selects k query-head experts per token while all key-value (KV) heads remain dense and unchanged. Thus, GQE keeps the KV cache benefits of GQA and reduces only the active query-head computation. On a fixed 30B token budget at the 250M parameter scale, GQE matches the all-active GQA baseline in downstream accuracy while activating half the query heads per token.",
+    "authors": [
+      "Vishesh Tripathi",
+      "Abhay Kumar"
+    ],
+    "likes": 75,
+    "published_date": "Jun 18",
+    "url": "https://huggingface.co/papers/2606.20945",
+    "date_collected": "2026-06-29T07:28:44.342223+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "그룹화된 쿼리 전문가: GQA Self-Attention의 전문가 혼합",
+      "abstract": "셀프 어텐션은 트랜스포머의 성능에 중요하며, 특히 시퀀스 길이가 길어질수록 페어와이즈 토큰 상호작용이 이차적으로 증가하여 가장 많은 비용이 소요됩니다. 기존의 밀집 어텐션은 모든 토큰에 동일한 어텐션 헤드 세트를 적용하여 토큰 난이도나 정보 내용에 관계 없이 동일하게 활성화됩니다. 이런 단일 활성화는 계산 자원을 낭비하게 만들며, 특히 시퀀스가 길어지고 어텐션 비용이 급증할수록 문제가 됩니다. 우리는 그룹화된 쿼리 전문가(GQE)를 제안합니다."
+    },
+    "summary": "1. 셀프 어텐션은 트랜스포머의 중요한 성능 요소이며, 시퀀스 길이가 길어질수록 비용이 증가하는 단점이 있습니다.\n2. 그룹화된 쿼리 전문가(GQE)는 GQA에 존재하는 쿼리 헤드 계산만을 줄이며, 기존의 KV 은닉 이점을 유지합니다.\n3. GQE는 고정된 토큰 예산에서 더 적은 쿼리 헤드를 활성화하여 활성 GQA의 정확도와 일치하는 성능을 보입니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams",
+    "abstract": "Massive unstructured multimodal streams suffer from high \"data entropy,\" impeding both efficient human knowledge acquisition and high-quality AI post-training. Existing passive annotation paradigms, heavily reliant on heuristic rules or general VLMs, are costly, monotonous, and fail to unlock the deep procedural logic embedded in raw data. We elevate data processing to a learnable capability, proposing a paradigm shift towards Agentic Data Tailoring, which actively refining and structuring data to align with diverse user and downstream intents. To overcome the data scarcity bottleneck in training such high-order capabilities, we design a two-stage pipeline grounding generative semantic synthesis in deterministic Factual Anchors, yielding a large-scale dataset spanning five core physical and digital domains. Building upon this, DataClaw_0-9B model synergizes Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO), achieving robust alignment with complex refinement and tailoring intents. To systematically quantify this capability, we construct DataClaw_0-val, the first benchmark dedicated to data refinement. Crucially, we adopt downstream post-training as the ultimate validation touchstone. Evaluations on video generation, real-world VQA, and GUI navigation confirm that DataClaw_0 delivers high-information-density tailored data, facilitating efficient model adaptation to new tasks under limited training data regimes. Project page: https://czjdsg.github.io/MakeAnyData",
+    "authors": [
+      "Cong Wan",
+      "Zeyu Guo",
+      "Zijian Cai",
+      "Jiangyang Li",
+      "SongLin Dong",
+      "Lin Peng",
+      "Xiangyang Luo",
+      "Zhiheng Ma",
+      "Yihong Gong"
+    ],
+    "likes": 73,
+    "published_date": "Jun 19",
+    "url": "https://huggingface.co/papers/2606.21337",
+    "date_collected": "2026-06-29T07:28:44.344697+09:00",
+    "week": "2026-W26",
+    "translation": {
+      "title": "데이터클로우0: 원시 스트림으로부터 다양한 유형의 데이터를 개체적으로 조정",
+      "abstract": "대규모의 구조되지 않은 다중 모달 스트림은 높은 \"데이터 엔트로피\"로 인해 효율적인 인간 지식 습득과 고품질 AI 사후 훈련이 어렵습니다. 기존의 수동 주석 패러다임은 휴리스틱 규칙이나 일반 VLM에 강하게 의존하여 비용이 많이 들고 단조롭며, 원시 데이터에 내재된 심층적 절차 논리를 해제하지 못합니다. 우리는 러닝할 수 있는 능력으로 데이터 처리를 높이기 위해 ‘개체적 데이터 조정’으로의 패러다임 전환을 제안하며, 데이터를 다양한 사용자 및 하류 의도에 맞게 적극적으로 정제하고 구조화하는 방향으로 나아갑니다. 이러한 고차원 능력의 훈련에서 데이터 부족 병목 현상을 극복하기 위해, 우리는 결정론적 사실 앵커에 발전적 의미 합성을 기반으로 하는 두 단계 파이프라인을 설계하여, 다섯 개의 핵심 물리적 및 디지털 도메인을 아우르는 대규모 데이터셋을 생성합니다. DataClaw_0-9B 모델은 이를 바탕으로 지도된 세밀한 튜닝 (SFT)과 그룹 상대적 정책 최적화 (GRPO)를 결합하여 복합적인 정제 및 조정 의도와 견고한 일치를 달성합니다. 이 능력을 체계적으로 양적화하기 위해, 데이터 정제에 특화된 최초의 기준인 DataClaw_0-val을 구축합니다. 중요한 것은 하류 훈련 후 거품이 격파되는 것입니다. 비디오 생성, 실제 세계 VQA 및 GUI 탐색에 대한 평가 결과, DataClaw_0은 효율적인 모델 적응을 용이하게 하는 고정밀한 정보 밀도의 맞춤식 데이터를 제공함으로써, 새로운 작업에 대해 제한된 훈련 데이터로 모델을 조정할 수 있음이 확인됩니다. 프로젝트 페이지: https://czjdsg.github.io/MakeAnyData"
+    },
+    "summary": "1. 기존 수동 주석 방식의 한계를 극복하기 위해 데이터 처리 패러다임을 개체적 데이터 조정으로 전환하여 다양한 사용자 및 하류 의도에 부합하도록 데이터를 형성하는 능력을 제안하였다.\n2. 결정론적 사실 앵커를 기반으로 한 두 단계 파이프라인을 설계하여 여러 핵심 도메인을 아우르는 대규모 데이터셋을 생성하고, 지도된 세밀한 튜닝과 그룹 상대적 정책 최적화를 결합하여 일치하는 복잡한 정제 및 조정 의도를 달성한다.\n3. 데이터 정제에 특화된 DataClaw_0-val을 통해 모델을 효율적으로 새로운 작업에 적응시키기 위한 첫 번째 기준을 제시하였으며, 비디오 생성, 실제 세계 VQA 및 GUI 탐색 등에서 높은 정보 밀도의 맞춤식 데이터를 제공하여 효과적인 모델 적응을 가능하게 한다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DanceOPD: On-Policy Generative Field Distillation",
+    "abstract": "Modern image generation demands a single model that unifies diverse capabilities, including text-to-image (T2I), local editing, and global editing. However, these capabilities are rarely naturally aligned and often conflict. For instance, editing tends to degrade T2I performance, while global and local editing interfere with each other. Consequently, effectively composing these capabilities has become a central challenge for image generation model training. To tackle this, we introduce DanceOPD, an on-policy generative field distillation framework for flow-matching models that routes each sample to one capability field, queries one low-noise student-induced state, and trains with a simple velocity MSE objective. With each capability source defined as a velocity field over the shared flow state space, the student learns from fields queried on its own rollout states to compose expert capabilities. This formulation also absorbs operator-defined fields such as classifier-free guidance. Comprehensive experiments on T2I, editing, realism-field absorption, and CFG absorption show that our approach improves multi-capability composition, strengthening target capabilities while preserving anchor generation quality. We believe this work establishes a practical route for generative field distillation in flow-matching models.",
+    "authors": [
+      "Wei Zhou",
+      "Xiongwei Zhu",
+      "Zelin Xu",
+      "Bo Dong",
+      "Lixue Gong",
+      "Yongyuan Liang",
+      "Meng Chu",
+      "Leigang Qu",
+      "Lingdong Kong",
+      "Wei Liu",
+      "Tat-Seng Chua"
+    ],
+    "likes": 70,
+    "published_date": "Jun 25",
+    "url": "https://huggingface.co/papers/2606.27377",
+    "date_collected": "2026-06-29T07:28:44.347322+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "댄스OPD: 정책 기반 생성필드 증류",
+      "abstract": "최근 이미지 생성에는 텍스트-이미지(T2I), 지역 편집, 전역 편집 등을 포함한 다양한 능력들을 통합하는 단일 모델이 필요합니다. 그러나 이러한 기능들은 자연스럽게 일치되지 않고 종종 충돌합니다. 예를 들어, 편집은 T2I 성능을 저하시키는 경향이 있으며, 전역 및 지역 편집은 서로 간섭합니다. 이에 이미지 생성 모델 훈련에서 이러한 능력들을 효과적으로 조합하는 것이 중요한 과제가 되었습니다. 이에 우리는 각 샘플을 하나의 능력 필드로 라우팅하고, 하나의 낮은 잡음을 가진 학생 유도 상태를 쿼리하며, 간단한 속도 MSE 목표로 교육하는 흐름 일치 모델용 정책 생성 필드 증류 틀 '댄스OPD'를 소개합니다. 이러한 식은 각 능력 소스를 공유 흐름 상태 공간 위의 속도 필드로 정의하고, 학생은 자체 롤아웃 상태에서 쿼리된 필드로부터 전문 능력을 조합하는 것을 배웁니다. 이 식은 또한 분류기가 없는 지침과 같은 연산자 정의 필드를 흡수합니다. T2I, 편집, 현실성 필드 흡수 및 CFG 흡수에 대한 포괄적인 실험을 통해 우리의 방법이 다중 능력 조합을 개선하고, 대상 능력을 강화하면서 기준 세대 품질을 유지하는 것을 보여줍니다. 이 연구가 흐름 일치 모델에서 생성적 필드 증류에 대한 실용적 경로를 제시했다고 믿습니다."
+    },
+    "summary": "1. 다양한 능력을 포괄하는 이미지 생성을 위해 정책 생성필드 증류 모델인 댄스OPD를 도입하였다.\n2. 학생 모델은 전문 능력을 조합하기 위해 자체 롤아웃 상태에서 쿼리된 필드로부터 배우며, 연산자 정의 필드를 흡수한다.\n3. 실험 결과는 우리의 방법이 다중 능력 조합을 향상시키고 대상 능력을 강화하는 동시에 기준 세대 품질을 유지하는 것을 보여준다.",
+    "categories": [
+      "LLM",
+      "Computer Vision",
+      "Other"
+    ]
+  }
+]

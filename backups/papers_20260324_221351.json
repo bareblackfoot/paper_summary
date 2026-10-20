@@ -1,0 +1,278 @@
+[
+  {
+    "title": "HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning",
+    "abstract": "VLMs show strong multimodal capabilities, but they still struggle with fine-grained vision-language reasoning. We find that long CoT reasoning exposes diverse failure modes, including perception, reasoning, knowledge, and hallucination errors, which can compound across intermediate steps. However, most existing vision-language data used for RLVR does not involve complex reasoning chains that rely on visual evidence throughout, leaving these weaknesses largely unexposed. We therefore propose HopChain, a scalable framework for synthesizing multi-hop vision-language reasoning data specifically for RLVR training of VLMs. Each synthesized multi-hop query forms a logically dependent chain of instance-grounded hops, where earlier hops establish the instances, sets, or conditions needed for later hops, while the final answer remains a specific, unambiguous number suitable for verifiable rewards. We add the multi-hop data synthesized by HopChain to the original RLVR data used to train Qwen3.5-35B-A3B and Qwen3.5-397B-A17B, and compare against RLVR on the original RLVR data alone across 24 benchmarks spanning STEM and Puzzle, General VQA, Text Recognition and Document Understanding, and Video Understanding. Although this multi-hop data is not synthesized to target any specific benchmark, adding it improves 20 out of 24 benchmarks on both models, indicating broad and generalizable gains. To demonstrate that full chained queries are important, we replace them with half-multi-hop or single-hop variants, reducing the 24-benchmark average accuracy by 5.3 and 7.0 points, respectively. Multi-hop training also strengthens long-CoT vision-language reasoning, with gains peaking at more than 50 accuracy points in the ultra-long-CoT regime. These experiments establish HopChain as an effective, scalable framework for synthesizing multi-hop data that improves generalizable vision-language reasoning.",
+    "authors": [
+      "Shenzhi Wang",
+      "Shixuan Liu",
+      "Jing Zhou",
+      "Chang Gao",
+      "Xiong-Hui Chen",
+      "Binghai Wang",
+      "An Yang",
+      "Shiji Song",
+      "Bowen Yu",
+      "Gao Huang",
+      "Junyang Lin"
+    ],
+    "likes": 94,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.17024",
+    "date_collected": "2026-03-24T07:14:05.022679+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "HopChain: 일반화 가능한 비전-언어 추론을 위한 다중 점프 데이터 합성",
+      "abstract": "VLMs는 강력한 다중모달 능력을 보여주지만 세부적인 비전-언어 추론에는 여전히 어려움을 겪습니다. 본 연구에서는 장기 CoT 추론이 지각, 추론, 지식, 환각 오류를 노출하는 것을 발견했으며 이는 중간 단계에서 복합될 수 있습니다. 그러나 RLVR에 사용된 기존 비전-언어 데이터 대부분은 시각적 증거에 의존하는 복잡한 추론 체인을 포함하지 않아 이러한 약점이 크게 노출되지 않았습니다. 따라서 우리는 VLMs의 RLVR 훈련을 위해 특히 다중 점프 비전-언어 추론 데이터를 합성하는 확장 가능한 프레임워크인 HopChain을 제안합니다. 각 합성된 다중 점프 쿼리는 초기 점프가 후속 점프에 필요한 사례, 집합 또는 조건을 설정하고 최종 답변은 검증 가능한 보상에 적합한 특정하고 모호하지 않은 숫자입니다. HopChain에 의해 합성된 다중 점프 데이터는 Qwen3.5-35B-A3B와 Qwen3.5-397B-A17B를 훈련하는 데 사용된 원래 RLVR 데이터에 추가되어, STEM 및 퍼즐, 일반 VQA, 텍스트 인식 및 문서 이해, 비디오 이해를 포함하는 24개의 벤치마크에서 RLVR과 비교합니다. 이 다중 점프 데이터는 특정 벤치마크를 대상으로 합성되지는 않았지만 이것을 추가하면 모델 모두에서 24개 벤치마크 중 20개가 향상되어 일반화 가능한 이득을 나타냅니다. 전체 체인된 쿼리가 중요함을 보여주기 위해 이를 반쪽 다중 점프나 단일 점프 변형으로 대체하여 24개의 평균 정확도가 각각 5.3점과 7.0점 줄어듭니다. 다중 점프 훈련은 또한 장기 CoT 비전-언어 추론을 강화시켜, 초장기 CoT 영역에서 50점 이상의 이익을 보입니다. 이 실험은 일반화 가능한 비전-언어 추론을 개선하는 다중 점프 데이터를 합성하는 효과적이고 확장 가능한 프레임워크로서의 HopChain을 확립합니다."
+    },
+    "summary": "1. VLMs는 강력한 다중모달 능력을 보유하지만 세부 비전-언어 추론에 어려움을 겪고 있습니다.\n2. HopChain은 RLVR 훈련을 위해 다중 점프 비전-언어 추론 데이터를 합성하는 확장 가능한 프레임워크로 제안됩니다.\n3. 다중 점프 데이터를 추가하면 모델의 20개 벤치마크에서 향상되어 일반화 가능한 이득을 보이며, 전체 체인된 쿼리의 중요성이 실험을 통해 입증됩니다.",
+    "categories": [
+      "Computer Vision",
+      "Reinforcement Learning",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models",
+    "abstract": "Distilled autoregressive (AR) video models enable efficient streaming generation but frequently misalign with human visual preferences. Existing reinforcement learning (RL) frameworks are not naturally suited to these architectures, typically requiring either expensive re-distillation or solver-coupled reverse-process optimization that introduces considerable memory and computational overhead. We present Astrolabe, an efficient online RL framework tailored for distilled AR models. To overcome existing bottlenecks, we introduce a forward-process RL formulation based on negative-aware fine-tuning. By contrasting positive and negative samples directly at inference endpoints, this approach establishes an implicit policy improvement direction without requiring reverse-process unrolling. To scale this alignment to long videos, we propose a streaming training scheme that generates sequences progressively via a rolling KV-cache, applying RL updates exclusively to local clip windows while conditioning on prior context to ensure long-range coherence. Finally, to mitigate reward hacking, we integrate a multi-reward objective stabilized by uncertainty-aware selective regularization and dynamic reference updates. Extensive experiments demonstrate that our method consistently enhances generation quality across multiple distilled AR video models, serving as a robust and scalable alignment solution.",
+    "authors": [
+      "Songchun Zhang",
+      "Zeyue Xue",
+      "Siming Fu",
+      "Jie Huang",
+      "Xianghao Kong",
+      "Y Ma",
+      "Haoyang Huang",
+      "Nan Duan",
+      "Anyi Rao"
+    ],
+    "likes": 83,
+    "published_date": "Mar 17",
+    "url": "https://huggingface.co/papers/2603.17051",
+    "date_collected": "2026-03-24T07:14:05.024394+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "아스트롤라브: 정제된 자기회귀 비디오 모델을 위한 전진 과정 강화학습",
+      "abstract": "정제된 자기회귀(AR) 비디오 모델은 효율적인 스트리밍 생성을 가능하게 하지만 인간의 시각적 취향과 자주 일치하지 않습니다. 기존 강화학습(RL) 프레임워크는 이러한 구조에 자연스럽게 적합하지 않으며, 보통 고가의 재정제나 상당한 메모리 및 계산 부담을 도입하는 솔버 결합 역과정 최적화를 요구합니다. 우리는 정제된 AR 모델을 위해 맞춤형 온라인 RL 프레임워크인 아스트롤라브를 제안합니다. 기존 병목 현상을 극복하기 위해 부정 인식 세밀 조정을 기반으로 한 전진 과정 RL 공식을 소개합니다. 이 접근 방식은 추론 단말에서 직접 양대 샘플을 대조함으로써 역산 풀이를 요구하지 않고도 암시적 정책 개선 방향을 확립합니다. 이 정렬을 긴 비디오에 확장하기 위해 롤링 KV-캐시를 통해 서열을 점진적으로 생성하는 스트리밍 훈련 체계를 제안하며 RL 업데이트를 지역 클립 창에만 적용하고 이전 컨텍스트에 조건을 걸어 장거리 일관성을 보장합니다. 마지막으로, 보상 해킹을 줄이기 위해 불확실성 인식 선택적 정규화와 동적 참조 업데이트에 의해 안정화된 다중 보상 목표를 통합합니다. 방대한 실험 결과는 우리의 방법이 다수의 정제된 AR 비디오 모델에서 일관되게 생성 품질을 향상시키며 견고하고 확장 가능한 정렬 솔루션 역할을 한다는 것을 증명합니다."
+    },
+    "summary": "1. 정제된 AR 비디오 모델의 효율적인 생성을 위해 전진 과정 RL 프레임워크인 아스트롤라브를 소개합니다.\n2. 부정 인식 세밀 조정을 기반으로 하여 역과정을 요구하지 않으면서도 정책 향상 방향을 수립하는 방법을 제시합니다.\n3. 다중 보상 목표를 안정화하고 동적 참조 업데이트를 통해 보상 해킹을 완화하는 방법을 통해 생성 품질을 지속적으로 향상시키는 것을 실험을 통해 입증합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation",
+    "abstract": "Vision-language models (VLMs) have shown promise in earth observation (EO), yet they struggle with tasks that require grounding complex spatial reasoning in precise pixel-level visual representations. To address this problem, we introduce TerraScope, a unified VLM that delivers pixel-grounded geospatial reasoning with two key capabilities: (1) modality-flexible reasoning: it handles single-modality inputs (optical or SAR) and adaptively fuses different modalities into the reasoning process when both are available; (2) multi-temporal reasoning: it integrates temporal sequences for change analysis across multiple time points. In addition, we curate Terra-CoT, a large-scale dataset containing 1 million samples with pixel-level masks embedded in reasoning chains across multiple sources. We also propose TerraScope-Bench, the first benchmark for pixel-grounded geospatial reasoning with six sub-tasks that evaluates both answer accuracy and mask quality to ensure authentic pixel-grounded reasoning. Experiments show that TerraScope significantly outperforms existing VLMs on pixel-grounded geospatial reasoning while providing interpretable visual evidence.",
+    "authors": [
+      "Yan Shu",
+      "Bin Ren",
+      "Zhitong Xiong",
+      "Xiao Xiang Zhu",
+      "Begüm Demir",
+      "Nicu Sebe",
+      "Paolo Rota"
+    ],
+    "likes": 42,
+    "published_date": "Mar 19",
+    "url": "https://huggingface.co/papers/2603.19039",
+    "date_collected": "2026-03-24T07:14:05.025966+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "TerraScope: 지구 관측을 위한 픽셀 기반 시각적 추론",
+      "abstract": "비전-언어 모델(VLMs)은 지구 관측(EO)에서 유망성을 보이지만, 복잡한 공간 추론을 픽셀 수준의 시각적 표현에 근거해야 하는 작업에서 어려움을 겪습니다. 이 문제를 해결하기 위해 우리는 TerraScope를 소개합니다. TerraScope는 두 가지 핵심 능력을 갖춘 픽셀 기반 지리적 추론을 제공하는 통합형 VLM입니다: (1) 모달리티 유연한 추론: 단일 모달리티 입력(광학 또는 SAR)을 처리하며 두 모달리티가 모두 있는 경우 추론 과정에서 다양한 모달리티를 적응적으로 융합합니다; (2) 다중 시간적 추론: 여러 시점에서의 변화 분석을 위해 시간적 순서를 통합합니다. 또한, 픽셀 수준 마스크가 포함된 엄청난 크기의 데이터셋인 Terra-CoT를 제작했습니다. 우리는 또한 TerraScope-Bench를 제안하는데, 이는 Authentic한 픽셀 기반 추론을 보장하기 위해 답변 정확성과 마스크 품질을 평가하는 여섯 가지 하위 작업으로 이루어진 픽셀 기반 지리적 추론의 첫 번째 벤치마크입니다. 실험 결과, TerraScope는 시각적 증거를 제공하면서 기존 VLMs보다 픽셀 기반 지리적 추론에서 상당한 성능을 보입니다."
+    },
+    "summary": "1. TerraScope는 지구 관측에서 픽셀 기반 지리적 추론을 제공하는데, 단일 또는 다중 모달리티 입력을 처리하며 다중 시간적 추론을 수행합니다.\n2. TerraScope는 Terra-CoT라는 대규모 데이터셋을 활용하며, TerraScope-Bench를 통해 픽셀 기반 지리적 추론을 위한 첫 번째 벤치마크를 제시합니다.\n3. 실험 결과에 따르면 TerraScope는 다른 VLMs보다 픽셀 기반 지리적 추론에서 우수한 성능을 보이며, 해석 가능한 시각적 증거를 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models",
+    "abstract": "Effective collaboration begins with knowing when to ask for help. For example, when trying to identify an occluded object, a human would ask someone to remove the obstruction. Can MLLMs exhibit a similar \"proactive\" behavior by requesting simple user interventions? To investigate this, we introduce ProactiveBench, a benchmark built from seven repurposed datasets that tests proactiveness across different tasks such as recognizing occluded objects, enhancing image quality, and interpreting coarse sketches. We evaluate 22 MLLMs on ProactiveBench, showing that (i) they generally lack proactiveness; (ii) proactiveness does not correlate with model capacity; (iii) \"hinting\" at proactiveness yields only marginal gains. Surprisingly, we found that conversation histories and in-context learning introduce negative biases, hindering performance. Finally, we explore a simple fine-tuning strategy based on reinforcement learning: its results suggest that proactiveness can be learned, even generalizing to unseen scenarios. We publicly release ProactiveBench as a first step toward building proactive multimodal models.",
+    "authors": [
+      "Thomas De Min",
+      "Subhankar Roy",
+      "Stéphane Lathuilière",
+      "Elisa Ricci",
+      "Massimiliano Mancini"
+    ],
+    "likes": 25,
+    "published_date": "Mar 19",
+    "url": "https://huggingface.co/papers/2603.19466",
+    "date_collected": "2026-03-24T07:14:05.027396+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "ProactiveBench: 다중모달 대형언어모델의 선행적 행동 평가 벤치마크",
+      "abstract": "효과적인 협업은 도움을 요청할 때를 아는 것으로 시작합니다. 예를 들어, 가리힌 물체를 식별하려고 할 때 사람은 누군가에게 가리힌 것을 제거해 달라고 요청할 것입니다. MLLM(Multimodal Large Language Models)이 사용자에게 간단한 개입을 요청함으로써 유사한 \"선행적\" 행동을 발휘할 수 있는지 조사합니다. 이를 위해 선행적 행동을 테스트하는 ProactiveBench를 소개하며, 가리힌 물체 인식, 이미지 품질 향상, 대충 그린 스케치 해석과 같은 다양한 작업을 검증하는 7개 재활용 데이터셋으로 벤치마크를 설정합니다. ProactiveBench에서 22개의 MLLM을 평가하여, (i) 그들이 일반적으로 선행적 행동의 부족함을 보여줍니다; (ii) 선행적 행동은 모델 용량과 상관성이 없음을 보여줍니다; (iii) 선행적 행동을 암시하는 것은 마진 이득만을 제공합니다. 놀랍게도, 대화 기록과 맥락 내 학습은 부정적인 편향을 도입하여 성능을 방해한다는 것을 발견했습니다. 마지막으로, 강화 학습을 기반으로 한 간단한 선행적 조정 전략을 탐구하며, 그 결과는 선행적 행동이 배울 수 있으며 심지어 보지 못한 시나리오에도 일반화될 수 있음을 시사합니다. 우리는 ProactiveBench를 공개하며 선행적 다중모달 모델 구축 방향으로의 첫걸음을 내딛습니다."
+    },
+    "summary": "1. MLLM은 일반적으로 선행적 행동이 부족하며, 이는 모델 용량과 상관성이 없는 것으로 나타났습니다.\n2. 선행적 행동을 암시하는 것은 큰 이점을 제공하지 않는 것으로 확인되었고, 대화 기록과 맥락 내 학습은 부정적인 편향을 초래하여 성능을 저하시킵니다.\n3. 간단한 강화 학습 기반의 선행적 조정 전략은 선행적 행동을 학습할 수 있음을 시사하며, 이는 보지 못한 상황에도 적용될 수 있음을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow",
+    "abstract": "Scene generation has extensive industrial applications, demanding both high realism and precise control over geometry and appearance. Language-driven retrieval methods compose plausible scenes from a large object database, but overlook object-level control and often fail to enforce scene-level style coherence. Graph-based formulations offer higher controllability over objects and inform holistic consistency by explicitly modeling relations, yet existing methods struggle to produce high-fidelity textured results, thereby limiting their practical utility. We present FlowScene, a tri-branch scene generative model conditioned on multimodal graphs that collaboratively generates scene layouts, object shapes, and object textures. At its core lies a tight-coupled rectified flow model that exchanges object information during generation, enabling collaborative reasoning across the graph. This enables fine-grained control of objects' shapes, textures, and relations while enforcing scene-level style coherence across structure and appearance. Extensive experiments show that FlowScene outperforms both language-conditioned and graph-conditioned baselines in terms of generation realism, style consistency, and alignment with human preferences.",
+    "authors": [
+      "Zhifei Yang",
+      "Guangyao Zhai",
+      "Keyang Lu",
+      "YuYang Yin",
+      "Chao Zhang",
+      "Zhen Xiao",
+      "Jieyi Long",
+      "Nassir Navab",
+      "Yikai Wang"
+    ],
+    "likes": 24,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2603.19598",
+    "date_collected": "2026-03-24T07:14:05.029058+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "플로우신: 다중 모달 그래프 정리 흐름으로 일관된 실내 장면 생성",
+      "abstract": "장면 생성은 높은 현실감과 기하학적, 시각적 제어를 요구하는 다양한 산업 응용이 있습니다. 언어 주도적 검색 방법은 대규모 객체 데이터베이스로부터 타당한 장면을 구성하지만 객체 수준의 제어를 간과하고 종종 장면 수준의 스타일 일관성을 유지하지 못합니다. 그래프 기반 설계는 객체에 대한 더 높은 제어력을 제공하며 관계를 명시적으로 모델링하여 전체적인 일관성을 제시하지만, 기존 방법은 고품질의 질감 있는 결과물을 생성하는 데 어려움을 겪어 실제 유용성이 제한됩니다. 본 논문에서는 다중 모달 그래프에 의존하는 삼 분기 장면 생성 모델인 FlowScene을 제안합니다. 이 모델은 협력하여 장면 레이아웃, 객체 모양 및 객체 질감을 생성하는데, 핵심은 객체 정보를 교환하는 직결된 흐름 모델에 있어서 그래프 상에서의 협력적 추론을 가능하게 합니다. 이는 구조와 외형 간의 장면 수준의 스타일 일관성을 강조하면서 객체의 모양, 질감 및 관계를 세밀하게 제어할 수 있도록 합니다. 많은 실험 결과, FlowScene이 생성 현실감, 스타일 일관성 및 인간의 선호도와의 일치 측면에서 언어 및 그래프 조건부 기준 모델들을 능가한다는 것을 보여줍니다."
+    },
+    "summary": "1. FlowScene은 실내 장면 생성에 있어 다중 모달 그래프를 이용한 장면 레이아웃, 객체 형상 및 질감을 협력적으로 생성하여 객체의 형상, 질감 및 관계를 세밀하게 제어할 수 있습니다.\n2. 기존 방법들과 비교하여 FlowScene은 생성된 결과물의 현실감, 스타일 일관성 및 인간의 선호도와 더 잘 부합하는 것으로 나타났습니다.\n3. FlowScene은 언어 및 그래프 조건부 모델들에 비해 더 높은 생성 현실감과 스타일 일관성을 제공함으로써 그 성능 우수성을 입증했습니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation",
+    "abstract": "Recent advances in diffusion models have significantly improved text-to-video generation, enabling personalized content creation with fine-grained control over both foreground and background elements. However, precise face-attribute alignment across subjects remains challenging, as existing methods lack explicit mechanisms to ensure intra-group consistency. Addressing this gap requires both explicit modeling strategies and face-attribute-aware data resources. We therefore propose LumosX, a framework that advances both data and model design. On the data side, a tailored collection pipeline orchestrates captions and visual cues from independent videos, while multimodal large language models (MLLMs) infer and assign subject-specific dependencies. These extracted relational priors impose a finer-grained structure that amplifies the expressive control of personalized video generation and enables the construction of a comprehensive benchmark. On the modeling side, Relational Self-Attention and Relational Cross-Attention intertwine position-aware embeddings with refined attention dynamics to inscribe explicit subject-attribute dependencies, enforcing disciplined intra-group cohesion and amplifying the separation between distinct subject clusters. Comprehensive evaluations on our benchmark demonstrate that LumosX achieves state-of-the-art performance in fine-grained, identity-consistent, and semantically aligned personalized multi-subject video generation. Code and models are available at https://jiazheng-xing.github.io/lumosx-home/.",
+    "authors": [
+      "Jiazheng Xing",
+      "Fei Du",
+      "Hangjie Yuan",
+      "Pengwei Liu",
+      "Hongbin Xu",
+      "Hai Ci",
+      "Ruigang Niu",
+      "Weihua Chen",
+      "Fan Wang",
+      "Yong Liu"
+    ],
+    "likes": 21,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2603.20192",
+    "date_collected": "2026-03-24T07:14:05.030804+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "LumosX: 사람들의 특성과 관련된 모든 신원을 연결하여 맞춤형 비디오 생성",
+      "abstract": "최근 확산 모델의 발전으로 텍스트에서 비디오로의 전환이 크게 향상되어 전경과 배경 요소 모두에 세밀한 제어가 가능한 맞춤형 콘텐츠 제작이 가능해졌다. 그러나 다양한 주제물에서 정확한 얼굴 특성 정렬은 여전히 어려운 문제로, 기존 방법들은 그룹 내 일관성을 보장하는 명시적 메커니즘이 부족하다. 이러한 공백을 해소하기 위해서는 명시적 모델링 전략과 얼굴 특성 인지 데이터 자원이 모두 필요하다. 따라서 우리는 데이터와 모델 설계 모두를 개발하는 LumosX를 제안한다. 데이터 측면에서는 맞춤형 컬렉션 파이프라인이 독립 비디오로부터 캡션과 시각적 단서를 조율하고, 다중모달 대형 언어 모델(MLLMs)이 주제별 종속성을 추론하고 할당한다. 이러한 추출된 관계 선행 지식은 개인화된 비디오 생성의 표현적 제어를 증폭시키고 포괄적인 벤치마크 구성을 가능케 한다. 모델링 측면에서는 관계 자기-주의와 관계 교차-주의가 위치인식 임베딩과 세밀한 주의 역학을 얽혀 명시적 주제-속성 종속성을 새기고, 규정된 그룹 내 응집력을 강화하며 구분된 주제 군 사이의 분리를 증폭시킨다. 우리의 벤치마크에서의 포괄적인 평가는 LumosX가 세밀하고 일관된 아이덴티티 및 의미론적으로 일치하는 개인화된 다중 주제 비디오 생성에서 최첨단 성능을 달성함을 보여준다. 코드와 모델은 https://jiazheng-xing.github.io/lumosx-home/에서 사용 가능하다."
+    },
+    "summary": "1. 최근 확산 모델의 발전으로 맞춤형 비디오 생성이 세밀한 제어를 통해 실현되고, LumosX는 그룹 내 일관성을 강화하는 명시적 모델링 기법과 얼굴 특성 인지 데이터 자원을 통해 이 공백을 메웠다.\n2. 데이터 측면에서는 독립 비디오에서 캡션과 시각적 단서를 모으는 맞춤형 컬렉션 파이프라인과 다중모달 대형 언어 모델을 통해 주제별 종속성을 추론하고 할당하며, 추출된 관계 선행 지식은 개인화된 비디오 생성의 표현적 제어를 강화했다.\n3. LumosX는 관계 자기-주의와 관계 교차-주의를 결합하여 명시적 주제-속성 종속성을 새기고, 그룹 내 응집력을 강화하며 구분된 주제 군 사이의 분리를 강화하여 최첨단의 개인화된 다중 주제 비디오 생성 성능을 달성했다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "The Y-Combinator for LLMs: Solving Long-Context Rot with λ-Calculus",
+    "abstract": "LLMs are increasingly used as general-purpose reasoners, but long inputs remain bottlenecked by a fixed context window. Recursive Language Models (RLMs) address this by externalising the prompt and recursively solving subproblems. Yet existing RLMs depend on an open-ended read-eval-print loop (REPL) in which the model generates arbitrary control code, making execution difficult to verify, predict, and analyse.\n  We introduce λ-RLM, a framework for long-context reasoning that replaces free-form recursive code generation with a typed functional runtime grounded in λ-calculus. It executes a compact library of pre-verified combinators and uses neural inference only on bounded leaf subproblems, turning recursive reasoning into a structured functional program with explicit control flow. We show that λ-RLM admits formal guarantees absent from standard RLMs, including termination, closed-form cost bounds, controlled accuracy scaling with recursion depth, and an optimal partition rule under a simple cost model. Empirically, across four long-context reasoning tasks and nine base models, λ-RLM outperforms standard RLM in 29 of 36 model-task comparisons, improves average accuracy by up to +21.9 points across model tiers, and reduces latency by up to 4.1x. These results show that typed symbolic control yields a more reliable and efficient foundation for long-context reasoning than open-ended recursive code generation. The complete implementation of λ-RLM, is open-sourced for the community at: https://github.com/lambda-calculus-LLM/lambda-RLM.",
+    "authors": [
+      "Amartya Roy",
+      "Rasul Tutunov",
+      "Xiaotong Ji",
+      "Matthieu Zimmer",
+      "Haitham Bou-Ammar"
+    ],
+    "likes": 21,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2603.20105",
+    "date_collected": "2026-03-24T07:14:05.032235+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "LLM을 위한 Y-Combinator: λ-계산법으로 장문맥 회전 문제 해결하기",
+      "abstract": "LLM은 점점 범용 추론기로 사용되고 있지만 긴 입력은 고정된 문맥 창으로 병목 현상이 발생합니다. 재귀 언어 모델 (RLM)은 프롬프트를 외부화하고 하위 문제를 재귀적으로 해결함으로써 이를 해결합니다. 그러나 기존 RLM은 모델이 임의의 제어 코드를 생성하는 오픈엔드 read-eval-print 루프 (REPL)에 의존하므로 실행을 검증, 예측, 분석하기 어렵습니다."
+    },
+    "summary": "1. λ-RLM은 λ-계산법을 기반으로 한 긴 문맥 추론을 위한 프레임워크로, 사전 검증된 컴비네이터 라이브러리를 실행하며, 신경 추론은 유한한 leaf 하위 문제에서만 사용하여 재귀 추론을 명시적 제어 흐름이 있는 구조화된 함수형 프로그램으로 전환합니다.\n2. λ-RLM은 표준 RLM에는 없는 종료, 닫힌형 비용 한계, 재귀의 깊이에 따른 제어 정확도 스케일링, 간단한 비용 모델 하에서의 최적 파티션 규칙을 포함한 형식적 보장을 제공함을 보여줍니다.\n3. λ-RLM은 네 가지 장문맥 추론 작업과 아홉 가지 기본 모델에 걸쳐, 표준 RLM을 36개 모델-작업 비교 중 29개에서 능가하며, 평균 정확도를 +21.9포인트까지 향상시키고, 대기 시간을 최대 4.1배 단축하였습니다.",
+    "categories": [
+      "LLM",
+      "λ-Calculus",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Hyperagents",
+    "abstract": "Self-improving AI systems aim to reduce reliance on human engineering by learning to improve their own learning and problem-solving processes. Existing approaches to self-improvement rely on fixed, handcrafted meta-level mechanisms, fundamentally limiting how fast such systems can improve. The Darwin Gödel Machine (DGM) demonstrates open-ended self-improvement in coding by repeatedly generating and evaluating self-modified variants. Because both evaluation and self-modification are coding tasks, gains in coding ability can translate into gains in self-improvement ability. However, this alignment does not generally hold beyond coding domains. We introduce hyperagents, self-referential agents that integrate a task agent (which solves the target task) and a meta agent (which modifies itself and the task agent) into a single editable program. Crucially, the meta-level modification procedure is itself editable, enabling metacognitive self-modification, improving not only the task-solving behavior, but also the mechanism that generates future improvements. We instantiate this framework by extending DGM to create DGM-Hyperagents (DGM-H), eliminating the assumption of domain-specific alignment between task performance and self-modification skill to potentially support self-accelerating progress on any computable task. Across diverse domains, the DGM-H improves performance over time and outperforms baselines without self-improvement or open-ended exploration, as well as prior self-improving systems. Furthermore, the DGM-H improves the process by which it generates new agents (e.g., persistent memory, performance tracking), and these meta-level improvements transfer across domains and accumulate across runs. DGM-Hyperagents offer a glimpse of open-ended AI systems that do not merely search for better solutions, but continually improve their search for how to improve.",
+    "authors": [
+      "Jenny Zhang",
+      "Bingchen Zhao",
+      "Wannan Yang",
+      "Jakob Foerster",
+      "Jeff Clune",
+      "Minqi Jiang",
+      "Sam Devlin",
+      "Tatiana Shavrina"
+    ],
+    "likes": 15,
+    "published_date": "Mar 19",
+    "url": "https://huggingface.co/papers/2603.19461",
+    "date_collected": "2026-03-24T07:14:05.033838+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "하이퍼에이전트",
+      "abstract": "스스로 발전하는 AI 시스템은 스스로 학습과 문제 해결 과정을 개선함으로써 인간 공학에 대한 의존을 줄이려고 합니다. 자체 발전 방법은 고정된, 수동으로 제작된 메타-수준 메커니즘에 의존하는 기존 방법들은 시스템이 얼마나 빨리 향상될 수 있는지를 근본적으로 제한합니다. 다윈 겟겔 머신(DGM)은 자체 수정된 변형을 반복적으로 생성하고 평가함으로써 코딩에서 무한한 자체 발전을 보여줍니다. 그러나 평가와 자체 수정이 모두 코딩 작업이기 때문에 코딩 능력의 향상은 자체 발전 능력으로 이어질 수 있습니다. 그러나 이런 일치는 코딩 영역을 넘어서는 일반적인 경우가 아닙니다. 저희는 하이퍼에이전트를 소개합니다. 이는 타겟 과제를 해결하는 작업 에이전트와 (본 과제를 수정하는) 메타 에이전트를 단일 편집 가능한 프로그램으로 통합하는 자기 참조적 에이전트입니다. 중요한 건, 메타-수준 수정 절차 자체가 편집 가능하여, 메타인지적인 자기 수정을 가능하게 하여 미래 향상을 생성하는 메커니즘 뿐만 아니라 과제 해결 행동도 향상시킵니다. 이 프레임워크를 실체화하기 위해 DGM을 확장하여 DGM-하이퍼에이전트(DGM-H)를 만들어 올었습니다. 이는 아무 계산 가능한 과제에서도 독립적인 일치 가정 없이 자가 가속 진행을 지원할 수 있습니다. 다양한 영역에서, DGM-H는 시간이 지남에 따라 성능이 향상되며, 자체 발전이나 무한한 탐험 없이, 이전의 자체 개선 시스템보다 뛰어난 결과를 보여줍니다. 또한, DGM-H는 새로운 에이전트를 생성하는 과정을 향상시키고(예: 영속적 기억, 성능 추적), 이 메타-수준 개선은 영역간에 전이되어 실행 중에 누적됩니다. DGM-하이퍼에이전트는 단순히 더 나은 해결책을 찾는 것이 아니라, 지속적으로 자신의 향상을 개선하는 AI 시스템의 모습을 제공합니다."
+    },
+    "summary": "1. 스스로 발전 가능한 AI 시스템에 대한 새로운 접근인 하이퍼에이전트는 자체 발전 능력을 통해 다양한 영역에서 성능을 지속적으로 향상시킵니다.\n2. 메타-수준 수정 절차를 수정 가능하게 하는 하이퍼에이전트는 과제 해결 능력 뿐만 아니라 미래 향상 생성 메커니즘도 향상시킵니다.\n3. DGM-하이퍼에이전트는 역동적이고 무한한 AI 시스템을 보여주며, 미래 향상을 지속적으로 개선하는 과정을 제공합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Reasoning as Compression: Unifying Budget Forcing via the Conditional Information Bottleneck",
+    "abstract": "Chain-of-Thought (CoT) prompting improves LLM accuracy on complex tasks but often increases token usage and inference cost. Existing \"Budget Forcing\" methods reducing cost via fine-tuning with heuristic length penalties, suppress both essential reasoning and redundant filler. We recast efficient reasoning as a lossy compression problem under the Information Bottleneck (IB) principle, and identify a key theoretical gap when applying naive IB to transformers: attention violates the Markov property between prompt, reasoning trace, and response. To resolve this issue, we model CoT generation under the Conditional Information Bottleneck (CIB) principle, where the reasoning trace Z acts as a computational bridge that contains only the information about the response Y that is not directly accessible from the prompt X. This yields a general Reinforcement Learning objective: maximize task reward while compressing completions under a prior over reasoning traces, subsuming common heuristics (e.g., length penalties) as special cases (e.g., uniform priors). In contrast to naive token-counting-based approaches, we introduce a semantic prior that measures token cost by surprisal under a language model prior. Empirically, our CIB objective prunes cognitive bloat while preserving fluency and logic, improving accuracy at moderate compression and enabling aggressive compression with minimal accuracy drop.",
+    "authors": [
+      "Fabio Valerio Massoli",
+      "Andrey Kuzmin",
+      "Arash Behboodi"
+    ],
+    "likes": 13,
+    "published_date": "Mar 9",
+    "url": "https://huggingface.co/papers/2603.08462",
+    "date_collected": "2026-03-24T07:14:05.035167+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "추론을 압축으로 바라보기: 조건부 정보 병목을 통한 예산 강제화 통합",
+      "abstract": "Chain-of-Thought (CoT) 프롬프팅은 복잡한 작업에서 LLM 정확도를 향상시키지만 종종 토큰 사용량과 추론 비용을 증가시킵니다. 기존의 \"예산 강제화\" 방법은 휴리스틱 길이 패널티로 미세 조정하여 비용을 줄이지만, 필수적인 추론과 중복된 필러를 억제합니다. 우리는 효율적인 추론을 정보 병목 (IB) 원리에 따른 손실 압축 문제로 재구성하고, transformers에 나이브한 IB를 적용할 때 중요한 이론적 갭을 식별했습니다: 어텐션은 프롬프트, 추론 추적, 응답 사이의 마르코프 성질을 위반합니다. 이 문제를 해결하기 위해 우리는 추론 추적 Z가 응답 Y에 대한 정보만을 포함하도록 하는 조건부 정보 병목 (CIB) 원리 아래 CoT 생성을 모델링했습니다. 이는 흔한 휴리스틱(예: 길이 패널티)를 특수한 경우 (예: 균일 사전)로 포괄하는 과제 보상을 최대화하면서 추론 보조를 사용하여 완료를 압축하는 일반적인 강화 학습 목적을 제공합니다. Naive 토큰 개수 기반 방법과는 대조적으로, 우리는 언어 모델 사전 아래서 기발성에 의한 토큰 비용을 측정하는 의미론적 사전을 도입합니다. 경험적으로, 우리의 CIB 목적은 인식적 과잉을 제거하면서 유창성과 논리를 보존하여 중간 압축에서 정확도를 향상시키고 최소한의 정확도 하락으로 강력한 압축을 가능하게 합니다."
+    },
+    "summary": "1. Chain-of-Thought (CoT) 프롬프팅은 LLM 정확도를 향상시키지만 토큰 사용량과 추론 비용을 증가시킨다.\n2. 정보 병목 원리에 기반한 추론을 효율적으로 다루기 위해 조건부 정보 병목 (CIB) 원리를 도입했다.\n3. 새로운 강화 학습 목적인 CIB는 효율적인 압축과 과도한 정확도 손실 없이 작업 보상을 최대화한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "A Subgoal-driven Framework for Improving Long-Horizon LLM Agents",
+    "abstract": "Large language model (LLM)-based agents have emerged as powerful autonomous controllers for digital environments, including mobile interfaces, operating systems, and web browsers. Web navigation, for example, requires handling dynamic content and long sequences of actions, making it particularly challenging. Existing LLM-based agents struggle with long-horizon planning in two main ways. During online execution, they often lose track as new information arrives, lacking a clear and adaptive path toward the final goal. This issue is further exacerbated during reinforcement learning (RL) fine-tuning, where sparse and delayed rewards make it difficult for agents to identify which actions lead to success, preventing them from maintaining coherent reasoning over extended tasks. To address these challenges, we propose two contributions. First, we introduce an agent framework that leverages proprietary models for online planning through subgoal decomposition. Second, we present MiRA (Milestoning your Reinforcement Learning Enhanced Agent), an RL training framework that uses dense, milestone-based reward signals. The real-time planning mechanism improves proprietary models such as Gemini by approximately a 10% absolute increase in success rate (SR) on the WebArena-Lite benchmark. Meanwhile, applying MiRA to the open Gemma3-12B model increases its success rate from 6.4% to 43.0%. This performance surpasses proprietary systems such as GPT-4-Turbo (17.6%) and GPT-4o (13.9%), as well as the previous open-model state of the art, WebRL (38.4%). Overall, our findings demonstrate that combining explicit inference-time planning with milestone-based rewards significantly improves an agent's long-horizon capabilities, paving the way for more robust and general-purpose autonomous systems.",
+    "authors": [
+      "Taiyi Wang",
+      "Sian Gooding",
+      "Florian Hartmann",
+      "Oriana Riva",
+      "Edward Grefenstette"
+    ],
+    "likes": 12,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2603.19685",
+    "date_collected": "2026-03-24T07:14:05.036646+09:00",
+    "week": "2026-W13",
+    "translation": {
+      "title": "장기 시계획 LLM 에이전트 개선을 위한 하위목표 주도형 프레임워크",
+      "abstract": "대규모 언어 모델(Large language model, LLM) 기반 에이전트는 휴대용 인터페이스, 운영 체제, 웹 브라우저 등 디지털 환경에서 강력한 자율 제어자로 등장했습니다. 특히 웹 탐색은 동적 콘텐츠 처리와 장기 시퀀스 작업을 필요로 하여 특히 어렵습니다. 기존 LLM 기반 에이전트는 장기 시계획에 있어 두 가지 주요 문제점이 있습니다. 온라인 실행 중에 새로운 정보가 도착하면 종종 추적을 잃고 최종 목표에 대한 명확하고 적응적인 경로가 부족합니다. 이 문제는 희박하고 지연된 보상이 RL(RL) 세분화에서 에이전트가 어떤 조치가 성공으로 이끄는지 식별하는 것을 어렵게 하기 때문에 더욱 악화됩니다. 이러한 도전에 대응하기 위해 두 가지 기여를 제안합니다. 첫째, 온라인 계획을 위한 기밀 모델을 활용하는 에이전트 프레임워크를 소개합니다. 둘째, MiRA (Milestoning your Reinforcement Learning Enhanced Agent)라는 RL 훈련 프레임워크를 제시하며, 이는 밀도 기반의 마일스톤 보상 신호를 사용합니다. 실시간 계획 메커니즘은 WebArena-Lite 벤치마크에서 Gemini와 같은 전용 모델을 약 10%의 절대적인 성공률(SR) 향상으로 개선시킵니다. 한편, 오픈 모델인 Gemma3-12B 모델에 MiRA를 적용하면 성공률이 6.4%에서 43.0%로 증가합니다. 이 성과는 GPT-4-Turbo(17.6%), GPT-4o(13.9%) 등의 전용 시스템과 이전 오픈 모델 기술수준인 WebRL(38.4%)을 능가합니다. 전반적으로, 명시적 추론 시간 계획과 마일스톤 기반 보상의 결합이 에이전트의 장기 시계획 능력을 크게 향상시키는 것을 보여주어 더 견고하고 다목적의 자율 시스템에 대한 길을 열어줍니다."
+    },
+    "summary": "1. LLM 에이전트는 장기 시계획에서 추적을 잃고 목표 도달까지의 경로를 구체화하기 어려워하는 문제가 있으며, 용역식 보상 시퀀스에 대응하기 어렵습니다.\n2. 이 논문에서는 온라인 계획을 위한 프레임워크와 마일스톤 기반 보상 신호를 활용하는 RL 훈련 프레임워크를 제안하고, 두 가지 기여로 웹 벤치마크에서 성공률을 상당히 향상시켰습니다.\n3. 명시적 인퍼런스 시간 계획과 마일스톤 기반 보상의 결합이 에이전트의 장기 시계획 능력을 크게 향상시키며, 더 견고하고 다목적의 자율 시스템에 대한 길을 열어줍니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  }
+]

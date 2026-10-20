@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Aug  4 23:09:44 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W32
+URL: https://huggingface.co/papers/week/2026-W32
+Found 10 papers in weekly view
+Fetching likes for: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks
+Fetching likes for: LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks
+Fetching likes for: Mental World Modeling
+Fetching likes for: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Fetching likes for: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Fetching likes for: DAPD: Dual-Anchored Policy Distillation
+Fetching likes for: Progressive Agent Skill Generation via Reinforcement Learning
+Fetching likes for: Weak-to-Strong On-Policy Distillation
+Fetching likes for: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Fetching likes for: VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation
+Selected top 10 papers by likes:
+1. SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks (140 likes)
+2. LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks (126 likes)
+3. Mental World Modeling (93 likes)
+4. From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement (89 likes)
+5. N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens (56 likes)
+6. DAPD: Dual-Anchored Policy Distillation (54 likes)
+7. Progressive Agent Skill Generation via Reinforcement Learning (49 likes)
+8. Weak-to-Strong On-Policy Distillation (49 likes)
+9. Meshy T2: Fast Native Mesh Generation with Flow Matching (47 likes)
+10. VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation (43 likes)
+Found abstract: Speech and audio generation is often needed in animation dubbing, audio drama, movies, advertising, ...
+Processed paper: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks
+Found abstract: Large language model (LLM) agents increasingly undertake long-horizon tasks that require sustained r...
+Processed paper: LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks
+Found abstract: World models enable a predictive substrate for planning and action, yet existing formulations merely...
+Processed paper: Mental World Modeling
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-orient...
+Processed paper: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Found abstract: We present N_0-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-gr...
+Processed paper: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Found abstract: On-policy (self) distillation (OPSD) is increasingly adopted for language-model post-training. It st...
+Processed paper: DAPD: Dual-Anchored Policy Distillation
+Found abstract: Existing skill generation methods largely rely on heuristics or pipeline-style consolidation, which ...
+Processed paper: Progressive Agent Skill Generation via Reinforcement Learning
+Found abstract: On-policy distillation (OPD), which aligns a student with the teacher's token-level distribution on ...
+Processed paper: Weak-to-Strong On-Policy Distillation
+Found abstract: Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high...
+Processed paper: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Found abstract: Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising stude...
+Processed paper: VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Mental World Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 93  ->  52
+Update date_collected: 2026-08-05T08:09:52.738132+09:00  ->  2026-08-04T08:10:32.267463+09:00
+
+Processing paper 4/10
+Title: From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Paper already exists, checking if translation is complete...
+Update likes: 89  ->  71
+Update date_collected: 2026-08-05T08:09:52.739803+09:00  ->  2026-08-04T08:10:32.265290+09:00
+
+Processing paper 5/10
+Title: N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+Paper already exists, checking if translation is complete...
+Update likes: 56  ->  49
+Update date_collected: 2026-08-05T08:09:52.741227+09:00  ->  2026-08-04T08:10:32.269589+09:00
+
+Processing paper 6/10
+Title: DAPD: Dual-Anchored Policy Distillation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Progressive Agent Skill Generation via Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Weak-to-Strong On-Policy Distillation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Meshy T2: Fast Native Mesh Generation with Flow Matching
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  41
+Update date_collected: 2026-08-05T08:09:52.747239+09:00  ->  2026-08-04T08:10:32.271922+09:00
+
+Processing paper 10/10
+Title: VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W32.json...
+
+Updating Notion database...
+Creating new paper: SwanTale: 통합된 다화자 음성 및 오디오 생성을 위한 지시 및 제로샷 작업
+Creating new paper: Real-World 작업용 장기 고려 에이전트 발전을 위한 LongHorizon-Harness
+Updating paper: 정신적 세계 모델링 (likes: 52 -> 93)
+Updating paper: RLVR에서 RLSVR로: 과제 변환이 열린 마음의 LLM 자가 향상을 유도합니다 (likes: 71 -> 89)
+Updating paper: N_0-VTLA: 잠재적 촉각 토큰을 활용한 비전-촉각-언어-동작 모델의 확장 (likes: 49 -> 56)
+Creating new paper: 이중 앵커 정책 증류(Dual-Anchored Policy Distillation)
+Creating new paper: 점진적 강화 학습을 통한 에이전트 기술 생성
+Creating new paper: 약한 강한 온-폴리시 증류
+Updating paper: Meshy T2: 플로우 매칭을 이용한 빠른 원시 매쉬 생성 (likes: 41 -> 47)
+Creating new paper: 다중모달 온-폴리시 증류에서 대상 재구성을 위한 시각적 증거의 소속성 추정
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Aug  4 23:11:20 UTC 2026 ===
+

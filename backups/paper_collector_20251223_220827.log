@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Dec 22 22:08:12 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W52
+URL: https://huggingface.co/papers/week/2025-W52
+Found 10 papers in weekly view
+Fetching likes for: Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows
+Fetching likes for: PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence
+Fetching likes for: When Reasoning Meets Its Laws
+Fetching likes for: Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience
+Fetching likes for: Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing
+Fetching likes for: 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation
+Fetching likes for: Are We on the Right Way to Assessing LLM-as-a-Judge?
+Fetching likes for: RadarGen: Automotive Radar Point Cloud Generation from Cameras
+Fetching likes for: GroundingME: Exposing the Visual Grounding Gap in MLLMs through Multi-Dimensional Evaluation
+Fetching likes for: An Anatomy of Vision-Language-Action Models: From Modules to Milestones and Challenges
+Selected top 10 papers by likes:
+1. Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows (78 likes)
+2. PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence (63 likes)
+3. When Reasoning Meets Its Laws (48 likes)
+4. Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience (37 likes)
+5. Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing (29 likes)
+6. 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation (28 likes)
+7. Are We on the Right Way to Assessing LLM-as-a-Judge? (21 likes)
+8. RadarGen: Automotive Radar Point Cloud Generation from Cameras (16 likes)
+9. GroundingME: Exposing the Visual Grounding Gap in MLLMs through Multi-Dimensional Evaluation (14 likes)
+10. An Anatomy of Vision-Language-Action Models: From Modules to Milestones and Challenges (13 likes)
+Found abstract: Despite advances in scientific AI, a coherent framework for Scientific General Intelligence (SGI)-th...
+Processed paper: Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows
+Found abstract: Robotic generalization relies on physical intelligence: the ability to reason about state changes, c...
+Processed paper: PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence
+Found abstract: Despite the superior performance of Large Reasoning Models (LRMs), their reasoning behaviors are oft...
+Processed paper: When Reasoning Meets Its Laws
+Found abstract: Large language models have recently made significant progress to generate rigorous mathematical proo...
+Processed paper: Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience
+Found abstract: Modern Latent Diffusion Models (LDMs) typically operate in low-level Variational Autoencoder (VAE) l...
+Processed paper: Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing
+Found abstract: Despite advances in Multimodal LLMs (MLLMs), their ability to reason over 3D structures and temporal...
+Processed paper: 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation
+Found abstract: LLM-as-a-Judge has been widely adopted as an evaluation method and served as supervised rewards in m...
+Processed paper: Are We on the Right Way to Assessing LLM-as-a-Judge?
+Found abstract: We present RadarGen, a diffusion model for synthesizing realistic automotive radar point clouds from...
+Processed paper: RadarGen: Automotive Radar Point Cloud Generation from Cameras
+Found abstract: Visual grounding, localizing objects from natural language descriptions, represents a critical bridg...
+Processed paper: GroundingME: Exposing the Visual Grounding Gap in MLLMs through Multi-Dimensional Evaluation
+Found abstract: Vision-Language-Action (VLA) models are driving a revolution in robotics, enabling machines to under...
+Processed paper: An Anatomy of Vision-Language-Action Models: From Modules to Milestones and Challenges
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: When Reasoning Meets Its Laws
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: 4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Are We on the Right Way to Assessing LLM-as-a-Judge?
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: RadarGen: Automotive Radar Point Cloud Generation from Cameras
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: GroundingME: Exposing the Visual Grounding Gap in MLLMs through Multi-Dimensional Evaluation
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: An Anatomy of Vision-Language-Action Models: From Modules to Milestones and Challenges
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W52.json...
+
+Updating Notion database...
+Creating new paper: LLMs와 과학자 맞춤 워크플로우로 과학 일반 지능 탐구
+Creating new paper: PhysBrain: 인간 내적 데이터, 시각 언어 모델로부터 물리적 지능으로의 다리 역할
+Creating new paper: 추론과 그의 법칙
+Creating new paper: Seed-Prover 1.5: 학부 수준 이상의 정리 증명 마스터링을 향한 경험 학습
+Creating new paper: 의미와 재구성 둘 다 중요합니다: 텍스트-이미지 생성과 편집을 위한 표현 인코더 개선하기
+Creating new paper: 4D-RGPT: 영역 수준 4차원 이해를 향하여 인지적 증류를 통해
+Creating new paper: LLM 심사자로서의 평가 방법이 올바른가?
+Creating new paper: RadarGen: 카메라에서 자동차 레이다 포인트 클라우드 생성
+Creating new paper: GroundingME: 다중 차원 평가를 통해 MLLM에서 시각적 그라운딩 간극 노출하기
+Creating new paper: 시각-언어-행동 모델 해부학: 모듈부터 이정표와 도전까지
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Dec 22 22:10:16 UTC 2025 ===
+

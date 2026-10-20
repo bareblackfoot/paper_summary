@@ -1,0 +1,46 @@
+=== Paper Collection Started at Mon May 11 01:42:56 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W20
+URL: https://huggingface.co/papers/week/2026-W20
+Found 3 papers in weekly view
+Fetching likes for: Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex
+Fetching likes for: IntentGrasp: A Comprehensive Benchmark for Intent Understanding
+Fetching likes for: MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference
+Selected top 10 papers by likes:
+1. Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex (1 likes)
+2. IntentGrasp: A Comprehensive Benchmark for Intent Understanding (1 likes)
+3. MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference (0 likes)
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) has become a standard approach for large langu...
+Processed paper: Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex
+Found abstract: Accurately understanding the intent behind speech, conversation, and writing is crucial to the devel...
+Processed paper: IntentGrasp: A Comprehensive Benchmark for Intent Understanding
+Found abstract: DeepSeek Sparse Attention (DSA) sets the state of the art for fine-grained inference-time sparse att...
+Processed paper: MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference
+Collected top 3 papers. Starting summary generation...
+
+Processing paper 1/3
+Title: Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex
+Generating Korean translation and summary...
+
+Processing paper 2/3
+Title: IntentGrasp: A Comprehensive Benchmark for Intent Understanding
+Generating Korean translation and summary...
+
+Processing paper 3/3
+Title: MISA: Mixture of Indexer Sparse Attention for Long-Context LLM Inference
+Generating Korean translation and summary...
+
+Processed 3 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W20.json...
+
+Updating Notion database...
+Creating new paper: 목록형 정책 최적화: LLM 응답 단순체내에서의 그룹 기반 RLVR 타겟 투영
+Creating new paper: 의도이해: 의도 이해를 위한 종합적인 평가 기준
+Creating new paper: DSA 대비 Long-Context LLM 추론을 위한 MISA: Mixture of Indexer Sparse Attention
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May 11 01:43:28 UTC 2026 ===
+

@@ -1,0 +1,314 @@
+[
+  {
+    "title": "LongLive: Real-time Interactive Long Video Generation",
+    "abstract": "We present LongLive, a frame-level autoregressive (AR) framework for\nreal-time and interactive long video generation. Long video generation presents\nchallenges in both efficiency and quality. Diffusion and Diffusion-Forcing\nmodels can produce high-quality videos but suffer from low efficiency due to\nbidirectional attention. Causal attention AR models support KV caching for\nfaster inference, but often degrade in quality on long videos due to memory\nchallenges during long-video training. In addition, beyond static prompt-based\ngeneration, interactive capabilities, such as streaming prompt inputs, are\ncritical for dynamic content creation, enabling users to guide narratives in\nreal time. This interactive requirement significantly increases complexity,\nespecially in ensuring visual consistency and semantic coherence during prompt\ntransitions. To address these challenges, LongLive adopts a causal, frame-level\nAR design that integrates a KV-recache mechanism that refreshes cached states\nwith new prompts for smooth, adherent switches; streaming long tuning to enable\nlong video training and to align training and inference (train-long-test-long);\nand short window attention paired with a frame-level attention sink, shorten as\nframe sink, preserving long-range consistency while enabling faster generation.\nWith these key designs, LongLive fine-tunes a 1.3B-parameter short-clip model\nto minute-long generation in just 32 GPU-days. At inference, LongLive sustains\n20.7 FPS on a single NVIDIA H100, achieves strong performance on VBench in both\nshort and long videos. LongLive supports up to 240-second videos on a single\nH100 GPU. LongLive further supports INT8-quantized inference with only marginal\nquality loss.",
+    "authors": [
+      "Shuai Yang",
+      "Wei Huang",
+      "Ruihang Chu",
+      "Yicheng Xiao",
+      "Yuyang Zhao",
+      "Xianbang Wang",
+      "Muyang Li",
+      "Enze Xie",
+      "Yingcong Chen",
+      "Yao Lu",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "likes": 128,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22622",
+    "date_collected": "2025-09-30T07:07:56.530658+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "실시간 대화형 장긴 영상 생성 시스템",
+      "abstract": "본 연구에서는 실시간 및 대화형 장긴 영상 생성을 위한 frame-level 자기회귀(AR) 프레임워크인 LongLive를 제안합니다. 장긴 영상 생성은 효율성과 품질 측면에서 도전을 겪고 있습니다. 확산(diffusion) 및 확산 강제(diffusion-forcing) 모델은 높은 품질의 영상을 생성할 수 있지만 양방향 주의(bidirectional attention)로 인해 효율성이 낮습니다. 인과주의 주의력 AR 모델은 빠른 추론을 위해 KV 캐싱을 지원하지만 장긴 영상의 훈련 과정에서 메모리 도전으로 인해 품질이 저하될 수 있습니다. 또한 정적 프롬프트 기반 생성을 넘어, 스트리밍 프롬프트 입력과 같은 대화형 능력은 실시간으로 이야기를 이끌어내는 사용자를 위해 중요합니다."
+    },
+    "summary": "1. LongLive는 실시간 및 대화형 장긴 영상 생성을 위한 causal, frame-level AR 디자인을 채택하여 품질과 효율성을 균형 있게 유지합니다.\n2. LongLive는 KV-recache 메커니즘, 스트리밍 긴 조율, frame-level 주의력을 통해 장긴 영상 훈련과 추론을 지원하며, 32 GPU-days 안에 1.3B-파라미터 모델을 분 단위 생성으로 세밀하게 조정합니다.\n3. LongLive는 NVIDIA H100에서 20.7 FPS의 성능을 유지하며, VBench에서 강력한 성능을 보이며, 240초 영상 생성을 가능하게 합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Quantile Advantage Estimation for Entropy-Safe Reasoning",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) strengthens LLM\nreasoning, but training often oscillates between {entropy collapse} and\n{entropy explosion}. We trace both hazards to the mean baseline used in\nvalue-free RL (e.g., GRPO and DAPO), which improperly penalizes\nnegative-advantage samples under reward outliers. We propose {Quantile\nAdvantage Estimation} (QAE), replacing the mean with a group-wise K-quantile\nbaseline. QAE induces a response-level, two-regime gate: on hard queries (p <=\n1 - K) it reinforces rare successes, while on easy queries (p > 1 - K) it\ntargets remaining failures. Under first-order softmax updates, we prove\n{two-sided entropy safety}, giving lower and upper bounds on one-step entropy\nchange that curb explosion and prevent collapse. Empirically, this minimal\nmodification stabilizes entropy, sparsifies credit assignment (with tuned K,\nroughly 80% of responses receive zero advantage), and yields sustained pass@1\ngains on Qwen3-8B/14B-Base across AIME 2024/2025 and AMC 2023. These results\nidentify {baseline design} -- rather than token-level heuristics -- as the\nprimary mechanism for scaling RLVR.",
+    "authors": [
+      "Junkang Wu",
+      "Kexin Huang",
+      "Jiancan Wu",
+      "An Zhang",
+      "Xiang Wang",
+      "Xiangnan He"
+    ],
+    "likes": 100,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22611",
+    "date_collected": "2025-09-30T07:07:56.531854+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "엔트로피 안전 추론을 위한 분위수 이점 추정",
+      "abstract": "확인 가능한 보상을 갖는 강화학습(RLVR)은 LLM 추론을 강화하지만, 훈련은 종종 엔트로피 붕괴와 폭발 사이를 오가게 됩니다. 우리는 이러한 위험을 모두 가치가 없는 RL(예: GRPO 및 DAPO)에서 사용된 평균 베이스라인으로 추적합니다. 이는 보상 이상치 아래의 음 이점 샘플을 부적절하게 처벌합니다. 우리는 분위수 이점 추정(QAE)을 제안하여 평균을 그룹별 K-분위수 베이스라인으로 대체합니다. QAE는 응답 수준의 두 단계 게이트를 유도합니다: 어려운 쿼리(p <= 1 - K)에서는 드문 성공을 강화하고, 쉬운 쿼리(p > 1 - K)에서는 남은 실패를 대상으로 합니다. 우리는 일차적인 softmax 업데이트 하에서 한 단계 엔트로피 변화에 대한 상한 및 하한을 증명하여 폭발을 억제하고 붕괴를 방지하는 {양방향 엔트로피 안전}을 제공합니다. 경험적으로, 이 작은 수정으로 엔트로피를 안정화시키고 신용 할당을 희소화시키며(튜닝된 K로 대략 80%의 응답이 0 이점을 받음), AIME 2024/2025와 AMC 2023에서 Qwen3-8B/14B-Base로 지속적인 pass@1 향상을 얻습니다. 이러한 결과는 토큰 레벨 휴리스틱이 아닌 베이스라인 디자인이 RLVR을 확장하는 주요 메커니즘임을 확인합니다."
+    },
+    "summary": "1. 엔트로피 안전 추론을 위한 분위수 이점 추정(QAE)은 평균을 그룹별 K-분위수 베이스라인으로 대체하여 RLVR의 향상된 안정성을 제공합니다.\n2. QAE는 어려운 쿼리에는 드문 성공을, 쉬운 쿼리에는 남은 실패를 강조하여 두 단계 게이트를 유도하며, 엔트로피 통제를 통해 엔트로피의 폭발과 붕괴를 예방합니다.\n3. 베이스라인 디자인이 RLVR의 규모 확장을 위한 기본 메커니즘임을 확인하는 실험 결과가 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+    "abstract": "We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language\nmodel that achieves state-of-the-art recognition accuracy while maintaining\nexceptional computational efficiency. Our approach employs a coarse-to-fine,\ntwo-stage parsing strategy that decouples global layout analysis from local\ncontent recognition. In the first stage, the model performs efficient layout\nanalysis on downsampled images to identify structural elements, circumventing\nthe computational overhead of processing high-resolution inputs. In the second\nstage, guided by the global layout, it performs targeted content recognition on\nnative-resolution crops extracted from the original image, preserving\nfine-grained details in dense text, complex formulas, and tables. To support\nthis strategy, we developed a comprehensive data engine that generates diverse,\nlarge-scale training corpora for both pretraining and fine-tuning. Ultimately,\nMinerU2.5 demonstrates strong document parsing ability, achieving\nstate-of-the-art performance on multiple benchmarks, surpassing both\ngeneral-purpose and domain-specific models across various recognition tasks,\nwhile maintaining significantly lower computational overhead.",
+    "authors": [
+      "Junbo Niu",
+      "Zheng Liu",
+      "Zhuangcheng Gu",
+      "Bin Wang",
+      "Linke Ouyang",
+      "Zhiyuan Zhao",
+      "Tao Chu",
+      "Tianyao He",
+      "Fan Wu",
+      "Qintong Zhang",
+      "Zhenjiang Jin",
+      "Guang Liang",
+      "Rui Zhang",
+      "Wenzheng Zhang",
+      "Yuan Qu",
+      "Zhifei Ren",
+      "Yuefeng Sun",
+      "Yuanhong Zheng",
+      "Dongsheng Ma",
+      "Zirui Tang",
+      "Boyu Niu",
+      "Ziyang Miao"
+    ],
+    "likes": 76,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22186",
+    "date_collected": "2025-09-30T07:07:56.533704+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "MinerU2.5: 효율적인 고해상도 문서 구문 분석을 위한 분리된 Vision-Language 모델",
+      "abstract": "MinerU2.5는 1.2B 파라미터의 문서 구문 분석 Vision-Language 모델로, 탁월한 계산 효율성을 유지하면서 최첨단 인식 정확도를 달성합니다. 우리의 접근 방식은 전역 레이아웃 분석과 지역 콘텐츠 인식을 분리하는 coarse-to-fine, 두 단계의 parsing 전략을 사용합니다."
+    },
+    "summary": "1. MinerU2.5는 고해상도 이미지 처리의 계산 비용을 줄이기 위해 다운샘플링된 이미지에서 효율적인 레이아웃 분석을 수행하고, 전역 레이아웃에 따라 원본 이미지에서 추출된 native-resolution crops에서 지역 콘텐츠 인식을 실행하여 상세한 텍스트, 복잡한 수식, 표의 세부 정보를 보존합니다.\n2. MinerU2.5는 다양하고 대규모의 훈련 말뭉치를 생성하는 종합적인 데이터 엔진을 개발하여 이 전략을 지원하며, 다양한 인식 작업에서 일반 용도 및 도메인 특정 모델을 능가하면서 상위 성능을 보이며, 계산 오버헤드를 크게 줄이고 있습니다.\n3. MinerU2.5는 다중 벤치마크에서 최첨단의 문서 구문 분석 능력을 보여주며, 다양한 인식 작업에서 일반적인 용도 및 도메인별 모델을 능가하면서 상당히 낮은 계산 오버헤드를 유지하고 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "EPO: Entropy-regularized Policy Optimization for LLM Agents\n  Reinforcement Learning",
+    "abstract": "Training LLM agents in multi-turn environments with sparse rewards, where\ncompleting a single task requires 30+ turns of interaction within an episode,\npresents a fundamental challenge for reinforcement learning. We identify a\ncritical failure mode unique to this setting: the exploration-exploitation\ncascade failure. This cascade begins with early-stage policy premature\nconvergence, where sparse feedback causes agents to commit to flawed,\nlow-entropy strategies. Subsequently, agents enter late-stage policy collapse,\nwhere conventional entropy regularization becomes counterproductive, promoting\nchaotic exploration that destabilizes training. We propose Entropy-regularized\nPolicy Optimization (EPO), a general framework that breaks this failure cycle\nthrough three synergistic mechanisms: (1) adopting entropy regularization in\nmulti-turn settings to enhance exploration, (2) an entropy smoothing\nregularizer that bounds policy entropy within historical averages to prevent\nabrupt fluctuations, and (3) adaptive phase-based weighting that balances\nexploration and exploitation across training. Our analysis justifies that EPO\nguarantees monotonically decreasing entropy variance while maintaining\nconvergence. EPO achieves up to 152% performance improvement on ScienceWorld\nand up to 19.8% on ALFWorld. Our work demonstrates that multi-turn\nsparse-reward settings require fundamentally different entropy control than\ntraditional RL, with broad implications for LLM agent training.",
+    "authors": [
+      "Xu Wujiang",
+      "Wentian Zhao",
+      "Zhenting Wang",
+      "Li Yu-Jhe",
+      "Jin Can",
+      "Jin Mingyu",
+      "Mei Kai",
+      "Wan Kun",
+      "Metaxas Dimitris"
+    ],
+    "likes": 72,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22576",
+    "date_collected": "2025-09-30T07:07:56.534995+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "엔트로피 정규화된 정책 최적화를 통한 LLM 에이전트들의 훈련",
+      "abstract": "여러 번의 상호작용을 필요로 하는 희소 보상을 갖는 멀티턴 환경에서 LLM 에이전트를 훈련하는 것은 강화 학습에 기본적인 도전을 제공합니다. 우리는 이 환경에서만 발생하는 중요한 실패 모드를 식별했습니다: 탐사-활용 연쇄 실패. 이 연쇄는 초기 정책 조기 수렴부터 시작하여, 희소한 피드백으로 인해 에이전트들이 결함이 있는, 낮은 엔트로피 전략에 헌신하게 됩니다. 그 후, 일반적인 엔트로피 정규화가 역효과를 보이는 정지 정책 붕괴 상태에 진입하게 됩니다. 우리는 이 실패 주기를 깨는 일반적인 프레임워크인 Entropy-regularized Policy Optimization (EPO)을 제안합니다."
+    },
+    "summary": "1. 멀티턴 환경에서 엔트로피 정규화를 채택하여 탐사를 강화함으로써 실패 사이클을 깨는 EPO 프레임워크가 제안되었습니다.\n2. EPO는 정책 엔트로피를 역사적 평균 내에서 한정시켜 급격한 변동을 방지하는 엔트로피 부드럽게 정규화하는 정규화자를 도입하였으며, 훈련 중에 탐사와 활용을 균형 있게 유지하는 적응적 단계별 가중치를 사용합니다.\n3. EPO는 엔트로피 분산이 단조롭게 감소하는 것을 보장하면서 수렴을 유지하며, ScienceWorld에서 최대 152%의 성능 향상과 ALFWorld에서 최대 19.8%의 성능 향상을 달성하였습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "ReviewScore: Misinformed Peer Review Detection with Large Language\n  Models",
+    "abstract": "Peer review serves as a backbone of academic research, but in most AI\nconferences, the review quality is degrading as the number of submissions\nexplodes. To reliably detect low-quality reviews, we define misinformed review\npoints as either \"weaknesses\" in a review that contain incorrect premises, or\n\"questions\" in a review that can be already answered by the paper. We verify\nthat 15.2% of weaknesses and 26.4% of questions are misinformed and introduce\nReviewScore indicating if a review point is misinformed. To evaluate the\nfactuality of each premise of weaknesses, we propose an automated engine that\nreconstructs every explicit and implicit premise from a weakness. We build a\nhuman expert-annotated ReviewScore dataset to check the ability of LLMs to\nautomate ReviewScore evaluation. Then, we measure human-model agreements on\nReviewScore using eight current state-of-the-art LLMs and verify moderate\nagreements. We also prove that evaluating premise-level factuality shows\nsignificantly higher agreements than evaluating weakness-level factuality. A\nthorough disagreement analysis further supports a potential of fully automated\nReviewScore evaluation.",
+    "authors": [
+      "Hyun Ryu",
+      "Doohyuk Jang",
+      "Hyemin S. Lee",
+      "Joonhyun Jeong",
+      "Gyeongman Kim",
+      "Donghyeon Cho",
+      "Gyouk Chu",
+      "Minyeong Hwang",
+      "Hyeongwon Jang",
+      "Changhun Kim",
+      "Haechan Kim",
+      "Jina Kim",
+      "Joowon Kim",
+      "Yoonjeon Kim",
+      "Kwanhyung Lee",
+      "Chanjae Park",
+      "Heecheol Yun",
+      "Gregor Betz",
+      "Eunho Yang"
+    ],
+    "likes": 54,
+    "published_date": "Sep 25",
+    "url": "https://huggingface.co/papers/2509.21679",
+    "date_collected": "2025-09-30T07:07:56.536721+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "리뷰스코어: 대형 언어 모델을 활용한 잘못된 피어 리뷰 탐지",
+      "abstract": "피어 리뷰는 학술 연구의 기반 역할을 하지만 대부분의 AI 학회에서는 논문 제출량이 급증함에 따라 리뷰 품질이 저하되고 있습니다. 저품질 리뷰를 신뢰성 있게 탐지하기 위해, 우리는 잘못된 리뷰 포인트를 \"약점\"으로 정의하며 이는 잘못된 전제를 포함하는 리뷰를 나타내며 논문으로 이미 답할 수 있는 \"질문\"을 가리킵니다."
+    },
+    "summary": "1. 잘못된 리뷰 포인트를 식별하기 위해 ReviewScore를 도입하였고, 약점의 15.2%와 질문의 26.4%가 잘못됨을 확인함.\n2. 약점의 전제사실을 검증하기 위해 자동화 엔진을 제안하였고, LLMs의 ReviewScore 평가 자동화 능력을 확인하기 위해 전문가 주석이 달린 데이터셋을 구축함.\n3. 여덟 가지 최신 LLMs를 사용하여 ReviewScore의 인간-모델 일치도를 측정하고, 전제 수준의 사실성평가가 약점 수준의 평가보다 높은 일치도를 보임.",
+    "categories": [
+      "LLM",
+      "인공지능",
+      "기계학습"
+    ]
+  },
+  {
+    "title": "Variational Reasoning for Language Models",
+    "abstract": "We introduce a variational reasoning framework for language models that\ntreats thinking traces as latent variables and optimizes them through\nvariational inference. Starting from the evidence lower bound (ELBO), we extend\nit to a multi-trace objective for tighter bounds and propose a forward-KL\nformulation that stabilizes the training of the variational posterior. We\nfurther show that rejection sampling finetuning and binary-reward RL, including\nGRPO, can be interpreted as local forward-KL objectives, where an implicit\nweighting by model accuracy naturally arises from the derivation and reveals a\npreviously unnoticed bias toward easier questions. We empirically validate our\nmethod on the Qwen 2.5 and Qwen 3 model families across a wide range of\nreasoning tasks. Overall, our work provides a principled probabilistic\nperspective that unifies variational inference with RL-style methods and yields\nstable objectives for improving the reasoning ability of language models. Our\ncode is available at https://github.com/sail-sg/variational-reasoning.",
+    "authors": [
+      "Xiangxin Zhou",
+      "Zichen Liu",
+      "Haonan Wang",
+      "Chao Du",
+      "Min Lin",
+      "Chongxuan Li",
+      "Liang Wang",
+      "Tianyu Pang"
+    ],
+    "likes": 51,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22637",
+    "date_collected": "2025-09-30T07:07:56.537983+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "언어 모델을 위한 변수 추론",
+      "abstract": "우리는 사고 트레이스를 잠재 변수로 취급하고 변분 추론을 통해 최적화하는 언어 모델을 위한 변수 추론 프레임워크를 소개합니다. 우리는 evidence lower bound (ELBO)를 기반으로 시작하여 더 강한 한계를 위한 다중 트레이스 목적으로 확장하고, 변분 사후의 훈련을 안정화하는 forward-KL 공식을 제안합니다. 또한 거절 샘플링 미세 조정과 바이너리-보상 강화 학습, 그 중 GRPO가 지역 forward-KL 목표로 해석될 수 있음을 보여줍니다. 모델 정확도에 의해 암묵적으로 가중치가 생기고 유도되는 이전에 인지되지 않았던 쉬운 질문으로의 편향을 드러냅니다. 우리는 Qwen 2.5 및 Qwen 3 모델 패밀리에서 다양한 추론 작업을 거쳐 우리의 방법을 경험적으로 검증합니다. 우리의 작업은 변분 추론을 RL 스타일 방법과 통합하고 언어 모델의 추론 능력을 향상시키기 위한 안정적인 목적을 제공합니다. 우리의 코드는 https://github.com/sail-sg/variational-reasoning에서 사용할 수 있습니다."
+    },
+    "summary": "1. 사고 트레이스를 잠재 변수로 취급하고 변분 추론을 통해 언어 모델을 최적화하는 프레임워크를 소개합니다.\n2. 다중 트레이스 목적과 forward-KL 공식을 제안하여 훈련을 안정화하고, 거절 샘플링 미세 조정과 바이너리-보상 강화 학습을 지역 forward-KL 목표로 해석합니다.\n3. 실험 결과로 Qwen 2.5 및 Qwen 3 모델 패밀리에서 다양한 추론 작업을 통해 이 방법을 검증하고, 안정적인 목적을 제공하여 언어 모델의 추론 능력을 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Language Models Can Learn from Verbal Feedback Without Scalar Rewards",
+    "abstract": "LLMs are often trained with RL from human or AI feedback, yet such methods\ntypically compress nuanced feedback into scalar rewards, discarding much of\ntheir richness and inducing scale imbalance. We propose treating verbal\nfeedback as a conditioning signal. Inspired by language priors in text-to-image\ngeneration, which enable novel outputs from unseen prompts, we introduce the\nfeedback-conditional policy (FCP). FCP learns directly from response-feedback\npairs, approximating the feedback-conditional posterior through maximum\nlikelihood training on offline data. We further develop an online bootstrapping\nstage where the policy generates under positive conditions and receives fresh\nfeedback to refine itself. This reframes feedback-driven learning as\nconditional generation rather than reward optimization, offering a more\nexpressive way for LLMs to directly learn from verbal feedback. Our code is\navailable at https://github.com/sail-sg/feedback-conditional-policy.",
+    "authors": [
+      "Renjie Luo",
+      "Zichen Liu",
+      "Xiangyan Liu",
+      "Chao Du",
+      "Min Lin",
+      "Wenhu Chen",
+      "Wei Lu",
+      "Tianyu Pang"
+    ],
+    "likes": 48,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22638",
+    "date_collected": "2025-09-30T07:07:56.539258+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "언어 모델이 스칼라 보상 없이 언어적 피드백으로부터 학습할 수 있다",
+      "abstract": "대부분의 언어 모델은 RL로 인간이나 AI로부터 피드백을 받아 훈련되나, 이러한 방법들은 일반적으로 미묘한 피드백을 스칼라 보상으로 압축하여 풍부성의 많은 부분을 상실하게 하고 규모 불균형을 유도한다. 우리는 언어적 피드백을 조건 신호로 취급하는 것을 제안한다. 텍스트-이미지 생성에서의 언어 선우들로 영감을 받아, 보이지 않은 프롬프트로부터 새로운 출력을 가능케 하는 피트백-조건 확률론적 방법 (FCP)을 소개한다. FCP는 응답-피드백 쌍으로부터 직접 학습하며, 오프라인 데이터에서 최대우도 학습을 통해 피드백-조건 사후 확률을 근사화한다. 우리는 추가로 정책이 양성 조건 아래서 생성하고 자체를 개선하기 위해 신선한 피드백을 받는 온라인 부트스트래핑 단계를 발전시킨다. 이는 리워드 최적화가 아닌 조건부 생성으로 피드백 주도 학습을 재평가하여, 언어 모델이 언어적 피드백으로부터 직접 학습하는 더 표현력 있는 방법을 제공한다. 저희 코드는 https://github.com/sail-sg/feedback-conditional-policy에서 확인할 수 있다."
+    },
+    "summary": "1. 스칼라 보상 대신에 언어적 피드백을 통해 학습하는 새로운 방법인 피드백-조건 확률론적 방법 (FCP)을 제안함.\n2. FCP는 응답-피드백 쌍을 학습하여 피드백-조건 사후 확률을 근사화하고, 오프라인 데이터에서 최대우도 학습을 수행함.\n3. 양성 조건 아래에서 생성하고 신선한 피드백을 받아 정책을 개선하는 온라인 부트스트래핑 단계를 도입하여, 언어 모델이 리워드 최적화가 아닌 조건부 생성으로 학습할 수 있도록 함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "CapRL: Stimulating Dense Image Caption Capabilities via Reinforcement\n  Learning",
+    "abstract": "Image captioning is a fundamental task that bridges the visual and linguistic\ndomains, playing a critical role in pre-training Large Vision-Language Models\n(LVLMs). Current state-of-the-art captioning models are typically trained with\nSupervised Fine-Tuning (SFT), a paradigm that relies on expensive, non-scalable\ndata annotated by humans or proprietary models. This approach often leads to\nmodels that memorize specific ground-truth answers, limiting their generality\nand ability to generate diverse, creative descriptions. To overcome the\nlimitation of SFT, we propose applying the Reinforcement Learning with\nVerifiable Rewards (RLVR) paradigm to the open-ended task of image captioning.\nA primary challenge, however, is designing an objective reward function for the\ninherently subjective nature of what constitutes a \"good\" caption. We introduce\nCaptioning Reinforcement Learning (CapRL), a novel training framework that\nredefines caption quality through its utility: a high-quality caption should\nenable a non-visual language model to accurately answer questions about the\ncorresponding image. CapRL employs a decoupled two-stage pipeline where an LVLM\ngenerates a caption, and the objective reward is derived from the accuracy of a\nseparate, vision-free LLM answering Multiple-Choice Questions based solely on\nthat caption. As the first study to apply RLVR to the subjective image\ncaptioning task, we demonstrate that CapRL significantly enhances multiple\nsettings. Pretraining on the CapRL-5M caption dataset annotated by CapRL-3B\nresults in substantial gains across 12 benchmarks. Moreover, within the Prism\nFramework for caption quality evaluation, CapRL achieves performance comparable\nto Qwen2.5-VL-72B, while exceeding the baseline by an average margin of 8.4%.\nCode is available here: https://github.com/InternLM/CapRL.",
+    "authors": [
+      "Long Xing",
+      "Xiaoyi Dong",
+      "Yuhang Zang",
+      "Yuhang Cao",
+      "Jianze Liang",
+      "Qidong Huang",
+      "Jiaqi Wang",
+      "Feng Wu",
+      "Dahua Lin"
+    ],
+    "likes": 28,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22647",
+    "date_collected": "2025-09-30T07:07:56.540560+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "CapRL: 보상기반 강화학습을 통한 밀도 높은 이미지 캡션 능력 제고",
+      "abstract": "이미지 캡션은 시각적 및 언어적 영역을 연결하는 주요 작업으로, 대규모 시각-언어 모델(LVLMs)의 사전 훈련에서 중요한 역할을 합니다. 현재의 최첨단 캡션 모델은 일반적으로 인간이 주석을 단거나 독점적 모델에 의해 주석이 달린 비용이 많이 드는 데이터를 활용하는 교사 학습(Supervised Fine-Tuning, SFT) 패러다임으로 교육됩니다. 이 방식은 종종 특정한 정답을 단순 외우기 때문에 일반성 및 다양하고 창의적인 설명을 생성하는 능력이 제한될 수 있습니다. SFT의 한계를 극복하기 위해, 우리는 강화학습과 검증 가능한 보상(RLVR) 패러다임을 이미지 캡션의 개방형 작업에 적용하는 것을 제안합니다. 그러나 \"좋은\" 캡션의 주관적인 성격을 위한 목적적 보상 함수를 설계하는 것이 주요 과제입니다. 저희는 강화학습 기반 캡션 인식(Captioning Reinforcement Learning, CapRL)을 소개합니다. 이 새로운 훈련 프레임워크는 유용성을 통해 캡션 품질을 재정의합니다: 고품질 캡션은 비시각적 언어 모델이 해당 이미지에 대한 질문에 정확히 답변할 수 있도록 하는 것이어야 합니다. CapRL은 LVLM이 캡션을 생성하고, 목적적 보상은 해당 캡션에만 기초하여 다중 선택 질문에 답변하는 비시각적 언어 모델의 정확도에서 유도됩니다. 주관적 이미지 캡션 작업에 RLVR을 처음으로 적용한 연구로, CapRL이 여러 설정을 크게 향상시킨다는 것을 증명합니다. CapRL-5M 이미지 캡션 데이터셋에 대한 사전 훈련은 CapRL-3B에 의해 주석이 달린 결과로 12개의 벤치마크에서 상당한 향상을 가져옵니다. 또한 캡션 품질 평가를 위한 프리즘 프레임워크 내에서, CapRL은 평균적으로 8.4%의 기준을 초과하면서 Qwen2.5-VL-72B과 유사한 성능을 달성합니다. 코드는 여기에서 확인할 수 있습니다: https://github.com/InternLM/CapRL."
+    },
+    "summary": "1. 기존 캡션 모델의 한계를 극복하기 위해 강화학습과 검증 가능한 보상을 활용하는 CapRL 훈련 프레임워크를 제안하였습니다.\n2. CapRL은 캡션 품질을 높이기 위해 이미지에 대한 질문에 정확히 답변하는 능력을 갖춘 LVLM과 비시각적 언어 모델을 사용하는 새로운 접근 방식을 채택하였습니다.\n3. 실험 결과, CapRL이 다양한 설정에서 상당한 성능 향상을 보이며, 기존 모델을 상회하는 성과를 달성함을 입증하였습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial\n  Reasoning",
+    "abstract": "The ability of robots to interpret human instructions and execute\nmanipulation tasks necessitates the availability of task-relevant tabletop\nscenes for training. However, traditional methods for creating these scenes\nrely on time-consuming manual layout design or purely randomized layouts, which\nare limited in terms of plausibility or alignment with the tasks. In this\npaper, we formulate a novel task, namely task-oriented tabletop scene\ngeneration, which poses significant challenges due to the substantial gap\nbetween high-level task instructions and the tabletop scenes. To support\nresearch on such a challenging task, we introduce MesaTask-10K, a large-scale\ndataset comprising approximately 10,700 synthetic tabletop scenes with manually\ncrafted layouts that ensure realistic layouts and intricate inter-object\nrelations. To bridge the gap between tasks and scenes, we propose a Spatial\nReasoning Chain that decomposes the generation process into object inference,\nspatial interrelation reasoning, and scene graph construction for the final 3D\nlayout. We present MesaTask, an LLM-based framework that utilizes this\nreasoning chain and is further enhanced with DPO algorithms to generate\nphysically plausible tabletop scenes that align well with given task\ndescriptions. Exhaustive experiments demonstrate the superior performance of\nMesaTask compared to baselines in generating task-conforming tabletop scenes\nwith realistic layouts. Project page is at https://mesatask.github.io/",
+    "authors": [
+      "Jinkun Hao",
+      "Naifu Liang",
+      "Zhen Luo",
+      "Xudong Xu",
+      "Weipeng Zhong",
+      "Ran Yi",
+      "Yichen Jin",
+      "Zhaoyang Lyu",
+      "Feng Zheng",
+      "Lizhuang Ma",
+      "Jiangmiao Pang"
+    ],
+    "likes": 27,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22281",
+    "date_collected": "2025-09-30T07:07:56.541979+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "MesaTask: 작업 주도형 3D 공간 추론을 통한 테이블탑 장면 생성 방향",
+      "abstract": "로봇이 인간 지시를 해석하고 조작 작업을 실행할 수 있는 능력은 교육을 위해 작업과 관련된 테이블탑 장면의 가용성을 필요로 합니다. 그러나 전통적인 방법은 시간 소모적인 수동 레이아웃 디자인이나 단순히 임의의 레이아웃을 사용하는데, 이는 신뢰성이나 작업과의 일치 측면에서 제한적입니다. 이 논문에서는 작업 중심 테이블탑 장면 생성이라는 새로운 작업을 정의하며, 이는 고수준 작업 지시와 테이블탑 장면 사이의 상당한 격차로 인해 중요한 도전을 제기합니다. 이러한 어려운 작업에 대한 연구를 지원하기 위해 1) 현실적인 레이아웃과 정교한 상호 객체 관계를 보장하는 대규모 데이터셋인 MesaTask-10K를 소개하고, 2) 물체 유추, 공간적 상호 관계 추론 및 최종 3D 레이아웃을 위한 장면 그래프 구성으로 생성과정을 분해하는 공간 추론 체인을 제안합니다. 이 추론 체인을 활용하는 LLM 기반 MesaTask 프레임워크를 소개하고 이를 DPO 알고리즘과 결합하여 주어진 작업 설명과 잘 일치하는 물리적으로 신뢰할 수 있는 테이블탑 장면을 생성하는 것을 강화합니다. 철저한 실험 결과는 MesaTask가 기존 기준모델과 비교하여 실제적인 레이아웃을 가진 작업 부합 테이블탑 장면을 생성하는 우수한 성능을 보여줍니다. 프로젝트 페이지는 https://mesatask.github.io/ 에서 확인 가능합니다."
+    },
+    "summary": "1. 인간 지시를 해석하고 조작 작업을 수행하는 로봇을 위해 실제적이고 임의적이지 않은 테이블탑 장면 생성 방법 연구.\n2. MesaTask-10K 데이터셋을 활용한 대규모 데이터 구축과 공간 추론 체인 기반의 3D 레이아웃 생성 프레임워크 소개.\n3. MesaTask의 DPO 알고리즘을 통한 물리적으로 신뢰할 수 있는 장면 생성 및 실제 작업과의 잘 일치 성능 입증.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM\n  Reinforcement Learning via Entropy-Guided Advantage Shaping",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is a powerful framework\nfor improving the reasoning abilities of Large Language Models (LLMs). However,\ncurrent methods such as GRPO rely only on problems where the model responses to\nthe same input differ in correctness, while ignoring those where all responses\nreceive the same reward - so-called zero-variance prompts. In this work, we\nargue that such prompts are not useless but can, in fact, provide meaningful\nfeedback for policy optimization. To this end, we introduce RL with\nZero-Variance Prompts (RL-ZVP), a novel algorithm that extract learning signals\nfrom zero-variance prompts. RL-ZVP directly rewards correctness and penalizes\nerrors even without contrasting responses, modulating feedback with token-level\ncharacteristics to preserve informative, nuanced signals. Across six math\nreasoning benchmarks, RL-ZVP achieves significant improvements of up to 8.61\npoints in accuracy and 7.77 points in pass rate over GRPO, while consistently\noutperforming other baselines that filter out zero-variance prompts. These\nresults highlight the untapped potential of learning from zero-variance prompts\nin RLVR.",
+    "authors": [
+      "Thanh-Long V. Le",
+      "Myeongho Jeon",
+      "Kim Vu",
+      "Viet Lai",
+      "Eunho Yang"
+    ],
+    "likes": 27,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.21880",
+    "date_collected": "2025-09-30T07:07:56.543132+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "Prompt가 남긴 것이 없다: LLM에서 Zero-Variance Prompts를 활용한 강화 학습",
+      "abstract": "확인 가능한 보상(Verifiable Rewards)을 이용한 강화 학습(RLVR)은 대형 언어 모델(LLM)의 추론 능력을 향상시키는 강력한 프레임워크이다. 그러나 현재의 GRPO와 같은 방법은 모델의 응답이 동일한 입력에 대해 정확도가 다르게 나오는 문제에만 의존하고, 동일 보상을 받는 경우인 zero-variance prompts를 무시한다. 본 논문에서는 이러한 prompt가 쓸모없는 것은 아니라 오히려 정책 최적화에 유의미한 피드백을 제공할 수 있다고 주장한다. 이에 RL with Zero-Variance Prompts (RL-ZVP)라는 새로운 알고리즘을 소개하며 zero-variance prompts로부터 학습 신호를 추출한다. RL-ZVP는 대조적인 응답 없이도 정확도를 직접 보상하고 오류에 벌점을 주어 토큰 수준의 특성으로 피드백을 조절하여 정보를 보존하는 세밀한 신호로 변환한다. 여섯 개의 수학 추론 벤치마크에서 RL-ZVP는 GRPO보다 8.61 포인트의 정확도 향상과 7.77 포인트의 합격률 향상을 달성하며 zero-variance prompts를 걸러내는 다른 기준들을 지속적으로 능가한다. 이러한 결과는 RLVR에서 zero-variance prompts로부터의 학습 가능성을 강조한다."
+    },
+    "summary": "1. 확인 가능한 보상을 이용한 강화 학습(RLVR)에서 zero-variance prompts를 활용하여 모델의 정책 최적화를 위한 유의미한 피드백을 제공하는 RL-ZVP 알고리즘이 소개되었다.\n2. RL-ZVP는 제로-분산 prompt로부터 학습 신호를 추출하여 정확도를 직접 보상하고 오류에 벌점을 줌으로써 다른 기준들을 능가하는 결과를 얻었다.\n3. RL-ZVP가 수학 추론 벤치마크에서 GRPO와 다른 기준들을 상속하여 엄청난 개선을 이루어내며 zero-variance prompts로부터의 학습 가능성을 잠재우는 것을 강조했다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  }
+]

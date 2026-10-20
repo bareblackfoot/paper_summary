@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Mar 16 22:16:12 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W12
+URL: https://huggingface.co/papers/week/2026-W12
+Found 10 papers in weekly view
+Fetching likes for: LMEB: Long-horizon Memory Embedding Benchmark
+Fetching likes for: Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation
+Fetching likes for: Can Vision-Language Models Solve the Shell Game?
+Fetching likes for: daVinci-Env: Open SWE Environment Synthesis at Scale
+Fetching likes for: OmniForcing: Unleashing Real-time Joint Audio-Visual Generation
+Fetching likes for: Visual-ERM: Reward Modeling for Visual Equivalence
+Fetching likes for: Multimodal OCR: Parse Anything from Documents
+Fetching likes for: MM-CondChain: A Programmatically Verified Benchmark for Visually Grounded Deep Compositional Reasoning
+Fetching likes for: V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration
+Fetching likes for: Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously
+Selected top 10 papers by likes:
+1. LMEB: Long-horizon Memory Embedding Benchmark (49 likes)
+2. Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation (26 likes)
+3. Can Vision-Language Models Solve the Shell Game? (25 likes)
+4. daVinci-Env: Open SWE Environment Synthesis at Scale (20 likes)
+5. OmniForcing: Unleashing Real-time Joint Audio-Visual Generation (19 likes)
+6. Visual-ERM: Reward Modeling for Visual Equivalence (16 likes)
+7. Multimodal OCR: Parse Anything from Documents (16 likes)
+8. MM-CondChain: A Programmatically Verified Benchmark for Visually Grounded Deep Compositional Reasoning (16 likes)
+9. V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration (12 likes)
+10. Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously (12 likes)
+Found abstract: Memory embeddings are crucial for memory-augmented systems, such as OpenClaw, but their evaluation i...
+Processed paper: LMEB: Long-horizon Memory Embedding Benchmark
+Found abstract: A recent cutting-edge topic in multimodal modeling is to unify visual comprehension and generation w...
+Processed paper: Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation
+Found abstract: Visual entity tracking is an innate cognitive ability in humans, yet it remains a critical bottlenec...
+Processed paper: Can Vision-Language Models Solve the Shell Game?
+Found abstract: Training capable software engineering (SWE) agents demands large-scale, executable, and verifiable e...
+Processed paper: daVinci-Env: Open SWE Environment Synthesis at Scale
+Found abstract: Recent joint audio-visual diffusion models achieve remarkable generation quality but suffer from hig...
+Processed paper: OmniForcing: Unleashing Real-time Joint Audio-Visual Generation
+Found abstract: Vision-to-code tasks require models to reconstruct structured visual inputs, such as charts, tables,...
+Processed paper: Visual-ERM: Reward Modeling for Visual Equivalence
+Found abstract: We present Multimodal OCR (MOCR), a document parsing paradigm that jointly parses text and graphics ...
+Processed paper: Multimodal OCR: Parse Anything from Documents
+Found abstract: Multimodal Large Language Models (MLLMs) are increasingly used to carry out visual workflows such as...
+Processed paper: MM-CondChain: A Programmatically Verified Benchmark for Visually Grounded Deep Compositional Reasoning
+Found abstract: Large-scale video generative models are trained on vast and diverse visual data, enabling them to in...
+Processed paper: V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration
+Found abstract: Online Video Large Language Models (VideoLLMs) play a critical role in supporting responsive, real-t...
+Processed paper: Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: LMEB: Long-horizon Memory Embedding Benchmark
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Can Vision-Language Models Solve the Shell Game?
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: daVinci-Env: Open SWE Environment Synthesis at Scale
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: OmniForcing: Unleashing Real-time Joint Audio-Visual Generation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Visual-ERM: Reward Modeling for Visual Equivalence
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Multimodal OCR: Parse Anything from Documents
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: MM-CondChain: A Programmatically Verified Benchmark for Visually Grounded Deep Compositional Reasoning
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W12.json...
+
+Updating Notion database...
+Creating new paper: 장기 기억 내장 평가를 위한 벤치마크(LMEB: Long-horizon Memory Embedding Benchmark)
+Creating new paper: 세부 패치 정보와 의미적 표현의 분리로 통합된 다중모달 이해와 생성 가능하게 함
+Creating new paper: 비전-언어 모델이 껍질 게임을 해결할 수 있을까?
+Creating new paper: daVinci-Env: 대규모 규모에서의 오픈 SWE 환경 합성
+Creating new paper: OmniForcing: 실시간 공동 음향-시각 생성의 해방
+Creating new paper: 시각적 동등성을 위한 보상 모델링(Visual-ERM)
+Creating new paper: 다중모달 OCR: 문서로부터의 해석
+Creating new paper: MM-CondChain: 시각적으로 기반을 둔 심층합성 추론을 위한 프로그램적으로 검증된 벤치마크
+Creating new paper: V-Bridge: 비디오 생성 선행 지식을 활용한 다목적 소량 샷 이미지 복원의 연결
+Creating new paper: 비디오 스트리밍 사고: VideoLLMs가 동시에 보고 사고할 수 있습니다
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Mar 16 22:18:49 UTC 2026 ===
+

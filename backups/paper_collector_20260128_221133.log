@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Jan 27 22:09:44 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W05
+URL: https://huggingface.co/papers/week/2026-W05
+Found 10 papers in weekly view
+Fetching likes for: LongCat-Flash-Thinking-2601 Technical Report
+Fetching likes for: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Fetching likes for: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Fetching likes for: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Fetching likes for: TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers
+Fetching likes for: The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation
+Fetching likes for: Scientific Image Synthesis: Benchmarking, Methodologies, and Downstream Utility
+Fetching likes for: VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents
+Fetching likes for: Elastic Attention: Test-time Adaptive Sparsity Ratios for Efficient Transformers
+Fetching likes for: iFSQ: Improving FSQ for Image Generation with 1 Line of Code
+Selected top 10 papers by likes:
+1. LongCat-Flash-Thinking-2601 Technical Report (150 likes)
+2. Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs (127 likes)
+3. daVinci-Dev: Agent-native Mid-training for Software Engineering (104 likes)
+4. SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents (72 likes)
+5. TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers (56 likes)
+6. The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation (46 likes)
+7. Scientific Image Synthesis: Benchmarking, Methodologies, and Downstream Utility (34 likes)
+8. VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents (29 likes)
+9. Elastic Attention: Test-time Adaptive Sparsity Ratios for Efficient Transformers (26 likes)
+10. iFSQ: Improving FSQ for Image Generation with 1 Line of Code (24 likes)
+Found abstract: We introduce LongCat-Flash-Thinking-2601, a 560-billion-parameter open-source Mixture-of-Experts (Mo...
+Processed paper: LongCat-Flash-Thinking-2601 Technical Report
+Found abstract: Data preparation aims to denoise raw datasets, uncover cross-dataset relationships, and extract valu...
+Processed paper: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Found abstract: Recently, the frontier of Large Language Model (LLM) capabilities has shifted from single-turn code ...
+Processed paper: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Found abstract: LLM agents have demonstrated remarkable capabilities in software development, but their performance ...
+Processed paper: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Found abstract: Standard Vision-Language-Action (VLA) models typically fine-tune a monolithic Vision-Language Model ...
+Processed paper: TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers
+Found abstract: Recent advances in video generation have produced models capable of synthesizing stunning visual con...
+Processed paper: The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation
+Found abstract: While synthetic data has proven effective for improving scientific reasoning in the text domain, mul...
+Processed paper: Scientific Image Synthesis: Benchmarking, Methodologies, and Downstream Utility
+Found abstract: Modern Vision-Language Models (VLMs) remain poorly characterized in multi-step visual interactions, ...
+Processed paper: VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents
+Found abstract: The quadratic complexity of standard attention mechanisms poses a significant scalability bottleneck...
+Processed paper: Elastic Attention: Test-time Adaptive Sparsity Ratios for Efficient Transformers
+Found abstract: The field of image generation is currently bifurcated into autoregressive (AR) models operating on d...
+Processed paper: iFSQ: Improving FSQ for Image Generation with 1 Line of Code
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: LongCat-Flash-Thinking-2601 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 150  ->  136
+Update date_collected: 2026-01-28T07:09:52.717508+09:00  ->  2026-01-27T07:09:02.649098+09:00
+
+Processing paper 2/10
+Title: Can LLMs Clean Up Your Mess? A Survey of Application-Ready Data Preparation with LLMs
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: daVinci-Dev: Agent-native Mid-training for Software Engineering
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
+Paper already exists, checking if translation is complete...
+Update likes: 72  ->  62
+Update date_collected: 2026-01-28T07:09:52.722254+09:00  ->  2026-01-27T07:09:02.650518+09:00
+
+Processing paper 5/10
+Title: TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers
+Paper already exists, checking if translation is complete...
+Update likes: 56  ->  52
+Update date_collected: 2026-01-28T07:09:52.723641+09:00  ->  2026-01-27T07:09:02.651958+09:00
+
+Processing paper 6/10
+Title: The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Scientific Image Synthesis: Benchmarking, Methodologies, and Downstream Utility
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: VisGym: Diverse, Customizable, Scalable Environments for Multimodal Agents
+Paper already exists, checking if translation is complete...
+Update likes: 29  ->  22
+Update date_collected: 2026-01-28T07:09:52.728080+09:00  ->  2026-01-27T07:09:02.653406+09:00
+
+Processing paper 9/10
+Title: Elastic Attention: Test-time Adaptive Sparsity Ratios for Efficient Transformers
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: iFSQ: Improving FSQ for Image Generation with 1 Line of Code
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W05.json...
+
+Updating Notion database...
+Updating paper: LongCat-Flash-Thinking-2601 기술 보고서 (likes: 136 -> 150)
+Creating new paper: LLM이 정리 작업을 할 수 있을까? LLM을 활용한 응용준비 데이터 처리 조사
+Creating new paper: daVinci-Dev: 소프트웨어 공학을 위한 에이전트 기반 중간 학습
+Updating paper: SWE-Pruner: 코딩 에이전트용 자기 적응식 컨텍스트 가지치기 (likes: 62 -> 72)
+Updating paper: TwinBrainVLA: 일반 VLM의 잠재력을 비대칭 Transformer 혼합을 통해 실체화된 작업에 발휘하기 (likes: 52 -> 56)
+Creating new paper: 대본만 필요합니다: 장거리 대화에서 시네마틱 비디오 생성을 위한 에이전트 기반 프레임워크
+Creating new paper: 과학 이미지 합성: 벤치마킹, 방법론, 그리고 하향 유틸리티
+Updating paper: VisGym: 다양하고 사용자화 가능하며 확장 가능한 다중 모달 에이전트를 위한 환경 (likes: 22 -> 29)
+Creating new paper: 유연한 주의: 효율적인 트랜스포머를 위한 시험 중 적응형 희소성 비율
+Creating new paper: iFSQ: 1줄의 코드로 이미지 생성을 위한 FSQ 개선
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jan 27 22:12:05 UTC 2026 ===
+

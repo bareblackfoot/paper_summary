@@ -1,0 +1,312 @@
+[
+  {
+    "title": "A Theoretical Study on Bridging Internal Probability and\n  Self-Consistency for LLM Reasoning",
+    "abstract": "Test-time scaling seeks to improve the reasoning performance of large\nlanguage models (LLMs) by adding computational resources. A prevalent approach\nwithin the field is sampling-based test-time scaling methods, which enhance\nreasoning by generating multiple reasoning paths for a given input during\ninference. However, despite its practical success, the theoretical foundations\nremain underexplored. In this paper, we provide the first theoretical framework\nfor analyzing sampling-based test-time scaling methods, grounded in the\nperspective of confidence estimation. Based on the framework, we analyze two\ndominant paradigms: self-consistency and perplexity, and reveal key\nlimitations: self-consistency suffers from high estimation error while\nperplexity exhibits substantial modeling error and possible degradation of the\nestimation error convergence. To address these limitations, we introduce RPC, a\nhybrid method that leverages our theoretical insights through two key\ncomponents: Perplexity Consistency and Reasoning Pruning. Perplexity\nConsistency combines the strengths of self-consistency and perplexity, boosting\nthe convergence rate of estimation error from linear to exponential while\npreserving model error. Reasoning Pruning prevents degradation by eliminating\nlow-probability reasoning paths. Both theoretical analysis and empirical\nresults across seven benchmark datasets demonstrate that RPC has a strong\npotential for reducing reasoning error. Notably, RPC achieves reasoning\nperformance comparable to self-consistency while not only enhancing confidence\nreliability but also reducing sampling costs by 50%. The code and resources are\navailable at https://wnjxyk.github.io/RPC.",
+    "authors": [
+      "Zhi Zhou",
+      "Yuhao Tan",
+      "Zenan Li",
+      "Yuan Yao",
+      "Lan-Zhe Guo",
+      "Yu-Feng Li",
+      "Xiaoxing Ma"
+    ],
+    "likes": 125,
+    "published_date": "Oct 17",
+    "url": "https://huggingface.co/papers/2510.15444",
+    "date_collected": "2025-10-22T07:08:22.958555+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "내부 확률과 자기 일관성을 이어주는 LLM 추론에 관한 이론적 연구",
+      "abstract": "테스트 시간 스케일링은 대규모 언어 모델 (LLMs)의 추론 성능을 향상시키기 위해 컴퓨팅 자원을 추가하는 것을 목표로 합니다. 이 분야에서 빈번히 사용되는 방법 중 하나는 샘플링 기반 테스트 시간 스케일링 방법으로, 추론 중에 특정 입력에 대해 여러 추론 경로를 생성하여 추론을 강화합니다. 그러나 실용적인 성공에도 불구하고, 그 이론적 기초는 미개척된 상태입니다. 본 논문에서는 확신 추정 관점에서 베이스가 되는 샘플링 기반 테스트 시간 스케일링 방법을 분석하는 첫 번째 이론적 프레임워크를 제공합니다. 해당 프레임워크를 기반으로, 우리는 자기 일관성과 헷갈림 두 가지 우세한 패러다임을 분석하고, 자기 일관성은 추정 오차가 높은 반면에, 헷갈림은 상당한 모델링 오차와 추정 오차 수렴의 가능성이 존재함을 밝힙니다. 이러한 한계를 극복하기 위해, 우리는 RPC라는 두 가지 주요 구성 요소를 통해 이론적 통찰력을 활용하는 하이브리드 방법을 소개합니다. 헷갈림 일관성은 자기 일관성과 헷갈림의 장점을 결합하여 추정 오차의 수렴 속도를 선형에서 지수적으로 향상시키면서도 모델 오류를 보존합니다. 추론 마감은 낮은 확률의 추론 경로를 제거함으로써 저하를 방지합니다. 일곱 가지 벤치마크 데이터셋에서 이론적 분석과 경험적 결과 모두 RPC가 추론 오차를 줄이는 강력한 잠재력을 보여줍니다. 특히, RPC는 자기 일관성에 준하는 추론 성능을 보이면서도, 자신감 신뢰성을 향상시키고 샘플링 비용을 50% 줄이는 장점을 가지고 있습니다. 코드 및 자원은 https://wnjxyk.github.io/RPC에서 사용 가능합니다."
+    },
+    "summary": "1. 대규모 언어 모델 추론 성능을 개선하기 위해 샘플링 기반 테스트 시간 스케일링 방법에 대한 이론적 프레임워크 개발.\n2. 이론적 관점에서 자기 일관성과 헷갈림을 분석하고, 그 중 자기 일관성의 추정 오차와 헷갈림의 모델링 오차를 해결하기 위한 RPC 방법 소개.\n3. RPC는 추론 오류를 줄이는데 강한 잠재력을 보여주며, 자기 일관성과 비교 가능한 추론 성능을 유지하면서 샘플링 비용을 절반으로 줄이는 효과를 가짐.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding\n  LLM",
+    "abstract": "Advancing machine intelligence requires developing the ability to perceive\nacross multiple modalities, much as humans sense the world. We introduce\nOmniVinci, an initiative to build a strong, open-source, omni-modal LLM. We\ncarefully study the design choices across model architecture and data curation.\nFor model architecture, we present three key innovations: (i) OmniAlignNet for\nstrengthening alignment between vision and audio embeddings in a shared\nomni-modal latent space; (ii) Temporal Embedding Grouping for capturing\nrelative temporal alignment between vision and audio signals; and (iii)\nConstrained Rotary Time Embedding for encoding absolute temporal information in\nomni-modal embeddings. We introduce a curation and synthesis pipeline that\ngenerates 24M single-modal and omni-modal conversations. We find that\nmodalities reinforce one another in both perception and reasoning. Our model,\nOmniVinci, outperforms Qwen2.5-Omni with +19.05 on DailyOmni (cross-modal\nunderstanding), +1.7 on MMAR (audio), and +3.9 on Video-MME (vision), while\nusing just 0.2T training tokens - a 6 times reduction compared to\nQwen2.5-Omni's 1.2T. We finally demonstrate omni-modal advantages in downstream\napplications spanning robotics, medical AI, and smart factory.",
+    "authors": [
+      "Hanrong Ye",
+      "Chao-Han Huck Yang",
+      "Arushi Goel",
+      "Wei Huang",
+      "Ligeng Zhu",
+      "Yuanhang Su",
+      "Sean Lin",
+      "An-Chieh Cheng",
+      "Zhen Wan",
+      "Jinchuan Tian",
+      "Yuming Lou",
+      "Dong Yang",
+      "Zhijian Liu",
+      "Yukang Chen",
+      "Ambrish Dantrey",
+      "Ehsan Jahangiri",
+      "Sreyan Ghosh",
+      "Daguang Xu",
+      "Ehsan Hosseini-Asl",
+      "Danial Mohseni Taheri",
+      "Vidya Murali",
+      "Sifei Liu"
+    ],
+    "likes": 59,
+    "published_date": "Oct 17",
+    "url": "https://huggingface.co/papers/2510.15870",
+    "date_collected": "2025-10-22T07:08:22.960477+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "옴니빈치: 옴니-모달 이해를 위한 아키텍처와 데이터 강화",
+      "abstract": "기계 지능 발전을 위해 인간이 세계를 인식하는 것과 같이 다중 모달에서 인식하는 능력을 개발해야 합니다. 옴니빈치는 강력하고 오픈소스인 옴니-모달 LLM을 구축하기 위한 프로젝트로, 모델 아키텍처와 데이터 큐레이션에 대한 설계 선택 사항을 주의 깊게 검토합니다."
+    },
+    "summary": "1. 옴니빈치는 옴니-모달 잠재 공간에서 시각과 음성의 정렬을 강화하는 OmniAlignNet, 시각과 음성 신호 간 상대적 시간 정렬을 캡처하는 Temporal Embedding Grouping, 절대적 시간 정보를 인코딩하는 Constrained Rotary Time Embedding 세 가지 주요 혁신을 제안합니다.\n2. 24M개의 단일 모달 및 옴니-모달 대화를 생성하는 큐레이션 및 합성 파이프라인을 도입하였으며, 모달들이 인식과 추론 모두에서 서로를 강화함을 발견했습니다.\n3. 옴니빈치 모델은 Qwen2.5-Omni 대비 DailyOmni(다중 모달 이해)에서 +19.05, MMAR(음성)에서 +1.7, Video-MME(시각)에서 +3.9 향상되었으며, 0.2T 훈련 토큰만 사용하여 Qwen2.5-Omni의 1.2T 대비 6배 감소했습니다. 로봇 공학, 의료 AI, 스마트 공장 등 다양한 분야에서 옴니-모달 이점을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "PICABench: How Far Are We from Physically Realistic Image Editing?",
+    "abstract": "Image editing has achieved remarkable progress recently. Modern editing\nmodels could already follow complex instructions to manipulate the original\ncontent. However, beyond completing the editing instructions, the accompanying\nphysical effects are the key to the generation realism. For example, removing\nan object should also remove its shadow, reflections, and interactions with\nnearby objects. Unfortunately, existing models and benchmarks mainly focus on\ninstruction completion but overlook these physical effects. So, at this moment,\nhow far are we from physically realistic image editing? To answer this, we\nintroduce PICABench, which systematically evaluates physical realism across\neight sub-dimension (spanning optics, mechanics, and state transitions) for\nmost of the common editing operations (add, remove, attribute change, etc). We\nfurther propose the PICAEval, a reliable evaluation protocol that uses\nVLM-as-a-judge with per-case, region-level human annotations and questions.\nBeyond benchmarking, we also explore effective solutions by learning physics\nfrom videos and construct a training dataset PICA-100K. After evaluating most\nof the mainstream models, we observe that physical realism remains a\nchallenging problem with large rooms to explore. We hope that our benchmark and\nproposed solutions can serve as a foundation for future work moving from naive\ncontent editing toward physically consistent realism.",
+    "authors": [
+      "Yuandong Pu",
+      "Le Zhuo",
+      "Songhao Han",
+      "Jinbo Xing",
+      "Kaiwen Zhu",
+      "Shuo Cao",
+      "Bin Fu",
+      "Si Liu",
+      "Hongsheng Li",
+      "Yu Qiao",
+      "Wenlong Zhang",
+      "Xi Chen",
+      "Yihao Liu"
+    ],
+    "likes": 55,
+    "published_date": "Oct 20",
+    "url": "https://huggingface.co/papers/2510.17681",
+    "date_collected": "2025-10-22T07:08:22.961949+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "PICABench: 물리적으로 현실적인 이미지 편집은 얼마나 멀리 왔는가?",
+      "abstract": "이미지 편집은 최근에 놀라운 발전을 이룩했습니다. 현대적인 편집 모델은 복잡한 지침을 따르며 원본 콘텐츠를 조작할 수 있었습니다. 그러나 편집 지침을 완수하는 것을 넘어서, 동반되는 물리적 효과가 생성 현실감의 핵심입니다. 예를 들어, 객체를 제거하면 그 그림자, 반사 및 인근 객체와의 상호 작용도 제거되어야 합니다. 불행히도, 기존 모델과 벤치마크는 주로 지침 완수에 초점을 맞추고 이러한 물리적 효과를 간과합니다. 그래서 현재, 우리는 얼마나 물리적으로 현실적인 이미지 편집으로부터 멀리 떨어져 있는가요? 이를 답하기 위해 우리는 광학, 기계 및 상태 전이를 포함하는 여덟 가지 하위 차원에서 일반적인 편집 작업에 대해 물리적 현실성을 체계적으로 평가하는 PICABench를 소개합니다. 또한, VLM을 심사원으로 사용하는 신뢰할 수 있는 PICAEval 평가 프로토콜을 제안합니다. 벤치마킹을 넘어서, 우리는 비디오로부터 물리학을 학습하는 효과적인 해결책을 탐구하고 PICA-100K라는 교육 데이터셋을 구축합니다. 대부분의 주류 모델을 평가한 후, 물리적 현실성은 여전히 탐험할 큰 여지가 있는 어려운 문제로 남아 있음을 관찰합니다. 우리의 벤치마크와 제안된 솔루션이 단순한 콘텐츠 편집에서부터 물리적으로 일관된 현실감을 담은 미래 작업의 기초로 기대됩니다."
+    },
+    "summary": "1. 이미지 편집의 발전은 지시 완수뿐 아니라 물리적 효과도 중요하며, PICABench는 물리적 현실성을 평가하고 적절한 솔루션을 제안함.\n2. PICAEval은 VLM을 심사원으로 활용하며, PICA-100K 교육 데이터셋을 활용하여 효과적인 해결책을 탐구함.\n3. 대부분의 모델을 평가한 결과, 이미지 편집에서 물리적 현실성은 아직 해결하기 어려운 문제이며, 미래 연구의 기반으로 활용될 수 있음.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "DeepAnalyze: Agentic Large Language Models for Autonomous Data Science",
+    "abstract": "Autonomous data science, from raw data sources to analyst-grade deep research\nreports, has been a long-standing challenge, and is now becoming feasible with\nthe emergence of powerful large language models (LLMs). Recent workflow-based\ndata agents have shown promising results on specific data tasks but remain\nfundamentally limited in achieving fully autonomous data science due to their\nreliance on predefined workflows. In this paper, we introduce DeepAnalyze-8B,\nthe first agentic LLM designed for autonomous data science, capable of\nautomatically completing the end-toend pipeline from data sources to\nanalyst-grade deep research reports. To tackle high-complexity data science\ntasks, we propose a curriculum-based agentic training paradigm that emulates\nthe learning trajectory of human data scientists, enabling LLMs to\nprogressively acquire and integrate multiple capabilities in real-world\nenvironments. We also introduce a data-grounded trajectory synthesis framework\nthat constructs high-quality training data. Through agentic training,\nDeepAnalyze learns to perform a broad spectrum of data tasks, ranging from data\nquestion answering and specialized analytical tasks to open-ended data\nresearch. Experiments demonstrate that, with only 8B parameters, DeepAnalyze\noutperforms previous workflow-based agents built on most advanced proprietary\nLLMs. The model, code, and training data of DeepAnalyze are open-sourced,\npaving the way toward autonomous data science.",
+    "authors": [
+      "Shaolei Zhang",
+      "Ju Fan",
+      "Meihao Fan",
+      "Guoliang Li",
+      "Xiaoyong Du"
+    ],
+    "likes": 53,
+    "published_date": "Oct 19",
+    "url": "https://huggingface.co/papers/2510.16872",
+    "date_collected": "2025-10-22T07:08:22.963105+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "DeepAnalyze: 자율 데이터 과학을 위한 에이전트형 대규모 언어 모델",
+      "abstract": "원시 데이터 소스부터 분석가 수준의 심층 연구 보고서까지의 자율 데이터 과학은 오래전부터의 난제였으며, 강력한 대규모 언어 모델 (LLMs)의 등장으로 현실 가능성을 갖게 되었습니다. 최근의 워크플로우 기반 데이터 에이전트는 특정 데이터 작업에서 유망한 결과를 보여주었지만, 사전 정의된 워크플로에 의존하기 때문에 완전히 자율적인 데이터 과학을 달성하는 데 기본적으로 한계가 있습니다. 본 논문에서는 자율 데이터 과학을 위해 설계된 최초의 에이전트형 LLM인 DeepAnalyze-8B를 소개합니다. 이 모델은 데이터 소스부터 분석가 수준의 심층 연구 보고서까지 자동으로 완성할 수 있습니다. 고복잡도 데이터 과학 작업에 대처하기 위해 우리는 인간 데이터 과학자의 학습 궤적을 흉내 내는 커리큘럼 기반의 에이전트 훈련 패러다임을 제안하여 LLM이 현실 환경에서 여러 능력을 점진적으로 습득하고 통합할 수 있도록 합니다. 우리는 또한 고품질 훈련 데이터를 구축하는 데이터 기반 궤적 통합 프레임워크를 소개합니다. 에이전트 훈련을 통해 DeepAnalyze는 데이터 질문에 답하고 특수한 분석 작업부터 개방형 데이터 연구에 이르는 다양한 데이터 작업을 수행하는 방법을 배웁니다. 실험 결과, 8B 매개변수만으로 DeepAnalyze가 가장 최첨단의 전용 LLM에 기반을 둔 이전 워크플로우 기반 에이전트들을 능가하는 것을 입증했습니다. DeepAnalyze의 모델, 코드 및 훈련 데이터는 오픈 소스로 공개되었으며, 자율 데이터 과학의 길을 열어갈 것입니다."
+    },
+    "summary": "1. DeepAnalyze-8B는 자율 데이터 과학을 위한 최초의 에이전트형 대규모 언어 모델로서 커리큘럼 기반의 훈련 패러다임을 사용해 현실 환경에서 여러 능력을 점진적으로 습득하고 통합함.\n2. 고품질 훈련 데이터를 구축하는 데이터 기반 궤적 통합 프레임워크를 도입하며, 다양한 데이터 작업을 수행할 수 있도록 함.\n3. 8B 매개변수만으로 이전 워크플로우 에이전트들을 능가하는 DeepAnalyze는 모델, 코드, 훈련 데이터를 오픈 소스로 제공하여 자율 데이터 과학의 발전을 이끔.",
+    "categories": [
+      "LLM",
+      "자율 데이터 과학",
+      "기계 학습"
+    ]
+  },
+  {
+    "title": "NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks",
+    "abstract": "3D object editing is essential for interactive content creation in gaming,\nanimation, and robotics, yet current approaches remain inefficient,\ninconsistent, and often fail to preserve unedited regions. Most methods rely on\nediting multi-view renderings followed by reconstruction, which introduces\nartifacts and limits practicality. To address these challenges, we propose\nNano3D, a training-free framework for precise and coherent 3D object editing\nwithout masks. Nano3D integrates FlowEdit into TRELLIS to perform localized\nedits guided by front-view renderings, and further introduces region-aware\nmerging strategies, Voxel/Slat-Merge, which adaptively preserve structural\nfidelity by ensuring consistency between edited and unedited areas. Experiments\ndemonstrate that Nano3D achieves superior 3D consistency and visual quality\ncompared with existing methods. Based on this framework, we construct the first\nlarge-scale 3D editing datasets Nano3D-Edit-100k, which contains over 100,000\nhigh-quality 3D editing pairs. This work addresses long-standing challenges in\nboth algorithm design and data availability, significantly improving the\ngenerality and reliability of 3D editing, and laying the groundwork for the\ndevelopment of feed-forward 3D editing models. Project\nPage:https://jamesyjl.github.io/Nano3D",
+    "authors": [
+      "Junliang Ye",
+      "Shenghao Xie",
+      "Ruowen Zhao",
+      "Zhengyi Wang",
+      "Hongyu Yan",
+      "Wenqiang Zu",
+      "Lei Ma",
+      "Jun Zhu"
+    ],
+    "likes": 52,
+    "published_date": "Oct 16",
+    "url": "https://huggingface.co/papers/2510.15019",
+    "date_collected": "2025-10-22T07:08:22.964360+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "훈련 없이 가능한 효율적인 마스크 없는 3D 편집 방법: NANO3D",
+      "abstract": "3D 객체 편집은 게임, 애니메이션 및 로봇 공학에서 상호작용형 콘텐츠 작성에 필수적이지만, 현재의 방법은 비효율적이고 일관성이 없으며 종종 편집되지 않은 영역을 보존하지 못합니다. 대부분의 방법은 다중 뷰 렌더링 편집 및 재구성에 의존하는데, 이는 아티팩트를 생성하고 실용성을 제한합니다. 이러한 도전에 대처하기 위해 우리는 Nano3D를 제안합니다. 이는 훈련 없이 마스크 없이 정교하고 일관된 3D 객체 편집을 수행하는 프레임워크입니다. Nano3D는 FlowEdit을 TRELLIS에 통합하여 전면 뷰 렌더링에 의해 안내되는 로컬라이즈된 편집을 수행하고, Voxel/Slat-Merge라는 영역 인식 병합 전략을 도입하여 편집된 영역과 편집되지 않은 영역 사이의 일관성을 보장하도록 구조적 충실성을 적응적으로 보존합니다. 실험 결과, Nano3D는 기존 방법과 비교하여 우수한 3D 일관성과 시각적 품질을 달성합니다. 이 프레임워크를 기반으로 Nano3D-Edit-100k라는 첫 번째 대규모 3D 편집 데이터셋 구축하였으며, 이는 10만 개 이상의 고품질 3D 편집 쌍을 포함합니다. 이 연구는 알고리즘 설계와 데이터 이용성의 오랜 문제에 대응하여 3D 편집의 일반성과 신뢰성을 크게 향상시키고, Feed-forward 3D 편집 모델의 개발 기초를 마련합니다."
+    },
+    "summary": "1. Nano3D는 훈련 없이 3D 객체 편집을 수행하는 프레임워크로, 훈련된 방법에 비해 탁월한 3D 일관성과 시각적 품질을 보여줍니다.\n2. Voxel/Slat-Merge 전략을 도입하여 편집된 영역과 편집되지 않은 영역 사이의 일관성을 유지하면서 구조적 충실성을 보존합니다.\n3. Nano3D-Edit-100k 데이터셋을 구축하여 대규모 3D 편집 쌍을 제공하며, 3D 편집 모델의 발전을 위한 기초를 마련했습니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Scaling Instruction-Based Video Editing with a High-Quality Synthetic\n  Dataset",
+    "abstract": "Instruction-based video editing promises to democratize content creation, yet\nits progress is severely hampered by the scarcity of large-scale, high-quality\ntraining data. We introduce Ditto, a holistic framework designed to tackle this\nfundamental challenge. At its heart, Ditto features a novel data generation\npipeline that fuses the creative diversity of a leading image editor with an\nin-context video generator, overcoming the limited scope of existing models. To\nmake this process viable, our framework resolves the prohibitive cost-quality\ntrade-off by employing an efficient, distilled model architecture augmented by\na temporal enhancer, which simultaneously reduces computational overhead and\nimproves temporal coherence. Finally, to achieve full scalability, this entire\npipeline is driven by an intelligent agent that crafts diverse instructions and\nrigorously filters the output, ensuring quality control at scale. Using this\nframework, we invested over 12,000 GPU-days to build Ditto-1M, a new dataset of\none million high-fidelity video editing examples. We trained our model, Editto,\non Ditto-1M with a curriculum learning strategy. The results demonstrate\nsuperior instruction-following ability and establish a new state-of-the-art in\ninstruction-based video editing.",
+    "authors": [
+      "Qingyan Bai",
+      "Qiuyu Wang",
+      "Hao Ouyang",
+      "Yue Yu",
+      "Hanlin Wang",
+      "Wen Wang",
+      "Ka Leong Cheng",
+      "Shuailei Ma",
+      "Yanhong Zeng",
+      "Zichen Liu",
+      "Yinghao Xu",
+      "Yujun Shen",
+      "Qifeng Chen"
+    ],
+    "likes": 43,
+    "published_date": "Oct 17",
+    "url": "https://huggingface.co/papers/2510.15742",
+    "date_collected": "2025-10-22T07:08:22.965813+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "고품질 합성 데이터셋을 이용한 지시 기반 비디오 편집 규모 확장",
+      "abstract": "지시 기반 비디오 편집은 콘텐츠 제작을 민주화할 것으로 기대되지만 대규모 고품질 훈련 데이터 부족으로 발전이 제한되고 있습니다. 본 연구에서는 이 핵심적인 도전 과제에 대처하기 위한 ganzheitlich(전체론적)인 틀 Ditto를 소개합니다. Ditto의 핵심에는 선행하는 이미지 편집기의 창의적 다양성을 인과 관계 비디오 생성기와 융합하는 새로운 데이터 생성 파이프라인이 있으며, 기존 모델의 한계 범위를 극복합니다. 이 과정을 실현하기 위해 우리의 틀은 효율적이고 간결한 모델 아키텍처를 사용하고 시계열 강화기를 활용하여 비용-품질의 제한적 trade-off를 해결하여 계산적 오버헤드를 동시에 줄이고 시계열 일관성을 향상시킵니다. 마지막으로, 전체적인 확장성을 달성하기 위해 이 모든 파이프라인은 다양한 지시를 생성하고 결과물을 엄격하게 필터링하는 지능적 에이전트에 의해 주도됩니다. 이 틀을 사용하여 우리는 12,000 GPU-일 이상을 투자하여 100만 개의 고품질 비디오 편집 예제로 구성된 새로운 데이터셋 Ditto-1M을 만들었습니다. 우리는 Ditto-1M에서 Editto라는 모델을 교육시키되, 커리큘럼 학습 전략을 사용했습니다. 결과는 우수한 지시 따르기 능력을 보여주었으며, 지시 기반 비디오 편집 분야에서 새로운 최첨단을 확립했습니다."
+    },
+    "summary": "1. 지시 기반 비디오 편집의 발전을 위해 고품질 데이터셋 부족 문제를 해결하기 위한 ganzheitlich(전체론적) 틀 Ditto를 도입합니다.\n2. Ditto는 창의적 다양성을 가진 이미지 편집기와 적합한 비디오 생성기를 결합한 새로운 데이터 생성 파이프라인을 특징으로 합니다.\n3. Ditto-1M 데이터셋과 Editto 모델을 통해, 커리큘럼 학습 전략을 적용하여 지시 기반 비디오 편집에서 우수한 성능을 보여 새로운 최첨단을 선보였습니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Glyph: Scaling Context Windows via Visual-Text Compression",
+    "abstract": "Large language models (LLMs) increasingly rely on long-context modeling for\ntasks such as document understanding, code analysis, and multi-step reasoning.\nHowever, scaling context windows to the million-token level brings prohibitive\ncomputational and memory costs, limiting the practicality of long-context LLMs.\nIn this work, we take a different perspective-visual context scaling-to tackle\nthis challenge. Instead of extending token-based sequences, we propose Glyph, a\nframework that renders long texts into images and processes them with\nvision-language models (VLMs). This approach substantially compresses textual\ninput while preserving semantic information, and we further design an\nLLM-driven genetic search to identify optimal visual rendering configurations\nfor balancing accuracy and compression. Through extensive experiments, we\ndemonstrate that our method achieves 3-4x token compression while maintaining\naccuracy comparable to leading LLMs such as Qwen3-8B on various long-context\nbenchmarks. This compression also leads to around 4x faster prefilling and\ndecoding, and approximately 2x faster SFT training. Furthermore, under extreme\ncompression, a 128K-context VLM could scale to handle 1M-token-level text\ntasks. In addition, the rendered text data benefits real-world multimodal\ntasks, such as document understanding. Our code and model are released at\nhttps://github.com/thu-coai/Glyph.",
+    "authors": [
+      "Jiale Cheng",
+      "Yusen Liu",
+      "Xinyu Zhang",
+      "Yulin Fei",
+      "Wenyi Hong",
+      "Ruiliang Lyu",
+      "Weihan Wang",
+      "Zhe Su",
+      "Xiaotao Gu",
+      "Xiao Liu",
+      "Yushi Bai",
+      "Jie Tang",
+      "Hongning Wang",
+      "Minlie Huang"
+    ],
+    "likes": 42,
+    "published_date": "Oct 20",
+    "url": "https://huggingface.co/papers/2510.17800",
+    "date_collected": "2025-10-22T07:08:22.967339+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "Glyph: 시각-텍스트 압축을 통한 맥락창 확장",
+      "abstract": "대규모 언어 모델(Large language models, LLMs)은 문서 이해, 코드 분석, 다단계 추론과 같은 작업에서 점점 더 긴 맥락 모델링에 의존하고 있습니다. 그러나 수백만 토큰 수준의 맥락 창을 확장하는 것은 계산 및 메모리 비용이 너무 높아 긴 맥락 LLMs의 실용성을 제한합니다. 본 연구에서는 시각적 맥락 확장이라는 색다른 관점을 취해 이 문제에 대처합니다. 우리는 토큰 기반 시퀀스를 확장하는 대신 긴 텍스트를 이미지로 렌더링하고 시각-언어 모델(Vision-Language Models, VLMs)로 처리하는 Glyph 라는 프레임워크를 제안합니다. 이 방법은 의미 정보를 유지하면서 텍스트 입력을 상당히 압축하며, 정확도와 압축 간의 균형을 맞추기 위한 최적의 시각 렌더링 구성을 찾기 위해 LLM 기반의 유전자 검색을 추가로 설계합니다. 광범위한 실험을 통해 우리의 방법이 다양한 긴 맥락 벤치마크에서 Qwen3-8B와 같은 선도적인 LLMs와 유사한 정확도를 유지하면서 3-4배의 토큰 압축을 달성함을 보여줍니다. 이 압축은 대략 4배 더 빠른 채우기 및 디코딩, 그리고 약 2배 더 빠른 SFT(Structured Finesse Tuning) 훈련을 이끄는데 이어갑니다. 또한 극단적인 압축 하에서 128K 맥락 VLM은 1M 토큰 수준의 텍스트 작업을 처리할 수 있습니다. 또한, 렌더링된 텍스트 데이터는 문서 이해와 같은 실세계 멀티모달 작업에 도움이 됩니다. 우리의 코드와 모델은 https://github.com/thu-coai/Glyph 에서 제공됩니다."
+    },
+    "summary": "1. 긴 맥락 모델링을 위한 시각-텍스트 압축 기술인 Glyph가 소개되었습니다.\n2. 이 기술은 텍스트를 이미지로 변환하여 시각-언어 모델을 활용하여 의미 정보를 보존하면서 토큰 압축을 3-4배까지 달성합니다.\n3. Glyph를 사용하면 속도 향상과 함께 128K 맥락 VLM도 1M 토큰 수준의 텍스트 작업을 처리할 수 있게 됩니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Emergent Misalignment via In-Context Learning: Narrow in-context\n  examples can produce broadly misaligned LLMs",
+    "abstract": "Recent work has shown that narrow finetuning can produce broadly misaligned\nLLMs, a phenomenon termed emergent misalignment (EM). While concerning, these\nfindings were limited to finetuning and activation steering, leaving out\nin-context learning (ICL). We therefore ask: does EM emerge in ICL? We find\nthat it does: across three datasets, three frontier models produce broadly\nmisaligned responses at rates between 2% and 17% given 64 narrow in-context\nexamples, and up to 58% with 256 examples. We also examine mechanisms of EM by\neliciting step-by-step reasoning (while leaving in-context examples unchanged).\nManual analysis of the resulting chain-of-thought shows that 67.5% of\nmisaligned traces explicitly rationalize harmful outputs by adopting a reckless\nor dangerous ''persona'', echoing prior results on finetuning-induced EM.",
+    "authors": [
+      "Nikita Afonin",
+      "Nikita Andriyanov",
+      "Nikhil Bageshpura",
+      "Kyle Liu",
+      "Kevin Zhu",
+      "Sunishchal Dev",
+      "Ashwinee Panda",
+      "Alexander Panchenko",
+      "Oleg Rogov",
+      "Elena Tutubalina",
+      "Mikhail Seleznyov"
+    ],
+    "likes": 41,
+    "published_date": "Oct 13",
+    "url": "https://huggingface.co/papers/2510.11288",
+    "date_collected": "2025-10-22T07:08:22.968728+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "본문 학습을 통한 비정렬성의 발생: 좁은 인-컨텍스트 예시는 광범위하게 비정렬된 LLMs를 만들 수 있습니다",
+      "abstract": "최근 연구에서 좁은 파인튜닝이 광범위하게 비정렬된 LLMs를 생성할 수 있다는 현상을 보여줬습니다. 이를 비정렬성이 발생한다고 합니다. 그러나 이러한 발견은 파인튜닝과 활성화 스티어링에만 국한되어 있었고, 인-컨텍스트 학습(ICL)은 배제되었습니다. 따라서 우리는 질문합니다: ICL에서 비정렬성이 나타납니까? 결과적으로 ICL에서도 비정렬성이 나타나는 것을 발견했습니다. 64개의 좁은 인-컨텍스트 예시로 주어진 세 가지 데이터셋에서, 세 가지 최첨단 모델이 넓게 비정렬된 응답을 생성하며, 비율은 2%에서 17%입니다. 256개의 예시로 최대 58%까지 상승합니다. 또한, 비정렬성의 메커니즘을 확인하기 위해 단계별 추론을 유도했습니다(인-컨텍스트 예시는 변경하지 않은 채). 그 결과인 생각 체인의 수동 분석에서 67.5%의 비정렬된 흔적은 위험한 결과를 명백하게 합리화하며 부주의하거나 위험한 '페르소나'를 채택합니다."
+    },
+    "summary": "1. 좁은 인-컨텍스트 예시로 높은 비정렬성(LML 모델 내의 큰 오류)을 발생시킬 수 있음을 증명함.\n2. 세 가지 최첨단 모델은 64개의 예시로 다양한 오류 응답을 생성하며, 이 비율은 2%에서 17%까지 다양함.\n3. 결과적으로, 비정렬성의 메커니즘이 곧바로 위험한 결과를 유발하는 부적절한 '페르소나'를 채택함을 보여줌.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite\n  Imagery",
+    "abstract": "Synthesizing large-scale, explorable, and geometrically accurate 3D urban\nscenes is a challenging yet valuable task in providing immersive and embodied\napplications. The challenges lie in the lack of large-scale and high-quality\nreal-world 3D scans for training generalizable generative models. In this\npaper, we take an alternative route to create large-scale 3D scenes by\nsynergizing the readily available satellite imagery that supplies realistic\ncoarse geometry and the open-domain diffusion model for creating high-quality\nclose-up appearances. We propose Skyfall-GS, the first city-block\nscale 3D scene creation framework without costly 3D annotations, also featuring\nreal-time, immersive 3D exploration. We tailor a curriculum-driven iterative\nrefinement strategy to progressively enhance geometric completeness and\nphotorealistic textures. Extensive experiments demonstrate that Skyfall-GS\nprovides improved cross-view consistent geometry and more realistic textures\ncompared to state-of-the-art approaches. Project page:\nhttps://skyfall-gs.jayinnn.dev/",
+    "authors": [
+      "Jie-Ying Lee",
+      "Yi-Ruei Liu",
+      "Shr-Ruei Tsai",
+      "Wei-Cheng Chang",
+      "Chung-Ho Wu",
+      "Jiewen Chan",
+      "Zhenjun Zhao",
+      "Chieh Hubert Lin",
+      "Yu-Lun Liu"
+    ],
+    "likes": 37,
+    "published_date": "Oct 17",
+    "url": "https://huggingface.co/papers/2510.15869",
+    "date_collected": "2025-10-22T07:08:22.970034+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "Skyfall-GS: 위성 영상으로부터 침체적인 3D 도시 장면 합성",
+      "abstract": "대규모, 탐험 가능하며 기하학적으로 정확한 3D 도시 장면을 합성하는 것은 몰입적이고 체감 가능한 응용 프로그램을 제공하는 데 있어 어렵지만 가치 있는 작업입니다. 본 논문에서는 대규모 및 고품질의 실제 3D 스캔 자료의 부족에서 발생하는 도전에 대해 다룹니다. 저희는 고비용의 3D 주석 없이도 첫 번째 도시 구역 규모의 3D 장면 생성 프레임워크인 Skyfall-GS를 제안합니다."
+    },
+    "summary": "1. 위성 영상을 활용하여 대규모 3D 도시 장면을 생성하는 Skyfall-GS 프레임워크가 소개됩니다.\n2. 기하학적 완성도 및 포토리얼리스틱 텍스처를 점진적으로 향상시키기 위한 과정 중심 반복 세밀화 전략이 적용됩니다.\n3. 실험 결과, Skyfall-GS가 최신 기술 접근 방식에 비해 개선된 교차 시야 일관된 기하학과 더 현실적인 텍스처를 제공함이 입증됩니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Latent Diffusion Model without Variational Autoencoder",
+    "abstract": "Recent progress in diffusion-based visual generation has largely relied on\nlatent diffusion models with variational autoencoders (VAEs). While effective\nfor high-fidelity synthesis, this VAE+diffusion paradigm suffers from limited\ntraining efficiency, slow inference, and poor transferability to broader vision\ntasks. These issues stem from a key limitation of VAE latent spaces: the lack\nof clear semantic separation and strong discriminative structure. Our analysis\nconfirms that these properties are crucial not only for perception and\nunderstanding tasks, but also for the stable and efficient training of latent\ndiffusion models. Motivated by this insight, we introduce SVG, a novel latent\ndiffusion model without variational autoencoders, which leverages\nself-supervised representations for visual generation. SVG constructs a feature\nspace with clear semantic discriminability by leveraging frozen DINO features,\nwhile a lightweight residual branch captures fine-grained details for\nhigh-fidelity reconstruction. Diffusion models are trained directly on this\nsemantically structured latent space to facilitate more efficient learning. As\na result, SVG enables accelerated diffusion training, supports few-step\nsampling, and improves generative quality. Experimental results further show\nthat SVG preserves the semantic and discriminative capabilities of the\nunderlying self-supervised representations, providing a principled pathway\ntoward task-general, high-quality visual representations.",
+    "authors": [
+      "Minglei Shi",
+      "Haolin Wang",
+      "Wenzhao Zheng",
+      "Ziyang Yuan",
+      "Xiaoshi Wu",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Jie Zhou",
+      "Jiwen Lu"
+    ],
+    "likes": 34,
+    "published_date": "Oct 17",
+    "url": "https://huggingface.co/papers/2510.15301",
+    "date_collected": "2025-10-22T07:08:22.971305+09:00",
+    "week": "2025-W43",
+    "translation": {
+      "title": "변이 오토인코더 없이 잠재 확산 모델",
+      "abstract": "최근의 확산 기반 시각 생성은 대부분 변이 오토인코더(VAEs)를 활용한 잠재 확산 모델에 의존했습니다. 높은 화질 합성에 효과적이지만, 이 VAE+확산 패러다임은 훈련 효율성 제한, 느린 추론, 넓은 시각 작업으로의 전이 능력 부족이라는 문제를 안고 있었습니다. 우리의 분석은 VAE 잠재 공간의 주요 제한점 때문에 발생하는 것으로 나타났습니다: 명확한 의미론적 분리와 강력한 식별 구조의 부재. 이러한 특성들은 인식 및 이해 작업 뿐만 아니라 잠재 확산 모델의 안정적이고 효율적인 학습에도 중요한 것으로 확인되었습니다. 이 통찰력을 기반으로, 우리는 변이 오토인코더 없는 새로운 잠재 확산 모델 SVG를 소개합니다."
+    },
+    "summary": "1. 변이 오토인코더 없이 실현된 SVG는 시각 생성을 위해 자기지도 표현을 활용하는 혁신적인 잠재 확산 모델로, 명확한 의미론적 분리를 갖는 특성 공간을 구축합니다.\n2. 이 모델은 결정적인 DINO 피처를 활용하여 구조화된 잠재 공간에 직접 훈련되어 효율적인 학습을 가능케 하며, 고화질 재구성을 위해 세부적인 세부사항을 포착하는 경량 잔여 분기를 구축합니다.\n3. SVG는 가속화된 확산 훈련을 가능하게 하고, 적은 단계 샘플링을 지원하며, 생성적인 품질을 향상시키며, 실험 결과는 이 모델이 기반으로 하는 자기지도 표현의 의미론적 및 식별력 있는 능력을 유지함을 보여줍니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  }
+]

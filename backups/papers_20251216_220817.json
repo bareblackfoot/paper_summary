@@ -1,0 +1,296 @@
+[
+  {
+    "title": "DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry",
+    "abstract": "Reliable interpretation of multimodal data in dentistry is essential for automated oral healthcare, yet current multimodal large language models (MLLMs) struggle to capture fine-grained dental visual details and lack sufficient reasoning ability for precise diagnosis. To address these limitations, we present DentalGPT, a specialized dental MLLM developed through high-quality domain knowledge injection and reinforcement learning. Specifically, the largest annotated multimodal dataset for dentistry to date was constructed by aggregating over 120k dental images paired with detailed descriptions that highlight diagnostically relevant visual features, making it the multimodal dataset with the most extensive collection of dental images to date. Training on this dataset significantly enhances the MLLM's visual understanding of dental conditions, while the subsequent reinforcement learning stage further strengthens its capability for multimodal complex reasoning. Comprehensive evaluations on intraoral and panoramic benchmarks, along with dental subsets of medical VQA benchmarks, show that DentalGPT achieves superior performance in disease classification and dental VQA tasks, outperforming many state-of-the-art MLLMs despite having only 7B parameters. These results demonstrate that high-quality dental data combined with staged adaptation provides an effective pathway for building capable and domain-specialized dental MLLMs.",
+    "authors": [
+      "Zhenyang Cai",
+      "Jiaming Zhang",
+      "Junjie Zhao",
+      "Ziyi Zeng",
+      "Yanchao Li",
+      "Jingyi Liang",
+      "Junying Chen",
+      "Yunjin Yang",
+      "Jiajun You",
+      "Shuzhi Deng",
+      "Tongfei Wang",
+      "Wanting Chen",
+      "Chunxiu Hao",
+      "Ruiqi Xie",
+      "Zhenwei Wen",
+      "Xiangyi Feng",
+      "Zou Ting",
+      "Jin Zou Lin",
+      "Jianquan Li",
+      "Guangjun Yu",
+      "Liangyi Chen",
+      "Junwen Wang"
+    ],
+    "likes": 37,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11558",
+    "date_collected": "2025-12-16T07:08:34.238488+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "치과를 위한 멀티모달 복합 추론을 장려하는 DentalGPT",
+      "abstract": "치과에서의 멀티모달 데이터 신뢰성 있는 해석은 자동 구강 건강 관리에 있어 중요한데, 현재의 멀티모달 대규모 언어 모델 (MLLMs)은 치과 시각적 세부 사항을 잡아내기 어려우며, 정확한 진단을 위한 충분한 추론 능력이 부족하다. 이러한 한계를 해결하기 위해, 저희는 고품질 도메인 지식 주입과 강화 학습을 통해 개발된 특화된 치과 MLLM인 DentalGPT를 제안한다. 특히, 치과에서의 가장 큰 주석이 달린 멀티모달 데이터셋이 구축되었는데, 이는 12만 개가 넘는 치과 이미지가 상세한 설명과 함께 짝지어져 있어 진단적으로 중요한 시각적 특징을 강조하며, 현재까지 가장 포괄적인 치과 이미지 모음을 가진 멀티모달 데이터셋이다. 이 데이터셋에서의 훈련은 MLLM의 치아 이상 상태에 대한 시각적 이해력을 크게 향상시키며, 이후의 강화 학습 단계는 그것의 멀티모달 복합 추론 능력을 더욱 강화시킨다. 치과 내부 및 만경적 벤치마크, 그리고 의료 VQA 벤치마크의 치과 하위 집합에 대한 종합적인 평가는 DentalGPT가 질병 분류와 치과 VQA 작업에서 우수한 성과를 달성하며, 70억 개의 매개변수만 가지고 있음에도 많은 최신 MLLM을 능가하는 것을 보여준다. 이 결과는 고품질의 치과 데이터가 단계적 적응을 통한 효과적인 치과 특화 MLLM 구축 경로를 제공한다."
+    },
+    "summary": "1. DentalGPT는 치과 분야에 특화된 MLLM으로, 12만 개가 넘는 주석이 달린 치과 이미지를 활용한 훈련을 통해 치아 상태에 대한 시각적 이해력과 멀티모달 복합 추론 능력을 향상시켰다.\n2. DentalGPT는 질병 분류와 치과 VQA 작업에서 우수한 성능을 보이며, 70억 개의 매개변수만으로도 많은 최신 MLLM을 능가한다.\n3. 고품질의 치과 데이터와 단계적 적응을 결합함으로써 DentalGPT는 효과적이고 도메인 특화된 치과 MLLM을 구축하는 효과적인 방법을 제시한다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "EgoX: Egocentric Video Generation from a Single Exocentric Video",
+    "abstract": "Egocentric perception enables humans to experience and understand the world directly from their own point of view. Translating exocentric (third-person) videos into egocentric (first-person) videos opens up new possibilities for immersive understanding but remains highly challenging due to extreme camera pose variations and minimal view overlap. This task requires faithfully preserving visible content while synthesizing unseen regions in a geometrically consistent manner. To achieve this, we present EgoX, a novel framework for generating egocentric videos from a single exocentric input. EgoX leverages the pretrained spatio temporal knowledge of large-scale video diffusion models through lightweight LoRA adaptation and introduces a unified conditioning strategy that combines exocentric and egocentric priors via width and channel wise concatenation. Additionally, a geometry-guided self-attention mechanism selectively attends to spatially relevant regions, ensuring geometric coherence and high visual fidelity. Our approach achieves coherent and realistic egocentric video generation while demonstrating strong scalability and robustness across unseen and in-the-wild videos.",
+    "authors": [
+      "Taewoong Kang",
+      "Kinam Kim",
+      "Dohyeon Kim",
+      "Minho Park",
+      "Junha Hyung",
+      "Jaegul Choo"
+    ],
+    "likes": 37,
+    "published_date": "Dec 9",
+    "url": "https://huggingface.co/papers/2512.08269",
+    "date_collected": "2025-12-16T07:08:34.239835+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "단일 외부 시점 동영상으로부터 자아 중심 동영상 생성 (EgoX)",
+      "abstract": "자아 중심 인식은 인간들이 직접 자신의 시점에서 세계를 경험하고 이해하는 것을 가능하게 합니다. 외부 시점(삼인칭) 동영상을 자아 중심(일인칭) 동영상으로 변환함으로써 몰입형 이해의 새로운 가능성을 열어줍니다. 그러나 카메라 자세의 변화가 극단적이고 보이는 영역이 겹치지 않아 난이도가 높습니다. 이 작업은 볼 수 있는 콘텐츠를 정확히 보존하면서 보이지 않는 영역을 기하학적 일관성 있게 합성해야 합니다. 이를 위해 우리는 EgoX를 제안합니다. EgoX는 단일 외부 입력으로부터 자아 중심 동영상을 생성하기 위한 혁신적인 프레임워크입니다."
+    },
+    "summary": "1. EgoX는 대규모 비디오 확산 모델의 사전 훈련된 시공간 지식을 활용하여 가벼운 LoRA 적응을 통해 자아 중심 동영상을 생성합니다.\n2. 채널별 및 폭 방식 연결을 통해 외부 시점 및 자아 중심 우선 사항을 결합하는 통합된 조건 전략을 도입합니다.\n3. 기하학 안내의 자기 주의 메커니즘을 통해 지리적 일관성과 높은 시각적 충실성을 보장하며 은닉 및 야생 비디오에 대해 강력한 확장성과 견고성을 시연합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder",
+    "abstract": "Visual generation grounded in Visual Foundation Model (VFM) representations offers a highly promising unified pathway for integrating visual understanding, perception, and generation. Despite this potential, training large-scale text-to-image diffusion models entirely within the VFM representation space remains largely unexplored. To bridge this gap, we scale the SVG (Self-supervised representations for Visual Generation) framework, proposing SVG-T2I to support high-quality text-to-image synthesis directly in the VFM feature domain. By leveraging a standard text-to-image diffusion pipeline, SVG-T2I achieves competitive performance, reaching 0.75 on GenEval and 85.78 on DPG-Bench. This performance validates the intrinsic representational power of VFMs for generative tasks. We fully open-source the project, including the autoencoder and generation model, together with their training, inference, evaluation pipelines, and pre-trained weights, to facilitate further research in representation-driven visual generation.",
+    "authors": [
+      "Minglei Shi",
+      "Haolin Wang",
+      "Borui Zhang",
+      "Wenzhao Zheng",
+      "Bohan Zeng",
+      "Ziyang Yuan",
+      "Xiaoshi Wu",
+      "Yuanxing Zhang",
+      "Huan Yang",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Kun Gai",
+      "Jie Zhou",
+      "Jiwen Lu"
+    ],
+    "likes": 32,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11749",
+    "date_collected": "2025-12-16T07:08:34.241362+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "VAE 없이 크기를 늘린 SVG-T2I: 텍스트-이미지 잠재 확산 모델",
+      "abstract": "시각 기반 모델 (VFM) 표현에 근거한 시각 생성은 시각 이해, 지각, 그리고 생성을 통합하는 매우 유망한 통합된 방법론을 제공합니다. 이 잠재적 가능성에도 불구하고, VFM 표현 공간 내에서 대규모 텍스트-이미지 확산 모델을 훈련하는 것은 아직 많이 탐구되지 않았습니다. 이 간극을 메우기 위해, 우리는 SVG (시각 생성을 위한 자가 지도 표현) 프레임워크를 확장하여, VFM 특성 도메인 내에서 고품질 텍스트-이미지 합성을 지원하는 SVG-T2I를 제안합니다. 표준 텍스트-이미지 확산 파이프라인을 활용함으로써, SVG-T2I는 경쟁력 있는 성능을 달성하며, GenEval에서 0.75, DPG-Bench에서 85.78을 기록하였습니다. 이 성과는 VFMs의 생성 작업을 위한 내재적 표현력을 검증합니다. 본 프로젝트는 오토인코더 및 생성 모델뿐만 아니라, 훈련, 추론, 평가 파이프라인 및 사전 훈련된 가중치까지를 완전히 오픈소스로 제공하여, 표현 중심의 시각 생성에 대한 추가 연구를 용이하게 합니다."
+    },
+    "summary": "1. VAE 없이 VFM 특성 도메인에서 텍스트-이미지 합성을 지원하는 SVG-T2I를 제안하였다.\n2. SVG-T2I는 표준 텍스트-이미지 확산 파이프라인을 활용하여 높은 성능을 달성하였으며, GenEval과 DPG-Bench에서 각각 0.75와 85.78의 성과를 보였다.\n3. 본 연구에서는 VFMs가 생성 작업에 대한 내재적 표현력을 증명하였으며, 이를 통해 시각 생성 관련 추가 연구를 촉진하고자 한다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties",
+    "abstract": "Large-scale video generation models have shown remarkable potential in modeling photorealistic appearance and lighting interactions in real-world scenes. However, a closed-loop framework that jointly understands intrinsic scene properties (e.g., albedo, normal, material, and irradiance), leverages them for video synthesis, and supports editable intrinsic representations remains unexplored. We present V-RGBX, the first end-to-end framework for intrinsic-aware video editing. V-RGBX unifies three key capabilities: (1) video inverse rendering into intrinsic channels, (2) photorealistic video synthesis from these intrinsic representations, and (3) keyframe-based video editing conditioned on intrinsic channels. At the core of V-RGBX is an interleaved conditioning mechanism that enables intuitive, physically grounded video editing through user-selected keyframes, supporting flexible manipulation of any intrinsic modality. Extensive qualitative and quantitative results show that V-RGBX produces temporally consistent, photorealistic videos while propagating keyframe edits across sequences in a physically plausible manner. We demonstrate its effectiveness in diverse applications, including object appearance editing and scene-level relighting, surpassing the performance of prior methods.",
+    "authors": [
+      "Ye Fang",
+      "Tong Wu",
+      "Valentin Deschaintre",
+      "Duygu Ceylan",
+      "Iliyan Georgiev",
+      "Chun-Hao Paul Huang",
+      "Yiwei Hu",
+      "Xuelin Chen",
+      "Tuanfeng Yang Wang"
+    ],
+    "likes": 24,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11799",
+    "date_collected": "2025-12-16T07:08:34.242679+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "V-RGBX: 내재적 속성에 대한 정확한 제어를 갖춘 비디오 편집",
+      "abstract": "대규모 비디오 생성 모델은 현실 세계 장면에서 사실적인 외관과 조명 상호작용을 모델링하는 놀라운 잠재력을 보여주었습니다. 그러나 알베도, 법선, 재질, 및 조사 등의 내재적 장면 속성을 공동으로 이해하고 비디오 합성에 활용하며 편집 가능한 내재적 표현을 지원하는 폐쇄 루프 프레임워크는 아직 탐구되지 않았습니다. 우리는 내재적 정보를 고려한 비디오 편집을 위한 최초의 end-to-end 프레임워크인 V-RGBX를 제안합니다."
+    },
+    "summary": "1. V-RGBX는 비디오 역반사 렌더링을 통한 내재적 채널로, 내재적 표현에서 사실적인 비디오 합성, 그리고 내재적 채널에 의존하는 키프레임 기반 비디오 편집 세 가지 주요 능력을 통합합니다.\n2. V-RGBX의 핵심 엔진은 사용자가 선택한 키프레임을 통한 직관적이고 물리적으로 기반된 비디오 편집을 가능케 하는 교차되는 조건부 메커니즘입니다.\n3. V-RGBX는 키프레임 편집을 통해 물리적으로 타당한 방식으로 공간적으로 일관된 사실적 비디오를 생성하며, 오브젝트 외관 편집 및 장면 전체적인 조명 변경과 같은 다양한 응용에서 효과적임이 입증되었습니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Sliding Window Attention Adaptation",
+    "abstract": "The self-attention mechanism in Transformer-based Large Language Models (LLMs) scales quadratically with input length, making long-context inference expensive. Sliding window attention (SWA) reduces this cost to linear complexity, but naively enabling complete SWA at inference-time for models pretrained with full attention (FA) causes severe long-context performance degradation due to training-inference mismatch. This makes us wonder: Can FA-pretrained LLMs be well adapted to SWA without pretraining? We investigate this by proposing Sliding Window Attention Adaptation (SWAA), a set of practical recipes that combine five methods for better adaptation: (1) applying SWA only during prefilling; (2) preserving \"sink\" tokens; (3) interleaving FA/SWA layers; (4) chain-of-thought (CoT); and (5) fine-tuning. Our experiments show that SWA adaptation is feasible while non-trivial: no single method suffices, yet specific synergistic combinations effectively recover the original long-context performance. We further analyze the performance-efficiency trade-offs of different SWAA configurations and provide recommended recipes for diverse scenarios. Our code is available at https://github.com/yuyijiong/sliding-window-attention-adaptation",
+    "authors": [
+      "Yijiong Yu",
+      "Jiale Liu",
+      "Qingyun Wu",
+      "Huazheng Wang",
+      "Ji Pei"
+    ],
+    "likes": 13,
+    "published_date": "Dec 11",
+    "url": "https://huggingface.co/papers/2512.10411",
+    "date_collected": "2025-12-16T07:08:34.243822+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "슬라이딩 윈도우 어텐션 적응",
+      "abstract": "Transformer 기반 대형 언어 모델 (LLMs)에서의 자가 주의 메커니즘은 입력 길이에 제곱 비례하여 증가하여 장거리 문맥 추론이 비용이 많이 드는 문제가 있습니다. 슬라이딩 윈도우 어텐션 (SWA)은 이 비용을 선형 복잡도로 줄이지만, 완전 어텐션 (FA)으로 사전 훈련된 모델에 대해 추론 시 완전 SWA를 단순히 활성화하는 경우, 훈련-추론 불일치로 인해 심각한 장거리 문맥 성능 저하가 발생합니다. 이에 우리는 FA로 사전 훈련된 LLMs가 사전 훈련 없이 SWA에 잘 적응될 수 있을까 궁금해졌습니다. 우리는 슬라이딩 윈도우 어텐션 적응 (SWAA)을 제안하여 다섯 가지 방법을 결합한 현실적인 레시피로 더 나은 적응을 탐구합니다: (1) 프리필링 중에만 SWA 적용; (2) \"싱크(sink)\" 토큰 보존; (3) FA/SWA 레이어 교대; (4) chain-of-thought (CoT); 및 (5) 파인 튜닝. 실험 결과, SWA 적응은 쉽지 않지만 가능함을 보여줍니다: 어떤 단일 방법도 충분하지 않지만, 구체적인 상호 작용 조합은 원래의 장거리 문맥 성능을 효과적으로 회복시킵니다. 우리는 다양한 시나리오를 위한 권장 레시피를 제공하고, 다양한 SWAA 구성에 대한 성능-효율성의 트레이드오프를 분석합니다. 코드는 https://github.com/yuyijiong/sliding-window-attention-adaptation 에서 확인할 수 있습니다."
+    },
+    "summary": "1. Transformer 대형 언어 모델의 자가 주의 메커니즘은 입력 길이에 따라 복잡성이 증가하여 장거리 문맥 추론이 어렵다.\n2. 슬라이딩 윈도우 어텐션(SWA)은 선형 복잡도로 비용을 줄이지만, FA로 사전 훈련된 모델에 대한 완전 SWA 적용은 문맥 성능을 저하시킨다.\n3. SWAA는 다양한 방법을 결합하여 FA로 사전 훈련된 LLMs를 SWA에 적응시킬 수 있음을 실험을 통해 입증하고, 트레이드오프와 권장 레시피를 제시하며, 코드를 제공한다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "PersonaLive! Expressive Portrait Image Animation for Live Streaming",
+    "abstract": "Current diffusion-based portrait animation models predominantly focus on enhancing visual quality and expression realism, while overlooking generation latency and real-time performance, which restricts their application range in the live streaming scenario. We propose PersonaLive, a novel diffusion-based framework towards streaming real-time portrait animation with multi-stage training recipes. Specifically, we first adopt hybrid implicit signals, namely implicit facial representations and 3D implicit keypoints, to achieve expressive image-level motion control. Then, a fewer-step appearance distillation strategy is proposed to eliminate appearance redundancy in the denoising process, greatly improving inference efficiency. Finally, we introduce an autoregressive micro-chunk streaming generation paradigm equipped with a sliding training strategy and a historical keyframe mechanism to enable low-latency and stable long-term video generation. Extensive experiments demonstrate that PersonaLive achieves state-of-the-art performance with up to 7-22x speedup over prior diffusion-based portrait animation models.",
+    "authors": [
+      "Zhiyuan Li",
+      "Chi-Man Pun",
+      "Chen Fang",
+      "Jue Wang",
+      "Xiaodong Cun"
+    ],
+    "likes": 10,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11253",
+    "date_collected": "2025-12-16T07:08:34.244963+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "생동감 넘치는 초상 화상 애니메이션 리얼 타임 라이브 스트리밍을 위한 PersonaLive!",
+      "abstract": "현재의 확산 기반 초상 애니메이션 모델은 주로 시각적 품질과 표현적 현실감 향상에 초점을 맞추지만, 생성 지연 및 실시간 성능을 간과하여 라이브 스트리밍 시나리오에서의 적용 범위를 제한한다. 본 연구는 PersonaLive를 제안하는데, 이는 멀티 스테이지 훈련 레시피를 활용하여 실시간 초상 애니메이션을 스트리밍하기 위한 혁신적인 확산 기반 프레임워크이다. 구체적으로 우리는 먼저 표현적인 이미지 수준의 움직임 제어를 달성하기 위해 암시적 얼굴 표현과 3D 암시적 키포인트라는 혼합 암시적 신호를 채택한다. 그 후, 노이즈 제거 과정에서 외형 중복성을 제거하기 위해 적은 단계의 외형 증류 전략을 제안하여 추론 효율을 크게 향상시킨다. 마지막으로, 슬라이딩 훈련 전략과 기술적으로 과거 키프레임 기법을 장착한 자기회귀 마이크로-청크 스트리밍 생성 패러다임을 소개하여 저지연성과 안정적인 장기 비디오 생성을 가능하게 한다. 다양한 실험을 통해 PersonaLive가 이전의 확산 기반 초상 애니메이션 모델에 비해 최신 기술 성능을 달성하는 것을 보여주며, 최대 7-22배까지 속도 향상을 이룩한다."
+    },
+    "summary": "1. PersonaLive는 실시간 초상 애니메이션을 위한 혁신적인 확산 기반 프레임워크로, 표현적 이미지 움직임 제어를 위해 암시적 얼굴 표현과 3D 암시적 키포인트를 활용한다.\n2. 외형 증류 전략을 통해 외형 중복성을 제거하여 추론 효율을 향상시키고, 저렴한 비디오 생성을 가능하게 한다.\n3. PersonaLive의 자기회귀 마이크로-청크 스트리밍 생성은 저지연성과 안정적인 장기 비디오 생성을 실현하며, 이전 모델 대비 최대 7-22배의 속도 향상을 이룩한다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Exploring MLLM-Diffusion Information Transfer with MetaCanvas",
+    "abstract": "Multimodal learning has rapidly advanced visual understanding, largely via multimodal large language models (MLLMs) that use powerful LLMs as cognitive cores. In visual generation, however, these powerful core models are typically reduced to global text encoders for diffusion models, leaving most of their reasoning and planning ability unused. This creates a gap: current multimodal LLMs can parse complex layouts, attributes, and knowledge-intensive scenes, yet struggle to generate images or videos with equally precise and structured control. We propose MetaCanvas, a lightweight framework that lets MLLMs reason and plan directly in spatial and spatiotemporal latent spaces and interface tightly with diffusion generators. We empirically implement MetaCanvas on three different diffusion backbones and evaluate it across six tasks, including text-to-image generation, text/image-to-video generation, image/video editing, and in-context video generation, each requiring precise layouts, robust attribute binding, and reasoning-intensive control. MetaCanvas consistently outperforms global-conditioning baselines, suggesting that treating MLLMs as latent-space planners is a promising direction for narrowing the gap between multimodal understanding and generation.",
+    "authors": [
+      "Han Lin",
+      "Xichen Pan",
+      "Ziqi Huang",
+      "Ji Hou",
+      "Jialiang Wang",
+      "Weifeng Chen",
+      "Zecheng He",
+      "Felix Juefei-Xu",
+      "Junzhe Sun",
+      "Zhipeng Fan",
+      "Ali Thabet",
+      "Mohit Bansal",
+      "Chu Wang"
+    ],
+    "likes": 8,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11464",
+    "date_collected": "2025-12-16T07:08:34.246445+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "메타캔버스를 활용한 MLLM-확산 정보 전달 탐구",
+      "abstract": "다중 모달 학습은 주로 강력한 언어-영상 모델(MLLMs)을 사용하여 시각적 이해를 신속히 발전시켰습니다. 그러나 시각적 생성에서 이러한 강력한 핵심 모델은 일반적으로 확산 모델을 위한 전역 텍스트 인코더로 축소되어, 추론 및 계획 능력의 대부분이 활용되지 않습니다. 이로 인해 현재의 다중 모달 LLMs는 복잡한 레이아웃, 속성 및 지식 밀도가 높은 장면을 분석할 수 있지만, 동등하게 정확하고 구조화된 제어가 필요한 이미지나 비디오를 생성하는 데 어려움을 겪습니다. 우리는 MetaCanvas를 제안합니다. 이는 MLLMs에게 공간 및 시공간 잠재 공간에서 직접 추론하고 계획하게 하며 확산 생성기와 밀접하게 상호작용할 수 있게 하는 경량 프레임워크입니다. 세 가지 다른 확산 백본에서 MetaCanvas를 경험적으로 구현하고, 텍스트-이미지 생성, 텍스트/이미지-비디오 생성, 이미지/비디오 편집 및 콘텍스트 비디오 생성을 포함하는 여섯 가지 작업을 평가합니다. 각 작업은 정확한 레이아웃, 견고한 속성 바인딩, 지식 집약적인 제어가 필요합니다. MetaCanvas는 일관되게 전역 조건화 기준을 능가하여, MLLMs를 잠재 공간 계획자로 취급하는 것이 다중 모달 이해와 생성 사이의 간격을 좁히는 유망한 방향임을 시사합니다."
+    },
+    "summary": "1. MetaCanvas는 MLLMs가 시공간 잠재 공간에서 직접 추론 및 계획할 수 있도록 해주며 확산 생성기와 밀접하게 상호작용하여 다중 모달 이해와 생성 사이의 간격을 축소시킬 수 있다.\n2. 실험적으로 MetaCanvas는 여섯 가지 작업에서 평가되었으며, 각 작업은 정확한 레이아웃, 견고한 속성 바인딩, 지식 집약적인 제어가 필요했는데 MetaCanvas가 전역 조건화 기준을 능가했다.\n3. 이러한 결과는 MLLMs를 잠재 공간 계획자로 다루는 것이 시각적 생성에서 유망한 방향임을 시사한다.",
+    "categories": [
+      "MLLM",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MeshSplatting: Differentiable Rendering with Opaque Meshes",
+    "abstract": "Primitive-based splatting methods like 3D Gaussian Splatting have revolutionized novel view synthesis with real-time rendering. However, their point-based representations remain incompatible with mesh-based pipelines that power AR/VR and game engines. We present MeshSplatting, a mesh-based reconstruction approach that jointly optimizes geometry and appearance through differentiable rendering. By enforcing connectivity via restricted Delaunay triangulation and refining surface consistency, MeshSplatting creates end-to-end smooth, visually high-quality meshes that render efficiently in real-time 3D engines. On Mip-NeRF360, it boosts PSNR by +0.69 dB over the current state-of-the-art MiLo for mesh-based novel view synthesis, while training 2x faster and using 2x less memory, bridging neural rendering and interactive 3D graphics for seamless real-time scene interaction. The project page is available at https://meshsplatting.github.io/.",
+    "authors": [
+      "Jan Held",
+      "Sanghyun Son",
+      "Renaud Vandeghen",
+      "Daniel Rebain",
+      "Matheus Gadelha",
+      "Yi Zhou",
+      "Anthony Cioppa",
+      "Ming C. Lin",
+      "Marc Van Droogenbroeck",
+      "Andrea Tagliasacchi"
+    ],
+    "likes": 6,
+    "published_date": "Dec 7",
+    "url": "https://huggingface.co/papers/2512.06818",
+    "date_collected": "2025-12-16T07:08:34.247779+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "MeshSplatting: Opque Meshes와 함께 하는 미분가능 렌더링",
+      "abstract": "3D 가우시안 Splatting과 같은 원시 기반 splatting 방법은 실시간 렌더링을 통한 새로운 뷰 합성을 혁신적으로 변경했습니다. 그러나 이러한 점 기반 표현은 AR/VR 및 게임 엔진을 구동하는 매쉬 기반 파이프 라인과 호환되지 않습니다. MeshSplatting은 제한된 Delaunay 삼각화를 통해 연결성을 강제하고 표면 일관성을 개선하여 기하학과 외관을 미분 가능한 렌더링을 통해 공동으로 최적화하는 매쉬 기반 재구성 접근 방법을 제시합니다. MeshSplatting은 엔드-투-엔드 부드럽고 시각적으로 고품질의 메쉬를 생성하여 실시간 3D 엔진에서 효율적으로 렌더링되며 mesh-based 새로운 뷰 합성에 대해 현재 최첨단 기술인 MiLo 대비 0.69dB의 PSNR 향상을 이끌어냅니다."
+    },
+    "summary": "1. MeshSplatting은 미분 가능 렌더링을 통해 기하학과 외관을 동시에 최적화하는 매쉬 기반 재구성 방법을 소개합니다.\n2. 제한된 Delaunay 삼각화를 통해 연결성을 강화하고 표면 일관성을 높여 부드럽고 시각적으로 높은 품질의 메쉬를 실시간 3D 엔진에 효율적으로 렌더링합니다.\n3. Mip-NeRF360에서는 MeshSplatting이 PSNR을 MiLo보다 0.69dB 향상시키면서 2배 빠르게 훈련하고 메모리 사용량을 2배 줄여 neural rendering과 interactive 3D graphics를 유기적으로 연결하여 실시간 장면 상호 작용이 가능하도록 지원합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Structure From Tracking: Distilling Structure-Preserving Motion for Video Generation",
+    "abstract": "Reality is a dance between rigid constraints and deformable structures. For video models, that means generating motion that preserves fidelity as well as structure. Despite progress in diffusion models, producing realistic structure-preserving motion remains challenging, especially for articulated and deformable objects such as humans and animals. Scaling training data alone, so far, has failed to resolve physically implausible transitions. Existing approaches rely on conditioning with noisy motion representations, such as optical flow or skeletons extracted using an external imperfect model. To address these challenges, we introduce an algorithm to distill structure-preserving motion priors from an autoregressive video tracking model (SAM2) into a bidirectional video diffusion model (CogVideoX). With our method, we train SAM2VideoX, which contains two innovations: (1) a bidirectional feature fusion module that extracts global structure-preserving motion priors from a recurrent model like SAM2; (2) a Local Gram Flow loss that aligns how local features move together. Experiments on VBench and in human studies show that SAM2VideoX delivers consistent gains (+2.60\\% on VBench, 21-22\\% lower FVD, and 71.4\\% human preference) over prior baselines. Specifically, on VBench, we achieve 95.51\\%, surpassing REPA (92.91\\%) by 2.60\\%, and reduce FVD to 360.57, a 21.20\\% and 22.46\\% improvement over REPA- and LoRA-finetuning, respectively. The project website can be found at https://sam2videox.github.io/ .",
+    "authors": [
+      "Yang Fei",
+      "George Stoica",
+      "Jingyuan Liu",
+      "Qifeng Chen",
+      "Ranjay Krishna",
+      "Xiaojuan Wang",
+      "Benlin Liu"
+    ],
+    "likes": 5,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11792",
+    "date_collected": "2025-12-16T07:08:34.248970+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "추적으로부터의 구조: 비디오 생성을 위한 구조 보존 운동 증류",
+      "abstract": "현실은 단단한 제약과 변형 가능한 구조 사이의 춤이다. 비디오 모델에서는 충실성과 구조를 보존하는 운동을 생성하는 것을 의미한다. 확산 모델에서의 진전에도 불구하고, 특히 인간이나 동물과 같은 관절 및 변형 가능한 객체에 대해 감각적인 구조를 보존하는 운동을 생성하는 것은 여전히 어렵다. 오직 교육 데이터 규모를 확대하는 것만으로는 물리적으로 불가능한 전이를 해결하는 데 실패했다. 기존 방법은 외부의 불완전한 모델을 사용하여 추출된 까다로운 운동 표현인 광학 흐름 또는 스켈레톤으로 조건을 거는 데 의존한다. 이러한 도전에 대응하기 위해, 우리는 추적 모델인 SAM2로부터 구조 보존 운동 선호를 증류하는 알고리즘을 도입한다."
+    },
+    "summary": "1. 비디오 생성을 위해 SAM2 추적 모델에서 구조 보존 운동을 증류하는 CogVideoX 모델을 소개함.\n2. SAM2VideoX는 글로벌 구조 보존 운동 선호를 추출하는 이중 방향 특징 융합 모듈과 로컬 피쳐가 함께 움직이는 방식을 정렬하는 Local Gram Flow 손실을 포함함.\n3. 실험 결과는 SAM2VideoX가 이전 기준선 대비 일관된 이익을 제공하며, VBench에서 95.51\\%의 성과를 달성하고 REPA를 2.60\\% 넘어서며 FVD를 360.57로 낮추어 향상시킴.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "LEO-RobotAgent: A General-purpose Robotic Agent for Language-driven Embodied Operator",
+    "abstract": "We propose LEO-RobotAgent, a general-purpose language-driven intelligent agent framework for robots. Under this framework, LLMs can operate different types of robots to complete unpredictable complex tasks across various scenarios. This framework features strong generalization, robustness, and efficiency. The application-level system built around it can fully enhance bidirectional human-robot intent understanding and lower the threshold for human-robot interaction. Regarding robot task planning, the vast majority of existing studies focus on the application of large models in single-task scenarios and for single robot types. These algorithms often have complex structures and lack generalizability. Thus, the proposed LEO-RobotAgent framework is designed with a streamlined structure as much as possible, enabling large models to independently think, plan, and act within this clear framework. We provide a modular and easily registrable toolset, allowing large models to flexibly call various tools to meet different requirements. Meanwhile, the framework incorporates a human-robot interaction mechanism, enabling the algorithm to collaborate with humans like a partner. Experiments have verified that this framework can be easily adapted to mainstream robot platforms including unmanned aerial vehicles (UAVs), robotic arms, and wheeled robot, and efficiently execute a variety of carefully designed tasks with different complexity levels. Our code is available at https://github.com/LegendLeoChen/LEO-RobotAgent.",
+    "authors": [
+      "Lihuang Chen",
+      "Xiangyu Luo",
+      "Jun Meng"
+    ],
+    "likes": 4,
+    "published_date": "Dec 11",
+    "url": "https://huggingface.co/papers/2512.10605",
+    "date_collected": "2025-12-16T07:08:34.250018+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "LEO-RobotAgent: 언어 주도형 신체화 연산을 위한 일반용도 로봇 에이전트",
+      "abstract": "우리는 로봇을 위한 일반용도 언어 주도형 지능 에이전트 프레임워크인 LEO-RobotAgent를 제안합니다. 이 프레임워크 하에서 LLMs(언어 모델)은 다양한 시나리오에서 예측할 수 없는 복잡한 작업을 수행하기 위해 다양한 종류의 로봇을 운영할 수 있습니다. 이 프레임워크는 강한 일반화, 견고성, 효율성을 특징으로 합니다. 이를 둘러싼 응용 수준의 시스템은 양방향 인간-로봇 의도 이해를 완전히 향상시키고, 인간-로봇 상호작용의 문턱을 낮출 수 있습니다. 로봇 작업 계획에 대해 대부분의 기존 연구는 큰 모델을 단일 작업 시나리오 및 단일 로봇 유형에 적용하는 데 초점을 맞추고 있습니다. 이러한 알고리즘들은 종종 복잡한 구조를 가지고 있으며 범용성이 부족합니다. 따라서 제안된 LEO-RobotAgent 프레임워크는 가능한 한 간소한 구조로 설계되어 있으며, 큰 모델이 이 명확한 프레임워크 내에서 독립적으로 사고하고 계획하며 행동할 수 있도록 합니다. 우리는 모듈식이고 쉽게 등록 가능한 도구 세트를 제공하여, 큰 모델이 다양한 요구 사항을 충족시키기 위해 유연하게 다양한 도구를 호출할 수 있도록 합니다. 한편, 이 프레임워크는 인간-로봇 상호작용 메커니즘을 포함하고 있어 알고리즘이 파트너처럼 사람들과 협력할 수 있도록 합니다. 실험 결과 이 프레임워크가 무인 항공기(UAVs), 로봇 팔, 바퀴 달린 로봇 등의 주류 로봇 플랫폼에 쉽게 적응되며, 다양한 복잡성 수준의 정교하게 설계된 다양한 작업을 효율적으로 실행할 수 있는 것을 검증했습니다. 우리의 코드는 https://github.com/LegendLeoChen/LEO-RobotAgent 에서 확인할 수 있습니다."
+    },
+    "summary": "1. LEO-RobotAgent는 로봇을 위한 일반용도 언어 주도형 지능 에이전트 프레임워크로, 다양한 로봇 유형 및 복잡한 작업을 수행할 수 있는 특징을 갖추고 있습니다.\n2. 기존 로봇 작업 계획 연구는 단일 작업 및 로봇 유형에 집중하며, 제안된 프레임워크는 복잡성이 적고 범용적인 구조를 통해 큰 모델이 독립적으로 작업을 수행할 수 있도록 합니다.\n3. LEO-RobotAgent는 인간-로봇 의도 이해를 향상시키고 상호작용을 원활하게 하는 인체화된 협력 메커니즘을 포함하며, 다양한 로봇 플랫폼에서 효율적으로 작동함이 실험으로 확인되었습니다.",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  }
+]

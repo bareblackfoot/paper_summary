@@ -1,0 +1,334 @@
+[
+  {
+    "title": "DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI",
+    "abstract": "The rapidly growing demand for high-quality data in Large Language Models (LLMs) has intensified the need for scalable, reliable, and semantically rich data preparation pipelines. However, current practices remain dominated by ad-hoc scripts and loosely specified workflows, which lack principled abstractions, hinder reproducibility, and offer limited support for model-in-the-loop data generation. To address these challenges, we present DataFlow, a unified and extensible LLM-driven data preparation framework. DataFlow is designed with system-level abstractions that enable modular, reusable, and composable data transformations, and provides a PyTorch-style pipeline construction API for building debuggable and optimizable dataflows. The framework consists of nearly 200 reusable operators and six domain-general pipelines spanning text, mathematical reasoning, code, Text-to-SQL, agentic RAG, and large-scale knowledge extraction. To further improve usability, we introduce DataFlow-Agent, which automatically translates natural-language specifications into executable pipelines via operator synthesis, pipeline planning, and iterative verification. Across six representative use cases, DataFlow consistently improves downstream LLM performance. Our math, code, and text pipelines outperform curated human datasets and specialized synthetic baselines, achieving up to +3\\% execution accuracy in Text-to-SQL over SynSQL, +7\\% average improvements on code benchmarks, and 1--3 point gains on MATH, GSM8K, and AIME. Moreover, a unified 10K-sample dataset produced by DataFlow enables base models to surpass counterparts trained on 1M Infinity-Instruct data. These results demonstrate that DataFlow provides a practical and high-performance substrate for reliable, reproducible, and scalable LLM data preparation, and establishes a system-level foundation for future data-centric AI development.",
+    "authors": [
+      "Hao Liang",
+      "Xiaochen Ma",
+      "Zhou Liu",
+      "Zhen Hao Wong",
+      "Zhengyang Zhao",
+      "Zimo Meng",
+      "Runming He",
+      "Chengyu Shen",
+      "Qifeng Cai",
+      "Zhaoyang Han",
+      "Meiyi Qiang",
+      "Yalin Feng",
+      "Tianyi Bai",
+      "Zewei Pan",
+      "Ziyi Guo",
+      "Yizhen Jiang",
+      "Jingwen Deng",
+      "Qijie You",
+      "Peichao Lai",
+      "Tianyu Guo",
+      "Chi Hsu Tsai",
+      "Hengyi Feng"
+    ],
+    "likes": 184,
+    "published_date": "Dec 18",
+    "url": "https://huggingface.co/papers/2512.16676",
+    "date_collected": "2025-12-27T07:08:25.316333+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "데이터 플로우: 데이터 중심 AI 시대의 통합 데이터 준비와 워크플로 자동화를 위한 LLM 주도 프레임워크",
+      "abstract": "대규모 언어 모델(Large Language Models, LLMs)에서 고품질 데이터에 대한 수요가 급증함에 따라 확장 가능하고 신뢰할 수 있으며 의미론적으로 풍부한 데이터 준비 파이프라인이 필요해졌습니다. 본 연구에서는 이러한 도전에 대응하기 위해 DataFlow를 제안하는데, 이는 통합적이고 확장 가능한 LLM 주도 데이터 준비 프레임워크로서 시스템 수준의 추상화를 바탕으로 설계되었습니다. DataFlow는 모듈화, 재사용, 구성 가능한 데이터 변환을 가능하게 하는 시스템 수준의 추상화 기능을 제공하며, 디버깅 가능하고 최적화 가능한 데이터플로우를 구축하기 위한 PyTorch 스타일의 파이프라인 구성 API를 제공합니다. 또한 DataFlow-Agent를 도입하여 자연어 명세를 실행 가능한 파이프라인으로 자동 변환하고자 합니다."
+    },
+    "summary": "1. DataFlow는 시스템 수준의 추상화를 통해 모듈화, 재사용 가능하며 구성 가능한 데이터 변환 기능을 제공합니다.\n2. DataFlow는 PyTorch 스타일의 파이프라인 구성 API를 제공하여 디버깅과 최적화가 가능한 데이터플로우를 제공합니다.\n3. DataFlow는 여섯 가지 도메인 일반 파이프라인과 함께 사용되는 200개 이상의 재사용 가능한 오퍼레이터로 구성되어 있습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows",
+    "abstract": "Despite advances in scientific AI, a coherent framework for Scientific General Intelligence (SGI)-the ability to autonomously conceive, investigate, and reason across scientific domains-remains lacking. We present an operational SGI definition grounded in the Practical Inquiry Model (PIM: Deliberation, Conception, Action, Perception) and operationalize it via four scientist-aligned tasks: deep research, idea generation, dry/wet experiments, and experimental reasoning. SGI-Bench comprises over 1,000 expert-curated, cross-disciplinary samples inspired by Science's 125 Big Questions, enabling systematic evaluation of state-of-the-art LLMs. Results reveal gaps: low exact match (10--20%) in deep research despite step-level alignment; ideas lacking feasibility and detail; high code executability but low execution result accuracy in dry experiments; low sequence fidelity in wet protocols; and persistent multimodal comparative-reasoning challenges. We further introduce Test-Time Reinforcement Learning (TTRL), which optimizes retrieval-augmented novelty rewards at inference, enhancing hypothesis novelty without reference answer. Together, our PIM-grounded definition, workflow-centric benchmark, and empirical insights establish a foundation for AI systems that genuinely participate in scientific discovery.",
+    "authors": [
+      "Wanghan Xu",
+      "Yuhao Zhou",
+      "Yifan Zhou",
+      "Qinglong Cao",
+      "Shuo Li",
+      "Jia Bu",
+      "Bo Liu",
+      "Yixin Chen",
+      "Xuming He",
+      "Xiangyu Zhao",
+      "Xiang Zhuang",
+      "Fengxiang Wang",
+      "Zhiwang Zhou",
+      "Qiantai Feng",
+      "Wenxuan Huang",
+      "Jiaqi Wei",
+      "Hao Wu",
+      "Yuejin Yang",
+      "Guangshuai Wang",
+      "Sheng Xu",
+      "Ziyan Huang",
+      "Xinyao Liu"
+    ],
+    "likes": 105,
+    "published_date": "Dec 18",
+    "url": "https://huggingface.co/papers/2512.16969",
+    "date_collected": "2025-12-27T07:08:25.318212+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "LLMs와 과학자 맞춤 워크플로우로 과학 일반 지능 탐구",
+      "abstract": "과학적 AI의 발전에도 불구하고 과학적 일반 지능(SGI)에 대한 일관된 프레임워크가 부족합니다. 우리는 실용적 탐구 모델 (PIM: 숙고, 이해, 행동, 지각)에 근거한 운영 SGI 정의를 제시하고 이를 실현하기 위해 4가지 과학자 맞춤 작업으로 구체화했습니다. SGI-Bench는 Science의 125개 큰 질문에서 영감을 받은 1,000개 이상의 전문가 선별 교차 학제적 샘플을 포함하며, 최신 LLMs의 체계적 평가를 가능케 합니다. 결과는 다음과 같은 공백을 드러냅니다: 깊은 연구에서의 낮은 정확 일치(10-20%), 아이디어의 실행 가능성 및 세부사항 부족, 건조/습식 실험에서의 코드 실행 가능성은 높지만 실행 결과 정확도는 낮음, 습식 프로토콜에서 시퀀스의 충실도가 낮으며, 지속적인 다중 모달 비교 추론 도전. 우리는 또한 추론에 있어 검색 보충 도출 독창성 보상을 최적화하는 Test-Time Reinforcement Learning (TTRL)을 소개하였습니다. 이는 참조 답변 없이 가설의 독창성을 향상시켜줍니다. 우리의 PIM에 근거한 정의, 워크플로우 중심의 벤치마크 및 경험적 통찰력은 과학적 발견에 참여하는 AI 시스템을 실제로 세우는 기반을 확립합니다."
+    },
+    "summary": "1. 과학 일반 지능(SGI)에 초점을 맞춘 새로운 정의와 네 가지 과학자 맞춤 작업을 통해 최신 LLMs의 시스템적 평가를 가능케 합니다.\n2. 결과는 깊은 연구에서의 정확 일치 부족, 아이디어의 실행 가능성 부족, 실험 실행 결과의 정확도 낮음 등을 보여주며, 다중 모달 비교 추론 도전도 소개합니다.\n3. Test-Time Reinforcement Learning (TTRL)은 추론 시 검색 보충 도출 독창성 보상을 최적화해 가설의 독창성을 향상시키는 방법을 제시합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "SemanticGen: Video Generation in Semantic Space",
+    "abstract": "State-of-the-art video generative models typically learn the distribution of video latents in the VAE space and map them to pixels using a VAE decoder. While this approach can generate high-quality videos, it suffers from slow convergence and is computationally expensive when generating long videos. In this paper, we introduce SemanticGen, a novel solution to address these limitations by generating videos in the semantic space. Our main insight is that, due to the inherent redundancy in videos, the generation process should begin in a compact, high-level semantic space for global planning, followed by the addition of high-frequency details, rather than directly modeling a vast set of low-level video tokens using bi-directional attention. SemanticGen adopts a two-stage generation process. In the first stage, a diffusion model generates compact semantic video features, which define the global layout of the video. In the second stage, another diffusion model generates VAE latents conditioned on these semantic features to produce the final output. We observe that generation in the semantic space leads to faster convergence compared to the VAE latent space. Our method is also effective and computationally efficient when extended to long video generation. Extensive experiments demonstrate that SemanticGen produces high-quality videos and outperforms state-of-the-art approaches and strong baselines.",
+    "authors": [
+      "Jianhong Bai",
+      "Xiaoshi Wu",
+      "Xintao Wang",
+      "Fu Xiao",
+      "Yuanxing Zhang",
+      "Qinghe Wang",
+      "Xiaoyu Shi",
+      "Menghan Xia",
+      "Zuozhu Liu",
+      "Haoji Hu",
+      "Pengfei Wan",
+      "Kun Gai"
+    ],
+    "likes": 85,
+    "published_date": "Dec 23",
+    "url": "https://huggingface.co/papers/2512.20619",
+    "date_collected": "2025-12-27T07:08:25.319676+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "의미 공간에서 비디오 생성: SemanticGen",
+      "abstract": "최신 비디오 생성 모델은 일반적으로 VAE 공간의 비디오 잠재 변수 분포를 학습하고 VAE 디코더를 사용하여 이를 픽셀로 매핑합니다. 이 접근 방식은 고품질 비디오를 생성할 수 있지만, 수렴 속도가 느리고 긴 비디오를 생성할 때 계산 비용이 많이 듭니다. 본 논문에서는 이러한 한계를 극복하기 위한 새로운 솔루션인 SemanticGen을 소개합니다. 우리의 주요 아이디어는 비디오의 내재적인 중복성으로 인해 생성 과정이 글로벌 계획을 위해 컴팩트하고 고수준의 의미 공간에서 시작해야 하며, 고주파 세부 사항을 추가하는 것이 좋다는 점입니다. SemanticGen은 두 단계 생성 과정을 채택합니다. 처음 단계에서 확산 모델이 콤팩트한 의미 비디오 특징을 생성하고, 두 번째 단계에서 다른 확산 모델이 이러한 의미적 특징에 조건을 걸어 VAE 잠재 변수를 생성하여 최종 출력물을 만듭니다. 의미 공간에서 생성하는 것이 VAE 잠재 공간보다 수렴 속도가 빠르다는 것을 관찰합니다. 우리의 방법은 또한 긴 비디오 생성에 확장할 때 효과적이고 계산적으로 효율적입니다. 광범위한 실험 결과는 SemanticGen이 고품질 비디오를 생성하며 최첨단 접근법과 강력한 기준선을 앞서나간다는 것을 입증합니다."
+    },
+    "summary": "1. SemanticGen은 비디오 생성을 위해 의미 공간에서 작동하여 빠른 수렴과 계산 효율성을 제공합니다.\n2. 이 모델은 전역 계획을 위해 고수준 의미 공간부터 시작하여 고주파 세부 사항을 추가하는 과정을 통해 비디오를 생성합니다.\n3. 실험 결과는 SemanticGen이 고품질 비디오를 생성하고 최첨단 접근법과 강력한 기준선을 능가한다는 것을 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Step-DeepResearch Technical Report",
+    "abstract": "As LLMs shift toward autonomous agents, Deep Research has emerged as a pivotal metric. However, existing academic benchmarks like BrowseComp often fail to meet real-world demands for open-ended research, which requires robust skills in intent recognition, long-horizon decision-making, and cross-source verification. To address this, we introduce Step-DeepResearch, a cost-effective, end-to-end agent. We propose a Data Synthesis Strategy Based on Atomic Capabilities to reinforce planning and report writing, combined with a progressive training path from agentic mid-training to SFT and RL. Enhanced by a Checklist-style Judger, this approach significantly improves robustness. Furthermore, to bridge the evaluation gap in the Chinese domain, we establish ADR-Bench for realistic deep research scenarios. Experimental results show that Step-DeepResearch (32B) scores 61.4% on Scale AI Research Rubrics. On ADR-Bench, it significantly outperforms comparable models and rivals SOTA closed-source models like OpenAI and Gemini DeepResearch. These findings prove that refined training enables medium-sized models to achieve expert-level capabilities at industry-leading cost-efficiency.",
+    "authors": [
+      "Chen Hu",
+      "Haikuo Du",
+      "Heng Wang",
+      "Lin Lin",
+      "Mingrui Chen",
+      "Peng Liu",
+      "Ruihang Miao",
+      "Tianchi Yue",
+      "Wang You",
+      "Wei Ji",
+      "Wei Yuan",
+      "Wenjin Deng",
+      "Xiaojian Yuan",
+      "Xiaoyun Zhang",
+      "Xiangyu Liu",
+      "Xikai Liu",
+      "Yanming Xu",
+      "Yicheng Cao",
+      "Yifei Zhang",
+      "Yongyao Wang",
+      "Yubo Shu",
+      "Yurong Zhang"
+    ],
+    "likes": 73,
+    "published_date": "Dec 23",
+    "url": "https://huggingface.co/papers/2512.20491",
+    "date_collected": "2025-12-27T07:08:25.321554+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "Step-DeepResearch 기술 보고서",
+      "abstract": "LLM이 자립 에이전트로 이동함에 따라 Deep Research가 핵심적인 지표로 떠오르고 있습니다. 그러나 BrowseComp와 같은 기존 학술 벤치마크는 의도 인식, 장기적 의사 결정, 다원 출처 검증에 강한 역량이 필요한 무한 연구에 부합하지 못하는 경우가 많습니다. 이에 우리는 비용 효율적인 종단간 에이전트인 Step-DeepResearch를 제안합니다. 우리는 기계적 중요성을 강화하는 원자적 역량을 기반으로 한 데이터 합성 전략을 제시하며, 에이전트 중간 교육에서 SFT 및 RL까지 점진적 훈련 경로를 결합합니다. 체크리스트 형태의 심사관을 통해 강화된 이 방법론은 유의미하게 강건성을 향상시킵니다. 또한 중국 영역의 평가 격차를 줄이기 위해 현실적인 깊은 연구 시나리오를 위해 ADR-Bench를 설립합니다. 실험 결과는 Step-DeepResearch(32B)가 Scale AI Research Rubrics에서 61.4%의 점수를 기록했음을 보여줍니다. ADR-Bench에서는 유사 모델을 능가하며 OpenAI, Gemini DeepResearch와 같은 최첨단 폐쇄 소스 모델과 경쟁합니다. 이러한 결과는 세분화된 훈련이 중간 크기 모델이 산업 최고의 비용 효율성으로 전문가 수준 역량을 달성하는 것을 증명합니다."
+    },
+    "summary": "1. LLM이 자립 에이전트로 이동하며 Deep Research가 중요한 지표로 부각되고 있지만, BrowseComp와 같은 기존 벤치마크가 실제 문제에 부합하지 않아 새로운 방법이 필요합니다.\n2. Step-DeepResearch는 비용 효율적인 종단간 에이전트로, 데이터 합성 전략과 점진적 훈련 경로를 제시하여 강화된 계획 수립 및 보고 작성 능력을 갖추고 있습니다.\n3. ADR-Bench를 통해 Step-DeepResearch가 Scale AI Research Rubrics에서 우수한 점수를 기록하며, 다른 모델들을 능가하는 것을 실험적으로 입증하였습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence",
+    "abstract": "Robotic generalization relies on physical intelligence: the ability to reason about state changes, contact-rich interactions, and long-horizon planning under egocentric perception and action. However, most VLMs are trained primarily on third-person data, creating a fundamental viewpoint mismatch for humanoid robots. Scaling robot egocentric data collection remains impractical due to high cost and limited diversity, whereas large-scale human egocentric videos offer a scalable alternative that naturally capture rich interaction context and causal structure. The key challenge is to convert raw egocentric videos into structured and reliable embodiment training supervision. Accordingly, we propose an Egocentric2Embodiment translation pipeline that transforms first-person videos into multi-level, schema-driven VQA supervision with enforced evidence grounding and temporal consistency, enabling the construction of the Egocentric2Embodiment dataset (E2E-3M) at scale. An egocentric-aware embodied brain, termed PhysBrain, is obtained by training on the E2E-3M dataset. PhysBrain exhibits substantially improved egocentric understanding, particularly for planning on EgoThink. It provides an egocentric-aware initialization that enables more sample-efficient VLA fine-tuning and higher SimplerEnv success rates (53.9\\%), demonstrating effective transfer from human egocentric supervision to downstream robot control.",
+    "authors": [
+      "Xiaopeng Lin",
+      "Shijie Lian",
+      "Bin Yu",
+      "Ruoqi Yang",
+      "Changti Wu",
+      "Yuzhuo Miao",
+      "Yurun Jin",
+      "Yukun Shi",
+      "Cong Huang",
+      "Bojun Cheng",
+      "Kai Chen"
+    ],
+    "likes": 71,
+    "published_date": "Dec 18",
+    "url": "https://huggingface.co/papers/2512.16793",
+    "date_collected": "2025-12-27T07:08:25.322938+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "PhysBrain: 인간 내적 데이터, 시각 언어 모델로부터 물리적 지능으로의 다리 역할",
+      "abstract": "로봇의 일반화는 물리적 지능에 의존하는데, 이는 자아중심적 지각과 행동에서 상태 변화, 접촉 중심적 상호작용, 장기 기획에 대한 추론 능력을 말합니다. 그러나 대부분의 VLM(시각 언어 모델)은 주로 삼인칭 데이터로 훈련되어, 인간형 로봇에게 기본적인 시점 불일치를 초래합니다. 로봇 자아중심적 데이터 수집의 확장은 높은 비용과 제한된 다양성 때문에 실용적이지 않은 반면, 대규모 인간 내적 비디오는 풍부한 상호작용 맥락과 인과 구조를 자연스럽게 포착할 수 있는 확장 가능한 대안을 제공합니다. 주요 도전 과제는 원시적인 자아중심 비디오를 구조화되고 신뢰성 있는 실체 훈련 지도로 변환하는 것입니다. 이에 따라, 우리는 일인칭 비디오를 다중 수준의 스키마 주도 VQA 지도로 변환하는 Egocentric2Embodiment 번역 파이프라인을 제안합니다. 이는 증거 근거화와 시간적 일관성이 강화된 지도와 함께 자연스러운 상호작용 구조를 캡처하는 Egocentric2Embodiment 데이터셋(E2E-3M)의 구축을 가능하게 합니다. E2E-3M 데이터셋으로 훈련되는 Egocentric인식을 고려한 에메바디드 브레인(PhysBrain)은 상당히 향상된 자아중심적 이해를 나타냅니다. 특히 EgoThink에서 기획에 관한 효과적인 이니셜라이제이션을 제공합니다. 인간 내적 지도로부터 다양한 로봇 제어로의 효과적인 전이를 입증하기 위해, VLA 재 fine-tuning에서 더 많은 표본 효율성과 더 높은 SimplerEnv 성공률(53.9%)을 실현합니다."
+    },
+    "summary": "1. 로봇의 물리적 지능을 위해 인간 내적 비디오를 활용한 새로운 학습 방법을 제안합니다.\n2. Egocentric2Embodiment 번역 파이프라인을 통해 E2E-3M 데이터셋을 만들고, 이를 활용한 Egocentric인식을 고려한 에메바디드 브레인(PhysBrain)을 제안합니다.\n3. 인간 내적 지도로부터 로봇 제어로의 효과적인 전이를 증명하며, 높은 성공률을 도출합니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "TurboDiffusion: Accelerating Video Diffusion Models by 100-200 Times",
+    "abstract": "We introduce TurboDiffusion, a video generation acceleration framework that can speed up end-to-end diffusion generation by 100-200x while maintaining video quality. TurboDiffusion mainly relies on several components for acceleration: (1) Attention acceleration: TurboDiffusion uses low-bit SageAttention and trainable Sparse-Linear Attention (SLA) to speed up attention computation. (2) Step distillation: TurboDiffusion adopts rCM for efficient step distillation. (3) W8A8 quantization: TurboDiffusion quantizes model parameters and activations to 8 bits to accelerate linear layers and compress the model. In addition, TurboDiffusion incorporates several other engineering optimizations.\n  We conduct experiments on the Wan2.2-I2V-14B-720P, Wan2.1-T2V-1.3B-480P, Wan2.1-T2V-14B-720P, and Wan2.1-T2V-14B-480P models. Experimental results show that TurboDiffusion achieves 100-200x speedup for video generation even on a single RTX 5090 GPU, while maintaining comparable video quality. The GitHub repository, which includes model checkpoints and easy-to-use code, is available at https://github.com/thu-ml/TurboDiffusion.",
+    "authors": [
+      "Jintao Zhang",
+      "Kaiwen Zheng",
+      "Kai Jiang",
+      "Haoxu Wang",
+      "Ion Stoica",
+      "Joseph E. Gonzalez",
+      "Jianfei Chen",
+      "Jun Zhu"
+    ],
+    "likes": 63,
+    "published_date": "Dec 18",
+    "url": "https://huggingface.co/papers/2512.16093",
+    "date_collected": "2025-12-27T07:08:25.324208+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "TurboDiffusion: 비디오 확산 모델 가속화 100-200배",
+      "abstract": "우리는 비디오 생성 가속화 프레임워크 TurboDiffusion을 소개합니다. TurboDiffusion은 비디오 품질을 유지하면서 종단간 확산 생성을 100-200배 가속할 수 있습니다. TurboDiffusion은 주로 여러 구성 요소에 의존합니다: (1) 주의력 가속화: TurboDiffusion은 저비트 SageAttention 및 학습 가능한 희박 선형 주의 (SLA)를 사용하여 주의 계산을 가속화합니다. (2) 단계 증류: TurboDiffusion은 효율적인 단계 증류를 위해 rCM을 채용합니다. (3) W8A8 양자화: TurboDiffusion은 모델 매개변수 및 활성화를 8비트로 양자화하여 선형 계층을 가속화하고 모델을 압축합니다. 게다가, TurboDiffusion은 여러 다른 엔지니어링 최적화를 통합합니다."
+    },
+    "summary": "1. TurboDiffusion은 비디오 생성 속도를 100-200배 가속하면서 비교 가능한 비디오 품질을 유지합니다.\n2. 주요 가속화 구성 요소로는 주의력 가속화, 단계 증류, 그리고 W8A8 양자화가 포함됩니다.\n3. 실험 결과는 TurboDiffusion이 Wan2.2-I2V-14B-720P, Wan2.1-T2V-1.3B-480P, Wan2.1-T2V-14B-720P, Wan2.1-T2V-14B-480P 모델에서 싱글 RTX 5090 GPU에서도 100-200배 속도 향상을 이루는 것을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Robust-R1: Degradation-Aware Reasoning for Robust Visual Understanding",
+    "abstract": "Multimodal Large Language Models struggle to maintain reliable performance under extreme real-world visual degradations, which impede their practical robustness. Existing robust MLLMs predominantly rely on implicit training/adaptation that focuses solely on visual encoder generalization, suffering from limited interpretability and isolated optimization. To overcome these limitations, we propose Robust-R1, a novel framework that explicitly models visual degradations through structured reasoning chains. Our approach integrates: (i) supervised fine-tuning for degradation-aware reasoning foundations, (ii) reward-driven alignment for accurately perceiving degradation parameters, and (iii) dynamic reasoning depth scaling adapted to degradation intensity. To facilitate this approach, we introduce a specialized 11K dataset featuring realistic degradations synthesized across four critical real-world visual processing stages, each annotated with structured chains connecting degradation parameters, perceptual influence, pristine semantic reasoning chain, and conclusion. Comprehensive evaluations demonstrate state-of-the-art robustness: Robust-R1 outperforms all general and robust baselines on the real-world degradation benchmark R-Bench, while maintaining superior anti-degradation performance under multi-intensity adversarial degradations on MMMB, MMStar, and RealWorldQA.",
+    "authors": [
+      "Jiaqi Tang",
+      "Jianmin Chen",
+      "Wei Wei",
+      "Xiaogang Xu",
+      "Runtao Liu",
+      "Xiangyu Wu",
+      "Qipeng Xie",
+      "Jiafei Wu",
+      "Lei Zhang",
+      "Qifeng Chen"
+    ],
+    "likes": 62,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17532",
+    "date_collected": "2025-12-27T07:08:25.325568+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "강인한 시각 이해를 위한 강인한 이유 추론",
+      "abstract": "다중 모달 대규모 언어 모델은 극단적인 실제 세계 시각적 저하 상황에서 신뢰할 만한 성능 유지에 어려움을 겪으며 실용적인 강인성에 방해가 됩니다. 기존의 강인한 다중 모달 대규모 언어 모델은 주로 시각 인코더 일반화에만 초점을 맞춘 암묵적 훈련/적응에 의존하고 있으며 해석 가능성과 고립된 최적화에 제약이 있습니다. 이러한 제약을 극복하기 위해, 우리는 시각 저하를 명시적으로 모델링하는 새로운 프레임워크인 Robust-R1을 제안합니다."
+    },
+    "summary": "1. Robust-R1은 시각적 저하를 구조화된 추론 체인을 통해 명시적으로 모델링하며 강인성을 향상시키기 위해 감독된 파인튜닝, 보상 주도적 정렬, 저하 강도에 맞게 조절된 동적 추론 깊이 확장을 통합합니다.\n2. 새로운 11K 데이터셋을 활용하여 실제 세계 시각적 처리 단계에서 핵심적인 사실적 저하를 포함한 실제적인 저하를 신속하게 연결하는 구조화된 체인으로 주석이 달린 데이터를 제공합니다.\n3. Robust-R1은 실제 세계의 저하 벤치마크인 R-Bench에서 모든 일반 및 강인한 기준을 능가하고 MMMB, MMStar, RealWorldQA에서 다중 강도의 적대적 저하에 대한 우수한 대처 성능을 유지합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "The Prism Hypothesis: Harmonizing Semantic and Pixel Representations via Unified Autoencoding",
+    "abstract": "Deep representations across modalities are inherently intertwined. In this paper, we systematically analyze the spectral characteristics of various semantic and pixel encoders. Interestingly, our study uncovers a highly inspiring and rarely explored correspondence between an encoder's feature spectrum and its functional role: semantic encoders primarily capture low-frequency components that encode abstract meaning, whereas pixel encoders additionally retain high-frequency information that conveys fine-grained detail. This heuristic finding offers a unifying perspective that ties encoder behavior to its underlying spectral structure. We define it as the Prism Hypothesis, where each data modality can be viewed as a projection of the natural world onto a shared feature spectrum, just like the prism. Building on this insight, we propose Unified Autoencoding (UAE), a model that harmonizes semantic structure and pixel details via an innovative frequency-band modulator, enabling their seamless coexistence. Extensive experiments on ImageNet and MS-COCO benchmarks validate that our UAE effectively unifies semantic abstraction and pixel-level fidelity into a single latent space with state-of-the-art performance.",
+    "authors": [
+      "Weichen Fan",
+      "Haiwen Diao",
+      "Quan Wang",
+      "Dahua Lin",
+      "Ziwei Liu"
+    ],
+    "likes": 60,
+    "published_date": "Dec 22",
+    "url": "https://huggingface.co/papers/2512.19693",
+    "date_collected": "2025-12-27T07:08:25.326696+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "프리즘 가설: 통합된 오토인코더를 통해 의미론적 및 픽셀 표현 조화시키기",
+      "abstract": "다양한 의미론적 및 픽셀 인코더의 스펙트럼 특성을 체계적으로 분석합니다. 우리의 연구는 인코더의 특성 스펙트럼과 기능적 역할 간의 흥미로운 상응성을 발견했습니다. 이런 발견은 프리즘 가설로 정의되며 각 데이터의 특징 스펙트럼에 자연적 세계의 사영으로 볼 수 있다는 관점을 제시합니다. 이를 기반으로 우리는 의미론적 구조와 픽셀 세부 정보를 조화롭게 하는 UAE(Unified Autoencoding) 모델을 제안하였습니다."
+    },
+    "summary": "1. 의미론적과 픽셀 레벨 표현을 통합하기 위한 프리즘 가설 제시\n2. UAE 모델 도입을 통해 의미론적 추상화와 픽셀 수준의 정확성을 효과적으로 통합하는 방법 제시\n3. ImageNet 및 MS-COCO에서의 실험을 통해 UAE가 최신 기술 성능을 달성하며 의미와 디테일을 통합하는 능력을 입증함",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Bottom-up Policy Optimization: Your Language Model Policy Secretly Contains Internal Policies",
+    "abstract": "Existing reinforcement learning (RL) approaches treat large language models (LLMs) as a single unified policy, overlooking their internal mechanisms. Understanding how policy evolves across layers and modules is therefore crucial for enabling more targeted optimization and raveling out complex reasoning mechanisms. In this paper, we decompose the language model policy by leveraging the intrinsic split of the Transformer residual stream and the equivalence between the composition of hidden states with the unembedding matrix and the resulting samplable policy. This decomposition reveals Internal Layer Policies, corresponding to contributions from individual layers, and Internal Modular Policies, which align with the self-attention and feed-forward network (FFN) components within each layer. By analyzing the entropy of internal policy, we find that: (a) Early layers keep high entropy for exploration, top layers converge to near-zero entropy for refinement, with convergence patterns varying across model series. (b) LLama's prediction space rapidly converges in the final layer, whereas Qwen-series models, especially Qwen3, exhibit a more human-like, progressively structured reasoning pattern. Motivated by these findings, we propose Bottom-up Policy Optimization (BuPO), a novel RL paradigm that directly optimizes the internal layer policy during early training. By aligning training objective at lower layer, BuPO reconstructs foundational reasoning capabilities and achieves superior performance. Extensive experiments on complex reasoning benchmarks demonstrates the effectiveness of our method. Our code is available at https://github.com/Trae1ounG/BuPO.",
+    "authors": [
+      "Yuqiao Tan",
+      "Minzheng Wang",
+      "Shizhu He",
+      "Huanxuan Liao",
+      "Chengfeng Zhao",
+      "Qiunan Lu",
+      "Tian Liang",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "likes": 59,
+    "published_date": "Dec 22",
+    "url": "https://huggingface.co/papers/2512.19673",
+    "date_collected": "2025-12-27T07:08:25.328000+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "하향식 정책 최적화: 여러분의 언어 모델 정책은 내부 정책을 비밀리에 포함하고 있습니다",
+      "abstract": "기존의 강화학습 (RL) 방법은 대규모 언어 모델 (LLM)을 하나의 통합된 정책으로 취급하여 내부 메커니즘을 무시합니다. 정책이 계층과 모듈 간에 어떻게 진화하는지 이해하는 것은 더 명확한 최적화를 가능케 하고 복잡한 추론 메커니즘을 해결하는 데 중요합니다. 본 논문에서 우리는 Transformer 잔여 스트림의 본질적 분할과 숨어있는 행렬과의 은포함 사이의 합동성을 활용하여 언어 모델 정책을 분해합니다. 이 분해는 각 계층의 기여와 각 계층 내의 self-attention과 feed-forward network (FFN) 구성요소에 해당하는 내부 정책을 드러냅니다. 내부 정책의 엔트로피를 분석함으로써, 다음을 발견했습니다:  (a) 초기 계층은 탐색을 위해 높은 엔트로피를 유지하고, 상위 계층은 정제를 위해 거의 제로 엔트로피에 수렴하며, 수렴 패턴은 모델 시리즈에 따라 다릅니다. (b) LLama의 예측 공간은 최종 계층에서 신속하게 수렴하는 반면, 특히 Qwen3 모델은 점진적으로 구조화된 추론 패턴을 나타냅니다. 이러한 발견을 바탕으로, 우리는 하향식 정책 최적화 (BuPO)를 제안합니다. 이것은 초기 훈련 단계에서 내부 계층 정책을 직접 최적화하는 새로운 RL 패러다임입니다. 하위 계층에서 훈련 목표를 정렬함으로써, BuPO는 기초적 추론 능력을 재구성하고 우수한 성능을 달성합니다. 복잡한 추론 평가에서의 다양한 실험은 우리 방법의 효율성을 입증합니다. 우리의 코드는 https://github.com/Trae1ounG/BuPO에서 확인할 수 있습니다."
+    },
+    "summary": "1. 기존 강화학습 방법에서는 언어 모델의 내부 메커니즘을 무시하는데, 본 논문에서는 내부 계층 정책을 분해하여 정책이 어떻게 진화하는지 분석함.\n2. 내부 정책의 엔트로피를 분석한 결과, 초기 계층은 탐색을 위해 높은 엔트로피를 유지하고 상위 계층은 정제를 위해 제로 엔트로피에 수렴함을 발견함.\n3. 제안된 하향식 정책 최적화 (BuPO)는 내부 계층 정책을 최적화하여 성능을 향상시키며, 복잡한 추론 평가에서 효과를 입증함.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "When Reasoning Meets Its Laws",
+    "abstract": "Despite the superior performance of Large Reasoning Models (LRMs), their reasoning behaviors are often counterintuitive, leading to suboptimal reasoning capabilities. To theoretically formalize the desired reasoning behaviors, this paper presents the Laws of Reasoning (LoRe), a unified framework that characterizes intrinsic reasoning patterns in LRMs. We first propose compute law with the hypothesis that the reasoning compute should scale linearly with question complexity. Beyond compute, we extend LoRe with a supplementary accuracy law. Since the question complexity is difficult to quantify in practice, we examine these hypotheses by two properties of the laws, monotonicity and compositionality. We therefore introduce LoRe-Bench, a benchmark that systematically measures these two tractable properties for large reasoning models. Evaluation shows that most reasoning models exhibit reasonable monotonicity but lack compositionality. In response, we develop an effective finetuning approach that enforces compute-law compositionality. Extensive empirical studies demonstrate that better compliance with compute laws yields consistently improved reasoning performance on multiple benchmarks, and uncovers synergistic effects across properties and laws. Project page: https://lore-project.github.io/",
+    "authors": [
+      "Junyu Zhang",
+      "Yifan Sun",
+      "Tianang Leng",
+      "Jingyan Shen",
+      "Liu Ziyin",
+      "Paul Pu Liang",
+      "Huan Zhang"
+    ],
+    "likes": 54,
+    "published_date": "Dec 19",
+    "url": "https://huggingface.co/papers/2512.17901",
+    "date_collected": "2025-12-27T07:08:25.329205+09:00",
+    "week": "2025-W52",
+    "translation": {
+      "title": "추론과 그의 법칙",
+      "abstract": "대용량 추론 모델(LRMs)의 우수한 성능에도 불구하고, 그들의 추론 행위는 종종 직관에 반하는데, 이는 최적의 추론 능력을 제한한다. 이 논문은 원하는 추론 행위를 이론적으로 형식화하기 위해 추론의 법칙(LoRe)이라는 내재 추론 패턴을 특징화하는 통합된 프레임워크를 제안한다. 먼저, 우리는 추론 연산이 질문 복잡도와 선형적으로 상관될 것이라는 가설을 내세워 계산법을 제안한다. 계산 외에도, 우리는 부가 정확도 법칙을 LoRe에 추가한다. 실제로 질문의 복잡도를 어렵게 정량화하기 때문에, 우리는 두 법칙의 성질인 단조성과 합성성으로 이러한 가설을 검토한다. 따라서 우리는 대용량 추론 모델을 위해 이 두 가시적인 성질을 체계적으로 측정하는 벤치마크인 LoRe-Bench를 소개한다. 평가 결과, 대부분의 추론 모델이 합리적인 단조성을 보이지만 합성성이 부족하다. 이에 대응하여, 추론 연산 법칙 합성성을 강화하는 효과적인 세부조정 접근 방식을 개발한다. 광범위한 경험적 연구는 계산 법칙 준수가 여러 벤치마크에 걸쳐 꾸준히 향상된 추론 성능을 제공하며, 성질과 법칙 간의 상호작용 효과를 밝혀낸다. 프로젝트 페이지: https://lore-project.github.io/"
+    },
+    "summary": "1. 대용량 추론 모델의 내재 추론 패턴을 특징화하는 추론의 법칙(LoRe) 프레임워크를 제안함.\n2. LoRe를 이용해 계산법과 정확도 법칙을 제안하고, 추론 모델의 성질인 단조성과 합성성을 검토하는 LoRe-Bench 벤치마크를 도입함.\n3. 추론 연산 법칙 합성성을 강화하는 효과적인 세부조정 접근 방식을 개발하고, 계산법 준수가 추론 성능 향상을 가져오며 성질과 법칙 간 상호작용 효과를 발견함.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

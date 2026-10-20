@@ -1,0 +1,113 @@
+=== Paper Collection Started at Tue Jun 23 22:34:17 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W26
+URL: https://huggingface.co/papers/week/2026-W26
+Found 10 papers in weekly view
+Fetching likes for: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Fetching likes for: OpenRath: Session-Centered Runtime State for Agent Systems
+Fetching likes for: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Fetching likes for: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Fetching likes for: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Fetching likes for: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Fetching likes for: KaLM-Reranker-V1: Fast but Not Late Interaction for Compressed Document Reranking
+Fetching likes for: World Action Models: A Survey
+Fetching likes for: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Fetching likes for: CLI-Universe: Towards Verifiable Task Synthesis Engine for Terminal Agents
+Selected top 10 papers by likes:
+1. PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems (78 likes)
+2. OpenRath: Session-Centered Runtime State for Agent Systems (68 likes)
+3. DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams (65 likes)
+4. EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions (56 likes)
+5. PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models (55 likes)
+6. Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention (42 likes)
+7. KaLM-Reranker-V1: Fast but Not Late Interaction for Compressed Document Reranking (39 likes)
+8. World Action Models: A Survey (37 likes)
+9. MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision (36 likes)
+10. CLI-Universe: Towards Verifiable Task Synthesis Engine for Terminal Agents (27 likes)
+Found abstract: LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering...
+Processed paper: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Found abstract: Modern agent systems often suffer from fragmented runtime state: transcripts, tool effects, memory e...
+Processed paper: OpenRath: Session-Centered Runtime State for Agent Systems
+Found abstract: Massive unstructured multimodal streams suffer from high "data entropy," impeding both efficient hum...
+Processed paper: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Found abstract: Enterprise agents increasingly operate inside workspaces: they read heterogeneous files, invoke tool...
+Processed paper: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Found abstract: Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding t...
+Processed paper: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Found abstract: Self-attention is central to Transformer performance and is often the most expensive part of the Tra...
+Processed paper: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Found abstract: As retrieval systems scale, high-quality reranking becomes increasingly important. However, most exi...
+Processed paper: KaLM-Reranker-V1: Fast but Not Late Interaction for Compressed Document Reranking
+Found abstract: World Action Models (WAMs) are embodied predictive-action models that make a forecast of the future ...
+Processed paper: World Action Models: A Survey
+Found abstract: Personalized presentation generation requires more than conditioning on a current prompt or template...
+Processed paper: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Found abstract: While recent LLM-based terminal agents have demonstrated promising capabilities, the scarcity of hig...
+Processed paper: CLI-Universe: Towards Verifiable Task Synthesis Engine for Terminal Agents
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: OpenRath: Session-Centered Runtime State for Agent Systems
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 55  ->  50
+Update date_collected: 2026-06-24T07:34:25.588810+09:00  ->  2026-06-23T07:39:47.011303+09:00
+
+Processing paper 6/10
+Title: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: KaLM-Reranker-V1: Fast but Not Late Interaction for Compressed Document Reranking
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: World Action Models: A Survey
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Paper already exists, checking if translation is complete...
+Update likes: 36  ->  14
+Update date_collected: 2026-06-24T07:34:25.598157+09:00  ->  2026-06-23T07:39:47.013494+09:00
+
+Processing paper 10/10
+Title: CLI-Universe: Towards Verifiable Task Synthesis Engine for Terminal Agents
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W26.json...
+
+Updating Notion database...
+Creating new paper: PlanBench-XL: 대규모 도구 생태계에서 LLM 도구 사용 에이전트의 장기 계획 평가
+Creating new paper: OpenRath: 에이전트 시스템을 위한 세션 중심 런타임 상태
+Creating new paper: 데이터클로우0: 원시 스트림으로부터 다양한 유형의 데이터를 개체적으로 조정
+Creating new paper: 기업 작업 세션에서 에이전트들을 벤치마킹하는 EnterpriseClawBench
+Updating paper: PerceptionDLM: 병렬 영역 인식을 위한 다중모달 확산 언어 모델 (likes: 50 -> 55)
+Creating new paper: 그룹화된 쿼리 전문가: GQA Self-Attention의 전문가 혼합
+Creating new paper: KaLM-Reranker-V1: 압축 문서 재랭킹을 위한 빠르지만 늦은 상호작용
+Creating new paper: 세계 행동 모델: 서론
+Updating paper: MemSlides: 사용자 지향 프레젠테이션 슬라이드 생성을 위한 계층적 메모리 주도 에이전트 프레임워크 (likes: 14 -> 36)
+Creating new paper: CLI-Universe: 터미널 에이전트를 위한 검증 가능한 작업 합성 엔진으로
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jun 23 22:35:55 UTC 2026 ===
+

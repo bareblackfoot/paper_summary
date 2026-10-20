@@ -1,0 +1,358 @@
+[
+  {
+    "title": "A Survey of Scientific Large Language Models: From Data Foundations to\n  Agent Frontiers",
+    "abstract": "Scientific Large Language Models (Sci-LLMs) are transforming how knowledge is\nrepresented, integrated, and applied in scientific research, yet their progress\nis shaped by the complex nature of scientific data. This survey presents a\ncomprehensive, data-centric synthesis that reframes the development of Sci-LLMs\nas a co-evolution between models and their underlying data substrate. We\nformulate a unified taxonomy of scientific data and a hierarchical model of\nscientific knowledge, emphasizing the multimodal, cross-scale, and\ndomain-specific challenges that differentiate scientific corpora from general\nnatural language processing datasets. We systematically review recent Sci-LLMs,\nfrom general-purpose foundations to specialized models across diverse\nscientific disciplines, alongside an extensive analysis of over 270\npre-/post-training datasets, showing why Sci-LLMs pose distinct demands --\nheterogeneous, multi-scale, uncertainty-laden corpora that require\nrepresentations preserving domain invariance and enabling cross-modal\nreasoning. On evaluation, we examine over 190 benchmark datasets and trace a\nshift from static exams toward process- and discovery-oriented assessments with\nadvanced evaluation protocols. These data-centric analyses highlight persistent\nissues in scientific data development and discuss emerging solutions involving\nsemi-automated annotation pipelines and expert validation. Finally, we outline\na paradigm shift toward closed-loop systems where autonomous agents based on\nSci-LLMs actively experiment, validate, and contribute to a living, evolving\nknowledge base. Collectively, this work provides a roadmap for building\ntrustworthy, continually evolving artificial intelligence (AI) systems that\nfunction as a true partner in accelerating scientific discovery.",
+    "authors": [
+      "Ming Hu",
+      "Chenglong Ma",
+      "Wei Li",
+      "Wanghan Xu",
+      "Jiamin Wu",
+      "Jucheng Hu",
+      "Tianbin Li",
+      "Guohang Zhuang",
+      "Jiaqi Liu",
+      "Yingzhou Lu",
+      "Ying Chen",
+      "Chaoyang Zhang",
+      "Cheng Tan",
+      "Jie Ying",
+      "Guocheng Wu",
+      "Shujian Gao",
+      "Pengcheng Chen",
+      "Jiashi Lin",
+      "Haitao Wu",
+      "Lulu Chen",
+      "Fengxiang Wang",
+      "Yuanyuan Zhang"
+    ],
+    "likes": 122,
+    "published_date": "Aug 28",
+    "url": "https://huggingface.co/papers/2508.21148",
+    "date_collected": "2025-09-05T07:07:24.305949+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "과학적 대규모 언어 모델 조사: 데이터 기초부터 에이전트 전선까지",
+      "abstract": "과학적 대규모 언어 모델(Sci-LLMs)은 과학 연구에서 지식이 표현되고 통합되며 적용되는 방식을 변형시키고 있으나 그 진전은 과학적 데이터의 복잡성에 의해 결정된다. 본 조사는 Sci-LLMs의 발전을 모델과 그들의 기본 데이터 하부에서 상호 발전으로 설계하는 자료 중심의 종합적인 합성을 제시한다. 우리는 과학적 데이터의 통합된 분류법과 과학적 지식의 분류된 모델을 공식화하여, 과학적 말뭉치를 일반 자연어 처리 자료와 구분하는 다중 모달, 교차-규모 및 도메인 특정 도전을 강조한다."
+    },
+    "summary": "1. 이 논문은 과학적 대규모 언어 모델의 발전을 데이터와의 상호작용으로 다루며, 과학적 데이터의 다중 모달, 교차-규모, 도메인 특이 도전에 집중한다.\n2. 다양한 과학 분야에 걸쳐 일반적인 기초부터 특화된 모델까지 최근의 Sci-LLMs를 체계적으로 검토하고, 270여 개의 사전/사후 훈련 데이터셋을 분석하여 Sci-LLMs가 독특한 요구를 제기하는 이유를 보여준다.\n3. 190여 개의 벤치마크 데이터셋을 평가하고, 과학 데이터 개발에서 지속적인 문제를 강조하며, 자가 자동화된 주석 파이프라인과 전문가 검증을 포함한 신흥 솔루션에 대해 논의한다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs\n  via Bi-Mode Annealing and Reinforce Learning",
+    "abstract": "Multimodal Large Language Models (MLLMs) equipped with step-by-step thinking\ncapabilities have demonstrated remarkable performance on complex reasoning\nproblems. However, this thinking process is redundant for simple problems\nsolvable without complex reasoning. To address this inefficiency, we propose\nR-4B, an auto-thinking MLLM, which can adaptively decide when to think based on\nproblem complexity. The central idea of R-4B is to empower the model with both\nthinking and non-thinking capabilities using bi-mode annealing, and apply\nBi-mode Policy Optimization~(BPO) to improve the model's accuracy in\ndetermining whether to activate the thinking process. Specifically, we first\ntrain the model on a carefully curated dataset spanning various topics, which\ncontains samples from both thinking and non-thinking modes. Then it undergoes a\nsecond phase of training under an improved GRPO framework, where the policy\nmodel is forced to generate responses from both modes for each input query.\nExperimental results show that R-4B achieves state-of-the-art performance\nacross 25 challenging benchmarks. It outperforms Qwen2.5-VL-7B in most tasks\nand achieves performance comparable to larger models such as\nKimi-VL-A3B-Thinking-2506 (16B) on reasoning-intensive benchmarks with lower\ncomputational cost.",
+    "authors": [
+      "Jie Jiang",
+      "Qi Yang",
+      "Bolin Ni",
+      "Shiming Xiang",
+      "Han Hu",
+      "Houwen Peng"
+    ],
+    "likes": 102,
+    "published_date": "Aug 28",
+    "url": "https://huggingface.co/papers/2508.21113",
+    "date_collected": "2025-09-05T07:07:24.307152+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "MLLM에서 양상 결합 앤닐링과 강화 학습을 통해 일반용 자동 사고 능력을 장려하는 R-4B",
+      "abstract": "단계별 사고 능력을 갖춘 다중 모달 대규모 언어 모델(MLLMs)은 복잡한 추론 문제에 뛰어난 성과를 보여주었습니다. 그러나 이러한 사고 과정은 복잡한 추론 없이 해결할 수 있는 간단한 문제에 대해 중복됩니다. 이 비효율성을 해결하기 위해 우리는 R-4B를 제안합니다. R-4B는 문제 복잡성에 기초하여 사고할 때를 적응적으로 결정할 수 있는 자동 사고 MLLM입니다. R-4B의 중심 아이디어는 이중 양상 결합을 통해 모델에 사고 및 비사고 능력을 부여하고 양상 정책 최적화(BPO)를 적용하여 모델의 정확도를 향상시킵니다."
+    },
+    "summary": "1. 다중 모달 대규모 언어 모델(MLLM)인 R-4B는 문제의 복잡성에 따라 사고를 활성화할지를 결정함으로써 일반용 자동 사고 능력을 갖추었습니다.\n2. 대규모의 최신 벤치마크에서 R-4B는 Qwen2.5-VL-7B보다 대부분의 작업에서 뛰어난 성능을 보이며 계산 비용이 낮은 규모가 큰 Kimi-VL-A3B-Thinking-2506 (16B)와 유사한 성능을 달성했습니다.\n3. 실험 결과는 R-4B가 25개의 어려운 벤치마크에서 산업 최고 수준의 성능을 달성함을 보여주며, 각 입력 쿼리에 대해 모델이 양상을 모두 생성하도록 강화된 GRPO 프레임워크에서 모델을 훈련했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+    "abstract": "The emergence of agentic reinforcement learning (Agentic RL) marks a paradigm\nshift from conventional reinforcement learning applied to large language models\n(LLM RL), reframing LLMs from passive sequence generators into autonomous,\ndecision-making agents embedded in complex, dynamic worlds. This survey\nformalizes this conceptual shift by contrasting the degenerate single-step\nMarkov Decision Processes (MDPs) of LLM-RL with the temporally extended,\npartially observable Markov decision processes (POMDPs) that define Agentic RL.\nBuilding on this foundation, we propose a comprehensive twofold taxonomy: one\norganized around core agentic capabilities, including planning, tool use,\nmemory, reasoning, self-improvement, and perception, and the other around their\napplications across diverse task domains. Central to our thesis is that\nreinforcement learning serves as the critical mechanism for transforming these\ncapabilities from static, heuristic modules into adaptive, robust agentic\nbehavior. To support and accelerate future research, we consolidate the\nlandscape of open-source environments, benchmarks, and frameworks into a\npractical compendium. By synthesizing over five hundred recent works, this\nsurvey charts the contours of this rapidly evolving field and highlights the\nopportunities and challenges that will shape the development of scalable,\ngeneral-purpose AI agents.",
+    "authors": [
+      "Guibin Zhang",
+      "Hejia Geng",
+      "Xiaohang Yu",
+      "Zhenfei Yin",
+      "Zaibin Zhang",
+      "Zelin Tan",
+      "Heng Zhou",
+      "Zhongzhi Li",
+      "Xiangyuan Xue",
+      "Yijiang Li",
+      "Yifan Zhou",
+      "Yang Chen",
+      "Chen Zhang",
+      "Yutao Fan",
+      "Zihu Wang",
+      "Songtao Huang",
+      "Yue Liao",
+      "Hongru Wang",
+      "Mengyue Yang",
+      "Heng Ji",
+      "Michael Littman",
+      "Jun Wang"
+    ],
+    "likes": 101,
+    "published_date": "Sep 2",
+    "url": "https://huggingface.co/papers/2509.02547",
+    "date_collected": "2025-09-05T07:07:24.309008+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "LLM을 위한 에이전틱 강화학습의 풍경: 조사",
+      "abstract": "에이전틱 강화학습(Agentic RL)의 등장은 대형 언어 모델(LLM)에 적용된 일반적인 강화학습에서 패러다임의 전환을 의미하며, LLM을 수동적인 시퀀스 생성자에서 복잡하고 동적인 세계에 내재된 자율적인 의사결정 주체로 재평가한다. 본 조사는 이 개념적 전환을 고찰하기 위해 LLM-RL의 퇴보적인 단계별 마르코프 결정 프로세스(MDPs)를 에이전틱 RL을 정의하는 시간적으로 확대된 부분적으로 관측 가능한 마르코프 의사 결정 프로세스(POMDPs)와 대조함으로써 이를 형식화한다. 이 기반 위에 우리는 계획, 도구 사용, 기억, 추론, 자가 개선, 지각 등 핵심 에이전틱 능력을 중심으로 구성된 이분류 체계를 제안하며, 이를 다양한 작업 영역에 대한 응용을 중심으로 한 다른 체계와 구분한다. 우리 논문의 핵심은 강화학습이 이러한 능력을 정적이고 주관적인 모듈에서 적응적이고 견고한 에이전틱 행동으로 변환하는 데 있음을 강조한다. 미래 연구를 지원하고 가속화하기 위해 우리는 오픈소스 환경, 벤치마크, 프레임워크의 풍경을 실용적인 백과사전으로 통합한다. 이 조사는 500편 가까운 최근 연구들을 종합함으로써 이 급속히 발전하는 분야의 윤곽을 그리고 확장 가능하고 일반화된 AI 에이전트의 발전을 결정짓을 기회와 도전을 강조한다."
+    },
+    "summary": "1. 에이전틱 강화학습은 LLM을 패러다임의 전환이며, 강화학습은 에이전트의 행동으로 변화시킨다.\n2. 논문은 핵심 에이전틱 능력과 그것들의 다양한 작업 영역에 대한 분류를 제안한다.\n3. 오픈소스 환경, 벤치마크, 프레임워크에 관한 실용적인 정보를 종합하여 미래 연구 지원을 도모하고 AI 에이전트의 발전 방향을 제시한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn\n  Reinforcement Learning",
+    "abstract": "The development of autonomous agents for graphical user interfaces (GUIs)\npresents major challenges in artificial intelligence. While recent advances in\nnative agent models have shown promise by unifying perception, reasoning,\naction, and memory through end-to-end learning, open problems remain in data\nscalability, multi-turn reinforcement learning (RL), the limitations of\nGUI-only operation, and environment stability. In this technical report, we\npresent UI-TARS-2, a native GUI-centered agent model that addresses these\nchallenges through a systematic training methodology: a data flywheel for\nscalable data generation, a stabilized multi-turn RL framework, a hybrid GUI\nenvironment that integrates file systems and terminals, and a unified sandbox\nplatform for large-scale rollouts. Empirical evaluation demonstrates that\nUI-TARS-2 achieves significant improvements over its predecessor UI-TARS-1.5.\nOn GUI benchmarks, it reaches 88.2 on Online-Mind2Web, 47.5 on OSWorld, 50.6 on\nWindowsAgentArena, and 73.3 on AndroidWorld, outperforming strong baselines\nsuch as Claude and OpenAI agents. In game environments, it attains a mean\nnormalized score of 59.8 across a 15-game suite-roughly 60% of human-level\nperformance-and remains competitive with frontier proprietary models (e.g.,\nOpenAI o3) on LMGame-Bench. Additionally, the model can generalize to\nlong-horizon information-seeking tasks and software engineering benchmarks,\nhighlighting its robustness across diverse agent tasks. Detailed analyses of\ntraining dynamics further provide insights into achieving stability and\nefficiency in large-scale agent RL. These results underscore UI-TARS-2's\npotential to advance the state of GUI agents and exhibit strong generalization\nto real-world interactive scenarios.",
+    "authors": [
+      "Haoming Wang",
+      "Haoyang Zou",
+      "Huatong Song",
+      "Jiazhan Feng",
+      "Junjie Fang",
+      "Junting Lu",
+      "Longxiang Liu",
+      "Qinyu Luo",
+      "Shihao Liang",
+      "Shijue Huang",
+      "Wanjun Zhong",
+      "Yining Ye",
+      "Yujia Qin",
+      "Yuwen Xiong",
+      "Yuxin Song",
+      "Zhiyong Wu",
+      "Bo Li",
+      "Chen Dun",
+      "Chong Liu",
+      "Fuxing Leng",
+      "Hanbin Wang",
+      "Hao Yu"
+    ],
+    "likes": 93,
+    "published_date": "Sep 2",
+    "url": "https://huggingface.co/papers/2509.02544",
+    "date_collected": "2025-09-05T07:07:24.310870+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "UI-TARS-2 기술 보고서: 다중 턴 강화학습을 통한 GUI 에이전트 발전",
+      "abstract": "그래픽 사용자 인터페이스(GUI)용 자율 에이전트 개발은 인공지능에서 주요 도전 과제를 제시합니다. 최근 네이티브 에이전트 모델의 발전은 지각, 추론, 행동, 기억을 종단 간의 학습을 통해 통합하여 약속을 보여 주었지만, 데이터 확장성, 다중 턴 강화학습(RL), GUI 전용 작동의 한계, 환경 안정성 등에 대한 여전한 문제가 남아 있습니다. 본 기술 보고서에서는 이러한 도전 과제에 대응하는 UI-TARS-2를 제시합니다. UI-TARS-2는 확장 가능한 데이터 생성을 위한 데이터 플라이휠, 안정화된 다중 턴 RL 프레임워크, 파일 시스템과 터미널을 통합한 하이브리드 GUI 환경, 대규모 롤아웃을 위한 통합된 샌드박스 플랫폼을 통해 이러한 도전 과제를 해결합니다. 경험적 평가 결과, UI-TARS-2는 이전 버전인 UI-TARS-1.5에 비해 상당한 개선을 이룩합니다. GUI 벤치마크에서는 Online-Mind2Web에서 88.2, OSWorld에서 47.5, WindowsAgentArena에서 50.6, AndroidWorld에서 73.3을 달성하여 Claude 및 OpenAI 에이전트와 같은 강력한 베이스라인을 능가했습니다. 게임 환경에서는 15게임 스위트 전반에 걸쳐 59.8의 평균 정규화 점수를 얻어 대략적으로 인간 수준의 성능의 60%를 달성하며 LMGame-Bench에서 Frontier 소유 모델(예: OpenAI o3)과의 경쟁력을 유지합니다. 또한, 이 모델은 장기적 정보 탐색 작업과 소프트웨어 엔지니어링 벤치마크로 일반화되어 다양한 에이전트 작업에서의 견고성을 강조하였습니다. 광범위한 에이전트 RL에서 안정성과 효율성을 달성하는 훈련 역학의 상세 분석은 UI-TARS-2의 GUI 에이전트 상태 발전 가능성을 강조하고 실제 상호작용 시나리오에서 강력한 일반화 능력을 짐작합니다."
+    },
+    "summary": "1. UI-TARS-2는 데이터 생성과 다중 턴 RL 기술을 향상시켜 GUI 에이전트의 발전에 기여합니다.\n2. GUI 벤치마크와 게임 환경에서 UI-TARS-2는 Claude 및 OpenAI 에이전트를 능가하며 안정성과 효율성에 강점을 보입니다.\n3. UI-TARS-2는 다양한 에이전트 작업과 소프트웨어 엔지니어링에서 뛰어난 일반화 능력을 발휘하여 GUI 에이전트 분야의 발전 가능성을 제시합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SimpleTIR: End-to-End Reinforcement Learning for Multi-Turn\n  Tool-Integrated Reasoning",
+    "abstract": "Large Language Models (LLMs) can significantly improve their reasoning\ncapabilities by interacting with external tools, a paradigm known as\nTool-Integrated Reasoning (TIR). However, extending TIR to multi-turn scenarios\nusing Reinforcement Learning (RL) is often hindered by training instability and\nperformance collapse. We identify that such instability is primarily caused by\na distributional drift from external tool feedback, leading to the generation\nof low-probability tokens. This issue compounds over successive turns, causing\ncatastrophic gradient norm explosions that derail the training process. To\naddress this challenge, we introduce SimpleTIR , a plug-and-play algorithm that\nstabilizes multi-turn TIR training. Its core strategy is to identify and filter\nout trajectories containing void turns, i.e., turns that yield neither a code\nblock nor a final answer. By removing these problematic trajectories from the\npolicy update, SimpleTIR effectively blocks the harmful, high-magnitude\ngradients, thus stabilizing the learning dynamics. Extensive experiments show\nthat SimpleTIR achieves state-of-the-art performance on challenging math\nreasoning benchmarks, notably elevating the AIME24 score from a text-only\nbaseline of 22.1 to 50.5 when starting from the Qwen2.5-7B base model.\nFurthermore, by avoiding the constraints of supervised fine-tuning, SimpleTIR\nencourages the model to discover diverse and sophisticated reasoning patterns,\nsuch as self-correction and cross-validation.",
+    "authors": [
+      "Zhenghai Xue",
+      "Longtao Zheng",
+      "Qian Liu",
+      "Yingru Li",
+      "Xiaosen Zheng",
+      "Zejun Ma",
+      "Bo An"
+    ],
+    "likes": 74,
+    "published_date": "Sep 2",
+    "url": "https://huggingface.co/papers/2509.02479",
+    "date_collected": "2025-09-05T07:07:24.312069+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "단순TIR: 다중 턴 툴 통합 추론을 위한 엔드투엔드 강화 학습",
+      "abstract": "대규모 언어 모델(LLMs)은 외부 도구와 상호 작용함으로써 추론 능력을 크게 향상시킬 수 있으며, 이를 툴 통합 추론(TIR) 패러다임이라고 합니다. 그러나 강화 학습(RL)을 사용하여 다중 턴 시나리오로 TIR을 확장하는 것은 종종 훈련 불안정성과 성능 하락으로 어렵습니다. 우리는 외부 도구 피드백으로 인한 분포 변화가 주로 원인이 되어 저확률 토큰을 생성한다고 파악하며, 이는 연속적인 턴을 거침에 따라 학습을 방해하는 치명적인 기울기 폭주를 일으킵니다. 이러한 도전에 대처하기 위해 우리는 다중 턴 TIR 훈련을 안정화하는 SimpleTIR 알고리즘을 소개합니다."
+    },
+    "summary": "1. SimpleTIR은 툴 통합 추론 작업에서 발생하는 훈련 불안정성 문제를 해결하기 위해 공허한 턴을 필터링하는 간편한 방법으로, 고평가된 수학 추론 벤치마크에서 우수한 성과를 달성합니다.\n2. SimpleTIR은 본질적으로 다양하고 정교한 추론 패턴을 발견하여 학습 프로세스를 안정화시키는데, 이는 감독된 세밀 조정의 제약을 피하도록 도와줍니다.\n3. SimpleTIR은 Qwen2.5-7B 기본 모델에서 시작하여 AIME24 점수를 22.1의 텍스트만을 사용한 기준으로 50.5로 높이는 최첨단 성능을 보입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for\n  General Robot Control",
+    "abstract": "The human ability to seamlessly perform multimodal reasoning and physical\ninteraction in the open world is a core goal for general-purpose embodied\nintelligent systems. Recent vision-language-action (VLA) models, which are\nco-trained on large-scale robot and visual-text data, have demonstrated notable\nprogress in general robot control. However, they still fail to achieve\nhuman-level flexibility in interleaved reasoning and interaction. In this work,\nintroduce EO-Robotics, consists of EO-1 model and EO-Data1.5M dataset. EO-1 is\na unified embodied foundation model that achieves superior performance in\nmultimodal embodied reasoning and robot control through interleaved\nvision-text-action pre-training. The development of EO-1 is based on two key\npillars: (i) a unified architecture that processes multimodal inputs\nindiscriminately (image, text, video, and action), and (ii) a massive,\nhigh-quality multimodal embodied reasoning dataset, EO-Data1.5M, which contains\nover 1.5 million samples with emphasis on interleaved vision-text-action\ncomprehension. EO-1 is trained through synergies between auto-regressive\ndecoding and flow matching denoising on EO-Data1.5M, enabling seamless robot\naction generation and multimodal embodied reasoning. Extensive experiments\ndemonstrate the effectiveness of interleaved vision-text-action learning for\nopen-world understanding and generalization, validated through a variety of\nlong-horizon, dexterous manipulation tasks across multiple embodiments. This\npaper details the architecture of EO-1, the data construction strategy of\nEO-Data1.5M, and the training methodology, offering valuable insights for\ndeveloping advanced embodied foundation models.",
+    "authors": [
+      "Delin Qu",
+      "Haoming Song",
+      "Qizhi Chen",
+      "Zhaoqing Chen",
+      "Xianqiang Gao",
+      "Xinyi Ye",
+      "Qi Lv",
+      "Modi Shi",
+      "Guanghui Ren",
+      "Cheng Ruan",
+      "Maoqing Yao",
+      "Haoran Yang",
+      "Jiacheng Bao",
+      "Bin Zhao",
+      "Dong Wang"
+    ],
+    "likes": 71,
+    "published_date": "Aug 28",
+    "url": "https://huggingface.co/papers/2508.21112",
+    "date_collected": "2025-09-05T07:07:24.313599+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "EmbodiedOneVision: 일반 로봇 제어를 위한 간섭된 비전-텍스트-행동 사전학습",
+      "abstract": "인간이 오픈 월드에서 다중 모달 추론과 물리적 상호작용을 매끄럽게 수행하는 능력은 일반 목적의 존재하는 지능 시스템에 대한 핵심 목표입니다. 최근 비전-언어-행동(VLA) 모델은 대규모 로봇 및 시각-텍스트 데이터에 공동으로 훈련된 모델로, 일반적인 로봇 제어에서 상당한 진전을 보여주었습니다. 그러나 이러한 모델은 여전히 간섭된 추론과 상호작용에서 인간 수준의 유연성을 달성하지 못합니다. 본 연구에서는 EO-Robotics를 소개합니다. 이는 EO-1 모델과 EO-Data1.5M 데이터 세트로 구성됩니다. EO-1은 간섭된 비전-텍스트-행동 사전학습을 통해 다중 모달 추론과 로봇 제어에서 우수한 성능을 달성하는 통합된 존재하는 기반 모델입니다."
+    },
+    "summary": "1. EO-Robotics는 EO-1 모델과 EO-Data1.5M 데이터 세트로 형성되며, 다중 모달 추론과 로봇 제어에서 우수한 성능을 가집니다.\n2. EO-1은 이미지, 텍스트, 비디오, 행동 등의 다중 모달 입력을 처리하는 통합된 아키텍처와, 1.5백만개 이상의 샘플을 포함하는 고품질 다중 모달 추론 데이터 세트인 EO-Data1.5M을 기반으로 개발되었습니다.\n3. EO-1은 EO-Data1.5M에서 자동 회귀 디코딩과 플로우 매칭 노이즈 제거의 시너지를 통해 훈련되어, 로봇 행동 생성과 다중 모달 추론을 매끄럽게 수행하며 오픈 월드 이해와 일반화에 효과적입니다.",
+    "categories": [
+      "Multimodal",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model",
+    "abstract": "In vision-language modeling, critic models are typically trained to evaluate\noutputs -- assigning scalar scores or pairwise preferences -- rather than to\ngenerate responses. This separation from policy models, which produce the\nresponses, is so entrenched that critics are rarely considered for direct\npolicy use. In this work, we challenge this convention. We propose to\nreorganize preference-labeled critic datasets into verifiable training signals\nand perform reinforcement learning directly on a base generative model,\nproducing LLaVA-Critic-R1, a multimodal critic trained to optimize preference\njudgments while retaining full generation ability. Surprisingly,\nLLaVA-Critic-R1 emerges not only as a top-performing critic but also as a\ncompetitive policy model -- matching or surpassing specialized reasoning VLMs\ntrained with in-domain data across 26 visual reasoning and understanding\nbenchmarks, with an average gain of +5.7% over its base model (Qwen-2.5-VL-7B).\nExtending this approach to existing strong reasoning VLMs yields\nLLaVA-Critic-R1+, which further advances policy performance without sacrificing\ncritic quality, achieving a SoTA performance of 71.9 on MMMU at the 7B scale.\nFinally, we show that the enhanced critic ability benefits inference: applying\nself-critique at test time yields an average +13.8% improvement on five\nrepresentative reasoning tasks without additional training. Our results reveal\nthat RL training on critic data can produce a unified model excelling at both\nevaluation and generation, offering a simple path toward scalable,\nself-improving multimodal systems.",
+    "authors": [
+      "Xiyao Wang",
+      "Chunyuan Li",
+      "Jianwei Yang",
+      "Kai Zhang",
+      "Bo Liu",
+      "Tianyi Xiong",
+      "Furong Huang"
+    ],
+    "likes": 70,
+    "published_date": "Aug 31",
+    "url": "https://huggingface.co/papers/2509.00676",
+    "date_collected": "2025-09-05T07:07:24.314841+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "LLaVA-Critic-R1: 당신의 평가 모델은 비밀로 강력한 정책 모델이었습니다",
+      "abstract": "시각-언어 모델링에서는 평가 모델이 일반적으로 응답을 생성하는 대신에 결과를 평가하도록 훈련됩니다. 우리는 이 전통에 도전하며 선호 레이블이 달린 평가 모델 데이터셋을 검증 가능한 훈련 신호로 재구성하고 강화 학습을 직접 기본 생성 모델에 적용하여 LLaVA-Critic-R1을 만들었습니다. 이 모델은 선호 판단을 최적화하는 멀티모달 평가자로 훈련되었지만 완전한 생성 능력을 유지합니다. LLaVA-Critic-R1은 놀랍게도 최고 성능의 평가자로 나타나 동시에 전문적인 추론 VLMs와 비교하여 26가지 시각적 추론 및 이해 벤치마크에서 +5.7%의 평균 이득을 기록하는 경쟁력 있는 정책 모델이 됩니다."
+    },
+    "summary": "1. LLaVA-Critic-R1은 선호 레이블 평가자 데이터를 활용하여 강화 학습을 통해 생성과 평가 능력을 동시에 최적화하는 모델로, 다른 VLMs를 능가하는 성능을 보여줍니다.\n2. 확장된 LLaVA-Critic-R1+는 정책 성능을 더욱 향상시키면서 평가자 품질을 유지하는데 성공하여 MMMU에서 뛰어난 성과를 거두었습니다.\n3. 향상된 평가자 능력은 추론에도 도움이 되며, 시험 시 자가 평가를 적용하면 추가 훈련 없이 대표적 추론 작업에서 평균 +13.8% 개선을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation",
+    "abstract": "Scaling laws have validated the success and promise of large-data-trained\nmodels in creative generation across text, image, and video domains. However,\nthis paradigm faces data scarcity in the 3D domain, as there is far less of it\navailable on the internet compared to the aforementioned modalities.\nFortunately, there exist adequate videos that inherently contain commonsense\npriors, offering an alternative supervisory signal to mitigate the\ngeneralization bottleneck caused by limited native 3D data. On the one hand,\nvideos capturing multiple views of an object or scene provide a spatial\nconsistency prior for 3D generation. On the other hand, the rich semantic\ninformation contained within the videos enables the generated content to be\nmore faithful to the text prompts and semantically plausible. This paper\nexplores how to apply the video modality in 3D asset generation, spanning\ndatasets to models. We introduce Droplet3D-4M, the first large-scale video\ndataset with multi-view level annotations, and train Droplet3D, a generative\nmodel supporting both image and dense text input. Extensive experiments\nvalidate the effectiveness of our approach, demonstrating its ability to\nproduce spatially consistent and semantically plausible content. Moreover, in\ncontrast to the prevailing 3D solutions, our approach exhibits the potential\nfor extension to scene-level applications. This indicates that the commonsense\npriors from the videos significantly facilitate 3D creation. We have\nopen-sourced all resources including the dataset, code, technical framework,\nand model weights: https://dropletx.github.io/.",
+    "authors": [
+      "Xiaochuan Li",
+      "Guoguang Du",
+      "Runze Zhang",
+      "Liang Jin",
+      "Qi Jia",
+      "Lihua Lu",
+      "Zhenhua Guo",
+      "Yaqian Zhao",
+      "Haiyang Liu",
+      "Tianqi Wang",
+      "Changsheng Li",
+      "Xiaoli Gong",
+      "Rengang Li",
+      "Baoyu Fan"
+    ],
+    "likes": 64,
+    "published_date": "Aug 28",
+    "url": "https://huggingface.co/papers/2508.20470",
+    "date_collected": "2025-09-05T07:07:24.316339+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "Droplet3D: 비디오로부터 유래된 상식 우선순위가 3D 생성을 용이하게 합니다",
+      "abstract": "스케일링 법칙은 대량 데이터로 훈련된 모델이 텍스트, 이미지 및 비디오 분야에서 창의적 생성에 성공하고 약속을 입증했습니다. 그러나 3D 영역에서는 인터넷에 앞서 언급된 모달리티에 비해 훨씬 더 적은 데이터가 있어 데이터 부족 문제에 직면합니다. 다행히 충분한 상식 우선순위를 내포하는 비디오가 존재하여, 이는 제한된 원시 3D 데이터로 인한 일반화 병목 현상을 완화하기 위한 대안 지도 신호를 제공합니다. 이 논문은 비디오 모달리티를 3D 자산 생성에 적용하는 방법을 탐구합니다."
+    },
+    "summary": "1. 3D 생성에서 상식 우선순위가 부족한 문제로 대규모 비디오 데이터셋 Droplet3D-4M을 도입하고, 이미지와 밀도 있는 텍스트 입력을 지원하는 생성 모델 Droplet3D를 훈련시켜 공간적 일관성과 의미론적으로 타당한 내용을 생성할 수 있음을 입증합니다.\n2. 비디오는 물체 또는 장면의 여러 관점을 포착하여 3D 생성에 공간적 일관성 우선순위를 제공하고, 비디오에 포함된 풍부한 의미 정보는 생성된 콘텐츠를 텍스트 프롬프트에 더 충실하고 의미론적으로 타당하게 만듭니다.\n3. 기존 3D 솔루션과 달리 이 방법론은 장면 수준 애플리케이션으로의 확장 가능성을 보여주며, 비디오로부터 비롯된 상식 우선순위가 3D 생성을 크게 용이하게 합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "A.S.E: A Repository-Level Benchmark for Evaluating Security in\n  AI-Generated Code",
+    "abstract": "The increasing adoption of large language models (LLMs) in software\nengineering necessitates rigorous security evaluation of their generated code.\nHowever, existing benchmarks are inadequate, as they focus on isolated code\nsnippets, employ unstable evaluation methods that lack reproducibility, and\nfail to connect the quality of input context with the security of the output.\nTo address these gaps, we introduce A.S.E (AI Code Generation Security\nEvaluation), a benchmark for repository-level secure code generation. A.S.E\nconstructs tasks from real-world repositories with documented CVEs, preserving\nfull repository context like build systems and cross-file dependencies. Its\nreproducible, containerized evaluation framework uses expert-defined rules to\nprovide stable, auditable assessments of security, build quality, and\ngeneration stability. Our evaluation of leading LLMs on A.S.E reveals three key\nfindings: (1) Claude-3.7-Sonnet achieves the best overall performance. (2) The\nsecurity gap between proprietary and open-source models is narrow;\nQwen3-235B-A22B-Instruct attains the top security score. (3) Concise,\n``fast-thinking'' decoding strategies consistently outperform complex,\n``slow-thinking'' reasoning for security patching.",
+    "authors": [
+      "Keke Lian",
+      "Bin Wang",
+      "Lei Zhang",
+      "Libo Chen",
+      "Junjie Wang",
+      "Ziming Zhao",
+      "Yujiu Yang",
+      "Haotong Duan",
+      "Haoran Zhao",
+      "Shuang Liao",
+      "Mingda Guo",
+      "Jiazheng Quan",
+      "Yilu Zhong",
+      "Chenhao He",
+      "Zichuan Chen",
+      "Jie Wu",
+      "Haoling Li",
+      "Zhaoxuan Li",
+      "Jiongchi Yu",
+      "Hui Li",
+      "Dong Zhang"
+    ],
+    "likes": 63,
+    "published_date": "Aug 25",
+    "url": "https://huggingface.co/papers/2508.18106",
+    "date_collected": "2025-09-05T07:07:24.318147+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "A.S.E: AI 생성 코드 보안 평가를 위한 저장소 수준 벤치마크",
+      "abstract": "소프트웨어 엔지니어링에서 대형 언어 모델(LLM)의 증가하는 채택은 그들이 생성한 코드의 엄격한 보안 평가를 필요로 합니다. 그러나 기존의 벤치마크는 고립된 코드 조각에 초점을 맞추며, 재현성이 없는 불안정한 평가 방법을 사용하며, 입력 콘텍스트의 품질을 출력의 보안과 연결하지 못하여 부족합니다. 이러한 공백을 해결하기 위해 A.S.E (AI 코드 생성 보안 평가)를 소개합니다. 이는 저장소 수준 안전한 코드 생성을 위한 벤치마크이며, 실제 CVE(보안 취약점)가 문서화된 실제 저장소에서 과업을 구축하며, 빌드 시스템 및 파일 간 의존성과 같은 완전한 저장소 콘텍스트를 보존합니다. 재현 가능하며 컨테이너화된 평가 프레임워크는 전문가에 의해 정의된 규칙을 사용하여 보안, 빌드 품질 및 생성 안정성에 대한 안정적이고 감사할 수 있는 평가를 제공합니다. A.S.E에서 주요 LLM들을 평가한 결과, 세 가지 주요 결과를 밝혀냈습니다: (1) Claude-3.7-Sonnet이 가장 우수한 성능을 달성합니다. (2) 프로퍼티어리 및 오픈 소스 모델 간의 보안 격차는 좁습니다; Qwen3-235B-A22B-Instruct가 최고의 보안 점수를 기록합니다. (3) 간결한 \"빠른 사고\" 디코딩 전략이 보안 패치에서 복잡한 \"느린 사고\" 추론보다 일관되게 우수한 성과를 보입니다."
+    },
+    "summary": "1. A.S.E는 실제 저장소를 기반으로 한 안전한 코드 생성을 위한 벤치마크로, LLM들을 안정적으로 평가하며 보안, 빌드 품질, 생성 안정성에 대한 평가를 제공합니다.\n2. 주요 발견으로는 Claude-3.7-Sonnet이 최고의 성능을 보이며, 프로퍼티어리 및 오픈 소스 모델 간의 보안 격차가 좁아지고 있다는 점을 밝힙니다.\n3. 간결한 \"빠른 사고\" 디코딩 전략이 보안 패치에서 복잡한 \"느린 사고\" 추론보다 우수한 성과를 보인다는 결과가 나왔습니다.",
+    "categories": [
+      "LLM",
+      "보안",
+      "소프트웨어 엔지니어링"
+    ]
+  },
+  {
+    "title": "VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has demonstrated\nsuccess in enhancing LLM reasoning capabilities, but remains limited to\nsingle-turn interactions without tool integration. While recent Agentic\nReinforcement Learning with Tool use (ARLT) approaches have emerged to address\nmulti-turn tool interactions, existing works develop task-specific codebases\nthat suffer from fragmentation, synchronous execution bottlenecks, and limited\nextensibility across domains. These inefficiencies hinder broader community\nadoption and algorithmic innovation. We introduce VerlTool, a unified and\nmodular framework that addresses these limitations through systematic design\nprinciples. VerlTool provides four key contributions: (1) upstream alignment\nwith VeRL ensuring compatibility and simplified maintenance, (2) unified tool\nmanagement via standardized APIs supporting diverse modalities including code\nexecution, search, SQL databases, and vision processing, (3) asynchronous\nrollout execution achieving near 2times speedup by eliminating\nsynchronization bottlenecks, and (4) comprehensive evaluation demonstrating\ncompetitive performance across 6 ARLT domains. Our framework formalizes ARLT as\nmulti-turn trajectories with multi-modal observation tokens (text/image/video),\nextending beyond single-turn RLVR paradigms. We train and evaluate models on\nmathematical reasoning, knowledge QA, SQL generation, visual reasoning, web\nsearch, and software engineering tasks, achieving results comparable to\nspecialized systems while providing unified training infrastructure. The\nmodular plugin architecture enables rapid tool integration requiring only\nlightweight Python definitions, significantly reducing development overhead and\nproviding a scalable foundation for tool-augmented RL research. Our code is\nopen-sourced at https://github.com/TIGER-AI-Lab/verl-tool.",
+    "authors": [
+      "Dongfu Jiang",
+      "Yi Lu",
+      "Zhuofeng Li",
+      "Zhiheng Lyu",
+      "Ping Nie",
+      "Haozhe Wang",
+      "Alex Su",
+      "Hui Chen",
+      "Kai Zou",
+      "Chao Du",
+      "Tianyu Pang",
+      "Wenhu Chen"
+    ],
+    "likes": 53,
+    "published_date": "Sep 1",
+    "url": "https://huggingface.co/papers/2509.01055",
+    "date_collected": "2025-09-05T07:07:24.319555+09:00",
+    "week": "2025-W36",
+    "translation": {
+      "title": "종합적 에이전트적 보상 학습을 향한 VerlTool",
+      "abstract": "검증 가능한 보상(Verifiable Rewards)을 이용한 보상 학습은 LLM 추론 능력 향상에 성공을 거두었지만, 도구 통합 없이 단일 대화에 국한되어 있습니다. 최근에 등장한 도구 사용을 통한 에이전트적 보상 학습(ARLT) 방법은 다중 대화 도구 상호작용을 다루기 위해 나왔지만, 기존 작업별 코드베이스는 조각화, 동기 실행 병목 현상, 여러 도메인 간 한정된 확장성 문제가 있습니다. 본 논문에서는 이러한 한계를 극복하기 위해 체계적인 설계 원칙을 통해 통합적이고 모듈화된 VerlTool 프레임워크를 제안합니다."
+    },
+    "summary": "1. VerlTool은 VeRL과 호환성을 보장하고 유지보수를 간소화하는 체계적 설계 원칙을 통해 이러한 한계를 해결합니다.\n2. 표준화된 API를 통한 통합된 도구 관리를 제공하여 코드 실행, 검색, SQL 데이터베이스, 비전 처리 등을 지원합니다.\n3. 6가지 ARLT 도메인에서 경쟁력 있는 성능을 보이는 포괄적인 평가를 통해 다중 대화 도구 활용을 위한 모듈화된 훈련 인프라를 제공합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

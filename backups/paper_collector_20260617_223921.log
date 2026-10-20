@@ -1,0 +1,109 @@
+=== Paper Collection Started at Tue Jun 16 22:43:00 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W25
+URL: https://huggingface.co/papers/week/2026-W25
+Found 10 papers in weekly view
+Fetching likes for: JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence
+Fetching likes for: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
+Fetching likes for: OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data
+Fetching likes for: Geometric Action Model for Robot Policy Learning
+Fetching likes for: DreamX-World 1.0: A General-Purpose Interactive World Model
+Fetching likes for: FastContext: Training Efficient Repository Explorer for Coding Agents
+Fetching likes for: APPO: Agentic Procedural Policy Optimization
+Fetching likes for: Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents
+Fetching likes for: VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models
+Fetching likes for: From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI
+Selected top 10 papers by likes:
+1. JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence (157 likes)
+2. Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories (100 likes)
+3. OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data (96 likes)
+4. Geometric Action Model for Robot Policy Learning (84 likes)
+5. DreamX-World 1.0: A General-Purpose Interactive World Model (78 likes)
+6. FastContext: Training Efficient Repository Explorer for Coding Agents (76 likes)
+7. APPO: Agentic Procedural Policy Optimization (70 likes)
+8. Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents (63 likes)
+9. VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models (62 likes)
+10. From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI (47 likes)
+Found abstract: Many moments in the real world do not wait for a user to ask. A fire starts on a security monitor, a...
+Processed paper: JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence
+Found abstract: Data tells stories that shape society; the data journalist's job is to turn raw information into sto...
+Processed paper: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
+Found abstract: Cloning camera motion from reference videos is an important task in video generation, as videos prov...
+Processed paper: OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data
+Found abstract: Generalist robot policies must follow user instructions while reasoning about how objects, cameras, ...
+Processed paper: Geometric Action Model for Robot Policy Learning
+Found abstract: DreamX-World 1.0 is a general-purpose interactive text/image-to-video world model for controllable l...
+Processed paper: DreamX-World 1.0: A General-Purpose Interactive World Model
+Found abstract: Large Language Model (LLM) coding agents have achieved strong results on software engineering tasks,...
+Processed paper: FastContext: Training Efficient Repository Explorer for Coding Agents
+Found abstract: Recent advances in agentic Reinforcement Learning (RL) have substantially improved the multi-turn to...
+Processed paper: APPO: Agentic Procedural Policy Optimization
+Found abstract: Despite recent progress, LLM agents still struggle with reasoning over long interaction histories. W...
+Processed paper: Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents
+Found abstract: This technical report introduces VibeThinker-3B, a compact dense model with 3B parameters developed ...
+Processed paper: VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models
+Found abstract: Large Language Models (LLMs) are undergoing a fundamental transformation from conversational generat...
+Processed paper: From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Geometric Action Model for Robot Policy Learning
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: DreamX-World 1.0: A General-Purpose Interactive World Model
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: FastContext: Training Efficient Repository Explorer for Coding Agents
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: APPO: Agentic Procedural Policy Optimization
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W25.json...
+
+Updating Notion database...
+Creating new paper: JoyAI-VL-Interaction: 실시간 Vision-Language 상호작용 지능
+Creating new paper: 데이터 저널리스트 에이전트: 데이터를 확인 가능한 멀티모달 이야기로 변환하기
+Creating new paper: OmniDirector: 교차 페어 데이터 없이 다양한 다중 샷 카메라 클로닝
+Creating new paper: 로봇 정책 학습을 위한 기하학적 행동 모델
+Creating new paper: DreamX-World 1.0: 일반적인 대화식 세계 모델
+Creating new paper: 효율적인 저장소 탐색을 위한 FastContext 훈련
+Creating new paper: APPO: 의인적 절차적 정책 최적화
+Creating new paper: 기억은 복원되며, 검색되지 않습니다: LLM 에이전트를 위한 그래프 기억
+Creating new paper: 작은 언어 모델에서 검증 가능한 추론의 최전선 탐색: VibeThinker-3B
+Creating new paper: 챗봇에서 디지털 동료로: 지속적인 자율 인공지능으로의 패러다임 변화
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Jun 16 22:44:44 UTC 2026 ===
+

@@ -1,0 +1,125 @@
+=== Paper Collection Started at Thu Mar 12 22:10:14 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W11
+URL: https://huggingface.co/papers/week/2026-W11
+Found 10 papers in weekly view
+Fetching likes for: Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing
+Fetching likes for: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Fetching likes for: Lost in Stories: Consistency Bugs in Long Story Generation by LLMs
+Fetching likes for: Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence
+Fetching likes for: OpenClaw-RL: Train Any Agent Simply by Talking
+Fetching likes for: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Fetching likes for: Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs
+Fetching likes for: LoGeR: Long-Context Geometric Reconstruction with Hybrid Memory
+Fetching likes for: How Far Can Unsupervised RLVR Scale LLM Training?
+Fetching likes for: Flash-KMeans: Fast and Memory-Efficient Exact K-Means
+Selected top 10 papers by likes:
+1. Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing (133 likes)
+2. Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders (100 likes)
+3. Lost in Stories: Consistency Bugs in Long Story Generation by LLMs (81 likes)
+4. Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence (75 likes)
+5. OpenClaw-RL: Train Any Agent Simply by Talking (59 likes)
+6. BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning (54 likes)
+7. Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs (53 likes)
+8. LoGeR: Long-Context Geometric Reconstruction with Hybrid Memory (50 likes)
+9. How Far Can Unsupervised RLVR Scale LLM Training? (44 likes)
+10. Flash-KMeans: Fast and Memory-Efficient Exact K-Means (43 likes)
+Found abstract: Leveraging the priors of 2D diffusion models for 3D editing has emerged as a promising paradigm. How...
+Processed paper: Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing
+Found abstract: Vision Language Model (VLM) development has largely relied on scaling model size, which hinders depl...
+Processed paper: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Found abstract: What happens when a storyteller forgets its own story? Large Language Models (LLMs) can now generate...
+Processed paper: Lost in Stories: Consistency Bugs in Long Story Generation by LLMs
+Found abstract: The pursuit of spatial intelligence fundamentally relies on access to large-scale, fine-grained 3D d...
+Processed paper: Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence
+Found abstract: Every agent interaction generates a next-state signal, namely the user reply, tool output, terminal ...
+Processed paper: OpenClaw-RL: Train Any Agent Simply by Talking
+Found abstract: Proximal constraints are fundamental to the stability of the Large Language Model reinforcement lear...
+Processed paper: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Found abstract: While reasoning in LLMs plays a natural role in math, code generation, and multi-hop factual questio...
+Processed paper: Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs
+Found abstract: Feedforward geometric foundation models achieve strong short-window reconstruction, yet scaling them...
+Processed paper: LoGeR: Long-Context Geometric Reconstruction with Hybrid Memory
+Found abstract: Unsupervised reinforcement learning with verifiable rewards (URLVR) offers a pathway to scale LLM tr...
+Processed paper: How Far Can Unsupervised RLVR Scale LLM Training?
+Found abstract: k-means has historically been positioned primarily as an offline processing primitive, typically use...
+Processed paper: Flash-KMeans: Fast and Memory-Efficient Exact K-Means
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing
+Paper already exists, checking if translation is complete...
+Update likes: 133  ->  120
+Update date_collected: 2026-03-13T07:10:22.746755+09:00  ->  2026-03-12T07:12:04.752026+09:00
+
+Processing paper 2/10
+Title: Penguin-VL: Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders
+Paper already exists, checking if translation is complete...
+Update likes: 100  ->  95
+Update date_collected: 2026-03-13T07:10:22.748019+09:00  ->  2026-03-12T07:12:04.753333+09:00
+
+Processing paper 3/10
+Title: Lost in Stories: Consistency Bugs in Long Story Generation by LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 81  ->  76
+Update date_collected: 2026-03-13T07:10:22.749179+09:00  ->  2026-03-12T07:12:04.754500+09:00
+
+Processing paper 4/10
+Title: Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 75  ->  72
+Update date_collected: 2026-03-13T07:10:22.750765+09:00  ->  2026-03-12T07:12:04.756096+09:00
+
+Processing paper 5/10
+Title: OpenClaw-RL: Train Any Agent Simply by Talking
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  54
+Update date_collected: 2026-03-13T07:10:22.753093+09:00  ->  2026-03-12T07:12:04.757317+09:00
+
+Processing paper 7/10
+Title: Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 53  ->  37
+Update date_collected: 2026-03-13T07:10:22.754404+09:00  ->  2026-03-12T07:12:04.761505+09:00
+
+Processing paper 8/10
+Title: LoGeR: Long-Context Geometric Reconstruction with Hybrid Memory
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  48
+Update date_collected: 2026-03-13T07:10:22.755671+09:00  ->  2026-03-12T07:12:04.758586+09:00
+
+Processing paper 9/10
+Title: How Far Can Unsupervised RLVR Scale LLM Training?
+Paper already exists, checking if translation is complete...
+Update likes: 44  ->  42
+Update date_collected: 2026-03-13T07:10:22.757434+09:00  ->  2026-03-12T07:12:04.760355+09:00
+
+Processing paper 10/10
+Title: Flash-KMeans: Fast and Memory-Efficient Exact K-Means
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W11.json...
+
+Updating Notion database...
+Updating paper: 기하학 안내 강화 학습을 통한 다중 뷰 일관성 있는 3D 장면 편집 (likes: 120 -> 133)
+Updating paper: 펭귄-VL: LLM 기반 비전 인코더의 효율 한계 탐구 (likes: 95 -> 100)
+Updating paper: 이야기에서 길을 잃다: LLM에 의한 장편 이야기 생성 중 일관성 버그 (likes: 76 -> 81)
+Updating paper: 홀리-스페이셜: 비디오 스트림을 전체적인 3D 공간 지능으로 진화시키다 (likes: 72 -> 75)
+Creating new paper: 음성 명령만으로 어떤 에이전트든 간단히 훈련하기: OpenClaw-RL
+Paper already exists with same likes count: BandPO: 신뢰 영역과 비율 클리핑을 연결하는 확률 인식한 경계를 통한 LLM 강화 학습
+Updating paper: 추론을 통한 기억: LLMs에서 매개 지식 해제되는 방법 (likes: 37 -> 53)
+Updating paper: LoGeR: 장기적( Long-Context) 기하학적 재구성과 하이브리드 메모리로 (likes: 48 -> 50)
+Updating paper: 비지도 강화 학습을 통한 LLM 훈련의 한계는 얼마나 될까요? (likes: 42 -> 44)
+Creating new paper: Flash-KMeans: 빠르고 메모리 효율적인 정확한 K-Means
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Mar 12 22:12:42 UTC 2026 ===
+

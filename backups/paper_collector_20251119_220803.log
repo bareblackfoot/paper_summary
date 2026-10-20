@@ -1,0 +1,113 @@
+=== Paper Collection Started at Tue Nov 18 22:07:58 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W47
+URL: https://huggingface.co/papers/week/2025-W47
+Found 10 papers in weekly view
+Fetching likes for: P1: Mastering Physics Olympiads with Reinforcement Learning
+Fetching likes for: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Fetching likes for: DoPE: Denoising Rotary Position Embedding
+Fetching likes for: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Fetching likes for: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Fetching likes for: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Fetching likes for: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation
+Fetching likes for: MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation
+Fetching likes for: GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning
+Fetching likes for: TiViBench: Benchmarking Think-in-Video Reasoning for Video Generative Models
+Selected top 10 papers by likes:
+1. P1: Mastering Physics Olympiads with Reinforcement Learning (105 likes)
+2. Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data (85 likes)
+3. DoPE: Denoising Rotary Position Embedding (84 likes)
+4. MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling (75 likes)
+5. Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance (74 likes)
+6. Part-X-MLLM: Part-aware 3D Multimodal Large Language Model (62 likes)
+7. WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation (42 likes)
+8. MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation (42 likes)
+9. GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning (40 likes)
+10. TiViBench: Benchmarking Think-in-Video Reasoning for Video Generative Models (39 likes)
+Found abstract: Recent progress in large language models (LLMs) has moved the frontier from puzzle-solving to scienc...
+Processed paper: P1: Mastering Physics Olympiads with Reinforcement Learning
+Found abstract: We present Uni-MoE 2.0 from the Lychee family. As a fully open-source omnimodal large model (OLM), i...
+Processed paper: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Found abstract: Rotary Position Embedding (RoPE) in Transformer models has inherent limits that weaken length extrap...
+Processed paper: DoPE: Denoising Rotary Position Embedding
+Found abstract: We present MiroThinker v1.0, an open-source research agent designed to advance tool-augmented reason...
+Processed paper: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Found abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, but t...
+Processed paper: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Found abstract: We introduce Part-X-MLLM, a native 3D multimodal large language model that unifies diverse 3D tasks ...
+Processed paper: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Found abstract: Recent advances in unified multimodal models (UMMs) have enabled impressive progress in visual compr...
+Processed paper: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation
+Found abstract: While thinking-aware generation aims to improve performance on complex tasks, we identify a critical...
+Processed paper: MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation
+Found abstract: Large Language Models have shown strong potential as rerankers to enhance the overall performance of...
+Processed paper: GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning
+Found abstract: The rapid evolution of video generative models has shifted their focus from producing visually plaus...
+Processed paper: TiViBench: Benchmarking Think-in-Video Reasoning for Video Generative Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: P1: Mastering Physics Olympiads with Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Uni-MoE-2.0-Omni: Scaling Language-Centric Omnimodal Large Model with Advanced MoE, Training and Data
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: DoPE: Denoising Rotary Position Embedding
+Paper already exists, checking if translation is complete...
+Update likes: 84  ->  57
+Update date_collected: 2025-11-19T07:08:08.410257+09:00  ->  2025-11-18T07:08:01.005430+09:00
+
+Processing paper 4/10
+Title: MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Part-X-MLLM: Part-aware 3D Multimodal Large Language Model
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  40
+Update date_collected: 2025-11-19T07:08:08.416342+09:00  ->  2025-11-18T07:08:01.006964+09:00
+
+Processing paper 8/10
+Title: MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: GroupRank: A Groupwise Reranking Paradigm Driven by Reinforcement Learning
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: TiViBench: Benchmarking Think-in-Video Reasoning for Video Generative Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W47.json...
+
+Updating Notion database...
+Creating new paper: 물리 올림피아드를 통한 강화 학습의 성공
+Creating new paper: Uni-MoE-2.0-Omni: 고급 MoE, 훈련 및 데이터로 언어 중심 옴니모달 대형 모델 확장
+Updating paper: DoPE: Denoising Rotary Position Embedding (likes: 57 -> 84)
+Creating new paper: MiroThinker: 모델, 맥락, 상호작용 확장을 통한 오픈소스 연구 에이전트의 성능한계 돌파
+Creating new paper: 간단한 산술이 최신 LLM 성능의 열쇠를 제공하는 수퍼-모델
+Creating new paper: Part-X-MLLM: 파트-인식 3D 다중 모달 대형 언어 모델
+Updating paper: WEAVE: 문맥 속 교차된 이해와 생성의 발휘와 평가 (likes: 40 -> 42)
+Creating new paper: MMaDA-Parallel: Thinking-Aware 편집과 생성을 위한 멀티모달 대규모 확산 언어 모델
+Creating new paper: 그룹랭크: 강화학습 기반의 그룹별 다시 순위 지정 패러다임
+Creating new paper: TiViBench: 비디오 생성 모델에 대한 지식 내재 비디오 추론 기준
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Nov 18 22:10:16 UTC 2025 ===
+

@@ -1,0 +1,135 @@
+=== Paper Collection Started at Mon Oct  6 22:07:22 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W41
+URL: https://huggingface.co/papers/week/2025-W41
+Found 10 papers in weekly view
+Fetching likes for: Apriel-1.5-15b-Thinker
+Fetching likes for: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Fetching likes for: Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation
+Fetching likes for: Compose Your Policies! Improving Diffusion-based or Flow-based Robot
+  Policies via Test-time Distribution-level Composition
+Fetching likes for: CoDA: Agentic Systems for Collaborative Data Visualization
+Fetching likes for: Bridging the Gap Between Promise and Performance for Microscaling FP4
+  Quantization
+Fetching likes for: Self-Improvement in Multimodal Large Language Models: A Survey
+Fetching likes for: Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents
+Fetching likes for: OrtSAE: Orthogonal Sparse Autoencoders Uncover Atomic Features
+Fetching likes for: REPAIR: Robust Editing via Progressive Adaptive Intervention and
+  Reintegration
+Selected top 10 papers by likes:
+1. Apriel-1.5-15b-Thinker (76 likes)
+2. Large Reasoning Models Learn Better Alignment from Flawed Thinking (33 likes)
+3. Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation (28 likes)
+4. Compose Your Policies! Improving Diffusion-based or Flow-based Robot
+  Policies via Test-time Distribution-level Composition (17 likes)
+5. CoDA: Agentic Systems for Collaborative Data Visualization (16 likes)
+6. Bridging the Gap Between Promise and Performance for Microscaling FP4
+  Quantization (15 likes)
+7. Self-Improvement in Multimodal Large Language Models: A Survey (11 likes)
+8. Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents (9 likes)
+9. OrtSAE: Orthogonal Sparse Autoencoders Uncover Atomic Features (8 likes)
+10. REPAIR: Robust Editing via Progressive Adaptive Intervention and
+  Reintegration (6 likes)
+Found abstract: We present Apriel-1.5-15B-Thinker, a 15-billion parameter open-weights
+multimodal reasoning model th...
+Processed paper: Apriel-1.5-15b-Thinker
+Found abstract: Large reasoning models (LRMs) "think" by generating structured
+chain-of-thought (CoT) before produci...
+Processed paper: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Found abstract: Visual tokens consume substantial computational resources in multi-modal
+large models (MLLMs), signi...
+Processed paper: Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation
+Found abstract: Diffusion-based models for robotic control, including vision-language-action
+(VLA) and vision-action...
+Processed paper: Compose Your Policies! Improving Diffusion-based or Flow-based Robot
+  Policies via Test-time Distribution-level Composition
+Found abstract: Deep research has revolutionized data analysis, yet data scientists still
+devote substantial time to...
+Processed paper: CoDA: Agentic Systems for Collaborative Data Visualization
+Found abstract: The recent hardware-accelerated microscaling 4-bit floating-point formats
+such as MXFP4 and NVFP4, s...
+Processed paper: Bridging the Gap Between Promise and Performance for Microscaling FP4
+  Quantization
+Found abstract: Recent advancements in self-improvement for Large Language Models (LLMs) have
+efficiently enhanced m...
+Processed paper: Self-Improvement in Multimodal Large Language Models: A Survey
+Found abstract: Advances in Large Language Models (LLMs) have enabled a new class of
+self-evolving agents that auton...
+Processed paper: Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents
+Found abstract: Sparse autoencoders (SAEs) are a technique for sparse decomposition of neural
+network activations in...
+Processed paper: OrtSAE: Orthogonal Sparse Autoencoders Uncover Atomic Features
+Found abstract: Post-training for large language models (LLMs) is constrained by the high
+cost of acquiring new know...
+Processed paper: REPAIR: Robust Editing via Progressive Adaptive Intervention and
+  Reintegration
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Apriel-1.5-15b-Thinker
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Large Reasoning Models Learn Better Alignment from Flawed Thinking
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Efficient Multi-modal Large Language Models via Progressive Consistency
+  Distillation
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Compose Your Policies! Improving Diffusion-based or Flow-based Robot
+  Policies via Test-time Distribution-level Composition
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: CoDA: Agentic Systems for Collaborative Data Visualization
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Bridging the Gap Between Promise and Performance for Microscaling FP4
+  Quantization
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Self-Improvement in Multimodal Large Language Models: A Survey
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: OrtSAE: Orthogonal Sparse Autoencoders Uncover Atomic Features
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: REPAIR: Robust Editing via Progressive Adaptive Intervention and
+  Reintegration
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W41.json...
+
+Updating Notion database...
+Creating new paper: Apriel-1.5-15B-Thinker
+Creating new paper: 오류된 사고로부터 큰 추론 모델이 더 나은 정렬을 배우는 방법
+Creating new paper: 효율적인 멀티모달 대형 언어 모델: 점진적 일관성 증류를 통해
+Creating new paper: 정책을 구성하라! 시험 시간 분배 수준 합성을 통해 개선된 확산 기반 또는 흐름 기반 로봇 정책
+Creating new paper: 협업 데이터 시각화를 위한 CoDA: 에이전트 시스템
+Creating new paper: Microscaling FP4 양자화 성능과 약속 사이의 간극을 좁히는 방법
+Creating new paper: 다중 모달 대규모 언어 모델에서의 자가 개선: 설문 조사
+Creating new paper: 당신의 에이전트가 잘못 진화할 수 있습니다: 자가 진화형 LLM 에이전트의 비상한 위험
+Creating new paper: OrtSAE: 직교형 희소 오토인코더가 원자적 특징을 발견한다
+Creating new paper: REPAIR: 진보적 적응 중재 및 다시편입을 통한 견고한 편집
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Oct  6 22:09:43 UTC 2025 ===
+

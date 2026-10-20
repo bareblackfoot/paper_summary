@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Extending One-Step Image Generation from Class Labels to Text via Discriminative Text Representation",
+    "abstract": "Few-step generation has been a long-standing goal, with recent one-step generation methods exemplified by MeanFlow achieving remarkable results. Existing research on MeanFlow primarily focuses on class-to-image generation. However, an intuitive yet unexplored direction is to extend the condition from fixed class labels to flexible text inputs, enabling richer content creation. Compared to the limited class labels, text conditions pose greater challenges to the model's understanding capability, necessitating the effective integration of powerful text encoders into the MeanFlow framework. Surprisingly, although incorporating text conditions appears straightforward, we find that integrating powerful LLM-based text encoders using conventional training strategies results in unsatisfactory performance. To uncover the underlying cause, we conduct detailed analyses and reveal that, due to the extremely limited number of refinement steps in the MeanFlow generation, such as only one step, the text feature representations are required to possess sufficiently high discriminability. This also explains why discrete and easily distinguishable class features perform well within the MeanFlow framework. Guided by these insights, we leverage a powerful LLM-based text encoder validated to possess the required semantic properties and adapt the MeanFlow generation process to this framework, resulting in efficient text-conditioned synthesis for the first time. Furthermore, we validate our approach on the widely used diffusion model, demonstrating significant generation performance improvements. We hope this work provides a general and practical reference for future research on text-conditioned MeanFlow generation. The code is available at https://github.com/AMAP-ML/EMF.",
+    "authors": [
+      "Chenxi Zhao",
+      "Chen Zhu",
+      "Xiaokun Feng",
+      "Aiming Hao",
+      "Jiashu Zhu",
+      "Jiachen Lei",
+      "Jiahong Wu",
+      "Xiangxiang Chu",
+      "Jufeng Yang"
+    ],
+    "likes": 86,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18168",
+    "date_collected": "2026-04-22T07:21:21.156915+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "텍스트를 통한 한 단계 이미지 생성 확장: 판별적 텍스트 표현을 통해",
+      "abstract": "최근의 MeanFlow와 같은 한 단계 생성 방법이 현저한 성과를 거두며, 몇 단계 생성이 오랫동안 추구되었습니다. 기존 MeanFlow 연구는 주로 클래스-이미지 생성에 초점을 맞추었습니다. 그러나 고정된 클래스 레이블에서 유연한 텍스트 입력으로 조건을 확장하는 직관적이면서 미개척된 방향이 더욱 풍부한 콘텐츠 생성을 가능하게 합니다. 클래스 레이블에 비해 텍스트 조건은 모델의 이해 능력에 더 큰 도전을 제기하며, 강력한 텍스트 인코더를 MeanFlow 프레임워크에 효과적으로 통합해야 합니다."
+    },
+    "summary": "1. 기존의 MeanFlow 생성 방법은 클래스 레이블에서 유연한 텍스트 입력으로의 조건을 확장하여 텍스트 조건이 모델의 이해 능력에 더 큰 도전을 제시함.\n2. 강력한 LLM 기반 텍스트 인코더의 적절한 사용을 통해 효율적인 텍스트-조건 생성을 가능케 함.\n3. 변경된 프레임워크에서 검증한 결과, MeanFlow를 적용한 텍스트-조건 합성에서 상당한 성능 향상을 입증함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Elucidating the SNR-t Bias of Diffusion Probabilistic Models",
+    "abstract": "Diffusion Probabilistic Models have demonstrated remarkable performance across a wide range of generative tasks. However, we have observed that these models often suffer from a Signal-to-Noise Ratio-timestep (SNR-t) bias. This bias refers to the misalignment between the SNR of the denoising sample and its corresponding timestep during the inference phase. Specifically, during training, the SNR of a sample is strictly coupled with its timestep. However, this correspondence is disrupted during inference, leading to error accumulation and impairing the generation quality. We provide comprehensive empirical evidence and theoretical analysis to substantiate this phenomenon and propose a simple yet effective differential correction method to mitigate the SNR-t bias. Recognizing that diffusion models typically reconstruct low-frequency components before focusing on high-frequency details during the reverse denoising process, we decompose samples into various frequency components and apply differential correction to each component individually. Extensive experiments show that our approach significantly improves the generation quality of various diffusion models (IDDPM, ADM, DDIM, A-DPM, EA-DPM, EDM, PFGM++, and FLUX) on datasets of various resolutions with negligible computational overhead. The code is at https://github.com/AMAP-ML/DCW.",
+    "authors": [
+      "Meng Yu",
+      "Lei Sun",
+      "Jianhao Zeng",
+      "Xiangxiang Chu",
+      "Kun Zhan"
+    ],
+    "likes": 69,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.16044",
+    "date_collected": "2026-04-22T07:21:21.158390+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "확산 확률 모델의 SNR-t 편향 해석",
+      "abstract": "확산 확률 모델은 다양한 생성 과제에서 놀라운 성능을 보여주고 있습니다. 그러나 이러한 모델들은 종종 신호 대 잡음 비율-타임스텝 (SNR-t) 편향 문제를 겪고 있는 것으로 관찰되었습니다. 이 편향은 추론 단계에서 잡음 제거 샘플의 SNR과 해당 타임스텝 간의 불일치를 가리킵니다. 훈련 과정에서 샘플의 SNR은 엄격히 해당 타임스텝과 결합됩니다. 그러나 추론 중에 이 대응이 방해를 받아 오류가 누적되고 생성 품질이 저하됩니다. 우리는 이 현상을 입증하기 위해 포괄적인 경험적 증거와 이론적 분석을 제시하고 이 SNR-t 편향을 완화하기 위한 간단하면서 효과적인 차별적 수정 방법을 제안합니다. 확산 모델이 일반적으로 역 잡음 프로세스에서 고주파 세부 사항에 집중하기 전에 저주파 구성 요소를 재구성하는 경향이 있다는 점을 인지하고, 샘플을 각각의 다양한 주파수 구성 요소로 분해하고 각 구성 요소에 차별적 수정을 적용합니다. 광범위한 실험 결과는 우리의 방법이 다양한 해상도 데이터셋 (IDDPM, ADM, DDIM, A-DPM, EA-DPM, EDM, PFGM++ 및 FLUX)에서 무시할 만한 계산 부담으로 생성 품질을 현저히 향상시킨다는 것을 보여줍니다. 코드는 https://github.com/AMAP-ML/DCW 에서 확인할 수 있습니다."
+    },
+    "summary": "1. 확산 확률 모델은 SNR-t 편향 문제로 인해 생성 품질이 손상될 수 있는데, 이를 완화하기 위해 차별적 수정 방법을 제안하고 이를 통해 생성 품질을 현저히 향상시킬 수 있다.\n2. 차별적 수정은 각 주파수 구성 요소에 개별적으로 적용되며, 샘플을 재구성하는 절차에 있어 높은 주파수 세부 사항에 초점을 맞추는 전략을 변경함으로써 생성 품질을 개선할 수 있다.\n3. 실험 결과는 제안된 방법이 다양한 해상도 데이터셋에서 확산 모델의 생성 품질을 향상시키는 데 효과적임을 입증하고 있다.",
+    "categories": [
+      "LLM",
+      "Generative Modeling",
+      "Other"
+    ]
+  },
+  {
+    "title": "OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation",
+    "abstract": "Chain-of-Thought (CoT) reasoning has become a powerful driver of trajectory prediction in VLA-based autonomous driving, yet its autoregressive nature imposes a latency cost that is prohibitive for real-time deployment. Latent CoT methods attempt to close this gap by compressing reasoning into continuous hidden states, but consistently fall short of their explicit counterparts. We suggest that this is due to purely linguistic latent representations compressing a symbolic abstraction of the world, rather than the causal dynamics that actually govern driving. Thus, we present OneVL (One-step latent reasoning and planning with Vision-Language explanations), a unified VLA and World Model framework that routes reasoning through compact latent tokens supervised by dual auxiliary decoders. Alongside a language decoder that reconstructs text CoT, we introduce a visual world model decoder that predicts future-frame tokens, forcing the latent space to internalize the causal dynamics of road geometry, agent motion, and environmental change. A three-stage training pipeline progressively aligns these latents with trajectory, language, and visual objectives, ensuring stable joint optimization. At inference, the auxiliary decoders are discarded and all latent tokens are prefilled in a single parallel pass, matching the speed of answer-only prediction. Across four benchmarks, OneVL becomes the first latent CoT method to surpass explicit CoT, delivering state-of-the-art accuracy at answer-only latency, and providing direct evidence that tighter compression, when guided in both language and world-model supervision, produces more generalizable representations than verbose token-by-token reasoning. Project Page: https://xiaomi-embodied-intelligence.github.io/OneVL",
+    "authors": [
+      "Jinghui Lu",
+      "Jiayi Guan",
+      "Zhijian Huang",
+      "Jinlong Li",
+      "Guang Li",
+      "Lingdong Kong",
+      "Yingyan Li",
+      "Han Wang",
+      "Shaoqing Xu",
+      "Yuechen Luo",
+      "Fang Li",
+      "Chenxu Dang",
+      "Junli Wang",
+      "Tao Xu",
+      "Jing Wu",
+      "Jianhua Wu",
+      "Xiaoshuai Hao",
+      "Wen Zhang",
+      "Tianyi Jiang",
+      "Lingfeng Zhang",
+      "Lei Zhou",
+      "Yingbo Tang"
+    ],
+    "likes": 65,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18486",
+    "date_collected": "2026-04-22T07:21:21.160754+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "비전-언어 설명을 통한 일단계 은닉 추론과 계획 (OneVL)",
+      "abstract": "체인 오브 사고 (CoT) 추론은 VLA 기반 자율 주행에서 궤적 예측의 강력한 주도 요인이 되었지만, 자기회귀적인 성격으로 인해 실시간 배치에는 부담이 되는 지연 비용을 부과합니다. 은담 CoT 방법은 추론을 연속된 숨겨진 상태로 압축하여 이 간극을 줄이려고 하지만 명시적인 상대자들에 대한 것만큼 성과를 내지 못합니다. 우리는 이것이 세계를 상징적 추상화로 압축하는 순수 언어적 숨겨진 표현 때문이며, 실제 주행을 지배하는 인과적 동역학이 아니라고 제안합니다. 따라서, 비전-언어 설명을 통한 일단계 은닉 추론과 계획 (OneVL)을 제시합니다."
+    },
+    "summary": "1. 자동 주행에서의 체인 오브 사고 추론은 강력한데도 자기회귀적 성격으로 실시간 실행에는 부적합한 지연 비용을 가집니다.\n2. OneVL은 언어 디코더와 시각적 세계 모델 디코더를 통해 계획을 라우팅하고 압축된 숨겨진 토큰을 돌아감하는 통합된 VLA 및 세계 모델 프레임워크를 제공합니다.\n3. 세 가지 단계의 훈련 파이프라인은 이 숨겨진 상태를 궤적, 언어 및 시각적 목표와 점진적으로 일치시켜 안정적인 공동 최적화를 보장합니다.",
+    "categories": [
+      "Multimodal",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence",
+    "abstract": "Large language models are increasingly expected to serve as general-purpose agents that interact with external, stateful tool environments. The Model Context Protocol (MCP) and broader agent skills offer a unified interface for connecting agents with scalable real-world services, but training robust agents remains limited by the lack of realistic environments and principled mechanisms for life-long learning. In this paper, we present Agent-World, a self-evolving training arena for advancing general agent intelligence through scalable environments. Agent-World has two main components: (1) Agentic Environment-Task Discovery, which autonomously explores topic-aligned databases and executable tool ecosystems from thousands of real-world environment themes and synthesizes verifiable tasks with controllable difficulty; and (2) Continuous Self-Evolving Agent Training, which combines multi-environment reinforcement learning with a self-evolving agent arena that automatically identifies capability gaps through dynamic task synthesis and drives targeted learning, enabling the co-evolution of agent policies and environments. Across 23 challenging agent benchmarks, Agent-World-8B and 14B consistently outperforms strong proprietary models and environment scaling baselines. Further analyses reveal scaling trends in relation to environment diversity and self-evolution rounds, offering insights for building general agent intelligence.",
+    "authors": [
+      "Guanting Dong",
+      "Junting Lu",
+      "Junjie Huang",
+      "Wanjun Zhong",
+      "Longxiang Liu",
+      "Shijue Huang",
+      "Zhenyu Li",
+      "Yang Zhao",
+      "Xiaoshuai Song",
+      "Xiaoxi Li",
+      "Jiajie Jin",
+      "Yutao Zhu",
+      "Hanbin Wang",
+      "Fangyu Lei",
+      "Qinyu Luo",
+      "Mingyang Chen",
+      "Zehui Chen",
+      "Jiazhan Feng",
+      "Ji-Rong Wen",
+      "Zhicheng Dou"
+    ],
+    "likes": 60,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18292",
+    "date_collected": "2026-04-22T07:21:21.162910+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "Agent-World: 진화하는 일반 에이전트 지능을 위한 실제 환경 합성의 확장",
+      "abstract": "대형 언어 모델은 점점 외부 상태 저장형 도구 환경과 상호 작용하는 일반 목적의 에이전트로서 역할을 기대받고 있습니다. 모델 컨텍스트 프로토콜 (MCP)과 보다 넓은 에이전트 스킬은 에이전트를 확장 가능한 실제 세계 서비스로 연결하는 통합된 인터페이스를 제공하지만, 강력한 에이전트를 훈련시키는 것은 현실적인 환경과 평생 학습에 대한 원칙적인 메커니즘의 부재로 제한됩니다. 본 논문에서는 진화하는 일반 에이전트 지능을 발전시키기 위한 확장 가능한 환경을 통해 Agent-World를 제시합니다. Agent-World에는 두 가지 주요 구성 요소가 있습니다: (1) 에이전트-환경 발견, (2) 지속적인 자체 진화 에이전트 훈련. Agent-World-8B 및 14B는 강력한 자사 모델 및 환경 확장 기준을 꾸준히 능가합니다. 더 많은 분석은 환경 다양성 및 자가 진화 라운드와 관련된 확장 추세를 보여주며, 일반적인 에이전트 지능을 구축하는 데 통찰을 제공합니다."
+    },
+    "summary": "1. Agent-World는 실제 환경과 실행 가능한 도구 생태계를 자율적으로 탐색하여 검증 가능한 작업을 합성하고, 강화 학습을 결합하여 에이전트 정책 및 환경의 상호 진화를 가능케하며 뛰어난 성능을 보입니다.\n2. 에이전트-환경 발견은 수천 개의 실제 환경 테마로부터 주제에 맞는 데이터베이스를 자동으로 탐색하고, 조절 가능한 난이도를 갖는 작업을 합성합니다.\n3. 지속적인 자체 진화 에이전트 훈련은 동적 작업 합성을 통해 능력 공백을 식별하고, 대상 지향 학습을 이끌어내어 에이전트 정책과 환경의 상호 진화를 가능케합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "OpenGame: Open Agentic Coding for Games",
+    "abstract": "Game development sits at the intersection of creative design and intricate software engineering, demanding the joint orchestration of game engines, real-time loops, and tightly coupled state across many files. While Large Language Models (LLMs) and code agents now solve isolated programming tasks with ease, they consistently stumble when asked to produce a fully playable game from a high-level design, collapsing under cross-file inconsistencies, broken scene wiring, and logical incoherence. We bridge this gap with OpenGame, the first open-source agentic framework explicitly designed for end-to-end web game creation. At its core lies Game Skill, a reusable, evolving capability composed of a Template Skill that grows a library of project skeletons from experience and a Debug Skill that maintains a living protocol of verified fixes - together enabling the agent to scaffold stable architectures and systematically repair integration errors rather than patch isolated syntax bugs. Powering this framework is GameCoder-27B, a code LLM specialized for game engine mastery through a three-stage pipeline of continual pre-training, supervised fine-tuning, and execution-grounded reinforcement learning. Since verifying interactive playability is fundamentally harder than checking static code, we further introduce OpenGame-Bench, an evaluation pipeline that scores agentic game generation along Build Health, Visual Usability, and Intent Alignment via headless browser execution and VLM judging. Across 150 diverse game prompts, OpenGame establishes a new state-of-the-art. We hope OpenGame pushes code agents beyond discrete software engineering problems and toward building complex, interactive real-world applications. Our framework will be fully open-sourced.",
+    "authors": [
+      "Yilei Jiang",
+      "Jinyuan Hu",
+      "Qianyin Xiao",
+      "Yaozhi Zheng",
+      "Ruize Ma",
+      "Kaituo Feng",
+      "Jiaming Han",
+      "Tianshuo Peng",
+      "Kaixuan Fan",
+      "Manyuan Zhang",
+      "Xiangyu Yue"
+    ],
+    "likes": 49,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18394",
+    "date_collected": "2026-04-22T07:21:21.164621+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "OpenGame: 게임을 위한 오픈 에이전트 코딩",
+      "abstract": "게임 개발은 창의적 디자인과 복잡한 소프트웨어 엔지니어링의 교차로에 위치하여, 게임 엔진, 실시간 반복 루프, 그리고 여러 파일 간 밀접하게 결합된 상태의 공동 조정을 요구합니다. 대형 언어 모델 (LLMs)과 코드 에이전트는 이제 고립된 프로그래밍 작업을 쉽게 해결하지만, 고수준 디자인으로부터 완전히 플레이 가능한 게임을 제작하도록 요청받으면, 교차 파일 불일치, 작동하지 않는 씬 연결, 그리고 논리적인 모순으로 인해 일관성이 무너집니다. 우리는 오픈소스로 처음으로 고안된 웹 게임 작성을 위한 에이전틱 프레임워크인 OpenGame으로 이 간극을 극복합니다. 핵심 요소는 게임 스킬인데, 이는 현장 경험을 토대로 프로젝트 스켈레톤 라이브러리를 키우는 템플릿 스킬과 검증된 수정 사항 프로토콜을 유지하는 디버그 스킬로 구성된 재사용 가능하며 발전 가능한 능력입니다."
+    },
+    "summary": "1. OpenGame은 게임 개발에서 LLMs와 코드 에이전트로 인해 발생하는 문제를 해결하고, 완전한 웹 게임 작성을 위한 프레임워크를 제공한다.\n2. 이 프레임워크의 핵심인 Game Skill은 템플릿 스킬과 디버그 스킬로 구성된 능력으로 안정적인 아키텍처를 효과적으로 구축한다.\n3. GameCoder-27B는 게임 엔진 마스터리를 위해 특화된 코드 LLM으로, 강화 학습을 통해 게임의 인터랙티브 플레이 가능성을 검증하는 OpenGame-Bench를 도입했다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips",
+    "abstract": "Deep Neural Networks (DNNs) can be catastrophically disrupted by flipping only a handful of parameter bits. We introduce Deep Neural Lesion (DNL), a data-free and optimizationfree method that locates critical parameters, and an enhanced single-pass variant, 1P-DNL, that refines this selection with one forward and backward pass on random inputs. We show that this vulnerability spans multiple domains, including image classification, object detection, instance segmentation, and reasoning large language models. In image classification, flipping just two sign bits in ResNet-50 on ImageNet reduces accuracy by 99.8%. In object detection and instance segmentation, one or two sign flips in the backbone collapse COCO detection and mask AP for Mask R-CNN and YOLOv8-seg models. In language modeling, two sign flips into different experts reduce Qwen3-30B-A3B-Thinking from 78% to 0% accuracy. We also show that selectively protecting a small fraction of vulnerable sign bits provides a practical defense against such attacks.",
+    "authors": [
+      "Ido Galil",
+      "Moshe Kimhi",
+      "Ran El-Yaniv"
+    ],
+    "likes": 46,
+    "published_date": "Apr 16",
+    "url": "https://huggingface.co/papers/2502.07408",
+    "date_collected": "2026-04-22T07:21:21.165953+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "데이터나 최적화 없이 최대 뇌 손상: 부호 비트 뒤집기를 통한 신경망 교란",
+      "abstract": "깊은 신경망(DNNs)은 소수의 매개변수 비트만 뒤집어도 재앙을 초래할 수 있습니다. 우리는 결정적 매개변수를 찾아내는 데이터 없이, 최적화 없이 작동하는 Deep Neural Lesion (DNL) 방법을 소개하고, 이를 개선한 1P-DNL을 소개합니다. ResNet-50의 이미지넷에 대해 두 개의 부호 비트만 뒤집으면 정확도가 99.8% 감소하는 등 다양한 분야에 취약점이 존재함을 보입니다."
+    },
+    "summary": "1. 데이터나 최적화 없이도 신경망을 교란시킬 수 있는 Deep Neural Lesion (DNL) 방법을 소개했다.\n2. ResNet-50의 이미지 분류에서 두 개의 부호 비트를 뒤집으면 정확도가 99.8%까지 감소하는 취약점을 확인했다.\n3. 취약한 부호 비트의 작은 부분만 보호하는 것이 이러한 공격에 대한 실용적 방어 수단을 제공한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "PersonaVLM: Long-Term Personalized Multimodal LLMs",
+    "abstract": "Multimodal Large Language Models (MLLMs) serve as daily assistants for millions. However, their ability to generate responses aligned with individual preferences remains limited. Prior approaches enable only static, single-turn personalization through input augmentation or output alignment, and thus fail to capture users' evolving preferences and personality over time (see Fig.1). In this paper, we introduce PersonaVLM, an innovative personalized multimodal agent framework designed for long-term personalization. It transforms a general-purpose MLLM into a personalized assistant by integrating three key capabilities: (a) Remembering: It proactively extracts and summarizes chronological multimodal memories from interactions, consolidating them into a personalized database. (b) Reasoning: It conducts multi-turn reasoning by retrieving and integrating relevant memories from the database. (c) Response Alignment: It infers the user's evolving personality throughout long-term interactions to ensure outputs remain aligned with their unique characteristics. For evaluation, we establish Persona-MME, a comprehensive benchmark comprising over 2,000 curated interaction cases, designed to assess long-term MLLM personalization across seven key aspects and 14 fine-grained tasks. Extensive experiments validate our method's effectiveness, improving the baseline by 22.4% (Persona-MME) and 9.8% (PERSONAMEM) under a 128k context, while outperforming GPT-4o by 5.2% and 2.0%, respectively. Project page: https://PersonaVLM.github.io.",
+    "authors": [
+      "Chang Nie",
+      "Chaoyou Fu",
+      "Yifan Zhang",
+      "Haihua Yang",
+      "Caifeng Shan"
+    ],
+    "likes": 42,
+    "published_date": "Mar 20",
+    "url": "https://huggingface.co/papers/2604.13074",
+    "date_collected": "2026-04-22T07:21:21.167369+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "PersonaVLM: 장기 개인화된 멀티모달 LLMs",
+      "abstract": "멀티모달 대형 언어 모델(MLLMs)은 수백만 명의 사용자를 위한 일상적인 보조 역할을 합니다. 그러나 개인의 선호도와 일치하는 응답을 생성하는 능력은 제한적입니다. 이전 방법론은 입력 보강 또는 출력 정렬을 통해 정적인, 단일 턴의 개인화만을 가능케 하고 있어 사용자의 시간 경과에 따라 변화하는 선호도와 성격을 파악하지 못합니다. 본 논문에서는 장기 개인화를 위해 설계된 혁신적인 개인화 멀티모달 에이전트 프레임워크인 PersonaVLM을 소개합니다. 이는 세 가지 핵심 능력을 통합하여 범용 MLLM을 개인화된 보조 역할로 변환합니다: (a) 기억: 상호작용에서 시간적 멀티모달 기억을 선제적으로 추출하고 요약하여 개인화된 데이터베이스로 통합합니다. (b) 추론: 데이터베이스에서 관련 기억을 검색하고 통합함으로써 멀티턴 추론을 수행합니다. (c) 응답 정렬: 사용자의 시간 경과에 따라 변화하는 성격을 추론하여 출력이 그들의 독특한 특성과 일치하도록 보장합니다. 평가를 위해 Persona-MME을 설정하며, 이는 장기 MLLM 개인화를 7가지 핵심 측면과 14가지 세부 작업에 걸쳐평가하기 위해 2,000개 이상의 고안된 상호작용 사례로 구성되었습니다. 광범위한 실험은 우리 방법의 효과를 검증하며, 기준을 22.4% (Persona-MME) 및 9.8% (PERSONAMEM) 향상시키고, 128k 컨텍스트에서 각각 5.2%, 2.0%의 성능 개선을 이루어내어 GPT-4o를 앞섭니다. 프로젝트 페이지: https://PersonaVLM.github.io."
+    },
+    "summary": "1. PersonaVLM은 멀티모달 대형 언어 모델을 장기적으로 개인화된 보조 역할로 변환시키기 위해 기억, 추론, 응답 정렬 세 가지 능력을 통합한 개인화된 에이전트 프레임워크입니다.\n2. Persona-MME을 통한 실험에서 PersonaVLM은 기준을 22.4%와 9.8% 향상시키고, GPT-4o를 각각 5.2%와 2.0% 능가하며 장기 MLLM 개인화의 효과적임을 입증했습니다.\n3. 평가를 위해 2,000개 이상의 인터랙션 케이스를 포함하는 Persona-MME을 만들어 개인화된 MLLM의 장기 개인화를 다양한 측면과 세부 작업에 걸쳐 평가하였습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Qwen3.5-Omni Technical Report",
+    "abstract": "In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Representing a significant evolution over its predecessor, Qwen3.5-Omni scales to hundreds of billions of parameters and supports a 256k context length. By leveraging a massive dataset comprising heterogeneous text-vision pairs and over 100 million hours of audio-visual content, the model demonstrates robust omni-modality capabilities. Qwen3.5-Omni-plus achieves SOTA results across 215 audio and audio-visual understanding, reasoning, and interaction subtasks and benchmarks, surpassing Gemini-3.1 Pro in key audio tasks and matching it in comprehensive audio-visual understanding. Architecturally, Qwen3.5-Omni employs a Hybrid Attention Mixture-of-Experts (MoE) framework for both Thinker and Talker, enabling efficient long-sequence inference. The model facilitates sophisticated interaction, supporting over 10 hours of audio understanding and 400 seconds of 720P video (at 1 FPS). To address the inherent instability and unnaturalness in streaming speech synthesis, often caused by encoding efficiency discrepancies between text and speech tokenizers, we introduce ARIA. ARIA dynamically aligns text and speech units, significantly enhancing the stability and prosody of conversational speech with minimal latency impact. Furthermore, Qwen3.5-Omni expands linguistic boundaries, supporting multilingual understanding and speech generation across 10 languages with human-like emotional nuance. Finally, Qwen3.5-Omni exhibits superior audio-visual grounding capabilities, generating script-level structured captions with precise temporal synchronization and automated scene segmentation. Remarkably, we observed the emergence of a new capability in omnimodal models: directly performing coding based on audio-visual instructions, which we call Audio-Visual Vibe Coding.",
+    "authors": [
+      "Qwen Team"
+    ],
+    "likes": 40,
+    "published_date": "Apr 17",
+    "url": "https://huggingface.co/papers/2604.15804",
+    "date_collected": "2026-04-22T07:21:21.168874+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "Qwen3.5-Omni 기술 보고서",
+      "abstract": "본 연구에서는 Qwen-Omni 모델 패밀리의 최신 발전인 Qwen3.5-Omni를 제안합니다. 이전 버전 대비 혁신적 발전을 이룬 Qwen3.5-Omni는 수백 억 개의 매개변수로 확장되어 256k 컨텍스트 길이를 지원합니다. 이 모델은 다양한 텍스트-비전 쌍과 1억 시간 이상의 오디오-비주얼 콘텐츠로 구성된 거대한 데이터셋을 활용하여 견고한 omni-모달리티 능력을 보여줍니다."
+    },
+    "summary": "1. Qwen3.5-Omni는 수천억 개의 매개변수와 256k 컨텍스트 길이를 지원하며, 다양한 텍스트-비전 쌍과 오디오-비주얼 콘텐츠로 훈련되어 강력한 omni-모달리티 능력을 갖추고 있습니다.\n2. Qwen3.5-Omni는 Hybrid Attention MoE 프레임워크를 사용하여 효율적인 순서 긴추론을 지원하며, ARIA를 도입하여 대화형 음성 합성의 안정성과 운율성을 향상시킵니다.\n3. 이 모델은 다국어 이해와 감정적 어조를 가진 음성 생성을 지원하며, 오디오-비주얼 그라운딩 능력을 확장하여 정확한 구조적 캡션과 자동 장면 분할을 수행하며, 오디오-비주얼 지침을 바탕으로 코딩을 직접 수행하는 새로운 능력을 발휘합니다.",
+    "categories": [
+      "Multimodal",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "MultiWorld: Scalable Multi-Agent Multi-View Video World Models",
+    "abstract": "Video world models have achieved remarkable success in simulating environmental dynamics in response to actions by users or agents. They are modeled as action-conditioned video generation models that take historical frames and current actions as input to predict future frames. Yet, most existing approaches are limited to single-agent scenarios and fail to capture the complex interactions inherent in real-world multi-agent systems. We present MultiWorld, a unified framework for multi-agent multi-view world modeling that enables accurate control of multiple agents while maintaining multi-view consistency. We introduce the Multi-Agent Condition Module to achieve precise multi-agent controllability, and the Global State Encoder to ensure coherent observations across different views. MultiWorld supports flexible scaling of agent and view counts, and synthesizes different views in parallel for high efficiency. Experiments on multi-player game environments and multi-robot manipulation tasks demonstrate that MultiWorld outperforms baselines in video fidelity, action-following ability, and multi-view consistency. Project page: https://multi-world.github.io/",
+    "authors": [
+      "Haoyu Wu",
+      "Jiwen Yu",
+      "Yingtian Zou",
+      "Xihui Liu"
+    ],
+    "likes": 35,
+    "published_date": "Apr 20",
+    "url": "https://huggingface.co/papers/2604.18564",
+    "date_collected": "2026-04-22T07:21:21.170258+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "멀티월드: 확장 가능한 다중 에이전트 다중-뷰 비디오 월드 모델 (Multi-World: Scalable Multi-Agent Multi-View Video World Models)",
+      "abstract": "비디오 월드 모델은 사용자 또는 에이전트의 행동에 따라 환경 역동을 시뮬레이션하는 데에서 놀라운 성과를 거두었습니다. 이들은 히스토리컬 프레임과 현재 행동을 입력으로 받아 미래 프레임을 예측하는 액션-조건화 비디오 생성 모델로 모델링됩니다. 그러나 대부분의 기존 방법은 단일 에이전트 시나리오에 국한되어 있으며 실제 다중 에이전트 시스템에 내재된 복잡한 상호작용을 잡아내지 못합니다. 우리는 멀티월드를 제시합니다. 이는 정확한 다중 에이전트 조절을 가능케 하는 다중 에이전트 다중-뷰 월드 모델링을 위한 통합된 프레임워크로, 다중 뷰 연속성을 유지하면서 다양한 에이전트를 효과적으로 제어합니다. 우리는 멀티-에이전트 조건 모듈을 소개하여 정확한 다중 에이전트 조절을 달성하고, 글로벌 상태 인코더를 도입하여 다른 뷰 간 일관된 관찰을 보장합니다. 멀티월드는 에이전트 및 뷰 수의 유연한 확장을 지원하며 고효율성을 위해 병렬로 다른 뷰를 합성합니다. 다중 플레이어 게임 환경 및 다중 로봇 조작 작업에서의 실험 결과는 멀티월드가 비디오 품질, 행동 추종 능력, 그리고 다중-뷰 일관성에서 베이스라인을 능가함을 보여줍니다. 프로젝트 페이지: https://multi-world.github.io/"
+    },
+    "summary": "1. 비디오 월드 모델은 행동에 대한 환경의 시뮬레이션에서 성공을 거두었지만, 기존 방법들은 복잡한 다중 에이전트 상호작용을 잡아내지 못했습니다.\n2. 멀티월드는 다중 에이전트 조절을 정확히 할 수 있도록 다중-에이전트 조건 모듈을 도입하고, 다중 뷰 간 일관성을 보장하기 위해 글로벌 상태 인코더를 사용합니다.\n3. 실험 결과에서 멀티월드는 비디오 품질, 행동 추종 능력, 다중-뷰 일관성 측면에서 다른 모델들보다 우수한 성과를 보여주었습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multi-Agent",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "EasyVideoR1: Easier RL for Video Understanding",
+    "abstract": "Reinforcement learning from verifiable rewards (RLVR) has demonstrated remarkable effectiveness in improving the reasoning capabilities of large language models. As models evolve into natively multimodal architectures, extending RLVR to video understanding becomes increasingly important yet remains largely unexplored, due to the diversity of video task types, the computational overhead of repeatedly decoding and preprocessing high-dimensional visual inputs, and the difficulty of reproducible evaluation across numerous sensitive hyperparameters. Existing open-source RL training frameworks provide solid infrastructure for text and image scenarios but lack systematic optimizations tailored for video modality. In this work, we present EasyVideoR1, a complete and efficient reinforcement learning framework specifically designed for training large vision-language models on video understanding tasks. EasyVideoR1 makes the following contributions: (1) a full video RL training pipeline with offline preprocessing and tensor caching that eliminates redundant video decoding and yields a 1.47 times throughput improvement; (2) a comprehensive, task-aware reward system covering 11 distinct video and image problem types with unified routing and modular extension; (3) a mixed offline-online data training paradigm that combines curated high-quality trajectories with on-policy exploration, benefiting the learning of more challenging tasks; (4) joint image-video training with independently configurable pixel budgets, allowing the two modalities to mutually reinforce each other; and (5) an asynchronous multi-benchmark evaluation framework covering 22 mainstream video understanding benchmarks, with reproduced accuracy closely aligned with officially reported scores.",
+    "authors": [
+      "Chuanyu Qin",
+      "Chenxu Yang",
+      "Qingyi Si",
+      "Naibin Gu",
+      "Dingyu Yao",
+      "Zheng Lin",
+      "Peng Fu",
+      "Nan Duan",
+      "Jiaqi Wang"
+    ],
+    "likes": 32,
+    "published_date": "Apr 18",
+    "url": "https://huggingface.co/papers/2604.16893",
+    "date_collected": "2026-04-22T07:21:21.171915+09:00",
+    "week": "2026-W17",
+    "translation": {
+      "title": "EasyVideoR1: 비디오 이해를 위한 보다 쉬운 강화 학습",
+      "abstract": "검증 가능한 보상에서 강화 학습 (RLVR)은 대규모 언어 모델의 추론 능력을 향상시키는 데 놀라운 효과를 보였습니다. 모델이 기본적으로 다중 모달 아키텍처로 진화함에 따라 RLVR을 비디오 이해로 확장하는 것은 점점 중요해지지만, 다양한 비디오 작업 유형, 고차원 비주얼 입력을 반복적으로 디코딩하고 전처리하는 계산 오버헤드, 다수의 민감한 하이퍼파라미터를 효과적으로 평가하는 어려움으로 인해 아직 완전히 탐구되지 않았습니다. 기존 오픈 소스 RL 훈련 프레임워크는 텍스트와 이미지 시나리오에 대한 견고한 인프라를 제공하지만 비디오 모달리티에 특화된 시스템적 최적화를 부족하게 합니다. 본 연구에서는 비디오 이해 작업에 대해 크고 복잡한 비전-언어 모델을 훈련시키기 위해 특별히 설계된 완전하고 효율적인 강화 학습 프레임워크인 EasyVideoR1을 제안합니다. EasyVideoR1은 다음을 기여합니다: (1) 오프라인 전처리 및 텐서 캐싱을 통한 완전한 비디오 강화 학습 파이프라인으로 중복 비디오 디코딩을 제거하고 처리량을 1.47배 향상시킵니다; (2) 11가지의 독립적인 비디오 및 이미지 문제 유형을 단일 라우팅 및 모듈 확장으로 다루는 전체적이고 과제 인식적인 보상 시스템; (3) 취합된 고품질 경로와 온폴리시 탐색을 결합하는 혼합 오프라인-온라인 데이터 훈련 패러다임으로 더 어려운 작업 학습에 이점을 제공합니다; (4) 독립적으로 구성 가능한 픽셀 예산을 가진 이미지-비디오 공동 훈련으로 두 모달리티가 상호 보강되도록 하는 것; (5) 공식적으로 보고된 점수와 밀접하게 일치된 복제된 정확도로 22가지의 주요 비디오 이해 벤치마크를 다루는 비동기식 다중 평가 프레임워크를 포함합니다."
+    },
+    "summary": "1. 비디오 이해를 위한 강화 학습 프레임워크 EasyVideoR1을 제안하여, 비디오 디코딩의 중복을 줄이고 처리량을 향상시키는 등의 성과를 이끌어냈습니다.\n2. 11가지의 비디오 및 이미지 문제 유형을 다루는 효과적인 보상 시스템과 혼합 오프라인-온라인 데이터 훈련 패러다임을 도입하여, 더 어려운 작업 학습에 이점을 가져왔습니다.\n3. 이미지-비디오 공동 훈련 및 다중 벤치마크 평가 프레임워크를 통해, EasyVideoR1이 비디오 이해 과제에서 성공적으로 활용됨을 입증하였습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  }
+]

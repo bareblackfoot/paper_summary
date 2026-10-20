@@ -1,0 +1,109 @@
+=== Paper Collection Started at Mon Apr 20 22:22:20 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W17
+URL: https://huggingface.co/papers/week/2026-W17
+Found 10 papers in weekly view
+Fetching likes for: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Fetching likes for: Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips
+Fetching likes for: PersonaVLM: Long-Term Personalized Multimodal LLMs
+Fetching likes for: Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems
+Fetching likes for: Qwen3.5-Omni Technical Report
+Fetching likes for: Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning
+Fetching likes for: (1D) Ordered Tokens Enable Efficient Test-Time Search
+Fetching likes for: Where does output diversity collapse in post-training?
+Fetching likes for: Repurposing 3D Generative Model for Autoregressive Layout Generation
+Fetching likes for: QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies
+Selected top 10 papers by likes:
+1. Elucidating the SNR-t Bias of Diffusion Probabilistic Models (67 likes)
+2. Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips (38 likes)
+3. PersonaVLM: Long-Term Personalized Multimodal LLMs (32 likes)
+4. Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems (22 likes)
+5. Qwen3.5-Omni Technical Report (21 likes)
+6. Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning (18 likes)
+7. (1D) Ordered Tokens Enable Efficient Test-Time Search (12 likes)
+8. Where does output diversity collapse in post-training? (9 likes)
+9. Repurposing 3D Generative Model for Autoregressive Layout Generation (9 likes)
+10. QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies (5 likes)
+Found abstract: Diffusion Probabilistic Models have demonstrated remarkable performance across a wide range of gener...
+Processed paper: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Found abstract: Deep Neural Networks (DNNs) can be catastrophically disrupted by flipping only a handful of paramete...
+Processed paper: Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips
+Found abstract: Multimodal Large Language Models (MLLMs) serve as daily assistants for millions. However, their abil...
+Processed paper: PersonaVLM: Long-Term Personalized Multimodal LLMs
+Found abstract: Retrieval-Augmented Generation (RAG) systems critically depend on effective document chunking strate...
+Processed paper: Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems
+Found abstract: In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Represe...
+Processed paper: Qwen3.5-Omni Technical Report
+Found abstract: Parallel reasoning enhances Large Reasoning Models (LRMs) but incurs prohibitive costs due to futile...
+Processed paper: Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning
+Found abstract: Tokenization is a key component of autoregressive (AR) generative models, converting raw data into m...
+Processed paper: (1D) Ordered Tokens Enable Efficient Test-Time Search
+Found abstract: Post-trained language models produce less varied outputs than their base counterparts. This output d...
+Processed paper: Where does output diversity collapse in post-training?
+Found abstract: We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unl...
+Processed paper: Repurposing 3D Generative Model for Autoregressive Layout Generation
+Found abstract: Large language models have demonstrated strong performance on general-purpose programming tasks, yet...
+Processed paper: QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Elucidating the SNR-t Bias of Diffusion Probabilistic Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: PersonaVLM: Long-Term Personalized Multimodal LLMs
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Qwen3.5-Omni Technical Report
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: (1D) Ordered Tokens Enable Efficient Test-Time Search
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Where does output diversity collapse in post-training?
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Repurposing 3D Generative Model for Autoregressive Layout Generation
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W17.json...
+
+Updating Notion database...
+Creating new paper: 확산 확률 모델의 SNR-t 편향 해석
+Creating new paper: 데이터나 최적화 없이 최대 뇌 손상: 부호 비트 뒤집기를 통한 신경망 교란
+Creating new paper: PersonaVLM: 장기 개인화된 멀티모달 LLMs
+Creating new paper: 효율적이고 경제적인 검색 증강 생성 시스템을 위한 웹 검색 인식 청킹 (W-RAC)
+Creating new paper: Qwen3.5-Omni 기술 보고서
+Creating new paper: 손실을 줄이세요! 효율적인 병렬 추론을 위해 일찍 가지치기 학습하기
+Creating new paper: (1D) 순서화된 토큰이 효율적인 테스트 시간 검색을 가능케 합니다
+Creating new paper: 훈련 이후 출력 다양성이 어디서 붕괴되나요?
+Creating new paper: 3D 생성 모델 재활용을 통한 자기회귀 레이아웃 생성
+Creating new paper: 대규모 언어 모델의 실행 가능한 알고리즘 거래 전략 생성 능력을 평가하는 벤치마크: QuantCode-Bench
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Apr 20 22:24:40 UTC 2026 ===
+

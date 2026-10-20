@@ -1,0 +1,37 @@
+=== Paper Collection Started at Mon Jun  8 01:53:40 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W24
+URL: https://huggingface.co/papers/week/2026-W24
+Found 2 papers in weekly view
+Fetching likes for: dots.tts Technical Report
+Fetching likes for: Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills
+Selected top 10 papers by likes:
+1. dots.tts Technical Report (1 likes)
+2. Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills (0 likes)
+Found abstract: We present dots.tts, a 2B-parameter continuous autoregressive text-to-speech (TTS) foundation model ...
+Processed paper: dots.tts Technical Report
+Found abstract: LLM-driven software engineering agents have become a central testbed for real-world language-model c...
+Processed paper: Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills
+Collected top 2 papers. Starting summary generation...
+
+Processing paper 1/2
+Title: dots.tts Technical Report
+Generating Korean translation and summary...
+
+Processing paper 2/2
+Title: Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills
+Generating Korean translation and summary...
+
+Processed 2 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W24.json...
+
+Updating Notion database...
+Creating new paper: dots.tts 기술 보고서
+Creating new paper: 소크라티브-SWE: 추적 기반 에이전트 스킬을 통한 스스로 진화하는 코딩 에이전트
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jun  8 01:54:06 UTC 2026 ===
+

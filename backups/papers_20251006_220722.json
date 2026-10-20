@@ -1,0 +1,307 @@
+[
+  {
+    "title": "The Dragon Hatchling: The Missing Link between the Transformer and\n  Models of the Brain",
+    "abstract": "The relationship between computing systems and the brain has served as\nmotivation for pioneering theoreticians since John von Neumann and Alan Turing.\nUniform, scale-free biological networks, such as the brain, have powerful\nproperties, including generalizing over time, which is the main barrier for\nMachine Learning on the path to Universal Reasoning Models.\n  We introduce `Dragon Hatchling' (BDH), a new Large Language Model\narchitecture based on a scale-free biologically inspired network of \\n\nlocally-interacting neuron particles. BDH couples strong theoretical\nfoundations and inherent interpretability without sacrificing Transformer-like\nperformance.\n  BDH is a practical, performant state-of-the-art attention-based state space\nsequence learning architecture. In addition to being a graph model, BDH admits\na GPU-friendly formulation. It exhibits Transformer-like scaling laws:\nempirically BDH rivals GPT2 performance on language and translation tasks, at\nthe same number of parameters (10M to 1B), for the same training data.\n  BDH can be represented as a brain model. The working memory of BDH during\ninference entirely relies on synaptic plasticity with Hebbian learning using\nspiking neurons. We confirm empirically that specific, individual synapses\nstrengthen connection whenever BDH hears or reasons about a specific concept\nwhile processing language inputs. The neuron interaction network of BDH is a\ngraph of high modularity with heavy-tailed degree distribution. The BDH model\nis biologically plausible, explaining one possible mechanism which human\nneurons could use to achieve speech.\n  BDH is designed for interpretability. Activation vectors of BDH are sparse\nand positive. We demonstrate monosemanticity in BDH on language tasks.\nInterpretability of state, which goes beyond interpretability of neurons and\nmodel parameters, is an inherent feature of the BDH architecture.",
+    "authors": [
+      "Adrian Kosowski",
+      "Przemysław Uznański",
+      "Jan Chorowski",
+      "Zuzanna Stamirowska",
+      "Michał Bartoszkiewicz"
+    ],
+    "likes": 357,
+    "published_date": "Sep 30",
+    "url": "https://huggingface.co/papers/2509.26507",
+    "date_collected": "2025-10-06T07:07:18.898622+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "드래곤 새끼: 트랜스포머와 뇌 모델 간의 빠진 링크",
+      "abstract": "컴퓨팅 시스템과 뇌 간의 관계는 존 폰 노이만과 앨런 터링부터 혁신적인 이론가들을 위한 동기로 작용해왔습니다. 뇌와 같은 균일하고 스케일-프리한 생물학적 네트워크는 시간을 초월한 일반화와 같은 강력한 특성을 갖고 있으며, 이는 기계 학습이 물리적 범용 추론 모델로 나아가는 여정에서 주요 장애물입니다. 우리는 '드래곤 새끼' (BDH)라는 새로운 대형 언어 모델 구조를 소개합니다."
+    },
+    "summary": "1. BDH는 스케일-프리한 생물학적 네트워크를 기반으로 한 새로운 대형 언어 모델 구조로, 트랜스포머와 같은 성능을 유지하면서 해석 가능성을 포기하지 않습니다.\n2. BDH는 언어 및 번역 작업에서 GPT2 성능에 도달하는 그래프 모델로, 학습 데이터 양과 파라미터 수에 관계없이 Transformer와 유사한 확장 법칙을 보입니다.\n3. BDH는 시냅스 가소성을 이용한 Hebbian 학습을 통해 추론 중인 작업 메모리에 완전히 의존하며, 특정 개념에 대해 듣거나 추론할 때 강화되는 특정 개별 시냅스를 경험적으로 확인합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "LongLive: Real-time Interactive Long Video Generation",
+    "abstract": "We present LongLive, a frame-level autoregressive (AR) framework for\nreal-time and interactive long video generation. Long video generation presents\nchallenges in both efficiency and quality. Diffusion and Diffusion-Forcing\nmodels can produce high-quality videos but suffer from low efficiency due to\nbidirectional attention. Causal attention AR models support KV caching for\nfaster inference, but often degrade in quality on long videos due to memory\nchallenges during long-video training. In addition, beyond static prompt-based\ngeneration, interactive capabilities, such as streaming prompt inputs, are\ncritical for dynamic content creation, enabling users to guide narratives in\nreal time. This interactive requirement significantly increases complexity,\nespecially in ensuring visual consistency and semantic coherence during prompt\ntransitions. To address these challenges, LongLive adopts a causal, frame-level\nAR design that integrates a KV-recache mechanism that refreshes cached states\nwith new prompts for smooth, adherent switches; streaming long tuning to enable\nlong video training and to align training and inference (train-long-test-long);\nand short window attention paired with a frame-level attention sink, shorten as\nframe sink, preserving long-range consistency while enabling faster generation.\nWith these key designs, LongLive fine-tunes a 1.3B-parameter short-clip model\nto minute-long generation in just 32 GPU-days. At inference, LongLive sustains\n20.7 FPS on a single NVIDIA H100, achieves strong performance on VBench in both\nshort and long videos. LongLive supports up to 240-second videos on a single\nH100 GPU. LongLive further supports INT8-quantized inference with only marginal\nquality loss.",
+    "authors": [
+      "Shuai Yang",
+      "Wei Huang",
+      "Ruihang Chu",
+      "Yicheng Xiao",
+      "Yuyang Zhao",
+      "Xianbang Wang",
+      "Muyang Li",
+      "Enze Xie",
+      "Yingcong Chen",
+      "Yao Lu",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "likes": 168,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22622",
+    "date_collected": "2025-10-06T07:07:18.900142+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "실시간 대화형 장긴 영상 생성 시스템",
+      "abstract": "본 연구에서는 실시간 및 대화형 장긴 영상 생성을 위한 frame-level 자기회귀(AR) 프레임워크인 LongLive를 제안합니다. 장긴 영상 생성은 효율성과 품질 측면에서 도전을 겪고 있습니다. 확산(diffusion) 및 확산 강제(diffusion-forcing) 모델은 높은 품질의 영상을 생성할 수 있지만 양방향 주의(bidirectional attention)로 인해 효율성이 낮습니다. 인과주의 주의력 AR 모델은 빠른 추론을 위해 KV 캐싱을 지원하지만 장긴 영상의 훈련 과정에서 메모리 도전으로 인해 품질이 저하될 수 있습니다. 또한 정적 프롬프트 기반 생성을 넘어, 스트리밍 프롬프트 입력과 같은 대화형 능력은 실시간으로 이야기를 이끌어내는 사용자를 위해 중요합니다."
+    },
+    "summary": "1. LongLive는 실시간 및 대화형 장긴 영상 생성을 위한 causal, frame-level AR 디자인을 채택하여 품질과 효율성을 균형 있게 유지합니다.\n2. LongLive는 KV-recache 메커니즘, 스트리밍 긴 조율, frame-level 주의력을 통해 장긴 영상 훈련과 추론을 지원하며, 32 GPU-days 안에 1.3B-파라미터 모델을 분 단위 생성으로 세밀하게 조정합니다.\n3. LongLive는 NVIDIA H100에서 20.7 FPS의 성능을 유지하며, VBench에서 강력한 성능을 보이며, 240초 영상 생성을 가능하게 합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP\n  Use",
+    "abstract": "MCP standardizes how LLMs interact with external systems, forming the\nfoundation for general agents. However, existing MCP benchmarks remain narrow\nin scope: they focus on read-heavy tasks or tasks with limited interaction\ndepth, and fail to capture the complexity and realism of real-world workflows.\nTo address this gap, we propose MCPMark, a benchmark designed to evaluate MCP\nuse in a more realistic and comprehensive manner. It consists of 127\nhigh-quality tasks collaboratively created by domain experts and AI agents.\nEach task begins with a curated initial state and includes a programmatic\nscript for automatic verification. These tasks demand richer and more diverse\ninteractions with the environment, involving a broad range of create, read,\nupdate, and delete (CRUD) operations. We conduct a comprehensive evaluation of\ncutting-edge LLMs using a minimal agent framework that operates in a\ntool-calling loop. Empirical results show that the best-performing model,\ngpt-5-medium, reaches only 52.56\\% pass@1 and 33.86\\% pass^4, while other\nwidely regarded strong models, including claude-sonnet-4 and o3, fall below\n30\\% pass@1 and 15\\% pass^4. On average, LLMs require 16.2 execution\nturns and 17.4 tool calls per task, significantly surpassing those in\nprevious MCP benchmarks and highlighting the stress-testing nature of MCPMark.",
+    "authors": [
+      "Zijian Wu",
+      "Xiangyan Liu",
+      "Xinyuan Zhang",
+      "Lingjun Chen",
+      "Fanqing Meng",
+      "Lingxiao Du",
+      "Yiran Zhao",
+      "Fanshi Zhang",
+      "Yaoqi Ye",
+      "Jiawei Wang",
+      "Zirui Wang",
+      "Jinjie Ni",
+      "Yufan Yang",
+      "Arvin Xu",
+      "Michael Qizhe Shieh"
+    ],
+    "likes": 151,
+    "published_date": "Sep 28",
+    "url": "https://huggingface.co/papers/2509.24002",
+    "date_collected": "2025-10-06T07:07:18.901760+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "MCPMark: MCP의 현실적이고 포괄적인 사용을 스트레스 테스트하는 벤치마킹",
+      "abstract": "MCP는 LLM(언어모델 대규모)가 외부 시스템과 상호작용하는 방식을 표준화하여 일반적 에이전트의 기초를 형성합니다. 그러나 기존의 MCP 벤치마크는 범위가 제한적입니다: 읽기 중심 작업이나 상호작용 깊이가 제한된 작업에 초점을 맞추며, 현실 세계의 작업 흐름의 복잡성과 실제성을 포착하지 못합니다. 이 간극을 해결하기 위해 우리는 MCPMark를 제안합니다. 이는 MCP 사용을 더 현실적이고 포괄적으로 평가하기 위해 설계된 벤치마크로, 도메인 전문가와 AI 에이전트들이 공동으로 작성한 127개의 고품질 작업으로 구성되어 있습니다."
+    },
+    "summary": "1. MCPMark는 LLM의 현실적이고 포괄적인 사용을 테스트하기 위해, 127가지 높은 품질의 작업으로 이루어진 벤치마크로 구성되었습니다.\n2. 실험 결과에 따르면 최고 성과 모델인 gpt-5-medium은 52.56%의 pass@1과 33.86%의 pass^4를 달성하며, 다른 강력한 모델들도 30% 미만의 pass@1과 15% 미만의 pass^4를 보이는 것으로 나타났습니다.\n3. 과거 MCP 벤치마크보다 LLM은 작업 당 평균 16.2번의 실행 턴과 17.4번의 호출을 필요로 하며, MCPMark의 스트레스 테스팅 특성을 강조했습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "EPO: Entropy-regularized Policy Optimization for LLM Agents\n  Reinforcement Learning",
+    "abstract": "Training LLM agents in multi-turn environments with sparse rewards, where\ncompleting a single task requires 30+ turns of interaction within an episode,\npresents a fundamental challenge for reinforcement learning. We identify a\ncritical failure mode unique to this setting: the exploration-exploitation\ncascade failure. This cascade begins with early-stage policy premature\nconvergence, where sparse feedback causes agents to commit to flawed,\nlow-entropy strategies. Subsequently, agents enter late-stage policy collapse,\nwhere conventional entropy regularization becomes counterproductive, promoting\nchaotic exploration that destabilizes training. We propose Entropy-regularized\nPolicy Optimization (EPO), a general framework that breaks this failure cycle\nthrough three synergistic mechanisms: (1) adopting entropy regularization in\nmulti-turn settings to enhance exploration, (2) an entropy smoothing\nregularizer that bounds policy entropy within historical averages to prevent\nabrupt fluctuations, and (3) adaptive phase-based weighting that balances\nexploration and exploitation across training. Our analysis justifies that EPO\nguarantees monotonically decreasing entropy variance while maintaining\nconvergence. EPO achieves up to 152% performance improvement on ScienceWorld\nand up to 19.8% on ALFWorld. Our work demonstrates that multi-turn\nsparse-reward settings require fundamentally different entropy control than\ntraditional RL, with broad implications for LLM agent training.",
+    "authors": [
+      "Xu Wujiang",
+      "Wentian Zhao",
+      "Zhenting Wang",
+      "Li Yu-Jhe",
+      "Jin Can",
+      "Jin Mingyu",
+      "Mei Kai",
+      "Wan Kun",
+      "Metaxas Dimitris"
+    ],
+    "likes": 124,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22576",
+    "date_collected": "2025-10-06T07:07:18.903058+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "엔트로피 정규화된 정책 최적화를 통한 LLM 에이전트들의 훈련",
+      "abstract": "여러 번의 상호작용을 필요로 하는 희소 보상을 갖는 멀티턴 환경에서 LLM 에이전트를 훈련하는 것은 강화 학습에 기본적인 도전을 제공합니다. 우리는 이 환경에서만 발생하는 중요한 실패 모드를 식별했습니다: 탐사-활용 연쇄 실패. 이 연쇄는 초기 정책 조기 수렴부터 시작하여, 희소한 피드백으로 인해 에이전트들이 결함이 있는, 낮은 엔트로피 전략에 헌신하게 됩니다. 그 후, 일반적인 엔트로피 정규화가 역효과를 보이는 정지 정책 붕괴 상태에 진입하게 됩니다. 우리는 이 실패 주기를 깨는 일반적인 프레임워크인 Entropy-regularized Policy Optimization (EPO)을 제안합니다."
+    },
+    "summary": "1. 멀티턴 환경에서 엔트로피 정규화를 채택하여 탐사를 강화함으로써 실패 사이클을 깨는 EPO 프레임워크가 제안되었습니다.\n2. EPO는 정책 엔트로피를 역사적 평균 내에서 한정시켜 급격한 변동을 방지하는 엔트로피 부드럽게 정규화하는 정규화자를 도입하였으며, 훈련 중에 탐사와 활용을 균형 있게 유지하는 적응적 단계별 가중치를 사용합니다.\n3. EPO는 엔트로피 분산이 단조롭게 감소하는 것을 보장하면서 수렴을 유지하며, ScienceWorld에서 최대 152%의 성능 향상과 ALFWorld에서 최대 19.8%의 성능 향상을 달성하였습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified\n  Self-Play",
+    "abstract": "Although reinforcement learning (RL) can effectively enhance the reasoning\ncapabilities of vision-language models (VLMs), current methods remain heavily\ndependent on labor-intensive datasets that require extensive manual\nconstruction and verification, leading to extremely high training costs and\nconsequently constraining the practical deployment of VLMs. To address this\nchallenge, we propose Vision-Zero, a domain-agnostic framework enabling VLM\nself-improvement through competitive visual games generated from arbitrary\nimage pairs. Specifically, Vision-Zero encompasses three main attributes: (1)\nStrategic Self-Play Framework: Vision-Zero trains VLMs in \"Who Is the\nSpy\"-style games, where the models engage in strategic reasoning and actions\nacross multiple roles. Through interactive gameplay, models autonomously\ngenerate their training data without human annotation. (2) Gameplay from\nArbitrary Images: Unlike existing gamified frameworks, Vision-Zero can generate\ngames from arbitrary images, thereby enhancing the model's reasoning ability\nacross diverse domains and showing strong generalization to different tasks. We\ndemonstrate this versatility using three distinct types of image datasets:\nCLEVR-based synthetic scenes, charts, and real-world images. (3) Sustainable\nPerformance Gain: We introduce Iterative Self-Play Policy Optimization\n(Iterative-SPO), a novel training algorithm that alternates between Self-Play\nand reinforcement learning with verifiable rewards (RLVR), mitigating the\nperformance plateau often seen in self-play-only training and achieving\nsustained long-term improvements. Despite using label-free data, Vision-Zero\nachieves state-of-the-art performance on reasoning, chart question answering,\nand vision-centric understanding tasks, surpassing other annotation-based\nmethods. Models and code has been released at\nhttps://github.com/wangqinsi1/Vision-Zero.",
+    "authors": [
+      "Qinsi Wang",
+      "Bo Liu",
+      "Tianyi Zhou",
+      "Jing Shi",
+      "Yueqian Lin",
+      "Yiran Chen",
+      "Hai Helen Li",
+      "Kun Wan",
+      "Wentian Zhao"
+    ],
+    "likes": 122,
+    "published_date": "Sep 29",
+    "url": "https://huggingface.co/papers/2509.25541",
+    "date_collected": "2025-10-06T07:07:18.904390+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "Vision-Zero: 전략 게임화된 Self-Play를 통한 확장 가능한 VLM 자가 개선",
+      "abstract": "강화 학습(RL)은 비전-언어 모델(VLM)의 추론 능력을 획기적으로 향상시킬 수 있지만, 현재 방법들은 지속적인 수동 데이터셋에 의존하여 많은 수동 작업과 검증을 필요로 하여 매우 높은 학습 비용을 초래하고 결과적으로 VLM의 실용적인 전개를 제약합니다. 이러한 도전에 대처하기 위해 임의의 이미지 쌍에서 생성된 경쟁적 비전 게임을 통해 VLM 자가 개선 가능하게 하는 도메인에 중립적인 Vision-Zero 프레임워크를 제안합니다. 구체적으로, Vision-Zero는 세 가지 주요 특징을 포함합니다: (1) 전략적 Self-Play 프레임워크, (2) 임의 이미지로부터 게임을 생성하는 기능, (3) 지속적인 성능 향상을 달성하는 새로운 학습 알고리즘인 Iterative-SPO를 소개합니다. Vision-Zero는 레이블 없는 데이터를 사용하더라도 추론, 차트 질문 응답 및 비전 중심 이해 작업에서 최첨단 성능을 달성하며 다른 주석 기반 방법들을 능가합니다."
+    },
+    "summary": "1. Vision-Zero는 \"Who Is the Spy\"-스타일 게임에서 VLM을 훈련시키는 전략적 자가 플레이 프레임워크를 포함하며, 이를 통해 모델은 상호작용하는 게임 플레이를 통해 자체 학습 데이터를 생성합니다.\n2. Vision-Zero는 임의 이미지에서 게임을 생성할 수 있어 다양한 도메인에서 모델의 추론 능력을 향상시키며 다른 작업에 대한 강력한 일반화 능력을 보입니다.\n3. Vision-Zero는 Self-Play와 강화 학습 간에 반복되는 Iterative-SPO를 통해 지속적인 장기적 개선을 달성하며, 자가 플레이만으로 교육할 때 종종 발생하는 성능 평평화 문제를 완화합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "DeepSearch: Overcome the Bottleneck of Reinforcement Learning with\n  Verifiable Rewards via Monte Carlo Tree Search",
+    "abstract": "Although RLVR has become an essential component for developing advanced\nreasoning skills in LLMs, contemporary studies have documented training\nplateaus that emerge following thousands of optimization steps, demonstrating\nnotable decreases in performance gains despite increased computational\ninvestment. This limitation stems from the sparse exploration patterns inherent\nin current RLVR practices, where models rely on limited rollouts that often\nmiss critical reasoning paths and fail to provide systematic coverage of the\nsolution space. We present DeepSearch, a framework that integrates Monte Carlo\nTree Search directly into RLVR training. In contrast to existing methods that\nrely on tree search only at inference, DeepSearch embeds structured search into\nthe training loop, enabling systematic exploration and fine-grained credit\nassignment across reasoning steps. Through training-time exploration,\nDeepSearch addresses the fundamental bottleneck of insufficient exploration,\nwhich leads to diminishing performance improvements over prolonged training\nsteps. Our contributions include: (1) a global frontier selection strategy that\nprioritizes promising nodes across the search tree, (2) selection with\nentropy-based guidance that identifies confident paths for supervision, and (3)\nadaptive replay buffer training with solution caching for efficiency.\nExperiments on mathematical reasoning benchmarks show that DeepSearch achieves\n62.95% average accuracy and establishes a new state-of-the-art for 1.5B\nreasoning models - using 5.7x fewer GPU hours than extended training\napproaches. These results highlight the importance of strategic exploration\nover brute-force scaling and demonstrate the promise of algorithmic innovation\nfor advancing RLVR methodologies. DeepSearch establishes a new direction for\nscaling reasoning capabilities through systematic search rather than prolonged\ncomputation.",
+    "authors": [
+      "Fang Wu",
+      "Weihao Xuan",
+      "Heli Qi",
+      "Ximing Lu",
+      "Aaron Tu",
+      "Li Erran Li",
+      "Yejin Choi"
+    ],
+    "likes": 115,
+    "published_date": "Sep 29",
+    "url": "https://huggingface.co/papers/2509.25454",
+    "date_collected": "2025-10-06T07:07:18.905647+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "DeepSearch: 몬테카를로 트리 탐색을 통한 검증 가능한 보상을 활용하여 강화 학습의 병목극복",
+      "abstract": "강화 학습 기반의 고급 추론 능력 개발에 필수적인 RLVR은 수천 번의 최적화 단계 뒤 발생하는 훈련 플래투 등을 보여주며 계산 투자가 증가함에도 불구하고 성능 향상이 현저히 감소하는 훈련 고원이 문제로 지적되어왔습니다. 현재의 RLVR 방법론에서 나타나는 희소한 탐색 패턴으로 인한 이 한계는 종종 중요한 추론 경로를 놓치며 해답 공간을 체계적으로 다룰 수 없는 제한된 롤아웃에 의존하는 모델에서 비롯됩니다. 본 연구에서는 Monte Carlo Tree Search를 직접 RLVR 훈련에 통합하는 DeepSearch를 제안합니다. 기존 방법이 추론에서만 트리 탐색에 의존하는 데 반해, DeepSearch는 훈련 루프에 구조화된 탐색을 포함시켜 체계적인 탐색과 추론 단계 전반에 걸친 세밀한 신용 할당을 가능케 합니다. 훈련 시간의 탐색을 통해 DeepSearch는 지속적인 훈련 단계에서 성능 향상의 저하로 이어지는 부족한 탐색의 근본적인 병목을 해소합니다. 우리의 기여는 (1) 검색 트리 전체의 유망한 노드를 우선하는 글로벌 프론티어 선택 전략, (2) 확신 있는 경로를 식별하는 엔트로피 기반 가이드를 통한 선택, (3) 효율성을 위한 솔루션 캐싱과 적응형 리플레이 버퍼 훈련을 포함합니다. 수학적 추론 벤치마크 실험 결과, DeepSearch는 1.5B 추론 모델을 위해 5.7배 적은 GPU 시간을 사용하면서 62.95%의 평균 정확도를 달성하여 새로운 최고 수준을 성립시킵니다. 이러한 결과는 무모한 확장보다 전략적 탐색의 중요성을 강조하며 RLVR 방법론 개선을 위한 알고리즘 혁신의 가능성을 입증합니다. DeepSearch는 연산 시간 연장 대신 체계적인 탐색을 통해 추론 능력의 확장에 새로운 방향을 제시합니다."
+    },
+    "summary": "1. DeepSearch는 Monte Carlo Tree Search를 강화 학습 훈련 중에 통합하여 체계적인 탐색과 세밀한 신용 할당을 가능케 하는 프레임워크이다.\n2. 글로벌 프론티어 선택 전략, 엔트로피 기반 가이드 선택, 솔루션 캐싱 및 적응형 리플레이 버퍼 훈련을 포함하는 DeepSearch는 탐색의 부족한 갑과 성능 향상 저하를 극복한다.\n3. 수학적 추론 벤치마크 실험에서 DeepSearch는 1.5B 모델에 대해 새로운 최고 성적을 달성하고 확장된 훈련 방법론보다 적은 GPU 시간을 사용한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Quantile Advantage Estimation for Entropy-Safe Reasoning",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) strengthens LLM\nreasoning, but training often oscillates between {entropy collapse} and\n{entropy explosion}. We trace both hazards to the mean baseline used in\nvalue-free RL (e.g., GRPO and DAPO), which improperly penalizes\nnegative-advantage samples under reward outliers. We propose {Quantile\nAdvantage Estimation} (QAE), replacing the mean with a group-wise K-quantile\nbaseline. QAE induces a response-level, two-regime gate: on hard queries (p <=\n1 - K) it reinforces rare successes, while on easy queries (p > 1 - K) it\ntargets remaining failures. Under first-order softmax updates, we prove\n{two-sided entropy safety}, giving lower and upper bounds on one-step entropy\nchange that curb explosion and prevent collapse. Empirically, this minimal\nmodification stabilizes entropy, sparsifies credit assignment (with tuned K,\nroughly 80% of responses receive zero advantage), and yields sustained pass@1\ngains on Qwen3-8B/14B-Base across AIME 2024/2025 and AMC 2023. These results\nidentify {baseline design} -- rather than token-level heuristics -- as the\nprimary mechanism for scaling RLVR.",
+    "authors": [
+      "Junkang Wu",
+      "Kexin Huang",
+      "Jiancan Wu",
+      "An Zhang",
+      "Xiang Wang",
+      "Xiangnan He"
+    ],
+    "likes": 113,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22611",
+    "date_collected": "2025-10-06T07:07:18.906827+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "엔트로피 안전 추론을 위한 분위수 이점 추정",
+      "abstract": "확인 가능한 보상을 갖는 강화학습(RLVR)은 LLM 추론을 강화하지만, 훈련은 종종 엔트로피 붕괴와 폭발 사이를 오가게 됩니다. 우리는 이러한 위험을 모두 가치가 없는 RL(예: GRPO 및 DAPO)에서 사용된 평균 베이스라인으로 추적합니다. 이는 보상 이상치 아래의 음 이점 샘플을 부적절하게 처벌합니다. 우리는 분위수 이점 추정(QAE)을 제안하여 평균을 그룹별 K-분위수 베이스라인으로 대체합니다. QAE는 응답 수준의 두 단계 게이트를 유도합니다: 어려운 쿼리(p <= 1 - K)에서는 드문 성공을 강화하고, 쉬운 쿼리(p > 1 - K)에서는 남은 실패를 대상으로 합니다. 우리는 일차적인 softmax 업데이트 하에서 한 단계 엔트로피 변화에 대한 상한 및 하한을 증명하여 폭발을 억제하고 붕괴를 방지하는 {양방향 엔트로피 안전}을 제공합니다. 경험적으로, 이 작은 수정으로 엔트로피를 안정화시키고 신용 할당을 희소화시키며(튜닝된 K로 대략 80%의 응답이 0 이점을 받음), AIME 2024/2025와 AMC 2023에서 Qwen3-8B/14B-Base로 지속적인 pass@1 향상을 얻습니다. 이러한 결과는 토큰 레벨 휴리스틱이 아닌 베이스라인 디자인이 RLVR을 확장하는 주요 메커니즘임을 확인합니다."
+    },
+    "summary": "1. 엔트로피 안전 추론을 위한 분위수 이점 추정(QAE)은 평균을 그룹별 K-분위수 베이스라인으로 대체하여 RLVR의 향상된 안정성을 제공합니다.\n2. QAE는 어려운 쿼리에는 드문 성공을, 쉬운 쿼리에는 남은 실패를 강조하여 두 단계 게이트를 유도하며, 엔트로피 통제를 통해 엔트로피의 폭발과 붕괴를 예방합니다.\n3. 베이스라인 디자인이 RLVR의 규모 확장을 위한 기본 메커니즘임을 확인하는 실험 결과가 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable\n  Sparse-Linear Attention",
+    "abstract": "In Diffusion Transformer (DiT) models, particularly for video generation,\nattention latency is a major bottleneck due to the long sequence length and the\nquadratic complexity. We find that attention weights can be separated into two\nparts: a small fraction of large weights with high rank and the remaining\nweights with very low rank. This naturally suggests applying sparse\nacceleration to the first part and low-rank acceleration to the second. Based\non this finding, we propose SLA (Sparse-Linear Attention), a trainable\nattention method that fuses sparse and linear attention to accelerate diffusion\nmodels. SLA classifies attention weights into critical, marginal, and\nnegligible categories, applying O(N^2) attention to critical weights, O(N)\nattention to marginal weights, and skipping negligible ones. SLA combines these\ncomputations into a single GPU kernel and supports both forward and backward\npasses. With only a few fine-tuning steps using SLA, DiT models achieve a 20x\nreduction in attention computation, resulting in significant acceleration\nwithout loss of generation quality. Experiments show that SLA reduces attention\ncomputation by 95% without degrading end-to-end generation quality,\noutperforming baseline methods. In addition, we implement an efficient GPU\nkernel for SLA, which yields a 13.7x speedup in attention computation and a\n2.2x end-to-end speedup in video generation on Wan2.1-1.3B.",
+    "authors": [
+      "Jintao Zhang",
+      "Haoxu Wang",
+      "Kai Jiang",
+      "Shuo Yang",
+      "Kaiwen Zheng",
+      "Haocheng Xi",
+      "Ziteng Wang",
+      "Hongzhou Zhu",
+      "Min Zhao",
+      "Ion Stoica",
+      "Joseph E. Gonzalez",
+      "Jun Zhu",
+      "Jianfei Chen"
+    ],
+    "likes": 108,
+    "published_date": "Sep 28",
+    "url": "https://huggingface.co/papers/2509.24006",
+    "date_collected": "2025-10-06T07:07:18.908395+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "확산 트랜스포머에서의 희소성을 넘어서: Featuning 가능한 희소-선형 어텐션을 통해",
+      "abstract": "동영상 생성을 위한 확산 트랜스포머(Diffusion Transformer, DiT) 모델에서 어텐션 지연은 장시퀀스 길이와 이차 복잡성으로 인해 주요 병목 요인이다. 우리는 어텐션 가중치를 큰 순위와 매우 낮은 순위를 가진 두 부분으로 분리할 수 있음을 발견했다. 이는 첫 번째 부분에는 희소 가속을, 두 번째 부분에는 저차원 가속을 적용할 것을 자연스럽게 시사한다. 이 발견을 기반으로 우리는 SLA (Sparse-Linear Attention)를 제안한다. 이는 희소와 선형 어텐션을 융합하여 확산 모델을 가속화하는 학습 가능한 어텐션 방법이다. SLA는 어텐션 가중치를 중요, 주변, 무시 가능 세 가지 범주로 분류하고, 중요한 가중치에 O(N^2) 어텐션, 주변 가중치에 O(N) 어텐션을 적용하며, 무시 가능한 가중치는 건너뛴다. SLA는 이러한 계산을 하나의 GPU 커널로 결합하며 전방향과 역방향 패스를 모두 지원한다. SLA를 사용한 소수의 파인튜닝 단계만으로 DiT 모델은 어텐션 계산을 20배 줄여줌으로써 상당한 가속화를 실현하고 생성 품질이 손상되지 않는다. 실험 결과, SLA는 어텐션 계산을 95% 줄이고 종단-종단 생성 품질을 하락시키지 않아 기본 방법을 능가한다. 게다가, 우리는 효율적인 GPU 커널을 SLA에 구현하여, 어텐션 계산 속도를 13.7배 향상시키고 Wan2.1-1.3B에서 동영상 생성 속도를 2.2배 향상시켰다."
+    },
+    "summary": "1. 확산 트랜스포머 모델에서 어텐션 계산 가속화를 위해 SLA를 제안하였고, 이는 희소와 선형 어텐션을 결합하여 어텐션 가중치를 중요, 주변, 무시 가능 세 범주로 분류하여 적용함.\n2. SLA를 사용하면 소수의 파인튠링 단계만으로 DiT 모델의 어텐션 계산을 20배 줄여줌으로써 상당한 가속화를 이뤘으며, 생성 품질을 손상시키지 않음.\n3. 실험 결과, SLA는 어텐션 계산을 95% 줄이고 종단-종단 생성 품질을 유지하며, 효율적인 GPU 커널을 구현하여 속도를 대폭 향상시켰다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+    "abstract": "We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language\nmodel that achieves state-of-the-art recognition accuracy while maintaining\nexceptional computational efficiency. Our approach employs a coarse-to-fine,\ntwo-stage parsing strategy that decouples global layout analysis from local\ncontent recognition. In the first stage, the model performs efficient layout\nanalysis on downsampled images to identify structural elements, circumventing\nthe computational overhead of processing high-resolution inputs. In the second\nstage, guided by the global layout, it performs targeted content recognition on\nnative-resolution crops extracted from the original image, preserving\nfine-grained details in dense text, complex formulas, and tables. To support\nthis strategy, we developed a comprehensive data engine that generates diverse,\nlarge-scale training corpora for both pretraining and fine-tuning. Ultimately,\nMinerU2.5 demonstrates strong document parsing ability, achieving\nstate-of-the-art performance on multiple benchmarks, surpassing both\ngeneral-purpose and domain-specific models across various recognition tasks,\nwhile maintaining significantly lower computational overhead.",
+    "authors": [
+      "Junbo Niu",
+      "Zheng Liu",
+      "Zhuangcheng Gu",
+      "Bin Wang",
+      "Linke Ouyang",
+      "Zhiyuan Zhao",
+      "Tao Chu",
+      "Tianyao He",
+      "Fan Wu",
+      "Qintong Zhang",
+      "Zhenjiang Jin",
+      "Guang Liang",
+      "Rui Zhang",
+      "Wenzheng Zhang",
+      "Yuan Qu",
+      "Zhifei Ren",
+      "Yuefeng Sun",
+      "Yuanhong Zheng",
+      "Dongsheng Ma",
+      "Zirui Tang",
+      "Boyu Niu",
+      "Ziyang Miao"
+    ],
+    "likes": 99,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22186",
+    "date_collected": "2025-10-06T07:07:18.910273+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "MinerU2.5: 효율적인 고해상도 문서 구문 분석을 위한 분리된 Vision-Language 모델",
+      "abstract": "MinerU2.5는 1.2B 파라미터의 문서 구문 분석 Vision-Language 모델로, 탁월한 계산 효율성을 유지하면서 최첨단 인식 정확도를 달성합니다. 우리의 접근 방식은 전역 레이아웃 분석과 지역 콘텐츠 인식을 분리하는 coarse-to-fine, 두 단계의 parsing 전략을 사용합니다."
+    },
+    "summary": "1. MinerU2.5는 고해상도 이미지 처리의 계산 비용을 줄이기 위해 다운샘플링된 이미지에서 효율적인 레이아웃 분석을 수행하고, 전역 레이아웃에 따라 원본 이미지에서 추출된 native-resolution crops에서 지역 콘텐츠 인식을 실행하여 상세한 텍스트, 복잡한 수식, 표의 세부 정보를 보존합니다.\n2. MinerU2.5는 다양하고 대규모의 훈련 말뭉치를 생성하는 종합적인 데이터 엔진을 개발하여 이 전략을 지원하며, 다양한 인식 작업에서 일반 용도 및 도메인 특정 모델을 능가하면서 상위 성능을 보이며, 계산 오버헤드를 크게 줄이고 있습니다.\n3. MinerU2.5는 다중 벤치마크에서 최첨단의 문서 구문 분석 능력을 보여주며, 다양한 인식 작업에서 일반적인 용도 및 도메인별 모델을 능가하면서 상당히 낮은 계산 오버헤드를 유지하고 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "LongCodeZip: Compress Long Context for Code Language Models",
+    "abstract": "Code generation under long contexts is becoming increasingly critical as\nLarge Language Models (LLMs) are required to reason over extensive information\nin the codebase. While recent advances enable code LLMs to process long inputs,\nhigh API costs and generation latency remain substantial bottlenecks. Existing\ncontext pruning techniques, such as LLMLingua, achieve promising results for\ngeneral text but overlook code-specific structures and dependencies, leading to\nsuboptimal performance in programming tasks. In this paper, we propose\nLongCodeZip, a novel plug-and-play code compression framework designed\nspecifically for code LLMs. LongCodeZip employs a dual-stage strategy: (1)\ncoarse-grained compression, which identifies and ranks function-level chunks\nusing conditional perplexity with respect to the instruction, retaining only\nthe most relevant functions; and (2) fine-grained compression, which segments\nretained functions into blocks based on perplexity and selects an optimal\nsubset under an adaptive token budget to maximize relevance. Evaluations across\nmultiple tasks, including code completion, summarization, and question\nanswering, show that LongCodeZip consistently outperforms baseline methods,\nachieving up to a 5.6x compression ratio without degrading task performance. By\neffectively reducing context size while preserving essential information,\nLongCodeZip enables LLMs to better scale to real-world, large-scale code\nscenarios, advancing the efficiency and capability of code intelligence\napplications.",
+    "authors": [
+      "Yuling Shi",
+      "Yichun Qian",
+      "Hongyu Zhang",
+      "Beijun Shen",
+      "Xiaodong Gu"
+    ],
+    "likes": 90,
+    "published_date": "Oct 1",
+    "url": "https://huggingface.co/papers/2510.00446",
+    "date_collected": "2025-10-06T07:07:18.911448+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "LongCodeZip: 코드 언어 모델을 위한 긴 문맥 압축",
+      "abstract": "긴 문맥에서의 코드 생성은 대규모 언어 모델이 코드베이스의 방대한 정보를 처리해야 하는 상황에서 점점 더 중요해지고 있습니다. 최근 기술 발전으로 코드 언어 모델이 긴 입력을 처리할 수 있게 되었지만, 높은 API 비용과 생성 지연은 여전히 상당한 병목 현상으로 작용합니다. 기존의 문맥 가지치기 기술 중 LLMLingua와 같은 기법은 일반 텍스트에 대해 유망한 결과를 얻고 있지만, 코드 특정 구조와 의존성을 간과하여 프로그래밍 작업에서 최적의 성능을 발휘하지 못합니다. 본 논문에서는 코드 언어 모델을 위해 특별히 설계된 혁신적인 코드 압축 프레임워크인 LongCodeZip을 제안합니다. LongCodeZip은 (1) 조건부 헷갈림을 통해 명령에 대한 함수 수준의 청단을 식별하고 순위를 매기는 수준 압축과 (2) 헷갈림에 따라 보유된 함수를 세분화하여 적응적 토큰 예산에 따라 최대한 관련성을 극대화하는 최적 하위 집합을 선택하는 세밀한 압축의 이중 단계 전략을 활용합니다. 코드 완성, 요약 및 질문 응답을 포함한 여러 과제에 걸쳐 평가한 결과, LongCodeZip은 기본 방법을 일관되게 능가하여 과제 성능을 떨어뜨리지 않으면서 최대 5.6배의 압축 비율을 달성합니다. 필수 정보를 보존하면서 문맥 크기를 효과적으로 축소하는 LongCodeZip은 LLM이 실제 대규모 코드 시나리오로 더 잘 확장되어 코드 지능 애플리케이션의 효율성과 성능을 향상시킵니다."
+    },
+    "summary": "1. LongCodeZip은 코드 LLMs을 위한 새로운 코드 압축 프레임워크로, 함수 수준 청단과 세밀한 압축의 이중 전략을 사용하여 긴 문맥에서 효율적으로 중요 정보를 유지하면서 압축 비율을 최대 5.6배까지 달성합니다.\n2. 여러 작업에 걸쳐 평가한 결과, LongCodeZip은 기존 방법을 consistently outperform하며 실제 코드 시나리오로 더 잘 확장되어 코드 지능 애플리케이션의 효율성을 향상시킵니다.\n3. 이를 통해 LongCodeZip은 LLMs의 성능을 향상시키고 대규모 코드 환경에서 효과적으로 작동하여 코드 지능 애플리케이션의 능력을 높입니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

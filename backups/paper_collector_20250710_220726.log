@@ -1,0 +1,153 @@
+=== Paper Collection Started at Wed Jul  9 22:08:04 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W28
+URL: https://huggingface.co/papers/week/2025-W28
+Found 10 papers in weekly view
+Fetching likes for: MemOS: A Memory OS for AI System
+Fetching likes for: Should We Still Pretrain Encoders with Masked Language Modeling?
+Fetching likes for: SingLoRA: Low Rank Adaptation Using a Single Matrix
+Fetching likes for: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving
+Fetching likes for: A Survey on Latent Reasoning
+Fetching likes for: OmniPart: Part-Aware 3D Generation with Semantic Decoupling and
+  Structural Cohesion
+Fetching likes for: 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture
+Fetching likes for: StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context
+  Modeling
+Fetching likes for: How to Train Your LLM Web Agent: A Statistical Diagnosis
+Fetching likes for: CriticLean: Critic-Guided Reinforcement Learning for Mathematical
+  Formalization
+Selected top 10 papers by likes:
+1. MemOS: A Memory OS for AI System (97 likes)
+2. Should We Still Pretrain Encoders with Masked Language Modeling? (69 likes)
+3. SingLoRA: Low Rank Adaptation Using a Single Matrix (60 likes)
+4. Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving (54 likes)
+5. A Survey on Latent Reasoning (54 likes)
+6. OmniPart: Part-Aware 3D Generation with Semantic Decoupling and
+  Structural Cohesion (41 likes)
+7. 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture (37 likes)
+8. StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context
+  Modeling (35 likes)
+9. How to Train Your LLM Web Agent: A Statistical Diagnosis (35 likes)
+10. CriticLean: Critic-Guided Reinforcement Learning for Mathematical
+  Formalization (34 likes)
+Found abstract: Large Language Models (LLMs) have become an essential infrastructure for
+Artificial General Intellig...
+Processed paper: MemOS: A Memory OS for AI System
+Found abstract: Learning high-quality text representations is fundamental to a wide range of
+NLP tasks. While encode...
+Processed paper: Should We Still Pretrain Encoders with Masked Language Modeling?
+Found abstract: Low-Rank Adaptation (LoRA) has significantly advanced parameter-efficient
+fine-tuning of large pretr...
+Processed paper: SingLoRA: Low Rank Adaptation Using a Single Matrix
+Found abstract: As language agents tackle increasingly complex tasks, they struggle with
+effective error correction ...
+Processed paper: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving
+Found abstract: Large Language Models (LLMs) have demonstrated impressive reasoning
+capabilities, especially when gu...
+Processed paper: A Survey on Latent Reasoning
+Found abstract: The creation of 3D assets with explicit, editable part structures is crucial
+for advancing interacti...
+Processed paper: OmniPart: Part-Aware 3D Generation with Semantic Decoupling and
+  Structural Cohesion
+Found abstract: Reconstructing fast-dynamic scenes from multi-view videos is crucial for
+high-speed motion analysis ...
+Processed paper: 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture
+Found abstract: Vision-and-Language Navigation (VLN) in real-world settings requires agents
+to process continuous vi...
+Processed paper: StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context
+  Modeling
+Found abstract: LLM-based web agents have recently made significant progress, but much of it
+has occurred in closed-...
+Processed paper: How to Train Your LLM Web Agent: A Statistical Diagnosis
+Found abstract: Translating natural language mathematical statements into formal, executable
+code is a fundamental c...
+Processed paper: CriticLean: Critic-Guided Reinforcement Learning for Mathematical
+  Formalization
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: MemOS: A Memory OS for AI System
+Paper already exists, checking if translation is complete...
+Update likes: 97  ->  91
+Update date_collected: 2025-07-10T07:08:12.228129+09:00  ->  2025-07-09T20:20:41.770783+09:00
+
+Processing paper 2/10
+Title: Should We Still Pretrain Encoders with Masked Language Modeling?
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  64
+Update date_collected: 2025-07-10T07:08:12.229381+09:00  ->  2025-07-09T20:20:41.772042+09:00
+
+Processing paper 3/10
+Title: SingLoRA: Low Rank Adaptation Using a Single Matrix
+Paper already exists, checking if translation is complete...
+Update likes: 60  ->  41
+Update date_collected: 2025-07-10T07:08:12.230536+09:00  ->  2025-07-09T20:20:41.776772+09:00
+
+Processing paper 4/10
+Title: Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  52
+Update date_collected: 2025-07-10T07:08:12.232205+09:00  ->  2025-07-09T20:20:41.773729+09:00
+
+Processing paper 5/10
+Title: A Survey on Latent Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 54  ->  46
+Update date_collected: 2025-07-10T07:08:12.234105+09:00  ->  2025-07-09T20:20:41.775628+09:00
+
+Processing paper 6/10
+Title: OmniPart: Part-Aware 3D Generation with Semantic Decoupling and
+  Structural Cohesion
+Paper already exists, checking if translation is complete...
+Update likes: 41  ->  32
+Update date_collected: 2025-07-10T07:08:12.235454+09:00  ->  2025-07-09T20:20:41.780877+09:00
+
+Processing paper 7/10
+Title: 4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous
+  Capture
+Paper already exists, checking if translation is complete...
+Update likes: 37  ->  35
+Update date_collected: 2025-07-10T07:08:12.236650+09:00  ->  2025-07-09T20:20:41.777953+09:00
+
+Processing paper 8/10
+Title: StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context
+  Modeling
+Paper already exists, checking if translation is complete...
+Update likes: 35  ->  31
+Update date_collected: 2025-07-10T07:08:12.238094+09:00  ->  2025-07-09T20:20:41.784067+09:00
+
+Processing paper 9/10
+Title: How to Train Your LLM Web Agent: A Statistical Diagnosis
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: CriticLean: Critic-Guided Reinforcement Learning for Mathematical
+  Formalization
+Paper already exists, checking if translation is complete...
+Update likes: 34  ->  31
+Update date_collected: 2025-07-10T07:08:12.241450+09:00  ->  2025-07-09T20:20:41.782629+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W28.json...
+
+Updating Notion database...
+Updating paper: MemOS: AI 시스템을 위한 메모리 운영 체제 (likes: 91 -> 97)
+Updating paper: 마스크된 언어 모델링으로 인코더를 여전히 사전학습해야 할까요? (likes: 64 -> 69)
+Updating paper: 싱글로라: 단일 행렬을 이용한 저랭크 적응 (likes: 41 -> 60)
+Updating paper: Cross-Domain 경험 활용을 통한 Agentic 문제 해결에 대한 Agent KB (likes: 52 -> 54)
+Updating paper: 잠재 추론에 대한 조사 (likes: 46 -> 54)
+Updating paper: OmniPart: 파트 의식적 3D 생성에서 의미론적 분리와 구조적 응집 (likes: 32 -> 41)
+Updating paper: 4DSloMo: 고속 씬을 위한 4D 재구성과 비동기적 촬영 (likes: 35 -> 37)
+Updating paper: StreamVLN: Streaming Vision-and-Language Navigation을 위한 SlowFast 컨텍스트 모델링 (likes: 31 -> 35)
+Creating new paper: LLM 웹 에이전트 훈련하는 방법: 통계적 진단
+Updating paper: CriticLean: 평가 안내형 강화학습을 활용한 수학 형식화 (likes: 31 -> 34)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jul  9 22:11:01 UTC 2025 ===
+

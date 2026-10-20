@@ -1,0 +1,109 @@
+=== Paper Collection Started at Wed Dec 31 22:08:25 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2026-W01
+URL: https://huggingface.co/papers/week/2026-W01
+Found 10 papers in weekly view
+Fetching likes for: InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion
+Fetching likes for: Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding
+Fetching likes for: Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss
+Fetching likes for: LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation
+Fetching likes for: Yume-1.5: A Text-Controlled Interactive World Generation Model
+Fetching likes for: Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion
+Fetching likes for: Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation
+Fetching likes for: Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone
+Fetching likes for: SmartSnap: Proactive Evidence Seeking for Self-Verifying Agents
+Fetching likes for: SpotEdit: Selective Region Editing in Diffusion Transformers
+Selected top 10 papers by likes:
+1. InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion (92 likes)
+2. Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding (87 likes)
+3. Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss (81 likes)
+4. LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation (59 likes)
+5. Yume-1.5: A Text-Controlled Interactive World Generation Model (53 likes)
+6. Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion (34 likes)
+7. Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation (34 likes)
+8. Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone (34 likes)
+9. SmartSnap: Proactive Evidence Seeking for Self-Verifying Agents (34 likes)
+10. SpotEdit: Selective Region Editing in Diffusion Transformers (32 likes)
+Found abstract: Recent advances in diffusion-based video generation have opened new possibilities for controllable v...
+Processed paper: InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion
+Found abstract: Humans understand long and complex texts by relying on a holistic semantic representation of the con...
+Processed paper: Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding
+Found abstract: Mixture-of-Experts (MoE) models lack explicit constraints to ensure the router's decisions align wel...
+Processed paper: Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss
+Found abstract: Real-time video generation via diffusion is essential for building general-purpose multimodal intera...
+Processed paper: LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation
+Found abstract: Recent approaches have demonstrated the promise of using diffusion models to generate interactive an...
+Processed paper: Yume-1.5: A Text-Controlled Interactive World Generation Model
+Found abstract: Diffusion-based video super-resolution (VSR) methods achieve strong perceptual quality but remain im...
+Processed paper: Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion
+Found abstract: Transparent objects remain notoriously hard for perception systems: refraction, reflection and trans...
+Processed paper: Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation
+Found abstract: While autoregressive Large Vision-Language Models (VLMs) have achieved remarkable success, their seq...
+Processed paper: Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone
+Found abstract: Agentic reinforcement learning (RL) holds great promise for the development of autonomous agents und...
+Processed paper: SmartSnap: Proactive Evidence Seeking for Self-Verifying Agents
+Found abstract: Diffusion Transformer models have significantly advanced image editing by encoding conditional image...
+Processed paper: SpotEdit: Selective Region Editing in Diffusion Transformers
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Yume-1.5: A Text-Controlled Interactive World Generation Model
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: SmartSnap: Proactive Evidence Seeking for Self-Verifying Agents
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: SpotEdit: Selective Region Editing in Diffusion Transformers
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W01.json...
+
+Updating Notion database...
+Creating new paper: InsertAnywhere: 현실적인 비디오 객체 삽입을 위한 4D 장면 기하학과 확산 모델의 연결
+Creating new paper: 상상력을 고려한 검색 증강 생성을 통한 장기 맥락 이해 향상
+Creating new paper: 전문가와 라우터를 연결하는 방식: 부수 손실을 통해 믹스처 오브 전문가(Mixture-of-Experts) 개선하기
+Creating new paper: 실시간 다중 모달 상호작용 비디오 확산을 향상시킨 온-정책 증류를 통한 LiveTalk
+Creating new paper: Yume-1.5: 텍스트 제어형 대화형 세계 생성 모델
+Creating new paper: 스트림-DiffVSR: 자기 회귀 확산을 통한 저지연 스트리밍 비디오 초해상도 (Auto-Regressive Diffusion)
+Creating new paper: 확산이 투명성을 알고 있다: 비디오 확산을 재활용하여 투명 물체의 깊이와 법선 추정
+Creating new paper: Dream-VL & Dream-VLA: 확산 언어 모델 백본을 기반으로 한 오픈 비전-언어 및 비전-언어-행동 모델
+Creating new paper: 스마트스냅: 스스로 검증하는 에이전트를 위한 선제적 증거 탐색
+Creating new paper: SpotEdit: 디퓨전 트랜스포머에서 선택적 영역 편집
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Dec 31 22:10:31 UTC 2025 ===
+

@@ -1,0 +1,371 @@
+[
+  {
+    "title": "Intern-S1: A Scientific Multimodal Foundation Model",
+    "abstract": "In recent years, a plethora of open-source foundation models have emerged,\nachieving remarkable progress in some widely attended fields, with performance\nbeing quite close to that of closed-source models. However, in high-value but\nmore challenging scientific professional fields, either the fields still rely\non expert models, or the progress of general foundation models lags\nsignificantly compared to those in popular areas, far from sufficient for\ntransforming scientific research and leaving substantial gap between\nopen-source models and closed-source models in these scientific domains. To\nmitigate this gap and explore a step further toward Artificial General\nIntelligence (AGI), we introduce Intern-S1, a specialized generalist equipped\nwith general understanding and reasoning capabilities with expertise to analyze\nmultiple science modal data. Intern-S1 is a multimodal Mixture-of-Experts (MoE)\nmodel with 28 billion activated parameters and 241 billion total parameters,\ncontinually pre-trained on 5T tokens, including over 2.5T tokens from\nscientific domains. In the post-training stage, Intern-S1 undergoes offline and\nthen online reinforcement learning (RL) in InternBootCamp, where we propose\nMixture-of-Rewards (MoR) to synergize the RL training on more than 1000 tasks\nsimultaneously. Through integrated innovations in algorithms, data, and\ntraining systems, Intern-S1 achieved top-tier performance in online RL\ntraining.On comprehensive evaluation benchmarks, Intern-S1 demonstrates\ncompetitive performance on general reasoning tasks among open-source models and\nsignificantly outperforms open-source models in scientific domains, surpassing\nclosed-source state-of-the-art models in professional tasks, such as molecular\nsynthesis planning, reaction condition prediction, predicting thermodynamic\nstabilities for crystals. Our models are available at\nhttps://huggingface.co/internlm/Intern-S1.",
+    "authors": [
+      "Lei Bai",
+      "Zhongrui Cai",
+      "Maosong Cao",
+      "Weihan Cao",
+      "Chiyu Chen",
+      "Haojiong Chen",
+      "Kai Chen",
+      "Pengcheng Chen",
+      "Ying Chen",
+      "Yongkang Chen",
+      "Yu Cheng",
+      "Yu Cheng",
+      "Pei Chu",
+      "Tao Chu",
+      "Erfei Cui",
+      "Ganqu Cui",
+      "Long Cui",
+      "Ziyun Cui",
+      "Nianchen Deng",
+      "Ning Ding",
+      "Nanqin Dong",
+      "Peijie Dong"
+    ],
+    "likes": 205,
+    "published_date": "Aug 21",
+    "url": "https://huggingface.co/papers/2508.15763",
+    "date_collected": "2025-08-25T07:07:08.293721+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "Intern-S1: 과학적 다중모달 기초 모델",
+      "abstract": "최근에는 많은 오픈 소스 기초 모델들이 등장하여 일부 관심 받는 분야에서 현저한 진전을 이루고 있으며, 성능이 폐쇄 소스 모델에 근접한 수준에 이르렀다. 그러나 고가치이지만 더 어려운 과학 전문 분야에서는 해당 분야가 여전히 전문가 모델에 의존하거나 일반 기초 모델의 발전이 인기 있는 분야보다 상당히 부족하여 과학 연구를 변혁하기에는 불충분하며, 오픈 소스 모델과 폐쇄 소스 모델 간의 큰 간극을 남기고 있다. 이 간극을 줄이고 인공 일반 지능(AGI)에 한 발 더 다가가기 위해, 우리는 Intern-S1을 소개한다. 이는 다중 과학 모달 데이터를 분석하는 전문적인 일반적이면서 이해와 추론 능력을 갖춘 특화된 일반적인 모델이다."
+    },
+    "summary": "1. Intern-S1은 5조 토큰을 전처리한 다중 모달(MoE) 모델로, 과학 분야에서 2.5조 토큰 이상을 포함하고 있으며, 2410억 개의 전체 파라미터를 보유하고 있다.\n2. Intern-S1은 InternBootCamp에서 오프라인 및 온라인 강화 학습을 거쳐, 1000개 이상의 작업에 동시에 강화 학습을 시행하는 MoR을 제안했으며, 온라인 강화 학습에서 최상위 성능을 달성했다.\n3. 이 모델은 일반적 추론 작업에서 오픈 소스 모델들과 경쟁력 있는 성능을 보여주며, 분자 합성 계획, 반응 조건 예측, 결정체 열역학 안정성 예측과 같은 전문적 작업에서 폐쇄 소스 최첨단 모델을 월등히 능가했다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DINOv3",
+    "abstract": "Self-supervised learning holds the promise of eliminating the need for manual\ndata annotation, enabling models to scale effortlessly to massive datasets and\nlarger architectures. By not being tailored to specific tasks or domains, this\ntraining paradigm has the potential to learn visual representations from\ndiverse sources, ranging from natural to aerial images -- using a single\nalgorithm. This technical report introduces DINOv3, a major milestone toward\nrealizing this vision by leveraging simple yet effective strategies. First, we\nleverage the benefit of scaling both dataset and model size by careful data\npreparation, design, and optimization. Second, we introduce a new method called\nGram anchoring, which effectively addresses the known yet unsolved issue of\ndense feature maps degrading during long training schedules. Finally, we apply\npost-hoc strategies that further enhance our models' flexibility with respect\nto resolution, model size, and alignment with text. As a result, we present a\nversatile vision foundation model that outperforms the specialized state of the\nart across a broad range of settings, without fine-tuning. DINOv3 produces\nhigh-quality dense features that achieve outstanding performance on various\nvision tasks, significantly surpassing previous self- and weakly-supervised\nfoundation models. We also share the DINOv3 suite of vision models, designed to\nadvance the state of the art on a wide spectrum of tasks and data by providing\nscalable solutions for diverse resource constraints and deployment scenarios.",
+    "authors": [
+      "Oriane Siméoni",
+      "Huy V. Vo",
+      "Maximilian Seitzer",
+      "Federico Baldassarre",
+      "Maxime Oquab",
+      "Cijo Jose",
+      "Vasil Khalidov",
+      "Marc Szafraniec",
+      "Seungeun Yi",
+      "Michaël Ramamonjisoa",
+      "Francisco Massa",
+      "Daniel Haziza",
+      "Luca Wehrstedt",
+      "Jianyuan Wang",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Leonel Sentana",
+      "Claire Roberts",
+      "Andrea Vedaldi",
+      "Jamie Tolan",
+      "John Brandt",
+      "Camille Couprie"
+    ],
+    "likes": 186,
+    "published_date": "Aug 13",
+    "url": "https://huggingface.co/papers/2508.10104",
+    "date_collected": "2025-08-25T07:07:08.295666+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "DINOv3",
+      "abstract": "자가 지도학습은 수작업 데이터 주석이 필요 없어지는 가능성을 갖고 있어 모델이 대규모 데이터셋과 큰 아키텍처로 쉽게 확장될 수 있게 합니다. 특정 작업이나 도메인에 맞추어지지 않아 다양한 소스(자연 이미지부터 공중 이미지까지)로부터 시각적 표현을 학습하는 잠재력이 있는 이 훈련 패러다임은 단일 알고리즘을 사용합니다. 본 기술 보고서에서는 DINOv3를 소개하며 이러한 비전을 실현하기 위해 간단하면서도 효과적인 전략을 활용합니다. 먼저 데이터 준비, 설계 및 최적화에 주의를 기울여 데이터셋과 모델 크기를 함께 확장하는 이점을 이용합니다. 둘째로, 긴 학습 일정 동안 밀도 높은 피쳐 맵이 저하되는 알려진 문제를 효과적으로 해결하는 'Gram anchoring'이라는 새로운 방법을 소개합니다. 마지막으로, 후반 전략을 적용하여 모델의 해상도, 모델 크기 및 텍스트와의 정렬에 대한 유연성을 더욱 향상시킵니다. 결과적으로, 튜닝 없이 다양한 환경에서 특화된 최신 기술 성능을 능가하는 다목적 비전 기반 모델을 제시합니다. DINOv3는 다양한 비전 작업에서 우수한 성능을 달성하는 고품질 밀도 피쳐를 생성하여 이전의 자가 및 약 자가 지도 기반 모델을 크게 능가합니다. 또한, 다양한 리소스 제약과 배포 시나리오에 확장 가능한 솔루션을 제공함으로써 다양한 작업 및 데이터에 대한 최신 기술 발전을 위해 설계된 DINOv3 비전 모델 스위트를 공유합니다."
+    },
+    "summary": "1. 자가 지도학습은 수작업 데이터 주석이 필요 없는 빠른 확장을 가능케하며, DINOv3는 간단하고 효과적인 전략을 활용하여 다목적 비전 기반 모델을 제시합니다.\n2. 'Gram anchoring' 방법을 통해 밀도 높은 피쳐 맵의 문제를 효과적으로 해결하고, 후반 전략을 적용하여 모델의 유연성을 향상시킵니다.\n3. DINOv3는 다양한 비전 작업에서 우수한 성능을 보이며, 자가 및 약 자가 지도 기반 모델을 능가하며 최신 기술을 발전시키기 위한 솔루션을 제공합니다.",
+    "categories": [
+      "Computer Vision",
+      "Self-supervised Learning"
+    ]
+  },
+  {
+    "title": "Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent\n  Distillation and Agentic RL",
+    "abstract": "Recent advances in large language models (LLMs) and multi-agent systems have\ndemonstrated remarkable capabilities in complex problem-solving tasks such as\ndeep research, vibe coding, and mathematical reasoning. However, most existing\nmulti-agent systems are built upon manual prompt/workflow engineering with\nsophisticated agent frameworks, making them computationally inefficient, less\ncapable, and can not benefit from data-centric learning. In this work, we\nintroduce Chain-of-Agents (CoA), a novel paradigm of LLM reasoning that enables\nnative end-to-end complex problem-solving in the same way as a multi-agent\nsystem (i.e., multi-turn problem solving with multiple tools and multiple\nagents) within one model. In chain-of-agents problem-solving, the model\ndynamically activates different tool agents and role-playing agents to simulate\nmulti-agent collaboration in an end-to-end fashion. To elicit end-to-end\nchain-of-agents problem-solving abilities in LLMs, we introduce a multi-agent\ndistillation framework to distill state-of-the-art multi-agent systems into\nchain-of-agents trajectories for agentic supervised fine-tuning. We then use\nagentic reinforcement learning on verifiable agentic tasks to further improve\nthe models' capabilities on chain-of-agents problem solving. We call the\nresulting models Agent Foundation Models (AFMs). Our empirical studies\ndemonstrate that AFM establishes new state-of-the-art performance across\ndiverse benchmarks in both web agent and code agent settings. We make the\nentire research, including the model weights, code for training and evaluation,\nand the training data, fully open-sourced, which offers a solid starting point\nfor future research on agent models and agentic RL.",
+    "authors": [
+      "Weizhen Li",
+      "Jianbo Lin",
+      "Zhuosong Jiang",
+      "Jingyi Cao",
+      "Xinpeng Liu",
+      "Jiayu Zhang",
+      "Zhenqiang Huang",
+      "Qianben Chen",
+      "Weichen Sun",
+      "Qiexiang Wang",
+      "Hongxuan Lu",
+      "Tianrui Qin",
+      "Chenghao Zhu",
+      "Yi Yao",
+      "Shuying Fan",
+      "Xiaowan Li",
+      "Tiannan Wang",
+      "Pai Liu",
+      "King Zhu",
+      "He Zhu",
+      "Dingfeng Shi",
+      "Piaohong Wang"
+    ],
+    "likes": 104,
+    "published_date": "Aug 6",
+    "url": "https://huggingface.co/papers/2508.13167",
+    "date_collected": "2025-08-25T07:07:08.297563+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "에이전트 연쇄: 다중 에이전트 간소화 및 영향력 기반 강화 학습을 통한 최종 에이전트 기반 모델",
+      "abstract": "최근의 대형 언어 모델(Large Language Models, LLMs)과 다중 에이전트 시스템의 발전은 심층 연구, 코드 작성 분위기, 수학적 추론과 같은 복잡한 문제 해결 작업에서 높은 능력을 보여주었습니다. 그러나 대부분의 기존 다중 에이전트 시스템은 일부 에이전트 프레임워크를 사용하여 수동 프롬프트/워크플로 엔지니어링을 토대로 구축되어 있어 계산적으로 비효율적이고 덜 능력이며 데이터 중심 학습의 이점을 활용할 수 없는 문제가 있습니다. 본 연구에서는 새로운 패러다임인 연쇄 에이전트(Chain-of-Agents, CoA)를 소개합니다. CoA는 다중 에이전트 시스템과 같은 방식으로 단일 모델 내에서 다중 툴 및 다중 에이전트를 활용하여 최종 복잡한 문제 해결을 가능하게 하는 LLM 추론입니다. 연쇄 에이전트 문제 해결에서 모델은 동적으로 다양한 툴 에이전트와 롤플레잉 에이전트를 활성화하여 최종 복합적으로 다중 에이전트 협업을 시뮬레이션합니다. LLM 내에서 최종 연쇄 에이전트 문제 해결 능력을 유도하기 위해 최신 다중 에이전트 시스템을 Chain-of-Agents 궤적으로 간소화하는 다중 에이전트 증류 프레임워크를 소개합니다. 그런 다음 확인 할 수 있는 에이전트 작업에서 에이전트 중심 강화 학습을 사용하여 모델의 연쇄 에이전트 문제 해결 능력을 더욱 향상시킵니다. 우리는 이러한 경과 모델을 에이전트 기반 모델(Agent Foundation Models, AFMs)이라고 합니다. 우리의 경험적 연구는 AFM이 웹 에이전트 및 코드 에이전트 설정에서 다양한 벤치마크에서 새로운 최고 수준의 성능을 제시함을 보여줍니다. 모델 가중치, 교육 및 평가 코드, 교육 데이터를 포함한 전체 연구를 완전히 오픈 소스로 제공하여 에이전트 모델 및 에이전트 중심 강화 학습에 대한 미래 연구의 견고한 시작점을 제공합니다."
+    },
+    "summary": "1. Chain-of-Agents(CoA)는 최종 복합적인 문제 해결을 위해 LLM에서 다중 툴 및 에이전트를 활용하는 새로운 패러다임을 제시합니다.\n2. 새로운 다중 에이전트 증류 프레임워크를 도입하여 AFM을 개발하고, 이를 통해 다양한 벤치마크에서 성능을 향상시킵니다.\n3. 연구 결과는 웹 에이전트 및 코드 에이전트 설정에서 AFM이 새로운 최고 수준의 성능을 달성하는 것을 입증하며, 모든 연구 자료를 완전히 공개함으로써 미래 에이전트 모델 및 에이전트 중심 강화 학습을 위한 기반을 제공합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Ovis2.5 Technical Report",
+    "abstract": "We present Ovis2.5, a successor to Ovis2 designed for native-resolution\nvisual perception and strong multimodal reasoning. Ovis2.5 integrates a\nnative-resolution vision transformer that processes images at their native,\nvariable resolutions, avoiding the degradation from fixed-resolution tiling and\npreserving both fine detail and global layout -- crucial for visually dense\ncontent like complex charts. To strengthen reasoning, we train the model to\nmove beyond linear chain-of-thought and perform reflection -- including\nself-checking and revision. This advanced capability is exposed as an optional\n\"thinking mode\" at inference time, allowing users to trade latency for enhanced\naccuracy on difficult inputs. The model is trained via a comprehensive\nfive-phase curriculum that progressively builds its skills. The process begins\nwith foundational visual and multimodal pretraining, advances through\nlarge-scale instruction tuning, and culminates in alignment and reasoning\nenhancement using DPO and GRPO. To scale these upgrades efficiently, we employ\nmultimodal data packing and hybrid parallelism, yielding a significant\nend-to-end speedup. We release two open-source models: Ovis2.5-9B and\nOvis2.5-2B. The latter continues the \"small model, big performance\" philosophy\nof Ovis2, making it ideal for resource-constrained, on-device scenarios. On the\nOpenCompass multimodal leaderboard, Ovis2.5-9B averages 78.3, marking a\nsubstantial improvement over its predecessor, Ovis2-8B, and achieving\nstate-of-the-art results among open-source MLLMs in the sub-40B parameter\nrange; Ovis2.5-2B scores 73.9, establishing SOTA for its size. Beyond aggregate\nscores, Ovis2.5 achieves leading results on STEM benchmarks, exhibits strong\ncapabilities on grounding and video tasks, and achieves open-source SOTA at its\nscale for complex chart analysis.",
+    "authors": [
+      "Shiyin Lu",
+      "Yang Li",
+      "Yu Xia",
+      "Yuwei Hu",
+      "Shanshan Zhao",
+      "Yanqing Ma",
+      "Zhichao Wei",
+      "Yinglun Li",
+      "Lunhao Duan",
+      "Jianshan Zhao",
+      "Yuxuan Han",
+      "Haijun Li",
+      "Wanying Chen",
+      "Junke Tang",
+      "Chengkun Hou",
+      "Zhixing Du",
+      "Tianli Zhou",
+      "Wenjie Zhang",
+      "Huping Ding",
+      "Jiahe Li",
+      "Wen Li",
+      "Gui Hu"
+    ],
+    "likes": 100,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11737",
+    "date_collected": "2025-08-25T07:07:08.299405+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "Ovis2.5 기술 보고서",
+      "abstract": "Ovis2의 후속작인 Ovis2.5를 소개합니다. Ovis2.5는 원본 해상도의 시각 지각과 강력한 다중 모달 추론을 위해 설계되었습니다. Ovis2.5는 원본 변수 해상도에서 이미지를 처리하는 네이티브 해상도 비전 트랜스포머를 통합하여 고정 해상도 분할로 인한 품질 저하를 피하고 세부 정보와 전체 레이아웃을 보존합니다. 추론 시 선택적으로 \"사고 모드\"로 논리 추론을 강화하여 어려운 입력에 더 높은 정확도를 제공할 수 있습니다."
+    },
+    "summary": "1. Ovis2.5는 시각 트랜스포머와 다중 모달 추론을 통합하여 원본 해상도 이미지 처리 및 강력한 추론 능력을 갖췄다.\n2. 모델은 선형적 사고를 벗어나 자기 확인 및 수정을 포함한 추론 능력을 향상시켰으며, 추론 시 \"사고 모드\"를 선택할 수 있는 선택지를 제공한다.\n3. Ovis2.5는 다양한 단계의 교육 과정을 거쳐 능력을 쌓아가며, 대규모 가르침 튜닝을 통해 정렬과 추론 능력을 향상시켰다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "SSRL: Self-Search Reinforcement Learning",
+    "abstract": "We investigate the potential of large language models (LLMs) to serve as\nefficient simulators for agentic search tasks in reinforcement learning (RL),\nthereby reducing dependence on costly interactions with external search\nengines. To this end, we first quantify the intrinsic search capability of LLMs\nvia structured prompting and repeated sampling, which we term Self-Search. Our\nresults reveal that LLMs exhibit strong scaling behavior with respect to the\ninference budget, achieving high pass@k on question-answering benchmarks,\nincluding the challenging BrowseComp task. Building on these observations, we\nintroduce Self-Search RL (SSRL), which enhances LLMs' Self-Search capability\nthrough format-based and rule-based rewards. SSRL enables models to iteratively\nrefine their knowledge utilization internally, without requiring access to\nexternal tools. Empirical evaluations demonstrate that SSRL-trained policy\nmodels provide a cost-effective and stable environment for search-driven RL\ntraining, reducing reliance on external search engines and facilitating robust\nsim-to-real transfer. We draw the following conclusions: 1) LLMs possess world\nknowledge that can be effectively elicited to achieve high performance; 2) SSRL\ndemonstrates the potential of leveraging internal knowledge to reduce\nhallucination; 3) SSRL-trained models integrate seamlessly with external search\nengines without additional effort. Our findings highlight the potential of LLMs\nto support more scalable RL agent training.",
+    "authors": [
+      "Yuchen Fan",
+      "Kaiyan Zhang",
+      "Heng Zhou",
+      "Yuxin Zuo",
+      "Yanxu Chen",
+      "Yu Fu",
+      "Xinwei Long",
+      "Xuekai Zhu",
+      "Che Jiang",
+      "Yuchen Zhang",
+      "Li Kang",
+      "Gang Chen",
+      "Cheng Huang",
+      "Zhizhou He",
+      "Bingning Wang",
+      "Lei Bai",
+      "Ning Ding",
+      "Bowen Zhou"
+    ],
+    "likes": 88,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10874",
+    "date_collected": "2025-08-25T07:07:08.301115+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "SSRL: Self-Search Reinforcement Learning",
+      "abstract": "우리는 대규모 언어 모델(LLMs)이 보상 학습(RL)에서 에이전트 검색 작업의 효율적인 시뮬레이터로 작용할 잠재력을 탐구하여 외부 검색 엔진과의 비용이 많이 드는 상호작용에 대한 의존도를 줄일 수 있는지 조사합니다. 이를 위해, 우리는 LLMs의 고유한 탐색 능력을 구조화된 프롬프팅과 반복 샘플링을 통해 측정하여 Self-Search로 명명합니다. 결과는, LLMs가 추론 예산에 대해 강력한 스케일링 행동을 나타내며, 질의 응답 벤치마크에서 뛰어난 성과를 보이는 것을 보여줍니다. 이러한 관찰을 기반으로, 우리는 포맷 기반 및 규칙 기반 보상을 통해 LLMs의 Self-Search 능력을 강화하는 Self-Search RL(SSRL)을 소개합니다. SSRL은 모델이 외부 도구에 액세스하지 않고 내부적으로 지식 활용을 반복적으로 개선할 수 있게 합니다. 실험평가 결과는, SSRL로 훈련된 정책 모델이 검색 주도형 RL 훈련을 위한 비용 효율적이고 안정적인 환경을 제공하여 외부 검색 엔진에 대한 의존도를 줄이고 견고한 시뮬레이션-실제 전이를 용이하게 합니다. 우리는 다음 결론을 도출합니다: 1) LLMs는 뛰어난 성능을 달성하기 위해 효과적으로 추출할 수 있는 세계 지식을 보유하고 있습니다. 2) SSRL은 내부 지식을 활용하여 환각을 줄이는 잠재력을 보여줍니다. 3) SSRL로 훈련된 모델은 추가적인 노력없이 외부 검색 엔진과 원활하게 통합됩니다. 우리의 연구 결과는 LLMs가 더 확장 가능한 RL 에이전트 훈련을 지원할 잠재력을 강조합니다."
+    },
+    "summary": "1. LLMs는 고유한 자연어 모델로써 높은 성능을 달성하기 위해 활용될 수 있으며, Self-Search RL(SSRL)은 내부 지식을 활용하여 환각을 줄이고 외부 검색 엔진과 효율적으로 통합될 수 있음을 입증합니다.\n2. SSRL은 LLMs의 세계 지식을 효과적으로 추출하여 안정적이고 비용 효과적인 검색 주도형 RL 훈련을 가능하게 합니다.\n3. SSRL로 훈련된 모델은 외부 검색 엔진에 대한 의존도를 줄이고 견고한 시뮬레이션-실제 전이를 용이하게 하면서도 높은 성능을 발휘합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Thyme: Think Beyond Images",
+    "abstract": "Following OpenAI's introduction of the ``thinking with images'' concept,\nrecent efforts have explored stimulating the use of visual information in the\nreasoning process to enhance model performance in perception and reasoning\ntasks. However, to the best of our knowledge, no open-source work currently\noffers a feature set as rich as proprietary models (O3), which can perform\ndiverse image manipulations and simultaneously enhance logical reasoning\ncapabilities through code. In this paper, we make a preliminary attempt in this\ndirection by introducing Thyme (Think Beyond Images), a novel paradigm for\nenabling MLLMs to transcend existing ``think with images'' approaches by\nautonomously generating and executing diverse image processing and\ncomputational operations via executable code. This approach not only\nfacilitates a rich, on-the-fly set of image manipulations (e.g., cropping,\nrotation, contrast enhancement) but also allows for mathematical computations,\nall while maintaining high autonomy in deciding when and how to apply these\noperations. We activate this capability through a two-stage training strategy:\nan initial SFT on a curated dataset of 500K samples to teach code generation,\nfollowed by a RL phase to refine decision-making. For the RL stage, we manually\ncollect and design high-resolution question-answer pairs to increase the\nlearning difficulty, and we propose GRPO-ATS (Group Relative Policy\nOptimization with Adaptive Temperature Sampling), an algorithm that applies\ndistinct temperatures to text and code generation to balance reasoning\nexploration with code execution precision. We conduct extensive experimental\nanalysis and ablation studies. Comprehensive evaluations on nearly 20\nbenchmarks show that Thyme yields significant and consistent performance gains,\nparticularly in challenging high-resolution perception and complex reasoning\ntasks.",
+    "authors": [
+      "Yi-Fan Zhang",
+      "Xingyu Lu",
+      "Shukang Yin",
+      "Chaoyou Fu",
+      "Wei Chen",
+      "Xiao Hu",
+      "Bin Wen",
+      "Kaiyu Jiang",
+      "Changyi Liu",
+      "Tianke Zhang",
+      "Haonan Fan",
+      "Kaibing Chen",
+      "Jiankang Chen",
+      "Haojie Ding",
+      "Kaiyu Tang",
+      "Zhang Zhang",
+      "Liang Wang",
+      "Fan Yang",
+      "Tingting Gao",
+      "Guorui Zhou"
+    ],
+    "likes": 75,
+    "published_date": "Aug 15",
+    "url": "https://huggingface.co/papers/2508.11630",
+    "date_collected": "2025-08-25T07:07:08.302943+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "이미지 너머로 생각하라: Thyme (Think Beyond Images)",
+      "abstract": "OpenAI가 소개한 \"이미지로 생각하기\" 개념을 따르면서 최근 노력들은 시각 정보의 사용을 활성화하여 모델 성능을 향상시키기 위해 이성적 추론 작업에서 모델 성능을 향상시키는데 노력해왔다. 그러나 우리의 지식으로는 아직도 다양한 이미지 조작과 동시에 코드를 통해 논리적 추론 능력을 강화하는 독점적 모델들만큼 풍부한 기능 세트를 제공하는 오픈 소스 작업이 없다. 본 논문에서는 Thyme (Think Beyond Images)라는 새로운 패러다임을 소개하여, MLLM이 \"이미지로 생각하기\" 접근법을 넘어서게 하여 실행 가능한 코드를 통해 다양한 이미지 처리 및 계산 작업을 자동으로 생성하고 실행하도록 하는 초기 시도를 한다. 이 접근 방식은 이미지 조작의 풍부하고 즉석 사용(크롭, 회전, 대비 향상 등)과 더불어 수학적 계산을 가능케 하고, 이러한 작업을 언제 어떻게 적용할지에 대한 높은 자율성을 유지한다. 이 능력을 활성화하려면 두 단계의 훈련 전략을 사용한다: 50만 개의 샘플로 편집된 데이터셋 위에서 코드 생성을 가르치기 위한 초기 SFT, 그리고 의사결정을 정제하기 위한 강화학습(RL) 단계. RL 단계에서는 학습 난이도를 높이기 위해 고해상도 질의응답 쌍을 수집하고 디자인하며, 추론 탐사와 코드 실행 정밀도를 균형있게 향상시키기 위해 텍스트와 코드 생성에 서로 다른 온도를 적용하는 GRPO-ATS(Group Relative Policy Optimization with Adaptive Temperature Sampling) 알고리즘을 제안한다. 또한 포괄적인 실험 분석과 제거 연구를 실시한다. 거의 20개의 벤치마크에 대해 실시한 포괄적인 평가에서, Thyme은 특히 고해상도 perception과 복잡한 추론 작업에서 상당하고 일관된 성능 향상을 제공한다."
+    },
+    "summary": "1. Thyme는 \"이미지로 생각하기\" 접근법을 넘어서 실행 가능한 코드를 통해 다양한 이미지 처리와 계산 작업을 자동으로 생성하고 실행하여 높은 자율성을 유지한다.\n2. 두 단계의 훈련 전략을 통해 초기 SFT로 코드 생성을 가르치고 RL로 의사결정을 정제함으로써 Thyme은 고해상도 perception과 복잡한 추론 작업에서 상당하고 일관된 성능 향상을 이룬다.\n3. GRPO-ATS 알고리즘을 활용하여 Thyme은 텍스트와 코드 생성에 서로 다른 온도를 적용하여 추론 탐사와 코드 실행 정밀도를 균형있게 개선한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "DuPO: Enabling Reliable LLM Self-Verification via Dual Preference\n  Optimization",
+    "abstract": "We present DuPO, a dual learning-based preference optimization framework that\ngenerates annotation-free feedback via a generalized duality. DuPO addresses\ntwo key limitations: Reinforcement Learning with Verifiable Rewards (RLVR)'s\nreliance on costly labels and applicability restricted to verifiable tasks, and\ntraditional dual learning's restriction to strictly dual task pairs (e.g.,\ntranslation and back-translation). Specifically, DuPO decomposes a primal\ntask's input into known and unknown components, then constructs its dual task\nto reconstruct the unknown part using the primal output and known information\n(e.g., reversing math solutions to recover hidden variables), broadening\napplicability to non-invertible tasks. The quality of this reconstruction\nserves as a self-supervised reward to optimize the primal task, synergizing\nwith LLMs' ability to instantiate both tasks via a single model. Empirically,\nDuPO achieves substantial gains across diverse tasks: it enhances the average\ntranslation quality by 2.13 COMET over 756 directions, boosts the mathematical\nreasoning accuracy by an average of 6.4 points on three challenge benchmarks,\nand enhances performance by 9.3 points as an inference-time reranker (trading\ncomputation for accuracy). These results position DuPO as a scalable, general,\nand annotation-free paradigm for LLM optimization.",
+    "authors": [
+      "Shuaijie She",
+      "Yu Bao",
+      "Yu Lu",
+      "Lu Xu",
+      "Tao Li",
+      "Wenhao Zhu",
+      "Shujian Huang",
+      "Shanbo Cheng",
+      "Lu Lu",
+      "Yuxuan Wang"
+    ],
+    "likes": 74,
+    "published_date": "Aug 20",
+    "url": "https://huggingface.co/papers/2508.14460",
+    "date_collected": "2025-08-25T07:07:08.304275+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "DuPO: 이중 선호도를 통한 신뢰할 수 있는 LLM 자체 검증 활성화",
+      "abstract": "저희는 일반화된 이중성을 통해 주석 무료 피드백을 생성하는 이중 학습 기반 선호도 최적화 프레임워크인 DuPO를 제시합니다. DuPO는 비용이 많이 드는 레이블에 의존하는 Reinforcement Learning with Verifiable Rewards (RLVR)의 한계와 검증 가능한 작업에 제한되는 점, 그리고 전통적인 이중 학습의 엄격한 이중 작업 쌍(예: 번역 및 역번역)에 대한 제약을 해결합니다."
+    },
+    "summary": "1. DuPO는 원시 작업의 입력을 알려진 부분과 알려지지 않은 부분으로 분해하고, 그런 다음 주요 출력과 알려진 정보를 사용하여 알려지지 않은 부분을 다시 구성하는 이중 작업을 생성하여 다른 방향으로의 적용 가능성을 확장합니다.\n2. DuPO는 자가 감독적 보상으로 사용되는 재구성의 품질을 최적화하여 원시 작업을 개선하고, LLM 능력과 단일 모델을 통해 두 작업 모두를 실체화하는 능력을 공조합니다.\n3. DuPO는 다양한 작업 영역에서 상당한 이득을 달성하며, 756가지 방향으로 평균 번역 품질을 2.13 포인트 향상시키고, 수학적 추론 정확성을 3개의 도전 벤치마크에서 평균 6.4 포인트 향상시키며, 추론 시간 재정렬기로 성능을 9.3 포인트 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long\n  Narrative Reasoning",
+    "abstract": "Narrative comprehension on long stories and novels has been a challenging\ndomain attributed to their intricate plotlines and entangled, often evolving\nrelations among characters and entities. Given the LLM's diminished reasoning\nover extended context and high computational cost, retrieval-based approaches\nremain a pivotal role in practice. However, traditional RAG methods can fall\nshort due to their stateless, single-step retrieval process, which often\noverlooks the dynamic nature of capturing interconnected relations within\nlong-range context. In this work, we propose ComoRAG, holding the principle\nthat narrative reasoning is not a one-shot process, but a dynamic, evolving\ninterplay between new evidence acquisition and past knowledge consolidation,\nanalogous to human cognition when reasoning with memory-related signals in the\nbrain. Specifically, when encountering a reasoning impasse, ComoRAG undergoes\niterative reasoning cycles while interacting with a dynamic memory workspace.\nIn each cycle, it generates probing queries to devise new exploratory paths,\nthen integrates the retrieved evidence of new aspects into a global memory\npool, thereby supporting the emergence of a coherent context for the query\nresolution. Across four challenging long-context narrative benchmarks (200K+\ntokens), ComoRAG outperforms strong RAG baselines with consistent relative\ngains up to 11% compared to the strongest baseline. Further analysis reveals\nthat ComoRAG is particularly advantageous for complex queries requiring global\ncomprehension, offering a principled, cognitively motivated paradigm for\nretrieval-based long context comprehension towards stateful reasoning. Our code\nis publicly released at https://github.com/EternityJune25/ComoRAG",
+    "authors": [
+      "Juyuan Wang",
+      "Rongchen Zhao",
+      "Wei Wei",
+      "Yufeng Wang",
+      "Mo Yu",
+      "Jie Zhou",
+      "Jin Xu",
+      "Liyan Xu"
+    ],
+    "likes": 69,
+    "published_date": "Aug 14",
+    "url": "https://huggingface.co/papers/2508.10419",
+    "date_collected": "2025-08-25T07:07:08.305572+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "ComoRAG: 상태 기반 장기 이야기 추론을 위한 인지 영감을 받은 기억 조직화 RAG",
+      "abstract": "긴 이야기와 소설의 서사 이해는 복잡한 줄거리와 캐릭터 및 개체 사이의 복잡하고 종종 변화하는 관계로 인해 어려운 도메인으로 여겨져왔습니다. LLM의 장거리 문맥에 대한 추론 능력이 감소되고 높은 계산 비용으로 인해 검색 기반 접근법이 실무에서 중요한 역할을 한다. 그러나 전통적인 RAG 방법은 상태 없는 단일 단계 검색 프로세스로 인해 종종 긴 범위 문맥 내에서 상호 연결된 관계를 포착할 때 동적 성격을 간과하기 쉽습니다. 본 연구에서 우리는 ComoRAG를 제안하는데, 서사 추론이 단일 단계가 아니라 새로운 증거 획득과 과거 지식 정리 사이의 동적이며 진화하는 상호 작용이며, 뇌에서 기억 관련 신호로 추론할 때 인간의 인지와 유사하다는 원칙입니다. ComoRAG는 추론이 막힐 때마다 동적 메모리 작업 공간과 상호 작용하면서 반복적인 추론 주기를 거칩니다. 각 주기에서는 새로운 탐사 경로를 개발하기 위해 탐사 쿼리를 생성한 다음 새로운 측면의 검색된 증거를 전역 메모리 풀에 통합하여 질문 해결을 위한 일관된 문맥의 발생을 지원합니다. 4개의 어려운 장기적인 문맥 서사 벤치마크(200K 이상 토큰)를 통해 ComoRAG는 가장 강력한 RAG 기준에 비해 일관된 상대적 향상으로 11%까지 성과를 높였습니다. 추가적인 분석 결과, ComoRAG는 글로벌 이해력을 요구하는 복잡한 질문에 특히 유리하며, 상태적 추론을 향한 검색 기반 장기 문맥 이해를 위한 원칙적이고 인지적 동기가 된다. 저희의 코드는 https://github.com/EternityJune25/ComoRAG에서 공개되어 있습니다."
+    },
+    "summary": "1. ComoRAG는 인간의 뇌가 기억과 관련된 신호로 추론할 때 인지적이고 진화하는 특성을 반영하여 상태 기반의 장기적인 이야기 이해를 위한 새로운 접근 방식을 제안합니다.\n2. ComoRAG는 상태 업데이트가 가능한 동적 메모리 작업 공간과 상호 작용하여, 반복적으로 새로운 증거를 통합하고 탐사 경로를 개발함으로써 긴 범위 문맥에서의 추론 성능을 개선합니다.\n3. 4개의 어려운 장기적인 문맥 서사 벤치마크를 통해 ComoRAG는 강력한 RAG 기준에 비해 최대 11%의 상대적인 개선을 보이며, 글로벌 이해력을 필요로 하는 복잡한 질문에 특히 유리함이 확인되었습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Narrative Comprehension"
+    ]
+  },
+  {
+    "title": "From Scores to Skills: A Cognitive Diagnosis Framework for Evaluating\n  Financial Large Language Models",
+    "abstract": "Large Language Models (LLMs) have shown promise for financial applications,\nyet their suitability for this high-stakes domain remains largely unproven due\nto inadequacies in existing benchmarks. Existing benchmarks solely rely on\nscore-level evaluation, summarizing performance with a single score that\nobscures the nuanced understanding of what models truly know and their precise\nlimitations. They also rely on datasets that cover only a narrow subset of\nfinancial concepts, while overlooking other essentials for real-world\napplications. To address these gaps, we introduce FinCDM, the first cognitive\ndiagnosis evaluation framework tailored for financial LLMs, enabling the\nevaluation of LLMs at the knowledge-skill level, identifying what financial\nskills and knowledge they have or lack based on their response patterns across\nskill-tagged tasks, rather than a single aggregated number. We construct\nCPA-QKA, the first cognitively informed financial evaluation dataset derived\nfrom the Certified Public Accountant (CPA) examination, with comprehensive\ncoverage of real-world accounting and financial skills. It is rigorously\nannotated by domain experts, who author, validate, and annotate questions with\nhigh inter-annotator agreement and fine-grained knowledge labels. Our extensive\nexperiments on 30 proprietary, open-source, and domain-specific LLMs show that\nFinCDM reveals hidden knowledge gaps, identifies under-tested areas such as tax\nand regulatory reasoning overlooked by traditional benchmarks, and uncovers\nbehavioral clusters among models. FinCDM introduces a new paradigm for\nfinancial LLM evaluation by enabling interpretable, skill-aware diagnosis that\nsupports more trustworthy and targeted model development, and all datasets and\nevaluation scripts will be publicly released to support further research.",
+    "authors": [
+      "Ziyan Kuang",
+      "Feiyu Zhu",
+      "Maowei Jiang",
+      "Yanzhao Lai",
+      "Zelin Wang",
+      "Zhitong Wang",
+      "Meikang Qiu",
+      "Jiajia Huang",
+      "Min Peng",
+      "Qianqian Xie",
+      "Sophia Ananiadou"
+    ],
+    "likes": 58,
+    "published_date": "Aug 19",
+    "url": "https://huggingface.co/papers/2508.13491",
+    "date_collected": "2025-08-25T07:07:08.306969+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "점수에서 스킬로: 금융 대규모 언어 모델 평가를 위한 인지 진단 프레임워크",
+      "abstract": "대규모 언어 모델(LLMs)은 금융 분야에서 유망성을 보여주지만, 기존의 평가 척도 부족으로 높은 위험성을 내포하는 이 분야에 적합성이 여전히 증명되지 않았다. 이전의 평가는 단순히 점수 수준에만 의존하며, 단일 점수로 성능을 요약함으로써 모델이 실제로 얼마나 많은 것을 알고 있으며 정밀한 한계는 명확히 제시되지 않는다. 우리는 이러한 공백을 해소하기 위해 금융 LLMs에 특화된 첫번째 인지 진단 평가 프레임워크인 FinCDM을 소개한다. FinCDM은 지식-스킬 수준에서 LLMs를 평가하며, 단일 통합된 숫자가 아닌 스킬이 태깅된 작업을 통해 모델이 어떤 금융 스킬과 지식을 보유하거나 결여했는지 식별한다."
+    },
+    "summary": "1. FinCDM은 금융 LLMs의 진단을 가능하게 하며, 숨겨진 지식 결여를 드러내고 전통적인 측정 기준에서 간과되던 세금 및 규제 추론과 같은 미시험 영역을 식별한다.\n2. FinCDM은 CPA(Certified Public Accountant) 시험에서 파생된 첫 번째 인지적으로 안내된 금융 평가 데이터 세트인 CPA-QKA를 구축하여 실제 회계 및 금융 스킬을 포괄적으로 다룬다.\n3. FinCDM은 해석 가능하고 스킬을 고려한 진단을 가능하게함으로써 더 믿을 수 있고 특정 목표를 가진 모델 개발을 지원한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "4DNeX: Feed-Forward 4D Generative Modeling Made Easy",
+    "abstract": "We present 4DNeX, the first feed-forward framework for generating 4D (i.e.,\ndynamic 3D) scene representations from a single image. In contrast to existing\nmethods that rely on computationally intensive optimization or require\nmulti-frame video inputs, 4DNeX enables efficient, end-to-end image-to-4D\ngeneration by fine-tuning a pretrained video diffusion model. Specifically, 1)\nto alleviate the scarcity of 4D data, we construct 4DNeX-10M, a large-scale\ndataset with high-quality 4D annotations generated using advanced\nreconstruction approaches. 2) we introduce a unified 6D video representation\nthat jointly models RGB and XYZ sequences, facilitating structured learning of\nboth appearance and geometry. 3) we propose a set of simple yet effective\nadaptation strategies to repurpose pretrained video diffusion models for 4D\nmodeling. 4DNeX produces high-quality dynamic point clouds that enable\nnovel-view video synthesis. Extensive experiments demonstrate that 4DNeX\noutperforms existing 4D generation methods in efficiency and generalizability,\noffering a scalable solution for image-to-4D modeling and laying the foundation\nfor generative 4D world models that simulate dynamic scene evolution.",
+    "authors": [
+      "Zhaoxi Chen",
+      "Tianqi Liu",
+      "Long Zhuo",
+      "Jiawei Ren",
+      "Zeng Tao",
+      "He Zhu",
+      "Fangzhou Hong",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "likes": 58,
+    "published_date": "Aug 18",
+    "url": "https://huggingface.co/papers/2508.13154",
+    "date_collected": "2025-08-25T07:07:08.308291+09:00",
+    "week": "2025-W34",
+    "translation": {
+      "title": "4DNeX: Feed-Forward 4D 생성 모델링이 쉬워졌습니다",
+      "abstract": "본 연구에서는 한 장의 이미지로부터 4D(동적 3D) 장면 표현을 생성하는 첫 번째 피드 포워드 프레임워크 4DNeX를 제안합니다. 기존 방법들과는 달리 계산 집중적인 최적화나 다중 프레임 비디오 입력이 요구되지 않고, 사전 학습된 비디오 확산 모델을 세세하게 조정하여 효율적인 엔드 투 엔드 이미지-4D 생성을 가능하게 합니다. 특히, 1) 4D 데이터 부족을 완화하기 위해 첨단 재구성 방법을 사용하여 고품질 4D 주석을 생성한 대규모 데이터셋 4DNeX-10M을 구축합니다. 2) RGB 및 XYZ 시퀀스를 공동으로 모델링하는 통합 6D 비디오 표현을 도입하여 모습과 기하학의 구조화된 학습을 촉진합니다. 3) 사전 학습된 비디오 확산 모델을 4D 모델링에 재활용하기 위한 일련의 간단하면서 효과적인 적응 전략을 제안합니다. 4DNeX는 새로운 시각 동영상 합성을 가능케 하는 고품질 동적 포인트 클라우드를 생성합니다. 방대한 실험을 통해 4DNeX가 효율성과 일반성에서 기존 4D 생성 방법들을 능가하며, 이미지-4D 모델링에 확장 가능한 솔루션을 제공하고 동적 장면 진화를 시뮬레이션하는 생성적 4D 세계 모델링의 기초를 마련합니다."
+    },
+    "summary": "1. 4DNeX는 사전 학습된 비디오 확산 모델을 세세하게 조정하여 효율적인 4D 모델 생성을 가능케 합니다.\n2. 4DNeX-10M 데이터셋을 통해 4D 데이터 부족 문제를 해결하고, RGB 및 XYZ 시퀀스를 공동으로 모델링하여 모습과 기하학을 통합적으로 학습합니다.\n3. 간단하면서 효과적인 적응 전략을 활용하여 4DNeX가 기존 4D 생성 방법보다 우수한 효율성과 일반성을 보입니다.",
+    "categories": [
+      "Computer Vision",
+      "Generative Modeling"
+    ]
+  }
+]

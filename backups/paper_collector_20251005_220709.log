@@ -1,0 +1,167 @@
+=== Paper Collection Started at Sat Oct  4 22:06:54 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W41
+URL: https://huggingface.co/papers/week/2025-W41
+Found 10 papers in weekly view
+Fetching likes for: The Dragon Hatchling: The Missing Link between the Transformer and
+  Models of the Brain
+Fetching likes for: LongLive: Real-time Interactive Long Video Generation
+Fetching likes for: MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP
+  Use
+Fetching likes for: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Fetching likes for: Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified
+  Self-Play
+Fetching likes for: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Fetching likes for: DeepSearch: Overcome the Bottleneck of Reinforcement Learning with
+  Verifiable Rewards via Monte Carlo Tree Search
+Fetching likes for: SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention
+Fetching likes for: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Fetching likes for: LongCodeZip: Compress Long Context for Code Language Models
+Selected top 10 papers by likes:
+1. The Dragon Hatchling: The Missing Link between the Transformer and
+  Models of the Brain (319 likes)
+2. LongLive: Real-time Interactive Long Video Generation (167 likes)
+3. MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP
+  Use (150 likes)
+4. EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning (124 likes)
+5. Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified
+  Self-Play (122 likes)
+6. Quantile Advantage Estimation for Entropy-Safe Reasoning (113 likes)
+7. DeepSearch: Overcome the Bottleneck of Reinforcement Learning with
+  Verifiable Rewards via Monte Carlo Tree Search (112 likes)
+8. SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention (108 likes)
+9. MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing (99 likes)
+10. LongCodeZip: Compress Long Context for Code Language Models (78 likes)
+Found abstract: The relationship between computing systems and the brain has served as
+motivation for pioneering the...
+Processed paper: The Dragon Hatchling: The Missing Link between the Transformer and
+  Models of the Brain
+Found abstract: We present LongLive, a frame-level autoregressive (AR) framework for
+real-time and interactive long ...
+Processed paper: LongLive: Real-time Interactive Long Video Generation
+Found abstract: MCP standardizes how LLMs interact with external systems, forming the
+foundation for general agents....
+Processed paper: MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP
+  Use
+Found abstract: Training LLM agents in multi-turn environments with sparse rewards, where
+completing a single task r...
+Processed paper: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Found abstract: Although reinforcement learning (RL) can effectively enhance the reasoning
+capabilities of vision-la...
+Processed paper: Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified
+  Self-Play
+Found abstract: Reinforcement Learning with Verifiable Rewards (RLVR) strengthens LLM
+reasoning, but training often ...
+Processed paper: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Found abstract: Although RLVR has become an essential component for developing advanced
+reasoning skills in LLMs, co...
+Processed paper: DeepSearch: Overcome the Bottleneck of Reinforcement Learning with
+  Verifiable Rewards via Monte Carlo Tree Search
+Found abstract: In Diffusion Transformer (DiT) models, particularly for video generation,
+attention latency is a maj...
+Processed paper: SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention
+Found abstract: We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language
+model that achieves state-...
+Processed paper: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Found abstract: Code generation under long contexts is becoming increasingly critical as
+Large Language Models (LLMs...
+Processed paper: LongCodeZip: Compress Long Context for Code Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: The Dragon Hatchling: The Missing Link between the Transformer and
+  Models of the Brain
+Paper already exists, checking if translation is complete...
+Update likes: 319  ->  258
+Update date_collected: 2025-10-05T07:07:02.845983+09:00  ->  2025-10-04T07:07:08.532251+09:00
+
+Processing paper 2/10
+Title: LongLive: Real-time Interactive Long Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 167  ->  166
+Update date_collected: 2025-10-05T07:07:02.847540+09:00  ->  2025-10-04T07:07:08.533826+09:00
+
+Processing paper 3/10
+Title: MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP
+  Use
+Paper already exists, checking if translation is complete...
+Update likes: 150  ->  146
+Update date_collected: 2025-10-05T07:07:02.849118+09:00  ->  2025-10-04T07:07:08.535486+09:00
+
+Processing paper 4/10
+Title: EPO: Entropy-regularized Policy Optimization for LLM Agents
+  Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 124  ->  123
+Update date_collected: 2025-10-05T07:07:02.850405+09:00  ->  2025-10-04T07:07:08.536832+09:00
+
+Processing paper 5/10
+Title: Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified
+  Self-Play
+Paper already exists, checking if translation is complete...
+Update likes: 122  ->  120
+Update date_collected: 2025-10-05T07:07:02.851685+09:00  ->  2025-10-04T07:07:08.538167+09:00
+
+Processing paper 6/10
+Title: Quantile Advantage Estimation for Entropy-Safe Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 113  ->  113
+Update date_collected: 2025-10-05T07:07:02.852860+09:00  ->  2025-10-04T07:07:08.539385+09:00
+
+Processing paper 7/10
+Title: DeepSearch: Overcome the Bottleneck of Reinforcement Learning with
+  Verifiable Rewards via Monte Carlo Tree Search
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  109
+Update date_collected: 2025-10-05T07:07:02.854092+09:00  ->  2025-10-04T07:07:08.540695+09:00
+
+Processing paper 8/10
+Title: SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable
+  Sparse-Linear Attention
+Paper already exists, checking if translation is complete...
+Update likes: 108  ->  108
+Update date_collected: 2025-10-05T07:07:02.855617+09:00  ->  2025-10-04T07:07:08.542257+09:00
+
+Processing paper 9/10
+Title: MinerU2.5: A Decoupled Vision-Language Model for Efficient
+  High-Resolution Document Parsing
+Paper already exists, checking if translation is complete...
+Update likes: 99  ->  99
+Update date_collected: 2025-10-05T07:07:02.857472+09:00  ->  2025-10-04T07:07:08.544203+09:00
+
+Processing paper 10/10
+Title: LongCodeZip: Compress Long Context for Code Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 78  ->  69
+Update date_collected: 2025-10-05T07:07:02.858610+09:00  ->  2025-10-04T07:07:08.545389+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W41.json...
+
+Updating Notion database...
+Updating paper: 드래곤 새끼: 트랜스포머와 뇌 모델 간의 빠진 링크 (likes: 258 -> 319)
+Updating paper: 실시간 대화형 장긴 영상 생성 시스템 (likes: 166 -> 167)
+Updating paper: MCPMark: MCP의 현실적이고 포괄적인 사용을 스트레스 테스트하는 벤치마킹 (likes: 146 -> 150)
+Updating paper: 엔트로피 정규화된 정책 최적화를 통한 LLM 에이전트들의 훈련 (likes: 123 -> 124)
+Updating paper: Vision-Zero: 전략 게임화된 Self-Play를 통한 확장 가능한 VLM 자가 개선 (likes: 120 -> 122)
+Paper already exists with same likes count: 엔트로피 안전 추론을 위한 분위수 이점 추정
+Updating paper: DeepSearch: 몬테카를로 트리 탐색을 통한 검증 가능한 보상을 활용하여 강화 학습의 병목극복 (likes: 109 -> 112)
+Paper already exists with same likes count: 확산 트랜스포머에서의 희소성을 넘어서: Featuning 가능한 희소-선형 어텐션을 통해
+Paper already exists with same likes count: MinerU2.5: 효율적인 고해상도 문서 구문 분석을 위한 분리된 Vision-Language 모델
+Updating paper: LongCodeZip: 코드 언어 모델을 위한 긴 문맥 압축 (likes: 69 -> 78)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sat Oct  4 22:08:50 UTC 2025 ===
+

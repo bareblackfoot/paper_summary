@@ -1,0 +1,336 @@
+[
+  {
+    "title": "Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs",
+    "abstract": "The diversity of post-training data is critical for effective downstream performance in large language models (LLMs). Many existing approaches to constructing post-training data quantify diversity using text-based metrics that capture linguistic variation, but such metrics provide only weak signals for the task-relevant features that determine downstream performance. In this work, we introduce Feature Activation Coverage (FAC) which measures data diversity in an interpretable feature space. Building upon this metric, we further propose a diversity-driven data synthesis framework, named FAC Synthesis, that first uses a sparse autoencoder to identify missing features from a seed dataset, and then generates synthetic samples that explicitly reflect these features. Experiments show that our approach consistently improves both data diversity and downstream performance on various tasks, including instruction following, toxicity detection, reward modeling, and behavior steering. Interestingly, we identify a shared, interpretable feature space across model families (i.e., LLaMA, Mistral, and Qwen), enabling cross-model knowledge transfer. Our work provides a solid and practical methodology for exploring data-centric optimization of LLMs.",
+    "authors": [
+      "Zhongzhi Li",
+      "Xuansheng Wu",
+      "Yijiang Li",
+      "Lijie Hu",
+      "Ninghao Liu"
+    ],
+    "likes": 216,
+    "published_date": "Feb 11",
+    "url": "https://huggingface.co/papers/2602.10388",
+    "date_collected": "2026-02-20T07:13:20.503818+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "적은 양이 충분하다: LLM의 특징 공간에서 다양한 데이터 합성하기",
+      "abstract": "대형 언어 모델(Large Language Models, LLM)의 하류 작업 효과에는 사후 훈련 데이터의 다양성이 중요합니다. 이 연구에서는 해석 가능한 특징 공간에서 데이터 다양성을 측정하는 특징 활성화 범위(Feature Activation Coverage, FAC)를 제안합니다. FAC를 기반으로, 우리는 FAC 합성(FAC Synthesis)이라는 다양성 중심의 데이터 합성 프레임워크를 소개하며, 희소 오토인코더를 활용하여 누락된 특징을 식별하고 이를 반영한 합성 샘플을 생성합니다. 실험 결과는 우리의 방법이 지시 따르기, 독성 탐지, 보상 모델링, 행동 조절 등 다양한 작업에서 데이터 다양성과 하류 성능을 일관되게 향상시킨다는 것을 보여줍니다. 또한 LLaMA, Mistral, Qwen 등 모델 군 간 교차 모델 지식 전송을 가능케 하는 공유 가능한 해석 가능한 특징 공간을 식별합니다. 우리의 연구는 LLM의 데이터 중심 최적화를 탐색하는 견고하고 실용적인 방법론을 제공합니다."
+    },
+    "summary": "1. 후속 작업 성능에 중요한 데이터 다양성을 유지하는 것이 LLM에서 중요하며, FAC를 기반으로 한 데이터 합성 프레임워크는 다양성과 성능 향상을 이끌어냅니다.\n2. FAC Synthesis는 특징 공간에서 효율적으로 데이터 다양성을 측정하고 인식 가능한 특징을 반영한 합성 샘플을 생성하여 다양한 작업에서 성능을 향상시킵니다.\n3. 연구는 LLaMA, Mistral, Qwen과 같은 모델 군 간 공유 가능한 해석 가능한 특징 공간을 식별하는 것으로, 교차 모델 지식 전달을 가능케 합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise",
+    "abstract": "Spoken query retrieval is an important interaction mode in modern information retrieval. However, existing evaluation datasets are often limited to simple queries under constrained noise conditions, making them inadequate for assessing the robustness of spoken query retrieval systems under complex acoustic perturbations. To address this limitation, we present SQuTR, a robustness benchmark for spoken query retrieval that includes a large-scale dataset and a unified evaluation protocol. SQuTR aggregates 37,317 unique queries from six commonly used English and Chinese text retrieval datasets, spanning multiple domains and diverse query types. We synthesize speech using voice profiles from 200 real speakers and mix 17 categories of real-world environmental noise under controlled SNR levels, enabling reproducible robustness evaluation from quiet to highly noisy conditions. Under the unified protocol, we conduct large-scale evaluations on representative cascaded and end-to-end retrieval systems. Experimental results show that retrieval performance decreases as noise increases, with substantially different drops across systems. Even large-scale retrieval models struggle under extreme noise, indicating that robustness remains a critical bottleneck. Overall, SQuTR provides a reproducible testbed for benchmarking and diagnostic analysis, and facilitates future research on robustness in spoken query to text retrieval.",
+    "authors": [
+      "Yuejie Li",
+      "Ke Yang",
+      "Yueying Hua",
+      "Berlin Chen",
+      "Jianhao Nie",
+      "Yueping He",
+      "Caixin Kang"
+    ],
+    "likes": 138,
+    "published_date": "Feb 13",
+    "url": "https://huggingface.co/papers/2602.12783",
+    "date_collected": "2026-02-20T07:13:20.505090+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "음향 잡음 하에서의 말로 된 질의 검색에 대한 강인성 평가 벤치마크인 SQuTR",
+      "abstract": "말로 된 질의 검색은 현대 정보 검색에서 중요한 상호 작용 방식이다. 그러나 기존의 평가 데이터셋은 종종 제한적인 잡음 조건 하의 간단한 질의로 제한되어 있어, 복잡한 음향 교란 하에서 말로 된 질의 검색 시스템의 강인성을 평가하기에 부족하다. 이 한계를 극복하기 위해 우리는 SQuTR을 제시하는데, 이는 말로 된 질의 검색에 대한 강인성 벤치마크로서 대규모 데이터셋과 통일된 평가 프로토콜을 포함하고 있다. SQuTR은 여러 영역과 다양한 질의 유형을 아우르는 여섯 가지 영어 및 중국어 텍스트 검색 데이터셋으로부터 37,317개의 고유한 질의를 집계하였다. 우리는 200명의 실제 화자 음성 프로필을 사용하여 음향 신호 잡음과 같은 17가지 범주의 실제 환경 잡음을 혼합하여 통제된 SNR 수준에서 재현 가능한 강인성 평가를 가능하게 했다. 통일된 프로토콜에 따라, 대표적인 계층적 및 종단 간 검색 시스템에 대해 대규모 평가를 수행했다. 실험 결과, 잡음이 증가함에 따라 검색 성능이 감소하며, 시스템마다 상당히 다른 성능 저하가 나타났다. 심지어 대규모 검색 모델조차 극심한 잡음 하에서 고전되고 있으며, 강인성은 여전히 중요한 병목 현상임을 나타낸다. 총론적으로, SQuTR은 벤치마킹 및 진단 분석을 위한 재현 가능한 테스트베드를 제공하며, 말로 된 질의 검색에 대한 강인성 연구를 용이하게 한다."
+    },
+    "summary": "1. 기존 평가 데이터셋의 한계를 극복하기 위해 SQuTR이 제시되었으며, 이는 말로 된 질의 검색 시스템의 강인성을 다양한 환경에서 평가할 수 있는 벤치마크를 포함하고 있다.\n2. SQuTR은 다양한 질의 유형을 아우르는 대규모 데이터셋과 여러 종류의 환경 잡음을 결합하여 재현 가능한 강인성 평가를 제공한다.\n3. 실험 결과는 잡음이 증가할수록 검색 성능이 저하되는데, 특히 극한 잡음 하에서 대규모 검색 모델조차 어려움을 겪는다는 것을 보여주며, 강인성이 중요한 제약 요인임을 확인시켰다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs",
+    "abstract": "We present MedXIAOHE, a medical vision-language foundation model designed to advance general-purpose medical understanding and reasoning in real-world clinical applications. MedXIAOHE achieves state-of-the-art performance across diverse medical benchmarks and surpasses leading closed-source multimodal systems on multiple capabilities. To achieve this, we propose an entity-aware continual pretraining framework that organizes heterogeneous medical corpora to broaden knowledge coverage and reduce long-tail gaps (e.g., rare diseases). For medical expert-level reasoning and interaction, MedXIAOHE incorporates diverse medical reasoning patterns via reinforcement learning and tool-augmented agentic training, enabling multi-step diagnostic reasoning with verifiable decision traces. To improve reliability in real-world use, MedXIAOHE integrates user-preference rubrics, evidence-grounded reasoning, and low-hallucination long-form report generation, with improved adherence to medical instructions. We release this report to document our practical design choices, scaling insights, and evaluation framework, hoping to inspire further research.",
+    "authors": [
+      "Baorong Shi",
+      "Bo Cui",
+      "Boyuan Jiang",
+      "Deli Yu",
+      "Fang Qian",
+      "Haihua Yang",
+      "Huichao Wang",
+      "Jiale Chen",
+      "Jianfei Pan",
+      "Jieqiong Cao",
+      "Jinghao Lin",
+      "Kai Wu",
+      "Lin Yang",
+      "Shengsheng Yao",
+      "Tao Chen",
+      "Xiaojun Xiao",
+      "Xiaozhong Ji",
+      "Xu Wang",
+      "Yijun He",
+      "Zhixiong Yang"
+    ],
+    "likes": 57,
+    "published_date": "Feb 13",
+    "url": "https://huggingface.co/papers/2602.12705",
+    "date_collected": "2026-02-20T07:13:20.506858+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "MedXIAOHE: 의료용 MLLM 구축을 위한 포괄적인 레시피",
+      "abstract": "MedXIAOHE는 실제 임상 응용에서 일반 의료 이해와 추론을 발전시키기 위해 설계된 의료 비전-언어 기반 모델로, 다양한 의료 벤치마크에서 최신 성능을 달성하며 주요 폐쇄형 다중모달 시스템을 여러 능력에서 능가합니다. 이를 위해 이질적인 의료 말뭉치를 구성하여 지식 범위를 확장하고 희귀 질병 같은 꼬리부분 갭을 줄이는 entity-aware continual pretraining 프레임워크를 제안합니다. 의료 전문가 수준의 추론과 상호작용을 위해 reinforcement learning과 tool-augmented agentic training을 통해 다양한 의료 추론 패턴을 통합하여 검증 가능한 결정 트레이스로 다단계 진단 추론을 가능하게 합니다. 실제 사용 reliability를 향상시키기 위해 사용자 선호도 척도, 증거기반 추론, 적은 환각 장문 보고서 생성을 통합하여 의료 지침에 더 잘 부합하도록 합니다. 본 보고서는 실용적인 설계 선택사항, 확장성 통찰력 및 평가 프레임워크를 문서화하고 더 나은 연구를 영감을 줄 수 있도록 배포합니다."
+    },
+    "summary": "1. MedXIAOHE는 다양한 의료 벤치마크에서 최신 성능을 보이며 이질적인 의료 말뭉치를 이용해 지식 범위를 확장하고 희귀 질병 등의 갭을 줄이는 entity-aware continual pretraining 프레임워크를 제안합니다.\n2. 의료 전문가 수준의 추론과 상호작용을 위해 reinforcement learning과 tool-augmented agentic training을 활용하여 다단계 진단 추론을 가능하게 합니다.\n3. MedXIAOHE는 사용자 선호도 척도, 증거기반 추론, 적은 환각 장문 보고서 생성을 통해 의료 지침에 더 잘 부합하도록 하여, 실제 사용 reliability를 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception",
+    "abstract": "Multimodal Large Language Models (MLLMs) excel at broad visual understanding but still struggle with fine-grained perception, where decisive evidence is small and easily overwhelmed by global context. Recent \"Thinking-with-Images\" methods alleviate this by iteratively zooming in and out regions of interest during inference, but incur high latency due to repeated tool calls and visual re-encoding. To address this, we propose Region-to-Image Distillation, which transforms zooming from an inference-time tool into a training-time primitive, thereby internalizing the benefits of agentic zooming into a single forward pass of an MLLM. In particular, we first zoom in to micro-cropped regions to let strong teacher models generate high-quality VQA data, and then distill this region-grounded supervision back to the full image. After training on such data, the smaller student model improves \"single-glance\" fine-grained perception without tool use. To rigorously evaluate this capability, we further present ZoomBench, a hybrid-annotated benchmark of 845 VQA data spanning six fine-grained perceptual dimensions, together with a dual-view protocol that quantifies the global--regional \"zooming gap\". Experiments show that our models achieve leading performance across multiple fine-grained perception benchmarks, and also improve general multimodal cognition on benchmarks such as visual reasoning and GUI agents. We further discuss when \"Thinking-with-Images\" is necessary versus when its gains can be distilled into a single forward pass. Our code is available at https://github.com/inclusionAI/Zooming-without-Zooming.",
+    "authors": [
+      "Lai Wei",
+      "Liangbo He",
+      "Jun Lan",
+      "Lingzhong Dong",
+      "Yutong Cai",
+      "Siyuan Li",
+      "Huijia Zhu",
+      "Weiqiang Wang",
+      "Linghe Kong",
+      "Yue Wang",
+      "Zhuosheng Zhang",
+      "Weiran Huang"
+    ],
+    "likes": 57,
+    "published_date": "Feb 12",
+    "url": "https://huggingface.co/papers/2602.11858",
+    "date_collected": "2026-02-20T07:13:20.508297+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "줌 없이 줌: 세세한 다중모달 지각을 위한 영역-이미지 증류",
+      "abstract": "다중모달 대규모 언어 모델(MLLMs)은 광범위한 시각 이해에서 뛰어나지만 단속적 증거가 작아 전역적 맥락에 압도당하기 쉬운 세세한 지각에서 여전히 어려움을 겪습니다. 최근 \"이미지로 생각하기\" 방법은 추론 중에 관심 영역을 반복적으로 확대 및 축소하여 이를 완화하지만, 반복된 도구 호출과 시각 재인코딩으로 인한 고 지연을 야기합니다. 이에 대응하여 우리는 영역-이미지 증류를 제안합니다. 이 방법은 추론 시 도구가 됐던 확대를 훈련 시 기본 요소로 전환하여, MLLM의 단일 전방 투과에 에이전트처럼 확대의 장점을 내제화합니다. 구체적으로, 강력한 교사 모델이 고품질 VQA 데이터를 생성할 수 있도록 미세-자른 영역으로 확대한 후, 이 영역-기반 감독을 전체 이미지로 증류합니다. 이러한 데이터로 훈련한 후, 더 작은 학생 모델은 도구 사용 없이 \"한 번의 눈짓\" 세세한 지각을 개선합니다. 이 능력을 철저히 평가하기 위해 우리는 6가지 세세한 지각 차원을 아우르는 845개 VQA 데이터로 이루어진 하이브리드 주석 벤치마크인 ZoomBench를 제시하며, 전역-지역 \"확대 갭\"을 측정하는 이중-보기 프로토콜을 함께 소개합니다. 실험 결과, 우리 모델은 여러 세세한 지각 벤치마크에서 선도적인 성능을 달성하였으며, 시각적 추론 및 GUI 에이전트와 같은 벤치마크에서 일반적인 다중모달 인지를 개선하였습니다. 또한, \"이미지로 생각하기\"가 필요한 경우와 그 이익을 단일 전방 통과로 증류할 수 있는 경우를 논의합니다. 코드는 https://github.com/inclusionAI/Zooming-without-Zooming에서 확인하실 수 있습니다."
+    },
+    "summary": "1. 다중모달 대규모 언어 모델의 세세한 지각 한계를 극복하기 위해 추론시간 도구 사용을 훈련시간 기본 요소로 바꾼 영역-이미지 증류 방법을 제안합니다.\n2. 강력한 교사 모델이 고품질 시각 질문응답(VQA) 데이터를 생성하도록 미세-자른 영역으로 확대한 후, 이를 전체 이미지로 증류하여 얻은 데이터로 학생 모델을 훈련시켜 세세한 지각을 향상시킵니다.\n3. 실험 결과, 제안한 방법은 다양한 세세한 지각 벤치마크에서 선도적인 성능을 보이며, 시같은 기준에서도 일반적인 다중모달 인지를 개선하는 것을 입증합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
+    "abstract": "Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic setup with known ground-truth features, we demonstrate that SAEs recover only 9% of true features despite achieving 71% explained variance, showing that they fail at their core task even when reconstruction is strong. To evaluate SAEs on real activations, we introduce three baselines that constrain SAE feature directions or their activation patterns to random values. Through extensive experiments across multiple SAE architectures, we show that our baselines match fully-trained SAEs in interpretability (0.87 vs 0.90), sparse probing (0.69 vs 0.72), and causal editing (0.73 vs 0.72). Together, these results suggest that SAEs in their current state do not reliably decompose models' internal mechanisms.",
+    "authors": [
+      "Anton Korznikov",
+      "Andrey Galichin",
+      "Alexey Dontsov",
+      "Oleg Rogov",
+      "Ivan Oseledets",
+      "Elena Tutubalina"
+    ],
+    "likes": 55,
+    "published_date": "Feb 15",
+    "url": "https://huggingface.co/papers/2602.14111",
+    "date_collected": "2026-02-20T07:13:20.509454+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "Sparse Autoencoders의 타당성 검사: SAE가 무작위 기준선을 이기는가?",
+      "abstract": "Sparse Autoencoders (SAEs)는 신경망을 해석하는 데 유익한 도구로 등장했으며, 이들은 활성화를 희소한 인간이 이해하기 쉬운 특징 집합으로 분해합니다. 최근의 연구는 여러 가지 SAE 변형을 소개하고 최첨단 모델로 확장에 성공했습니다. 그러나 하류 작업에서 부정적인 결과가 증가함에 따라 SAE가 의미있는 특징을 복원하는지에 대한 의문이 제기되고 있습니다. 이에 우리는 두 가지 보완적인 평가를 실시하여 직접적으로 조사합니다. 알려진 참값 특징을 가진 합성 설정에서 우리는 SAE가 실제 특징의 9%만 복원함에도 불구하고 71%의 설명된 분산을 달성한다는 것을 보여주어, SAE가 핵심 작업에 실패함을 보여줍니다. 실제 활성화에 대한 SAE를 평가하기 위해, 우리는 SAE 특징 방향이나 활성화 패턴을 무작위 값으로 제한하는 세 가지 기준선을 소개합니다. 여러 SAE 아키텍처에 걸쳐 방대한 실험을 통해, 우리는 기준선이 fully-trained SAE와 상응함을 보여주며 해석 가능성 (0.87 vs 0.90), 희소 조사 (0.69 vs 0.72), 인과적 편집 (0.73 vs 0.72)에서 비슷한 결과를 보입니다. 이러한 결과들은 현재 상태의 SAE가 모델의 내부 메커니즘을 신뢰성 있게 분해하지 못한다는 것을 시사합니다."
+    },
+    "summary": "1. Sparse Autoencoders(SAEs)는 인간이 이해하기 쉬운 특징의 희소한 집합으로 활성화를 분해하는데 유용한 도구로 등장하였습니다. 그러나 현재의 SAE가 모델의 내부 메커니즘을 신뢰성 있게 분해하지 못하는 것을 보여주는 많은 부정적인 결과가 있습니다.\n2. SAE를 실제 활성화에 대해 평가하기 위해 세 가지 기준선을 도입한 결과, SAE가 fully-trained 상태의 모델과 비슷한 결과를 보이는 것으로 나타났습니다.\n3. 실험 결과는 SAE가 현재 상태에서 모델의 내부 메커니즘을 신뢰성 있게 분해하지 못한다는 점을 시사하며, 보다 확실한 해석을 위해 더 많은 연구가 필요함을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Experiential Reinforcement Learning",
+    "abstract": "Reinforcement learning has become the central approach for language models (LMs) to learn from environmental reward or feedback. In practice, the environmental feedback is usually sparse and delayed. Learning from such signals is challenging, as LMs must implicitly infer how observed failures should translate into behavioral changes for future iterations. We introduce Experiential Reinforcement Learning (ERL), a training paradigm that embeds an explicit experience-reflection-consolidation loop into the reinforcement learning process. Given a task, the model generates an initial attempt, receives environmental feedback, and produces a reflection that guides a refined second attempt, whose success is reinforced and internalized into the base policy. This process converts feedback into structured behavioral revision, improving exploration and stabilizing optimization while preserving gains at deployment without additional inference cost. Across sparse-reward control environments and agentic reasoning benchmarks, ERL consistently improves learning efficiency and final performance over strong reinforcement learning baselines, achieving gains of up to +81% in complex multi-step environments and up to +11% in tool-using reasoning tasks. These results suggest that integrating explicit self-reflection into policy training provides a practical mechanism for transforming feedback into durable behavioral improvement.",
+    "authors": [
+      "Taiwei Shi",
+      "Sihao Chen",
+      "Bowen Jiang",
+      "Linxin Song",
+      "Longqi Yang",
+      "Jieyu Zhao"
+    ],
+    "likes": 55,
+    "published_date": "Feb 15",
+    "url": "https://huggingface.co/papers/2602.13949",
+    "date_collected": "2026-02-20T07:13:20.510637+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "경험주의 강화 학습",
+      "abstract": "강화 학습은 언어 모델(LMs)이 환경적 보상이나 피드백으로부터 배우는 중추적인 방법이 되었습니다. 현실에서는 환경적 피드백이 보통 희박하고 지연됩니다. 이러한 신호로부터 학습하는 것은 어렵습니다. 왜냐하면 LMs은 관측된 실패가 어떻게 향후 반복에서 행동 변화로 번역되어야 하는지 내재적으로 추론해야 합니다. 우리는 경험주의 강화 학습(ERL)을 소개합니다. 이는 명시적 경험-반성-정착 루프를 강화 학습 프로세스에 내장시키는 교육 패러다임입니다. 과제를 받으면 모델은 초기 시도를 생성하고 환경적 피드백을 받아들이며 재정의된 두 번째 시도를 안내하는 반성을 생성합니다. 이 성공은 강화되어 기본 정책에 내재화됩니다. 이 과정은 피드백을 구조화된 행동 개정으로 변환하여 탐사를 향상시키고 최적화를 안정화시키는 동시에 배포 시 추가 추론 비용없이 이익을 유지합니다. 희소 보상 제어 환경과 주체적 추론 벤치마크를 통해 ERL은 강화 학습 기준선에 비해 학습 효율성과 최종 성능을 일관되게 향상시켜 복잡한 다단계 환경에서 최대 +81%, 도구 사용 추론 과제에서 최대 +11%의 이득을 달성합니다. 이러한 결과는 명시적 자기 반성을 정책 교육에 통합하는 것이 피드백을 내구적인 행동 개선으로 변환시키는 실용적 메커니즘을 제공한다는 것을 시사합니다."
+    },
+    "summary": "1. 경험주의 강화 학습(ERL)은 강화 학습 프로세스에 명시적 경험-반성-정착 루프를 내장하여 행동 개선을 가능케 합니다.\n2. ERL은 희소 보상 제어 환경과 주체적 추론 벤치마크에서 강화 학습 기준선보다 더 효율적인 학습과 최종 성능을 제공하여 이득을 창출합니다.\n3. 결과는 명시적 자기 반성을 정책 교육에 통합하는 것이 피드백을 지속적인 행동 개선으로 변환시키는 실용적 메커니즘을 제공함을 시사합니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+    "abstract": "We present GLM-5, a next-generation foundation model designed to transition the paradigm of vibe coding to agentic engineering. Building upon the agentic, reasoning, and coding (ARC) capabilities of its predecessor, GLM-5 adopts DSA to significantly reduce training and inference costs while maintaining long-context fidelity. To advance model alignment and autonomy, we implement a new asynchronous reinforcement learning infrastructure that drastically improves post-training efficiency by decoupling generation from training. Furthermore, we propose novel asynchronous agent RL algorithms that further improve RL quality, enabling the model to learn from complex, long-horizon interactions more effectively. Through these innovations, GLM-5 achieves state-of-the-art performance on major open benchmarks. Most critically, GLM-5 demonstrates unprecedented capability in real-world coding tasks, surpassing previous baselines in handling end-to-end software engineering challenges. Code, models, and more information are available at https://github.com/zai-org/GLM-5.",
+    "authors": [
+      "GLM-5 Team",
+      "Aohan Zeng",
+      "Xin Lv",
+      "Zhenyu Hou",
+      "Zhengxiao Du",
+      "Qinkai Zheng",
+      "Bin Chen",
+      "Da Yin",
+      "Chendi Ge",
+      "Chengxing Xie",
+      "Cunxiang Wang",
+      "Gengzheng Pan",
+      "Hao Zeng",
+      "Haoke Zhang",
+      "Haoran Wang",
+      "Huilong Chen",
+      "Jiajie Zhang",
+      "Jian Jiao",
+      "Jiaqi Guo",
+      "Jingsen Wang",
+      "Jingzhao Du",
+      "Jinzhu Wu"
+    ],
+    "likes": 53,
+    "published_date": "Feb 17",
+    "url": "https://huggingface.co/papers/2602.15763",
+    "date_collected": "2026-02-20T07:13:20.512443+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "GLM-5: 바이브 코딩에서 에이전틱 엔지니어링으로",
+      "abstract": "GLM-5는 바이브 코딩 패러다임을 에이전틱 엔지니어링으로 전환하기 위해 설계된 차세대 기초 모델로, 이전 모델인 ARC의 에이전틱, 추론 및 코딩 능력을 더해 DSA를 채택하여 훈련 및 추론 비용을 크게 줄이면서도 장거리 문맥의 충실도를 유지합니다. 또한 모델 일치 및 자율성을 높이기 위해 새로운 비동기 강화학습 인프라를 도입하여 생성과 훈련을 분리함으로써 훈련 후 효율성을 크게 향상시킵니다. 더불어 본 논문에서는 RL 품질을 더욱 개선하는 새로운 비동기 에이전트 강화학습 알고리즘을 제안하여 모델이 복잡한 장기 상호작용에서 보다 효과적으로 학습할 수 있도록 합니다. 이러한 혁신으로 GLM-5는 주요 공개 벤치마크에서 최첨단 성능을 달성합니다. 특히 GLM-5는 실제 코딩 작업에서 전례 없는 성능을 보여 엔드 투 엔드 소프트웨어 엔지니어링 과제를 처리하는 데 이전 베이스라인을 능가합니다. 코드, 모델 및 자세한 정보는 https://github.com/zai-org/GLM-5에서 확인할 수 있습니다."
+    },
+    "summary": "1. GLM-5는 바이브 코딩을 에이전틱 엔지니어링으로 전환하는 차세대 모델로, 훈련 및 추론 비용을 줄이면서도 장거리 문맥의 충실도를 유지하며 최신 비동기 강화학습 인프라를 도입하여 효율성을 향상시킵니다.\n2. 이 모델은 새로운 비동기 에이전트 강화학습 알고리즘을 통해 RL 품질을 향상시켜 복잡한 장기 상호작용에서 효과적으로 학습하는데 기여하며, 주요 벤치마크에서 최첨단 성능을 보입니다.\n3. GLM-5는 실제 코딩 작업에서 뛰어난 성능을 보여 엔드 투 엔드 소프트웨어 엔지니어링 과제를 처리하는데 많은 도움이 되며, 관련 정보는 GitHub에서 확인할 수 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+    "abstract": "Agent Skills are structured packages of procedural knowledge that augment LLM agents at inference time. Despite rapid adoption, there is no standard way to measure whether they actually help. We present SkillsBench, a benchmark of 86 tasks across 11 domains paired with curated Skills and deterministic verifiers. Each task is evaluated under three conditions: no Skills, curated Skills, and self-generated Skills. We test 7 agent-model configurations over 7,308 trajectories. Curated Skills raise average pass rate by 16.2 percentage points(pp), but effects vary widely by domain (+4.5pp for Software Engineering to +51.9pp for Healthcare) and 16 of 84 tasks show negative deltas. Self-generated Skills provide no benefit on average, showing that models cannot reliably author the procedural knowledge they benefit from consuming. Focused Skills with 2--3 modules outperform comprehensive documentation, and smaller models with Skills can match larger models without them.",
+    "authors": [
+      "Xiangyi Li",
+      "Wenbo Chen",
+      "Yimin Liu",
+      "Shenghan Zheng",
+      "Xiaokun Chen",
+      "Yifeng He",
+      "Yubo Li",
+      "Bingran You",
+      "Haotian Shen",
+      "Jiankai Sun",
+      "Shuyi Wang",
+      "Qunhong Zeng",
+      "Di Wang",
+      "Xuandong Zhao",
+      "Yuanli Wang",
+      "Roey Ben Chaim",
+      "Zonglin Di",
+      "Yipeng Gao",
+      "Junwei He",
+      "Yizhuo He",
+      "Liqiang Jing",
+      "Luyang Kong"
+    ],
+    "likes": 45,
+    "published_date": "Feb 13",
+    "url": "https://huggingface.co/papers/2602.12670",
+    "date_collected": "2026-02-20T07:13:20.514250+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "Agent Skills의 다양한 작업에서의 성능 측정벤치마킹",
+      "abstract": "Agent Skills는 추론 시간에 LLM 에이전트를 보조하는 절차 지식의 구조화된 패키지입니다. 그러나 이들이 정말 도움이 되는지 측정하는 표준 방법이 없습니다. 본 연구에서는 11개 도메인에 걸쳐 86가지 작업을 평가하는 SkillsBench를 제시합니다. 각 작업은 세 가지 조건에서 평가됩니다: Skills 없음, 선별된 Skills, 자체 생성된 Skills. 선별된 Skills는 평균 합격률을 16.2% 증가시키지만 효과는 도메인에 따라 다양하며 84가지 작업 중 16가지가 음의 변동을 보입니다. 자체 생성된 Skills는 평균적으로 혜택을 주지 않으며 모델이 소비하는 절차적 지식을 신뢰성 있게 작성할 수 없음을 보여줍니다. 모듈화된 집중 Skills는 포괄적인 설명보다 우수하며, Skills를 갖춘 작은 모델은 그렇지 않은 큰 모델과 맞먹을 수 있습니다."
+    },
+    "summary": "1. SkillsBench는 다양한 작업 영역에서 Agent Skills의 효과를 측정하는 벤치마킹을 제시하며, 자체 생성된 Skills가 효과가 없음을 보여줍니다.\n2. 선별된 Skills는 전반적으로 평균 합격률을 높이지만, 도메인에 따라 효과가 상이하며 일부 작업에서는 부정적인 영향을 미칩니다.\n3. 모듈화된 집중 Skills를 사용한 작은 모델은 Skills를 사용하지 않은 큰 모델과 성능을 맞출 수 있음을 보여줍니다.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories",
+    "abstract": "Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-image relevance can be measured in isolation. This paradigm overlooks the rich dependencies inherent in realistic visual streams, where information is distributed across temporal sequences rather than confined to single snapshots. To bridge this gap, we introduce DeepImageSearch, a novel agentic paradigm that reformulates image retrieval as an autonomous exploration task. Models must plan and perform multi-step reasoning over raw visual histories to locate targets based on implicit contextual cues. We construct DISBench, a challenging benchmark built on interconnected visual data. To address the scalability challenge of creating context-dependent queries, we propose a human-model collaborative pipeline that employs vision-language models to mine latent spatiotemporal associations, effectively offloading intensive context discovery before human verification. Furthermore, we build a robust baseline using a modular agent framework equipped with fine-grained tools and a dual-memory system for long-horizon navigation. Extensive experiments demonstrate that DISBench poses significant challenges to state-of-the-art models, highlighting the necessity of incorporating agentic reasoning into next-generation retrieval systems.",
+    "authors": [
+      "Chenlong Deng",
+      "Mengjie Deng",
+      "Junjie Wu",
+      "Dun Zeng",
+      "Teng Wang",
+      "Qingsong Xie",
+      "Jiadeng Huang",
+      "Shengjie Ma",
+      "Changwang Zhang",
+      "Zhaoxiang Wang",
+      "Jun Wang",
+      "Yutao Zhu",
+      "Zhicheng Dou"
+    ],
+    "likes": 45,
+    "published_date": "Feb 11",
+    "url": "https://huggingface.co/papers/2602.10809",
+    "date_collected": "2026-02-20T07:13:20.515726+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "딥이미지서치: 시각적 이력에서의 맥락인식 이미지 검색을 위한 멀티모달 에이전트 벤치마킹",
+      "abstract": "기존의 멀티모달 검색 시스템은 의미적 일치에서 뛰어나지만, 쿼리-이미지 관련성을 고립적으로 측정할 수 있다고 가정합니다. 이 패러다임은 현실적인 시각적 스트림에서의 풍부한 의존성을 간과하는데, 정보가 단일 스냅샷에 국한되지 않고 시간적 시퀀스에 걸쳐 분산되어 있습니다. 이 간극을 줄이기 위해 우리는 딥이미지서치를 소개합니다. 이는 이미지 검색을 자율적 탐사 과제로 재구성하는 새로운 에이전트 패러다임입니다. 모델은 암시적 맥락적 단서에 기초하여 목표물을 찾기 위해 원시 시각적 이력 상에서 다중 단계 추론을 계획하고 수행해야 합니다. 우리는 이를 연결된 시각적 데이터에 구축된 어려운 벤치마크인 DISBench를 만듭니다. 문맥 종속적 쿼리를 생성하는 확장성 도전에 대응하기 위해 우리는 비전-언어 모델을 활용하여 잠재적 시공간 관계를 채굴하는 인간-모델 협업 파이프라인을 제안합니다. 추가로, 장기적 탐색을 위한 이중 메모리 시스템과 세밀한 도구가 장착된 모듈식 에이전트 프레임워크를 이용한 강력한 베이스라인을 구축합니다. 광범위한 실험을 통해 DISBench가 최첨단 모델에 상당한 도전을 제기하며, 차세대 검색 시스템에 에이전트적 추론을 통합하는 필요성을 강조합니다."
+    },
+    "summary": "1. 딥이미지서치는 이미지 검색을 자율적 탐사 작업으로 바꾼 새로운 에이전트 패러다임을 소개하며, 각 모델은 암시적 맥락적 단서를 활용하여 목표물을 찾기 위해 원시 시각적 이력 상에서 다중 단계 추론을 해야 함을 강조합니다.\n2. DISBench는 연결된 시각적 데이터에 구축된 도전적인 벤치마크로, 문맥 종속적 쿼리 생성의 확장성 도전에 대응하고, 인간-모델 협업 파이프라인과 모듈식 에이전트 프레임워크를 포함합니다.\n3. 실험 결과는 DISBench가 최첨단 모델에 상당한 도전을 제기하며, 차세대 검색 시스템에서 에이전트적 추론을 통합해야 하는 필요성을 강조합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence",
+    "abstract": "Hypothesis. Artificial general intelligence is, at its core, a compression problem. Effective compression demands resonance: deep learning scales best when its architecture aligns with the fundamental structure of the data. These are the fundamental principles. Yet, modern vision architectures have strayed from these truths: visual signals are highly redundant, while discriminative information, the surprise, is sparse. Current models process dense pixel grids uniformly, wasting vast compute on static background rather than focusing on the predictive residuals that define motion and meaning. We argue that to solve visual understanding, we must align our architectures with the information-theoretic principles of video, i.e., Codecs.\n  Method. OneVision-Encoder encodes video by compressing predictive visual structure into semantic meaning. By adopting Codec Patchification, OV-Encoder abandons uniform computation to focus exclusively on the 3.1%-25% of regions rich in signal entropy. To unify spatial and temporal reasoning under irregular token layouts, OneVision-Encoder employs a shared 3D RoPE and is trained with a large-scale cluster discrimination objective over more than one million semantic concepts, jointly capturing object permanence and motion dynamics.\n  Evidence. The results validate our core hypothesis: efficiency and accuracy are not a trade-off; they are positively correlated. When integrated into LLM, it consistently outperforms strong vision backbones such as Qwen3-ViT and SigLIP2 across 16 image, video, and document understanding benchmarks, despite using substantially fewer visual tokens and pretraining data. Notably, on video understanding tasks, OV-Encoder achieves an average improvement of 4.1% over Qwen3-ViT. Codec-aligned, patch-level sparsity is a foundational principle, enabling OV-Encoder as a scalable engine for next-generation visual generalists.",
+    "authors": [
+      "Feilong Tang",
+      "Xiang An",
+      "Yunyao Yan",
+      "Yin Xie",
+      "Bin Qin",
+      "Kaicheng Yang",
+      "Yifei Shen",
+      "Yuanhan Zhang",
+      "Chunyuan Li",
+      "Shikun Feng",
+      "Changrui Chen",
+      "Huajie Tan",
+      "Ming Hu",
+      "Manyuan Zhang",
+      "Bo Li",
+      "Ziyong Feng",
+      "Ziwei Liu",
+      "Zongyuan Ge",
+      "Jiankang Deng"
+    ],
+    "likes": 45,
+    "published_date": "Feb 9",
+    "url": "https://huggingface.co/papers/2602.08683",
+    "date_collected": "2026-02-20T07:13:20.517467+09:00",
+    "week": "2026-W08",
+    "translation": {
+      "title": "원비전-인코더: 코덱-일치 희박성, 다중모달 지능을 위한 기초 원리",
+      "abstract": "가설. 인공 일반 지능은 근본적으로 압축 문제이다. 효과적인 압축은 공명을 요구한다: 딥러닝은 데이터의 기본 구조와 일치하는 구조일 때 가장 잘 확장된다. 하지만 현대 비전 구조는 이러한 진리에서 멀어졌다: 시각 신호는 고도로 중복되어 있으며, 차별적인 정보, 즉 놀람은 희소하다. 현재 모델들은 밀집 픽셀 그리드를 균일하게 처리하여 정적 배경에 너무 많은 계산을 낭비하고, 움직임과 의미를 정의하는 예측 잔차에 중점을 두지 않는다. 시각 이해를 해결하기 위해서는 비디오의 정보 이론적 원리, 즉 코덱들과 일치시켜야 한다고 주장한다."
+    },
+    "summary": "1. 인공 일반 지능은 데이터의 기본 구조와 일치하는 딥러닝 구조가 효과적인 비디오 인코딩에 중요하며, OV-인코더는 이를 구현한다.\n2. OV-인코더는 신호 엔트로피가 풍부한 영역에 중점을 두어 비디오를 의미 있는 의미로 압축함으로써 비디오 이해를 개선한다.\n3. OV-인코더는 LLM에 통합되어 강력한 비전 백본을 능가하며, 코덱-일치, 패치 수준 희박성은 미래 시각 일반가를 위한 기초 원리로 작용한다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  }
+]

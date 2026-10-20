@@ -1,0 +1,129 @@
+=== Paper Collection Started at Mon May 25 01:49:11 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W22
+URL: https://huggingface.co/papers/week/2026-W22
+Found 10 papers in weekly view
+Fetching likes for: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Fetching likes for: Code as Agent Harness
+Fetching likes for: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
+Fetching likes for: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Fetching likes for: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
+Fetching likes for: AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration
+Fetching likes for: Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?
+Fetching likes for: When Vision Speaks for Sound
+Fetching likes for: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining
+Fetching likes for: PhysBrain 1.0 Technical Report
+Selected top 10 papers by likes:
+1. CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence (264 likes)
+2. Code as Agent Harness (199 likes)
+3. DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards (192 likes)
+4. Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information (190 likes)
+5. TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation (168 likes)
+6. AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration (166 likes)
+7. Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality? (162 likes)
+8. When Vision Speaks for Sound (146 likes)
+9. Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining (142 likes)
+10. PhysBrain 1.0 Technical Report (140 likes)
+Found abstract: Multimodal Large Language Models (MLLMs) have significantly advanced document understanding, yet cur...
+Processed paper: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Found abstract: Recent large language models (LLMs) have demonstrated strong capabilities in understanding and gener...
+Processed paper: Code as Agent Harness
+Found abstract: Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improvi...
+Processed paper: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
+Found abstract: On-policy self-distillation, where a student is pulled toward a copy of itself conditioned on privil...
+Processed paper: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Found abstract: Public transit route planning traditionally depends on structured map infrastructure and complex rou...
+Processed paper: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
+Found abstract: Automating scientific discovery requires more than generating papers from ideas. Real research is it...
+Processed paper: AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration
+Found abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed in human-facing roles where perso...
+Processed paper: Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?
+Found abstract: Despite rapid progress in video-capable MLLMs, we find that their apparent audio understanding in vi...
+Processed paper: When Vision Speaks for Sound
+Found abstract: Recent advances in multimodal large language models have driven growing interest in graphical user i...
+Processed paper: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining
+Found abstract: Vision-language-action models have advanced rapidly, but robot trajectories alone provide limited co...
+Processed paper: PhysBrain 1.0 Technical Report
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence
+Paper already exists, checking if translation is complete...
+Update likes: 264  ->  264
+Update date_collected: 2026-05-25T10:49:20.460078+09:00  ->  2026-05-25T07:26:05.125134+09:00
+
+Processing paper 2/10
+Title: Code as Agent Harness
+Paper already exists, checking if translation is complete...
+Update likes: 199  ->  199
+Update date_collected: 2026-05-25T10:49:20.463250+09:00  ->  2026-05-25T07:26:05.128194+09:00
+
+Processing paper 3/10
+Title: DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards
+Paper already exists, checking if translation is complete...
+Update likes: 192  ->  192
+Update date_collected: 2026-05-25T10:49:20.465250+09:00  ->  2026-05-25T07:26:05.130266+09:00
+
+Processing paper 4/10
+Title: Anti-Self-Distillation for Reasoning RL via Pointwise Mutual Information
+Paper already exists, checking if translation is complete...
+Update likes: 190  ->  190
+Update date_collected: 2026-05-25T10:49:20.467463+09:00  ->  2026-05-25T07:26:05.132552+09:00
+
+Processing paper 5/10
+Title: TransitLM: A Large-Scale Dataset and Benchmark for Map-Free Transit Route Generation
+Paper already exists, checking if translation is complete...
+Update likes: 168  ->  167
+Update date_collected: 2026-05-25T10:49:20.469623+09:00  ->  2026-05-25T07:26:05.134770+09:00
+
+Processing paper 6/10
+Title: AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration
+Paper already exists, checking if translation is complete...
+Update likes: 166  ->  166
+Update date_collected: 2026-05-25T10:49:20.472580+09:00  ->  2026-05-25T07:26:05.137814+09:00
+
+Processing paper 7/10
+Title: Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?
+Paper already exists, checking if translation is complete...
+Update likes: 162  ->  162
+Update date_collected: 2026-05-25T10:49:20.475040+09:00  ->  2026-05-25T07:26:05.140302+09:00
+
+Processing paper 8/10
+Title: When Vision Speaks for Sound
+Paper already exists, checking if translation is complete...
+Update likes: 146  ->  146
+Update date_collected: 2026-05-25T10:49:20.477334+09:00  ->  2026-05-25T07:26:05.142654+09:00
+
+Processing paper 9/10
+Title: Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining
+Paper already exists, checking if translation is complete...
+Update likes: 142  ->  142
+Update date_collected: 2026-05-25T10:49:20.479527+09:00  ->  2026-05-25T07:26:05.144936+09:00
+
+Processing paper 10/10
+Title: PhysBrain 1.0 Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 140  ->  140
+Update date_collected: 2026-05-25T10:49:20.482026+09:00  ->  2026-05-25T07:26:05.147511+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W22.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 신뢰할 수 있는 문서 지능을 위한 근거 소속성 벤치마킹
+Paper already exists with same likes count: 코드를 에이전트 하네스로
+Paper already exists with same likes count: DelTA: 강화 학습을 위한 식별적 토큰 크레딧 할당
+Paper already exists with same likes count: 'Anti-Self-Distillation을 통한 추론 강화학습을 위한 점별 상호 정보량 분석'
+Updating paper: TransitLM: 지도 없는 대중교통 경로 생성을 위한 대규모 데이터셋과 평가 (likes: 167 -> 168)
+Paper already exists with same likes count: AutoResearchClaw: 인간-인공지능 협업을 통한 자가 강화형 연구 시스템
+Paper already exists with same likes count: 편견 없는 인식: MLLM이 인격의 초안을 넘어설 수 있을까?
+Paper already exists with same likes count: 시각이 소리를 대변할 때
+Paper already exists with same likes count: 비디오2GUI: 일반화된 GUI 에이전트 사전학습을 위한 대규모 상호작용 궤적 합성
+Paper already exists with same likes count: PhysBrain 1.0 기술 보고서
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon May 25 01:49:40 UTC 2026 ===
+

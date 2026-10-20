@@ -1,0 +1,278 @@
+[
+  {
+    "title": "NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos",
+    "abstract": "In this paper, we propose NeoVerse, a versatile 4D world model that is capable of 4D reconstruction, novel-trajectory video generation, and rich downstream applications. We first identify a common limitation of scalability in current 4D world modeling methods, caused either by expensive and specialized multi-view 4D data or by cumbersome training pre-processing. In contrast, our NeoVerse is built upon a core philosophy that makes the full pipeline scalable to diverse in-the-wild monocular videos. Specifically, NeoVerse features pose-free feed-forward 4D reconstruction, online monocular degradation pattern simulation, and other well-aligned techniques. These designs empower NeoVerse with versatility and generalization to various domains. Meanwhile, NeoVerse achieves state-of-the-art performance in standard reconstruction and generation benchmarks. Our project page is available at https://neoverse-4d.github.io",
+    "authors": [
+      "Yuxue Yang",
+      "Lue Fan",
+      "Ziqi Shi",
+      "Junran Peng",
+      "Feng Wang",
+      "Zhaoxiang Zhang"
+    ],
+    "likes": 82,
+    "published_date": "Jan 1",
+    "url": "https://huggingface.co/papers/2601.00393",
+    "date_collected": "2026-01-06T07:08:45.024149+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "NeoVerse: in-the-wild 단일 카메라 비디오로 4D 세계 모델 강화",
+      "abstract": "본 논문에서는 4D 재구성, 신기한 궤적 비디오 생성 및 다양한 하류 응용 기능을 갖춘 다재다능한 4D 세계 모델인 NeoVerse를 제안한다. 기존 4D 세계 모델링 방법의 확장성의 공통 한계를 파악하고, 이를 극복하기 위해 NeoVerse는 완전한 파이프라인을 다양한 in-the-wild 단일 카메라 비디오로 확장 가능하게 만드는 핵심 철학에 기반하여 구축되었다. NeoVerse는 자세가 필요 없는 선형적인 4D 재구성, 온라인 단일 카메라 격하 패턴 시뮬레이션 및 기타 잘 맞는 기술로 구성되어 있다. 이러한 설계는 NeoVerse에 다재다능성과 각종 도메인에 대한 일반화 능력을 부여한다. 동시에, NeoVerse는 표준 재구성 및 생성 평가에서 최첨단 성능을 달성했다. 프로젝트 페이지: https://neoverse-4d.github.io"
+    },
+    "summary": "1. NeoVerse는 in-the-wild 단일 카메라 비디오로 확장 가능한 4D 세계 모델로, 다양한 응용 분야에 적용 가능하며 탁월한 성능을 보여준다.\n2. 이 모델은 특징적인 용어 사용을 최소화하고, 다양한 도메인에서의 다재다능성과 규칙성을 갖춘 설계 기법을 채택한다.\n3. NeoVerse는 표준적인 재구성 및 생성 평가에서 최신 성능을 기록하며, 프로젝트 페이지를 통해 자세한 정보를 제공한다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization",
+    "abstract": "Existing Large Language Model (LLM) agent frameworks face two significant challenges: high configuration costs and static capabilities. Building a high-quality agent often requires extensive manual effort in tool integration and prompt engineering, while deployed agents struggle to adapt to dynamic environments without expensive fine-tuning. To address these issues, we propose Youtu-Agent, a modular framework designed for the automated generation and continuous evolution of LLM agents. Youtu-Agent features a structured configuration system that decouples execution environments, toolkits, and context management, enabling flexible reuse and automated synthesis. We introduce two generation paradigms: a Workflow mode for standard tasks and a Meta-Agent mode for complex, non-standard requirements, capable of automatically generating tool code, prompts, and configurations. Furthermore, Youtu-Agent establishes a hybrid policy optimization system: (1) an Agent Practice module that enables agents to accumulate experience and improve performance through in-context optimization without parameter updates; and (2) an Agent RL module that integrates with distributed training frameworks to enable scalable and stable reinforcement learning of any Youtu-Agents in an end-to-end, large-scale manner. Experiments demonstrate that Youtu-Agent achieves state-of-the-art performance on WebWalkerQA (71.47\\%) and GAIA (72.8\\%) using open-weight models. Our automated generation pipeline achieves over 81\\% tool synthesis success rate, while the Practice module improves performance on AIME 2024/2025 by +2.7\\% and +5.4\\% respectively. Moreover, our Agent RL training achieves 40\\% speedup with steady performance improvement on 7B LLMs, enhancing coding/reasoning and searching capabilities respectively up to 35\\% and 21\\% on Maths and general/multi-hop QA benchmarks.",
+    "authors": [
+      "Yuchen Shi",
+      "Yuzheng Cai",
+      "Siqi Cai",
+      "Zihan Xu",
+      "Lichao Chen",
+      "Yulei Qin",
+      "Zhijian Zhou",
+      "Xiang Fei",
+      "Chaofan Qiu",
+      "Xiaoyu Tan",
+      "Gang Li",
+      "Zongyi Li",
+      "Haojia Lin",
+      "Guocan Cai",
+      "Yong Mao",
+      "Yunsheng Wu",
+      "Ke Li",
+      "Xing Sun"
+    ],
+    "likes": 81,
+    "published_date": "Dec 31, 2025",
+    "url": "https://huggingface.co/papers/2512.24615",
+    "date_collected": "2026-01-06T07:08:45.025839+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "Youtu-Agent: 자동 생성과 하이브리드 정책 최적화로 에이전트 생산성 확장",
+      "abstract": "기존 대형 언어 모델 (LLM) 에이전트 프레임워크는 두 가지 주요 도전 과제를 안고 있습니다: 높은 구성 비용과 정적 기능성. 높은 품질의 에이전트를 구축하려면 종종 도구 통합과 빠른 엔지니어링에 대한 방대한 수동 노력이 필요하며, 배포된 에이전트들은 비싼 파라미터 조정 없이 동적 환경에 적응하기 어렵습니다. 이러한 문제를 해결하기 위해, 우리는 Youtu-Agent를 제안합니다. 이는 자동 생성과 지속적 진화를 위해 설계된 모듈식 프레임워크로, LLM 에이전트들을 위한 것입니다. Youtu-Agent는 실행 환경, 툴킷, 및 컨텍스트 관리를 분리하여 유연한 재사용과 자동 합성을 가능하게 하는 구조화된 구성 시스템을 특징으로 합니다."
+    },
+    "summary": "1. Youtu-Agent는 높은 품질의 에이전트를 자동으로 생성하고 지속적으로 발전시키기 위한 모듈식 프레임워크로, 높은 구성 비용과 정적 기능성 등의 문제를 해결합니다.\n2. 두 가지 생성 패러다임을 소개하는데, 표준 작업에는 Workflow 모드를 사용하고, 복잡한 비표준 요구 사항에는 Meta-Agent 모드를 사용하여 툴 코드, 프롬프트, 그리고 구성을 자동으로 생성합니다.\n3. Youtu-Agent는 하이브리드 정책 최적화 시스템을 도입하여 Agent Practice 모듈을 통해 에이전트들이 경험을 축적하고 성능을 높일 수 있도록 하며, 분산 훈련 프레임워크와 통합된 Agent RL 모듈을 제공하여 확장 가능하고 안정적인 강화 학습을 지원합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Avatar Forcing: Real-Time Interactive Head Avatar Generation for Natural Conversation",
+    "abstract": "Talking head generation creates lifelike avatars from static portraits for virtual communication and content creation. However, current models do not yet convey the feeling of truly interactive communication, often generating one-way responses that lack emotional engagement. We identify two key challenges toward truly interactive avatars: generating motion in real-time under causal constraints and learning expressive, vibrant reactions without additional labeled data. To address these challenges, we propose Avatar Forcing, a new framework for interactive head avatar generation that models real-time user-avatar interactions through diffusion forcing. This design allows the avatar to process real-time multimodal inputs, including the user's audio and motion, with low latency for instant reactions to both verbal and non-verbal cues such as speech, nods, and laughter. Furthermore, we introduce a direct preference optimization method that leverages synthetic losing samples constructed by dropping user conditions, enabling label-free learning of expressive interaction. Experimental results demonstrate that our framework enables real-time interaction with low latency (approximately 500ms), achieving 6.8X speedup compared to the baseline, and produces reactive and expressive avatar motion, which is preferred over 80% against the baseline.",
+    "authors": [
+      "Taekyung Ki",
+      "Sangwon Jang",
+      "Jaehyeong Jo",
+      "Jaehong Yoon",
+      "Sung Ju Hwang"
+    ],
+    "likes": 43,
+    "published_date": "Jan 2",
+    "url": "https://huggingface.co/papers/2601.00664",
+    "date_collected": "2026-01-06T07:08:45.026965+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "자연 대화를 위한 실시간 대화식 헤드 아바타 생성",
+      "abstract": "대화식 머리 생성은 가상 커뮤니케이션과 콘텐츠 제작을 위해 정적 초상화로부터 생동감 있는 아바타를 만듭니다. 그러나 현재 모델들은 실제 상호작용을 전달하지 못하는 문제가 있어 종종 감정적인 참여가 부족한 일방적인 응답을 생성합니다. 본 연구에서는 실시간 움직임을 생성하고 추가적인 레이블된 데이터 없이 표현적이고 생생한 반응을 학습하는 두 가지 중요한 도전 과제를 식별합니다. 이러한 도전 과제에 대응하기 위해 Avatar Forcing이라는 신규 프레임워크를 제안합니다."
+    },
+    "summary": "1. Avatar Forcing은 실시간 사용자-아바타 상호작용을 모델링하여 음성 및 동작 등 다양한 입력을 즉각 처리하고 말과 행동, 웃음과 같은 언어적이고 비언어적 신호에 대한 즉각적인 반응을 가능케 합니다.\n2. 새로운 최적화 방법을 도입하여 감정적 상호작용의 레이블 없는 학습을 지원하는 동시에 시뮬레이션된 엔드 사용자 정보를 활용합니다.\n3. 실험 결과에서 Avatar Forcing은 약 500ms의 낮은 지연 시간으로 실시간 상호작용을 가능케 하며, 기존 방법에 비해 6.8배 빠른 속도를 달성하고 80% 이상이 기존 방법보다 선호하는 반응적이고 표현적인 아바타 움직임을 생성합니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "SenseNova-MARS: Empowering Multimodal Agentic Reasoning and Search via Reinforcement Learning",
+    "abstract": "While Vision-Language Models (VLMs) can solve complex tasks through agentic reasoning, their capabilities remain largely constrained to text-oriented chain-of-thought or isolated tool invocation. They fail to exhibit the human-like proficiency required to seamlessly interleave dynamic tool manipulation with continuous reasoning, particularly in knowledge-intensive and visually complex scenarios that demand coordinated external tools such as search and image cropping. In this work, we introduce SenseNova-MARS, a novel Multimodal Agentic Reasoning and Search framework that empowers VLMs with interleaved visual reasoning and tool-use capabilities via reinforcement learning (RL). Specifically, SenseNova-MARS dynamically integrates the image search, text search, and image crop tools to tackle fine-grained and knowledge-intensive visual understanding challenges. In the RL stage, we propose the Batch-Normalized Group Sequence Policy Optimization (BN-GSPO) algorithm to improve the training stability and advance the model's ability to invoke tools and reason effectively. To comprehensively evaluate the agentic VLMs on complex visual tasks, we introduce the HR-MMSearch benchmark, the first search-oriented benchmark composed of high-resolution images with knowledge-intensive and search-driven questions. Experiments demonstrate that SenseNova-MARS achieves state-of-the-art performance on open-source search and fine-grained image understanding benchmarks. Specifically, on search-oriented benchmarks, SenseNova-MARS-8B scores 67.84 on MMSearch and 41.64 on HR-MMSearch, surpassing proprietary models such as Gemini-3-Flash and GPT-5. SenseNova-MARS represents a promising step toward agentic VLMs by providing effective and robust tool-use capabilities. To facilitate further research in this field, we will release all code, models, and datasets.",
+    "authors": [
+      "Yong Xien Chng",
+      "Tao Hu",
+      "Wenwen Tong",
+      "Xueheng Li",
+      "Jiandong Chen",
+      "Haojia Yu",
+      "Jiefan Lu",
+      "Hewei Guo",
+      "Hanming Deng",
+      "Chengjun Xie",
+      "Gao Huang",
+      "Dahua Lin",
+      "Lewei Lu"
+    ],
+    "likes": 29,
+    "published_date": "Dec 30, 2025",
+    "url": "https://huggingface.co/papers/2512.24330",
+    "date_collected": "2026-01-06T07:08:45.028421+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "SenseNova-MARS: 강화 학습을 통한 다중 모달 에이전트적 추론과 검색 강화",
+      "abstract": "시각-언어 모델(Vision-Language Models, VLMs)은 에이전트적 추론을 통해 복잡한 작업을 해결할 수 있지만, 그들의 능력은 주로 텍스트 중심적 사고 과정이나 단독 도구 호출에 제한되어 있다. 그들은 동적 도구 조작과 지속적 추론을 순조롭게 교차하는 데 필요한 인간과 유사한 능력을 보여주지 못한다. 특히 지식 집약적이고 시각적으로 복잡한 시나리오에서는 검색 및 이미지 크롭과 같은 조화로운 외부 도구를 필요로 한다. 이 연구에서, 우리는 SenseNova-MARS를 소개한다. 이는 새로운 다중 모달 에이전트적 추론과 검색 프레임워크로, 강화 학습을 통해 VLMs에 시각적 추론과 도구 사용 능력을 교차시킨다. 구체적으로, SenseNova-MARS는 이미지 및 텍스트 검색, 이미지 크롭 도구를 동적으로 통합하여 세밀하고 지식 집약적인 시각적 이해 도전에 대처한다. 강화 학습 단계에서는 훈련 안정성을 향상시키고 도구 호출 및 효율적 추론 능력을 발전시키기 위해 Batch-Normalized Group Sequence Policy Optimization (BN-GSPO) 알고리즘을 제안한다. 복잡한 시각 작업에서 에이전트적 VLMs를 종합적으로 평가하기 위해 HR-MMSearch 벤치마크를 소개한다. 실험 결과는 SenseNova-MARS가 오픈 소스 검색 및 세밀한 이미지 이해 벤치마크에서 최고 수준의 성능을 달성함을 보여준다."
+    },
+    "summary": "1. SenseNova-MARS는 다중 모달 에이전트적 추론과 검색을 강화하기 위해 강화 학습을 도입한 프레임워크이다.\n2. BN-GSPO 알고리즘을 활용하여 SenseNova-MARS는 훈련 안정성을 향상시키고 도구 사용과 추론 능력을 향상시킨다.\n3. SenseNova-MARS는 HR-MMSearch 벤치마크에서 우수한 성과를 거뒀으며, 검색 지향적 벤치마크에서 상태-of-the-art 성능을 보여준다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation",
+    "abstract": "Multimodal Large Language Models (MLLMs) have made remarkable progress in video understanding. However, they suffer from a critical vulnerability: an over-reliance on language priors, which can lead to visual ungrounded hallucinations, especially when processing counterfactual videos that defy common sense. This limitation, stemming from the intrinsic data imbalance between text and video, is challenging to address due to the substantial cost of collecting and annotating counterfactual data. To address this, we introduce DualityForge, a novel counterfactual data synthesis framework that employs controllable, diffusion-based video editing to transform real-world videos into counterfactual scenarios. By embedding structured contextual information into the video editing and QA generation processes, the framework automatically produces high-quality QA pairs together with original-edited video pairs for contrastive training. Based on this, we build DualityVidQA, a large-scale video dataset designed to reduce MLLM hallucinations. In addition, to fully exploit the contrastive nature of our paired data, we propose Duality-Normalized Advantage Training (DNA-Train), a two-stage SFT-RL training regime where the RL phase applies pair-wise ell_1 advantage normalization, thereby enabling a more stable and efficient policy optimization. Experiments on DualityVidQA-Test demonstrate that our method substantially reduces model hallucinations on counterfactual videos, yielding a relative improvement of 24.0% over the Qwen2.5-VL-7B baseline. Moreover, our approach achieves significant gains across both hallucination and general-purpose benchmarks, indicating strong generalization capability. We will open-source our dataset and code.",
+    "authors": [
+      "Zhe Huang",
+      "Hao Wen",
+      "Aiming Hao",
+      "Bingze Song",
+      "Meiqi Wu",
+      "Jiahong Wu",
+      "Xiangxiang Chu",
+      "Sheng Lu",
+      "Haoqian Wang"
+    ],
+    "likes": 24,
+    "published_date": "Dec 30, 2025",
+    "url": "https://huggingface.co/papers/2512.24271",
+    "date_collected": "2026-01-06T07:08:45.029706+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "환각을 다스리다: 반사실적 비디오 생성을 통해 MLLM의 비디오 이해력 강화",
+      "abstract": "다중 모달 대형 언어 모델(Multimodal Large Language Models, MLLMs)은 비디오 이해력에서 주목할 만한 진전을 이루었습니다. 그러나 이러한 모델은 언어 선험지에 지나치게 의존함으로써, 특히 일반 상식을 무시하는 반사실적 비디오 처리 시 시각적으로 기반을 둔 환각에 취약합니다. 텍스트와 비디오 간 내재적 데이터 불균형으로 비롯된 이 한계는 반사실적 데이터를 수집하고 주석 달기가 막대한 비용이 들어 어렵게 해결됩니다. 우리는 이를 해결하기 위해 새로운 반사실적 데이터 합성 프레임워크인 DualityForge를 소개합니다. 실제 비디오를 반사실적 상황으로 변환하기 위해 제어 가능한 확산 기반 비디오 편집을 채택하는 이 프레임워크는 구조화된 맥락 정보를 비디오 편집 및 QA 생성 과정에 임베드하여, 대조적 훈련을 위해 원본-편집 비디오 쌍과 높은 품질의 QA 쌍을 자동으로 생성합니다. 이를 기반으로 MLLM 환각을 줄이기 위해 대규모 비디오 데이터셋인 DualityVidQA를 구축했습니다. 또한, 쌍으로 제공되는 데이터의 대조적 성격을 완전히 활용하기 위해, RL 단계에서는 쌍별 ell_1 어드밴티지 정규화를 적용하는 Duality-Normalized Advantage Training (DNA-Train)을 제안합니다. DualityVidQA-Test 실험 결과, 우리의 방법이 반사실적 비디오에서 모델 환각을 상당히 줄여, Qwen2.5-VL-7B 기준대비 상대적으로 24.0%의 개선을 달성했습니다. 뿐만 아니라, 우리의 접근법은 환각 및 일반 벤치마크 모두에서 상당한 성과 향상을 달성하여 강력한 일반화 능력을 나타냈습니다. 우리는 데이터셋과 코드를 오픈 소스로 공개할 예정입니다."
+    },
+    "summary": "1. MLLM의 환각 문제 해결을 위해 반사실적 비디오 생성 기법인 DualityForge 도입\n2. DualityVidQA 데이터셋 구축을 통한 환각 감소 및 Duality-Normalized Advantage Training 도입\n3. 실험 결과, 모델이 반사실적 비디오에서 환각을 상당히 감소시키고 일반화 능력 강화",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "AdaGaR: Adaptive Gabor Representation for Dynamic Scene Reconstruction",
+    "abstract": "Reconstructing dynamic 3D scenes from monocular videos requires simultaneously capturing high-frequency appearance details and temporally continuous motion. Existing methods using single Gaussian primitives are limited by their low-pass filtering nature, while standard Gabor functions introduce energy instability. Moreover, lack of temporal continuity constraints often leads to motion artifacts during interpolation. We propose AdaGaR, a unified framework addressing both frequency adaptivity and temporal continuity in explicit dynamic scene modeling. We introduce Adaptive Gabor Representation, extending Gaussians through learnable frequency weights and adaptive energy compensation to balance detail capture and stability. For temporal continuity, we employ Cubic Hermite Splines with Temporal Curvature Regularization to ensure smooth motion evolution. An Adaptive Initialization mechanism combining depth estimation, point tracking, and foreground masks establishes stable point cloud distributions in early training. Experiments on Tap-Vid DAVIS demonstrate state-of-the-art performance (PSNR 35.49, SSIM 0.9433, LPIPS 0.0723) and strong generalization across frame interpolation, depth consistency, video editing, and stereo view synthesis. Project page: https://jiewenchan.github.io/AdaGaR/",
+    "authors": [
+      "Jiewen Chan",
+      "Zhenjun Zhao",
+      "Yu-Lun Liu"
+    ],
+    "likes": 22,
+    "published_date": "Jan 2",
+    "url": "https://huggingface.co/papers/2601.00796",
+    "date_collected": "2026-01-06T07:08:45.030754+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "다이내믹 씬 재구성을 위한 적응적 가버 표현 (AdaGaR)",
+      "abstract": "단안 비디오에서 다이내믹한 3D 씬을 재구성하려면 고주파 외형 세부사항과 시간적으로 연속된 움직임을 동시에 캡처해야 합니다. 단일 가우시안 기본체를 사용하는 기존 방법은 저주파 통과 필터링 성질로 한계가 있으며, 표준 가버 함수는 에너지 불안정성을 도입합니다. 또한 시간적 연속성 제약의 부재는 보간 중 움직임 아티팩트로 이어질 수 있습니다. 본 논문에서는 주파수 적응성과 시간적 연속성을 모두 다루는 통합 프레임워크인 AdaGaR를 제안합니다. 우리는 가버 표현 (Adaptive Gabor Representation)을 도입하여 가우시안을 학습 가능한 주파수 가중치와 적응적 에너지 보상을 통해 확장하여 세부사항 캡처와 안정성을 균형 있게 유지합니다. 시간적 연속성을 위해 곡선 에르미트 스플라인을 사용하여 부드러운 움직임 진화를 보장합니다."
+    },
+    "summary": "1. AdaGaR는 주파수 적응성과 시간적 연속성을 다루는 프레임워크로, 고주파 세부사항과 매끄러운 움직임을 동시에 재구성하는 능력을 갖습니다.\n2. 주어진 환경에서 단일 가우시안이나 표준 가버 함수와는 달리, AdaGaR는 학습 가능한 주파수 가중치와 적응적 에너지 보상을 사용하여 안정적인 위치 추적을 제공합니다.\n3. 초기 교육 중에 깊이 추정, 포인트 추적 및 전경 마스크를 결합한 적응적 초기화 메커니즘을 도입하여 안정적인 포인트 클라우드 분포를 수립합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Nested Learning: The Illusion of Deep Learning Architectures",
+    "abstract": "Despite the recent progresses, particularly in developing Language Models, there are fundamental challenges and unanswered questions about how such models can continually learn/memorize, self-improve, and find effective solutions. In this paper, we present a new learning paradigm, called Nested Learning (NL), that coherently represents a machine learning model with a set of nested, multi-level, and/or parallel optimization problems, each of which with its own context flow. Through the lenses of NL, existing deep learning methods learns from data through compressing their own context flow, and in-context learning naturally emerges in large models. NL suggests a philosophy to design more expressive learning algorithms with more levels, resulting in higher-order in-context learning and potentially unlocking effective continual learning capabilities. We advocate for NL by presenting three core contributions: (1) Expressive Optimizers: We show that known gradient-based optimizers, such as Adam, SGD with Momentum, etc., are in fact associative memory modules that aim to compress the gradients' information (by gradient descent). Building on this insight, we present other more expressive optimizers with deep memory and/or more powerful learning rules; (2) Self-Modifying Learning Module: Taking advantage of NL's insights on learning algorithms, we present a sequence model that learns how to modify itself by learning its own update algorithm; and (3) Continuum Memory System: We present a new formulation for memory system that generalizes the traditional viewpoint of long/short-term memory. Combining our self-modifying sequence model with the continuum memory system, we present a continual learning module, called Hope, showing promising results in language modeling, knowledge incorporation, and few-shot generalization tasks, continual learning, and long-context reasoning tasks.",
+    "authors": [
+      "Ali Behrouz",
+      "Meisam Razaviyayn",
+      "Peilin Zhong",
+      "Vahab Mirrokni"
+    ],
+    "likes": 19,
+    "published_date": "Dec 31, 2025",
+    "url": "https://huggingface.co/papers/2512.24695",
+    "date_collected": "2026-01-06T07:08:45.031831+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "깊은 학습 구조의 환상: 네스티드 학습",
+      "abstract": "최근의 언어 모델 개발 등 최신 기술들에도, 모델이 어떻게 지속적으로 학습/기억하고 자체 개선하며 효과적인 해결책을 찾는지에 대한 근본적인 과제와 답변되지 않은 질문들이 존재한다. 본 논문에서는 Nested Learning (NL, 네스티드 학습)이라는 새로운 학습 패러다임을 제시한다. NL은 기계 학습 모델을 여러 수준 및/또는 병렬 최적화 문제들의 집합으로 일관되게 표현하며, 각각의 문제는 자체의 컨텍스트 흐름을 갖는다. NL의 시각을 통해, 기존의 깊은 학습 방법들은 자신들의 컨텍스트 흐름을 압축함으로써 데이터로부터 학습하며, 컨텍스트 학습은 대형 모델에서 자연스럽게 발생한다. NL은 보다 표현력이 뛰어난 학습 알고리즘을 디자인하는 철학을 제안하며, 이는 더 높은 수준의 컨텍스트 학습과 효과적인 지속적 학습 능력을 잠재적으로 개방할 수 있다. NL을 옹호함으로써 세 가지 핵심 기여를 제시한다: (1) 표현력 있는 옵티마이저: 기존의 gradient 기반 옵티마이저가 실제로 경사 하강을 통해 경사 정보를 압축하는 연상 메모리 모듈임을 보여주며, 이를 기반으로 깊은 메모리나 더 강력한 학습 규칙을 갖춘 다른 표현력 있는 옵티마이저들을 제시한다; (2) 자가 수정 학습 모듈: NL이 학습 알고리즘에 대한 통찰력을 활용하여, 자체 업데이트 알고리즘을 학습하는 순차 모델을 제시한다; (3) 연속체 메모리 시스템: 전통적인 단/장기 메모리의 관점을 일반화한 새로운 기억 시스템 공식을 제시한다. 자가 수정 순차 모델과 연속체 메모리 시스템을 결합하여, 언어 모델링, 지식 통합, 희소 샷 일반화 작업, 지속적 학습, 그리고 장기 컨텍스트 추론 작업에서 유망한 결과물을 보여주는 Hope라는 지속적 학습 모듈을 제시한다."
+    },
+    "summary": "1. 기존의 깊은 학습 방법들은 데이터로부터 자신들의 컨텍스트 흐름을 압축하여 학습하며, 네스티드 학습은 더 높은 수준의 컨텍스트 학습과 지속적 학습 능력을 개방할 수 있는 새로운 학습 패러다임을 제시한다.\n2. 연구는 표현력 있는 옵티마이저와 자가 수정 학습 모듈을 소개하며, 이를 통해 경사 정보를 압축하고 자체적인 업데이트 알고리즘을 학습하는 모델을 구축하는 방법을 제시한다.\n3. 저자들은 연속체 메모리 시스템과 이를 활용한 Hope라는 지속적 학습 모듈을 도입하여, 언어 모델링, 지식 통합, 희소 샷 일반화 작업, 그리고 장기 컨텍스트 추론 작업에서 유망한 결과를 보여주었다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Deep Delta Learning",
+    "abstract": "The efficacy of deep residual networks is fundamentally predicated on the identity shortcut connection. While this mechanism effectively mitigates the vanishing gradient problem, it imposes a strictly additive inductive bias on feature transformations, thereby limiting the network's capacity to model complex state transitions. In this paper, we introduce Deep Delta Learning (DDL), a novel architecture that generalizes the standard residual connection by modulating the identity shortcut with a learnable, data-dependent geometric transformation. This transformation, termed the Delta Operator, constitutes a rank-1 perturbation of the identity matrix, parameterized by a reflection direction vector k(X) and a gating scalar β(X). We provide a spectral analysis of this operator, demonstrating that the gate β(X) enables dynamic interpolation between identity mapping, orthogonal projection, and geometric reflection. Furthermore, we restructure the residual update as a synchronous rank-1 injection, where the gate acts as a dynamic step size governing both the erasure of old information and the writing of new features. This unification empowers the network to explicitly control the spectrum of its layer-wise transition operator, enabling the modeling of complex, non-monotonic dynamics while preserving the stable training characteristics of gated residual architectures.",
+    "authors": [
+      "Yifan Zhang",
+      "Yifeng Liu",
+      "Mengdi Wang",
+      "Quanquan Gu"
+    ],
+    "likes": 18,
+    "published_date": "Jan 1",
+    "url": "https://huggingface.co/papers/2601.00417",
+    "date_collected": "2026-01-06T07:08:45.032936+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "딥 델타 러닝",
+      "abstract": "깊은 잔여 네트워크의 효과성은 기본적으로 항등 바로 가기 연결에 의존합니다. 이 메커니즘은 사라지는 그레이디언트 문제를 효과적으로 완화하지만, 특징 변환에 엄격히 가산적 귀납적 편향을 부과하여 네트워크가 복잡한 상태 전이를 모델링하는 능력을 제한합니다. 본 논문에서는 표준 잔여 연결을 일반화하는 새로운 아키텍처인 딥 델타 러닝(DDL)을 소개합니다. 이 아키텍처는 학습 가능하며 데이터 종속적인 기하학적 변환을 사용하여 항등 바로 가기를 수정합니다. 이 Delta Operator라는 변환은 항등 행렬의 순위-1 변조로, 반사 방향 벡터 k(X)와 게이팅 스칼라 β(X)로 매개변수화됩니다. 이 연산자의 스펙트럼 분석을 제시합니다. 게이트 β(X)는 항등 매핑, 직교 프로젝션 및 기하적 반사 사이의 동적 보간을 가능하게 합니다. 게다가, 잔여 업데이트를 동기화된 순위-1 주입으로 재구성하여 게이트가 이전 정보의 삭제와 새로운 특징의 쓰기를 조절하는 동적 단계 크기로 작용하는 네트워크를 강화합니다. 이 통합은 네트워크가 계층별 전이 연산자의 스펙트럼을 명시적으로 제어함으로써 안정된 훈련 특성을 유지하면서 복잡한, 비단조적인 동적을 모델링할 수 있도록 합니다."
+    },
+    "summary": "1. 딥 델타 러닝(Delta Learning)은 항등바로가기 연 결을 수정하여 데이터 종속적인 기하학적 변환을 도입하여 복잡한 상태 전이를 모델링하는 능력을 향상시킨다.\n2. Delta Operator는 게이트 β(X)를 통해 항등 매핑, 직교 프로젝션 및 기하적 반사 간의 동적 보간을 가능하게 하며, 네트워크가 스펙트럼을 제어할 수 있게 한다.\n3. 잔여 업데이트를 순위-1 주입으로 재구성하여 네트워크가 새로운 특징을 쓰고 이전 정보를 삭제하는 동적 단계 크기를 통해 안정된 훈련 특성을 제공한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Reasoning-Creativity Trade-off: Toward Creativity-Driven Problem Solving",
+    "abstract": "State-of-the-art large language model (LLM) pipelines rely on bootstrapped reasoning loops: sampling diverse chains of thought and reinforcing the highest-scoring ones, mainly optimizing correctness. We analyze how this design choice is sensitive to the collapse of the model's distribution over reasoning paths, slashing semantic entropy and undermining creative problem-solving. To analyze this failure, we introduce Distributional Creative Reasoning (DCR), a unified variational objective that casts training as gradient flow through probability measures on solution traces. STaR, GRPO, and DPO, as well as entropy bonuses, and other methods, all constitute special cases of the same loss. The framework delivers three core results: (i) the diversity decay theorem, describing how correctness-based objectives lead to distinct modes of diversity decay for STaR, GRPO, and DPO; (ii) designs that ensure convergence to a stable and diverse policy, effectively preventing collapse; and (iii) simple, actionable recipes to achieve this in practice. DCR thus offers the first principled recipe for LLMs that remain both correct and creative.",
+    "authors": [
+      "Max Ruiz Luyten",
+      "Mihaela van der Schaar"
+    ],
+    "likes": 9,
+    "published_date": "Jan 2",
+    "url": "https://huggingface.co/papers/2601.00747",
+    "date_collected": "2026-01-06T07:08:45.033966+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "상식-창의성 트레이드오프: 창의성 중심 문제 해결로",
+      "abstract": "최신 대형 언어 모델 (Large Language Model, LLM) 파이프라인은 다양한 사고 체인을 샘플링하고 가장 높은 점수를 부여받은 것을 강화함으로써 작동하는, 부트스트랩된 추론 루프에 의존합니다. 주로 정확성을 최적화하는 이 디자인 선택이 모델의 추론 경로 분포의 붕괴에 민감하며 의미적 엔트로피를 줄이고 창의적 문제 해결을 약화시킵니다. 이 실패를 분석하기 위해 우리는 Distributional Creative Reasoning (DCR)을 소개합니다. 이는 솔루션 트레이스에 대한 확률 측도를 통해 훈련을 경사 흐름으로 투영하는 통합된 변분 목적입니다. STaR, GRPO, DPO 및 엔트로피 보너스 등 다양한 기법들이 모두 동일한 손실의 특수 사례로 존재합니다. 이 프레임워크는 세 가지 핵심 결과를 제시합니다: (i) 다양성 감소 정리, STaR, GRPO 및 DPO에 대한 정확성 기반 목적이 어떻게 다양성 감소 모드로 이어지는지 설명; (ii) 안정적이고 다양한 정책으로 수렴하는 설계, 붕괴를 방지하는 효과적인 방법; (iii) 실무에서 이를 달성하기 위한 간단하고 실행 가능한 레시피. DCR은 정확하고 창의적인 LLM의 첫 번째 원칙적인 레시피를 제공합니다."
+    },
+    "summary": "1. 최신 언어 모델 파이프라인은 주로 정확성에 초점을 맞추어 디자인되었지만, 이는 창의적 문제 해결을 약화시키는 모델의 추론 경로 분포 붕괴로 이어집니다.\n2. Distributional Creative Reasoning (DCR)은 학습을 솔루션 트레이스의 확률 측도를 통한 경사 흐름으로 제시하는 효율적인 방법을 소개합니다.\n3. DCR 프레임워크는 다양성 감소 정리와 안정적이고 다양한 정책으로의 수렴을 보장하며, 창의성을 유지하면서 LLM의 원칙적인 레시피를 제시합니다.",
+    "categories": [
+      "LLM",
+      "기타"
+    ]
+  },
+  {
+    "title": "Diversity or Precision? A Deep Dive into Next Token Prediction",
+    "abstract": "Recent advancements have shown that reinforcement learning (RL) can substantially improve the reasoning abilities of large language models (LLMs). The effectiveness of such RL training, however, depends critically on the exploration space defined by the pre-trained model's token-output distribution. In this paper, we revisit the standard cross-entropy loss, interpreting it as a specific instance of policy gradient optimization applied within a single-step episode. To systematically study how the pre-trained distribution shapes the exploration potential for subsequent RL, we propose a generalized pre-training objective that adapts on-policy RL principles to supervised learning. By framing next-token prediction as a stochastic decision process, we introduce a reward-shaping strategy that explicitly balances diversity and precision. Our method employs a positive reward scaling factor to control probability concentration on ground-truth tokens and a rank-aware mechanism that treats high-ranking and low-ranking negative tokens asymmetrically. This allows us to reshape the pre-trained token-output distribution and investigate how to provide a more favorable exploration space for RL, ultimately enhancing end-to-end reasoning performance. Contrary to the intuition that higher distribution entropy facilitates effective exploration, we find that imposing a precision-oriented prior yields a superior exploration space for RL.",
+    "authors": [
+      "Haoyuan Wu",
+      "Hai Wang",
+      "Jiajia Wu",
+      "Jinxiang Ou",
+      "Keyao Wang",
+      "Weile Chen",
+      "Zihao Zheng",
+      "Bei Yu"
+    ],
+    "likes": 4,
+    "published_date": "Dec 28, 2025",
+    "url": "https://huggingface.co/papers/2512.22955",
+    "date_collected": "2026-01-06T07:08:45.035187+09:00",
+    "week": "2026-W02",
+    "translation": {
+      "title": "다양성 또는 정밀도? 다음 토큰 예측에 대한 심층 탐구",
+      "abstract": "최근 발전사항들은 강화 학습(Reinforcement Learning, RL)이 대규모 언어 모델(Large Language Models, LLMs)의 추론 능력을 크게 향상시킬 수 있다는 것을 보여주었습니다. 그러나 이러한 RL 훈련의 효과는 사전 훈련된 모델의 토큰-출력 분포에 의해 결정되는데, 이에 대한 정교한 탐구가 필요합니다. 이 논문에서는 표준 교차 엔트로피 손실을 다시 살펴보며 이것을 단일 단계 에피소드 내에서 적용된 정책 그래디언트 최적화의 특정 인스턴스로 해석합니다. 사전 훈련된 분포가 이후 RL을 위한 탐험 가능성을 어떻게 형성하는지 체계적으로 연구하기 위해, 우리는 지도 학습에 정책 그래디언트 최적화 원칙을 적응시키는 일반화된 사전 훈련 목표를 제안합니다. 다음 토큰 예측을 확률적 의사 결정 프로세스로 정의함으로써, 다양성과 정밀도를 명시적으로 균형있게 맞추는 보상 형성 전략을 소개합니다. 우리의 방법은 양의 보상 스케일링 계수를 사용하여 사실 토큰에 대한 확률 집중을 조절하고, 높은 순위와 낮은 순위의 부정적 토큰을 비대칭적으로 다루는 순위 인식 메커니즘을 활용합니다. 이를 통해 사전 훈련된 토큰-출력 분포를 재구성하고 RL을 위한 더 유리한 탐험 공간을 제공하는 방법을 조사함으로써 최종적으로 end-to-end 추론 성능을 향상시킵니다. 효과적인 탐색을 용이하게 하는 높은 분포 엔트로피가 유리하다는 직관과는 달리, 정밀도 지향적 선행이 RL을 위한 뛰어난 탐험 공간을 낳는 것으로 밝혀졌습니다."
+    },
+    "summary": "1. 강화 학습을 이용한 대규모 언어 모델의 추론 능력 향상은 사전 훈련된 분포에 의해 중요하게 좌우됨.\n2. 다음 토큰 예측을 확률적 의사 결정 프로세스로 취급하여 다양성과 정밀도를 균형 있게 유지하기 위한 보상 형성 전략이 도입됨.\n3. 정밀도 지향적 사전 분포가 강화 학습을 위한 더 유리한 탐험 공간을 제공하여 end-to-end 추론 성능을 향상시킴.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  }
+]

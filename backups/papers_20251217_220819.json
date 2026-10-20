@@ -1,0 +1,331 @@
+[
+  {
+    "title": "ReFusion: A Diffusion Large Language Model with Parallel Autoregressive Decoding",
+    "abstract": "Autoregressive models (ARMs) are hindered by slow sequential inference. While masked diffusion models (MDMs) offer a parallel alternative, they suffer from critical drawbacks: high computational overhead from precluding Key-Value (KV) caching, and incoherent generation arising from learning dependencies over an intractable space of token combinations. To address these limitations, we introduce ReFusion, a novel masked diffusion model that achieves superior performance and efficiency by elevating parallel decoding from the token level to a higher slot level, where each slot is a fixed-length, contiguous sub-sequence. This is achieved through an iterative ``plan-and-infill'' decoding process: a diffusion-based planning step first identifies a set of weakly dependent slots, and an autoregressive infilling step then decodes these selected slots in parallel. The slot-based design simultaneously unlocks full KV cache reuse with a unified causal framework and reduces the learning complexity from the token combination space to a manageable slot-level permutation space. Extensive experiments on seven diverse benchmarks show that ReFusion not only overwhelmingly surpasses prior MDMs with 34% performance gains and an over 18times speedup on average, but also bridges the performance gap to strong ARMs while maintaining a 2.33times average speedup.",
+    "authors": [
+      "Jia-Nan Li",
+      "Jian Guan",
+      "Wei Wu",
+      "Chongxuan Li"
+    ],
+    "likes": 73,
+    "published_date": "Dec 15",
+    "url": "https://huggingface.co/papers/2512.13586",
+    "date_collected": "2025-12-17T07:08:25.744481+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "ReFusion: 병렬 자기회귀 디코딩을 통한 확산 대형 언어 모델",
+      "abstract": "자기회귀 모델(ARMs)은 느린 순차 추론에 어려움을 겪습니다. 반면, 가려진 확산 모델(MDMs)은 병렬 대안을 제공하지만 주요 단점으로는 Key-Value (KV) 캐싱을 배제하여 발생하는 높은 계산 오버헤드와, 어려운 토큰 조합 공간에서 의존성을 학습하여 발생하는 부조화한 생성이 있습니다. 이러한 한계를 해결하기 위해 ReFusion이라는 새로운 가려진 확산 모델을 소개합니다. ReFusion은 병렬 디코딩을 토큰 수준에서 더 높은 슬롯 수준(고정 길이의 연속하는 하위 시퀀스)으로 올려 성능과 효율성을 향상시킵니다. 이는 확산 기반 계획 단계와 자기회귀 채움 단계를 반복하는 과정을 통해 달성됩니다. 이디 슬롯 기반 설계는 키-값 캐시의 완전한 재사용을 동시에 가능하게 하며, 토큰 조합 공간의 학습 복잡성을 다루기 쉬운 슬롯 수준의 순열 공간으로 감소시킵니다. 7가지 다양한 벤치마크 실험 결과, ReFusion은 이전 MDMs를 압도하며 평균 34% 성능 향상과 18배 이상의 속도 향상을 달성할 뿐만 아니라, 강력한 ARMs와의 성능 격차를 줄이면서 평균 2.33배 속도 향상을 유지합니다."
+    },
+    "summary": "1. ReFusion은 토큰 수준 병렬 디코딩을 슬롯 수준으로 높여 KV 캐시 재사용과 학습 복잡성을 개선하며 우수한 성능과 효율성을 제공합니다.\n2. 새로운 가려진 확산 모델인 ReFusion은 이전 MDMs를 압도하고 강력한 ARMs와의 성능 격차를 줄이면서 높은 속도 향상을 달성합니다.\n3. ReFusion의 실험 결과는 34% 성능 향상과 18배 이상의 속도 향상을 보여주며 다양한 벤치마크에서 우수한 성능을 보입니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "EgoX: Egocentric Video Generation from a Single Exocentric Video",
+    "abstract": "Egocentric perception enables humans to experience and understand the world directly from their own point of view. Translating exocentric (third-person) videos into egocentric (first-person) videos opens up new possibilities for immersive understanding but remains highly challenging due to extreme camera pose variations and minimal view overlap. This task requires faithfully preserving visible content while synthesizing unseen regions in a geometrically consistent manner. To achieve this, we present EgoX, a novel framework for generating egocentric videos from a single exocentric input. EgoX leverages the pretrained spatio temporal knowledge of large-scale video diffusion models through lightweight LoRA adaptation and introduces a unified conditioning strategy that combines exocentric and egocentric priors via width and channel wise concatenation. Additionally, a geometry-guided self-attention mechanism selectively attends to spatially relevant regions, ensuring geometric coherence and high visual fidelity. Our approach achieves coherent and realistic egocentric video generation while demonstrating strong scalability and robustness across unseen and in-the-wild videos.",
+    "authors": [
+      "Taewoong Kang",
+      "Kinam Kim",
+      "Dohyeon Kim",
+      "Minho Park",
+      "Junha Hyung",
+      "Jaegul Choo"
+    ],
+    "likes": 73,
+    "published_date": "Dec 9",
+    "url": "https://huggingface.co/papers/2512.08269",
+    "date_collected": "2025-12-17T07:08:25.745765+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "단일 외부 시점 동영상으로부터 자아 중심 동영상 생성 (EgoX)",
+      "abstract": "자아 중심 인식은 인간들이 직접 자신의 시점에서 세계를 경험하고 이해하는 것을 가능하게 합니다. 외부 시점(삼인칭) 동영상을 자아 중심(일인칭) 동영상으로 변환함으로써 몰입형 이해의 새로운 가능성을 열어줍니다. 그러나 카메라 자세의 변화가 극단적이고 보이는 영역이 겹치지 않아 난이도가 높습니다. 이 작업은 볼 수 있는 콘텐츠를 정확히 보존하면서 보이지 않는 영역을 기하학적 일관성 있게 합성해야 합니다. 이를 위해 우리는 EgoX를 제안합니다. EgoX는 단일 외부 입력으로부터 자아 중심 동영상을 생성하기 위한 혁신적인 프레임워크입니다."
+    },
+    "summary": "1. EgoX는 대규모 비디오 확산 모델의 사전 훈련된 시공간 지식을 활용하여 가벼운 LoRA 적응을 통해 자아 중심 동영상을 생성합니다.\n2. 채널별 및 폭 방식 연결을 통해 외부 시점 및 자아 중심 우선 사항을 결합하는 통합된 조건 전략을 도입합니다.\n3. 기하학 안내의 자기 주의 메커니즘을 통해 지리적 일관성과 높은 시각적 충실성을 보장하며 은닉 및 야생 비디오에 대해 강력한 확장성과 견고성을 시연합니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "Towards Scalable Pre-training of Visual Tokenizers for Generation",
+    "abstract": "The quality of the latent space in visual tokenizers (e.g., VAEs) is crucial for modern generative models. However, the standard reconstruction-based training paradigm produces a latent space that is biased towards low-level information, leading to a foundation flaw: better pixel-level accuracy does not lead to higher-quality generation. This implies that pouring extensive compute into visual tokenizer pre-training translates poorly to improved performance in generation. We identify this as the ``pre-training scaling problem`` and suggest a necessary shift: to be effective for generation, a latent space must concisely represent high-level semantics. We present VTP, a unified visual tokenizer pre-training framework, pioneering the joint optimization of image-text contrastive, self-supervised, and reconstruction losses. Our large-scale study reveals two principal findings: (1) understanding is a key driver of generation, and (2) much better scaling properties, where generative performance scales effectively with compute, parameters, and data allocated to the pretraining of the visual tokenizer. After large-scale pre-training, our tokenizer delivers a competitive profile (78.2 zero-shot accuracy and 0.36 rFID on ImageNet) and 4.1 times faster convergence on generation compared to advanced distillation methods. More importantly, it scales effectively: without modifying standard DiT training specs, solely investing more FLOPS in pretraining VTP achieves 65.8\\% FID improvement in downstream generation, while conventional autoencoder stagnates very early at 1/10 FLOPS. Our pre-trained models are available at https://github.com/MiniMax-AI/VTP.",
+    "authors": [
+      "Jingfeng Yao",
+      "Yuda Song",
+      "Yucong Zhou",
+      "Xinggang Wang"
+    ],
+    "likes": 66,
+    "published_date": "Dec 15",
+    "url": "https://huggingface.co/papers/2512.13687",
+    "date_collected": "2025-12-17T07:08:25.746863+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "시각 토크나이저 생성을 위한 확장 가능한 사전 학습에 가까이",
+      "abstract": "시각 토크나이저(예: VAEs)의 잠재 공간의 품질은 현대적인 생성 모델에 있어 중요합니다. 하지만 표준 복원 기반 교육 패러다임은 낮은 수준의 정보에 편향된 잠재 공간을 생성하여, 더 나은 픽셀 수준 정확도가 고품질 생성으로 이어지지 않는 기초적인 결함을 야기합니다. 우리는 이것을 \"사전 교육 확장 문제\"로 확인하고, 고품질 생성을 위해 잠재 공간이 고수준 의미를 간결하게 표현해야 한다고 제안합니다. 우리는 VTP를 제시하며, 이미지-텍스트 대조, 스스로 지도, 복원 손실의 공동 최적화를 선도하는 통합 시각 토크나이저 사전 학습 프레임워크입니다. 우리의 대규모 연구는 두 가지 주요 발견을 드러냅니다: (1) 이해는 생성의 주요 동력요인이며, (2) 계산, 매개변수, 및 데이터 양이 시각 토크나이저의 사전 학습에 할당되면 생성 성능이 효과적으로 확장된다는 것입니다. 대규모 사전 학습 후, 우리의 토크나이저는 경쟁적인 프로필을 제공하며(78.2 제로샷 정확도 및 ImageNet에서 0.36 rFID), 세련된 증류 방법과 비교하여 4.1배 빠른 수렴이 가능합니다. 더 중요한 것은 효과적으로 확장된다는 점입니다: VTP의 사전 학습에 더 많은 FLOPS를 투자하면 다운스트림 생성에서 65.8\\%의 FID 개선이 가능하며, 기존 오토인코더는 매우 일찍 1/10 FLOPS에서 정체됩니다. 사전 학습된 모델은 https://github.com/MiniMax-AI/VTP에서 이용 가능합니다."
+    },
+    "summary": "1. 잠재 공간의 품질이 낮은 수준 정보에 편향되면 생성 능력이 저하될 수 있으며, 이를 해결하기 위해 높은 수준 의미를 간결하게 표현하는 VTP 시각 토크나이저를 제안한다.\n2. 이해는 생성의 주요 요인이며, 시각 토크나이저의 사전 학습에 할당된 계산 및 데이터 양이 성능 향상에 효과적으로 영향을 미친다.\n3. VTP의 사전 학습은 기존 방법에 비해 더 빠른 수렴 및 효과적인 확장성을 제공하며, 다운스트림 생성에서 bet FID 개선이 가능하다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Memory in the Age of AI Agents",
+    "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
+    "authors": [
+      "Yuyang Hu",
+      "Shichun Liu",
+      "Yanwei Yue",
+      "Guibin Zhang",
+      "Boyang Liu",
+      "Fangyi Zhu",
+      "Jiahang Lin",
+      "Honglin Guo",
+      "Shihan Dou",
+      "Zhiheng Xi",
+      "Senjie Jin",
+      "Jiejun Tan",
+      "Yanbin Yin",
+      "Jiongnan Liu",
+      "Zeyu Zhang",
+      "Zhongxiang Sun",
+      "Yutao Zhu",
+      "Hao Sun",
+      "Boci Peng",
+      "Zhenrong Cheng",
+      "Xuanbo Fan",
+      "Jiaxin Guo"
+    ],
+    "likes": 60,
+    "published_date": "Dec 15",
+    "url": "https://huggingface.co/papers/2512.13564",
+    "date_collected": "2025-12-17T07:08:25.748678+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "AI 에이전트 시대의 기억",
+      "abstract": "기억은 최근 AI 에이전트의 핵심 능력으로 떠올랐으며 계속해서 그 역할을 이어갈 것이다. 에이전트 기억에 대한 연구가 급속히 확장되고 전례없는 주목을 받는 가운데 분야는 점점 파편화되고 있다. 기존 에이전트 기억을 포괄하는 작업들은 그 동기부여, 구현, 평가 방법이 현저하게 다르며 희미하게 정의된 기억 용어들의 증가로 개념적 명확성이 더욱 흐려지고 있다. 전통적인 long/short-term memory와 같은 분류법은 현대 에이전트 기억 시스템 다양성을 포착하기에 충분하지 못함이 밝혀졌다. 본 연구는 현재 에이전트 기억 연구의 최신 동향을 제시하는 것을 목표로 한다."
+    },
+    "summary": "1. 에이전트 기억의 범위와 LLM 기억, RAG, 컨텍스트 엔지니어링과의 차이를 명확히 한다.\n2. 에이전트 기억을 형태, 기능, 역학 이 세 가지 관점으로 분석한다.\n3. 기억의 형성, 변화, 시간에 걸친 회수를 분석하며 메모리 벤치마크와 오픈 소스 프레임워크를 요약한다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management",
+    "abstract": "We introduce QwenLong-L1.5, a model that achieves superior long-context reasoning capabilities through systematic post-training innovations. The key technical breakthroughs of QwenLong-L1.5 are as follows: (1) Long-Context Data Synthesis Pipeline: We develop a systematic synthesis framework that generates challenging reasoning tasks requiring multi-hop grounding over globally distributed evidence. By deconstructing documents into atomic facts and their underlying relationships, and then programmatically composing verifiable reasoning questions, our approach creates high-quality training data at scale, moving substantially beyond simple retrieval tasks to enable genuine long-range reasoning capabilities. (2) Stabilized Reinforcement Learning for Long-Context Training: To overcome the critical instability in long-context RL, we introduce task-balanced sampling with task-specific advantage estimation to mitigate reward bias, and propose Adaptive Entropy-Controlled Policy Optimization (AEPO) that dynamically regulates exploration-exploitation trade-offs. (3) Memory-Augmented Architecture for Ultra-Long Contexts: Recognizing that even extended context windows cannot accommodate arbitrarily long sequences, we develop a memory management framework with multi-stage fusion RL training that seamlessly integrates single-pass reasoning with iterative memory-based processing for tasks exceeding 4M tokens. Based on Qwen3-30B-A3B-Thinking, QwenLong-L1.5 achieves performance comparable to GPT-5 and Gemini-2.5-Pro on long-context reasoning benchmarks, surpassing its baseline by 9.90 points on average. On ultra-long tasks (1M~4M tokens), QwenLong-L1.5's memory-agent framework yields a 9.48-point gain over the agent baseline. Additionally, the acquired long-context reasoning ability translates to enhanced performance in general domains like scientific reasoning, memory tool using, and extended dialogue.",
+    "authors": [
+      "Weizhou Shen",
+      "Ziyi Yang",
+      "Chenliang Li",
+      "Zhiyuan Lu",
+      "Miao Peng",
+      "Huashan Sun",
+      "Yingcheng Shi",
+      "Shengyi Liao",
+      "Shaopeng Lai",
+      "Bo Zhang",
+      "Dayiheng Liu",
+      "Fei Huang",
+      "Jingren Zhou",
+      "Ming Yan"
+    ],
+    "likes": 54,
+    "published_date": "Dec 15",
+    "url": "https://huggingface.co/papers/2512.12967",
+    "date_collected": "2025-12-17T07:08:25.750183+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "QwenLong-L1.5: 긴 맥락 추론과 메모리 관리를 위한 후속 훈련 레시피",
+      "abstract": "QwenLong-L1.5는 체계적인 후속 훈련 혁신을 통해 우수한 긴 맥락 추론 능력을 실현하는 모델로, (1) 긴 맥락 데이터 합성 파이프라인, (2) 긴 맥락 훈련을 위한 안정화된 강화 학습, (3) 초급근 환경을 위한 메모리 증강 구조로 특징화됩니다."
+    },
+    "summary": "1. QwenLong-L1.5는 긴 맥락 추론 능력을 향상시키기 위해 데이터 합성, 안정화된 강화 학습, 메모리 증강 구조를 도입하며, GPT-5 및 Gemini-2.5-Pro과 유사한 성능을 보입니다.\n2. 긴 맥락 RL의 불안전성을 극복하기 위해 과제균형 샘플링, 적응적 엔트로피 제어 정책 최적화를 도입합니다.\n3. 4백만 토큰을 넘어가는 작업을 위해 반복 메모리 기반 처리를 통합하는 메모리 관리 프레임워크를 적용하여 성능 향상을 이끌어냅니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "LongVie 2: Multimodal Controllable Ultra-Long Video World Model",
+    "abstract": "Building video world models upon pretrained video generation systems represents an important yet challenging step toward general spatiotemporal intelligence. A world model should possess three essential properties: controllability, long-term visual quality, and temporal consistency. To this end, we take a progressive approach-first enhancing controllability and then extending toward long-term, high-quality generation. We present LongVie 2, an end-to-end autoregressive framework trained in three stages: (1) Multi-modal guidance, which integrates dense and sparse control signals to provide implicit world-level supervision and improve controllability; (2) Degradation-aware training on the input frame, bridging the gap between training and long-term inference to maintain high visual quality; and (3) History-context guidance, which aligns contextual information across adjacent clips to ensure temporal consistency. We further introduce LongVGenBench, a comprehensive benchmark comprising 100 high-resolution one-minute videos covering diverse real-world and synthetic environments. Extensive experiments demonstrate that LongVie 2 achieves state-of-the-art performance in long-range controllability, temporal coherence, and visual fidelity, and supports continuous video generation lasting up to five minutes, marking a significant step toward unified video world modeling.",
+    "authors": [
+      "Jianxiong Gao",
+      "Zhaoxi Chen",
+      "Xian Liu",
+      "Junhao Zhuang",
+      "Chengming Xu",
+      "Jianfeng Feng",
+      "Yu Qiao",
+      "Yanwei Fu",
+      "Chenyang Si",
+      "Ziwei Liu"
+    ],
+    "likes": 52,
+    "published_date": "Dec 15",
+    "url": "https://huggingface.co/papers/2512.13604",
+    "date_collected": "2025-12-17T07:08:25.751493+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "LongVie 2: 멀티모달 제어 가능한 초장기 비디오 월드 모델",
+      "abstract": "사전 훈련된 비디오 생성 시스템을 기반으로 하는 비디오 월드 모델의 구축은 일반적인 시공간 지능을 향한 중요하고 동시에 어려운 단계를 나타냅니다. 월드 모델은 제어 가능성, 장기간 시각적 품질, 시간적 일관성이라는 세 가지 필수적인 특성을 가져야 합니다. 이를 위해, 우리는 점진적인 접근 방식을 취하며 먼저 제어 가능성을 향상시킨 다음 장기적이고 고품질 생성으로 확장합니다. 우리는 LongVie 2를 제시하는데, 세 단계로 훈련된 엔드-투-엔드 오토리그레시브 프레임워크로, (1) 멀티모달 가이드로, 밀도 있는 및 희박한 제어 신호를 통합하여 암시적인 월드-수준 감독을 제공하고 제어 가능성을 향상시킵니다; (2) 입력 프레임에 대한 저하 인식적 훈련으로, 훈련과 장기 추론 사이의 간극을 메우어 높은 시각적 품질을 유지합니다; 그리고 (3) 역사적 맥락 가이드로, 인접 클립 간에 걸쳐 맥락 정보를 정렬하여 시간적 일관성을 보장합니다. 우리는 더 나아가, LongVGenBench를 소개하는데, 이는 현실적이고 합성적 환경을 다루는 다양한 고해상도 1분짜리 비디오 100개로 이루어진 포괄적인 벤치마킹을 제공합니다. 방대한 실험 결과가 LongVie 2가 장거리 제어 가능성, 시간적 일관성, 시각적 충실도에서 최고 수준의 성능을 달성하며, 최대 5분까지 계속되는 영상 생성을 지원함을 입증하고, 통합된 비디오 월드 모델링을 위한 중요한 한걸음을 나타내었습니다."
+    },
+    "summary": "1. LongVie 2는 멀티모달 가이드로, 점진적으로 제어 가능성을 향상시킨 후 고품질 생성으로 확장하는 엔드-투-엔드 오토리그레시브 프레임워크이다.\n2. 이 모델은 훈련과 장기 추론 간의 간극을 메우기 위해 입력 프레임에 대한 저하 인식 훈련을 수행하며 시간적 일관성을 보장하기 위해 역사적 맥락 가이드를 사용한다.\n3. LongVie 2는 최고 수준의 장거리 제어 가능성, 시간적 일관성, 시각적 충실도를 달성하며 최대 5분까지의 연속적 비디오 생성을 지원하여 통합된 비디오 월드 모델링에 중요한 발전을 이룩하였다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Finch: Benchmarking Finance & Accounting across Spreadsheet-Centric Enterprise Workflows",
+    "abstract": "We introduce a finance & accounting benchmark (Finch) for evaluating AI agents on real-world, enterprise-grade professional workflows -- interleaving data entry, structuring, formatting, web search, cross-file retrieval, calculation, modeling, validation, translation, visualization, and reporting. Finch is sourced from authentic enterprise workspaces at Enron (15,000 spreadsheets and 500,000 emails from 150 employees) and other financial institutions, preserving in-the-wild messiness across multimodal artifacts (text, tables, formulas, charts, code, and images) and spanning diverse domains such as budgeting, trading, and asset management.\n  We propose a workflow construction process that combines LLM-assisted discovery with expert annotation: (1) LLM-assisted, expert-verified derivation of workflows from real-world email threads and version histories of spreadsheet files, and (2) meticulous expert annotation for workflows, requiring over 700 hours of domain-expert effort. This yields 172 composite workflows with 384 tasks, involving 1,710 spreadsheets with 27 million cells, along with PDFs and other artifacts, capturing the intrinsically messy, long-horizon, knowledge-intensive, and collaborative nature of real-world enterprise work.\n  We conduct both human and automated evaluations of frontier AI systems including GPT 5.1, Claude Sonnet 4.5, Gemini 3 Pro, Grok 4, and Qwen 3 Max, and GPT 5.1 Pro spends 48 hours in total yet passes only 38.4% of workflows, while Claude Sonnet 4.5 passes just 25.0%. Comprehensive case studies further surface the challenges that real-world enterprise workflows pose for AI agents.",
+    "authors": [
+      "Haoyu Dong",
+      "Pengkun Zhang",
+      "Yan Gao",
+      "Xuanyu Dong",
+      "Yilin Cheng",
+      "Mingzhe Lu",
+      "Adina Yakefu",
+      "Shuxin Zheng"
+    ],
+    "likes": 46,
+    "published_date": "Dec 15",
+    "url": "https://huggingface.co/papers/2512.13168",
+    "date_collected": "2025-12-17T07:08:25.752734+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "회계 및 재무 분야의 스프레드시트 중심 기업 업무에서의 AI 에이전트 평가를 위한 벤치마킹 (Finch)",
+      "abstract": "본 연구에서는 실제 기업급 전문 업무에서 AI 에이전트를 평가하기 위한 금융 및 회계 벤치마크(Finch)를 소개합니다. 이는 데이터 입력, 구조화, 형식 지정, 웹 검색, 파일 간 검색, 계산, 모델링, 유효성 검사, 번역, 시각화, 보고서 작성 등이 교차하는 과정을 포함하며 Enron(15,000개의 스프레드시트 및 150명의 직원으로부터 500,000개의 이메일) 및 다른 금융 기관의 실제 업무 공간에서 유래되었습니다. 이는 예산 작성, 거래, 자산 관리 등과 같은 영역을 포괄하며 텍스트, 테이블, 수식, 차트, 코드, 이미지 등 다양한 형태의 멀티모달 자료에 걸쳐 난잡함을 유지합니다."
+    },
+    "summary": "1. 금융 및 회계 벤치마킹(Finch)은 실제 기업 업무 환경에서 AI 에이전트를 평가하기 위한 새로운 벤치마크로, 복합적인 업무 프로세스를 포괄하며 Enron과 다른 금융 기관의 실무 데이터를 기반으로 구성됩니다.\n2. 실제 이메일 스레드와 스프레드시트 파일 버전 이력으로부터의 업무 유도를 LLM(언어-언어 모델) 보조 및 전문가 주석 결합 방식으로 제안하며, 이를 통해 172개의 복합 업무 프로세스와 384개의 작업이 작성되었습니다.\n3. GPT 5.1, Claude Sonnet 4.5, Gemini 3 Pro 등의 최신 AI 시스템을 인간 및 자동 평가하였으며, GPT 5.1 Pro는 총 48시간 동안 진행했지만 업무의 38.4%만 통과하였음을 확인할 수 있었습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "DentalGPT: Incentivizing Multimodal Complex Reasoning in Dentistry",
+    "abstract": "Reliable interpretation of multimodal data in dentistry is essential for automated oral healthcare, yet current multimodal large language models (MLLMs) struggle to capture fine-grained dental visual details and lack sufficient reasoning ability for precise diagnosis. To address these limitations, we present DentalGPT, a specialized dental MLLM developed through high-quality domain knowledge injection and reinforcement learning. Specifically, the largest annotated multimodal dataset for dentistry to date was constructed by aggregating over 120k dental images paired with detailed descriptions that highlight diagnostically relevant visual features, making it the multimodal dataset with the most extensive collection of dental images to date. Training on this dataset significantly enhances the MLLM's visual understanding of dental conditions, while the subsequent reinforcement learning stage further strengthens its capability for multimodal complex reasoning. Comprehensive evaluations on intraoral and panoramic benchmarks, along with dental subsets of medical VQA benchmarks, show that DentalGPT achieves superior performance in disease classification and dental VQA tasks, outperforming many state-of-the-art MLLMs despite having only 7B parameters. These results demonstrate that high-quality dental data combined with staged adaptation provides an effective pathway for building capable and domain-specialized dental MLLMs.",
+    "authors": [
+      "Zhenyang Cai",
+      "Jiaming Zhang",
+      "Junjie Zhao",
+      "Ziyi Zeng",
+      "Yanchao Li",
+      "Jingyi Liang",
+      "Junying Chen",
+      "Yunjin Yang",
+      "Jiajun You",
+      "Shuzhi Deng",
+      "Tongfei Wang",
+      "Wanting Chen",
+      "Chunxiu Hao",
+      "Ruiqi Xie",
+      "Zhenwei Wen",
+      "Xiangyi Feng",
+      "Zou Ting",
+      "Jin Zou Lin",
+      "Jianquan Li",
+      "Guangjun Yu",
+      "Liangyi Chen",
+      "Junwen Wang"
+    ],
+    "likes": 40,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11558",
+    "date_collected": "2025-12-17T07:08:25.754570+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "치과를 위한 멀티모달 복합 추론을 장려하는 DentalGPT",
+      "abstract": "치과에서의 멀티모달 데이터 신뢰성 있는 해석은 자동 구강 건강 관리에 있어 중요한데, 현재의 멀티모달 대규모 언어 모델 (MLLMs)은 치과 시각적 세부 사항을 잡아내기 어려우며, 정확한 진단을 위한 충분한 추론 능력이 부족하다. 이러한 한계를 해결하기 위해, 저희는 고품질 도메인 지식 주입과 강화 학습을 통해 개발된 특화된 치과 MLLM인 DentalGPT를 제안한다. 특히, 치과에서의 가장 큰 주석이 달린 멀티모달 데이터셋이 구축되었는데, 이는 12만 개가 넘는 치과 이미지가 상세한 설명과 함께 짝지어져 있어 진단적으로 중요한 시각적 특징을 강조하며, 현재까지 가장 포괄적인 치과 이미지 모음을 가진 멀티모달 데이터셋이다. 이 데이터셋에서의 훈련은 MLLM의 치아 이상 상태에 대한 시각적 이해력을 크게 향상시키며, 이후의 강화 학습 단계는 그것의 멀티모달 복합 추론 능력을 더욱 강화시킨다. 치과 내부 및 만경적 벤치마크, 그리고 의료 VQA 벤치마크의 치과 하위 집합에 대한 종합적인 평가는 DentalGPT가 질병 분류와 치과 VQA 작업에서 우수한 성과를 달성하며, 70억 개의 매개변수만 가지고 있음에도 많은 최신 MLLM을 능가하는 것을 보여준다. 이 결과는 고품질의 치과 데이터가 단계적 적응을 통한 효과적인 치과 특화 MLLM 구축 경로를 제공한다."
+    },
+    "summary": "1. DentalGPT는 치과 분야에 특화된 MLLM으로, 12만 개가 넘는 주석이 달린 치과 이미지를 활용한 훈련을 통해 치아 상태에 대한 시각적 이해력과 멀티모달 복합 추론 능력을 향상시켰다.\n2. DentalGPT는 질병 분류와 치과 VQA 작업에서 우수한 성능을 보이며, 70억 개의 매개변수만으로도 많은 최신 MLLM을 능가한다.\n3. 고품질의 치과 데이터와 단계적 적응을 결합함으로써 DentalGPT는 효과적이고 도메인 특화된 치과 MLLM을 구축하는 효과적인 방법을 제시한다.",
+    "categories": [
+      "Multimodal",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents",
+    "abstract": "Recent advances in coding agents suggest rapid progress toward autonomous software development, yet existing benchmarks fail to rigorously evaluate the long-horizon capabilities required to build complete software systems. Most prior evaluations focus on localized code generation, scaffolded completion, or short-term repair tasks, leaving open the question of whether agents can sustain coherent reasoning, planning, and execution over the extended horizons demanded by real-world repository construction. To address this gap, we present NL2Repo Bench, a benchmark explicitly designed to evaluate the long-horizon repository generation ability of coding agents. Given only a single natural-language requirements document and an empty workspace, agents must autonomously design the architecture, manage dependencies, implement multi-module logic, and produce a fully installable Python library. Our experiments across state-of-the-art open- and closed-source models reveal that long-horizon repository generation remains largely unsolved: even the strongest agents achieve below 40% average test pass rates and rarely complete an entire repository correctly. Detailed analysis uncovers fundamental long-horizon failure modes, including premature termination, loss of global coherence, fragile cross-file dependencies, and inadequate planning over hundreds of interaction steps. NL2Repo Bench establishes a rigorous, verifiable testbed for measuring sustained agentic competence and highlights long-horizon reasoning as a central bottleneck for the next generation of autonomous coding agents.",
+    "authors": [
+      "Jingzhe Ding",
+      "Shengda Long",
+      "Changxin Pu",
+      "Huan Zhou",
+      "Hongwan Gao",
+      "Xiang Gao",
+      "Chao He",
+      "Yue Hou",
+      "Fei Hu",
+      "Zhaojian Li",
+      "Weiran Shi",
+      "Zaiyuan Wang",
+      "Daoguang Zan",
+      "Chenchen Zhang",
+      "Xiaoxu Zhang",
+      "Qizhi Chen",
+      "Xianfu Cheng",
+      "Bo Deng",
+      "Qingshui Gu",
+      "Kai Hua",
+      "Juntao Lin",
+      "Pai Liu"
+    ],
+    "likes": 37,
+    "published_date": "Dec 14",
+    "url": "https://huggingface.co/papers/2512.12730",
+    "date_collected": "2025-12-17T07:08:25.756393+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "NL2Repo-Bench: 장기 미래 저장소 생성 능력 평가를 향하여 코딩 에이전트의 길게 뻔한 업무",
+      "abstract": "최근 코딩 에이전트의 발전은 소프트웨어 개발의 자율성 증진으로 나아가는 추세이지만, 기존의 평가는 완전한 소프트웨어 시스템 구축에 필요한 장기 미래 업무능력을 엄밀히 평가하기에는 부족하다. 대부분의 이전 평가는 지역적 코드 생성, 골격 완성 또는 단기 수리 작업에 초점을 맞추어, 에이전트가 현실세계 저장소 구축에 필요한 확장된 시계 미래에 걸쳐 일관된 추론, 계획 및 실행을 유지할 수 있는지 의문을 남겨 두었다. 이 간극을 해소하기 위해, 우리는 NL2Repo Bench를 제시한다. 이 벤치마크는 코딩 에이전트의 장기 미래 저장소 생성 능력을 평가하기 위해 명시적으로 설계되었다. 자연어 요구 사항 문서 하나와 빈 작업 공간만 제공되는 상황에서, 에이전트는 자체적으로 아키텍처를 설계하고 의존성을 관리하며 다중 모듈 로직을 구현하고 완전히 설치 가능한 Python 라이브러리를 생성해야 한다. 최신 오픈 및 폐쇄 소스 모델에 걸쳐 수행된 실험 결과, 장기 미래 저장소 생성이 여전히 대부분 해결되지 않은 상태임을 보여준다: 최강의 에이전트들조차도 평균 테스트 통과율이 40% 이하이며, 거의 올바르게 전체 저장소를 완성하지 못한다. 자세한 분석을 통해, 미리 종료, 전역 일관성 손실, 취약한 파일간 종속성, 수백 건의 상호 작용 단계에 대한 불충분한 계획과 같은 기본적인 장기 미래 실패 모드가 드러난다. NL2Repo Bench는 계속되는 에이전트 능력을 측정하기 위한 엄격하고 검증 가능한 실험장을 제시하며, 장기 미래 추론을 다음 세대의 자율 코딩 에이전트의 핵심 병목 현상으로 강조한다."
+    },
+    "summary": "1. 최근 코딩 에이전트의 발전으로는 자율적인 소프트웨어 개발이 가능한 것으로 보이지만, 완전한 소프트웨어 시스템을 구축하는 데 필요한 장기 미래 업무능력은 엄격하게 평가되지 않았다.\n2. NL2Repo Bench는 코딩 에이전트의 장기 미래 저장소 생성 능력을 평가하는 벤치마크로 소개되며, 최신 모델을 통한 실험에서 장기 미래 저장소 생성이 여전히 해결되지 않은 상태임을 보여준다.\n3. NL2Repo Bench는 자율 코딩 에이전트의 지속적인 능력을 측정하는 엄격하고 검증 가능한 실험장을 만들어내며, 장기 미래 추론을 다음 세대의 자율 코딩 에이전트 개발의 핵심 병목 현상으로 지적한다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder",
+    "abstract": "Visual generation grounded in Visual Foundation Model (VFM) representations offers a highly promising unified pathway for integrating visual understanding, perception, and generation. Despite this potential, training large-scale text-to-image diffusion models entirely within the VFM representation space remains largely unexplored. To bridge this gap, we scale the SVG (Self-supervised representations for Visual Generation) framework, proposing SVG-T2I to support high-quality text-to-image synthesis directly in the VFM feature domain. By leveraging a standard text-to-image diffusion pipeline, SVG-T2I achieves competitive performance, reaching 0.75 on GenEval and 85.78 on DPG-Bench. This performance validates the intrinsic representational power of VFMs for generative tasks. We fully open-source the project, including the autoencoder and generation model, together with their training, inference, evaluation pipelines, and pre-trained weights, to facilitate further research in representation-driven visual generation.",
+    "authors": [
+      "Minglei Shi",
+      "Haolin Wang",
+      "Borui Zhang",
+      "Wenzhao Zheng",
+      "Bohan Zeng",
+      "Ziyang Yuan",
+      "Xiaoshi Wu",
+      "Yuanxing Zhang",
+      "Huan Yang",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Kun Gai",
+      "Jie Zhou",
+      "Jiwen Lu"
+    ],
+    "likes": 34,
+    "published_date": "Dec 12",
+    "url": "https://huggingface.co/papers/2512.11749",
+    "date_collected": "2025-12-17T07:08:25.757887+09:00",
+    "week": "2025-W51",
+    "translation": {
+      "title": "VAE 없이 크기를 늘린 SVG-T2I: 텍스트-이미지 잠재 확산 모델",
+      "abstract": "시각 기반 모델 (VFM) 표현에 근거한 시각 생성은 시각 이해, 지각, 그리고 생성을 통합하는 매우 유망한 통합된 방법론을 제공합니다. 이 잠재적 가능성에도 불구하고, VFM 표현 공간 내에서 대규모 텍스트-이미지 확산 모델을 훈련하는 것은 아직 많이 탐구되지 않았습니다. 이 간극을 메우기 위해, 우리는 SVG (시각 생성을 위한 자가 지도 표현) 프레임워크를 확장하여, VFM 특성 도메인 내에서 고품질 텍스트-이미지 합성을 지원하는 SVG-T2I를 제안합니다. 표준 텍스트-이미지 확산 파이프라인을 활용함으로써, SVG-T2I는 경쟁력 있는 성능을 달성하며, GenEval에서 0.75, DPG-Bench에서 85.78을 기록하였습니다. 이 성과는 VFMs의 생성 작업을 위한 내재적 표현력을 검증합니다. 본 프로젝트는 오토인코더 및 생성 모델뿐만 아니라, 훈련, 추론, 평가 파이프라인 및 사전 훈련된 가중치까지를 완전히 오픈소스로 제공하여, 표현 중심의 시각 생성에 대한 추가 연구를 용이하게 합니다."
+    },
+    "summary": "1. VAE 없이 VFM 특성 도메인에서 텍스트-이미지 합성을 지원하는 SVG-T2I를 제안하였다.\n2. SVG-T2I는 표준 텍스트-이미지 확산 파이프라인을 활용하여 높은 성능을 달성하였으며, GenEval과 DPG-Bench에서 각각 0.75와 85.78의 성과를 보였다.\n3. 본 연구에서는 VFMs가 생성 작업에 대한 내재적 표현력을 증명하였으며, 이를 통해 시각 생성 관련 추가 연구를 촉진하고자 한다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "title": "From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has driven recent progress in reasoning-oriented large language models (LLMs) by enabling large-scale optimization. However, its applicability remains largely limited to domains such as mathematics and coding, where correctness can be deterministically verified. Open-ended tasks instead often rely on human preferences, reward models, or LLM-based judges, introducing evaluation bias, judge capability bottlenecks, and additional inference costs.Drawing on the principle of self-supervised learning, which constructs pretext tasks to derive supervision from the data itself, we propose Reinforcement Learning with Self-Verifiable Rewards (RLSVR), a task-transformation-based training paradigm for extending RLVR to open-ended tasks. RLSVR transforms open-ended tasks into verifiable proxy environments whose internal rules and interaction outcomes automatically generate reward signals. We instantiate RLSVR with SpyRL, a multi-agent self-play environment inspired by Who Is the Spy?. Agents receive asymmetric information, complete the same target task, and vote to identify a designated spy. Because the spy identity is predetermined, voting outcomes provide fully verifiable rewards, while successful identification remains closely related to output quality. Experiments on text summarization, creative writing, and mathematical reasoning show that SpyRL outperforms existing self-improvement methods on non-verifiable tasks and yields consistent gains on verifiable reasoning tasks. These results demonstrate that task transformation can extend scalable RLVR-based self-improvement beyond inherently verifiable domains. Models and code have been released at https://github.com/wangqinsi1/SpyRL.",
+    "authors": [
+      "Qinsi Wang",
+      "Jing Shi",
+      "Huazheng Wang",
+      "Kun Wan",
+      "Yiran Wu",
+      "Bo Liu",
+      "Qingyun Wu",
+      "Hai Helen Li",
+      "Yiran Chen",
+      "Handong Zhao",
+      "Wentian Zhao"
+    ],
+    "likes": 18,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2607.23802",
+    "date_collected": "2026-08-03T13:34:02.151618+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "RLVR에서 RLSVR로: 과제 변환이 열린 마음의 LLM 자가 향상을 유도합니다",
+      "abstract": "확인 가능 보상(Verifiable Rewards)을 활용한 강화 학습(RLVR)은 최근 대규모 언어모델(Large Language Models, LLMs)의 추론 지향적 진전을 이끌며 대규모 최적화를 가능케 했습니다. 그러나 이것의 적용 가능성은 주로 수학 및 코딩과 같이 결정적으로 확인 가능한 분야로 크게 제한됩니다. 그 대신 열린 과제들은 종종 인간의 선호도, 보상 모델, 또는 LLM 기반 심사자에 의존하여 평가 편향, 심사자 능력 병목 현상, 추가적 추론 비용을 도입합니다. 자가 지도 학습의 원칙을 차용하여, 우리는 데이터 자체로부터 지도를 유도하기 위해 선행 과제를 구축하는 자가 확인 보상을 갖는 강화 학습(RLSVR)을 제안합니다. RLSVR은 열린 과제를 확인 가능한 대리 환경으로 변환하여 내부 규칙과 상호 작용 결과가 보상 신호를 자동으로 생성하도록 합니다. 우리는 SpyRL과 함께 RLSVR을 구체화했습니다. 이는 Who Is the Spy?에서 영감을 받은 다중 에이전트 자가 대결 환경입니다. 에이전트들은 비대칭 정보를 받고 동일한 목표 과제를 완수하고 지정된 스파이를 식별하기 위해 투표합니다. 스파이 신원이 미리 결정되므로 투표 결과는 완전히 확인 가능한 보상을 제공하며, 성공적인 식별은 출력 품질과 밀접하게 관련됩니다. 텍스트 요약, 창의적 글쓰기, 수학적 추론에 대한 실험 결과는 SpyRL이 확인 불가능한 과제에서 기존 자가 향상 방법을 능가하며 확인 가능한 추론 과제에서 일관된 향상을 제공함을 보여줍니다. 이러한 결과는 과제 변환이 본래 확인 가능한 도메인을 넘어 확장 가능한 RLVR 기반의 자가 향상을 가능케 할 수 있음을 보여줍니다. 모델과 코드는 https://github.com/wangqinsi1/SpyRL에서 공개되었습니다."
+    },
+    "summary": "1. 확인 가능한 보상을 활용한 강화 학습(RLVR)의 한계를 극복하기 위해 자가 확인 가능 보상(RLSVR)을 제안하였습니다.\n2. RLSVR은 열린 과제를 확인 가능한 대리 환경으로 변환하여 자가 지도 학습 원리에 기반한 교육 방법론을 소개합니다.\n3. SpyRL을 통해 실시한 실험 결과는 현재의 자가 향상 방법보다 확인 불가능한 과제에서 우수한 성과를 보이고, 확인 가능한 추론 작업에서 일관된 향상을 나타냅니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+    "abstract": "System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to the public or regulators, creating a serious trust and accountability gap in the wide deployment of AI systems. In this paper, we introduce Artificial Intelligence System Prompt Assurance (AISPA), a user-centric framework for systematically auditing system prompts in AI systems. AISPA examines specific parts of a system prompt and evaluates them along eight dimensions that matter to users. We then use this framework to review 3,249 instructions from system prompts in 88 commercial AI products, classifying each instruction as either protective (of users) or problematic. Our audit surfaces four core findings. First, system prompt design varies substantially across products and developers, with some organizations averaging over 60 protective instructions per product while others average fewer than 5. Second, protective instructions are widely adopted but shallow in scope: 98.9% of products contain at least one, yet only 24% cover all eight dimensions of the AISPA taxonomy. Third, system prompts have grown steadily longer and more protective of users, suggesting that user protection is becoming a more visible concern in commercial prompt design. Fourth, despite this progress, problematic instructions remain pervasive: roughly 40% of products contain at least one instruction that works against user interests, and protective and problematic instructions frequently coexist within the same prompt. Our findings highlight the need for greater transparency, standardization, and independent oversight for system prompts in commercial AI products.",
+    "authors": [
+      "Xiangning Lin",
+      "Shenzhe Zhu",
+      "Shu Yang",
+      "Zhenyu Zhang",
+      "Haoqian Zhang",
+      "Yipeng Zhao",
+      "Chengxuan Qian",
+      "Tianwei Wang",
+      "Ziheng Zhang",
+      "Zhenlong Yuan",
+      "Dingcheng Wang",
+      "Juncheng Wu",
+      "Yuan Si",
+      "Jiaxin Liu",
+      "Baolong Bi",
+      "Robert Mahari",
+      "Tobin South",
+      "Dazza Greenwood",
+      "Zexue He",
+      "Rishi Bommasani",
+      "Sophia Kazinnik",
+      "Andreas Haupt"
+    ],
+    "likes": 16,
+    "published_date": "Jul 30",
+    "url": "https://huggingface.co/papers/2607.28617",
+    "date_collected": "2026-08-03T13:34:02.155595+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "대형 언어 모델 응용 프로그램을 위한 사용자 중심 시스템 프롬프트 감사(AISPA)",
+      "abstract": "시스템 프롬프트는 AI 응용프로그램의 기본 모델 행동을 조절하기 위해 개발자가 설정하는 지침이다. 이 논문에서는 사용자 중심의 시스템 프롬프트를 체계적으로 감사하기 위한 AISPA(인공지능 시스템 프롬프트 보증)를 소개한다. AISPA는 사용자에게 중요한 여덟 가지 차원을 따라 시스템 프롬프트의 특정 부분을 조사하고 평가한다. 이를 통해 88개의 상용 AI 제품에서 3,249개의 시스템 프롬프트 지시 사항을 검토하고, 각 지시 사항을 사용자를 보호하는 것 또는 문제가 있는 것으로 분류한다."
+    },
+    "summary": "1. AISPA는 AI 시스템에서 시스템 프롬프트를 체계적으로 감사하는 사용자 중심 프레임워크를 소개한다.\n2. 상용 AI 제품의 시스템 프롬프트는 사용자를 보호하려는 노력이 있지만 한계가 있으며, 문제가 있는 지시 사항도 여전히 널리 존재한다.\n3. 향후 상용 AI 제품에서 시스템 프롬프트의 투명성, 표준화, 독립적 감사가 필요하다는 점을 강조한다.",
+    "categories": [
+      "LLM",
+      "AI(Prompt)"
+    ]
+  },
+  {
+    "title": "QQWorld: Quantile-Quantile Matching for World Model Regularization",
+    "abstract": "Latent world models enable efficient planning by predicting future states in a compact representation space, but their performance depends critically on the quality of the learned latent distribution. LeWorldModel (LeWM) regularizes its latents toward an isotropic Gaussian using the Epps-Pulley (EP) objective. We show that the corrective gradients of EP rapidly vanish for isolated tail samples, leaving heavy-tailed deviations insufficiently controlled. To address this limitation, we propose QQWorld, which replaces EP with a quantile-quantile matching objective that directly aligns projected latent samples with rank-matched Gaussian quantiles, thereby maintaining effective corrective gradients in the tails. We further develop cross-batch QQ, which enlarges the effective ranking pool using detached samples from previous batches, and characterize its bias-variance trade-off. Across four control environments, QQWorld effectively improves the average planning success rate of LeWM, while consistently yielding better Gaussian alignment and thinner latent tails.",
+    "authors": [
+      "Zhoushun Yu",
+      "Xiaoyu Hu",
+      "Xiangyu Xu"
+    ],
+    "likes": 11,
+    "published_date": "Jul 30",
+    "url": "https://huggingface.co/papers/2607.28415",
+    "date_collected": "2026-08-03T13:34:02.158163+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "QQWorld: 세계 모델 정규화를 위한 분위수-분위수 매칭",
+      "abstract": "잠재 세계 모델은 미래 상태를 예측하여 효율적인 계획을 도와주지만, 학습된 잠재 분포의 품질에 매우 의존합니다. LeWorldModel (LeWM)은 Epps-Pulley (EP) 목적을 사용하여 잠재 분포를 등방성 가우시안으로 정규화합니다. 우리는 EP의 보정 기울기가 꼬리 샘플에서 빨리 사라지는 문제를 보여줍니다. 이에 대응하기 위해, 우리는 EP를 대체하는 QQWorld를 제안합니다. 이는 분위수-분위수 매칭 목적을 이용하여 투영된 잠재 샘플을 순위에 맞게 가우시안 분위수에 정렬함으로써 효과적인 보정 기울기를 유지합니다."
+    },
+    "summary": "1. LeWorldModel은 EP를 사용하여 잠재 분포 정규화하나, 꼬리 샘플에서 보정 기울기가 사라지는 문제를 QQWorld가 분위수-분위수 매칭 목적으로 개선.\n2. QQWorld은 이전 배치의 분리된 샘플을 사용하여 효과적인 순위 풀을 확장하고 편향-분산 교환을 특성화.\n3. 네 가지 제어 환경에서 QQWorld는 LeWM의 계획 성공률을 효과적으로 향상시키고, 더 나은 가우시안 정렬과 얇은 잠재 꼬리를 일관되게 보여줌.",
+    "categories": [
+      "Reinforcement Learning",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "N_0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens",
+    "abstract": "We present N_0-VTLA, a vision-tactile-language-action (VTLA) foundation model capable of (1) fine-grained contact-rich manipulation with tactile perception and tactile-feedback control, and (2) offline policy improvement from stored deployment data. Building on current vision-based backbones, we propose a training recipe for tactile integration consisting of visuo-tactile pre-training, staged tactile-pathway integration, and advantage-conditioned offline policy improvement. During pre-training, the policy learns broad contact priors from NeoData, our large-scale visuo-tactile robot dataset; to our knowledge, N_0-VTLA is the first VTLA model pretrained on tactile data at scale. During post-training, we augment the policy with a predictive tactile pathway that distills the contact patterns learned at scale into the fine motion adjustments required by downstream tactile-centric manipulation. For offline policy improvement, we introduce ALTER, an advantage-conditioned offline reinforcement learning method that converts relative progress and trajectory-event comparisons into binary advantage labels for policy training on a fixed deployment corpus, further improving task-specific learning on contact-rich skills such as deformable object manipulation. Across contact-rich benchmarks, N_0-VTLA outperforms strong baselines by wide margins: it wins all nine real-robot NeoReal tasks and reaches 63.8% mean success on a twenty-task simulation suite, against 44.0% for the strongest baseline. N_0-VTLA policies trained with ALTER reach 75-95% success on three long-horizon real-robot tasks. These results lay a foundation for versatile tactile-driven manipulation policies.",
+    "authors": [
+      "NeoteAI Team",
+      "Fudan TEAI Team"
+    ],
+    "likes": 9,
+    "published_date": "Jul 26",
+    "url": "https://huggingface.co/papers/2607.23782",
+    "date_collected": "2026-08-03T13:34:02.161082+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "N_0-VTLA: 잠재적 촉각 토큰을 활용한 비전-촉각-언어-동작 모델의 확장",
+      "abstract": "본 논문에서는 촉각 지각과 촉각 피드백 제어를 통해 미세한 접촉 풍부한 조작이 가능한 비전-촉각-언어-동작(VTLA) 기반 모델인 N_0-VTLA를 제안합니다. 우리는 현재의 비전 기반 백본에 기반하여, 시각-촉각 사전 훈련, 단계적 촉각 경로 통합, 이점 조건화 오프라인 정책 개선으로 구성된 촉각 통합을 위한 훈련 방법을 제안합니다. N_0-VTLA은 촉각 데이터를 대규모로 사전 훈련하는 첫 번째 VTLA 모델로 알려져 있습니다. ALTER를 도입하여 오프라인 정책 개선을 수행하여, 전체적으로 엄청난 우위를 가지고 강한 기준선을 능가하는 성능을 보입니다."
+    },
+    "summary": "1. N_0-VTLA는 촉각 지각 데이터를 활용한 첫 번째 VTLA 모델로, 촉각 중심의 조작에 필요한 미세한 움직임 조절에 대한 넓은 접촉 사전을 학습합니다.\n2. 오프라인 정책 개선을 위해 ALTER를 도입하여 상대적 진전과 경로 이벤트 비교를 바이너리 이점 레이블로 변환하여 정책 훈련을 통해 고정 배치 언어 자료에서 작업별 학습을 추가로 향상시킵니다.\n3. N_0-VTLA는 강한 기준선을 크게 능가하여 모든 구라이 영진과 같은 9가지 실제 로봇 태스크를 이기고 시뮬레이션 수트에서 20가지의 태스크 중 63.8%의 평균 성공률을 보입니다. ALTER로 훈련된 N_0-VTLA 정책은 3가지 장기간의 실제 로봇 태스크에서 75-95%의 성공률을 달성합니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Meshy T2: Fast Native Mesh Generation with Flow Matching",
+    "abstract": "Polygonal meshes are the standard surface representation of modern 3D pipelines, and generating high-quality meshes with artist-style topology is essential for film, gaming, and interactive 3D applications. Mainstream approaches serialize a mesh into a token sequence and decode it autoregressively, which is slow at inference and sensitive to error accumulation, making them impractical for interactive asset creation. We present Meshy T2, a fast native mesh generation framework built on flow matching. At its core is a vertex-set mesh VAE that encodes a mesh into one continuous latent token per vertex and decodes vertices, edge connectivity, and face winding order in a single pass, preserving high-precision geometry and artist-authored topology without vertex quantization or welding. Generation proceeds as a coarse-to-fine cascade of two flow-matching models: an image-conditioned voxel flow first sketches the overall shape as a coarse occupancy scaffold, and a mesh flow then populates the scaffold with per-vertex latent tokens, conditioned on the image, the scaffold, and a requested vertex budget. This design delivers three practical capabilities: interactive generation speed through parallel flow-based synthesis; effective face-count control through the requested vertex budget; and native support for multi-part assets, whose components emerge directly from the generated connectivity. In our experiments, Meshy T2 achieves state-of-the-art geometric fidelity and completes end-to-end image-to-mesh generation within a median of 6 seconds, over an order of magnitude faster than autoregressive baselines. Code and weights will be available at https://github.com/meshy-dev/meshy-t2.",
+    "authors": [
+      "Jiale Xu",
+      "Rendong Liang",
+      "Yuhao Long",
+      "Siyuan Shen",
+      "Zangyueyang Xian",
+      "Zeyi Xu",
+      "Yuanming Hu"
+    ],
+    "likes": 7,
+    "published_date": "Jul 28",
+    "url": "https://huggingface.co/papers/2607.28675",
+    "date_collected": "2026-08-03T13:34:02.164129+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "Meshy T2: 플로우 매칭을 이용한 빠른 원시 매쉬 생성",
+      "abstract": "다각형 메쉬는 현대 3D 파이프라인의 표준 표면 표현이며, 고품질의 메쉬를 아티스트 스타일의 토폴로지로 생성하는 것은 영화, 게임 및 대화형 3D 응용프로그램에 대하여 필수적입니다. Meshy T2를 제안하는데, 이는 플로우 매칭을 기반으로 한 빠른 원시 메쉬 생성 프레임워크입니다. 중심에는 하나의 연속 잠재 토큰으로 메쉬를 인코딩하는 버텍스 세트 메쉬 VAE가 있으며, 이는 한 번의 통과로 정확한 지오메트리와 아티스트가 작성한 토폴로지를 보존합니다."
+    },
+    "summary": "1. Meshy T2는 플로우 매칭을 활용하여 빠르게 메쉬를 생성하며, 복잡한 형태와 토폴로지를 보존함.\n2. 이미지 및 메쉬 플로우를 이용하여 상호작용 가능한 속도로 메쉬를 생성하고, 얼마나 많은 버텍스를 요청하는지에 따라 효과적으로 면 수를 제어함.\n3. Meshy T2는 최신의 기하학적 정확도를 달성하며, 이미지에서 메쉬까지의 생성을 평균 6초 안에 완료함.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Scaling Properties of Text Conditioning in Visual Generation",
+    "abstract": "We study empirical scaling properties for text conditioning in visual generation. Such properties have rarely been measured because diffusion loss does not scale with the number of tokens in natural-language prompts. Surprisingly, we find that the converged diffusion loss scales with the amount of structured language in the prompt. To quantify structured language, we adapt two complementary measures: a white-box likelihood metric (GPG) and a black-box attribute metric (ED). Across controlled training runs, the converged diffusion loss decreases approximately linearly with GPG and follows a power law with ED. Guided by these scaling properties, we improve diffusability by constructing structured prompts with semantic and geometric annotations derived from images, and improve promptability by training a prompter through supervised fine-tuning, cold-start, and verifier-gated on-policy distillation. The resulting system outperforms all evaluated open-weight models on nearly every compositional, reasoning, and world-knowledge benchmark, while matching or surpassing the strongest closed-weight models on most evaluations.",
+    "authors": [
+      "Zilong Chen",
+      "Chaorui Deng",
+      "Kunchang Li",
+      "Hongyi Yuan",
+      "Haoqi Fan"
+    ],
+    "likes": 5,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2607.29679",
+    "date_collected": "2026-08-03T13:34:02.166762+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "시각 생성에서의 텍스트 조건화의 스케일링 속성",
+      "abstract": "우리는 시각 생성에서의 텍스트 조건화의 경험적인 스케일링 속성을 연구합니다. 자연 언어 프롬프트의 토큰 수에 따라 확산 손실이 스케일되지 않아 이러한 속성이 드물게 측정되어왔습니다. 놀랍게도, 우리는 수렴된 확산 손실이 프롬프트의 구조화된 언어 양과 스케일되는 것을 발견합니다. 구조화된 언어를 정량화하기 위해 우리는 두 가지 보완적인 측정법을 적용합니다: 백박스 가능성 메트릭 (GPG)과 블랙박스 속성 메트릭 (ED). 제어된 훈련 실행에서, 수렴된 확산 손실은 GPG와 대략적으로 선형적으로 감소하며 ED와의 관계는 멱함수 법칙을 따릅니다. 이러한 스케일링 속성에 의해 우리는 이미지에서 유도된 의미적 및 기하적 주석이 있는 구조화된 프롬프트를 생성하여 확산성을 개선하고, 지도된 미세 조정, 콜드 스타트 및 검증자 게이트 온-정책 증류를 통해 프롬프터를 훈련하여 프롬포터 능력을 개선합니다. 결과적으로, 이 시스템은 거의 모든 구성, 추론 및 세계 지식 벤치마크에서 평가된 오픈 웨이트 모델보다 우수한 성능을 보이며 대부분의 평가에서 가장 강력한 폐쇄 웨이트 모델을 맞추거나 능가합니다."
+    },
+    "summary": "1. 자연어 프롬프트의 구조화된 언어 양에 따라 수렴된 확산 손실이 스케일링된다.\n2. 이미지에서 유도된 의미적 및 기하적 주석이 있는 구조화된 프롬프트를 사용하여 시스템 성능을 향상시킬 수 있다.\n3. 지도된 미세 조정 및 온-정책 증류를 통해 프롬프터를 훈련하면 거의 모든 벤치마크에서 우수한 성능을 얻을 수 있다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+    "abstract": "Enterprise workflows increasingly rely on agents for schema-guided extraction: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report order-insensitive value F1 for value accuracy, plus two grounding metrics for source traceability: word- and page-level F1. Commercial VLMs perform well on short documents but often truncate record lists on long ones, while coding agents retain higher accuracy at much higher cost. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost. Dataset and evaluation code are available on https://huggingface.co/datasets/llamaindex/ExtractBench{HuggingFace} and https://github.com/run-llama/ExtractBench{GitHub}.",
+    "authors": [
+      "Boyang Zhang",
+      "Adrian Lyjak",
+      "Eli Stewart",
+      "Zhaoqi Li",
+      "Simon Suo"
+    ],
+    "likes": 1,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2607.29677",
+    "date_collected": "2026-08-03T13:34:02.169545+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "ExtractBench: 스키마-가이드 엔터프라이즈 문서 추출을 위한 벤치마크",
+      "abstract": "엔터프라이즈 워크플로우는 점점 스키마-가이드 추출을 위해 에이전트에 의존하는데, 이는 문서와 사용자 정의 스키마를 받아들여 스키마를 충실히 따라 올바른 출력물을 생성하며 소스 증거로 지원 메타데이터를 제공합니다. 우리는 ExtractBench를 제시하며, 스코어링 값을 정확도, 규모에 따른 레코드 완전성, 그라운딩, 그리고 측정 비용을 하나로 평가함으로써 알려진 최초로 스키마-가이드 추출을 위한 벤치마크를 제공합니다. 평가 시스템에는 8개의 비즈니스 도메인, 67개의 문서 유형을 포함하며, 도전적 시나리오를 구분하는 명확한 태그를 가진 370개의 엔터프라이즈 문서를 포함한 4,869개의 페이지가 있습니다. 확장 가능한 스키마와 그라운드 트루스 정제 파이프라인에서는 실제 문서에 대한 독립 시스템 일치, 합성 목록의 알려진 값, 그리고 양식에 대한 인간 확인이 결합됩니다. 우리는 값 정확도에 대한 순서에 민감하지 않은 값 F1을 보고하며, 소스 추적성을 위한 두 가지 그라운딩 메트릭스인 워드- 및 페이지 수준의 F1도 보고합니다. 상업용 VLM은 짧은 문서에서는 잘 작동하지만 긴 문서에서는 종종 레코드 목록을 자르는 경향이 있으며, 코딩 에이전트는 더 높은 비용으로 더 높은 정확도를 유지합니다. LlamaExtract Agentic Plus는 세 가지 메트릭스 모두에서 모든 부분에서 1위를 차지하며, 비용의 일부분으로 코딩 에이전트와 비슷한 정확도를 유지합니다. 데이터셋과 평가 코드는 https://huggingface.co/datasets/llamaindex/ExtractBench{HuggingFace}와 https://github.com/run-llama/ExtractBench{GitHub}에서 이용 가능합니다."
+    },
+    "summary": "1. ExtractBench는 스코어링 값을 정확도, 완전성, 그라운딩, 비용으로 평가하는 스키마-가이드 추출 벤치마크이며, 문서와 스키마를 기반으로 한 적확한 출력물을 제공합니다.\n2. 평가에는 4,869 페이지, 370개 엔터프라이즈 문서, 8 비즈니스 도메인, 67 문서 유형이 포함되며, 도전적 시나리오를 각각 지정하는 명확한 태그가 존재합니다.\n3. LlamaExtract Agentic Plus는 소스 추적성을 위한 두 가지 그라운딩 메트릭스뿐만 아니라 값 정확도도 우수하며, 코딩 에이전트보다 높은 정확도를 유지하면서도 비용이 훨씬 낮습니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Enhancing Rubric-based RL via Self-Distillation",
+    "abstract": "Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks. A widely recognized limitation of rubric-based RL is limited exploration: criteria that no rollout manages to satisfy (Unexplored Criteria, UC) receive no optimization signal. Recent methods address this by incorporating rubric information as external guidance during rollout, yet they introduce a train-inference mismatch: the policy is optimized on rollouts produced under external guidance while this guidance is absent at inference time, causing error accumulation through autoregressive decoding. Moreover, these exploration-focused approaches overlook a fundamentally different failure mode that we term Suppressed Criteria (SC) -- criteria that are satisfied by some rollouts yet whose learning signals are lost during optimization because scalar reward aggregation assigns them non-positive aggregate advantages. Our analysis reveals that SC are remarkably prevalent: over 57% of samples exhibit this failure mode throughout training, with an average of 1.8 SC per sample. To simultaneously address both UC and SC without introducing training-inference mismatch, we propose Criterion-Distilled Policy Optimization (CriPO), which enhances rubric-based RL via on-policy self-distillation. For UC, CriPO constructs a criterion-injection self-teacher and computes a localized forward-KL loss to inject missing behaviors into the policy. For SC, CriPO employs a counterfactual self-teacher to locate criterion-relevant tokens in negative-advantage rollouts and flips their token-level advantages to positive values, preserving useful patterns that would otherwise be suppressed. Experiments on medicine and science benchmarks demonstrate that CriPO consistently outperforms rubric-based RL, achieving stronger final performance with approximately 2times fewer optimization steps.",
+    "authors": [
+      "Mingxuan Xia",
+      "Yuhang Yang",
+      "Chao Ye",
+      "Shuai Zhu",
+      "Shenzhi Yang",
+      "Guangcheng Zhu",
+      "Yuhang Zhang",
+      "Cheng Peng",
+      "Haobo Wang",
+      "Siqing Wang"
+    ],
+    "likes": 1,
+    "published_date": "Jul 21",
+    "url": "https://huggingface.co/papers/2607.18082",
+    "date_collected": "2026-08-03T13:34:02.172973+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "Rubric 기반 강화학습의 자기-순도를 통한 향상",
+      "abstract": "최근 Rubric 기반 강화학습은 개방형 작업에서 LLM을 향상시키는 데 유망하게 나타났다. Rubric 기반 강화학습의 주요 한계는 탐험의 제한성인데, (미탐험 기준, UC)은 어떤 rollout도 충족하지 못하는 기준은 최적화 신호를 받지 못한다. 최근 연구는 이를 해결하기 위해 rollout 중 외부 지침으로서 rubric 정보를 통합하나, 이는 학습과 추론 간 불일치를 도입해, 오류가 자기회귀 디코딩을 통해 누적된다."
+    },
+    "summary": "1. Rubric 기반 강화학습에서 발견된 미탐험 기준과 억제된 기준의 문제를 동시에 해결하기 위해, Criterion-Distilled Policy Optimization (CriPO)가 소개되었다.\n2. CriPO는 rubric 정보를 활용하여 on-policy self-distillation을 통해 강화학습 정책을 강화한다.\n3. 실험 결과는 CriPO가 rubric 기반 강화학습을 한층 능가하여 의학 및 과학 벤치마크에서 강한 성능을 보이며, 최적화 단계를 약 2배 줄이고 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Evaluation-Verification Reward for Consistent Multi-Reference Image Editing",
+    "abstract": "While recent image editing models have made rapid progress, multi-reference editing remains challenging, particularly in maintaining visual consistency across references and ensuring overall visual harmony. Reinforcement learning has proven highly effective for text-to-image generation and single-image editing, but its extension to multi-reference editing is hindered by the absence of suitable reward models that capture multi-image relational constraints. Moreover, naively using multimodal large language models(MLLMs) as zero-shot evaluators faces a key tension between hallucination-prone long-form reasoning and the limited deductive power of short-form judgments. We address these issues with a Multi-dimensional Evaluation-Verification Reward(EVR). EVR decomposes evaluation into distinct visual criteria; for each criterion, an MLLM Evaluator generates multiple candidate hypotheses, and a Verifier grounds each claim in concrete visual evidence to accept or reject it, producing reliable and fine-grained reward signals. Together with a scalable data pipeline, our method enables RL fine-tuning of off-the-shelf editors without architectural changes. Extensive experiments show substantial gains over the base Qwen-Image-Edit, improving consistency and harmony to match or surpass NanoBanana.",
+    "authors": [
+      "Yingmao Miao",
+      "Pengfei Zhang",
+      "Xiaochen Lv",
+      "Meng Yu",
+      "Lei Sun",
+      "Xiangxiang Chu",
+      "Chao Shen",
+      "Chenhao Lin"
+    ],
+    "likes": 0,
+    "published_date": "Jul 31",
+    "url": "https://huggingface.co/papers/2607.29025",
+    "date_collected": "2026-08-03T13:34:02.175881+09:00",
+    "week": "2026-W32",
+    "translation": {
+      "title": "일관된 다중 참조 이미지 편집을 위한 평가-확인 보상",
+      "abstract": "최근 이미지 편집 모델은 급속한 발전을 이루었지만, 여러 참조를 활용한 편집은 시각적 일관성과 전체적인 시각적 조화를 유지하는 데 어려움이 남아 있습니다. 강화 학습은 텍스트에서 이미지 생성 및 단일 이미지 편집에서 매우 효과적임이 입증되었지만, 다중 참조 편집에 대한 확장은 여러 이미지 간 관계 제약을 포착하는 적절한 보상 모델의 부재로 어렵습니다. 또한 단순히 다중모달 대형 언어 모델(MLLMs)을 영 제로 평가기로 사용하는 것은 환상에 빠지기 쉬운 장문 추론과 짧은 형태의 판단의 한계 사이에서 주요한 긴장을 안겨줍니다. 우리는 Multi-dimensional Evaluation-Verification Reward(EVR)를 활용하여 이러한 문제를 해결합니다. EVR은 평가를 서로 다른 시각적 기준으로 분해합니다. 각 기준마다 MLLM평가자가 여러 후보 가설을 생성하고, 검증기가 각 주장을 구체적인 시각적 증거에 근거해서 수용 또는 거부하여 신뢰성이 높고 세밀한 보상 신호를 생성합니다. 확장 가능한 데이터 파이프라인과 함께 우리의 방법은 구조 변경 없이 off-the-shelf 편집기의 RL 세밀 조정을 가능하게 합니다. 광범위한 실험 결과는 Qwen-Image-Edit을 기본으로 비교했을 때 일관성과 조화를 개선하여 NanoBanana와 부합하거나 능가하는 상당한 향상을 보여줍니다."
+    },
+    "summary": "1. 강화 학습을 활용한 다중 참조 이미지 편집 모델의 보상 모델 부재로 인한 어려움을 해결하기 위해 Multi-dimensional Evaluation-Verification Reward(EVR)를 제안하였습니다.\n2. EVR은 시각적 기준을 분해하여 MLLM평가자가 후보 가설을 생성하고, 검증기가 이를 시각적 증거로 검증하여 세밀한 보상 신호를 생성합니다.\n3. 실험 결과는 EVR을 활용한 방법이 이미지 편집에서 일관성과 조화를 향상시켜 기존 모델을 능가하는 성과를 보여주었습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Computer Vision"
+    ]
+  }
+]

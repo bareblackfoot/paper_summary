@@ -1,0 +1,337 @@
+[
+  {
+    "title": "MemOS: A Memory OS for AI System",
+    "abstract": "Large Language Models (LLMs) have become an essential infrastructure for\nArtificial General Intelligence (AGI), yet their lack of well-defined memory\nmanagement systems hinders the development of long-context reasoning, continual\npersonalization, and knowledge consistency.Existing models mainly rely on\nstatic parameters and short-lived contextual states, limiting their ability to\ntrack user preferences or update knowledge over extended periods.While\nRetrieval-Augmented Generation (RAG) introduces external knowledge in plain\ntext, it remains a stateless workaround without lifecycle control or\nintegration with persistent representations.Recent work has modeled the\ntraining and inference cost of LLMs from a memory hierarchy perspective,\nshowing that introducing an explicit memory layer between parameter memory and\nexternal retrieval can substantially reduce these costs by externalizing\nspecific knowledge. Beyond computational efficiency, LLMs face broader\nchallenges arising from how information is distributed over time and context,\nrequiring systems capable of managing heterogeneous knowledge spanning\ndifferent temporal scales and sources. To address this challenge, we propose\nMemOS, a memory operating system that treats memory as a manageable system\nresource. It unifies the representation, scheduling, and evolution of\nplaintext, activation-based, and parameter-level memories, enabling\ncost-efficient storage and retrieval. As the basic unit, a MemCube encapsulates\nboth memory content and metadata such as provenance and versioning. MemCubes\ncan be composed, migrated, and fused over time, enabling flexible transitions\nbetween memory types and bridging retrieval with parameter-based learning.\nMemOS establishes a memory-centric system framework that brings\ncontrollability, plasticity, and evolvability to LLMs, laying the foundation\nfor continual learning and personalized modeling.",
+    "authors": [
+      "Zhiyu Li",
+      "Shichao Song",
+      "Chenyang Xi",
+      "Hanyu Wang",
+      "Chen Tang",
+      "Simin Niu",
+      "Ding Chen",
+      "Jiawei Yang",
+      "Chunyu Li",
+      "Qingchen Yu",
+      "Jihao Zhao",
+      "Yezhaohui Wang",
+      "Peng Liu",
+      "Zehao Lin",
+      "Pengyuan Wang",
+      "Jiahao Huo",
+      "Tianyi Chen",
+      "Kai Chen",
+      "Kehang Li",
+      "Zhen Tao",
+      "Junpeng Ren",
+      "Huayi Lai"
+    ],
+    "likes": 77,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2507.03724",
+    "date_collected": "2025-07-09T07:07:47.174769+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "MemOS: AI 시스템을 위한 메모리 운영 체제",
+      "abstract": "대규모 언어 모델(LLMs)은 인공 일반지능(AGI)을 위한 중요한 인프라가 되었지만, 잘 정의된 메모리 관리 시스템의 부재로 인해 장문 맥락 추론, 계속적인 개인화, 지식 일관성 발전이 제한된다. 기존 모델은 주로 정적 매개변수와 단기적 문맥 상태에 의존하여 사용자 기호를 추적하거나 지식을 오랫동안 업데이트하는 능력이 제한된다. 외부 지식을 일반 텍스트로 도입하는 검색 보강 생성(RAG)은 생명주기 제어나 지속적 표현과의 통합 없이 상태가 없는 해결책으로 남아 있다. 최근 연구에서는 메모리 계층 관점에서 LLMs의 교육 및 추론 비용을 모델링함으로써 매개 변수 메모리와 외부 검색 사이에 명시적인 메모리 레이어를 도입하면 특정 지식을 외부화하여 이러한 비용을 상당히 줄일 수 있다는 것을 보였다. 연산 효율성 이상으로, 정보가 어떻게 시간과 맥락에 걸쳐 분산되는지에 따라 LLM은 시간적 및 맥락적으로 다른 지식을 관리할 수 있는 시스템을 필요로 한다. 이러한 도전에 대처하기 위해 우리는 메모리를 관리 가능한 시스템 자원으로 다루는 MemOS를 제안한다. 이 시스템은 평문, 활성 기반, 매개변수 수준 메모리의 표현, 스케줄링, 진화를 통합하여 비용 효과적인 저장 및 검색을 가능케 한다. MemCube는 기본 단위로, 메모리 콘텐츠와 출처, 버전 등 메타데이터를 캡슐화한다. MemCube는 시간이 지나면서 구성, 이동, 융합될 수 있어 메모리 유형 간 유연한 전환을 허용하고 검색을 매개변수 기반 학습과 이어주는 것을 가능케 한다. MemOS는 LLM에 통제성, 가변성, 발전 가능성을 제공하는 메모리 중심 시스템 구조를 확립하여 계속적인 학습과 개인화 모델링을 위한 기초를 마련한다."
+    },
+    "summary": "1. 대규모 언어 모델은 외부 지식을 획득하는 현재의 한계를 극복하기 위해 MemOS와 같은 메모리 운영 체제를 도입하여 지식을 효과적으로 저장하고 검색하는 것을 제안한다.\n2. MemOS는 MemCube를 사용하여 메모리 콘텐츠와 메타데이터를 캡슐화함으로써 메모리 유형 간의 유연한 전환을 가능케 하며, 검색과 매개변수 기반 학습을 결합함으로써 제어성, 가변성, 발전 가능성을 제공한다.\n3. 이를 통해 MemOS는 LLMs의 지속적인 학습과 개인화 모델링을 위한 기반을 마련하여 인공 일반지능의 발전에 기여할 수 있다.",
+    "categories": [
+      "LLM",
+      "AI System",
+      "Memory Management"
+    ]
+  },
+  {
+    "title": "Should We Still Pretrain Encoders with Masked Language Modeling?",
+    "abstract": "Learning high-quality text representations is fundamental to a wide range of\nNLP tasks. While encoder pretraining has traditionally relied on Masked\nLanguage Modeling (MLM), recent evidence suggests that decoder models\npretrained with Causal Language Modeling (CLM) can be effectively repurposed as\nencoders, often surpassing traditional encoders on text representation\nbenchmarks. However, it remains unclear whether these gains reflect an inherent\nadvantage of the CLM objective or arise from confounding factors such as model\nand data scale. In this paper, we address this question through a series of\nlarge-scale, carefully controlled pretraining ablations, training a total of 30\nmodels ranging from 210 million to 1 billion parameters, and conducting over\n15,000 fine-tuning and evaluation runs. We find that while training with MLM\ngenerally yields better performance across text representation tasks,\nCLM-trained models are more data-efficient and demonstrate improved fine-tuning\nstability. Building on these findings, we experimentally show that a biphasic\ntraining strategy that sequentially applies CLM and then MLM, achieves optimal\nperformance under a fixed computational training budget. Moreover, we\ndemonstrate that this strategy becomes more appealing when initializing from\nreadily available pretrained CLM models (from the existing LLM ecosystem),\nreducing the computational burden needed to train best-in-class encoder models.\nWe release all project artifacts at https://hf.co/MLMvsCLM to foster further\nresearch.",
+    "authors": [
+      "Hippolyte Gisserot-Boukhlef",
+      "Nicolas Boizard",
+      "Manuel Faysse",
+      "Duarte M. Alves",
+      "Emmanuel Malherbe",
+      "André F. T. Martins",
+      "Céline Hudelot",
+      "Pierre Colombo"
+    ],
+    "likes": 56,
+    "published_date": "Jul 1",
+    "url": "https://huggingface.co/papers/2507.00994",
+    "date_collected": "2025-07-09T07:07:47.176034+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "마스크된 언어 모델링으로 인코더를 여전히 사전학습해야 할까요?",
+      "abstract": "고품질 텍스트 표현 학습은 다양한 자연어 처리 작업에 기본적입니다. 인코더 사전학습은 일반적으로 마스크된 언어 모델링(MLM)을 사용해왔지만, 최근 연구에서는 인과 언어 모델링(CLM)으로 사전학습된 디코더 모델이 종종 기존의 인코더를 능가하는 텍스트 표현 기준에서 효과적으로 재활용될 수 있다는 증거가 나타났습니다. 그러나 이러한 성과가 CLM 목표의 본연적인 장점에서 비롯된 것인지 아니면 모델 및 데이터 규모와 같은 혼동 요인에서 비롯된 것인지 여전히 분명하지 않습니다. 본 논문에서는 이 질문에 대해 21억 개 파라미터에서 10억 개 파라미터의 범위에 걸쳐 총 30개 모델을 훈련시키고 1만 5000회 이상의 파인튜닝 및 평가 실행을 실시하는 대규모이며 신중하게 제어된 사전학습 제거를 통해 이를 해결합니다. MLM으로 훈련하는 동안 일반적으로 텍스트 표현 작업에서 더 나은 성능을 내지만, CLM으로 훈련된 모델은 데이터 효율성이 뛰어나며 파인튜닝 안정성이 향상됩니다. 이러한 결과를 바탕으로 우리는 순차적으로 CLM을 먼저 적용한 후 MLM을 적용하는 양상적 훈련 전략이 고정된 계산 훈련 예산 하에서 최적의 성능을 달성한다는 것을 실험적으로 보여줍니다. 더 나아가, 기존의 LLM 생태계에서 미리 훈련된 CLM 모델에서 초기화할 때 이러한 전략이 더 매력적임을 보여주며, 최고 수준의 인코더 모델을 훈련하는 데 필요한 계산 부담을 줄입니다. 추가 연구를 위해 모든 프로젝트 자료를 https://hf.co/MLMvsCLM 에 공개합니다."
+    },
+    "summary": "1. MLM 훈련은 텍스트 표현 작업에서 일반적으로 더 나은 성능을 보이지만, CLM으로 훈련된 모델은 데이터를 더 효율적으로 사용하고 파인튜닝의 안정성을 개선합니다.\n2. 순차적인 CLM과 MLM을 적용하는 양상적 훈련 전략은 고정된 계산 훈련 예산 하에서 최적의 성능을 달성합니다.\n3. 기존 LLM 생태계의 사전훈련된 CLM 모델로부터 초기화할 때 이 양상적 전략은 최고 수준의 인코더 모델을 훈련하는 데 필요한 계산 부담을 줄입니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "4DSloMo: 4D Reconstruction for High Speed Scene with Asynchronous\n  Capture",
+    "abstract": "Reconstructing fast-dynamic scenes from multi-view videos is crucial for\nhigh-speed motion analysis and realistic 4D reconstruction. However, the\nmajority of 4D capture systems are limited to frame rates below 30 FPS (frames\nper second), and a direct 4D reconstruction of high-speed motion from low FPS\ninput may lead to undesirable results. In this work, we propose a high-speed 4D\ncapturing system only using low FPS cameras, through novel capturing and\nprocessing modules. On the capturing side, we propose an asynchronous capture\nscheme that increases the effective frame rate by staggering the start times of\ncameras. By grouping cameras and leveraging a base frame rate of 25 FPS, our\nmethod achieves an equivalent frame rate of 100-200 FPS without requiring\nspecialized high-speed cameras. On processing side, we also propose a novel\ngenerative model to fix artifacts caused by 4D sparse-view reconstruction, as\nasynchrony reduces the number of viewpoints at each timestamp. Specifically, we\npropose to train a video-diffusion-based artifact-fix model for sparse 4D\nreconstruction, which refines missing details, maintains temporal consistency,\nand improves overall reconstruction quality. Experimental results demonstrate\nthat our method significantly enhances high-speed 4D reconstruction compared to\nsynchronous capture.",
+    "authors": [
+      "Yutian Chen",
+      "Shi Guo",
+      "Tianshuo Yang",
+      "Lihe Ding",
+      "Xiuyuan Yu",
+      "Jinwei Gu",
+      "Tianfan Xue"
+    ],
+    "likes": 32,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.05163",
+    "date_collected": "2025-07-09T07:07:47.177241+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "4DSloMo: 고속 씬을 위한 4D 재구성과 비동기적 촬영",
+      "abstract": "다중 뷰 비디오로부터 고속 동적 씬을 재구성하는 것은 고속 움직임 분석과 현실적인 4D 재구성에 중요합니다. 본 논문에서는 저 프레임률 카메라만을 이용하여 높은 속도의 4D 캡처 시스템을 제안합니다. 비동기적인 촬영 방법과 신규 촬영 및 처리 모듈을 통해 효율적인 프레임 속도를 달성하며, 적어도 25 FPS의 기본 프레임 속도를 이용하여 100-200 FPS의 등가 프레임 속도를 달성합니다. 또한, 비동기성으로 인한 아티팩트를 개선하기 위한 새로운 생성 모델을 제안하고, 실험 결과는 우리의 방법이 동기적인 촬영에 비해 고속 4D 재구성을 크게 향상시킨다는 것을 보여줍니다."
+    },
+    "summary": "1. 고속 씬의 4D 재구성을 위한 저 프레임속 카메라를 이용한 비동기적 촬영 방법을 제안함.\n2. 25 FPS의 기본 프레임 속도를 이용하여 100-200 FPS의 등가 프레임 속도를 달성하는 새로운 제안된 캡처 시스템 사용.\n3. 아티팩트를 개선하기 위한 비디오 확산 기반 아티팩트 수정 모델을 훈련시켜 고속 4D 재구성 품질을 향상시킨다.",
+    "categories": [
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive\n  World Knowledge",
+    "abstract": "Recent advances in vision-language-action (VLA) models have shown promise in\nintegrating image generation with action prediction to improve generalization\nand reasoning in robot manipulation. However, existing methods are limited to\nchallenging image-based forecasting, which suffers from redundant information\nand lacks comprehensive and critical world knowledge, including dynamic,\nspatial and semantic information. To address these limitations, we propose\nDreamVLA, a novel VLA framework that integrates comprehensive world knowledge\nforecasting to enable inverse dynamics modeling, thereby establishing a\nperception-prediction-action loop for manipulation tasks. Specifically,\nDreamVLA introduces a dynamic-region-guided world knowledge prediction,\nintegrated with the spatial and semantic cues, which provide compact yet\ncomprehensive representations for action planning. This design aligns with how\nhumans interact with the world by first forming abstract multimodal reasoning\nchains before acting. To mitigate interference among the dynamic, spatial and\nsemantic information during training, we adopt a block-wise structured\nattention mechanism that masks their mutual attention, preventing information\nleakage and keeping each representation clean and disentangled. Moreover, to\nmodel the conditional distribution over future actions, we employ a\ndiffusion-based transformer that disentangles action representations from\nshared latent features. Extensive experiments on both real-world and simulation\nenvironments demonstrate that DreamVLA achieves 76.7% success rate on real\nrobot tasks and 4.44 average length on the CALVIN ABC-D benchmarks.",
+    "authors": [
+      "Wenyao Zhang",
+      "Hongsi Liu",
+      "Zekun Qi",
+      "Yunnan Wang",
+      "XinQiang Yu",
+      "Jiazhao Zhang",
+      "Runpei Dong",
+      "Jiawei He",
+      "He Wang",
+      "Zhizheng Zhang",
+      "Li Yi",
+      "Wenjun Zeng",
+      "Xin Jin"
+    ],
+    "likes": 29,
+    "published_date": "Jul 6",
+    "url": "https://huggingface.co/papers/2507.04447",
+    "date_collected": "2025-07-09T07:07:47.178727+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "꿈꾸는 포괄적 세계 지식으로 설계된 비전-언어-행동 모델 DreamVLA",
+      "abstract": "최근에 발전한 비전-언어-행동(VLA) 모델은 이미지 생성과 행동 예측을 통합하여 로봇 조작에서 일반화와 추론을 개선하는 가능성을 보여주었습니다. 그러나 기존 방법들은 동적, 공간적 및 의미론적 정보를 포함한 포괄적이고 중요한 세계 지식이 부족한 어려운 기반의 이미지 예측에 한정되어 있습니다. 이러한 한계를 해결하기 위해 저희는 DreamVLA를 제안합니다. DreamVLA는 역동적인 상황 가이드된 세계 지식 예측을 도입하고 공간적 및 의미론적 정보와 통합하여 로봇 작업에서 인식-예측-행동 루프를 확립합니다."
+    },
+    "summary": "1. DreamVLA는 포괄적인 세계 지식을 활용하여 로봇 작업에서 인식-예측-행동 루프를 구축하는 혁신적인 비전-언어-행동 프레임워크이다.\n2. 이 모델은 동적, 공간적, 의미론적 정보를 효과적으로 통합하고 추상적 다중 모달 추론 체인을 형성하여 사람들이 세상과 상호작용하는 방식과 일치시킨다.\n3. DreamVLA는 블록 단위 구조화된 주의 메커니즘을 통해 학습 중 상호 간섭을 완화하고 정보 누출을 방지함으로써 각 표현을 깔끔하고 분리된 상태로 유지한다.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Pre-Trained Policy Discriminators are General Reward Models",
+    "abstract": "We offer a novel perspective on reward modeling by formulating it as a policy\ndiscriminator, which quantifies the difference between two policies to generate\na reward signal, guiding the training policy towards a target policy with\ndesired behaviors. Based on this conceptual insight, we propose a scalable\npre-training method named Policy Discriminative Learning (POLAR), which trains\na reward model (RM) to discern identical policies and discriminate different\nones. Unlike traditional reward modeling methods relying on absolute\npreferences, POLAR captures the relative difference between one policy and an\narbitrary target policy, which is a scalable, high-level optimization objective\nsuitable for modeling generic ranking relationships. Leveraging the POLAR\npre-training paradigm, we present a series of RMs with parameter scales from\n1.8B to 7B. Empirical results show that POLAR substantially outperforms\ntraditional non-pre-trained methods, significantly enhancing RM performance.\nFor instance, POLAR-7B could improve preference accuracy from 54.8% to 81.0% on\nSTEM tasks and from 57.9% to 85.5% on creative writing tasks compared to SOTA\nbaselines. POLAR also shows robust generalization capabilities in RLHF using\nReinforcement Fine-tuning (RFT), providing reliable reward signals and markedly\nenhancing policy performance--improving LLaMa3.1-8B from an average of 47.36%\nto 56.33% and Qwen2.5-32B from 64.49% to 70.47% on 20 benchmarks. Moreover,\nscaling experiments reveal a clear power-law relationship between computation\nand performance, supported by linear correlation coefficients approaching 0.99.\nThe impressive performance, strong generalization, and scaling properties\nsuggest that POLAR is a promising direction for developing general and strong\nreward models.",
+    "authors": [
+      "Shihan Dou",
+      "Shichun Liu",
+      "Yuming Yang",
+      "Yicheng Zou",
+      "Yunhua Zhou",
+      "Shuhao Xing",
+      "Chenhao Huang",
+      "Qiming Ge",
+      "Demin Song",
+      "Haijun Lv",
+      "Songyang Gao",
+      "Chengqi Lv",
+      "Enyu Zhou",
+      "Honglin Guo",
+      "Zhiheng Xi",
+      "Wenwei Zhang",
+      "Qipeng Guo",
+      "Qi Zhang",
+      "Xipeng Qiu",
+      "Xuanjing Huang",
+      "Tao Gui",
+      "Kai Chen"
+    ],
+    "likes": 27,
+    "published_date": "Jul 7",
+    "url": "https://huggingface.co/papers/2507.05197",
+    "date_collected": "2025-07-09T07:07:47.180591+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "사전 학습된 정책 판별자는 일반 보상 모델입니다",
+      "abstract": "우리는 보상 모델링을 정책 판별자로 형성하여 두 정책 간의 차이를 양적으로 측정하여 원하는 행동을 가진 대상 정책으로 훈련 정책을 이끄는 보상 신호를 생성하는 새로운 관점을 제공합니다. 이 개념적 통찰력을 바탕으로 정책 판별 학습(POLAR)이라는 확장 가능한 사전 학습 방법을 제안하며, 이는 같은 정책을 구별하고 다른 정책을 판별하도록 보상 모델(RM)을 훈련시킵니다. POLAR는 절대적인 선호도에 의존하는 전통적인 보상 모델링 방법과 달리, 한 정책과 임의의 대상 정책 간의 상대적인 차이를 포착함으로써 범용적인 순위 관계 모델링에 적합한 확장 가능한 고수준 최적화 목표를 달성합니다. POLAR 사전 훈련 패러다임을 활용하여 매개변수 규모가 1.8B에서 7B까지인 일련의 RM을 제시합니다. 실험 결과는 POLAR이 전통적인 사전 학습되지 않은 방법을 크게 앞선다는 것을 보여주며, RM 성능을 현저히 향상시킵니다. 예를 들어, POLAR-7B는 STEM 작업에서 SOTA 벤치마크와 비교하여 쓰기 작업에서 54.8%에서 81.0%로 선호 정확도를 향상시키고, RLHF에서 Reinforcement Fine-tuning (RFT)을 사용하여 LLaMa3.1-8B의 평균을 47.36%에서 56.33%로, Qwen2.5-32B의 64.49%에서 70.47%로 개선합니다. 더불어, 확장 실험은 계산과 성능 사이에 명확한 거듭제곱 관계가 있음을 나타내며, 선형 상관 계수가 0.99에 가까워집니다. 탁월한 성능, 강력한 일반화 능력, 그리고 확장 특성은 POLAR이 범용적이고 강력한 보상 모델을 개발하기 위한 유망한 방향임을 시사합니다."
+    },
+    "summary": "1. 보상 모델링을 정책 판별자로 새로운 관점 제시\n2. POLAR을 활용한 사전 학습 방법으로 상대적 차이 파악하여 일반적인 순위 관계 모델링\n3. POLAR이 전통적인 방법보다 우수한 성능 및 강력한 일반화 능력을 보이며, 계산과 성능 간의 거듭제곱 관계 확인",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation\n  Models on Standard Computer Vision Tasks",
+    "abstract": "Multimodal foundation models, such as GPT-4o, have recently made remarkable\nprogress, but it is not clear where exactly these models stand in terms of\nunderstanding vision. In this paper, we benchmark the performance of popular\nmultimodal foundation models (GPT-4o, o4-mini, Gemini 1.5 Pro and Gemini 2.0\nFlash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2) on standard computer vision\ntasks (semantic segmentation, object detection, image classification, depth and\nsurface normal prediction) using established datasets (e.g., COCO, ImageNet and\nits variants, etc).\n  The main challenges to performing this are: 1) most models are trained to\noutput text and cannot natively express versatile domains, such as segments or\n3D geometry, and 2) many leading models are proprietary and accessible only at\nan API level, i.e., there is no weight access to adapt them. We address these\nchallenges by translating standard vision tasks into equivalent text-promptable\nand API-compatible tasks via prompt chaining to create a standardized\nbenchmarking framework.\n  We observe that 1) the models are not close to the state-of-the-art\nspecialist models at any task. However, 2) they are respectable generalists;\nthis is remarkable as they are presumably trained on primarily image-text-based\ntasks. 3) They perform semantic tasks notably better than geometric ones. 4)\nWhile the prompt-chaining techniques affect performance, better models exhibit\nless sensitivity to prompt variations. 5) GPT-4o performs the best among\nnon-reasoning models, securing the top position in 4 out of 6 tasks, 6)\nreasoning models, e.g. o3, show improvements in geometric tasks, and 7) a\npreliminary analysis of models with native image generation, like the latest\nGPT-4o, shows they exhibit quirks like hallucinations and spatial\nmisalignments.",
+    "authors": [
+      "Rahul Ramachandran",
+      "Ali Garjani",
+      "Roman Bachmann",
+      "Andrei Atanov",
+      "Oğuzhan Fatih Kar",
+      "Amir Zamir"
+    ],
+    "likes": 24,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.01955",
+    "date_collected": "2025-07-09T07:07:47.181796+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "GPT-4o는 시각을 얼마나 잘 이해하는가? 표준 컴퓨터 비전 작업에서의 다중모달 기반 모델 평가",
+      "abstract": "GPT-4o와 같은 다중모달 기반 모델은 최근 현저한 진전을 이루었지만, 이러한 모델들이 시각을 얼마나 잘 이해하는지 명확하지 않다. 본 논문에서는 인기 있는 다중모달 기반 모델(GPT-4o, o4-mini, Gemini 1.5 Pro 및 Gemini 2.0 Flash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2)의 성능을 표준 컴퓨터 비전 작업(의미 분할, 객체 감지, 이미지 분류, 깊이 및 표면 정상 예측)에 대해 측정하였다. 예정된 데이터셋(COCO, ImageNet 및 이와 유사한 것들 등)을 사용하였다."
+    },
+    "summary": "1. GPT-4o와 같은 모델들은 특정 작업에서 압도적인 성능을 보이지 않지만, 이미지-텍스트 기반 작업에서 훈련되었다는 점을 감안하면 훌륭한 일반화 능력을 보인다.\n2. 이러한 모델들은 기하학 작업보다 의미 작업에서 뛰어난 성과를 보인다.\n3. GPT-4o는 비추론 모델 중에서 가장 우수한 성능을 보이며, 다른 모델들과는 달리 프롬프트 변화에 덜 민감함을 보인다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning\n  Dataset",
+    "abstract": "In this paper, we introduce BMMR, a large-scale bilingual, multimodal,\nmulti-disciplinary reasoning dataset for the community to develop and evaluate\nlarge multimodal models (LMMs). BMMR comprises 110k college-level questions\nspanning 300 UNESCO-defined subjects, spanning diverse formats-multiple-choice,\nfill-in-the-blank, and open-ended QA-and sourced from both print and digital\nmedia such as books, exams, and quizzes. All data are curated and filtered via\na human-in-the-loop and scalable framework, and each instance is paired with a\nhigh-quality reasoning path. The dataset is organized into two parts: BMMR-Eval\nthat comprises 20,458 high-quality instances to comprehensively assess LMMs'\nknowledge and reasoning across multiple disciplines in both Chinese and\nEnglish; and BMMR-Train that contains 88,991 instances to support further\nresearch and development, extending the current focus on mathematical reasoning\nto diverse disciplines and domains. In addition, we propose the process-based\nmulti-discipline verifier (i.e., BMMR-Verifier) for accurate and fine-grained\nevaluation of reasoning paths. Extensive experiments on 24 models reveal that\n(i) even SOTA models (e.g., o3 and Gemini-2.5-Pro) leave substantial headroom\non BMMR-Eval; (ii) reasoning models exhibit discipline bias and outperform LMMs\nonly on specific subjects; (iii) open-source models still trail their\nproprietary counterparts; and (iv) fine-tuning on BMMR-Train narrows this gap.\nAdditionally, we conduct reasoning-chain analyses using BMMR-Verifier and other\nin-depth studies, uncovering the challenges LMMs currently face in\nmultidisciplinary reasoning. We will release the data, and we hope our work can\noffer insights and contributions to the community.",
+    "authors": [
+      "Zhiheng Xi",
+      "Guanyu Li",
+      "Yutao Fan",
+      "Honglin Guo",
+      "Yufang Liu",
+      "Xiaoran Fan",
+      "Jiaqi Liu",
+      "Jingchao Ding",
+      "Wangmeng Zuo",
+      "Zhenfei Yin",
+      "Lei Bai",
+      "Tao Ji",
+      "Tao Gui",
+      "Qi Zhang",
+      "Xuanjing Huang"
+    ],
+    "likes": 20,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2507.03483",
+    "date_collected": "2025-07-09T07:07:47.183381+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "대규모 이중 언어 다중모달 다학제 추론 데이터셋",
+      "abstract": "이 논문에서는 대규모 이중 언어, 다중 모달, 다학제 추론 데이터셋인 BMMR을 소개합니다. BMMR은 300가지 유네스코 분야를 포함한 11만 개의 대학 수준 질문으로 구성되어 있으며, 다양한 형식의 문제들(객관식, 빈칸 채우기, 주관식)이 포함되어 있습니다. 데이터는 인쇄물과 디지털 미디어(책, 시험, 퀴즈)에서 수집되었으며, 사람 중심 및 확장 가능한 프레임워크를 통해 정제 및 선별되었습니다."
+    },
+    "summary": "1. BMMR은 110,000개의 대학 수준 질문으로 이루어진 대규모 다학제 데이터셋이며, 다양한 형식의 문제를 포함하고 있습니다.\n2. BMMR은 이중 언어 (중국어와 영어)로 구성된 20,458개의 고품질 데이터로 구성된 BMMR-Eval과 추가 연구 및 개발을 위해 88,991개의 데이터로 구성된 BMMR-Train으로 구성되어 있습니다.\n3. 실험 결과는 최신 기술 모델들이 BMMR-Eval에서 아직 여지가 많음을 보여주며, 이와 같은 다학제 데이터셋에서의 추론 모델의 도전에 대한 통찰력을 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "RoboBrain 2.0 Technical Report",
+    "abstract": "We introduce RoboBrain 2.0, our latest generation of embodied vision-language\nfoundation models, designed to unify perception, reasoning, and planning for\ncomplex embodied tasks in physical environments. It comes in two variants: a\nlightweight 7B model and a full-scale 32B model, featuring a heterogeneous\narchitecture with a vision encoder and a language model. Despite its compact\nsize, RoboBrain 2.0 achieves strong performance across a wide spectrum of\nembodied reasoning tasks. On both spatial and temporal benchmarks, the 32B\nvariant achieves leading results, surpassing prior open-source and proprietary\nmodels. In particular, it supports key real-world embodied AI capabilities,\nincluding spatial understanding (e.g., affordance prediction, spatial\nreferring, trajectory forecasting) and temporal decision-making (e.g.,\nclosed-loop interaction, multi-agent long-horizon planning, and scene graph\nupdating). This report details the model architecture, data construction,\nmulti-stage training strategies, infrastructure and practical applications. We\nhope RoboBrain 2.0 advances embodied AI research and serves as a practical step\ntoward building generalist embodied agents. The code, checkpoint and benchmark\nare available at https://superrobobrain.github.io.",
+    "authors": [
+      "BAAI RoboBrain Team",
+      "Mingyu Cao",
+      "Huajie Tan",
+      "Yuheng Ji",
+      "Minglan Lin",
+      "Zhiyu Li",
+      "Zhou Cao",
+      "Pengwei Wang",
+      "Enshen Zhou",
+      "Yi Han",
+      "Yingbo Tang",
+      "Xiangqi Xu",
+      "Wei Guo",
+      "Yaoxu Lyu",
+      "Yijie Xu",
+      "Jiayu Shi",
+      "Cheng Chi",
+      "Mengdi Zhao",
+      "Xiaoshuai Hao",
+      "Shanyu Rong",
+      "Zhengliang Cai",
+      "Bolun Zhang"
+    ],
+    "likes": 18,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2507.02029",
+    "date_collected": "2025-07-09T07:07:47.185231+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "로보브레인 2.0 기술 보고서",
+      "abstract": "본 보고서에서는 신체화된 시각-언어 기반 모델의 최신 세대인 로보브레인 2.0을 소개합니다. 이 모델은 복잡한 신체화된 작업에 대한 지각, 추론 및 계획을 통합하기 위해 설계되었습니다. 로보브레인 2.0은 경량 7B 모델과 완전 규모의 32B 모델 두 가지 버전으로 제공되며, 시각 인코더 및 언어 모델로 이루어진 이질적인 구조를 갖추고 있습니다. 작고 가벼운 것에도 불구하고, 로보브레인 2.0은 다양한 신체화된 추론 작업에서 강력한 성능을 발휘합니다. 공간 및 시간적인 여러 벤치마크에서, 32B 버전은 이전의 오픈 소스 및 사유 재산 모델을 뛰어넘는 선도적인 결과를 달성합니다. 특히, 이는 공간 이해(예: 사용 가능한 것 예측, 공간 지칭, 경로 예측)과 시간적 의사 결정(예: 닫힌 루프 상호 작용, 다중 에이전트 장기적인 계획, 장면 그래프 업데이팅)을 지원합니다. 본 보고서에서는 모델 아키텍처, 데이터 구축, 다단계 훈련 전략, 인프라 및 실용적인 응용 프로그램에 대해 상세히 다룹니다. 로보브레인 2.0을 통해 신체화된 AI 연구가 발전하고 일반적인 신체화된 에이전트 구축을 위한 실용적인 한걸음이 되기를 기대합니다. 코드, 체크포인트 및 벤치마크는 https://superrobobrain.github.io에서 확인할 수 있습니다."
+    },
+    "summary": "1. 로보브레인 2.0은 신체화된 작업을 위한 시각-언어 기반 모델로, 공간 및 시간적인 추론 작업에서 강력한 성능을 보여줌.\n2. 32B 모델은 이전 모델을 능가하는 결과를 거두며, 공간 이해와 시간적 의사 결정을 지원함.\n3. 보고서는 모델 아키텍처부터 실용적인 적용까지 다루며, 신체화된 AI 연구 발전과 일반화된 신체화된 에이전트 구축에 도움을 줄 것을 기대함.",
+    "categories": [
+      "Robotics",
+      "Multimodal",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "title": "Lost in Latent Space: An Empirical Study of Latent Diffusion Models for\n  Physics Emulation",
+    "abstract": "The steep computational cost of diffusion models at inference hinders their\nuse as fast physics emulators. In the context of image and video generation,\nthis computational drawback has been addressed by generating in the latent\nspace of an autoencoder instead of the pixel space. In this work, we\ninvestigate whether a similar strategy can be effectively applied to the\nemulation of dynamical systems and at what cost. We find that the accuracy of\nlatent-space emulation is surprisingly robust to a wide range of compression\nrates (up to 1000x). We also show that diffusion-based emulators are\nconsistently more accurate than non-generative counterparts and compensate for\nuncertainty in their predictions with greater diversity. Finally, we cover\npractical design choices, spanning from architectures to optimizers, that we\nfound critical to train latent-space emulators.",
+    "authors": [
+      "François Rozet",
+      "Ruben Ohana",
+      "Michael McCabe",
+      "Gilles Louppe",
+      "François Lanusse",
+      "Shirley Ho"
+    ],
+    "likes": 16,
+    "published_date": "Jul 3",
+    "url": "https://huggingface.co/papers/2507.02608",
+    "date_collected": "2025-07-09T07:07:47.186412+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "잠겨버린 잠재 공간: 물리 에뮬레이션을 위한 잠재 확산 모델의 경험적 연구",
+      "abstract": "추론에서의 확산 모델의 높은 계산 비용은 빠른 물리 에뮬레이터로서의 활용을 방해합니다. 이미지 및 영상 생성의 맥락에서, 이 계산적인 단점은 픽셀 공간이 아닌 오토인코더의 잠재 공간에서 생성함으로써 해결되어 왔습니다. 본 연구에서는 비슷한 전략이 동적 시스템의 에뮬레이션에 효과적으로 적용될 수 있는지, 그 비용은 어떻게 되는지 조사합니다. 우리는 잠재 공간 에뮬레이션이 다양한 압축률에서 상당히 견고한 정확도를 보여주는 것을 발견했습니다 (최대 1000배까지). 또한 확산 기반 에뮬레이터가 비생성적 대안들보다 일관되게 더 정확하며, 예측의 불확실성을 더 큰 다양성으로 보상합니다. 마지막으로, 우리는 잠재 공간 에뮬레이터를 훈련하는 데 결정적인 것으로 발견한 아키텍처부터 옵티마이저에 이르는 실용적인 설계 선택 사항을 다룹니다."
+    },
+    "summary": "1. 잠재 공간에서 물리 에뮬레이션은 다양한 압축률에도 견고한 정확도를 유지한다.\n2. 확산 기반 에뮬레이터는 비생성적인 대안들보다 더 정확하며, 예측 불확실성을 다양성으로 보상한다.\n3. 잠재 공간 에뮬레이터를 훈련하는 데 있어서 중요한 아키텍처와 옵티마이저 선택이 있다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "RefineX: Learning to Refine Pre-training Data at Scale from\n  Expert-Guided Programs",
+    "abstract": "The foundational capabilities of large language models (LLMs) are deeply\ninfluenced by the quality of their pre-training corpora. However, enhancing\ndata quality at scale remains a significant challenge, primarily due to the\ntrade-off between refinement effectiveness and processing efficiency. While\nrule-based filtering remains the dominant paradigm, it typically operates at\nthe document level and lacks the granularity needed to refine specific content\nwithin documents. Inspired by emerging work such as ProX, we propose\nRefineX, a novel framework for large-scale, surgical refinement of\npre-training data through programmatic editing tasks. RefineX enables efficient\nand fine-grained data refinement while reliably preserving the diversity and\nnaturalness of raw text. The core strength of RefineX lies in distilling\nhigh-quality, expert-guided end-to-end refinement results into minimal\nedit-based deletion programs. This high-precision distillation pipeline is used\nto train an efficient and reliable refine model that can systematically improve\nevery instance in the corpus at scale. We evaluate RefineX across from-scratch\npre-training at multiple model scales and find that it consistently outperforms\nmodels trained on raw, filtered, or alternatively refined data across diverse\ndownstream tasks. On the 750M model, RefineX yields 2.6%-7.2% average gains on\nlighteval tasks, and achieves comparable performance using significantly fewer\ntraining tokens. Further analysis shows that RefineX reliably enhances text\nquality with both high efficiency and precision, outperforming prior approaches\nsuch as end-to-end generation and Prox-C. These results position RefineX as a\nscalable, effective, and reliable solution for optimizing pre-training data in\nmodern LLM pipelines.",
+    "authors": [
+      "Baolong Bi",
+      "Shenghua Liu",
+      "Xingzhang Ren",
+      "Dayiheng Liu",
+      "Junyang Lin",
+      "Yiwei Wang",
+      "Lingrui Mei",
+      "Junfeng Fang",
+      "Jiafeng Guo",
+      "Xueqi Cheng"
+    ],
+    "likes": 14,
+    "published_date": "Jul 4",
+    "url": "https://huggingface.co/papers/2507.03253",
+    "date_collected": "2025-07-09T07:07:47.187757+09:00",
+    "week": "2025-W28",
+    "translation": {
+      "title": "RefineX: 전문가 지도 프로그램에서 규모별 사전 훈련 데이터를 정밀하게 개선하는 학습",
+      "abstract": "대형 언어 모델의 기본 능력은 주로 사전 훈련 말뭉치의 질에 의해 깊게 영향을 받습니다. 그러나 규모별로 데이터 품질을 향상시키는 것은 주로 개선 효과와 처리 효율성 사이의 상충으로 인해 중요한 도전 과제입니다. RefineX라는 새로운 프레임워크를 제안합니다. 이는 ProX와 같은 최신 작업에서 영감을 받아 프로그램을 통한 편집 작업을 통해 대규모로 사전 훈련 데이터를 세밀하게 개선합니다."
+    },
+    "summary": "1. 대형 언어 모델의 품질을 향상시키기 위해 RefineX라는 프레임워크가 개발되었으며, 사전 훈련 데이터의 규모별 효율적이고 정밀한 개선을 가능케 합니다.\n2. RefineX는 전문가 지도 아래에서 고품질의 개선 결과를 최소 수정 기반 삭제 프로그램으로 증류하는데 강점을 가지며, 이를 통해 효율적이고 신뢰성 있는 개선 모델을 훈련할 수 있습니다.\n3. RefineX는 사전 훈련 데이터 최적화를 위한 확장 가능하고 효과적이며 신뢰성 있는 솔루션이며, 현대적인 대형 언어 모델 파이프라인에서 우수한 성능을 보입니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  }
+]

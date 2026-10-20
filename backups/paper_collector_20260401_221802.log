@@ -1,0 +1,117 @@
+=== Paper Collection Started at Tue Mar 31 22:17:26 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W14
+URL: https://huggingface.co/papers/week/2026-W14
+Found 10 papers in weekly view
+Fetching likes for: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Fetching likes for: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Fetching likes for: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Fetching likes for: Towards a Medical AI Scientist
+Fetching likes for: Gen-Searcher: Reinforcing Agentic Search for Image Generation
+Fetching likes for: PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference
+Fetching likes for: Emergent Social Intelligence Risks in Generative Multi-Agent Systems
+Fetching likes for: Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills
+Fetching likes for: EpochX: Building the Infrastructure for an Emergent Agent Civilization
+Fetching likes for: On Token's Dilemma: Dynamic MoE with Drift-Aware Token Assignment for Continual Learning of Large Vision Language Models
+Selected top 10 papers by likes:
+1. Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models (141 likes)
+2. ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling (128 likes)
+3. TAPS: Task Aware Proposal Distributions for Speculative Sampling (113 likes)
+4. Towards a Medical AI Scientist (63 likes)
+5. Gen-Searcher: Reinforcing Agentic Search for Image Generation (43 likes)
+6. PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference (42 likes)
+7. Emergent Social Intelligence Risks in Generative Multi-Agent Systems (41 likes)
+8. Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills (40 likes)
+9. EpochX: Building the Infrastructure for an Emergent Agent Civilization (39 likes)
+10. On Token's Dilemma: Dynamic MoE with Drift-Aware Token Assignment for Continual Learning of Large Vision Language Models (27 likes)
+Found abstract: Video world models have shown immense potential in simulating the physical world, yet existing memor...
+Processed paper: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Found abstract: Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional ar...
+Processed paper: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Found abstract: Speculative decoding accelerates autoregressive generation by letting a lightweight draft model prop...
+Processed paper: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Found abstract: Autonomous systems that generate scientific hypotheses, conduct experiments, and draft manuscripts h...
+Processed paper: Towards a Medical AI Scientist
+Found abstract: Recent image generation models have shown strong capabilities in generating high-fidelity and photor...
+Processed paper: Gen-Searcher: Reinforcing Agentic Search for Image Generation
+Found abstract: Autoregressive video diffusion models have demonstrated remarkable progress, yet they remain bottlen...
+Processed paper: PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference
+Found abstract: Multi-agent systems composed of large generative models are rapidly moving from laboratory prototype...
+Processed paper: Emergent Social Intelligence Risks in Generative Multi-Agent Systems
+Found abstract: Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling com...
+Processed paper: Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills
+Found abstract: General-purpose technologies reshape economies less by improving individual tools than by enabling n...
+Processed paper: EpochX: Building the Infrastructure for an Emergent Agent Civilization
+Found abstract: Multimodal Continual Instruction Tuning aims to continually enhance Large Vision Language Models (LV...
+Processed paper: On Token's Dilemma: Dynamic MoE with Drift-Aware Token Assignment for Continual Learning of Large Vision Language Models
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models
+Paper already exists, checking if translation is complete...
+Update likes: 141  ->  133
+Update date_collected: 2026-04-01T07:17:36.844576+09:00  ->  2026-03-31T07:16:51.237767+09:00
+
+Processing paper 2/10
+Title: ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling
+Paper already exists, checking if translation is complete...
+Update likes: 128  ->  110
+Update date_collected: 2026-04-01T07:17:36.846227+09:00  ->  2026-03-31T07:16:51.240761+09:00
+
+Processing paper 3/10
+Title: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Towards a Medical AI Scientist
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Gen-Searcher: Reinforcing Agentic Search for Image Generation
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference
+Paper already exists, checking if translation is complete...
+Update likes: 42  ->  38
+Update date_collected: 2026-04-01T07:17:36.852603+09:00  ->  2026-03-31T07:16:51.243009+09:00
+
+Processing paper 7/10
+Title: Emergent Social Intelligence Risks in Generative Multi-Agent Systems
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  33
+Update date_collected: 2026-04-01T07:17:36.856256+09:00  ->  2026-03-31T07:16:51.245377+09:00
+
+Processing paper 9/10
+Title: EpochX: Building the Infrastructure for an Emergent Agent Civilization
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: On Token's Dilemma: Dynamic MoE with Drift-Aware Token Assignment for Continual Learning of Large Vision Language Models
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W14.json...
+
+Updating Notion database...
+Updating paper: 시야 밖, 그러나 마음속에: 동적 비디오 월드 모델을 위한 하이브리드 메모리 (likes: 133 -> 141)
+Updating paper: ShotStream: 대화형 이야기 만들기를 위한 스트리밍 멀티샷 비디오 생성 (likes: 110 -> 128)
+Creating new paper: TAPS: Task Aware Proposal Distributions for Speculative Sampling
+Creating new paper: 메디컬 AI 과학자를 향하여
+Creating new paper: 이미지 생성을 위한 에이전트 검색 강화 (Gen-Searcher: Reinforcing Agentic Search for Image Generation)
+Updating paper: PackForcing: 짧은 비디오 교육은 긴 비디오 샘플링과 긴 문맥 추론에 충분하다 (likes: 38 -> 42)
+Creating new paper: 생성형 다중 에이전트 시스템에서 비상 시 사회적 지능 리스크
+Updating paper: Trace2Skill: Trajectory-Local Lessons를 전이 가능한 에이전트 스킬로 압축(Transferable Agent Skills) (likes: 33 -> 40)
+Creating new paper: EpochX: 신흥 에이전트 문명을 위한 인프라 구축
+Creating new paper: 토큰의 딜레마: 드리프트 인식 토큰 할당과 함께하는 동적 MoE를 통한 대규모 비전 언어 모델의 계속적 학습
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Mar 31 22:20:14 UTC 2026 ===
+

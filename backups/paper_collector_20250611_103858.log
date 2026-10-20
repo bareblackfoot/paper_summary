@@ -1,0 +1,313 @@
+=== Paper Collection Started at Sun Jun  8 06:47:57 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_updater import update_notion_database
+ModuleNotFoundError: No module named 'notion_updater'
+=== Paper Collection Finished at Sun Jun  8 06:47:58 UTC 2025 ===
+
+=== Paper Collection Started at Sun Jun  8 07:08:16 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_auto_publisher import create_notion_page
+  File "/home/runner/work/paper_summary/paper_summary/notion_auto_publisher.py", line 3, in <module>
+    from notion_client import Client
+ModuleNotFoundError: No module named 'notion_client'
+=== Paper Collection Finished at Sun Jun  8 07:08:17 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 07:32:16 UTC 2025 ===
+Traceback (most recent call last):
+  File "/home/runner/work/paper_summary/paper_summary/paper_collector.py", line 9, in <module>
+    from notion_auto_publisher import create_notion_page
+  File "/home/runner/work/paper_summary/paper_summary/notion_auto_publisher.py", line 3, in <module>
+    from notion_client import Client
+ModuleNotFoundError: No module named 'notion_client'
+=== Paper Collection Finished at Wed Jun 11 07:32:18 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 08:30:32 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Fetching likes for: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Fetching likes for: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Fetching likes for: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Fetching likes for: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (162 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (112 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (89 likes)
+4. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (63 likes)
+5. MiniCPM4: Ultra-Efficient LLMs on End Devices (61 likes)
+6. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (37 likes)
+7. Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning (33 likes)
+8. Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs (32 likes)
+9. SpatialLM: Training Large Language Models for Structured Indoor Modeling (31 likes)
+10. MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning (31 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Found abstract: While multi-modal large language models (MLLMs) have made significant
+progress in complex reasoning ...
+Processed paper: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Found abstract: The performance of large language models in domain-specific tasks
+necessitates fine-tuning, which is...
+Processed paper: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Found abstract: SpatialLM is a large language model designed to process 3D point cloud data
+and generate structured ...
+Processed paper: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Found abstract: Despite rapid advances in vision-language models (VLMs), current benchmarks
+for multimodal reasoning...
+Processed paper: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 4/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 5/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 6/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 7/10
+Title: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 8/10
+Title: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 9/10
+Title: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processing paper 10/10
+Title: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Generating Korean translation and summary...
+Summary generation error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Creating new paper: 번역 생성 중 오류가 발생했습니다.
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 11 08:31:19 UTC 2025 ===
+
+=== Paper Collection Started at Wed Jun 11 08:36:16 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W24
+URL: https://huggingface.co/papers/week/2025-W24
+Found 10 papers in weekly view
+Fetching likes for: Reinforcement Pre-Training
+Fetching likes for: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Fetching likes for: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Fetching likes for: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Fetching likes for: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Fetching likes for: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Fetching likes for: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Fetching likes for: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Fetching likes for: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Fetching likes for: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Selected top 10 papers by likes:
+1. Reinforcement Pre-Training (162 likes)
+2. Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA (112 likes)
+3. Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning (89 likes)
+4. Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance (63 likes)
+5. MiniCPM4: Ultra-Efficient LLMs on End Devices (61 likes)
+6. OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation (37 likes)
+7. Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning (33 likes)
+8. Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs (32 likes)
+9. SpatialLM: Training Large Language Models for Structured Indoor Modeling (31 likes)
+10. MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning (31 likes)
+Found abstract: In this work, we introduce Reinforcement Pre-Training (RPT) as a new scaling
+paradigm for large lang...
+Processed paper: Reinforcement Pre-Training
+Found abstract: Large Language Models (LLMs) often hallucinate in question answering (QA)
+tasks. A key yet underexpl...
+Processed paper: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Found abstract: Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities in understanding ...
+Processed paper: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Found abstract: Existing safety assurance research has primarily focused on training-phase
+alignment to instill safe...
+Processed paper: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Found abstract: This paper introduces MiniCPM4, a highly efficient large language model (LLM)
+designed explicitly fo...
+Processed paper: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Found abstract: Text-to-image (T2I) models have garnered significant attention for generating
+high-quality images al...
+Processed paper: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Found abstract: While multi-modal large language models (MLLMs) have made significant
+progress in complex reasoning ...
+Processed paper: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Found abstract: The performance of large language models in domain-specific tasks
+necessitates fine-tuning, which is...
+Processed paper: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Found abstract: SpatialLM is a large language model designed to process 3D point cloud data
+and generate structured ...
+Processed paper: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Found abstract: Despite rapid advances in vision-language models (VLMs), current benchmarks
+for multimodal reasoning...
+Processed paper: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Reinforcement Pre-Training
+Paper already exists, checking if translation is complete...
+
+Processing paper 2/10
+Title: Will It Still Be True Tomorrow? Multilingual Evergreen Question
+  Classification to Improve Trustworthy QA
+Paper already exists, checking if translation is complete...
+
+Processing paper 3/10
+Title: Lingshu: A Generalist Foundation Model for Unified Multimodal Medical
+  Understanding and Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 4/10
+Title: Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety
+  Assurance
+Paper already exists, checking if translation is complete...
+
+Processing paper 5/10
+Title: MiniCPM4: Ultra-Efficient LLMs on End Devices
+Paper already exists, checking if translation is complete...
+
+Processing paper 6/10
+Title: OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation
+Paper already exists, checking if translation is complete...
+
+Processing paper 7/10
+Title: Truth in the Few: High-Value Data Selection for Efficient Multi-Modal
+  Reasoning
+Paper already exists, checking if translation is complete...
+
+Processing paper 8/10
+Title: Leveraging Self-Attention for Input-Dependent Soft Prompting in LLMs
+Paper already exists, checking if translation is complete...
+
+Processing paper 9/10
+Title: SpatialLM: Training Large Language Models for Structured Indoor Modeling
+Paper already exists, checking if translation is complete...
+
+Processing paper 10/10
+Title: MORSE-500: A Programmatically Controllable Video Benchmark to
+  Stress-Test Multimodal Reasoning
+Paper already exists, checking if translation is complete...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W24.json...
+
+Updating Notion database...
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Paper already exists with same likes count: 번역 생성 중 오류가 발생했습니다.
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 11 08:36:46 UTC 2025 ===
+

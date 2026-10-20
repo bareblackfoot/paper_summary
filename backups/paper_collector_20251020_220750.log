@@ -1,0 +1,167 @@
+=== Paper Collection Started at Sun Oct 19 22:07:27 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W43
+URL: https://huggingface.co/papers/week/2025-W43
+Found 10 papers in weekly view
+Fetching likes for: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Fetching likes for: Diffusion Transformers with Representation Autoencoders
+Fetching likes for: Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model
+Fetching likes for: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Fetching likes for: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Fetching likes for: Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training
+Fetching likes for: When Models Lie, We Learn: Multilingual Span-Level Hallucination
+  Detection with PsiloQA
+Fetching likes for: Scaling Language-Centric Omnimodal Representation Learning
+Fetching likes for: DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation
+Fetching likes for: Agentic Entropy-Balanced Policy Optimization
+Selected top 10 papers by likes:
+1. QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs (157 likes)
+2. Diffusion Transformers with Representation Autoencoders (144 likes)
+3. Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model (137 likes)
+4. D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI (127 likes)
+5. Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation (112 likes)
+6. Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training (104 likes)
+7. When Models Lie, We Learn: Multilingual Span-Level Hallucination
+  Detection with PsiloQA (99 likes)
+8. Scaling Language-Centric Omnimodal Representation Learning (94 likes)
+9. DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation (94 likes)
+10. Agentic Entropy-Balanced Policy Optimization (90 likes)
+Found abstract: We propose QeRL, a Quantization-enhanced Reinforcement Learning framework for
+large language models ...
+Processed paper: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Found abstract: Latent generative modeling, where a pretrained autoencoder maps pixels into a
+latent space for the d...
+Processed paper: Diffusion Transformers with Representation Autoencoders
+Found abstract: Vision-language-action (VLA) models have recently shown strong potential in
+enabling robots to follo...
+Processed paper: Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model
+Found abstract: Large language models leverage internet-scale text data, yet embodied AI
+remains constrained by the ...
+Processed paper: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Found abstract: Camera-centric understanding and generation are two cornerstones of spatial
+intelligence, yet they a...
+Processed paper: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Found abstract: Pixel-space generative models are often more difficult to train and generally
+underperform compared ...
+Processed paper: Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training
+Found abstract: Hallucination detection remains a fundamental challenge for the safe and
+reliable deployment of larg...
+Processed paper: When Models Lie, We Learn: Multilingual Span-Level Hallucination
+  Detection with PsiloQA
+Found abstract: Recent multimodal embedding approaches leveraging multimodal large language
+models (MLLMs) fine-tune...
+Processed paper: Scaling Language-Centric Omnimodal Representation Learning
+Found abstract: Large language models (LLMs) have substantially advanced machine translation
+(MT), yet their effecti...
+Processed paper: DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation
+Found abstract: Recently, Agentic Reinforcement Learning (Agentic RL) has made significant
+progress in incentivizing...
+Processed paper: Agentic Entropy-Balanced Policy Optimization
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning
+  for LLMs
+Paper already exists, checking if translation is complete...
+Update likes: 157  ->  155
+Update date_collected: 2025-10-20T07:07:38.432323+09:00  ->  2025-10-19T07:06:43.739238+09:00
+
+Processing paper 2/10
+Title: Diffusion Transformers with Representation Autoencoders
+Paper already exists, checking if translation is complete...
+Update likes: 144  ->  142
+Update date_collected: 2025-10-20T07:07:38.433501+09:00  ->  2025-10-19T07:06:43.740394+09:00
+
+Processing paper 3/10
+Title: Spatial Forcing: Implicit Spatial Representation Alignment for
+  Vision-language-action Model
+Paper already exists, checking if translation is complete...
+Update likes: 137  ->  135
+Update date_collected: 2025-10-20T07:07:38.434778+09:00  ->  2025-10-19T07:06:43.741649+09:00
+
+Processing paper 4/10
+Title: D2E: Scaling Vision-Action Pretraining on Desktop Data for Transfer to
+  Embodied AI
+Paper already exists, checking if translation is complete...
+Update likes: 127  ->  126
+Update date_collected: 2025-10-20T07:07:38.436124+09:00  ->  2025-10-19T07:06:43.742967+09:00
+
+Processing paper 5/10
+Title: Thinking with Camera: A Unified Multimodal Model for Camera-Centric
+  Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 112  ->  111
+Update date_collected: 2025-10-20T07:07:38.437466+09:00  ->  2025-10-19T07:06:43.744297+09:00
+
+Processing paper 6/10
+Title: Advancing End-to-End Pixel Space Generative Modeling via Self-supervised
+  Pre-training
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  104
+Update date_collected: 2025-10-20T07:07:38.438691+09:00  ->  2025-10-19T07:06:43.745502+09:00
+
+Processing paper 7/10
+Title: When Models Lie, We Learn: Multilingual Span-Level Hallucination
+  Detection with PsiloQA
+Paper already exists, checking if translation is complete...
+Update likes: 99  ->  94
+Update date_collected: 2025-10-20T07:07:38.440032+09:00  ->  2025-10-19T07:06:43.747986+09:00
+
+Processing paper 8/10
+Title: Scaling Language-Centric Omnimodal Representation Learning
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  94
+Update date_collected: 2025-10-20T07:07:38.441220+09:00  ->  2025-10-19T07:06:43.746663+09:00
+
+Processing paper 9/10
+Title: DITING: A Multi-Agent Evaluation Framework for Benchmarking Web Novel
+  Translation
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  92
+Update date_collected: 2025-10-20T07:07:38.442574+09:00  ->  2025-10-19T07:06:43.749349+09:00
+
+Processing paper 10/10
+Title: Agentic Entropy-Balanced Policy Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 90  ->  87
+Update date_collected: 2025-10-20T07:07:38.444140+09:00  ->  2025-10-19T07:06:43.750878+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W43.json...
+
+Updating Notion database...
+Updating paper: QeRL: 효율 이상을 넘어서 -- 양자화 강화 학습을 통한 대규모 언어 모델(Large Language Models, LLMs)에 대한 연구 (likes: 155 -> 157)
+Updating paper: 표현 자동인코더와 함께 하는 확산 트랜스포머 (likes: 142 -> 144)
+Updating paper: 공간 강제: 비주류 공간 표현 조정을 위한 시각-언어-행동 모델 (Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model) (likes: 135 -> 137)
+Updating paper: 데스크톱 데이터에서 비전-행동 사전학습 확장하여 실체화된 AI로의 이전을 위한 D2E (likes: 126 -> 127)
+Updating paper: 카메라와 함께하는 사고: 카메라 중심의 이해 및 생성을 위한 통합적 다중 모달 모델 (likes: 111 -> 112)
+Paper already exists with same likes count: 자가지도를 통한 픽셀 공간 생성 모델링의 종단 간 진보
+Updating paper: 모델이 거짓말을 할 때, 우리는 배운다: PsiloQA를 활용한 다국어 스팬 수준 환각 검출 (likes: 94 -> 99)
+Paper already exists with same likes count: 언어 중심 옴니모달 표현 학습의 확장
+Updating paper: DITING: 웹 소설 번역의 벤치마킹을 위한 멀티 에이전트 평가 프레임워크 (likes: 92 -> 94)
+Updating paper: 에젠틱 엔트로피 균형 정책 최적화 (likes: 87 -> 90)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Sun Oct 19 22:09:06 UTC 2025 ===
+

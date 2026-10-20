@@ -1,0 +1,363 @@
+[
+  {
+    "title": "Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial\n  Representations",
+    "abstract": "Humans learn abstract concepts through multisensory synergy, and once formed,\nsuch representations can often be recalled from a single modality. Inspired by\nthis principle, we introduce Concerto, a minimalist simulation of human concept\nlearning for spatial cognition, combining 3D intra-modal self-distillation with\n2D-3D cross-modal joint embedding. Despite its simplicity, Concerto learns more\ncoherent and informative spatial features, as demonstrated by zero-shot\nvisualizations. It outperforms both standalone SOTA 2D and 3D self-supervised\nmodels by 14.2% and 4.8%, respectively, as well as their feature concatenation,\nin linear probing for 3D scene perception. With full fine-tuning, Concerto sets\nnew SOTA results across multiple scene understanding benchmarks (e.g., 80.7%\nmIoU on ScanNet). We further present a variant of Concerto tailored for\nvideo-lifted point cloud spatial understanding, and a translator that linearly\nprojects Concerto representations into CLIP's language space, enabling\nopen-world perception. These results highlight that Concerto emerges spatial\nrepresentations with superior fine-grained geometric and semantic consistency.",
+    "authors": [
+      "Yujia Zhang",
+      "Xiaoyang Wu",
+      "Yixing Lao",
+      "Chengyao Wang",
+      "Zhuotao Tian",
+      "Naiyan Wang",
+      "Hengshuang Zhao"
+    ],
+    "likes": 159,
+    "published_date": "Oct 27",
+    "url": "https://huggingface.co/papers/2510.23607",
+    "date_collected": "2025-10-30T07:08:05.693020+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "Concerto: Joint 2D-3D Self-Supervised Learning Emerges Spatial",
+      "abstract": "사람들은 다중 감각 상호작용을 통해 추상적인 개념을 학습하며, 이러한 표현은 한 가지 감각만으로도 자주 회상될 수 있습니다. 이 원칙에서 영감을 받아 우리는 Concerto를 소개합니다. 이는 공간 인식을 위한 인간적인 개념 학습의 경제적 시뮬레이션으로, 3D 내부모달 자가 증류를 하는 동안 2D-3D 교차모달 공동 임베딩을 결합합니다. 이 간단한 모델이라도 Concerto는 제로샷 시각화로 입증된 대로 더 일관되고 정보 전달력 있는 공간적 특징을 배웁니다. 선도적인 2D 및 3D 자가 지도 모델을 각각 14.2% 및 4.8% 능가하며, 그들의 특징 연결도, 선형 탐사를 통한 3D 장면 인식에서 우수한 성과를 보여줍니다. 완전한 세세한 조정과 함께, Concerto는 다양한 장면 이해 기준(예: ScanNet에서 80.7% mIoU)에서 새로운 선도적 결과를 보여줍니다. 또한 비디오-리프티드 포인트 클라우드 공간 이해를 위해 Concerto 변형을 제시하고, Concerto 표현을 CLIP의 언어 공간으로 선형 투영하는 번역기를 소개함으로써 오픈 월드 인식을 가능하게 합니다. 이러한 결과는 Concerto가 뛰어난 세밀한 기하학적 및 의미론적 일관성을 갖춘 공간적 표현을 형성한다는 것을 강조합니다."
+    },
+    "summary": "1. Concerto는 3D 내부모달 자가 지도 학습에 2D-3D 교차모달 공동 임베딩을 결합하여 좀 더 일관되고 정보 전달력 있는 공간적 특징을 학습합니다.\n2. 다른 최신 기술 모델들을 능가하여 3D 장면 인식에서 우수한 성과를 보여주고, 다양한 장면 이해 기준에서 최고의 결과를 달성합니다.\n3. Concerto의 변형 모델은 비디오-리프티드 포인트 클라우드 공간 이해를 위한 특화되어 있으며, 기하학적 및 의미론적 일관성이 우수한 공간적 표현을 형성합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "ReCode: Unify Plan and Action for Universal Granularity Control",
+    "abstract": "Real-world tasks require decisions at varying granularities, and humans excel\nat this by leveraging a unified cognitive representation where planning is\nfundamentally understood as a high-level form of action. However, current Large\nLanguage Model (LLM)-based agents lack this crucial capability to operate\nfluidly across decision granularities. This limitation stems from existing\nparadigms that enforce a rigid separation between high-level planning and\nlow-level action, which impairs dynamic adaptability and limits generalization.\nWe propose ReCode (Recursive Code Generation), a novel paradigm that addresses\nthis limitation by unifying planning and action within a single code\nrepresentation. In this representation, ReCode treats high-level plans as\nabstract placeholder functions, which the agent then recursively decomposes\ninto finer-grained sub-functions until reaching primitive actions. This\nrecursive approach dissolves the rigid boundary between plan and action,\nenabling the agent to dynamically control its decision granularity.\nFurthermore, the recursive structure inherently generates rich,\nmulti-granularity training data, enabling models to learn hierarchical\ndecision-making processes. Extensive experiments show ReCode significantly\nsurpasses advanced baselines in inference performance and demonstrates\nexceptional data efficiency in training, validating our core insight that\nunifying planning and action through recursive code generation is a powerful\nand effective approach to achieving universal granularity control. The code is\navailable at https://github.com/FoundationAgents/ReCode.",
+    "authors": [
+      "Zhaoyang Yu",
+      "Jiayi Zhang",
+      "Huixue Su",
+      "Yufan Zhao",
+      "Yifan Wu",
+      "Mingyi Deng",
+      "Jinyu Xiang",
+      "Yizhang Lin",
+      "Lingxiao Tang",
+      "Yingchao Li",
+      "Yuyu Luo",
+      "Bang Liu",
+      "Chenglin Wu"
+    ],
+    "likes": 108,
+    "published_date": "Oct 27",
+    "url": "https://huggingface.co/papers/2510.23564",
+    "date_collected": "2025-10-30T07:08:05.694537+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "ReCode: 일반적인 세분성 제어를 위한 계획과 행동 통합",
+      "abstract": "현실 세계에서의 작업은 다양한 세분성에서의 결정을 필요로 하며, 인간은 계획을 높은 수준의 행동의 한 형태로 근본적으로 이해하는 통합된 인지 표현을 활용하여 뛰어납니다. 그러나 현재의 대형 언어 모델 (LLM) 기반 에이전트들은 이러한 중요한 능력을 유동적으로 다양한 결정 세분성을 효과적으로 다룰 수 없다는 한계가 있습니다. 이 제한은 높은 수준의 계획과 낮은 수준의 행동 간 엄격한 분리를 강제하는 기존 패러다임에서 비롯되었으며, 이는 동적 적응성을 저해하고 일반화를 제한합니다. 본 연구에서는 이 한계를 해결하기 위해 계획과 행동을 단일 코드 표현 내에서 통합하는 새로운 패러다임인 ReCode (재귀적 코드 생성)를 제안합니다. 이 표현에서 ReCode는 높은 수준의 계획을 추상적인 자리 표시자 함수로 취급하며, 에이전트는 이후에 원시 행동에 이르기까지 더 작은 세분 함수로 재귀적으로 분해합니다. 이 재귀적 접근은 계획과 행동 사이의 엄격한 경계를 해소하며, 에이전트가 동적으로 결정 세분성을 제어할 수 있도록 합니다. 더불어, 재귀적 구조는 자연스럽게 풍부한, 다중 세분성 훈련 데이터를 생성하며, 모델이 계층적인 의사 결정 과정을 학습할 수 있습니다. 다양한 실험 결과는 ReCode가 추론 성능에서 선진 기준을 현저히 능가하며, 핵심 통찰력을 검증하는 훈련에서 뛰어난 데이터 효율성을 나타냅니다. 이는 재귀적 코드 생성을 통해 계획과 행동을 통합하는 것이 일반적인 세분성 제어를 달성하기 위한 강력하고 효과적인 접근 방법임을 보여줍니다. 코드는 https://github.com/FoundationAgents/ReCode 에서 사용 가능합니다."
+    },
+    "summary": "1. ReCode는 계획과 행동을 단일 코드 표현 내에서 통합하는 새로운 패러다임으로, 재귀적으로 결정 세분성을 제어할 수 있게 해주며, 계층적인 의사 결정 과정을 학습할 수 있는 풍부한 훈련 데이터를 생성합니다.\n2. 실험 결과는 ReCode가 추론 성능에서 선진 기준을 능가하고, 학습에서 탁월한 데이터 효율성을 보여주어, 계획과 행동을 재귀적 코드 생성을 통해 통합하는 것이 강력하고 효과적인 접근 방법임을 입증합니다.\n3. ReCode는 일반적인 세분성 제어를 달성하기 위한 강력하고 효과적인 방법이며, 코드는 오픈 소스로 공개되어 있습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "InteractComp: Evaluating Search Agents With Ambiguous Queries",
+    "abstract": "Language agents have demonstrated remarkable potential in web search and\ninformation retrieval. However, these search agents assume user queries are\ncomplete and unambiguous, an assumption that diverges from reality where users\nbegin with incomplete queries requiring clarification through interaction. Yet\nmost agents lack interactive mechanisms during the search process, and existing\nbenchmarks cannot assess this capability. To address this gap, we introduce\nInteractComp, a benchmark designed to evaluate whether search agents can\nrecognize query ambiguity and actively interact to resolve it during search.\nFollowing the principle of easy to verify, interact to disambiguate, we\nconstruct 210 expert-curated questions across 9 domains through a\ntarget-distractor methodology that creates genuine ambiguity resolvable only\nthrough interaction. Evaluation of 17 models reveals striking failure: the best\nmodel achieves only 13.73% accuracy despite 71.50% with complete context,\nexposing systematic overconfidence rather than reasoning deficits. Forced\ninteraction produces dramatic gains, demonstrating latent capability current\nstrategies fail to engage. Longitudinal analysis shows interaction capabilities\nstagnated over 15 months while search performance improved seven-fold,\nrevealing a critical blind spot. This stagnation, coupled with the immediate\nfeedback inherent to search tasks, makes InteractComp a valuable resource for\nboth evaluating and training interaction capabilities in search agents. The\ncode is available at https://github.com/FoundationAgents/InteractComp.",
+    "authors": [
+      "Mingyi Deng",
+      "Lijun Huang",
+      "Yani Fan",
+      "Jiayi Zhang",
+      "Fashen Ren",
+      "Jinyi Bai",
+      "Fuzhen Yang",
+      "Dayi Miao",
+      "Zhaoyang Yu",
+      "Yifan Wu",
+      "Yanfei Zhang",
+      "Fengwei Teng",
+      "Yingjia Wan",
+      "Song Hu",
+      "Yude Li",
+      "Xin Jin",
+      "Conghao Hu",
+      "Haoyu Li",
+      "Qirui Fu",
+      "Tai Zhong",
+      "Xinyu Wang",
+      "Xiangru Tang"
+    ],
+    "likes": 82,
+    "published_date": "Oct 28",
+    "url": "https://huggingface.co/papers/2510.24668",
+    "date_collected": "2025-10-30T07:08:05.696440+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "모호한 쿼리로 검색 보조 에이전트 평가하기",
+      "abstract": "언어 에이전트들은 웹 검색 및 정보 검색에서 놀라운 잠재력을 보였습니다. 그러나 이러한 검색 에이전트들은 사용자 쿼리가 완전하고 모호하지 않다고 가정합니다. 실제에서는 사용자들이 명확하지 않은 쿼리로 시작하며 상호 작용을 통해 명확히 해야 하는데, 대부분의 에이전트들은 검색 과정 중 상호작용 메커니즘을 갖추지 않고 있으며 기존의 벤치마크로는 이 능력을 평가할 수 없습니다. 이 공백을 해결하기 위해 우리는 InteractComp를 소개합니다. InteractComp는 검색 에이전트가 쿼리의 모호함을 인식하고 검색 중 해결하기 위해 상호작용할 수 있는지 평가하는 벤치마크로, 9개 도메인에서 210개의 전문가가 선별한 질문들을 구축했습니다. 이를 통해 상호작용만으로 해결 가능한 실제 모호함을 만들어 냈으며, 17개 모델의 평가 결과 최고 모델도 완전한 문맥에서 71.50%의 정확도를 달성해도 모호한 쿼리에서는 단 13.73%의 성능을 보여주어 체계적인 자신감 부족을 드러냈습니다. 강제 상호작용은 현재 전략이 활용해내지 못한 잠재 능력을 보여주며, 검색 역량은 15개월 동안 침체되는 반면 상호작용 역량은 대폭 향상된 검색 성능을 만들어내는 중요한 시각적인 발전을 보여줍니다. 이에 InteractComp는 검색 에이전트의 상호작용 능력을 평가하고 훈련하는 데 유용한 자원이 될 것입니다. 코드는 https://github.com/FoundationAgents/InteractComp에서 확인하실 수 있습니다."
+    },
+    "summary": "1. InteractComp는 검색 에이전트가 모호한 쿼리를 인식하고 해결하기 위해 상호작용할 수 있는지 평가하는 벤치마크로, 실험 결과 가장 뛰어난 모델도 단 13.73%의 정확도만을 보여 체계적인 자신감 부족을 드러냈습니다.\n2. 강제 상호작용은 현재 전략이 활용하지 못한 잠재 능력을 보여주며, 검색 성능은 대폭 향상되었지만 상호작용 능력은 침체되는 경향을 보였습니다.\n3. InteractComp는 검색 에이전트의 상호작용 능력 향상에 중요한 역할을 할 뿐만 아니라, 검색 태스크의 즉각적인 피드백을 통해 검색 능력이 15개월 동안 향상되는 반면 상호작용 능력이 침체된 사실을 밝혀냅니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "DeepAgent: A General Reasoning Agent with Scalable Toolsets",
+    "abstract": "Large reasoning models have demonstrated strong problem-solving abilities,\nyet real-world tasks often require external tools and long-horizon\ninteractions. Existing agent frameworks typically follow predefined workflows,\nwhich limit autonomous and global task completion. In this paper, we introduce\nDeepAgent, an end-to-end deep reasoning agent that performs autonomous\nthinking, tool discovery, and action execution within a single, coherent\nreasoning process. To address the challenges of long-horizon interactions,\nparticularly the context length explosion from multiple tool calls and the\naccumulation of interaction history, we introduce an autonomous memory folding\nmechanism that compresses past interactions into structured episodic, working,\nand tool memories, reducing error accumulation while preserving critical\ninformation. To teach general-purpose tool use efficiently and stably, we\ndevelop an end-to-end reinforcement learning strategy, namely ToolPO, that\nleverages LLM-simulated APIs and applies tool-call advantage attribution to\nassign fine-grained credit to the tool invocation tokens. Extensive experiments\non eight benchmarks, including general tool-use tasks (ToolBench, API-Bank,\nTMDB, Spotify, ToolHop) and downstream applications (ALFWorld, WebShop, GAIA,\nHLE), demonstrate that DeepAgent consistently outperforms baselines across both\nlabeled-tool and open-set tool retrieval scenarios. This work takes a step\ntoward more general and capable agents for real-world applications. The code\nand demo are available at https://github.com/RUC-NLPIR/DeepAgent.",
+    "authors": [
+      "Xiaoxi Li",
+      "Wenxiang Jiao",
+      "Jiarui Jin",
+      "Guanting Dong",
+      "Jiajie Jin",
+      "Yinuo Wang",
+      "Hao Wang",
+      "Yutao Zhu",
+      "Ji-Rong Wen",
+      "Yuan Lu",
+      "Zhicheng Dou"
+    ],
+    "likes": 81,
+    "published_date": "Oct 24",
+    "url": "https://huggingface.co/papers/2510.21618",
+    "date_collected": "2025-10-30T07:08:05.697851+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "DeepAgent: 확장 가능한 도구 세트를 갖춘 일반적인 추론 에이전트",
+      "abstract": "대규모 추론 모델은 강력한 문제 해결 능력을 보여주었지만, 현실 세계 작업은 종종 외부 도구와 장기적 상호작용이 필요합니다. 기존 에이전트 프레임워크는 보통 미리 정의된 작업 흐름을 따라 자율적이고 전역적인 작업 완료를 제한합니다. 본 논문에서는 DeepAgent를 소개합니다. DeepAgent는 단일 일관된 추론 프로세스 내에서 자율적 사고, 도구 발견 및 실행을 수행하는 end-to-end deep reasoning agent입니다. 긴 기간 상호작용의 도전을 해결하기 위해 과거 상호작용을 구조화된 에피소득, 작업 및 도구 메모리로 압축하는 자율 메모리 펼침 메커니즘을 도입합니다. 특히 다중 도구 호출로부터 발생하는 컨텍스트 길이 폭발과 상호작용 기록의 축적 문제를 다루기 위해 이를 도입합니다. 또한 일반적인 도구 사용을 효율적으로 가르치고 안정적으로 수행하기 위해 LLM-시뮬레이션된 API를 활용하고 도구 호출 강점 지정을 적용하는 end-to-end reinforcement learning 전략인 ToolPO를 개발합니다. ToolPO는 도구 호출 토큰에 세분화된 신용을 할당하여 도구 사용 효율성을 높입니다. ToolPO는 도구 호출 토큰에 세분화된 신용을 할당하여 도구 사용 효율성을 높입니다. ToolPO는 라벨이 지정된 도구와 오픈셋 도구 검색 시나리오 모두에서 DeepAgent가 기준 모델을 일관되게 능가한다는 것을 보여줍니다. 본 연구는 현실 세계 응용프로그램에 대한 더 일반적이고 능력 있는 에이전트로 한 걸음 나아간 것입니다. 코드와 데모는 https://github.com/RUC-NLPIR/DeepAgent에서 확인할 수 있습니다."
+    },
+    "summary": "1. DeepAgent는 자율적 사고, 도구 발견 및 실행을 단일 프로세스 내에서 수행하는 end-to-end deep reasoning agent이다.\n2. 자율 메모리 펼침 메커니즘을 도입하여 과거 상호작용을 구조화된 메모리로 압축하며, ToolPO 전략을 통해 일반적인 도구 사용을 효과적으로 가르치고 안정적으로 수행한다.\n3. 실험 결과는 DeepAgent가 다양한 벤치마크에서 기준 모델을 일관되게 능가하며, 현실 응용에 더 일반적이고 능력 있는 에이전트를 제공함을 보여준다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Tongyi DeepResearch Technical Report",
+    "abstract": "We present Tongyi DeepResearch, an agentic large language model, which is\nspecifically designed for long-horizon, deep information-seeking research\ntasks. To incentivize autonomous deep research agency, Tongyi DeepResearch is\ndeveloped through an end-to-end training framework that combines agentic\nmid-training and agentic post-training, enabling scalable reasoning and\ninformation seeking across complex tasks. We design a highly scalable data\nsynthesis pipeline that is fully automatic, without relying on costly human\nannotation, and empowers all training stages. By constructing customized\nenvironments for each stage, our system enables stable and consistent\ninteractions throughout. Tongyi DeepResearch, featuring 30.5 billion total\nparameters, with only 3.3 billion activated per token, achieves\nstate-of-the-art performance across a range of agentic deep research\nbenchmarks, including Humanity's Last Exam, BrowseComp, BrowseComp-ZH,\nWebWalkerQA, xbench-DeepSearch, FRAMES and xbench-DeepSearch-2510. We\nopen-source the model, framework, and complete solutions to empower the\ncommunity.",
+    "authors": [
+      "Tongyi DeepResearch Team",
+      "Baixuan Li",
+      "Bo Zhang",
+      "Dingchu Zhang",
+      "Fei Huang",
+      "Guangyu Li",
+      "Guoxin Chen",
+      "Huifeng Yin",
+      "Jialong Wu",
+      "Jingren Zhou",
+      "Kuan Li",
+      "Liangcai Su",
+      "Litu Ou",
+      "Liwen Zhang",
+      "Pengjun Xie",
+      "Rui Ye",
+      "Wenbiao Yin",
+      "Xinmiao Yu",
+      "Xinyu Wang",
+      "Xixi Wu",
+      "Xuanzhong Chen",
+      "Yida Zhao"
+    ],
+    "likes": 68,
+    "published_date": "Oct 28",
+    "url": "https://huggingface.co/papers/2510.24701",
+    "date_collected": "2025-10-30T07:08:05.699954+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "동이 딥리서치 기술 보고서",
+      "abstract": "저희는 장기간, 심층 정보 탐색 연구 작업에 특화된 에이전틱 대형 언어 모델인 동이 딥리서치를 제시합니다. 자율적인 심층 연구 기관을 유도하기 위해 동이 딥리서치는 에이전틱 중간 훈련과 에이전틱 후속 훈련을 결합한 엔드투엔드 훈련 프레임워크를 통해 개발되었습니다. 복합 작업 전반에서의 확장 가능한 추론과 정보 탐색이 가능하게 합니다. 저희는 고가의 인간 주석에 의존하지 않는 완전 자동화된 고도로 확장 가능한 데이터 합성 파이프라인을 설계하였고, 모든 훈련 단계를 강화합니다. 각 단계용 맞춤 환경을 구성함으로써 저희 시스템은 안정적이고 일관된 상호 작용을 가능케 합니다. 305억개의 총 매개변수를 갖춘 동이 딥리서치는 토큰 당 활성화된 매개변수가 33억개인 상태에서 인류의 최종 시험, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES 및 xbench-DeepSearch-2510과 같은 다양한 에이전틱 심층 연구 벤치마크에서 최신 성능을 달성하였습니다. 모델, 프레임워크 및 완전한 솔루션을 오픈소스로 제공하여 커뮤니티를 지원합니다."
+    },
+    "summary": "1. 동이 딥리서치는 자율적인 심층 연구를 할 수 있는 대형 언어 모델로, 다양한 연구 작업에서 최신 성능을 보여줌.\n2. 훈련 단계별 맞춤 환경과 자동화된 데이터 합성 파이프라인을 통해 안정적이고 일관된 상호 작용을 가능케 함.\n3. 전반적으로 305억개의 총 매개변수를 갖춘 동이 딥리서치는 다양한 벤치마크에서 우수한 성과를 보이며, 모델과 솔루션을 오픈소스로 제공하여 커뮤니티를 지원함.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "A Survey of Data Agents: Emerging Paradigm or Overstated Hype?",
+    "abstract": "The rapid advancement of large language models (LLMs) has spurred the\nemergence of data agents--autonomous systems designed to orchestrate Data + AI\necosystems for tackling complex data-related tasks. However, the term \"data\nagent\" currently suffers from terminological ambiguity and inconsistent\nadoption, conflating simple query responders with sophisticated autonomous\narchitectures. This terminological ambiguity fosters mismatched user\nexpectations, accountability challenges, and barriers to industry growth.\nInspired by the SAE J3016 standard for driving automation, this survey\nintroduces the first systematic hierarchical taxonomy for data agents,\ncomprising six levels that delineate and trace progressive shifts in autonomy,\nfrom manual operations (L0) to a vision of generative, fully autonomous data\nagents (L5), thereby clarifying capability boundaries and responsibility\nallocation. Through this lens, we offer a structured review of existing\nresearch arranged by increasing autonomy, encompassing specialized data agents\nfor data management, preparation, and analysis, alongside emerging efforts\ntoward versatile, comprehensive systems with enhanced autonomy. We further\nanalyze critical evolutionary leaps and technical gaps for advancing data\nagents, especially the ongoing L2-to-L3 transition, where data agents evolve\nfrom procedural execution to autonomous orchestration. Finally, we conclude\nwith a forward-looking roadmap, envisioning the advent of proactive, generative\ndata agents.",
+    "authors": [
+      "Yizhang Zhu",
+      "Liangwei Wang",
+      "Chenyu Yang",
+      "Xiaotian Lin",
+      "Boyan Li",
+      "Wei Zhou",
+      "Xinyu Liu",
+      "Zhangyang Peng",
+      "Tianqi Luo",
+      "Yu Li",
+      "Chengliang Chai",
+      "Chong Chen",
+      "Shimin Di",
+      "Ju Fan",
+      "Ji Sun",
+      "Nan Tang",
+      "Fugee Tsung",
+      "Jiannan Wang",
+      "Chenglin Wu",
+      "Yanwei Xu",
+      "Shaolei Zhang",
+      "Yong Zhang"
+    ],
+    "likes": 59,
+    "published_date": "Oct 27",
+    "url": "https://huggingface.co/papers/2510.23587",
+    "date_collected": "2025-10-30T07:08:05.701857+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "데이터 에이전트 조사: 신흥 패러다임 또는 과대포장 논란?",
+      "abstract": "대형 언어 모델(LLMs)의 급속한 발전으로 인해 데이터 에이전트가 등장했습니다. 이는 복잡한 데이터 관련 작업을 처리하기 위해 구축된 자율 시스템으로, '데이터 에이전트'라는 용어는 현재 용어적 모호성과 일관성 없는 도입으로 인해 단순한 쿼리 응답기와 복잡한 자율 아키텍처가 혼재되어 있습니다. 이 용어적 모호성은 기대치 불일치, 책임 도전과 산업 성장에 대한 장벽을 유발합니다. 이 조사는 운전 자동화를 위한 SAE J3016 표준에서 영감을 받아 데이터 에이전트를 위한 첫 번째 체계적인 계층적 분류법을 소개하며, 수동 작업(L0)에서 생성적이고 완전히 자율적인 데이터 에이전트(L5)의 비전까지 진보적인 자율성 변화를 명확히하는 여섯 단계로 구성합니다. 이를 통해 증가하는 자율성에 따라 정리된 기존 연구의 체계적 검토를 제공하며, 데이터 관리, 준비, 분석을 위한 특화된 데이터 에이전트와, 향상된 자율성을 갖춘 다재다능하고 포괄적인 시스템으로 나아감에 따라 새로운 노력을 포함합니다. 특히, 절차적 실행에서 자율적 조정으로 발전하는 L2에서 L3로의 전환에 대한 중요한 진화적 도약과 기술적 간극을 분석합니다. 마지막으로, 선제적이고 생성적인 데이터 에이전트의 출현을 기대하는 전망을 제시합니다."
+    },
+    "summary": "1. 데이터 에이전트는 자율성 수준에 따라 여섯 가지로 분류되며, 점차적인 발전과 역할 할당을 명확히합니다.\n2. 기존 연구를 자율성이 높아지는 순서대로 정리하여, 데이터 관리, 준비, 분석을 위한 특화된 데이터 에이전트부터 포괄적인 시스템으로의 발전까지 탐구합니다.\n3. 데이터 에이전트의 발전을 위해 중요한 기술적 도약과 L2에서 L3로의 전환 과정을 중점적으로 분석하며, 미래 지향적인 로드맵을 제시하여 프로액티브하고 생성적인 데이터 에이전트의 출현을 기대합니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "AgentFold: Long-Horizon Web Agents with Proactive Context Management",
+    "abstract": "LLM-based web agents show immense promise for information seeking, yet their\neffectiveness on long-horizon tasks is hindered by a fundamental trade-off in\ncontext management. Prevailing ReAct-based agents suffer from context\nsaturation as they accumulate noisy, raw histories, while methods that fixedly\nsummarize the full history at each step risk the irreversible loss of critical\ndetails. Addressing these, we introduce AgentFold, a novel agent paradigm\ncentered on proactive context management, inspired by the human cognitive\nprocess of retrospective consolidation. AgentFold treats its context as a\ndynamic cognitive workspace to be actively sculpted, rather than a passive log\nto be filled. At each step, it learns to execute a `folding' operation, which\nmanages its historical trajectory at multiple scales: it can perform granular\ncondensations to preserve vital, fine-grained details, or deep consolidations\nto abstract away entire multi-step sub-tasks. The results on prominent\nbenchmarks are striking: with simple supervised fine-tuning (without continual\npre-training or RL), our AgentFold-30B-A3B agent achieves 36.2% on BrowseComp\nand 47.3% on BrowseComp-ZH. Notably, this performance not only surpasses or\nmatches open-source models of a dramatically larger scale, such as the\nDeepSeek-V3.1-671B-A37B, but also surpasses leading proprietary agents like\nOpenAI's o4-mini.",
+    "authors": [
+      "Rui Ye",
+      "Zhongwang Zhang",
+      "Kuan Li",
+      "Huifeng Yin",
+      "Zhengwei Tao",
+      "Yida Zhao",
+      "Liangcai Su",
+      "Liwen Zhang",
+      "Zile Qiao",
+      "Xinyu Wang",
+      "Pengjun Xie",
+      "Fei Huang",
+      "Siheng Chen",
+      "Jingren Zhou",
+      "Yong Jiang"
+    ],
+    "likes": 52,
+    "published_date": "Oct 28",
+    "url": "https://huggingface.co/papers/2510.24699",
+    "date_collected": "2025-10-30T07:08:05.703428+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "에이전트폴드: 선제적 컨텍스트 관리를 통한 장기적 웹 에이전트",
+      "abstract": "LLM(대규모 언어 모델) 기반 웹 에이전트는 정보 탐색에 엄청난 가능성을 보여주지만 장기적 작업에서의 효과는 기본적인 컨텍스트 관리에서 발생하는 트레이드오프로 제약을 받습니다. 기존의 ReAct 기반 에이전트는 노이즈가 많은 원시 히스토리를 축적하면서 컨텍스트 포화에 시달리고, 각 단계마다 전체 히스토리를 고정적으로 요약하는 방법은 중요한 세부 사항의 돌연 손실을 초래할 우려가 있습니다. 이를 해결하기 위해 우리는 사람의 인지과정 중 후반 회상에 영감을 받은 선제적 컨텍스트 관리를 중심으로 하는 새로운 에이전트 패러다임인 에이전트폴드를 소개합니다. 에이전트폴드는 컨텍스트를 적극적으로 다룰 동적 인지 작업 공간으로 취급하여 채울 것인가의 수동적 기록이 아닌, 적극적으로 조각내야 하는 것으로 간주합니다. 각 단계에서 에이전트는 '폴딩' 작업을 실행하도록 학습하여 여러 단계에서의 히스토리 트라젝토리를 관리합니다: 중요한 세부 사항을 보존하기 위해 세밀한 압축을 수행하거나 전체적인 다중 단계 서브 태스크를 추상화하기 위해 심층적인 통합을 수행합니다. 주요 벤치마크 결과는 놀라운데, 단순한 지도학습 세밀조정으로 (지속적 사전 훈련이나 강화학습 없이), 에이전트폴드-30B-A3B는 BrowseComp에서 36.2%, BrowseComp-ZH에서 47.3%의 결과를 달성합니다. 이 성과는 대규모로 훨씬 더 큰 DeepSeek-V3.1-671B-A37B와 같은 오픈소스 모델 뿐만 아니라 OpenAI의 o4-mini와 같은 주요 프로프리터리 에이전트를 능가하거나 맞먹는 것이 특징입니다."
+    },
+    "summary": "1. AgentFold는 선제적 컨텍스트 관리를 중심으로 하는 새로운 에이전트 패러다임으로, 히스토리를 다양한 규모로 관리하여 장기적 작업 효율을 향상시킵니다.\n2. AgentFold-30B-A3B는 BrowseComp와 BrowseComp-ZH에서 각각 36.2%, 47.3%의 높은 성과를 보이며, 대규모 모델들을 능가합니다.\n3. 에이전트폴드는 간단한 지도학습을 통해 뛰어난 결과를 얻으며, 중요한 세부 사항을 보존하면서 전체 히스토리를 요약하는 방법론을 제안합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "RoboOmni: Proactive Robot Manipulation in Omni-modal Context",
+    "abstract": "Recent advances in Multimodal Large Language Models (MLLMs) have driven rapid\nprogress in Vision-Language-Action (VLA) models for robotic manipulation.\nAlthough effective in many scenarios, current approaches largely rely on\nexplicit instructions, whereas in real-world interactions, humans rarely issue\ninstructions directly. Effective collaboration requires robots to infer user\nintentions proactively. In this work, we introduce cross-modal contextual\ninstructions, a new setting where intent is derived from spoken dialogue,\nenvironmental sounds, and visual cues rather than explicit commands. To address\nthis new setting, we present RoboOmni, a Perceiver-Thinker-Talker-Executor\nframework based on end-to-end omni-modal LLMs that unifies intention\nrecognition, interaction confirmation, and action execution. RoboOmni fuses\nauditory and visual signals spatiotemporally for robust intention recognition,\nwhile supporting direct speech interaction. To address the absence of training\ndata for proactive intention recognition in robotic manipulation, we build\nOmniAction, comprising 140k episodes, 5k+ speakers, 2.4k event sounds, 640\nbackgrounds, and six contextual instruction types. Experiments in simulation\nand real-world settings show that RoboOmni surpasses text- and ASR-based\nbaselines in success rate, inference speed, intention recognition, and\nproactive assistance.",
+    "authors": [
+      "Siyin Wang",
+      "Jinlan Fu",
+      "Feihong Liu",
+      "Xinzhe He",
+      "Huangxuan Wu",
+      "Junhao Shi",
+      "Kexin Huang",
+      "Zhaoye Fei",
+      "Jingjing Gong",
+      "Zuxuan Wu",
+      "Yugang Jiang",
+      "See-Kiong Ng",
+      "Tat-Seng Chua",
+      "Xipeng Qiu"
+    ],
+    "likes": 50,
+    "published_date": "Oct 27",
+    "url": "https://huggingface.co/papers/2510.23763",
+    "date_collected": "2025-10-30T07:08:05.704959+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "로보옴니: 다중 모달 맥락에서의 선제적 로봇 조작",
+      "abstract": "최근 다중 모달 대언어 모델(MLLMs)의 발전은 로봇 조작을 위한 시각-언어-행동(Vision-Language-Action, VLA) 모델에서 신속한 진전을 이끌어냈습니다. 효과적인 협업을 위해 로봇은 사용자 의도를 미리 추론해야 하는데, 본 연구에서는 명시적 명령어 대신 말다툼, 환경 소리, 시각 단서로부터 의도를 파악하는 새로운 설정인 교차 모달 컨텍스트 지시어를 도입합니다. 이를 해결하기 위해, 우리는 의도 인식, 상호작용 확인, 행동 실행을 통합하는 Perceiver-Thinker-Talker-Executor 프레임워크인 RoboOmni를 제안합니다."
+    },
+    "summary": "1. 로봇은 사용자의 의도를 선제적으로 추론하여 효과적인 협업을 위해 새로운 다중 모달 맥락 설정에서 작동합니다.\n2. RoboOmni는 시각적 및 청각적 신호를 시공간적으로 융합하여 강건한 의도 인식을 실현하며, 직접 음성 상호작용을 지원합니다.\n3. 실험 결과, RoboOmni는 성공률, 추론 속도, 의도 인식, 선제적 지원 등에서 텍스트 및 ASR 기반의 기준 모델을 능가합니다.",
+    "categories": [
+      "Multimodal",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "FARMER: Flow AutoRegressive Transformer over Pixels",
+    "abstract": "Directly modeling the explicit likelihood of the raw data distribution is key\ntopic in the machine learning area, which achieves the scaling successes in\nLarge Language Models by autoregressive modeling. However, continuous AR\nmodeling over visual pixel data suffer from extremely long sequences and\nhigh-dimensional spaces. In this paper, we present FARMER, a novel end-to-end\ngenerative framework that unifies Normalizing Flows (NF) and Autoregressive\n(AR) models for tractable likelihood estimation and high-quality image\nsynthesis directly from raw pixels. FARMER employs an invertible autoregressive\nflow to transform images into latent sequences, whose distribution is modeled\nimplicitly by an autoregressive model. To address the redundancy and complexity\nin pixel-level modeling, we propose a self-supervised dimension reduction\nscheme that partitions NF latent channels into informative and redundant\ngroups, enabling more effective and efficient AR modeling. Furthermore, we\ndesign a one-step distillation scheme to significantly accelerate inference\nspeed and introduce a resampling-based classifier-free guidance algorithm to\nboost image generation quality. Extensive experiments demonstrate that FARMER\nachieves competitive performance compared to existing pixel-based generative\nmodels while providing exact likelihoods and scalable training.",
+    "authors": [
+      "Guangting Zheng",
+      "Qinyu Zhao",
+      "Tao Yang",
+      "Fei Xiao",
+      "Zhijie Lin",
+      "Jie Wu",
+      "Jiajun Deng",
+      "Yanyong Zhang",
+      "Rui Zhu"
+    ],
+    "likes": 48,
+    "published_date": "Oct 27",
+    "url": "https://huggingface.co/papers/2510.23588",
+    "date_collected": "2025-10-30T07:08:05.706246+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "픽셀 위의 플로우 자기회귀 트랜스포머: FARMER",
+      "abstract": "원시 데이터 분포의 명시적 확률 모델링은 기계 학습 분야에서 핵심 주제로, 대규모 언어 모델에서 자기 회귀 모델링을 통해 확장된 성공을 달성했습니다. 그러나 시각 픽셀 데이터에 대한 연속 자기 회귀 모델링은 극도로 긴 시퀀스와 고차원 공간으로 인해 어려움을 겪습니다. 본 논문에서는 FARMER를 소개하는데, 이는 정규화된 플로우(NF)와 자기 회귀(AR) 모델을 통합하여 원시 픽셀부터 직접 높은 품질의 이미지 합성과 확률 추정이 가능한 혁신적인 생성 프레임워크입니다. FARMER는 이미지를 잠재적인 시퀀스로 변환하기 위해 가역 자기 회귀 플로우를 사용하며, 이 분포는 자기 회귀 모델에 의해 암묵적으로 모델링됩니다. 픽셀 수준 모델링의 중복성과 복잡성에 대응하기 위해, 우리는 정규화된 플로우 잠재 채널을 정보적 그룹과 중복적 그룹으로 분할하는 자기 지도 차원 축소 체계를 제안하여 더 효과적이고 효율적인 자기 회귀 모델링이 가능하도록 했습니다. 더불어, 추론 속도를 크게 가속화하기 위해 원 스텝 증류 체계를 설계하고 이미지 생성 품질을 향상시키기 위해 분류기 없는 리샘플링 기반 가이드 알고리즘을 도입했습니다. 광범위한 실험 결과 FARMER가 기존 픽셀 기반 생성 모델에 비해 경쟁력 있는 성능을 발휘하면서 정확한 확률을 제공하고 효율적인 훈련이 가능함을 입증합니다."
+    },
+    "summary": "1. FARMER는 NF와 AR 모델을 통합한 새로운 생성 프레임워크로, 픽셀에 바로 높은 품질의 이미지 합성과 확률 추정이 가능합니다.\n2. 자기 회귀 플로우를 이용하여 이미지를 잠재 시퀀스로 변환하고, NF 잠재 채널을 분할하는 방법으로 픽셀 모델링의 중복성을 줄여 효율적인 모델링을 실현합니다.\n3. FARMER는 원 스텝 증류 체계와 리샘플링 기반 가이드 알고리즘을 도입하여 이미지 생성 품질을 향상시키고 추론 속도를 높입니다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Game-TARS: Pretrained Foundation Models for Scalable Generalist\n  Multimodal Game Agents",
+    "abstract": "We present Game-TARS, a generalist game agent trained with a unified,\nscalable action space anchored to human-aligned native keyboard-mouse inputs.\nUnlike API- or GUI-based approaches, this paradigm enables large-scale\ncontinual pre-training across heterogeneous domains, including OS, web, and\nsimulation games. Game-TARS is pre-trained on over 500B tokens with diverse\ntrajectories and multimodal data. Key techniques include a decaying continual\nloss to reduce causal confusion and an efficient Sparse-Thinking strategy that\nbalances reasoning depth and inference cost. Experiments show that Game-TARS\nachieves about 2 times the success rate over the previous sota model on\nopen-world Minecraft tasks, is close to the generality of fresh humans in\nunseen web 3d games, and outperforms GPT-5, Gemini-2.5-Pro, and Claude-4-Sonnet\nin FPS benchmarks. Scaling results on training-time and test-time confirm that\nthe unified action space sustains improvements when scaled to cross-game and\nmultimodal data. Our results demonstrate that simple, scalable action\nrepresentations combined with large-scale pre-training provide a promising path\ntoward generalist agents with broad computer-use abilities.",
+    "authors": [
+      "Zihao Wang",
+      "Xujing Li",
+      "Yining Ye",
+      "Junjie Fang",
+      "Haoming Wang",
+      "Longxiang Liu",
+      "Shihao Liang",
+      "Junting Lu",
+      "Zhiyong Wu",
+      "Jiazhan Feng",
+      "Wanjun Zhong",
+      "Zili Li",
+      "Yu Wang",
+      "Yu Miao",
+      "Bo Zhou",
+      "Yuanfan Li",
+      "Hao Wang",
+      "Zhongkai Zhao",
+      "Faming Wu",
+      "Zhengxuan Jiang",
+      "Weihao Tan",
+      "Heyuan Yao"
+    ],
+    "likes": 43,
+    "published_date": "Oct 27",
+    "url": "https://huggingface.co/papers/2510.23691",
+    "date_collected": "2025-10-30T07:08:05.708131+09:00",
+    "week": "2025-W44",
+    "translation": {
+      "title": "게임-TARS: 확장 가능한 일반 기능의 사전 훈련된 기초 모델을 갖춘 다중 모달 게임 에이전트",
+      "abstract": "우리는 게임-TARS를 제시합니다. 이는 인간과 동일한 네이티브 키보드-마우스 입력에 기반을 둔 일반적인 게임 에이전트로, API 또는 GUI 방식과는 달리 여러 도메인(OS, 웹, 시뮬레이션 게임 등)에서 대규모로 지속적인 사전 훈련을 가능하게 합니다. 게임-TARS는 500B개 이상의 토큰과 다양한 궤적, 다중 모달 데이터로 사전 훈련되었습니다. 핵심 기술로는 인과 혼란을 줄이기 위한 감소하는 지속적인 손실과 추론 깊이와 추론 비용을 균형있게 유지하기 위한 효율적인 Sparse-Thinking 전략이 포함됩니다. 실험 결과, 게임-TARS는 오픈 월드 Minecraft 작업에서 이전 최고 성능 모델의 약 2배의 성공률을 달성하며, 보이지 않는 웹 3D 게임에서 신선한 인간의 일반성에 가까워지며 FPS 벤치마크에서 GPT-5, Gemini-2.5-Pro 및 Claude-4-Sonnet을 능가합니다. 훈련 시간 및 테스트 시간의 확장 결과는 통합 작업 공간이 게임 간 및 다중 모달 데이터로 확장되었을 때 개선이 지속된다는 것을 확인합니다. 결과는 단순하고 확장 가능한 작업 표현이 대규모 사전 훈련과 결합될 경우 컴퓨터 사용 능력이 넓은 일반화 에이전트를 향한 유망한 길을 열어준다는 것을 보여줍니다."
+    },
+    "summary": "1. Game-TARS는 다양한 도메인에서 대규모 사전 훈련을 통해 훈련되는 일반적인 게임 에이전트이다.\n2. 게임-TARS의 핵심 기술로는 인과 혼란을 줄이는 지속적인 손실과 추론 비용을 균형있게 유지하는 효율적인 Sparse-Thinking 전략이 있다.\n3. 실험 결과, Game-TARS는 Minecraft 작업에서 우수한 성과를 거두며, FPS 벤치마크에서 다른 모델들을 능가한다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

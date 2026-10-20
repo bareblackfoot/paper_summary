@@ -1,0 +1,332 @@
+[
+  {
+    "title": "AI Can Learn Scientific Taste",
+    "abstract": "Great scientists have strong judgement and foresight, closely tied to what we call scientific taste. Here, we use the term to refer to the capacity to judge and propose research ideas with high potential impact. However, most relative research focuses on improving an AI scientist's executive capability, while enhancing an AI's scientific taste remains underexplored. In this work, we propose Reinforcement Learning from Community Feedback (RLCF), a training paradigm that uses large-scale community signals as supervision, and formulate scientific taste learning as a preference modeling and alignment problem. For preference modeling, we train Scientific Judge on 700K field- and time-matched pairs of high- vs. low-citation papers to judge ideas. For preference alignment, using Scientific Judge as a reward model, we train a policy model, Scientific Thinker, to propose research ideas with high potential impact. Experiments show Scientific Judge outperforms SOTA LLMs (e.g., GPT-5.2, Gemini 3 Pro) and generalizes to future-year test, unseen fields, and peer-review preference. Furthermore, Scientific Thinker proposes research ideas with higher potential impact than baselines. Our findings show that AI can learn scientific taste, marking a key step toward reaching human-level AI scientists.",
+    "authors": [
+      "Jingqi Tong",
+      "Mingzhe Li",
+      "Hangcheng Li",
+      "Yongzhuo Yang",
+      "Yurong Mou",
+      "Weijie Ma",
+      "Zhiheng Xi",
+      "Hongji Chen",
+      "Xiaoran Liu",
+      "Qinyuan Cheng",
+      "Ming Zhang",
+      "Qiguang Chen",
+      "Weifeng Ge",
+      "Qipeng Guo",
+      "Tianlei Ying",
+      "Tianxiang Sun",
+      "Yining Zheng",
+      "Xinchi Chen",
+      "Jun Zhao",
+      "Ning Ding",
+      "Xuanjing Huang",
+      "Yugang Jiang"
+    ],
+    "likes": 214,
+    "published_date": "Mar 15",
+    "url": "https://huggingface.co/papers/2603.14473",
+    "date_collected": "2026-03-18T07:15:42.992478+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "AI는 과학적 감각을 배울 수 있습니다",
+      "abstract": "위대한 과학자들은 강력한 판단력과 선견지명을 갖고 있으며, 이는 우리가 과학적 감각이라고 부르는 것과 밀접하게 연관되어 있습니다. 본 연구에서는 AI 과학자의 실행 능력을 향상시키는데 주로 초점을 맞춘 반면, AI의 과학적 감각을 향상시키는 연구는 미개척된 분야입니다. 본 연구에서는 대규모 커뮤니티 신호를 감독으로 활용하는 RLCF(Reinforcement Learning from Community Feedback)라는 학습 패러다임을 제안하고, 과학적 감각 학습을 선호 모델링 및 정렬 문제로 제시합니다. ..."
+    },
+    "summary": "1. AI 과학자가 과학적 감각을 배울 수 있는 새로운 학습 패러다임인 RLCF를 제안함\n2. 과학적 심판자(Scientific Judge)를 통해 논문 아이디어를 평가하는 선호 모델링과 과학적 사고자(Scientific Thinker)를 훈련시켜 높은 잠재적 영향력을 갖는 연구 아이디어를 제안하는 것을 포함한 실험적 결과 제시\n3. AI가 과학적 감각을 배울 수 있음을 입증하고, 인간 수준의 AI 과학가로 나아가는 데 중요한 한걸음을 나아갈 수 있음을 보여줌",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "OpenSeeker: Democratizing Frontier Search Agents by Fully Open-Sourcing Training Data",
+    "abstract": "Deep search capabilities have become an indispensable competency for frontier Large Language Model (LLM) agents, yet the development of high-performance search agents remains dominated by industrial giants due to a lack of transparent, high-quality training data. This persistent data scarcity has fundamentally hindered the progress of the broader research community in developing and innovating within this domain. To bridge this gap, we introduce OpenSeeker, the first fully open-source search agent (i.e., model and data) that achieves frontier-level performance through two core technical innovations: (1) Fact-grounded scalable controllable QA synthesis, which reverse-engineers the web graph via topological expansion and entity obfuscation to generate complex, multi-hop reasoning tasks with controllable coverage and complexity. (2) Denoised trajectory synthesis, which employs a retrospective summarization mechanism to denoise the trajectory, therefore promoting the teacher LLMs to generate high-quality actions. Experimental results demonstrate that OpenSeeker, trained (a single training run) on only 11.7k synthesized samples, achieves state-of-the-art performance across multiple benchmarks including BrowseComp, BrowseComp-ZH, xbench-DeepSearch, and WideSearch. Notably, trained with simple SFT, OpenSeeker significantly outperforms the second-best fully open-source agent DeepDive (e.g., 29.5% v.s. 15.3% on BrowseComp), and even surpasses industrial competitors such as Tongyi DeepResearch (trained via extensive continual pre-training, SFT, and RL) on BrowseComp-ZH (48.4% v.s. 46.7%). We fully open-source the complete training dataset and the model weights to democratize frontier search agent research and foster a more transparent, collaborative ecosystem.",
+    "authors": [
+      "Yuwen Du",
+      "Rui Ye",
+      "Shuo Tang",
+      "Xinyu Zhu",
+      "Yijun Lu",
+      "Yuzhu Cai",
+      "Siheng Chen"
+    ],
+    "likes": 124,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15594",
+    "date_collected": "2026-03-18T07:15:42.993812+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "오픈시커: 훈련 데이터 완전 오픈소스화로 전선 검색 에이전트 민주화하기",
+      "abstract": "전선 대형 언어 모델 (Large Language Model, LLM) 에이전트에 대한 심층 검색 기능은 불가결한 능력이 되었지만 고품질의 투명한 훈련 데이터 부족으로 인해 높은 성능의 검색 에이전트 개발은 산업 거대기업들에 의해 주도되어 왔습니다. 이 지속적인 데이터 부족은 더 넓은 연구 커뮤니티가 이 도메인 내에서 발전하고 혁신하는 것을 근본적으로 방해했습니다. 이 격차를 메우기 위해 우리는 오픈시커를 소개합니다. 이는 전선 수준 성능을 달성하는 최초의 완전 오픈소스 검색 에이전트(모델 및 데이터)로, 두 가지 핵심 기술 혁신을 통해 이루어집니다. 첫째는 사실 기반 확장 가능한 제어 가능한 QA 합성으로, 웹 그래프를 역공학화하여 복잡한, 다중-점프 추론 작업을 생성합니다. 둘째로는 잡음제거 궤적 합성으로, 회고적 요약 메커니즘을 사용하여 궤적을 잡음제거하여 교사 LLMs가 고품질 행동을 생성하도록 장려합니다. 실험 결과는 오직 11.7k 합성 샘플로 훈련된 오픈시커가 BrowseComp, BrowseComp-ZH, xbench-DeepSearch, WideSearch를 포함한 여러 벤치마크에서 최첨단 성능을 달성한다는 것을 보여줍니다. 특히 단순 SFT로 학습된 OpenSeeker는 BrowseComp에서 두 번째로 최고의 완전 오픈소스 에이전트인 DeepDive보다 월등한 성과를 거두며, BrowseComp-ZH에서도 산업 경쟁자인 Tongyi DeepResearch를 능가했습니다. 우리는 전체 훈련 데이터셋과 모델 가중치를 완전 오픈소스로 제공하여 전선 검색 에이전트 연구를 민주화하고 보다 투명하며 협업적인 생태계를 육성합니다."
+    },
+    "summary": "1. 오픈시커는 투명하고 고품질 훈련 데이터 부족으로 인해 산업 거대기업들에 의해 주도되던 고성능 검색 에이전트 개발을 위해 완전 오픈소스로 제공됩니다.\n2. 사실 기반 확장 가능한 QA 합성과 잡음제거 궤적 합성을 통해 전선 수준 성능을 달성합니다.\n3. 11.7k 합성 샘플로 훈련된 오픈시커는 다양한 벤치마크에서 최첨단 성능을 보이며 산업 경쟁자들을 능가합니다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings",
+    "abstract": "Large language models are shifting from passive information providers to active agents intended for complex workflows. However, their deployment as reliable AI workers in enterprise is stalled by benchmarks that fail to capture the intricacies of professional environments, specifically, the need for long-horizon planning amidst persistent state changes and strict access protocols. In this work, we introduce EnterpriseOps-Gym, a benchmark designed to evaluate agentic planning in realistic enterprise settings. Specifically, EnterpriseOps-Gym features a containerized sandbox with 164 database tables and 512 functional tools to mimic real-world search friction. Within this environment, agents are evaluated on 1,150 expert-curated tasks across eight mission-critical verticals (including Customer Service, HR, and IT). Our evaluation of 14 frontier models reveals critical limitations in state-of-the-art models: the top-performing Claude Opus 4.5 achieves only 37.4% success. Further analysis shows that providing oracle human plans improves performance by 14-35 percentage points, pinpointing strategic reasoning as the primary bottleneck. Additionally, agents frequently fail to refuse infeasible tasks (best model achieves 53.9%), leading to unintended and potentially harmful side effects. Our findings underscore that current agents are not yet ready for autonomous enterprise deployment. More broadly, EnterpriseOps-Gym provides a concrete testbed to advance the robustness of agentic planning in professional workflows.",
+    "authors": [
+      "Shiva Krishna Reddy Malay",
+      "Shravan Nayak",
+      "Jishnu Sethumadhavan Nair",
+      "Sagar Davasam",
+      "Aman Tiwari",
+      "Sathwik Tejaswi Madhusudhan",
+      "Sridhar Krishna Nemala",
+      "Srinivas Sunkara",
+      "Sai Rajeswar"
+    ],
+    "likes": 115,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.13594",
+    "date_collected": "2026-03-18T07:15:42.995194+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "기업 운영을 위한 환경 및 평가를 위한 EnterpriseOps-Gym",
+      "abstract": "대규모 언어 모델은 복잡한 작업 흐름을 위한 적극적인 에이전트로 전환되고 있습니다. 그러나 기업에서 신뢰할 수 있는 AI 작업자로의 배치는 전문적 환경의 복잡성을 포착하지 못하는 벤치마크에 의해 저해되고 있습니다. 특히, 장기간 계획과 엄격한 액세스 프로토콜이 필요한 환경 속에서의 작업을 포착하지 못합니다. 본 연구에서는 실제 기업 환경에서 에이전틱 플래닝을 평가하기 위해 디자인된 벤치마크인 EnterpriseOps-Gym을 소개합니다. 구체적으로, EnterpriseOps-Gym은 실제 워크플로우에 대한 검색 마찰을 모방하기 위해 164개의 데이터베이스 테이블 및 512개의 기능 도구를 갖춘 컨테이네라이즈된 샌드박스를 특징으로 합니다. 이 환경에서 에이전트들은 고객 서비스, 인사 및 IT를 포함한 여덟 가지 핵심 세로닝에서 1,150개의 전문가 연구된 작업에 대해 평가됩니다. 우리는 14가지 선도적인 모델의 평가 결과를 통해 최첨단 모델의 중요한 한계를 밝혀냅니다. 최고 성능을 내는 Claude Opus 4.5는 성공률이 37.4%에 불과합니다. 추가 분석 결과, 오라클 인간 계획을 제공함으로써 성능이 14-35%포인트 향상된다는 것을 확인하여 전략적 추론이 주요 병목 현상임을 확인합니다. 또한, 에이전트들은 종종 실현 불가능한 작업을 거부하지 못하고(최상의 모델은 53.9%를 달성), 의도치 않은 유해한 부작용을 야기합니다. 우리의 연구 결과는 현재의 에이전트들이 아직 자동 기업 배치에 준비되지 않았다는 것을 강조합니다. 더 넓은 의미에서 EnterpriseOps-Gym은 전문적 워크플로우에서의 플래닝의 견고성을 높이기 위한 구체적인 실험대를 제공합니다."
+    },
+    "summary": "1. EnterpriseOps-Gym은 실제 기업 환경에서 에이전트 플래닝 평가를 위한 벤치마크로, 실제 데이터베이스와 기능 도구를 활용하여 1,150가지 작업을 포함하고 있습니다.\n2. 최신 모델의 평가 결과를 통해, 현재의 에이전트가 전략적 추론 및 불가능한 작업 거부 등에서 제약을 겪고 있는 것을 확인할 수 있습니다.\n3. 연구 결과는 현재의 에이전트들이 자동 기업 배치에 아직 준비되지 않았음을 강조하며, EnterpriseOps-Gym은 이러한 도전에 대응하기 위한 실험환경을 제공합니다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions",
+    "abstract": "We present HSImul3R, a unified framework for simulation-ready 3D reconstruction of human-scene interactions (HSI) from casual captures, including sparse-view images and monocular videos. Existing methods suffer from a perception-simulation gap: visually plausible reconstructions often violate physical constraints, leading to instability in physics engines and failure in embodied AI applications. To bridge this gap, we introduce a physically-grounded bi-directional optimization pipeline that treats the physics simulator as an active supervisor to jointly refine human dynamics and scene geometry. In the forward direction, we employ Scene-targeted Reinforcement Learning to optimize human motion under dual supervision of motion fidelity and contact stability. In the reverse direction, we propose Direct Simulation Reward Optimization, which leverages simulation feedback on gravitational stability and interaction success to refine scene geometry. We further present HSIBench, a new benchmark with diverse objects and interaction scenarios. Extensive experiments demonstrate that HSImul3R produces the first stable, simulation-ready HSI reconstructions and can be directly deployed to real-world humanoid robots.",
+    "authors": [
+      "Yukang Cao",
+      "Haozhe Xie",
+      "Fangzhou Hong",
+      "Long Zhuo",
+      "Zhaoxi Chen",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "likes": 92,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15612",
+    "date_collected": "2026-03-18T07:15:42.996487+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "HSImul3R: 시뮬레이션 준비 인간-장면 상호 작용의 물리학 중심 재구성",
+      "abstract": "HSImul3R은 희박한 시점 이미지와 단안 비디오를 포함한 캐주얼 캡처로부터 시뮬레이션용 3D 인간-장면 상호 작용(HSI)의 통합된 재구성 프레임워크를 제시합니다. 기존 방법들은 물리적 제약을 위배하는 경우가 많아 물리 엔진의 불안정성과 신체 있는 AI 애플리케이션의 실패로 이어집니다. 이 간극을 줄이기 위해 물리학적으로 기반을 둔 양방향 최적화 파이프라인을 제안하며, 이 파이프라인은 물리 시뮬레이터를 활성 감독자로 취급하여 인간 역학과 장면 기하를 동시에 개선합니다. ..."
+    },
+    "summary": "1. HSI 재구성을 위한 새로운 프레임워크인 HSImul3R 소개\n2. 물리학적 제약을 준수하면서 안정적인 HSI 재구성 가능성을 보여줌\n3. 다양한 객체와 상호 작용 시나리오를 갖춘 새로운 벤치마크 HSIBench 제시",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Grounding World Simulation Models in a Real-World Metropolis",
+    "abstract": "What if a world simulation model could render not an imagined environment but a city that actually exists? Prior generative world models synthesize visually plausible yet artificial environments by imagining all content. We present Seoul World Model (SWM), a city-scale world model grounded in the real city of Seoul. SWM anchors autoregressive video generation through retrieval-augmented conditioning on nearby street-view images. However, this design introduces several challenges, including temporal misalignment between retrieved references and the dynamic target scene, limited trajectory diversity and data sparsity from vehicle-mounted captures at sparse intervals. We address these challenges through cross-temporal pairing, a large-scale synthetic dataset enabling diverse camera trajectories, and a view interpolation pipeline that synthesizes coherent training videos from sparse street-view images. We further introduce a Virtual Lookahead Sink to stabilize long-horizon generation by continuously re-grounding each chunk to a retrieved image at a future location. We evaluate SWM against recent video world models across three cities: Seoul, Busan, and Ann Arbor. SWM outperforms existing methods in generating spatially faithful, temporally consistent, long-horizon videos grounded in actual urban environments over trajectories reaching hundreds of meters, while supporting diverse camera movements and text-prompted scenario variations.",
+    "authors": [
+      "Junyoung Seo",
+      "Hyunwook Choi",
+      "Minkyung Kwon",
+      "Jinhyeok Choi",
+      "Siyoon Jin",
+      "Gayoung Lee",
+      "Junho Kim",
+      "JoungBin Lee",
+      "Geonmo Gu",
+      "Dongyoon Han",
+      "Sangdoo Yun",
+      "Seungryong Kim",
+      "Jin-Hwa Kim"
+    ],
+    "likes": 92,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15583",
+    "date_collected": "2026-03-18T07:15:42.998020+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "현실 세계 메트로폴리스에 기반을 둔 세계 시뮬레이션 모델",
+      "abstract": "만약 세계 시뮬레이션 모델이 상상 속 환경이 아니라 실제로 존재하는 도시를 렌더링할 수 있다면 어떨까요? 이전의 생성 모델은 모든 콘텐츠를 상상함으로써 시각적으로 현실적이지만 인공적인 환경을 합성합니다. 본 논문에서는 서울 세계 모델(SWM)을 제시하는데, 이는 실제 서울 시내를 기반으로 한 도시 규모의 세계 모델입니다. SWM은 인접한 거리뷰 이미지에 대한 검색 증강된 조건부자극을 통해 자율회귀 비디오 생성을 기반으로 하였습니다. 그러나 이 설계는 검색된 참조와 동적 대상 장면 사이의 시간적 불일치, 차량 장착된 캡처로 인한 제한된 궤적 다양성 및 데이터 희소성과 같은 여러 가지 도전 과제를 도입합니다. 우리는 이러한 도전 과제를 교차-시간적 페어링, 다양한 카메라 궤적을 가능케 하는 대규모 합성 데이터셋, 그리고 희소한 거리뷰 이미지로부터 일관된 훈련 비디오를 생성하는 뷰 보간 파이프라인을 통해 해결합니다. 또한 미래 위치에 있는 검색된 이미지에 각 청크를 계속적으로 재기준화하여 긴 구간 생성을 안정화하는 가상 미래 전망 싱크를 제시합니다. 우리는 서울, 부산, 그리고 앤 아버의 세 도시를 대상으로 SWM을 평가합니다. SWM은 수백 미터에 이르는 궤적을 통해 실제 도시 환경에 근거한 공간적으로 충실하며, 시간적으로 일관성 있는, 긴 구간 비디오를 생성하는 데 기존 방법들을 능가하며, 다양한 카메라 움직임과 텍스트 프롬프티드 시나리오 변화를 지원합니다."
+    },
+    "summary": "1. 서울 세계 모델(SWM)은 실제 서울 시내를 기반으로 하는 도시 규모의 세계 모델로, 자율회귀 비디오 생성과 함께 인근 거리뷰 이미지에 따른 검색 증강된 조건부 자극을 중심으로 한다.\n2. SWM은 교차-시간적 페어링, 대규모 합성 데이터셋, 뷰 보간 파이프라인을 통해 동적 타깃 장면과의 시간적 불일치, 카메라 궤적 다양성 및 희소한 데이터 문제를 해결한다.\n3. 가상 미래 전망 싱크를 도입한 SWM은 실제 도시 환경에 근거하여 수백 미터에 이르는 궤적을 향한 일관된 긴 구간 비디오를 안정화하며, 다양한 카메라 움직임과 텍스트 프롬프티드 시나리오 변화를 지원한다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "LMEB: Long-horizon Memory Embedding Benchmark",
+    "abstract": "Memory embeddings are crucial for memory-augmented systems, such as OpenClaw, but their evaluation is underexplored in current text embedding benchmarks, which narrowly focus on traditional passage retrieval and fail to assess models' ability to handle long-horizon memory retrieval tasks involving fragmented, context-dependent, and temporally distant information. To address this, we introduce the Long-horizon Memory Embedding Benchmark (LMEB), a comprehensive framework that evaluates embedding models' capabilities in handling complex, long-horizon memory retrieval tasks. LMEB spans 22 datasets and 193 zero-shot retrieval tasks across 4 memory types: episodic, dialogue, semantic, and procedural, with both AI-generated and human-annotated data. These memory types differ in terms of level of abstraction and temporal dependency, capturing distinct aspects of memory retrieval that reflect the diverse challenges of the real world. We evaluate 15 widely used embedding models, ranging from hundreds of millions to ten billion parameters. The results reveal that (1) LMEB provides a reasonable level of difficulty; (2) Larger models do not always perform better; (3) LMEB and MTEB exhibit orthogonality. This suggests that the field has yet to converge on a universal model capable of excelling across all memory retrieval tasks, and that performance in traditional passage retrieval may not generalize to long-horizon memory retrieval. In summary, by providing a standardized and reproducible evaluation framework, LMEB fills a crucial gap in memory embedding evaluation, driving further advancements in text embedding for handling long-term, context-dependent memory retrieval. LMEB is available at https://github.com/KaLM-Embedding/LMEB.",
+    "authors": [
+      "Xinping Zhao",
+      "Xinshuo Hu",
+      "Jiaxin Xu",
+      "Danyu Tang",
+      "Xin Zhang",
+      "Mengjia Zhou",
+      "Yan Zhong",
+      "Yao Zhou",
+      "Zifei Shan",
+      "Meishan Zhang",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "likes": 60,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.12572",
+    "date_collected": "2026-03-18T07:15:42.999563+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "장기 기억 내장 평가를 위한 벤치마크(LMEB: Long-horizon Memory Embedding Benchmark)",
+      "abstract": "기억 내장은 OpenClaw와 같은 기억 증강 시스템에 중요한데, 현재의 텍스트 내장 벤치마크는 장기 기억 검색 작업에 초점을 두고 있지 않아서 실질적으로 평가되지 않고, 전통적인 단락 검색에 중점을 둠으로써 단편적이고 맥락 의존적이며 시간적으로 먼 정보를 처리할 수 있는 모델의 능력을 평가하지 못합니다. 이에 대응하여, 우리는 Long-horizon Memory Embedding Benchmark (LMEB)를 제시하는데, 이는 복잡한 장기 기억 검색 작업을 처리하는 내장 모델의 능력을 평가하기 위한 포괄적인 프레임워크입니다. LMEB는 총 22개의 데이터셋과 4가지 메모리 유형인 에피소딕, 대화, 의미론적 및 절차적을 포함하여 193가지의 영 제로샷 검색 작업을 다룹니다. 이들 메모리 유형은 추상화 수준과 시간적 종속성 면에서 다르며, 실세계의 다양한 도전 과제를 반영하는 메모리 검색의 구별된 측면을 포착합니다. 저희는 수억 개에서 십억 개의 매개 변수를 갖는 15가지 널리 사용되는 내장 모델을 평가합니다. 결과는 (1) LMEB가 합당한 난이도를 제공한다는 것을 보여줍니다; (2) 더 큰 모델이 항상 더 나은 성능을 발휘하지 않는다는 것을 보여줍니다; (3) LMEB와 MTEB가 직교성을 나타낸다는 사실을 보여줍니다. 이는 이 분야가 모든 기억 검색 작업에 걸쳐 우수한 성과를 발휘할 수 있는 보편적인 모델에 수렴한 것이 아니라는 것을 시사하며, 전통적인 단락 검색에서의 성과가 장기 기억 검색으로 일반화되지 않을 수도 있다는 것을 보여줍니다. 요약하자면, 표준화되고 재현 가능한 평가 프레임워크를 제공함으로써 LMEB는 기억 내장 평가에서 중요한 공백을 메우면서 장기적이고 맥락 의존적인 기억 검색을 다루는 텍스트 임베딩 분야의 추가 발전을 이끌어내고 있습니다. LMEB는 https://github.com/KaLM-Embedding/LMEB에서 제공됩니다."
+    },
+    "summary": "1. LMEB는 다양한 메모리 유형과 영 제로샷 검색 작업을 포함하는 장기 기억 검색 작업을 처리하는 내장 모델의 능력을 평가하는 벤치마크이다.\n2. 연구 결과는 LMEB가 합리적인 난이도를 제공하며, 큰 모델이 항상 더 좋은 성능을 발휘하는 것은 아닌 것을 보여준다.\n3. 전통적인 단락 검색 성과가 장기 기억 검색으로 일반화되지 않을 수 있으며, 모든 기억 검색 작업에 걸쳐 우수한 성과를 내는 보편적 모델이 아직 존재하지 않을 수 있다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Attention Residuals",
+    "abstract": "Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer's contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing each layer to selectively aggregate earlier representations with learned, input-dependent weights. To address the memory and communication overhead of attending over all preceding layer outputs for large-scale model training, we introduce Block AttnRes, which partitions layers into blocks and attends over block-level representations, reducing the memory footprint while preserving most of the gains of full AttnRes. Combined with cache-based pipeline communication and a two-phase computation strategy, Block AttnRes becomes a practical drop-in replacement for standard residual connections with minimal overhead.\n  Scaling law experiments confirm that the improvement is consistent across model sizes, and ablations validate the benefit of content-dependent depth-wise selection. We further integrate AttnRes into the Kimi Linear architecture (48B total / 3B activated parameters) and pre-train on 1.4T tokens, where AttnRes mitigates PreNorm dilution, yielding more uniform output magnitudes and gradient distribution across depth, and improves downstream performance across all evaluated tasks.",
+    "authors": [
+      "Kimi Team",
+      "Guangyu Chen",
+      "Yu Zhang",
+      "Jianlin Su",
+      "Weixin Xu",
+      "Siyuan Pan",
+      "Yaoyu Wang",
+      "Yucheng Wang",
+      "Guanduo Chen",
+      "Bohong Yin",
+      "Yutian Chen",
+      "Junjie Yan",
+      "Ming Wei",
+      "Y. Zhang",
+      "Fanqing Meng",
+      "Chao Hong",
+      "Xiaotong Xie",
+      "Shaowei Liu",
+      "Enzhe Lu",
+      "Yunpeng Tai",
+      "Yanru Chen",
+      "Xin Men"
+    ],
+    "likes": 57,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15031",
+    "date_collected": "2026-03-18T07:15:43.001588+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "주의력 잔차",
+      "abstract": "최신 LLM에서는 PreNorm과 함께 잔차 연결이 표준이지만, 모든 레이어 출력물을 고정 단위 가중치로 누적합니다. 이 균일한 집계는 깊이에 따라 통제되지 않는 숨겨진 상태의 성장을 초래하여 각 레이어의 기여도를 점차 희석시킵니다. 우리는 이 고정된 누적을 바로앞 레이어 출력물에 대한 소프트맥스 주의로 대체하는 주의력 잔차(AttnRes)를 제안합니다. 각 레이어가 학습된 입력에 따라 선택적으로 이전 표현을 집계할 수 있도록 합니다. 대규모 모델 훈련 시 이전 레이어 출력물 전부에 대해 주의를 기울이는 메모리와 통신 오버헤드를 해결하기 위해, 우리는 레이어를 블록으로 나누고 블록 수준의 표현에 주의를 기울이는 Block AttnRes를 소개합니다. 이는 전체 AttnRes의 이익 대부분을 유지하면서 메모리 풋프린트를 줄이는 것입니다. 캐시 기반의 파이프라인 통신 및 이차 계산 전략과 결합하면 Block AttnRes가 최소한의 오버헤드로 표준 잔차 연결을 대체할 수 있습니다. 줄어들 기법 실험은 개선이 모든 모델 크기에서 일관되다는 것을 확인하고 삭제 실험은 내용 종속적 깊이별 선택의 이점을 검증합니다. 또한 우리는 Kimi Linear 아키텍처(총 48B / 활성화된 3B 매개변수)에 AttnRes를 통합하고 1.4T 토큰으로 사전 훈련을 실시했으며, AttnRes는 PreNorm 희석을 완화하여 깊이별로보다 균일한 출력 크기와 경사 분포를 제공하며 모든 평가된 작업에서 하류 성능을 향상시킵니다."
+    },
+    "summary": "1. Attention Residuals(AttnRes)은 고정된 누적 대신 이전 레이어 출력물에 대한 소프트맥스 주의를 사용하여 각 레이어가 학습된 가중치로 이전 표현을 집계할 수 있도록 합니다.\n2. Block AttnRes는 레이어를 블록으로 분할하고 블록 수준의 표현에 주의를 기울이는 것으로, 효율적인 메모리 사용과 높은 성능을 제공합니다.\n3. AttnRes를 Kimi Linear 아키텍처에 통합하여 PreNorm의 희석을 줄이고 깊이에 따라 균일한 출력 크기와 경사 분포를 제공하여 모든 평가된 작업에서 성능을 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Mixture-of-Depths Attention",
+    "abstract": "Scaling depth is a key driver for large language models (LLMs). Yet, as LLMs become deeper, they often suffer from signal degradation: informative features formed in shallow layers are gradually diluted by repeated residual updates, making them harder to recover in deeper layers. We introduce mixture-of-depths attention (MoDA), a mechanism that allows each attention head to attend to sequence KV pairs at the current layer and depth KV pairs from preceding layers. We further describe a hardware-efficient algorithm for MoDA that resolves non-contiguous memory-access patterns, achieving 97.3% of FlashAttention-2's efficiency at a sequence length of 64K. Experiments on 1.5B-parameter models demonstrate that MoDA consistently outperforms strong baselines. Notably, it improves average perplexity by 0.2 across 10 validation benchmarks and increases average performance by 2.11% on 10 downstream tasks, with a negligible 3.7% FLOPs computational overhead. We also find that combining MoDA with post-norm yields better performance than using it with pre-norm. These results suggest that MoDA is a promising primitive for depth scaling. Code is released at https://github.com/hustvl/MoDA .",
+    "authors": [
+      "Lianghui Zhu",
+      "Yuxin Fang",
+      "Bencheng Liao",
+      "Shijie Wang",
+      "Tianheng Cheng",
+      "Zilong Huang",
+      "Chen Chen",
+      "Lai Wei",
+      "Yutao Zeng",
+      "Ya Wang",
+      "Yi Lin",
+      "Yu Li",
+      "Xinggang Wang"
+    ],
+    "likes": 47,
+    "published_date": "Mar 16",
+    "url": "https://huggingface.co/papers/2603.15619",
+    "date_collected": "2026-03-18T07:15:43.003395+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "깊이 혼합 주의(Mixture-of-Depths Attention)",
+      "abstract": "규모 조정된 깊이는 대형 언어 모델(LLM)의 주요 구성 요소입니다. 그러나 LLM이 더 깊어지면 얕은 레이어에서 형성된 유용한 기능이 반복적인 잔차 업데이트로 서서히 희석되어 더 깊은 레이어에서 복구하기 어려워집니다. 우리는 깊이 혼합 주의(MoDA)를 소개합니다. 이 메커니즘은 각 주의 헤드가 현재 레이어의 순차 KV 쌍과 이전 레이어의 한도 KV 쌍에 주의를 기울일 수 있게 합니다. 또한 비연속적인 메모리 액세스 패턴을 해결하는 하드웨어 효율적인 MoDA 알고리즘을 설명합니다. 64K의 순차 길이에서 FlashAttention-2의 효율성의 97.3%를 달성합니다. 15억 매개변수 모델에서의 실험 결과 MoDA가 강력한 기준을 지속적으로 능가하는 것을 보여줍니다. 특히 10개의 검증 벤치마크에서 평균 perplexity를 0.2 향상시키고 10가지 하류 작업에서 평균 성능을 2.11% 향상시키는 결과를 보였으며, 무시할 만한 3.7% FLOPs 연산 부담이 있었습니다. 또한 MoDA를 사후 정규화(post-norm)와 결합하는 것이 사전 정규화(pre-norm)로 사용하는 것보다 성능이 우수함을 발견했습니다. 이러한 결과는 MoDA가 깊이 확장에 대한 유망한 기본 요소임을 시사합니다. 코드는 https://github.com/hustvl/MoDA 에서 제공됩니다."
+    },
+    "summary": "1. LLM의 규모를 늘리는 데 중요한 깊이 스케일링이 필요하며, 깊어지면 정보가 희석되어 성능이 저하되는 문제를 해결하기 위해 MoDA 메커니즘이 소개됨.\n2. MoDA는 이전 레이어의 깊이 정보까지 활용하여 현재 레이어에서의 성능을 향상시키며, 하드웨어 효율적인 알고리즘 구현을 통해 높은 효율성을 달성함.\n3. 다양한 실험 결과에서 MoDA는 강력한 기준모델을 지속적으로 능가하며, 깊이 확장에 유망한 기본 요소로서의 역할을 하고 있음.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Cheers: Decoupling Patch Details from Semantic Representations Enables Unified Multimodal Comprehension and Generation",
+    "abstract": "A recent cutting-edge topic in multimodal modeling is to unify visual comprehension and generation within a single model. However, the two tasks demand mismatched decoding regimes and visual representations, making it non-trivial to jointly optimize within a shared feature space. In this work, we present Cheers, a unified multimodal model that decouples patch-level details from semantic representations, thereby stabilizing semantics for multimodal understanding and improving fidelity for image generation via gated detail residuals. Cheers includes three key components: (i) a unified vision tokenizer that encodes and compresses image latent states into semantic tokens for efficient LLM conditioning, (ii) an LLM-based Transformer that unifies autoregressive decoding for text generation and diffusion decoding for image generation, and (iii) a cascaded flow matching head that decodes visual semantics first and then injects semantically gated detail residuals from the vision tokenizer to refine high-frequency content. Experiments on popular benchmarks demonstrate that Cheers matches or surpasses advanced UMMs in both visual understanding and generation. Cheers also achieves 4x token compression, enabling more efficient high-resolution image encoding and generation. Notably, Cheers outperforms the Tar-1.5B on the popular benchmarks GenEval and MMBench, while requiring only 20% of the training cost, indicating effective and efficient (i.e., 4x token compression) unified multimodal modeling. We will release all code and data for future research.",
+    "authors": [
+      "Yichen Zhang",
+      "Da Peng",
+      "Zonghao Guo",
+      "Zijian Zhang",
+      "Xuesong Yang",
+      "Tong Sun",
+      "Shichu Sun",
+      "Yidan Zhang",
+      "Yanghao Li",
+      "Haiyan Zhao",
+      "Wang Xu",
+      "Qi Shi",
+      "Yangang Sun",
+      "Chi Chen",
+      "Shuo Wang",
+      "Yukun Yan",
+      "Xu Han",
+      "Qiang Ma",
+      "Wei Ke",
+      "Liang Wang",
+      "Zhiyuan Liu",
+      "Maosong Sun"
+    ],
+    "likes": 33,
+    "published_date": "Mar 13",
+    "url": "https://huggingface.co/papers/2603.12793",
+    "date_collected": "2026-03-18T07:15:43.005355+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "세부 패치 정보와 의미적 표현의 분리로 통합된 다중모달 이해와 생성 가능하게 함",
+      "abstract": "최근의 다중모달 모델링 연구는 시각적 이해와 생성을 단일 모델 내에서 통합하는 것에 초점을 맞추고 있습니다. 그러나 두 가지 작업은 일치하지 않는 디코딩 규칙과 시각적 표현을 요구하여, 공유된 특징 공간 내에서 동시에 최적화하기가 어렵습니다. 본 논문에서는 세부 패치 정보를 의미적 표현으로부터 분리함으로써, 통합된 다중모달 모델인 Cheers를 제안합니다. 이는 다중모달 이해를 위한 의미를 안정화시키고, 게이트된 디테일 잔차를 통해 이미지 생성의 충실도를 향상시키는 데 도움이 됩니다."
+    },
+    "summary": "1. Cheers는 시각적 정보를 의미적 토큰으로 압축하여 효율적인 LLM 조건부합을 제공하는 통합된 비전 토크나이저를 포함합니다.\n2. LLM 기반 Transformer는 텍스트 생성을 위한 자기회귀 디코딩과 이미지 생성을 위한 확산 디코딩을 하나로 통합합니다.\n3. Cheers는 시각적 의미를 먼저 해독하고, 비전 토크나이저로부터 의미적으로 게이트된 디테일 잔차를 주입하여 고주파 콘텐츠를 개선하는 카스케이드 플로 매칭 헤드를 포함합니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Can Vision-Language Models Solve the Shell Game?",
+    "abstract": "Visual entity tracking is an innate cognitive ability in humans, yet it remains a critical bottleneck for Vision-Language Models (VLMs). This deficit is often obscured in existing video benchmarks by visual shortcuts. We introduce VET-Bench, a synthetic diagnostic testbed featuring visually identical objects that necessitate tracking exclusively through spatiotemporal continuity. Our experiments reveal that current state-of-the-art VLMs perform at or near chance level on VET-Bench, exposing a fundamental limitation: an over-reliance on static frame-level features and a failure to maintain entity representations over time. We provide a theoretical analysis drawing connections to the state-tracking problem, proving that fixed-depth transformer-based VLMs are fundamentally limited in tracking indistinguishable objects without intermediate supervision due to expressivity constraints. To address this, we propose Spatiotemporal Grounded Chain-of-Thought (SGCoT): generating object trajectories as explicit intermediate states. Leveraging Molmo2's object tracking ability, we elicit SGCoT reasoning by fine-tuning on synthesized text-only data for alignment. Our method achieves state-of-the-art accuracy exceeding 90% on VET-Bench, demonstrating that VLMs can reliably solve the video shell-game task end-to-end without external tools. Our code and data are available at https://vetbench.github.io .",
+    "authors": [
+      "Tiedong Liu",
+      "Wee Sun Lee"
+    ],
+    "likes": 33,
+    "published_date": "Mar 9",
+    "url": "https://huggingface.co/papers/2603.08436",
+    "date_collected": "2026-03-18T07:15:43.006457+09:00",
+    "week": "2026-W12",
+    "translation": {
+      "title": "비전-언어 모델이 껍질 게임을 해결할 수 있을까?",
+      "abstract": "시각적 엔티티 추적은 사람들에게 타고난 인지 능력이지만, 비전-언어 모델(Vision-Language Models, VLMs)에게는 여전히 핵심적인 병목 현상으로 남아있습니다. 이 결핍은 기존의 비디오 벤치마크에서 종종 시각적 단축키로 인해 가려져 있습니다. 본 연구에서는 시공간 연속성을 통해 추적이 필요한 모양이 동일한 객체들을 특징으로 하는 VET-Bench를 소개합니다. 실험 결과, 현재 최첨단 VLMs가 VET-Bench 상에서 운이 좋은 수준이거나 거의 그 수준에 머물러 있다는 것을 밝혀내며, 정적 프레임 수준 특징에 과도하게 의존하고 객체 표현을 시간이 지나도 유지하지 못하는 기본적인 한계를 드러냅니다. 우리는 고정된 깊이의 트랜스포머 기반 VLMs가 중간 감독 없이 구별할 수 없는 객체를 추적하는 데 근본적으로 제한되어 있는 것을 입증하는 이론적 분석을 제공합니다. 이를 해결하기 위해 우리는 시공간 기반 사고 연대(Statiotemporal Grounded Chain of Thought, SGCoT)를 제안합니다. 목표는 물체 궤적을 명시적인 중간 상태로 생성하는 것입니다. Molmo2의 물체 추적 능력을 활용해 우리는 SGCoT 추론을 일치시키기 위해 텍스트만으로 구성된 데이터를 통한 미세 조정을 진행합니다. 이 방법은 VET-Bench에서 90% 이상의 최첨단 정확도를 달성하여 VLMs가 외부 도구 없이 비디오 껍질 게임 작업을 믿을 수 있는 수준으로 해결할 수 있음을 보여줍니다. 코드 및 데이터는 https://vetbench.github.io에서 이용 가능합니다."
+    },
+    "summary": "1. VLMs는 어려운 시공간 연속적 추적 작업을 처리하는 데 한계를 보이며, 이를 극복하기 위해 SGCoT를 제안하여 물체 궤적을 생성하는 방법을 제시한다.\n2. 현재의 최첨단 VLMs는 VET-Bench에서 운이나 그 수준 이하의 성능만을 보이며, 정적 프레임 수준 특징에 과도하게 의존하고 있는 한계를 드러낸다.\n3. SGCoT를 활용한 SGCoT에 대한 실험 결과, VLMs가 중간 감독 없이 비디오 껍질 게임 작업을 믿을 수 있을 정도로 고도의 정확도를 달성할 수 있음을 입증한다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  }
+]

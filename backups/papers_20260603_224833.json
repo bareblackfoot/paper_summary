@@ -1,0 +1,301 @@
+[
+  {
+    "title": "Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs",
+    "abstract": "Scientific figures are among the most effective means of communicating complex research ideas, yet producing publication-quality illustrations remains one of the most labor-intensive parts of paper preparation. Existing automated systems each target a single figure type under text-only input, leaving the diversity of types and conditions researchers actually use unaddressed; their raster outputs further cannot be locally revised. Because scientific figures are structured compositions of discrete semantic components, the localized errors generators produce on such layouts demand not a stronger backbone but a harness. We instantiate this harness in two complementary systems: Crafter, a multi-agent harness for figure generation that generalizes across figure types and input conditions without architectural changes, and CraftEditor, which applies the same pattern to convert raster outputs into editable SVGs. Moreover, we introduce CraftBench, a benchmark spanning three figure types and four input conditions with human quality annotation. Experiments show that Crafter substantially outperforms both standalone generators and the agentic baseline on PaperBanana-Bench and CraftBench, with ablations confirming each component's independent contribution; CraftEditor faithfully converts outputs into editable SVGs that surpass all baselines. Our code and benchmark are available at https://github.com/HaozheZhao/Crafter.",
+    "authors": [
+      "Haozhe Zhao",
+      "Shuzheng Si",
+      "Zhenhailong Wang",
+      "Zheng Wang",
+      "Liang Chen",
+      "Xiaotong Li",
+      "Zhixiang Liang",
+      "Maosong Sun",
+      "Minjia Zhang"
+    ],
+    "likes": 107,
+    "published_date": "May 28",
+    "url": "https://huggingface.co/papers/2605.30611",
+    "date_collected": "2026-06-03T07:48:08.395553+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "다양한 입력으로부터 편집 가능한 과학 그림 생성을 위한 다중 에이전트 하네스 Crafter",
+      "abstract": "과학 그림은 복잡한 연구 아이디어를 전달하는 가장 효과적인 방법 중 하나이지만, 출판 품질의 삽화를 제작하는 것은 논문 작성의 가장 노동 집약적인 부분 중 하나입니다. 기존의 자동화된 시스템들은 각각 텍스트만을 입력으로 하는 단일 그림 유형을 대상으로 하며, 연구자들이 실제로 사용하는 다양한 유형과 조건들을 다루지 못하며, 그들의 래스터 출력물은 지역적으로 수정할 수 없습니다. 과학 그림은 이산적 의미 구성 요소들의 구조화된 결합물이므로, 이러한 레이아웃에서 생성기가 생산하는 지역적 오류들은 더 튼튼한 기반보다는 하네스를 필요로 합니다. 우리는 두 가지 보완적 시스템인 다중 에이전트 하네스 Crafter와 동일한 패턴을 적용해 래스터 출력물을 편집 가능한 SVG로 변환하는 CraftEditor를 구현했습니다. 또한 인간 품질 주석이 추가된 세 가지 그림 유형과 네 가지 입력 조건을 포괄하는 CraftBench를 소개합니다. 실험 결과, Crafter가 PaperBanana-Bench와 CraftBench에서 독립된 기여를 확인하는 이러한 구성 요소의 각각을 확인하여 독립적인 기여를 확인하며, CraftEditor는 모든 기준선을 뛰어넘는 편집 가능한 SVG로 출력물을 충실히 변환합니다. 우리의 코드와 벤치마크는 https://github.com/HaozheZhao/Crafter에서 확인할 수 있습니다."
+    },
+    "summary": "1. 과학 그림은 복잡한 연구 아이디어를 전달하는 효과적인 수단이지만, 출판 품질의 삽화 제작은 논문 작성에서 가장 노동 집약적인 부분 중 하나다.\n2. Crafter는 다양한 그림 유형과 입력 조건을 대상으로 하는 다중 에이전트 하네스로, 래스터 출력물을 지역적으로 수정할 수 있게 해주는 시스템이다.\n3. CraftEditor는 Crafter와 동일한 패턴을 적용하여 래스터 출력물을 편집 가능한 SVG로 변환하는데, 이때 인간 품질 주석이 추가된 삽화를 포괄하는 벤치마크인 CraftBench가 사용된다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "GrepSeek: Training Search Agents for Direct Corpus Interaction",
+    "abstract": "Large Language Model (LLM) search agents have shown strong promise for knowledge-intensive language tasks through multiple rounds of reasoning and information retrieval. Most existing systems access information using a retriever that takes a keyword or natural language query and returns a ranked list of documents using an index of pre-computed document representations. In this work, we explore a complementary perspective in which the search agent treats the corpus itself as the search environment and finds evidence by issuing executable shell commands. We introduce GrepSeek, an optimized direct corpus interaction (DCI) search agent that trains a compact search agent to find, filter, and compose evidence from large text corpora. To address the instability of learning behavior directly with reinforcement learning on large corpora, we propose a two-stage training pipeline. First, we construct a cold-start dataset using an answer-aware Tutor and answer-blind Planner to generate verified, causally grounded search trajectories. Second, we refine the initialized policy with Group Relative Policy Optimization (GRPO), allowing the agent to improve its task-oriented search behavior through direct interaction with the corpus. To make DCI practical at scale, we further use a semantics-preserving sharded-parallel execution engine that accelerates shell-based retrieval by up to 7.6times while preserving byte-exact equivalence with sequential execution of the shell command. Experiments across seven open-domain question answering benchmarks show that GrepSeek achieves the strongest overall token-level F_1 and Exact Match. Our analysis also highlights the limitations of purely lexical interaction on queries with substantial surface-form variation, suggesting DCI as a practical and competitive method for search agents that can complement existing retrieval paradigms in the real world.",
+    "authors": [
+      "Alireza Salemi",
+      "Chang Zeng",
+      "Atharva Nijasure",
+      "Jui-Hui Chung",
+      "Razieh Rahimi",
+      "Fernando Diaz",
+      "Hamed Zamani"
+    ],
+    "likes": 94,
+    "published_date": "May 28",
+    "url": "https://huggingface.co/papers/2605.29307",
+    "date_collected": "2026-06-03T07:48:08.397860+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "GrepSeek: 직접 말뭉치 상호작용을 위한 검색 에이전트 훈련",
+      "abstract": "대규모 언어 모델 (Large Language Model, LLM) 검색 에이전트는 추론 및 정보 검색을 여러 번 수행함으로써 지식 중심 언어 작업에 대한 강력한 가능성을 보여주었습니다. 본 연구에서는 검색 에이전트가 말뭉치 자체를 검색 환경으로 취급하고 실행 가능한 셸 명령을 사용하여 증거를 찾는 보완적인 관점을 탐구합니다. GrepSeek라는 최적화된 직접 말뭉치 상호작용 (Direct Corpus Interaction, DCI) 검색 에이전트를 소개하며, 이는 큰 텍스트 말뭉치에서 증거를 찾고 필터링하며 구성하는 간결한 검색 에이전트를 훈련합니다. 대규모 말뭉치에서 강화 학습을 통해 직접 학습 행위의 불안정성을 해결하기 위해 두 단계의 훈련 파이프라인을 제안합니다."
+    },
+    "summary": "1. GrepSeek는 실행 가능한 셸 명령을 사용하여 말뭉치에서 증거를 찾고 필터링하며 구성하는 간결한 검색 에이전트를 훈련하는데, 강화 학습의 불안정성을 해결하기 위해 두 단곈의 훈련 절차를 사용합니다.\n2. DCI를 실용적으로 만들기 위해 GrepSeek는 Group Relative Policy Optimization (GRPO)을 활용하여 에이전트가 말뭉치와 직접 상호작용하면서 작업 지향적 검색 행동을 개선합니다.\n3. GrepSeek는 대규모 열린 도메인 질의 응답 벤치마크에서 가장 강력한 전체적 토큰 수준 F_1과 정확 일치를 달성하며, 순차적 셸 명령 실행과 바이트 정확한 동등성을 보존하면서 셸 기반 검색을 최대 7.6배 가속화하는 세맨틱 보존 샤드 병렬 실행 엔진을 사용합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation",
+    "abstract": "LLM agents are increasingly expected not only to complete isolated tasks, but also to carry bounded representations of human expertise, judgment, and interaction style. Building such person-grounded agents remains difficult because actionable knowledge associated with a person or role is usually embedded in heterogeneous traces rather than written as clean instructions. Existing memory and persona systems capture fragments of this evidence, while skill frameworks provide portable packaging formats; however, there is no end-to-end workflow for distilling these traces into inspectable, correctable, and agent-usable skills. We present an automated trace-to-skill distillation system for generating person-grounded AI skills via expert knowledge distillation. Given materials from a target person or role, COLLEAGUE.SKILL produces a versioned skill package with two coordinated tracks: a capability track for practices, mental models, and decision heuristics, and a bounded behavior track for communication style, interaction rules, and correction history. The package can be inspected, invoked, updated through natural-language feedback, rolled back, installed across agent hosts, and optionally prepared for controlled distribution. We describe the artifact contract, generation workflow, correction lifecycle, deployment surface, and domain presets implemented in the open-source system. At the time of writing, the public repository has approximately 18.5k GitHub stars; the gallery lists 215 skills from 165 contributors and more than 100k cumulative stars across listed skill cards. The system illustrates how person-grounded skills can be represented as portable, correctable packages rather than opaque prompts or hidden memories.",
+    "authors": [
+      "Tianyi Zhou",
+      "Dongrui Liu",
+      "Leitao Yuan",
+      "Jing Shao",
+      "Xia Hu"
+    ],
+    "likes": 92,
+    "published_date": "May 29",
+    "url": "https://huggingface.co/papers/2605.31264",
+    "date_collected": "2026-06-03T07:48:08.400057+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "COLLEAGUE.SKILL: 전문가 지식 증류를 통한 자동 AI 기술 생성",
+      "abstract": "LLM 에이전트는 고립된 작업 완료뿐만 아니라 인간의 전문 지식, 판단 및 상호 작용 스타일에 대한 제한된 표현을 가져야 하는 요구가 점점 더 커지고 있습니다. 이러한 인간 중심 에이전트를 구축하는 것은 도전적인데, 사람 또는 역할과 연관된 실용적인 지식들은 일반적으로 깨끗한 명령으로 작성된 것이 아닌 이질적인 흔적에 잠겨 있습니다. 기존의 메모리 및 페르소나 시스템은 이러한 증거 조각들을 캡처하나, 기술 프레임워크는 휴대 가능한 포장 형식을 제공할 뿐입니다. 그러나 이러한 흔적을 검사 가능하고 수정 가능하며 에이전트에서 사용 가능한 기술로 추출하기 위한 완전한 작업 과정은 존재하지 않습니다. 우리는 전문가 지식 증류를 통해 인간 중심 AI 기술을 생성하기 위한 자동 추적-기술 증류 시스템을 제안합니다. COLLEAGUE.SKILL은 대상 사람 또는 역할로부터 재료를 받아 실무, 정신 모델 및 의사 결정 휴리스틱에 대한 능력 트랙과 커뮤니케이션 스타일, 상호작용 규칙 및 수정 기록에 대한 제한된 행동 트랙을 가진 버전화된 기술 패키지를 생성합니다. 이 패키지는 검사, 호출, 자연어 피드백을 통한 업데이트, 롤백, 에이전트 호스트 전체에 설치 및 선택적으로 제어된 배포 준비를 할 수 있습니다. 우리는 오픈 소스 시스템에 구현된 아티팩트 계약, 생성 워크플로우, 수정 수명주기, 배포 표면 및 도메인 프리셋을 설명합니다. 작성 시점에서 공개 저장소에는 약 18,500개의 GitHub 스타가 있으며, 갤러리에는 165명의 기여자가 참여한 215개의 기술이 나열되어 있으며, 나열된 기술 카드 전체에서 약 10만 개 이상의 스타가 있습니다. 이 시스템은 인간 중심 기술을 투명한 프롬프트나 숨겨진 기억이 아닌 휴대 가능하고 수정 가능한 패키지로 표현하는 방법을 보여줍니다."
+    },
+    "summary": "1. LLM 에이전트는 인간의 전문 지식과 상호 작용 스타일을 효과적으로 모방할 수 있도록 자동 AI 기술 생성 시스템이 필요하다.\n2. COLLEAGUE.SKILL은 전문가 지식 증류를 통해 특정 사람이나 역할과 관련된 능력과 행동을 포장 가능한 형태로 만들어준다.\n3. 이 시스템은 효과적인 스킬 생성, 유지 및 배포를 위한 자연어 피드백과 스킬 패키지 관리 과정을 제시한다.",
+    "categories": [
+      "LLM",
+      "기타"
+    ]
+  },
+  {
+    "title": "Trust-Region Behavior Blending for On-Policy Distillation",
+    "abstract": "On-policy distillation (OPD) trains a student on prefixes sampled from its own policy while matching a stronger teacher. This addresses the prefix mismatch of offline distillation, but early student rollouts can still be poor, placing teacher supervision on weak or low-quality prefixes. We propose Trust-Region behavior Blending (TRB), a warmup method that replaces the early rollout policy with the closest-to-teacher behavior policy inside a student-centered KL trust region, while keeping the per-prefix reverse-KL OPD loss unchanged. The KL budget is annealed to zero, so training returns to pure student rollouts after warmup. Across two math-reasoning distillation settings, TRB attains the strongest average among the compared methods.",
+    "authors": [
+      "Daniil Plyusov",
+      "Alexey Gorbatovski",
+      "Alexey Malakhov",
+      "Nikita Balagansky",
+      "Boris Shaposhnikov",
+      "Daria Korotyshova",
+      "Daniil Gavrilov"
+    ],
+    "likes": 59,
+    "published_date": "May 29",
+    "url": "https://huggingface.co/papers/2605.31159",
+    "date_collected": "2026-06-03T07:48:08.402323+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "Trust-Region Behavior Blending를 위한 신뢰 영역 행동 혼합",
+      "abstract": "온-폴리시 디스틸레이션(OPD)은 학생을 강한 선생님과 일치시키면서 자신의 정책에서 샘플링된 접두어로 학습합니다. 이는 오프라인 디스틸레이션의 접두어 불일치 문제에 대응하지만 초기 학생 롤아웃은 여전히 미흡할 수 있어 선생님 감독이 약하거나 저품질 접두어에 놓일 수 있습니다. 저희는 Trust-Region behavior Blending (TRB)을 제안합니다. 이는 학생 중심의 KL 신뢰 영역 내에서 초기 롤아웃 정책을 가장 가까운 선생님 행동 정책으로 대체하는 워마합 방법으로, 접두어 당 역방향-KL OPD 손실을 변경하지 않습니다. KL 예산은 0으로 단계적으로 줄어들어 워마합 이후 학습이 순수한 학생 롤아웃으로 돌아갑니다. 두 개의 수학 추론 디스틸레이션 세팅에서 TRB는 비교된 방법 중에서 가장 강력한 평균을 달성합니다."
+    },
+    "summary": "1. 온-폴리시 디스틸레이션은 강한 선생님과 매칭하면서 학생을 자신의 정책에서 샘플링된 접두어로 학습시키는데, Trust-Region Behavior Blending은 초기 롤아웃 정책을 개선하여 더 강력한 성능을 보입니다.\n2. TRB는 KL 신뢰 영역을 활용하여 초기 학생 롤아웃을 개선함으로써 선생님 감독이 저하되는 현상을 개선하고, 순수한 학생 롤아웃으로 다시 돌아가기 위해 KL 예산을 0으로 줄여나갑니다.\n3. 수학 추론 디스틸레이션 과정에서 TRB는 비교 대조 방법 중에서 가장 뛰어난 성과를 보이며, 학습 성능을 최대화하는 데 효과적입니다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters",
+    "abstract": "Parameter-efficient fine-tuning (PEFT) is usually treated as a cheaper alternative to full fine-tuning. We study a broader role: small trainable adapters as persistent local state on top of strong shared foundation models. In this framing, the base model provides shared competence while adapters carry instance-specific behavior such as preferences, skills, tool habits, and memory-like updates. We organize the problem around three scaling axes: Scale Up, where stronger shared priors make small local updates more useful; Scale Down, where we study how small adapters can be while remaining reliable; and Scale Out, where many persistent adapted instances coexist. MinT provides one infrastructure example for managing adapter identity, revision, provenance, evaluation, and serving residency. Together, the results suggest that PEFT can be a compact substrate for persistent personal models rather than only a budget substitute for full fine-tuning.",
+    "authors": [
+      "Mind Lab",
+      "Song Cao",
+      "Vic Cao",
+      "Kaijie Chen",
+      "Bunny Fan",
+      "Hera Feng",
+      "Huan Feng",
+      "Arthur Fu",
+      "Jun Gao",
+      "Hongquan Gu",
+      "Aaron Guan",
+      "Mutian Hong",
+      "Hailee Hou",
+      "Peixuan Hua",
+      "Charles Huang",
+      "Miles Jiang",
+      "Nora Jiang",
+      "Yuyi Jiang",
+      "Autumn Jin",
+      "Fancy Kong",
+      "Kyrie Lei",
+      "Alexy Li"
+    ],
+    "likes": 57,
+    "published_date": "Jun 1",
+    "url": "https://huggingface.co/papers/2606.02437",
+    "date_collected": "2026-06-03T07:48:08.405333+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "PEFT의 스케일링에 관한 연구: 조백만 개의 개인 모델을 가진 십조 개 파라미터로",
+      "abstract": "매개 변수 효율적 세밀 조정(PEFT)은 일반적으로 완전한 세밀 조정의 보다 저렴한 대안으로 여겨진다. 우리는 더 광범위한 역할을 연구한다: 강력한 공유된 기본 모델 위에 지속적인 지역 상태로 작은 훈련 가능한 어댑터들을 취하는 것. 이러한 프레임에서 기본 모델은 공유된 능력을 제공하고 어댑터는 선호도, 기술, 도구 습관 및 메모리와 같은 개별 행동을 나타낸다. 우리는 세 가지 스케일링 축을 중심으로 문제를 구성한다: 스케일 업, 강력한 공유된 사전 지식이 작은 지역적 업데이트를 더 유용하게 만드는 과정; 스케일 다운, 작은 어댑터가 신뢰할 수 있는 채로 어떻게 유지될 수 있는지 연구; 그리고 스케일 아웃, 많은 지속적으로 적응된 인스턴스가 공존할 수 있는지의 여부. MinT는 어댑터 신분, 수정, 기원, 평가 및 제공 체류를 관리하는 인프라 예제를 제공한다. 이러한 결과들은 PEFT가 완전한 세밀 조정에 대한 예산 대체물로서뿐만 아니라 지속적인 개인 모델을 위한 조밀한 기저물질이 될 수 있다는 것을 시사한다."
+    },
+    "summary": "1. 매개 변수 효율적 세밀 조정(PEFT)은 강력한 공유된 기반 모델 위에 지속적인 지역 상태로 작은 어댑터들을 두어 지역별 행동을 나타내는 것을 연구한다.\n2. 이 연구는 세 가지 스케일링 축을 중심으로: 스케일 업, 스케일 다운, 스케일 아웃 으로 문제를 구성하며 MinT를 통해 어댑터 신분, 수정, 기원, 평가 및 제공 체류를 관리한다.\n3. 연구 결과는 PEFT가 지속적인 개인 모델을 위한 조밀한 기저물질로 활용될 수 있음을 시사한다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks",
+    "abstract": "As agent capabilities advance, existing benchmarks, such as τ^2-Bench, are becoming increasingly saturated. Yet constructing new benchmark tasks remains complex, costly, and labor-intensive. Moreover, the standard approach, in which scenarios are first written in natural language and then mapped to tool sequences, captures only a narrow subset of the tool-use patterns agents exercise. In this paper, we address these problems by reversing the task construction process. We propose TASTE: Task Synthesis from Tool Sequence Evolution, an automatic method that generates challenging tasks with broader tool-use coverage. TASTE utilizes an Adaptive Contrastive n-gram model trained on LLM-judged validity signals. This enables sampling valid tool sequences that cover a vast range of tool combinations. TASTE then selects representative sequences from the pool via clustering, instantiates them into complete benchmark tasks, and refines them through iterative difficulty evolution. Using TASTE, we construct τ^c-Bench, a challenging extension of the three domains of τ^2-Bench. We evaluate 11 agent/user LLM pairs and find that models nearly saturating τ^2-Bench suffer severe performance drops on our tasks (e.g., Gemini-3-Flash falls from 0.82!-!0.94 to 0.28!-!0.61). Beyond increasing difficulty, our generated tasks more than double the number of unique tool combinations agents must execute. Our results suggest high scores on existing benchmarks often reflect saturation rather than robust task-solving ability. By automating the generation of difficult, high-coverage benchmarks, TASTE enables continuous, scalable evaluation of future agents.",
+    "authors": [
+      "Tomer Keren",
+      "Nitay Calderon",
+      "Asaf Yehudai",
+      "Yotam Perlitz",
+      "Michal Shmueli-Scheuer",
+      "Roi Reichert"
+    ],
+    "likes": 53,
+    "published_date": "May 27",
+    "url": "https://huggingface.co/papers/2605.28556",
+    "date_collected": "2026-06-03T07:48:08.407479+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "에이전트 벤치마크의 지각과 난이도 향상",
+      "abstract": "에이전트 역량이 발전함에 따라, 기존 벤치마크인 τ^2-Bench 등은 점차 포화 상태에 이르고 있다. 그러나 새로운 벤치마크 작업을 구성하는 것은 복잡하고 비용이 많이 들며 노동 집약적이다. 본 논문에서는 이러한 문제를 해결하기 위해 TASTE: Tool Sequence Evolution으로부터 과제 합성이라는 자동 방법을 제안한다. 이를 통해 더욱 다양한 도구 사용 범위를 갖는 어려운 작업을 생성할 수 있다."
+    },
+    "summary": "1. 에이전트 벤치마크의 포화 상태 해결을 위해 새로운 벤치마크 작업을 생성하는 TASTE 방법 제안.\n2. TASTE는 Adaptive Contrastive n-gram 모델을 기반으로 하여 다양한 도구 조합을 포괄하는 유효한 도구 시퀀스를 샘플링하고, 어려움 진화를 통해 벤치마크 작업을 개선함.\n3. τ^c-Bench를 구성하여 성능 향상을 보이며 도구 조합 수를 두 배로 늘릴 수 있었으며, 기존 벤치마크의 높은 점수가 아닌 과제 해결 능력의 포화를 나타낼 수 있다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Representation Forcing for Bottleneck-Free Unified Multimodal Models",
+    "abstract": "Unified multimodal models (UMMs) aim to handle perception and generation in a single model. Yet existing UMMs still rely on a frozen, separately pretrained VAE for image generation, imposing a structural bottleneck. Naively removing it introduces a quality gap, as the model must learn both high-level structure and low-level details from raw pixels. In this paper, we propose Representation Forcing (RF), a technique that closes this gap by making representation prediction a native capability of the model. Concretely, RF forces the decoder to autoregressively predict visual representations as intermediate tokens before pixels; these tokens then stay in context to guide pixel diffusion within the same backbone. By turning representations from perception outputs into generation targets, RF eliminates the need for any external generative latent space. We find that RF benefits both understanding and generation. On image generation, our pixel-space model with RF matches state-of-the-art VAE-based unified models. On image understanding, pixel-space RF generally outperforms its VAE-based variant. Together, these results offer an effective step toward end-to-end, bottleneck-free UMMs.",
+    "authors": [
+      "Yuqing Wang",
+      "Zhijie Lin",
+      "Ceyuan Yang",
+      "Yang Zhao",
+      "Fei Xiao",
+      "Hao He",
+      "Qi Zhao",
+      "Zihan Ding",
+      "Fuyun Wang",
+      "Shuai Wang",
+      "Youliang Zhang",
+      "Haoqi Fan",
+      "Xihui Liu"
+    ],
+    "likes": 47,
+    "published_date": "May 29",
+    "url": "https://huggingface.co/papers/2605.31604",
+    "date_collected": "2026-06-03T07:48:08.410076+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "병목 현상 없는 통합 다중모달 모델을 위한 표현 강제",
+      "abstract": "통합 다중모달 모델(Unified multimodal models, UMMs)은 인식과 생성을 하나의 모델로 처리하는 것을 목표로 합니다. 그러나 기존 UMMs는 아직도 이미지 생성을 위해 별도로 사전훈련된 VAE를 사용하는데, 이는 구조적인 병목 현상을 가져옵니다. 이를 단순히 제거하는 것은 모델이 고수준 구조와 낮은 수준 디테일을 원본 픽셀에서 모두 학습해야 하기 때문에 품질 차이가 발생합니다. 본 논문에서는 이 차이를 닫는 기법으로 표현 강제(Representation Forcing, RF)를 제안합니다. 구체적으로 RF는 디코더에게 픽셀 이전에 시각적 표현을 중간 토큰으로 자기회귀적으로 예측하도록 하며, 이러한 토큰은 그 후 픽셀 확산을 도울 맥락 내에 남아 있습니다. RF는 인식 출력의 표현을 생성 목표로 변환하여 외부 생성적 잠재 공간의 필요성을 제거합니다. RF는 이해와 생성 양쪽에 이점이 있음을 발견했습니다. 이미지 생성에서 RF를 사용한 픽셀 공간 모델은 최신 VAE 기반 통합 모델에 필적합니다. 또한 이미지 이해에서는 픽셀 공간 RF가 일반적으로 VAE 기반 변형을 능가합니다. 이러한 결과는 병목 현상 없는 통합 다중모달 모델을 위한 효과적인 한 걸음을 제시합니다."
+    },
+    "summary": "1. 표현 강제 기법(RF)은 통합 다중모달 모델에서 외부 생성적 잠재 공간 없이 이미지 생성과 이해에 이점을 제공합니다.\n2. RF는 디코더에게 시각적 표현을 예측하도록 함으로써 모델의 품질을 향상시키고, 픽셀 확산을 도울 맥락을 제공합니다.\n3. 결과적으로 RF를 적용한 픽셀 공간 모델은 이미지 생성에서 최신 VAE 기반 모델과 맞먹으며, 이미지 이해에서 우수한 성능을 보입니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Mellum2 Technical Report",
+    "abstract": "We present Mellum 2, an open-weight 12B-parameter Mixture-of-Experts (MoE) language model with 2.5B active parameters per token. Mellum 2 is a general-purpose language model specialized in software engineering, spanning code generation and editing, debugging, multi-step reasoning, tool use and function calling, agentic coding, and conversational programming assistance, and it is the successor to the completion-focused 4B dense Mellum model. The architecture builds on the Mixture-of-Experts (64 experts, 8 active) and combines Grouped-Query Attention with 4 KV heads, Sliding Window Attention on three of every four layers, and a single Multi-Token Prediction head that doubles as both an auxiliary pre-training objective and a built-in draft model for speculative decoding; each choice was validated by ablation with inference efficiency on commodity GPUs as a design constraint. Pre-training spans approximately 10.6 trillion tokens through a three-phase curriculum that progressively shifts the mixture from diverse web data toward curated code and mathematical content, optimized with Muon under FP8 hybrid precision and a Warmup-Hold-Decay schedule with linear decay to zero. The pre-trained base is extended to a 128K context window via a layer-selective YaRN and then post-trained in two stages (supervised fine-tuning followed by RLVR), yielding two released variants: an Instruct model that answers directly and a Thinking model that emits an explicit reasoning trace before its final answer. Across code generation, math and reasoning, tool use, knowledge, and safety benchmarks, Mellum 2 is competitive with open-weight baselines in the 4B-14B range while running at the per-token compute of a 2.5B dense model. We release the base, instruct, and thinking checkpoints, together with this report on the architecture decisions, data pipeline, and training recipe behind them, under the Apache 2.0 license.",
+    "authors": [
+      "Marko Kojic",
+      "Ivan Bondyrev",
+      "Aral de Moor",
+      "Joseph Shtok",
+      "Petr Borovlev",
+      "Kseniia Lysaniuk",
+      "Madeeswaran Kannan",
+      "Ivan Dolgov",
+      "Nikita Pavlichenko"
+    ],
+    "likes": 45,
+    "published_date": "May 29",
+    "url": "https://huggingface.co/papers/2605.31268",
+    "date_collected": "2026-06-03T07:48:08.412442+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "Mellum2 기술 보고서",
+      "abstract": "이 보고서는 토큰 당 2.5B개의 활성 파라미터를 가지는 12B-parameter MoE(전문가들의 혼합) 언어 모델인 Mellum 2를 소개합니다. Mellum 2는 코드 생성, 편집, 디버깅, 다단계 추론, 도구 사용 및 함수 호출, 에이전틱 코딩, 대화형 프로그래밍 지원에 특화된 범용 언어 모델로, 완성 중심적인 4B 밀집형 Mellum 모델의 후속 작품입니다. 이 아키텍처는 64개의 전문가와 8개의 활성 모아서를 기반으로 하며, 그룹화된 쿼리 어텐션과 4개의 KV 헤드, 4개의 레이어 중 3개에서 슬라이딩 윈도우 어텐션, 그리고 단일 멀티-토큰 예측 헤드를 결합하고 있습니다. 각 선택은 코모디티 GPU 상에서 추론 효율성을 디자인 제약으로하여 향상되었습니다."
+    },
+    "summary": "1. Mellum 2는 소프트웨어 공학에 특화된 범용 언어 모델로, 코드 생성, 편집, 디버깅, 다단계 추론, 도구 사용 및 함수 호출, 에이전틱 코딩, 대화형 프로그래밍 지원 등 다양한 작업에 경쟁력을 보입니다.\n2. 이 모델은 MoE를 기반으로 한 아키텍처를 활용하며, 다양한 과제들에 효과적으로 대응하기 위해 여러 기술적 요소를 조합하고 있습니다.\n3. Mellum 2는 구글의 4B-14B 범위의 언어 모델과의 성능 경쟁력을 유지하면서도, 2.5B 밀집형 모델의 토큰 당 컴퓨팅 성능을 가지고 있습니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts",
+    "abstract": "Frontier model evaluations are shifting from foundational capabilities (e.g., instruction following and reasoning) toward compositional, agentic ones, but Korean agentic benchmarks remain scarce. We introduce K-BrowseComp, a web-browsing agent benchmark grounded in Korean contexts, consisting of 400 problems. The 300-problem K-BrowseComp-Verified subset is manually constructed and validated by native Korean speakers. On this subset, frontier LLMs, including GPT-5.5, DeepSeek-V4-Pro, and GLM-5.1, reach only 30.00--45.67\\%, a substantial drop from BrowseComp, while Korean LLMs released through Korea's Proprietary AI Foundation Model program obtain only 0.00--10.33\\%. We further construct a 100-problem synthetic split using hard few-shot exemplars and failure-mode-targeted generation to exploit the asymmetry between solving and creating web browsing problems. On the adversarially filtered synthetic diagnostic split, the strongest model reaches only 26.00\\%, and we report this split separately as a targeted stress test. We publicly release our data and code.",
+    "authors": [
+      "Nahyun Lee",
+      "Dongkeun Yoon",
+      "Guijin Son",
+      "Geewook Kim",
+      "Dayoon Ko",
+      "Jeonghun Park",
+      "Haneul Yoo",
+      "Jaewon Cho",
+      "Junghun Park",
+      "Changyoon Lee",
+      "Kyochul Jang",
+      "Jaeyeon Kim",
+      "Eunsu Kim",
+      "Woojin Cho",
+      "Seungone Kim"
+    ],
+    "likes": 43,
+    "published_date": "Jun 1",
+    "url": "https://huggingface.co/papers/2606.02404",
+    "date_collected": "2026-06-03T07:48:08.415154+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "한국어 맥락에 근거한 웹 브라우징 에이전트 평가 기준인 K-BrowseComp",
+      "abstract": "선도적인 모델 평가는 기초적 능력 (예: 지시 따르기 및 추론)에서 조합적이고 에이전트적 능력으로 전환되고 있으나, 한국어 에이전트 평가 기준은 부족하다. 우리는 한국어 맥락에 근거한 400개 문제로 구성된 K-BrowseComp을 소개한다. 300개 문제로 이루어진 K-BrowseComp-Verified 하위집합은 한국 원어민들에 의해 수동으로 작성되고 검증되었다. 이 하위집합에서 선도적인 LLMs인 GPT-5.5, DeepSeek-V4-Pro, GLM-5.1은 BrowseComp 대비 30.00--45.67\\%에 머물며, 한국의 독점 AI 재단 모델 프로그램을 통해 공개된 한국어 LLMs는 0.00--10.33\\%를 얻었다. 우리는 어려운 소연자 예제와 실패 모드 타깃 생성을 사용하여 충실도 생성과 문제 해결 간의 불균형을 활용한 100개 문제의 합성 분할을 더 구축했다. 결과적으로 강력한 모델은 26.00%에 도달했으며, 우리는 이 분할을 특정 스트레스 테스트로 별도로 보고한다. 우리는 데이터와 코드를 공개한다."
+    },
+    "summary": "1. K-BrowseComp은 한국어 맥락에 근거한 웹 브라우징 에이전트 평가 기준이며, 400개의 문제로 구성되었으며, 이 중 300개는 한국어 원어민에 의해 검증되었다.\n2. 선도적인 LLMs와 한국의 LLMs 모델들이 K-BrowseComp-Verified 하위집합에서 낮은 성능을 보이며, 다양한 문제 생성 기법을 통해 합성 분할을 구축하여 모델 성능 차이를 확인하였다.\n3. 결과적으로, 강력한 모델도 26.00%에 머물며, 어려운 문제와 실패 모드에 초점을 맞춘 생성을 통해 해결과 창작 사이의 불균형을 활용했음을 제시하였다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue",
+    "abstract": "Zero-shot text-to-speech (TTS) has improved substantially for single-speaker synthesis, yet expressive long-form multi-speaker dialogue remains difficult. A common workaround is to synthesize each turn with a monologue TTS model and stitch the outputs together. This adds inference cost and often breaks acoustic consistency, conversational coherence, and affective continuity across turns. Recent dialogue TTS systems have begun to address this setting, but they still struggle to keep expressive coherence, controllable speaker switching, and monologue quality at the same time. We present SwanData-Speech and SwanVoice. SwanData-Speech builds monologue and dialogue corpora from in-the-wild audio, using Swan Forced Aligner for pause-aware word-level alignment and RobustMegaTTS3 for pronunciation-hard cases. Built on these data, SwanVoice is a zero-shot TTS model for 1--4 speakers, combining a 25 Hz VAE, raw-text conditioning with pause-aware symbols and pinyin substitution, and a flow-matching DiT with speaker-turn conditioning. Training starts from monologue speech, moves through mixed and real dialogue data, and then uses DiffusionNFT post-training with phone-level and speaker-similarity rewards. On SwanBench-Speech, SwanVoice obtains higher richness and hierarchy scores than all evaluated open-source baselines in both monologue and dialogue settings, while content accuracy remains the main limitation. Audio demos are available at https://swanaigc.github.io//#swanvoice.",
+    "authors": [
+      "Ruiqi Li",
+      "Yu Zhang",
+      "Changhao Pan",
+      "Ke Lei",
+      "Xiang Yin",
+      "Cheng Yang"
+    ],
+    "likes": 39,
+    "published_date": "May 29",
+    "url": "https://huggingface.co/papers/2605.30993",
+    "date_collected": "2026-06-03T07:48:08.417455+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "SwanVoice: 표현력 있는 장문형 제로샷 음성 합성 (Zero-Shot Speech Synthesis) 모노로그 및 대화용",
+      "abstract": "제로샷 텍스트 음성합성(TTS)은 단일 화자 합성에 있어서 상당히 발전했지만, 표현력 있는 장문형 다중 화자 대화는 여전히 어렵습니다. 대화 TTS 시스템들이 있는데도 표현력 일관성을 유지하거나 제어 가능한 스피커 전환과 모노로그 품질을 동시에 유지하는 것에 어려움을 겪고 있습니다. 우리는 SwanData-Speech와 SwanVoice를 제시합니다."
+    },
+    "summary": "1. 단일 화자 및 다중 화자 대화에 사용되는 표현력 있는 장문형 제로샷 TTS 모델인 SwanVoice가 소개되었습니다.\n2. SwanVoice는 다양한 학습 과정을 거쳐 모노로그와 대화 데이터에서 더 높은 품질을 보여주며, 오픈소스 기준으로 높은 품질을 유지합니다.\n3. SwanVoice는 Pause-aware symbol, Pinyin substitution 등 다양한 기술을 활용하여 풍부하고 계층적인 음성을 제공하며, 콘텐츠 정확도는 여전히 주요한 제한 요인입니다.",
+    "categories": [
+      "LLM",
+      "Speech",
+      "Multimodal"
+    ]
+  }
+]

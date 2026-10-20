@@ -1,0 +1,288 @@
+[
+  {
+    "title": "Thinking with Map: Reinforced Parallel Map-Augmented Agent for Geolocalization",
+    "abstract": "The image geolocalization task aims to predict the location where an image was taken anywhere on Earth using visual clues. Existing large vision-language model (LVLM) approaches leverage world knowledge, chain-of-thought reasoning, and agentic capabilities, but overlook a common strategy used by humans -- using maps. In this work, we first equip the model Thinking with Map ability and formulate it as an agent-in-the-map loop. We develop a two-stage optimization scheme for it, including agentic reinforcement learning (RL) followed by parallel test-time scaling (TTS). The RL strengthens the agentic capability of model to improve sampling efficiency, and the parallel TTS enables the model to explore multiple candidate paths before making the final prediction, which is crucial for geolocalization. To evaluate our method on up-to-date and in-the-wild images, we further present MAPBench, a comprehensive geolocalization training and evaluation benchmark composed entirely of real-world images. Experimental results show that our method outperforms existing open- and closed-source models on most metrics, specifically improving Acc@500m from 8.0\\% to 22.1\\% compared to Gemini-3-Pro with Google Search/Map grounded mode.",
+    "authors": [
+      "Yuxiang Ji",
+      "Yong Wang",
+      "Ziyu Ma",
+      "Yiming Hu",
+      "Hailang Huang",
+      "Xuecai Hu",
+      "Guanhua Chen",
+      "Liaoni Wu",
+      "Xiangxiang Chu"
+    ],
+    "likes": 129,
+    "published_date": "Jan 8",
+    "url": "https://huggingface.co/papers/2601.05432",
+    "date_collected": "2026-01-13T07:08:39.759519+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "지도와 함께 생각하기: 지리위치파악을 위한 강화된 병렬 지도 보강 에이전트",
+      "abstract": "이미지 지리위치파악 작업은 시각적 단서를 사용하여 지구상의 어디에서든 이미지가 촬영된 위치를 예측하는 것을 목표로 합니다. 기존의 대규모 비전-언어 모델(LVLM) 접근 방식은 세상의 지식, 사고 체인, 에이전트 능력을 활용하지만 인간들이 사용하는 일반적인 전략 중 하나인 지도 사용을 무시합니다. 본 연구에서는 우선 모델에 '지도와 함께 생각하기' 능력을 부여하고 이를 에이전트-지도 루프로 구성합니다. 우리는 이를 위해 에이전트 강화 학습(RL) 및 병렬 테스트 시간 스케일링(TTS)을 포함한 두 단계 최적화 체계를 개발했습니다."
+    },
+    "summary": "1. 기존의 대규모 비전-언어 모델 접근 방식과 달리, 본 연구는 지리위치파악 과정에서 지도 활용의 중요성을 강조하고, 에이전트-지도 루프로 구성된 두 단계 최적화 체계를 개발했습니다.\n2. 에이전트 강화 학습은 모델의 에이전트 능력을 강화하여 샘플링 효율성을 향상시키고, 병렬 TTS는 최종 예측을 내리기 전에 모델이 여러 후보 경로를 탐색할 수 있도록 하여 지리위치파악에 중요합니다.\n3. 최근 및 실제 이미지로 모델을 평가하기 위해 MAPBench를 제안하며 실험 결과는 우리 방법이 Gemini-3-Pro와 비교하여 Acc@500m을 8.0%에서 22.1%로 향상시킴을 보여줍니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MMFormalizer: Multimodal Autoformalization in the Wild",
+    "abstract": "Autoformalization, which translates natural language mathematics into formal statements to enable machine reasoning, faces fundamental challenges in the wild due to the multimodal nature of the physical world, where physics requires inferring hidden constraints (e.g., mass or energy) from visual elements. To address this, we propose MMFormalizer, which extends autoformalization beyond text by integrating adaptive grounding with entities from real-world mathematical and physical domains. MMFormalizer recursively constructs formal propositions from perceptually grounded primitives through recursive grounding and axiom composition, with adaptive recursive termination ensuring that every abstraction is supported by visual evidence and anchored in dimensional or axiomatic grounding. We evaluate MMFormalizer on a new benchmark, PhyX-AF, comprising 115 curated samples from MathVerse, PhyX, Synthetic Geometry, and Analytic Geometry, covering diverse multimodal autoformalization tasks. Results show that frontier models such as GPT-5 and Gemini-3-Pro achieve the highest compile and semantic accuracy, with GPT-5 excelling in physical reasoning, while geometry remains the most challenging domain. Overall, MMFormalizer provides a scalable framework for unified multimodal autoformalization, bridging perception and formal reasoning. To the best of our knowledge, this is the first multimodal autoformalization method capable of handling classical mechanics (derived from the Hamiltonian), as well as relativity, quantum mechanics, and thermodynamics. More details are available on our project page: MMFormalizer.github.io",
+    "authors": [
+      "Jing Xiong",
+      "Qi Han",
+      "Yunta Hsieh",
+      "Hui Shen",
+      "Huajian Xin",
+      "Chaofan Tao",
+      "Chenyang Zhao",
+      "Hengyuan Zhang",
+      "Taiqiang Wu",
+      "Zhen Zhang",
+      "Haochen Wang",
+      "Zhongwei Wan",
+      "Lingpeng Kong",
+      "Ngai Wong"
+    ],
+    "likes": 94,
+    "published_date": "Jan 6",
+    "url": "https://huggingface.co/papers/2601.03017",
+    "date_collected": "2026-01-13T07:08:39.761156+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "MMFormalizer: 야생에서의 다중모달 자동 정형화",
+      "abstract": "자연어 수학을 형식적인 명제로 변환하여 기계 추론을 가능케 하는 자동 정형화는, 물리학이 시각 요소로부터 숨겨진 제약(예: 질량 또는 에너지)을 추론하는 것을 필요로 하는 물리적 세계의 다중모달성으로 인해 야생에서 근본적인 도전을 맞이합니다. 이를 해결하기 위해 우리는 MMFormalizer를 제안하는데, 이는 실제 수학적 및 물리적 도메인의 엔티티들을 적응적으로 그라운딩하여 텍스트 이상의 자동 정형화를 확장합니다. MMFormalizer는 반복적으로 눈으로 본 원시 요소로부터 형식적 명제를 재귀적 그라운딩과 공리 합성을 통해 구성하며, 적응적 재귀 종료는 모든 추상화가 시각적 증거에 의해 지지되고 차원적 또는 공리적 그라운딩에 고정된 것을 보장합니다. MathVerse, PhyX, Synthetic Geometry 및 Analytic Geometry에서 선별된 샘플 115개로 이루어진 새로운 벤치마크인 PhyX-AF를 통해 MMFormalizer를 평가합니다. 결과는 GPT-5 및 Gemini-3-Pro와 같은 최신 모델이 가장 높은 컴파일 및 의미적 정확도를 달성하는데, GPT-5는 물리적 추론에서 뛰어나며, 기하학이 여전히 가장 어려운 도메인임을 보여줍니다. 전반적으로, MMFormalizer는 지각과 형식적 추론을 이어주는 확장 가능한 다중모달 자동 정형화 프레임워크를 제공합니다. 우리의 지식으로는, 이는 카멜턴식(Hamiltonian)에서 파생된 고전역학 뿐만 아니라 상대성이론, 양자역학 및 열역학을 다룰 수 있는 최초의 다중모달 자동 정형화 방법입니다. 프로젝트 페이지 MMFormalizer.github.io에서 자세한 내용을 확인할 수 있습니다."
+    },
+    "summary": "1. 자동 정형화를 다중모달 환경에서 처리하기 위해 MMFormalizer가 제안된다.\n2. MMFormalizer는 시각 증거에 기반한 형식적 명제를 재귀적으로 생성함으로써 다중모달 자동 정형화를 실현한다.\n3. Geeteepee-5(GPT-5)와 Gemini-3-Pro 등의 모델이 높은 정확도를 보이며, 물리적 추론에서 특히 뛰어나다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "CaricatureGS: Exaggerating 3D Gaussian Splatting Faces With Gaussian Curvature",
+    "abstract": "A photorealistic and controllable 3D caricaturization framework for faces is introduced. We start with an intrinsic Gaussian curvature-based surface exaggeration technique, which, when coupled with texture, tends to produce over-smoothed renders. To address this, we resort to 3D Gaussian Splatting (3DGS), which has recently been shown to produce realistic free-viewpoint avatars. Given a multiview sequence, we extract a FLAME mesh, solve a curvature-weighted Poisson equation, and obtain its exaggerated form. However, directly deforming the Gaussians yields poor results, necessitating the synthesis of pseudo-ground-truth caricature images by warping each frame to its exaggerated 2D representation using local affine transformations. We then devise a training scheme that alternates real and synthesized supervision, enabling a single Gaussian collection to represent both natural and exaggerated avatars. This scheme improves fidelity, supports local edits, and allows continuous control over the intensity of the caricature. In order to achieve real-time deformations, an efficient interpolation between the original and exaggerated surfaces is introduced. We further analyze and show that it has a bounded deviation from closed-form solutions. In both quantitative and qualitative evaluations, our results outperform prior work, delivering photorealistic, geometry-controlled caricature avatars.",
+    "authors": [
+      "Eldad Matmon",
+      "Amit Bracha",
+      "Noam Rotstein",
+      "Ron Kimmel"
+    ],
+    "likes": 44,
+    "published_date": "Jan 6",
+    "url": "https://huggingface.co/papers/2601.03319",
+    "date_collected": "2026-01-13T07:08:39.762283+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "카리커처GS: 가우시안 곡률을 강조한 3D 가우시안 스플래팅 얼굴 핥기",
+      "abstract": "안면을 위한 사실적이고 조절 가능한 3D 카리커처화 프레임워크가 소개됩니다. 우리는 텍스처와 결합된 내재 가우시안 곡률 기반 표면 과장 기술로 시작하는데, 이 기술은 종종 과도하게 부드러운 렌더를 만들어냅니다. 이를 해결하기 위해 최근 실제 뷰포인트 아바타를 생성하는 데 성공한 3D 가우시안 스플래팅 (3DGS)을 활용합니다. 다시말해, 이를 이용해 실시간 변형을 달성하기 위해 원래 모양과 과장된 표면 사이의 효율적인 보간 방법을 소개합니다. 또한 우리는 분석하여 이것이 폐쇄형 해들의 제한된 편차를 가지고 있음을 보여줍니다. 양적 및 질적 평가에서 우리의 결과는 이전 연구를 능가하여, 사실적이고 기하학을 제어 가능한 카리커처 아바타를 제공합니다."
+    },
+    "summary": "1. 얼굴의 가우시안 곡률을 기반으로 내재 표면을 과장하는 기술을 사용하여 3D 카리커처화 프레임워크를 제안합니다.\n2. 3D 가우시안 스플래팅 기술을 적용하여 실제적인 자유 시점 아바타를 생성하고, 원래 모양과 과장된 표면 사이의 효율적인 보간법을 도입합니다.\n3. 교육 계획을 통해 자연스럽고 과장된 아바타를 동시에 표현하는 단일 가우시안 컬렉션을 활용하여 성능을 향상시키고 지속적으로 카리커처의 강도를 조절할 수 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Other"
+    ]
+  },
+  {
+    "title": "The Molecular Structure of Thought: Mapping the Topology of Long Chain-of-Thought Reasoning",
+    "abstract": "Large language models (LLMs) often fail to learn effective long chain-of-thought (Long CoT) reasoning from human or non-Long-CoT LLMs imitation. To understand this, we propose that effective and learnable Long CoT trajectories feature stable molecular-like structures in unified view, which are formed by three interaction types: Deep-Reasoning (covalent-like), Self-Reflection (hydrogen-bond-like), and Self-Exploration (van der Waals-like). Analysis of distilled trajectories reveals these structures emerge from Long CoT fine-tuning, not keyword imitation. We introduce Effective Semantic Isomers and show that only bonds promoting fast entropy convergence support stable Long CoT learning, while structural competition impairs training. Drawing on these findings, we present Mole-Syn, a distribution-transfer-graph method that guides synthesis of effective Long CoT structures, boosting performance and RL stability across benchmarks.",
+    "authors": [
+      "Qiguang Chen",
+      "Yantao Du",
+      "Ziniu Li",
+      "Jinhao Liu",
+      "Songyao Duan",
+      "Jiarui Guo",
+      "Minghao Liu",
+      "Jiaheng Liu",
+      "Tong Yang",
+      "Ge Zhang",
+      "Libo Qin",
+      "Wanxiang Che",
+      "Wenhao Huang"
+    ],
+    "likes": 37,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.06002",
+    "date_collected": "2026-01-13T07:08:39.763762+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "사고의 분자 구조: 긴 사고 사슬의 위상 매핑",
+      "abstract": "대규모 언어 모델(LLMs)은 종래의 인간이나 비-긴 사고 LLMs 모방으로 충분한 긴 사고 사슬(Long CoT) 추론을 효과적으로 학습하는 데 실패하는 경우가 많다. 이를 이해하기 위해, 효과적이고 학습 가능한 긴 사고(Long CoT) 궤적은 통일된 관점에서 안정한 분자 구조와 비슷하게 형성되며, 이는 Deep-Reasoning(공유결합 형태), Self-Reflection(수소결합 형태), Self-Exploration(반 데르 발스 결합 형태) 세 가지 상호작용 유형에 의해 형성된다. 정제된 궤적의 분석 결과, 이러한 구조들은 Long CoT 미세 조정에서 나타나며, 키워드 모방이 아니라. 효과적인 의미 이성질체(Effective Semantic Isomers)를 제시하고, 빠른 엔트로피 수렴을 촉진하는 결합만이 안정적인 Long CoT 학습을 지원하는 반면, 구조적 경쟁은 훈련을 저해한다는 것을 보여준다. 이러한 결과를 바탕으로 성능과 강화학습 안정성을 향상시키기 위해 효과적인 Long CoT 구조의 합성을 이끄는 분배-전이-그래프 방법(Mole-Syn)을 제안한다."
+    },
+    "summary": "1. 대규모 언어 모델은 긴 사고 사슬 추론을 효과적으로 학습하는 데 어려움을 겪는데, 이는 키워드 대신 Long CoT 미세 조정에서 나타나는 안정한 분자 구조로 설명될 수 있다.\n2. 빠른 엔트로피 수렴을 촉진하는 결합만이 안정적인 Long CoT 학습을 지원하고, 구조적 경쟁은 훈련을 방해하는 것으로 나타났다.\n3. Mole-Syn 방법은 효과적인 Long CoT 구조의 합성을 안내함으로써 성능과 강화학습 안정성을 향상시키는데 기여한다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards",
+    "abstract": "Reinforcement learning (RL) has emerged as a critical technique for enhancing LLM-based deep search agents. However, existing approaches primarily rely on binary outcome rewards, which fail to capture the comprehensiveness and factuality of agents' reasoning process, and often lead to undesirable behaviors such as shortcut exploitation and hallucinations. To address these limitations, we propose Citation-aware Rubric Rewards (CaRR), a fine-grained reward framework for deep search agents that emphasizes reasoning comprehensiveness, factual grounding, and evidence connectivity. CaRR decomposes complex questions into verifiable single-hop rubrics and requires agents to satisfy these rubrics by explicitly identifying hidden entities, supporting them with correct citations, and constructing complete evidence chains that link to the predicted answer. We further introduce Citation-aware Group Relative Policy Optimization (C-GRPO), which combines CaRR and outcome rewards for training robust deep search agents. Experiments show that C-GRPO consistently outperforms standard outcome-based RL baselines across multiple deep search benchmarks. Our analysis also validates that C-GRPO effectively discourages shortcut exploitation, promotes comprehensive, evidence-grounded reasoning, and exhibits strong generalization to open-ended deep research tasks. Our code and data are available at https://github.com/THUDM/CaRR.",
+    "authors": [
+      "Jiajie Zhang",
+      "Xin Lv",
+      "Ling Feng",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "likes": 30,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.06021",
+    "date_collected": "2026-01-13T07:08:39.764998+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "증거 연결하기: 인용 정보 인식을 통한 강건한 강화 학습을 위한 깊은 탐색 에이전트 (Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards)",
+      "abstract": "강화 학습(RL)은 LLM 기반 깊은 탐색 에이전트의 향상에 중요한 기법으로 부상했다. 그러나 기존 방법은 주로 이분류 결과 보상에 의존하는데, 이는 에이전트의 추론 과정의 포괄성과 사실성을 잡아내지 못하며, 종종 바람직하지 않은 행동인 지름길 악용과 환각으로 이어진다. 이러한 한계를 해결하기 위해, 우리는 Citation-aware Rubric Rewards (CaRR)를 제안한다. 이는 이유의 포괄성, 사실 근거, 증거 연결성을 강조하는 깊은 탐색 에이전트를 위한 세밀한 보상 프레임워크이다. CaRR은 복잡한 질문을 검증 가능한 단일 점프 루브릭으로 분해하고, 에이전트가 이 루브릭을 충족하는 것을 요구함으로써 숨겨진 개체를 명시적으로 식별하고, 올바른 인용을 통해 이를 지원하고, 예측된 답변에 연결되는 완전한 증거 체인을 구축하도록 한다. 우리는 또한 Citation-aware Group Relative Policy Optimization (C-GRPO)을 소개하는데, 이는 CaRR과 결과 보상을 결합하여 강건한 깊은 탐색 에이전트를 훈련시킨다. 실험 결과, C-GRPO는 다수의 깊은 탐색 벤치마크에서 표준 결과 기반 RL 기준선을 일관되게 능가하는 것으로 나타났다. 우리의 분석은 또한 C-GRPO가 지름길 악용을 효과적으로 억제하고, 포괄적이고 증거 기반 추론을 촉진하며, 개방형 깊은 연구 작업에 대해 강한 일반화를 나타낸다는 것을 검증했다. 우리의 코드와 데이터는 https://github.com/THUDM/CaRR 에서 제공된다."
+    },
+    "summary": "1. 기존 강화 학습의 한계를 보완하기 위해 Citation-aware Rubric Rewards (CaRR)를 도입하여 깊은 탐색 에이전트의 훈련에 성공적으로 적용하였다.\n2. Citation-aware Group Relative Policy Optimization (C-GRPO)은 CaRR과 결과 보상을 결합하여 강건한 깊은 탐색 에이전트의 훈련을 위한 효과적인 방법임을 입증하였다.\n3. 실험 결과는 C-GRPO가 지름길 악용을 억제하고 포괄적이며 증거 기반의 추론을 장려하며, 개방형 깊은 연구 작업에 강한 적용성을 보여주는 것을 확인했다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis",
+    "abstract": "Large language models (LLMs) are expected to be trained to act as agents in various real-world environments, but this process relies on rich and varied tool-interaction sandboxes. However, access to real systems is often restricted; LLM-simulated environments are prone to hallucinations and inconsistencies; and manually built sandboxes are hard to scale. In this paper, we propose EnvScaler, an automated framework for scalable tool-interaction environments via programmatic synthesis. EnvScaler comprises two components. First, SkelBuilder constructs diverse environment skeletons through topic mining, logic modeling, and quality evaluation. Then, ScenGenerator generates multiple task scenarios and rule-based trajectory validation functions for each environment. With EnvScaler, we synthesize 191 environments and about 7K scenarios, and apply them to Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) for Qwen3 series models. Results on three benchmarks show that EnvScaler significantly improves LLMs' ability to solve tasks in complex environments involving multi-turn, multi-tool interactions. We release our code and data at https://github.com/RUC-NLPIR/EnvScaler.",
+    "authors": [
+      "Xiaoshuai Song",
+      "Haofei Chang",
+      "Guanting Dong",
+      "Yutao Zhu",
+      "Zhicheng Dou",
+      "Ji-Rong Wen"
+    ],
+    "likes": 24,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.05808",
+    "date_collected": "2026-01-13T07:08:39.766291+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "EnvScaler: 프로그램적 합성을 통한 LLM 에이전트를 위한 상호작용 환경 확장 도구",
+      "abstract": "대규모 언어 모델(LLMs)은 다양한 실제 환경에서 에이전트로 작동하기 위해 훈련되어야 하지만, 이 과정은 다양하고 풍부한 도구-상호작용 모래상 환경에 의존합니다. 본 논문에서는 환경 확장자(EnvScaler)를 제안하며, 프로그램적 합성을 통해 확장 가능한 도구-상호작용 환경을 자동화하는 프레임워크를 소개합니다."
+    },
+    "summary": "1. EnvScaler는 다양한 환경 뼈대를 구축하고 여러 작업 시나리오를 생성하여 LLM이 복잡한 환경에서 작업을 수행하는 능력을 크게 향상시킵니다.\n2. SkelBuilder는 주제 마이닝, 논리 모델링 및 품질 평가를 통해 다양한 환경 뼈대를 구축합니다.\n3. ScenGenerator는 각 환경에 대해 여러 작업 시나리오와 규칙 기반의 궤적 유효성 검사 함수를 생성합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking",
+    "abstract": "In this report, we introduce the Qwen3-VL-Embedding and Qwen3-VL-Reranker model series, the latest extensions of the Qwen family built on the Qwen3-VL foundation model. Together, they provide an end-to-end pipeline for high-precision multimodal search by mapping diverse modalities, including text, images, document images, and video, into a unified representation space. The Qwen3-VL-Embedding model employs a multi-stage training paradigm, progressing from large-scale contrastive pre-training to reranking model distillation, to generate semantically rich high-dimensional vectors. It supports Matryoshka Representation Learning, enabling flexible embedding dimensions, and handles inputs up to 32k tokens. Complementing this, Qwen3-VL-Reranker performs fine-grained relevance estimation for query-document pairs using a cross-encoder architecture with cross-attention mechanisms. Both model series inherit the multilingual capabilities of Qwen3-VL, supporting more than 30 languages, and are released in 2B and 8B parameter sizes to accommodate diverse deployment requirements. Empirical evaluations demonstrate that the Qwen3-VL-Embedding series achieves state-of-the-art results across diverse multimodal embedding evaluation benchmarks. Specifically, Qwen3-VL-Embedding-8B attains an overall score of 77.8 on MMEB-V2, ranking first among all models (as of January 8, 2025). This report presents the architecture, training methodology, and practical capabilities of the series, demonstrating their effectiveness on various multimodal retrieval tasks, including image-text retrieval, visual question answering, and video-text matching.",
+    "authors": [
+      "Mingxin Li",
+      "Yanzhao Zhang",
+      "Dingkun Long",
+      "Keqin Chen",
+      "Sibo Song",
+      "Shuai Bai",
+      "Zhibo Yang",
+      "Pengjun Xie",
+      "An Yang",
+      "Dayiheng Liu",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ],
+    "likes": 20,
+    "published_date": "Jan 8",
+    "url": "https://huggingface.co/papers/2601.04720",
+    "date_collected": "2026-01-13T07:08:39.767740+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "Qwen3-VL-Embedding 및 Qwen3-VL-Reranker: 최신 다중모달 검색 및 랭킹을 위한 통합 프레임워크",
+      "abstract": "본 보고서에서는 Qwen3-VL-Embedding 및 Qwen3-VL-Reranker 모델 시리즈를 소개합니다. 이들은 Qwen3-VL 기반의 Qwen 패밀리의 최신 확장판으로, 텍스트, 이미지, 문서 이미지, 비디오 등 다양한 모달리티를 통합 표현 공간으로 매핑하여 고품질 다중모달 검색을 제공합니다. Qwen3-VL-Embedding 모델은 대규모 대조 사전 학습부터 재랭킹 모델 증류까지 다단계 훈련 패러다임을 사용하여 의미론적으로 풍부한 고차원 벡터를 생성합니다."
+    },
+    "summary": "1. Qwen3-VL-Embedding 및 Qwen3-VL-Reranker 모델은 다양한 모달리티를 하나로 통합하여 고품질 다중모달 검색을 제공하며, 다양한 언어를 지원합니다.\n2. Qwen3-VL-Embedding 시리즈는 MMEB-V2에서 우수한 성과를 보여주며, 최신 다중모달 임베딩 평가 벤치마크에서 성공을 거두었습니다.\n3. 해당 모델 시리즈는 이미지-텍스트 검색, 시각적 질문 응답, 비디오-텍스트 매칭과 같은 다양한 다중모달 검색 작업에서 효과적임을 입증하였습니다.",
+    "categories": [
+      "Multimodal",
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Can We Predict Before Executing Machine Learning Agents?",
+    "abstract": "Autonomous machine learning agents have revolutionized scientific discovery, yet they remain constrained by a Generate-Execute-Feedback paradigm. Previous approaches suffer from a severe Execution Bottleneck, as hypothesis evaluation relies strictly on expensive physical execution. To bypass these physical constraints, we internalize execution priors to substitute costly runtime checks with instantaneous predictive reasoning, drawing inspiration from World Models. In this work, we formalize the task of Data-centric Solution Preference and construct a comprehensive corpus of 18,438 pairwise comparisons. We demonstrate that LLMs exhibit significant predictive capabilities when primed with a Verified Data Analysis Report, achieving 61.5% accuracy and robust confidence calibration. Finally, we instantiate this framework in FOREAGENT, an agent that employs a Predict-then-Verify loop, achieving a 6x acceleration in convergence while surpassing execution-based baselines by +6%. Our code and dataset will be publicly available soon at https://github.com/zjunlp/predict-before-execute.",
+    "authors": [
+      "Jingsheng Zheng",
+      "Jintian Zhang",
+      "Yujie Luo",
+      "Yuren Mao",
+      "Yunjun Gao",
+      "Lun Du",
+      "Huajun Chen",
+      "Ningyu Zhang"
+    ],
+    "likes": 19,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.05930",
+    "date_collected": "2026-01-13T07:08:39.769022+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "기계 학습 에이전트 실행 전 예측 가능할까요?",
+      "abstract": "자율 기계 학습 에이전트는 과학적 발견을 혁신적으로 바꿨지만, '생성-실행-피드백' 패러다임에 제약을 받습니다. 이전 방법론들은 실행 병목 현상에 시달려, 가설 평가가 비싼 물리적 실행에 엄격히 의존합니다. 이러한 물리적 제약을 우회하기 위해 실행 사전지식을 내재화하여, 비용이 많이 소요되는 런타임 검사를 순간적인 예측적 추론으로 대체하고자 합니다. 이 연구에서는 데이터 중심의 솔루션 선호 작업을 형식화하고, 18,438개의 쌍대 비교로 이루어진 체계적인 데이터셋을 구축합니다. LLMs이 검증된 데이터 분석 보고서를 이용할 시, 61.5%의 정확도와 견고한 신뢰도 보정을 달성하는 것을 시연합니다. 마지막으로, FOREAGENT에서 이 프레임워크를 실재화하는데, 예측 후 확인 루프를 활용하여 수렴 속도를 6배 가속화하고 실행 기반 기준치를 +6% 초과합니다. 코드와 데이터셋은 곧 https://github.com/zjunlp/predict-before-execute에서 공개됩니다."
+    },
+    "summary": "1. 이 연구는 기계 학습 에이전트의 실행 전 예측 능력을 향상시키기 위해 데이터 중심 솔루션 선호 작업을 형식화했으며, LLMs가 검증된 데이터 분석 보고서로 학습할 때 61.5%의 정확도와 견고한 신뢰도 보정을 달성함.\n2. FOREAGENT는 예측 후 확인 루프를 구현하여 실행 기반 기준을 +6% 초과하는 6배 가속화로 수렴 속도를 향상시켰음.\n3. 전체적으로, 이 연구는 물리적 실행 대신 순간적인 예측 추론을 통해 실행 전 예측을 가능하게 하는 새로운 프레임워크를 제안하고, 관련 코드와 데이터셋을 공개할 예정임.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "An Empirical Study on Preference Tuning Generalization and Diversity Under Domain Shift",
+    "abstract": "Preference tuning aligns pretrained language models to human judgments of quality, helpfulness, or safety by optimizing over explicit preference signals rather than likelihood alone. Prior work has shown that preference-tuning degrades performance and reduces helpfulness when evaluated outside the training domain. However, the extent to which adaptation strategies mitigate this domain shift remains unexplored. We address this challenge by conducting a comprehensive and systematic study of alignment generalization under domain shift. We compare five popular alignment objectives and various adaptation strategies from source to target, including target-domain supervised fine-tuning and pseudo-labeling, across summarization and question-answering helpfulness tasks. Our findings reveal systematic differences in generalization across alignment objectives under domain shift. We show that adaptation strategies based on pseudo-labeling can substantially reduce domain-shift degradation",
+    "authors": [
+      "Constantinos Karouzos",
+      "Xingwei Tan",
+      "Nikolaos Aletras"
+    ],
+    "likes": 18,
+    "published_date": "Jan 9",
+    "url": "https://huggingface.co/papers/2601.05882",
+    "date_collected": "2026-01-13T07:08:39.770081+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "도메인 이동에서의 선호 튜닝 일반화와 다양성에 관한 경험적 연구",
+      "abstract": "선호 튜닝은 사전 훈련된 언어 모델을 우도만 고려하는 것이 아니라 명시적 선호 신호에 대한 최적화를 통해 인간 판단에 맞추는 것이다. 이전 연구들은 훈련 도메인 외부에서 성능이 저하되고 유익성이 감소하는 것을 나타냈다. 그러나 해당 도메인 이동에서 적응 전략이 얼마나 도메인 이동을 완화시키는지에 대한 범위는 아직 탐구되지 않았다. 본 연구는 도메인 이동에서 일치화 일반화에 관한 포괄적이고 체계적인 연구를 수행하여 이 문제에 대처한다. 우리는 요약 및 질문 응답 유용성 작업을 통해 소스에서 타겟까지의 다섯 가지 인기 있는 일치화 목표와 다양한 적응 전략을 비교한다. 그 중에는 타겟 도메인 감독 지도 미세 튜닝과 가짜 레이블링이 포함된다. 우리의 연구 결과는 도메인 이동에서 일치화 목표 간 일반화에서 체계적 차이를 보여준다. 우리는 가짜 레이블을 기반으로 한 적응 전략이 도메인 이동 저하를 크게 줄일 수 있는 것을 보여준다."
+    },
+    "summary": "1. 선호 튜닝은 언어 모델을 인간 판단에 일치시키는데 있어 도메인 이동에서 성능 하락을 경험하는데, 이를 완화하기 위한 적응 전략을 탐구한다.\n2. 다양한 일치화 목표와 적응 전략을 비교한 결과, 도메인 이동에서 일반화에는 시스템적인 차이가 있으며 가짜 레이블을 이용한 적응 전략이 도메인 이동 저하를 줄일 수 있다.\n3. 연구는 요약과 질문 응답 작업을 통해 적응 전략의 효과를 확인하고, 선호 튜닝의 도메인 이동 일반화와 다양성을 체계적으로 분석한다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "AgentOCR: Reimagining Agent History via Optical Self-Compression",
+    "abstract": "Recent advances in large language models (LLMs) enable agentic systems trained with reinforcement learning (RL) over multi-turn interaction trajectories, but practical deployment is bottlenecked by rapidly growing textual histories that inflate token budgets and memory usage. We introduce AgentOCR, a framework that exploits the superior information density of visual tokens by representing the accumulated observation-action history as a compact rendered image. To make multi-turn rollouts scalable, AgentOCR proposes segment optical caching. By decomposing history into hashable segments and maintaining a visual cache, this mechanism eliminates redundant re-rendering. Beyond fixed rendering, AgentOCR introduces agentic self-compression, where the agent actively emits a compression rate and is trained with compression-aware reward to adaptively balance task success and token efficiency. We conduct extensive experiments on challenging agentic benchmarks, ALFWorld and search-based QA. Remarkably, results demonstrate that AgentOCR preserves over 95\\% of text-based agent performance while substantially reducing token consumption (>50\\%), yielding consistent token and memory efficiency. Our further analysis validates a 20x rendering speedup from segment optical caching and the effective strategic balancing of self-compression.",
+    "authors": [
+      "Lang Feng",
+      "Fuchao Yang",
+      "Feng Chen",
+      "Xin Cheng",
+      "Haiyang Xu",
+      "Zhenglin Wan",
+      "Ming Yan",
+      "Bo An"
+    ],
+    "likes": 18,
+    "published_date": "Jan 8",
+    "url": "https://huggingface.co/papers/2601.04786",
+    "date_collected": "2026-01-13T07:08:39.771387+09:00",
+    "week": "2026-W03",
+    "translation": {
+      "title": "에이전트 OCR: 광학 자기 압축을 통한 에이전트 역사 재구상",
+      "abstract": "최근 대형 언어 모델 (LLM)의 발전으로 조작 시스템이 학습된 다중 턴 상호작용 경로에 강화 학습 (RL)을 적용할 수 있게 되었지만, 실제 적용은 급속하게 증가하는 텍스트 기록으로 인해 토큰 예산과 메모리 사용량이 증가하는 병목 현상이 발생합니다. 본 논문에서는 에이전트 OCR을 소개하는데, 이는 눈에 띄는 정보 밀도가 뛰어난 시각적 토큰을 활용하여 축적된 관찰-행동 기록을 간략하게 렌더링된 이미지로 표현합니다. 다중 턴 롤아웃을 확장하려면, 에이전트 OCR은 세그먼트 광학 캐싱을 제안합니다. 역사를 해시 가능한 세그먼트로 분해하고 시각적 캐시를 유지함으로써, 이 메커니즘이 중복 렌더링을 제거합니다. 고정된 렌더링을 넘어 에이전트 OCR은 에이전트 자기 압축을 도입하며, 실질적으로 압축률을 내놓고 압축 인식 보상으로 훈련되어 작업 성공과 토큰 효율성을 적응적으로 균형을 유지합니다. 우리는 어려운 에이전트 벤치마크인 ALFWorld와 검색 기반 QA에 대해 광범위한 실험을 수행합니다. 놀랍게도 결과는 에이전트 OCR이 텍스트 기반 에이전트 성능의 95% 이상을 보존하면서 토큰 소비량을 상당히 줄이고(50% 이상), 일관된 토큰 및 메모리 효율성을 제공함을 보여줍니다. 더 나아가 우리의 추가 분석은 세그먼트 광학 캐싱에서 20배의 렌더링 가속과 자기 압축의 효과적인 전략적 균형을 검증합니다."
+    },
+    "summary": "1. 에이전트OCR은 시각적 토큰의 정보 밀도를 활용하여 다중 턴 상호작용 기록을 간결한 이미지로 표현하며, 세그먼트 광학 캐싱을 통해 중복 렌더링을 제거합니다.\n2. 에이전트OCR은 압축률을 내놓고 토큰 효율성을 조절하기 위해 압축 인식 보상으로 훈련되어 작업 성공과 균형을 유지합니다.\n3. 실험 결과는 에이전트OCR이 텍스트 기반 에이전트 성능을 유지하면서 토큰 소비량을 현저히 줄이고(50% 이상), 토큰과 메모리의 효율성을 향상시킨다는 것을 입증합니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  }
+]

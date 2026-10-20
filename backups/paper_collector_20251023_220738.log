@@ -1,0 +1,147 @@
+=== Paper Collection Started at Wed Oct 22 22:06:53 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W43
+URL: https://huggingface.co/papers/week/2025-W43
+Found 10 papers in weekly view
+Fetching likes for: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Fetching likes for: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Fetching likes for: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Fetching likes for: World-in-World: World Models in a Closed-Loop World
+Fetching likes for: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Fetching likes for: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Fetching likes for: PICABench: How Far Are We from Physically Realistic Image Editing?
+Fetching likes for: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Fetching likes for: Glyph: Scaling Context Windows via Visual-Text Compression
+Fetching likes for: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Selected top 10 papers by likes:
+1. A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning (131 likes)
+2. LightMem: Lightweight and Efficient Memory-Augmented Generation (81 likes)
+3. DeepAnalyze: Agentic Large Language Models for Autonomous Data Science (64 likes)
+4. World-in-World: World Models in a Closed-Loop World (63 likes)
+5. OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM (61 likes)
+6. UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation (59 likes)
+7. PICABench: How Far Are We from Physically Realistic Image Editing? (57 likes)
+8. Efficient Long-context Language Model Training by Core Attention
+  Disaggregation (54 likes)
+9. Glyph: Scaling Context Windows via Visual-Text Compression (52 likes)
+10. NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks (52 likes)
+Found abstract: Test-time scaling seeks to improve the reasoning performance of large
+language models (LLMs) by addi...
+Processed paper: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Found abstract: Despite their remarkable capabilities, Large Language Models (LLMs) struggle
+to effectively leverage...
+Processed paper: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Found abstract: Autonomous data science, from raw data sources to analyst-grade deep research
+reports, has been a lo...
+Processed paper: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Found abstract: Generative world models (WMs) can now simulate worlds with striking visual
+realism, which naturally ...
+Processed paper: World-in-World: World Models in a Closed-Loop World
+Found abstract: Advancing machine intelligence requires developing the ability to perceive
+across multiple modalitie...
+Processed paper: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Found abstract: Recent progress in text-to-image (T2I) generation underscores the importance
+of reliable benchmarks ...
+Processed paper: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Found abstract: Image editing has achieved remarkable progress recently. Modern editing
+models could already follow ...
+Processed paper: PICABench: How Far Are We from Physically Realistic Image Editing?
+Found abstract: We present core attention disaggregation (CAD), a technique that improves
+long-context large languag...
+Processed paper: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Found abstract: Large language models (LLMs) increasingly rely on long-context modeling for
+tasks such as document u...
+Processed paper: Glyph: Scaling Context Windows via Visual-Text Compression
+Found abstract: 3D object editing is essential for interactive content creation in gaming,
+animation, and robotics, ...
+Processed paper: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Theoretical Study on Bridging Internal Probability and
+  Self-Consistency for LLM Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 131  ->  125
+Update date_collected: 2025-10-23T07:07:01.392812+09:00  ->  2025-10-22T07:08:22.958555+09:00
+
+Processing paper 2/10
+Title: LightMem: Lightweight and Efficient Memory-Augmented Generation
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: DeepAnalyze: Agentic Large Language Models for Autonomous Data Science
+Paper already exists, checking if translation is complete...
+Update likes: 64  ->  53
+Update date_collected: 2025-10-23T07:07:01.395585+09:00  ->  2025-10-22T07:08:22.963105+09:00
+
+Processing paper 4/10
+Title: World-in-World: World Models in a Closed-Loop World
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding
+  LLM
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  59
+Update date_collected: 2025-10-23T07:07:01.399325+09:00  ->  2025-10-22T07:08:22.960477+09:00
+
+Processing paper 6/10
+Title: UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image
+  Generation
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: PICABench: How Far Are We from Physically Realistic Image Editing?
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  55
+Update date_collected: 2025-10-23T07:07:01.402271+09:00  ->  2025-10-22T07:08:22.961949+09:00
+
+Processing paper 8/10
+Title: Efficient Long-context Language Model Training by Core Attention
+  Disaggregation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Glyph: Scaling Context Windows via Visual-Text Compression
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  42
+Update date_collected: 2025-10-23T07:07:01.405209+09:00  ->  2025-10-22T07:08:22.967339+09:00
+
+Processing paper 10/10
+Title: NANO3D: A Training-Free Approach for Efficient 3D Editing Without Masks
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  52
+Update date_collected: 2025-10-23T07:07:01.406516+09:00  ->  2025-10-22T07:08:22.964360+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W43.json...
+
+Updating Notion database...
+Updating paper: 내부 확률과 자기 일관성을 이어주는 LLM 추론에 관한 이론적 연구 (likes: 106 -> 131)
+Creating new paper: 경량화 및 효율적인 메모리 보강 생성 (Memory-Augmented Generation)
+Creating new paper: DeepAnalyze: 자율 데이터 과학을 위한 에이전트형 대규모 언어 모델
+Creating new paper: 세계 속의 세계: 폐쇄적 루프 환경에서의 세계 모델
+Updating paper: 옴니빈치: 옴니-모달 이해를 위한 아키텍처와 데이터 강화 (likes: 53 -> 61)
+Creating new paper: UniGenBench++: 텍스트에서 이미지로의 통일된 의미 평가 벤치마크
+Creating new paper: PICABench: 물리적으로 현실적인 이미지 편집은 얼마나 멀리 왔는가?
+Creating new paper: 핵심 어텐션 분해를 통한 효율적인 장거리 문맥 언어 모델 훈련
+Creating new paper: Glyph: 시각-텍스트 압축을 통한 맥락창 확장
+Updating paper: 훈련 없이 가능한 효율적인 마스크 없는 3D 편집 방법: NANO3D (likes: 47 -> 52)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Oct 22 22:08:52 UTC 2025 ===
+

@@ -1,0 +1,313 @@
+[
+  {
+    "title": "RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources",
+    "abstract": "Skills are a useful abstraction for software agents, turning human and agent experience into reusable procedural knowledge. Yet existing skill libraries are mostly hand-written, text-centric, or derived from agent traces, leaving tutorial videos and other multimodal human resources largely underused. We present RESOURCE2SKILL, a framework that distills multimodal resources, including tutorial videos, repositories, articles, and reference artifacts, into executable skills for software agents. RESOURCE2SKILL organizes these skills as a hierarchical multimodal Skill Wiki, where each entry combines structured text, code, visual examples, metadata, and provenance. This design preserves complementary signals from different resources: videos capture temporal operations and visual effects, code captures executable tool patterns, and articles or artifacts provide conceptual and stylistic grounding. At inference time, agents retrieve and compose relevant skills from the wiki; when coverage is insufficient, the same construction operator can acquire new skills online. Across seven practical authoring domains, RESOURCE2SKILL improves average overall score by +11.9 percentage points over no-skill agents and outperforms strong harness baselines in 26 of 28 main-aggregate model-domain cells. Ablations confirm the value of multimodal skill format, hierarchical organization, source diversity, selection strategy, and online acquisition.",
+    "authors": [
+      "Yijia Fan",
+      "Zonglin Di",
+      "Zimo Wen",
+      "Yifan Yang",
+      "Mingxi Cheng",
+      "Qi Dai",
+      "Bei Liu",
+      "Kai Qiu",
+      "Yue Dong",
+      "Ji Li",
+      "Chong Luo"
+    ],
+    "likes": 113,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2606.29538",
+    "date_collected": "2026-07-21T08:05:56.911516+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "RESOURCE2SKILL: 인간이 만든 다중 모달 자원으로부터 실행 가능한 에이전트 스킬 추출",
+      "abstract": "스킬은 소프트웨어 에이전트에 대한 유용한 추상화로, 인간 및 에이전트 경험을 재사용 가능한 절차적 지식으로 전환합니다. 그러나 기존의 스킬 라이브러리는 대부분 수작업으로 작성되었거나 텍스트 중심이며, 에이전트 트레이스에서 유도되어 오래된 사용자 지도 비디오와 기타 다중 모달 인간 자원은 크게 활용되지 않았습니다. 우리는 RESOURCE2SKILL을 제시합니다. 이는 튜토리얼 비디오, 저장소, 기사 및 참고 자료를 비롯한 다중 모달 자원을 소프트웨어 에이전트의 실행 가능한 스킬로 추출하는 프레임워크입니다."
+    },
+    "summary": "1. RESOURCE2SKILL은 다중 모달 자원을 활용하여 소프트웨어 에이전트의 실행 가능한 스킬로 변환하는 프레임워크로, 스킬을 계층적인 다중 모달 스킬 위키로 구성하여 에이전트가 필요한 스킬을 검색하고 조합할 수 있습니다.\n2. 연구에서는 RESOURCE2SKILL이 스킬 형식, 계층적 구조, 소스 다양성, 선택 전략 및 온라인 습득의 가치를 확인하며, 이를 통해 다양한 자원에서 보완적인 신호를 보존합니다.\n3. RESOURCE2SKILL은 여러 실용적 저자 도메인에서 기존 에이전트 대비 평균 전체 점수를 +11.9% 향상시키고, 강력한 기본 라인을 능가하는 실험 결과를 보여줍니다.",
+    "categories": [
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM",
+    "abstract": "Graph retrieval-augmented generation (GraphRAG) enhances large language models with structured knowledge, yet existing systems construct knowledge graphs in a single extraction pass, producing noisy entities and brittle retrieval. RAGU, an open-source modular GraphRAG engine, addresses this by separating extraction from consolidation: entities and relations pass through two-stage typed extraction, DBSCAN-backed deduplication, LLM summarization, and Leiden community detection. A key insight motivates a compact extractor: the skills an in-pipeline LLM needs - comprehension, extraction, reasoning over context - are language skills that grow only weakly with model size, unlike factual world knowledge. Accordingly, we train Meno-Lite-0.1, a 7B model optimized for language skills, which outperforms Qwen2.5-32B on knowledge-graph construction (+12.5% relative harmonic mean) and matches it on English GraphRAG tasks. On GraphRAG-Bench (Medical), RAGU retrieves the most complete context at every factoid level (evidence recall up to 0.84 vs. leq0.76) and overtakes HippoRAG2 on synthesis tasks; on multi-hop factoid QA, the apparent HippoRAG2 advantage is shown to be largely an answer-format artifact. RAGU is installable via pip install graph_ragu, runs on a single GPU, and is released under MIT. The source code is publicly available at https://github.com/RaguTeam/RAGU, and the Meno-Lite-0.1 model can be obtained from https://huggingface.co/bond005/meno-lite-0.1.",
+    "authors": [
+      "Mikhail Komarov",
+      "Ivan Bondarenko",
+      "Stanislav Shtuka",
+      "Oleg Sedukhin",
+      "Roman Shuvalov",
+      "Yana Dementyeva",
+      "Matvey Solovyov",
+      "Nikolay O. Nikitin"
+    ],
+    "likes": 111,
+    "published_date": "Jul 13",
+    "url": "https://huggingface.co/papers/2607.11683",
+    "date_collected": "2026-07-21T08:05:56.914592+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "RAGU: 소형 도메인 적응 LLM을 갖춘 다단계 GraphRAG 엔진",
+      "abstract": "그래프 검색 보강 생성 (GraphRAG)은 구조화된 지식과 대형 언어 모델을 향상시키지만, 기존 시스템은 지식 그래프를 단일 추출 과정에서 구축하여 노이즈가 많은 엔티티와 취약한 검색을 생성합니다. RAGU는 오픈소스 모듈식 GraphRAG 엔진으로 이를 해결하기 위해 추출과 통합을 분리합니다. 엔티티와 관계는 두 단계 유형 추출을 거친 후 DBSCAN 기반 중복 제거, LLM 요약, Leiden 커뮤니티 검출까지 진행됩니다. 주요 통찰력은 소형 추출기를 동기부여하는데, 파이프라인 내 LLM이 필요로 하는 기술 - 이해, 추출, 맥락에 대한 추론 - 은 모델 크기와 약하게 증가하는 언어 기술이지만 사실 세계의 지식과는 다릅니다. 따라서, 7B 모델인 Meno-Lite-0.1을 교육하여 언어 기술에 최적화시켰으며, 이 모델은 지식 그래프 구축에서 Qwen2.5-32B를 제치며 (+12.5% 상대 조화평균) 영어 GraphRAG 작업에서 일치합니다. GraphRAG-Bench (의료)에서 RAGU는 모든 팩토이드 수준에서 가장 완전한 맥락을 검색하여 (증거 인식이 0.84로 0.76이하보다 우수) 종합 작업에서 HippoRAG2를 앞서갑니다; 다중 홉 팩토이드 QA에서, HippoRAG2의 우위는 대부분 답변 형식이 상품과 관련이 있는 것으로 나타납니다. RAGU는 pip install graph_ragu를 통해 설치할 수 있으며, 단일 GPU에서 실행되며 MIT 하에 공개되었습니다. 소스 코드는 https://github.com/RaguTeam/RAGU에서 공개되어 있으며, Meno-Lite-0.1 모델은 https://huggingface.co/bond005/meno-lite-0.1에서 얻을 수 있습니다."
+    },
+    "summary": "1. RAGU는 GraphRAG 엔진으로, 지식 추출과 통합을 단계적으로 진행하여 지식 그래프의 구축을 개선하며, Meno-Lite-0.1 모델을 훈련하여 언어 기술에 최적화시켰습니다.\n2. GraphRAG-Bench (의료)에서 RAGU는 최상의 문맥 검색 결과를 보여주며, HippoRAG2를 앞서며, 다중 홉 팩토이드 QA에서 HippoRAG2의 우위는 답변 형식과 관련된 오류로 나타났습니다.\n3. RAGU는 오픈소스이며, pip를 통해 쉽게 설치 가능하며, Meno-Lite-0.1 모델은 공개된 웹사이트에서 얻을 수 있습니다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Loop the Loopies!",
+    "abstract": "We present Loopie, the most powerful looped Transformer to date. The Loopie series consists of two Mixture-of-Experts (MoE) models: a 20B-parameter model with 2B active parameters and a 6Bparameter model with 0.6B active parameters. Looped Transformers have long faced a challenge: given an N-fold increase in pre-training compute, increasing the parameter count by a factor of N usually outperforms looping a model N times. Loopie addresses this challenge. Extensive ablation studies, including comparisons with a vanilla 30B-A3B model, show that Loopie substantially outperforms vanilla Transformer baselines trained with the same compute budget. Our novel post-training pipeline equips Loopie with strong reasoning abilities. At the 2025 IMO and IPhO, Loopie achieves gold-medal performance without tools.",
+    "authors": [
+      "Zitian Gao",
+      "Yilong Chen",
+      "Yihao Xiao",
+      "Xinyu Yang",
+      "Ran Tao",
+      "Joey Zhou",
+      "Bryan Dai"
+    ],
+    "likes": 54,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2607.16051",
+    "date_collected": "2026-07-21T08:05:56.917268+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "루프 더 루피!",
+      "abstract": "우리는 Loopie를 제시합니다. Loopie 시리즈는 최강의 루프 트랜스포머로, Mixture-of-Experts(MoE) 모델 두 개로 구성됩니다: 20B-파라미터 모델(활성화된 파라미터 2B)과 6B-파라미터 모델(활성화된 파라미터 0.6B). 루프드 트랜스포머는 오랫동안 N배의 사전 훈련 계산양이 주어지면, 파라미터 수를 N배 증가시키는 것이 보통 모델을 N번 루핑하는 것보다 우수한 성과를 내는 도전에 직면해왔습니다. Loopie는 이 도전을 극복합니다. 30B-A3B 모델과의 비교를 포함한 철저한 실험을 통해 Loopie가 동일한 계산 예산으로 훈련된 바닐라 트랜스포머 베이스라인을 크게 앞서고 있다는 것을 입증합니다. 더불어, 우리의 새로운 후 훈련 파이프라인은 Loopie에 강력한 추론 능력을 제공합니다. 2025 IMO와 IPhO에서, Loopie는 도구 없이 금메달 성과를 달성했습니다."
+    },
+    "summary": "1. Loopie는 모델을 N번 루핑하는 것보다 파라미터 수를 N배 증가시키는 긴 과정에서 뛰어난 성과를 보이며, 강력한 추론 능력을 갖추고 있다.\n2. 20B-파라미터 및 6B-파라미터 모델과의 비교 실험을 통해, Loopie가 동일한 계산 예산 하에 바닐라 트랜스포머 모델들을 크게 앞선다는 것을 입증했다.\n3. 2025 IMO와 IPhO에서 Loopie는 도구 없이 금메달 성과를 달성하여, 그 강력한 성능을 확인했다.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+    "abstract": "We present Xiaomi-Robotics-1, a foundational vision-language-action (VLA) model capable of (1) following diverse language instructions to perform a wide range of mobile manipulation tasks in unseen environments out-of-the-box, and (2) efficiently adapting to novel downstream tasks with minimal fine-tuning data. We propose a two-stage training recipe consisting of pre-training and post-training. During pre-training, we imbue the model with broad and generalizable action-generation capabilities by training on over 100k hours of real-world manipulation trajectories collected via UMI devices. Crucially, we develop a scalable auto-labeling pipeline that annotates trajectory clips with natural languages describing scene state transitions, providing rich and precise conditioning for action learning. During post-training, we aim to align these capabilities with robot embodiments and imperative instructions that humans naturally use to prompt robots. Extensive experiments demonstrate strong scaling behavior. Xiaomi-Robotics-1 consistently improves with increased data scales and model sizes during pre-training. This scaling behavior directly transfers to post-training, where a stronger pre-training model yields better out-of-the-box real-robot performance in unseen environments. Furthermore, Xiaomi-Robotics-1 serves as a strong robot foundation policy that can be efficiently fine-tuned on complex, dexterous tasks with high data efficiency. Across multiple simulation benchmarks, Xiaomi-Robotics-1 outperforms state-of-the-art methods. Notably, it establishes a new state-of-the-art with a 57.6% success rate on RoboCasa365, surpassing the previous best of 46.6%. Furthermore, it achieves an average score of 20.07 on RoboDojo, significantly outperforming the prior state-of-the-art (13.07). Code and model checkpoints will be released. Project page: https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+    "authors": [
+      "Xiaomi Robotics Team",
+      "Jun Guo",
+      "Piaopiao Jin",
+      "Jason Li",
+      "Peiyan Li",
+      "Yingyan Li",
+      "Futeng Liu",
+      "Wanli Peng",
+      "Optimus Qin",
+      "Yifei Su",
+      "Nan Sun",
+      "Qiao Sun",
+      "Runze Suo",
+      "Heyun Wang",
+      "Yunhong Wang",
+      "Rujie Wu",
+      "Caoyu Xia",
+      "Lina Zhang",
+      "Jack Zhao",
+      "Guoliang Chen",
+      "Wenlong Chen",
+      "Xinze He"
+    ],
+    "likes": 54,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2607.15330",
+    "date_collected": "2026-07-21T08:05:56.921357+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "Xiaomi-Robotics-1: 실세계 궤적 100,000시간 이상을 활용한 비전-언어-행동 모델의 확장",
+      "abstract": "Xiaomi-Robotics-1은 실세계에서 수집된 100,000시간 이상의 다양한 궤적을 기반으로하여 다양한 이동형 조작 작업을 수행하기 위한 언어 명령을 따르고, 최소한의 미세 조정 데이터로 새로운 하위 작업에 효율적으로 적응할 수 있는 기본 비전-언어-행동(VLA) 모델을 제안합니다. 선행 훈련과 후속 훈련으로 구성된 두 단계 훈련 레시피를 제안하며, 후속 훈련에서 강화된 선행 훈련 모델은 보다 나은 현실 로봇 성능을 제공합니다."
+    },
+    "summary": "1. Xiaomi-Robotics-1은 100,000시간 이상의 실세계 궤적 데이터를 활용하여 다양한 이동형 조작 작업을 수행하는데 탁월한 성능을 보이며, 새로운 하위 작업에도 효율적으로 적응합니다.\n2. 모델은 선행 훈련과 후속 훈련으로 나누어지며, 후속 훈련에서 강화된 모델은 보다 나은 로봇 성능을 발휘하며, 복잡한 작업에 대해 높은 데이터 효율성으로 세밀하게 조정할 수 있습니다.\n3. Xiaomi-Robotics-1은 다양한 시뮬레이션 벤치마크에서 최신 방법보다 우수한 결과를 보이며, RoboCasa365와 RoboDojo에서 각각 57.6%와 20.07의 성공률을 달성하여 새로운 최고 성과를 기록합니다.",
+    "categories": [
+      "Robotics",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "xHC: Expanded Hyper-Connections",
+    "abstract": "Hyper-Connections (HC) expand the residual stream of Transformers into N parallel streams, providing a form of memory scaling beyond model width and depth. Manifold-Constrained HC (mHC) stabilizes this formulation at scale. The large gains from N{=}1 to N{=}4 suggest residual-stream expansion as a promising scaling axis. However, existing HC-family methods typically stop at N{=}4. Our experiments reveal why: scaling mHC beyond this point yields diminishing performance gains and rapidly increasing training cost. We attribute this limitation to two bottlenecks: insufficient write-back information for an expanding number of streams and residual-mixing generation whose cost scales cubically with N. To address both bottlenecks, we propose xHC (Expanded Hyper-Connections), the first HC-family method to achieve meaningful expansion beyond N{=}4. xHC combines temporal feature augmentation for richer write-back with a sparse residual-stream architecture that updates only k=4 of the N=16 streams while retaining dense access to the full residual state. Across 18B and 28B MoE models, xHC delivers strong and consistent downstream improvements. On an 18B MoE model, xHC improves the average downstream score by 4.0 points over mHC, while adding only modest training FLOPs over the vanilla baseline. Scaling-law experiments show that the vanilla and mHC require 1.50times and 1.19times the compute of xHC, respectively, to reach the same loss. Practical large-N training also requires controlling memory traffic from the expanded residual state. We therefore introduce xHC-Flash, which reduces the per-sublayer memory traffic from 73.5C to 40C, comparable to the 34C required by mHC at N{=}4, while retaining the gains of full xHC. Together, xHC and xHC-Flash make large-N residual-stream expansion effective and practical for LLM pre-training.",
+    "authors": [
+      "Xiangdong Zhang",
+      "Xiaohan Qin",
+      "Sunan Zou",
+      "Tuo Dai",
+      "Xiaoming Shi",
+      "Huaijin Wu",
+      "Yebin Yang",
+      "Zhuo Xia",
+      "Shaofeng Zhang",
+      "Lin Yao",
+      "Yuliang Liu",
+      "Yu Cheng",
+      "Junchi Yan"
+    ],
+    "likes": 46,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2607.14530",
+    "date_collected": "2026-07-21T08:05:56.924891+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "확장된 하이퍼 커넥션(xHC)",
+      "abstract": "하이퍼 커넥션 (HC)은 트랜스포머의 잔여 스트림을 N개의 병렬 스트림으로 확장하여 모델의 너비와 깊이를 넘는 형태의 메모리 확장을 제공합니다. 매니폴드 제약 HC (mHC)는 이 공식을 규모에 맞게 안정화합니다. N이 1에서 4로 커질 때의 큰 이득은 잔여 스트림 확장이 유망한 확장 경로임을 시사합니다. 그러나 기존 HC 계열 방법은 일반적으로 N이 4에서 멈춥니다. 실험 결과, mHC를 넘어선 mHC의 스케일링은 성능 저하와 교육 비용 증가로 이어집니다. 이 한계는 점점 떠오르는 스트림에 대한 충분한 쓰기-백 정보와 N에 세제곱 비례하는 비용이 증가하는 잔여 혼합 생성으로 인한 것으로 설명됩니다. 이 두 가지 병목 현상을 해결하기 위해 xHC (확장된 하이퍼 커넥션)를 제안합니다. xHC는 더 풍부한 쓰기-백을 위한 시계열 피처 확대와, N=16 스트림 중의 4개(k=4)만 업데이트하는 희소형 잔여 스트림 구조를 결합합니다. 18B 및 28B MoE 모델에서, xHC는 강력하고 일관된 하류 개선을 제공합니다. 18B MoE 모델에서, xHC는 mHC보다 평균 하류 점수를 4.0점 향상시키면서 바닐라 베이스라인보다 미미한 교육 FLOP을 추가합니다. 스케일링 법칙 실험에서 바닐라와 mHC는 xHC가 동일한 손실에 도달하기 위해 각각 1.50배와 1.19배의 계산이 필요합니다. 실제 대규모 N 교육은 확장된 잔여 상태에서의 메모리 트래픽 제어를 필요로 합니다. 따라서 우리는 N=4에서 mHC가 필요한 34C에 필요한 73.5C의 하위 레이어 메모리 트래픽을 줄이는 xHC-Flash를 소개합니다. xHC와 xHC-Flash는 대규모 N 잔류 스트림 확장을 LLM 사전 교육에 효과적이고 실용적으로 만듭니다."
+    },
+    "summary": "1. 하이퍼 커넥션(HC)은 트랜스포머의 잔여 스트림을 병렬로 확장하여 모델의 메모리 확장을 제공하며, xHC는 N=4를 넘어 의미 있는 확장을 이루는 첫번째 HC 계열 방법이다.\n2. xHC는 시계열 기능 증가와 희소한 잔여 스트림 구조 결합을 통해 강력하고 일관된 하류 개선을 제공하며, 교육 비용 및 성능 증가에 따른 한계를 극복한다.\n3. xHC-Flash는 메모리 트래픽을 효율적으로 제어하여 대규모 N 잔류 스트림 확장을 실용적으로 만들며, LLM 사전 교육에 유용하다.",
+    "categories": [
+      "LLM"
+    ]
+  },
+  {
+    "title": "Cura 1T: Specialized Model for Agentic Healthcare",
+    "abstract": "Healthcare spans high-stakes communication, expert reasoning, and workflow execution, yet specialized LLMs that cover these use cases together remain limited. A healthcare model must handle patient consultation, clinical reasoning over text and images, interactive diagnosis, and electronic health record (EHR) tool use. These capabilities fail in different ways, and a narrow update for one task can degrade another. We present Cura 1T, a healthcare-specialized LLM trained through a human-gated self-evolution loop. In each evolution round, a training agent plans a target capability, trains the model, evaluates benchmark trajectories, and refines the data mixture from observed failures. This data-centered loop improves the model through targeted synthetic and curated examples rather than a single generic medical-data update. Across the healthcare evaluation suite, Cura 1T ranks at or near the top among frontier baselines, while remaining competitive on out-of-domain reasoning and agentic benchmarks.",
+    "authors": [
+      "actAVA AI",
+      "Haolin Chen",
+      "Leon Qi",
+      "Steve Brown",
+      "Deon Metelski",
+      "Tao Xia",
+      "Joonyul Lee",
+      "Qixuan Wang",
+      "Kevin Riley",
+      "Frank Wang",
+      "Weiran Yao"
+    ],
+    "likes": 43,
+    "published_date": "Jul 15",
+    "url": "https://huggingface.co/papers/2607.15314",
+    "date_collected": "2026-07-21T08:05:56.927911+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "양립 건강 관리를 위한 특화된 모델 Cura 1T",
+      "abstract": "의료는 고위험 의사소통, 전문가 추론 및 워크플로 실행을 포함하나, 이러한 사용 사례를 모두 다루는 특화된 LLM은 제한적입니다. 양립 건강 관리 모델은 환자 상담, 텍스트 및 이미지에 대한 임상 추론, 상호 작용 진단, 전자 건강 기록 (EHR) 도구 사용을 처리해야 합니다. 이 능력은 서로 다른 방식으로 실패하며, 한 작업에 대한 좁은 업데이트는 다른 작업을 악화시킬 수 있습니다. 저희는 Cura 1T를 제공합니다. 이는 인간이 선택한 가이드에 의해 훈련된 건강 관리 전문 LLM으로, 각 진화 라운드에서 훈련 대상을 계획하고, 모델을 훈련하고, 벤치마크 궤적을 평가하며, 관측된 실패로부터 데이터 혼합물을 개선합니다. 이 데이터 중심의 루프는 일반적인 의료 데이터 업데이트가 아닌, 대상 합성 및 선별된 예제를 통해 모델을 개선합니다. 건강 관리 평가 스위트 전반에서 Cura 1T는 최전선 베이스라인 중 최상위 랭크로 또는 근처에서 임을 확인하며, 도메인 이탈 추론 및 대리자 벤치마크에서 경쟁력을 유지합니다."
+    },
+    "summary": "1. Cura 1T는 환자 상담, 임상 추론, 진단, EHR 도구 사용 등을 다루는 양립 건강 관리 모델로, 인간이 선택한 가이드에 의해 훈련됩니다.\n2. 모델은 데이터 중심 루프를 통해 개선되며, 일반적인 의료 데이터 업데이트 대신 대상 합성 및 선별된 예제를 활용합니다.\n3. Cura 1T는 건강 관리 평가에서 최상위 랭크를 기록하며, 도메인 이탈 추론 및 대리자 벤치마크에서도 경쟁력을 유지합니다.",
+    "categories": [
+      "LLM",
+      "Healthcare",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "On-Policy Delta Distillation",
+    "abstract": "On-policy distillation is an alternative post-training method in reinforcement learning that alleviates the constraints imposed by reward models by providing token-level supervision from a teacher model. Although on-policy distillation has been studied and applied across various settings, its fundamental design remains underexplored. In this paper, we introduce a new distillation reward, termed the delta signal, instead of directly imitating the teacher's output distribution. The delta signal is defined as the difference between the teacher model and its base model prior to instruction tuning for reasoning capability. It therefore captures the changes induced by reasoning tuning and provides a more direct signal for transferring reasoning capabilities. Using extensive empirical evidence, we show that the delta signal substantially improves on-policy distillation and refer to the new distillation method as On-Policy Delta Distillation (OPD^2). Experiments across mathematics, science, and code-reasoning benchmarks demonstrate that OPD^2 consistently outperforms conventional on-policy distillation, enabling reasoning LLMs to achieve strong performance with only a short post-training period. Code will be available at https://github.com/naver-ai/opd2",
+    "authors": [
+      "Byeongho Heo",
+      "Jaehui Hwang",
+      "Sangdoo Yun",
+      "Dongyoon Han"
+    ],
+    "likes": 27,
+    "published_date": "Jul 16",
+    "url": "https://huggingface.co/papers/2607.15161",
+    "date_collected": "2026-07-21T08:05:56.930732+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "정책 기반 델타 증류",
+      "abstract": "정책 기반 증류는 강화 학습에서 보상 모델의 제약을 완화하는 대안적 후속 훈련 방법으로, 선생 모델로부터 토큰 수준 지도를 제공함으로써 특징이다. 정책 기반 증류는 다양한 환경에서 연구되고 적용되어 왔지만, 그 기본적인 설계는 아직 충분히 탐구되지 않았다. 본 논문에서는 선생 모델의 출력 분포를 직접 모방하는 대신, 교사 모델과 기본 모델 사이의 차이로 정의된 새로운 증류 보상인 델타 신호를 소개한다. 델타 신호는 이론 능력을 이해하기 위한 지도 튜닝 전 선생 모델과 기본 모델 사이의 차이로 정의된다. 이로써 이해 튜닝으로 인한 변화를 포착하고 이해 능력 이전에 더 직접적인 신호를 제공한다. 범용 명목로서, 델타 신호가 정책 기반 증류를 크게 개선함을 다양한 경험적 증거를 통해 보여주며, 이를 On-Policy Delta Distillation (OPD^2)라고 명명한다. 수학, 과학 및 코드 이해 벤치마크를 통해 실험한 결과 OPD^2가 일관되게 기존의 정책 기반 증류를 능가하여, 이해 LLM이 단기 후속 훈련만으로 뛰어난 성능을 달성할 수 있음을 시연한다. 코드는 https://github.com/naver-ai/opd2 에서 확인할 수 있다."
+    },
+    "summary": "1. 강화 학습에서 사용되는 정책 기반 델타 증류는 선생 모델과 기본 모델 사이의 차이로 정의된 새로운 증류 보상을 도입하여, 이해 튜닝으로 인한 변화를 포착하고 이해 능력을 더 직접적으로 전달함.\n2. OPD^2는 수학, 과학, 코드 이해 등 다양한 벤치마크에서 실험을 진행하고, 기존의 정책 기반 증류보다 뛰어난 성능을 보임.\n3. 새로운 증류 방법인 OPD^2는 단기 후속 훈련만으로 이해 LLM이 강한 성능을 달성할 수 있음을 입증함.",
+    "categories": [
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "RecGPT-V3 Technical Report",
+    "abstract": "Large language models (LLMs) are transforming recommender systems from matching co-occurrence patterns in historical behavior toward reasoning about the intent that drives it. RecGPT-V1 pioneered this paradigm on Taobao by centering user understanding, and RecGPT-V2 scaled it via coordinated multi-agent reasoning; both are deployed in production with consistent gains in user experience and commercial outcomes. However, operating RecGPT at scale reveals three challenges: (1) stateless behavior modeling, where each request reprocesses full user history, wasting computation and discarding prior analysis; (2) a tag-to-item information bottleneck, where natural-language tags form a lossy channel between user understanding and item grounding; and (3) inefficient explicit reasoning, whose lengthy chain-of-thought incurs untenable latency and compute overhead.\n  We present RecGPT-V3, a stateful, hybrid-modal recommender that reasons over natural language for open-world knowledge and Semantic IDs (SIDs) for concrete item grounding. A Memory Hub maintains structured, continually evolving user memory that distills long-horizon behavior into condensed units, cutting user-modeling computation by 55.8%. A Hybrid-modal Foundation Model allows the LLM jointly reason over text tags and SIDs, opening a high-bandwidth channel into the item space. Latent Intent Reasoning internalizes verbose rationales into compact learnable latent tokens that remain decodable into readable explanations, lowering output token cost by 200x. Deployed in Taobao's \"Guess What You Like\" feed, RecGPT-V3 achieves consistent gains in large-scale online A/B tests: IPV +1.28%, CTR +1.00%, TC +1.97%, GMV +3.97%, while cutting end-to-end serving resource consumption by 52.4%.",
+    "authors": [
+      "Bowen Zheng",
+      "Chao Yi",
+      "Dian Chen",
+      "Gaoyang Guo",
+      "Han Zhu",
+      "Jiakai Tang",
+      "Jian Wu",
+      "Mao Zhang",
+      "Wen Chen",
+      "Yifan Lu",
+      "Yujie Luo",
+      "Yuning Jiang",
+      "Zhujin Gao",
+      "Bo Zheng",
+      "Dixuan Wang",
+      "Hao Fang",
+      "Jiancai Liu",
+      "Jing Yu",
+      "Ke Chen",
+      "Kewei Zhu",
+      "Mingke Xu",
+      "Wenjun Yang"
+    ],
+    "likes": 25,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2607.15591",
+    "date_collected": "2026-07-21T08:05:56.934725+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "RecGPT-V3 기술 보고서",
+      "abstract": "대형 언어 모델(LLMs)은 추천 시스템을 과거 행동의 공존 패턴 매칭에서 이를 촉발하는 의도 추론으로 변화시키고 있습니다. RecGPT-V1은 사용자 이해를 중심으로 타오바오에서 이 개념을 도입했으며, RecGPT-V2는 협력하는 다중 에이전트 추론을 통해 이를 확장시켰습니다. 두 모델은 생산에 적용되어 사용자 경험과 상업적 결과를 일관되게 향상시켰습니다. 그러나 규모 확장 시 RecGPT의 운영은 세 가지 도전 과제를 드러냅니다: (1) 상태 없는 행동 모델링, (2) 태그-아이템 정보 병목 현상, 그리고 (3) 비효율적인 명시적 추론."
+    },
+    "summary": "1. RecGPT-V3는 사용자 메모리를 유지하는 Memory Hub를 포함한 하이브리드 모달 추천 시스템으로, 사용자 행동을 간소화된 단위로 압축하여 사용자 모델링 계산을 55.8% 줄입니다.\n2. RecGPT-V3의 하이브리드 모달 기반 모델은 텍스트 태그와 SIDs를 함께 고려함으로써 아이템 공간에 대한 고대역도어 채널을 엽니다. \n3. RecGPT-V3는 타오바오의 \"마음에 드는 상품 추천\"에서 현장 A/B 테스트에서 일관된 결과를 이끌어냄으로써 리소스 소비를 52.4% 절감하며 다양한 성과를 올립니다.",
+    "categories": [
+      "LLM",
+      "추천 시스템",
+      "자연어 처리"
+    ]
+  },
+  {
+    "title": "From Human-Centric to Agentic Code Review: The Impact of Different Generations of Generative AI Technology on Review Quality",
+    "abstract": "Code review helps maintain software quality before code integration, but it also imposes a substantial workload on human reviewers. As generative artificial intelligence becomes part of software development, code review is shifting from a primarily human review process toward AI-supported review processes in which large language model (LLM) reviewers and AI agent reviewers participate alongside human reviewers. However, we still lack empirical evidence on how this transition affects review efficiency and review quality. In this paper, we study 1.02 million reviewed pull requests from 207 GitHub projects that transition across three code review eras: human-centric review, LLM-assisted review, and agentic code review. We identify three AI reviewer adoption practices: Gradual AI Adoption, Rapid LLM Adoption, and Rapid AI Agent Adoption. We further model pull request review discussions as reviewer interaction sequences to characterize how human, LLM, and AI agent reviewers collaborate during the review process. Our results show that agent-involved collaboration patterns, especially reviews initiated by AI agents or involving multiple AI agents, are associated with faster review decisions under Gradual AI Adoption and Rapid AI Agent Adoption. However, these efficiency gains do not translate into better review quality. We also find that review activity and pull request type remain important across eras, while human-AI collaboration patterns become the strongest explanatory factor for review efficiency once LLM and AI agent reviewers participate. These findings provide empirical guidance for designing AI-supported code review processes that improve efficiency without weakening review quality.",
+    "authors": [
+      "Suzhen Zhong",
+      "Shayan Noei",
+      "Bram Adams",
+      "Ying Zou"
+    ],
+    "likes": 24,
+    "published_date": "Jul 14",
+    "url": "https://huggingface.co/papers/2607.13196",
+    "date_collected": "2026-07-21T08:05:56.937724+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "인간 중심에서 주체적 코드 리뷰로: 서로 다른 세대의 생성 AI 기술이 리뷰 품질에 미치는 영향",
+      "abstract": "코드 리뷰는 코드 통합 전 소프트웨어 품질을 유지하는 데 도움이 되지만 인간 리뷰어에게 상당한 작업 부담을 줍니다. 생성 인공지능이 소프트웨어 개발의 일부가 되면 코드 리뷰는 주로 인간 리뷰 과정에서 대규모 언어 모델 (LLM) 리뷰어와 AI 에이전트 리뷰어가 인간 리뷰어와 함께 참여하는 AI 지원 리뷰 과정으로 이동하고 있습니다. 그러나 이 전환이 리뷰 효율과 품질에 미치는 영향에 대한 경험적 증거가 부족합니다. 본 논문에서는 207개의 GitHub 프로젝트에서 1.02백만 개의 리뷰된 풀 리퀘스트를 연구하여 인간 중심 리뷰, LLM 지원 리뷰 및 주체적 코드 리뷰의 세 가지 코드 리뷰 시대를 거칩니다. 점진적 AI 적용, 빠른 LLM 적용, 빠른 AI 에이전트 적용 세 가지 AI 리뷰어 채택 방식을 식별하였으며, 리뷰어 상호 작용 시퀀스로 풀 리퀘스트 리뷰 토의를 모델링하여 인간, LLM 및 AI 에이전트 리뷰어가 리뷰 과정 동안 어떻게 협력하는지를 특성화합니다. 결과는 AI 에이전트가 참여하는 협력 패턴, 특히 AI 에이전트에 의해 시작된 리뷰나 여러 AI 에이전트가 참여한 리뷰가 점진적 AI 적용 및 빠른 AI 에이전트 적용하에서보다 더 빠른 리뷰 결정과 관련이 있다는 것을 보여줍니다. 그러나 이러한 효율성 향상은 더 나은 리뷰 품질로 이어지지 않습니다. 또한, 리뷰 활동 및 풀 리퀘스트 유형은 세대 전체에서 중요한 요소로 남아있으며, LLM 및 AI 에이전트 리뷰어의 참여가 시작되면 인간-AI 협력 패턴이 리뷰 효율성의 가장 강력한 설명 요소가 됩니다. 이러한 결과는 리뷰 품질을 약화시키지 않으면서 효율성을 향상시키는 AI 지원 코드 리뷰 프로세스를 설계하는 데 경험적인 지침을 제공합니다."
+    },
+    "summary": "1. 코드 리뷰는 인간 리뷰어에게 부담을 주지만, AI 기술이 발전함에 따라 주체적 코드 리뷰 방식으로 전환되고 있음.\n2. AI 에이전트가 참여하는 리뷰 협력 패턴은 더 빠른 리뷰 결정과 연관이 있지만, 효율성 향상은 리뷰 품질로 이어지지 않음.\n3. 인간-AI 협력 패턴이 리뷰 효율성의 중요한 설명 요소로 나타나며, 리뷰 활동과 풀 리퀘스트 유형 역시 영향을 미침.",
+    "categories": [
+      "LLM",
+      "Robotics",
+      "Other"
+    ]
+  },
+  {
+    "title": "Understanding Reasoning from Pretraining to Post-Training",
+    "abstract": "Reinforcement learning (RL) has become central to improving large language models (LLMs) on complex reasoning tasks, yet RL post-training is largely studied in isolation from the pretraining that precedes it. As a result, two basic questions remain open: (1) how do pretraining choices (model size, data) shape the returns to RL compute, and (2) what does RL actually do to the model? These questions are difficult to study in the standard LLM setting: pretraining corpora are vast and uncontrolled, making it hard to attribute behaviors to pretraining versus RL, and systematic compute sweeps across both stages are prohibitively expensive. To address these challenges, we use chess as a controlled testbed for studying reasoning across the full pretraining-to-post-training pipeline. We follow the standard LLM training pipeline by pretraining language models from 5M to 1B parameters on human chess games, supervised fine-tuning on synthetic reasoning traces, and running RL on chess puzzles with verifiable rewards. Using this framework, we find that the post-RL performance at given RL compute level is well-predicted from the pretraining loss, and slope of the RL reward curves improves approximately linearly with the pretraining tokens. Beyond scaling, we find that RL does not simply sharpen the SFT policy: on easy puzzles it amplifies correct moves the SFT policy already preferred, while on hard puzzles it surfaces correct moves that were nearly absent under SFT. We further test whether our findings transfer beyond chess by training a 1B language model on math-domain text, where the same predictive pattern emerges: longer-pretrained checkpoints reach higher post-RL performance and improve faster under RL. In sum, we provide a quantitative account of the pretraining-to-RL interface and a controlled testbed for studying the science of reasoning across the full pretraining-to-post-training pipeline.",
+    "authors": [
+      "Jingyan Shen",
+      "Ang Li",
+      "Salman Rahman",
+      "Yifan Sun",
+      "Micah Goldblum",
+      "Matus Telgarsky",
+      "Pavel Izmailov"
+    ],
+    "likes": 18,
+    "published_date": "Jul 17",
+    "url": "https://huggingface.co/papers/2607.16097",
+    "date_collected": "2026-07-21T08:05:56.940981+09:00",
+    "week": "2026-W30",
+    "translation": {
+      "title": "사전훈련부터 사후훈련까지 추론 이해하기",
+      "abstract": "강화학습(RL)은 복잡한 추론 작업에서 대형 언어모델(LLM)의 성능 향상에 중심적인 역할을 하지만, RL 사후훈련은 주로 그 앞서는 사전훈련으로부터 독립적으로 연구되었습니다. 결과적으로 두 가지 기본 질문이 여전히 남아 있습니다: (1) 사전훈련 선택(모델 크기, 데이터)이 RL 컴퓨팅에 어떻게 영향을 주는가, 그리고 (2) RL은 실제로 모델에 무엇을 하는가? 이러한 질문들은 표준 LLM 환경에서 연구하기 어렵습니다. 사전훈련 말뭉치는 방대하고 통제되지 않아 사전훈련과 RL로 인한 행동들을 명확히 구분하기 어렵고, 두 단계에 걸친 체계적인 컴퓨트 탐색은 너무 비싸기 때문에 어렵습니다. 이러한 도전에 대처하기 위해, 우리는 체스를 연구하는 제어된 실험대로 사용하여 전체 사전훈련부터 사후훈련까지 추론을 연구합니다. 사람 체스 게임에서 5M에서 1B 파라미터로 사전훈련 언어모델을 사전훈련하고, 합성 추론 트레이스에서 지도된 세부조정을 수행하고, 확증 가능한 보상이 있는 체스 퍼즐에서 RL을 실행합니다. 이 프레임워크를 사용하여, 우리는 주어진 RL 컴퓨트 수준에서의 사후-RL 성능이 사전훈련 손실에 잘 예측되며, RL 보상 곡선의 기울기가 사전훈련 토큰과 대략적으로 선형적으로 향상된다는 것을 발견했습니다. 단순히 스케일링을 넘어, 우리는 RL이 SFT 정책을 단순히 날카롭게 만드는 것이 아님을 발견했습니다: 쉬운 퍼즐의 경우, RL은 이미 SFT 정책이 선호했던 올바른 움직임을 강조하고, 어려운 퍼즐의 경우에는 SFT 아래 거의 나타나지 않았던 올바른 움직임을 도출합니다. 또한 우리의 발견이 체스를 넘어 다른 과학적 추론을 연구하기 위해 수학 영역 텍스트로 1B 언어모델을 훈련함으로써 그 참이성 패턴이 나타나는지 여부도 테스트합니다: 사전훈련 체크포인트가 높은 사후-RL 성능을 달성하고 RL 아래서 빠르게 향상되는 것을 확인합니다. 요약하면, 우리는 사전훈련부터 RL 인터페이스까지의 양적 설명을 제공하며, 전체 사전훈련부터 사후훈련까지 추론 과학을 연구할 수 있는 제어된 실험대를 제시합니다."
+    },
+    "summary": "1. 사전훈련 선택이 RL 컴퓨팅에 영향을 미치고, RL은 모델에 영향을 준다.\n2. 체스를 활용한 실험에서, RL의 보상 곡선이 사전훈련 토큰과 선형적으로 향상된다.\n3. RL은 모델의 SFT 정책을 단순히 강화하는 것이 아니라, 퍼즐의 난이도에 따라 다른 방식으로 작용한다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  }
+]

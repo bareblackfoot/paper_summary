@@ -1,0 +1,143 @@
+=== Paper Collection Started at Tue Aug 19 22:07:33 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W34
+URL: https://huggingface.co/papers/week/2025-W34
+Found 10 papers in weekly view
+Fetching likes for: DINOv3
+Fetching likes for: Ovis2.5 Technical Report
+Fetching likes for: SSRL: Self-Search Reinforcement Learning
+Fetching likes for: Thyme: Think Beyond Images
+Fetching likes for: BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining
+Fetching likes for: ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning
+Fetching likes for: 4DNeX: Feed-Forward 4D Generative Modeling Made Easy
+Fetching likes for: Next Visual Granularity Generation
+Fetching likes for: Speed Always Wins: A Survey on Efficient Architectures for Large
+  Language Models
+Fetching likes for: When Punctuation Matters: A Large-Scale Comparison of Prompt Robustness
+  Methods for LLMs
+Selected top 10 papers by likes:
+1. DINOv3 (103 likes)
+2. Ovis2.5 Technical Report (74 likes)
+3. SSRL: Self-Search Reinforcement Learning (74 likes)
+4. Thyme: Think Beyond Images (66 likes)
+5. BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining (47 likes)
+6. ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning (46 likes)
+7. 4DNeX: Feed-Forward 4D Generative Modeling Made Easy (43 likes)
+8. Next Visual Granularity Generation (38 likes)
+9. Speed Always Wins: A Survey on Efficient Architectures for Large
+  Language Models (33 likes)
+10. When Punctuation Matters: A Large-Scale Comparison of Prompt Robustness
+  Methods for LLMs (31 likes)
+Found abstract: Self-supervised learning holds the promise of eliminating the need for manual
+data annotation, enabl...
+Processed paper: DINOv3
+Found abstract: We present Ovis2.5, a successor to Ovis2 designed for native-resolution
+visual perception and strong...
+Processed paper: Ovis2.5 Technical Report
+Found abstract: We investigate the potential of large language models (LLMs) to serve as
+efficient simulators for ag...
+Processed paper: SSRL: Self-Search Reinforcement Learning
+Found abstract: Following OpenAI's introduction of the ``thinking with images'' concept,
+recent efforts have explore...
+Processed paper: Thyme: Think Beyond Images
+Found abstract: Recent advances in large language model (LLM) pretraining have shown that
+simply scaling data quanti...
+Processed paper: BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining
+Found abstract: Narrative comprehension on long stories and novels has been a challenging
+domain attributed to their...
+Processed paper: ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning
+Found abstract: We present 4DNeX, the first feed-forward framework for generating 4D (i.e.,
+dynamic 3D) scene repres...
+Processed paper: 4DNeX: Feed-Forward 4D Generative Modeling Made Easy
+Found abstract: We propose a novel approach to image generation by decomposing an image into
+a structured sequence, ...
+Processed paper: Next Visual Granularity Generation
+Found abstract: Large Language Models (LLMs) have delivered impressive results in language
+understanding, generation...
+Processed paper: Speed Always Wins: A Survey on Efficient Architectures for Large
+  Language Models
+Found abstract: Large Language Models (LLMs) are highly sensitive to subtle, non-semantic
+variations in prompt phras...
+Processed paper: When Punctuation Matters: A Large-Scale Comparison of Prompt Robustness
+  Methods for LLMs
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: DINOv3
+Paper already exists, checking if translation is complete...
+Update likes: 103  ->  45
+Update date_collected: 2025-08-20T07:07:41.216213+09:00  ->  2025-08-19T07:07:45.547845+09:00
+
+Processing paper 2/10
+Title: Ovis2.5 Technical Report
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: SSRL: Self-Search Reinforcement Learning
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  56
+Update date_collected: 2025-08-20T07:07:41.219825+09:00  ->  2025-08-19T07:07:45.544009+09:00
+
+Processing paper 4/10
+Title: Thyme: Think Beyond Images
+Paper already exists, checking if translation is complete...
+Update likes: 66  ->  55
+Update date_collected: 2025-08-20T07:07:41.221631+09:00  ->  2025-08-19T07:07:45.545913+09:00
+
+Processing paper 5/10
+Title: BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale
+  Pretraining
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  29
+Update date_collected: 2025-08-20T07:07:41.223511+09:00  ->  2025-08-19T07:07:45.549760+09:00
+
+Processing paper 6/10
+Title: ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long
+  Narrative Reasoning
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: 4DNeX: Feed-Forward 4D Generative Modeling Made Easy
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Next Visual Granularity Generation
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: Speed Always Wins: A Survey on Efficient Architectures for Large
+  Language Models
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: When Punctuation Matters: A Large-Scale Comparison of Prompt Robustness
+  Methods for LLMs
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W34.json...
+
+Updating Notion database...
+Updating paper: DINOv3 (likes: 45 -> 103)
+Creating new paper: Ovis2.5 기술 보고서
+Updating paper: SSRL: Self-Search Reinforcement Learning (likes: 56 -> 74)
+Updating paper: 이미지 너머로 생각하라: Thyme (Think Beyond Images) (likes: 55 -> 66)
+Updating paper: BeyondWeb: Trillion-규모 사전 훈련을 위한 합성 데이터 확장에 대한 교훈 (likes: 29 -> 47)
+Creating new paper: ComoRAG: 상태 기반 장기 이야기 추론을 위한 인지 영감을 받은 기억 조직화 RAG
+Creating new paper: 4DNeX: Feed-Forward 4D 생성 모델링이 쉬워졌습니다
+Creating new paper: 다음 시각적 세분화 생성
+Creating new paper: 속도가 항상 이기는 법: 대규모 언어 모델을 위한 효율적인 아키텍처에 관한 조사
+Creating new paper: 문장부호의 중요성: LLM을 위한 대규모 프롬프트 강건성 비교 연구
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Tue Aug 19 22:09:37 UTC 2025 ===
+

@@ -1,0 +1,302 @@
+[
+  {
+    "title": "OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid\n  Validation in Realistic Workflows",
+    "abstract": "Computer-using agents powered by Vision-Language Models (VLMs) have\ndemonstrated human-like capabilities in operating digital environments like\nmobile platforms. While these agents hold great promise for advancing digital\nautomation, their potential for unsafe operations, such as system compromise\nand privacy leakage, is raising significant concerns. Detecting these safety\nconcerns across the vast and complex operational space of mobile environments\npresents a formidable challenge that remains critically underexplored. To\nestablish a foundation for mobile agent safety research, we introduce\nMobileRisk-Live, a dynamic sandbox environment accompanied by a safety\ndetection benchmark comprising realistic trajectories with fine-grained\nannotations. Built upon this, we propose OS-Sentinel, a novel hybrid safety\ndetection framework that synergistically combines a Formal Verifier for\ndetecting explicit system-level violations with a VLM-based Contextual Judge\nfor assessing contextual risks and agent actions. Experiments show that\nOS-Sentinel achieves 10%-30% improvements over existing approaches across\nmultiple metrics. Further analysis provides critical insights that foster the\ndevelopment of safer and more reliable autonomous mobile agents.",
+    "authors": [
+      "Qiushi Sun",
+      "Mukai Li",
+      "Zhoumianze Liu",
+      "Zhihui Xie",
+      "Fangzhi Xu",
+      "Zhangyue Yin",
+      "Kanzhi Cheng",
+      "Zehao Li",
+      "Zichen Ding",
+      "Qi Liu",
+      "Zhiyong Wu",
+      "Zhuosheng Zhang",
+      "Ben Kao",
+      "Lingpeng Kong"
+    ],
+    "likes": 59,
+    "published_date": "Oct 28",
+    "url": "https://huggingface.co/papers/2510.24411",
+    "date_collected": "2025-11-04T07:08:16.727050+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "OS-Sentinel: 혼합 검증을 통한 안전 강화 모바일 GUI 에이전트로",
+      "abstract": "비전-언어 모델(Vision-Language Models, VLMs)에 의한 컴퓨터 에이전트는 모바일 플랫폼과 같은 디지털 환경을 운영하는 데 인간과 유사한 능력을 보여주었습니다. 그러나 이러한 에이전트가 시스템 침해나 개인 정보 누출과 같은 안전하지 않은 작업을 할 수 있는 가능성은 상당히 우려스럽습니다. 본 연구는 안전 감지 벤치마크와 함께 현실적인 궤적 및 세세한 주석으로 이루어진 MobileRisk-Live를 소개하고, 여기에 기반한 OS-Sentinel을 제안합니다. OS-Sentinel은 명시적 시스템 수준 위반을 탐지하기 위한 형식 검증기와 맥락 위험 및 에이전트 작업을 평가하기 위한 VLM 기반 맥락적 심판을 융합한 혼합 안전 감지 프레임워크입니다. 실험 결과, OS-Sentinel은 다양한 측면에서 기존 방법에 비해 10%~30%의 개선을 달성합니다. 추가 분석은 더 안전하고 믿을 수 있는 자율적인 모바일 에이전트의 발전을 촉진하는 중요한 통찰력을 제공합니다."
+    },
+    "summary": "1. MobileRisk-Live를 통한 현실적인 환경에서의 안전 감지 벤치마크 도입\n2. OS-Sentinel은 시스템 수준 위반 및 맥락적 위험을 평가하여 안전 감지를 위한 혼합 프레임워크 제안\n3. 실험 결과, OS-Sentinel은 다양한 지표에서 10%~30%의 성능 향상을 보임",
+    "categories": [
+      "LLM",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "ThinkMorph: Emergent Properties in Multimodal Interleaved\n  Chain-of-Thought Reasoning",
+    "abstract": "Multimodal reasoning requires iterative coordination between language and\nvision, yet it remains unclear what constitutes a meaningful interleaved chain\nof thought. We posit that text and image thoughts should function as\ncomplementary, rather than isomorphic, modalities that mutually advance\nreasoning. Guided by this principle, we build ThinkMorph, a unified model\nfine-tuned on 24K high-quality interleaved reasoning traces spanning tasks with\nvarying visual engagement. ThinkMorph learns to generate progressive text-image\nreasoning steps that concretely manipulate visual content while maintaining\ncoherent verbal logic. It delivers large gains on vision-centric benchmarks\n(averaging 34.7% over the base model) and generalizes to out-of-domain tasks,\nmatching or surpassing larger and proprietary VLMs. Beyond performance,\nThinkMorph exhibits emergent multimodal intelligence, including unseen visual\nmanipulation skills, adaptive switching between reasoning modes, and better\ntest-time scaling through diversified multimodal thoughts.These findings\nsuggest promising directions for characterizing the emergent capabilities of\nunified models for multimodal reasoning.",
+    "authors": [
+      "Jiawei Gu",
+      "Yunzhuo Hao",
+      "Huichen Will Wang",
+      "Linjie Li",
+      "Michael Qizhe Shieh",
+      "Yejin Choi",
+      "Ranjay Krishna",
+      "Yu Cheng"
+    ],
+    "likes": 54,
+    "published_date": "Oct 30",
+    "url": "https://huggingface.co/papers/2510.27492",
+    "date_collected": "2025-11-04T07:08:16.728324+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "ThinkMorph: 다중 모달 교차체인 사고 추론에서의 신생 속성",
+      "abstract": "다중 모달 추론은 언어와 시각 간의 반복적 조율을 요구하지만, 어떤 의미 있는 교차체인 사고를 구성하는지는 여전히 명확하지 않습니다. 우리는 텍스트와 이미지 사고가 상호 보완적으로 작용해야 하며 동질적인 것이 아닌 모달로, 상호적으로 추론을 전진시킬 것이라고 주장합니다. 이 원칙에 따라, 우리는 서로 다른 시각적 참여를 가진 과제 영역에 걸쳐 24K의 고품질 교차체인 추론 트레이스에 맞춤형된 통합 모델 ThinkMorph를 구축했습니다."
+    },
+    "summary": "1. ThinkMorph는 텍스트-이미지 추론 단계를 생성하고 시각적 콘텐츠를 구체적으로 조작하면서 일관된 언어적 논리를 유지함으로써 대형 성능의 비전 중심 벤치마크에서 상당한 이득을 제공합니다.\n2. 본 연구에서 발견된 다중 모달 지능의 신생 속성은, unseen 시각적 조작 기술, 추론 모드 간 적응적 전환, 다양한 다중 모달 사고를 통한 더 나은 테스트 시 확장성을 포함합니다.\n3. ThinkMorph는 다중 모달 추론을 위한 통합 모델의 신생 능력을 특성화하는 유망한 방향을 제시합니다.",
+    "categories": [
+      "Multimodal",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization\n  Formats",
+    "abstract": "Modern AI hardware, such as Nvidia's Blackwell architecture, is increasingly\nembracing low-precision floating-point (FP) formats to handle the pervasive\nactivation outliers in Large Language Models (LLMs). Despite this industry\ntrend, a unified comparison of FP and integer (INT) quantization across varying\ngranularities has been missing, leaving algorithm and hardware co-design\nwithout clear guidance. This paper fills that gap by systematically\ninvestigating the trade-offs between FP and INT formats. We reveal a critical\nperformance crossover: while FP excels in coarse-grained quantization, the\ncomparison at fine-grained (block-wise) levels is more nuanced. Our\ncomprehensive comparison demonstrates that for popular 8-bit fine-grained\nformats (e.g., MX with block size 32), MXINT8 is superior to its FP counterpart\nin both algorithmic accuracy and hardware efficiency. However, for 4-bit\nformats, FP (e.g., MXFP4, NVFP4) often holds an accuracy advantage , though we\nshow that NVINT4 can surpass NVFP4 when outlier-mitigation techniques like\nHadamard rotation are applied. We also introduce a symmetric clipping method\nthat resolves gradient bias in fine-grained low-bit INT training, enabling\nnearly lossless performance for MXINT8 training. These findings challenge the\ncurrent hardware trajectory, demonstrating that a one-size-fits-all FP approach\nis suboptimal and advocating that fine-grained INT formats, particularly\nMXINT8, offer a better balance of accuracy, power, and efficiency for future AI\naccelerators.",
+    "authors": [
+      "Mengzhao Chen",
+      "Meng Wu",
+      "Hui Jin",
+      "Zhihang Yuan",
+      "Jing Liu",
+      "Chaoyi Zhang",
+      "Yunshui Li",
+      "Jie Huang",
+      "Jin Ma",
+      "Zeyue Xue",
+      "Zhiheng Liu",
+      "Xingyan Bin",
+      "Ping Luo"
+    ],
+    "likes": 46,
+    "published_date": "Oct 29",
+    "url": "https://huggingface.co/papers/2510.25602",
+    "date_collected": "2025-11-04T07:08:16.729820+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "INT 대 FP: 소수점 저비트 양자화 형식의 포괄적 연구",
+      "abstract": "현대 AI 하드웨어인 Nvidia의 Blackwell 구조 등은 대형 언어 모델 (LLM)의 지속적 활성화 이상치를 처리하기 위해 저 정밀도 부동 소수점 (FP) 형식을 점점 더 채택하고 있습니다. 그러나 FP와 정수 (INT) 양자화를 다양한 세부 단위에서 통합적으로 비교한 연구는 없었습니다. 이로 인해 알고리즘 및 하드웨어 공동 설계에 명확한 지침이 부족한 상황입니다. 본 논문은 FP와 INT 형식 사이의 트레이드오프를 체계적으로 조사해 이 간격을 메웁니다. 우리는 핵심 성능 교차점을 밝혀냅니다: FP는 대거나된 양자화에서 뛰어난 성과를 보이지만, 블록별 세밀한 수준에서의 비교는 미묘합니다. 우리의 포괄적 비교는 인기 있는 8비트 세밀한 형식(MX 블록 크기 32와 같은)에서 MXINT8이 알고리즘 정확도와 하드웨어 효율성 양면에서 FP 대응편보다 뛰어나다는 것을 보여줍니다. 그러나, 4비트 형식에서는 FP(MXFP4, NVFP4 등)가 종종 정확성 이점을 가집니다. 단, Hadamard 회전과 같은 이상치 완화 기술이 적용되면 NVINT4가 NVFP4를 능가할 수 있음을 보여줍니다. 또한 세밀한 저비트 INT 훈련의 기울기 편향을 해결하는 대칭 클리핑 방법을 소개하여 MXINT8 훈련에 거의 손실이 없는 성능을 제공합니다. 이러한 연구 결과는 현재 하드웨어 전략을 도전하며, 일반적인 FP 접근 방식이 하나의 크기가 모든 것이라는 것이 최적이 아니며, 향후 AI 가속기에 대한 정확성, 전력 및 효율성의 더 나은 균형을 제공하는 MXINT8과 같은 세밀한 INT 형식을 주장합니다."
+    },
+    "summary": "1. FP와 INT 양자화 형식의 세밀한 비교를 통해 MXINT8이 알고리즘 정확도와 하드웨어 효율성 측면에서 8비트 세밀 형식에서 우수하다는 것을 밝혀냄.\n2. Hadamard 회전 기술 등을 적용하면 NVINT4가 NVFP4를 능가할 수 있음을 시연하여 4비트 형식에서도 INT가 일정 이점을 지닌다는 것을 보여줌.\n3. 세밀한 INT 훈련에서 기울기 편향을 해결하는 대칭 클리핑 방법을 제안하여 MXINT8 훈련을 거의 손실없이 처리할 수 있게 함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "π_RL: Online RL Fine-tuning for Flow-based\n  Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) models enable robots to understand and perform\ncomplex tasks from multimodal input. Although recent work explores using\nreinforcement learning (RL) to automate the laborious data collection process\nin scaling supervised fine-tuning (SFT), applying large-scale RL to flow-based\nVLAs (e.g., pi_0, pi_{0.5}) remains challenging due to intractable action\nlog-likelihoods from iterative denoising.\n  We address this challenge with pi_{RL}, an open-source framework\nfor training flow-based VLAs in parallel simulation. pi_{RL}\nimplements two RL algorithms: (1) {Flow-Noise} models the denoising process as\na discrete-time MDP with a learnable noise network for exact log-likelihood\ncomputation. (2) {Flow-SDE} integrates denoising with agent-environment\ninteraction, formulating a two-layer MDP that employs ODE-to-SDE conversion for\nefficient RL exploration.\n  We evaluate pi_{RL} on LIBERO and ManiSkill benchmarks. On LIBERO,\npi_{RL} boosts few-shot SFT models pi_0 and pi_{0.5} from 57.6%\nto 97.6% and from 77.1% to 98.3%, respectively. In ManiSkill, we train\npi_{RL} in 320 parallel environments, improving pi_0 from 41.6% to\n85.7% and pi_{0.5} from 40.0% to 84.8% across 4352 pick-and-place tasks,\ndemonstrating scalable multitask RL under heterogeneous simulation.\n  Overall, pi_{RL} achieves significant performance gains and\nstronger generalization over SFT-models, validating the effectiveness of online\nRL for flow-based VLAs.",
+    "authors": [
+      "Kang Chen",
+      "Zhihao Liu",
+      "Tonghe Zhang",
+      "Zhen Guo",
+      "Si Xu",
+      "Hao Lin",
+      "Hongzhi Zang",
+      "Quanlu Zhang",
+      "Zhaofei Yu",
+      "Guoliang Fan",
+      "Tiejun Huang",
+      "Yu Wang",
+      "Chao Yu"
+    ],
+    "likes": 38,
+    "published_date": "Oct 29",
+    "url": "https://huggingface.co/papers/2510.25889",
+    "date_collected": "2025-11-04T07:08:16.731302+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "π_RL: 온라인 강화학습 Fine-tuning을 위한 플로우 기반 시각-언어-동작 모델",
+      "abstract": "시각-언어-동작 (VLA) 모델은 다중 모달 입력으로 로봇이 복잡한 작업을 이해하고 수행할 수 있게 합니다. 최근 연구에서 지도 학습 세밀 조정(SFT)을 확장하기 위해 강화학습(RL)을 사용해 번거로운 데이터 수집 과정을 자동화하는 것이 탐구되었지만, 대규모 RL을 플로우 기반 VLA (예: pi_0, pi_{0.5})에 적용하는 것은 반복적으로 노이즈 제거로부터 추론 불가능한 동작 로그-우도 때문에 어려움이 있습니다."
+    },
+    "summary": "1. pi_{RL}은 시각-언어-동작 모델을 훈련하기 위한 온라인 강화학습 프레임워크로, 정확한 로그-우도 계산을 위해 노이즈 네트워크를 활용하고 효율적인 RL 탐색을 달성합니다.\n2. LIBERO와 ManiSkill 벤치마크에서 pi_{RL}은 소수 학습 모델의 성능을 97.6%까지 향상시키고, 이질적인 시뮬레이션에서도 다중 작업 RL을 지원합니다.\n3. 전체적으로 pi_{RL}은 강화학습을 통해 플로우 기반 VLA를 효과적으로 향상시키고 강한 일반화 성능을 보여주는 것으로 입증됩니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Multimodal",
+      "Robotics"
+    ]
+  },
+  {
+    "title": "Continuous Autoregressive Language Models",
+    "abstract": "The efficiency of large language models (LLMs) is fundamentally limited by\ntheir sequential, token-by-token generation process. We argue that overcoming\nthis bottleneck requires a new design axis for LLM scaling: increasing the\nsemantic bandwidth of each generative step. To this end, we introduce\nContinuous Autoregressive Language Models (CALM), a paradigm shift from\ndiscrete next-token prediction to continuous next-vector prediction. CALM uses\na high-fidelity autoencoder to compress a chunk of K tokens into a single\ncontinuous vector, from which the original tokens can be reconstructed with\nover 99.9\\% accuracy. This allows us to model language as a sequence of\ncontinuous vectors instead of discrete tokens, which reduces the number of\ngenerative steps by a factor of K. The paradigm shift necessitates a new\nmodeling toolkit; therefore, we develop a comprehensive likelihood-free\nframework that enables robust training, evaluation, and controllable sampling\nin the continuous domain. Experiments show that CALM significantly improves the\nperformance-compute trade-off, achieving the performance of strong discrete\nbaselines at a significantly lower computational cost. More importantly, these\nfindings establish next-vector prediction as a powerful and scalable pathway\ntowards ultra-efficient language models. Code:\nhttps://github.com/shaochenze/calm. Project:\nhttps://shaochenze.github.io/blog/2025/CALM.",
+    "authors": [
+      "Chenze Shao",
+      "Darren Li",
+      "Fandong Meng",
+      "Jie Zhou"
+    ],
+    "likes": 27,
+    "published_date": "Oct 31",
+    "url": "https://huggingface.co/papers/2510.27688",
+    "date_collected": "2025-11-04T07:08:16.732403+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "연속 자기회귀 언어 모델",
+      "abstract": "대형 언어 모델의 효율성은 순차적인 토큰 단위 생성 과정에 근본적으로 제한됩니다. 본 연구는 이 병목 현상을 극복하기 위해 각 생성 스텝의 의미적 대역폭을 증가시키는 새로운 디자인 축을 제안합니다. 이를 위해 연속 자기회귀 언어 모델(CALM)을 소개하는데, 이는 이산적인 다음 토큰 예측에서 연속적인 다음 벡터 예측으로의 패러다임 전환이라고 주장합니다. CALM은 K개의 토큰 묶음을 단일 연속 벡터로 압축하기 위해 고성능 오토인코더를 사용하며, 이 벡터에서 원래 토큰을 99.9% 이상의 정확도로 재구성할 수 있습니다. 이로써 언어를 이산적인 토큰이 아닌 연속 벡터 시퀀스로 모델링할 수 있어 생성 스텝 수를 K 배 줄일 수 있습니다. 이러한 패러다임 전환이 새로운 모델링 도구가 필요하게 합니다. 따라서 본 연구에서는 연속 도메인에서 견고한 훈련, 평가 및 제어 가능한 샘플링을 가능케 하는 포괄적인 확률적 비모형 프레임워크를 개발합니다. 실험 결과 CALM이 성능-계산 비용 트레이드오프를 크게 개선하여 강력한 이산 기준의 성능을 훨씬 낮은 계산 비용으로 달성합니다. 더 중요한 것은, 이러한 발견이 다음 벡터 예측을 통해 매우 효율적인 언어 모델로 가는 강력하고 확장 가능한 경로를 성립합니다."
+    },
+    "summary": "1. 연속 자기회귀 언어 모델(CALM)은 이산적인 토큰 예측 대신 연속적인 다음 벡터 예측을 통해 언어를 모델링하며, 새로운 모델링 툴킷을 도입하여 성능-계산 비용 트레이드오프를 개선합니다.\n2. CALM은 고성능 오토인코더를 사용하여 K개의 토큰을 단일 연속 벡터로 압축하고 원래 토큰을 높은 정확도로 재구성합니다.\n3. 연구 결과는 CALM이 뛰어난 이산적인 기준의 성능을 보다 낮은 계산 비용으로 달성하며, 다음 벡터 예측이 매우 효율적인 언어 모델로 이어지는 강력하고 확장 가능한 방안임을 입증합니다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised\n  Reinforcement Learning",
+    "abstract": "Spatial understanding remains a weakness of Large Vision-Language Models\n(LVLMs). Existing supervised fine-tuning (SFT) and recent reinforcement\nlearning with verifiable rewards (RLVR) pipelines depend on costly supervision,\nspecialized tools, or constrained environments that limit scale. We introduce\nSpatial-SSRL, a self-supervised RL paradigm that derives verifiable signals\ndirectly from ordinary RGB or RGB-D images. Spatial-SSRL automatically\nformulates five pretext tasks that capture 2D and 3D spatial structure:\nshuffled patch reordering, flipped patch recognition, cropped patch inpainting,\nregional depth ordering, and relative 3D position prediction. These tasks\nprovide ground-truth answers that are easy to verify and require no human or\nLVLM annotation. Training on our tasks substantially improves spatial reasoning\nwhile preserving general visual capabilities. On seven spatial understanding\nbenchmarks in both image and video settings, Spatial-SSRL delivers average\naccuracy gains of 4.63% (3B) and 3.89% (7B) over the Qwen2.5-VL baselines. Our\nresults show that simple, intrinsic supervision enables RLVR at scale and\nprovides a practical route to stronger spatial intelligence in LVLMs.",
+    "authors": [
+      "Yuhong Liu",
+      "Beichen Zhang",
+      "Yuhang Zang",
+      "Yuhang Cao",
+      "Long Xing",
+      "Xiaoyi Dong",
+      "Haodong Duan",
+      "Dahua Lin",
+      "Jiaqi Wang"
+    ],
+    "likes": 19,
+    "published_date": "Oct 31",
+    "url": "https://huggingface.co/papers/2510.27606",
+    "date_collected": "2025-11-04T07:08:16.733704+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "Spatial-SSRL: 자기 주도적 강화 학습을 통한 공간 이해력 향상",
+      "abstract": "공간 이해력은 대형 시각-언어 모델(LVLMs)의 약점으로 남아 있습니다. 기존의 지도 미세 조정(SFT) 및 최근의 확인 가능 보상을 사용한 강화 학습(RLVR) 파이프라인은 비용이 많이 들거나, 전문화된 도구 또는 제한된 환경에 의존하여 규모를 제한합니다. 본 연구에서는 Spatial-SSRL을 소개합니다. 이는 보편적인 RGB 또는 RGB-D 이미지에서 확인 가능한 신호를 직접 파생하는 자기 주도적 강화 학습 패러다임입니다. Spatial-SSRL은 2D 및 3D 공간 구조를 포착하는 다섯 가지 전치업무를 자동으로 구성합니다. 이러한 작업은 솔트 패치 재정렬, 뒤집힌 패치 인식, 잘린 패치 채움, 지역적 깊이 순서 매기기 및 상대적 3D 위치 예측을 포함합니다. 이러한 작업들은 검증하기 쉬운 민주적인 정답을 제공하며, 인간 또는 LVLM 주석이 필요하지 않습니다. 이러한 작업들에 대한 훈련은 공간 추론 능력을 크게 향상시키면서 일반적인 시각 능력을 유지합니다. 이미지 및 비디오 설정의 일곱 가지 공간 이해 벤치마크에서, Spatial-SSRL은 Qwen2.5-VL 기준선 대비 평균 정확도 향상률로 4.63% (3B) 및 3.89% (7B)를 제공합니다. 결과적으로 간단하고 본질적인 감독은 규모에 걸쳐 RLVR을 가능하게 하고 LVLMs에서 강력한 공간 지능로의 현실적인 경로를 제공합니다."
+    },
+    "summary": "1. Spatial-SSRL은 LVLMs의 공간 이해력을 향상시키기 위해 자기 주도적 강화 학습을 도입하며, 이미지의 2D 및 3D 공간 구조를 파악하는 다섯 가지 전치작업을 자동으로 수행합니다.\n2. 이 연구 결과로, Spatial-SSRL을 통한 훈련은 공간 추론 능력을 크게 향상시키고 일반적인 시각 능력을 유지하는 것으로 나타났으며, 다양한 공간 이해력 벤치마크에서 뛰어난 성과를 보였습니다.\n3. 간단하고 본질적인 감독은 RLVR을 큰 규모로 가능하게 하고 LVLMs에서 강력한 공간 지능로의 현실적인 발전 경로를 제시함을 실험적으로 입증했습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "HyperClick: Advancing Reliable GUI Grounding via Uncertainty Calibration",
+    "abstract": "Autonomous Graphical User Interface (GUI) agents rely on accurate GUI\ngrounding, which maps language instructions to on-screen coordinates, to\nexecute user commands. However, current models, whether trained via supervised\nfine-tuning (SFT) or reinforcement fine-tuning (RFT), lack self-awareness of\ntheir capability boundaries, leading to overconfidence and unreliable\npredictions. We first systematically evaluate probabilistic and verbalized\nconfidence in general and GUI-specific models, revealing a misalignment between\nconfidence and actual accuracy, which is particularly critical in dynamic GUI\nautomation tasks, where single errors can cause task failure. To address this,\nwe propose HyperClick, a novel framework that enhances reliable GUI grounding\nthrough uncertainty calibration. HyperClick introduces a dual reward mechanism,\ncombining a binary reward for correct actions with a truncated Gaussian-based\nspatial confidence modeling, calibrated using the Brier score. This approach\njointly optimizes grounding accuracy and confidence reliability, fostering\nintrospective self-criticism. Extensive experiments on seven challenge\nbenchmarks show that HyperClick achieves state-of-the-art performance while\nproviding well-calibrated confidence. By enabling explicit confidence\ncalibration and introspective self-criticism, HyperClick reduces overconfidence\nand supports more reliable GUI automation.",
+    "authors": [
+      "Shaojie Zhang",
+      "Pei Fu",
+      "Ruoceng Zhang",
+      "Jiahui Yang",
+      "Anan Du",
+      "Xiuwen Xi",
+      "Shaokang Wang",
+      "Ying Huang",
+      "Bin Qin",
+      "Zhenbo Luo",
+      "Jian Luan"
+    ],
+    "likes": 15,
+    "published_date": "Oct 31",
+    "url": "https://huggingface.co/papers/2510.27266",
+    "date_collected": "2025-11-04T07:08:16.735089+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "신뢰할 수 있는 GUI 그라운딩을 발전시키는 HyperClick: 불확실성 보정을 통해",
+      "abstract": "자율적인 그래픽 사용자 인터페이스(GUI) 에이전트는 사용자 명령을 실행하기 위해 언어 지침을 화면 상 좌표로 매핑하는 정확한 GUI 그라운딩에 의존합니다. 그러나 현재의 모델은 지도된 미세조정(SFT)이나 강화 학습 미세조정(RFT)을 통해 훈련되었더라도, 자신들의 능력 한계에 대한 자각성이 부족하여 자신감이 너무 높고 신뢰할 수 없는 예측을 일으킵니다. 본 연구에서는 확률적 및 표상화된 신뢰를 일반적 및 GUI 특정 모델에서 체계적으로 평가하여 신뢰와 실제 정확도 사이에 불일치가 있음을 밝혔으며, 특히 동적 GUI 자동화 작업에서는 일부 오류가 작업 실패로 이어질 수 있는 매우 중요한 문제입니다. 이에 대응하여 우리는 HyperClick을 제안합니다. 이 프레임워크는 불확실성 보정을 통해 신뢰할 수 있는 GUI 그라운딩을 향상시키는 혁신적인 방법입니다. HyperClick은 올바른 행동에 대한 이진 보상과 Brier 점수를 사용하여 보정된 잘린 가우스 기반 공간 신뢰 모델링을 결합하는 이중 보상 메커니즘을 도입합니다. 이 접근 방식은 그라운딩 정확도와 신뢰 신뢰성을 동시에 최적화하여 내성적인 자기 비판을 육성합니다. 일곱 가지 도전 벤치마크에서의 광범위한 실험 결과는 HyperClick이 최첨단 성능을 달성하면서 잘 보정된 신뢰를 제공한다는 것을 보여줍니다. 명시적인 신뢰 보정과 내성적인 자기 비판을 가능케 함으로써 HyperClick은 자신감을 줄이고 더 신뢰할 수 있는 GUI 자동화를 지원합니다."
+    },
+    "summary": "1. 현재 GUI 모델은 자신들의 능력 한계를 고려하지 않아 신뢰성이 떨어지고 예측이 부정확함.\n2. HyperClick은 불확실성 보정을 통해 GUI 그라운딩을 향상시키는 새로운 프레임워크로, 정확도와 신뢰성을 동시에 최적화함.\n3. HyperClick은 명시적인 신뢰 보정과 내성적인 자기 비판을 통해 GUI 자동화의 신뢰성을 높이고, 최첨단 성능 달성함.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Defeating the Training-Inference Mismatch via FP16",
+    "abstract": "Reinforcement learning (RL) fine-tuning of large language models (LLMs) often\nsuffers from instability due to the numerical mismatch between the training and\ninference policies. While prior work has attempted to mitigate this issue\nthrough algorithmic corrections or engineering alignments, we show that its\nroot cause lies in the floating point precision itself. The widely adopted\nBF16, despite its large dynamic range, introduces large rounding errors that\nbreaks the consistency between training and inference. In this work, we\ndemonstrate that simply reverting to FP16 effectively eliminates this\nmismatch. The change is simple, fully supported by modern frameworks with only\na few lines of code change, and requires no modification to the model\narchitecture or learning algorithm. Our results suggest that using FP16\nuniformly yields more stable optimization, faster convergence, and stronger\nperformance across diverse tasks, algorithms and frameworks. We hope these\nfindings motivate a broader reconsideration of precision trade-offs in RL\nfine-tuning.",
+    "authors": [
+      "Penghui Qi",
+      "Zichen Liu",
+      "Xiangxin Zhou",
+      "Tianyu Pang",
+      "Chao Du",
+      "Wee Sun Lee",
+      "Min Lin"
+    ],
+    "likes": 15,
+    "published_date": "Oct 30",
+    "url": "https://huggingface.co/papers/2510.26788",
+    "date_collected": "2025-11-04T07:08:16.736303+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "FP16를 통한 훈련-추론 불일치 극복",
+      "abstract": "대형 언어 모델(LLMs)의 강화 학습(RL) 미세 조정은 훈련 및 추론 정책 사이의 수치 불일치로 인한 불안정으로 흔히 영향을 받습니다. 이전 연구들은 이 문제를 알고리즘적 보정이나 엔지니어링 조정을 통해 완화하려 했지만, 우리는 실제 원인이 부동 소수점 정밀도에 있다는 것을 보여줍니다. 널리 사용되는 BF16은 큰 동적 범위에도 불구하고 훈련과 추론 사이의 일관성을 깨뜨리는 큰 반올림 오차를 도입합니다. 본 연구에서는 FP16로 간단히 되돌리면 이 불일치가 효과적으로 제거된다는 것을 입증합니다. 이 변경은 간단하며 현대적인 프레임워크에서 완전히 지원되며 몇 줄의 코드 변경만으로도 가능하며 모델 구조나 학습 알고리즘을 수정할 필요가 없습니다. 결과는 FP16 사용이 더 안정적인 최적화, 빠른 수렴, 다양한 작업, 알고리즘 및 프레임워크에서 강력한 성능을 제공함을 시사합니다. 이 발견들이 RL 미세 조정에서 정밀도 교역에 대한 보다 광범위한 재고를 유도하기를 희망합니다."
+    },
+    "summary": "1. 대형 언어 모델의 강화 학습 미세 조정에서 발생하는 훈련과 추론 정책 사이의 수치 불일치 문제를 FP16로 간단히 해결할 수 있음을 입증함.\n2. FP16의 사용은 안정적인 최적화, 빠른 수렴 및 강력한 성능 향상을 초래하며, 기존 알고리즘 및 프레임워크에서 지원됨.\n3. 이러한 결과는 강화 학습 미세 조정에서 정밀도 선택의 폭을 재고할 필요성을 제기하며, 다양한 작업에 대해 유용함을 시사함.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Phased DMD: Few-step Distribution Matching Distillation via Score\n  Matching within Subintervals",
+    "abstract": "Distribution Matching Distillation (DMD) distills score-based generative\nmodels into efficient one-step generators, without requiring a one-to-one\ncorrespondence with the sampling trajectories of their teachers. However,\nlimited model capacity causes one-step distilled models underperform on complex\ngenerative tasks, e.g., synthesizing intricate object motions in text-to-video\ngeneration. Directly extending DMD to multi-step distillation increases memory\nusage and computational depth, leading to instability and reduced efficiency.\nWhile prior works propose stochastic gradient truncation as a potential\nsolution, we observe that it substantially reduces the generation diversity of\nmulti-step distilled models, bringing it down to the level of their one-step\ncounterparts. To address these limitations, we propose Phased DMD, a multi-step\ndistillation framework that bridges the idea of phase-wise distillation with\nMixture-of-Experts (MoE), reducing learning difficulty while enhancing model\ncapacity. Phased DMD is built upon two key ideas: progressive distribution\nmatching and score matching within subintervals. First, our model divides the\nSNR range into subintervals, progressively refining the model to higher SNR\nlevels, to better capture complex distributions. Next, to ensure the training\nobjective within each subinterval is accurate, we have conducted rigorous\nmathematical derivations. We validate Phased DMD by distilling state-of-the-art\nimage and video generation models, including Qwen-Image (20B parameters) and\nWan2.2 (28B parameters). Experimental results demonstrate that Phased DMD\npreserves output diversity better than DMD while retaining key generative\ncapabilities. We will release our code and models.",
+    "authors": [
+      "Xiangyu Fan",
+      "Zesong Qiu",
+      "Zhuguanyu Wu",
+      "Fanzhou Wang",
+      "Zhiqian Lin",
+      "Tianxiang Ren",
+      "Dahua Lin",
+      "Ruihao Gong",
+      "Lei Yang"
+    ],
+    "likes": 14,
+    "published_date": "Oct 31",
+    "url": "https://huggingface.co/papers/2510.27684",
+    "date_collected": "2025-11-04T07:08:16.737610+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "다단계 단계별 분포 매칭 디스틸레이션: 하위구간 내 점수 매칭을 통한 소수 단계 분포 일치",
+      "abstract": "분포 매칭 디스틸레이션 (Distribution Matching Distillation, DMD)은 점수 기반 생성 모델을 일대일 대응 없이 효율적인 단계별 생성기로 전환하는 기술이다. 그러나 한계된 모델 용량으로 복잡한 생성 작업에서 성능 저하가 발생하는데, 이를 해결하기 위해 다단계 디스틸레이션을 진행하면 기억 사용량과 계산 깊이가 증가하고 불안정하며 효율성이 감소한다."
+    },
+    "summary": "1. 한계된 모델 용량으로 복잡한 생성 작업에 대한 디스틸레이션 성능 저하 문제를 해결하고자 함.\n2. 다단계 디스틸레이션을 진행하면서 발생하는 메모리 사용량과 계산 깊이, 불안정성, 효율성 문제 파악.\n3. Phased DMD 제안: 단계별 디스틸레이션과 MoE 아이디어 결합하여 학습 난이도 감소와 모델 용량 증진. 하위구간 내 점수 매칭을 통해 훈련 목표 정확성 향상.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive\n  Trigger Learning",
+    "abstract": "Multimodal large language models (MLLMs) have advanced embodied agents by\nenabling direct perception, reasoning, and planning task-oriented actions from\nvisual inputs. However, such vision driven embodied agents open a new attack\nsurface: visual backdoor attacks, where the agent behaves normally until a\nvisual trigger appears in the scene, then persistently executes an\nattacker-specified multi-step policy. We introduce BEAT, the first framework to\ninject such visual backdoors into MLLM-based embodied agents using objects in\nthe environments as triggers. Unlike textual triggers, object triggers exhibit\nwide variation across viewpoints and lighting, making them difficult to implant\nreliably. BEAT addresses this challenge by (1) constructing a training set that\nspans diverse scenes, tasks, and trigger placements to expose agents to trigger\nvariability, and (2) introducing a two-stage training scheme that first applies\nsupervised fine-tuning (SFT) and then our novel Contrastive Trigger Learning\n(CTL). CTL formulates trigger discrimination as preference learning between\ntrigger-present and trigger-free inputs, explicitly sharpening the decision\nboundaries to ensure precise backdoor activation. Across various embodied agent\nbenchmarks and MLLMs, BEAT achieves attack success rates up to 80%, while\nmaintaining strong benign task performance, and generalizes reliably to\nout-of-distribution trigger placements. Notably, compared to naive SFT, CTL\nboosts backdoor activation accuracy up to 39% under limited backdoor data.\nThese findings expose a critical yet unexplored security risk in MLLM-based\nembodied agents, underscoring the need for robust defenses before real-world\ndeployment.",
+    "authors": [
+      "Qiusi Zhan",
+      "Hyeonjeong Ha",
+      "Rui Yang",
+      "Sirui Xu",
+      "Hanyang Chen",
+      "Liang-Yan Gui",
+      "Yu-Xiong Wang",
+      "Huan Zhang",
+      "Heng Ji",
+      "Daniel Kang"
+    ],
+    "likes": 7,
+    "published_date": "Oct 31",
+    "url": "https://huggingface.co/papers/2510.27623",
+    "date_collected": "2025-11-04T07:08:16.738923+09:00",
+    "week": "2025-W45",
+    "translation": {
+      "title": "MLLM 기반 시각 후문 공격: 대조적 트리거 학습을 통한 신체화된 의사 결정에 대한 시각적 공격",
+      "abstract": "다중모달 대형 언어 모델(MLLM)은 시각적 입력으로부터 직접 지각, 추론, 계획 작업 지향적 액션을 가능케하여 신체화된 에이전트들을 발전시켰다. 그러나 이러한 시각 중심의 신체화된 에이전트들은 시각 후문 공격의 새로운 공격 대상을 열었다. 이 공격에서 에이전트는 장면에 시각적 트리거가 나타날 때까지 정상적으로 행동하다가 그 후 지속적으로 공격자가 지정한 다단계 정책을 실행한다. 우리는 BEAT를 소개하는데, 이는 환경의 객체들을 트리거로 사용하여 MLLM 기반의 신체화된 에이전트들에 시각적 후문을 주입하는 첫 번째 프레임워크이다. 텍스트 트리거와 달리 객체 트리거는 시점과 조명을 통해 다양성이 표출되어 신뢰성 있게 심어지기 어렵다."
+    },
+    "summary": "1. 다중모달 대형 언어 모델을 사용한 시각 후문 공격이 신체화된 에이전트들에 새로운 보안 리스크를 제시하며, 트리거로써 환경의 객체들을 활용한다.\n2. BEAT는 다양한 시점, 작업, 트리거 배치를 포함하는 학습 세트를 활용하여 에이전트들에 트리거 다양성을 노출시키는 두 단계의 학습 체계를 도입하며, 역거래적 트리거 학습(CTL)을 통해 트리거 식별 문제를 해결한다.\n3. BEAT는 다양한 신체화된 에이전트 벤치마크와 MLLM에서 공격 성공률을 최대 80%까지 달성하면서도 강력한 선의 작업 성능을 유지하고, 분포 밖의 트리거 배치에 안정적으로 일반화된다.",
+    "categories": [
+      "LLM",
+      "Multimodal",
+      "Other"
+    ]
+  }
+]

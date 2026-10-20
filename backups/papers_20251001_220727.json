@@ -1,0 +1,321 @@
+[
+  {
+    "title": "LongLive: Real-time Interactive Long Video Generation",
+    "abstract": "We present LongLive, a frame-level autoregressive (AR) framework for\nreal-time and interactive long video generation. Long video generation presents\nchallenges in both efficiency and quality. Diffusion and Diffusion-Forcing\nmodels can produce high-quality videos but suffer from low efficiency due to\nbidirectional attention. Causal attention AR models support KV caching for\nfaster inference, but often degrade in quality on long videos due to memory\nchallenges during long-video training. In addition, beyond static prompt-based\ngeneration, interactive capabilities, such as streaming prompt inputs, are\ncritical for dynamic content creation, enabling users to guide narratives in\nreal time. This interactive requirement significantly increases complexity,\nespecially in ensuring visual consistency and semantic coherence during prompt\ntransitions. To address these challenges, LongLive adopts a causal, frame-level\nAR design that integrates a KV-recache mechanism that refreshes cached states\nwith new prompts for smooth, adherent switches; streaming long tuning to enable\nlong video training and to align training and inference (train-long-test-long);\nand short window attention paired with a frame-level attention sink, shorten as\nframe sink, preserving long-range consistency while enabling faster generation.\nWith these key designs, LongLive fine-tunes a 1.3B-parameter short-clip model\nto minute-long generation in just 32 GPU-days. At inference, LongLive sustains\n20.7 FPS on a single NVIDIA H100, achieves strong performance on VBench in both\nshort and long videos. LongLive supports up to 240-second videos on a single\nH100 GPU. LongLive further supports INT8-quantized inference with only marginal\nquality loss.",
+    "authors": [
+      "Shuai Yang",
+      "Wei Huang",
+      "Ruihang Chu",
+      "Yicheng Xiao",
+      "Yuyang Zhao",
+      "Xianbang Wang",
+      "Muyang Li",
+      "Enze Xie",
+      "Yingcong Chen",
+      "Yao Lu",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "likes": 156,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22622",
+    "date_collected": "2025-10-01T07:07:48.324035+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "실시간 대화형 장긴 영상 생성 시스템",
+      "abstract": "본 연구에서는 실시간 및 대화형 장긴 영상 생성을 위한 frame-level 자기회귀(AR) 프레임워크인 LongLive를 제안합니다. 장긴 영상 생성은 효율성과 품질 측면에서 도전을 겪고 있습니다. 확산(diffusion) 및 확산 강제(diffusion-forcing) 모델은 높은 품질의 영상을 생성할 수 있지만 양방향 주의(bidirectional attention)로 인해 효율성이 낮습니다. 인과주의 주의력 AR 모델은 빠른 추론을 위해 KV 캐싱을 지원하지만 장긴 영상의 훈련 과정에서 메모리 도전으로 인해 품질이 저하될 수 있습니다. 또한 정적 프롬프트 기반 생성을 넘어, 스트리밍 프롬프트 입력과 같은 대화형 능력은 실시간으로 이야기를 이끌어내는 사용자를 위해 중요합니다."
+    },
+    "summary": "1. LongLive는 실시간 및 대화형 장긴 영상 생성을 위한 causal, frame-level AR 디자인을 채택하여 품질과 효율성을 균형 있게 유지합니다.\n2. LongLive는 KV-recache 메커니즘, 스트리밍 긴 조율, frame-level 주의력을 통해 장긴 영상 훈련과 추론을 지원하며, 32 GPU-days 안에 1.3B-파라미터 모델을 분 단위 생성으로 세밀하게 조정합니다.\n3. LongLive는 NVIDIA H100에서 20.7 FPS의 성능을 유지하며, VBench에서 강력한 성능을 보이며, 240초 영상 생성을 가능하게 합니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "EPO: Entropy-regularized Policy Optimization for LLM Agents\n  Reinforcement Learning",
+    "abstract": "Training LLM agents in multi-turn environments with sparse rewards, where\ncompleting a single task requires 30+ turns of interaction within an episode,\npresents a fundamental challenge for reinforcement learning. We identify a\ncritical failure mode unique to this setting: the exploration-exploitation\ncascade failure. This cascade begins with early-stage policy premature\nconvergence, where sparse feedback causes agents to commit to flawed,\nlow-entropy strategies. Subsequently, agents enter late-stage policy collapse,\nwhere conventional entropy regularization becomes counterproductive, promoting\nchaotic exploration that destabilizes training. We propose Entropy-regularized\nPolicy Optimization (EPO), a general framework that breaks this failure cycle\nthrough three synergistic mechanisms: (1) adopting entropy regularization in\nmulti-turn settings to enhance exploration, (2) an entropy smoothing\nregularizer that bounds policy entropy within historical averages to prevent\nabrupt fluctuations, and (3) adaptive phase-based weighting that balances\nexploration and exploitation across training. Our analysis justifies that EPO\nguarantees monotonically decreasing entropy variance while maintaining\nconvergence. EPO achieves up to 152% performance improvement on ScienceWorld\nand up to 19.8% on ALFWorld. Our work demonstrates that multi-turn\nsparse-reward settings require fundamentally different entropy control than\ntraditional RL, with broad implications for LLM agent training.",
+    "authors": [
+      "Xu Wujiang",
+      "Wentian Zhao",
+      "Zhenting Wang",
+      "Li Yu-Jhe",
+      "Jin Can",
+      "Jin Mingyu",
+      "Mei Kai",
+      "Wan Kun",
+      "Metaxas Dimitris"
+    ],
+    "likes": 112,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22576",
+    "date_collected": "2025-10-01T07:07:48.325376+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "엔트로피 정규화된 정책 최적화를 통한 LLM 에이전트들의 훈련",
+      "abstract": "여러 번의 상호작용을 필요로 하는 희소 보상을 갖는 멀티턴 환경에서 LLM 에이전트를 훈련하는 것은 강화 학습에 기본적인 도전을 제공합니다. 우리는 이 환경에서만 발생하는 중요한 실패 모드를 식별했습니다: 탐사-활용 연쇄 실패. 이 연쇄는 초기 정책 조기 수렴부터 시작하여, 희소한 피드백으로 인해 에이전트들이 결함이 있는, 낮은 엔트로피 전략에 헌신하게 됩니다. 그 후, 일반적인 엔트로피 정규화가 역효과를 보이는 정지 정책 붕괴 상태에 진입하게 됩니다. 우리는 이 실패 주기를 깨는 일반적인 프레임워크인 Entropy-regularized Policy Optimization (EPO)을 제안합니다."
+    },
+    "summary": "1. 멀티턴 환경에서 엔트로피 정규화를 채택하여 탐사를 강화함으로써 실패 사이클을 깨는 EPO 프레임워크가 제안되었습니다.\n2. EPO는 정책 엔트로피를 역사적 평균 내에서 한정시켜 급격한 변동을 방지하는 엔트로피 부드럽게 정규화하는 정규화자를 도입하였으며, 훈련 중에 탐사와 활용을 균형 있게 유지하는 적응적 단계별 가중치를 사용합니다.\n3. EPO는 엔트로피 분산이 단조롭게 감소하는 것을 보장하면서 수렴을 유지하며, ScienceWorld에서 최대 152%의 성능 향상과 ALFWorld에서 최대 19.8%의 성능 향상을 달성하였습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Quantile Advantage Estimation for Entropy-Safe Reasoning",
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) strengthens LLM\nreasoning, but training often oscillates between {entropy collapse} and\n{entropy explosion}. We trace both hazards to the mean baseline used in\nvalue-free RL (e.g., GRPO and DAPO), which improperly penalizes\nnegative-advantage samples under reward outliers. We propose {Quantile\nAdvantage Estimation} (QAE), replacing the mean with a group-wise K-quantile\nbaseline. QAE induces a response-level, two-regime gate: on hard queries (p <=\n1 - K) it reinforces rare successes, while on easy queries (p > 1 - K) it\ntargets remaining failures. Under first-order softmax updates, we prove\n{two-sided entropy safety}, giving lower and upper bounds on one-step entropy\nchange that curb explosion and prevent collapse. Empirically, this minimal\nmodification stabilizes entropy, sparsifies credit assignment (with tuned K,\nroughly 80% of responses receive zero advantage), and yields sustained pass@1\ngains on Qwen3-8B/14B-Base across AIME 2024/2025 and AMC 2023. These results\nidentify {baseline design} -- rather than token-level heuristics -- as the\nprimary mechanism for scaling RLVR.",
+    "authors": [
+      "Junkang Wu",
+      "Kexin Huang",
+      "Jiancan Wu",
+      "An Zhang",
+      "Xiang Wang",
+      "Xiangnan He"
+    ],
+    "likes": 108,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22611",
+    "date_collected": "2025-10-01T07:07:48.326532+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "엔트로피 안전 추론을 위한 분위수 이점 추정",
+      "abstract": "확인 가능한 보상을 갖는 강화학습(RLVR)은 LLM 추론을 강화하지만, 훈련은 종종 엔트로피 붕괴와 폭발 사이를 오가게 됩니다. 우리는 이러한 위험을 모두 가치가 없는 RL(예: GRPO 및 DAPO)에서 사용된 평균 베이스라인으로 추적합니다. 이는 보상 이상치 아래의 음 이점 샘플을 부적절하게 처벌합니다. 우리는 분위수 이점 추정(QAE)을 제안하여 평균을 그룹별 K-분위수 베이스라인으로 대체합니다. QAE는 응답 수준의 두 단계 게이트를 유도합니다: 어려운 쿼리(p <= 1 - K)에서는 드문 성공을 강화하고, 쉬운 쿼리(p > 1 - K)에서는 남은 실패를 대상으로 합니다. 우리는 일차적인 softmax 업데이트 하에서 한 단계 엔트로피 변화에 대한 상한 및 하한을 증명하여 폭발을 억제하고 붕괴를 방지하는 {양방향 엔트로피 안전}을 제공합니다. 경험적으로, 이 작은 수정으로 엔트로피를 안정화시키고 신용 할당을 희소화시키며(튜닝된 K로 대략 80%의 응답이 0 이점을 받음), AIME 2024/2025와 AMC 2023에서 Qwen3-8B/14B-Base로 지속적인 pass@1 향상을 얻습니다. 이러한 결과는 토큰 레벨 휴리스틱이 아닌 베이스라인 디자인이 RLVR을 확장하는 주요 메커니즘임을 확인합니다."
+    },
+    "summary": "1. 엔트로피 안전 추론을 위한 분위수 이점 추정(QAE)은 평균을 그룹별 K-분위수 베이스라인으로 대체하여 RLVR의 향상된 안정성을 제공합니다.\n2. QAE는 어려운 쿼리에는 드문 성공을, 쉬운 쿼리에는 남은 실패를 강조하여 두 단계 게이트를 유도하며, 엔트로피 통제를 통해 엔트로피의 폭발과 붕괴를 예방합니다.\n3. 베이스라인 디자인이 RLVR의 규모 확장을 위한 기본 메커니즘임을 확인하는 실험 결과가 있습니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable\n  Sparse-Linear Attention",
+    "abstract": "In Diffusion Transformer (DiT) models, particularly for video generation,\nattention latency is a major bottleneck due to the long sequence length and the\nquadratic complexity. We find that attention weights can be separated into two\nparts: a small fraction of large weights with high rank and the remaining\nweights with very low rank. This naturally suggests applying sparse\nacceleration to the first part and low-rank acceleration to the second. Based\non this finding, we propose SLA (Sparse-Linear Attention), a trainable\nattention method that fuses sparse and linear attention to accelerate diffusion\nmodels. SLA classifies attention weights into critical, marginal, and\nnegligible categories, applying O(N^2) attention to critical weights, O(N)\nattention to marginal weights, and skipping negligible ones. SLA combines these\ncomputations into a single GPU kernel and supports both forward and backward\npasses. With only a few fine-tuning steps using SLA, DiT models achieve a 20x\nreduction in attention computation, resulting in significant acceleration\nwithout loss of generation quality. Experiments show that SLA reduces attention\ncomputation by 95% without degrading end-to-end generation quality,\noutperforming baseline methods. In addition, we implement an efficient GPU\nkernel for SLA, which yields a 13.7x speedup in attention computation and a\n2.2x end-to-end speedup in video generation on Wan2.1-1.3B.",
+    "authors": [
+      "Jintao Zhang",
+      "Haoxu Wang",
+      "Kai Jiang",
+      "Shuo Yang",
+      "Kaiwen Zheng",
+      "Haocheng Xi",
+      "Ziteng Wang",
+      "Hongzhou Zhu",
+      "Min Zhao",
+      "Ion Stoica",
+      "Joseph E. Gonzalez",
+      "Jun Zhu",
+      "Jianfei Chen"
+    ],
+    "likes": 97,
+    "published_date": "Sep 28",
+    "url": "https://huggingface.co/papers/2509.24006",
+    "date_collected": "2025-10-01T07:07:48.328017+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "확산 트랜스포머에서의 희소성을 넘어서: Featuning 가능한 희소-선형 어텐션을 통해",
+      "abstract": "동영상 생성을 위한 확산 트랜스포머(Diffusion Transformer, DiT) 모델에서 어텐션 지연은 장시퀀스 길이와 이차 복잡성으로 인해 주요 병목 요인이다. 우리는 어텐션 가중치를 큰 순위와 매우 낮은 순위를 가진 두 부분으로 분리할 수 있음을 발견했다. 이는 첫 번째 부분에는 희소 가속을, 두 번째 부분에는 저차원 가속을 적용할 것을 자연스럽게 시사한다. 이 발견을 기반으로 우리는 SLA (Sparse-Linear Attention)를 제안한다. 이는 희소와 선형 어텐션을 융합하여 확산 모델을 가속화하는 학습 가능한 어텐션 방법이다. SLA는 어텐션 가중치를 중요, 주변, 무시 가능 세 가지 범주로 분류하고, 중요한 가중치에 O(N^2) 어텐션, 주변 가중치에 O(N) 어텐션을 적용하며, 무시 가능한 가중치는 건너뛴다. SLA는 이러한 계산을 하나의 GPU 커널로 결합하며 전방향과 역방향 패스를 모두 지원한다. SLA를 사용한 소수의 파인튜닝 단계만으로 DiT 모델은 어텐션 계산을 20배 줄여줌으로써 상당한 가속화를 실현하고 생성 품질이 손상되지 않는다. 실험 결과, SLA는 어텐션 계산을 95% 줄이고 종단-종단 생성 품질을 하락시키지 않아 기본 방법을 능가한다. 게다가, 우리는 효율적인 GPU 커널을 SLA에 구현하여, 어텐션 계산 속도를 13.7배 향상시키고 Wan2.1-1.3B에서 동영상 생성 속도를 2.2배 향상시켰다."
+    },
+    "summary": "1. 확산 트랜스포머 모델에서 어텐션 계산 가속화를 위해 SLA를 제안하였고, 이는 희소와 선형 어텐션을 결합하여 어텐션 가중치를 중요, 주변, 무시 가능 세 범주로 분류하여 적용함.\n2. SLA를 사용하면 소수의 파인튠링 단계만으로 DiT 모델의 어텐션 계산을 20배 줄여줌으로써 상당한 가속화를 이뤘으며, 생성 품질을 손상시키지 않음.\n3. 실험 결과, SLA는 어텐션 계산을 95% 줄이고 종단-종단 생성 품질을 유지하며, 효율적인 GPU 커널을 구현하여 속도를 대폭 향상시켰다.",
+    "categories": [
+      "LLM",
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient\n  High-Resolution Document Parsing",
+    "abstract": "We introduce MinerU2.5, a 1.2B-parameter document parsing vision-language\nmodel that achieves state-of-the-art recognition accuracy while maintaining\nexceptional computational efficiency. Our approach employs a coarse-to-fine,\ntwo-stage parsing strategy that decouples global layout analysis from local\ncontent recognition. In the first stage, the model performs efficient layout\nanalysis on downsampled images to identify structural elements, circumventing\nthe computational overhead of processing high-resolution inputs. In the second\nstage, guided by the global layout, it performs targeted content recognition on\nnative-resolution crops extracted from the original image, preserving\nfine-grained details in dense text, complex formulas, and tables. To support\nthis strategy, we developed a comprehensive data engine that generates diverse,\nlarge-scale training corpora for both pretraining and fine-tuning. Ultimately,\nMinerU2.5 demonstrates strong document parsing ability, achieving\nstate-of-the-art performance on multiple benchmarks, surpassing both\ngeneral-purpose and domain-specific models across various recognition tasks,\nwhile maintaining significantly lower computational overhead.",
+    "authors": [
+      "Junbo Niu",
+      "Zheng Liu",
+      "Zhuangcheng Gu",
+      "Bin Wang",
+      "Linke Ouyang",
+      "Zhiyuan Zhao",
+      "Tao Chu",
+      "Tianyao He",
+      "Fan Wu",
+      "Qintong Zhang",
+      "Zhenjiang Jin",
+      "Guang Liang",
+      "Rui Zhang",
+      "Wenzheng Zhang",
+      "Yuan Qu",
+      "Zhifei Ren",
+      "Yuefeng Sun",
+      "Yuanhong Zheng",
+      "Dongsheng Ma",
+      "Zirui Tang",
+      "Boyu Niu",
+      "Ziyang Miao"
+    ],
+    "likes": 90,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22186",
+    "date_collected": "2025-10-01T07:07:48.329847+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "MinerU2.5: 효율적인 고해상도 문서 구문 분석을 위한 분리된 Vision-Language 모델",
+      "abstract": "MinerU2.5는 1.2B 파라미터의 문서 구문 분석 Vision-Language 모델로, 탁월한 계산 효율성을 유지하면서 최첨단 인식 정확도를 달성합니다. 우리의 접근 방식은 전역 레이아웃 분석과 지역 콘텐츠 인식을 분리하는 coarse-to-fine, 두 단계의 parsing 전략을 사용합니다."
+    },
+    "summary": "1. MinerU2.5는 고해상도 이미지 처리의 계산 비용을 줄이기 위해 다운샘플링된 이미지에서 효율적인 레이아웃 분석을 수행하고, 전역 레이아웃에 따라 원본 이미지에서 추출된 native-resolution crops에서 지역 콘텐츠 인식을 실행하여 상세한 텍스트, 복잡한 수식, 표의 세부 정보를 보존합니다.\n2. MinerU2.5는 다양하고 대규모의 훈련 말뭉치를 생성하는 종합적인 데이터 엔진을 개발하여 이 전략을 지원하며, 다양한 인식 작업에서 일반 용도 및 도메인 특정 모델을 능가하면서 상위 성능을 보이며, 계산 오버헤드를 크게 줄이고 있습니다.\n3. MinerU2.5는 다중 벤치마크에서 최첨단의 문서 구문 분석 능력을 보여주며, 다양한 인식 작업에서 일반적인 용도 및 도메인별 모델을 능가하면서 상당히 낮은 계산 오버헤드를 유지하고 있습니다.",
+    "categories": [
+      "Computer Vision",
+      "Multimodal",
+      "Other"
+    ]
+  },
+  {
+    "title": "Variational Reasoning for Language Models",
+    "abstract": "We introduce a variational reasoning framework for language models that\ntreats thinking traces as latent variables and optimizes them through\nvariational inference. Starting from the evidence lower bound (ELBO), we extend\nit to a multi-trace objective for tighter bounds and propose a forward-KL\nformulation that stabilizes the training of the variational posterior. We\nfurther show that rejection sampling finetuning and binary-reward RL, including\nGRPO, can be interpreted as local forward-KL objectives, where an implicit\nweighting by model accuracy naturally arises from the derivation and reveals a\npreviously unnoticed bias toward easier questions. We empirically validate our\nmethod on the Qwen 2.5 and Qwen 3 model families across a wide range of\nreasoning tasks. Overall, our work provides a principled probabilistic\nperspective that unifies variational inference with RL-style methods and yields\nstable objectives for improving the reasoning ability of language models. Our\ncode is available at https://github.com/sail-sg/variational-reasoning.",
+    "authors": [
+      "Xiangxin Zhou",
+      "Zichen Liu",
+      "Haonan Wang",
+      "Chao Du",
+      "Min Lin",
+      "Chongxuan Li",
+      "Liang Wang",
+      "Tianyu Pang"
+    ],
+    "likes": 58,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22637",
+    "date_collected": "2025-10-01T07:07:48.331107+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "언어 모델을 위한 변수 추론",
+      "abstract": "우리는 사고 트레이스를 잠재 변수로 취급하고 변분 추론을 통해 최적화하는 언어 모델을 위한 변수 추론 프레임워크를 소개합니다. 우리는 evidence lower bound (ELBO)를 기반으로 시작하여 더 강한 한계를 위한 다중 트레이스 목적으로 확장하고, 변분 사후의 훈련을 안정화하는 forward-KL 공식을 제안합니다. 또한 거절 샘플링 미세 조정과 바이너리-보상 강화 학습, 그 중 GRPO가 지역 forward-KL 목표로 해석될 수 있음을 보여줍니다. 모델 정확도에 의해 암묵적으로 가중치가 생기고 유도되는 이전에 인지되지 않았던 쉬운 질문으로의 편향을 드러냅니다. 우리는 Qwen 2.5 및 Qwen 3 모델 패밀리에서 다양한 추론 작업을 거쳐 우리의 방법을 경험적으로 검증합니다. 우리의 작업은 변분 추론을 RL 스타일 방법과 통합하고 언어 모델의 추론 능력을 향상시키기 위한 안정적인 목적을 제공합니다. 우리의 코드는 https://github.com/sail-sg/variational-reasoning에서 사용할 수 있습니다."
+    },
+    "summary": "1. 사고 트레이스를 잠재 변수로 취급하고 변분 추론을 통해 언어 모델을 최적화하는 프레임워크를 소개합니다.\n2. 다중 트레이스 목적과 forward-KL 공식을 제안하여 훈련을 안정화하고, 거절 샘플링 미세 조정과 바이너리-보상 강화 학습을 지역 forward-KL 목표로 해석합니다.\n3. 실험 결과로 Qwen 2.5 및 Qwen 3 모델 패밀리에서 다양한 추론 작업을 통해 이 방법을 검증하고, 안정적인 목적을 제공하여 언어 모델의 추론 능력을 향상시킵니다.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "ReviewScore: Misinformed Peer Review Detection with Large Language\n  Models",
+    "abstract": "Peer review serves as a backbone of academic research, but in most AI\nconferences, the review quality is degrading as the number of submissions\nexplodes. To reliably detect low-quality reviews, we define misinformed review\npoints as either \"weaknesses\" in a review that contain incorrect premises, or\n\"questions\" in a review that can be already answered by the paper. We verify\nthat 15.2% of weaknesses and 26.4% of questions are misinformed and introduce\nReviewScore indicating if a review point is misinformed. To evaluate the\nfactuality of each premise of weaknesses, we propose an automated engine that\nreconstructs every explicit and implicit premise from a weakness. We build a\nhuman expert-annotated ReviewScore dataset to check the ability of LLMs to\nautomate ReviewScore evaluation. Then, we measure human-model agreements on\nReviewScore using eight current state-of-the-art LLMs and verify moderate\nagreements. We also prove that evaluating premise-level factuality shows\nsignificantly higher agreements than evaluating weakness-level factuality. A\nthorough disagreement analysis further supports a potential of fully automated\nReviewScore evaluation.",
+    "authors": [
+      "Hyun Ryu",
+      "Doohyuk Jang",
+      "Hyemin S. Lee",
+      "Joonhyun Jeong",
+      "Gyeongman Kim",
+      "Donghyeon Cho",
+      "Gyouk Chu",
+      "Minyeong Hwang",
+      "Hyeongwon Jang",
+      "Changhun Kim",
+      "Haechan Kim",
+      "Jina Kim",
+      "Joowon Kim",
+      "Yoonjeon Kim",
+      "Kwanhyung Lee",
+      "Chanjae Park",
+      "Heecheol Yun",
+      "Gregor Betz",
+      "Eunho Yang"
+    ],
+    "likes": 58,
+    "published_date": "Sep 25",
+    "url": "https://huggingface.co/papers/2509.21679",
+    "date_collected": "2025-10-01T07:07:48.332811+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "리뷰스코어: 대형 언어 모델을 활용한 잘못된 피어 리뷰 탐지",
+      "abstract": "피어 리뷰는 학술 연구의 기반 역할을 하지만 대부분의 AI 학회에서는 논문 제출량이 급증함에 따라 리뷰 품질이 저하되고 있습니다. 저품질 리뷰를 신뢰성 있게 탐지하기 위해, 우리는 잘못된 리뷰 포인트를 \"약점\"으로 정의하며 이는 잘못된 전제를 포함하는 리뷰를 나타내며 논문으로 이미 답할 수 있는 \"질문\"을 가리킵니다."
+    },
+    "summary": "1. 잘못된 리뷰 포인트를 식별하기 위해 ReviewScore를 도입하였고, 약점의 15.2%와 질문의 26.4%가 잘못됨을 확인함.\n2. 약점의 전제사실을 검증하기 위해 자동화 엔진을 제안하였고, LLMs의 ReviewScore 평가 자동화 능력을 확인하기 위해 전문가 주석이 달린 데이터셋을 구축함.\n3. 여덟 가지 최신 LLMs를 사용하여 ReviewScore의 인간-모델 일치도를 측정하고, 전제 수준의 사실성평가가 약점 수준의 평가보다 높은 일치도를 보임.",
+    "categories": [
+      "LLM",
+      "인공지능",
+      "기계학습"
+    ]
+  },
+  {
+    "title": "Language Models Can Learn from Verbal Feedback Without Scalar Rewards",
+    "abstract": "LLMs are often trained with RL from human or AI feedback, yet such methods\ntypically compress nuanced feedback into scalar rewards, discarding much of\ntheir richness and inducing scale imbalance. We propose treating verbal\nfeedback as a conditioning signal. Inspired by language priors in text-to-image\ngeneration, which enable novel outputs from unseen prompts, we introduce the\nfeedback-conditional policy (FCP). FCP learns directly from response-feedback\npairs, approximating the feedback-conditional posterior through maximum\nlikelihood training on offline data. We further develop an online bootstrapping\nstage where the policy generates under positive conditions and receives fresh\nfeedback to refine itself. This reframes feedback-driven learning as\nconditional generation rather than reward optimization, offering a more\nexpressive way for LLMs to directly learn from verbal feedback. Our code is\navailable at https://github.com/sail-sg/feedback-conditional-policy.",
+    "authors": [
+      "Renjie Luo",
+      "Zichen Liu",
+      "Xiangyan Liu",
+      "Chao Du",
+      "Min Lin",
+      "Wenhu Chen",
+      "Wei Lu",
+      "Tianyu Pang"
+    ],
+    "likes": 57,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22638",
+    "date_collected": "2025-10-01T07:07:48.334069+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "언어 모델이 스칼라 보상 없이 언어적 피드백으로부터 학습할 수 있다",
+      "abstract": "대부분의 언어 모델은 RL로 인간이나 AI로부터 피드백을 받아 훈련되나, 이러한 방법들은 일반적으로 미묘한 피드백을 스칼라 보상으로 압축하여 풍부성의 많은 부분을 상실하게 하고 규모 불균형을 유도한다. 우리는 언어적 피드백을 조건 신호로 취급하는 것을 제안한다. 텍스트-이미지 생성에서의 언어 선우들로 영감을 받아, 보이지 않은 프롬프트로부터 새로운 출력을 가능케 하는 피트백-조건 확률론적 방법 (FCP)을 소개한다. FCP는 응답-피드백 쌍으로부터 직접 학습하며, 오프라인 데이터에서 최대우도 학습을 통해 피드백-조건 사후 확률을 근사화한다. 우리는 추가로 정책이 양성 조건 아래서 생성하고 자체를 개선하기 위해 신선한 피드백을 받는 온라인 부트스트래핑 단계를 발전시킨다. 이는 리워드 최적화가 아닌 조건부 생성으로 피드백 주도 학습을 재평가하여, 언어 모델이 언어적 피드백으로부터 직접 학습하는 더 표현력 있는 방법을 제공한다. 저희 코드는 https://github.com/sail-sg/feedback-conditional-policy에서 확인할 수 있다."
+    },
+    "summary": "1. 스칼라 보상 대신에 언어적 피드백을 통해 학습하는 새로운 방법인 피드백-조건 확률론적 방법 (FCP)을 제안함.\n2. FCP는 응답-피드백 쌍을 학습하여 피드백-조건 사후 확률을 근사화하고, 오프라인 데이터에서 최대우도 학습을 수행함.\n3. 양성 조건 아래에서 생성하고 신선한 피드백을 받아 정책을 개선하는 온라인 부트스트래핑 단계를 도입하여, 언어 모델이 리워드 최적화가 아닌 조건부 생성으로 학습할 수 있도록 함.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "StableToken: A Noise-Robust Semantic Speech Tokenizer for Resilient\n  SpeechLLMs",
+    "abstract": "Prevalent semantic speech tokenizers, designed to capture linguistic content,\nare surprisingly fragile. We find they are not robust to meaning-irrelevant\nacoustic perturbations; even at high Signal-to-Noise Ratios (SNRs) where speech\nis perfectly intelligible, their output token sequences can change drastically,\nincreasing the learning burden for downstream LLMs. This instability stems from\ntwo flaws: a brittle single-path quantization architecture and a distant\ntraining signal indifferent to intermediate token stability. To address this,\nwe introduce StableToken, a tokenizer that achieves stability through a\nconsensus-driven mechanism. Its multi-branch architecture processes audio in\nparallel, and these representations are merged via a powerful bit-wise voting\nmechanism to form a single, stable token sequence. StableToken sets a new\nstate-of-the-art in token stability, drastically reducing Unit Edit Distance\n(UED) under diverse noise conditions. This foundational stability translates\ndirectly to downstream benefits, significantly improving the robustness of\nSpeechLLMs on a variety of tasks.",
+    "authors": [
+      "Yuhan Song",
+      "Linhao Zhang",
+      "Chuhan Wu",
+      "Aiwei Liu",
+      "Wei Jia",
+      "Houfeng Wang",
+      "Xiao Zhou"
+    ],
+    "likes": 57,
+    "published_date": "Sep 26",
+    "url": "https://huggingface.co/papers/2509.22220",
+    "date_collected": "2025-10-01T07:07:48.335275+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "StableToken: 안정적인 의미 음성 토큰 분할기",
+      "abstract": "의미 음성 토큰 분할기들은 의외로 부서지기 쉽습니다. 음성이 완전히 이해 가능한 높은 신호 대 잡음 비율에서도, 출력 토큰 시퀀스가 크게 변할 수 있어서 하류 LLMs의 학습 부담을 증가시킵니다. 본 불안정성은 두 가지 결점에서 비롯됩니다: 취약한 단일 경로 양자화 구조 및 중간 토큰 안정성에 무관한 먼 훈련 신호. 이를 해결하기 위해 우리는 안정적인 토큰 시퀀스를 형성하기 위해 강력한 다수결 주도 메커니즘을 통해 안정성을 달성하는 StableToken을 소개합니다."
+    },
+    "summary": "1. 기존 의미 음성 토큰 분할기는 의외로 노이즈에 취약하며, StableToken은 다수결 메커니즘을 이용해 안정성을 확보함.\n2. StableToken은 다양한 잡음 조건에서 Unit Edit Distance를 크게 감소시키며, 음성 LLMs의 강건성을 현저히 향상시킴.\n3. 새로운 상태 지정의 안정성은 하류 이점에 직접적으로 이어져 다양한 작업에서 음성 LLMs의 강건성을 크게 향상시킴.",
+    "categories": [
+      "LLM",
+      "Audio",
+      "Other"
+    ]
+  },
+  {
+    "title": "Multiplayer Nash Preference Optimization",
+    "abstract": "Reinforcement learning from human feedback (RLHF) has emerged as the standard\nparadigm for aligning large language models (LLMs) with human preferences.\nHowever, reward-based methods built on the Bradley-Terry assumption struggle to\ncapture the non-transitive and heterogeneous nature of real-world preferences.\nTo address this, recent studies have reframed alignment as a two-player Nash\ngame, giving rise to Nash learning from human feedback (NLHF). While this\nperspective has inspired algorithms such as INPO, ONPO, and EGPO with strong\ntheoretical and empirical guarantees, they remain fundamentally restricted to\ntwo-player interactions, creating a single-opponent bias that fails to capture\nthe full complexity of realistic preference structures. In this work, we\nintroduce Multiplayer Nash Preference Optimization (MNPO), a novel framework\nthat generalizes NLHF to the multiplayer regime. It formulates alignment as an\nn-player game, where each policy competes against a population of opponents\nwhile being regularized toward a reference model. Our framework establishes\nwell-defined Nash equilibria in multiplayer settings and extends the concept of\nduality gap to quantify approximation quality. We demonstrate that MNPO\ninherits the equilibrium guarantees of two-player methods while enabling richer\ncompetitive dynamics and improved coverage of diverse preference structures.\nThrough comprehensive empirical evaluation, we show that MNPO consistently\noutperforms existing NLHF baselines on instruction-following benchmarks,\nachieving superior alignment quality under heterogeneous annotator conditions\nand mixed-policy evaluation scenarios. Together, these results establish MNPO\nas a principled and scalable framework for aligning LLMs with complex,\nnon-transitive human preferences. Code is available at\nhttps://github.com/smiles724/MNPO.",
+    "authors": [
+      "Fang Wu",
+      "Xu Huang",
+      "Weihao Xuan",
+      "Zhiwei Zhang",
+      "Yijia Xiao",
+      "Guancheng Wan",
+      "Xiaomin Li",
+      "Bing Hu",
+      "Peng Xia",
+      "Jure Leskovec",
+      "Yejin Choi"
+    ],
+    "likes": 51,
+    "published_date": "Sep 27",
+    "url": "https://huggingface.co/papers/2509.23102",
+    "date_collected": "2025-10-01T07:07:48.336673+09:00",
+    "week": "2025-W40",
+    "translation": {
+      "title": "다중 플레이어 나시 선호도 최적화",
+      "abstract": "인간 피드백으로부터의 강화 학습(RLHF)은 대형 언어 모델(LLMs)을 인간 선호와 조화시키는 표준 패러다임으로 등장했다. 하지만 Bradley-Terry 가정에 기반한 보상 기반 방법은 실제 선호의 이질적이고 추이성을 포착하는 데 어려움을 겪는다. 최근 연구는 정렬을 두 명의 플레이어 나시 게임으로 재구성하는 NLHF로 나타났다. 이 관점은 INPO, ONPO, EGPO 등의 알고리즘을 영감주었으나 이들은 두 명의 상호작용에 근본적으로 제한되어 있어 실제 선호 구조의 전체 복잡성을 포착하지 못하는 단점이 있다. 본 연구에서는 NLHF를 다중 플레이어로 일반화하는 새로운 프레임워크인 MNPO를 소개한다. 우리의 프레임워크는 각 정책이 기준 모델로 정규화되는 n-플레이어 게임으로 정렬을 공식화한다. 우리의 프레임워크는 다중 플레이어 설정에서 명확한 나시 평형을 확립하고 근사 품질을 측정하기 위해 이중 갭 개념을 확장한다."
+    },
+    "summary": "1. 인간 피드백을 통한 강화 학습은 LLMs과 인간 선호를 조화시키는 표준 패러다임이다.\n2. 기존의 두 명 플레이어 방법의 한계를 극복하기 위해 MNPO가 다중 플레이어 환경으로 확장되었다.\n3. MNPO는 다양한 선호 구조를 잘 포괄하면서도 좋은 근사 품질을 제공함을 시범적 평가를 통해 입증하였다.",
+    "categories": [
+      "Reinforcement Learning",
+      "LLM",
+      "Other"
+    ]
+  }
+]

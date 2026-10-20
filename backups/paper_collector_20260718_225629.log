@@ -1,0 +1,127 @@
+=== Paper Collection Started at Fri Jul 17 22:55:20 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W29
+URL: https://huggingface.co/papers/week/2026-W29
+Found 10 papers in weekly view
+Fetching likes for: Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable
+Fetching likes for: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Fetching likes for: Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation
+Fetching likes for: VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding
+Fetching likes for: Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models
+Fetching likes for: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Fetching likes for: Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning
+Fetching likes for: Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation
+Fetching likes for: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Fetching likes for: Video Generation Models are General-Purpose Vision Learners
+Selected top 10 papers by likes:
+1. Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable (186 likes)
+2. Weak-to-Strong Generalization via Direct On-Policy Distillation (125 likes)
+3. Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation (122 likes)
+4. VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding (108 likes)
+5. Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models (96 likes)
+6. ABot-N1: Toward a General Visual Language Navigation Foundation Model (95 likes)
+7. Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning (84 likes)
+8. Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation (79 likes)
+9. ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory (78 likes)
+10. Video Generation Models are General-Purpose Vision Learners (74 likes)
+Found abstract: The capability of a modern AI agent depends not only on its foundation model but also on its harness...
+Processed paper: Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable
+Found abstract: Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-mo...
+Processed paper: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Found abstract: We introduce Boogu-Image-0.1, an open-source unified multimodal understanding and generation model f...
+Processed paper: Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation
+Found abstract: Recent advances in video understanding have spanned motion, long video, and streaming interaction, d...
+Processed paper: VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding
+Found abstract: Coding agents must integrate external tool returns into ongoing reasoning - a capability that standa...
+Processed paper: Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models
+Found abstract: Visual Language Navigation foundation models aim to unify deep reasoning for grounded spatial decisi...
+Processed paper: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Found abstract: Reinforcement learning with verifiable rewards without human-annotated data, often referred to as ze...
+Processed paper: Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning
+Found abstract: Visual generators excel at rendering, but they confidently fabricate what they do not know. User req...
+Processed paper: Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation
+Found abstract: Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon ...
+Processed paper: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Found abstract: Driven by next-token prediction, NLP shifted from task-specific models into powerful generalist foun...
+Processed paper: Video Generation Models are General-Purpose Vision Learners
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable
+Paper already exists, checking if translation is complete...
+Update likes: 186  ->  163
+Update date_collected: 2026-07-18T07:55:30.195445+09:00  ->  2026-07-17T08:03:42.245648+09:00
+
+Processing paper 2/10
+Title: Weak-to-Strong Generalization via Direct On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 125  ->  119
+Update date_collected: 2026-07-18T07:55:30.198127+09:00  ->  2026-07-17T08:03:42.248340+09:00
+
+Processing paper 3/10
+Title: Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 122  ->  107
+Update date_collected: 2026-07-18T07:55:30.202301+09:00  ->  2026-07-17T08:03:42.252290+09:00
+
+Processing paper 4/10
+Title: VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models
+Paper already exists, checking if translation is complete...
+Update likes: 96  ->  90
+Update date_collected: 2026-07-18T07:55:30.210383+09:00  ->  2026-07-17T08:03:42.260121+09:00
+
+Processing paper 6/10
+Title: ABot-N1: Toward a General Visual Language Navigation Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 95  ->  92
+Update date_collected: 2026-07-18T07:55:30.215333+09:00  ->  2026-07-17T08:03:42.256548+09:00
+
+Processing paper 7/10
+Title: Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning
+Paper already exists, checking if translation is complete...
+Update likes: 84  ->  78
+Update date_collected: 2026-07-18T07:55:30.220098+09:00  ->  2026-07-17T08:03:42.264069+09:00
+
+Processing paper 8/10
+Title: Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation
+Paper already exists, checking if translation is complete...
+Update likes: 79  ->  72
+Update date_collected: 2026-07-18T07:55:30.223576+09:00  ->  2026-07-17T08:03:42.271726+09:00
+
+Processing paper 9/10
+Title: ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory
+Paper already exists, checking if translation is complete...
+Update likes: 78  ->  76
+Update date_collected: 2026-07-18T07:55:30.227689+09:00  ->  2026-07-17T08:03:42.268241+09:00
+
+Processing paper 10/10
+Title: Video Generation Models are General-Purpose Vision Learners
+Paper already exists, checking if translation is complete...
+Update likes: 74  ->  70
+Update date_collected: 2026-07-18T07:55:30.231304+09:00  ->  2026-07-17T08:03:42.278675+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W29.json...
+
+Updating Notion database...
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 163 -> 186)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 119 -> 125)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 107 -> 122)
+Creating new paper: 비디오챗3: 효율적이고 다재다능한 비디오 이해를 위한 완전 개방형 비디오 MLLM 시스템
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 90 -> 96)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 92 -> 95)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 78 -> 84)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 72 -> 79)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 76 -> 78)
+Updating paper: 번역 생성 중 오류가 발생했습니다. (likes: 70 -> 74)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Jul 17 22:57:06 UTC 2026 ===
+

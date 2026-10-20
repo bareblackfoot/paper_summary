@@ -1,0 +1,125 @@
+=== Paper Collection Started at Wed Jun 24 22:33:58 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W26
+URL: https://huggingface.co/papers/week/2026-W26
+Found 10 papers in weekly view
+Fetching likes for: Qwen-AgentWorld: Language World Models for General Agents
+Fetching likes for: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Fetching likes for: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Fetching likes for: OpenRath: Session-Centered Runtime State for Agent Systems
+Fetching likes for: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Fetching likes for: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Fetching likes for: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Fetching likes for: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Fetching likes for: NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?
+Fetching likes for: World Action Models: A Survey
+Selected top 10 papers by likes:
+1. Qwen-AgentWorld: Language World Models for General Agents (85 likes)
+2. PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems (85 likes)
+3. EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions (71 likes)
+4. OpenRath: Session-Centered Runtime State for Agent Systems (70 likes)
+5. MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision (69 likes)
+6. DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams (68 likes)
+7. Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention (59 likes)
+8. PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models (58 likes)
+9. NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers? (47 likes)
+10. World Action Models: A Survey (46 likes)
+Found abstract: A world model predicts environment dynamics based on current observations and actions, serving as a ...
+Processed paper: Qwen-AgentWorld: Language World Models for General Agents
+Found abstract: LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering...
+Processed paper: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Found abstract: Enterprise agents increasingly operate inside workspaces: they read heterogeneous files, invoke tool...
+Processed paper: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Found abstract: Modern agent systems often suffer from fragmented runtime state: transcripts, tool effects, memory e...
+Processed paper: OpenRath: Session-Centered Runtime State for Agent Systems
+Found abstract: Personalized presentation generation requires more than conditioning on a current prompt or template...
+Processed paper: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Found abstract: Massive unstructured multimodal streams suffer from high "data entropy," impeding both efficient hum...
+Processed paper: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Found abstract: Self-attention is central to Transformer performance and is often the most expensive part of the Tra...
+Processed paper: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Found abstract: Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding t...
+Processed paper: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Found abstract: We introduce NatureBench, a cross-discipline benchmark of 90 tasks distilled from peer-reviewed Natu...
+Processed paper: NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?
+Found abstract: World Action Models (WAMs) are embodied predictive-action models that make a forecast of the future ...
+Processed paper: World Action Models: A Survey
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Qwen-AgentWorld: Language World Models for General Agents
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems
+Paper already exists, checking if translation is complete...
+Update likes: 85  ->  78
+Update date_collected: 2026-06-25T07:34:07.440254+09:00  ->  2026-06-24T07:34:25.579042+09:00
+
+Processing paper 3/10
+Title: EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  56
+Update date_collected: 2026-06-25T07:34:07.442661+09:00  ->  2026-06-24T07:34:25.586215+09:00
+
+Processing paper 4/10
+Title: OpenRath: Session-Centered Runtime State for Agent Systems
+Paper already exists, checking if translation is complete...
+Update likes: 70  ->  68
+Update date_collected: 2026-06-25T07:34:07.444804+09:00  ->  2026-06-24T07:34:25.581256+09:00
+
+Processing paper 5/10
+Title: MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision
+Paper already exists, checking if translation is complete...
+Update likes: 69  ->  36
+Update date_collected: 2026-06-25T07:34:07.446967+09:00  ->  2026-06-24T07:34:25.598157+09:00
+
+Processing paper 6/10
+Title: DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams
+Paper already exists, checking if translation is complete...
+Update likes: 68  ->  65
+Update date_collected: 2026-06-25T07:34:07.449422+09:00  ->  2026-06-24T07:34:25.583783+09:00
+
+Processing paper 7/10
+Title: Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention
+Paper already exists, checking if translation is complete...
+Update likes: 59  ->  42
+Update date_collected: 2026-06-25T07:34:07.451491+09:00  ->  2026-06-24T07:34:25.590922+09:00
+
+Processing paper 8/10
+Title: PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 58  ->  55
+Update date_collected: 2026-06-25T07:34:07.454027+09:00  ->  2026-06-24T07:34:25.588810+09:00
+
+Processing paper 9/10
+Title: NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: World Action Models: A Survey
+Paper already exists, checking if translation is complete...
+Update likes: 46  ->  37
+Update date_collected: 2026-06-25T07:34:07.459421+09:00  ->  2026-06-24T07:34:25.595953+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W26.json...
+
+Updating Notion database...
+Creating new paper: 일반 에이전트를 위한 언어 월드 모델인 Qwen-AgentWorld
+Updating paper: PlanBench-XL: 대규모 도구 생태계에서 LLM 도구 사용 에이전트의 장기 계획 평가 (likes: 78 -> 85)
+Updating paper: 기업 작업 세션에서 에이전트들을 벤치마킹하는 EnterpriseClawBench (likes: 56 -> 71)
+Updating paper: OpenRath: 에이전트 시스템을 위한 세션 중심 런타임 상태 (likes: 68 -> 70)
+Updating paper: MemSlides: 사용자 지향 프레젠테이션 슬라이드 생성을 위한 계층적 메모리 주도 에이전트 프레임워크 (likes: 36 -> 69)
+Updating paper: 데이터클로우0: 원시 스트림으로부터 다양한 유형의 데이터를 개체적으로 조정 (likes: 65 -> 68)
+Updating paper: 그룹화된 쿼리 전문가: GQA Self-Attention의 전문가 혼합 (likes: 42 -> 59)
+Updating paper: PerceptionDLM: 병렬 영역 인식을 위한 다중모달 확산 언어 모델 (likes: 55 -> 58)
+Creating new paper: NatureBench: AI 코딩 에이전트가 자연 계열 논문의 최신 연구 결과를 따라갈 수 있을까?
+Updating paper: 세계 행동 모델: 서론 (likes: 37 -> 46)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Wed Jun 24 22:35:45 UTC 2026 ===
+

@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Orca: The World is in Your Mind",
+    "abstract": "We introduce Orca, an initial instantiation of a general world foundation model. Orca learns a unified world latent space from multimodal world signals and exposes it through multimodal readout interfaces. Rather than optimizing isolated next-token, next-frame, or next-action prediction, we are centered on Next-State-Prediction modeling, offering a unified state-transition modeling route toward understanding, predicting, and acting upon the world. Orca learns through two complementary paradigms: unconscious learning captures dense natural state transitions from continuous videos, and conscious learning models sparse meaningful state transitions by language-described events and VQA supervision. For pre-training, we construct a large-scale world-learning inventory data, including 125K hours of video data and 160M event annotations. After pre-training, Orca learns a unified world latent space. To examine whether the learned latent supports downstream, we evaluate it by three representative downstream readouts: text generation, image prediction, and embodied action generation. Orca's backbone is frozen, and only the lightweight modality-specific decoders are trainable. Experiments show the scalability of the proposed paradigm and verify that stronger world latent enables stronger downstream readouts. Orca outperforms similar-sized specialized baselines. These results show that Orca, as a general world foundation model, presents a promising approach to understanding, predicting, and acting upon the world. Finally, we discuss the current limitations, aiming to provide useful insights and inspiration for the community.",
+    "authors": [
+      "Yihao Wang",
+      "Yuheng Ji",
+      "Mingyu Cao",
+      "Yanqing Shen",
+      "Runze Xiao",
+      "Huaihai Lyu",
+      "Senwei Xie",
+      "Euan Liu",
+      "Klara Tian",
+      "Tianfeng Long",
+      "Yichi Zhang",
+      "Zhengliang Cai",
+      "Ruike Chen",
+      "Jifan Zhao",
+      "Ruochuan Shi",
+      "Zihan Tang",
+      "Jing Lyu",
+      "Wenxing Tan",
+      "Ningbo Zhang",
+      "Yangtao Hu",
+      "Yuming Gao",
+      "Xiansheng Chen"
+    ],
+    "likes": 233,
+    "published_date": "Jun 29",
+    "url": "https://huggingface.co/papers/2606.30534",
+    "date_collected": "2026-07-06T10:41:44.919895+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
+    "abstract": "LLM agents are expected to act over multiple turns, using search, browsing interfaces, and terminal tools to complete user goals. Yet not every goal is well specified or achievable in the available environment. In such cases, a reliable agent should recognize that further interaction is unlikely to help and abstain from additional tool calls. We define Agentic Abstention, the problem of deciding when an agent should stop acting under uncertainty. Unlike standard LLM abstention, which is usually evaluated as a single-turn answer-or-abstain decision, agentic abstention is a sequential decision problem: an agent can answer, abstain, or gather more information at each turn, and the need to abstain may only become clear after interacting with the environment. We study this problem across web shopping, terminal environments, and question answering, evaluating 13 LLM-as-agent systems and 2 agent scaffolds on more than 28,000 tasks. Our results show that the main challenge is not only whether agents can abstain, but also when they abstain. Some agents never abstain when they should, while others do so only after many unnecessary interactions. This gap is especially large on tasks where the instruction appears feasible until the environment reveals otherwise (e.g., no valid result matches the instruction). We further find that model scale, reasoning, and agent scaffolding affect abstention in different ways, where larger or more capable models sometimes perform worse at timely abstention. Finally, we introduce CONVOLVE, a context engineering method for improving agentic abstention that distills full interaction trajectories into reusable stopping rules. On WebShop, CONVOLVE substantially improves timely abstention without updating model parameters, raising Llama-3.3-70B's timely recall rate from 26.7 to 57.4. Our dataset and code are available at https://lhannnn.github.io/agentic-abstention",
+    "authors": [
+      "Han Luo",
+      "Bingbing Wen",
+      "Lucy Lu Wang"
+    ],
+    "likes": 143,
+    "published_date": "Jun 27",
+    "url": "https://huggingface.co/papers/2606.28733",
+    "date_collected": "2026-07-06T10:41:44.922011+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "의도적 절제: 에이전트들은 행동을 멈출 때를 알까?",
+      "abstract": "LLM 에이전트는 사용자의 목표를 달성하기 위해 여러 차례에 걸쳐 행동하며, 검색, 브라우징 인터페이스, 터미널 도구를 사용합니다. 그러나 모든 목표가 명확하게 정의되거나 주어진 환경에서 달성 가능한 것은 아닙니다. 이와 같은 경우 신뢰할 수 있는 에이전트는 추가 도구 호출로 인한 도움이 더 이상 되지 않을 것을 인지하고 행동을 중단해야 합니다. 우리는 에이전트가 불확실성 하에서 행동 중지를 결정해야 하는 문제인 의도적 절제를 정의합니다. 일반적으로 단일 턴의 응답 또는 절제 결정으로 평가되는 표준 LLM 절제와 달리, 의도적 절제는 순차적 의사 결정 문제입니다. 에이전트는 각 턴마다 답변, 절제 또는 추가 정보 수집을 선택할 수 있으며, 절제가 필요한 경우가 환경과 상호작용 후에만 명확해질 수 있습니다. 우리는 웹 쇼핑, 터미널 환경, 질문 응답 등에서 이 문제를 연구하며, 13개의 LLM-에이전트 시스템과 2개의 에이전트 골조에 대해 28,000개 이상의 작업을 평가합니다. 결과에서 중요한 도전 과제는 에이전트가 절제할 수 있는지뿐만 아니라 언제 절제해야 하는지에 대한 문제입니다. 일부 에이전트는 적절한 때에 절제하지 않으며, 다른 에이전트는 많은 불필요한 상호작용 후에야 절제합니다. 이 간극은 명령이 환경에서 그렇게 보이지 않지만 사실은 그렇지 않은 작업에서 특히 큽니다. 또한, 모델 규모, 추론 및 에이전트 골조가 절제에 다양한 영향을 미침을 발견했습니다. 종종 보다 크거나 더 능숙한 모델이 시기적절한 절제에서 성능이 떨어지는 경우도 있습니다. 마지막으로 CONVOLVE라는 콘텍스트 엔지니어링 방법을 소개합니다. Agentic 절제를 개선하기 위해 전체 상호작용 경로를 재사용 가능한 중지 규칙으로 압축합니다. WebShop에서 CONVOLVE는 모델 매개변수를 업데이트하지 않고 시기적절한 절제를 현저히 개선하며, Llama-3.3-70B의 시기적절한 복귀율을 26.7에서 57.4로 높입니다. 데이터셋과 코드는 https://lhannnn.github.io/agentic-abstention에서 사용 가능합니다."
+    },
+    "summary": "1. LLM 에이전트의 행동 중지 문제를 다룬 연구.\n2. 에이전트가 언제 행동을 멈춰야 하는지 결정하는 것이 주요 도전.\n3. CONVOLVE로 시기적절한 절제를 효과적으로 개선하는 방법을 제안 및 검증.",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning"
+    ]
+  },
+  {
+    "title": "Dockerless: Environment-Free Program Verifier for Coding Agents",
+    "abstract": "Program verifiers play a central role in training coding agents, including selecting trajectories for supervised fine-tuning (SFT) and providing rewards for reinforcement learning (RL). Standard execution-based verification requires running unit tests inside per-repository environments such as Docker images, incurring substantial environment setup costs. We propose Dockerless, an environment-free agentic patch verifier that evaluates generated code patches without executing them. Rather than simply matching candidate patches to references, Dockerless judges patch correctness using evidence gathered through agentic repository exploration. On a verifier evaluation benchmark, Dockerless outperforms the strongest open-source verifier by 14.3 AUC points. Using Dockerless as both the SFT trajectory filter and the RL reward enables a fully environment-free post-training pipeline. The resulting model reaches 62.0%, 50.0%, and 35.2% resolve rate on SWE-bench Verified, Multilingual, and Pro, respectively. It surpasses the Qwen3.5-9B baseline by 2.4, 8.7, and 2.9 points, matching environment-based post-training.",
+    "authors": [
+      "Wenhao Zeng",
+      "Yuling Shi",
+      "Xiaodong Gu",
+      "Chao Hu",
+      "Chaofan Wang",
+      "Yuhao Cui",
+      "Hongting Zhou",
+      "Mengnan Qi",
+      "Jianqiao Wangni",
+      "Zhaojian Yu",
+      "Shuzheng Gao",
+      "Kai Cai",
+      "Shilin He"
+    ],
+    "likes": 105,
+    "published_date": "Jun 26",
+    "url": "https://huggingface.co/papers/2606.28436",
+    "date_collected": "2026-07-06T10:41:44.924619+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "DOPD: Dual On-policy Distillation",
+    "abstract": "On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority.",
+    "authors": [
+      "Xinlei Yu",
+      "Gen Li",
+      "Qingyi Si",
+      "Guibin Zhang",
+      "Yuqi Xu",
+      "Congcong Wang",
+      "Shuai Dong",
+      "Kaiwen Tuo",
+      "Xiangyu Zeng",
+      "Kaituo Feng",
+      "Qunzhong Wang",
+      "Yang Shi",
+      "Xiaobin Hu",
+      "Xiangyu Yue",
+      "Jiaqi Wang",
+      "Shuicheng Yan"
+    ],
+    "likes": 96,
+    "published_date": "Jun 29",
+    "url": "https://huggingface.co/papers/2606.30626",
+    "date_collected": "2026-07-06T10:41:44.927358+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
+    "abstract": "We introduce Agents-A1, a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level performance by scaling the agent horizon. We investigate agent-horizon scaling from two perspectives: scaling long-horizon trajectories and scaling heterogeneous agent abilities. To support this goal, we build a long-horizon knowledge-action infrastructure that connects external knowledge, actions, observations, and verifier outcomes, producing agentic trajectories with an average length of 45K tokens. Based on this, we train Agents-A1 with a three-stage recipe. First, we perform full-domain supervised fine-tuning to align the base model with broad agentic behaviors. Second, we train domain-level teacher models to capture specialized expertise in each domain. Third, we propose a multi-teacher domain-routed on-policy distillation with salient vocabulary alignment to improve knowledge transfer efficiency across different domains, unifying six heterogeneous domains into one deployable student model. Agents-A1 achieves strong and broad performance for long-horizon agent benchmarks. Compared with 1T-parameter model such as Kimi-K2.6 and DeepSeek-V4-pro, Agents-A1 achieves leading results on SEAL-0 (56.4), IFBench (80.6), HiPhO (46.4), FrontierScience-Olympiad (79.0), and MolBench-Bind (56.8), and remains highly competitive on SciCode (44.3), HLE (47.6) and BrowseComp (75.5). We hope this work provides the community with a practical path for scaling the horizon using a 35B agent that can reach or match the performance of 1T models on long-horizon tasks.",
+    "authors": [
+      "Lei Bai",
+      "Zongsheng Cao",
+      "Yang Chen",
+      "Zhiyao Cui",
+      "Shangheng Du",
+      "Yue Fan",
+      "Shiyang Feng",
+      "Zijie Guo",
+      "Haonan He",
+      "Liang He",
+      "Xiaohan He",
+      "Shuyue Hu",
+      "Yusong Hu",
+      "Songtao Huang",
+      "Yichen Jiang",
+      "Hao Li",
+      "Xin Li",
+      "Dahua Lin",
+      "Weihao Lin",
+      "Fenghua Ling",
+      "Dongrui Liu",
+      "Zhuo Liu"
+    ],
+    "likes": 88,
+    "published_date": "Jun 29",
+    "url": "https://huggingface.co/papers/2606.30616",
+    "date_collected": "2026-07-06T10:41:44.930448+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "파라미터를 확장하지 않고 수평을 넓히다: 35B 에이전트로 조 야 니언 파라미터 성능 달성",
+      "abstract": "본 연구에서는 35B Mixture-of-Experts 에이전트 모델인 에이전트-A1을 소개하며, 에이전트 수평을 확장함으로써 조 페 라 니언 파라미터 수준의 성능에 도달합니다. 우리는 에이전트 수평 확장을 장기적 궤적 및 이질적 에이전트 능력 확장 두 가지 관점에서 조사합니다. 이를 지원하기 위해, 외부 지식, 액션, 관측 및 확인자 결과를 연결하는 장기 지식-액션 인프라를 구축하여 평균 45K 토큰의 에이전트 궤적을 생성합니다. 우리는 이에 기반하여 에이전트-A1을 3단계 레시피로 훈련합니다."
+    },
+    "summary": "1. 에이전트 수평 확장을 통해 35B 에이전트로 1조 파라미터 수준의 성능을 달성합니다.\n2. 다양한 도메인에서 훈련된 여러 교사 모델로 특화된 전문 지식을 캡처하여 통합적인 학생 모델로 훈련합니다.\n3. 에이전트-A1은 장기적 에이전트 벤치마크에서 우수하고 다양한 성능을 달성하며, 1T 모델과 경쟁력 있는 결과를 보입니다.",
+    "categories": [
+      "Reinforcement Learning",
+      "Other"
+    ]
+  },
+  {
+    "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+    "abstract": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from a natural-language specification into a compact, locally-executable neural artifact. We instantiate this paradigm with Program-as-Weights (PAW), in which a 4B compiler trained on FuzzyBench, a 10M-example dataset we release, emits parameter-efficient adapters for a frozen, lightweight interpreter. A 0.6B Qwen3 interpreter executing PAW programs matches the performance of direct prompting of Qwen3-32B, while using roughly one fiftieth of the inference memory and running at 30 tokens/s on a MacBook M3. PAW reframes the foundation model from a per-input problem solver into a tool builder: invoked once per function definition, it produces a small reusable artifact whose subsequent calls per function application are cheap and offline.",
+    "authors": [
+      "Wentao Zhang",
+      "Liliana Hotsko",
+      "Woojeong Kim",
+      "Pengyu Nie",
+      "Stuart Shieber",
+      "Yuntian Deng"
+    ],
+    "likes": 83,
+    "published_date": "Jul 2",
+    "url": "https://huggingface.co/papers/2607.02512",
+    "date_collected": "2026-07-06T10:41:44.932649+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing",
+    "abstract": "Streaming video editing has made rapid progress, yet practical deployment is still limited by two core issues: maintaining stable backgrounds and non-edited regions over time, and achieving the low latency required for real-time interactive scenarios. Meanwhile, recent streaming video generation methods are mostly developed for synthesis and cannot be directly applied to editing due to the strict preservation requirement and region-specific control. In this work, we present a novel streaming video editing framework that performs causal, frame-by-frame editing with strong content preservation and real-time responsiveness. Our key design is a three-stage distillation pipeline that progressively transfers editing capability from a powerful bidirectional foundation model to an efficient unidirectional streaming editor, enabling stable long-horizon edits without sacrificing visual fidelity. To further support real-time deployment, we introduce an AR-oriented mask cache that reuses region-related computation across frames, substantially reducing redundant processing and accelerating inference. Finally, we establish a dedicated benchmark for streaming video editing. Extensive evaluations demonstrate that our method achieves state-of-the-art visual quality among streaming baselines while drastically boosting inference speed to 12.66 FPS, making it suitable for interactive and augmented reality applications.",
+    "authors": [
+      "Xinyu Wang",
+      "Chongbo Zhao",
+      "Fangneng Zhan",
+      "Yue Ma"
+    ],
+    "likes": 81,
+    "published_date": "Jun 25",
+    "url": "https://huggingface.co/papers/2606.26740",
+    "date_collected": "2026-07-06T10:41:44.934761+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "실시간 확산 기반 스트리밍 비디오 편집을 향하여",
+      "abstract": "스트리밍 비디오 편집은 급속한 발전을 이루었지만, 안정적인 배경과 수정되지 않은 영역을 유지하는 것과 실시간 상호작용 시나리오에 필요한 낮은 지연시간을 달성하는 데 제한이 있다. 이 연구에서는 강력한 내용 보존과 실시간 반응성을 갖춘 인과적인 프레임별 편집을 수행하는 혁신적인 스트리밍 비디오 편집 프레임워크를 제안한다. 우리의 주요 디자인은 강력한 양방향 기반 모델로부터 유용한 단방향 스트리밍 편집기로 편집 기능을 점진적으로 전달하는 세 단계의 정제 파이프라인이다."
+    },
+    "summary": "1. 실시간 상호작용 시나리오에 필요한 낮은 지연시간을 갖춘 스트리밍 비디오 편집 프레임워크를 개발했다.\n2. 강력한 내용 보존과 시각적 충실도를 희생하지 않고 안정적인 장기적 편집을 가능하게 하는 세 단계의 편집 파이프라인을 사용했다.\n3. 새로운 AR-지향 마스크 캐시를 도입하여 프레임 간 영역 관련 계산 재사용으로 중복 처리를 크게 줄이고 추론 속도를 크게 향상시켰다.",
+    "categories": [
+      "Computer Vision"
+    ]
+  },
+  {
+    "title": "BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding",
+    "abstract": "Speculative decoding accelerates inference by using a lightweight draft model to generate candidate tokens in parallel, and are then verified by the target model, enabling lossless acceleration. Recently, diffusion-based speculative decoding further improves parallelism by generating multiple tokens per forward pass via block-level diffusion, achieving state-of-the-art (SOTA) performance. However, existing methods adopt a fixed inference block size and assume a uniform optimal decoding strategy across all inputs. In this paper, we show that this assumption is suboptimal, as the optimal block size varies across samples and plays a critical role in speculative decoding performance. Moreover, these values exhibit a clear local structure, concentrating around the training block size, which reduces the problem to a low-dimensional and structured decision space. Based on these insights, we propose BlockPilot, a sample-adaptive policy that predicts the optimal block size from the prefilling representation. Specifically, we formulate block size selection as a lightweight policy learning problem and propose an instance-adaptive decision mechanism that predicts the optimal block size based on the representation of the prefilling stage. The prediction is performed only once after prefilling, allowing for seamless integration. Extensive experiments demonstrate that our method is plug-and-play, introduces minimal overhead, and consistently improves efficiency, achieving an acceptance length of 5.92 and a 4.20times speedup on Qwen3-4B under temperature T=1.",
+    "authors": [
+      "Hao Zhang",
+      "Yiming Hu",
+      "Yong Wang",
+      "Mingqiao Mo",
+      "Xin Xiao",
+      "Xiangxiang Chu"
+    ],
+    "likes": 74,
+    "published_date": "Jun 30",
+    "url": "https://huggingface.co/papers/2606.31315",
+    "date_collected": "2026-07-06T10:41:44.937269+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models",
+    "abstract": "Embodied Vision-Language-Action (VLA) models are typically obtained by fine-tuning powerful pretrained VLMs on robotics data, yet it is unclear how much commonsense and factual knowledge they retain after adaptation. Failures on knowledge-sensitive tasks are ambiguous, conflating missing knowledge with poor generalization of low-level control. We introduce Act2Answer, a lightweight protocol that adapts VLM knowledge benchmarks to VLA evaluation by requiring agents to answer through action. Each question becomes a short tabletop episode where the agent performs a single object-placement action to select among candidate answers, yielding an action-grounded success rate with reduced control confounds. We curate a test suite of such environments across diverse commonsense and world-knowledge categories and introduce layerwise intent probing to localize answer-relevant information across the VLM backbone and action head. In a large-scale study of 7 VLA models and 9 VLM baselines, we systematically rank models across categories, finding that VLAs show solid performance on simple concepts while exhibiting larger gaps on richer semantic categories relative to their source VLMs, that VQA co-training is associated with better knowledge retention, and that answer-relevant signals peak in middle VLA layers but attenuate in upper layers. Act2Answer is available at https://tttonyalpha.github.io/act2answer/.",
+    "authors": [
+      "Nikita Kachaev",
+      "Andrey Moskalenko",
+      "Matvey Skripkin",
+      "Nikita Kurlaev",
+      "Daria Pugacheva",
+      "Albina Burlova",
+      "Mikhail Kolosov",
+      "Denis Shepelev",
+      "Andrey Kuznetsov",
+      "Elena Tutubalina",
+      "Aleksandr I. Panov",
+      "Alexey K. Kovalev",
+      "Vlad Shakhuro"
+    ],
+    "likes": 69,
+    "published_date": "Jun 17",
+    "url": "https://huggingface.co/papers/2606.19297",
+    "date_collected": "2026-07-06T10:41:44.939824+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "번역 생성 중 오류가 발생했습니다.",
+      "abstract": "번역 생성 중 오류가 발생했습니다."
+    },
+    "summary": "요약 생성 중 오류가 발생했습니다.",
+    "categories": [
+      "기타"
+    ]
+  },
+  {
+    "title": "Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs",
+    "abstract": "We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprising metrics that are independent of downstream benchmark scores and reveal representational failures that benchmark accuracy masks. Existing evaluations conflate representation quality with model capacity. Therefore, failures cannot be attributed to the representation rather than to the model that processes it. We formalize four functional axioms (Causality, Minimality, Separability, and Stability) and define a quantitative measure for each, computed directly on the representation independently of downstream accuracy. We audit open-weight LLMs across 23 reasoning tasks (e.g., Spatial Reasoning, Factual QA). We find that no candidate satisfies all four axioms simultaneously, that the representations distinguish task type reliably but cannot distinguish between two questions within the same task, and that the representations encode little information beyond what is already present in the input embedding. The failure is consistent across dense, reasoning-distilled, and RL-trained model families, indicating that the gap is structural rather than a property of model size or training procedure.",
+    "authors": [
+      "Fahd Seddik",
+      "Fatemeh Fard"
+    ],
+    "likes": 58,
+    "published_date": "May 7",
+    "url": "https://huggingface.co/papers/2606.27378",
+    "date_collected": "2026-07-06T10:41:44.941845+09:00",
+    "week": "2026-W27",
+    "translation": {
+      "title": "숨은 생각 형식화: LLMs에서의 생각 표현의 네 가지 원리",
+      "abstract": "우리는 LLMs에서의 숨은 생각 표현에 대한 공리적 평가 프레임워크를 소개합니다. 이는 하류 벤치마크 점수와 독립적인 측정 항목으로 구성되어 있으며, 벤치마크 정확도가 가리는 표현적 실패를 드러냅니다. 기존 평가는 표현 품질과 모델 용량을 혼동시키고 있습니다. 따라서 실패는 표현에 아니라 그것을 처리하는 모델에 속합니다. 우리는 네 가지 기능적 공리 (인과관계, 최소성, 분리성, 안정성)을 형식화하고, 각각의 양을 정의하며, 하류 정확도와 독립적으로 표현에 직접 계산됩니다. 우리는 23가지 추론 작업 (예: 공간적 추론, 사실 기반 질문응답) 전체에서 오픈 웨이트 LLMs를 감사합니다. 우리는 어떠한 후보도 동시에 네 가지 공리를 모두 만족시키지 않음을 발견하며, 표현은 작업 유형을 신뢰할 수 있게 구별하지만 동일 작업 내에서 두 가지 질문을 구별할 수 없으며, 입력 임베딩에 이미 존재하는 정보를 거의 인코딩합니다. 실패는 밀집, 추론 축약, RL 훈련된 모델 패밀리 전반에 걸쳐 일관되며, 이는 갭이 모델 크기나 훈련 절차의 특성이 아닌 구조적인 것임을 나타냅니다."
+    },
+    "summary": "1. LLMs에서의 생각 표현에 대한 평가 프레임워크 소개\n2. 네 가지 기능적 공리 형식화하고 각각 양적 측정 제시\n3. 다양한 추론 작업에서 오픈 웨이트 LLMs를 통한 실험 결과 및 표현적 실패의 일관성",
+    "categories": [
+      "LLM",
+      "Reinforcement Learning",
+      "Other"
+    ]
+  }
+]

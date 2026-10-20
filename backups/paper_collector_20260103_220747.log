@@ -1,0 +1,127 @@
+=== Paper Collection Started at Fri Jan  2 22:08:09 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W01
+URL: https://huggingface.co/papers/week/2026-W01
+Found 10 papers in weekly view
+Fetching likes for: mHC: Manifold-Constrained Hyper-Connections
+Fetching likes for: Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding
+Fetching likes for: InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion
+Fetching likes for: Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss
+Fetching likes for: LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation
+Fetching likes for: Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models
+Fetching likes for: Yume-1.5: A Text-Controlled Interactive World Generation Model
+Fetching likes for: Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion
+Fetching likes for: Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation
+Fetching likes for: Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone
+Selected top 10 papers by likes:
+1. mHC: Manifold-Constrained Hyper-Connections (119 likes)
+2. Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding (97 likes)
+3. InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion (94 likes)
+4. Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss (86 likes)
+5. LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation (61 likes)
+6. Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models (57 likes)
+7. Yume-1.5: A Text-Controlled Interactive World Generation Model (55 likes)
+8. Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion (40 likes)
+9. Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation (38 likes)
+10. Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone (38 likes)
+Found abstract: Recently, studies exemplified by Hyper-Connections (HC) have extended the ubiquitous residual connec...
+Processed paper: mHC: Manifold-Constrained Hyper-Connections
+Found abstract: Humans understand long and complex texts by relying on a holistic semantic representation of the con...
+Processed paper: Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding
+Found abstract: Recent advances in diffusion-based video generation have opened new possibilities for controllable v...
+Processed paper: InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion
+Found abstract: Mixture-of-Experts (MoE) models lack explicit constraints to ensure the router's decisions align wel...
+Processed paper: Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss
+Found abstract: Real-time video generation via diffusion is essential for building general-purpose multimodal intera...
+Processed paper: LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation
+Found abstract: We introduce Youtu-LLM, a lightweight yet powerful language model that harmonizes high computational...
+Processed paper: Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models
+Found abstract: Recent approaches have demonstrated the promise of using diffusion models to generate interactive an...
+Processed paper: Yume-1.5: A Text-Controlled Interactive World Generation Model
+Found abstract: Diffusion-based video super-resolution (VSR) methods achieve strong perceptual quality but remain im...
+Processed paper: Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion
+Found abstract: Transparent objects remain notoriously hard for perception systems: refraction, reflection and trans...
+Processed paper: Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation
+Found abstract: While autoregressive Large Vision-Language Models (VLMs) have achieved remarkable success, their seq...
+Processed paper: Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: mHC: Manifold-Constrained Hyper-Connections
+Paper already exists, checking if translation is complete...
+Update likes: 119  ->  49
+Update date_collected: 2026-01-03T07:08:18.009602+09:00  ->  2026-01-02T07:08:16.403493+09:00
+
+Processing paper 2/10
+Title: Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding
+Paper already exists, checking if translation is complete...
+Update likes: 97  ->  89
+Update date_collected: 2026-01-03T07:08:18.010917+09:00  ->  2026-01-02T07:08:16.398110+09:00
+
+Processing paper 3/10
+Title: InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  93
+Update date_collected: 2026-01-03T07:08:18.012263+09:00  ->  2026-01-02T07:08:16.396698+09:00
+
+Processing paper 4/10
+Title: Coupling Experts and Routers in Mixture-of-Experts via an Auxiliary Loss
+Paper already exists, checking if translation is complete...
+Update likes: 86  ->  84
+Update date_collected: 2026-01-03T07:08:18.013379+09:00  ->  2026-01-02T07:08:16.399250+09:00
+
+Processing paper 5/10
+Title: LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation
+Paper already exists, checking if translation is complete...
+Update likes: 61  ->  59
+Update date_collected: 2026-01-03T07:08:18.014608+09:00  ->  2026-01-02T07:08:16.400472+09:00
+
+Processing paper 6/10
+Title: Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models
+Paper already exists, checking if translation is complete...
+Update likes: 57  ->  41
+Update date_collected: 2026-01-03T07:08:18.016486+09:00  ->  2026-01-02T07:08:16.405365+09:00
+
+Processing paper 7/10
+Title: Yume-1.5: A Text-Controlled Interactive World Generation Model
+Paper already exists, checking if translation is complete...
+Update likes: 55  ->  53
+Update date_collected: 2026-01-03T07:08:18.017779+09:00  ->  2026-01-02T07:08:16.401762+09:00
+
+Processing paper 8/10
+Title: Stream-DiffVSR: Low-Latency Streamable Video Super-Resolution via Auto-Regressive Diffusion
+Paper already exists, checking if translation is complete...
+Update likes: 40  ->  35
+Update date_collected: 2026-01-03T07:08:18.018994+09:00  ->  2026-01-02T07:08:16.408140+09:00
+
+Processing paper 9/10
+Title: Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation
+Paper already exists, checking if translation is complete...
+Update likes: 38  ->  37
+Update date_collected: 2026-01-03T07:08:18.020563+09:00  ->  2026-01-02T07:08:16.406936+09:00
+
+Processing paper 10/10
+Title: Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone
+Paper already exists, checking if translation is complete...
+Update likes: 38  ->  35
+Update date_collected: 2026-01-03T07:08:18.021881+09:00  ->  2026-01-02T07:08:16.409481+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W01.json...
+
+Updating Notion database...
+Updating paper: 매니폴드 제한 하이퍼-연결 (likes: 49 -> 119)
+Updating paper: 상상력을 고려한 검색 증강 생성을 통한 장기 맥락 이해 향상 (likes: 89 -> 97)
+Updating paper: InsertAnywhere: 현실적인 비디오 객체 삽입을 위한 4D 장면 기하학과 확산 모델의 연결 (likes: 93 -> 94)
+Updating paper: 전문가와 라우터를 연결하는 방식: 부수 손실을 통해 믹스처 오브 전문가(Mixture-of-Experts) 개선하기 (likes: 84 -> 86)
+Updating paper: 실시간 다중 모달 상호작용 비디오 확산을 향상시킨 온-정책 증류를 통한 LiveTalk (likes: 59 -> 61)
+Updating paper: 경량 대형 언어 모델을 위한 원천적 상관 요소의 해제, Youtu-LLM (likes: 41 -> 57)
+Updating paper: Yume-1.5: 텍스트 제어형 대화형 세계 생성 모델 (likes: 53 -> 55)
+Updating paper: 스트림-DiffVSR: 자기 회귀 확산을 통한 저지연 스트리밍 비디오 초해상도 (Auto-Regressive Diffusion) (likes: 35 -> 40)
+Error updating Notion database: Can't edit block that is archived. You must unarchive the block before editing.
+Done!
+=== Paper Collection Finished at Fri Jan  2 22:09:37 UTC 2026 ===
+

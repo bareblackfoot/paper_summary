@@ -1,0 +1,151 @@
+=== Paper Collection Started at Mon Jul 21 22:08:15 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W30
+URL: https://huggingface.co/papers/week/2025-W30
+Found 10 papers in weekly view
+Fetching likes for: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Fetching likes for: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Fetching likes for: Franca: Nested Matryoshka Clustering for Scalable Visual Representation
+  Learning
+Fetching likes for: Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal
+  Large Language Models
+Fetching likes for: CSD-VAR: Content-Style Decomposition in Visual Autoregressive Models
+Fetching likes for: Inverse Reinforcement Learning Meets Large Language Model Post-Training:
+  Basics, Advances, and Opportunities
+Fetching likes for: RedOne: Revealing Domain-specific LLM Post-Training in Social Networking
+  Services
+Fetching likes for: Mitigating Object Hallucinations via Sentence-Level Early Intervention
+Fetching likes for: The Generative Energy Arena (GEA): Incorporating Energy Awareness in
+  Large Language Model (LLM) Human Evaluations
+Fetching likes for: Quantitative Risk Management in Volatile Markets with an Expectile-Based
+  Framework for the FTSE Index
+Selected top 10 papers by likes:
+1. A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models (41 likes)
+2. The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs (39 likes)
+3. Franca: Nested Matryoshka Clustering for Scalable Visual Representation
+  Learning (14 likes)
+4. Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal
+  Large Language Models (9 likes)
+5. CSD-VAR: Content-Style Decomposition in Visual Autoregressive Models (7 likes)
+6. Inverse Reinforcement Learning Meets Large Language Model Post-Training:
+  Basics, Advances, and Opportunities (6 likes)
+7. RedOne: Revealing Domain-specific LLM Post-Training in Social Networking
+  Services (4 likes)
+8. Mitigating Object Hallucinations via Sentence-Level Early Intervention (3 likes)
+9. The Generative Energy Arena (GEA): Incorporating Energy Awareness in
+  Large Language Model (LLM) Human Evaluations (1 likes)
+10. Quantitative Risk Management in Volatile Markets with an Expectile-Based
+  Framework for the FTSE Index (1 likes)
+Found abstract: Russian speech synthesis presents distinctive challenges, including vowel
+reduction, consonant devoi...
+Processed paper: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Found abstract: Diffusion-based large language models (dLLMs) have recently emerged as a
+powerful alternative to aut...
+Processed paper: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Found abstract: We present Franca (pronounced Fran-ka): free one; the first fully open-source
+(data, code, weights) ...
+Processed paper: Franca: Nested Matryoshka Clustering for Scalable Visual Representation
+  Learning
+Found abstract: This paper focuses on monolithic Multimodal Large Language Models (MLLMs),
+which integrate visual en...
+Processed paper: Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal
+  Large Language Models
+Found abstract: Disentangling content and style from a single image, known as content-style
+decomposition (CSD), ena...
+Processed paper: CSD-VAR: Content-Style Decomposition in Visual Autoregressive Models
+Found abstract: In the era of Large Language Models (LLMs), alignment has emerged as a
+fundamental yet challenging p...
+Processed paper: Inverse Reinforcement Learning Meets Large Language Model Post-Training:
+  Basics, Advances, and Opportunities
+Found abstract: As a primary medium for modern information dissemination, social networking
+services (SNS) have expe...
+Processed paper: RedOne: Revealing Domain-specific LLM Post-Training in Social Networking
+  Services
+Found abstract: Multimodal large language models (MLLMs) have revolutionized cross-modal
+understanding but continue ...
+Processed paper: Mitigating Object Hallucinations via Sentence-Level Early Intervention
+Found abstract: The evaluation of large language models is a complex task, in which several
+approaches have been pro...
+Processed paper: The Generative Energy Arena (GEA): Incorporating Energy Awareness in
+  Large Language Model (LLM) Human Evaluations
+Found abstract: This research presents a framework for quantitative risk management in
+volatile markets, specificall...
+Processed paper: Quantitative Risk Management in Volatile Markets with an Expectile-Based
+  Framework for the FTSE Index
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges
+  in Russian Speech Generative Models
+Generating Korean translation and summary...
+
+Processing paper 2/10
+Title: The Devil behind the mask: An emergent safety vulnerability of Diffusion
+  LLMs
+Generating Korean translation and summary...
+
+Processing paper 3/10
+Title: Franca: Nested Matryoshka Clustering for Scalable Visual Representation
+  Learning
+Generating Korean translation and summary...
+
+Processing paper 4/10
+Title: Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal
+  Large Language Models
+Generating Korean translation and summary...
+
+Processing paper 5/10
+Title: CSD-VAR: Content-Style Decomposition in Visual Autoregressive Models
+Generating Korean translation and summary...
+
+Processing paper 6/10
+Title: Inverse Reinforcement Learning Meets Large Language Model Post-Training:
+  Basics, Advances, and Opportunities
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: RedOne: Revealing Domain-specific LLM Post-Training in Social Networking
+  Services
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Mitigating Object Hallucinations via Sentence-Level Early Intervention
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: The Generative Energy Arena (GEA): Incorporating Energy Awareness in
+  Large Language Model (LLM) Human Evaluations
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: Quantitative Risk Management in Volatile Markets with an Expectile-Based
+  Framework for the FTSE Index
+Generating Korean translation and summary...
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W30.json...
+
+Updating Notion database...
+Creating new paper: 러시아어 발화 생성 모델의 음운론적 및 어굴적 과제 해결을 위한 데이터 중심 프레임워크
+Creating new paper: 가림막 뒤의 악마: Diffusion LLMs의 신생 안전 취약성
+Creating new paper: Franca: 확장 가능한 시각적 표현 학습을 위한 중첩된 마트료시카 클러스터링
+Creating new paper: Mono-InternVL-1.5: 더 저렴하고 빠른 모놀리식 다중모달 대형 언어 모델을 향하여
+Creating new paper: CSD-VAR: 비주얼 자기회귀 모델에서 콘텐츠-스타일 분해
+Creating new paper: 역강화 학습이 대형 언어 모델 사후 훈련과 만나다: 기본, 발전, 그리고 기회
+Creating new paper: RedOne: 소셜 네트워킹 서비스에서 도메인 특화 LLM 사후 훈련 공개
+Creating new paper: 객체 환각 완화를 위한 문장 수준 조기 개입
+Creating new paper: 에너지 인식을 통합한 대형 언어 모델 (LLM) 평가에서의 생성 에너지 아레나 (GEA)
+Creating new paper: 변동성 시장에서의 기대값 기반 틀을 활용한 FTSE 지수에 대한 양적 위험 관리
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Mon Jul 21 22:10:04 UTC 2025 ===
+

@@ -1,0 +1,83 @@
+[
+  {
+    "title": "LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis",
+    "abstract": "Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated or short interactive tasks, leaving agents' ability to track evolving analytical context over long horizons untested. We introduce LongDS, a benchmark for long-horizon, multi-turn data analysis where agents must maintain, update, restore, and compose evolving analytical states. LongDS comprises 68 tasks constructed from real-world Kaggle notebooks, spanning 2,225 turns across six domains including Geoscience, Business, and Education. Tasks are designed around state-evolution patterns (e.g., counterfactual perturbation, rollback, multi-state composition), with an average dependency span of 11.3 turns. Evaluating five state-of-the-art models, we find that the best model reaches only 48.45% average accuracy, performance drops nearly 47 points from early to late turns, and long-horizon errors account for 52%--69% of failures. Further analysis shows that additional agent steps do not necessarily improve performance, suggesting that the key bottleneck is maintaining a correct analytical state rather than increasing interaction budget. We release LongDS to support research on reliable long-horizon agentic data analysis. Code and data will be released at https://github.com/zjunlp/DataMind.",
+    "authors": [
+      "Kewei Xu",
+      "Xiaoben Lu",
+      "Shuofei Qiao",
+      "Zihan Ding",
+      "Haoming Xu",
+      "Lei Liang",
+      "Ningyu Zhang"
+    ],
+    "likes": 3,
+    "published_date": "May 28",
+    "url": "https://huggingface.co/papers/2605.30434",
+    "date_collected": "2026-06-01T10:53:27.858389+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "LongDS-Bench: Long-Horizon Agentic Data Analysis 실패에 관한 연구",
+      "abstract": "실제 데이터 분석은 본질적으로 반복적인 작업이지만, 기존의 벤치마크는 대부분 고립된 또는 짧은 상호작용 작업을 평가하며, 에이전트가 긴 시계열에 걸쳐 진화하는 분석적 컨텍스트를 추적하는 능력은 시험받지 않았다. 본 논문에서는 LongDS를 소개하는데, 이는 에이전트가 진화하는 분석적 상태를 유지, 업데이트, 복원하고 구성해야 하는 장기적 다중 턴 데이터 분석을 위한 벤치마크다. LongDS는 실제 Kaggle 노트북에서 추출된 6개 도메인 (지구과학, 비지니스, 교육 등)을 아우르는 2,225회 대화를 포함한 68가지 작업으로 구성되어 있다. 작업은 상태 진화 패턴을 중심으로 설계되었으며(예: 반사적 간섭, 롤백, 다중 상태 구성), 평균적 의존 시퀀스 길이는 11.3회다. 다섯 가지 최첨단 모델을 평가한 결과, 최상의 모델은 평균 정확도가 48.45%에 불과하며, 성능은 초기 턴과 후반 턴 사이에서 거의 47포인트 하락하며, 장기적 에러가 실패의 52% ~ 69%를 차지한다. 추가적인 에이전트 단계가 성능을 개선시키지 않는다는 결과를 발견하였으며, 이는 올바른 분석적 상태를 유지하는 것이 상호작용 예산을 늘리는 것보다 중요하다는 것을 시사한다. LongDS를 통해 믿을 수 있는 장기적 에이전트 데이터 분석에 대한 연구를 지원한다. 코드와 데이터는 https://github.com/zjunlp/DataMind에서 공개될 예정이다."
+    },
+    "summary": "1. LongDS는 기존 벤치마크에서 부족했던 장기 시계열 분석 능력을 평가하는 68가지 작업으로 구성된 벤치마크이다.\n2. 최신 모델 중 가장 우수한 모델도 평균 정확도가 48.45%로, 성능이 시간이 지남에 따라 급격히 하락하며 장기적 에러가 주요 실패 요인 중 하나이다.\n3. 추가적인 에이전트 단계가 성능 향상에 큰 영향을 미치지 않으며, 올바른 분석적 상태를 유지하는 것이 중요하다.",
+    "categories": [
+      "LLM",
+      "Other"
+    ]
+  },
+  {
+    "title": "Hide-and-Seek in Trajectories: Discovering Failure Signals for VLA Runtime Monitoring",
+    "abstract": "Vision-Language-Action (VLA) models enable robots to follow natural language instructions and generalize across diverse tasks, but they remain vulnerable to execution failures that compromise reliability in real-world deployment. Detecting such failures during execution is therefore critical for the robust deployment of embodied systems. Existing failure detection methods either rely on expensive action resampling or external models, while alternatives propagate trajectory-level labels uniformly across every timestep, obscuring localized failure signals. In this paper, we propose Hide-and-Seek, a framework that formulates VLA failure detection as a coarsely supervised learning problem. By combining inter-trajectory and intra-trajectory contrastive objectives, Hide-and-Seek localizes failure-indicative actions and induces temporally structured failure signals from trajectory-level supervision alone, without any step-level annotation. We evaluate Hide-and-Seek on LIBERO, VLABench, and a real-world robotic platform across three representative VLA policies: OpenVLA, π_0, and π_{0.5}.Our method achieves state-of-the-art multi-task failure detection performance with a practical accuracy--timeliness trade-off under conformal prediction, and generalizes well to both seen and unseen tasks.",
+    "authors": [
+      "Seongheon Park",
+      "Wendi Li",
+      "Changdae Oh",
+      "Samuel Yeh",
+      "Zsolt Kira",
+      "Michael Hagenow",
+      "Sharon Li"
+    ],
+    "likes": 2,
+    "published_date": "May 29",
+    "url": "https://huggingface.co/papers/2605.30834",
+    "date_collected": "2026-06-01T10:53:27.860794+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "트라젝토리에서 숨바꼭질: VLA 실행 모니터링을 위한 실패 신호 발견",
+      "abstract": "Vision-Language-Action(VLA) 모델은 로봇이 자연어 명령을 따르고 다양한 작업에 일반화할 수 있게 해줍니다. 하지만 현실 세계 배치에서 안정성을 저해하는 실행 실패에 취약합니다. 실행 중에 이러한 실패를 감지하는 것은 실현 가능한 시스템의 견고한 배치에 중요합니다. 이 논문에서 우리는 Hide-and-Seek를 제안합니다. 이는 VLA 실패 감지를 거친 지도 학습 문제로 정의합니다. Hide-and-Seek는 각 테스트에서 과거와 현재를 반복하며 실패를 바람직하게 표시하는 방법을 제안합니다."
+    },
+    "summary": "1. VLA 모델에서 발생하는 실행 실패를 감지하기 위한 Hide-and-Seek 프레임워크를 소개합니다.\n2. Hide-and-Seek는 지도 학습 문제로 실패 신호를 현지화시키는 방법을 제안합니다.\n3. 제안된 방법은 LIBERO, VLABench, 실제 로봇 플랫폼에서 평가되며 다양한 VLA 정책에 대해 우수한 실행 실패 감지 성능을 달성합니다.",
+    "categories": [
+      "Robotics",
+      "Multimodal"
+    ]
+  },
+  {
+    "title": "Function2Scene: 3D Indoor Scene Layout from Functional Specifications",
+    "abstract": "Most text-driven 3D indoor scene synthesis methods generate rooms from object-centric prompts, asking what furniture should be placed rather than how the space is used. Yet in real interior design, a layout is judged by how well it supports its occupants, e.g., their activities and physical needs. We introduce Function2Scene, a framework for generating 3D indoor layouts from functional specifications, i.e., natural-language design briefs describing who will use a room and what they need to do there. Given such a specification, our system parses occupant personas and activities, derives a customized set of functional design constraints from a taxonomy of 17 criteria spanning spatial, ergonomic, activity, and environmental considerations, and uses these constraints to guide layout generation. Rather than relying on an LLM to directly produce a final scene, Function2Scene performs iterative evaluation and refinement through a tool-augmented check-and-repair loop, combining geometric measurements, LLM-based contextual reasoning, and VLM-based visual assessment. Experiments on 30 professionally written interior-design cases show that Function2Scene produces layouts that better satisfy functional requirements than recent LLM-based scene synthesis baselines, with our results preferred in 94.3% of pairwise comparisons. Our work reframes text-driven indoor scene synthesis from placing plausible objects to designing spaces that support human use.",
+    "authors": [
+      "Ruiqi Wang",
+      "Qimin Chen",
+      "Daniel Ritchie",
+      "Angel X. Chang",
+      "Manolis Savva",
+      "Kai Wang",
+      "Hao Zhang"
+    ],
+    "likes": 1,
+    "published_date": "May 29",
+    "url": "https://huggingface.co/papers/2605.30819",
+    "date_collected": "2026-06-01T10:53:27.863204+09:00",
+    "week": "2026-W23",
+    "translation": {
+      "title": "기능2장면: 기능 사양에서 3D 실내 공간 배치",
+      "abstract": "대부분의 텍스트 주도형 3D 실내 공간 합성 방법은 물건 중심적인 프롬프트로부터 방 안에 어떤 가구를 놓아야 하는지 물어보는 대신 공간이 어떻게 사용되는지에 따라 공간을 만드는 것이 중요합니다. 그러나 실제 실내 디자인에서, 배치는 거주자 및 그들의 활동 및 생리학적 요구를 얼마나 잘 지원하는지에 따라 평가됩니다. 본 연구에서는 기능2장면이라는 프레임워크를 소개합니다. 이는 실내 공간에 대한 3D 배치를 기능적 사양으로부터 생성하기 위한 것이며, 즉, 방을 누가 사용하고 그곳에서 무엇을 해야 하는지를 설명하는 자연어 디자인 요약으로부터 파생됩니다."
+    },
+    "summary": "1. 기능2장면은 실내 디자인의 기능적 요구를 더 잘 충족시키는 3D 실내 레이아웃을 생성하는 프레임워크이다.\n2. 기능2장면은 텍스트 주도형 3D 내장 공간 합성을 객체를 놓는 대신 인간 사용을 지원하는 공간으로 재평가한다.\n3. 실험 결과는 최근 LLM 기반 시티 목적 장면 합성 베이스라인보다 기능2장면이 더 우수하게 선호된다.",
+    "categories": [
+      "LLM",
+      "Multimodal"
+    ]
+  }
+]

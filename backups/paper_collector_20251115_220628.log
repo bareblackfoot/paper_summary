@@ -1,0 +1,143 @@
+=== Paper Collection Started at Fri Nov 14 22:07:46 UTC 2025 ===
+Starting paper collection...
+Fetching papers for week: 2025-W46
+URL: https://huggingface.co/papers/week/2025-W46
+Found 10 papers in weekly view
+Fetching likes for: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Fetching likes for: Grounding Computer Use Agents on Human Demonstrations
+Fetching likes for: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Fetching likes for: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Fetching likes for: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Fetching likes for: TiDAR: Think in Diffusion, Talk in Autoregression
+Fetching likes for: MADD: Multi-Agent Drug Discovery Orchestra
+Fetching likes for: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Fetching likes for: Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising
+Fetching likes for: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Selected top 10 papers by likes:
+1. Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds (124 likes)
+2. Grounding Computer Use Agents on Human Demonstrations (94 likes)
+3. Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B (87 likes)
+4. HaluMem: Evaluating Hallucinations in Memory Systems of Agents (84 likes)
+5. IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction (67 likes)
+6. TiDAR: Think in Diffusion, Talk in Autoregression (53 likes)
+7. MADD: Multi-Agent Drug Discovery Orchestra (51 likes)
+8. Too Good to be Bad: On the Failure of LLMs to Role-Play Villains (49 likes)
+9. Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising (48 likes)
+10. DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation (47 likes)
+Found abstract: We introduce Lumine, the first open recipe for developing generalist agents capable of completing ho...
+Processed paper: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Found abstract: Building reliable computer-use agents requires grounding: accurately
+connecting natural language ins...
+Processed paper: Grounding Computer Use Agents on Human Demonstrations
+Found abstract: Challenging the prevailing consensus that small models inherently lack robust
+reasoning, this report...
+Processed paper: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Found abstract: Memory systems are key components that enable AI systems such as LLMs and AI
+agents to achieve long-...
+Processed paper: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Found abstract: Recent advances in deep-research agents have shown promise for autonomous
+knowledge construction thr...
+Processed paper: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Found abstract: Diffusion language models hold the promise of fast parallel generation, while autoregressive (AR) mo...
+Processed paper: TiDAR: Think in Diffusion, Talk in Autoregression
+Found abstract: Hit identification is a central challenge in early drug discovery, traditionally requiring substanti...
+Processed paper: MADD: Multi-Agent Drug Discovery Orchestra
+Found abstract: Large Language Models (LLMs) are increasingly tasked with creative
+generation, including the simulat...
+Processed paper: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Found abstract: Diffusion-based video generation can create realistic videos, yet existing image- and text-based con...
+Processed paper: Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising
+Found abstract: Recent reasoning-first models (e.g., OpenAI o1, DeepSeek R1) have spurred a
+resurgence of interest i...
+Processed paper: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds
+Paper already exists, checking if translation is complete...
+Update likes: 124  ->  84
+Update date_collected: 2025-11-15T07:07:55.701771+09:00  ->  2025-11-14T07:08:35.132320+09:00
+
+Processing paper 2/10
+Title: Grounding Computer Use Agents on Human Demonstrations
+Paper already exists, checking if translation is complete...
+Update likes: 94  ->  87
+Update date_collected: 2025-11-15T07:07:55.703710+09:00  ->  2025-11-14T07:08:35.130735+09:00
+
+Processing paper 3/10
+Title: Tiny Model, Big Logic: Diversity-Driven Optimization Elicits Large-Model
+  Reasoning Ability in VibeThinker-1.5B
+Paper already exists, checking if translation is complete...
+Update likes: 87  ->  77
+Update date_collected: 2025-11-15T07:07:55.705136+09:00  ->  2025-11-14T07:08:35.134987+09:00
+
+Processing paper 4/10
+Title: HaluMem: Evaluating Hallucinations in Memory Systems of Agents
+Paper already exists, checking if translation is complete...
+Update likes: 84  ->  83
+Update date_collected: 2025-11-15T07:07:55.706549+09:00  ->  2025-11-14T07:08:35.133653+09:00
+
+Processing paper 5/10
+Title: IterResearch: Rethinking Long-Horizon Agents via Markovian State
+  Reconstruction
+Paper already exists, checking if translation is complete...
+Update likes: 67  ->  66
+Update date_collected: 2025-11-15T07:07:55.708151+09:00  ->  2025-11-14T07:08:35.136574+09:00
+
+Processing paper 6/10
+Title: TiDAR: Think in Diffusion, Talk in Autoregression
+Generating Korean translation and summary...
+
+Processing paper 7/10
+Title: MADD: Multi-Agent Drug Discovery Orchestra
+Paper already exists, checking if translation is complete...
+Update likes: 51  ->  45
+Update date_collected: 2025-11-15T07:07:55.711267+09:00  ->  2025-11-14T07:08:35.142464+09:00
+
+Processing paper 8/10
+Title: Too Good to be Bad: On the Failure of LLMs to Role-Play Villains
+Paper already exists, checking if translation is complete...
+Update likes: 49  ->  47
+Update date_collected: 2025-11-15T07:07:55.712670+09:00  ->  2025-11-14T07:08:35.139195+09:00
+
+Processing paper 9/10
+Title: Time-to-Move: Training-Free Motion Controlled Video Generation via Dual-Clock Denoising
+Generating Korean translation and summary...
+
+Processing paper 10/10
+Title: DRIVE: Data Curation Best Practices for Reinforcement Learning with
+  Verifiable Reward in Competitive Code Generation
+Paper already exists, checking if translation is complete...
+Update likes: 47  ->  47
+Update date_collected: 2025-11-15T07:07:55.714999+09:00  ->  2025-11-14T07:08:35.137773+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2025-W46.json...
+
+Updating Notion database...
+Updating paper: 3D 오픈 월드에서 일반적 에이전트 구축을 위한 Lumine: 오픈 레시피 (likes: 84 -> 124)
+Updating paper: 인간 데모에 기반한 컴퓨터 사용 에이전트의 연결 (likes: 87 -> 94)
+Updating paper: 작은 모델, 큰 논리: 다양성 주도 최적화는 VibeThinker-1.5B에서 대규모 모델 추론 능력을 촉구한다 (likes: 77 -> 87)
+Updating paper: HaluMem: 에이전트의 기억 시스템에서 환각 평가 (likes: 83 -> 84)
+Updating paper: IterResearch: Markovian State를 통한 장기 고려 에이전트 재고 (likes: 66 -> 67)
+Creating new paper: TiDAR: 확산으로 생각하고 자기회귀로 말하다
+Updating paper: 다중 에이전트 약물 발견 오케스트라 (MADD: Multi-Agent Drug Discovery Orchestra) (likes: 45 -> 51)
+Updating paper: 너무나 선하다가 나쁠 수밖에 없는: LLM들이 악당 역할하기 위해서 실패하는 이유 (likes: 47 -> 49)
+Creating new paper: 움직임까지 촬영하는 비디오 생성을 위한 훈련 없는 모션 제어 기반 이중 시계 노이징 방법론
+Paper already exists with same likes count: 경쟁적 코드 생성에서 확인 가능한 보상을 갖춘 강화 학습을 위한 데이터 정리 최상의 방법 (RLVR)
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Fri Nov 14 22:09:59 UTC 2025 ===
+

@@ -1,0 +1,125 @@
+=== Paper Collection Started at Thu Jan  8 22:08:40 UTC 2026 ===
+Starting paper collection...
+Fetching papers for week: 2026-W02
+URL: https://huggingface.co/papers/week/2026-W02
+Found 10 papers in weekly view
+Fetching likes for: NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos
+Fetching likes for: Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization
+Fetching likes for: InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields
+Fetching likes for: K-EXAONE Technical Report
+Fetching likes for: LTX-2: Efficient Joint Audio-Visual Foundation Model
+Fetching likes for: Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits
+Fetching likes for: Entropy-Adaptive Fine-Tuning: Resolving Confident Conflicts to Mitigate Forgetting
+Fetching likes for: Evolving Programmatic Skill Networks
+Fetching likes for: NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation
+Fetching likes for: Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation
+Selected top 10 papers by likes:
+1. NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos (104 likes)
+2. Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization (102 likes)
+3. InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields (82 likes)
+4. K-EXAONE Technical Report (71 likes)
+5. LTX-2: Efficient Joint Audio-Visual Foundation Model (65 likes)
+6. Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits (65 likes)
+7. Entropy-Adaptive Fine-Tuning: Resolving Confident Conflicts to Mitigate Forgetting (63 likes)
+8. Evolving Programmatic Skill Networks (52 likes)
+9. NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation (52 likes)
+10. Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation (50 likes)
+Found abstract: In this paper, we propose NeoVerse, a versatile 4D world model that is capable of 4D reconstruction,...
+Processed paper: NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos
+Found abstract: Existing Large Language Model (LLM) agent frameworks face two significant challenges: high configura...
+Processed paper: Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization
+Found abstract: Existing depth estimation methods are fundamentally limited to predicting depth on discrete image gr...
+Processed paper: InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields
+Found abstract: This technical report presents K-EXAONE, a large-scale multilingual language model developed by LG A...
+Processed paper: K-EXAONE Technical Report
+Found abstract: Recent text-to-video diffusion models can generate compelling video sequences, yet they remain silen...
+Processed paper: LTX-2: Efficient Joint Audio-Visual Foundation Model
+Found abstract: Large language models (LLMs) generate fluent and complex outputs but often fail to recognize their o...
+Processed paper: Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits
+Found abstract: Supervised Fine-Tuning (SFT) is the standard paradigm for domain adaptation, yet it frequently incur...
+Processed paper: Entropy-Adaptive Fine-Tuning: Resolving Confident Conflicts to Mitigate Forgetting
+Found abstract: We study continual skill acquisition in open-ended embodied environments where an agent must constru...
+Processed paper: Evolving Programmatic Skill Networks
+Found abstract: We present NextFlow, a unified decoder-only autoregressive transformer trained on 6 trillion interle...
+Processed paper: NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation
+Found abstract: Multimodal Large Language Models (MLLMs) have made remarkable progress in video understanding. Howev...
+Processed paper: Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation
+Collected top 10 papers. Starting summary generation...
+
+Processing paper 1/10
+Title: NeoVerse: Enhancing 4D World Model with in-the-wild Monocular Videos
+Paper already exists, checking if translation is complete...
+Update likes: 104  ->  102
+Update date_collected: 2026-01-09T07:08:47.742302+09:00  ->  2026-01-08T07:08:25.430066+09:00
+
+Processing paper 2/10
+Title: Youtu-Agent: Scaling Agent Productivity with Automated Generation and Hybrid Policy Optimization
+Paper already exists, checking if translation is complete...
+Update likes: 102  ->  100
+Update date_collected: 2026-01-09T07:08:47.744000+09:00  ->  2026-01-08T07:08:25.431757+09:00
+
+Processing paper 3/10
+Title: InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields
+Paper already exists, checking if translation is complete...
+Update likes: 82  ->  71
+Update date_collected: 2026-01-09T07:08:47.745365+09:00  ->  2026-01-08T07:08:25.433120+09:00
+
+Processing paper 4/10
+Title: K-EXAONE Technical Report
+Paper already exists, checking if translation is complete...
+Update likes: 71  ->  64
+Update date_collected: 2026-01-09T07:08:47.747206+09:00  ->  2026-01-08T07:08:25.434960+09:00
+
+Processing paper 5/10
+Title: LTX-2: Efficient Joint Audio-Visual Foundation Model
+Paper already exists, checking if translation is complete...
+Update likes: 65  ->  38
+Update date_collected: 2026-01-09T07:08:47.748973+09:00  ->  2026-01-08T07:08:25.443982+09:00
+
+Processing paper 6/10
+Title: Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits
+Paper already exists, checking if translation is complete...
+Update likes: 65  ->  59
+Update date_collected: 2026-01-09T07:08:47.749988+09:00  ->  2026-01-08T07:08:25.435976+09:00
+
+Processing paper 7/10
+Title: Entropy-Adaptive Fine-Tuning: Resolving Confident Conflicts to Mitigate Forgetting
+Generating Korean translation and summary...
+
+Processing paper 8/10
+Title: Evolving Programmatic Skill Networks
+Generating Korean translation and summary...
+
+Processing paper 9/10
+Title: NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation
+Paper already exists, checking if translation is complete...
+Update likes: 52  ->  50
+Update date_collected: 2026-01-09T07:08:47.754245+09:00  ->  2026-01-08T07:08:25.437843+09:00
+
+Processing paper 10/10
+Title: Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation
+Paper already exists, checking if translation is complete...
+Update likes: 50  ->  50
+Update date_collected: 2026-01-09T07:08:47.755553+09:00  ->  2026-01-08T07:08:25.439147+09:00
+
+Processed 10 papers
+
+Saving papers to papers.json...
+
+Saving weekly papers to database/paper_week2026-W02.json...
+
+Updating Notion database...
+Updating paper: NeoVerse: in-the-wild 단일 카메라 비디오로 4D 세계 모델 강화 (likes: 102 -> 104)
+Updating paper: Youtu-Agent: 자동 생성과 하이브리드 정책 최적화로 에이전트 생산성 확장 (likes: 100 -> 102)
+Updating paper: InfiniDepth: 임의 해상도 및 세밀한 깊이 추정에 대한 신경망 임시 필드를 활용한 방법 (likes: 71 -> 82)
+Updating paper: K-EXAONE 기술 보고서 (likes: 64 -> 71)
+Updating paper: 효율적인 결합형 음향-시각 기초 모델 LTX-2 (likes: 38 -> 65)
+Updating paper: LLM이 자신의 실패를 예측할 수 있을까? 내부 회로를 통한 자가인식 (likes: 59 -> 65)
+Creating new paper: 엔트로피 적응적 파인 튜닝: 자신감 충돌 해소를 통한 잊혀짐 완화
+Creating new paper: 진화하는 프로그램적 기술 네트워크
+Updating paper: 다음 플로우: 통합 순차 모델링이 다중 모달 이해와 생성을 활성화 (likes: 50 -> 52)
+Paper already exists with same likes count: 환각을 다스리다: 반사실적 비디오 생성을 통해 MLLM의 비디오 이해력 강화
+Successfully updated Notion database!
+Done!
+=== Paper Collection Finished at Thu Jan  8 22:10:54 UTC 2026 ===
+
