@@ -1,7 +1,5 @@
 # 오늘의 arXiv Top 15: 2026-11-05 (목)
 
-> **소급 작성**: 자동 실행이 멈췄던 날이라 2026-11-12에 소급 작성함. 논문 목록은 arXiv 공지 목록 그대로임.
-
 > 대상: cs.CV, cs.LG, cs.RO, cs.CL, cs.AI 의 **New submissions 전수 평가**
 > (cross-list, replacement 제외 · 여러 목록에 중복된 논문은 1편으로 병합)
 
