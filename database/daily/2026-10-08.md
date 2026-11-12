@@ -1,7 +1,6 @@
 # 오늘의 arXiv Top 15 — 2026-10-08 (목)
 
 > 대상: cs.CV, cs.LG, cs.RO, cs.CL, cs.AI 의 **New submissions 전수 평가**
-> (cross-list, replacement 제외 · 여러 목록에 중복된 논문은 1편으로 병합)
 
 **신규 논문 수: 전체 625편 → 중복 제거 후 625편 (이번 평가 대상 625편)**
 
@@ -12,8 +11,6 @@
 | cs.RO | 93 |
 | cs.CL | 65 |
 | cs.AI | 110 |
-
-*1차 스크리닝: 전체 625편을 제목/초록 기반으로 채점(Claude (scheduled agent)) → 상위 15편은 arXiv 원문을 내려받아 정밀 리뷰(Claude (scheduled agent)) 후 최종 점수 산정.*
 
 ---
 
