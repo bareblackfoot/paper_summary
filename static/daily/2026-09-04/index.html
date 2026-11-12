@@ -478,6 +478,8 @@
                 
                 <select class="date-dropdown" onchange="if(this.value) location.href='../../daily/' + this.value + '/';">
                     
+                    <option value="2026-11-11" >2026-11-11</option>
+                    
                     <option value="2026-10-23" >2026-10-23</option>
                     
                     <option value="2026-10-21" >2026-10-21</option>
@@ -658,14 +660,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04196" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.04196.webp"
-                             alt="Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -747,14 +741,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03199" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03199.webp"
-                             alt="RoboTok: An Internet-Scale Data Engine for Human Demonstration Retrieval and Dexterous Manipulation Learning 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -834,14 +820,6 @@
                 <div class="tldr">VLA post-training에서 world model 상상(imagination)을 아무 상태에나 쓰지 않고 interaction-relevant 상태에서만 선택적으로 짧게 굴려 GRPO 스타일로 policy를 업데이트하는 WISE를 제안함. π0/π0.5에서 MimicGen 5개 task 평균 성공률을 각각 9.8/7.9%p 올리면서 world model 연산은 full imagination 대비 약 77% 줄였고 real robot에서도 개선을 확인함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03681" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03681.webp"
-                             alt="WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -923,14 +901,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03142" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03142.webp"
-                             alt="Sensing Which Modality Matters: Evidence-Gated Regularization for Robust VLA Policies 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1010,14 +980,6 @@
                 <div class="tldr">FailBench는 14개 공개 소스에서 모은 2,197개 로봇 매니퓰레이션 시도로 VLM 기반 실패 판정기 13종을 하나의 프로토콜에서 교차 평가함. 최고 모델(Gemini 3 Flash)도 balanced accuracy 0.77에 그치고, 접촉 여부로 성공을 판단해야 하는 assembly task에서는 0.60 이하로 chance에 가까운 수준까지 떨어짐.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03611" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03611.webp"
-                             alt="FailBench: How Reliable are VLMs at Judging Robot Task Success? 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1103,14 +1065,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04193" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.04193.webp"
-                             alt="GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1188,14 +1142,6 @@
                 <div class="tldr">GraFT는 3D scene graph(3DSG) 하나에서 기하 도구·BEV 렌더링·egocentric frame 선택 세 모듈을 파생시켜 frozen MLLM에 학습 없이 공간추론 능력을 부여하는 프레임워크임. VSI-Bench에서 frozen backbone 대비 최대 18.8점(3B 기준) 성능 향상을 보이고, fine-tuned spatial model 여러 개도 능가함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03892" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03892.webp"
-                             alt="GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1278,14 +1224,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03602" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03602.webp"
-                             alt="SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1365,14 +1303,6 @@
                 <div class="tldr">LEAP는 frozen LeWorldModel(LeWM) 위에서 action horizon 전체를 미분 가능한 변수로 두고 L-BFGS로 직접 최적화하는 test-time planner임. latent goal cost에 decoder가 예측한 terminal state 오차를 더해 latent 목적함수만 최적화할 때 생기는 objective mismatch를 억제해 4개 도메인 평균 성공률을 CEM 대비 77.5%에서 94.8%로 올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03294" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03294.webp"
-                             alt="Latent Energy Action Planning with World Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1455,14 +1385,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03153" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03153.webp"
-                             alt="VeriPhy: Agentic Physical Reasoning for World Model Evaluation and Refinement 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1541,14 +1463,6 @@
                 <div class="tldr">LaPla는 자율주행 VLA에서 discrete action token 대신 사전학습해 frozen시킨 residual VQ-VAE decoder에 continuous latent를 직접 투영해 궤적을 생성하는 프레임워크임. nuScenes open-loop에서 장기 구간 L2를 최대 15.52% 낮추고 AlpaSim closed-loop 성공률을 33.34%p 높이면서 추론 속도도 약 3배 개선함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04070" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.04070.webp"
-                             alt="Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1629,14 +1543,6 @@
                 <div class="tldr">우주선 랑데부·도킹 문제에 world model을 처음 적용한 논문임. transformer 기반 world model(OWM)이 카메라 영상과 상태 측정치를 공유 latent로 인코딩하고 flow matching으로 다음 상태를 예측하며, 이를 MPPI 플래닝에 결합해 ISS 도킹 성공률을 RL baseline 대비 29%에서 53%로 끌어올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03067" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03067.webp"
-                             alt="GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1719,14 +1625,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03889" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03889.webp"
-                             alt="FWBC-VLA: Force-Aware Whole-Body Compensation for Contact-Rich Loco-Manipulation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1807,14 +1705,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03715" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03715.webp"
-                             alt="MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO? 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1892,14 +1782,6 @@
                 <div class="tldr">action-conditioned JEPA world model에 inverse dynamics(IDM)와 물리적 state-alignment(SA) 보조 손실을 함께 붙여 latent representation이 로봇 제어에 필요한 정보를 유지하도록 학습함. TwoRoom·PushT·OGBench-Cube 3개 벤치마크에서 baseline LeWorldModel 대비 planning 성공률을 높였고 Reacher에서는 baseline과 비슷한 수준을 보였으며, straightening이 높아도 transition 차원이 낮으면 오히려 성능이 떨어질 수 있다는 분석을 제시함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.03565" target="_blank">
-                        <img src="../../figures/2026-09-04/2609.03565.webp"
-                             alt="Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 

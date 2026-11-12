@@ -478,6 +478,8 @@
                 
                 <select class="date-dropdown" onchange="if(this.value) location.href='../../daily/' + this.value + '/';">
                     
+                    <option value="2026-11-11" >2026-11-11</option>
+                    
                     <option value="2026-10-23" >2026-10-23</option>
                     
                     <option value="2026-10-21" >2026-10-21</option>
@@ -657,14 +659,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.21204" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.21204.webp"
-                             alt="Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -743,14 +737,6 @@
                 <div class="tldr">WA-JEPA는 V-JEPA의 random masking·deterministic regression을 future-masking과 conditional flow matching으로 바꾸고, future scene token과 ego trajectory를 하나의 predictor에서 함께 denoise하는 joint future-action modeling으로 planning에 특화된 world-action model을 제안한다. NAVSIM-v2에서 91.7 EPDMS로 기존 world-action 최고 대비 1.3점, closed-loop HUGSIM에서도 zero-shot으로 최고 HD-Score 0.4462를 달성했다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20974" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20974.webp"
-                             alt="WA-JEPA: Rethinking the Video JEPA Paradigm for World-Action Modeling in Autonomous Driving 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -833,14 +819,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20492" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20492.webp"
-                             alt="Annotations as Rollouts: Efficient and Scalable Reinforcement Learning for Video MLLMs 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -918,14 +896,6 @@
                 <div class="tldr">RISE는 world action model(WAM)에서 매 rollout 단계마다 Latent Evaluator와 Rollout Gate로 Roll/Stop을 결정해 장면별로 다른 imagination depth를 사용하는 adaptive imagination framework다. NAVSIM과 nuScenes에서 fixed rollout 대비 더 높은 PDMS/EPDMS를 달성하면서 불필요한 rollout을 줄였다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20430" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20430.webp"
-                             alt="RISE: Adaptive Imagination for World Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1009,14 +979,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20791" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20791.webp"
-                             alt="CertVLA: Certified Defense against Physical Visual Attacks for Vision-Language-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1094,14 +1056,6 @@
                 <div class="tldr">ForeTime-VLA는 frozen Fast-WAM 기반 teacher로부터 미래 시각 latent를 압축한 64차원 action-equivalent code를 causal encoder로 예측하게 하고, 이를 π0.5의 VLM prefix와 action expert에 이중 경로로 주입해 미래 접촉 이벤트를 미리 반영하게 한다. 실제 로봇 컨베이어 벨트 파지 실험에서 정지 물체 81.1%, 저속 이동 물체 58.9% 성공률로 π0.5 대비 각각 12.2%p, 22.2%p 향상됐다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20735" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20735.webp"
-                             alt="ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Belt Manipulation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1181,14 +1135,6 @@
                 <div class="tldr">AffordAny는 단일 monocular RGB 이미지에서 SAM 3D 재구성과 LLM 기반 자동 파이프라인으로 473개 카테고리, 10,633개 part 수준의 open-vocabulary 3D affordance 데이터셋을 구축하고, frozen Cosmos-2B VLM feature와 3D geometry를 결합하는 decoder로 affordance grounding을 수행한다. Pseudo-label self-training을 더해 unseen-category mIoU를 6.3% 상대적으로 개선했다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20720" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20720.webp"
-                             alt="AffordAny: Open-World 3D Affordance Grounding from Monocular RGB Images via Vision-Language-Guided Geometric Reasoning 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1270,14 +1216,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.21136" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.21136.webp"
-                             alt="Stream3Dv2: Geometric-Semantic Fusion Enhanced Streaming Zero-Shot 3D Scene Understanding 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1357,14 +1295,6 @@
                 <div class="tldr">DreamerV3 같은 시각 world-model agent의 critic이 유도하는 저차원 value-subspace에 효과적인 공격 방향이 집중된다는 관찰을 바탕으로, offline로 subspace를 추출하고 test-time에는 그 계수만 최적화·EMA로 smoothing하는 CIVA를 제안한다. DMC walker walk, Atari Pong, Crafter에서 기존 5개 공격 기법 대비 더 강한 reward 하락과 낮은 temporal jitter를 동시에 달성한다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.21114" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.21114.webp"
-                             alt="CIVA: Critic-Induced Value-Subspace Attacks on Visual World-Model Agents 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1446,14 +1376,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.21247" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.21247.webp"
-                             alt="Just Noticeable Difference Modeling for Token Compression in Vision-Language-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1532,14 +1454,6 @@
                 <div class="tldr">VLM 내부에서 belief 표현이 실제로 다른 축(intent/action) 예측에 사용되는지 진단하는 Cross-Axis Routing Diagnostic(CARD)을 제안하고, 새로 설계한 협력적 grid-world 벤치마크 Relay Chain에서 검증한다. 4개 open-weight VLM 모두에서 belief가 belief/knowledge 예측에는 쓰이지만 cooperative action(intent) 예측에는 전혀 반영되지 않는 routing failure를 발견했다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20763" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20763.webp"
-                             alt="CARD: Diagnosing Belief to Action Routing Failures in Vision Language Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1621,14 +1535,6 @@
                 <div class="tldr">RGB, depth, vision-based tactile response 맵을 동기화해 수집한 최초의 thin object 3D reconstruction 데이터셋 VisTa3D를 공개한다. 11개 기존 3D reconstruction 방법이 얇은 물체에서 심하게 저조한 성능을 보임을 확인하고, tactile 정보를 결합한 최초의 baseline Tactile-DC가 기존 최고 성능 OmniDC를 일관되게 앞선다는 것을 보인다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20740" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20740.webp"
-                             alt="VisTa3D: A Dataset and Benchmark for Thin Object Reconstruction from Vision, Tactile, and 3D Point Clouds 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1712,14 +1618,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.21008" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.21008.webp"
-                             alt="Triangulation-Free Bundle Adjustment with Graduated Non-Convexity for Camera Pose Refinement from Coarse Priors 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1799,14 +1697,6 @@
                 <div class="tldr">카메라와 LiDAR 간 양방향 optimal transport 상호작용, normalizing flow 기반 modality distribution 정합, CHOMP 스타일 trajectory refinement를 결합한 VLA 기반 end-to-end 자율주행 시스템을 제안한다. NAVSIM/Bench2Drive/nuScenes/Argoverse2 등 4개 벤치마크에서 기존 VLA·전통 E2E 방법 대비 소폭에서 중간 폭의 성능 개선을 보였다.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.20890" target="_blank">
-                        <img src="../../figures/2026-08-24/2608.20890.webp"
-                             alt="A Collaborative Multi-Modality Interaction for VLA-based End-to-End Autonomous Driving 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 

@@ -478,6 +478,8 @@
                 
                 <select class="date-dropdown" onchange="if(this.value) location.href='../../daily/' + this.value + '/';">
                     
+                    <option value="2026-11-11" >2026-11-11</option>
+                    
                     <option value="2026-10-23" >2026-10-23</option>
                     
                     <option value="2026-10-21" >2026-10-21</option>
@@ -655,14 +657,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.23863" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.23863.webp"
-                             alt="DreamLedger: Execution-Settled Credit Files for World-Model Imagination in Robot Decision Loops 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -741,14 +735,6 @@
                 <div class="tldr">GlanceWAM은 world-action model에서 test-time visual imagination을 control loop와 분리해, 느린 clock에서 약 3초 앞 lookahead frame 하나만 비동기로 생성하고 빠른 clock에서는 이를 latent 상태 그대로 소비해 action chunk를 디코딩함. RoboCasa kitchen 24-task에서 72.2%로 동기식 Cosmos Policy(67.1%)를 능가하면서 chunk당 48ms로 동기식 baseline 대비 24배 빠른 추론 속도를 달성함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.23927" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.23927.webp"
-                             alt="GlanceWAM: Sparse Test-Time Imagination for World-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -829,14 +815,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24885" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24885.webp"
-                             alt="Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -914,14 +892,6 @@
                 <div class="tldr">XP-JEPA는 시각 관측과 물리 상태(privileged state, 학습 때만 쓰고 배포 때 버리는 특권 정보)를 같은 action-conditioned predictor로 굴려 각 예측을 두 modality의 미래 표현 모두에 맞추는 cross-predictive 목적함수를 제안함. multi-task 실험에서 rollout drift를 0.361에서 0.104로 줄이고 control success를 53.6%에서 78.2%로 올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24044" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24044.webp"
-                             alt="XP-JEPA: Cross-Predictive Physics Grounding for Forecastable Latent Dynamics 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1002,14 +972,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24882" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24882.webp"
-                             alt="Latent Action as Intention Enables Efficient Future Imagination for World Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1087,14 +1049,6 @@
                 <div class="tldr">frozen latent world model(LeWM) 위에서 매 state-goal pair마다 CEM으로 처음부터 반복 최적화하던 planning을, rectified flow로 학습한 재사용 가능한 latent trajectory prior로 대체하는 LeFlow를 제안함. 4개 goal-conditioned pixel-control benchmark에서 success rate를 일관되게 높이면서 planning 시간을 한 자릿수 단위로 줄임.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24855" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24855.webp"
-                             alt="LeFlow: Generative Latent Flow Planning for World Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1175,14 +1129,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24714" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24714.webp"
-                             alt="GaussianWAM: Distilling Geometry and Semantics from 3D Gaussian Fields into World-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1261,14 +1207,6 @@
                 <div class="tldr">FlashSAC 기반으로 parameter normalization·clipped double-Q·age-biased replay weighting(Sample Weight Decay) 세 축을 CPU-scale과 GPU-parallel 두 데이터 레짐에서 통제 실험으로 분리 분석해 각 stabilizer의 효과가 데이터 규모에 따라 달라짐을 보임. 이를 바탕으로 레짐별로 다른 구성을 쓰는 WarpSAC-L/WarpSAC-A를 제안해 FlashSAC 대비 AUC를 4.5%(CPU)·23.1%(GPU) 개선하고 UnitreeG1TransportBox-v1 성공률을 19.8%에서 96.4%로 끌어올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24479" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24479.webp"
-                             alt="WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1350,14 +1288,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.23831" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.23831.webp"
-                             alt="Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1435,14 +1365,6 @@
                 <div class="tldr">로봇 action 대신 2D visual track을 policy와 world model 사이 매개체로 써서, VLA가 action과 track을 함께 예측하고 track-conditioned world model이 미래 영상을 만들면 VLM reward model이 최적 후보를 고르는 프레임워크 TrAct를 제안함. LIBERO-INTEGRAL에서 baseline π0.5 대비 성공률을 27%에서 55%로, 실제 Franka 로봇에서 49%에서 76%로 올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24101" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24101.webp"
-                             alt="TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1522,14 +1444,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24115" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24115.webp"
-                             alt="PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1608,14 +1522,6 @@
                 <div class="tldr">parallel-jaw·3-finger·soft·suction·dexterous 5종 gripper로 10만3천개 demonstration을 모은 MiGA 데이터셋을 만들고, gripper 정보를 platform·type·instance 3단계 soft prompt와 dual Mixture-of-Adapters(MoA)로 주입하는 GVLA를 제안함. π0.5 backbone 기준 시뮬레이션 4개 task 평균 성공률을 58.38%에서 66.00%로 올리고, 실로봇 few-shot adaptation에서도 baseline을 앞섬.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24603" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24603.webp"
-                             alt="Gripper-aware Vision Language Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1697,14 +1603,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24212" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24212.webp"
-                             alt="NeoWorld-Pro: Programming Interactive Scenes from Monocular Images for Embodied Simulation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1784,14 +1682,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24199" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24199.webp"
-                             alt="NVIDIA Cosmos-H-Dreams: Real-Time Generative Physics Simulation for Surgical Robotics 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1869,14 +1759,6 @@
                 <div class="tldr">장기 조작 task를 LLM으로 skill sequence로 분해하고, prior dataset에서 clustering한 skill의 held-out BC loss 기반 신뢰도로 최적 plan을 선별해 skill 단위 hybrid retrieval(language retrieval + VAE behavior feature reranking)을 수행함. 이렇게 얻은 데이터로 먼저 pretrain하고 target data로 finetune하는 2단계 학습을 적용해 LIBERO에서 최고 baseline 대비 10.3%p, 실로봇에서 21.3%p 성공률을 높임.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2608.24042" target="_blank">
-                        <img src="../../figures/2026-08-26/2608.24042.webp"
-                             alt="Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 

@@ -478,6 +478,8 @@
                 
                 <select class="date-dropdown" onchange="if(this.value) location.href='../../daily/' + this.value + '/';">
                     
+                    <option value="2026-11-11" >2026-11-11</option>
+                    
                     <option value="2026-10-23" >2026-10-23</option>
                     
                     <option value="2026-10-21" >2026-10-21</option>
@@ -657,14 +659,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.05266" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.05266.webp"
-                             alt="TacPAC: Tactile Prediction and Real-Time Action Correction in World-Action Models for Contact-Rich Manipulation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -743,14 +737,6 @@
                 <div class="tldr">VLM 기반 robot reward model이 의미상 동일한 instruction의 paraphrase만으로 같은 궤적에 정반대 reward를 줄 수 있음을 보임. 실로봇 궤적 2,390개와 검증된 paraphrase 21,673개로 ROBORMBENCH를 구성해 이를 정량화했고, 범용 VLM은 scale이나 reasoning을 늘려도 이 불안정성이 줄지 않지만 trajectory 기반으로 학습된 전용 reward model은 훨씬 안정적임을 확인함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.05401" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.05401.webp"
-                             alt="Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -831,14 +817,6 @@
                 <div class="tldr">대형 VLA를 실제 로봇에서 online RL로 post-training할 때 생기는 value 오류로 인한 policy drift와 낮은 처리량 문제를, asymmetric co-bootstrapping 알고리즘(ACoB)과 스트리밍 시스템(ACoB-Stream)으로 각각 푼 논문임. 9개 화학실험 조작 task·4개 로봇 embodiment에서 평균 성공률 98.3%(π0.5 대비 +30.5%p)를 달성했고 throughput은 최대 10.9배 개선됨.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04355" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04355.webp"
-                             alt="VLA-Precision: Asymmetric Co-Bootstrapping for Efficient Real-World Online RL of Vision-Language-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -921,14 +899,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04802" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04802.webp"
-                             alt="Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1007,14 +977,6 @@
                 <div class="tldr">VLA를 사람 시연으로 사전학습할 때 action token을 조작 phase별 인과적 reasoning 텍스트 임베딩에 정렬시키는 auxiliary loss(Latent Semantic Scaffolding, LSS)를 사용함. 추론 시에는 이 정렬 head를 통째로 버려 추가 비용 없이 reasoning 이득만 남기며, 에피소드 전체를 pooled 정렬하는 방식보다 action token을 자신의 조작 phase에 개별 정렬하는 Dense LSS가 held-out task 전이 성능에서 뚜렷이 앞선다는 것을 RoboTwin 2.0 실험으로 보임.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04893" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04893.webp"
-                             alt="Reasoning Without Inference Cost: Latent Semantic Scaffolding for Robot VLA Policies 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1097,14 +1059,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.05178" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.05178.webp"
-                             alt="LIBERO-RECOVER: Beyond Task Success Towards Failure Recovery in Robotic Manipulation Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1182,14 +1136,6 @@
                 <div class="tldr">단일 이미지와 declarative 물리 설정에서 시작해 관찰(카메라 이동)과 개입(물리적 조작)을 분리한 world model TourPhysics를 제안함. 매 액션마다 물리 시뮬레이터가 카메라·물체 궤적을 먼저 확정하면 비디오 생성기가 그 결과만 합성하며, quality-gated atomic commit과 geometry 기반 appearance memory로 baseline 대비 궤적 준수도가 높다고 저자들이 주장하고 장기 revisit에서의 외관 drift 감소는 수치로 확인됨.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04911" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04911.webp"
-                             alt="TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1269,14 +1215,6 @@
                 <div class="tldr">고정된 3DGS 재구성에서 occupancy costmap과 semantic goal candidate를 자동으로 뽑아 PointNav/ImageNav/ObjectNav 벤치마크를 만드는 파이프라인을 제안함. 2,000개 이상 장면에서 2,220만 개 expert trajectory를 생성하고 여러 정책의 closed-loop rollout으로 진단 가치를 검증함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04602" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04602.webp"
-                             alt="NavArena: Automated Construction of Goal-Oriented Navigation Benchmarks from 3D Gaussian Splatting Reconstructions 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1361,14 +1299,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04552" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04552.webp"
-                             alt="Continual Field-Adaptive Models (CFAMs) for Post-Deployment Physical AI 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1449,14 +1379,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.05324" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.05324.webp"
-                             alt="RoboSPA: Can VLA Models Go Beyond Simple Scenes and Short-Horizon Tasks? 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1534,14 +1456,6 @@
                 <div class="tldr">VLA policy의 실패를 timestamp 단위로 언제부터 실패인지까지 잡아내려는 논문으로, 기존 SAFE류가 실패 궤적 전체를 실패로 라벨링해 생기는 label noise 문제를 지적함. action chunk에서 뽑은 weak label로 detector를 사전학습하고 불확실성이 큰 궤적만 골라 15% 예산으로 fine-tuning해서 LIBERO-10의 3개 VLA policy 전반에서 timestamp-level AUROC를 SAFE·STAC 등 대비 끌어올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04277" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04277.webp"
-                             alt="FailureSpot: Label-Efficient Timestamp-Level Failure Detection for Vision-Language-Action Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1621,14 +1535,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.05282" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.05282.webp"
-                             alt="Temporal Tactile Encoding and Compliance for Intent-Aware Robot-to-Human Bimanual Handover 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1706,14 +1612,6 @@
                 <div class="tldr">정적 팔 시연으로만 학습한 diffusion policy가 동적으로 움직이는 팔에도 대응하도록 실행 궤적을 실시간 보정하는 방법을 제안함. PDE 표면 확산으로 얻은 팔 축 방향 scalar field에서 관심 영역을 뽑고 GICP로 프레임 간 등록해 보정값을 계산하며, 실사용자 9명·의류 3종·팔 동작 6패턴 실험에서 4개 baseline 대비 dressing progress와 사용자 편의성 모두 우수함을 보임.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04759" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04759.webp"
-                             alt="Dressing in Motion: A Human Motion-Aware Diffusion Policy for Robot-Assisted Dressing 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1795,14 +1693,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04348" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04348.webp"
-                             alt="Object Concepts Emerge from Motion 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1880,14 +1770,6 @@
                 <div class="tldr">JEPA 스타일 world model(LeWM)에서 SIGReg로 collapse를 막아도 latent가 특정 물리 객체 정보를 담지 않는 새로운 실패 모드 physical representation laziness를 정의함. bounding box를 Fourier 변환해 permutation-invariant하게 만든 spectral target으로 latent를 지도학습하는 auxiliary head를 붙여 n-ball 환경에서 planning 성공률을 최대 88.8%p 개선함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.04264" target="_blank">
-                        <img src="../../figures/2026-09-07/2609.04264.webp"
-                             alt="Spectral-Target Physical Latent Structuring for JEPA-Style World Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
