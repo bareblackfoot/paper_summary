@@ -217,4 +217,6 @@ if __name__ == "__main__":
     # deploy.yml keeps this step continue-on-error so the site still deploys, but a
     # non-zero exit marks the step failed in the run log instead of hiding it
     # (it silently failed every day from 2026-08-20 to 2026-10-13).
-    sys.exit(1 if publish_daily() else 0)
+    # 인자로 날짜(YYYY-MM-DD)를 주면 그 날들을, 없으면 최신 날짜 하나를 게시 (2026-11-12 소급 때 추가)
+    results = [publish_daily(d) for d in (sys.argv[1:] or [None])]
+    sys.exit(1 if any(results) else 0)

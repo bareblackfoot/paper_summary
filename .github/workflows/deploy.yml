@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Notion 단계가 이번 커밋에서 바뀐 리포트 날짜를 찾음
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,7 +39,12 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-        run: python notion_auto_publisher.py
+        # 이번 커밋에서 바뀐 날짜 리포트를 모두 게시 (소급한 날 포함). 없으면 최신 날짜 하나.
+        run: |
+          dates=$(git diff --name-only HEAD~1 HEAD -- 'database/daily/*.json' 2>/dev/null \
+            | sed -n 's#^database/daily/\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)\.json$#\1#p')
+          echo "dates: ${dates:-(latest)}"
+          python notion_auto_publisher.py $dates
         continue-on-error: true
 
       - name: Setup GitHub Pages
