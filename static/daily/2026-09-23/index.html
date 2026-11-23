@@ -477,6 +477,8 @@
                 
                 <select class="date-dropdown" onchange="if(this.value) location.href='../../daily/' + this.value + '/';">
                     
+                    <option value="2026-11-23" >2026-11-23</option>
+                    
                     <option value="2026-11-20" >2026-11-20</option>
                     
                     <option value="2026-11-19" >2026-11-19</option>
@@ -703,14 +705,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.26293" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.26293.webp"
-                             alt="Dual-Frontier: When Can an Agent Trust Its World Model? 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -791,14 +785,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25757" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25757.webp"
-                             alt="Minimal Recurrent Behavioral Memory for Imitation under Partial Observability 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -877,14 +863,6 @@
                 <div class="tldr">Drosophila 후각 학습계의 ORN-PN-KC 구조에서 착안해 sparse random expansion 기반 MoE routing과 spatial-temporal ensemble learning(EL)을 계층적으로 결합한 FlyGCL을 제안함. Pretrained backbone은 고정하고 LoRA/adapter/prompt 같은 경량 모듈만 온라인으로 학습시켜, visual recognition·vision-language·ego-exo video·embodied VLA(LIBERO) 네 도메인에서 replay-free 조건의 online continual learning 성능을 대체로 끌어올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25146" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25146.webp"
-                             alt="Brain-Inspired Hierarchical Modularity for General Continual Learning 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -967,14 +945,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.26007" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.26007.webp"
-                             alt="Skytopia: Monocular Drone Navigation with Action-Conditioned Latent World Models 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1052,14 +1022,6 @@
                 <div class="tldr">프롬프트당 N개의 motion candidate를 frozen text-to-motion model(MoMask)에서 뽑아 Unitree G1에 retarget하고 배포용 SONIC tracking policy로 물리 시뮬레이션에서 전부 굴려본 뒤 가장 잘 실행된 것을 고르는 학습 없는 파이프라인 S3를 제안함. 학습 요소 없이도 upright 실행률을 83.5%에서 89.5%로 올렸고 real robot G1에서 gate를 통과한 177개 클립 전부 서서 완주함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.26420" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.26420.webp"
-                             alt="Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1139,14 +1101,6 @@
                 <div class="tldr">기존 JEPA류 latent world model은 예측한 미래 latent를 pretraining이나 auxiliary loss로만 쓰고 planner에 직접 조건화하지 않았는데, ForeDrive는 multi-horizon latent 예측을 diffusion planner에 직접 주입하면서 stop-gradient로 예측-계획 gradient 간섭을 분리함. Camera-only 순수 imitation learning만으로 NAVSIM v1 89.9 PDMS, v2 90.0 EPDMS를 달성해 RL이나 외부 trajectory scorer 없이 기존 world model·diffusion planner baseline들을 앞섬.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.26299" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.26299.webp"
-                             alt="ForeDrive: Foresight-Guided End-to-End Autonomous Driving with a Planning-Relevant Latent World Model 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1228,14 +1182,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25322" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25322.webp"
-                             alt="JAMB: Joint Action-Motion Diffusion for Bimanual Manipulation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1315,14 +1261,6 @@
                 <div class="tldr">latent action model이 카메라 움직임·물체 움직임·contact event를 하나의 벡터에 뒤섞어 표현하던 문제를 풀기 위해, latent action을 N=4개 그룹으로 나누고 각 그룹에 독립 variational bottleneck과 spatial gate를 줘서 causal하게 분리되도록 학습함. 그 결과 disentanglement 지표(DCI 0.88)와 causal 분리도(leakage 0.05)가 기존 LAM 대비 크게 개선됐고, world model rollout·VLA 정책·real robot 조작 성공률까지 함께 개선됨.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.26118" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.26118.webp"
-                             alt="GDLAM: Group-Disentangled Latent Action Model for Highly Disentangled Embodied Pretraining 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1404,14 +1342,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.26313" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.26313.webp"
-                             alt="SafeLoop: Risk-Aware Rollback for Vision-Language-Action Manipulation 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1492,14 +1422,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25961" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25961.webp"
-                             alt="An Action Is Worth One Patch: Unified World-Action Modeling with PatchWAM 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1577,14 +1499,6 @@
                 <div class="tldr">현재 관측과 미래 관측 사이의 depth-DINO feature 차이(geometry-change, ΔE = E(t+H) − E(t))를 예측하도록 VLM을 먼저 사전학습하고, 이를 flow-matching ActionExpert와 단계적으로 결합해 LIBERO에서 95.20% 성공률을 얻음. 마지막 단계에서 얼린 정책 위에 closed-loop 피드백으로 학습한 bounded residual velocity(GCRF)를 얹어 99.55%까지 끌어올림.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25558" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25558.webp"
-                             alt="HABILIS Brain 0: Geometry-Change Supervision for Vision-Language-Action and Residual Flow Recovery 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1664,14 +1578,6 @@
                 <div class="tldr">Metric-Bench는 ScanNetV2 기반으로 참조 물체의 실제 치수만 주고 카메라 파라미터 없이 절대 크기·거리·3D bounding box를 정밀 수치로 추론하게 하는 벤치마크임. MetricReasoner는 GRPO 기반 강화학습 fine-tuning과 exponential precision·binned proximity reward를 결합해 Qwen3-VL-8B를 학습시켰고, Metric-Bench MRA 48.59로 기존 VLM 대비 최고 성능을 내면서 RoboSpatial·ERQA 등 다운스트림 embodied benchmark와 일반 benchmark 성능도 함께 개선함.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25841" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25841.webp"
-                             alt="Metric-Bench: Exploring In-context Spatial Metric Reasoning in VLMs for Indoor Scenes 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
@@ -1754,14 +1660,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25187" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25187.webp"
-                             alt="X-Planner: Event-Structured Task Planning for Embodied Intelligence 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1841,14 +1739,6 @@
                 
 
                 
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25627" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25627.webp"
-                             alt="MachEmbodied-U0: Unified Understanding and Generation Model for Embodied Intelligence 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
-                
 
                 
 
@@ -1924,14 +1814,6 @@
                 <div class="tldr">동적 3D Gaussian scene에 JEPA(joint-embedding predictive architecture) 원리를 적용해, 미래 프레임을 재구성하지 않고 scene·motion-group·Gaussian 3단계 latent embedding만 예측하는 4DGS-JEPA를 제안함. direct 예측과 구간을 나눈 composed 예측이 서로 일치하도록 강제하는 temporal composition loss로 latent dynamics를 학습하지만, 검증은 procedurally generated toy Gaussian scene 3종의 controlled 실험에 한정됨.</div>
                 
 
-                
-                <figure class="paper-figure">
-                    <a href="https://arxiv.org/abs/2609.25036" target="_blank">
-                        <img src="../../figures/2026-09-23/2609.25036.webp"
-                             alt="4DGS-JEPA: Temporally Compositional Joint-Embedding Prediction for Dynamic Gaussian Splatting 대표 그림" loading="lazy">
-                    </a>
-                    
-                </figure>
                 
 
                 
